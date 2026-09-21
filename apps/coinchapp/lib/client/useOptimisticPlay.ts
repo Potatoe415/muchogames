@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useInstantPending } from "./useInstantPending";
 
 export interface OptimisticPlayView<TCard> {
   phase: string;
@@ -25,7 +26,7 @@ export interface UseOptimisticPlayResult<TCard> {
    *  awaits the real submit (rolling back on failure). Safe to call unconditionally -
    *  no-ops if it isn't legal or another play is already in flight. Stable identity,
    *  so it is safe to use directly inside timers/effects. */
-  play: (card: TCard) => Promise<void>;
+  play: (card: TCard) => void;
   /** Card id staged while waiting for this seat's turn (see `tapCard`), or null. */
   preSelectedId: string | null;
   /** Tap a card: plays it immediately if it's my turn; otherwise stages it as a
@@ -124,9 +125,10 @@ export function useOptimisticPlay<TCard>(
   onPlay: (card: TCard) => Promise<void> | void,
   options?: { autoPlayLastCardDelayMs?: number | null },
 ): UseOptimisticPlayResult<TCard> {
-  const [busy, setBusy] = useState(false);
-  const [pendingPlayed, setPendingPlayed] = useState<PendingCard<TCard> | null>(null);
   const [preSelectedId, setPreSelectedId] = useState<string | null>(null);
+  const { pending: pendingPlayed, busy, run } = useInstantPending<PendingCard<TCard>>((pending) =>
+    isPendingConfirmed(view, pending, cardId),
+  );
 
   const legalSet = new Set(view.legalCards.map(cardId));
   const myTurnToPlay = view.phase === "playing" && view.turn === mySeat;
@@ -136,17 +138,9 @@ export function useOptimisticPlay<TCard>(
       ? view.myHand.filter((card) => cardId(card) !== cardId(pendingPlayed.card))
       : view.myHand;
 
-  async function play(card: TCard) {
-    if (!myTurnToPlay || !legalSet.has(cardId(card)) || busy) return;
-    setBusy(true);
-    setPendingPlayed({ seat: mySeat, card });
-    try {
-      await onPlay(card);
-    } catch {
-      setPendingPlayed(null);
-    } finally {
-      setBusy(false);
-    }
+  function play(card: TCard) {
+    if (!myTurnToPlay || !legalSet.has(cardId(card))) return;
+    run({ seat: mySeat, card }, () => onPlay(card));
   }
 
   // Stable identity so timers/effects (here and in callers) always reach the
@@ -170,7 +164,6 @@ export function useOptimisticPlay<TCard>(
 
   // Drop a pre-selection that is no longer legal now that it is our turn.
   if (myTurnToPlay && preSelectedId !== null && !legalSet.has(preSelectedId)) setPreSelectedId(null);
-  if (pendingPlayed && isPendingConfirmed(view, pendingPlayed, cardId)) setPendingPlayed(null);
   // A new deal/round always passes through a non-"playing" phase (bidding, scoring, ...)
   // before play resumes: drop any leftover pre-selection from the previous one so it can't
   // get auto-played on the very first trick (e.g. matching a card dealt again by coincidence).

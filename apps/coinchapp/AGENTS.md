@@ -157,7 +157,7 @@ If unsure: add an Open_Question to `STATE.md`, not a decision entry.
 - Reuse the existing shared hooks instead of re-implementing this per game - one per genuinely distinct action shape (see "shared base" above), not one per game:
   - `lib/client/useOptimisticPlay.ts` for any turn-based "play a known card from my hand" action (Coinche's `GameTable`, Bouilla's `BouillaTable`).
   - `lib/client/usePresidentOptimisticPlay.ts` for Président's "play a 1-4 card combo, or pass" action - shaped for combos and its own select-then-confirm hand UX instead of one bare card tapped straight out of hand.
-  - `lib/client/useOptimisticFlip.ts` for la Bataille Corse's "flip my own hidden top card" action - the value is unknown even to its owner, so only *that a flip happened* is simulated instantly (stock shrinks, a face-down placeholder lands center-table); the real face still waits for the server.
+  - `lib/client/useOptimisticFlip.ts` for la Bataille Corse's "flip my own top card" action - the owner's redacted view includes `myTopCard` (never shown on the stock, never sent to the opponent) so the real face lands on the center pile on the same frame as the tap. `useInstantPending` (`flushSync` then queue the Server Action) is what actually paints that frame; a plain `useState` next to a Server Action stays frozen until the round trip returns.
 - A brand-new action shape that doesn't fit any of the three still needs its own instant local simulation - do not ship a card-game action that only updates the tapping player's own screen after a server round trip completes.
 - This does not apply to reflecting an *opponent's* move: that is genuinely unknown until the network/broadcast delivers it, and cannot be simulated.
 

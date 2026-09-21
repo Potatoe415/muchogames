@@ -243,13 +243,15 @@ export function BataillecorseTable({
   const mySeat = gv.mySeat!;
   const opponentSeat = mySeat === 0 ? 1 : 0;
   const [panelOpen, setPanelOpen] = useState(false);
-  const { myTurnToFlip, pendingFlip, optimisticStockCount, flip: tapFlip } = useOptimisticFlip(view, mySeat, actions.onFlip);
+  const { myTurnToFlip, pendingFlip, pendingFaceDown, optimisticStockCount, optimisticPile, flip: tapFlip } =
+    useOptimisticFlip(view, mySeat, actions.onFlip);
   const windowSeenAtRef = useWindowSeenAtRef(view.slapWindow);
 
   const pileWinFlash = useFlash(view.lastPileWin?.id);
   const falseSlapFlash = useFlash(view.lastFalseSlap?.id);
   const pileEnterDirection = usePileEnterDirection(view);
   const { pile: displayPile, flying: pileFlying } = useDisplayPile(view.pile, view.lastPileWin?.id);
+  const shownPile = pileFlying ? displayPile : optimisticPile;
   const pileFlyTarget: "up" | "down" | null =
     pileFlying && view.lastPileWin ? (view.lastPileWin.seat === mySeat ? "down" : "up") : null;
   const slapWindowUrgent = useSlapWindowUrgent(view.slapWindow);
@@ -327,8 +329,9 @@ export function BataillecorseTable({
             ].join(" ")}
           >
             <PileStack
-              cards={displayPile}
-              enterFrom={pileEnterDirection}
+              cards={shownPile}
+              enterFrom={pendingFlip ? "bottom" : pileEnterDirection}
+              pendingFaceDown={pendingFaceDown}
               fly={pileFlyTarget ? { key: view.lastPileWin!.id, toward: pileFlyTarget } : undefined}
               slapImpact={slapImpact}
               tapHitKey={slapTapKey}
@@ -514,12 +517,12 @@ const PILE_FLY_DISTANCE_SVH = 46;
 
 /** The center pile: the current top card slides in from whichever seat just
  *  played it (`played-card-enter`, same animation every other game's table
- *  uses - see `TrickStage.tsx`), while the 1-2 cards behind it sit scattered
- *  and dimmed, always at least 2 of them visible when available. Every card
- *  shown here is always face-up: a flip's real value only ever reaches this
- *  component once the server has confirmed it (see `useDisplayPile` above
- *  for why the pile also lingers face-up for a moment after a win instead of
- *  vanishing instantly).
+ *  `played-card-enter`, same animation every other game's table uses - see
+ *  `TrickStage.tsx`), while the 1-2 cards behind it sit scattered and dimmed.
+ *  A local flip paints the owner's `myTopCard` on top immediately (same frame
+ *  as the tap); that card's identity is the React key, so the slide-in does
+ *  not replay when the server echoes it. `useDisplayPile` also lingers the pile face-up
+ *  for a moment after a win instead of vanishing instantly.
  *
  *  `fly`: set for that same lingering window when the win is the *current*
  *  one being shown - animates the whole gathered stack sweeping toward
@@ -543,16 +546,19 @@ function PileStack({
   fly,
   slapImpact,
   tapHitKey,
+  pendingFaceDown,
 }: {
   cards: PlayerView["pile"];
   enterFrom: EnterDirection;
   fly?: { key: number; toward: "up" | "down" };
   slapImpact?: boolean;
   tapHitKey?: number;
+  pendingFaceDown?: boolean;
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-md-w", 56);
-  const shown = cards.slice(-3);
-  if (shown.length === 0) {
+  const behind = pendingFaceDown ? cards.slice(-2) : cards.slice(-3, -1);
+  const topCard = pendingFaceDown ? undefined : cards[cards.length - 1];
+  if (!pendingFaceDown && !topCard) {
     return <p className="text-sm italic text-[var(--card-face)]/70">{"—"}</p>;
   }
   const hitClass = pileCardHitClass(tapHitKey ?? 0, Boolean(slapImpact), Boolean(fly));
@@ -586,34 +592,39 @@ function PileStack({
           />
         </>
       )}
-      {shown.map((card, i) => {
-        const isTop = i === shown.length - 1;
-        const depthFromTop = shown.length - 1 - i;
+      {behind.map((card, i) => {
+        const depthFromTop = behind.length - i;
         const base = HISTORY_OFFSETS[(depthFromTop - 1 + HISTORY_OFFSETS.length) % HISTORY_OFFSETS.length];
         const offset = { x: (base.x / 56) * cardW, y: (base.y / 56) * cardW, rot: base.rot };
         return (
           <div
             key={cardKey(card)}
             className="absolute left-0 top-0"
-            style={isTop ? { zIndex: i } : { transform: `translate(${offset.x}px, ${offset.y}px) rotate(${offset.rot}deg)`, zIndex: i }}
-            data-id={isTop ? "bataillecorse-pile-current" : `bataillecorse-pile-history-${depthFromTop}`}
+            style={{ transform: `translate(${offset.x}px, ${offset.y}px) rotate(${offset.rot}deg)`, zIndex: i }}
+            data-id={`bataillecorse-pile-history-${depthFromTop}`}
           >
             <div className={hitClass}>
-              {isTop ? (
-                <PileCurrentCard card={card} enterFrom={enterFrom} animateEnter={!fly} />
-              ) : (
-                <PlayingCard
-                  card={card}
-                  size="md"
-                  dimmed
-                  showRightIndex
-                  dataId={`bataillecorse-pile-history-card-${depthFromTop}`}
-                />
-              )}
+              <PlayingCard
+                card={card}
+                size="md"
+                dimmed
+                showRightIndex
+                dataId={`bataillecorse-pile-history-card-${depthFromTop}`}
+              />
             </div>
           </div>
         );
       })}
+      <div
+        key={topCard ? cardKey(topCard) : "pending"}
+        className="absolute left-0 top-0"
+        style={{ zIndex: behind.length }}
+        data-id="bataillecorse-pile-current"
+      >
+        <div className={hitClass}>
+          <PileCurrentCard card={topCard} enterFrom={enterFrom} animateEnter={!fly} faceDown={pendingFaceDown} />
+        </div>
+      </div>
     </div>
   );
 }
@@ -626,16 +637,23 @@ function PileCurrentCard({
   card,
   enterFrom,
   animateEnter,
+  faceDown,
 }: {
-  card: PlayerView["pile"][number];
+  card?: PlayerView["pile"][number];
   enterFrom: EnterDirection;
   animateEnter: boolean;
+  faceDown?: boolean;
 }) {
-  const face = <PlayingCard card={card} size="md" dataId="bataillecorse-pile-current-card" />;
-  if (!animateEnter) return face;
+  const inner =
+    faceDown || !card ? (
+      <CardBack size="md" dataId="bataillecorse-pile-pending-back" />
+    ) : (
+      <PlayingCard card={card} size="md" dataId="bataillecorse-pile-current-card" />
+    );
+  if (!animateEnter) return inner;
   return (
     <div className="played-card-enter will-change-transform" style={playedCardEnterStyle(enterFrom)}>
-      {face}
+      {inner}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import type { Card, Combo, PlayerView } from "@/lib/president";
+import { useInstantPending } from "./useInstantPending";
 
 export interface UsePresidentOptimisticPlayResult {
   /** Hand with the just-submitted combo's cards already removed, so they
@@ -15,14 +15,18 @@ export interface UsePresidentOptimisticPlayResult {
   busy: boolean;
   /** Submit a combo: reflects it in `optimisticHand`/`optimisticPile`
    *  immediately, then awaits the real submit. */
-  play: (combo: Combo, onPlay: (combo: Combo) => Promise<void> | void) => Promise<void>;
+  play: (combo: Combo, onPlay: (combo: Combo) => Promise<void> | void) => void;
   /** Run any other exclusive action (e.g. "Passer") under the same busy
    *  guard - no optimistic hand/pile change, since passing never touches them. */
-  runExclusive: (action: () => Promise<void> | void) => Promise<void>;
+  runExclusive: (action: () => Promise<void> | void) => void;
 }
 
 function cardKey(card: Card): string {
   return `${card.rank}${card.suit}`;
+}
+
+function comboLeftHand(view: PlayerView, combo: Combo): boolean {
+  return combo.cards.every((played) => !view.myHand.some((held) => cardKey(held) === cardKey(played)));
 }
 
 /**
@@ -33,34 +37,15 @@ function cardKey(card: Card): string {
  * `PresidentTable.tsx`.
  */
 export function usePresidentOptimisticPlay(view: PlayerView): UsePresidentOptimisticPlayResult {
-  const [busy, setBusy] = useState(false);
-  const [pending, setPending] = useState<Combo | null>(null);
+  const { pending, busy, run, runLocked } = useInstantPending<Combo>((combo) => comboLeftHand(view, combo));
 
-  async function play(combo: Combo, onPlay: (combo: Combo) => Promise<void> | void) {
-    if (busy) return;
-    setBusy(true);
-    setPending(combo);
-    try {
-      await onPlay(combo);
-    } finally {
-      setBusy(false);
-      setPending(null);
-    }
-  }
-
-  async function runExclusive(action: () => Promise<void> | void) {
-    if (busy) return;
-    setBusy(true);
-    try {
-      await action();
-    } finally {
-      setBusy(false);
-    }
+  function play(combo: Combo, onPlay: (combo: Combo) => Promise<void> | void) {
+    run(combo, () => onPlay(combo));
   }
 
   const pendingIds = pending ? new Set(pending.cards.map(cardKey)) : null;
   const optimisticHand = pendingIds ? view.myHand.filter((c) => !pendingIds.has(cardKey(c))) : view.myHand;
   const optimisticPile = pending ? { ...view.pile, combo: pending } : view.pile;
 
-  return { optimisticHand, optimisticPile, busy, play, runExclusive };
+  return { optimisticHand, optimisticPile, busy, play, runExclusive: runLocked };
 }

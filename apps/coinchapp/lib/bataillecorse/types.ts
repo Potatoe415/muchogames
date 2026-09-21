@@ -77,7 +77,8 @@ export interface GameState {
    *  seat at any time a `slapWindow` is live. */
   turn: Seat;
   /** stocks[seat] = that seat's face-down draw pile. Last element = top (next
-   *  to be flipped). HIDDEN order: server-only, redacted per seat to a count. */
+   *  to be flipped). Remaining order is hidden from the opponent; the owner's
+   *  redacted view gets only that top card as `myTopCard` (see `redact.ts`). */
   stocks: [Card[], Card[]];
   /** Center pile, face up. Last element = top (most recently played). */
   pile: Card[];

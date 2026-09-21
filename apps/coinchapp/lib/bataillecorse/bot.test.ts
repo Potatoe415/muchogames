@@ -9,6 +9,7 @@ function view(overrides: Partial<PlayerView>): PlayerView {
     turn: 1,
     myStockCount: 10,
     opponentStockCount: 10,
+    myTopCard: null,
     pile: [],
     tribute: null,
     slapWindow: null,

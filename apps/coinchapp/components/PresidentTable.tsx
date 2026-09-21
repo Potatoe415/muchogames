@@ -115,10 +115,10 @@ export function PresidentTable({
   const singleCardTurn = view.legalCombos.length > 0 && view.legalCombos.every((c) => c.cards.length === 1);
   const roundOverlayVisible = useDelayedVisible(!!view.lastRoundResult || view.phase === "finished", 1200);
 
-  async function tapCard(card: Card) {
+  function tapCard(card: Card) {
     if (!myTurnToPlay || busy) return;
     if (singleCardTurn) {
-      await play({ rank: card.rank, cards: [card] }, actions.onPlay);
+      play({ rank: card.rank, cards: [card] }, actions.onPlay);
       setSelected([]);
       return;
     }
@@ -130,15 +130,15 @@ export function PresidentTable({
     });
   }
 
-  async function handlePlay() {
+  function handlePlay() {
     if (!comboLegal || busy || !selectedRank) return;
-    await play({ rank: selectedRank, cards: selected }, actions.onPlay);
+    play({ rank: selectedRank, cards: selected }, actions.onPlay);
     setSelected([]);
   }
 
-  async function handlePass() {
+  function handlePass() {
     if (!view.canPass || busy) return;
-    await runExclusive(actions.onPass);
+    runExclusive(actions.onPass);
     setSelected([]);
   }
 
