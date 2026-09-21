@@ -63,7 +63,7 @@ function awardPile(
     tribute: null,
     slapWindow: null,
     slapClaims: [],
-    lastPileWin: { id: state.nextEventId, seat: winner, cardCount, reason, reactionMsBySeat },
+    lastPileWin: { id: state.nextEventId, seat: winner, cardCount, cards: state.pile, reason, reactionMsBySeat },
     nextEventId: state.nextEventId + 1,
   };
 }

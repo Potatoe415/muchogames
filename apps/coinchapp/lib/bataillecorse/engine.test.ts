@@ -72,7 +72,13 @@ describe("submitFlip - tribute (figure/ace challenges)", () => {
     expect(next.pile).toEqual([]);
     expect(next.turn).toBe(0);
     expect(next.stocks[0]).toEqual([card("K"), card("4"), card("5"), card("3"), card("K")]);
-    expect(next.lastPileWin).toEqual({ id: 0, seat: 0, cardCount: 4, reason: "tribute" });
+    expect(next.lastPileWin).toEqual({
+      id: 0,
+      seat: 0,
+      cardCount: 4,
+      cards: [card("K"), card("4"), card("5"), card("3")],
+      reason: "tribute",
+    });
   });
 
   it("answering with a figure flips the tribute obligation onto the challenger", () => {
@@ -141,6 +147,7 @@ describe("attemptSlap", () => {
       id: 0,
       seat: 0,
       cardCount: 2,
+      cards: [card("9"), card("9")],
       reason: "slap",
       reactionMsBySeat: { 0: 150, 1: 900 },
     });
@@ -159,7 +166,13 @@ describe("attemptSlap", () => {
     expect(next.lastFalseSlap).toEqual({ id: 0, seat: 1 });
     expect(next.pile).toEqual([]);
     expect(next.turn).toBe(0);
-    expect(next.lastPileWin).toEqual({ id: 1, seat: 0, cardCount: 2, reason: "falseSlap" });
+    expect(next.lastPileWin).toEqual({
+      id: 1,
+      seat: 0,
+      cardCount: 2,
+      cards: [card("9"), card("7")],
+      reason: "falseSlap",
+    });
     expect(next.stocks[0]).toEqual([card("9"), card("7"), card("2")]);
     expect(next.stocks[1]).toEqual([card("3"), card("K")]);
   });

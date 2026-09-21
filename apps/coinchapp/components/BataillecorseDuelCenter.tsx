@@ -30,6 +30,7 @@ export function DuelCenterBlock({
   pileWinFlash,
   lastPileWin,
   pileWinnerLabel,
+  justEnteredCardKey,
 }: {
   pile: PlayerView["pile"];
   enterFrom: EnterDirection;
@@ -49,6 +50,7 @@ export function DuelCenterBlock({
   pileWinFlash: boolean;
   lastPileWin: PlayerView["lastPileWin"];
   pileWinnerLabel: string | null;
+  justEnteredCardKey: string | null;
 }) {
   const { t } = useI18n();
   return (
@@ -86,6 +88,7 @@ export function DuelCenterBlock({
             slapImpact={slapImpact}
             tapHitKey={tapHitKey}
             pendingFaceDown={pendingFaceDown}
+            justEnteredCardKey={justEnteredCardKey}
           />
         </div>
         {falseSlapFlash && <FalseSlapMark label={falseSlapLabel} />}

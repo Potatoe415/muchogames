@@ -51,7 +51,7 @@ export function BataillecorseDuelTable({
   const pileWinFlash = useFlash(viewA.lastPileWin?.id);
   const falseSlapFlash = useFlash(viewA.lastFalseSlap?.id);
   const pileEnterDirection = usePileEnterDirection(viewA);
-  const { pile: displayPile, flying: pileFlying } = useDisplayPile(viewA.pile, viewA.lastPileWin?.id);
+  const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(viewA.pile, viewA.lastPileWin);
   const optimisticPile = flipA.pendingFlip ? flipA.optimisticPile : flipB.pendingFlip ? flipB.optimisticPile : viewA.pile;
   const shownPile = pileFlying ? displayPile : optimisticPile;
   const enterFrom: EnterDirection = flipA.pendingFlip ? "bottom" : flipB.pendingFlip ? "top" : pileEnterDirection;
@@ -70,7 +70,11 @@ export function BataillecorseDuelTable({
     setSlapTapKey((n) => n + 1);
     const seen = viewA.slapWindow && windowSeenAtRef.current?.id === viewA.slapWindow.id ? windowSeenAtRef.current : null;
     const reactionMs = seen ? performance.now() - seen.perfMs : 0;
-    const observedWindowId = viewA.slapWindow?.id ?? viewA.lastClosedSlapWindowId ?? null;
+    // Only the window THIS client currently sees open counts as "observed" -
+    // never fall back to `lastClosedSlapWindowId` (see `BataillecorseTable.tsx`'s
+    // `tapSlap` for why: it would silently exempt every later bogus tap from
+    // the false-slap penalty).
+    const observedWindowId = viewA.slapWindow?.id ?? null;
     await actions.onSlap(seat, reactionMs, observedWindowId);
   }
 
@@ -117,6 +121,7 @@ export function BataillecorseDuelTable({
           fly={pileFlyTarget ? { key: viewA.lastPileWin!.id, toward: pileFlyTarget } : undefined}
           slapImpact={slapImpact}
           tapHitKey={slapTapKey}
+          justEnteredCardKey={justEnteredCardKey}
           onSlapTop={() => tapSlap(1)}
           onSlapBottom={() => tapSlap(0)}
           slapDisabled={viewA.phase !== "playing"}

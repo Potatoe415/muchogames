@@ -50,7 +50,7 @@ describe("flipHasLanded", () => {
         view({
           pile: [],
           myStockCount: 14,
-          lastPileWin: { id: 3, seat: 1, cardCount: 4, reason: "tribute" },
+          lastPileWin: { id: 3, seat: 1, cardCount: 4, cards: [], reason: "tribute" },
         }),
         pending,
       ),

@@ -107,29 +107,56 @@ const HOLD_PILE_MS = 3600;
 
 /** Freezes the pile at whatever it looked like the instant before a pile-win
  *  clears it, for `HOLD_PILE_MS`, then releases it back to the real (now
- *  empty, or freshly-refilled) `view.pile`. Adjusted during render (React's
- *  documented "reset state on prop change" pattern, same as
- *  `usePileEnterDirection` above) so the frozen cards are already there on
- *  the very first frame the server reports an empty pile - no separate
- *  effect-driven extra frame where the pile flashes empty first.
+ *  empty, or freshly-refilled) `view.pile`. Freezes on `lastPileWin.cards`
+ *  (the full swept pile the server captured at award time), never on a
+ *  client's own previously-seen `pile` prop: the server clears `pile` in the
+ *  very same update that reports the win (see `awardPile` in `engine.ts`),
+ *  so whichever card was just flipped to trigger the win (e.g. a failed
+ *  tribute answer) never existed as a separate observable `pile` state for
+ *  either seat to have tracked - only the win event itself carries it.
+ *  Adjusted during render (React's documented "reset state on prop change"
+ *  pattern, same as `usePileEnterDirection` above) so the frozen cards are
+ *  already there on the very first frame the server reports an empty pile -
+ *  no separate effect-driven extra frame where the pile flashes empty first.
  *  `flying` is true for that whole hold: drives the "cards fly into the
  *  winner's stock" sweep in `PileStack` (`.bataillecorse-pile-fly`, see
- *  `app/globals.css`) instead of the pile just vanishing. */
+ *  `app/globals.css`) instead of the pile just vanishing.
+ *
+ *  `justEnteredCardKey`: identifies the top card of `lastPileWin.cards` when
+ *  it is genuinely new - i.e. it was never the live pile's top card before
+ *  this same update (a failed tribute answer: the card that lost the pile
+ *  was flipped and swept away in one atomic server transition, so it never
+ *  had its own non-flying frame to slide in during). `PileStack` uses this
+ *  to still animate that one card's entrance even while `flying` is true,
+ *  without replaying the slide-in on a slap/false-slap win - those sweep the
+ *  pile exactly as it already was, so their top card always matches the
+ *  live pile's previous top card and `justEnteredCardKey` stays `null`. */
 export function useDisplayPile(
   pile: PlayerView["pile"],
-  winEventId: number | undefined,
-): { pile: PlayerView["pile"]; flying: boolean } {
-  const [track, setTrack] = useState({ pile, winEventId, frozen: null as PlayerView["pile"] | null });
-  if (pile !== track.pile) {
-    const justWon = winEventId !== undefined && winEventId !== track.winEventId;
-    setTrack({ pile, winEventId, frozen: justWon ? track.pile : track.frozen });
+  lastPileWin: PlayerView["lastPileWin"],
+): { pile: PlayerView["pile"]; flying: boolean; justEnteredCardKey: string | null } {
+  const winEventId = lastPileWin?.id;
+  const [track, setTrack] = useState({
+    winEventId,
+    livePile: pile,
+    frozen: null as PlayerView["pile"] | null,
+    justEnteredCardKey: null as string | null,
+  });
+  if (winEventId !== track.winEventId) {
+    const cards = winEventId !== undefined ? lastPileWin!.cards : null;
+    const priorTop = track.livePile[track.livePile.length - 1];
+    const newTop = cards?.[cards.length - 1];
+    const isNew = Boolean(newTop) && (!priorTop || cardKey(newTop!) !== cardKey(priorTop));
+    setTrack({ winEventId, livePile: pile, frozen: cards, justEnteredCardKey: isNew ? cardKey(newTop!) : null });
+  } else if (pile !== track.livePile && track.frozen === null) {
+    setTrack((t) => ({ ...t, livePile: pile }));
   }
   useEffect(() => {
     if (track.frozen === null) return;
-    const timer = setTimeout(() => setTrack((t) => ({ ...t, frozen: null })), HOLD_PILE_MS);
+    const timer = setTimeout(() => setTrack((t) => ({ ...t, frozen: null, justEnteredCardKey: null })), HOLD_PILE_MS);
     return () => clearTimeout(timer);
   }, [track.frozen]);
-  return { pile: track.frozen ?? pile, flying: track.frozen !== null };
+  return { pile: track.frozen ?? pile, flying: track.frozen !== null, justEnteredCardKey: track.justEnteredCardKey };
 }
 
 /** The instant (`performance.now()`) *this client* first saw the currently
@@ -250,7 +277,7 @@ export function BataillecorseTable({
   const pileWinFlash = useFlash(view.lastPileWin?.id);
   const falseSlapFlash = useFlash(view.lastFalseSlap?.id);
   const pileEnterDirection = usePileEnterDirection(view);
-  const { pile: displayPile, flying: pileFlying } = useDisplayPile(view.pile, view.lastPileWin?.id);
+  const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(view.pile, view.lastPileWin);
   const shownPile = pileFlying ? displayPile : optimisticPile;
   const pileFlyTarget: "up" | "down" | null =
     pileFlying && view.lastPileWin ? (view.lastPileWin.seat === mySeat ? "down" : "up") : null;
@@ -268,7 +295,14 @@ export function BataillecorseTable({
     setSlapTapKey((n) => n + 1);
     const seen = view.slapWindow && windowSeenAtRef.current?.id === view.slapWindow.id ? windowSeenAtRef.current : null;
     const reactionMs = seen ? performance.now() - seen.perfMs : 0;
-    const observedWindowId = view.slapWindow?.id ?? view.lastClosedSlapWindowId ?? null;
+    // Only the window THIS client currently sees open counts as "observed" -
+    // never fall back to `lastClosedSlapWindowId`: once any window has ever
+    // closed in the match, that id stays fixed until the next one closes, so
+    // falling back to it would make every later bogus tap (nothing open at
+    // all) always match it and silently skip the false-slap penalty (see
+    // `attemptSlap` in `engine.ts`). `null` here correctly means "I tapped
+    // with nothing open" - always a foul.
+    const observedWindowId = view.slapWindow?.id ?? null;
     await actions.onSlap(reactionMs, observedWindowId);
   }
 
@@ -335,6 +369,7 @@ export function BataillecorseTable({
               fly={pileFlyTarget ? { key: view.lastPileWin!.id, toward: pileFlyTarget } : undefined}
               slapImpact={slapImpact}
               tapHitKey={slapTapKey}
+              justEnteredCardKey={justEnteredCardKey}
             />
             {falseSlapFlash && view.lastFalseSlap && <FalseSlapMark label={t("falseSlapStamp")} />}
           </button>
@@ -516,9 +551,11 @@ function cardKey(card: PlayerView["pile"][number]): string {
 const PILE_FLY_DISTANCE_SVH = 46;
 
 /** The center pile: the current top card slides in from whichever seat just
- *  played it (`played-card-enter`, same animation every other game's table
- *  `played-card-enter`, same animation every other game's table uses - see
- *  `TrickStage.tsx`), while the 1-2 cards behind it sit scattered and dimmed.
+ *  played it (`.bataillecorse-card-enter`, `app/globals.css` - same slide-in
+ *  as every other game's `played-card-enter`, `TrickStage.tsx`, minus the
+ *  landing bounce: a plain flip that neither opens/answers a tribute nor
+ *  wins the pile is just "the card is now on the table"), while the 1-2
+ *  cards behind it sit scattered and dimmed.
  *  A local flip paints the owner's `myTopCard` on top immediately (same frame
  *  as the tap); that card's identity is the React key, so the slide-in does
  *  not replay when the server echoes it. `useDisplayPile` also lingers the pile face-up
@@ -531,7 +568,7 @@ const PILE_FLY_DISTANCE_SVH = 46;
  *  slap) uses `.bataillecorse-pile-fly-slap` instead: the hold is a hit on
  *  the cards, then the same sweep. Keyed by the win event's id so a second,
  *  later win restarts the sweep rather than being a no-op remount. That
- *  remount must NOT replay `.played-card-enter` on the
+ *  remount must NOT replay `.bataillecorse-card-enter` on the
  *  top card, or the last flip looks like it is played a second time the
  *  instant someone slaps (see `PileCurrentCard`). */
 function pileCardHitClass(tapHitKey: number, slapImpact: boolean, flying: boolean): string | undefined {
@@ -547,6 +584,7 @@ export function PileStack({
   slapImpact,
   tapHitKey,
   pendingFaceDown,
+  justEnteredCardKey,
 }: {
   cards: PlayerView["pile"];
   enterFrom: EnterDirection;
@@ -554,6 +592,10 @@ export function PileStack({
   slapImpact?: boolean;
   tapHitKey?: number;
   pendingFaceDown?: boolean;
+  /** Top card's key when it never got a non-flying frame to slide in during
+   *  (see `useDisplayPile`) - still animates its entrance even though `fly`
+   *  is set, instead of just popping in already mid-sweep. */
+  justEnteredCardKey?: string | null;
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-md-w", 56);
   const behind = pendingFaceDown ? cards.slice(-2) : cards.slice(-3, -1);
@@ -622,17 +664,24 @@ export function PileStack({
         data-id="bataillecorse-pile-current"
       >
         <div className={hitClass}>
-          <PileCurrentCard card={topCard} enterFrom={enterFrom} animateEnter={!fly} faceDown={pendingFaceDown} />
+          <PileCurrentCard
+            card={topCard}
+            enterFrom={enterFrom}
+            animateEnter={!fly || (Boolean(topCard) && cardKey(topCard!) === justEnteredCardKey)}
+            faceDown={pendingFaceDown}
+          />
         </div>
       </div>
     </div>
   );
 }
 
-/** Top-of-pile card. The slide-in from the flipping seat is only for a
- *  genuine new flip: a slap/tribute win remounts `PileStack` to restart the
- *  fly-away, and replaying the enter animation then looks like the last
- *  card was played twice. */
+/** Top-of-pile card. The slide-in from the flipping seat plays for a genuine
+ *  new flip, or for the one card a tribute failure both plays and sweeps
+ *  away in the same update (`justEnteredCardKey` in `PileStack`) - never for
+ *  a slap/false-slap win remounting `PileStack` to restart the fly-away on a
+ *  card that was already sitting there, or replaying the enter animation
+ *  would make the last flip look like it was played twice. */
 function PileCurrentCard({
   card,
   enterFrom,
@@ -652,7 +701,7 @@ function PileCurrentCard({
     );
   if (!animateEnter) return inner;
   return (
-    <div className="played-card-enter will-change-transform" style={playedCardEnterStyle(enterFrom)}>
+    <div className="bataillecorse-card-enter will-change-transform" style={playedCardEnterStyle(enterFrom)}>
       {inner}
     </div>
   );

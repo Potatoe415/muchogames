@@ -55,6 +55,14 @@ export interface PileWinEvent {
   id: number;
   seat: Seat;
   cardCount: number;
+  /** The full swept pile (bottom to top), captured at award time. The
+   *  server can clear `pile` in the very same update that reports the win
+   *  (see `awardPile` in `engine.ts`) - without this, whichever card was
+   *  just flipped to trigger the win (e.g. a failed tribute answer) would
+   *  never appear in any client's `pile` history, since it was never a
+   *  separate, observable state. Both seats already see the whole face-up
+   *  pile, so nothing here needs redacting (see `redact.ts`). */
+  cards: Card[];
   reason: "tribute" | "slap" | "falseSlap";
   /** Only set when `reason === "slap"`: each seat's own locally-measured
    *  reaction time that decided the race (see `SlapClaim`) - lets both
