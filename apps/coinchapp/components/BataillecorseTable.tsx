@@ -49,7 +49,7 @@ const REACTION_READOUT_MS = 5000;
  *  the pile - see `.bataillecorse-deck-fire` (`app/globals.css`). */
 const FIRE_MS = 2600;
 
-function useFlash(eventId: number | undefined): boolean {
+export function useFlash(eventId: number | undefined): boolean {
   const [visible, setVisible] = useState(false);
   const seenRef = useRef<number | undefined>(undefined);
   useEffect(() => {
@@ -66,7 +66,7 @@ function useFlash(eventId: number | undefined): boolean {
  *  after that seat wins a pile - diffed by event id, same one-shot-per-
  *  occurrence pattern as `useFlash`, just returning the seat instead of a
  *  plain boolean since either deck can be the one lighting up. */
-function useWinnerFireSeat(lastPileWin: PlayerView["lastPileWin"]): PlayerView["mySeat"] | null {
+export function useWinnerFireSeat(lastPileWin: PlayerView["lastPileWin"]): PlayerView["mySeat"] | null {
   const [seat, setSeat] = useState<PlayerView["mySeat"] | null>(null);
   const seenRef = useRef<number | undefined>(undefined);
   useEffect(() => {
@@ -84,7 +84,7 @@ function useWinnerFireSeat(lastPileWin: PlayerView["lastPileWin"]): PlayerView["
  *  documented "reset state on prop change" pattern, same as Président's
  *  `usePileDisplay`) so it is always correct by the time the new card's key
  *  first mounts. */
-function usePileEnterDirection(view: PlayerView): EnterDirection {
+export function usePileEnterDirection(view: PlayerView): EnterDirection {
   const [dir, setDir] = useState<EnterDirection>("bottom");
   const [track, setTrack] = useState({ pileLength: view.pile.length, myStockCount: view.myStockCount });
   if (view.pile.length !== track.pileLength) {
@@ -115,7 +115,7 @@ const HOLD_PILE_MS = 3600;
  *  `flying` is true for that whole hold: drives the "cards fly into the
  *  winner's stock" sweep in `PileStack` (`.bataillecorse-pile-fly`, see
  *  `app/globals.css`) instead of the pile just vanishing. */
-function useDisplayPile(
+export function useDisplayPile(
   pile: PlayerView["pile"],
   winEventId: number | undefined,
 ): { pile: PlayerView["pile"]; flying: boolean } {
@@ -142,7 +142,7 @@ function useDisplayPile(
  *  before it fires, wrongly reading back as "no window seen yet" (reaction
  *  measured as 0). A layout effect runs before paint, so by the time the
  *  player can actually see the window, this ref is already set. */
-function useWindowSeenAtRef(slapWindow: PlayerView["slapWindow"]): RefObject<{ id: number; perfMs: number } | null> {
+export function useWindowSeenAtRef(slapWindow: PlayerView["slapWindow"]): RefObject<{ id: number; perfMs: number } | null> {
   const ref = useRef<{ id: number; perfMs: number } | null>(null);
   useLayoutEffect(() => {
     if (!slapWindow || ref.current?.id === slapWindow.id) return;
@@ -164,7 +164,7 @@ function formatReactionSeconds(ms: number, locale: "fr" | "en"): string {
  *  `resolveStaleSlapWindow`). Diffed by event id so it only (re)appears once
  *  per resolution, auto-hiding after `REACTION_READOUT_MS`. Shown as the
  *  combined `{mine}s | {opponent}s` readout above the phone-holder's deck. */
-function useSeatReactionMs(lastPileWin: PlayerView["lastPileWin"], seat: 0 | 1): number | null {
+export function useSeatReactionMs(lastPileWin: PlayerView["lastPileWin"], seat: 0 | 1): number | null {
   const [value, setValue] = useState<number | null>(null);
   const seenIdRef = useRef<number | undefined>(undefined);
   useEffect(() => {
@@ -185,7 +185,7 @@ function useSeatReactionMs(lastPileWin: PlayerView["lastPileWin"], seat: 0 | 1):
  *  revealing it immediately would hand away the "spot it yourself" reflex
  *  test this game is actually about - the highlight only kicks in as a
  *  last-moment nudge, right as the window is about to auto-resolve. */
-function useSlapWindowUrgent(slapWindow: PlayerView["slapWindow"]): boolean {
+export function useSlapWindowUrgent(slapWindow: PlayerView["slapWindow"]): boolean {
   const [urgentWindowId, setUrgentWindowId] = useState<number | null>(null);
   useEffect(() => {
     if (!slapWindow) return;
@@ -198,7 +198,7 @@ function useSlapWindowUrgent(slapWindow: PlayerView["slapWindow"]): boolean {
 
 /** `{mine}s | {opponent}s` above the phone-holder's deck. The shorter time
  *  glows yellow; a missing claim (uncontested slap) shows an en-dash. */
-function ReactionTimesReadout({
+export function ReactionTimesReadout({
   mineMs,
   opponentMs,
   locale,
@@ -440,7 +440,7 @@ const STOCK_LAYER_STEP_RATIO = 2 / 40;
  *  makes the whole stack glow like it just caught fire (see `FIRE_MS`/
  *  `useWinnerFireSeat`, `.bataillecorse-deck-fire` in `app/globals.css`) -
  *  the deck that just won the pile. */
-function StockPile({
+export function StockPile({
   count,
   dataId,
   scale = 1,
@@ -540,7 +540,7 @@ function pileCardHitClass(tapHitKey: number, slapImpact: boolean, flying: boolea
   return tapHitKey % 2 === 1 ? "bataillecorse-pile-card-hit" : "bataillecorse-pile-card-hit-alt";
 }
 
-function PileStack({
+export function PileStack({
   cards,
   enterFrom,
   fly,
@@ -661,7 +661,7 @@ function PileCurrentCard({
 /** Full-size stamp over the slap circle: a stylized red cross plus WRONG,
  *  shown for `FLASH_MS` after a false slap. Pointer-events none so it never
  *  eats the next tap. */
-function FalseSlapMark({ label }: { label: string }) {
+export function FalseSlapMark({ label }: { label: string }) {
   return (
     <div
       className="bataillecorse-false-slap-mark pointer-events-none absolute inset-0 z-10 flex items-center justify-center"
@@ -679,7 +679,7 @@ function FalseSlapMark({ label }: { label: string }) {
   );
 }
 
-function InfoPanel({ host, onReset, onClose }: { host?: HostControls; onReset?: () => void; onClose: () => void }) {
+export function InfoPanel({ host, onReset, onClose }: { host?: HostControls; onReset?: () => void; onClose: () => void }) {
   const { t, locale, setLocale } = useI18n();
   return (
     <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/50 px-6" data-id="bataillecorse-info-overlay" onClick={onClose}>

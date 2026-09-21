@@ -123,6 +123,10 @@ interface Props {
    *  ad-hoc games never run the server-side idle timer, so it would be dead UI
    *  there. Defaults to false. */
   showStillThereTimeout?: boolean;
+  /** Hides the bot-only field (reflex slider / think-time slider): there is
+   *  no bot to tune in la Bataille Corse's face-to-face duel mode (see
+   *  `LocalSetupPageInner`). Defaults to false. */
+  hideBotFields?: boolean;
 }
 
 export function GameSettingsPanel({
@@ -134,6 +138,7 @@ export function GameSettingsPanel({
   presidentFields = false,
   bataillecorseFields = false,
   showStillThereTimeout = false,
+  hideBotFields = false,
 }: Props) {
   const { t } = useI18n();
 
@@ -173,7 +178,7 @@ export function GameSettingsPanel({
         )}
       </div>
       <div className="grid grid-cols-1 gap-3">
-        {bataillecorseFields ? (
+        {!hideBotFields && (bataillecorseFields ? (
           <div className="flex flex-col gap-1.5 text-sm" data-id={`${idPrefix}-bot-reflex-row`}>
             <div className="flex items-center justify-between">
               <span className="text-[var(--card-face)]/75">{t("botReflexQualityLabel")}</span>
@@ -220,7 +225,7 @@ export function GameSettingsPanel({
               <span>{t("botThinkSlow")}</span>
             </div>
           </div>
-        )}
+        ))}
         {bataillecorseFields && (
           <div className="flex flex-col gap-1.5 text-sm" data-id={`${idPrefix}-deck-size-row`}>
             <span className="text-[var(--card-face)]/75">{t("deckSizeLabel")}</span>

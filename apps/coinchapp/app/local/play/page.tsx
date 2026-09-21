@@ -2,6 +2,7 @@ import { LocalGame } from "@/components/LocalGame";
 import { BouillaLocalGame } from "@/components/BouillaLocalGame";
 import { PresidentLocalGame } from "@/components/PresidentLocalGame";
 import { BataillecorseLocalGame } from "@/components/BataillecorseLocalGame";
+import { BataillecorseDuelGame } from "@/components/BataillecorseDuelGame";
 import { BOT_PUNCH_LEVELS, type BotPunch, type ScoringRules } from "@/lib/coinche";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
@@ -64,6 +65,7 @@ export default async function LocalPlayPage({
     botThinkMs?: string;
     roundsToPlay?: string;
     deckSize?: string;
+    mode?: string;
   }>;
 }) {
   const sp = await searchParams;
@@ -74,6 +76,9 @@ export default async function LocalPlayPage({
   }
   if (sp.game === "president") {
     return <PresidentLocalGame seed={seed} botThinkMs={botThinkMs} roundsToPlay={parseRoundsToPlay(sp.roundsToPlay)} />;
+  }
+  if (sp.game === "bataillecorse" && sp.mode === "duel") {
+    return <BataillecorseDuelGame seed={seed} deckSize={parseDeckSize(sp.deckSize)} />;
   }
   if (sp.game === "bataillecorse") {
     return <BataillecorseLocalGame seed={seed} botThinkMs={botThinkMs} deckSize={parseDeckSize(sp.deckSize)} />;

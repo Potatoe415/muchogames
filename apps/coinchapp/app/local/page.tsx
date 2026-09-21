@@ -7,6 +7,7 @@ import { useI18n } from "@/lib/client/i18n";
 import { GameSettingsPanel, DEFAULT_GAME_SETUP } from "@/components/GameSettingsPanel";
 import type { GameSetupValues } from "@/components/GameSettingsPanel";
 import {
+  LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY,
   LOCAL_BATAILLECORSE_STORAGE_KEY,
   LOCAL_BOUILLA_STORAGE_KEY,
   LOCAL_COINCHE_STORAGE_KEY,
@@ -25,11 +26,20 @@ export default function LocalSetupPage() {
 function LocalSetupPageInner() {
   const router = useRouter();
   const { t } = useI18n();
-  const game = useSearchParams().get("game");
+  const searchParams = useSearchParams();
+  const game = searchParams.get("game");
   const isBouilla = game === "bouilla";
   const isPresident = game === "president";
   const isBataillecorse = game === "bataillecorse";
   const [setup, setSetup] = useState<GameSetupValues>(DEFAULT_GAME_SETUP);
+  // La Bataille Corse-only: same device, either a bot opponent or a second
+  // real human sitting on the other side of the phone (see docs/DECISIONS.md).
+  // Defaults to "duel" when arriving from the home screen's dedicated
+  // "Jouer face à face" button (`?mode=duel`), still switchable here.
+  const [bataillecorseMode, setBataillecorseMode] = useState<"bot" | "duel">(
+    searchParams.get("mode") === "duel" ? "duel" : "bot",
+  );
+  const isDuel = isBataillecorse && bataillecorseMode === "duel";
 
   function startLocalGame() {
     // A deliberate "start" from setup always begins a fresh match: clear any
@@ -38,12 +48,17 @@ function LocalSetupPageInner() {
     clearPersistedGame(LOCAL_BOUILLA_STORAGE_KEY);
     clearPersistedGame(LOCAL_PRESIDENT_STORAGE_KEY);
     clearPersistedGame(LOCAL_BATAILLECORSE_STORAGE_KEY);
+    clearPersistedGame(LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY);
     if (isBouilla) {
       router.push(`/local/play?game=bouilla&botThinkMs=${setup.botThinkMs}`);
       return;
     }
     if (isPresident) {
       router.push(`/local/play?game=president&botThinkMs=${setup.botThinkMs}&roundsToPlay=${setup.roundsToPlay}`);
+      return;
+    }
+    if (isDuel) {
+      router.push(`/local/play?game=bataillecorse&mode=duel&deckSize=${setup.bataillecorseDeckSize}`);
       return;
     }
     if (isBataillecorse) {
@@ -82,6 +97,8 @@ function LocalSetupPageInner() {
             ? t("bouillaLocalTitle")
             : isPresident
             ? t("presidentLocalTitle")
+            : isDuel
+            ? t("bataillecorseDuelTitle")
             : isBataillecorse
             ? t("bataillecorseLocalTitle")
             : t("playLocal")}
@@ -91,11 +108,37 @@ function LocalSetupPageInner() {
             ? t("bouillaLocalSubtitle")
             : isPresident
             ? t("presidentLocalSubtitle")
+            : isDuel
+            ? t("bataillecorseDuelSubtitle")
             : isBataillecorse
             ? t("bataillecorseLocalSubtitle")
             : t("localSubtitle")}
         </p>
       </header>
+
+      {isBataillecorse && (
+        <section className="flex flex-col gap-1.5 text-sm" data-id="local-bataillecorse-mode-row">
+          <span className="text-[var(--foreground)]/75">{t("bataillecorseModeLabel")}</span>
+          <div className="flex gap-2">
+            {(["bot", "duel"] as const).map((mode) => (
+              <button
+                key={mode}
+                type="button"
+                data-id={`local-bataillecorse-mode-${mode}`}
+                onClick={() => setBataillecorseMode(mode)}
+                className={[
+                  "flex-1 rounded-lg px-3 py-2 font-bold",
+                  bataillecorseMode === mode
+                    ? "bg-[var(--accent-yellow)] text-[var(--surface)]"
+                    : "bg-[var(--foreground)]/10 text-[var(--foreground)]/70",
+                ].join(" ")}
+              >
+                {mode === "bot" ? t("bataillecorseModeBot") : t("bataillecorseModeDuel")}
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="grid gap-3" data-id="local-actions-card">
         <button
@@ -115,6 +158,7 @@ function LocalSetupPageInner() {
         coincheFields={!isBouilla && !isPresident && !isBataillecorse}
         presidentFields={isPresident}
         bataillecorseFields={isBataillecorse}
+        hideBotFields={isDuel}
       />
     </main>
   );

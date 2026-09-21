@@ -25,6 +25,15 @@ export default function BataillecorsePage() {
 
       <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25vh]" data-id="bataillecorse-splash-actions">
         <button
+          data-id="bataillecorse-play-face-to-face-button"
+          onClick={() => router.push("/local?game=bataillecorse&mode=duel")}
+          className="w-full rounded-2xl bg-[var(--accent-orange)] px-4 py-5 text-lg font-black text-[var(--surface)] shadow-lg"
+        >
+          {t("bataillecorseFaceToFaceButton")}
+          <span className="mt-0.5 block text-xs font-medium text-[var(--surface)]/80">{t("bataillecorseFaceToFaceNote")}</span>
+        </button>
+
+        <button
           data-id="bataillecorse-play-local-button"
           onClick={() => router.push("/local?game=bataillecorse")}
           className="w-full rounded-2xl bg-[var(--accent-yellow)] px-4 py-5 text-lg font-black text-[var(--surface)] shadow-lg"
