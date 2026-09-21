@@ -5,6 +5,12 @@ import { HomeTopBar } from "@/components/HomeTopBar";
 import { useI18n } from "@/lib/client/i18n";
 import { withHubName } from "@/lib/client/hubName";
 
+/** La Bataille Corse's own build/iteration counter, shown discreetly at the
+ *  bottom of this splash screen only - unrelated to the whole app's
+ *  `NEXT_PUBLIC_APP_VERSION` (see `app/page.tsx`). Bump by hand as this game
+ *  changes. */
+const BATAILLECORSE_VERSION = "0.0.1";
+
 /** Same layout/mode picker as the home screen, but every button reuses the existing
  *  /local, /online, /adhoc routes with `?game=bataillecorse` instead of a duplicated tree. */
 export default function BataillecorsePage() {
@@ -59,6 +65,13 @@ export default function BataillecorsePage() {
           <span className="mt-0.5 block text-xs font-medium text-[var(--surface)]/80">{t("adhocOfflineNote")}</span>
         </button>
       </div>
+
+      <p
+        className="pointer-events-none relative z-10 pb-1 text-center text-[10px] font-medium text-[var(--surface)]/40"
+        data-id="bataillecorse-version-label"
+      >
+        V{BATAILLECORSE_VERSION}
+      </p>
     </main>
   );
 }
