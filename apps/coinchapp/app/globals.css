@@ -401,6 +401,47 @@ select option {
   }
 }
 
+/* The winning seat's whole half of `bataillecorse-scene` glows/flickers like
+   it just caught fire (`winnerFireSeat`, same `FIRE_MS` window as
+   `.bataillecorse-deck-fire` above) - a big, unmistakable "you're on fire"
+   moment beyond the deck's own glow. `-top`/`-bottom` only differ in which
+   edge the gradient radiates from (opponent's half is drawn at the top of
+   the table, `mySeat`'s at the bottom - see `BataillecorseTable`'s two call
+   sites). */
+.bataillecorse-half-fire {
+  animation: bataillecorse-half-fire 550ms ease-in-out infinite alternate;
+}
+
+.bataillecorse-half-fire-top {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--accent-yellow) 65%, transparent),
+    color-mix(in srgb, var(--accent-orange) 30%, transparent) 55%,
+    transparent 100%
+  );
+}
+
+.bataillecorse-half-fire-bottom {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--accent-yellow) 65%, transparent),
+    color-mix(in srgb, var(--accent-orange) 30%, transparent) 55%,
+    transparent 100%
+  );
+}
+
+@keyframes bataillecorse-half-fire {
+  0% {
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+
+  100% {
+    opacity: 1;
+    filter: brightness(1.35);
+  }
+}
+
 .belote-flash {
   animation: belote-flash 2200ms cubic-bezier(0.16, 1, 0.3, 1) both;
   will-change: opacity, transform;

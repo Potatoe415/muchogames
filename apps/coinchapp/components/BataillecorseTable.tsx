@@ -357,6 +357,24 @@ export function BataillecorseTable({
       )}
 
       <div className="relative h-0 min-h-0 flex-1" data-id="bataillecorse-scene">
+        {/* The winner's whole half of the screen glows like it just caught
+            fire, on top of the matching deck glow (`StockPile`'s `fire`
+            prop) - same `winnerFireSeat`/`FIRE_MS` window, so both clear the
+            instant the other does. First child with no explicit z-index and
+            `pointer-events-none`: every other element in this scene paints
+            over it in DOM order, so it never sits on top of a card or blocks
+            a tap. */}
+        {winnerFireSeat !== null && (
+          <div
+            className={[
+              "bataillecorse-half-fire pointer-events-none absolute inset-x-0 h-1/2",
+              winnerFireSeat === opponentSeat ? "top-0 bataillecorse-half-fire-top" : "bottom-0 bataillecorse-half-fire-bottom",
+            ].join(" ")}
+            data-id="bataillecorse-half-fire"
+            aria-hidden="true"
+          />
+        )}
+
         <SeatRow
           label={playerName(gv, opponentSeat, locale)}
           stockCount={view.opponentStockCount}
