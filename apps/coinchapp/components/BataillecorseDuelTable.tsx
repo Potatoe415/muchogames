@@ -66,7 +66,7 @@ export function BataillecorseDuelTable({
     pileFlyTarget !== null && (viewA.lastPileWin?.reason === "slap" || viewA.lastPileWin?.reason === "falseSlap");
 
   async function tapSlap(seat: Seat) {
-    if (viewA.phase !== "playing") return;
+    if (viewA.phase !== "playing" || pileFlying) return;
     setSlapTapKey((n) => n + 1);
     const seen = viewA.slapWindow && windowSeenAtRef.current?.id === viewA.slapWindow.id ? windowSeenAtRef.current : null;
     const reactionMs = seen ? performance.now() - seen.perfMs : 0;
@@ -112,7 +112,7 @@ export function BataillecorseDuelTable({
           locale={locale}
           rotated
           dataId="bataillecorse-duel-player2"
-          className="top-6"
+          className="top-[calc(var(--table-hud-top)+3.5rem)]"
         />
 
         <DuelCenterBlock
@@ -125,7 +125,7 @@ export function BataillecorseDuelTable({
           justEnteredCardKey={justEnteredCardKey}
           onSlapTop={() => tapSlap(1)}
           onSlapBottom={() => tapSlap(0)}
-          slapDisabled={viewA.phase !== "playing"}
+          slapDisabled={viewA.phase !== "playing" || pileFlying}
           slapLabel={t("slapPileButton")}
           slapWindowUrgent={slapWindowUrgent}
           falseSlapFlash={falseSlapFlash && Boolean(viewA.lastFalseSlap)}

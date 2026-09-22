@@ -29,6 +29,8 @@ Blockers:
 - None.
 
 Recent_Changes:
+- 2026-09-22 la Bataille Corse duel table: player 2's corner was only `top-6` from the top, inside the absolute `z-30` header's clickable band — taps on their stock sometimes hit the header instead of registering as a flip. Matched the vs-bot table's existing `top-[calc(var(--table-hud-top)+3.5rem)]` clearance.
+- 2026-09-22 la Bataille Corse (both vs-bot and duel tables): the pile/slap button is now also disabled while the pile-win sweep animation (`pileFlying`) is in flight, not just when `phase !== "playing"` — stops a tap landing mid-sweep from firing a spurious `onSlap`.
 - 2026-09-22 Bootstrap v10.1 alignment (context architecture only, no code touched): split `docs/DECISIONS.md` into `docs/decisions/*.md`+`INDEX.md`; added `docs/ARCHITECTURE.md`/`docs/SECURITY.md`/`docs/DEBUGGING.md`/`docs/_templates/`/`.claude/settings.json`; rewrote `AGENTS.md`/`STATE.md`; condensed `docs/BACKLOG.md`. Same pass applied to root `muchogames` and `apps/tranquil`.
 - 2026-09-21 la Bataille Corse: fixed 3 bugs — missing played card on an immediate tribute-failure sweep, the plain-flip landing bounce, and false slaps never being penalized again after the match's first slap window closed.
 - 2026-09-21 la Bataille Corse: face-to-face 1v1 duel mode (same device, 2 real humans) via a home-screen button — seat 1's corner rotated 180deg, shared pile split into top/bottom slap zones.

@@ -312,7 +312,7 @@ export function BataillecorseTable({
     pileFlyTarget !== null && (view.lastPileWin?.reason === "slap" || view.lastPileWin?.reason === "falseSlap");
 
   async function tapSlap() {
-    if (view.phase !== "playing") return;
+    if (view.phase !== "playing" || pileFlying) return;
     setSlapTapKey((n) => n + 1);
     const seen = view.slapWindow && windowSeenAtRef.current?.id === view.slapWindow.id ? windowSeenAtRef.current : null;
     const reactionMs = seen ? performance.now() - seen.perfMs : 0;
@@ -402,7 +402,7 @@ export function BataillecorseTable({
             type="button"
             data-id="bataillecorse-slap-button"
             onClick={tapSlap}
-            disabled={view.phase !== "playing"}
+            disabled={view.phase !== "playing" || pileFlying}
             aria-label={t("slapPileButton")}
             className={[
               "relative flex h-[var(--slap-circle-size)] w-[var(--slap-circle-size)] items-center justify-center rounded-full transition-all active:scale-95",
