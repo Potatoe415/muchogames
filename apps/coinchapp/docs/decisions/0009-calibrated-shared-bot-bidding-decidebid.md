@@ -1,0 +1,9 @@
+# 0009 — Calibrated, shared bot bidding (`decideBid`)
+
+Date: 2026-06-10
+Status: Accepted
+Decision: Bidding for both bot brains now goes through a single `decideBid(hand, allowed, minValue)` in `lib/coinche/bot.ts` (exported via the package index). It estimates the best mode, lifts the hand score by a fixed `PARTNER_CONTRIBUTION = 12` (partner + 10 de der), rounds to a contract step, and opens when the result reaches `max(80, minValue)`, capped at 160 (never auto-bids capot/générale). The client bot (`lib/client/bot.ts`) deleted its duplicate `trumpPotential`/`toutAtoutPotential`/`sansAtoutPotential`/`hasBelote`/`highestBid` helpers and calls `decideBid`. `evaluateSuit` now also adds a 20-point belote bonus.
+Context: Bots almost never announced. The opening threshold compared a single-hand strength heuristic against the full contract value (80+), which an 8-card hand rarely reaches alone, so every seat passed.
+Rationale: A contract only needs the team (two hands) to reach the announced value, so the bidder's own hand should be judged against ~hand + partner share, not the whole contract. A 4000-deal simulation tuned `PARTNER_CONTRIBUTION`: 12 yields a contract on the first auction ~100% of the time, avg contract ~84, distribution skewed to 80-90 with a tail to 110-120. Higher values (e.g. 22) over-bid (avg ~89) and risk failed contracts; 0 caused frequent redeals.
+Consequences: Bidding logic lives in one place (engine layer); the client reuses it, removing duplication. Bot bid values are now meaningful (stronger hands bid higher). Local (`useLocalGame` -> `advanceBots`) and online (host-driven `chooseClientAction`) bots bid identically.
+Alternatives_Rejected: Per-brain threshold tweaks (keeps two near-identical heuristics, violates DRY); lowering only the raw threshold without a partner model (loses hand-strength differentiation in the bid value).

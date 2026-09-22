@@ -1,0 +1,9 @@
+# 0025 — Tiny avatar thumb in online games (reverses Bergamots-only avatar)
+
+Date: 2026-09-06
+Status: Accepted
+Decision: A ~48 px JPEG thumb (`bergamots-player-avatar-thumb`) now travels with the player into online multiplayer only: Yatzy reads it from `localStorage`; Coinche, Bouilla, and Tranquil receive it as `?avatar=` on hub launch (same channel as `?name=`). The full ~50 KB profile JPEG never goes in a URL or in Yatzy `game_state`. Opponents do not receive this image; only the local player sees their own photo next to their own name. Local / solo / ad-hoc P2P stay name-only.
+Context: User asked to show their profile avatar next to their name in Coinche, Bouilla, Yam, and Tranquil, small, and only in online multiplayer. The same-day "avatar stays Bergamots-only" decision assumed the 50 KB JPEG could not travel through a URL.
+Rationale: A 48 px JPEG at quality 0.5 is a few KB, small enough for `?avatar=` and for an `<img>` next to the name, without a backend, hosted-image store, or a new DB column. Gating on online-only (Yatzy `gameCode`, Coinche/Bouilla `GameRoom`, Tranquil `mode === 'online'`) matches the request and avoids cluttering local pass-and-play. Missing thumb: name only, no placeholder circle.
+Consequences: Reverses the Bergamots-only avatar rule for this tiny thumb only. `docs/PRODUCT.md` / `docs/TECH.md` still say the avatar does not travel — confirm with the user before editing those. No `DATA_MODEL.md` change (still client-only keys). Receiving apps validate `data:image/` and a length cap; they do not persist the image in their own databases.
+Alternatives_Rejected: Syncing every player's avatar through game state / a Postgres column — rejected, Yatzy `game_state` is capped at 64 KB and the user asked only for *their* avatar next to *their* name. Sending the full 50 KB JPEG in the launch URL — rejected, too large. A hosted image / profile API — rejected, new infra not asked for.

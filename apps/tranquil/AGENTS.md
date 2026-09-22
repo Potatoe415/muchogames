@@ -1,136 +1,106 @@
 # AGENTS
 
-Purpose: Canonical operating protocol for all agents and humans.
-Status: Source of truth. All other agent files route here.
-Scope: Entire repository.
+Canonical instructions for all agents and humans. No other instruction file may duplicate or contradict this one.
+Language: English for code, comments, docs, commits. User-facing copy: see `docs/PRODUCT.md`.
 
----
+Aligned to bootstrap v10.1 on 2026-09-22 (see `docs/decisions/INDEX.md`). This app predates the `src/modules/` convention that bootstrap assumes — see `docs/ARCHITECTURE.md`'s module map for how modularity actually works here (`shared`/`api`/`client` workspaces).
 
-## 1. Startup Protocol
+This app is a **self-governing colocated sub-app** inside the `muchogames` repo (see the root `AGENTS.md` and `docs/GAMES_MAP.md`). A task inside `apps/tranquil/` follows *this* file, not the root repo's vanilla-JS rules.
 
-Load files on a strict need-to-know basis.
+## Commands
 
-| Condition | Load |
+Run `check` before declaring any task done. Never claim something was verified if the command was not run.
+
+| Purpose | Command |
 |---|---|
-| Always | `STATE.md` |
-| Task touches scope, users, features, UX, or acceptance criteria | `docs/PRODUCT.md` |
-| Task touches stack, DB, security, infra, or code structure | `docs/TECH.md` |
-| Task touches data model, entities, fields, tables, collections, relationships, indexes, constraints, migrations, queries, or permissions | `docs/DATA_MODEL.md` |
-| Task touches planning or prioritisation | `docs/BACKLOG.md` |
-| About to reverse or modify a prior decision | `docs/DECISIONS.md` |
-| Task contains or implies: run / command / script / setup / start / test / check / lint / build / deploy / migrate / seed / install | `docs/RUNBOOK.md` |
-| Resuming after time away (> 1 day) | `docs/DECISIONS.md` + Recent_Changes in `STATE.md` |
+| Install | `npm install` (from this app's root — installs all its workspaces) |
+| Dev | `npm run dev` (starts `api` on :3001 and `client` on :5173) |
+| Test one module | `npm test` (runs `shared`'s Vitest suite — the only tested workspace) |
+| Check | No single combined command exists yet — run `npm test && npx tsc --noEmit -p tsconfig.json && npm run build -w client` (see `docs/BACKLOG.md`) |
 
-Do not load `docs/DECISIONS.md`, `docs/DATA_MODEL.md`, or `docs/RUNBOOK.md` by default.
+## Context loading
 
----
+Start with `STATE.md`. Load only what the task needs. Never scan the whole repository. Skip dependencies, build output, lockfiles, logs, raw data.
 
-## 2. Execution Protocol
+| Task touches | Load |
+|---|---|
+| Scope, users, UX, acceptance criteria | `docs/PRODUCT.md` (currently all "TBD" — confirm scope with the user before treating anything here as settled) |
+| Stack, module map, workspaces | `docs/ARCHITECTURE.md` |
+| Data model (shared `games`/`game_players`/`game_events` rows, `game_type='tranquillity'`) | `docs/DATA_MODEL.md` |
+| Auth, permissions, input, secrets, new dependency | `docs/SECURITY.md` |
+| Bug, error, logging, tests | `docs/DEBUGGING.md` |
+| Setup, deploy, migrate, rollback, run/test/lint/build/check | `docs/RUNBOOK.md` |
+| Planning | `docs/BACKLOG.md` |
+| Official game rules (for engine/rules questions) | `docs/RULES.md` |
+| A past decision | `docs/decisions/INDEX.md`, then only the relevant decision |
+| Creating a doc, module, task, or decision | its template in `docs/_templates/` |
+| Resuming after time away (> 1 day) | `docs/decisions/INDEX.md` + Recent_Changes in `STATE.md` |
 
-- Make the smallest coherent change.
-- Do not silently choose a stack, framework, DB, hosting, auth, or payment provider.
-- Flag conflicts with `docs/PRODUCT.md` or `docs/TECH.md` immediately.
-- Ask for explicit user confirmation before modifying `docs/PRODUCT.md` or `docs/TECH.md`.
-- Prefer boring, maintainable solutions. No speculative architecture.
-- No placeholder production logic unless marked `# TEMP` with a reason.
-- No secrets in committed files. Never read, print, or summarise `.env` values.
+A file in this table may not exist yet. Create it from its template only when there is real content for it.
 
----
+## Task levels
 
-## 3. Update Protocol
+Classify every task first. When unsure, go one level up.
+- **L0 trivial** (rename, copy, style, obvious local fix): do it, run the relevant check.
+- **L1 local** (one module: `shared`, `api`, or `client`): checkpoint, inspect, change, verify, run `check`.
+- **L2 structural** (data model, auth, permissions, new dependency, API contract, migration, infra): checkpoint, state non-obvious assumptions and a plan with a verify step per step, wait for approval, create `docs/tasks/<slug>.md`, log a decision.
 
-Run after every meaningful unit of work.
+Checkpoint: the working tree is committed before you start. If it is not, ask.
 
-### Always update
-- `STATE.md`: replace Current_Goal, Last_Action, Next_Actions. Append one line to Recent_Changes (keep max 5).
+## Change rules
 
-### Update when tasks change
-- `docs/BACKLOG.md`: move items between Now / Next / Later / Done / Blocked.
+- Smallest complete change: the whole behaviour, verified, nothing more.
+- Touch only what the task needs. Match existing style. Report unrelated issues; do not fix them.
+- Search the codebase for existing logic before writing new code. Reuse before creating.
+- Files ≤ 300 lines, functions ≤ 30 lines. Split by responsibility, not by size, when a file exceeds the limit.
+- No placeholder logic in production paths unless marked `# TEMP` with a reason.
+- Several valid interpretations: ask. Never silently choose a stack, framework, database, hosting, auth, or payment provider.
+- Keep the system understandable. Avoid premature abstraction. Prefer explicit over implicit.
+- The game engine (`shared/`) stays pure and framework-agnostic — local, vs-bot, and online modes must keep calling the same functions.
 
-### Update when data structure changes
-- `docs/DATA_MODEL.md`: update entities, fields, relationships, constraints, and access rules.
+## Security invariants
 
-### Update with user confirmation
-- `docs/PRODUCT.md`: when core features, user roles, objectives, or constraints change.
-- `docs/TECH.md`: when stack, conventions, or architecture principles change.
-- Do not update for implementation details, style choices, or local config.
-- Always ask the user before modifying these files. Never edit them autonomously.
+See `docs/SECURITY.md` for the full baseline. In short:
+- Never read, print, or summarise secrets or `.env` values. Only `.env.example`/`client/.env.example` are committed.
+- Validate every `/api/*` input; resolve the caller's seat from their verified Supabase JWT, never a client-supplied id.
+- Never log secrets, tokens, hidden hands/grid state, or personal data.
+- New dependency: check that an existing one does not suffice, verify the exact name exists and is maintained, then ask the user.
+- Destructive operations (delete Supabase rows, force push, production deploy) need explicit user approval.
 
-### Append when a non-trivial decision is made
-- `docs/DECISIONS.md`: use the standard template (see file).
+## Debugging invariants
 
-**Decision threshold** — log if any of these is true:
-- Locks in a technology, library, or vendor.
-- Changes the data model, persistence structure, ownership rules, or access model.
-- Changes ownership or structure of a file or module.
-- Cannot be reversed in under 30 minutes.
-- Contradicts a previous entry in `docs/DECISIONS.md`.
+See `docs/DEBUGGING.md` for the current (as-is) error/logging conventions. Reuse `logApp`/`logServer`/`logDb` (existing step-tagged logging for the connection flow) rather than ad hoc `console.*` calls when touching that flow.
+- A bug fix in the engine starts with a failing test in `shared/src/*.test.ts` (existing discipline: `gameEngine.test.ts`, `gridFeasibility.test.ts`).
+- Run `npm test`, `npx tsc --noEmit -p tsconfig.json`, `npm run build -w client` before declaring done.
 
-If unsure: add an Open_Question to `STATE.md`, not a decision entry.
+## After each task
 
----
+- `STATE.md`: replace Focus, Context, Next. Max 40 lines.
+- `docs/BACKLOG.md`: move items.
+- `docs/DATA_MODEL.md`: update whenever the shared-table usage or `GameState` shape changes.
+- L2: add a decision file in `docs/decisions/` and one line in `docs/decisions/INDEX.md`; delete the task file.
+- `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md`: propose changes; edit only after the user confirms.
+- Propose a conventional commit message.
 
-## 4. Token Discipline
-
-- Start every task with `STATE.md` only.
-- Load additional files only when the Startup Protocol table matches.
-- Do not read the whole repository by default.
-- Do not load generated files, dependencies, build outputs, logs, raw data, or lockfiles unless explicitly needed.
-- Prefer targeted file reads over broad scans.
-- If a file is large, read only the relevant section first.
-
----
-
-## 5. Language Rules
-
-- Code, filenames, comments, commits, docs: English.
-- User-facing copy: language defined by the product.
-- No corporate filler. No vague summaries.
-- Use concrete facts, paths, commands, and decisions.
-
----
-
-## 6. Code Discipline
-
-### Simplicity first
-- Do not write code that is not needed right now. (YAGNI)
-- The simplest solution that works is always preferred. (KISS)
-- No speculative abstractions, no future-proofing unless explicitly requested.
-
-### Before writing anything
-- Search the codebase for existing logic that does the same thing.
-- Reuse before creating. Extend before duplicating.
-- If similar code exists in 2+ places, extract it before adding a third. (DRY)
-
-### Size limits
-- Max lines per file: 300 (excluding comments and blank lines). Use judgment — split earlier if the file has mixed responsibilities.
-- Max lines per function: 30.
-- If a file exceeds 300 lines: split by responsibility, not by size.
-- If a function exceeds 30 lines: extract named sub-functions.
-- Exception: generated files, migrations, and test fixtures are exempt.
-
-### Modularity
-- One file = one responsibility. (SRP)
-- One function = one action, clearly named after what it does.
-- A function name should make its body almost unnecessary to read.
-- Dependencies flow one way. No circular imports.
-
-### When not to code
-- Configuration over code when possible.
-- If a library already does it well, use the library.
-- Delete code that is no longer used. Dead code is not harmless.
-
----
-
-## 7. File Ownership
+## File Ownership
 
 | File | Rule |
 |---|---|
 | `AGENTS.md` | Edit only to improve agent workflow. |
-| `STATE.md` | Replace on every update. Never append history here. Max 60 lines. |
+| `STATE.md` | Replace on every update. Never append history here. Max 40 lines. |
 | `docs/PRODUCT.md` | Living document. Never edit autonomously — confirm with user first. |
-| `docs/TECH.md` | Living document. Never edit autonomously — confirm with user first. |
+| `docs/ARCHITECTURE.md` | Living document. Never edit autonomously — confirm with user first. |
+| `docs/SECURITY.md` | Living document. Never edit autonomously — confirm with user first. |
+| `docs/DEBUGGING.md` | Living document. Update when error/logging conventions change. |
 | `docs/DATA_MODEL.md` | Living document. Update whenever persisted data structure changes. |
 | `docs/BACKLOG.md` | Living document. Always current. |
-| `docs/DECISIONS.md` | Append-only. Never edit past entries. |
+| `docs/decisions/*.md` | Append-only. Never edit past entries. |
+| `docs/decisions/INDEX.md` | One line added per new decision. |
 | `docs/RUNBOOK.md` | Update when commands or steps change. |
+| `docs/RULES.md` | Reference material (official game rules) — not an agent-editable doc. |
+
+## Retired files (kept on disk, pending user confirmation to delete)
+
+- `docs/TECH.md` — superseded by `docs/ARCHITECTURE.md`.
+- `docs/DECISIONS.md` — superseded by `docs/decisions/*.md` + `docs/decisions/INDEX.md` (same content, split one-file-per-entry, verbatim).
+- `CLAUDE.md`, `GEMINI.md`, `.cursor/rules/000-router.mdc` — thin routers, redundant now that `AGENTS.md` is read natively by current tools. A new `.gemini/settings.json` (config-based, not a router file) replaces `GEMINI.md`'s role for Gemini CLI.

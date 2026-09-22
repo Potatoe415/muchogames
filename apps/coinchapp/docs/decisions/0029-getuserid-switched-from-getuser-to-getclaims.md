@@ -1,0 +1,9 @@
+# 0029 — `getUserId()` switched from `getUser()` to `getClaims()`
+
+Date: 2026-07-17
+Status: Accepted
+Decision: User confirmed the tradeoff flagged in the previous entry. `lib/supabase/server.ts`'s `getUserId()` now calls `supabase.auth.getClaims()` instead of `supabase.auth.getUser()`.
+Context: Follow-up to the previous entry's round-trip cleanup - this was the one remaining network round trip on every server action and every `getView` call that was deliberately left alone pending confirmation.
+Rationale: `getClaims()` still verifies the JWT (unlike `getSession()`, which Supabase explicitly warns is unsafe for authorization decisions since it does not verify the signature) - but it does so locally, without a round trip to the Auth server, whenever the Supabase project uses asymmetric JWT signing keys; it transparently falls back to the same server call `getUser()` always makes if the project is still on a symmetric secret (so this is a pure win, never a regression, whichever key type the project currently uses). Acceptable given anonymous sign-in is the only auth mode here (no email/password account to protect) and the risk being traded away is real-time session revocation (an admin banning a session mid-token-lifetime would only take effect at the token's natural expiry instead of immediately).
+Consequences: `getUserId()`'s signature/behavior for callers is unchanged (`Promise<string | null>`); only the id source changed. If the Supabase project's Auth settings are ever changed to enable asymmetric signing keys (not verified as part of this change - no MCP/CLI access to the project dashboard from here), this call becomes fully local with no network cost at all.
+Alternatives_Rejected: `getSession()` (rejected - does not verify the JWT signature, explicitly called out as unsafe by Supabase's own docs for this exact use case).

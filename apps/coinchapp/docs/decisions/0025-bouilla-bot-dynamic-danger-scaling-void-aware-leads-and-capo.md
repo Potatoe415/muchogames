@@ -1,0 +1,9 @@
+# 0025 — Bouilla bot: dynamic danger scaling, void-aware leads, and Capot (sweep) awareness
+
+Date: 2026-07-16
+Status: Accepted
+Decision: Extended the Bouilla heuristic bot (`lib/bouilla/bot.ts`, still no search/ISMCTS) with three additions, chosen by the user from a menu of options (lightweight heuristics vs. an endgame minimax solver vs. a full ISMCTS-style port of Coinche's bot):
+Context: User asked how the bot AI works, then asked how to improve the Bouilla bot specifically; offered a menu of options (see chat), user picked "heuristics-plus" (moderate effort, no new search architecture).
+Rationale: These are the highest-value fixes that don't require a new search engine: the original bot treated every queen/club as equally dangerous regardless of round progress, never used any information about opponents' hands (unlike Coinche's bot), and had no notion that sometimes *winning* is the correct play (finishing a sweep, or preventing one) - a plain "always duck" bot was actively working against its own interest once a Capot was already underway.
+Consequences: `rounds.ts` gained two more small round-dispatch functions alongside `sweepWinner`/`roundDecidedEarly`, keeping all "what does this round's outcome depend on" logic in one file. The bot remains synchronous/heuristic (no worker, no time budget) - still much cheaper to run than Coinche's ISMCTS, per the original design tradeoff (see 2026-07-16 entry that shipped Bouilla). 13 new unit tests across `bot.test.ts`/`rounds.test.ts`.
+Alternatives_Rejected: An exact endgame minimax solver for the last few tricks (more code for a narrower payoff, mostly benefits "lastTrick"); a full ISMCTS port with determinization + Monte Carlo rollouts optimizing expected penalty (strongest and most general, but a much bigger lift - new determinizer, rollout engine, likely a Web Worker - not what the user asked for this round).

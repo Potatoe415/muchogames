@@ -1,0 +1,9 @@
+# 0058 — La Bataille Corse: both reaction times above own deck in every mode, shorter one yellow
+
+Date: 2026-09-18
+Status: Accepted
+Decision: After every resolved slap, both seats' reaction times show in one readout just above the phone-holder's own deck, in **every** mode (local/solo, online, ad-hoc): `{mine}s | {opponent}s` (right side is always the opponent). The shorter time glows `--accent-yellow`; a missing claim (uncontested slap) shows "–". The previous per-mode split (online merged-and-all-yellow vs local two separate per-seat labels) is gone.
+Context: User asked that solo and online both show both times above the holding player's card, formatted `0.75s | 0.52s` with the opponent on the right, and that the shortest time shine yellow. This reverses the 2026-09-17 alternative that kept local/ad-hoc on two separate readouts because the user had then specified "en mode en ligne".
+Rationale: One `ReactionTimesReadout` component, sourced from the already-confirmed `PileWinEvent.reactionMsBySeat` (not the instant local tap, which also fires on a false slap). Per-span styling is why this is no longer a single i18n string. Locale still formats the decimal (FR comma / EN point); the unit is glued on as `s` to match the example.
+Consequences: Removed `myReactionTimeLabel` / `opponentReactionTimeLabel` / `reactionTimesLabel` and the local `myReactionMs` instant readout. `SeatRow` no longer takes a `reactionLabel`. New CSS `.bataillecorse-reaction-fast`. On a tie both sides glow (both are the shortest).
+Alternatives_Rejected: Keeping two per-seat labels in local/ad-hoc (rejected - user said solo and online the same). Shining the whole combined chip yellow (rejected - only the shorter time). Instant local-ms for "mine" before the opponent's claim lands (rejected - that also fires on a false slap and wouldn't be comparable).

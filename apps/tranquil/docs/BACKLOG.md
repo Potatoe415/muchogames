@@ -1,39 +1,32 @@
 # BACKLOG
 
 Status: Living document. Always reflects current state.
+`Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ---
 
 ## Now
-- [ ] Fill in real Supabase env vars (`.env.local`, `client/.env.local`, Vercel dashboard) — see `docs/RUNBOOK.md`.
-- [ ] Play-test online mode end-to-end on the new Supabase/Vercel backend (two browser windows: create/join room, play, reload mid-game, seat-takeover after 30s idle).
-- [ ] Play-test "Play vs Bot" mode end-to-end (unaffected by the backend migration, but re-verify).
-- [ ] Play-test local pass-and-play end-to-end (unaffected by the backend migration, but re-verify).
+- [ ] Fill in real Supabase env vars (`.env.local`, `client/.env.local`, Vercel dashboard) — see `docs/RUNBOOK.md`. (Skip if already done in this environment.)
+- [ ] Play-test online mode end-to-end on the Supabase/Vercel backend (two browser windows: create/join room, play, reload mid-game, seat-takeover after 30s idle).
+- [ ] Play-test "Play vs Bot" mode end-to-end.
+- [ ] Play-test local pass-and-play end-to-end.
+- [ ] Ask the user to sanity-check the win/loss counter: play a local game to a win and to a loss, confirm both increment in `SettingsPanel` (from `Lobby` and from in-game).
+- [ ] Play a full local game to a Finish-card win to sanity-check win-flourish timing/position on a real board (only checked in isolation so far).
+- [ ] Carried over, pending post-deploy verification: invite-link `?room=` only + partner not inheriting host name/avatar; Bergamots-hub avatar next to own name; friend re-test of the mobile hand on a real iPhone.
 
 ## Next
-- [ ] Fill docs/PRODUCT.md with confirmed scope.
+- [ ] Fill `docs/PRODUCT.md` with confirmed scope (currently all "TBD").
 - [ ] Mobile layout polish (card sizes on small screens).
-- [ ] Add score/stats summary on game over screen.
-- [ ] Stormy Seas expansion (Section 6) — Jagged Rocks, Sea Monsters, Storm & Compass.
+- [ ] Add score/stats summary on game-over screen.
+- [ ] Stormy Seas expansion (Section 6 of `docs/RULES.md`) — Jagged Rocks, Sea Monsters, Storm & Compass.
 - [ ] Idle-turn timer / bot-takeover for online mode (coinchapp already has this pattern) — only if disconnections prove to be a real problem.
-
-## Later
-- [ ] Competitive variant (Section 7.5).
+- [ ] Competitive variant (`docs/RULES.md` Section 7.5).
 - [ ] Persistent high scores / session history.
 - [ ] Card artwork assets (replace CSS gradients).
+- [ ] Add a single combined `check` script (test + typecheck + build) — see `docs/DEBUGGING.md`.
+- [ ] Confirm/add a formatter and linter config — none is currently enforced (see `docs/ARCHITECTURE.md` Conventions).
+- [ ] No secret-scanning tool or dependency-audit step configured — see `docs/SECURITY.md`.
+- [ ] `api/join.ts`'s create-then-insert-seat race under simultaneous requests for the same room code (see `docs/SECURITY.md`) — revisit if it causes real issues.
 
 ## Blocked
-- (none)
-
-## Done
-- [x] Delay game-over overlay ~2s so the last placed tile / losing board stays visible (online + local/bot).
-- [x] Mobile hand bug, corrected diagnosis: it's horizontal card overflow (hand-count badge didn't match visible cards, last cards cut off at the right edge), not vertical toolbar clipping. `Hand.tsx` now sizes cards via `ResizeObserver`, floored at 44px with horizontal-scroll fallback for 7-8+ card hands (start-discard). See docs/DECISIONS.md (2026-09-06). Pending real-device re-verification — not yet deployed.
-- [x] iOS Safari/Chrome hand-clipping fix, take 2: reverted `position: fixed` (caused a worse regression — needed app background/foreground to fix instead of rotate) back to normal-flow `#game-board` sized by `--app-height`. Pending real-device re-verification.
-- [x] Share-game-link button on the online create-room connecting screen (native share / copy `?room=` URL).
-- [x] Migrated online backend from Railway/Socket.IO to Vercel Serverless Functions + Supabase (shared project with coinchapp) — see docs/DECISIONS.md (2026-08-03).
-- [x] Play vs Bot: co-op heuristic bot + lobby button + auto-play in local mode.
-- [x] Bootstrap context architecture.
-- [x] Phase 1: shared game engine with 32 unit tests (100% pass).
-- [x] Phase 2: Node.js + Socket.IO server with reconnection support.
-- [x] Phase 3: React + Vite + Tailwind client — Grid, Hand, DiscardModal, StartDiscardModal.
-- [x] Phase 4: Pass-and-play transition screen + socket disconnect state preservation.
+- None.

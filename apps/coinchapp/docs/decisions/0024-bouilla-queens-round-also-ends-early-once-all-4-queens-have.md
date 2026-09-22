@@ -1,0 +1,9 @@
+# 0024 — Bouilla "queens" round also ends early, once all 4 queens have fallen
+
+Date: 2026-07-16
+Status: Accepted
+Decision: Generalized the previous entry's single-purpose "kingSpades ends early" check into `roundDecidedEarly(round, tricks)` in `lib/bouilla/rounds.ts`, and added a `"queens"` case: the round ends the instant all 4 queens have been played across any tricks (regardless of who wins them - unlike the "Capot" `sweepWinner`, which requires one seat to hold all 4), not just when the king of spades falls. `applyPlay` (`lib/bouilla/trick.ts`) now calls this single function instead of an inline `kingSpades`-only check.
+Context: User asked for the same early-stop behavior on the "queens" round: once all 4 queens are down, the rest of the deal can't change who paid for them.
+Rationale: Same reasoning as kingSpades - once every counted card for the round has appeared, the outcome is fixed and further tricks are just busywork. Queens differ from the king in that they can fall across several different tricks (not necessarily to the same seat), so the check sums queen appearances across all of `state.tricks` so far, not just the just-completed one.
+Consequences: `state.tricks.length` for a finished "queens" round can now also be `< 13`. `sweepWinner`'s existing "queens" (`soleCollector`) still works unchanged on the shorter list, since it already summed across whatever tricks were given. `roundDecidedEarly` is the one place that owns "is this round already decided" - a third such round (if ever requested) is one more `case` there, not a new inline check.
+Alternatives_Rejected: Keeping the kingSpades check inline and duplicating similar logic for queens (the two cases are different enough - single trick vs. summed across tricks - that a shared `switch` is clearer than two near-duplicate inline conditions at the call site).
