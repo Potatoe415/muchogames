@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { useI18n } from "@/lib/client/i18n";
-import { GameSettingsPanel, DEFAULT_GAME_SETUP } from "@/components/GameSettingsPanel";
+import { GameSettingsPanel, DEFAULT_BATAILLECORSE_GAME_SETUP, DEFAULT_GAME_SETUP } from "@/components/GameSettingsPanel";
 import type { GameSetupValues } from "@/components/GameSettingsPanel";
 import {
   LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY,
@@ -31,7 +31,9 @@ function LocalSetupPageInner() {
   const isBouilla = game === "bouilla";
   const isPresident = game === "president";
   const isBataillecorse = game === "bataillecorse";
-  const [setup, setSetup] = useState<GameSetupValues>(DEFAULT_GAME_SETUP);
+  const [setup, setSetup] = useState<GameSetupValues>(() =>
+    isBataillecorse ? DEFAULT_BATAILLECORSE_GAME_SETUP : DEFAULT_GAME_SETUP,
+  );
   // La Bataille Corse-only: same device, either a bot opponent or a second
   // real human sitting on the other side of the phone (see docs/DECISIONS.md).
   // Defaults to "duel" when arriving from the home screen's dedicated

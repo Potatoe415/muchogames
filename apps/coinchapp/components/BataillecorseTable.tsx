@@ -368,6 +368,16 @@ export function BataillecorseTable({
         />
 
         <div className="absolute inset-x-0 top-1/2 flex -translate-y-1/2 flex-col items-center gap-3" data-id="bataillecorse-center-block">
+          {/* Whoever just swept the pile gets the "rafle" banner on their own
+              side of the circle - above it for the opponent (seat drawn at
+              the top of the table), below for `mySeat` (see the mirrored
+              banner further down). */}
+          <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
+            {pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === opponentSeat && (
+              <PileWinBanner label={formatText(t("pileWonBanner"), { player: playerName(gv, opponentSeat, locale), count: view.lastPileWin.cardCount })} />
+            )}
+          </div>
+
           {/* Tapping the pile itself is the slap gesture: a very light circle
               around the cards is the whole hit target, not a separate button. */}
           <button
@@ -407,13 +417,8 @@ export function BataillecorseTable({
                 })}
               </p>
             )}
-            {pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && (
-              <p className="rounded-full bg-[var(--accent-yellow)] px-4 py-1.5 text-center text-xs font-black text-[var(--surface)]" data-id="bataillecorse-pile-win-flash">
-                {formatText(t("pileWonBanner"), {
-                  player: view.lastPileWin.seat === mySeat ? t("you") : playerName(gv, opponentSeat, locale),
-                  count: view.lastPileWin.cardCount,
-                })}
-              </p>
+            {pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat && (
+              <PileWinBanner label={formatText(t("pileWonBanner"), { player: t("you"), count: view.lastPileWin.cardCount })} />
             )}
             {falseSlapFlash && view.lastFalseSlap && (
               <p className="sr-only" data-id="bataillecorse-false-slap-flash">
@@ -454,6 +459,19 @@ export function BataillecorseTable({
         <FinishedOverlay gv={gv} view={view} onRematch={actions.onRematch} onReset={actions.onReset} />
       )}
     </TableShell>
+  );
+}
+
+/** The "player swept N cards" flash - rendered above the circle for the
+ *  opponent's win, below it for `mySeat`'s (see the two call sites in
+ *  `BataillecorseTable`). Same single `data-id` either way: only one of the
+ *  two can ever be visible at once (`lastPileWin.seat` is mutually
+ *  exclusive between the two conditions). */
+function PileWinBanner({ label }: { label: string }) {
+  return (
+    <p className="rounded-full bg-[var(--accent-yellow)] px-4 py-1.5 text-center text-xs font-black text-[var(--surface)]" data-id="bataillecorse-pile-win-flash">
+      {label}
+    </p>
   );
 }
 

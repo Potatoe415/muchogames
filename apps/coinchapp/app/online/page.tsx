@@ -7,7 +7,7 @@ import { createGame, joinGame, joinBotSeat, previewRoomByCode, type RoomPreview 
 import { ensureAnonAuth } from "@/lib/client/auth";
 import { useI18n } from "@/lib/client/i18n";
 import { useHubPrefillName } from "@/lib/client/hubName";
-import { GameSettingsPanel, DEFAULT_GAME_SETUP } from "@/components/GameSettingsPanel";
+import { GameSettingsPanel, DEFAULT_BATAILLECORSE_GAME_SETUP, DEFAULT_GAME_SETUP } from "@/components/GameSettingsPanel";
 import type { GameSetupValues } from "@/components/GameSettingsPanel";
 import { BotSeatPicker } from "@/components/BotSeatPicker";
 import type { GameType } from "@/lib/supabase/types";
@@ -31,7 +31,9 @@ function OnlinePageInner() {
   const isBataillecorse = game === "bataillecorse";
   const gameType: GameType = isBouilla ? "bouilla" : isPresident ? "president" : isBataillecorse ? "bataillecorse" : "coinche";
   const [name, setName] = useHubPrefillName();
-  const [setup, setSetup] = useState<GameSetupValues>(DEFAULT_GAME_SETUP);
+  const [setup, setSetup] = useState<GameSetupValues>(() =>
+    isBataillecorse ? DEFAULT_BATAILLECORSE_GAME_SETUP : DEFAULT_GAME_SETUP,
+  );
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);

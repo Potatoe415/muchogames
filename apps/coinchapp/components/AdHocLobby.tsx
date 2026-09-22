@@ -15,6 +15,7 @@ import type { P2PBataillecorseHostConfig } from "@/lib/client/useP2PBataillecors
 import type { RosterEntry } from "@/lib/client/p2p/protocol";
 import {
   GameSettingsPanel,
+  DEFAULT_BATAILLECORSE_GAME_SETUP,
   DEFAULT_GAME_SETUP,
   type GameSetupValues,
 } from "@/components/GameSettingsPanel";
@@ -75,7 +76,9 @@ export function AdHocLobby() {
   const [phase, setPhase] = useState<Phase>("choose");
   const [name, setName] = useHubPrefillName();
   const [humanCount, setHumanCount] = useState(1);
-  const [setup, setSetup] = useState<GameSetupValues>(DEFAULT_GAME_SETUP);
+  const [setup, setSetup] = useState<GameSetupValues>(() =>
+    isBataillecorse ? DEFAULT_BATAILLECORSE_GAME_SETUP : DEFAULT_GAME_SETUP,
+  );
   const [seed] = useState(() => (Math.random() * 0x100000000) >>> 0);
   const [hostConfig, setHostConfig] = useState<P2PHostConfig | null>(null);
   const [bouillaHostConfig, setBouillaHostConfig] = useState<P2PBouillaHostConfig | null>(null);

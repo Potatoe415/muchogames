@@ -44,6 +44,13 @@ export const MIN_BOT_THINK_MS = 800;
 export const MAX_BOT_THINK_MS = 4000;
 export const BOT_THINK_MS_STEP = 200;
 
+/** La Bataille Corse-only default for `GameSettings.botThinkMs`, used instead
+ *  of `DEFAULT_BOT_THINK_MS` above (which reads as the *hardest* "very fast"
+ *  reflex level on this game's discrete slider - see `BOT_REFLEX_LEVELS` in
+ *  `GameSettingsPanel.tsx`). This is that slider's "Normal" level, applied by
+ *  every setup screen (local/online/ad-hoc) as this game's own default. */
+export const DEFAULT_BATAILLECORSE_BOT_THINK_MS = 2400;
+
 /** Default for `GameSettings.stillThereTimeoutSec` when absent (older rows, or
  *  Bouilla before this setting existed). */
 export const DEFAULT_STILL_THERE_TIMEOUT_SEC = 15;
@@ -62,7 +69,7 @@ export const PRESIDENT_ROUNDS_OPTIONS = [1, 2, 3, 4, 5] as const;
 /** `GameSettings.bataillecorseDeckSize` default and the only two selectable
  *  values - shared by the setup slider (`GameSettingsPanel.tsx`) and the
  *  server-side sanitizer (`lib/server/actions-lobby.ts`). */
-export const DEFAULT_BATAILLECORSE_DECK_SIZE = 52;
+export const DEFAULT_BATAILLECORSE_DECK_SIZE = 32;
 export const BATAILLECORSE_DECK_SIZE_OPTIONS = [32, 52] as const;
 
 /** Fixed length of the visible "are you still there?" countdown, in ms. Only the

@@ -5,6 +5,7 @@ import { BOT_PUNCH_LEVELS, type BotPunch } from "@/lib/coinche";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
   BOT_THINK_MS_STEP,
+  DEFAULT_BATAILLECORSE_BOT_THINK_MS,
   DEFAULT_BATAILLECORSE_DECK_SIZE,
   DEFAULT_BOT_THINK_MS,
   DEFAULT_PRESIDENT_ROUNDS_TO_PLAY,
@@ -55,6 +56,17 @@ export const DEFAULT_GAME_SETUP: GameSetupValues = {
   bataillecorseDeckSize: DEFAULT_BATAILLECORSE_DECK_SIZE,
 };
 
+/** La Bataille Corse's own defaults, applied by every setup screen
+ *  (local/online/ad-hoc) instead of `DEFAULT_GAME_SETUP.botThinkMs` - see
+ *  `DEFAULT_BATAILLECORSE_BOT_THINK_MS`'s doc comment for why the shared
+ *  default doesn't fit this game's reflex slider. `bataillecorseDeckSize`
+ *  already matches `DEFAULT_GAME_SETUP`, kept here only for a single
+ *  call site per setup screen. */
+export const DEFAULT_BATAILLECORSE_GAME_SETUP: GameSetupValues = {
+  ...DEFAULT_GAME_SETUP,
+  botThinkMs: DEFAULT_BATAILLECORSE_BOT_THINK_MS,
+};
+
 const TARGETS = [500, 1000, 1500, 2000];
 const PUNCH_LABEL_KEY = { low: "punchLow", med: "punchMed", high: "punchHigh" } as const;
 
@@ -62,7 +74,7 @@ const PUNCH_LABEL_KEY = { low: "punchLow", med: "punchMed", high: "punchHigh" } 
  *  quality" levels (slow..very fast) instead of the other games' continuous
  *  thinking-time slider - it directly drives `simulateBotReactionMs`'s upper
  *  bound, so a "faster" bot is a harder opponent to out-slap. */
-const BOT_REFLEX_LEVELS = [3200, 2400, 1600, 800] as const;
+const BOT_REFLEX_LEVELS = [3200, DEFAULT_BATAILLECORSE_BOT_THINK_MS, 1600, 800] as const;
 const BOT_REFLEX_LABEL_KEYS = ["botReflexSlow", "botReflexNormal", "botReflexFast", "botReflexVeryFast"] as const;
 
 /** Nearest reflex level for a `botThinkMs` value that didn't come from this
