@@ -74,7 +74,7 @@ const PUNCH_LABEL_KEY = { low: "punchLow", med: "punchMed", high: "punchHigh" } 
  *  quality" levels (slow..very fast) instead of the other games' continuous
  *  thinking-time slider - it directly drives `simulateBotReactionMs`'s upper
  *  bound, so a "faster" bot is a harder opponent to out-slap. */
-const BOT_REFLEX_LEVELS = [3200, DEFAULT_BATAILLECORSE_BOT_THINK_MS, 1600, 800] as const;
+const BOT_REFLEX_LEVELS = [3200, DEFAULT_BATAILLECORSE_BOT_THINK_MS, 1600, 400] as const;
 const BOT_REFLEX_LABEL_KEYS = ["botReflexSlow", "botReflexNormal", "botReflexFast", "botReflexVeryFast"] as const;
 
 /** Nearest reflex level for a `botThinkMs` value that didn't come from this

@@ -68,6 +68,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0060 | 2026-09-21 | La Bataille Corse: face-to-face 1v1 duel mode, same device | Accepted |
 | 0061 | 2026-09-21 | La Bataille Corse: face-to-face gets its own home-screen button after all | Accepted |
 | 0062 | 2026-09-22 | Bootstrap v10.1 context architecture alignment | Accepted |
+| 0063 | 2026-09-22 | La Bataille Corse: "very fast" reflex level lowered to 400ms, own botThinkMs floor | Accepted |
 
 ## When to log a decision
 Any of:

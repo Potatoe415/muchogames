@@ -10,6 +10,7 @@ import {
   DEFAULT_BOT_THINK_MS,
   DEFAULT_PRESIDENT_ROUNDS_TO_PLAY,
   MAX_BOT_THINK_MS,
+  MIN_BATAILLECORSE_BOT_THINK_MS,
   MIN_BOT_THINK_MS,
   PRESIDENT_ROUNDS_OPTIONS,
 } from "@/lib/supabase/types";
@@ -20,10 +21,13 @@ function parsePunch(raw: string | undefined): BotPunch {
   return BOT_PUNCH_LEVELS.includes(raw as BotPunch) ? (raw as BotPunch) : "med";
 }
 
-function parseBotThinkMs(raw: string | undefined): number {
+/** `min` defaults to `MIN_BOT_THINK_MS`; callers for la Bataille Corse pass
+ *  `MIN_BATAILLECORSE_BOT_THINK_MS` instead (see `sanitizeBotThinkMs` in
+ *  `lib/server/actions-lobby.ts` for why this game's floor is lower). */
+function parseBotThinkMs(raw: string | undefined, min: number = MIN_BOT_THINK_MS): number {
   const n = Number(raw);
   if (!Number.isFinite(n)) return DEFAULT_BOT_THINK_MS;
-  return Math.min(MAX_BOT_THINK_MS, Math.max(MIN_BOT_THINK_MS, n));
+  return Math.min(MAX_BOT_THINK_MS, Math.max(min, n));
 }
 
 function seedFromParams(seedParam?: string): number {
@@ -81,7 +85,8 @@ export default async function LocalPlayPage({
     return <BataillecorseDuelGame seed={seed} deckSize={parseDeckSize(sp.deckSize)} />;
   }
   if (sp.game === "bataillecorse") {
-    return <BataillecorseLocalGame seed={seed} botThinkMs={botThinkMs} deckSize={parseDeckSize(sp.deckSize)} />;
+    const bataillecorseBotThinkMs = parseBotThinkMs(sp.botThinkMs, MIN_BATAILLECORSE_BOT_THINK_MS);
+    return <BataillecorseLocalGame seed={seed} botThinkMs={bataillecorseBotThinkMs} deckSize={parseDeckSize(sp.deckSize)} />;
   }
   const target = Number(sp.target);
   const targetPoints = TARGETS.includes(target) ? target : 1000;

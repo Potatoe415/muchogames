@@ -29,6 +29,7 @@ Blockers:
 - None.
 
 Recent_Changes:
+- 2026-09-22 la Bataille Corse: "very fast" reflex level lowered from 800ms to 400ms (`BOT_REFLEX_LEVELS`) so all 4 levels read as slow>3s/normal>2s/fast>1s/very fast<0.5s; added a dedicated `MIN_BATAILLECORSE_BOT_THINK_MS` floor (400ms) so the shared `MIN_BOT_THINK_MS`=800 no longer clamps it back up — see `docs/decisions/INDEX.md` 0063.
 - 2026-09-22 la Bataille Corse duel table: player 2's corner was only `top-6` from the top, inside the absolute `z-30` header's clickable band — taps on their stock sometimes hit the header instead of registering as a flip. Matched the vs-bot table's existing `top-[calc(var(--table-hud-top)+3.5rem)]` clearance.
 - 2026-09-22 la Bataille Corse (both vs-bot and duel tables): the pile/slap button is now also disabled while the pile-win sweep animation (`pileFlying`) is in flight, not just when `phase !== "playing"` — stops a tap landing mid-sweep from firing a spurious `onSlap`.
 - 2026-09-22 Bootstrap v10.1 alignment (context architecture only, no code touched): split `docs/DECISIONS.md` into `docs/decisions/*.md`+`INDEX.md`; added `docs/ARCHITECTURE.md`/`docs/SECURITY.md`/`docs/DEBUGGING.md`/`docs/_templates/`/`.claude/settings.json`; rewrote `AGENTS.md`/`STATE.md`; condensed `docs/BACKLOG.md`. Same pass applied to root `muchogames` and `apps/tranquil`.

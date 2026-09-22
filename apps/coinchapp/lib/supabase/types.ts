@@ -51,6 +51,15 @@ export const BOT_THINK_MS_STEP = 200;
  *  every setup screen (local/online/ad-hoc) as this game's own default. */
 export const DEFAULT_BATAILLECORSE_BOT_THINK_MS = 2400;
 
+/** La Bataille Corse-only floor for `GameSettings.botThinkMs`, used instead of
+ *  `MIN_BOT_THINK_MS` above wherever this game's value is sanitized/clamped
+ *  (`lib/server/actions-lobby.ts`, `app/local/play/page.tsx`). Its "very fast"
+ *  reflex level (`BOT_REFLEX_LEVELS` in `GameSettingsPanel.tsx`) sits below
+ *  the other games' shared floor - unlike Coinche's ISMCTS budget or Bouilla's
+ *  pacing delay, a lower value here is a straightforwardly harder (faster)
+ *  bot to out-slap, not a degraded search. */
+export const MIN_BATAILLECORSE_BOT_THINK_MS = 400;
+
 /** Default for `GameSettings.stillThereTimeoutSec` when absent (older rows, or
  *  Bouilla before this setting existed). */
 export const DEFAULT_STILL_THERE_TIMEOUT_SEC = 15;

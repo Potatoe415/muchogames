@@ -12,6 +12,7 @@ import {
   DEFAULT_BOT_THINK_MS,
   DEFAULT_PRESIDENT_ROUNDS_TO_PLAY,
   MAX_BOT_THINK_MS,
+  MIN_BATAILLECORSE_BOT_THINK_MS,
   MIN_BOT_THINK_MS,
   PRESIDENT_ROUNDS_OPTIONS,
   STILL_THERE_TIMEOUT_OPTIONS,
@@ -57,11 +58,15 @@ function sanitizeBataillecorseDeckSize(val: number | undefined): 32 | 52 {
 }
 
 /** Clamps to the slider's range and snaps to its step, so a tampered/stale value
- *  can never push the ISMCTS budget (Coinche) or bot pacing (Bouilla) out of bounds. */
-function sanitizeBotThinkMs(val: number | undefined): number {
+ *  can never push the ISMCTS budget (Coinche) or bot pacing (Bouilla) out of bounds.
+ *  `min` defaults to `MIN_BOT_THINK_MS`; la Bataille Corse passes its own lower
+ *  `MIN_BATAILLECORSE_BOT_THINK_MS` floor since its "very fast" reflex level
+ *  sits below every other game's minimum (see `BOT_REFLEX_LEVELS` in
+ *  `GameSettingsPanel.tsx`). */
+function sanitizeBotThinkMs(val: number | undefined, min: number = MIN_BOT_THINK_MS): number {
   if (!Number.isFinite(val)) return DEFAULT_BOT_THINK_MS;
   const snapped = Math.round((val as number) / BOT_THINK_MS_STEP) * BOT_THINK_MS_STEP;
-  return Math.min(MAX_BOT_THINK_MS, Math.max(MIN_BOT_THINK_MS, snapped));
+  return Math.min(MAX_BOT_THINK_MS, Math.max(min, snapped));
 }
 
 function sanitizeCoincheSettings(input: Partial<GameSettings>): GameSettings {
@@ -96,7 +101,7 @@ function sanitizeSettings(gameType: GameType, input: Partial<GameSettings>): Gam
   if (gameType === "bataillecorse") {
     return {
       stillThereTimeoutSec: sanitizeStillThereTimeoutSec(input.stillThereTimeoutSec),
-      botThinkMs: sanitizeBotThinkMs(input.botThinkMs),
+      botThinkMs: sanitizeBotThinkMs(input.botThinkMs, MIN_BATAILLECORSE_BOT_THINK_MS),
       bataillecorseDeckSize: sanitizeBataillecorseDeckSize(input.bataillecorseDeckSize),
     };
   }
