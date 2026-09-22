@@ -50,7 +50,7 @@ export function BataillecorseDuelTable({
 
   const pileWinFlash = useFlash(viewA.lastPileWin?.id);
   const falseSlapFlash = useFlash(viewA.lastFalseSlap?.id);
-  const pileEnterDirection = usePileEnterDirection(viewA);
+  const pileEnterDirection = usePileEnterDirection(viewA, 0);
   const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(viewA.pile, viewA.lastPileWin);
   const optimisticPile = flipA.pendingFlip ? flipA.optimisticPile : flipB.pendingFlip ? flipB.optimisticPile : viewA.pile;
   const shownPile = pileFlying ? displayPile : optimisticPile;
@@ -106,6 +106,7 @@ export function BataillecorseDuelTable({
           onFlip={flipB.flip}
           disabled={!flipB.myTurnToFlip || flipB.pendingFlip}
           fire={winnerFireSeat === 1}
+          isTurn={viewA.turn === 1}
           mineMs={reactionB}
           opponentMs={reactionA}
           locale={locale}
@@ -142,6 +143,7 @@ export function BataillecorseDuelTable({
           onFlip={flipA.flip}
           disabled={!flipA.myTurnToFlip || flipA.pendingFlip}
           fire={winnerFireSeat === 0}
+          isTurn={viewA.turn === 0}
           mineMs={reactionA}
           opponentMs={reactionB}
           locale={locale}
@@ -166,6 +168,7 @@ function DuelPlayerCorner({
   onFlip,
   disabled,
   fire,
+  isTurn,
   mineMs,
   opponentMs,
   locale,
@@ -178,6 +181,7 @@ function DuelPlayerCorner({
   onFlip: () => void;
   disabled: boolean;
   fire: boolean;
+  isTurn: boolean;
   mineMs: number | null;
   opponentMs: number | null;
   locale: "fr" | "en";
@@ -193,7 +197,7 @@ function DuelPlayerCorner({
     >
       <p className="text-xs font-bold uppercase" data-id={`${dataId}-name`}>{label}</p>
       <ReactionTimesReadout mineMs={mineMs} opponentMs={opponentMs} locale={locale} />
-      <StockPile count={stockCount} dataId={`${dataId}-stock`} scale={1.5} onClick={onFlip} disabled={disabled} fire={fire} />
+      <StockPile count={stockCount} dataId={`${dataId}-stock`} scale={1.5} onClick={onFlip} disabled={disabled} fire={fire} isTurn={isTurn} />
     </div>
   );
 }

@@ -92,10 +92,10 @@ select option {
   animation: played-card-enter 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* La Bataille Corse's own plain-flip entrance: same slide-in as
-   `.played-card-enter` (shared by Coinche/Bouilla/Président), but without
-   the landing overshoot - a flip that neither opens/answers a tribute nor
-   wins the pile is just "the card is now on the table", no bounce. */
+/* La Bataille Corse's own plain-flip entrance: functionally the same
+   slide-in as `.played-card-enter` (shared by Coinche/Bouilla/Président),
+   kept as its own class/keyframes since it targets a different pile
+   layout - both are a plain slide, no landing bounce. */
 .bataillecorse-card-enter {
   animation: bataillecorse-card-enter 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -545,11 +545,6 @@ select option {
   0% {
     opacity: 0;
     transform: var(--played-card-from);
-  }
-
-  68% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1.06) rotate(0deg);
   }
 
   100% {

@@ -2,7 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
 import Link from "next/link";
-import { SLAP_GRACE_MS, type PlayerView } from "@/lib/bataillecorse";
+import { otherSeat, SLAP_GRACE_MS, type PlayerView } from "@/lib/bataillecorse";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
@@ -83,15 +83,36 @@ export function useWinnerFireSeat(lastPileWin: PlayerView["lastPileWin"]): Playe
  *  stock count just went down played it. Adjusted during render (React's
  *  documented "reset state on prop change" pattern, same as Président's
  *  `usePileDisplay`) so it is always correct by the time the new card's key
- *  first mounts. */
-export function usePileEnterDirection(view: PlayerView): EnterDirection {
+ *  first mounts.
+ *
+ *  An immediate tribute failure (see `resolveTributeEffect`/`justEnteredCardKey`
+ *  in `useDisplayPile`) plays and sweeps the losing card away inside the very
+ *  same server update: `view.pile.length` never observably *increases* for
+ *  it (it goes straight from the pre-sweep length to 0), so the stock-count
+ *  comparison below never runs and `dir` would otherwise keep whatever
+ *  direction the *previous* flip left it at - wrongly crediting that card to
+ *  the wrong seat. That losing card always belongs to the tribute *payer*,
+ *  i.e. whichever seat is not `lastPileWin.seat` (the payer is always who
+ *  loses a `"tribute"`-reason pile), so this is checked first. */
+export function usePileEnterDirection(view: PlayerView, mySeat: number): EnterDirection {
   const [dir, setDir] = useState<EnterDirection>("bottom");
-  const [track, setTrack] = useState({ pileLength: view.pile.length, myStockCount: view.myStockCount });
-  if (view.pile.length !== track.pileLength) {
+  const [track, setTrack] = useState({
+    pileLength: view.pile.length,
+    myStockCount: view.myStockCount,
+    lastPileWinId: view.lastPileWin?.id ?? null,
+  });
+  const lastPileWinId = view.lastPileWin?.id ?? null;
+  if (lastPileWinId !== track.lastPileWinId && view.lastPileWin?.reason === "tribute") {
+    const payer = otherSeat(view.lastPileWin.seat);
+    setDir(payer === mySeat ? "bottom" : "top");
+    setTrack({ pileLength: view.pile.length, myStockCount: view.myStockCount, lastPileWinId });
+  } else if (view.pile.length !== track.pileLength) {
     if (view.pile.length > track.pileLength) {
       setDir(view.myStockCount < track.myStockCount ? "bottom" : "top");
     }
-    setTrack({ pileLength: view.pile.length, myStockCount: view.myStockCount });
+    setTrack({ pileLength: view.pile.length, myStockCount: view.myStockCount, lastPileWinId });
+  } else if (lastPileWinId !== track.lastPileWinId) {
+    setTrack({ pileLength: view.pile.length, myStockCount: view.myStockCount, lastPileWinId });
   }
   return dir;
 }
@@ -276,7 +297,7 @@ export function BataillecorseTable({
 
   const pileWinFlash = useFlash(view.lastPileWin?.id);
   const falseSlapFlash = useFlash(view.lastFalseSlap?.id);
-  const pileEnterDirection = usePileEnterDirection(view);
+  const pileEnterDirection = usePileEnterDirection(view, mySeat);
   const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(view.pile, view.lastPileWin);
   const shownPile = pileFlying ? displayPile : optimisticPile;
   const pileFlyTarget: "up" | "down" | null =
@@ -422,6 +443,7 @@ export function BataillecorseTable({
             onClick={tapFlip}
             disabled={!myTurnToFlip || pendingFlip}
             fire={winnerFireSeat === mySeat}
+            isTurn={view.turn === mySeat}
           />
         </div>
 
@@ -455,7 +477,7 @@ function SeatRow({
   return (
     <div className={`flex flex-col items-center gap-1.5 ${className}`} data-id={dataId}>
       <p className={`text-xs font-bold uppercase ${isTurn ? "underline decoration-2" : ""}`}>{label}</p>
-      <StockPile count={stockCount} fire={fire} />
+      <StockPile count={stockCount} fire={fire} isTurn={isTurn} />
       {reaction && <ReactionBubble reaction={reaction} size="md" dataId="bataillecorse-opponent-reaction" />}
     </div>
   );
@@ -482,6 +504,7 @@ export function StockPile({
   onClick,
   disabled,
   fire,
+  isTurn,
 }: {
   count: number;
   dataId?: string;
@@ -489,6 +512,12 @@ export function StockPile({
   onClick?: () => void;
   disabled?: boolean;
   fire?: boolean;
+  /** Whose turn it currently is to flip - draws a yellow ring around the
+   *  whole stack so it doubles as the "current player" indicator (same
+   *  accent color as every other turn/selection highlight, e.g.
+   *  `PlayerBadge`'s underline elsewhere, `ring-[var(--accent-yellow)]` on
+   *  selected cards). */
+  isTurn?: boolean;
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-sm-w", 40);
   const layers = count === 0 ? 0 : count === 1 ? 1 : 3;
@@ -497,16 +526,31 @@ export function StockPile({
   const width = cardW * scale + step * Math.max(0, layers - 1);
   const height = cardH * scale + step * Math.max(0, layers - 1);
   const Tag = onClick ? "button" : "div";
+  const ringDiameter = Math.max(width, height) * 1.25;
   return (
-    <Tag
-      type={onClick ? "button" : undefined}
-      onClick={onClick}
-      disabled={onClick ? disabled : undefined}
-      className={[onClick ? "relative transition-transform active:scale-95 disabled:opacity-50" : "relative", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
-      style={{ width, height }}
-      data-id={dataId}
-    >
-      <CssVarProbe probeRef={probeRef} probeStyle={probeStyle} />
+    <div className="relative" style={{ width, height }}>
+      {isTurn && (
+        <span
+          className="pointer-events-none absolute rounded-full ring-4 ring-[var(--accent-yellow)]"
+          style={{
+            width: ringDiameter,
+            height: ringDiameter,
+            left: (width - ringDiameter) / 2,
+            top: (height - ringDiameter) / 2,
+          }}
+          data-id={dataId ? `${dataId}-turn-ring` : "bataillecorse-turn-ring"}
+          aria-hidden="true"
+        />
+      )}
+      <Tag
+        type={onClick ? "button" : undefined}
+        onClick={onClick}
+        disabled={onClick ? disabled : undefined}
+        className={[onClick ? "relative transition-transform active:scale-95 disabled:opacity-50" : "relative", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
+        style={{ width, height }}
+        data-id={dataId}
+      >
+        <CssVarProbe probeRef={probeRef} probeStyle={probeStyle} />
       {Array.from({ length: layers }, (_, i) => {
         const isFront = i === layers - 1;
         return (
@@ -523,7 +567,8 @@ export function StockPile({
           </div>
         );
       })}
-    </Tag>
+      </Tag>
+    </div>
   );
 }
 
