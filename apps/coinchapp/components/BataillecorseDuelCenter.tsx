@@ -1,9 +1,8 @@
 "use client";
 
 import type { PlayerView } from "@/lib/bataillecorse";
-import { formatText, useI18n } from "@/lib/client/i18n";
-import type { EnterDirection } from "./TrickStage";
 import { FalseSlapMark, PileStack, TributePlayHint } from "./BataillecorseTable";
+import type { EnterDirection } from "./TrickStage";
 
 /** The shared center pile plus both seats' slap hit-zones, stacked in one
  *  spot: unlike each player's own corner (`DuelPlayerCorner`), this is never
@@ -26,9 +25,6 @@ export function DuelCenterBlock({
   falseSlapFlash,
   falseSlapLabel,
   tribute,
-  pileWinFlash,
-  lastPileWin,
-  pileWinnerLabel,
   justEnteredCardKey,
 }: {
   pile: PlayerView["pile"];
@@ -45,12 +41,8 @@ export function DuelCenterBlock({
   falseSlapFlash: boolean;
   falseSlapLabel: string;
   tribute: PlayerView["tribute"];
-  pileWinFlash: boolean;
-  lastPileWin: PlayerView["lastPileWin"];
-  pileWinnerLabel: string | null;
   justEnteredCardKey: string | null;
 }) {
-  const { t } = useI18n();
   return (
     <div className="absolute inset-x-0 top-1/2 flex -translate-y-1/2 flex-col items-center gap-3" data-id="bataillecorse-duel-center-block">
       <div
@@ -95,14 +87,6 @@ export function DuelCenterBlock({
       <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
         {tribute && tribute.seat === 0 && (
           <TributePlayHint attempts={tribute.attemptsLeft} dataId="bataillecorse-duel-tribute-banner" />
-        )}
-        {pileWinFlash && lastPileWin && lastPileWin.reason !== "falseSlap" && pileWinnerLabel && (
-          <p
-            className="rounded-full bg-[var(--accent-yellow)] px-4 py-1.5 text-center text-xs font-black text-[var(--surface)]"
-            data-id="bataillecorse-duel-pile-win-flash"
-          >
-            {formatText(t("pileWonBanner"), { player: pileWinnerLabel, count: lastPileWin.cardCount })}
-          </p>
         )}
       </div>
     </div>

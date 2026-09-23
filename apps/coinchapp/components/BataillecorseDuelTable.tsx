@@ -11,6 +11,7 @@ import type { EnterDirection } from "./TrickStage";
 import { TableShell } from "./TableShell";
 import {
   InfoPanel,
+  PileWinBanner,
   ReactionTimesReadout,
   StockPile,
   TributePlayHint,
@@ -81,7 +82,10 @@ export function BataillecorseDuelTable({
 
   const player1 = formatText(t("defaultPlayerName"), { seat: 1 });
   const player2 = formatText(t("defaultPlayerName"), { seat: 2 });
-  const pileWinnerLabel = viewA.lastPileWin ? (viewA.lastPileWin.seat === 0 ? player1 : player2) : null;
+  const sweptSeat =
+    pileWinFlash && viewA.lastPileWin && viewA.lastPileWin.reason !== "falseSlap"
+      ? viewA.lastPileWin.seat
+      : null;
 
   return (
     <TableShell dataId="bataillecorse-duel-table">
@@ -112,6 +116,7 @@ export function BataillecorseDuelTable({
           locale={locale}
           rotated
           tributeAttempts={viewA.tribute?.seat === 1 ? viewA.tribute.attemptsLeft : undefined}
+          pileWinLabel={sweptSeat === 1 ? t("pileWonYou") : undefined}
           dataId="bataillecorse-duel-player2"
           className="top-[calc(var(--table-hud-top)+3.5rem)]"
         />
@@ -132,9 +137,6 @@ export function BataillecorseDuelTable({
           falseSlapFlash={falseSlapFlash && Boolean(viewA.lastFalseSlap)}
           falseSlapLabel={t("falseSlapStamp")}
           tribute={viewA.tribute}
-          pileWinFlash={pileWinFlash}
-          lastPileWin={viewA.lastPileWin}
-          pileWinnerLabel={pileWinnerLabel}
         />
 
         <DuelPlayerCorner
@@ -148,6 +150,7 @@ export function BataillecorseDuelTable({
           opponentMs={reactionB}
           locale={locale}
           dataId="bataillecorse-duel-player1"
+          pileWinLabel={sweptSeat === 0 ? t("pileWonYou") : undefined}
           className="bottom-10"
         />
       </div>
@@ -174,6 +177,7 @@ function DuelPlayerCorner({
   locale,
   rotated,
   tributeAttempts,
+  pileWinLabel,
   dataId,
   className,
 }: {
@@ -188,6 +192,7 @@ function DuelPlayerCorner({
   locale: "fr" | "en";
   rotated?: boolean;
   tributeAttempts?: number;
+  pileWinLabel?: string;
   dataId: string;
   className: string;
 }) {
@@ -203,6 +208,7 @@ function DuelPlayerCorner({
       {tributeAttempts !== undefined && (
         <TributePlayHint attempts={tributeAttempts} dataId={`${dataId}-tribute`} />
       )}
+      {pileWinLabel && <PileWinBanner label={pileWinLabel} />}
     </div>
   );
 }

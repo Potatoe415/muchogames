@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: La Bataille Corse tribute prompt sits under the opponent's deck when they must answer a figure; your own "Jouez N carte" stays in the centre. Splash shows `v0.7`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
+Status: La Bataille Corse shows "Vous raflez le tas !" under player 1's deck when they sweep; opponent sweep uses "{player} rafle le tas !" under theirs. Splash shows `v0.8`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
 Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
 Level: L1
 
@@ -29,7 +29,6 @@ Blockers:
 - None.
 
 Recent_Changes:
-- 2026-09-23 la Bataille Corse: opponent tribute prompt ("Jouez N carte") is under their deck; yours stays centred (`v0.7`).
-- 2026-09-23 la Bataille Corse: white "Jouez N carte" when you answer a figure (`v0.6`); reaction times 2x above turn-circle (`v0.5`).
-- 2026-09-22 la Bataille Corse: very-fast reflex 400ms; duel player 2 stock under header; pile-flying slap guard.
+- 2026-09-23 la Bataille Corse: pile-sweep banner under the winner's deck; FR "Vous raflez le tas !" for you (`v0.8`).
+- 2026-09-23 la Bataille Corse: opponent tribute prompt under their deck (`v0.7`); white "Jouez N carte" (`v0.6`).
 - 2026-09-22 Bootstrap v10.1 alignment (docs/context-architecture only).
