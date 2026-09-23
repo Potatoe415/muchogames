@@ -11,7 +11,6 @@ import type { EnterDirection } from "./TrickStage";
 import { TableShell } from "./TableShell";
 import {
   InfoPanel,
-  PileWinBanner,
   ReactionTimesReadout,
   StockPile,
   TributePlayHint,
@@ -204,11 +203,10 @@ function DuelPlayerCorner({
     >
       <p className="text-xs font-bold uppercase" data-id={`${dataId}-name`}>{label}</p>
       <ReactionTimesReadout mineMs={mineMs} opponentMs={opponentMs} locale={locale} />
-      <StockPile count={stockCount} dataId={`${dataId}-stock`} scale={1.5} onClick={onFlip} disabled={disabled} fire={fire} isTurn={isTurn} />
+      <StockPile count={stockCount} dataId={`${dataId}-stock`} scale={1.5} onClick={onFlip} disabled={disabled} fire={fire} isTurn={isTurn} overlayLabel={pileWinLabel} />
       {tributeAttempts !== undefined && (
         <TributePlayHint attempts={tributeAttempts} dataId={`${dataId}-tribute`} />
       )}
-      {pileWinLabel && <PileWinBanner label={pileWinLabel} />}
     </div>
   );
 }

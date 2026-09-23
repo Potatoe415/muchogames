@@ -481,10 +481,12 @@ export function BataillecorseTable({
             disabled={!myTurnToFlip || pendingFlip}
             fire={winnerFireSeat === mySeat}
             isTurn={view.turn === mySeat && !pileFlying}
+            overlayLabel={
+              pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat
+                ? t("pileWonYou")
+                : undefined
+            }
           />
-          {pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat && (
-            <PileWinBanner label={t("pileWonYou")} />
-          )}
         </div>
 
         {actions.onSendReaction && <EmojiButton myReaction={reactions?.get(mySeat)} onSelect={actions.onSendReaction} />}
@@ -497,12 +499,12 @@ export function BataillecorseTable({
   );
 }
 
-/** Yellow "rafle le tas" flash under the winner's own deck. Same
- *  `data-id` at either seat: only one of the two can ever be visible
- *  (`lastPileWin.seat` is mutually exclusive). */
+/** White, no pill, painted under the winner's ring without taking layout
+ *  space (`StockPile`'s `overlayLabel`) so the seat does not jump. Same
+ *  `data-id` at either seat: only one of the two can ever be visible. */
 export function PileWinBanner({ label }: { label: string }) {
   return (
-    <p className="whitespace-nowrap rounded-full bg-[var(--accent-yellow)] px-4 py-1.5 text-center text-xs font-black text-[var(--surface)]" data-id="bataillecorse-pile-win-flash">
+    <p className="whitespace-nowrap text-center text-sm font-bold leading-none text-white" data-id="bataillecorse-pile-win-flash">
       {label}
     </p>
   );
@@ -532,11 +534,10 @@ function SeatRow({
   return (
     <div className={`flex flex-col items-center gap-1.5 ${className}`} data-id={dataId}>
       <p className={`text-xs font-bold uppercase ${isTurn ? "underline decoration-2" : ""}`}>{label}</p>
-      <StockPile count={stockCount} fire={fire} isTurn={isTurn} />
+      <StockPile count={stockCount} fire={fire} isTurn={isTurn} overlayLabel={pileWinLabel} />
       {tributeAttempts !== undefined && (
         <TributePlayHint attempts={tributeAttempts} dataId={`${dataId}-tribute`} />
       )}
-      {pileWinLabel && <PileWinBanner label={pileWinLabel} />}
       {reaction && <ReactionBubble reaction={reaction} size="md" dataId="bataillecorse-opponent-reaction" />}
     </div>
   );
@@ -574,6 +575,7 @@ export function StockPile({
   disabled,
   fire,
   isTurn,
+  overlayLabel,
 }: {
   count: number;
   dataId?: string;
@@ -587,6 +589,9 @@ export function StockPile({
    *  `PlayerBadge`'s underline elsewhere, `ring-[var(--accent-yellow)]` on
    *  selected cards). */
   isTurn?: boolean;
+  /** Painted under the ring, out of flow - a pile-win caption must not
+   *  grow this box or the seat jumps. */
+  overlayLabel?: string;
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-sm-w", 40);
   const layers = count === 0 ? 0 : count === 1 ? 1 : 3;
@@ -617,6 +622,14 @@ export function StockPile({
           data-id={dataId ? `${dataId}-turn-ring` : "bataillecorse-turn-ring"}
           aria-hidden="true"
         />
+      )}
+      {overlayLabel && (
+        <div
+          className="pointer-events-none absolute left-1/2 z-10 -translate-x-1/2"
+          style={{ top: padY + height }}
+        >
+          <PileWinBanner label={overlayLabel} />
+        </div>
       )}
       <Tag
         type={onClick ? "button" : undefined}

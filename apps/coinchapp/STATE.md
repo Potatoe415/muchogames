@@ -2,13 +2,13 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: La Bataille Corse bot slap floor is 0.5s on Normal and 1s on Slow. Splash shows `v0.9`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
+Status: La Bataille Corse pile-sweep caption is white, no pill, glued under the winner's ring so the seat does not jump. Splash shows `v0.10`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
 Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
 Level: L1
 
 Context:
-- Working_On: `lib/bataillecorse/bot.ts`
-- Relevant_Files: `lib/bataillecorse/bot.test.ts`, `components/GameSettingsPanel.tsx`
+- Working_On: `components/BataillecorseTable.tsx`
+- Relevant_Files: `components/BataillecorseDuelTable.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
 - Relevant_Decisions: `docs/decisions/INDEX.md` 0063 (very-fast 400ms floor)
 
@@ -29,6 +29,6 @@ Blockers:
 - None.
 
 Recent_Changes:
-- 2026-09-23 la Bataille Corse: Normal bot slap ≥ 0.5s, Slow ≥ 1s (`v0.9`).
-- 2026-09-23 la Bataille Corse: pile-sweep banner under the winner's deck (`v0.8`).
+- 2026-09-23 la Bataille Corse: "Vous raflez le tas !" white, glued under P1's ring, no layout jump (`v0.10`).
+- 2026-09-23 la Bataille Corse: Normal bot slap ≥ 0.5s, Slow ≥ 1s (`v0.9`); pile-sweep under winner's deck (`v0.8`).
 - 2026-09-22 Bootstrap v10.1 alignment (docs/context-architecture only).
