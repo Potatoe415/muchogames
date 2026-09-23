@@ -452,13 +452,22 @@ export function BataillecorseTable({
           <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
             {view.tribute && (
               <p
-                className="max-w-[85%] rounded-full bg-[var(--surface-overlay)] px-4 py-1.5 text-center text-xs font-bold"
+                className={
+                  owesTribute
+                    ? "whitespace-nowrap text-center text-sm font-bold text-white"
+                    : "max-w-[85%] rounded-full bg-[var(--surface-overlay)] px-4 py-1.5 text-center text-xs font-bold"
+                }
                 data-id="bataillecorse-tribute-banner"
               >
-                {formatText(t("tributeOwed"), {
-                  player: owesTribute ? t("you") : playerName(gv, opponentSeat, locale),
-                  attempts: view.tribute.attemptsLeft,
-                })}
+                {owesTribute
+                  ? formatText(
+                      t(view.tribute.attemptsLeft === 1 ? "tributePlay" : "tributePlayPlural"),
+                      { attempts: view.tribute.attemptsLeft },
+                    )
+                  : formatText(t("tributeOwed"), {
+                      player: playerName(gv, opponentSeat, locale),
+                      attempts: view.tribute.attemptsLeft,
+                    })}
               </p>
             )}
             {pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat && (

@@ -97,10 +97,13 @@ export function DuelCenterBlock({
       <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
         {tribute && owedByLabel && (
           <p
-            className="max-w-[85%] rounded-full bg-[var(--surface-overlay)] px-4 py-1.5 text-center text-xs font-bold"
+            className="whitespace-nowrap text-center text-sm font-bold text-white"
             data-id="bataillecorse-duel-tribute-banner"
           >
-            {formatText(t("tributeOwed"), { player: owedByLabel, attempts: tribute.attemptsLeft })}
+            {formatText(
+              t(tribute.attemptsLeft === 1 ? "tributePlay" : "tributePlayPlural"),
+              { attempts: tribute.attemptsLeft },
+            )}
           </p>
         )}
         {pileWinFlash && lastPileWin && lastPileWin.reason !== "falseSlap" && pileWinnerLabel && (
