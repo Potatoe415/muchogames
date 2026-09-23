@@ -95,6 +95,15 @@ export interface GameState {
   revolution: boolean;
   /** Seats that have emptied their hand this round, in finishing order. */
   finishedOrder: Seat[];
+  /** Seats that finished this round by playing a losing 2 (single, pair, or
+   *  triple - a quad still only toggles revolution, see `applyPlay`) as
+   *  their very last combo. Play continues normally for the rest of the
+   *  round; only once it ends does `computeRoundResult` demote every seat
+   *  here behind every seat not in this list (own relative order kept in
+   *  each group), so it becomes Trou du Cul (or the worst rank still left)
+   *  regardless of when it actually emptied its hand. Reset to `[]` at deal /
+   *  next round. */
+  losingFinishSeats: Seat[];
   /** Titles from the round that just ended (null for round 0, before any round
    *  has been scored). Drives the current/next round's forced exchange. */
   titles: Titles | null;

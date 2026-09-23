@@ -54,6 +54,15 @@ function burnsThePile(combo: Combo, handEmptied: boolean): boolean {
   return combo.rank === BURN_RANK && combo.cards.length <= BURN_MAX_COUNT && !handEmptied;
 }
 
+/** True if finishing your hand with `combo` is the house-rule losing 2: a
+ *  single, pair, or triple of 2s (a quad still only toggles revolution) as
+ *  the very last combo. Play continues normally for the rest of the round -
+ *  see `computeRoundResult` for where this actually costs the seat its
+ *  rank. */
+function losesOnFinish(combo: Combo, handEmptied: boolean): boolean {
+  return handEmptied && combo.rank === BURN_RANK && combo.cards.length <= BURN_MAX_COUNT;
+}
+
 /** True when `combo` replays the pile's current rank instead of beating it -
  *  the "double" rule (see `isLegalCombo`). */
 function matchesPile(pile: Pile, combo: Combo): boolean {
@@ -93,7 +102,12 @@ function burnResult(state: GameState, hands: Card[][], seat: Seat, combo: Combo,
  *  that rank, in which case it burns the pile just like a "2" instead
  *  (`burnResult`, checked first, so it takes priority over the skip/spare
  *  check either way). Finishing your hand always takes priority over any of
- *  these effects, same precedent as a hand-emptying "2" never burning. */
+ *  these effects, same precedent as a hand-emptying "2" never burning.
+ *
+ *  House rule: finishing on a losing 2 (single/pair/triple, see
+ *  `losesOnFinish`) does not change anything about how the round plays out -
+ *  it only records the seat in `losingFinishSeats`, so `computeRoundResult`
+ *  can demote it once the round actually ends. */
 export function applyPlay(state: GameState, seat: Seat, combo: Combo): GameState {
   if (state.phase !== "playing") throw new Error("not_playing");
   if (state.turn !== seat) throw new Error("not_your_turn");
@@ -104,11 +118,14 @@ export function applyPlay(state: GameState, seat: Seat, combo: Combo): GameState
   const revolution = combo.cards.length === 4 ? !state.revolution : state.revolution;
   const finished = hands[seat].length === 0;
   const finishedOrder = finished ? [...state.finishedOrder, seat] : state.finishedOrder;
+  const losingFinishSeats = losesOnFinish(combo, finished)
+    ? [...state.losingFinishSeats, seat]
+    : state.losingFinishSeats;
 
   if (finishedOrder.length === 3) {
     const lastSeat = SEATS.find((s) => !finishedOrder.includes(s))!;
     const pile = { combo, leader: seat };
-    return { ...state, hands, pile, revolution, finishedOrder: [...finishedOrder, lastSeat], phase: "scoring" };
+    return { ...state, hands, pile, revolution, finishedOrder: [...finishedOrder, lastSeat], losingFinishSeats, phase: "scoring" };
   }
   if (burnsThePile(combo, finished)) return burnResult(state, hands, seat, combo, revolution, finishedOrder);
 
@@ -128,7 +145,7 @@ export function applyPlay(state: GameState, seat: Seat, combo: Combo): GameState
     return { ...state, hands, pile, lastSkip: { seat, skippedSeat, combo }, passStreak: 0, revolution, finishedOrder, turn };
   }
   const pile = { combo, leader: seat, stackCount };
-  return { ...state, hands, pile, passStreak: 0, revolution, finishedOrder, turn: nextActiveSeat(finishedOrder, seat) };
+  return { ...state, hands, pile, passStreak: 0, revolution, finishedOrder, losingFinishSeats, turn: nextActiveSeat(finishedOrder, seat) };
 }
 
 /** Apply a pass: clears the pile once every other active seat has passed in a

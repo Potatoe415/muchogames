@@ -61,6 +61,18 @@ describe("applyPlay", () => {
     expect(next.finishedOrder).toEqual([1, 2, 0, 3]);
   });
 
+  it("still flags a losing finish that also happens to end the round (3rd seat out on a '2')", () => {
+    const state = playingState({
+      turn: 0,
+      hands: [[card("2", "H")], [], [], [card("K", "S"), card("3", "D")]],
+      finishedOrder: [1, 2],
+    });
+    const next = applyPlay(state, 0, combo("2", [card("2", "H")]));
+    expect(next.phase).toBe("scoring");
+    expect(next.finishedOrder).toEqual([1, 2, 0, 3]);
+    expect(next.losingFinishSeats).toEqual([0]);
+  });
+
   it("a '2' burns the pile instantly: clears it and the same seat leads again", () => {
     const state = playingState({
       turn: 1,
@@ -84,7 +96,7 @@ describe("applyPlay", () => {
     expect(next.turn).toBe(0);
   });
 
-  it("does not burn when playing a '2' empties the hand (finishing play keeps the normal flow)", () => {
+  it("does not burn when playing a '2' empties the hand (finishing play keeps the normal flow), but flags the seat as a losing finish", () => {
     const state = playingState({
       turn: 0,
       hands: [[card("2", "H")], [card("5", "D")], [card("6", "C")], [card("7", "S")]],
@@ -93,6 +105,36 @@ describe("applyPlay", () => {
     expect(next.pile.combo).not.toBeNull();
     expect(next.lastBurn).toBeNull();
     expect(next.turn).not.toBe(0);
+    expect(next.finishedOrder).toEqual([0]);
+    expect(next.losingFinishSeats).toEqual([0]);
+  });
+
+  it("flags a losing finish on a pair or triple of 2s the same way as a single", () => {
+    const state = playingState({
+      turn: 0,
+      hands: [[card("2", "H"), card("2", "D")], [card("5", "D")], [card("6", "C")], [card("7", "S")]],
+    });
+    const next = applyPlay(state, 0, combo("2", [card("2", "H"), card("2", "D")]));
+    expect(next.losingFinishSeats).toEqual([0]);
+  });
+
+  it("does not flag a losing finish on a quad of 2s (still just revolutions)", () => {
+    const state = playingState({
+      turn: 0,
+      hands: [[card("2", "H"), card("2", "D"), card("2", "C"), card("2", "S")], [card("5", "D")], [card("6", "C")], [card("7", "S")]],
+    });
+    const next = applyPlay(state, 0, combo("2", state.hands[0]));
+    expect(next.revolution).toBe(true);
+    expect(next.losingFinishSeats).toEqual([]);
+  });
+
+  it("does not flag a normal (non-finishing) rank as a losing finish", () => {
+    const state = playingState({
+      turn: 0,
+      hands: [[card("5", "H")], [card("6", "D")], [card("7", "C")], [card("8", "S")]],
+    });
+    const next = applyPlay(state, 0, combo("5", [card("5", "H")]));
+    expect(next.losingFinishSeats).toEqual([]);
   });
 
   it("the 'double' rule: replaying the pile's rank skips the very next active seat", () => {

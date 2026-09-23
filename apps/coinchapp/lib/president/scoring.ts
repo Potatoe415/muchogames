@@ -10,11 +10,23 @@ function titlesFromFinishOrder(finishedOrder: Seat[]): Titles {
   return titles as Titles;
 }
 
+/** House rule: any seat that finished this round by playing a losing 2
+ *  (`GameState.losingFinishSeats`, set by `applyPlay`/`losesOnFinish`) drops
+ *  behind every seat that did not, however early it actually emptied its
+ *  hand - own relative order kept within each of the two groups. A no-op
+ *  when nobody finished on a losing 2. */
+function demoteLosingTwoFinishers(finishedOrder: Seat[], losingFinishSeats: Seat[]): Seat[] {
+  if (losingFinishSeats.length === 0) return finishedOrder;
+  const losers = new Set(losingFinishSeats);
+  return [...finishedOrder.filter((s) => !losers.has(s)), ...finishedOrder.filter((s) => losers.has(s))];
+}
+
 export function computeRoundResult(state: GameState): RoundResult {
+  const finishedOrder = demoteLosingTwoFinishers(state.finishedOrder, state.losingFinishSeats);
   return {
     roundIndex: state.roundIndex,
-    finishedOrder: state.finishedOrder,
-    titles: titlesFromFinishOrder(state.finishedOrder),
+    finishedOrder,
+    titles: titlesFromFinishOrder(finishedOrder),
   };
 }
 

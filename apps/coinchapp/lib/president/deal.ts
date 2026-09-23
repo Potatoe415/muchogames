@@ -29,6 +29,7 @@ export function createInitialState(roundsToPlay: number): GameState {
     passStreak: 0,
     revolution: false,
     finishedOrder: [],
+    losingFinishSeats: [],
     titles: null,
     pendingExchange: null,
     forcedTransfers: null,
@@ -53,6 +54,7 @@ export function beginNextRound(state: GameState, rng: Rng = Math.random): GameSt
     passStreak: 0,
     revolution: false,
     finishedOrder: [],
+    losingFinishSeats: [],
     // Otherwise the previous round's score table (`lastRoundResult`) stays truthy,
     // so `roundOverlayVisible` (PresidentTable.tsx) never goes false again: the
     // round-end overlay keeps covering the table forever, hiding the "exchange"

@@ -69,6 +69,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0061 | 2026-09-21 | La Bataille Corse: face-to-face gets its own home-screen button after all | Accepted |
 | 0062 | 2026-09-22 | Bootstrap v10.1 context architecture alignment | Accepted |
 | 0063 | 2026-09-22 | La Bataille Corse: "very fast" reflex level lowered to 400ms, own botThinkMs floor | Accepted |
+| 0064 | 2026-09-23 | Président: finishing on a 2 forces Trou du Cul at round end | Accepted |
 
 ## When to log a decision
 Any of:

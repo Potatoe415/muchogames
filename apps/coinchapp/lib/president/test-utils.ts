@@ -29,6 +29,7 @@ export function playingState(opts: {
   revolution?: boolean;
   passStreak?: number;
   finishedOrder?: Seat[];
+  losingFinishSeats?: Seat[];
   roundIndex?: number;
   roundsToPlay?: number;
   titles?: Titles | null;
@@ -44,6 +45,7 @@ export function playingState(opts: {
     revolution: opts.revolution ?? false,
     passStreak: opts.passStreak ?? 0,
     finishedOrder: opts.finishedOrder ?? [],
+    losingFinishSeats: opts.losingFinishSeats ?? [],
     titles: opts.titles ?? null,
   };
 }
@@ -70,7 +72,17 @@ export function exchangeState(opts: {
 }
 
 /** Build a "scoring"-phase state from a fixed finish order. */
-export function scoringState(finishedOrder: Seat[], opts?: { roundIndex?: number; roundsToPlay?: number }): GameState {
+export function scoringState(
+  finishedOrder: Seat[],
+  opts?: { roundIndex?: number; roundsToPlay?: number; losingFinishSeats?: Seat[] },
+): GameState {
   const base = createInitialState(opts?.roundsToPlay ?? 4);
-  return { ...base, phase: "scoring", roundIndex: opts?.roundIndex ?? 0, finishedOrder, hands: [[], [], [], []] };
+  return {
+    ...base,
+    phase: "scoring",
+    roundIndex: opts?.roundIndex ?? 0,
+    finishedOrder,
+    losingFinishSeats: opts?.losingFinishSeats ?? [],
+    hands: [[], [], [], []],
+  };
 }
