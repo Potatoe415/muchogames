@@ -44,14 +44,14 @@ export function BataillecorseDuelTable({
 }) {
   const { locale, t } = useI18n();
   const [panelOpen, setPanelOpen] = useState(false);
-  const flipA = useOptimisticFlip(viewA, 0, () => actions.onFlip(0));
-  const flipB = useOptimisticFlip(viewB, 1, () => actions.onFlip(1));
   const windowSeenAtRef = useWindowSeenAtRef(viewA.slapWindow);
 
   const pileWinFlash = useFlash(viewA.lastPileWin?.id);
   const falseSlapFlash = useFlash(viewA.lastFalseSlap?.id);
   const pileEnterDirection = usePileEnterDirection(viewA, 0);
   const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(viewA.pile, viewA.lastPileWin);
+  const flipA = useOptimisticFlip(viewA, 0, () => actions.onFlip(0), pileFlying);
+  const flipB = useOptimisticFlip(viewB, 1, () => actions.onFlip(1), pileFlying);
   const optimisticPile = flipA.pendingFlip ? flipA.optimisticPile : flipB.pendingFlip ? flipB.optimisticPile : viewA.pile;
   const shownPile = pileFlying ? displayPile : optimisticPile;
   const enterFrom: EnterDirection = flipA.pendingFlip ? "bottom" : flipB.pendingFlip ? "top" : pileEnterDirection;
@@ -106,7 +106,7 @@ export function BataillecorseDuelTable({
           onFlip={flipB.flip}
           disabled={!flipB.myTurnToFlip || flipB.pendingFlip}
           fire={winnerFireSeat === 1}
-          isTurn={viewA.turn === 1}
+          isTurn={viewA.turn === 1 && !pileFlying}
           mineMs={reactionB}
           opponentMs={reactionA}
           locale={locale}
@@ -143,7 +143,7 @@ export function BataillecorseDuelTable({
           onFlip={flipA.flip}
           disabled={!flipA.myTurnToFlip || flipA.pendingFlip}
           fire={winnerFireSeat === 0}
-          isTurn={viewA.turn === 0}
+          isTurn={viewA.turn === 0 && !pileFlying}
           mineMs={reactionA}
           opponentMs={reactionB}
           locale={locale}

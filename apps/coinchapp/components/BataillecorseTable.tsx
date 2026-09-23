@@ -291,14 +291,14 @@ export function BataillecorseTable({
   const mySeat = gv.mySeat!;
   const opponentSeat = mySeat === 0 ? 1 : 0;
   const [panelOpen, setPanelOpen] = useState(false);
-  const { myTurnToFlip, pendingFlip, pendingFaceDown, optimisticStockCount, optimisticPile, flip: tapFlip } =
-    useOptimisticFlip(view, mySeat, actions.onFlip);
   const windowSeenAtRef = useWindowSeenAtRef(view.slapWindow);
 
   const pileWinFlash = useFlash(view.lastPileWin?.id);
   const falseSlapFlash = useFlash(view.lastFalseSlap?.id);
   const pileEnterDirection = usePileEnterDirection(view, mySeat);
   const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(view.pile, view.lastPileWin);
+  const { myTurnToFlip, pendingFlip, pendingFaceDown, optimisticStockCount, optimisticPile, flip: tapFlip } =
+    useOptimisticFlip(view, mySeat, actions.onFlip, pileFlying);
   const shownPile = pileFlying ? displayPile : optimisticPile;
   const pileFlyTarget: "up" | "down" | null =
     pileFlying && view.lastPileWin ? (view.lastPileWin.seat === mySeat ? "down" : "up") : null;
@@ -378,7 +378,7 @@ export function BataillecorseTable({
         <SeatRow
           label={playerName(gv, opponentSeat, locale)}
           stockCount={view.opponentStockCount}
-          isTurn={view.turn === opponentSeat}
+          isTurn={view.turn === opponentSeat && !pileFlying}
           reaction={reactions?.get(opponentSeat)}
           fire={winnerFireSeat === opponentSeat}
           dataId="bataillecorse-opponent-seat"
@@ -466,7 +466,7 @@ export function BataillecorseTable({
             onClick={tapFlip}
             disabled={!myTurnToFlip || pendingFlip}
             fire={winnerFireSeat === mySeat}
-            isTurn={view.turn === mySeat}
+            isTurn={view.turn === mySeat && !pileFlying}
           />
         </div>
 
@@ -582,7 +582,7 @@ export function StockPile({
         type={onClick ? "button" : undefined}
         onClick={onClick}
         disabled={onClick ? disabled : undefined}
-        className={[onClick ? "relative transition-transform active:scale-95 disabled:opacity-50" : "relative", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
+        className={[onClick ? "relative transition-transform active:scale-95 disabled:pointer-events-none disabled:opacity-50" : "relative", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
         style={{ width, height }}
         data-id={dataId}
       >

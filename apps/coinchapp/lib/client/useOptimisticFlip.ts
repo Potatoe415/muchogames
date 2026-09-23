@@ -10,6 +10,13 @@ export interface PendingFlip {
   lastPileWinId: number | null;
 }
 
+/** Whether this seat may flip right now. `blocked` covers UI-only holds the
+ *  engine does not know about (the pile-win sweep: `useDisplayPile`'s
+ *  `flying`), so spam-taps during that animation cannot queue real flips. */
+export function canFlip(view: PlayerView, mySeat: number, blocked = false): boolean {
+  return !blocked && view.phase === "playing" && view.turn === mySeat && view.slapWindow === null;
+}
+
 export interface UseOptimisticFlipResult {
   /** Whether it's currently this seat's turn to flip and no slap window is open. */
   myTurnToFlip: boolean;
@@ -25,7 +32,8 @@ export interface UseOptimisticFlipResult {
   optimisticPile: PlayerView["pile"];
   /** Tap the stock: reflects the flip instantly in the UI, then awaits the
    *  real submit. Safe to call unconditionally — no-ops if it isn't this
-   *  seat's turn or another flip is already in flight. */
+   *  seat's turn, another flip is already in flight, or `blocked` (pile-win
+   *  sweep still on screen). */
   flip: () => void;
 }
 
@@ -61,8 +69,9 @@ export function useOptimisticFlip(
   view: PlayerView,
   mySeat: number,
   onFlip: () => Promise<void> | void,
+  blocked = false,
 ): UseOptimisticFlipResult {
-  const myTurnToFlip = view.phase === "playing" && view.turn === mySeat && view.slapWindow === null;
+  const myTurnToFlip = canFlip(view, mySeat, blocked);
   const { pending, run } = useInstantPending<PendingFlip>((p) => flipHasLanded(view, p));
   const live = pending !== null && !flipHasLanded(view, pending);
 
