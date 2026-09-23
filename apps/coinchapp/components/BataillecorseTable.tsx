@@ -357,7 +357,7 @@ export function BataillecorseTable({
     <TableShell dataId="bataillecorse-table">
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <Link
-          href="/"
+          href="/bataillecorse"
           aria-label={t("back")}
           data-id="bataillecorse-back"
           className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg"
