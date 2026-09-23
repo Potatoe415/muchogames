@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { rankValue, type Card, type Combo, type PlayerView, type Seat } from "@/lib/president";
 import { useDelayedVisible } from "@/lib/client/useDelayedVisible";
 import { usePresidentOptimisticPlay } from "@/lib/client/usePresidentOptimisticPlay";
+import { usePresidentPileHold } from "@/lib/client/usePresidentPileHold";
 import { CssVarProbe, useCssVarPx } from "@/lib/client/useCssVarPx";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
@@ -75,6 +76,11 @@ export function PresidentTable({
   const [selected, setSelected] = useState<Card[]>([]);
   const [handSort, setHandSort] = useState<HandSortMode>("rank");
   const { optimisticHand, optimisticPile, busy, play, runExclusive } = usePresidentOptimisticPlay(view);
+  const heldPile = usePresidentPileHold(view.pile, view.finishedOrder.length);
+  // My own just-submitted, still-unconfirmed play (`optimisticPile.combo`
+  // differs from the real `view.pile.combo` only while it's pending) always
+  // renders instantly, bypassing the hold entirely - see `usePresidentPileHold`.
+  const displayPile = optimisticPile.combo !== view.pile.combo ? optimisticPile : heldPile;
 
   useEffect(() => {
     // Post-hydration browser read: deferred to after mount to avoid an SSR/client mismatch.
@@ -182,7 +188,7 @@ export function PresidentTable({
             <OpponentBadge gv={gv} view={view} seat={seats.right} position="right" reaction={reactions?.get(seats.right)} />
           </>
         )}
-        <PileArea view={view} pile={optimisticPile} seats={seats} />
+        <PileArea view={view} pile={displayPile} seats={seats} />
         <SkipFlash gv={gv} view={view} />
         <PresidentCrownedFlash gv={gv} view={view} />
         {view.phase === "exchange" && !roundOverlayVisible && (
