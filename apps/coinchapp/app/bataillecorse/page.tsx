@@ -10,7 +10,7 @@ import { withHubName } from "@/lib/client/hubName";
  *  buttons on this splash only - unrelated to the whole app's
  *  `NEXT_PUBLIC_APP_VERSION` (see `app/page.tsx`). Bump by hand as this game
  *  changes. */
-const BATAILLECORSE_VERSION = "0.6";
+const BATAILLECORSE_VERSION = "0.7";
 
 /** Same layout/mode picker as the home screen, but every button reuses the existing
  *  /local, /online, /adhoc routes with `?game=bataillecorse` instead of a duplicated tree. */

@@ -407,6 +407,7 @@ export function BataillecorseTable({
           isTurn={view.turn === opponentSeat && !pileFlying}
           reaction={reactions?.get(opponentSeat)}
           fire={winnerFireSeat === opponentSeat}
+          tributeAttempts={!owesTribute ? view.tribute?.attemptsLeft : undefined}
           dataId="bataillecorse-opponent-seat"
           className="absolute inset-x-0 top-[calc(var(--table-hud-top)+3.5rem)]"
         />
@@ -450,25 +451,8 @@ export function BataillecorseTable({
           </button>
 
           <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
-            {view.tribute && (
-              <p
-                className={
-                  owesTribute
-                    ? "whitespace-nowrap text-center text-sm font-bold text-white"
-                    : "max-w-[85%] rounded-full bg-[var(--surface-overlay)] px-4 py-1.5 text-center text-xs font-bold"
-                }
-                data-id="bataillecorse-tribute-banner"
-              >
-                {owesTribute
-                  ? formatText(
-                      t(view.tribute.attemptsLeft === 1 ? "tributePlay" : "tributePlayPlural"),
-                      { attempts: view.tribute.attemptsLeft },
-                    )
-                  : formatText(t("tributeOwed"), {
-                      player: playerName(gv, opponentSeat, locale),
-                      attempts: view.tribute.attemptsLeft,
-                    })}
-              </p>
+            {owesTribute && view.tribute && (
+              <TributePlayHint attempts={view.tribute.attemptsLeft} dataId="bataillecorse-tribute-banner" />
             )}
             {pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat && (
               <PileWinBanner label={formatText(t("pileWonBanner"), { player: t("you"), count: view.lastPileWin.cardCount })} />
@@ -535,6 +519,7 @@ function SeatRow({
   isTurn,
   reaction,
   fire,
+  tributeAttempts,
   dataId,
   className,
 }: {
@@ -543,6 +528,7 @@ function SeatRow({
   isTurn: boolean;
   reaction?: TableReaction;
   fire?: boolean;
+  tributeAttempts?: number;
   dataId: string;
   className: string;
 }) {
@@ -550,8 +536,21 @@ function SeatRow({
     <div className={`flex flex-col items-center gap-1.5 ${className}`} data-id={dataId}>
       <p className={`text-xs font-bold uppercase ${isTurn ? "underline decoration-2" : ""}`}>{label}</p>
       <StockPile count={stockCount} fire={fire} isTurn={isTurn} />
+      {tributeAttempts !== undefined && (
+        <TributePlayHint attempts={tributeAttempts} dataId={`${dataId}-tribute`} />
+      )}
       {reaction && <ReactionBubble reaction={reaction} size="md" dataId="bataillecorse-opponent-reaction" />}
     </div>
+  );
+}
+
+/** White, no pill: how many cards the current tribute-payer still has to flip. */
+export function TributePlayHint({ attempts, dataId }: { attempts: number; dataId: string }) {
+  const { t } = useI18n();
+  return (
+    <p className="whitespace-nowrap text-center text-sm font-bold text-white" data-id={dataId}>
+      {formatText(t(attempts === 1 ? "tributePlay" : "tributePlayPlural"), { attempts })}
+    </p>
   );
 }
 

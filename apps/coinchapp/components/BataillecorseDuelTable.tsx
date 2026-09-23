@@ -13,6 +13,7 @@ import {
   InfoPanel,
   ReactionTimesReadout,
   StockPile,
+  TributePlayHint,
   useDisplayPile,
   useFlash,
   usePileEnterDirection,
@@ -80,7 +81,6 @@ export function BataillecorseDuelTable({
 
   const player1 = formatText(t("defaultPlayerName"), { seat: 1 });
   const player2 = formatText(t("defaultPlayerName"), { seat: 2 });
-  const owedByLabel = viewA.tribute ? (viewA.tribute.seat === 0 ? player1 : player2) : null;
   const pileWinnerLabel = viewA.lastPileWin ? (viewA.lastPileWin.seat === 0 ? player1 : player2) : null;
 
   return (
@@ -111,6 +111,7 @@ export function BataillecorseDuelTable({
           opponentMs={reactionA}
           locale={locale}
           rotated
+          tributeAttempts={viewA.tribute?.seat === 1 ? viewA.tribute.attemptsLeft : undefined}
           dataId="bataillecorse-duel-player2"
           className="top-[calc(var(--table-hud-top)+3.5rem)]"
         />
@@ -131,7 +132,6 @@ export function BataillecorseDuelTable({
           falseSlapFlash={falseSlapFlash && Boolean(viewA.lastFalseSlap)}
           falseSlapLabel={t("falseSlapStamp")}
           tribute={viewA.tribute}
-          owedByLabel={owedByLabel}
           pileWinFlash={pileWinFlash}
           lastPileWin={viewA.lastPileWin}
           pileWinnerLabel={pileWinnerLabel}
@@ -173,6 +173,7 @@ function DuelPlayerCorner({
   opponentMs,
   locale,
   rotated,
+  tributeAttempts,
   dataId,
   className,
 }: {
@@ -186,6 +187,7 @@ function DuelPlayerCorner({
   opponentMs: number | null;
   locale: "fr" | "en";
   rotated?: boolean;
+  tributeAttempts?: number;
   dataId: string;
   className: string;
 }) {
@@ -198,6 +200,9 @@ function DuelPlayerCorner({
       <p className="text-xs font-bold uppercase" data-id={`${dataId}-name`}>{label}</p>
       <ReactionTimesReadout mineMs={mineMs} opponentMs={opponentMs} locale={locale} />
       <StockPile count={stockCount} dataId={`${dataId}-stock`} scale={1.5} onClick={onFlip} disabled={disabled} fire={fire} isTurn={isTurn} />
+      {tributeAttempts !== undefined && (
+        <TributePlayHint attempts={tributeAttempts} dataId={`${dataId}-tribute`} />
+      )}
     </div>
   );
 }

@@ -3,7 +3,7 @@
 import type { PlayerView } from "@/lib/bataillecorse";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import type { EnterDirection } from "./TrickStage";
-import { FalseSlapMark, PileStack } from "./BataillecorseTable";
+import { FalseSlapMark, PileStack, TributePlayHint } from "./BataillecorseTable";
 
 /** The shared center pile plus both seats' slap hit-zones, stacked in one
  *  spot: unlike each player's own corner (`DuelPlayerCorner`), this is never
@@ -26,7 +26,6 @@ export function DuelCenterBlock({
   falseSlapFlash,
   falseSlapLabel,
   tribute,
-  owedByLabel,
   pileWinFlash,
   lastPileWin,
   pileWinnerLabel,
@@ -46,7 +45,6 @@ export function DuelCenterBlock({
   falseSlapFlash: boolean;
   falseSlapLabel: string;
   tribute: PlayerView["tribute"];
-  owedByLabel: string | null;
   pileWinFlash: boolean;
   lastPileWin: PlayerView["lastPileWin"];
   pileWinnerLabel: string | null;
@@ -95,16 +93,8 @@ export function DuelCenterBlock({
       </div>
 
       <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
-        {tribute && owedByLabel && (
-          <p
-            className="whitespace-nowrap text-center text-sm font-bold text-white"
-            data-id="bataillecorse-duel-tribute-banner"
-          >
-            {formatText(
-              t(tribute.attemptsLeft === 1 ? "tributePlay" : "tributePlayPlural"),
-              { attempts: tribute.attemptsLeft },
-            )}
-          </p>
+        {tribute && tribute.seat === 0 && (
+          <TributePlayHint attempts={tribute.attemptsLeft} dataId="bataillecorse-duel-tribute-banner" />
         )}
         {pileWinFlash && lastPileWin && lastPileWin.reason !== "falseSlap" && pileWinnerLabel && (
           <p
