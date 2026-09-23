@@ -480,6 +480,7 @@ export function BataillecorseTable({
             onClick={tapFlip}
             disabled={!myTurnToFlip || pendingFlip}
             fire={winnerFireSeat === mySeat}
+            fireGreen
             isTurn={view.turn === mySeat && !pileFlying}
             overlayLabel={
               pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat
@@ -576,6 +577,7 @@ export function StockPile({
   fire,
   isTurn,
   overlayLabel,
+  fireGreen,
 }: {
   count: number;
   dataId?: string;
@@ -592,6 +594,8 @@ export function StockPile({
   /** Painted under the ring, out of flow - a pile-win caption must not
    *  grow this box or the seat jumps. */
   overlayLabel?: string;
+  /** Player 1's pile-win glow is green; the opponent's stays yellow. */
+  fireGreen?: boolean;
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-sm-w", 40);
   const layers = count === 0 ? 0 : count === 1 ? 1 : 3;
@@ -635,7 +639,7 @@ export function StockPile({
         type={onClick ? "button" : undefined}
         onClick={onClick}
         disabled={onClick ? disabled : undefined}
-        className={[onClick ? "absolute transition-transform active:scale-95 disabled:pointer-events-none disabled:opacity-50" : "absolute", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
+        className={[onClick ? "absolute transition-transform active:scale-95 disabled:pointer-events-none disabled:opacity-50" : "absolute", fire ? (fireGreen ? "bataillecorse-deck-fire-green" : "bataillecorse-deck-fire") : ""].join(" ")}
         style={{ width, height, left: padX, top: padY }}
         data-id={dataId}
       >

@@ -2,13 +2,13 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: La Bataille Corse in-game back button returns to `/bataillecorse` splash. Splash shows `v0.11`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
+Status: La Bataille Corse pile-win wash is green for player 1, yellow for the opponent. Splash shows `v0.12`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
 Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
 Level: L1
 
 Context:
-- Working_On: `components/BataillecorseTable.tsx`, `components/BataillecorseDuelTable.tsx`
-- Relevant_Files: `app/bataillecorse/page.tsx`
+- Working_On: `app/globals.css`, `components/BataillecorseTable.tsx`
+- Relevant_Files: `components/BataillecorseDuelTable.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
 - Relevant_Decisions: `docs/decisions/INDEX.md` 0063 (very-fast 400ms floor)
 
@@ -29,6 +29,6 @@ Blockers:
 - None.
 
 Recent_Changes:
-- 2026-09-23 la Bataille Corse: in-game back goes to the splash (`v0.11`).
-- 2026-09-23 la Bataille Corse: pile-sweep caption glued under the ring (`v0.10`); Normal/Slow slap floors (`v0.9`).
+- 2026-09-23 la Bataille Corse: P1 pile-win glow is green, opponent stays yellow (`v0.12`).
+- 2026-09-23 la Bataille Corse: in-game back goes to the splash (`v0.11`); caption glued under the ring (`v0.10`).
 - 2026-09-22 Bootstrap v10.1 alignment (docs/context-architecture only).

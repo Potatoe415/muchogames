@@ -401,13 +401,25 @@ select option {
   }
 }
 
+.bataillecorse-deck-fire-green {
+  animation: bataillecorse-deck-fire-green 650ms ease-in-out infinite alternate;
+}
+
+@keyframes bataillecorse-deck-fire-green {
+  0% {
+    filter: drop-shadow(0 0 6px var(--accent-green)) drop-shadow(0 0 14px var(--accent-cyan));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 14px var(--accent-green)) drop-shadow(0 0 26px var(--accent-green));
+  }
+}
+
 /* The winning seat's whole half of `bataillecorse-scene` glows/flickers like
    it just caught fire (`winnerFireSeat`, same `FIRE_MS` window as
    `.bataillecorse-deck-fire` above) - a big, unmistakable "you're on fire"
-   moment beyond the deck's own glow. `-top`/`-bottom` only differ in which
-   edge the gradient radiates from (opponent's half is drawn at the top of
-   the table, `mySeat`'s at the bottom - see `BataillecorseTable`'s two call
-   sites). */
+   moment beyond the deck's own glow. `-top` is the opponent (yellow);
+   `-bottom` is player 1 (green). */
 .bataillecorse-half-fire {
   animation: bataillecorse-half-fire 550ms ease-in-out infinite alternate;
 }
@@ -424,8 +436,8 @@ select option {
 .bataillecorse-half-fire-bottom {
   background: linear-gradient(
     to top,
-    color-mix(in srgb, var(--accent-yellow) 65%, transparent),
-    color-mix(in srgb, var(--accent-orange) 30%, transparent) 55%,
+    color-mix(in srgb, var(--accent-green) 65%, transparent),
+    color-mix(in srgb, var(--accent-green) 30%, transparent) 55%,
     transparent 100%
   );
 }
