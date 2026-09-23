@@ -270,8 +270,8 @@ export function useSlapWindowUrgent(slapWindow: PlayerView["slapWindow"]): boole
   return slapWindow !== null && slapWindow.id === urgentWindowId;
 }
 
-/** `{mine}s | {opponent}s` above the phone-holder's deck. The shorter time
- *  glows yellow; a missing claim (uncontested slap) shows an en-dash. */
+/** `{mine}s | {opponent}s` above player 1's yellow turn-circle. The shorter
+ *  time glows yellow; a missing claim (uncontested slap) shows an en-dash. */
 export function ReactionTimesReadout({
   mineMs,
   opponentMs,
@@ -287,7 +287,7 @@ export function ReactionTimesReadout({
   const chip = (ms: number | null) => (ms === null ? "–" : `${formatReactionSeconds(ms, locale)}s`);
   return (
     <p
-      className="pointer-events-none rounded-full bg-black/55 px-4 py-1.5 text-xs font-bold text-white shadow-lg"
+      className="pointer-events-none z-10 rounded-full bg-black/55 px-8 py-3 text-2xl font-bold text-white shadow-lg"
       data-id="bataillecorse-reaction-times"
     >
       <span className={mineFast ? "bataillecorse-reaction-fast" : undefined} data-id="bataillecorse-reaction-time-mine">
@@ -474,16 +474,17 @@ export function BataillecorseTable({
           </div>
         </div>
 
-        <div className="absolute inset-x-0 bottom-10 flex flex-col items-center gap-1.5" data-id="bataillecorse-self-seat">
+        <div className="absolute inset-x-0 bottom-10 flex flex-col items-center gap-3" data-id="bataillecorse-self-seat">
           {/* `selfAvatar` is only passed by `GameRoom` (online). */}
           {selfAvatar !== undefined && (
             <p className="text-xs font-bold uppercase text-[var(--card-face)]/80" data-id="bataillecorse-self-name">
               {playerName(gv, mySeat, locale)}
             </p>
           )}
-          {/* Both seats' times, always above the phone-holder's deck
-              (`0.75s | 0.52s`, opponent on the right). The shorter one
-              glows yellow (see docs/DECISIONS.md). */}
+          {/* Both seats' times, always above player 1's yellow turn-circle
+              (`0.75s | 0.52s`, opponent on the right). Twice the previous
+              size so they stay readable on a phone. The shorter one glows
+              yellow (see docs/DECISIONS.md). */}
           <ReactionTimesReadout mineMs={eventReactionMsMine} opponentMs={opponentReactionMs} locale={locale} />
           <StockPile
             count={optimisticStockCount}
@@ -589,16 +590,23 @@ export function StockPile({
   const height = cardH * scale + step * Math.max(0, layers - 1);
   const Tag = onClick ? "button" : "div";
   const ringDiameter = Math.max(width, height) * 1.25;
+  /** `ring-4` is a box-shadow, so the yellow circle paints outside
+   *  `ringDiameter`. Always reserve that space (even when `isTurn` is
+   *  false) so a readout sitting above this pile is above the circle, not
+   *  overlapping it, and the seat does not jump when the ring appears. */
+  const RING_PX = 4;
+  const padX = Math.max(0, (ringDiameter - width) / 2) + RING_PX;
+  const padY = Math.max(0, (ringDiameter - height) / 2) + RING_PX;
   return (
-    <div className="relative" style={{ width, height }}>
+    <div className="relative" style={{ width: width + padX * 2, height: height + padY * 2 }}>
       {isTurn && (
         <span
           className="pointer-events-none absolute rounded-full ring-4 ring-[var(--accent-yellow)]"
           style={{
             width: ringDiameter,
             height: ringDiameter,
-            left: (width - ringDiameter) / 2,
-            top: (height - ringDiameter) / 2,
+            left: RING_PX,
+            top: RING_PX,
           }}
           data-id={dataId ? `${dataId}-turn-ring` : "bataillecorse-turn-ring"}
           aria-hidden="true"
@@ -608,8 +616,8 @@ export function StockPile({
         type={onClick ? "button" : undefined}
         onClick={onClick}
         disabled={onClick ? disabled : undefined}
-        className={[onClick ? "relative transition-transform active:scale-95 disabled:pointer-events-none disabled:opacity-50" : "relative", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
-        style={{ width, height }}
+        className={[onClick ? "absolute transition-transform active:scale-95 disabled:pointer-events-none disabled:opacity-50" : "absolute", fire ? "bataillecorse-deck-fire" : ""].join(" ")}
+        style={{ width, height, left: padX, top: padY }}
         data-id={dataId}
       >
         <CssVarProbe probeRef={probeRef} probeStyle={probeStyle} />

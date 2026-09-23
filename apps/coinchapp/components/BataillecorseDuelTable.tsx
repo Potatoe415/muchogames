@@ -191,7 +191,7 @@ function DuelPlayerCorner({
 }) {
   return (
     <div
-      className={`absolute inset-x-0 flex flex-col items-center gap-1.5 ${className}`}
+      className={`absolute inset-x-0 flex flex-col items-center gap-3 ${className}`}
       style={rotated ? { transform: "rotate(180deg)" } : undefined}
       data-id={dataId}
     >
