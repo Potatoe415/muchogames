@@ -185,7 +185,8 @@ a single continuous match, `state.phase` is just `"playing" | "finished"`.
   scales the bot's simulated slap reaction range, `simulateBotReactionMs` -
   its own settings-panel control reframes it as 4 discrete "reflex quality"
   levels, slow/normal/fast/very fast, rather than the other games' continuous
-  thinking-time slider) plus its own `bataillecorseDeckSize: 32 | 52`
+  thinking-time slider; slow never reacts under 1s, normal never under 0.5s)
+  plus its own `bataillecorseDeckSize: 32 | 52`
   (`DEFAULT_BATAILLECORSE_DECK_SIZE`/`BATAILLECORSE_DECK_SIZE_OPTIONS`) - 32 is
   a piquet-style pack (7 and up), 52 is the full pack. No jokers either way
   (briefly added, then explicitly reverted - see docs/DECISIONS.md).

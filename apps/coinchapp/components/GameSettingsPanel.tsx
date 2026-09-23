@@ -72,8 +72,9 @@ const PUNCH_LABEL_KEY = { low: "punchLow", med: "punchMed", high: "punchHigh" } 
 
 /** La Bataille Corse only: `botThinkMs` reframed as 4 discrete "reflex
  *  quality" levels (slow..very fast) instead of the other games' continuous
- *  thinking-time slider - it directly drives `simulateBotReactionMs`'s upper
- *  bound, so a "faster" bot is a harder opponent to out-slap. */
+ *  thinking-time slider - it drives `simulateBotReactionMs`'s upper bound
+ *  (and, for slow/normal, a 1s / 0.5s floor) so a "faster" bot is a harder
+ *  opponent to out-slap. */
 const BOT_REFLEX_LEVELS = [3200, DEFAULT_BATAILLECORSE_BOT_THINK_MS, 1600, 400] as const;
 const BOT_REFLEX_LABEL_KEYS = ["botReflexSlow", "botReflexNormal", "botReflexFast", "botReflexVeryFast"] as const;
 

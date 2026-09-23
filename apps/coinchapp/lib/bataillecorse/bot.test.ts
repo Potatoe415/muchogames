@@ -39,4 +39,22 @@ describe("simulateBotReactionMs", () => {
       expect(ms).toBeLessThanOrEqual(2500);
     }
   });
+
+  it("normal never slaps faster than 0.5s", () => {
+    for (let i = 0; i < 200; i++) {
+      expect(simulateBotReactionMs(2400)).toBeGreaterThanOrEqual(500);
+    }
+  });
+
+  it("slow never slaps faster than 1s", () => {
+    for (let i = 0; i < 200; i++) {
+      expect(simulateBotReactionMs(3200)).toBeGreaterThanOrEqual(1000);
+    }
+  });
+
+  it("very fast still slaps under 0.5s", () => {
+    for (let i = 0; i < 50; i++) {
+      expect(simulateBotReactionMs(400)).toBeLessThan(500);
+    }
+  });
 });
