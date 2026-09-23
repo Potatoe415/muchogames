@@ -49,6 +49,32 @@ const REACTION_READOUT_MS = 5000;
  *  the pile - see `.bataillecorse-deck-fire` (`app/globals.css`). */
 const FIRE_MS = 2600;
 
+/** How long a slap-bounce class stays on the pile cards. Must cover
+ *  `.bataillecorse-pile-card-hit` (480ms), `-slam` (520ms) and
+ *  `.bataillecorse-pile-slap-shock` (560ms) in `app/globals.css`. Leaving
+ *  the class on after that (the old `tapHitKey > 0` forever) made every
+ *  later flip remount with the bounce animation, which on mobile Safari
+ *  swallows the child's `.bataillecorse-card-enter` slide. */
+const PILE_HIT_MS = 560;
+
+/** `tapHitKey` itself is a monotonically increasing counter so a second slap
+ *  can restart the bounce; this returns it only while the bounce should
+ *  actually play, then 0 so later flips get a clean slide-in. */
+function useLiveTapHitKey(tapHitKey: number): number {
+  const [track, setTrack] = useState({ key: 0, live: 0 });
+  if (tapHitKey !== track.key) {
+    setTrack({ key: tapHitKey, live: tapHitKey });
+  }
+  useEffect(() => {
+    if (tapHitKey === 0) return;
+    const timer = setTimeout(() => {
+      setTrack((s) => (s.key === tapHitKey ? { key: s.key, live: 0 } : s));
+    }, PILE_HIT_MS);
+    return () => clearTimeout(timer);
+  }, [tapHitKey]);
+  return tapHitKey !== track.key ? tapHitKey : track.live;
+}
+
 export function useFlash(eventId: number | undefined): boolean {
   const [visible, setVisible] = useState(false);
   const seenRef = useRef<number | undefined>(undefined);
@@ -679,13 +705,14 @@ export function PileStack({
   justEnteredCardKey?: string | null;
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-md-w", 56);
+  const liveTapHitKey = useLiveTapHitKey(tapHitKey ?? 0);
   const behind = pendingFaceDown ? cards.slice(-2) : cards.slice(-3, -1);
   const topCard = pendingFaceDown ? undefined : cards[cards.length - 1];
   if (!pendingFaceDown && !topCard) {
     return <p className="text-sm italic text-[var(--card-face)]/70">{"—"}</p>;
   }
-  const hitClass = pileCardHitClass(tapHitKey ?? 0, Boolean(slapImpact), Boolean(fly));
-  const showShock = Boolean((fly && slapImpact) || (!fly && (tapHitKey ?? 0) > 0));
+  const hitClass = pileCardHitClass(liveTapHitKey, Boolean(slapImpact), Boolean(fly));
+  const showShock = Boolean((fly && slapImpact) || (!fly && liveTapHitKey > 0));
   return (
     <div
       key={fly ? `fly-${fly.key}` : "pile"}
@@ -702,13 +729,13 @@ export function PileStack({
       {showShock && (
         <>
           <span
-            key={fly ? `flash-fly-${fly.key}` : `flash-tap-${tapHitKey}`}
+            key={fly ? `flash-fly-${fly.key}` : `flash-tap-${liveTapHitKey}`}
             className="bataillecorse-pile-slap-flash"
             data-id="bataillecorse-pile-slap-flash"
             aria-hidden="true"
           />
           <span
-            key={fly ? `shock-fly-${fly.key}` : `shock-tap-${tapHitKey}`}
+            key={fly ? `shock-fly-${fly.key}` : `shock-tap-${liveTapHitKey}`}
             className="bataillecorse-pile-slap-shock"
             data-id="bataillecorse-pile-slap-shock"
             aria-hidden="true"

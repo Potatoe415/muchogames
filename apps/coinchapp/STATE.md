@@ -2,13 +2,13 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: La Bataille Corse stock taps are ignored for the whole pile-win sweep (`pileFlying`), same as slaps already were — spam-clicking the deck during that animation can no longer queue flips that all land at once when the sweep ends. Splash shows `v0.3`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
+Status: La Bataille Corse slap-bounce class now expires after the hit animation, so later flips keep their slide-in. Splash shows `v0.4`. Deployed on Vercel (project `coinchapp`, team `remiinsf-3156s-projects`).
 Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
 Level: L1
 
 Context:
-- Working_On: `lib/client/useOptimisticFlip.ts`, `components/BataillecorseTable.tsx`, `components/BataillecorseDuelTable.tsx`
-- Relevant_Files: `lib/client/useOptimisticFlip.test.ts`
+- Working_On: `components/BataillecorseTable.tsx`
+- Relevant_Files: `app/globals.css`, `app/bataillecorse/page.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
 - Relevant_Decisions: `docs/decisions/INDEX.md` 0061 (face-to-face home button)
 
@@ -29,7 +29,7 @@ Blockers:
 - None.
 
 Recent_Changes:
-- 2026-09-23 la Bataille Corse: stock flips are blocked while `useDisplayPile`'s pile-win sweep is in flight (`canFlip(..., blocked)`), vs-bot and duel. Splash version bumped to `v0.3`.
-- 2026-09-23 la Bataille Corse splash: `v0.2` plus "Forcer le refresh" (`forceUpdate`).
+- 2026-09-23 la Bataille Corse: slap-bounce (`pile-card-hit`) no longer sticks on the pile after the first tap — it expires after `PILE_HIT_MS`, so the next flip's slide-in is not swallowed. Splash `v0.4`.
+- 2026-09-23 la Bataille Corse: stock flips blocked during pile-win sweep (`v0.3`); splash `v0.2` + force-refresh.
 - 2026-09-22 la Bataille Corse: very-fast reflex 400ms; duel player 2 stock under header; pile-flying slap guard.
 - 2026-09-22 Bootstrap v10.1 alignment (docs/context-architecture only).
