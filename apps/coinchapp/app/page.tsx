@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { forceUpdate } from "@/lib/client/forceUpdate";
 import { useI18n } from "@/lib/client/i18n";
 import { useInstallPrompt } from "@/lib/client/useInstallPrompt";
 import { HomeTopBar } from "@/components/HomeTopBar";
@@ -45,24 +46,6 @@ async function resetBrowserData() {
             }),
         ),
     );
-  }
-
-  window.location.reload();
-}
-
-/** Forces the latest deployed version without wiping local game saves: drops
- *  the service worker's cached shell/assets and unregisters it so the next
- *  load re-registers a fresh one, then reloads. Unlike `resetBrowserData`,
- *  this keeps localStorage/sessionStorage/IndexedDB (local game state) intact. */
-async function forceUpdate() {
-  if ("caches" in window) {
-    const keys = await caches.keys();
-    await Promise.all(keys.map((key) => caches.delete(key)));
-  }
-
-  if ("serviceWorker" in navigator) {
-    const registrations = await navigator.serviceWorker.getRegistrations();
-    await Promise.all(registrations.map((registration) => registration.unregister()));
   }
 
   window.location.reload();

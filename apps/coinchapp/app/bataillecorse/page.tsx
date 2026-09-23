@@ -2,14 +2,15 @@
 
 import { useRouter } from "next/navigation";
 import { HomeTopBar } from "@/components/HomeTopBar";
+import { forceUpdate } from "@/lib/client/forceUpdate";
 import { useI18n } from "@/lib/client/i18n";
 import { withHubName } from "@/lib/client/hubName";
 
-/** La Bataille Corse's own build/iteration counter, shown discreetly at the
- *  bottom of this splash screen only - unrelated to the whole app's
+/** La Bataille Corse's own build/iteration counter, shown next to the mode
+ *  buttons on this splash only - unrelated to the whole app's
  *  `NEXT_PUBLIC_APP_VERSION` (see `app/page.tsx`). Bump by hand as this game
  *  changes. */
-const BATAILLECORSE_VERSION = "0.0.1";
+const BATAILLECORSE_VERSION = "0.2";
 
 /** Same layout/mode picker as the home screen, but every button reuses the existing
  *  /local, /online, /adhoc routes with `?game=bataillecorse` instead of a duplicated tree. */
@@ -66,12 +67,25 @@ export default function BataillecorsePage() {
         </button>
       </div>
 
-      <p
-        className="pointer-events-none relative z-10 pb-1 text-center text-[10px] font-medium text-[var(--surface)]/40"
-        data-id="bataillecorse-version-label"
+      <div
+        className="relative z-10 mb-4 flex w-full items-center justify-between gap-3 px-6"
+        data-id="bataillecorse-splash-version-row"
       >
-        V{BATAILLECORSE_VERSION}
-      </p>
+        <span
+          className="text-sm font-bold text-white/90"
+          data-id="bataillecorse-version-label"
+        >
+          v{BATAILLECORSE_VERSION}
+        </span>
+        <button
+          type="button"
+          data-id="bataillecorse-force-refresh-button"
+          onClick={forceUpdate}
+          className="rounded-lg border border-white/50 bg-black/30 px-4 py-2 text-sm font-medium text-white/90 transition hover:border-white/80 hover:text-white active:scale-95"
+        >
+          {t("forceRefreshButton")}
+        </button>
+      </div>
     </main>
   );
 }
