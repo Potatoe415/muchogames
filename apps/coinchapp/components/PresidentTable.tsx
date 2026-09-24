@@ -202,13 +202,20 @@ export function PresidentTable({
           nextRoundGate={gv.nextDealGate}
           onRematch={actions.onRematch}
         />
-        {selfAvatar !== undefined && !roundOverlayVisible && (
+        {!roundOverlayVisible && selfAvatar !== undefined && (
           <div className="absolute inset-x-0 bottom-[9.4rem] z-20" data-id="president-self-name-wrap">
             <SelfNameChip
               name={playerName(gv, mySeat, locale)}
               avatarSrc={selfAvatar}
               isPresident={view.finishedOrder[0] === mySeat}
             />
+          </div>
+        )}
+        {!roundOverlayVisible && selfAvatar === undefined && view.finishedOrder[0] === mySeat && (
+          <div className="absolute inset-x-0 bottom-[9.4rem] z-20 flex justify-center" data-id="president-self-crown-wrap">
+            <span className="text-2xl drop-shadow-lg" data-id="president-self-crown-icon" aria-hidden="true">
+              👑
+            </span>
           </div>
         )}
         {emojiOn && actions.onSendReaction && <EmojiButton myReaction={reactions?.get(mySeat)} onSelect={actions.onSendReaction} />}
