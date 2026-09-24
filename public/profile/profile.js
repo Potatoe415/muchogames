@@ -12,6 +12,13 @@ import {
 
 const NOTICE_TIMEOUT_MS = 1800;
 const LANG_STORAGE_KEY = "bergamots-lang";
+// Same key as auth.js (root, bundled — can't be imported from here, so the
+// string is duplicated on purpose, same pattern as NAME_STORAGE_KEY in
+// player-profile.js). See docs/tasks/unified-profile-accounts.md.
+const ID_TOKEN_STORAGE_KEY = "bergamots-google-idtoken";
+// Server-synced profile ({ name, avatarUrl, wins, losses }) once a live
+// Google sign-in exists; null otherwise (falls back to local-only display).
+let syncedProfile = null;
 const LANGS = ["fr", "en", "es"];
 const LANGUAGE_FLAGS = [
   { code: "fr", flag: "🇫🇷" },
@@ -109,15 +116,82 @@ const MESSAGES = {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initOptionsPanel();
   initLangSwitcher();
   applyProfileCopy();
+  await loadSyncedProfile();
   initNameForm();
   initAvatarUpload();
   initAvatarCrop();
-  initLaunchStats(getCopy());
+  initLaunchStats(getCopy(), gameResultsOverride());
 });
+
+function gameResultsOverride() {
+  return syncedProfile
+    ? { wins: syncedProfile.wins, losses: syncedProfile.losses }
+    : null;
+}
+
+function getStoredIdToken() {
+  try {
+    const token = localStorage.getItem(ID_TOKEN_STORAGE_KEY) || "";
+    return token && !isJwtExpired(token) ? token : "";
+  } catch {
+    return "";
+  }
+}
+
+function isJwtExpired(jwt) {
+  try {
+    const payload = JSON.parse(
+      atob(jwt.split(".")[1].replace(/-/g, "+").replace(/_/g, "/"))
+    );
+    return !payload.exp || Date.now() / 1000 >= payload.exp;
+  } catch {
+    return true;
+  }
+}
+
+// Best-effort: a missing/expired token or a failed call just leaves
+// syncedProfile null, and every render falls back to local-only, exactly
+// like being signed out.
+async function loadSyncedProfile() {
+  const idToken = getStoredIdToken();
+  if (!idToken) return;
+  try {
+    const response = await fetch("/api/profile/get", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ idToken })
+    });
+    if (!response.ok) return;
+    const data = await response.json();
+    syncedProfile = data?.profile || null;
+  } catch {
+    // Offline/blocked — not fatal.
+  }
+}
+
+// Fire-and-forget mirror of a local save into the shared profile. The local
+// PlayerProfile write already happened by the time this is called, so a
+// failure here never loses the player's edit — it just stays local-only.
+function syncProfileField(patch) {
+  const idToken = getStoredIdToken();
+  if (!idToken) return;
+  fetch("/api/profile/upsert", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ idToken, ...patch })
+  })
+    .then((response) => (response.ok ? response.json() : null))
+    .then((data) => {
+      if (data?.profile) syncedProfile = data.profile;
+    })
+    .catch(() => {
+      // Offline/blocked — not fatal.
+    });
+}
 
 function getCopy() {
   return MESSAGES[readStoredLang()] || MESSAGES.fr;
@@ -166,7 +240,7 @@ function initLangSwitcher() {
 function selectProfileLang(lang) {
   persistLang(lang);
   applyProfileCopy();
-  initLaunchStats(getCopy());
+  initLaunchStats(getCopy(), gameResultsOverride());
 }
 
 function applyProfileCopy() {
@@ -225,10 +299,12 @@ function initNameForm() {
   const notice = document.getElementById("profile-name-saved-notice");
   if (!form || !input) return;
 
-  input.value = window.PlayerProfile.getName();
+  input.value = syncedProfile?.name || window.PlayerProfile.getName();
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    window.PlayerProfile.setName(input.value.trim());
+    const name = input.value.trim();
+    window.PlayerProfile.setName(name);
+    syncProfileField({ name });
     showNotice(notice);
   });
 }
@@ -245,6 +321,7 @@ function initAvatarUpload() {
   );
   removeButton.addEventListener("click", () => {
     window.PlayerProfile.setAvatar("");
+    syncProfileField({ avatarDataUrl: "" });
     renderAvatarPreview();
   });
 }
@@ -265,6 +342,7 @@ async function onAvatarFilePicked(fileInput, errorNotice) {
     const cropped = await openAvatarCrop(image, getCopy());
     if (!cropped) return;
     window.PlayerProfile.setAvatar(cropped.avatar, cropped.thumb);
+    syncProfileField({ avatarDataUrl: cropped.avatar });
     renderAvatarPreview();
   } catch {
     showError(errorNotice, getCopy().imageLoadError);
@@ -275,7 +353,7 @@ function renderAvatarPreview() {
   const preview = document.getElementById("profile-avatar-preview");
   const placeholder = document.getElementById("profile-avatar-placeholder");
   const removeButton = document.getElementById("profile-avatar-remove-button");
-  const avatar = window.PlayerProfile.getAvatar();
+  const avatar = syncedProfile?.avatarUrl || window.PlayerProfile.getAvatar();
   const hasAvatar = Boolean(avatar);
   preview.src = avatar;
   preview.hidden = !hasAvatar;

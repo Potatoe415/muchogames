@@ -1,7 +1,10 @@
 const HUB_CONFIG_URL = "/hub-config.json";
 const FAVORITE_LIMIT = 5;
 
-export async function initLaunchStats(copy) {
+// `resultsOverride` ({ wins, losses }), when given, takes priority over the
+// local-only PlayerProfile counter — the shared, Google-signed-in profile's
+// numbers. Launch count/favorites stay local-only regardless (decision 0024).
+export async function initLaunchStats(copy, resultsOverride) {
   const totalNode = document.getElementById("profile-launches-total");
   const list = document.getElementById("profile-favorites-list");
   const empty = document.getElementById("profile-favorites-empty");
@@ -15,13 +18,17 @@ export async function initLaunchStats(copy) {
   totalNode.textContent = formatLaunches(total, copy);
   empty.textContent = copy.favoritesEmpty;
   renderFavorites(list, empty, favorites, titles);
-  renderGameResults(resultsNode, copy);
+  renderGameResults(resultsNode, copy, resultsOverride);
 }
 
-function renderGameResults(resultsNode, copy) {
+function renderGameResults(resultsNode, copy, resultsOverride) {
   if (!resultsNode) return;
-  const wins = window.PlayerProfile.getWins();
-  const losses = window.PlayerProfile.getLosses();
+  const wins = resultsOverride
+    ? resultsOverride.wins
+    : window.PlayerProfile.getWins();
+  const losses = resultsOverride
+    ? resultsOverride.losses
+    : window.PlayerProfile.getLosses();
   resultsNode.textContent = `${copy.winsLabel} ${wins} · ${copy.lossesLabel} ${losses}`;
 }
 

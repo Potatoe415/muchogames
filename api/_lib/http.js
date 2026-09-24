@@ -9,6 +9,7 @@ const ERROR_STATUS = {
   "method-not-allowed": 405,
   "invalid-event": 400,
   "invalid-state": 400,
+  "invalid-profile": 400,
   unauthorized: 401,
   "too-many-requests": 429,
   "server-error": 500

@@ -15,6 +15,10 @@ const GOOGLE_CLIENT_ID =
 
 const GSI_SCRIPT_URL = "https://accounts.google.com/gsi/client";
 const AUTH_STORAGE_KEY = "bergamots-auth";
+// Raw Google ID token (short-lived, ~1h) — never decoded/trusted by this
+// file for anything beyond display; only api/profile/* verifies it server
+// side. See docs/tasks/unified-profile-accounts.md.
+const ID_TOKEN_STORAGE_KEY = "bergamots-google-idtoken";
 // Same key as public/profile/profile.js — there is no shared module between
 // this root-level bundled file and that unbundled page, so the string is
 // duplicated on purpose (see docs/TECH.md).
@@ -90,6 +94,36 @@ function persistEmail(email) {
     }
   } catch {
     // Storage unavailable (private mode, etc.) — status just won't persist.
+  }
+}
+
+// Read directly (duplicated key string, same pattern as NAME_STORAGE_KEY
+// above) by /profile/profile.js and, later, same-origin games — none of
+// them can import this bundled file. See docs/tasks/unified-profile-accounts.md.
+function persistIdToken(idToken) {
+  try {
+    if (idToken) {
+      localStorage.setItem(ID_TOKEN_STORAGE_KEY, idToken);
+    } else {
+      localStorage.removeItem(ID_TOKEN_STORAGE_KEY);
+    }
+  } catch {
+    // Storage unavailable — shared-profile sync just won't happen.
+  }
+}
+
+// Fire-and-forget name sync so /profile has something to show even before
+// the player visits it themselves. Never blocks the sign-in UI, never
+// throws: a failed sync just means the shared profile stays empty/local.
+function syncProfileName(idToken) {
+  try {
+    fetch("/api/profile/upsert", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ idToken, name: getStoredPlayerName() })
+    }).catch(() => {});
+  } catch {
+    // fetch unavailable/blocked — not fatal.
   }
 }
 
@@ -230,7 +264,9 @@ function handleCredentialResponse(response) {
   const payload = decodeJwtPayload(response.credential) || {};
   authState.email = payload.email || "";
   persistEmail(authState.email);
+  persistIdToken(response.credential);
   fillNameIfEmpty(payload.name);
+  syncProfileName(response.credential);
   // Do not write bergamots-lang here. Google locale must not override the
   // language the player already chose on the hub or the profile settings.
   closePopover();
@@ -240,6 +276,7 @@ function handleCredentialResponse(response) {
 function logout() {
   authState.email = "";
   persistEmail("");
+  persistIdToken("");
   if (window.google?.accounts?.id) {
     window.google.accounts.id.disableAutoSelect();
   }

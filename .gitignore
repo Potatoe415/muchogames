@@ -146,3 +146,4 @@ temp-design/
 
 # Turborepo local cache
 .turbo/
+.env*

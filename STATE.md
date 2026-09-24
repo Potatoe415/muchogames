@@ -3,19 +3,20 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: Bootstrap v10.1 alignment applied 2026-09-22 (root + `apps/coinchapp` + `apps/tranquil`, all in one pass on `main`). `docs/DECISIONS.md` split into `docs/decisions/*.md` + `INDEX.md` (36 decisions, verbatim). New `docs/ARCHITECTURE.md` (merged from `docs/TECH.md`), `docs/SECURITY.md`, `docs/DEBUGGING.md`. `docs/TECH.md`/`docs/DECISIONS.md`/`CLAUDE.md`/`.cursor/rules/000-router.mdc` kept on disk, superseded, pending user confirmation to delete. Product-wise: active project on Vercel + Supabase, GameBoy Web hub tile, Yatzy Giphy reactions, Google Sign-In on `/profile`, wins/losses stat client-side across Yatzy/coinchapp/tranquil.
-Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc` (root + same set in `apps/coinchapp`/`apps/tranquil`), and (b) update `docs/PRODUCT.md` (+ `apps/coinchapp/docs/PRODUCT.md`) Out_Of_Scope wording now that Yatzy/coinchapp/tranquil each have a wins/losses stat.
+Focus: Building a unified player profile (real Google-linked Supabase Auth account) shared across the hub, `coinchapp`, and `tranquil` — name/avatar/wins/losses synced cross-app and cross-device, anonymous play unchanged for non-signed-in visitors. See `docs/tasks/unified-profile-accounts.md` (+ matching task files in `apps/coinchapp`/`apps/tranquil`).
 Level: L2
 
 Context:
-- Working_On: `AGENTS.md`, `STATE.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md`, `docs/DEBUGGING.md`, `docs/decisions/`, `docs/BACKLOG.md` (root + both apps)
-- Relevant_Files: `docs/decisions/INDEX.md`, `docs/GAMES_MAP.md`, `docs/NEW_GAME.md` (kept as-is, still wired into `AGENTS.md`)
-- Do_Not_Touch: no source code was touched by this alignment pass (docs/context-architecture only)
-- Relevant_Decisions: `docs/decisions/INDEX.md` 0001 (original bootstrap), 0037 (this v10.1 alignment)
+- Working_On: `docs/tasks/unified-profile-accounts.md` (design revised mid-implementation: zero browser Supabase SDK, Google ID token verified server-side). Landed: `api/_lib/googleAuth.js`, `api/profile/*.js`, `auth.js`, `public/profile/profile.js`/`profile-stats.js`. `npm run check` passes.
+- Relevant_Files: `supabase/migrations/0003_profiles.sql` (drafted, not applied), `apps/coinchapp/docs/tasks/unified-profile-accounts.md`, `apps/tranquil/docs/tasks/unified-profile-accounts.md`, `shared/CONTRACT.md`, `docs/ARCHITECTURE.md`
+- Do_Not_Touch: game rules/content of any individual game; Yatzy's room-code/resume-token access model
+- Relevant_Decisions: `docs/decisions/INDEX.md` 0001 (original bootstrap), 0037 (v10.1 alignment); none yet for this task (logged once Done)
 
 Next:
-- Ask the user to confirm deletion of the 4 superseded router/flat-doc files (root + both apps — see Focus).
-- Ask the user to confirm the `docs/PRODUCT.md` Out_Of_Scope wording edit (see Focus).
-- Resume the large pre-existing device-verification/user-action backlog — see `docs/BACKLOG.md` Now (Vercel token rotation, `tranquil` repoint, admin password rotation, etc.) — none of it was touched by this alignment pass.
+- Blocking, needs the user: (a) run `supabase/migrations/0003_profiles.sql` against `multigames-db`, (b) enable Google as a Supabase Auth provider on that project (see `docs/RUNBOOK.md`). Nothing above is testable end-to-end until both are done.
+- Remaining task steps (see task file): legacy-counter one-time migration, `hub.js` launch-code param, Yatzy calling `record-result`, `coinchapp`/`tranquil` sides, doc updates.
+- Still open from the prior pass: confirm deletion of the 4 superseded router/flat-doc files (root + both apps), and the `docs/PRODUCT.md` Out_Of_Scope wording edit for the existing per-app wins/losses stat.
+- Resume the large pre-existing device-verification/user-action backlog — see `docs/BACKLOG.md` Now.
 
 Open_Questions:
 - Whether to eventually rename `data-id` to `data-testid` repo-wide (bootstrap v10.1 default; kept `data-id` for now — see `docs/BACKLOG.md`).
