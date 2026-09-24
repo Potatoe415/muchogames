@@ -219,4 +219,43 @@ describe("applyPass", () => {
     expect(state.passStreak).toBe(0);
     expect(state.turn).toBe(0);
   });
+
+  it("after a skip, the winner leads once everyone else has passed, not the skipped seat", () => {
+    let state = playingState({
+      turn: 1,
+      hands: [[card("K", "S")], [card("6", "D"), card("3", "H")], [card("Q", "C")], [card("J", "H")]],
+      pile: { combo: combo("6", [card("6", "H")]), leader: 0 },
+    });
+    state = applyPlay(state, 1, combo("6", [card("6", "D")]));
+    expect(state.turn).toBe(3);
+    expect(state.pile.leader).toBe(1);
+
+    state = applyPass(state, 3);
+    expect(state.pile.combo).not.toBeNull();
+    expect(state.turn).toBe(0);
+
+    state = applyPass(state, 0);
+    // Seat 2 was skipped and still owes a pass. The winner must not be asked
+    // to act on their own pile, and must not lose the lead to that skipped seat.
+    expect(state.pile.combo).not.toBeNull();
+    expect(state.turn).toBe(2);
+
+    state = applyPass(state, 2);
+    expect(state.pile.combo).toBeNull();
+    expect(state.turn).toBe(1);
+  });
+
+  it("when the winner has already finished, the next active seat leads", () => {
+    let state = playingState({
+      turn: 2,
+      hands: [[card("K", "S")], [], [card("3", "D")], [card("3", "C")]],
+      pile: { combo: combo("6", [card("6", "H")]), leader: 1 },
+      finishedOrder: [1],
+    });
+    state = applyPass(state, 2);
+    state = applyPass(state, 3);
+    state = applyPass(state, 0);
+    expect(state.pile.combo).toBeNull();
+    expect(state.turn).toBe(2);
+  });
 });

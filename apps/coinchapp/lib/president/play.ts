@@ -148,8 +148,25 @@ export function applyPlay(state: GameState, seat: Seat, combo: Combo): GameState
   return { ...state, hands, pile, passStreak: 0, revolution, finishedOrder, losingFinishSeats, turn: nextActiveSeat(finishedOrder, seat) };
 }
 
+/** Who leads once the pile is won: the seat that took it, if they still have
+ *  cards, otherwise the next seat that can still play. */
+function leadAfterWin(state: GameState): Seat {
+  const leader = state.pile.leader;
+  if (leader !== null && !state.finishedOrder.includes(leader)) return leader;
+  return nextActiveSeat(state.finishedOrder, leader ?? state.turn);
+}
+
+/** Next seat that still owes a pass. The winner is never asked to pass on
+ *  their own pile — a skipped seat can sit later in the circle, and handing
+ *  the turn back to the winner early lets someone else steal the lead. */
+function nextPasser(state: GameState, from: Seat): Seat {
+  const next = nextActiveSeat(state.finishedOrder, from);
+  if (next === state.pile.leader) return nextActiveSeat(state.finishedOrder, next);
+  return next;
+}
+
 /** Apply a pass: clears the pile once every other active seat has passed in a
- *  row, otherwise just advances the turn. */
+ *  row, and the winner leads next if they still can. */
 export function applyPass(state: GameState, seat: Seat): GameState {
   if (!canPass(state, seat)) throw new Error("cannot_pass");
 
@@ -159,6 +176,6 @@ export function applyPass(state: GameState, seat: Seat): GameState {
     ...state,
     passStreak: cleared ? 0 : passStreak,
     pile: cleared ? { combo: null, leader: null } : state.pile,
-    turn: nextActiveSeat(state.finishedOrder, seat),
+    turn: cleared ? leadAfterWin(state) : nextPasser(state, seat),
   };
 }
