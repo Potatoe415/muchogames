@@ -29,6 +29,13 @@ function comboLeftHand(view: PlayerView, combo: Combo): boolean {
   return combo.cards.every((played) => !view.myHand.some((held) => cardKey(held) === cardKey(played)));
 }
 
+/** The guessed pile must be led by the seat that just played. Copying
+ *  `view.pile` unchanged keeps the previous leader, so the slide-in starts
+ *  from that seat (often the player on the left) instead of from you. */
+export function pileWithPendingCombo(pile: PlayerView["pile"], pending: Combo, leader: PlayerView["mySeat"]): PlayerView["pile"] {
+  return { ...pile, combo: pending, leader };
+}
+
 /**
  * Président's equivalent of `useOptimisticPlay`: same "feels instant online"
  * contract, but shaped for combos (1-4 same-rank cards confirmed together via
@@ -45,7 +52,7 @@ export function usePresidentOptimisticPlay(view: PlayerView): UsePresidentOptimi
 
   const pendingIds = pending ? new Set(pending.cards.map(cardKey)) : null;
   const optimisticHand = pendingIds ? view.myHand.filter((c) => !pendingIds.has(cardKey(c))) : view.myHand;
-  const optimisticPile = pending ? { ...view.pile, combo: pending } : view.pile;
+  const optimisticPile = pending ? pileWithPendingCombo(view.pile, pending, view.mySeat) : view.pile;
 
   return { optimisticHand, optimisticPile, busy, play, runExclusive: runLocked };
 }

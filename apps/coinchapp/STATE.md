@@ -2,20 +2,20 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Président gives the lead back to whoever won the pile, if they still have cards. A skipped seat no longer steals that lead. Splash stamp `v0.4`.
+Status: Président slide-in of your own play comes from your seat. The optimistic pile was keeping the previous leader, so the card often glided in from the left. Splash stamp `v0.5`.
 Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
 Level: L1
 
 Context:
-- Working_On: `lib/president/play.ts`
-- Relevant_Files: `lib/president/play.test.ts`
+- Working_On: `lib/client/usePresidentOptimisticPlay.ts`
+- Relevant_Files: `lib/client/usePresidentPileDisplay.ts`, `components/PresidentTable.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0048 (double rule / completed rank burns)
+- Relevant_Decisions: none (display direction only)
 
 Next:
 - Ask the user to confirm deletion of the 4 superseded router/flat-doc files (see Focus).
 - Ask the user to confirm the `docs/PRODUCT.md` Out_Of_Scope wording edit (see Focus).
-- Sanity-check Président: after a double that skips a seat, the winner leads once everyone else has passed.
+- Sanity-check Président: playing onto someone else's pile slides in from your own seat.
 
 Open_Questions:
 - La Bataille Corse's slap resolution trusts each client's self-reported `reactionMs` — accepted trade-off, no fix planned.
@@ -29,6 +29,6 @@ Blockers:
 - None.
 
 Recent_Changes:
+- 2026-09-24 Président: your own play slides in from your seat, not from the previous leader.
 - 2026-09-24 Président: the pile winner leads next if they still can; a skipped seat no longer takes that lead.
-- 2026-09-24 Président: next play waits until the current animation fully ends, every player, every mode.
-- 2026-09-24 Président: in-game back returns to the `/president` splash. Splash stamp `v0.4`.
+- 2026-09-24 Président: next play waits until the current animation fully ends. Splash stamp `v0.5`.
