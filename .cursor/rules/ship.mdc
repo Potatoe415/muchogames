@@ -1,0 +1,12 @@
+---
+description: Commit and push by running scripts/ship.ps1 only
+alwaysApply: true
+---
+
+# Ship
+
+When the user asks to commit and/or push, run this from the git root and stop. Do not inspect status, diff, or log first.
+
+`powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<conventional message>"`
+
+One message, one command. The script stages current changes, leaves `apps/coinchapp/run.bat` and `.env` files unstaged, commits, and pushes. Never force-push. Never add flags the script does not use.
