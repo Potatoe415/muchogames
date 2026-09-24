@@ -71,7 +71,7 @@ export function PresidentRoundOverlay({
               </button>
             )}
             <Link
-              href="/"
+              href="/president"
               data-id="president-finished-home-button"
               className="mt-3 inline-block rounded-lg bg-[var(--accent-yellow)] px-5 py-2.5 font-bold text-[var(--surface)]"
             >

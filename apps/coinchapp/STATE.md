@@ -2,15 +2,15 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Président splash shows its own version (`v0.1`) and a force-refresh button, same row as la Bataille Corse. Pile play-enter + collect-fly still in place from the previous fix.
+Status: Président waits out every play animation (enter, collect, skip, crown, quad hold) before the next card, in every mode. Splash stamp `v0.3`. In-game back still returns to `/president`.
 Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
-Level: L0
+Level: L1
 
 Context:
-- Working_On: `app/president/page.tsx`
-- Relevant_Files: `app/bataillecorse/page.tsx`, `lib/client/forceUpdate.ts`
+- Working_On: `lib/client/presidentAnimationLock.ts`, `components/PresidentTable.tsx`
+- Relevant_Files: `lib/client/useBotRunner.ts`, `lib/client/useLocalPresidentGame.ts`, `lib/client/useP2PPresidentHost.ts`, `lib/client/cardGameDriver.ts`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: none (splash chrome only; bump `PRESIDENT_VERSION` by hand)
+- Relevant_Decisions: 0065 (2s pile hold), 0047 (burn), 0048 (double / completed rank)
 
 Next:
 - Ask the user to confirm deletion of the 4 superseded router/flat-doc files (see Focus).
@@ -29,6 +29,6 @@ Blockers:
 - None.
 
 Recent_Changes:
-- 2026-09-24 Président splash: version label `v0.1` and force-refresh button, same layout as la Bataille Corse.
-- 2026-09-24 Président: closing a square / burning, and winning the pile by passes, now play-enter then fly toward the seat (every mode).
-- 2026-09-23 Président: pile holds a quad/hand-emptying play on screen for at least 2s (decision 0065).
+- 2026-09-24 Président: next play waits until the current animation fully ends, every player, every mode.
+- 2026-09-24 Président: in-game back returns to the `/president` splash. Splash stamp `v0.3`.
+- 2026-09-24 Président: closing a square or winning the pile by passes plays enter then flies toward the seat.

@@ -26,6 +26,10 @@ export interface BotLoopParams<TState, TView, TAction> {
   commit: (state: TState) => void;
   thinkingMs: number;
   collectDelayMs: number;
+  /** Extra wait after a committed move, before the next bot acts. Président
+   *  uses this so the next play cannot start until that move's animations
+   *  have finished. Added to `collectDelayMs` (the longer one wins). */
+  postMoveDelayMs?: (prev: TState, next: TState) => number;
   guardLimit?: number;
 }
 
@@ -50,7 +54,7 @@ export function seededRng(seed: number): () => number {
 export async function runBotLoop<TState, TView, TAction>(
   params: BotLoopParams<TState, TView, TAction>,
 ): Promise<void> {
-  const { engine, getState, isBot, decide, commit, thinkingMs, collectDelayMs, guardLimit = 64 } = params;
+  const { engine, getState, isBot, decide, commit, thinkingMs, collectDelayMs, postMoveDelayMs, guardLimit = 64 } = params;
   let guard = 0;
   while (guard++ < guardLimit) {
     const prev = getState();
@@ -59,6 +63,8 @@ export async function runBotLoop<TState, TView, TAction>(
     const [action] = await Promise.all([decide(engine.redact(prev, seat), seat), wait(thinkingMs)]);
     const next = engine.applyBotAction(prev, seat, action);
     commit(next);
-    if (engine.didCollectTrick(prev, next)) await wait(collectDelayMs);
+    const collectMs = engine.didCollectTrick(prev, next) ? collectDelayMs : 0;
+    const paceMs = Math.max(collectMs, postMoveDelayMs?.(prev, next) ?? 0);
+    if (paceMs > 0) await wait(paceMs);
   }
 }

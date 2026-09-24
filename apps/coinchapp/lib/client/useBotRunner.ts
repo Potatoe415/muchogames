@@ -11,6 +11,7 @@ import type { PlayerView as BouillaPlayerView } from "@/lib/bouilla";
 import type { PlayerView as PresidentPlayerView, PresidentBotAction } from "@/lib/president";
 import { DEFAULT_BOT_THINK_MS } from "@/lib/supabase/types";
 import { decideBouillaAction, type BouillaBotAction } from "./bouillaEngineAdapter";
+import { animSnap, presidentAnimationLockMs } from "./presidentAnimationLock";
 import { decidePresidentAction } from "./presidentEngineAdapter";
 import type { BotAction } from "./bot";
 import { wait } from "./cardGameDriver";
@@ -85,6 +86,7 @@ export function useBotRunner(
   // wasting a full `thinkMs` cycle each time and compounding into multi-
   // second stalls.
   const activeTurnRef = useRef<number | null>(null);
+  const presidentSnapRef = useRef<ReturnType<typeof animSnap> | null>(null);
   const mountedRef = useRef(true);
   const thinkMs = (gv?.settings.botThinkMs as number | undefined) ?? DEFAULT_BOT_THINK_MS;
   const decideCoinche = useBotWorker(gv?.settings.botPunch as BotPunch | undefined, thinkMs);
@@ -135,6 +137,12 @@ export function useBotRunner(
   }, [gameId]);
 
   useEffect(() => {
+    let presidentLockMs = 0;
+    if (gv?.gameType === "president" && gv.view) {
+      const snap = animSnap(gv.view as PresidentPlayerView);
+      if (presidentSnapRef.current) presidentLockMs = presidentAnimationLockMs(presidentSnapRef.current, snap);
+      presidentSnapRef.current = snap;
+    }
     if (!gv || !gv.isHost || !gv.view) return;
     const view = gv.view;
     if (!isActiveTurn(gv.gameType, view.phase)) return;
@@ -156,7 +164,10 @@ export function useBotRunner(
           const [action] = await Promise.all([decideBouillaAction(botView as BouillaPlayerView), wait(thinkMs)]);
           move = toMove(action);
         } else if (gv.gameType === "president") {
-          const [action] = await Promise.all([decidePresidentAction(botView as PresidentPlayerView), wait(thinkMs)]);
+          const [action] = await Promise.all([
+            decidePresidentAction(botView as PresidentPlayerView),
+            wait(Math.max(thinkMs, presidentLockMs)),
+          ]);
           move = toPresidentMove(action);
         } else {
           move = toMove(await decideCoinche(botView as CoinchePlayerView));

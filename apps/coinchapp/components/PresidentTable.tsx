@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { rankValue, type Card, type Combo, type PlayerView, type Seat } from "@/lib/president";
 import { useDelayedVisible } from "@/lib/client/useDelayedVisible";
+import { PRESIDENT_CROWNED_ANIMATION_MS, SKIP_ANIMATION_MS, usePresidentAnimationLock } from "@/lib/client/presidentAnimationLock";
 import { usePresidentOptimisticPlay } from "@/lib/client/usePresidentOptimisticPlay";
 import { burnKey, usePresidentPileDisplay } from "@/lib/client/usePresidentPileDisplay";
 import { usePresidentPileHold } from "@/lib/client/usePresidentPileHold";
@@ -77,6 +78,7 @@ export function PresidentTable({
   const [selected, setSelected] = useState<Card[]>([]);
   const [handSort, setHandSort] = useState<HandSortMode>("rank");
   const { optimisticHand, optimisticPile, busy, play, runExclusive } = usePresidentOptimisticPlay(view);
+  const animationLocked = usePresidentAnimationLock(view);
   const heldPile = usePresidentPileHold(view.pile, view.finishedOrder.length, burnKey(view.lastBurn));
   // My own just-submitted, still-unconfirmed play (`optimisticPile.combo`
   // differs from the real `view.pile.combo` only while it's pending) always
@@ -123,7 +125,7 @@ export function PresidentTable({
   const roundOverlayVisible = useDelayedVisible(!!view.lastRoundResult || view.phase === "finished", 1200);
 
   function tapCard(card: Card) {
-    if (!myTurnToPlay || busy) return;
+    if (!myTurnToPlay || busy || animationLocked) return;
     if (singleCardTurn) {
       play({ rank: card.rank, cards: [card] }, actions.onPlay);
       setSelected([]);
@@ -138,13 +140,13 @@ export function PresidentTable({
   }
 
   function handlePlay() {
-    if (!comboLegal || busy || !selectedRank) return;
+    if (!comboLegal || busy || animationLocked || !selectedRank) return;
     play({ rank: selectedRank, cards: selected }, actions.onPlay);
     setSelected([]);
   }
 
   function handlePass() {
-    if (!view.canPass || busy) return;
+    if (!view.canPass || busy || animationLocked) return;
     runExclusive(actions.onPass);
     setSelected([]);
   }
@@ -154,13 +156,13 @@ export function PresidentTable({
   // instead of making the player tap it every time. Opt-out via settings.
   const mustPass = myTurnToPlay && view.canPass && view.legalCombos.length === 0;
   useEffect(() => {
-    if (!autoPassOn || !mustPass || busy) return;
+    if (!autoPassOn || !mustPass || busy || animationLocked) return;
     const id = window.setTimeout(() => {
       void handlePass();
     }, AUTO_PASS_DELAY_MS);
     return () => window.clearTimeout(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps -- handlePass closes over stable refs (view/busy checked inside)
-  }, [autoPassOn, mustPass, busy]);
+  }, [autoPassOn, mustPass, busy, animationLocked]);
 
   return (
     <TableShell dataId="president-table">
@@ -224,14 +226,14 @@ export function PresidentTable({
           <HandArea
             hand={optimisticHand}
             selected={selected}
-            myTurnToPlay={myTurnToPlay}
+            myTurnToPlay={myTurnToPlay && !animationLocked}
             legalRanks={legalRanks}
             revolution={view.revolution}
             sortMode={handSort}
             onToggleSort={() => setHandSort((mode) => (mode === "suit" ? "rank" : "suit"))}
             canPlay={comboLegal}
             canPass={view.canPass}
-            busy={busy}
+            busy={busy || animationLocked}
             onTap={tapCard}
             onPlay={handlePlay}
             onPass={handlePass}
@@ -265,7 +267,7 @@ function PresidentHud({
   return (
     <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 px-3" data-id="president-header">
       <div className="flex items-start justify-between">
-        <IconLink href="/" label={t("backHome")} dataId="president-back">‹</IconLink>
+        <IconLink href="/president" label={t("back")} dataId="president-back">‹</IconLink>
         <div className="flex flex-col items-center">
           <button
             type="button"
@@ -455,11 +457,6 @@ function skipKey(skip: PlayerView["lastSkip"]): string {
   return skip ? `${skip.seat}:${skip.skippedSeat}:${comboKey(skip.combo)}` : "";
 }
 
-/** Matches `.belote-flash`'s animation duration (`app/globals.css`, shared
- *  with `GameTableScene.tsx`'s Belote/Rebelote banner) - reused here for the
- *  "double" rule's turn-skipped announcement (`GameState.lastSkip`). */
-const SKIP_ANIMATION_MS = 2200;
-
 /** Same "diff the key to detect a *new* event" pattern as
  *  `usePresidentPileDisplay`, adjusting state during render for the key
  *  comparison and an effect only for the flash's own timeout. */
@@ -512,9 +509,6 @@ const CONFETTI_PIECES = Array.from({ length: 14 }, (_, i) => ({
 function presidentCrownedKey(view: PlayerView): string {
   return view.finishedOrder.length > 0 ? `${view.roundIndex}:${view.finishedOrder[0]}` : "";
 }
-
-/** Matches `.president-crown-pop`'s animation duration (`app/globals.css`). */
-const PRESIDENT_CROWNED_ANIMATION_MS = 2400;
 
 /** Same "diff the key to detect a *new* event" pattern as `useSkipFlash` above:
  *  fires once the instant a round's first-to-finish seat is set (`finishedOrder[0]`),

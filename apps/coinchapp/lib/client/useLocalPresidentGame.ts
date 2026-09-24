@@ -15,17 +15,14 @@ import {
 import type { PresidentActions } from "@/components/PresidentTable";
 import type { GameView } from "@/lib/server/view";
 import { useI18n } from "./i18n";
-import { seededRng } from "./cardGameDriver";
+import { seededRng, wait } from "./cardGameDriver";
+import { presidentBotPaceMs } from "./presidentAnimationLock";
 import { decidePresidentAction, presidentEngine } from "./presidentEngineAdapter";
 import { LOCAL_PRESIDENT_STORAGE_KEY } from "./localGamePersistence";
 import { useLocalCardGame } from "./useLocalCardGame";
 
 const BOTS = [false, true, true, true];
 const BOT_NAMES = ["", "Adam", "Jane", "Lea"];
-/** Matches the shared `.trick-collect-card` CSS animation duration
- *  (`app/globals.css`), reused for the pile-burn sweep in `PresidentTable.tsx`
- *  - also doubles as a plain pacing beat once a seat empties its hand. */
-const COLLECT_DELAY_MS = 1500;
 
 function startState(seed: number, roundsToPlay: number): GameState {
   return beginNextRound(createInitialState(roundsToPlay), seededRng(seed));
@@ -48,26 +45,22 @@ export function useLocalPresidentGame(
     decide: decidePresidentAction,
     isBot: (seat) => BOTS[seat],
     thinkingMs: botThinkMs,
-    collectDelayMs: COLLECT_DELAY_MS,
+    collectDelayMs: 0,
+    postMoveDelayMs: (prev, next) => presidentBotPaceMs(prev, next, botThinkMs),
   });
 
+  async function commitAndPace(next: GameState) {
+    const prev = stateRef.current;
+    commit(next);
+    await wait(presidentBotPaceMs(prev, next, botThinkMs));
+    await runBots();
+  }
+
   const actions: PresidentActions = {
-    onPlay: async (combo: Combo) => {
-      commit(submitPlay(stateRef.current, 0, combo));
-      await runBots();
-    },
-    onPass: async () => {
-      commit(submitPass(stateRef.current, 0));
-      await runBots();
-    },
-    onExchangeReturn: async (cards: Card[]) => {
-      commit(submitExchangeReturn(stateRef.current, 0, cards));
-      await runBots();
-    },
-    onNextRound: async () => {
-      commit(startNextRound(stateRef.current));
-      await runBots();
-    },
+    onPlay: (combo: Combo) => commitAndPace(submitPlay(stateRef.current, 0, combo)),
+    onPass: () => commitAndPace(submitPass(stateRef.current, 0)),
+    onExchangeReturn: (cards: Card[]) => commitAndPace(submitExchangeReturn(stateRef.current, 0, cards)),
+    onNextRound: () => commitAndPace(startNextRound(stateRef.current)),
   };
 
   const gv: GameView = {

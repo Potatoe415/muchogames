@@ -16,17 +16,13 @@ import {
 } from "@/lib/president";
 import type { PresidentActions } from "@/components/PresidentTable";
 import type { GameView } from "@/lib/server/view";
-import { attachGate, seededRng, wait } from "./p2p/hostEngine";
+import { attachGate, seededRng } from "./p2p/hostEngine";
 import type { P2PConnection } from "./p2p/connection";
 import { buildPresidentSeatView, parseClientMessage, type ClientMessage, type RosterEntry } from "./p2p/protocol";
-import { runBotLoop } from "./cardGameDriver";
+import { runBotLoop, wait } from "./cardGameDriver";
+import { presidentBotPaceMs } from "./presidentAnimationLock";
 import { decidePresidentAction, presidentEngine } from "./presidentEngineAdapter";
 import { DEFAULT_BOT_THINK_MS, DEFAULT_PRESIDENT_ROUNDS_TO_PLAY } from "@/lib/supabase/types";
-
-/** Matches the shared `.trick-collect-card` CSS animation duration
- *  (`app/globals.css`) and `presidentEngineAdapter.ts`'s `didCollectTrick`
- *  pause (hand-emptied or pile-burned). */
-const COLLECT_DELAY_MS = 1500;
 
 export interface P2PPresidentHostConfig {
   mySeat: Seat;
@@ -112,7 +108,8 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
         decide: decidePresidentAction,
         commit,
         thinkingMs: botThinkMs,
-        collectDelayMs: COLLECT_DELAY_MS,
+        collectDelayMs: 0,
+        postMoveDelayMs: (prev, next) => presidentBotPaceMs(prev, next, botThinkMs),
       });
     } finally {
       busyRef.current = false;
@@ -132,10 +129,10 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
         return;
       }
       commit(next);
-      if (presidentEngine.didCollectTrick(prev, next)) await wait(COLLECT_DELAY_MS);
+      await wait(presidentBotPaceMs(prev, next, botThinkMs));
       await runBots();
     },
-    [commit, runBots],
+    [commit, runBots, botThinkMs],
   );
 
   // Actually start the next round, whether every human agreed or the auto-advance cap below fired.
@@ -224,26 +221,27 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
     () => ({
       onPlay: async (combo: Combo) => {
         const prev = stateRef.current;
-        const next = submitPlay(prev, mySeat, combo);
-        commit(next);
-        if (presidentEngine.didCollectTrick(prev, next)) await wait(COLLECT_DELAY_MS);
+        commit(submitPlay(prev, mySeat, combo));
+        await wait(presidentBotPaceMs(prev, stateRef.current, botThinkMs));
         await runBots();
       },
       onPass: async () => {
-        const next = submitPass(stateRef.current, mySeat);
-        commit(next);
+        const prev = stateRef.current;
+        commit(submitPass(prev, mySeat));
+        await wait(presidentBotPaceMs(prev, stateRef.current, botThinkMs));
         await runBots();
       },
       onExchangeReturn: async (cards: Card[]) => {
-        const next = submitExchangeReturn(stateRef.current, mySeat, cards);
-        commit(next);
+        const prev = stateRef.current;
+        commit(submitExchangeReturn(prev, mySeat, cards));
+        await wait(presidentBotPaceMs(prev, stateRef.current, botThinkMs));
         await runBots();
       },
       onNextRound: () => {
         markReady(mySeat);
       },
     }),
-    [commit, runBots, markReady, mySeat],
+    [commit, runBots, markReady, mySeat, botThinkMs],
   );
 
   const gv = attachGate(buildPresidentSeatView(state, mySeat, roster, {}, mySeat), state, mySeat, roster, ready);

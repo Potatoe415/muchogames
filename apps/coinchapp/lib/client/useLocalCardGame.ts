@@ -15,6 +15,8 @@ export interface UseLocalCardGameConfig<TState, TView, TAction> {
   /** Must match the CSS trick-collect animation duration. Defaults to 1500ms
    *  (Coinche/Bouilla's own tricks); Président passes its own, shorter value. */
   collectDelayMs?: number;
+  /** See `BotLoopParams.postMoveDelayMs`. */
+  postMoveDelayMs?: (prev: TState, next: TState) => number;
 }
 
 export interface UseLocalCardGameResult<TState> {
@@ -36,7 +38,7 @@ export interface UseLocalCardGameResult<TState> {
 export function useLocalCardGame<TState extends { phase: string }, TView, TAction>(
   config: UseLocalCardGameConfig<TState, TView, TAction>,
 ): UseLocalCardGameResult<TState> {
-  const { initialState, storageKey, engine, decide, isBot, thinkingMs, collectDelayMs = 1500 } = config;
+  const { initialState, storageKey, engine, decide, isBot, thinkingMs, collectDelayMs = 1500, postMoveDelayMs } = config;
   const [state, setState] = useState<TState>(initialState);
   const stateRef = useRef(state);
   const busyRef = useRef(false);
@@ -54,11 +56,20 @@ export function useLocalCardGame<TState extends { phase: string }, TView, TActio
     if (busyRef.current) return;
     busyRef.current = true;
     try {
-      await runBotLoop({ engine, getState: () => stateRef.current, isBot, decide, commit, thinkingMs, collectDelayMs });
+      await runBotLoop({
+        engine,
+        getState: () => stateRef.current,
+        isBot,
+        decide,
+        commit,
+        thinkingMs,
+        collectDelayMs,
+        postMoveDelayMs,
+      });
     } finally {
       busyRef.current = false;
     }
-  }, [engine, isBot, decide, commit, thinkingMs, collectDelayMs]);
+  }, [engine, isBot, decide, commit, thinkingMs, collectDelayMs, postMoveDelayMs]);
 
   /** On mount, resume any saved in-progress match (reload/relaunch-proof
    *  offline play) before triggering bots' initial turns. Runs once: `storageKey`
