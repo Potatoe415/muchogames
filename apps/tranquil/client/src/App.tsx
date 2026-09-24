@@ -11,6 +11,7 @@ import {
 } from '@tranquillity/shared';
 import { useOnlineGame } from './lib/useOnlineGame';
 import { readHubAvatar, readHubName } from './lib/hubAvatar';
+import { captureProfileCode } from './lib/profileSync';
 import Lobby from './components/Lobby';
 import GameBoard from './components/GameBoard';
 import PassAndPlayTransition from './components/PassAndPlayTransition';
@@ -55,6 +56,10 @@ export default function App() {
     () => readHubName() || undefined
   );
   const [hubAvatar] = useState(() => readHubAvatar());
+
+  useEffect(() => {
+    captureProfileCode();
+  }, []);
   const {
     online,
     createRoom,
@@ -326,6 +331,7 @@ function writeRoomUrl(roomCode: string | null) {
   const url = new URL(window.location.href);
   url.searchParams.delete('name');
   url.searchParams.delete('avatar');
+  url.searchParams.delete('profileCode');
   if (roomCode) {
     url.searchParams.set('room', roomCode);
   } else {

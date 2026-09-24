@@ -35,6 +35,17 @@ export function getMatchResultStats(): MatchResultStats {
   return readStats();
 }
 
+/** How many local results are not yet on the shared hub profile. */
+export function pendingSharedDelta(
+  local: MatchResultStats,
+  synced: MatchResultStats,
+): MatchResultStats {
+  return {
+    wins: Math.max(0, local.wins - synced.wins),
+    losses: Math.max(0, local.losses - synced.losses),
+  };
+}
+
 /** Increments the combined counter. Guarded by a `sessionStorage` flag keyed
  *  by `matchId` so re-rendering (or refreshing) the finished screen never
  *  double-counts the same match. */
@@ -66,5 +77,6 @@ export function useRecordMatchResult(
   useEffect(() => {
     if (!finished || !matchId) return;
     recordMatchResult(matchId, won);
+    void import("./profileSync").then((mod) => mod.flushSharedMatchResults());
   }, [finished, matchId, won]);
 }

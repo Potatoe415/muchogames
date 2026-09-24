@@ -10,7 +10,7 @@ Status: Living document. Always reflects current state.
 - [ ] Push to GitHub and deploy on Vercel with the 4 env vars; verify a full game in prod. (Already deployed per `STATE.md` — re-verify only if this item looks stale.)
 - [ ] Ask the user to try the new duel mode (la Bataille Corse, face-to-face) on a real phone (2 people, one on each side) — confirm the rotated corner is comfortable to read and the top/bottom slap zones feel natural.
 - [ ] Ask the user to confirm the `docs/PRODUCT.md` Out_Of_Scope wording edit before touching it (see `STATE.md` Focus).
-- [ ] Ask the user to sanity-check the wins/losses stat live: play a full match to completion in each of the 4 games, confirm the counter increments in `HomeTopBar`'s settings panel on `/`, `/coinche`, `/bouilla`, `/president`, `/bataillecorse`.
+- [ ] Ask the user to sanity-check wins/losses: each of the 4 games still increments `HomeTopBar`, and a hub launch with `?profileCode=` also increments the hub `/profile` (needs `0003_profiles.sql` applied).
 - [ ] Fix the unrelated pre-existing `lib/client/useMatchStats.ts:220` `react-hooks/set-state-in-effect` lint error (flagged, not fixed — out of scope) if a future pass touches that file.
 - [ ] Real-device test (2 phones, actual network) of la Bataille Corse online + ad-hoc: confirm the pile-fly sweep reaches each deck at the slower pace, both reaction readouts sit correctly for 5s, the winner's deck fire glow reads well, and the tribute banner is clear.
 - [ ] Real-device test of Président (solo, online, ad-hoc): closing a square should play-enter the last combo then fly the pile toward that seat; winning the pile by passes should fly the cards toward the leader — not vanish.

@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initOptionsPanel();
   initLangSwitcher();
   applyProfileCopy();
+  await window.MuchogamesProfileResults?.migrateLocalResultsOnce?.();
   await loadSyncedProfile();
   initNameForm();
   initAvatarUpload();

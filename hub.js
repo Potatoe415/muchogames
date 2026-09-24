@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initAuthWidget();
   initializeDashboard();
   setupHubShareButton();
+  window.MuchogamesProfileResults?.migrateLocalResultsOnce();
 });
 
 function setupHubShareButton() {
@@ -308,7 +309,16 @@ function createTileNode(game) {
   anchor.href = determineTargetUrl(game);
   anchor.className = "game-tile";
   anchor.dataset.id = `hub-tile-${game.id}`;
-  anchor.addEventListener("click", () => trackGameLaunch(game.id));
+  anchor.addEventListener("click", (event) => {
+    trackGameLaunch(game.id);
+    const bridge = window.MuchogamesProfileResults;
+    if (!bridge?.isProfileAppLaunch(anchor.href) || !bridge.readLiveIdToken())
+      return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
+      return;
+    event.preventDefault();
+    bridge.openWithProfileCode(anchor.href, anchor.target === "_blank");
+  });
 
   if (isExternalLaunch(game.launch) && !game.sameTab) {
     anchor.target = "_blank";

@@ -87,3 +87,8 @@ create index if not exists muchogames_launch_codes_expires_at_idx
 
 alter table public.muchogames_launch_codes enable row level security;
 -- No policies: service-role only.
+
+revoke all on function public.increment_muchogames_profile_stats(uuid, integer, integer)
+  from public, anon, authenticated;
+grant execute on function public.increment_muchogames_profile_stats(uuid, integer, integer)
+  to service_role;

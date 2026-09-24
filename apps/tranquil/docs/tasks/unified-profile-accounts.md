@@ -29,4 +29,4 @@ Security_Checklist:
 - [ ] Authorization covered by a test? No automated tests exist for this flow yet — verify manually, note results here.
 Related_Decisions: (none yet — logged once Done)
 Notes:
-- Depends on the root task's steps 1, 2, 6 landing first, and mirrors `coinchapp`'s equivalent task — keep the adoption mechanism consistent between the two.
+- 2026-09-24: launch-code claim + shared increment are wired (`api/profile-link.ts`, `client/src/lib/profileSync.ts`). Live check still needs `0003_profiles.sql` applied on `multigames-db`.

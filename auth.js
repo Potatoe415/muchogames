@@ -267,6 +267,7 @@ function handleCredentialResponse(response) {
   persistIdToken(response.credential);
   fillNameIfEmpty(payload.name);
   syncProfileName(response.credential);
+  window.MuchogamesProfileResults?.migrateLocalResultsOnce();
   // Do not write bergamots-lang here. Google locale must not override the
   // language the player already chose on the hub or the profile settings.
   closePopover();

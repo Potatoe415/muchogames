@@ -307,6 +307,7 @@ render();
 restoreOnlineSession();
 handleDeepLinkJoin();
 registerOfflineSupport();
+window.MuchogamesProfileResults?.migrateLocalResultsOnce();
 void refreshSettingsRules();
 
 // Dynamic import (not a static one): every other file here is a classic
@@ -1534,7 +1535,9 @@ function recordGameResultIfNeeded(targetState) {
 
   const totals = [calculateGrandTotal(targetState.scores[0]), calculateGrandTotal(targetState.scores[1])];
   if (totals[0] === totals[1]) return;
-  window.PlayerProfile.recordGameResult(totals[localIndex] > totals[localIndex === 0 ? 1 : 0]);
+  const won = totals[localIndex] > totals[localIndex === 0 ? 1 : 0];
+  window.PlayerProfile.recordGameResult(won);
+  window.MuchogamesProfileResults?.recordSharedResult(won);
 }
 
 function applyWinnerFromScores(targetState) {

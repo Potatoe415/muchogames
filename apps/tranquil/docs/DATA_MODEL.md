@@ -118,3 +118,9 @@ Impact: No database selected. No schema defined.
 Change: Documented `games`/`game_players`/`game_events` reuse (via `game_type='tranquillity'`) in place of the "no database" state. No migration file added to this repo — the schema lives in `coinchapp/supabase/migrations/0001_init.sql`.
 Reason: Migrated off Railway/Socket.IO to Supabase (see `docs/DECISIONS.md`), reusing the same Supabase project as coinchapp.
 Impact: Online rooms now persist in Postgres instead of an in-memory `Map`. Local and vs-bot modes are unaffected (still fully client-side, no persistence).
+
+## 2026-09-24 — Shared hub profile wins and losses
+
+Change: No change to `games` / `game_players` / `game_events`. `POST /api/profile-link` consumes `muchogames_launch_codes` (same Supabase project) and increments `muchogames_profiles` when a hub `?profileCode=` was resolved this session. The local `tranquil-match-results` counter is unchanged.
+Reason: The hub `/profile` page cannot read this app's `localStorage`.
+Impact: A visit with no launch code does not write the shared row.

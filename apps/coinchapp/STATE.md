@@ -2,20 +2,20 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Président slide-in of your own play comes from your seat. The optimistic pile was keeping the previous leader, so the card often glided in from the left. Splash stamp `v0.5`.
-Focus: Get explicit user confirmation to (a) delete the superseded `docs/TECH.md`, `docs/DECISIONS.md`, `CLAUDE.md`, `.cursor/rules/000-router.mdc`, and (b) update `docs/PRODUCT.md` Out_Of_Scope wording now that a wins/losses stat exists.
-Level: L1
+Status: Finished matches in all 4 games can increment the hub profile when the player arrived with a hub `?profileCode=`.
+Focus: Live-check that a signed-in hub launch records a win or loss on `/profile`. Needs `supabase/migrations/0003_profiles.sql` applied.
+Level: L2
 
 Context:
-- Working_On: `lib/client/usePresidentOptimisticPlay.ts`
-- Relevant_Files: `lib/client/usePresidentPileDisplay.ts`, `components/PresidentTable.tsx`
+- Working_On: `lib/server/profileLink.ts`, `lib/client/profileSync.ts`, `lib/client/matchResultStats.ts`
+- Relevant_Files: `docs/tasks/unified-profile-accounts.md`, root `api/profile/launch-code.js`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: none (display direction only)
+- Relevant_Decisions: 0055 (local combined win/loss counter)
 
 Next:
-- Ask the user to confirm deletion of the 4 superseded router/flat-doc files (see Focus).
-- Ask the user to confirm the `docs/PRODUCT.md` Out_Of_Scope wording edit (see Focus).
-- Sanity-check Président: playing onto someone else's pile slides in from your own seat.
+- User applies `0003_profiles.sql` if it is not on `multigames-db` yet, and enables Google Auth there.
+- Play one finished match launched from the hub and confirm `/profile` moves.
+- Confirm `docs/PRODUCT.md` / `docs/ARCHITECTURE.md` / `docs/SECURITY.md` wording before editing them.
 
 Open_Questions:
 - La Bataille Corse's slap resolution trusts each client's self-reported `reactionMs` — accepted trade-off, no fix planned.
@@ -26,9 +26,9 @@ Open_Questions:
 - Duel mode never records match stats (no single "you" to attribute a win/loss to) — accepted trade-off.
 
 Blockers:
-- None.
+- Shared profile writes fail until `0003_profiles.sql` is applied and Google is an Auth provider.
 
 Recent_Changes:
-- 2026-09-24 Président: your own play slides in from your seat, not from the previous leader.
-- 2026-09-24 Président: the pile winner leads next if they still can; a skipped seat no longer takes that lead.
-- 2026-09-24 Président: next play waits until the current animation fully ends. Splash stamp `v0.5`.
+- 2026-09-24 Wins/losses from all 4 games also increment `muchogames_profiles` after a hub launch code.
+- 2026-09-24 Président: a losing-2 finish shows a peach; bots spend twos before their last other card and pass rather than finish on them.
+- 2026-09-24 Président: your own play slides in from your seat. Splash stamp `v0.6`.

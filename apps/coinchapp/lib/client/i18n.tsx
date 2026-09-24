@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { captureHubName } from "@/lib/client/hubName";
+import { captureProfileCode } from "@/lib/client/profileSync";
 
 export type Locale = "fr" | "en";
 
@@ -205,6 +206,7 @@ const TRANSLATIONS = {
     sortHandBySuit: "Trier par couleur",
     turnSkippedBanner: "Tour sauté : {player} !",
     presidentCrownedBanner: "{player} est Président !",
+    losingTwoFinish: "Trou du cul",
     combo1: "seule", combo2: "paire", combo3: "brelan", combo4: "carré",
     slapPileButton: "Taper",
     tributePlay: "Jouez {attempts} carte",
@@ -413,6 +415,7 @@ const TRANSLATIONS = {
     sortHandBySuit: "Sort by suit",
     turnSkippedBanner: "Turn skipped: {player}!",
     presidentCrownedBanner: "{player} is President!",
+    losingTwoFinish: "Asshole",
     combo1: "single", combo2: "pair", combo3: "triple", combo4: "quad",
     slapPileButton: "Slap",
     tributePlay: "Play {attempts} card",
@@ -441,6 +444,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     captureHubName();
+    captureProfileCode();
     // A hub tile's ?lang= always wins over what this app remembers on its own,
     // so relaunching from the game launcher picks up its currently selected language.
     const fromHub = new URLSearchParams(window.location.search).get("lang");

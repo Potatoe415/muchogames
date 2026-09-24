@@ -18,7 +18,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Decide on the GitHub branch-protection rule on `main` (currently bypassed on every push): adopt PRs or remove the rule.
 - [ ] Make `api/admin/login.js`'s "admin not configured" case diagnosable without leaking info (currently redacted as a generic 5xx).
 - [ ] Confirm `muchogames.win` still shows "Valid Configuration" in Vercel; add `muchogames.vercel.app` to Google Cloud Console's Authorized JavaScript origins.
-- [ ] Sanity-check the wins/losses counters live: Yatzy (vs robot + online), all 4 `coinchapp` games (`HomeTopBar`'s settings panel), Tranquil (`SettingsPanel`).
+- [ ] Sanity-check wins/losses on the hub `/profile` after a signed-in launch: Yatzy (vs robot + online), one finished match in each coinchapp game, and Tranquil. Requires `supabase/migrations/0003_profiles.sql` applied and Google Auth enabled on `multigames-db`. Anonymous local counters stay as they are.
 - [ ] Confirm today's Yatzy fixes (overlap, square cells, dice-icon sizing, header/settings panel) on a real device once deployed (hard-refresh/reopen so `yatzy-offline-v39` takes over).
 - [ ] Verify Yatzy "Mode defaite" end-to-end with two real Supabase-backed online clients (only forced-local-state verified so far).
 - [ ] Confirm Yatzy Play Online: small avatar beside the name field and beside the local name on the score chip; solo/robot have neither.

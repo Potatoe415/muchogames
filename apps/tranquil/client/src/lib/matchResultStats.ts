@@ -30,6 +30,14 @@ export function getMatchResultStats(): MatchResultStats {
   return readStats();
 }
 
+/** How many local results are not yet on the shared hub profile. */
+export function pendingSharedDelta(local: MatchResultStats, synced: MatchResultStats): MatchResultStats {
+  return {
+    wins: Math.max(0, local.wins - synced.wins),
+    losses: Math.max(0, local.losses - synced.losses),
+  };
+}
+
 /** Call once per finished match (e.g. from `GameOver`'s mount-only effect). */
 export function recordMatchResult(won: boolean): void {
   const stats = readStats();
@@ -40,4 +48,5 @@ export function recordMatchResult(won: boolean): void {
   } catch {
     // Storage unavailable or quota exceeded - stat just won't persist.
   }
+  void import('./profileSync').then((mod) => mod.flushSharedMatchResults());
 }

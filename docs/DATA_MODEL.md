@@ -6,7 +6,7 @@ Status: Living document. Update whenever persisted data structure changes.
 
 ## Source of Truth
 
-Technical_Source: Static JSON files in the repo (`public/hub-config.json`, `public/data/<gameId>/*.json`) + Supabase Postgres for Yatzy room state (`supabase/migrations/0001_yatzy.sql`, tables `yatzy_games`/`yatzy_game_events`) and hub launch counts (`supabase/migrations/0002_events.sql`, table `muchogames_events`).
+Technical_Source: Static JSON files in the repo (`public/hub-config.json`, `public/data/<gameId>/*.json`) + Supabase Postgres for Yatzy room state (`supabase/migrations/0001_yatzy.sql`, tables `yatzy_games`/`yatzy_game_events`), hub launch counts (`supabase/migrations/0002_events.sql`, table `muchogames_events`), and the shared signed-in profile (`supabase/migrations/0003_profiles.sql`, tables `muchogames_profiles` / `muchogames_launch_codes`).
 
 Rule:
 - If technical schema files exist, they are the executable source of truth.
@@ -167,6 +167,20 @@ Rules: All static JSON is public and read-only. Yatzy room reads/writes go exclu
 
 ---
 
+### Entity: SharedProfile
+
+Purpose: One name, avatar, and combined win/loss total for a Google-signed-in player, shared by the hub, Yatzy, coinchapp, and Tranquil.
+Storage: `public.muchogames_profiles` (`supabase/migrations/0003_profiles.sql`). `id` is the Supabase Auth user id from the Google sign-in. Wins and losses increment through `increment_muchogames_profile_stats` (service-role only).
+Sensitive_Data: The Google account is verified server-side. The row stores the chosen display name and avatar, not the email.
+
+### Entity: ProfileLaunchCode
+
+Purpose: One-time hand-off so coinchapp and Tranquil can attribute a result to that profile without putting a Google token in the launch URL.
+Storage: `public.muchogames_launch_codes`. Minted by `POST /api/profile/launch-code` (60s, single use). The receiving app marks `used_at` and keeps the resolved profile id in an httpOnly cookie for the browser session.
+Sensitive_Data: The code itself is a secret capability until it is used. It is not a Google token.
+
+---
+
 ## Migration Notes
 
 ## 2026-08-15 — Bootstrap migration
@@ -204,3 +218,9 @@ Impact: `ADMIN_PASSWORD` doubles as the token signing key, so rotating it invali
 Change: No schema change. `POST /api/admin/stats` now takes a `range` of `7d`, `30d` or `6m`, filters on `created_at`, and returns a zero-filled per-day series alongside the ranking. `totalLaunches` counts the selected window rather than all history.
 Reason: The admin page gained a period selector and a daily trend chart, modelled on the `nodali` project's analytics page. See `docs/DECISIONS.md` 2026-08-30.
 Impact: `created_at` went from being written and never read to carrying the whole feature, which is what `muchogames_events_created_at_idx` was already there for. The `MAX_ROWS` cap of 10 000 now bounds a range window instead of all history, so it is safer than before. Days are bucketed in UTC, so for a UTC+1/+2 audience a launch after local midnight is attributed to the previous day. Nothing visitor-shaped was added: still no IP, user agent, session id, device or country, so `Sensitive_Data: None` still holds for this entity.
+
+## 2026-09-24 - Shared profile wins and losses
+
+Change: `muchogames_profiles.wins` / `losses` (and the one-time `muchogames_launch_codes` hand-off) are now written from Yatzy, coinchapp (all four games), and Tranquil, and read on `/profile` when a live Google sign-in exists.
+Reason: Each app already counted results in its own `localStorage`. Those totals never reached the hub profile.
+Impact: Anonymous play is unchanged. A signed-in player who launches Coinche, Bouilla, Président, la Bataille Corse, or Tranquil from the hub gets `?profileCode=` for that navigation; finishing a match increments the shared row. Existing local counters are folded in once per browser.
