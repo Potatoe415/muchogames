@@ -16,6 +16,9 @@ Run `check` before declaring any task done. Never claim something was verified i
 | Test one module | No automated tests exist (see `docs/DEBUGGING.md`) |
 | Check (lint + format-check + build) | `npm run check` |
 | Build/lint across root + `apps/coinchapp` (Turborepo) | `npm run build:all` / `npm run lint:all` |
+| Commit and push | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<why>"` from the git root |
+
+When the user asks to commit and/or push, that script is the only step. Do not run `git add`, `git commit`, or `git push` yourself. It stages the current changes, leaves `apps/coinchapp/run.bat` and `.env` files unstaged, commits, and pushes.
 
 `apps/coinchapp` and `apps/tranquil` each have their own commands — see their own `AGENTS.md`/`docs/RUNBOOK.md`. Never run this repo's root commands expecting them to cover `apps/**`.
 

@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Ship
 
-When the user asks to commit and/or push, run this from the git root and stop. Do not inspect status, diff, or log first.
+When the user asks to commit and/or push, run only this from the git root and stop. Do not run `git add`, `git commit`, or `git push` yourself. Do not inspect status, diff, or log first.
 
 `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<conventional message>"`
 

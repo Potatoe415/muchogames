@@ -17,6 +17,9 @@ Run `check` before declaring any task done. Never claim something was verified i
 | Dev | `npm run dev` |
 | Test one module | `npm test -- <path-to-test-file>` (Vitest) |
 | Check | No single combined command exists yet — run `npm test && npx tsc --noEmit && npm run lint && npm run build` (see `docs/BACKLOG.md`) |
+| Commit and push | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<why>"` from the git root (`scripts/ship.ps1`) |
+
+When the user asks to commit and/or push, that script is the only step. Do not run `git add`, `git commit`, or `git push` yourself. It stages the current changes, leaves `run.bat` and `.env` files unstaged, commits, and pushes.
 
 ## Context loading
 
