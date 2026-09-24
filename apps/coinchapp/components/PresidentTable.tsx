@@ -798,26 +798,24 @@ function HandArea({
           <HandSortButton mode={sortMode} onToggle={onToggleSort} />
         </div>
       </div>
-      {myTurnToPlay && (
-        <div className="mt-2 flex justify-center gap-3" data-id="president-action-buttons">
-          <button
-            data-id="president-pass-button"
-            disabled={!canPass || busy}
-            onClick={onPass}
-            className="rounded-lg bg-[var(--card-face)]/14 px-6 py-2.5 font-bold text-[var(--card-face)] disabled:opacity-40"
-          >
-            {t("pass")}
-          </button>
-          <button
-            data-id="president-play-button"
-            disabled={!canPlay || busy}
-            onClick={onPlay}
-            className="rounded-lg bg-[var(--accent-cyan)] px-6 py-2.5 font-bold text-[var(--surface)] disabled:opacity-40"
-          >
-            {t("playButton")}
-          </button>
-        </div>
-      )}
+      <div className="mt-2 flex justify-center gap-3" data-id="president-action-buttons">
+        <button
+          data-id="president-pass-button"
+          disabled={!myTurnToPlay || !canPass || busy}
+          onClick={onPass}
+          className="rounded-lg bg-[var(--card-face)]/14 px-6 py-2.5 font-bold text-[var(--card-face)] disabled:opacity-40"
+        >
+          {t("pass")}
+        </button>
+        <button
+          data-id="president-play-button"
+          disabled={!myTurnToPlay || !canPlay || busy}
+          onClick={onPlay}
+          className="rounded-lg bg-[var(--accent-cyan)] px-6 py-2.5 font-bold text-[var(--surface)] disabled:opacity-40"
+        >
+          {t("playButton")}
+        </button>
+      </div>
     </section>
   );
 }
