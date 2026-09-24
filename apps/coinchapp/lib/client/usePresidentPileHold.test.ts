@@ -117,3 +117,16 @@ describe("endPileHold", () => {
     expect(ended.holdToken).toBe(1); // unchanged, not bumped
   });
 });
+
+describe("advancePileHold burn abort", () => {
+  it("drops a hold the instant a new lastBurn arrives so the collect can run", () => {
+    let state = initPileHoldState(pile(null), 0);
+    state = advancePileHold(state, pile(quad), 0); // holding the quad
+    const empty = pile(null);
+    const next = advancePileHold(state, empty, 0, "2:2H");
+    expect(next.holding).toBe(false);
+    expect(next.queued).toBeNull();
+    expect(next.display).toEqual(empty);
+    expect(next.seenBurnKey).toBe("2:2H");
+  });
+});

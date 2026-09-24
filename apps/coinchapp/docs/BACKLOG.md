@@ -13,6 +13,7 @@ Status: Living document. Always reflects current state.
 - [ ] Ask the user to sanity-check the wins/losses stat live: play a full match to completion in each of the 4 games, confirm the counter increments in `HomeTopBar`'s settings panel on `/`, `/coinche`, `/bouilla`, `/president`, `/bataillecorse`.
 - [ ] Fix the unrelated pre-existing `lib/client/useMatchStats.ts:220` `react-hooks/set-state-in-effect` lint error (flagged, not fixed — out of scope) if a future pass touches that file.
 - [ ] Real-device test (2 phones, actual network) of la Bataille Corse online + ad-hoc: confirm the pile-fly sweep reaches each deck at the slower pace, both reaction readouts sit correctly for 5s, the winner's deck fire glow reads well, and the tribute banner is clear.
+- [ ] Real-device test of Président (solo, online, ad-hoc): closing a square should play-enter the last combo then fly the pile toward that seat; winning the pile by passes should fly the cards toward the leader — not vanish.
 - [ ] Real 2-device test of Président online — confirm the instant combo-play feedback feels right with real network latency, now that online bots actually work.
 
 ## Next

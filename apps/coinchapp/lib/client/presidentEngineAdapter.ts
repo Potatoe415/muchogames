@@ -39,9 +39,13 @@ export const presidentEngine: BotLoopEngine<GameState, PlayerView, PresidentBotA
   redact: (state, seat) => redact(state, seat as Seat),
   applyBotAction: (state, seat, action) => applyPresidentBotAction(state, seat as Seat, action),
   // No "trick" concept: pause instead once a seat empties its hand, once a
-  // "2" burns the pile, or once the "double" rule skips a seat (see
+  // "2"/completed-square burns the pile, once everyone else has passed and
+  // the leader collects, or once the "double" rule skips a seat (see
   // lib/president/play.ts), so the player has a moment to notice - and see
-  // the burn/skip animation - before bots keep racing.
+  // the collect/skip animation - before bots keep racing.
   didCollectTrick: (prev, next) =>
-    next.finishedOrder.length > prev.finishedOrder.length || next.lastBurn !== prev.lastBurn || next.lastSkip !== prev.lastSkip,
+    next.finishedOrder.length > prev.finishedOrder.length ||
+    next.lastBurn !== prev.lastBurn ||
+    next.lastSkip !== prev.lastSkip ||
+    (prev.pile.combo !== null && next.pile.combo === null),
 };

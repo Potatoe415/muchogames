@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { rankValue, type Card, type Combo, type PlayerView, type Seat } from "@/lib/president";
 import { useDelayedVisible } from "@/lib/client/useDelayedVisible";
 import { usePresidentOptimisticPlay } from "@/lib/client/usePresidentOptimisticPlay";
+import { burnKey, usePresidentPileDisplay } from "@/lib/client/usePresidentPileDisplay";
 import { usePresidentPileHold } from "@/lib/client/usePresidentPileHold";
 import { CssVarProbe, useCssVarPx } from "@/lib/client/useCssVarPx";
 import { formatText, useI18n } from "@/lib/client/i18n";
@@ -76,7 +77,7 @@ export function PresidentTable({
   const [selected, setSelected] = useState<Card[]>([]);
   const [handSort, setHandSort] = useState<HandSortMode>("rank");
   const { optimisticHand, optimisticPile, busy, play, runExclusive } = usePresidentOptimisticPlay(view);
-  const heldPile = usePresidentPileHold(view.pile, view.finishedOrder.length);
+  const heldPile = usePresidentPileHold(view.pile, view.finishedOrder.length, burnKey(view.lastBurn));
   // My own just-submitted, still-unconfirmed play (`optimisticPile.combo`
   // differs from the real `view.pile.combo` only while it's pending) always
   // renders instantly, bypassing the hold entirely - see `usePresidentPileHold`.
@@ -440,64 +441,6 @@ function comboKey(combo: Combo | null): string {
   return combo ? combo.cards.map(cardKey).join(",") : "";
 }
 
-type BurnEvent = PlayerView["lastBurn"];
-
-function burnKey(burn: BurnEvent): string {
-  return burn ? `${burn.seat}:${comboKey(burn.combo)}` : "";
-}
-
-/** Matches the shared `.trick-collect-card` CSS animation duration
- *  (`app/globals.css`) reused below for the burn sweep. */
-const BURN_ANIMATION_MS = 1500;
-
-/** Keeps the last 2 combos this pile cycle so `PileArea` can show them fading
- *  behind the current one - purely a display trail, cleared once the pile
- *  itself clears. When the pile clears *because a "2" burned it*
- *  (`view.lastBurn`, see `lib/president/play.ts`), the whole trail plus the
- *  burning combo stays on screen for `BURN_ANIMATION_MS` so `PileArea` can
- *  play the "collect" sweep instead of the pile just vanishing. Adjusts state
- *  during render for the prop-driven parts (React's documented "reset state
- *  on prop change" pattern), an effect only for the animation's own timeout. */
-function usePileDisplay(pile: PlayerView["pile"], lastBurn: BurnEvent): { stack: Combo[]; burning: boolean } {
-  const [history, setHistory] = useState<Combo[]>([]);
-  const [burning, setBurning] = useState(false);
-  const [track, setTrack] = useState<{ combo: Combo | null; comboKey: string; burnKey: string }>({
-    combo: null,
-    comboKey: "",
-    burnKey: "",
-  });
-
-  const combo = pile.combo;
-  const nextComboKey = comboKey(combo);
-  const nextBurnKey = burnKey(lastBurn);
-
-  if (nextComboKey !== track.comboKey || nextBurnKey !== track.burnKey) {
-    if (combo !== null) {
-      const previous = track.combo;
-      setHistory((h) => (previous ? [...h, previous].slice(-2) : []));
-      setBurning(false);
-    } else if (nextBurnKey && nextBurnKey !== track.burnKey) {
-      const previous = track.combo;
-      const burningCombo = lastBurn!.combo;
-      setHistory((h) => (previous ? [...h, previous, burningCombo] : [...h, burningCombo]).slice(-3));
-      setBurning(true);
-    } else {
-      setHistory([]);
-      setBurning(false);
-    }
-    setTrack({ combo, comboKey: nextComboKey, burnKey: nextBurnKey });
-  }
-
-  useEffect(() => {
-    if (!burning) return;
-    const id = window.setTimeout(() => setBurning(false), BURN_ANIMATION_MS);
-    return () => window.clearTimeout(id);
-  }, [burning]);
-
-  const stack = combo !== null ? [...history, combo] : burning ? history : [];
-  return { stack, burning };
-}
-
 /** Fixed left/right/tilt offsets for older plays sitting behind the current pile card
  *  (`PileArea`'s `historyOffset`) - alternates sides and rotation so the discard heap
  *  looks scattered rather than a neat diagonal stack. Cycled by depth, not randomized,
@@ -517,9 +460,9 @@ function skipKey(skip: PlayerView["lastSkip"]): string {
  *  "double" rule's turn-skipped announcement (`GameState.lastSkip`). */
 const SKIP_ANIMATION_MS = 2200;
 
-/** Same "diff the key to detect a *new* event" pattern as `usePileDisplay`
- *  above, adjusting state during render for the key comparison and an
- *  effect only for the flash's own timeout. */
+/** Same "diff the key to detect a *new* event" pattern as
+ *  `usePresidentPileDisplay`, adjusting state during render for the key
+ *  comparison and an effect only for the flash's own timeout. */
 function useSkipFlash(lastSkip: PlayerView["lastSkip"]): { skippedSeat: Seat | null; visible: boolean } {
   const [visible, setVisible] = useState(false);
   const [key, setKey] = useState("");
@@ -627,9 +570,9 @@ function PresidentCrownedFlash({ gv, view }: { gv: PresidentGameView; view: Play
   );
 }
 
-/** Which way the burned pile should fly off toward the seat that played the
- *  "2" - same gather-then-fly direction logic as `CompletedTrickHold`
- *  (TrickStage.tsx) for Coinche/Bouilla's own trick collection. */
+/** Which way the collected pile should fly off toward the seat that burned
+ *  it or won it by passes - same gather-then-fly direction logic as
+ *  `CompletedTrickHold` (TrickStage.tsx) for Coinche/Bouilla. */
 function burnFlyDirection(seats: TableSeats, seat: Seat | null): { flyX: string; flyY: string } {
   const dir = seatDirection(seats, seat);
   return {
@@ -643,9 +586,9 @@ function burnFlyDirection(seats: TableSeats, seat: Seat | null): { flyX: string;
  *  `usePresidentOptimisticPlay`. */
 function PileArea({ view, pile, seats }: { view: PlayerView; pile: PlayerView["pile"]; seats: TableSeats }) {
   const { t } = useI18n();
-  const { stack, burning } = usePileDisplay(pile, view.lastBurn);
-  const { flyX, flyY } = burnFlyDirection(seats, view.lastBurn?.seat ?? null);
-  const enterFrom = seatDirection(seats, pile.leader);
+  const { stack, collecting, collectSeat, enterSeat } = usePresidentPileDisplay(pile, view.lastBurn);
+  const { flyX, flyY } = burnFlyDirection(seats, collectSeat);
+  const enterFrom = seatDirection(seats, enterSeat);
 
   return (
     <div className="absolute left-1/2 top-[41%] -translate-x-1/2 -translate-y-1/2" data-id="president-pile">
@@ -661,7 +604,7 @@ function PileArea({ view, pile, seats }: { view: PlayerView; pile: PlayerView["p
               <div className="flex -translate-x-1/2">
                 {layer.cards.map((card, i) => (
                   <div key={cardKey(card)} className={i > 0 ? "-ml-6" : ""} style={{ zIndex: i }}>
-                    <PlayingCard card={card} size="lg" dimmed={!isTop && !burning} dataId={`president-pile-card-${si}-${i}`} />
+                    <PlayingCard card={card} size="lg" dimmed={!isTop && !collecting} dataId={`president-pile-card-${si}-${i}`} />
                   </div>
                 ))}
               </div>
@@ -674,13 +617,13 @@ function PileArea({ view, pile, seats }: { view: PlayerView; pile: PlayerView["p
                 key={`${comboKey(layer)}-${si}`}
                 className="absolute"
                 style={
-                  burning || isTop
+                  collecting || isTop
                     ? { zIndex: si }
                     : { transform: `translate(${historyOffset.x}px, ${historyOffset.y}px) rotate(${historyOffset.rot}deg)`, zIndex: si }
                 }
                 data-id={isTop ? "president-pile-current" : `president-pile-history-${depth}`}
               >
-                {burning ? (
+                {collecting ? (
                   <div
                     className="trick-collect-card"
                     data-id="president-pile-burning"
