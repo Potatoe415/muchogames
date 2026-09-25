@@ -1,7 +1,7 @@
 [
   {
     "id": "pictionary",
-    "title": "Pictionary",
+    "title": "Dessiner c'est gagner",
     "kind": "wordpack",
     "category": "mots",
     "engine": "wordplayer",
@@ -22,7 +22,7 @@
   },
   {
     "id": "esquisse",
-    "title": "Esquisse",
+    "title": "Téléphone bizarre",
     "kind": "wordpack",
     "category": "mots",
     "engine": "wordplayer",
@@ -40,7 +40,7 @@
   },
   {
     "id": "olemains",
-    "title": "Olé Mains",
+    "title": "Jeu de mains",
     "kind": "custom",
     "category": "mots",
     "launch": "/games/olemains/index.html",
@@ -73,7 +73,7 @@
   },
   {
     "id": "pigeonpigeon",
-    "title": "Pigeon Pigeon",
+    "title": "Dictionnaire",
     "kind": "wordpack",
     "category": "mots",
     "engine": "wordplayer",
