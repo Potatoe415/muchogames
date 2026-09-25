@@ -45,6 +45,9 @@ export interface P2PPresidentHostConfig {
  */
 export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameView; actions: PresidentActions } {
   const { mySeat, seed } = config;
+  // Unique per match (see `buildSeatView`'s doc) - `useRecordMatchResult`'s
+  // once-per-match dedup guard keys on this.
+  const matchId = `adhoc-${seed}`;
   const roundsToPlay = config.roundsToPlay ?? DEFAULT_PRESIDENT_ROUNDS_TO_PLAY;
   const botThinkMs = config.botThinkMs ?? DEFAULT_BOT_THINK_MS;
   const [state, setState] = useState<GameState>(() =>
@@ -76,7 +79,7 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
       for (const [seat, conn] of connsRef.current) {
         if (rosterRef.current[seat]?.isBot) continue;
         const view = attachGate(
-          buildPresidentSeatView(next, seat as Seat, rosterRef.current, {}, mySeat),
+          buildPresidentSeatView(next, seat as Seat, rosterRef.current, {}, mySeat, matchId),
           next,
           seat,
           rosterRef.current,
@@ -85,7 +88,7 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
         conn.send(JSON.stringify({ t: "view", view }));
       }
     },
-    [mySeat],
+    [mySeat, matchId],
   );
 
   const commit = useCallback(
@@ -203,7 +206,7 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
       });
       conn.onClose(() => demoteSeatToBot(seat as Seat));
       const view = attachGate(
-        buildPresidentSeatView(stateRef.current, seat as Seat, rosterRef.current, {}, mySeat),
+        buildPresidentSeatView(stateRef.current, seat as Seat, rosterRef.current, {}, mySeat, matchId),
         stateRef.current,
         seat,
         rosterRef.current,
@@ -211,7 +214,7 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
       );
       conn.send(JSON.stringify({ t: "view", view }));
     }
-  }, [applyRemote, applyHello, markReady, demoteSeatToBot, mySeat]);
+  }, [applyRemote, applyHello, markReady, demoteSeatToBot, mySeat, matchId]);
 
   useEffect(() => {
     void runBots();
@@ -244,6 +247,6 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
     [commit, runBots, markReady, mySeat, botThinkMs],
   );
 
-  const gv = attachGate(buildPresidentSeatView(state, mySeat, roster, {}, mySeat), state, mySeat, roster, ready);
+  const gv = attachGate(buildPresidentSeatView(state, mySeat, roster, {}, mySeat, matchId), state, mySeat, roster, ready);
   return { gv, actions };
 }

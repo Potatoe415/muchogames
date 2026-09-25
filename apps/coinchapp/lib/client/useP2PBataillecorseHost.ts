@@ -43,6 +43,9 @@ export interface P2PBataillecorseHostConfig {
  */
 export function useP2PBataillecorseHost(config: P2PBataillecorseHostConfig): { gv: GameView; actions: BataillecorseActions } {
   const { mySeat, seed } = config;
+  // Unique per match (see `buildSeatView`'s doc) - `useRecordMatchResult`'s
+  // once-per-match dedup guard keys on this.
+  const matchId = `adhoc-${seed}`;
   const botThinkMs = config.botThinkMs ?? DEFAULT_BOT_THINK_MS;
   const deckSize = config.deckSize ?? DEFAULT_BATAILLECORSE_DECK_SIZE;
   const settings: GameSettings = useMemo(() => ({ botThinkMs, bataillecorseDeckSize: deckSize }), [botThinkMs, deckSize]);
@@ -63,11 +66,11 @@ export function useP2PBataillecorseHost(config: P2PBataillecorseHostConfig): { g
     (next: GameState) => {
       for (const [seat, conn] of connsRef.current) {
         if (rosterRef.current[seat]?.isBot) continue;
-        const view = buildBataillecorseSeatView(next, seat as Seat, rosterRef.current, settings, mySeat);
+        const view = buildBataillecorseSeatView(next, seat as Seat, rosterRef.current, settings, mySeat, matchId);
         conn.send(JSON.stringify({ t: "view", view }));
       }
     },
-    [mySeat, settings],
+    [mySeat, settings, matchId],
   );
 
   const commit = useCallback(
@@ -156,10 +159,10 @@ export function useP2PBataillecorseHost(config: P2PBataillecorseHostConfig): { g
         else applyRemote(msg, seat as Seat);
       });
       conn.onClose(() => demoteSeatToBot(seat as Seat));
-      const view = buildBataillecorseSeatView(stateRef.current, seat as Seat, rosterRef.current, settings, mySeat);
+      const view = buildBataillecorseSeatView(stateRef.current, seat as Seat, rosterRef.current, settings, mySeat, matchId);
       conn.send(JSON.stringify({ t: "view", view }));
     }
-  }, [applyRemote, applyHello, demoteSeatToBot, mySeat, settings]);
+  }, [applyRemote, applyHello, demoteSeatToBot, mySeat, settings, matchId]);
 
   const actions: BataillecorseActions = {
     onFlip: () => {
@@ -172,6 +175,6 @@ export function useP2PBataillecorseHost(config: P2PBataillecorseHostConfig): { g
     },
   };
 
-  const gv = buildBataillecorseSeatView(state, mySeat, roster, settings, mySeat);
+  const gv = buildBataillecorseSeatView(state, mySeat, roster, settings, mySeat, matchId);
   return { gv, actions };
 }

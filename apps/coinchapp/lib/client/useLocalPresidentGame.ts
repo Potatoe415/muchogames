@@ -64,7 +64,8 @@ export function useLocalPresidentGame(
   };
 
   const gv: GameView = {
-    gameId: "local",
+    // Unique per match - see `useLocalGame.ts`'s `gameId` comment.
+    gameId: `local-${seed}`,
     roomCode: "LOCAL",
     gameType: "president",
     status: state.phase === "finished" ? "finished" : "playing",

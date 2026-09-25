@@ -42,6 +42,9 @@ export interface P2PBouillaHostConfig {
  */
 export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView; actions: BouillaActions } {
   const { mySeat, seed } = config;
+  // Unique per match (see `buildSeatView`'s doc) - `useRecordMatchResult`'s
+  // once-per-match dedup guard keys on this.
+  const matchId = `adhoc-${seed}`;
   const botThinkMs = config.botThinkMs ?? DEFAULT_BOT_THINK_MS;
   const [state, setState] = useState<GameState>(() => beginNextRound(createInitialState(), seededRng(seed)));
   const stateRef = useRef(state);
@@ -70,7 +73,7 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
       for (const [seat, conn] of connsRef.current) {
         if (rosterRef.current[seat]?.isBot) continue;
         const view = attachGate(
-          buildBouillaSeatView(next, seat as Seat, rosterRef.current, {}, mySeat),
+          buildBouillaSeatView(next, seat as Seat, rosterRef.current, {}, mySeat, matchId),
           next,
           seat,
           rosterRef.current,
@@ -79,7 +82,7 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
         conn.send(JSON.stringify({ t: "view", view }));
       }
     },
-    [mySeat],
+    [mySeat, matchId],
   );
 
   const commit = useCallback(
@@ -194,7 +197,7 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
       });
       conn.onClose(() => demoteSeatToBot(seat as Seat));
       const view = attachGate(
-        buildBouillaSeatView(stateRef.current, seat as Seat, rosterRef.current, {}, mySeat),
+        buildBouillaSeatView(stateRef.current, seat as Seat, rosterRef.current, {}, mySeat, matchId),
         stateRef.current,
         seat,
         rosterRef.current,
@@ -202,7 +205,7 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
       );
       conn.send(JSON.stringify({ t: "view", view }));
     }
-  }, [applyRemote, applyHello, markReady, demoteSeatToBot, mySeat]);
+  }, [applyRemote, applyHello, markReady, demoteSeatToBot, mySeat, matchId]);
 
   useEffect(() => {
     void runBots();
@@ -224,6 +227,6 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
     [commit, runBots, markReady, mySeat],
   );
 
-  const gv = attachGate(buildBouillaSeatView(state, mySeat, roster, {}, mySeat), state, mySeat, roster, ready);
+  const gv = attachGate(buildBouillaSeatView(state, mySeat, roster, {}, mySeat, matchId), state, mySeat, roster, ready);
   return { gv, actions };
 }

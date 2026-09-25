@@ -46,6 +46,9 @@ export interface P2PHostConfig {
  */
 export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: GameActions } {
   const { mySeat, settings, seed } = config;
+  // Unique per match (see `buildSeatView`'s doc) - `useRecordMatchResult`'s
+  // once-per-match dedup guard keys on this.
+  const matchId = `adhoc-${seed}`;
   const [state, setState] = useState<GameState>(() =>
     beginNextDeal(
       createInitialState(settings.targetPoints ?? 1000, scoringFromSettings(settings)),
@@ -83,7 +86,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
       for (const [seat, conn] of connsRef.current) {
         if (rosterRef.current[seat]?.isBot) continue;
         const view = attachGate(
-          buildSeatView(next, seat as Seat, rosterRef.current, settings, mySeat),
+          buildSeatView(next, seat as Seat, rosterRef.current, settings, mySeat, matchId),
           next,
           seat,
           rosterRef.current,
@@ -92,7 +95,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
         conn.send(JSON.stringify({ t: "view", view }));
       }
     },
-    [mySeat, settings],
+    [mySeat, settings, matchId],
   );
 
   const commit = useCallback(
@@ -198,7 +201,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
       });
       conn.onClose(() => demoteSeatToBot(seat as Seat));
       const view = attachGate(
-        buildSeatView(stateRef.current, seat as Seat, rosterRef.current, settings, mySeat),
+        buildSeatView(stateRef.current, seat as Seat, rosterRef.current, settings, mySeat, matchId),
         stateRef.current,
         seat,
         rosterRef.current,
@@ -206,7 +209,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
       );
       conn.send(JSON.stringify({ t: "view", view }));
     }
-  }, [applyRemote, applyHello, markReady, demoteSeatToBot, settings, mySeat]);
+  }, [applyRemote, applyHello, markReady, demoteSeatToBot, settings, mySeat, matchId]);
 
   // Handle any opening bot turns (e.g. a bot bids before the host).
   useEffect(() => {
@@ -234,7 +237,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
   );
 
   const gv = attachGate(
-    buildSeatView(state, mySeat, roster, settings, mySeat),
+    buildSeatView(state, mySeat, roster, settings, mySeat, matchId),
     state,
     mySeat,
     roster,

@@ -58,6 +58,18 @@ body.is-splash {
   background: #9ec4d4;
 }
 
+/* "Jouer solo (test)" graphics experiment (see render.js's createDieFace
+   and the .face-die-watercolor rule below): swaps the plain in-game
+   background for the hand-painted wood-table mockup while that mode is
+   active. `.is-splash` keeps the splash screen's own background untouched. */
+body.dice-theme-watercolor:not(.is-splash) {
+  background-color: #d8c39f;
+  background-image: url("./assets/dice-test/game-bg-test.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 button,
 input,
 textarea,
@@ -552,6 +564,14 @@ select {
 
 .splash-choice-robot {
   background: #6cc75f;
+}
+
+/* Graphics experiment entry point - kept visually distinct (dashed border,
+   watercolor-toned background) so it reads as a test variant, not a third
+   equally-supported mode. */
+.splash-choice-robot-test {
+  background: #e8dcc4;
+  border: 0.14rem dashed rgba(42, 37, 56, 0.35);
 }
 
 .splash-flag {
@@ -1557,6 +1577,18 @@ body.player-two-turn.scoring-phase .player-cell.player-two.valid {
   background: var(--white);
   padding: 0.38rem;
   margin: auto;
+}
+
+/* "Jouer solo (test)" graphics experiment (see render.js's createDieFace):
+   the hand-painted image already draws its own border/shadow, so drop this
+   div's own border/padding/grid instead of layering a second frame on it. */
+.game-die .face-die.face-die-watercolor {
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
 }
 
 .game-die.rolling .face-die,

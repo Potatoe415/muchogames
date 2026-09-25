@@ -76,7 +76,11 @@ export function useLocalGame(
   };
 
   const gv: GameView = {
-    gameId: "local",
+    // Unique per match (tied to `seed`, which changes on every fresh
+    // `/local` load and every "play again") - `useRecordMatchResult`'s
+    // once-per-match `sessionStorage` guard keys on this. A shared literal
+    // here silently blocked every match after the first one in a tab.
+    gameId: `local-${seed}`,
     roomCode: "LOCAL",
     gameType: "coinche",
     status: state.phase === "finished" ? "finished" : "playing",

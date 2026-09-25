@@ -1,5 +1,5 @@
 // Yatzy DOM rendering: render() and every build*/create*/render* helper it
-// calls. Extracted from app.js. This module owns no game state of its own ù
+// calls. Extracted from app.js. This module owns no game state of its own ?
 // createRenderer(deps) closes over the state/elements objects and the game
 // logic functions app.js passes in, so it stays a pure projection of state
 // (see the comment on render() below). CATEGORIES change identity whenever
@@ -62,6 +62,7 @@ window.YATZY_RENDER = {
   function renderTheme() {
     document.documentElement.lang = state.setup.language;
     document.title = t("meta.title");
+    document.body.classList.toggle("dice-theme-watercolor", state.setup.diceTheme === "watercolor");
 
     if (state.screen !== "game") {
       document.body.classList.remove("player-two-turn", "player-one-turn", "scoring-phase");
@@ -564,9 +565,20 @@ window.YATZY_RENDER = {
     return tile;
   }
 
+  // "watercolor" is the graphics experiment behind the "Jouer solo (test)"
+  // button (see index.html/app.js) - same robot-mode rules, only the die
+  // face swaps a hand-painted image (assets/dice-test/) in for the drawn
+  // pip grid. Keep both renderers self-contained here so the default look
+  // is untouched if the experiment is removed later.
   function createDieFace(value) {
     const die = document.createElement("div");
     die.className = "face-die";
+
+    if (state.setup.diceTheme === "watercolor") {
+      die.classList.add("face-die-watercolor");
+      die.style.backgroundImage = `url("assets/dice-test/die-${value}.jpg")`;
+      return die;
+    }
 
     const pipMap = {
       1: [5],
@@ -739,7 +751,7 @@ window.YATZY_RENDER = {
   function renderEmojiCelebration(reaction) {
     // Guard: if the identical reaction is already in the DOM, leave it alone.
     // Re-creating the <img> node resets the GIF to frame 0 and restarts its
-    // CSS pop animation ù producing visible flicker in multiplayer because
+    // CSS pop animation ? producing visible flicker in multiplayer because
     // render() is called on every remote tick broadcast (i.e. each die roll
     // or score commit from the other player). Skipping the DOM update keeps
     // the GIF playing uninterrupted for its full TTL.

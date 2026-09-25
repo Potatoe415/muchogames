@@ -65,16 +65,21 @@ function lobbyPlayers(roster: RosterEntry[]) {
   }));
 }
 
-/** Build the redacted GameView a single seat is allowed to see, for a Coinche table. */
+/** Build the redacted GameView a single seat is allowed to see, for a Coinche table.
+ *  `matchId` must be unique per match (e.g. `` `adhoc-${seed}` `` - see the host
+ *  hook) - it becomes `GameView.gameId`, the dedup key `useRecordMatchResult`
+ *  keys its once-per-match `sessionStorage` guard on. A shared literal here
+ *  would silently block every match after the first one in a browser tab. */
 export function buildSeatView(
   state: CoincheGameState,
   seat: Seat,
   roster: RosterEntry[],
   settings: GameSettings,
   hostSeat: Seat,
+  matchId: string,
 ): GameView {
   return {
-    gameId: "adhoc",
+    gameId: matchId,
     roomCode: "P2P",
     gameType: "coinche" as GameType,
     status: state.phase === "finished" ? "finished" : "playing",
@@ -93,16 +98,18 @@ export function buildSeatView(
   };
 }
 
-/** Same as `buildSeatView`, for a Bouilla table (no bidding/trump/teams to carry). */
+/** Same as `buildSeatView`, for a Bouilla table (no bidding/trump/teams to carry).
+ *  See `buildSeatView` for why `matchId` must be unique per match. */
 export function buildBouillaSeatView(
   state: BouillaGameState,
   seat: Seat,
   roster: RosterEntry[],
   settings: GameSettings,
   hostSeat: Seat,
+  matchId: string,
 ): GameView {
   return {
-    gameId: "adhoc",
+    gameId: matchId,
     roomCode: "P2P",
     gameType: "bouilla" as GameType,
     status: state.phase === "finished" ? "finished" : "playing",
@@ -120,16 +127,18 @@ export function buildBouillaSeatView(
 }
 
 /** Same as `buildSeatView`, for a la Bataille Corse table (2 seats, no
- *  bidding/trump/teams to carry). */
+ *  bidding/trump/teams to carry). See `buildSeatView` for why `matchId` must
+ *  be unique per match. */
 export function buildBataillecorseSeatView(
   state: BataillecorseGameState,
   seat: Seat,
   roster: RosterEntry[],
   settings: GameSettings,
   hostSeat: Seat,
+  matchId: string,
 ): GameView {
   return {
-    gameId: "adhoc",
+    gameId: matchId,
     roomCode: "P2P",
     gameType: "bataillecorse" as GameType,
     status: state.phase === "finished" ? "finished" : "playing",
@@ -146,16 +155,18 @@ export function buildBataillecorseSeatView(
   };
 }
 
-/** Same as `buildSeatView`, for a Président table (no bidding/trump/teams to carry). */
+/** Same as `buildSeatView`, for a Président table (no bidding/trump/teams to carry).
+ *  See `buildSeatView` for why `matchId` must be unique per match. */
 export function buildPresidentSeatView(
   state: PresidentGameState,
   seat: Seat,
   roster: RosterEntry[],
   settings: GameSettings,
   hostSeat: Seat,
+  matchId: string,
 ): GameView {
   return {
-    gameId: "adhoc",
+    gameId: matchId,
     roomCode: "P2P",
     gameType: "president" as GameType,
     status: state.phase === "finished" ? "finished" : "playing",

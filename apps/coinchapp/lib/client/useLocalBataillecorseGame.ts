@@ -110,7 +110,8 @@ export function useLocalBataillecorseGame(
   };
 
   const gv: BataillecorseGameView = {
-    gameId: "local",
+    // Unique per match - see `useLocalGame.ts`'s `gameId` comment.
+    gameId: `local-${seed}`,
     roomCode: "LOCAL",
     gameType: "bataillecorse",
     status: state.phase === "finished" ? "finished" : "playing",

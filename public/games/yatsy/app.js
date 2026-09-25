@@ -84,6 +84,7 @@ const elements = {
   playerNameAvatar: document.getElementById("player-name-avatar"),
   soloGameButton: document.getElementById("solo-game-button"),
   robotGameButton: document.getElementById("robot-game-button"),
+  robotTestGameButton: document.getElementById("robot-test-game-button"),
   playOnlineButton: document.getElementById("play-online-button"),
   createGameButton: document.getElementById("create-game-button"),
   shareGameButton: document.getElementById("share-game-button"),
@@ -151,6 +152,9 @@ const DEFEAT_MODE_TOAST_TTL_MS = 2200;
 
 elements.soloGameButton.addEventListener("click", () => handleLocalStart("solo"));
 elements.robotGameButton.addEventListener("click", () => handleLocalStart("robot"));
+// Graphics experiment: identical robot-mode rules, only the die faces swap
+// to the hand-painted watercolor images (see render.js's createDieFace).
+elements.robotTestGameButton.addEventListener("click", () => handleLocalStart("robot", "watercolor"));
 // These handlers live in session.js and are only wired up once the session
 // controller is created below, so each listener defers the lookup to click
 // time (arrow wrapper) instead of capturing an undefined reference now.
@@ -461,6 +465,9 @@ function createInitialState() {
     splashView: "modes",
     setup: {
       mode: "solo",
+      // "default" or "watercolor" - see the "Jouer solo (test)" button and
+      // render.js's createDieFace(). Purely visual, orthogonal to `mode`.
+      diceTheme: "default",
       language: initialSetupLanguage,
       // Indexed by player (0/1), not a single shared value: the in-game
       // settings panel only ever edits the currently active seat's own entry
@@ -727,6 +734,7 @@ function persistLocalGameState() {
 
   STORAGE.writeJSON(LOCAL_GAME_STORAGE_KEY, {
     mode: state.setup.mode,
+    diceTheme: state.setup.diceTheme,
     players: state.players,
     dice: state.dice,
     rollsRemaining: state.rollsRemaining,
@@ -757,6 +765,7 @@ function restoreLocalGameState() {
   const freshState = createInitialState();
   freshState.screen = "game";
   freshState.setup.mode = persisted.mode;
+  freshState.setup.diceTheme = persisted.diceTheme || "default";
   freshState.players = persisted.players;
   freshState.dice = persisted.dice;
   freshState.rollsRemaining = persisted.rollsRemaining;
@@ -806,12 +815,13 @@ function navigateToHub() {
 
 
 
-function handleLocalStart(mode) {
+function handleLocalStart(mode, diceTheme = "default") {
   syncRuntimeRulesFromSetup();
   resetGame({
     screen: "game",
     language: state.setup.language,
-    mode
+    mode,
+    diceTheme
   });
 }
 
@@ -983,6 +993,7 @@ function resetGame({
   screen = state.screen,
   language = state.setup.language,
   mode = state.setup.mode,
+  diceTheme = state.setup.diceTheme,
   splashView = "modes"
 } = {}) {
   clearTimeout(yatzyCelebrationTimeoutId);
@@ -1006,6 +1017,7 @@ function resetGame({
   const freshState = createInitialState();
   freshState.screen = screen;
   freshState.setup.mode = mode;
+  freshState.setup.diceTheme = diceTheme;
   freshState.setup.language = language;
   freshState.setup.reverseDiceSelectionByPlayer = [...state.setup.reverseDiceSelectionByPlayer];
   freshState.setup.extraRollEasterEgg = state.setup.extraRollEasterEgg;
