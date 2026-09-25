@@ -142,15 +142,17 @@ function LocalSetupPageInner() {
         </section>
       )}
 
-      <section className="grid gap-3" data-id="local-actions-card">
-        <button
-          data-id="local-start-button"
-          onClick={startLocalGame}
-          className="rounded-2xl bg-[var(--accent-yellow)] px-4 py-4 text-lg font-black text-[var(--surface)] shadow-lg"
-        >
-          {t("start")}
-        </button>
-      </section>
+      {!isBataillecorse && (
+        <section className="grid gap-3" data-id="local-actions-card">
+          <button
+            data-id="local-start-button"
+            onClick={startLocalGame}
+            className="rounded-2xl bg-[var(--accent-yellow)] px-4 py-4 text-lg font-black text-[var(--surface)] shadow-lg"
+          >
+            {t("start")}
+          </button>
+        </section>
+      )}
 
       <GameSettingsPanel
         values={setup}
@@ -162,6 +164,21 @@ function LocalSetupPageInner() {
         bataillecorseFields={isBataillecorse}
         hideBotFields={isDuel}
       />
+
+      {/* La Bataille Corse only (BAT-UI-01): the start CTA sits below the
+          settings panel here instead of above it, like every other game's
+          setup screen - a deliberate, game-scoped layout tweak. */}
+      {isBataillecorse && (
+        <section className="grid gap-3" data-id="local-actions-card">
+          <button
+            data-id="local-start-button"
+            onClick={startLocalGame}
+            className="rounded-2xl bg-[var(--accent-yellow)] px-4 py-4 text-lg font-black text-[var(--surface)] shadow-lg"
+          >
+            {t("start")}
+          </button>
+        </section>
+      )}
     </main>
   );
 }
