@@ -410,6 +410,10 @@
   background-color: #eef3f6;
 }
 
+.game-tile[data-id="hub-tile-coinche"] .game-tile__thumb {
+  object-position: top;
+}
+
 .game-tile__overlay {
   position: absolute;
   inset: 0;
