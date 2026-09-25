@@ -22,8 +22,8 @@ const THROTTLES = {
 };
 
 const MAX_NAME_LENGTH = 40;
-// ~50 KB base64 data URL, same cap /profile already enforces client-side.
-const MAX_AVATAR_DATA_URL_LENGTH = 70000;
+// ~25 KB base64 data URL, same cap /profile already enforces client-side.
+const MAX_AVATAR_DATA_URL_LENGTH = 35000;
 const MAX_STAT_DELTA = 100000;
 const LAUNCH_CODE_TTL_MS = 60000; // 1 minute: only needs to survive one hub→game redirect.
 

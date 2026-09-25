@@ -24,7 +24,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Confirm Yatzy Play Online: small avatar beside the name field and beside the local name on the score chip; solo/robot have neither.
 - [ ] Confirm Coinche/Bouilla online `GameRoom` chip (not local/ad-hoc) after those apps are deployed.
 - [ ] Confirm Tranquil online `GameBoard` (not local/bot) after that app is deployed.
-- [ ] Confirm `/profile` crop then saved file stays under 50 KB.
+- [ ] Confirm `/profile` crop then saved file stays under 25 KB.
 - [ ] Commit and push the "La Bataille Corse" Hub tile once confirmed visually (tile art, position next to Président, launch works with name/avatar params).
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
