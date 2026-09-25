@@ -2,15 +2,15 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Finished matches in all 4 games can increment the hub profile when the player arrived with a hub `?profileCode=`.
-Focus: Live-check that a signed-in hub launch records a win or loss on `/profile`. Needs `supabase/migrations/0003_profiles.sql` applied.
-Level: L2
+Status: Every back control leaves for `https://muchogames.vercel.app/`. None targets this app's own origin.
+Focus: Confirm a hub launch of each game, then the back arrow, lands on the hub.
+Level: L1
 
 Context:
-- Working_On: `lib/server/profileLink.ts`, `lib/client/profileSync.ts`, `lib/client/matchResultStats.ts`
-- Relevant_Files: `docs/tasks/unified-profile-accounts.md`, root `api/profile/launch-code.js`
+- Working_On: `lib/client/hubUrl.ts`, `components/HomeTopBar.tsx`, in-game and setup back links
+- Relevant_Files: `app/local/page.tsx`, `app/online/page.tsx`, `components/AdHocLobby.tsx`, table headers
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0055 (local combined win/loss counter)
+- Relevant_Decisions: none for this fix
 
 Next:
 - User applies `0003_profiles.sql` if it is not on `multigames-db` yet, and enables Google Auth there.
@@ -29,7 +29,6 @@ Blockers:
 - Shared profile writes fail until `0003_profiles.sql` is applied and Google is an Auth provider.
 
 Recent_Changes:
-- 2026-09-25 Agents commit and push with `scripts/ship.ps1` after every completed change, without waiting to be asked.
+- 2026-09-25 Back controls return to the games hub. They no longer open this app's root.
 - 2026-09-24 Wins/losses from all 4 games also increment `muchogames_profiles` after a hub launch code.
 - 2026-09-24 Président: a losing-2 finish shows a peach; bots spend twos before their last other card and pass rather than finish on them.
-- 2026-09-24 Président: your own play slides in from your seat. Splash stamp `v0.6`.

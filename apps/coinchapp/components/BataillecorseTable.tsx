@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
-import Link from "next/link";
 import { otherSeat, SLAP_GRACE_MS, type PlayerView } from "@/lib/bataillecorse";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
@@ -356,14 +356,14 @@ export function BataillecorseTable({
   return (
     <TableShell dataId="bataillecorse-table">
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
-        <Link
-          href="/bataillecorse"
-          aria-label={t("back")}
+        <a
+          href={HUB_URL}
+          aria-label={t("backToHub")}
           data-id="bataillecorse-back"
           className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg"
         >
           ‹
-        </Link>
+        </a>
         <p className="rounded-full bg-[var(--surface-overlay)]/70 px-3 py-1 text-xs font-medium text-[var(--card-face)]/70" data-id="bataillecorse-stock-tally">
           {optimisticStockCount} — {view.opponentStockCount}
         </p>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { parseReactionPayload, type ReactionPick } from "@/lib/client/reactions";
 import { useBotRunner } from "@/lib/client/useBotRunner";
@@ -196,9 +196,9 @@ export function GameRoom({ gameId }: { gameId: string }) {
         <p className="mb-3 text-[var(--accent-red)]" data-id="game-error">
           {error ?? t("gameNotFound")}
         </p>
-        <Link href="/" className="rounded-lg bg-[var(--accent-yellow)] px-4 py-2 font-bold text-[var(--surface)]">
-          {t("backHome")}
-        </Link>
+        <a href={HUB_URL} data-id="game-error-back" className="rounded-lg bg-[var(--accent-yellow)] px-4 py-2 font-bold text-[var(--surface)]">
+          {t("backToHub")}
+        </a>
       </Centered>
     );
   }
@@ -223,9 +223,9 @@ export function GameRoom({ gameId }: { gameId: string }) {
         <p className="mb-3" data-id="game-spectator-notice">
           {t("gameInProgressSpectator")}
         </p>
-        <Link href="/" className="rounded-lg bg-[var(--accent-yellow)] px-4 py-2 font-bold text-[var(--surface)]">
-          {t("backHome")}
-        </Link>
+        <a href={HUB_URL} data-id="game-spectator-back" className="rounded-lg bg-[var(--accent-yellow)] px-4 py-2 font-bold text-[var(--surface)]">
+          {t("backToHub")}
+        </a>
       </Centered>
     );
   }

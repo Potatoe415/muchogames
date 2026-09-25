@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import type { PlayerView } from "@/lib/coinche";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
@@ -70,13 +70,13 @@ export function DealOverlay({
                 {t("newGame")}
               </button>
             )}
-            <Link
-              href="/"
+            <a
+              href={HUB_URL}
               data-id="finished-home-button"
               className="mt-3 inline-block rounded-lg bg-[var(--accent-yellow)] px-5 py-2.5 font-bold text-[var(--surface)]"
             >
-              {t("backHome")}
-            </Link>
+              {t("backToHub")}
+            </a>
           </>
         ) : (
           result && (

@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import type { PlayerView } from "@/lib/president";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
 import type { GameView, NextDealGate } from "@/lib/server/view";
@@ -70,13 +70,13 @@ export function PresidentRoundOverlay({
                 {t("newGame")}
               </button>
             )}
-            <Link
-              href="/president"
+            <a
+              href={HUB_URL}
               data-id="president-finished-home-button"
               className="mt-3 inline-block rounded-lg bg-[var(--accent-yellow)] px-5 py-2.5 font-bold text-[var(--surface)]"
             >
-              {t("backHome")}
-            </Link>
+              {t("backToHub")}
+            </a>
           </>
         ) : (
           result && (
@@ -87,9 +87,7 @@ export function PresidentRoundOverlay({
               <ul className="mt-3 space-y-1 text-left text-sm" data-id="president-finish-order">
                 {result.finishedOrder.map((seat, i) => (
                   <li key={seat} className="flex items-center justify-between" data-id={`president-finish-row-${i}`}>
-                    <span>
-                      {i + 1}. {playerName(gv, seat, locale)}
-                    </span>
+                    <span>{i + 1}. {playerName(gv, seat, locale)}</span>
                     <span className="font-bold text-[var(--accent-cyan)]">{TITLE_LABEL[locale][result.titles[seat]]}</span>
                   </li>
                 ))}

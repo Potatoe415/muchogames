@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import type { PlayerView } from "@/lib/bouilla";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
 import type { GameView, NextDealGate } from "@/lib/server/view";
@@ -71,13 +71,13 @@ export function BouillaRoundOverlay({
                 {t("newGame")}
               </button>
             )}
-            <Link
-              href="/"
+            <a
+              href={HUB_URL}
               data-id="finished-home-button"
               className="mt-3 inline-block rounded-lg bg-[var(--accent-yellow)] px-5 py-2.5 font-bold text-[var(--surface)]"
             >
-              {t("backHome")}
-            </Link>
+              {t("backToHub")}
+            </a>
           </>
         ) : (
           result && (

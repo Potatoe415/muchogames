@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import type { PlayerView, Seat } from "@/lib/bataillecorse";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useOptimisticFlip } from "@/lib/client/useOptimisticFlip";
 import type { BataillecorseDuelActions } from "@/lib/client/useLocalBataillecorseDuelGame";
@@ -89,14 +89,14 @@ export function BataillecorseDuelTable({
   return (
     <TableShell dataId="bataillecorse-duel-table">
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
-        <Link
-          href="/bataillecorse"
-          aria-label={t("back")}
+        <a
+          href={HUB_URL}
+          aria-label={t("backToHub")}
           data-id="bataillecorse-duel-back"
           className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg"
         >
           ‹
-        </Link>
+        </a>
         <GameInfoButton label={t("gameInfo")} onClick={() => setPanelOpen(true)} />
       </header>
 

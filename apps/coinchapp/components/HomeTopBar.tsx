@@ -1,12 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { getMatchResultStats, type MatchResultStats } from "@/lib/client/matchResultStats";
 import { RulesModal } from "./RulesModal";
 import type { GameType } from "@/lib/supabase/types";
-
-const BERGAMOTS_HUB_URL = "https://muchogames.vercel.app/";
 
 /** Back-to-hub + settings (language, rules) controls shown on every home splash
  *  screen (`/`, `/coinche`, `/bouilla`, `/president`, `/bataillecorse`) - the
@@ -37,7 +36,7 @@ export function HomeTopBar({ game }: { game?: GameType }) {
   return (
     <>
       <a
-        href={BERGAMOTS_HUB_URL}
+        href={HUB_URL}
         className="absolute left-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/45 text-white shadow-md backdrop-blur-sm"
         data-id="home-back"
         aria-label={t("backToHub")}

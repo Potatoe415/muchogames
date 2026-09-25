@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useState, type ReactNode } from "react";
+import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { cardPoints, nextSeat, type PlayerView, type Trick, type TrumpMode } from "@/lib/coinche";
 import type { LobbyPlayer } from "@/lib/server/view";
@@ -49,7 +49,7 @@ export function GameHud({
   return (
     <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 px-3" data-id="game-header">
       <div className="flex items-start justify-between">
-        <IconLink href="/" label={t("back")} dataId="game-back">
+        <IconLink href={HUB_URL} label={t("backToHub")} dataId="game-back">
           ‹
         </IconLink>
         <div className="flex flex-col items-center">
@@ -293,14 +293,14 @@ function IconLink({
   children: ReactNode;
 }) {
   return (
-    <Link
+    <a
       href={href}
       aria-label={label}
       className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg"
       data-id={dataId}
     >
       {children}
-    </Link>
+    </a>
   );
 }
 
