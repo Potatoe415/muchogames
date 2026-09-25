@@ -448,3 +448,24 @@
   pointer-events: none;
   user-select: none;
 }
+
+/* --- Force-refresh button: as discreet as the version badge next to it --- */
+.force-refresh-button {
+  position: fixed;
+  bottom: 8px;
+  left: 10px;
+  z-index: 999;
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 11px;
+  color: rgba(90, 58, 34, 0.4);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.force-refresh-button:hover,
+.force-refresh-button:active {
+  color: rgba(90, 58, 34, 0.7);
+}

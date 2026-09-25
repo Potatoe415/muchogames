@@ -48,6 +48,7 @@ const state = {
 
 document.addEventListener("DOMContentLoaded", () => {
   renderVersionBadge();
+  renderForceRefreshButton();
   initAuthWidget();
   initializeDashboard();
   setupHubShareButton();
@@ -84,6 +85,43 @@ function renderVersionBadge() {
   badge.className = "app-version";
   badge.textContent = APP_VERSION;
   document.body.appendChild(badge);
+}
+
+// Drops the service-worker cache/registration and reloads from the network
+// so players stuck on a stale cached shell pick up the latest deploy.
+// Keeps localStorage / IndexedDB (profile, language, local scores) intact.
+async function forceRefresh() {
+  try {
+    if ("caches" in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map((key) => caches.delete(key)));
+    }
+
+    if ("serviceWorker" in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(
+        registrations.map((registration) => registration.unregister())
+      );
+    }
+  } catch (error) {
+    console.warn("Échec du nettoyage du cache :", error);
+  }
+
+  const url = new URL(window.location.href);
+  url.searchParams.set("_refresh", String(Date.now()));
+  window.location.replace(url.toString());
+}
+
+function renderForceRefreshButton() {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "force-refresh-button";
+  button.id = "force-refresh-button";
+  button.dataset.id = "force-refresh-button";
+  button.textContent = "Actualiser";
+  button.title = "Forcer la mise à jour de l'application";
+  button.addEventListener("click", forceRefresh);
+  document.body.appendChild(button);
 }
 
 async function initializeDashboard() {
