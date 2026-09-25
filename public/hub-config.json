@@ -110,7 +110,7 @@
     "kind": "external",
     "category": "cartesdes",
     "launch": "https://coinchapp.vercel.app/coinche",
-    "thumbnail": "/games/coinchapp/assets/thumbnail.png",
+    "thumbnail": "/games/coinchapp/assets/coinche-thumb.jpg",
     "sameTab": true
   },
   {
