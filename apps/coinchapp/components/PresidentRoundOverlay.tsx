@@ -87,7 +87,14 @@ export function PresidentRoundOverlay({
               <ul className="mt-3 space-y-1 text-left text-sm" data-id="president-finish-order">
                 {result.finishedOrder.map((seat, i) => (
                   <li key={seat} className="flex items-center justify-between" data-id={`president-finish-row-${i}`}>
-                    <span>{i + 1}. {playerName(gv, seat, locale)}</span>
+                    <span>
+                      {i + 1}. {playerName(gv, seat, locale)}
+                      {view.losingFinishSeats.some((finished) => finished === seat) && (
+                        <span className="ml-1" data-id={`president-losing-two-result-seat-${seat}`} role="img" aria-label={t("losingTwoFinish")}>
+                          🍑
+                        </span>
+                      )}
+                    </span>
                     <span className="font-bold text-[var(--accent-cyan)]">{TITLE_LABEL[locale][result.titles[seat]]}</span>
                   </li>
                 ))}

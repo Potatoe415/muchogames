@@ -222,6 +222,11 @@ export function PresidentTable({
             </span>
           </div>
         )}
+        {!roundOverlayVisible && lostOnTwo(view, mySeat) && (
+          <div className="absolute inset-x-0 bottom-[11.2rem] z-20 flex justify-center" data-id="president-self-losing-two-wrap">
+            <LosingTwoMark seat={mySeat} />
+          </div>
+        )}
         {emojiOn && actions.onSendReaction && <EmojiButton myReaction={reactions?.get(mySeat)} onSelect={actions.onSendReaction} />}
         {view.phase === "playing" && (
           <HandArea
@@ -383,6 +388,19 @@ function PresidentSettingsPanel({
   );
 }
 
+function lostOnTwo(view: PlayerView, seat: number): boolean {
+  return view.losingFinishSeats.some((finished) => finished === seat);
+}
+
+function LosingTwoMark({ seat }: { seat: number }) {
+  const { t } = useI18n();
+  return (
+    <span className="text-2xl leading-none drop-shadow-lg" data-id={`president-losing-two-seat-${seat}`} role="img" aria-label={t("losingTwoFinish")}>
+      🍑
+    </span>
+  );
+}
+
 function IconLink({ href, label, dataId, children }: { href: string; label: string; dataId: string; children: React.ReactNode }) {
   return (
     <a href={href} aria-label={label} data-id={dataId} className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg">
@@ -436,6 +454,7 @@ function OpponentBadge({
         />
         {title && <p className="text-center text-[10px] font-bold text-[var(--card-face)]/70" data-id={`president-title-seat-${seat}`}>{title}</p>}
       </div>
+      {lostOnTwo(view, seat) && <LosingTwoMark seat={seat} />}
     </div>
   );
 }

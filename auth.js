@@ -121,10 +121,24 @@ function syncProfileName(idToken) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ idToken, name: getStoredPlayerName() })
-    }).catch(() => {});
+    })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => restoreAvatarFromProfile(data?.profile?.avatarUrl))
+      .catch(() => {});
   } catch {
     // fetch unavailable/blocked — not fatal.
   }
+}
+
+function restoreAvatarFromProfile(dataUrl) {
+  if (!authState.email || !dataUrl || !dataUrl.startsWith("data:image/")) return;
+  try {
+    localStorage.setItem(AVATAR_STORAGE_KEY, dataUrl);
+  } catch {
+    return;
+  }
+  ensureAvatarThumb();
+  renderAuthWidget();
 }
 
 function decodeJwtPayload(jwt) {
@@ -278,12 +292,23 @@ function logout() {
   authState.email = "";
   persistEmail("");
   persistIdToken("");
+  clearStoredAvatar();
   if (window.google?.accounts?.id) {
     window.google.accounts.id.disableAutoSelect();
   }
   closePopover();
   renderAuthWidget();
   renderGoogleButton();
+}
+
+function clearStoredAvatar() {
+  try {
+    localStorage.removeItem(AVATAR_STORAGE_KEY);
+    localStorage.removeItem(AVATAR_THUMB_STORAGE_KEY);
+  } catch {
+    // Storage unavailable — the picture just stays for this page load.
+  }
+  if (window.PlayerProfile) window.PlayerProfile.setAvatar("");
 }
 
 function closePopover() {

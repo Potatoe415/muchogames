@@ -10,7 +10,7 @@ import { withHubName } from "@/lib/client/hubName";
  *  on this splash only - unrelated to the whole app's `NEXT_PUBLIC_APP_VERSION`
  *  (see `app/page.tsx`). Same pattern as la Bataille Corse. Bump by hand as
  *  this game changes. */
-const PRESIDENT_VERSION = "0.5";
+const PRESIDENT_VERSION = "0.6";
 
 /** Same layout/mode picker as the home screen, but every button reuses the existing
  *  /local, /online, /adhoc routes with `?game=president` instead of a duplicated tree. */

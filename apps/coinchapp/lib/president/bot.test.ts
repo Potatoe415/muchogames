@@ -115,4 +115,32 @@ describe("chooseAction", () => {
     const action = chooseAction(redact(state, 1));
     expect(action.action).toBe("COMBO");
   });
+
+  it("passes rather than finishing on a lone 2 when a pass is allowed", () => {
+    const state = playingState({
+      turn: 1,
+      hands: [[], [card("2", "H")], [], []],
+      pile: { combo: { rank: "K", cards: [card("K", "S")] }, leader: 0 },
+    });
+    expect(chooseAction(redact(state, 1))).toEqual({ action: "PASS" });
+  });
+
+  it("spends its twos before the last non-two so it does not finish on them", () => {
+    const state = playingState({
+      turn: 1,
+      hands: [[], [card("2", "H"), card("2", "S"), card("5", "D")], [], []],
+    });
+    const action = chooseAction(redact(state, 1));
+    expect(action.action).toBe("COMBO");
+    if (action.action === "COMBO") expect(action.combo.rank).toBe("2");
+  });
+
+  it("still plays a lone 2 when it is leading and has nothing else", () => {
+    const state = playingState({
+      turn: 1,
+      hands: [[], [card("2", "H")], [], []],
+    });
+    const action = chooseAction(redact(state, 1));
+    expect(action).toEqual({ action: "COMBO", combo: { rank: "2", cards: [card("2", "H")] } });
+  });
 });

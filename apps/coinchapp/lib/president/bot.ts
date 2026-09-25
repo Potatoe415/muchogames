@@ -44,10 +44,26 @@ function chooseReturnCards(view: PlayerView): Card[] {
  *  master rank. Breaking a group outweighs spending an intact master, since
  *  fracturing destroys a combo's latent value while a master card was only
  *  ever going to be spent once anyway. */
+/** Finishing the hand on one, two, or three 2s. A quad still only revolutions. */
+function isLosingTwoFinish(hand: Card[], combo: Combo): boolean {
+  return combo.cards.length === hand.length && combo.rank === "2" && combo.cards.length <= 3;
+}
+
+/** Playing `combo` would leave only 1–3 twos, so the next finish is a forced
+ *  losing 2. Spending the twos while a non-two remains avoids that. */
+function leavesOnlyLosingTwos(hand: Card[], combo: Combo): boolean {
+  const remaining = hand.length - combo.cards.length;
+  if (remaining < 1 || remaining > 3) return false;
+  const twosLeft = groupSize(hand, "2") - (combo.rank === "2" ? combo.cards.length : 0);
+  return remaining === twosLeft;
+}
+
 function comboCost(view: PlayerView, combo: Combo): number {
+  if (isLosingTwoFinish(view.myHand, combo)) return 100;
+  const stranded = leavesOnlyLosingTwos(view.myHand, combo) ? 20 : 0;
   const breaking = breaksGroup(view.myHand, combo) ? 2 : 0;
   const master = isMasterRank(combo.rank, view.revolution) ? 1 : 0;
-  return breaking + master;
+  return stranded + breaking + master;
 }
 
 /** Cheapest legal combo: smallest cost first (see `comboCost`), then the
@@ -77,6 +93,7 @@ function endgameLooming(view: PlayerView): boolean {
  *  a costly one (breaks a group and/or spends a master) is only worth it once
  *  the endgame is looming - otherwise pass and protect it for later. */
 function shouldTakeThePile(view: PlayerView, best: Combo): boolean {
+  if (isLosingTwoFinish(view.myHand, best)) return !view.canPass;
   if (!view.canPass) return true;
   if (comboCost(view, best) === 0) return true;
   return endgameLooming(view);

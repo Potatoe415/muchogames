@@ -2,13 +2,13 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Signed-in wins/losses from Yatzy, coinchapp (all 4 games), and Tranquil write `muchogames_profiles` and show on `/profile`.
-Focus: User must apply `supabase/migrations/0003_profiles.sql` and enable Google Auth on `multigames-db`, then confirm one finished match from each app moves `/profile`.
-Level: L2
+Status: Signing out clears the local profile avatar. It is restored from `muchogames_profiles` on the next Google sign-in.
+Focus: Confirm « Se déconnecter » removes the photo on the hub button and on `/profile` until the next sign-in.
+Level: L1
 
 Context:
-- Working_On: `public/shared/js/profile-results.js`, `api/profile/add-results.js`, `hub.js`, `apps/coinchapp/lib/server/profileLink.ts`, `apps/tranquil/api/profile-link.ts`
-- Relevant_Files: `docs/tasks/unified-profile-accounts.md`, `supabase/migrations/0003_profiles.sql`
+- Working_On: `auth.js`
+- Relevant_Files: `public/profile/profile.js`, `public/shared/js/player-profile.js`
 - Do_Not_Touch: game rules
 - Relevant_Decisions: none logged yet — task still needs the live check
 
@@ -24,5 +24,5 @@ Blockers:
 - End-to-end check is blocked until the profiles migration is applied and Google Auth is enabled.
 
 Recent_Changes:
+- 2026-09-25 Sign-out removes the local avatar (and its thumb). The account photo comes back from the server on the next sign-in.
 - 2026-09-24 Hub `/profile` now receives wins/losses from Yatzy, coinchapp, and Tranquil for a signed-in player. Local counters stay for anonymous play.
-- 2026-09-24 Unified profile API (`api/profile/*`) drafted; browser never talks to Supabase directly.

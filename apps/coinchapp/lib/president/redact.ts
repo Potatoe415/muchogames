@@ -24,6 +24,9 @@ export interface PlayerView {
   lastSkip: GameState["lastSkip"];
   revolution: boolean;
   finishedOrder: Seat[];
+  /** Seats that emptied their hand on a losing 2 (single, pair, or triple).
+   *  Public — the combo was face-up — so the table can mark them with a peach. */
+  losingFinishSeats: Seat[];
   titles: Titles | null;
   pendingExchange: PendingExchange | null;
   /** Not secret (already-moved, face-up cards - same rationale as `lastBurn`):
@@ -52,6 +55,7 @@ export function redact(state: GameState, seat: Seat): PlayerView {
     lastSkip: state.lastSkip,
     revolution: state.revolution,
     finishedOrder: state.finishedOrder,
+    losingFinishSeats: state.losingFinishSeats,
     titles: state.titles,
     pendingExchange: state.pendingExchange,
     forcedTransfers: state.forcedTransfers,
