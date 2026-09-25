@@ -1549,7 +1549,12 @@ body.player-two-turn.scoring-phase .player-cell.player-two.valid {
 /* "Jouer solo (test)" graphics experiment (see render.js's createDieFace):
    the hand-painted image already draws its own border/shadow, so drop this
    div's own border/padding/grid instead of layering a second frame on it. */
-.game-die .face-die.face-die-watercolor {
+/* Not scoped to `.game-die` - createDieFace() is shared with the upper
+   category icons' `.icon-tile` (see render.js), which aren't inside a
+   `.game-die`. Scoping this to `.game-die .face-die-watercolor` left those
+   icons on `background-size: auto` (only the image's top-left corner,
+   often no pips at all). */
+.face-die.face-die-watercolor {
   border: none;
   background-color: transparent;
   background-size: cover;
@@ -1609,9 +1614,12 @@ body.dice-theme-watercolor .icon-tile .fan span {
    cream strip with no gap or per-die box between them, so the row reads
    as a single smooth image instead of 5 separate button shells. Lock/turn
    state (previously a solid color swap) becomes a thin ring on the die
-   face itself so the strip never breaks up. The aspect-ratio matches the
-   dice-test crop's own (taller-than-square) proportions so `cover` never
-   needs to crop into the shadow beneath the die - see createDieFace(). */
+   face itself so the strip never breaks up. Deliberately no aspect-ratio
+   override here: the dice-test crop is kept near-square (die-*.jpg) so
+   the exact same image renders correctly both here and in the upper
+   category icons (createDieFace() is shared - see render.js) - an
+   earlier taller crop fixed this row's shadow but broke those icons by
+   making `cover` crop through the pips on their square tiles. */
 body.dice-theme-watercolor .dice-row {
   gap: 0;
   background: var(--wc-cream);
@@ -1621,7 +1629,6 @@ body.dice-theme-watercolor .dice-row {
 }
 
 body.dice-theme-watercolor .game-die {
-  aspect-ratio: 0.787;
   background: transparent;
   border: none;
   border-radius: 0;
