@@ -1692,9 +1692,13 @@ body.dice-theme-watercolor .bonus-progress {
 /* Unrolled-die placeholder (die.value === null): matches the dice-row's
    own paper background instead of the default theme's plain white, so an
    unrolled die reads as an empty cutout in the paper rather than a white
-   sticker sitting on it. */
+   sticker sitting on it. Matching the fill exactly made the star vanish
+   completely against the same-colored row - border/box-shadow can't
+   trace a clip-path shape, so drop-shadow (which respects the clipped
+   silhouette) is used instead to keep a thin wood-toned outline visible. */
 body.dice-theme-watercolor .star-shape {
   background: var(--wc-paper);
+  filter: drop-shadow(0 0 0.09rem var(--wc-wood)) drop-shadow(0 0 0.09rem var(--wc-wood));
 }
 
 .game-die.rolling .face-die,
