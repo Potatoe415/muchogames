@@ -42,7 +42,7 @@ const SWIPE_THRESHOLD_PX = 50;
 
 const state = {
   games: [],
-  category: "tous",
+  category: "cartesdes",
   lang: readStoredLang()
 };
 
