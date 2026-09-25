@@ -58,18 +58,6 @@ body.is-splash {
   background: #9ec4d4;
 }
 
-/* "Jouer solo (test)" graphics experiment (see render.js's createDieFace
-   and the .face-die-watercolor rule below): swaps the plain in-game
-   background for the hand-painted wood-table mockup while that mode is
-   active. `.is-splash` keeps the splash screen's own background untouched. */
-body.dice-theme-watercolor:not(.is-splash) {
-  background-color: #d8c39f;
-  background-image: url("./assets/dice-test/game-bg-test.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
 button,
 input,
 textarea,
@@ -1589,6 +1577,76 @@ body.player-two-turn.scoring-phase .player-cell.player-two.valid {
   background-position: center;
   background-repeat: no-repeat;
   padding: 0;
+}
+
+/* "Jouer solo (test)" graphics experiment, continued: the watercolor dice
+   above are only half of it - the board chrome around them (frame, category
+   tiles, die shell, bonus accent) gets re-skinned from cool slate/white to
+   a warm wood/parchment palette so the whole board reads as one hand-drawn
+   scene, not a photo/mockup pasted behind the normal flat-color UI. Scoped
+   to specific selectors (not the shared --slate/--white variables) so it
+   never touches text-on-color contrast elsewhere in the app. */
+body.dice-theme-watercolor {
+  --wc-wood: #8a5a34;
+  --wc-wood-dark: #5c3b22;
+  --wc-cream: #f8ecd6;
+  --wc-cream-deep: #f1ddb9;
+  --wc-gold: #b9852f;
+}
+
+body.dice-theme-watercolor .scoreboard-panel {
+  background: var(--wc-cream);
+  border-color: var(--wc-wood);
+  box-shadow: 0 0.5rem 0 rgba(92, 59, 34, 0.25);
+}
+
+body.dice-theme-watercolor .score-group + .score-group {
+  border-left-color: var(--wc-wood);
+}
+
+body.dice-theme-watercolor .score-cell {
+  border-right-color: var(--wc-cream-deep);
+  border-bottom-color: var(--wc-cream-deep);
+}
+
+body.dice-theme-watercolor .category-cell,
+body.dice-theme-watercolor .category-cell.spacer-cell {
+  background: var(--wc-cream-deep);
+}
+
+body.dice-theme-watercolor .icon-tile {
+  background: var(--wc-cream);
+  border-color: var(--wc-wood);
+  color: var(--wc-wood-dark);
+}
+
+body.dice-theme-watercolor .icon-tile .fan::before,
+body.dice-theme-watercolor .icon-tile .fan::after,
+body.dice-theme-watercolor .icon-tile .fan span {
+  background: var(--wc-wood);
+}
+
+body.dice-theme-watercolor .game-die {
+  background: var(--wc-wood);
+  border-color: var(--wc-wood-dark);
+  box-shadow: 0 0.35rem 0 rgba(92, 59, 34, 0.32);
+}
+
+body.dice-theme-watercolor .game-die.locked,
+body.dice-theme-watercolor .game-die.armed,
+body.dice-theme-watercolor .game-die.final-selected {
+  background: var(--wc-wood-dark);
+  border-color: var(--wc-wood-dark);
+}
+
+body.dice-theme-watercolor .bonus-stack .bonus-value,
+body.dice-theme-watercolor .bonus-progress {
+  color: var(--wc-gold);
+}
+
+body.dice-theme-watercolor .bonus-progress {
+  box-shadow: inset 0 0 0 0.25rem var(--wc-cream-deep);
+  background: rgba(248, 236, 214, 0.9);
 }
 
 .game-die.rolling .face-die,

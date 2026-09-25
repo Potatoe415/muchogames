@@ -2,8 +2,8 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Added a "Jouer solo (test)" button to Yatzy's splash screen — a graphics experiment, identical robot-mode rules, only the visuals differ: hand-painted watercolor die faces (`assets/dice-test/die-1..6.jpg`, cropped from a user-supplied reference image) and a wood-table game background (`assets/dice-test/game-bg-test.jpg`) behind the scorecard. Gated by `state.setup.diceTheme` ("default"/"watercolor"), orthogonal to `mode` — zero changes to robot.js/session.js/scoring.js. `npm run check` passes; verified live in-browser (splash button, dice faces, background) via the Cursor browser tool.
-Focus: None — task complete. Optional follow-up: gather feedback on the watercolor look, then either promote it to the real "Partie solo" button or drop the experiment.
+Status: Added a "Jouer solo (test)" button to Yatzy's splash screen — a graphics experiment, identical robot-mode rules, only the visuals differ. First pass used a literal background photo behind the normal flat UI (rejected by user - looked like a double board). Redone: watercolor die faces (`assets/dice-test/die-1..6.jpg`) plus a full wood/parchment re-skin of the real board chrome itself (scoreboard frame, category tiles, dice-tray shell, bonus accent - new CSS vars `--wc-wood`/`--wc-cream`/`--wc-gold` scoped to `body.dice-theme-watercolor` in `styles.css`). No background-image hack; the reference mockup's oversized file was deleted after use. Gated by `state.setup.diceTheme` ("default"/"watercolor"), orthogonal to `mode` — zero changes to robot.js/session.js/scoring.js. `npm run check` passes; verified live in-browser via the Cursor browser tool.
+Focus: None — task complete. Optional follow-up: gather feedback on the wood/watercolor look, then either promote it to the real "Partie solo" button or drop the experiment.
 Level: L1 (one game, additive/reversible, no shared contract or data model touched)
 
 Context:
@@ -25,6 +25,6 @@ Blockers:
 - End-to-end profile check is blocked until the profiles migration is applied and Google Auth is enabled.
 
 Recent_Changes:
-- 2026-09-25 Yatsy: added "Jouer solo (test)" graphics-experiment button (watercolor dice + wood-table background), gated by a new `state.setup.diceTheme` flag.
+- 2026-09-25 Yatsy: added "Jouer solo (test)" graphics-experiment button (watercolor dice + wood/parchment board re-skin), gated by a new `state.setup.diceTheme` flag.
    30|- 2026-09-25 Fixed Vercel deploys failing on the Hobby 12-function cap: merged `api/profile/*` (5 files) into one `api/profile/index.js`, action-routed (14 → 10 functions).
 - 2026-09-25 Added a discreet force-refresh button (clears SW cache, reloads) to the hub home page footer.
