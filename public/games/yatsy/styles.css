@@ -1605,17 +1605,54 @@ body.dice-theme-watercolor .icon-tile .fan span {
   background: var(--wc-wood);
 }
 
+/* Seamless-band request: the 5 dice sit inside one continuous wood-framed
+   cream strip with no gap or per-die box between them, so the row reads
+   as a single smooth image instead of 5 separate button shells. Lock/turn
+   state (previously a solid color swap) becomes a thin ring on the die
+   face itself so the strip never breaks up. The aspect-ratio matches the
+   dice-test crop's own (taller-than-square) proportions so `cover` never
+   needs to crop into the shadow beneath the die - see createDieFace(). */
+body.dice-theme-watercolor .dice-row {
+  gap: 0;
+  background: var(--wc-cream);
+  border: 0.28rem solid var(--wc-wood);
+  border-radius: 1.1rem;
+  padding: 0.3rem;
+}
+
 body.dice-theme-watercolor .game-die {
-  background: var(--wc-wood);
-  border-color: var(--wc-wood-dark);
-  box-shadow: 0 0.35rem 0 rgba(92, 59, 34, 0.32);
+  aspect-ratio: 0.787;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 body.dice-theme-watercolor .game-die.locked,
 body.dice-theme-watercolor .game-die.armed,
-body.dice-theme-watercolor .game-die.final-selected {
-  background: var(--wc-wood-dark);
-  border-color: var(--wc-wood-dark);
+body.dice-theme-watercolor .game-die.final-selected,
+body.dice-theme-watercolor .game-die.reverse-selected,
+body.dice-theme-watercolor .game-die.reverse-selected.armed,
+body.dice-theme-watercolor .game-die.reverse-selected.final-selected {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+body.dice-theme-watercolor .game-die.locked .face-die-watercolor,
+body.dice-theme-watercolor .game-die.final-selected .face-die-watercolor {
+  border-radius: 0.6rem;
+  box-shadow: inset 0 0 0 0.2rem var(--wc-gold);
+}
+
+body.dice-theme-watercolor .game-die.armed .face-die-watercolor {
+  border-radius: 0.6rem;
+  box-shadow: inset 0 0 0 0.16rem rgba(185, 133, 47, 0.45);
+}
+
+body.dice-theme-watercolor .game-die.reverse-selected .face-die-watercolor {
+  border-radius: 0.6rem;
+  box-shadow: inset 0 0 0 0.2rem #ff7a1f;
 }
 
 body.dice-theme-watercolor .bonus-stack .bonus-value,
