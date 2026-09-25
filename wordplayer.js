@@ -382,12 +382,13 @@ async function initializeWordPlayer() {
 function hydrateUserInterface(gameEntry) {
   document.title = `${gameEntry.title} - Muchogames`;
 
+  const bannerSource = gameEntry.banner || gameEntry.thumbnail;
   const bannerElement = document.getElementById(DOM.banner);
-  if (!bannerElement || !gameEntry.thumbnail) {
+  if (!bannerElement || !bannerSource) {
     return;
   }
 
-  bannerElement.src = gameEntry.thumbnail;
+  bannerElement.src = bannerSource;
 
   bannerElement.onerror = () => {
     const currentSource =

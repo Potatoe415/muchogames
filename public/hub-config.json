@@ -17,7 +17,8 @@
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=taboo",
     "data": "/data/taboo/taboo_words.json",
-    "thumbnail": "/games/taboo/assets/thumbnail.jpg"
+    "thumbnail": "/games/taboo/assets/Gemini_Generated_Image_4xl1b54xl1b54xl1.jpg",
+    "banner": "/games/taboo/assets/tab-short.jpg"
   },
   {
     "id": "esquisse",
