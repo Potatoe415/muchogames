@@ -1075,7 +1075,6 @@ body.player-two-turn .selection-action.is-primary {
 .score-cell {
   min-height: 4.15rem;
   border-right: 0.22rem solid var(--grid-line);
-  border-bottom: 0.22rem solid var(--grid-line);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1594,7 +1593,6 @@ body.dice-theme-watercolor .score-group + .score-group {
 
 body.dice-theme-watercolor .score-cell {
   border-right-color: var(--wc-cream-deep);
-  border-bottom-color: var(--wc-cream-deep);
 }
 
 body.dice-theme-watercolor .category-cell,
@@ -2444,7 +2442,6 @@ body.player-two-turn .player-cell.valid {
     min-height: 3.2rem;
     padding: 0.22rem;
     border-right-width: 0.16rem;
-    border-bottom-width: 0.16rem;
   }
 
   .player-cell {
