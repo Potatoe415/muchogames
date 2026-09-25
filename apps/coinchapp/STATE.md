@@ -29,6 +29,7 @@ Blockers:
 - Shared profile writes fail until `0003_profiles.sql` is applied and Google is an Auth provider.
 
 Recent_Changes:
+- 2026-09-25 Président: removed the hand sort-order toggle button; hand always sorts by rank.
 - 2026-09-25 Back controls return to the games hub. They no longer open this app's root.
 - 2026-09-24 Wins/losses from all 4 games also increment `muchogames_profiles` after a hub launch code.
 - 2026-09-24 Président: a losing-2 finish shows a peach; bots spend twos before their last other card and pass rather than finish on them.
