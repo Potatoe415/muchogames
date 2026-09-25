@@ -1652,15 +1652,31 @@ body.dice-theme-watercolor .game-die.reverse-selected.final-selected {
 /* Yellow ring = actually selected (kept for reroll) only. Neither "armed"
    (fresh, unrolled turn) nor "final-selected" (last roll, can't toggle
    anymore) is a player selection, so - unlike the default flat-color
-   theme - they get no ring here; only .locked does. */
-body.dice-theme-watercolor .game-die.locked .face-die-watercolor {
-  border-radius: 0.6rem;
-  box-shadow: inset 0 0 0 0.2rem var(--locked-outline);
+   theme - they get no ring here; only .locked does.
+   A plain inset box-shadow rings the whole square crop, including the
+   paper margin and the die's own drop shadow below it. Using a ::after
+   border instead, inset asymmetrically (tighter on top/sides, pulled up
+   more from the bottom), hugs the die's own silhouette so the ring's
+   bottom edge lands on/over the shadow rather than framing it. */
+body.dice-theme-watercolor .face-die-watercolor {
+  position: relative;
 }
 
-body.dice-theme-watercolor .game-die.reverse-selected .face-die-watercolor {
+body.dice-theme-watercolor .game-die.locked .face-die-watercolor::after,
+body.dice-theme-watercolor .game-die.reverse-selected .face-die-watercolor::after {
+  content: "";
+  position: absolute;
+  inset: 4% 5% 13% 5%;
   border-radius: 0.6rem;
-  box-shadow: inset 0 0 0 0.2rem #ff7a1f;
+  pointer-events: none;
+}
+
+body.dice-theme-watercolor .game-die.locked .face-die-watercolor::after {
+  border: 0.28rem solid var(--locked-outline);
+}
+
+body.dice-theme-watercolor .game-die.reverse-selected .face-die-watercolor::after {
+  border: 0.28rem solid #ff7a1f;
 }
 
 body.dice-theme-watercolor .bonus-stack .bonus-value,
@@ -1671,6 +1687,14 @@ body.dice-theme-watercolor .bonus-progress {
 body.dice-theme-watercolor .bonus-progress {
   box-shadow: inset 0 0 0 0.25rem var(--wc-cream-deep);
   background: rgba(248, 236, 214, 0.9);
+}
+
+/* Unrolled-die placeholder (die.value === null): matches the dice-row's
+   own paper background instead of the default theme's plain white, so an
+   unrolled die reads as an empty cutout in the paper rather than a white
+   sticker sitting on it. */
+body.dice-theme-watercolor .star-shape {
+  background: var(--wc-paper);
 }
 
 .game-die.rolling .face-die,
