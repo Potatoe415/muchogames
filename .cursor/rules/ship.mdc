@@ -1,12 +1,14 @@
 ---
-description: Commit and push by running scripts/ship.ps1 only
+description: After every change, commit and push with scripts/ship.ps1 only
 alwaysApply: true
 ---
 
 # Ship
 
-When the user asks to commit and/or push, run only this from the git root and stop. Do not run `git add`, `git commit`, or `git push` yourself. Do not inspect status, diff, or log first.
+After every completed change — anything you built or modified — commit and push before you finish. Do not wait for the user to ask. Run only this from the git root and stop. Do not run `git add`, `git commit`, or `git push` yourself. Do not inspect status, diff, or log first.
 
 `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<conventional message>"`
 
 One message, one command. The script stages current changes, leaves `apps/coinchapp/run.bat` and `.env` files unstaged, commits, and pushes. Never force-push. Never add flags the script does not use.
+
+The script commits every other change currently in the working tree. If that tree already holds edits you did not make for this task, set those aside, ship, then restore them, so this task is its own commit.

@@ -29,6 +29,7 @@ Blockers:
 - Shared profile writes fail until `0003_profiles.sql` is applied and Google is an Auth provider.
 
 Recent_Changes:
+- 2026-09-25 Agents commit and push with `scripts/ship.ps1` after every completed change, without waiting to be asked.
 - 2026-09-24 Wins/losses from all 4 games also increment `muchogames_profiles` after a hub launch code.
 - 2026-09-24 Président: a losing-2 finish shows a peach; bots spend twos before their last other card and pass rather than finish on them.
 - 2026-09-24 Président: your own play slides in from your seat. Splash stamp `v0.6`.

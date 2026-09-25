@@ -19,7 +19,9 @@ Run `check` before declaring any task done. Never claim something was verified i
 | Check | No single combined command exists yet — run `npm test && npx tsc --noEmit && npm run lint && npm run build` (see `docs/BACKLOG.md`) |
 | Commit and push | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<why>"` from the git root (`scripts/ship.ps1`) |
 
-When the user asks to commit and/or push, that script is the only step. Do not run `git add`, `git commit`, or `git push` yourself. It stages the current changes, leaves `run.bat` and `.env` files unstaged, commits, and pushes.
+After every completed change — anything you built or modified — commit and push before you finish. Do not wait for the user to ask. That script is the only step. Do not run `git add`, `git commit`, or `git push` yourself. Do not inspect status, diff, or log first. It stages current changes, leaves `run.bat` and `.env` files unstaged, commits, and pushes. One message, one command. Never force-push. Never add flags the script does not use.
+
+The script commits every other change currently in the working tree. Finish one task, then ship it. If the tree already holds edits you did not make for this task, set those aside, ship, then restore them, so this task is its own commit.
 
 ## Context loading
 
@@ -94,7 +96,7 @@ See `docs/DEBUGGING.md` for the current (as-is) error/logging conventions and th
 - `docs/DATA_MODEL.md`: update whenever the schema or `GameState`/`GameSettings` shapes change.
 - L2: add a decision file in `docs/decisions/` and one line in `docs/decisions/INDEX.md`; delete the task file.
 - `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md`: propose changes; edit only after the user confirms.
-- Propose a conventional commit message.
+- Commit and push with `scripts/ship.ps1` and a conventional message. Do not wait for the user to ask.
 
 ## File Ownership
 
