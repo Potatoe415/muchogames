@@ -1599,7 +1599,7 @@ body.dice-theme-watercolor .score-cell {
 
 body.dice-theme-watercolor .category-cell,
 body.dice-theme-watercolor .category-cell.spacer-cell {
-  background: var(--wc-cream-deep);
+  background: #ffffff;
 }
 
 body.dice-theme-watercolor .icon-tile {
