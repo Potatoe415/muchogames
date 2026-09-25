@@ -53,10 +53,10 @@
     }
     if (wins === 0 && losses === 0) return empty;
     try {
-      const response = await fetch("/api/profile/add-results", {
+      const response = await fetch("/api/profile", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ idToken, wins, losses })
+        body: JSON.stringify({ action: "add-results", idToken, wins, losses })
       });
       if (!response.ok) throw new Error("add-failed");
       return { wins, losses };
@@ -73,10 +73,14 @@
   function recordSharedResult(won) {
     const idToken = readLiveIdToken();
     if (!idToken) return;
-    fetch("/api/profile/record-result", {
+    fetch("/api/profile", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ idToken, won: Boolean(won) })
+      body: JSON.stringify({
+        action: "record-result",
+        idToken,
+        won: Boolean(won)
+      })
     }).catch(() => {});
   }
 
@@ -98,10 +102,10 @@
     const idToken = readLiveIdToken();
     if (!idToken) return href;
     try {
-      const response = await fetch("/api/profile/launch-code", {
+      const response = await fetch("/api/profile", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ idToken }),
+        body: JSON.stringify({ action: "launch-code", idToken }),
         signal: AbortSignal.timeout(2500)
       });
       if (!response.ok) return href;

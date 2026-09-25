@@ -176,7 +176,7 @@ Sensitive_Data: The Google account is verified server-side. The row stores the c
 ### Entity: ProfileLaunchCode
 
 Purpose: One-time hand-off so coinchapp and Tranquil can attribute a result to that profile without putting a Google token in the launch URL.
-Storage: `public.muchogames_launch_codes`. Minted by `POST /api/profile/launch-code` (60s, single use). The receiving app marks `used_at` and keeps the resolved profile id in an httpOnly cookie for the browser session.
+Storage: `public.muchogames_launch_codes`. Minted by `POST /api/profile` (`action: "launch-code"`, 60s, single use). The receiving app marks `used_at` and keeps the resolved profile id in an httpOnly cookie for the browser session.
 Sensitive_Data: The code itself is a secret capability until it is used. It is not a Google token.
 
 ---

@@ -161,10 +161,10 @@ async function loadSyncedProfile() {
   const idToken = getStoredIdToken();
   if (!idToken) return;
   try {
-    const response = await fetch("/api/profile/get", {
+    const response = await fetch("/api/profile", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ idToken })
+      body: JSON.stringify({ action: "get", idToken })
     });
     if (!response.ok) return;
     const data = await response.json();
@@ -180,10 +180,10 @@ async function loadSyncedProfile() {
 function syncProfileField(patch) {
   const idToken = getStoredIdToken();
   if (!idToken) return;
-  fetch("/api/profile/upsert", {
+  fetch("/api/profile", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ idToken, ...patch })
+    body: JSON.stringify({ action: "upsert", idToken, ...patch })
   })
     .then((response) => (response.ok ? response.json() : null))
     .then((data) => {

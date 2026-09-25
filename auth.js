@@ -117,10 +117,14 @@ function persistIdToken(idToken) {
 // throws: a failed sync just means the shared profile stays empty/local.
 function syncProfileName(idToken) {
   try {
-    fetch("/api/profile/upsert", {
+    fetch("/api/profile", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ idToken, name: getStoredPlayerName() })
+      body: JSON.stringify({
+        action: "upsert",
+        idToken,
+        name: getStoredPlayerName()
+      })
     })
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => restoreAvatarFromProfile(data?.profile?.avatarUrl))
