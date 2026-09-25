@@ -2,9 +2,9 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Added a discreet "Actualiser" (force-refresh) button to the hub home page footer. It wasn't visible in prod because every recent deploy had failed on Vercel's Hobby 12-function cap (`api/` had grown to 14). Fixed by merging `api/profile/*` (5 files) into one action-routed function, `api/profile/index.js` (now 10 functions). Pushed; awaiting confirmation the next deploy reaches `READY`.
-Focus: Confirm the pushed deploy for the `api/profile` consolidation goes `READY` on Vercel, then confirm the force-refresh button is visible/working in production.
-Level: L2 (infra — Serverless Functions count)
+Status: Added a discreet "Actualiser" (force-refresh) button to the hub home page footer. It wasn't visible in prod because every recent deploy had failed on Vercel's Hobby 12-function cap (`api/` had grown to 14). Fixed by merging `api/profile/*` (5 files) into one action-routed function, `api/profile/index.js` (now 10 functions). Deploy `d92f6c9` confirmed `READY` on Vercel — production is unstuck.
+Focus: Confirm in the browser that the force-refresh button now shows on the hub home page, and that signed-in profile get/upsert/launch-code/record-result still work through the new `/api/profile` route.
+Level: L1 (verification only — the L2 infra fix already shipped)
 
 Context:
 - Working_On: `api/profile/index.js`, `hub.js`, `hub.css`
@@ -13,8 +13,8 @@ Context:
 - Relevant_Decisions: `docs/decisions/0039-consolidate-api-profile-into-one-serverless-function.md`
 
 Next:
-- Check the latest Vercel deployment for commit after `3304aae` reaches `READY` (not `ERROR`); if still over 12 functions, consolidate `api/yatsy/games/*` next.
 - Confirm the force-refresh button is now visible at the bottom-left of the hub home page in production.
+- Spot-check signed-in profile flows against the new `/api/profile` route (get/upsert/add-results/launch-code/record-result all now share one function, action-routed).
 - Apply `0003_profiles.sql` if it is not on `multigames-db`, and enable Google as an Auth provider.
 - Sign in, finish one Yatzy (vs robot), one coinchapp match, and one Tranquil match launched from the hub. Confirm `/profile` counts them.
 - Confirm wording edits for `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, and `docs/SECURITY.md`.
