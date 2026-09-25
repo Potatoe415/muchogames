@@ -95,11 +95,13 @@
   /* Floating circular back/options buttons, pinned to a screen corner via an
      added "left-4 top-4" or "right-4 top-4" utility class alongside this one
      — same back-top-left, options-top-right convention used by the sibling
-     Bergamots hub games and coinchapp. */
+     Bergamots hub games and coinchapp. Sizing/color match coinchapp's
+     `HomeTopBar.tsx` exactly (h-9 w-9, bg-black/45) so the control looks
+     identical across every app, not just similar. */
   .icon-btn-float {
-    @apply fixed z-20 flex items-center justify-center h-10 w-10 rounded-full
-           bg-black/30 hover:bg-black/50 text-white/80 hover:text-white
-           backdrop-blur-sm shadow-md transition-colors;
+    @apply fixed z-20 flex items-center justify-center h-9 w-9 rounded-full
+           bg-black/45 hover:bg-black/60 text-white shadow-md
+           backdrop-blur-sm transition-colors;
   }
   .input-field {
     @apply bg-ocean-800 border border-ocean-600 rounded-lg px-3 py-2

@@ -43,6 +43,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0035 | 2026-09-17 | Remove `diceduel` from the catalog | Accepted |
 | 0036 | 2026-09-17 | Add a wins/losses counter to Yatzy, kept client-only and per-app (not synced to coinchapp/tranquil) | Accepted |
 | 0037 | 2026-09-22 | Bootstrap v10.1 context architecture alignment | Accepted |
+| 0038 | 2026-09-25 | Match Coinchapp's floating back/settings button style hub-wide | Accepted |
 
 ## When to log a decision
 Any of:

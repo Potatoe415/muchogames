@@ -65,20 +65,28 @@
   display: none;
 }
 
+/* Matches Coinchapp's `HomeTopBar.tsx` floating back/settings buttons
+   exactly (h-9 w-9, bg-black/45, shadow-md, backdrop-blur-sm) so the same
+   two controls look identical everywhere. A game can still re-skin the
+   background/color in its own stylesheet (see `cafards`, `blackstories`,
+   `pyramide`) for a themed look — only the base default changes here. */
 .back-button,
 .options-button {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-  background: #f1f1f1;
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: bold;
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   cursor: pointer;
   line-height: 1;
