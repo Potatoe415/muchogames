@@ -1639,15 +1639,13 @@ body.dice-theme-watercolor .game-die.reverse-selected.final-selected {
   box-shadow: none;
 }
 
-body.dice-theme-watercolor .game-die.locked .face-die-watercolor,
-body.dice-theme-watercolor .game-die.final-selected .face-die-watercolor {
+/* Yellow ring = actually selected (kept for reroll) only. Neither "armed"
+   (fresh, unrolled turn) nor "final-selected" (last roll, can't toggle
+   anymore) is a player selection, so - unlike the default flat-color
+   theme - they get no ring here; only .locked does. */
+body.dice-theme-watercolor .game-die.locked .face-die-watercolor {
   border-radius: 0.6rem;
   box-shadow: inset 0 0 0 0.2rem var(--wc-gold);
-}
-
-body.dice-theme-watercolor .game-die.armed .face-die-watercolor {
-  border-radius: 0.6rem;
-  box-shadow: inset 0 0 0 0.16rem rgba(185, 133, 47, 0.45);
 }
 
 body.dice-theme-watercolor .game-die.reverse-selected .face-die-watercolor {
