@@ -113,38 +113,6 @@ select {
   pointer-events: none;
 }
 
-.home-icon {
-  position: relative;
-  width: 0.92rem;
-  height: 0.78rem;
-  background: var(--slate);
-  border-radius: 0.14rem;
-}
-
-.home-icon::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -0.42rem;
-  width: 0.76rem;
-  height: 0.76rem;
-  background: var(--slate);
-  transform: translateX(-50%) rotate(45deg);
-  border-radius: 0.12rem;
-}
-
-.home-icon::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0.26rem;
-  height: 0.38rem;
-  background: rgba(255, 255, 255, 0.92);
-  transform: translateX(-50%);
-  border-radius: 0.08rem 0.08rem 0 0;
-}
-
 .splash-screen {
   position: fixed;
   inset: 0;
@@ -726,7 +694,6 @@ select {
   height: 2.2rem;
   min-width: 2.2rem;
   border-radius: 50%;
-  font-size: 1.1rem;
   flex: 0 0 auto;
 }
 
@@ -738,8 +705,7 @@ select {
   min-width: 0;
 }
 
-.robot-toggle,
-.restart-button {
+.robot-toggle {
   border: 0.22rem solid rgba(87, 99, 110, 0.45);
   background: rgba(255, 255, 255, 0.9);
   color: var(--slate);
@@ -759,8 +725,21 @@ select {
   border-color: rgba(87, 99, 110, 0.75);
 }
 
+/* Icon-only (YAM-UI-02): same circular icon-button footprint as
+   .home-button/.game-settings-button on the same header row, no text label. */
 .restart-button {
+  width: 2.2rem;
+  height: 2.2rem;
+  min-width: 2.2rem;
+  border: 0.22rem solid rgba(87, 99, 110, 0.45);
   background: rgba(252, 235, 207, 0.95);
+  color: var(--slate);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0 rgba(87, 99, 110, 0.14);
+  flex-shrink: 0;
 }
 
 .emoji-trigger {
@@ -2237,16 +2216,10 @@ body.player-two-turn .player-cell.valid {
     border-width: 0.18rem;
   }
 
-  .home-icon {
-    width: 0.84rem;
-    height: 0.7rem;
-  }
-
   .game-settings-button {
     width: 2rem;
     height: 2rem;
     min-width: 2rem;
-    font-size: 1rem;
   }
 
   .page {
@@ -2338,11 +2311,17 @@ body.player-two-turn .player-cell.valid {
     font-size: clamp(1.45rem, 8.5vw, 1.9rem);
   }
 
-  .robot-toggle,
-  .restart-button {
+  .robot-toggle {
     min-height: 2rem;
     padding: 0.24rem 0.6rem;
     font-size: 0.68rem;
+    border-width: 0.18rem;
+  }
+
+  .restart-button {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
     border-width: 0.18rem;
   }
 

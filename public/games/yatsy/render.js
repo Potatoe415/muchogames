@@ -219,7 +219,11 @@ window.YATZY_RENDER = {
     elements.gameTitle.textContent = isOnlineGame()
       ? `${t("splash.title")} - ${state.session.gameCode}`
       : t("splash.title");
-    elements.restartButton.textContent = isOnlineGame() ? t("controls.leaveGame") : t("controls.restart");
+    // Icon-only (YAM-UI-02): the restart/leave distinction is conveyed via
+    // the accessible label, never a visible text label on the button.
+    const restartLabel = isOnlineGame() ? t("controls.leaveGame") : t("controls.restart");
+    elements.restartButton.setAttribute("aria-label", restartLabel);
+    elements.restartButton.setAttribute("title", restartLabel);
     elements.emojiButton.setAttribute("aria-label", t("controls.sendEmoji"));
     elements.emojiButton.setAttribute("title", t("controls.sendEmoji"));
     emojiController?.syncLabels();
