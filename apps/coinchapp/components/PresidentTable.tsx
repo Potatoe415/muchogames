@@ -77,7 +77,6 @@ export function PresidentTable({
   const [emojiOn, setEmojiOn] = useState(true);
   const [autoPassOn, setAutoPassOn] = useState(true);
   const [selected, setSelected] = useState<Card[]>([]);
-  const [handSort, setHandSort] = useState<HandSortMode>("rank");
   const { optimisticHand, optimisticPile, busy, play, runExclusive } = usePresidentOptimisticPlay(view);
   const animationLocked = usePresidentAnimationLock(view);
   const heldPile = usePresidentPileHold(view.pile, view.finishedOrder.length, burnKey(view.lastBurn));
@@ -235,8 +234,6 @@ export function PresidentTable({
             myTurnToPlay={myTurnToPlay && !animationLocked}
             legalRanks={legalRanks}
             revolution={view.revolution}
-            sortMode={handSort}
-            onToggleSort={() => setHandSort((mode) => (mode === "suit" ? "rank" : "suit"))}
             canPlay={comboLegal}
             canPass={view.canPass}
             busy={busy || animationLocked}
@@ -689,35 +686,12 @@ const HAND_CURVE_ROTATE = 6;
  *  `SUIT_ORDER`), kept in sync for a consistent hand layout across all games. */
 const SUIT_ORDER: Record<string, number> = { S: 0, H: 1, C: 2, D: 3 };
 
-type HandSortMode = "suit" | "rank";
-
-function sortHand(hand: Card[], mode: HandSortMode, revolution: boolean): Card[] {
+function sortHand(hand: Card[], revolution: boolean): Card[] {
   return [...hand].sort((a, b) => {
-    if (mode === "rank") {
-      const byRank = rankValue(a.rank, revolution) - rankValue(b.rank, revolution);
-      if (byRank !== 0) return byRank;
-      return SUIT_ORDER[a.suit] - SUIT_ORDER[b.suit];
-    }
-    if (a.suit !== b.suit) return SUIT_ORDER[a.suit] - SUIT_ORDER[b.suit];
-    return rankValue(a.rank, false) - rankValue(b.rank, false);
+    const byRank = rankValue(a.rank, revolution) - rankValue(b.rank, revolution);
+    if (byRank !== 0) return byRank;
+    return SUIT_ORDER[a.suit] - SUIT_ORDER[b.suit];
   });
-}
-
-function HandSortButton({ mode, onToggle }: { mode: HandSortMode; onToggle: () => void }) {
-  const { t } = useI18n();
-  const byRank = mode === "rank";
-  return (
-    <button
-      type="button"
-      data-id="president-hand-sort-button"
-      aria-label={byRank ? t("sortHandBySuit") : t("sortHandByRank")}
-      aria-pressed={byRank}
-      onClick={onToggle}
-      className="flex h-9 w-9 items-center justify-center rounded-full bg-black/55 text-base font-black text-[var(--card-face)] shadow-lg ring-1 ring-white/30 backdrop-blur-sm"
-    >
-      {byRank ? "A" : "♠"}
-    </button>
-  );
 }
 
 function HandArea({
@@ -726,8 +700,6 @@ function HandArea({
   myTurnToPlay,
   legalRanks,
   revolution,
-  sortMode,
-  onToggleSort,
   canPlay,
   canPass,
   busy,
@@ -740,8 +712,6 @@ function HandArea({
   myTurnToPlay: boolean;
   legalRanks: Set<Card["rank"]>;
   revolution: boolean;
-  sortMode: HandSortMode;
-  onToggleSort: () => void;
   canPlay: boolean;
   canPass: boolean;
   busy: boolean;
@@ -764,7 +734,7 @@ function HandArea({
     return () => observer.disconnect();
   }, []);
 
-  const sorted = sortHand(hand, sortMode, revolution);
+  const sorted = sortHand(hand, revolution);
   const n = sorted.length;
   const maxStep = cardW * HAND_STEP_RATIO;
   const step = n > 1 ? Math.min(maxStep, Math.max(0, maxFanWidth - cardW) / (n - 1)) : maxStep;
@@ -807,9 +777,6 @@ function HandArea({
               </div>
             );
           })}
-        </div>
-        <div className="absolute right-2 top-6 z-30">
-          <HandSortButton mode={sortMode} onToggle={onToggleSort} />
         </div>
       </div>
       <div className="mt-2 flex justify-center gap-3" data-id="president-action-buttons">
