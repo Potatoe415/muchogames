@@ -1627,7 +1627,6 @@ body.dice-theme-watercolor .icon-tile .fan span {
 body.dice-theme-watercolor .dice-row {
   gap: 0;
   background: var(--wc-paper);
-  border: 0.28rem solid var(--wc-wood);
   border-radius: 1.1rem;
   padding: 0.3rem;
 }
