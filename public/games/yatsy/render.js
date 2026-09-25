@@ -217,8 +217,8 @@ window.YATZY_RENDER = {
 
   function renderHeader() {
     elements.gameTitle.textContent = isOnlineGame()
-      ? `${t("splash.title")} - ${state.session.gameCode}`
-      : t("splash.title");
+      ? `${t("header.gameTitle")} - ${state.session.gameCode}`
+      : t("header.gameTitle");
     // Icon-only (YAM-UI-02): the restart/leave distinction is conveyed via
     // the accessible label, never a visible text label on the button.
     const restartLabel = isOnlineGame() ? t("controls.leaveGame") : t("controls.restart");

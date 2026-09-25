@@ -2,30 +2,28 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Hub home version badge is V0.0.5 (`version.js`), from the bug-tracker ticket "changer la version en 0.0.5" on the games home screen. Placeholder example tickets in that doc were left untouched.
-Focus: Recheck the bug-tracker Google Doc about every 10 minutes and take the next real [OPEN] ticket.
-Level: L0 (one string, hub badge only)
+Status: Yams in-game header now says "Yams" (FR/EN/ES) and the settings gear sits to the right of the score pills. Hub badge stays V0.0.5. Two bug-tracker tickets about hiding `*.vercel.app` behind `muchogames.win/<jeu>` are not started: Coinche, Tranquil, and GameBoy are other deployments, so that needs a rewrite/proxy decision.
+Focus: Recheck the bug-tracker Google Doc about every 10 minutes.
+Level: L1 (yatsy header only). URL tickets are L2 and waiting.
 
 Context:
 - Working_On: bug-tracker doc `1mrgGMVeA2a1bCI3eavf7oPno57xyydzF3Z0yi3neS2U`
-- Relevant_Files: `version.js` (badge text). Hub renders it in `hub.js` `renderVersionBadge`.
-- Do_Not_Touch: per-game build tags (Yatzy `v0.4` is a different label); `package.json` version is the npm package, not the on-screen badge
-- Relevant_Decisions: none
+- Relevant_Files: `public/games/yatsy/index.html`, `render.js`, `i18n.js` (`header.gameTitle`)
+- Do_Not_Touch: splash title still "Yatzy"; category label "Yatzy" unchanged; hub launch URLs in `public/hub-config.json`
+- Relevant_Decisions: none yet for the domain rewrite
 
 Next:
-- Keep polling the bug-tracker doc for new [OPEN] tickets. Drive can read the doc; it cannot edit the body, so status tags in the doc still need a write path.
-- Sign in, finish one Yatzy (vs robot), one coinchapp match, and one Tranquil match launched from the hub. Confirm `/profile` counts them.
-- Apply `0003_profiles.sql` if it is not on `multigames-db`, and enable Google as an Auth provider.
-- Confirm wording edits for `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, and `docs/SECURITY.md`.
+- Decide how `muchogames.win/coinche` (and the other external apps) should proxy to their own Vercel projects before changing launch URLs.
+- Keep polling the bug-tracker. Drive can read it; writing status tags in the doc still fails from here.
+- Sign in, finish one Yatzy, one coinchapp match, and one Tranquil match from the hub. Confirm `/profile` counts them.
 
 Open_Questions:
-- None new.
+- Should GameBoy and Easy Frog also live under `muchogames.win/<jeu>`, or only the games in this repo?
 
 Blockers:
-- End-to-end profile check is blocked until the profiles migration is applied and Google Auth is enabled.
-- Bug-tracker status tags cannot be written back: Google Drive update only changes title/parent, and the Docs connector is down.
+- Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
+- Bug-tracker body cannot be edited through the Drive connector.
 
 Recent_Changes:
+- 2026-09-25 Yams: in-game title "Yams"; settings gear moved to the right of the scores.
 - 2026-09-25 Hub footer version badge bumped from V0.0.4 to V0.0.5 (`version.js`).
-- 2026-09-25 Rebrand batch (display name only): Pictionary -> "Dessiner c'est gagner", Esquisse -> "Téléphone bizarre", Olé Mains -> "Jeu de mains", Pigeon Pigeon -> "Dictionnaire".
-- 2026-09-25 Yatsy header harmonized (back/settings icons, icon-only restart, single header row).

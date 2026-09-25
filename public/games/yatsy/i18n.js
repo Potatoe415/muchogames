@@ -4,6 +4,9 @@
       meta: {
         title: "Yatzy Online Duel"
       },
+      header: {
+        gameTitle: "Yams"
+      },
       splash: {
         title: "Yatzy",
         yourName: "Your name",
@@ -134,6 +137,9 @@
       meta: {
         title: "Duelo Yatzy en linea"
       },
+      header: {
+        gameTitle: "Yams"
+      },
       splash: {
         title: "Yatzy",
         yourName: "Tu nombre",
@@ -263,6 +269,9 @@
     fr: {
       meta: {
         title: "Duel Yatzy en ligne"
+      },
+      header: {
+        gameTitle: "Yams"
       },
       splash: {
         title: "Yatzy",
