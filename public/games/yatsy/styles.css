@@ -1576,6 +1576,10 @@ body.dice-theme-watercolor {
   --wc-cream: #f8ecd6;
   --wc-cream-deep: #f1ddb9;
   --wc-gold: #b9852f;
+  /* Sampled from the dice-test crops' own paper corners (~253,249,238) so
+     the dice-row band blends into the die images instead of showing a
+     visibly different cream behind them. */
+  --wc-paper: #fdf9ee;
 }
 
 body.dice-theme-watercolor .scoreboard-panel {
@@ -1622,7 +1626,7 @@ body.dice-theme-watercolor .icon-tile .fan span {
    making `cover` crop through the pips on their square tiles. */
 body.dice-theme-watercolor .dice-row {
   gap: 0;
-  background: var(--wc-cream);
+  background: var(--wc-paper);
   border: 0.28rem solid var(--wc-wood);
   border-radius: 1.1rem;
   padding: 0.3rem;
