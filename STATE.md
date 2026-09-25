@@ -2,21 +2,21 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Added a "Jouer solo (test)" button to Yatzy's splash screen — a graphics experiment, identical robot-mode rules, only the visuals differ. First pass used a literal background photo behind the normal flat UI (rejected by user - looked like a double board). Redone: watercolor die faces (`assets/dice-test/die-1..6.jpg`) plus a full wood/parchment re-skin of the real board chrome itself (scoreboard frame, category tiles, dice-tray shell, bonus accent - new CSS vars `--wc-wood`/`--wc-cream`/`--wc-gold` scoped to `body.dice-theme-watercolor` in `styles.css`). No background-image hack; the reference mockup's oversized file was deleted after use. Gated by `state.setup.diceTheme` ("default"/"watercolor"), orthogonal to `mode` — zero changes to robot.js/session.js/scoring.js. `npm run check` passes; verified live in-browser via the Cursor browser tool.
-Focus: None — task complete. Optional follow-up: gather feedback on the wood/watercolor look, then either promote it to the real "Partie solo" button or drop the experiment.
-Level: L1 (one game, additive/reversible, no shared contract or data model touched)
+Status: Worked a batch of 7 tickets from a "Bug Tracker & Release Backlog" doc: 4 display-name-only rebrands (`hub-config.json` titles + olemains's `<title>`), 1 Bataille Corse layout fix, 3 Yatzy header harmonization tickets, and 1 Bataille Corse bug investigated but not reproduced (see coinchapp's `STATE.md`). Each ticket shipped as its own commit via `scripts/ship.ps1`, per user's confirmed workflow choice (no branches/PRs).
+Focus: None open. Yatzy's header change was verified live via the browser tool - had to unregister its service worker mid-session (cache-first `sw.js`) to see the fresh CSS/markup, a pre-existing gotcha for anyone testing that game locally.
+Level: L1 per ticket (each change scoped to one game/one file); the rebrand batch touched the shared `hub-config.json` but only its per-game `title` values, not structure.
 
 Context:
-    10|- Working_On: none (task complete)
-- Relevant_Files: `public/games/yatsy/index.html`, `app.js`, `render.js`, `styles.css`, `assets/dice-test/`
-- Do_Not_Touch: other games; yatsy's `mode`-gated game logic (robot.js, session.js, scoring.js) — untouched by design
-- Relevant_Decisions: none (L1, no decision file)
+- Working_On: none (task complete)
+- Relevant_Files: `public/hub-config.json`, `public/games/olemains/index.html`, `public/games/yatsy/{index.html,render.js,styles.css}`, `apps/coinchapp/app/local/page.tsx`
+- Do_Not_Touch: internal game `id`s/folders/data files (user chose display-name-only rebrand, not a deep rename)
+- Relevant_Decisions: none (L1 batch, no decision file)
 
 Next:
-- If the watercolor look is approved, consider replacing the pip-grid `.face-die` default with it repo-wide, or removing the test button/assets if not.
+- If BAT-BUG-01 still reproduces, get a concrete repro from the user - see coinchapp's `STATE.md` Next for what was already ruled out.
 - Sign in, finish one Yatzy (vs robot), one coinchapp match, and one Tranquil match launched from the hub. Confirm `/profile` counts them.
 - Apply `0003_profiles.sql` if it is not on `multigames-db`, and enable Google as an Auth provider.
-   20|- Confirm wording edits for `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, and `docs/SECURITY.md`.
+- Confirm wording edits for `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, and `docs/SECURITY.md`.
 
 Open_Questions:
 - None new.
@@ -25,6 +25,8 @@ Blockers:
 - End-to-end profile check is blocked until the profiles migration is applied and Google Auth is enabled.
 
 Recent_Changes:
+- 2026-09-25 Rebrand batch (display name only): Pictionary -> "Dessiner c'est gagner", Esquisse -> "Téléphone bizarre", Olé Mains -> "Jeu de mains", Pigeon Pigeon -> "Dictionnaire" (`hub-config.json` `title` + olemains's page `<title>`).
+- 2026-09-25 Yatsy: in-game header harmonized with the other custom games' back/settings icon SVGs, restart button made icon-only (aria-label carries the "Restart"/"Leave" distinction instead of visible text), and the header's two rows merged into one (YAM-UI-01/02/03).
 - 2026-09-25 Yatsy: added "Jouer solo (test)" graphics-experiment button (watercolor dice + wood/parchment board re-skin), gated by a new `state.setup.diceTheme` flag.
-   30|- 2026-09-25 Fixed Vercel deploys failing on the Hobby 12-function cap: merged `api/profile/*` (5 files) into one `api/profile/index.js`, action-routed (14 → 10 functions).
+- 2026-09-25 Fixed Vercel deploys failing on the Hobby 12-function cap: merged `api/profile/*` (5 files) into one `api/profile/index.js`, action-routed (14 -> 10 functions).
 - 2026-09-25 Added a discreet force-refresh button (clears SW cache, reloads) to the hub home page footer.
