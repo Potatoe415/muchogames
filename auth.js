@@ -61,6 +61,7 @@ const authState = {
 export function initAuthWidget() {
   renderAuthWidget();
   ensureAvatarThumb();
+  resyncAvatarIfMissing();
   loadGoogleScript(() => {
     window.google.accounts.id.initialize({
       client_id: GOOGLE_CLIENT_ID,
@@ -72,6 +73,33 @@ export function initAuthWidget() {
       renderGoogleButton();
     }
   });
+}
+
+// Returning visits only restore `authState.email` from `localStorage` — the
+// server round-trip that pulls the avatar down (see syncProfileName) used to
+// run solely on the explicit Google Sign-In click. If the avatar was ever
+// lost locally (storage cleared, different tab/PWA context, quota pressure)
+// while the lightweight "signed in" flag survived, nothing brought it back
+// until the player logged out and back in. Self-heal here instead, as long
+// as the stored ID token is still valid (it's short-lived, ~1h — see
+// ID_TOKEN_STORAGE_KEY above); a stale token just fails silently, same as
+// syncProfileName already does.
+function resyncAvatarIfMissing() {
+  if (!authState.email || readStoredAvatar()) return;
+  const idToken = readStoredIdToken();
+  if (!idToken) return;
+  try {
+    fetch("/api/profile", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "get", idToken })
+    })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => restoreAvatarFromProfile(data?.profile?.avatarUrl))
+      .catch(() => {});
+  } catch {
+    // fetch unavailable/blocked — not fatal, same as syncProfileName.
+  }
 }
 
 function readStoredEmail() {
@@ -100,6 +128,14 @@ function persistEmail(email) {
 // Read directly (duplicated key string, same pattern as NAME_STORAGE_KEY
 // above) by /profile/profile.js and, later, same-origin games — none of
 // them can import this bundled file. See docs/tasks/unified-profile-accounts.md.
+function readStoredIdToken() {
+  try {
+    return localStorage.getItem(ID_TOKEN_STORAGE_KEY) || "";
+  } catch {
+    return "";
+  }
+}
+
 function persistIdToken(idToken) {
   try {
     if (idToken) {
@@ -135,7 +171,8 @@ function syncProfileName(idToken) {
 }
 
 function restoreAvatarFromProfile(dataUrl) {
-  if (!authState.email || !dataUrl || !dataUrl.startsWith("data:image/")) return;
+  if (!authState.email || !dataUrl || !dataUrl.startsWith("data:image/"))
+    return;
   try {
     localStorage.setItem(AVATAR_STORAGE_KEY, dataUrl);
   } catch {
