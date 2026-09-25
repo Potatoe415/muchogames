@@ -410,7 +410,8 @@
   background-color: #eef3f6;
 }
 
-.game-tile[data-id="hub-tile-coinche"] .game-tile__thumb {
+.game-tile[data-id="hub-tile-coinche"] .game-tile__thumb,
+.game-tile[data-id="hub-tile-yatsy"] .game-tile__thumb {
   object-position: top;
 }
 
