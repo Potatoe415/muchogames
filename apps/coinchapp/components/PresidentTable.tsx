@@ -52,7 +52,7 @@ export interface PresidentActions {
 const MAX_HAND_COUNT = 13;
 /** How long to wait before auto-passing when passing is the only legal move
  *  (see `mustPass` in `PresidentTable`), if the setting is enabled. */
-const AUTO_PASS_DELAY_MS = 2000;
+const AUTO_PASS_DELAY_MS = 500;
 
 function cardKey(card: Card): string {
   return `${card.rank}${card.suit}`;
