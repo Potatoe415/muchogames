@@ -28,6 +28,7 @@ export function stateWith(opts: {
   slapClaims?: GameState["slapClaims"];
   lastClosedSlapWindowId?: number | null;
   nextSlapWindowId?: number;
+  pendingTributeWinner?: GameState["pendingTributeWinner"];
 }): GameState {
   return {
     phase: "playing",
@@ -43,5 +44,6 @@ export function stateWith(opts: {
     winner: null,
     lastPileWin: null,
     lastFalseSlap: null,
+    pendingTributeWinner: opts.pendingTributeWinner ?? null,
   };
 }

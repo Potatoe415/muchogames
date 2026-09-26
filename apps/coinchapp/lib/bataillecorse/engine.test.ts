@@ -122,6 +122,23 @@ describe("submitFlip - opening a slap window", () => {
     expect(next.slapWindow).toBeNull();
     expect(next.tribute).toEqual({ seat: 0, attemptsLeft: 4, fromRank: "A" });
   });
+
+  it("opens a real slap window instead of an immediate tribute award when the failing attempt also completes a double", () => {
+    // Seat 1's last attempt (a plain 9) both exhausts the tribute (seat 0
+    // would automatically get the pile) AND matches the 9 already on top -
+    // a genuine double. The pattern gets its window first.
+    const state = stateWith({
+      turn: 1,
+      stocks: [[card("K")], [card("9")]],
+      pile: [card("K"), card("4"), card("5"), card("9")],
+      tribute: { seat: 1, attemptsLeft: 1, fromRank: "K" },
+    });
+    const next = submitFlip(state, 1, 1234);
+    expect(next.slapWindow).toEqual({ id: 0, pattern: "double", openedAtMs: 1234 });
+    expect(next.pendingTributeWinner).toBe(0);
+    expect(next.lastPileWin).toBeNull();
+    expect(next.pile).toHaveLength(5);
+  });
 });
 
 describe("attemptSlap", () => {
@@ -232,6 +249,45 @@ describe("resolveStaleSlapWindow", () => {
     expect(next.slapWindow).toBeNull();
     expect(next.pile).toEqual([card("9"), card("9")]);
     expect(next.lastClosedSlapWindowId).toBe(7);
+  });
+
+  it("falls back to the original tribute award if a pending-tribute window's pattern goes unclaimed", () => {
+    const state = stateWith({
+      turn: 1,
+      stocks: [[card("K")], [card("2")]],
+      pile: [card("K"), card("4"), card("5"), card("9"), card("9")],
+      slapWindow: { id: 3, pattern: "double", openedAtMs: 1000 },
+      pendingTributeWinner: 0,
+    });
+    const next = resolveStaleSlapWindow(state, 1000 + SLAP_GRACE_MS);
+    expect(next.slapWindow).toBeNull();
+    expect(next.pendingTributeWinner).toBeNull();
+    expect(next.turn).toBe(0);
+    expect(next.lastPileWin).toEqual({
+      id: 0,
+      seat: 0,
+      cardCount: 5,
+      cards: [card("K"), card("4"), card("5"), card("9"), card("9")],
+      reason: "tribute",
+    });
+  });
+
+  it("a real slap claimed during a pending-tribute window wins as a slap, overriding the pending tribute award", () => {
+    const state = stateWith({
+      turn: 1,
+      stocks: [[card("K")], [card("2")]],
+      pile: [card("K"), card("4"), card("5"), card("9"), card("9")],
+      slapWindow: { id: 3, pattern: "double", openedAtMs: 1000 },
+      pendingTributeWinner: 0,
+    });
+    const next = attemptSlap(state, 1, 200);
+    // A single, uncontested claim just waits for the grace timeout too, but
+    // once it resolves it must win as a *slap* for seat 1, not the pending
+    // tribute award for seat 0.
+    const resolved = resolveStaleSlapWindow(next, 1000 + SLAP_GRACE_MS);
+    expect(resolved.lastPileWin?.reason).toBe("slap");
+    expect(resolved.lastPileWin?.seat).toBe(1);
+    expect(resolved.pendingTributeWinner).toBeNull();
   });
 });
 

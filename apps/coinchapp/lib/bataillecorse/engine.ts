@@ -23,6 +23,7 @@ export function createInitialState(rng: Rng = Math.random, deckSize: DeckSize = 
     winner: null,
     lastPileWin: null,
     lastFalseSlap: null,
+    pendingTributeWinner: null,
   };
 }
 
@@ -65,6 +66,7 @@ function awardPile(
     slapClaims: [],
     lastPileWin: { id: state.nextEventId, seat: winner, cardCount, cards: state.pile, reason, reactionMsBySeat },
     nextEventId: state.nextEventId + 1,
+    pendingTributeWinner: null,
   };
 }
 
@@ -97,8 +99,18 @@ export function submitFlip(state: GameState, seat: Seat, nowMs: number = Date.no
 
   const outcome = resolveTributeEffect(card, seat, state.tribute);
   let next: GameState = { ...state, stocks, pile, tribute: outcome.tribute, turn: outcome.turn };
-  if (outcome.challengeFailedWinner !== null) next = awardPile(next, outcome.challengeFailedWinner, "tribute");
+  if (outcome.challengeFailedWinner === null) return checkElimination(openSlapWindowIfAny(next, nowMs));
+
+  // This same flip both exhausted the tribute's last attempt AND may have
+  // completed a double/sandwich on top of the pile (e.g. the failing card
+  // happens to match the one right before it - see the user-reported "9,9"
+  // case in docs/decisions). Give that pattern its real slap window first;
+  // only fall back to the automatic tribute award if nobody claims it (see
+  // `resolveStaleSlapWindow`).
   next = openSlapWindowIfAny(next, nowMs);
+  next = next.slapWindow
+    ? { ...next, pendingTributeWinner: outcome.challengeFailedWinner }
+    : awardPile(next, outcome.challengeFailedWinner, "tribute");
   return checkElimination(next);
 }
 
@@ -131,10 +143,13 @@ export function attemptSlap(
 }
 
 /** Auto-resolves a window nobody (or only one seat) reacted to within
- *  `SLAP_GRACE_MS`: 1 claim wins uncontested, 0 claims just closes it (the
- *  pattern was missed - the game continues with whatever turn/tribute the
- *  triggering flip already set). Run opportunistically, like every other
- *  game's idle-turn/round-gate timers (see docs/TECH.md). */
+ *  `SLAP_GRACE_MS`: 1 claim wins uncontested, 0 claims just closes it - and
+ *  the game continues with whatever turn/tribute the triggering flip already
+ *  set, *unless* that flip also failed a tribute (`pendingTributeWinner`,
+ *  see `submitFlip`), in which case the original automatic tribute award
+ *  finally goes through now that the pattern's own window went unclaimed.
+ *  Run opportunistically, like every other game's idle-turn/round-gate
+ *  timers (see docs/TECH.md). */
 export function resolveStaleSlapWindow(state: GameState, nowMs: number = Date.now()): GameState {
   const window = state.slapWindow;
   if (!window) return state;
@@ -143,6 +158,16 @@ export function resolveStaleSlapWindow(state: GameState, nowMs: number = Date.no
     const winner = state.slapClaims[0].seat;
     const reactionMsBySeat = { [winner]: state.slapClaims[0].reactionMs };
     const next = awardPile(state, winner, "slap", reactionMsBySeat);
+    return checkElimination({ ...next, turn: winner, lastClosedSlapWindowId: window.id });
+  }
+  // `?? null`: a match's persisted `GameState` may predate this field
+  // entirely (loaded from storage as `undefined`, not `null`) - treat that
+  // exactly like "no pending tribute award" instead of coercing it into seat
+  // `undefined`.
+  const pendingTributeWinner = state.pendingTributeWinner ?? null;
+  if (pendingTributeWinner !== null) {
+    const winner = pendingTributeWinner;
+    const next = awardPile(state, winner, "tribute");
     return checkElimination({ ...next, turn: winner, lastClosedSlapWindowId: window.id });
   }
   return { ...state, slapWindow: null, slapClaims: [], lastClosedSlapWindowId: window.id };

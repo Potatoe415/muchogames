@@ -73,6 +73,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0065 | 2026-09-23 | Président: pile holds 2s on a quad or a hand-emptying play | Accepted |
 | 0066 | 2026-09-26 | La Bataille Corse: figure/ace sandwich no longer ignores tribute filler | Accepted |
 | 0067 | 2026-09-26 | La Bataille Corse: figure/ace tribute-filler slap exception removed entirely | Accepted |
+| 0068 | 2026-09-26 | La Bataille Corse: a tribute failure defers to a real slap window first | Accepted |
 
 ## When to log a decision
 Any of:

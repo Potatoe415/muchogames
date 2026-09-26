@@ -103,6 +103,18 @@ export interface GameState {
   winner: Seat | null;
   lastPileWin: PileWinEvent | null;
   lastFalseSlap: FalseSlapEvent | null;
+  /** Set instead of immediately awarding the pile when a flip both exhausts
+   *  a tribute's last attempt AND happens to complete a double/sandwich on
+   *  top of the pile (e.g. the failing card matches the one right before
+   *  it) - the pattern gets its real, full `SLAP_GRACE_MS` window first
+   *  (either seat, exactly like any other slap) instead of the automatic
+   *  tribute award pre-empting it. Only used internally by `engine.ts`
+   *  (`submitFlip`/`resolveStaleSlapWindow`) - deliberately not exposed in
+   *  `PlayerView` (`redact.ts`'s allowlist), since the client only ever
+   *  needs to see the resulting `slapWindow` like any other. Always `null`
+   *  outside of that exact window; `awardPile` always clears it back to
+   *  `null`. */
+  pendingTributeWinner: Seat | null;
 }
 
 /** How long a slap window stays open collecting claims before it auto-resolves
