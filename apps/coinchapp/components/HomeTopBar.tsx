@@ -1,6 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {
+  isBataillecorseDebugModeEnabled,
+  setBataillecorseDebugModeEnabled,
+} from "@/lib/client/bataillecorseDebugMode";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { getMatchResultStats, type MatchResultStats } from "@/lib/client/matchResultStats";
@@ -25,13 +29,26 @@ export function HomeTopBar({ game }: { game?: GameType }) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [rulesOpen, setRulesOpen] = useState(false);
   const [stats, setStats] = useState<MatchResultStats | null>(null);
+  // La Bataille Corse-only debug toggle (see `BataillecorseDebugOverlay.tsx`) -
+  // lives in this shared settings panel rather than a per-game duplicate
+  // control, gated the same way as the "Rules" button below.
+  const [debugMode, setDebugMode] = useState(false);
 
   useEffect(() => {
     // Post-hydration browser read, refreshed on every open: mirrors the
     // localStorage-read-in-effect precedent used elsewhere in this app.
+    if (!settingsOpen) return;
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (settingsOpen) setStats(getMatchResultStats());
-  }, [settingsOpen]);
+    setStats(getMatchResultStats());
+    if (game === "bataillecorse") {
+      setDebugMode(isBataillecorseDebugModeEnabled());
+    }
+  }, [settingsOpen, game]);
+
+  function onDebugModeChange(checked: boolean) {
+    setDebugMode(checked);
+    setBataillecorseDebugModeEnabled(checked);
+  }
 
   return (
     <>
@@ -110,6 +127,22 @@ export function HomeTopBar({ game }: { game?: GameType }) {
             >
               {t("rulesButton")}
             </button>
+          )}
+
+          {game === "bataillecorse" && (
+            <label
+              className="mt-2 flex w-full items-center gap-2 rounded-xl bg-black/10 px-2 py-1.5 text-sm font-bold text-[var(--card-face)]"
+              data-id="bataillecorse-debug-mode-row"
+            >
+              <input
+                type="checkbox"
+                data-id="bataillecorse-debug-mode-checkbox"
+                checked={debugMode}
+                onChange={(e) => onDebugModeChange(e.target.checked)}
+                className="h-4 w-4 accent-[var(--accent-orange)]"
+              />
+              {t("bataillecorseDebugCheckboxLabel")}
+            </label>
           )}
         </div>
       )}

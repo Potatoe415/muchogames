@@ -1,12 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { HomeTopBar } from "@/components/HomeTopBar";
-import {
-  isBataillecorseDebugModeEnabled,
-  setBataillecorseDebugModeEnabled,
-} from "@/lib/client/bataillecorseDebugMode";
 import { forceUpdate } from "@/lib/client/forceUpdate";
 import { useI18n } from "@/lib/client/i18n";
 import { withHubName } from "@/lib/client/hubName";
@@ -15,25 +10,13 @@ import { withHubName } from "@/lib/client/hubName";
  *  buttons on this splash only - unrelated to the whole app's
  *  `NEXT_PUBLIC_APP_VERSION` (see `app/page.tsx`). Bump by hand as this game
  *  changes. */
-const BATAILLECORSE_VERSION = "0.12";
+const BATAILLECORSE_VERSION = "0.13";
 
 /** Same layout/mode picker as the home screen, but every button reuses the existing
  *  /local, /online, /adhoc routes with `?game=bataillecorse` instead of a duplicated tree. */
 export default function BataillecorsePage() {
   const router = useRouter();
   const { t } = useI18n();
-  const [debugMode, setDebugMode] = useState(false);
-
-  useEffect(() => {
-    // Post-hydration browser read: deferred to after mount to avoid an SSR/client mismatch.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setDebugMode(isBataillecorseDebugModeEnabled());
-  }, []);
-
-  function onDebugModeChange(checked: boolean) {
-    setDebugMode(checked);
-    setBataillecorseDebugModeEnabled(checked);
-  }
 
   return (
     <main
@@ -83,20 +66,6 @@ export default function BataillecorsePage() {
           <span className="mt-0.5 block text-xs font-medium text-[var(--surface)]/80">{t("adhocOfflineNote")}</span>
         </button>
       </div>
-
-      <label
-        className="relative z-10 mb-3 flex w-full items-center gap-2 px-6 text-sm font-medium text-white/90"
-        data-id="bataillecorse-debug-mode-row"
-      >
-        <input
-          type="checkbox"
-          data-id="bataillecorse-debug-mode-checkbox"
-          checked={debugMode}
-          onChange={(e) => onDebugModeChange(e.target.checked)}
-          className="h-4 w-4 accent-[var(--accent-orange)]"
-        />
-        {t("bataillecorseDebugCheckboxLabel")}
-      </label>
 
       <div
         className="relative z-10 mb-4 flex w-full items-center justify-between gap-3 px-6"
