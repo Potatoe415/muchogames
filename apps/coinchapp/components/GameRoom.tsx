@@ -239,7 +239,13 @@ export function GameRoom({ gameId }: { gameId: string }) {
       ) : view.gameType === "president" ? (
         <PresidentTable gv={view as PresidentGameView} actions={presidentActions} reactions={reactions} selfAvatar={selfAvatar} />
       ) : view.gameType === "bataillecorse" ? (
-        <BataillecorseTable gv={view as BataillecorseGameView} actions={bataillecorseActions} reactions={reactions} selfAvatar={selfAvatar} />
+        <BataillecorseTable
+          gv={view as BataillecorseGameView}
+          actions={bataillecorseActions}
+          reactions={reactions}
+          selfAvatar={selfAvatar}
+          debugMode="online"
+        />
       ) : (
         <GameTable gv={view as CoincheGameView} actions={coincheActions} reactions={reactions} selfAvatar={selfAvatar} />
       )}

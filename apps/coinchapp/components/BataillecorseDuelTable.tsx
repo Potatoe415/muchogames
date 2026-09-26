@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import type { PlayerView, Seat } from "@/lib/bataillecorse";
+import { useBataillecorseDebugMode } from "@/lib/client/bataillecorseDebugMode";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useOptimisticFlip } from "@/lib/client/useOptimisticFlip";
 import type { BataillecorseDuelActions } from "@/lib/client/useLocalBataillecorseDuelGame";
+import { BataillecorseDebugOverlay } from "./BataillecorseDebugOverlay";
 import { GameInfoButton } from "./GameHud";
 import type { EnterDirection } from "./TrickStage";
 import { TableShell } from "./TableShell";
@@ -46,6 +48,7 @@ export function BataillecorseDuelTable({
   const { locale, t } = useI18n();
   const [panelOpen, setPanelOpen] = useState(false);
   const windowSeenAtRef = useWindowSeenAtRef(viewA.slapWindow);
+  const debugOn = useBataillecorseDebugMode();
 
   const pileWinFlash = useFlash(viewA.lastPileWin?.id);
   const falseSlapFlash = useFlash(viewA.lastFalseSlap?.id);
@@ -88,6 +91,7 @@ export function BataillecorseDuelTable({
 
   return (
     <TableShell dataId="bataillecorse-duel-table">
+      {debugOn && <BataillecorseDebugOverlay mode="duel" view={viewA} />}
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
           href={HUB_URL}

@@ -2,6 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
 import { otherSeat, SLAP_GRACE_MS, type PlayerView } from "@/lib/bataillecorse";
+import { useBataillecorseDebugMode } from "@/lib/client/bataillecorseDebugMode";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
@@ -9,6 +10,7 @@ import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import type { GameView } from "@/lib/server/view";
 import { CssVarProbe, useCssVarPx } from "@/lib/client/useCssVarPx";
 import { useOptimisticFlip } from "@/lib/client/useOptimisticFlip";
+import { BataillecorseDebugOverlay, type BataillecorseDebugMode } from "./BataillecorseDebugOverlay";
 import { CardBack, PlayingCard } from "./PlayingCard";
 import { EmojiButton } from "./EmojiButton";
 import { ReactionBubble } from "./ReactionBubble";
@@ -306,15 +308,22 @@ export function BataillecorseTable({
   actions,
   reactions,
   selfAvatar,
+  debugMode = "online",
 }: {
   gv: BataillecorseGameView;
   actions: BataillecorseActions;
   reactions?: Map<number, TableReaction>;
   selfAvatar?: string;
+  /** Which of this table's 3 possible callers rendered it (solo vs bot,
+   *  online, or ad-hoc/P2P - never "duel", that's `BataillecorseDuelTable`'s
+   *  own table) - shown in the debug overlay when debug mode is on (see
+   *  `BataillecorseDebugOverlay.tsx`). */
+  debugMode?: BataillecorseDebugMode;
 }) {
   const { locale, t } = useI18n();
   const view = gv.view!;
   const mySeat = gv.mySeat!;
+  const debugOn = useBataillecorseDebugMode();
   const opponentSeat = mySeat === 0 ? 1 : 0;
   const [panelOpen, setPanelOpen] = useState(false);
   const windowSeenAtRef = useWindowSeenAtRef(view.slapWindow);
@@ -355,6 +364,7 @@ export function BataillecorseTable({
 
   return (
     <TableShell dataId="bataillecorse-table">
+      {debugOn && <BataillecorseDebugOverlay mode={debugMode} view={view} />}
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
           href={HUB_URL}

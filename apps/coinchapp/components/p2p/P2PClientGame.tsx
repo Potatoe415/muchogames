@@ -27,7 +27,13 @@ export function P2PClientGame({ conn, name }: { conn: P2PConnection; name: strin
     return <BouillaTable gv={gv as BouillaGameView} actions={{ onPlay: actions.onPlay, onNextRound: actions.onNextDeal }} />;
   }
   if (gv.gameType === "bataillecorse") {
-    return <BataillecorseTable gv={gv as BataillecorseGameView} actions={{ onFlip: actions.onFlip, onSlap: actions.onSlap }} />;
+    return (
+      <BataillecorseTable
+        gv={gv as BataillecorseGameView}
+        actions={{ onFlip: actions.onFlip, onSlap: actions.onSlap }}
+        debugMode="adhoc"
+      />
+    );
   }
   if (gv.gameType === "president") {
     return (

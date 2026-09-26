@@ -50,5 +50,7 @@ function BataillecorseLocalGameInner({
     addReaction(gv.mySeat ?? 0, pick);
   }
 
-  return <BataillecorseTable gv={gv} reactions={reactions} actions={{ ...actions, onReset, onSendReaction }} />;
+  return (
+    <BataillecorseTable gv={gv} reactions={reactions} actions={{ ...actions, onReset, onSendReaction }} debugMode="solo" />
+  );
 }
