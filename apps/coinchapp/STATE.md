@@ -2,9 +2,9 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: La Bataille Corse has a new debug mode: a checkbox in `HomeTopBar`'s shared paramètres panel (gated to `game === "bataillecorse"`), persisted to `localStorage`. Every table this game renders into (solo vs bot, face-to-face duel, online, ad-hoc/P2P) then shows a left-side, semi-transparent, selectable-text overlay with the game/match type and a live move log in chronological order (oldest first, auto-scrolled to the newest), each flip showing the exact card + any tribute it opens folded into one line (e.g. "P0 flips K♠ - P1 owes 3"), pile wins as "P{seat} get cards". All debug copy is hardcoded English, never following the app's `useI18n` locale. Splash version bumped to v0.13.
+Status: BAT-BUG-01 root-caused: never an engine bug. `PileStack` (`BataillecorseTable.tsx`) only ever rendered the top ~3 pile cards (`HISTORY_OFFSETS` had 2 entries); a chained tribute (up to a King/Ace's 3-4 attempts) routinely buries the figure/ace pair that legitimately triggers a `pattern.ts` double/sandwich slap, so a correct win looked unexplainable. Fixed: new `PILE_HISTORY_DEPTH` raised 2→5 (5 `HISTORY_OFFSETS` entries) so that pairing stays on screen, at every stage including the win fly-away. Also finished the debug overlay's pile-win line (was mid-simplified to a bare "P1 get cards"): now `P{seat} wins {n} cards ({reason}): {every swept card}`, so a buried pattern is independently verifiable in the log too. La Bataille Corse's debug mode overall: checkbox in `HomeTopBar`'s paramètres panel (gated to `game === "bataillecorse"`), `localStorage`-persisted, chronological (oldest-first, auto-scrolled to newest) overlay on every table (solo/duel/online/ad-hoc). All debug copy hardcoded English. Splash version v0.13.
 Focus: n/a (task complete)
-Level: L1 (one game, additive/reversible, gated behind an off-by-default checkbox)
+Level: L1 (one game, visual/diagnostic fix)
 
 Context:
     10|- Working_On: n/a (task complete)
@@ -13,7 +13,6 @@ Context:
 - Relevant_Decisions: none for this fix (L1, additive/game-scoped)
 
 Next:
-- If BAT-BUG-01 still reproduces live, get a concrete repro (exact card sequence + what the UI showed) - already investigated once, no mismatch found in `pattern.ts`/`engine.ts`.
 - Play one finished match launched from the hub and confirm `/profile` moves, now that the `gameId` fix is live.
 - Confirm `docs/PRODUCT.md` / `docs/ARCHITECTURE.md` / `docs/SECURITY.md` wording before editing them.
 
@@ -28,7 +27,8 @@ Next:
 Blockers: none currently known — user confirmed (2026-09-25) `0003_profiles.sql` is applied and Google Auth is enabled on `multigames-db`.
 
     30|Recent_Changes:
-- 2026-09-26 La Bataille Corse debug log: fixed display order to chronological (was newest-first), folded a figure/ace flip and the fresh tribute it opens into one line ("P0 flips K♠ - P1 owes 3", since `resolveTributeEffect` sets both atomically), simplified pile-win lines to "P{seat} get cards", auto-scrolls to the newest entry.
+- 2026-09-26 BAT-BUG-01 fixed: `PileStack`'s visible pile depth was hardcoded to ~3 cards (2 `HISTORY_OFFSETS` entries) - any tribute chain deeper than that hid the exact figure/ace pair a legitimate `pattern.ts` slap fired from, making correct slaps look like bugs. New `PILE_HISTORY_DEPTH = 5` (5 offsets) fixes it for every table (solo/duel/online, `PileStack` is shared). Debug overlay's pile-win line now names the reason and lists every swept card (`P{seat} wins {n} cards ({reason}): {cards}`) instead of a bare "P{seat} get cards", so a buried pattern is verifiable in the log independent of the on-screen fix.
+- 2026-09-26 La Bataille Corse debug log: fixed display order to chronological (was newest-first), folded a figure/ace flip and the fresh tribute it opens into one line ("P0 flips K♠ - P1 owes 3", since `resolveTributeEffect` sets both atomically), auto-scrolls to the newest entry.
 - 2026-09-26 La Bataille Corse debug overlay: text is now selectable (dropped `pointer-events-none`, added `select-text`) - a deliberate exception to the "never block a tap" rule since this panel only ever exists when the opt-in debug checkbox is on.
 - 2026-09-26 La Bataille Corse debug mode: made all its copy hardcoded English (no longer via `useI18n`, per its nature as a dev-only tool) and each flip line now shows the actual card (e.g. "P0 flips K♠"), derived from the pile's new top card or, for a same-tick failed-tribute sweep, `lastPileWin.cards`.
 - 2026-09-26 La Bataille Corse: moved the debug-mode checkbox into `HomeTopBar`'s shared paramètres panel (game-gated, next to "Rules") instead of a standalone splash row; bumped the splash's own version counter to v0.13.

@@ -105,7 +105,15 @@ export function useBataillecorseDebugLog(view: PlayerView | null): Bataillecorse
     }
 
     if (view.lastPileWin && view.lastPileWin.id !== prev.lastPileWinId) {
-      lines.push(`P${view.lastPileWin.seat} get cards`);
+      // Names the actual reason and lists every swept card (not just the
+      // top ~3 `PileStack` renders on screen - see `PILE_HISTORY_DEPTH` in
+      // `BataillecorseTable.tsx`), so a slap/sandwich pattern buried under
+      // tribute fillers is verifiable here even when it never became
+      // visible on the table itself.
+      const win = view.lastPileWin;
+      const reasonText = win.reason === "tribute" ? "failed tribute" : win.reason === "slap" ? "slap" : "false slap";
+      const cardsText = win.cards.map(formatCard).join(" ");
+      lines.push(`P${win.seat} wins ${win.cardCount} cards (${reasonText}): ${cardsText}`);
     }
 
     if (view.lastFalseSlap && view.lastFalseSlap.id !== prev.lastFalseSlapId) {

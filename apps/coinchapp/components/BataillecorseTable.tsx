@@ -675,13 +675,26 @@ export function StockPile({
   );
 }
 
-/** Fixed left/right/tilt offsets for the 2 cards sitting behind the current
+/** Fixed left/right/tilt offsets for the cards sitting behind the current
  *  top card, so the pile reads as a scattered discard heap rather than a
- *  neat stack - same idea as Président's `HISTORY_OFFSETS` (`PresidentTable.tsx`). */
+ *  neat stack - same idea as Président's `HISTORY_OFFSETS` (`PresidentTable.tsx`).
+ *  One entry per depth in `PILE_HISTORY_DEPTH` below. */
 const HISTORY_OFFSETS = [
   { x: 16, y: 8, rot: 9 },
   { x: -15, y: 14, rot: -8 },
+  { x: 20, y: 22, rot: 15 },
+  { x: -22, y: 26, rot: -14 },
+  { x: 10, y: 32, rot: 4 },
 ];
+
+/** How many cards behind the current top card stay visible (dimmed), on top
+ *  of the un-dimmed current card itself. A tribute can chain several plain
+ *  attempts on top of a figure/ace before it's answered (up to a King/Ace's
+ *  3-4 attempts), and `detectSlapPattern` (`pattern.ts`) can legitimately
+ *  fire a slap from two figure/ace cards buried under those attempts - the
+ *  old depth of 2 hid that pairing entirely, making a correct slap look
+ *  unexplainable (see docs/BACKLOG.md). 5 comfortably covers that case. */
+const PILE_HISTORY_DEPTH = 5;
 
 function cardKey(card: PlayerView["pile"][number]): string {
   return `${card.rank}${card.suit}`;
@@ -702,8 +715,8 @@ const PILE_FLY_DISTANCE_SVH = 46;
  *  played it (`.bataillecorse-card-enter`, `app/globals.css` - same slide-in
  *  as every other game's `played-card-enter`, `TrickStage.tsx`, minus the
  *  landing bounce: a plain flip that neither opens/answers a tribute nor
- *  wins the pile is just "the card is now on the table"), while the 1-2
- *  cards behind it sit scattered and dimmed.
+ *  wins the pile is just "the card is now on the table"), while up to
+ *  `PILE_HISTORY_DEPTH` cards behind it sit scattered and dimmed.
  *  A local flip paints the owner's `myTopCard` on top immediately (same frame
  *  as the tap); that card's identity is the React key, so the slide-in does
  *  not replay when the server echoes it. `useDisplayPile` also lingers the pile face-up
@@ -747,7 +760,7 @@ export function PileStack({
 }) {
   const { probeRef, px: cardW, probeStyle } = useCssVarPx("--card-md-w", 56);
   const liveTapHitKey = useLiveTapHitKey(tapHitKey ?? 0);
-  const behind = pendingFaceDown ? cards.slice(-2) : cards.slice(-3, -1);
+  const behind = pendingFaceDown ? cards.slice(-PILE_HISTORY_DEPTH) : cards.slice(-(PILE_HISTORY_DEPTH + 1), -1);
   const topCard = pendingFaceDown ? undefined : cards[cards.length - 1];
   if (!pendingFaceDown && !topCard) {
     return <p className="text-sm italic text-[var(--card-face)]/70">{"—"}</p>;
