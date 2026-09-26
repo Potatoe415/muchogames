@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { PlayerView, Seat } from "@/lib/bataillecorse";
 import { useBataillecorseDebugMode } from "@/lib/client/bataillecorseDebugMode";
+import { useBataillecorseDebugLog } from "@/lib/client/useBataillecorseDebugLog";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useOptimisticFlip } from "@/lib/client/useOptimisticFlip";
@@ -49,6 +50,9 @@ export function BataillecorseDuelTable({
   const [panelOpen, setPanelOpen] = useState(false);
   const windowSeenAtRef = useWindowSeenAtRef(viewA.slapWindow);
   const debugOn = useBataillecorseDebugMode();
+  // Tracked for the whole match whenever debug mode is on, regardless of
+  // whether "Info partie" is currently open (see `BataillecorseTable.tsx`).
+  const debugLog = useBataillecorseDebugLog(debugOn ? viewA : null);
 
   const pileWinFlash = useFlash(viewA.lastPileWin?.id);
   const falseSlapFlash = useFlash(viewA.lastFalseSlap?.id);
@@ -91,7 +95,7 @@ export function BataillecorseDuelTable({
 
   return (
     <TableShell dataId="bataillecorse-duel-table">
-      {debugOn && <BataillecorseDebugOverlay mode="duel" view={viewA} />}
+      {debugOn && panelOpen && <BataillecorseDebugOverlay mode="duel" view={viewA} log={debugLog} />}
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
           href={HUB_URL}

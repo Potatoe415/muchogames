@@ -2,15 +2,15 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: The figure/ace tribute-filler slap exception (decision 0056) is now fully removed (decisions 0066 then 0067). `detectSlapPattern` (`lib/bataillecorse/pattern.ts`) is back to a plain, unfiltered double/sandwich test on the real pile - no figure/ace-only special case at all. A challenge-rank card answering a tribute always opens a brand new one (full attempt count); it never counts as a slap against the card that opened the tribute it just paid off, even same-rank. Separately, BAT-BUG-01's rendering half stays fixed: `PILE_HISTORY_DEPTH` 2→5 so `PileStack` shows more of a deep pile. Debug overlay's pile-win line names the reason + lists every swept card. La Bataille Corse debug mode (checkbox in `HomeTopBar` paramètres, `localStorage`-persisted) shows a chronological overlay on every table. Splash v0.13.
+Status: La Bataille Corse (decision 0068): a tribute failure no longer instantly sweeps the pile if the failing card also completes a double/sandwich (e.g. matches the card already on top) - it opens a real `SLAP_GRACE_MS` slap window first (`GameState.pendingTributeWinner` remembers the fallback winner). Either seat can genuinely slap it and win as `"slap"`; unclaimed, it falls back to the original `"tribute"` award. Builds on 0067 (figure/ace tribute-filler slap exception removed entirely - `detectSlapPattern` is a plain unfiltered double/sandwich test) and BAT-BUG-01's rendering fix (`PILE_HISTORY_DEPTH` 2→5).
 Focus: n/a (task complete)
-Level: L1 (one game; pattern.ts change is a rules-engine correction, logged as decision 0067)
+Level: L1 (one game; engine change, logged as decision 0068)
 
 Context:
 - Working_On: n/a (task complete)
-- Relevant_Files: `lib/bataillecorse/pattern.ts` (now a single ~10-line function), `lib/bataillecorse/engine.test.ts`, `components/BataillecorseTable.tsx` (`PILE_HISTORY_DEPTH`), `lib/client/useBataillecorseDebugLog.ts`, `components/RulesModal.tsx`
+- Relevant_Files: `lib/bataillecorse/engine.ts` (`pendingTributeWinner`), `lib/bataillecorse/types.ts`, `lib/bataillecorse/test-utils.ts`, `lib/bataillecorse/engine.test.ts`, `lib/bataillecorse/pattern.ts`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0067 (filler exception removed entirely, supersedes the rest of 0056/0066)
+- Relevant_Decisions: 0068 (this fix), 0067 (supersedes 0056/0066's filler exception)
 
 Next:
 - Play one finished match launched from the hub and confirm `/profile` moves, now that the `gameId` fix is live.
@@ -27,11 +27,12 @@ Open_Questions:
 Blockers: none currently known — user confirmed (2026-09-25) `0003_profiles.sql` is applied and Google Auth is enabled on `multigames-db`.
 
 Recent_Changes:
-- 2026-09-26 La Bataille Corse (decision 0067): figure/ace tribute-filler slap exception removed entirely - `pattern.ts` collapsed back to a plain unfiltered double/sandwich test; answering a tribute with a challenge card always opens a fresh one, never a slap against the card it just paid off. `pattern.test.ts`/`engine.test.ts`/`RulesModal.tsx` FR+EN updated. `npm test` 305/305.
-- 2026-09-26 La Bataille Corse (decision 0066, now superseded by 0067): figure/ace sandwich stopped ignoring tribute filler first, before the double half was removed too.
-- 2026-09-26 BAT-BUG-01 (rendering half): `PileStack`'s visible pile depth was hardcoded to ~3 cards - raised to `PILE_HISTORY_DEPTH = 5` (shared by every table). Debug overlay's pile-win line now names the reason + lists every swept card instead of a bare "P{seat} get cards".
-- 2026-09-26 La Bataille Corse debug log: fixed display order to chronological (was newest-first), auto-scrolls to newest.
-- 2026-09-26 La Bataille Corse debug mode: hardcoded English copy, moved the checkbox into `HomeTopBar`'s paramètres panel; splash v0.13. Left-side overlay, move-by-move log, every mode's table, off by default.
+- 2026-09-26 La Bataille Corse debug overlay is no longer always floating: it's now revealed by the in-game "Info partie" button (`panelOpen`, `BataillecorseTable`/`BataillecorseDuelTable`) instead of showing the instant debug mode is on. The log itself (`useBataillecorseDebugLog`) keeps tracking the whole match regardless of whether the panel is open, so no move is lost.
+- 2026-09-26 La Bataille Corse (decision 0068): a tribute failure that coincides with a double/sandwich now opens a real slap window instead of an instant sweep; unclaimed, it still falls back to the tribute award. `engine.ts`/`types.ts`/`test-utils.ts`/`engine.test.ts` updated. `npm test` 308/308.
+- 2026-09-26 La Bataille Corse (decision 0067): figure/ace tribute-filler slap exception removed entirely - `pattern.ts` collapsed to a plain unfiltered double/sandwich test; answering a tribute with a challenge card always opens a fresh one, never a slap against the card it just paid off. `RulesModal.tsx` FR+EN updated.
+- 2026-09-26 La Bataille Corse (decision 0066, superseded by 0067): figure/ace sandwich stopped ignoring tribute filler first, before the double half was removed too.
+- 2026-09-26 BAT-BUG-01 (rendering half): `PileStack`'s visible pile depth was hardcoded to ~3 cards - raised to `PILE_HISTORY_DEPTH = 5` (shared by every table).
+- 2026-09-26 La Bataille Corse debug log: fixed display order to chronological (was newest-first), auto-scrolls to newest; hardcoded English copy; checkbox moved into `HomeTopBar`'s paramètres panel; splash v0.13.
 - 2026-09-25 La Bataille Corse: moved the local setup screen's start CTA below `GameSettingsPanel` (BAT-UI-01), game-scoped only.
 - 2026-09-25 Fixed a cross-game stats bug: hardcoded `gameId` blocked `useRecordMatchResult`'s dedup guard; now derived from the match's own seed.
 - 2026-09-25 Président: removed the hand sort-order toggle button; hand always sorts by rank.

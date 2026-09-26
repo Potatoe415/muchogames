@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { PlayerView } from "@/lib/bataillecorse";
-import { useBataillecorseDebugLog } from "@/lib/client/useBataillecorseDebugLog";
+import type { BataillecorseDebugLogEntry } from "@/lib/client/useBataillecorseDebugLog";
 
 export type BataillecorseDebugMode = "solo" | "duel" | "online" | "adhoc";
 
@@ -13,19 +13,31 @@ const MODE_LABEL: Record<BataillecorseDebugMode, string> = {
   adhoc: "Offline (ad-hoc)",
 };
 
-/** Left-side, semi-transparent debug HUD for la Bataille Corse - on when the
- *  settings panel's debug checkbox is checked (see `HomeTopBar.tsx`,
+/** Left-side, semi-transparent debug HUD for la Bataille Corse - revealed by
+ *  the in-game "Info partie" button (`GameInfoButton`/`panelOpen` in
+ *  `BataillecorseTable`/`BataillecorseDuelTable`) whenever the settings
+ *  panel's debug checkbox is checked (see `HomeTopBar.tsx`,
  *  `useBataillecorseDebugMode`). Shows which game/match type is running,
- *  then every move as it happens (see `useBataillecorseDebugLog`).
+ *  then every move as it happened. Purely presentational: `log` is tracked
+ *  by the caller's own `useBataillecorseDebugLog(view)` call, kept running
+ *  for the whole match regardless of whether this overlay is currently
+ *  shown - closing "Info partie" must never lose earlier moves.
  *  Deliberately English-only, always - a developer diagnostic tool, never
  *  gameplay copy, so it does not follow the app's `useI18n` locale.
  *  Its text is selectable (for copying a repro into a bug report) - a
  *  deliberate exception to "never block a tap on the table underneath"
  *  (see AGENTS.md): this panel only exists at all when the opt-in debug
- *  checkbox is on, so a developer who turned it on already expects it to
- *  intercept taps in its own small corner. */
-export function BataillecorseDebugOverlay({ mode, view }: { mode: BataillecorseDebugMode; view: PlayerView | null }) {
-  const log = useBataillecorseDebugLog(view);
+ *  checkbox is on and "Info partie" is open, so a developer who got here
+ *  already expects it to intercept taps in its own small corner. */
+export function BataillecorseDebugOverlay({
+  mode,
+  view,
+  log,
+}: {
+  mode: BataillecorseDebugMode;
+  view: PlayerView | null;
+  log: BataillecorseDebugLogEntry[];
+}) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Entries append oldest-first (chronological reading order, see

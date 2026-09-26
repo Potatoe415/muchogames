@@ -3,6 +3,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
 import { otherSeat, SLAP_GRACE_MS, type PlayerView } from "@/lib/bataillecorse";
 import { useBataillecorseDebugMode } from "@/lib/client/bataillecorseDebugMode";
+import { useBataillecorseDebugLog } from "@/lib/client/useBataillecorseDebugLog";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
@@ -326,6 +327,10 @@ export function BataillecorseTable({
   const debugOn = useBataillecorseDebugMode();
   const opponentSeat = mySeat === 0 ? 1 : 0;
   const [panelOpen, setPanelOpen] = useState(false);
+  // Tracked for the whole match whenever debug mode is on, regardless of
+  // whether "Info partie" is currently open - only the overlay's own
+  // visibility below is gated by `panelOpen`, so no move is ever lost.
+  const debugLog = useBataillecorseDebugLog(debugOn ? view : null);
   const windowSeenAtRef = useWindowSeenAtRef(view.slapWindow);
 
   const pileWinFlash = useFlash(view.lastPileWin?.id);
@@ -370,7 +375,7 @@ export function BataillecorseTable({
 
   return (
     <TableShell dataId="bataillecorse-table">
-      {debugOn && <BataillecorseDebugOverlay mode={debugMode} view={view} />}
+      {debugOn && panelOpen && <BataillecorseDebugOverlay mode={debugMode} view={view} log={debugLog} />}
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
           href={HUB_URL}
