@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import type { PlayerView } from "@/lib/bataillecorse";
 import { useBataillecorseDebugLog } from "@/lib/client/useBataillecorseDebugLog";
 
@@ -25,9 +26,19 @@ const MODE_LABEL: Record<BataillecorseDebugMode, string> = {
  *  intercept taps in its own small corner. */
 export function BataillecorseDebugOverlay({ mode, view }: { mode: BataillecorseDebugMode; view: PlayerView | null }) {
   const log = useBataillecorseDebugLog(view);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Entries append oldest-first (chronological reading order, see
+  // `useBataillecorseDebugLog`), so keep the newest one in view instead of
+  // making a developer scroll down every time a move is played.
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
+  }, [log.length]);
 
   return (
     <div
+      ref={scrollRef}
       data-id="bataillecorse-debug-overlay"
       className="fixed left-2 top-2 z-50 max-h-[85vh] w-[min(58vw,220px)] select-text overflow-y-auto rounded-xl bg-black/60 p-2 text-[10px] leading-tight text-white/90 shadow-xl ring-1 ring-white/15 backdrop-blur"
     >
@@ -55,7 +66,7 @@ export function BataillecorseDebugOverlay({ mode, view }: { mode: BataillecorseD
         </p>
       ) : (
         <ul className="space-y-0.5" data-id="bataillecorse-debug-log">
-          {[...log].reverse().map((entry) => (
+          {log.map((entry) => (
             <li key={entry.id} data-id={`bataillecorse-debug-log-entry-${entry.id}`}>
               {entry.text}
             </li>

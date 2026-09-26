@@ -45,12 +45,20 @@ function snapshotOf(view: PlayerView): Snapshot {
 }
 
 /** Diffs successive `PlayerView`s into a human-readable, one-line-per-move
- *  log for `BataillecorseDebugOverlay` - built purely from what each client
+ *  log for `BataillecorseDebugOverlay`, appended in the order these events
+ *  actually happen (oldest first) - built purely from what each client
  *  already receives (no extra network calls), so it works identically for
  *  every mode this table can render into (solo/duel/online/ad-hoc, see
  *  `BataillecorseTable`/`BataillecorseDuelTable`). Seats are logged by their
  *  raw number (0/1), not "me"/"opponent": a debug tool should read the same
- *  regardless of which seat this client happens to be. */
+ *  regardless of which seat this client happens to be.
+ *
+ *  A figure/ace flip and the fresh tribute it opens for the other seat are
+ *  really one engine event (see `resolveTributeEffect` in `tribute.ts` -
+ *  both are set atomically by the same `submitFlip` call), so they're folded
+ *  into a single log line instead of two. A pile win (any reason) stays its
+ *  own line, since it can follow a flip several plies later (a tribute
+ *  finally failing) or come from an unrelated slap. */
 export function useBataillecorseDebugLog(view: PlayerView | null): BataillecorseDebugLogEntry[] {
   const [log, setLog] = useState<BataillecorseDebugLogEntry[]>([]);
   const nextIdRef = useRef(0);
@@ -66,39 +74,38 @@ export function useBataillecorseDebugLog(view: PlayerView | null): Bataillecorse
     const opponentSeat = mySeat === 0 ? 1 : 0;
     const lines: string[] = [];
 
-    // The card just flipped: normally the pile's new top card, but a failed
-    // tribute answer both plays AND sweeps that same card away in one atomic
-    // engine update (see `engine.ts`'s `applyFalseSlapPenalty`/`awardPile`),
-    // so `view.pile` never observably grows for it - only `lastPileWin.cards`
-    // (a fresh "tribute"-reason win) ever carries it in that case.
-    const cardAdded = view.pile.length > prev.pileLength ? view.pile[view.pile.length - 1] : null;
-    const sweptFlipCard =
-      !cardAdded && view.lastPileWin && view.lastPileWin.id !== prev.lastPileWinId && view.lastPileWin.reason === "tribute"
-        ? view.lastPileWin.cards[view.lastPileWin.cards.length - 1]
-        : null;
-    const flippedCard = cardAdded ?? sweptFlipCard;
-    const flippedCardLabel = flippedCard ? formatCard(flippedCard) : "?";
+    const flippedSeat =
+      view.myStockCount < prev.myStockCount ? mySeat : view.opponentStockCount < prev.opponentStockCount ? opponentSeat : null;
 
-    if (view.myStockCount < prev.myStockCount) {
-      lines.push(`P${mySeat} flips ${flippedCardLabel}`);
-    }
-    if (view.opponentStockCount < prev.opponentStockCount) {
-      lines.push(`P${opponentSeat} flips ${flippedCardLabel}`);
-    }
+    if (flippedSeat !== null) {
+      // The card just flipped: normally the pile's new top card, but a
+      // failed tribute answer both plays AND sweeps that same card away in
+      // one atomic engine update (see `engine.ts`'s `applyFalseSlapPenalty`/
+      // `awardPile`), so `view.pile` never observably grows for it - only
+      // `lastPileWin.cards` (a fresh "tribute"-reason win) ever carries it.
+      const cardAdded = view.pile.length > prev.pileLength ? view.pile[view.pile.length - 1] : null;
+      const sweptFlipCard =
+        !cardAdded && view.lastPileWin && view.lastPileWin.id !== prev.lastPileWinId && view.lastPileWin.reason === "tribute"
+          ? view.lastPileWin.cards[view.lastPileWin.cards.length - 1]
+          : null;
+      const flippedCard = cardAdded ?? sweptFlipCard;
+      const flippedCardLabel = flippedCard ? formatCard(flippedCard) : "?";
 
-    const tributeSeat = view.tribute?.seat ?? null;
-    if (view.tribute && tributeSeat !== prev.tributeSeat) {
-      lines.push(`P${view.tribute.seat} owes a tribute (${view.tribute.fromRank}), ${view.tribute.attemptsLeft} attempt(s)`);
+      const otherSeat = flippedSeat === 0 ? 1 : 0;
+      const newTributeAttempts =
+        view.tribute && view.tribute.seat === otherSeat && view.tribute.seat !== prev.tributeSeat
+          ? view.tribute.attemptsLeft
+          : null;
+
+      lines.push(
+        newTributeAttempts !== null
+          ? `P${flippedSeat} flips ${flippedCardLabel} - P${otherSeat} owes ${newTributeAttempts}`
+          : `P${flippedSeat} flips ${flippedCardLabel}`,
+      );
     }
 
     if (view.lastPileWin && view.lastPileWin.id !== prev.lastPileWinId) {
-      const reasonText =
-        view.lastPileWin.reason === "tribute"
-          ? "failed tribute"
-          : view.lastPileWin.reason === "slap"
-            ? "slap"
-            : "false slap";
-      lines.push(`P${view.lastPileWin.seat} wins the pile (${view.lastPileWin.cardCount} cards) — ${reasonText}`);
+      lines.push(`P${view.lastPileWin.seat} get cards`);
     }
 
     if (view.lastFalseSlap && view.lastFalseSlap.id !== prev.lastFalseSlapId) {
