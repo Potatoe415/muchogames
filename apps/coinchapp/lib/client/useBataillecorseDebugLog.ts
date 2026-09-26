@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { PlayerView } from "@/lib/bataillecorse";
-import { formatText, useI18n } from "@/lib/client/i18n";
+import type { Card, PlayerView, Suit } from "@/lib/bataillecorse";
 
 export interface BataillecorseDebugLogEntry {
   id: number;
@@ -14,9 +13,19 @@ export interface BataillecorseDebugLogEntry {
  *  this log is meant to cover a whole match, not a rolling recent window. */
 const MAX_LOG_ENTRIES = 300;
 
+/** Deliberately English-only, always - this is a developer diagnostic tool,
+ *  never shown to a player as gameplay copy, so it does not follow the
+ *  app's `useI18n` locale (see docs/DECISIONS.md's "debug in English"). */
+const SUIT_SYMBOL: Record<Suit, string> = { H: "\u2665", D: "\u2666", C: "\u2663", S: "\u2660" };
+
+function formatCard(card: Card): string {
+  return `${card.rank}${SUIT_SYMBOL[card.suit]}`;
+}
+
 interface Snapshot {
   myStockCount: number;
   opponentStockCount: number;
+  pileLength: number;
   tributeSeat: number | null;
   lastPileWinId: number | null;
   lastFalseSlapId: number | null;
@@ -27,6 +36,7 @@ function snapshotOf(view: PlayerView): Snapshot {
   return {
     myStockCount: view.myStockCount,
     opponentStockCount: view.opponentStockCount,
+    pileLength: view.pile.length,
     tributeSeat: view.tribute?.seat ?? null,
     lastPileWinId: view.lastPileWin?.id ?? null,
     lastFalseSlapId: view.lastFalseSlap?.id ?? null,
@@ -42,7 +52,6 @@ function snapshotOf(view: PlayerView): Snapshot {
  *  raw number (0/1), not "me"/"opponent": a debug tool should read the same
  *  regardless of which seat this client happens to be. */
 export function useBataillecorseDebugLog(view: PlayerView | null): BataillecorseDebugLogEntry[] {
-  const { t } = useI18n();
   const [log, setLog] = useState<BataillecorseDebugLogEntry[]>([]);
   const nextIdRef = useRef(0);
   const prevRef = useRef<Snapshot | null>(null);
@@ -57,53 +66,54 @@ export function useBataillecorseDebugLog(view: PlayerView | null): Bataillecorse
     const opponentSeat = mySeat === 0 ? 1 : 0;
     const lines: string[] = [];
 
+    // The card just flipped: normally the pile's new top card, but a failed
+    // tribute answer both plays AND sweeps that same card away in one atomic
+    // engine update (see `engine.ts`'s `applyFalseSlapPenalty`/`awardPile`),
+    // so `view.pile` never observably grows for it - only `lastPileWin.cards`
+    // (a fresh "tribute"-reason win) ever carries it in that case.
+    const cardAdded = view.pile.length > prev.pileLength ? view.pile[view.pile.length - 1] : null;
+    const sweptFlipCard =
+      !cardAdded && view.lastPileWin && view.lastPileWin.id !== prev.lastPileWinId && view.lastPileWin.reason === "tribute"
+        ? view.lastPileWin.cards[view.lastPileWin.cards.length - 1]
+        : null;
+    const flippedCard = cardAdded ?? sweptFlipCard;
+    const flippedCardLabel = flippedCard ? formatCard(flippedCard) : "?";
+
     if (view.myStockCount < prev.myStockCount) {
-      lines.push(formatText(t("bataillecorseDebugFlip"), { seat: mySeat }));
+      lines.push(`P${mySeat} flips ${flippedCardLabel}`);
     }
     if (view.opponentStockCount < prev.opponentStockCount) {
-      lines.push(formatText(t("bataillecorseDebugFlip"), { seat: opponentSeat }));
+      lines.push(`P${opponentSeat} flips ${flippedCardLabel}`);
     }
 
     const tributeSeat = view.tribute?.seat ?? null;
     if (view.tribute && tributeSeat !== prev.tributeSeat) {
-      lines.push(
-        formatText(t("bataillecorseDebugTribute"), {
-          seat: view.tribute.seat,
-          rank: view.tribute.fromRank,
-          attempts: view.tribute.attemptsLeft,
-        }),
-      );
+      lines.push(`P${view.tribute.seat} owes a tribute (${view.tribute.fromRank}), ${view.tribute.attemptsLeft} attempt(s)`);
     }
 
     if (view.lastPileWin && view.lastPileWin.id !== prev.lastPileWinId) {
       const reasonText =
         view.lastPileWin.reason === "tribute"
-          ? t("bataillecorseDebugReasonTribute")
+          ? "failed tribute"
           : view.lastPileWin.reason === "slap"
-            ? t("bataillecorseDebugReasonSlap")
-            : t("bataillecorseDebugReasonFalseSlap");
-      lines.push(
-        formatText(t("bataillecorseDebugPileWin"), {
-          seat: view.lastPileWin.seat,
-          count: view.lastPileWin.cardCount,
-          reason: reasonText,
-        }),
-      );
+            ? "slap"
+            : "false slap";
+      lines.push(`P${view.lastPileWin.seat} wins the pile (${view.lastPileWin.cardCount} cards) — ${reasonText}`);
     }
 
     if (view.lastFalseSlap && view.lastFalseSlap.id !== prev.lastFalseSlapId) {
-      lines.push(formatText(t("bataillecorseDebugFalseSlap"), { seat: view.lastFalseSlap.seat }));
+      lines.push(`P${view.lastFalseSlap.seat} false-slaps`);
     }
 
     if (view.winner !== null && view.winner !== prev.winner) {
-      lines.push(formatText(t("bataillecorseDebugGameOver"), { seat: view.winner }));
+      lines.push(`P${view.winner} wins the match`);
     }
 
     if (lines.length === 0) return;
     setLog((current) =>
       [...current, ...lines.map((text) => ({ id: nextIdRef.current++, text }))].slice(-MAX_LOG_ENTRIES),
     );
-  }, [view, t]);
+  }, [view]);
 
   return log;
 }

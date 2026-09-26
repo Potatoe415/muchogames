@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: La Bataille Corse has a new debug mode: a checkbox now lives inside `HomeTopBar`'s shared paramètres panel (gated to `game === "bataillecorse"`, same pattern as its "Rules" entry), persisted to `localStorage`, and every table this game renders into (solo vs bot, face-to-face duel, online, ad-hoc/P2P) then shows a left-side, semi-transparent, read-only overlay with the game/match type and a live, one-line-per-move log. Splash version bumped to v0.13.
+Status: La Bataille Corse has a new debug mode: a checkbox in `HomeTopBar`'s shared paramètres panel (gated to `game === "bataillecorse"`), persisted to `localStorage`. Every table this game renders into (solo vs bot, face-to-face duel, online, ad-hoc/P2P) then shows a left-side, semi-transparent, read-only overlay with the game/match type and a live, one-line-per-move log, each flip showing the exact card value (e.g. "P0 flips K♠"). All debug copy is hardcoded English, deliberately never following the app's `useI18n` locale. Splash version bumped to v0.13.
 Focus: n/a (task complete)
 Level: L1 (one game, additive/reversible, gated behind an off-by-default checkbox)
 
@@ -28,6 +28,7 @@ Next:
 Blockers: none currently known — user confirmed (2026-09-25) `0003_profiles.sql` is applied and Google Auth is enabled on `multigames-db`.
 
     30|Recent_Changes:
+- 2026-09-26 La Bataille Corse debug mode: made all its copy hardcoded English (no longer via `useI18n`, per its nature as a dev-only tool) and each flip line now shows the actual card (e.g. "P0 flips K♠"), derived from the pile's new top card or, for a same-tick failed-tribute sweep, `lastPileWin.cards`.
 - 2026-09-26 La Bataille Corse: moved the debug-mode checkbox into `HomeTopBar`'s shared paramètres panel (game-gated, next to "Rules") instead of a standalone splash row; bumped the splash's own version counter to v0.13.
 - 2026-09-26 La Bataille Corse: new debug mode (checkbox, `localStorage`-persisted) showing a left-side transparent overlay with game/match type + a live move-by-move log on every mode's table (solo/duel/online/ad-hoc). Purely diagnostic, off by default, no server/network involvement.
 - 2026-09-25 La Bataille Corse: moved the local setup screen's start CTA below `GameSettingsPanel` (BAT-UI-01), game-scoped only.

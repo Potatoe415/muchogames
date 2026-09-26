@@ -141,7 +141,9 @@ export function HomeTopBar({ game }: { game?: GameType }) {
                 onChange={(e) => onDebugModeChange(e.target.checked)}
                 className="h-4 w-4 accent-[var(--accent-orange)]"
               />
-              {t("bataillecorseDebugCheckboxLabel")}
+              {/* Deliberately English-only, always - a developer diagnostic
+                  toggle, never gameplay copy (see `BataillecorseDebugOverlay.tsx`). */}
+              Debug mode
             </label>
           )}
         </div>
