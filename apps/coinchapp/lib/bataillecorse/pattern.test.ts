@@ -29,12 +29,13 @@ describe("detectSlapPattern", () => {
     expect(detectSlapPattern(pile)).toBe("double");
   });
 
-  it("detects a figure double across a tribute chain's ordinary filler cards", () => {
+  it("does not detect a figure double across a tribute chain's filler cards - the closing ace opens a fresh chain, it doesn't continue the old one", () => {
     // As opens a tribute (4 attempts); the payer burns 3 plain attempts
-    // before finally answering with another As - not adjacent on the real
-    // pile, but "right after" once the plain filler is ignored.
+    // before finally answering with another As. That answering As both
+    // pays off the old tribute and opens a brand new one - it is never
+    // compared against the As that opened the chain it just closed.
     const pile = [card("A"), card("3"), card("5"), card("9"), card("A")];
-    expect(detectSlapPattern(pile)).toBe("double");
+    expect(detectSlapPattern(pile)).toBeNull();
   });
 
   it("does not detect a figure sandwich across a tribute chain, even with just one other figure between - a sandwich only ever counts with exactly one real card in the middle", () => {

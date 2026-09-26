@@ -418,8 +418,8 @@ select option {
 /* The winning seat's whole half of `bataillecorse-scene` glows/flickers like
    it just caught fire (`winnerFireSeat`, same `FIRE_MS` window as
    `.bataillecorse-deck-fire` above) - a big, unmistakable "you're on fire"
-   moment beyond the deck's own glow. `-top` is the opponent (yellow);
-   `-bottom` is player 1 (green). */
+   moment beyond the deck's own glow. `-top` is the opponent (red);
+   `-bottom` is player 1 / me (green). */
 .bataillecorse-half-fire {
   animation: bataillecorse-half-fire 550ms ease-in-out infinite alternate;
 }
@@ -427,8 +427,8 @@ select option {
 .bataillecorse-half-fire-top {
   background: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--accent-yellow) 65%, transparent),
-    color-mix(in srgb, var(--accent-orange) 30%, transparent) 55%,
+    color-mix(in srgb, var(--accent-red) 65%, transparent),
+    color-mix(in srgb, var(--accent-red) 30%, transparent) 55%,
     transparent 100%
   );
 }

@@ -343,8 +343,14 @@ export function BataillecorseTable({
   const winnerFireSeat = useWinnerFireSeat(view.lastPileWin);
   const owesTribute = view.tribute?.seat === mySeat;
   const [slapTapKey, setSlapTapKey] = useState(0);
-  const slapImpact =
-    pileFlyTarget !== null && (view.lastPileWin?.reason === "slap" || view.lastPileWin?.reason === "falseSlap");
+  /** Only a false slap still plays the fly-time "impact" (card slam + shock
+   *  ring) - a genuine correct slap already got its one bounce at tap time
+   *  (`slapTapKey`/`pileCardHitClass`'s `tapHitKey` branch); replaying a
+   *  second bounce once the server validates it was redundant. The winner's
+   *  deck glowing green (`useWinnerFireSeat`/`.bataillecorse-deck-fire-green`,
+   *  `.bataillecorse-half-fire-bottom`) is the only feedback for that
+   *  validation moment now. */
+  const slapImpact = pileFlyTarget !== null && view.lastPileWin?.reason === "falseSlap";
 
   async function tapSlap() {
     if (view.phase !== "playing" || pileFlying) return;
@@ -731,7 +737,12 @@ const PILE_FLY_DISTANCE_SVH = 46;
  *  later win restarts the sweep rather than being a no-op remount. That
  *  remount must NOT replay `.bataillecorse-card-enter` on the
  *  top card, or the last flip looks like it is played a second time the
- *  instant someone slaps (see `PileCurrentCard`). */
+ *  instant someone slaps (see `PileCurrentCard`).
+ *
+ *  `slapImpact` (see `BataillecorseTable`) is only true for a *false* slap
+ *  now - a genuine correct slap already bounced once at tap time and does
+ *  not replay a second "slam" bounce once the server validates it; the
+ *  winning deck's green glow carries that moment instead. */
 function pileCardHitClass(tapHitKey: number, slapImpact: boolean, flying: boolean): string | undefined {
   if (flying && slapImpact) return "bataillecorse-pile-card-slam";
   if (flying || tapHitKey === 0) return undefined;

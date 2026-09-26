@@ -107,9 +107,11 @@ describe("submitFlip - opening a slap window", () => {
     expect(next.slapWindow?.pattern).toBe("sandwich");
   });
 
-  it("opens a window when a tribute's final attempt matches the original challenge rank, even with plain attempts in between", () => {
+  it("does not open a window when a tribute's final attempt matches the original challenge rank with plain attempts in between - it opens a fresh chain instead", () => {
     // Payer's own 3 plain attempts (3/5/9) sit between the original As and
-    // the As that finally answers it - still a double once filler is ignored.
+    // the As that finally answers it. That answering As opens a brand new
+    // tribute (owed back to seat 0) rather than continuing the old one, so
+    // it is never compared against the As that opened the chain it closed.
     const state = stateWith({
       turn: 1,
       stocks: [[card("K")], [card("A")]],
@@ -117,7 +119,8 @@ describe("submitFlip - opening a slap window", () => {
       tribute: { seat: 1, attemptsLeft: 1, fromRank: "A" },
     });
     const next = submitFlip(state, 1, 1234);
-    expect(next.slapWindow).toEqual({ id: 0, pattern: "double", openedAtMs: 1234 });
+    expect(next.slapWindow).toBeNull();
+    expect(next.tribute).toEqual({ seat: 0, attemptsLeft: 4, fromRank: "A" });
   });
 });
 
