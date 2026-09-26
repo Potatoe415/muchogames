@@ -37,8 +37,13 @@ describe("detectSlapPattern", () => {
     expect(detectSlapPattern(pile)).toBe("double");
   });
 
-  it("detects a figure sandwich across a tribute chain (one other figure between)", () => {
+  it("does not detect a figure sandwich across a tribute chain, even with just one other figure between - a sandwich only ever counts with exactly one real card in the middle", () => {
     const pile = [card("K"), card("7"), card("Q"), card("K")];
+    expect(detectSlapPattern(pile)).toBeNull();
+  });
+
+  it("still detects a literal sandwich for figures with no filtering involved (exactly one real card between)", () => {
+    const pile = [card("K"), card("Q"), card("K")];
     expect(detectSlapPattern(pile)).toBe("sandwich");
   });
 

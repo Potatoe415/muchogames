@@ -71,6 +71,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0063 | 2026-09-22 | La Bataille Corse: "very fast" reflex level lowered to 400ms, own botThinkMs floor | Accepted |
 | 0064 | 2026-09-23 | Président: finishing on a 2 forces Trou du Cul at round end | Accepted |
 | 0065 | 2026-09-23 | Président: pile holds 2s on a quad or a hand-emptying play | Accepted |
+| 0066 | 2026-09-26 | La Bataille Corse: figure/ace sandwich no longer ignores tribute filler | Accepted |
 
 ## When to log a decision
 Any of:

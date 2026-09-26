@@ -144,7 +144,7 @@ const BATAILLECORSE_RULES = {
       },
       {
         heading: "Les tapes (réflexe)",
-        body: "Un double (deux cartes de même valeur posées à la suite) ou un sandwich (deux cartes de même valeur séparées par une seule autre) : le premier qui tape le tas le remporte, peu importe le tribut en cours. Pour les figures et l'as, les cartes jouées pendant un tribut ne comptent pas : un Valet ou un As reste « juste après » le précédent Valet/As de même valeur, même séparé par des tentatives intermédiaires. À distance, seul le temps de réaction mesuré sur son propre appareil compte, jamais le temps réseau.",
+        body: "Un double (deux cartes de même valeur posées à la suite) ou un sandwich (deux cartes de même valeur séparées par une seule autre) : le premier qui tape le tas le remporte, peu importe le tribut en cours. Pour les figures et l'as uniquement, un doublé ignore les cartes jouées pendant un tribut : un Valet ou un As reste « juste après » le précédent Valet/As de même valeur, même séparé par des tentatives intermédiaires - le sandwich, lui, exige toujours une seule vraie carte entre les deux, sans exception. À distance, seul le temps de réaction mesuré sur son propre appareil compte, jamais le temps réseau.",
       },
       {
         heading: "La fausse tape",
@@ -169,7 +169,7 @@ const BATAILLECORSE_RULES = {
       },
       {
         heading: "Slaps (reflex)",
-        body: "A double (2 same-rank cards played back to back) or a sandwich (2 same-rank cards separated by exactly one other): first to slap the pile takes it, regardless of any tribute in progress. For figures and aces, cards played while paying a tribute don't count: a Jack or Ace still counts as \"right after\" the previous same-rank Jack/Ace, even separated by attempts in between. Remotely, only the reaction time measured on your own device counts, never network time.",
+        body: "A double (2 same-rank cards played back to back) or a sandwich (2 same-rank cards separated by exactly one other): first to slap the pile takes it, regardless of any tribute in progress. For figures and aces only, a double ignores cards played while paying a tribute: a Jack or Ace still counts as \"right after\" the previous same-rank Jack/Ace, even separated by attempts in between - a sandwich still always needs exactly one real card between the two, no exception. Remotely, only the reaction time measured on your own device counts, never network time.",
       },
       {
         heading: "False slap",
