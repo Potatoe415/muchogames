@@ -86,7 +86,8 @@ export interface GameState {
   turn: Seat;
   /** stocks[seat] = that seat's face-down draw pile. Last element = top (next
    *  to be flipped). Remaining order is hidden from the opponent; the owner's
-   *  redacted view gets only that top card as `myTopCard` (see `redact.ts`). */
+   *  redacted view gets the next card as `myTopCard`, plus the rest of the
+   *  tribute chain they currently owe as `myNextCards` (see `redact.ts`). */
   stocks: [Card[], Card[]];
   /** Center pile, face up. Last element = top (most recently played). */
   pile: Card[];

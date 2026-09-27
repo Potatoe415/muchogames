@@ -138,10 +138,13 @@ a single continuous match, `state.phase` is just `"playing" | "finished"`.
   element = top, next to flip). `state.pile: Card[]` is the shared, fully
   face-up center pile (last element = top/most recent). Redaction
   (`lib/bataillecorse/redact.ts`) hides each stock's remaining *order* from
-  the opponent. The acting seat's view also includes `myTopCard` (that
-  stock's top card only) so their own flip can paint on the same frame;
-  it is never rendered on the stock itself. Pile and stock counts stay
-  visible to both seats, same as the physical game.
+  the opponent. The acting seat's view also includes `myTopCard` (the next
+  card) and `myNextCards` (play order). On a normal turn that list is just
+  the top card. While that seat owes a tribute it is the next `attemptsLeft`
+  cards of their own stock (capped by what's left), so each tap in the chain
+  can paint its real face before the server round trip. Those cards are
+  never rendered on the stock itself, and never sent to the other seat.
+  Pile and stock counts stay visible to both seats, same as the physical game.
 - `state.turn: Seat` (0 | 1) - whose turn it is to flip next, either a plain
   lead or paying the tribute they currently owe (`state.tribute`). Not the
   same thing as who may attempt a slap (see below).

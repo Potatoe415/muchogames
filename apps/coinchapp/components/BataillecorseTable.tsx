@@ -337,8 +337,16 @@ export function BataillecorseTable({
   const falseSlapFlash = useFlash(view.lastFalseSlap?.id);
   const pileEnterDirection = usePileEnterDirection(view, mySeat);
   const { pile: displayPile, flying: pileFlying, justEnteredCardKey } = useDisplayPile(view.pile, view.lastPileWin);
-  const { myTurnToFlip, pendingFlip, pendingFaceDown, optimisticStockCount, optimisticPile, flip: tapFlip } =
-    useOptimisticFlip(view, mySeat, actions.onFlip, pileFlying);
+  const {
+    pendingFlip,
+    pendingFaceDown,
+    canFlipMore,
+    optimisticStockCount,
+    optimisticPile,
+    optimisticTribute,
+    optimisticTurn,
+    flip: tapFlip,
+  } = useOptimisticFlip(view, mySeat, actions.onFlip, pileFlying);
   const shownPile = pileFlying ? displayPile : optimisticPile;
   const pileFlyTarget: "up" | "down" | null =
     pileFlying && view.lastPileWin ? (view.lastPileWin.seat === mySeat ? "down" : "up") : null;
@@ -346,7 +354,7 @@ export function BataillecorseTable({
   const opponentReactionMs = useSeatReactionMs(view.lastPileWin, opponentSeat as 0 | 1);
   const eventReactionMsMine = useSeatReactionMs(view.lastPileWin, mySeat as 0 | 1);
   const winnerFireSeat = useWinnerFireSeat(view.lastPileWin);
-  const owesTribute = view.tribute?.seat === mySeat;
+  const owesTribute = optimisticTribute?.seat === mySeat;
   const [slapTapKey, setSlapTapKey] = useState(0);
   /** Only a false slap still plays the fly-time "impact" (card slam + shock
    *  ring) - a genuine correct slap already got its one bounce at tap time
@@ -425,10 +433,10 @@ export function BataillecorseTable({
         <SeatRow
           label={playerName(gv, opponentSeat, locale)}
           stockCount={view.opponentStockCount}
-          isTurn={view.turn === opponentSeat && !pileFlying}
+          isTurn={optimisticTurn === opponentSeat && !pileFlying}
           reaction={reactions?.get(opponentSeat)}
           fire={winnerFireSeat === opponentSeat}
-          tributeAttempts={!owesTribute ? view.tribute?.attemptsLeft : undefined}
+          tributeAttempts={!owesTribute ? optimisticTribute?.attemptsLeft : undefined}
           pileWinLabel={
             pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === opponentSeat
               ? formatText(t("pileWonBanner"), { player: playerName(gv, opponentSeat, locale) })
@@ -469,8 +477,8 @@ export function BataillecorseTable({
           </button>
 
           <div className="flex min-h-[1.75rem] flex-col items-center gap-1.5">
-            {owesTribute && view.tribute && (
-              <TributePlayHint attempts={view.tribute.attemptsLeft} dataId="bataillecorse-tribute-banner" />
+            {owesTribute && optimisticTribute && (
+              <TributePlayHint attempts={optimisticTribute.attemptsLeft} dataId="bataillecorse-tribute-banner" />
             )}
             {falseSlapFlash && view.lastFalseSlap && (
               <p className="sr-only" data-id="bataillecorse-false-slap-flash">
@@ -499,10 +507,10 @@ export function BataillecorseTable({
             dataId="bataillecorse-my-stock"
             scale={1.5}
             onClick={tapFlip}
-            disabled={!myTurnToFlip || pendingFlip}
+            disabled={!canFlipMore}
             fire={winnerFireSeat === mySeat}
             fireGreen
-            isTurn={view.turn === mySeat && !pileFlying}
+            isTurn={optimisticTurn === mySeat && !pileFlying}
             overlayLabel={
               pileWinFlash && view.lastPileWin && view.lastPileWin.reason !== "falseSlap" && view.lastPileWin.seat === mySeat
                 ? t("pileWonYou")

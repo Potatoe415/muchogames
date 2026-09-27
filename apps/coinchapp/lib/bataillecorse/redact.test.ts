@@ -23,6 +23,23 @@ describe("redact", () => {
   it("sets myTopCard to null when that stock is empty", () => {
     const state = stateWith({ turn: 0, stocks: [[], [card("9")]] });
     expect(redact(state, 0).myTopCard).toBeNull();
+    expect(redact(state, 0).myNextCards).toEqual([]);
     expect(redact(state, 1).myTopCard).toEqual(card("9"));
+  });
+
+  it("previews only the attempts this seat still owes, in play order, never the opponent's stock", () => {
+    const state = stateWith({
+      turn: 1,
+      stocks: [
+        [card("2"), card("3"), card("4")],
+        [card("5"), card("6"), card("7"), card("8"), card("9")],
+      ],
+      tribute: { seat: 1, attemptsLeft: 3, fromRank: "K" },
+    });
+    const payer = redact(state, 1);
+    expect(payer.myNextCards).toEqual([card("9"), card("8"), card("7")]);
+    expect(payer.myTopCard).toEqual(card("9"));
+    expect(redact(state, 0).myNextCards).toEqual([card("4")]);
+    expect(JSON.stringify(redact(state, 0))).not.toContain('"rank":"9"');
   });
 });

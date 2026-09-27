@@ -115,14 +115,14 @@ export function BataillecorseDuelTable({
           label={player2}
           stockCount={flipB.optimisticStockCount}
           onFlip={flipB.flip}
-          disabled={!flipB.myTurnToFlip || flipB.pendingFlip}
+          disabled={!flipB.canFlipMore}
           fire={winnerFireSeat === 1}
-          isTurn={viewA.turn === 1 && !pileFlying}
+          isTurn={flipB.optimisticTurn === 1 && !pileFlying}
           mineMs={reactionB}
           opponentMs={reactionA}
           locale={locale}
           rotated
-          tributeAttempts={viewA.tribute?.seat === 1 ? viewA.tribute.attemptsLeft : undefined}
+          tributeAttempts={flipB.optimisticTribute?.seat === 1 ? flipB.optimisticTribute.attemptsLeft : undefined}
           pileWinLabel={sweptSeat === 1 ? t("pileWonYou") : undefined}
           dataId="bataillecorse-duel-player2"
           className="top-[calc(var(--table-hud-top)+3.5rem)]"
@@ -143,16 +143,16 @@ export function BataillecorseDuelTable({
           slapWindowUrgent={slapWindowUrgent}
           falseSlapFlash={falseSlapFlash && Boolean(viewA.lastFalseSlap)}
           falseSlapLabel={t("falseSlapStamp")}
-          tribute={viewA.tribute}
+          tribute={flipA.optimisticTribute}
         />
 
         <DuelPlayerCorner
           label={player1}
           stockCount={flipA.optimisticStockCount}
           onFlip={flipA.flip}
-          disabled={!flipA.myTurnToFlip || flipA.pendingFlip}
+          disabled={!flipA.canFlipMore}
           fire={winnerFireSeat === 0}
-          isTurn={viewA.turn === 0 && !pileFlying}
+          isTurn={flipA.optimisticTurn === 0 && !pileFlying}
           mineMs={reactionA}
           opponentMs={reactionB}
           locale={locale}

@@ -74,6 +74,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0066 | 2026-09-26 | La Bataille Corse: figure/ace sandwich no longer ignores tribute filler | Accepted |
 | 0067 | 2026-09-26 | La Bataille Corse: figure/ace tribute-filler slap exception removed entirely | Accepted |
 | 0068 | 2026-09-26 | La Bataille Corse: a tribute failure defers to a real slap window first | Accepted |
+| 0069 | 2026-09-27 | La Bataille Corse: a tribute chain paints every tap before the server answers | Accepted |
 
 ## When to log a decision
 Any of:

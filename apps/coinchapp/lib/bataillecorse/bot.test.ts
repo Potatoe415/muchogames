@@ -10,6 +10,7 @@ function view(overrides: Partial<PlayerView>): PlayerView {
     myStockCount: 10,
     opponentStockCount: 10,
     myTopCard: null,
+    myNextCards: [],
     pile: [],
     tribute: null,
     slapWindow: null,

@@ -71,7 +71,7 @@ Every card game's table (online, ad-hoc/P2P, or any server-round-trip mode) MUST
 Reuse the existing shared hooks — one per genuinely distinct action shape:
 - `lib/client/useOptimisticPlay.ts` — any turn-based "play a known card from my hand" action (Coinche's `GameTable`, Bouilla's `BouillaTable`).
 - `lib/client/usePresidentOptimisticPlay.ts` — Président's "play a 1-4 card combo, or pass" action.
-- `lib/client/useOptimisticFlip.ts` — la Bataille Corse's "flip my own top card" action (`PlayerView.myTopCard` + `flushSync` via `useInstantPending`).
+- `lib/client/useOptimisticFlip.ts` — la Bataille Corse's "flip my own top card" action. One tap paints `myTopCard` immediately. While that seat owes a tribute, further taps queue the rest of `myNextCards` the same way (real face, stock, attempts) and the flips are submitted in order afterwards. `flushSync` still commits before the server action.
 
 A brand-new action shape that doesn't fit any of the three still needs its own instant local simulation. This does not apply to reflecting an *opponent's* move — that is genuinely unknown until the network/broadcast delivers it.
 
