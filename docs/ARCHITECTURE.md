@@ -9,7 +9,7 @@ Merged from the retired `docs/TECH.md` on 2026-09-22 (bootstrap v10.1 upgrade, s
 | Layer | Choice |
 |---|---|
 | Frontend | Vanilla JavaScript (ES6+), HTML5, CSS3. No UI framework. Vite as dev server/bundler. Applies to the hub-spoke surface only (`index.html`, `wordplayer.html`, `public/games/`) |
-| Backend | Vercel Serverless Functions (Node.js), 11 of the 12 Hobby allows: `api/yatsy/games/*` (5, Yatzy matchmaking/state), `api/yatsy/gifs.js`, `api/track.js` (launch counts), `api/profile/index.js` (shared profile, per-game stats, export/delete), `api/admin/index.js` (all admin actions), `api/feedback.js` (public reports), `api/hub-settings.js` (public, CDN-cached catalog overlay). Multi-action functions dispatch on a body `action` (decisions 0039, 0040) |
+| Backend | Vercel Serverless Functions (Node.js), 7 of the 12 Hobby allows: `api/yatsy/games/index.js` (every Yatzy room route, reached through `vercel.json` rewrites, decision 0045), `api/yatsy/gifs.js`, `api/track.js` (launch counts), `api/profile/index.js` (shared profile, per-game stats, export/delete), `api/admin/index.js` (all admin actions), `api/feedback.js` (public reports), `api/hub-settings.js` (public, CDN-cached catalog overlay). Multi-action functions dispatch on a body `action` (decisions 0039, 0040) |
 | Database | No general-purpose DB. Game content is static JSON (`public/data/`, `public/hub-config.json`). Supabase Postgres (shared `multigames-db` project, also used by `coinchapp`/`tranquil`) holds Yatzy room state (`yatzy_*`), launch events, profiles + per-game stats + launch codes, feedback, and the hub settings row (`muchogames_*`). See `docs/DATA_MODEL.md` |
 | Runtime | Node.js (tooling + `api/` functions), browser (app itself) |
 | Package manager | npm |
@@ -34,7 +34,7 @@ This repo predates the `src/modules/<name>/` convention from the v10.1 template 
 | `public/games/<id>/` | One folder per custom game (own code, own rules). See `docs/GAMES_MAP.md` for the full index — read that before opening any game folder | game-specific (mostly static JSON; `yatsy` also owns Supabase state) | `public/shared/js/*`, `public/shared/css/*` |
 | `public/shared/js/`, `public/shared/css/` | Shared code for unbundled games, served verbatim via `<script src>`. Public API documented in `shared/CONTRACT.md` — read that, not the source, before writing a new game | n/a | none (leaf) |
 | `shared/js/analytics.js` | Bundled-by-Vite shared code, reachable only from `wordplayer.js`/`hub.js` | none | none |
-| `api/yatsy/games/*` | Yatzy matchmaking/state authority (serverless) | `yatzy_games`, `yatzy_game_events` (Supabase) | `api/_lib/*` |
+| `api/yatsy/games/` | Yatzy matchmaking/state authority: one function (`index.js`) dispatching to `_create`, `_room`, `_join`, `_resume`, `_state`; public URLs `/api/yatsy/games[/:code[/join\|resume\|state]]` kept via `vercel.json` rewrites | `yatzy_games`, `yatzy_game_events` (Supabase) | `api/_lib/*` |
 | `api/track.js` | Hub launch counter writes | `muchogames_events` (Supabase) | `api/_lib/*` |
 | `api/profile/` | Signed-in profile: get/upsert, results (per game), launch codes, export, account deletion | `muchogames_profiles`, `muchogames_game_stats`, `muchogames_launch_codes` | `api/_lib/*` |
 | `api/admin/` | Admin back-office actions (`_stats`, `_feedback`, `_hubSettings`, `_players`) behind the allowlist | reads/writes the `muchogames_*` tables above | `api/_lib/*` |

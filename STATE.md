@@ -26,6 +26,7 @@ Blockers:
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
+- 2026-10-02 Yatzy room routes merged into one function via `vercel.json` rewrites (decision 0045): 7/12 functions.
 - 2026-10-02 `docs/PRODUCT.md`, `ARCHITECTURE.md`, `SECURITY.md` aligned with the roadmap (owner confirmed).
 - 2026-10-02 "Report a problem" everywhere: wordplayer reports carry `?game=`; coinchapp + Tranquil settings link to the hub's `?feedback=<gameId>`.
 - 2026-10-02 Data export + account deletion on `/profile`, admin Players card (decision 0044).

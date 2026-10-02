@@ -1,27 +1,11 @@
-import {
-  readJsonBody,
-  sendError,
-  sendJson,
-  withErrorHandling
-} from "../../../_lib/http.js";
-import { getServiceClient } from "../../../_lib/supabase.js";
-import {
-  CODE_LENGTH,
-  isExpired,
-  normalizeCode,
-  seatTokenColumn
-} from "../../../_lib/yatzyGames.js";
+// POST /api/yatsy/games/:code/resume. Route of api/yatsy/games/index.js.
+import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
+import { getServiceClient } from "../../_lib/supabase.js";
+import { isExpired, seatTokenColumn } from "../../_lib/yatzyGames.js";
 
-async function handler(req, res) {
+export async function handleResume(req, res, code) {
   if (req.method !== "POST") {
     sendError(res, "method-not-allowed", "Use POST to resume a game.");
-    return;
-  }
-
-  const code = normalizeCode(req.query.code);
-
-  if (code.length !== CODE_LENGTH) {
-    sendError(res, "invalid-code", "Game code must contain exactly 3 letters.");
     return;
   }
 
@@ -72,5 +56,3 @@ async function handler(req, res) {
     gameState: data.game_state || null
   });
 }
-
-export default withErrorHandling(handler);

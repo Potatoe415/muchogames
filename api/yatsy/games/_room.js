@@ -1,18 +1,9 @@
-import {
-  readJsonBody,
-  sendError,
-  sendJson,
-  withErrorHandling
-} from "../../_lib/http.js";
+// GET / DELETE /api/yatsy/games/:code. Route of api/yatsy/games/index.js.
+import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
 import { getServiceClient } from "../../_lib/supabase.js";
-import {
-  CODE_LENGTH,
-  isExpired,
-  normalizeCode,
-  seatTokenColumn
-} from "../../_lib/yatzyGames.js";
+import { isExpired, seatTokenColumn } from "../../_lib/yatzyGames.js";
 
-async function handleGet(req, res, supabase, code) {
+async function handleGet(res, supabase, code) {
   const { data, error } = await supabase
     .from("yatzy_games")
     .select("created_at, status, game_state")
@@ -81,18 +72,11 @@ async function handleDelete(req, res, supabase, code) {
   sendJson(res, 200, { code, removed: false });
 }
 
-async function handler(req, res) {
-  const code = normalizeCode(req.query.code);
-
-  if (code.length !== CODE_LENGTH) {
-    sendError(res, "invalid-code", "Game code must contain exactly 3 letters.");
-    return;
-  }
-
+export async function handleRoom(req, res, code) {
   const supabase = getServiceClient();
 
   if (req.method === "GET") {
-    await handleGet(req, res, supabase, code);
+    await handleGet(res, supabase, code);
     return;
   }
 
@@ -103,5 +87,3 @@ async function handler(req, res) {
 
   sendError(res, "method-not-allowed", "Use GET or DELETE.");
 }
-
-export default withErrorHandling(handler);

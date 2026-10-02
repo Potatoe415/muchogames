@@ -1,29 +1,16 @@
+// POST /api/yatsy/games/:code/join. Route of api/yatsy/games/index.js.
+import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
+import { getServiceClient } from "../../_lib/supabase.js";
 import {
-  readJsonBody,
-  sendError,
-  sendJson,
-  withErrorHandling
-} from "../../../_lib/http.js";
-import { getServiceClient } from "../../../_lib/supabase.js";
-import {
-  CODE_LENGTH,
   insertTick,
   isExpired,
-  normalizeCode,
   randomSeatToken,
   seatTokenColumn
-} from "../../../_lib/yatzyGames.js";
+} from "../../_lib/yatzyGames.js";
 
-async function handler(req, res) {
+export async function handleJoin(req, res, code) {
   if (req.method !== "POST") {
     sendError(res, "method-not-allowed", "Use POST to join a game.");
-    return;
-  }
-
-  const code = normalizeCode(req.query.code);
-
-  if (code.length !== CODE_LENGTH) {
-    sendError(res, "invalid-code", "Game code must contain exactly 3 letters.");
     return;
   }
 
@@ -101,5 +88,3 @@ async function handler(req, res) {
     resumeToken: seatToken
   });
 }
-
-export default withErrorHandling(handler);

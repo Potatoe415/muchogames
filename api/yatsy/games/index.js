@@ -1,72 +1,47 @@
-import { sendError, sendJson, withErrorHandling } from "../../_lib/http.js";
-import { getServiceClient } from "../../_lib/supabase.js";
-import {
-  MAX_CODE_ATTEMPTS,
-  insertTick,
-  isExpired,
-  randomCode,
-  randomSeatToken
-} from "../../_lib/yatzyGames.js";
+import { sendError, withErrorHandling } from "../../_lib/http.js";
+import { CODE_LENGTH, normalizeCode } from "../../_lib/yatzyGames.js";
+import { handleCreate } from "./_create.js";
+import { handleJoin } from "./_join.js";
+import { handleResume } from "./_resume.js";
+import { handleRoom } from "./_room.js";
+import { handleState } from "./_state.js";
+
+// Every Yatzy room route in one Serverless Function (Vercel Hobby caps a
+// deployment at 12). vercel.json rewrites /api/yatsy/games/:code and
+// /api/yatsy/games/:code/:op here as ?code=…&op=…, so the URLs used by
+// public/games/yatsy/matchmaking.js are unchanged.
+const ROOM_OPERATIONS = {
+  join: handleJoin,
+  resume: handleResume,
+  state: handleState
+};
 
 async function handler(req, res) {
-  if (req.method !== "POST") {
-    sendError(res, "method-not-allowed", "Use POST to create a game.");
+  if (req.query.code === undefined) {
+    await handleCreate(req, res);
     return;
   }
 
-  const supabase = getServiceClient();
+  const code = normalizeCode(req.query.code);
 
-  for (let attempt = 0; attempt < MAX_CODE_ATTEMPTS; attempt += 1) {
-    const code = randomCode();
-    const { data: existing, error: readError } = await supabase
-      .from("yatzy_games")
-      .select("created_at")
-      .eq("code", code)
-      .maybeSingle();
-
-    if (readError) {
-      sendError(res, "server-error", readError.message);
-      return;
-    }
-
-    if (existing) {
-      if (!isExpired(existing.created_at)) {
-        continue;
-      }
-
-      await supabase.from("yatzy_games").delete().eq("code", code);
-    }
-
-    const creatorToken = randomSeatToken();
-    const { error: insertError } = await supabase.from("yatzy_games").insert({
-      code,
-      status: "waiting",
-      game_state: null,
-      creator_token: creatorToken,
-      joiner_token: null
-    });
-
-    if (insertError) {
-      if (insertError.code === "23505") {
-        continue; // Unique violation: another request just took this code.
-      }
-
-      sendError(res, "server-error", insertError.message);
-      return;
-    }
-
-    await insertTick(supabase, code, 0);
-
-    sendJson(res, 200, {
-      code,
-      role: "creator",
-      localPlayerIndex: 0,
-      resumeToken: creatorToken
-    });
+  if (code.length !== CODE_LENGTH) {
+    sendError(res, "invalid-code", "Game code must contain exactly 3 letters.");
     return;
   }
 
-  sendError(res, "code-exhausted", "Unable to reserve a free game code.");
+  if (!req.query.op) {
+    await handleRoom(req, res, code);
+    return;
+  }
+
+  const operation = ROOM_OPERATIONS[req.query.op];
+
+  if (!operation) {
+    sendError(res, "invalid-action", "Unknown game operation.");
+    return;
+  }
+
+  await operation(req, res, code);
 }
 
 export default withErrorHandling(handler);

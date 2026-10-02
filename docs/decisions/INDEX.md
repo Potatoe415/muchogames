@@ -50,6 +50,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0042 | 2026-10-02 | Per-game results: one row per profile and game (`muchogames_game_stats`) | Accepted |
 | 0043 | 2026-10-02 | Hub settings overlay served by a cached function (`muchogames_hub_settings`) | Accepted |
 | 0044 | 2026-10-02 | Self-service data export and account deletion, admin moderation | Accepted |
+| 0045 | 2026-10-02 | One Serverless Function for Yatzy rooms (URLs kept via rewrites) | Accepted |
 
 ## When to log a decision
 Any of:

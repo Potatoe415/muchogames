@@ -1,4 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/api/yatsy/games/:code/:op(join|resume|state)",
+      "destination": "/api/yatsy/games?code=:code&op=:op"
+    },
+    {
+      "source": "/api/yatsy/games/:code",
+      "destination": "/api/yatsy/games?code=:code"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

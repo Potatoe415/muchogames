@@ -1,16 +1,7 @@
-import {
-  readJsonBody,
-  sendError,
-  sendJson,
-  withErrorHandling
-} from "../../../_lib/http.js";
-import { getServiceClient } from "../../../_lib/supabase.js";
-import {
-  CODE_LENGTH,
-  insertTick,
-  normalizeCode,
-  seatTokenColumn
-} from "../../../_lib/yatzyGames.js";
+// PUT /api/yatsy/games/:code/state. Route of api/yatsy/games/index.js.
+import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
+import { getServiceClient } from "../../_lib/supabase.js";
+import { insertTick, seatTokenColumn } from "../../_lib/yatzyGames.js";
 
 // A real Yatzy state serializes to a few KB. The cap stops a seated player from
 // using their own room as unbounded storage in the shared Supabase project.
@@ -28,16 +19,9 @@ function isAcceptableGameState(gameState) {
   return JSON.stringify(gameState).length <= MAX_GAME_STATE_BYTES;
 }
 
-async function handler(req, res) {
+export async function handleState(req, res, code) {
   if (req.method !== "PUT") {
     sendError(res, "method-not-allowed", "Use PUT to update game state.");
-    return;
-  }
-
-  const code = normalizeCode(req.query.code);
-
-  if (code.length !== CODE_LENGTH) {
-    sendError(res, "invalid-code", "Game code must contain exactly 3 letters.");
     return;
   }
 
@@ -94,5 +78,3 @@ async function handler(req, res) {
 
   sendJson(res, 200, { code, version: nextVersion });
 }
-
-export default withErrorHandling(handler);
