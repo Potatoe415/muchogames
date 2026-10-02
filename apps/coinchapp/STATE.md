@@ -27,6 +27,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-10-02 `HomeTopBar` settings panel: "Signaler un problème" link (`home-settings-feedback-link`) opening the hub's report dialog for the current game (`hubFeedbackUrl`). `npm test` 321/321, `tsc` clean, build clean.
 - 2026-10-02 Per-game hub profile sync (decision 0070): new `localStorage` keys `coinchapp-match-results-by-game` / `coinchapp-profile-synced-by-game`; `syncSharedMatchResults` takes a `game`. `npm test` 321/321, `tsc --noEmit` clean, `npm run build` clean. `npm run lint` still fails only on the pre-existing `useMatchStats.ts` error.
 - 2026-09-27 La Bataille Corse (decision 0069): online tribute flips no longer wait on the server between cards.
 - 2026-09-26 La Bataille Corse debug overlay revealed by the in-game "Info partie" button; splash build counter v0.14.

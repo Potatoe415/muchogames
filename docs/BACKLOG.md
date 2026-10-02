@@ -15,7 +15,6 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] **User**: run the pending migrations in order in the Supabase SQL editor of `multigames-db`: `0004_feedback.sql`, `0005_game_stats.sql`, `0006_hub_settings.sql`. Then: send one report and resolve it on `/admin`; finish one Yatzy and one coinchapp match from the hub and check the per-game rows on `/profile`; hide a game + post an announcement from `/admin` and see it on the hub within a minute; export your data from `/profile`; delete a throwaway Google account from `/profile` and confirm it vanishes from the admin Players list.
 - [ ] Tranquil's per-game sync only goes live once `tranquil`'s Vercel project is repointed to this repo (see the repoint item above); until then its deployed code is the old one.
 - [ ] Confirm the proposed `docs/PRODUCT.md` / `docs/ARCHITECTURE.md` / `docs/SECURITY.md` wording for the 2026-10-02 roadmap (admin by Google, public `api/feedback` + `api/hub-settings`, account deletion, per-game stats) before editing them.
-- [ ] Add the "Report a problem" entry to wordplayer games, coinchapp and Tranquil (only the hub, `/profile` and the six in-repo custom games have it).
 - [ ] Delete the verification row: `delete from public.muchogames_events where game_id = '__verification__';`.
 - [ ] Copy `SUPABASE_URL` to the Preview environment (currently Production-only).
 - [ ] Verify Yatzy online play with two real devices (create, join, leave, resume, reclaim a seat by code).

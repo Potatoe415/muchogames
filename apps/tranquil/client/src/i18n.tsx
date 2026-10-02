@@ -128,6 +128,7 @@ const en: Record<string, string> = {
   'settings.myStats': 'My stats',
   'settings.wins': 'Wins',
   'settings.losses': 'Losses',
+  'settings.reportProblem': 'Report a problem',
 };
 
 const fr: Record<string, string> = {
@@ -249,6 +250,7 @@ const fr: Record<string, string> = {
   'settings.myStats': 'Mes stats',
   'settings.wins': 'Victoires',
   'settings.losses': 'Défaites',
+  'settings.reportProblem': 'Signaler un problème',
 };
 
 const translations: Record<Lang, Record<string, string>> = { en, fr };

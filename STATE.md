@@ -28,6 +28,7 @@ Blockers:
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
+- 2026-10-02 "Report a problem" everywhere: wordplayer reports carry `?game=`; coinchapp + Tranquil settings link to the hub's `?feedback=<gameId>`.
 - 2026-10-02 Data export + account deletion on `/profile`, admin Players card (decision 0044).
 - 2026-10-02 Hub catalog + announcement editable from `/admin` (decision 0043, 11/12 functions).
 - 2026-10-02 Hub "My games" shelf, favorites, player tags/filter.

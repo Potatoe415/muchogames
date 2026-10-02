@@ -125,9 +125,12 @@
     status.hidden = !message;
   }
 
+  // `/games/<id>/…` for custom games, `/wordplayer.html?game=<id>` for
+  // wordpack games.
   function inferGameId() {
     const match = window.location.pathname.match(/\/games\/([^/]+)\//);
-    return match ? match[1] : "";
+    if (match) return match[1];
+    return new URLSearchParams(window.location.search).get("game") || "";
   }
 
   function open(options) {

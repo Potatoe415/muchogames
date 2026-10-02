@@ -3,6 +3,10 @@ import { useSettings } from '../settings';
 import { useT, LanguageSwitcher } from '../i18n';
 import { getMatchResultStats } from '../lib/matchResultStats';
 
+// The hub's "Report a problem" dialog, pre-filled with this game's hub id;
+// reports land in the hub's admin inbox.
+const HUB_FEEDBACK_URL = 'https://muchogames.vercel.app/?feedback=tranquil';
+
 interface Props {
   onClose: () => void;
   onRestartGame?: () => void;
@@ -68,6 +72,16 @@ export default function SettingsPanel({ onClose, onRestartGame, roomCode }: Prop
               onChange={v => update({ soundOnMyTurn: v })}
             />
           </label>
+
+          <a
+            href={HUB_FEEDBACK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-id="settings-feedback-link"
+            className="w-full py-2 rounded-xl bg-ocean-800 hover:bg-ocean-700 text-center text-white/80 hover:text-white text-sm font-medium transition-colors"
+          >
+            {t('settings.reportProblem')}
+          </a>
 
           {onRestartGame && (
             <>

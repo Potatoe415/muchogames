@@ -87,7 +87,11 @@ pre-fill an existing input from that param; never require it.
 
 - `open({ gameId })` — shows the report dialog (bug / idea + message),
   posting to `POST /api/feedback`. `gameId` defaults to the `/games/<id>/`
-  segment of the current URL. Injects `/shared/css/feedback.css` itself.
+  segment of the current URL, else its `?game=` param (wordplayer).
+  Injects `/shared/css/feedback.css` itself.
+- Games on other origins (coinchapp, Tranquil) link to the hub with
+  `?feedback=<gameId>`; `hub.js` opens the dialog pre-filled and strips the
+  param. No cross-origin call to `/api/feedback`.
 - `close()`.
   Loaded directly by the hub (`index.html`); games get it through
   `game-header.js`, so don't add a `<script>` tag for it in a game.

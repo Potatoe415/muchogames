@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderVersionBadge();
   renderForceRefreshButton();
   renderFeedbackButton();
+  openFeedbackFromUrl();
   initAuthWidget();
   initializeDashboard();
   setupHubShareButton();
@@ -160,6 +161,19 @@ function renderFeedbackButton() {
   button.textContent = FEEDBACK_LABELS[state.lang] || FEEDBACK_LABELS.fr;
   button.addEventListener("click", () => window.MuchogamesFeedback?.open());
   document.body.appendChild(button);
+}
+
+// Games on other origins (coinchapp, Tranquil) link to `/?feedback=<gameId>`
+// rather than posting to /api/feedback cross-origin.
+function openFeedbackFromUrl() {
+  const url = new URL(window.location.href);
+  if (!url.searchParams.has("feedback")) return;
+  const gameId = url.searchParams.get("feedback") || "";
+  url.searchParams.delete("feedback");
+  window.history.replaceState(null, "", url.toString());
+  window.MuchogamesFeedback?.open(
+    /^[a-z0-9-]{1,64}$/.test(gameId) ? { gameId } : {}
+  );
 }
 
 async function initializeDashboard() {

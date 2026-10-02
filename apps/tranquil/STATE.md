@@ -26,6 +26,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-10-02 `SettingsPanel`: "Report a problem" link (`settings-feedback-link`) to the hub's `?feedback=tranquil`. Tests, `tsc`, client build clean.
 - 2026-10-02 `profileLink.ts` records results under hub game id `tranquil` (`record_muchogames_game_result`), with a fallback to `increment_muchogames_profile_stats`. `npm test` 51/51, `tsc` clean, client build clean.
 - 2026-09-24 Finished matches also increment `muchogames_profiles` after a hub launch code. Local `tranquil-match-results` is unchanged.
 - 2026-09-22 Bootstrap v10.1 alignment (context architecture only).

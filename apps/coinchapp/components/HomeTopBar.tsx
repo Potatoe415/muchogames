@@ -5,7 +5,7 @@ import {
   isBataillecorseDebugModeEnabled,
   setBataillecorseDebugModeEnabled,
 } from "@/lib/client/bataillecorseDebugMode";
-import { HUB_URL } from "@/lib/client/hubUrl";
+import { HUB_URL, hubFeedbackUrl } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { getMatchResultStats, type MatchResultStats } from "@/lib/client/matchResultStats";
 import { RulesModal } from "./RulesModal";
@@ -146,6 +146,16 @@ export function HomeTopBar({ game }: { game?: GameType }) {
               Debug mode
             </label>
           )}
+
+          <a
+            href={hubFeedbackUrl(game)}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-id="home-settings-feedback-link"
+            className="mt-2 block w-full rounded-xl bg-black/10 px-2 py-1.5 text-center text-sm font-bold text-[var(--card-face)]"
+          >
+            {t("reportProblem")}
+          </a>
         </div>
       )}
 
