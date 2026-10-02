@@ -2,10 +2,65 @@
    Plain global script (no ES module) so both module and classic game
    scripts can call it. */
 (function () {
+  var FEEDBACK_SCRIPT_URL = "/shared/js/feedback.js";
+  var FEEDBACK_LABELS = {
+    fr: "Signaler un problème",
+    en: "Report a problem",
+    es: "Informar de un problema"
+  };
+
+  function readLang() {
+    try {
+      var lang = localStorage.getItem("bergamots-lang");
+      return FEEDBACK_LABELS[lang] ? lang : "fr";
+    } catch {
+      return "fr";
+    }
+  }
+
+  function openFeedback() {
+    if (window.MuchogamesFeedback) {
+      window.MuchogamesFeedback.open();
+      return;
+    }
+    var script = document.createElement("script");
+    script.src = FEEDBACK_SCRIPT_URL;
+    script.onload = function () {
+      window.MuchogamesFeedback.open();
+    };
+    document.head.appendChild(script);
+  }
+
+  // Appended to the panel's body so every game gets the entry without its own
+  // markup. Panels without an .options-panel-body are left alone.
+  function addFeedbackEntry(panelEl, closePanel) {
+    var body = panelEl.querySelector(".options-panel-body");
+    if (!body) return null;
+
+    var section = document.createElement("div");
+    section.className = "options-panel-section";
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "options-feedback-button";
+    button.dataset.id = "options-feedback-button";
+    button.addEventListener("click", function () {
+      closePanel();
+      openFeedback();
+    });
+    section.appendChild(button);
+    body.appendChild(section);
+    return button;
+  }
+
   function initOptionsPanel(triggerEl, panelEl) {
     if (!triggerEl || !panelEl) return null;
 
+    var feedbackButton = addFeedbackEntry(panelEl, close);
+
     function open() {
+      // Games switch language without reloading, so relabel on every open.
+      if (feedbackButton)
+        feedbackButton.textContent = FEEDBACK_LABELS[readLang()];
       panelEl.hidden = false;
       triggerEl.setAttribute("aria-expanded", "true");
     }

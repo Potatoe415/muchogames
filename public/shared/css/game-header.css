@@ -178,6 +178,22 @@
   margin: 0 0 8px;
 }
 
+.options-feedback-button {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.options-feedback-button:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
 .rules-modal-content {
   font-size: 0.95rem;
   line-height: 1.5;

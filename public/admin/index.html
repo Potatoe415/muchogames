@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/admin/admin.css" />
+    <link rel="stylesheet" href="/admin/admin-feedback.css" />
   </head>
   <body>
     <main class="admin-shell">
@@ -145,6 +146,60 @@
           hidden
         >
           No launches recorded yet.
+        </p>
+      </section>
+
+      <section
+        class="admin-card admin-feedback"
+        id="admin-feedback"
+        data-id="admin-feedback-section"
+        hidden
+      >
+        <h2 class="admin-section-title">Feedback</h2>
+        <div
+          class="admin-range"
+          id="admin-feedback-status-switch"
+          data-id="admin-feedback-status-switch"
+          role="group"
+          aria-label="Feedback status"
+        >
+          <button
+            class="admin-range-option"
+            type="button"
+            data-status="new"
+            data-id="admin-feedback-status-new"
+          >
+            New
+          </button>
+          <button
+            class="admin-range-option"
+            type="button"
+            data-status="in_progress"
+            data-id="admin-feedback-status-in-progress"
+          >
+            In progress
+          </button>
+          <button
+            class="admin-range-option"
+            type="button"
+            data-status="resolved"
+            data-id="admin-feedback-status-resolved"
+          >
+            Resolved
+          </button>
+        </div>
+        <ol
+          class="admin-feedback-list"
+          id="admin-feedback-list"
+          data-id="admin-feedback-list"
+        ></ol>
+        <p
+          class="admin-empty"
+          id="admin-feedback-empty"
+          data-id="admin-feedback-empty-state"
+          hidden
+        >
+          No reports here.
         </p>
       </section>
 

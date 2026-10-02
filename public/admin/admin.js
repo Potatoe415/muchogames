@@ -7,6 +7,11 @@ import {
   renderGoogleSignIn,
   signInWithIdToken
 } from "./admin-auth.js";
+import {
+  hideFeedbackInbox,
+  initFeedbackInbox,
+  loadFeedbackInbox
+} from "./admin-feedback.js";
 import { renderTrendChart } from "./trend-chart.js";
 
 const HUB_CONFIG_URL = "/hub-config.json";
@@ -41,6 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("admin-trend-game-select")
     .addEventListener("change", selectGame);
+  initFeedbackInbox({
+    titleFor: (gameId) => titlesByGameId.get(gameId) || gameId,
+    onError: handleFailure
+  });
 
   const storedToken = readStoredToken();
   const hubIdToken = readHubIdToken();
@@ -72,6 +81,7 @@ async function signIn(idToken, { quiet = false } = {}) {
 
 function showLogin() {
   document.getElementById("admin-dashboard").hidden = true;
+  hideFeedbackInbox();
   document.getElementById("admin-login").hidden = false;
   renderGoogleSignIn(document.getElementById("admin-google-button"), signIn);
 }
@@ -95,6 +105,7 @@ async function loadStats(token) {
     });
     await loadGameTitles();
     render(stats);
+    await loadFeedbackInbox(token);
   } catch (error) {
     handleFailure(error);
   }
@@ -136,11 +147,13 @@ function selectGame(event) {
 }
 
 function markActiveRange(range) {
-  document.querySelectorAll(".admin-range-option").forEach((option) => {
-    const isActive = option.dataset.range === range;
-    option.classList.toggle("is-active", isActive);
-    option.setAttribute("aria-pressed", String(isActive));
-  });
+  document
+    .querySelectorAll("#admin-range-switch .admin-range-option")
+    .forEach((option) => {
+      const isActive = option.dataset.range === range;
+      option.classList.toggle("is-active", isActive);
+      option.setAttribute("aria-pressed", String(isActive));
+    });
 }
 
 function render(stats) {

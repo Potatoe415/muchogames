@@ -173,6 +173,13 @@ Purpose: One name, avatar, and combined win/loss total for a Google-signed-in pl
 Storage: `public.muchogames_profiles` (`supabase/migrations/0003_profiles.sql`). `id` is the Supabase Auth user id from the Google sign-in. Wins and losses increment through `increment_muchogames_profile_stats` (service-role only).
 Sensitive_Data: The Google account is verified server-side. The row stores the chosen display name and avatar, not the email.
 
+### Entity: Feedback
+
+Purpose: A bug report or idea sent by any visitor, triaged by the admin.
+Storage: `public.muchogames_feedback` (`supabase/migrations/0004_feedback.sql`). Fields: `id`, `kind` (`bug` | `idea`), `message` (1–2000 chars), optional `game_id` (≤ 64) and `page` (≤ 200, URL path), `status` (`new` | `in_progress` | `resolved`), `created_at`, `updated_at` (trigger).
+Access_Rules: RLS on, zero policies. Written only by public `POST /api/feedback` (anonymous, 5 per 10 min per IP, best-effort in-memory throttle). Read and status-updated only by `POST /api/admin` (`feedback-list`, `feedback-update`) behind the admin allowlist. No delete path; no purge.
+Sensitive_Data: Nothing identifying is stored by design (no profile id, IP, user agent, contact field). A sender may still type personal data into `message` themselves.
+
 ### Entity: ProfileLaunchCode
 
 Purpose: One-time hand-off so coinchapp and Tranquil can attribute a result to that profile without putting a Google token in the launch URL.
@@ -230,3 +237,9 @@ Impact: Anonymous play is unchanged. A signed-in player who launches Coinche, Bo
 Change: No schema change. The admin role moved from "knows `ADMIN_PASSWORD`" to "Google sign-in whose Supabase Auth user id is in `ADMIN_USER_IDS`". `api/admin/login.js` + `stats.js` became `api/admin/index.js` (`action: "login" | "stats"`).
 Reason: Owner-only admin area, about to grow beyond read-only stats. See `docs/decisions/0040-admin-access-by-google-account.md`.
 Impact: `ADMIN_PASSWORD` is no longer read and can be deleted from Vercel. `muchogames_events` access rules are otherwise unchanged.
+
+## 2026-10-02 - Feedback inbox (`muchogames_feedback`)
+
+Change: Added the `Feedback` entity (`supabase/migrations/0004_feedback.sql`), written by `api/feedback.js`, read and triaged through `api/admin/_feedback.js`.
+Reason: Replace the external bug-tracker Google Doc with an in-app report button and an admin inbox. See `docs/decisions/0041-anonymous-feedback-inbox.md`.
+Impact: Second long-lived, publicly writable table after `muchogames_events`; bounded by the per-IP throttle and the 2000-char message cap. Functions: 10 of 12.

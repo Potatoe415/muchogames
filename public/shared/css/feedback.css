@@ -1,0 +1,134 @@
+/* "Report a problem" dialog (public/shared/js/feedback.js). Loaded on demand
+   by that script, so pages do not link it themselves. Sits above the
+   options panel (z-index 1500 in game-header.css). */
+.mg-feedback {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Quicksand", system-ui, sans-serif;
+}
+
+.mg-feedback[hidden] {
+  display: none;
+}
+
+.mg-feedback-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.mg-feedback-sheet {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  padding: 18px 20px 20px;
+  background: #ffffff;
+  color: #3b2a17;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -12px 30px rgba(15, 23, 42, 0.25);
+}
+
+@media (min-width: 640px) {
+  .mg-feedback {
+    align-items: center;
+  }
+
+  .mg-feedback-sheet {
+    border-radius: 20px;
+  }
+}
+
+.mg-feedback-title {
+  margin: 0 0 12px;
+  font-family: "Baloo 2", system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.mg-feedback-kinds {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.mg-feedback-kind {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgba(90, 58, 34, 0.2);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mg-feedback-kind:has(input:checked) {
+  border-color: #e08b2f;
+  background: rgba(224, 139, 47, 0.12);
+}
+
+.mg-feedback-message {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid rgba(90, 58, 34, 0.25);
+  border-radius: 12px;
+  font: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.mg-feedback-message:focus-visible {
+  outline: 2px solid #e08b2f;
+  outline-offset: 1px;
+}
+
+.mg-feedback-status {
+  margin: 10px 0 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #2f7d32;
+}
+
+.mg-feedback-status.is-error {
+  color: #b3261e;
+}
+
+.mg-feedback-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.mg-feedback-cancel,
+.mg-feedback-send {
+  padding: 10px 16px;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mg-feedback-cancel {
+  border: 1px solid rgba(90, 58, 34, 0.3);
+  background: transparent;
+  color: #5a3a22;
+}
+
+.mg-feedback-send {
+  border: none;
+  background: #e08b2f;
+  color: #ffffff;
+}
+
+.mg-feedback-send:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

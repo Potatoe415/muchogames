@@ -12,7 +12,9 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Decide whether/how to bring `apps/tranquil` into the Turborepo/workspace graph (blocked by its own nested npm workspaces).
 - [ ] **User**: set `ADMIN_USER_IDS` on Vercel (Production + Preview) to your Supabase user id, redeploy, then delete `ADMIN_PASSWORD` (no longer read). Find the id by signing in on `/admin`: the refusal message shows it.
 - [ ] Confirm `/admin` Google sign-in → dashboard on the live site, and that the hub account menu shows "Admin" for you only (verified locally with stubbed Google/Supabase so far).
-- [ ] Roadmap phases 2–6 (feedback inbox, per-game results, hub recents/favorites/tags, catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
+- [ ] **User**: run `supabase/migrations/0004_feedback.sql` in the Supabase SQL editor of `multigames-db` (until then "Report a problem" fails and `/admin` shows an error under the stats). Then send one report from a game and resolve it on `/admin`.
+- [ ] Roadmap phases 3–6 (per-game results, hub recents/favorites/tags, catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
+- [ ] Add the "Report a problem" entry to wordplayer games, coinchapp and Tranquil (only the hub, `/profile` and the six in-repo custom games have it).
 - [ ] Delete the verification row: `delete from public.muchogames_events where game_id = '__verification__';`.
 - [ ] Copy `SUPABASE_URL` to the Preview environment (currently Production-only).
 - [ ] Verify Yatzy online play with two real devices (create, join, leave, resume, reclaim a seat by code).

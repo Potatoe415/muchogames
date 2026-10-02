@@ -36,6 +36,12 @@ const CATEGORY_LABELS = {
   }
 };
 
+const FEEDBACK_LABELS = {
+  fr: "Signaler un problème",
+  en: "Report a problem",
+  es: "Informar de un problema"
+};
+
 const PINNED_GAME_IDS = ["coinche", "bouilla", "president", "bataillecorse"];
 const SLIDE_DURATION_MS = 220;
 const SWIPE_THRESHOLD_PX = 50;
@@ -49,6 +55,7 @@ const state = {
 document.addEventListener("DOMContentLoaded", () => {
   renderVersionBadge();
   renderForceRefreshButton();
+  renderFeedbackButton();
   initAuthWidget();
   initializeDashboard();
   setupHubShareButton();
@@ -124,6 +131,17 @@ function renderForceRefreshButton() {
   document.body.appendChild(button);
 }
 
+function renderFeedbackButton() {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "hub-feedback-button";
+  button.id = "hub-feedback-button";
+  button.dataset.id = "hub-feedback-button";
+  button.textContent = FEEDBACK_LABELS[state.lang] || FEEDBACK_LABELS.fr;
+  button.addEventListener("click", () => window.MuchogamesFeedback?.open());
+  document.body.appendChild(button);
+}
+
 async function initializeDashboard() {
   const gridElement = document.getElementById(GRID_ID);
 
@@ -176,6 +194,8 @@ function selectLang(lang) {
   renderLangSwitcher();
   renderCategoryTabs();
   refreshAuthWidget();
+  const feedbackButton = document.getElementById("hub-feedback-button");
+  if (feedbackButton) feedbackButton.textContent = FEEDBACK_LABELS[lang];
 }
 
 function selectCategory(category) {

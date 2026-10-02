@@ -7,17 +7,22 @@ import {
   withErrorHandling
 } from "../_lib/http.js";
 import { clientKey, isRateLimited } from "../_lib/rateLimit.js";
+import { handleFeedbackList, handleFeedbackUpdate } from "./_feedback.js";
 import { handleStats } from "./_stats.js";
 
 // One Serverless Function fanning out on `action`, like api/profile/index.js:
 // Vercel's Hobby plan caps a deployment at 12 functions total.
 const THROTTLES = {
   login: { maxHits: 10, windowMs: 600000 },
-  stats: { maxHits: 60, windowMs: 60000 }
+  stats: { maxHits: 60, windowMs: 60000 },
+  "feedback-list": { maxHits: 60, windowMs: 60000 },
+  "feedback-update": { maxHits: 60, windowMs: 60000 }
 };
 
 const ADMIN_ACTIONS = {
-  stats: handleStats
+  stats: handleStats,
+  "feedback-list": handleFeedbackList,
+  "feedback-update": handleFeedbackUpdate
 };
 
 async function handler(req, res) {

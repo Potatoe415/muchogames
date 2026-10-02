@@ -20,13 +20,15 @@ Plan:
 6. Privacy + players: export my data / delete my account on `/profile`; admin players list, reset name/avatar, delete account → verify: export then delete a test Google account, all rows gone.
 Acceptance_Criteria:
 - [x] Phase 1 (code + local verification; live check pending `ADMIN_USER_IDS`)
-- [ ] Phase 2
+- [x] Phase 2 (code + local verification; live check pending the owner running `0004_feedback.sql`)
 - [ ] Phase 3
 - [ ] Phase 4
 - [ ] Phase 5
 - [ ] Phase 6
 Security_Checklist: per phase, `docs/SECURITY.md` "Checklist for every new or changed endpoint or action".
-Related_Decisions: 0040
+Related_Decisions: 0040, 0041
 Notes:
 - Phase 1: `/admin` login returns the Supabase access token from the Google exchange (1h); every admin action re-resolves it with `auth.getUser` and re-checks the allowlist. A non-allowlisted sign-in gets a 403 that shows its own user id, which is how the owner finds the value for `ADMIN_USER_IDS`.
+- The Supabase connector is signed in to the `nodali` organization and cannot see `multigames-db`: migrations are run by the owner in the Supabase SQL editor unless the connector is re-authenticated.
+- Phase 2: the report entry is injected by `game-header.js` into every `.options-panel-body`; wordplayer games, coinchapp and Tranquil have no entry yet.
 - `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md` still describe the shared admin password; edits proposed to the user, not applied.

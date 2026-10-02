@@ -78,12 +78,25 @@ pre-fill an existing input from that param; never require it.
 - `initOptionsPanel(triggerEl, panelEl)` — wires a gear-button-opens-panel
   pattern: click-to-toggle, `Escape` to close, any `[data-options-close]`
   element inside the panel closes it. Returns `{ open, close, toggle }`.
-  Sets `aria-expanded` on the trigger.
+  Sets `aria-expanded` on the trigger. Also appends a "Report a problem"
+  entry (`data-id="options-feedback-button"`, FR/EN/ES from
+  `bergamots-lang`) to the panel's `.options-panel-body` when it has one,
+  and lazy-loads `feedback.js` on click — a game gets it for free.
+
+## `public/shared/js/feedback.js` (global script → `window.MuchogamesFeedback`)
+
+- `open({ gameId })` — shows the report dialog (bug / idea + message),
+  posting to `POST /api/feedback`. `gameId` defaults to the `/games/<id>/`
+  segment of the current URL. Injects `/shared/css/feedback.css` itself.
+- `close()`.
+  Loaded directly by the hub (`index.html`); games get it through
+  `game-header.js`, so don't add a `<script>` tag for it in a game.
 
 ## `public/shared/css/`
 
 - `base.css` — design tokens (`--font-sans`) + resets, hub and wordplayer.
 - `game-header.css` — visuals for the header pattern `game-header.js` wires.
+- `feedback.css` — the report dialog; loaded by `feedback.js`, not linked by pages.
 - `wordplayer.css` — wordpack shell only.
 
 No JS API to document — include the stylesheet, use its existing classes.
