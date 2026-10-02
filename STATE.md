@@ -16,7 +16,6 @@ Next:
 - Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`.
 - Owner: run in order in the Supabase SQL editor of `multigames-db`: `0004_feedback.sql`, `0005_game_stats.sql`, `0006_hub_settings.sql` (the connector cannot see that project).
 - Then live-check each phase (BACKLOG Now), and delete the roadmap task file.
-- Owner to confirm proposed `docs/PRODUCT.md` / `ARCHITECTURE.md` / `SECURITY.md` wording (admin by Google, public feedback + hub-settings endpoints, account deletion).
 - Owner to provide `players` / `duration` for the untagged games.
 - Still open: domain rewrite for `muchogames.win/<jeu>`; Tranquil Vercel repoint.
 
@@ -28,6 +27,7 @@ Blockers:
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
+- 2026-10-02 `docs/PRODUCT.md`, `ARCHITECTURE.md`, `SECURITY.md` aligned with the roadmap (owner confirmed).
 - 2026-10-02 "Report a problem" everywhere: wordplayer reports carry `?game=`; coinchapp + Tranquil settings link to the hub's `?feedback=<gameId>`.
 - 2026-10-02 Data export + account deletion on `/profile`, admin Players card (decision 0044).
 - 2026-10-02 Hub catalog + announcement editable from `/admin` (decision 0043, 11/12 functions).

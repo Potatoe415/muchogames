@@ -20,18 +20,21 @@ Core_Features:
 - Yatzy (`public/games/yatsy/`): dice poker. Roll (max 3) → keep dice → pick a scoring category. Automatic scoring (Full, Square, Straights), +35 upper-section bonus above 63, Yatzy handling (5 identical dice). Online multiplayer via 3-letter room codes backed by Supabase Postgres (via `api/yatsy/games/*` Vercel serverless functions).
 - Other custom games with their own data/rules: Millionaire (quiz), Salade de Cafards, Pyramide, and others under `public/games/`.
 - Multilingual support (FR/EN/ES) for rules and word/question content, driven by JSON fields rather than code.
-- Admin stats page (`public/admin/`, reachable at `/admin`): password-protected page showing how often each game is launched from the hub, over a period the admin picks (7 days / 30 days / 6 months), with a total for that period, a daily trend chart and a ranking by game. Read-only; it cannot edit any content.
-- Google login status on the hub (`auth.js`): a top-right icon lets a visitor sign in with a Google/Gmail account or sign out. When signed in, the popover shows the signed-in email and a "Profil" link to a profile page (`/profile`).
-- Profile page (`/profile`, `public/profile/`): an editable "Nom" text field and an Avatar (upload, saved client-side). Nom is auto-filled once from the Google account's display name on first sign-in (never overwrites a name the player already set themselves). The name pre-fills Yatzy's own name field (same origin) and, as a `?name=` link parameter, the pseudo field already present in Coinche, Bouilla and Tranquil (separate apps on other domains) — always a soft pre-fill, never required, never overwriting what a player types in that game. The Avatar is Muchogames-only and does not travel to other games. See `docs/TECH.md` "Player identity contract" for the mechanism any future game should follow.
+- Admin back-office (`public/admin/`, reachable at `/admin`), for the owner only (Google sign-in, allowlisted account): game launch stats over 7 days / 30 days / 6 months (total, daily trend, ranking by game), signed-in player and recorded-result counts; a feedback inbox (new / in progress / resolved); a hub catalog editor (hide, pin, mark "new" any game) and a FR/EN/ES announcement banner; a players list (clear a name or avatar, delete a non-admin account).
+- Hub conveniences: a "My games" shelf (favorites starred on tiles + recently launched, per browser), optional player-count / duration tags on tiles with a "how many are we?" filter, and the owner's announcement banner and "new" badges.
+- "Report a problem": a bug/idea dialog reachable from the hub, `/profile`, every in-repo game's options panel, and coinchapp/Tranquil settings (which open the hub's dialog). Anonymous; reports land in the admin inbox.
+- Google login status on the hub (`auth.js`): a top-right icon lets a visitor sign in with a Google/Gmail account or sign out. When signed in, the popover shows the signed-in email, a "Profil" link to a profile page (`/profile`), and an "Admin" link for the owner.
+- Profile page (`/profile`, `public/profile/`): an editable "Nom" text field and an Avatar (upload, saved client-side, and to the shared profile when signed in). Signed-in players also see wins/losses per game (Yatzy, the four coinchapp games, Tranquil; Yatzy best score) and can export all their hub data as JSON or delete their account. Nom is auto-filled once from the Google account's display name on first sign-in (never overwrites a name the player already set themselves). The name pre-fills Yatzy's own name field (same origin) and, as a `?name=` link parameter, the pseudo field already present in Coinche, Bouilla and Tranquil (separate apps on other domains) — always a soft pre-fill, never required, never overwriting what a player types in that game. The Avatar is Muchogames-only and does not travel to other games. See `docs/TECH.md` "Player identity contract" for the mechanism any future game should follow.
 
 Out_Of_Scope:
-- Centralized user accounts / persisted identity for players. Players stay anonymous by default. The one optional exception is the hub's Google login status (see Core_Features): it has no server session and does not identify a player to any game or backend. It does keep the signed-in email client-side (`localStorage`) to display it in the UI — see `docs/TECH.md` — but this is a UI convenience, not an account: nothing is sent to, or stored by, any server. The admin stats page remains separately gated by a single shared password, with no account, session, or user record.
-- Persistent scores/progress across sessions, with one narrow exception: a simple wins/losses counter (Yatzy on this hub; a separate one inside each of `coinchapp` and `tranquil`), scoped to the local browser only via `localStorage` — no account, no backend, no cross-device sync. Round/hand scores otherwise stay per game session; Yatzy game state persists only for the lifetime of a room, up to 48h TTL for purge.
+- Mandatory accounts. Players stay anonymous by default and every game works signed out. Signing in with Google is optional: it creates a shared profile (display name, avatar, wins/losses totals and per game) in Supabase, verified server-side; the email is not copied into hub tables. The player can export or delete it from `/profile`. Admin access is the owner's Google account, allowlisted by user id (`ADMIN_USER_IDS`).
+- Persistent scores/progress beyond wins/losses. Round/hand scores stay per game session; Yatzy game state persists only for the lifetime of a room, up to 48h TTL for purge. Anonymous players keep their wins/losses in the local browser only.
+- Leaderboards, friends, and match-by-match history (per-game aggregates only, see `docs/decisions/0042`).
 - Visitor-level analytics: launch counts are aggregate only, with no IP, user agent, device, country, or session identifier stored. Reaffirmed on 2026-08-30, when unique visitors, live presence, devices and countries were considered for the stats page and deliberately declined rather than overlooked.
 
 User_Roles:
-- Player: no distinct roles or permissions; anonymous by default.
-- Admin: whoever knows `ADMIN_PASSWORD`. Grants read-only access to the launch stats and nothing else.
+- Player: no distinct roles or permissions; anonymous by default, optionally signed in with Google (own profile only).
+- Admin: a Google account whose Supabase user id is listed in `ADMIN_USER_IDS` (the owner). Grants the back-office described in Core_Features; cannot edit game content (`hub-config.json`, word packs) or delete another admin.
 - Yatzy room creator/joiner: implicit roles (`creator` / `joiner`) tied to a room code and a resume token, not to an account.
 
 Success_Criteria:
@@ -40,7 +43,7 @@ Success_Criteria:
 
 Constraints:
 - Vanilla HTML/CSS/JavaScript only; no heavy UI framework (see `docs/TECH.md`).
-- Supabase (via Vercel serverless functions) is used only for Yatzy multiplayer state and hub launch counters, not for any other feature. Game content stays in static JSON.
+- Supabase (via Vercel serverless functions only) holds Yatzy multiplayer state, hub launch counters, signed-in profiles and per-game stats, feedback reports, and the hub settings overlay. Game content stays in static JSON.
 - Everything must stay on free tiers (Vercel Hobby, Supabase free). No paid feature may be introduced without explicit approval.
 
 Open_Questions:

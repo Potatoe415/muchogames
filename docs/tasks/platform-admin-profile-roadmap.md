@@ -31,4 +31,4 @@ Notes:
 - Phase 1: `/admin` login returns the Supabase access token from the Google exchange (1h); every admin action re-resolves it with `auth.getUser` and re-checks the allowlist. A non-allowlisted sign-in gets a 403 that shows its own user id, which is how the owner finds the value for `ADMIN_USER_IDS`.
 - The Supabase connector is signed in to the `nodali` organization and cannot see `multigames-db`: migrations are run by the owner in the Supabase SQL editor unless the connector is re-authenticated.
 - Phase 2: the report entry is injected by `game-header.js` into every `.options-panel-body`; wordplayer games, coinchapp and Tranquil have no entry yet.
-- `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md` still describe the shared admin password; edits proposed to the user, not applied.
+- `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md` updated after owner confirmation (2026-10-02).
