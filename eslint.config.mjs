@@ -22,6 +22,8 @@ export default [
       "hub.js",
       "auth.js",
       "auth-admin.js",
+      "hub-shelf.js",
+      "hub-tags.js",
       "version.js",
       "wordplayer.js",
       "public/**/*.js",

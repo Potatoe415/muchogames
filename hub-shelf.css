@@ -1,0 +1,143 @@
+/* "My games" shelf, favorite stars, tile tags, and the player-count filter
+   (hub-shelf.js, hub-tags.js). Kept apart from hub.css, which is already
+   past the file-size limit. */
+
+/* --- My games shelf --- */
+.hub-shelf {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hub-shelf[hidden] {
+  display: none;
+}
+
+.hub-shelf__title {
+  margin: 0 0 8px;
+  font-family: "Baloo 2", cursive;
+  font-size: 17px;
+  font-weight: 700;
+  color: #5a3a22;
+}
+
+.hub-shelf__row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
+.hub-shelf__tile {
+  flex: 0 0 auto;
+  width: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  color: #5a3a22;
+}
+
+.hub-shelf__thumb {
+  width: 84px;
+  height: 84px;
+  border-radius: 14px;
+  border: 2px solid #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: top;
+  background: #eef3f6;
+}
+
+.hub-shelf__name {
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* --- Favorite star over a grid tile --- */
+.game-tile-wrap {
+  position: relative;
+}
+
+.game-tile__favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(20, 38, 48, 0.45);
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.game-tile__favorite.is-favorite {
+  color: #ffc94d;
+  background: rgba(20, 38, 48, 0.65);
+}
+
+/* --- Tags under the tile title --- */
+.game-tile__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.game-tile__tag {
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+/* --- Player-count filter --- */
+.player-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.player-filter__label {
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(90, 58, 34, 0.6);
+  margin-right: 2px;
+}
+
+.player-filter__option {
+  padding: 4px 11px;
+  border: 1px solid rgba(90, 58, 34, 0.25);
+  border-radius: 999px;
+  background: transparent;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5a3a22;
+  cursor: pointer;
+}
+
+.player-filter__option.is-active {
+  background: #5a3a22;
+  border-color: #5a3a22;
+  color: #fffaeb;
+}

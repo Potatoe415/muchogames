@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="./hub.css" />
+    <link rel="stylesheet" href="./hub-shelf.css" />
   </head>
   <body>
     <div class="hub-shell">
@@ -62,7 +63,19 @@
       <div class="lang-switcher" id="lang-switcher"></div>
 
       <main class="hub-main">
+        <section
+          class="hub-shelf"
+          id="hub-shelf"
+          data-id="hub-my-games"
+          hidden
+        ></section>
         <nav class="category-tabs" id="category-tabs"></nav>
+        <div
+          class="player-filter"
+          id="player-filter"
+          data-id="hub-player-filter"
+          role="group"
+        ></div>
 
         <div id="games-grid" class="games-grid">
           <p>Chargement des jeux...</p>

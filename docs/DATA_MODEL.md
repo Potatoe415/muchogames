@@ -40,6 +40,8 @@ Fields:
 | launch | string | Yes | Relative path or external URL to open |
 | data | string | wordpack only | Path to the game's word JSON |
 | thumbnail | string | Yes | Path to `assets/thumbnail.jpg` for the tile |
+| players | [int, int] | No | `[min, max]` humans; tile tag + hub player-count filter (`hub-tags.js`). Missing = never filtered out |
+| duration | int | No | Typical minutes; tile tag only |
 
 Relationships:
 - `data` points to a `WordPack` entity (wordpack games only).
@@ -257,3 +259,9 @@ Impact: Second long-lived, publicly writable table after `muchogames_events`; bo
 Change: Added the `GameStats` entity and `record_muchogames_game_result` (`supabase/migrations/0005_game_stats.sql`). Yatzy, coinchapp and Tranquil now attribute results to a game; `/profile` shows the breakdown; `/admin` shows signed-in players and recorded results.
 Reason: Roadmap phase 3. See `docs/decisions/0042-per-game-results-one-row-per-profile-and-game.md`.
 Impact: One row per (profile, game), not per match, so no match history. Results recorded before this change stay in the totals only.
+
+## 2026-10-02 - Hub favorites, recents, player tags
+
+Change: `HubGameEntry` gains optional `players` and `duration`. Two new browser-only `localStorage` keys: `muchogames-favorite-games` and `muchogames-recent-games` (ids, max 8), read by the hub's "My games" shelf (`hub-shelf.js`).
+Reason: Roadmap phase 4.
+Impact: No server data. Only Coinche, Bouilla, Président, la Bataille Corse and Yatzy carry `players` so far.

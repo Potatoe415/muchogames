@@ -95,7 +95,8 @@
     "kind": "custom",
     "category": "cartesdes",
     "launch": "/games/yatsy/index.html",
-    "thumbnail": "/games/yatsy/assets/Gemini_Generated_Image_z31dj3z31dj3z31d.jpg"
+    "thumbnail": "/games/yatsy/assets/Gemini_Generated_Image_z31dj3z31dj3z31d.jpg",
+    "players": [1, 2]
   },
   {
     "id": "tranquil",
@@ -112,7 +113,8 @@
     "category": "cartesdes",
     "launch": "https://coinchapp.vercel.app/coinche",
     "thumbnail": "/games/coinchapp/assets/coinche-thumb.jpg",
-    "sameTab": true
+    "sameTab": true,
+    "players": [1, 4]
   },
   {
     "id": "bouilla",
@@ -121,7 +123,8 @@
     "category": "cartesdes",
     "launch": "https://coinchapp.vercel.app/bouilla",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bouilla.png",
-    "sameTab": true
+    "sameTab": true,
+    "players": [1, 4]
   },
   {
     "id": "president",
@@ -130,7 +133,8 @@
     "category": "cartesdes",
     "launch": "https://coinchapp.vercel.app/president",
     "thumbnail": "/games/coinchapp/assets/thumbnail-president.jpg",
-    "sameTab": true
+    "sameTab": true,
+    "players": [1, 4]
   },
   {
     "id": "bataillecorse",
@@ -139,7 +143,8 @@
     "category": "cartesdes",
     "launch": "https://coinchapp.vercel.app/bataillecorse",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bataillecorse.jpg",
-    "sameTab": true
+    "sameTab": true,
+    "players": [1, 2]
   },
   {
     "id": "gameboy-web",

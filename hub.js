@@ -4,6 +4,17 @@ import {
   initAuthWidget,
   refreshAuthWidget
 } from "./auth.js";
+import {
+  createFavoriteButton,
+  recordRecentGame,
+  renderShelf
+} from "./hub-shelf.js";
+import {
+  createTileTags,
+  matchesPlayerFilter,
+  playerFilterEmptyMessage,
+  renderPlayerFilter
+} from "./hub-tags.js";
 import { trackGameLaunch } from "./shared/js/analytics.js";
 import { APP_VERSION } from "./version.js";
 
@@ -49,6 +60,7 @@ const SWIPE_THRESHOLD_PX = 50;
 const state = {
   games: [],
   category: "cartesdes",
+  playerFilter: "any",
   lang: readStoredLang()
 };
 
@@ -162,6 +174,8 @@ async function initializeDashboard() {
     persistLang(state.lang);
     renderLangSwitcher();
     renderCategoryTabs();
+    renderMyGamesShelf();
+    renderPlayerFilterBar();
     renderGames();
     setupSwipeNavigation();
   } catch (error) {
@@ -193,9 +207,34 @@ function selectLang(lang) {
   persistLang(lang);
   renderLangSwitcher();
   renderCategoryTabs();
+  renderMyGamesShelf();
+  renderPlayerFilterBar();
+  renderGames();
   refreshAuthWidget();
   const feedbackButton = document.getElementById("hub-feedback-button");
   if (feedbackButton) feedbackButton.textContent = FEEDBACK_LABELS[lang];
+}
+
+function renderMyGamesShelf() {
+  renderShelf(
+    document.getElementById("hub-shelf"),
+    state.games,
+    state.lang,
+    createLaunchAnchor
+  );
+}
+
+function renderPlayerFilterBar() {
+  renderPlayerFilter(
+    document.getElementById("player-filter"),
+    state.playerFilter,
+    state.lang,
+    (filterId) => {
+      state.playerFilter = filterId;
+      renderPlayerFilterBar();
+      renderGames();
+    }
+  );
 }
 
 function selectCategory(category) {
@@ -258,16 +297,22 @@ function renderGames(direction) {
   const gridElement = document.getElementById(GRID_ID);
 
   const applyContent = () => {
-    const gamesInCategory =
+    const gamesInCategory = (
       state.category === "tous"
         ? state.games
-        : state.games.filter((game) => game.category === state.category);
+        : state.games.filter((game) => game.category === state.category)
+    ).filter((game) => matchesPlayerFilter(game, state.playerFilter));
 
     gridElement.innerHTML = "";
 
     if (gamesInCategory.length === 0) {
-      gridElement.innerHTML =
-        "<p>Aucun jeu disponible dans cette catégorie.</p>";
+      const empty = document.createElement("p");
+      empty.dataset.id = "hub-games-empty";
+      empty.textContent =
+        state.playerFilter === "any"
+          ? "Aucun jeu disponible dans cette catégorie."
+          : playerFilterEmptyMessage(state.lang);
+      gridElement.appendChild(empty);
       return;
     }
 
@@ -362,26 +407,22 @@ function sortWithPinnedFirst(games) {
   return [...pinned, ...rest];
 }
 
+// The grid wraps the tile so the favorite star can sit over it without being
+// nested inside the <a>.
 function createTileNode(game) {
-  const anchor = document.createElement("a");
-  anchor.href = determineTargetUrl(game);
+  const wrap = document.createElement("div");
+  wrap.className = "game-tile-wrap";
+  wrap.append(
+    createGameTile(game),
+    createFavoriteButton(game, state.lang, renderMyGamesShelf)
+  );
+  return wrap;
+}
+
+function createGameTile(game) {
+  const anchor = createLaunchAnchor(game);
   anchor.className = "game-tile";
   anchor.dataset.id = `hub-tile-${game.id}`;
-  anchor.addEventListener("click", (event) => {
-    trackGameLaunch(game.id);
-    const bridge = window.MuchogamesProfileResults;
-    if (!bridge?.isProfileAppLaunch(anchor.href) || !bridge.readLiveIdToken())
-      return;
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
-      return;
-    event.preventDefault();
-    bridge.openWithProfileCode(anchor.href, anchor.target === "_blank");
-  });
-
-  if (isExternalLaunch(game.launch) && !game.sameTab) {
-    anchor.target = "_blank";
-    anchor.rel = "noopener noreferrer";
-  }
 
   const media = document.createElement("div");
   media.className = "game-tile__media";
@@ -399,11 +440,35 @@ function createTileNode(game) {
   const title = document.createElement("div");
   title.className = "game-tile__title";
   title.textContent = game.title;
+  const tags = createTileTags(game, state.lang);
+  if (tags) title.appendChild(tags);
 
-  media.appendChild(img);
-  media.appendChild(overlay);
-  media.appendChild(title);
+  media.append(img, overlay, title);
   anchor.appendChild(media);
+  return anchor;
+}
+
+// Every way of launching a game (grid tile, "My games" shelf) goes through
+// here: same URL params, launch tracking, recents, and profile hand-off.
+function createLaunchAnchor(game) {
+  const anchor = document.createElement("a");
+  anchor.href = determineTargetUrl(game);
+  anchor.addEventListener("click", (event) => {
+    trackGameLaunch(game.id);
+    recordRecentGame(game.id);
+    const bridge = window.MuchogamesProfileResults;
+    if (!bridge?.isProfileAppLaunch(anchor.href) || !bridge.readLiveIdToken())
+      return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
+      return;
+    event.preventDefault();
+    bridge.openWithProfileCode(anchor.href, anchor.target === "_blank");
+  });
+
+  if (isExternalLaunch(game.launch) && !game.sameTab) {
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+  }
 
   return anchor;
 }

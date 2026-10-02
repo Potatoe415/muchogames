@@ -30,7 +30,12 @@ See `docs/GAMES_MAP.md` for what each looks like today.
   `category` (reuse an existing one — `mots`, `cartesdes`, `autres` —
   unless the game genuinely needs a new one; a new category is a
   `docs/PRODUCT.md`-level decision, ask first), `launch`, `thumbnail`,
-  and `data` if `wordpack`.
+  and `data` if `wordpack`. Optional: `players: [min, max]` (humans
+  needed, bots don't count) and `duration` (typical minutes) — they drive
+  the tile tags and the hub's "how many are we?" filter; omit them rather
+  than guess.
+- If the game has an options panel wired with `GameHeader.initOptionsPanel`,
+  it gets the "Report a problem" entry for free (`shared/CONTRACT.md`).
 - Add one row to `docs/GAMES_MAP.md`.
 - Reuse `shared/`: read `shared/CONTRACT.md` first, wire the header
   pattern (see Visual baseline below) and, for a word game, `engine.js`.

@@ -22,7 +22,7 @@ Acceptance_Criteria:
 - [x] Phase 1 (code + local verification; live check pending `ADMIN_USER_IDS`)
 - [x] Phase 2 (code + local verification; live check pending the owner running `0004_feedback.sql`)
 - [x] Phase 3 (code + tests + local verification; live check pending `0005_game_stats.sql`). Scoped to one row per profile and game, no per-match history (decision 0042).
-- [ ] Phase 4
+- [x] Phase 4 ("My games" shelf = favorites + recents, star on tiles, `players`/`duration` tags, player-count filter). `players` filled only where code proves it; durations left to the owner.
 - [ ] Phase 5
 - [ ] Phase 6
 Security_Checklist: per phase, `docs/SECURITY.md` "Checklist for every new or changed endpoint or action".

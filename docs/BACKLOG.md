@@ -14,7 +14,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Confirm `/admin` Google sign-in → dashboard on the live site, and that the hub account menu shows "Admin" for you only (verified locally with stubbed Google/Supabase so far).
 - [ ] **User**: run the pending migrations in order in the Supabase SQL editor of `multigames-db`: `0004_feedback.sql`, `0005_game_stats.sql` (later phases add more — see `docs/tasks/platform-admin-profile-roadmap.md`). Then send one report and resolve it on `/admin`; finish one Yatzy and one coinchapp match from the hub and check the per-game rows on `/profile`.
 - [ ] Tranquil's per-game sync only goes live once `tranquil`'s Vercel project is repointed to this repo (see the repoint item above); until then its deployed code is the old one.
-- [ ] Roadmap phases 4–6 (hub recents/favorites/tags, catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
+- [ ] Roadmap phases 5–6 (catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
 - [ ] Add the "Report a problem" entry to wordplayer games, coinchapp and Tranquil (only the hub, `/profile` and the six in-repo custom games have it).
 - [ ] Delete the verification row: `delete from public.muchogames_events where game_id = '__verification__';`.
 - [ ] Copy `SUPABASE_URL` to the Preview environment (currently Production-only).
@@ -48,7 +48,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Extend the admin page further if wanted (hub visits, per-language split, live event feed) — declined once already (2026-08-30), needs new columns + a deliberate personal-data decision.
 - [ ] Split `public/admin/admin.css` when it next grows (271/300 lines).
 - [ ] Finish the "bergamots" → "muchogames" rename: `localStorage` keys (`bergamots-lang`, `bergamots-player-name`, `bergamots-player-avatar*`, `bergamots-auth`, `bergamots-launch-counts`) and the `yatzy_*` Supabase tables are still unrenamed (deliberate — renaming either resets/migrates real user data).
-- [ ] Add visual tags (player count, duration, type) to Hub game tiles.
+- [ ] **User**: give `players: [min, max]` and `duration` for the 12 untagged games in `public/hub-config.json` (Pictionary, Taboo, Téléphone bizarre, Dictionnaire, Jeu de mains, Pyramide, Black Stories, Salade de Cafards, Millionnaire, Easy Frog, Tranquil, GameBoy Web) and durations for all 17 — tags and the player filter only use what is filled in.
 - [ ] Whether to raise `printWidth` from 80 to 100.
 - [ ] Whether PRODUCT should stay "max 3 rolls" given the online joke extra roll.
 - [ ] Whether PRODUCT/TECH should drop "avatar is Bergamots-only".
