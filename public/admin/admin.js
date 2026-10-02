@@ -17,6 +17,11 @@ import {
   initFeedbackInbox,
   loadFeedbackInbox
 } from "./admin-feedback.js";
+import {
+  hidePlayersPanel,
+  initPlayersPanel,
+  loadPlayersPanel
+} from "./admin-players.js";
 import { renderTrendChart } from "./trend-chart.js";
 
 const HUB_CONFIG_URL = "/hub-config.json";
@@ -56,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     onError: handleFailure
   });
   initCatalogEditor({ onError: handleFailure });
+  initPlayersPanel({ onError: handleFailure });
 
   const storedToken = readStoredToken();
   const hubIdToken = readHubIdToken();
@@ -89,6 +95,7 @@ function showLogin() {
   document.getElementById("admin-dashboard").hidden = true;
   hideFeedbackInbox();
   hideCatalogEditor();
+  hidePlayersPanel();
   document.getElementById("admin-login").hidden = false;
   renderGoogleSignIn(document.getElementById("admin-google-button"), signIn);
 }
@@ -114,6 +121,7 @@ async function loadStats(token) {
     render(stats);
     await loadFeedbackInbox(token);
     await loadCatalogEditor(token, gamesList);
+    await loadPlayersPanel(token);
   } catch (error) {
     handleFailure(error);
   }

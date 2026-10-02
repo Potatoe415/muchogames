@@ -278,3 +278,9 @@ Impact: No server data. Only Coinche, Bouilla, Président, la Bataille Corse and
 Change: Added the `HubSettings` entity, `GET /api/hub-settings` (11 of 12 functions) and admin actions `hub-settings-get` / `hub-settings-update`. New browser key `muchogames-dismissed-announcement` (last dismissed banner text).
 Reason: Roadmap phase 5. See `docs/decisions/0043-hub-settings-overlay-served-by-a-cached-function.md`.
 Impact: `hub.js`'s `PINNED_GAME_IDS` is now only the fallback when settings cannot be read.
+
+## 2026-10-02 - Export, account deletion, admin moderation
+
+Change: No schema change. `api/profile` gains `export` and `delete-account` (`confirm: true`); `api/admin` gains `players-list`, `player-reset` (`name` | `avatar` → null) and `player-delete` (non-admin only, `confirm: true`). Deletion calls `auth.admin.deleteUser`, cascading to `muchogames_profiles`, `muchogames_game_stats` and `muchogames_launch_codes`.
+Reason: Roadmap phase 6. See `docs/decisions/0044-self-service-export-and-account-deletion.md`.
+Impact: First code path that deletes user data on request. `/profile` deletion also clears this browser's hub keys (except the language).

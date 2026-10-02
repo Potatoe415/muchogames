@@ -1,0 +1,61 @@
+/* "My data" section (profile-account.js). */
+.profile-account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(90, 58, 34, 0.15);
+  text-align: left;
+}
+
+.profile-account[hidden],
+.profile-account [hidden] {
+  display: none;
+}
+
+.profile-account-button {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(90, 58, 34, 0.25);
+  background: #fff;
+  color: #5a3a22;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.profile-account-button--danger {
+  border-color: rgba(179, 38, 30, 0.35);
+  color: #b3261e;
+}
+
+.profile-account-button--danger-solid {
+  border-color: #b3261e;
+  background: #b3261e;
+  color: #fff;
+}
+
+.profile-account-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(179, 38, 30, 0.06);
+}
+
+.profile-account-warning {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7a2a1e;
+}
+
+.profile-account-error {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #b3261e;
+}

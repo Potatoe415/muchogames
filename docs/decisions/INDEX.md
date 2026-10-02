@@ -49,6 +49,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0041 | 2026-10-02 | Anonymous in-app feedback inbox (`muchogames_feedback`) | Accepted |
 | 0042 | 2026-10-02 | Per-game results: one row per profile and game (`muchogames_game_stats`) | Accepted |
 | 0043 | 2026-10-02 | Hub settings overlay served by a cached function (`muchogames_hub_settings`) | Accepted |
+| 0044 | 2026-10-02 | Self-service data export and account deletion, admin moderation | Accepted |
 
 ## When to log a decision
 Any of:

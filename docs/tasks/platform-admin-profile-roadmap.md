@@ -1,7 +1,7 @@
 # Task: platform-admin-profile-roadmap
 
 Level: L2
-Status: In progress
+Status: Blocked — all six phases shipped in code; live verification waits on the owner running migrations 0004–0006 and setting `ADMIN_USER_IDS` (see `docs/BACKLOG.md`). Delete this file once those checks pass.
 Goal: Turn `/admin` into an owner-only back-office, give `/profile` per-game stats and privacy controls, and make the hub faster to use.
 Scope: hub (`index.html`, `hub.js`, `auth.js`), `public/admin/`, `public/profile/`, `api/admin/`, `api/profile/`, new `supabase/migrations/*`; phase 3 also touches `apps/coinchapp/lib/server/profileLink.ts` and `apps/tranquil/api/_lib/profileLink.ts`.
 Do_Not_Touch: game rules/engines; other games' folders unless a phase names them.
@@ -24,9 +24,9 @@ Acceptance_Criteria:
 - [x] Phase 3 (code + tests + local verification; live check pending `0005_game_stats.sql`). Scoped to one row per profile and game, no per-match history (decision 0042).
 - [x] Phase 4 ("My games" shelf = favorites + recents, star on tiles, `players`/`duration` tags, player-count filter). `players` filled only where code proves it; durations left to the owner.
 - [x] Phase 5 (served by cached `GET /api/hub-settings` rather than a public-read table, decision 0043; live check pending `0006_hub_settings.sql`)
-- [ ] Phase 6
+- [x] Phase 6 (export + delete on `/profile`, admin Players card; no new table or function, decision 0044)
 Security_Checklist: per phase, `docs/SECURITY.md` "Checklist for every new or changed endpoint or action".
-Related_Decisions: 0040, 0041, 0042 (coinchapp 0070), 0043
+Related_Decisions: 0040, 0041, 0042 (coinchapp 0070), 0043, 0044
 Notes:
 - Phase 1: `/admin` login returns the Supabase access token from the Google exchange (1h); every admin action re-resolves it with `auth.getUser` and re-checks the allowlist. A non-allowlisted sign-in gets a 403 that shows its own user id, which is how the owner finds the value for `ADMIN_USER_IDS`.
 - The Supabase connector is signed in to the `nodali` organization and cannot see `multigames-db`: migrations are run by the owner in the Supabase SQL editor unless the connector is re-authenticated.

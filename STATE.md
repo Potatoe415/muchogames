@@ -2,31 +2,34 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Roadmap phases 1–5 shipped in code: admin by Google, feedback inbox, per-game results, hub shelf/favorites/tags, admin-edited catalog + announcement (`GET /api/hub-settings`, 11/12 functions). Owner runs all SQL at the end (0004–0006, …); every feature degrades cleanly until then.
-Focus: Roadmap `docs/tasks/platform-admin-profile-roadmap.md` — next is phase 6 (export/delete account, admin players list).
-Level: L2.
+Status: Roadmap `docs/tasks/platform-admin-profile-roadmap.md` is fully shipped in code (6 phases): admin by Google allowlist, feedback inbox, per-game results, hub shelf/favorites/tags, admin-edited catalog + announcement, data export / account deletion + admin players. Every feature degrades cleanly until the owner runs the SQL.
+Focus: Owner setup, then live checks (`docs/BACKLOG.md` Now).
+Level: L2 (blocked on owner actions).
 
 Context:
-- Working_On: `docs/tasks/platform-admin-profile-roadmap.md` (6 phases, approved 2026-10-02)
-- Relevant_Files: `api/admin/index.js` (+ `_stats.js`, `_feedback.js`), `api/feedback.js`, `public/shared/js/feedback.js`, `public/shared/js/game-header.js`, `public/admin/admin-feedback.js`
+- Working_On: n/a (waiting on owner)
+- Relevant_Files: `api/admin/index.js` (+ `_stats`, `_feedback`, `_hubSettings`, `_players`), `api/profile/index.js` (+ `_gameStats`, `_account`), `api/feedback.js`, `api/hub-settings.js`, `hub-*.js`, `public/admin/admin-*.js`, `public/profile/profile-*.js`
 - Do_Not_Touch: game engines; hub launch URLs in `public/hub-config.json`
-- Relevant_Decisions: 0040 (admin by Google), 0041 (feedback inbox), 0039 (one function per API area)
+- Relevant_Decisions: 0040–0044 (coinchapp 0070)
 
 Next:
-- Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`; at the end, run migrations 0004+ in order in the Supabase SQL editor (connector cannot see `multigames-db`).
-- Phase 6: `/api/profile` `export` + `delete-account` (auth user delete cascades), admin players list with reset name/avatar and delete. No new function.
-- Owner to confirm proposed `docs/PRODUCT.md` / `ARCHITECTURE.md` / `SECURITY.md` wording (admin by Google, public feedback endpoint).
-- Still open: domain rewrite for `muchogames.win/<jeu>`; live checks of `/profile` wins/losses.
+- Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`.
+- Owner: run in order in the Supabase SQL editor of `multigames-db`: `0004_feedback.sql`, `0005_game_stats.sql`, `0006_hub_settings.sql` (the connector cannot see that project).
+- Then live-check each phase (BACKLOG Now), and delete the roadmap task file.
+- Owner to confirm proposed `docs/PRODUCT.md` / `ARCHITECTURE.md` / `SECURITY.md` wording (admin by Google, public feedback + hub-settings endpoints, account deletion).
+- Owner to provide `players` / `duration` for the untagged games.
+- Still open: domain rewrite for `muchogames.win/<jeu>`; Tranquil Vercel repoint.
 
 Open_Questions:
 - Should GameBoy and Easy Frog also live under `muchogames.win/<jeu>`, or only the games in this repo?
 
 Blockers:
+- Live verification of phases 1–6 needs `ADMIN_USER_IDS` and migrations 0004–0006.
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
-- 2026-10-02 Hub catalog + announcement editable from `/admin` (decision 0043).
-- 2026-10-02 Hub: "My games" shelf (favorites + recents), tile stars, `players`/`duration` tags, player-count filter (`hub-shelf.js`, `hub-tags.js`).
-- 2026-10-02 Per-game results (decision 0042, coinchapp 0070); Yatzy offline cache v41.
-- 2026-10-02 Feedback inbox: `api/feedback.js`, shared report dialog, `/admin` Feedback card; Yatzy offline cache v40 (10/12 functions).
-- 2026-10-02 Admin by allowlisted Google account; `api/admin/{login,stats}.js` merged into `api/admin/index.js`.
+- 2026-10-02 Data export + account deletion on `/profile`, admin Players card (decision 0044).
+- 2026-10-02 Hub catalog + announcement editable from `/admin` (decision 0043, 11/12 functions).
+- 2026-10-02 Hub "My games" shelf, favorites, player tags/filter.
+- 2026-10-02 Per-game results (decision 0042, coinchapp 0070).
+- 2026-10-02 Feedback inbox (decision 0041); admin by Google account (decision 0040).

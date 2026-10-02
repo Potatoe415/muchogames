@@ -1,0 +1,9 @@
+# 0044 — Self-service data export and account deletion, admin moderation
+
+Date: 2026-10-02
+Status: Accepted
+Decision: A signed-in player can download everything the hub stores about them and delete their account from `/profile`; the admin can list players, clear a name or avatar, and delete a non-admin account from `/admin`. Deletion removes the Supabase Auth user and relies on the existing `ON DELETE CASCADE` chain.
+Context: Roadmap phase 6. Since 0003 the hub keeps Google-linked profiles in a shared database, so players need a way to see and erase their data, and the owner needs basic moderation.
+Rationale: `muchogames_profiles.id` references `auth.users` with cascade, and `muchogames_game_stats` / `muchogames_launch_codes` cascade from the profile, so `auth.admin.deleteUser` is one call that leaves nothing behind (no other table in `supabase/` or `apps/*/supabase/` references `auth.users`). Both destructive endpoints require `confirm: true` and are throttled. The player list carries no email (not needed to moderate). Admin accounts cannot be deleted from the panel, because a new sign-in would get a new id that `ADMIN_USER_IDS` does not list. Everything lives in the existing `api/profile` and `api/admin` functions.
+Consequences: Deletion is irreversible; anonymous feedback is not linked to accounts and stays. A cleared name can come back if the player's browser still has it locally and they sign in again (the hub re-syncs the local name on sign-in). coinchapp/Tranquil keep their own cookies pointing at a deleted profile id; their next result write finds no profile and is ignored.
+Alternatives_Rejected: Soft delete flag (keeps personal data around). Deleting only the profile row (leaves the Auth user and lets the next sign-in recreate an empty profile silently). Email in the admin list (more personal data on screen for no moderation benefit).

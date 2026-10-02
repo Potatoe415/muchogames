@@ -14,6 +14,7 @@ const ERROR_STATUS = {
   "invalid-feedback": 400,
   "feedback-not-found": 404,
   "invalid-settings": 400,
+  "invalid-player": 400,
   unauthorized: 401,
   forbidden: 403,
   "too-many-requests": 429,

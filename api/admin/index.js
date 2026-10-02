@@ -12,6 +12,11 @@ import {
   handleHubSettingsGet,
   handleHubSettingsUpdate
 } from "./_hubSettings.js";
+import {
+  handlePlayerDelete,
+  handlePlayerReset,
+  handlePlayersList
+} from "./_players.js";
 import { handleStats } from "./_stats.js";
 
 // One Serverless Function fanning out on `action`, like api/profile/index.js:
@@ -22,7 +27,10 @@ const THROTTLES = {
   "feedback-list": { maxHits: 60, windowMs: 60000 },
   "feedback-update": { maxHits: 60, windowMs: 60000 },
   "hub-settings-get": { maxHits: 60, windowMs: 60000 },
-  "hub-settings-update": { maxHits: 30, windowMs: 60000 }
+  "hub-settings-update": { maxHits: 30, windowMs: 60000 },
+  "players-list": { maxHits: 60, windowMs: 60000 },
+  "player-reset": { maxHits: 30, windowMs: 60000 },
+  "player-delete": { maxHits: 10, windowMs: 600000 }
 };
 
 const ADMIN_ACTIONS = {
@@ -30,7 +38,10 @@ const ADMIN_ACTIONS = {
   "feedback-list": handleFeedbackList,
   "feedback-update": handleFeedbackUpdate,
   "hub-settings-get": handleHubSettingsGet,
-  "hub-settings-update": handleHubSettingsUpdate
+  "hub-settings-update": handleHubSettingsUpdate,
+  "players-list": handlePlayersList,
+  "player-reset": handlePlayerReset,
+  "player-delete": handlePlayerDelete
 };
 
 async function handler(req, res) {

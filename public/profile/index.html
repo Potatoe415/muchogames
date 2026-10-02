@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="/profile/profile.css" />
     <link rel="stylesheet" href="/profile/profile-crop.css" />
+    <link rel="stylesheet" href="/profile/profile-account.css" />
   </head>
   <body>
     <header class="game-nav" data-id="profile-header">
@@ -242,6 +243,49 @@
       <section class="profile-games" data-id="profile-games-section" hidden>
         <h2 class="profile-favorites-title" data-id="profile-games-title"></h2>
         <ul class="profile-games-list" data-id="profile-games-list"></ul>
+      </section>
+
+      <section class="profile-account" data-id="profile-account-section" hidden>
+        <h2
+          class="profile-favorites-title"
+          data-id="profile-account-title"
+        ></h2>
+        <button
+          class="profile-account-button"
+          type="button"
+          data-id="profile-export-button"
+        ></button>
+        <button
+          class="profile-account-button profile-account-button--danger"
+          type="button"
+          data-id="profile-delete-button"
+        ></button>
+        <div
+          class="profile-account-confirm"
+          data-id="profile-delete-confirm"
+          hidden
+        >
+          <p
+            class="profile-account-warning"
+            data-id="profile-delete-warning"
+          ></p>
+          <button
+            class="profile-account-button profile-account-button--danger-solid"
+            type="button"
+            data-id="profile-delete-confirm-button"
+          ></button>
+          <button
+            class="profile-account-button"
+            type="button"
+            data-id="profile-delete-cancel-button"
+          ></button>
+        </div>
+        <p
+          class="profile-account-error"
+          data-id="profile-account-error"
+          role="alert"
+          hidden
+        ></p>
       </section>
     </main>
 
