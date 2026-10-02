@@ -10,13 +10,13 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Do the same Vercel repoint for `tranquil` (`prj_FnorlK5RzjApMxvvVAXIhEvlxBdF`) — not started yet. Same approach as `coinchapp` (see `docs/decisions/INDEX.md` 2026-09-17): new project linked to `Potatoe415/muchogames`, Root Directory `apps/tranquil`, copy non-sensitive env vars, ask the user to re-enter sensitive ones, redeploy, verify live, then move `tranquil-woad.vercel.app` over.
 - [ ] Fix `apps/coinchapp/lib/client/useMatchStats.ts:220` — `react-hooks/set-state-in-effect` lint error, surfaced by `npm run lint:all`. Pre-existing in `coinchapp`'s own code, flag only.
 - [ ] Decide whether/how to bring `apps/tranquil` into the Turborepo/workspace graph (blocked by its own nested npm workspaces).
-- [ ] Confirm `/admin` renders and logs in from a real browser (only verified at HTTP level so far).
+- [ ] **User**: set `ADMIN_USER_IDS` on Vercel (Production + Preview) to your Supabase user id, redeploy, then delete `ADMIN_PASSWORD` (no longer read). Find the id by signing in on `/admin`: the refusal message shows it.
+- [ ] Confirm `/admin` Google sign-in → dashboard on the live site, and that the hub account menu shows "Admin" for you only (verified locally with stubbed Google/Supabase so far).
+- [ ] Roadmap phases 2–6 (feedback inbox, per-game results, hub recents/favorites/tags, catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
 - [ ] Delete the verification row: `delete from public.muchogames_events where game_id = '__verification__';`.
-- [ ] Rotate `ADMIN_PASSWORD` (current value is a demo password) — `vercel env add ADMIN_PASSWORD production --sensitive --force`, then redeploy.
 - [ ] Copy `SUPABASE_URL` to the Preview environment (currently Production-only).
 - [ ] Verify Yatzy online play with two real devices (create, join, leave, resume, reclaim a seat by code).
 - [ ] Decide on the GitHub branch-protection rule on `main` (currently bypassed on every push): adopt PRs or remove the rule.
-- [ ] Make `api/admin/login.js`'s "admin not configured" case diagnosable without leaking info (currently redacted as a generic 5xx).
 - [ ] Confirm `muchogames.win` still shows "Valid Configuration" in Vercel; add `muchogames.vercel.app` to Google Cloud Console's Authorized JavaScript origins.
 - [ ] Sanity-check wins/losses on the hub `/profile` after a signed-in launch: Yatzy (vs robot + online), one finished match in each coinchapp game, and Tranquil. Requires `supabase/migrations/0003_profiles.sql` applied and Google Auth enabled on `multigames-db`. Anonymous local counters stay as they are.
 - [ ] Confirm today's Yatzy fixes (overlap, square cells, dice-icon sizing, header/settings panel) on a real device once deployed (hard-refresh/reopen so `yatzy-offline-v39` takes over).

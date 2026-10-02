@@ -21,6 +21,7 @@ export default [
     files: [
       "hub.js",
       "auth.js",
+      "auth-admin.js",
       "version.js",
       "wordplayer.js",
       "public/**/*.js",

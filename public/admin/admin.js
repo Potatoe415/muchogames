@@ -1,15 +1,19 @@
+import {
+  AdminRequestError,
+  clearToken,
+  postAdmin,
+  readHubIdToken,
+  readStoredToken,
+  renderGoogleSignIn,
+  signInWithIdToken
+} from "./admin-auth.js";
 import { renderTrendChart } from "./trend-chart.js";
 
-const LOGIN_ENDPOINT = "/api/admin/login";
-const STATS_ENDPOINT = "/api/admin/stats";
 const HUB_CONFIG_URL = "/hub-config.json";
-// Only the short-lived token issued by /api/admin/login is kept here. The
-// password is never stored, so an XSS on this origin cannot steal it.
-const TOKEN_STORAGE_KEY = "muchogames-admin-token";
 const OFFLINE_MESSAGE =
   "Could not reach the server. The /api functions don't run under `npm run dev`.";
 
-// Must stay in sync with RANGE_DAYS in api/admin/stats.js.
+// Must stay in sync with RANGE_DAYS in api/admin/_stats.js.
 const RANGE_CAPTIONS = {
   "7d": "over the last 7 days",
   "30d": "over the last 30 days",
@@ -23,9 +27,6 @@ let selectedGameId = "";
 let lastStats = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-  document
-    .getElementById("admin-login-form")
-    .addEventListener("submit", submitLogin);
   document
     .getElementById("admin-logout-button")
     .addEventListener("click", logout);
@@ -42,45 +43,42 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("change", selectGame);
 
   const storedToken = readStoredToken();
+  const hubIdToken = readHubIdToken();
 
   if (storedToken) {
     loadStats(storedToken);
+  } else if (hubIdToken) {
+    signIn(hubIdToken, { quiet: true });
+  } else {
+    showLogin();
   }
 });
 
-async function submitLogin(event) {
-  event.preventDefault();
-
-  const passwordInput = document.getElementById("admin-password-input");
+// `quiet` is for the hub's reused Google token, which may simply be expired:
+// fall back to the sign-in button without showing that as an error.
+async function signIn(idToken, { quiet = false } = {}) {
   showError("");
 
   try {
-    const response = await fetch(LOGIN_ENDPOINT, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password: passwordInput.value })
-    });
-
-    if (!response.ok) {
-      handleFailure(await readErrorMessage(response), response.status);
+    await loadStats(await signInWithIdToken(idToken));
+  } catch (error) {
+    if (quiet && error.status === 401) {
+      showLogin();
       return;
     }
-
-    const { token } = await response.json();
-    storeToken(token);
-    passwordInput.value = "";
-    await loadStats(token);
-  } catch {
-    showError(OFFLINE_MESSAGE);
+    handleFailure(error);
   }
+}
+
+function showLogin() {
+  document.getElementById("admin-dashboard").hidden = true;
+  document.getElementById("admin-login").hidden = false;
+  renderGoogleSignIn(document.getElementById("admin-google-button"), signIn);
 }
 
 function logout() {
   clearToken();
-  document.getElementById("admin-password-input").value = "";
-  document.getElementById("admin-dashboard").hidden = true;
-  document.getElementById("admin-login").hidden = false;
-  document.getElementById("admin-password-input").focus();
+  showLogin();
   showError("");
 }
 
@@ -90,50 +88,37 @@ async function loadStats(token) {
   showError("");
 
   try {
-    const response = await fetch(STATS_ENDPOINT, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token, range: selectedRange })
+    const stats = await postAdmin({
+      action: "stats",
+      token,
+      range: selectedRange
     });
-
-    if (!response.ok) {
-      handleFailure(await readErrorMessage(response), response.status);
-      return;
-    }
-
-    const stats = await response.json();
     await loadGameTitles();
     render(stats);
-  } catch {
-    showError(OFFLINE_MESSAGE);
+  } catch (error) {
+    handleFailure(error);
   }
 }
 
-function handleFailure(message, status) {
-  if (status === 401) {
-    clearToken();
-    document.getElementById("admin-dashboard").hidden = true;
-    document.getElementById("admin-login").hidden = false;
-    document.getElementById("admin-password-input").focus();
+function handleFailure(error) {
+  if (!(error instanceof AdminRequestError)) {
+    showError(OFFLINE_MESSAGE);
+    return;
   }
 
-  if (status === 404) {
+  if (error.status === 401 || error.status === 403) {
+    clearToken();
+    showLogin();
+  }
+
+  if (error.status === 404) {
     showError(
-      "Endpoints /api/admin/* not found. Serverless functions don't run under `npm run dev`: use `vercel dev` instead."
+      "Endpoint /api/admin not found. Serverless functions don't run under `npm run dev`: use `vercel dev` instead."
     );
     return;
   }
 
-  showError(message);
-}
-
-async function readErrorMessage(response) {
-  try {
-    const payload = await response.json();
-    return payload.error?.message || `HTTP error ${response.status}.`;
-  } catch {
-    return `HTTP error ${response.status}.`;
-  }
+  showError(error.message);
 }
 
 function selectRange(event) {
@@ -280,30 +265,6 @@ function populateGameSelect() {
   });
 
   select.appendChild(fragment);
-}
-
-function readStoredToken() {
-  try {
-    return sessionStorage.getItem(TOKEN_STORAGE_KEY) || "";
-  } catch {
-    return "";
-  }
-}
-
-function storeToken(token) {
-  try {
-    sessionStorage.setItem(TOKEN_STORAGE_KEY, token);
-  } catch {
-    // Storage unavailable (private mode): the session just won't survive a reload.
-  }
-}
-
-function clearToken() {
-  try {
-    sessionStorage.removeItem(TOKEN_STORAGE_KEY);
-  } catch {
-    // Nothing to clear if storage is unavailable.
-  }
 }
 
 function showError(message) {

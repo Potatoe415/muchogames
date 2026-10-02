@@ -10,7 +10,9 @@ const ERROR_STATUS = {
   "invalid-event": 400,
   "invalid-state": 400,
   "invalid-profile": 400,
+  "invalid-action": 400,
   unauthorized: 401,
+  forbidden: 403,
   "too-many-requests": 429,
   "server-error": 500
 };

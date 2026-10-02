@@ -10,6 +10,13 @@
 // browser code and restricted by its Authorized JavaScript origins (Google
 // Cloud project "muchogames"). The paired client_secret from that project is
 // never used here (no backend token exchange) and must never be committed.
+import {
+  clearAdminFlag,
+  createAdminLink,
+  persistAdminFlag,
+  readAdminFlag
+} from "./auth-admin.js";
+
 const GOOGLE_CLIENT_ID =
   "45336592595-v4odhca7f963n784u3f8g8aoj6odns5h.apps.googleusercontent.com";
 
@@ -36,16 +43,19 @@ const AUTH_COPY = {
   fr: {
     account: "Compte",
     profile: "Profil",
+    admin: "Admin",
     logout: "Se déconnecter"
   },
   en: {
     account: "Account",
     profile: "Profile",
+    admin: "Admin",
     logout: "Sign out"
   },
   es: {
     account: "Cuenta",
     profile: "Perfil",
+    admin: "Admin",
     logout: "Cerrar sesión"
   }
 };
@@ -84,8 +94,11 @@ export function initAuthWidget() {
 // as the stored ID token is still valid (it's short-lived, ~1h — see
 // ID_TOKEN_STORAGE_KEY above); a stale token just fails silently, same as
 // syncProfileName already does.
+// The same round-trip also fills in the admin flag for sessions that started
+// before /api/profile reported it.
 function resyncAvatarIfMissing() {
-  if (!authState.email || readStoredAvatar()) return;
+  if (!authState.email) return;
+  if (readStoredAvatar() && readAdminFlag() !== null) return;
   const idToken = readStoredIdToken();
   if (!idToken) return;
   try {
@@ -95,7 +108,7 @@ function resyncAvatarIfMissing() {
       body: JSON.stringify({ action: "get", idToken })
     })
       .then((response) => (response.ok ? response.json() : null))
-      .then((data) => restoreAvatarFromProfile(data?.profile?.avatarUrl))
+      .then(applyProfileResponse)
       .catch(() => {});
   } catch {
     // fetch unavailable/blocked — not fatal, same as syncProfileName.
@@ -163,11 +176,18 @@ function syncProfileName(idToken) {
       })
     })
       .then((response) => (response.ok ? response.json() : null))
-      .then((data) => restoreAvatarFromProfile(data?.profile?.avatarUrl))
+      .then(applyProfileResponse)
       .catch(() => {});
   } catch {
     // fetch unavailable/blocked — not fatal.
   }
+}
+
+function applyProfileResponse(data) {
+  if (!data || !authState.email) return;
+  persistAdminFlag(data.isAdmin === true);
+  renderAuthWidget();
+  restoreAvatarFromProfile(data.profile?.avatarUrl);
 }
 
 function restoreAvatarFromProfile(dataUrl) {
@@ -333,6 +353,7 @@ function logout() {
   authState.email = "";
   persistEmail("");
   persistIdToken("");
+  clearAdminFlag();
   clearStoredAvatar();
   if (window.google?.accounts?.id) {
     window.google.accounts.id.disableAutoSelect();
@@ -411,6 +432,10 @@ function createLoggedInContent() {
   profileLink.dataset.id = "auth-profile-link";
   profileLink.textContent = strings.profile;
   fragment.appendChild(profileLink);
+
+  if (readAdminFlag() === "1") {
+    fragment.appendChild(createAdminLink(strings.admin));
+  }
 
   const logoutButton = document.createElement("button");
   logoutButton.type = "button";

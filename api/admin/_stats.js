@@ -1,10 +1,5 @@
-import { hasAdminPassword, isValidSessionToken } from "../_lib/adminAuth.js";
-import {
-  readJsonBody,
-  sendError,
-  sendJson,
-  withErrorHandling
-} from "../_lib/http.js";
+// Launch-stats action for api/admin/index.js. Not a route itself.
+import { sendError, sendJson } from "../_lib/http.js";
 import { getServiceClient } from "../_lib/supabase.js";
 
 const MAX_ROWS = 10000;
@@ -13,35 +8,12 @@ const DEFAULT_RANGE = "30d";
 
 /**
  * Returns the game launch ranking plus a daily trend, over the requested range.
- * Gated by the short-lived token issued by api/admin/login.js, so the password
- * itself is never replayed on every read.
  *
  * Days are bucketed in UTC. The hub's audience is in UTC+1/+2, so a launch
  * after midnight local time lands on the previous day. Accepted: the trend is
  * meant to show shape, not to be an accounting record.
  */
-async function handler(req, res) {
-  if (req.method !== "POST") {
-    sendError(res, "method-not-allowed", "Use POST to read stats.");
-    return;
-  }
-
-  if (!hasAdminPassword()) {
-    sendError(
-      res,
-      "server-error",
-      "Admin access is not configured on this deployment."
-    );
-    return;
-  }
-
-  const body = await readJsonBody(req);
-
-  if (!isValidSessionToken(body.token)) {
-    sendError(res, "unauthorized", "Session expired. Log in again.");
-    return;
-  }
-
+export async function handleStats(res, body) {
   // An unknown range falls back to the default rather than erroring: the only
   // caller is our own page, which sends one of the three known values.
   const range = RANGE_DAYS[body.range] ? body.range : DEFAULT_RANGE;
@@ -68,8 +40,6 @@ async function handler(req, res) {
     dailyTrendByGame: buildDailyTrendByGame(data, start, days)
   });
 }
-
-export default withErrorHandling(handler);
 
 function rankByGame(rows) {
   const launchesByGame = new Map();

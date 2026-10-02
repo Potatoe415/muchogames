@@ -39,5 +39,9 @@ export async function exchangeGoogleIdToken(idToken) {
   const data = await response.json().catch(() => null);
   if (!response.ok || !data?.user?.id) return null;
 
-  return { userId: data.user.id, email: data.user.email || "" };
+  return {
+    userId: data.user.id,
+    email: data.user.email || "",
+    accessToken: data.access_token || ""
+  };
 }

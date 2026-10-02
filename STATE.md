@@ -2,28 +2,28 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Yams in-game header now says "Yams" (FR/EN/ES) and the settings gear sits to the right of the score pills. Hub badge stays V0.0.5. Two bug-tracker tickets about hiding `*.vercel.app` behind `muchogames.win/<jeu>` are not started: Coinche, Tranquil, and GameBoy are other deployments, so that needs a rewrite/proxy decision.
-Focus: Recheck the bug-tracker Google Doc about every 10 minutes.
-Level: L1 (yatsy header only). URL tickets are L2 and waiting.
+Status: Roadmap phase 1 shipped in code: `/admin` is now Google sign-in + `ADMIN_USER_IDS` allowlist (shared password removed); the hub account menu shows "Admin" to allowlisted users. Live use waits on the owner setting `ADMIN_USER_IDS` on Vercel.
+Focus: Roadmap `docs/tasks/platform-admin-profile-roadmap.md` — next is phase 2 (feedback inbox).
+Level: L2.
 
 Context:
-- Working_On: bug-tracker doc `1mrgGMVeA2a1bCI3eavf7oPno57xyydzF3Z0yi3neS2U`
-- Relevant_Files: `public/games/yatsy/index.html`, `render.js`, `i18n.js` (`header.gameTitle`)
-- Do_Not_Touch: splash title still "Yatzy"; category label "Yatzy" unchanged; hub launch URLs in `public/hub-config.json`
-- Relevant_Decisions: none yet for the domain rewrite
+- Working_On: `docs/tasks/platform-admin-profile-roadmap.md` (6 phases, approved 2026-10-02)
+- Relevant_Files: `api/admin/index.js`, `api/admin/_stats.js`, `api/_lib/adminAuth.js`, `public/admin/admin-auth.js`, `auth-admin.js`, `vercel.json` (`/admin` CSP)
+- Do_Not_Touch: game engines; hub launch URLs in `public/hub-config.json`
+- Relevant_Decisions: 0040 (admin by Google account), 0039 (one function per API area)
 
 Next:
-- Decide how `muchogames.win/coinche` (and the other external apps) should proxy to their own Vercel projects before changing launch URLs.
-- Keep polling the bug-tracker. Drive can read it; writing status tags in the doc still fails from here.
-- Sign in, finish one Yatzy, one coinchapp match, and one Tranquil match from the hub. Confirm `/profile` counts them.
+- Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`; sign in on live `/admin`.
+- Phase 2: show the `muchogames_feedback` migration SQL to the owner, apply via the Supabase connector after approval, then `api/feedback.js` + report button + admin inbox.
+- Owner to confirm the proposed `docs/PRODUCT.md` / `ARCHITECTURE.md` / `SECURITY.md` wording for the admin change.
+- Still open from before: domain rewrite for `muchogames.win/<jeu>`; live checks of `/profile` wins/losses.
 
 Open_Questions:
 - Should GameBoy and Easy Frog also live under `muchogames.win/<jeu>`, or only the games in this repo?
 
 Blockers:
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
-- Bug-tracker body cannot be edited through the Drive connector.
 
 Recent_Changes:
+- 2026-10-02 Admin by allowlisted Google account; `api/admin/{login,stats}.js` merged into `api/admin/index.js` (9/12 functions).
 - 2026-09-25 Yams: in-game title "Yams"; settings gear moved to the right of the scores.
-- 2026-09-25 Hub footer version badge bumped from V0.0.4 to V0.0.5 (`version.js`).

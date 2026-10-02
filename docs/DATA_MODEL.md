@@ -124,7 +124,7 @@ Sensitive_Data:
 ### Entity: HubEvent
 
 Purpose: Counts how many times each game is launched from the hub, for the admin stats page.
-Storage: Supabase Postgres, table `muchogames_events` (see `supabase/migrations/0002_events.sql`, `api/track.js`, `api/admin/stats.js`).
+Storage: Supabase Postgres, table `muchogames_events` (see `supabase/migrations/0002_events.sql`, `api/track.js`, `api/admin/_stats.js`).
 
 Fields:
 | Field | Type | Required | Notes |
@@ -139,11 +139,11 @@ Relationships:
 
 Constraints:
 - Append-only: rows are never updated or deleted by the app. No TTL and no purge job (unlike `yatzy_games`), because the counts are the point.
-- `api/admin/stats.js` reads at most 10 000 rows per request (`MAX_ROWS`); beyond that the ranking and the trend silently undercount. Since 2026-08-30 that cap applies to the selected range window (7, 30 or 182 days) rather than to all history, so it is reached far less easily.
+- `api/admin/_stats.js` reads at most 10 000 rows per request (`MAX_ROWS`); beyond that the ranking and the trend silently undercount. Since 2026-08-30 that cap applies to the selected range window (7, 30 or 182 days) rather than to all history, so it is reached far less easily.
 - Reads filter on `created_at >= start of the requested range`, served by `muchogames_events_created_at_idx`. Aggregation (ranking and per-day totals) happens in JavaScript inside the function, not in SQL — deliberate at this volume, since it avoids a view or an RPC and therefore a migration.
 
 Access_Rules:
-- Row Level Security enabled with zero policies, same as `yatzy_games`: the browser can neither read nor write this table. Writes go through `POST /api/track` (public, unauthenticated, throttled in memory to 60 events per minute per IP). Reads go through `POST /api/admin/stats`, which requires a short-lived HMAC-signed token obtained from `POST /api/admin/login`; the password itself is only ever posted to the login endpoint, never replayed on reads.
+- Row Level Security enabled with zero policies, same as `yatzy_games`: the browser can neither read nor write this table. Writes go through `POST /api/track` (public, unauthenticated, throttled in memory to 60 events per minute per IP). Reads go through `POST /api/admin` (`action: "stats"`), which requires the Supabase access token returned by `action: "login"` for a Google account whose user id is in `ADMIN_USER_IDS`; every read re-resolves that token and re-checks the allowlist.
 - `POST /api/track` being public means anyone who finds the URL can insert junk rows and inflate the counters. Accepted trade-off (see `docs/DECISIONS.md` 2026-08-30).
 
 Sensitive_Data:
@@ -162,8 +162,8 @@ Sensitive_Data:
 
 ## Access Model
 
-Roles: None (anonymous) for players. Yatzy uses ad-hoc `creator` / `joiner` seat roles scoped to a single room code. A single implicit `admin` role exists, defined solely by knowing the `ADMIN_PASSWORD` value — there is no admin account or user record. Since 2026-08-30 there is a session, but a stateless one: a self-contained token carrying its own expiry and an HMAC over it, so nothing is persisted server-side.
-Rules: All static JSON is public and read-only. Yatzy room reads/writes go exclusively through `api/yatsy/games/*` (Vercel serverless functions using the Supabase service-role key); those functions validate the room code + per-seat resume token before returning or mutating state. Direct client access to `yatzy_games` is blocked outright by Row Level Security (no policies), regardless of what the client knows. The same RLS pattern protects `muchogames_events`: writes via the public `api/track.js`, reads via `api/admin/stats.js` behind a short-lived HMAC-signed token that `api/admin/login.js` issues in exchange for the shared admin password.
+Roles: None (anonymous) for players. Yatzy uses ad-hoc `creator` / `joiner` seat roles scoped to a single room code. An `admin` role exists for Google-signed-in Supabase Auth users whose id is listed in the `ADMIN_USER_IDS` env var (since 2026-10-02, replacing the shared `ADMIN_PASSWORD`). No admin table: the allowlist is configuration. The admin session is the 1h Supabase access token from the Google exchange, verified with `auth.getUser` on every admin request.
+Rules: All static JSON is public and read-only. Yatzy room reads/writes go exclusively through `api/yatsy/games/*` (Vercel serverless functions using the Supabase service-role key); those functions validate the room code + per-seat resume token before returning or mutating state. Direct client access to `yatzy_games` is blocked outright by Row Level Security (no policies), regardless of what the client knows. The same RLS pattern protects `muchogames_events`: writes via the public `api/track.js`, reads via `api/admin/index.js` behind an allowlisted Google sign-in.
 
 ---
 
@@ -224,3 +224,9 @@ Impact: `created_at` went from being written and never read to carrying the whol
 Change: `muchogames_profiles.wins` / `losses` (and the one-time `muchogames_launch_codes` hand-off) are now written from Yatzy, coinchapp (all four games), and Tranquil, and read on `/profile` when a live Google sign-in exists.
 Reason: Each app already counted results in its own `localStorage`. Those totals never reached the hub profile.
 Impact: Anonymous play is unchanged. A signed-in player who launches Coinche, Bouilla, Président, la Bataille Corse, or Tranquil from the hub gets `?profileCode=` for that navigation; finishing a match increments the shared row. Existing local counters are folded in once per browser.
+
+## 2026-10-02 - Admin access by Google account
+
+Change: No schema change. The admin role moved from "knows `ADMIN_PASSWORD`" to "Google sign-in whose Supabase Auth user id is in `ADMIN_USER_IDS`". `api/admin/login.js` + `stats.js` became `api/admin/index.js` (`action: "login" | "stats"`).
+Reason: Owner-only admin area, about to grow beyond read-only stats. See `docs/decisions/0040-admin-access-by-google-account.md`.
+Impact: `ADMIN_PASSWORD` is no longer read and can be deleted from Vercel. `muchogames_events` access rules are otherwise unchanged.

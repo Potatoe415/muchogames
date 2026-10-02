@@ -24,29 +24,14 @@
         id="admin-login"
         data-id="admin-login-section"
       >
-        <form
-          id="admin-login-form"
-          data-id="admin-login-form"
-          autocomplete="off"
-        >
-          <label class="admin-label" for="admin-password-input">Password</label>
-          <input
-            class="admin-input"
-            id="admin-password-input"
-            data-id="admin-password-input"
-            type="password"
-            required
-            autocomplete="current-password"
-            autofocus
-          />
-          <button
-            class="admin-button"
-            type="submit"
-            data-id="admin-login-submit"
-          >
-            Log in
-          </button>
-        </form>
+        <p class="admin-login-intro" data-id="admin-login-intro">
+          Sign in with the Google account allowed to manage Mucho Games.
+        </p>
+        <div
+          class="admin-google-button"
+          id="admin-google-button"
+          data-id="admin-google-signin-button"
+        ></div>
         <p
           class="admin-error"
           id="admin-error"

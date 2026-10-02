@@ -7,6 +7,7 @@ import {
 import { clientKey, isRateLimited } from "../_lib/rateLimit.js";
 import { getServiceClient } from "../_lib/supabase.js";
 import { exchangeGoogleIdToken } from "../_lib/googleAuth.js";
+import { isAdminUserId } from "../_lib/adminAuth.js";
 import { toPublicProfile } from "./_shared.js";
 import { randomBytes } from "node:crypto";
 
@@ -85,7 +86,10 @@ async function handleGet(res, identity) {
     return;
   }
 
-  sendJson(res, 200, { profile: toPublicProfile(data) });
+  sendJson(res, 200, {
+    profile: toPublicProfile(data),
+    isAdmin: isAdminUserId(identity.userId)
+  });
 }
 
 /**
@@ -110,7 +114,10 @@ async function handleUpsert(res, identity, body) {
     return;
   }
 
-  sendJson(res, 200, { profile: toPublicProfile(data) });
+  sendJson(res, 200, {
+    profile: toPublicProfile(data),
+    isAdmin: isAdminUserId(identity.userId)
+  });
 }
 
 function buildProfilePatch(userId, body) {
