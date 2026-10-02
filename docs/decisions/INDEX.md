@@ -51,6 +51,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0043 | 2026-10-02 | Hub settings overlay served by a cached function (`muchogames_hub_settings`) | Accepted |
 | 0044 | 2026-10-02 | Self-service data export and account deletion, admin moderation | Accepted |
 | 0045 | 2026-10-02 | One Serverless Function for Yatzy rooms (URLs kept via rewrites) | Accepted |
+| 0046 | 2026-10-02 | Daily play coins (10/day, one per hub launch) | Accepted |
 
 ## When to log a decision
 Any of:

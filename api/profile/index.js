@@ -10,6 +10,7 @@ import { exchangeGoogleIdToken } from "../_lib/googleAuth.js";
 import { isAdminUserId } from "../_lib/adminAuth.js";
 import { toPublicProfile } from "./_shared.js";
 import { handleDeleteAccount, handleExport } from "./_account.js";
+import { handleCoins, handleSpendCoin } from "./_coins.js";
 import {
   handleGameStats,
   readGameId,
@@ -29,7 +30,9 @@ const THROTTLES = {
   "record-result": { maxHits: 30, windowMs: 60000 },
   "game-stats": { maxHits: 60, windowMs: 60000 },
   export: { maxHits: 10, windowMs: 60000 },
-  "delete-account": { maxHits: 5, windowMs: 600000 }
+  "delete-account": { maxHits: 5, windowMs: 600000 },
+  coins: { maxHits: 60, windowMs: 60000 },
+  "spend-coin": { maxHits: 30, windowMs: 60000 }
 };
 
 const MAX_NAME_LENGTH = 40;
@@ -86,6 +89,10 @@ async function handler(req, res) {
       return handleExport(res, identity);
     case "delete-account":
       return handleDeleteAccount(res, identity, body);
+    case "coins":
+      return handleCoins(res, identity);
+    case "spend-coin":
+      return handleSpendCoin(res, identity);
   }
 }
 

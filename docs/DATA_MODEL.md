@@ -190,6 +190,13 @@ Storage: `public.muchogames_hub_settings` (`supabase/migrations/0006_hub_setting
 Access_Rules: RLS on, zero policies. Public read through `GET /api/hub-settings` (CDN-cached 60 s); write only through `POST /api/admin` `hub-settings-update` behind the admin allowlist. The hub falls back to the static catalog when the read fails.
 Sensitive_Data: None.
 
+### Entity: Coins
+
+Purpose: Daily play allowance of a signed-in player (10 coins per Paris day, one per hub launch).
+Storage: `public.muchogames_coins` (`supabase/migrations/0007_coins.sql`): `profile_id` (PK, references `auth.users`, cascade), `day` (Paris date the count belongs to), `spent`, `updated_at`. One row per player, overwritten when the day changes; no purge needed. Spent only through `spend_muchogames_coin(p_id, p_daily)` (service-role only), which computes the Paris day itself and returns null when the allowance is used up.
+Access_Rules: RLS on, zero policies. Read/spent via `api/profile` `coins` / `spend-coin` for the caller's own row; admins never touch it (unlimited). Anonymous players use the browser key `muchogames-coins` (`{ day, spent }`) instead.
+Sensitive_Data: None beyond the profile link.
+
 ### Entity: Feedback
 
 Purpose: A bug report or idea sent by any visitor, triaged by the admin.
@@ -284,3 +291,9 @@ Impact: `hub.js`'s `PINNED_GAME_IDS` is now only the fallback when settings cann
 Change: No schema change. `api/profile` gains `export` and `delete-account` (`confirm: true`); `api/admin` gains `players-list`, `player-reset` (`name` | `avatar` → null) and `player-delete` (non-admin only, `confirm: true`). Deletion calls `auth.admin.deleteUser`, cascading to `muchogames_profiles`, `muchogames_game_stats` and `muchogames_launch_codes`.
 Reason: Roadmap phase 6. See `docs/decisions/0044-self-service-export-and-account-deletion.md`.
 Impact: First code path that deletes user data on request. `/profile` deletion also clears this browser's hub keys (except the language).
+
+## 2026-10-02 - Daily play coins (`muchogames_coins`)
+
+Change: Added the `Coins` entity and `spend_muchogames_coin` (`supabase/migrations/0007_coins.sql`), `api/profile` actions `coins` / `spend-coin`, and the browser key `muchogames-coins`.
+Reason: Owner request. See `docs/decisions/0046-daily-play-coins.md`.
+Impact: Until 0007 runs, signed-in spends fail server-side and the hub lets the launch through (fail open); anonymous counting works immediately.

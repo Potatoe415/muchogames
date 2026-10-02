@@ -1,0 +1,9 @@
+# 0046 — Daily play coins
+
+Date: 2026-10-02
+Status: Accepted
+Decision: Every game launched from the hub costs one coin out of 10 per day, reset at midnight Europe/Paris. Signed-in players are counted server-side (`muchogames_coins` + `spend_muchogames_coin`), anonymous players in the browser (`muchogames-coins`), admins are unlimited. Out of coins, the hub shows "Vous n'avez plus de pièces pour aujourd'hui. Revenez demain !" and does not open the game.
+Context: Owner request (2026-10-02). Choices made by the owner: server counter for signed-in players with a browser counter for the others, cost per hub launch only, midnight Paris reset, unlimited for the admin, no check when a game is opened by direct link.
+Rationale: The spend is one SQL statement that decides the Paris day itself, so neither the client clock nor two simultaneous launches can mint extra coins. Anonymous players have no identifier by design, so their counter can only live in the browser. A server or network failure lets the launch through: a backend incident must never block play. Reuses `api/profile` (no new function). New-tab launches open their tab during the click so popup blockers allow it after the coin round trip.
+Consequences: The hub is no longer unlimited play (`docs/PRODUCT.md`). Anonymous players can reset their coins by clearing site data. A signed-in player whose 1h Google token has expired falls back to the browser counter (kept in sync with the server balance) until they sign in again. Each signed-in launch adds one Google → Supabase token exchange. Direct links, in-game "play again" and coinchapp/Tranquil rematches cost nothing.
+Alternatives_Rejected: Mandatory sign-in (owner declined). Per-match cost inside every game (large cross-app change, owner declined). Rolling 24 h window (owner chose midnight).

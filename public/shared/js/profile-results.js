@@ -95,9 +95,12 @@
     }
   }
 
-  async function openWithProfileCode(href, newTab) {
+  // `openedTab`: a tab the caller already opened during the click (so popup
+  // blockers allow it); it is pointed at the game instead of opening another.
+  async function openWithProfileCode(href, newTab, openedTab) {
     const target = await hrefWithLaunchCode(href);
-    if (newTab) window.open(target, "_blank", "noopener,noreferrer");
+    if (openedTab) openedTab.location.href = target;
+    else if (newTab) window.open(target, "_blank", "noopener,noreferrer");
     else window.location.assign(target);
   }
 

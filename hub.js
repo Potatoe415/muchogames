@@ -12,6 +12,12 @@ import {
   visibleGames
 } from "./hub-catalog.js";
 import {
+  initCoins,
+  renderCoinBadge,
+  showOutOfCoins,
+  spendCoin
+} from "./hub-coins.js";
+import {
   createFavoriteButton,
   recordRecentGame,
   renderShelf
@@ -77,6 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
   renderForceRefreshButton();
   renderFeedbackButton();
   openFeedbackFromUrl();
+  refreshCoins();
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) refreshCoins();
+  });
   initAuthWidget();
   initializeDashboard();
   setupHubShareButton();
@@ -236,9 +246,20 @@ function selectLang(lang) {
   renderMyGamesShelf();
   renderPlayerFilterBar();
   renderGames();
+  renderCoins();
   refreshAuthWidget();
   const feedbackButton = document.getElementById("hub-feedback-button");
   if (feedbackButton) feedbackButton.textContent = FEEDBACK_LABELS[lang];
+}
+
+function renderCoins() {
+  renderCoinBadge(document.getElementById("hub-coins"), state.lang);
+}
+
+// Shows the browser count at once, then the server balance when it arrives.
+function refreshCoins() {
+  initCoins().finally(renderCoins);
+  renderCoins();
 }
 
 function renderHubAnnouncement() {
@@ -487,20 +508,15 @@ function createGameTile(game) {
 }
 
 // Every way of launching a game (grid tile, "My games" shelf) goes through
-// here: same URL params, launch tracking, recents, and profile hand-off.
+// here: same URL params, daily coin, launch tracking, recents, and profile
+// hand-off.
 function createLaunchAnchor(game) {
   const anchor = document.createElement("a");
   anchor.href = determineTargetUrl(game);
   anchor.addEventListener("click", (event) => {
-    trackGameLaunch(game.id);
-    recordRecentGame(game.id);
-    const bridge = window.MuchogamesProfileResults;
-    if (!bridge?.isProfileAppLaunch(anchor.href) || !bridge.readLiveIdToken())
-      return;
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
-      return;
     event.preventDefault();
-    bridge.openWithProfileCode(anchor.href, anchor.target === "_blank");
+    const newTab = anchor.target === "_blank" || event.metaKey || event.ctrlKey;
+    launchGame(game, anchor.href, newTab);
   });
 
   if (isExternalLaunch(game.launch) && !game.sameTab) {
@@ -509,6 +525,49 @@ function createLaunchAnchor(game) {
   }
 
   return anchor;
+}
+
+let launchInProgress = false;
+
+// A new-tab launch opens its tab right away, while the click still counts as
+// a user gesture: popup blockers would refuse a window.open made after the
+// coin round trip. The tab is closed again if the player is out of coins.
+async function launchGame(game, href, newTab) {
+  if (launchInProgress) return;
+  launchInProgress = true;
+  const tab = newTab ? window.open("about:blank", "_blank") : null;
+  if (tab) tab.opener = null;
+  try {
+    const allowed = await spendCoin();
+    renderCoins();
+    if (!allowed) {
+      tab?.close();
+      showOutOfCoins(state.lang);
+      return;
+    }
+    trackGameLaunch(game.id);
+    recordRecentGame(game.id);
+    openGame(href, newTab, tab);
+  } finally {
+    launchInProgress = false;
+  }
+}
+
+function openGame(href, newTab, tab) {
+  const bridge = window.MuchogamesProfileResults;
+  if (bridge?.isProfileAppLaunch(href) && bridge.readLiveIdToken()) {
+    bridge.openWithProfileCode(href, newTab, tab);
+    return;
+  }
+  if (tab) {
+    tab.location.href = href;
+    return;
+  }
+  if (newTab) {
+    window.open(href, "_blank", "noopener,noreferrer");
+    return;
+  }
+  window.location.assign(href);
 }
 
 function attachThumbnailFallback(img) {

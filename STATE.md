@@ -13,7 +13,7 @@ Context:
 - Relevant_Decisions: 0040–0044 (coinchapp 0070)
 
 Next:
-- Owner: sign in on `/admin` to confirm access; delete `ADMIN_PASSWORD` from Vercel.
+- Owner: run `0007_coins.sql`; sign in on `/admin` to confirm access; delete `ADMIN_PASSWORD` from Vercel.
 - Then live-check each phase (BACKLOG Now), and delete the roadmap task file.
 - Owner to provide `players` / `duration` for the untagged games.
 - Still open: domain rewrite for `muchogames.win/<jeu>`; Tranquil Vercel repoint.
@@ -26,6 +26,7 @@ Blockers:
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
+- 2026-10-02 Daily play coins: 10/day, one per hub launch, midnight Paris reset, admin unlimited (decision 0046). Needs `0007_coins.sql` for signed-in players.
 - 2026-10-02 Yatzy room routes merged into one function via `vercel.json` rewrites (decision 0045): 7/12 functions.
 - 2026-10-02 `docs/PRODUCT.md`, `ARCHITECTURE.md`, `SECURITY.md` aligned with the roadmap (owner confirmed).
 - 2026-10-02 "Report a problem" everywhere: wordplayer reports carry `?game=`; coinchapp + Tranquil settings link to the hub's `?feedback=<gameId>`.

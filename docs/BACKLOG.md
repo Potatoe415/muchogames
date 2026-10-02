@@ -4,6 +4,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] **User**: run `supabase/migrations/0007_coins.sql` in the Supabase SQL editor of `multigames-db` (daily coins for signed-in players). Then launch a game signed in and check the badge drops server-side (reload keeps the count).
 - [ ] **Security**: rotate the Vercel token that was pasted in chat earlier, once `tranquil`'s Vercel repoint (below) is also done.
 - [ ] **User**: delete the `Potatoe415/coinchapp` GitHub repo (Settings → Danger Zone → Delete). `Potatoe415/tranquil` stays untouched until its own repoint (below) is done.
 - [ ] **User, optional**: `delete from public.games where room_code = 'JQW';` in Supabase, or let the 48h TTL cron handle it.
