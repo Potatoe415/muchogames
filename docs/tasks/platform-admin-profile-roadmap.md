@@ -1,7 +1,7 @@
 # Task: platform-admin-profile-roadmap
 
 Level: L2
-Status: Blocked — all six phases shipped in code; live verification waits on the owner running migrations 0004–0006 and setting `ADMIN_USER_IDS` (see `docs/BACKLOG.md`). Delete this file once those checks pass.
+Status: Blocked — all six phases shipped in code; migrations 0004–0006 applied 2026-10-02; live verification waits on the owner setting `ADMIN_USER_IDS` (see `docs/BACKLOG.md`). Delete this file once those checks pass.
 Goal: Turn `/admin` into an owner-only back-office, give `/profile` per-game stats and privacy controls, and make the hub faster to use.
 Scope: hub (`index.html`, `hub.js`, `auth.js`), `public/admin/`, `public/profile/`, `api/admin/`, `api/profile/`, new `supabase/migrations/*`; phase 3 also touches `apps/coinchapp/lib/server/profileLink.ts` and `apps/tranquil/api/_lib/profileLink.ts`.
 Do_Not_Touch: game rules/engines; other games' folders unless a phase names them.

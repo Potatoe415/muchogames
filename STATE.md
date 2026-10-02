@@ -14,7 +14,6 @@ Context:
 
 Next:
 - Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`.
-- Owner: run in order in the Supabase SQL editor of `multigames-db`: `0004_feedback.sql`, `0005_game_stats.sql`, `0006_hub_settings.sql` (the connector cannot see that project).
 - Then live-check each phase (BACKLOG Now), and delete the roadmap task file.
 - Owner to provide `players` / `duration` for the untagged games.
 - Still open: domain rewrite for `muchogames.win/<jeu>`; Tranquil Vercel repoint.
@@ -23,7 +22,7 @@ Open_Questions:
 - Should GameBoy and Easy Frog also live under `muchogames.win/<jeu>`, or only the games in this repo?
 
 Blockers:
-- Live verification of phases 1–6 needs `ADMIN_USER_IDS` and migrations 0004–0006.
+- `/admin` is locked for everyone until `ADMIN_USER_IDS` is set on Vercel (only `ADMIN_PASSWORD` exists, Production). Migrations 0004–0006 are applied.
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
