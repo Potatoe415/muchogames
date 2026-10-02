@@ -22,6 +22,7 @@ export default [
       "hub.js",
       "auth.js",
       "auth-admin.js",
+      "hub-catalog.js",
       "hub-shelf.js",
       "hub-tags.js",
       "version.js",

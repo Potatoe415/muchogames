@@ -8,6 +8,11 @@ import {
   signInWithIdToken
 } from "./admin-auth.js";
 import {
+  hideCatalogEditor,
+  initCatalogEditor,
+  loadCatalogEditor
+} from "./admin-catalog.js";
+import {
   hideFeedbackInbox,
   initFeedbackInbox,
   loadFeedbackInbox
@@ -50,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     titleFor: (gameId) => titlesByGameId.get(gameId) || gameId,
     onError: handleFailure
   });
+  initCatalogEditor({ onError: handleFailure });
 
   const storedToken = readStoredToken();
   const hubIdToken = readHubIdToken();
@@ -82,6 +88,7 @@ async function signIn(idToken, { quiet = false } = {}) {
 function showLogin() {
   document.getElementById("admin-dashboard").hidden = true;
   hideFeedbackInbox();
+  hideCatalogEditor();
   document.getElementById("admin-login").hidden = false;
   renderGoogleSignIn(document.getElementById("admin-google-button"), signIn);
 }
@@ -106,6 +113,7 @@ async function loadStats(token) {
     await loadGameTitles();
     render(stats);
     await loadFeedbackInbox(token);
+    await loadCatalogEditor(token, gamesList);
   } catch (error) {
     handleFailure(error);
   }

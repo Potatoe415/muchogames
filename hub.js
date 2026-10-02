@@ -5,6 +5,13 @@ import {
   refreshAuthWidget
 } from "./auth.js";
 import {
+  createNewBadge,
+  fetchHubSettings,
+  pinnedIds,
+  renderAnnouncement,
+  visibleGames
+} from "./hub-catalog.js";
+import {
   createFavoriteButton,
   recordRecentGame,
   renderShelf
@@ -59,6 +66,7 @@ const SWIPE_THRESHOLD_PX = 50;
 
 const state = {
   games: [],
+  settings: null,
   category: "cartesdes",
   playerFilter: "any",
   lang: readStoredLang()
@@ -162,6 +170,7 @@ async function initializeDashboard() {
   }
 
   try {
+    const settingsRequest = fetchHubSettings();
     const response = await fetch(CONFIG_URL);
 
     if (!response.ok) {
@@ -171,9 +180,11 @@ async function initializeDashboard() {
     }
 
     state.games = await response.json();
+    state.settings = await settingsRequest;
     persistLang(state.lang);
     renderLangSwitcher();
     renderCategoryTabs();
+    renderHubAnnouncement();
     renderMyGamesShelf();
     renderPlayerFilterBar();
     renderGames();
@@ -207,6 +218,7 @@ function selectLang(lang) {
   persistLang(lang);
   renderLangSwitcher();
   renderCategoryTabs();
+  renderHubAnnouncement();
   renderMyGamesShelf();
   renderPlayerFilterBar();
   renderGames();
@@ -215,10 +227,18 @@ function selectLang(lang) {
   if (feedbackButton) feedbackButton.textContent = FEEDBACK_LABELS[lang];
 }
 
+function renderHubAnnouncement() {
+  renderAnnouncement(
+    document.getElementById("hub-announcement"),
+    state.settings,
+    state.lang
+  );
+}
+
 function renderMyGamesShelf() {
   renderShelf(
     document.getElementById("hub-shelf"),
-    state.games,
+    visibleGames(state.games, state.settings),
     state.lang,
     createLaunchAnchor
   );
@@ -297,10 +317,11 @@ function renderGames(direction) {
   const gridElement = document.getElementById(GRID_ID);
 
   const applyContent = () => {
+    const games = visibleGames(state.games, state.settings);
     const gamesInCategory = (
       state.category === "tous"
-        ? state.games
-        : state.games.filter((game) => game.category === state.category)
+        ? games
+        : games.filter((game) => game.category === state.category)
     ).filter((game) => matchesPlayerFilter(game, state.playerFilter));
 
     gridElement.innerHTML = "";
@@ -400,10 +421,11 @@ function setupSwipeNavigation() {
 }
 
 function sortWithPinnedFirst(games) {
-  const pinned = PINNED_GAME_IDS.map((id) =>
-    games.find((game) => game.id === id)
-  ).filter(Boolean);
-  const rest = games.filter((game) => !PINNED_GAME_IDS.includes(game.id));
+  const pinnedOrder = pinnedIds(state.settings, PINNED_GAME_IDS);
+  const pinned = pinnedOrder
+    .map((id) => games.find((game) => game.id === id))
+    .filter(Boolean);
+  const rest = games.filter((game) => !pinnedOrder.includes(game.id));
   return [...pinned, ...rest];
 }
 
@@ -444,6 +466,8 @@ function createGameTile(game) {
   if (tags) title.appendChild(tags);
 
   media.append(img, overlay, title);
+  const badge = createNewBadge(game, state.settings, state.lang);
+  if (badge) media.appendChild(badge);
   anchor.appendChild(media);
   return anchor;
 }

@@ -183,6 +183,13 @@ Writes: only through `record_muchogames_game_result(p_id, p_game_id, p_wins, p_l
 Access_Rules: RLS on, zero policies. Read only by `api/profile` `game-stats` for the caller's own profile.
 Sensitive_Data: None beyond the profile link.
 
+### Entity: HubSettings
+
+Purpose: Owner-edited overlay on `public/hub-config.json`: hidden, pinned (ordered) and "new" game ids, plus a FR/EN/ES announcement banner.
+Storage: `public.muchogames_hub_settings` (`supabase/migrations/0006_hub_settings.sql`), a single row (`id = 1`) with one `settings` jsonb: `{ hidden: string[], pinned: string[], new: string[], announcement: { active, fr, en, es } }` (announcement texts ≤ 280 chars, ≤ 64 ids per list). Seeded with the previously hard-coded pinned order. Shape enforced by `api/_lib/hubSettings.js` on read and write.
+Access_Rules: RLS on, zero policies. Public read through `GET /api/hub-settings` (CDN-cached 60 s); write only through `POST /api/admin` `hub-settings-update` behind the admin allowlist. The hub falls back to the static catalog when the read fails.
+Sensitive_Data: None.
+
 ### Entity: Feedback
 
 Purpose: A bug report or idea sent by any visitor, triaged by the admin.
@@ -265,3 +272,9 @@ Impact: One row per (profile, game), not per match, so no match history. Results
 Change: `HubGameEntry` gains optional `players` and `duration`. Two new browser-only `localStorage` keys: `muchogames-favorite-games` and `muchogames-recent-games` (ids, max 8), read by the hub's "My games" shelf (`hub-shelf.js`).
 Reason: Roadmap phase 4.
 Impact: No server data. Only Coinche, Bouilla, Président, la Bataille Corse and Yatzy carry `players` so far.
+
+## 2026-10-02 - Hub settings (`muchogames_hub_settings`)
+
+Change: Added the `HubSettings` entity, `GET /api/hub-settings` (11 of 12 functions) and admin actions `hub-settings-get` / `hub-settings-update`. New browser key `muchogames-dismissed-announcement` (last dismissed banner text).
+Reason: Roadmap phase 5. See `docs/decisions/0043-hub-settings-overlay-served-by-a-cached-function.md`.
+Impact: `hub.js`'s `PINNED_GAME_IDS` is now only the fallback when settings cannot be read.

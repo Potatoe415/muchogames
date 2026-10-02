@@ -48,6 +48,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0040 | 2026-10-02 | Admin access by allowlisted Google account (replaces the shared password) | Accepted |
 | 0041 | 2026-10-02 | Anonymous in-app feedback inbox (`muchogames_feedback`) | Accepted |
 | 0042 | 2026-10-02 | Per-game results: one row per profile and game (`muchogames_game_stats`) | Accepted |
+| 0043 | 2026-10-02 | Hub settings overlay served by a cached function (`muchogames_hub_settings`) | Accepted |
 
 ## When to log a decision
 Any of:

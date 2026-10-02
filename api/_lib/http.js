@@ -13,6 +13,7 @@ const ERROR_STATUS = {
   "invalid-action": 400,
   "invalid-feedback": 400,
   "feedback-not-found": 404,
+  "invalid-settings": 400,
   unauthorized: 401,
   forbidden: 403,
   "too-many-requests": 429,

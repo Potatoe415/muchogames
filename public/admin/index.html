@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/admin/admin.css" />
     <link rel="stylesheet" href="/admin/admin-feedback.css" />
+    <link rel="stylesheet" href="/admin/admin-catalog.css" />
   </head>
   <body>
     <main class="admin-shell">
@@ -216,6 +217,84 @@
         >
           No reports here.
         </p>
+      </section>
+
+      <section
+        class="admin-card admin-catalog"
+        id="admin-catalog"
+        data-id="admin-catalog-section"
+        hidden
+      >
+        <h2 class="admin-section-title">Hub catalog</h2>
+        <p
+          class="admin-catalog-status"
+          id="admin-catalog-status"
+          data-id="admin-catalog-status"
+          role="status"
+        ></p>
+        <div id="admin-catalog-body" data-id="admin-catalog-body">
+          <div
+            class="admin-announcement-editor"
+            data-id="admin-announcement-editor"
+          >
+            <label class="admin-check">
+              <input
+                type="checkbox"
+                id="admin-announcement-active"
+                data-id="admin-announcement-active"
+              />
+              Show the announcement banner
+            </label>
+            <label class="admin-announcement-field">
+              FR
+              <textarea
+                id="admin-announcement-fr"
+                data-id="admin-announcement-fr"
+                rows="2"
+                maxlength="280"
+              ></textarea>
+            </label>
+            <label class="admin-announcement-field">
+              EN
+              <textarea
+                id="admin-announcement-en"
+                data-id="admin-announcement-en"
+                rows="2"
+                maxlength="280"
+              ></textarea>
+            </label>
+            <label class="admin-announcement-field">
+              ES
+              <textarea
+                id="admin-announcement-es"
+                data-id="admin-announcement-es"
+                rows="2"
+                maxlength="280"
+              ></textarea>
+            </label>
+          </div>
+          <table class="admin-catalog-table" data-id="admin-catalog-table">
+            <thead>
+              <tr>
+                <th scope="col">Game</th>
+                <th scope="col">Hidden</th>
+                <th scope="col">Pinned</th>
+                <th scope="col">New</th>
+              </tr>
+            </thead>
+            <tbody id="admin-catalog-rows"></tbody>
+          </table>
+          <div class="admin-catalog-actions">
+            <button
+              class="admin-button"
+              type="button"
+              id="admin-catalog-save"
+              data-id="admin-catalog-save-button"
+            >
+              Save
+            </button>
+          </div>
+        </div>
       </section>
 
       <a class="admin-back" href="/" data-id="admin-back-to-hub"

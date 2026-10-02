@@ -8,6 +8,10 @@ import {
 } from "../_lib/http.js";
 import { clientKey, isRateLimited } from "../_lib/rateLimit.js";
 import { handleFeedbackList, handleFeedbackUpdate } from "./_feedback.js";
+import {
+  handleHubSettingsGet,
+  handleHubSettingsUpdate
+} from "./_hubSettings.js";
 import { handleStats } from "./_stats.js";
 
 // One Serverless Function fanning out on `action`, like api/profile/index.js:
@@ -16,13 +20,17 @@ const THROTTLES = {
   login: { maxHits: 10, windowMs: 600000 },
   stats: { maxHits: 60, windowMs: 60000 },
   "feedback-list": { maxHits: 60, windowMs: 60000 },
-  "feedback-update": { maxHits: 60, windowMs: 60000 }
+  "feedback-update": { maxHits: 60, windowMs: 60000 },
+  "hub-settings-get": { maxHits: 60, windowMs: 60000 },
+  "hub-settings-update": { maxHits: 30, windowMs: 60000 }
 };
 
 const ADMIN_ACTIONS = {
   stats: handleStats,
   "feedback-list": handleFeedbackList,
-  "feedback-update": handleFeedbackUpdate
+  "feedback-update": handleFeedbackUpdate,
+  "hub-settings-get": handleHubSettingsGet,
+  "hub-settings-update": handleHubSettingsUpdate
 };
 
 async function handler(req, res) {
