@@ -21,12 +21,12 @@ Plan:
 Acceptance_Criteria:
 - [x] Phase 1 (code + local verification; live check pending `ADMIN_USER_IDS`)
 - [x] Phase 2 (code + local verification; live check pending the owner running `0004_feedback.sql`)
-- [ ] Phase 3
+- [x] Phase 3 (code + tests + local verification; live check pending `0005_game_stats.sql`). Scoped to one row per profile and game, no per-match history (decision 0042).
 - [ ] Phase 4
 - [ ] Phase 5
 - [ ] Phase 6
 Security_Checklist: per phase, `docs/SECURITY.md` "Checklist for every new or changed endpoint or action".
-Related_Decisions: 0040, 0041
+Related_Decisions: 0040, 0041, 0042 (coinchapp 0070)
 Notes:
 - Phase 1: `/admin` login returns the Supabase access token from the Google exchange (1h); every admin action re-resolves it with `auth.getUser` and re-checks the allowlist. A non-allowlisted sign-in gets a 403 that shows its own user id, which is how the owner finds the value for `ADMIN_USER_IDS`.
 - The Supabase connector is signed in to the `nodali` organization and cannot see `multigames-db`: migrations are run by the owner in the Supabase SQL editor unless the connector is re-authenticated.

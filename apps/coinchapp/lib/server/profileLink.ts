@@ -1,5 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
+import type { CoinchappGame } from "@/lib/profileGames";
 import { getServiceClient } from "@/lib/supabase/server";
 
 const COOKIE = "mg-profile";
@@ -63,9 +64,28 @@ async function consumeLaunchCode(code: string): Promise<string | null> {
   return String(data.profile_id);
 }
 
-async function addStats(profileId: string, wins: number, losses: number): Promise<boolean> {
+// PostgREST "function not found": the hub's 0005_game_stats.sql has not run
+// yet, so fall back to the totals-only function from 0003.
+const MISSING_FUNCTION = "PGRST202";
+
+async function addStats(
+  profileId: string,
+  wins: number,
+  losses: number,
+  game: CoinchappGame | null,
+): Promise<boolean> {
   if (wins === 0 && losses === 0) return true;
-  const { data, error } = await getServiceClient().rpc("increment_muchogames_profile_stats", {
+  const client = getServiceClient();
+  if (game) {
+    const { data, error } = await client.rpc("record_muchogames_game_result", {
+      p_id: profileId,
+      p_game_id: game,
+      p_wins: wins,
+      p_losses: losses,
+    });
+    if (error?.code !== MISSING_FUNCTION) return !error && Boolean(data);
+  }
+  const { data, error } = await client.rpc("increment_muchogames_profile_stats", {
     p_id: profileId,
     p_wins: wins,
     p_losses: losses,
@@ -73,15 +93,17 @@ async function addStats(profileId: string, wins: number, losses: number): Promis
   return !error && Boolean(data);
 }
 
-/** Consumes a hub launch code when present, then adds the delta for that profile. */
+/** Consumes a hub launch code when present, then adds the delta for that
+ *  profile (and that game's row on the hub profile when `game` is given). */
 export async function linkAndAddStats(
   code: string | null,
   wins: number,
   losses: number,
+  game: CoinchappGame | null = null,
 ): Promise<boolean> {
   const fromCode = code ? await consumeLaunchCode(code) : null;
   if (fromCode) await writeCookie(fromCode);
   const profileId = fromCode ?? (await readLinkedProfileId());
   if (!profileId) return false;
-  return addStats(profileId, clampStat(wins), clampStat(losses));
+  return addStats(profileId, clampStat(wins), clampStat(losses), game);
 }

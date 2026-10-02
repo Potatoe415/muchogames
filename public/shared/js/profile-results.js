@@ -70,7 +70,8 @@
     }
   }
 
-  function recordSharedResult(won) {
+  // `details` = { gameId, score }: optional, feeds the per-game breakdown on /profile.
+  function recordSharedResult(won, details) {
     const idToken = readLiveIdToken();
     if (!idToken) return;
     fetch("/api/profile", {
@@ -79,7 +80,9 @@
       body: JSON.stringify({
         action: "record-result",
         idToken,
-        won: Boolean(won)
+        won: Boolean(won),
+        gameId: details?.gameId,
+        score: details?.score
       })
     }).catch(() => {});
   }

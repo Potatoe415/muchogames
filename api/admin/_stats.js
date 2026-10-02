@@ -37,8 +37,27 @@ export async function handleStats(res, body) {
     totalLaunches: data.length,
     ranking: rankByGame(data),
     dailyTrend: buildDailyTrend(data, start, days),
-    dailyTrendByGame: buildDailyTrendByGame(data, start, days)
+    dailyTrendByGame: buildDailyTrendByGame(data, start, days),
+    community: await readCommunityTotals(start)
   });
+}
+
+// Signed-in players and the results they have recorded (all time). A match
+// between two signed-in players counts once per player. Null on failure so
+// the launch stats still render.
+async function readCommunityTotals(start) {
+  const { data, error } = await getServiceClient()
+    .from("muchogames_profiles")
+    .select("wins, losses, created_at")
+    .limit(MAX_ROWS);
+
+  if (error) return null;
+
+  return {
+    players: data.length,
+    newPlayers: data.filter((row) => new Date(row.created_at) >= start).length,
+    results: data.reduce((sum, row) => sum + row.wins + row.losses, 0)
+  };
 }
 
 function rankByGame(rows) {

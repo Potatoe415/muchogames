@@ -62,9 +62,24 @@ async function consumeLaunchCode(code: string): Promise<string | null> {
   return String(data.profile_id);
 }
 
+// Hub game id (root repo `public/hub-config.json`), for the hub profile's
+// per-game breakdown.
+const HUB_GAME_ID = 'tranquil';
+// PostgREST "function not found": the hub's 0005_game_stats.sql has not run
+// yet, so fall back to the totals-only function from 0003.
+const MISSING_FUNCTION = 'PGRST202';
+
 async function addStats(profileId: string, wins: number, losses: number): Promise<boolean> {
   if (wins === 0 && losses === 0) return true;
-  const { data, error } = await getServiceClient().rpc('increment_muchogames_profile_stats', {
+  const client = getServiceClient();
+  const perGame = await client.rpc('record_muchogames_game_result', {
+    p_id: profileId,
+    p_game_id: HUB_GAME_ID,
+    p_wins: wins,
+    p_losses: losses,
+  });
+  if (perGame.error?.code !== MISSING_FUNCTION) return !perGame.error && Boolean(perGame.data);
+  const { data, error } = await client.rpc('increment_muchogames_profile_stats', {
     p_id: profileId,
     p_wins: wins,
     p_losses: losses,

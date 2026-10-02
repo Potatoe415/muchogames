@@ -173,6 +173,14 @@ Purpose: One name, avatar, and combined win/loss total for a Google-signed-in pl
 Storage: `public.muchogames_profiles` (`supabase/migrations/0003_profiles.sql`). `id` is the Supabase Auth user id from the Google sign-in. Wins and losses increment through `increment_muchogames_profile_stats` (service-role only).
 Sensitive_Data: The Google account is verified server-side. The row stores the chosen display name and avatar, not the email.
 
+### Entity: GameStats
+
+Purpose: Wins/losses per signed-in profile and game, for the per-game breakdown on `/profile`.
+Storage: `public.muchogames_game_stats` (`supabase/migrations/0005_game_stats.sql`). Primary key (`profile_id`, `game_id`); `wins`, `losses`, optional `best_score` (highest seen, Yatzy sends its final total), `last_played_at`. Cascades on profile delete.
+Writes: only through `record_muchogames_game_result(p_id, p_game_id, p_wins, p_losses, p_score)` (service-role only), which also increments `muchogames_profiles` totals in the same transaction. Callers: `api/profile` `record-result` (Yatzy, `gameId: "yatsy"`), coinchapp `lib/server/profileLink.ts` (its four game ids), Tranquil `api/_lib/profileLink.ts` (`tranquil`). All three fall back to `increment_muchogames_profile_stats` on PostgREST `PGRST202` (function missing).
+Access_Rules: RLS on, zero policies. Read only by `api/profile` `game-stats` for the caller's own profile.
+Sensitive_Data: None beyond the profile link.
+
 ### Entity: Feedback
 
 Purpose: A bug report or idea sent by any visitor, triaged by the admin.
@@ -243,3 +251,9 @@ Impact: `ADMIN_PASSWORD` is no longer read and can be deleted from Vercel. `much
 Change: Added the `Feedback` entity (`supabase/migrations/0004_feedback.sql`), written by `api/feedback.js`, read and triaged through `api/admin/_feedback.js`.
 Reason: Replace the external bug-tracker Google Doc with an in-app report button and an admin inbox. See `docs/decisions/0041-anonymous-feedback-inbox.md`.
 Impact: Second long-lived, publicly writable table after `muchogames_events`; bounded by the per-IP throttle and the 2000-char message cap. Functions: 10 of 12.
+
+## 2026-10-02 - Per-game results (`muchogames_game_stats`)
+
+Change: Added the `GameStats` entity and `record_muchogames_game_result` (`supabase/migrations/0005_game_stats.sql`). Yatzy, coinchapp and Tranquil now attribute results to a game; `/profile` shows the breakdown; `/admin` shows signed-in players and recorded results.
+Reason: Roadmap phase 3. See `docs/decisions/0042-per-game-results-one-row-per-profile-and-game.md`.
+Impact: One row per (profile, game), not per match, so no match history. Results recorded before this change stay in the totals only.

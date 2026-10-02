@@ -2,8 +2,8 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Roadmap phases 1–2 shipped in code. `/admin` = Google sign-in + `ADMIN_USER_IDS`. "Report a problem" on the hub, `/profile` and the six in-repo games feeds `muchogames_feedback`, triaged in the `/admin` Feedback card. Live use waits on the owner: `ADMIN_USER_IDS` on Vercel, and running `0004_feedback.sql`.
-Focus: Roadmap `docs/tasks/platform-admin-profile-roadmap.md` — next is phase 3 (per-game results).
+Status: Roadmap phases 1–3 shipped in code: admin by Google, feedback inbox, per-game results (`muchogames_game_stats`, Yatzy + coinchapp + Tranquil, breakdown on `/profile`, player counts on `/admin`). Owner runs all SQL at the end (0004, 0005, …); every feature degrades cleanly until then.
+Focus: Roadmap `docs/tasks/platform-admin-profile-roadmap.md` — next is phase 4 (hub recents/favorites/tags).
 Level: L2.
 
 Context:
@@ -13,8 +13,8 @@ Context:
 - Relevant_Decisions: 0040 (admin by Google), 0041 (feedback inbox), 0039 (one function per API area)
 
 Next:
-- Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`; run `0004_feedback.sql` in the Supabase SQL editor.
-- Phase 3: `muchogames_results` + atomic record function; touches `apps/coinchapp` and `apps/tranquil` profile links. Show SQL first; the Supabase connector cannot see `multigames-db` (it is on the `nodali` org).
+- Owner: set `ADMIN_USER_IDS` (Production + Preview), redeploy, delete `ADMIN_PASSWORD`; at the end, run migrations 0004+ in order in the Supabase SQL editor (connector cannot see `multigames-db`).
+- Phase 4: hub recently played + favorites (localStorage), `players`/`duration` tags in `hub-config.json`, player-count filter.
 - Owner to confirm proposed `docs/PRODUCT.md` / `ARCHITECTURE.md` / `SECURITY.md` wording (admin by Google, public feedback endpoint).
 - Still open: domain rewrite for `muchogames.win/<jeu>`; live checks of `/profile` wins/losses.
 
@@ -25,5 +25,6 @@ Blockers:
 - Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
 
 Recent_Changes:
+- 2026-10-02 Per-game results (decision 0042, coinchapp 0070); Yatzy offline cache v41.
 - 2026-10-02 Feedback inbox: `api/feedback.js`, shared report dialog, `/admin` Feedback card; Yatzy offline cache v40 (10/12 functions).
 - 2026-10-02 Admin by allowlisted Google account; `api/admin/{login,stats}.js` merged into `api/admin/index.js`.

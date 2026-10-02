@@ -33,7 +33,7 @@ export function PresidentRoundOverlay({
   const result = view.lastRoundResult;
   const finished = view.phase === "finished";
   const iAmWinner = finished && !!view.winners?.includes(view.mySeat);
-  useRecordMatchResult(gv.gameId, finished, iAmWinner);
+  useRecordMatchResult(gv.gameId, finished, iAmWinner, "president");
 
   if (!visible) return null;
 

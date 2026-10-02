@@ -167,10 +167,20 @@ function render(stats) {
   document.getElementById("admin-range-caption").textContent =
     RANGE_CAPTIONS[stats.range] || "";
   markActiveRange(stats.range);
+  renderCommunity(stats.community, RANGE_CAPTIONS[stats.range] || "");
 
   lastStats = stats;
   renderTrend();
   renderRanking(stats.ranking);
+}
+
+function renderCommunity(community, rangeCaption) {
+  document.getElementById("admin-players-total").textContent = community
+    ? community.players
+    : "—";
+  document.getElementById("admin-community-caption").textContent = community
+    ? `+${community.newPlayers} ${rangeCaption} · ${community.results} results recorded`
+    : "";
 }
 
 function renderTrend() {

@@ -2,59 +2,93 @@
 
 import { syncSharedMatchResults } from "@/lib/server/actions-profile";
 import {
+  getMatchResultsByGame,
   getMatchResultStats,
-  pendingSharedDelta,
+  planSharedSync,
+  sanitizeByGame,
+  sanitizeStats,
   type MatchResultStats,
+  type ResultsByGame,
+  type SharedSyncBatch,
 } from "./matchResultStats";
 
 const SYNCED_KEY = "coinchapp-profile-synced";
+const SYNCED_BY_GAME_KEY = "coinchapp-profile-synced-by-game";
 
-function readSynced(): MatchResultStats {
+function readJson(key: string): unknown {
   try {
-    const parsed = JSON.parse(localStorage.getItem(SYNCED_KEY) || "{}");
-    return sanitize(parsed?.wins, parsed?.losses);
+    return JSON.parse(localStorage.getItem(key) || "{}");
   } catch {
-    return { wins: 0, losses: 0 };
+    return {};
   }
 }
 
-function writeSynced(stats: MatchResultStats): void {
+function writeJson(key: string, value: unknown): void {
   try {
-    localStorage.setItem(SYNCED_KEY, JSON.stringify(stats));
+    localStorage.setItem(key, JSON.stringify(value));
   } catch {
     // Storage unavailable — the next flush retries the same delta.
   }
 }
 
-function sanitize(wins: unknown, losses: unknown): MatchResultStats {
-  const w = Number(wins);
-  const l = Number(losses);
-  return {
-    wins: Number.isFinite(w) && w > 0 ? Math.floor(w) : 0,
-    losses: Number.isFinite(l) && l > 0 ? Math.floor(l) : 0,
+function readSynced(): MatchResultStats {
+  return sanitizeStats(readJson(SYNCED_KEY));
+}
+
+function readSyncedByGame(): ResultsByGame {
+  return sanitizeByGame(readJson(SYNCED_BY_GAME_KEY));
+}
+
+function markSynced(batch: SharedSyncBatch): void {
+  const total = readSynced();
+  writeJson(SYNCED_KEY, {
+    wins: total.wins + batch.wins,
+    losses: total.losses + batch.losses,
+  });
+  if (!batch.game) return;
+  const byGame = readSyncedByGame();
+  const current = byGame[batch.game] ?? { wins: 0, losses: 0 };
+  byGame[batch.game] = {
+    wins: current.wins + batch.wins,
+    losses: current.losses + batch.losses,
   };
+  writeJson(SYNCED_BY_GAME_KEY, byGame);
 }
 
 let tail: Promise<void> = Promise.resolve();
 
-/** Pushes local wins/losses that are not on the shared profile yet.
- *  Pass the hub `profileCode` once, on the landing page. */
+/** Pushes local wins/losses that are not on the shared profile yet, one
+ *  batch per game. Pass the hub `profileCode` once, on the landing page. */
 export function flushSharedMatchResults(code?: string | null): void {
   const job = tail.then(() => flushOnce(code ?? null));
   tail = job.catch(() => undefined);
 }
 
 async function flushOnce(code: string | null): Promise<void> {
-  const delta = pendingSharedDelta(getMatchResultStats(), readSynced());
-  if (!code && delta.wins === 0 && delta.losses === 0) return;
-  const result = await syncSharedMatchResults(code, delta.wins, delta.losses);
-  if (code) stripProfileCode();
-  if (!result.linked) return;
-  const current = readSynced();
-  writeSynced({
-    wins: current.wins + delta.wins,
-    losses: current.losses + delta.losses,
-  });
+  const batches = planSharedSync(
+    getMatchResultStats(),
+    readSynced(),
+    getMatchResultsByGame(),
+    readSyncedByGame(),
+  );
+  if (!code && batches.length === 0) return;
+  // A code with nothing to send still has to be claimed to link the browser.
+  const queue = batches.length > 0 ? batches : [{ game: null, wins: 0, losses: 0 }];
+  let pendingCode = code;
+  for (const batch of queue) {
+    const result = await syncSharedMatchResults(
+      pendingCode,
+      batch.wins,
+      batch.losses,
+      batch.game,
+    );
+    if (pendingCode) {
+      stripProfileCode();
+      pendingCode = null;
+    }
+    if (!result.linked) return;
+    markSynced(batch);
+  }
 }
 
 function stripProfileCode(): void {

@@ -965,7 +965,7 @@ function FinishedOverlay({
 }) {
   const { t, locale } = useI18n();
   const iWon = view.winner === gv.mySeat;
-  useRecordMatchResult(gv.gameId, true, iWon);
+  useRecordMatchResult(gv.gameId, true, iWon, "bataillecorse");
   return (
     <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/70 px-6" data-id="bataillecorse-finished-overlay">
       <div className="w-full max-w-xs rounded-2xl bg-[var(--surface)] p-6 text-center shadow-2xl">

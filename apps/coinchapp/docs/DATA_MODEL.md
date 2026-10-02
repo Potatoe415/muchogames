@@ -281,3 +281,9 @@ Impact: In-progress `bataillecorse` rows with an open pile are interpreted under
 Change: No change to `games` / `game_players` / `game_events`. When the hub appends `?profileCode=`, a Server Action consumes `muchogames_launch_codes` (same Supabase project, service role) and stores the resolved profile id in an httpOnly session cookie. Finishing a match in any of the four games also increments `muchogames_profiles.wins` or `losses`. The local `coinchapp-match-results` counter is unchanged.
 Reason: The hub `/profile` page cannot read this app's `localStorage`.
 Impact: A visit with no launch code does not write the shared row. Duel mode still does not record a personal result.
+
+## 2026-10-02 - Per-game results on the hub profile
+
+Change: No change to `games` / `game_players` / `game_events`. Two new `localStorage` keys: `coinchapp-match-results-by-game` (per-game split of the combined counter, never displayed here) and `coinchapp-profile-synced-by-game`. `syncSharedMatchResults` now takes a `game` (`coinche` | `bouilla` | `president` | `bataillecorse`, see `lib/profileGames.ts`) and calls the hub's `record_muchogames_game_result` (root `supabase/migrations/0005_game_stats.sql`), falling back to `increment_muchogames_profile_stats` while that function is missing.
+Reason: The hub `/profile` shows a per-game breakdown. Decision 0070.
+Impact: The combined counter shown in `HomeTopBar` is unchanged. Results recorded before this change sync as one game-less batch (profile total only).

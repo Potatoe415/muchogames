@@ -124,3 +124,9 @@ Impact: Online rooms now persist in Postgres instead of an in-memory `Map`. Loca
 Change: No change to `games` / `game_players` / `game_events`. `POST /api/profile-link` consumes `muchogames_launch_codes` (same Supabase project) and increments `muchogames_profiles` when a hub `?profileCode=` was resolved this session. The local `tranquil-match-results` counter is unchanged.
 Reason: The hub `/profile` page cannot read this app's `localStorage`.
 Impact: A visit with no launch code does not write the shared row.
+
+## 2026-10-02 — Per-game results on the hub profile
+
+Change: No change to this app's tables or client storage. `api/_lib/profileLink.ts` now calls the hub's `record_muchogames_game_result` with game id `tranquil` (root `supabase/migrations/0005_game_stats.sql`), falling back to `increment_muchogames_profile_stats` while that function is missing.
+Reason: The hub `/profile` shows a per-game breakdown (root roadmap phase 3).
+Impact: Same totals as before; the hub additionally keeps a `tranquil` row per linked profile.

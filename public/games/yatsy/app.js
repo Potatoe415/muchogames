@@ -1549,7 +1549,10 @@ function recordGameResultIfNeeded(targetState) {
   if (totals[0] === totals[1]) return;
   const won = totals[localIndex] > totals[localIndex === 0 ? 1 : 0];
   window.PlayerProfile.recordGameResult(won);
-  window.MuchogamesProfileResults?.recordSharedResult(won);
+  window.MuchogamesProfileResults?.recordSharedResult(won, {
+    gameId: "yatsy",
+    score: totals[localIndex]
+  });
 }
 
 function applyWinnerFromScores(targetState) {

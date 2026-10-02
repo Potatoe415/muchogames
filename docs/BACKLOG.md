@@ -12,8 +12,9 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Decide whether/how to bring `apps/tranquil` into the Turborepo/workspace graph (blocked by its own nested npm workspaces).
 - [ ] **User**: set `ADMIN_USER_IDS` on Vercel (Production + Preview) to your Supabase user id, redeploy, then delete `ADMIN_PASSWORD` (no longer read). Find the id by signing in on `/admin`: the refusal message shows it.
 - [ ] Confirm `/admin` Google sign-in → dashboard on the live site, and that the hub account menu shows "Admin" for you only (verified locally with stubbed Google/Supabase so far).
-- [ ] **User**: run `supabase/migrations/0004_feedback.sql` in the Supabase SQL editor of `multigames-db` (until then "Report a problem" fails and `/admin` shows an error under the stats). Then send one report from a game and resolve it on `/admin`.
-- [ ] Roadmap phases 3–6 (per-game results, hub recents/favorites/tags, catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
+- [ ] **User**: run the pending migrations in order in the Supabase SQL editor of `multigames-db`: `0004_feedback.sql`, `0005_game_stats.sql` (later phases add more — see `docs/tasks/platform-admin-profile-roadmap.md`). Then send one report and resolve it on `/admin`; finish one Yatzy and one coinchapp match from the hub and check the per-game rows on `/profile`.
+- [ ] Tranquil's per-game sync only goes live once `tranquil`'s Vercel project is repointed to this repo (see the repoint item above); until then its deployed code is the old one.
+- [ ] Roadmap phases 4–6 (hub recents/favorites/tags, catalog + announcements, privacy + players) — see `docs/tasks/platform-admin-profile-roadmap.md`.
 - [ ] Add the "Report a problem" entry to wordplayer games, coinchapp and Tranquil (only the hub, `/profile` and the six in-repo custom games have it).
 - [ ] Delete the verification row: `delete from public.muchogames_events where game_id = '__verification__';`.
 - [ ] Copy `SUPABASE_URL` to the Preview environment (currently Production-only).

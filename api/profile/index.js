@@ -9,6 +9,12 @@ import { getServiceClient } from "../_lib/supabase.js";
 import { exchangeGoogleIdToken } from "../_lib/googleAuth.js";
 import { isAdminUserId } from "../_lib/adminAuth.js";
 import { toPublicProfile } from "./_shared.js";
+import {
+  handleGameStats,
+  readGameId,
+  readScore,
+  recordGameResult
+} from "./_gameStats.js";
 import { randomBytes } from "node:crypto";
 
 // One Serverless Function fanning out on `action` instead of 5 separate
@@ -19,7 +25,8 @@ const THROTTLES = {
   upsert: { maxHits: 30, windowMs: 60000 },
   "add-results": { maxHits: 10, windowMs: 60000 },
   "launch-code": { maxHits: 20, windowMs: 60000 },
-  "record-result": { maxHits: 30, windowMs: 60000 }
+  "record-result": { maxHits: 30, windowMs: 60000 },
+  "game-stats": { maxHits: 60, windowMs: 60000 }
 };
 
 const MAX_NAME_LENGTH = 40;
@@ -70,6 +77,8 @@ async function handler(req, res) {
       return handleLaunchCode(res, identity);
     case "record-result":
       return handleRecordResult(res, identity, body);
+    case "game-stats":
+      return handleGameStats(res, identity);
   }
 }
 
@@ -212,14 +221,13 @@ async function handleRecordResult(res, identity, body) {
     return;
   }
 
-  const { data, error } = await getServiceClient().rpc(
-    "increment_muchogames_profile_stats",
-    {
-      p_id: identity.userId,
-      p_wins: body.won ? 1 : 0,
-      p_losses: body.won ? 0 : 1
-    }
-  );
+  const { data, error } = await recordGameResult({
+    profileId: identity.userId,
+    gameId: readGameId(body.gameId),
+    wins: body.won ? 1 : 0,
+    losses: body.won ? 0 : 1,
+    score: readScore(body.score)
+  });
 
   if (error) {
     sendError(res, "server-error", error.message);

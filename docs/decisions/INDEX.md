@@ -47,6 +47,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0039 | 2026-09-25 | Consolidate `/api/profile/*` into one Serverless Function | Accepted |
 | 0040 | 2026-10-02 | Admin access by allowlisted Google account (replaces the shared password) | Accepted |
 | 0041 | 2026-10-02 | Anonymous in-app feedback inbox (`muchogames_feedback`) | Accepted |
+| 0042 | 2026-10-02 | Per-game results: one row per profile and game (`muchogames_game_stats`) | Accepted |
 
 ## When to log a decision
 Any of:

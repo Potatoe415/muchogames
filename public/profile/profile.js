@@ -3,6 +3,7 @@
 // follows `bergamots-lang` (same key as the hub); changing it here writes
 // that key so login and the hub keep the chosen language.
 
+import { initGameBreakdown, renderGameBreakdown } from "./profile-games.js";
 import { initLaunchStats } from "./profile-stats.js";
 import {
   initAvatarCrop,
@@ -126,6 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initAvatarUpload();
   initAvatarCrop();
   initLaunchStats(getCopy(), gameResultsOverride());
+  initGameBreakdown(getStoredIdToken(), readStoredLang());
 });
 
 function gameResultsOverride() {
@@ -242,6 +244,7 @@ function selectProfileLang(lang) {
   persistLang(lang);
   applyProfileCopy();
   initLaunchStats(getCopy(), gameResultsOverride());
+  renderGameBreakdown(lang);
 }
 
 function applyProfileCopy() {
