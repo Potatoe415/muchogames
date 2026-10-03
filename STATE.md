@@ -3,7 +3,7 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: Platform common rules (`docs/tasks/platform-common-rules.md`), steps 1–3 of 6 shipped: rules doc + `check:games`, migration `0008_match_coins.sql` (owner to run), `public/shared/js/game-session.js` + `POST /api/match`.
-Focus: Step 4 — wire each in-repo game to `MuchogamesMatch` + the shared chrome `data-id`s, one commit per game.
+Focus: Step 4 — every in-repo game wired except Yatzy (baseline 28: yatsy 8, coinchapp/Tranquil 15, URLs 5).
 Level: L2 (approved 2026-10-03).
 
 Context:
