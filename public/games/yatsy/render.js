@@ -120,6 +120,7 @@ window.YATZY_RENDER = {
     const isBusy = isCreating || isJoining || isRestoring || isWaiting;
     const showOnline = state.splashView === "online" || isBusy;
     renderSettingsRows();
+    renderGameLangSelector();
 
     elements.soloGameButton.classList.toggle("is-hidden", showOnline);
     elements.robotGameButton.classList.toggle("is-hidden", showOnline);
@@ -268,18 +269,24 @@ window.YATZY_RENDER = {
     }
   }
 
+  // Same switcher in the splash and the in-game options panels.
   function renderGameLangSelector() {
-    if (!elements.gameLangSelector) {
-      return;
+    if (elements.splashLanguageTitle) {
+      elements.splashLanguageTitle.textContent = t("splash.language");
     }
+    [elements.gameLangSelector, elements.splashLangSelector]
+      .filter(Boolean)
+      .forEach((selector) => selector.replaceChildren(...createLanguageButtons()));
+  }
 
+  function createLanguageButtons() {
     const languages = [
       { code: "fr", title: t("splash.french") },
       { code: "en", title: t("splash.english") },
       { code: "es", title: t("splash.spanish") }
     ];
 
-    elements.gameLangSelector.replaceChildren(...languages.map((language) => {
+    return languages.map((language) => {
       const button = document.createElement("button");
       button.type = "button";
       button.className = `lang-btn${state.setup.language === language.code ? " active" : ""}`;
@@ -288,7 +295,7 @@ window.YATZY_RENDER = {
       button.title = language.title;
       button.setAttribute("aria-label", language.title);
       return button;
-    }));
+    });
   }
 
   function renderScoreSummary() {

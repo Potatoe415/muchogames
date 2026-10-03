@@ -11,21 +11,25 @@
   <main class="page">
     <div class="app-shell">
       <section class="splash-screen" id="splash-screen" data-id="yatsy-splash-screen" aria-label="Game setup">
-        <a class="splash-nav-btn splash-back-button" id="splash-back-button" href="/" data-id="yatsy-splash-back" aria-label="Go back to game hub" title="Go back to game hub">
+        <a class="splash-nav-btn splash-back-button" id="splash-back-button" href="/" data-id="game-back-button" aria-label="Go back to game hub" title="Go back to game hub">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         </a>
-        <button class="splash-nav-btn" id="settings-button" type="button" data-id="yatsy-splash-settings" aria-label="Game settings" title="Game settings" aria-expanded="false" aria-controls="settings-panel">
+        <button class="splash-nav-btn" id="settings-button" type="button" data-id="game-options-button" aria-label="Game settings" title="Game settings" aria-expanded="false" aria-controls="settings-panel">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="3" />
             <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
           </svg>
         </button>
-        <section class="settings-panel" id="settings-panel" data-id="yatsy-splash-settings-panel" aria-label="Game settings" hidden>
-          <div class="settings-list" id="settings-list"></div>
-          <div class="settings-rules-section" id="settings-rules-section" data-id="yatsy-settings-rules-section" style="display: none">
+        <section class="settings-panel options-panel-body" id="settings-panel" data-id="game-options-panel" aria-label="Game settings" hidden>
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="settings-rules-title" id="splash-language-title"></p>
+            <div class="lang-selector" id="splash-lang-selector" data-id="yatsy-splash-lang-selector"></div>
+          </div>
+          <div class="settings-rules-section" id="settings-rules-section" data-id="game-options-rules" style="display: none">
             <p class="settings-rules-title" id="settings-rules-title" data-id="yatsy-settings-rules-title"></p>
             <div class="settings-rules-content" id="settings-rules-content" data-id="yatsy-settings-rules-content"></div>
           </div>
+          <div class="settings-list" id="settings-list"></div>
         </section>
 
         <div class="splash-actions" data-id="yatsy-splash-actions">
@@ -63,12 +67,12 @@
       <section class="game-card" id="game-card" aria-label="Yatzy score board and controls">
         <header class="game-header">
           <div class="game-header-row">
-            <button class="home-button is-hidden" id="home-button" type="button" aria-label="Retour a l'accueil" title="Retour a l'accueil">
+            <button class="home-button is-hidden" id="home-button" type="button" data-id="yatsy-home-button" data-match-quit aria-label="Retour a l'accueil" title="Retour a l'accueil">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
             </button>
             <div class="header-title">
               <h1 id="game-title">Yams</h1>
-              <button class="restart-button" id="restart-button" type="button" aria-label="Restart" title="Restart">
+              <button class="restart-button" id="restart-button" type="button" data-id="yatsy-restart-button" data-match-quit aria-label="Restart" title="Restart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.6-6.3M3 4v5h5"/></svg>
               </button>
             </div>
@@ -93,6 +97,10 @@
                 <div class="options-panel-section">
                   <p class="options-panel-section-title" id="game-settings-language-title">Language</p>
                   <div class="lang-selector" id="game-lang-selector" data-id="yatsy-game-lang-selector"></div>
+                </div>
+                <div class="options-panel-section" id="game-rules-section" data-id="yatsy-game-rules-section" style="display: none">
+                  <p class="options-panel-section-title" id="game-rules-title"></p>
+                  <div class="rules-modal-content" id="game-rules-content" data-id="yatsy-game-rules-content"></div>
                 </div>
                 <div class="options-panel-section">
                   <label class="game-toggle-row" for="game-reverse-selection-toggle">
@@ -142,6 +150,7 @@
   <div class="build-tag" id="build-tag" data-id="yatsy-build-tag" aria-hidden="true">v0.4</div>
 
   <script src="/shared/js/game-header.js"></script>
+  <script src="/shared/js/game-session.js"></script>
   <script src="/shared/js/player-profile.js"></script>
   <script src="/shared/js/profile-results.js"></script>
   <script src="config.js"></script>

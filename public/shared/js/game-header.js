@@ -34,7 +34,9 @@
   // Appended to the panel's body so every game gets the entry without its own
   // markup. Panels without an .options-panel-body are left alone.
   function addFeedbackEntry(panelEl, closePanel) {
-    var body = panelEl.querySelector(".options-panel-body");
+    var body = panelEl.matches(".options-panel-body")
+      ? panelEl
+      : panelEl.querySelector(".options-panel-body");
     if (!body) return null;
 
     var section = document.createElement("div");

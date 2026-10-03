@@ -102,6 +102,11 @@ const elements = {
   settingsRulesSection: document.getElementById("settings-rules-section"),
   settingsRulesTitle: document.getElementById("settings-rules-title"),
   settingsRulesContent: document.getElementById("settings-rules-content"),
+  splashLanguageTitle: document.getElementById("splash-language-title"),
+  splashLangSelector: document.getElementById("splash-lang-selector"),
+  gameRulesSection: document.getElementById("game-rules-section"),
+  gameRulesTitle: document.getElementById("game-rules-title"),
+  gameRulesContent: document.getElementById("game-rules-content"),
   scoreSummary: document.getElementById("score-summary"),
   scoreboard: document.getElementById("scoreboard"),
   diceRow: document.getElementById("dice-row"),
@@ -186,6 +191,9 @@ if (elements.gameSettingsButton && elements.gameSettingsPanel && window.GameHead
 }
 if (elements.gameLangSelector) {
   elements.gameLangSelector.addEventListener("click", handleGameLangSelectorClick);
+}
+if (elements.splashLangSelector) {
+  elements.splashLangSelector.addEventListener("click", handleGameLangSelectorClick);
 }
 if (elements.reverseSelectionToggle) {
   elements.reverseSelectionToggle.addEventListener("change", handleGameReverseSelectionToggle);
@@ -319,21 +327,20 @@ void refreshSettingsRules();
 // would force this file alone into module scope. Re-run by
 // handleLanguageSelection() whenever the splash or in-game language switcher
 // changes state.setup.language, so the splash rules panel stays in sync.
+// Both the splash and the in-game options panels carry the rules
+// (docs/PLATFORM_RULES.md).
 async function refreshSettingsRules() {
-  if (!elements.settingsRulesSection || !elements.settingsRulesContent) return;
-
   const { loadRulesIfExists } = await import("/shared/js/engine.js");
   const html = await loadRulesIfExists("yatsy", state.setup.language);
-  if (!html) {
-    elements.settingsRulesSection.style.display = "none";
-    return;
-  }
+  fillRulesSection(elements.settingsRulesSection, elements.settingsRulesTitle, elements.settingsRulesContent, html);
+  fillRulesSection(elements.gameRulesSection, elements.gameRulesTitle, elements.gameRulesContent, html);
+}
 
-  if (elements.settingsRulesTitle) {
-    elements.settingsRulesTitle.textContent = t("splash.rules");
-  }
-  elements.settingsRulesContent.innerHTML = html;
-  elements.settingsRulesSection.style.display = "";
+function fillRulesSection(section, title, content, html) {
+  if (!section || !content) return;
+  section.style.display = html ? "" : "none";
+  if (title) title.textContent = t("splash.rules");
+  content.innerHTML = html || "";
 }
 
 function getRobotDelayMs(delayMs, enforceMinimum = true) {
@@ -776,10 +783,12 @@ function restoreLocalGameState() {
   freshState.gameOver = persisted.gameOver;
   freshState.winner = persisted.winner;
   Object.assign(state, freshState);
+  if (!freshState.gameOver) window.MuchogamesMatch.resume("yatsy");
 }
 
 async function handleRestart() {
   if (!isOnlineGame()) {
+    if (!(await window.MuchogamesMatch.start("yatsy"))) return;
     resetGame({
       screen: "game",
       language: state.setup.language,
@@ -788,6 +797,7 @@ async function handleRestart() {
     return;
   }
 
+  window.MuchogamesMatch.finish();
   await leaveCurrentGame();
   resetGame({
     screen: "splash",
@@ -798,6 +808,7 @@ async function handleRestart() {
 }
 
 async function handleHomeNavigation() {
+  window.MuchogamesMatch.finish();
   if (isOnlineGame()) {
     await leaveCurrentGame();
   }
@@ -815,7 +826,8 @@ function navigateToHub() {
 
 
 
-function handleLocalStart(mode, diceTheme = "default") {
+async function handleLocalStart(mode, diceTheme = "default") {
+  if (!(await window.MuchogamesMatch.start("yatsy"))) return;
   syncRuntimeRulesFromSetup();
   resetGame({
     screen: "game",
@@ -1543,14 +1555,13 @@ function recordGameResultIfNeeded(targetState) {
   localResultRecorded = true;
 
   const localIndex = resolveLocalResultPlayerIndex(targetState);
-  if (localIndex === null || !window.PlayerProfile) return;
-
   const totals = [calculateGrandTotal(targetState.scores[0]), calculateGrandTotal(targetState.scores[1])];
-  if (totals[0] === totals[1]) return;
-  const won = totals[localIndex] > totals[localIndex === 0 ? 1 : 0];
-  window.PlayerProfile.recordGameResult(won);
-  window.MuchogamesProfileResults?.recordSharedResult(won, {
-    gameId: "yatsy",
+  if (localIndex === null || totals[0] === totals[1]) {
+    window.MuchogamesMatch.finish();
+    return;
+  }
+  window.MuchogamesMatch.finish({
+    won: totals[localIndex] > totals[localIndex === 0 ? 1 : 0],
     score: totals[localIndex]
   });
 }

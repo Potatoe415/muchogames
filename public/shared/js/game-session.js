@@ -145,6 +145,12 @@
     return state.pendingStart;
   }
 
+  /** A match restored after a reload or reconnect: in progress, no coin. */
+  function resume(gameId) {
+    state.gameId = gameId || inferGameId();
+    state.inProgress = true;
+  }
+
   /** `won` only when there is one unambiguous local player; omit otherwise. */
   function finish(result) {
     state.inProgress = false;
@@ -264,6 +270,7 @@
 
   window.MuchogamesMatch = {
     start,
+    resume,
     finish,
     isInProgress: () => state.inProgress,
     showOutOfCoins

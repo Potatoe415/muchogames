@@ -42,6 +42,7 @@ window.YATZY_SESSION = {
     } = deps;
 
     const MATCHMAKING = window.YATZY_MATCHMAKING;
+    const CHARGED_MATCH_KEY = "yatzy-charged-match";
     let remoteSyncPromise = Promise.resolve();
     let pendingRemoteSyncCount = 0;
     let remoteApplyInFlight = false;
@@ -309,10 +310,33 @@ window.YATZY_SESSION = {
     Object.assign(state, freshState);
     persistOnlineSession();
     render();
+    chargeOnlineMatchOnce(payload.code);
 
     if (!payload.gameState && state.session.localPlayerIndex === 0) {
       syncOnlineGameState();
     }
+  }
+
+  // Each seat pays once per room, when the match starts (both seats filled).
+  // Every online rematch opens a new room, so a code seen again here is a
+  // reload/resume of the same match: no second coin. Out of coins, this
+  // player leaves, which closes the room for the other one.
+  async function chargeOnlineMatchOnce(code) {
+    if (storage.readJSON(CHARGED_MATCH_KEY) === code) {
+      window.MuchogamesMatch.resume("yatsy");
+      return;
+    }
+    if (await window.MuchogamesMatch.start("yatsy")) {
+      storage.writeJSON(CHARGED_MATCH_KEY, code);
+      return;
+    }
+    await leaveCurrentGame();
+    resetGame({
+      screen: "splash",
+      language: state.setup.language,
+      mode: "online",
+      splashView: "online"
+    });
   }
 
   function handleMatchStateChange(payload) {
@@ -429,6 +453,7 @@ window.YATZY_SESSION = {
   }
 
   function handleMatchClosed({ reason }) {
+    window.MuchogamesMatch.finish();
     clearPersistedOnlineSession();
     clearDeepLinkFromUrl();
     resetGame({

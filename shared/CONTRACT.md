@@ -96,6 +96,9 @@ Include via `<script src="/shared/js/game-session.js">`.
   Network/server failure resolves `true` (never blocks play). Concurrent
   calls share one spend. `gameId` defaults to the `/games/<id>/` segment,
   else `?game=`.
+- `resume(gameId?)` — a match restored after a reload or an online
+  reconnect: marks it in progress (back button confirms) without spending
+  a coin or counting it again.
 - `finish({ won, score }?)` — call when the match ends. Pass `won` only
   when there is one unambiguous local player; it then records the result
   locally (`PlayerProfile.recordGameResult`) and on the shared profile. The

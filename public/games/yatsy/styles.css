@@ -200,6 +200,13 @@ select {
   display: none;
 }
 
+/* The shared .lang-btn assumes a light panel; this one is dark. */
+.settings-panel .lang-btn {
+  color: #fffaf1;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
 .settings-list {
   display: flex;
   flex-direction: column;

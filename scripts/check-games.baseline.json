@@ -1,12 +1,4 @@
 [
-  "yatsy: loads-game-session-js",
-  "yatsy: starts-match",
-  "yatsy: finishes-match",
-  "yatsy: has-game-back-button",
-  "yatsy: has-game-options-button",
-  "yatsy: has-game-options-panel",
-  "yatsy: has-game-options-language",
-  "yatsy: has-game-options-rules",
   "tranquil: starts-match",
   "tranquil: has-game-back-button",
   "tranquil: has-game-options-button",
