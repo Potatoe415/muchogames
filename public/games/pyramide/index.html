@@ -13,7 +13,7 @@
     <div class="app-shell">
       <header class="game-nav">
         <div class="nav-side nav-left">
-          <a href="../../index.html" class="back-button" aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
+          <a href="../../index.html" class="back-button" data-id="game-back-button" aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
         </div>
         <div class="nav-center">
           <img
@@ -30,6 +30,8 @@
             id="pyramide-reset-button"
             class="icon-button nav-reset"
             type="button"
+            data-id="pyramide-restart-button"
+            data-match-quit
             aria-label="Nouvelle partie de Pyramide"
           >
             ↻
@@ -38,6 +40,7 @@
             id="options-button"
             class="options-button"
             type="button"
+            data-id="game-options-button"
             aria-label="Options"
             aria-expanded="false"
             aria-controls="options-panel"
@@ -50,7 +53,7 @@
         </div>
       </header>
 
-      <div id="options-panel" class="options-panel" hidden>
+      <div id="options-panel" class="options-panel" data-id="game-options-panel" hidden>
         <div class="options-panel-backdrop" data-options-close></div>
         <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options">
           <div class="options-panel-header">
@@ -58,11 +61,11 @@
             <button type="button" class="options-panel-close" data-options-close aria-label="Fermer">×</button>
           </div>
           <div class="options-panel-body">
-            <div class="options-panel-section">
+            <div class="options-panel-section" data-id="game-options-language">
               <p class="options-panel-section-title">Langue</p>
               <div id="lang-selector" class="lang-selector"></div>
             </div>
-            <div id="rules-section" class="options-panel-section" style="display: none">
+            <div id="rules-section" class="options-panel-section" data-id="game-options-rules" style="display: none">
               <p id="pyramide-rules-title" class="options-panel-section-title"></p>
               <div id="pyramide-rules-content" class="rules-modal-content"></div>
             </div>
@@ -93,6 +96,7 @@
     </template>
 
     <script src="../../shared/js/game-header.js"></script>
+    <script src="../../shared/js/game-session.js"></script>
     <script src="./i18n.js"></script>
     <script src="./app.js"></script>
   </body>

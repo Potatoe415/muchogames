@@ -126,6 +126,7 @@ function setupNavButtons() {
     backLink.addEventListener("click", (event) => {
       if (state.screen !== SCREENS.SPLASH) {
         event.preventDefault();
+        window.MuchogamesMatch.finish();
         state.session = null;
         state.round = null;
         state.error = null;
@@ -138,7 +139,16 @@ function setupNavButtons() {
 
 function handleResetClick() {
   if (!state.rawData) return;
-  beginSession(getLocale());
+  startMatch(getLocale());
+}
+
+// Every new match (splash start, ↻ reset) spends a coin first.
+async function startMatch(locale) {
+  if (state.isStarting) return;
+  state.isStarting = true;
+  const allowed = await window.MuchogamesMatch.start("pyramide");
+  state.isStarting = false;
+  if (allowed) beginSession(locale);
 }
 
 function applyLocaleToSession(locale) {
@@ -402,7 +412,7 @@ function updateLayoutMode() {
     scoreDisplay.style.display = isSplash ? "none" : scoreDisplay.style.display;
   }
   if (rulesSection) {
-    rulesSection.style.display = isSplash ? "none" : "block";
+    rulesSection.style.display = "block";
   }
 }
 
@@ -444,7 +454,7 @@ function renderSplashScreen() {
 
   shell.append(
     splashImage,
-    button(t("splashStart"), "primary-button", () => beginSession(getLocale())),
+    button(t("splashStart"), "primary-button", () => startMatch(getLocale())),
   );
 
   if (els.langSelector) {
@@ -655,6 +665,7 @@ function nextRound() {
   if (!state.session || !state.round) return;
 
   if (!hasMoreRounds()) {
+    window.MuchogamesMatch.finish();
     state.round = createRound(null);
     render();
     return;

@@ -1,12 +1,4 @@
 [
-  "pyramide: loads-game-session-js",
-  "pyramide: starts-match",
-  "pyramide: finishes-match",
-  "pyramide: has-game-back-button",
-  "pyramide: has-game-options-button",
-  "pyramide: has-game-options-panel",
-  "pyramide: has-game-options-language",
-  "pyramide: has-game-options-rules",
   "yatsy: loads-game-session-js",
   "yatsy: starts-match",
   "yatsy: finishes-match",
