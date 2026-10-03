@@ -177,8 +177,8 @@ Sensitive_Data: The Google account is verified server-side. The row stores the c
 
 ### Entity: GameStats
 
-Purpose: Wins/losses per signed-in profile and game, for the per-game breakdown on `/profile`.
-Storage: `public.muchogames_game_stats` (`supabase/migrations/0005_game_stats.sql`). Primary key (`profile_id`, `game_id`); `wins`, `losses`, optional `best_score` (highest seen, Yatzy sends its final total), `last_played_at`. Cascades on profile delete.
+Purpose: Matches started and wins/losses per signed-in profile and game, for the per-game breakdown on `/profile`.
+Storage: `public.muchogames_game_stats` (`supabase/migrations/0005_game_stats.sql`, `started` added by `0008_match_coins.sql`). Primary key (`profile_id`, `game_id`); `started`, `wins`, `losses`, optional `best_score` (highest seen, Yatzy sends its final total), `last_played_at`. Cascades on profile delete. `started` is incremented only by `start_muchogames_match` (see Coins), so rows from before 0008 can show fewer starts than results.
 Writes: only through `record_muchogames_game_result(p_id, p_game_id, p_wins, p_losses, p_score)` (service-role only), which also increments `muchogames_profiles` totals in the same transaction. Callers: `api/profile` `record-result` (Yatzy, `gameId: "yatsy"`), coinchapp `lib/server/profileLink.ts` (its four game ids), Tranquil `api/_lib/profileLink.ts` (`tranquil`). All three fall back to `increment_muchogames_profile_stats` on PostgREST `PGRST202` (function missing).
 Access_Rules: RLS on, zero policies. Read only by `api/profile` `game-stats` for the caller's own profile.
 Sensitive_Data: None beyond the profile link.
@@ -196,6 +196,8 @@ Purpose: Daily play allowance of a signed-in player (10 coins per Paris day, one
 Storage: `public.muchogames_coins` (`supabase/migrations/0007_coins.sql`): `profile_id` (PK, references `auth.users`, cascade), `day` (Paris date the count belongs to), `spent`, `updated_at`. One row per player, overwritten when the day changes; no purge needed. Spent only through `spend_muchogames_coin(p_id, p_daily)` (service-role only), which computes the Paris day itself and returns null when the allowance is used up.
 Access_Rules: RLS on, zero policies. Read/spent via `api/profile` `coins` / `spend-coin` for the caller's own row; admins never touch it (unlimited). Anonymous players use the browser key `muchogames-coins` (`{ day, spent }`) instead.
 Sensitive_Data: None beyond the profile link.
+
+Per match (`docs/PLATFORM_RULES.md`, `supabase/migrations/0008_match_coins.sql`): `public.muchogames_device_coins` holds anonymous players' counters — `device_id` (PK, random UUID created in the browser under `muchogames-device-id`), `day`, `spent`, `updated_at`; rows older than 7 days are deleted on each spend. `start_muchogames_match(p_game_id, p_daily, p_profile_id, p_device_id, p_unlimited)` spends from the profile row (via `spend_muchogames_coin`) or the device row, returns coins left or null when out, and on success inserts a `match_start` row in `muchogames_events` and increments `muchogames_game_stats.started` for a signed-in profile. `muchogames_device_coins_left(p_device_id, p_daily)` reads a device's balance. Both service-role only, called by public `POST /api/match` (`start` 30/min, `coins` 60/min per IP). The device id is not linked to any person; knowing one lets you spend its coins. Browser key `muchogames-match-counts` (`{ [gameId]: n }`) counts matches started locally.
 
 ### Entity: Feedback
 
@@ -297,3 +299,9 @@ Impact: First code path that deletes user data on request. `/profile` deletion a
 Change: Added the `Coins` entity and `spend_muchogames_coin` (`supabase/migrations/0007_coins.sql`), `api/profile` actions `coins` / `spend-coin`, and the browser key `muchogames-coins`.
 Reason: Owner request. See `docs/decisions/0046-daily-play-coins.md`.
 Impact: Until 0007 runs, signed-in spends fail server-side and the hub lets the launch through (fail open); anonymous counting works immediately.
+
+## 2026-10-03 - Coins per match (`muchogames_device_coins`, `started`)
+
+Change: `supabase/migrations/0008_match_coins.sql` adds `muchogames_device_coins`, `muchogames_game_stats.started`, `start_muchogames_match`, `muchogames_device_coins_left`, and `match_start` events; public `POST /api/match`; browser keys `muchogames-device-id`, `muchogames-match-counts`.
+Reason: Owner request: a coin per match started, not per game opened, one counter shared by every game and app. See `docs/tasks/platform-common-rules.md`.
+Impact: Until 0008 runs, `/api/match` answers 500 and games let the match start (fail open). Admin launch stats are unaffected (they filter `type = 'game_launch'`). Functions: 8 of 12.

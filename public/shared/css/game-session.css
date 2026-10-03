@@ -1,0 +1,70 @@
+/* "Out of coins" and "Leave the match?" dialog, injected by game-session.js.
+   Same look as the hub's coin dialog so it reads as one platform. */
+.mg-match-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mg-match-dialog[hidden] {
+  display: none;
+}
+
+.mg-match-dialog__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.mg-match-dialog__sheet {
+  position: relative;
+  width: min(320px, calc(100% - 40px));
+  padding: 20px;
+  border-radius: 20px;
+  background: #fffaeb;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+}
+
+.mg-match-dialog__text {
+  margin: 0 0 16px;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5a3a22;
+}
+
+.mg-match-dialog__actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.mg-match-dialog__confirm,
+.mg-match-dialog__cancel {
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mg-match-dialog__confirm {
+  border: none;
+  background: #e08b2f;
+  color: #fff;
+}
+
+.mg-match-dialog__cancel {
+  border: 1px solid rgba(90, 58, 34, 0.35);
+  background: transparent;
+  color: #5a3a22;
+}
+
+.mg-match-dialog__cancel[hidden] {
+  display: none;
+}

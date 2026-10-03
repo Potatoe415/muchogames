@@ -83,6 +83,30 @@ pre-fill an existing input from that param; never require it.
   `bergamots-lang`) to the panel's `.options-panel-body` when it has one,
   and lazy-loads `feedback.js` on click — a game gets it for free.
 
+## `public/shared/js/game-session.js` (global script → `window.MuchogamesMatch`)
+
+Match lifecycle required by `docs/PLATFORM_RULES.md` for every in-repo game.
+Include via `<script src="/shared/js/game-session.js">`.
+
+- `start(gameId?)` → `Promise<boolean>`. Call when the player starts a
+  match, including "play again". Spends one daily coin through
+  `POST /api/match` (Google token if signed in, else the browser's
+  `muchogames-device-id`) and counts the match. `false` = out of coins: the
+  shared dialog is already shown, keep the player on the start screen.
+  Network/server failure resolves `true` (never blocks play). Concurrent
+  calls share one spend. `gameId` defaults to the `/games/<id>/` segment,
+  else `?game=`.
+- `finish({ won, score }?)` — call when the match ends. Pass `won` only
+  when there is one unambiguous local player; it then records the result
+  locally (`PlayerProfile.recordGameResult`) and on the shared profile. The
+  game guards against calling it twice for the same match.
+- `isInProgress()` → `boolean`.
+- `showOutOfCoins()` — the shared "no coins left" dialog.
+- Any element with `data-id="game-back-button"` asks "Quitter la partie ?"
+  while a match is in progress; no game code needed.
+  Injects `/shared/css/game-session.css` and loads `profile-results.js`
+  itself.
+
 ## `public/shared/js/feedback.js` (global script → `window.MuchogamesFeedback`)
 
 - `open({ gameId })` — shows the report dialog (bug / idea + message),
@@ -101,6 +125,7 @@ pre-fill an existing input from that param; never require it.
 - `base.css` — design tokens (`--font-sans`) + resets, hub and wordplayer.
 - `game-header.css` — visuals for the header pattern `game-header.js` wires.
 - `feedback.css` — the report dialog; loaded by `feedback.js`, not linked by pages.
+- `game-session.css` — out-of-coins / leave-match dialog; loaded by `game-session.js`, not linked by pages.
 - `wordplayer.css` — wordpack shell only.
 
 No JS API to document — include the stylesheet, use its existing classes.
