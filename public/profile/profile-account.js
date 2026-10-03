@@ -45,7 +45,7 @@ const LOCAL_KEYS = [
   "bergamots-player-avatar",
   "bergamots-player-avatar-thumb",
   "bergamots-game-results",
-  "bergamots-launch-counts",
+  "muchogames-match-counts",
   "bergamots-results-migrated",
   "muchogames-is-admin",
   "muchogames-recent-games",

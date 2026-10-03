@@ -1,4 +1,6 @@
-// Launch-stats action for api/admin/index.js. Not a route itself.
+// Matches-started stats action for api/admin/index.js. Not a route itself.
+// `match_start` events are written by start_muchogames_match (0008), one per
+// match started in any game (docs/PLATFORM_RULES.md).
 import { sendError, sendJson } from "../_lib/http.js";
 import { getServiceClient } from "../_lib/supabase.js";
 
@@ -7,9 +9,10 @@ const RANGE_DAYS = { "7d": 7, "30d": 30, "6m": 182 };
 const DEFAULT_RANGE = "30d";
 
 /**
- * Returns the game launch ranking plus a daily trend, over the requested range.
+ * Returns the matches-started ranking plus a daily trend, over the requested
+ * range.
  *
- * Days are bucketed in UTC. The hub's audience is in UTC+1/+2, so a launch
+ * Days are bucketed in UTC. The hub's audience is in UTC+1/+2, so a match
  * after midnight local time lands on the previous day. Accepted: the trend is
  * meant to show shape, not to be an accounting record.
  */
@@ -23,7 +26,7 @@ export async function handleStats(res, body) {
   const { data, error } = await getServiceClient()
     .from("muchogames_events")
     .select("game_id, created_at")
-    .eq("type", "game_launch")
+    .eq("type", "match_start")
     .gte("created_at", start.toISOString())
     .limit(MAX_ROWS);
 
@@ -34,7 +37,7 @@ export async function handleStats(res, body) {
 
   sendJson(res, 200, {
     range,
-    totalLaunches: data.length,
+    totalMatches: data.length,
     ranking: rankByGame(data),
     dailyTrend: buildDailyTrend(data, start, days),
     dailyTrendByGame: buildDailyTrendByGame(data, start, days),
@@ -44,7 +47,7 @@ export async function handleStats(res, body) {
 
 // Signed-in players and the results they have recorded (all time). A match
 // between two signed-in players counts once per player. Null on failure so
-// the launch stats still render.
+// the match stats still render.
 async function readCommunityTotals(start) {
   const { data, error } = await getServiceClient()
     .from("muchogames_profiles")
@@ -61,37 +64,37 @@ async function readCommunityTotals(start) {
 }
 
 function rankByGame(rows) {
-  const launchesByGame = new Map();
+  const matchesByGame = new Map();
 
   rows.forEach(({ game_id: gameId }) => {
-    launchesByGame.set(gameId, (launchesByGame.get(gameId) || 0) + 1);
+    matchesByGame.set(gameId, (matchesByGame.get(gameId) || 0) + 1);
   });
 
-  return [...launchesByGame.entries()]
-    .map(([gameId, launches]) => ({ gameId, launches }))
-    .sort((first, second) => second.launches - first.launches);
+  return [...matchesByGame.entries()]
+    .map(([gameId, matches]) => ({ gameId, matches }))
+    .sort((first, second) => second.matches - first.matches);
 }
 
 // Zero-filled so the chart gets one point per day and never has to guess where
 // the gaps are.
 function buildDailyTrend(rows, start, days) {
-  const launchesByDay = new Map();
+  const matchesByDay = new Map();
 
   for (let offset = 0; offset < days; offset += 1) {
-    launchesByDay.set(dayKey(addUtcDays(start, offset)), 0);
+    matchesByDay.set(dayKey(addUtcDays(start, offset)), 0);
   }
 
   rows.forEach(({ created_at: createdAt }) => {
     const key = dayKey(new Date(createdAt));
 
-    if (launchesByDay.has(key)) {
-      launchesByDay.set(key, launchesByDay.get(key) + 1);
+    if (matchesByDay.has(key)) {
+      matchesByDay.set(key, matchesByDay.get(key) + 1);
     }
   });
 
-  return [...launchesByDay.entries()].map(([date, launches]) => ({
+  return [...matchesByDay.entries()].map(([date, matches]) => ({
     date,
-    launches
+    matches
   }));
 }
 

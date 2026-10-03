@@ -1,4 +1,5 @@
-// Per-game wins/losses for a Google-signed-in player (`muchogames_game_stats`
+// Per-game matches started / won / lost for a Google-signed-in player
+// (`muchogames_game_stats`
 // via POST /api/profile `game-stats`). Hidden when signed out, when the
 // request fails, or when nothing has been recorded per game yet.
 const HUB_CONFIG_URL = "/hub-config.json";
@@ -6,6 +7,7 @@ const HUB_CONFIG_URL = "/hub-config.json";
 const COPY = {
   fr: {
     title: "Mes résultats par jeu",
+    started: "Parties",
     wins: "V",
     losses: "D",
     best: "Record",
@@ -13,6 +15,7 @@ const COPY = {
   },
   en: {
     title: "My results by game",
+    started: "Matches",
     wins: "W",
     losses: "L",
     best: "Best",
@@ -20,6 +23,7 @@ const COPY = {
   },
   es: {
     title: "Mis resultados por juego",
+    started: "Partidas",
     wins: "V",
     losses: "D",
     best: "Récord",
@@ -65,7 +69,12 @@ function buildGameRow(game, copy, lang) {
 
   const record = document.createElement("span");
   record.className = "profile-game-record";
-  record.textContent = `${copy.wins} ${game.wins} · ${copy.losses} ${game.losses} · ${winRate(game)}`;
+  record.textContent = [
+    Number.isInteger(game.started) ? `${copy.started} ${game.started}` : "",
+    `${copy.wins} ${game.wins} · ${copy.losses} ${game.losses} · ${winRate(game)}`
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   const details = document.createElement("span");
   details.className = "profile-game-details";

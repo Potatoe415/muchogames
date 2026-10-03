@@ -3,19 +3,20 @@ const FAVORITE_LIMIT = 5;
 
 // `resultsOverride` ({ wins, losses }), when given, takes priority over the
 // local-only PlayerProfile counter — the shared, Google-signed-in profile's
-// numbers. Launch count/favorites stay local-only regardless (decision 0024).
-export async function initLaunchStats(copy, resultsOverride) {
-  const totalNode = document.getElementById("profile-launches-total");
+// numbers. Matches started and most played stay this browser's own count
+// (written by game-session.js); the per-game server rows are profile-games.js.
+export async function initMatchStats(copy, resultsOverride) {
+  const totalNode = document.getElementById("profile-matches-total");
   const list = document.getElementById("profile-favorites-list");
   const empty = document.getElementById("profile-favorites-empty");
   const resultsNode = document.getElementById("profile-game-results");
   if (!totalNode || !list || !empty || !window.PlayerProfile) return;
 
   const titles = await loadGameCatalog();
-  const total = window.PlayerProfile.getLaunchTotal();
-  const favorites = window.PlayerProfile.getFavoriteLaunches(FAVORITE_LIMIT);
+  const total = window.PlayerProfile.getMatchTotal();
+  const favorites = window.PlayerProfile.getMostPlayed(FAVORITE_LIMIT);
 
-  totalNode.textContent = formatLaunches(total, copy);
+  totalNode.textContent = formatMatches(total, copy);
   empty.textContent = copy.favoritesEmpty;
   renderFavorites(list, empty, favorites, titles);
   renderGameResults(resultsNode, copy, resultsOverride);
@@ -32,10 +33,10 @@ function renderGameResults(resultsNode, copy, resultsOverride) {
   resultsNode.textContent = `${copy.winsLabel} ${wins} · ${copy.lossesLabel} ${losses}`;
 }
 
-function formatLaunches(count, copy) {
-  if (count <= 0) return copy.launchesZero;
-  if (count === 1) return copy.launchesOne;
-  return copy.launchesMany.replace("{count}", String(count));
+function formatMatches(count, copy) {
+  if (count <= 0) return copy.matchesZero;
+  if (count === 1) return copy.matchesOne;
+  return copy.matchesMany.replace("{count}", String(count));
 }
 
 async function loadGameCatalog() {

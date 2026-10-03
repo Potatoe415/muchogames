@@ -45,7 +45,9 @@ opt-in custom games (Pictionary, Olé Mains).
 
 - `trackGameLaunch(gameId)` — fire-and-forget `sendBeacon` to
   `/api/track`, plus a client-only per-game counter in `localStorage`
-  (`bergamots-launch-counts`) read by `/profile`. **Never throws.**
+  (`bergamots-launch-counts`). Since 2026-10-03 neither is read anymore
+  (`/admin` and `/profile` count matches started instead); removal pending,
+  see `docs/BACKLOG.md`. **Never throws.**
   Called from exactly one place (`hub.js`'s tile click handler) per
   `docs/TECH.md` Architecture_Principles — do not call this from inside a
   game.
@@ -59,8 +61,9 @@ via `<script src="/shared/js/player-profile.js">`.
 - `getAvatar()` / `setAvatar(dataUrl, thumbUrl)` / `getAvatarThumb()` —
   `bergamots-player-avatar` (+ thumb). Avatar is Muchogames-only: never
   propagated to other games (too large for a URL param).
-- `getLaunchTotal()` / `getFavoriteLaunches(limit = 5)` — read-only
-  aggregates over `bergamots-launch-counts` (written by `analytics.js`).
+- `getMatchTotal()` / `getMostPlayed(limit = 5)` — read-only aggregates
+  over `muchogames-match-counts` (matches started in this browser, written
+  by `game-session.js`'s `start()`).
 - `getWins()` / `getLosses()` / `recordGameResult(won)` — combined
   win/loss counter (`bergamots-game-results`), read on `/profile`. Only
   Yatzy calls `recordGameResult` today, and only when there is an

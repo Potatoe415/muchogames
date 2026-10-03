@@ -175,8 +175,8 @@ function markActiveRange(range) {
 function render(stats) {
   document.getElementById("admin-login").hidden = true;
   document.getElementById("admin-dashboard").hidden = false;
-  document.getElementById("admin-total-launches").textContent =
-    stats.totalLaunches;
+  document.getElementById("admin-total-matches").textContent =
+    stats.totalMatches;
 
   // The server decides the effective range, so trust its echo over our request.
   selectedRange = stats.range;
@@ -209,7 +209,7 @@ function renderTrend() {
 }
 
 // The per-game trend is already in the stats response (no extra request), so
-// switching the selector is instant. A game with no launches in the current
+// switching the selector is instant. A game with no matches in the current
 // range has no entry there; fall back to a flat zero line on the same dates
 // as the all-games trend instead of an empty chart.
 function trendForSelectedGame(stats) {
@@ -220,7 +220,7 @@ function trendForSelectedGame(stats) {
 
   return (stats.dailyTrend || []).map((point) => ({
     ...point,
-    launches: 0
+    matches: 0
   }));
 }
 
@@ -230,7 +230,7 @@ function renderRanking(ranking) {
 
   document.getElementById("admin-empty").hidden = ranking.length > 0;
 
-  const topCount = ranking[0]?.launches || 1;
+  const topCount = ranking[0]?.matches || 1;
   const fragment = document.createDocumentFragment();
 
   ranking.forEach((entry, index) => {
@@ -257,14 +257,14 @@ function createRankingRow(entry, rank, topCount) {
   const bar = document.createElement("div");
   bar.className = "admin-ranking-bar";
   const fill = document.createElement("span");
-  fill.style.width = `${Math.round((entry.launches / topCount) * 100)}%`;
+  fill.style.width = `${Math.round((entry.matches / topCount) * 100)}%`;
   bar.appendChild(fill);
 
   details.append(name, bar);
 
   const count = document.createElement("span");
   count.className = "admin-ranking-count";
-  count.textContent = entry.launches;
+  count.textContent = entry.matches;
 
   row.append(rankLabel, details, count);
   return row;

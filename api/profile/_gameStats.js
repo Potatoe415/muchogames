@@ -49,13 +49,27 @@ export async function recordGameResult({
   });
 }
 
+// Postgres "undefined column": 0008_match_coins.sql (`started`) has not run.
+const MISSING_COLUMN = "42703";
+const BASE_COLUMNS = "game_id, wins, losses, best_score, last_played_at";
+
+function selectGameStats(profileId, columns) {
+  return getServiceClient()
+    .from("muchogames_game_stats")
+    .select(columns)
+    .eq("profile_id", profileId)
+    .order("last_played_at", { ascending: false });
+}
+
 /** Per-game breakdown for /profile, most recently played first. */
 export async function handleGameStats(res, identity) {
-  const { data, error } = await getServiceClient()
-    .from("muchogames_game_stats")
-    .select("game_id, wins, losses, best_score, last_played_at")
-    .eq("profile_id", identity.userId)
-    .order("last_played_at", { ascending: false });
+  let { data, error } = await selectGameStats(
+    identity.userId,
+    `${BASE_COLUMNS}, started`
+  );
+  if (error?.code === MISSING_COLUMN) {
+    ({ data, error } = await selectGameStats(identity.userId, BASE_COLUMNS));
+  }
 
   if (error) {
     sendError(res, "server-error", error.message);
@@ -65,6 +79,7 @@ export async function handleGameStats(res, identity) {
   sendJson(res, 200, {
     games: data.map((row) => ({
       gameId: row.game_id,
+      started: row.started ?? null,
       wins: row.wins,
       losses: row.losses,
       bestScore: row.best_score,

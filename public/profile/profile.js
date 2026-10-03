@@ -5,7 +5,7 @@
 
 import { initAccountSection, renderAccountSection } from "./profile-account.js";
 import { initGameBreakdown, renderGameBreakdown } from "./profile-games.js";
-import { initLaunchStats } from "./profile-stats.js";
+import { initMatchStats } from "./profile-stats.js";
 import {
   initAvatarCrop,
   loadImageFromFile,
@@ -50,11 +50,11 @@ const MESSAGES = {
     cropZoom: "Zoom",
     imageOnly: "Choisis un fichier image.",
     imageLoadError: "Impossible de charger cette image.",
-    launchesZero: "Aucun jeu lancé",
-    launchesOne: "1 jeu lancé",
-    launchesMany: "{count} jeux lancés",
+    matchesZero: "Aucune partie lancée",
+    matchesOne: "1 partie lancée",
+    matchesMany: "{count} parties lancées",
     favoritesTitle: "Jeux préférés",
-    favoritesEmpty: "Tes jeux les plus lancés apparaîtront ici.",
+    favoritesEmpty: "Tes jeux les plus joués apparaîtront ici.",
     winsLabel: "Victoires",
     lossesLabel: "Défaites"
   },
@@ -79,11 +79,11 @@ const MESSAGES = {
     cropZoom: "Zoom",
     imageOnly: "Choose an image file.",
     imageLoadError: "Could not load that image.",
-    launchesZero: "No games launched",
-    launchesOne: "1 game launched",
-    launchesMany: "{count} games launched",
+    matchesZero: "No matches started",
+    matchesOne: "1 match started",
+    matchesMany: "{count} matches started",
     favoritesTitle: "Favorite games",
-    favoritesEmpty: "Your most launched games will show up here.",
+    favoritesEmpty: "Your most played games will show up here.",
     winsLabel: "Wins",
     lossesLabel: "Losses"
   },
@@ -108,11 +108,11 @@ const MESSAGES = {
     cropZoom: "Zoom",
     imageOnly: "Elige un archivo de imagen.",
     imageLoadError: "No se pudo cargar esa imagen.",
-    launchesZero: "Ningún juego iniciado",
-    launchesOne: "1 juego iniciado",
-    launchesMany: "{count} juegos iniciados",
+    matchesZero: "Ninguna partida empezada",
+    matchesOne: "1 partida empezada",
+    matchesMany: "{count} partidas empezadas",
     favoritesTitle: "Juegos favoritos",
-    favoritesEmpty: "Tus juegos más lanzados aparecerán aquí.",
+    favoritesEmpty: "Tus juegos más jugados aparecerán aquí.",
     winsLabel: "Victorias",
     lossesLabel: "Derrotas"
   }
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initNameForm();
   initAvatarUpload();
   initAvatarCrop();
-  initLaunchStats(getCopy(), gameResultsOverride());
+  initMatchStats(getCopy(), gameResultsOverride());
   initGameBreakdown(getStoredIdToken(), readStoredLang());
   initAccountSection(getStoredIdToken(), readStoredLang());
 });
@@ -245,7 +245,7 @@ function initLangSwitcher() {
 function selectProfileLang(lang) {
   persistLang(lang);
   applyProfileCopy();
-  initLaunchStats(getCopy(), gameResultsOverride());
+  initMatchStats(getCopy(), gameResultsOverride());
   renderGameBreakdown(lang);
   renderAccountSection(lang);
 }

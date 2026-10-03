@@ -11,7 +11,8 @@
   const NAME_KEY = "bergamots-player-name";
   const AVATAR_KEY = "bergamots-player-avatar";
   const AVATAR_THUMB_KEY = "bergamots-player-avatar-thumb";
-  const LAUNCH_COUNTS_KEY = "bergamots-launch-counts";
+  // Written by game-session.js, one per match started.
+  const MATCH_COUNTS_KEY = "muchogames-match-counts";
   const GAME_RESULTS_KEY = "bergamots-game-results";
 
   function getName(fallback) {
@@ -67,11 +68,9 @@
     }
   }
 
-  function readLaunchCounts() {
+  function readMatchCounts() {
     try {
-      const parsed = JSON.parse(
-        localStorage.getItem(LAUNCH_COUNTS_KEY) || "{}"
-      );
+      const parsed = JSON.parse(localStorage.getItem(MATCH_COUNTS_KEY) || "{}");
       if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
         return {};
       }
@@ -88,16 +87,16 @@
     }
   }
 
-  function getLaunchTotal() {
-    return Object.values(readLaunchCounts()).reduce(
+  function getMatchTotal() {
+    return Object.values(readMatchCounts()).reduce(
       (sum, count) => sum + count,
       0
     );
   }
 
-  function getFavoriteLaunches(limit) {
+  function getMostPlayed(limit) {
     const cap = Number.isFinite(limit) && limit > 0 ? limit : 5;
-    return Object.entries(readLaunchCounts())
+    return Object.entries(readMatchCounts())
       .map(([id, count]) => ({ id: id, count: count }))
       .sort(
         (left, right) =>
@@ -150,15 +149,15 @@
     NAME_KEY: NAME_KEY,
     AVATAR_KEY: AVATAR_KEY,
     AVATAR_THUMB_KEY: AVATAR_THUMB_KEY,
-    LAUNCH_COUNTS_KEY: LAUNCH_COUNTS_KEY,
+    MATCH_COUNTS_KEY: MATCH_COUNTS_KEY,
     GAME_RESULTS_KEY: GAME_RESULTS_KEY,
     getName: getName,
     setName: setName,
     getAvatar: getAvatar,
     getAvatarThumb: getAvatarThumb,
     setAvatar: setAvatar,
-    getLaunchTotal: getLaunchTotal,
-    getFavoriteLaunches: getFavoriteLaunches,
+    getMatchTotal: getMatchTotal,
+    getMostPlayed: getMostPlayed,
     getWins: getWins,
     getLosses: getLosses,
     recordGameResult: recordGameResult

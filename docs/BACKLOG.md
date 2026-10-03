@@ -4,6 +4,8 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] **User**: add `ADMIN_USER_IDS` (your Supabase user id, same as on `muchogames`) to the `coinchapp` Vercel project, Production + Preview, then redeploy — until then the admin pays coins in coinchapp.
+- [ ] Remove the hub launch tracking (`shared/js/analytics.js`, `api/track.js`, `bergamots-launch-counts`): nothing reads it since 2026-10-03. Needs the owner's OK to edit `docs/ARCHITECTURE.md` / `docs/SECURITY.md` (they list `/api/track`); frees one serverless function.
 - [ ] Platform common rules, steps 2–6 (`docs/tasks/platform-common-rules.md`): coins per match, shared `game-session.js`, wire every game, coinchapp/Tranquil, profile/admin stats. Done when `scripts/check-games.baseline.json` is empty.
 - [ ] Move coinchapp to `cartes.muchogames.win` and Tranquil to `tranquil.muchogames.win` (owner choice 2026-10-03): add the domains on Vercel (needs owner approval), add them as Google OAuth origins, switch launch URLs + `PROFILE_HOSTS`, drop the baseline lines.
 - [ ] **User**: run `supabase/migrations/0007_coins.sql` in the Supabase SQL editor of `multigames-db` (daily coins for signed-in players). Then launch a game signed in and check the badge drops server-side (reload keeps the count).

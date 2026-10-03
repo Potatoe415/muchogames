@@ -3,7 +3,7 @@ const MAX_X_LABELS = 8;
 const SVG_NS = "http://www.w3.org/2000/svg";
 
 /**
- * Draws the daily launch trend as one SVG polyline.
+ * Draws the daily matches-started trend as one SVG polyline.
  *
  * The viewBox is a fixed 0-100 square stretched by preserveAspectRatio="none",
  * so points are plotted as percentages and the chart follows its container with
@@ -16,7 +16,7 @@ export function renderTrendChart(container, points) {
     return;
   }
 
-  const peak = Math.max(1, ...points.map((point) => point.launches));
+  const peak = Math.max(1, ...points.map((point) => point.matches));
   const ticks = tickValues(peak);
 
   container.replaceChildren(
@@ -28,7 +28,7 @@ export function renderTrendChart(container, points) {
 function toCoordinates(points, peak) {
   return points.map((point, index) => ({
     x: points.length > 1 ? (index / (points.length - 1)) * 100 : 50,
-    y: 100 - (point.launches / peak) * 100,
+    y: 100 - (point.matches / peak) * 100,
     point
   }));
 }
@@ -159,7 +159,7 @@ function showHover({ x, y, point }, marker, tooltip) {
   tooltip.hidden = false;
   tooltip.style.left = `${x}%`;
   tooltip.style.top = `${y}%`;
-  tooltip.textContent = `${point.date} · ${point.launches}`;
+  tooltip.textContent = `${point.date} · ${point.matches}`;
 }
 
 function createDiv(className, dataId) {
