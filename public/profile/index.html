@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/profile/profile.css" />
     <link rel="stylesheet" href="/profile/profile-crop.css" />
     <link rel="stylesheet" href="/profile/profile-account.css" />
+    <link rel="stylesheet" href="/profile/profile-tabs.css" />
   </head>
   <body>
     <header class="game-nav" data-id="profile-header">
@@ -127,166 +128,217 @@
     </div>
 
     <main class="profile-shell" data-id="profile-page">
-      <div class="profile-avatar-block" data-id="profile-avatar-block">
-        <label
-          class="profile-avatar-button"
-          for="profile-avatar-input"
-          id="profile-avatar-button"
-          data-id="profile-avatar-button"
-        >
-          <img
-            class="profile-avatar-preview"
-            id="profile-avatar-preview"
-            data-id="profile-avatar-preview"
-            alt=""
-            hidden
-          />
-          <span
-            class="profile-avatar-placeholder"
-            id="profile-avatar-placeholder"
-            data-id="profile-avatar-placeholder"
-            aria-hidden="true"
-          >
-            👤
-          </span>
-        </label>
-        <input
-          class="profile-avatar-input"
-          id="profile-avatar-input"
-          data-id="profile-avatar-input"
-          type="file"
-          accept="image/*"
-          hidden
-        />
+      <div class="profile-tabs" data-id="profile-tabs" role="tablist">
         <button
-          class="profile-avatar-remove-button"
-          id="profile-avatar-remove-button"
-          data-id="profile-avatar-remove-button"
+          class="profile-tab is-active"
+          id="profile-tab-info"
+          data-id="profile-tab-info"
+          data-tab="info"
           type="button"
-          hidden
+          role="tab"
+          aria-selected="true"
+          aria-controls="profile-tab-panel-info"
         >
-          Retirer
+          Infos
         </button>
-        <p
-          class="profile-avatar-error"
-          id="profile-avatar-error"
-          data-id="profile-avatar-error"
-          hidden
-        ></p>
+        <button
+          class="profile-tab"
+          id="profile-tab-stats"
+          data-id="profile-tab-stats"
+          data-tab="stats"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="profile-tab-panel-stats"
+        >
+          Statistiques
+        </button>
       </div>
 
-      <form
-        class="profile-name-form"
-        id="profile-name-form"
-        data-id="profile-name-form"
+      <div
+        class="profile-tab-panel"
+        id="profile-tab-panel-info"
+        data-id="profile-tab-panel-info"
+        role="tabpanel"
+        aria-labelledby="profile-tab-info"
       >
-        <label
-          class="profile-label"
-          for="profile-name-input"
-          data-id="profile-name-label"
-          >Nom</label
-        >
-        <input
-          class="profile-name-input"
-          id="profile-name-input"
-          data-id="profile-name-input"
-          type="text"
-          placeholder="Ton nom"
-          autocomplete="name"
-          maxlength="40"
-        />
-        <button
-          class="profile-save-button"
-          type="submit"
-          data-id="profile-name-save-button"
-        >
-          Enregistrer
-        </button>
-        <p
-          class="profile-saved-notice"
-          id="profile-name-saved-notice"
-          data-id="profile-name-saved-notice"
-          hidden
-        >
-          Enregistré ✓
-        </p>
-      </form>
-
-      <section class="profile-stats" data-id="profile-stats">
-        <p
-          class="profile-launches-total"
-          id="profile-matches-total"
-          data-id="profile-matches-total"
-        ></p>
-        <p
-          class="profile-game-results"
-          id="profile-game-results"
-          data-id="profile-game-results"
-        ></p>
-        <h2 class="profile-favorites-title" data-id="profile-favorites-title">
-          Jeux préférés
-        </h2>
-        <ol
-          class="profile-favorites-list"
-          id="profile-favorites-list"
-          data-id="profile-favorites-list"
-          hidden
-        ></ol>
-        <p
-          class="profile-favorites-empty"
-          id="profile-favorites-empty"
-          data-id="profile-favorites-empty"
-          hidden
-        ></p>
-      </section>
-
-      <section class="profile-games" data-id="profile-games-section" hidden>
-        <h2 class="profile-favorites-title" data-id="profile-games-title"></h2>
-        <ul class="profile-games-list" data-id="profile-games-list"></ul>
-      </section>
-
-      <section class="profile-account" data-id="profile-account-section" hidden>
-        <h2
-          class="profile-favorites-title"
-          data-id="profile-account-title"
-        ></h2>
-        <button
-          class="profile-account-button"
-          type="button"
-          data-id="profile-export-button"
-        ></button>
-        <button
-          class="profile-account-button profile-account-button--danger"
-          type="button"
-          data-id="profile-delete-button"
-        ></button>
-        <div
-          class="profile-account-confirm"
-          data-id="profile-delete-confirm"
-          hidden
-        >
-          <p
-            class="profile-account-warning"
-            data-id="profile-delete-warning"
-          ></p>
+        <div class="profile-avatar-block" data-id="profile-avatar-block">
+          <label
+            class="profile-avatar-button"
+            for="profile-avatar-input"
+            id="profile-avatar-button"
+            data-id="profile-avatar-button"
+          >
+            <img
+              class="profile-avatar-preview"
+              id="profile-avatar-preview"
+              data-id="profile-avatar-preview"
+              alt=""
+              hidden
+            />
+            <span
+              class="profile-avatar-placeholder"
+              id="profile-avatar-placeholder"
+              data-id="profile-avatar-placeholder"
+              aria-hidden="true"
+            >
+              👤
+            </span>
+          </label>
+          <input
+            class="profile-avatar-input"
+            id="profile-avatar-input"
+            data-id="profile-avatar-input"
+            type="file"
+            accept="image/*"
+            hidden
+          />
           <button
-            class="profile-account-button profile-account-button--danger-solid"
+            class="profile-avatar-remove-button"
+            id="profile-avatar-remove-button"
+            data-id="profile-avatar-remove-button"
             type="button"
-            data-id="profile-delete-confirm-button"
-          ></button>
+            hidden
+          >
+            Retirer
+          </button>
+          <p
+            class="profile-avatar-error"
+            id="profile-avatar-error"
+            data-id="profile-avatar-error"
+            hidden
+          ></p>
+        </div>
+
+        <form
+          class="profile-name-form"
+          id="profile-name-form"
+          data-id="profile-name-form"
+        >
+          <label
+            class="profile-label"
+            for="profile-name-input"
+            data-id="profile-name-label"
+            >Nom</label
+          >
+          <input
+            class="profile-name-input"
+            id="profile-name-input"
+            data-id="profile-name-input"
+            type="text"
+            placeholder="Ton nom"
+            autocomplete="name"
+            maxlength="40"
+          />
+          <button
+            class="profile-save-button"
+            type="submit"
+            data-id="profile-name-save-button"
+          >
+            Enregistrer
+          </button>
+          <p
+            class="profile-saved-notice"
+            id="profile-name-saved-notice"
+            data-id="profile-name-saved-notice"
+            hidden
+          >
+            Enregistré ✓
+          </p>
+        </form>
+
+        <section
+          class="profile-account"
+          data-id="profile-account-section"
+          hidden
+        >
+          <h2
+            class="profile-favorites-title"
+            data-id="profile-account-title"
+          ></h2>
           <button
             class="profile-account-button"
             type="button"
-            data-id="profile-delete-cancel-button"
+            data-id="profile-export-button"
           ></button>
-        </div>
-        <p
-          class="profile-account-error"
-          data-id="profile-account-error"
-          role="alert"
-          hidden
-        ></p>
-      </section>
+          <button
+            class="profile-account-button profile-account-button--danger"
+            type="button"
+            data-id="profile-delete-button"
+          ></button>
+          <div
+            class="profile-account-confirm"
+            data-id="profile-delete-confirm"
+            hidden
+          >
+            <p
+              class="profile-account-warning"
+              data-id="profile-delete-warning"
+            ></p>
+            <button
+              class="profile-account-button profile-account-button--danger-solid"
+              type="button"
+              data-id="profile-delete-confirm-button"
+            ></button>
+            <button
+              class="profile-account-button"
+              type="button"
+              data-id="profile-delete-cancel-button"
+            ></button>
+          </div>
+          <p
+            class="profile-account-error"
+            data-id="profile-account-error"
+            role="alert"
+            hidden
+          ></p>
+        </section>
+      </div>
+
+      <div
+        class="profile-tab-panel"
+        id="profile-tab-panel-stats"
+        data-id="profile-tab-panel-stats"
+        role="tabpanel"
+        aria-labelledby="profile-tab-stats"
+        hidden
+      >
+        <section class="profile-stats" data-id="profile-stats">
+          <p
+            class="profile-launches-total"
+            id="profile-matches-total"
+            data-id="profile-matches-total"
+          ></p>
+          <p
+            class="profile-game-results"
+            id="profile-game-results"
+            data-id="profile-game-results"
+          ></p>
+          <h2 class="profile-favorites-title" data-id="profile-favorites-title">
+            Jeux préférés
+          </h2>
+          <ol
+            class="profile-favorites-list"
+            id="profile-favorites-list"
+            data-id="profile-favorites-list"
+            hidden
+          ></ol>
+          <p
+            class="profile-favorites-empty"
+            id="profile-favorites-empty"
+            data-id="profile-favorites-empty"
+            hidden
+          ></p>
+        </section>
+
+        <section class="profile-games" data-id="profile-games-section" hidden>
+          <h2
+            class="profile-favorites-title"
+            data-id="profile-games-title"
+          ></h2>
+          <ul class="profile-games-list" data-id="profile-games-list"></ul>
+        </section>
+      </div>
     </main>
 
     <div

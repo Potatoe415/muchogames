@@ -6,6 +6,7 @@
 import { initAccountSection, renderAccountSection } from "./profile-account.js";
 import { initGameBreakdown, renderGameBreakdown } from "./profile-games.js";
 import { initMatchStats } from "./profile-stats.js";
+import { initProfileTabs } from "./profile-tabs.js";
 import {
   initAvatarCrop,
   loadImageFromFile,
@@ -32,6 +33,8 @@ const MESSAGES = {
   fr: {
     documentTitle: "Profil — Muchogames",
     title: "Profil",
+    tabInfo: "Infos",
+    tabStats: "Statistiques",
     avatarAlt: "Avatar du joueur",
     changeAvatar: "Changer l'avatar",
     removeAvatar: "Retirer",
@@ -61,6 +64,8 @@ const MESSAGES = {
   en: {
     documentTitle: "Profile — Muchogames",
     title: "Profile",
+    tabInfo: "Info",
+    tabStats: "Statistics",
     avatarAlt: "Player avatar",
     changeAvatar: "Change avatar",
     removeAvatar: "Remove",
@@ -90,6 +95,8 @@ const MESSAGES = {
   es: {
     documentTitle: "Perfil — Muchogames",
     title: "Perfil",
+    tabInfo: "Info",
+    tabStats: "Estadísticas",
     avatarAlt: "Avatar del jugador",
     changeAvatar: "Cambiar avatar",
     removeAvatar: "Quitar",
@@ -122,6 +129,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initOptionsPanel();
   initLangSwitcher();
   applyProfileCopy();
+  initProfileTabs();
   await window.MuchogamesProfileResults?.migrateLocalResultsOnce?.();
   await loadSyncedProfile();
   initNameForm();
@@ -256,6 +264,8 @@ function applyProfileCopy() {
   document.documentElement.lang = lang;
   document.title = copy.documentTitle;
   setText("profile-title", copy.title);
+  setText("profile-tab-info", copy.tabInfo);
+  setText("profile-tab-stats", copy.tabStats);
   setText("profile-name-label", copy.nameLabel);
   setText("profile-name-save-button", copy.save);
   setText("profile-name-saved-notice", copy.saved);

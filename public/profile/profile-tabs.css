@@ -1,0 +1,42 @@
+/* Profile tabs (profile-tabs.js): same underline style as the hub's
+   category tabs. Each panel keeps the shell's centered column layout. */
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.profile-tab {
+  padding: 0 0 7px;
+  line-height: 1;
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgba(90, 58, 34, 0.45);
+  cursor: pointer;
+  transition:
+    color 0.18s,
+    border-color 0.18s;
+}
+
+.profile-tab.is-active {
+  color: #5a3a22;
+  border-bottom-color: #c8663f;
+}
+
+.profile-tab-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-tab-panel[hidden] {
+  display: none;
+}
