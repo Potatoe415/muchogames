@@ -65,6 +65,10 @@ a match.
 - **Opening a game is free. Starting a match costs 1 coin**, every match,
   including "play again". The coin is spent by `MuchogamesMatch.start` (or
   `start_muchogames_match` server-side), never by the hub tile.
+- Online matches: each human player pays once, when the match actually
+  starts (all seats filled). Creating a room, waiting, reloading or
+  resuming costs nothing. A rematch in the same room is a new match: every
+  human player pays again.
 - Out of coins: the match does not start and the shared dialog shows
   "Vous n'avez plus de pièces pour aujourd'hui. Revenez demain !".
 - One counter per player, shared by every game: signed-in players by
