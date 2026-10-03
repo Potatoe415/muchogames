@@ -43,19 +43,19 @@ const AUTH_COPY = {
   fr: {
     account: "Compte",
     profile: "Profil",
-    admin: "Admin",
+    admin: "Accès admin",
     logout: "Se déconnecter"
   },
   en: {
     account: "Account",
     profile: "Profile",
-    admin: "Admin",
+    admin: "Admin access",
     logout: "Sign out"
   },
   es: {
     account: "Cuenta",
     profile: "Perfil",
-    admin: "Admin",
+    admin: "Acceso admin",
     logout: "Cerrar sesión"
   }
 };
