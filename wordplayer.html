@@ -14,7 +14,11 @@
   <body class="game-body">
     <header class="game-nav">
       <div class="nav-side nav-left">
-        <a href="./index.html" class="back-button" aria-label="Retour"
+        <a
+          href="./index.html"
+          class="back-button"
+          data-id="game-back-button"
+          aria-label="Retour"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -42,6 +46,7 @@
           id="options-button"
           class="options-button"
           type="button"
+          data-id="game-options-button"
           aria-label="Options"
           aria-expanded="false"
           aria-controls="options-panel"
@@ -67,7 +72,12 @@
       </div>
     </header>
 
-    <div id="options-panel" class="options-panel" hidden>
+    <div
+      id="options-panel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
       <div class="options-panel-backdrop" data-options-close></div>
       <div
         class="options-panel-sheet"
@@ -87,13 +97,14 @@
           </button>
         </div>
         <div class="options-panel-body">
-          <div class="options-panel-section">
+          <div class="options-panel-section" data-id="game-options-language">
             <p class="options-panel-section-title">Langue</p>
             <div id="lang-selector" class="lang-selector"></div>
           </div>
           <div
             id="rules-section"
             class="options-panel-section"
+            data-id="game-options-rules"
             style="display: none"
           >
             <p class="options-panel-section-title">Règles</p>
@@ -112,6 +123,7 @@
     </main>
 
     <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
     <script type="module" src="./wordplayer.js"></script>
   </body>
 </html>

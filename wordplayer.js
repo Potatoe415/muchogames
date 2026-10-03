@@ -620,7 +620,8 @@ function startGame() {
   startNewSessionWithCurrentWords();
 }
 
-function startNewSessionWithCurrentWords() {
+async function startNewSessionWithCurrentWords() {
+  if (!(await window.MuchogamesMatch.start())) return;
   gameState.phase = "playing";
   gameState.score = 0;
   resetStats();
@@ -740,6 +741,7 @@ function displayNextWord() {
 }
 
 function executeEndGameSequence() {
+  window.MuchogamesMatch.finish();
   stopTimer();
   hideTimerDisplay();
   gameState.currentWord = null;
