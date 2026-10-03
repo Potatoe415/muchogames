@@ -9,6 +9,11 @@ section just points here.
 If anything below can't be satisfied for the game being built, stop and
 ask instead of improvising a one-off exception (`AGENTS.md` Section 7).
 
+**Read `docs/PLATFORM_RULES.md` too** — the common base every game shares
+(back/options buttons, coins spent per match, matches started/won/lost,
+URLs). `npm run check` fails until a new game follows it; a new game never
+goes in the check's baseline.
+
 ---
 
 ## 0. Pick the kind
@@ -33,7 +38,9 @@ See `docs/GAMES_MAP.md` for what each looks like today.
   and `data` if `wordpack`. Optional: `players: [min, max]` (humans
   needed, bots don't count) and `duration` (typical minutes) — they drive
   the tile tags and the hub's "how many are we?" filter; omit them rather
-  than guess.
+  than guess. An `external` game also needs `source` (its colocated
+  `apps/<name>` folder) or `"coinPolicy": "launch"` when its code is not in
+  this repo (`docs/PLATFORM_RULES.md` section 3).
 - If the game has an options panel wired with `GameHeader.initOptionsPanel`,
   it gets the "Report a problem" entry for free (`shared/CONTRACT.md`).
 - Add one row to `docs/GAMES_MAP.md`.

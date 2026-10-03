@@ -7,6 +7,8 @@ Aligned to bootstrap v10.1 on 2026-09-22 (see `docs/decisions/INDEX.md`). This a
 
 This app is a **self-governing colocated sub-app** inside the `muchogames` repo (see the root `AGENTS.md` and `docs/GAMES_MAP.md`). A task inside `apps/tranquil/` follows *this* file, not the root repo's vanilla-JS rules.
 
+Exception: the platform-wide player rules in the root `docs/PLATFORM_RULES.md` (back/options buttons, coins spent per match, matches started/won/lost, no `*.vercel.app` URLs) apply here too. Read it before touching the game's chrome, match start/end, or any URL; the root `npm run check:games` verifies them.
+
 ## Commands
 
 Run `check` before declaring any task done. Never claim something was verified if the command was not run.

@@ -5,7 +5,7 @@ import { getMatchResultStats } from '../lib/matchResultStats';
 
 // The hub's "Report a problem" dialog, pre-filled with this game's hub id;
 // reports land in the hub's admin inbox.
-const HUB_FEEDBACK_URL = 'https://muchogames.vercel.app/?feedback=tranquil';
+const HUB_FEEDBACK_URL = 'https://www.muchogames.win/?feedback=tranquil';
 
 interface Props {
   onClose: () => void;

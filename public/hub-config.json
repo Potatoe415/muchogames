@@ -53,7 +53,8 @@
     "kind": "external",
     "category": "autres",
     "launch": "https://easyfrog.web.app/",
-    "thumbnail": "/games/easyfrog/assets/thumbnail.jpg"
+    "thumbnail": "/games/easyfrog/assets/thumbnail.jpg",
+    "coinPolicy": "launch"
   },
   {
     "id": "cafards",
@@ -104,7 +105,8 @@
     "kind": "external",
     "category": "autres",
     "launch": "https://tranquil-woad.vercel.app/",
-    "thumbnail": "/games/tranquil/assets/thumbnail.webp"
+    "thumbnail": "/games/tranquil/assets/thumbnail.webp",
+    "source": "apps/tranquil"
   },
   {
     "id": "coinche",
@@ -114,7 +116,8 @@
     "launch": "https://coinchapp.vercel.app/coinche",
     "thumbnail": "/games/coinchapp/assets/coinche-thumb.jpg",
     "sameTab": true,
-    "players": [1, 4]
+    "players": [1, 4],
+    "source": "apps/coinchapp"
   },
   {
     "id": "bouilla",
@@ -124,7 +127,8 @@
     "launch": "https://coinchapp.vercel.app/bouilla",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bouilla.png",
     "sameTab": true,
-    "players": [1, 4]
+    "players": [1, 4],
+    "source": "apps/coinchapp"
   },
   {
     "id": "president",
@@ -134,7 +138,8 @@
     "launch": "https://coinchapp.vercel.app/president",
     "thumbnail": "/games/coinchapp/assets/thumbnail-president.jpg",
     "sameTab": true,
-    "players": [1, 4]
+    "players": [1, 4],
+    "source": "apps/coinchapp"
   },
   {
     "id": "bataillecorse",
@@ -144,7 +149,8 @@
     "launch": "https://coinchapp.vercel.app/bataillecorse",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bataillecorse.jpg",
     "sameTab": true,
-    "players": [1, 2]
+    "players": [1, 2],
+    "source": "apps/coinchapp"
   },
   {
     "id": "gameboy-web",
@@ -153,6 +159,7 @@
     "category": "autres",
     "launch": "https://gameboy-web.vercel.app/binjgb/docs/simple.html",
     "thumbnail": "/games/gameboy-web/assets/thumbnail.jpg",
-    "sameTab": true
+    "sameTab": true,
+    "coinPolicy": "launch"
   }
 ]

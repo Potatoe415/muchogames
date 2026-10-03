@@ -26,7 +26,8 @@ Load this file only if the task contains or implies: run / command / script / se
 
 ## Test
 - No automated test suite exists yet (see `docs/TECH.md` Open_Questions).
-- Manual check: `npm run check` (lint + format-check + build).
+- Manual check: `npm run check` (lint + format-check + platform rules + build).
+- `npm run check:games` alone runs `scripts/check-games.mjs` against `docs/PLATFORM_RULES.md`. It fails on a new violation, and on a line of `scripts/check-games.baseline.json` that no longer occurs: after fixing a gap, delete its baseline line. Never add a line for a new game.
 - Exercising the API by hand from PowerShell: quote JSON as `-d '{\"key\":\"value\"}'` or use `--data-binary "@file.json"`. PowerShell strips double quotes when passing arguments to native executables, so `-d '{"key":"value"}'` reaches curl as `{key:value}` and the endpoint answers as if the body were empty.
 - Admin stats round-trip: `POST /api/admin` with `{"action":"login","idToken":"<Google ID token>"}` returns `{"token":"..."}` (a 1h Supabase access token) for an allowlisted account, 403 otherwise; then `POST /api/admin` with `{"action":"stats","token":"...","range":"7d"}` (ranges: `7d`, `30d`, `6m`; an unknown value falls back to `30d`). The reply carries `range`, `totalLaunches`, `ranking` and a zero-filled `dailyTrend` of 7, 30 or 182 points.
 
@@ -41,7 +42,7 @@ Load this file only if the task contains or implies: run / command / script / se
 
 ## Deploy
 - Hosting target: Vercel (static `dist/` build + `api/yatsy/games/*` serverless functions), connected via Vercel's Git integration.
-- CI (`.github/workflows/ci.yml`) runs lint + format-check + build on push/PR to `main`/`master`. It does not deploy.
+- CI (`.github/workflows/ci.yml`) runs lint + format-check + platform rules + build on push/PR to `main`/`master`. It does not deploy.
 - Actual deploy is handled by Vercel (preview deployments per PR, production on merge to `main`/`master`); not scripted in this repo. `vercel --prod` also works from a machine with the Vercel CLI authenticated against this project, but prefer pushing: a CLI deploy carries no git metadata, so `vercel inspect` afterwards can no longer tell you which commit production is running. The next push-triggered deploy restores that.
 
 ## Troubleshooting

@@ -2,36 +2,29 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Roadmap `docs/tasks/platform-admin-profile-roadmap.md` is fully shipped in code (6 phases): admin by Google allowlist, feedback inbox, per-game results, hub shelf/favorites/tags, admin-edited catalog + announcement, data export / account deletion + admin players. Every feature degrades cleanly until the owner runs the SQL.
-Focus: Owner setup, then live checks (`docs/BACKLOG.md` Now).
-Level: L2 (blocked on owner actions).
+Status: Platform common rules (`docs/tasks/platform-common-rules.md`), step 1 of 6 shipped: `docs/PLATFORM_RULES.md` + `npm run check:games` (in `check` and CI) with a 100-gap baseline that only shrinks.
+Focus: Step 2 — migration `0008` (anonymous device coins, `started` per game, `start_muchogames_match`).
+Level: L2 (approved 2026-10-03).
 
 Context:
-- Working_On: n/a (waiting on owner)
-- Relevant_Files: `api/admin/index.js` (+ `_stats`, `_feedback`, `_hubSettings`, `_players`), `api/profile/index.js` (+ `_gameStats`, `_account`), `api/feedback.js`, `api/hub-settings.js`, `hub-*.js`, `public/admin/admin-*.js`, `public/profile/profile-*.js`
-- Do_Not_Touch: game engines; hub launch URLs in `public/hub-config.json`
-- Relevant_Decisions: 0040–0044 (coinchapp 0070)
+- Working_On: coins per match instead of per hub launch, shared back/options chrome, matches started/won/lost.
+- Relevant_Files: `docs/PLATFORM_RULES.md`, `scripts/check-games.mjs`, `scripts/check-games.baseline.json`, `public/hub-config.json` (`coinPolicy`, `source`), `hub-coins.js`, `api/profile/_coins.js`, `supabase/migrations/0007_coins.sql`
+- Do_Not_Touch: game rules engines beyond match start/finish hooks; Easy Frog and GameBoy Web.
+- Relevant_Decisions: 0007, 0038, 0042, 0046 (to be superseded)
 
 Next:
-- Owner: run `0007_coins.sql`; sign in on `/admin` to confirm access; delete `ADMIN_PASSWORD` from Vercel.
-- Then live-check each phase (BACKLOG Now), and delete the roadmap task file.
-- Owner to provide `players` / `duration` for the untagged games.
-- Still open: domain rewrite for `muchogames.win/<jeu>`; Tranquil Vercel repoint.
+- Owner: pick a non-`vercel.app` domain for coinchapp and Tranquil (launch URLs + `PROFILE_HOSTS`).
+- Step 2 migration, then step 3 `public/shared/js/game-session.js`, step 4 wire each in-repo game, step 5 coinchapp/Tranquil, step 6 hub/profile/admin.
+- Still pending from the roadmap: owner runs `0007_coins.sql`, signs in on `/admin`, deletes `ADMIN_PASSWORD`; live checks (BACKLOG Now).
 
 Open_Questions:
-- Should GameBoy and Easy Frog also live under `muchogames.win/<jeu>`, or only the games in this repo?
+- Domain for coinchapp/Tranquil: subdomains of `muchogames.win` or `muchogames.win/<jeu>` rewrites?
 
 Blockers:
-- None for the roadmap: migrations 0004–0006 applied, `ADMIN_USER_IDS` set (Production + Preview) and production redeployed on 2026-10-02. Only live checks remain.
-- Domain masking is blocked on a hosting choice (rewrites vs custom domains on each app).
+- None for steps 2–4. Removing the last `*.vercel.app` launch URLs needs the domain choice above.
 
 Recent_Changes:
-- 2026-10-02 Daily play coins: 10/day, one per hub launch, midnight Paris reset, admin unlimited (decision 0046). Needs `0007_coins.sql` for signed-in players.
-- 2026-10-02 Yatzy room routes merged into one function via `vercel.json` rewrites (decision 0045): 7/12 functions.
-- 2026-10-02 `docs/PRODUCT.md`, `ARCHITECTURE.md`, `SECURITY.md` aligned with the roadmap (owner confirmed).
-- 2026-10-02 "Report a problem" everywhere: wordplayer reports carry `?game=`; coinchapp + Tranquil settings link to the hub's `?feedback=<gameId>`.
-- 2026-10-02 Data export + account deletion on `/profile`, admin Players card (decision 0044).
-- 2026-10-02 Hub catalog + announcement editable from `/admin` (decision 0043, 11/12 functions).
-- 2026-10-02 Hub "My games" shelf, favorites, player tags/filter.
-- 2026-10-02 Per-game results (decision 0042, coinchapp 0070).
-- 2026-10-02 Feedback inbox (decision 0041); admin by Google account (decision 0040).
+- 2026-10-03 `docs/PLATFORM_RULES.md` + `check:games`; hub links from coinchapp/Tranquil moved to `https://www.muchogames.win/`.
+- 2026-10-02 Daily play coins: 10/day, one per hub launch (decision 0046) — being replaced by one per match.
+- 2026-10-02 Yatzy room routes merged into one function (decision 0045).
+- 2026-10-02 Data export + account deletion, hub catalog editing, "My games" shelf, per-game results, feedback inbox, admin by Google (0040–0044).

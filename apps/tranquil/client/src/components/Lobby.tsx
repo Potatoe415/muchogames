@@ -7,7 +7,7 @@ export type GameMode = 'local' | 'online_create' | 'online_join';
 
 // Same hub every sibling Bergamots-launched game links back to — see
 // coinchapp's `HomeTopBar.tsx` and `docs/DECISIONS.md` "Player identity contract".
-const BERGAMOTS_HUB_URL = 'https://muchogames.vercel.app/';
+const BERGAMOTS_HUB_URL = 'https://www.muchogames.win/';
 
 interface Props {
   onStartLocal: (p1Name: string, p2Name: string, monsterCount: MonsterCount) => void;

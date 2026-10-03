@@ -14,7 +14,7 @@ Run `check` before declaring any task done. Never claim something was verified i
 | Install | `npm install` |
 | Dev | `npm run dev` |
 | Test one module | No automated tests exist (see `docs/DEBUGGING.md`) |
-| Check (lint + format-check + build) | `npm run check` |
+| Check (lint + format-check + platform rules + build) | `npm run check` |
 | Build/lint across root + `apps/coinchapp` (Turborepo) | `npm run build:all` / `npm run lint:all` |
 | Commit and push | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<why>"` from the git root |
 
@@ -38,6 +38,7 @@ Start with `STATE.md`. Load only what the task needs. Never scan the whole repos
 | Setup, deploy, migrate, rollback, run/test/lint/build/check | `docs/RUNBOOK.md` |
 | Planning | `docs/BACKLOG.md` |
 | Creating a new game | `docs/NEW_GAME.md` (full checklist — read it in full) |
+| Anything a player sees in every game: back/options buttons, coins, matches started/won/lost, URLs | `docs/PLATFORM_RULES.md` (enforced by `npm run check`) |
 | Anything under `public/games/` or `public/data/` | `docs/GAMES_MAP.md` first, to locate the target game before browsing |
 | A past decision | `docs/decisions/INDEX.md`, then only the relevant decision |
 | Creating a doc, module, task, or decision | its template in `docs/_templates/` |
