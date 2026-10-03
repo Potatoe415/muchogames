@@ -105,6 +105,9 @@ Include via `<script src="/shared/js/game-session.js">`.
   game guards against calling it twice for the same match.
 - `isInProgress()` → `boolean`.
 - `showOutOfCoins()` — the shared "no coins left" dialog.
+- `deviceId()` → the browser's anonymous `muchogames-device-id` (created on
+  first use, `""` if storage is unavailable). The hub forwards it as
+  `?mgDevice=` to colocated apps (entries with `source`) only.
 - Any element with `data-id="game-back-button"` asks "Quitter la partie ?"
   while a match is in progress; no game code needed. So does any element
   with a `data-match-quit` attribute (an in-match ✖ that returns to the

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/lib/client/i18n";
+import { matchFromView } from "@/lib/client/matchCoin";
 import { useOptimisticPlay } from "@/lib/client/useOptimisticPlay";
 import { CAPOT_VALUE, cardId, GENERALE_VALUE, isTrump, RANKS, teamOf, trumpStrength, type Bid, type Card, type PlayerView, type TrumpMode } from "@/lib/coinche";
 import type { GameView } from "@/lib/server/view";
@@ -160,7 +161,7 @@ export function GameTable({
   const bimTrickKey = computeBimKey(view, trickCards);
 
   return (
-    <TableShell dataId="game-table">
+    <TableShell dataId="game-table" match={matchFromView(gv)}>
       <GameHud
         view={view}
         players={gv.players}

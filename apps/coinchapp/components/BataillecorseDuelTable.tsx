@@ -94,13 +94,21 @@ export function BataillecorseDuelTable({
       : null;
 
   return (
-    <TableShell dataId="bataillecorse-duel-table">
+    <TableShell
+      dataId="bataillecorse-duel-table"
+      match={{
+        id: "local-duel",
+        game: "bataillecorse",
+        status: viewA.phase === "finished" ? "finished" : "playing",
+        seated: true,
+      }}
+    >
       {debugOn && panelOpen && <BataillecorseDebugOverlay mode="duel" view={viewA} log={debugLog} />}
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
           href={HUB_URL}
           aria-label={t("backToHub")}
-          data-id="bataillecorse-duel-back"
+          data-id="game-back-button"
           className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg"
         >
           ‹

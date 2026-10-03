@@ -2,19 +2,20 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Finished matches now sync to the hub profile per game (`coinche`, `bouilla`, `president`, `bataillecorse`, decision 0070). The combined counter in `HomeTopBar` is unchanged. Until the hub's `0005_game_stats.sql` runs, the server falls back to the totals-only RPC.
-Focus: n/a (task complete)
-Level: L2 (cross-app, part of the root roadmap `docs/tasks/platform-admin-profile-roadmap.md`)
+Status: Every match now spends one hub coin (decision 0071, root `docs/PLATFORM_RULES.md`): `TableShell` → `MatchGate` → Server Action `startMatchCoin`. Back/options use the platform `data-id`s; back during a match asks "Quitter la partie ?".
+Focus: n/a (task complete on this side)
+Level: L2 (cross-app, part of the root task `docs/tasks/platform-common-rules.md`)
 
 Context:
-- Working_On: n/a (task complete)
-- Relevant_Files: `lib/client/matchResultStats.ts` (`planSharedSync`), `lib/client/profileSync.ts`, `lib/server/profileLink.ts`, `lib/profileGames.ts`
+- Working_On: n/a
+- Relevant_Files: `components/MatchGate.tsx`, `components/TableShell.tsx`, `lib/client/matchCoin.ts`, `lib/server/actions-match.ts`, `lib/server/profileLink.ts`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0070 (this), 0055 (combined counter), 0069 (Bataille Corse tribute chain)
+- Relevant_Decisions: 0071 (this), 0070 (per-game results), 0055 (combined counter)
 
 Next:
-- After the owner runs the hub's `0005_game_stats.sql`: finish one match per game launched from the hub, confirm the per-game rows on `/profile`.
-- Confirm `docs/PRODUCT.md` / `docs/SECURITY.md` wording before editing them.
+- Owner: set `ADMIN_USER_IDS` on the `coinchapp` Vercel project (Production + Preview), same value as the hub, then redeploy — otherwise the admin pays like everyone.
+- After the hub's `0008_match_coins.sql` runs: launch a game from the hub, play a match, check the hub badge drops; finish an online match and rematch, both players should pay again.
+- Move to `cartes.muchogames.win` once the owner approves adding the domain (root BACKLOG).
 
 Open_Questions:
 - La Bataille Corse's slap resolution trusts each client's self-reported `reactionMs` — accepted trade-off, no fix planned.
@@ -27,8 +28,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
-- 2026-10-02 `HomeTopBar` settings panel: "Signaler un problème" link (`home-settings-feedback-link`) opening the hub's report dialog for the current game (`hubFeedbackUrl`). `npm test` 321/321, `tsc` clean, build clean.
-- 2026-10-02 Per-game hub profile sync (decision 0070): new `localStorage` keys `coinchapp-match-results-by-game` / `coinchapp-profile-synced-by-game`; `syncSharedMatchResults` takes a `game`. `npm test` 321/321, `tsc --noEmit` clean, `npm run build` clean. `npm run lint` still fails only on the pre-existing `useMatchStats.ts` error.
+- 2026-10-03 Per-match hub coins + platform chrome `data-id`s (decision 0071). `npm test` 321/321, `tsc --noEmit` clean, changed files lint clean, `npm run build` clean. Verified locally: hub `?mgDevice=` captured, local match marked paid (fail-open, no env), back → "Quitter la partie ?" → Continuer stays.
+- 2026-10-02 `HomeTopBar` settings panel: "Signaler un problème" link (`home-settings-feedback-link`).
+- 2026-10-02 Per-game hub profile sync (decision 0070).
 - 2026-09-27 La Bataille Corse (decision 0069): online tribute flips no longer wait on the server between cards.
-- 2026-09-26 La Bataille Corse debug overlay revealed by the in-game "Info partie" button; splash build counter v0.14.
-- 2026-09-26 La Bataille Corse (decision 0068): a tribute failure that coincides with a double/sandwich opens a real slap window.

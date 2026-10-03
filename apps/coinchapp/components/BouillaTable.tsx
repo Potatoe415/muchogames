@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { cardStrength, ROUND_AUTO_ADVANCE_MS, type Card, type PlayerView } from "@/lib/bouilla";
 import { useDelayedVisible } from "@/lib/client/useDelayedVisible";
 import { HUB_URL } from "@/lib/client/hubUrl";
+import { matchFromView } from "@/lib/client/matchCoin";
 import { useI18n } from "@/lib/client/i18n";
 import { useOptimisticPlay } from "@/lib/client/useOptimisticPlay";
 import type { GameView } from "@/lib/server/view";
@@ -119,7 +120,7 @@ export function BouillaTable({
   }, [view.phase, gv.turnStartedAt, onForceSync]);
 
   return (
-    <TableShell dataId="bouilla-table">
+    <TableShell dataId="bouilla-table" match={matchFromView(gv)}>
       <BouillaHud
         gv={gv}
         view={view}
@@ -203,7 +204,7 @@ function BouillaHud({
   return (
     <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 px-3" data-id="bouilla-header">
       <div className="flex items-start justify-between">
-        <IconLink href={HUB_URL} label={t("backToHub")} dataId="bouilla-back">‹</IconLink>
+        <IconLink href={HUB_URL} label={t("backToHub")} dataId="game-back-button">‹</IconLink>
         <div className="flex flex-col items-center">
           <button
             type="button"

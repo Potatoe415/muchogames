@@ -76,6 +76,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0068 | 2026-09-26 | La Bataille Corse: a tribute failure defers to a real slap window first | Accepted |
 | 0069 | 2026-09-27 | La Bataille Corse: a tribute chain paints every tap before the server answers | Accepted |
 | 0070 | 2026-10-02 | Per-game results on the hub profile (combined local counter kept) | Accepted |
+| 0071 | 2026-10-03 | One hub coin per match, gated in TableShell | Accepted |
 
 ## When to log a decision
 Any of:

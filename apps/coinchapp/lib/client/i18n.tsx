@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { captureHubName } from "@/lib/client/hubName";
+import { captureDeviceId } from "@/lib/client/matchCoin";
 import { captureProfileCode } from "@/lib/client/profileSync";
 
 export type Locale = "fr" | "en";
@@ -17,6 +18,10 @@ const STORAGE_KEY = "coinchapp-locale";
 const TRANSLATIONS = {
   fr: {
     backToHub: "Retour au hub des jeux",
+    outOfCoins: "Vous n'avez plus de pièces pour aujourd'hui. Revenez demain !",
+    quitMatch: "Quitter la partie ?",
+    quitMatchLeave: "Quitter",
+    quitMatchStay: "Continuer",
     back: "Retour",
     loading: "Chargement…",
     gameNotFound: "Partie introuvable",
@@ -223,6 +228,10 @@ const TRANSLATIONS = {
   },
   en: {
     backToHub: "Back to games hub",
+    outOfCoins: "You're out of coins for today. Come back tomorrow!",
+    quitMatch: "Leave the match?",
+    quitMatchLeave: "Leave",
+    quitMatchStay: "Keep playing",
     back: "Back",
     loading: "Loading…",
     gameNotFound: "Game not found",
@@ -438,6 +447,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     captureHubName();
+    captureDeviceId();
     captureProfileCode();
     // A hub tile's ?lang= always wins over what this app remembers on its own,
     // so relaunching from the game launcher picks up its currently selected language.

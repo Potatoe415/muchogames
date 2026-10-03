@@ -34,7 +34,7 @@ export function profileIdFromCookie(value: string | undefined): string | null {
   return timingSafeEqual(left, right) ? profileId : null;
 }
 
-async function readLinkedProfileId(): Promise<string | null> {
+export async function readLinkedProfileId(): Promise<string | null> {
   const store = await cookies();
   return profileIdFromCookie(store.get(COOKIE)?.value);
 }

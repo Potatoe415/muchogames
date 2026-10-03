@@ -9,6 +9,7 @@ import { burnKey, usePresidentPileDisplay } from "@/lib/client/usePresidentPileD
 import { usePresidentPileHold } from "@/lib/client/usePresidentPileHold";
 import { CssVarProbe, useCssVarPx } from "@/lib/client/useCssVarPx";
 import { HUB_URL } from "@/lib/client/hubUrl";
+import { matchFromView } from "@/lib/client/matchCoin";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import type { GameView } from "@/lib/server/view";
@@ -165,7 +166,7 @@ export function PresidentTable({
   }, [autoPassOn, mustPass, busy, animationLocked]);
 
   return (
-    <TableShell dataId="president-table">
+    <TableShell dataId="president-table" match={matchFromView(gv)}>
       <PresidentHud
         gv={gv}
         view={view}
@@ -270,7 +271,7 @@ function PresidentHud({
   return (
     <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 px-3" data-id="president-header">
       <div className="flex items-start justify-between">
-        <IconLink href={HUB_URL} label={t("backToHub")} dataId="president-back">‹</IconLink>
+        <IconLink href={HUB_URL} label={t("backToHub")} dataId="game-back-button">‹</IconLink>
         <div className="flex flex-col items-center">
           <button
             type="button"

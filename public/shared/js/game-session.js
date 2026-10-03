@@ -273,6 +273,7 @@
     resume,
     finish,
     isInProgress: () => state.inProgress,
-    showOutOfCoins
+    showOutOfCoins,
+    deviceId: readDeviceId
   };
 })();

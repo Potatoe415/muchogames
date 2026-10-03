@@ -5,6 +5,7 @@ import { otherSeat, SLAP_GRACE_MS, type PlayerView } from "@/lib/bataillecorse";
 import { useBataillecorseDebugMode } from "@/lib/client/bataillecorseDebugMode";
 import { useBataillecorseDebugLog } from "@/lib/client/useBataillecorseDebugLog";
 import { HUB_URL } from "@/lib/client/hubUrl";
+import { matchFromView } from "@/lib/client/matchCoin";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
@@ -382,13 +383,13 @@ export function BataillecorseTable({
   }
 
   return (
-    <TableShell dataId="bataillecorse-table">
+    <TableShell dataId="bataillecorse-table" match={matchFromView(gv)}>
       {debugOn && panelOpen && <BataillecorseDebugOverlay mode={debugMode} view={view} log={debugLog} />}
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
           href={HUB_URL}
           aria-label={t("backToHub")}
-          data-id="bataillecorse-back"
+          data-id="game-back-button"
           className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-5xl font-black leading-none text-[var(--surface)] shadow-lg"
         >
           ‹

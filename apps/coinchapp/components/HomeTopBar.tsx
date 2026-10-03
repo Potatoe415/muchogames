@@ -55,7 +55,7 @@ export function HomeTopBar({ game }: { game?: GameType }) {
       <a
         href={HUB_URL}
         className="absolute left-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/45 text-white shadow-md backdrop-blur-sm"
-        data-id="home-back"
+        data-id="game-back-button"
         aria-label={t("backToHub")}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
@@ -65,7 +65,7 @@ export function HomeTopBar({ game }: { game?: GameType }) {
         type="button"
         onClick={() => setSettingsOpen((open) => !open)}
         className="absolute right-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/45 text-white shadow-md backdrop-blur-sm"
-        data-id="home-settings-button"
+        data-id="game-options-button"
         aria-label={t("settings")}
         aria-expanded={settingsOpen}
       >
@@ -78,7 +78,7 @@ export function HomeTopBar({ game }: { game?: GameType }) {
       {settingsOpen && (
         <div
           className="absolute right-4 top-16 z-20 w-40 rounded-2xl bg-[var(--surface-overlay)] p-2 shadow-lg ring-1 ring-[var(--accent-cyan)]/25"
-          data-id="home-settings-panel"
+          data-id="game-options-panel"
         >
           <p className="mb-1 px-1 text-xs font-bold uppercase tracking-wide text-[var(--card-face)]/60">
             {t("language")}

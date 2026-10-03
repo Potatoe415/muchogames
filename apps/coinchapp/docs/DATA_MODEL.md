@@ -287,3 +287,9 @@ Impact: A visit with no launch code does not write the shared row. Duel mode sti
 Change: No change to `games` / `game_players` / `game_events`. Two new `localStorage` keys: `coinchapp-match-results-by-game` (per-game split of the combined counter, never displayed here) and `coinchapp-profile-synced-by-game`. `syncSharedMatchResults` now takes a `game` (`coinche` | `bouilla` | `president` | `bataillecorse`, see `lib/profileGames.ts`) and calls the hub's `record_muchogames_game_result` (root `supabase/migrations/0005_game_stats.sql`), falling back to `increment_muchogames_profile_stats` while that function is missing.
 Reason: The hub `/profile` shows a per-game breakdown. Decision 0070.
 Impact: The combined counter shown in `HomeTopBar` is unchanged. Results recorded before this change sync as one game-less batch (profile total only).
+
+## 2026-10-03 - One hub coin per match
+
+Change: No change to `games` / `game_players` / `game_events`. The Server Action `startMatchCoin` calls the hub's `start_muchogames_match` (root `supabase/migrations/0008_match_coins.sql`) with the linked profile id (`mg-profile` cookie) or the anonymous device id. New `localStorage` keys: `muchogames-device-id` (from the hub's `?mgDevice=`, else minted here) and `coinchapp-charged-matches` (`{ [gameId or "local:<game>"]: true }` for matches already paid, cleared when seen finished). Optional env `ADMIN_USER_IDS` (same value as the hub) makes admins unlimited.
+Reason: Decision 0071.
+Impact: Until the hub's 0008 runs, the RPC fails and every match starts for free.

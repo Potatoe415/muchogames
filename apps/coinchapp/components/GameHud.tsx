@@ -49,7 +49,7 @@ export function GameHud({
   return (
     <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 px-3" data-id="game-header">
       <div className="flex items-start justify-between">
-        <IconLink href={HUB_URL} label={t("backToHub")} dataId="game-back">
+        <IconLink href={HUB_URL} label={t("backToHub")} dataId="game-back-button">
           ‹
         </IconLink>
         <div className="flex flex-col items-center">
@@ -308,7 +308,7 @@ export function GameInfoButton({ label, onClick }: { label: string; onClick: () 
   return (
     <button
       type="button"
-      data-id="game-info-button"
+      data-id="game-options-button"
       onClick={onClick}
       className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--card-face)] text-[var(--surface)] shadow-lg"
       aria-label={label}
