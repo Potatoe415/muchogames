@@ -7,11 +7,13 @@ then update this file.
 
 Two physical locations, one reason: Vite build vs. verbatim serving.
 
-- `shared/js/` (repo root) — bundled by Vite. Only reachable from
-  `wordplayer.js`/`hub.js` (the two entries in `vite.config.js`). **Do not
-  duplicate a file that already exists under `public/shared/js/` here** —
-  import that one instead (a relative disk path into `public/` bundles
-  fine; see `docs/BACKLOG.md` 2026-09-17 for why this is safe with Vite).
+- `shared/js/` (repo root) — bundled by Vite, reachable only from
+  `wordplayer.js`/`hub.js` (the two entries in `vite.config.js`). Empty
+  since 2026-10-03 (its only file, the launch tracker, was removed). **Do
+  not duplicate a file that already exists under `public/shared/js/`
+  here** — import that one instead (a relative disk path into `public/`
+  bundles fine; see `docs/BACKLOG.md` 2026-09-17 for why this is safe with
+  Vite).
 - `public/shared/js/` and `public/shared/css/` — served verbatim, no build
   step. Every unbundled game under `public/games/<id>/` includes these via
   a plain `<script src="/shared/js/...">` tag.
@@ -40,17 +42,6 @@ opt-in custom games (Pictionary, Olé Mains).
 - `loadRulesIfExists(gameId, languageCode)` → `Promise<string|null>`.
   Fetches `/data/<gameId>/rules_<lang>.html`; `null` on 404 or any error
   (never throws — rules are optional).
-
-## `shared/js/analytics.js` (ES module, root, hub-bundled only)
-
-- `trackGameLaunch(gameId)` — fire-and-forget `sendBeacon` to
-  `/api/track`, plus a client-only per-game counter in `localStorage`
-  (`bergamots-launch-counts`). Since 2026-10-03 neither is read anymore
-  (`/admin` and `/profile` count matches started instead); removal pending,
-  see `docs/BACKLOG.md`. **Never throws.**
-  Called from exactly one place (`hub.js`'s tile click handler) per
-  `docs/TECH.md` Architecture_Principles — do not call this from inside a
-  game.
 
 ## `public/shared/js/player-profile.js` (global script → `window.PlayerProfile`)
 

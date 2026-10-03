@@ -125,15 +125,15 @@ Sensitive_Data:
 
 ### Entity: HubEvent
 
-Purpose: Counts how many times each game is launched from the hub, for the admin stats page.
-Storage: Supabase Postgres, table `muchogames_events` (see `supabase/migrations/0002_events.sql`, `api/track.js`, `api/admin/_stats.js`).
+Purpose: Counts matches started per game, for the admin stats page (until 2026-10-03: hub launches).
+Storage: Supabase Postgres, table `muchogames_events` (see `supabase/migrations/0002_events.sql`, `0008_match_coins.sql`, `api/admin/_stats.js`).
 
 Fields:
 | Field | Type | Required | Notes |
 |---|---|---|---|
 | id | bigint (PK) | Yes | Identity column |
-| type | text | Yes | Defaults to `game_launch`; the only value written today |
-| game_id | text | Yes | Matches `HubGameEntry.id`, max 64 chars (enforced in `api/track.js`, not in SQL) |
+| type | text | Yes | `match_start` (written by `start_muchogames_match`, read by `/admin`). Older rows `game_launch` (hub launches, written until 2026-10-03, no longer read) |
+| game_id | text | Yes | Matches `HubGameEntry.id`, 1–64 chars (checked in `start_muchogames_match`) |
 | created_at | timestamptz | Yes | Insert time; indexed descending |
 
 Relationships:
@@ -145,8 +145,8 @@ Constraints:
 - Reads filter on `created_at >= start of the requested range`, served by `muchogames_events_created_at_idx`. Aggregation (ranking and per-day totals) happens in JavaScript inside the function, not in SQL — deliberate at this volume, since it avoids a view or an RPC and therefore a migration.
 
 Access_Rules:
-- Row Level Security enabled with zero policies, same as `yatzy_games`: the browser can neither read nor write this table. Writes go through `POST /api/track` (public, unauthenticated, throttled in memory to 60 events per minute per IP). Reads go through `POST /api/admin` (`action: "stats"`), which requires the Supabase access token returned by `action: "login"` for a Google account whose user id is in `ADMIN_USER_IDS`; every read re-resolves that token and re-checks the allowlist.
-- `POST /api/track` being public means anyone who finds the URL can insert junk rows and inflate the counters. Accepted trade-off (see `docs/DECISIONS.md` 2026-08-30).
+- Row Level Security enabled with zero policies, same as `yatzy_games`: the browser can neither read nor write this table. Writes happen only inside `start_muchogames_match` (service role, via public `POST /api/match` or the coinchapp/Tranquil servers), one row per match that actually spent (or, for admins, would have spent) a coin. Reads go through `POST /api/admin` (`action: "stats"`), which requires the Supabase access token returned by `action: "login"` for a Google account whose user id is in `ADMIN_USER_IDS`; every read re-resolves that token and re-checks the allowlist.
+- `POST /api/match` being public means anyone can inflate the counters, but each row costs one of a device's 10 daily coins (bounded per device, plus the per-IP throttle). Accepted trade-off (decision 0047). `api/track.js` was removed on 2026-10-03.
 
 Sensitive_Data:
 - None. No IP, user agent, session id, or any other visitor identifier is stored — only a game id and a timestamp.
@@ -165,7 +165,7 @@ Sensitive_Data:
 ## Access Model
 
 Roles: None (anonymous) for players. Yatzy uses ad-hoc `creator` / `joiner` seat roles scoped to a single room code. An `admin` role exists for Google-signed-in Supabase Auth users whose id is listed in the `ADMIN_USER_IDS` env var (since 2026-10-02, replacing the shared `ADMIN_PASSWORD`). No admin table: the allowlist is configuration. The admin session is the 1h Supabase access token from the Google exchange, verified with `auth.getUser` on every admin request.
-Rules: All static JSON is public and read-only. Yatzy room reads/writes go exclusively through `api/yatsy/games/*` (Vercel serverless functions using the Supabase service-role key); those functions validate the room code + per-seat resume token before returning or mutating state. Direct client access to `yatzy_games` is blocked outright by Row Level Security (no policies), regardless of what the client knows. The same RLS pattern protects `muchogames_events`: writes via the public `api/track.js`, reads via `api/admin/index.js` behind an allowlisted Google sign-in.
+Rules: All static JSON is public and read-only. Yatzy room reads/writes go exclusively through `api/yatsy/games/*` (Vercel serverless functions using the Supabase service-role key); those functions validate the room code + per-seat resume token before returning or mutating state. Direct client access to `yatzy_games` is blocked outright by Row Level Security (no policies), regardless of what the client knows. The same RLS pattern protects `muchogames_events`: writes only inside `start_muchogames_match` (via the public `api/match.js` or the coinchapp/Tranquil servers), reads via `api/admin/index.js` behind an allowlisted Google sign-in.
 
 ---
 
@@ -304,4 +304,10 @@ Impact: Until 0007 runs, signed-in spends fail server-side and the hub lets the 
 
 Change: `supabase/migrations/0008_match_coins.sql` adds `muchogames_device_coins`, `muchogames_game_stats.started`, `start_muchogames_match`, `muchogames_device_coins_left`, and `match_start` events; public `POST /api/match`; browser keys `muchogames-device-id`, `muchogames-match-counts`.
 Reason: Owner request: a coin per match started, not per game opened, one counter shared by every game and app. See `docs/tasks/platform-common-rules.md`.
-Impact: Until 0008 runs, `/api/match` answers 500 and games let the match start (fail open). Functions: 8 of 12. Later the same day `/admin` switched to ranking `type = 'match_start'` (response fields `totalMatches`, `ranking[].matches`, trend `matches`); `game_launch` rows from `/api/track` are still written but no longer read. `/profile` per-game rows gained `started`; its local total now reads `muchogames-match-counts` instead of `bergamots-launch-counts`.
+Impact: Until 0008 runs, `/api/match` answers 500 and games let the match start (fail open). Functions: 8 of 12. Later the same day `/admin` switched to ranking `type = 'match_start'` (response fields `totalMatches`, `ranking[].matches`, trend `matches`); `game_launch` rows are no longer read (and, after the removal below, no longer written). `/profile` per-game rows gained `started`; its local total now reads `muchogames-match-counts` instead of `bergamots-launch-counts`.
+
+## 2026-10-03 - Hub launch tracking removed
+
+Change: Deleted `api/track.js` and `shared/js/analytics.js`; the hub no longer writes `game_launch` rows nor the browser key `bergamots-launch-counts`. Existing rows and keys are left in place (harmless, unread).
+Reason: Owner approval; nothing read them since `/admin` and `/profile` count matches started (decision 0047).
+Impact: Functions: 7 of 12. Old `game_launch` history stays in `muchogames_events` and can be deleted later if wanted.

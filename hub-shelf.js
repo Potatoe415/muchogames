@@ -1,6 +1,5 @@
 // "My games" shelf above the category tabs: favorites first, then recently
-// launched games. Both lists are per-browser localStorage, like the launch
-// counts in shared/js/analytics.js.
+// launched games. Both lists are per-browser localStorage.
 const RECENT_KEY = "muchogames-recent-games";
 const FAVORITES_KEY = "muchogames-favorite-games";
 const MAX_RECENT = 8;

@@ -23,7 +23,6 @@ import {
   playerFilterEmptyMessage,
   renderPlayerFilter
 } from "./hub-tags.js";
-import { trackGameLaunch } from "./shared/js/analytics.js";
 import { APP_VERSION } from "./version.js";
 
 const CONFIG_URL = "/hub-config.json";
@@ -509,7 +508,7 @@ function createGameTile(game) {
 }
 
 // Every way of launching a game (grid tile, "My games" shelf) goes through
-// here: same URL params, launch tracking, recents, profile hand-off, and the
+// here: same URL params, recents, profile hand-off, and the
 // daily coin for `coinPolicy: "launch"` games (every other game charges per
 // match itself).
 function createLaunchAnchor(game) {
@@ -549,7 +548,6 @@ async function launchGame(game, href, newTab) {
         return;
       }
     }
-    trackGameLaunch(game.id);
     recordRecentGame(game.id);
     openGame(href, newTab, tab);
   } finally {
