@@ -29,4 +29,5 @@ Related_Decisions: 0007, 0038, 0042, 0046
 Notes:
 - 2026-10-03 Step 1 shipped: rules doc, `check:games` in `npm run check` + CI, baseline of 100 gaps. `hub-config.json` gained `coinPolicy: "launch"` (easyfrog, gameboy-web) and `source` (coinchapp games, tranquil). coinchapp/Tranquil links back to the hub now use `https://www.muchogames.win/`.
 - Remaining `*.vercel.app` references (baselined): coinchapp + Tranquil launch URLs and `PROFILE_HOSTS` in `profile-results.js`, GameBoy Web (separate deployment, keeps its address).
+- 2026-10-03 Step 2 written: `supabase/migrations/0008_match_coins.sql` (waits for the owner to run 0007 then 0008).
 - 2026-10-03 Owner chose subdomains: `cartes.muchogames.win` → Vercel project `coinchapp`, `tranquil.muchogames.win` → Tranquil (after its repoint). Needs: add the domains on Vercel (owner approval at that point), add them as Google OAuth authorized origins, then switch `hub-config.json` launch URLs + `PROFILE_HOSTS` and drop those baseline lines.
