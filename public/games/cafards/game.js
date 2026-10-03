@@ -80,8 +80,9 @@ function resetTimer(){clearTimer(); el.timerLight.classList.remove("on"); if(!st
 function nextTurn(){state.current=(state.current+1)%state.players.length; renderPlayers(); resetTimer();}
 let optionsPanelApi=null;
 function closeOptionsPanel(){ if(optionsPanelApi) optionsPanelApi.close(); el.rulesFrame.src="about:blank"; }
-function startGame(){try{ closeOptionsPanel(); readConfig(); deal(); state.started=true; state.current=0; state.piles=[[],[]]; setActivePile(0); document.body.className="mode-game"; render(); resetTimer();}catch(error){setSetupStatus(t("setupError",{message:error.message||String(error)}),true);}}
+async function startGame(){if(!(await window.MuchogamesMatch.start("cafards"))||state.started)return; try{ closeOptionsPanel(); readConfig(); deal(); state.started=true; state.current=0; state.piles=[[],[]]; setActivePile(0); document.body.className="mode-game"; render(); resetTimer();}catch(error){setSetupStatus(t("setupError",{message:error.message||String(error)}),true);}}
 function restartToSetup(){
+  window.MuchogamesMatch.finish();
   clearTimer();
   closeOptionsPanel();
   state.started=false;
@@ -111,6 +112,7 @@ function checkWinCondition(){
   });
   const zeroCount=state.players.filter((p)=>p.hand.length===0).length;
   if(zeroCount>=state.config.winners){
+    window.MuchogamesMatch.finish();
     state.started=false;
     clearTimer();
     el.timerText.textContent=t("gameOver");
@@ -133,6 +135,7 @@ function revealFromPile(index){
   if(index!==state.activePile)return;
   const player=currentPlayer();
   if(!player.hand.length){
+    window.MuchogamesMatch.finish();
     state.started=false;
     clearTimer();
     return;

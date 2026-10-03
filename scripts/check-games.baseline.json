@@ -1,12 +1,4 @@
 [
-  "cafards: loads-game-session-js",
-  "cafards: starts-match",
-  "cafards: finishes-match",
-  "cafards: has-game-back-button",
-  "cafards: has-game-options-button",
-  "cafards: has-game-options-panel",
-  "cafards: has-game-options-language",
-  "cafards: has-game-options-rules",
   "millionaire: loads-game-session-js",
   "millionaire: starts-match",
   "millionaire: finishes-match",
