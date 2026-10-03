@@ -15,14 +15,10 @@ import { initCoins, renderCoinBadge, spendLaunchCoin } from "./hub-coins.js";
 import {
   createFavoriteButton,
   recordRecentGame,
-  renderShelf
+  shelfGames,
+  shelfLabel
 } from "./hub-shelf.js";
-import {
-  createTileTags,
-  matchesPlayerFilter,
-  playerFilterEmptyMessage,
-  renderPlayerFilter
-} from "./hub-tags.js";
+import { createPlayersBadge, createTileTags } from "./hub-tags.js";
 import { APP_VERSION } from "./version.js";
 
 const CONFIG_URL = "/hub-config.json";
@@ -32,7 +28,9 @@ const LANG_SWITCHER_ID = "lang-switcher";
 const LANG_STORAGE_KEY = "bergamots-lang";
 
 const LANGS = ["fr", "en", "es"];
-const CATEGORY_ORDER = ["tous", "cartesdes", "mots", "autres"];
+// "mesjeux" (favorites + recents) is first and only shown when it has games.
+const MY_GAMES = "mesjeux";
+const CATEGORY_ORDER = [MY_GAMES, "tous", "cartesdes", "mots", "autres"];
 const CATEGORY_LABELS = {
   fr: {
     tous: "Tous",
@@ -68,7 +66,6 @@ const state = {
   games: [],
   settings: null,
   category: "cartesdes",
-  playerFilter: "any",
   lang: readStoredLang()
 };
 
@@ -200,11 +197,10 @@ async function initializeDashboard() {
     state.games = await response.json();
     state.settings = await settingsRequest;
     persistLang(state.lang);
+    if (myGames().length > 0) state.category = MY_GAMES;
     renderLangSwitcher();
     renderCategoryTabs();
     renderHubAnnouncement();
-    renderMyGamesShelf();
-    renderPlayerFilterBar();
     renderGames();
     setupSwipeNavigation();
   } catch (error) {
@@ -237,8 +233,6 @@ function selectLang(lang) {
   renderLangSwitcher();
   renderCategoryTabs();
   renderHubAnnouncement();
-  renderMyGamesShelf();
-  renderPlayerFilterBar();
   renderGames();
   renderCoins();
   refreshAuthWidget();
@@ -270,26 +264,30 @@ function renderHubAnnouncement() {
   );
 }
 
-function renderMyGamesShelf() {
-  renderShelf(
-    document.getElementById("hub-shelf"),
-    visibleGames(state.games, state.settings),
-    state.lang,
-    createLaunchAnchor
+function myGames() {
+  return shelfGames(visibleGames(state.games, state.settings));
+}
+
+function availableCategories() {
+  const hasMyGames = myGames().length > 0;
+  return CATEGORY_ORDER.filter(
+    (category) => category !== MY_GAMES || hasMyGames
   );
 }
 
-function renderPlayerFilterBar() {
-  renderPlayerFilter(
-    document.getElementById("player-filter"),
-    state.playerFilter,
-    state.lang,
-    (filterId) => {
-      state.playerFilter = filterId;
-      renderPlayerFilterBar();
-      renderGames();
-    }
-  );
+// A star toggled on a tile can empty "My games" while it is the open tab.
+function refreshAfterFavoriteChange() {
+  if (state.category === MY_GAMES && myGames().length === 0) {
+    state.category = "cartesdes";
+  }
+  renderCategoryTabs();
+  renderGames();
+}
+
+function categoryLabel(category) {
+  return category === MY_GAMES
+    ? shelfLabel(state.lang)
+    : CATEGORY_LABELS[state.lang][category];
 }
 
 function selectCategory(category) {
@@ -334,15 +332,15 @@ function renderCategoryTabs() {
   const nav = document.getElementById(TABS_ID);
   if (!nav) return;
 
-  const labels = CATEGORY_LABELS[state.lang];
   nav.innerHTML = "";
 
-  CATEGORY_ORDER.forEach((category) => {
+  availableCategories().forEach((category) => {
     const isActive = category === state.category;
     const button = document.createElement("button");
     button.type = "button";
     button.className = `category-tab category-tab--${category}${isActive ? " is-active" : ""}`;
-    button.textContent = labels[category];
+    button.dataset.id = `hub-tab-${category}`;
+    button.textContent = categoryLabel(category);
     button.addEventListener("click", () => selectCategory(category));
     nav.appendChild(button);
   });
@@ -352,28 +350,20 @@ function renderGames(direction) {
   const gridElement = document.getElementById(GRID_ID);
 
   const applyContent = () => {
-    const games = visibleGames(state.games, state.settings);
-    const gamesInCategory = (
-      state.category === "tous"
-        ? games
-        : games.filter((game) => game.category === state.category)
-    ).filter((game) => matchesPlayerFilter(game, state.playerFilter));
+    const gamesInCategory = gamesForCategory(state.category);
 
     gridElement.innerHTML = "";
 
     if (gamesInCategory.length === 0) {
       const empty = document.createElement("p");
       empty.dataset.id = "hub-games-empty";
-      empty.textContent =
-        state.playerFilter === "any"
-          ? "Aucun jeu disponible dans cette catégorie."
-          : playerFilterEmptyMessage(state.lang);
+      empty.textContent = "Aucun jeu disponible dans cette catégorie.";
       gridElement.appendChild(empty);
       return;
     }
 
     const fragment = document.createDocumentFragment();
-    sortWithPinnedFirst(gamesInCategory).forEach((game) =>
+    gamesInCategory.forEach((game) =>
       fragment.appendChild(createTileNode(game))
     );
     gridElement.appendChild(fragment);
@@ -385,6 +375,16 @@ function renderGames(direction) {
   }
 
   slideGridContent(gridElement, direction, applyContent);
+}
+
+function gamesForCategory(category) {
+  if (category === MY_GAMES) return myGames();
+  const games = visibleGames(state.games, state.settings);
+  return sortWithPinnedFirst(
+    category === "tous"
+      ? games
+      : games.filter((game) => game.category === category)
+  );
 }
 
 function slideGridContent(gridElement, direction, applyContent) {
@@ -444,12 +444,13 @@ function setupSwipeNavigation() {
       )
         return;
 
-      const currentIndex = CATEGORY_ORDER.indexOf(state.category);
+      const categories = availableCategories();
+      const currentIndex = categories.indexOf(state.category);
       const targetIndex = currentIndex + (deltaX < 0 ? 1 : -1);
 
-      if (targetIndex < 0 || targetIndex >= CATEGORY_ORDER.length) return;
+      if (targetIndex < 0 || targetIndex >= categories.length) return;
 
-      selectCategory(CATEGORY_ORDER[targetIndex]);
+      selectCategory(categories[targetIndex]);
     },
     { passive: true }
   );
@@ -471,7 +472,7 @@ function createTileNode(game) {
   wrap.className = "game-tile-wrap";
   wrap.append(
     createGameTile(game),
-    createFavoriteButton(game, state.lang, renderMyGamesShelf)
+    createFavoriteButton(game, state.lang, refreshAfterFavoriteChange)
   );
   return wrap;
 }
@@ -497,18 +498,22 @@ function createGameTile(game) {
   const title = document.createElement("div");
   title.className = "game-tile__title";
   title.textContent = game.title;
-  const tags = createTileTags(game, state.lang);
+  const tags = createTileTags(game);
   if (tags) title.appendChild(tags);
 
   media.append(img, overlay, title);
+  const players = createPlayersBadge(game);
+  if (players) {
+    title.classList.add("game-tile__title--with-players");
+    media.appendChild(players);
+  }
   const badge = createNewBadge(game, state.settings, state.lang);
   if (badge) media.appendChild(badge);
   anchor.appendChild(media);
   return anchor;
 }
 
-// Every way of launching a game (grid tile, "My games" shelf) goes through
-// here: same URL params, recents, profile hand-off, and the
+// Every way of launching a game goes through here: same URL params, recents, profile hand-off, and the
 // daily coin for `coinPolicy: "launch"` games (every other game charges per
 // match itself).
 function createLaunchAnchor(game) {

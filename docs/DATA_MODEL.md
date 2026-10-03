@@ -40,7 +40,7 @@ Fields:
 | launch | string | Yes | Relative path or external URL to open |
 | data | string | wordpack only | Path to the game's word JSON |
 | thumbnail | string | Yes | Path to `assets/thumbnail.jpg` for the tile |
-| players | [int, int] | No | `[min, max]` humans; tile tag + hub player-count filter (`hub-tags.js`). Missing = never filtered out |
+| players | [int, int] | No | `[min, max]` humans; player-count badge, bottom-right of the hub tile (`hub-tags.js`). Missing = no badge |
 | duration | int | No | Typical minutes; tile tag only |
 
 Relationships:

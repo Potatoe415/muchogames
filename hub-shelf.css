@@ -1,64 +1,19 @@
-/* "My games" shelf, favorite stars, tile tags, and the player-count filter
+/* "My games" tab, favorite stars, and tile tags / player-count badge
    (hub-shelf.js, hub-tags.js). Kept apart from hub.css, which is already
    past the file-size limit. */
 
-/* --- My games shelf --- */
-.hub-shelf {
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+/* Fifth tab: tighter spacing so the five tabs fit a phone, wrapping if not. */
+.category-tabs {
+  flex-wrap: wrap;
+  gap: 8px clamp(10px, 3.2vw, 26px);
 }
 
-.hub-shelf[hidden] {
-  display: none;
+.category-tab {
+  font-size: clamp(14px, 4.1vw, 19px);
 }
 
-.hub-shelf__title {
-  margin: 0 0 8px;
-  font-family: "Baloo 2", cursive;
-  font-size: 17px;
-  font-weight: 700;
-  color: #5a3a22;
-}
-
-.hub-shelf__row {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: thin;
-}
-
-.hub-shelf__tile {
-  flex: 0 0 auto;
-  width: 84px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  text-decoration: none;
-  color: #5a3a22;
-}
-
-.hub-shelf__thumb {
-  width: 84px;
-  height: 84px;
-  border-radius: 14px;
-  border: 2px solid #fff;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-  object-position: top;
-  background: #eef3f6;
-}
-
-.hub-shelf__name {
-  font-family: "Quicksand", system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.15;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+.category-tab--mesjeux.is-active {
+  border-bottom-color: #5b8fb9;
 }
 
 /* --- Favorite star over a grid tile --- */
@@ -89,7 +44,7 @@
   background: rgba(20, 38, 48, 0.65);
 }
 
-/* --- Tags under the tile title --- */
+/* --- Duration tag under the tile title --- */
 .game-tile__tags {
   display: flex;
   flex-wrap: wrap;
@@ -107,37 +62,23 @@
   text-shadow: none;
 }
 
-/* --- Player-count filter --- */
-.player-filter {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+/* --- Player count, bottom-right corner of the tile --- */
+.game-tile__title--with-players {
+  padding-right: 62px;
 }
 
-.player-filter__label {
-  font-family: "Quicksand", system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(90, 58, 34, 0.6);
-  margin-right: 2px;
-}
-
-.player-filter__option {
-  padding: 4px 11px;
-  border: 1px solid rgba(90, 58, 34, 0.25);
+.game-tile__players {
+  position: absolute;
+  right: 10px;
+  bottom: 13px;
+  padding: 1px 7px;
   border-radius: 999px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.22);
   font-family: "Quicksand", system-ui, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  color: #5a3a22;
-  cursor: pointer;
-}
-
-.player-filter__option.is-active {
-  background: #5a3a22;
-  border-color: #5a3a22;
-  color: #fffaeb;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: none;
+  white-space: nowrap;
 }

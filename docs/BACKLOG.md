@@ -51,7 +51,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Extend the admin page further if wanted (hub visits, per-language split, live event feed) — declined once already (2026-08-30), needs new columns + a deliberate personal-data decision.
 - [ ] Split `public/admin/admin.css` when it next grows (271/300 lines).
 - [ ] Finish the "bergamots" → "muchogames" rename: `localStorage` keys (`bergamots-lang`, `bergamots-player-name`, `bergamots-player-avatar*`, `bergamots-auth`, `bergamots-launch-counts`) and the `yatzy_*` Supabase tables are still unrenamed (deliberate — renaming either resets/migrates real user data).
-- [ ] **User**: give `players: [min, max]` and `duration` for the 12 untagged games in `public/hub-config.json` (Pictionary, Taboo, Téléphone bizarre, Dictionnaire, Jeu de mains, Pyramide, Black Stories, Salade de Cafards, Millionnaire, Easy Frog, Tranquil, GameBoy Web) and durations for all 17 — tags and the player filter only use what is filled in.
+- [ ] **User**: give `players: [min, max]` and `duration` for the 12 untagged games in `public/hub-config.json` (Pictionary, Taboo, Téléphone bizarre, Dictionnaire, Jeu de mains, Pyramide, Black Stories, Salade de Cafards, Millionnaire, Easy Frog, Tranquil, GameBoy Web) and durations for all 17 — the tile badges only show what is filled in.
 - [ ] Whether to raise `printWidth` from 80 to 100.
 - [ ] Whether PRODUCT should stay "max 3 rolls" given the online joke extra roll.
 - [ ] Whether PRODUCT/TECH should drop "avatar is Bergamots-only".

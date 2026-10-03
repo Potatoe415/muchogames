@@ -1,4 +1,4 @@
-// "My games" shelf above the category tabs: favorites first, then recently
+// "My games" category tab (the first one): favorites first, then recently
 // launched games. Both lists are per-browser localStorage.
 const RECENT_KEY = "muchogames-recent-games";
 const FAVORITES_KEY = "muchogames-favorite-games";
@@ -60,7 +60,8 @@ function toggleFavorite(id) {
   return next.includes(id);
 }
 
-function shelfGames(games) {
+/** Favorites first, then recently launched games, for the "My games" tab. */
+export function shelfGames(games) {
   const byId = new Map(games.map((game) => [game.id, game]));
   const ids = new Set([...readIds(FAVORITES_KEY), ...readIds(RECENT_KEY)]);
   return [...ids]
@@ -69,46 +70,8 @@ function shelfGames(games) {
     .slice(0, MAX_SHELF);
 }
 
-/** `createLaunchAnchor(game)` comes from hub.js so shelf launches go through
- *  the same tracking and profile hand-off as the grid tiles. */
-export function renderShelf(container, games, lang, createLaunchAnchor) {
-  if (!container) return;
-  const list = shelfGames(games);
-  container.replaceChildren();
-  container.hidden = list.length === 0;
-  if (list.length === 0) return;
-
-  const title = document.createElement("h2");
-  title.className = "hub-shelf__title";
-  title.dataset.id = "hub-my-games-title";
-  title.textContent = (COPY[lang] || COPY.fr).title;
-
-  const row = document.createElement("div");
-  row.className = "hub-shelf__row";
-  list.forEach((game) =>
-    row.appendChild(createShelfTile(game, createLaunchAnchor))
-  );
-
-  container.append(title, row);
-}
-
-function createShelfTile(game, createLaunchAnchor) {
-  const anchor = createLaunchAnchor(game);
-  anchor.className = "hub-shelf__tile";
-  anchor.dataset.id = `hub-shelf-tile-${game.id}`;
-
-  const thumb = document.createElement("img");
-  thumb.className = "hub-shelf__thumb";
-  thumb.src = game.thumbnail || "";
-  thumb.alt = "";
-  thumb.loading = "lazy";
-
-  const name = document.createElement("span");
-  name.className = "hub-shelf__name";
-  name.textContent = `${isFavorite(game.id) ? "★ " : ""}${game.title}`;
-
-  anchor.append(thumb, name);
-  return anchor;
+export function shelfLabel(lang) {
+  return (COPY[lang] || COPY.fr).title;
 }
 
 /** Star toggle placed over a grid tile (outside the tile's <a>). */
