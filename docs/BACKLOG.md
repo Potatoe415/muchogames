@@ -5,7 +5,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 
 ## Now
 - [ ] Platform common rules, steps 2–6 (`docs/tasks/platform-common-rules.md`): coins per match, shared `game-session.js`, wire every game, coinchapp/Tranquil, profile/admin stats. Done when `scripts/check-games.baseline.json` is empty.
-- [ ] **User**: choose a non-`vercel.app` domain for coinchapp and Tranquil so their launch URLs and `PROFILE_HOSTS` can move off `*.vercel.app`.
+- [ ] Move coinchapp to `cartes.muchogames.win` and Tranquil to `tranquil.muchogames.win` (owner choice 2026-10-03): add the domains on Vercel (needs owner approval), add them as Google OAuth origins, switch launch URLs + `PROFILE_HOSTS`, drop the baseline lines.
 - [ ] **User**: run `supabase/migrations/0007_coins.sql` in the Supabase SQL editor of `multigames-db` (daily coins for signed-in players). Then launch a game signed in and check the badge drops server-side (reload keeps the count).
 - [ ] **Security**: rotate the Vercel token that was pasted in chat earlier, once `tranquil`'s Vercel repoint (below) is also done.
 - [ ] **User**: delete the `Potatoe415/coinchapp` GitHub repo (Settings → Danger Zone → Delete). `Potatoe415/tranquil` stays untouched until its own repoint (below) is done.

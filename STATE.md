@@ -13,15 +13,15 @@ Context:
 - Relevant_Decisions: 0007, 0038, 0042, 0046 (to be superseded)
 
 Next:
-- Owner: pick a non-`vercel.app` domain for coinchapp and Tranquil (launch URLs + `PROFILE_HOSTS`).
+- Domains chosen: `cartes.muchogames.win` (coinchapp), `tranquil.muchogames.win` (Tranquil, after its repoint) — add on Vercel with owner approval, then switch launch URLs + `PROFILE_HOSTS`.
 - Step 2 migration, then step 3 `public/shared/js/game-session.js`, step 4 wire each in-repo game, step 5 coinchapp/Tranquil, step 6 hub/profile/admin.
 - Still pending from the roadmap: owner runs `0007_coins.sql`, signs in on `/admin`, deletes `ADMIN_PASSWORD`; live checks (BACKLOG Now).
 
 Open_Questions:
-- Domain for coinchapp/Tranquil: subdomains of `muchogames.win` or `muchogames.win/<jeu>` rewrites?
+- None.
 
 Blockers:
-- None for steps 2–4. Removing the last `*.vercel.app` launch URLs needs the domain choice above.
+- None for steps 2–4. Tranquil's subdomain waits for its Vercel repoint (BACKLOG Now).
 
 Recent_Changes:
 - 2026-10-03 `docs/PLATFORM_RULES.md` + `check:games`; hub links from coinchapp/Tranquil moved to `https://www.muchogames.win/`.
