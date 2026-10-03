@@ -95,6 +95,14 @@ function pageSources(game) {
   return { html, scripts };
 }
 
+// An `endless` game (no end screen, played until the player leaves) has no
+// moment to call finish().
+function requiredCalls(game) {
+  return Object.entries(PAGE_CALLS).filter(
+    ([call]) => !(game.endless === true && call === "MuchogamesMatch.finish(")
+  );
+}
+
 function checkPage(game) {
   const { html, scripts } = pageSources(game);
   if (!existsSync(html)) return ["missing-page"];
@@ -104,7 +112,7 @@ function checkPage(game) {
     ...Object.entries(PAGE_INCLUDES)
       .filter(([include]) => !page.includes(include))
       .map(([, rule]) => rule),
-    ...Object.entries(PAGE_CALLS)
+    ...requiredCalls(game)
       .filter(([call]) => !all.includes(call))
       .map(([, rule]) => rule),
     ...CHROME_IDS.filter((id) => !hasId(all, id)).map((id) => `has-${id}`)

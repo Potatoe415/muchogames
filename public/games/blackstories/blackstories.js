@@ -281,7 +281,8 @@ function resetHistoryAndStart() {
   renderByIndex(first);
 }
 
-function startGame() {
+async function startGame() {
+  if (!(await window.MuchogamesMatch.start("blackstories"))) return;
   els.splashScreen.classList.add("hidden");
   els.gameContainer.classList.remove("hidden");
 }

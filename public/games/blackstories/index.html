@@ -11,13 +11,13 @@
 <body>
   <header class="game-nav">
     <div class="nav-side nav-left">
-      <a href="/" class="back-button" aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
+      <a href="/" class="back-button" data-id="game-back-button" aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
     </div>
     <div class="nav-center">
       <h1 id="nav-title" class="nav-title"></h1>
     </div>
     <div class="nav-side nav-right">
-      <button id="settingsButton" class="options-button" type="button" aria-label="Options" aria-expanded="false" aria-controls="settingsPanel">
+      <button id="settingsButton" class="options-button" type="button" data-id="game-options-button" aria-label="Options" aria-expanded="false" aria-controls="settingsPanel">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="3" />
           <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
@@ -26,7 +26,7 @@
     </div>
   </header>
 
-  <div id="settingsPanel" class="options-panel" hidden>
+  <div id="settingsPanel" class="options-panel" data-id="game-options-panel" hidden>
     <div class="options-panel-backdrop" data-options-close></div>
     <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options">
       <div class="options-panel-header">
@@ -34,7 +34,7 @@
         <button type="button" class="options-panel-close" data-options-close aria-label="Fermer">×</button>
       </div>
       <div class="options-panel-body">
-        <div class="options-panel-section">
+        <div class="options-panel-section" data-id="game-options-language">
           <p class="options-panel-section-title">Langue</p>
           <div class="langWrap" role="group" aria-label="Langue">
             <button class="chip langBtn" data-lang="fr" type="button">FR</button>
@@ -42,7 +42,7 @@
             <button class="chip langBtn" data-lang="es" type="button">ES</button>
           </div>
         </div>
-        <div id="rulesSection" class="options-panel-section" style="display: none">
+        <div id="rulesSection" class="options-panel-section" data-id="game-options-rules" style="display: none">
           <p class="options-panel-section-title">Règles</p>
           <div id="rulesContent" class="rules-modal-content"></div>
         </div>
@@ -54,7 +54,7 @@
     <div class="splashCard">
       <h1 class="splashTitle">Black Stories</h1>
       <p class="splashSubtitle">Lis l’énigme, réfléchis à l’histoire qui se cache derrière, puis touche la carte pour révéler la solution complète.</p>
-      <button id="startButton" class="btn primary splashStart" type="button">Commencer</button>
+      <button id="startButton" class="btn primary splashStart" type="button" data-id="blackstories-start-button">Commencer</button>
     </div>
   </section>
 
@@ -109,6 +109,7 @@
   </main>
 
   <script src="/shared/js/game-header.js"></script>
+  <script src="/shared/js/game-session.js"></script>
   <script type="module" src="./blackstories.js"></script>
 </body>
 </html>

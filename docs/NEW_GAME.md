@@ -40,7 +40,8 @@ See `docs/GAMES_MAP.md` for what each looks like today.
   the tile tags and the hub's "how many are we?" filter; omit them rather
   than guess. An `external` game also needs `source` (its colocated
   `apps/<name>` folder) or `"coinPolicy": "launch"` when its code is not in
-  this repo (`docs/PLATFORM_RULES.md` section 3).
+  this repo (`docs/PLATFORM_RULES.md` section 3). `"endless": true` only
+  for a game with no end screen (`docs/PLATFORM_RULES.md` section 2).
 - If the game has an options panel wired with `GameHeader.initOptionsPanel`,
   it gets the "Report a problem" entry for free (`shared/CONTRACT.md`).
 - Add one row to `docs/GAMES_MAP.md`.

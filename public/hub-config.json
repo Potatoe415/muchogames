@@ -36,7 +36,8 @@
     "kind": "custom",
     "category": "autres",
     "launch": "/games/blackstories/index.html",
-    "thumbnail": "/games/blackstories/assets/thumbnail.jpg"
+    "thumbnail": "/games/blackstories/assets/thumbnail.jpg",
+    "endless": true
   },
   {
     "id": "olemains",

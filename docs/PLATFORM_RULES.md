@@ -48,6 +48,9 @@ a match.
     must not start (out of coins); the game then stays on its start screen.
   - `MuchogamesMatch.finish({ won, score })` when the match ends
     **[checked]**. Omit `won` when there is no individual result.
+  - A game with no end at all (Black Stories: riddles until you leave)
+    declares `"endless": true` in its `public/hub-config.json` entry and
+    never calls `finish`; its match lasts until the player leaves.
 - Colocated apps call the SQL function `start_muchogames_match` from their
   server when a match starts **[checked]**, and report results through
   their existing profile sync.
