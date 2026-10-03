@@ -1,7 +1,7 @@
 /* Match lifecycle shared by every in-repo game (docs/PLATFORM_RULES.md):
    start() spends the daily coin and counts the match, finish() records the
-   result, and a back button (data-id="game-back-button") asks before leaving
-   a match in progress. Plain global script (window.MuchogamesMatch) so module
+   result, and a back button (data-id="game-back-button") or an in-match quit
+   control (data-match-quit) asks before leaving a match in progress. Plain global script (window.MuchogamesMatch) so module
    and classic game scripts can both call it. */
 (function () {
   const ENDPOINT = "/api/match";
@@ -247,8 +247,12 @@
   }
 
   // Capture phase on document runs before the game's own click handlers.
+  // `data-match-quit` marks an in-match quit control (e.g. a ✖ returning to
+  // the game's own start screen): it gets the same confirmation.
   function interceptBack(event) {
-    const backButton = event.target.closest?.('[data-id="game-back-button"]');
+    const backButton = event.target.closest?.(
+      '[data-id="game-back-button"], [data-match-quit]'
+    );
     if (!backButton || !state.inProgress || state.bypassBack) return;
     event.preventDefault();
     event.stopImmediatePropagation();

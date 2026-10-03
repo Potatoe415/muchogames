@@ -103,7 +103,9 @@ Include via `<script src="/shared/js/game-session.js">`.
 - `isInProgress()` → `boolean`.
 - `showOutOfCoins()` — the shared "no coins left" dialog.
 - Any element with `data-id="game-back-button"` asks "Quitter la partie ?"
-  while a match is in progress; no game code needed.
+  while a match is in progress; no game code needed. So does any element
+  with a `data-match-quit` attribute (an in-match ✖ that returns to the
+  game's own start screen); its handler should then call `finish()`.
   Injects `/shared/css/game-session.css` and loads `profile-results.js`
   itself.
 

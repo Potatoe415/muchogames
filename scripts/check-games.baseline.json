@@ -1,12 +1,4 @@
 [
-  "olemains: loads-game-session-js",
-  "olemains: starts-match",
-  "olemains: finishes-match",
-  "olemains: has-game-back-button",
-  "olemains: has-game-options-button",
-  "olemains: has-game-options-panel",
-  "olemains: has-game-options-language",
-  "olemains: has-game-options-rules",
   "cafards: loads-game-session-js",
   "cafards: starts-match",
   "cafards: finishes-match",

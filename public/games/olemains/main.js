@@ -63,27 +63,36 @@ class OlemainsGame {
   async initRulesSupport() {
     const button = document.getElementById('olemains-options-button');
     const panel = document.getElementById('olemains-options-panel');
-    const section = document.getElementById('olemains-rules-section');
-    const content = document.getElementById('olemains-rules-content');
-
-    if (!button || !panel || !section || !content) {
-      return;
-    }
-
-    const language = document.documentElement.lang || 'fr';
-    this.rulesHtml = await loadRulesIfExists('olemains', language);
-
-    if (!this.rulesHtml) {
-      section.style.display = 'none';
-      return;
-    }
-
-    content.innerHTML = this.rulesHtml;
-    button.style.display = 'flex';
-
     if (window.GameHeader) {
       window.GameHeader.initOptionsPanel(button, panel);
     }
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.addEventListener('click', () => this.changeLanguage(btn.dataset.lang));
+    });
+    this.markActiveLanguage();
+    await this.refreshRules();
+  }
+
+  async refreshRules() {
+    const section = document.getElementById('olemains-rules-section');
+    const content = document.getElementById('olemains-rules-content');
+    this.rulesHtml = await loadRulesIfExists('olemains', this.gameState.language);
+    section.style.display = this.rulesHtml ? '' : 'none';
+    content.innerHTML = this.rulesHtml || '';
+  }
+
+  // Words already carry fr/en/es; the next word drawn uses the new language.
+  changeLanguage(language) {
+    this.gameState.language = language;
+    document.documentElement.lang = language;
+    this.markActiveLanguage();
+    void this.refreshRules();
+  }
+
+  markActiveLanguage() {
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.lang === this.gameState.language);
+    });
   }
 
   /**
@@ -100,7 +109,12 @@ class OlemainsGame {
    * @param {Object} deck - The deck to use
    * @param {string} bgColor - Background color for the deck
    */
-  startGame(deck, bgColor) {
+  async startGame(deck, bgColor) {
+    if (this.isStarting || this.isGameActive) return;
+    this.isStarting = true;
+    const allowed = await window.MuchogamesMatch.start('olemains');
+    this.isStarting = false;
+    if (!allowed) return;
     try {
       const timerDuration = readTimerInput();
       this.gameState.startGame(deck, bgColor, timerDuration);
@@ -174,6 +188,7 @@ class OlemainsGame {
    * @param {string} reason - Reason for game end
    */
   endGame(reason) {
+    window.MuchogamesMatch.finish();
     this.isGameActive = false;
     this.timer.stop();
     
@@ -188,6 +203,7 @@ class OlemainsGame {
    * Quit current game and return to setup
    */
   quitGame() {
+    window.MuchogamesMatch.finish();
     this.isGameActive = false;
     this.timer.stop();
     this.gameState.reset();

@@ -21,7 +21,10 @@ How to build a game: `docs/NEW_GAME.md`. Shared APIs: `shared/CONTRACT.md`.
   Always returns to the hub. During a match in progress it first asks
   "Quitter la partie ?" (FR/EN/ES) — handled by `game-session.js` for any
   element carrying that `data-id`, so a game writes no code for it.
-- **Options button**, top-right gear, `data-id="game-options-button"`,
+- An in-match screen may replace the back button with a ✖ that returns to
+  the game's own start screen. It carries `data-match-quit` (same
+  confirmation) and ends the match with `finish()`.
+- **Options button**, top-right gear, always visible, `data-id="game-options-button"`,
   opening one panel `data-id="game-options-panel"` **[checked]**, wired with
   `GameHeader.initOptionsPanel` **[checked]**.
 - The options panel always contains, in this order:
