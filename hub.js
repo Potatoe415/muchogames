@@ -11,12 +11,7 @@ import {
   renderAnnouncement,
   visibleGames
 } from "./hub-catalog.js";
-import {
-  initCoins,
-  renderCoinBadge,
-  showOutOfCoins,
-  spendCoin
-} from "./hub-coins.js";
+import { initCoins, renderCoinBadge, spendLaunchCoin } from "./hub-coins.js";
 import {
   createFavoriteButton,
   recordRecentGame,
@@ -256,11 +251,17 @@ function renderCoins() {
   renderCoinBadge(document.getElementById("hub-coins"), state.lang);
 }
 
-// Shows the browser count at once, then the server balance when it arrives.
+// Shows the last known count at once, then the server balance when it
+// arrives. Also on a back/forward-cache return from a game, where matches may
+// have spent coins in the meantime.
 function refreshCoins() {
   initCoins().finally(renderCoins);
   renderCoins();
 }
+
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) refreshCoins();
+});
 
 function renderHubAnnouncement() {
   renderAnnouncement(
@@ -508,8 +509,9 @@ function createGameTile(game) {
 }
 
 // Every way of launching a game (grid tile, "My games" shelf) goes through
-// here: same URL params, daily coin, launch tracking, recents, and profile
-// hand-off.
+// here: same URL params, launch tracking, recents, profile hand-off, and the
+// daily coin for `coinPolicy: "launch"` games (every other game charges per
+// match itself).
 function createLaunchAnchor(game) {
   const anchor = document.createElement("a");
   anchor.href = determineTargetUrl(game);
@@ -538,12 +540,14 @@ async function launchGame(game, href, newTab) {
   const tab = newTab ? window.open("about:blank", "_blank") : null;
   if (tab) tab.opener = null;
   try {
-    const allowed = await spendCoin();
-    renderCoins();
-    if (!allowed) {
-      tab?.close();
-      showOutOfCoins(state.lang);
-      return;
+    if (game.coinPolicy === "launch") {
+      const allowed = await spendLaunchCoin(game.id);
+      renderCoins();
+      if (!allowed) {
+        tab?.close();
+        window.MuchogamesMatch?.showOutOfCoins();
+        return;
+      }
     }
     trackGameLaunch(game.id);
     recordRecentGame(game.id);

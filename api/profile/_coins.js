@@ -1,4 +1,4 @@
-// Daily play coins for api/profile/index.js. Not a route itself.
+// Signed-in daily coin balance, read by api/match.js. Not a route itself.
 import { isAdminUserId } from "../_lib/adminAuth.js";
 import { sendError, sendJson } from "../_lib/http.js";
 import { getServiceClient } from "../_lib/supabase.js";
@@ -35,33 +35,5 @@ export async function handleCoins(res, identity) {
     unlimited: false,
     daily: DAILY_COINS,
     remaining: Math.max(0, DAILY_COINS - spent)
-  });
-}
-
-/** `{ spent: false }` (HTTP 200) when today's coins are used up. */
-export async function handleSpendCoin(res, identity) {
-  if (isAdminUserId(identity.userId)) {
-    sendJson(res, 200, { spent: true, unlimited: true });
-    return;
-  }
-
-  const { data, error } = await getServiceClient().rpc(
-    "spend_muchogames_coin",
-    { p_id: identity.userId, p_daily: DAILY_COINS }
-  );
-
-  if (error) {
-    sendError(res, "server-error", error.message);
-    return;
-  }
-
-  if (data === null) {
-    sendJson(res, 200, { spent: false, remaining: 0 });
-    return;
-  }
-
-  sendJson(res, 200, {
-    spent: true,
-    remaining: Math.max(0, DAILY_COINS - data)
   });
 }

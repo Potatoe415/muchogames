@@ -192,9 +192,9 @@ Sensitive_Data: None.
 
 ### Entity: Coins
 
-Purpose: Daily play allowance of a signed-in player (10 coins per Paris day, one per hub launch).
+Purpose: Daily play allowance (10 coins per Paris day, one per match started — `docs/PLATFORM_RULES.md`; one per hub launch only for `coinPolicy: "launch"` games).
 Storage: `public.muchogames_coins` (`supabase/migrations/0007_coins.sql`): `profile_id` (PK, references `auth.users`, cascade), `day` (Paris date the count belongs to), `spent`, `updated_at`. One row per player, overwritten when the day changes; no purge needed. Spent only through `spend_muchogames_coin(p_id, p_daily)` (service-role only), which computes the Paris day itself and returns null when the allowance is used up.
-Access_Rules: RLS on, zero policies. Read/spent via `api/profile` `coins` / `spend-coin` for the caller's own row; admins never touch it (unlimited). Anonymous players use the browser key `muchogames-coins` (`{ day, spent }`) instead.
+Access_Rules: RLS on, zero policies. Read/spent only through `POST /api/match` (`coins` / `start`) for the caller's own row, and by the coinchapp/Tranquil servers via `start_muchogames_match`; admins are never charged. The 2026-10-02 browser counter `muchogames-coins` and the `api/profile` `coins` / `spend-coin` actions were removed on 2026-10-03.
 Sensitive_Data: None beyond the profile link.
 
 Per match (`docs/PLATFORM_RULES.md`, `supabase/migrations/0008_match_coins.sql`): `public.muchogames_device_coins` holds anonymous players' counters — `device_id` (PK, random UUID created in the browser under `muchogames-device-id`), `day`, `spent`, `updated_at`; rows older than 7 days are deleted on each spend. `start_muchogames_match(p_game_id, p_daily, p_profile_id, p_device_id, p_unlimited)` spends from the profile row (via `spend_muchogames_coin`) or the device row, returns coins left or null when out, and on success inserts a `match_start` row in `muchogames_events` and increments `muchogames_game_stats.started` for a signed-in profile. `muchogames_device_coins_left(p_device_id, p_daily)` reads a device's balance. Both service-role only, called by public `POST /api/match` (`start` 30/min, `coins` 60/min per IP). The device id is not linked to any person; knowing one lets you spend its coins. Browser key `muchogames-match-counts` (`{ [gameId]: n }`) counts matches started locally.

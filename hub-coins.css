@@ -1,4 +1,5 @@
-/* Daily coins badge and "out of coins" dialog (hub-coins.js). */
+/* Daily coins badge (hub-coins.js). The out-of-coins dialog is the shared
+   one from /shared/js/game-session.js. */
 .hub-coins {
   align-self: flex-end;
   width: fit-content;
@@ -17,58 +18,4 @@
 .hub-coins.is-empty {
   border-color: rgba(179, 38, 30, 0.5);
   color: #b3261e;
-}
-
-.hub-coins-dialog {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hub-coins-dialog[hidden] {
-  display: none;
-}
-
-.hub-coins-dialog__backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.5);
-}
-
-.hub-coins-dialog__sheet {
-  position: relative;
-  width: min(320px, calc(100% - 40px));
-  padding: 20px;
-  border-radius: 20px;
-  background: #fffaeb;
-  text-align: center;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
-}
-
-.hub-coins-dialog__icon {
-  margin: 0;
-  font-size: 40px;
-  filter: grayscale(1);
-}
-
-.hub-coins-dialog__text {
-  margin: 8px 0 16px;
-  font-family: "Quicksand", system-ui, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #5a3a22;
-}
-
-.hub-coins-dialog__ok {
-  padding: 10px 28px;
-  border: none;
-  border-radius: 12px;
-  background: #e08b2f;
-  color: #fff;
-  font-family: "Quicksand", system-ui, sans-serif;
-  font-weight: 700;
-  cursor: pointer;
 }

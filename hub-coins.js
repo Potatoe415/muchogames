@@ -1,128 +1,70 @@
-// Daily play coins: 10 per day, one spent per game launched from the hub,
-// back to 10 at midnight Europe/Paris (decision 0046). Signed-in players are
-// counted server-side (POST /api/profile `coins` / `spend-coin`); anonymous
-// players — and signed-in ones whose 1h Google token has expired — fall back
-// to this browser's counter. Admins are unlimited.
+// Daily coins badge (docs/PLATFORM_RULES.md): 10 per day, back at midnight
+// Europe/Paris, spent per match by the games themselves through
+// POST /api/match. The hub only spends one when it opens a
+// `coinPolicy: "launch"` game, whose matches it cannot see. One server-side
+// counter: the Google profile when signed in, else this browser's device id.
+// Admins are unlimited.
 import { readAdminFlag } from "./auth-admin.js";
 
 // Must match DAILY_COINS in api/profile/_coins.js.
 const DAILY_COINS = 10;
-const LOCAL_KEY = "muchogames-coins";
+const REQUEST_TIMEOUT_MS = 4000;
 
-const COPY = {
-  fr: {
-    label: "Pièces du jour",
-    out: "Vous n'avez plus de pièces pour aujourd'hui. Revenez demain !",
-    ok: "OK"
-  },
-  en: {
-    label: "Today's coins",
-    out: "You're out of coins for today. Come back tomorrow!",
-    ok: "OK"
-  },
-  es: {
-    label: "Monedas de hoy",
-    out: "No te quedan monedas por hoy. ¡Vuelve mañana!",
-    ok: "OK"
-  }
+const LABELS = {
+  fr: "Pièces du jour",
+  en: "Today's coins",
+  es: "Monedas de hoy"
 };
 
 const coins = { remaining: DAILY_COINS, unlimited: false };
 
-function parisToday() {
-  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris" }).format(
-    new Date()
-  );
-}
-
-function readLocalSpent() {
-  try {
-    const stored = JSON.parse(localStorage.getItem(LOCAL_KEY) || "{}");
-    const spent = Number(stored.spent);
-    return stored.day === parisToday() && Number.isInteger(spent) && spent > 0
-      ? spent
-      : 0;
-  } catch {
-    return 0;
-  }
-}
-
-function writeLocalSpent(spent) {
-  try {
-    localStorage.setItem(
-      LOCAL_KEY,
-      JSON.stringify({ day: parisToday(), spent })
-    );
-  } catch {
-    // Storage unavailable — the counter just won't survive a reload.
-  }
-}
-
-function liveIdToken() {
-  return window.MuchogamesProfileResults?.readLiveIdToken() || "";
-}
-
-async function postProfile(action, idToken) {
-  const response = await fetch("/api/profile", {
+async function postMatch(body) {
+  const response = await fetch("/api/match", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ action, idToken })
+    body: JSON.stringify({
+      ...body,
+      deviceId: window.MuchogamesMatch?.deviceId() || "",
+      idToken: window.MuchogamesProfileResults?.readLiveIdToken() || ""
+    }),
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS)
   });
   return {
-    status: response.status,
+    ok: response.ok,
     data: await response.json().catch(() => null)
   };
 }
 
-// Keeps the browser counter aligned with the server, so an expired token
-// later continues from the same count instead of granting a fresh 10.
-function applyServerBalance(data) {
+function applyBalance(data) {
   coins.unlimited = data.unlimited === true;
-  if (coins.unlimited) return;
-  coins.remaining = Math.max(0, Number(data.remaining) || 0);
-  writeLocalSpent(DAILY_COINS - coins.remaining);
+  const remaining = Number(data.remaining);
+  if (!coins.unlimited && Number.isFinite(remaining)) {
+    coins.remaining = Math.max(0, remaining);
+  }
 }
 
 export async function initCoins() {
   coins.unlimited = readAdminFlag() === "1";
-  coins.remaining = Math.max(0, DAILY_COINS - readLocalSpent());
-  const idToken = liveIdToken();
-  if (!idToken || coins.unlimited) return;
   try {
-    const { status, data } = await postProfile("coins", idToken);
-    if (status === 200 && data) applyServerBalance(data);
+    const { ok, data } = await postMatch({ action: "coins" });
+    if (ok && data) applyBalance(data);
   } catch {
-    // Offline — keep the browser counter.
+    // Offline — keep the last known balance.
   }
 }
 
-function spendLocal() {
-  const spent = readLocalSpent();
-  if (spent >= DAILY_COINS) {
-    coins.remaining = 0;
-    return false;
-  }
-  writeLocalSpent(spent + 1);
-  coins.remaining = DAILY_COINS - spent - 1;
-  return true;
-}
-
-/** Resolves true when the launch may go ahead. A server or network failure
- *  lets the player through rather than blocking play. */
-export async function spendCoin() {
-  if (coins.unlimited) return true;
-  const idToken = liveIdToken();
-  if (!idToken) return spendLocal();
+/** For `coinPolicy: "launch"` games only. Resolves true when the launch may
+ *  go ahead; a server or network failure lets the player through. */
+export async function spendLaunchCoin(gameId) {
   try {
-    const { status, data } = await postProfile("spend-coin", idToken);
-    if (status === 401) return spendLocal();
-    if (status !== 200 || !data) return true;
-    if (data.unlimited) {
-      coins.unlimited = true;
-      return true;
+    const { ok, data } = await postMatch({ action: "start", gameId });
+    if (!ok || !data) return true;
+    if (data.started === false) {
+      coins.remaining = 0;
+      return false;
     }
-    applyServerBalance(data);
-    return data.spent === true;
+    applyBalance(data);
+    return true;
   } catch {
     return true;
   }
@@ -130,43 +72,13 @@ export async function spendCoin() {
 
 export function renderCoinBadge(container, lang) {
   if (!container) return;
-  const copy = COPY[lang] || COPY.fr;
+  const label = LABELS[lang] || LABELS.fr;
   const value = coins.unlimited ? "∞" : `${coins.remaining}/${DAILY_COINS}`;
   container.textContent = `🪙 ${value}`;
-  container.title = copy.label;
-  container.setAttribute("aria-label", `${copy.label} : ${value}`);
+  container.title = label;
+  container.setAttribute("aria-label", `${label} : ${value}`);
   container.classList.toggle(
     "is-empty",
     !coins.unlimited && coins.remaining === 0
   );
-}
-
-export function showOutOfCoins(lang) {
-  const copy = COPY[lang] || COPY.fr;
-  let dialog = document.querySelector('[data-id="hub-out-of-coins"]');
-  if (!dialog) {
-    dialog = document.createElement("div");
-    dialog.className = "hub-coins-dialog";
-    dialog.dataset.id = "hub-out-of-coins";
-    dialog.setAttribute("role", "alertdialog");
-    dialog.setAttribute("aria-modal", "true");
-    dialog.innerHTML = `
-      <div class="hub-coins-dialog__backdrop" data-coins-close></div>
-      <div class="hub-coins-dialog__sheet">
-        <p class="hub-coins-dialog__icon" aria-hidden="true">🪙</p>
-        <p class="hub-coins-dialog__text" data-id="hub-out-of-coins-message"></p>
-        <button type="button" class="hub-coins-dialog__ok" data-coins-close
-          data-id="hub-out-of-coins-ok"></button>
-      </div>`;
-    dialog.querySelectorAll("[data-coins-close]").forEach((el) => {
-      el.addEventListener("click", () => {
-        dialog.hidden = true;
-      });
-    });
-    document.body.appendChild(dialog);
-  }
-  dialog.querySelector(".hub-coins-dialog__text").textContent = copy.out;
-  dialog.querySelector(".hub-coins-dialog__ok").textContent = copy.ok;
-  dialog.hidden = false;
-  dialog.querySelector(".hub-coins-dialog__ok").focus();
 }
