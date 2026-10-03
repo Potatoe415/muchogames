@@ -14,7 +14,7 @@
       <div class="scanlines" aria-hidden="true"></div>
 
       <header class="topbar">
-        <button class="icon-button" id="homeShortcut" type="button" aria-label="Return to home screen">
+        <button class="icon-button" id="homeShortcut" type="button" data-id="game-back-button" aria-label="Return to home screen">
           <span class="icon">⌂</span>
         </button>
         <div class="brand-lockup">
@@ -27,13 +27,14 @@
           <h1 class="visually-hidden" id="brandTitle">Qui veut gagner des millions</h1>
         </div>
         <div class="topbar-actions">
-          <button class="icon-button is-hidden" id="restartShortcut" type="button" aria-label="Restart game">
+          <button class="icon-button is-hidden" id="restartShortcut" type="button" data-id="millionaire-restart-button" data-match-quit aria-label="Restart game">
             <span class="icon">↻</span>
           </button>
           <button
             class="icon-button options-button"
             id="optionsShortcut"
             type="button"
+            data-id="game-options-button"
             aria-label="Options"
             aria-expanded="false"
             aria-controls="optionsPanel"
@@ -43,7 +44,7 @@
         </div>
       </header>
 
-      <div id="optionsPanel" class="options-panel" hidden>
+      <div id="optionsPanel" class="options-panel" data-id="game-options-panel" hidden>
         <div class="options-panel-backdrop" data-options-close></div>
         <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options">
           <div class="options-panel-header">
@@ -51,7 +52,7 @@
             <button type="button" class="options-panel-close" data-options-close aria-label="Fermer">×</button>
           </div>
           <div class="options-panel-body">
-            <div class="options-panel-section">
+            <div class="options-panel-section" data-id="game-options-language">
               <label class="language-picker" for="languageSelect">
                 <span id="languageLabel">Language</span>
                 <select id="languageSelect">
@@ -62,7 +63,7 @@
                 </select>
               </label>
             </div>
-            <div id="rulesSection" class="options-panel-section" style="display: none">
+            <div id="rulesSection" class="options-panel-section" data-id="game-options-rules" style="display: none">
               <p id="rulesLabel" class="options-panel-section-title">Regles</p>
               <div id="rulesContent" class="rules-modal-content"></div>
             </div>
@@ -244,6 +245,7 @@
     </template>
 
     <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
     <script type="module" src="./app.js"></script>
   </body>
 </html>

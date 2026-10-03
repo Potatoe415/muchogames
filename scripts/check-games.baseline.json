@@ -1,12 +1,4 @@
 [
-  "millionaire: loads-game-session-js",
-  "millionaire: starts-match",
-  "millionaire: finishes-match",
-  "millionaire: has-game-back-button",
-  "millionaire: has-game-options-button",
-  "millionaire: has-game-options-panel",
-  "millionaire: has-game-options-language",
-  "millionaire: has-game-options-rules",
   "pyramide: loads-game-session-js",
   "pyramide: starts-match",
   "pyramide: finishes-match",

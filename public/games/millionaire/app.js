@@ -536,13 +536,18 @@ function validateQuestionSupply() {
   });
 }
 
-function startGame() {
+async function startGame() {
   unlockAudio();
   const copy = getCopy();
   if (!state.dataset) {
     showErrorModal(copy.missingDataStart(getQuestionFile().replace("./", "")));
     return;
   }
+  if (state.isStarting) return;
+  state.isStarting = true;
+  const allowed = await window.MuchogamesMatch.start("millionaire");
+  state.isStarting = false;
+  if (!allowed) return;
   try {
     resetGameState();
     switchScreen("game");
@@ -741,6 +746,7 @@ function finishGame(reason) {
   const guaranteedLabel = getGuaranteedPrizeLabel(state.currentRound - 1);
   const wonPrize = reason === "win" ? CONFIG.prizeLadder[CONFIG.totalRounds - 1] : null;
   const wonLabel = reason === "win" ? formatPrizeLabelByAmount(wonPrize) : guaranteedLabel;
+  window.MuchogamesMatch.finish({ won: reason === "win", score: state.currentRound });
   switchScreen("result");
   renderLadder();
   if (reason === "win") {
@@ -765,6 +771,7 @@ function finishGame(reason) {
 }
 
 function returnHome() {
+  window.MuchogamesMatch.finish();
   clearTimer();
   closeModals();
   switchScreen("start");
