@@ -17,7 +17,7 @@ export const SOLITAIRE_RULES = {
       },
       {
         heading: "Jouer une carte",
-        body: "Touchez une carte : si elle n'a qu'une place possible, elle y va directement. Si elle en a plusieurs, elle s'allume avec ses destinations : touchez celle que vous voulez. Touchez-la à nouveau pour la reposer.",
+        body: "Faites glisser la carte (ou la suite) jusqu'à sa place. Ou touchez-la : elle s'allume avec ses destinations possibles, puis touchez celle que vous voulez. Touchez-la à nouveau pour la reposer.",
       },
       {
         heading: "Terminer",
@@ -42,7 +42,7 @@ export const SOLITAIRE_RULES = {
       },
       {
         heading: "Playing a card",
-        body: "Tap a card: if it has only one place to go, it goes there. If it has several, it lights up with its destinations: tap the one you want. Tap it again to put it back down.",
+        body: "Drag the card (or run) to where it goes. Or tap it: it lights up with its possible destinations, then tap the one you want. Tap it again to put it back down.",
       },
       {
         heading: "Finish",

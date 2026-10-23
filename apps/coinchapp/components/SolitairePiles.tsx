@@ -1,9 +1,10 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { CSSProperties, PointerEvent as ReactPointerEvent, ReactNode } from "react";
 import { SUITS, type Suit } from "@/lib/cards";
 import { isSamePile, type GameState, type PileRef, type Target, type TableauCard } from "@/lib/solitaire";
 import { CardBack, PlayingCard } from "./PlayingCard";
+import { dropKey, type DragState } from "./useSolitaireDrag";
 
 const CARD_H = "calc(var(--card-md-w) * 1.5)";
 const FACE_DOWN_STEP = 0.2;
@@ -16,6 +17,8 @@ export interface PilesProps {
   selection: PileRef | null;
   targets: Target[];
   onTap: (pile: PileRef) => void;
+  drag: DragState | null;
+  onDragStart: (pile: PileRef, event: ReactPointerEvent) => void;
   labels: { draw: string; redeal: string; foundation: string; emptyColumn: string };
 }
 
@@ -23,12 +26,24 @@ function isTarget(targets: Target[], target: Target): boolean {
   return targets.some((legal) => isSamePile(legal, target));
 }
 
-/** A card-sized dashed outline: an empty pile, tappable when given `onClick`. */
-function EmptySlot({ label, dataId, highlighted, onClick, children }: {
+/** A pressable card: starts a drag, and follows the pointer while dragged. */
+function draggableProps(props: Pick<PilesProps, "drag" | "onDragStart">, pile: PileRef, dragged: boolean) {
+  const style: CSSProperties = { touchAction: "none" };
+  if (dragged && props.drag) {
+    style.transform = `translate(${props.drag.dx}px, ${props.drag.dy}px)`;
+    style.zIndex = 50;
+  }
+  return { style, onPointerDown: (event: ReactPointerEvent) => props.onDragStart(pile, event) };
+}
+
+/** A card-sized dashed outline: an empty pile, tappable when given `onClick`,
+ *  and a drag-and-drop landing zone when given `drop`. */
+function EmptySlot({ label, dataId, highlighted, onClick, drop, children }: {
   label: string;
   dataId: string;
   highlighted?: boolean;
   onClick?: () => void;
+  drop?: Target;
   children?: ReactNode;
 }) {
   return (
@@ -36,6 +51,7 @@ function EmptySlot({ label, dataId, highlighted, onClick, children }: {
       type="button"
       aria-label={label}
       data-id={dataId}
+      data-drop={drop ? dropKey(drop) : undefined}
       onClick={onClick}
       style={{ width: "var(--card-md-w)", height: CARD_H }}
       className={`flex items-center justify-center rounded-lg border-2 border-dashed border-white/35 text-[calc(var(--card-md-w)*0.5)] font-black text-white/35 ${highlighted ? TARGET_RING : ""}`}
@@ -61,15 +77,22 @@ function Stock({ state, onDraw, labels }: { state: GameState; onDraw: () => void
 }
 
 /** The waste's top card, plus (draw 3) the two under it fanned to its left. */
-function Waste({ state, selection, onTap }: Pick<PilesProps, "state" | "selection" | "onTap">) {
+function Waste({ state, selection, onTap, drag, onDragStart }: Pick<PilesProps, "state" | "selection" | "onTap" | "drag" | "onDragStart">) {
   const shown = state.waste.slice(-state.drawCount);
   if (shown.length === 0) return <div style={{ width: "var(--card-md-w)", height: CARD_H }} data-id="solitaire-waste-empty" />;
   return (
     <div className="relative" style={{ width: "calc(var(--card-md-w) * 1.6)", height: CARD_H }} data-id="solitaire-waste">
       {shown.map((card, i) => {
         const isTop = i === shown.length - 1;
+        const left = { left: `calc(var(--card-md-w) * ${0.3 * i})` };
+        const dragProps = isTop ? draggableProps({ drag, onDragStart }, { kind: "waste" }, drag?.from.kind === "waste") : null;
         return (
-          <div key={`${card.rank}${card.suit}`} className="absolute top-0" style={{ left: `calc(var(--card-md-w) * ${0.3 * i})` }}>
+          <div
+            key={`${card.rank}${card.suit}`}
+            className="absolute top-0"
+            style={{ ...left, ...dragProps?.style }}
+            onPointerDown={dragProps?.onPointerDown}
+          >
             <PlayingCard
               card={card}
               playable={isTop}
@@ -84,19 +107,21 @@ function Waste({ state, selection, onTap }: Pick<PilesProps, "state" | "selectio
   );
 }
 
-function Foundation({ suit, state, selection, targets, onTap, labels }: PilesProps & { suit: Suit }) {
+function Foundation({ suit, state, selection, targets, onTap, labels, ...dragging }: PilesProps & { suit: Suit }) {
   const top = state.foundations[suit].at(-1);
-  const pile: PileRef = { kind: "foundation", suit };
+  const pile: Target & PileRef = { kind: "foundation", suit };
   const highlighted = isTarget(targets, pile);
   if (!top) {
     return (
-      <EmptySlot label={`${labels.foundation} ${SUIT_SYMBOL[suit]}`} dataId={`solitaire-foundation-${suit}`} highlighted={highlighted} onClick={() => onTap(pile)}>
+      <EmptySlot label={`${labels.foundation} ${SUIT_SYMBOL[suit]}`} dataId={`solitaire-foundation-${suit}`} highlighted={highlighted} onClick={() => onTap(pile)} drop={pile}>
         {SUIT_SYMBOL[suit]}
       </EmptySlot>
     );
   }
+  const dragged = dragging.drag?.from.kind === "foundation" && dragging.drag.from.suit === suit;
+  const { style, onPointerDown } = draggableProps(dragging, pile, dragged);
   return (
-    <div className={highlighted ? TARGET_RING : ""}>
+    <div className={`relative ${highlighted ? TARGET_RING : ""}`} data-drop={dropKey(pile)} style={style} onPointerDown={onPointerDown}>
       <PlayingCard
         card={top}
         playable
@@ -114,7 +139,7 @@ export function TopRow({ onDraw, foundationsHidden, ...props }: PilesProps & { o
     <div className="flex items-start justify-between" data-id="solitaire-top-row">
       <div className="flex gap-[calc(var(--card-md-w)*0.08)]">
         <Stock state={props.state} onDraw={onDraw} labels={props.labels} />
-        <Waste state={props.state} selection={props.selection} onTap={props.onTap} />
+        <Waste {...props} />
       </div>
       <div
         className="flex gap-[calc(var(--card-md-w)*0.08)]"
@@ -138,40 +163,53 @@ function cardTops(column: TableauCard[]): number[] {
   });
 }
 
-function TableauColumn({ col, column, selection, targets, onTap, labels }: Omit<PilesProps, "state"> & { col: number; column: TableauCard[] }) {
-  const highlighted = isTarget(targets, { kind: "tableau", col });
+/** Index the dragged run starts at when it comes from column `col`. */
+function draggedFrom(drag: DragState | null, col: number, columnLength: number): number | null {
+  if (drag?.from.kind !== "tableau" || drag.from.col !== col) return null;
+  return drag.from.index ?? columnLength - 1;
+}
+
+function TableauColumn({ col, column, selection, targets, onTap, labels, ...dragging }: Omit<PilesProps, "state"> & { col: number; column: TableauCard[] }) {
+  const target: Target = { kind: "tableau", col };
+  const highlighted = isTarget(targets, target);
   if (column.length === 0) {
-    return <EmptySlot label={labels.emptyColumn} dataId={`solitaire-tableau-${col}-empty`} highlighted={highlighted} onClick={() => onTap({ kind: "tableau", col })} />;
+    return <EmptySlot label={labels.emptyColumn} dataId={`solitaire-tableau-${col}-empty`} highlighted={highlighted} onClick={() => onTap(target)} drop={target} />;
   }
   const tops = cardTops(column);
   const selectedFrom = selection?.kind === "tableau" && selection.col === col ? selection.index ?? column.length - 1 : null;
+  const dragFrom = draggedFrom(dragging.drag, col, column.length);
   return (
     <div
       className="relative"
       style={{ width: "var(--card-md-w)", height: `calc(var(--card-md-w) * ${1.5 + tops[tops.length - 1]})` }}
-      onClick={selection ? () => onTap({ kind: "tableau", col }) : undefined}
+      onClick={selection ? () => onTap(target) : undefined}
       data-id={`solitaire-tableau-${col}`}
+      data-drop={dropKey(target)}
     >
-      {column.map((entry, index) => (
-        <div
-          key={`${entry.card.rank}${entry.card.suit}`}
-          className={`absolute left-0 ${highlighted && index === column.length - 1 ? TARGET_RING : ""}`}
-          style={{ top: `calc(var(--card-md-w) * ${tops[index]})` }}
-          onClick={entry.faceUp ? (event) => event.stopPropagation() : undefined}
-        >
-          {entry.faceUp ? (
-            <PlayingCard
-              card={entry.card}
-              playable
-              showPlayableRing={selectedFrom !== null && index >= selectedFrom}
-              onClick={() => onTap({ kind: "tableau", col, index })}
-              dataId={`solitaire-tableau-${col}-card-${index}`}
-            />
-          ) : (
-            <CardBack dataId={`solitaire-tableau-${col}-card-${index}`} />
-          )}
-        </div>
-      ))}
+      {column.map((entry, index) => {
+        const dragProps = entry.faceUp ? draggableProps(dragging, { kind: "tableau", col, index }, dragFrom !== null && index >= dragFrom) : null;
+        return (
+          <div
+            key={`${entry.card.rank}${entry.card.suit}`}
+            className={`absolute left-0 ${highlighted && index === column.length - 1 ? TARGET_RING : ""}`}
+            style={{ top: `calc(var(--card-md-w) * ${tops[index]})`, ...dragProps?.style }}
+            onPointerDown={dragProps?.onPointerDown}
+            onClick={entry.faceUp ? (event) => event.stopPropagation() : undefined}
+          >
+            {entry.faceUp ? (
+              <PlayingCard
+                card={entry.card}
+                playable
+                showPlayableRing={selectedFrom !== null && index >= selectedFrom}
+                onClick={() => onTap({ kind: "tableau", col, index })}
+                dataId={`solitaire-tableau-${col}-card-${index}`}
+              />
+            ) : (
+              <CardBack dataId={`solitaire-tableau-${col}-card-${index}`} />
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

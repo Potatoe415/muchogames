@@ -19,11 +19,10 @@ function samePileRef(a: PileRef, b: PileRef): boolean {
   return a.kind === b.kind;
 }
 
-/** One tap on the table. With a card picked up, a tap on a legal
- *  destination moves it there, a second tap on it puts it back down, and any
- *  other tap starts over from the tapped pile. Without one, the tapped
- *  card moves straight to its only legal destination, or is picked up when
- *  it has several (the player then taps the one they want). */
+/** One tap on the table. A card never moves on its own: the first tap picks
+ *  it up (only if it can go somewhere), a tap on a legal destination then
+ *  moves it there, a second tap on it puts it back down, and any other tap
+ *  starts over from the tapped pile. */
 export function resolveTap(state: GameState, selection: PileRef | null, pile: PileRef): TapResult {
   if (selection) {
     const target = asTarget(pile);
@@ -31,9 +30,5 @@ export function resolveTap(state: GameState, selection: PileRef | null, pile: Pi
     if (moved) return { state: moved, selection: null };
     if (samePileRef(selection, pile)) return { state, selection: null };
   }
-  const targets = legalTargets(state, pile);
-  if (targets.length === 1) {
-    return { state: applyMove(state, pile, targets[0]) ?? state, selection: null };
-  }
-  return { state, selection: targets.length > 1 ? pile : null };
+  return { state, selection: legalTargets(state, pile).length > 0 ? pile : null };
 }

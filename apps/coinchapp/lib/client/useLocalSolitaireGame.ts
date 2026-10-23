@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
+  applyMove,
   autoFinishStep,
   canAutoFinish,
   createInitialState,
@@ -22,6 +23,8 @@ const AUTO_FINISH_STEP_MS = 90;
 export interface SolitaireActions {
   onDraw: () => void;
   onTap: (pile: PileRef) => void;
+  /** End of a drag and drop; ignored when the move is illegal. */
+  onDrop: (from: PileRef, to: Target) => void;
   /** Only offered while `canAutoFinish` is true. */
   onAutoFinish: () => void;
 }
@@ -71,6 +74,10 @@ export function useLocalSolitaireGame(seed: number, drawCount: DrawCount) {
       if (autoFinishing) return;
       const result = resolveTap(stateRef.current, selectionRef.current, pile);
       commit(result.state, result.selection);
+    },
+    onDrop: (from, to) => {
+      const moved = autoFinishing ? null : applyMove(stateRef.current, from, to);
+      if (moved) commit(moved, null);
     },
     onAutoFinish: () => canAutoFinish(stateRef.current) && setAutoFinishing(true),
   };

@@ -5,13 +5,14 @@ import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
 import { useRecordMatchResult } from "@/lib/client/matchResultStats";
 import type { SolitaireActions } from "@/lib/client/useLocalSolitaireGame";
-import type { GameState, PileRef, Target } from "@/lib/solitaire";
+import { legalTargets, type GameState, type PileRef, type Target } from "@/lib/solitaire";
 import { GameInfoButton } from "./GameHud";
 import { RulesModal } from "./RulesModal";
 import { SOLITAIRE_LABELS } from "./solitaireLabels";
 import { Tableau, TopRow } from "./SolitairePiles";
 import { SolitaireWinCascade } from "./SolitaireWinCascade";
 import { TableShell } from "./TableShell";
+import { useSolitaireDrag } from "./useSolitaireDrag";
 
 /** 7 columns (+ gaps) across the width; the tallest possible column (6 face
  *  down + K..A face up) plus the top row and HUD down the height. */
@@ -42,7 +43,16 @@ export function SolitaireTable({
   const [panelOpen, setPanelOpen] = useState(false);
   const [cascadeDone, setCascadeDone] = useState(false);
   const finished = state.phase === "finished";
-  const piles = { state, selection, targets, onTap: actions.onTap, labels };
+  const { drag, startDrag, isClickAfterDrag } = useSolitaireDrag(actions.onDrop);
+  const piles = {
+    state,
+    selection,
+    targets: drag ? legalTargets(state, drag.from) : targets,
+    onTap: (pile: PileRef) => !isClickAfterDrag() && actions.onTap(pile),
+    drag,
+    onDragStart: startDrag,
+    labels,
+  };
   useRecordMatchResult(gameId, finished, true, "solitaire");
 
   return (
