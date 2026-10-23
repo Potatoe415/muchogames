@@ -65,7 +65,7 @@ repo's game-scoped rules.
 | id (in `hub-config.json`) | code lives at | deploys at |
 |---|---|---|
 | `tranquil` | `apps/tranquil/` (npm workspaces: `shared` + `client` + `api`) | tranquil-woad.vercel.app — **still its own original Vercel project**, repoint not started |
-| `coinche`, `bouilla`, `president`, `bataillecorse` | `apps/coinchapp/` (Next.js App Router) | coinchapp.vercel.app — Vercel project `coinchapp` (renamed back from `coinchapp-monorepo` post-cleanup), built from this repo's `apps/coinchapp/` (repointed + domain moved 2026-09-17, see `docs/DECISIONS.md`) |
+| `coinche`, `bouilla`, `president`, `bataillecorse`, `solitaire` | `apps/coinchapp/` (Next.js App Router) | coinchapp.vercel.app — Vercel project `coinchapp` (renamed back from `coinchapp-monorepo` post-cleanup), built from this repo's `apps/coinchapp/` (repointed + domain moved 2026-09-17, see `docs/DECISIONS.md`) |
 
 Colocating the code did not automatically move the deployment — that
 Vercel repoint is done per-app, separately: `coinchapp`'s is complete and

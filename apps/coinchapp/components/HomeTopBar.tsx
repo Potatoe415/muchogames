@@ -9,7 +9,7 @@ import { HUB_URL, hubFeedbackUrl } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { getMatchResultStats, type MatchResultStats } from "@/lib/client/matchResultStats";
 import { RulesModal } from "./RulesModal";
-import type { GameType } from "@/lib/supabase/types";
+import type { CoinchappGame } from "@/lib/profileGames";
 
 /** Back-to-hub + settings (language, rules) controls shown on every home splash
  *  screen (`/`, `/coinche`, `/bouilla`, `/president`, `/bataillecorse`) - the
@@ -24,7 +24,7 @@ import type { GameType } from "@/lib/supabase/types";
  *  specific game (opens `RulesModal`) - the single access point for rules,
  *  not a separate button elsewhere on the page. Omitted on the game-picker
  *  home screen (`/`), which isn't about one specific game. */
-export function HomeTopBar({ game }: { game?: GameType }) {
+export function HomeTopBar({ game }: { game?: CoinchappGame }) {
   const { locale, setLocale, t } = useI18n();
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [rulesOpen, setRulesOpen] = useState(false);

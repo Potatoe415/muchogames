@@ -25,9 +25,9 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-23 New hub game `solitaire` (Klondike, solo) served by `apps/coinchapp` (its decision 0072): `public/hub-config.json` entry + `public/games/coinchapp/assets/thumbnail-solitaire.jpg`, `GAMES_MAP.md` row updated. Root `npm run check` OK.
 - 2026-10-03 `/profile` split into two tabs: Infos (avatar, name, account export/delete) and Statistiques (matches, favorites, per-game results); `profile-tabs.js`.
 - 2026-10-03 Hub: "My games" is now the first category tab (default when non-empty, hidden when empty); player count badge bottom-right of each tile; player-count filter removed.
 - 2026-10-03 PRODUCT/ARCHITECTURE/SECURITY updated for coins per match (owner OK); `api/track.js` + `shared/js/analytics.js` removed (7/12 functions); decision 0047.
 - 2026-10-03 Hub charges only `coinPolicy: "launch"` games; badge reads the shared server counter; `api/profile` coin actions removed.
 - 2026-10-03 coinchapp: one hub coin per match in every mode (its decision 0071); hub forwards `mgDevice` to `source` games.
-- 2026-10-03 Every in-repo game wired to `game-session.js` (Yatzy incl. online, SW v42).

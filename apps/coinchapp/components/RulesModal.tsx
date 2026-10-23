@@ -1,11 +1,12 @@
 "use client";
 
 import { useI18n } from "@/lib/client/i18n";
-import type { GameType } from "@/lib/supabase/types";
+import type { CoinchappGame } from "@/lib/profileGames";
+import { SOLITAIRE_RULES } from "./solitaireRules";
 
 interface Props {
   onClose: () => void;
-  game?: GameType;
+  game?: CoinchappGame;
 }
 
 const BOUILLA_RULES = {
@@ -251,6 +252,7 @@ export function RulesModal({ onClose, game = "coinche" }: Props) {
     bouilla: BOUILLA_RULES,
     president: PRESIDENT_RULES,
     bataillecorse: BATAILLECORSE_RULES,
+    solitaire: SOLITAIRE_RULES,
   };
   const rules = rulesByGame[game][locale];
 

@@ -5,7 +5,7 @@ import { forceUpdate } from "@/lib/client/forceUpdate";
 import { useI18n } from "@/lib/client/i18n";
 import { useInstallPrompt } from "@/lib/client/useInstallPrompt";
 import { HomeTopBar } from "@/components/HomeTopBar";
-import type { GameType } from "@/lib/supabase/types";
+import type { CoinchappGame } from "@/lib/profileGames";
 
 async function resetBrowserData() {
   localStorage.clear();
@@ -52,9 +52,9 @@ async function resetBrowserData() {
 }
 
 interface GameTile {
-  game: GameType;
+  game: CoinchappGame;
   href: string;
-  titleKey: "gameTabCoinche" | "gameTabBouilla" | "gameTabPresident" | "gameTabBataillecorse";
+  titleKey: "gameTabCoinche" | "gameTabBouilla" | "gameTabPresident" | "gameTabBataillecorse" | "gameTabSolitaire";
   accent: string;
   /** Same art as that game's own splash screen (`app/<game>/page.tsx`), so the
    *  tile previews what's behind it. Tiles with no custom splash art (e.g. la
@@ -67,6 +67,7 @@ const TILES: GameTile[] = [
   { game: "bouilla", href: "/bouilla", image: "/bouilla-full.jpg", titleKey: "gameTabBouilla", accent: "var(--accent-cyan)" },
   { game: "president", href: "/president", image: "/president-full.jpg", titleKey: "gameTabPresident", accent: "var(--accent-green)" },
   { game: "bataillecorse", href: "/bataillecorse", image: "/bataillecorse-full.jpg", titleKey: "gameTabBataillecorse", accent: "var(--accent-red)" },
+  { game: "solitaire", href: "/solitaire", image: "/solitaire-full.jpg", titleKey: "gameTabSolitaire", accent: "var(--accent-orange)" },
 ];
 
 /** App landing screen: a list of game tiles. Tapping one navigates to that

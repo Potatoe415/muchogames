@@ -3,6 +3,7 @@ import { BouillaLocalGame } from "@/components/BouillaLocalGame";
 import { PresidentLocalGame } from "@/components/PresidentLocalGame";
 import { BataillecorseLocalGame } from "@/components/BataillecorseLocalGame";
 import { BataillecorseDuelGame } from "@/components/BataillecorseDuelGame";
+import { SolitaireLocalGame } from "@/components/SolitaireLocalGame";
 import { BOT_PUNCH_LEVELS, type BotPunch, type ScoringRules } from "@/lib/coinche";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
@@ -70,11 +71,15 @@ export default async function LocalPlayPage({
     roundsToPlay?: string;
     deckSize?: string;
     mode?: string;
+    draw?: string;
   }>;
 }) {
   const sp = await searchParams;
   const seed = seedFromParams(sp.seed);
   const botThinkMs = parseBotThinkMs(sp.botThinkMs);
+  if (sp.game === "solitaire") {
+    return <SolitaireLocalGame seed={seed} drawCount={sp.draw === "3" ? 3 : 1} />;
+  }
   if (sp.game === "bouilla") {
     return <BouillaLocalGame seed={seed} botThinkMs={botThinkMs} />;
   }

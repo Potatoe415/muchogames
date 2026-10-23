@@ -293,3 +293,9 @@ Impact: The combined counter shown in `HomeTopBar` is unchanged. Results recorde
 Change: No change to `games` / `game_players` / `game_events`. The Server Action `startMatchCoin` calls the hub's `start_muchogames_match` (root `supabase/migrations/0008_match_coins.sql`) with the linked profile id (`mg-profile` cookie) or the anonymous device id. New `localStorage` keys: `muchogames-device-id` (from the hub's `?mgDevice=`, else minted here) and `coinchapp-charged-matches` (`{ [gameId or "local:<game>"]: true }` for matches already paid, cleared when seen finished). Optional env `ADMIN_USER_IDS` (same value as the hub) makes admins unlimited.
 Reason: Decision 0071.
 Impact: Until the hub's 0008 runs, the RPC fails and every match starts for free.
+
+## 2026-10-23 - Fifth game "Solitaire" (solo, local only)
+
+Change: No change to `games` / `game_players` / `game_events`, and `GameType` is unchanged: Solitaire never goes online. Its `GameState` (`lib/solitaire/types.ts`: `phase`, `drawCount: 1 | 3`, `stock`, `waste`, `foundations` keyed by suit, 7 `tableau` columns of `{ card, faceUp }`, `moves`) lives only in `localStorage` under `coinchapp:local-solitaire:v1`. `COINCHAPP_GAMES` (`lib/profileGames.ts`) gains `solitaire`, so `coinchapp-match-results-by-game`, the hub profile sync and `start_muchogames_match` receive that id.
+Reason: Decision 0072.
+Impact: Only wins are ever recorded for `solitaire`. A saved game is resumed only when its `drawCount` matches the mode the player picked.
