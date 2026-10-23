@@ -108,14 +108,19 @@ function Foundation({ suit, state, selection, targets, onTap, labels }: PilesPro
   );
 }
 
-export function TopRow(props: PilesProps & { onDraw: () => void }) {
+/** `foundationsHidden`: the win cascade repaints the foundations itself. */
+export function TopRow({ onDraw, foundationsHidden, ...props }: PilesProps & { onDraw: () => void; foundationsHidden: boolean }) {
   return (
     <div className="flex items-start justify-between" data-id="solitaire-top-row">
       <div className="flex gap-[calc(var(--card-md-w)*0.08)]">
-        <Stock state={props.state} onDraw={props.onDraw} labels={props.labels} />
+        <Stock state={props.state} onDraw={onDraw} labels={props.labels} />
         <Waste state={props.state} selection={props.selection} onTap={props.onTap} />
       </div>
-      <div className="flex gap-[calc(var(--card-md-w)*0.08)]" data-id="solitaire-foundations">
+      <div
+        className="flex gap-[calc(var(--card-md-w)*0.08)]"
+        style={foundationsHidden ? { visibility: "hidden" } : undefined}
+        data-id="solitaire-foundations"
+      >
         {SUITS.map((suit) => (
           <Foundation key={suit} suit={suit} {...props} />
         ))}

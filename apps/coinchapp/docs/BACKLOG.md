@@ -15,7 +15,7 @@ Status: Living document. Always reflects current state.
 - [ ] Real-device test (2 phones, actual network) of la Bataille Corse online + ad-hoc: confirm the pile-fly sweep reaches each deck at the slower pace, both reaction readouts sit correctly for 5s, the winner's deck fire glow reads well, and the tribute banner is clear.
 - [ ] Real-device test of Président (solo, online, ad-hoc): closing a square should play-enter the last combo then fly the pile toward that seat; winning the pile by passes should fly the cards toward the leader — not vanish.
 - [ ] Real 2-device test of Président online — confirm the instant combo-play feedback feels right with real network latency, now that online bots actually work.
-- [ ] Ask the user to play Solitaire on a real phone (draw 1 and draw 3): card size, tap-to-move with several destinations, a full solved game recorded as a win.
+- [ ] Ask the user to play Solitaire on a real phone (draw 1 and draw 3): card size, tap-to-move with several destinations, a full solved game recorded as a win, and the win cascade's speed and smoothness.
 - [ ] Ask the user to confirm the `docs/PRODUCT.md` / `docs/ARCHITECTURE.md` edits for Solitaire (five games, `lib/solitaire` in the module map) before touching them.
 
 ## Next

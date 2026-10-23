@@ -10,6 +10,7 @@ import { GameInfoButton } from "./GameHud";
 import { RulesModal } from "./RulesModal";
 import { SOLITAIRE_LABELS } from "./solitaireLabels";
 import { Tableau, TopRow } from "./SolitairePiles";
+import { SolitaireWinCascade } from "./SolitaireWinCascade";
 import { TableShell } from "./TableShell";
 
 /** 7 columns (+ gaps) across the width; the tallest possible column (6 face
@@ -37,12 +38,15 @@ export function SolitaireTable({
   const { locale, t } = useI18n();
   const labels = SOLITAIRE_LABELS[locale];
   const [panelOpen, setPanelOpen] = useState(false);
+  const [cascadeDone, setCascadeDone] = useState(false);
+  const finished = state.phase === "finished";
   const piles = { state, selection, targets, onTap: actions.onTap, labels };
+  useRecordMatchResult(gameId, finished, true, "solitaire");
 
   return (
     <TableShell
       dataId="solitaire-table"
-      match={{ id: gameId, game: "solitaire", status: state.phase === "finished" ? "finished" : "playing", seated: true }}
+      match={{ id: gameId, game: "solitaire", status: finished ? "finished" : "playing", seated: true }}
     >
       <header className="absolute inset-x-0 top-[var(--table-hud-top)] z-30 flex items-center justify-between px-3">
         <a
@@ -63,12 +67,19 @@ export function SolitaireTable({
 
       <div className="relative h-0 min-h-0 flex-1" data-id="solitaire-scene">
         <div className="mx-auto flex flex-col gap-[calc(var(--card-md-w)*0.25)] pt-[calc(var(--table-hud-top)+4.75rem)]" style={SCENE_STYLE}>
-          <TopRow {...piles} onDraw={actions.onDraw} />
+          <TopRow {...piles} onDraw={actions.onDraw} foundationsHidden={finished} />
           <Tableau {...piles} />
         </div>
       </div>
 
-      {state.phase === "finished" && <FinishedOverlay gameId={gameId} moves={state.moves} onReset={onReset} />}
+      {finished && (
+        <SolitaireWinCascade
+          foundations={state.foundations}
+          onDone={() => setCascadeDone(true)}
+          skipHint={cascadeDone ? "" : labels.skipHint}
+        />
+      )}
+      {finished && cascadeDone && <FinishedOverlay moves={state.moves} onReset={onReset} />}
     </TableShell>
   );
 }
@@ -114,14 +125,13 @@ function SolitaireInfoPanel({ onReset, onClose }: { onReset: () => void; onClose
   );
 }
 
-/** Only a solved game is recorded: giving up or starting over never counts
- *  as a loss. */
-function FinishedOverlay({ gameId, moves, onReset }: { gameId: string; moves: number; onReset: () => void }) {
+/** Shown once the win cascade is over, over its trails. Only a solved game
+ *  is recorded (see `SolitaireTable`): giving up never counts as a loss. */
+function FinishedOverlay({ moves, onReset }: { moves: number; onReset: () => void }) {
   const { t, locale } = useI18n();
   const labels = SOLITAIRE_LABELS[locale];
-  useRecordMatchResult(gameId, true, true, "solitaire");
   return (
-    <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/70 px-6" data-id="solitaire-finished-overlay">
+    <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/30 px-6" data-id="solitaire-finished-overlay">
       <div className="w-full max-w-xs rounded-2xl bg-[var(--surface)] p-6 text-center shadow-2xl">
         <p className="mb-1 text-sm font-bold uppercase text-[var(--card-face)]/60">{t("gameFinished")}</p>
         <p className="text-2xl font-black text-[var(--card-face)]" data-id="solitaire-won-title">{labels.won}</p>

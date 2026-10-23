@@ -25,6 +25,9 @@ export interface SolitaireActions {
 export function useLocalSolitaireGame(seed: number, drawCount: DrawCount) {
   const [state, setState] = useState<GameState>(() => createInitialState(seededRng(seed), drawCount));
   const [selection, setSelection] = useState<PileRef | null>(null);
+  // Fixed at mount: a re-rendered page hands in a fresh random `seed`, which
+  // must not turn the same won game into a second recorded match.
+  const [gameId] = useState(() => `local-solitaire-${seed}`);
   const stateRef = useRef(state);
   const selectionRef = useRef(selection);
 
@@ -53,5 +56,5 @@ export function useLocalSolitaireGame(seed: number, drawCount: DrawCount) {
   };
 
   const targets: Target[] = selection ? legalTargets(state, selection) : [];
-  return { state, selection, targets, gameId: `local-solitaire-${seed}`, actions };
+  return { state, selection, targets, gameId, actions };
 }

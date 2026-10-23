@@ -12,6 +12,7 @@ const FR = {
   emptyColumn: "Colonne vide",
   won: "Bravo, réussi !",
   wonMoves: "en {moves} coups",
+  skipHint: "Touchez l'écran pour passer",
 };
 
 /** Solitaire-only copy, kept out of the shared `i18n.tsx` dictionary. */
@@ -29,5 +30,6 @@ export const SOLITAIRE_LABELS: Record<Locale, typeof FR> = {
     emptyColumn: "Empty column",
     won: "Well done, solved!",
     wonMoves: "in {moves} moves",
+    skipHint: "Tap the screen to skip",
   },
 };
