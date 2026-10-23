@@ -19,6 +19,10 @@ export const SOLITAIRE_RULES = {
         heading: "Jouer une carte",
         body: "Touchez une carte : si elle n'a qu'une place possible, elle y va directement. Si elle en a plusieurs, elle s'allume avec ses destinations : touchez celle que vous voulez. Touchez-la à nouveau pour la reposer.",
       },
+      {
+        heading: "Terminer",
+        body: "Quand la pioche et la défausse sont vides et que toutes les cartes des colonnes sont retournées, la partie est gagnée d'avance : touchez « Terminer » et les cartes montent toutes seules sur les fondations.",
+      },
     ],
   },
   en: {
@@ -39,6 +43,10 @@ export const SOLITAIRE_RULES = {
       {
         heading: "Playing a card",
         body: "Tap a card: if it has only one place to go, it goes there. If it has several, it lights up with its destinations: tap the one you want. Tap it again to put it back down.",
+      },
+      {
+        heading: "Finish",
+        body: "Once the stock and waste are empty and every column card is face up, the game is won: tap \"Finish\" and the cards climb onto the foundations by themselves.",
       },
     ],
   },

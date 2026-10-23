@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
+  autoFinishStep,
+  canAutoFinish,
   createInitialState,
   draw,
   legalTargets,
@@ -14,9 +16,14 @@ import {
 import { seededRng } from "./cardGameDriver";
 import { LOCAL_SOLITAIRE_STORAGE_KEY, loadPersistedGame, savePersistedGame } from "./localGamePersistence";
 
+/** Pause between two cards climbing to the foundations on "Terminer". */
+const AUTO_FINISH_STEP_MS = 90;
+
 export interface SolitaireActions {
   onDraw: () => void;
   onTap: (pile: PileRef) => void;
+  /** Only offered while `canAutoFinish` is true. */
+  onAutoFinish: () => void;
 }
 
 /** Fully offline solo Klondike. Every move is applied locally on the same
@@ -47,14 +54,28 @@ export function useLocalSolitaireGame(seed: number, drawCount: DrawCount) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const [autoFinishing, setAutoFinishing] = useState(false);
+  useEffect(() => {
+    if (!autoFinishing) return;
+    const timer = window.setTimeout(() => {
+      const next = autoFinishStep(stateRef.current);
+      if (next) commit(next, null);
+      if (!next || next.phase !== "playing") setAutoFinishing(false);
+    }, AUTO_FINISH_STEP_MS);
+    return () => window.clearTimeout(timer);
+  }, [autoFinishing, state, commit]);
+
   const actions: SolitaireActions = {
-    onDraw: () => commit(draw(stateRef.current), null),
+    onDraw: () => !autoFinishing && commit(draw(stateRef.current), null),
     onTap: (pile) => {
+      if (autoFinishing) return;
       const result = resolveTap(stateRef.current, selectionRef.current, pile);
       commit(result.state, result.selection);
     },
+    onAutoFinish: () => canAutoFinish(stateRef.current) && setAutoFinishing(true),
   };
 
   const targets: Target[] = selection ? legalTargets(state, selection) : [];
-  return { state, selection, targets, gameId, actions };
+  const autoFinishAvailable = !autoFinishing && canAutoFinish(state);
+  return { state, selection, targets, gameId, autoFinishAvailable, actions };
 }

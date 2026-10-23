@@ -25,6 +25,7 @@ export function SolitaireTable({
   selection,
   targets,
   gameId,
+  autoFinishAvailable,
   actions,
   onReset,
 }: {
@@ -32,6 +33,7 @@ export function SolitaireTable({
   selection: PileRef | null;
   targets: Target[];
   gameId: string;
+  autoFinishAvailable: boolean;
   actions: SolitaireActions;
   onReset: () => void;
 }) {
@@ -71,6 +73,17 @@ export function SolitaireTable({
           <Tableau {...piles} />
         </div>
       </div>
+
+      {autoFinishAvailable && (
+        <button
+          type="button"
+          data-id="solitaire-auto-finish-button"
+          onClick={actions.onAutoFinish}
+          className="absolute inset-x-0 bottom-[calc(env(safe-area-inset-bottom,0px)+1.5rem)] z-10 mx-auto w-fit rounded-2xl bg-[var(--accent-yellow)] px-8 py-3 text-lg font-black text-[var(--surface)] shadow-lg active:scale-95"
+        >
+          {labels.autoFinish}
+        </button>
+      )}
 
       {finished && (
         <SolitaireWinCascade

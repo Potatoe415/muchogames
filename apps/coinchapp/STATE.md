@@ -29,6 +29,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-10-23 Solitaire: "Terminer" button once stock + waste are empty and every column card is face up (`lib/solitaire/autoFinish.ts`); cards climb one every 90 ms, then the win cascade plays. Tests 345/345, tsc/lint/build clean, verified in the browser.
 - 2026-10-23 Solitaire: Windows-style win cascade (`SolitaireWinCascade.tsx`, physics in `lib/client/winCascade.ts`, canvas cards in `components/cardSprite.ts`): cards bounce off the foundations leaving trails, tap to skip, skipped with reduced motion. Win now recorded as soon as the game ends; match id fixed at mount (a page re-render with a new seed double-counted a win). Tests 342/342, tsc/lint/build clean, verified in the browser.
 - 2026-10-23 Solitaire (decision 0072). `npm test` 338/338, `tsc --noEmit` clean, changed files lint clean (full lint: only the known `useMatchStats.ts:220` error), `npm run build` clean, root `npm run check` OK. Verified in the browser at phone size: draw 3, single-destination auto-move, multi-destination pick-and-drop, resume after reload, win overlay records one `solitaire` win and frees the coin, "Quitter la partie ?" on back.
 - 2026-10-03 Per-match hub coins + platform chrome `data-id`s (decision 0071).

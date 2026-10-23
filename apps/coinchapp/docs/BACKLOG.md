@@ -19,7 +19,7 @@ Status: Living document. Always reflects current state.
 - [ ] Ask the user to confirm the `docs/PRODUCT.md` / `docs/ARCHITECTURE.md` edits for Solitaire (five games, `lib/solitaire` in the module map) before touching them.
 
 ## Next
-- [ ] Solitaire: undo, auto-finish once every card is face up, drag and drop (none built yet).
+- [ ] Solitaire: undo, slide animation for moves, Windows-style timer + score, hint / "no more moves" message, drag and drop, Solitaire-only stats (proposed 2026-10-23, not picked yet).
 - [ ] Manual Belote/Rebelote announcement during play (currently auto-detected).
 - [ ] Smarter bot bidding/play (currently a greedy heuristic).
 - [ ] Ad-hoc P2P: real-device pairing test (Chrome mDNS `.local` risk), client reconnection, emoji/GIF over the data channel.
