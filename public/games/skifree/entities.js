@@ -29,6 +29,7 @@ export const KINDS = {
 
 export const HOP = { bumpSmall: 110, bumpLarge: 165 };
 
+/** @param {Record<string, any>} [extra] @returns {Record<string, any>} */
 export function makeEntity(kind, x, y, extra = {}) {
   return { kind, sprite: KINDS[kind].sprite, x, y, ...extra };
 }

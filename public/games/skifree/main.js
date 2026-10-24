@@ -21,6 +21,7 @@ const SOUND_KEY = "skifree-sound";
 const TOAST_MS = 5000;
 const OVERLAYS = { paused: "skifree-paused", over: "skifree-game-over" };
 
+/** @returns {HTMLElement} */
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const storedLang = readStorage(LANG_KEY, "fr");
