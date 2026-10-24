@@ -37,3 +37,6 @@ public/games/jezzball/**/*.md
 !public/games/minesweeper/
 !public/games/minesweeper/**
 public/games/minesweeper/**/*.md
+!public/games/skifree/
+!public/games/skifree/**
+public/games/skifree/**/*.md

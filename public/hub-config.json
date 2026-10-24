@@ -92,6 +92,15 @@
     "players": [1, 1]
   },
   {
+    "id": "skifree",
+    "title": "SkiFree",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/skifree/index.html",
+    "thumbnail": "/games/skifree/assets/thumbnail.png",
+    "players": [1, 1]
+  },
+  {
     "id": "minesweeper",
     "title": "Démineur",
     "kind": "custom",

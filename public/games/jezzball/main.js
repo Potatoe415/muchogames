@@ -8,6 +8,7 @@ const GAME_ID = "jezzball";
 const LANG_KEY = "bergamots-lang";
 const BEST_KEY = "jezzball-best-score";
 const SOUND_KEY = "jezzball-sound";
+const DOUBLE_TAP_KEY = "jezzball-double-tap";
 const OVERLAYS = {
   cleared: "jezzball-level-cleared",
   over: "jezzball-game-over",
@@ -36,6 +37,7 @@ const storedLang = readStorage(LANG_KEY, "fr");
 const page = {
   lang: LANGS.includes(storedLang) ? storedLang : "fr",
   muted: readStorage(SOUND_KEY, "on") === "off",
+  doubleTap: readStorage(DOUBLE_TAP_KEY, "off") === "on",
   best: Number(readStorage(BEST_KEY, "0")) || 0,
   game: null,
   summary: null,
@@ -77,8 +79,11 @@ function applyLanguage() {
   });
   $("jezzball-rules-content").innerHTML = rulesHtml(page.lang);
   const sound = $("jezzball-sound-toggle");
-  sound.textContent = t(page.muted ? "soundOff" : "soundOn");
+  sound.textContent = t(page.muted ? "off" : "on");
   sound.setAttribute("aria-pressed", String(!page.muted));
+  const doubleTap = $("jezzball-double-tap-toggle");
+  doubleTap.textContent = t(page.doubleTap ? "on" : "off");
+  doubleTap.setAttribute("aria-pressed", String(page.doubleTap));
   $("jezzball-start-best").textContent = t("best", { best: page.best });
   renderOverlayText();
 }
@@ -129,6 +134,7 @@ function mountGame() {
     host: $("jezzball-board"),
     muted: page.muted,
     best: page.best,
+    doubleTap: page.doubleTap,
     onLevelCleared,
     onGameOver
   });
@@ -164,6 +170,13 @@ function toggleSound() {
   applyLanguage();
 }
 
+function toggleDoubleTap() {
+  page.doubleTap = !page.doubleTap;
+  writeStorage(DOUBLE_TAP_KEY, page.doubleTap ? "on" : "off");
+  page.game?.setDoubleTap(page.doubleTap);
+  applyLanguage();
+}
+
 function setLanguage(lang) {
   page.lang = lang;
   writeStorage(LANG_KEY, lang);
@@ -187,6 +200,7 @@ function bindPage() {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   $("jezzball-sound-toggle").addEventListener("click", toggleSound);
+  $("jezzball-double-tap-toggle").addEventListener("click", toggleDoubleTap);
   $("jezzball-start-button").addEventListener("click", startMatch);
   $("jezzball-replay-button").addEventListener("click", startMatch);
   $("jezzball-resume-button").addEventListener("click", () =>

@@ -1,0 +1,103 @@
+/* Windows 3.1 widgets: system grey, hard 2px bevels (white top/left, grey
+   bottom/right) inside a black frame, navy title bars, no radius, no blur,
+   no gradient, unsmoothed monospace system font. */
+:root {
+  --sf-grey: #c0c0c0;
+  --sf-dark: #808080;
+  --sf-navy: #000080;
+  --sf-font:
+    "Fixedsys Excelsior", Fixedsys, "Lucida Console", "Courier New", monospace;
+  --sf-raised: inset 2px 2px 0 #ffffff, inset -2px -2px 0 var(--sf-dark);
+  --sf-sunken: inset 2px 2px 0 var(--sf-dark), inset -2px -2px 0 #ffffff;
+}
+
+.sf-window {
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: var(--sf-grey);
+  box-shadow: var(--sf-raised);
+  color: #000000;
+}
+
+.sf-titlebar {
+  margin: 2px 2px 0;
+  padding: 3px 6px;
+  background: var(--sf-navy);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sf-window-body {
+  margin: 0;
+  padding: 12px 14px 14px;
+  text-align: center;
+}
+
+.sf-window-body p {
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.sf-btn,
+.sf-chip {
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: var(--sf-grey);
+  box-shadow: var(--sf-raised);
+  color: #000000;
+  cursor: pointer;
+}
+
+.sf-btn {
+  min-height: 44px;
+  padding: 6px 12px;
+  font: 700 0.95rem/1.15 var(--sf-font);
+  touch-action: manipulation;
+}
+
+.sf-btn:active,
+.sf-btn[aria-pressed="true"] {
+  padding: 7px 11px 5px 13px;
+  box-shadow: var(--sf-sunken);
+}
+
+.sf-btn:focus-visible {
+  outline: 1px dotted #000000;
+  outline-offset: -6px;
+}
+
+.sf-btn-default {
+  min-width: 160px;
+  border-width: 2px;
+}
+
+/* Turbo: a check box mark shows the latched state. */
+.sf-btn-turbo::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  vertical-align: -1px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+.sf-btn-turbo[aria-pressed="true"]::before {
+  content: "X";
+}
+
+.sf-chip {
+  min-width: 56px;
+  padding: 8px 14px;
+  font: 700 0.95rem var(--sf-font);
+}
+
+.sf-chip.active,
+.sf-chip[aria-pressed="true"] {
+  box-shadow: var(--sf-sunken);
+  background: #ffffff;
+}

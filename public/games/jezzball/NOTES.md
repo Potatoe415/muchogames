@@ -28,4 +28,5 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 - Level N: N+1 balls, N+1 lives, `60 + 20N` s. Timer at 0 = −1 life and the timer restarts.
 - Points ×N: 1 per new solid cell; at ≥ 75 %: 50 per whole % above 75 and 10 per second left.
 - Two-finger tap: cancels a wall launched < 0.15 s earlier by the first finger (if nothing solidified) and flips the axis.
-- No `won` is sent to `finish()`: the run always ends on game over. Best score: `jezzball-best-score`; sound: `jezzball-sound`.
+- Double-tap option (off by default): a tap builds a vertical wall after 0.26 s; a second tap inside that window builds a horizontal wall on the first tap's cell. Axis button, hover preview and two-finger toggle are off in that mode.
+- No `won` is sent to `finish()`: the run always ends on game over. Best score: `jezzball-best-score`; sound: `jezzball-sound`; double tap: `jezzball-double-tap`.

@@ -1,5 +1,5 @@
-// DOM HUD (level, lives, area, time, score, best, axis button). Only
-// touches the DOM when a value actually changes.
+// DOM HUD (level, lives, area, time, score, best, axis button, hidden in
+// double-tap mode). Only touches the DOM when a value actually changes.
 const FIELDS = ["level", "lives", "area", "time", "score", "best"];
 
 export function createHud(root, canvas) {
@@ -25,6 +25,9 @@ export function createHud(root, canvas) {
       });
       if (set("urgent", view.urgent)) {
         timeStat.classList.toggle("is-urgent", view.urgent);
+      }
+      if (set("doubleTap", view.doubleTap)) {
+        root.classList.toggle("is-double-tap", view.doubleTap);
       }
       if (set("axis", view.axis)) {
         axisButton.dataset.axis = view.axis;

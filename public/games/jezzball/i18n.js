@@ -14,8 +14,10 @@ const STRINGS = {
     language: "Langue",
     rules: "Règles",
     sound: "Son",
-    soundOn: "Activé",
-    soundOff: "Coupé",
+    on: "Activé",
+    off: "Désactivé",
+    doubleTap: "Double tap",
+    doubleTapHint: "Simple tap : mur vertical · Double tap : mur horizontal",
     level: "Niveau",
     lives: "Vies",
     area: "Surface",
@@ -54,8 +56,10 @@ const STRINGS = {
     language: "Language",
     rules: "Rules",
     sound: "Sound",
-    soundOn: "On",
-    soundOff: "Off",
+    on: "On",
+    off: "Off",
+    doubleTap: "Double tap",
+    doubleTapHint: "Single tap: vertical wall · Double tap: horizontal wall",
     level: "Level",
     lives: "Lives",
     area: "Area",
@@ -93,8 +97,10 @@ const STRINGS = {
     language: "Idioma",
     rules: "Reglas",
     sound: "Sonido",
-    soundOn: "Activado",
-    soundOff: "Silenciado",
+    on: "Activado",
+    off: "Desactivado",
+    doubleTap: "Doble toque",
+    doubleTapHint: "Toque simple: muro vertical · Doble toque: muro horizontal",
     level: "Nivel",
     lives: "Vidas",
     area: "Superficie",
@@ -128,6 +134,7 @@ const RULES = {
 <ul>
 <li>Touchez (ou cliquez) une case libre : un mur part dans les deux sens selon l'axe actif, une moitié rouge et une moitié bleue. Un seul mur à la fois.</li>
 <li>Changez d'axe (↔ / ↕) avec le gros bouton, un toucher à deux doigts, le clic droit, la molette ou la barre d'espace.</li>
+<li>Option « Double tap » : un simple tap lance un mur vertical, un double tap un mur horizontal.</li>
 <li>Chaque moitié se fige dès qu'elle touche un mur. Toute zone sans atome est alors conquise et noircie.</li>
 <li>Si un atome touche une moitié encore en construction, elle se brise et vous perdez une vie. Si le temps s'écoule, vous perdez aussi une vie et le chrono repart.</li>
 <li>Conquérez 75 % de la surface pour passer au niveau suivant. Bonus : chaque point au-delà de 75 % et chaque seconde restante.</li>
@@ -137,6 +144,7 @@ const RULES = {
 <ul>
 <li>Tap (or click) a free cell: a wall grows both ways along the active axis, one red half and one blue half. One wall at a time.</li>
 <li>Switch axis (↔ / ↕) with the big button, a two-finger tap, right click, the mouse wheel or the space bar.</li>
+<li>"Double tap" option: a single tap launches a vertical wall, a double tap a horizontal one.</li>
 <li>Each half sets as soon as it reaches a wall. Every area with no atom inside is then claimed and turns black.</li>
 <li>If an atom touches a half still growing, it breaks and you lose a life. Running out of time also costs a life, and the clock restarts.</li>
 <li>Claim 75% of the area to reach the next level. Bonus: every point above 75% and every second left.</li>
@@ -146,6 +154,7 @@ const RULES = {
 <ul>
 <li>Toca (o haz clic en) una casilla libre: un muro crece en ambos sentidos según el eje activo, una mitad roja y otra azul. Un solo muro a la vez.</li>
 <li>Cambia de eje (↔ / ↕) con el botón grande, un toque con dos dedos, el clic derecho, la rueda del ratón o la barra espaciadora.</li>
+<li>Opción «Doble toque»: un toque simple lanza un muro vertical y un doble toque uno horizontal.</li>
 <li>Cada mitad se fija en cuanto toca un muro. Toda zona sin átomos queda conquistada y se vuelve negra.</li>
 <li>Si un átomo toca una mitad aún en construcción, se rompe y pierdes una vida. Si se acaba el tiempo, también pierdes una vida y el reloj vuelve a empezar.</li>
 <li>Conquista el 75 % de la superficie para pasar al siguiente nivel. Bonus: cada punto por encima del 75 % y cada segundo restante.</li>

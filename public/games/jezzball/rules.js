@@ -36,14 +36,14 @@ const FLASH_SECONDS = 0.4;
 export const canBuild = (state) =>
   state.phase === "play" && !state.paused && !state.wall;
 
-export function tryBuild(game, x, y) {
+export function tryBuild(game, x, y, axis = game.state.axis) {
   const { state, audio } = game;
   if (state.phase !== "play" || state.paused) return false;
   if (state.wall || cellAt(state.grid, x, y) !== EMPTY) {
     audio.play("deny");
     return false;
   }
-  state.wall = createWall(x, y, state.axis);
+  state.wall = createWall(x, y, axis);
   audio.play("launch");
   return true;
 }
