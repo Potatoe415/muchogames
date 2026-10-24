@@ -1,54 +1,50 @@
 // Pointer, wheel and keyboard controls. Left click / one-finger tap on the
 // grid builds a wall; right click, wheel, Space, the axis button or a
-// second finger flip the axis (double-tap mode: tap count picks the axis).
-// Returns a function removing every listener.
+// second finger flip the axis. Swipe mode (touch only): the swipe direction
+// picks the axis. Returns a function removing every listener.
 const INTERACTIVE = "button, a, input, select, textarea, [contenteditable]";
 const WHEEL_GAP_MS = 220;
-const DOUBLE_TAP_MS = 260;
+const SWIPE_PX = 14;
 
 function pointToCell(event, canvas, toCell) {
   const rect = canvas.getBoundingClientRect();
   return toCell(event.clientX - rect.left, event.clientY - rect.top);
 }
 
-// Double-tap mode: a lone tap builds a vertical wall once the double-tap
-// window has passed; a second tap inside it builds a horizontal wall on the
-// first tap's cell instead.
-function createTapper(actions) {
-  let pending = null;
+// The wall starts from the cell under the finger as soon as it has moved
+// SWIPE_PX: left/right builds a horizontal wall, up/down a vertical one.
+function createSwiper(actions) {
+  let start = null;
   return {
-    tap(cell) {
-      if (!actions.doubleTap()) {
-        if (cell) actions.build(cell.x, cell.y);
-        return;
-      }
-      if (pending) {
-        clearTimeout(pending.timer);
-        const first = pending.cell;
-        pending = null;
-        actions.build(first.x, first.y, "h");
-        return;
-      }
-      if (!cell) return;
-      const timer = setTimeout(() => {
-        pending = null;
-        actions.build(cell.x, cell.y, "v");
-      }, DOUBLE_TAP_MS);
-      pending = { cell, timer };
+    down(event, cell) {
+      start = cell
+        ? { id: event.pointerId, x: event.clientX, y: event.clientY, cell }
+        : null;
     },
-    cancel() {
-      if (pending) clearTimeout(pending.timer);
-      pending = null;
+    move(event) {
+      if (!start || event.pointerId !== start.id) return;
+      const dx = event.clientX - start.x;
+      const dy = event.clientY - start.y;
+      if (Math.max(Math.abs(dx), Math.abs(dy)) < SWIPE_PX) return;
+      const { cell } = start;
+      start = null;
+      actions.build(cell.x, cell.y, Math.abs(dx) >= Math.abs(dy) ? "h" : "v");
+    },
+    up(event) {
+      if (start?.id === event.pointerId) start = null;
     }
   };
 }
 
 export function bindInput({ canvas, root, axisButton, toCell, actions }) {
   const touches = new Set();
-  const tapper = createTapper(actions);
+  const swiper = createSwiper(actions);
   let lastWheel = 0;
 
-  const build = (event) => tapper.tap(pointToCell(event, canvas, toCell));
+  const build = (event) => {
+    const cell = pointToCell(event, canvas, toCell);
+    if (cell) actions.build(cell.x, cell.y);
+  };
   const onMouseDown = (event) => {
     if (event.target !== canvas) return;
     event.preventDefault();
@@ -58,12 +54,14 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
   const onTouchDown = (event) => {
     if (event.isPrimary) touches.clear();
     touches.add(event.pointerId);
-    if (touches.size > 1 && !actions.doubleTap()) {
+    const swipe = actions.swipe();
+    if (touches.size > 1) {
       event.preventDefault();
-      actions.twoFinger();
+      if (!swipe) actions.twoFinger();
     } else if (event.target === canvas) {
       event.preventDefault();
-      build(event);
+      if (swipe) swiper.down(event, pointToCell(event, canvas, toCell));
+      else build(event);
     }
   };
   const onDown = (event) => {
@@ -72,10 +70,15 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
     if (event.pointerType === "mouse") onMouseDown(event);
     else onTouchDown(event);
   };
-  const onUp = (event) => touches.delete(event.pointerId);
+  const onUp = (event) => {
+    touches.delete(event.pointerId);
+    swiper.up(event);
+  };
   const onMove = (event) => {
     if (event.pointerType === "mouse") {
       actions.hover(pointToCell(event, canvas, toCell));
+    } else {
+      swiper.move(event);
     }
   };
   const onLeave = () => actions.hover(null);
@@ -114,10 +117,8 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
   listeners.forEach(([target, type, fn]) =>
     target.addEventListener(type, fn, { passive: false })
   );
-  return () => {
-    tapper.cancel();
+  return () =>
     listeners.forEach(([target, type, fn]) =>
       target.removeEventListener(type, fn)
     );
-  };
 }

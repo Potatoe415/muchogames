@@ -42,16 +42,16 @@ function hudView(state, best) {
     score: String(state.score),
     best: String(Math.max(best, state.score)),
     axis: state.axis,
-    doubleTap: state.doubleTap
+    swipe: state.swipe
   };
 }
 
 export function createGame(options) {
-  const { stage, canvas, host, muted, best, doubleTap } = options;
+  const { stage, canvas, host, muted, best, swipe } = options;
   const audio = createAudio();
   const hud = createHud(stage, canvas);
   const field = createFieldCache();
-  const state = { score: 0, axis: "h", paused: false, flash: 0, doubleTap };
+  const state = { score: 0, axis: "h", paused: false, flash: 0, swipe };
   const game = {
     state,
     audio,
@@ -107,7 +107,7 @@ export function createGame(options) {
         field,
         hover,
         time,
-        canBuild: canBuild(state) && !state.doubleTap
+        canBuild: canBuild(state)
       };
       render(surface.ctx, layout, view);
       hud.update(hudView(state, best));
@@ -122,7 +122,7 @@ export function createGame(options) {
     actions: {
       unlock: audio.unlock,
       build: (x, y, axis) => tryBuild(game, x, y, axis),
-      doubleTap: () => state.doubleTap,
+      swipe: () => state.swipe,
       toggle: () => toggleAxis(game),
       twoFinger: () => twoFingerToggle(game),
       hover: (cell) => (hover = cell)
@@ -138,7 +138,7 @@ export function createGame(options) {
     nextLevel: () => startLevel(state.config.level + 1),
     setPaused: (value) => (state.paused = value),
     setMuted: (value) => audio.setMuted(value),
-    setDoubleTap: (value) => (state.doubleTap = value),
+    setSwipe: (value) => (state.swipe = value),
     destroy() {
       loop.stop();
       unbind();

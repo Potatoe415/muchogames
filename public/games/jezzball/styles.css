@@ -286,23 +286,21 @@ body {
   display: none;
 }
 
-/* --- Double-tap mode: tap count picks the axis, no toggle needed --- */
+/* --- Swipe mode on touch screens: the swipe picks the axis, no toggle --- */
 .jb-option-hint {
   margin: 0 0 8px;
   font-size: 0.85rem;
   color: #4b5563;
 }
 
-.jb-stage.is-double-tap .jb-axis {
-  display: none;
-}
+@media (hover: none) {
+  .jb-stage.is-swipe .jb-axis {
+    display: none;
+  }
 
-.jb-stage.is-double-tap .jb-hud {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.jb-stage.is-double-tap .jb-canvas {
-  cursor: crosshair;
+  .jb-stage.is-swipe .jb-hud {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .jb-overlay {
@@ -338,7 +336,7 @@ body {
     grid-column: 1 / -1;
   }
 
-  .jb-stage.is-double-tap .jb-hud {
+  .jb-stage.is-swipe .jb-hud {
     grid-template-columns: 1fr 1fr;
   }
 

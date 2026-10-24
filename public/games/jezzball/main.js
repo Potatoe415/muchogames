@@ -8,7 +8,7 @@ const GAME_ID = "jezzball";
 const LANG_KEY = "bergamots-lang";
 const BEST_KEY = "jezzball-best-score";
 const SOUND_KEY = "jezzball-sound";
-const DOUBLE_TAP_KEY = "jezzball-double-tap";
+const SWIPE_KEY = "jezzball-swipe";
 const OVERLAYS = {
   cleared: "jezzball-level-cleared",
   over: "jezzball-game-over",
@@ -37,7 +37,7 @@ const storedLang = readStorage(LANG_KEY, "fr");
 const page = {
   lang: LANGS.includes(storedLang) ? storedLang : "fr",
   muted: readStorage(SOUND_KEY, "on") === "off",
-  doubleTap: readStorage(DOUBLE_TAP_KEY, "off") === "on",
+  swipe: readStorage(SWIPE_KEY, "on") === "on",
   best: Number(readStorage(BEST_KEY, "0")) || 0,
   game: null,
   summary: null,
@@ -81,9 +81,9 @@ function applyLanguage() {
   const sound = $("jezzball-sound-toggle");
   sound.textContent = t(page.muted ? "off" : "on");
   sound.setAttribute("aria-pressed", String(!page.muted));
-  const doubleTap = $("jezzball-double-tap-toggle");
-  doubleTap.textContent = t(page.doubleTap ? "on" : "off");
-  doubleTap.setAttribute("aria-pressed", String(page.doubleTap));
+  const swipe = $("jezzball-swipe-toggle");
+  swipe.textContent = t(page.swipe ? "on" : "off");
+  swipe.setAttribute("aria-pressed", String(page.swipe));
   $("jezzball-start-best").textContent = t("best", { best: page.best });
   renderOverlayText();
 }
@@ -134,7 +134,7 @@ function mountGame() {
     host: $("jezzball-board"),
     muted: page.muted,
     best: page.best,
-    doubleTap: page.doubleTap,
+    swipe: page.swipe,
     onLevelCleared,
     onGameOver
   });
@@ -170,10 +170,10 @@ function toggleSound() {
   applyLanguage();
 }
 
-function toggleDoubleTap() {
-  page.doubleTap = !page.doubleTap;
-  writeStorage(DOUBLE_TAP_KEY, page.doubleTap ? "on" : "off");
-  page.game?.setDoubleTap(page.doubleTap);
+function toggleSwipe() {
+  page.swipe = !page.swipe;
+  writeStorage(SWIPE_KEY, page.swipe ? "on" : "off");
+  page.game?.setSwipe(page.swipe);
   applyLanguage();
 }
 
@@ -200,7 +200,7 @@ function bindPage() {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   $("jezzball-sound-toggle").addEventListener("click", toggleSound);
-  $("jezzball-double-tap-toggle").addEventListener("click", toggleDoubleTap);
+  $("jezzball-swipe-toggle").addEventListener("click", toggleSwipe);
   $("jezzball-start-button").addEventListener("click", startMatch);
   $("jezzball-replay-button").addEventListener("click", startMatch);
   $("jezzball-resume-button").addEventListener("click", () =>
