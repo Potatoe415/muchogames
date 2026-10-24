@@ -67,22 +67,37 @@ const ACCOUNT_ICON_SVG = `<svg viewBox="0 0 24 24" width="18" height="18" fill="
 const authState = {
   email: readStoredEmail()
 };
+const TOKEN_RENEW_MS = 4000;
+let googleApiPromise = null;
+let googleInstalled = null;
+let credentialRenewal = null;
+let onRenewedCredential = null;
 
 export function initAuthWidget() {
   renderAuthWidget();
   ensureAvatarThumb();
   resyncAvatarIfMissing();
-  loadGoogleScript(() => {
-    window.google.accounts.id.initialize({
-      client_id: GOOGLE_CLIENT_ID,
-      callback: handleCredentialResponse,
-      auto_select: false,
-      cancel_on_tap_outside: true
-    });
-    if (!authState.email) {
-      renderGoogleButton();
-    }
+  googleInstalled = installGoogle(false).then((gis) => {
+    if (!gis) return null;
+    if (!authState.email || !readUsableIdToken()) renderGoogleButton();
+    return gis;
   });
+}
+
+// The hub keeps showing "signed in" after the Google ID token dies (~1h).
+// Coins would then follow this browser's anonymous counter. Ask Google for a
+// fresh token first so an admin still resolves as unlimited.
+export function ensureLiveIdToken() {
+  if (readUsableIdToken() || !authState.email) return Promise.resolve();
+  if (!credentialRenewal) {
+    const base = googleInstalled || installGoogle(false);
+    credentialRenewal = base
+      .then((gis) => renewCredential(gis))
+      .finally(() => {
+        credentialRenewal = null;
+      });
+  }
+  return credentialRenewal;
 }
 
 // Returning visits only restore `authState.email` from `localStorage` — the
@@ -161,6 +176,12 @@ function persistIdToken(idToken) {
   }
 }
 
+function readUsableIdToken() {
+  const token = readStoredIdToken();
+  const payload = token ? decodeJwtPayload(token) : null;
+  return payload?.exp && Date.now() / 1000 < payload.exp ? token : "";
+}
+
 // Fire-and-forget name sync so /profile has something to show even before
 // the player visits it themselves. Never blocks the sign-in UI, never
 // throws: a failed sync just means the shared profile stays empty/local.
@@ -204,9 +225,11 @@ function restoreAvatarFromProfile(dataUrl) {
 
 function decodeJwtPayload(jwt) {
   try {
-    const payloadSegment = jwt.split(".")[1];
-    const json = atob(payloadSegment.replace(/-/g, "+").replace(/_/g, "/"));
-    return JSON.parse(json);
+    const segment = jwt.split(".")[1];
+    if (!segment) return null;
+    const base64 = segment.replace(/-/g, "+").replace(/_/g, "/");
+    const padded = base64 + "=".repeat((4 - (base64.length % 4)) % 4);
+    return JSON.parse(atob(padded));
   } catch {
     return null;
   }
@@ -326,13 +349,82 @@ function fillNameIfEmpty(googleName) {
   }
 }
 
-function loadGoogleScript(onLoaded) {
-  const script = document.createElement("script");
-  script.src = GSI_SCRIPT_URL;
-  script.async = true;
-  script.defer = true;
-  script.onload = onLoaded;
-  document.head.appendChild(script);
+function loadGoogleApi() {
+  if (window.google?.accounts?.id) {
+    return Promise.resolve(window.google.accounts.id);
+  }
+  if (!googleApiPromise) {
+    googleApiPromise = new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = GSI_SCRIPT_URL;
+      script.async = true;
+      script.onload = () => resolve(window.google?.accounts?.id || null);
+      script.onerror = () => resolve(null);
+      document.head.appendChild(script);
+    });
+  }
+  return googleApiPromise;
+}
+
+function installGoogle(autoSelect) {
+  return loadGoogleApi().then((gis) => {
+    if (!gis) return null;
+    gis.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: handleCredentialResponse,
+      auto_select: autoSelect,
+      cancel_on_tap_outside: true
+    });
+    return gis;
+  });
+}
+
+function finishRenewal() {
+  const done = onRenewedCredential;
+  onRenewedCredential = null;
+  done?.();
+}
+
+function promptForCredential(gis) {
+  return new Promise((resolve) => {
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      resolve();
+    };
+    const timer = setTimeout(finish, TOKEN_RENEW_MS);
+    onRenewedCredential = () => {
+      clearTimeout(timer);
+      finish();
+    };
+    gis.prompt((notification) => {
+      const skipped = notification?.isSkippedMoment?.() === true;
+      const reason = notification?.getDismissedReason?.();
+      const gone =
+        notification?.isDismissedMoment?.() === true &&
+        reason !== "credential_returned";
+      if (!skipped && !gone) return;
+      clearTimeout(timer);
+      finishRenewal();
+    });
+  });
+}
+
+function renewCredential(gis) {
+  if (!gis || readUsableIdToken()) return undefined;
+  gis.initialize({
+    client_id: GOOGLE_CLIENT_ID,
+    callback: handleCredentialResponse,
+    auto_select: true,
+    cancel_on_tap_outside: true,
+    use_fedcm_for_prompt: true
+  });
+  return promptForCredential(gis);
+}
+
+function notifyAuthChanged() {
+  window.dispatchEvent(new CustomEvent("muchogames-auth-changed"));
 }
 
 function handleCredentialResponse(response) {
@@ -347,6 +439,8 @@ function handleCredentialResponse(response) {
   // language the player already chose on the hub or the profile settings.
   closePopover();
   renderAuthWidget();
+  finishRenewal();
+  notifyAuthChanged();
 }
 
 function logout() {
@@ -361,6 +455,7 @@ function logout() {
   closePopover();
   renderAuthWidget();
   renderGoogleButton();
+  notifyAuthChanged();
 }
 
 function clearStoredAvatar() {
@@ -432,6 +527,12 @@ function createLoggedInContent() {
   profileLink.dataset.id = "auth-profile-link";
   profileLink.textContent = strings.profile;
   fragment.appendChild(profileLink);
+
+  if (!readUsableIdToken()) {
+    const googleButtonContainer = document.createElement("div");
+    googleButtonContainer.id = GOOGLE_BUTTON_CONTAINER_ID;
+    fragment.appendChild(googleButtonContainer);
+  }
 
   if (readAdminFlag() === "1") {
     fragment.appendChild(createAdminLink(strings.admin));

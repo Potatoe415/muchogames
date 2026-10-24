@@ -74,11 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
   renderForceRefreshButton();
   renderFeedbackButton();
   openFeedbackFromUrl();
+  initAuthWidget();
   refreshCoins();
+  window.addEventListener("muchogames-auth-changed", refreshCoins);
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) refreshCoins();
   });
-  initAuthWidget();
   initializeDashboard();
   setupHubShareButton();
   window.MuchogamesProfileResults?.migrateLocalResultsOnce();

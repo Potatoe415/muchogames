@@ -5,6 +5,7 @@
 // counter: the Google profile when signed in, else this browser's device id.
 // Admins are unlimited.
 import { readAdminFlag } from "./auth-admin.js";
+import { ensureLiveIdToken } from "./auth.js";
 
 // Must match DAILY_COINS in api/profile/_coins.js.
 const DAILY_COINS = 10;
@@ -19,6 +20,7 @@ const LABELS = {
 const coins = { remaining: DAILY_COINS, unlimited: false };
 
 async function postMatch(body) {
+  await ensureLiveIdToken();
   const response = await fetch("/api/match", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

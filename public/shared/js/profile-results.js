@@ -16,12 +16,18 @@
     }
   }
 
+  function jwtPayload(jwt) {
+    const segment = jwt.split(".")[1];
+    if (!segment) return null;
+    const base64 = segment.replace(/-/g, "+").replace(/_/g, "/");
+    const padded = base64 + "=".repeat((4 - (base64.length % 4)) % 4);
+    return JSON.parse(atob(padded));
+  }
+
   function isJwtExpired(jwt) {
     try {
-      const payload = JSON.parse(
-        atob(jwt.split(".")[1].replace(/-/g, "+").replace(/_/g, "/"))
-      );
-      return !payload.exp || Date.now() / 1000 >= payload.exp;
+      const payload = jwtPayload(jwt);
+      return !payload?.exp || Date.now() / 1000 >= payload.exp;
     } catch {
       return true;
     }
