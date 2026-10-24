@@ -1,0 +1,240 @@
+/* Minesweeper play stage: HUD, grid and cells. Loaded after styles.css, whose
+   shared bevel rule gives the cells their raised look. */
+
+/* --- Play stage: HUD on top (side in short landscape), board below --- */
+.ms-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-hud {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 8px 8px 0;
+  padding: 8px 10px;
+  border: 1px solid #000000;
+}
+
+.ms-counter {
+  display: grid;
+  justify-items: center;
+}
+
+.ms-counter-label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ms-counter-value {
+  min-width: 3.2ch;
+  padding: 2px 6px;
+  background: #000000;
+  box-shadow:
+    inset 1px 1px 0 #7b7b7b,
+    inset -1px -1px 0 #ffffff;
+  color: #ff2a1a;
+  text-align: center;
+  font:
+    900 1.5rem / 1.1 ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+}
+
+.ms-face {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #7b7b7b;
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ms-face[data-face="playing"]::before {
+  content: "🙂";
+}
+
+.ms-face[data-face="won"]::before {
+  content: "😎";
+}
+
+.ms-face[data-face="lost"]::before {
+  content: "😵";
+}
+
+.ms-mode {
+  display: grid;
+  justify-items: center;
+  min-width: 78px;
+  padding: 4px 8px;
+  border: 1px solid #000000;
+  color: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ms-mode[data-mode="flag"] {
+  background-color: #ffd0cc;
+}
+
+.ms-mode-icon {
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.ms-mode[data-mode="dig"] .ms-mode-icon::before {
+  content: "⛏️";
+}
+
+.ms-mode[data-mode="flag"] .ms-mode-icon::before {
+  content: "🚩";
+}
+
+.ms-mode-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.ms-mode[data-mode="dig"] .ms-mode-flag,
+.ms-mode[data-mode="flag"] .ms-mode-dig {
+  display: none;
+}
+
+.ms-board {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  padding: 8px calc(8px + env(safe-area-inset-right))
+    calc(8px + env(safe-area-inset-bottom))
+    calc(8px + env(safe-area-inset-left));
+  overflow: auto;
+}
+
+/* --- Grid and cells --- */
+.ms-grid {
+  --cell: 28px;
+  display: grid;
+  border: 3px solid;
+  border-color: #7b7b7b #ffffff #ffffff #7b7b7b;
+  background: #7b7b7b;
+  touch-action: none;
+}
+
+.ms-cell {
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 62%;
+  color: #000000;
+  font:
+    900 calc(var(--cell) * 0.62) / 1 "Trebuchet MS",
+    system-ui,
+    sans-serif;
+  cursor: pointer;
+}
+
+.ms-cell:focus-visible {
+  outline: 2px solid #0000c8;
+  outline-offset: -3px;
+}
+
+.ms-cell.is-pressed,
+.ms-cell.is-open {
+  background-color: #bdbdbd;
+  box-shadow:
+    inset 1px 1px 0 #7b7b7b,
+    inset -1px -1px 0 #c6c6c6;
+}
+
+.ms-cell.is-open {
+  cursor: default;
+}
+
+.ms-cell.is-flag {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8.5 1.5v10' stroke='black' stroke-width='1.6'/%3E%3Cpath d='M9 1.5 2.5 4.75 9 8z' fill='red'/%3E%3Cpath d='M3.5 12.5h9.5v2H3.5zM6 11h4.5v1.5H6z' fill='black'/%3E%3C/svg%3E");
+}
+
+.ms-cell.is-mine {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1v14M1 8h14M3 3l10 10M13 3 3 13' stroke='black' stroke-width='1.5'/%3E%3Ccircle cx='8' cy='8' r='4.8' fill='black'/%3E%3Crect x='5.5' y='5.5' width='2' height='2' fill='white'/%3E%3C/svg%3E");
+  background-size: 78%;
+}
+
+.ms-cell.is-exploded {
+  background-color: #ff1a1a;
+}
+
+.ms-cell.is-wrong {
+  background-color: #bdbdbd;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 2l12 12M14 2 2 14' stroke='red' stroke-width='1.8'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1v14M1 8h14M3 3l10 10M13 3 3 13' stroke='black' stroke-width='1.5'/%3E%3Ccircle cx='8' cy='8' r='4.8' fill='black'/%3E%3C/svg%3E");
+  background-size: 78%;
+  box-shadow: inset 1px 1px 0 #7b7b7b;
+}
+
+.ms-grid.is-over .ms-cell {
+  cursor: default;
+}
+
+.ms-cell.n1 {
+  color: #0000ff;
+}
+.ms-cell.n2 {
+  color: #007b00;
+}
+.ms-cell.n3 {
+  color: #ff0000;
+}
+.ms-cell.n4 {
+  color: #00007b;
+}
+.ms-cell.n5 {
+  color: #7b0000;
+}
+.ms-cell.n6 {
+  color: #007b7b;
+}
+.ms-cell.n7 {
+  color: #000000;
+}
+.ms-cell.n8 {
+  color: #7b7b7b;
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .ms-stage {
+    flex-direction: row;
+  }
+
+  .ms-hud {
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0 8px calc(8px + env(safe-area-inset-left));
+    padding: 8px;
+  }
+
+  .ms-counter-value {
+    font-size: 1.2rem;
+  }
+
+  .ms-board {
+    padding-left: 8px;
+  }
+}

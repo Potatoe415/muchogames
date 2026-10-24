@@ -1,0 +1,203 @@
+/* Minesweeper: classic grey bevelled skin over the shared header. The play
+   area locks touch gestures (no scroll, zoom, callout or text selection). */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: #2b3440;
+  color: #1b1b1b;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: #2b3440;
+  border-bottom: 1px solid #3b4757;
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.ms-lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.ms-chip {
+  min-width: 56px;
+  padding: 8px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ms-chip.active {
+  border-color: #2f6fe0;
+  background: #dbe8ff;
+}
+
+.ms-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ms-app [hidden] {
+  display: none !important;
+}
+
+/* --- Bevels shared by the frame, cells and buttons --- */
+.ms-card,
+.ms-hud,
+.ms-face,
+.ms-mode,
+.ms-level,
+.ms-cell {
+  background-color: #c0c0c0;
+  box-shadow:
+    inset 2px 2px 0 #ffffff,
+    inset -2px -2px 0 #7b7b7b;
+}
+
+/* --- Start screen and end card --- */
+.ms-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.ms-card {
+  width: min(92vw, 380px);
+  padding: 22px 18px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.ms-card p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.ms-logo {
+  margin: 0 0 10px;
+  font-size: clamp(1.9rem, 8vw, 2.5rem);
+  font-weight: 900;
+  color: #0000c8;
+  text-shadow: 2px 2px 0 #ffffff;
+}
+
+.ms-choose {
+  font-weight: 800;
+}
+
+.ms-levels {
+  display: grid;
+  gap: 10px;
+}
+
+.ms-level {
+  display: grid;
+  gap: 2px;
+  padding: 12px 10px;
+  border: 1px solid #000000;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.ms-level:active,
+.ms-face:active,
+.ms-mode:active {
+  box-shadow: inset 2px 2px 0 #7b7b7b;
+}
+
+.ms-level-name {
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.ms-level-info {
+  font-size: 0.85rem;
+  color: #3a3a3a;
+}
+
+.ms-level-best,
+.ms-best {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #8a0000;
+}
+
+.ms-overlay-title {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.ms-actions {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.ms-button {
+  min-width: 200px;
+  min-height: 48px;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #0000c8;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.ms-button-ghost {
+  background: #ffffff;
+  color: #1b1b1b;
+}
+
+.ms-link {
+  border: none;
+  background: none;
+  color: #1b1b1b;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ms-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(20, 26, 34, 0.45);
+}

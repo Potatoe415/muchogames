@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#008080" />
+    <title>Démineur</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="play.css" />
+  </head>
+  <body>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Démineur</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="minesweeper-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="ms-lang-switch">
+              <button
+                type="button"
+                class="ms-chip"
+                data-lang="fr"
+                data-id="minesweeper-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="ms-chip"
+                data-lang="en"
+                data-id="minesweeper-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="ms-chip"
+                data-lang="es"
+                data-id="minesweeper-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="game-options-rules">
+            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+            <div
+              class="rules-modal-content"
+              data-id="minesweeper-rules-content"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="ms-app" data-id="minesweeper-app">
+      <section class="ms-start" data-id="minesweeper-start-screen">
+        <div class="ms-card">
+          <h2 class="ms-logo" data-i18n="title">Démineur</h2>
+          <p class="ms-pitch" data-i18n="pitch"></p>
+          <p class="ms-choose" data-i18n="chooseLevel"></p>
+          <div class="ms-levels" data-id="minesweeper-level-list">
+            <button
+              type="button"
+              class="ms-level"
+              data-level="beginner"
+              data-id="minesweeper-level-beginner"
+            >
+              <span class="ms-level-name" data-i18n="beginner"></span>
+              <span class="ms-level-info" data-level-info></span>
+              <span class="ms-level-best" data-level-best></span>
+            </button>
+            <button
+              type="button"
+              class="ms-level"
+              data-level="intermediate"
+              data-id="minesweeper-level-intermediate"
+            >
+              <span class="ms-level-name" data-i18n="intermediate"></span>
+              <span class="ms-level-info" data-level-info></span>
+              <span class="ms-level-best" data-level-best></span>
+            </button>
+            <button
+              type="button"
+              class="ms-level"
+              data-level="expert"
+              data-id="minesweeper-level-expert"
+            >
+              <span class="ms-level-name" data-i18n="expert"></span>
+              <span class="ms-level-info" data-level-info></span>
+              <span class="ms-level-best" data-level-best></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ms-stage" data-id="minesweeper-stage" hidden>
+        <div class="ms-hud" data-id="minesweeper-hud">
+          <div class="ms-counter" data-id="minesweeper-hud-mines">
+            <span class="ms-counter-label" data-i18n="mines">Mines</span>
+            <span class="ms-counter-value" data-hud="mines">000</span>
+          </div>
+          <button
+            type="button"
+            class="ms-face"
+            data-id="minesweeper-new-game-button"
+            data-face="playing"
+            aria-label="Nouvelle partie"
+            data-i18n-aria="newGame"
+          ></button>
+          <div class="ms-counter" data-id="minesweeper-hud-time">
+            <span class="ms-counter-label" data-i18n="time">Temps</span>
+            <span class="ms-counter-value" data-hud="time">000</span>
+          </div>
+          <button
+            type="button"
+            class="ms-mode"
+            data-id="minesweeper-mode-toggle"
+            data-mode="dig"
+            aria-pressed="false"
+            aria-label="Changer d'action au toucher"
+            data-i18n-aria="modeHint"
+          >
+            <span class="ms-mode-icon" aria-hidden="true"></span>
+            <span class="ms-mode-label ms-mode-dig" data-i18n="modeDig"
+              >Creuser</span
+            >
+            <span class="ms-mode-label ms-mode-flag" data-i18n="modeFlag"
+              >Drapeau</span
+            >
+          </button>
+        </div>
+        <div class="ms-board" data-id="minesweeper-board"></div>
+
+        <div class="ms-overlay" data-id="minesweeper-end" hidden>
+          <div class="ms-card">
+            <h2 class="ms-overlay-title" data-id="minesweeper-end-title"></h2>
+            <p data-id="minesweeper-end-line"></p>
+            <p class="ms-best" data-id="minesweeper-end-best"></p>
+            <div class="ms-actions">
+              <button
+                type="button"
+                class="ms-button"
+                data-id="minesweeper-replay-button"
+                data-i18n="replay"
+              ></button>
+              <button
+                type="button"
+                class="ms-button ms-button-ghost"
+                data-id="minesweeper-change-level-button"
+                data-i18n="changeLevel"
+              ></button>
+              <button
+                type="button"
+                class="ms-link"
+                data-id="minesweeper-see-board-button"
+                data-i18n="seeBoard"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

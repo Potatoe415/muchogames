@@ -34,3 +34,6 @@ public/games/pipedream/**/*.md
 !public/games/jezzball/
 !public/games/jezzball/**
 public/games/jezzball/**/*.md
+!public/games/minesweeper/
+!public/games/minesweeper/**
+public/games/minesweeper/**/*.md

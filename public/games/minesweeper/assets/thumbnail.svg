@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <pattern id="open" x="50" y="120" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="#7b7b7b"/>
+      <rect x="2" y="2" width="58" height="58" fill="#bdbdbd"/>
+    </pattern>
+    <g id="h">
+      <rect width="60" height="60" fill="#c0c0c0"/>
+      <path d="M0 0h60l-6 6H6v48l-6 6z" fill="#fff"/>
+      <path d="M60 60H0l6-6h48V6l6-6z" fill="#7b7b7b"/>
+    </g>
+    <g id="f">
+      <use href="#h"/>
+      <path d="M32 12v30" stroke="#000" stroke-width="4"/>
+      <path d="M34 12 14 22l20 10z" fill="#e00"/>
+      <path d="M16 44h32v6H16zM24 40h16v4H24z" fill="#000"/>
+    </g>
+    <g id="m">
+      <rect width="60" height="60" fill="#7b7b7b"/>
+      <rect x="2" y="2" width="58" height="58" fill="#ff1a1a"/>
+      <path d="M30 8v44M8 30h44M14 14l32 32M46 14 14 46" stroke="#000" stroke-width="4"/>
+      <circle cx="30" cy="30" r="15" fill="#000"/>
+      <rect x="22" y="22" width="6" height="6" fill="#fff"/>
+    </g>
+  </defs>
+  <rect width="400" height="500" fill="#2b3440"/>
+  <rect x="38" y="108" width="324" height="384" fill="#c0c0c0"/>
+  <path d="M44 114h312v372H44z" fill="none" stroke="#7b7b7b" stroke-width="6"/>
+  <rect x="50" y="120" width="300" height="360" fill="url(#open)"/>
+  <use href="#f" x="170" y="180"/>
+  <use href="#f" x="290" y="300"/>
+  <use href="#h" x="50" y="360"/>
+  <use href="#m" x="110" y="360"/>
+  <use href="#h" x="170" y="360"/>
+  <use href="#h" x="50" y="420"/>
+  <use href="#h" x="110" y="420"/>
+  <use href="#h" x="170" y="420"/>
+  <g font-family="Trebuchet MS, system-ui, sans-serif" font-size="42" font-weight="900" text-anchor="middle" fill="#0000ff">
+    <text x="140" y="165">1</text>
+    <text x="200" y="165">1</text>
+    <text x="260" y="165">1</text>
+    <text x="140" y="225">1</text>
+    <text x="260" y="225">1</text>
+    <text x="140" y="285">1</text>
+    <text x="200" y="285">1</text>
+    <text x="260" y="285" fill="#007b00">2</text>
+    <text x="320" y="285">1</text>
+    <text x="80" y="345">1</text>
+    <text x="140" y="345">1</text>
+    <text x="200" y="345">1</text>
+    <text x="260" y="345">1</text>
+    <text x="260" y="405">1</text>
+    <text x="320" y="405">1</text>
+  </g>
+  <text x="200" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="54" font-weight="900" fill="#0000c8" transform="translate(3 3)">DÉMINEUR</text>
+  <text x="200" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="54" font-weight="900" fill="#ffffff">DÉMINEUR</text>
+</svg>

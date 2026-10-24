@@ -92,6 +92,15 @@
     "players": [1, 1]
   },
   {
+    "id": "minesweeper",
+    "title": "Démineur",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/minesweeper/index.html",
+    "thumbnail": "/games/minesweeper/assets/thumbnail.svg",
+    "players": [1, 1]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",
