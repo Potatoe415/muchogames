@@ -97,7 +97,7 @@
     "kind": "custom",
     "category": "autres",
     "launch": "/games/minesweeper/index.html",
-    "thumbnail": "/games/minesweeper/assets/thumbnail.svg",
+    "thumbnail": "/games/minesweeper/assets/thumbnail.jpg",
     "players": [1, 1]
   },
   {

@@ -25,6 +25,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-24 Démineur hub cover replaced: 4:5 photo `public/games/minesweeper/assets/thumbnail.jpg` (navy + grey tiles, red mine, two flags). The SVG cover is gone.
 - 2026-10-24 New hub game `minesweeper` ("Démineur", `public/games/minesweeper/`, category `autres`, solo): Beginner/Intermediate/Expert, safe first click (3×3 opening), flood fill, chord, flags by long press/right click/F/flag-mode toggle, 999 s timer paused with options, Expert rotated in portrait, best time per level in `localStorage`, `finish({ won })`. `GAMES_MAP.md` row + `NOTES.md`. `npm run check` OK.
 - 2026-10-24 New hub game `jezzball` (`public/games/jezzball/`, category `autres`, solo). `npm run check` OK.
 - 2026-10-24 New hub game `pipedream` (`public/games/pipedream/`, category `autres`, solo). `npm run check` OK.
