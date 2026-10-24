@@ -2,32 +2,30 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Platform common rules (`docs/tasks/platform-common-rules.md`) live in code for every in-repo game, coinchapp, the hub, `/profile` and `/admin`: one coin per match started (`game-session.js` / `POST /api/match` / coinchapp `MatchGate`), shared back/options chrome with "Quitter la partie ?", matches started/won/lost. `npm run check` enforces `docs/PLATFORM_RULES.md` (baseline 8).
-Focus: Remaining: Tranquil (blocked on its Vercel repoint), `*.vercel.app` launch URLs (subdomains); then delete the task file.
-Level: L2 (approved 2026-10-03).
+Status: New solo game `pipedream` (Pipe Dream remake, Canvas 2D + Web Audio, no dependency) is live in the hub, first of 4 Entertainment Pack remakes (Pipe Dream, JezzBall, SkiFree, Chip's Challenge). Platform common rules (decision 0047) still live everywhere except Tranquil.
+Focus: Owner play-test of Pipe Dream (mobile portrait/landscape, desktop). JezzBall only after the owner's go.
+Level: L1 (pipedream); platform rules task stays L2 (approved 2026-10-03).
 
 Context:
-- Working_On: closing out the platform rules task.
-- Relevant_Files: `docs/PLATFORM_RULES.md`, `scripts/check-games.mjs` + baseline, `public/shared/js/game-session.js`, `api/match.js`, `hub-coins.js`, `supabase/migrations/0008_match_coins.sql`, `apps/coinchapp/components/MatchGate.tsx`
-- Do_Not_Touch: game rules engines beyond match start/finish hooks; Easy Frog and GameBoy Web.
-- Relevant_Decisions: 0047 (this task; supersedes 0046's launch charge), 0007, 0038, 0042, coinchapp 0071
+- Working_On: Pipe Dream delivered; waiting for owner feedback.
+- Relevant_Files: `public/games/pipedream/` (read its `NOTES.md` first), `public/hub-config.json` entry `pipedream`.
+- Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
+- Relevant_Decisions: 0047, 0007, 0038, 0042
 
 Next:
-- Owner: run `0007_coins.sql` then `0008_match_coins.sql` (until then every match starts free); add `ADMIN_USER_IDS` to the `coinchapp` Vercel project.
-- Tranquil: wire `start_muchogames_match` + platform `data-id`s once its Vercel project is repointed to this repo.
-- Domains: add `cartes.muchogames.win` (coinchapp) / `tranquil.muchogames.win` on Vercel (owner approval), Google OAuth origins, then switch launch URLs + `PROFILE_HOSTS`.
-- Live checks after deploy: a match in each game drops the hub badge; Yatzy online with two devices (each pays once, reconnect free); coinchapp online rematch charges both.
+- Pipe Dream: apply owner feedback (difficulty curve lives in `levels.js`).
+- JezzBall (`public/games/jezzball/`) on owner go, same module split as Pipe Dream.
+- Platform rules leftovers: owner runs `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on the `coinchapp` Vercel project; Tranquil `start_muchogames_match` + `data-id`s after its Vercel repoint; `cartes.`/`tranquil.muchogames.win` domains then launch URLs + `PROFILE_HOSTS`.
+- Live checks after deploy: a match in each game drops the hub badge; Yatzy online with two devices; coinchapp online rematch charges both.
 
 Open_Questions:
-- None.
+- `.prettierignore`'s `!public/games/yatsy/**` never re-included yatsy (a parent-dir exclusion needs `!public/games/yatsy/` too); `pipedream` uses the working form. Fixing yatsy would reformat it — owner call.
 
 Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-23 New hub game `solitaire` (Klondike, solo) served by `apps/coinchapp` (its decision 0072): `public/hub-config.json` entry + `public/games/coinchapp/assets/thumbnail-solitaire.jpg`, `GAMES_MAP.md` row updated. Root `npm run check` OK.
-- 2026-10-03 `/profile` split into two tabs: Infos (avatar, name, account export/delete) and Statistiques (matches, favorites, per-game results); `profile-tabs.js`.
-- 2026-10-03 Hub: "My games" is now the first category tab (default when non-empty, hidden when empty); player count badge bottom-right of each tile; player-count filter removed.
-- 2026-10-03 PRODUCT/ARCHITECTURE/SECURITY updated for coins per match (owner OK); `api/track.js` + `shared/js/analytics.js` removed (7/12 functions); decision 0047.
-- 2026-10-03 Hub charges only `coinPolicy: "launch"` games; badge reads the shared server counter; `api/profile` coin actions removed.
-- 2026-10-03 coinchapp: one hub coin per match in every mode (its decision 0071); hub forwards `mgDevice` to `source` games.
+- 2026-10-24 New hub game `pipedream` (`public/games/pipedream/`, category `autres`, solo): 10x7 grid (7x10 portrait), 7 pieces, 5-piece FIFO, overwrite −50 with 0.6 s lock, cross bonus, quota, unused-pipe sweep, rocks from level 3, fast-forward, best score in `localStorage`. `GAMES_MAP.md` row + `NOTES.md`. `npm run check` OK.
+- 2026-10-23 New hub game `solitaire` (Klondike, solo) served by `apps/coinchapp` (its decision 0072).
+- 2026-10-03 `/profile` split into two tabs: Infos and Statistiques; `profile-tabs.js`.
+- 2026-10-03 PRODUCT/ARCHITECTURE/SECURITY updated for coins per match (owner OK); decision 0047.

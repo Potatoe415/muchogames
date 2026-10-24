@@ -38,6 +38,7 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `cafards` | `public/games/cafards/` | `game.js` (238) | header, profile | no |
 | `millionaire` | `public/games/millionaire/` | `app.js` (1089, **over 300-line limit**) | engine, header, profile | no — see `docs/BACKLOG.md` |
 | `pyramide` | `public/games/pyramide/` | `app.js` (847), `i18n.js` (317) — **both over limit** | header, profile | no — see `docs/BACKLOG.md` |
+| `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,780 total (none >300); `main.js` entry | header, session | yes |
 | `yatsy` | `public/games/yatsy/` | 14 files; `app.js` (1239), `i18n.js` (395), `render.js` (633), `session.js` (575) — **4 files over limit** | engine, header, profile, Supabase | no — see `docs/BACKLOG.md` Later |
 
 "Shared deps" = which `shared/CONTRACT.md` modules the game imports. Read

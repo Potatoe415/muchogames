@@ -28,3 +28,6 @@ public/data/olemains/words.json
 #   !public/games/yatsy/**
 public/games/**
 !public/games/yatsy/**
+!public/games/pipedream/
+!public/games/pipedream/**
+public/games/pipedream/**/*.md

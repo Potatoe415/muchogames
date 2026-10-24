@@ -74,6 +74,15 @@
     "thumbnail": "/games/millionaire/assets/thumbnail.jpg"
   },
   {
+    "id": "pipedream",
+    "title": "Pipe Dream",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/pipedream/index.html",
+    "thumbnail": "/games/pipedream/assets/thumbnail.svg",
+    "players": [1, 1]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",

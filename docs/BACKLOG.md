@@ -4,6 +4,8 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] **User**: play-test Pipe Dream (`/games/pipedream/`) on phone (portrait + landscape) and desktop, then give the go for JezzBall.
+- [ ] Entertainment Pack remakes, one at a time after owner go: JezzBall, then SkiFree, then Chip's Challenge (same split as `public/games/pipedream/`).
 - [ ] **User**: add `ADMIN_USER_IDS` (your Supabase user id, same as on `muchogames`) to the `coinchapp` Vercel project, Production + Preview, then redeploy — until then the admin pays coins in coinchapp.
 - [ ] Optional: `delete from public.muchogames_events where type = 'game_launch';` (old hub-launch history, unread since 2026-10-03).
 - [ ] Platform common rules, steps 2–6 (`docs/tasks/platform-common-rules.md`): coins per match, shared `game-session.js`, wire every game, coinchapp/Tranquil, profile/admin stats. Done when `scripts/check-games.baseline.json` is empty.

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <pattern id="tile" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#a7aeb9"/>
+      <rect width="80" height="5" fill="#dfe3e9"/>
+      <rect width="5" height="80" fill="#dfe3e9"/>
+      <rect y="75" width="80" height="5" fill="#717884"/>
+      <rect x="75" width="5" height="80" fill="#717884"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="500" fill="#141a26"/>
+  <rect x="0" y="100" width="400" height="400" fill="url(#tile)"/>
+  <g fill="none" stroke-linejoin="round">
+    <path id="pipe" d="M40 500 V300 A40 40 0 0 1 80 260 H200 A40 40 0 0 0 240 220 V180 A40 40 0 0 1 280 140 H400"/>
+    <use href="#pipe" stroke="#11151c" stroke-width="40"/>
+    <use href="#pipe" stroke="#5f6c80" stroke-width="34"/>
+    <use href="#pipe" stroke="#d3dce8" stroke-width="20" transform="translate(-3 -3)"/>
+    <use href="#pipe" stroke="#8794a8" stroke-width="20"/>
+    <use href="#pipe" stroke="#1a2029" stroke-width="14"/>
+    <path d="M40 500 V300 A40 40 0 0 1 80 260 H200 A40 40 0 0 0 240 220 V200" stroke="#3fd94a" stroke-width="14"/>
+    <path d="M40 500 V300 A40 40 0 0 1 80 260 H200 A40 40 0 0 0 240 220 V200" stroke="#c3ff9e" stroke-width="5" stroke-dasharray="8 14"/>
+  </g>
+  <g stroke="#11151c" stroke-width="40">
+    <path d="M280 340 H400 M340 280 V400"/>
+  </g>
+  <g stroke="#8794a8" stroke-width="22">
+    <path d="M340 280 V400 M280 340 H400"/>
+  </g>
+  <circle cx="120" cy="420" r="30" fill="#6e5f4f" stroke="#2a231c" stroke-width="4"/>
+  <text x="200" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="54" font-weight="900" fill="#3fd94a" transform="translate(4 4)">PIPE DREAM</text>
+  <text x="200" y="62" text-anchor="middle" font-family="system-ui, sans-serif" font-size="54" font-weight="900" fill="#ffd23f">PIPE DREAM</text>
+</svg>
