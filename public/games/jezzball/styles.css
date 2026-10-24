@@ -229,6 +229,10 @@ body {
   color: #ffffff;
 }
 
+.jb-stat-value[data-hud="area"] {
+  font-size: clamp(0.72rem, 3.1vw, 1.2rem);
+}
+
 .jb-stat.is-urgent .jb-stat-value {
   color: #ff5a5a;
   animation: jb-blink 0.5s steps(2) infinite;

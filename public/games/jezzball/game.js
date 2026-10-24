@@ -83,7 +83,7 @@ export function createGame(options) {
       config,
       grid,
       balls: spawnBalls(grid, config.balls),
-      wall: null,
+      walls: [],
       lives: config.lives,
       timer: config.time,
       percent: 0,
@@ -121,7 +121,7 @@ export function createGame(options) {
     toCell: (px, py) => cellFromPoint(layout, px, py),
     actions: {
       unlock: audio.unlock,
-      build: (x, y, axis) => tryBuild(game, x, y, axis),
+      build: (x, y, axis, dir) => tryBuild(game, x, y, axis, dir),
       swipe: () => state.swipe,
       toggle: () => toggleAxis(game),
       twoFinger: () => twoFingerToggle(game),

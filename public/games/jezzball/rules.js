@@ -12,6 +12,7 @@ import {
 } from "./grid.js";
 import {
   CANCEL_WINDOW,
+  MAX_WALLS,
   POINTS,
   TARGET_PERCENT,
   URGENT_SECONDS
@@ -22,6 +23,8 @@ import {
   createWall,
   growWall,
   isLive,
+  joinHeadOn,
+  nearestDirection,
   rayRect,
   wallOver
 } from "./walls.js";
@@ -33,17 +36,23 @@ const COLORS = {
 };
 const FLASH_SECONDS = 0.4;
 
+// True when a tap would launch a full two-ray wall (mouse preview).
 export const canBuild = (state) =>
-  state.phase === "play" && !state.paused && !state.wall;
+  state.phase === "play" && !state.paused && state.walls.length === 0;
 
-export function tryBuild(game, x, y, axis = game.state.axis) {
+// While a wall grows, a second one may start with a single ray: along `dir`
+// (swipe direction) or, without one, toward the closest solid cell.
+export function tryBuild(game, x, y, axis = game.state.axis, dir) {
   const { state, audio } = game;
   if (state.phase !== "play" || state.paused) return false;
-  if (state.wall || cellAt(state.grid, x, y) !== EMPTY) {
+  const full = state.walls.length >= MAX_WALLS;
+  if (full || cellAt(state.grid, x, y) !== EMPTY) {
     audio.play("deny");
     return false;
   }
-  state.wall = createWall(x, y, axis);
+  const single = state.walls.length > 0;
+  const ray = single ? dir || nearestDirection(state.grid, x, y, axis) : 0;
+  state.walls.push(createWall(x, y, axis, ray));
   audio.play("launch");
   return true;
 }
@@ -60,10 +69,10 @@ export function toggleAxis(game) {
 // the gesture only flips the axis.
 export function twoFingerToggle(game) {
   const { state } = game;
-  const wall = state.wall;
+  const wall = state.walls.at(-1);
   if (wall && wall.age < CANCEL_WINDOW && !wall.solidified) {
     cancelWall(state.grid, wall);
-    state.wall = null;
+    state.walls.pop();
   }
   toggleAxis(game);
 }
@@ -79,7 +88,7 @@ function loseLife(game, reason) {
   state.flash = FLASH_SECONDS;
   if (state.lives > 0) return;
   state.phase = "over";
-  state.wall = null;
+  state.walls = [];
   audio.play("lose");
   game.onGameOver(summary(state, reason));
 }
@@ -101,11 +110,11 @@ function shatter(game, ray) {
   loseLife(game, "hit");
 }
 
-function resolveHits(game) {
+function resolveHits(game, wall) {
   const { state, effects } = game;
-  state.wall.rays.filter(isLive).forEach((ray) => {
+  wall.rays.filter(isLive).forEach((ray) => {
     if (state.phase !== "play") return;
-    const rect = rayRect(state.wall, ray);
+    const rect = rayRect(wall, ray);
     const ball = state.balls.find((b) => touchesRect(b, rect));
     if (!ball) return;
     effects.ring(ball.x, ball.y, "#ff4d4d");
@@ -113,9 +122,9 @@ function resolveHits(game) {
   });
 }
 
-function capture(game, ray) {
+function capture(game, wall, ray) {
   const { state, audio, effects } = game;
-  const { grid, wall } = state;
+  const { grid } = state;
   const before = grid.solid;
   solidify(grid, ray.cells);
   ray.finished = false;
@@ -143,21 +152,26 @@ function levelCleared(game) {
   state.timeBonus = Math.ceil(state.timer) * POINTS.second * level;
   state.score += state.percentBonus + state.timeBonus;
   state.phase = "cleared";
-  state.wall = null;
+  state.walls = [];
   audio.play("win");
   game.onLevelCleared(summary(state));
 }
 
-function stepWall(game, dt) {
+function stepWalls(game, dt) {
   const { state, audio } = game;
-  if (growWall(state.grid, state.wall, dt) > 0) audio.play("grow");
-  resolveHits(game);
-  state.wall?.rays.forEach((ray) => {
-    if (ray.finished && state.phase === "play") capture(game, ray);
-  });
+  let claimed = 0;
+  state.walls.forEach((wall) => (claimed += growWall(state.grid, wall, dt)));
+  if (claimed > 0) audio.play("grow");
+  joinHeadOn(state.walls);
+  state.walls.forEach((wall) => resolveHits(game, wall));
+  state.walls.forEach((wall) =>
+    wall.rays.forEach((ray) => {
+      if (ray.finished && state.phase === "play") capture(game, wall, ray);
+    })
+  );
   if (state.phase !== "play") return;
   if (state.percent >= TARGET_PERCENT) levelCleared(game);
-  else if (wallOver(state.wall)) state.wall = null;
+  else state.walls = state.walls.filter((wall) => !wallOver(wall));
 }
 
 function stepTimer(game, dt) {
@@ -181,7 +195,7 @@ export function stepGame(game, dt) {
   state.flash = Math.max(0, state.flash - dt);
   if (state.phase !== "play" || state.paused) return;
   if (moveBalls(state.grid, state.balls, dt) > 0) game.audio.play("bounce");
-  if (state.wall) stepWall(game, dt);
+  if (state.walls.length) stepWalls(game, dt);
   if (state.phase === "play") stepTimer(game, dt);
 }
 

@@ -12,7 +12,7 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 | `game.js` | `createGame({ stage, canvas, host, muted, best, onLevelCleared, onGameOver })` → `{ nextLevel, setPaused, setMuted, destroy }`. Owns loop, ResizeObserver, listeners, AudioContext, field cache. |
 | `rules.js` | Wall launch, axis toggle, two-finger cancel, ray/ball hits, capture + scoring, lives, timer, level end. |
 | `grid.js` | `Uint8Array` cells `EMPTY / SOLID / GROW_1 / GROW_2`, border ring, `solidify`, multi-source BFS `unreachedCells`, capture glow. |
-| `walls.js` | Dual-ray wall: `pivot` grid line, ray 1 left/up, ray 2 right/down, `growWall`, `rayRect`, `breakRay`. |
+| `walls.js` | Dual-ray or single-ray wall: `pivot` grid line, ray 1 left/up, ray 2 right/down, `growWall`, `rayRect`, `breakRay`, `nearestDirection`, `joinHeadOn`. |
 | `balls.js` | Spawn, sub-stepped motion (≤ 0.2 cell), per-axis square-box collision against `SOLID`, ball/ball swap, `touchesRect`. |
 | `levels.js` | Grid size, speeds, points, `levelConfig(level)`. |
 | `layout.js` | Integer cell size, centered grid, DPR-aware canvas surface. |
@@ -22,7 +22,8 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 ## Rules in code
 
 - Grid 32x22 inside a 1-cell border; 22x32 when the stage is portrait at level start.
-- One wall at a time. Each ray solidifies on its own when it meets `SOLID`; a ball box touching a live ray breaks that ray only (−1 life).
+- Up to 2 walls at once (`state.walls`). The first has two rays; one launched while another grows has a single ray, like the original (swipe direction, else toward the nearest solid cell). Each ray solidifies on its own when it meets `SOLID`; a ball box touching a live ray breaks that ray only (−1 life).
+- A ray reaching another wall's growing ray waits on it (finishes if it turns solid, goes on if it breaks); two rays meeting head-on on the same line both finish (`joinHeadOn`).
 - A finished ray is hit-tested at full length before solidifying, so a ball never ends up inside a solid cell.
 - After each solidified ray: BFS from every ball cell through non-solid cells; unreached `EMPTY` cells become `SOLID`.
 - Level N: N+1 balls, N+1 lives, `60 + 20N` s. Timer at 0 = −1 life and the timer restarts.

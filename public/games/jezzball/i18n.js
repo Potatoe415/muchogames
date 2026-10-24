@@ -135,7 +135,7 @@ const STRINGS = {
 const RULES = {
   fr: `<p>Des atomes rebondissent dans le terrain. Construisez des murs pour les enfermer dans des zones de plus en plus petites.</p>
 <ul>
-<li>Touchez (ou cliquez) une case libre : un mur part dans les deux sens selon l'axe actif, une moitié rouge et une moitié bleue. Un seul mur à la fois.</li>
+<li>Touchez (ou cliquez) une case libre : un mur part dans les deux sens selon l'axe actif, une moitié rouge et une moitié bleue. Pendant qu'il grandit, vous pouvez lancer un 2e mur, mais il n'a qu'une seule moitié (dans le sens du swipe, sinon vers le mur le plus proche).</li>
 <li>Changez d'axe (↔ / ↕) avec le gros bouton, un toucher à deux doigts, le clic droit, la molette ou la barre d'espace.</li>
 <li>Option « Swipe » (activée par défaut, écran tactile) : glissez depuis une case libre, ← → pour un mur horizontal, ↑ ↓ pour un mur vertical. Désactivée : un tap lance le mur selon l'axe actif.</li>
 <li>Chaque moitié se fige dès qu'elle touche un mur. Toute zone sans atome est alors conquise et noircie.</li>
@@ -145,7 +145,7 @@ const RULES = {
 </ul>`,
   en: `<p>Atoms bounce around the field. Build walls to trap them in smaller and smaller areas.</p>
 <ul>
-<li>Tap (or click) a free cell: a wall grows both ways along the active axis, one red half and one blue half. One wall at a time.</li>
+<li>Tap (or click) a free cell: a wall grows both ways along the active axis, one red half and one blue half. While it grows you can launch a 2nd wall, but it only has one half (in the swipe direction, otherwise toward the nearest wall).</li>
 <li>Switch axis (↔ / ↕) with the big button, a two-finger tap, right click, the mouse wheel or the space bar.</li>
 <li>"Swipe" option (on by default, touch screens): swipe from a free cell, ← → for a horizontal wall, ↑ ↓ for a vertical one. Off: a tap launches the wall along the active axis.</li>
 <li>Each half sets as soon as it reaches a wall. Every area with no atom inside is then claimed and turns black.</li>
@@ -155,7 +155,7 @@ const RULES = {
 </ul>`,
   es: `<p>Los átomos rebotan por el terreno. Construye muros para encerrarlos en zonas cada vez más pequeñas.</p>
 <ul>
-<li>Toca (o haz clic en) una casilla libre: un muro crece en ambos sentidos según el eje activo, una mitad roja y otra azul. Un solo muro a la vez.</li>
+<li>Toca (o haz clic en) una casilla libre: un muro crece en ambos sentidos según el eje activo, una mitad roja y otra azul. Mientras crece puedes lanzar un 2.º muro, pero solo tiene una mitad (en el sentido del deslizamiento, si no hacia el muro más cercano).</li>
 <li>Cambia de eje (↔ / ↕) con el botón grande, un toque con dos dedos, el clic derecho, la rueda del ratón o la barra espaciadora.</li>
 <li>Opción «Deslizar» (activada por defecto, pantalla táctil): desliza desde una casilla libre, ← → para un muro horizontal, ↑ ↓ para uno vertical. Desactivada: un toque lanza el muro según el eje activo.</li>
 <li>Cada mitad se fija en cuanto toca un muro. Toda zona sin átomos queda conquistada y se vuelve negra.</li>

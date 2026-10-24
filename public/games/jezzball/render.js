@@ -38,10 +38,10 @@ function toPixels(layout, rect) {
   };
 }
 
-function drawRay(ctx, layout, wall, ray, index, time) {
+function drawRay(ctx, layout, wall, ray, time) {
   const box = toPixels(layout, rayRect(wall, ray));
   if (box.w <= 0 || box.h <= 0) return;
-  const colors = RAY_COLORS[index];
+  const colors = RAY_COLORS[ray.dir < 0 ? 0 : 1];
   const inset = Math.max(1, layout.cell * 0.18);
   const horizontal = wall.axis === "h";
   ctx.fillStyle = colors.body;
@@ -60,11 +60,12 @@ function drawRay(ctx, layout, wall, ray, index, time) {
   ctx.fill();
 }
 
-function drawWall(ctx, layout, wall, time) {
-  if (!wall) return;
-  wall.rays.forEach((ray, index) => {
-    if (isLive(ray)) drawRay(ctx, layout, wall, ray, index, time);
-  });
+function drawWalls(ctx, layout, walls, time) {
+  walls.forEach((wall) =>
+    wall.rays.forEach((ray) => {
+      if (isLive(ray)) drawRay(ctx, layout, wall, ray, time);
+    })
+  );
 }
 
 // Extent of the wall a tap on `cell` would build, both rays included.
@@ -122,7 +123,7 @@ export function render(ctx, layout, view) {
   field.draw(ctx, state.grid, layout);
   drawGlow(ctx, state.grid, layout);
   drawPreview(ctx, layout, view);
-  drawWall(ctx, layout, state.wall, time);
+  drawWalls(ctx, layout, state.walls, time);
   drawBalls(ctx, layout, state.balls);
   effects.draw(ctx, layout.grid.x, layout.grid.y, layout.cell);
   drawFlash(ctx, layout, state.flash);

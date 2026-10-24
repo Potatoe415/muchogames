@@ -13,6 +13,7 @@ function pointToCell(event, canvas, toCell) {
 
 // The wall starts from the cell under the finger as soon as it has moved
 // SWIPE_PX: left/right builds a horizontal wall, up/down a vertical one.
+// The swipe direction also aims the single ray of a second wall.
 function createSwiper(actions) {
   let start = null;
   return {
@@ -27,8 +28,14 @@ function createSwiper(actions) {
       const dy = event.clientY - start.y;
       if (Math.max(Math.abs(dx), Math.abs(dy)) < SWIPE_PX) return;
       const { cell } = start;
+      const horizontal = Math.abs(dx) >= Math.abs(dy);
       start = null;
-      actions.build(cell.x, cell.y, Math.abs(dx) >= Math.abs(dy) ? "h" : "v");
+      actions.build(
+        cell.x,
+        cell.y,
+        horizontal ? "h" : "v",
+        Math.sign(horizontal ? dx : dy)
+      );
     },
     up(event) {
       if (start?.id === event.pointerId) start = null;

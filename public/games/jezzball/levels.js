@@ -9,6 +9,7 @@ export const BALL_RADIUS = 0.4;
 export const BALL_SPEED = 7.5;
 export const WALL_SPEED = 11;
 export const CANCEL_WINDOW = 0.15;
+export const MAX_WALLS = 2;
 export const URGENT_SECONDS = 10;
 
 // Every value is multiplied by the level number.
