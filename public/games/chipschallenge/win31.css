@@ -1,0 +1,101 @@
+/* Windows 3.1 widgets: system grey, hard 2px bevels (white top/left, grey
+   bottom/right) inside a black frame, navy title bars, no radius, no blur,
+   no gradient, unsmoothed monospace system font. */
+:root {
+  --cc-grey: #c0c0c0;
+  --cc-dark: #808080;
+  --cc-navy: #000080;
+  --cc-teal: #008080;
+  --cc-font:
+    "Fixedsys Excelsior", Fixedsys, "Lucida Console", "Courier New", monospace;
+  --cc-raised: inset 2px 2px 0 #ffffff, inset -2px -2px 0 var(--cc-dark);
+  --cc-sunken: inset 2px 2px 0 var(--cc-dark), inset -2px -2px 0 #ffffff;
+}
+
+.cc-window {
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: var(--cc-grey);
+  box-shadow: var(--cc-raised);
+  color: #000000;
+}
+
+.cc-titlebar {
+  margin: 2px 2px 0;
+  padding: 3px 6px;
+  background: var(--cc-navy);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cc-window-body {
+  margin: 0;
+  padding: 12px 14px 14px;
+  text-align: center;
+}
+
+.cc-window-body p {
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.cc-btn,
+.cc-chip,
+.cc-pad-btn {
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: var(--cc-grey);
+  box-shadow: var(--cc-raised);
+  color: #000000;
+  cursor: pointer;
+}
+
+.cc-btn {
+  min-height: 44px;
+  padding: 6px 12px;
+  font: 700 0.9rem/1.15 var(--cc-font);
+  touch-action: manipulation;
+}
+
+.cc-btn:active,
+.cc-pad-btn:active {
+  padding: 7px 11px 5px 13px;
+  box-shadow: var(--cc-sunken);
+}
+
+.cc-btn:focus-visible,
+.cc-pad-btn:focus-visible {
+  outline: 1px dotted #000000;
+  outline-offset: -6px;
+}
+
+.cc-btn-default {
+  min-width: 160px;
+  border-width: 2px;
+}
+
+.cc-chip {
+  min-width: 56px;
+  padding: 8px 14px;
+  font: 700 0.95rem var(--cc-font);
+}
+
+.cc-chip.active,
+.cc-chip[aria-pressed="true"] {
+  box-shadow: var(--cc-sunken);
+  background: #ffffff;
+}
+
+.cc-input {
+  width: 6ch;
+  min-height: 36px;
+  padding: 4px 6px;
+  border: 1px solid #000000;
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: var(--cc-sunken);
+  font: 700 1rem var(--cc-font);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}

@@ -2,32 +2,31 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Solo games `pipedream`, `jezzball`, `skifree` (Entertainment Pack remakes 1–3 of 4: Pipe Dream, JezzBall, SkiFree, Chip's Challenge) and `minesweeper` (Démineur, classic Windows) are live in the hub. Platform common rules (decision 0047) still live everywhere except Tranquil.
-Focus: Owner play-test of SkiFree (plus Pipe Dream, JezzBall, Démineur) on mobile portrait/landscape and desktop. Chip's Challenge only after the owner's go.
-Level: L1 (new game `skifree`); platform rules task stays L2 (approved 2026-10-03).
+Status: The 4 Entertainment Pack remakes are live in the hub: `pipedream`, `jezzball`, `skifree`, `chipschallenge`, plus `minesweeper` (Démineur, classic Windows). Platform common rules (decision 0047) still live everywhere except Tranquil.
+Focus: Owner play-test of Chip's Challenge (plus SkiFree, Pipe Dream, JezzBall, Démineur) on mobile portrait/landscape and desktop.
+Level: L1 (new game `chipschallenge`); platform rules task stays L2 (approved 2026-10-03).
 
 Context:
-- Working_On: SkiFree shipped, waiting on owner play-test.
-- Relevant_Files: `public/games/skifree/` (see its `NOTES.md`), `public/hub-config.json` entry `skifree`.
+- Working_On: Chip's Challenge shipped, waiting on owner play-test.
+- Relevant_Files: `public/games/chipschallenge/` (see its `NOTES.md`), `public/hub-config.json` entry `chipschallenge`.
 - Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
 - Relevant_Decisions: 0047, 0007, 0038, 0042
 
 Next:
-- SkiFree / Démineur / JezzBall / Pipe Dream: apply owner feedback.
-- Chip's Challenge (`public/games/chipschallenge/`) on owner go, same module split. `loop.js` is now copied in 3 games (verbatim): extract to `public/shared/` if one copy has to change.
+- Chip's Challenge / SkiFree / Démineur / JezzBall / Pipe Dream: apply owner feedback.
+- `loop.js` + `storage.js` are verbatim copies in 4 games: extract to `public/shared/` if one copy has to change.
 - Platform rules leftovers: owner runs `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on the `coinchapp` Vercel project; Tranquil `start_muchogames_match` + `data-id`s after its Vercel repoint; `cartes.`/`tranquil.muchogames.win` domains then launch URLs + `PROFILE_HOSTS`.
 - Live checks after deploy: a match in each game drops the hub badge; Yatzy online with two devices; coinchapp online rematch charges both.
 
 Open_Questions:
-- `.prettierignore`'s `!public/games/yatsy/**` never re-included yatsy (a parent-dir exclusion needs `!public/games/yatsy/` too); `pipedream`, `jezzball`, `minesweeper` and `skifree` use the working form. Fixing yatsy would reformat it — owner call.
-- SkiFree bitmaps are Chris Pirih / Microsoft's (extracted SKI.EXE resources, not MIT): fine for a fan remake per the owner's request, flag if the site ever goes commercial.
+- `.prettierignore`'s `!public/games/yatsy/**` never re-included yatsy (a parent-dir exclusion needs `!public/games/yatsy/` too); the Entertainment Pack games and `minesweeper` use the working form. Fixing yatsy would reformat it — owner call.
+- SkiFree bitmaps (Chris Pirih / Microsoft) and Chip's Challenge tiles (Microsoft / Epyx, CHIPS.EXE) are original copyrighted art: fine for a fan remake per the owner's request, flag if the site ever goes commercial. Chip's levels are original layouts (only the 5 passwords come from the 1991 game).
 
 Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-24 New hub game `skifree` (`public/games/skifree/`, category `autres`, solo): the 86 original SKI.EXE bitmaps packed in `assets/sprites.png`, pixel-perfect integer zoom, 7 ski angles, turbo (F), jumps/tricks/style, crash, Slalom / Freestyle / Tree Slalom courses with gates and records, lift chairs, dogs + yellow snow, novices, snowboarders, burning dead trees, yeti at 2000 m (or −125 m uphill) with the eat animation. Win 3.1 status box, dialogs and touch buttons. Mouse/keyboard/touch-drag controls. `npm run check` OK, `tsc --checkJs` clean, live-checked in the browser.
-- 2026-10-24 JezzBall hub cover: 4:5 JPEG `public/games/jezzball/assets/thumbnail.jpg` (800×1000). SVG cover removed.
-- 2026-10-24 Pipe Dream hub cover: 4:5 JPEG `public/games/pipedream/assets/thumbnail.jpg` (800×1000). SVG cover removed.
-- 2026-10-24 New hub game `minesweeper` ("Démineur", `public/games/minesweeper/`, category `autres`, solo). `npm run check` OK.
-- 2026-10-24 New hub game `jezzball` (`public/games/jezzball/`, category `autres`, solo). `npm run check` OK.
+- 2026-10-24 New hub game `chipschallenge` (`public/games/chipschallenge/`, category `autres`, solo): original CHIPS.EXE tileset (`assets/tiles.png`, masked creatures), 9x9 window on 32x32 boards, 20 Hz ticks (walk 5/s, slide 10/s), every MS tile handled (keys/doors, 4 boots, thief, ice + curved ice, force floors, blocks/dirt/bombs, hidden/invisible/blue/toggle/pop-up walls, 4 buttons, cloners, traps, teleports, thin walls) and 9 creature brains. 5 levels (LESSON 1–3, SLIDE & SKATE, MONSTER MAZE), each proven solvable by a headless replay. Level select + passwords + best score/time in localStorage. LED counters, 4x2 inventory, hint box, D-pad (tap/hold) + swipes, Win 3.1 chrome, portrait/landscape layouts. `npm run check` OK, `tsc --checkJs` 0 errors, live-checked (render, keyboard, D-pad, hint, password, death dialog).
+- 2026-10-24 New hub game `skifree` (`public/games/skifree/`): original SKI.EXE bitmaps, courses, yeti. `npm run check` OK.
+- 2026-10-24 JezzBall and Pipe Dream hub covers: 4:5 JPEG thumbnails.
+- 2026-10-24 New hub games `minesweeper` ("Démineur") and `jezzball`. `npm run check` OK.

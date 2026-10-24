@@ -40,3 +40,6 @@ public/games/minesweeper/**/*.md
 !public/games/skifree/
 !public/games/skifree/**
 public/games/skifree/**/*.md
+!public/games/chipschallenge/
+!public/games/chipschallenge/**
+public/games/chipschallenge/**/*.md

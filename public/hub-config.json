@@ -101,6 +101,15 @@
     "players": [1, 1]
   },
   {
+    "id": "chipschallenge",
+    "title": "Chip's Challenge",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/chipschallenge/index.html",
+    "thumbnail": "/games/chipschallenge/assets/thumbnail.png",
+    "players": [1, 1]
+  },
+  {
     "id": "minesweeper",
     "title": "Démineur",
     "kind": "custom",
