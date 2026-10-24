@@ -83,6 +83,15 @@
     "players": [1, 1]
   },
   {
+    "id": "jezzball",
+    "title": "JezzBall",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/jezzball/index.html",
+    "thumbnail": "/games/jezzball/assets/thumbnail.svg",
+    "players": [1, 1]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",

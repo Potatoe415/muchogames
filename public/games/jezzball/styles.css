@@ -1,0 +1,328 @@
+/* JezzBall: dark retro skin over the shared header. The play area locks
+   touch gestures (no scroll, pull-to-refresh, zoom or text selection). */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: #0d1320;
+  color: #e8edf5;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: #0d1320;
+  border-bottom: 1px solid #222c40;
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #ff5a4f;
+  letter-spacing: 0.04em;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.jb-lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.jb-chip {
+  min-width: 56px;
+  padding: 8px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.jb-chip.active,
+.jb-chip[aria-pressed="true"] {
+  border-color: #2f6fe0;
+  background: #dbe8ff;
+}
+
+.jb-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.jb-app [hidden] {
+  display: none !important;
+}
+
+/* --- Start screen and overlay cards --- */
+.jb-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 31px,
+      rgba(255, 255, 255, 0.04) 31px 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 31px,
+      rgba(255, 255, 255, 0.04) 31px 32px
+    ),
+    #131b2b;
+}
+
+.jb-card {
+  width: min(92vw, 380px);
+  padding: 24px 20px;
+  border: 2px solid #34415c;
+  border-radius: 16px;
+  background: #0a0f19;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.jb-card p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+  color: #c4cddb;
+}
+
+.jb-logo {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 9vw, 2.8rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow:
+    3px 3px 0 #e8413c,
+    6px 6px 0 #2f6fe0;
+}
+
+.jb-overlay-title {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.jb-best {
+  font-weight: 700;
+  color: #ffd23f !important;
+}
+
+.jb-score-line {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff !important;
+}
+
+.jb-button {
+  margin-top: 8px;
+  min-width: 180px;
+  min-height: 52px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 14px;
+  background: #e8413c;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  box-shadow: 0 4px 0 #8f1d19;
+  cursor: pointer;
+}
+
+.jb-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #8f1d19;
+}
+
+/* --- Play stage: board + HUD (below in portrait, right side in landscape) --- */
+.jb-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.jb-board {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  background: #0d1320;
+}
+
+.jb-canvas {
+  position: absolute;
+  inset: 0;
+  touch-action: none;
+  cursor:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M2 16 9 9v4h14V9l7 7-7 7v-4H9v4z' fill='white' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E")
+      16 16,
+    ew-resize;
+}
+
+.jb-canvas[data-axis="v"] {
+  cursor:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 23 9h-4v14h4l-7 7-7-7h4V9H9z' fill='white' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E")
+      16 16,
+    ns-resize;
+}
+
+.jb-hud {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(96px, 30%);
+  grid-template-rows: auto auto;
+  gap: 6px;
+  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+  background: #0a0f19;
+  border-top: 1px solid #222c40;
+}
+
+.jb-stat {
+  min-width: 0;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background: #151d2d;
+  text-align: center;
+}
+
+.jb-stat-label {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8d9bb3;
+}
+
+.jb-stat-value {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font:
+    800 clamp(0.85rem, 3.6vw, 1.2rem) / 1.2 ui-monospace,
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+  color: #ffffff;
+}
+
+.jb-stat.is-urgent .jb-stat-value {
+  color: #ff5a5a;
+  animation: jb-blink 0.5s steps(2) infinite;
+}
+
+@keyframes jb-blink {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* --- Axis toggle: big, always reachable with a thumb --- */
+.jb-axis {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  min-height: 84px;
+  padding: 6px 8px;
+  border: 3px solid #e8413c;
+  border-radius: 16px;
+  background: #2a1414;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    background 0.12s,
+    border-color 0.12s;
+}
+
+.jb-axis[data-axis="v"] {
+  border-color: #2f6fe0;
+  background: #121c33;
+}
+
+.jb-axis:active {
+  transform: scale(0.96);
+}
+
+.jb-axis-icon {
+  display: block;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.jb-axis-label {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.jb-axis[data-axis="h"] .jb-axis-v,
+.jb-axis[data-axis="v"] .jb-axis-h {
+  display: none;
+}
+
+.jb-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(6, 9, 16, 0.72);
+}
+
+@media (orientation: landscape) and (min-width: 560px) {
+  .jb-stage {
+    flex-direction: row;
+  }
+
+  .jb-hud {
+    width: clamp(150px, 20vw, 210px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    align-content: center;
+    padding: 10px calc(10px + env(safe-area-inset-right)) 10px 10px;
+    border-top: 0;
+    border-left: 1px solid #222c40;
+  }
+
+  .jb-stat {
+    padding: 6px 4px;
+  }
+
+  .jb-stat-wide {
+    grid-column: 1 / -1;
+  }
+
+  .jb-axis {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 92px;
+    margin-top: 4px;
+  }
+}

@@ -31,3 +31,6 @@ public/games/**
 !public/games/pipedream/
 !public/games/pipedream/**
 public/games/pipedream/**/*.md
+!public/games/jezzball/
+!public/games/jezzball/**
+public/games/jezzball/**/*.md

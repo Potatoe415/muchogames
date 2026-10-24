@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <pattern id="tile" width="25" height="25" patternUnits="userSpaceOnUse">
+      <rect width="25" height="25" fill="#8892a1"/>
+      <rect width="23" height="23" fill="#e4e8ee"/>
+      <rect x="2" y="2" width="21" height="21" fill="#b9c1cd"/>
+    </pattern>
+    <radialGradient id="shade" cx="0.35" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.2"/>
+      <stop offset="0.7" stop-color="#000" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="spec" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="ball"><circle r="30"/></clipPath>
+    <g id="atom">
+      <ellipse cx="5" cy="9" rx="29" ry="24" fill="#000" opacity="0.3"/>
+      <g clip-path="url(#ball)">
+        <rect x="-30" y="-30" width="60" height="60" fill="#e0262b"/>
+        <path d="M0 -30 A30 30 0 0 1 0 30 A14 30 0 0 0 0 -30Z" fill="#fbfbfb" transform="rotate(-30)"/>
+        <rect x="-30" y="-30" width="60" height="60" fill="url(#shade)"/>
+        <circle cx="-11" cy="-12" r="12" fill="url(#spec)"/>
+      </g>
+      <circle r="30" fill="none" stroke="#3c0000" stroke-opacity="0.55" stroke-width="2.5"/>
+    </g>
+  </defs>
+  <rect width="400" height="500" fill="#05070c"/>
+  <rect x="25" y="100" width="350" height="375" fill="url(#tile)"/>
+  <rect x="25" y="100" width="125" height="200" fill="#0c111b"/>
+  <rect x="25" y="300" width="350" height="25" fill="#0c111b"/>
+  <rect x="250" y="325" width="125" height="150" fill="#0c111b"/>
+  <rect x="200" y="100" width="25" height="100" fill="#e8413c"/>
+  <rect x="205" y="100" width="4" height="100" fill="#ffb3a8"/>
+  <rect x="200" y="200" width="25" height="60" fill="#2f6fe0"/>
+  <rect x="205" y="200" width="4" height="60" fill="#a9c8ff"/>
+  <circle cx="212.5" cy="260" r="8" fill="#fff"/>
+  <use href="#atom" x="300" y="180"/>
+  <use href="#atom" x="120" y="400"/>
+  <text x="200" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="58" font-weight="900" fill="#2f6fe0" transform="translate(6 6)">JEZZBALL</text>
+  <text x="200" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="58" font-weight="900" fill="#e8413c" transform="translate(3 3)">JEZZBALL</text>
+  <text x="200" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="58" font-weight="900" fill="#ffffff">JEZZBALL</text>
+</svg>
