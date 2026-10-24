@@ -29,6 +29,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-10-24 Solitaire: tapping an Ace sends it straight to its foundation (decision 0074). Every other card still needs a destination tap or a drag.
 - 2026-10-23 Solitaire: no more auto-move (decision 0073): tap picks up, tap a lit destination to move; drag and drop alongside (`components/useSolitaireDrag.ts`). Tests 346/346, tsc/lint/build clean; browser-verified tap-tap, legal/illegal drag, post-drag click ignored.
 - 2026-10-23 Solitaire: "Terminer" button once stock + waste are empty and every column card is face up (`lib/solitaire/autoFinish.ts`); cards climb one every 90 ms, then the win cascade plays. Tests 345/345, tsc/lint/build clean, verified in the browser.
 - 2026-10-23 Solitaire: Windows-style win cascade (`SolitaireWinCascade.tsx`, physics in `lib/client/winCascade.ts`, canvas cards in `components/cardSprite.ts`): cards bounce off the foundations leaving trails, tap to skip, skipped with reduced motion. Win now recorded as soon as the game ends; match id fixed at mount (a page re-render with a new seed double-counted a win). Tests 342/342, tsc/lint/build clean, verified in the browser.

@@ -1,4 +1,4 @@
-import { applyMove, legalTargets } from "./engine";
+import { applyMove, legalTargets, movableCards } from "./engine";
 import type { GameState, PileRef, Target } from "./types";
 
 export interface TapResult {
@@ -19,10 +19,19 @@ function samePileRef(a: PileRef, b: PileRef): boolean {
   return a.kind === b.kind;
 }
 
-/** One tap on the table. A card never moves on its own: the first tap picks
- *  it up (only if it can go somewhere), a tap on a legal destination then
- *  moves it there, a second tap on it puts it back down, and any other tap
- *  starts over from the tapped pile. */
+/** A tap on an Ace sends it to its own foundation, even when it could also
+ *  sit on a 2. An Ace already on its foundation is left alone. */
+function aceToFoundation(state: GameState, pile: PileRef): GameState | null {
+  if (pile.kind === "foundation") return null;
+  const [card, extra] = movableCards(state, pile);
+  if (!card || extra || card.rank !== "A") return null;
+  return applyMove(state, pile, { kind: "foundation", suit: card.suit });
+}
+
+/** One tap on the table. The first tap picks a card up (only if it can go
+ *  somewhere), a tap on a legal destination then moves it there, a second tap
+ *  on it puts it back down, and any other tap starts over from the tapped
+ *  pile. An Ace is the exception: it goes straight to its foundation. */
 export function resolveTap(state: GameState, selection: PileRef | null, pile: PileRef): TapResult {
   if (selection) {
     const target = asTarget(pile);
@@ -30,5 +39,7 @@ export function resolveTap(state: GameState, selection: PileRef | null, pile: Pi
     if (moved) return { state: moved, selection: null };
     if (samePileRef(selection, pile)) return { state, selection: null };
   }
+  const ace = aceToFoundation(state, pile);
+  if (ace) return { state: ace, selection: null };
   return { state, selection: legalTargets(state, pile).length > 0 ? pile : null };
 }
