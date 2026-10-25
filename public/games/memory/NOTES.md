@@ -33,6 +33,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 - Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1).
 - Grids: `4x4`, `4x6`, `6x6`. Each match draws its pairs at random from the theme.
 - Play waits for the preload, then calls `MuchogamesMatch.start` (no coin spent on a load).
+- A found pair fades out after 0.6 s (`data-status="matched"`, CSS only); its grid cell stays empty.
 - A pair scores 1 and the same player stays. A miss waits 1200 ms, closes, then switches (not in solo).
 - Clicks die in `EVALUATING`, `BOT`, and `GAME_OVER`. The open card cannot be clicked again.
 - `finish({ won })` for solo and vs bot. Pass-and-play and a bot tie omit `won`.

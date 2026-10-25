@@ -3,7 +3,7 @@ export const LANGS = ["fr", "en", "es"];
 const STRINGS = {
   fr: {
     title: "Memory",
-    pitch: "Retourne deux cartes. Les jumeaux restent face visible.",
+    pitch: "Retourne deux cartes. Les paires trouvées disparaissent.",
     back: "Retour",
     options: "Options",
     close: "Fermer",
@@ -53,7 +53,7 @@ const STRINGS = {
   },
   en: {
     title: "Memory",
-    pitch: "Flip two cards. Twins stay face up.",
+    pitch: "Flip two cards. Found pairs disappear.",
     back: "Back",
     options: "Options",
     close: "Close",
@@ -103,7 +103,7 @@ const STRINGS = {
   },
   es: {
     title: "Memory",
-    pitch: "Voltea dos cartas. Los gemelos se quedan boca arriba.",
+    pitch: "Voltea dos cartas. Las parejas encontradas desaparecen.",
     back: "Volver",
     options: "Opciones",
     close: "Cerrar",
