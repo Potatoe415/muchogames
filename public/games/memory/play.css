@@ -1,0 +1,228 @@
+.memory-play {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #1e1b4b;
+}
+
+.memory-bar {
+  height: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  color: #fff;
+  opacity: 0.55;
+}
+
+.memory-bar[data-active="true"] {
+  opacity: 1;
+}
+
+.memory-bar-top {
+  background: #db2777;
+}
+
+.memory-bar-bottom {
+  background: #2563eb;
+}
+
+.memory-bar-top.is-rotated {
+  transform: rotate(180deg);
+}
+
+.memory-name {
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.memory-score {
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.memory-bar-top .memory-score {
+  margin-left: auto;
+}
+
+.memory-bar-bottom .memory-score {
+  margin-right: auto;
+}
+
+.memory-icon,
+.memory-new {
+  flex: 0 0 auto;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.memory-icon {
+  width: 36px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.memory-new {
+  padding: 0 10px;
+}
+
+.memory-icon-off {
+  display: none;
+}
+
+.memory-icon[data-muted="true"] .memory-icon-on {
+  display: none;
+}
+
+.memory-icon[data-muted="true"] .memory-icon-off {
+  display: block;
+}
+
+.memory-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 4px solid #60a5fa;
+  container-type: size;
+}
+
+.memory-play[data-active="1"] .memory-stage {
+  border-color: #f9a8d4;
+}
+
+.memory-board {
+  --gap: 4px;
+  --cell: min(
+    calc((100cqb - (var(--rows) - 1) * var(--gap)) / var(--rows)),
+    calc((100cqi - (var(--cols) - 1) * var(--gap)) / var(--cols))
+  );
+  width: calc(var(--cell) * var(--cols) + (var(--cols) - 1) * var(--gap));
+  height: calc(var(--cell) * var(--rows) + (var(--rows) - 1) * var(--gap));
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  grid-template-rows: repeat(var(--rows), minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.memory-board[data-locked="true"] {
+  pointer-events: none;
+}
+
+.memory-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  perspective: 800px;
+  cursor: pointer;
+  container-type: size;
+}
+
+.memory-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.35s;
+}
+
+.memory-card.is-up .memory-card-inner {
+  transform: rotateY(180deg);
+}
+
+.memory-card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.memory-card-back {
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.35),
+      transparent 42%
+    ),
+    repeating-linear-gradient(45deg, #312e81 0 8px, #4338ca 8px 16px);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.memory-card-front {
+  transform: rotateY(180deg) translateZ(1px);
+  -webkit-transform: rotateY(180deg) translateZ(1px);
+}
+
+.memory-glyph {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 58cqmin;
+  line-height: 1;
+}
+
+.memory-glyph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.memory-end {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.72);
+  box-sizing: border-box;
+}
+
+.memory-end-card {
+  width: min(100%, 360px);
+  background: #fff;
+  color: #0f172a;
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.memory-end-card h2,
+.memory-end-card p {
+  margin: 0;
+}
+
+.memory-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}

@@ -48,3 +48,6 @@ public/games/chipschallenge/vendor/
 !public/games/spacecadet/**
 public/games/spacecadet/**/*.md
 public/games/spacecadet/vendor/
+!public/games/memory/
+!public/games/memory/**
+public/games/memory/**/*.md

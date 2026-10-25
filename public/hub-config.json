@@ -128,6 +128,15 @@
     "players": [1, 1]
   },
   {
+    "id": "memory",
+    "title": "Memory",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/memory/index.html",
+    "thumbnail": "/games/memory/assets/thumbnail.svg",
+    "players": [1, 2]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",

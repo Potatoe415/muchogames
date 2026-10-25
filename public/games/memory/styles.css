@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+body {
+  margin: 0;
+  height: 100dvh;
+  max-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #0f172a;
+  color: #0f172a;
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+
+.game-nav {
+  flex: 0 0 auto;
+}
+
+.memory-app {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.memory-setup,
+.memory-play {
+  height: 100%;
+  min-height: 0;
+}
+
+.memory-setup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.memory-panel {
+  width: min(100%, 420px);
+  max-height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.memory-pitch,
+.memory-label {
+  margin: 0;
+}
+
+.memory-pitch {
+  font-size: 0.95rem;
+}
+
+.memory-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.memory-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.memory-chip,
+.memory-start,
+.memory-text {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+.memory-chip {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  padding: 8px 12px;
+  font-weight: 700;
+}
+
+.memory-chip.is-selected {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+
+.memory-start,
+.memory-text {
+  border: 0;
+  background: #1d4ed8;
+  color: #fff;
+  font-weight: 800;
+  padding: 12px 16px;
+}
+
+.memory-text-ghost {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.memory-play[hidden],
+.memory-setup[hidden],
+.memory-end[hidden],
+.memory-choice[hidden] {
+  display: none;
+}
+
+.memory-lang {
+  display: flex;
+  gap: 8px;
+}

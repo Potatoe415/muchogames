@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1e1b4b" />
+    <title>Memory</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="play.css" />
+  </head>
+  <body>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Memory</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="memory-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="memory-lang">
+              <button
+                type="button"
+                class="memory-chip"
+                data-lang="fr"
+                data-id="memory-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="memory-chip"
+                data-lang="en"
+                data-id="memory-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="memory-chip"
+                data-lang="es"
+                data-id="memory-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="game-options-rules">
+            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+            <div class="rules-modal-content" data-id="memory-rules"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="memory-app" data-id="memory-app">
+      <section class="memory-setup" data-id="memory-setup">
+        <div class="memory-panel">
+          <p class="memory-pitch" data-i18n="pitch"></p>
+          <div class="memory-choice" data-id="memory-modes">
+            <p class="memory-label" data-i18n="who"></p>
+            <div class="memory-chips" data-id="memory-mode-list"></div>
+          </div>
+          <div class="memory-choice" data-id="memory-difficulty" hidden>
+            <p class="memory-label" data-i18n="level"></p>
+            <div class="memory-chips" data-id="memory-level-list"></div>
+          </div>
+          <div class="memory-choice" data-id="memory-grids">
+            <p class="memory-label" data-i18n="size"></p>
+            <div class="memory-chips" data-id="memory-grid-list"></div>
+          </div>
+          <button
+            type="button"
+            class="memory-start"
+            data-id="memory-start-button"
+            data-i18n="start"
+          >
+            Jouer
+          </button>
+        </div>
+      </section>
+
+      <section class="memory-play" data-id="memory-play" data-active="0" hidden>
+        <div
+          class="memory-bar memory-bar-top"
+          data-id="memory-player-two"
+          data-active="false"
+        >
+          <button
+            type="button"
+            class="memory-icon"
+            data-id="memory-rotate-button"
+            aria-label="Tourner le camp du haut"
+            data-i18n-aria="rotate"
+          >
+            ↻
+          </button>
+          <span class="memory-name" data-id="memory-p2-name"></span>
+          <strong class="memory-score" data-id="memory-p2-score"></strong>
+        </div>
+        <div class="memory-stage" data-id="memory-stage">
+          <div class="memory-board" data-id="memory-board"></div>
+        </div>
+        <div
+          class="memory-bar memory-bar-bottom"
+          data-id="memory-player-one"
+          data-active="true"
+        >
+          <span class="memory-name" data-id="memory-p1-name"></span>
+          <strong class="memory-score" data-id="memory-p1-score"></strong>
+          <button
+            type="button"
+            class="memory-icon"
+            data-id="memory-mute-button"
+            aria-pressed="false"
+          >
+            <svg
+              class="memory-icon-on"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path fill="currentColor" d="M4 10h4l5-4v12l-5-4H4z" />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M16 9a4 4 0 0 1 0 6"
+              />
+            </svg>
+            <svg
+              class="memory-icon-off"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path fill="currentColor" d="M4 10h4l5-4v12l-5-4H4z" />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                d="M16 10l5 5M21 10l-5 5"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="memory-new"
+            data-id="memory-new-button"
+            data-i18n="newGame"
+            data-i18n-aria="newGameAria"
+          >
+            Nouvelle
+          </button>
+        </div>
+        <div class="memory-end" data-id="memory-end" hidden>
+          <div class="memory-end-card">
+            <h2 data-id="memory-end-title"></h2>
+            <p data-id="memory-end-line"></p>
+            <div class="memory-actions">
+              <button
+                type="button"
+                class="memory-text"
+                data-id="memory-replay-button"
+                data-i18n="replay"
+              >
+                Rejouer
+              </button>
+              <button
+                type="button"
+                class="memory-text memory-text-ghost"
+                data-id="memory-setup-button"
+                data-i18n="changeSetup"
+              >
+                Changer
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
