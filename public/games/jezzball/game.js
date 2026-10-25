@@ -41,8 +41,7 @@ function hudView(state, best) {
     urgent: state.phase === "play" && seconds <= URGENT_SECONDS,
     score: String(state.score),
     best: String(Math.max(best, state.score)),
-    axis: state.axis,
-    swipe: state.swipe
+    axis: state.axis
   };
 }
 

@@ -1,5 +1,5 @@
-// DOM HUD (level, lives, area, time, score, best, axis button, hidden on
-// touch screens in swipe mode). Only touches the DOM when a value changes.
+// DOM HUD (level, lives, area, time, score, best, axis button). Only
+// touches the DOM when a value actually changes.
 const FIELDS = ["level", "lives", "area", "time", "score", "best"];
 
 export function createHud(root, canvas) {
@@ -25,9 +25,6 @@ export function createHud(root, canvas) {
       });
       if (set("urgent", view.urgent)) {
         timeStat.classList.toggle("is-urgent", view.urgent);
-      }
-      if (set("swipe", view.swipe)) {
-        root.classList.toggle("is-swipe", view.swipe);
       }
       if (set("axis", view.axis)) {
         axisButton.dataset.axis = view.axis;

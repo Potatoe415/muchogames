@@ -29,5 +29,5 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 - Level N: N+1 balls, N+1 lives, `60 + 20N` s. Timer at 0 = −1 life and the timer restarts.
 - Points ×N: 1 per new solid cell; at ≥ 75 %: 50 per whole % above 75 and 10 per second left.
 - Two-finger tap: cancels a wall launched < 0.15 s earlier by the first finger (if nothing solidified) and flips the axis.
-- Swipe option (on by default, touch/pen only): the wall starts from the touched cell once the finger has moved 14 px, ← → horizontal, ↑ ↓ vertical; a tap does nothing. Two-finger toggle is off and the axis button is hidden on `hover: none` screens. Mouse always uses click + axis toggles.
+- Swipe option (on by default, touch/pen only): the wall starts from the touched cell once the finger has moved 14 px, ← → horizontal, ↑ ↓ vertical; a finger lifted before 14 px is a tap, built on release along the active axis. Off: a tap builds on `pointerdown`. Axis button and two-finger toggle work in both modes. Mouse always uses click + axis toggles.
 - No `won` is sent to `finish()`: the run always ends on game over. Best score: `jezzball-best-score`; sound: `jezzball-sound`; swipe: `jezzball-swipe`.

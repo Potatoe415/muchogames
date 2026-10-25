@@ -18,7 +18,7 @@ const STRINGS = {
     off: "Désactivé",
     swipe: "Swipe",
     swipeHint:
-      "Glissez depuis une case : ← → mur horizontal · ↑ ↓ mur vertical (écran tactile)",
+      "Glissez depuis une case : ← → mur horizontal · ↑ ↓ mur vertical. Un simple tap marche toujours (axe actif).",
     level: "Niveau",
     lives: "Vies",
     area: "Surface",
@@ -61,7 +61,7 @@ const STRINGS = {
     off: "Off",
     swipe: "Swipe",
     swipeHint:
-      "Swipe from a cell: ← → horizontal wall · ↑ ↓ vertical wall (touch screens)",
+      "Swipe from a cell: ← → horizontal wall · ↑ ↓ vertical wall. A plain tap still works (active axis).",
     level: "Level",
     lives: "Lives",
     area: "Area",
@@ -103,7 +103,7 @@ const STRINGS = {
     off: "Desactivado",
     swipe: "Deslizar",
     swipeHint:
-      "Desliza desde una casilla: ← → muro horizontal · ↑ ↓ muro vertical (pantalla táctil)",
+      "Desliza desde una casilla: ← → muro horizontal · ↑ ↓ muro vertical. Un toque simple sigue funcionando (eje activo).",
     level: "Nivel",
     lives: "Vidas",
     area: "Superficie",
@@ -137,7 +137,7 @@ const RULES = {
 <ul>
 <li>Touchez (ou cliquez) une case libre : un mur part dans les deux sens selon l'axe actif, une moitié rouge et une moitié bleue. Pendant qu'il grandit, vous pouvez lancer un 2e mur, mais il n'a qu'une seule moitié (dans le sens du swipe, sinon vers le mur le plus proche).</li>
 <li>Changez d'axe (↔ / ↕) avec le gros bouton, un toucher à deux doigts, le clic droit, la molette ou la barre d'espace.</li>
-<li>Option « Swipe » (activée par défaut, écran tactile) : glissez depuis une case libre, ← → pour un mur horizontal, ↑ ↓ pour un mur vertical. Désactivée : un tap lance le mur selon l'axe actif.</li>
+<li>Option « Swipe » (activée par défaut, écran tactile) : glissez depuis une case libre, ← → pour un mur horizontal, ↑ ↓ pour un mur vertical. Un simple tap lance toujours le mur selon l'axe actif, quand le doigt se lève.</li>
 <li>Chaque moitié se fige dès qu'elle touche un mur. Toute zone sans atome est alors conquise et noircie.</li>
 <li>Si un atome touche une moitié encore en construction, elle se brise et vous perdez une vie. Si le temps s'écoule, vous perdez aussi une vie et le chrono repart.</li>
 <li>Conquérez 75 % de la surface pour passer au niveau suivant. Bonus : chaque point au-delà de 75 % et chaque seconde restante.</li>
@@ -147,7 +147,7 @@ const RULES = {
 <ul>
 <li>Tap (or click) a free cell: a wall grows both ways along the active axis, one red half and one blue half. While it grows you can launch a 2nd wall, but it only has one half (in the swipe direction, otherwise toward the nearest wall).</li>
 <li>Switch axis (↔ / ↕) with the big button, a two-finger tap, right click, the mouse wheel or the space bar.</li>
-<li>"Swipe" option (on by default, touch screens): swipe from a free cell, ← → for a horizontal wall, ↑ ↓ for a vertical one. Off: a tap launches the wall along the active axis.</li>
+<li>"Swipe" option (on by default, touch screens): swipe from a free cell, ← → for a horizontal wall, ↑ ↓ for a vertical one. A plain tap still launches the wall along the active axis, when the finger lifts.</li>
 <li>Each half sets as soon as it reaches a wall. Every area with no atom inside is then claimed and turns black.</li>
 <li>If an atom touches a half still growing, it breaks and you lose a life. Running out of time also costs a life, and the clock restarts.</li>
 <li>Claim 75% of the area to reach the next level. Bonus: every point above 75% and every second left.</li>
@@ -157,7 +157,7 @@ const RULES = {
 <ul>
 <li>Toca (o haz clic en) una casilla libre: un muro crece en ambos sentidos según el eje activo, una mitad roja y otra azul. Mientras crece puedes lanzar un 2.º muro, pero solo tiene una mitad (en el sentido del deslizamiento, si no hacia el muro más cercano).</li>
 <li>Cambia de eje (↔ / ↕) con el botón grande, un toque con dos dedos, el clic derecho, la rueda del ratón o la barra espaciadora.</li>
-<li>Opción «Deslizar» (activada por defecto, pantalla táctil): desliza desde una casilla libre, ← → para un muro horizontal, ↑ ↓ para uno vertical. Desactivada: un toque lanza el muro según el eje activo.</li>
+<li>Opción «Deslizar» (activada por defecto, pantalla táctil): desliza desde una casilla libre, ← → para un muro horizontal, ↑ ↓ para uno vertical. Un toque simple sigue lanzando el muro según el eje activo, al levantar el dedo.</li>
 <li>Cada mitad se fija en cuanto toca un muro. Toda zona sin átomos queda conquistada y se vuelve negra.</li>
 <li>Si un átomo toca una mitad aún en construcción, se rompe y pierdes una vida. Si se acaba el tiempo, también pierdes una vida y el reloj vuelve a empezar.</li>
 <li>Conquista el 75 % de la superficie para pasar al siguiente nivel. Bonus: cada punto por encima del 75 % y cada segundo restante.</li>

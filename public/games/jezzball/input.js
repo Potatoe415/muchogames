@@ -1,7 +1,8 @@
 // Pointer, wheel and keyboard controls. Left click / one-finger tap on the
 // grid builds a wall; right click, wheel, Space, the axis button or a
-// second finger flip the axis. Swipe mode (touch only): the swipe direction
-// picks the axis. Returns a function removing every listener.
+// second finger flip the axis. Swipe mode (touch only): a swipe picks the
+// axis, a plain tap builds on release along the active axis. Returns a
+// function removing every listener.
 const INTERACTIVE = "button, a, input, select, textarea, [contenteditable]";
 const WHEEL_GAP_MS = 220;
 const SWIPE_PX = 14;
@@ -37,8 +38,16 @@ function createSwiper(actions) {
         Math.sign(horizontal ? dx : dy)
       );
     },
+    // Lifted before reaching SWIPE_PX: a plain tap, built along the active
+    // axis.
     up(event) {
-      if (start?.id === event.pointerId) start = null;
+      if (start?.id !== event.pointerId) return;
+      const { cell } = start;
+      start = null;
+      actions.build(cell.x, cell.y);
+    },
+    reset() {
+      start = null;
     }
   };
 }
@@ -64,7 +73,8 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
     const swipe = actions.swipe();
     if (touches.size > 1) {
       event.preventDefault();
-      if (!swipe) actions.twoFinger();
+      swiper.reset();
+      actions.twoFinger();
     } else if (event.target === canvas) {
       event.preventDefault();
       if (swipe) swiper.down(event, pointToCell(event, canvas, toCell));
@@ -80,6 +90,10 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
   const onUp = (event) => {
     touches.delete(event.pointerId);
     swiper.up(event);
+  };
+  const onCancel = (event) => {
+    touches.delete(event.pointerId);
+    swiper.reset();
   };
   const onMove = (event) => {
     if (event.pointerType === "mouse") {
@@ -110,7 +124,7 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
   const listeners = [
     [root, "pointerdown", onDown],
     [window, "pointerup", onUp],
-    [window, "pointercancel", onUp],
+    [window, "pointercancel", onCancel],
     [canvas, "pointermove", onMove],
     [canvas, "pointerleave", onLeave],
     [canvas, "wheel", onWheel],

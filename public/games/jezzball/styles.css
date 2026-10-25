@@ -290,21 +290,10 @@ body {
   display: none;
 }
 
-/* --- Swipe mode on touch screens: the swipe picks the axis, no toggle --- */
 .jb-option-hint {
   margin: 0 0 8px;
   font-size: 0.85rem;
   color: #4b5563;
-}
-
-@media (hover: none) {
-  .jb-stage.is-swipe .jb-axis {
-    display: none;
-  }
-
-  .jb-stage.is-swipe .jb-hud {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 .jb-overlay {
@@ -338,10 +327,6 @@ body {
 
   .jb-stat-wide {
     grid-column: 1 / -1;
-  }
-
-  .jb-stage.is-swipe .jb-hud {
-    grid-template-columns: 1fr 1fr;
   }
 
   .jb-axis {
