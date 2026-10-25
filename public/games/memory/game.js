@@ -1,6 +1,5 @@
 import { pickFirst, pickSecond, rollSmart } from "./bot.js";
 import { BOT_FIRST_MS, BOT_SECOND_MS, MISMATCH_MS } from "./config.js";
-import { buildDeck } from "./deck.js";
 import { clearSave, writeSave } from "./persist.js";
 import { createState, reduce } from "./reducer.js";
 import { playFlip, playMatch, playMismatch, playWin, stop } from "./sound.js";
@@ -75,11 +74,11 @@ function laterBot(box) {
   if (box.state.phase === "BOT") arm(box, BOT_FIRST_MS, () => botFirst(box));
 }
 
-export function createMatch({ config, saved, onUpdate }) {
+export function createMatch({ config, cards, saved, onUpdate }) {
   const box = {
     alive: true,
     plan: null,
-    state: saved ?? createState(config, buildDeck(config.grid)),
+    state: saved ?? createState(config, cards),
     timers: new Set(),
     onUpdate
   };

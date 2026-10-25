@@ -44,7 +44,7 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `chipschallenge` | `public/games/chipschallenge/` | 16 ES modules + 3 CSS, ~1,700 JS lines (none >300 except `index.html`, ~400: header boilerplate + static dialogs/D-pad, and `panel.css`, ~315); `main.js` entry; rules engine vendored in `vendor/lexy/` (Lexy's Labyrinth, MIT, decision 0048); original CHIPS.EXE tiles in `assets/tiles.png`, original 149 levels in `assets/CHIPS.DAT` | header, session | yes |
 | `minesweeper` | `public/games/minesweeper/` | 7 ES modules + 2 CSS, ~1,550 total (none >300); `main.js` entry | header, session | yes |
 | `spacecadet` | `public/games/spacecadet/` | 6 JS + 1 CSS, ~650 total (none >300); `main.js` + classic `boot.js`; prebuilt Emscripten WASM vendored in `vendor/` (alula, decision 0049) | header, session | yes |
-| `memory` | `public/games/memory/` | 13 JS + 2 CSS (none >300); `main.js` entry | header, session | yes |
+| `memory` | `public/games/memory/` | 16 JS + 2 CSS (none >300); `main.js` entry; 6 themes in `cards/<theme>/card_NN.webp` + 8 `backs/back_NN.webp`, sliced by `scripts/memory_slice.py`, which also writes the `decks.js` manifest | header, session | yes |
 | `yatsy` | `public/games/yatsy/` | 14 files; `app.js` (1239), `i18n.js` (395), `render.js` (633), `session.js` (575) — **4 files over limit** | engine, header, profile, Supabase | no — see `docs/BACKLOG.md` Later |
 
 "Shared deps" = which `shared/CONTRACT.md` modules the game imports. Read

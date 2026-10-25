@@ -18,6 +18,17 @@ const STRINGS = {
     hard: "Difficile",
     size: "Taille",
     level: "Niveau",
+    theme: "Univers",
+    cardBack: "Verso",
+    backN: "Verso {n}",
+    card: "Carte {n}",
+    "theme-miraculous": "Miraculous",
+    "theme-objets": "Objets",
+    "theme-ghibli": "Ghibli",
+    "theme-pat-patrouille": "Pat' Patrouille",
+    "theme-dinosaures": "Dinosaures",
+    "theme-cuba": "Cuba",
+    loading: "Chargement…",
     start: "Jouer",
     newGame: "Nouvelle",
     newGameAria: "Nouvelle partie",
@@ -57,6 +68,17 @@ const STRINGS = {
     hard: "Hard",
     size: "Size",
     level: "Level",
+    theme: "Theme",
+    cardBack: "Card back",
+    backN: "Card back {n}",
+    card: "Card {n}",
+    "theme-miraculous": "Miraculous",
+    "theme-objets": "Objects",
+    "theme-ghibli": "Ghibli",
+    "theme-pat-patrouille": "PAW Patrol",
+    "theme-dinosaures": "Dinosaurs",
+    "theme-cuba": "Cuba",
+    loading: "Loading…",
     start: "Play",
     newGame: "New",
     newGameAria: "New game",
@@ -96,6 +118,17 @@ const STRINGS = {
     hard: "Difícil",
     size: "Tamaño",
     level: "Nivel",
+    theme: "Universo",
+    cardBack: "Reverso",
+    backN: "Reverso {n}",
+    card: "Carta {n}",
+    "theme-miraculous": "Miraculous",
+    "theme-objets": "Objetos",
+    "theme-ghibli": "Ghibli",
+    "theme-pat-patrouille": "Patrulla Canina",
+    "theme-dinosaures": "Dinosaurios",
+    "theme-cuba": "Cuba",
+    loading: "Cargando…",
     start: "Jugar",
     newGame: "Nueva",
     newGameAria: "Nueva partida",
@@ -127,6 +160,7 @@ const RULES = {
 <li>2 joueurs : le même appareil, à tour de rôle. Le plus de paires gagne.</li>
 <li>Robot : Facile se trompe souvent, Moyen une fois sur deux, Difficile se souvient de chaque carte vue.</li>
 <li>Le bouton du haut tourne son texte pour jouer face à face sur la table.</li>
+<li>Chaque partie pioche ses cartes au hasard dans l'univers choisi.</li>
 </ul>`,
   en: `<p>Flip two cards each turn. A pair scores 1 and you go again. Otherwise the cards close after a short pause and the turn passes.</p>
 <ul>
@@ -134,6 +168,7 @@ const RULES = {
 <li>2 players: same device, taking turns. Most pairs wins.</li>
 <li>Robot: Easy misses often, Medium half the time, Hard remembers every card it has seen.</li>
 <li>The top button rotates that side so two players can sit across a table.</li>
+<li>Each game draws its cards at random from the chosen theme.</li>
 </ul>`,
   es: `<p>Voltea dos cartas por turno. Una pareja suma 1 punto y repites. Si no, pausa, las cartas se cierran y pasa el turno.</p>
 <ul>
@@ -141,6 +176,7 @@ const RULES = {
 <li>2 jugadores: el mismo aparato, por turnos. Gana quien más parejas tenga.</li>
 <li>Robot: Fácil falla a menudo, Medio la mitad de las veces, Difícil recuerda cada carta vista.</li>
 <li>El botón de arriba gira su texto para jugar cara a cara en la mesa.</li>
+<li>Cada partida saca sus cartas al azar del universo elegido.</li>
 </ul>`
 };
 

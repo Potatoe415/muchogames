@@ -1,5 +1,5 @@
 import { GRID_IDS, GRIDS, LEVELS, MODES, STORAGE_KEY } from "./config.js";
-import { FACE_BY_ID } from "./faces.js";
+import { BACKS, THEME_IDS, faceIds } from "./faces.js";
 
 const PHASES = new Set(["TURN", "BOT", "EVALUATING", "GAME_OVER"]);
 const STATUSES = new Set(["IDLE", "FLIPPED", "MATCHED"]);
@@ -22,11 +22,13 @@ export function writeSave(state) {
 
 function pack(state) {
   return {
-    v: 1,
+    v: 2,
     config: {
       mode: state.config.mode,
       difficulty: state.config.difficulty,
-      grid: state.config.grid
+      grid: state.config.grid,
+      theme: state.config.theme,
+      back: state.config.back
     },
     cards: state.cards.map(({ instanceId, pairId, faceId, status }) => ({
       instanceId,
@@ -50,10 +52,10 @@ function readRaw() {
   }
 }
 
-function readCard(card, seen) {
+function readCard(card, seen, faces) {
   if (!card || !/^c\d+$/.test(card.instanceId)) return null;
   if (seen.has(card.instanceId)) return null;
-  if (!FACE_BY_ID[card.faceId] || card.pairId !== card.faceId) return null;
+  if (!faces.has(card.faceId) || card.pairId !== card.faceId) return null;
   if (!STATUSES.has(card.status)) return null;
   seen.add(card.instanceId);
   return {
@@ -101,10 +103,12 @@ function restingPhase(config, active) {
 }
 
 function configOk(raw, spec) {
-  if (raw?.v !== 1 || !spec) return false;
+  if (raw?.v !== 2 || !spec) return false;
   if (!MODES.includes(raw.config.mode)) return false;
   if (!LEVELS.includes(raw.config.difficulty)) return false;
   if (!GRID_IDS.includes(raw.config.grid)) return false;
+  if (!THEME_IDS.includes(raw.config.theme)) return false;
+  if (!BACKS.includes(raw.config.back)) return false;
   if (!PHASES.has(raw.phase) || raw.phase === "GAME_OVER") return false;
   return Array.isArray(raw.cards) && raw.cards.length === spec.cols * spec.rows;
 }
@@ -120,11 +124,17 @@ function settle(cards, scores) {
   return settled;
 }
 
+function readConfig(config, spec) {
+  const { mode, difficulty, grid, theme, back } = config;
+  return { mode, difficulty, grid, theme, back, ...spec };
+}
+
 function normalize(raw) {
   const spec = GRIDS[raw?.config?.grid];
   if (!configOk(raw, spec)) return null;
   const seen = new Set();
-  const cards = raw.cards.map((card) => readCard(card, seen));
+  const faces = new Set(faceIds(raw.config.theme));
+  const cards = raw.cards.map((card) => readCard(card, seen, faces));
   if (cards.some((card) => !card) || !pairsOk(cards)) return null;
   const scores = readScores(raw.scores);
   const known = readKnown(raw.known, cards);
@@ -134,7 +144,7 @@ function normalize(raw) {
   const active = raw.config.mode === "solo" ? 0 : raw.active;
   return {
     phase: restingPhase(raw.config, active),
-    config: { ...raw.config, cols: spec.cols, rows: spec.rows },
+    config: readConfig(raw.config, spec),
     cards: settled,
     openIds: [],
     scores,

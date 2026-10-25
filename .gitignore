@@ -144,6 +144,9 @@ vite.config.ts.timestamp-*
 # Design-tool working directory (mockup staging, not part of the app)
 temp-design/
 
+# Raw AI sheets sliced by scripts/memory_slice.py (only the .webp output ships)
+tmp-resources/
+
 # Turborepo local cache
 .turbo/
 .env*

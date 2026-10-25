@@ -1,9 +1,17 @@
-import { CARD_BACK, FACE_BY_ID } from "./faces.js";
+import { backUrl, faceUrl } from "./faces.js";
 
 function faceSpan(className) {
   const node = document.createElement("span");
   node.className = className;
   return node;
+}
+
+function picture(url) {
+  const img = document.createElement("img");
+  img.src = url;
+  img.alt = "";
+  img.draggable = false;
+  return img;
 }
 
 function cardElement(card) {
@@ -22,58 +30,39 @@ function cardElement(card) {
   return button;
 }
 
-function paintBack(back) {
+function paintBack(back, url) {
   if (back.dataset.ready === "yes") return;
   back.dataset.ready = "yes";
-  if (!CARD_BACK.image) return;
-  const img = document.createElement("img");
-  img.src = CARD_BACK.image;
-  img.alt = "";
-  img.draggable = false;
-  back.append(img);
+  back.append(picture(url));
 }
 
-function fillFront(front, face) {
-  const tile = document.createElement("span");
-  tile.className = "memory-glyph";
-  tile.style.backgroundColor = face.color;
-  if (face.image) {
-    const img = document.createElement("img");
-    img.src = face.image;
-    img.alt = "";
-    img.draggable = false;
-    tile.append(img);
-    front.append(tile);
-    return;
-  }
-  tile.textContent = face.glyph;
-  front.append(tile);
-}
-
-function sync(host, card, hiddenLabel) {
+function sync(host, card, config, labels) {
   const button = host.querySelector(`[data-instance-id="${card.instanceId}"]`);
   const up = card.status === "FLIPPED" || card.status === "MATCHED";
   const front = button.querySelector(".memory-card-front");
   button.classList.toggle("is-up", up);
   button.dataset.status = card.status.toLowerCase();
   button.setAttribute("aria-pressed", up ? "true" : "false");
-  paintBack(button.querySelector(".memory-card-back"));
+  paintBack(button.querySelector(".memory-card-back"), labels.backUrl);
   if (!up) {
     front.replaceChildren();
-    button.setAttribute("aria-label", hiddenLabel);
+    button.setAttribute("aria-label", labels.hidden);
     return;
   }
-  if (!front.childElementCount) fillFront(front, FACE_BY_ID[card.faceId]);
-  button.setAttribute("aria-label", FACE_BY_ID[card.faceId].glyph);
+  if (!front.childElementCount) {
+    front.append(picture(faceUrl(config.theme, card.faceId)));
+  }
+  button.setAttribute("aria-label", labels.face(card.faceId));
 }
 
-export function paintBoard(host, state, hiddenLabel) {
+export function paintBoard(host, state, labels) {
   const key = state.cards.map((card) => card.instanceId).join(".");
   if (host.dataset.deck !== key) {
     host.dataset.deck = key;
     host.replaceChildren(...state.cards.map(cardElement));
   }
-  state.cards.forEach((card) => sync(host, card, hiddenLabel));
+  const all = { ...labels, backUrl: backUrl(state.config.back) };
+  state.cards.forEach((card) => sync(host, card, state.config, all));
   host.style.setProperty("--cols", String(state.config.cols));
   host.style.setProperty("--rows", String(state.config.rows));
   host.dataset.locked = state.phase === "TURN" ? "false" : "true";

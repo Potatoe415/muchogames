@@ -1,5 +1,5 @@
 import { GRIDS } from "./config.js";
-import { FACES } from "./faces.js";
+import { faceIds } from "./faces.js";
 
 export function shuffle(items) {
   const copy = items.slice();
@@ -12,17 +12,15 @@ export function shuffle(items) {
   return copy;
 }
 
-function blank(face) {
-  return { pairId: face.id, faceId: face.id, status: "IDLE" };
+function blank(faceId) {
+  return { pairId: faceId, faceId, status: "IDLE" };
 }
 
-export function buildDeck(grid) {
+export function buildDeck(grid, themeId) {
   const { cols, rows } = GRIDS[grid];
   const pairs = (cols * rows) / 2;
-  const cards = FACES.slice(0, pairs).flatMap((face) => [
-    blank(face),
-    blank(face)
-  ]);
+  const picked = shuffle(faceIds(themeId)).slice(0, pairs);
+  const cards = picked.flatMap((faceId) => [blank(faceId), blank(faceId)]);
   return shuffle(cards).map((card, index) => ({
     ...card,
     instanceId: `c${index}`

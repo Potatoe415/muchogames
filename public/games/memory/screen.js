@@ -1,4 +1,5 @@
 import { GRID_IDS, LEVELS, MODES } from "./config.js";
+import { BACKS, THEME_IDS } from "./faces.js";
 import { rulesHtml, translate } from "./i18n.js";
 import { paintBoard } from "./view.js";
 
@@ -11,7 +12,21 @@ function mark(id, on) {
   button.setAttribute("aria-pressed", on ? "true" : "false");
 }
 
+function paintPickers(page) {
+  THEME_IDS.forEach((theme) =>
+    mark(`memory-theme-${theme}`, page.setup.theme === theme)
+  );
+  BACKS.forEach((back) => {
+    mark(`memory-back-${back}`, page.setup.back === back);
+    $(`memory-back-${back}`).setAttribute(
+      "aria-label",
+      text(page, "backN", { n: Number(back) })
+    );
+  });
+}
+
 export function paintSetup(page) {
+  paintPickers(page);
   MODES.forEach((mode) =>
     mark(`memory-mode-${mode}`, page.setup.mode === mode)
   );
@@ -22,6 +37,10 @@ export function paintSetup(page) {
     mark(`memory-grid-${grid}`, page.setup.grid === grid)
   );
   $("memory-difficulty").hidden = page.setup.mode !== "bot";
+  const start = $("memory-start-button");
+  start.disabled = page.starting;
+  start.textContent = text(page, page.starting ? "loading" : "start");
+  $("memory-app").dataset.loading = page.starting ? "true" : "false";
 }
 
 function names(page, state) {
@@ -84,7 +103,10 @@ function paintEnd(page) {
 export function paintPlay(page) {
   if (!page.state) return;
   paintBars(page, page.state);
-  paintBoard($("memory-board"), page.state, text(page, "hiddenCard"));
+  paintBoard($("memory-board"), page.state, {
+    hidden: text(page, "hiddenCard"),
+    face: (faceId) => text(page, "card", { n: Number(faceId) })
+  });
   paintMute(page);
   paintEnd(page);
 }
