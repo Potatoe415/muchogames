@@ -38,6 +38,11 @@
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">Space Cadet</h1>
+        <canvas
+          class="sc-score"
+          data-id="spacecadet-score"
+          aria-hidden="true"
+        ></canvas>
       </div>
       <div class="nav-side nav-right">
         <button
@@ -130,6 +135,40 @@
               data-id="spacecadet-rules-content"
             ></div>
           </div>
+          <div
+            class="options-panel-section sc-options-actions"
+            data-id="spacecadet-options-actions"
+          >
+            <div class="sc-actions">
+              <button
+                type="button"
+                class="sc-btn"
+                data-key="newgame"
+                data-id="spacecadet-menu-new-game"
+                data-i18n="newGame"
+              >
+                F2 Nouvelle partie
+              </button>
+              <button
+                type="button"
+                class="sc-btn"
+                data-key="pause"
+                data-id="spacecadet-menu-pause"
+                data-i18n="pause"
+              >
+                Pause (F3)
+              </button>
+              <button
+                type="button"
+                class="sc-btn"
+                data-key="tilt"
+                data-id="spacecadet-menu-tilt"
+                data-i18n="tilt"
+              >
+                Tilt
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -180,29 +219,39 @@
         hidden
       ></progress>
       <div class="sc-frame" data-id="spacecadet-frame">
-        <canvas
-          class="emscripten"
-          id="canvas"
-          data-id="spacecadet-canvas"
-          tabindex="-1"
-          style="display: none"
-        ></canvas>
-        <button
-          type="button"
-          class="sc-zone sc-zone--left"
-          data-key="left"
-          data-id="spacecadet-zone-left"
-          tabindex="-1"
-          aria-hidden="true"
-        ></button>
-        <button
-          type="button"
-          class="sc-zone sc-zone--right"
-          data-key="right"
-          data-id="spacecadet-zone-right"
-          tabindex="-1"
-          aria-hidden="true"
-        ></button>
+        <div class="sc-view" data-id="spacecadet-view">
+          <canvas
+            class="emscripten"
+            id="canvas"
+            data-id="spacecadet-canvas"
+            tabindex="-1"
+            style="display: none"
+          ></canvas>
+          <button
+            type="button"
+            class="sc-zone sc-zone--left"
+            data-key="left"
+            data-id="spacecadet-zone-left"
+            tabindex="-1"
+            aria-hidden="true"
+          ></button>
+          <button
+            type="button"
+            class="sc-zone sc-zone--right"
+            data-key="right"
+            data-id="spacecadet-zone-right"
+            tabindex="-1"
+            aria-hidden="true"
+          ></button>
+          <button
+            type="button"
+            class="sc-zone sc-zone--plunge"
+            data-key="plunge"
+            data-id="spacecadet-zone-plunge"
+            tabindex="-1"
+            aria-hidden="true"
+          ></button>
+        </div>
       </div>
     </main>
 

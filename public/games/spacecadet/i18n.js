@@ -55,21 +55,21 @@ const STRINGS = {
 const RULES = {
   fr: `<p>Le flipper 3D Pinball: Space Cadet, version Windows, dans le navigateur.</p>
 <ul>
-<li>Nouvelle partie (F2), puis maintenez Lancer pour doser le ressort et envoyer la bille.</li>
-<li>Flip gauche et Flip droit (aussi les moitiés gauche et droite du plateau) pour renvoyer la bille.</li>
-<li>Tilt si la bille se coince. Pause (F3) arrête le jeu. Une partie coûte 1 pièce.</li>
+<li>Sur ordinateur : clic gauche et clic droit pour les flips. Maintiens Espace ou Lancer pour envoyer la bille.</li>
+<li>Sur téléphone : le plateau est en plein écran, le score sur une ligne en haut. Touche à gauche, touche à droite. Maintiens le lanceur en bas à droite.</li>
+<li>Nouvelle partie (F2), pause (F3) et tilt sont dans Options sur téléphone. Une partie coûte 1 pièce.</li>
 </ul>`,
   en: `<p>The Windows 3D Pinball: Space Cadet table, in the browser.</p>
 <ul>
-<li>New game (F2), then hold Launch to charge the plunger and send the ball.</li>
-<li>Left and right flippers (also the left and right halves of the table) send the ball back up.</li>
-<li>Tilt if the ball is stuck. Pause (F3) stops the table. A match costs 1 coin.</li>
+<li>On a computer, left click and right click are the flippers. Hold Space or Launch to send the ball.</li>
+<li>On a phone, the table is full screen with the score on one line at the top. Touch the left half and the right half. Hold the plunger at the bottom right.</li>
+<li>New game (F2), pause (F3) and tilt are in Options on a phone. A match costs 1 coin.</li>
 </ul>`,
   es: `<p>La mesa de 3D Pinball: Space Cadet de Windows, en el navegador.</p>
 <ul>
-<li>Nueva partida (F2) y luego mantén Lanzar para cargar el muelle y enviar la bola.</li>
-<li>Los flippers izquierdo y derecho (también las mitades de la mesa) devuelven la bola.</li>
-<li>Tilt si la bola se atasca. Pausa (F3) para la mesa. Una partida cuesta 1 moneda.</li>
+<li>En el ordenador, clic izquierdo y clic derecho son los flippers. Mantén Espacio o Lanzar para enviar la bola.</li>
+<li>En el teléfono, la mesa ocupa toda la pantalla y el marcador es una línea arriba. Toca la mitad izquierda y la derecha. Mantén el lanzador abajo a la derecha.</li>
+<li>Nueva partida (F2), pausa (F3) y tilt están en Opciones en el teléfono. Una partida cuesta 1 moneda.</li>
 </ul>`
 };
 

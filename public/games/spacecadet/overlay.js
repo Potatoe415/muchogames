@@ -1,4 +1,4 @@
-// Win95 touch bar + canvas halves → SDL2 keyboard events.
+// Touch halves, plunger corner, and PC mouse buttons → SDL2 keys.
 import { emitKey, KEYS } from "./keys.js";
 
 const held = Object.create(null);
@@ -41,6 +41,9 @@ function trackPointer(e) {
 
 export function bindControls({ onPress }) {
   document.querySelectorAll("[data-key]").forEach((el) => bindPad(el, onPress));
+  document
+    .querySelector("[data-id='spacecadet-frame']")
+    .addEventListener("contextmenu", (event) => event.preventDefault());
   window.addEventListener("pointerdown", trackPointer, true);
   window.addEventListener("pointerup", trackPointer, true);
   window.addEventListener("pointercancel", trackPointer, true);
@@ -53,10 +56,22 @@ function blockPageScroll(e) {
   if (e.isTrusted && e.code === "Space") e.preventDefault();
 }
 
+function controlSpec(el, event) {
+  const side =
+    el.classList.contains("sc-zone") &&
+    (el.dataset.key === "left" || el.dataset.key === "right");
+  if (event.pointerType === "mouse" && side) {
+    if (event.button === 0) return KEYS.left;
+    if (event.button === 2) return KEYS.right;
+    return null;
+  }
+  if (event.pointerType === "mouse" && event.button !== 0) return null;
+  return KEYS[el.dataset.key] ?? null;
+}
+
 function bindPad(el, onPress) {
-  const spec = KEYS[el.dataset.key];
-  if (!spec) return;
-  el.addEventListener("pointerdown", (e) => startHold(e, el, spec, onPress), {
+  if (!KEYS[el.dataset.key]) return;
+  el.addEventListener("pointerdown", (e) => startHold(e, el, onPress), {
     passive: false
   });
   const end = (e) => endHold(e, el);
@@ -65,8 +80,9 @@ function bindPad(el, onPress) {
   el.addEventListener("pointerleave", end);
 }
 
-async function startHold(e, el, spec, onPress) {
-  if (e.pointerType === "mouse" && e.button !== 0) return;
+async function startHold(e, el, onPress) {
+  const spec = controlSpec(el, e);
+  if (!spec) return;
   if (pointers.has(e.pointerId)) return;
   e.preventDefault();
   unlockAudio();

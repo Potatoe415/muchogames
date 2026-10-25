@@ -1,6 +1,7 @@
 // Page shell: i18n, options panel, touch overlay and match coins.
 import { LANGS, rulesHtml, translate } from "./i18n.js";
 import { bindControls } from "./overlay.js";
+import { bindScoreLine } from "./score.js";
 
 const GAME_ID = "spacecadet";
 const LANG_KEY = "bergamots-lang";
@@ -73,6 +74,7 @@ function bindPage() {
     });
   });
   bindControls({ onPress });
+  bindScoreLine();
 }
 
 bindPage();
