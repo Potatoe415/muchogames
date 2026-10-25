@@ -3,16 +3,18 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: Hub also has Memory (`/games/memory/`), solo / pass-and-play / vs-bot, now with 7 image themes and 9 card backs, plus Space Cadet and the Entertainment Pack remakes. Platform common rules (decision 0047) still live everywhere except Tranquil.
-Focus: Memory themes and card backs.
-Level: L1
+Focus: Space Cadet phone layout + options panel order (Rules last, decision 0050).
+Level: L2 (panel order across games)
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/memory/`, `scripts/memory_slice.py`, `public/hub-config.json`
+- Relevant_Files: `public/games/spacecadet/`, `docs/PLATFORM_RULES.md`
 - Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
-- Relevant_Decisions: 0047
+- Relevant_Decisions: 0047, 0049, 0050
 
 Next:
+- Owner to play Space Cadet on phone: full-screen table, score line, flipper zones below the table, plunger bottom-right, mute.
+- Colocated apps (coinchapp, Tranquil): put Rules last in their options panels too, from inside each app.
 - Owner to play Memory on phone (portrait + landscape) and desktop: each theme, each back, solo, pass-and-play, bot easy/hard, reload mid-match.
 - Remove the version-badge refill (`POST /api/match` action `refill`) when play-testing no longer needs it.
 - Chip's Challenge / SkiFree / Démineur / JezzBall / Pipe Dream / Space Cadet: apply owner feedback.
@@ -28,7 +30,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-25 Options panels: Rules moved last in Chip's, JezzBall, Pipe Dream, SkiFree, Space Cadet, Yatzy (decision 0050). Space Cadet: phone full-screen table + score line, PC left/right click flips, mute toggle.
 - 2026-10-25 Memory: nature theme (18 cards) added, card backs replaced by the 9 from `gemini-verso3.jpg`.
 - 2026-10-25 Memory themes: 6 universes + 8 backs (WebP from `scripts/memory_slice.py`), random pairs per match, preload before Play.
-- 2026-10-25 Memory added (`/games/memory/`): solo, pass-and-play, vs bot, local save.
 - 2026-10-25 Space Cadet added to the hub from alula's prebuilt Emscripten binaries (`vendor/`, no compile). Win95 touch bars, 1 coin on F2.

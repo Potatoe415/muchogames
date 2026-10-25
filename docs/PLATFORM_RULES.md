@@ -29,8 +29,9 @@ How to build a game: `docs/NEW_GAME.md`. Shared APIs: `shared/CONTRACT.md`.
   `GameHeader.initOptionsPanel` **[checked]**.
 - The options panel always contains, in this order:
   1. Language FR/EN/ES, `data-id="game-options-language"` **[checked]**.
-  2. Game rules, `data-id="game-options-rules"` **[checked]**.
-  3. Game-specific options, if any.
+  2. Game-specific options, if any (sound, controls, new game…).
+  3. Game rules, `data-id="game-options-rules"` **[checked]** — always the
+     last section the game writes itself (decision 0050).
   4. "Report a problem" — appended automatically by `initOptionsPanel`.
 - In-repo games load `/shared/css/game-header.css` and
   `/shared/js/game-header.js` **[checked]**. A game may re-skin the buttons'
