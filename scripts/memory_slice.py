@@ -32,21 +32,26 @@ THEMES = [
             "gemini-cuba4.jpg",
         ],
     ),
+    ("nature", ["gemini-nat1.jpg", "gemini-nat2.jpg"]),
 ]
-BACK_SHEETS = ["gemini-verso1.jpg", "gemini-verso2.jpg"]
+BACK_SHEETS = ["gemini-verso3.jpg"]
 CARD_GRID = 3
-BACK_GRID = 2
+BACK_GRID = 3
 
 SIZE = 400
 QUALITY = 85
 INSET = 0.05
 WHITE_LEVEL = 230
+DARK_LEVEL = 100
 GUTTER_RATIO = 0.92
 MIN_BAND_RATIO = 0.25
 
 
-def white_mask(img):
+def gutter_mask(img, dark):
+    """255 on gutter pixels: near-white, or near-black when `dark` is set."""
     gray = img.convert("L")
+    if dark:
+        return gray.point(lambda v: 255 if v <= DARK_LEVEL else 0)
     return gray.point(lambda v: 255 if v >= WHITE_LEVEL else 0)
 
 
@@ -82,13 +87,41 @@ def content_box(mask):
     return box or (0, 0, mask.width, mask.height)
 
 
+def band_score(runs, total):
+    """How much of the sheet the bands cover, or 0 when they look wrong.
+
+    A real grid covers most of the sheet with bands of similar length.
+    Illustration blobs (nature sheets on the light mask) fail both tests.
+    """
+    if not runs:
+        return 0
+    lengths = [end - start for start, end in runs]
+    if max(lengths) > 1.5 * min(lengths):
+        return 0
+    covered = sum(lengths)
+    if covered < 0.75 * total:
+        return 0
+    return covered
+
+
+def grid_mask(img, n):
+    """Whichever gutter color (light or dark) yields the fuller grid."""
+    best, best_score = None, 0
+    for dark in (False, True):
+        mask = gutter_mask(img, dark)
+        score = band_score(bands(profile(mask, 1), n), img.height)
+        if score > best_score:
+            best, best_score = mask, score
+    return best if best else gutter_mask(img, False)
+
+
 def cell_boxes(img, n, name):
     """Grid cells as (left, top, right, bottom), row-major.
 
-    Gutters are found from white-pixel profiles; any axis that does not
-    yield exactly n bands falls back to an even split of the trimmed sheet.
+    Gutters come from the pixel profiles; any axis that does not yield
+    exactly n bands falls back to an even split of the trimmed sheet.
     """
-    mask = white_mask(img)
+    mask = grid_mask(img, n)
     left, top, right, bottom = content_box(mask)
     rows = bands(profile(mask, 1), n)
     if not rows:

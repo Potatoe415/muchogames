@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Hub also has Memory (`/games/memory/`), solo / pass-and-play / vs-bot, now with 6 image themes and 8 card backs, plus Space Cadet and the Entertainment Pack remakes. Platform common rules (decision 0047) still live everywhere except Tranquil.
+Status: Hub also has Memory (`/games/memory/`), solo / pass-and-play / vs-bot, now with 7 image themes and 9 card backs, plus Space Cadet and the Entertainment Pack remakes. Platform common rules (decision 0047) still live everywhere except Tranquil.
 Focus: Memory themes and card backs.
 Level: L1
 
@@ -28,6 +28,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-25 Memory: nature theme (18 cards) added, card backs replaced by the 9 from `gemini-verso3.jpg`.
 - 2026-10-25 Memory themes: 6 universes + 8 backs (WebP from `scripts/memory_slice.py`), random pairs per match, preload before Play.
 - 2026-10-25 Memory added (`/games/memory/`): solo, pass-and-play, vs bot, local save.
 - 2026-10-25 Space Cadet added to the hub from alula's prebuilt Emscripten binaries (`vendor/`, no compile). Win95 touch bars, 1 coin on F2.

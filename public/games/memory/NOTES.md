@@ -29,7 +29,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 
 ## Rules in code
 
-- Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures` (18 faces each), `cuba` (36). Backs `01`–`08`.
+- Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba` (36). Backs `01`–`09`, all from `gemini-verso3.jpg`.
 - Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1).
 - Grids: `4x4`, `4x6`, `6x6`. Each match draws its pairs at random from the theme.
 - Play waits for the preload, then calls `MuchogamesMatch.start` (no coin spent on a load).

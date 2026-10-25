@@ -147,6 +147,9 @@ temp-design/
 # Raw AI sheets sliced by scripts/memory_slice.py (only the .webp output ships)
 tmp-resources/
 
+# Python bytecode from scripts/*.py
+__pycache__/
+
 # Turborepo local cache
 .turbo/
 .env*
