@@ -55,6 +55,16 @@ export async function initCoins() {
   }
 }
 
+// TEMP: seven fast taps on the hub version. Silent on failure.
+export async function refillCoins() {
+  try {
+    const { ok, data } = await postMatch({ action: "refill" });
+    if (ok && data) applyBalance(data);
+  } catch {
+    // Offline — leave the counter as it is.
+  }
+}
+
 /** For `coinPolicy: "launch"` games only. Resolves true when the launch may
  *  go ahead; a server or network failure lets the player through. */
 export async function spendLaunchCoin(gameId) {

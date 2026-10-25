@@ -11,7 +11,12 @@ import {
   renderAnnouncement,
   visibleGames
 } from "./hub-catalog.js";
-import { initCoins, renderCoinBadge, spendLaunchCoin } from "./hub-coins.js";
+import {
+  initCoins,
+  refillCoins,
+  renderCoinBadge,
+  spendLaunchCoin
+} from "./hub-coins.js";
 import {
   createFavoriteButton,
   recordRecentGame,
@@ -110,10 +115,34 @@ function setupHubShareButton() {
   });
 }
 
+// TEMP: play-test hook. Seven fast taps on the version put today's coins
+// back to 10. No player-facing feedback. Remove when testing is done.
+const VERSION_REFILL_TAPS = 7;
+const VERSION_REFILL_GAP_MS = 700;
+
 function renderVersionBadge() {
   const badge = document.createElement("div");
   badge.className = "app-version";
+  badge.dataset.id = "app-version";
   badge.textContent = APP_VERSION;
+  badge.style.pointerEvents = "auto";
+  badge.style.touchAction = "manipulation";
+  let taps = 0;
+  let lastTapAt = 0;
+  let pending = false;
+  badge.addEventListener("pointerup", (event) => {
+    if (event.button !== 0 || pending) return;
+    const now = Date.now();
+    taps = now - lastTapAt <= VERSION_REFILL_GAP_MS ? taps + 1 : 1;
+    lastTapAt = now;
+    if (taps < VERSION_REFILL_TAPS) return;
+    taps = 0;
+    pending = true;
+    refillCoins().finally(() => {
+      pending = false;
+      renderCoins();
+    });
+  });
   document.body.appendChild(badge);
 }
 

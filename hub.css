@@ -446,14 +446,17 @@
 /* --- Version badge: discreet, stays on top while scrolling --- */
 .app-version {
   position: fixed;
-  bottom: 8px;
-  right: 10px;
+  right: 0;
+  bottom: 0;
   z-index: 999;
+  padding: 20px 10px 8px 24px;
   font-family: "Quicksand", system-ui, sans-serif;
   font-size: 11px;
   color: rgba(90, 58, 34, 0.4);
-  pointer-events: none;
   user-select: none;
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* --- Force-refresh button: as discreet as the version badge next to it --- */

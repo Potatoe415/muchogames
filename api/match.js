@@ -12,7 +12,9 @@ import { DAILY_COINS, handleCoins } from "./profile/_coins.js";
 
 const THROTTLES = {
   start: { maxHits: 30, windowMs: 60000 },
-  coins: { maxHits: 60, windowMs: 60000 }
+  coins: { maxHits: 60, windowMs: 60000 },
+  // TEMP: hub version-badge test hook. See renderVersionBadge in hub.js.
+  refill: { maxHits: 10, windowMs: 60000 }
 };
 const GAME_ID_PATTERN = /^[a-z0-9-]{1,64}$/;
 const UUID_PATTERN =
@@ -51,7 +53,35 @@ async function handler(req, res) {
   }
 
   if (action === "coins") return handlePlayerCoins(res, player);
+  if (action === "refill") return handleRefill(res, player);
   return handleStart(res, player, body.gameId);
+}
+
+// TEMP: zeros today's spend for this player only, then reports a full balance.
+async function handleRefill(res, player) {
+  if (!player.unlimited) {
+    const supabase = getServiceClient();
+    const query = player.profileId
+      ? supabase
+          .from("muchogames_coins")
+          .update({ spent: 0 })
+          .eq("profile_id", player.profileId)
+      : supabase
+          .from("muchogames_device_coins")
+          .update({ spent: 0 })
+          .eq("device_id", player.deviceId);
+    const { error } = await query;
+    if (error) {
+      sendError(res, "server-error", error.message);
+      return;
+    }
+  }
+
+  sendJson(res, 200, {
+    unlimited: player.unlimited,
+    daily: DAILY_COINS,
+    remaining: DAILY_COINS
+  });
 }
 
 async function resolvePlayer(body) {

@@ -3,16 +3,17 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: The 4 Entertainment Pack remakes are live in the hub: `pipedream`, `jezzball`, `skifree`, `chipschallenge`, plus `minesweeper` (Démineur, classic Windows). Platform common rules (decision 0047) still live everywhere except Tranquil.
-Focus: Owner play-test of Chip's Challenge (plus SkiFree, Pipe Dream, JezzBall, Démineur) on mobile portrait/landscape and desktop.
-Level: L1 (new game `chipschallenge`); platform rules task stays L2 (approved 2026-10-03).
+Focus: Temporary hub test hook — seven fast taps on the version badge refill daily coins to 10.
+Level: L1
 
 Context:
-- Working_On: Chip's Challenge shipped, waiting on owner play-test.
-- Relevant_Files: `public/games/chipschallenge/` (see its `NOTES.md`), `public/hub-config.json` entry `chipschallenge`.
+- Working_On: version-badge coin refill (TEMP), in production for owner play-tests.
+- Relevant_Files: `hub.js`, `hub.css`, `hub-coins.js`, `api/match.js`.
 - Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
-- Relevant_Decisions: 0047, 0007, 0038, 0042
+- Relevant_Decisions: 0047
 
 Next:
+- Remove the version-badge refill (`POST /api/match` action `refill`) when play-testing no longer needs it.
 - Chip's Challenge / SkiFree / Démineur / JezzBall / Pipe Dream: apply owner feedback.
 - `loop.js` + `storage.js` are verbatim copies in 4 games: extract to `public/shared/` if one copy has to change.
 - Platform rules leftovers: owner runs `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on the `coinchapp` Vercel project; Tranquil `start_muchogames_match` + `data-id`s after its Vercel repoint; `cartes.`/`tranquil.muchogames.win` domains then launch URLs + `PROFILE_HOSTS`.
@@ -27,9 +28,5 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-25 Chip's Challenge rules now come from the vendored Lexy's Labyrinth engine (MIT, `vendor/lexy/`, Lynx ruleset, decision 0048); the in-house engine is removed. Replay of the public Tile World solutions: 147/149 levels won. UI unchanged (Win 3.1, MS tiles, LED, D-pad). `npm run check` OK, `tsc --checkJs` 0 errors, live-checked.
-- 2026-10-25 Chip's Challenge plays the 149 original levels from `assets/CHIPS.DAT` (github.com/bgradin/ChipsChallenge); my 5 custom levels removed.
-- 2026-10-24 New hub game `chipschallenge` (`public/games/chipschallenge/`, category `autres`, solo): original CHIPS.EXE tileset (`assets/tiles.png`, masked creatures), 9x9 window on 32x32 boards, 20 Hz ticks (walk 5/s, slide 10/s), every MS tile handled (keys/doors, 4 boots, thief, ice + curved ice, force floors, blocks/dirt/bombs, hidden/invisible/blue/toggle/pop-up walls, 4 buttons, cloners, traps, teleports, thin walls) and 9 creature brains. 5 levels (LESSON 1–3, SLIDE & SKATE, MONSTER MAZE), each proven solvable by a headless replay. Level select + passwords + best score/time in localStorage. LED counters, 4x2 inventory, hint box, D-pad (tap/hold) + swipes, Win 3.1 chrome, portrait/landscape layouts. `npm run check` OK, `tsc --checkJs` 0 errors, live-checked (render, keyboard, D-pad, hint, password, death dialog).
-- 2026-10-24 New hub game `skifree` (`public/games/skifree/`): original SKI.EXE bitmaps, courses, yeti. `npm run check` OK.
-- 2026-10-24 JezzBall and Pipe Dream hub covers: 4:5 JPEG thumbnails.
-- 2026-10-24 New hub games `minesweeper` ("Démineur") and `jezzball`. `npm run check` OK.
+- 2026-10-25 TEMP: seven fast taps on the hub version badge refill today's coins to 10/10. Silent. Own player only (Google profile, else this browser). `npm run check` OK. Browser: six taps do nothing, a slow gap resets, the seventh updates the badge with no dialog.
+- 2026-10-25 Chip's Challenge rules now come from the vendored Lexy's Labyrinth engine (MIT, `vendor/lexy/`, Lynx ruleset, decision 0048); the in-house engine is removed. Replay of the public Tile World solutions: 147/149 levels won.
