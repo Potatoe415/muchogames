@@ -36,6 +36,54 @@
           >
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
         ></a>
+        <button
+          type="button"
+          class="back-button"
+          data-id="memory-quit-button"
+          data-match-quit
+          hidden
+          aria-label="Retour"
+          data-i18n-aria="back"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="back-button"
+          data-id="memory-new-button"
+          hidden
+          aria-label="Nouvelle partie"
+          data-i18n-aria="newGameAria"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12a9 9 0 1 1-2.6-6.3" />
+            <path d="M21 3v6h-6" />
+          </svg>
+        </button>
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">Memory</h1>
@@ -182,8 +230,10 @@
           >
             ↻
           </button>
-          <span class="memory-name" data-id="memory-p2-name"></span>
-          <strong class="memory-score" data-id="memory-p2-score"></strong>
+          <span class="memory-who">
+            <span class="memory-name" data-id="memory-p2-name"></span>
+            <strong class="memory-score" data-id="memory-p2-score"></strong>
+          </span>
         </div>
         <div class="memory-stage" data-id="memory-stage">
           <div class="memory-board" data-id="memory-board"></div>
@@ -193,8 +243,10 @@
           data-id="memory-player-one"
           data-active="true"
         >
-          <span class="memory-name" data-id="memory-p1-name"></span>
-          <strong class="memory-score" data-id="memory-p1-score"></strong>
+          <span class="memory-who">
+            <span class="memory-name" data-id="memory-p1-name"></span>
+            <strong class="memory-score" data-id="memory-p1-score"></strong>
+          </span>
           <button
             type="button"
             class="memory-icon"
@@ -231,15 +283,6 @@
                 d="M16 10l5 5M21 10l-5 5"
               />
             </svg>
-          </button>
-          <button
-            type="button"
-            class="memory-new"
-            data-id="memory-new-button"
-            data-i18n="newGame"
-            data-i18n-aria="newGameAria"
-          >
-            Nouvelle
           </button>
         </div>
         <div class="memory-end" data-id="memory-end" hidden>

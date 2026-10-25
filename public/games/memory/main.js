@@ -55,12 +55,20 @@ function readLang() {
   }
 }
 
+function showChrome(playing) {
+  $("game-back-button").hidden = playing;
+  $("memory-quit-button").hidden = !playing;
+  $("memory-new-button").hidden = !playing;
+}
+
 function showSetup() {
+  showChrome(false);
   $("memory-setup").hidden = false;
   $("memory-play").hidden = true;
 }
 
 function showPlay() {
+  showChrome(true);
   $("memory-setup").hidden = true;
   $("memory-play").hidden = false;
 }
@@ -159,6 +167,7 @@ function bindPlay() {
   $("memory-new-button").addEventListener("click", () => void startFresh());
   $("memory-replay-button").addEventListener("click", () => void startFresh());
   $("memory-setup-button").addEventListener("click", toSetup);
+  $("memory-quit-button").addEventListener("click", toSetup);
   $("memory-mute-button").addEventListener("click", toggleMute);
   $("memory-rotate-button").addEventListener("click", toggleRotate);
   $("memory-board").addEventListener("click", (event) => {

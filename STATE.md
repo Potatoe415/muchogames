@@ -30,7 +30,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-25 Memory: touch screens keep a 48px empty strip under the board so nothing sits on the phone navigation.
+- 2026-10-25 Memory: quitting a match returns to its setup. New game is a header icon. Names sit on white pills.
 - 2026-10-25 Options panels: Rules moved last in Chip's, JezzBall, Pipe Dream, SkiFree, Space Cadet, Yatzy (decision 0050). Space Cadet: phone full-screen table + score line, PC left/right click flips, mute toggle.
 - 2026-10-25 Memory: nature theme (18 cards) added, card backs replaced by the 9 from `gemini-verso3.jpg`.
 - 2026-10-25 Memory themes: 6 universes + 8 backs (WebP from `scripts/memory_slice.py`), random pairs per match, preload before Play.
