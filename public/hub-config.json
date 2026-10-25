@@ -133,7 +133,7 @@
     "kind": "custom",
     "category": "autres",
     "launch": "/games/memory/index.html",
-    "thumbnail": "/games/memory/assets/thumbnail.svg",
+    "thumbnail": "/games/memory/assets/thumbnail.jpg",
     "players": [1, 2]
   },
   {
