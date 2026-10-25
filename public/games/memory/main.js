@@ -169,6 +169,17 @@ function bindPlay() {
   });
 }
 
+function placeBars() {
+  const viewport = window.visualViewport;
+  const covered = viewport
+    ? Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop)
+    : 0;
+  document.documentElement.style.setProperty(
+    "--memory-obstructed",
+    `${Math.round(covered)}px`
+  );
+}
+
 function bindPage() {
   window.GameHeader?.initOptionsPanel(
     $("game-options-button"),
@@ -183,6 +194,10 @@ function bindPage() {
   });
   bindChoices();
   bindPlay();
+  placeBars();
+  window.visualViewport?.addEventListener("resize", placeBars);
+  window.visualViewport?.addEventListener("scroll", placeBars);
+  window.addEventListener("resize", placeBars);
   document.addEventListener("pointerdown", () => unlock(), { capture: true });
 }
 

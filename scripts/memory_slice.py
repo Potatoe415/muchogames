@@ -34,9 +34,9 @@ THEMES = [
     ),
     ("nature", ["gemini-nat1.jpg", "gemini-nat2.jpg"]),
 ]
-BACK_SHEETS = ["gemini-verso3.jpg"]
+BACK_SHEETS = ["gemini-verso1.jpg", "gemini-verso2.jpg"]
 CARD_GRID = 3
-BACK_GRID = 3
+BACK_GRID = 2
 
 SIZE = 400
 QUALITY = 85

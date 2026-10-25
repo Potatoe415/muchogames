@@ -2,15 +2,15 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Hub also has Memory (`/games/memory/`), solo / pass-and-play / vs-bot, now with 7 image themes and 9 card backs, plus Space Cadet and the Entertainment Pack remakes. Platform common rules (decision 0047) still live everywhere except Tranquil.
-Focus: Space Cadet phone layout + options panel order (Rules last, decision 0050).
-Level: L2 (panel order across games)
+Status: Hub also has Memory (`/games/memory/`), solo / pass-and-play / vs-bot, 7 image themes and 8 card backs on a full-page background, plus Space Cadet and the Entertainment Pack remakes. Platform common rules (decision 0047) still live everywhere except Tranquil.
+Focus: Memory play screen.
+Level: L1
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/spacecadet/`, `docs/PLATFORM_RULES.md`
+- Relevant_Files: `public/games/memory/`, `scripts/memory_slice.py`
 - Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
-- Relevant_Decisions: 0047, 0049, 0050
+- Relevant_Decisions: 0047
 
 Next:
 - Owner to play Space Cadet on phone: full-screen table, score line, flipper zones below the table, plunger bottom-right, mute.
@@ -30,6 +30,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-25 Memory: old 8 card backs restored. Full-page `fond.webp`, no color bars. Player 1 row clears the phone navigation.
 - 2026-10-25 Options panels: Rules moved last in Chip's, JezzBall, Pipe Dream, SkiFree, Space Cadet, Yatzy (decision 0050). Space Cadet: phone full-screen table + score line, PC left/right click flips, mute toggle.
 - 2026-10-25 Memory: nature theme (18 cards) added, card backs replaced by the 9 from `gemini-verso3.jpg`.
 - 2026-10-25 Memory themes: 6 universes + 8 backs (WebP from `scripts/memory_slice.py`), random pairs per match, preload before Play.

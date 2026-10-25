@@ -14,13 +14,16 @@ body {
   max-height: 100dvh;
   display: flex;
   flex-direction: column;
-  background: #0f172a;
-  color: #0f172a;
+  background: #f4efe4 url("assets/fond.webp") center / cover no-repeat;
+  color: #3f2e1f;
   font-family: var(--font-sans, system-ui, sans-serif);
 }
 
 .game-nav {
   flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 0;
+  box-shadow: none;
 }
 
 .memory-app {

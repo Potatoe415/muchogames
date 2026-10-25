@@ -9,4 +9,4 @@ export const THEMES = [
   { id: "nature", count: 18 }
 ];
 
-export const BACKS = ["01", "02", "03", "04", "05", "06", "07", "08", "09"];
+export const BACKS = ["01", "02", "03", "04", "05", "06", "07", "08"];
