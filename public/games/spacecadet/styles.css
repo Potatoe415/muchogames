@@ -254,7 +254,7 @@ canvas.emscripten {
     aspect-ratio: auto;
     container-type: size;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 
