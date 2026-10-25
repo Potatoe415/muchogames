@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#c0c0c0" />
+    <title>Space Cadet</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Space Cadet</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0 1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="spacecadet-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="sc-lang">
+              <button
+                type="button"
+                class="sc-chip"
+                data-lang="fr"
+                data-id="spacecadet-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="sc-chip"
+                data-lang="en"
+                data-id="spacecadet-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="sc-chip"
+                data-lang="es"
+                data-id="spacecadet-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="game-options-rules">
+            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+            <div
+              class="rules-modal-content"
+              data-id="spacecadet-rules-content"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sc-bar sc-bar--top" data-id="spacecadet-topbar">
+      <button
+        type="button"
+        class="sc-btn"
+        data-key="newgame"
+        data-id="spacecadet-new-game"
+        data-i18n="newGame"
+      >
+        F2 Nouvelle partie
+      </button>
+      <button
+        type="button"
+        class="sc-btn"
+        data-key="pause"
+        data-id="spacecadet-pause"
+        data-i18n="pause"
+      >
+        Pause (F3)
+      </button>
+      <button
+        type="button"
+        class="sc-btn"
+        data-key="tilt"
+        data-id="spacecadet-tilt"
+        data-i18n="tilt"
+      >
+        Tilt
+      </button>
+    </div>
+
+    <main class="sc-stage" data-id="spacecadet-stage">
+      <p
+        class="sc-status emscripten"
+        data-id="spacecadet-status"
+        data-i18n="downloading"
+      >
+        Téléchargement…
+      </p>
+      <progress
+        class="sc-progress"
+        data-id="spacecadet-progress"
+        max="100"
+        value="0"
+        hidden
+      ></progress>
+      <div class="sc-frame" data-id="spacecadet-frame">
+        <canvas
+          class="emscripten"
+          id="canvas"
+          data-id="spacecadet-canvas"
+          tabindex="-1"
+          style="display: none"
+        ></canvas>
+        <button
+          type="button"
+          class="sc-zone sc-zone--left"
+          data-key="left"
+          data-id="spacecadet-zone-left"
+          tabindex="-1"
+          aria-hidden="true"
+        ></button>
+        <button
+          type="button"
+          class="sc-zone sc-zone--right"
+          data-key="right"
+          data-id="spacecadet-zone-right"
+          tabindex="-1"
+          aria-hidden="true"
+        ></button>
+      </div>
+    </main>
+
+    <div class="sc-bar sc-bar--bottom" data-id="spacecadet-bottombar">
+      <button
+        type="button"
+        class="sc-btn"
+        data-key="left"
+        data-id="spacecadet-flip-left"
+        data-i18n="leftFlip"
+      >
+        ◄ Flip
+      </button>
+      <button
+        type="button"
+        class="sc-btn sc-btn--plunge"
+        data-key="plunge"
+        data-id="spacecadet-plunge"
+        data-i18n="plunge"
+      >
+        Lancer (maintenir)
+      </button>
+      <button
+        type="button"
+        class="sc-btn"
+        data-key="right"
+        data-id="spacecadet-flip-right"
+        data-i18n="rightFlip"
+      >
+        Flip ►
+      </button>
+    </div>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script src="boot.js"></script>
+    <script async src="vendor/SpaceCadetPinball.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

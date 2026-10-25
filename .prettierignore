@@ -44,3 +44,7 @@ public/games/skifree/**/*.md
 !public/games/chipschallenge/**
 public/games/chipschallenge/**/*.md
 public/games/chipschallenge/vendor/
+!public/games/spacecadet/
+!public/games/spacecadet/**
+public/games/spacecadet/**/*.md
+public/games/spacecadet/vendor/

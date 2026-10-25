@@ -119,6 +119,15 @@
     "players": [1, 1]
   },
   {
+    "id": "spacecadet",
+    "title": "Space Cadet",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/spacecadet/index.html",
+    "thumbnail": "/games/spacecadet/assets/thumbnail.jpg",
+    "players": [1, 1]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",
