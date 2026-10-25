@@ -41,7 +41,7 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,780 total (none >300); `main.js` entry | header, session | yes |
 | `jezzball` | `public/games/jezzball/` | 17 ES modules, ~1,760 total (none >300); `main.js` entry | header, session | yes |
 | `skifree` | `public/games/skifree/` | 25 ES modules + 2 CSS, ~3,050 total (none >300 except `index.html` header boilerplate, 307); `main.js` entry; original bitmaps in `assets/sprites.png` | header, session | yes |
-| `chipschallenge` | `public/games/chipschallenge/` | 23 ES modules + 3 CSS, ~2,380 JS lines (none >300 except `index.html`, ~390: header boilerplate + static dialogs/D-pad, and `panel.css`, ~315); `main.js` entry; original CHIPS.EXE tiles in `assets/tiles.png` | header, session | yes |
+| `chipschallenge` | `public/games/chipschallenge/` | 24 ES modules + 3 CSS, ~2,300 JS lines (none >300 except `index.html`, ~400: header boilerplate + static dialogs/D-pad, and `panel.css`, ~315); `main.js` entry; original CHIPS.EXE tiles in `assets/tiles.png`, original 149 levels in `assets/CHIPS.DAT` | header, session | yes |
 | `minesweeper` | `public/games/minesweeper/` | 7 ES modules + 2 CSS, ~1,550 total (none >300); `main.js` entry | header, session | yes |
 | `yatsy` | `public/games/yatsy/` | 14 files; `app.js` (1239), `i18n.js` (395), `render.js` (633), `session.js` (575) — **4 files over limit** | engine, header, profile, Supabase | no — see `docs/BACKLOG.md` Later |
 

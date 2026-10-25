@@ -78,7 +78,7 @@ export function createGame(options) {
   const run = createRun(options);
   const audio = createAudio();
   const surface = createSurface(options.canvas, options.host);
-  const panel = createPanel(options.panel, options.t);
+  const panel = createPanel(options.panel);
   loadSheet()
     .then((sheet) => (run.sheet = sheet))
     .catch(() => options.onLoadError?.());
@@ -106,7 +106,6 @@ export function createGame(options) {
       if (value) input.clear();
     },
     setMuted: (value) => audio.setMuted(value),
-    refreshText: () => panel.reset(),
     destroy() {
       clearTimeout(run.endTimer);
       loop.stop();

@@ -4,7 +4,7 @@
 // retries after a death or R stay in the same match.
 import { createGame } from "./game.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
-import { LEVELS } from "./levels.js";
+import { LEVELS, loadLevels } from "./levels.js";
 import {
   levelForPassword,
   loadProgress,
@@ -54,10 +54,9 @@ const page = {
 };
 
 const t = (key, vars) => translate(page.lang, key, vars);
-t.lang = () => page.lang;
-
 function renderTitleCard() {
   const def = LEVELS[page.level - 1];
+  if (!def) return;
   $("chips-title-level").textContent =
     `${t("levelCard", { number: page.level })} · ${def.title}`;
   $("chips-title-password").textContent = t("passwordCard", {
@@ -92,7 +91,6 @@ function applyLanguage() {
   $("chips-total-score").textContent = totalLine(page.progress, t);
   renderTitleCard();
   renderDialogs();
-  page.game?.refreshText();
 }
 
 function syncPause() {
@@ -305,3 +303,9 @@ function bindLifecycle() {
 bindPage();
 applyLanguage();
 loadSheet().catch(() => {});
+loadLevels()
+  .then(() => {
+    page.progress = loadProgress();
+    applyLanguage();
+  })
+  .catch(() => ($("chips-levels-error").hidden = false));

@@ -49,7 +49,7 @@ function drawInventory(canvas, sheet, w) {
   });
 }
 
-export function createPanel(root, t) {
+export function createPanel(root) {
   const leds = setupLeds(root);
   const inventory = root.querySelector("[data-inventory]");
   inventory.width = 4 * TILE;
@@ -72,7 +72,7 @@ export function createPanel(root, t) {
     last.hint = onHint;
     hintBox.hidden = !onHint;
     counters.hidden = onHint;
-    if (onHint) hintText.textContent = w.def.hint[t.lang()] || w.def.hint.en;
+    if (onHint) hintText.textContent = w.def.hint;
   }
 
   return {

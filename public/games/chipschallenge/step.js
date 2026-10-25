@@ -1,6 +1,7 @@
 // One logic tick (20 per second). Chip walks a square every 4 ticks
 // (5 squares/s) while a direction is held, slides every 2 ticks (10/s);
-// creatures move every 4 ticks, teeth and blobs every 8.
+// creatures move every 4 ticks, teeth and blobs every 8. As in CHIPS.EXE,
+// the level stays frozen until Chip's first move.
 import { kill, sound, terrainAt } from "./board.js";
 import { moveCreature, slideMob } from "./monsters.js";
 import { chipTry, stuckInTrap } from "./move.js";
@@ -26,11 +27,24 @@ function slideChip(w) {
   return true;
 }
 
+// On a force floor Chip may step off in any direction instead of being
+// pushed, as in CHIPS.EXE.
+function overrideForce(w, input) {
+  const chip = w.chip;
+  const dir = input.next();
+  if (dir < 0 || dir === chip.slide) return false;
+  if (!chipTry(w, dir, true)) return false;
+  chip.cool = WALK_TICKS;
+  return true;
+}
+
 function stepChip(w, input) {
   const chip = w.chip;
+  const forced = chip.slide >= 0 && chip.slideKind === "force";
   if (chip.cool > 0) chip.cool -= 1;
-  if (chip.slide >= 0) input.dropTaps();
+  if (chip.slide >= 0 && !forced) input.dropTaps();
   if (chip.cool > 0) return;
+  if (forced && overrideForce(w, input)) return;
   if (chip.slide >= 0 && slideChip(w)) {
     chip.cool = SLIDE_TICKS;
     return;
@@ -50,9 +64,7 @@ function eachMob(w, fn) {
 }
 
 function creatureTurn(w, mob) {
-  if (mob.kind === "block" || mob.slide >= 0 || mob.slidTick === w.tick) {
-    return;
-  }
+  if (!mob.active || mob.slide >= 0 || mob.slidTick === w.tick) return;
   if (SLOW_KINDS.has(mob.kind) && w.tick % SLOW_TICKS !== 0) return;
   moveCreature(w, mob);
 }
@@ -68,8 +80,9 @@ function runClock(w) {
 
 export function tick(w, input) {
   if (over(w)) return;
-  w.tick += 1;
   stepChip(w, input);
+  if (!w.started) return;
+  w.tick += 1;
   if (w.tick % SLIDE_TICKS === 0) {
     eachMob(w, (mob) => mob.slide >= 0 && slideMob(w, mob));
   }

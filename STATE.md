@@ -20,12 +20,14 @@ Next:
 
 Open_Questions:
 - `.prettierignore`'s `!public/games/yatsy/**` never re-included yatsy (a parent-dir exclusion needs `!public/games/yatsy/` too); the Entertainment Pack games and `minesweeper` use the working form. Fixing yatsy would reformat it — owner call.
-- SkiFree bitmaps (Chris Pirih / Microsoft) and Chip's Challenge tiles (Microsoft / Epyx, CHIPS.EXE) are original copyrighted art: fine for a fan remake per the owner's request, flag if the site ever goes commercial. Chip's levels are original layouts (only the 5 passwords come from the 1991 game).
+- SkiFree bitmaps (Chris Pirih / Microsoft), Chip's Challenge tiles and the original `CHIPS.DAT` level file (Microsoft / Epyx) are copyrighted: fine for a fan remake per the owner's request, flag if the site ever goes commercial.
+- Chip's Challenge: only levels 1–7, 13, 32, 51, 140, 147 are proven winnable on our engine (MS rules approximated); the owner's play-test is the check for the rest.
 
 Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-25 Chip's Challenge now plays the 149 original levels from `assets/CHIPS.DAT` (github.com/bgradin/ChipsChallenge), parsed in `datfile.js`: two layers, monster list, trap/clone wiring, chips required, original titles/hints/passwords. CHIPS.EXE behaviours added: frozen until first move, force-floor override, teleports in reverse reading order, blocks on gravel, only fireballs in fire. My 5 custom levels removed. `npm run check` OK, `tsc --checkJs` 0 errors.
 - 2026-10-24 New hub game `chipschallenge` (`public/games/chipschallenge/`, category `autres`, solo): original CHIPS.EXE tileset (`assets/tiles.png`, masked creatures), 9x9 window on 32x32 boards, 20 Hz ticks (walk 5/s, slide 10/s), every MS tile handled (keys/doors, 4 boots, thief, ice + curved ice, force floors, blocks/dirt/bombs, hidden/invisible/blue/toggle/pop-up walls, 4 buttons, cloners, traps, teleports, thin walls) and 9 creature brains. 5 levels (LESSON 1–3, SLIDE & SKATE, MONSTER MAZE), each proven solvable by a headless replay. Level select + passwords + best score/time in localStorage. LED counters, 4x2 inventory, hint box, D-pad (tap/hold) + swipes, Win 3.1 chrome, portrait/landscape layouts. `npm run check` OK, `tsc --checkJs` 0 errors, live-checked (render, keyboard, D-pad, hint, password, death dialog).
 - 2026-10-24 New hub game `skifree` (`public/games/skifree/`): original SKI.EXE bitmaps, courses, yeti. `npm run check` OK.
 - 2026-10-24 JezzBall and Pipe Dream hub covers: 4:5 JPEG thumbnails.

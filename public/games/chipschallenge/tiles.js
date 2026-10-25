@@ -162,6 +162,7 @@ const BLOCK_FLOORS = [
   T.WATER,
   T.FIRE,
   T.BOMB,
+  T.GRAVEL,
   T.ICE,
   T.ICE_NW,
   T.ICE_NE,
@@ -187,9 +188,9 @@ const BLOCK_FLOORS = [
 ];
 export const BLOCK_OK = new Set(BLOCK_FLOORS);
 
-// Monsters walk the same squares as blocks; water drowns all but gliders,
-// fire burns all but fireballs, and bugs and walkers refuse to enter it.
+// Monsters walk the same squares as blocks except gravel; water drowns all
+// but gliders, and only fireballs go into fire.
 export function creatureCanEnter(kind, t) {
-  if (!BLOCK_OK.has(t)) return false;
-  return !(t === T.FIRE && (kind === "bug" || kind === "walker"));
+  if (!BLOCK_OK.has(t) || t === T.GRAVEL) return false;
+  return t !== T.FIRE || kind === "fireball";
 }

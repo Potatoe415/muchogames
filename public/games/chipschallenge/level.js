@@ -1,91 +1,14 @@
-// Turns a level of levels.js into a fresh world state. Map legend (one
-// character per square):
-//   .  floor        #  wall          c  IC chip      ~  water     %  fire
-//   _  ice          1 2 3 4  curved ice NW NE SE SW
-//   ^ v < >  force floors N S W E    *  random force floor
-//   =  dirt (mud)   :  gravel        E  exit         S  socket    ?  hint
-//   b r y g  keys   B R Y G  doors (blue, red, yellow, green)
-//   w  flippers     h  fire boots    k  ice skates   u  suction boots
-//   T  thief        $  bomb          t  teleport     n  trap
-//   !  green button ,  red button    ;  blue button  j  brown button
-//   |  toggle wall (closed)          '  toggle wall (open)
-//   H  hidden wall  I  invisible wall  L  fake blue wall  W  real blue wall
-//   P  pop-up wall  6 7 8 9 0  thin wall N W S E SE   C  clone machine
-//   @  Chip         o  dirt block
-//   x bug  F fireball  p pink ball  K tank  Q teeth  A glider  M walker
-//   O blob  Z paramecium   (facing north unless `dirs` says otherwise)
-import { N, S, SIZE, T, W, E } from "./tiles.js";
+// Turns a CHIPS.DAT level (see datfile.js) into a fresh world state. The
+// top layer holds Chip, creatures, blocks or a terrain tile; whatever lies
+// beneath goes to `lower`, uncovered when the top tile is cleared. Only the
+// creatures of the level's monster list move, in that order; a creature or
+// block standing on a clone machine is its template.
+import { SIZE, SPRITE, T } from "./tiles.js";
 
-const TERRAIN = {
-  ".": T.FLOOR,
-  "#": T.WALL,
-  c: T.CHIP,
-  "~": T.WATER,
-  "%": T.FIRE,
-  _: T.ICE,
-  1: T.ICE_NW,
-  2: T.ICE_NE,
-  3: T.ICE_SE,
-  4: T.ICE_SW,
-  "^": T.FORCE_N,
-  v: T.FORCE_S,
-  "<": T.FORCE_W,
-  ">": T.FORCE_E,
-  "*": T.FORCE_RANDOM,
-  "=": T.DIRT,
-  ":": T.GRAVEL,
-  E: T.EXIT,
-  S: T.SOCKET,
-  "?": T.HINT,
-  b: T.KEY_BLUE,
-  r: T.KEY_RED,
-  y: T.KEY_YELLOW,
-  g: T.KEY_GREEN,
-  B: T.DOOR_BLUE,
-  R: T.DOOR_RED,
-  Y: T.DOOR_YELLOW,
-  G: T.DOOR_GREEN,
-  w: T.FLIPPERS,
-  h: T.FIRE_BOOTS,
-  k: T.SKATES,
-  u: T.SUCTION,
-  T: T.THIEF,
-  $: T.BOMB,
-  t: T.TELEPORT,
-  n: T.TRAP,
-  "!": T.BTN_GREEN,
-  ",": T.BTN_RED,
-  ";": T.BTN_BLUE,
-  j: T.BTN_BROWN,
-  "|": T.TOGGLE_CLOSED,
-  "'": T.TOGGLE_OPEN,
-  H: T.HIDDEN_WALL,
-  I: T.INVISIBLE,
-  L: T.BLUE_FAKE,
-  W: T.BLUE_REAL,
-  P: T.RECESSED,
-  6: T.THIN_N,
-  7: T.THIN_W,
-  8: T.THIN_S,
-  9: T.THIN_E,
-  0: T.THIN_SE,
-  C: T.CLONER
-};
-
-export const MOB_CHARS = {
-  o: "block",
-  x: "bug",
-  F: "fireball",
-  p: "ball",
-  K: "tank",
-  Q: "teeth",
-  A: "glider",
-  M: "walker",
-  O: "blob",
-  Z: "paramecium"
-};
-
-const DIR_NAMES = { N, W, S, E };
+const CREATURES = Object.keys(SPRITE).filter((kind) => kind !== "chip");
+const FIRST_CREATURE = 0x40;
+const LAST_CREATURE = 0x63;
+const CLONE_BLOCKS = [T.CLONE_BLOCK, T.CLONE_BLOCK + 3];
 
 export const cellIndex = (x, y) => y * SIZE + x;
 
@@ -108,12 +31,13 @@ function emptyWorld(def, number) {
   return {
     number,
     def,
-    terrain: new Uint8Array(SIZE * SIZE).fill(T.WALL),
+    terrain: new Uint8Array(SIZE * SIZE),
+    lower: new Uint8Array(SIZE * SIZE),
     mobs: [],
-    chip: { ...createMob("chip", 0, 0, S), cool: 0 },
+    chip: { ...createMob("chip", 0, 0, 2), cool: 0 },
     keys: { blue: 0, red: 0, yellow: 0, green: 0 },
     boots: { flippers: false, fire: false, skates: false, suction: false },
-    chipsLeft: 0,
+    chipsLeft: def.chips,
     timeLeft: def.time,
     started: false,
     tick: 0,
@@ -124,61 +48,58 @@ function emptyWorld(def, number) {
   };
 }
 
-function placeChar(world, ch, x, y, dir) {
-  const i = cellIndex(x, y);
-  if (ch === "@") {
-    Object.assign(world.chip, { x, y });
-    world.terrain[i] = T.FLOOR;
-  } else if (MOB_CHARS[ch]) {
-    world.mobs.push(createMob(MOB_CHARS[ch], x, y, dir));
-    world.terrain[i] = T.FLOOR;
-  } else if (ch in TERRAIN) {
-    world.terrain[i] = TERRAIN[ch];
+function placeMob(world, kind, i, dir, under, template) {
+  const mob = createMob(kind, i % SIZE, Math.floor(i / SIZE), dir);
+  if (template) mob.template = true;
+  world.mobs.push(mob);
+  world.terrain[i] = under;
+}
+
+function placeCell(world, top, bottom, i) {
+  if (top >= SPRITE.chip && top <= SPRITE.chip + 3) {
+    Object.assign(world.chip, { x: i % SIZE, y: Math.floor(i / SIZE) });
+    world.chip.dir = top - SPRITE.chip;
+    world.terrain[i] = bottom;
+  } else if (top >= FIRST_CREATURE && top <= LAST_CREATURE) {
+    const kind = CREATURES[(top - FIRST_CREATURE) >> 2];
+    placeMob(world, kind, i, top & 3, bottom, bottom === T.CLONER);
+  } else if (top === T.BLOCK) {
+    placeMob(world, "block", i, 0, bottom, bottom === T.CLONER);
+  } else if (top >= CLONE_BLOCKS[0] && top <= CLONE_BLOCKS[1]) {
+    placeMob(world, "block", i, top - T.CLONE_BLOCK, T.CLONER, true);
   } else {
-    throw new Error(`Unknown map character "${ch}" at ${x},${y}`);
+    world.terrain[i] = top;
+    world.lower[i] = bottom;
   }
 }
 
-function addClones(world, def, ox, oy) {
-  Object.entries(def.clones || {}).forEach(([at, [ch, dirName]]) => {
-    const [x, y] = at.split(",").map(Number);
-    const mob = createMob(MOB_CHARS[ch], x + ox, y + oy, DIR_NAMES[dirName]);
-    mob.template = true;
-    world.mobs.push(mob);
+// Monster list order first; creatures missing from the list never move.
+function activate(world, monsters) {
+  const listed = [];
+  monsters.forEach(([x, y]) => {
+    const mob = world.mobs.find(
+      (m) => m.x === x && m.y === y && m.kind !== "block" && !m.template
+    );
+    if (mob && !mob.active) {
+      mob.active = true;
+      listed.push(mob);
+    }
   });
+  world.mobs = [...listed, ...world.mobs.filter((m) => !m.active)];
 }
 
-// Lynx wiring: each button drives the next machine in reading order.
-function wire(world, buttonTile, machineTile) {
-  const machines = [];
-  const buttons = [];
-  world.terrain.forEach((t, i) => {
-    if (t === machineTile) machines.push(i);
-    if (t === buttonTile) buttons.push(i);
-  });
-  const links = new Map();
-  if (machines.length === 0) return links;
-  buttons.forEach((b) => {
-    links.set(b, machines.find((m) => m > b) ?? machines[0]);
-  });
-  return links;
-}
+const toLinks = (records) =>
+  records.map(([bx, by, mx, my]) => [cellIndex(bx, by), cellIndex(mx, my)]);
 
 export function createWorld(def, number) {
   const world = emptyWorld(def, number);
-  const ox = (SIZE - def.map[0].length) >> 1;
-  const oy = (SIZE - def.map.length) >> 1;
-  def.map.forEach((row, y) => {
-    [...row].forEach((ch, x) => {
-      const dir = DIR_NAMES[def.dirs?.[`${x},${y}`]] ?? N;
-      placeChar(world, ch, x + ox, y + oy, dir);
-    });
-  });
-  addClones(world, def, ox, oy);
-  world.chipsLeft = world.terrain.filter((t) => t === T.CHIP).length;
+  for (let i = 0; i < SIZE * SIZE; i++) {
+    placeCell(world, def.top[i], def.bottom[i], i);
+  }
+  activate(world, def.monsters);
   world.teleports = [];
   world.terrain.forEach((t, i) => t === T.TELEPORT && world.teleports.push(i));
-  world.cloneLinks = wire(world, T.BTN_RED, T.CLONER);
-  world.trapLinks = wire(world, T.BTN_BROWN, T.TRAP);
+  world.trapLinks = toLinks(def.traps);
+  world.cloneLinks = toLinks(def.clones);
   return world;
 }

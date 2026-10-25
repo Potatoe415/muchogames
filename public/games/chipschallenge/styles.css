@@ -106,6 +106,10 @@ body {
 }
 
 .cc-levels {
+  max-height: min(40vh, 320px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
   margin: 0 0 10px;
   padding: 3px;
   list-style: none;

@@ -5,6 +5,7 @@ import {
   canMobEnter,
   chipAt,
   chipTerrainOpen,
+  clearTerrain,
   edgeBlocked,
   inside,
   kill,
@@ -46,7 +47,7 @@ function bump(w, voluntary) {
 function openDoor(w, x, y, t) {
   const color = DOOR_TILES[t];
   if (color !== "green") w.keys[color] -= 1;
-  setTerrain(w, x, y, T.FLOOR);
+  clearTerrain(w, x, y);
   sound(w, "door");
 }
 
@@ -71,7 +72,7 @@ export function chipTry(w, dir, voluntary) {
   }
   if (t in DOOR_TILES) openDoor(w, x, y, t);
   if (t === T.SOCKET) {
-    setTerrain(w, x, y, T.FLOOR);
+    clearTerrain(w, x, y);
     sound(w, "socket");
   }
   if (mob && mob.kind !== "block") {

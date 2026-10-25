@@ -4,6 +4,7 @@ import {
   canMobEnter,
   chipAt,
   chipTerrainOpen,
+  clearTerrain,
   edgeBlocked,
   inside,
   kill,
@@ -45,7 +46,7 @@ function collect(w, t) {
   } else if (t !== T.DIRT && t !== T.BLUE_FAKE) {
     return false;
   }
-  setTerrain(w, x, y, T.FLOOR);
+  clearTerrain(w, x, y);
   return true;
 }
 
@@ -55,7 +56,7 @@ function chipArrive(w, t) {
   if (t === T.WATER && !w.boots.flippers) kill(w, "water");
   else if (t === T.FIRE && !w.boots.fire) kill(w, "fire");
   else if (t === T.BOMB) {
-    setTerrain(w, w.chip.x, w.chip.y, T.FLOOR);
+    clearTerrain(w, w.chip.x, w.chip.y);
     kill(w, "bomb");
   } else if (t === T.THIEF) {
     Object.keys(w.boots).forEach((k) => (w.boots[k] = false));
@@ -71,11 +72,10 @@ function mobArrive(w, mob, t) {
   const block = mob.kind === "block";
   let gone = null;
   if (t === T.WATER && mob.kind !== "glider") gone = "splash";
-  else if (t === T.FIRE && !block && mob.kind !== "fireball") gone = "fire";
   else if (t === T.BOMB) gone = "bomb";
   if (!gone) return true;
   if (block && t === T.WATER) setTerrain(w, mob.x, mob.y, T.DIRT);
-  if (t === T.BOMB) setTerrain(w, mob.x, mob.y, T.FLOOR);
+  if (t === T.BOMB) clearTerrain(w, mob.x, mob.y);
   removeMob(w, mob);
   sound(w, gone);
   return false;
@@ -97,6 +97,7 @@ function clone(w, machine) {
   const y = template.y + DY[template.dir];
   if (template.kind === "block" && chipAt(w, x, y)) return;
   const mob = createMob(template.kind, x, y, template.dir);
+  mob.active = template.kind !== "block";
   w.mobs.push(mob);
   if (chipAt(w, x, y)) kill(w, "monster");
   else arrive(w, mob, template.dir);
@@ -110,7 +111,11 @@ function press(w, t, i) {
       if (m.kind === "tank" && !m.template) m.dir = back(m.dir);
     });
   }
-  if (t === T.BTN_RED && w.cloneLinks.has(i)) clone(w, w.cloneLinks.get(i));
+  if (t === T.BTN_RED) {
+    w.cloneLinks.forEach(([button, machine]) => {
+      if (button === i) clone(w, machine);
+    });
+  }
 }
 
 function exitOpen(w, ent, x, y, dir) {
@@ -121,13 +126,15 @@ function exitOpen(w, ent, x, y, dir) {
   return chipTerrainOpen(w, terrainAt(w, nx, ny)) && !mobAt(w, nx, ny);
 }
 
-// Next teleport in reading order whose way out (same direction) is free.
+// Previous teleport in reading order (wrapping, as in CHIPS.EXE) whose way
+// out in the same direction is free.
 function teleport(w, ent, dir) {
   const list = w.teleports;
+  const n = list.length;
   const from = cellIndex(ent.x, ent.y);
   const k = list.indexOf(from);
-  for (let step = 1; step <= list.length; step++) {
-    const to = list[(k + step) % list.length];
+  for (let step = 1; step <= n; step++) {
+    const to = list[(k - step + n) % n];
     const x = to % SIZE;
     const y = Math.floor(to / SIZE);
     if (to !== from && (mobAt(w, x, y) || chipAt(w, x, y))) continue;

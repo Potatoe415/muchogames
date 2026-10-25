@@ -24,6 +24,13 @@ export function setTerrain(w, x, y, t) {
   w.terrain[cellIndex(x, y)] = t;
 }
 
+// Removes the top terrain tile and uncovers what lies beneath.
+export function clearTerrain(w, x, y) {
+  const i = cellIndex(x, y);
+  w.terrain[i] = w.lower[i];
+  w.lower[i] = T.FLOOR;
+}
+
 export function mobAt(w, x, y) {
   return w.mobs.find((m) => m.x === x && m.y === y) || null;
 }
