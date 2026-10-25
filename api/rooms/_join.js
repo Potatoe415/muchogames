@@ -1,27 +1,28 @@
-// POST /api/yatsy/games/:code/join. Route of api/yatsy/games/index.js.
-import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
-import { getServiceClient } from "../../_lib/supabase.js";
+// POST /api/rooms/:game/:code/join. Route of api/rooms/index.js.
+import { readJsonBody, sendError, sendJson } from "../_lib/http.js";
+import { getServiceClient } from "../_lib/supabase.js";
 import {
   insertTick,
   isExpired,
   randomSeatToken,
+  roomRows,
   seatTokenColumn
-} from "../../_lib/yatzyGames.js";
+} from "../_lib/rooms.js";
 
-export async function handleJoin(req, res, code) {
+export async function handleJoin(req, res, room) {
   if (req.method !== "POST") {
     sendError(res, "method-not-allowed", "Use POST to join a game.");
     return;
   }
 
+  const { code } = room;
   const body = await readJsonBody(req);
   const supabase = getServiceClient();
+  const rows = roomRows(supabase, room);
 
-  const { data, error } = await supabase
-    .from("yatzy_games")
-    .select("created_at, status, version, creator_token, joiner_token")
-    .eq("code", code)
-    .maybeSingle();
+  const { data, error } = await rows.select(
+    "created_at, status, version, creator_token, joiner_token"
+  );
 
   if (error) {
     sendError(res, "server-error", error.message);
@@ -34,7 +35,7 @@ export async function handleJoin(req, res, code) {
   }
 
   if (isExpired(data.created_at)) {
-    await supabase.from("yatzy_games").delete().eq("code", code);
+    await rows.remove();
     sendError(res, "game-expired", "Game expired.");
     return;
   }
@@ -43,14 +44,11 @@ export async function handleJoin(req, res, code) {
 
   if (data.status === "waiting") {
     const joinerToken = randomSeatToken();
-    const { error: updateError } = await supabase
-      .from("yatzy_games")
-      .update({
-        status: "playing",
-        joiner_token: joinerToken,
-        version: nextVersion
-      })
-      .eq("code", code);
+    const { error: updateError } = await rows.update({
+      status: "playing",
+      joiner_token: joinerToken,
+      version: nextVersion
+    });
 
     if (updateError) {
       sendError(res, "server-error", updateError.message);

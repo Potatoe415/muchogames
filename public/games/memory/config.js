@@ -10,7 +10,10 @@ export const GRIDS = {
   "6x6": { cols: 6, rows: 6 }
 };
 
-export const MODES = ["solo", "pass", "bot"];
+export const ONLINE_SEAT_KEY = "muchogames_memory_online";
+export const NAME_MAX = 24;
+
+export const MODES = ["solo", "pass", "bot", "online"];
 export const LEVELS = ["easy", "medium", "hard"];
 export const GRID_IDS = ["4x4", "4x6", "6x6"];
 

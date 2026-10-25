@@ -1,12 +1,28 @@
 {
   "rewrites": [
     {
+      "source": "/api/rooms/:game/:code/:op(join|resume|state)",
+      "destination": "/api/rooms?game=:game&code=:code&op=:op"
+    },
+    {
+      "source": "/api/rooms/:game/:code",
+      "destination": "/api/rooms?game=:game&code=:code"
+    },
+    {
+      "source": "/api/rooms/:game",
+      "destination": "/api/rooms?game=:game"
+    },
+    {
       "source": "/api/yatsy/games/:code/:op(join|resume|state)",
-      "destination": "/api/yatsy/games?code=:code&op=:op"
+      "destination": "/api/rooms?game=yatsy&code=:code&op=:op"
     },
     {
       "source": "/api/yatsy/games/:code",
-      "destination": "/api/yatsy/games?code=:code"
+      "destination": "/api/rooms?game=yatsy&code=:code"
+    },
+    {
+      "source": "/api/yatsy/games",
+      "destination": "/api/rooms?game=yatsy"
     }
   ],
   "headers": [

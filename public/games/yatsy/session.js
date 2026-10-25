@@ -13,7 +13,7 @@ window.YATZY_SESSION = {
       state,
       t,
       render,
-      storage,
+      matchmaking: MATCHMAKING,
       storageKey,
       playerMeta,
       getCategories,
@@ -41,10 +41,8 @@ window.YATZY_SESSION = {
       setScoringAnimationInFlight
     } = deps;
 
-    const MATCHMAKING = window.YATZY_MATCHMAKING;
+    const ROOM = window.MuchogamesRoom;
     const CHARGED_MATCH_KEY = "yatzy-charged-match";
-    let remoteSyncPromise = Promise.resolve();
-    let pendingRemoteSyncCount = 0;
     let remoteApplyInFlight = false;
   function handleSplashBack(event) {
     event.preventDefault();
@@ -85,27 +83,17 @@ window.YATZY_SESSION = {
       return;
     }
 
-    const shareUrl = buildGameShareUrl(state.session.gameCode);
-
     try {
-      if (navigator.share) {
-        await navigator.share({
-          title: t("splash.title"),
-          text: t("splash.shareText"),
-          url: shareUrl
-        });
-      } else if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(shareUrl);
+      const outcome = await ROOM.share({
+        title: t("splash.title"),
+        text: t("splash.shareText"),
+        url: ROOM.shareUrl(state.session.gameCode)
+      });
+      if (outcome === "copied") {
         state.session.splashStatus = t("splash.shareSuccess");
         render();
-      } else {
-        window.prompt("Copy this link", shareUrl);
       }
-    } catch (error) {
-      if (error?.name === "AbortError") {
-        return;
-      }
-
+    } catch {
       state.session.splashError = t("splash.shareError");
       render();
     }
@@ -180,7 +168,7 @@ window.YATZY_SESSION = {
       const joinedGame = await MATCHMAKING.joinGame(
         code,
         createMatchmakingCallbacks(),
-        readSeatCredentialsFor(code)
+        ROOM.seatFor(storageKey, code)
       );
       state.session.gameCode = joinedGame.code;
       state.session.role = joinedGame.role || "joiner";
@@ -208,10 +196,9 @@ window.YATZY_SESSION = {
       return;
     }
 
-    const params = new URLSearchParams(window.location.search);
-    const linkedCode = MATCHMAKING?.normalizeCode(params.get("game") || "");
+    const linkedCode = MATCHMAKING ? ROOM.linkedCode() : "";
 
-    if (!linkedCode || linkedCode.length !== 3) {
+    if (!linkedCode) {
       return;
     }
 
@@ -317,17 +304,9 @@ window.YATZY_SESSION = {
     }
   }
 
-  // Each seat pays once per room, when the match starts (both seats filled).
-  // Every online rematch opens a new room, so a code seen again here is a
-  // reload/resume of the same match: no second coin. Out of coins, this
-  // player leaves, which closes the room for the other one.
+  // Out of coins, this player leaves, which closes the room for the other one.
   async function chargeOnlineMatchOnce(code) {
-    if (storage.readJSON(CHARGED_MATCH_KEY) === code) {
-      window.MuchogamesMatch.resume("yatsy");
-      return;
-    }
-    if (await window.MuchogamesMatch.start("yatsy")) {
-      storage.writeJSON(CHARGED_MATCH_KEY, code);
+    if (await ROOM.chargeOnce("yatsy", code, CHARGED_MATCH_KEY)) {
       return;
     }
     await leaveCurrentGame();
@@ -373,7 +352,7 @@ window.YATZY_SESSION = {
       // collide with the local player's own in-progress scoring animation.
       // Dropping it here is safe — the tick broadcast after every write plus
       // the poll timer guarantee a follow-up refetch once this one finishes.
-      if (pendingRemoteSyncCount > 0 || remoteApplyInFlight || isScoringAnimationInFlight()) {
+      if (MATCHMAKING.pendingWrites() > 0 || remoteApplyInFlight || isScoringAnimationInFlight()) {
         return;
       }
 
@@ -503,59 +482,23 @@ window.YATZY_SESSION = {
       return;
     }
 
-    storage.writeJSON(storageKey, {
-      gameCode: state.session.gameCode,
-      role: state.session.role,
-      resumeToken: state.session.resumeToken,
-      localPlayerIndex: state.session.localPlayerIndex
-    });
-  }
-
-  function buildGameShareUrl(gameCode) {
-    const url = new URL(window.location.href);
-    url.searchParams.set("game", gameCode);
-    return url.toString();
+    ROOM.writeSeat(storageKey, state.session);
   }
 
   function updateUrlForGameCode(gameCode) {
-    const url = new URL(window.location.href);
-    url.searchParams.set("game", gameCode);
-    window.history.replaceState({}, "", url);
+    ROOM.setLinkedCode(gameCode);
   }
 
   function clearDeepLinkFromUrl() {
-    const url = new URL(window.location.href);
-    if (!url.searchParams.has("game")) {
-      return;
-    }
-
-    url.searchParams.delete("game");
-    window.history.replaceState({}, "", url);
+    ROOM.clearLinkedCode();
   }
 
   function readPersistedOnlineSession() {
-    const parsed = storage.readJSON(storageKey);
-    if (!parsed?.gameCode || !parsed?.role || !parsed?.resumeToken || !Number.isInteger(parsed?.localPlayerIndex)) {
-      return null;
-    }
-
-    return parsed;
+    return ROOM.readSeat(storageKey);
   }
 
   function clearPersistedOnlineSession() {
-    storage.remove(storageKey);
-  }
-
-  // A room that is already playing has both seats taken, so joining it by code
-  // only works for a player reclaiming the seat they already hold.
-  function readSeatCredentialsFor(code) {
-    const persisted = readPersistedOnlineSession();
-
-    if (!persisted || persisted.gameCode !== code) {
-      return null;
-    }
-
-    return { role: persisted.role, resumeToken: persisted.resumeToken };
+    ROOM.clearSeat(storageKey);
   }
 
   function hydrateFromRemoteGameState(targetState, remoteState) {
@@ -644,29 +587,10 @@ window.YATZY_SESSION = {
 
   function syncOnlineGameState() {
     if (!isOnlineGame() || !MATCHMAKING) {
-      return remoteSyncPromise;
+      return Promise.resolve();
     }
 
-    const gameCode = state.session.gameCode;
-    pendingRemoteSyncCount += 1;
-
-    // Chain onto the previous send instead of firing in parallel: quick,
-    // repeated die clicks must reach the server in the order they happened,
-    // otherwise an earlier request finishing last could overwrite a later one.
-    // serializeGameState() is read lazily inside the .then, so it always picks
-    // up the freshest local state at send time, not at click time.
-    remoteSyncPromise = remoteSyncPromise
-      .catch(() => {})
-      .then(() => MATCHMAKING.updateGameState(gameCode, serializeGameState()))
-      .catch(() => {
-        // The listener remains authoritative. If one sync fails, the next local
-        // state change will attempt to publish again.
-      })
-      .finally(() => {
-        pendingRemoteSyncCount -= 1;
-      });
-
-    return remoteSyncPromise;
+    return MATCHMAKING.publish(state.session.gameCode, serializeGameState);
   }
     return {
       handlePlayOnline,

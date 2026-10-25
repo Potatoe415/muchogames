@@ -35,6 +35,12 @@ function mountModes(setup) {
       key: "bot",
       label: "Robot",
       on: setup.mode === "bot"
+    }),
+    chip({
+      id: "memory-mode-online",
+      key: "online",
+      label: "En ligne",
+      on: setup.mode === "online"
     })
   ]);
 }

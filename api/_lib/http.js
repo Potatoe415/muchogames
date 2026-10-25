@@ -1,5 +1,6 @@
 const ERROR_STATUS = {
   "invalid-code": 400,
+  "invalid-game": 400,
   "missing-code": 400,
   "game-not-found": 404,
   "game-expired": 410,

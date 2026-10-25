@@ -6,7 +6,7 @@ This describes the repo's actual current conventions (evidence-based); gaps vs. 
 ## Error contract (current, as-is)
 
 - Serverless (`api/`): every handler is wrapped in `api/_lib/http.js`'s `withErrorHandling`. 4xx errors are returned with their written message as-is (meant for the user, e.g. `"room_full"`, `"not_enough_players"`). 5xx detail (usually a raw Postgres message) is logged server-side and replaced by one generic sentence for the response — no stable `E_<SCOPE>_<NNN>` code system exists yet, and there is no `trace_id` propagation.
-- Client-side code (games under `public/games/`) follows per-module style; e.g. `matchmaking.js` throws tagged `Error` objects with a `.code` string, but this is not a repo-wide convention.
+- Client-side code (games under `public/games/`) follows per-module style; e.g. `public/shared/js/online-room.js` throws tagged `Error` objects with a `.code` string, but this is not a repo-wide convention.
 - No error catalog file exists yet (gap — see below).
 
 ## Logging (current, as-is)

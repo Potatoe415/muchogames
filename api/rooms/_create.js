@@ -1,15 +1,16 @@
-// POST /api/yatsy/games — create a room. Route of api/yatsy/games/index.js.
-import { sendError, sendJson } from "../../_lib/http.js";
-import { getServiceClient } from "../../_lib/supabase.js";
+// POST /api/rooms/:game — create a room. Route of api/rooms/index.js.
+import { sendError, sendJson } from "../_lib/http.js";
+import { getServiceClient } from "../_lib/supabase.js";
 import {
   MAX_CODE_ATTEMPTS,
+  ROOMS_TABLE,
   insertTick,
   isExpired,
   randomCode,
   randomSeatToken
-} from "../../_lib/yatzyGames.js";
+} from "../_lib/rooms.js";
 
-export async function handleCreate(req, res) {
+export async function handleCreate(req, res, game) {
   if (req.method !== "POST") {
     sendError(res, "method-not-allowed", "Use POST to create a game.");
     return;
@@ -19,8 +20,9 @@ export async function handleCreate(req, res) {
 
   for (let attempt = 0; attempt < MAX_CODE_ATTEMPTS; attempt += 1) {
     const code = randomCode();
+    // Codes are unique across games: the table key is the code alone.
     const { data: existing, error: readError } = await supabase
-      .from("yatzy_games")
+      .from(ROOMS_TABLE)
       .select("created_at")
       .eq("code", code)
       .maybeSingle();
@@ -35,12 +37,13 @@ export async function handleCreate(req, res) {
         continue;
       }
 
-      await supabase.from("yatzy_games").delete().eq("code", code);
+      await supabase.from(ROOMS_TABLE).delete().eq("code", code);
     }
 
     const creatorToken = randomSeatToken();
-    const { error: insertError } = await supabase.from("yatzy_games").insert({
+    const { error: insertError } = await supabase.from(ROOMS_TABLE).insert({
       code,
+      game_id: game,
       status: "waiting",
       game_state: null,
       creator_token: creatorToken,

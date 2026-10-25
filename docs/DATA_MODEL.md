@@ -6,7 +6,7 @@ Status: Living document. Update whenever persisted data structure changes.
 
 ## Source of Truth
 
-Technical_Source: Static JSON files in the repo (`public/hub-config.json`, `public/data/<gameId>/*.json`) + Supabase Postgres for Yatzy room state (`supabase/migrations/0001_yatzy.sql`, tables `yatzy_games`/`yatzy_game_events`), hub launch counts (`supabase/migrations/0002_events.sql`, table `muchogames_events`), and the shared signed-in profile (`supabase/migrations/0003_profiles.sql`, tables `muchogames_profiles` / `muchogames_launch_codes`).
+Technical_Source: Static JSON files in the repo (`public/hub-config.json`, `public/data/<gameId>/*.json`) + Supabase Postgres for online room state, Yatzy and Memory (`supabase/migrations/0001_yatzy.sql` + `0009_rooms_game_id.sql`, tables `yatzy_games`/`yatzy_game_events`), hub launch counts (`supabase/migrations/0002_events.sql`, table `muchogames_events`), and the shared signed-in profile (`supabase/migrations/0003_profiles.sql`, tables `muchogames_profiles` / `muchogames_launch_codes`).
 
 Rule:
 - If technical schema files exist, they are the executable source of truth.
@@ -89,18 +89,19 @@ Sensitive_Data:
 
 ---
 
-### Entity: YatzyGameRecord
+### Entity: YatzyGameRecord (online room, Yatzy and Memory)
 
-Purpose: Ephemeral multiplayer room state for Yatzy, keyed by a 3-letter room code.
-Storage: Supabase Postgres, table `yatzy_games` (see `supabase/migrations/0001_yatzy.sql` and `api/yatsy/games/`), plus `yatzy_game_events` (a tiny realtime "tick" table carrying only `game_code`/`version`, no game data).
+Purpose: Ephemeral two-seat online room, keyed by a 3-letter room code. Used by Yatzy and Memory (decision 0051); the table keeps its `yatzy_` name.
+Storage: Supabase Postgres, table `yatzy_games` (see `supabase/migrations/0001_yatzy.sql`, `0009_rooms_game_id.sql` and `api/rooms/`), plus `yatzy_game_events` (a tiny realtime "tick" table carrying only `game_code`/`version`, no game data).
 
 Fields:
 | Field | Type | Required | Notes |
 |---|---|---|---|
-| code | text (PK) | Yes | 3 uppercase letters, generated server-side, retried on collision |
+| code | text (PK) | Yes | 3 uppercase letters, generated server-side, retried on collision. Unique across games |
+| game_id | text | Yes | Owning game (`yatsy` \| `memory`, allowlist `ROOM_GAMES` in `api/_lib/rooms.js`), default `yatsy`. Every read/update/delete filters on it |
 | created_at | timestamptz | Yes | Used for TTL/expiry checks |
 | status | text | Yes | `waiting` \| `playing` |
-| game_state | jsonb \| null | Yes | Opaque Yatzy game state (dice, scores, turn) written by `PUT /api/yatsy/games/{code}/state` |
+| game_state | jsonb \| null | Yes | Opaque per-game state written by `PUT /api/rooms/{game}/{code}/state`. Yatzy: dice, scores, turn. Memory: `{ v: 1, grid, theme, back, cards[{instanceId, pairId, faceId, status}], scores, active, names }` (`public/games/memory/wire.js`, validated by the receiving client) |
 | creator_token | text \| null | Yes | Resume token for the creator seat |
 | joiner_token | text \| null | Yes | Resume token for the joiner seat |
 | version | bigint | Yes | Optimistic-concurrency / realtime-tick counter, bumped on every write |
@@ -110,12 +111,12 @@ Relationships:
 - `yatzy_game_events.game_code` references `yatzy_games.code` (cascade delete).
 
 Constraints:
-- Room code: 3 uppercase letters (`A-Z`), generated inside `api/yatsy/games/index.js`, retried on collision.
+- Room code: 3 uppercase letters (`A-Z`), generated inside `api/rooms/_create.js`, retried on collision with any game's live room.
 - Considered expired after `GAME_TTL_MS` (3h) since `created_at`; checked and lazily deleted by the API on read/join/resume.
 - Hard-purged after 48h by an hourly `pg_cron` job (see the migration file), independent of the app-level check.
 
 Access_Rules:
-- No authentication. The browser never reads/writes `yatzy_games` directly — Row Level Security has zero policies on it, so only the service-role key (used exclusively inside `api/yatsy/games/*` serverless functions) can access it. Client-facing access control is by knowledge of the room code plus the per-seat resume token, enforced by those functions (capability-based, not identity-based).
+- No authentication. The browser never reads/writes `yatzy_games` directly — Row Level Security has zero policies on it, so only the service-role key (used exclusively inside `api/rooms/*` serverless functions) can access it. A code is only visible to the game that created it. Client-facing access control is by knowledge of the room code plus the per-seat resume token, enforced by those functions (capability-based, not identity-based).
 - `yatzy_game_events` allows public `select` (any client) since it carries no game data, only enough to trigger a client refetch via the API.
 
 Sensitive_Data:
@@ -165,7 +166,7 @@ Sensitive_Data:
 ## Access Model
 
 Roles: None (anonymous) for players. Yatzy uses ad-hoc `creator` / `joiner` seat roles scoped to a single room code. An `admin` role exists for Google-signed-in Supabase Auth users whose id is listed in the `ADMIN_USER_IDS` env var (since 2026-10-02, replacing the shared `ADMIN_PASSWORD`). No admin table: the allowlist is configuration. The admin session is the 1h Supabase access token from the Google exchange, verified with `auth.getUser` on every admin request.
-Rules: All static JSON is public and read-only. Yatzy room reads/writes go exclusively through `api/yatsy/games/*` (Vercel serverless functions using the Supabase service-role key); those functions validate the room code + per-seat resume token before returning or mutating state. Direct client access to `yatzy_games` is blocked outright by Row Level Security (no policies), regardless of what the client knows. The same RLS pattern protects `muchogames_events`: writes only inside `start_muchogames_match` (via the public `api/match.js` or the coinchapp/Tranquil servers), reads via `api/admin/index.js` behind an allowlisted Google sign-in.
+Rules: All static JSON is public and read-only. Online room reads/writes (Yatzy, Memory) go exclusively through `api/rooms/*` (Vercel serverless functions using the Supabase service-role key); those functions validate the room code + per-seat resume token before returning or mutating state. Direct client access to `yatzy_games` is blocked outright by Row Level Security (no policies), regardless of what the client knows. The same RLS pattern protects `muchogames_events`: writes only inside `start_muchogames_match` (via the public `api/match.js` or the coinchapp/Tranquil servers), reads via `api/admin/index.js` behind an allowlisted Google sign-in.
 
 ---
 
@@ -311,3 +312,9 @@ Impact: Until 0008 runs, `/api/match` answers 500 and games let the match start 
 Change: Deleted `api/track.js` and `shared/js/analytics.js`; the hub no longer writes `game_launch` rows nor the browser key `bergamots-launch-counts`. Existing rows and keys are left in place (harmless, unread).
 Reason: Owner approval; nothing read them since `/admin` and `/profile` count matches started (decision 0047).
 Impact: Functions: 7 of 12. Old `game_launch` history stays in `muchogames_events` and can be deleted later if wanted.
+
+## 2026-10-25 - Online rooms shared by Yatzy and Memory (`game_id`)
+
+Change: `supabase/migrations/0009_rooms_game_id.sql` adds `yatzy_games.game_id` (default `yatsy`). The room API moved from `api/yatsy/games/*` to `api/rooms/*` (`/api/rooms/{game}/{code}/…`); the old `/api/yatsy/games/*` URLs are rewritten to it with `game=yatsy`. GET and resume responses now carry `version`. New browser keys: `muchogames_memory_online` (Memory seat), `muchogames-charged-room-memory` (last room code paid).
+Reason: Owner request: Memory online on the Yatzy room system without duplicating it (decision 0051).
+Impact: 0009 must run before the deploy, otherwise every room route answers 500. Existing rooms read `yatsy`. Functions: still 7 of 12.

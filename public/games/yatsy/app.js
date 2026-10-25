@@ -6,7 +6,7 @@ const I18N = window.YATZY_I18N || {
     ));
   }
 };
-const MATCHMAKING = window.YATZY_MATCHMAKING;
+const MATCHMAKING = window.MuchogamesRoom?.create("yatsy");
 const SCORING = window.YATZY_SCORING || {
   calculateCategoryScore() { return 0; },
   calculateUpperSection() { return 0; },
@@ -272,7 +272,7 @@ const session = window.YATZY_SESSION.createSessionController({
   state,
   t,
   render,
-  storage: STORAGE,
+  matchmaking: MATCHMAKING,
   storageKey: STORAGE_KEY,
   playerMeta: PLAYER_META,
   getCategories: () => CATEGORIES,

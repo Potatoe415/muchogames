@@ -78,7 +78,15 @@ function pairsOk(cards) {
   return true;
 }
 
-function readScores(scores) {
+export function readCards(rawCards, theme) {
+  const seen = new Set();
+  const faces = new Set(faceIds(theme));
+  const cards = rawCards.map((card) => readCard(card, seen, faces));
+  if (cards.some((card) => !card) || !pairsOk(cards)) return null;
+  return cards;
+}
+
+export function readScores(scores) {
   if (!Array.isArray(scores) || scores.length !== 2) return null;
   if (!scores.every((n) => Number.isInteger(n) && n >= 0)) return null;
   return scores.slice();
@@ -104,7 +112,9 @@ function restingPhase(config, active) {
 
 function configOk(raw, spec) {
   if (raw?.v !== 2 || !spec) return false;
-  if (!MODES.includes(raw.config.mode)) return false;
+  if (!MODES.includes(raw.config.mode) || raw.config.mode === "online") {
+    return false;
+  }
   if (!LEVELS.includes(raw.config.difficulty)) return false;
   if (!GRID_IDS.includes(raw.config.grid)) return false;
   if (!THEME_IDS.includes(raw.config.theme)) return false;
@@ -132,10 +142,8 @@ function readConfig(config, spec) {
 function normalize(raw) {
   const spec = GRIDS[raw?.config?.grid];
   if (!configOk(raw, spec)) return null;
-  const seen = new Set();
-  const faces = new Set(faceIds(raw.config.theme));
-  const cards = raw.cards.map((card) => readCard(card, seen, faces));
-  if (cards.some((card) => !card) || !pairsOk(cards)) return null;
+  const cards = readCards(raw.cards, raw.config.theme);
+  if (!cards) return null;
   const scores = readScores(raw.scores);
   const known = readKnown(raw.known, cards);
   if (!scores || !known || (raw.active !== 0 && raw.active !== 1)) return null;

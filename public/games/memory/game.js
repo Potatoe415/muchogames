@@ -3,6 +3,7 @@ import { BOT_FIRST_MS, BOT_SECOND_MS, MISMATCH_MS } from "./config.js";
 import { clearSave, writeSave } from "./persist.js";
 import { createState, reduce } from "./reducer.js";
 import { playFlip, playMatch, playMismatch, playWin, stop } from "./sound.js";
+import { sameBoard } from "./wire.js";
 
 function arm(box, ms, fn) {
   const id = setTimeout(() => {
@@ -13,6 +14,7 @@ function arm(box, ms, fn) {
 }
 
 function checkpoint(box) {
+  if (box.online) return;
   if (box.state.phase === "GAME_OVER") clearSave();
   else writeSave(box.state);
 }
@@ -28,6 +30,18 @@ function botSecond(box) {
   if (box.state.phase !== "BOT" || !box.plan) return;
   const instanceId = pickSecond(box.state, box.plan.first, box.plan);
   commit(box, { type: "FLIP", instanceId, bot: true });
+}
+
+// Online, only the player whose miss it is closes the cards, so the two
+// devices never both write the same CLOSE.
+function closeLater(box) {
+  if (box.state.phase !== "EVALUATING" || box.closing) return;
+  if (box.online && box.state.active !== box.online.seat) return;
+  box.closing = true;
+  arm(box, MISMATCH_MS, () => {
+    box.closing = false;
+    commit(box, { type: "CLOSE" });
+  });
 }
 
 function afterClose(box) {
@@ -55,7 +69,7 @@ function follow(box, action) {
   playFlip();
   if (box.state.phase === "EVALUATING") {
     playMismatch();
-    arm(box, MISMATCH_MS, () => commit(box, { type: "CLOSE" }));
+    closeLater(box);
     return;
   }
   if (box.state.openIds.length === 1) return oneOpen(box, action);
@@ -66,27 +80,56 @@ function commit(box, action) {
   const next = reduce(box.state, action);
   if (next === box.state) return;
   box.state = next;
+  // Published before onUpdate: a final move must be queued before the end of
+  // the match leaves the room.
+  box.online?.publish(next);
   box.onUpdate(box.state);
   follow(box, action);
+}
+
+function count(state, status) {
+  return state.cards.filter((card) => card.status === status).length;
+}
+
+function echo(before, after) {
+  const found = count(after, "MATCHED") > count(before, "MATCHED");
+  if (found || count(after, "FLIPPED") > count(before, "FLIPPED")) playFlip();
+  if (found) playMatch();
+  if (after.phase === "EVALUATING" && before.phase !== "EVALUATING") {
+    playMismatch();
+  }
+  if (after.phase === "GAME_OVER" && before.phase !== "GAME_OVER") playWin();
 }
 
 function laterBot(box) {
   if (box.state.phase === "BOT") arm(box, BOT_FIRST_MS, () => botFirst(box));
 }
 
-export function createMatch({ config, cards, saved, onUpdate }) {
+export function createMatch({ config, cards, saved, onUpdate, online }) {
   const box = {
     alive: true,
+    closing: false,
     plan: null,
     state: saved ?? createState(config, cards),
     timers: new Set(),
-    onUpdate
+    onUpdate,
+    online: online ?? null
   };
   onUpdate(box.state);
   laterBot(box);
+  closeLater(box);
   return {
     flip(instanceId) {
-      commit(box, { type: "FLIP", instanceId, bot: false });
+      const seat = box.online?.seat;
+      commit(box, { type: "FLIP", instanceId, bot: false, seat });
+    },
+    apply(next) {
+      if (!box.alive || sameBoard(box.state, next)) return;
+      const before = box.state;
+      box.state = next;
+      box.onUpdate(box.state);
+      echo(before, next);
+      closeLater(box);
     },
     destroy() {
       box.alive = false;

@@ -1,15 +1,15 @@
-import { sendError, withErrorHandling } from "../../_lib/http.js";
-import { CODE_LENGTH, normalizeCode } from "../../_lib/yatzyGames.js";
+import { sendError, withErrorHandling } from "../_lib/http.js";
+import { CODE_LENGTH, normalizeCode, readGame } from "../_lib/rooms.js";
 import { handleCreate } from "./_create.js";
 import { handleJoin } from "./_join.js";
 import { handleResume } from "./_resume.js";
 import { handleRoom } from "./_room.js";
 import { handleState } from "./_state.js";
 
-// Every Yatzy room route in one Serverless Function (Vercel Hobby caps a
-// deployment at 12). vercel.json rewrites /api/yatsy/games/:code and
-// /api/yatsy/games/:code/:op here as ?code=…&op=…, so the URLs used by
-// public/games/yatsy/matchmaking.js are unchanged.
+// Every online room route of every game in one Serverless Function (Vercel
+// Hobby caps a deployment at 12). vercel.json rewrites /api/rooms/:game,
+// /api/rooms/:game/:code and /api/rooms/:game/:code/:op here as
+// ?game=…&code=…&op=…, and the legacy /api/yatsy/games/* URLs as game=yatsy.
 const ROOM_OPERATIONS = {
   join: handleJoin,
   resume: handleResume,
@@ -17,8 +17,15 @@ const ROOM_OPERATIONS = {
 };
 
 async function handler(req, res) {
+  const game = readGame(req.query.game);
+
+  if (!game) {
+    sendError(res, "invalid-game", "Unknown game.");
+    return;
+  }
+
   if (req.query.code === undefined) {
-    await handleCreate(req, res);
+    await handleCreate(req, res, game);
     return;
   }
 
@@ -29,8 +36,10 @@ async function handler(req, res) {
     return;
   }
 
+  const room = { game, code };
+
   if (!req.query.op) {
-    await handleRoom(req, res, code);
+    await handleRoom(req, res, room);
     return;
   }
 
@@ -41,7 +50,7 @@ async function handler(req, res) {
     return;
   }
 
-  await operation(req, res, code);
+  await operation(req, res, room);
 }
 
 export default withErrorHandling(handler);

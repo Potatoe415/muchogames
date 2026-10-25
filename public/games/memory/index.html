@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="play.css" />
+    <link rel="stylesheet" href="online.css" />
   </head>
   <body>
     <header class="game-nav">
@@ -212,6 +213,63 @@
           >
             Jouer
           </button>
+          <div class="memory-choice" data-id="memory-online" hidden>
+            <p class="memory-label" data-i18n="joinLabel"></p>
+            <div class="memory-join">
+              <input
+                class="memory-code-input"
+                data-id="memory-join-input"
+                type="text"
+                inputmode="text"
+                autocomplete="off"
+                autocapitalize="characters"
+                spellcheck="false"
+                maxlength="3"
+                aria-label="Code"
+                data-i18n-aria="roomCode"
+              />
+              <button
+                type="button"
+                class="memory-text memory-text-ghost"
+                data-id="memory-join-button"
+                data-i18n="join"
+              >
+                Rejoindre
+              </button>
+            </div>
+          </div>
+          <p
+            class="memory-error"
+            data-id="memory-online-error"
+            role="alert"
+            hidden
+          ></p>
+        </div>
+      </section>
+
+      <section class="memory-wait" data-id="memory-wait" hidden>
+        <div class="memory-panel memory-wait-card">
+          <p class="memory-label" data-i18n="roomCode"></p>
+          <p class="memory-code" data-id="memory-wait-code"></p>
+          <p data-id="memory-wait-status" aria-live="polite"></p>
+          <button
+            type="button"
+            class="memory-start"
+            data-id="memory-share-button"
+            data-i18n="share"
+            hidden
+          >
+            Partager le lien
+          </button>
+          <p class="memory-note" data-id="memory-wait-note" hidden></p>
+          <button
+            type="button"
+            class="memory-text memory-text-ghost"
+            data-id="memory-cancel-button"
+            data-i18n="cancel"
+          >
+            Annuler
+          </button>
         </div>
       </section>
 
@@ -305,6 +363,8 @@
 
     <script src="/shared/js/game-header.js"></script>
     <script src="/shared/js/game-session.js"></script>
+    <script src="/shared/js/player-profile.js"></script>
+    <script src="/shared/js/online-room.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>

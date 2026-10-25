@@ -1,14 +1,12 @@
-// GET / DELETE /api/yatsy/games/:code. Route of api/yatsy/games/index.js.
-import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
-import { getServiceClient } from "../../_lib/supabase.js";
-import { isExpired, seatTokenColumn } from "../../_lib/yatzyGames.js";
+// GET / DELETE /api/rooms/:game/:code. Route of api/rooms/index.js.
+import { readJsonBody, sendError, sendJson } from "../_lib/http.js";
+import { getServiceClient } from "../_lib/supabase.js";
+import { isExpired, roomRows, seatTokenColumn } from "../_lib/rooms.js";
 
-async function handleGet(res, supabase, code) {
-  const { data, error } = await supabase
-    .from("yatzy_games")
-    .select("created_at, status, game_state")
-    .eq("code", code)
-    .maybeSingle();
+async function handleGet(res, rows, room) {
+  const { data, error } = await rows.select(
+    "created_at, status, version, game_state"
+  );
 
   if (error) {
     sendError(res, "server-error", error.message);
@@ -21,27 +19,25 @@ async function handleGet(res, supabase, code) {
   }
 
   if (isExpired(data.created_at)) {
-    await supabase.from("yatzy_games").delete().eq("code", code);
+    await rows.remove();
     sendError(res, "game-expired", "Game expired.");
     return;
   }
 
   sendJson(res, 200, {
-    code,
+    code: room.code,
     createdAt: new Date(data.created_at).getTime(),
     status: data.status,
+    version: data.version,
     gameState: data.game_state || null
   });
 }
 
-async function handleDelete(req, res, supabase, code) {
+async function handleDelete(req, res, rows, room) {
   const body = await readJsonBody(req);
-
-  const { data, error } = await supabase
-    .from("yatzy_games")
-    .select("status, creator_token, joiner_token")
-    .eq("code", code)
-    .maybeSingle();
+  const { data, error } = await rows.select(
+    "status, creator_token, joiner_token"
+  );
 
   if (error) {
     sendError(res, "server-error", error.message);
@@ -49,7 +45,7 @@ async function handleDelete(req, res, supabase, code) {
   }
 
   if (!data) {
-    sendJson(res, 200, { code, removed: false });
+    sendJson(res, 200, { code: room.code, removed: false });
     return;
   }
 
@@ -64,24 +60,24 @@ async function handleDelete(req, res, supabase, code) {
   }
 
   if (body.deleteCurrent || data.status === "waiting") {
-    await supabase.from("yatzy_games").delete().eq("code", code);
-    sendJson(res, 200, { code, removed: true });
+    await rows.remove();
+    sendJson(res, 200, { code: room.code, removed: true });
     return;
   }
 
-  sendJson(res, 200, { code, removed: false });
+  sendJson(res, 200, { code: room.code, removed: false });
 }
 
-export async function handleRoom(req, res, code) {
-  const supabase = getServiceClient();
+export async function handleRoom(req, res, room) {
+  const rows = roomRows(getServiceClient(), room);
 
   if (req.method === "GET") {
-    await handleGet(res, supabase, code);
+    await handleGet(res, rows, room);
     return;
   }
 
   if (req.method === "DELETE") {
-    await handleDelete(req, res, supabase, code);
+    await handleDelete(req, res, rows, room);
     return;
   }
 

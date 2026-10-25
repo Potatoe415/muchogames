@@ -36,11 +36,36 @@ export function paintSetup(page) {
   GRID_IDS.forEach((grid) =>
     mark(`memory-grid-${grid}`, page.setup.grid === grid)
   );
+  const online = page.setup.mode === "online";
   $("memory-difficulty").hidden = page.setup.mode !== "bot";
+  $("memory-online").hidden = !online;
   const start = $("memory-start-button");
   start.disabled = page.starting;
-  start.textContent = text(page, page.starting ? "loading" : "start");
+  start.textContent = text(
+    page,
+    page.starting ? "loading" : online ? "create" : "start"
+  );
   $("memory-app").dataset.loading = page.starting ? "true" : "false";
+  const error = $("memory-online-error");
+  error.hidden = !page.online.error;
+  error.textContent = page.online.error ? text(page, page.online.error) : "";
+}
+
+export function paintWait(page) {
+  const { status, code, note } = page.online;
+  $("memory-wait-code").textContent = code || "···";
+  $("memory-wait-status").textContent = text(
+    page,
+    status === "waiting" ? "waiting" : "connecting"
+  );
+  $("memory-share-button").hidden = status !== "waiting";
+  $("memory-wait-note").hidden = !note;
+  $("memory-wait-note").textContent = note ? text(page, note) : "";
+}
+
+// Online, the local player sits at the bottom in blue whichever seat they hold.
+function mySeat(page, state) {
+  return state.config.mode === "online" ? (page.seat ?? 0) : 0;
 }
 
 function names(page, state) {
@@ -50,11 +75,20 @@ function names(page, state) {
   if (state.config.mode === "bot") {
     return { top: text(page, "robot"), bottom: text(page, "you") };
   }
+  if (state.config.mode === "online") {
+    const me = mySeat(page, state);
+    return {
+      top: page.names[1 - me] || text(page, "opponent"),
+      bottom: page.names[me] || text(page, "you")
+    };
+  }
   return { top: text(page, "player2"), bottom: text(page, "player1") };
 }
 
 function topScore(page, state) {
-  if (state.config.mode !== "solo") return String(state.scores[1]);
+  if (state.config.mode !== "solo") {
+    return String(state.scores[1 - mySeat(page, state)]);
+  }
   const left = state.cards.length / 2 - state.scores[0];
   return text(page, "left", { n: left });
 }
@@ -69,42 +103,47 @@ export function paintMute(page) {
 function paintBars(page, state) {
   const label = names(page, state);
   const live = state.phase !== "GAME_OVER";
+  const me = mySeat(page, state);
+  const mine = state.active === me;
   $("memory-p1-name").textContent = label.bottom;
   $("memory-p2-name").textContent = label.top;
-  $("memory-p1-score").textContent = String(state.scores[0]);
+  $("memory-p1-score").textContent = String(state.scores[me]);
   $("memory-p2-score").textContent = topScore(page, state);
-  $("memory-player-one").dataset.active =
-    live && state.active === 0 ? "true" : "false";
-  $("memory-player-two").dataset.active =
-    live && state.active === 1 ? "true" : "false";
-  $("memory-play").dataset.active = live ? String(state.active) : "";
+  $("memory-player-one").dataset.active = live && mine ? "true" : "false";
+  $("memory-player-two").dataset.active = live && !mine ? "true" : "false";
+  $("memory-play").dataset.active = live ? (mine ? "0" : "1") : "";
 }
 
 function endTitle(page, state) {
   if (state.config.mode === "solo") return text(page, "soloWin");
   if (state.winner === "tie") return text(page, "tie");
-  if (state.config.mode === "bot") {
-    return text(page, state.winner === 0 ? "win" : "lose");
+  if (state.config.mode === "pass") {
+    return text(page, state.winner === 0 ? "p1wins" : "p2wins");
   }
-  return text(page, state.winner === 0 ? "p1wins" : "p2wins");
+  return text(page, state.winner === mySeat(page, state) ? "win" : "lose");
 }
 
 function paintEnd(page) {
   if (!page.ended || !page.state) return;
+  const { scores } = page.state;
+  const me = mySeat(page, page.state);
   $("memory-end-title").textContent = endTitle(page, page.state);
   $("memory-end-line").textContent =
     page.state.config.mode === "solo"
-      ? text(page, "pairs", { n: page.state.scores[0] })
-      : `${page.state.scores[0]} – ${page.state.scores[1]}`;
+      ? text(page, "pairs", { n: scores[0] })
+      : `${scores[me]} – ${scores[1 - me]}`;
   $("memory-end").hidden = false;
 }
 
 export function paintPlay(page) {
   if (!page.state) return;
-  paintBars(page, page.state);
-  paintBoard($("memory-board"), page.state, {
+  const state = page.state;
+  paintBars(page, state);
+  paintBoard($("memory-board"), state, {
     hidden: text(page, "hiddenCard"),
-    face: (faceId) => text(page, "card", { n: Number(faceId) })
+    face: (faceId) => text(page, "card", { n: Number(faceId) }),
+    theirs:
+      state.config.mode === "online" && state.active !== mySeat(page, state)
   });
   paintMute(page);
   paintEnd(page);
@@ -123,17 +162,21 @@ export function applyLanguage(page) {
     button.classList.toggle("is-selected", button.dataset.lang === page.lang);
   });
   $("memory-rules").innerHTML = rulesHtml(page.lang);
+  $("memory-join-input").placeholder = text(page, "codePlaceholder");
   paintSetup(page);
+  paintWait(page);
   paintPlay(page);
 }
 
-export function reportEnd(state) {
-  const score = state.scores[0];
+export function reportEnd(page) {
+  const state = page.state;
+  const me = mySeat(page, state);
+  const score = state.scores[me];
   if (state.config.mode === "pass") {
     window.MuchogamesMatch.finish();
     return;
   }
-  if (state.config.mode === "solo" || state.winner === 0) {
+  if (state.config.mode === "solo" || state.winner === me) {
     window.MuchogamesMatch.finish({ won: true, score });
     return;
   }

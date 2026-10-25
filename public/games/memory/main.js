@@ -3,7 +3,8 @@ import { GRID_IDS, LEVELS, MODES } from "./config.js";
 import { buildDeck } from "./deck.js";
 import { BACKS, THEME_IDS, deckUrls } from "./faces.js";
 import { createMatch } from "./game.js";
-import { LANGS } from "./i18n.js";
+import { LANGS, translate } from "./i18n.js";
+import { createOnline, idleOnline } from "./online.js";
 import { clearSave, loadSave } from "./persist.js";
 import { mountPickers } from "./pickers.js";
 import { preload } from "./preload.js";
@@ -12,13 +13,16 @@ import {
   paintMute,
   paintPlay,
   paintSetup,
+  paintWait,
   reportEnd
 } from "./screen.js";
 import { setMuted, unlock } from "./sound.js";
+import { placeBars, watchViewport } from "./viewport.js";
 
 const GAME_ID = "memory";
 const LANG_KEY = "bergamots-lang";
 const MUTE_KEY = "muchogames_memory_mute";
+const VIEWS = ["setup", "wait", "play"];
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const page = {
@@ -34,7 +38,10 @@ const page = {
   match: null,
   state: null,
   ended: false,
-  starting: false
+  starting: false,
+  online: idleOnline(),
+  seat: 0,
+  names: ["", ""]
 };
 
 function store(key, value) {
@@ -57,19 +64,20 @@ function readLang() {
 function showChrome(playing) {
   $("game-back-button").hidden = playing;
   $("memory-quit-button").hidden = !playing;
-  $("memory-new-button").hidden = !playing;
+  $("memory-new-button").hidden =
+    !playing || page.state?.config.mode === "online";
 }
 
-function showSetup() {
-  showChrome(false);
-  $("memory-setup").hidden = false;
-  $("memory-play").hidden = true;
+function show(view) {
+  showChrome(view === "play");
+  VIEWS.forEach((name) => {
+    $(`memory-${name}`).hidden = name !== view;
+  });
 }
 
-function showPlay() {
-  showChrome(true);
-  $("memory-setup").hidden = true;
-  $("memory-play").hidden = false;
+function paintRoom() {
+  paintSetup(page);
+  paintWait(page);
 }
 
 function onUpdate(state) {
@@ -77,8 +85,9 @@ function onUpdate(state) {
   paintPlay(page);
   if (state.phase !== "GAME_OVER" || page.ended) return;
   page.ended = true;
-  reportEnd(state);
+  reportEnd(page);
   paintPlay(page);
+  if (state.config.mode === "online") void online.ended();
 }
 
 function destroyMatch() {
@@ -92,13 +101,50 @@ function destroyMatch() {
   delete board.dataset.deck;
 }
 
-async function startFresh() {
-  if (page.starting) return;
-  page.starting = true;
-  paintSetup(page);
+function finishMatch() {
   destroyMatch();
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   clearSave();
+}
+
+function backToSetup() {
+  finishMatch();
+  show("setup");
+  paintRoom();
+}
+
+function toSetup() {
+  void online.leave();
+  backToSetup();
+}
+
+const online = createOnline({
+  page,
+  paint: paintRoom,
+  show,
+  text: (key) => translate(page.lang, key),
+  exit: backToSetup,
+  enter(state) {
+    destroyMatch();
+    page.match = createMatch({
+      saved: state,
+      onUpdate,
+      online: { seat: page.seat, publish: (next) => online.publish(next) }
+    });
+    show("play");
+  }
+});
+
+async function startFresh() {
+  if (page.starting) return;
+  finishMatch();
+  if (page.setup.mode === "online") {
+    await online.leave();
+    void online.create();
+    return;
+  }
+  page.starting = true;
+  paintSetup(page);
   const config = { ...page.setup };
   const cards = buildDeck(config.grid, config.theme);
   await preload(deckUrls(config, cards));
@@ -106,23 +152,16 @@ async function startFresh() {
   page.starting = false;
   paintSetup(page);
   if (!allowed) {
-    showSetup();
+    show("setup");
     return;
   }
   page.match = createMatch({ config, cards, onUpdate });
-  showPlay();
-}
-
-function toSetup() {
-  destroyMatch();
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
-  clearSave();
-  showSetup();
-  paintSetup(page);
+  show("play");
 }
 
 function choose(group, value) {
   page.setup[group] = value;
+  page.online.error = "";
   clearSave();
   paintSetup(page);
 }
@@ -153,6 +192,24 @@ function bindChoices() {
   });
 }
 
+function bindOnline() {
+  const input = $("memory-join-input");
+  input.addEventListener("input", () => {
+    input.value = window.MuchogamesRoom?.normalizeCode(input.value) ?? "";
+    page.online.error = "";
+    paintSetup(page);
+  });
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") void online.join(input.value);
+  });
+  $("memory-join-button").addEventListener("click", () => {
+    unlock();
+    void online.join(input.value);
+  });
+  $("memory-share-button").addEventListener("click", () => void online.share());
+  $("memory-cancel-button").addEventListener("click", toSetup);
+}
+
 function bindPlay() {
   $("memory-start-button").addEventListener("click", () => {
     unlock();
@@ -171,20 +228,6 @@ function bindPlay() {
   });
 }
 
-function placeBars() {
-  const viewport = window.visualViewport;
-  const top = viewport ? Math.max(0, viewport.offsetTop) : 0;
-  const bottom = viewport
-    ? Math.max(0, window.innerHeight - viewport.height - top)
-    : 0;
-  const root = document.documentElement.style;
-  root.setProperty("--memory-obstructed-top", `${Math.round(top)}px`);
-  root.setProperty("--memory-obstructed", `${Math.round(bottom)}px`);
-  if (window.scrollY !== 0) window.scrollTo(0, 0);
-  const nav = document.querySelector(".game-nav");
-  if (nav) root.setProperty("--memory-nav-height", `${nav.offsetHeight}px`);
-}
-
 function bindPage() {
   window.GameHeader?.initOptionsPanel(
     $("game-options-button"),
@@ -198,11 +241,9 @@ function bindPage() {
     });
   });
   bindChoices();
+  bindOnline();
   bindPlay();
-  placeBars();
-  window.visualViewport?.addEventListener("resize", placeBars);
-  window.visualViewport?.addEventListener("scroll", placeBars);
-  window.addEventListener("resize", placeBars);
+  watchViewport();
   document.addEventListener("click", (event) => {
     const stay = event.target.closest?.("[data-answer='no']");
     if (stay && !$("memory-play").hidden) showChrome(true);
@@ -222,7 +263,7 @@ function restore(saved) {
   void preload(deckUrls(saved.config, saved.cards));
   window.MuchogamesMatch.resume(GAME_ID);
   page.match = createMatch({ saved, onUpdate });
-  showPlay();
+  show("play");
 }
 
 function boot() {
@@ -237,9 +278,10 @@ function boot() {
   mountPickers();
   bindPage();
   applyLanguage(page);
+  if (online.restore() || online.joinFromLink()) return;
   const saved = loadSave();
   if (saved) restore(saved);
-  else showSetup();
+  else show("setup");
 }
 
 boot();

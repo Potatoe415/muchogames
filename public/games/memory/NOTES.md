@@ -6,8 +6,11 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 
 | File | Role |
 |---|---|
-| `main.js` | Header, FR/EN/ES, setup, preload, `MuchogamesMatch.start/finish/resume`, mute. |
-| `screen.js` | Bars, language, setup marks, end copy, `finish` payload. |
+| `main.js` | Header, FR/EN/ES, setup / wait / play views, preload, `MuchogamesMatch.start/finish/resume`, mute. |
+| `online.js` | Online mode on `window.MuchogamesRoom` (`shared/CONTRACT.md`): create / join / resume, waiting screen, coin per room, board sync. |
+| `wire.js` | Online board payload: `packWire`, `readWire` (validates the opponent's board, derives the phase), `sameBoard`. |
+| `viewport.js` | CSS variables for the fixed header and the obstructed bottom strip. |
+| `screen.js` | Bars, language, setup marks, wait screen, end copy, `finish` payload. |
 | `chips.js` | Setup text buttons (mode, level, grid). |
 | `pickers.js` | Setup thumbnails: theme (`card_01`) and card back. |
 | `game.js` | Turn loop: reducer, 1200 ms miss, bot delays, save at end of turn, timer cleanup. |
@@ -32,11 +35,12 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 - Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba` (36). Backs `01`–`08` from `gemini-verso1.jpg` and `gemini-verso2.jpg`.
 - `assets/fond.webp` covers the whole page. Each player's name and score sit on a pill: white and gray when waiting, solid blue (player 1) or pink (player 2) with white text on their turn. The board frame uses the same color. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset or the browser covers the page), so the player 1 row, the cards and the buttons stay above the phone navigation.
 - During a match the header back arrow is `memory-quit-button` (`data-match-quit`): confirming returns to this game's setup. On the setup screen the same corner is the hub link. New game is the icon beside it. The header is fixed, so choosing Continuer cannot scroll it off the screen.
-- Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1).
+- Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1), `online` (two devices).
+- Online: the creator's grid, theme and back are used; the creator deals the deck when the second seat fills. Each device publishes the whole board after its own move (published before it is painted, so a final move is written before the room is left). The reducer refuses a flip from the seat that is not `active`. Only the player whose miss it is closes the cards after 1200 ms. The local player is always the bottom blue bar. No `localStorage` board save online; the seat is kept under `muchogames_memory_online` for a reload. A finished room is left without deleting it, so the other player keeps the end screen; quitting mid-match deletes it, and the other player is sent to setup with "opponent left". Rematch opens a new room.
 - Grids: `4x4`, `4x6`, `6x6`. Each match draws its pairs at random from the theme.
 - Play waits for the preload, then calls `MuchogamesMatch.start` (no coin spent on a load).
 - A found pair fades out after 0.6 s (`data-status="matched"`, CSS only); its grid cell stays empty.
 - A pair scores 1 and the same player stays. A miss waits 1200 ms, closes, then switches (not in solo).
 - Clicks die in `EVALUATING`, `BOT`, and `GAME_OVER`. The open card cannot be clicked again.
-- `finish({ won })` for solo and vs bot. Pass-and-play and a bot tie omit `won`.
-- New game and any setup change delete the save. Reload of an unfinished game calls `resume` (no second coin).
+- `finish({ won })` for solo, vs bot and online (from the local seat). Pass-and-play and a tie omit `won`.
+- New game and any setup change delete the save. Reload of an unfinished game calls `resume` (no second coin). Online: one coin per room code (`MuchogamesRoom.chargeOnce`).

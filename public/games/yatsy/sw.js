@@ -1,14 +1,13 @@
-const CACHE_NAME = "yatzy-offline-v42";
+const CACHE_NAME = "yatzy-offline-v43";
 const APP_ASSETS = [
   "./",
   "./index.html",
   "./config.js",
-  "./supabase-config.js",
+  "/shared/js/online-room.js",
   "./i18n.js",
   "./gif-picker.js",
   "./emoji.js",
   "./robot.js",
-  "./matchmaking.js",
   "./scoring.js",
   "./random.js",
   "./styles.css",

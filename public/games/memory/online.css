@@ -1,0 +1,61 @@
+.memory-join {
+  display: flex;
+  gap: 8px;
+}
+
+.memory-code-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.memory-error {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.memory-wait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.memory-wait-card {
+  text-align: center;
+}
+
+.memory-wait-card p {
+  margin: 0;
+}
+
+.memory-code {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  color: #1d4ed8;
+}
+
+.memory-note {
+  color: #64748b;
+}
+
+.memory-wait[hidden],
+.memory-error[hidden],
+.memory-note[hidden],
+.memory-start[hidden] {
+  display: none;
+}

@@ -25,7 +25,7 @@ function winnerFor(config, scores) {
   return scores[0] > scores[1] ? 0 : 1;
 }
 
-function withWinner(state) {
+export function withWinner(state) {
   if (state.phase !== "GAME_OVER") return state;
   return { ...state, winner: winnerFor(state.config, state.scores) };
 }
@@ -47,6 +47,9 @@ export function createState(config, cards) {
 function canFlip(state, action, card) {
   const bot = action.bot === true;
   if (bot ? state.phase !== "BOT" : state.phase !== "TURN") return false;
+  if (state.config.mode === "online" && action.seat !== state.active) {
+    return false;
+  }
   if (!card || card.status !== "IDLE") return false;
   if (state.openIds.includes(action.instanceId)) return false;
   return state.openIds.length < 2;

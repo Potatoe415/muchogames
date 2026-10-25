@@ -45,7 +45,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Reduce `docs/DATA_MODEL.md` to the v10.1 entity-index format once/if per-module `DATA.md` files exist for the hub's own data — not needed while the repo stays hub-spoke (no `src/modules/`).
 - [ ] Decide: keep `data-id` attributes or migrate to `data-testid` (bootstrap v10.1 default) — most existing games predate `data-id` entirely; a repo-wide rename is a separate, larger decision.
 - [ ] Continue splitting `public/games/yatsy/app.js` (1187 lines against the 300-line limit; `storage.js`/`render.js`/`session.js` already extracted). `public/games/millionaire/app.js` (1069), `public/games/pyramide/app.js` (847), `wordplayer.js` (700) are also over limit.
-- [ ] Serve `@supabase/supabase-js` from the npm dependency instead of the unpinned runtime CDN import in `public/games/yatsy/matchmaking.js`.
+- [ ] Serve `@supabase/supabase-js` from the npm dependency instead of the unpinned runtime CDN import in `public/shared/js/online-room.js`.
 - [ ] Accessibility pass on the hub: `role="tablist"`/`aria-selected` on category tabs, keyboard support + `aria-expanded` on the language switcher, `:focus-visible`, `prefers-reduced-motion`, update `<html lang>`.
 - [ ] Deduplicate the rules-modal loading logic repeated across several games.
 - [ ] Author a `NOTES.md` (per `docs/GAMES_MAP.md`'s convention) for `millionaire`, `pyramide`, `yatsy`.

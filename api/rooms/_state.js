@@ -1,10 +1,11 @@
-// PUT /api/yatsy/games/:code/state. Route of api/yatsy/games/index.js.
-import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
-import { getServiceClient } from "../../_lib/supabase.js";
-import { insertTick, seatTokenColumn } from "../../_lib/yatzyGames.js";
+// PUT /api/rooms/:game/:code/state. Route of api/rooms/index.js.
+import { readJsonBody, sendError, sendJson } from "../_lib/http.js";
+import { getServiceClient } from "../_lib/supabase.js";
+import { insertTick, roomRows, seatTokenColumn } from "../_lib/rooms.js";
 
-// A real Yatzy state serializes to a few KB. The cap stops a seated player from
-// using their own room as unbounded storage in the shared Supabase project.
+// A real Yatzy or Memory state serializes to a few KB. The cap stops a seated
+// player from using their own room as unbounded storage in the shared
+// Supabase project.
 const MAX_GAME_STATE_BYTES = 65536;
 
 function isAcceptableGameState(gameState) {
@@ -19,7 +20,7 @@ function isAcceptableGameState(gameState) {
   return JSON.stringify(gameState).length <= MAX_GAME_STATE_BYTES;
 }
 
-export async function handleState(req, res, code) {
+export async function handleState(req, res, room) {
   if (req.method !== "PUT") {
     sendError(res, "method-not-allowed", "Use PUT to update game state.");
     return;
@@ -38,12 +39,10 @@ export async function handleState(req, res, code) {
   }
 
   const supabase = getServiceClient();
-
-  const { data, error } = await supabase
-    .from("yatzy_games")
-    .select("version, creator_token, joiner_token")
-    .eq("code", code)
-    .maybeSingle();
+  const rows = roomRows(supabase, room);
+  const { data, error } = await rows.select(
+    "version, creator_token, joiner_token"
+  );
 
   if (error) {
     sendError(res, "server-error", error.message);
@@ -64,17 +63,17 @@ export async function handleState(req, res, code) {
   }
 
   const nextVersion = (data.version || 0) + 1;
-  const { error: updateError } = await supabase
-    .from("yatzy_games")
-    .update({ game_state: gameState, version: nextVersion })
-    .eq("code", code);
+  const { error: updateError } = await rows.update({
+    game_state: gameState,
+    version: nextVersion
+  });
 
   if (updateError) {
     sendError(res, "server-error", updateError.message);
     return;
   }
 
-  await insertTick(supabase, code, nextVersion);
+  await insertTick(supabase, room.code, nextVersion);
 
-  sendJson(res, 200, { code, version: nextVersion });
+  sendJson(res, 200, { code: room.code, version: nextVersion });
 }

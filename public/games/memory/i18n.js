@@ -49,7 +49,27 @@ const STRINGS = {
     lose: "Perdu",
     tie: "Égalité",
     p1wins: "Joueur 1 gagne",
-    p2wins: "Joueur 2 gagne"
+    p2wins: "Joueur 2 gagne",
+    online: "En ligne",
+    create: "Créer une partie",
+    joinLabel: "Ou rejoindre avec un code",
+    codePlaceholder: "ABC",
+    join: "Rejoindre",
+    roomCode: "Code de la partie",
+    waiting: "En attente d'un adversaire…",
+    connecting: "Connexion…",
+    share: "Partager le lien",
+    shareText: "Viens jouer au Memory avec moi !",
+    copied: "Lien copié",
+    cancel: "Annuler",
+    opponent: "Adversaire",
+    errCode: "Le code fait 3 lettres.",
+    errMissing: "Partie introuvable.",
+    errExpired: "Cette partie a expiré.",
+    errFull: "Cette partie a déjà deux joueurs.",
+    errClosed: "Ton adversaire a quitté la partie.",
+    errGeneric: "Connexion impossible. Réessaie.",
+    errShare: "Partage impossible."
   },
   en: {
     title: "Memory",
@@ -99,7 +119,27 @@ const STRINGS = {
     lose: "You lose",
     tie: "Tie",
     p1wins: "Player 1 wins",
-    p2wins: "Player 2 wins"
+    p2wins: "Player 2 wins",
+    online: "Online",
+    create: "Create a game",
+    joinLabel: "Or join with a code",
+    codePlaceholder: "ABC",
+    join: "Join",
+    roomCode: "Game code",
+    waiting: "Waiting for an opponent…",
+    connecting: "Connecting…",
+    share: "Share the link",
+    shareText: "Come play Memory with me!",
+    copied: "Link copied",
+    cancel: "Cancel",
+    opponent: "Opponent",
+    errCode: "The code has 3 letters.",
+    errMissing: "Game not found.",
+    errExpired: "This game has expired.",
+    errFull: "This game already has two players.",
+    errClosed: "Your opponent left the game.",
+    errGeneric: "Could not connect. Try again.",
+    errShare: "Could not share."
   },
   es: {
     title: "Memory",
@@ -149,7 +189,27 @@ const STRINGS = {
     lose: "Perdiste",
     tie: "Empate",
     p1wins: "Gana el jugador 1",
-    p2wins: "Gana el jugador 2"
+    p2wins: "Gana el jugador 2",
+    online: "En línea",
+    create: "Crear partida",
+    joinLabel: "O unirse con un código",
+    codePlaceholder: "ABC",
+    join: "Unirse",
+    roomCode: "Código de la partida",
+    waiting: "Esperando a un rival…",
+    connecting: "Conectando…",
+    share: "Compartir el enlace",
+    shareText: "¡Ven a jugar al Memory conmigo!",
+    copied: "Enlace copiado",
+    cancel: "Cancelar",
+    opponent: "Rival",
+    errCode: "El código tiene 3 letras.",
+    errMissing: "Partida no encontrada.",
+    errExpired: "Esta partida ha caducado.",
+    errFull: "Esta partida ya tiene dos jugadores.",
+    errClosed: "Tu rival ha salido de la partida.",
+    errGeneric: "No se pudo conectar. Inténtalo de nuevo.",
+    errShare: "No se pudo compartir."
   }
 };
 
@@ -159,6 +219,7 @@ const RULES = {
 <li>Solo : trouve toutes les paires.</li>
 <li>2 joueurs : le même appareil, à tour de rôle. Le plus de paires gagne.</li>
 <li>Robot : Facile se trompe souvent, Moyen une fois sur deux, Difficile se souvient de chaque carte vue.</li>
+<li>En ligne : crée une partie et envoie le code ou le lien, ou rejoins celle d'un ami. Chacun joue sur son appareil.</li>
 <li>Chaque partie pioche ses cartes au hasard dans l'univers choisi.</li>
 </ul>`,
   en: `<p>Flip two cards each turn. A pair scores 1 and you go again. Otherwise the cards close after a short pause and the turn passes.</p>
@@ -166,6 +227,7 @@ const RULES = {
 <li>Solo: find every pair.</li>
 <li>2 players: same device, taking turns. Most pairs wins.</li>
 <li>Robot: Easy misses often, Medium half the time, Hard remembers every card it has seen.</li>
+<li>Online: create a game and send the code or link, or join a friend's. Each player uses their own device.</li>
 <li>Each game draws its cards at random from the chosen theme.</li>
 </ul>`,
   es: `<p>Voltea dos cartas por turno. Una pareja suma 1 punto y repites. Si no, pausa, las cartas se cierran y pasa el turno.</p>
@@ -173,6 +235,7 @@ const RULES = {
 <li>Solo: encuentra todas las parejas.</li>
 <li>2 jugadores: el mismo aparato, por turnos. Gana quien más parejas tenga.</li>
 <li>Robot: Fácil falla a menudo, Medio la mitad de las veces, Difícil recuerda cada carta vista.</li>
+<li>En línea: crea una partida y envía el código o el enlace, o únete a la de un amigo. Cada uno juega en su aparato.</li>
 <li>Cada partida saca sus cartas al azar del universo elegido.</li>
 </ul>`
 };

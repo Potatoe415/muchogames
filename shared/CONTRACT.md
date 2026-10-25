@@ -109,6 +109,40 @@ Include via `<script src="/shared/js/game-session.js">`.
   Injects `/shared/css/game-session.css` and loads `profile-results.js`
   itself.
 
+## `public/shared/js/online-room.js` (global script → `window.MuchogamesRoom`)
+
+Two-seat online rooms (3-letter code, creator + joiner) on `api/rooms/*`,
+used by Yatzy and Memory. The room stores one opaque JSON `gameState`
+(≤ 64 KB); each game owns its shape and must validate what it receives.
+A new game also needs its id in `ROOM_GAMES` (`api/_lib/rooms.js`).
+
+- `create(gameId)` → room client (one per page):
+  - `createGame(callbacks)`, `joinGame(code, callbacks, seat?)`,
+    `resumeGame(code, role, resumeToken, callbacks)` → `{ code, role,
+    localPlayerIndex, resumeToken }` (resume: `{ code, status, gameState }`).
+    `seat` = saved `{ role, resumeToken }` to reclaim a seat in a full room.
+  - callbacks: `stateChangeCallback(record)` on every fresh read (`{ code,
+    status: "waiting"|"playing", version, gameState }`, stale versions
+    dropped), `startGameCallback(record)` once when both seats are filled,
+    `gameClosedCallback({ reason: "missing"|"expired"|"replaced" })`,
+    `emojiReceivedCallback`, `noticeReceivedCallback`.
+  - `publish(code, readState)` — chained state write; `readState()` runs at
+    send time. Failures are dropped (the listener stays authoritative).
+    `pendingWrites()` → count in flight (skip applying remote state while
+    > 0). `flush()` → promise of the current chain.
+  - `leaveGame({ deleteCurrent })` — stops listening; deletes the room if
+    it is still waiting or `deleteCurrent`.
+  - `sendEmoji`, `sendReaction`, `sendNotice` — ephemeral broadcasts.
+- Seat storage (`localStorage`, JSON `{ gameCode, role, resumeToken,
+  localPlayerIndex }`): `readSeat(key)`, `writeSeat(key, seat)`,
+  `clearSeat(key)`, `seatFor(key, code)`.
+- Link: `linkedCode()` (the `?game=` code or `""`), `shareUrl(code)`,
+  `setLinkedCode(code)`, `clearLinkedCode()`, `share({ title, text, url })`
+  → `"shared"|"copied"|"prompted"|"aborted"`, rejects on failure.
+- `chargeOnce(gameId, code, key?)` → `Promise<boolean>`: one
+  `MuchogamesMatch.start` per room code, `resume` on a code already paid.
+- `normalizeCode(raw)`, `CODE_LENGTH`, `GAME_TTL_MS`.
+
 ## `public/shared/js/feedback.js` (global script → `window.MuchogamesFeedback`)
 
 - `open({ gameId })` — shows the report dialog (bug / idea + message),

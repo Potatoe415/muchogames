@@ -2,23 +2,24 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Hub also has Memory (`/games/memory/`), solo / pass-and-play / vs-bot, 7 image themes and 8 card backs on a full-page background, plus Space Cadet and the Entertainment Pack remakes. Platform common rules (decision 0047) still live everywhere except Tranquil.
-Focus: Memory play screen.
-Level: L1
+Status: Memory (`/games/memory/`) now has an online mode (two devices) on the Yatzy room system, shared through `api/rooms/*` and `public/shared/js/online-room.js` (decision 0051). Also solo / pass-and-play / vs-bot, 7 themes, 8 backs. Platform common rules (decision 0047) still live everywhere except Tranquil.
+Focus: Memory online.
+Level: L2
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/memory/`, `scripts/memory_slice.py`
+- Relevant_Files: `api/rooms/`, `api/_lib/rooms.js`, `public/shared/js/online-room.js`, `public/games/memory/online.js`, `public/games/memory/wire.js`, `public/games/yatsy/session.js`
 - Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
-- Relevant_Decisions: 0047
+- Relevant_Decisions: 0045, 0047, 0051
 
 Next:
+- Owner to play Memory online on two phones: create, share link, join by code, misses, reload mid-match, quit, end, rematch. Also one Yatzy online match (refactored onto the shared client).
 - Owner to play Space Cadet on phone: full-screen table, score line, flipper zones below the table, plunger bottom-right, mute.
 - Colocated apps (coinchapp, Tranquil): put Rules last in their options panels too, from inside each app.
-- Owner to play Memory on phone (portrait + landscape) and desktop: each theme, each back, solo, pass-and-play, bot easy/hard, reload mid-match.
 - Remove the version-badge refill (`POST /api/match` action `refill`) when play-testing no longer needs it.
 - Chip's Challenge / SkiFree / Démineur / JezzBall / Pipe Dream / Space Cadet: apply owner feedback.
 - Platform rules leftovers: owner runs `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on the `coinchapp` Vercel project; Tranquil `start_muchogames_match` + `data-id`s after its Vercel repoint.
+- Proposed (owner to confirm): `docs/ARCHITECTURE.md` and `docs/SECURITY.md` still name `api/yatsy/games/*`; `docs/PRODUCT.md` Memory line lacks the online mode.
 
 Open_Questions:
 - `.prettierignore`'s `!public/games/yatsy/**` never re-included yatsy (a parent-dir exclusion needs `!public/games/yatsy/` too). Fixing yatsy would reformat it — owner call.
@@ -30,10 +31,8 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-25 Memory online (decision 0051): `api/yatsy/games/*` → `api/rooms/*` + `game_id` (migration 0009), shared `online-room.js`, Yatzy wired to it (sw v43).
 - 2026-10-25 Memory: the header stays fixed, so Continuer after Retour does not hide its buttons.
-- 2026-10-25 Memory: default card back is the 4th (`back_04`).
 - 2026-10-25 Memory: quitting a match returns to its setup. New game is a header icon. Names sit on white pills.
-- 2026-10-25 Options panels: Rules moved last in Chip's, JezzBall, Pipe Dream, SkiFree, Space Cadet, Yatzy (decision 0050). Space Cadet: phone full-screen table + score line, PC left/right click flips, mute toggle.
-- 2026-10-25 Memory: nature theme (18 cards) added, card backs replaced by the 9 from `gemini-verso3.jpg`.
-- 2026-10-25 Memory themes: 6 universes + 8 backs (WebP from `scripts/memory_slice.py`), random pairs per match, preload before Play.
-- 2026-10-25 Space Cadet added to the hub from alula's prebuilt Emscripten binaries (`vendor/`, no compile). Win95 touch bars, 1 coin on F2.
+- 2026-10-25 Options panels: Rules moved last everywhere in-repo (decision 0050). Space Cadet phone layout + mute.
+- 2026-10-25 Space Cadet added to the hub from alula's prebuilt Emscripten binaries (`vendor/`, no compile).

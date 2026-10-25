@@ -65,5 +65,6 @@ export function paintBoard(host, state, labels) {
   state.cards.forEach((card) => sync(host, card, state.config, all));
   host.style.setProperty("--cols", String(state.config.cols));
   host.style.setProperty("--rows", String(state.config.rows));
-  host.dataset.locked = state.phase === "TURN" ? "false" : "true";
+  host.dataset.locked =
+    state.phase === "TURN" && !labels.theirs ? "false" : "true";
 }

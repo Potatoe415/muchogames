@@ -1,9 +1,9 @@
-// POST /api/yatsy/games/:code/resume. Route of api/yatsy/games/index.js.
-import { readJsonBody, sendError, sendJson } from "../../_lib/http.js";
-import { getServiceClient } from "../../_lib/supabase.js";
-import { isExpired, seatTokenColumn } from "../../_lib/yatzyGames.js";
+// POST /api/rooms/:game/:code/resume. Route of api/rooms/index.js.
+import { readJsonBody, sendError, sendJson } from "../_lib/http.js";
+import { getServiceClient } from "../_lib/supabase.js";
+import { isExpired, roomRows, seatTokenColumn } from "../_lib/rooms.js";
 
-export async function handleResume(req, res, code) {
+export async function handleResume(req, res, room) {
   if (req.method !== "POST") {
     sendError(res, "method-not-allowed", "Use POST to resume a game.");
     return;
@@ -17,13 +17,10 @@ export async function handleResume(req, res, code) {
     return;
   }
 
-  const supabase = getServiceClient();
-
-  const { data, error } = await supabase
-    .from("yatzy_games")
-    .select("created_at, status, game_state, creator_token, joiner_token")
-    .eq("code", code)
-    .maybeSingle();
+  const rows = roomRows(getServiceClient(), room);
+  const { data, error } = await rows.select(
+    "created_at, status, version, game_state, creator_token, joiner_token"
+  );
 
   if (error) {
     sendError(res, "server-error", error.message);
@@ -36,7 +33,7 @@ export async function handleResume(req, res, code) {
   }
 
   if (isExpired(data.created_at)) {
-    await supabase.from("yatzy_games").delete().eq("code", code);
+    await rows.remove();
     sendError(res, "game-expired", "Game expired.");
     return;
   }
@@ -50,9 +47,10 @@ export async function handleResume(req, res, code) {
   }
 
   sendJson(res, 200, {
-    code,
+    code: room.code,
     createdAt: new Date(data.created_at).getTime(),
     status: data.status,
+    version: data.version,
     gameState: data.game_state || null
   });
 }
