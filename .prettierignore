@@ -43,3 +43,4 @@ public/games/skifree/**/*.md
 !public/games/chipschallenge/
 !public/games/chipschallenge/**
 public/games/chipschallenge/**/*.md
+public/games/chipschallenge/vendor/

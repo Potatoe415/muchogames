@@ -1,22 +1,49 @@
 # Chip's Challenge — notes for agents
 
 Solo puzzle (Microsoft Entertainment Pack remake 4 of 4). Vanilla ES modules,
-Canvas 2D, Web Audio, no dependency. Same split as `skifree`; `loop.js` and
-`storage.js` are verbatim copies of SkiFree's. Read this before opening the
-sources.
+Canvas 2D, Web Audio. The game rules come from a vendored engine (Lexy's
+Labyrinth, see below and decision 0048); everything else is ours, same split
+as `skifree` (`loop.js`, `storage.js` are verbatim copies of SkiFree's). Read
+this before opening the sources.
+
+## Rules engine (vendored)
+
+- `vendor/lexy/`: game logic + CHIPS.DAT reader of Lexy's Labyrinth (MIT),
+  copied verbatim from a pinned commit, see `vendor/lexy/SOURCE.md`. Never
+  edit those files; the `*.d.ts` stubs next to them are ours. Excluded from
+  ESLint, Prettier and the platform check.
+- Ruleset `lynx` (`engine.js` → `RULESET`). `engine.js` is the only file that
+  talks to the engine: `parsePack`, `createLevel` (maps Lexy sound names to
+  ours), `status` (counters, inventory, hint, death reason), `DIR_BITS`.
+  `game.js` calls `level.advance_tic(bits)` once every 3 frames (20 tics/s)
+  and reads `level.player`, `level.state`, `level.can_accept_input()`;
+  `render.js` reads `level.linear_cells` (terrain, item, thin wall, actor).
+- Replay check (do it after any engine update): in Node, load
+  `assets/CHIPS.DAT` with `engine.parsePack`, replay the public Tile World
+  Lynx solutions (`testData/tws/public_CHIPS-lynx.dac.tws` in
+  github.com/SicklySilverMoon/SuperCC, parsed with Lexy's `format-tws.js`)
+  through `createLevel` + `advance_tic`. 2026-10-25: 147/149 won (85 TELENET
+  lost to a fireball; 145 is the credits level, its replay does not decode).
+
+## Levels
+
+- `assets/CHIPS.DAT` (108,569 bytes, 149 levels): the original level file,
+  from github.com/bgradin/ChipsChallenge (`Chips Challenge/CHIPS.DAT`). Rights
+  stay with Microsoft / Epyx, like the tiles. Titles, hints and passwords are
+  read from it (English, as in the original). `levels.js` loads it once
+  (`loadLevels()`, live `LEVELS`, `levelPack()`).
 
 ## Graphics
 
-- `assets/tiles.png` (416x512): the original CHIPS.EXE tile bitmap, taken
-  from github.com/Yrlish/Chips-Challenge-JS (`assets/tileset.gif`, converted
-  to PNG, pixels unchanged). Rights stay with their owners (Microsoft / Epyx);
-  fine for a fan remake per the owner's request. Tile code = column x 16 +
-  row; columns 7-9 repeat the creatures on white, 10-12 are their masks.
-  `sheet.js` bakes the masked creatures into a transparent canvas at load.
-- 9x9 window (288x288 logical px) on a 32x32 board, camera clamped to the
-  board edges, square-by-square moves like the original (no smooth scroll).
-  Integer zoom in device px (`surface.js`), smoothing off, `pixelated`.
-- LED counters are drawn by `led.js` (7 segments on a 51x28 canvas).
+- `assets/tiles.png` (416x512): the original CHIPS.EXE tile bitmap, from
+  github.com/Yrlish/Chips-Challenge-JS (`assets/tileset.gif`, converted to
+  PNG, pixels unchanged). Tile code = column x 16 + row; columns 7-9 repeat
+  the creatures on white, 10-12 are their masks. `sheet.js` bakes the masked
+  creatures into a transparent canvas at load. `tiles.js` maps the engine's
+  tile names to these codes (inverse of Lexy's DAT table).
+- 9x9 window (288x288 logical px), camera clamped to the board, drawn square
+  by square like the original. Integer zoom in device px (`surface.js`),
+  smoothing off, `pixelated`. LED counters drawn by `led.js`.
 - `assets/thumbnail.png`: 4:5 hub cover composed from the same tiles.
 
 ## Files
@@ -24,54 +51,23 @@ sources.
 | File | Role |
 |---|---|
 | `main.js`, `screens.js` | Page shell: i18n, options panel, level list + password, pause/death/win dialogs, progress, `MuchogamesMatch.start/finish`. |
-| `game.js` | `createGame(options)` → `{ restart, setPaused, setMuted, world, destroy }`. Owns loop, surface, input, audio. |
-| `datfile.js`, `levels.js`, `level.js` | CHIPS.DAT reader; `loadLevels()` + live `LEVELS`; world creation from the two layers, monster list, trap/clone wiring. |
-| `tiles.js` | Tile codes, directions, tile families, what blocks/creatures may enter. |
-| `board.js`, `move.js`, `arrive.js` | Board queries; moving one square (pushes, doors, socket, revealed walls); landing effects (pickups, hazards, buttons, cloners, teleports, slides). |
-| `monsters.js`, `step.js` | Creature brains, sliding mobs; the 20 Hz tick (Chip, slides, creatures, clock). |
+| `game.js` | `createGame(options)` → `{ restart, setPaused, setMuted, progress, destroy }`. Owns loop, surface, input, audio; drives the engine. |
+| `engine.js`, `levels.js`, `tiles.js` | Engine bridge; level file loading; tile name → original code. |
 | `render.js`, `sheet.js`, `surface.js`, `panel.js`, `led.js` | Drawing. |
-| `input.js`, `audio.js`, `progress.js`, `i18n.js`, `rules.js`, `storage.js` | Controls, sounds, saved progress, copy. |
+| `input.js`, `audio.js`, `progress.js`, `i18n.js`, `rules.js`, `storage.js` | Controls (input bits, one queued tap), sounds, saved progress, copy. |
 | `win31.css`, `styles.css`, `panel.css` | Windows 3.1 widgets; page + board; side panel, D-pad, responsive layouts. |
 
-`index.html` is ~390 lines: header boilerplate plus every dialog and the
+`index.html` is ~400 lines: header boilerplate plus every dialog and the
 D-pad as static markup (`data-id` on each), kept out of JS on purpose.
 
-## Levels
+## Behaviour in our code
 
-- `assets/CHIPS.DAT` (108,569 bytes, 149 levels): the original level file,
-  taken from github.com/bgradin/ChipsChallenge (`Chips Challenge/CHIPS.DAT`).
-  Level data rights stay with Microsoft / Epyx, like the tiles. Titles, hints
-  and passwords are read from it (English, as in the original).
-- Top layer = Chip / creature / block / terrain; the bottom layer goes to
-  `world.lower` and is uncovered when the top tile is cleared (pickup, door,
-  socket, dirt, fake wall, bomb). A creature or block on a clone machine is
-  its template. Only creatures in the level's monster list move, in that
-  order (clones join it). Traps and clone machines use the file's wiring.
-
-## Rules in code
-
-- Tick = 20/s (one every 3 frames of the 60 Hz loop). Nothing moves until
-  Chip's first move (clock included). Chip walks every 4 ticks (5 squares/s)
-  while a direction is held; a tap is answered on the next tick. Slides every
-  2 ticks: on ice (no skates) input is locked and walls bounce him back; on
-  force floors (no suction boots) he may step off in any direction, as in
-  CHIPS.EXE. Creatures move every 4 ticks, teeth and blobs every 8.
-- Keys: blue/red/yellow used up by their door, green kept. Thief takes all
-  boots. Block in water → dirt (Chip walking on dirt → floor); block on
-  bomb → both gone. Blocks never enter dirt, pickups, doors, socket, exit,
-  hint; creatures neither, nor gravel. Water kills creatures but gliders;
-  only fireballs enter fire. Hidden walls and real blue walls turn into plain
-  walls when bumped; fake blue walls turn into floor.
-- Teleport → previous teleport in reading order (wraps, CHIPS.EXE order)
-  whose exit is free, same direction. Green flips toggle walls, blue turns
-  tanks around.
-- Score: time bonus 10/s left + level bonus 500 x level, -20 % per failed
-  attempt (first four). One match = one level; deaths and R stay in the
-  match; `finish({ won: true, score })` on exit, `{ won: false }` when the
-  level is left. Storage: `chipschallenge-progress` (unlocked levels, best
-  score/time), `chipschallenge-sound`.
-- The engine modules have no DOM dependency, so levels can be checked
-  headlessly in Node. Checked so far: all 149 levels load and survive long
-  idle/random runs; won by scripted routes or a BFS over the engine: 1–7, 13,
-  32, 51, 140, 147. The other levels were not proven either way (search space
-  too large); MS timing quirks are only approximated.
+- Nothing moves until Chip's first move. A tap stays queued until the engine
+  can accept input (one step); holding keeps walking. "Oof" when a move is
+  refused, a dry step sound when Chip moves.
+- Death dialog by `engine.deathReason`: water, fire, bomb, block, time, else
+  monster. Score: time bonus 10/s left + level bonus 500 x level, -20 % per
+  failed attempt (first four). One match = one level; deaths and R stay in
+  the match; `finish({ won: true, score })` on exit, `{ won: false }` when
+  the level is left. Storage: `chipschallenge-progress` (unlocked levels,
+  best score/time), `chipschallenge-sound`.

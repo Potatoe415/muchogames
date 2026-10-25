@@ -137,20 +137,20 @@ function onDeath(reason) {
   showOverlay("death");
 }
 
-function onWin(world) {
-  const number = world.number;
-  const score = scoreLevel(number, world.timeLeft, page.failures);
+function onWin(result) {
+  const { number, timeLeft, limited } = result;
+  const score = scoreLevel(number, timeLeft, page.failures);
   const { previousTime } = recordWin(
     page.progress,
     number,
     score.levelScore,
-    world.timeLeft
+    timeLeft
   );
   page.result = {
     ...score,
     previousTime,
-    timeLeft: world.timeLeft,
-    limited: world.def.time > 0,
+    timeLeft,
+    limited,
     last: number === LEVELS.length
   };
   shell.MuchogamesMatch.finish({ won: true, score: score.levelScore });
@@ -166,8 +166,8 @@ function retry() {
 
 function restartKey() {
   if (!page.game || page.overlay === "win") return;
-  const w = page.game.world();
-  if (!w.dead && !w.started) return;
+  const { started, over } = page.game.progress();
+  if (!over && !started) return;
   retry();
 }
 

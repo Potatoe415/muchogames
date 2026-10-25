@@ -1,7 +1,6 @@
 // Status panel: LEVEL / TIME / CHIPS LEFT counters, the 4x2 inventory
 // (keys on top, boots below) and the hint box that covers the counters
 // while Chip stands on a "?" square. Redraws only what changed.
-import { terrainAt } from "./board.js";
 import { drawLed, LED_HEIGHT, LED_WIDTH } from "./led.js";
 import { drawTile } from "./sheet.js";
 import { T, TILE } from "./tiles.js";
@@ -32,18 +31,18 @@ function setupLeds(root) {
   return leds;
 }
 
-function inventoryKey(w) {
-  const keys = KEY_SLOTS.map(([k]) => (w.keys[k] > 0 ? 1 : 0)).join("");
-  const boots = BOOT_SLOTS.map(([b]) => (w.boots[b] ? 1 : 0)).join("");
+function inventoryKey(s) {
+  const keys = KEY_SLOTS.map(([k]) => (s.keys[k] ? 1 : 0)).join("");
+  const boots = BOOT_SLOTS.map(([b]) => (s.boots[b] ? 1 : 0)).join("");
   return keys + boots;
 }
 
-function drawInventory(canvas, sheet, w) {
+function drawInventory(canvas, sheet, s) {
   const ctx = canvas.getContext("2d");
   ctx.imageSmoothingEnabled = false;
   [KEY_SLOTS, BOOT_SLOTS].forEach((slots, row) => {
     slots.forEach(([name, tile], col) => {
-      const owned = row === 0 ? w.keys[name] > 0 : w.boots[name];
+      const owned = row === 0 ? s.keys[name] : s.boots[name];
       drawTile(ctx, sheet, owned ? tile : T.FLOOR, col * TILE, row * TILE);
     });
   });
@@ -66,27 +65,32 @@ export function createPanel(root) {
     drawLed(leds[name], text, color);
   }
 
-  function showHint(w) {
-    const onHint = terrainAt(w, w.chip.x, w.chip.y) === T.HINT && !w.dead;
-    if (last.hint === onHint) return;
-    last.hint = onHint;
-    hintBox.hidden = !onHint;
-    counters.hidden = onHint;
-    if (onHint) hintText.textContent = w.def.hint;
+  function showHint(s) {
+    const hint = s.dead ? null : s.hint;
+    if (last.hint === hint) return;
+    last.hint = hint;
+    hintBox.hidden = hint === null;
+    counters.hidden = hint !== null;
+    hintText.textContent = hint ?? "";
   }
 
+  // s = engine.status(): number, chipsLeft, limited, timeLeft, hint,
+  // keys, boots, dead.
   return {
-    update(w, sheet) {
-      show("level", pad3(w.number), "red");
-      const limited = w.def.time > 0;
-      const low = limited && w.timeLeft <= LOW_TIME;
-      show("time", limited ? pad3(w.timeLeft) : "---", low ? "yellow" : "red");
-      show("chips", pad3(w.chipsLeft), w.chipsLeft === 0 ? "yellow" : "red");
-      showHint(w);
-      const inv = sheet ? inventoryKey(w) : null;
+    update(s, sheet) {
+      show("level", pad3(s.number), "red");
+      const low = s.limited && s.timeLeft <= LOW_TIME;
+      show(
+        "time",
+        s.limited ? pad3(s.timeLeft) : "---",
+        low ? "yellow" : "red"
+      );
+      show("chips", pad3(s.chipsLeft), s.chipsLeft === 0 ? "yellow" : "red");
+      showHint(s);
+      const inv = sheet ? inventoryKey(s) : null;
       if (inv !== null && last.inv !== inv) {
         last.inv = inv;
-        drawInventory(inventory, sheet, w);
+        drawInventory(inventory, sheet, s);
       }
     },
     reset() {

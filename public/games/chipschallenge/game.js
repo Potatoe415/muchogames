@@ -1,86 +1,116 @@
 // One level mounted on the page's stage. Owns every resource it creates
 // (rAF loop, ResizeObserver, listeners, AudioContext) and releases them all
-// in destroy(). The 60 Hz loop runs one logic tick every 3 frames (20/s).
+// in destroy(). The 60 Hz loop advances the rules engine one tic every 3
+// frames (20/s); nothing moves until Chip's first move.
 import { createAudio } from "./audio.js";
+import { createLevel, deathReason, DIR_INDEX, status } from "./engine.js";
 import { bindInput } from "./input.js";
-import { createWorld } from "./level.js";
-import { LEVELS } from "./levels.js";
+import { levelPack } from "./levels.js";
 import { createLoop } from "./loop.js";
 import { createPanel } from "./panel.js";
 import { render } from "./render.js";
 import { loadSheet } from "./sheet.js";
-import { tick } from "./step.js";
 import { createSurface } from "./surface.js";
 
-const FRAMES_PER_TICK = 3;
+const FRAMES_PER_TIC = 3;
 const END_DELAY_MS = 700;
 
-function createRun(options) {
-  const def = LEVELS[options.level - 1];
+function createRun(options, audio) {
+  const level = createLevel(levelPack(), options.level - 1, audio.play);
+  const { cell, direction } = level.player;
   return {
-    def,
-    world: createWorld(def, options.level),
+    level,
+    chip: { x: cell.x, y: cell.y, dir: DIR_INDEX[direction] ?? 2 },
     frames: 0,
+    started: false,
     paused: false,
     ending: false,
-    endTimer: 0,
-    sheet: null
+    endTimer: 0
   };
 }
 
-function drainSounds(run, audio) {
-  const { sounds } = run.world;
-  sounds.forEach((name) => audio.play(name));
-  sounds.length = 0;
+function trackChip(run) {
+  const player = run.level.player;
+  if (!player?.cell) return false;
+  const moved = player.cell.x !== run.chip.x || player.cell.y !== run.chip.y;
+  run.chip.x = player.cell.x;
+  run.chip.y = player.cell.y;
+  run.chip.dir = DIR_INDEX[player.direction] ?? run.chip.dir;
+  return moved;
+}
+
+function tic(run, input, audio) {
+  const { level } = run;
+  const bits = input.bits();
+  if (!run.started && !bits) return;
+  run.started = true;
+  const accept = level.can_accept_input();
+  level.advance_tic(bits);
+  if (accept) input.clearTaps();
+  const moved = trackChip(run);
+  if (!accept || !bits || level.state !== "playing") return;
+  if (moved) audio.play("step");
+  else if (!level.player.movement_cooldown) audio.play("oof");
 }
 
 function watchEnd(run, audio, options) {
-  const w = run.world;
-  if (run.ending || !(w.dead || w.won)) return;
+  const { level } = run;
+  if (run.ending || level.state === "playing") return;
   run.ending = true;
-  if (w.won) audio.play("win");
+  if (level.state === "success") audio.play("win");
   run.endTimer = setTimeout(() => {
-    if (w.dead) {
+    if (level.state === "success") options.onWin(status(level, options.level));
+    else {
       audio.play("bummer");
-      options.onDeath(w.dead);
-    } else {
-      options.onWin(w);
+      options.onDeath(deathReason(level));
     }
   }, END_DELAY_MS);
 }
 
-function updateTitleCard(card, w) {
-  const show = !w.started && !w.dead && !w.won;
-  if (card.hidden === !show) return;
-  card.hidden = !show;
+function frameView(run) {
+  const { level, chip } = run;
+  return {
+    level,
+    chip,
+    dead: deathReason(level),
+    won: level.state === "success"
+  };
 }
 
 function createFrames(run, parts, options) {
-  const { audio, input, surface, panel } = parts;
+  const { audio, input, surface, panel, sheet } = parts;
   return createLoop(
     () => {
-      if (run.paused || run.ending) return;
-      run.frames += 1;
-      if (run.frames % FRAMES_PER_TICK !== 0) return;
-      tick(run.world, input);
-      drainSounds(run, audio);
-      watchEnd(run, audio, options);
+      const r = run.current;
+      if (r.paused || r.ending) return;
+      r.frames += 1;
+      if (r.frames % FRAMES_PER_TIC !== 0) return;
+      tic(r, input, audio);
+      watchEnd(r, audio, options);
     },
     (seconds) => {
-      render(surface.ctx, run.sheet, run.world, surface.size.zoom, seconds);
-      panel.update(run.world, run.sheet);
-      updateTitleCard(options.titleCard, run.world);
+      const r = run.current;
+      render(
+        surface.ctx,
+        sheet.image,
+        frameView(r),
+        surface.size.zoom,
+        seconds
+      );
+      panel.update(status(r.level, options.level), sheet.image);
+      options.titleCard.hidden = r.started || r.ending;
     }
   );
 }
 
 export function createGame(options) {
-  const run = createRun(options);
   const audio = createAudio();
+  const run = { current: createRun(options, audio) };
   const surface = createSurface(options.canvas, options.host);
   const panel = createPanel(options.panel);
+  const sheet = { image: null };
   loadSheet()
-    .then((sheet) => (run.sheet = sheet))
+    .then((image) => (sheet.image = image))
     .catch(() => options.onLoadError?.());
   const input = bindInput({
     root: options.stage,
@@ -88,31 +118,35 @@ export function createGame(options) {
     pad: options.pad,
     actions: { unlock: audio.unlock, command: options.onCommand }
   });
-  const loop = createFrames(run, { audio, input, surface, panel }, options);
+  const parts = { audio, input, surface, panel, sheet };
+  const loop = createFrames(run, parts, options);
   audio.setMuted(options.muted);
   audio.unlock();
   loop.start();
   return {
     level: options.level,
-    world: () => run.world,
+    progress: () => ({
+      started: run.current.started,
+      over: run.current.level.state !== "playing"
+    }),
     restart() {
-      clearTimeout(run.endTimer);
-      Object.assign(run, createRun(options), { sheet: run.sheet });
+      clearTimeout(run.current.endTimer);
+      run.current = createRun(options, audio);
       input.clear();
       panel.reset();
     },
     setPaused(value) {
-      run.paused = value;
+      run.current.paused = value;
       if (value) input.clear();
     },
     setMuted: (value) => audio.setMuted(value),
     destroy() {
-      clearTimeout(run.endTimer);
+      clearTimeout(run.current.endTimer);
       loop.stop();
       input.destroy();
       surface.disconnect();
       audio.close();
-      run.sheet = null;
+      sheet.image = null;
     }
   };
 }

@@ -1,67 +1,15 @@
-// Microsoft Chip's Challenge tile codes (CHIPS.EXE order: code = column * 16
-// + row in assets/tiles.png), the four directions and the tile families the
-// rules need.
-export const N = 0;
-export const W = 1;
-export const S = 2;
-export const E = 3;
-export const DX = [0, -1, 0, 1];
-export const DY = [-1, 0, 1, 0];
-export const left = (d) => (d + 1) % 4;
-export const back = (d) => (d + 2) % 4;
-export const right = (d) => (d + 3) % 4;
+// Original CHIPS.EXE tile codes (code = column * 16 + row in
+// assets/tiles.png) and how the rules engine's tile names map onto them.
+import { DIRECTIONS } from "./vendor/lexy/js/defs.js";
 
-export const SIZE = 32;
 export const TILE = 32;
 
 export const T = Object.freeze({
   FLOOR: 0x00,
-  WALL: 0x01,
-  CHIP: 0x02,
-  WATER: 0x03,
-  FIRE: 0x04,
-  INVISIBLE: 0x05,
-  THIN_N: 0x06,
-  THIN_W: 0x07,
-  THIN_S: 0x08,
-  THIN_E: 0x09,
   BLOCK: 0x0a,
-  DIRT: 0x0b,
-  ICE: 0x0c,
-  FORCE_S: 0x0d,
   CLONE_BLOCK: 0x0e,
-  FORCE_N: 0x12,
-  FORCE_E: 0x13,
-  FORCE_W: 0x14,
   EXIT: 0x15,
-  DOOR_BLUE: 0x16,
-  DOOR_RED: 0x17,
-  DOOR_GREEN: 0x18,
-  DOOR_YELLOW: 0x19,
-  ICE_NW: 0x1a,
-  ICE_NE: 0x1b,
-  ICE_SE: 0x1c,
-  ICE_SW: 0x1d,
-  BLUE_FAKE: 0x1e,
-  BLUE_REAL: 0x1f,
-  THIEF: 0x21,
-  SOCKET: 0x22,
-  BTN_GREEN: 0x23,
-  BTN_RED: 0x24,
-  TOGGLE_CLOSED: 0x25,
-  TOGGLE_OPEN: 0x26,
-  BTN_BROWN: 0x27,
-  BTN_BLUE: 0x28,
-  TELEPORT: 0x29,
-  BOMB: 0x2a,
-  TRAP: 0x2b,
-  HIDDEN_WALL: 0x2c,
-  GRAVEL: 0x2d,
-  RECESSED: 0x2e,
-  HINT: 0x2f,
-  THIN_SE: 0x30,
   CLONER: 0x31,
-  FORCE_RANDOM: 0x32,
   DROWNED: 0x33,
   BURNED: 0x34,
   BOMBED: 0x35,
@@ -84,113 +32,76 @@ export const SPRITE = Object.freeze({
   bug: 0x40,
   fireball: 0x44,
   ball: 0x48,
-  tank: 0x4c,
+  tank_blue: 0x4c,
   glider: 0x50,
   teeth: 0x54,
   walker: 0x58,
   blob: 0x5c,
   paramecium: 0x60,
-  chip: 0x6c
+  player: 0x6c
 });
 
-export const KEY_TILES = {
-  [T.KEY_BLUE]: "blue",
-  [T.KEY_RED]: "red",
-  [T.KEY_YELLOW]: "yellow",
-  [T.KEY_GREEN]: "green"
-};
-export const DOOR_TILES = {
-  [T.DOOR_BLUE]: "blue",
-  [T.DOOR_RED]: "red",
-  [T.DOOR_YELLOW]: "yellow",
-  [T.DOOR_GREEN]: "green"
-};
-export const BOOT_TILES = {
-  [T.FLIPPERS]: "flippers",
-  [T.FIRE_BOOTS]: "fire",
-  [T.SKATES]: "skates",
-  [T.SUCTION]: "suction"
-};
-export const FORCE_DIR = {
-  [T.FORCE_N]: N,
-  [T.FORCE_W]: W,
-  [T.FORCE_S]: S,
-  [T.FORCE_E]: E
-};
-const ICE_CORNERS = {
-  [T.ICE_NW]: [N, W],
-  [T.ICE_NE]: [N, E],
-  [T.ICE_SE]: [S, E],
-  [T.ICE_SW]: [S, W]
-};
-const THIN_WALLS = {
-  [T.THIN_N]: [N],
-  [T.THIN_W]: [W],
-  [T.THIN_S]: [S],
-  [T.THIN_E]: [E],
-  [T.THIN_SE]: [S, E]
-};
-const NO_SIDES = [];
+// Terrain and item tiles by engine name.
+export const CODES = Object.freeze({
+  floor: 0x00,
+  wall: 0x01,
+  chip: 0x02,
+  water: 0x03,
+  fire: 0x04,
+  wall_invisible: 0x05,
+  dirt: 0x0b,
+  ice: 0x0c,
+  force_floor_s: 0x0d,
+  force_floor_n: 0x12,
+  force_floor_e: 0x13,
+  force_floor_w: 0x14,
+  exit: 0x15,
+  door_blue: 0x16,
+  door_red: 0x17,
+  door_green: 0x18,
+  door_yellow: 0x19,
+  ice_nw: 0x1a,
+  ice_ne: 0x1b,
+  ice_se: 0x1c,
+  ice_sw: 0x1d,
+  fake_floor: 0x1e,
+  fake_wall: 0x1f,
+  thief_tools: 0x21,
+  socket: 0x22,
+  button_green: 0x23,
+  button_red: 0x24,
+  green_wall: 0x25,
+  green_floor: 0x26,
+  button_brown: 0x27,
+  button_blue: 0x28,
+  teleport_blue: 0x29,
+  bomb: 0x2a,
+  trap: 0x2b,
+  wall_appearing: 0x2c,
+  gravel: 0x2d,
+  popwall: 0x2e,
+  hint: 0x2f,
+  cloner: 0x31,
+  force_floor_all: 0x32,
+  bogus_player_drowned: 0x33,
+  bogus_player_burned_fire: 0x34,
+  bogus_player_burned: 0x35,
+  bogus_player_win: 0x39,
+  key_blue: 0x64,
+  key_red: 0x65,
+  key_green: 0x66,
+  key_yellow: 0x67,
+  flippers: 0x68,
+  fire_boots: 0x69,
+  cleats: 0x6a,
+  suction_boots: 0x6b
+});
 
-export const isIce = (t) => t === T.ICE || t in ICE_CORNERS;
-export const isIceCorner = (t) => t in ICE_CORNERS;
-export const isForce = (t) => t in FORCE_DIR || t === T.FORCE_RANDOM;
-export const isButton = (t) =>
-  t === T.BTN_GREEN || t === T.BTN_RED || t === T.BTN_BROWN || t === T.BTN_BLUE;
-
-// Edges of a cell that act as walls (thin walls and curved ice).
-export const sideWalls = (t) => ICE_CORNERS[t] || THIN_WALLS[t] || NO_SIDES;
-
-// Direction after entering a curved ice tile while moving `dir`.
-export function turnOnCorner(t, dir) {
-  const walls = ICE_CORNERS[t];
-  if (!walls.includes(dir)) return dir;
-  return [N, W, S, E].find((d) => !walls.includes(d) && d !== back(dir));
-}
-
-// Where a slide goes after hitting something: straight back on plain ice,
-// out through the other open side of a curved tile.
-export function bounceDir(t, dir) {
-  const walls = ICE_CORNERS[t];
-  if (!walls) return back(dir);
-  return [N, W, S, E].find((d) => !walls.includes(d) && d !== dir);
-}
-
-// Squares a block may be pushed onto.
-const BLOCK_FLOORS = [
-  T.FLOOR,
-  T.WATER,
-  T.FIRE,
-  T.BOMB,
-  T.GRAVEL,
-  T.ICE,
-  T.ICE_NW,
-  T.ICE_NE,
-  T.ICE_SE,
-  T.ICE_SW,
-  T.FORCE_N,
-  T.FORCE_W,
-  T.FORCE_S,
-  T.FORCE_E,
-  T.FORCE_RANDOM,
-  T.BTN_GREEN,
-  T.BTN_RED,
-  T.BTN_BROWN,
-  T.BTN_BLUE,
-  T.TELEPORT,
-  T.TRAP,
-  T.TOGGLE_OPEN,
-  T.THIN_N,
-  T.THIN_W,
-  T.THIN_S,
-  T.THIN_E,
-  T.THIN_SE
-];
-export const BLOCK_OK = new Set(BLOCK_FLOORS);
-
-// Monsters walk the same squares as blocks except gravel; water drowns all
-// but gliders, and only fireballs go into fire.
-export function creatureCanEnter(kind, t) {
-  if (!BLOCK_OK.has(t) || t === T.GRAVEL) return false;
-  return t !== T.FIRE || kind === "fireball";
-}
+// Thin wall tiles by edge bit mask.
+export const THIN_WALLS = Object.freeze({
+  [DIRECTIONS.north.bit]: 0x06,
+  [DIRECTIONS.west.bit]: 0x07,
+  [DIRECTIONS.south.bit]: 0x08,
+  [DIRECTIONS.east.bit]: 0x09,
+  [DIRECTIONS.south.bit | DIRECTIONS.east.bit]: 0x30
+});

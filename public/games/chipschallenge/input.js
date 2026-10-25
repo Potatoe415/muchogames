@@ -1,10 +1,13 @@
 // Directions from the keyboard (arrows, ZQSD, WASD), the on-screen D-pad
-// and swipes on the board. A press queues exactly one step (answered on the
-// next tick); holding repeats at walking speed because the engine asks
-// `next()` again whenever Chip is ready. Commands: R restart, P pause,
-// N / B next / previous level.
-import { E, N, S, W } from "./tiles.js";
+// and swipes on the board, as engine input bits. A short press stays queued
+// until Chip can act on it (exactly one step); holding keeps him walking.
+// Commands: R restart, P pause, N / B next / previous level.
+import { DIR_BITS } from "./engine.js";
 
+const N = 0;
+const W = 1;
+const S = 2;
+const E = 3;
 const KEY_DIRS = {
   ArrowUp: N,
   ArrowLeft: W,
@@ -22,30 +25,27 @@ const PAD_DIRS = { up: N, left: W, down: S, right: E };
 const SWIPE_PX = 22;
 
 function createHeld() {
-  const held = [];
-  let pending = -1;
+  const held = new Set();
+  let taps = 0;
   return {
     press(dir) {
-      const i = held.indexOf(dir);
-      if (i >= 0) held.splice(i, 1);
-      held.push(dir);
-      pending = dir;
+      held.add(dir);
+      taps = DIR_BITS[dir];
     },
     release(dir) {
-      const i = held.indexOf(dir);
-      if (i >= 0) held.splice(i, 1);
+      held.delete(dir);
     },
     clear() {
-      held.length = 0;
-      pending = -1;
+      held.clear();
+      taps = 0;
     },
-    next() {
-      const dir = pending >= 0 ? pending : (held[held.length - 1] ?? -1);
-      pending = -1;
-      return dir;
+    bits() {
+      let bits = taps;
+      held.forEach((dir) => (bits |= DIR_BITS[dir]));
+      return bits;
     },
-    dropTaps() {
-      pending = -1;
+    clearTaps() {
+      taps = 0;
     }
   };
 }
@@ -172,8 +172,8 @@ export function bindInput({ root, board, pad, actions }) {
   on(root, "gesturestart", block);
   on(root, "touchmove", block, { passive: false });
   return {
-    next: state.next,
-    dropTaps: state.dropTaps,
+    bits: state.bits,
+    clearTaps: state.clearTaps,
     clear: state.clear,
     destroy() {
       offs.forEach((off) => off());

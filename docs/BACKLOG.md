@@ -4,7 +4,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
-- [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels; only 1–7, 13, 32, 51, 140, 147 proven winnable on our engine) on phone (portrait + landscape) and desktop.
+- [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels on Lexy's Labyrinth engine, Lynx rules, 147/149 proven winnable) on phone (portrait + landscape) and desktop.
 - [ ] `loop.js` and `storage.js` are now verbatim copies in 4 Entertainment Pack games: extract to `public/shared/` the first time one copy has to change.
 - [ ] **User**: add `ADMIN_USER_IDS` (your Supabase user id, same as on `muchogames`) to the `coinchapp` Vercel project, Production + Preview, then redeploy — until then the admin pays coins in coinchapp.
 - [ ] Optional: `delete from public.muchogames_events where type = 'game_launch';` (old hub-launch history, unread since 2026-10-03).

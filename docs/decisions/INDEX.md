@@ -53,6 +53,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0045 | 2026-10-02 | One Serverless Function for Yatzy rooms (URLs kept via rewrites) | Accepted |
 | 0046 | 2026-10-02 | Daily play coins (10/day, one per hub launch) | Accepted |
 | 0047 | 2026-10-03 | Platform common rules enforced by check; one coin per match started (supersedes 0046's launch charge) | Accepted |
+| 0048 | 2026-10-25 | Chip's Challenge: original CHIPS.DAT levels simulated by the vendored Lexy's Labyrinth engine (MIT, Lynx ruleset) under our Win 3.1 UI | Accepted |
 
 ## When to log a decision
 Any of:
