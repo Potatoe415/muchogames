@@ -25,12 +25,6 @@
   color: #be185d;
 }
 
-.memory-bar-bottom {
-  padding-bottom: calc(
-    6px + max(env(safe-area-inset-bottom, 0px), var(--memory-obstructed, 0px))
-  );
-}
-
 .memory-bar-bottom[data-active="true"] .memory-name {
   color: #1d4ed8;
 }

@@ -30,7 +30,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 ## Rules in code
 
 - Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba` (36). Backs `01`–`08` from `gemini-verso1.jpg` and `gemini-verso2.jpg`.
-- `assets/fond.webp` covers the whole page. Player names sit on it. The bottom bar grows by `safe-area-inset-bottom` or the part of the screen the phone navigation covers (`--memory-obstructed`), so player 1 stays visible.
+- `assets/fond.webp` covers the whole page. Player names sit on it. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset or the browser covers the page), so the player 1 row, the cards and the buttons stay above the phone navigation.
 - Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1).
 - Grids: `4x4`, `4x6`, `6x6`. Each match draws its pairs at random from the theme.
 - Play waits for the preload, then calls `MuchogamesMatch.start` (no coin spent on a load).
