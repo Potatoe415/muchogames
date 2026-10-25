@@ -30,7 +30,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 ## Rules in code
 
 - Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba` (36). Backs `01`–`08` from `gemini-verso1.jpg` and `gemini-verso2.jpg`.
-- `assets/fond.webp` covers the whole page. Each player's name and score sit on a white pill. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset or the browser covers the page), so the player 1 row, the cards and the buttons stay above the phone navigation.
+- `assets/fond.webp` covers the whole page. Each player's name and score sit on a pill: white and gray when waiting, solid blue (player 1) or pink (player 2) with white text on their turn. The board frame uses the same color. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset or the browser covers the page), so the player 1 row, the cards and the buttons stay above the phone navigation.
 - During a match the header back arrow is `memory-quit-button` (`data-match-quit`): confirming returns to this game's setup. On the setup screen the same corner is the hub link. New game is the icon beside it.
 - Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1).
 - Grids: `4x4`, `4x6`, `6x6`. Each match draws its pairs at random from the theme.

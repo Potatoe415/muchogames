@@ -16,24 +16,37 @@
   color: #3f2e1f;
 }
 
-.memory-bar-top[data-active="true"] .memory-name {
-  color: #be185d;
-}
-
-.memory-bar-bottom[data-active="true"] .memory-name {
-  color: #1d4ed8;
-}
-
 .memory-who {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   min-width: 0;
   max-width: 100%;
-  padding: 4px 12px;
+  padding: 6px 14px;
   border-radius: 999px;
   background: #fff;
+  color: #94a3b8;
   box-shadow: 0 1px 4px rgba(63, 46, 31, 0.28);
+}
+
+.memory-bar-top[data-active="true"] .memory-who {
+  background: #db2777;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(219, 39, 119, 0.55);
+}
+
+.memory-bar-bottom[data-active="true"] .memory-who {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.55);
+}
+
+.memory-play[data-active="0"] .memory-stage {
+  box-shadow: inset 0 0 0 4px #2563eb;
+}
+
+.memory-play[data-active="1"] .memory-stage {
+  box-shadow: inset 0 0 0 4px #db2777;
 }
 
 .memory-bar-bottom .memory-who {

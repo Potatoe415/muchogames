@@ -77,7 +77,7 @@ function paintBars(page, state) {
     live && state.active === 0 ? "true" : "false";
   $("memory-player-two").dataset.active =
     live && state.active === 1 ? "true" : "false";
-  $("memory-play").dataset.active = String(state.active);
+  $("memory-play").dataset.active = live ? String(state.active) : "";
 }
 
 function endTitle(page, state) {
