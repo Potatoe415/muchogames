@@ -2,6 +2,7 @@
 import { LANGS, rulesHtml, translate } from "./i18n.js";
 import { bindControls } from "./overlay.js";
 import { bindScoreLine } from "./score.js";
+import { isMuted, setMuted } from "./sound.js";
 
 const GAME_ID = "spacecadet";
 const LANG_KEY = "bergamots-lang";
@@ -40,9 +41,16 @@ function applyLanguage() {
     button.classList.toggle("active", button.dataset.lang === page.lang);
   });
   $("spacecadet-rules-content").innerHTML = rulesHtml(page.lang);
+  paintMute();
   const status = $("spacecadet-status");
   status.dataset.loading = t("downloading");
   status.dataset.error = t("exception");
+}
+
+function paintMute() {
+  const button = $("spacecadet-mute");
+  button.textContent = t(isMuted() ? "soundOff" : "soundOn");
+  button.setAttribute("aria-pressed", String(isMuted()));
 }
 
 async function ensureMatch(restart) {
@@ -72,6 +80,10 @@ function bindPage() {
       writeLang(page.lang);
       applyLanguage();
     });
+  });
+  $("spacecadet-mute").addEventListener("click", () => {
+    setMuted(!isMuted());
+    paintMute();
   });
   bindControls({ onPress });
   bindScoreLine();

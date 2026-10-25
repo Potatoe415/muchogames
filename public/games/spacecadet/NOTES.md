@@ -13,6 +13,7 @@ recompile. Read this before opening the sources.
 | `main.js` | i18n, options panel, `MuchogamesMatch.start` on F2 / first plunge. |
 | `overlay.js` | Pointer pads and PC mouse buttons → `keydown`/`keyup`; unlocks SDL2 audio. |
 | `score.js` | Copies the scoreboard row into the phone header line. |
+| `sound.js` | Mute toggle (suspends the SDL2 AudioContext, `spacecadet-muted` in localStorage). |
 | `keys.js` | SDL2 key map (`z`, Space, `/`, F2, F3, `x`). |
 | `i18n.js` | FR/EN/ES copy + rules HTML. |
 | `styles.css` | Desktop table + scoreboard. Phone: table only, one score line. |

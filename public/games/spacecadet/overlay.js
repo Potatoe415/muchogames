@@ -1,19 +1,10 @@
 // Touch halves, plunger corner, and PC mouse buttons → SDL2 keys.
 import { emitKey, KEYS } from "./keys.js";
+import { syncAudio } from "./sound.js";
 
 const held = Object.create(null);
 const pointers = new Map();
 const live = new Set();
-
-export function unlockAudio() {
-  const sdl = window.Module?.SDL2;
-  if (!sdl) return;
-  [sdl.audioContext, sdl.audio?.context, sdl.capture?.audioContext].forEach(
-    (ctx) => {
-      if (ctx?.state === "suspended") ctx.resume();
-    }
-  );
-}
 
 function down(spec) {
   held[spec.code] = (held[spec.code] || 0) + 1;
@@ -47,8 +38,8 @@ export function bindControls({ onPress }) {
   window.addEventListener("pointerdown", trackPointer, true);
   window.addEventListener("pointerup", trackPointer, true);
   window.addEventListener("pointercancel", trackPointer, true);
-  window.addEventListener("pointerdown", unlockAudio, true);
-  window.addEventListener("touchstart", unlockAudio, true);
+  window.addEventListener("pointerdown", syncAudio, true);
+  window.addEventListener("touchstart", syncAudio, true);
   window.addEventListener("keydown", blockPageScroll, { passive: false });
 }
 
@@ -85,7 +76,7 @@ async function startHold(e, el, onPress) {
   if (!spec) return;
   if (pointers.has(e.pointerId)) return;
   e.preventDefault();
-  unlockAudio();
+  syncAudio();
   const pointerId = e.pointerId;
   if (!(await onPress(el.dataset.key))) return;
   if (!live.has(pointerId)) {

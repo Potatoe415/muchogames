@@ -207,6 +207,18 @@ canvas.emscripten {
   padding-left: 1.2em;
 }
 
+.sc-mute {
+  width: 100%;
+}
+
+.sc-mute[aria-pressed="true"] {
+  box-shadow:
+    inset 1px 1px 0 #000,
+    inset -1px -1px 0 #dfdfdf,
+    inset 2px 2px 0 #808080,
+    inset -2px -2px 0 #fff;
+}
+
 .sc-actions {
   display: flex;
   flex-direction: column;
