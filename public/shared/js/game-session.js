@@ -208,7 +208,7 @@
     cancelButton.dataset.id = `${id}-cancel`;
     cancelButton.hidden = !cancel;
     dialog.hidden = false;
-    confirmButton.focus();
+    confirmButton.focus({ preventScroll: true });
     return new Promise((resolve) => {
       dialog.onclick = (event) => answerFrom(event.target, resolve);
       dialog.onkeydown = (event) => {

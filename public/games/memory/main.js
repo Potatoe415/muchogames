@@ -173,13 +173,16 @@ function bindPlay() {
 
 function placeBars() {
   const viewport = window.visualViewport;
-  const covered = viewport
-    ? Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop)
+  const top = viewport ? Math.max(0, viewport.offsetTop) : 0;
+  const bottom = viewport
+    ? Math.max(0, window.innerHeight - viewport.height - top)
     : 0;
-  document.documentElement.style.setProperty(
-    "--memory-obstructed",
-    `${Math.round(covered)}px`
-  );
+  const root = document.documentElement.style;
+  root.setProperty("--memory-obstructed-top", `${Math.round(top)}px`);
+  root.setProperty("--memory-obstructed", `${Math.round(bottom)}px`);
+  if (window.scrollY !== 0) window.scrollTo(0, 0);
+  const nav = document.querySelector(".game-nav");
+  if (nav) root.setProperty("--memory-nav-height", `${nav.offsetHeight}px`);
 }
 
 function bindPage() {
@@ -200,6 +203,11 @@ function bindPage() {
   window.visualViewport?.addEventListener("resize", placeBars);
   window.visualViewport?.addEventListener("scroll", placeBars);
   window.addEventListener("resize", placeBars);
+  document.addEventListener("click", (event) => {
+    const stay = event.target.closest?.("[data-answer='no']");
+    if (stay && !$("memory-play").hidden) showChrome(true);
+    requestAnimationFrame(placeBars);
+  });
   document.addEventListener("pointerdown", () => unlock(), { capture: true });
 }
 

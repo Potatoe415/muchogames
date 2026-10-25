@@ -30,7 +30,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-25 Memory: the active player's pill and the board frame turn blue or pink.
+- 2026-10-25 Memory: the header stays fixed, so Continuer after Retour does not hide its buttons.
 - 2026-10-25 Memory: default card back is the 4th (`back_04`).
 - 2026-10-25 Memory: quitting a match returns to its setup. New game is a header icon. Names sit on white pills.
 - 2026-10-25 Options panels: Rules moved last in Chip's, JezzBall, Pipe Dream, SkiFree, Space Cadet, Yatzy (decision 0050). Space Cadet: phone full-screen table + score line, PC left/right click flips, mute toggle.

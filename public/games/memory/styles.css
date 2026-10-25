@@ -10,17 +10,33 @@ body {
 
 body {
   margin: 0;
-  height: 100dvh;
-  max-height: 100dvh;
+  position: fixed;
+  inset: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: var(--memory-nav-height, 60px);
+  box-sizing: border-box;
   background: #f4efe4 url("assets/fond.webp") center / cover no-repeat;
   color: #3f2e1f;
   font-family: var(--font-sans, system-ui, sans-serif);
 }
 
 .game-nav {
-  flex: 0 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: auto;
+  min-height: calc(
+    60px + max(env(safe-area-inset-top, 0px), var(--memory-obstructed-top, 0px))
+  );
+  box-sizing: border-box;
+  padding-top: max(
+    env(safe-area-inset-top, 0px),
+    var(--memory-obstructed-top, 0px)
+  );
   background: transparent;
   border-bottom: 0;
   box-shadow: none;
