@@ -28,7 +28,7 @@ const page = {
     difficulty: "medium",
     grid: "4x4",
     theme: THEME_IDS[0],
-    back: BACKS[0]
+    back: BACKS[3]
   },
   muted: false,
   rotated: false,
