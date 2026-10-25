@@ -78,7 +78,6 @@ function paintBars(page, state) {
   $("memory-player-two").dataset.active =
     live && state.active === 1 ? "true" : "false";
   $("memory-play").dataset.active = String(state.active);
-  $("memory-player-two").classList.toggle("is-rotated", page.rotated);
 }
 
 function endTitle(page, state) {

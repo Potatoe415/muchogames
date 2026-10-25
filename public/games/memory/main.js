@@ -31,7 +31,6 @@ const page = {
     back: BACKS[3]
   },
   muted: false,
-  rotated: false,
   match: null,
   state: null,
   ended: false,
@@ -136,11 +135,6 @@ function toggleMute() {
   paintMute(page);
 }
 
-function toggleRotate() {
-  page.rotated = !page.rotated;
-  $("memory-player-two").classList.toggle("is-rotated", page.rotated);
-}
-
 const CHOICES = [
   ["mode", "mode", MODES],
   ["difficulty", "level", LEVELS],
@@ -169,7 +163,6 @@ function bindPlay() {
   $("memory-setup-button").addEventListener("click", toSetup);
   $("memory-quit-button").addEventListener("click", toSetup);
   $("memory-mute-button").addEventListener("click", toggleMute);
-  $("memory-rotate-button").addEventListener("click", toggleRotate);
   $("memory-board").addEventListener("click", (event) => {
     const card = event.target.closest("[data-instance-id]");
     if (!card) return;

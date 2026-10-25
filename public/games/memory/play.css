@@ -24,10 +24,6 @@
   color: #1d4ed8;
 }
 
-.memory-bar-top.is-rotated {
-  transform: rotate(180deg);
-}
-
 .memory-who {
   display: inline-flex;
   align-items: center;

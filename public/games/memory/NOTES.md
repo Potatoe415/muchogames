@@ -6,7 +6,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 
 | File | Role |
 |---|---|
-| `main.js` | Header, FR/EN/ES, setup, preload, `MuchogamesMatch.start/finish/resume`, mute, rotate. |
+| `main.js` | Header, FR/EN/ES, setup, preload, `MuchogamesMatch.start/finish/resume`, mute. |
 | `screen.js` | Bars, language, setup marks, end copy, `finish` payload. |
 | `chips.js` | Setup text buttons (mode, level, grid). |
 | `pickers.js` | Setup thumbnails: theme (`card_01`) and card back. |

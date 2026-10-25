@@ -43,7 +43,6 @@ const STRINGS = {
     pairs: "{n} paires",
     mute: "Couper le son",
     unmute: "Activer le son",
-    rotate: "Tourner le camp du haut",
     hiddenCard: "Carte face cachée",
     soloWin: "Toutes les paires !",
     win: "Gagné !",
@@ -94,7 +93,6 @@ const STRINGS = {
     pairs: "{n} pairs",
     mute: "Mute",
     unmute: "Unmute",
-    rotate: "Rotate the top side",
     hiddenCard: "Face-down card",
     soloWin: "Every pair found!",
     win: "You win!",
@@ -145,7 +143,6 @@ const STRINGS = {
     pairs: "{n} parejas",
     mute: "Silenciar",
     unmute: "Activar sonido",
-    rotate: "Girar el lado de arriba",
     hiddenCard: "Carta boca abajo",
     soloWin: "¡Todas las parejas!",
     win: "¡Ganaste!",
@@ -162,7 +159,6 @@ const RULES = {
 <li>Solo : trouve toutes les paires.</li>
 <li>2 joueurs : le même appareil, à tour de rôle. Le plus de paires gagne.</li>
 <li>Robot : Facile se trompe souvent, Moyen une fois sur deux, Difficile se souvient de chaque carte vue.</li>
-<li>Le bouton du haut tourne son texte pour jouer face à face sur la table.</li>
 <li>Chaque partie pioche ses cartes au hasard dans l'univers choisi.</li>
 </ul>`,
   en: `<p>Flip two cards each turn. A pair scores 1 and you go again. Otherwise the cards close after a short pause and the turn passes.</p>
@@ -170,7 +166,6 @@ const RULES = {
 <li>Solo: find every pair.</li>
 <li>2 players: same device, taking turns. Most pairs wins.</li>
 <li>Robot: Easy misses often, Medium half the time, Hard remembers every card it has seen.</li>
-<li>The top button rotates that side so two players can sit across a table.</li>
 <li>Each game draws its cards at random from the chosen theme.</li>
 </ul>`,
   es: `<p>Voltea dos cartas por turno. Una pareja suma 1 punto y repites. Si no, pausa, las cartas se cierran y pasa el turno.</p>
@@ -178,7 +173,6 @@ const RULES = {
 <li>Solo: encuentra todas las parejas.</li>
 <li>2 jugadores: el mismo aparato, por turnos. Gana quien más parejas tenga.</li>
 <li>Robot: Fácil falla a menudo, Medio la mitad de las veces, Difícil recuerda cada carta vista.</li>
-<li>El botón de arriba gira su texto para jugar cara a cara en la mesa.</li>
 <li>Cada partida saca sus cartas al azar del universo elegido.</li>
 </ul>`
 };
