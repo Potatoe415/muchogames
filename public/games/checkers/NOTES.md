@@ -18,11 +18,11 @@ Read this before opening the sources.
 | `view.js` | Builds the board (`data-id="checkers-square-<sq>"`), pieces, marks (selected, target, step, movable, last, hint), hop-by-hop animation, drag rendering, `squareAt`. Flipped 180° when the solo player has the dark pieces. |
 | `input.js` | Pointer press = select/play, drag past 8 px = drop to play; keyboard via `click` with `detail === 0`. |
 | `hud.js` | Player bars (name, pieces left, status / last move) and Undo/Hint state. |
-| `setup.js` | `[data-setting][data-value]` choice buttons (start screen + options panel), level records, resume button, `matchConfig`. |
+| `setup.js` | `[data-setting][data-value]` choice buttons (start screen + options panel), the level slider (`data-id="checkers-level-slider"`, 0–3, labels below are `data-setting` buttons) + the selected level's record, resume button, `matchConfig`. |
 | `store.js` | localStorage: `checkers-settings`, `checkers-saved-game` (`{ config, moves }`), `checkers-stats` (`{ <level>: { won, played } }`). All validated on read. |
 | `sound.js` | Web Audio blips (move, capture, crown, win, lose, invalid). |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings + rules HTML, one file per language. |
-| `styles.css`, `stage.css`, `board.css` | Page + start screen + end card; stage layout (portrait: bars above/below; aspect ≥ 6/5: side column); board, pieces, themes (`wood`, `classic`, `ocean`). |
+| `styles.css`, `slider.css`, `stage.css`, `board.css` | Page + start screen + end card; level slider; stage layout (portrait: bars above/below; aspect ≥ 6/5: side column); board, pieces, themes (`wood`, `classic`, `ocean`). |
 
 `index.html` is ~460 lines: shared header/options boilerplate plus the static
 start screen, stage and end card markup.

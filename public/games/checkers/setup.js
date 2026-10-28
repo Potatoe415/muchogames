@@ -1,5 +1,5 @@
 // Choice buttons ([data-setting][data-value]) on the start screen and in the
-// options panel, per-level records and the resume button.
+// options panel, the level slider and its record line, the resume button.
 import { LEVEL_IDS } from "./ai.js";
 import { CHOICES } from "./store.js";
 
@@ -11,6 +11,10 @@ export function bindChoices(onChoose) {
       const { setting, value } = button.dataset;
       if (CHOICES[setting]?.includes(value)) onChoose(setting, value);
     });
+  });
+  $("checkers-level-slider").addEventListener("input", (event) => {
+    const level = LEVEL_IDS[Number(event.target.value)];
+    if (level) onChoose("level", level);
   });
 }
 
@@ -25,14 +29,18 @@ export function renderChoices(settings) {
   });
 }
 
-export function renderRecords(stats, t) {
-  LEVEL_IDS.forEach((id) => {
-    const { won, played } = stats[id];
-    const line = $(`checkers-level-${id}`).querySelector("[data-level-record]");
-    line.textContent = played
-      ? t("levelRecord", { won, played })
-      : t("noRecord");
-  });
+// Slider position, its colour band and the record of the selected level.
+export function renderLevel(level, stats, t) {
+  const index = Math.max(0, LEVEL_IDS.indexOf(level));
+  const slider = $("checkers-level-slider");
+  slider.value = String(index);
+  slider.setAttribute("aria-valuetext", t(level));
+  slider.closest(".ck-slider").dataset.level = level;
+  slider.style.setProperty("--fill", index / (LEVEL_IDS.length - 1));
+  const { won, played } = stats[level];
+  $("checkers-level-record").textContent = played
+    ? t("levelRecord", { won, played })
+    : t("noRecord");
 }
 
 export function renderResume(saved) {

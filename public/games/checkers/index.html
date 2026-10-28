@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="stage.css" />
     <link rel="stylesheet" href="board.css" />
   </head>
@@ -251,46 +252,53 @@
 
           <div class="ck-field" data-id="checkers-level-field" data-solo-only>
             <p class="ck-label" data-i18n="level"></p>
-            <div class="ck-levels">
-              <button
-                type="button"
-                class="ck-option ck-level"
-                data-setting="level"
-                data-value="easy"
-                data-id="checkers-level-easy"
-              >
-                <span data-i18n="easy"></span><small data-level-record></small>
-              </button>
-              <button
-                type="button"
-                class="ck-option ck-level"
-                data-setting="level"
-                data-value="medium"
-                data-id="checkers-level-medium"
-              >
-                <span data-i18n="medium"></span
-                ><small data-level-record></small>
-              </button>
-              <button
-                type="button"
-                class="ck-option ck-level"
-                data-setting="level"
-                data-value="hard"
-                data-id="checkers-level-hard"
-              >
-                <span data-i18n="hard"></span><small data-level-record></small>
-              </button>
-              <button
-                type="button"
-                class="ck-option ck-level"
-                data-setting="level"
-                data-value="expert"
-                data-id="checkers-level-expert"
-              >
-                <span data-i18n="expert"></span
-                ><small data-level-record></small>
-              </button>
+            <div class="ck-slider" data-level="medium">
+              <input
+                type="range"
+                class="ck-range"
+                min="0"
+                max="3"
+                step="1"
+                data-id="checkers-level-slider"
+                aria-label="Niveau"
+                data-i18n-aria="level"
+              />
+              <div class="ck-ticks">
+                <button
+                  type="button"
+                  class="ck-tick"
+                  data-setting="level"
+                  data-value="easy"
+                  data-id="checkers-level-easy"
+                  data-i18n="easy"
+                ></button>
+                <button
+                  type="button"
+                  class="ck-tick"
+                  data-setting="level"
+                  data-value="medium"
+                  data-id="checkers-level-medium"
+                  data-i18n="medium"
+                ></button>
+                <button
+                  type="button"
+                  class="ck-tick"
+                  data-setting="level"
+                  data-value="hard"
+                  data-id="checkers-level-hard"
+                  data-i18n="hard"
+                ></button>
+                <button
+                  type="button"
+                  class="ck-tick"
+                  data-setting="level"
+                  data-value="expert"
+                  data-id="checkers-level-expert"
+                  data-i18n="expert"
+                ></button>
+              </div>
             </div>
+            <p class="ck-level-record" data-id="checkers-level-record"></p>
           </div>
 
           <div class="ck-field" data-id="checkers-color-field" data-solo-only>

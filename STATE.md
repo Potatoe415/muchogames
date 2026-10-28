@@ -29,5 +29,6 @@ Blockers:
 
 Recent_Changes:
 - 2026-10-28 Hub sort: newest / oldest / most played, tab bar scrolls (decision 0052).
+- 2026-10-28 Jeu de dames: level picked with a 4-step slider (tappable labels, colour per level).
 - 2026-10-28 Jeu de dames added (`checkers`, custom, `autres`, 1–2 players).
 - 2026-10-25 Memory online (decision 0051): `api/rooms/*` + `game_id`, shared `online-room.js`, Yatzy wired to it.

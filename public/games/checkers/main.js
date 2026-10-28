@@ -10,7 +10,7 @@ import {
   bindChoices,
   matchConfig,
   renderChoices,
-  renderRecords,
+  renderLevel,
   renderResume
 } from "./setup.js";
 import { setSoundEnabled, sound } from "./sound.js";
@@ -49,6 +49,7 @@ const page = {
 
 const t = (key, vars) => translate(page.lang, key, vars);
 const isSolo = () => page.config?.mode === "solo";
+const showLevel = () => renderLevel(page.settings.level, page.stats, t);
 
 function updateHud(info) {
   if (info) page.info = info;
@@ -99,7 +100,7 @@ function applyLanguage() {
     button.classList.toggle("active", button.dataset.lang === page.lang);
   });
   $("checkers-rules-content").innerHTML = rulesHtml(page.lang);
-  renderRecords(page.stats, t);
+  showLevel();
   page.play?.relabel();
   updateHud();
   renderEnd();
@@ -109,6 +110,7 @@ function applySettings() {
   $("checkers-app").dataset.theme = page.settings.theme;
   setSoundEnabled(page.settings.sound === "on");
   renderChoices(page.settings);
+  showLevel();
   page.play?.setShowMoves(page.settings.showMoves === "on");
 }
 
@@ -130,7 +132,7 @@ function recordResult({ winner }) {
   stats.played += 1;
   if (won) stats.won += 1;
   saveStats(page.stats);
-  renderRecords(page.stats, t);
+  showLevel();
   if (winner) (won ? sound.win : sound.lose)();
 }
 
