@@ -4,6 +4,7 @@
     "title": "Dessiner c'est gagné",
     "kind": "wordpack",
     "category": "mots",
+    "added": "2026-03-10",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=pictionary",
     "data": "/data/pictionary/pictionary_words.json",
@@ -14,6 +15,7 @@
     "title": "Taboo",
     "kind": "wordpack",
     "category": "mots",
+    "added": "2026-03-10",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=taboo",
     "data": "/data/taboo/taboo_words.json",
@@ -25,6 +27,7 @@
     "title": "Téléphone bizarre",
     "kind": "wordpack",
     "category": "mots",
+    "added": "2026-03-10",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=esquisse",
     "data": "/data/esquisse/esquisse_words.json",
@@ -35,6 +38,7 @@
     "title": "Black Stories",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-03-10",
     "launch": "/games/blackstories/index.html",
     "thumbnail": "/games/blackstories/assets/thumbnail.jpg",
     "endless": true
@@ -44,6 +48,7 @@
     "title": "Jeu de mains",
     "kind": "custom",
     "category": "mots",
+    "added": "2026-03-10",
     "launch": "/games/olemains/index.html",
     "data": "/data/olemains/words.json",
     "thumbnail": "/games/olemains/assets/thumbnail.jpg"
@@ -53,6 +58,7 @@
     "title": "Easy Frog",
     "kind": "external",
     "category": "autres",
+    "added": "2026-03-10",
     "launch": "https://easyfrog.web.app/",
     "thumbnail": "/games/easyfrog/assets/thumbnail.jpg",
     "coinPolicy": "launch"
@@ -62,6 +68,7 @@
     "title": "Salade de Cafards",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-03-10",
     "launch": "/games/cafards/index.html",
     "thumbnail": "/games/cafards/assets/background.jpg"
   },
@@ -70,6 +77,7 @@
     "title": "Qui veut gagner des millions ?",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-03-10",
     "launch": "/games/millionaire/index.html",
     "thumbnail": "/games/millionaire/assets/thumbnail.jpg"
   },
@@ -78,6 +86,7 @@
     "title": "Pipe Dream",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-24",
     "launch": "/games/pipedream/index.html",
     "thumbnail": "/games/pipedream/assets/thumbnail.jpg",
     "players": [1, 1]
@@ -87,6 +96,7 @@
     "title": "JezzBall",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-24",
     "launch": "/games/jezzball/index.html",
     "thumbnail": "/games/jezzball/assets/thumbnail.jpg",
     "players": [1, 1]
@@ -96,6 +106,7 @@
     "title": "SkiFree",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-24",
     "launch": "/games/skifree/index.html",
     "thumbnail": "/games/skifree/assets/thumbnail.png",
     "players": [1, 1]
@@ -105,6 +116,7 @@
     "title": "Chip's Challenge",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-24",
     "launch": "/games/chipschallenge/index.html",
     "thumbnail": "/games/chipschallenge/assets/thumbnail.png",
     "players": [1, 1]
@@ -114,6 +126,7 @@
     "title": "Démineur",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-24",
     "launch": "/games/minesweeper/index.html",
     "thumbnail": "/games/minesweeper/assets/thumbnail.jpg",
     "players": [1, 1]
@@ -123,6 +136,7 @@
     "title": "Space Cadet",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-25",
     "launch": "/games/spacecadet/index.html",
     "thumbnail": "/games/spacecadet/assets/thumbnail.jpg",
     "players": [1, 1]
@@ -132,6 +146,7 @@
     "title": "Memory",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-25",
     "launch": "/games/memory/index.html",
     "thumbnail": "/games/memory/assets/thumbnail.jpg",
     "players": [1, 2]
@@ -141,6 +156,7 @@
     "title": "Jeu de dames",
     "kind": "custom",
     "category": "autres",
+    "added": "2026-10-28",
     "launch": "/games/checkers/index.html",
     "thumbnail": "/games/checkers/assets/thumbnail.svg",
     "players": [1, 2]
@@ -150,6 +166,7 @@
     "title": "Dictionnaire",
     "kind": "wordpack",
     "category": "mots",
+    "added": "2026-03-11",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=pigeonpigeon",
     "data": "/data/pigeonpigeon/pigeonpigeon_words.json",
@@ -160,6 +177,7 @@
     "title": "Pyramide",
     "kind": "custom",
     "category": "mots",
+    "added": "2026-03-11",
     "launch": "/games/pyramide/index.html",
     "thumbnail": "/games/pyramide/data/images/thumbnail.jpg"
   },
@@ -168,6 +186,7 @@
     "title": "Yams",
     "kind": "custom",
     "category": "cartesdes",
+    "added": "2026-05-23",
     "launch": "/games/yatsy/index.html",
     "thumbnail": "/games/yatsy/assets/Gemini_Generated_Image_z31dj3z31dj3z31d.jpg",
     "players": [1, 2]
@@ -177,6 +196,7 @@
     "title": "Tranquil",
     "kind": "external",
     "category": "autres",
+    "added": "2026-06-05",
     "launch": "https://tranquil-woad.vercel.app/",
     "thumbnail": "/games/tranquil/assets/thumbnail.webp",
     "source": "apps/tranquil"
@@ -186,6 +206,7 @@
     "title": "Coinche",
     "kind": "external",
     "category": "cartesdes",
+    "added": "2026-08-17",
     "launch": "https://coinchapp.vercel.app/coinche",
     "thumbnail": "/games/coinchapp/assets/coinche-thumb.jpg",
     "sameTab": true,
@@ -197,6 +218,7 @@
     "title": "Bouilla",
     "kind": "external",
     "category": "cartesdes",
+    "added": "2026-08-17",
     "launch": "https://coinchapp.vercel.app/bouilla",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bouilla.png",
     "sameTab": true,
@@ -208,6 +230,7 @@
     "title": "Président",
     "kind": "external",
     "category": "cartesdes",
+    "added": "2026-09-10",
     "launch": "https://coinchapp.vercel.app/president",
     "thumbnail": "/games/coinchapp/assets/thumbnail-president.jpg",
     "sameTab": true,
@@ -219,6 +242,7 @@
     "title": "La Bataille Corse",
     "kind": "external",
     "category": "cartesdes",
+    "added": "2026-09-16",
     "launch": "https://coinchapp.vercel.app/bataillecorse",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bataillecorse.jpg",
     "sameTab": true,
@@ -230,6 +254,7 @@
     "title": "Solitaire",
     "kind": "external",
     "category": "cartesdes",
+    "added": "2026-10-23",
     "launch": "https://coinchapp.vercel.app/solitaire",
     "thumbnail": "/games/coinchapp/assets/thumbnail-solitaire.jpg",
     "sameTab": true,
@@ -241,6 +266,7 @@
     "title": "GameBoy Web",
     "kind": "external",
     "category": "autres",
+    "added": "2026-09-01",
     "launch": "https://gameboy-web.vercel.app/binjgb/docs/simple.html",
     "thumbnail": "/games/gameboy-web/assets/thumbnail.jpg",
     "sameTab": true,

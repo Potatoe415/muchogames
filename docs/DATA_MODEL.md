@@ -36,6 +36,7 @@ Fields:
 | title | string | Yes | Display name on the hub tile |
 | kind | string | Yes | `wordpack` \| `custom` \| `external` |
 | category | string | Yes | `cartesdes` \| `mots` \| `autres` — which hub tab the tile appears under |
+| added | string | Yes | `YYYY-MM-DD`, the day the game joined the catalog. Hub sort "newest" / "oldest" (`hub-sort.js`). Same day keeps catalog order. Missing sorts as oldest |
 | engine | string | wordpack only | e.g. `wordplayer` |
 | launch | string | Yes | Relative path or external URL to open |
 | data | string | wordpack only | Path to the game's word JSON |
@@ -148,6 +149,7 @@ Constraints:
 Access_Rules:
 - Row Level Security enabled with zero policies, same as `yatzy_games`: the browser can neither read nor write this table. Writes happen only inside `start_muchogames_match` (service role, via public `POST /api/match` or the coinchapp/Tranquil servers), one row per match that actually spent (or, for admins, would have spent) a coin. Reads go through `POST /api/admin` (`action: "stats"`), which requires the Supabase access token returned by `action: "login"` for a Google account whose user id is in `ADMIN_USER_IDS`; every read re-resolves that token and re-checks the allowlist.
 - `POST /api/match` being public means anyone can inflate the counters, but each row costs one of a device's 10 daily coins (bounded per device, plus the per-IP throttle). Accepted trade-off (decision 0047). `api/track.js` was removed on 2026-10-03.
+- `GET /api/popular` (decision 0052) is public and returns only `{ ranking: [{ gameId, matches }] }` for `match_start` rows in the last 182 days (same 10 000-row cap as `/admin`). No timestamp, device id, or profile id. Throttled 60/min per IP, CDN-cached 5 minutes. The browser still cannot read the table.
 
 Sensitive_Data:
 - None. No IP, user agent, session id, or any other visitor identifier is stored — only a game id and a timestamp.
@@ -318,3 +320,9 @@ Impact: Functions: 7 of 12. Old `game_launch` history stays in `muchogames_event
 Change: `supabase/migrations/0009_rooms_game_id.sql` adds `yatzy_games.game_id` (default `yatsy`). The room API moved from `api/yatsy/games/*` to `api/rooms/*` (`/api/rooms/{game}/{code}/…`); the old `/api/yatsy/games/*` URLs are rewritten to it with `game=yatsy`. GET and resume responses now carry `version`. New browser keys: `muchogames_memory_online` (Memory seat), `muchogames-charged-room-memory` (last room code paid).
 Reason: Owner request: Memory online on the Yatzy room system without duplicating it (decision 0051).
 Impact: 0009 must run before the deploy, otherwise every room route answers 500. Existing rooms read `yatsy`. Functions: still 7 of 12.
+
+## 2026-10-28 - Hub sort (`added`, `GET /api/popular`)
+
+Change: `HubGameEntry` gains `added` (`YYYY-MM-DD`). New public `GET /api/popular` returns match counts per game for the last 182 days. Browser key `muchogames-hub-sort` remembers the open sort (`recent` | `oldest` | `popular`).
+Reason: Owner request: sort the hub tabs by newest, oldest, or most played (decision 0052).
+Impact: Functions: 8 of 12. No new table. A failed `/api/popular` makes "most popular" use `muchogames-match-counts` on this browser instead.

@@ -1,14 +1,98 @@
-/* "My games" tab, favorite stars, and tile tags / player-count badge
-   (hub-shelf.js, hub-tags.js). Kept apart from hub.css, which is already
-   past the file-size limit. */
+/* "My games" tab, favorite stars, tile tags / player-count badge
+   (hub-shelf.js, hub-tags.js) and the category-bar sort (hub-sort.js).
+   Kept apart from hub.css, which is already past the file-size limit. */
 
-/* Fifth tab: tighter spacing so the five tabs fit a phone, wrapping if not. */
+/* One line. Scroll sideways when the labels don't fit. The sort
+   button stays at the end and does not scroll away. */
+.category-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  z-index: 5;
+  min-width: 0;
+}
+
 .category-tabs {
-  flex-wrap: wrap;
+  position: relative;
+  flex-wrap: nowrap;
+  justify-content: safe center;
   gap: 8px clamp(10px, 3.2vw, 26px);
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.hub-sort {
+  position: relative;
+  flex: none;
+}
+
+.hub-sort__button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(90, 58, 34, 0.08);
+  color: #5a3a22;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hub-sort__button.is-active {
+  background: #5a3a22;
+  color: #fff;
+}
+
+.hub-sort__button:focus-visible,
+.hub-sort__option:focus-visible {
+  outline: 2px solid #5a3a22;
+  outline-offset: 2px;
+}
+
+.hub-sort__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 2;
+  min-width: 176px;
+  padding: 6px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(90, 58, 34, 0.16);
+}
+
+.hub-sort__option {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  padding: 8px 12px;
+  text-align: left;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a3a22;
+  cursor: pointer;
+}
+
+.hub-sort__option.is-active,
+.hub-sort__option:hover {
+  background: rgba(90, 58, 34, 0.1);
 }
 
 .category-tab {
+  flex: none;
   font-size: clamp(14px, 4.1vw, 19px);
 }
 

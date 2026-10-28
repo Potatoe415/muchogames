@@ -1,0 +1,9 @@
+# 0052 — Hub sort by catalog date and a public match-count ranking
+
+Date: 2026-10-28
+Status: Accepted
+Decision: The hub category bar sorts the open tab by `added` (newest or oldest) or by matches started, and scrolls sideways when the tabs do not fit. Match counts come from a new public `GET /api/popular` (game id + count, last 182 days, 10 000-row cap). If that request fails, the popular sort uses this browser's `muchogames-match-counts`.
+Context: The owner asked for a small filter icon on the game tabs, with three sorts only — most recent, least recent, most popular — and for the tab bar to scroll left and right on a narrow screen.
+Rationale: `added` on `hub-config.json` is the catalog date (first day the id appeared there). Array order is not chronological. Site-wide popularity already lives in `muchogames_events` (`match_start`) but was admin-only. A separate function keeps `GET /api/hub-settings` on its short timeout; the response is counts only, CDN-cached, and throttled like the other public reads. The sort replaces the pinned-first order while it is on; choosing the active option again restores it.
+Consequences: Eighth Hobby function (12 allowed). A game with no `added` sorts as oldest. Same calendar day keeps catalog order. Popularity is the last six months, not all-time, and undercounts past 10 000 rows in that window the same way `/admin` does. `docs/ARCHITECTURE.md` and `docs/SECURITY.md` still need the owner's confirmation before they mention the endpoint.
+Alternatives_Rejected: Folding the ranking into `GET /api/hub-settings` — rejected, a slow events read would delay hidden games and the banner, which give up after 1.2s. Sorting by this browser's plays only — rejected, "popular" on the hub means the site, not one phone. A fourth "default order" row in the menu — rejected, the owner asked for exactly these three; the active row toggles off instead.

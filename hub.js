@@ -23,6 +23,17 @@ import {
   shelfGames,
   shelfLabel
 } from "./hub-shelf.js";
+import {
+  enableHorizontalWheel,
+  fetchPopular,
+  localPopularMap,
+  mountSortControl,
+  persistSort,
+  popularMap,
+  readStoredSort,
+  revealActiveTab,
+  sortGames
+} from "./hub-sort.js";
 import { createPlayersBadge, createTileTags } from "./hub-tags.js";
 import { APP_VERSION } from "./version.js";
 
@@ -71,7 +82,9 @@ const state = {
   games: [],
   settings: null,
   category: "cartesdes",
-  lang: readStoredLang()
+  lang: readStoredLang(),
+  sort: readStoredSort(),
+  popular: new Map()
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -233,6 +246,7 @@ async function initializeDashboard() {
     renderHubAnnouncement();
     renderGames();
     setupSwipeNavigation();
+    loadPopularRanking();
   } catch (error) {
     gridElement.innerHTML =
       "<p>Erreur critique : Impossible de charger la liste des jeux.</p>";
@@ -374,6 +388,30 @@ function renderCategoryTabs() {
     button.addEventListener("click", () => selectCategory(category));
     nav.appendChild(button);
   });
+
+  enableHorizontalWheel(nav);
+  revealActiveTab(nav);
+  mountSortControl(document.getElementById("hub-sort"), {
+    lang: state.lang,
+    sort: state.sort,
+    onChange: selectSort
+  });
+}
+
+function selectSort(sort) {
+  state.sort = sort;
+  persistSort(sort);
+  renderCategoryTabs();
+  renderGames();
+}
+
+function loadPopularRanking() {
+  fetchPopular().then((rows) => {
+    const map = popularMap(rows);
+    if (map.size === 0) return;
+    state.popular = map;
+    if (state.sort === "popular") renderGames();
+  });
 }
 
 function renderGames(direction) {
@@ -408,13 +446,19 @@ function renderGames(direction) {
 }
 
 function gamesForCategory(category) {
-  if (category === MY_GAMES) return myGames();
+  const games = category === MY_GAMES ? myGames() : gamesInCategory(category);
+  if (!state.sort) {
+    return category === MY_GAMES ? games : sortWithPinnedFirst(games);
+  }
+  const popular = state.popular.size > 0 ? state.popular : localPopularMap();
+  return sortGames(games, state.sort, popular);
+}
+
+function gamesInCategory(category) {
   const games = visibleGames(state.games, state.settings);
-  return sortWithPinnedFirst(
-    category === "tous"
-      ? games
-      : games.filter((game) => game.category === category)
-  );
+  return category === "tous"
+    ? games
+    : games.filter((game) => game.category === category);
 }
 
 function slideGridContent(gridElement, direction, applyContent) {
@@ -450,6 +494,11 @@ function setupSwipeNavigation() {
   document.body.addEventListener(
     "touchstart",
     (event) => {
+      if (event.target.closest?.(".category-bar")) {
+        touchStartX = null;
+        touchStartY = null;
+        return;
+      }
       const touch = event.touches[0];
       touchStartX = touch.clientX;
       touchStartY = touch.clientY;

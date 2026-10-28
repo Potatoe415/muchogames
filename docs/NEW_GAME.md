@@ -35,7 +35,9 @@ See `docs/GAMES_MAP.md` for what each looks like today.
   `category` (reuse an existing one — `mots`, `cartesdes`, `autres` —
   unless the game genuinely needs a new one; a new category is a
   `docs/PRODUCT.md`-level decision, ask first), `launch`, `thumbnail`,
-  and `data` if `wordpack`. Optional: `players: [min, max]` (humans
+  and `data` if `wordpack`. Required: `added` (`YYYY-MM-DD`, the day it
+  joins the catalog — the hub sort uses it; same day keeps catalog order).
+  Optional: `players: [min, max]` (humans
   needed, bots don't count) and `duration` (typical minutes) — they drive
   the tile tags and the hub's "how many are we?" filter; omit them rather
   than guess. An `external` game also needs `source` (its colocated

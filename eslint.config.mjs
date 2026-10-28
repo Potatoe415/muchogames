@@ -25,6 +25,7 @@ export default [
       "hub-catalog.js",
       "hub-coins.js",
       "hub-shelf.js",
+      "hub-sort.js",
       "hub-tags.js",
       "version.js",
       "wordplayer.js",
