@@ -34,4 +34,5 @@ start screen, stage and end card markup.
 - Tap a destination to play; when two routes share a destination with different captures, tap the intermediate landing squares (`is-step` marks).
 - Solo undo takes back to the player's previous turn (cancels a computer search in progress). No undo after the end.
 - `finish({ won })` in solo when there is a winner; `finish()` for draws and two-player games. Quitting mid-match ends it without a result and drops the save.
+- The Hint button (and the H shortcut) exists only when the `hints` setting is on (options panel, off by default).
 - A game in progress is saved after every move; the start screen offers "Reprendre" (no coin, `MuchogamesMatch.resume`).

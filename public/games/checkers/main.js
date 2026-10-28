@@ -50,9 +50,11 @@ const page = {
 const t = (key, vars) => translate(page.lang, key, vars);
 const isSolo = () => page.config?.mode === "solo";
 const showLevel = () => renderLevel(page.settings.level, page.stats, t);
+const hintsOn = () => page.settings.hints === "on";
 
 function updateHud(info) {
   if (info) page.info = info;
+  $("checkers-hint-button").hidden = Boolean(page.summary) || !hintsOn();
   if (!page.match) return;
   renderHud({
     match: page.match,
@@ -62,7 +64,6 @@ function updateHud(info) {
     t
   });
   $("checkers-again-button").hidden = !page.summary;
-  $("checkers-hint-button").hidden = Boolean(page.summary);
 }
 
 function endLine({ winner, reason }) {
@@ -112,6 +113,7 @@ function applySettings() {
   renderChoices(page.settings);
   showLevel();
   page.play?.setShowMoves(page.settings.showMoves === "on");
+  updateHud();
 }
 
 function choose(setting, value) {
@@ -212,8 +214,9 @@ function onKey(event) {
   if (!page.play || !$("game-options-panel").hidden || event.altKey) return;
   const key = event.key.toLowerCase();
   if ((event.ctrlKey || event.metaKey) && key === "z") page.play.undo();
-  else if (!event.ctrlKey && !event.metaKey && key === "h") page.play.hint();
-  else return;
+  else if (!event.ctrlKey && !event.metaKey && key === "h" && hintsOn()) {
+    page.play.hint();
+  } else return;
   event.preventDefault();
 }
 
@@ -234,7 +237,7 @@ function bindPage() {
     "checkers-play-button": startMatch,
     "checkers-resume-button": resumeMatch,
     "checkers-undo-button": () => page.play?.undo(),
-    "checkers-hint-button": () => page.play?.hint(),
+    "checkers-hint-button": () => hintsOn() && page.play?.hint(),
     "checkers-again-button": startMatch,
     "checkers-quit-button": returnToStart,
     "checkers-replay-button": startMatch,

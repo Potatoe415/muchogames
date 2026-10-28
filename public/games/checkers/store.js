@@ -14,6 +14,7 @@ export const CHOICES = {
   variant: VARIANT_IDS,
   sound: ["on", "off"],
   showMoves: ["on", "off"],
+  hints: ["on", "off"],
   theme: ["wood", "classic", "ocean"]
 };
 
@@ -24,6 +25,7 @@ const DEFAULTS = {
   variant: "international",
   sound: "on",
   showMoves: "on",
+  hints: "off",
   theme: "wood"
 };
 

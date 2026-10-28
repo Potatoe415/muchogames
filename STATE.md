@@ -31,5 +31,6 @@ Blockers:
 Recent_Changes:
 - 2026-10-28 Hub opens on Tous, newest first. "Moins récents" removed.
 - 2026-10-28 Sudoku added (`sudoku`, custom, `autres`, solo, 4 levels).
+- 2026-10-28 Jeu de dames: Hint button only when the "Bouton Indice" option is on (off by default).
 - 2026-10-28 Jeu de dames: level picked with a 4-step slider; Jeu de dames added (`checkers`).
 - 2026-10-25 Memory online (decision 0051): `api/rooms/*` + `game_id`, shared `online-room.js`, Yatzy wired to it.

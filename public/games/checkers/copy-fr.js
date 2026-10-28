@@ -8,6 +8,7 @@ export const STRINGS = {
   rules: "Règles",
   sound: "Son",
   showMoves: "Coups possibles",
+  hintOption: "Bouton Indice",
   on: "Oui",
   off: "Non",
   boardTheme: "Plateau",
@@ -75,4 +76,4 @@ export const RULES = `<p>Chaque joueur déplace ses pions en diagonale, sur les 
 </ul>
 <p><strong>Règle internationale (10×10)</strong> : les blancs commencent. Les pions prennent aussi en arrière. Les dames volent sur toute la diagonale. Il faut prendre le plus grand nombre de pièces possible. Un pion qui passe sur la dernière rangée pendant une rafle sans s'y arrêter reste un pion.</p>
 <p><strong>Règle anglaise (8×8)</strong> : les noirs commencent. Les pions ne prennent qu'en avant. Les dames n'avancent que d'une case. On choisit librement sa prise, mais une rafle commencée doit être terminée. Un pion qui devient dame termine son coup.</p>
-<p><strong>Aides :</strong> Annuler reprend votre dernier coup, Indice montre un bon coup. Une partie en cours est gardée : vous pouvez la reprendre plus tard.</p>`;
+<p><strong>Aides :</strong> Annuler reprend votre dernier coup, Indice montre un bon coup (à activer dans les options). Une partie en cours est gardée : vous pouvez la reprendre plus tard.</p>`;

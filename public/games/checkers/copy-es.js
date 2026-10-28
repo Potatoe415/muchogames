@@ -8,6 +8,7 @@ export const STRINGS = {
   rules: "Reglas",
   sound: "Sonido",
   showMoves: "Mostrar jugadas posibles",
+  hintOption: "Botón Pista",
   on: "Sí",
   off: "No",
   boardTheme: "Tablero",
@@ -75,4 +76,4 @@ export const RULES = `<p>Cada jugador mueve sus fichas en diagonal, por las casi
 </ul>
 <p><strong>Reglamento internacional (10×10)</strong>: empiezan las blancas. Los peones también capturan hacia atrás. Las damas recorren toda la diagonal. Hay que capturar el mayor número de piezas posible. Un peón que pasa por la última fila durante una captura sin detenerse sigue siendo peón.</p>
 <p><strong>Reglamento inglés (8×8)</strong>: empiezan las negras. Los peones solo capturan hacia delante. Las damas avanzan una sola casilla. Se elige libremente la captura, pero una vez empezada hay que terminarla. Un peón que corona termina su jugada.</p>
-<p><strong>Ayudas:</strong> Deshacer anula tu última jugada, Pista muestra una buena jugada. Una partida en curso se guarda: puedes reanudarla más tarde.</p>`;
+<p><strong>Ayudas:</strong> Deshacer anula tu última jugada, Pista muestra una buena jugada (actívala en las opciones). Una partida en curso se guarda: puedes reanudarla más tarde.</p>`;
