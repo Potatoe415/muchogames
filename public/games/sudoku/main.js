@@ -115,7 +115,7 @@ function mount(state) {
   page.play = createPlay({
     els: playElements(),
     state,
-    showErrors: page.prefs.showErrors,
+    prefs: page.prefs,
     t,
     onWin
   });
@@ -190,14 +190,19 @@ function bindOptions() {
   bindGameOptions();
 }
 
-function bindGameOptions() {
-  const errors = $("sudoku-show-errors-toggle");
-  errors.checked = page.prefs.showErrors;
-  errors.addEventListener("change", () => {
-    page.prefs.showErrors = errors.checked;
+function bindPref(id, key) {
+  const toggle = $(id);
+  toggle.checked = page.prefs[key];
+  toggle.addEventListener("change", () => {
+    page.prefs[key] = toggle.checked;
     store.savePrefs(page.prefs);
-    page.play?.setShowErrors(errors.checked);
+    page.play?.setPrefs(page.prefs);
   });
+}
+
+function bindGameOptions() {
+  bindPref("sudoku-show-errors-toggle", "showErrors");
+  bindPref("sudoku-show-hint-toggle", "showHint");
   $("sudoku-fill-notes-button").addEventListener("click", () => {
     page.panel?.close();
     page.play?.fillNotes();

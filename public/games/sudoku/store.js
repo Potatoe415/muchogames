@@ -6,7 +6,7 @@ import { LEVEL_IDS } from "./levels.js";
 const GAME_KEY = "sudoku-current";
 const BEST_KEY = "sudoku-best-times";
 const PREFS_KEY = "sudoku-prefs";
-const DEFAULT_PREFS = { showErrors: true };
+const DEFAULT_PREFS = { showErrors: false, showHint: false };
 
 export function readStorage(key, fallback) {
   try {
@@ -73,12 +73,12 @@ export const saveBest = (best) => writeStorage(BEST_KEY, JSON.stringify(best));
 
 export function loadPrefs() {
   const stored = readJson(PREFS_KEY);
-  return {
-    showErrors:
-      typeof stored?.showErrors === "boolean"
-        ? stored.showErrors
-        : DEFAULT_PREFS.showErrors
-  };
+  return Object.fromEntries(
+    Object.entries(DEFAULT_PREFS).map(([key, fallback]) => [
+      key,
+      typeof stored?.[key] === "boolean" ? stored[key] : fallback
+    ])
+  );
 }
 
 export const savePrefs = (prefs) =>

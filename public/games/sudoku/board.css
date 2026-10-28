@@ -208,12 +208,13 @@
 }
 
 .sd-tools {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
   gap: 6px;
 }
 
 .sd-tool {
+  flex: 1 1 0;
+  min-width: 0;
   display: grid;
   justify-items: center;
   gap: 3px;

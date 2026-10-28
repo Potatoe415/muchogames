@@ -108,6 +108,10 @@ body {
   cursor: pointer;
 }
 
+.sd-switch + .sd-switch {
+  margin-top: 10px;
+}
+
 .sd-switch input {
   width: 20px;
   height: 20px;

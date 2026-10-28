@@ -18,6 +18,7 @@ function render(ctx) {
   els.notes.setAttribute("aria-pressed", String(ui.notesMode));
   els.undo.disabled = ui.over || !model.canUndo();
   els.hint.disabled = ui.over;
+  els.hint.hidden = !ui.showHint;
   els.stage.classList.toggle("is-paused", ui.paused);
   els.pauseOverlay.hidden = !ui.paused;
 }
@@ -99,7 +100,7 @@ function undo(ctx) {
 }
 
 function hint(ctx) {
-  if (blocked(ctx)) return;
+  if (blocked(ctx) || !ctx.ui.showHint) return;
   const result = ctx.model.hint(ctx.ui.selected);
   if (!result) return;
   ctx.ui.selected = result.index;
@@ -132,7 +133,7 @@ function actionsFor(ctx) {
   };
 }
 
-export function createPlay({ els, state, showErrors, t, onWin }) {
+export function createPlay({ els, state, prefs, t, onWin }) {
   const ctx = {
     els,
     t,
@@ -143,7 +144,7 @@ export function createPlay({ els, state, showErrors, t, onWin }) {
     timer: 0,
     winTimer: 0
   };
-  Object.assign(ctx.ui, { hold: false, over: false, showErrors });
+  Object.assign(ctx.ui, { hold: false, over: false }, prefs);
   const unbind = bindInput(els, actionsFor(ctx));
   ctx.timer = setInterval(() => tick(ctx), 1000);
   render(ctx);
@@ -152,8 +153,8 @@ export function createPlay({ els, state, showErrors, t, onWin }) {
       ctx.ui.hold = hold;
       if (hold && !ctx.ui.over) saveGame(ctx.model.state);
     },
-    setShowErrors: (on) => {
-      ctx.ui.showErrors = on;
+    setPrefs: ({ showErrors, showHint }) => {
+      Object.assign(ctx.ui, { showErrors, showHint });
       render(ctx);
     },
     fillNotes: () => !blocked(ctx) && ctx.model.fillNotes() && afterMove(ctx, {}),
