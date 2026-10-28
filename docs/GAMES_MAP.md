@@ -45,6 +45,7 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `minesweeper` | `public/games/minesweeper/` | 7 ES modules + 2 CSS, ~1,550 total (none >300); `main.js` entry | header, session | yes |
 | `spacecadet` | `public/games/spacecadet/` | 7 JS + 1 CSS, ~750 total (none >300); `main.js` + classic `boot.js`; prebuilt Emscripten WASM vendored in `vendor/` (alula, decision 0049) | header, session | yes |
 | `memory` | `public/games/memory/` | 19 JS + 3 CSS (none >300 except `index.html`, ~370: header boilerplate + setup/wait markup); `main.js` entry; online mode in `online.js` + `wire.js`; 7 themes in `cards/<theme>/card_NN.webp` + 8 `backs/back_NN.webp`, sliced by `scripts/memory_slice.py`, which also writes the `decks.js` manifest | header, session, profile, online-room | yes |
+| `checkers` | `public/games/checkers/` | 17 ES modules + 3 CSS, ~1,800 JS lines (none >300 except `index.html`, ~460: header boilerplate + static start/stage/end markup); `main.js` entry; AI in a module worker (`ai-worker.js`) | header, session | yes |
 | `yatsy` | `public/games/yatsy/` | 14 files; `app.js` (1239), `i18n.js` (395), `render.js` (633), `session.js` (~610) — **4 files over limit** | engine, header, profile, online-room | no — see `docs/BACKLOG.md` Later |
 
 "Shared deps" = which `shared/CONTRACT.md` modules the game imports. Read

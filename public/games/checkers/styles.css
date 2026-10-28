@@ -1,0 +1,285 @@
+/* Checkers: warm wood page over the shared header. Start screen, player bars,
+   action buttons and end card. The board itself is in board.css. */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 0%, #4a3020 0%, #24170f 70%) fixed,
+    #24170f;
+  color: #fff8ec;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 236, 205, 0.12);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #fff8ec;
+  letter-spacing: 0.02em;
+}
+
+.options-panel-sheet {
+  color: #2a1d14;
+}
+
+.ck-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ck-chip {
+  min-width: 56px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 2px solid #e0d3c2;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #2a1d14;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ck-chip.active {
+  border-color: #b5651d;
+  background: #fbe9d2;
+}
+
+.ck-app {
+  --accent: #f2a541;
+  --piece-light: radial-gradient(
+    circle at 34% 28%,
+    #ffffff 0%,
+    #f1e6d0 45%,
+    #cdb994 100%
+  );
+  --piece-dark: radial-gradient(
+    circle at 34% 28%,
+    #6b5a50 0%,
+    #2d221c 50%,
+    #120c09 100%
+  );
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ck-app [hidden] {
+  display: none !important;
+}
+
+.ck-disc {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--piece-light);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.45);
+}
+
+.ck-disc.is-dark {
+  background: var(--piece-dark);
+}
+
+/* --- Start screen --- */
+.ck-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 16px max(14px, env(safe-area-inset-right))
+    calc(16px + env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.ck-card {
+  width: min(94vw, 440px);
+  padding: 22px 18px;
+  border-radius: 20px;
+  background: #fff8ec;
+  color: #2a1d14;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.ck-logo {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 2rem;
+}
+
+.ck-title {
+  margin: 8px 0 4px;
+  font-size: clamp(1.7rem, 7vw, 2.2rem);
+  font-weight: 900;
+}
+
+.ck-pitch {
+  margin: 0 0 14px;
+  color: #6b5444;
+}
+
+.ck-field {
+  margin: 0 0 14px;
+}
+
+.ck-label {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a6a52;
+}
+
+.ck-seg,
+.ck-levels {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 6px;
+}
+
+.ck-levels {
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ck-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 46px;
+  padding: 8px 6px;
+  border: 2px solid #e6d8c6;
+  border-radius: 12px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ck-option.active {
+  border-color: #b5651d;
+  background: #fbe3c4;
+}
+
+.ck-level {
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ck-level small {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8a6a52;
+}
+
+.ck-button {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #d9822b, #b5651d);
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #7d4312;
+  touch-action: manipulation;
+}
+
+.ck-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #7d4312;
+}
+
+.ck-button-resume {
+  margin-bottom: 14px;
+  background: linear-gradient(180deg, #4f8f4a, #3b7336);
+  box-shadow: 0 4px 0 #24501f;
+}
+
+.ck-button-ghost {
+  background: #ffffff;
+  color: #2a1d14;
+  box-shadow: inset 0 0 0 2px #e0d3c2;
+}
+
+.ck-link {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* --- End card --- */
+.ck-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(20, 12, 6, 0.5);
+  animation: ck-fade 0.25s ease;
+}
+
+.ck-end-card {
+  width: min(90vw, 360px);
+}
+
+.ck-end-title {
+  margin: 0 0 6px;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.ck-overlay[data-result="win"] .ck-end-title {
+  color: #2f7d32;
+}
+
+.ck-overlay[data-result="loss"] .ck-end-title {
+  color: #b3261e;
+}
+
+.ck-end-actions {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+@keyframes ck-fade {
+  from {
+    opacity: 0;
+  }
+}

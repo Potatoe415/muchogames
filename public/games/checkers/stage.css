@@ -1,0 +1,182 @@
+/* Checkers play stage layout: player bars, board area and actions.
+   Portrait: bars above and below the board. Wide screens: board on the left,
+   bars and actions in a column on the right. */
+.ck-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-areas: "top" "board" "bottom" "actions";
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  padding: 8px max(8px, env(safe-area-inset-right))
+    calc(8px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+}
+
+.ck-bar-top {
+  grid-area: top;
+}
+
+.ck-bar-bottom {
+  grid-area: bottom;
+}
+
+.ck-board-area {
+  grid-area: board;
+  container-type: size;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+}
+
+.ck-actions {
+  grid-area: actions;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 8px;
+}
+
+/* --- Player bars --- */
+.ck-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: rgba(255, 244, 228, 0.08);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.ck-bar.is-active {
+  border-color: var(--accent);
+  background: rgba(242, 165, 65, 0.18);
+}
+
+.ck-bar [data-bar-disc] {
+  font-size: 1.25rem;
+}
+
+.ck-bar-text {
+  display: grid;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.ck-bar-text strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ck-bar-text small {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0.75;
+}
+
+.ck-bar-status {
+  margin-left: auto;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.ck-bar.is-active .ck-bar-status {
+  color: var(--accent);
+}
+
+.ck-bar.is-thinking .ck-bar-status {
+  animation: ck-pulse 1s ease-in-out infinite;
+}
+
+/* --- Actions --- */
+.ck-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 52px;
+  padding: 6px 4px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 244, 228, 0.1);
+  color: inherit;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ck-action:not(:disabled):hover {
+  background: rgba(255, 244, 228, 0.18);
+}
+
+.ck-action:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.ck-action svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (min-aspect-ratio: 6/5) {
+  .ck-stage {
+    grid-template-areas: "board top" "board actions" "board bottom";
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 300px);
+  }
+
+  .ck-bar {
+    flex-wrap: wrap;
+  }
+
+  .ck-bar-status {
+    flex-basis: 100%;
+    text-align: left;
+  }
+
+  .ck-bar-status:empty {
+    display: none;
+  }
+
+  .ck-actions {
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    align-content: center;
+  }
+
+  .ck-action {
+    flex-direction: row;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+@keyframes ck-pulse {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ck-bar.is-thinking .ck-bar-status {
+    animation: none;
+  }
+}

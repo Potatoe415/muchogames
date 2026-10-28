@@ -137,6 +137,15 @@
     "players": [1, 2]
   },
   {
+    "id": "checkers",
+    "title": "Jeu de dames",
+    "kind": "custom",
+    "category": "autres",
+    "launch": "/games/checkers/index.html",
+    "thumbnail": "/games/checkers/assets/thumbnail.svg",
+    "players": [1, 2]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",

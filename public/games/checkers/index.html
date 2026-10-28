@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#3a2618" />
+    <title>Jeu de dames</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stage.css" />
+    <link rel="stylesheet" href="board.css" />
+  </head>
+  <body>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Jeu de dames</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="checkers-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="ck-chips">
+              <button
+                type="button"
+                class="ck-chip"
+                data-lang="fr"
+                data-id="checkers-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="ck-chip"
+                data-lang="en"
+                data-id="checkers-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="ck-chip"
+                data-lang="es"
+                data-id="checkers-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="checkers-options-sound">
+            <p class="options-panel-section-title" data-i18n="sound">Son</p>
+            <div class="ck-chips">
+              <button
+                type="button"
+                class="ck-chip"
+                data-setting="sound"
+                data-value="on"
+                data-id="checkers-sound-on"
+                data-i18n="on"
+              ></button>
+              <button
+                type="button"
+                class="ck-chip"
+                data-setting="sound"
+                data-value="off"
+                data-id="checkers-sound-off"
+                data-i18n="off"
+              ></button>
+            </div>
+          </div>
+          <div
+            class="options-panel-section"
+            data-id="checkers-options-show-moves"
+          >
+            <p class="options-panel-section-title" data-i18n="showMoves"></p>
+            <div class="ck-chips">
+              <button
+                type="button"
+                class="ck-chip"
+                data-setting="showMoves"
+                data-value="on"
+                data-id="checkers-show-moves-on"
+                data-i18n="on"
+              ></button>
+              <button
+                type="button"
+                class="ck-chip"
+                data-setting="showMoves"
+                data-value="off"
+                data-id="checkers-show-moves-off"
+                data-i18n="off"
+              ></button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="checkers-options-theme">
+            <p class="options-panel-section-title" data-i18n="boardTheme"></p>
+            <div class="ck-chips">
+              <button
+                type="button"
+                class="ck-chip ck-swatch"
+                data-setting="theme"
+                data-value="wood"
+                data-id="checkers-theme-wood"
+                data-i18n="themeWood"
+              ></button>
+              <button
+                type="button"
+                class="ck-chip ck-swatch"
+                data-setting="theme"
+                data-value="classic"
+                data-id="checkers-theme-classic"
+                data-i18n="themeClassic"
+              ></button>
+              <button
+                type="button"
+                class="ck-chip ck-swatch"
+                data-setting="theme"
+                data-value="ocean"
+                data-id="checkers-theme-ocean"
+                data-i18n="themeOcean"
+              ></button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="game-options-rules">
+            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+            <div
+              class="rules-modal-content"
+              data-id="checkers-rules-content"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="ck-app" data-id="checkers-app" data-theme="wood">
+      <section class="ck-start" data-id="checkers-start-screen">
+        <div class="ck-card">
+          <div class="ck-logo" aria-hidden="true">
+            <span class="ck-disc is-dark is-king"></span
+            ><span class="ck-disc is-light"></span>
+          </div>
+          <h2 class="ck-title" data-i18n="title">Jeu de dames</h2>
+          <p class="ck-pitch" data-i18n="pitch"></p>
+          <button
+            type="button"
+            class="ck-button ck-button-resume"
+            data-id="checkers-resume-button"
+            data-i18n="resume"
+            hidden
+          ></button>
+
+          <div class="ck-field" data-id="checkers-mode-field">
+            <p class="ck-label" data-i18n="mode"></p>
+            <div class="ck-seg">
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="mode"
+                data-value="solo"
+                data-id="checkers-mode-solo"
+                data-i18n="modeSolo"
+              ></button>
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="mode"
+                data-value="duo"
+                data-id="checkers-mode-duo"
+                data-i18n="modeDuo"
+              ></button>
+            </div>
+          </div>
+
+          <div class="ck-field" data-id="checkers-level-field" data-solo-only>
+            <p class="ck-label" data-i18n="level"></p>
+            <div class="ck-levels">
+              <button
+                type="button"
+                class="ck-option ck-level"
+                data-setting="level"
+                data-value="easy"
+                data-id="checkers-level-easy"
+              >
+                <span data-i18n="easy"></span><small data-level-record></small>
+              </button>
+              <button
+                type="button"
+                class="ck-option ck-level"
+                data-setting="level"
+                data-value="medium"
+                data-id="checkers-level-medium"
+              >
+                <span data-i18n="medium"></span
+                ><small data-level-record></small>
+              </button>
+              <button
+                type="button"
+                class="ck-option ck-level"
+                data-setting="level"
+                data-value="hard"
+                data-id="checkers-level-hard"
+              >
+                <span data-i18n="hard"></span><small data-level-record></small>
+              </button>
+              <button
+                type="button"
+                class="ck-option ck-level"
+                data-setting="level"
+                data-value="expert"
+                data-id="checkers-level-expert"
+              >
+                <span data-i18n="expert"></span
+                ><small data-level-record></small>
+              </button>
+            </div>
+          </div>
+
+          <div class="ck-field" data-id="checkers-color-field" data-solo-only>
+            <p class="ck-label" data-i18n="color"></p>
+            <div class="ck-seg">
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="color"
+                data-value="light"
+                data-id="checkers-color-light"
+              >
+                <span class="ck-disc is-light" aria-hidden="true"></span
+                ><span data-i18n="light"></span>
+              </button>
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="color"
+                data-value="dark"
+                data-id="checkers-color-dark"
+              >
+                <span class="ck-disc is-dark" aria-hidden="true"></span
+                ><span data-i18n="dark"></span>
+              </button>
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="color"
+                data-value="random"
+                data-id="checkers-color-random"
+                data-i18n="random"
+              ></button>
+            </div>
+          </div>
+
+          <div class="ck-field" data-id="checkers-variant-field">
+            <p class="ck-label" data-i18n="variant"></p>
+            <div class="ck-seg">
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="variant"
+                data-value="international"
+                data-id="checkers-variant-international"
+                data-i18n="international"
+              ></button>
+              <button
+                type="button"
+                class="ck-option"
+                data-setting="variant"
+                data-value="english"
+                data-id="checkers-variant-english"
+                data-i18n="english"
+              ></button>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="ck-button"
+            data-id="checkers-play-button"
+            data-i18n="play"
+          ></button>
+        </div>
+      </section>
+
+      <section class="ck-stage" data-id="checkers-stage" hidden>
+        <div class="ck-bar ck-bar-top" data-id="checkers-player-top">
+          <span data-bar-disc></span>
+          <span class="ck-bar-text"
+            ><strong data-bar-name></strong><small data-bar-pieces></small
+          ></span>
+          <span class="ck-bar-status" data-bar-status aria-live="polite"></span>
+        </div>
+        <div class="ck-board-area" data-id="checkers-board"></div>
+        <div class="ck-bar ck-bar-bottom" data-id="checkers-player-bottom">
+          <span data-bar-disc></span>
+          <span class="ck-bar-text"
+            ><strong data-bar-name></strong><small data-bar-pieces></small
+          ></span>
+          <span class="ck-bar-status" data-bar-status aria-live="polite"></span>
+        </div>
+        <div class="ck-actions" data-id="checkers-actions">
+          <button
+            type="button"
+            class="ck-action"
+            data-id="checkers-undo-button"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 14 4 9l5-5" />
+              <path d="M4 9h11a5 5 0 0 1 0 10h-3" />
+            </svg>
+            <span data-i18n="undo"></span>
+          </button>
+          <button
+            type="button"
+            class="ck-action"
+            data-id="checkers-hint-button"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18h6M10 22h4" />
+              <path d="M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z" />
+            </svg>
+            <span data-i18n="hint"></span>
+          </button>
+          <button
+            type="button"
+            class="ck-action"
+            data-id="checkers-again-button"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12a9 9 0 1 1-3-6.7L21 8" />
+              <path d="M21 3v5h-5" />
+            </svg>
+            <span data-i18n="replay"></span>
+          </button>
+          <button
+            type="button"
+            class="ck-action"
+            data-id="checkers-quit-button"
+            data-match-quit
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+            <span data-i18n="quit"></span>
+          </button>
+        </div>
+
+        <div class="ck-overlay" data-id="checkers-end" hidden>
+          <div class="ck-card ck-end-card">
+            <h2 class="ck-end-title" data-id="checkers-end-title"></h2>
+            <p data-id="checkers-end-line"></p>
+            <div class="ck-end-actions">
+              <button
+                type="button"
+                class="ck-button"
+                data-id="checkers-replay-button"
+                data-i18n="replay"
+              ></button>
+              <button
+                type="button"
+                class="ck-button ck-button-ghost"
+                data-id="checkers-change-settings-button"
+                data-i18n="changeSettings"
+              ></button>
+              <button
+                type="button"
+                class="ck-link"
+                data-id="checkers-see-board-button"
+                data-i18n="seeBoard"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

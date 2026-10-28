@@ -51,3 +51,6 @@ public/games/spacecadet/vendor/
 !public/games/memory/
 !public/games/memory/**
 public/games/memory/**/*.md
+!public/games/checkers/
+!public/games/checkers/**
+public/games/checkers/**/*.md
