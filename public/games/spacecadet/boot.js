@@ -3,6 +3,15 @@ const scStatus = document.querySelector("[data-id='spacecadet-status']");
 const scProgress = document.querySelector("[data-id='spacecadet-progress']");
 const scCanvas = document.getElementById("canvas");
 
+// score.js copies pixels out of the WebGL canvas between frames.
+const scGetContext = HTMLCanvasElement.prototype.getContext;
+HTMLCanvasElement.prototype.getContext = function getContext(type, attrs) {
+  if (this === scCanvas && String(type).startsWith("webgl")) {
+    attrs = Object.assign({}, attrs, { preserveDrawingBuffer: true });
+  }
+  return scGetContext.call(this, type, attrs);
+};
+
 function scLogTo(method) {
   return function print(text) {
     const line =

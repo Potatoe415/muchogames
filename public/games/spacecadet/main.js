@@ -65,9 +65,18 @@ async function ensureMatch(restart) {
   return allowed;
 }
 
+async function startPlaying(restart) {
+  const allowed = await ensureMatch(restart);
+  if (allowed && !document.body.classList.contains("sc-playing")) {
+    document.body.classList.add("sc-playing");
+    window.dispatchEvent(new Event("resize"));
+  }
+  return allowed;
+}
+
 function onPress(action) {
-  if (action === "newgame") return ensureMatch(true);
-  if (action === "plunge") return ensureMatch(false);
+  if (action === "newgame") return startPlaying(true);
+  if (action === "plunge") return startPlaying(false);
   return Promise.resolve(true);
 }
 
