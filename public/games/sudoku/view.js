@@ -1,6 +1,6 @@
 // DOM for the grid (nine 3×3 boxes of cell buttons) and the digit pad, and
 // painting them from the model plus the UI selection.
-import { SIZE, boxOf, colOf, rowOf } from "./grid.js";
+import { PEERS, SIZE, boxOf, colOf, rowOf } from "./grid.js";
 
 const FLASH_MS = 700;
 const DIGITS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -61,14 +61,29 @@ function cellLabel(model, i, t) {
   return `${where}, ${pencil ? t("cellNotes", { notes: pencil }) : t("cellEmpty")}`;
 }
 
+// Cells that can no longer take `digit`: filled, or sharing a unit with it.
+function blockedBy(values, digit) {
+  const blocked = values.map((v) => v !== 0);
+  values.forEach((v, i) => {
+    if (v === digit) PEERS[i].forEach((p) => (blocked[p] = true));
+  });
+  return blocked;
+}
+
+// With a focused digit, the grey "blocked" area replaces the peer shading.
 function paintCell(cell, i, model, view) {
   const { values, notes, hinted } = model.state;
-  const { selected, focus, showErrors } = view;
+  const { selected, focus, blocked, showErrors } = view;
   const c = cell.classList;
+  const same = focus > 0 && values[i] === focus;
   c.toggle("is-given", model.isGiven(i));
   c.toggle("is-selected", i === selected);
-  c.toggle("is-peer", selected >= 0 && i !== selected && sharesUnit(i, selected));
-  c.toggle("is-same", focus > 0 && values[i] === focus);
+  c.toggle(
+    "is-peer",
+    !blocked && selected >= 0 && i !== selected && sharesUnit(i, selected)
+  );
+  c.toggle("is-blocked", Boolean(blocked?.[i]) && !same);
+  c.toggle("is-same", same);
   c.toggle("is-wrong", showErrors && model.isWrong(i));
   c.toggle("is-hinted", hinted[i] === 1);
   cell.firstChild.textContent = values[i] || "";
@@ -86,7 +101,12 @@ export function createView({ board, pad }) {
   function paint(model, ui, t) {
     const sel = ui.selected;
     const focus = ui.digit || (sel >= 0 && model.state.values[sel]) || 0;
-    const view = { selected: sel, focus, showErrors: ui.showErrors };
+    const view = {
+      selected: sel,
+      focus,
+      blocked: focus ? blockedBy(model.state.values, focus) : null,
+      showErrors: ui.showErrors
+    };
     cells.forEach((cell, i) => {
       paintCell(cell, i, model, view);
       cell.setAttribute("aria-label", cellLabel(model, i, t));

@@ -14,7 +14,7 @@ single solution. Read this before opening the sources.
 | `generator.js` | Bitmask backtracking solver, `countSolutions`, `solvableWithSingles`, `generate(level)`: random full grid, then clues removed in symmetric pairs while the grid stays unique / matches the level. |
 | `levels.js` | Clue floor + technique per level: easy 40 and medium 32 (singles only), hard 28 and expert minimal (needs more than singles, up to 40 tries). |
 | `grid.js` | Index helpers (`rowOf`, `colOf`, `boxOf`), `UNITS`, `PEERS`, digit masks (bits 1..9), `shuffle`. |
-| `view.js` | Builds nine `.sd-box` with cells (`data-id="sudoku-cell-<row>-<col>"`, 1-based, DOM order is box by box — use `data-index`) and the pad (`sudoku-pad-<d>`); paints selection, peers, same digit, errors, hints, notes, remaining counts; flashes completed units. |
+| `view.js` | Builds nine `.sd-box` with cells (`data-id="sudoku-cell-<row>-<col>"`, 1-based, DOM order is box by box — use `data-index`) and the pad (`sudoku-pad-<d>`); paints selection (amber), same digit (solid blue), errors, hints, notes, remaining counts; flashes completed units. Focus digit = pad digit, else the selected cell's value; with a focus digit, cells that can no longer take it are grey (`is-blocked`) instead of the selection's row/col/box shading (`is-peer`). |
 | `input.js` | Click delegation on board / pad, tool buttons, keyboard (digits by `code` so AZERTY works, arrows, Backspace/Delete/0, N, Z / Ctrl+Z, H, P). |
 | `store.js` | localStorage: `sudoku-current` (grid in progress, validated on read), `sudoku-best-times` (seconds per level, 0 = none), `sudoku-prefs` (`showErrors`, `showHint`, both off by default). |
 | `i18n.js`, `rules.js` | FR/EN/ES copy + `formatTime`; rules HTML. |

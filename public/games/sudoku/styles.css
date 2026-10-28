@@ -10,8 +10,10 @@
   --sd-line: #cbd3e3;
   --sd-line-strong: #34405a;
   --sd-peer: #e8edf7;
-  --sd-same: #cad8fb;
-  --sd-selected: #a7bff9;
+  --sd-blocked: #dde2ea;
+  --sd-same: #3d6bef;
+  --sd-same-ink: #ffffff;
+  --sd-selected: #ffd96a;
   --sd-user: #2f5ed8;
   --sd-wrong: #d23b3b;
   --sd-wrong-bg: #fde2e2;
@@ -31,8 +33,10 @@
     --sd-line: #2f3a50;
     --sd-line-strong: #0a0e17;
     --sd-peer: #242e44;
-    --sd-same: #34436b;
-    --sd-selected: #44569a;
+    --sd-blocked: #131927;
+    --sd-same: #7c9cff;
+    --sd-same-ink: #0f1522;
+    --sd-selected: #7a5f17;
     --sd-user: #9db5ff;
     --sd-wrong: #ff7a7a;
     --sd-wrong-bg: #4a2430;

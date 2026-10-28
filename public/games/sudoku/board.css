@@ -148,12 +148,8 @@
   background: var(--sd-peer);
 }
 
-.sd-cell.is-same {
-  background: var(--sd-same);
-}
-
-.sd-cell.is-selected {
-  background: var(--sd-selected);
+.sd-cell.is-blocked {
+  background: var(--sd-blocked);
 }
 
 .sd-cell.is-hinted {
@@ -166,6 +162,26 @@
 
 .sd-cell.is-wrong:not(.is-selected) {
   background: var(--sd-wrong-bg);
+}
+
+/* The focused digit (solid) and the last tapped cell (amber) never share a look. */
+.sd-cell.is-same {
+  background: var(--sd-same);
+  color: var(--sd-same-ink);
+}
+
+.sd-cell.is-same.is-wrong {
+  background: var(--sd-wrong);
+  color: #ffffff;
+}
+
+.sd-cell.is-selected {
+  background: var(--sd-selected);
+  box-shadow: inset 0 0 0 2px var(--sd-line-strong);
+}
+
+.sd-cell.is-selected.is-same {
+  color: var(--sd-ink);
 }
 
 .sd-cell.is-flash {
@@ -282,7 +298,13 @@
 }
 
 .sd-key.is-focus {
-  background: var(--sd-accent-soft);
+  background: var(--sd-same);
+  color: var(--sd-same-ink);
+}
+
+.sd-key.is-focus .sd-key-left {
+  color: inherit;
+  opacity: 0.8;
 }
 
 .sd-key.is-done {
