@@ -36,7 +36,7 @@ Fields:
 | title | string | Yes | Display name on the hub tile |
 | kind | string | Yes | `wordpack` \| `custom` \| `external` |
 | category | string | Yes | `cartesdes` \| `mots` \| `autres` — which hub tab the tile appears under |
-| added | string | Yes | `YYYY-MM-DD`, the day the game joined the catalog. Hub sort "newest" / "oldest" (`hub-sort.js`). Same day keeps catalog order. Missing sorts as oldest |
+| added | string | Yes | `YYYY-MM-DD`, the day the game joined the catalog. Hub sort "newest" (the default) uses it. Same day keeps catalog order. Missing sorts last |
 | engine | string | wordpack only | e.g. `wordplayer` |
 | launch | string | Yes | Relative path or external URL to open |
 | data | string | wordpack only | Path to the game's word JSON |
@@ -326,3 +326,8 @@ Impact: 0009 must run before the deploy, otherwise every room route answers 500.
 Change: `HubGameEntry` gains `added` (`YYYY-MM-DD`). New public `GET /api/popular` returns match counts per game for the last 182 days. Browser key `muchogames-hub-sort` remembers the open sort (`recent` | `oldest` | `popular`).
 Reason: Owner request: sort the hub tabs by newest, oldest, or most played (decision 0052).
 Impact: Functions: 8 of 12. No new table. A failed `/api/popular` makes "most popular" use `muchogames-match-counts` on this browser instead.
+
+## 2026-10-28 - Hub sort default
+
+Change: `muchogames-hub-sort` no longer stores `oldest`. A browser with no saved sort opens the hub on the Tous tab, sorted newest first.
+Reason: Owner request. The "least recent" row is gone.

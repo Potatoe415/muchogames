@@ -1,29 +1,27 @@
-// Sort control on the hub category bar. "Recent" / "oldest" use each
-// game's `added` date in hub-config. "Popular" uses site-wide match
-// counts from GET /api/popular, or this browser's match counts when
-// that request fails (offline, `npm run dev` without the function).
+// Sort control on the hub category bar. "Recent" (the default) uses each
+// game's `added` date in hub-config, newest first. "Popular" uses
+// site-wide match counts from GET /api/popular, or this browser's match
+// counts when that request fails (offline, `npm run dev` without the function).
 const SORT_KEY = "muchogames-hub-sort";
 const LOCAL_COUNTS_KEY = "muchogames-match-counts";
 const POPULAR_URL = "/api/popular";
-const SORTS = ["recent", "oldest", "popular"];
+const DEFAULT_SORT = "recent";
+const SORTS = ["recent", "popular"];
 
 const COPY = {
   fr: {
     button: "Trier les jeux",
     recent: "Plus récents",
-    oldest: "Moins récents",
     popular: "Plus populaires"
   },
   en: {
     button: "Sort games",
     recent: "Newest",
-    oldest: "Oldest",
     popular: "Most popular"
   },
   es: {
     button: "Ordenar los juegos",
     recent: "Más recientes",
-    oldest: "Menos recientes",
     popular: "Más populares"
   }
 };
@@ -34,9 +32,9 @@ let sortMenu = null;
 export function readStoredSort() {
   try {
     const stored = localStorage.getItem(SORT_KEY) || "";
-    return SORTS.includes(stored) ? stored : "";
+    return SORTS.includes(stored) ? stored : DEFAULT_SORT;
   } catch {
-    return "";
+    return DEFAULT_SORT;
   }
 }
 
@@ -119,7 +117,6 @@ export function revealActiveTab(nav) {
 }
 
 function compareRanked(a, b, mode, popular) {
-  if (mode === "oldest") return byAdded(a, b);
   if (mode === "popular") {
     const delta = countOf(popular, b.game.id) - countOf(popular, a.game.id);
     if (delta) return delta;

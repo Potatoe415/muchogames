@@ -81,7 +81,7 @@ const SWIPE_THRESHOLD_PX = 50;
 const state = {
   games: [],
   settings: null,
-  category: "cartesdes",
+  category: "tous",
   lang: readStoredLang(),
   sort: readStoredSort(),
   popular: new Map()
@@ -240,7 +240,6 @@ async function initializeDashboard() {
     state.games = await response.json();
     state.settings = await settingsRequest;
     persistLang(state.lang);
-    if (myGames().length > 0) state.category = MY_GAMES;
     renderLangSwitcher();
     renderCategoryTabs();
     renderHubAnnouncement();
@@ -322,7 +321,7 @@ function availableCategories() {
 // A star toggled on a tile can empty "My games" while it is the open tab.
 function refreshAfterFavoriteChange() {
   if (state.category === MY_GAMES && myGames().length === 0) {
-    state.category = "cartesdes";
+    state.category = "tous";
   }
   renderCategoryTabs();
   renderGames();
