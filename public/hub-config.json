@@ -162,6 +162,16 @@
     "players": [1, 2]
   },
   {
+    "id": "sudoku",
+    "title": "Sudoku",
+    "kind": "custom",
+    "category": "autres",
+    "added": "2026-10-28",
+    "launch": "/games/sudoku/index.html",
+    "thumbnail": "/games/sudoku/assets/thumbnail.svg",
+    "players": [1, 1]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",

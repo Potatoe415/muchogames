@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#eef2f9" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="board.css" />
+  </head>
+  <body>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Sudoku</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="sudoku-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="sd-lang-switch">
+              <button
+                type="button"
+                class="sd-chip"
+                data-lang="fr"
+                data-id="sudoku-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="sd-chip"
+                data-lang="en"
+                data-id="sudoku-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="sd-chip"
+                data-lang="es"
+                data-id="sudoku-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="sudoku-options-game">
+            <p class="options-panel-section-title" data-i18n="game">Partie</p>
+            <label class="sd-switch" data-id="sudoku-show-errors">
+              <input type="checkbox" data-id="sudoku-show-errors-toggle" />
+              <span data-i18n="showErrors"></span>
+            </label>
+            <div class="sd-option-actions" data-id="sudoku-options-play">
+              <button
+                type="button"
+                class="sd-option-button"
+                data-id="sudoku-fill-notes-button"
+                data-i18n="fillNotes"
+              ></button>
+              <button
+                type="button"
+                class="sd-option-button"
+                data-id="sudoku-options-change-level"
+                data-i18n="changeLevel"
+              ></button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="game-options-rules">
+            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+            <div
+              class="rules-modal-content"
+              data-id="sudoku-rules-content"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="sd-app" data-id="sudoku-app">
+      <section class="sd-start" data-id="sudoku-start-screen">
+        <div class="sd-card">
+          <h2 class="sd-logo" data-i18n="title">Sudoku</h2>
+          <p class="sd-pitch" data-i18n="pitch"></p>
+          <button
+            type="button"
+            class="sd-resume"
+            data-id="sudoku-resume-button"
+            hidden
+          >
+            <span class="sd-resume-name" data-i18n="resume"></span>
+            <span class="sd-resume-info" data-resume-info></span>
+          </button>
+          <p class="sd-choose" data-i18n="chooseLevel"></p>
+          <div class="sd-levels" data-id="sudoku-level-list">
+            <button
+              type="button"
+              class="sd-level"
+              data-level="easy"
+              data-id="sudoku-level-easy"
+            >
+              <span class="sd-level-name" data-i18n="easy"></span>
+              <span class="sd-level-info" data-i18n="easyInfo"></span>
+              <span class="sd-level-best" data-level-best></span>
+            </button>
+            <button
+              type="button"
+              class="sd-level"
+              data-level="medium"
+              data-id="sudoku-level-medium"
+            >
+              <span class="sd-level-name" data-i18n="medium"></span>
+              <span class="sd-level-info" data-i18n="mediumInfo"></span>
+              <span class="sd-level-best" data-level-best></span>
+            </button>
+            <button
+              type="button"
+              class="sd-level"
+              data-level="hard"
+              data-id="sudoku-level-hard"
+            >
+              <span class="sd-level-name" data-i18n="hard"></span>
+              <span class="sd-level-info" data-i18n="hardInfo"></span>
+              <span class="sd-level-best" data-level-best></span>
+            </button>
+            <button
+              type="button"
+              class="sd-level"
+              data-level="expert"
+              data-id="sudoku-level-expert"
+            >
+              <span class="sd-level-name" data-i18n="expert"></span>
+              <span class="sd-level-info" data-i18n="expertInfo"></span>
+              <span class="sd-level-best" data-level-best></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sd-stage" data-id="sudoku-stage" hidden>
+        <div class="sd-hud" data-id="sudoku-hud">
+          <span class="sd-hud-level" data-id="sudoku-hud-level"></span>
+          <span class="sd-hud-item" data-id="sudoku-hud-mistakes">
+            <span data-i18n="mistakes">Erreurs</span>
+            <strong data-id="sudoku-hud-mistakes-value">0</strong>
+          </span>
+          <strong class="sd-hud-time" data-id="sudoku-hud-time">0:00</strong>
+          <button
+            type="button"
+            class="sd-pause"
+            data-id="sudoku-pause-button"
+            aria-label="Pause"
+            data-i18n-aria="pause"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="5" width="4" height="14" rx="1" />
+              <rect x="14" y="5" width="4" height="14" rx="1" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="sd-board-area" data-id="sudoku-board-area">
+          <div class="sd-board" data-id="sudoku-board"></div>
+          <div class="sd-paused" data-id="sudoku-pause-overlay" hidden>
+            <p data-i18n="paused">Pause</p>
+            <button
+              type="button"
+              class="sd-button"
+              data-id="sudoku-continue-button"
+              data-i18n="continue"
+            ></button>
+          </div>
+        </div>
+
+        <div class="sd-controls" data-id="sudoku-controls">
+          <div class="sd-tools" data-id="sudoku-tools">
+            <button type="button" class="sd-tool" data-id="sudoku-undo-button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 14 4 9l5-5" />
+                <path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11" />
+              </svg>
+              <span data-i18n="undo"></span>
+            </button>
+            <button type="button" class="sd-tool" data-id="sudoku-erase-button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="m7 21-4.3-4.3a1 1 0 0 1 0-1.4l9.6-9.6a1 1 0 0 1 1.4 0l5.6 5.6a1 1 0 0 1 0 1.4L11 21"
+                />
+                <path d="M22 21H7M5 11l9 9" />
+              </svg>
+              <span data-i18n="erase"></span>
+            </button>
+            <button
+              type="button"
+              class="sd-tool sd-tool-notes"
+              data-id="sudoku-notes-toggle"
+              aria-pressed="false"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20h9" />
+                <path
+                  d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"
+                />
+              </svg>
+              <span data-i18n="notes"></span>
+            </button>
+            <button type="button" class="sd-tool" data-id="sudoku-hint-button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 18h6M10 22h4" />
+                <path
+                  d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2Z"
+                />
+              </svg>
+              <span data-i18n="hint"></span>
+            </button>
+          </div>
+          <div class="sd-pad" data-id="sudoku-pad"></div>
+        </div>
+
+        <div class="sd-overlay" data-id="sudoku-end" hidden>
+          <div class="sd-card">
+            <h2 class="sd-overlay-title" data-i18n="won"></h2>
+            <p data-id="sudoku-end-line"></p>
+            <p class="sd-end-stats" data-id="sudoku-end-stats"></p>
+            <p class="sd-end-best" data-id="sudoku-end-best"></p>
+            <div class="sd-actions">
+              <button
+                type="button"
+                class="sd-button"
+                data-id="sudoku-replay-button"
+                data-i18n="replay"
+              ></button>
+              <button
+                type="button"
+                class="sd-button sd-button-ghost"
+                data-id="sudoku-change-level-button"
+                data-i18n="changeLevel"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

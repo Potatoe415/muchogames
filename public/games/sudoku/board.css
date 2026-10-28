@@ -1,0 +1,330 @@
+/* Play stage: HUD, square grid sized to its area (container query units),
+   tools and digit pad. Portrait: pad under the grid. Landscape: pad on the
+   right as a 3×3 block. */
+.sd-stage {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4px 10px max(12px, env(safe-area-inset-bottom));
+}
+
+.sd-hud {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 36px;
+  font-size: 0.9rem;
+}
+
+.sd-hud-level {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--sd-accent-soft);
+  color: var(--sd-accent);
+  font-weight: 800;
+}
+
+.sd-hud-item {
+  color: var(--sd-muted);
+}
+
+.sd-hud-item strong {
+  color: var(--sd-ink);
+}
+
+.sd-hud-time {
+  margin-left: auto;
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.sd-pause {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--sd-surface);
+  color: var(--sd-ink);
+  box-shadow: var(--sd-shadow);
+  cursor: pointer;
+}
+
+.sd-pause svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* --- Grid --- */
+.sd-board-area {
+  position: relative;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  container-type: size;
+}
+
+.sd-board {
+  --side: min(100cqw, 100cqh);
+  width: var(--side);
+  height: var(--side);
+  display: grid;
+  grid-template: repeat(3, minmax(0, 1fr)) / repeat(3, minmax(0, 1fr));
+  gap: 2px;
+  padding: 2px;
+  border-radius: 12px;
+  background: var(--sd-line-strong);
+  box-shadow: var(--sd-shadow);
+  overflow: hidden;
+}
+
+.sd-box {
+  display: grid;
+  grid-template: repeat(3, minmax(0, 1fr)) / repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--sd-line);
+}
+
+.sd-cell {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: none;
+  background: var(--sd-surface);
+  color: var(--sd-user);
+  font-size: calc(var(--side) * 0.062);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.12s;
+}
+
+.sd-cell:focus-visible {
+  outline: 3px solid var(--sd-accent);
+  outline-offset: -3px;
+}
+
+.sd-value,
+.sd-notes {
+  grid-area: 1 / 1;
+}
+
+.sd-value {
+  align-self: center;
+  line-height: 1;
+}
+
+.sd-notes {
+  display: grid;
+  grid-template: repeat(3, minmax(0, 1fr)) / repeat(3, minmax(0, 1fr));
+  place-items: center;
+  padding: 1px;
+  font-size: calc(var(--side) * 0.026);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--sd-muted);
+}
+
+.sd-note.is-focus {
+  color: var(--sd-accent);
+}
+
+.sd-cell.is-given {
+  color: var(--sd-ink);
+  font-weight: 700;
+}
+
+.sd-cell.is-peer {
+  background: var(--sd-peer);
+}
+
+.sd-cell.is-same {
+  background: var(--sd-same);
+}
+
+.sd-cell.is-selected {
+  background: var(--sd-selected);
+}
+
+.sd-cell.is-hinted {
+  color: var(--sd-hinted);
+}
+
+.sd-cell.is-wrong {
+  color: var(--sd-wrong);
+}
+
+.sd-cell.is-wrong:not(.is-selected) {
+  background: var(--sd-wrong-bg);
+}
+
+.sd-cell.is-flash {
+  animation: sd-flash 0.7s ease;
+}
+
+@keyframes sd-flash {
+  40% {
+    background: var(--sd-flash);
+    transform: scale(0.92);
+  }
+}
+
+.sd-stage.is-paused .sd-value,
+.sd-stage.is-paused .sd-notes {
+  visibility: hidden;
+}
+
+.sd-paused {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 12px;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.sd-paused p {
+  margin: 0;
+}
+
+/* --- Tools and pad --- */
+.sd-controls {
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+}
+
+.sd-tools {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.sd-tool {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  padding: 6px 4px;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--sd-ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sd-tool svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sd-tool:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.sd-tool[aria-pressed="true"] {
+  background: var(--sd-accent);
+  color: #ffffff;
+}
+
+.sd-pad {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.sd-key {
+  display: grid;
+  place-content: center;
+  gap: 1px;
+  height: clamp(50px, 13vw, 66px);
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: var(--sd-surface);
+  color: var(--sd-accent);
+  box-shadow: var(--sd-shadow);
+  cursor: pointer;
+}
+
+.sd-key-digit {
+  font-size: clamp(1.45rem, 6vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sd-key-left {
+  min-height: 0.8em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--sd-muted);
+}
+
+.sd-key.is-focus {
+  background: var(--sd-accent-soft);
+}
+
+.sd-key.is-done {
+  opacity: 0.35;
+}
+
+.sd-key:active,
+.sd-tool:active {
+  transform: scale(0.94);
+}
+
+@media (min-aspect-ratio: 6/5) {
+  .sd-stage {
+    max-width: 1100px;
+    grid-template-columns: minmax(0, 1fr) clamp(210px, 32vw, 360px);
+    grid-template-rows: auto minmax(0, 1fr);
+    column-gap: 22px;
+  }
+
+  .sd-hud {
+    grid-column: 1 / -1;
+  }
+
+  .sd-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sd-pad {
+    flex: 0 1 340px;
+    min-height: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .sd-key {
+    height: auto;
+    min-height: 0;
+  }
+
+  .sd-key-digit {
+    font-size: clamp(1.4rem, 3.4vw, 2.3rem);
+  }
+}

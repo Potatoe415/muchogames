@@ -1,0 +1,325 @@
+/* Sudoku: calm paper-and-ink skin over the shared header, light and dark.
+   The play area blocks text selection, callouts and double-tap zoom. */
+:root {
+  --sd-bg: #eef2f9;
+  --sd-surface: #ffffff;
+  --sd-ink: #1d2738;
+  --sd-muted: #66728a;
+  --sd-accent: #3d6bef;
+  --sd-accent-soft: #dfe7fd;
+  --sd-line: #cbd3e3;
+  --sd-line-strong: #34405a;
+  --sd-peer: #e8edf7;
+  --sd-same: #cad8fb;
+  --sd-selected: #a7bff9;
+  --sd-user: #2f5ed8;
+  --sd-wrong: #d23b3b;
+  --sd-wrong-bg: #fde2e2;
+  --sd-hinted: #12865a;
+  --sd-flash: #ffeeb0;
+  --sd-shadow: 0 2px 8px rgba(29, 39, 56, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sd-bg: #121826;
+    --sd-surface: #1d2536;
+    --sd-ink: #e8edf6;
+    --sd-muted: #93a0b8;
+    --sd-accent: #7c9cff;
+    --sd-accent-soft: #2a3658;
+    --sd-line: #2f3a50;
+    --sd-line-strong: #0a0e17;
+    --sd-peer: #242e44;
+    --sd-same: #34436b;
+    --sd-selected: #44569a;
+    --sd-user: #9db5ff;
+    --sd-wrong: #ff7a7a;
+    --sd-wrong-bg: #4a2430;
+    --sd-hinted: #5fd3a0;
+    --sd-flash: #5a5120;
+    --sd-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--sd-bg);
+  color: var(--sd-ink);
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: var(--sd-bg);
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nav-title {
+  color: var(--sd-ink);
+  letter-spacing: 0.04em;
+}
+
+.back-button,
+.options-button {
+  background: var(--sd-accent);
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.sd-lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.sd-chip {
+  min-width: 56px;
+  padding: 8px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sd-chip.active {
+  border-color: #3d6bef;
+  background: #dfe7fd;
+}
+
+.sd-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sd-switch input {
+  width: 20px;
+  height: 20px;
+  accent-color: #3d6bef;
+}
+
+.sd-option-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.sd-option-actions[hidden] {
+  display: none;
+}
+
+.sd-option-button {
+  padding: 10px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sd-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sd-app [hidden] {
+  display: none !important;
+}
+
+.sd-app button {
+  touch-action: manipulation;
+}
+
+/* --- Start screen and end card --- */
+.sd-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.sd-card {
+  width: min(94vw, 460px);
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: var(--sd-surface);
+  box-shadow: var(--sd-shadow);
+  text-align: center;
+}
+
+.sd-card p {
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+
+.sd-logo {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 9vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: var(--sd-accent);
+}
+
+.sd-pitch {
+  color: var(--sd-muted);
+}
+
+.sd-choose {
+  font-weight: 800;
+}
+
+.sd-resume {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  margin: 4px 0 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: var(--sd-accent);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sd-resume-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.sd-resume-info {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.sd-levels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sd-level {
+  --level: #3bb273;
+  display: grid;
+  gap: 3px;
+  padding: 14px 10px 12px;
+  border: 2px solid var(--sd-line);
+  border-top: 6px solid var(--level);
+  border-radius: 14px;
+  background: var(--sd-surface);
+  color: var(--sd-ink);
+  cursor: pointer;
+}
+
+.sd-level[data-level="medium"] {
+  --level: #3d8bef;
+}
+
+.sd-level[data-level="hard"] {
+  --level: #f08a24;
+}
+
+.sd-level[data-level="expert"] {
+  --level: #d93b5a;
+}
+
+.sd-level:hover {
+  border-color: var(--level);
+}
+
+.sd-level-name {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--level);
+}
+
+.sd-level-info,
+.sd-level-best {
+  font-size: 0.8rem;
+  color: var(--sd-muted);
+}
+
+.sd-level-best {
+  font-weight: 700;
+}
+
+.sd-level:active,
+.sd-resume:active,
+.sd-button:active {
+  transform: scale(0.97);
+}
+
+.sd-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(18, 24, 38, 0.45);
+}
+
+.sd-overlay-title {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--sd-accent);
+}
+
+.sd-end-stats {
+  color: var(--sd-muted);
+}
+
+.sd-end-best {
+  font-weight: 800;
+  color: var(--sd-hinted);
+}
+
+.sd-actions {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.sd-button {
+  min-width: 210px;
+  min-height: 48px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  background: var(--sd-accent);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sd-button-ghost {
+  border: 2px solid var(--sd-line);
+  background: transparent;
+  color: var(--sd-ink);
+}
