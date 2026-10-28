@@ -152,6 +152,10 @@
   background: var(--sd-blocked);
 }
 
+.sd-cell.is-open {
+  background: var(--sd-open);
+}
+
 .sd-cell.is-hinted {
   color: var(--sd-hinted);
 }

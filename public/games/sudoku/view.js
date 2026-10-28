@@ -83,6 +83,7 @@ function paintCell(cell, i, model, view) {
     !blocked && selected >= 0 && i !== selected && sharesUnit(i, selected)
   );
   c.toggle("is-blocked", Boolean(blocked?.[i]) && !same);
+  c.toggle("is-open", Boolean(blocked) && !blocked[i]);
   c.toggle("is-same", same);
   c.toggle("is-wrong", showErrors && model.isWrong(i));
   c.toggle("is-hinted", hinted[i] === 1);

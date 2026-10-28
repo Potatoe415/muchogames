@@ -10,7 +10,8 @@
   --sd-line: #cbd3e3;
   --sd-line-strong: #34405a;
   --sd-peer: #e8edf7;
-  --sd-blocked: #dde2ea;
+  --sd-blocked: #c3cad7;
+  --sd-open: #ffffff;
   --sd-same: #3d6bef;
   --sd-same-ink: #ffffff;
   --sd-selected: #ffd96a;
@@ -33,7 +34,8 @@
     --sd-line: #2f3a50;
     --sd-line-strong: #0a0e17;
     --sd-peer: #242e44;
-    --sd-blocked: #131927;
+    --sd-blocked: #161c29;
+    --sd-open: #3d4c70;
     --sd-same: #7c9cff;
     --sd-same-ink: #0f1522;
     --sd-selected: #7a5f17;
