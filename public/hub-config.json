@@ -172,6 +172,16 @@
     "players": [1, 1]
   },
   {
+    "id": "bridge",
+    "title": "Bridge",
+    "kind": "custom",
+    "category": "cartesdes",
+    "added": "2026-10-28",
+    "launch": "/games/bridge/index.html",
+    "thumbnail": "/games/bridge/assets/thumbnail.svg",
+    "players": [1, 1]
+  },
+  {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",

@@ -1,0 +1,133 @@
+/* Overlays: deal result, the four hands, score sheet, end of the match. */
+.br-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(4, 20, 12, 0.55);
+  animation: br-fade 0.25s ease;
+}
+
+.br-overlay[data-id="bridge-hands-panel"],
+.br-overlay[data-id="bridge-score-panel"] {
+  z-index: 30;
+}
+
+.br-panel {
+  width: min(92vw, 380px);
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.br-panel-wide {
+  width: min(94vw, 520px);
+}
+
+.br-panel-title {
+  margin: 0 0 6px;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.br-overlay[data-result="win"] .br-panel-title {
+  color: #1f7a4d;
+}
+
+.br-overlay[data-result="loss"] .br-panel-title {
+  color: #b3261e;
+}
+
+.br-panel-line {
+  margin: 0 0 6px;
+  color: #3d5547;
+}
+
+.br-panel-points {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.br-panel-actions {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.br-diagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". n ."
+    "w . e"
+    ". s .";
+  gap: 6px;
+  margin: 8px 0 14px;
+  text-align: left;
+}
+
+.br-diagram-n {
+  grid-area: n;
+}
+
+.br-diagram-e {
+  grid-area: e;
+}
+
+.br-diagram-s {
+  grid-area: s;
+}
+
+.br-diagram-w {
+  grid-area: w;
+}
+
+.br-diagram-title {
+  margin: 0 0 2px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4f7a62;
+}
+
+.br-diagram .br-lines {
+  box-shadow: inset 0 0 0 1px #d3ddd6;
+  font-size: 0.78rem;
+}
+
+.br-score {
+  margin: 8px 0 14px;
+  overflow-x: auto;
+}
+
+.br-score table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.br-score th,
+.br-score td {
+  padding: 6px 4px;
+  border-bottom: 1px solid #dfe7e1;
+}
+
+.br-score th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #4f7a62;
+}
+
+.br-score-total td {
+  border-bottom: none;
+  font-weight: 900;
+}
+
+@keyframes br-fade {
+  from {
+    opacity: 0;
+  }
+}

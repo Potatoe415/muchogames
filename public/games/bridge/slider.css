@@ -1,0 +1,113 @@
+/* Level slider on the start screen: a 4-step range whose thumb centres line
+   up with the 4 tappable labels below it (one grid column each). The fill
+   and thumb take the colour of the selected level. */
+.br-slider {
+  --thumb: 30px;
+  --track: 10px;
+  --level-color: #d9a12b;
+}
+
+.br-slider[data-level="easy"] {
+  --level-color: #3b8f4f;
+}
+
+.br-slider[data-level="hard"] {
+  --level-color: #d9822b;
+}
+
+.br-slider[data-level="expert"] {
+  --level-color: #b3261e;
+}
+
+.br-range {
+  display: block;
+  width: calc(75% + var(--thumb));
+  height: var(--thumb);
+  margin: 0 auto;
+  background: transparent;
+  cursor: pointer;
+  touch-action: pan-y;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.br-range:focus-visible {
+  outline: 3px solid #1f7a4d;
+  outline-offset: 4px;
+  border-radius: 999px;
+}
+
+.br-range::-webkit-slider-runnable-track {
+  height: var(--track);
+  border-radius: 999px;
+  --stop: calc(var(--thumb) / 2 + (100% - var(--thumb)) * var(--fill, 0.33));
+  background: linear-gradient(
+    to right,
+    var(--level-color) var(--stop),
+    #d6e2da var(--stop)
+  );
+}
+
+.br-range::-webkit-slider-thumb {
+  width: var(--thumb);
+  height: var(--thumb);
+  margin-top: calc((var(--track) - var(--thumb)) / 2);
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: var(--level-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  -webkit-appearance: none;
+}
+
+.br-range::-moz-range-track {
+  height: var(--track);
+  border-radius: 999px;
+  background: #d6e2da;
+}
+
+.br-range::-moz-range-progress {
+  height: var(--track);
+  border-radius: 999px;
+  background: var(--level-color);
+}
+
+.br-range::-moz-range-thumb {
+  box-sizing: border-box;
+  width: var(--thumb);
+  height: var(--thumb);
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: var(--level-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.br-ticks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4px;
+}
+
+.br-tick {
+  min-height: 36px;
+  padding: 4px 2px;
+  border: none;
+  background: none;
+  color: #4f7a62;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.br-tick.active {
+  color: var(--level-color);
+  font-weight: 900;
+}
+
+.br-level-record {
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4f7a62;
+}

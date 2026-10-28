@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <radialGradient id="felt" cx="50%" cy="30%" r="85%">
+      <stop offset="0" stop-color="#2a8a5c"/>
+      <stop offset="1" stop-color="#0b3120"/>
+    </radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f1ecdf"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-opacity="0.5"/>
+    </filter>
+    <g id="card">
+      <rect width="120" height="170" rx="12" fill="url(#face)" stroke="#cfc7b5" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="400" height="500" fill="url(#felt)"/>
+  <text x="200" y="74" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700" fill="#fdf8e8">Bridge</text>
+  <g filter="url(#shadow)">
+    <g transform="translate(70 170) rotate(-18 60 85)">
+      <use href="#card"/>
+      <text x="14" y="42" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#17171a">A</text>
+      <text x="16" y="76" font-family="Georgia, serif" font-size="30" fill="#17171a">`</text>
+      <text x="64" y="150" font-family="Georgia, serif" font-size="58" fill="#17171a">`</text>
+    </g>
+    <g transform="translate(140 150) rotate(-6 60 85)">
+      <use href="#card"/>
+      <text x="14" y="42" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#c8102e">R</text>
+      <text x="16" y="76" font-family="Georgia, serif" font-size="30" fill="#c8102e">e</text>
+      <text x="64" y="150" font-family="Georgia, serif" font-size="58" fill="#c8102e">e</text>
+    </g>
+    <g transform="translate(210 160) rotate(8 60 85)">
+      <use href="#card"/>
+      <text x="14" y="42" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#c8102e">D</text>
+      <text x="16" y="76" font-family="Georgia, serif" font-size="30" fill="#c8102e">f</text>
+      <text x="64" y="150" font-family="Georgia, serif" font-size="58" fill="#c8102e">f</text>
+    </g>
+  </g>
+  <g transform="translate(200 410)" font-family="system-ui, sans-serif" font-weight="800" text-anchor="middle">
+    <rect x="-118" y="-30" width="236" height="52" rx="14" fill="#fdf8e8" filter="url(#shadow)"/>
+    <text x="-70" y="8" font-size="30" fill="#17251d">4</text>
+    <text x="-46" y="9" font-size="30" fill="#c8102e">e</text>
+    <text x="40" y="7" font-size="20" fill="#2f7d4a" letter-spacing="1">SEF 5e</text>
+  </g>
+</svg>

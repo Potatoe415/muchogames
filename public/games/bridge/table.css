@@ -1,0 +1,263 @@
+/* The table: status line, seats around the centre (North and South full
+   width, West and East in narrow columns), the trick, prompt and actions.
+   Card size follows the screen so South's 13 cards always fit. */
+.br-stage {
+  --card-w: min(76px, calc((100vw - 24px) / 7.6), calc(100dvh / 11));
+  --card-h: calc(var(--card-w) * 1.42);
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px max(8px, env(safe-area-inset-right))
+    calc(8px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+}
+
+.br-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #cfeadb;
+}
+
+.br-status-contract {
+  padding: 2px 10px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.br-table {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(62px, 1fr) minmax(0, 2.4fr) minmax(62px, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "north north north"
+    "west center east"
+    "south south south";
+  gap: 6px;
+}
+
+.br-seat {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.br-seat-north {
+  grid-area: north;
+}
+
+.br-seat-south {
+  grid-area: south;
+  flex-direction: column-reverse;
+}
+
+.br-seat-west {
+  grid-area: west;
+  justify-content: center;
+}
+
+.br-seat-east {
+  grid-area: east;
+  justify-content: center;
+}
+
+.br-tag {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  max-width: 100%;
+  padding: 3px 9px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.28);
+  font-size: 0.76rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.br-tag.is-vul {
+  background: rgba(200, 16, 46, 0.55);
+}
+
+.br-tag.is-turn {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(246, 196, 69, 0.6);
+}
+
+.br-badge {
+  padding: 0 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #17251d;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.br-badge-dealer {
+  background: var(--accent);
+}
+
+.br-badge-thinking {
+  background: transparent;
+  color: #ffffff;
+  animation: br-blink 1s infinite;
+}
+
+.br-center {
+  grid-area: center;
+  position: relative;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+}
+
+.br-center.is-auction .br-trick,
+.br-center:not(.is-auction) .br-auction {
+  display: none;
+}
+
+.br-trick {
+  position: relative;
+  width: calc(var(--card-w) * 3.3);
+  height: calc(var(--card-h) * 2.3);
+  max-height: 100%;
+}
+
+.br-trick.is-last {
+  opacity: 0.75;
+}
+
+.br-slot {
+  position: absolute;
+}
+
+.br-slot[data-slot="0"] {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.br-slot[data-slot="2"] {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.br-slot[data-slot="3"] {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.br-slot[data-slot="1"] {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.br-slot .br-cardface {
+  animation: br-drop 0.2s ease-out;
+}
+
+.br-slot .br-cardface.is-winner {
+  box-shadow:
+    0 0 0 3px var(--accent),
+    0 3px 8px rgba(0, 0, 0, 0.45);
+}
+
+.br-message {
+  min-height: 1.3em;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff6d6;
+}
+
+.br-actions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.br-action {
+  flex: 1 1 0;
+  max-width: 96px;
+  min-height: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 4px 2px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f4fbf6;
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.br-action:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.br-action svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (min-width: 760px) {
+  .br-table {
+    grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr) minmax(120px, 1fr);
+  }
+
+  .br-tag {
+    font-size: 0.86rem;
+  }
+
+  .br-action {
+    font-size: 0.78rem;
+  }
+}
+
+@keyframes br-drop {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+}
+
+@keyframes br-blink {
+  50% {
+    opacity: 0.3;
+  }
+}

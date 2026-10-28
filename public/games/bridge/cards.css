@@ -1,0 +1,148 @@
+/* Card faces, the fanned hands of North and South, suit-line hands for
+   West and East (and the diagram), card backs. */
+.br-cardface {
+  position: relative;
+  flex: 0 0 auto;
+  width: var(--card-w);
+  height: var(--card-h);
+  padding: 0;
+  border: 1px solid #cfc7b5;
+  border-radius: calc(var(--card-w) * 0.12);
+  background: linear-gradient(180deg, #ffffff, #f6f2e7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.br-cardface-rank {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  font-size: calc(var(--card-w) * 0.34);
+  letter-spacing: -0.04em;
+}
+
+.br-cardface-suit {
+  position: absolute;
+  top: 36%;
+  left: 8%;
+  font-size: calc(var(--card-w) * 0.3);
+}
+
+.br-cardface-pip {
+  position: absolute;
+  right: 8%;
+  bottom: 6%;
+  font-size: calc(var(--card-w) * 0.56);
+}
+
+.br-fan {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding-top: 8px;
+}
+
+.br-fan .br-cardface + .br-cardface {
+  margin-left: calc(var(--card-w) * -0.54);
+}
+
+.br-fan .br-cardface.is-new-suit {
+  margin-left: calc(var(--card-w) * -0.38);
+}
+
+.br-fan .br-cardface {
+  cursor: default;
+  transition:
+    transform 0.12s ease,
+    opacity 0.12s ease;
+}
+
+.br-fan .br-cardface.is-playable {
+  cursor: pointer;
+  transform: translateY(-6px);
+}
+
+.br-fan .br-cardface.is-playable:hover,
+.br-fan .br-cardface.is-playable:focus-visible {
+  transform: translateY(-12px);
+  outline: none;
+}
+
+.br-fan .br-cardface.is-dim {
+  opacity: 0.55;
+  filter: grayscale(0.4);
+}
+
+.br-cardface.is-hint {
+  box-shadow:
+    0 0 0 3px var(--accent),
+    0 0 14px rgba(246, 196, 69, 0.9);
+}
+
+.br-lines {
+  display: grid;
+  gap: 1px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background: #fbfaf4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.br-line {
+  display: flex;
+  gap: 4px;
+  min-width: 0;
+}
+
+.br-line-suit {
+  flex: 0 0 auto;
+  width: 1em;
+}
+
+.br-line-cards {
+  color: #17251d;
+  word-break: break-word;
+}
+
+.br-backs {
+  display: flex;
+  justify-content: center;
+}
+
+.br-back {
+  flex: 0 0 auto;
+  width: calc(var(--card-w) * 0.55);
+  height: calc(var(--card-w) * 0.78);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: repeating-linear-gradient(45deg, #2a4fa0 0 4px, #3560bd 4px 8px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.br-backs .br-back + .br-back {
+  margin-left: calc(var(--card-w) * -0.42);
+}
+
+.br-seat-west .br-backs,
+.br-seat-east .br-backs {
+  flex-direction: column;
+  align-items: center;
+}
+
+.br-seat-west .br-back + .br-back,
+.br-seat-east .br-back + .br-back {
+  margin-left: 0;
+  margin-top: calc(var(--card-w) * -0.66);
+}
+
+@media (min-width: 760px) {
+  .br-lines {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+}
