@@ -69,6 +69,7 @@ body{
   align-items:center;
   justify-content:center;
   min-height: calc(100vh - 90px);
+  min-height: calc(100dvh - 90px);
   padding: 20px 16px 40px;
 }
 
@@ -95,6 +96,17 @@ body{
 
 .splashStart{
   min-width: 180px;
+}
+
+.splashActions{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.splashActions .btn{
+  flex: none;
 }
 
 .card{

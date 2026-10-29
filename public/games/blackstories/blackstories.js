@@ -18,6 +18,14 @@
 
 import { loadRulesIfExists } from "../../shared/js/engine.js";
 
+import {
+  clearSave,
+  idsToIndexes,
+  readSave,
+  resumeLabel,
+  writeSave,
+} from "./blackstories-save.js";
+
 const els = {
   title: document.getElementById("title"),
   shortStory: document.getElementById("shortStory"),
@@ -39,6 +47,7 @@ const els = {
   splashScreen: document.getElementById("splashScreen"),
   gameContainer: document.getElementById("gameContainer"),
   startButton: document.getElementById("startButton"),
+  resumeButton: document.getElementById("resumeButton"),
 };
 
 const FILES = {
@@ -104,6 +113,11 @@ let revealed = false;
 let history = [];
 let historyPos = -1;
 
+// Saving starts only once a session is started or resumed, so the splash
+// never overwrites the previous session's save.
+let inSession = false;
+let pendingSave = null;
+
 function normalizeLang(lang) {
   const l = (lang || "").toLowerCase().trim();
   return (l === "fr" || l === "en" || l === "es") ? l : "fr";
@@ -112,6 +126,7 @@ function normalizeLang(lang) {
 function setLangUI(lang) {
   currentLang = normalizeLang(lang);
   localStorage.setItem("blackstories_lang", currentLang);
+  if (els.resumeButton) els.resumeButton.textContent = resumeLabel(currentLang);
 
   els.langBtns.forEach(btn => {
     const isActive = normalizeLang(btn.dataset.lang) === currentLang;
@@ -223,12 +238,37 @@ function goNext() {
   history.push(nextIdx);
   historyPos = history.length - 1;
   renderByIndex(nextIdx);
+  saveSession();
 }
 
 function goPrev() {
   if (historyPos <= 0) return;
   historyPos -= 1;
   renderByIndex(history[historyPos]);
+  saveSession();
+}
+
+function historyIds() {
+  const stories = getStories();
+  return history.map((i) => stories[i]?.id).filter(Boolean);
+}
+
+function saveSession() {
+  if (!inSession) return;
+  if (historyPos < 0) {
+    clearSave();
+    return;
+  }
+  writeSave({ lang: currentLang, history: historyIds(), pos: historyPos, revealed });
+}
+
+function restoreHistory(ids, pos) {
+  const mapped = idsToIndexes(ids, pos, getStories());
+  if (!mapped) return false;
+  history = mapped.history;
+  historyPos = mapped.pos;
+  renderByIndex(history[historyPos]);
+  return true;
 }
 
 async function loadOne(lang, url) {
@@ -281,27 +321,72 @@ function resetHistoryAndStart() {
   renderByIndex(first);
 }
 
-async function startGame() {
-  if (!(await window.MuchogamesMatch.start("blackstories"))) return;
+function enterSession() {
+  inSession = true;
+  pendingSave = null;
+  els.resumeButton.classList.add("hidden");
+  saveSession();
   els.splashScreen.classList.add("hidden");
   els.gameContainer.classList.remove("hidden");
 }
 
+async function startGame() {
+  if (!(await window.MuchogamesMatch.start("blackstories"))) return;
+  enterSession();
+}
+
+function resumeGame() {
+  const save = pendingSave;
+  if (!save) return;
+  setLangUI(save.lang);
+  if (!restoreHistory(save.history, save.pos)) return;
+  const sameStory = getStories()[history[historyPos]].id === save.history[save.pos];
+  setReveal(save.revealed && sameStory);
+  window.MuchogamesMatch.resume("blackstories");
+  enterSession();
+  void refreshRules();
+}
+
+// Story ids are shared across the language files, so the history survives a
+// language change (stories missing in the new language are skipped).
+function changeLang(lang) {
+  const ids = historyIds();
+  setLangUI(lang);
+  if (!restoreHistory(ids, historyPos)) resetHistoryAndStart();
+  saveSession();
+  void refreshRules();
+}
+
+function showResumeIfSaved() {
+  const save = readSave();
+  if (save && !idsToIndexes(save.history, save.pos, DATA[save.lang] || [])) {
+    clearSave();
+    return;
+  }
+  pendingSave = save;
+  els.resumeButton.classList.toggle("hidden", !save);
+}
+
 function bindEvents() {
   els.langBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      setLangUI(btn.dataset.lang);
-      resetHistoryAndStart();
-      void refreshRules();
-    });
+    btn.addEventListener("click", () => changeLang(btn.dataset.lang));
   });
 
   if (window.GameHeader) {
     window.GameHeader.initOptionsPanel(els.settingsButton, els.settingsPanel);
   }
   els.startButton.addEventListener("click", startGame);
+  els.resumeButton.addEventListener("click", resumeGame);
 
-  els.revealBox.addEventListener("click", () => setReveal(!revealed));
+  els.revealBox.addEventListener("click", () => {
+    setReveal(!revealed);
+    saveSession();
+  });
+
+  window.addEventListener("pagehide", saveSession);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") saveSession();
+  });
 
 
   els.nextBtn.addEventListener("click", goNext);
@@ -322,6 +407,7 @@ async function init() {
   bindEvents();
   await loadAll();
   resetHistoryAndStart();
+  showResumeIfSaved();
   await refreshRules();
 }
 
