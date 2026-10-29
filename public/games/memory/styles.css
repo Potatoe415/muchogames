@@ -107,16 +107,8 @@ body {
   box-sizing: border-box;
 }
 
-.memory-pitch,
 .memory-label {
   margin: 0;
-}
-
-.memory-pitch {
-  font-size: 0.95rem;
-}
-
-.memory-label {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.04em;
