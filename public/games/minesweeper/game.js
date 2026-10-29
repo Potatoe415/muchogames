@@ -14,9 +14,9 @@ import { bindInput } from "./input.js";
 import { MAX_SECONDS, levelLayout } from "./levels.js";
 import { createView } from "./view.js";
 
-function createTimer(onTick) {
+function createTimer(onTick, startMs = 0) {
   let startedAt = 0;
-  let banked = 0;
+  let banked = startMs;
   let running = false;
   let paused = false;
   let interval = 0;
@@ -36,6 +36,7 @@ function createTimer(onTick) {
   }
 
   return {
+    elapsed,
     seconds,
     start() {
       running = true;
@@ -54,10 +55,13 @@ function createTimer(onTick) {
   };
 }
 
-export function createGame({ host, level, portrait, t, onHud, onEnd }) {
-  const board = createBoard(levelLayout(level, portrait));
+// `saved` ({ board, elapsed }) resumes a stored match instead of a new one;
+// its board keeps the saved size and orientation.
+export function createGame(options) {
+  const { host, level, portrait, saved, t, onHud, onEnd, onMove } = options;
+  const board = saved?.board ?? createBoard(levelLayout(level, portrait));
   const view = createView({ host, board, t });
-  const timer = createTimer(() => hud());
+  const timer = createTimer(() => hud(), saved?.elapsed);
   let flagMode = false;
   let over = false;
 
@@ -68,7 +72,10 @@ export function createGame({ host, level, portrait, t, onHud, onEnd }) {
   function settle(changed) {
     view.update(changed);
     const won = isWon(board);
-    if (!won && board.exploded < 0) return hud();
+    if (!won && board.exploded < 0) {
+      hud();
+      return onMove();
+    }
     over = true;
     timer.stop();
     view.revealEnd(won);
@@ -92,12 +99,15 @@ export function createGame({ host, level, portrait, t, onHud, onEnd }) {
     if (over || !toggleFlag(board, index)) return;
     view.update([index]);
     hud();
+    onMove();
   }
 
   const unbind = bindInput(host, { onPrimary, onFlag });
+  if (board.placed) timer.start();
   hud();
 
   return {
+    snapshot: () => (over ? null : { level, elapsed: timer.elapsed(), board }),
     setPaused: (value) => timer.setPaused(value),
     setFlagMode(value) {
       flagMode = value;

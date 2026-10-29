@@ -3,11 +3,13 @@
 import { createGame } from "./game.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
 import { LEVELS, LEVEL_IDS } from "./levels.js";
+import { clearMatch, loadMatch, storeMatch } from "./save.js";
 
 const GAME_ID = "minesweeper";
 const LANG_KEY = "bergamots-lang";
 const BEST_KEY = "minesweeper-best-times";
 const END_DELAY_MS = 700;
+const SAVE_EVERY_MS = 1000;
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
@@ -45,8 +47,10 @@ const page = {
   level: LEVEL_IDS[0],
   flagMode: false,
   game: null,
+  saved: loadMatch(),
   summary: null,
   endTimer: 0,
+  saveTimer: 0,
   starting: false
 };
 
@@ -68,6 +72,13 @@ function renderLevels() {
       LEVELS[id]
     );
     button.querySelector("[data-level-best]").textContent = bestText(id);
+  });
+  const resume = $("minesweeper-resume-button");
+  resume.hidden = !page.saved;
+  if (!page.saved) return;
+  resume.querySelector("[data-resume-info]").textContent = t("resumeInfo", {
+    level: t(page.saved.level),
+    seconds: Math.floor(page.saved.elapsed / 1000)
   });
 }
 
@@ -123,6 +134,8 @@ function onEnd({ won, seconds }) {
     writeStorage(BEST_KEY, JSON.stringify(page.best));
   }
   page.summary = { won, seconds, newBest };
+  clearMatch();
+  page.saved = null;
   window.MuchogamesMatch.finish({ won });
   page.endTimer = setTimeout(() => {
     renderEnd();
@@ -135,15 +148,23 @@ function showScreen(playing) {
   $("minesweeper-stage").hidden = !playing;
 }
 
+// A finished match has no snapshot, so this only ever stores one in play.
+function saveMatch() {
+  const snapshot = page.game?.snapshot();
+  if (snapshot) storeMatch({ ...snapshot, flagMode: page.flagMode });
+}
+
 function unmountGame() {
+  saveMatch();
   clearTimeout(page.endTimer);
+  clearInterval(page.saveTimer);
   page.game?.destroy();
   page.game = null;
   page.summary = null;
   $("minesweeper-end").hidden = true;
 }
 
-function mountGame(level) {
+function mountGame(level, saved) {
   unmountGame();
   page.level = level;
   showScreen(true);
@@ -152,17 +173,24 @@ function mountGame(level) {
     host: $("minesweeper-board"),
     level,
     portrait: stage.clientHeight > stage.clientWidth,
+    saved,
     t,
     onHud,
-    onEnd
+    onEnd,
+    onMove: saveMatch
   });
   page.game.setFlagMode(page.flagMode);
   syncPause();
+  saveMatch();
+  page.saveTimer = setInterval(saveMatch, SAVE_EVERY_MS);
 }
 
+// Quitting is not an end: `finish()` here carries no result and the save
+// stays, offered again by the resume button.
 function returnToStart() {
   unmountGame();
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
+  page.saved = loadMatch();
   showScreen(false);
   applyLanguage();
 }
@@ -177,6 +205,17 @@ async function startMatch(level) {
   else if (page.game) returnToStart();
 }
 
+function resumeMatch() {
+  if (page.starting) return;
+  const saved = loadMatch();
+  page.saved = saved;
+  if (!saved) return renderLevels();
+  window.MuchogamesMatch.resume(GAME_ID);
+  page.flagMode = saved.flagMode;
+  renderMode();
+  mountGame(saved.level, saved);
+}
+
 function syncPause() {
   const optionsOpen = !$("game-options-panel").hidden;
   page.game?.setPaused(optionsOpen || document.hidden);
@@ -186,6 +225,12 @@ function toggleMode() {
   page.flagMode = !page.flagMode;
   page.game?.setFlagMode(page.flagMode);
   renderMode();
+  saveMatch();
+}
+
+function onVisibility() {
+  syncPause();
+  if (document.hidden) saveMatch();
 }
 
 function bindPage() {
@@ -202,9 +247,19 @@ function bindPage() {
       applyLanguage();
     });
   });
+  bindMatch();
+  document.addEventListener("visibilitychange", onVisibility);
+  window.addEventListener("pagehide", unmountGame);
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) returnToStart();
+  });
+}
+
+function bindMatch() {
   document.querySelectorAll("[data-level]").forEach((button) => {
     button.addEventListener("click", () => startMatch(button.dataset.level));
   });
+  $("minesweeper-resume-button").addEventListener("click", resumeMatch);
   $("minesweeper-new-game-button").addEventListener("click", () =>
     startMatch(page.level)
   );
@@ -216,11 +271,6 @@ function bindPage() {
     $("minesweeper-end").hidden = true;
   });
   $("minesweeper-mode-toggle").addEventListener("click", toggleMode);
-  document.addEventListener("visibilitychange", syncPause);
-  window.addEventListener("pagehide", unmountGame);
-  window.addEventListener("pageshow", (event) => {
-    if (event.persisted) returnToStart();
-  });
 }
 
 bindPage();

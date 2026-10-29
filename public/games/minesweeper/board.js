@@ -57,10 +57,28 @@ export function placeMines(board, first, random = Math.random) {
     [pool[n], pool[pick]] = [pool[pick], pool[n]];
     board.mine[pool[n]] = 1;
   }
+  countAdjacent(board);
+  board.placed = true;
+}
+
+function countAdjacent(board) {
   for (let i = 0; i < board.mine.length; i++) {
     board.adjacent[i] = neighbors(board, i).filter((j) => board.mine[j]).length;
   }
-  board.placed = true;
+}
+
+// Rebuilds a saved field: `mine` and `state` are per-cell number arrays.
+export function restoreBoard({ rows, cols, mines, placed, mine, state }) {
+  const board = createBoard({ rows, cols, mines });
+  board.mine.set(mine);
+  board.state.set(state);
+  board.placed = placed;
+  countAdjacent(board);
+  board.state.forEach((value) => {
+    if (value === OPEN) board.opened++;
+    if (value === FLAGGED) board.flags++;
+  });
+  return board;
 }
 
 function open(board, index, changed) {

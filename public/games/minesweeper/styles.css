@@ -129,6 +129,12 @@ body {
   cursor: pointer;
 }
 
+.ms-resume {
+  width: 100%;
+  margin-bottom: 14px;
+  color: #0000c8;
+}
+
 .ms-level:active,
 .ms-face:active,
 .ms-mode:active {

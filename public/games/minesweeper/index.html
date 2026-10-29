@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="play.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -124,13 +124,15 @@
               </button>
             </div>
           </div>
-          <div class="options-panel-section" data-id="game-options-rules">
-            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
             <div
               class="rules-modal-content"
               data-id="minesweeper-rules-content"
             ></div>
-          </div>
+          </details>
         </div>
       </div>
     </div>
@@ -140,6 +142,15 @@
         <div class="ms-card">
           <h2 class="ms-logo" data-i18n="title">Démineur</h2>
           <p class="ms-pitch" data-i18n="pitch"></p>
+          <button
+            type="button"
+            class="ms-level ms-resume"
+            data-id="minesweeper-resume-button"
+            hidden
+          >
+            <span class="ms-level-name" data-i18n="resume"></span>
+            <span class="ms-level-info" data-resume-info></span>
+          </button>
           <p class="ms-choose" data-i18n="chooseLevel"></p>
           <div class="ms-levels" data-id="minesweeper-level-list">
             <button
