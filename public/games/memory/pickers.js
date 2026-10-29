@@ -40,6 +40,8 @@ function backButton(backId) {
 }
 
 export function mountPickers() {
-  $("memory-theme-list").replaceChildren(...THEME_IDS.map(themeButton));
+  const themes = $("memory-theme-list");
+  themes.replaceChildren(...THEME_IDS.map(themeButton));
+  themes.style.setProperty("--theme-rows", Math.ceil(THEME_IDS.length / 3));
   $("memory-back-list").replaceChildren(...BACKS.map(backButton));
 }

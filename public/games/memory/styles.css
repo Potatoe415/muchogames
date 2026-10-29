@@ -87,15 +87,19 @@ body {
 
 .memory-setup {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
 }
 
+/* The panel shrinks to the space left (no percentage max-height: Safari does
+   not resolve it here); overflow-y is only the last resort. */
 .memory-panel {
+  flex: 0 1 auto;
+  min-height: 0;
   width: min(100%, 420px);
-  max-height: 100%;
   overflow-y: auto;
   overscroll-behavior: contain;
   background: #fff;
@@ -164,9 +168,35 @@ body {
   min-width: 0;
 }
 
+.memory-setup-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* Theme tiles are the only part that gives up height when the screen is
+   short. Their list must be a direct child of the column that is height
+   constrained, or its wrappers shrink past its minimum and the tiles overlap. */
+.memory-setup-panel {
+  container-type: inline-size;
+}
+
+.memory-setup-looks,
+.memory-theme-choice {
+  display: contents;
+}
+
 .memory-theme-list {
+  --theme-rows: 3;
+  flex: 0 1 auto;
+  height: calc(
+    (100cqw - 16px) / 4.5 * var(--theme-rows) + (var(--theme-rows) - 1) * 8px
+  );
+  min-height: calc(var(--theme-rows) * 24px + (var(--theme-rows) - 1) * 8px);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
   gap: 8px;
 }
 
@@ -207,7 +237,12 @@ body {
 }
 
 .memory-theme {
-  aspect-ratio: 3 / 2;
+  min-height: 0;
+}
+
+.memory-theme img {
+  position: absolute;
+  inset: 0;
 }
 
 .memory-theme-name {
@@ -245,4 +280,54 @@ body {
 .memory-lang {
   display: flex;
   gap: 8px;
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .memory-setup-panel {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 16px;
+    width: min(100%, 820px);
+  }
+
+  .memory-setup-column {
+    flex: 1 1 0;
+  }
+
+  .memory-setup-looks {
+    display: flex;
+    container-type: inline-size;
+  }
+
+  .memory-setup-rules {
+    justify-content: center;
+  }
+}
+
+@media (max-height: 640px) {
+  .memory-setup {
+    padding: 6px 12px;
+  }
+
+  .memory-panel,
+  .memory-setup-column {
+    gap: 6px;
+  }
+
+  .memory-panel {
+    padding: 10px 14px;
+  }
+
+  .memory-back {
+    flex-basis: 44px;
+    height: 44px;
+  }
+
+  .memory-chip {
+    padding: 6px 10px;
+  }
+
+  .memory-start {
+    padding: 9px 16px;
+  }
 }

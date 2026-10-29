@@ -31,9 +31,10 @@ export class GameTimer {
       }
       
       if (remaining <= 0) {
+        const onTimeout = this.onTimeout;
         this.stop();
-        if (this.onTimeout) {
-          this.onTimeout();
+        if (onTimeout) {
+          onTimeout();
         }
       }
     }, 1000);

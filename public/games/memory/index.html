@@ -183,66 +183,73 @@
 
     <main class="memory-app" data-id="memory-app">
       <section class="memory-setup" data-id="memory-setup">
-        <div class="memory-panel">
-          <div class="memory-choice" data-id="memory-themes">
-            <p class="memory-label" data-i18n="theme"></p>
-            <div class="memory-theme-list" data-id="memory-theme-list"></div>
-          </div>
-          <div class="memory-choice" data-id="memory-backs">
-            <p class="memory-label" data-i18n="cardBack"></p>
-            <div class="memory-back-list" data-id="memory-back-list"></div>
-          </div>
-          <div class="memory-choice" data-id="memory-modes">
-            <p class="memory-label" data-i18n="who"></p>
-            <div class="memory-chips" data-id="memory-mode-list"></div>
-          </div>
-          <div class="memory-choice" data-id="memory-difficulty" hidden>
-            <p class="memory-label" data-i18n="level"></p>
-            <div class="memory-chips" data-id="memory-level-list"></div>
-          </div>
-          <div class="memory-choice" data-id="memory-grids">
-            <p class="memory-label" data-i18n="size"></p>
-            <div class="memory-chips" data-id="memory-grid-list"></div>
-          </div>
-          <button
-            type="button"
-            class="memory-start"
-            data-id="memory-start-button"
-            data-i18n="start"
-          >
-            Jouer
-          </button>
-          <div class="memory-choice" data-id="memory-online" hidden>
-            <p class="memory-label" data-i18n="joinLabel"></p>
-            <div class="memory-join">
-              <input
-                class="memory-code-input"
-                data-id="memory-join-input"
-                type="text"
-                inputmode="text"
-                autocomplete="off"
-                autocapitalize="characters"
-                spellcheck="false"
-                maxlength="3"
-                aria-label="Code"
-                data-i18n-aria="roomCode"
-              />
-              <button
-                type="button"
-                class="memory-text memory-text-ghost"
-                data-id="memory-join-button"
-                data-i18n="join"
-              >
-                Rejoindre
-              </button>
+        <div class="memory-panel memory-setup-panel">
+          <div class="memory-setup-column memory-setup-looks">
+            <div
+              class="memory-choice memory-theme-choice"
+              data-id="memory-themes"
+            >
+              <p class="memory-label" data-i18n="theme"></p>
+              <div class="memory-theme-list" data-id="memory-theme-list"></div>
+            </div>
+            <div class="memory-choice" data-id="memory-backs">
+              <p class="memory-label" data-i18n="cardBack"></p>
+              <div class="memory-back-list" data-id="memory-back-list"></div>
             </div>
           </div>
-          <p
-            class="memory-error"
-            data-id="memory-online-error"
-            role="alert"
-            hidden
-          ></p>
+          <div class="memory-setup-column memory-setup-rules">
+            <div class="memory-choice" data-id="memory-modes">
+              <p class="memory-label" data-i18n="who"></p>
+              <div class="memory-chips" data-id="memory-mode-list"></div>
+            </div>
+            <div class="memory-choice" data-id="memory-difficulty" hidden>
+              <p class="memory-label" data-i18n="level"></p>
+              <div class="memory-chips" data-id="memory-level-list"></div>
+            </div>
+            <div class="memory-choice" data-id="memory-grids">
+              <p class="memory-label" data-i18n="size"></p>
+              <div class="memory-chips" data-id="memory-grid-list"></div>
+            </div>
+            <button
+              type="button"
+              class="memory-start"
+              data-id="memory-start-button"
+              data-i18n="start"
+            >
+              Jouer
+            </button>
+            <div class="memory-choice" data-id="memory-online" hidden>
+              <p class="memory-label" data-i18n="joinLabel"></p>
+              <div class="memory-join">
+                <input
+                  class="memory-code-input"
+                  data-id="memory-join-input"
+                  type="text"
+                  inputmode="text"
+                  autocomplete="off"
+                  autocapitalize="characters"
+                  spellcheck="false"
+                  maxlength="3"
+                  aria-label="Code"
+                  data-i18n-aria="roomCode"
+                />
+                <button
+                  type="button"
+                  class="memory-text memory-text-ghost"
+                  data-id="memory-join-button"
+                  data-i18n="join"
+                >
+                  Rejoindre
+                </button>
+              </div>
+            </div>
+            <p
+              class="memory-error"
+              data-id="memory-online-error"
+              role="alert"
+              hidden
+            ></p>
+          </div>
         </div>
       </section>
 
