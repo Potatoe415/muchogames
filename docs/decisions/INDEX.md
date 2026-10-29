@@ -58,6 +58,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0050 | 2026-10-25 | Rules are the last section of every options panel (supersedes 0047's panel order) | Accepted |
 | 0051 | 2026-10-25 | Online rooms shared by Yatzy and Memory (`api/rooms/*`, `game_id`, `online-room.js`) | Accepted |
 | 0052 | 2026-10-28 | Hub sort by catalog date and a public match-count ranking | Accepted |
+| 0053 | 2026-10-29 | Platform rules: mobile first, both orientations, system bars, touch/mouse/keyboard, resume after reload, collapsed rules | Accepted |
 
 ## When to log a decision
 Any of:

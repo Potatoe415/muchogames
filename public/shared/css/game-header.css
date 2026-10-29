@@ -12,7 +12,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 max(16px, env(safe-area-inset-right)) 0
+    max(16px, env(safe-area-inset-left));
   background: #ffffff;
   border-bottom: 2px solid #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -125,11 +126,12 @@
   width: 100%;
   max-width: 420px;
   max-height: 80vh;
+  max-height: 80dvh;
   overflow-y: auto;
   background: #ffffff;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 -12px 30px rgba(15, 23, 42, 0.25);
-  padding: 16px 20px 20px;
+  padding: 16px 20px max(20px, env(safe-area-inset-bottom));
   box-sizing: border-box;
 }
 
@@ -176,6 +178,41 @@
   letter-spacing: 0.04em;
   color: #6b7280;
   margin: 0 0 8px;
+}
+
+/* Collapsed rules: <details class="options-panel-section"> with a
+   <summary class="options-panel-section-title">, closed by default. */
+summary.options-panel-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 32px;
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+summary.options-panel-section-title::-webkit-details-marker {
+  display: none;
+}
+
+summary.options-panel-section-title::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.15s;
+}
+
+details[open] > summary.options-panel-section-title {
+  margin-bottom: 8px;
+}
+
+details[open] > summary.options-panel-section-title::after {
+  transform: rotate(-135deg);
 }
 
 .options-feedback-button {

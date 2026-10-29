@@ -159,7 +159,10 @@ A new game also needs its id in `ROOM_GAMES` (`api/_lib/rooms.js`).
 ## `public/shared/css/`
 
 - `base.css` — design tokens (`--font-sans`) + resets, hub and wordplayer.
-- `game-header.css` — visuals for the header pattern `game-header.js` wires.
+- `game-header.css` — visuals for the header pattern `game-header.js` wires,
+  including the collapsible rules section (`details.options-panel-section` +
+  `summary.options-panel-section-title`). Header and options sheet pad with
+  the `env(safe-area-inset-*)` system bars.
 - `feedback.css` — the report dialog; loaded by `feedback.js`, not linked by pages.
 - `game-session.css` — out-of-coins / leave-match dialog; loaded by `game-session.js`, not linked by pages.
 - `wordplayer.css` — wordpack shell only.

@@ -57,6 +57,10 @@ const URL_SCAN_ROOTS = [
   "apps/tranquil"
 ];
 const VERCEL_HOST = /[a-z0-9-]+\.vercel\.app/gi;
+const VIEWPORT_META = /<meta\s[^>]*name=["']viewport["'][^>]*>/i;
+const STATIC_VH = /\d(?:\.\d+)?vh\b/;
+const DYNAMIC_VH = /\d(?:\.\d+)?[dsl]vh\b/;
+const STYLE_EXTENSIONS = new Set([".css", ".html"]);
 
 function walk(dir) {
   if (!existsSync(dir)) return [];
@@ -85,14 +89,51 @@ function hasId(text, id) {
 
 function pageSources(game) {
   if (game.kind === "wordpack") {
+    const html = join(ROOT, "wordplayer.html");
     return {
-      html: join(ROOT, "wordplayer.html"),
-      scripts: [join(ROOT, "wordplayer.js")]
+      html,
+      scripts: [join(ROOT, "wordplayer.js")],
+      styles: [html, join(ROOT, "public", "shared", "css", "wordplayer.css")]
     };
   }
   const html = join(ROOT, "public", game.launch.split("?")[0]);
-  const scripts = walk(dirname(html)).filter((f) => extname(f) === ".js");
-  return { html, scripts };
+  const files = walk(dirname(html));
+  return {
+    html,
+    scripts: files.filter((f) => extname(f) === ".js"),
+    styles: files.filter((f) => STYLE_EXTENSIONS.has(extname(f)))
+  };
+}
+
+function hasMobileViewport(page) {
+  const meta = page.match(VIEWPORT_META)?.[0] || "";
+  return (
+    meta.includes("width=device-width") && meta.includes("viewport-fit=cover")
+  );
+}
+
+function hasCollapsedRules(text) {
+  const tags = text.match(/<details\b[^>]*>/g) || [];
+  return tags.some(
+    (tag) => hasId(tag, "game-options-rules") && !/\sopen\b/.test(tag)
+  );
+}
+
+// A bare `vh` height hides the bottom of the game under the phone's browser
+// toolbar or navigation bar; each stylesheet using one must also use dvh/svh.
+function usesDynamicViewport(styles) {
+  return styles.every((file) => {
+    const text = readFileSync(file, "utf8");
+    return !STATIC_VH.test(text) || DYNAMIC_VH.test(text);
+  });
+}
+
+function checkLayout(page, all, styles) {
+  return [
+    ...(hasMobileViewport(page) ? [] : ["has-mobile-viewport"]),
+    ...(hasCollapsedRules(all) ? [] : ["rules-collapsed"]),
+    ...(usesDynamicViewport(styles) ? [] : ["uses-dynamic-viewport"])
+  ];
 }
 
 // An `endless` game (no end screen, played until the player leaves) has no
@@ -104,7 +145,7 @@ function requiredCalls(game) {
 }
 
 function checkPage(game) {
-  const { html, scripts } = pageSources(game);
+  const { html, scripts, styles } = pageSources(game);
   if (!existsSync(html)) return ["missing-page"];
   const page = readFileSync(html, "utf8");
   const all = `${page}\n${readAll(scripts)}`;
@@ -115,7 +156,8 @@ function checkPage(game) {
     ...requiredCalls(game)
       .filter(([call]) => !all.includes(call))
       .map(([, rule]) => rule),
-    ...CHROME_IDS.filter((id) => !hasId(all, id)).map((id) => `has-${id}`)
+    ...CHROME_IDS.filter((id) => !hasId(all, id)).map((id) => `has-${id}`),
+    ...checkLayout(page, all, styles)
   ];
 }
 

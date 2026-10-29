@@ -10,8 +10,9 @@ If anything below can't be satisfied for the game being built, stop and
 ask instead of improvising a one-off exception (`AGENTS.md` Section 7).
 
 **Read `docs/PLATFORM_RULES.md` too** — the common base every game shares
-(back/options buttons, coins spent per match, matches started/won/lost,
-URLs). `npm run check` fails until a new game follows it; a new game never
+(back/options buttons, collapsed rules, coins spent per match, matches
+started/won/lost, URLs, mobile-first phone/tablet/desktop in both
+orientations, system bars, touch/mouse/keyboard, resume after reload). `npm run check` fails until a new game follows it; a new game never
 goes in the check's baseline.
 
 ---
@@ -77,6 +78,16 @@ See `docs/GAMES_MAP.md` for what each looks like today.
   game uses this exact chrome — see every `index.html` under
   `public/games/*/` for the boilerplate markup to copy (nav structure,
   `#optionsPanel`, backdrop, close button).
+- The rules section is a closed `<details>` (`docs/PLATFORM_RULES.md`
+  section 1):
+
+  ```html
+  <details class="options-panel-section" data-id="game-options-rules">
+    <summary class="options-panel-section-title" data-i18n="rules">Règles</summary>
+    <div class="rules-modal-content" data-id="<id>-rules-content"></div>
+  </details>
+  ```
+
 - Wire the panel's open/close/Escape behavior with
   `/shared/js/game-header.js`'s `initOptionsPanel(triggerEl, panelEl)`
   (see `shared/CONTRACT.md`) — do not reimplement it.

@@ -38,6 +38,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
 ## Next
+- [ ] Bring existing games up to decision 0053 (`scripts/check-games.baseline.json`): rules as a closed `<details>` everywhere, `viewport-fit=cover` + `dvh` in the wordpack shell and older games (Black Stories, Olé Mains, Cafards, Millionaire, Pyramide, Yatzy, Pictionary), then a phone check in both orientations for each.
 - [ ] Jeu de dames online mode on `online-room.js` (needs `checkers` in `ROOM_GAMES`, `api/_lib/rooms.js` — L2).
 - [ ] Ship a genuinely lighter mobile banner — `public/assets/banner-games-hub-mobile.jpg` is byte-identical to the desktop banner; needs a real resized asset (would add an image dependency such as `sharp` — user's call).
 - [ ] Clear the 13 remaining lint warnings, then add `--max-warnings 0`. Mostly dead code (`detectInitialLocale`, `calculateMinMaxDelta`, `handleLanguageSelection`, `isStraight`, `vegLabel`) and one `catch (error)` that should be `catch {}`.
