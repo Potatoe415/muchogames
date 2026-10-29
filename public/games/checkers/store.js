@@ -87,8 +87,7 @@ export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 export function loadSaved() {
   const saved = readJson(SAVED_KEY);
   const config = saved?.config;
-  if (!config || !Array.isArray(saved.moves) || !saved.moves.length)
-    return null;
+  if (!config || !Array.isArray(saved.moves)) return null;
   const valid =
     CHOICES.mode.includes(config.mode) &&
     CHOICES.level.includes(config.level) &&
@@ -98,6 +97,6 @@ export function loadSaved() {
 }
 
 export const saveGame = (config, moves) =>
-  writeJson(SAVED_KEY, moves.length ? { config, moves } : null);
+  writeJson(SAVED_KEY, { config, moves });
 
 export const clearGame = () => writeJson(SAVED_KEY, null);

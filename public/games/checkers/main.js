@@ -173,16 +173,31 @@ function mount(match, config) {
     t,
     showMoves: page.settings.showMoves === "on",
     onUpdate: updateHud,
-    onMoved: () => saveGame(config, match.serialize()),
+    onMoved: saveNow,
     onEnd
   });
 }
 
-function returnToStart() {
-  unmount();
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
+function saveNow() {
+  if (page.match && !page.summary)
+    saveGame(page.config, page.match.serialize());
+}
+
+// The saved match replayed against the rules; a corrupt save is dropped.
+function loadResumable() {
+  const saved = loadSaved();
+  const match = saved && restoreMatch(saved.config.variant, saved.moves);
+  if (match) return { config: saved.config, match };
   clearGame();
-  renderResume(null);
+  return null;
+}
+
+// Quitting mid-match keeps the save (no finish); an ended match already
+// cleared it in onEnd. Either way the start screen reflects what is saved.
+function returnToStart() {
+  saveNow();
+  unmount();
+  renderResume(loadResumable());
   showScreen(false);
 }
 
@@ -194,20 +209,17 @@ async function startMatch() {
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!allowed) return void (page.play && returnToStart());
-  clearGame();
+  saveGame(config, []);
   renderResume(null);
   mount(createMatch(config.variant), config);
 }
 
 function resumeMatch() {
-  const saved = loadSaved();
-  const match = saved && restoreMatch(saved.config.variant, saved.moves);
-  if (!match) {
-    clearGame();
-    return void renderResume(null);
-  }
+  const resumable = loadResumable();
+  renderResume(resumable);
+  if (!resumable) return;
   window.MuchogamesMatch.resume(GAME_ID);
-  mount(match, saved.config);
+  mount(resumable.match, resumable.config);
 }
 
 function onKey(event) {
@@ -248,9 +260,13 @@ function bindPage() {
     $(id).addEventListener("click", fn)
   );
   document.addEventListener("keydown", onKey);
+  window.addEventListener("pagehide", saveNow);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") saveNow();
+  });
 }
 
 bindPage();
 applySettings();
 applyLanguage();
-renderResume(loadSaved());
+renderResume(loadResumable());

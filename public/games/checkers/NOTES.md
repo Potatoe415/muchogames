@@ -33,6 +33,13 @@ start screen, stage and end card markup.
 - Taken pieces stay on the board until the move ends (no double jump over one piece). Same destination + same taken set = one move (deduped).
 - Tap a destination to play; when two routes share a destination with different captures, tap the intermediate landing squares (`is-step` marks).
 - Solo undo takes back to the player's previous turn (cancels a computer search in progress). No undo after the end.
-- `finish({ won })` in solo when there is a winner; `finish()` for draws and two-player games. Quitting mid-match ends it without a result and drops the save.
+- `finish({ won })` in solo when there is a winner; `finish()` for draws and two-player games, only from `onEnd`.
 - The Hint button (and the H shortcut) exists only when the `hints` setting is on (options panel, off by default).
-- A game in progress is saved after every move; the start screen offers "Reprendre" (no coin, `MuchogamesMatch.resume`).
+
+## Save / resume (decision 0054)
+
+- Key `checkers-saved-game` = `{ config: { mode, level, variant, side }, moves: [[from, to, captures], …] }` (`match.serialize()`, possibly empty).
+- Written right after `MuchogamesMatch.start` resolves true (zero moves), after every move and undo (`onMoved`), and on `pagehide` / `visibilitychange` hidden. Never written once the match is over.
+- Restoring replays `moves` through `restoreMatch`: board, side to move, quiet-move counter, repetition keys and the full undo history come back. Not saved (transient): the current selection, a shown hint, a computer search in progress (it restarts on resume).
+- A save that fails validation or replay is deleted on load. The start screen shows `checkers-resume-button` only when the save replays; it never resumes by itself. Resuming calls `MuchogamesMatch.resume` (no coin).
+- The ✖ (`checkers-quit-button`, `data-match-quit`) and the hub back button keep the save and never call `finish()`. The save is deleted only in `onEnd` (with `finish()`), or overwritten when a new match starts.
