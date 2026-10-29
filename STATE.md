@@ -2,18 +2,19 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Rules 0053 and 0054 written; games being migrated to resume-every-match.
-Focus: Memory home screen — the pitch line is gone, so the setup panel starts on the themes.
-Level: L0
+Status: Resume-every-match lot 2 shipped (Dames, Bridge, Sudoku, Démineur, Pyramide, Black Stories resume exactly after any exit).
+Focus: `docs/tasks/resume-every-match.md` — lot 3 (medium games) next.
+Level: L2
 
 Context:
-- Working_On: memory setup (pitch removed). Resume-every-match lots 2–4 still open.
-- Relevant_Files: `public/games/memory/index.html`, `i18n.js`, `styles.css`; `docs/tasks/resume-every-match.md`
+- Working_On: resume-every-match lots 3–4.
+- Relevant_Files: `docs/tasks/resume-every-match.md`, `docs/PLATFORM_RULES.md` section 8, `scripts/check-games.baseline.json`
 - Do_Not_Touch: `apps/**`; Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0054, 0053, 0051
 
 Next:
-- Lots 2–4 per the task file; owner phone check after each lot.
+- Lots 3–4 per the task file.
+- Owner phone check, lot 2: in each of the 6 games start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin.
 - Owner: options sheet bottom clears the phone navigation bar.
 - Owner to play Bridge (bid box, explanations, hint, undo, last trick, claim, open hands, 4-colour, reload then "Reprendre", full Chicago) and judge robot bidding.
 - Owner: hub fresh browser — Tous selected, Plus récents on, Moins récents gone.
@@ -31,6 +32,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-29 Resume lot 2: 6 games save the whole match, quit keeps it, rules collapsed, mobile viewport + `dvh`.
 - 2026-10-29 Memory setup: removed the pitch line in FR/EN/ES so the home panel starts on the themes.
 - 2026-10-29 Decision 0054: quit keeps the save, "Reprendre" everywhere, Space Cadet `resumable: false`.
 - 2026-10-29 Platform rules 0053 + viewport, collapsed rules, `dvh` checks.

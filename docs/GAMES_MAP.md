@@ -33,11 +33,11 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 
 | id | folder | main file(s) — lines | shared deps | `NOTES.md`? |
 |---|---|---|---|---|
-| `blackstories` | `public/games/blackstories/` | `blackstories.js` (266) | engine, header, profile | no |
+| `blackstories` | `public/games/blackstories/` | `blackstories.js` (414) — **over limit**, `blackstories-save.js` | engine, header, profile | yes |
 | `olemains` | `public/games/olemains/` | 6 files, ~510 total (already split, none >300) | engine, header, profile | no |
 | `cafards` | `public/games/cafards/` | `game.js` (238) | header, profile | no |
 | `millionaire` | `public/games/millionaire/` | `app.js` (1089, **over 300-line limit**) | engine, header, profile | no — see `docs/BACKLOG.md` |
-| `pyramide` | `public/games/pyramide/` | `app.js` (847), `i18n.js` (317) — **both over limit** | header, profile | no — see `docs/BACKLOG.md` |
+| `pyramide` | `public/games/pyramide/` | `app.js` (1077), `i18n.js` (324) — **both over limit**, `save.js` | header, profile | yes |
 | `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,780 total (none >300); `main.js` entry | header, session | yes |
 | `jezzball` | `public/games/jezzball/` | 17 ES modules, ~1,760 total (none >300); `main.js` entry | header, session | yes |
 | `skifree` | `public/games/skifree/` | 25 ES modules + 2 CSS, ~3,050 total (none >300 except `index.html` header boilerplate, 307); `main.js` entry; original bitmaps in `assets/sprites.png` | header, session | yes |

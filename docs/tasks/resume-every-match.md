@@ -22,3 +22,5 @@ Security_Checklist: no endpoint change expected; if `api/rooms/*` changes, re-re
 Related_Decisions: 0053, 0054
 Notes:
 - Lot 1 done 2026-10-29.
+- Lot 2 done 2026-10-29 (one commit per game), browser-checked: back/✖/reload then "Reprendre" restores the exact state. Keys: `checkers-saved-game`, `bridge-saved-match`, `sudoku-current`, `minesweeper-current`, `pyramide-current`, `blackstories-current`.
+- Pyramide's back button still returns to its splash mid-match (pre-existing, not the hub); ↻ mid-match now quits with the save kept.
