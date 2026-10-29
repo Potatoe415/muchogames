@@ -49,6 +49,9 @@ THEMES = [
 ]
 # 1-based tiles to drop because they look like a tile of another sheet.
 SKIP = {"gemini-camion4.jpg": {9}}
+# Square white-backed cells in a thin frame: the white top of each cell reads
+# as gutter, so rows reuse the column bands.
+SQUARE_CELLS = {f"gemini-camion{i}.jpg" for i in range(1, 5)}
 BACK_SHEETS = ["gemini-verso1.jpg", "gemini-verso2.jpg"]
 CARD_GRID = 3
 BACK_GRID = 2
@@ -138,6 +141,10 @@ def cell_boxes(img, n, name):
     """
     mask = grid_mask(img, n)
     left, top, right, bottom = content_box(mask)
+    if name in SQUARE_CELLS:
+        cols = bands(profile(mask, 0), n) or even_split(left, right, n)
+        rows = [(top + x0 - left, top + x1 - left) for x0, x1 in cols]
+        return [(x0, y0, x1, y1) for y0, y1 in rows for x0, x1 in cols]
     rows = bands(profile(mask, 1), n)
     if not rows:
         print(f"  {name}: rows -> even split")
