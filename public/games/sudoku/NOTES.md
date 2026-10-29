@@ -16,13 +16,15 @@ single solution. Read this before opening the sources.
 | `grid.js` | Index helpers (`rowOf`, `colOf`, `boxOf`), `UNITS`, `PEERS`, digit masks (bits 1..9), `shuffle`. |
 | `view.js` | Builds nine `.sd-box` with cells (`data-id="sudoku-cell-<row>-<col>"`, 1-based, DOM order is box by box — use `data-index`) and the pad (`sudoku-pad-<d>`); paints selection (amber), same digit (solid blue), errors, hints, notes, remaining counts; flashes completed units. Focus digit = pad digit, else the selected cell's value; with a focus digit, cells that can no longer take it are grey (`is-blocked`) instead of the selection's row/col/box shading (`is-peer`). |
 | `input.js` | Click delegation on board / pad, tool buttons, keyboard (digits by `code` so AZERTY works, arrows, Backspace/Delete/0, N, Z / Ctrl+Z, H, P). |
-| `store.js` | localStorage: `sudoku-current` (grid in progress, validated on read), `sudoku-best-times` (seconds per level, 0 = none), `sudoku-prefs` (`showErrors`, `showHint`, both off by default). |
+| `store.js` | localStorage: `sudoku-current` (match in progress, validated on read, corrupt save dropped), `sudoku-best-times` (seconds per level, 0 = none), `sudoku-prefs` (`showErrors`, `showHint`, both off by default). |
 | `i18n.js`, `rules.js` | FR/EN/ES copy + `formatTime`; rules HTML. |
 | `styles.css`, `board.css` | Theme variables (light + `prefers-color-scheme: dark`), start / end cards; play stage. Grid side = `min(100cqw, 100cqh)` of `.sd-board-area`; landscape (`min-aspect-ratio: 6/5`) moves tools + 3×3 pad to the right. |
 
 ## Rules in code
 
-- A level button starts a match (1 coin). "Reprendre" resumes the saved grid with `resume()` (no coin). "Changer de niveau" calls `finish()` without `won` but keeps the grid saved.
+- A level button starts a match (1 coin) and overwrites the save. "Reprendre" resumes the saved match with `resume()` (no coin). Back button and "Changer de niveau" (options, `data-match-quit`) quit without `finish()`; the save stays.
+- `sudoku-current` = `newState` fields (level, puzzle, solution, values, notes, hinted, seconds, hints, mistakes) + `history` (undo steps, up to 300, `[{ i, v, n, h }]` per step) + `ui` (`selected`, `digit`, `notesMode`, `paused`). Saves without `history` / `ui` still load (empty history, default selection).
+- Saved at match start, after every move / selection / notes-mode / pause change, every 5 s of timer, options open, tab hidden and `pagehide`. Cleared only on win. A bfcache restore keeps the grid on screen and calls `resume()`.
 - Win = every value equals the solution → `finish({ won: true })`, saved grid cleared, best time kept if lower (hints allowed).
 - Mistakes are counted against the solution whether or not they are shown in red.
 - The Hint button (and the H key) only exists while the `showHint` option is on.

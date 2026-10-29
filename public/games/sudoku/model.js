@@ -1,8 +1,8 @@
 // One grid in play: values, pencil notes, undo history, hints and mistakes.
-// `state` is plain JSON so store.js can save it as is.
+// `state` (undo history included) is plain JSON so store.js can save it as is.
 import { PEERS, SIZE, UNITS, freeMask, indexes } from "./grid.js";
 
-const HISTORY_LIMIT = 300;
+export const HISTORY_LIMIT = 300;
 
 export function newState(level, { puzzle, solution }) {
   return {
@@ -14,13 +14,14 @@ export function newState(level, { puzzle, solution }) {
     hinted: new Array(SIZE).fill(0),
     seconds: 0,
     hints: 0,
-    mistakes: 0
+    mistakes: 0,
+    history: []
   };
 }
 
 export function createModel(state) {
-  const history = [];
   const s = state;
+  const history = s.history;
 
   const isGiven = (i) => s.puzzle[i] !== 0;
   const isWrong = (i) => s.values[i] !== 0 && s.values[i] !== s.solution[i];

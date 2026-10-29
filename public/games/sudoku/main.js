@@ -139,10 +139,10 @@ function playElements() {
   };
 }
 
-// The unfinished grid stays saved: "Reprendre" brings it back for free.
+// Quitting is not an end (no finish()): the grid stays saved and "Reprendre"
+// brings it back for free.
 function returnToStart() {
   unmount();
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   page.saved = store.loadGame();
   showScreen(false);
   applyLanguage();
@@ -151,7 +151,6 @@ function returnToStart() {
 async function startMatch(level) {
   if (page.starting) return;
   page.starting = true;
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!allowed) return page.play && returnToStart();
@@ -224,9 +223,12 @@ function bindPage() {
   );
   $("sudoku-change-level-button").addEventListener("click", returnToStart);
   document.addEventListener("visibilitychange", syncHold);
-  window.addEventListener("pagehide", unmount);
+  window.addEventListener("pagehide", () => page.play?.save());
+  // Back/forward cache: the page comes back with its grid still on screen.
   window.addEventListener("pageshow", (event) => {
-    if (event.persisted) returnToStart();
+    if (event.persisted && page.play && page.saved) {
+      window.MuchogamesMatch.resume(GAME_ID);
+    }
   });
 }
 

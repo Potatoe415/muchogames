@@ -1,5 +1,6 @@
 // One grid on screen: wires model, view, input and the timer, and saves the
-// grid after every move so a reload can resume it.
+// match (grid, undo history, selection, notes mode, pause) after every change
+// so leaving by any route can resume it exactly.
 import { UNITS, colOf, rowOf } from "./grid.js";
 import { formatTime } from "./i18n.js";
 import { bindInput } from "./input.js";
@@ -9,6 +10,26 @@ import { createView } from "./view.js";
 
 const WIN_DELAY_MS = 900;
 const SAVE_EVERY_S = 5;
+const UI_DEFAULTS = { selected: -1, digit: 0, notesMode: false, paused: false };
+
+const restoreUi = (saved) =>
+  Object.fromEntries(
+    Object.entries(UI_DEFAULTS).map(([key, fallback]) => [
+      key,
+      saved?.[key] ?? fallback
+    ])
+  );
+
+function save(ctx) {
+  const { selected, digit, notesMode, paused } = ctx.ui;
+  ctx.model.state.ui = { selected, digit, notesMode, paused };
+  saveGame(ctx.model.state);
+}
+
+function changed(ctx) {
+  save(ctx);
+  render(ctx);
+}
 
 function render(ctx) {
   const { model, ui, els } = ctx;
@@ -28,7 +49,7 @@ function tick(ctx) {
   if (ui.paused || ui.hold || ui.over) return;
   model.state.seconds++;
   ctx.els.time.textContent = formatTime(model.state.seconds);
-  if (model.state.seconds % SAVE_EVERY_S === 0) saveGame(model.state);
+  if (model.state.seconds % SAVE_EVERY_S === 0) save(ctx);
 }
 
 function win(ctx) {
@@ -48,8 +69,7 @@ function afterMove(ctx, result) {
   if (!result) return;
   if (result.completed?.length) ctx.view.flash(result.completed);
   if (result.won) return win(ctx);
-  saveGame(ctx.model.state);
-  render(ctx);
+  changed(ctx);
 }
 
 const blocked = (ctx) => ctx.ui.paused || ctx.ui.over;
@@ -58,7 +78,7 @@ function select(ctx, i) {
   if (blocked(ctx)) return;
   ctx.ui.selected = i;
   ctx.ui.digit = 0;
-  render(ctx);
+  changed(ctx);
 }
 
 // No editable cell selected: the digit only highlights where it already is.
@@ -68,7 +88,7 @@ function input(ctx, digit) {
   const i = ui.selected;
   if (i < 0 || model.isGiven(i)) {
     ui.digit = ui.digit === digit ? 0 : digit;
-    return render(ctx);
+    return changed(ctx);
   }
   ui.digit = 0;
   if (ui.notesMode && !model.state.values[i]) {
@@ -111,8 +131,7 @@ function hint(ctx) {
 function setPaused(ctx, paused) {
   if (ctx.ui.over) return;
   ctx.ui.paused = paused;
-  if (paused) saveGame(ctx.model.state);
-  render(ctx);
+  changed(ctx);
 }
 
 function actionsFor(ctx) {
@@ -125,7 +144,7 @@ function actionsFor(ctx) {
     hint: () => hint(ctx),
     toggleNotes: () => {
       ctx.ui.notesMode = !ctx.ui.notesMode;
-      render(ctx);
+      changed(ctx);
     },
     togglePause: () => setPaused(ctx, !ctx.ui.paused),
     resume: () => setPaused(ctx, false),
@@ -140,7 +159,7 @@ export function createPlay({ els, state, prefs, t, onWin }) {
     onWin,
     model: createModel(state),
     view: createView({ board: els.board, pad: els.pad }),
-    ui: { selected: -1, digit: 0, notesMode: false, paused: false },
+    ui: restoreUi(state.ui),
     timer: 0,
     winTimer: 0
   };
@@ -151,8 +170,9 @@ export function createPlay({ els, state, prefs, t, onWin }) {
   return {
     setHold: (hold) => {
       ctx.ui.hold = hold;
-      if (hold && !ctx.ui.over) saveGame(ctx.model.state);
+      if (hold && !ctx.ui.over) save(ctx);
     },
+    save: () => !ctx.ui.over && save(ctx),
     setPrefs: ({ showErrors, showHint }) => {
       Object.assign(ctx.ui, { showErrors, showHint });
       render(ctx);
@@ -163,7 +183,7 @@ export function createPlay({ els, state, prefs, t, onWin }) {
       clearInterval(ctx.timer);
       clearTimeout(ctx.winTimer);
       unbind();
-      if (!ctx.ui.over) saveGame(ctx.model.state);
+      if (!ctx.ui.over) save(ctx);
     }
   };
 }
