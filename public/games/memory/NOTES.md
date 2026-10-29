@@ -9,7 +9,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 | `main.js` | Header, FR/EN/ES, setup / wait / play views, preload, `MuchogamesMatch.start/finish/resume`, mute. |
 | `online.js` | Online mode on `window.MuchogamesRoom` (`shared/CONTRACT.md`): create / join / resume, waiting screen, coin per room, board sync. |
 | `wire.js` | Online board payload: `packWire`, `readWire` (validates the opponent's board, derives the phase), `sameBoard`. |
-| `viewport.js` | CSS variables for the fixed header and the obstructed bottom strip. |
+| `viewport.js` | CSS variables for the fixed header and the obstructed bottom strip (page bottom past `visualViewport` bottom; never `innerHeight`, which iOS 26 Safari counts under its floating toolbar). |
 | `screen.js` | Bars, language, setup marks, wait screen, end copy, `finish` payload. |
 | `chips.js` | Setup text buttons (mode, level, grid). |
 | `pickers.js` | Setup thumbnails: theme (`card_01`) and card back. |
@@ -33,7 +33,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 ## Rules in code
 
 - Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba`, `harry-potter` (36), `camions` (35: `SKIP` in the script drops a duplicate drill rig). Backs `01`–`08` from `gemini-verso1.jpg` and `gemini-verso2.jpg`.
-- `assets/fond.webp` covers the whole page. Each player's name and score sit on a pill: white and gray when waiting, solid blue (player 1) or pink (player 2) with white text on their turn. The board frame uses the same color. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset or the browser covers the page), so the player 1 row, the cards and the buttons stay above the phone navigation.
+- `assets/fond.webp` covers the whole page. Each player's name and score sit on a pill: white and gray when waiting, solid blue (player 1) or pink (player 2) with white text on their turn. The board frame uses the same color. The body is `100dvh` tall. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset, or the measured covered strip + 8px), so the player 1 row, the cards and the buttons stay above the phone navigation.
 - During a match the header back arrow is `memory-quit-button` (`data-match-quit`): confirming returns to this game's setup. On the setup screen the same corner is the hub link. New game is the icon beside it. The header is fixed, so choosing Continuer cannot scroll it off the screen.
 - Setup screen fits without scrolling from 360×560 up. The panel shrinks into the space below the header (`flex: 0 1 auto`, never a percentage `max-height`: Safari ignores it and the panel overflowed top and bottom). Only the theme tiles give up height (natural 3:2, down to 24px); the theme list stays a direct child of the constrained column (`display: contents` wrappers) so its minimum holds. Landscape from 640px wide: themes and backs left, the rest right. Under 640px tall: tighter padding, smaller backs and chips. The panel scrolls only as a last resort.
 - Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1), `online` (two devices).
