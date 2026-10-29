@@ -46,7 +46,8 @@ const PAGE_INCLUDES = {
 const PAGE_CALLS = {
   "initOptionsPanel(": "wires-options-panel",
   "MuchogamesMatch.start(": "starts-match",
-  "MuchogamesMatch.finish(": "finishes-match"
+  "MuchogamesMatch.finish(": "finishes-match",
+  "MuchogamesMatch.resume(": "resumes-match"
 };
 const APP_MATCH_CALL = "start_muchogames_match";
 const URL_SCAN_ROOTS = [
@@ -140,7 +141,9 @@ function checkLayout(page, all, styles) {
 // moment to call finish().
 function requiredCalls(game) {
   return Object.entries(PAGE_CALLS).filter(
-    ([call]) => !(game.endless === true && call === "MuchogamesMatch.finish(")
+    ([call]) =>
+      !(game.endless === true && call === "MuchogamesMatch.finish(") &&
+      !(game.resumable === false && call === "MuchogamesMatch.resume(")
   );
 }
 
@@ -157,7 +160,10 @@ function checkPage(game) {
       .filter(([call]) => !all.includes(call))
       .map(([, rule]) => rule),
     ...CHROME_IDS.filter((id) => !hasId(all, id)).map((id) => `has-${id}`),
-    ...checkLayout(page, all, styles)
+    ...checkLayout(page, all, styles),
+    ...(game.resumable === false || /<body\b[^>]*data-match-saved/.test(page)
+      ? []
+      : ["marks-match-saved"])
   ];
 }
 

@@ -23,7 +23,9 @@ How to build a game: `docs/NEW_GAME.md`. Shared APIs: `shared/CONTRACT.md`.
   element carrying that `data-id`, so a game writes no code for it.
 - An in-match screen may replace the back button with a ✖ that returns to
   the game's own start screen. It carries `data-match-quit` (same
-  confirmation) and ends the match with `finish()`.
+  confirmation). Quitting is not an end: the save stays, the start screen
+  then offers "Reprendre", and the game does not call `finish()`
+  (section 8).
 - **Options button**, top-right gear, always visible, `data-id="game-options-button"`,
   opening one panel `data-id="game-options-panel"` **[checked]**, wired with
   `GameHeader.initOptionsPanel` **[checked]**.
@@ -158,20 +160,34 @@ Every action works with **touch, mouse and keyboard**.
   activates, Escape closes the open panel or dialog. Games with a board or
   movement also accept the arrow keys.
 
-## 8. Reload resumes the match
+## 8. Leaving never loses the match
 
-A reload, a closed tab or a phone killing the browser never loses a match
-in progress.
+Leaving a match in progress by any route — back button, in-match ✖, reload,
+closed tab, the phone killing the browser — and opening the game again
+brings the match back **exactly** where it was (decision 0054).
 
-- The game saves the match state (`localStorage`, one key per game) after
-  every move.
+- The game saves the whole match state (`localStorage`, one key per game)
+  at match start, after every move, and on `pagehide`/`visibilitychange`.
+  Real-time games also save on a short throttle (~1 s). "Whole" means
+  everything the player would notice: board, deck order, hands, scores,
+  turn, phase, timer, lives, undo history, robot memory, a locked answer,
+  the selected mode (notes, flags…).
 - On return, the start screen shows a "Reprendre" button
-  (`data-id="<id>-resume-button"`) above the new-match choices. Resuming calls
-  `MuchogamesMatch.resume()`: no new coin, not counted again.
-- The save is deleted when the match ends or the player quits it.
-- Online matches resume through their seat (`online-room.js`).
-- A game that truly cannot (emulator with no save state) documents its
-  exception in its `NOTES.md`.
+  (`data-id="<id>-resume-button"`, or `<id>-continue-button` when the first
+  one is already a pause overlay's) above the new-match choices. It never reopens the match by
+  itself. Resuming calls `MuchogamesMatch.resume()` **[checked]**: no new
+  coin, not counted again. A real-time game comes back paused.
+- Quitting is not an end: no `finish()`, no lost match recorded.
+- The save is deleted only when the match really ends (end screen, then
+  `finish()`), or replaced when the player starts a new match.
+- The page carries `data-match-saved` on `<body>` **[checked]**: the quit
+  dialog then says the match is saved.
+- Online matches: leaving keeps the seat and the room. The opponent sees
+  that the other player is away; "Reprendre" reclaims the seat
+  (`online-room.js`).
+- A game that truly cannot save (Space Cadet: prebuilt pinball engine with
+  no state export) declares `"resumable": false` in its
+  `public/hub-config.json` entry and explains why in its `NOTES.md`.
 
 ## 9. Also required (see `docs/NEW_GAME.md` and `AGENTS.md`)
 

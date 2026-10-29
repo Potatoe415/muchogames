@@ -2,19 +2,19 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: New platform rules (decision 0053): mobile first, portrait + landscape, no horizontal scroll, system bars, touch/mouse/keyboard, resume after reload, rules collapsed.
-Focus: Platform rules for every new game.
+Status: Rules 0053 (screens, system bars, input, collapsed rules) and 0054 (leaving never loses the match) written and checked; games being migrated.
+Focus: `docs/tasks/resume-every-match.md` — lot 1 (rules, shared quit copy, checks) done; lots 2–4 = games.
 Level: L2
 
 Context:
-- Working_On: none
-- Relevant_Files: `docs/PLATFORM_RULES.md` (sections 1, 6–8), `scripts/check-games.mjs`, `public/shared/css/game-header.css`
-- Do_Not_Touch: other games' folders; Easy Frog and GameBoy Web.
-- Relevant_Decisions: 0053, 0050, 0047
+- Working_On: resume-every-match
+- Relevant_Files: `docs/PLATFORM_RULES.md` (sections 1, 6–8), `scripts/check-games.mjs` + baseline, `public/shared/js/game-session.js`, `public/shared/css/game-header.css`
+- Do_Not_Touch: `apps/**`; Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
+- Relevant_Decisions: 0054, 0053, 0050, 0047
 
 Next:
-- Owner: open any game's options panel on a phone, check the sheet's bottom clears the navigation bar (shared `game-header.css` now pads with the safe area).
-- Existing games' gaps to 0053 are in the check baseline; fixing them is a `docs/BACKLOG.md` item (owner call).
+- Lots 2–4 per the task file; owner phone check after each lot.
+- Owner: open any game's options panel on a phone, check the sheet's bottom clears the navigation bar.
 - Owner to play Bridge on phone, tablet and desktop: bid with the box, tap calls for explanations, hint, undo, last trick, claim, open hands, 4-colour deck, reload mid-match then "Reprendre", full Chicago to the end screen.
 - Owner (bridge player) to judge the robots' bidding and play; list sequences that feel wrong so the rules in `bid-*.js` can be tuned.
 - Owner to open the hub with a fresh browser: Tous is selected, Plus récents is on, Moins récents is gone.
@@ -33,6 +33,7 @@ Blockers:
 - Tranquil step: its production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-29 Decision 0054: quit keeps the save, "Reprendre" everywhere, `resumes-match` + `marks-match-saved` checks, Space Cadet `resumable: false`.
 - 2026-10-29 Platform rules 0053 + 3 new checks (viewport meta, collapsed rules, `dvh`); 39 existing gaps baselined.
 - 2026-10-28 Bridge added (`bridge`, custom, `cartesdes`, solo, Chicago, SEF bidding, double-dummy endings).
 - 2026-10-28 Hub opens on Tous, newest first. "Moins récents" removed.

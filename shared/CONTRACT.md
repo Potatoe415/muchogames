@@ -105,7 +105,9 @@ Include via `<script src="/shared/js/game-session.js">`.
 - Any element with `data-id="game-back-button"` asks "Quitter la partie ?"
   while a match is in progress; no game code needed. So does any element
   with a `data-match-quit` attribute (an in-match ✖ that returns to the
-  game's own start screen); its handler should then call `finish()`.
+  game's own start screen); its handler keeps the save and does not call
+  `finish()` (quitting is not an end). With `data-match-saved` on `<body>`
+  the dialog says the match is saved and can be resumed.
   Injects `/shared/css/game-session.css` and loads `profile-results.js`
   itself.
 

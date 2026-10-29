@@ -4,6 +4,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] Every game resumes its match exactly and meets 0053 (`docs/tasks/resume-every-match.md`): lot 2 small games, lot 3 medium, lot 4 Memory/Yatzy/SkiFree. Done when the baseline has no game line left except Tranquil.
 - [ ] **User**: play-test Jeu de dames (`/games/checkers/`) on phone, tablet and desktop: the 4 levels, two players, 10×10 and 8×8, drag and tap, undo/hint, reload mid-game then "Reprendre".
 - [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels on Lexy's Labyrinth engine, Lynx rules, 147/149 proven winnable) on phone (portrait + landscape) and desktop.
 - [ ] `loop.js` and `storage.js` are now verbatim copies in 4 Entertainment Pack games: extract to `public/shared/` the first time one copy has to change.
@@ -38,7 +39,6 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
 ## Next
-- [ ] Bring existing games up to decision 0053 (`scripts/check-games.baseline.json`): rules as a closed `<details>` everywhere, `viewport-fit=cover` + `dvh` in the wordpack shell and older games (Black Stories, Olé Mains, Cafards, Millionaire, Pyramide, Yatzy, Pictionary), then a phone check in both orientations for each.
 - [ ] Jeu de dames online mode on `online-room.js` (needs `checkers` in `ROOM_GAMES`, `api/_lib/rooms.js` — L2).
 - [ ] Ship a genuinely lighter mobile banner — `public/assets/banner-games-hub-mobile.jpg` is byte-identical to the desktop banner; needs a real resized asset (would add an image dependency such as `sharp` — user's call).
 - [ ] Clear the 13 remaining lint warnings, then add `--max-warnings 0`. Mostly dead code (`detectInitialLocale`, `calculateMinMaxDelta`, `handleLanguageSelection`, `isStraight`, `vegLabel`) and one `catch (error)` that should be `catch {}`.

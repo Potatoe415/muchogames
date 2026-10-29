@@ -139,7 +139,8 @@
     "added": "2026-10-25",
     "launch": "/games/spacecadet/index.html",
     "thumbnail": "/games/spacecadet/assets/thumbnail.jpg",
-    "players": [1, 1]
+    "players": [1, 1],
+    "resumable": false
   },
   {
     "id": "memory",

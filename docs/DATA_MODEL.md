@@ -43,6 +43,7 @@ Fields:
 | thumbnail | string | Yes | Path to `assets/thumbnail.jpg` for the tile |
 | players | [int, int] | No | `[min, max]` humans; player-count badge, bottom-right of the hub tile (`hub-tags.js`). Missing = no badge |
 | duration | int | No | Typical minutes; tile tag only |
+| resumable | boolean | No | `false` only for a game that cannot save a match in progress (`docs/PLATFORM_RULES.md` section 8); `scripts/check-games.mjs` then skips the resume checks. Missing = resumable |
 
 Relationships:
 - `data` points to a `WordPack` entity (wordpack games only).
@@ -331,3 +332,9 @@ Impact: Functions: 8 of 12. No new table. A failed `/api/popular` makes "most po
 
 Change: `muchogames-hub-sort` no longer stores `oldest`. A browser with no saved sort opens the hub on the Tous tab, sorted newest first.
 Reason: Owner request. The "least recent" row is gone.
+
+## 2026-10-29 - Resumable matches (`resumable`)
+
+Change: `HubGameEntry` gains optional `resumable` (only `false`, Space Cadet). Every other game keeps its match in progress in its own `localStorage` key until the match ends (decision 0054); keys are listed in each game's `NOTES.md`.
+Reason: Owner request: leaving a match by mistake must never lose it.
+Impact: Browser only, no server data.

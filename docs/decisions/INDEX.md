@@ -59,6 +59,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0051 | 2026-10-25 | Online rooms shared by Yatzy and Memory (`api/rooms/*`, `game_id`, `online-room.js`) | Accepted |
 | 0052 | 2026-10-28 | Hub sort by catalog date and a public match-count ranking | Accepted |
 | 0053 | 2026-10-29 | Platform rules: mobile first, both orientations, system bars, touch/mouse/keyboard, resume after reload, collapsed rules | Accepted |
+| 0054 | 2026-10-29 | Leaving never loses the match: exact resume, quit is not an end, online seat kept (Space Cadet exempt) | Accepted |
 
 ## When to log a decision
 Any of:

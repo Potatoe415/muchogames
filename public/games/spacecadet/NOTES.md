@@ -28,6 +28,14 @@ recompile. Read this before opening the sources.
 - F2 new game (1 coin), F3 pause, `x` tilt.
 - WASM does not report game over: F2 while a match is running `finish()` then `start()`; leaving via back confirms.
 
+## No resume (`"resumable": false`)
+
+Exempt from `docs/PLATFORM_RULES.md` section 8 (decision 0054). The prebuilt
+binaries export no table state, cannot be seeded with a score or ball count,
+and a WASM memory dump would hold dead WebGL/SDL handles after a reload. A
+"Reprendre" dealing a fresh table would hand out free matches, so there is
+none; leaving a match loses it.
+
 ## Layout
 
 - The WASM draws a 19 px ImGui menu bar (Game/Options/Help) with no hide option. Once a match starts, `body.sc-playing` crops it off (canvas `margin-top: -19px`) and a `resize` event makes SDL resize its buffer.

@@ -18,6 +18,8 @@
         "Vous n'avez plus de pièces pour aujourd'hui. Revenez demain !",
       ok: "OK",
       quit: "Quitter la partie ?",
+      quitSaved:
+        "Quitter la partie ? Elle est sauvegardée : vous pourrez la reprendre.",
       leave: "Quitter",
       stay: "Continuer"
     },
@@ -25,6 +27,7 @@
       outOfCoins: "You're out of coins for today. Come back tomorrow!",
       ok: "OK",
       quit: "Leave the match?",
+      quitSaved: "Leave the match? It is saved: you can resume it later.",
       leave: "Leave",
       stay: "Keep playing"
     },
@@ -32,6 +35,7 @@
       outOfCoins: "No te quedan monedas por hoy. ¡Vuelve mañana!",
       ok: "OK",
       quit: "¿Salir de la partida?",
+      quitSaved: "¿Salir de la partida? Está guardada: podrás retomarla.",
       leave: "Salir",
       stay: "Seguir jugando"
     }
@@ -239,9 +243,10 @@
 
   async function confirmLeave(backButton) {
     const strings = copy();
+    const saved = document.body.hasAttribute("data-match-saved");
     const leave = await showDialog({
       id: "quit-match-dialog",
-      message: strings.quit,
+      message: saved ? strings.quitSaved : strings.quit,
       confirm: strings.leave,
       cancel: strings.stay
     });
