@@ -170,14 +170,26 @@
             <span data-i18n="resume">Reprendre</span>
             <span class="jb-continue-info" data-continue-info></span>
           </button>
-          <button
-            type="button"
-            class="jb-button"
-            data-id="jezzball-start-button"
-            data-i18n="play"
-          >
-            Jouer
-          </button>
+          <div class="jb-modes">
+            <button
+              type="button"
+              class="jb-button jb-mode jb-mode-easy"
+              data-id="jezzball-start-easy"
+              data-difficulty="easy"
+            >
+              <span class="jb-mode-icon" aria-hidden="true">🐢</span>
+              <span data-i18n="easy">Facile</span>
+            </button>
+            <button
+              type="button"
+              class="jb-button jb-mode"
+              data-id="jezzball-start-normal"
+              data-difficulty="normal"
+            >
+              <span class="jb-mode-icon" aria-hidden="true">⚡</span>
+              <span data-i18n="normal">Normal</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -234,6 +246,119 @@
               >Vertical</span
             >
           </button>
+        </div>
+
+        <div class="jb-overlay" data-id="jezzball-intro" hidden>
+          <div class="jb-card jb-intro">
+            <h2 class="jb-overlay-title" data-i18n="introTitle">
+              Comment jouer
+            </h2>
+            <ol class="jb-intro-steps">
+              <li data-id="jezzball-intro-step-wall">
+                <svg
+                  class="jb-intro-art"
+                  viewBox="0 0 120 80"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="4"
+                    y="4"
+                    width="112"
+                    height="72"
+                    rx="6"
+                    fill="#b9c1cd"
+                    stroke="#05070c"
+                    stroke-width="4"
+                  />
+                  <rect x="8" y="30" width="52" height="8" fill="#e8413c" />
+                  <rect x="60" y="30" width="52" height="8" fill="#2f6fe0" />
+                  <path
+                    d="M48 58H84M76 50l9 8-9 8"
+                    fill="none"
+                    stroke="#ffd23f"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="44"
+                    cy="58"
+                    r="9"
+                    fill="#ffd2a6"
+                    stroke="#7a4b2a"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p data-i18n="introWall"></p>
+              </li>
+              <li data-id="jezzball-intro-step-trap">
+                <svg
+                  class="jb-intro-art"
+                  viewBox="0 0 120 80"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="4"
+                    y="4"
+                    width="112"
+                    height="72"
+                    rx="6"
+                    fill="#b9c1cd"
+                    stroke="#05070c"
+                    stroke-width="4"
+                  />
+                  <rect x="58" y="8" width="54" height="64" fill="#0c111b" />
+                  <circle cx="32" cy="40" r="12" fill="#e0262b" />
+                  <path
+                    d="M32 28a12 12 0 0 1 0 24a5 12 0 0 0 0-24z"
+                    fill="#fbfbfb"
+                  />
+                </svg>
+                <p data-i18n="introTrap"></p>
+              </li>
+              <li>
+                <svg
+                  class="jb-intro-art"
+                  viewBox="0 0 120 80"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="6"
+                    y="28"
+                    width="108"
+                    height="24"
+                    rx="12"
+                    fill="#1b2335"
+                    stroke="#34415c"
+                    stroke-width="3"
+                  />
+                  <rect
+                    x="9"
+                    y="31"
+                    width="68"
+                    height="18"
+                    rx="9"
+                    fill="#3fd94a"
+                  />
+                  <path
+                    d="M86 40l6 6 12-14"
+                    fill="none"
+                    stroke="#ffd23f"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p data-id="jezzball-intro-step-goal"></p>
+              </li>
+            </ol>
+            <button
+              type="button"
+              class="jb-button"
+              data-id="jezzball-intro-button"
+              data-i18n="introGo"
+            ></button>
+          </div>
         </div>
 
         <div class="jb-overlay" data-id="jezzball-level-cleared" hidden>

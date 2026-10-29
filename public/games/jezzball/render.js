@@ -1,5 +1,5 @@
-// Draws one frame: cached field, capture glow, growing walls, the mouse
-// preview of the next wall, atoms, effects and the hit flash.
+// Draws one frame: cached field, capture glow, growing walls, the mouse /
+// finger preview of the next wall, atoms, effects and the hit flash.
 import { drawBall } from "./draw-ball.js";
 import { SOLID, cellAt } from "./grid.js";
 import { BALL_RADIUS } from "./levels.js";
@@ -88,11 +88,12 @@ function drawPreview(ctx, layout, view) {
   const { state, hover } = view;
   if (!hover || !view.canBuild) return;
   if (cellAt(state.grid, hover.x, hover.y) === SOLID) return;
-  const box = toPixels(layout, previewRect(state.grid, hover, state.axis));
+  const axis = hover.axis ?? state.axis;
+  const box = toPixels(layout, previewRect(state.grid, hover, axis));
   const c = layout.cell;
-  ctx.fillStyle = "rgba(255, 255, 255, 0.28)";
+  ctx.fillStyle = "rgba(255, 210, 63, 0.45)";
   ctx.fillRect(box.x, box.y, box.w, box.h);
-  ctx.strokeStyle = "#ffffff";
+  ctx.strokeStyle = "#ffd23f";
   ctx.lineWidth = 2;
   ctx.strokeRect(
     layout.grid.x + hover.x * c + 1,

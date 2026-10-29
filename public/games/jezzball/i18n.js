@@ -5,9 +5,8 @@ const STRINGS = {
   fr: {
     title: "JezzBall",
     pitch:
-      "Coupez le terrain avec vos murs et enfermez les atomes : conquérez 75 % de la surface !",
+      "Coupez le terrain avec vos murs et enfermez les atomes : conquérez 75 % de la surface (66 % en Facile) !",
     best: "Record : {best}",
-    play: "Jouer",
     back: "Retour",
     options: "Options",
     close: "Fermer",
@@ -44,14 +43,23 @@ const STRINGS = {
     replay: "Rejouer",
     paused: "Pause",
     resume: "Reprendre",
-    continueInfo: "Niveau {level} · Score {score}"
+    continueInfo: "Niveau {level} · {mode} · Score {score}",
+    easy: "Facile",
+    normal: "Normal",
+    bestBoth: "Record Facile : {easy} · Normal : {normal}",
+    introTitle: "Comment jouer",
+    introWall:
+      "Glisse ou tape sur une case : un mur pousse dans les deux sens.",
+    introTrap:
+      "Si un atome touche le mur pendant qu'il pousse, il casse. Les zones sans atome deviennent noires.",
+    introGoal: "Noircis {target} % du terrain pour gagner le niveau !",
+    introGo: "C'est parti !"
   },
   en: {
     title: "JezzBall",
     pitch:
-      "Split the field with your walls and trap the atoms: claim 75% of the area!",
+      "Split the field with your walls and trap the atoms: claim 75% of the area (66% in Easy)!",
     best: "Best: {best}",
-    play: "Play",
     back: "Back",
     options: "Options",
     close: "Close",
@@ -87,14 +95,22 @@ const STRINGS = {
     replay: "Play again",
     paused: "Paused",
     resume: "Resume",
-    continueInfo: "Level {level} · Score {score}"
+    continueInfo: "Level {level} · {mode} · Score {score}",
+    easy: "Easy",
+    normal: "Normal",
+    bestBoth: "Best Easy: {easy} · Normal: {normal}",
+    introTitle: "How to play",
+    introWall: "Swipe or tap a cell: a wall grows both ways.",
+    introTrap:
+      "If an atom touches the wall while it grows, it breaks. Areas with no atom turn black.",
+    introGoal: "Turn {target}% of the field black to win the level!",
+    introGo: "Let's go!"
   },
   es: {
     title: "JezzBall",
     pitch:
-      "Divide el terreno con tus muros y encierra los átomos: ¡conquista el 75 % de la superficie!",
+      "Divide el terreno con tus muros y encierra los átomos: ¡conquista el 75 % de la superficie (66 % en Fácil)!",
     best: "Récord: {best}",
-    play: "Jugar",
     back: "Volver",
     options: "Opciones",
     close: "Cerrar",
@@ -131,7 +147,16 @@ const STRINGS = {
     replay: "Jugar de nuevo",
     paused: "Pausa",
     resume: "Continuar",
-    continueInfo: "Nivel {level} · Puntos {score}"
+    continueInfo: "Nivel {level} · {mode} · Puntos {score}",
+    easy: "Fácil",
+    normal: "Normal",
+    bestBoth: "Récord Fácil: {easy} · Normal: {normal}",
+    introTitle: "Cómo jugar",
+    introWall: "Desliza o toca una casilla: un muro crece en ambos sentidos.",
+    introTrap:
+      "Si un átomo toca el muro mientras crece, se rompe. Las zonas sin átomos se vuelven negras.",
+    introGoal: "¡Pinta de negro el {target} % del terreno para ganar el nivel!",
+    introGo: "¡Vamos!"
   }
 };
 
@@ -145,6 +170,7 @@ const RULES = {
 <li>Si un atome touche une moitié encore en construction, elle se brise et vous perdez une vie. Si le temps s'écoule, vous perdez aussi une vie et le chrono repart.</li>
 <li>Conquérez 75 % de la surface pour passer au niveau suivant. Bonus : chaque point au-delà de 75 % et chaque seconde restante.</li>
 <li>Chaque niveau ajoute un atome et une vie (niveau 1 : 2 atomes, 2 vies). La partie s'arrête quand il ne reste plus de vies.</li>
+<li>Mode Facile : terrain plus petit (cases plus grosses), atomes plus lents, murs plus rapides, un atome de moins, deux vies de plus, pas de chrono, objectif 66 %, et un atome peut frôler la tête d'un mur sans le casser. Les points comptent pour moitié, avec un record à part.</li>
 </ul>`,
   en: `<p>Atoms bounce around the field. Build walls to trap them in smaller and smaller areas.</p>
 <ul>
@@ -155,6 +181,7 @@ const RULES = {
 <li>If an atom touches a half still growing, it breaks and you lose a life. Running out of time also costs a life, and the clock restarts.</li>
 <li>Claim 75% of the area to reach the next level. Bonus: every point above 75% and every second left.</li>
 <li>Each level adds one atom and one life (level 1: 2 atoms, 2 lives). The game ends when no lives are left.</li>
+<li>Easy mode: smaller field (bigger cells), slower atoms, faster walls, one atom fewer, two extra lives, no clock, 66% target, and an atom may brush a wall's head without breaking it. Points count half, with a separate record.</li>
 </ul>`,
   es: `<p>Los átomos rebotan por el terreno. Construye muros para encerrarlos en zonas cada vez más pequeñas.</p>
 <ul>
@@ -165,6 +192,7 @@ const RULES = {
 <li>Si un átomo toca una mitad aún en construcción, se rompe y pierdes una vida. Si se acaba el tiempo, también pierdes una vida y el reloj vuelve a empezar.</li>
 <li>Conquista el 75 % de la superficie para pasar al siguiente nivel. Bonus: cada punto por encima del 75 % y cada segundo restante.</li>
 <li>Cada nivel añade un átomo y una vida (nivel 1: 2 átomos, 2 vidas). La partida termina cuando no quedan vidas.</li>
+<li>Modo Fácil: terreno más pequeño (casillas más grandes), átomos más lentos, muros más rápidos, un átomo menos, dos vidas más, sin reloj, objetivo 66 %, y un átomo puede rozar la cabeza de un muro sin romperlo. Los puntos cuentan la mitad, con un récord aparte.</li>
 </ul>`
 };
 

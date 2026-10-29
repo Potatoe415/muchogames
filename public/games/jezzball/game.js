@@ -14,13 +14,7 @@ import {
   createSurface,
   isPortrait
 } from "./layout.js";
-import {
-  GRID_LONG,
-  GRID_SHORT,
-  TARGET_PERCENT,
-  URGENT_SECONDS,
-  levelConfig
-} from "./levels.js";
+import { URGENT_SECONDS, levelConfig } from "./levels.js";
 import { createLoop } from "./loop.js";
 import { render } from "./render.js";
 import {
@@ -31,14 +25,17 @@ import {
   twoFingerToggle
 } from "./rules.js";
 
+// Untimed modes show a dash instead of a countdown.
 function hudView(state, best) {
+  const { config } = state;
   const seconds = Math.ceil(state.timer);
   return {
-    level: String(state.config.level),
+    level: String(config.level),
     lives: String(Math.max(0, state.lives)),
-    area: `${Math.floor(state.percent)}% / ${TARGET_PERCENT}%`,
-    time: String(seconds),
-    urgent: state.phase === "play" && seconds <= URGENT_SECONDS,
+    area: `${Math.floor(state.percent)}% / ${config.target}%`,
+    time: config.time ? String(seconds) : "—",
+    urgent:
+      config.time > 0 && state.phase === "play" && seconds <= URGENT_SECONDS,
     score: String(state.score),
     best: String(Math.max(best, state.score)),
     axis: state.axis
@@ -57,7 +54,14 @@ export function createGame(options) {
     effects: createEffects(),
     onLevelCleared: options.onLevelCleared,
     onGameOver: options.onGameOver,
-    onChange: options.onChange || (() => {})
+    onChange: options.onChange || (() => {}),
+    vibrate(pattern) {
+      try {
+        navigator.vibrate?.(pattern);
+      } catch {
+        // Vibration unsupported or blocked: sound and visuals still play.
+      }
+    }
   };
   let size = { width: 1, height: 1, dpr: 1 };
   let layout = null;
@@ -73,16 +77,16 @@ export function createGame(options) {
     relayout();
   });
 
-  function startLevel(level) {
-    const config = levelConfig(level);
-    const portrait = isPortrait(size.width, size.height);
-    const grid = portrait
-      ? createGrid(GRID_SHORT, GRID_LONG)
-      : createGrid(GRID_LONG, GRID_SHORT);
+  function startLevel(level, difficulty) {
+    const config = levelConfig(level, difficulty);
+    const [long, short] = config.grid;
+    const grid = isPortrait(size.width, size.height)
+      ? createGrid(short, long)
+      : createGrid(long, short);
     Object.assign(state, {
       config,
       grid,
-      balls: spawnBalls(grid, config.balls),
+      balls: spawnBalls(grid, config.balls, config.ballSpeed),
       walls: [],
       lives: config.lives,
       timer: config.time,
@@ -138,12 +142,12 @@ export function createGame(options) {
   audio.setMuted(muted);
   audio.unlock();
   if (options.saved) restore(options.saved);
-  else startLevel(1);
+  else startLevel(1, options.difficulty);
   loop.start();
 
   return {
     nextLevel() {
-      startLevel(state.config.level + 1);
+      startLevel(state.config.level + 1, state.config.difficulty);
       game.onChange();
     },
     snapshot: () => (state.phase === "over" ? null : state),

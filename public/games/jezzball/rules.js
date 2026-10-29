@@ -10,13 +10,7 @@ import {
   solidify,
   unreachedCells
 } from "./grid.js";
-import {
-  CANCEL_WINDOW,
-  MAX_WALLS,
-  POINTS,
-  TARGET_PERCENT,
-  URGENT_SECONDS
-} from "./levels.js";
+import { CANCEL_WINDOW, MAX_WALLS, POINTS, URGENT_SECONDS } from "./levels.js";
 import {
   breakRay,
   cancelWall,
@@ -35,6 +29,11 @@ const COLORS = {
   fill: "#7fd3ff"
 };
 const FLASH_SECONDS = 0.4;
+const VIBRATE = { hit: [70, 40, 70], fill: 35, win: [40, 30, 40, 30, 120] };
+
+// Points for `base` (already × POINTS), scaled by level and mode.
+const scaled = (config, base) =>
+  Math.round(base * config.level * config.points);
 
 // True when a tap would launch a full two-ray wall (mouse preview).
 export const canBuild = (state) =>
@@ -109,14 +108,18 @@ function shatter(game, ray) {
   });
   breakRay(state.grid, ray);
   audio.play("shatter");
+  game.vibrate(VIBRATE.hit);
   loseLife(game, "hit");
 }
 
+// A growing ray's head is spared over `headGrace` (easy mode); a finished
+// ray is tested at full length so no atom ends up inside a solid cell.
 function resolveHits(game, wall) {
   const { state, effects } = game;
   wall.rays.filter(isLive).forEach((ray) => {
     if (state.phase !== "play") return;
-    const rect = rayRect(wall, ray);
+    const trim = ray.growing ? state.config.headGrace : 0;
+    const rect = rayRect(wall, ray, trim);
     const ball = state.balls.find((b) => touchesRect(b, rect));
     if (!ball) return;
     effects.ring(ball.x, ball.y, "#ff4d4d");
@@ -135,7 +138,10 @@ function capture(game, wall, ray) {
   const pocket = unreachedCells(grid, sources);
   solidify(grid, pocket);
   audio.play("clack");
-  if (pocket.length) audio.play("fill");
+  if (pocket.length) {
+    audio.play("fill");
+    game.vibrate(VIBRATE.fill);
+  }
   state.percent = conqueredPercent(grid);
   game.onChange();
   const gained = grid.solid - before;
@@ -144,27 +150,31 @@ function capture(game, wall, ray) {
   const cx = (rect.x0 + rect.x1) / 2;
   const cy = (rect.y0 + rect.y1) / 2;
   effects.ring(cx, cy, COLORS.fill);
-  addScore(game, gained * POINTS.cell * state.config.level, cx, cy);
+  addScore(game, scaled(state.config, gained * POINTS.cell), cx, cy);
 }
 
 function levelCleared(game) {
   const { state, audio } = game;
-  const level = state.config.level;
-  const over = Math.max(0, Math.floor(state.percent) - TARGET_PERCENT);
-  state.percentBonus = over * POINTS.percent * level;
-  state.timeBonus = Math.ceil(state.timer) * POINTS.second * level;
+  const { config } = state;
+  const over = Math.max(0, Math.floor(state.percent) - config.target);
+  state.percentBonus = scaled(config, over * POINTS.percent);
+  state.timeBonus = scaled(config, Math.ceil(state.timer) * POINTS.second);
   state.score += state.percentBonus + state.timeBonus;
   state.phase = "cleared";
   state.walls = [];
   audio.play("win");
+  game.vibrate(VIBRATE.win);
   game.onLevelCleared(summary(state));
   game.onChange();
 }
 
 function stepWalls(game, dt) {
   const { state, audio } = game;
+  const speed = state.config.wallSpeed;
   let claimed = 0;
-  state.walls.forEach((wall) => (claimed += growWall(state.grid, wall, dt)));
+  state.walls.forEach(
+    (wall) => (claimed += growWall(state.grid, wall, dt, speed))
+  );
   if (claimed > 0) audio.play("grow");
   joinHeadOn(state.walls);
   state.walls.forEach((wall) => resolveHits(game, wall));
@@ -174,12 +184,14 @@ function stepWalls(game, dt) {
     })
   );
   if (state.phase !== "play") return;
-  if (state.percent >= TARGET_PERCENT) levelCleared(game);
+  if (state.percent >= state.config.target) levelCleared(game);
   else state.walls = state.walls.filter((wall) => !wallOver(wall));
 }
 
+// Untimed modes (`config.time === 0`) never tick.
 function stepTimer(game, dt) {
   const { state, audio } = game;
+  if (!state.config.time) return;
   const before = Math.ceil(state.timer);
   state.timer = Math.max(0, state.timer - dt);
   const after = Math.ceil(state.timer);
@@ -198,7 +210,10 @@ export function stepGame(game, dt) {
   fadeGlow(state.grid, dt);
   state.flash = Math.max(0, state.flash - dt);
   if (state.phase !== "play" || state.paused) return;
-  if (moveBalls(state.grid, state.balls, dt) > 0) game.audio.play("bounce");
+  const { ballSpeed } = state.config;
+  if (moveBalls(state.grid, state.balls, dt, ballSpeed) > 0) {
+    game.audio.play("bounce");
+  }
   if (state.walls.length) stepWalls(game, dt);
   if (state.phase === "play") stepTimer(game, dt);
 }
@@ -207,8 +222,10 @@ export function summary(state, reason) {
   return {
     level: state.config.level,
     score: state.score,
+    difficulty: state.config.difficulty,
     percent: Math.floor(state.percent),
-    target: TARGET_PERCENT,
+    target: state.config.target,
+    timed: state.config.time > 0,
     percentBonus: state.percentBonus,
     timeBonus: state.timeBonus,
     reason

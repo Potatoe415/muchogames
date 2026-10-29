@@ -4,8 +4,6 @@
 // launched while another one grows has a single ray (`dir` -1 or 1), like
 // the original game.
 import { EMPTY, GROW_1, GROW_2, SOLID, cellAt } from "./grid.js";
-import { WALL_SPEED } from "./levels.js";
-
 const createRay = (dir) => ({
   kind: dir < 0 ? GROW_1 : GROW_2,
   dir,
@@ -52,12 +50,12 @@ function cellIndex(grid, wall, ray, k) {
 // `finished`: the caller checks it against the balls, then solidifies it.
 // A ray that meets another wall's growing ray waits until that cell turns
 // solid (it then finishes) or breaks (it goes on).
-export function growWall(grid, wall, dt) {
+export function growWall(grid, wall, dt, speed) {
   let claimed = 0;
   wall.age += dt;
   wall.rays.forEach((ray) => {
     if (!ray.growing) return;
-    ray.length += WALL_SPEED * dt;
+    ray.length += speed * dt;
     ray.blockedBy = -1;
     while (ray.length > ray.cells.length) {
       const index = cellIndex(grid, wall, ray, ray.cells.length);
@@ -80,10 +78,11 @@ export function growWall(grid, wall, dt) {
   return claimed;
 }
 
-// Live extent of a ray in grid coordinates.
-export function rayRect(wall, ray) {
-  const lo = ray.dir < 0 ? wall.pivot - ray.length : wall.pivot;
-  const hi = ray.dir < 0 ? wall.pivot : wall.pivot + ray.length;
+// Live extent of a ray in grid coordinates, minus `trim` at the head.
+export function rayRect(wall, ray, trim = 0) {
+  const length = Math.max(0, ray.length - trim);
+  const lo = ray.dir < 0 ? wall.pivot - length : wall.pivot;
+  const hi = ray.dir < 0 ? wall.pivot : wall.pivot + length;
   return wall.axis === "h"
     ? { x0: lo, y0: wall.lane, x1: hi, y1: wall.lane + 1 }
     : { x0: wall.lane, y0: lo, x1: wall.lane + 1, y1: hi };

@@ -1,5 +1,6 @@
 // localStorage: the match in progress, so leaving it by any route and coming
 // back resumes it exactly. Everything read back is validated before use.
+import { diagonalComponent } from "./balls.js";
 import {
   GROW_1,
   GROW_2,
@@ -8,21 +9,12 @@ import {
   conqueredPercent,
   createGrid
 } from "./grid.js";
-import {
-  BALL_SPEED,
-  BORDER,
-  GRID_LONG,
-  GRID_SHORT,
-  MAX_WALLS,
-  TARGET_PERCENT,
-  levelConfig
-} from "./levels.js";
+import { BORDER, DIFFICULTIES, MAX_WALLS, levelConfig } from "./levels.js";
 
 const SAVE_KEY = "jezzball-current";
 const VERSION = 1;
 const PHASES = ["play", "cleared"];
 const AXES = ["h", "v"];
-const COMPONENT = BALL_SPEED / Math.SQRT2;
 const BALL_KEYS = ["x", "y", "vx", "vy", "spin", "tilt"];
 const RAY_FLAGS = ["growing", "finished", "broken"];
 
@@ -46,6 +38,7 @@ export function encodeMatch(state) {
   return JSON.stringify({
     v: VERSION,
     level: state.config.level,
+    mode: state.config.difficulty,
     ...pick(state, ["phase", "score", "axis", "lives", "timer"]),
     ...pick(state, ["percentBonus", "timeBonus"]),
     cols: grid.cols,
@@ -56,11 +49,17 @@ export function encodeMatch(state) {
   });
 }
 
+// Saves written before the difficulty modes have no `mode`: normal.
+const configOf = (data) => levelConfig(data.level, data.mode);
+
 function validMeta(data) {
   if (data?.v !== VERSION || !isInt(data.level) || data.level < 1) {
     return false;
   }
-  const config = levelConfig(data.level);
+  if (data.mode !== undefined && !DIFFICULTIES.includes(data.mode)) {
+    return false;
+  }
+  const config = configOf(data);
   return (
     PHASES.includes(data.phase) &&
     AXES.includes(data.axis) &&
@@ -74,11 +73,11 @@ function validMeta(data) {
   );
 }
 
-// The saved size must be the game's, in either orientation, with a solid
+// The saved size must be the mode's, in either orientation, with a solid
 // border ring.
-function restoreGrid({ cols, rows, cells }) {
+function restoreGrid({ cols, rows, cells }, config) {
   const inner = [cols - 2 * BORDER, rows - 2 * BORDER];
-  const sizes = [GRID_LONG, GRID_SHORT];
+  const sizes = config.grid;
   const fits = [sizes, [...sizes].reverse()].some(
     ([c, r]) => inner[0] === c && inner[1] === r
   );
@@ -97,10 +96,10 @@ function restoreGrid({ cols, rows, cells }) {
   return grid;
 }
 
-function validBall(ball, grid) {
+function validBall(ball, grid, component) {
   if (!BALL_KEYS.every((key) => Number.isFinite(ball?.[key]))) return false;
   const diagonal = [ball.vx, ball.vy].every(
-    (v) => Math.abs(Math.abs(v) - COMPONENT) < 1e-9
+    (v) => Math.abs(Math.abs(v) - component) < 1e-9
   );
   const cell = cellAt(grid, Math.floor(ball.x), Math.floor(ball.y));
   return diagonal && cell !== SOLID;
@@ -148,13 +147,14 @@ function growingMatches(grid, walls) {
   return owned === growing.length;
 }
 
-function validPieces(data, grid) {
+function validPieces(data, grid, config) {
   const { balls, walls } = data;
   if (!Array.isArray(balls) || !Array.isArray(walls)) return false;
   const maxWalls = data.phase === "play" ? MAX_WALLS : 0;
+  const component = diagonalComponent(config.ballSpeed);
   return (
-    balls.length === levelConfig(data.level).balls &&
-    balls.every((ball) => validBall(ball, grid)) &&
+    balls.length === config.balls &&
+    balls.every((ball) => validBall(ball, grid, component)) &&
     walls.length <= maxWalls &&
     walls.every((wall) => validWall(wall, grid)) &&
     growingMatches(grid, walls)
@@ -179,14 +179,15 @@ export function decodeMatch(text) {
     return null;
   }
   if (!validMeta(data)) return null;
-  const grid = restoreGrid(data);
-  if (!grid || !validPieces(data, grid)) return null;
+  const config = configOf(data);
+  const grid = restoreGrid(data, config);
+  if (!grid || !validPieces(data, grid, config)) return null;
   const percent = conqueredPercent(grid);
-  if (data.phase === "play" && percent >= TARGET_PERCENT) return null;
+  if (data.phase === "play" && percent >= config.target) return null;
   return {
     ...pick(data, ["phase", "score", "axis", "lives", "timer"]),
     ...pick(data, ["percentBonus", "timeBonus"]),
-    config: levelConfig(data.level),
+    config,
     grid,
     percent,
     balls: data.balls.map((ball) => pick(ball, BALL_KEYS)),

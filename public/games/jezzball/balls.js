@@ -2,12 +2,14 @@
 // that a ball can never skip a cell. Wall collisions use the ball's square
 // box, resolved one axis at a time, so a ball never overlaps a solid cell.
 import { SOLID, cellAt } from "./grid.js";
-import { BALL_RADIUS, BALL_SPEED, BORDER } from "./levels.js";
+import { BALL_RADIUS, BORDER } from "./levels.js";
 
 const MAX_SUBSTEP = 0.2;
 const EPS = 1e-6;
 const SPIN = 7;
-const COMPONENT = BALL_SPEED / Math.SQRT2;
+
+// Per-axis velocity of a ball moving at `speed` on a diagonal.
+export const diagonalComponent = (speed) => speed / Math.SQRT2;
 
 function hitsSolid(grid, x, y) {
   const r = BALL_RADIUS - EPS;
@@ -23,7 +25,8 @@ function hitsSolid(grid, x, y) {
   return false;
 }
 
-export function spawnBalls(grid, count, random = Math.random) {
+export function spawnBalls(grid, count, speed, random = Math.random) {
+  const component = diagonalComponent(speed);
   const margin = BORDER + 1;
   const spanX = grid.cols - 2 * margin;
   const spanY = grid.rows - 2 * margin;
@@ -39,8 +42,8 @@ export function spawnBalls(grid, count, random = Math.random) {
     balls.push({
       x,
       y,
-      vx: random() < 0.5 ? -COMPONENT : COMPONENT,
-      vy: random() < 0.5 ? -COMPONENT : COMPONENT,
+      vx: random() < 0.5 ? -component : component,
+      vy: random() < 0.5 ? -component : component,
       spin: random() * Math.PI * 2,
       tilt: random() * Math.PI
     });
@@ -92,8 +95,8 @@ function collideBalls(balls) {
 }
 
 // Returns the number of bounces (walls + other balls) during dt.
-export function moveBalls(grid, balls, dt) {
-  const steps = Math.max(1, Math.ceil((BALL_SPEED * dt) / MAX_SUBSTEP));
+export function moveBalls(grid, balls, dt, speed) {
+  const steps = Math.max(1, Math.ceil((speed * dt) / MAX_SUBSTEP));
   const h = dt / steps;
   let bounces = 0;
   for (let s = 0; s < steps; s++) {

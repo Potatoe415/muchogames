@@ -33,8 +33,8 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-29 JezzBall Facile/Normal (Normal = old tuning): easy grid 22x15, slower atoms, faster walls, N atoms, N+3 lives, no timer, 66 %, head grace, ×0.5 points, best per mode; finger wall preview, vibration, first-easy help overlay (`prefs.js`, save `mode`).
 - 2026-10-29 Memory: Options > Debug layout overlay (`debug.js`, `debug-report.js`); body `100dvh` + covered strip measured from `visualViewport` (iOS 26 toolbar cropped player 1); setup fits without scroll, pitch removed.
 - 2026-10-29 Resume lot 2: 6 games save the whole match, quit keeps it, rules collapsed, mobile viewport + `dvh`.
 - 2026-10-29 Decision 0054: quit keeps the save, "Reprendre" everywhere, Space Cadet `resumable: false`.
 - 2026-10-29 Platform rules 0053 + viewport, collapsed rules, `dvh` checks.
-- 2026-10-28 Bridge, hub sort, Sudoku, dames hint, Memory online (0051).

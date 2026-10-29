@@ -6,6 +6,7 @@
 const INTERACTIVE = "button, a, input, select, textarea, [contenteditable]";
 const WHEEL_GAP_MS = 220;
 const SWIPE_PX = 14;
+const PREVIEW_PX = 5;
 
 function pointToCell(event, canvas, toCell) {
   const rect = canvas.getBoundingClientRect();
@@ -14,41 +15,48 @@ function pointToCell(event, canvas, toCell) {
 
 // The wall starts from the cell under the finger as soon as it has moved
 // SWIPE_PX: left/right builds a horizontal wall, up/down a vertical one.
-// The swipe direction also aims the single ray of a second wall.
+// The swipe direction also aims the single ray of a second wall. While the
+// finger is down the coming wall is previewed (active axis, then the drag
+// direction once it has moved PREVIEW_PX).
 function createSwiper(actions) {
   let start = null;
+  const clear = () => {
+    start = null;
+    actions.hover(null);
+  };
   return {
     down(event, cell) {
       start = cell
         ? { id: event.pointerId, x: event.clientX, y: event.clientY, cell }
         : null;
+      actions.hover(cell);
     },
     move(event) {
       if (!start || event.pointerId !== start.id) return;
       const dx = event.clientX - start.x;
       const dy = event.clientY - start.y;
-      if (Math.max(Math.abs(dx), Math.abs(dy)) < SWIPE_PX) return;
+      const moved = Math.max(Math.abs(dx), Math.abs(dy));
       const { cell } = start;
       const horizontal = Math.abs(dx) >= Math.abs(dy);
-      start = null;
-      actions.build(
-        cell.x,
-        cell.y,
-        horizontal ? "h" : "v",
-        Math.sign(horizontal ? dx : dy)
-      );
+      if (moved >= PREVIEW_PX) {
+        start.axis = horizontal ? "h" : "v";
+        start.dir = Math.sign(horizontal ? dx : dy);
+        actions.hover({ ...cell, axis: start.axis });
+      }
+      if (moved < SWIPE_PX) return;
+      const { axis, dir } = start;
+      clear();
+      actions.build(cell.x, cell.y, axis, dir);
     },
-    // Lifted before reaching SWIPE_PX: a plain tap, built along the active
-    // axis.
+    // Lifted before reaching SWIPE_PX: a plain tap along the active axis,
+    // or along the previewed drag direction once it has shown.
     up(event) {
       if (start?.id !== event.pointerId) return;
-      const { cell } = start;
-      start = null;
-      actions.build(cell.x, cell.y);
+      const { cell, axis, dir } = start;
+      clear();
+      actions.build(cell.x, cell.y, axis, dir);
     },
-    reset() {
-      start = null;
-    }
+    reset: clear
   };
 }
 
