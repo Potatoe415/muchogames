@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="play.css" />
     <link rel="stylesheet" href="online.css" />
+    <link rel="stylesheet" href="debug.css" />
   </head>
   <body>
     <header class="game-nav">
@@ -176,6 +177,18 @@
           <div class="options-panel-section" data-id="game-options-rules">
             <p class="options-panel-section-title" data-i18n="rules">Règles</p>
             <div class="rules-modal-content" data-id="memory-rules"></div>
+          </div>
+          <div class="options-panel-section" data-id="game-options-debug">
+            <p class="options-panel-section-title" data-i18n="debug">Debug</p>
+            <button
+              type="button"
+              class="memory-chip"
+              data-id="memory-debug-toggle"
+              data-i18n="debugShow"
+              aria-pressed="false"
+            >
+              Afficher les infos d'affichage
+            </button>
           </div>
         </div>
       </div>

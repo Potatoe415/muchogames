@@ -24,6 +24,8 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 | `sound.js` | Web Audio beeps. `unlock()` on the first pointer. |
 | `view.js` | DOM grid. Front `<img>` exists only while `FLIPPED` or `MATCHED`. |
 | `i18n.js` | FR/EN/ES copy, theme names, rules. |
+| `debug.js` | Options > Debug toggle (or `?debug=1`), kept in `localStorage` `muchogames_memory_debug`. Live overlay (copy / fold / move / close), cyan and red lines at the visible top and bottom, dashed outlines on nav, app, panel, stage and bars, event log (viewport resize/scroll, orientation, focus). |
+| `debug-report.js` | The report text: every key element's box with `CUT n below/above` flags against `visualViewport`, viewport numbers, `vh/svh/lvh/dvh` and safe-area insets in px, computed paddings, media queries, game state, device. |
 
 ## Assets
 

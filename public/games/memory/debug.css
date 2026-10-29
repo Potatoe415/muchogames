@@ -1,0 +1,98 @@
+.memory-debug {
+  position: absolute;
+  top: var(--memory-nav-height, 60px);
+  left: 4px;
+  right: 4px;
+  z-index: 1400;
+  max-height: 45%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background: rgba(2, 6, 23, 0.86);
+  color: #a7f3d0;
+  font:
+    10px/1.35 ui-monospace,
+    Menlo,
+    Consolas,
+    monospace;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.memory-debug.is-bottom {
+  top: auto;
+  bottom: 4px;
+}
+
+.memory-debug-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-bottom: 1px solid rgba(167, 243, 208, 0.25);
+}
+
+.memory-debug-title {
+  margin-right: auto;
+  color: #fde047;
+}
+
+.memory-debug-button {
+  border: 1px solid rgba(167, 243, 208, 0.5);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.memory-debug-out {
+  margin: 0;
+  padding: 6px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overscroll-behavior: contain;
+}
+
+.memory-debug.is-folded .memory-debug-out {
+  display: none;
+}
+
+.memory-debug-mark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 1401;
+  pointer-events: none;
+}
+
+.memory-debug-mark-top {
+  background: #22d3ee;
+}
+
+.memory-debug-mark-bottom {
+  background: #ef4444;
+}
+
+.memory-debug-on .game-nav {
+  outline: 1px dashed #f59e0b;
+  outline-offset: -1px;
+}
+
+.memory-debug-on .memory-app {
+  outline: 2px dashed #a855f7;
+  outline-offset: -2px;
+}
+
+.memory-debug-on .memory-setup-panel,
+.memory-debug-on .memory-stage {
+  outline: 1px dashed #22c55e;
+}
+
+.memory-debug-on .memory-bar {
+  outline: 1px dashed #ef4444;
+  outline-offset: -1px;
+}

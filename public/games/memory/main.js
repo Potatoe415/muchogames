@@ -1,5 +1,6 @@
 import { mountChips } from "./chips.js";
 import { GRID_IDS, LEVELS, MODES } from "./config.js";
+import { mountDebug } from "./debug.js";
 import { buildDeck } from "./deck.js";
 import { BACKS, THEME_IDS, deckUrls } from "./faces.js";
 import { createMatch } from "./game.js";
@@ -277,6 +278,7 @@ function boot() {
   mountChips(page.setup);
   mountPickers();
   bindPage();
+  mountDebug(page);
   applyLanguage(page);
   if (online.restore() || online.joinFromLink()) return;
   const saved = loadSave();

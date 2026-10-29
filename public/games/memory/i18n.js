@@ -70,7 +70,9 @@ const STRINGS = {
     errFull: "Cette partie a déjà deux joueurs.",
     errClosed: "Ton adversaire a quitté la partie.",
     errGeneric: "Connexion impossible. Réessaie.",
-    errShare: "Partage impossible."
+    errShare: "Partage impossible.",
+    debug: "Debug",
+    debugShow: "Afficher les infos d'affichage"
   },
   en: {
     title: "Memory",
@@ -141,7 +143,9 @@ const STRINGS = {
     errFull: "This game already has two players.",
     errClosed: "Your opponent left the game.",
     errGeneric: "Could not connect. Try again.",
-    errShare: "Could not share."
+    errShare: "Could not share.",
+    debug: "Debug",
+    debugShow: "Show layout info"
   },
   es: {
     title: "Memory",
@@ -212,7 +216,9 @@ const STRINGS = {
     errFull: "Esta partida ya tiene dos jugadores.",
     errClosed: "Tu rival ha salido de la partida.",
     errGeneric: "No se pudo conectar. Inténtalo de nuevo.",
-    errShare: "No se pudo compartir."
+    errShare: "No se pudo compartir.",
+    debug: "Depuración",
+    debugShow: "Mostrar info de pantalla"
   }
 };
 
