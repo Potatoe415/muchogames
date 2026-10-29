@@ -241,9 +241,10 @@ export function createFlow(ctx) {
     step();
   }
 
-  function mount(match) {
+  function mount(match, auction = false) {
     unmount();
     fs.match = match;
+    fs.showAuction = auction && dealState(deal()).phase === "play";
     step();
   }
 
@@ -274,6 +275,7 @@ export function createFlow(ctx) {
     lastTrick,
     toggleAuction,
     next,
-    match: () => fs.match
+    match: () => fs.match,
+    auctionShown: () => fs.showAuction
   };
 }

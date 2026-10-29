@@ -80,14 +80,39 @@ export function loadStats() {
 
 export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 
-// The match is replayed against the rules when it is read back.
-export function loadSaved() {
-  const saved = readJson(SAVED_KEY);
-  if (!saved || !LEVEL_IDS.includes(saved.level)) return null;
-  return restoreMatch(saved);
+const PANELS = ["hands", "score"];
+
+const cleanView = (view) => ({
+  auction: view?.auction === true,
+  panels: PANELS.filter(
+    (panel) => Array.isArray(view?.panels) && view.panels.includes(panel)
+  )
+});
+
+function restoreSaved(saved) {
+  try {
+    return LEVEL_IDS.includes(saved.level) ? restoreMatch(saved) : null;
+  } catch {
+    return null;
+  }
 }
 
-export const saveMatch = (match) =>
-  writeJson(SAVED_KEY, { level: match.level, deals: match.deals });
+// The match is replayed against the rules when it is read back; a save that
+// does not replay is dropped.
+export function loadSaved() {
+  if (readText(SAVED_KEY, null) === null) return null;
+  const saved = readJson(SAVED_KEY);
+  const match = saved && restoreSaved(saved);
+  if (match) return { match, view: cleanView(saved.view) };
+  clearMatch();
+  return null;
+}
+
+export const saveMatch = (match, view) =>
+  writeJson(SAVED_KEY, {
+    level: match.level,
+    deals: match.deals,
+    view: cleanView(view)
+  });
 
 export const clearMatch = () => writeJson(SAVED_KEY, null);

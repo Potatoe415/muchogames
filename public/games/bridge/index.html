@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="bidding.css" />
     <link rel="stylesheet" href="panels.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -129,13 +129,15 @@
             </div>
           </div>
           <div data-id="bridge-options-settings"></div>
-          <div class="options-panel-section" data-id="game-options-rules">
-            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
             <div
               class="rules-modal-content"
               data-id="bridge-rules-content"
             ></div>
-          </div>
+          </details>
         </div>
       </div>
     </div>

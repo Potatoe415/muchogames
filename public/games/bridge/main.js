@@ -19,6 +19,7 @@ import {
   resultMark
 } from "./panels.js";
 import { createRobot } from "./robot.js";
+import { PANELS, saveOnLeave, saveProgress } from "./saving.js";
 import {
   bindChoices,
   buildOptions,
@@ -68,13 +69,19 @@ const flow = createFlow({
   settings: () => page.settings,
   bidBox,
   robot: createRobot(),
-  save: saveMatch,
+  save: (match) => saveProgress(match, flow.auctionShown()),
   onDealEnd,
   onMatchEnd
 });
+const saveNow = () => saveProgress(flow.match(), flow.auctionShown());
 
 function showOverlay(id, on = true) {
   $(id).hidden = !on;
+}
+
+function closePanel(id) {
+  showOverlay(id, false);
+  saveNow();
 }
 
 function fillResult() {
@@ -127,6 +134,7 @@ function showHands() {
     `${contractLabel(page.lang, contract)} ${seatName(page.lang, contract.declarer)} ${resultMark(result)}`;
   fillDiagram($("bridge-hands-diagram"), deal, page.lang, trump);
   showOverlay("bridge-hands-panel");
+  saveNow();
 }
 
 function showScore() {
@@ -137,6 +145,7 @@ function showScore() {
     : match;
   fillScore($("bridge-score-table"), shown, page.lang, t);
   showOverlay("bridge-score-panel");
+  saveNow();
 }
 
 function applyLanguage() {
@@ -178,21 +187,30 @@ function showScreen(playing) {
   $("bridge-stage").hidden = !playing;
 }
 
-function mount(match) {
+function mount(match, auction) {
   OVERLAYS.forEach((id) => showOverlay(id, false));
   page.result = null;
   showScreen(true);
-  flow.mount(match);
+  flow.mount(match, auction);
+}
+
+function showStart(saved) {
+  flow.unmount();
+  page.result = null;
+  OVERLAYS.forEach((id) => showOverlay(id, false));
+  renderResume(saved);
+  showScreen(false);
+}
+
+// Quitting is not an end: no finish(), the save stays for "Reprendre".
+function quitMatch() {
+  saveNow();
+  showStart(loadSaved());
 }
 
 function returnToStart() {
-  flow.unmount();
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   clearMatch();
-  page.result = null;
-  OVERLAYS.forEach((id) => showOverlay(id, false));
-  renderResume(null);
-  showScreen(false);
+  showStart(null);
 }
 
 async function startMatch() {
@@ -210,12 +228,12 @@ async function startMatch() {
 
 function resumeMatch() {
   const saved = loadSaved();
-  if (!saved) {
-    clearMatch();
-    return void renderResume(null);
-  }
+  renderResume(saved);
+  if (!saved) return;
   window.MuchogamesMatch.resume(GAME_ID);
-  mount(saved);
+  mount(saved.match, saved.view.auction);
+  if (saved.view.panels.includes("hands") && page.result) showHands();
+  if (saved.view.panels.includes("score")) showScore();
 }
 
 function nextDeal() {
@@ -260,14 +278,17 @@ function bindPage() {
     "bridge-hint-button": () => flow.hint(),
     "bridge-last-trick-button": () => flow.lastTrick(),
     "bridge-score-button": showScore,
-    "bridge-status-contract": () => flow.toggleAuction(),
+    "bridge-status-contract": () => {
+      flow.toggleAuction();
+      saveNow();
+    },
     "bridge-claim-button": () => flow.claim(),
-    "bridge-quit-button": returnToStart,
+    "bridge-quit-button": quitMatch,
     "bridge-next-deal-button": nextDeal,
     "bridge-see-hands-button": showHands,
     "bridge-result-score-button": showScore,
-    "bridge-hands-close": () => showOverlay("bridge-hands-panel", false),
-    "bridge-score-close": () => showOverlay("bridge-score-panel", false),
+    "bridge-hands-close": () => closePanel(PANELS.hands),
+    "bridge-score-close": () => closePanel(PANELS.score),
     "bridge-replay-button": startMatch,
     "bridge-change-settings-button": returnToStart,
     "bridge-match-hands-button": showHands
@@ -279,6 +300,7 @@ function bindPage() {
 }
 
 bindPage();
+saveOnLeave(saveNow);
 applySettings();
 applyLanguage();
 renderResume(loadSaved());
