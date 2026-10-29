@@ -57,9 +57,17 @@ const state = {
 const transientCleanups = [];
 let betSound = null;
 
+const matchSave = window.PYRAMIDE_SAVE.create({
+  startingBricks: STARTING_BRICKS,
+  keywordCount: REQUIRED_KEYWORDS,
+  maxBet: MAX_BET,
+  phases: [PHASES.SETUP, PHASES.WORD_LOOP, PHASES.FINAL_RIDDLE, PHASES.ROUND_SUMMARY],
+});
+
 init();
 setupInfoButton();
 setupNavButtons();
+setupSaveOnLeave();
 
 async function init() {
   try {
@@ -126,20 +134,72 @@ function setupNavButtons() {
     backLink.addEventListener("click", (event) => {
       if (state.screen !== SCREENS.SPLASH) {
         event.preventDefault();
-        window.MuchogamesMatch.finish();
-        state.session = null;
-        state.round = null;
-        state.error = null;
-        state.screen = SCREENS.SPLASH;
-        render();
+        quitToSplash();
       }
     });
   }
 }
 
+function setupSaveOnLeave() {
+  window.addEventListener("pagehide", persistMatch);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") persistMatch();
+  });
+}
+
+// During a match ↻ carries data-match-quit, so the shared dialog has already
+// told the player the match is saved: it quits; after game over it replays.
 function handleResetClick() {
   if (!state.rawData) return;
-  startMatch(getLocale());
+  if (state.round?.phase === PHASES.GAME_OVER) {
+    startMatch(getLocale());
+    return;
+  }
+  quitToSplash();
+}
+
+function quitToSplash() {
+  persistMatch();
+  state.session = null;
+  state.round = null;
+  state.error = null;
+  state.screen = SCREENS.SPLASH;
+  render();
+}
+
+function persistMatch() {
+  if (state.screen !== SCREENS.GAME || !state.session || !state.round) return;
+  if (state.round.phase === PHASES.GAME_OVER) return;
+  matchSave.save(state.session, state.round);
+}
+
+function resumeMatch() {
+  const saved = matchSave.load();
+  const normalized = saved && normalizeDeck(state.rawData, saved.locale);
+  const restored = normalized && matchSave.restore(saved, normalized.validDeck);
+  if (!restored) {
+    matchSave.clear();
+    render();
+    return;
+  }
+
+  window.MuchogamesMatch.resume("pyramide");
+  state.uiLocale = saved.locale;
+  state.datasetMeta = datasetMetaFor(normalized);
+  state.session = restored.session;
+  state.round = restored.round;
+  state.error = null;
+  state.screen = SCREENS.GAME;
+  render();
+}
+
+function datasetMetaFor(normalized) {
+  return {
+    validCount: normalized.validDeck.length,
+    skippedCount: normalized.skipped.length,
+    skipped: normalized.skipped,
+    batchId: state.rawData.batch_id ?? null,
+  };
 }
 
 // Every new match (splash start, ↻ reset) spends a coin first.
@@ -164,12 +224,7 @@ function applyLocaleToSession(locale) {
   const byId = Object.fromEntries(normalized.validDeck.map((e) => [e.id, e]));
   state.session.deck = state.session.deck.map((old) => byId[old.id] ?? old);
   state.session.locale = locale;
-  state.datasetMeta = {
-    validCount: normalized.validDeck.length,
-    skippedCount: normalized.skipped.length,
-    skipped: normalized.skipped,
-    batchId: state.rawData.batch_id ?? null,
-  };
+  state.datasetMeta = datasetMetaFor(normalized);
 
   if (state.round?.enigma?.id && byId[state.round.enigma.id]) {
     state.round.enigma = byId[state.round.enigma.id];
@@ -193,12 +248,7 @@ function beginSession(locale) {
     return;
   }
 
-  state.datasetMeta = {
-    validCount: normalized.validDeck.length,
-    skippedCount: normalized.skipped.length,
-    skipped: normalized.skipped,
-    batchId: state.rawData.batch_id ?? null,
-  };
+  state.datasetMeta = datasetMetaFor(normalized);
   state.session = createSession(normalized.validDeck, locale);
   state.round = createRound(drawNextEnigma());
   state.error = null;
@@ -350,6 +400,7 @@ function render() {
   document.documentElement.lang = getLocale();
   updateLayoutMode();
   renderStatus();
+  persistMatch();
 
   if (state.loading || state.screen === SCREENS.LOADING) {
     renderLoadingScreen();
@@ -452,10 +503,13 @@ function renderSplashScreen() {
     alt: t("splashAlt"),
   });
 
-  shell.append(
-    splashImage,
-    button(t("splashStart"), "primary-button", () => startMatch(getLocale())),
-  );
+  shell.append(splashImage);
+  if (matchSave.load()) {
+    const resumeButton = button(t("resumeMatch"), "primary-button", resumeMatch);
+    resumeButton.dataset.id = "pyramide-resume-button";
+    shell.append(resumeButton);
+  }
+  shell.append(button(t("splashStart"), "primary-button", () => startMatch(getLocale())));
 
   if (els.langSelector) {
     const makeLangButton = (locale, label) => {
@@ -666,6 +720,7 @@ function nextRound() {
 
   if (!hasMoreRounds()) {
     window.MuchogamesMatch.finish();
+    matchSave.clear();
     state.round = createRound(null);
     render();
     return;

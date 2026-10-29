@@ -2,14 +2,14 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Pyramide</title>
     <link rel="stylesheet" href="../../shared/css/base.css" />
     <link rel="stylesheet" href="../../shared/css/game-header.css" />
     <link rel="stylesheet" href="../../shared/css/wordplayer.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="game-body pyramide-body">
+  <body class="game-body pyramide-body" data-match-saved>
     <div class="app-shell">
       <header class="game-nav">
         <div class="nav-side nav-left">
@@ -65,10 +65,10 @@
               <p class="options-panel-section-title">Langue</p>
               <div id="lang-selector" class="lang-selector"></div>
             </div>
-            <div id="rules-section" class="options-panel-section" data-id="game-options-rules" style="display: none">
-              <p id="pyramide-rules-title" class="options-panel-section-title"></p>
+            <details id="rules-section" class="options-panel-section" data-id="game-options-rules" style="display: none">
+              <summary id="pyramide-rules-title" class="options-panel-section-title"></summary>
               <div id="pyramide-rules-content" class="rules-modal-content"></div>
-            </div>
+            </details>
           </div>
         </div>
       </div>
@@ -98,6 +98,7 @@
     <script src="../../shared/js/game-header.js"></script>
     <script src="../../shared/js/game-session.js"></script>
     <script src="./i18n.js"></script>
+    <script src="./save.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
