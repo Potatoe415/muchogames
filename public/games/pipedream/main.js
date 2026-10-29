@@ -3,11 +3,13 @@
 // is destroyed whenever the page is left or a new match starts.
 import { createGame } from "./game.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
+import { clearMatch, loadMatch, storeMatch } from "./save.js";
 
 const GAME_ID = "pipedream";
 const LANG_KEY = "bergamots-lang";
 const BEST_KEY = "pipedream-best-score";
 const SOUND_KEY = "pipedream-sound";
+const SAVE_EVERY_MS = 1000;
 const OVERLAYS = {
   cleared: "pipedream-level-cleared",
   over: "pipedream-game-over",
@@ -38,6 +40,8 @@ const page = {
   muted: readStorage(SOUND_KEY, "on") === "off",
   best: Number(readStorage(BEST_KEY, "0")) || 0,
   game: null,
+  saved: loadMatch(),
+  saveTimer: 0,
   summary: null,
   overlay: null,
   newBest: false,
@@ -76,6 +80,7 @@ function applyLanguage() {
   sound.textContent = t(page.muted ? "soundOff" : "soundOn");
   sound.setAttribute("aria-pressed", String(!page.muted));
   $("pipedream-start-best").textContent = t("best", { best: page.best });
+  $("pipedream-continue-button").hidden = !page.saved;
   renderOverlayText();
 }
 
@@ -110,12 +115,29 @@ function onGameOver(summary) {
     page.best = summary.score;
     writeStorage(BEST_KEY, String(page.best));
   }
+  clearMatch();
+  page.saved = null;
   window.MuchogamesMatch.finish({ score: summary.score });
   showOverlay("over");
 }
 
-function mountGame() {
-  page.game?.destroy();
+// Once the match is over there is no current state, so nothing is stored.
+function saveMatch() {
+  const state = page.game?.current();
+  if (state) storeMatch(state);
+}
+
+// A restored match comes back paused, or on its cleared screen.
+function showRestored() {
+  if (page.game.current().phase === "cleared") {
+    onLevelCleared(page.game.summary());
+  } else {
+    showOverlay("paused");
+  }
+}
+
+function mountGame(saved) {
+  unmountGame();
   page.summary = null;
   page.newBest = false;
   showScreen(true);
@@ -124,10 +146,15 @@ function mountGame() {
     canvas: $("pipedream-canvas"),
     host: $("pipedream-board"),
     muted: page.muted,
+    saved,
     onLevelCleared,
-    onGameOver
+    onGameOver,
+    onMove: saveMatch
   });
-  showOverlay(null);
+  if (saved) showRestored();
+  else showOverlay(null);
+  saveMatch();
+  page.saveTimer = setInterval(saveMatch, SAVE_EVERY_MS);
 }
 
 async function startMatch() {
@@ -135,18 +162,29 @@ async function startMatch() {
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
-  if (allowed) mountGame();
+  if (allowed) mountGame(null);
+}
+
+function resumeMatch() {
+  if (page.starting) return;
+  page.saved = loadMatch();
+  if (!page.saved) return applyLanguage();
+  window.MuchogamesMatch.resume(GAME_ID);
+  mountGame(page.saved);
 }
 
 function unmountGame() {
+  saveMatch();
+  clearInterval(page.saveTimer);
   page.game?.destroy();
   page.game = null;
   page.overlay = null;
 }
 
+// Quitting is not an end: no finish(), the save stays for "Reprendre".
 function returnToStart() {
   unmountGame();
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
+  page.saved = loadMatch();
   Object.values(OVERLAYS).forEach((id) => ($(id).hidden = true));
   showScreen(false);
   applyLanguage();
@@ -166,9 +204,9 @@ function setLanguage(lang) {
 }
 
 function pauseWhenHidden() {
-  if (document.hidden && page.game && page.overlay === null) {
-    showOverlay("paused");
-  }
+  if (!document.hidden) return;
+  if (page.game && page.overlay === null) showOverlay("paused");
+  saveMatch();
 }
 
 function bindPage() {
@@ -182,6 +220,7 @@ function bindPage() {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   $("pipedream-sound-toggle").addEventListener("click", toggleSound);
+  $("pipedream-continue-button").addEventListener("click", resumeMatch);
   $("pipedream-start-button").addEventListener("click", startMatch);
   $("pipedream-replay-button").addEventListener("click", startMatch);
   $("pipedream-resume-button").addEventListener("click", () =>
@@ -189,6 +228,7 @@ function bindPage() {
   );
   $("pipedream-next-level-button").addEventListener("click", () => {
     page.game?.nextLevel();
+    saveMatch();
     showOverlay(null);
   });
   document.addEventListener("visibilitychange", pauseWhenHidden);

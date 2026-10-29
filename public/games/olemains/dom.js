@@ -6,6 +6,7 @@ export const DOM = {
   setupView: document.getElementById('setup-view'),
   gameView: document.getElementById('game-view'),
   deckGrid: document.getElementById('deck-grid'),
+  resumeButton: document.getElementById('olemains-resume-button'),
   timerInput: document.getElementById('timer-input'),
   wordDisplay: document.getElementById('current-word'),
   timerDisplay: document.getElementById('timer'),

@@ -5,8 +5,9 @@
 
 import { DOM } from './dom.js';
 import { GameState } from './gameState.js';
+import { clearMatch, loadMatch, storeMatch } from './save.js';
 import { GameTimer } from './timer.js';
-import { buildDeckMenu, readTimerInput, updateHUD, showGameOver, showWord, showSetupView, showGameView, showError } from './ui.js';
+import { buildDeckMenu, mapColor, readTimerInput, renderResume, updateHUD, showGameOver, showWord, showSetupView, showGameView, showError } from './ui.js';
 import { isValidGameData } from './validation.js';
 import { loadRulesIfExists } from '../../shared/js/engine.js';
 
@@ -25,6 +26,8 @@ class OlemainsGame {
     this.timer = new GameTimer();
     this.isGameActive = false;
     this.rulesHtml = null;
+    this.saved = null;
+    this.endTimer = null;
   }
 
   /**
@@ -58,6 +61,11 @@ class OlemainsGame {
     DOM.btnValid.addEventListener('click', () => this.processTurn(1));
     DOM.btnPass.addEventListener('click', () => this.processTurn(0));
     DOM.btnQuit.addEventListener('click', () => this.quitGame());
+    DOM.resumeButton.addEventListener('click', () => this.resumeGame());
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) this.saveMatch();
+    });
+    window.addEventListener('pagehide', () => this.saveMatch());
   }
 
   async initRulesSupport() {
@@ -86,6 +94,7 @@ class OlemainsGame {
     this.gameState.language = language;
     document.documentElement.lang = language;
     this.markActiveLanguage();
+    renderResume(this.saved, language);
     void this.refreshRules();
   }
 
@@ -99,9 +108,43 @@ class OlemainsGame {
    * Show deck selection menu
    */
   showDeckSelection() {
-    buildDeckMenu(this.gameState.gameData.decks, (deck, bgColor) => {
+    buildDeckMenu(this.decks(), (deck, bgColor) => {
       this.startGame(deck, bgColor);
     });
+    this.saved = loadMatch(this.decks());
+    renderResume(this.saved, this.gameState.language);
+  }
+
+  decks() {
+    return this.gameState.gameData?.decks || [];
+  }
+
+  // Only a match in play is stored; endGame has already cleared it.
+  saveMatch() {
+    if (this.isGameActive && this.gameState.timeLeft > 0) {
+      storeMatch(this.gameState, this.decks());
+    }
+  }
+
+  /**
+   * Resume the saved match: no coin, timer restarts from the saved time left
+   */
+  resumeGame() {
+    if (this.isStarting || this.isGameActive) return;
+    const saved = loadMatch(this.decks());
+    if (!saved) {
+      this.showDeckSelection();
+      return;
+    }
+    window.MuchogamesMatch.resume('olemains');
+    const bgColor = mapColor(saved.deck.color);
+    this.gameState.restore(saved, bgColor);
+    showGameView(bgColor);
+    this.updateDisplay();
+    showWord(this.gameState.currentWordText());
+    this.startTimer();
+    this.isGameActive = true;
+    this.saveMatch();
   }
 
   /**
@@ -125,6 +168,7 @@ class OlemainsGame {
       this.startTimer();
       
       this.isGameActive = true;
+      this.saveMatch();
     } catch (error) {
       console.error('Failed to start game:', error);
       showError(error.message);
@@ -143,6 +187,7 @@ class OlemainsGame {
     this.gameState.updateScore(points);
     this.updateDisplay();
     this.pullNextWord();
+    this.saveMatch();
   }
 
   /**
@@ -169,6 +214,7 @@ class OlemainsGame {
       (remaining) => {
         this.gameState.timeLeft = remaining;
         this.updateDisplay();
+        this.saveMatch();
       },
       () => {
         this.endGame("Temps écoulé !");
@@ -188,22 +234,27 @@ class OlemainsGame {
    * @param {string} reason - Reason for game end
    */
   endGame(reason) {
+    clearMatch();
+    this.saved = null;
     window.MuchogamesMatch.finish();
     this.isGameActive = false;
     this.timer.stop();
     
     showGameOver(reason, this.gameState.deckColor);
     
-    setTimeout(() => {
+    this.endTimer = setTimeout(() => {
       this.quitGame();
     }, 3000);
   }
 
   /**
-   * Quit current game and return to setup
+   * Quit current game and return to setup.
+   * Quitting is not an end: no finish(), the save stays and the setup
+   * screen offers it again through the resume button.
    */
   quitGame() {
-    window.MuchogamesMatch.finish();
+    clearTimeout(this.endTimer);
+    this.saveMatch();
     this.isGameActive = false;
     this.timer.stop();
     this.gameState.reset();

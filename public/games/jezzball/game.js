@@ -56,7 +56,8 @@ export function createGame(options) {
     audio,
     effects: createEffects(),
     onLevelCleared: options.onLevelCleared,
-    onGameOver: options.onGameOver
+    onGameOver: options.onGameOver,
+    onChange: options.onChange || (() => {})
   };
   let size = { width: 1, height: 1, dpr: 1 };
   let layout = null;
@@ -91,6 +92,12 @@ export function createGame(options) {
       flash: 0,
       phase: "play"
     });
+    hover = null;
+    relayout();
+  }
+
+  function restore(saved) {
+    Object.assign(state, saved, { flash: 0, paused: true });
     hover = null;
     relayout();
   }
@@ -130,11 +137,16 @@ export function createGame(options) {
 
   audio.setMuted(muted);
   audio.unlock();
-  startLevel(1);
+  if (options.saved) restore(options.saved);
+  else startLevel(1);
   loop.start();
 
   return {
-    nextLevel: () => startLevel(state.config.level + 1),
+    nextLevel() {
+      startLevel(state.config.level + 1);
+      game.onChange();
+    },
+    snapshot: () => (state.phase === "over" ? null : state),
     setPaused: (value) => (state.paused = value),
     setMuted: (value) => audio.setMuted(value),
     setSwipe: (value) => (state.swipe = value),

@@ -153,6 +153,27 @@ body {
   box-shadow: 0 1px 0 #8f1d19;
 }
 
+.jb-start .jb-button {
+  display: block;
+  margin: 10px auto 0;
+}
+
+.jb-continue {
+  background: #2f6fe0;
+  box-shadow: 0 4px 0 #173d85;
+}
+
+.jb-continue:active {
+  box-shadow: 0 1px 0 #173d85;
+}
+
+.jb-continue-info {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
 /* --- Play stage: board + HUD (below in portrait, right side in landscape) --- */
 .jb-stage {
   position: relative;

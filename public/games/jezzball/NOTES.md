@@ -8,8 +8,9 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 
 | File | Role |
 |---|---|
-| `main.js` | Page shell: i18n, options panel (language, rules, sound), start screen, overlays, `MuchogamesMatch.start/finish`, pause (options open / tab hidden), destroy on `pagehide`. |
-| `game.js` | `createGame({ stage, canvas, host, muted, best, onLevelCleared, onGameOver })` → `{ nextLevel, setPaused, setMuted, destroy }`. Owns loop, ResizeObserver, listeners, AudioContext, field cache. |
+| `main.js` | Page shell: i18n, options panel (language, sound, swipe, collapsed rules), start screen with "Reprendre", overlays, `MuchogamesMatch.start/resume/finish`, pause (options open / tab hidden), save + destroy on `pagehide`. |
+| `game.js` | `createGame({ stage, canvas, host, muted, best, swipe, saved, onLevelCleared, onGameOver, onChange })` → `{ nextLevel, snapshot, setPaused, setMuted, setSwipe, destroy }`. Owns loop, ResizeObserver, listeners, AudioContext, field cache. |
+| `save.js` | `jezzball-current` match save: `encodeMatch(state)`, validating `decodeMatch(text)`, `loadMatch / storeMatch / clearMatch`. |
 | `rules.js` | Wall launch, axis toggle, two-finger cancel, ray/ball hits, capture + scoring, lives, timer, level end. |
 | `grid.js` | `Uint8Array` cells `EMPTY / SOLID / GROW_1 / GROW_2`, border ring, `solidify`, multi-source BFS `unreachedCells`, capture glow. |
 | `walls.js` | Dual-ray or single-ray wall: `pivot` grid line, ray 1 left/up, ray 2 right/down, `growWall`, `rayRect`, `breakRay`, `nearestDirection`, `joinHeadOn`. |
@@ -31,3 +32,11 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 - Two-finger tap: cancels a wall launched < 0.15 s earlier by the first finger (if nothing solidified) and flips the axis.
 - Swipe option (on by default, touch/pen only): the wall starts from the touched cell once the finger has moved 14 px, ← → horizontal, ↑ ↓ vertical; a finger lifted before 14 px is a tap, built on release along the active axis. Off: a tap builds on `pointerdown`. Axis button and two-finger toggle work in both modes. Mouse always uses click + axis toggles.
 - No `won` is sent to `finish()`: the run always ends on game over. Best score: `jezzball-best-score`; sound: `jezzball-sound`; swipe: `jezzball-swipe`.
+
+## Saved match (decision 0054)
+
+- Key `jezzball-current`, JSON `v: 1`: level, phase (`play` or `cleared`), score, axis, lives, timer, percent/time bonuses, grid `cols`/`rows` + `cells` as one digit string (`0`–`3`, growing cells included), balls (`x y vx vy spin tilt`), walls (`axis pivot lane age solidified`, rays `dir length cells blockedBy growing finished broken`). Not saved: glow, effects, flash, hover (cosmetic); `percent`, `solid` and ray `kind` are recomputed.
+- Written at match start, on `game.onChange` (wall launched, axis toggled, ray solidified, life lost with lives left, level cleared, next level), every 1 s while mounted, on `visibilitychange` hidden and `pagehide`. `snapshot()` returns `null` once `phase === "over"`, so a finished run is never stored.
+- `decodeMatch` drops the save unless sizes, border ring, ball count/speed/position, walls and growing cells all agree.
+- Start screen: `jezzball-continue-button` (shown only with a valid save, above "Jouer") restores it paused (or on the level-cleared card) and calls `MuchogamesMatch.resume()`. `jezzball-resume-button` is the pause overlay's.
+- Deleted only on game over (before `finish()`); overwritten by a new match. Leaving (back button, reload, bfcache `pageshow`) keeps it and calls no `finish()`.

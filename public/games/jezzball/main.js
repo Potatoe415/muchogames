@@ -3,8 +3,11 @@
 // is destroyed whenever the page is left or a new match starts.
 import { createGame } from "./game.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
+import { summary as levelSummary } from "./rules.js";
+import { clearMatch, loadMatch, storeMatch } from "./save.js";
 
 const GAME_ID = "jezzball";
+const SAVE_EVERY_MS = 1000;
 const LANG_KEY = "bergamots-lang";
 const BEST_KEY = "jezzball-best-score";
 const SOUND_KEY = "jezzball-sound";
@@ -40,6 +43,8 @@ const page = {
   swipe: readStorage(SWIPE_KEY, "on") === "on",
   best: Number(readStorage(BEST_KEY, "0")) || 0,
   game: null,
+  saved: loadMatch(),
+  saveTimer: 0,
   summary: null,
   overlay: null,
   newBest: false,
@@ -66,6 +71,16 @@ function renderOverlayText() {
     : t("best", { best: page.best });
 }
 
+function renderContinue() {
+  const button = $("jezzball-continue-button");
+  button.hidden = !page.saved;
+  if (!page.saved) return;
+  button.querySelector("[data-continue-info]").textContent = t("continueInfo", {
+    level: page.saved.config.level,
+    score: page.saved.score
+  });
+}
+
 function applyLanguage() {
   document.documentElement.lang = page.lang;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
@@ -85,6 +100,7 @@ function applyLanguage() {
   swipe.textContent = t(page.swipe ? "on" : "off");
   swipe.setAttribute("aria-pressed", String(page.swipe));
   $("jezzball-start-best").textContent = t("best", { best: page.best });
+  renderContinue();
   renderOverlayText();
 }
 
@@ -119,12 +135,20 @@ function onGameOver(summary) {
     page.best = summary.score;
     writeStorage(BEST_KEY, String(page.best));
   }
+  clearMatch();
+  page.saved = null;
   window.MuchogamesMatch.finish({ score: summary.score });
   showOverlay("over");
 }
 
-function mountGame() {
-  page.game?.destroy();
+// A finished match has no snapshot, so this only ever stores one in play.
+function saveMatch() {
+  const state = page.game?.snapshot();
+  if (state) storeMatch(state);
+}
+
+function mountGame(saved) {
+  unmountGame();
   page.summary = null;
   page.newBest = false;
   showScreen(true);
@@ -135,10 +159,14 @@ function mountGame() {
     muted: page.muted,
     best: page.best,
     swipe: page.swipe,
+    saved,
     onLevelCleared,
-    onGameOver
+    onGameOver,
+    onChange: saveMatch
   });
   showOverlay(null);
+  saveMatch();
+  page.saveTimer = setInterval(saveMatch, SAVE_EVERY_MS);
 }
 
 async function startMatch() {
@@ -146,18 +174,37 @@ async function startMatch() {
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
-  if (allowed) mountGame();
+  if (allowed) mountGame(null);
+}
+
+function resumeMatch() {
+  if (page.starting) return;
+  const saved = loadMatch();
+  page.saved = saved;
+  if (!saved) return renderContinue();
+  window.MuchogamesMatch.resume(GAME_ID);
+  mountGame(saved);
+  if (saved.phase === "cleared") {
+    page.summary = levelSummary(saved);
+    showOverlay("cleared");
+  } else {
+    showOverlay("paused");
+  }
 }
 
 function unmountGame() {
+  saveMatch();
+  clearInterval(page.saveTimer);
   page.game?.destroy();
   page.game = null;
   page.overlay = null;
 }
 
+// Quitting is not an end: no finish(), the save stays for the continue
+// button.
 function returnToStart() {
   unmountGame();
-  if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
+  page.saved = loadMatch();
   Object.values(OVERLAYS).forEach((id) => ($(id).hidden = true));
   showScreen(false);
   applyLanguage();
@@ -183,10 +230,10 @@ function setLanguage(lang) {
   applyLanguage();
 }
 
-function pauseWhenHidden() {
-  if (document.hidden && page.game && page.overlay === null) {
-    showOverlay("paused");
-  }
+function onVisibility() {
+  if (!document.hidden) return;
+  saveMatch();
+  if (page.game && page.overlay === null) showOverlay("paused");
 }
 
 function bindPage() {
@@ -201,6 +248,7 @@ function bindPage() {
   });
   $("jezzball-sound-toggle").addEventListener("click", toggleSound);
   $("jezzball-swipe-toggle").addEventListener("click", toggleSwipe);
+  $("jezzball-continue-button").addEventListener("click", resumeMatch);
   $("jezzball-start-button").addEventListener("click", startMatch);
   $("jezzball-replay-button").addEventListener("click", startMatch);
   $("jezzball-resume-button").addEventListener("click", () =>
@@ -210,7 +258,7 @@ function bindPage() {
     page.game?.nextLevel();
     showOverlay(null);
   });
-  document.addEventListener("visibilitychange", pauseWhenHidden);
+  document.addEventListener("visibilitychange", onVisibility);
   window.addEventListener("pagehide", unmountGame);
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) returnToStart();

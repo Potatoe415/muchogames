@@ -7,6 +7,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100dvh;
   color: var(--ink);
   font-family: Georgia, "Trebuchet MS", serif;
   background: radial-gradient(circle at top, #fff8d7, transparent 30%), radial-gradient(circle at bottom right, #c9e7a6, transparent 25%), linear-gradient(180deg, var(--bg1), var(--bg2));
@@ -64,7 +65,7 @@ body.mode-setup {
   background: linear-gradient(#fff8d799, #d5ebb5aa), url("assets/background.jpg") center/cover fixed no-repeat;
 }
 button, input { font: inherit; }
-.setup-screen, .game { min-height: 100vh; }
+.setup-screen, .game { min-height: 100vh; min-height: 100dvh; }
 body.mode-setup .setup-screen {
   display: flex;
   justify-content: center;
@@ -99,17 +100,18 @@ label { display: grid; gap: 0.4rem; padding: 0.95rem; background: #fffdf7cc; bac
 .toggle { align-content: center; }
 input { padding: 0.75rem 0.95rem; background: #fffefa; }
 .start-btn { width: 100%; position: relative; z-index: 1; font-size: 1.05rem; font-weight: 700; background: linear-gradient(180deg, #f4d86a, #d89a33); border-color: #9b6b18; box-shadow: 0 12px 20px #b3781c44; }
-.rules-frame { width: 100%; height: min(70vh, 520px); border: 0; border-radius: 12px; background: white; }
+.resume-btn { margin-bottom: 0.75rem; background: linear-gradient(180deg, #fffdf4, #efe2c2); border-color: #9daa7f; box-shadow: 0 8px 16px #00000024; }
+.rules-frame { width: 100%; height: min(70vh, 520px); height: min(70dvh, 520px); border: 0; border-radius: 12px; background: white; }
 .game { grid-template-rows: auto 1fr auto auto; gap: 1rem; padding: 1rem; background: radial-gradient(circle at center, #ffffff12, transparent 35%), linear-gradient(180deg, #7ca14b, #527331 55%, #476428); }
 .hud { display: grid; grid-template-columns: 220px auto; gap: 1rem; align-items: center; justify-content: space-between; }
 .hud > div, .player { background: linear-gradient(180deg, #fff6df, #f0e2bd); border: 2px solid #caae6f; box-shadow: 0 12px 24px #00000024; }
 .hud > div { padding: 0.85rem 1rem; border-radius: 22px; }
 #turnLabel { margin: 0.15rem 0 0; font-size: 2rem; }
-.board { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; min-height: 56vh; }
+.board { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; min-height: 56vh; min-height: 56dvh; }
 .pile-shell { position: relative; padding: 1rem; border-radius: 32px; background: radial-gradient(circle at top, #88b055, transparent 25%), repeating-linear-gradient(135deg, #789c48 0 20px, #6f9347 20px 40px), linear-gradient(180deg, var(--table), var(--table-dark)); box-shadow: inset 0 0 0 3px #cde39c1f, 0 20px 34px #0000002b; }
 .pile-shell.active { outline: 5px solid #f5d46f; outline-offset: -4px; }
 .pile-shell h3 { margin: 0 0 0.7rem; color: #fff5da; font-size: 1.35rem; text-shadow: 0 2px 0 #38531d; }
-.pile-hit { position: relative; width: 100%; height: calc(100% - 2rem); min-height: 48vh; padding: 0; overflow: visible; background: linear-gradient(180deg, #cfe2a7, #b6ca86), repeating-linear-gradient(45deg, #ffffff18 0 12px, #00000008 12px 24px); }
+.pile-hit { position: relative; width: 100%; height: calc(100% - 2rem); min-height: 48vh; min-height: 48dvh; padding: 0; overflow: visible; background: linear-gradient(180deg, #cfe2a7, #b6ca86), repeating-linear-gradient(45deg, #ffffff18 0 12px, #00000008 12px 24px); }
 .pile { position: absolute; inset: 1rem; display: grid; place-items: center; border-radius: 24px; background: linear-gradient(180deg, #dbe9bc, #bfd095), repeating-linear-gradient(45deg, #ffffff24 0 18px, #00000008 18px 36px); box-shadow: inset 0 0 0 2px #ffffff7a; }
 .pile-message { padding: 0.85rem 1.2rem; border-radius: 16px; background: #fff9e8d8; border: 2px solid #d4bd85; font-weight: 700; font-size: clamp(1rem, 2vw, 1.4rem); box-shadow: 0 8px 18px #00000018; }
 .card {
@@ -238,7 +240,7 @@ body.mode-setup .winner-overlay,
   .board { grid-template-columns: 1fr; }
   .nav-banner { max-height: 35px; }
   .lang-row { align-items: flex-start; }
-  .pile-hit { min-height: 34vh; }
+  .pile-hit { min-height: 34vh; min-height: 34dvh; }
 
   .card { width: min(210px, 48vw); }
 }

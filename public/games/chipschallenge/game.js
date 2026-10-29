@@ -3,26 +3,39 @@
 // in destroy(). The 60 Hz loop advances the rules engine one tic every 3
 // frames (20/s); nothing moves until Chip's first move.
 import { createAudio } from "./audio.js";
-import { createLevel, deathReason, DIR_INDEX, status } from "./engine.js";
+import {
+  createLevel,
+  deathReason,
+  DIR_INDEX,
+  fingerprint,
+  levelSeeds,
+  status
+} from "./engine.js";
 import { bindInput } from "./input.js";
 import { levelPack } from "./levels.js";
 import { createLoop } from "./loop.js";
 import { createPanel } from "./panel.js";
 import { render } from "./render.js";
+import { logBits, restoreLevel } from "./replay.js";
 import { loadSheet } from "./sheet.js";
 import { createSurface } from "./surface.js";
 
 const FRAMES_PER_TIC = 3;
 const END_DELAY_MS = 700;
 
-function createRun(options, audio) {
-  const level = createLevel(levelPack(), options.level - 1, audio.play);
+function createRun(options, audio, saved = null) {
+  const index = options.level - 1;
+  const restored = saved && restoreLevel(levelPack(), index, saved, audio.play);
+  const level = restored || createLevel(levelPack(), index, audio.play);
   const { cell, direction } = level.player;
+  const log = restored ? saved.inputs.map(([bits, tics]) => [bits, tics]) : [];
   return {
     level,
+    seeds: restored ? saved.seeds : levelSeeds(level),
+    log,
     chip: { x: cell.x, y: cell.y, dir: DIR_INDEX[direction] ?? 2 },
     frames: 0,
-    started: false,
+    started: log.length > 0,
     paused: false,
     ending: false,
     endTimer: 0
@@ -41,11 +54,13 @@ function trackChip(run) {
 
 function tic(run, input, audio) {
   const { level } = run;
+  if (level.state !== "playing") return;
   const bits = input.bits();
   if (!run.started && !bits) return;
   run.started = true;
   const accept = level.can_accept_input();
   level.advance_tic(bits);
+  logBits(run.log, bits);
   if (accept) input.clearTaps();
   const moved = trackChip(run);
   if (!accept || !bits || level.state !== "playing") return;
@@ -86,6 +101,7 @@ function createFrames(run, parts, options) {
       r.frames += 1;
       if (r.frames % FRAMES_PER_TIC !== 0) return;
       tic(r, input, audio);
+      if (r.started) options.onTic?.();
       watchEnd(r, audio, options);
     },
     (seconds) => {
@@ -105,7 +121,7 @@ function createFrames(run, parts, options) {
 
 export function createGame(options) {
   const audio = createAudio();
-  const run = { current: createRun(options, audio) };
+  const run = { current: createRun(options, audio, options.saved) };
   const surface = createSurface(options.canvas, options.host);
   const panel = createPanel(options.panel);
   const sheet = { image: null };
@@ -128,6 +144,11 @@ export function createGame(options) {
     progress: () => ({
       started: run.current.started,
       over: run.current.level.state !== "playing"
+    }),
+    snapshot: () => ({
+      seeds: run.current.seeds,
+      inputs: run.current.log,
+      check: fingerprint(run.current.level)
     }),
     restart() {
       clearTimeout(run.current.endTimer);

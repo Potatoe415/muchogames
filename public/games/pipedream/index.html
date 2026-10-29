@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -132,13 +132,15 @@
               aria-pressed="true"
             ></button>
           </div>
-          <div class="options-panel-section" data-id="game-options-rules">
-            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
             <div
               class="rules-modal-content"
               data-id="pipedream-rules-content"
             ></div>
-          </div>
+          </details>
         </div>
       </div>
     </div>
@@ -149,14 +151,25 @@
           <h2 class="pd-logo" data-i18n="title">Pipe Dream</h2>
           <p class="pd-pitch" data-i18n="pitch"></p>
           <p class="pd-best" data-id="pipedream-start-best"></p>
-          <button
-            type="button"
-            class="pd-button"
-            data-id="pipedream-start-button"
-            data-i18n="play"
-          >
-            Jouer
-          </button>
+          <div class="pd-start-actions">
+            <button
+              type="button"
+              class="pd-button"
+              data-id="pipedream-continue-button"
+              data-i18n="resume"
+              hidden
+            >
+              Reprendre
+            </button>
+            <button
+              type="button"
+              class="pd-button"
+              data-id="pipedream-start-button"
+              data-i18n="play"
+            >
+              Jouer
+            </button>
+          </div>
         </div>
       </section>
 

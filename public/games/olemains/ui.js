@@ -40,6 +40,28 @@ export function buildDeckMenu(decks, onDeckSelect) {
   });
 }
 
+const RESUME_COPY = {
+  fr: { title: 'Reprendre', info: '{deck} · {seconds} s · {score} pts' },
+  en: { title: 'Resume', info: '{deck} · {seconds}s left · {score} pts' },
+  es: { title: 'Reanudar', info: '{deck} · {seconds} s · {score} pts' }
+};
+
+/**
+ * Show the resume button for a saved match, or hide it
+ * @param {Object|null} match - Decoded save (see save.js)
+ * @param {string} language - fr, en or es
+ */
+export function renderResume(match, language) {
+  DOM.resumeButton.hidden = !match;
+  if (!match) return;
+  const copy = RESUME_COPY[language] || RESUME_COPY.fr;
+  DOM.resumeButton.querySelector('[data-resume-title]').textContent = copy.title;
+  DOM.resumeButton.querySelector('[data-resume-info]').textContent = copy.info
+    .replace('{deck}', match.deck.title)
+    .replace('{seconds}', match.timeLeft)
+    .replace('{score}', match.score);
+}
+
 /**
  * Read timer input value with validation
  * @returns {number} Valid timer duration (10-300 seconds)

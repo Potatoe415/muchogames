@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="panel.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -135,13 +135,15 @@
               aria-pressed="true"
             ></button>
           </div>
-          <div class="options-panel-section" data-id="game-options-rules">
-            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
             <div
               class="rules-modal-content"
               data-id="chips-rules-content"
             ></div>
-          </div>
+          </details>
         </div>
       </div>
     </div>
@@ -157,6 +159,12 @@
               <span class="cc-logo-tile cc-logo-exit"></span>
             </div>
             <p class="cc-pitch" data-i18n="pitch"></p>
+            <button
+              type="button"
+              class="cc-btn cc-btn-default cc-continue"
+              data-id="chips-continue-button"
+              hidden
+            ></button>
             <p class="cc-section-title" data-i18n="levelsTitle">
               Choisir un niveau
             </p>
@@ -313,6 +321,7 @@
                 type="button"
                 class="cc-btn"
                 data-id="chips-levels-button"
+                data-match-quit
                 data-i18n="levels"
               >
                 Niveaux

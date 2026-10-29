@@ -148,6 +148,13 @@ body {
   cursor: pointer;
 }
 
+.pd-start-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
 .pd-button:active {
   transform: translateY(3px);
   box-shadow: 0 1px 0 #1f7a27;

@@ -67,6 +67,7 @@ button {
 .app-shell {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 24px;
   isolation: isolate;
 }
@@ -238,6 +239,7 @@ button {
   transform: translateY(-50%);
   width: 336px;
   max-height: calc(100vh - 80px);
+  max-height: calc(100dvh - 80px);
   padding: 22px 18px;
   overflow-y: auto;
   z-index: 1300;
@@ -321,6 +323,7 @@ button {
 .stage {
   position: relative;
   min-height: calc(100vh - 160px);
+  min-height: calc(100dvh - 160px);
 }
 
 .screen {
@@ -486,6 +489,16 @@ button {
   color: var(--text);
   background: linear-gradient(180deg, rgba(19, 75, 192, 0.95), rgba(4, 33, 120, 0.98));
   box-shadow: var(--pill-shadow);
+}
+
+.resume-cta {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 14px;
+}
+
+.resume-cta[hidden] {
+  display: none;
 }
 
 code {

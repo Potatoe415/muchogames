@@ -17,7 +17,7 @@ import { GRID_LONG, GRID_SHORT, QUEUE_SIZE, levelConfig } from "./levels.js";
 import { createLoop } from "./loop.js";
 import { createQueue } from "./pieces.js";
 import { render } from "./render.js";
-import { canPlace, stepGame, toggleFast, tryPlace } from "./rules.js";
+import { canPlace, stepGame, summary, toggleFast, tryPlace } from "./rules.js";
 
 function hudView(state) {
   const counting = state.phase === "countdown";
@@ -37,8 +37,10 @@ export function createGame({
   canvas,
   host,
   muted,
+  saved,
   onLevelCleared,
-  onGameOver
+  onGameOver,
+  onMove
 }) {
   const audio = createAudio();
   const hud = createHud(stage);
@@ -88,6 +90,19 @@ export function createGame({
     relayout();
   }
 
+  function restore({ level, queue, ...match }) {
+    Object.assign(state, match, {
+      config: levelConfig(level),
+      queue: createQueue(QUEUE_SIZE, Math.random, queue)
+    });
+    relayout();
+  }
+
+  function moved(done) {
+    if (done) onMove();
+    return done;
+  }
+
   const loop = createLoop(
     (dt) => {
       if (!state.paused) stepGame(game, dt);
@@ -113,19 +128,23 @@ export function createGame({
     toCell: (px, py) => cellFromPoint(layout, px, py),
     actions: {
       unlock: audio.unlock,
-      place: (x, y) => !state.paused && tryPlace(game, x, y),
+      place: (x, y) => moved(!state.paused && tryPlace(game, x, y)),
       hover: (cell) => (hover = cell),
-      fast: () => !state.paused && toggleFast(state)
+      fast: () => moved(!state.paused && toggleFast(state))
     }
   });
 
   audio.setMuted(muted);
   audio.unlock();
-  startLevel(1);
+  if (saved) restore(saved);
+  else startLevel(1);
   loop.start();
 
   return {
     nextLevel: () => startLevel(state.config.level + 1),
+    // The live state to save, or null once the match is over.
+    current: () => (state.phase === "over" ? null : state),
+    summary: () => summary(state),
     setPaused: (value) => (state.paused = value),
     setMuted: (value) => audio.setMuted(value),
     destroy() {

@@ -71,12 +71,49 @@ export function parsePack(buffer) {
   return { pack, levels };
 }
 
-export function createLevel(pack, index, onSound) {
-  const level = new Level(pack.load_level(index), COMPAT);
+export function setSound(level, onSound) {
   const play = (name) => SOUNDS[name] && onSound(SOUNDS[name]);
   level.sfx = { play, play_once: play };
+}
+
+// The engine is deterministic apart from these two seeds, drawn with
+// Math.random() when a level is created (the Lynx PRNG always starts at 0).
+export const levelSeeds = (level) => ({
+  tw: level._tw_rng,
+  blob: level._blob_modifier
+});
+
+export function createLevel(pack, index, onSound, seeds = null) {
+  const level = new Level(pack.load_level(index), COMPAT);
+  if (seeds) {
+    level._tw_rng = seeds.tw;
+    level._blob_modifier = seeds.blob;
+  }
+  setSound(level, onSound);
   level.undo_enabled = false;
   return level;
+}
+
+// Plain summary of the board, compared after a replay: tic, Chip, chips
+// left, time and a hash of every actor (type, cell, direction).
+export function fingerprint(level) {
+  let hash = 0;
+  level.actors.forEach((actor) => {
+    if (!actor.cell) return;
+    const key = `${actor.type.name}@${actor.cell.x},${actor.cell.y}${actor.direction}`;
+    for (let i = 0; i < key.length; i += 1) {
+      hash = (Math.imul(hash, 31) + key.charCodeAt(i)) >>> 0;
+    }
+  });
+  const cell = level.player?.cell;
+  return {
+    tic: level.tic_counter,
+    x: cell?.x ?? -1,
+    y: cell?.y ?? -1,
+    chips: level.chips_remaining,
+    time: level.time_remaining ?? -1,
+    actors: hash
+  };
 }
 
 function hintAt(player) {

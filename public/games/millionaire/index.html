@@ -2,12 +2,12 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Qui veut gagner des millions</title>
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <div class="app-shell">
       <div class="aurora aurora-left"></div>
       <div class="aurora aurora-right"></div>
@@ -63,10 +63,10 @@
                 </select>
               </label>
             </div>
-            <div id="rulesSection" class="options-panel-section" data-id="game-options-rules" style="display: none">
-              <p id="rulesLabel" class="options-panel-section-title">Regles</p>
+            <details id="rulesSection" class="options-panel-section" data-id="game-options-rules" style="display: none">
+              <summary id="rulesLabel" class="options-panel-section-title">Regles</summary>
               <div id="rulesContent" class="rules-modal-content"></div>
-            </div>
+            </details>
           </div>
         </div>
       </div>
@@ -85,6 +85,7 @@
             <div class="hero-score glass-panel">
               <p class="hero-label" id="heroLabel">Top prize</p>
               <div class="hero-prize">1 000 000 €</div>
+              <button class="primary-cta resume-cta" id="resumeGameButton" type="button" data-id="millionaire-resume-button" hidden>Resume</button>
               <button class="primary-cta" id="startGameButton" type="button">Start Game</button>
               <p class="hero-copy" id="heroCopy">15 questions. 4 lifelines. 2 guaranteed milestones.</p>
             </div>

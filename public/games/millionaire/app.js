@@ -1,5 +1,7 @@
 import { loadRulesIfExists } from "../../shared/js/engine.js";
 
+import { clearMatch, loadMatch, storeMatch } from "./save.js";
+
 const CONFIG = {
   totalRounds: 15,
   timer: {
@@ -145,6 +147,7 @@ const I18N = {
     phoneMessage: (label, text, confidence) => `Votre ami dit : "Je choisirais ${label} : ${text}. Je suis ${confidence}."`,
     phoneConfident: ["presque certain", "assez confiant", "vraiment penche pour cette reponse"], phoneUnsure: ["pas totalement sur mais je tenterais ca", "hesitant, mais je dirais ca", "plutot en train de deviner ici"],
     closeAudienceAria: "Fermer l'avis du public", closePhoneAria: "Fermer l'appel a un ami", homeAria: "Retour a l'accueil", restartAria: "Recommencer la partie",
+    quitAria: "Quitter la partie (elle reste sauvegardee)", resumeButton: (n) => `Reprendre la partie · question ${n}`,
     showLadderLabel: "Afficher les paliers", hideLadderLabel: "Masquer les paliers"
   },
   en: {
@@ -175,6 +178,7 @@ const I18N = {
     phoneMessage: (label, text, confidence) => `Your friend says: "I'd go with ${label}: ${text}. I'm ${confidence}."`,
     phoneConfident: ["pretty sure", "quite confident", "strongly leaning that way"], phoneUnsure: ["not totally sure, but I'd try that", "torn, but I'd still say that", "mostly guessing here"],
     closeAudienceAria: "Close audience vote", closePhoneAria: "Close phone a friend", homeAria: "Return to home screen", restartAria: "Restart game",
+    quitAria: "Leave the match (it stays saved)", resumeButton: (n) => `Resume the game · question ${n}`,
     showLadderLabel: "Show prize ladder", hideLadderLabel: "Hide prize ladder"
   },
   es: {
@@ -205,6 +209,7 @@ const I18N = {
     phoneMessage: (label, text, confidence) => `Tu amigo dice: "Yo iria con ${label}: ${text}. Estoy ${confidence}."`,
     phoneConfident: ["bastante seguro", "bastante convencido", "muy inclinado por esa opcion"], phoneUnsure: ["no del todo seguro, pero probaria esa", "dudando, aunque diria esa", "casi adivinando aqui"],
     closeAudienceAria: "Cerrar voto del publico", closePhoneAria: "Cerrar llamada a un amigo", homeAria: "Volver al inicio", restartAria: "Reiniciar partida",
+    quitAria: "Salir de la partida (queda guardada)", resumeButton: (n) => `Reanudar la partida · pregunta ${n}`,
     showLadderLabel: "Mostrar niveles de premio", hideLadderLabel: "Ocultar niveles de premio"
   },
   "es-419": {
@@ -286,9 +291,17 @@ const I18N = {
     closePhoneAria: "Cerrar llamada a un amigo",
     homeAria: "Volver al inicio",
     restartAria: "Reiniciar partida",
+    quitAria: "Salir de la partida (queda guardada)",
+    resumeButton: (n) => `Reanudar la partida · pregunta ${n}`,
     showLadderLabel: "Mostrar niveles de premio",
     hideLadderLabel: "Ocultar niveles de premio"
   }
+};
+
+const SAVE_LIMITS = {
+  languages: Object.keys(CONFIG.languageFiles),
+  seconds: CONFIG.timer.secondsPerQuestion,
+  difficultyByRound: CONFIG.difficultyByRound
 };
 
 const state = {
@@ -303,6 +316,12 @@ const state = {
   timerId: null,
   language: readHubLanguage(),
   lifelines: { fiftyFifty: true, audience: true, phone: true, swap: true },
+  // Locked answer (-1 = timed out) and its round, kept until the next question.
+  lock: null,
+  inMatch: false,
+  // Bumped whenever a match starts, resumes or is left, so pending reveal
+  // waits of a left match stop instead of playing on.
+  matchId: 0,
   ladderVisible: false,
   audio: {
     enabled: true,
@@ -313,7 +332,7 @@ const state = {
 };
 
 const elements = {
-  languageSelect: document.querySelector("#languageSelect"), rulesSection: document.querySelector("#rulesSection"), rulesLabel: document.querySelector("#rulesLabel"), rulesContent: document.querySelector("#rulesContent"), brandEyebrow: document.querySelector("#brandEyebrow"), brandTitle: document.querySelector("#brandTitle"), ladderEyebrow: document.querySelector("#ladderEyebrow"), ladderTitle: document.querySelector("#ladderTitle"), heroLabel: document.querySelector("#heroLabel"), heroCopy: document.querySelector("#heroCopy"), modeTag: document.querySelector("#modeTag"), languageLabel: document.querySelector("#languageLabel"), startGameButton: document.querySelector("#startGameButton"), toggleTimerButton: document.querySelector("#toggleTimerButton"), questionLabel: document.querySelector("#questionLabel"), guaranteedLabel: document.querySelector("#guaranteedLabel"), nextLabel: document.querySelector("#nextLabel"), timerChipLabel: document.querySelector("#timerChipLabel"), audienceEyebrow: document.querySelector("#audienceEyebrow"), audienceTitle: document.querySelector("#audienceTitle"), audienceCopy: document.querySelector("#audienceCopy"), phoneEyebrow: document.querySelector("#phoneEyebrow"), phoneTitle: document.querySelector("#phoneTitle"), errorEyebrow: document.querySelector("#errorEyebrow"), errorTitle: document.querySelector("#errorTitle"), retryLoadButton: document.querySelector("#retryLoadButton"), resultReachedLabel: document.querySelector("#resultReachedLabel"), resultGuaranteedLabel: document.querySelector("#resultGuaranteedLabel"), resultWonLabel: document.querySelector("#resultWonLabel"), playAgainButton: document.querySelector("#playAgainButton"), backHomeButton: document.querySelector("#backHomeButton"),
+  languageSelect: document.querySelector("#languageSelect"), rulesSection: document.querySelector("#rulesSection"), rulesLabel: document.querySelector("#rulesLabel"), rulesContent: document.querySelector("#rulesContent"), brandEyebrow: document.querySelector("#brandEyebrow"), brandTitle: document.querySelector("#brandTitle"), ladderEyebrow: document.querySelector("#ladderEyebrow"), ladderTitle: document.querySelector("#ladderTitle"), heroLabel: document.querySelector("#heroLabel"), heroCopy: document.querySelector("#heroCopy"), modeTag: document.querySelector("#modeTag"), languageLabel: document.querySelector("#languageLabel"), startGameButton: document.querySelector("#startGameButton"), resumeGameButton: document.querySelector("#resumeGameButton"), toggleTimerButton: document.querySelector("#toggleTimerButton"), questionLabel: document.querySelector("#questionLabel"), guaranteedLabel: document.querySelector("#guaranteedLabel"), nextLabel: document.querySelector("#nextLabel"), timerChipLabel: document.querySelector("#timerChipLabel"), audienceEyebrow: document.querySelector("#audienceEyebrow"), audienceTitle: document.querySelector("#audienceTitle"), audienceCopy: document.querySelector("#audienceCopy"), phoneEyebrow: document.querySelector("#phoneEyebrow"), phoneTitle: document.querySelector("#phoneTitle"), errorEyebrow: document.querySelector("#errorEyebrow"), errorTitle: document.querySelector("#errorTitle"), retryLoadButton: document.querySelector("#retryLoadButton"), resultReachedLabel: document.querySelector("#resultReachedLabel"), resultGuaranteedLabel: document.querySelector("#resultGuaranteedLabel"), resultWonLabel: document.querySelector("#resultWonLabel"), playAgainButton: document.querySelector("#playAgainButton"), backHomeButton: document.querySelector("#backHomeButton"),
   screens: { start: document.querySelector("#startScreen"), game: document.querySelector("#gameScreen"), result: document.querySelector("#resultScreen") },
   ladderPanel: document.querySelector(".ladder-panel"), ladderList: document.querySelector("#ladderList"), questionCounter: document.querySelector("#questionCounter"), currentPrize: document.querySelector("#currentPrize"), nextPrize: document.querySelector("#nextPrize"), guaranteedPrize: document.querySelector("#guaranteedPrize"), questionText: document.querySelector("#questionText"), answersGrid: document.querySelector("#answersGrid"), timerChip: document.querySelector("#timerChip"), timerValue: document.querySelector("#timerValue"), homeShortcut: document.querySelector("#homeShortcut"), restartShortcut: document.querySelector("#restartShortcut"), optionsShortcut: document.querySelector("#optionsShortcut"), optionsPanel: document.querySelector("#optionsPanel"),
   lifelines: { fiftyFifty: document.querySelector("#lifeline5050"), audience: document.querySelector("#lifelineAudience"), phone: document.querySelector("#lifelinePhone"), swap: document.querySelector("#lifelineSwap") },
@@ -356,9 +375,10 @@ function init() {
 
 function bindEvents() {
   elements.startGameButton.addEventListener("click", startGame);
+  elements.resumeGameButton.addEventListener("click", resumeMatch);
   elements.toggleTimerButton.addEventListener("click", toggleTimerMode);
   elements.homeShortcut.addEventListener("click", handleHomeShortcutClick);
-  elements.restartShortcut.addEventListener("click", startGame);
+  elements.restartShortcut.addEventListener("click", handleRestartShortcutClick);
   if (window.GameHeader) {
     window.GameHeader.initOptionsPanel(elements.optionsShortcut, elements.optionsPanel);
   }
@@ -370,10 +390,10 @@ function bindEvents() {
   elements.lifelines.audience.addEventListener("click", useAudience);
   elements.lifelines.phone.addEventListener("click", usePhoneFriend);
   elements.lifelines.swap.addEventListener("click", useQuestionSwap);
-  document.querySelectorAll("[data-close-modal]").forEach((button) => button.addEventListener("click", closeModals));
+  document.querySelectorAll("[data-close-modal]").forEach((button) => button.addEventListener("click", dismissModals));
   elements.modalBackdrop.addEventListener("click", (event) => {
     if (event.target === elements.modalBackdrop) {
-      closeModals();
+      dismissModals();
     }
   });
   elements.musicToggleButton.addEventListener("click", toggleMusic);
@@ -381,6 +401,7 @@ function bindEvents() {
     elements.ladderToggleButton.addEventListener("click", toggleLadderVisibility);
   }
   document.addEventListener("visibilitychange", handleVisibilityChange);
+  window.addEventListener("pagehide", saveMatch);
 }
 
 function handleHomeShortcutClick() {
@@ -389,6 +410,27 @@ function handleHomeShortcutClick() {
     return;
   }
   returnHome();
+}
+
+// Mid-match the ↻ control is a quit (data-match-quit); after the end it replays.
+function handleRestartShortcutClick() {
+  if (elements.screens.result.classList.contains("active")) {
+    startGame();
+    return;
+  }
+  returnHome();
+}
+
+function syncRestartShortcut() {
+  const copy = getCopy();
+  const onResult = elements.screens.result.classList.contains("active");
+  elements.restartShortcut.setAttribute("aria-label", onResult ? copy.restartAria : copy.quitAria);
+}
+
+function syncResumeButton() {
+  const saved = loadMatch(SAVE_LIMITS);
+  elements.resumeGameButton.hidden = !saved;
+  if (saved) elements.resumeGameButton.textContent = getCopy().resumeButton(saved.round + 1);
 }
 
 function getCopy() {
@@ -459,7 +501,8 @@ function applyTranslations() {
   elements.languageSelect.value = state.language;
   if (elements.rulesLabel) elements.rulesLabel.textContent = copy.rulesLabel;
   elements.homeShortcut.setAttribute("aria-label", copy.homeAria);
-  elements.restartShortcut.setAttribute("aria-label", copy.restartAria);
+  syncRestartShortcut();
+  syncResumeButton();
   document.querySelector("#audienceModal [data-close-modal]").setAttribute("aria-label", copy.closeAudienceAria);
   document.querySelector("#phoneModal [data-close-modal]").setAttribute("aria-label", copy.closePhoneAria);
   if (elements.ladderToggleButton) {
@@ -473,6 +516,7 @@ function applyTranslations() {
 }
 
 async function handleLanguageChange(event) {
+  leaveMatch();
   state.language = event.target.value;
   state.dataset = null;
   state.questionsByDifficulty = new Map();
@@ -488,6 +532,7 @@ async function handleLanguageChange(event) {
 
 async function loadQuestions() {
   const copy = getCopy();
+  const language = state.language;
   setStatus(copy.loadingBank);
   loadPersistedUsedQuestions();
   closeModals();
@@ -497,6 +542,7 @@ async function loadQuestions() {
       throw new Error(`HTTP ${response.status}`);
     }
     const payload = await response.json();
+    if (language !== state.language) return;
     if (!payload || !Array.isArray(payload.questions)) {
       throw new Error("Invalid JSON structure");
     }
@@ -506,6 +552,7 @@ async function loadQuestions() {
     setStatus(copy.loadedCount(payload.questions.length));
   } catch (error) {
     console.error(error);
+    if (language !== state.language) return;
     state.dataset = null;
     state.questionsByDifficulty = new Map();
     setStatus(copy.waitingForFile);
@@ -550,6 +597,7 @@ async function startGame() {
   if (!allowed) return;
   try {
     resetGameState();
+    beginMatch();
     switchScreen("game");
     renderLadder();
     renderLifelines();
@@ -558,14 +606,126 @@ async function startGame() {
     console.error(error);
     setStatus(copy.fullRunError);
     showErrorModal(error.message);
+    endMatch();
+    window.MuchogamesMatch.finish();
     returnHome();
   }
+}
+
+async function resumeMatch() {
+  if (state.isStarting) return;
+  const saved = loadMatch(SAVE_LIMITS);
+  if (!saved) {
+    syncResumeButton();
+    return;
+  }
+  unlockAudio();
+  state.isStarting = true;
+  const ready = await prepareLanguage(saved.language);
+  state.isStarting = false;
+  if (!ready) return;
+  window.MuchogamesMatch.resume("millionaire");
+  restoreMatch(saved);
+}
+
+// The saved question bank must be loaded: later rounds and the swap draw from it.
+async function prepareLanguage(language) {
+  if (language !== state.language) {
+    state.language = language;
+    applyTranslations();
+    void refreshRules();
+    renderLadder();
+    await loadQuestions();
+  } else if (!state.dataset) {
+    await loadQuestions();
+  }
+  return Boolean(state.dataset) && language === state.language;
+}
+
+function restoreMatch(saved) {
+  resetGameState();
+  state.timerEnabled = saved.timerEnabled;
+  syncTimerToggle();
+  state.currentRound = saved.round;
+  state.lifelines = { ...saved.lifelines };
+  state.currentQuestion = saved.question;
+  state.timeRemaining = saved.timeRemaining;
+  beginMatch();
+  switchScreen("game");
+  renderRound();
+  elements.timerChip.hidden = !state.timerEnabled;
+  playSound("question");
+  if (saved.lock !== null) {
+    resumeLockedAnswer(saved.lock);
+    return;
+  }
+  startTimerIfNeeded(Math.max(1, saved.timeRemaining));
+  restoreModal(saved.modal);
+  saveMatch();
+}
+
+function resumeLockedAnswer(answerIndex) {
+  if (answerIndex < 0) {
+    void handleTimeout();
+    return;
+  }
+  lockAnswer(answerIndex);
+  void revealLockedAnswer(answerIndex, state.matchId);
+}
+
+function restoreModal(modal) {
+  const { audience, phoneText } = state.currentQuestion;
+  if (modal === "audience" && audience) {
+    renderAudienceModal(toAudienceRows(audience));
+  } else if (modal === "phone" && phoneText) {
+    elements.phoneFriendCopy.textContent = phoneText;
+    openModal(elements.phoneModal);
+  }
+}
+
+function beginMatch() {
+  state.inMatch = true;
+  state.matchId += 1;
+}
+
+// Quitting is not an end: the save stays for "Reprendre".
+function leaveMatch() {
+  saveMatch();
+  state.inMatch = false;
+  state.matchId += 1;
+}
+
+function endMatch() {
+  clearMatch();
+  state.inMatch = false;
+  state.lock = null;
+}
+
+function saveMatch() {
+  if (!state.inMatch || !state.currentQuestion) return;
+  storeMatch({
+    language: state.language,
+    timerEnabled: state.timerEnabled,
+    timeRemaining: Math.max(0, state.timeRemaining),
+    round: state.lock ? state.lock.round : state.currentRound,
+    lifelines: state.lifelines,
+    lock: state.lock ? state.lock.answer : null,
+    modal: getOpenModal(),
+    question: state.currentQuestion
+  });
+}
+
+function getOpenModal() {
+  if (!elements.audienceModal.classList.contains("hidden")) return "audience";
+  if (!elements.phoneModal.classList.contains("hidden")) return "phone";
+  return null;
 }
 
 function resetGameState() {
   clearTimer();
   state.currentQuestion = null;
   state.currentRound = 0;
+  state.lock = null;
   state.isBusy = false;
   state.timeRemaining = CONFIG.timer.secondsPerQuestion;
   state.lifelines = { fiftyFifty: true, audience: true, phone: true, swap: true };
@@ -580,10 +740,12 @@ function loadRound() {
     }
     const sourceQuestion = selectQuestionForRound(state.currentRound);
     state.currentQuestion = prepareQuestion(sourceQuestion);
+    state.lock = null;
     state.isBusy = false;
     state.timeRemaining = CONFIG.timer.secondsPerQuestion;
     renderRound();
     startTimerIfNeeded();
+    saveMatch();
     playSound("question");
   } catch (error) {
     console.error(error);
@@ -680,40 +842,56 @@ async function handleAnswerSelection(answerIndex) {
   if (state.isBusy || !state.currentQuestion) return;
   const selectedAnswer = state.currentQuestion.answers[answerIndex];
   if (!selectedAnswer || selectedAnswer.hidden) return;
+  lockAnswer(answerIndex);
+  await revealLockedAnswer(answerIndex, state.matchId);
+}
+
+// Saved before any reveal wait, so a killed tab cannot let the player re-pick.
+function lockAnswer(answerIndex) {
   state.isBusy = true;
+  state.lock = { answer: answerIndex, round: state.currentRound };
   clearTimer();
   closeModals();
   lockAnswerButtons();
   markSelectedAnswer(answerIndex);
+  saveMatch();
   const currentPrize = CONFIG.prizeLadder[state.currentRound];
   if (currentPrize && currentPrize.amount >= 5000) {
     stopBackgroundAudio();
   }
   playSound("lock");
+}
+
+async function revealLockedAnswer(answerIndex, matchId) {
   const revealDelayMs = getRevealDelayMs(state.currentRound);
   if (revealDelayMs > 0) {
     await wait(revealDelayMs);
   }
+  if (matchId !== state.matchId) return;
   revealAnswerOutcome(answerIndex);
-  if (selectedAnswer.isCorrect) {
-    const justClearedPrize = CONFIG.prizeLadder[state.currentRound];
-    const reachedPalier = Boolean(justClearedPrize && justClearedPrize.safe);
-    if (reachedPalier) {
-      playSound("fireproof");
-    }
-    playSound("correct");
-    setStatus(getCopy().correctAdvance);
-    state.currentRound += 1;
-    renderLadder();
-    const advanceDelay = reachedPalier ? CONFIG.palierAdvanceDelayMs : CONFIG.advanceDelayMs;
-    await wait(advanceDelay);
-    loadRound();
+  if (state.currentQuestion.answers[answerIndex].isCorrect) {
+    await advanceAfterCorrect(matchId);
   } else {
     playSound("wrong");
     setStatus(getCopy().wrongGameOver);
     await wait(CONFIG.advanceDelayMs);
-    finishGame("wrong");
+    if (matchId === state.matchId) finishGame("wrong");
   }
+}
+
+async function advanceAfterCorrect(matchId) {
+  const justClearedPrize = CONFIG.prizeLadder[state.currentRound];
+  const reachedPalier = Boolean(justClearedPrize && justClearedPrize.safe);
+  if (reachedPalier) {
+    playSound("fireproof");
+  }
+  playSound("correct");
+  setStatus(getCopy().correctAdvance);
+  state.currentRound += 1;
+  renderLadder();
+  const advanceDelay = reachedPalier ? CONFIG.palierAdvanceDelayMs : CONFIG.advanceDelayMs;
+  await wait(advanceDelay);
+  if (matchId === state.matchId) loadRound();
 }
 
 function lockAnswerButtons() {
@@ -746,6 +924,7 @@ function finishGame(reason) {
   const guaranteedLabel = getGuaranteedPrizeLabel(state.currentRound - 1);
   const wonPrize = reason === "win" ? CONFIG.prizeLadder[CONFIG.totalRounds - 1] : null;
   const wonLabel = reason === "win" ? formatPrizeLabelByAmount(wonPrize) : guaranteedLabel;
+  endMatch();
   window.MuchogamesMatch.finish({ won: reason === "win", score: state.currentRound });
   switchScreen("result");
   renderLadder();
@@ -771,13 +950,14 @@ function finishGame(reason) {
 }
 
 function returnHome() {
-  window.MuchogamesMatch.finish();
+  leaveMatch();
   clearTimer();
   closeModals();
   switchScreen("start");
   renderLadder();
-   stopBackgroundAudio();
+  stopBackgroundAudio();
   setStatus(state.dataset ? getCopy().bankReady : getCopy().waitingForFile);
+  syncResumeButton();
 }
 
 function switchScreen(screenName) {
@@ -785,6 +965,7 @@ function switchScreen(screenName) {
     screen.classList.toggle("active", name === screenName);
   });
   elements.restartShortcut.classList.toggle("is-hidden", screenName === "start");
+  syncRestartShortcut();
 }
 
 function toggleTimerMode() {
@@ -824,14 +1005,14 @@ function syncLadderVisibility() {
   );
 }
 
-function startTimerIfNeeded() {
+function startTimerIfNeeded(seconds = CONFIG.timer.secondsPerQuestion) {
   clearTimer();
   if (!state.timerEnabled) {
     elements.timerChip.hidden = true;
     return;
   }
   elements.timerChip.hidden = false;
-  state.timeRemaining = CONFIG.timer.secondsPerQuestion;
+  state.timeRemaining = seconds;
   updateTimerDisplay();
   state.timerId = window.setInterval(() => {
     state.timeRemaining -= 1;
@@ -839,7 +1020,9 @@ function startTimerIfNeeded() {
     if (state.timeRemaining <= 0) {
       clearTimer();
       handleTimeout();
+      return;
     }
+    saveMatch();
   }, 1000);
 }
 
@@ -850,13 +1033,17 @@ function updateTimerDisplay() {
 
 async function handleTimeout() {
   if (state.isBusy) return;
+  const matchId = state.matchId;
   state.isBusy = true;
+  state.lock = { answer: -1, round: state.currentRound };
+  state.timeRemaining = 0;
   lockAnswerButtons();
+  saveMatch();
   revealAnswerOutcome(-1);
   playSound("wrong");
   setStatus(getCopy().timeoutStatus);
   await wait(CONFIG.advanceDelayMs);
-  finishGame("timeout");
+  if (matchId === state.matchId) finishGame("timeout");
 }
 
 function clearTimer() {
@@ -889,6 +1076,7 @@ function useFiftyFifty() {
   state.lifelines.fiftyFifty = false;
   renderAnswerButtons();
   renderLifelines();
+  saveMatch();
   playSound("lifeline");
   setStatus(getCopy().lifeline5050Used);
 }
@@ -898,8 +1086,15 @@ function useAudience() {
   state.lifelines.audience = false;
   renderLifelines();
   playSound("lifeline");
-  renderAudienceModal(buildAudienceDistribution());
+  const distribution = buildAudienceDistribution();
+  state.currentQuestion.audience = distribution.map((entry) => entry.percent);
+  renderAudienceModal(distribution);
+  saveMatch();
   setStatus(getCopy().lifelineAudienceUsed);
+}
+
+function toAudienceRows(percents) {
+  return percents.map((percent, index) => ({ label: ANSWER_LABELS[index], percent }));
 }
 
 function usePhoneFriend() {
@@ -907,8 +1102,10 @@ function usePhoneFriend() {
   state.lifelines.phone = false;
   renderLifelines();
   playSound("lifeline");
-  elements.phoneFriendCopy.textContent = buildPhoneSuggestion();
+  state.currentQuestion.phoneText = buildPhoneSuggestion();
+  elements.phoneFriendCopy.textContent = state.currentQuestion.phoneText;
   openModal(elements.phoneModal);
+  saveMatch();
   setStatus(getCopy().lifelinePhoneUsed);
 }
 
@@ -924,6 +1121,7 @@ function useQuestionSwap() {
     state.timeRemaining = CONFIG.timer.secondsPerQuestion;
     renderRound();
     startTimerIfNeeded();
+    saveMatch();
     playSound("lifeline");
     setStatus(getCopy().lifelineSwapUsed);
   } catch (error) {
@@ -994,6 +1192,11 @@ function closeModals() {
   elements.modalBackdrop.classList.add("hidden");
   [elements.audienceModal, elements.phoneModal, elements.errorModal].forEach((entry) => entry.classList.add("hidden"));
   elements.modalBackdrop.setAttribute("aria-hidden", "true");
+}
+
+function dismissModals() {
+  closeModals();
+  saveMatch();
 }
 
 function showErrorModal(message) {
@@ -1134,6 +1337,7 @@ function pauseAllAudio() {
 
 function handleVisibilityChange() {
   if (document.hidden) {
+    saveMatch();
     pauseAllAudio();
   } else if (state.audio.enabled) {
     syncBackgroundAudio();

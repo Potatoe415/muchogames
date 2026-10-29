@@ -101,6 +101,10 @@ body {
   background-position: -64px -320px;
 }
 
+.cc-continue {
+  margin-bottom: 12px;
+}
+
 .cc-section-title {
   font-weight: 700;
 }

@@ -48,9 +48,10 @@ function weightedType(random) {
 }
 
 // items[0] is the active piece. A draw that would make three identical
-// pieces in a row is rerolled once, which keeps the mix balanced.
-export function createQueue(size, random = Math.random) {
-  const items = [];
+// pieces in a row is rerolled once, which keeps the mix balanced. `saved`
+// refills the queue from a saved match, in the same order.
+export function createQueue(size, random = Math.random, saved = []) {
+  const items = saved.slice(0, size);
   const draw = () => {
     const type = weightedType(random);
     const [a, b] = items.slice(-2);

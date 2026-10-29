@@ -56,8 +56,9 @@ export function tryPlace(game, x, y) {
 }
 
 export function toggleFast(state) {
-  if (!canPlace(state)) return;
+  if (!canPlace(state)) return false;
   state.fast = !state.fast;
+  return true;
 }
 
 function stepCountdown(game, dt) {
@@ -155,7 +156,7 @@ function stepSweep(game, dt) {
   state.timer = SWEEP_SECONDS;
 }
 
-function summary(state) {
+export function summary(state) {
   return {
     level: state.config.level,
     score: state.score,

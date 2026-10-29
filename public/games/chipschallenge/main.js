@@ -1,9 +1,17 @@
 // Page shell: language, options panel, level select + passwords, dialogs and
 // the match lifecycle (docs/PLATFORM_RULES.md). One match = one level, from
-// its first attempt until the exit is reached (won) or the player leaves it;
-// retries after a death or R stay in the same match.
+// its first attempt until the exit is reached (won); retries after a death or
+// R stay in the same match. Leaving keeps it saved (save.js) for "Reprendre";
+// starting another level replaces it without recording a result.
+import {
+  $,
+  $$,
+  applyLanguage as renderCopy,
+  renderDialogs,
+  renderTitleCard
+} from "./copy.js";
 import { createGame } from "./game.js";
-import { LANGS, rulesHtml, translate } from "./i18n.js";
+import { LANGS, translate } from "./i18n.js";
 import { LEVELS, loadLevels } from "./levels.js";
 import {
   levelForPassword,
@@ -12,27 +20,23 @@ import {
   scoreLevel,
   unlock
 } from "./progress.js";
-import { fillList, renderLevelList, totalLine, winLines } from "./screens.js";
+import { clearMatch, readMatch, writeMatch } from "./save.js";
 import { loadSheet } from "./sheet.js";
 import { readStorage, writeStorage } from "./storage.js";
 
 const GAME_ID = "chipschallenge";
 const LANG_KEY = "bergamots-lang";
 const SOUND_KEY = "chipschallenge-sound";
+const SAVE_THROTTLE_MS = 1000;
 const OVERLAYS = {
   paused: "chips-paused",
   death: "chips-death",
   win: "chips-win"
 };
 
-/** @returns {HTMLElement} */
-const $ = (id) => document.querySelector(`[data-id="${id}"]`);
-/** @returns {NodeListOf<HTMLElement>} */
-const $$ = (selector) => document.querySelectorAll(selector);
-
 /**
  * @typedef {object} ShellWindow
- * @property {{ start(id: string): Promise<boolean>,
+ * @property {{ start(id: string): Promise<boolean>, resume(id: string): void,
  *   finish(result?: object): void, isInProgress(): boolean }} MuchogamesMatch
  * @property {{ initOptionsPanel(trigger: Element, panel: Element): void }}
  *   [GameHeader]
@@ -50,47 +54,27 @@ const page = {
   overlay: null,
   death: null,
   result: null,
-  starting: false
+  starting: false,
+  inMatch: false,
+  saveTimer: 0
 };
 
 const t = (key, vars) => translate(page.lang, key, vars);
-function renderTitleCard() {
-  const def = LEVELS[page.level - 1];
-  if (!def) return;
-  $("chips-title-level").textContent =
-    `${t("levelCard", { number: page.level })} · ${def.title}`;
-  $("chips-title-password").textContent = t("passwordCard", {
-    code: def.password
+const applyLanguage = () => renderCopy(page, t);
+
+function saveMatch() {
+  clearTimeout(page.saveTimer);
+  page.saveTimer = 0;
+  if (!page.game || !page.inMatch) return;
+  writeMatch({
+    level: page.level,
+    failures: page.failures,
+    ...page.game.snapshot()
   });
 }
 
-function renderDialogs() {
-  if (page.death) $("chips-death-text").textContent = t(`death_${page.death}`);
-  if (page.result) {
-    fillList($("chips-win-lines"), winLines(page.result, page.progress, t));
-    $("chips-next-button").hidden = page.result.last;
-  }
-}
-
-function applyLanguage() {
-  document.documentElement.lang = page.lang;
-  $$("[data-i18n]").forEach((node) => {
-    node.textContent = t(node.dataset.i18n);
-  });
-  $$("[data-i18n-aria]").forEach((node) => {
-    node.setAttribute("aria-label", t(node.dataset.i18nAria));
-  });
-  $$("[data-lang]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.lang === page.lang);
-  });
-  $("chips-rules-content").innerHTML = rulesHtml(page.lang);
-  const sound = $("chips-sound-toggle");
-  sound.textContent = t(page.muted ? "soundOff" : "soundOn");
-  sound.setAttribute("aria-pressed", String(!page.muted));
-  renderLevelList($("chips-level-list"), page.progress, t);
-  $("chips-total-score").textContent = totalLine(page.progress, t);
-  renderTitleCard();
-  renderDialogs();
+function saveSoon() {
+  page.saveTimer ||= setTimeout(saveMatch, SAVE_THROTTLE_MS);
 }
 
 function syncPause() {
@@ -103,7 +87,7 @@ function showOverlay(name) {
   Object.entries(OVERLAYS).forEach(([key, id]) => {
     $(id).hidden = key !== name;
   });
-  renderDialogs();
+  renderDialogs(page, t);
   syncPause();
 }
 
@@ -113,19 +97,18 @@ function showScreen(playing) {
 }
 
 function unmountGame() {
+  saveMatch();
   page.game?.destroy();
   page.game = null;
   page.overlay = null;
 }
 
-function abandonMatch() {
-  if (shell.MuchogamesMatch.isInProgress()) {
-    shell.MuchogamesMatch.finish({ won: false, score: 0 });
-  }
+// A new match replaces the current one: no result recorded for it.
+function endMatch() {
+  if (shell.MuchogamesMatch.isInProgress()) shell.MuchogamesMatch.finish();
 }
 
 function returnToSelect() {
-  abandonMatch();
   unmountGame();
   Object.values(OVERLAYS).forEach((id) => ($(id).hidden = true));
   showScreen(false);
@@ -134,6 +117,7 @@ function returnToSelect() {
 
 function onDeath(reason) {
   page.death = reason;
+  saveMatch();
   showOverlay("death");
 }
 
@@ -153,6 +137,8 @@ function onWin(result) {
     limited,
     last: number === LEVELS.length
   };
+  page.inMatch = false;
+  clearMatch();
   shell.MuchogamesMatch.finish({ won: true, score: score.levelScore });
   showOverlay("win");
 }
@@ -161,6 +147,7 @@ function retry() {
   if (!page.game) return;
   page.failures += 1;
   page.game.restart();
+  saveMatch();
   showOverlay(null);
 }
 
@@ -176,16 +163,18 @@ function togglePause() {
   showOverlay(page.overlay === "paused" ? null : "paused");
 }
 
-function mountGame(level) {
+function mountGame(level, saved = null) {
   unmountGame();
   page.level = level;
-  page.failures = 0;
+  page.failures = saved ? saved.failures : 0;
   page.death = null;
   page.result = null;
-  renderTitleCard();
+  page.inMatch = true;
+  renderTitleCard(page, t);
   showScreen(true);
   page.game = createGame({
     level,
+    saved,
     stage: $("chips-stage"),
     canvas: $("chips-board"),
     host: $("chips-board-host"),
@@ -197,19 +186,28 @@ function mountGame(level) {
     onDeath,
     onWin,
     onCommand,
+    onTic: saveSoon,
     onLoadError: () => ($("chips-load-error").hidden = false)
   });
-  showOverlay(null);
+  saveMatch();
+  showOverlay(saved ? "paused" : null);
 }
 
 async function startLevel(level) {
   if (page.starting || !page.progress.unlocked.has(level)) return;
   page.starting = true;
-  abandonMatch();
+  endMatch();
   const allowed = await shell.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (allowed) mountGame(level);
   else if (page.game) returnToSelect();
+}
+
+function resumeMatch() {
+  const saved = readMatch();
+  if (page.starting || !saved) return applyLanguage();
+  shell.MuchogamesMatch.resume(GAME_ID);
+  mountGame(saved.level, saved);
 }
 
 function changeLevel(delta) {
@@ -279,6 +277,7 @@ function bindButtons() {
     page.game?.setMuted(page.muted);
     applyLanguage();
   });
+  onButton("chips-continue-button", resumeMatch);
   onButton("chips-restart-button", restartKey);
   onButton("chips-pause-button", togglePause);
   onButton("chips-levels-button", returnToSelect);
@@ -290,9 +289,9 @@ function bindButtons() {
 
 function bindLifecycle() {
   document.addEventListener("visibilitychange", () => {
-    if (document.hidden && page.game && page.overlay === null) {
-      showOverlay("paused");
-    }
+    if (!document.hidden || !page.game) return;
+    saveMatch();
+    if (page.overlay === null) showOverlay("paused");
   });
   window.addEventListener("pagehide", unmountGame);
   window.addEventListener("pageshow", (event) => {

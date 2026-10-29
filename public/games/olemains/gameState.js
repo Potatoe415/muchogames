@@ -6,6 +6,7 @@ export class GameState {
   constructor() {
     this.gameData = null;
     this.currentWords = [];
+    this.currentWord = null;
     this.score = 0;
     this.timeLeft = 60;
     this.currentDeck = null;
@@ -47,8 +48,23 @@ export class GameState {
     this.currentDeck = deck;
     this.deckColor = bgColor;
     this.currentWords = [...deck.words].sort(() => Math.random() - 0.5);
+    this.currentWord = null;
     this.score = 0;
     this.timeLeft = timerDuration;
+  }
+
+  /**
+   * Restore a saved match (see save.js decodeMatch)
+   * @param {Object} match - Decoded save
+   * @param {string} bgColor - Background color for the deck
+   */
+  restore(match, bgColor) {
+    this.currentDeck = match.deck;
+    this.deckColor = bgColor;
+    this.currentWords = match.currentWords;
+    this.currentWord = match.currentWord;
+    this.score = match.score;
+    this.timeLeft = match.timeLeft;
   }
 
   /**
@@ -59,8 +75,17 @@ export class GameState {
     if (this.currentWords.length === 0) {
       return null;
     }
-    const word = this.currentWords.pop();
-    return word[this.language] || word.fr;
+    this.currentWord = this.currentWords.pop();
+    return this.currentWordText();
+  }
+
+  /**
+   * Text of the word on screen, in the current language
+   * @returns {string}
+   */
+  currentWordText() {
+    const word = this.currentWord;
+    return word ? word[this.language] || word.fr : '';
   }
 
   /**
@@ -93,6 +118,7 @@ export class GameState {
    */
   reset() {
     this.currentWords = [];
+    this.currentWord = null;
     this.score = 0;
     this.timeLeft = 60;
     this.currentDeck = null;

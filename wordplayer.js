@@ -7,9 +7,16 @@ import {
   applyCategoryColorToElement,
   loadRulesIfExists
 } from "./public/shared/js/engine.js";
+import {
+  applyMatch,
+  clearMatch,
+  loadMatch,
+  storeMatch
+} from "./wordplayer-save.js";
 
 const HUB_CONFIG_URL = "/hub-config.json";
 const BUZZER_SOUND_URL = "/audio/buzzer.mp3";
+const SAVE_EVERY_MS = 1000;
 
 const DOM = {
   wordDisplay: "word-display",
@@ -34,6 +41,7 @@ const LANG_LABELS = {
     pass: "Passer",
     validate: "Valider",
     start: "Démarrer",
+    resume: "Reprendre",
     noTimer: "Sans minuteur",
     loading: "Chargement...",
     errorNoGame: "Erreur : Aucun jeu sélectionné dans l'URL.",
@@ -53,6 +61,7 @@ const LANG_LABELS = {
     pass: "Skip",
     validate: "Validate",
     start: "Start",
+    resume: "Resume",
     noTimer: "No timer",
     loading: "Loading...",
     errorNoGame: "Error: No game selected in the URL.",
@@ -72,6 +81,7 @@ const LANG_LABELS = {
     pass: "Saltar",
     validate: "Validar",
     start: "Empezar",
+    resume: "Reanudar",
     noTimer: "Sin tiempo",
     loading: "Cargando...",
     errorNoGame: "Error: Ningún juego seleccionado en la URL.",
@@ -127,6 +137,7 @@ const gameState = {
 };
 
 let buzzerAudio = null;
+let autosaveInterval = null;
 
 function getCurrentLabels() {
   return LANG_LABELS[gameState.currentLanguage] || LANG_LABELS.fr;
@@ -257,6 +268,7 @@ function onWordCardDoubleActivate() {
   } else {
     maskCurrentWord();
   }
+  saveMatch();
 }
 
 function attachWordCardHideHandlers() {
@@ -371,6 +383,7 @@ async function initializeWordPlayer() {
     hydrateUserInterface(gameEntry);
     initLanguageSelector();
     initOptionsPanel();
+    bindMatchSaving();
     renderSetupScreen();
   } catch (error) {
     console.error(error);
@@ -460,18 +473,25 @@ function handleLanguageChange(language) {
     btn.classList.toggle("active", btn.dataset.lang === language);
   });
 
+  void ensureRulesForCurrentLanguage();
+  renderCurrentPhase();
+}
+
+function renderCurrentPhase() {
   if (gameState.phase === "setup") {
-    ensureRulesForCurrentLanguage().then(() => {
-      renderSetupScreen();
-    });
+    renderSetupScreen();
     return;
   }
 
-  if (gameState.currentWord) {
-    renderCurrentCard();
+  if (gameState.phase === "ended") {
+    renderEndScreen();
+    renderEndControls();
+    return;
   }
 
+  renderCurrentCard();
   renderControls(gameState.controls);
+  saveMatch();
 }
 
 function initOptionsPanel() {
@@ -530,6 +550,7 @@ function renderSetupScreen() {
   const container = document.getElementById(DOM.controlsContainer);
   if (!container) return;
   container.innerHTML = "";
+  appendResumeButton(container, labels);
 
   if (gameState.timerEnabled) {
     const timerGroup = document.createElement("div");
@@ -571,6 +592,61 @@ function renderSetupScreen() {
   container.appendChild(
     createActionButton(labels.start, "btn-start", startGame)
   );
+}
+
+function loadCurrentMatch() {
+  return loadMatch({
+    gameId: gameState.currentGameId,
+    allWords: gameState.allWords,
+    timerEnabled: gameState.timerEnabled
+  });
+}
+
+function appendResumeButton(container, labels) {
+  if (!loadCurrentMatch()) return;
+  const button = createActionButton(labels.resume, "btn-resume", resumeMatch);
+  button.dataset.id = "wordplayer-resume-button";
+  container.appendChild(button);
+}
+
+function resumeMatch() {
+  const saved = loadCurrentMatch();
+  if (!saved) {
+    renderSetupScreen();
+    return;
+  }
+  window.MuchogamesMatch.resume(gameState.currentGameId);
+  applyMatch(gameState, saved);
+  gameState.phase = "playing";
+  handleLanguageChange(gameState.currentLanguage);
+  updateDefiClass(gameState.currentCardIsDefi);
+  updateScoreDisplay();
+  runTimer();
+  beginAutosave();
+}
+
+function saveMatch() {
+  if (gameState.phase === "playing" && gameState.currentWord) {
+    storeMatch(gameState);
+  }
+}
+
+function beginAutosave() {
+  stopAutosave();
+  saveMatch();
+  autosaveInterval = setInterval(saveMatch, SAVE_EVERY_MS);
+}
+
+function stopAutosave() {
+  clearInterval(autosaveInterval);
+  autosaveInterval = null;
+}
+
+function bindMatchSaving() {
+  window.addEventListener("pagehide", saveMatch);
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) saveMatch();
+  });
 }
 
 function isCustomValue(seconds) {
@@ -629,6 +705,7 @@ async function startNewSessionWithCurrentWords() {
   renderControls(gameState.controls);
   displayNextWord();
   startTimer();
+  beginAutosave();
 }
 
 function renderControls(controlsArray) {
@@ -690,6 +767,7 @@ function processTurn(pointsToAdd) {
   gameState.score += pointsToAdd;
   updateScoreDisplay();
   displayNextWord();
+  saveMatch();
 }
 
 function getCurrentCardPoints() {
@@ -741,6 +819,9 @@ function displayNextWord() {
 }
 
 function executeEndGameSequence() {
+  gameState.phase = "ended";
+  stopAutosave();
+  clearMatch(gameState.currentGameId);
   window.MuchogamesMatch.finish();
   stopTimer();
   hideTimerDisplay();
@@ -750,13 +831,17 @@ function executeEndGameSequence() {
 }
 
 function startTimer() {
+  gameState.timerRemaining = gameState.timerDuration;
+  runTimer();
+}
+
+function runTimer() {
   if (!gameState.timerEnabled || gameState.timerDuration === 0) {
     hideTimerDisplay();
     return;
   }
 
   stopTimer();
-  gameState.timerRemaining = gameState.timerDuration;
   showTimerDisplay();
   updateTimerDisplay();
 

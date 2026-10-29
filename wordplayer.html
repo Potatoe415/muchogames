@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
     />
     <title>Word Player</title>
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="/shared/css/wordplayer.css" />
   </head>
-  <body class="game-body">
+  <body class="game-body" data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -101,15 +101,15 @@
             <p class="options-panel-section-title">Langue</p>
             <div id="lang-selector" class="lang-selector"></div>
           </div>
-          <div
+          <details
             id="rules-section"
             class="options-panel-section"
             data-id="game-options-rules"
             style="display: none"
           >
-            <p class="options-panel-section-title">Règles</p>
+            <summary class="options-panel-section-title">Règles</summary>
             <div id="rules-content" class="rules-modal-content"></div>
-          </div>
+          </details>
         </div>
       </div>
     </div>

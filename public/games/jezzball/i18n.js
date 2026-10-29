@@ -43,7 +43,8 @@ const STRINGS = {
     newBest: "Nouveau record !",
     replay: "Rejouer",
     paused: "Pause",
-    resume: "Reprendre"
+    resume: "Reprendre",
+    continueInfo: "Niveau {level} · Score {score}"
   },
   en: {
     title: "JezzBall",
@@ -85,7 +86,8 @@ const STRINGS = {
     newBest: "New record!",
     replay: "Play again",
     paused: "Paused",
-    resume: "Resume"
+    resume: "Resume",
+    continueInfo: "Level {level} · Score {score}"
   },
   es: {
     title: "JezzBall",
@@ -128,7 +130,8 @@ const STRINGS = {
     newBest: "¡Nuevo récord!",
     replay: "Jugar de nuevo",
     paused: "Pausa",
-    resume: "Continuar"
+    resume: "Continuar",
+    continueInfo: "Nivel {level} · Puntos {score}"
   }
 };
 

@@ -54,6 +54,7 @@ export function tryBuild(game, x, y, axis = game.state.axis, dir) {
   const ray = single ? dir || nearestDirection(state.grid, x, y, axis) : 0;
   state.walls.push(createWall(x, y, axis, ray));
   audio.play("launch");
+  game.onChange();
   return true;
 }
 
@@ -62,6 +63,7 @@ export function toggleAxis(game) {
   if (state.phase !== "play" || state.paused) return;
   state.axis = state.axis === "h" ? "v" : "h";
   audio.play("axis");
+  game.onChange();
 }
 
 // Two-finger tap: the first finger has already launched a wall a few
@@ -86,7 +88,7 @@ function loseLife(game, reason) {
   const { state, audio } = game;
   state.lives -= 1;
   state.flash = FLASH_SECONDS;
-  if (state.lives > 0) return;
+  if (state.lives > 0) return game.onChange();
   state.phase = "over";
   state.walls = [];
   audio.play("lose");
@@ -135,6 +137,7 @@ function capture(game, wall, ray) {
   audio.play("clack");
   if (pocket.length) audio.play("fill");
   state.percent = conqueredPercent(grid);
+  game.onChange();
   const gained = grid.solid - before;
   if (!gained) return;
   const rect = rayRect(wall, ray);
@@ -155,6 +158,7 @@ function levelCleared(game) {
   state.walls = [];
   audio.play("win");
   game.onLevelCleared(summary(state));
+  game.onChange();
 }
 
 function stepWalls(game, dt) {

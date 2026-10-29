@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -142,13 +142,15 @@
               aria-pressed="true"
             ></button>
           </div>
-          <div class="options-panel-section" data-id="game-options-rules">
-            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
             <div
               class="rules-modal-content"
               data-id="jezzball-rules-content"
             ></div>
-          </div>
+          </details>
         </div>
       </div>
     </div>
@@ -159,6 +161,15 @@
           <h2 class="jb-logo" data-i18n="title">JezzBall</h2>
           <p class="jb-pitch" data-i18n="pitch"></p>
           <p class="jb-best" data-id="jezzball-start-best"></p>
+          <button
+            type="button"
+            class="jb-button jb-continue"
+            data-id="jezzball-continue-button"
+            hidden
+          >
+            <span data-i18n="resume">Reprendre</span>
+            <span class="jb-continue-info" data-continue-info></span>
+          </button>
           <button
             type="button"
             class="jb-button"
