@@ -185,6 +185,10 @@
   object-fit: cover;
 }
 
+.memory-card-face img.is-mirrored {
+  transform: scaleX(-1);
+}
+
 .memory-card-back {
   background:
     radial-gradient(

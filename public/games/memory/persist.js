@@ -30,12 +30,15 @@ function pack(state) {
       theme: state.config.theme,
       back: state.config.back
     },
-    cards: state.cards.map(({ instanceId, pairId, faceId, status }) => ({
-      instanceId,
-      pairId,
-      faceId,
-      status
-    })),
+    cards: state.cards.map(
+      ({ instanceId, pairId, faceId, status, mirrored }) => ({
+        instanceId,
+        pairId,
+        faceId,
+        status,
+        mirrored
+      })
+    ),
     scores: state.scores,
     active: state.active,
     known: state.known,
@@ -62,17 +65,25 @@ function readCard(card, seen, faces) {
     instanceId: card.instanceId,
     pairId: card.pairId,
     faceId: card.faceId,
-    status: card.status
+    status: card.status,
+    mirrored: card.mirrored === true
   };
 }
 
 function pairsOk(cards) {
-  const counts = new Map();
-  cards.forEach((card) => {
-    counts.set(card.pairId, (counts.get(card.pairId) ?? 0) + 1);
-  });
-  if (counts.size !== cards.length / 2) return false;
-  for (const count of counts.values()) {
+  const pairs = new Map();
+  for (const card of cards) {
+    const twin = pairs.get(card.pairId);
+    if (twin && (twin.count > 1 || twin.mirrored !== card.mirrored)) {
+      return false;
+    }
+    pairs.set(card.pairId, {
+      count: (twin?.count ?? 0) + 1,
+      mirrored: card.mirrored
+    });
+  }
+  if (pairs.size !== cards.length / 2) return false;
+  for (const { count } of pairs.values()) {
     if (count !== 2) return false;
   }
   return true;

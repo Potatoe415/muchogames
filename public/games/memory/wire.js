@@ -9,12 +9,15 @@ export function packWire(state, names) {
     grid: state.config.grid,
     theme: state.config.theme,
     back: state.config.back,
-    cards: state.cards.map(({ instanceId, pairId, faceId, status }) => ({
-      instanceId,
-      pairId,
-      faceId,
-      status
-    })),
+    cards: state.cards.map(
+      ({ instanceId, pairId, faceId, status, mirrored }) => ({
+        instanceId,
+        pairId,
+        faceId,
+        status,
+        mirrored
+      })
+    ),
     scores: state.scores,
     active: state.active,
     names: names.map((name) => String(name || "").slice(0, NAME_MAX))

@@ -32,12 +32,13 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 
 ## Rules in code
 
-- Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba` (36). Backs `01`–`08` from `gemini-verso1.jpg` and `gemini-verso2.jpg`.
+- Themes: `miraculous`, `objets`, `ghibli`, `pat-patrouille`, `dinosaures`, `nature` (18 faces each), `cuba`, `harry-potter` (36), `camions` (35: `SKIP` in the script drops a duplicate drill rig). Backs `01`–`08` from `gemini-verso1.jpg` and `gemini-verso2.jpg`.
 - `assets/fond.webp` covers the whole page. Each player's name and score sit on a pill: white and gray when waiting, solid blue (player 1) or pink (player 2) with white text on their turn. The board frame uses the same color. On a touch screen the page keeps an empty 48px strip at the bottom (more if the OS reports a larger inset or the browser covers the page), so the player 1 row, the cards and the buttons stay above the phone navigation.
 - During a match the header back arrow is `memory-quit-button` (`data-match-quit`): confirming returns to this game's setup. On the setup screen the same corner is the hub link. New game is the icon beside it. The header is fixed, so choosing Continuer cannot scroll it off the screen.
 - Modes: `solo`, `pass` (two humans, one device), `bot` (`easy` 0.25, `medium` 0.5, `hard` 1), `online` (two devices).
 - Online: the creator's grid, theme and back are used; the creator deals the deck when the second seat fills. Each device publishes the whole board after its own move (published before it is painted, so a final move is written before the room is left). The reducer refuses a flip from the seat that is not `active`. Only the player whose miss it is closes the cards after 1200 ms. The local player is always the bottom blue bar. No `localStorage` board save online; the seat is kept under `muchogames_memory_online` for a reload. A finished room is left without deleting it, so the other player keeps the end screen; quitting mid-match deletes it, and the other player is sent to setup with "opponent left". Rematch opens a new room.
 - Grids: `4x4`, `4x6`, `6x6`. Each match draws its pairs at random from the theme.
+- Mirror: always on. Half the pairs (random) get `mirrored: true` on both cards; the front `<img>` is flipped with `scaleX(-1)`. Saved and sent online; a board whose twins disagree is refused. Old saves without the flag read as not mirrored.
 - Play waits for the preload, then calls `MuchogamesMatch.start` (no coin spent on a load).
 - A found pair fades out after 0.6 s (`data-status="matched"`, CSS only); its grid cell stays empty.
 - A pair scores 1 and the same player stays. A miss waits 1200 ms, closes, then switches (not in solo).

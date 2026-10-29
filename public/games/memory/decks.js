@@ -6,7 +6,9 @@ export const THEMES = [
   { id: "pat-patrouille", count: 18 },
   { id: "dinosaures", count: 18 },
   { id: "cuba", count: 36 },
-  { id: "nature", count: 18 }
+  { id: "nature", count: 18 },
+  { id: "harry-potter", count: 36 },
+  { id: "camions", count: 35 }
 ];
 
 export const BACKS = ["01", "02", "03", "04", "05", "06", "07", "08"];

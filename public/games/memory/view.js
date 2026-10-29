@@ -50,7 +50,9 @@ function sync(host, card, config, labels) {
     return;
   }
   if (!front.childElementCount) {
-    front.append(picture(faceUrl(config.theme, card.faceId)));
+    const img = picture(faceUrl(config.theme, card.faceId));
+    img.classList.toggle("is-mirrored", card.mirrored);
+    front.append(img);
   }
   button.setAttribute("aria-label", labels.face(card.faceId));
 }

@@ -33,7 +33,22 @@ THEMES = [
         ],
     ),
     ("nature", ["gemini-nat1.jpg", "gemini-nat2.jpg"]),
+    (
+        "harry-potter",
+        ["gemini-hp1.jpg", "gemini-hp2.jpg", "gemini-hp3.jpg", "gemini-hp4.jpg"],
+    ),
+    (
+        "camions",
+        [
+            "gemini-camion1.jpg",
+            "gemini-camion2.jpg",
+            "gemini-camion3.jpg",
+            "gemini-camion4.jpg",
+        ],
+    ),
 ]
+# 1-based tiles to drop because they look like a tile of another sheet.
+SKIP = {"gemini-camion4.jpg": {9}}
 BACK_SHEETS = ["gemini-verso1.jpg", "gemini-verso2.jpg"]
 CARD_GRID = 3
 BACK_GRID = 2
@@ -152,9 +167,11 @@ def safe_crop(box):
 
 def slice_sheet(path, n):
     img = Image.open(path).convert("RGB")
+    skip = SKIP.get(path.name, set())
     return [
         img.crop(safe_crop(box)).resize((SIZE, SIZE), Image.LANCZOS)
-        for box in cell_boxes(img, n, path.name)
+        for index, box in enumerate(cell_boxes(img, n, path.name), start=1)
+        if index not in skip
     ]
 
 

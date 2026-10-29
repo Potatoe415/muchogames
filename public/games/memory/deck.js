@@ -12,15 +12,20 @@ export function shuffle(items) {
   return copy;
 }
 
-function blank(faceId) {
-  return { pairId: faceId, faceId, status: "IDLE" };
+function blank(faceId, mirrored) {
+  return { pairId: faceId, faceId, status: "IDLE", mirrored };
 }
 
+// Half the pairs, picked at random, show both their cards mirrored.
 export function buildDeck(grid, themeId) {
   const { cols, rows } = GRIDS[grid];
   const pairs = (cols * rows) / 2;
   const picked = shuffle(faceIds(themeId)).slice(0, pairs);
-  const cards = picked.flatMap((faceId) => [blank(faceId), blank(faceId)]);
+  const flipped = Math.round(pairs / 2);
+  const cards = picked.flatMap((faceId, index) => [
+    blank(faceId, index < flipped),
+    blank(faceId, index < flipped)
+  ]);
   return shuffle(cards).map((card, index) => ({
     ...card,
     instanceId: `c${index}`
