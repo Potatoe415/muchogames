@@ -2,19 +2,19 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Resume-every-match lot 2 shipped (Dames, Bridge, Sudoku, Démineur, Pyramide, Black Stories resume exactly after any exit).
-Focus: `docs/tasks/resume-every-match.md` — lot 3 (medium games) next.
+Status: Resume-every-match lots 2–3 shipped: 13 games + the 4 word games resume exactly after any exit.
+Focus: `docs/tasks/resume-every-match.md` — lot 4 left (Memory, Yatzy, SkiFree, Space Cadet rules).
 Level: L2
 
 Context:
-- Working_On: resume-every-match lots 3–4.
+- Working_On: resume-every-match lot 4.
 - Relevant_Files: `docs/tasks/resume-every-match.md`, `docs/PLATFORM_RULES.md` section 8, `scripts/check-games.baseline.json`
 - Do_Not_Touch: `apps/**`; Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0054, 0053, 0051
 
 Next:
-- Lots 3–4 per the task file.
-- Owner phone check, lot 2: in each of the 6 games start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin.
+- Lot 4 per the task file (Memory waits for the other session's Memory work).
+- Owner phone check, lots 2–3: in each game start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin.
 - Owner: options sheet bottom clears the phone navigation bar.
 - Owner to play Bridge (bid box, explanations, hint, undo, last trick, claim, open hands, 4-colour, reload then "Reprendre", full Chicago) and judge robot bidding.
 - Owner: hub fresh browser — Tous selected, Plus récents on, Moins récents gone.
@@ -35,6 +35,6 @@ Blockers:
 Recent_Changes:
 - 2026-10-29 JezzBall Facile/Normal (Normal = old tuning): easy grid 22x15, slower atoms, faster walls, N atoms, N+3 lives, no timer, 66 %, head grace, ×0.5 points, best per mode; finger wall preview, vibration, first-easy help overlay (`prefs.js`, save `mode`).
 - 2026-10-29 Memory: Options > Debug layout overlay (`debug.js`, `debug-report.js`); body `100dvh` + covered strip measured from `visualViewport` (iOS 26 toolbar cropped player 1); setup fits without scroll, pitch removed.
+- 2026-10-29 Resume lot 3: Pipe Dream, JezzBall, Chip's (exact input replay), Olé Mains, Millionaire, Cafards, word games.
 - 2026-10-29 Resume lot 2: 6 games save the whole match, quit keeps it, rules collapsed, mobile viewport + `dvh`.
-- 2026-10-29 Decision 0054: quit keeps the save, "Reprendre" everywhere, Space Cadet `resumable: false`.
-- 2026-10-29 Platform rules 0053 + viewport, collapsed rules, `dvh` checks.
+- 2026-10-29 Decisions 0053 (screens, system bars, collapsed rules) and 0054 (quit keeps the save, Space Cadet exempt).

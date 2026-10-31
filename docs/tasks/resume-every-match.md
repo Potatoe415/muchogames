@@ -23,4 +23,8 @@ Related_Decisions: 0053, 0054
 Notes:
 - Lot 1 done 2026-10-29.
 - Lot 2 done 2026-10-29 (one commit per game), browser-checked: back/✖/reload then "Reprendre" restores the exact state. Keys: `checkers-saved-game`, `bridge-saved-match`, `sudoku-current`, `minesweeper-current`, `pyramide-current`, `blackstories-current`.
+- Lot 3 done 2026-10-29: shipped by another session as one commit (af926c9, "on owner request"), then fixes c6eaf95 (Pipe Dream cleared save), 0c70454 (JezzBall capture points), f7a06c1 (Chip's notes). Each agent browser-tested its game. Keys: `pipedream-current`, `jezzball-current`, `chipschallenge-current` (input replay, checksum, fallback = fresh attempt), `olemains-current`, `millionaire-current` (locked answer saved before the reveal), `cafards-current`, `wordplayer-current-<gameId>` (cards by index: ids are not unique in Pictionary/Esquisse).
+- Fixed on the way: Olé Mains timer never ended the match; wordplayer had no "ended" phase.
+- Open: Millionaire and Pyramide back button returns to the game's start screen mid-match, not the hub (pre-existing). Olé Mains, wordplayer timers restart on "Reprendre" instead of coming back paused (no pause UI).
+- Lot 4 left: Memory (another session is editing it), Yatzy, SkiFree, Space Cadet rules `<details>`.
 - Pyramide's back button still returns to its splash mid-match (pre-existing, not the hub); ↻ mid-match now quits with the save kept.

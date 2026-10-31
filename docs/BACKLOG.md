@@ -4,7 +4,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
-- [ ] Every game resumes its match exactly and meets 0053 (`docs/tasks/resume-every-match.md`): lot 2 small games done 2026-10-29, lot 3 medium, lot 4 Memory/Yatzy/SkiFree. Done when the baseline has no game line left except Tranquil.
+- [ ] Every game resumes its match exactly and meets 0053 (`docs/tasks/resume-every-match.md`): lots 2 and 3 done 2026-10-29; lot 4 Memory/Yatzy/SkiFree + Space Cadet rules left. Done when the baseline has no game line left except Tranquil.
 - [ ] **User**: play-test Jeu de dames (`/games/checkers/`) on phone, tablet and desktop: the 4 levels, two players, 10×10 and 8×8, drag and tap, undo/hint, reload mid-game then "Reprendre".
 - [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels on Lexy's Labyrinth engine, Lynx rules, 147/149 proven winnable) on phone (portrait + landscape) and desktop.
 - [ ] `loop.js` and `storage.js` are now verbatim copies in 4 Entertainment Pack games: extract to `public/shared/` the first time one copy has to change.
