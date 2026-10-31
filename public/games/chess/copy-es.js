@@ -54,6 +54,15 @@ export const STRINGS = {
   materialLine: "No quedan piezas suficientes para dar mate.",
   fiftyLine: "50 jugadas sin captura ni movimiento de peón.",
   repetitionLine: "La misma posición se ha repetido tres veces.",
+  timeLine: "Se acabó el tiempo de las {side}.",
+  timeDrawLine:
+    "Se acabó el tiempo de las {side}, pero el rival ya no puede dar mate.",
+  clock: "Reloj",
+  clockNone: "Sin reloj",
+  pause: "Pausa",
+  paused: "En pausa",
+  pausedLine: "El reloj está parado.",
+  continue: "Continuar",
   replay: "Jugar otra vez",
   changeSettings: "Cambiar ajustes",
   seeBoard: "Ver el tablero",
@@ -91,4 +100,5 @@ export const RULES = `<p>Cada jugador tiene 16 piezas. Empiezan las blancas. El 
 </ul>
 <p><strong>Jugadas especiales:</strong> el <em>enroque</em> (el rey se desliza dos casillas hacia una torre, que salta a su otro lado, si ninguno se ha movido, el camino está libre y el rey no pasa por una casilla atacada — toca el rey y luego su casilla de llegada) y la <em>captura al paso</em> (un peón que acaba de avanzar dos casillas puede capturarse como si solo hubiera avanzado una).</p>
 <p><strong>Tablas:</strong> rey ahogado (sin jugadas y sin estar en jaque), piezas insuficientes para dar mate, 50 jugadas sin captura ni movimiento de peón, o la misma posición tres veces.</p>
+<p><strong>Reloj (opcional):</strong> 5, 10 o 30 minutos para toda la partida, para cada jugador, el ordenador incluido. Solo corre el reloj del jugador al que le toca. Quien se queda sin tiempo pierde, salvo si el rival ya no puede dar mate: tablas. Pausa detiene los dos relojes; salir de la página también.</p>
 <p><strong>Ayudas:</strong> Deshacer anula tu última jugada, Pista muestra una buena jugada (actívala en las opciones). Una partida en curso se guarda: puedes reanudarla más tarde.</p>`;

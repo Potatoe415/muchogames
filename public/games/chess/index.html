@@ -364,6 +364,47 @@
             </div>
           </div>
 
+          <div class="ch-field" data-id="chess-clock-field">
+            <p class="ch-label" data-i18n="clock"></p>
+            <div class="ch-seg">
+              <button
+                type="button"
+                class="ch-option"
+                data-setting="clock"
+                data-value="none"
+                data-id="chess-clock-none"
+                data-i18n="clockNone"
+              ></button>
+              <button
+                type="button"
+                class="ch-option"
+                data-setting="clock"
+                data-value="5"
+                data-id="chess-clock-5"
+              >
+                5 min
+              </button>
+              <button
+                type="button"
+                class="ch-option"
+                data-setting="clock"
+                data-value="10"
+                data-id="chess-clock-10"
+              >
+                10 min
+              </button>
+              <button
+                type="button"
+                class="ch-option"
+                data-setting="clock"
+                data-value="30"
+                data-id="chess-clock-30"
+              >
+                30 min
+              </button>
+            </div>
+          </div>
+
           <button
             type="button"
             class="ch-button"
@@ -380,6 +421,7 @@
             ><strong data-bar-name></strong><small data-bar-taken></small
           ></span>
           <span class="ch-bar-status" data-bar-status aria-live="polite"></span>
+          <span class="ch-clock" data-bar-clock hidden></span>
         </div>
         <div class="ch-board-area" data-id="chess-board"></div>
         <div class="ch-bar ch-bar-bottom" data-id="chess-player-bottom">
@@ -388,6 +430,7 @@
             ><strong data-bar-name></strong><small data-bar-taken></small
           ></span>
           <span class="ch-bar-status" data-bar-status aria-live="polite"></span>
+          <span class="ch-clock" data-bar-clock hidden></span>
         </div>
         <div class="ch-actions" data-id="chess-actions">
           <button type="button" class="ch-action" data-id="chess-undo-button">
@@ -420,6 +463,17 @@
               <path d="M21 3v5h-5" />
             </svg>
             <span data-i18n="replay"></span>
+          </button>
+          <button
+            type="button"
+            class="ch-action"
+            data-id="chess-pause-button"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5v14M15 5v14" />
+            </svg>
+            <span data-i18n="pause"></span>
           </button>
           <button
             type="button"
@@ -491,6 +545,30 @@
               data-id="chess-promotion-cancel"
               data-i18n="cancel"
             ></button>
+          </div>
+        </div>
+
+        <div class="ch-overlay" data-id="chess-pause" hidden>
+          <div
+            class="ch-card ch-end-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="chess-pause-title"
+          >
+            <h2
+              class="ch-end-title"
+              id="chess-pause-title"
+              data-i18n="paused"
+            ></h2>
+            <p data-i18n="pausedLine"></p>
+            <div class="ch-end-actions">
+              <button
+                type="button"
+                class="ch-button"
+                data-id="chess-continue-button"
+                data-i18n="continue"
+              ></button>
+            </div>
           </div>
         </div>
 

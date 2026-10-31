@@ -54,6 +54,15 @@ export const STRINGS = {
   materialLine: "Plus assez de pièces pour faire mat.",
   fiftyLine: "50 coups sans prise ni mouvement de pion.",
   repetitionLine: "La même position est revenue trois fois.",
+  timeLine: "Temps écoulé pour les {side}.",
+  timeDrawLine:
+    "Temps écoulé pour les {side}, mais l'adversaire n'a plus de quoi mater.",
+  clock: "Pendule",
+  clockNone: "Sans",
+  pause: "Pause",
+  paused: "Pause",
+  pausedLine: "La pendule est arrêtée.",
+  continue: "Continuer",
   replay: "Rejouer",
   changeSettings: "Changer les réglages",
   seeBoard: "Voir l'échiquier",
@@ -91,4 +100,5 @@ export const RULES = `<p>Chaque joueur a 16 pièces. Les blancs commencent. Le b
 </ul>
 <p><strong>Coups spéciaux :</strong> le <em>roque</em> (le roi glisse de deux cases vers une tour qui saute de l'autre côté, si aucun des deux n'a bougé, que la voie est libre et que le roi ne passe pas par une case attaquée — touchez le roi puis sa case d'arrivée) et la <em>prise en passant</em> (un pion qui vient d'avancer de deux cases peut être pris comme s'il n'avait avancé que d'une).</p>
 <p><strong>Partie nulle :</strong> pat (plus aucun coup sans être en échec), plus assez de pièces pour mater, 50 coups sans prise ni mouvement de pion, ou la même position trois fois.</p>
+<p><strong>Pendule (au choix) :</strong> 5, 10 ou 30 minutes pour toute la partie, pour chaque joueur, y compris l'ordinateur. Seule la pendule du joueur au trait tourne. Qui n'a plus de temps perd, sauf si l'adversaire n'a plus de quoi mater : partie nulle. Pause arrête les deux pendules ; quitter la page aussi.</p>
 <p><strong>Aides :</strong> Annuler reprend votre dernier coup, Indice montre un bon coup (à activer dans les options). Une partie en cours est gardée : vous pouvez la reprendre plus tard.</p>`;

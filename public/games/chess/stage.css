@@ -119,6 +119,34 @@
   animation: ch-pulse 1s ease-in-out infinite;
 }
 
+.ch-clock {
+  flex: 0 0 auto;
+  min-width: 4.4em;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.ch-clock.is-running {
+  background: #f4f1e8;
+  color: #1d2621;
+  opacity: 1;
+}
+
+.ch-clock.is-low {
+  color: #ff8a80;
+}
+
+.ch-clock.is-running.is-low {
+  background: #e5534b;
+  color: #ffffff;
+}
+
 /* --- Actions --- */
 .ch-action {
   display: flex;
@@ -170,8 +198,13 @@
   }
 
   .ch-bar-status {
+    order: 1;
     flex-basis: 100%;
     text-align: left;
+  }
+
+  .ch-clock {
+    margin-left: auto;
   }
 
   .ch-bar-status:empty {
@@ -188,6 +221,19 @@
     flex-direction: row;
     gap: 8px;
     font-size: 0.95rem;
+  }
+}
+
+@media (min-aspect-ratio: 6/5) and (max-height: 520px) {
+  .ch-actions {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+
+  .ch-action {
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.75rem;
   }
 }
 

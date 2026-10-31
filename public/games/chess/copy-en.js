@@ -53,6 +53,14 @@ export const STRINGS = {
   materialLine: "Not enough pieces left to checkmate.",
   fiftyLine: "50 moves without a capture or a pawn move.",
   repetitionLine: "The same position came up three times.",
+  timeLine: "{side} ran out of time.",
+  timeDrawLine: "{side} ran out of time, but the opponent cannot checkmate.",
+  clock: "Clock",
+  clockNone: "None",
+  pause: "Pause",
+  paused: "Paused",
+  pausedLine: "The clock is stopped.",
+  continue: "Continue",
   replay: "Play again",
   changeSettings: "Change settings",
   seeBoard: "See the board",
@@ -90,4 +98,5 @@ export const RULES = `<p>Each player has 16 pieces. White moves first. The goal:
 </ul>
 <p><strong>Special moves:</strong> <em>castling</em> (the king slides two squares towards a rook, which jumps to its other side, if neither has moved, the way is clear and the king does not cross an attacked square — tap the king then its landing square) and <em>en passant</em> (a pawn that just moved two squares can be captured as if it had moved only one).</p>
 <p><strong>Draws:</strong> stalemate (no move while not in check), not enough pieces to mate, 50 moves without a capture or a pawn move, or the same position three times.</p>
+<p><strong>Clock (optional):</strong> 5, 10 or 30 minutes for the whole game, for each player, the computer included. Only the clock of the side to move runs. Running out of time loses, unless the opponent cannot checkmate any more: draw. Pause stops both clocks; so does leaving the page.</p>
 <p><strong>Help:</strong> Undo takes back your last move, Hint shows a good move (turn it on in the options). A game in progress is kept: you can resume it later.</p>`;

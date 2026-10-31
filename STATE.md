@@ -14,7 +14,7 @@ Context:
 
 Next:
 - Owner: play Fruit Slash with a kid on a phone and a tablet, both orientations: item size/speed in Petit ninja, star thresholds (`MODES.*.stars` in `public/games/fruitslash/rules.js`), emoji look on Android.
-- Owner: play Échecs on iPhone and Android (painted pieces readable on small squares?), the 4 levels, castling, promotion, "Reprendre".
+- Owner: play Échecs on iPhone and Android (painted pieces readable on small squares?), the 4 levels, castling, promotion, clock + Pause, "Reprendre".
 - Owner: play Memory solo, judge the points weights (`public/games/memory/points.js`).
 - Owner phone check of resume in every game, then Memory and Yatzy online on two phones (away banner, "Reprendre en ligne") — see `docs/BACKLOG.md` Now.
 - Owner: options sheet bottom clears the phone navigation bar.
@@ -34,6 +34,7 @@ Blockers:
 
 Recent_Changes:
 - 2026-10-31 Fruit Slash: new game, emoji sprites with baked glow, rainbow blade, touch/mouse/arrow keys, live-checked phone portrait/landscape.
+- 2026-10-31 Échecs: optional clock (5/10/30 min, computer included), Pause, flag fall, saved and resumed paused.
 - 2026-10-31 Échecs: painted AI pieces + tile (`scripts/chess_slice.py`) replace the Unicode glyphs.
 - 2026-10-31 Échecs: new game, rules verified by perft on 5 reference positions, AI in a worker (expert = 1.5 s iterative deepening).
 - 2026-10-31 Memory solo: clock (starts on first flip, pauses when hidden) and points, forgotten-twin penalty.

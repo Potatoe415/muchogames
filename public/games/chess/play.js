@@ -2,7 +2,7 @@
 // and hint. config: { mode: "solo"|"duo", level, side (local side in solo) }.
 import { bindInput } from "./input.js";
 import { askPromotion, cancelPromotion } from "./promo.js";
-import { BLACK, kingSquare, sideOf } from "./rules.js";
+import { BLACK, hasMatingMaterial, kingSquare, sideOf } from "./rules.js";
 import { sound } from "./sound.js";
 import { createView } from "./view.js";
 
@@ -30,13 +30,21 @@ export function createPlay({
     hintTimer: 0,
     token: 0,
     over: false,
+    paused: false,
+    waiters: [],
     showMoves
   });
 
   const isHuman = (side) => config.mode === "duo" || side === config.side;
-  const humanTurn = () => !ui.over && !ui.busy && isHuman(match.turn);
+  const humanTurn = () =>
+    !ui.over && !ui.busy && !ui.paused && isHuman(match.turn);
+  const unpaused = () =>
+    ui.paused
+      ? new Promise((resolve) => ui.waiters.push(resolve))
+      : Promise.resolve();
   const canUndo = () =>
     !ui.over &&
+    !ui.paused &&
     (!ui.busy || ui.thinking) &&
     (config.mode === "duo"
       ? match.plies > 0
@@ -99,6 +107,7 @@ export function createPlay({
       seen: match.keys()
     };
     const [index] = await Promise.all([bot.think(request), wait(MIN_THINK_MS)]);
+    await unpaused();
     if (token !== ui.token) return;
     ui.thinking = false;
     perform(match.legal()[index] || match.legal()[0]);
@@ -194,6 +203,28 @@ export function createPlay({
     refresh();
   }
 
+  // Clock paused: no input, and a computer move waits for the restart.
+  function setPaused(on) {
+    ui.paused = on;
+    if (!on) ui.waiters.splice(0).forEach((resolve) => resolve());
+    refresh();
+  }
+
+  // `side` ran out of time: it loses, unless the other side cannot mate.
+  function timeout(side) {
+    if (ui.over) return;
+    ui.token += 1;
+    bot.reset();
+    cancelPromotion();
+    clearSelection();
+    Object.assign(ui, { over: true, busy: false, thinking: false });
+    view.render(match.board);
+    refresh();
+    const winner = hasMatingMaterial(match.board, -side) ? -side : 0;
+    const reason = winner ? "time" : "timeDraw";
+    onEnd({ over: true, winner, reason, flagged: side });
+  }
+
   function destroy() {
     ui.token += 1;
     clearTimeout(ui.hintTimer);
@@ -209,6 +240,8 @@ export function createPlay({
     undo,
     hint,
     setShowMoves,
+    setPaused,
+    timeout,
     relabel: () => (view.relabel(), refresh()),
     destroy
   };

@@ -1,7 +1,9 @@
 // Page shell: language, settings, screens, end overlay, saving and the match
 // lifecycle (docs/PLATFORM_RULES.md). The match on screen lives in play.js.
 import { createBot } from "./bot.js";
-import { renderHud } from "./hud.js";
+import { createMatchClock } from "./clock-ui.js";
+import { clockMinutes } from "./clock.js";
+import { bottomSide, renderHud } from "./hud.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
 import { createMatch, restoreMatch } from "./match.js";
 import { createPlay } from "./play.js";
@@ -40,6 +42,7 @@ const page = {
   bot: createBot(),
   play: null,
   match: null,
+  clock: null,
   config: null,
   info: {},
   summary: null,
@@ -66,7 +69,11 @@ function updateHud(info) {
   $("chess-again-button").hidden = !page.summary;
 }
 
-function endLine({ winner, reason }) {
+function endLine({ winner, reason, flagged }) {
+  if (flagged)
+    return t(`${reason}Line`, {
+      side: t(flagged === WHITE ? "white" : "black")
+    });
   if (reason !== "checkmate") return t(`${reason}Line`);
   const side = t(winner === WHITE ? "sideBlack" : "sideWhite");
   return t("checkmateLine", { side });
@@ -139,6 +146,7 @@ function recordResult({ winner }) {
 
 function onEnd(status) {
   page.summary = status;
+  page.clock?.halt();
   clearGame();
   recordResult(status);
   if (!isSolo()) sound.win();
@@ -155,12 +163,35 @@ function onEnd(status) {
 
 function unmount() {
   clearTimeout(page.endTimer);
+  page.clock?.destroy();
   page.play?.destroy();
-  Object.assign(page, { play: null, match: null, summary: null, info: {} });
+  Object.assign(page, { play: null, match: null, clock: null, summary: null });
+  page.info = {};
   $("chess-end").hidden = true;
 }
 
-function mount(match, config) {
+function startClock(config, saved, paused) {
+  const minutes = clockMinutes(config.clock);
+  if (!minutes) return null;
+  return createMatchClock({
+    minutes,
+    saved,
+    paused,
+    bottom: bottomSide(config),
+    turn: page.match.turn,
+    onFlag: (side) => page.play?.timeout(side),
+    onSave: saveNow,
+    onPause: (on) => page.play?.setPaused(on)
+  });
+}
+
+function onMoved() {
+  page.clock?.follow(page.match.turn);
+  saveNow();
+}
+
+// A resumed match comes back with its clock paused.
+function mount(match, config, { clock = null, paused = false } = {}) {
   unmount();
   Object.assign(page, { match, config });
   showScreen(true);
@@ -172,21 +203,22 @@ function mount(match, config) {
     t,
     showMoves: page.settings.showMoves === "on",
     onUpdate: updateHud,
-    onMoved: saveNow,
+    onMoved,
     onEnd
   });
+  page.clock = startClock(config, clock, paused);
 }
 
 function saveNow() {
   if (page.match && !page.summary)
-    saveGame(page.config, page.match.serialize());
+    saveGame(page.config, page.match.serialize(), page.clock?.serialize());
 }
 
 // The saved match replayed against the rules; a corrupt save is dropped.
 function loadResumable() {
   const saved = loadSaved();
   const match = saved && restoreMatch(saved.moves);
-  if (match) return { config: saved.config, match };
+  if (match) return { config: saved.config, match, clock: saved.clock };
   clearGame();
   return null;
 }
@@ -208,9 +240,9 @@ async function startMatch() {
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!allowed) return void (page.play && returnToStart());
-  saveGame(config, []);
   renderResume(null);
   mount(createMatch(), config);
+  saveNow();
 }
 
 function resumeMatch() {
@@ -218,12 +250,13 @@ function resumeMatch() {
   renderResume(resumable);
   if (!resumable) return;
   window.MuchogamesMatch.resume(GAME_ID);
-  mount(resumable.match, resumable.config);
+  const { match, config, clock } = resumable;
+  mount(match, config, { clock, paused: true });
 }
 
 function onKey(event) {
   if (!page.play || !$("game-options-panel").hidden || event.altKey) return;
-  if (!$("chess-promotion").hidden) return;
+  if (!$("chess-promotion").hidden || !$("chess-pause").hidden) return;
   const key = event.key.toLowerCase();
   if ((event.ctrlKey || event.metaKey) && key === "z") page.play.undo();
   else if (!event.ctrlKey && !event.metaKey && key === "h" && hintsOn()) {

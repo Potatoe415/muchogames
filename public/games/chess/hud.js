@@ -99,9 +99,12 @@ function renderBar(id, side, { match, config, info, over, t }) {
   );
 }
 
+export const bottomSide = (config) =>
+  config.mode === "solo" ? config.side : WHITE;
+
 // state: { match, config, info, over, t }
 export function renderHud(state) {
-  const bottom = state.config.mode === "solo" ? state.config.side : WHITE;
+  const bottom = bottomSide(state.config);
   renderBar("chess-player-bottom", bottom, state);
   renderBar("chess-player-top", bottom === WHITE ? BLACK : WHITE, state);
   $("chess-undo-button").disabled = !state.info.canUndo;

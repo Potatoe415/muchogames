@@ -291,5 +291,18 @@ export function insufficientMaterial(board) {
   return others.every((p) => p.type === BISHOP && isDarkSquare(p.sq) === shade);
 }
 
+// Whether `side` could still mate with some series of legal moves: a pawn, a
+// rook, a queen or two minor pieces. Decides a flag fall: loss or draw.
+export function hasMatingMaterial(board, side) {
+  let minors = 0;
+  for (const piece of board) {
+    if (sideOf(piece) !== side) continue;
+    const type = typeOf(piece);
+    if (type === PAWN || type === ROOK || type === QUEEN) return true;
+    if (type === KNIGHT || type === BISHOP) minors += 1;
+  }
+  return minors >= 2;
+}
+
 export const positionKey = (pos) =>
   `${pos.turn}|${pos.castling}|${pos.ep}|${pos.board.join(",")}`;

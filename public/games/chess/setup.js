@@ -52,5 +52,10 @@ export function renderResume(saved) {
 export function matchConfig(settings) {
   const random = Math.random() < 0.5 ? WHITE : BLACK;
   const side = { white: WHITE, black: BLACK, random }[settings.color];
-  return { mode: settings.mode, level: settings.level, side };
+  return {
+    mode: settings.mode,
+    level: settings.level,
+    side,
+    clock: settings.clock
+  };
 }

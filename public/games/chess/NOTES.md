@@ -18,6 +18,7 @@ opening the sources.
 | `eval.js`, `ai.js` | Material + piece-square tables, endgame king table and mop-up. Negamax alpha-beta, quiescence, check extension; a root move back into an already seen position scores 0. Levels: easy (depth 1, no quiescence, 30% random), medium (2), hard (4), expert (iterative deepening, 1.5 s), `hint` (4). Returns an index into `legalMoves`. |
 | `ai-worker.js`, `bot.js` | Module worker running `ai.js`; `bot.think({ pos, level, seen })` falls back to the main thread if module workers fail. `reset()` terminates a search (undo, quit). |
 | `view.js` | Builds the board (`data-id="chess-square-<e4>"`), coordinates, pieces (`paintPiece` sets `data-piece`), marks (selected, target, capture, last, hint, check), move animation (rook too when castling), drag rendering, `squareAt`. Flipped 180° when the solo player has black. |
+| `clock.js`, `clock-ui.js` | Optional clock (`clock` setting: `none`, `5`, `10`, `30` minutes per side, no increment, the computer's clock runs too). `clock.js` = pure time left per side; `clock-ui.js` = time in each bar (`[data-bar-clock]`), flag fall (`play.timeout(side)`: loss, or draw when the other side has no mating material), Pause button + overlay (`chess-pause-button`, `chess-pause`, `chess-continue-button`), auto-pause when the page is hidden or the options panel opens. A paused clock blocks input and holds the computer's move. |
 | `promo.js` | Promotion picker overlay (`chess-promotion`, `chess-promote-<piece>`); resolves the piece type or 0 (Cancel, backdrop, Escape). |
 | `input.js` | Pointer press = select/play, drag past 8 px = drop to play; keyboard via `click` with `detail === 0`. |
 | `hud.js` | Player bars (king icon, name, pieces taken + material lead, status / last move in notation) and Undo/Hint state. |
@@ -52,8 +53,9 @@ inline 1em version.
 
 ## Save / resume (decision 0054)
 
-- Key `chess-saved-game` = `{ config: { mode, level, side }, moves: [[from, to, promo], …] }` (`match.serialize()`, possibly empty).
-- Written right after `MuchogamesMatch.start` resolves true (zero moves), after every move and undo (`onMoved`), and on `pagehide` / `visibilitychange` hidden. Never written once the match is over.
+- Key `chess-saved-game` = `{ config: { mode, level, side, clock }, moves: [[from, to, promo], …], clock: { white, black } | null }` (moves from `match.serialize()`, possibly empty; clock = ms left). A save without `config.clock` plays untimed.
+- Written right after `MuchogamesMatch.start` resolves true (zero moves), after every move and undo (`onMoved`), on pause, about once a second while a clock runs, and on `pagehide` / `visibilitychange` hidden. Never written once the match is over.
+- A timed match always comes back paused ("Continuer" restarts the clock of the side to move).
 - Restoring replays `moves` through `restoreMatch`: position, castling rights, en passant, fifty-move counter, repetition keys and the full undo history come back. Not saved (transient): the selection, a shown hint, an open promotion picker, a computer search in progress (it restarts on resume).
 - A save that fails validation or replay is deleted on load. The start screen shows `chess-resume-button` only when the save replays; it never resumes by itself. Resuming calls `MuchogamesMatch.resume` (no coin).
 - The ✖ (`chess-quit-button`, `data-match-quit`) and the hub back button keep the save and never call `finish()`.
