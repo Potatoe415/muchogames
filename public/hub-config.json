@@ -169,7 +169,7 @@
     "category": "autres",
     "added": "2026-10-31",
     "launch": "/games/chess/index.html",
-    "thumbnail": "/games/chess/assets/thumbnail.svg",
+    "thumbnail": "/games/chess/assets/thumbnail.webp",
     "players": [1, 2]
   },
   {

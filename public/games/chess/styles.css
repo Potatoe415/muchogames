@@ -1,5 +1,6 @@
-/* Chess: dark green page over the shared header. Start screen, piece glyphs,
-   buttons and end card. Stage layout in stage.css, board in board.css. */
+/* Chess: dark green page over the shared header. Start screen, buttons,
+   promotion picker and end card. Stage layout in stage.css, board in
+   board.css, piece images in pieces.css. */
 html,
 body {
   height: 100%;
@@ -73,36 +74,6 @@ body {
 
 .ch-app [hidden] {
   display: none !important;
-}
-
-/* --- Piece glyphs: white = outline glyph over a white fill (data-glyph) --- */
-.ch-glyph,
-.ch-piece {
-  font-family:
-    "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols",
-    "Apple Symbols", "DejaVu Sans", serif;
-  font-variant-emoji: text;
-  font-weight: 400;
-  color: #1b1916;
-}
-
-.ch-glyph {
-  position: relative;
-  isolation: isolate;
-  display: inline-block;
-  flex: 0 0 auto;
-  font-size: 1.6em;
-  line-height: 1;
-  text-align: center;
-}
-
-.ch-glyph.is-white::before,
-.ch-piece.is-white::before {
-  content: attr(data-glyph);
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  color: #fffdf6;
 }
 
 /* --- Start screen --- */
@@ -182,7 +153,7 @@ body {
   touch-action: manipulation;
 }
 
-.ch-option .ch-glyph {
+.ch-option .ch-icon {
   font-size: 1.5em;
 }
 
@@ -305,7 +276,7 @@ body {
   background: #dcede2;
 }
 
-.ch-promo-choice .ch-glyph {
+.ch-promo-choice .ch-icon {
   font-size: 2.6rem;
 }
 

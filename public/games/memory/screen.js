@@ -153,7 +153,7 @@ function endTitle(page, state) {
   return text(page, state.winner === mySeat(page, state) ? "win" : "lose");
 }
 
-function soloDetail(page, state) {
+export function soloDetail(page, state) {
   return text(page, "soloDetail", {
     pairs: state.scores[0],
     misses: state.misses,
@@ -177,6 +177,7 @@ function paintEnd(page) {
   const detail = $("memory-end-detail");
   detail.hidden = !solo;
   detail.textContent = solo ? soloDetail(page, state) : "";
+  $("memory-share-score-button").hidden = !solo;
   $("memory-end").hidden = false;
 }
 

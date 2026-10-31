@@ -13,7 +13,7 @@ import {
   typeOf,
   WHITE
 } from "./rules.js";
-import { paintGlyph } from "./view.js";
+import { paintPiece } from "./view.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
@@ -73,8 +73,8 @@ function renderTaken(node, board, side) {
   node.replaceChildren(
     ...list.map((type) => {
       const span = document.createElement("span");
-      span.className = "ch-glyph";
-      paintGlyph(span, -side * type);
+      span.className = "ch-icon";
+      paintPiece(span, -side * type);
       return span;
     })
   );
@@ -87,7 +87,7 @@ function renderBar(id, side, { match, config, info, over, t }) {
   bar.classList.toggle("is-active", active);
   bar.classList.toggle("is-thinking", active && info.thinking);
   bar.classList.toggle("is-check", active && match.inCheck());
-  paintGlyph(bar.querySelector("[data-bar-glyph]"), side * KING);
+  paintPiece(bar.querySelector("[data-bar-icon]"), side * KING);
   bar.querySelector("[data-bar-name]").textContent = barName(config, side, t);
   renderTaken(bar.querySelector("[data-bar-taken]"), match.board, side);
   bar.querySelector("[data-bar-status]").textContent = barStatus(

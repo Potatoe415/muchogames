@@ -48,6 +48,10 @@ const STRINGS = {
     endPoints: "{n} points",
     soloDetail:
       "{pairs} paires · {misses} ratés dont {forgotten} oublis · {time}",
+    shareScore: "Partager",
+    shareLevel: "Memory {grid} ({cards} cartes) · {theme}",
+    shareChallenge: "Tu fais mieux ?",
+    scoreCopied: "Score copié",
     mute: "Couper le son",
     unmute: "Activer le son",
     hiddenCard: "Carte face cachée",
@@ -127,6 +131,10 @@ const STRINGS = {
     endPoints: "{n} points",
     soloDetail:
       "{pairs} pairs · {misses} misses, {forgotten} forgotten · {time}",
+    shareScore: "Share",
+    shareLevel: "Memory {grid} ({cards} cards) · {theme}",
+    shareChallenge: "Can you beat it?",
+    scoreCopied: "Score copied",
     mute: "Mute",
     unmute: "Unmute",
     hiddenCard: "Face-down card",
@@ -206,6 +214,10 @@ const STRINGS = {
     endPoints: "{n} puntos",
     soloDetail:
       "{pairs} parejas · {misses} fallos, {forgotten} olvidos · {time}",
+    shareScore: "Compartir",
+    shareLevel: "Memory {grid} ({cards} cartas) · {theme}",
+    shareChallenge: "¿Puedes superarlo?",
+    scoreCopied: "Puntuación copiada",
     mute: "Silenciar",
     unmute: "Activar sonido",
     hiddenCard: "Carta boca abajo",

@@ -1,6 +1,6 @@
 // Promotion picker: queen, rook, bishop or knight. Resolves with the chosen
 // piece type, or 0 when the player backs out (backdrop, Cancel, Escape).
-import { paintGlyph } from "./view.js";
+import { paintPiece } from "./view.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
@@ -15,8 +15,8 @@ export function askPromotion(side) {
   const overlay = $("chess-promotion");
   const buttons = [...overlay.querySelectorAll("[data-promo]")];
   buttons.forEach((button) =>
-    paintGlyph(
-      button.querySelector("[data-promo-glyph]"),
+    paintPiece(
+      button.querySelector("[data-promo-icon]"),
       side * Number(button.dataset.promo)
     )
   );

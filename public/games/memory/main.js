@@ -20,6 +20,7 @@ import {
   paintWait,
   reportEnd
 } from "./screen.js";
+import { shareScore } from "./share-score.js";
 import { setMuted, unlock } from "./sound.js";
 import { placeBars, watchViewport } from "./viewport.js";
 
@@ -218,6 +219,8 @@ function bindPlay() {
   $("memory-new-button").addEventListener("click", () => void startFresh());
   $("memory-replay-button").addEventListener("click", () => void startFresh());
   $("memory-setup-button").addEventListener("click", toSetup);
+  const share = $("memory-share-score-button");
+  share.addEventListener("click", () => void shareScore(page, share));
   $("memory-quit-button").addEventListener("click", toSetup);
   $("memory-mute-button").addEventListener("click", toggleMute);
   $("memory-board").addEventListener("click", (event) => {

@@ -65,14 +65,12 @@
   background: rgba(229, 83, 75, 0.18);
 }
 
-.ch-bar [data-bar-glyph] {
-  font-size: 1.9rem;
+.ch-bar [data-bar-icon] {
+  font-size: 2.2rem;
 }
 
-.ch-bar .ch-glyph.is-black {
-  text-shadow:
-    0 0 1px #f4f1e8,
-    0 0 2px #f4f1e8;
+.ch-bar .ch-icon.is-black {
+  filter: drop-shadow(0 0 1px rgba(244, 241, 232, 0.8));
 }
 
 .ch-bar-text {
@@ -97,9 +95,9 @@
   opacity: 0.85;
 }
 
-.ch-bar-text small .ch-glyph {
-  margin-right: -0.12em;
-  font-size: 1.1rem;
+.ch-bar-text small .ch-icon {
+  margin-right: -0.45em;
+  font-size: 1.3rem;
 }
 
 .ch-bar-status {
