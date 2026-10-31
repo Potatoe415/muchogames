@@ -13,6 +13,30 @@ function arm(box, ms, fn) {
   box.timers.add(id);
 }
 
+// Solo clock: starts on the first flip, pauses while the page is hidden,
+// stops at game over.
+function elapsedMs({ clock }) {
+  const running = clock.since === null ? 0 : performance.now() - clock.since;
+  return Math.round(clock.base + running);
+}
+
+function runClock(box) {
+  const { clock } = box;
+  if (!box.timed || !clock.started || clock.since !== null) return;
+  if (box.state.phase === "GAME_OVER") return;
+  clock.since = performance.now();
+}
+
+function pauseClock({ clock }) {
+  if (clock.since === null) return;
+  clock.base += performance.now() - clock.since;
+  clock.since = null;
+}
+
+function stamp(box) {
+  if (box.timed) box.state = { ...box.state, elapsedMs: elapsedMs(box) };
+}
+
 function checkpoint(box) {
   if (box.online) return;
   if (box.state.phase === "GAME_OVER") clearSave();
@@ -77,7 +101,13 @@ function follow(box, action) {
 function commit(box, action) {
   const next = reduce(box.state, action);
   if (next === box.state) return;
+  if (action.type === "FLIP") {
+    box.clock.started = true;
+    runClock(box);
+  }
+  if (next.phase === "GAME_OVER") pauseClock(box);
   box.state = next;
+  stamp(box);
   // Published before onUpdate: a final move must be queued before the end of
   // the match leaves the room.
   box.online?.publish(next);
@@ -111,22 +141,34 @@ function laterBot(box) {
 }
 
 export function createMatch({ config, cards, saved, onUpdate, online }) {
+  const state = saved ?? createState(config, cards);
+  const base = state.elapsedMs ?? 0;
   const box = {
     alive: true,
     closing: false,
     plan: null,
-    state: saved ?? createState(config, cards),
+    state,
     timers: new Set(),
     onUpdate,
-    online: online ?? null
+    online: online ?? null,
+    timed: !online && state.config.mode === "solo",
+    clock: { started: base > 0, base, since: null }
   };
+  runClock(box);
   checkpoint(box);
   onUpdate(box.state);
   laterBot(box);
   closeLater(box);
   return {
     save() {
-      if (box.alive) checkpoint(box);
+      if (!box.alive) return;
+      stamp(box);
+      checkpoint(box);
+    },
+    elapsed: () => elapsedMs(box),
+    setVisible(visible) {
+      if (visible) runClock(box);
+      else pauseClock(box);
     },
     flip(instanceId) {
       const seat = box.online?.seat;
@@ -141,6 +183,10 @@ export function createMatch({ config, cards, saved, onUpdate, online }) {
       closeLater(box);
     },
     destroy() {
+      if (!box.alive) return;
+      pauseClock(box);
+      stamp(box);
+      checkpoint(box);
       box.alive = false;
       box.timers.forEach((id) => clearTimeout(id));
       box.timers.clear();

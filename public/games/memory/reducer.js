@@ -38,6 +38,8 @@ export function createState(config, cards) {
     cards,
     openIds: [],
     scores: [0, 0],
+    misses: 0,
+    elapsedMs: 0,
     active: 0,
     known: [],
     winner: null
@@ -71,7 +73,9 @@ function matchPair(state, first, second) {
 function openSecond(state) {
   const [first, second] = state.openIds.map((id) => findCard(state.cards, id));
   if (first.pairId === second.pairId) return matchPair(state, first, second);
-  return { ...state, phase: "EVALUATING" };
+  const solo = state.config.mode === "solo";
+  const misses = solo ? state.misses + 1 : state.misses;
+  return { ...state, misses, phase: "EVALUATING" };
 }
 
 function flip(state, action) {

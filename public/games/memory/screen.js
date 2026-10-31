@@ -1,6 +1,7 @@
 import { GRID_IDS, LEVELS, MODES } from "./config.js";
 import { BACKS, THEME_IDS } from "./faces.js";
 import { rulesHtml, translate } from "./i18n.js";
+import { clockText, soloPoints } from "./points.js";
 import { paintBoard } from "./view.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -78,9 +79,14 @@ function mySeat(page, state) {
   return state.config.mode === "online" ? (page.seat ?? 0) : 0;
 }
 
+// Live while playing; the stamped time once the match is over or not built yet.
+function soloMs(page, state) {
+  return page.match?.elapsed() ?? state.elapsedMs;
+}
+
 function names(page, state) {
   if (state.config.mode === "solo") {
-    return { top: text(page, "solo"), bottom: text(page, "you") };
+    return { top: clockText(soloMs(page, state)), bottom: text(page, "you") };
   }
   if (state.config.mode === "bot") {
     return { top: text(page, "robot"), bottom: text(page, "you") };
@@ -103,6 +109,13 @@ function topScore(page, state) {
   return text(page, "left", { n: left });
 }
 
+function myScore(page, state) {
+  if (state.config.mode !== "solo") {
+    return String(state.scores[mySeat(page, state)]);
+  }
+  return text(page, "points", { n: soloPoints(state, soloMs(page, state)) });
+}
+
 export function paintMute(page) {
   const button = $("memory-mute-button");
   button.dataset.muted = page.muted ? "true" : "false";
@@ -117,7 +130,7 @@ function paintBars(page, state) {
   const mine = state.active === me;
   $("memory-p1-name").textContent = label.bottom;
   $("memory-p2-name").textContent = label.top;
-  $("memory-p1-score").textContent = String(state.scores[me]);
+  $("memory-p1-score").textContent = myScore(page, state);
   $("memory-p2-score").textContent = topScore(page, state);
   $("memory-player-one").dataset.active = live && mine ? "true" : "false";
   $("memory-player-two").dataset.active = live && !mine ? "true" : "false";
@@ -133,16 +146,31 @@ function endTitle(page, state) {
   return text(page, state.winner === mySeat(page, state) ? "win" : "lose");
 }
 
+function soloDetail(page, state) {
+  return text(page, "soloDetail", {
+    pairs: state.scores[0],
+    misses: state.misses,
+    time: clockText(state.elapsedMs)
+  });
+}
+
 function paintEnd(page) {
   if (!page.ended || !page.state) return;
-  const { scores } = page.state;
-  const me = mySeat(page, page.state);
-  $("memory-end-title").textContent = endTitle(page, page.state);
-  $("memory-end-line").textContent =
-    page.state.config.mode === "solo"
-      ? text(page, "pairs", { n: scores[0] })
-      : `${scores[me]} – ${scores[1 - me]}`;
+  const state = page.state;
+  const me = mySeat(page, state);
+  const solo = state.config.mode === "solo";
+  $("memory-end-title").textContent = endTitle(page, state);
+  $("memory-end-line").textContent = solo
+    ? text(page, "endPoints", { n: soloPoints(state, state.elapsedMs) })
+    : `${state.scores[me]} – ${state.scores[1 - me]}`;
+  const detail = $("memory-end-detail");
+  detail.hidden = !solo;
+  detail.textContent = solo ? soloDetail(page, state) : "";
   $("memory-end").hidden = false;
+}
+
+export function paintClock(page) {
+  if (page.state?.config.mode === "solo") paintBars(page, page.state);
 }
 
 export function paintPlay(page) {
@@ -186,7 +214,10 @@ export function applyLanguage(page) {
 export function reportEnd(page) {
   const state = page.state;
   const me = mySeat(page, state);
-  const score = state.scores[me];
+  const score =
+    state.config.mode === "solo"
+      ? soloPoints(state, state.elapsedMs)
+      : state.scores[me];
   if (state.config.mode === "pass") {
     window.MuchogamesMatch.finish();
     return;

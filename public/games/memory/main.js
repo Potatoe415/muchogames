@@ -13,6 +13,7 @@ import { readLang, readMuted, storeLang, storeMuted } from "./prefs.js";
 import { preload } from "./preload.js";
 import {
   applyLanguage,
+  paintClock,
   paintMute,
   paintPlay,
   paintSetup,
@@ -24,6 +25,7 @@ import { placeBars, watchViewport } from "./viewport.js";
 
 const GAME_ID = "memory";
 const VIEWS = ["setup", "wait", "play"];
+const CLOCK_MS = 250;
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const page = {
@@ -43,7 +45,8 @@ const page = {
   online: idleOnline(),
   resume: { saved: false, code: "" },
   seat: 0,
-  names: ["", ""]
+  names: ["", ""],
+  ticker: 0
 };
 
 function showChrome(playing) {
@@ -61,6 +64,9 @@ function paintRoom() {
 
 function show(view) {
   showChrome(view === "play");
+  clearInterval(page.ticker);
+  page.ticker =
+    view === "play" ? setInterval(() => paintClock(page), CLOCK_MS) : 0;
   VIEWS.forEach((name) => {
     $(`memory-${name}`).hidden = name !== view;
   });
@@ -264,17 +270,20 @@ function resumeLocal() {
 function bindLifecycle() {
   let gone = false;
   document.addEventListener("visibilitychange", () => {
+    page.match?.setVisible(!document.hidden && !gone);
     page.match?.save();
     if (!gone) online.presence(!document.hidden);
   });
   window.addEventListener("pagehide", () => {
     gone = true;
+    page.match?.setVisible(false);
     page.match?.save();
     online.presence(false);
   });
   window.addEventListener("pageshow", (event) => {
     if (!event.persisted) return;
     gone = false;
+    page.match?.setVisible(true);
     online.presence(true);
   });
 }

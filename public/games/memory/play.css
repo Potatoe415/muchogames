@@ -278,6 +278,12 @@
   margin: 0;
 }
 
+.memory-end-detail {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
 .memory-actions {
   display: flex;
   gap: 8px;

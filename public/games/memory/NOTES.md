@@ -15,14 +15,15 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 | `screen.js` | Bars, language, setup marks, wait screen, end copy, `finish` payload. |
 | `chips.js` | Setup text buttons (mode, level, grid). |
 | `pickers.js` | Setup thumbnails: theme (`card_01`) and card back. |
-| `game.js` | Turn loop: reducer, 1200 ms miss, bot delays, save at creation and after every flip / close, timer cleanup. |
+| `game.js` | Turn loop: reducer, 1200 ms miss, bot delays, save at creation and after every flip / close, timer cleanup. Solo clock (`elapsed()`, `setVisible()`), stamped into `state.elapsedMs`. |
+| `points.js` | Solo points and `m:ss` clock text. |
 | `reducer.js` | Pure state. `TURN` / `BOT` / `EVALUATING` / `GAME_OVER`. |
 | `bot.js` | Memory bot. Reads `known` only, except the forced miss which skips the twin. |
 | `deck.js` | Random N pairs from the theme, then Fisher-Yates, then `instanceId`. |
 | `decks.js` | **Generated** by `scripts/memory_slice.py`: theme ids + card counts, back ids. |
 | `faces.js` | Face ids (`"01"`…) and image URLs, built from `decks.js`. |
 | `preload.js` | `new Image()` + `decode()` for the back and the match fronts. Never rejects; capped at `PRELOAD_MS`. |
-| `persist.js` | `localStorage` key `muchogames_memory_state`, `v: 2`: `config` (mode, difficulty, grid, theme, back), `cards` (id, pair, face, status, mirrored), `scores`, `active`, `known` (robot memory), `openIds`, `phase`. Drops a finished, broken, or v1 save. Open cards come back open (two = the miss closes 1200 ms after resuming); a save without `openIds` (older) reopens face-down. The phase is derived, not trusted. |
+| `persist.js` | `localStorage` key `muchogames_memory_state`, `v: 2`: `config` (mode, difficulty, grid, theme, back), `cards` (id, pair, face, status, mirrored), `scores`, `misses` and `elapsedMs` (solo; 0 when absent), `active`, `known` (robot memory), `openIds`, `phase`. Drops a finished, broken, or v1 save. Open cards come back open (two = the miss closes 1200 ms after resuming); a save without `openIds` (older) reopens face-down. The phase is derived, not trusted. |
 | `sound.js` | Web Audio beeps. `unlock()` on the first pointer. |
 | `view.js` | DOM grid. Front `<img>` exists only while `FLIPPED` or `MATCHED`. |
 | `i18n.js` | FR/EN/ES copy, theme names, rules. |
@@ -47,6 +48,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 - Mirror: always on. Half the pairs (random) get `mirrored: true` on both cards; the front `<img>` is flipped with `scaleX(-1)`. Saved and sent online; a board whose twins disagree is refused. Old saves without the flag read as not mirrored.
 - Play waits for the preload, then calls `MuchogamesMatch.start` (no coin spent on a load).
 - A found pair fades out after 0.6 s (`data-status="matched"`, CSS only); its grid cell stays empty.
+- Solo score: +100 per pair, −20 per miss, −1 per whole second, never below 0 (`points.js`). The clock starts on the first flip, pauses while the page is hidden or the match is left, stops at game over, and is saved; a resumed match with time on it restarts the clock at once. Top pill: time + pairs left; bottom pill: live points. End card: points, then pairs · misses · time. `finish({ won: true, score })` sends the points.
 - A pair scores 1 and the same player stays. A miss waits 1200 ms, closes, then switches (not in solo).
 - Clicks die in `EVALUATING`, `BOT`, and `GAME_OVER`. The open card cannot be clicked again.
 - `finish({ won })` for solo, vs bot and online (from the local seat). Pass-and-play and a tie omit `won`.
