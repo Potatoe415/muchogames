@@ -5,12 +5,12 @@ const SECOND_POINTS = 1;
 
 export function soloPoints(state, ms) {
   const seconds = Math.floor(ms / 1000);
-  const total =
+  return (
     state.scores[0] * PAIR_POINTS -
     state.misses * MISS_POINTS -
     state.forgotten * FORGOTTEN_POINTS -
-    seconds * SECOND_POINTS;
-  return Math.max(0, total);
+    seconds * SECOND_POINTS
+  );
 }
 
 export function clockText(ms) {

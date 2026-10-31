@@ -54,6 +54,9 @@ public/games/memory/**/*.md
 !public/games/checkers/
 !public/games/checkers/**
 public/games/checkers/**/*.md
+!public/games/chess/
+!public/games/chess/**
+public/games/chess/**/*.md
 !public/games/bridge/
 !public/games/bridge/**
 public/games/bridge/**/*.md

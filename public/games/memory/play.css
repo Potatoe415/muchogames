@@ -76,6 +76,11 @@
   transform: translateX(-50%);
 }
 
+.memory-points[data-negative="true"],
+.memory-end-card p[data-negative="true"] {
+  color: #dc2626;
+}
+
 .memory-clock[hidden],
 .memory-points[hidden],
 .memory-name:empty {

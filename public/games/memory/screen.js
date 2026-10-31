@@ -112,13 +112,13 @@ function topScore(page, state) {
 function paintSoloPills(page, state) {
   const solo = state.config.mode === "solo";
   const ms = solo ? soloMs(page, state) : 0;
+  const n = solo ? soloPoints(state, ms) : 0;
   const points = $("memory-points");
   const clock = $("memory-clock");
   points.hidden = !solo;
   clock.hidden = !solo;
-  points.textContent = solo
-    ? text(page, "points", { n: soloPoints(state, ms) })
-    : "";
+  points.dataset.negative = String(n < 0);
+  points.textContent = solo ? text(page, "points", { n }) : "";
   clock.textContent = solo ? clockText(ms) : "";
 }
 
@@ -167,9 +167,12 @@ function paintEnd(page) {
   const state = page.state;
   const me = mySeat(page, state);
   const solo = state.config.mode === "solo";
+  const n = solo ? soloPoints(state, state.elapsedMs) : 0;
+  const line = $("memory-end-line");
   $("memory-end-title").textContent = endTitle(page, state);
-  $("memory-end-line").textContent = solo
-    ? text(page, "endPoints", { n: soloPoints(state, state.elapsedMs) })
+  line.dataset.negative = String(n < 0);
+  line.textContent = solo
+    ? text(page, "endPoints", { n })
     : `${state.scores[me]} – ${state.scores[1 - me]}`;
   const detail = $("memory-end-detail");
   detail.hidden = !solo;
