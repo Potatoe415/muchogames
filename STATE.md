@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Memory solo has a clock and points (+100 per pair, −20 per miss, −1 per second), saved with the match.
+Status: Memory solo has a clock and points (+100 per pair, −20 per miss, −30 more if the first card's twin was already seen, −1 per second), saved with the match.
 Focus: Owner phone checks of resume (local + online) and of the Memory solo score.
 Level: L1
 
@@ -33,7 +33,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-31 Memory solo: clock (starts on first flip, pauses when hidden) and points; end card shows pairs · misses · time.
+- 2026-10-31 Memory solo: clock (starts on first flip, pauses when hidden) and points, forgotten-twin penalty; end card shows pairs · misses (forgotten) · time.
 - 2026-10-31 Resume lot 4: Memory (open cards, online seat kept + away banner), Yatzy (Reprendre local/online, away notices, sw v44), SkiFree (exact run), Space Cadet rules collapsed.
 - 2026-10-29 Resume lots 2–3: 13 games + word games save the whole match; Chip's exact input replay.
 - 2026-10-29 JezzBall Facile/Normal; Memory debug overlay and iOS toolbar fix.

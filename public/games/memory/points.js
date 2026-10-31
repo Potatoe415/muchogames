@@ -1,5 +1,6 @@
 const PAIR_POINTS = 100;
 const MISS_POINTS = 20;
+const FORGOTTEN_POINTS = 30;
 const SECOND_POINTS = 1;
 
 export function soloPoints(state, ms) {
@@ -7,6 +8,7 @@ export function soloPoints(state, ms) {
   const total =
     state.scores[0] * PAIR_POINTS -
     state.misses * MISS_POINTS -
+    state.forgotten * FORGOTTEN_POINTS -
     seconds * SECOND_POINTS;
   return Math.max(0, total);
 }

@@ -150,6 +150,7 @@ function soloDetail(page, state) {
   return text(page, "soloDetail", {
     pairs: state.scores[0],
     misses: state.misses,
+    forgotten: state.forgotten,
     time: clockText(state.elapsedMs)
   });
 }

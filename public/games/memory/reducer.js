@@ -39,6 +39,7 @@ export function createState(config, cards) {
     openIds: [],
     scores: [0, 0],
     misses: 0,
+    forgotten: 0,
     elapsedMs: 0,
     active: 0,
     known: [],
@@ -70,12 +71,23 @@ function matchPair(state, first, second) {
   return withWinner({ ...state, cards, scores, openIds: [], phase });
 }
 
+function seenTwin(known, card) {
+  return known.some(
+    (item) => item.pairId === card.pairId && item.instanceId !== card.instanceId
+  );
+}
+
+// Solo: a miss counts as forgotten when the first card's twin was already seen.
 function openSecond(state) {
   const [first, second] = state.openIds.map((id) => findCard(state.cards, id));
   if (first.pairId === second.pairId) return matchPair(state, first, second);
-  const solo = state.config.mode === "solo";
-  const misses = solo ? state.misses + 1 : state.misses;
-  return { ...state, misses, phase: "EVALUATING" };
+  if (state.config.mode !== "solo") return { ...state, phase: "EVALUATING" };
+  return {
+    ...state,
+    misses: state.misses + 1,
+    forgotten: state.forgotten + (seenTwin(state.known, first) ? 1 : 0),
+    phase: "EVALUATING"
+  };
 }
 
 function flip(state, action) {

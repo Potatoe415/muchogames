@@ -46,7 +46,8 @@ const STRINGS = {
     left: "{n} restantes",
     points: "{n} pts",
     endPoints: "{n} points",
-    soloDetail: "{pairs} paires · {misses} ratés · {time}",
+    soloDetail:
+      "{pairs} paires · {misses} ratés dont {forgotten} oublis · {time}",
     mute: "Couper le son",
     unmute: "Activer le son",
     hiddenCard: "Carte face cachée",
@@ -124,7 +125,8 @@ const STRINGS = {
     left: "{n} left",
     points: "{n} pts",
     endPoints: "{n} points",
-    soloDetail: "{pairs} pairs · {misses} misses · {time}",
+    soloDetail:
+      "{pairs} pairs · {misses} misses, {forgotten} forgotten · {time}",
     mute: "Mute",
     unmute: "Unmute",
     hiddenCard: "Face-down card",
@@ -202,7 +204,8 @@ const STRINGS = {
     left: "{n} restantes",
     points: "{n} pts",
     endPoints: "{n} puntos",
-    soloDetail: "{pairs} parejas · {misses} fallos · {time}",
+    soloDetail:
+      "{pairs} parejas · {misses} fallos, {forgotten} olvidos · {time}",
     mute: "Silenciar",
     unmute: "Activar sonido",
     hiddenCard: "Carta boca abajo",
@@ -240,7 +243,7 @@ const STRINGS = {
 const RULES = {
   fr: `<p>Retourne deux cartes par tour. Une paire fait 1 point et tu rejoues. Sinon, pause, les cartes se referment, au tour suivant.</p>
 <ul>
-<li>Solo : trouve toutes les paires. Le chrono part à la première carte. Points : +100 par paire, −20 par erreur, −1 par seconde.</li>
+<li>Solo : trouve toutes les paires. Le chrono part à la première carte. Points : +100 par paire, −20 par erreur, −30 de plus si la jumelle de ta première carte avait déjà été vue, −1 par seconde.</li>
 <li>2 joueurs : le même appareil, à tour de rôle. Le plus de paires gagne.</li>
 <li>Robot : Facile se trompe souvent, Moyen une fois sur deux, Difficile se souvient de chaque carte vue.</li>
 <li>En ligne : crée une partie et envoie le code ou le lien, ou rejoins celle d'un ami. Chacun joue sur son appareil.</li>
@@ -248,7 +251,7 @@ const RULES = {
 </ul>`,
   en: `<p>Flip two cards each turn. A pair scores 1 and you go again. Otherwise the cards close after a short pause and the turn passes.</p>
 <ul>
-<li>Solo: find every pair. The clock starts on the first card. Points: +100 per pair, −20 per miss, −1 per second.</li>
+<li>Solo: find every pair. The clock starts on the first card. Points: +100 per pair, −20 per miss, −30 more if your first card's twin had already been seen, −1 per second.</li>
 <li>2 players: same device, taking turns. Most pairs wins.</li>
 <li>Robot: Easy misses often, Medium half the time, Hard remembers every card it has seen.</li>
 <li>Online: create a game and send the code or link, or join a friend's. Each player uses their own device.</li>
@@ -256,7 +259,7 @@ const RULES = {
 </ul>`,
   es: `<p>Voltea dos cartas por turno. Una pareja suma 1 punto y repites. Si no, pausa, las cartas se cierran y pasa el turno.</p>
 <ul>
-<li>Solo: encuentra todas las parejas. El reloj arranca con la primera carta. Puntos: +100 por pareja, −20 por fallo, −1 por segundo.</li>
+<li>Solo: encuentra todas las parejas. El reloj arranca con la primera carta. Puntos: +100 por pareja, −20 por fallo, −30 más si la gemela de tu primera carta ya se había visto, −1 por segundo.</li>
 <li>2 jugadores: el mismo aparato, por turnos. Gana quien más parejas tenga.</li>
 <li>Robot: Fácil falla a menudo, Medio la mitad de las veces, Difícil recuerda cada carta vista.</li>
 <li>En línea: crea una partida y envía el código o el enlace, o únete a la de un amigo. Cada uno juega en su aparato.</li>

@@ -41,6 +41,7 @@ function pack(state) {
     ),
     scores: state.scores,
     misses: state.misses,
+    forgotten: state.forgotten,
     elapsedMs: state.elapsedMs,
     active: state.active,
     known: state.known,
@@ -162,7 +163,7 @@ function settle(cards, scores, openIds) {
   return settled;
 }
 
-// A save from before the solo timer has no misses or time: both start at 0.
+// An older save has no misses, forgotten or time: they start at 0.
 function readCount(value) {
   if (value === undefined) return 0;
   return Number.isInteger(value) && value >= 0 ? value : null;
@@ -181,11 +182,11 @@ function normalize(raw) {
   const scores = readScores(raw.scores);
   const known = readKnown(raw.known, cards);
   if (!scores || !known || (raw.active !== 0 && raw.active !== 1)) return null;
-  const misses = readCount(raw.misses);
-  const elapsedMs = readCount(raw.elapsedMs);
+  const counts = [raw.misses, raw.forgotten, raw.elapsedMs].map(readCount);
+  const [misses, forgotten, elapsedMs] = counts;
   const openIds = readOpen(raw.openIds, cards);
   const settled = openIds && settle(cards, scores, openIds);
-  if (!settled || misses === null || elapsedMs === null) return null;
+  if (!settled || counts.includes(null) || forgotten > misses) return null;
   const active = raw.config.mode === "solo" ? 0 : raw.active;
   return {
     phase: phaseFor(raw.config, active, openIds),
@@ -194,6 +195,7 @@ function normalize(raw) {
     openIds,
     scores,
     misses,
+    forgotten,
     elapsedMs,
     active,
     known,
