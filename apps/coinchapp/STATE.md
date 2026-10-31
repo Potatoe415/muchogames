@@ -29,6 +29,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-10-31 Hub daily coins: `DAILY_COINS` in `lib/server/actions-match.ts` is 20, same as the hub (root decision 0055).
 - 2026-10-24 Solitaire: tapping an Ace sends it straight to its foundation (decision 0074). Every other card still needs a destination tap or a drag.
 - 2026-10-23 Solitaire: no more auto-move (decision 0073): tap picks up, tap a lit destination to move; drag and drop alongside (`components/useSolitaireDrag.ts`). Tests 346/346, tsc/lint/build clean; browser-verified tap-tap, legal/illegal drag, post-drag click ignored.
 - 2026-10-23 Solitaire: "Terminer" button once stock + waste are empty and every column card is face up (`lib/solitaire/autoFinish.ts`); cards climb one every 90 ms, then the win cascade plays. Tests 345/345, tsc/lint/build clean, verified in the browser.

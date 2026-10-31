@@ -4,7 +4,7 @@ import { sendError, sendJson } from "../_lib/http.js";
 import { getServiceClient } from "../_lib/supabase.js";
 
 // Must match DAILY_COINS in hub-coins.js.
-export const DAILY_COINS = 10;
+export const DAILY_COINS = 20;
 
 function parisToday() {
   // en-CA formats as YYYY-MM-DD, the same shape Postgres returns for `date`.

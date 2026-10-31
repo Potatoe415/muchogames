@@ -67,7 +67,7 @@ a match.
 
 ## 3. Coins
 
-- 10 coins per day, back to 10 at midnight Europe/Paris. Admins are
+- 20 coins per day, back to 20 at midnight Europe/Paris. Admins are
   unlimited.
 - **Opening a game is free. Starting a match costs 1 coin**, every match,
   including "play again". The coin is spent by `MuchogamesMatch.start` (or

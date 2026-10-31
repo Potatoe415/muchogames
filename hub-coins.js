@@ -1,4 +1,4 @@
-// Daily coins badge (docs/PLATFORM_RULES.md): 10 per day, back at midnight
+// Daily coins badge (docs/PLATFORM_RULES.md): 20 per day, back at midnight
 // Europe/Paris, spent per match by the games themselves through
 // POST /api/match. The hub only spends one when it opens a
 // `coinPolicy: "launch"` game, whose matches it cannot see. One server-side
@@ -8,7 +8,7 @@ import { readAdminFlag } from "./auth-admin.js";
 import { ensureLiveIdToken } from "./auth.js";
 
 // Must match DAILY_COINS in api/profile/_coins.js.
-const DAILY_COINS = 10;
+const DAILY_COINS = 20;
 const REQUEST_TIMEOUT_MS = 4000;
 
 const LABELS = {

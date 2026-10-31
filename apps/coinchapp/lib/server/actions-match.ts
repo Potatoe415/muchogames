@@ -5,7 +5,7 @@ import { getServiceClient } from "@/lib/supabase/server";
 import { readLinkedProfileId } from "./profileLink";
 
 // Must match DAILY_COINS in the hub's api/profile/_coins.js.
-const DAILY_COINS = 10;
+const DAILY_COINS = 20;
 const UUID_RE =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 

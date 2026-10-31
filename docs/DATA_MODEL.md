@@ -196,7 +196,7 @@ Sensitive_Data: None.
 
 ### Entity: Coins
 
-Purpose: Daily play allowance (10 coins per Paris day, one per match started — `docs/PLATFORM_RULES.md`; one per hub launch only for `coinPolicy: "launch"` games).
+Purpose: Daily play allowance (20 coins per Paris day, one per match started — `docs/PLATFORM_RULES.md`; one per hub launch only for `coinPolicy: "launch"` games).
 Storage: `public.muchogames_coins` (`supabase/migrations/0007_coins.sql`): `profile_id` (PK, references `auth.users`, cascade), `day` (Paris date the count belongs to), `spent`, `updated_at`. One row per player, overwritten when the day changes; no purge needed. Spent only through `spend_muchogames_coin(p_id, p_daily)` (service-role only), which computes the Paris day itself and returns null when the allowance is used up.
 Access_Rules: RLS on, zero policies. Read/spent only through `POST /api/match` (`coins` / `start`) for the caller's own row, and by the coinchapp/Tranquil servers via `start_muchogames_match`; admins are never charged. The 2026-10-02 browser counter `muchogames-coins` and the `api/profile` `coins` / `spend-coin` actions were removed on 2026-10-03.
 Sensitive_Data: None beyond the profile link.
