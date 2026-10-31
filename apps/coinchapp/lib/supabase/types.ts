@@ -88,7 +88,13 @@ export const STILL_THERE_POPUP_LEAD_MS = 5000;
 export type GameStatus = "lobby" | "playing" | "finished";
 
 /** Which game a row belongs to. Extend the union when a new game is added. */
-export type GameType = "coinche" | "bouilla" | "president" | "bataillecorse";
+export type GameType = "coinche" | "belote" | "bouilla" | "president" | "bataillecorse";
+
+/** Belote runs on the Coinche engine (`GameState.variant`), so it shares every
+ *  Coinche dispatch branch. */
+export function usesCoincheEngine(gameType: GameType): boolean {
+  return gameType === "coinche" || gameType === "belote";
+}
 
 export type AnyGameState = CoincheGameState | BouillaGameState | PresidentGameState | BataillecorseGameState;
 

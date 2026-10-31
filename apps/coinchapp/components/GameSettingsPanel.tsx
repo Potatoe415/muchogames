@@ -126,6 +126,8 @@ interface Props {
   /** Whether to show the Coinche-only fields (points/capot/preset picker/etc.).
    *  Defaults to true. */
   coincheFields?: boolean;
+  /** Belote: only the target and bot level (its scoring is fixed). Defaults to false. */
+  beloteFields?: boolean;
   /** Whether to show the Président-only field (rounds-to-play slider).
    *  Defaults to false. */
   presidentFields?: boolean;
@@ -148,6 +150,7 @@ export function GameSettingsPanel({
   idPrefix,
   title,
   coincheFields = true,
+  beloteFields = false,
   presidentFields = false,
   bataillecorseFields = false,
   showStillThereTimeout = false,
@@ -315,8 +318,7 @@ export function GameSettingsPanel({
             </div>
           </div>
         )}
-        {coincheFields && (
-          <>
+        {(coincheFields || beloteFields) && (
             <label className="flex items-center justify-between gap-3 text-sm">
               <span className="text-[var(--card-face)]/75">{t("pointsCount")}</span>
               <select
@@ -330,6 +332,9 @@ export function GameSettingsPanel({
                 ))}
               </select>
             </label>
+        )}
+        {coincheFields && (
+          <>
             <label
               className="flex items-center justify-between gap-3 text-sm"
               data-id={`${idPrefix}-count-contract-only-checkbox-row`}
@@ -415,6 +420,9 @@ export function GameSettingsPanel({
                 dataId={`${idPrefix}-require-more-points-switch`}
               />
             </label>
+          </>
+        )}
+        {(coincheFields || beloteFields) && (
             <div className="flex flex-col gap-1.5 text-sm" data-id={`${idPrefix}-bot-punch-row`}>
               <div className="flex items-center justify-between">
                 <span className="text-[var(--card-face)]/75">{t("botLevel")}</span>
@@ -441,7 +449,6 @@ export function GameSettingsPanel({
                 <span>{t("punchHigh")}</span>
               </div>
             </div>
-          </>
         )}
       </div>
     </section>

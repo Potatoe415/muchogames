@@ -69,6 +69,7 @@ export function AdHocLobby() {
   const { t } = useI18n();
   const searchParams = useSearchParams();
   const game = searchParams.get("game");
+  const isBelote = game === "belote";
   const isBouilla = game === "bouilla";
   const isPresident = game === "president";
   const isBataillecorse = game === "bataillecorse";
@@ -117,12 +118,15 @@ export function AdHocLobby() {
           botThinkMs: setup.botThinkMs,
           deckSize: setup.bataillecorseDeckSize,
         });
+      } else if (isBelote) {
+        const settings = { targetPoints: setup.target, botPunch: setup.botPunch, botThinkMs: setup.botThinkMs };
+        setHostConfig({ mySeat: 0, roster, connections: conns, settings, seed, variant: "belote" });
       } else {
         setHostConfig({ mySeat: 0, roster, connections: conns, settings: toSettings(setup), seed });
       }
       setPhase("host-play");
     },
-    [name, effectiveHumanCount, maxSeat, setup, seed, isBouilla, isPresident, isBataillecorse, t],
+    [name, effectiveHumanCount, maxSeat, setup, seed, isBelote, isBouilla, isPresident, isBataillecorse, t],
   );
 
   if (phase === "host-play" && hostConfig) return <P2PHostGame config={hostConfig} />;
@@ -132,7 +136,7 @@ export function AdHocLobby() {
   if (phase === "join-play" && client) return <P2PClientGame conn={client.conn} name={client.name} />;
 
   return (
-    <Shell isBouilla={isBouilla} isPresident={isPresident} isBataillecorse={isBataillecorse}>
+    <Shell isBelote={isBelote} isBouilla={isBouilla} isPresident={isPresident} isBataillecorse={isBataillecorse}>
       {phase === "choose" && <ChooseMode t={t} setPhase={setPhase} />}
       {phase === "host-setup" && (
         <div className="flex flex-col gap-4" data-id="adhoc-host-setup">
@@ -156,7 +160,8 @@ export function AdHocLobby() {
             onChange={setSetup}
             idPrefix="adhoc"
             title={t("settings")}
-            coincheFields={!isBouilla && !isPresident && !isBataillecorse}
+            coincheFields={!isBelote && !isBouilla && !isPresident && !isBataillecorse}
+            beloteFields={isBelote}
             presidentFields={isPresident}
             bataillecorseFields={isBataillecorse}
           />
@@ -177,11 +182,13 @@ export function AdHocLobby() {
 
 function Shell({
   children,
+  isBelote,
   isBouilla,
   isPresident,
   isBataillecorse,
 }: {
   children: React.ReactNode;
+  isBelote: boolean;
   isBouilla: boolean;
   isPresident: boolean;
   isBataillecorse: boolean;
@@ -199,7 +206,9 @@ function Shell({
       </a>
       <header className="text-center">
         <h1 className="text-3xl font-black tracking-tight text-white" data-id="adhoc-title">
-          {isBouilla
+          {isBelote
+            ? t("beloteAdhocTitle")
+            : isBouilla
             ? t("bouillaAdhocTitle")
             : isPresident
             ? t("presidentAdhocTitle")
@@ -208,7 +217,9 @@ function Shell({
             : t("playAdhoc")}
         </h1>
         <p className="text-sm text-white/70">
-          {isBouilla
+          {isBelote
+            ? t("beloteAdhocSubtitle")
+            : isBouilla
             ? t("bouillaAdhocSubtitle")
             : isPresident
             ? t("presidentAdhocSubtitle")

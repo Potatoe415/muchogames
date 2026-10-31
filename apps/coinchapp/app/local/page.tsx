@@ -9,6 +9,7 @@ import type { GameSetupValues } from "@/components/GameSettingsPanel";
 import {
   LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY,
   LOCAL_BATAILLECORSE_STORAGE_KEY,
+  LOCAL_BELOTE_STORAGE_KEY,
   LOCAL_BOUILLA_STORAGE_KEY,
   LOCAL_COINCHE_STORAGE_KEY,
   LOCAL_PRESIDENT_STORAGE_KEY,
@@ -28,6 +29,7 @@ function LocalSetupPageInner() {
   const { t } = useI18n();
   const searchParams = useSearchParams();
   const game = searchParams.get("game");
+  const isBelote = game === "belote";
   const isBouilla = game === "bouilla";
   const isPresident = game === "president";
   const isBataillecorse = game === "bataillecorse";
@@ -47,10 +49,15 @@ function LocalSetupPageInner() {
     // A deliberate "start" from setup always begins a fresh match: clear any
     // abandoned in-progress save so it can't get resumed by mistake.
     clearPersistedGame(LOCAL_COINCHE_STORAGE_KEY);
+    clearPersistedGame(LOCAL_BELOTE_STORAGE_KEY);
     clearPersistedGame(LOCAL_BOUILLA_STORAGE_KEY);
     clearPersistedGame(LOCAL_PRESIDENT_STORAGE_KEY);
     clearPersistedGame(LOCAL_BATAILLECORSE_STORAGE_KEY);
     clearPersistedGame(LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY);
+    if (isBelote) {
+      router.push(`/local/play?game=belote&target=${setup.target}&botPunch=${setup.botPunch}&botThinkMs=${setup.botThinkMs}`);
+      return;
+    }
     if (isBouilla) {
       router.push(`/local/play?game=bouilla&botThinkMs=${setup.botThinkMs}`);
       return;
@@ -95,7 +102,9 @@ function LocalSetupPageInner() {
 
       <header className="text-center">
         <h1 className="text-3xl font-black tracking-tight text-[var(--surface)]" data-id="local-title">
-          {isBouilla
+          {isBelote
+            ? t("beloteLocalTitle")
+            : isBouilla
             ? t("bouillaLocalTitle")
             : isPresident
             ? t("presidentLocalTitle")
@@ -106,7 +115,9 @@ function LocalSetupPageInner() {
             : t("playLocal")}
         </h1>
         <p className="text-sm text-[var(--foreground)]/75">
-          {isBouilla
+          {isBelote
+            ? t("beloteLocalSubtitle")
+            : isBouilla
             ? t("bouillaLocalSubtitle")
             : isPresident
             ? t("presidentLocalSubtitle")
@@ -159,7 +170,8 @@ function LocalSetupPageInner() {
         onChange={setSetup}
         idPrefix="local"
         title={t("settings")}
-        coincheFields={!isBouilla && !isPresident && !isBataillecorse}
+        coincheFields={!isBelote && !isBouilla && !isPresident && !isBataillecorse}
+        beloteFields={isBelote}
         presidentFields={isPresident}
         bataillecorseFields={isBataillecorse}
         hideBotFields={isDuel}

@@ -4,7 +4,7 @@ import { PresidentLocalGame } from "@/components/PresidentLocalGame";
 import { BataillecorseLocalGame } from "@/components/BataillecorseLocalGame";
 import { BataillecorseDuelGame } from "@/components/BataillecorseDuelGame";
 import { SolitaireLocalGame } from "@/components/SolitaireLocalGame";
-import { BOT_PUNCH_LEVELS, type BotPunch, type ScoringRules } from "@/lib/coinche";
+import { BOT_PUNCH_LEVELS, DEFAULT_SCORING_RULES, type BotPunch, type ScoringRules } from "@/lib/coinche";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
   DEFAULT_BATAILLECORSE_DECK_SIZE,
@@ -95,6 +95,19 @@ export default async function LocalPlayPage({
   }
   const target = Number(sp.target);
   const targetPoints = TARGETS.includes(target) ? target : 1000;
+  const botPunch = parsePunch(sp.botPunch);
+  if (sp.game === "belote") {
+    return (
+      <LocalGame
+        targetPoints={targetPoints}
+        seed={seed}
+        scoringRules={DEFAULT_SCORING_RULES}
+        botPunch={botPunch}
+        botThinkMs={botThinkMs}
+        variant="belote"
+      />
+    );
+  }
   const scoringRules: ScoringRules = {
     countContractOnlyIfMade: sp.countContractOnlyIfMade === "true",
     failedContractDefensePoints: parsePoints(sp.failedContractDefensePoints, 160),
@@ -104,7 +117,6 @@ export default async function LocalPlayPage({
     allowToutAtoutSansAtout: sp.allowSpecialBids === "true",
     requireMorePointsToWin: sp.requireMorePointsToWin !== "false",
   };
-  const botPunch = parsePunch(sp.botPunch);
   return (
     <LocalGame
       targetPoints={targetPoints}

@@ -32,7 +32,7 @@ export function DealOverlay({
   const result = view.lastDeal;
   const finished = view.phase === "finished";
   const myTeam = view.mySeat % 2 === 0 ? "A" : "B";
-  useRecordMatchResult(gameId, finished, view.winner === myTeam, "coinche");
+  useRecordMatchResult(gameId, finished, view.winner === myTeam, view.variant === "belote" ? "belote" : "coinche");
 
   if (!visible) return null;
 

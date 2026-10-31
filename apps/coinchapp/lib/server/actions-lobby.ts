@@ -112,11 +112,22 @@ function sanitizeSettings(gameType: GameType, input: Partial<GameSettings>): Gam
       presidentRoundsToPlay: sanitizePresidentRoundsToPlay(input.presidentRoundsToPlay),
     };
   }
+  if (gameType === "belote") {
+    // Belote's scoring is fixed: none of Coinche's scoring-rule settings apply.
+    const { targetPoints, botPunch, stillThereTimeoutSec, botThinkMs } = sanitizeCoincheSettings(input);
+    return { targetPoints, botPunch, stillThereTimeoutSec, botThinkMs };
+  }
   return sanitizeCoincheSettings(input);
 }
 
 function isGameType(value: unknown): value is GameType {
-  return value === "coinche" || value === "bouilla" || value === "president" || value === "bataillecorse";
+  return (
+    value === "coinche" ||
+    value === "belote" ||
+    value === "bouilla" ||
+    value === "president" ||
+    value === "bataillecorse"
+  );
 }
 
 function cleanName(name: string, fallback: string): string {
@@ -381,6 +392,7 @@ function startInitialState(gameType: GameType, settings: GameSettings): AnyGameS
   if (gameType === "president") {
     return beginNextPresidentRound(createInitialPresidentState(settings.presidentRoundsToPlay ?? DEFAULT_PRESIDENT_ROUNDS_TO_PLAY));
   }
+  if (gameType === "belote") return beginNextDeal(createInitialState(settings.targetPoints ?? 1000, {}, "belote"));
   return beginNextDeal(createInitialState(settings.targetPoints ?? 1000, {
     countContractOnlyIfMade: settings.countContractOnlyIfMade,
     failedContractDefensePoints: settings.failedContractDefensePoints,

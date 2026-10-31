@@ -11,12 +11,13 @@ import {
   type Card,
   type GameState,
   type ScoringRules,
+  type Variant,
 } from "@/lib/coinche";
 import type { GameActions } from "@/components/GameTable";
 import type { GameView } from "@/lib/server/view";
 import { seededRng, wait } from "./cardGameDriver";
 import { coincheEngine } from "./coincheEngineAdapter";
-import { LOCAL_COINCHE_STORAGE_KEY } from "./localGamePersistence";
+import { localCoincheStorageKey } from "./localGamePersistence";
 import { useBotWorker } from "./useBotWorker";
 import { useLocalCardGame } from "./useLocalCardGame";
 
@@ -25,8 +26,8 @@ const NAMES = ["Vous", "Adam", "Jane", "Lea"];
 /** Must match the CSS trick-collect animation duration. */
 const COLLECT_DELAY_MS = 1500;
 
-function startState(targetPoints: number, seed: number, scoringRules: ScoringRules): GameState {
-  return beginNextDeal(createInitialState(targetPoints, scoringRules), seededRng(seed));
+function startState(targetPoints: number, seed: number, scoringRules: ScoringRules, variant: Variant): GameState {
+  return beginNextDeal(createInitialState(targetPoints, scoringRules, variant), seededRng(seed));
 }
 
 /** Fully offline single-player game: you are seat 0, the rest are bots.
@@ -37,13 +38,14 @@ export function useLocalGame(
   scoringRules: ScoringRules,
   botPunch: BotPunch,
   botThinkMs: number,
+  variant: Variant = "coinche",
 ): { gv: GameView; actions: GameActions } {
   const decide = useBotWorker(botPunch, botThinkMs);
   // The ISMCTS search (via `decide`) runs in a Web Worker and overlaps the
   // minimum thinking delay, so the UI never blocks.
   const { state, stateRef, commit, runBots } = useLocalCardGame({
-    initialState: () => startState(targetPoints, seed, scoringRules),
-    storageKey: LOCAL_COINCHE_STORAGE_KEY,
+    initialState: () => startState(targetPoints, seed, scoringRules, variant),
+    storageKey: localCoincheStorageKey(variant),
     engine: coincheEngine,
     decide,
     isBot: (seat) => BOTS[seat],
@@ -82,7 +84,7 @@ export function useLocalGame(
     // here silently blocked every match after the first one in a tab.
     gameId: `local-${seed}`,
     roomCode: "LOCAL",
-    gameType: "coinche",
+    gameType: variant,
     status: state.phase === "finished" ? "finished" : "playing",
     settings: { targetPoints },
     version: 0,

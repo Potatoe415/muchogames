@@ -1,4 +1,5 @@
 import { bidOptions } from "./bidding";
+import { chooseBeloteBid } from "./belote-bot";
 import { cardId, cardPoints, cardStrength, isTrump, partnerOf, RANKS, teamOf } from "./cards";
 import { submitBid, submitPlay } from "./engine";
 import { legalCards, trickWinner } from "./trick";
@@ -176,6 +177,7 @@ export function decideBidWithSupport(
 }
 
 export function chooseBid(state: GameState): Bid {
+  if (state.variant === "belote") return chooseBeloteBid(state);
   const seat = state.turn;
   const { minValue, suits } = bidOptions(state);
   const decision = decideBidWithSupport(state.hands[seat], state.bids, seat, suits, minValue);

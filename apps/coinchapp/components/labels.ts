@@ -1,6 +1,6 @@
-import type { Contract, Suit, TrumpMode } from "@/lib/coinche";
+import type { Bid, Contract, Suit, TrumpMode } from "@/lib/coinche";
 import type { Locale } from "@/lib/client/i18n";
-import { CAPOT_VALUE, GENERALE_VALUE } from "@/lib/coinche";
+import { BELOTE_CONTRACT_VALUE, CAPOT_VALUE, GENERALE_VALUE } from "@/lib/coinche";
 
 export const SUIT_SYMBOL: Record<Suit, string> = {
   H: "\u2665",
@@ -20,8 +20,19 @@ export function trumpModeLabel(mode: TrumpMode, locale: Locale = "fr"): string {
   return SUIT_SYMBOL[mode];
 }
 
+/** Label for a "bid" in history/bubbles. A belote take carries no value: "Prend ♥". */
+export function formatBidLabel(bid: Bid, locale: Locale = "fr"): string {
+  const suit = bid.suit ? ` ${trumpModeLabel(bid.suit, locale)}` : "";
+  if (bid.value === undefined) return `${locale === "fr" ? "Prend" : "Takes"}${suit}`;
+  const value = bid.value === CAPOT_VALUE ? "Capot" : bid.value === GENERALE_VALUE ? "Générale" : String(bid.value);
+  return `${value}${suit}`;
+}
+
 export function formatContract(contract: Contract | null, locale: Locale = "fr"): string {
   if (!contract) return locale === "fr" ? "Pas de contrat" : "No contract";
+  if (contract.value === BELOTE_CONTRACT_VALUE) {
+    return `${locale === "fr" ? "Atout" : "Trump"} ${trumpModeLabel(contract.suit, locale)}`;
+  }
   const value =
     contract.value === CAPOT_VALUE
       ? "Capot"

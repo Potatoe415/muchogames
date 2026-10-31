@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { useLocalGame } from "@/lib/client/useLocalGame";
-import { LOCAL_COINCHE_STORAGE_KEY, clearPersistedGame } from "@/lib/client/localGamePersistence";
+import { clearPersistedGame, localCoincheStorageKey } from "@/lib/client/localGamePersistence";
 import type { ReactionPick } from "@/lib/client/reactions";
 import { useReactions } from "@/lib/client/useReactions";
-import type { BotPunch, ScoringRules } from "@/lib/coinche";
+import type { BotPunch, ScoringRules, Variant } from "@/lib/coinche";
 import { GameTable, type CoincheGameView } from "./GameTable";
 
 export function LocalGame({
@@ -14,12 +14,14 @@ export function LocalGame({
   scoringRules,
   botPunch,
   botThinkMs,
+  variant = "coinche",
 }: {
   targetPoints: number;
   seed: number;
   scoringRules: ScoringRules;
   botPunch: BotPunch;
   botThinkMs: number;
+  variant?: Variant;
 }) {
   const [gameKey, setGameKey] = useState(0);
   return (
@@ -30,8 +32,9 @@ export function LocalGame({
       scoringRules={scoringRules}
       botPunch={botPunch}
       botThinkMs={botThinkMs}
+      variant={variant}
       onReset={() => {
-        clearPersistedGame(LOCAL_COINCHE_STORAGE_KEY);
+        clearPersistedGame(localCoincheStorageKey(variant));
         setGameKey((k) => k + 1);
       }}
     />
@@ -44,6 +47,7 @@ function LocalGameInner({
   scoringRules,
   botPunch,
   botThinkMs,
+  variant,
   onReset,
 }: {
   targetPoints: number;
@@ -51,9 +55,10 @@ function LocalGameInner({
   scoringRules: ScoringRules;
   botPunch: BotPunch;
   botThinkMs: number;
+  variant: Variant;
   onReset: () => void;
 }) {
-  const { gv, actions } = useLocalGame(targetPoints, seed, scoringRules, botPunch, botThinkMs);
+  const { gv, actions } = useLocalGame(targetPoints, seed, scoringRules, botPunch, botThinkMs, variant);
   const { reactions, addReaction } = useReactions();
 
   function onSendReaction(pick: ReactionPick) {

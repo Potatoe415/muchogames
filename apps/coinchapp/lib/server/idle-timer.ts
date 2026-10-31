@@ -13,6 +13,7 @@ import {
   type GameRow,
   type GameType,
   type PlayerRow,
+  usesCoincheEngine,
 } from "@/lib/supabase/types";
 import {
   applyMove,
@@ -77,7 +78,7 @@ function chooseRandomMove(gameType: GameType, state: AnyGameState, seat: Seat): 
  *  exchange (no sensible random card return) always use the same heuristic
  *  move the 45s browser-gone safety net already relies on. */
 function needsHeuristicMove(gameType: GameType, state: AnyGameState): boolean {
-  if (gameType === "coinche") return state.phase === "bidding";
+  if (usesCoincheEngine(gameType)) return state.phase === "bidding";
   if (gameType === "president") return state.phase === "exchange";
   return false;
 }

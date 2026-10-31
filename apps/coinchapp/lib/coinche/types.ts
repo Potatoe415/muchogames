@@ -15,6 +15,10 @@ export type Team = "A" | "B";
 
 export type Phase = "lobby" | "bidding" | "playing" | "scoring" | "finished";
 
+/** Rules family run by this engine. "belote": classic belote - a face-up card is
+ *  taken or passed instead of an auction (see `belote.ts`). Absent = "coinche". */
+export type Variant = "coinche" | "belote";
+
 export type BidType = "pass" | "bid" | "coinche" | "surcoinche";
 
 export interface Bid {
@@ -104,4 +108,10 @@ export interface GameState {
   winner?: Team;
   /** Set when every seat passed: the caller must redeal. */
   pendingRedeal?: boolean;
+  /** Absent for Coinche rows saved before belote existed. */
+  variant?: Variant;
+  /** Belote only: the face-up card offered during bidding, then held by the taker. Public. */
+  turnedCard?: Card | null;
+  /** Belote only: undealt cards until someone takes. HIDDEN: server-only, never part of a PlayerView. */
+  stock?: Card[];
 }

@@ -6,7 +6,7 @@ import { useI18n } from "@/lib/client/i18n";
 import { useHubPrefillName } from "@/lib/client/hubName";
 import { fillWithBots, joinGame, startGame, swapSeats } from "@/lib/server/actions-lobby";
 import type { GameView, LobbyPlayer } from "@/lib/server/view";
-import { seatCountFor } from "@/lib/supabase/types";
+import { seatCountFor, usesCoincheEngine } from "@/lib/supabase/types";
 
 /** Local optimistic swap of the occupants of two seats (team follows seat parity). */
 function swapPlayers(players: LobbyPlayer[], from: number, to: number): LobbyPlayer[] {
@@ -212,7 +212,7 @@ export function Lobby({ gv, onChange, debugMode, onDebugModeChange }: LobbyProps
             />
             {t("randomizeSeats")}
           </label>
-          {gv.gameType !== "coinche" && (
+          {!usesCoincheEngine(gv.gameType) && (
             <label
               data-id="lobby-debug-mode"
               className="flex cursor-pointer items-center gap-2 self-start text-sm text-[var(--foreground)]/70"

@@ -65,7 +65,7 @@ function lobbyPlayers(roster: RosterEntry[]) {
   }));
 }
 
-/** Build the redacted GameView a single seat is allowed to see, for a Coinche table.
+/** Build the redacted GameView a single seat is allowed to see, for a Coinche or Belote table.
  *  `matchId` must be unique per match (e.g. `` `adhoc-${seed}` `` - see the host
  *  hook) - it becomes `GameView.gameId`, the dedup key `useRecordMatchResult`
  *  keys its once-per-match `sessionStorage` guard on. A shared literal here
@@ -81,7 +81,7 @@ export function buildSeatView(
   return {
     gameId: matchId,
     roomCode: "P2P",
-    gameType: "coinche" as GameType,
+    gameType: (state.variant === "belote" ? "belote" : "coinche") as GameType,
     status: state.phase === "finished" ? "finished" : "playing",
     settings,
     version: 0,

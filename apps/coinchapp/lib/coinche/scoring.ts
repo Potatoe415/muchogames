@@ -7,6 +7,8 @@ const GENERALE_VALUE = 500;
 const FULL_DECK_POINTS = 160;
 /** Reference total used for all bids/contracts (152 card + 10 de der). */
 const REFERENCE_TOTAL = 162;
+/** Belote capot: every trick, 152 card points + 100 instead of the 10 de der. */
+const BELOTE_CAPOT_POINTS = 252;
 
 function otherTeam(team: Team): Team {
   return team === "A" ? "B" : "A";
@@ -148,6 +150,24 @@ function scoreContract(
     : { att: beloteAtt, def: base * mult + beloteDef };
 }
 
+/** Belote: a capot is worth 252. Otherwise the taker needs at least as many points as
+ *  the defence (belote included) - a tie scores each side its own points - or goes
+ *  "dedans" and the defence takes all 162. Belote/rebelote always stays with its holder. */
+function scoreBeloteDeal(
+  attTricks: number,
+  cardAtt: number,
+  cardDef: number,
+  beloteAtt: number,
+  beloteDef: number,
+): { made: boolean; scored: { att: number; def: number } } {
+  if (attTricks === 8) return { made: true, scored: { att: BELOTE_CAPOT_POINTS + beloteAtt, def: beloteDef } };
+  if (attTricks === 0) return { made: false, scored: { att: beloteAtt, def: BELOTE_CAPOT_POINTS + beloteDef } };
+  const att = cardAtt + beloteAtt;
+  const def = cardDef + beloteDef;
+  if (att < def) return { made: false, scored: { att: beloteAtt, def: REFERENCE_TOTAL + beloteDef } };
+  return { made: true, scored: { att, def } };
+}
+
 /** Compute the result of a finished deal (8 tricks played). */
 export function computeDealResult(state: GameState): DealResult {
   const contract = state.contract!;
@@ -162,7 +182,9 @@ export function computeDealResult(state: GameState): DealResult {
 
   let made: boolean;
   let scored: { att: number; def: number };
-  if (contract.value === GENERALE_VALUE) {
+  if (state.variant === "belote") {
+    ({ made, scored } = scoreBeloteDeal(tricksWonBy(state, att), cp[att], cp[def], beloteAtt, beloteDef));
+  } else if (contract.value === GENERALE_VALUE) {
     made = generale;
     scored = scoreAnnouncedGenerale(made, contract.coinche, beloteAtt, beloteDef);
   } else if (contract.value === CAPOT_VALUE) {

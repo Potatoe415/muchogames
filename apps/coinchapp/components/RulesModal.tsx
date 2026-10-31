@@ -2,6 +2,7 @@
 
 import { useI18n } from "@/lib/client/i18n";
 import type { CoinchappGame } from "@/lib/profileGames";
+import { BELOTE_RULES } from "./beloteRules";
 import { SOLITAIRE_RULES } from "./solitaireRules";
 
 interface Props {
@@ -249,6 +250,7 @@ export function RulesModal({ onClose, game = "coinche" }: Props) {
   const { locale } = useI18n();
   const rulesByGame = {
     coinche: COINCHE_RULES,
+    belote: BELOTE_RULES,
     bouilla: BOUILLA_RULES,
     president: PRESIDENT_RULES,
     bataillecorse: BATAILLECORSE_RULES,

@@ -1,10 +1,12 @@
 import {
+  BELOTE_CONTRACT_VALUE,
+  decideBeloteTake,
   decideBidWithSupport,
   PUNCH_CONTRIBUTION,
   refinePlayCandidates,
   teamOf,
 } from "@/lib/coinche";
-import type { BotPunch, Card, PlayerView, TrumpMode } from "@/lib/coinche";
+import type { BotPunch, Card, PlayerView, Suit, TrumpMode } from "@/lib/coinche";
 import { buildDeterminizer, simulateRootMove } from "./botSim";
 
 /**
@@ -46,6 +48,11 @@ export function chooseClientAction(view: PlayerView, options: BotOptions = {}): 
 
 function chooseBidAction(view: PlayerView, options: BotOptions): BotAction {
   const bid = view.bidOptions;
+  if (view.variant === "belote") {
+    const suits = (bid?.suits ?? []) as Suit[];
+    const suit = view.turnedCard ? decideBeloteTake(view.myHand, view.turnedCard, suits, options.punch) : null;
+    return suit ? { action: "BID", value: BELOTE_CONTRACT_VALUE, suit } : { action: "PASS" };
+  }
   const contribution = options.punch ? PUNCH_CONTRIBUTION[options.punch] : undefined;
   const decision = decideBidWithSupport(
     view.myHand,

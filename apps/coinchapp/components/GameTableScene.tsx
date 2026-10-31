@@ -2,12 +2,13 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { useDelayedVisible } from "@/lib/client/useDelayedVisible";
-import { CAPOT_VALUE, GENERALE_VALUE, type Bid, type Card, type PlayerView } from "@/lib/coinche";
+import type { Bid, Card, PlayerView } from "@/lib/coinche";
 import type { GameView, NextDealGate } from "@/lib/server/view";
 import type { TableReaction } from "@/lib/client/reactions";
+import { BeloteTurnedCard } from "./BeloteBiddingPanel";
 import { DealOverlay } from "./DealOverlay";
 import { isConnected, playerName, seatTeam } from "./gameTableHelpers";
-import { trumpModeLabel } from "./labels";
+import { formatBidLabel } from "./labels";
 import { PlayerBadge } from "./PlayerBadge";
 import { ReactionBubble } from "./ReactionBubble";
 import { CardBackFanH, CardBackStackV, CompletedTrickHold, PlayedCardStage, type TableSeats } from "./TrickStage";
@@ -29,8 +30,7 @@ function bidBubbleText(bid: Bid): string {
   if (bid.type === "pass") return "Passe";
   if (bid.type === "coinche") return "Coinche !";
   if (bid.type === "surcoinche") return "Surcoinche !";
-  const val = bid.value === CAPOT_VALUE ? "Capot" : bid.value === GENERALE_VALUE ? "Générale" : String(bid.value);
-  return `${val}${bid.suit ? ` ${trumpModeLabel(bid.suit)}` : ""}`;
+  return formatBidLabel(bid);
 }
 
 function bubbleColors(bid: Bid): { bg: string; color: string } {
@@ -117,6 +117,7 @@ export function GameTableScene({
           <SideOpponent gv={gv} view={view} seat={seats.right} side="right" reaction={reactions?.get(seats.right)} />
         </>
       )}
+      {view.phase === "bidding" && view.turnedCard && <BeloteTurnedCard card={view.turnedCard} />}
       <PlayedCardStage seats={seats} trickBySeat={trickBySeat} />
       {lastTrickBySeat && lastTrickKey && (
         <CompletedTrickHold key={lastTrickKey} seats={seats} trickBySeat={lastTrickBySeat} winner={lastTrickWinner} />

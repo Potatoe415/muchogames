@@ -30,6 +30,7 @@ import type { Card } from "@/lib/coinche";
 import type { Card as BouillaCard } from "@/lib/bouilla";
 import type { Card as PresidentCard, Combo } from "@/lib/president";
 import { createClient } from "@/lib/supabase/client";
+import { usesCoincheEngine } from "@/lib/supabase/types";
 import { Lobby } from "./Lobby";
 import { GameTable, type GameActions, type CoincheGameView } from "./GameTable";
 import { BouillaTable, type BouillaActions, type BouillaGameView } from "./BouillaTable";
@@ -233,7 +234,7 @@ export function GameRoom({ gameId }: { gameId: string }) {
   return (
     <>
       {stillThere.show && <StillThereModal secondsLeft={stillThere.secondsLeft} />}
-      {view.gameType !== "coinche" && debugMode && <BotDebugOverlay log={botDebugLog} />}
+      {!usesCoincheEngine(view.gameType) && debugMode && <BotDebugOverlay log={botDebugLog} />}
       {view.gameType === "bouilla" ? (
         <BouillaTable gv={view as BouillaGameView} actions={bouillaActions} reactions={reactions} selfAvatar={selfAvatar} />
       ) : view.gameType === "president" ? (

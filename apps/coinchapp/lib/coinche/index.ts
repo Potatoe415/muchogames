@@ -2,6 +2,8 @@ export * from "./types";
 export * from "./cards";
 export { shuffle, dealHands, createInitialState, beginNextDeal, DEFAULT_SCORING_RULES, type Rng } from "./deal";
 export { applyBid, bidOptions, validateBid, BID_VALUES, CAPOT_VALUE, GENERALE_VALUE, TRUMP_MODES, type BidOptions } from "./bidding";
+export { applyBeloteBid, beloteBidOptions, BELOTE_CONTRACT_VALUE } from "./belote";
+export { chooseBeloteBid, decideBeloteTake, BELOTE_TAKE_THRESHOLD } from "./belote-bot";
 export { legalCards, isLegalPlay, applyPlay, trickWinner } from "./trick";
 export { computeDealResult, finalizeDeal, detectBelote, computeBelote } from "./scoring";
 export { submitBid, submitPlay, startNextDeal } from "./engine";

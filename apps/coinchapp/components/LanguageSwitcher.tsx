@@ -17,6 +17,7 @@ export function LanguageSwitcher() {
     pathname === "/bouilla" ||
     pathname === "/president" ||
     pathname === "/coinche" ||
+    pathname === "/belote" ||
     pathname === "/bataillecorse";
 
   if (isInStartedGame || hasOwnLanguageSwitch) return null;

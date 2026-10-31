@@ -4,9 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/lib/client/i18n";
 import { matchFromView } from "@/lib/client/matchCoin";
 import { useOptimisticPlay } from "@/lib/client/useOptimisticPlay";
-import { CAPOT_VALUE, cardId, GENERALE_VALUE, isTrump, RANKS, teamOf, trumpStrength, type Bid, type Card, type PlayerView, type TrumpMode } from "@/lib/coinche";
+import { cardId, isTrump, RANKS, teamOf, trumpStrength, type Bid, type Card, type PlayerView, type TrumpMode } from "@/lib/coinche";
 import type { GameView } from "@/lib/server/view";
 import { CssVarProbe, useCssVarPx } from "@/lib/client/useCssVarPx";
+import { BeloteBiddingPanel } from "./BeloteBiddingPanel";
 import { BiddingPanel, type BidPayload, type CurrentLiveBid } from "./BiddingPanel";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import { EmojiButton } from "./EmojiButton";
@@ -14,7 +15,7 @@ import { GameHud } from "./GameHud";
 import { GameTableScene } from "./GameTableScene";
 import { playerName, relativeSeat } from "./gameTableHelpers";
 import { HandCardSlot } from "./HandCardSlot";
-import { isRedSuit, trumpModeLabel } from "./labels";
+import { formatBidLabel, isRedSuit, trumpModeLabel } from "./labels";
 import { SelfNameChip } from "./SelfNameChip";
 import { TableShell } from "./TableShell";
 
@@ -352,6 +353,14 @@ function BiddingStatus({
   const { locale } = useI18n();
   if (view.phase !== "bidding") return null;
   if (!view.bidOptions) return null;
+  if (view.variant === "belote" && view.turnedCard) {
+    return (
+      <div className="mx-3 mb-2 rounded-2xl bg-[var(--surface-overlay)] p-3 shadow-xl" data-id="bidding-status-panel">
+        <BidHistory bids={view.bids} players={players} mySeat={mySeat} />
+        <BeloteBiddingPanel options={view.bidOptions} turnedCard={view.turnedCard} onBid={onBid} />
+      </div>
+    );
+  }
   const derived = deriveLiveBid(view.bids);
   const currentLiveBid: CurrentLiveBid | null = derived
     ? {
@@ -402,8 +411,7 @@ function BidHistory({
           labelClass = "text-[var(--card-face)]/40";
         } else if (bid.type === "bid") {
           const isRed = bid.suit === "H" || bid.suit === "D";
-          const val = bid.value === CAPOT_VALUE ? "Capot" : bid.value === GENERALE_VALUE ? "Générale" : String(bid.value);
-          label = `${val}${bid.suit ? ` ${trumpModeLabel(bid.suit, locale)}` : ""}`;
+          label = formatBidLabel(bid, locale);
           labelClass = `font-bold ${isRed ? "text-[var(--accent-red)]" : "text-[var(--card-face)]"}`;
         } else if (bid.type === "coinche") {
           label = "Coinche";

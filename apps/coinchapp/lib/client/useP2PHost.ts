@@ -11,6 +11,7 @@ import {
   type Card,
   type GameState,
   type Seat,
+  type Variant,
 } from "@/lib/coinche";
 import type { GameActions } from "@/components/GameTable";
 import type { GameView } from "@/lib/server/view";
@@ -37,6 +38,8 @@ export interface P2PHostConfig {
   connections: Map<Seat, P2PConnection>;
   settings: GameSettings;
   seed: number;
+  /** Belote runs on this same Coinche host. Defaults to "coinche". */
+  variant?: Variant;
 }
 
 /**
@@ -51,7 +54,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
   const matchId = `adhoc-${seed}`;
   const [state, setState] = useState<GameState>(() =>
     beginNextDeal(
-      createInitialState(settings.targetPoints ?? 1000, scoringFromSettings(settings)),
+      createInitialState(settings.targetPoints ?? 1000, scoringFromSettings(settings), config.variant),
       seededRng(seed),
     ),
   );

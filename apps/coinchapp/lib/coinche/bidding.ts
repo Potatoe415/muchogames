@@ -1,3 +1,4 @@
+import { applyBeloteBid, beloteBidOptions } from "./belote";
 import { nextSeat, partnerOf, teamOf } from "./cards";
 import { computeBelote } from "./scoring";
 import type { Bid, Contract, GameState, TrumpMode } from "./types";
@@ -99,6 +100,7 @@ function completeBidding(state: GameState, bids: Bid[], d: Derived): GameState {
 
 /** Validate and apply a bid, advancing the turn or resolving the auction. */
 export function applyBid(state: GameState, bid: Bid): GameState {
+  if (state.variant === "belote") return applyBeloteBid(state, bid);
   validateBid(state, bid);
   const bids = [...state.bids, bid];
   const d = derive(bids);
@@ -139,6 +141,7 @@ export interface BidOptions {
 
 /** Summary of legal bidding actions for the seat whose turn it is. */
 export function bidOptions(state: GameState): BidOptions {
+  if (state.variant === "belote") return beloteBidOptions(state);
   if (state.phase !== "bidding") {
     return { canPass: false, minValue: null, suits: [], canCoinche: false, canSurcoinche: false };
   }

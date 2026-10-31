@@ -1,6 +1,7 @@
 import { shuffle, type Rng } from "@/lib/cards";
+import { dealBeloteOpening } from "./belote";
 import { buildDeck, nextSeat } from "./cards";
-import type { Card, GameState, ScoringRules } from "./types";
+import type { Card, GameState, ScoringRules, Variant } from "./types";
 
 export type { Rng } from "@/lib/cards";
 export { shuffle };
@@ -29,8 +30,13 @@ export function dealHands(deck: Card[]): Card[][] {
   return hands;
 }
 
-export function createInitialState(targetPoints: number, scoringRules: Partial<ScoringRules> = {}): GameState {
+export function createInitialState(
+  targetPoints: number,
+  scoringRules: Partial<ScoringRules> = {},
+  variant: Variant = "coinche",
+): GameState {
   return {
+    ...(variant === "belote" ? { variant } : {}),
     phase: "lobby",
     dealer: 3,
     turn: 0,
@@ -49,12 +55,13 @@ export function createInitialState(targetPoints: number, scoringRules: Partial<S
   };
 }
 
-/** Rotate the dealer, deal a fresh hand and open the bidding phase. */
+/** Rotate the dealer, deal a fresh hand and open the bidding phase.
+ *  Belote deals 5 cards each plus a face-up card instead of the full 8. */
 export function beginNextDeal(state: GameState, rng: Rng = Math.random): GameState {
   const dealer = nextSeat(state.dealer);
   const opener = nextSeat(dealer);
-  const hands = dealHands(shuffle(buildDeck(), rng));
-  return {
+  const deck = shuffle(buildDeck(), rng);
+  const next: GameState = {
     ...state,
     phase: "bidding",
     dealer,
@@ -62,10 +69,12 @@ export function beginNextDeal(state: GameState, rng: Rng = Math.random): GameSta
     trump: null,
     contract: null,
     bids: [],
-    hands,
+    hands: [],
     currentTrick: { leader: opener, cards: [] },
     tricks: [],
     belote: { team: null, points: { A: 0, B: 0 }, announced: [] },
     lastDeal: undefined,
   };
+  if (state.variant === "belote") return { ...next, ...dealBeloteOpening(deck) };
+  return { ...next, hands: dealHands(deck) };
 }

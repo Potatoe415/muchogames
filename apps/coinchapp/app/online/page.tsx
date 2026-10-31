@@ -26,10 +26,19 @@ function OnlinePageInner() {
   const router = useRouter();
   const { locale, t } = useI18n();
   const game = useSearchParams().get("game");
+  const isBelote = game === "belote";
   const isBouilla = game === "bouilla";
   const isPresident = game === "president";
   const isBataillecorse = game === "bataillecorse";
-  const gameType: GameType = isBouilla ? "bouilla" : isPresident ? "president" : isBataillecorse ? "bataillecorse" : "coinche";
+  const gameType: GameType = isBelote
+    ? "belote"
+    : isBouilla
+    ? "bouilla"
+    : isPresident
+    ? "president"
+    : isBataillecorse
+    ? "bataillecorse"
+    : "coinche";
   const [name, setName] = useHubPrefillName();
   const [setup, setSetup] = useState<GameSetupValues>(() =>
     isBataillecorse ? DEFAULT_BATAILLECORSE_GAME_SETUP : DEFAULT_GAME_SETUP,
@@ -93,7 +102,9 @@ function OnlinePageInner() {
 
       <header className="text-center">
         <h1 className="text-3xl font-black tracking-tight text-[var(--surface)]" data-id="online-title">
-          {isBouilla
+          {isBelote
+            ? t("beloteOnlineTitle")
+            : isBouilla
             ? t("bouillaOnlineTitle")
             : isPresident
             ? t("presidentOnlineTitle")
@@ -102,7 +113,9 @@ function OnlinePageInner() {
             : t("playOnline")}
         </h1>
         <p className="text-sm text-[var(--foreground)]/75">
-          {isBouilla
+          {isBelote
+            ? t("beloteOnlineSubtitle")
+            : isBouilla
             ? t("bouillaOnlineSubtitle")
             : isPresident
             ? t("presidentOnlineSubtitle")
@@ -144,7 +157,14 @@ function OnlinePageInner() {
                 displayName: name,
                 locale,
                 gameType,
-                settings: isBouilla
+                settings: isBelote
+                  ? {
+                      targetPoints: setup.target,
+                      botPunch: setup.botPunch,
+                      stillThereTimeoutSec: setup.stillThereTimeoutSec,
+                      botThinkMs: setup.botThinkMs,
+                    }
+                  : isBouilla
                   ? { stillThereTimeoutSec: setup.stillThereTimeoutSec, botThinkMs: setup.botThinkMs }
                   : isBataillecorse
                   ? {
@@ -227,7 +247,8 @@ function OnlinePageInner() {
         onChange={setSetup}
         idPrefix="online"
         title={t("gameSettings")}
-        coincheFields={!isBouilla && !isPresident && !isBataillecorse}
+        coincheFields={!isBelote && !isBouilla && !isPresident && !isBataillecorse}
+        beloteFields={isBelote}
         presidentFields={isPresident}
         bataillecorseFields={isBataillecorse}
         showStillThereTimeout

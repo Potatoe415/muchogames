@@ -80,6 +80,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0072 | 2026-10-23 | Fifth game: Solitaire (Klondike), solo and local only | Accepted |
 | 0073 | 2026-10-23 | Solitaire: no auto-move; tap then tap, or drag and drop | Accepted |
 | 0074 | 2026-10-24 | Solitaire: a tapped Ace goes straight to its foundation | Accepted |
+| 0075 | 2026-10-31 | Sixth game: Belote, as a variant of the Coinche engine | Accepted |
 
 ## When to log a decision
 Any of:

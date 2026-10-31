@@ -174,7 +174,16 @@ function baseTemplate(view: PlayerView): GameState {
     scores: view.scores,
     targetPoints: view.targetPoints,
     scoringRules: DEFAULT_SCORING_RULES,
+    variant: view.variant,
   };
+}
+
+/** Belote: the turned card went to the taker, so while unplayed it is known to sit there. */
+function knownTakerCard(view: PlayerView, pool: Card[]): { seat: Seat; card: Card } | null {
+  const turned = view.turnedCard;
+  if (!turned || !view.contract || view.contract.seat === view.mySeat) return null;
+  const card = pool.find((c) => cardId(c) === cardId(turned));
+  return card ? { seat: view.contract.seat, card } : null;
 }
 
 export interface Determinizer {
@@ -185,10 +194,12 @@ export interface Determinizer {
 /** Builds a reusable determinizer; shared, read-only structures are never mutated. */
 export function buildDeterminizer(view: PlayerView, rng: () => number): Determinizer {
   if (!view.contract) throw new Error("missing_contract");
-  const pool = unseenPool(view);
+  const unseen = unseenPool(view);
+  const known = knownTakerCard(view, unseen);
+  const pool = known ? unseen.filter((c) => c !== known.card) : unseen;
   const mySeat = view.mySeat;
   const others = ([0, 1, 2, 3] as Seat[]).filter((s) => s !== mySeat);
-  const counts = others.map((s) => view.handCounts[s]);
+  const counts = others.map((s) => view.handCounts[s] - (known?.seat === s ? 1 : 0));
   const total = counts.reduce((sum, n) => sum + n, 0);
   if (total !== pool.length) throw new Error("determinization_mismatch");
   const seatVoids = others.map((s) => inferVoids(view)[s]);
@@ -203,6 +214,7 @@ export function buildDeterminizer(view: PlayerView, rng: () => number): Determin
       others.forEach((seat, i) => {
         hands[seat] = dealt[i];
       });
+      if (known) hands[known.seat].push(known.card);
       const located = locateBelote(hands, view.tricks, view.trump);
       const belote = { ...located, announced: [] as ("belote" | "rebelote")[] };
       return { ...template, hands, belote };

@@ -85,3 +85,16 @@ describe("determinizer void tracking", () => {
     }
   });
 });
+
+describe("determinizer belote turned card", () => {
+  it("always deals the unplayed turned card to the taker", () => {
+    const view: PlayerView = { ...viewWithClubVoidOnSeat1(), variant: "belote", turnedCard: card("H", "J") };
+    const determinizer = buildDeterminizer(view, makeRng(3));
+    for (let i = 0; i < 200; i++) {
+      const world = determinizer.next();
+      expect(world.hands[1]).toContainEqual(card("H", "J"));
+      expect(world.hands.map((h) => h.length)).toEqual([7, 7, 7, 7]);
+      expect(world.variant).toBe("belote");
+    }
+  });
+});

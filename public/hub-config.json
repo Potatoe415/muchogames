@@ -256,6 +256,17 @@
     "source": "apps/coinchapp"
   },
   {
+    "id": "belote",
+    "title": "Belote",
+    "kind": "external",
+    "category": "cartesdes",
+    "added": "2026-10-31",
+    "launch": "https://coinchapp.vercel.app/belote",
+    "sameTab": true,
+    "players": [1, 4],
+    "source": "apps/coinchapp"
+  },
+  {
     "id": "bouilla",
     "title": "Bouilla",
     "kind": "external",

@@ -12,6 +12,7 @@ import type {
   Team,
   Trick,
   TrumpMode,
+  Variant,
 } from "./types";
 
 /** What a single seat is allowed to see. Never includes other players' hands. */
@@ -41,6 +42,10 @@ export interface PlayerView {
   winner: Team | null;
   /** Belote/Rebelote announcements made so far this deal. */
   beloteAnnounced: ("belote" | "rebelote")[];
+  /** Absent in views built before belote existed: read as "coinche". */
+  variant?: Variant;
+  /** Belote only: the face-up card (offered during bidding, then in the taker's hand). */
+  turnedCard?: Card | null;
 }
 
 function tricksWon(state: GameState): { A: number; B: number } {
@@ -76,5 +81,7 @@ export function redact(state: GameState, seat: Seat): PlayerView {
     lastDeal: state.lastDeal ?? null,
     winner: state.winner ?? null,
     beloteAnnounced: state.belote.announced,
+    variant: state.variant ?? "coinche",
+    turnedCard: state.turnedCard ?? null,
   };
 }

@@ -54,7 +54,13 @@ async function resetBrowserData() {
 interface GameTile {
   game: CoinchappGame;
   href: string;
-  titleKey: "gameTabCoinche" | "gameTabBouilla" | "gameTabPresident" | "gameTabBataillecorse" | "gameTabSolitaire";
+  titleKey:
+    | "gameTabCoinche"
+    | "gameTabBelote"
+    | "gameTabBouilla"
+    | "gameTabPresident"
+    | "gameTabBataillecorse"
+    | "gameTabSolitaire";
   accent: string;
   /** Same art as that game's own splash screen (`app/<game>/page.tsx`), so the
    *  tile previews what's behind it. Tiles with no custom splash art (e.g. la
@@ -64,6 +70,7 @@ interface GameTile {
 
 const TILES: GameTile[] = [
   { game: "coinche", href: "/coinche", image: "/splashscreen.jpg", titleKey: "gameTabCoinche", accent: "var(--accent-yellow)" },
+  { game: "belote", href: "/belote", titleKey: "gameTabBelote", accent: "var(--accent-yellow)" },
   { game: "bouilla", href: "/bouilla", image: "/bouilla-full.jpg", titleKey: "gameTabBouilla", accent: "var(--accent-cyan)" },
   { game: "president", href: "/president", image: "/president-full.jpg", titleKey: "gameTabPresident", accent: "var(--accent-green)" },
   { game: "bataillecorse", href: "/bataillecorse", image: "/bataillecorse-full.jpg", titleKey: "gameTabBataillecorse", accent: "var(--accent-red)" },

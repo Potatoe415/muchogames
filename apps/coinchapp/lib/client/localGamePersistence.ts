@@ -2,12 +2,20 @@
  *  reload or app restart resumes it instead of losing it. Shared by Coinche's
  *  and Bouilla's local-game hooks. */
 
+import type { Variant } from "@/lib/coinche";
+
 export const LOCAL_COINCHE_STORAGE_KEY = "coinchapp:local-coinche:v1";
+export const LOCAL_BELOTE_STORAGE_KEY = "coinchapp:local-belote:v1";
 export const LOCAL_BOUILLA_STORAGE_KEY = "coinchapp:local-bouilla:v1";
 export const LOCAL_PRESIDENT_STORAGE_KEY = "coinchapp:local-president:v1";
 export const LOCAL_BATAILLECORSE_STORAGE_KEY = "coinchapp:local-bataillecorse:v1";
 export const LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY = "coinchapp:local-bataillecorse-duel:v1";
 export const LOCAL_SOLITAIRE_STORAGE_KEY = "coinchapp:local-solitaire:v1";
+
+/** Coinche and Belote share one engine, but each keeps its own saved match. */
+export function localCoincheStorageKey(variant: Variant): string {
+  return variant === "belote" ? LOCAL_BELOTE_STORAGE_KEY : LOCAL_COINCHE_STORAGE_KEY;
+}
 
 type PersistablePhaseState = { phase: string };
 
