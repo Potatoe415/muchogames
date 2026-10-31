@@ -128,7 +128,7 @@ function resolveHits(game, wall) {
 }
 
 function capture(game, wall, ray) {
-  const { state, audio, effects } = game;
+  const { state, audio } = game;
   const { grid } = state;
   const before = grid.solid;
   solidify(grid, ray.cells);
@@ -143,14 +143,16 @@ function capture(game, wall, ray) {
     game.vibrate(VIBRATE.fill);
   }
   state.percent = conqueredPercent(grid);
-  game.onChange();
   const gained = grid.solid - before;
-  if (!gained) return;
-  const rect = rayRect(wall, ray);
+  if (gained) scoreCapture(game, rayRect(wall, ray), gained);
+  game.onChange();
+}
+
+function scoreCapture(game, rect, gained) {
   const cx = (rect.x0 + rect.x1) / 2;
   const cy = (rect.y0 + rect.y1) / 2;
-  effects.ring(cx, cy, COLORS.fill);
-  addScore(game, scaled(state.config, gained * POINTS.cell), cx, cy);
+  game.effects.ring(cx, cy, COLORS.fill);
+  addScore(game, scaled(game.state.config, gained * POINTS.cell), cx, cy);
 }
 
 function levelCleared(game) {
