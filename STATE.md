@@ -13,7 +13,7 @@ Context:
 - Relevant_Decisions: 0054, 0053, 0051
 
 Next:
-- Owner: play Échecs on iPhone and Android (glyphs must show as text, not emoji), the 4 levels, castling, promotion, "Reprendre".
+- Owner: play Échecs on iPhone and Android (painted pieces readable on small squares?), the 4 levels, castling, promotion, "Reprendre".
 - Owner: play Memory solo, judge the points weights (`public/games/memory/points.js`).
 - Owner phone check of resume in every game, then Memory and Yatzy online on two phones (away banner, "Reprendre en ligne") — see `docs/BACKLOG.md` Now.
 - Owner: options sheet bottom clears the phone navigation bar.
@@ -25,7 +25,7 @@ Next:
 Open_Questions:
 - Yatzy online end-of-game crash (pre-existing, one-line fix in `docs/BACKLOG.md`): fix now?
 - Git stash `wip-memory-aside` (another session, 2026-10-29) is still there; owner to keep or drop.
-- Bridge and Échecs thumbnails are hand-made SVGs; swap for illustrated images if wanted.
+- Bridge thumbnail is a hand-made SVG; swap for an illustrated image if wanted.
 - `.prettierignore` yatsy re-include would reformat it — owner call.
 - SkiFree, Chip's Challenge and Space Cadet assets are copyrighted; Memory's Miraculous, Ghibli and Pat' Patrouille themes are AI art of licensed characters.
 
@@ -33,6 +33,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-31 Échecs: painted AI pieces + tile (`scripts/chess_slice.py`) replace the Unicode glyphs.
 - 2026-10-31 Échecs: new game, rules verified by perft on 5 reference positions, AI in a worker (expert = 1.5 s iterative deepening).
 - 2026-10-31 Memory solo: clock (starts on first flip, pauses when hidden) and points, forgotten-twin penalty.
 - 2026-10-31 Resume lot 4: Memory, Yatzy, SkiFree, Space Cadet rules collapsed.

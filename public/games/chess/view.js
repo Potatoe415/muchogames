@@ -13,23 +13,16 @@ import {
 const REDUCED = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 const MOVE_MS = REDUCED ? 60 : 220;
 const FADE_MS = 260;
-const TEXT = "\uFE0E";
-// Filled glyphs (black pieces, and the white pieces' fill) and outlines
-// (white pieces), indexed by piece type.
-export const FILLED = ["", "♟", "♞", "♝", "♜", "♛", "♚"].map((g) => g + TEXT);
-const OUTLINE = ["", "♙", "♘", "♗", "♖", "♕", "♔"].map((g) => g + TEXT);
 const PIECE_NAMES = ["", "Pawn", "Knight", "Bishop", "Rook", "Queen", "King"];
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// White pieces draw the outline glyph over a white fill (CSS ::before reads
-// data-glyph); black pieces are the filled glyph.
-export function paintGlyph(el, piece) {
+// pieces.css maps data-piece ("white-king") to its image in pieces/.
+export function paintPiece(el, piece) {
   const white = sideOf(piece) > 0;
   el.classList.toggle("is-white", white);
   el.classList.toggle("is-black", !white);
-  el.dataset.glyph = FILLED[typeOf(piece)];
-  el.textContent = (white ? OUTLINE : FILLED)[typeOf(piece)];
+  el.dataset.piece = `${white ? "white" : "black"}-${PIECE_NAMES[typeOf(piece)].toLowerCase()}`;
 }
 
 const MARKS = ["selected", "target", "capture", "last", "hint", "check"];
@@ -122,7 +115,7 @@ export function createView({ host, flipped, t }) {
       el.style.transform = "";
       el.classList.remove("is-dragging", "is-moving");
       place(el, sq);
-      paintGlyph(el, piece);
+      paintPiece(el, piece);
     });
     relabel();
   }
