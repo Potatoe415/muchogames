@@ -45,7 +45,6 @@ function closeLater(box) {
 }
 
 function afterClose(box) {
-  checkpoint(box);
   if (box.state.phase === "BOT") arm(box, BOT_FIRST_MS, () => botFirst(box));
 }
 
@@ -55,7 +54,6 @@ function oneOpen(box, action) {
 
 function matched(box) {
   playMatch();
-  checkpoint(box);
   if (box.state.phase === "GAME_OVER") {
     playWin();
     return;
@@ -83,6 +81,7 @@ function commit(box, action) {
   // Published before onUpdate: a final move must be queued before the end of
   // the match leaves the room.
   box.online?.publish(next);
+  checkpoint(box);
   box.onUpdate(box.state);
   follow(box, action);
 }
@@ -101,8 +100,14 @@ function echo(before, after) {
   if (after.phase === "GAME_OVER" && before.phase !== "GAME_OVER") playWin();
 }
 
+// A save taken between the robot's two flips resumes on its second flip.
 function laterBot(box) {
-  if (box.state.phase === "BOT") arm(box, BOT_FIRST_MS, () => botFirst(box));
+  if (box.state.phase !== "BOT") return;
+  const [first] = box.state.openIds;
+  if (!first) return arm(box, BOT_FIRST_MS, () => botFirst(box));
+  const smart = rollSmart(box.state.config.difficulty);
+  box.plan = { first, second: null, smart };
+  arm(box, BOT_SECOND_MS, () => botSecond(box));
 }
 
 export function createMatch({ config, cards, saved, onUpdate, online }) {
@@ -115,10 +120,14 @@ export function createMatch({ config, cards, saved, onUpdate, online }) {
     onUpdate,
     online: online ?? null
   };
+  checkpoint(box);
   onUpdate(box.state);
   laterBot(box);
   closeLater(box);
   return {
+    save() {
+      if (box.alive) checkpoint(box);
+    },
     flip(instanceId) {
       const seat = box.online?.seat;
       commit(box, { type: "FLIP", instanceId, bot: false, seat });

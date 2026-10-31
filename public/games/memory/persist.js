@@ -42,6 +42,7 @@ function pack(state) {
     scores: state.scores,
     active: state.active,
     known: state.known,
+    openIds: state.openIds,
     phase: state.phase
   };
 }
@@ -116,7 +117,8 @@ function readKnown(list, cards) {
   return known;
 }
 
-function restingPhase(config, active) {
+function phaseFor(config, active, openIds) {
+  if (openIds.length === 2) return "EVALUATING";
   if (config.mode === "bot" && active === 1) return "BOT";
   return "TURN";
 }
@@ -134,9 +136,22 @@ function configOk(raw, spec) {
   return Array.isArray(raw.cards) && raw.cards.length === spec.cols * spec.rows;
 }
 
-function settle(cards, scores) {
+// A save from before `openIds` was stored has none: its open cards close.
+function readOpen(list, cards) {
+  if (list === undefined) return [];
+  if (!Array.isArray(list) || list.length > 2) return null;
+  if (new Set(list).size !== list.length) return null;
+  const open = list.map((id) => cards.find((card) => card.instanceId === id));
+  if (open.some((card) => card?.status !== "FLIPPED")) return null;
+  if (open.length === 2 && open[0].pairId === open[1].pairId) return null;
+  return list.slice();
+}
+
+function settle(cards, scores, openIds) {
   const settled = cards.map((card) =>
-    card.status === "MATCHED" ? card : { ...card, status: "IDLE" }
+    card.status !== "FLIPPED" || openIds.includes(card.instanceId)
+      ? card
+      : { ...card, status: "IDLE" }
   );
   const found = settled.filter((card) => card.status === "MATCHED").length / 2;
   if (found !== scores[0] + scores[1] || found === settled.length / 2) {
@@ -158,14 +173,15 @@ function normalize(raw) {
   const scores = readScores(raw.scores);
   const known = readKnown(raw.known, cards);
   if (!scores || !known || (raw.active !== 0 && raw.active !== 1)) return null;
-  const settled = settle(cards, scores);
+  const openIds = readOpen(raw.openIds, cards);
+  const settled = openIds && settle(cards, scores, openIds);
   if (!settled) return null;
   const active = raw.config.mode === "solo" ? 0 : raw.active;
   return {
-    phase: restingPhase(raw.config, active),
+    phase: phaseFor(raw.config, active, openIds),
     config: readConfig(raw.config, spec),
     cards: settled,
-    openIds: [],
+    openIds,
     scores,
     active,
     known,

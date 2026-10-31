@@ -4,10 +4,12 @@ import { mountDebug } from "./debug.js";
 import { buildDeck } from "./deck.js";
 import { BACKS, THEME_IDS, deckUrls } from "./faces.js";
 import { createMatch } from "./game.js";
-import { LANGS, translate } from "./i18n.js";
-import { createOnline, idleOnline } from "./online.js";
-import { clearSave, loadSave } from "./persist.js";
+import { translate } from "./i18n.js";
+import { idleOnline } from "./online-seat.js";
+import { createOnline } from "./online.js";
+import { loadSave } from "./persist.js";
 import { mountPickers } from "./pickers.js";
+import { readLang, readMuted, storeLang, storeMuted } from "./prefs.js";
 import { preload } from "./preload.js";
 import {
   applyLanguage,
@@ -21,8 +23,6 @@ import { setMuted, unlock } from "./sound.js";
 import { placeBars, watchViewport } from "./viewport.js";
 
 const GAME_ID = "memory";
-const LANG_KEY = "bergamots-lang";
-const MUTE_KEY = "muchogames_memory_mute";
 const VIEWS = ["setup", "wait", "play"];
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
@@ -41,26 +41,10 @@ const page = {
   ended: false,
   starting: false,
   online: idleOnline(),
+  resume: { saved: false, code: "" },
   seat: 0,
   names: ["", ""]
 };
-
-function store(key, value) {
-  try {
-    localStorage.setItem(key, value);
-  } catch {
-    // Storage unavailable.
-  }
-}
-
-function readLang() {
-  try {
-    const value = localStorage.getItem(LANG_KEY);
-    return LANGS.includes(value) ? value : "fr";
-  } catch {
-    return "fr";
-  }
-}
 
 function showChrome(playing) {
   $("game-back-button").hidden = playing;
@@ -69,16 +53,18 @@ function showChrome(playing) {
     !playing || page.state?.config.mode === "online";
 }
 
+function paintRoom() {
+  page.resume = { saved: Boolean(loadSave()), code: online.storedCode() };
+  paintSetup(page);
+  paintWait(page);
+}
+
 function show(view) {
   showChrome(view === "play");
   VIEWS.forEach((name) => {
     $(`memory-${name}`).hidden = name !== view;
   });
-}
-
-function paintRoom() {
-  paintSetup(page);
-  paintWait(page);
+  if (view !== "play") paintRoom();
 }
 
 function onUpdate(state) {
@@ -102,29 +88,32 @@ function destroyMatch() {
   delete board.dataset.deck;
 }
 
-function finishMatch() {
+// Replacing or losing the match: it is no longer in progress, the local save
+// stays until a new match overwrites it.
+function dropMatch() {
   destroyMatch();
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
-  clearSave();
 }
 
-function backToSetup() {
-  finishMatch();
+function closedRoom() {
+  dropMatch();
   show("setup");
-  paintRoom();
 }
 
+// Quitting is not an end: the save and the online seat stay for "Reprendre".
 function toSetup() {
-  void online.leave();
-  backToSetup();
+  void online.away();
+  destroyMatch();
+  show("setup");
 }
 
 const online = createOnline({
   page,
   paint: paintRoom,
+  repaint: () => paintPlay(page),
   show,
   text: (key) => translate(page.lang, key),
-  exit: backToSetup,
+  exit: closedRoom,
   enter(state) {
     destroyMatch();
     page.match = createMatch({
@@ -138,7 +127,7 @@ const online = createOnline({
 
 async function startFresh() {
   if (page.starting) return;
-  finishMatch();
+  dropMatch();
   if (page.setup.mode === "online") {
     await online.leave();
     void online.create();
@@ -163,7 +152,6 @@ async function startFresh() {
 function choose(group, value) {
   page.setup[group] = value;
   page.online.error = "";
-  clearSave();
   paintSetup(page);
 }
 
@@ -171,7 +159,7 @@ function toggleMute() {
   unlock();
   page.muted = !page.muted;
   setMuted(page.muted);
-  store(MUTE_KEY, page.muted ? "1" : "0");
+  storeMuted(page.muted);
   paintMute(page);
 }
 
@@ -209,6 +197,10 @@ function bindOnline() {
   });
   $("memory-share-button").addEventListener("click", () => void online.share());
   $("memory-cancel-button").addEventListener("click", toSetup);
+  $("memory-resume-online-button").addEventListener("click", () => {
+    unlock();
+    online.resume();
+  });
 }
 
 function bindPlay() {
@@ -216,6 +208,7 @@ function bindPlay() {
     unlock();
     void startFresh();
   });
+  $("memory-resume-button").addEventListener("click", resumeLocal);
   $("memory-new-button").addEventListener("click", () => void startFresh());
   $("memory-replay-button").addEventListener("click", () => void startFresh());
   $("memory-setup-button").addEventListener("click", toSetup);
@@ -237,13 +230,14 @@ function bindPage() {
   document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => {
       page.lang = button.dataset.lang;
-      store(LANG_KEY, page.lang);
+      storeLang(page.lang);
       applyLanguage(page);
     });
   });
   bindChoices();
   bindOnline();
   bindPlay();
+  bindLifecycle();
   watchViewport();
   document.addEventListener("click", (event) => {
     const stay = event.target.closest?.("[data-answer='no']");
@@ -253,37 +247,48 @@ function bindPage() {
   document.addEventListener("pointerdown", () => unlock(), { capture: true });
 }
 
-function restore(saved) {
-  page.setup = {
-    mode: saved.config.mode,
-    difficulty: saved.config.difficulty,
-    grid: saved.config.grid,
-    theme: saved.config.theme,
-    back: saved.config.back
-  };
+function resumeLocal() {
+  const saved = page.starting ? null : loadSave();
+  if (!saved) return show("setup");
+  unlock();
+  const { mode, difficulty, grid, theme, back } = saved.config;
+  page.setup = { mode, difficulty, grid, theme, back };
   void preload(deckUrls(saved.config, saved.cards));
   window.MuchogamesMatch.resume(GAME_ID);
   page.match = createMatch({ saved, onUpdate });
   show("play");
 }
 
+// Some browsers report the page visible again while it unloads: once hidden
+// for good, only a back-forward cache restore says the player is back.
+function bindLifecycle() {
+  let gone = false;
+  document.addEventListener("visibilitychange", () => {
+    page.match?.save();
+    if (!gone) online.presence(!document.hidden);
+  });
+  window.addEventListener("pagehide", () => {
+    gone = true;
+    page.match?.save();
+    online.presence(false);
+  });
+  window.addEventListener("pageshow", (event) => {
+    if (!event.persisted) return;
+    gone = false;
+    online.presence(true);
+  });
+}
+
 function boot() {
   page.lang = readLang();
-  try {
-    page.muted = localStorage.getItem(MUTE_KEY) === "1";
-  } catch {
-    page.muted = false;
-  }
+  page.muted = readMuted();
   setMuted(page.muted);
   mountChips(page.setup);
   mountPickers();
   bindPage();
   mountDebug(page);
   applyLanguage(page);
-  if (online.restore() || online.joinFromLink()) return;
-  const saved = loadSave();
-  if (saved) restore(saved);
-  else show("setup");
+  if (!online.joinFromLink()) show("setup");
 }
 
 boot();

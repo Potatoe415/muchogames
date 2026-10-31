@@ -25,7 +25,17 @@ function paintPickers(page) {
   });
 }
 
+function paintResume(page) {
+  const { saved, code } = page.resume;
+  $("memory-resume").hidden = !saved && !code;
+  $("memory-resume-button").hidden = !saved;
+  const online = $("memory-resume-online-button");
+  online.hidden = !code;
+  online.textContent = text(page, "resumeOnline", { code });
+}
+
 export function paintSetup(page) {
+  paintResume(page);
   paintPickers(page);
   MODES.forEach((mode) =>
     mark(`memory-mode-${mode}`, page.setup.mode === mode)
@@ -145,6 +155,11 @@ export function paintPlay(page) {
     theirs:
       state.config.mode === "online" && state.active !== mySeat(page, state)
   });
+  $("memory-away-banner").hidden = !(
+    state.config.mode === "online" &&
+    page.online.away &&
+    state.phase !== "GAME_OVER"
+  );
   paintMute(page);
   paintEnd(page);
 }

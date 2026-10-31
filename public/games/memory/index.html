@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="online.css" />
     <link rel="stylesheet" href="debug.css" />
   </head>
-  <body>
+  <body data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
@@ -174,10 +174,12 @@
               </button>
             </div>
           </div>
-          <div class="options-panel-section" data-id="game-options-rules">
-            <p class="options-panel-section-title" data-i18n="rules">Règles</p>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
             <div class="rules-modal-content" data-id="memory-rules"></div>
-          </div>
+          </details>
           <div class="options-panel-section" data-id="game-options-debug">
             <p class="options-panel-section-title" data-i18n="debug">Debug</p>
             <button
@@ -196,6 +198,23 @@
 
     <main class="memory-app" data-id="memory-app">
       <section class="memory-setup" data-id="memory-setup">
+        <div class="memory-resume" data-id="memory-resume" hidden>
+          <button
+            type="button"
+            class="memory-start"
+            data-id="memory-resume-button"
+            data-i18n="resume"
+            hidden
+          >
+            Reprendre la partie
+          </button>
+          <button
+            type="button"
+            class="memory-start"
+            data-id="memory-resume-online-button"
+            hidden
+          ></button>
+        </div>
         <div class="memory-panel memory-setup-panel">
           <div class="memory-setup-column memory-setup-looks">
             <div
@@ -303,6 +322,13 @@
             <strong class="memory-score" data-id="memory-p2-score"></strong>
           </span>
         </div>
+        <p
+          class="memory-away"
+          data-id="memory-away-banner"
+          data-i18n="away"
+          role="status"
+          hidden
+        ></p>
         <div class="memory-stage" data-id="memory-stage">
           <div class="memory-board" data-id="memory-board"></div>
         </div>

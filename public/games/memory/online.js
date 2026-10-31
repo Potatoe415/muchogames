@@ -1,42 +1,33 @@
-import { NAME_MAX, ONLINE_SEAT_KEY } from "./config.js";
 import { buildDeck } from "./deck.js";
 import { deckUrls } from "./faces.js";
+import {
+  ERRORS,
+  forget,
+  idleOnline,
+  ownName,
+  readSeat,
+  seatProof,
+  storeSeat
+} from "./online-seat.js";
 import { preload } from "./preload.js";
 import { createState } from "./reducer.js";
-import { packWire, readWire } from "./wire.js";
+import { packWire, readWire, sameBoard } from "./wire.js";
 
 const ROOM = window.MuchogamesRoom;
 const GAME_ID = "memory";
 
-const ERRORS = {
-  "invalid-code": "errCode",
-  "game-not-found": "errMissing",
-  "game-expired": "errExpired",
-  expired: "errExpired",
-  "game-in-progress": "errFull",
-  "resume-denied": "errFull",
-  replaced: "errFull",
-  missing: "errClosed"
-};
-
-export function idleOnline(error = "") {
-  return { status: "idle", code: "", seat: null, error, note: "" };
-}
-
-function ownName() {
-  const name = window.PlayerProfile?.getName("") || "";
-  return name.trim().slice(0, NAME_MAX);
-}
-
-function forget() {
-  ROOM.clearSeat(ONLINE_SEAT_KEY);
-  ROOM.clearLinkedCode();
-}
-
 // Room lifecycle for the online mode: create / join / resume, the waiting
-// screen, the coin, and the board sync. `enter(state)` mounts the match,
-// `exit()` returns to the setup after the opponent left.
-export function createOnline({ page, paint, show, enter, exit, text }) {
+// screen, the coin, the board sync and the away notices. `enter(state)` mounts
+// the match, `exit()` returns to the setup after the room closed.
+export function createOnline({
+  page,
+  paint,
+  repaint,
+  show,
+  enter,
+  exit,
+  text
+}) {
   const client = ROOM?.create(GAME_ID);
   let charge = null;
   let building = false;
@@ -60,25 +51,44 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
     client.publish(page.online.code, () => packWire(state, names()));
   }
 
+  function notify(kind) {
+    if (page.online.status !== "playing" || !page.match || page.ended) return;
+    client.sendNotice({ kind, seat: page.online.seat });
+  }
+
+  function onNotice(payload) {
+    if (page.online.status !== "playing") return;
+    if (payload?.seat !== 1 - page.online.seat) return;
+    if (payload.kind !== "away" && payload.kind !== "back") return;
+    page.online.away = payload.kind === "away";
+    repaint();
+  }
+
   function adopt(data) {
     Object.assign(page.online, {
       code: data.code,
       seat: data.localPlayerIndex
     });
-    ROOM.writeSeat(ONLINE_SEAT_KEY, {
-      gameCode: data.code,
-      role: data.role,
-      resumeToken: data.resumeToken,
-      localPlayerIndex: data.localPlayerIndex
-    });
+    storeSeat(data);
     ROOM.setLinkedCode(data.code);
   }
 
+  // A failed join of another code keeps the seat stored for an earlier room.
   function fail(error) {
-    forget();
+    if (page.online.status === "idle") return;
+    if (readSeat()?.gameCode === page.online.code) forget();
+    else ROOM.clearLinkedCode();
     reset(ERRORS[error?.code] || "errGeneric");
     show("setup");
+  }
+
+  // Cancelled while the request was in flight: stop listening, keep the seat.
+  function cancelled(data) {
+    if (page.online.status !== "idle") return false;
+    if (data) storeSeat(data);
+    void client.leaveGame().catch(() => {});
     paint();
+    return true;
   }
 
   function freshState() {
@@ -99,6 +109,15 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
     if (fresh) publish(state);
     if (stash && client.pendingWrites() === 0) page.match?.apply(stash);
     stash = null;
+    notify("back");
+  }
+
+  function sync(remote) {
+    if (client.pendingWrites() > 0) return;
+    if (page.online.away && !sameBoard(page.state, remote)) {
+      page.online.away = false;
+    }
+    page.match.apply(remote);
   }
 
   function onBoard(record) {
@@ -118,10 +137,11 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
       paint();
       return;
     }
-    if (remote && client.pendingWrites() === 0) page.match.apply(remote.state);
+    if (remote) sync(remote.state);
   }
 
   async function onRecord(record) {
+    if (page.online.status === "idle") return;
     if (record.status === "waiting") {
       if (page.online.status !== "waiting") {
         page.online.status = "waiting";
@@ -135,7 +155,6 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
     if (!allowed) {
       await leave();
       show("setup");
-      paint();
       return;
     }
     onBoard(record);
@@ -150,16 +169,18 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
 
   const callbacks = () => ({
     stateChangeCallback: (record) => void onRecord(record),
-    gameClosedCallback: onClosed
+    gameClosedCallback: onClosed,
+    noticeReceivedCallback: onNotice
   });
 
   async function create() {
     if (!client || page.online.status !== "idle") return;
     Object.assign(page.online, { status: "creating", error: "", seat: 0 });
     show("wait");
-    paint();
     try {
-      adopt(await client.createGame(callbacks()));
+      const data = await client.createGame(callbacks());
+      if (cancelled()) return;
+      adopt(data);
       paint();
     } catch (error) {
       fail(error);
@@ -174,39 +195,41 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
       paint();
       return;
     }
-    const known = ROOM.readSeat(ONLINE_SEAT_KEY);
+    const known = readSeat();
     const seat = known?.gameCode === code ? known.localPlayerIndex : 1;
     Object.assign(page.online, { status: "joining", code, seat, error: "" });
     show("wait");
-    paint();
     try {
-      const seatProof = ROOM.seatFor(ONLINE_SEAT_KEY, code);
-      adopt(await client.joinGame(code, callbacks(), seatProof));
+      const data = await client.joinGame(code, callbacks(), seatProof(code));
+      if (!cancelled(data)) adopt(data);
     } catch (error) {
       fail(error);
     }
   }
 
-  function restore() {
-    const seat = client && ROOM.readSeat(ONLINE_SEAT_KEY);
-    if (!seat) return false;
+  const storedCode = () => (client && readSeat()?.gameCode) || "";
+
+  function resume() {
+    const seat = client && readSeat();
+    if (!seat || page.online.status !== "idle") return;
     page.setup.mode = "online";
     Object.assign(page.online, {
       status: "restoring",
       code: seat.gameCode,
       seat: seat.localPlayerIndex
     });
+    ROOM.setLinkedCode(seat.gameCode);
     show("wait");
-    paint();
     client
       .resumeGame(seat.gameCode, seat.role, seat.resumeToken, callbacks())
+      .then(() => cancelled())
       .catch(fail);
-    return true;
   }
 
+  // A link to the stored room waits for "Reprendre" instead of rejoining.
   function joinFromLink() {
     const code = client ? ROOM.linkedCode() : "";
-    if (!code) return false;
+    if (!code || code === storedCode()) return false;
     page.setup.mode = "online";
     void join(code);
     return true;
@@ -234,6 +257,21 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
     await client.leaveGame({ deleteCurrent: true }).catch(() => {});
   }
 
+  // Stepping away keeps the seat and the room for "Reprendre"; the opponent is
+  // told and waits. A room nobody joined yet is deleted.
+  async function away() {
+    const { status } = page.online;
+    if (status === "idle") return;
+    if (status === "creating" || status === "waiting") return leave();
+    if (page.ended) forget();
+    else notify("away");
+    ROOM.clearLinkedCode();
+    reset();
+    await client.leaveGame().catch(() => {});
+  }
+
+  const presence = (visible) => notify(visible ? "back" : "away");
+
   // A finished room is left without deleting it, so the opponent keeps the
   // end screen instead of being told the room closed.
   async function ended() {
@@ -246,5 +284,17 @@ export function createOnline({ page, paint, show, enter, exit, text }) {
     await client.leaveGame().catch(() => {});
   }
 
-  return { create, join, restore, joinFromLink, share, leave, ended, publish };
+  return {
+    create,
+    join,
+    resume,
+    storedCode,
+    joinFromLink,
+    share,
+    leave,
+    away,
+    presence,
+    ended,
+    publish
+  };
 }

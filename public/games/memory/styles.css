@@ -119,6 +119,15 @@ body {
   box-sizing: border-box;
 }
 
+.memory-resume {
+  flex: 0 0 auto;
+  width: min(100%, 420px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
 .memory-label {
   margin: 0;
   font-size: 0.75rem;
@@ -280,6 +289,7 @@ body {
 
 .memory-play[hidden],
 .memory-setup[hidden],
+.memory-resume[hidden],
 .memory-end[hidden],
 .memory-choice[hidden] {
   display: none;
@@ -296,6 +306,15 @@ body {
     align-items: stretch;
     gap: 16px;
     width: min(100%, 820px);
+  }
+
+  .memory-resume {
+    flex-direction: row;
+    width: min(100%, 820px);
+  }
+
+  .memory-resume .memory-start {
+    flex: 1 1 0;
   }
 
   .memory-setup-column {
@@ -320,6 +339,15 @@ body {
   .memory-panel,
   .memory-setup-column {
     gap: 6px;
+  }
+
+  .memory-resume {
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .memory-resume .memory-start {
+    padding: 7px 16px;
   }
 
   .memory-panel {

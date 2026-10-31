@@ -94,6 +94,29 @@
   display: block;
 }
 
+.memory-away {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  z-index: 1;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  margin: 0;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.memory-away[hidden] {
+  display: none;
+}
+
 .memory-stage {
   flex: 1 1 auto;
   min-height: 0;
