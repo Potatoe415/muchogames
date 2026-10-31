@@ -1,5 +1,6 @@
 export const STORAGE_KEY = "muchogames_memory_state";
 export const MISMATCH_MS = 1200;
+export const REVEAL_MS = 1000;
 export const BOT_FIRST_MS = 600;
 export const BOT_SECOND_MS = 800;
 export const PRELOAD_MS = 10000;

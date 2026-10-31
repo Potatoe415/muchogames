@@ -1,5 +1,10 @@
 import { pickFirst, pickSecond, rollSmart } from "./bot.js";
-import { BOT_FIRST_MS, BOT_SECOND_MS, MISMATCH_MS } from "./config.js";
+import {
+  BOT_FIRST_MS,
+  BOT_SECOND_MS,
+  MISMATCH_MS,
+  REVEAL_MS
+} from "./config.js";
 import { clearSave, writeSave } from "./persist.js";
 import { createState, reduce } from "./reducer.js";
 import { playFlip, playMatch, playMismatch, playWin, stop } from "./sound.js";
@@ -120,9 +125,11 @@ function count(state, status) {
   return state.cards.filter((card) => card.status === status).length;
 }
 
+const upCount = (state) => count(state, "FLIPPED") + count(state, "MATCHED");
+
 function echo(before, after) {
   const found = count(after, "MATCHED") > count(before, "MATCHED");
-  if (found || count(after, "FLIPPED") > count(before, "FLIPPED")) playFlip();
+  if (upCount(after) > upCount(before)) playFlip();
   if (found) playMatch();
   if (after.phase === "EVALUATING" && before.phase !== "EVALUATING") {
     playMismatch();
@@ -140,12 +147,78 @@ function laterBot(box) {
   arm(box, BOT_SECOND_MS, () => botSecond(box));
 }
 
+function statuses(state) {
+  return new Map(state.cards.map((card) => [card.instanceId, card.status]));
+}
+
+function show(box, next) {
+  const before = box.state;
+  const was = statuses(before);
+  const now = performance.now();
+  next.cards.forEach(({ instanceId, status }) => {
+    if (status !== "FLIPPED") box.upSince.delete(instanceId);
+    else if (was.get(instanceId) !== "FLIPPED")
+      box.upSince.set(instanceId, now);
+  });
+  box.state = next;
+  box.onUpdate(next);
+  echo(before, next);
+}
+
+// Online, the opponent's cards stay face up at least REVEAL_MS here, even when
+// the board that closes them arrives right after the one that opened them. A
+// pair that arrives already matched is first shown open.
+function holdFor(box, next) {
+  const now = performance.now();
+  const was = statuses(box.state);
+  const unseen = [];
+  let wait = 0;
+  next.cards.forEach(({ instanceId, status }) => {
+    const before = was.get(instanceId);
+    if (before === "IDLE" && status === "MATCHED") unseen.push(instanceId);
+    if (before !== "FLIPPED" || status === "FLIPPED") return;
+    const since = box.upSince.get(instanceId);
+    if (since !== undefined) wait = Math.max(wait, since + REVEAL_MS - now);
+  });
+  return { wait: unseen.length ? REVEAL_MS : wait, unseen };
+}
+
+function opened(state, ids) {
+  const cards = state.cards.map((card) =>
+    ids.includes(card.instanceId) ? { ...card, status: "FLIPPED" } : card
+  );
+  return { ...state, cards };
+}
+
+function drain(box) {
+  const next = box.pending;
+  if (!box.alive || box.holding || !next) return;
+  box.pending = null;
+  if (sameBoard(box.state, next)) return;
+  const { wait, unseen } = holdFor(box, next);
+  if (wait > 0) {
+    if (unseen.length) show(box, opened(box.state, unseen));
+    box.pending = next;
+    box.holding = true;
+    arm(box, wait, () => {
+      box.holding = false;
+      drain(box);
+    });
+    return;
+  }
+  show(box, next);
+  closeLater(box);
+}
+
 export function createMatch({ config, cards, saved, onUpdate, online }) {
   const state = saved ?? createState(config, cards);
   const base = state.elapsedMs ?? 0;
   const box = {
     alive: true,
     closing: false,
+    holding: false,
+    pending: null,
+    upSince: new Map(),
     plan: null,
     state,
     timers: new Set(),
@@ -171,16 +244,13 @@ export function createMatch({ config, cards, saved, onUpdate, online }) {
       else pauseClock(box);
     },
     flip(instanceId) {
+      if (box.holding) return;
       const seat = box.online?.seat;
       commit(box, { type: "FLIP", instanceId, bot: false, seat });
     },
     apply(next) {
-      if (!box.alive || sameBoard(box.state, next)) return;
-      const before = box.state;
-      box.state = next;
-      box.onUpdate(box.state);
-      echo(before, next);
-      closeLater(box);
+      box.pending = next;
+      drain(box);
     },
     destroy() {
       if (!box.alive) return;
