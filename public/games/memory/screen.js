@@ -86,7 +86,7 @@ function soloMs(page, state) {
 
 function names(page, state) {
   if (state.config.mode === "solo") {
-    return { top: clockText(soloMs(page, state)), bottom: text(page, "you") };
+    return { top: text(page, "solo"), bottom: text(page, "you") };
   }
   if (state.config.mode === "bot") {
     return { top: text(page, "robot"), bottom: text(page, "you") };
@@ -132,6 +132,9 @@ function paintBars(page, state) {
   $("memory-p2-name").textContent = label.top;
   $("memory-p1-score").textContent = myScore(page, state);
   $("memory-p2-score").textContent = topScore(page, state);
+  const clock = $("memory-clock");
+  clock.hidden = state.config.mode !== "solo";
+  clock.textContent = clock.hidden ? "" : clockText(soloMs(page, state));
   $("memory-player-one").dataset.active = live && mine ? "true" : "false";
   $("memory-player-two").dataset.active = live && !mine ? "true" : "false";
   $("memory-play").dataset.active = live ? (mine ? "0" : "1") : "";

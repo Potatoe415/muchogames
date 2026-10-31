@@ -53,6 +53,18 @@
   margin-right: auto;
 }
 
+.memory-clock {
+  margin-left: auto;
+  color: #3f2e1f;
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.memory-clock[hidden] {
+  display: none;
+}
+
 .memory-name {
   font-weight: 800;
   white-space: nowrap;
