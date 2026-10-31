@@ -50,8 +50,9 @@ this before opening the sources.
 
 | File | Role |
 |---|---|
-| `main.js`, `screens.js` | Page shell: i18n, options panel, level list + password, pause/death/win dialogs, progress, `MuchogamesMatch.start/finish`. |
-| `game.js` | `createGame(options)` → `{ restart, setPaused, setMuted, progress, destroy }`. Owns loop, surface, input, audio; drives the engine. |
+| `main.js`, `screens.js`, `copy.js` | Page shell: i18n, options panel, level list + password, "Reprendre", pause/death/win dialogs, progress, `MuchogamesMatch.start/resume/finish`. |
+| `game.js` | `createGame(options)` → `{ restart, setPaused, setMuted, progress, snapshot, destroy }`. Owns loop, surface, input, audio; drives the engine. |
+| `save.js`, `replay.js` | Match in progress: storage + validation; input log + silent replay. |
 | `engine.js`, `levels.js`, `tiles.js` | Engine bridge; level file loading; tile name → original code. |
 | `render.js`, `sheet.js`, `surface.js`, `panel.js`, `led.js` | Drawing. |
 | `input.js`, `audio.js`, `progress.js`, `i18n.js`, `rules.js`, `storage.js` | Controls (input bits, one queued tap), sounds, saved progress, copy. |
@@ -68,6 +69,36 @@ D-pad as static markup (`data-id` on each), kept out of JS on purpose.
 - Death dialog by `engine.deathReason`: water, fire, bomb, block, time, else
   monster. Score: time bonus 10/s left + level bonus 500 x level, -20 % per
   failed attempt (first four). One match = one level; deaths and R stay in
-  the match; `finish({ won: true, score })` on exit, `{ won: false }` when
-  the level is left. Storage: `chipschallenge-progress` (unlocked levels,
-  best score/time), `chipschallenge-sound`.
+  the match (R / retry: `failures + 1`, fresh attempt). Storage:
+  `chipschallenge-progress` (unlocked levels, best score/time),
+  `chipschallenge-sound`, `chipschallenge-current` (below).
+
+## Match in progress (exact resume, decision 0054)
+
+- Routes: reaching the exit = `finish({ won: true, score })`, save deleted.
+  "Niveaux" (`data-match-quit`, shared confirm), hub back, reload, closed
+  tab, bfcache = quit: save kept, no `finish()`. Starting another level
+  (list, password, N/B, "Niveau suivant") = new match: `finish()` with no
+  `won` (records nothing) if one was in progress, save overwritten.
+- `chipschallenge-current` = `{ v: 1, level, failures, seeds: { tw, blob },
+  inputs: [[bits, tics], ...], check: { tic, x, y, chips, time, actors } }`.
+  `inputs` = engine input bits of every tic since Chip's first move,
+  run-length encoded (`replay.logBits`). `check` = `engine.fingerprint`
+  (actors = hash of type, cell, direction). `save.readMatch` drops
+  anything that does not validate (version, level range, int ranges).
+- Written at level start (after `MuchogamesMatch.start` → true), every
+  ~1 s while tics run, on death / retry / R, `visibilitychange` hidden and
+  `pagehide`.
+- Why a replay: a Lexy `Level` is not serializable, but it is
+  deterministic apart from `_tw_rng` and `_blob_modifier` (drawn with
+  `Math.random()` in its constructor; the Lynx PRNG `_rng1/_rng2` starts
+  at 0). Restore = `createLevel` with those seeds and a no-op sound
+  handler, `advance_tic` over the log (no rendering), compare
+  `fingerprint` with `check`, then plug the real sounds back and show the
+  pause overlay. Mismatch or exception: fresh attempt of that level, same
+  `failures`, nothing shown to the player.
+- Check (2026-10-30, Node, saved through `save.js` then restored):
+  levels 1, 2, 5 and blob levels 23, 38, 41 rebuild the same board (every
+  actor, cell, counters, PRNG state); wrong seeds on a blob level are
+  rejected by `check`. Blob levels: 23, 38, 41, 46, 60, 62, 70, 118,
+  127, 133.
