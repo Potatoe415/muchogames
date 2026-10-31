@@ -5,7 +5,6 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 
 ## Now
 - [ ] **User**: phone check of decision 0054 in every game: start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin. Online (Memory, Yatzy, two phones): leaving shows the "away" banner to the other player, "Reprendre en ligne" brings both back.
-- [ ] Yatzy online, pre-existing: when the opponent's move ends the game, `hydrateFromRemoteGameState` → `recordGameResultIfNeeded` reads `nextFields.setup.mode` (no `setup`) and throws; fix with `targetState.setup?.mode ?? state.setup.mode` in `resolveLocalResultPlayerIndex`.
 - [ ] Online "away" is a one-shot notice (`sendNotice`): a player who reloads while the other is away loses the banner. Optional: a lasting away flag on the room (`api/rooms/*`, L2).
 - [ ] Back button mid-match returns to the game's own start screen in Millionaire and Pyramide, not the hub (`docs/PLATFORM_RULES.md` section 1). Owner call.
 - [ ] Olé Mains and the word games restart their timer on "Reprendre" instead of coming back paused (no pause UI); the quit dialog does not pause Sudoku's or Chip's timer.

@@ -1514,13 +1514,16 @@ function finishGame() {
 // "me" to attribute a result to. "solo" mode is 2 human players sharing this
 // device (misleadingly named - see index.html's splash buttons), so no
 // single local player's win/loss can be recorded there.
+// A remote online payload carries no setup/session: fall back to local state.
 function resolveLocalResultPlayerIndex(targetState) {
-  if (targetState.setup.mode === "online") {
-    return Number.isInteger(targetState.session.localPlayerIndex)
-      ? targetState.session.localPlayerIndex
+  const mode = targetState.setup?.mode ?? state.setup.mode;
+  const session = targetState.session ?? state.session;
+  if (mode === "online") {
+    return Number.isInteger(session.localPlayerIndex)
+      ? session.localPlayerIndex
       : null;
   }
-  if (targetState.setup.mode === "robot") {
+  if (mode === "robot") {
     return 0;
   }
   return null;

@@ -24,7 +24,6 @@ Next:
 
 Open_Questions:
 - Fruit Slash and Bridge thumbnails are hand-made SVGs; swap for illustrated images if wanted.
-- Yatzy online end-of-game crash (pre-existing, one-line fix in `docs/BACKLOG.md`): fix now?
 - Git stash `wip-memory-aside` (another session, 2026-10-29) is still there; owner to keep or drop.
 - `.prettierignore` yatsy re-include would reformat it — owner call.
 - SkiFree, Chip's Challenge and Space Cadet assets are copyrighted; Memory's Miraculous, Ghibli and Pat' Patrouille themes are AI art of licensed characters.
@@ -33,6 +32,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-10-31 Yatzy online: game ended by the opponent's move no longer crashes (result recorded, sw v45).
 - 2026-10-31 Daily coins: 20 per Paris day (`DAILY_COINS`), hub badge `n/20`. No SQL change.
 - 2026-10-31 Fruit Slash: new game, emoji sprites with baked glow, rainbow blade, touch/mouse/arrow keys, live-checked phone portrait/landscape.
 - 2026-10-31 Échecs: optional clock (5/10/30 min, computer included), Pause, flag fall, saved and resumed paused.
