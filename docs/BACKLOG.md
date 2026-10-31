@@ -4,7 +4,14 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
-- [ ] Every game resumes its match exactly and meets 0053 (`docs/tasks/resume-every-match.md`): lots 2 and 3 done 2026-10-29; lot 4 Memory/Yatzy/SkiFree + Space Cadet rules left. Done when the baseline has no game line left except Tranquil.
+- [ ] **User**: phone check of decision 0054 in every game: start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin. Online (Memory, Yatzy, two phones): leaving shows the "away" banner to the other player, "Reprendre en ligne" brings both back.
+- [ ] Yatzy online, pre-existing: when the opponent's move ends the game, `hydrateFromRemoteGameState` → `recordGameResultIfNeeded` reads `nextFields.setup.mode` (no `setup`) and throws; fix with `targetState.setup?.mode ?? state.setup.mode` in `resolveLocalResultPlayerIndex`.
+- [ ] Online "away" is a one-shot notice (`sendNotice`): a player who reloads while the other is away loses the banner. Optional: a lasting away flag on the room (`api/rooms/*`, L2).
+- [ ] Back button mid-match returns to the game's own start screen in Millionaire and Pyramide, not the hub (`docs/PLATFORM_RULES.md` section 1). Owner call.
+- [ ] Olé Mains and the word games restart their timer on "Reprendre" instead of coming back paused (no pause UI); the quit dialog does not pause Sudoku's or Chip's timer.
+- [ ] Memory setup scrolls 38–48 px at 360×560 when "Reprendre" shows with Robot or En ligne selected.
+- [ ] SkiFree: right-hand controls cut off at 1024 px landscape (pre-existing).
+- [ ] Yatzy: restart carries `data-match-quit`, so its dialog says "saved" although restart replaces the match.
 - [ ] **User**: play-test Jeu de dames (`/games/checkers/`) on phone, tablet and desktop: the 4 levels, two players, 10×10 and 8×8, drag and tap, undo/hint, reload mid-game then "Reprendre".
 - [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels on Lexy's Labyrinth engine, Lynx rules, 147/149 proven winnable) on phone (portrait + landscape) and desktop.
 - [ ] `loop.js` and `storage.js` are now verbatim copies in 4 Entertainment Pack games: extract to `public/shared/` the first time one copy has to change.

@@ -48,7 +48,7 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `checkers` | `public/games/checkers/` | 17 ES modules + 3 CSS, ~1,800 JS lines (none >300 except `index.html`, ~460: header boilerplate + static start/stage/end markup); `main.js` entry; AI in a module worker (`ai-worker.js`) | header, session | yes |
 | `sudoku` | `public/games/sudoku/` | 11 ES modules + 2 CSS, ~1,090 JS lines (none >300 except `index.html`, ~320: header boilerplate + static start/stage/end markup); `main.js` entry; grids generated in the browser (`generator.js`) | header, session | yes |
 | `bridge` | `public/games/bridge/` | 42 ES modules + 6 CSS, ~5,500 JS lines (none >300 except `index.html`, ~480: header boilerplate + static start/table/overlay markup); `main.js` entry; SEF bidding engine in `bid-*.js`; robots' cards in a module worker (`robot-worker.js`) with a double-dummy endgame solver (`dds.js`) | header, session | yes |
-| `yatsy` | `public/games/yatsy/` | 14 files; `app.js` (1239), `i18n.js` (395), `render.js` (633), `session.js` (~610) — **4 files over limit** | engine, header, profile, online-room | no — see `docs/BACKLOG.md` Later |
+| `yatsy` | `public/games/yatsy/` | 15 files; `app.js` (1602), `i18n.js`, `render.js`, `session.js` — **4 files over limit**; `resume.js` (local save, Reprendre, away notices) | engine, header, profile, online-room | yes |
 
 "Shared deps" = which `shared/CONTRACT.md` modules the game imports. Read
 that contract, not the shared source, unless it doesn't answer your

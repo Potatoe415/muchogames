@@ -2,29 +2,28 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Resume-every-match lots 2–3 shipped: 13 games + the 4 word games resume exactly after any exit.
-Focus: `docs/tasks/resume-every-match.md` — lot 4 left (Memory, Yatzy, SkiFree, Space Cadet rules).
-Level: L2
+Status: Decision 0054 done: every in-repo game (except Space Cadet, exempt) resumes its match exactly after any exit; rules collapsed everywhere.
+Focus: Owner phone checks of resume (local + online).
+Level: L1
 
 Context:
-- Working_On: resume-every-match lot 4.
-- Relevant_Files: `docs/tasks/resume-every-match.md`, `docs/PLATFORM_RULES.md` section 8, `scripts/check-games.baseline.json`
+- Working_On: none
+- Relevant_Files: `docs/PLATFORM_RULES.md` sections 1, 6–8; each game's `NOTES.md` (save key + content); `scripts/check-games.baseline.json` (only Tranquil and URL gaps left)
 - Do_Not_Touch: `apps/**`; Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0054, 0053, 0051
 
 Next:
-- Lot 4 per the task file (Memory waits for the other session's Memory work).
-- Owner phone check, lots 2–3: in each game start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin.
+- Owner phone check of resume in every game, then Memory and Yatzy online on two phones (away banner, "Reprendre en ligne") — see `docs/BACKLOG.md` Now.
 - Owner: options sheet bottom clears the phone navigation bar.
-- Owner to play Bridge (bid box, explanations, hint, undo, last trick, claim, open hands, 4-colour, reload then "Reprendre", full Chicago) and judge robot bidding.
+- Owner to play Bridge (bid box, explanations, hint, undo, last trick, claim, open hands, 4-colour, full Chicago) and judge robot bidding.
 - Owner: hub fresh browser — Tous selected, Plus récents on, Moins récents gone.
-- Owner to play Sudoku and Jeu de dames on phone, tablet, desktop, then reload mid-game and "Reprendre".
-- Owner to open Memory on the iPhone 17 Pro and the Xiaomi Pad 7, both orientations: setup with Jouer visible and no scroll; in a match, the player 1 pill fully above the Safari toolbar. If not, Options > Debug > copy the report and send it.
-- Owner to play Memory online on two phones; also one Yatzy online match.
+- Owner to open Memory on the iPhone 17 Pro and the Xiaomi Pad 7, both orientations: setup with Jouer visible and no scroll; player 1 pill above the Safari toolbar. If not, Options > Debug > copy the report.
 - Platform leftovers: `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on coinchapp; Tranquil match start after its Vercel repoint.
 - Proposed: `docs/ARCHITECTURE.md` still says 7 Hobby functions and omits `GET /api/popular`; `docs/SECURITY.md` does not list that public read.
 
 Open_Questions:
+- Yatzy online end-of-game crash (pre-existing, one-line fix in `docs/BACKLOG.md`): fix now?
+- Git stash `wip-memory-aside` (another session, 2026-10-29) is still there; owner to keep or drop.
 - Bridge thumbnail is a hand-made SVG; swap for an illustrated image if wanted.
 - `.prettierignore` yatsy re-include would reformat it — owner call.
 - SkiFree, Chip's Challenge and Space Cadet assets are copyrighted; Memory's Miraculous, Ghibli and Pat' Patrouille themes are AI art of licensed characters.
@@ -33,8 +32,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-10-29 JezzBall Facile/Normal (Normal = old tuning): easy grid 22x15, slower atoms, faster walls, N atoms, N+3 lives, no timer, 66 %, head grace, ×0.5 points, best per mode; finger wall preview, vibration, first-easy help overlay (`prefs.js`, save `mode`).
-- 2026-10-29 Memory: Options > Debug layout overlay (`debug.js`, `debug-report.js`); body `100dvh` + covered strip measured from `visualViewport` (iOS 26 toolbar cropped player 1); setup fits without scroll, pitch removed.
-- 2026-10-29 Resume lot 3: Pipe Dream, JezzBall, Chip's (exact input replay), Olé Mains, Millionaire, Cafards, word games.
-- 2026-10-29 Resume lot 2: 6 games save the whole match, quit keeps it, rules collapsed, mobile viewport + `dvh`.
+- 2026-10-31 Resume lot 4: Memory (open cards, online seat kept + away banner), Yatzy (Reprendre local/online, away notices, sw v44), SkiFree (exact run), Space Cadet rules collapsed.
+- 2026-10-29 Resume lots 2–3: 13 games + word games save the whole match; Chip's exact input replay.
+- 2026-10-29 JezzBall Facile/Normal; Memory debug overlay and iOS toolbar fix.
 - 2026-10-29 Decisions 0053 (screens, system bars, collapsed rules) and 0054 (quit keeps the save, Space Cadet exempt).
