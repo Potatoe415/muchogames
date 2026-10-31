@@ -149,12 +149,14 @@
   z-index: 2;
   width: var(--sq);
   height: var(--sq);
-  transform: translate(calc(var(--c) * 100%), calc(var(--r) * 100%));
+  /* Position on `translate`, not `transform`: `scale` (lift, drag) applies
+     before `transform` and would scale the offset too. */
+  translate: calc(var(--c) * 100%) calc(var(--r) * 100%);
   filter: drop-shadow(
     0 calc(var(--sq) * 0.03) calc(var(--sq) * 0.025) rgba(0, 0, 0, 0.45)
   );
   transition:
-    transform 0.22s ease-in-out,
+    translate 0.22s ease-in-out,
     scale 0.15s ease,
     opacity 0.26s ease;
 }

@@ -112,7 +112,7 @@ export function createView({ host, flipped, t }) {
         pieces.set(sq, el);
         layer.append(el);
       }
-      el.style.transform = "";
+      el.style.translate = "";
       el.classList.remove("is-dragging", "is-moving");
       place(el, sq);
       paintPiece(el, piece);
@@ -139,7 +139,7 @@ export function createView({ host, flipped, t }) {
     pieces.delete(from);
     el.classList.remove("is-dragging");
     el.classList.add("is-moving");
-    el.style.transform = "";
+    el.style.translate = "";
     place(el, to);
     pieces.set(to, el);
     return el;
@@ -163,13 +163,13 @@ export function createView({ host, flipped, t }) {
     const rect = layer.getBoundingClientRect();
     const size = rect.width / 8;
     el.classList.add("is-dragging");
-    el.style.transform = `translate(${x - rect.left - size / 2}px, ${y - rect.top - size / 2}px)`;
+    el.style.translate = `${x - rect.left - size / 2}px ${y - rect.top - size / 2}px`;
   }
 
   function dragEnd(sq) {
     const el = pieces.get(sq);
     el?.classList.remove("is-dragging");
-    if (el) el.style.transform = "";
+    if (el) el.style.translate = "";
   }
 
   function squareAt(x, y) {
