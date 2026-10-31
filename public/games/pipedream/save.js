@@ -28,7 +28,7 @@ export function encodeMatch(state) {
     v: VERSION,
     level: state.config.level,
     phase: state.phase,
-    timer: state.timer,
+    timer: Math.max(0, state.timer),
     fast: state.fast,
     score: state.score,
     filled: state.filled,
