@@ -86,6 +86,18 @@ body {
   font-weight: 700;
 }
 
+.sf-continue {
+  display: block;
+  min-width: 160px;
+  margin: 0 auto 8px;
+}
+
+.sf-continue-info {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 .sf-records {
   margin: 0 0 12px;
   padding: 6px 8px;

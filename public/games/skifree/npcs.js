@@ -11,20 +11,21 @@ const FIRE_TIME = 4;
 const frame = (frames, t, fps) => frames[Math.floor(t * fps) % frames.length];
 const between = (min, max) => min + Math.random() * (max - min);
 
-export function spawnMover(world, id, kind, x, y, rand) {
-  if (world.live.has(id)) return;
+// Always draws the same random numbers, spawned or not, so the rest of the
+// cell regenerates identically (save.js rebuilds cells from the seed).
+export function spawnMover(world, id, kind, x, y, rand, spawn = true) {
+  const next = 1 + rand() * 3;
+  const side = rand() < 0.5 ? -1 : 1;
+  if (!spawn || world.live.has(id)) return;
   const mover = makeEntity(kind, Math.round(x), Math.round(y), {
     id,
     t: 0,
     mode: "go",
-    next: 1 + rand() * 3,
+    next,
     vx: 0,
     vy: 0
   });
-  if (kind === "boarder") {
-    mover.vx = rand() < 0.5 ? -110 : 110;
-    mover.vy = 230;
-  }
+  if (kind === "boarder") Object.assign(mover, { vx: side * 110, vy: 230 });
   world.live.add(id);
   world.movers.push(mover);
 }

@@ -186,6 +186,7 @@ select {
   z-index: 25;
   width: min(20rem, calc(100vw - 2rem));
   max-height: min(70vh, 28rem);
+  max-height: min(70dvh, 28rem);
   overflow: auto;
   border-radius: 1rem;
   background: rgba(42, 32, 28, 0.88);
@@ -535,6 +536,27 @@ select {
 .splash-choice-robot-test {
   background: #e8dcc4;
   border: 0.14rem dashed rgba(42, 37, 56, 0.35);
+}
+
+.splash-choice-resume {
+  background: #fffaf1;
+  border: 0.18rem solid #2a2538;
+}
+
+.opponent-away-banner {
+  margin: 0 0.35rem 0.75rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.85rem;
+  background: #2a2538;
+  color: #fffaf1;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.opponent-away-banner.is-hidden {
+  display: none;
 }
 
 .splash-flag {

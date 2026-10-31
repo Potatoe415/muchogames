@@ -92,8 +92,8 @@ function towersIn(x0, y0) {
   return towers;
 }
 
-function fillCell(world, cx, cy) {
-  const key = `${cx},${cy}`;
+function fillCell(world, key, spawn = true) {
+  const [cx, cy] = key.split(",").map(Number);
   const rand = seeded(hash(cx, cy, world.seed));
   const x0 = cx * CELL;
   const y0 = cy * CELL;
@@ -104,14 +104,13 @@ function fillCell(world, cx, cy) {
     const y = Math.round(y0 + rand() * CELL);
     const kind = kindAt(x, y, rand);
     if (!kind) continue;
-    if (MOVERS.has(kind)) spawnMover(world, `${key}:${i}`, kind, x, y, rand);
-    else list.push(makeEntity(kind, x, y));
+    if (!MOVERS.has(kind)) list.push(makeEntity(kind, x, y));
+    else spawnMover(world, `${key}:${i}`, kind, x, y, rand, spawn);
   }
   world.cells.set(key, list);
 }
 
-export function createWorld(course) {
-  const seed = (Math.random() * 0xffffffff) >>> 0;
+export function createWorld(course, seed = (Math.random() * 0xffffffff) >>> 0) {
   return {
     seed,
     course,
@@ -122,6 +121,40 @@ export function createWorld(course) {
   };
 }
 
+const isBurnt = (e) => e.kind === "fire" || e.kind === "ash";
+
+// Cells are rebuilt from the seed; only what the run changed is stored:
+// live movers and the dead trees set alight (cell key + list index).
+export function encodeWorld(world) {
+  const burnt = [];
+  world.cells.forEach((list, key) => {
+    list.forEach((e, i) => {
+      if (isBurnt(e)) burnt.push([key, i, e.kind, e.t, e.sprite]);
+    });
+  });
+  return {
+    seed: world.seed,
+    cells: [...world.cells.keys()],
+    movers: world.movers.map((mover) => ({ ...mover })),
+    burnt
+  };
+}
+
+// Returns null when a burnt entry does not point at a dead tree.
+export function restoreWorld(course, { seed, cells, movers, burnt }) {
+  const world = createWorld(course, seed);
+  world.movers = movers;
+  world.live = new Set(movers.map((mover) => mover.id));
+  cells.forEach((key) => fillCell(world, key, false));
+  for (const [key, index, kind, t, sprite] of burnt) {
+    const tree = world.cells.get(key)[index];
+    if (tree?.kind !== "treeDead") return null;
+    Object.assign(tree, { kind, t, sprite });
+    if (kind === "fire") world.burning.push(tree);
+  }
+  return world;
+}
+
 function generate(world, view) {
   const cx0 = Math.floor((view.x - CELL) / CELL);
   const cx1 = Math.floor((view.x + view.w + CELL) / CELL);
@@ -129,7 +162,8 @@ function generate(world, view) {
   const cy1 = Math.floor((view.y + view.h + CELL * 2) / CELL);
   for (let cy = cy0; cy <= cy1; cy += 1) {
     for (let cx = cx0; cx <= cx1; cx += 1) {
-      if (!world.cells.has(`${cx},${cy}`)) fillCell(world, cx, cy);
+      const key = `${cx},${cy}`;
+      if (!world.cells.has(key)) fillCell(world, key);
     }
   }
 }

@@ -131,6 +131,11 @@
       },
       game: {
         close: "Close"
+      },
+      resume: {
+        local: "Resume",
+        online: "Resume online game ({code})",
+        opponentAway: "{name} is away. The game goes on when they come back."
       }
     },
     es: {
@@ -264,6 +269,11 @@
       },
       game: {
         close: "Cerrar"
+      },
+      resume: {
+        local: "Reanudar",
+        online: "Reanudar partida en línea ({code})",
+        opponentAway: "{name} está ausente. La partida sigue cuando vuelva."
       }
     },
     fr: {
@@ -397,6 +407,11 @@
       },
       game: {
         close: "Fermer"
+      },
+      resume: {
+        local: "Reprendre",
+        online: "Reprendre la partie en ligne ({code})",
+        opponentAway: "Adversaire absent : {name}. La partie reprend à son retour."
       }
     }
   };

@@ -36,7 +36,7 @@ window.YATZY_SESSION = {
       animateDiceIntoScoreCell,
       maybeTriggerOnlineYatzyCelebration,
       handleEmojiReceived,
-      handleDefeatModeNoticeReceived,
+      handleNoticeReceived,
       isScoringAnimationInFlight,
       setScoringAnimationInFlight
     } = deps;
@@ -191,14 +191,16 @@ window.YATZY_SESSION = {
     }
   }
 
+  // A link to the room this browser already holds a seat in is left to the
+  // splash "Reprendre" button; any other link is a new match to join.
   function handleDeepLinkJoin() {
-    if (state.screen !== "splash" || readPersistedOnlineSession()) {
+    if (state.screen !== "splash") {
       return;
     }
 
     const linkedCode = MATCHMAKING ? ROOM.linkedCode() : "";
 
-    if (!linkedCode) {
+    if (!linkedCode || readPersistedOnlineSession()?.gameCode === linkedCode) {
       return;
     }
 
@@ -208,7 +210,7 @@ window.YATZY_SESSION = {
     handleJoinGame();
   }
 
-  async function restoreOnlineSession() {
+  async function resumeOnlineSession() {
     const persisted = readPersistedOnlineSession();
 
     if (!persisted || !MATCHMAKING) {
@@ -265,7 +267,7 @@ window.YATZY_SESSION = {
       stateChangeCallback: handleMatchStateChange,
       gameClosedCallback: handleMatchClosed,
       emojiReceivedCallback: handleEmojiReceived,
-      noticeReceivedCallback: handleDefeatModeNoticeReceived
+      noticeReceivedCallback: handleNoticeReceived
     };
   }
 
@@ -446,18 +448,23 @@ window.YATZY_SESSION = {
     }
   }
 
+  // `keepSeat` leaves the stored seat for a later "Reprendre". The flush comes
+  // first because leaveGame() drops any write still queued behind it.
   async function leaveCurrentGame(options = {}) {
     if (!MATCHMAKING) {
       return;
     }
 
     try {
-      await MATCHMAKING.leaveGame(options);
+      await MATCHMAKING.flush();
+      await MATCHMAKING.leaveGame({ deleteCurrent: Boolean(options.deleteCurrent) });
     } catch (error) {
       // Leaving is best-effort. The local reset below still returns the UI safely.
     }
 
-    clearPersistedOnlineSession();
+    if (!options.keepSeat) {
+      clearPersistedOnlineSession();
+    }
     clearDeepLinkFromUrl();
   }
 
@@ -477,8 +484,9 @@ window.YATZY_SESSION = {
     state.session.splashError = t(translationKey);
   }
 
+  // A finished match keeps no seat: there is nothing left to resume.
   function persistOnlineSession() {
-    if (!state.session.gameCode || !isOnlineGame()) {
+    if (!state.session.gameCode || !isOnlineGame() || state.gameOver) {
       return;
     }
 
@@ -601,7 +609,8 @@ window.YATZY_SESSION = {
       handleJoinCodeInput,
       handleSplashBack,
       handleDeepLinkJoin,
-      restoreOnlineSession,
+      resumeOnlineSession,
+      readPersistedOnlineSession,
       leaveCurrentGame,
       syncOnlineGameState,
       clearPersistedOnlineSession

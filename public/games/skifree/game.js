@@ -8,6 +8,7 @@ import { createHud, hudView } from "./hud.js";
 import { bindInput } from "./input.js";
 import { createLoop } from "./loop.js";
 import { render } from "./render.js";
+import { encodeRun } from "./save.js";
 import { createSkier } from "./skier.js";
 import { loadSheet } from "./sprites.js";
 import { followCamera, stepGame } from "./step.js";
@@ -24,16 +25,22 @@ const COMMANDS = {
   jump
 };
 
-function createState(options, audio) {
+function freshRun() {
   const course = createCourse();
   return {
     skier: createSkier(),
     course,
     world: createWorld(course),
     yeti: createYeti(),
-    view: { x: 0, y: 0, w: 1, h: 1 },
     time: 0,
-    turbo: false,
+    turbo: false
+  };
+}
+
+function createState(options, audio) {
+  return {
+    ...(options.saved ?? freshRun()),
+    view: { x: 0, y: 0, w: 1, h: 1 },
     paused: false,
     audio,
     onCourse: options.onCourse,
@@ -112,7 +119,7 @@ export function createGame(options) {
     skierAt: skierLocator(game, surface),
     actions: createActions(game, options)
   });
-  options.buttons.turbo.setAttribute("aria-pressed", "false");
+  options.buttons.turbo.setAttribute("aria-pressed", String(game.turbo));
   audio.setMuted(options.muted);
   audio.unlock();
   loop.start();
@@ -123,6 +130,7 @@ export function createGame(options) {
     },
     setMuted: (value) => audio.setMuted(value),
     summary: () => ({ skier: game.skier, time: game.time }),
+    snapshot: () => encodeRun(game),
     destroy() {
       loop.stop();
       unbind();

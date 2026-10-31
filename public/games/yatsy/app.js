@@ -136,6 +136,7 @@ let yatzyCelebrationTimeoutId = null;
 let emojiReactionTimeoutId = null;
 let robotTurnTimeoutId = null;
 let undoScoreTimeoutId = null;
+let undoScoreExpiresAt = 0;
 let robotStepDelayMs = getRobotDelayMs(ROBOT_CONFIG.rollDelayMs);
 let robotQueuedScoreCategory = null;
 let scoringAnimationInFlight = false;
@@ -256,12 +257,13 @@ const renderer = window.YATZY_RENDER.createRenderer({
   scheduleDefeatModeTurnIfNeeded
 });
 // Wrapped (not just renderer.render) so every state mutation that leads to a
-// render also keeps the local-game persistence snapshot in sync, the same
-// way session.js keeps yatzy-online-session in sync on every state change it
-// causes. See persistLocalGameState().
+// render also keeps the local match save in sync (resume.js), the same way
+// session.js keeps yatzy-online-session in sync on every state change it
+// causes.
 const render = () => {
   renderer.render();
-  persistLocalGameState();
+  resumeController.persistLocal();
+  resumeController.renderResumeUi();
 };
 
 // session.js owns matchmaking wiring, remote-state sync and session
@@ -295,7 +297,7 @@ const session = window.YATZY_SESSION.createSessionController({
   animateDiceIntoScoreCell,
   maybeTriggerOnlineYatzyCelebration,
   handleEmojiReceived,
-  handleDefeatModeNoticeReceived,
+  handleNoticeReceived,
   isScoringAnimationInFlight: () => scoringAnimationInFlight,
   setScoringAnimationInFlight: (value) => {
     scoringAnimationInFlight = value;
@@ -309,14 +311,33 @@ const handleJoinGame = session.handleJoinGame;
 const handleJoinCodeInput = session.handleJoinCodeInput;
 const handleSplashBack = session.handleSplashBack;
 const handleDeepLinkJoin = session.handleDeepLinkJoin;
-const restoreOnlineSession = session.restoreOnlineSession;
 const leaveCurrentGame = session.leaveCurrentGame;
 const syncOnlineGameState = session.syncOnlineGameState;
 const clearPersistedOnlineSession = session.clearPersistedOnlineSession;
 
-restoreLocalGameState();
+const resumeController = window.YATZY_RESUME.createResumeController({
+  state,
+  t,
+  render,
+  storage: STORAGE,
+  saveKey: LOCAL_GAME_STORAGE_KEY,
+  matchmaking: MATCHMAKING,
+  isOnlineGame,
+  isSplashBusy,
+  createInitialState,
+  applySetupSettings,
+  initializeRuntimeDefinitions,
+  cloneRuleSettings,
+  getUndoRemainingMs: () => Math.max(0, undoScoreExpiresAt - Date.now()),
+  startUndoWindow,
+  getBonusRollState: () => ({ tapCount: extraRollTapCount, usedThisTurn: bonusRollUsedThisTurn }),
+  setBonusRollState,
+  readOnlineSeat: session.readPersistedOnlineSession,
+  resumeOnlineSession: session.resumeOnlineSession,
+  leaveCurrentGame
+});
+
 render();
-restoreOnlineSession();
 handleDeepLinkJoin();
 registerOfflineSupport();
 window.MuchogamesProfileResults?.migrateLocalResultsOnce();
@@ -356,13 +377,14 @@ function clearUndoWindow() {
   undoScoreTimeoutId = null;
 }
 
-function startUndoWindow() {
+function startUndoWindow(durationMs = UNDO_SCORE_WINDOW_MS) {
   clearUndoWindow();
+  undoScoreExpiresAt = Date.now() + durationMs;
   undoScoreTimeoutId = setTimeout(() => {
     state.lastCommittedTurn = null;
     undoScoreTimeoutId = null;
     render();
-  }, UNDO_SCORE_WINDOW_MS);
+  }, durationMs);
 }
 
 function buildDefaultRuleSettings() {
@@ -512,6 +534,7 @@ function createInitialState() {
     emojiReaction: null,
     defeatMode: [false, false],
     defeatModeAnnouncement: null,
+    opponentAway: false,
     gameOver: false,
     winner: null,
     statusMessage: ""
@@ -726,66 +749,6 @@ function readPersistedDefeatModeEnabled() {
   return stored === null ? true : Boolean(stored);
 }
 
-// Local games (solo vs robot, or two players passing the same device) had no
-// resume mechanism at all: unlike an online match (yatzy-online-session,
-// restored via restoreOnlineSession()), refreshing mid-game always dropped
-// back to the splash screen. This mirrors that same persist/restore/clear
-// pattern for local games. Only the fields needed to rebuild the board are
-// stored; transient UI state (pending selection, in-flight animations...)
-// intentionally comes back from createInitialState()'s own defaults instead.
-function persistLocalGameState() {
-  if (state.screen !== "game" || isOnlineGame()) {
-    clearPersistedLocalGameState();
-    return;
-  }
-
-  STORAGE.writeJSON(LOCAL_GAME_STORAGE_KEY, {
-    mode: state.setup.mode,
-    diceTheme: state.setup.diceTheme,
-    players: state.players,
-    dice: state.dice,
-    rollsRemaining: state.rollsRemaining,
-    turnPhase: state.turnPhase,
-    scores: state.scores,
-    currentPlayerIndex: state.currentPlayerIndex,
-    defeatMode: state.defeatMode,
-    gameOver: state.gameOver,
-    winner: state.winner
-  });
-}
-
-function clearPersistedLocalGameState() {
-  STORAGE.remove(LOCAL_GAME_STORAGE_KEY);
-}
-
-function readPersistedLocalGameState() {
-  const parsed = STORAGE.readJSON(LOCAL_GAME_STORAGE_KEY);
-  return parsed && (parsed.mode === "solo" || parsed.mode === "robot") ? parsed : null;
-}
-
-function restoreLocalGameState() {
-  const persisted = readPersistedLocalGameState();
-  if (!persisted) {
-    return;
-  }
-
-  const freshState = createInitialState();
-  freshState.screen = "game";
-  freshState.setup.mode = persisted.mode;
-  freshState.setup.diceTheme = persisted.diceTheme || "default";
-  freshState.players = persisted.players;
-  freshState.dice = persisted.dice;
-  freshState.rollsRemaining = persisted.rollsRemaining;
-  freshState.turnPhase = persisted.turnPhase;
-  freshState.scores = persisted.scores;
-  freshState.currentPlayerIndex = persisted.currentPlayerIndex;
-  freshState.defeatMode = persisted.defeatMode;
-  freshState.gameOver = persisted.gameOver;
-  freshState.winner = persisted.winner;
-  Object.assign(state, freshState);
-  if (!freshState.gameOver) window.MuchogamesMatch.resume("yatsy");
-}
-
 async function handleRestart() {
   if (!isOnlineGame()) {
     if (!(await window.MuchogamesMatch.start("yatsy"))) return;
@@ -797,8 +760,10 @@ async function handleRestart() {
     return;
   }
 
+  // Leaving an unfinished online match on purpose closes the room, so the
+  // opponent is sent back to their splash instead of waiting for nobody.
   window.MuchogamesMatch.finish();
-  await leaveCurrentGame();
+  await leaveCurrentGame({ deleteCurrent: !state.gameOver });
   resetGame({
     screen: "splash",
     language: state.setup.language,
@@ -807,10 +772,13 @@ async function handleRestart() {
   });
 }
 
+// Quitting is not an end: no finish(), and the local save or the online seat
+// stays for the splash "Reprendre" button.
 async function handleHomeNavigation() {
-  window.MuchogamesMatch.finish();
   if (isOnlineGame()) {
-    await leaveCurrentGame();
+    await resumeController.leaveOnlineMatch();
+  } else {
+    resumeController.persistLocal();
   }
 
   resetGame({
@@ -971,6 +939,12 @@ function handleDefeatModeNoticeReceived(payload) {
   showDefeatModeAnnouncement(payload.playerName);
 }
 
+function handleNoticeReceived(payload) {
+  if (!resumeController.handlePresenceNotice(payload)) {
+    handleDefeatModeNoticeReceived(payload);
+  }
+}
+
 
 
 
@@ -1039,9 +1013,6 @@ function resetGame({
   applySetupSettings(freshState);
   Object.assign(state, freshState);
   state.splashView = splashView;
-  if (mode !== "online") {
-    clearPersistedOnlineSession();
-  }
   render();
 }
 
@@ -1203,6 +1174,11 @@ function runDefeatModeTurnStep() {
 function resetBonusRollHunt() {
   extraRollTapCount = 0;
   bonusRollUsedThisTurn = false;
+}
+
+function setBonusRollState(saved) {
+  extraRollTapCount = Number.isInteger(saved?.tapCount) ? Math.max(0, Math.min(2, saved.tapCount)) : 0;
+  bonusRollUsedThisTurn = Boolean(saved?.usedThisTurn);
 }
 
 function isExtraRollEasterEggEnabled() {
@@ -1553,6 +1529,7 @@ function resolveLocalResultPlayerIndex(targetState) {
 function recordGameResultIfNeeded(targetState) {
   if (!targetState.gameOver || localResultRecorded) return;
   localResultRecorded = true;
+  if (isOnlineGame()) clearPersistedOnlineSession();
 
   const localIndex = resolveLocalResultPlayerIndex(targetState);
   const totals = [calculateGrandTotal(targetState.scores[0]), calculateGrandTotal(targetState.scores[1])];

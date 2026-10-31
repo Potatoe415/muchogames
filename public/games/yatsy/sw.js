@@ -1,4 +1,4 @@
-const CACHE_NAME = "yatzy-offline-v43";
+const CACHE_NAME = "yatzy-offline-v44";
 const APP_ASSETS = [
   "./",
   "./index.html",
@@ -12,6 +12,7 @@ const APP_ASSETS = [
   "./random.js",
   "./styles.css",
   "./app.js",
+  "./resume.js",
   "./assets/splash-bg.webp"
 ];
 

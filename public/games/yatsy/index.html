@@ -2,12 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Yatzy Online Duel</title>
   <link rel="stylesheet" href="/shared/css/game-header.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="is-splash">
+<body class="is-splash" data-match-saved>
   <main class="page">
     <div class="app-shell">
       <section class="splash-screen" id="splash-screen" data-id="yatsy-splash-screen" aria-label="Game setup">
@@ -26,14 +26,17 @@
             <div class="lang-selector" id="splash-lang-selector" data-id="yatsy-splash-lang-selector"></div>
           </div>
           <div class="settings-list" id="settings-list"></div>
-          <div class="settings-rules-section" id="settings-rules-section" data-id="game-options-rules" style="display: none">
-            <p class="settings-rules-title" id="settings-rules-title" data-id="yatsy-settings-rules-title"></p>
+          <details class="options-panel-section settings-rules-section" id="settings-rules-section" data-id="game-options-rules" style="display: none">
+            <summary class="options-panel-section-title settings-rules-title" id="settings-rules-title" data-id="yatsy-settings-rules-title"></summary>
             <div class="settings-rules-content" id="settings-rules-content" data-id="yatsy-settings-rules-content"></div>
-          </div>
+          </details>
         </section>
 
         <div class="splash-actions" data-id="yatsy-splash-actions">
           <h1 class="splash-title" id="splash-title">Yatzy</h1>
+
+          <button class="splash-choice splash-choice-resume is-hidden" id="resume-game-button" type="button" data-id="yatsy-resume-button">Reprendre</button>
+          <button class="splash-choice splash-choice-resume is-hidden" id="resume-online-button" type="button" data-id="yatsy-resume-online-button">Reprendre la partie en ligne</button>
 
           <button class="splash-choice splash-choice-local" id="solo-game-button" type="button" data-id="yatsy-solo-game-button">Partie à deux</button>
           <button class="splash-choice splash-choice-robot" id="robot-game-button" type="button" data-id="yatsy-robot-game-button">Partie solo</button>
@@ -107,14 +110,16 @@
                     </span>
                   </label>
                 </div>
-                <div class="options-panel-section" id="game-rules-section" data-id="yatsy-game-rules-section" style="display: none">
-                  <p class="options-panel-section-title" id="game-rules-title"></p>
+                <details class="options-panel-section" id="game-rules-section" data-id="yatsy-game-rules-section" style="display: none">
+                  <summary class="options-panel-section-title" id="game-rules-title"></summary>
                   <div class="rules-modal-content" id="game-rules-content" data-id="yatsy-game-rules-content"></div>
-                </div>
+                </details>
               </div>
             </div>
           </div>
         </header>
+
+        <p class="opponent-away-banner is-hidden" id="opponent-away-banner" data-id="yatsy-opponent-away-banner" role="status" aria-live="polite"></p>
 
         <section class="scoreboard-panel">
           <div class="scoreboard" id="scoreboard" aria-label="Score board"></div>
@@ -164,6 +169,7 @@
   <script src="random.js"></script>
   <script src="render.js"></script>
   <script src="session.js"></script>
+  <script src="resume.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

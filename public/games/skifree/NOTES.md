@@ -21,8 +21,9 @@ verbatim copy of JezzBall's. Read this before opening the sources.
 
 | File | Role |
 |---|---|
-| `main.js` | Page shell: i18n, options panel, start screen + records, pause/game-over overlays, course toast, `MuchogamesMatch.start/finish`, restart = finish + new match. |
-| `game.js` | `createGame(options)` → `{ setPaused, setMuted, summary, destroy }`. Owns loop, surface, input, audio. |
+| `main.js` | Page shell: i18n, options panel, start screen + records + continue button, pause/game-over overlays, course toast, `MuchogamesMatch.start/resume/finish`, restart = finish + new match. |
+| `game.js` | `createGame(options)` (`options.saved` = a decoded run) → `{ setPaused, setMuted, summary, snapshot, destroy }`. Owns loop, surface, input, audio. |
+| `save.js` | The run in progress (`skifree-current`): encode, validate, decode. |
 | `step.js` | One 60 Hz step + camera (skier at 50 % x, 30 % y). |
 | `skier.js`, `air.js`, `controls.js` | Skier modes `ski / air / crash / eaten`, 7 angles, speed/turbo, tricks + landing, commands. |
 | `world.js` | Seeded 256 px cells around the camera, culled one screen above / far away; spawn tables per zone. |
@@ -39,3 +40,11 @@ verbatim copy of JezzBall's. Read this before opening the sources.
 - Landing: OK if not flipped and not facing backwards; style = 10/spin step, 20/flip step, +30 per 360, +50 per full flip, +5 per ramp. Dead tree touched while airborne burns (+50).
 - Courses start at y = 600 (60 m). Slalom x −680…−420 (500 m, gate every 32 m, 5 s per miss), Freestyle −220…220 (900 m, style), Tree Slalom 420…720 (900 m). Red ← flag: pass on its left; blue → flag: on its right.
 - `finish({ score })` sends the distance in m, no `won` (a run always ends eaten). Storage: `skifree-best-distance`, `skifree-best-slalom`, `skifree-best-tree`, `skifree-best-freestyle`, `skifree-sound`.
+
+## Saved run (decision 0054)
+
+- Key `skifree-current`, JSON `v: 1`: `time` (also drives the lift chairs), `turbo`, the whole `skier` (air fields default to 0), the `yeti` (`mob` position/frame during a chase or while eating, `nextM`, `eatT`, `frame`), course `gates` as one char per gate per lane (`-` untouched, `o` passed, `x` missed; sprites recomputed), the timed `run`, and `world`: `seed`, loaded cell keys, live `movers` (dogs, novices, boarders, yellow snow) and `burnt` dead trees as `[cellKey, index, kind, t, sprite]`.
+- Cells are rebuilt from the seed on restore, without spawning movers (they come from the save); `live` and `burning` are derived. `spawnMover` always draws the same random numbers so a cell regenerates identically whether its mover is alive or not. Not saved: view (recomputed from the skier), course toast, glide sound.
+- Written at run start (after `MuchogamesMatch.start` resolves true), every 1 s while mounted, on pause, on `visibilitychange` hidden and `pagehide`. `decodeRun` drops the save unless every field, sprite id, gate string, mover and burnt tree checks out.
+- Start screen: `skifree-continue-button` (shown only with a valid save, above "Jouer") restores the run paused and calls `MuchogamesMatch.resume()`. `skifree-resume-button` is the pause overlay's.
+- Deleted when the yeti finishes eating the skier (before `finish()`) and on restart (button or R: `finish()` then a new match); overwritten by a new match. Leaving (back button, reload, bfcache `pageshow`) keeps it and calls no `finish()`.

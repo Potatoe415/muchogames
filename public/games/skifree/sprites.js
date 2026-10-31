@@ -167,6 +167,8 @@ export function loadSheet() {
 
 export const spriteHeight = (id) => RECTS[id][3];
 
+export const isSprite = (id) => Number.isInteger(id) && id in RECTS;
+
 export function drawSprite(ctx, sheet, id, x, y) {
   const [sx, sy, w, h] = RECTS[id];
   const dx = Math.round(x - w / 2);
