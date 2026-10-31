@@ -5,8 +5,9 @@ Usage (from the repo root, needs Pillow):
 
 Each sheet is a 3x2 grid on a flat magenta background, top row king, queen,
 rook, bottom row bishop, knight, pawn. Every piece keeps the same scale
-(the tallest piece fills HEIGHT_SHARE of a square) and stands on the same
-baseline.
+(the tallest piece fills HEIGHT_SHARE of a square). The tallest stands on
+BASELINE; a shorter piece is lifted by LIFT of the height it lacks, so a
+pawn looks centred on its square instead of sunk at the bottom.
 
 Writes:
     <out>/pieces/<white|black>-<piece>.webp
@@ -23,8 +24,9 @@ ROOT = Path(__file__).resolve().parent.parent
 SHEETS = [("white", "gemini-chess-white.jpg"), ("black", "gemini-chess-black.jpg")]
 GRID = [["king", "queen", "rook"], ["bishop", "knight", "pawn"]]
 SIZE = 256
-HEIGHT_SHARE = 0.9
-BASELINE = 0.955
+HEIGHT_SHARE = 0.88
+BASELINE = 0.92
+LIFT = 0.35
 
 # Magenta key: strength = min(R, B) - G. Pieces sit near 0, the background
 # near 250; in between is the anti-aliased edge.
@@ -70,7 +72,8 @@ def place(piece, scale, size=SIZE):
     w = max(1, round(piece.width * scale))
     h = max(1, round(piece.height * scale))
     canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    spot = ((size - w) // 2, round(size * BASELINE) - h)
+    lift = (size * HEIGHT_SHARE - h) * LIFT
+    spot = ((size - w) // 2, round(size * BASELINE - lift) - h)
     canvas.alpha_composite(piece.resize((w, h), Image.LANCZOS), spot)
     return canvas
 
