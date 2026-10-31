@@ -173,6 +173,17 @@
     "players": [1, 2]
   },
   {
+    "id": "fruitslash",
+    "title": "Fruit Slash",
+    "kind": "custom",
+    "category": "autres",
+    "added": "2026-10-31",
+    "launch": "/games/fruitslash/index.html",
+    "thumbnail": "/games/fruitslash/assets/thumbnail.svg",
+    "players": [1, 1],
+    "duration": 1
+  },
+  {
     "id": "sudoku",
     "title": "Sudoku",
     "kind": "custom",

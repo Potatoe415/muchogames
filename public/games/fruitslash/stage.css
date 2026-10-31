@@ -1,0 +1,112 @@
+/* Fruit Slash play stage: full-size canvas with the HUD floating on top.
+   The HUD lets swipes through to the canvas, except on the pause button. */
+.fs-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+}
+
+.fs-board {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+.fs-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.fs-hud {
+  position: absolute;
+  top: 8px;
+  left: max(10px, env(safe-area-inset-left));
+  right: max(10px, env(safe-area-inset-right));
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.fs-pill {
+  min-width: 78px;
+  padding: 4px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(22, 8, 56, 0.6);
+  text-align: center;
+  box-shadow: 0 0 14px rgba(177, 92, 255, 0.45);
+}
+
+.fs-pill-time {
+  margin-right: auto;
+}
+
+.fs-pill-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c9b6ff;
+}
+
+.fs-pill-value {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 242, 117, 0.8);
+}
+
+.fs-pill.is-urgent {
+  border-color: #ff6b6b;
+  animation: fs-pulse 0.5s ease-in-out infinite alternate;
+}
+
+.fs-pill.is-urgent .fs-pill-value {
+  color: #ffb3b3;
+}
+
+@keyframes fs-pulse {
+  to {
+    transform: scale(1.08);
+    box-shadow: 0 0 22px rgba(255, 107, 107, 0.8);
+  }
+}
+
+.fs-pause {
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  background: rgba(22, 8, 56, 0.6);
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fs-pill.is-urgent {
+    animation: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .fs-hud {
+    top: 14px;
+  }
+}

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#1b0a4a" />
+      <stop offset="0.55" stop-color="#3c0f86" />
+      <stop offset="1" stop-color="#7a1aa8" />
+    </linearGradient>
+    <radialGradient id="bokeh">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="rainbow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff4d6d" />
+      <stop offset="0.25" stop-color="#ffd23f" />
+      <stop offset="0.5" stop-color="#4cd964" />
+      <stop offset="0.75" stop-color="#4cc9f0" />
+      <stop offset="1" stop-color="#d264ff" />
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#sky)" />
+  <circle cx="70" cy="90" r="90" fill="url(#bokeh)" />
+  <circle cx="340" cy="160" r="110" fill="url(#bokeh)" opacity="0.7" />
+  <circle cx="120" cy="420" r="120" fill="url(#bokeh)" opacity="0.6" />
+  <circle cx="330" cy="440" r="70" fill="url(#bokeh)" />
+
+  <g opacity="0.45">
+    <circle cx="150" cy="250" r="44" fill="#ff4d6d" />
+    <circle cx="205" cy="232" r="14" fill="#ff4d6d" />
+    <circle cx="110" cy="290" r="12" fill="#ff4d6d" />
+    <circle cx="255" cy="330" r="34" fill="#ff9f1c" />
+    <circle cx="295" cy="305" r="10" fill="#ff9f1c" />
+  </g>
+
+  <!-- Watermelon, cut in two halves flying apart -->
+  <g transform="translate(118 196) rotate(-28)" filter="url(#soft)">
+    <path d="M-62 0a62 62 0 0 0 124 0z" fill="#2e9e4f" />
+    <path d="M-54 0a54 54 0 0 0 108 0z" fill="#b8f5a8" />
+    <path d="M-48 0a48 48 0 0 0 96 0z" fill="#ff3d5e" />
+    <g fill="#2a1030">
+      <ellipse cx="-22" cy="16" rx="4" ry="7" />
+      <ellipse cx="0" cy="26" rx="4" ry="7" />
+      <ellipse cx="22" cy="16" rx="4" ry="7" />
+      <ellipse cx="-10" cy="36" rx="3.5" ry="6" />
+      <ellipse cx="12" cy="36" rx="3.5" ry="6" />
+    </g>
+  </g>
+  <g transform="translate(176 150) rotate(152)" filter="url(#soft)">
+    <path d="M-62 0a62 62 0 0 0 124 0z" fill="#2e9e4f" />
+    <path d="M-54 0a54 54 0 0 0 108 0z" fill="#b8f5a8" />
+    <path d="M-48 0a48 48 0 0 0 96 0z" fill="#ff3d5e" />
+    <g fill="#2a1030">
+      <ellipse cx="-18" cy="18" rx="4" ry="7" />
+      <ellipse cx="6" cy="28" rx="4" ry="7" />
+      <ellipse cx="26" cy="12" rx="4" ry="7" />
+    </g>
+  </g>
+
+  <!-- Orange slice -->
+  <g transform="translate(300 300)" filter="url(#soft)">
+    <circle r="50" fill="#ff8c1a" />
+    <circle r="42" fill="#ffe0a8" />
+    <circle r="38" fill="#ffb02e" />
+    <g stroke="#ffe0a8" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-36" x2="0" y2="36" />
+      <line x1="-36" y1="0" x2="36" y2="0" />
+      <line x1="-25" y1="-25" x2="25" y2="25" />
+      <line x1="-25" y1="25" x2="25" y2="-25" />
+    </g>
+    <circle r="5" fill="#ffe0a8" />
+  </g>
+
+  <!-- Strawberry -->
+  <g transform="translate(290 120) rotate(18)" filter="url(#soft)">
+    <path d="M0 58C-34 40-44 6-34-14c8-14 26-16 34-8 8-8 26-6 34 8 10 20 0 54-34 72z" fill="#ff2e63" />
+    <g fill="#ffe14d">
+      <ellipse cx="-16" cy="2" rx="2.5" ry="4" />
+      <ellipse cx="0" cy="-2" rx="2.5" ry="4" />
+      <ellipse cx="16" cy="2" rx="2.5" ry="4" />
+      <ellipse cx="-8" cy="20" rx="2.5" ry="4" />
+      <ellipse cx="8" cy="20" rx="2.5" ry="4" />
+      <ellipse cx="0" cy="38" rx="2.5" ry="4" />
+    </g>
+    <path d="M-26-16 0-8 26-16 14-26 0-20-14-26z" fill="#3fd16b" />
+    <rect x="-3" y="-38" width="6" height="16" rx="3" fill="#2e9e4f" />
+  </g>
+
+  <!-- Lollipop -->
+  <g transform="translate(110 380) rotate(-14)" filter="url(#soft)">
+    <rect x="-5" y="30" width="10" height="80" rx="5" fill="#fdf7ff" />
+    <circle r="46" fill="#ff70a6" />
+    <path d="M0 0m-34 0a34 34 0 1 1 68 0a24 24 0 1 1-48 0a14 14 0 1 1 28 0a6 6 0 1 1-12 0" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" />
+  </g>
+
+  <!-- Rainbow blade slash -->
+  <path d="M40 440C140 330 230 230 372 70" fill="none" stroke="url(#rainbow)" stroke-width="22" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M52 426C150 322 236 226 362 82" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.95" />
+
+  <!-- Sparkles -->
+  <g fill="#fff275" filter="url(#soft)">
+    <path d="M60 170l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" />
+    <path d="M350 380l5 11 11 5-11 5-5 11-5-11-11-5 11-5z" />
+    <path d="M220 60l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" />
+    <path d="M240 450l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" />
+  </g>
+</svg>

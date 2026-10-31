@@ -60,3 +60,6 @@ public/games/chess/**/*.md
 !public/games/bridge/
 !public/games/bridge/**
 public/games/bridge/**/*.md
+!public/games/fruitslash/
+!public/games/fruitslash/**
+public/games/fruitslash/**/*.md

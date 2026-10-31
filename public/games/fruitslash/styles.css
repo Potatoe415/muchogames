@@ -1,0 +1,199 @@
+/* Fruit Slash: glowing night-party skin over the shared header. Mobile
+   first. Page frame, option chips, cards, buttons and overlays here; the
+   start screen in start.css, the play stage in stage.css. */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: #1b0a4a;
+  color: #fdf7ff;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: #1b0a4a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.nav-title {
+  background: linear-gradient(90deg, #ff4d6d, #ffd23f, #4cd964, #4cc9f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.fs-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fs-chip {
+  min-width: 56px;
+  padding: 8px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.fs-chip.active,
+.fs-chip[aria-pressed="true"] {
+  border-color: #b15cff;
+  background: #f1e4ff;
+}
+
+.fs-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fs-app [hidden] {
+  display: none !important;
+}
+
+.fs-app button:focus-visible {
+  outline: 3px solid #fff275;
+  outline-offset: 2px;
+}
+
+.fs-card {
+  width: min(100%, 420px);
+  padding: 18px 16px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  background: rgba(22, 8, 56, 0.88);
+  text-align: center;
+  box-shadow:
+    0 0 32px rgba(255, 92, 200, 0.35),
+    0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+.fs-card p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.fs-button {
+  min-width: 180px;
+  min-height: 52px;
+  margin-top: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ff4d6d, #ff9f1c);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 900;
+  box-shadow:
+    0 4px 0 #a3163a,
+    0 0 20px rgba(255, 110, 90, 0.5);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.fs-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #a3163a;
+}
+
+.fs-card > .fs-button {
+  display: block;
+  margin: 10px auto 0;
+}
+
+.fs-button-soft {
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.fs-best {
+  margin-top: 12px !important;
+  font-weight: 800;
+  color: #ffd23f;
+}
+
+.fs-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 16px max(16px, env(safe-area-inset-right))
+    max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  overflow-y: auto;
+  background: rgba(12, 4, 32, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.fs-overlay-title {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.fs-stars {
+  font-size: 2.6rem;
+  letter-spacing: 0.1em;
+  color: #ffd23f;
+  filter: drop-shadow(0 0 10px rgba(255, 210, 63, 0.7));
+}
+
+.fs-score-line {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff275;
+}
+
+@media (min-width: 700px) {
+  .fs-card {
+    width: min(100%, 560px);
+    padding: 24px 28px;
+  }
+}
+
+/* Short landscape screens: the end card must fit in ~300px. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .fs-card {
+    width: min(100%, 640px);
+    padding: 10px 16px 12px;
+  }
+
+  .fs-stars {
+    font-size: 1.8rem;
+  }
+
+  .fs-overlay-title {
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+  }
+
+  .fs-card p {
+    margin-bottom: 4px;
+  }
+}
