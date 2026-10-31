@@ -43,3 +43,23 @@ Validated on load (`decodeMatch`); an invalid save is deleted.
   draw), restarts the timer from the saved seconds, reopens the lifeline
   dialog, and replays the reveal of a locked answer.
 - `state.matchId` stops the pending reveal waits of a match that was left.
+
+## TV mode (`html.tv`)
+
+Couch layout for a TV browser (Sony Bravia / Google TV, Android TV, Fire TV,
+Tizen, webOS), played with the remote. `app.js` is untouched: same questions,
+same flow, same save.
+
+- `tv.js` (classic script in `<head>`): turns the mode on from `?tv=1` / `?tv=0`
+  (remembered in `localStorage` `millionaire-tv`), else the stored choice, else
+  a TV user agent. Options panel button `millionaire-tv-mode-button` toggles it.
+  Lays the page on a 1920x1080 canvas zoomed to the viewport (`--tv-zoom`,
+  `--tv-w`, `--tv-h`), moves the music button into the top bar, places the
+  focus (start/resume button, the question card on each new question, a
+  dialog's close button), asks for fullscreen and a screen wake lock on start.
+- `tv-nav.js`: arrows move the focus to the nearest control (spatial
+  navigation), OK is the native Enter click, Back/Escape closes the open
+  dialog or panel, else leaves the screen (in-match ✖, result → home, start → hub).
+- `tv.css` (canvas, top bar, ladder always shown on the right, start/result,
+  dialogs) and `tv-game.css` (game grid, lifelines, lozenge question/answers
+  coloured through `--tv-edge` / `--tv-fill`). Only px, no viewport units.

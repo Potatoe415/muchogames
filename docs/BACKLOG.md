@@ -4,6 +4,9 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] **User**: play Millionaire on the Sony Bravia 8 II browser (`/games/millionaire/index.html?tv=1` once, then remembered): whole screen filled, remote arrows/OK/Back, fullscreen on "Commencer", screen stays awake. If the TV's Back key leaves the page instead of closing dialogs, report it (Android TV browsers may not send it to the page).
+- [ ] Millionaire "Avis du public" can total over 100 % and drop an answer (`buildAudienceDistribution`, pre-existing): seen A 45 % / B 8 % / C 48 %, D missing.
+- [ ] Millionaire `style.css`: the `.start-card, .result-card` rule has a literal `` `n `` in its selector, so the browser drops it (pre-existing; TV mode sets its own sizes).
 - [ ] **User**: phone check of decision 0054 in every game: start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin. Online (Memory, Yatzy, two phones): leaving shows the "away" banner to the other player, "Reprendre en ligne" brings both back.
 - [ ] Online "away" is a one-shot notice (`sendNotice`): a player who reloads while the other is away loses the banner. Optional: a lasting away flag on the room (`api/rooms/*`, L2).
 - [ ] Back button mid-match returns to the game's own start screen in Millionaire and Pyramide, not the hub (`docs/PLATFORM_RULES.md` section 1). Owner call.

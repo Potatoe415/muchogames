@@ -6,6 +6,10 @@
     <title>Qui veut gagner des millions</title>
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tv.css" />
+    <link rel="stylesheet" href="./tv-game.css" />
+    <script src="./tv.js"></script>
+    <script src="./tv-nav.js" defer></script>
   </head>
   <body data-match-saved>
     <div class="app-shell">
@@ -62,6 +66,11 @@
                   <option value="es-419">Espanol (Latam)</option>
                 </select>
               </label>
+            </div>
+            <div class="options-panel-section" data-id="millionaire-options-tv">
+              <button class="secondary-cta" id="tvModeButton" type="button" data-id="millionaire-tv-mode-button" aria-pressed="false">
+                TV
+              </button>
             </div>
             <details id="rulesSection" class="options-panel-section" data-id="game-options-rules" style="display: none">
               <summary id="rulesLabel" class="options-panel-section-title">Regles</summary>
@@ -123,7 +132,7 @@
               </div>
             </div>
 
-            <article class="question-card glass-panel">
+            <article class="question-card glass-panel" id="questionCard" data-id="millionaire-question-card" tabindex="-1">
               <div class="question-accent"></div>
               <h2 class="question-text" id="questionText">Question text</h2>
             </article>

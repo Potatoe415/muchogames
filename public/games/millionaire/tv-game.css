@@ -1,0 +1,209 @@
+/* TV mode, game screen (html.tv, see tv.css for the canvas and its px).
+   Grid areas, lifelines, and the show-style question and answer lozenges. */
+
+/* Game screen: prize and lifelines on top, logo in the middle, question and
+   answers at the bottom. */
+html.tv #gameScreen.active {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-areas: "head lifelines" "logo logo" "question question" "answers answers";
+  row-gap: 22px;
+}
+
+html.tv #gameScreen::before {
+  content: "";
+  grid-area: logo;
+  justify-self: center;
+  height: 100%;
+  aspect-ratio: 2 / 1;
+  background: url("./assets/thumbnail.jpg") center / contain no-repeat;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 40%, transparent 70%);
+  mask-image: radial-gradient(ellipse at center, #000 40%, transparent 70%);
+}
+
+html.tv .game-header {
+  grid-area: head;
+  justify-content: flex-start;
+  gap: 32px;
+  margin: 0;
+}
+
+html.tv .game-header .eyebrow {
+  flex-wrap: wrap;
+  letter-spacing: 0.1em;
+}
+
+html.tv .current-prize {
+  min-width: 320px;
+  font-size: 56px;
+}
+
+html.tv .timer-chip {
+  min-width: 140px;
+  text-align: center;
+}
+
+html.tv .timer-chip .chip-label {
+  font-size: 18px;
+}
+
+html.tv .timer-chip strong {
+  font-size: 48px;
+}
+
+html.tv .lifeline-row {
+  grid-area: lifelines;
+  grid-template-columns: repeat(4, 120px);
+  gap: 16px;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+}
+
+html.tv .lifeline-button {
+  min-height: 80px;
+  border-width: 3px;
+}
+
+html.tv .lifeline-icon-image {
+  width: 64px;
+  height: 52px;
+}
+
+html.tv .lifeline-button + .lifeline-button::before {
+  display: none;
+}
+
+/* Question and answers: show-style lozenges. ::before is the bright edge,
+   ::after the fill; --tv-edge / --tv-fill carry the answer state. */
+html.tv .question-card,
+html.tv .answer-button {
+  --tv-edge: linear-gradient(180deg, #dfe7ff, #6f88d8);
+  --tv-fill: linear-gradient(180deg, #0f318a, #020b36);
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html.tv .question-card::before,
+html.tv .question-card::after,
+html.tv .answer-button::before,
+html.tv .answer-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  clip-path: polygon(52px 0, calc(100% - 52px) 0, 100% 50%, calc(100% - 52px) 100%, 52px 100%, 0 50%);
+  background: var(--tv-edge);
+}
+
+html.tv .question-card::after,
+html.tv .answer-button::after {
+  inset: 4px 5px;
+  background: var(--tv-fill);
+}
+
+html.tv .question-card {
+  grid-area: question;
+  min-height: 176px;
+  margin: 0;
+  padding: 28px 120px;
+}
+
+/* The studio line running through the question and each answer row. */
+html.tv .question-accent,
+html.tv .answers-grid::before,
+html.tv .answers-grid::after {
+  position: absolute;
+  left: -64px;
+  right: -64px;
+  height: 3px;
+  z-index: -2;
+  opacity: 1;
+  background: linear-gradient(90deg, transparent, #8ea6ff 8%, #8ea6ff 92%, transparent);
+}
+
+html.tv .question-accent {
+  inset: calc(50% - 1.5px) -64px auto;
+}
+
+html.tv .question-text {
+  max-width: none;
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+html.tv .answers-grid {
+  grid-area: answers;
+  position: relative;
+  isolation: isolate;
+  grid-auto-rows: 1fr;
+  gap: 20px 48px;
+}
+
+html.tv .answers-grid::before,
+html.tv .answers-grid::after {
+  content: "";
+  top: calc((100% - 20px) / 4 - 1.5px);
+}
+
+html.tv .answers-grid::after {
+  top: calc(100% - (100% - 20px) / 4 - 1.5px);
+}
+
+html.tv .answer-button {
+  min-height: 100px;
+  gap: 18px;
+  padding: 10px 64px;
+  transform: none;
+}
+
+html.tv .answer-button > span {
+  position: relative;
+}
+
+html.tv .answer-prefix {
+  min-width: 56px;
+  font-size: 38px;
+  color: #ffb000;
+}
+
+html.tv .answer-text {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+html.tv .answer-button:is(:hover, :focus):not(:disabled) {
+  --tv-edge: linear-gradient(180deg, #fff6c2, #ffc21a);
+  --tv-fill: linear-gradient(180deg, #1d4fc4, #072483);
+  transform: scale(1.025);
+  box-shadow: none;
+}
+
+html.tv .answer-button.selected {
+  --tv-edge: linear-gradient(180deg, #fff6c2, #ffc21a);
+  --tv-fill: linear-gradient(180deg, #ffb84a, #db6a00);
+  color: #1b0d00;
+}
+
+html.tv .answer-button.correct {
+  --tv-edge: linear-gradient(180deg, #e8ffef, #5be38f);
+  --tv-fill: linear-gradient(180deg, #4fd884, #178a47);
+  color: #041b0d;
+}
+
+html.tv .answer-button.wrong {
+  --tv-edge: linear-gradient(180deg, #ffe1e8, #ff7a96);
+  --tv-fill: linear-gradient(180deg, #d9435f, #7e112f);
+  color: #fff;
+}
+
+html.tv .answer-button:is(.selected, .correct) .answer-prefix {
+  color: inherit;
+}
+

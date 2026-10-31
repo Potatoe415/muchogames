@@ -1,0 +1,273 @@
+/* TV mode (html.tv, set by tv.js). Lengths are px on a 1920x1080 canvas that
+   tv.js zooms to the real viewport; --tv-w / --tv-h are the canvas size in
+   those px, so no viewport unit is used here. Heavy blur effects are dropped:
+   TV chips render them slowly. */
+
+html.tv body {
+  zoom: var(--tv-zoom, 1);
+  overflow: hidden;
+}
+
+html.tv .glass-panel,
+html.tv .overlay-backdrop {
+  backdrop-filter: none;
+}
+
+html.tv .aurora {
+  filter: none;
+}
+
+html.tv .app-shell {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 20px;
+  width: var(--tv-w);
+  height: var(--tv-h);
+  min-height: 0;
+  padding: 32px 64px 40px;
+}
+
+/* Top bar: back, logo, actions — full width, inside the TV safe area. */
+html.tv .topbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  max-width: none;
+  margin: 0;
+}
+
+html.tv .topbar-actions {
+  justify-self: end;
+  gap: 18px;
+}
+
+html.tv .brand-logo {
+  max-height: 112px;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 45%, transparent 72%);
+  mask-image: radial-gradient(ellipse at center, #000 45%, transparent 72%);
+}
+
+/* The game screen shows the logo big in the middle instead. */
+html.tv .app-shell:has(#gameScreen.active) .brand-logo {
+  visibility: hidden;
+}
+
+html.tv .icon-button,
+html.tv .floating-music-button {
+  position: static;
+  width: 76px;
+  height: 76px;
+  font-size: 32px;
+}
+
+html.tv .floating-info-button {
+  display: none;
+}
+
+/* Remote focus: a thick gold ring that reads from the couch. */
+html.tv :is(button, select, summary):focus {
+  outline: 5px solid #ffd24a;
+  outline-offset: 5px;
+  box-shadow: 0 0 36px rgba(255, 210, 74, 0.55);
+}
+
+/* The question only holds the focus between answers; it is not a control. */
+.question-card:focus,
+html.tv .answer-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Game area left, prize ladder always visible on the right, as on the show. */
+html.tv .layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: 48px;
+  max-width: none;
+  min-height: 0;
+  margin: 0;
+}
+
+html.tv .stage {
+  grid-column: 1;
+  grid-row: 1;
+  min-height: 0;
+}
+
+html.tv .screen.active {
+  height: 100%;
+}
+
+html.tv .ladder-panel,
+html.tv .ladder-panel.is-collapsed {
+  grid-column: 2;
+  grid-row: 1;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-height: none;
+  padding: 22px 20px;
+  overflow: hidden;
+  transform: none;
+}
+
+html.tv .eyebrow {
+  font-size: 18px;
+}
+
+html.tv .ladder-header h2 {
+  font-size: 28px;
+}
+
+html.tv .ladder-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+  margin-top: 14px;
+}
+
+html.tv .ladder-item {
+  flex: 1 1 0;
+  min-height: 0;
+  grid-template-columns: 48px minmax(0, 1fr);
+  padding: 0 22px;
+}
+
+html.tv .ladder-rank {
+  font-size: 24px;
+}
+
+html.tv .ladder-prize {
+  font-size: 28px;
+}
+
+html.tv .ladder-item.current {
+  transform: none;
+  color: #1b0d00;
+  background: linear-gradient(180deg, #ffd25a, #f08a00);
+}
+
+/* Start and result screens: one centred column. */
+html.tv #startScreen.active,
+html.tv #resultScreen.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+html.tv .hero-score {
+  width: 1040px;
+  max-width: 100%;
+  margin: 0;
+  padding: 44px 56px;
+}
+
+html.tv .hero-label,
+html.tv .result-stat span {
+  font-size: 20px;
+}
+
+html.tv .hero-prize {
+  min-width: 600px;
+  font-size: 88px;
+}
+
+html.tv .hero-copy,
+html.tv .result-copy {
+  font-size: 28px;
+}
+
+html.tv .start-card {
+  width: 1040px;
+}
+
+html.tv .result-card {
+  width: 1100px;
+}
+
+html.tv .start-card,
+html.tv .result-card {
+  max-width: 100%;
+  margin: 0;
+  padding: 32px 48px;
+  text-align: center;
+}
+
+html.tv .start-meta-row,
+html.tv .start-actions,
+html.tv .result-actions {
+  justify-content: center;
+}
+
+html.tv .mode-tag {
+  font-size: 20px;
+}
+
+html.tv .primary-cta,
+html.tv .secondary-cta {
+  min-height: 92px;
+  padding: 0 64px;
+  font-size: 34px;
+}
+
+html.tv .resume-cta {
+  margin-bottom: 20px;
+}
+
+html.tv .result-card h2 {
+  font-size: 72px;
+}
+
+html.tv .result-stat strong {
+  font-size: 46px;
+}
+
+/* Lifeline dialogs and the shared panels, sized for the couch. */
+html.tv .modal {
+  width: 960px;
+  max-width: 100%;
+  padding: 44px 52px;
+}
+
+html.tv .modal-header h2 {
+  font-size: 44px;
+}
+
+html.tv .modal-copy {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+html.tv .audience-row {
+  grid-template-columns: 72px minmax(0, 1fr) 100px;
+  gap: 20px;
+}
+
+html.tv .audience-track {
+  height: 34px;
+}
+
+html.tv .audience-label,
+html.tv .audience-value {
+  font-size: 34px;
+}
+
+html.tv .options-panel-sheet,
+html.tv .mg-match-dialog__sheet,
+html.tv .mg-feedback-sheet {
+  zoom: 1.6;
+}
+
+html.tv .options-panel-sheet {
+  max-height: calc(var(--tv-h) * 0.8 / 1.6);
+}
+
+html.tv .options-panel .secondary-cta {
+  min-height: 48px;
+  padding: 0 22px;
+  font-size: 1rem;
+}
