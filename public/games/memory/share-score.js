@@ -1,26 +1,19 @@
 import { translate } from "./i18n.js";
 import { soloPoints } from "./points.js";
-import { soloDetail } from "./screen.js";
 
 const NOTE_MS = 2000;
 
-function gameUrl() {
-  return new URL("./", window.location.href).toString();
+function gameLink() {
+  const url = new URL("./", window.location.href);
+  return `${url.host}${url.pathname}`;
 }
 
 function scoreText(page) {
   const state = page.state;
-  const text = (key, vars) => translate(page.lang, key, vars);
-  return [
-    gameUrl(),
-    text("shareLevel", {
-      grid: state.config.grid.replace("x", "×"),
-      cards: state.cards.length,
-      theme: text(`theme-${state.config.theme}`)
-    }),
-    `${text("endPoints", { n: soloPoints(state, state.elapsedMs) })} · ${soloDetail(page, state)}`,
-    text("shareChallenge")
-  ].join("\n");
+  const points = translate(page.lang, "endPoints", {
+    n: soloPoints(state, state.elapsedMs)
+  });
+  return `${gameLink()} - Memory ${state.config.grid} - ${points}`;
 }
 
 function flash(page, button, key) {

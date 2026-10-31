@@ -17,7 +17,7 @@ Twin cards. Vanilla ES modules. Read this before the sources.
 | `pickers.js` | Setup thumbnails: theme (`card_01`) and card back. |
 | `game.js` | Turn loop: reducer, 1200 ms miss, bot delays, save at creation and after every flip / close, timer cleanup. Solo clock (`elapsed()`, `setVisible()`), stamped into `state.elapsedMs`. |
 | `points.js` | Solo points and `m:ss` clock text. |
-| `share-score.js` | End card "Partager" (solo): game URL first, then grid + card count + theme, points + detail, a challenge line. `navigator.share` (phone sheet: WhatsApp…), else the text is copied. |
+| `share-score.js` | End card "Partager" (solo), one line: `www.muchogames.win/games/memory/ - Memory 4x4 - 727 points` (no protocol, host from the page). `navigator.share` (phone sheet: WhatsApp…), else the text is copied. |
 | `reducer.js` | Pure state. `TURN` / `BOT` / `EVALUATING` / `GAME_OVER`. |
 | `bot.js` | Memory bot. Reads `known` only, except the forced miss which skips the twin. |
 | `deck.js` | Random N pairs from the theme, then Fisher-Yates, then `instanceId`. |

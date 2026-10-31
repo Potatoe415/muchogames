@@ -153,7 +153,7 @@ function endTitle(page, state) {
   return text(page, state.winner === mySeat(page, state) ? "win" : "lose");
 }
 
-export function soloDetail(page, state) {
+function soloDetail(page, state) {
   return text(page, "soloDetail", {
     pairs: state.scores[0],
     misses: state.misses,
