@@ -13,6 +13,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] SkiFree: right-hand controls cut off at 1024 px landscape (pre-existing).
 - [ ] Yatzy: restart carries `data-match-quit`, so its dialog says "saved" although restart replaces the match.
 - [ ] **User**: play-test Jeu de dames (`/games/checkers/`) on phone, tablet and desktop: the 4 levels, two players, 10×10 and 8×8, drag and tap, undo/hint, reload mid-game then "Reprendre".
+- [ ] **User**: play-test Échecs (`/games/chess/`) on phone (iPhone + Android: piece glyphs render as text, not emoji), tablet and desktop: the 4 levels, two players, castling, promotion picker, undo/hint, reload mid-game then "Reprendre".
 - [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels on Lexy's Labyrinth engine, Lynx rules, 147/149 proven winnable) on phone (portrait + landscape) and desktop.
 - [ ] `loop.js` and `storage.js` are now verbatim copies in 4 Entertainment Pack games: extract to `public/shared/` the first time one copy has to change.
 - [ ] **User**: add `ADMIN_USER_IDS` (your Supabase user id, same as on `muchogames`) to the `coinchapp` Vercel project, Production + Preview, then redeploy — until then the admin pays coins in coinchapp.
@@ -49,6 +50,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Pyramide: 55 broken accent characters (U+FFFD) already committed in `i18n.js` and 9 in `app.js` (rules show "R�gles"); retype the FR/ES copy. Pre-existing, found 2026-10-29.
 - [ ] Split `blackstories.js` (414 lines since the save was added).
 - [ ] Jeu de dames online mode on `online-room.js` (needs `checkers` in `ROOM_GAMES`, `api/_lib/rooms.js` — L2).
+- [ ] Échecs: online mode (same path as Jeu de dames, L2); optional SVG piece set if the Unicode glyphs look off on some phone.
 - [ ] Ship a genuinely lighter mobile banner — `public/assets/banner-games-hub-mobile.jpg` is byte-identical to the desktop banner; needs a real resized asset (would add an image dependency such as `sharp` — user's call).
 - [ ] Clear the 13 remaining lint warnings, then add `--max-warnings 0`. Mostly dead code (`detectInitialLocale`, `calculateMinMaxDelta`, `handleLanguageSelection`, `isStraight`, `vegLabel`) and one `catch (error)` that should be `catch {}`.
 - [ ] Decide whether to add automated tests for `scoring.js` (Yatzy) and `shared/js/engine.js` — no automated tests exist in this repo today.

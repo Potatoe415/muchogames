@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#3a5446"/>
+      <stop offset="1" stop-color="#101814"/>
+    </radialGradient>
+    <pattern id="squares" x="40" y="110" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#f0d9b5"/>
+      <rect x="40" width="40" height="40" fill="#b58863"/>
+      <rect y="40" width="40" height="40" fill="#b58863"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.55"/>
+    </filter>
+    <style>
+      .pieces text { font-family: "Segoe UI Symbol", "Noto Sans Symbols 2", "Apple Symbols", "DejaVu Sans", serif; font-size: 34px; text-anchor: middle; fill: #1b1916; }
+      .pieces text.f { fill: #fffdf6; }
+    </style>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <rect x="34" y="104" width="332" height="332" rx="14" fill="#5a3a22" filter="url(#shadow)"/>
+  <rect x="40" y="110" width="320" height="320" fill="url(#squares)"/>
+  <rect x="320" y="230" width="40" height="40" fill="#ffd65c" fill-opacity="0.45"/>
+  <rect x="160" y="390" width="40" height="40" fill="#ffd65c" fill-opacity="0.45"/>
+  <g class="pieces">
+  <text x="300" y="143">♚&#xFE0E;</text>
+  <text x="260" y="143">♜&#xFE0E;</text>
+  <text x="180" y="143">♛&#xFE0E;</text>
+  <text x="260" y="183">♟&#xFE0E;</text>
+  <text x="300" y="183">♟&#xFE0E;</text>
+  <text x="340" y="183">♟&#xFE0E;</text>
+  <text x="140" y="223">♞&#xFE0E;</text>
+  <text x="220" y="263">♟&#xFE0E;</text>
+  <text class="f" x="340" y="263">♛&#xFE0E;</text><text x="340" y="263">♕&#xFE0E;</text>
+  <text class="f" x="140" y="303">♝&#xFE0E;</text><text x="140" y="303">♗&#xFE0E;</text>
+  <text class="f" x="220" y="303">♟&#xFE0E;</text><text x="220" y="303">♙&#xFE0E;</text>
+  <text class="f" x="260" y="343">♞&#xFE0E;</text><text x="260" y="343">♘&#xFE0E;</text>
+  <text class="f" x="260" y="383">♟&#xFE0E;</text><text x="260" y="383">♙&#xFE0E;</text>
+  <text class="f" x="300" y="383">♟&#xFE0E;</text><text x="300" y="383">♙&#xFE0E;</text>
+  <text class="f" x="340" y="383">♟&#xFE0E;</text><text x="340" y="383">♙&#xFE0E;</text>
+  <text class="f" x="260" y="423">♜&#xFE0E;</text><text x="260" y="423">♖&#xFE0E;</text>
+  <text class="f" x="300" y="423">♚&#xFE0E;</text><text x="300" y="423">♔&#xFE0E;</text>
+  </g>
+  <text x="200" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#f4f1e8">&#201;checs</text>
+  <text x="200" y="476" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#e8c15a" letter-spacing="3">SOLO &#183; &#192; DEUX</text>
+</svg>

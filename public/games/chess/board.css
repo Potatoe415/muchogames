@@ -1,0 +1,206 @@
+/* Chessboard: themes, squares, coordinates, move marks and pieces. The board
+   is a size container so squares and pieces scale with it (--sq = one
+   square). */
+.ch-app[data-theme="wood"] {
+  --sq-light: #f0d9b5;
+  --sq-dark: #b58863;
+  --frame: #5a3a22;
+}
+
+.ch-app[data-theme="classic"] {
+  --sq-light: #eeeed2;
+  --sq-dark: #769656;
+  --frame: #34452a;
+}
+
+.ch-app[data-theme="ocean"] {
+  --sq-light: #dee6ee;
+  --sq-dark: #6c8bad;
+  --frame: #1f3249;
+}
+
+.ch-frame {
+  box-sizing: border-box;
+  width: 100cqmin;
+  height: 100cqmin;
+  padding: 1.6cqmin;
+  border-radius: 2cqmin;
+  background: var(--frame);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.ch-board {
+  --sq: calc(100cqw / 8);
+  position: relative;
+  container-type: size;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.6cqmin;
+  touch-action: none;
+}
+
+.ch-sq {
+  position: relative;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--sq-light);
+  cursor: pointer;
+}
+
+.ch-sq.is-dark {
+  background: var(--sq-dark);
+}
+
+.ch-sq:focus-visible {
+  z-index: 1;
+  outline: 3px solid #ffffff;
+  outline-offset: -3px;
+}
+
+.ch-coord {
+  position: absolute;
+  font-family: var(--font-sans, sans-serif);
+  font-size: calc(var(--sq) * 0.19);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--sq-dark);
+  pointer-events: none;
+}
+
+.ch-sq.is-dark .ch-coord {
+  color: var(--sq-light);
+}
+
+.ch-rank {
+  top: 5%;
+  left: 6%;
+}
+
+.ch-file {
+  right: 6%;
+  bottom: 4%;
+}
+
+.ch-sq.is-last {
+  background-image: linear-gradient(
+    rgba(255, 214, 92, 0.42),
+    rgba(255, 214, 92, 0.42)
+  );
+}
+
+.ch-sq.is-selected {
+  background-image: linear-gradient(
+    rgba(255, 214, 92, 0.6),
+    rgba(255, 214, 92, 0.6)
+  );
+  box-shadow: inset 0 0 0 calc(var(--sq) * 0.06) #ffd65c;
+}
+
+.ch-sq.is-check {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 40, 30, 0.95) 0%,
+    rgba(230, 30, 20, 0.55) 45%,
+    rgba(200, 0, 0, 0) 75%
+  );
+}
+
+.ch-sq.is-hint {
+  animation: ch-hint 0.9s ease-in-out infinite alternate;
+}
+
+.ch-sq.is-target::after,
+.ch-sq.is-capture::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ch-sq.is-target::after {
+  inset: 36%;
+  background: rgba(20, 30, 20, 0.32);
+}
+
+.ch-sq.is-capture::after {
+  inset: 4%;
+  border: calc(var(--sq) * 0.08) solid rgba(20, 30, 20, 0.32);
+}
+
+/* --- Pieces --- */
+.ch-pieces {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ch-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: var(--sq);
+  height: var(--sq);
+  font-size: calc(var(--sq) * 0.88);
+  line-height: var(--sq);
+  text-align: center;
+  transform: translate(calc(var(--c) * 100%), calc(var(--r) * 100%));
+  filter: drop-shadow(
+    0 calc(var(--sq) * 0.03) calc(var(--sq) * 0.025) rgba(0, 0, 0, 0.45)
+  );
+  transition:
+    transform 0.22s ease-in-out,
+    scale 0.15s ease,
+    opacity 0.26s ease;
+}
+
+.ch-piece.is-moving {
+  z-index: 3;
+}
+
+.ch-piece.is-dragging {
+  z-index: 4;
+  scale: 1.15;
+  transition: scale 0.15s ease;
+}
+
+.ch-piece.is-lifted {
+  scale: 1.08;
+}
+
+.ch-piece.is-taken {
+  opacity: 0.5;
+}
+
+.ch-piece.is-gone {
+  opacity: 0;
+  scale: 0.5;
+}
+
+@keyframes ch-hint {
+  from {
+    box-shadow: inset 0 0 0 calc(var(--sq) * 0.04) rgba(120, 220, 255, 0.5);
+  }
+  to {
+    box-shadow: inset 0 0 0 calc(var(--sq) * 0.1) rgba(120, 220, 255, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ch-piece {
+    transition-duration: 0.06s;
+  }
+
+  .ch-sq.is-hint {
+    animation: none;
+    box-shadow: inset 0 0 0 calc(var(--sq) * 0.1) rgba(120, 220, 255, 1);
+  }
+}

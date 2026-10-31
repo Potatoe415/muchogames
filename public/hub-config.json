@@ -163,6 +163,16 @@
     "players": [1, 2]
   },
   {
+    "id": "chess",
+    "title": "Échecs",
+    "kind": "custom",
+    "category": "autres",
+    "added": "2026-10-31",
+    "launch": "/games/chess/index.html",
+    "thumbnail": "/games/chess/assets/thumbnail.svg",
+    "players": [1, 2]
+  },
+  {
     "id": "sudoku",
     "title": "Sudoku",
     "kind": "custom",

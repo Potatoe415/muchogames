@@ -1,0 +1,316 @@
+/* Chess: dark green page over the shared header. Start screen, piece glyphs,
+   buttons and end card. Stage layout in stage.css, board in board.css. */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 0%, #2f4339 0%, #141c18 70%) fixed,
+    #141c18;
+  color: #f4f1e8;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(232, 240, 230, 0.12);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #f4f1e8;
+  letter-spacing: 0.02em;
+}
+
+.options-panel-sheet {
+  color: #1d2621;
+}
+
+.ch-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ch-chip {
+  min-width: 56px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 2px solid #d5ddd6;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1d2621;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ch-chip.active {
+  border-color: #2f6248;
+  background: #e1efe6;
+}
+
+.ch-app {
+  --accent: #e8c15a;
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ch-app [hidden] {
+  display: none !important;
+}
+
+/* --- Piece glyphs: white = outline glyph over a white fill (data-glyph) --- */
+.ch-glyph,
+.ch-piece {
+  font-family:
+    "Segoe UI Symbol", "Noto Sans Symbols 2", "Noto Sans Symbols",
+    "Apple Symbols", "DejaVu Sans", serif;
+  font-variant-emoji: text;
+  font-weight: 400;
+  color: #1b1916;
+}
+
+.ch-glyph {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 1.6em;
+  line-height: 1;
+  text-align: center;
+}
+
+.ch-glyph.is-white::before,
+.ch-piece.is-white::before {
+  content: attr(data-glyph);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  color: #fffdf6;
+}
+
+/* --- Start screen --- */
+.ch-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 16px max(14px, env(safe-area-inset-right))
+    calc(16px + env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.ch-card {
+  width: min(94vw, 440px);
+  padding: 22px 18px;
+  border-radius: 20px;
+  background: #f7f5ee;
+  color: #1d2621;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.ch-logo {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: 1.7rem;
+}
+
+.ch-title {
+  margin: 8px 0 4px;
+  font-size: clamp(1.7rem, 7vw, 2.2rem);
+  font-weight: 900;
+}
+
+.ch-pitch {
+  margin: 0 0 14px;
+  color: #56645b;
+}
+
+.ch-field {
+  margin: 0 0 14px;
+}
+
+.ch-label {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5d7466;
+}
+
+.ch-seg {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: 6px;
+}
+
+.ch-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 46px;
+  padding: 8px 6px;
+  border: 2px solid #dae2db;
+  border-radius: 12px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ch-option .ch-glyph {
+  font-size: 1.5em;
+}
+
+.ch-option.active {
+  border-color: #2f6248;
+  background: #dcede2;
+}
+
+.ch-button {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #3f8160, #2f6248);
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #1b3d2b;
+  touch-action: manipulation;
+}
+
+.ch-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #1b3d2b;
+}
+
+.ch-button-resume {
+  margin-bottom: 14px;
+  background: linear-gradient(180deg, #d9a93a, #b8871d);
+  box-shadow: 0 4px 0 #7a5810;
+}
+
+.ch-button-ghost {
+  background: #ffffff;
+  color: #1d2621;
+  box-shadow: inset 0 0 0 2px #d5ddd6;
+}
+
+.ch-link {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* --- Overlays: promotion picker and end card --- */
+.ch-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(8, 14, 11, 0.55);
+  animation: ch-fade 0.25s ease;
+}
+
+.ch-end-card,
+.ch-promo-card {
+  width: min(90vw, 360px);
+}
+
+.ch-end-title {
+  margin: 0 0 6px;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.ch-overlay[data-result="win"] .ch-end-title {
+  color: #2f7d32;
+}
+
+.ch-overlay[data-result="loss"] .ch-end-title {
+  color: #b3261e;
+}
+
+.ch-end-actions {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ch-promo-title {
+  margin: 0 0 12px;
+  font-weight: 800;
+}
+
+.ch-promo-choices {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.ch-promo-choice {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 8px 2px;
+  border: 2px solid #dae2db;
+  border-radius: 12px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ch-promo-choice:focus-visible,
+.ch-promo-choice:hover {
+  border-color: #2f6248;
+  background: #dcede2;
+}
+
+.ch-promo-choice .ch-glyph {
+  font-size: 2.6rem;
+}
+
+@keyframes ch-fade {
+  from {
+    opacity: 0;
+  }
+}
