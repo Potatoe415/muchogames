@@ -53,15 +53,32 @@
   margin-right: auto;
 }
 
-.memory-clock {
-  margin-left: auto;
+.memory-bar-top {
+  position: relative;
+}
+
+.memory-clock,
+.memory-points {
   color: #3f2e1f;
   font-size: 1.15rem;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
-.memory-clock[hidden] {
+.memory-clock {
+  margin-left: auto;
+}
+
+.memory-points {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.memory-clock[hidden],
+.memory-points[hidden],
+.memory-name:empty {
   display: none;
 }
 
