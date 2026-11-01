@@ -83,6 +83,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0075 | 2026-10-31 | Sixth game: Belote, as a variant of the Coinche engine | Accepted |
 | 0076 | 2026-11-01 | Card games scale up on big screens; Solitaire columns tighten to fit | Accepted |
 | 0077 | 2026-11-01 | Solitaire: a double tap sends a card to its foundation | Accepted |
+| 0078 | 2026-11-01 | Arrow keys and TV remote drive every screen through one global focus mover | Accepted |
 
 ## When to log a decision
 Any of:

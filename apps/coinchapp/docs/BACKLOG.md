@@ -17,10 +17,10 @@ Status: Living document. Always reflects current state.
 - [ ] Real 2-device test of Président online — confirm the instant combo-play feedback feels right with real network latency, now that online bots actually work.
 - [ ] Ask the user to play Solitaire on a real phone (draw 1 and draw 3): card size, tap-to-move with several destinations, a full solved game recorded as a win, and the win cascade's speed and smoothness.
 - [ ] Ask the user to confirm the `docs/PRODUCT.md` / `docs/ARCHITECTURE.md` edits for Solitaire (five games, `lib/solitaire` in the module map) before touching them.
-- [ ] Ask the user to open Solitaire and one trick game on the 4K TV browser (decision 0076): board fills the screen, long columns stay on screen.
+- [ ] Ask the user to open Solitaire and one trick game on the 4K TV browser (decisions 0076, 0078): board fills the screen, long columns stay on screen, remote arrows/OK/Back play a whole deal.
 
 ## Next
-- [ ] TV remote play (arrows/OK/Back) for the card games, like Millionaire's TV mode — owner deferred it on 2026-11-01.
+- [ ] Bataille Corse on the remote: direct keys for flip and slap (arrows + OK are too slow for slap races) — owner deferred it on 2026-11-01.
 - [ ] Solitaire: undo, slide animation for moves, Windows-style timer + score, hint / "no more moves" message, Solitaire-only stats (proposed 2026-10-23, not picked yet).
 - [ ] Manual Belote/Rebelote announcement during play (currently auto-detected).
 - [ ] Smarter bot bidding/play (currently a greedy heuristic).

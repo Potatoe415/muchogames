@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { RemoteNav } from "@/components/RemoteNav";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 import { I18nProvider } from "@/lib/client/i18n";
 import "./globals.css";
@@ -48,6 +49,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ServiceWorkerRegistration />
+        <RemoteNav />
         <I18nProvider>
           <LanguageSwitcher />
           {children}

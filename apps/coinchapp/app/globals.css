@@ -74,6 +74,20 @@ html {
   font-size: clamp(16px, calc(100svmin / 56), 48px);
 }
 
+/* Keyboard / TV remote focus (`RemoteNav`): pink so it never reads as the
+   gold "playable" or cyan "destination" rings. A focused card comes on top of
+   the cards fanned over it. */
+:focus-visible,
+html[data-remote-nav] :focus {
+  outline: 0.3rem solid #ff3fb4;
+  outline-offset: 0.15rem;
+}
+
+[data-card]:focus-visible,
+html[data-remote-nav] [data-card]:focus {
+  z-index: 25;
+}
+
 /*
   Keep form controls readable across dark panels and browser-native dropdown menus.
   Without this, some systems render light text on light option backgrounds.

@@ -2,21 +2,21 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Six card games (Coinche, Belote, Bouilla, Président, Bataille Corse, Solitaire). They scale up on big screens such as a 4K TV browser (decision 0076). Solitaire: double tap sends a card to its foundation (0077).
+Status: Six card games (Coinche, Belote, Bouilla, Président, Bataille Corse, Solitaire). Big screens: they fill a 4K TV (0076) and play with arrow keys / the TV remote (0078). Solitaire: double tap sends a card to its foundation (0077).
 Focus: n/a (task complete on this side)
-Level: L1 (Solitaire double tap)
+Level: L2 (remote + arrow navigation, approved 2026-11-01)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `lib/client/useLocalSolitaireGame.ts` (`DOUBLE_TAP_MS`), `lib/solitaire/tap.ts` (`moveToFoundation`), `components/solitaireRules.ts`; big screens: `app/globals.css`, `components/SolitairePiles.tsx` (`cardTops`), `components/useSolitaireFanRoom.ts`
+- Relevant_Files: `components/RemoteNav.tsx` (mounted in `app/layout.tsx`), `app/globals.css` (root font size, pink focus ring), `components/SolitairePiles.tsx` (`cardTops`), `lib/client/useLocalSolitaireGame.ts` (`DOUBLE_TAP_MS`)
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0077, 0076, 0074 (Ace tap), 0073 (no auto-move)
+- Relevant_Decisions: 0078, 0077, 0076, 0073 (no auto-move)
 
 Next:
-- Owner: open Solitaire and one trick game on the 4K TV browser; check the board fills the screen and long columns stay on screen. Try a double click and a phone double tap: is 400 ms right?
+- Owner: on the 4K TV browser, play Solitaire and one trick game with the remote: arrows reach every card, OK plays, Back closes the settings panel (or leaves to the hub on Android TV: match saved). Is 400 ms right for a double OK / double tap?
 - Owner: play one Belote match online and one ad-hoc between two phones.
 - Owner: provide splash art + hub thumbnail for Belote (`public/belote-full.jpg`, root `public/games/coinchapp/assets/thumbnail-belote.jpg`), or ask for them to be generated.
-- Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote; root font size scales `TableShell` metrics) edits; not applied yet.
+- Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote; root font size scales `TableShell` metrics; `RemoteNav` in the shared base) edits; not applied yet.
 - Owner: set `ADMIN_USER_IDS` on the `coinchapp` Vercel project (Production + Preview), same value as the hub, then redeploy.
 - Move to `cartes.muchogames.win` once the owner approves adding the domain (root BACKLOG).
 
@@ -31,8 +31,8 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
-- 2026-11-01 Solitaire double tap (decision 0077): browser double click on a waste 2♥ (A♥ on its foundation, 3♠ also legal) sent it up, moves +1; a single click still only lights it. `npm test` 370/370, `tsc` clean, `npm run build` clean.
-- 2026-11-01 Big screens (decision 0076): root font `clamp(16px, 100svmin / 56, 48px)`; Solitaire cards sized for a 4-width fan, long columns tighten (face-down first). Browser at 3840x2160: Solitaire cards 261 px (was 104 max), a 19-card column ends inside the screen, Président and Coinche fill the screen; at 390x844 unchanged (16 px, 50 px cards). `npm test` 366/366, `tsc` clean, `npm run build` clean, lint: only the known `useMatchStats.ts:220` error.
+- 2026-11-01 Remote + arrows (decision 0078). Keyboard only in the browser: Solitaire waste 3♥ picked up with OK, Right to its foundation, OK moved it; Down walks a fanned column card by card; settings panel opened with OK, arrows stayed inside it, Escape closed it; Président hand reached with arrows, card played with OK. `npm test` 373/373, `tsc` clean, `npm run build` clean.
+- 2026-11-01 Solitaire double tap (decision 0077).
+- 2026-11-01 Big screens (decision 0076): root font `clamp(16px, 100svmin / 56, 48px)`; Solitaire long columns tighten (face-down first). 4K: Solitaire cards 261 px (was 104 max); phone unchanged.
 - 2026-10-31 Belote (decision 0075).
-- 2026-10-24 Solitaire: tapping an Ace sends it straight to its foundation (decision 0074).
 - 2026-10-23 Solitaire: no auto-move (decision 0073): tap picks up, tap a lit destination to move; drag and drop alongside.
