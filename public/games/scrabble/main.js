@@ -27,7 +27,7 @@ import {
   saveStats,
   writeText
 } from "./store.js";
-import { useTileSet } from "./tiles.js";
+import { playerLangs, useTileSet } from "./tiles.js";
 
 const GAME_ID = "scrabble";
 const LANG_KEY = "bergamots-lang";
@@ -164,7 +164,8 @@ function mount(game, config, draft) {
     game,
     draft,
     config,
-    dict: page.dicts[config.words],
+    langs: playerLangs(config.words, config.p1Lang),
+    dicts: playerLangs(config.words, config.p1Lang).map((l) => page.dicts[l]),
     t,
     names,
     hints: () => page.settings.hints === "on",
@@ -201,7 +202,7 @@ function returnToStart() {
 
 async function startMatch() {
   const config = matchConfig(page.settings);
-  if (page.starting || !page.dicts[config.words]) return;
+  if (page.starting || !dictsReady(config.words)) return;
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
@@ -222,15 +223,19 @@ async function resumeMatch() {
   mount(resumable.game, resumable.config, resumable.draft);
 }
 
-// Loads a word list (the selected one by default); the start button waits
-// for the selected list. Resolves false when the list could not load.
-async function loadDict(lang = page.settings.words) {
-  const selected = () => lang === page.settings.words;
-  $("scrabble-dict-status").hidden = Boolean(page.dicts[lang]);
+const dictLangs = (words) => (words === "fr-es" ? ["fr", "es"] : [words]);
+const dictsReady = (words) => dictLangs(words).every((l) => page.dicts[l]);
+
+// Loads the word lists of a word language (the selected one by default);
+// the start button waits for them. Resolves false when a list cannot load.
+async function loadDict(words = page.settings.words) {
+  const selected = () => words === page.settings.words;
+  $("scrabble-dict-status").hidden = dictsReady(words);
   $("scrabble-dict-error").hidden = true;
-  if (selected()) $("scrabble-start-button").disabled = !page.dicts[lang];
+  if (selected()) $("scrabble-start-button").disabled = !dictsReady(words);
   try {
-    page.dicts[lang] = await loadDictionary(lang);
+    for (const lang of dictLangs(words))
+      page.dicts[lang] = await loadDictionary(lang);
     if (selected()) $("scrabble-start-button").disabled = false;
     return true;
   } catch {

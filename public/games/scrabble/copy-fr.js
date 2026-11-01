@@ -3,6 +3,13 @@ export const STRINGS = {
   pitch:
     "Le jeu de lettres, en français, anglais ou espagnol. Seul contre l'ordinateur ou à deux.",
   words: "Langue des mots",
+  p1LangSolo: "Votre langue",
+  p1LangDuo: "Langue du joueur 1",
+  mixHelp:
+    "Chacun pose des mots dans sa langue sur le même plateau. Sac commun avec le Ñ.",
+  lang_fr: "français",
+  lang_es: "espagnol",
+  handoffTitleLang: "Au tour de {name} · {lang}",
   back: "Retour",
   options: "Options",
   close: "Fermer",
@@ -92,6 +99,7 @@ export const RULES = `
   <li>Le premier mot passe par l'étoile ★ au centre.</li>
   <li>Tous les mots formés doivent exister dans le dictionnaire de la langue choisie : le jeu vérifie avant de valider, sans pénalité. Français : Officiel du Scrabble (ODS 9). Anglais : ENABLE. Espagnol : liste libre de 635 000 mots.</li>
   <li>Les accents ne comptent pas. En espagnol, Ñ est une lettre à part ; CH, LL et RR s'écrivent avec deux lettres. Chaque langue a ses propres lettres et valeurs.</li>
+  <li><strong>FR + ES :</strong> un joueur pose des mots français, l'autre des mots espagnols, sur le même plateau. Seuls les mots formés par le joueur doivent exister dans sa langue. Le sac est commun (valeurs françaises, avec le Ñ).</li>
   <li><strong>Points :</strong> chaque lettre a sa valeur. LD et LT doublent ou triplent la lettre, MD et MT le mot entier (l'étoile compte MD). Une case ne compte qu'au moment où on la couvre.</li>
   <li>Le <strong>joker</strong> remplace n'importe quelle lettre et vaut 0 point.</li>
   <li><strong>Scrabble :</strong> poser ses 7 lettres d'un coup rapporte 50 points de bonus.</li>

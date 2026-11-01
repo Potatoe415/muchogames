@@ -2,7 +2,11 @@
 
 Scrabble vs the computer (4 levels, slider on the start screen) or two players on one device.
 Words in French, English or Spanish (start-screen choice `words`, defaults to
-the interface language on a first visit); the interface is FR/EN/ES. Vanilla ES
+the interface language on a first visit), or "FR + ES": each player checked
+against their own language (`p1Lang` = player 1's / your language; `playerLangs`
+in `tiles.js`), one shared bag (`fr-es` set: French values + Ñ, 102 tiles),
+FR/ES tags on the score cards and in the handoff title. The interface is
+FR/EN/ES separately. Vanilla ES
 modules, DOM board of `<button>` cells, no dependency, no worker (a move
 search takes ≤ ~120 ms on a desktop, runs during the 750 ms "thinking" pause).
 Read this before opening the sources.
@@ -12,7 +16,7 @@ Read this before opening the sources.
 | File | Role |
 |---|---|
 | `main.js` | Page shell: i18n, settings, dictionary loading per word language (Start waits for the selected list, Resume loads the saved match's list), `useTileSet` before restoring or mounting a match, screens, save/resume, `MuchogamesMatch.start/resume/finish`, stats. |
-| `play.js` | `createPlay(opts)` → `{ actions, relabel, refresh, destroy, snapshot }`. Live preview, play / swap-or-pass / hint / bag, computer turns, "pass the device" between two players. |
+| `play.js` | `createPlay(opts)` (`dicts`/`langs` one per player) → `{ actions, relabel, refresh, destroy, snapshot }`. Live preview, play / swap-or-pass / hint / bag, computer turns, "pass the device" between two players. |
 | `edit.js` | The draft: tap tile then cell, tap a cell for the typing cursor (tap again = turn ↓) then tap/type letters, drag rack ↔ board, reorder the rack, take back, shuffle, `layOut` for hints. |
 | `draft.js` | Pure helpers for the draft `[{ k: rack slot, i: cell, l: letter }]`, `slotFor` (a typed letter uses a blank if missing), `draftFits` (save check). |
 | `rules.js` | Pure rules: `analyzeMove(board, tiles)` → `{ error }` (`line`, `gap`, `center`, `short`, `detached`) or `{ words, score, bingo }`; `invalidWords(analysis, dict)`. |
@@ -38,9 +42,9 @@ Read this before opening the sources.
 
 ## Save / resume (decision 0054)
 
-- Key `scrabble-saved-game` = `{ config: { mode, level, words, names }, game, draft }` (a save without `words` is French). Written at match start, after every change (draft edits included) and on `pagehide` / `visibilitychange`. Cleared in `onEnd`.
+- Key `scrabble-saved-game` = `{ config: { mode, level, words, p1Lang, names }, game, draft }` (a save without `words` is French). Written at match start, after every change (draft edits included) and on `pagehide` / `visibilitychange`. Cleared in `onEnd`.
 - A computer turn in progress restarts on resume; two-player resume always shows the handoff sheet first (racks stay hidden).
-- Other keys: `scrabble-settings-v2` (mode, level, words, sound, hints — the Hint button, off by default, switched on in the options panel — names), `scrabble-stats` (`{ <level>: { won, played } }`).
+- Other keys: `scrabble-settings-v2` (mode, level, words, p1Lang, sound, hints — the Hint button, off by default, switched on in the options panel — names), `scrabble-stats` (`{ <level>: { won, played } }`).
 
 ## Dictionaries
 

@@ -33,6 +33,20 @@
   font-weight: 600;
 }
 
+.sc-word-lang {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: #e6f0ea;
+  color: #4a7562;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.sc-word-lang:empty {
+  display: none;
+}
+
 .sc-player-score {
   font-size: 1.35rem;
   font-variant-numeric: tabular-nums;

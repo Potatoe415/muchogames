@@ -3,6 +3,13 @@ export const STRINGS = {
   pitch:
     "The word game, in French, English or Spanish. Play the computer or a friend.",
   words: "Word language",
+  p1LangSolo: "Your language",
+  p1LangDuo: "Player 1's language",
+  mixHelp:
+    "Each player plays words in their own language on the same board. Shared bag with the Ñ.",
+  lang_fr: "French",
+  lang_es: "Spanish",
+  handoffTitleLang: "{name}'s turn · {lang}",
   back: "Back",
   options: "Options",
   close: "Close",
@@ -92,6 +99,7 @@ export const RULES = `
   <li>The first word goes through the star ★ in the centre.</li>
   <li>Every word formed must be in the dictionary of the chosen language: the game checks before playing, with no penalty. French: Officiel du Scrabble (ODS 9). English: ENABLE. Spanish: a free list of 635,000 words.</li>
   <li>Accents do not count. In Spanish, Ñ is a letter of its own; CH, LL and RR are written with two letters. Each language has its own letters and values.</li>
+  <li><strong>FR + ES:</strong> one player plays French words, the other Spanish words, on the same board. The words a player forms must exist in that player's language. The bag is shared (French values, plus the Ñ).</li>
   <li><strong>Points:</strong> each letter has a value. DL and TL double or triple the letter, DW and TW the whole word (the star counts as DW). A square counts only when it is first covered.</li>
   <li>The <strong>blank</strong> stands for any letter and is worth 0.</li>
   <li><strong>Scrabble:</strong> playing all 7 letters at once earns a 50-point bonus.</li>

@@ -3,6 +3,13 @@ export const STRINGS = {
   pitch:
     "El juego de letras, en francés, inglés o español. Contra el ordenador o entre dos.",
   words: "Idioma de las palabras",
+  p1LangSolo: "Tu idioma",
+  p1LangDuo: "Idioma del jugador 1",
+  mixHelp:
+    "Cada uno pone palabras en su idioma en el mismo tablero. Bolsa común con la Ñ.",
+  lang_fr: "francés",
+  lang_es: "español",
+  handoffTitleLang: "Turno de {name} · {lang}",
   back: "Volver",
   options: "Opciones",
   close: "Cerrar",
@@ -92,6 +99,7 @@ export const RULES = `
   <li>La primera palabra pasa por la estrella ★ del centro.</li>
   <li>Todas las palabras formadas deben estar en el diccionario del idioma elegido: el juego lo comprueba antes de validar, sin penalización. Francés: Officiel du Scrabble (ODS 9). Inglés: ENABLE. Español: lista libre de 635 000 palabras.</li>
   <li>Los acentos no cuentan. En español, la Ñ es una letra propia; CH, LL y RR se escriben con dos letras. Cada idioma tiene sus propias letras y valores.</li>
+  <li><strong>FR + ES:</strong> un jugador pone palabras francesas y el otro palabras españolas, en el mismo tablero. Las palabras que forma cada jugador deben existir en su idioma. La bolsa es común (valores franceses, con la Ñ).</li>
   <li><strong>Puntos:</strong> cada letra tiene su valor. LD y LT doblan o triplican la letra, PD y PT la palabra entera (la estrella cuenta como PD). Una casilla solo cuenta cuando se cubre por primera vez.</li>
   <li>El <strong>comodín</strong> sustituye cualquier letra y vale 0.</li>
   <li><strong>Scrabble:</strong> colocar las 7 letras de una vez da 50 puntos extra.</li>

@@ -12,6 +12,7 @@ export const CHOICES = {
   mode: ["solo", "duo"],
   level: LEVEL_IDS,
   words: WORD_LANGS,
+  p1Lang: ["fr", "es"],
   sound: ["on", "off"],
   hints: ["on", "off"]
 };
@@ -20,6 +21,7 @@ const DEFAULTS = {
   mode: "solo",
   level: "medium",
   words: "fr",
+  p1Lang: "fr",
   sound: "on",
   hints: "off"
 };
@@ -88,16 +90,18 @@ export function loadStats() {
 
 export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 
-// { config: { mode, level, words, names }, game, draft } — game and draft
-// are checked by game.js restoreGame and draft.js draftFits. Saves from
-// before the word-language choice are French.
+// { config: { mode, level, words, p1Lang, names }, game, draft } — game and
+// draft are checked by game.js restoreGame and draft.js draftFits. Saves
+// from before the word-language choice are French.
 export function loadSaved() {
   const saved = readJson(SAVED_KEY);
   const config = saved?.config;
   if (!config || !saved.game) return null;
   config.words ??= "fr";
-  if (!WORD_LANGS.includes(config.words)) return null;
+  config.p1Lang ??= "fr";
   const valid =
+    CHOICES.words.includes(config.words) &&
+    CHOICES.p1Lang.includes(config.p1Lang) &&
     CHOICES.mode.includes(config.mode) &&
     CHOICES.level.includes(config.level) &&
     Array.isArray(config.names) &&

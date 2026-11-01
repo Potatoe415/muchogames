@@ -37,6 +37,9 @@ export function renderChoices(settings) {
   document.querySelectorAll("[data-duo-only]").forEach((node) => {
     node.hidden = settings.mode !== "duo";
   });
+  document.querySelectorAll("[data-mix-only]").forEach((node) => {
+    node.hidden = settings.words !== "fr-es";
+  });
   NAME_IDS.forEach((id, p) => {
     if (document.activeElement !== $(id)) $(id).value = settings.names[p];
   });
@@ -64,5 +67,6 @@ export const matchConfig = (settings) => ({
   mode: settings.mode,
   level: settings.level,
   words: settings.words,
+  p1Lang: settings.p1Lang,
   names: settings.names.slice()
 });

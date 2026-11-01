@@ -37,20 +37,25 @@ function guide(s, ctx) {
   ];
 }
 
-function paintPlayers(game, names, thinking) {
+// The language tag (FR / ES) shows only when the two players differ.
+function paintPlayers(game, { names, langs }, thinking) {
+  const mixed = langs[0] !== langs[1];
   [0, 1].forEach((p) => {
     const card = $(`scrabble-player-${p + 1}`);
     card.classList.toggle("is-active", !game.over && game.turn === p);
     card.classList.toggle("is-thinking", thinking && game.turn === p);
     card.querySelector("[data-name]").textContent = names[p];
+    card.querySelector("[data-word-lang]").textContent = mixed
+      ? langs[p].toUpperCase()
+      : "";
     card.querySelector("[data-score]").textContent = String(game.scores[p]);
   });
 }
 
-// s: play state; ctx: { game, names, t, solo, canAct, hints }
+// s: play state; ctx: { game, names, langs, t, solo, canAct, hints }
 export function renderHud(s, ctx) {
   const { game, t, canAct } = ctx;
-  paintPlayers(game, ctx.names, s.thinking);
+  paintPlayers(game, ctx, s.thinking);
   $("scrabble-bag-count").textContent = String(game.bag.length);
   const [text, tone] = guide(s, ctx);
   const info = $("scrabble-info");

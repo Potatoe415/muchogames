@@ -271,7 +271,46 @@
               >
                 Español
               </button>
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="words"
+                data-value="fr-es"
+                data-id="scrabble-words-fr-es"
+              >
+                FR + ES
+              </button>
             </div>
+          </div>
+
+          <div class="sc-field" data-id="scrabble-p1-lang-field" data-mix-only>
+            <p class="sc-label">
+              <span data-solo-only data-i18n="p1LangSolo"></span
+              ><span data-duo-only data-i18n="p1LangDuo"></span>
+            </p>
+            <div class="sc-seg">
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="p1Lang"
+                data-value="fr"
+                data-id="scrabble-p1-lang-fr"
+                lang="fr"
+              >
+                Français
+              </button>
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="p1Lang"
+                data-value="es"
+                data-id="scrabble-p1-lang-es"
+                lang="es"
+              >
+                Español
+              </button>
+            </div>
+            <p class="sc-record" data-i18n="mixHelp"></p>
           </div>
 
           <div class="sc-field" data-id="scrabble-level-field" data-solo-only>
@@ -365,10 +404,12 @@
         <div class="sc-top" data-id="scrabble-scores">
           <div class="sc-player" data-id="scrabble-player-1">
             <span class="sc-player-name" data-name></span>
+            <small class="sc-word-lang" data-word-lang></small>
             <strong class="sc-player-score" data-score>0</strong>
           </div>
           <div class="sc-player" data-id="scrabble-player-2">
             <span class="sc-player-name" data-name></span>
+            <small class="sc-word-lang" data-word-lang></small>
             <strong class="sc-player-score" data-score>0</strong>
           </div>
           <button type="button" class="sc-bag" data-id="scrabble-bag-button">

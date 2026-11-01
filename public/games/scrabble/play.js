@@ -34,10 +34,11 @@ function lastCells(game) {
   return new Set(last?.kind === "play" ? last.cells : []);
 }
 
-// opts: { els, game, draft, config, names(), dict, t, hints(), keysActive(),
-//         dialogs, sound, onSave(), onEnd(game) }
+// opts: { els, game, draft, config, names(), langs, dicts (one per player),
+//         t, hints(), keysActive(), dialogs, sound, onSave(), onEnd(game) }
 export function createPlay(opts) {
-  const { els, game, config, dict, t, dialogs, sound } = opts;
+  const { els, game, config, t, dialogs, sound } = opts;
+  const dict = () => opts.dicts[game.turn];
   const solo = config.mode === "solo";
   const s = {
     draft: opts.draft || [],
@@ -58,7 +59,7 @@ export function createPlay(opts) {
   const myRack = () => game.racks[game.turn];
 
   function refresh() {
-    s.preview = computePreview(game, s.draft, dict);
+    s.preview = computePreview(game, s.draft, dict());
     board.paint({
       board: game.board,
       draft: s.draft,
@@ -74,7 +75,8 @@ export function createPlay(opts) {
     });
     const names = opts.names();
     const hints = opts.hints();
-    renderHud(s, { game, names, t, solo, canAct: canAct(), hints });
+    const { langs } = opts;
+    renderHud(s, { game, names, langs, t, solo, canAct: canAct(), hints });
   }
 
   function changed() {
@@ -132,7 +134,7 @@ export function createPlay(opts) {
         rack: game.racks[1],
         bagCount: game.bag.length,
         level: config.level,
-        dict
+        dict: dict()
       });
       s.thinking = false;
       applyBot(move);
@@ -144,7 +146,12 @@ export function createPlay(opts) {
     s.hidden = true;
     changed();
     const names = opts.names();
-    const title = t("handoffTitle", { name: names[game.turn] });
+    const name = names[game.turn];
+    const lang = opts.langs[game.turn];
+    const title =
+      opts.langs[0] === opts.langs[1]
+        ? t("handoffTitle", { name })
+        : t("handoffTitleLang", { name, lang: t(`lang_${lang}`) });
     dialogs.handoff(title, lastMoveLine(game, names, t)).then((ok) => {
       if (!ok) return;
       s.hidden = false;
@@ -154,7 +161,7 @@ export function createPlay(opts) {
 
   function hint() {
     if (!canAct()) return;
-    const move = bestMove(game.board, myRack(), dict);
+    const move = bestMove(game.board, myRack(), dict());
     if (move) return edit.layOut(move.tiles);
     s.draft = [];
     s.notice = "noMove";
