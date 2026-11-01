@@ -1,10 +1,10 @@
-mnème	Mémoire d’un événement.
-mnèmes		mnème	0
-mnémonique	Qui a un rapport avec la mémoire.
-mnémoniques		mnémonique	0
-mnémotechnie	Art d’aider la mémoire par des méthodes spéciales.
-mnémotechnies		mnémotechnie	0
-mnémotechnique	Qui a rapport à la mnémotechnie.
-mnémotechniques		mnémotechnique	0
-mnésique	Relatif à la mémoire.
-mnésiques		mnésique	0
+0mnème	Mémoire d’un événement.
+5s		5	0
+2émonique	Qui a un rapport avec la mémoire.
+as		a	0
+5technie	Art d’aider la mémoire par des méthodes spéciales.
+cs		c	0
+bque	Qui a rapport à la mnémotechnie.
+es		e	0
+3sique	Relatif à la mémoire.
+8s		8	0

@@ -1,21 +1,21 @@
-xalam	Genre de luth traditionnel au Sénégal.
-xalams		xalam	0
-xanthane	Additif alimentaire (code E415) servant d’épaississant fabriqué en cultures par des bactéries du genre Xanthomonas.
-xanthanes		xanthane	0
-xanthélasma	Dépôts graisseux formant des papules jaunâtres au niveau des paupières et traduisant une hypercholestérolémie.
-xanthélasmas		xanthélasma	0
-xanthie	Papillon de nuit de couleur jaune de la famille des Noctuidés.
-xanthies		xanthie	0
-xanthine	Composé hétérocyclique intermédiaire dans le métabolisme des purines, formée lors de la dégradation de l’adénine et de la guanine.
-xanthique	Jaune.
-xanthiques		xanthique	0
-xanthoderme	Qui a la peau jaune.
-xanthodermes		xanthoderme	0
-xanthogénique	Qui produit une couleur jaune.
-xanthogéniques		xanthogénique	0
-xanthome	Tumeur bénigne cutanée plane ou nodulaire, externe ou sous-cutanée, de couleur jaune, jaunâtre ou jaune-orangée, formée par un infiltrat dermique de cellules c…
-xanthomes		xanthome	0
-xanthophycée	Classe d’algues unicellulaires ou filamenteuses caractérisées par leur teinte jaune et, surtout, par l'inégalité de leurs flagelles.
-xanthophycées		xanthophycée	0
-xanthophylle	Nom générique pour des pigments souvent jaunes qui se développent dans les chloroplastes ou les chromoplastes des cellules des végétaux chlorophylliens.
-xanthophylles		xanthophylle	0
+0xalam	Genre de luth traditionnel au Sénégal.
+5s		5	0
+2nthane	Additif alimentaire (code E415) servant d’épaississant fabriqué en cultures par des bactéries du genre Xanthomonas.
+8s		8	0
+5élasma	Dépôts graisseux formant des papules jaunâtres au niveau des paupières et traduisant une hypercholestérolémie.
+bs		b	0
+5ie	Papillon de nuit de couleur jaune de la famille des Noctuidés.
+7s		7	0
+6ne	Composé hétérocyclique intermédiaire dans le métabolisme des purines, formée lors de la dégradation de l’adénine et de la guanine.
+6que	Jaune.
+9s		9	0
+5oderme	Qui a la peau jaune.
+bs		b	0
+6génique	Qui produit une couleur jaune.
+ds		d	0
+6me	Tumeur bénigne cutanée plane ou nodulaire, externe ou sous-cutanée, de couleur jaune, jaunâtre ou jaune-orangée, formée par un infiltrat dermique de cellules c…
+8s		8	0
+6phycée	Classe d’algues unicellulaires ou filamenteuses caractérisées par leur teinte jaune et, surtout, par l'inégalité de leurs flagelles.
+cs		c	0
+9lle	Nom générique pour des pigments souvent jaunes qui se développent dans les chloroplastes ou les chromoplastes des cellules des végétaux chlorophylliens.
+cs		c	0

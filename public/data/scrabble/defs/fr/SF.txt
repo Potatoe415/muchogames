@@ -1,7 +1,7 @@
-sfaxien	Relatif à la ville de Sfax, en Tunisie, ou à ses habitants.
-sfaxienne		sfaxien	23
-sfaxiennes		sfaxien	1
-sfaxiens		sfaxien	9
-sforzando	En forçant. Terme d'interprétation musicale qui indique un court renforcement.
-sfumato	Technique de peinture consistant en la superposition de plusieurs couches de peinture extrêmement fines et translucides, destinées à rendre un arrière-plan éva…
-sfumatos		sfumato	0
+0sfaxien	Relatif à la ville de Sfax, en Tunisie, ou à ses habitants.
+7ne		7	n
+9s		7	1
+7s		7	9
+2orzando	En forçant. Terme d'interprétation musicale qui indique un court renforcement.
+2umato	Technique de peinture consistant en la superposition de plusieurs couches de peinture extrêmement fines et translucides, destinées à rendre un arrière-plan éva…
+7s		7	0

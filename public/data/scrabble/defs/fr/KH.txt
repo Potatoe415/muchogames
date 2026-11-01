@@ -1,55 +1,55 @@
-khâgne	Dans les lycées français, deuxième année de classe préparatoire littéraire aux concours des ENS et aux grandes écoles.
-khâgnes		khâgne	0
-khâgneuse	Élève de khâgne.
-khâgneuses		khâgneuse	0
-khâgneux	Élève de khâgne, deuxième année de classe préparatoire littéraire.
-khakasse	Langue turque parlée dans la République de Khakassie et dans le sud du kraï de Krasnoïarsk en Russie.
-khalifat	Variante orthographique de califat.
-khalifats		khalifat	0
-khalife	Variante orthographique de calife.
-khalifes		khalife	0
-khalkha	Relatif aux Khalkhas.
-khalkhas		khalkha	0
-khammès	Variante de khammas.
-khammessat	Bail de fermage coutumier ayant existé au Maghreb, dans lequel le « métayer » recevait un cinquième du produit des terres qu'il cultivait.
-khammessats		khammessat	0
-khamsin	Variante de chamsin.
-khamsins		khamsin	0
-khan	Prince commandant chez les Mongols (autrefois appelés Tartares), les chefs d’État de Perse d’origine mongole, etc.
-khanat	Dignité de khan.
-khanats		khanat	0
-khans		khan	0
-Kharidji	Variante de kharidjite.
-Kharidjis		Kharidji	0
-kharidjisme	Branche (dite « dissidente ») de l’islam, aux côtés du sunnisme et du chiisme.
-kharidjismes		kharidjisme	0
-kharidjite	Qui concerne le kharidjisme.
-kharidjites		kharidjite	0
-khartoumais	Relatif à Khartoum ou à ses habitants.
-khartoumaise		khartoumais	23
-khartoumaises		khartoumais	1
-khat	Variante de qat.
-khats		khat	0
-khédival	Qui appartient à ou dépend d’un khédive.
-khédivale		khédival	23
-khédivales		khédival	1
-khédivat	Fonction de khédive.
-khédivats		khédivat	0
-khédivaux		khédival	9
-khédive	Titre d’une dignité orientale, spécialement porté par le roi souverain d’Égypte, pacha.
-khédives		khédive	0
-khédivial	Variante de khédival.
-khédiviat	Variante de khédivat.
-khédiviats		khédiviat	0
-khi	Χ, χ, vingt-deuxième lettre et seizième consonne de l’alphabet grec.
-khis		khi	0
-khmer	Langue du groupe des langues môn-khmères de la famille des langues austroasiatiques, parlée principalement au Cambodge.
-khmère		khmer	23
-khmères		khmer	1
-khmers		khmer	0
-khobz	Pain.
-khoin	Ensemble des langues parlées dans le sud de l'Afrique.
-khoïsan	Se dit d'un ensemble de langues, sans doute non apparentées mais possédant toutes des sons appelés clics, parlées en Afrique australe, principalement au Botswa…
-Khoïsans	Peuple d'Afrique australe occidentale.
-khôl	Poudre cosmétique composée (aujourd’hui) d’un mélange de galène, de malachite et de soufre, stabilisée dans une base grasse, et utilisée pour maquiller les yeu…
-khôls		khôl	0
+0khâgne	Dans les lycées français, deuxième année de classe préparatoire littéraire aux concours des ENS et aux grandes écoles.
+6s		6	0
+6use	Élève de khâgne.
+9s		9	0
+7x	Élève de khâgne, deuxième année de classe préparatoire littéraire.
+2akasse	Langue turque parlée dans la République de Khakassie et dans le sud du kraï de Krasnoïarsk en Russie.
+3lifat	Variante orthographique de califat.
+8s		8	0
+6e	Variante orthographique de calife.
+7s		7	0
+4kha	Relatif aux Khalkhas.
+7s		7	0
+3mmès	Variante de khammas.
+5essat	Bail de fermage coutumier ayant existé au Maghreb, dans lequel le « métayer » recevait un cinquième du produit des terres qu'il cultivait.
+as		a	0
+4sin	Variante de chamsin.
+7s		7	0
+3n	Prince commandant chez les Mongols (autrefois appelés Tartares), les chefs d’État de Perse d’origine mongole, etc.
+4at	Dignité de khan.
+6s		6	0
+4s		4	0
+0Kharidji	Variante de kharidjite.
+8s		8	0
+0kharidjisme	Branche (dite « dissidente ») de l’islam, aux côtés du sunnisme et du chiisme.
+bs		b	0
+8te	Qui concerne le kharidjisme.
+as		a	0
+4toumais	Relatif à Khartoum ou à ses habitants.
+be		b	n
+cs		b	1
+3t	Variante de qat.
+4s		4	0
+2édival	Qui appartient à ou dépend d’un khédive.
+8e		8	n
+9s		8	1
+7t	Fonction de khédive.
+8s		8	0
+7ux		7l	9
+6e	Titre d’une dignité orientale, spécialement porté par le roi souverain d’Égypte, pacha.
+7s		7	0
+6ial	Variante de khédival.
+8t	Variante de khédivat.
+9s		9	0
+2i	Χ, χ, vingt-deuxième lettre et seizième consonne de l’alphabet grec.
+3s		3	0
+2mer	Langue du groupe des langues môn-khmères de la famille des langues austroasiatiques, parlée principalement au Cambodge.
+3ère		3er	n
+6s		3er	1
+3ers		5	0
+2obz	Pain.
+3in	Ensemble des langues parlées dans le sud de l'Afrique.
+3ïsan	Se dit d'un ensemble de langues, sans doute non apparentées mais possédant toutes des sons appelés clics, parlées en Afrique australe, principalement au Botswa…
+0Khoïsans	Peuple d'Afrique australe occidentale.
+0khôl	Poudre cosmétique composée (aujourd’hui) d’un mélange de galène, de malachite et de soufre, stabilisée dans une base grasse, et utilisée pour maquiller les yeu…
+4s		4	0

@@ -1,4 +1,4 @@
-uzbek	Variante de ouzbek.
-uzbeke		uzbek	23
-uzbekes		uzbek	1
-uzbeks		uzbek	9
+0uzbek	Variante de ouzbek.
+5e		5	n
+6s		5	1
+5s		5	9

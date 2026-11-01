@@ -1,4 +1,4 @@
-SRAS	Syndrome de la pneumonie atypique ou pneumopathie atypique due au virus SARS-CoV.
-srilankais	Variante de sri-lankais.
-srilankaise		srilankais	23
-srilankaises		srilankais	1
+0SRAS	Syndrome de la pneumonie atypique ou pneumopathie atypique due au virus SARS-CoV.
+0srilankais	Variante de sri-lankais.
+ae		a	n
+bs		a	1

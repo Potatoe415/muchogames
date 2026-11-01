@@ -1,2852 +1,2852 @@
-te	Pronom à la deuxième personne du singulier, utilisé pour désigner celui à qui l’on parle, en tant que complément d’objet direct ou indirect.
-team	Équipe, en particulier (mais pas exclusivement) dans un contexte anglo-saxon.
-teams		team	0
-teaser	Leurre sans hameçon créant une agitation dans l’eau, ressemblant à une proie en détresse.
-teasers		teaser	0
-teasing	Technique de vente attirant le spectateur par un message publicitaire en plusieurs étapes.
-teasings		teasing	0
-tec	Unité de mesure énergétique.
-tech	Technologique.
-technétium	Élément chimique de numéro atomique 43 et de symbole Tc, qui fait partie de la série des métaux de transition.
-technicien	Personne qui connaît les procédés pratiques d’un art, d’un métier et qui sait les employer, qui les enseigne ou les étudie.
-technicienne	Personne qui connaît les procédés pratiques d’un art, d’un métier et qui sait les employer, qui les enseigne ou les étudie.
-techniciennes		technicienne	0
-techniciens		technicien	9
-technicisa		techniciser	33
-technicisai		techniciser	22
-technicisaient		techniciser	32
-technicisais		techniciser	29
-technicisait		techniciser	34
-technicisâmes		techniciser	3
-technicisant		techniciser	35
-technicisas		techniciser	12
-technicisasse		techniciser	6
-technicisassent		techniciser	17
-technicisasses		techniciser	8
-technicisassiez		techniciser	14
-technicisât		techniciser	20
-technicisâtes		techniciser	2
-technicisation	Action de techniciser.
-technicisations		technicisation	0
-technicisé		techniciser	46
-technicisée		techniciser	37
-technicisées		techniciser	36
-technicisent		techniciser	31
-techniciser	Rendre plus technique, très technique.
-technicisera		techniciser	21
-techniciserai		techniciser	16
-techniciserais		techniciser	18
-techniciserait		techniciser	26
-techniciseras		techniciser	7
-technicisèrent		techniciser	24
-techniciserez		techniciser	5
-techniciseriez		techniciser	4
-techniciserions		techniciser	11
-techniciserons		techniciser	10
-techniciseront		techniciser	15
-technicisés		techniciser	38
-technicisez		techniciser	30
-technicisiez		techniciser	13
-technicisions		techniciser	19
-technicisme	Fait de mettre la technique au centre de sa pensée ou de ses activités.
-technicismes		technicisme	0
-technicisons		techniciser	27
-techniciste	Qui relève du technicisme.
-technicistes		techniciste	0
-technicité	Caractère de ce qui est technique.
-technicités		technicité	0
-technicolor	Procédé de fabrication d'images de films en couleur, qui recourt à la superposition des trois couleurs primaires (rouge, bleu, vert), concrètement des films sy…
-technique	Manière d’accomplir une tâche qui n’est pas immédiatement évidente.
-techniquement	D’une manière technique.
-techniques		technique	0
-technisa		techniser	33
-technisai		techniser	22
-technisaient		techniser	32
-technisais		techniser	29
-technisait		techniser	34
-technisâmes		techniser	3
-technisant		techniser	35
-technisas		techniser	12
-technisasse		techniser	6
-technisassent		techniser	17
-technisasses		techniser	8
-technisassiez		techniser	14
-technisassions		techniser	25
-technisât		techniser	20
-technisâtes		techniser	2
-technisé		techniser	46
-technisée		techniser	37
-technisées		techniser	36
-technisent		techniser	31
-techniser	Rendre technique.
-technisera		techniser	21
-techniserai		techniser	16
-techniseraient		techniser	28
-techniserais		techniser	18
-techniserait		techniser	26
-techniseras		techniser	7
-technisèrent		techniser	24
-techniserez		techniser	5
-techniseriez		techniser	4
-techniserions		techniser	11
-techniserons		techniser	10
-techniseront		techniser	15
-technisés		techniser	38
-technisez		techniser	30
-technisiez		techniser	13
-technisions		techniser	19
-technisons		techniser	27
-techno	Genre musical populaire appartenant aux musiques électroniques, le plus souvent instrumental, à quatre temps et faisant appel à des outils numériques.
-technocrate	Expert technique qui détient le pouvoir.
-technocrates		technocrate	0
-technocratie	Système politique, ou de management, dans lequel les experts spécialisés, appelés technocrates, ont un pouvoir prédominant.
-technocraties		technocratie	0
-technocratique	Relatif à un technocrate ou à la technocratie.
-technocratiques		technocratique	0
-technocratisa		technocratiser	33
-technocratisai		technocratiser	22
-technocratisais		technocratiser	29
-technocratisait		technocratiser	34
-technocratisant		technocratiser	35
-technocratisas		technocratiser	12
-technocratisât		technocratiser	20
-technocratisé		technocratiser	46
-technocratisée		technocratiser	37
-technocratisées		technocratiser	36
-technocratisent		technocratiser	31
-technocratiser	Donner un caractère technocratique à (quelque chose).
-technocratisera		technocratiser	21
-technocratisés		technocratiser	38
-technocratisez		technocratiser	30
-technocratisiez		technocratiser	13
-technocratisme	Attitude, comportement technocratique.
-technocratismes		technocratisme	0
-technocratisons		technocratiser	27
-technologie	Science des techniques, étude systématique des procédés, des méthodes, des techniques, des instruments ou des outils propres ou pas à un ou plusieurs domaines …
-technologies		technologie	0
-technologique	Relatif à la technologie.
-technologiques		technologique	0
-technologiste	Personne qui dans sa profession a une connaissance très pointue dans une technologie particulière.
-technologistes		technologiste	0
-technologue	Technique, relatif aux arts et métiers.
-technologues		technologue	0
-technophile	Qui aime la technologie, qui croit à ses bienfaits.
-technophiles		technophile	0
-technophobe	Qui n’aime pas ou a peur de la technologie.
-technophobes		technophobe	0
-technopole	Site urbain ou périurbain réservé aux activités d’affaires, de recherche et d’innovation technologique.
-technopôles		technopôle	0
-technos		techno	0
-technoscience	Ensemble des activités humaines relevant de la science et de la technique.
-technosciences		technoscience	0
-technostructure	Mot-valise qui désigne l’ensemble des cadres dirigeants ou subalternes, des techniciens et des spécialistes qui participent à la prise de décision en groupe da…
-techs		tech	0
-teck	Grand arbre de la famille des verbénacées, qui croît dans l’Inde, et dont le bois imputrescible est recherché pour la construction des vaisseaux.
-teckel	Race de chien originaire d’Allemagne, basset (chien long et court sur pattes), à poil long, ras ou dur.
-teckels		teckel	0
-teckeraie	Plantation de tecks.
-teckeraies		teckeraie	0
-tecks		teck	0
-tecktonik	Danse électro des années 2000 caractérisée par des mouvements rapides des bras adaptés au rythme de la musique électro house.
-tecktoniks		tecktonik	0
-tecteur	Qualifie une plume qui couvre les ailes et la queue des oiseaux, la tectrice.
-tectibranche	Ordre de mollusques gastéropodes marins possédant une seule branchie latérale protégée par un manteau.
-tectibranches		tectibranche	0
-tectite	Fragment de roches fondues et expulsées en dehors du cratère lors de l'impact d'une météorite.
-tectites		tectite	0
-tectonique	Relative à la structure à grande échelle de la Terre et aux plaques qui constituent son écorce.
-tectoniques		tectonique	0
-tectrice	Plume qui couvre les ailes et la queue des oiseaux.
-tectrices		tecteur	1
-teddy	Peluche synthétique.
-teddys		teddy	0
-tee	Support, socle, petit tas de terre facilitant la frappe de la balle.
-teenager	Adolescent, jeune personne ayant entre 13 et 19 ans.
-teenagers		teenager	0
-tees		tee	0
-teeshirt	Variante orthographique de T-shirt.
-teeshirts		teeshirt	0
-tef	Variante orthographique de teff.
-Tefal	Matière antiadhésive.
-Tefals		Tefal	0
-teff	Nom vernaculaire de Eragrostis tef plante herbacée la famille des Poaceae (Poacées), originaire d'Éthiopie, où elle est cultivée pour ses fines graines (longue…
-teffs		teff	0
-téflon	Teflon.
-téflonisé	Recouvert de Téflon.
-téflonisée		téfloniser	37
-téflonisées		téfloniser	36
-téfloniser	Recouvrir de Teflon.
-téflonisés		téfloniser	38
-téflons		téflon	0
-tégénaire	Genre d’araignée de la famille des Agelenidae et comprenant de nombreuses espèces.
-tégénaires		tégénaire	0
-tégéviste	Conductrice ou conducteur de TGV.
-tégévistes		tégéviste	0
-tégument	Tissu organique qui recouvre le corps des animaux.
-tégumentaire	Relatif au tégument.
-tégumentaires		tégumentaire	0
-téguments		tégument	0
-téhéranais	Relatif à la ville de Téhéran.
-téhéranaise		téhéranais	23
-téhéranaises		téhéranais	1
-teignaient		teindre	116
-teignais		teindre	95
-teignait		teindre	91
-teignant		teindre	43
-teigne	Dermatose du cuir chevelu d'origine cryptogamique ^().
-teignent		teindre	41
-teignes		teigne	0
-teigneuse	Femme teigneuse.
-teigneuses		teigneux	1
-teigneux	Qui a la teigne.
-teignez		teindre	30
-teigniez		teindre	110
-teignîmes		teindre	3
-teignions		teindre	111
-teignirent		teindre	24
-teignis		teindre	22
-teignisse		teindre	6
-teignissent		teindre	17
-teignisses		teindre	8
-teignissiez		teindre	14
-teignissions		teindre	25
-teignit		teindre	39
-teignîtes		teindre	2
-teignons		teindre	27
-teilla		teiller	33
-teillage	Variante orthographique de tillage.
-teillages		teillage	0
-teillai		teiller	22
-teillaient		teiller	32
-teillais		teiller	29
-teillait		teiller	34
-teillâmes		teiller	3
-teillant		teiller	35
-teillas		teiller	12
-teillasse		teiller	6
-teillassent		teiller	17
-teillasses		teiller	8
-teillassiez		teiller	14
-teillassions		teiller	25
-teillât		teiller	20
-teillâtes		teiller	2
-teille	Bouteille.
-teillée		teiller	37
-teillées		teiller	36
-teillent		teiller	31
-teiller	Variante de tiller.
-teillera		teiller	21
-teillerai		teiller	16
-teilleraient		teiller	28
-teillerais		teiller	18
-teillerait		teiller	26
-teilleras		teiller	7
-teillèrent		teiller	24
-teillerez		teiller	5
-teilleriez		teiller	4
-teillerions		teiller	11
-teillerons		teiller	10
-teilleront		teiller	15
-teillés		teiller	38
-teilleur	Ouvrier qui teille, qui frappe le lin ou le chanvre avec un écouchoir.
-teilleurs		teilleur	0
-teilleuse	Ouvrière qui teille, qui frappe le lin ou le chanvre avec un écouchoir.
-teilleuses		teilleuse	0
-teillez		teiller	30
-teilliez		teiller	13
-teillions		teiller	19
-teillons		teiller	27
-teindra		teindre	44
-teindrai		teindre	50
-teindraient		teindre	108
-teindrais		teindre	106
-teindrait		teindre	92
-teindras		teindre	7
-teindre	Faire prendre à une étoffe ou à autre chose une couleur différente de celle qu’elle avait, en la plongeant dans un liquide spécial.
-teindrez		teindre	5
-teindriez		teindre	99
-teindrions		teindre	101
-teindrons		teindre	10
-teindront		teindre	15
-teins		teindre	72
-teint	Dont la couleur a été changée par teinture.
-teinta		teinter	39
-teintai		teinter	22
-teintaient		teinter	42
-teintais		teinter	29
-teintait		teinter	40
-teintâmes		teinter	3
-teintant		teinter	43
-teintas		teinter	12
-teintasse		teinter	6
-teintassent		teinter	17
-teintasses		teinter	8
-teintassiez		teinter	14
-teintassions		teinter	25
-teintât		teinter	20
-teintâtes	Deuxième personne du pluriel du passé simple du verbe teinter.
-teinte	Nuance de couleur, combinant la tonalité et la saturation.
-teintée		teinté	23
-teintées		teinté	1
-teintent		teinter	41
-teinter	Couvrir d’une teinte.
-teintera		teinter	21
-teinterai		teinter	16
-teinteraient		teinter	63
-teinterais		teinter	18
-teinterait		teinter	26
-teinteras	Deuxième personne du singulier du futur simple du verbe teinter.
-teintèrent		teinter	24
-teinterez		teinter	5
-teinteriez		teinter	4
-teinterions		teinter	11
-teinterons		teinter	10
-teinteront		teinter	15
-teintés		teinté	9
-teintez		teinter	30
-teintiez		teinter	13
-teintions		teinter	19
-teintons		teinter	27
-teints		teint	0
-teinture	Liquide préparé pour teindre.
-teinturerie	Métier du teinturier.
-teintureries		teinturerie	0
-teintures		teinture	0
-teinturier	Celui qui exerce l’art de teindre.
-teinturière	Artisane qui exerce l’art de teindre.
-teinturières		teinturière	0
-teinturiers		teinturier	0
-téju	Variante de tégu.
-téjus		téju	0
-tek	Variante orthographique de teck.
-téké	Relatif au peuple Téké, au Congo.
-tékée		téké	23
-tékées		téké	1
-tékés		téké	9
-teknival	Rassemblement libre de plusieurs sound systems pendant plusieurs jours.
-teknivals		teknival	0
-teks		tek	0
-tel	Qui est pareil, semblable, qui est du même genre, de la même qualité.
-télamon	Baudrier en cuir pour fixer l’épée des guerriers achéens.
-télamons		télamon	0
-télangiectasie	Dilatation vasculaire permanente du derme rouge, non pulsatile qui forme un trait fin, tortueux, souvent en arborisation ou en réseau, le plus souvent localisé…
-télangiectasies		télangiectasie	0
-télé	Téléviseur.
-téléachat	Achat à distance utilisant les techniques de télécommunication ou de radiodiffusion.
-téléachats		téléachat	0
-téléacheteur	Celui qui s’adonne au téléachat.
-téléacheteurs		téléacheteur	0
-téléacheteuse	Celle qui s’adonne au téléachat.
-téléacheteuses		téléacheteuse	0
-téléacteur	Vendeur par téléphone, téléprospecteur.
-téléacteurs		téléacteur	0
-téléactrice	Vendeuse par téléphone.
-téléactrices		téléactrice	0
-téléaffichage	Variante orthographique de télé-affichage
-téléaffichages		téléaffichage	0
-téléalarme	Alarme qui prévient à distance pour être alerté automatiquement en cas de panne ou de défaut de fonctionnement d’une installation.
-téléalarmes		téléalarme	0
-téléassistance	Service d’assistance accessible à distance par un moyen de télécommunication.
-téléassistances		téléassistance	0
-téléaste	Réalisateur de téléfilms ou d’émissions télévisées.
-téléastes		téléaste	0
-téléavertisseur	Récepteur de messages numériques (codes chiffrés) ou alphanumériques (courts textes) par radiomessagerie.
-télébenne	Téléphérage par benne.
-télébennes		télébenne	0
-téléboutique	Boutique de téléachat.
-téléboutiques		téléboutique	0
-télécabine	Système de remontée mécanique dans lequel des cabines, suspendues à un câble porteur-tracteur, transportent les voyageurs.
-télécabines		télécabine	0
-télécarte	Carte prépayée permettant de téléphoner depuis une cabine téléphonique.
-télécartes		télécarte	0
-télécentre	Espace public de travail sur Internet.
-télécentres		télécentre	0
-téléchargé		télécharger	56
-téléchargea		télécharger	33
-téléchargeable	Qui peut être téléchargé.
-téléchargeables		téléchargeable	0
-téléchargeai		télécharger	22
-téléchargeaient		télécharger	42
-téléchargeais		télécharger	29
-téléchargeait		télécharger	34
-téléchargeâmes		télécharger	3
-téléchargeant		télécharger	35
-téléchargeas		télécharger	12
-téléchargeasse		télécharger	6
-téléchargeasses		télécharger	8
-téléchargeât		télécharger	20
-téléchargeâtes		télécharger	2
-téléchargée		télécharger	45
-téléchargées		télécharger	51
-téléchargement	Transfert de programmes ou de données d’un ordinateur vers un autre.
-téléchargements		téléchargement	0
-téléchargent		télécharger	41
-téléchargeons		télécharger	59
-télécharger	Transférer, des données entre deux équipements informatiques, localement ou à travers internet.
-téléchargera		télécharger	44
-téléchargerai		télécharger	50
-téléchargerais		télécharger	60
-téléchargerait		télécharger	26
-téléchargeras		télécharger	57
-téléchargèrent		télécharger	24
-téléchargerez		télécharger	5
-téléchargeriez		télécharger	4
-téléchargerions		télécharger	11
-téléchargerons		télécharger	61
-téléchargeront		télécharger	54
-téléchargés		télécharger	53
-téléchargeur	Personne qui télécharge.
-téléchargeurs		téléchargeur	0
-téléchargez		télécharger	47
-téléchargiez		télécharger	67
-téléchargions		télécharger	19
-téléchirurgie	Intervention chirurgicale effectuée à distance géographique du patient par un médecin ayant recours aux technologies informatiques et de télécommunication.
-téléchirurgies		téléchirurgie	0
-télécinéma	Dispositif permettant de convertir un film (pellicule argentique) en source vidéo pour sa télédiffusion, l’enregistrement (magnétoscope) ou l’édition de suppor…
-télécinémas		télécinéma	0
-télécom	Abréviation de télécommunication.
-télécommanda		télécommander	33
-télécommandai		télécommander	22
-télécommandais		télécommander	29
-télécommandait		télécommander	34
-télécommandâmes		télécommander	3
-télécommandant		télécommander	35
-télécommandas		télécommander	12
-télécommandasse		télécommander	6
-télécommandât		télécommander	20
-télécommandâtes		télécommander	2
-télécommande	Transmission à distance d’un signal déclenchant l’exécution d’un ordre par un dispositif.
-télécommandée		télécommander	45
-télécommandées		télécommander	51
-télécommandent		télécommander	31
-télécommander	Commander (un appareil, un véhicule) à distance.
-télécommandera		télécommander	21
-télécommanderai		télécommander	16
-télécommanderas		télécommander	7
-télécommanderez		télécommander	5
-télécommandés		télécommander	53
-télécommandez		télécommander	30
-télécommandiez		télécommander	13
-télécommandions		télécommander	19
-télécommandons		télécommander	27
-télécoms		télécom	0
-téléconférence	Conférence dans laquelle les interlocuteurs sont répartis dans deux lieux, ou plus, reliés entre eux par des moyens de télécommunication.
-téléconférences		téléconférence	0
-téléconseiller	Personne qui travaille dans un centre d’appels et qui communique avec ses clients par téléphone.
-téléconseillère	Femme qui travaille dans un centre d’appels et qui communique avec ses clients par téléphone.
-téléconseillers		téléconseiller	0
-télécopia		télécopier	33
-télécopiai		télécopier	22
-télécopiaient		télécopier	32
-télécopiais		télécopier	29
-télécopiait		télécopier	34
-télécopiâmes		télécopier	3
-télécopiant		télécopier	35
-télécopias		télécopier	12
-télécopiasse		télécopier	6
-télécopiassent		télécopier	17
-télécopiasses		télécopier	8
-télécopiassiez		télécopier	14
-télécopiassions		télécopier	25
-télécopiât		télécopier	20
-télécopiâtes		télécopier	2
-télécopie	Télécommunication ayant pour objet la reproduction à distance d’un document graphique sous la forme d’un autre document graphique géométriquement semblable à l…
-télécopiée		télécopier	37
-télécopiées		télécopier	36
-télécopient		télécopier	31
-télécopier	Transmettre un document par télécopie.
-télécopiera		télécopier	21
-télécopierai		télécopier	16
-télécopieraient		télécopier	28
-télécopierais		télécopier	18
-télécopierait		télécopier	26
-télécopieras		télécopier	7
-télécopièrent		télécopier	24
-télécopierez		télécopier	5
-télécopieriez		télécopier	4
-télécopierions		télécopier	11
-télécopierons		télécopier	10
-télécopieront		télécopier	15
-télécopiés		télécopier	38
-télécopieur	Appareil émetteur et récepteur de télécopie.
-télécopieurs		télécopieur	0
-télécopiez		télécopier	30
-télécopiiez		télécopier	13
-télécopiions		télécopier	19
-télécopions		télécopier	27
-télécran	Sorte de téléviseur pouvant également émettre.
-télécrans		télécran	0
-télécrochet	Émission télédiffusée d’audition et de sélection de chanteurs et de chanteuses.
-télécrochets		télécrochet	0
-télédéclara		télédéclarer	39
-télédéclarai		télédéclarer	55
-télédéclaraient		télédéclarer	42
-télédéclarais		télédéclarer	52
-télédéclarait		télédéclarer	40
-télédéclarâmes		télédéclarer	68
-télédéclarant	Qui télédéclare.
-télédéclarants		télédéclarant	0
-télédéclaras		télédéclarer	83
-télédéclarasse		télédéclarer	81
-télédéclarasses		télédéclarer	87
-télédéclarât		télédéclarer	62
-télédéclarâtes		télédéclarer	84
-télédéclaration	Déclaration par le canal du réseau informatique.
-télédéclaré		télédéclarer	56
-télédéclarée		télédéclarer	45
-télédéclarées		télédéclarer	51
-télédéclarent		télédéclarer	41
-télédéclarer	Faire une déclaration sociale, fiscale ou autre, à distance.
-télédéclarera		télédéclarer	44
-télédéclarerai		télédéclarer	50
-télédéclarerais		télédéclarer	60
-télédéclarerait		télédéclarer	49
-télédéclareras		télédéclarer	57
-télédéclarèrent		télédéclarer	48
-télédéclarerez		télédéclarer	58
-télédéclareriez		télédéclarer	74
-télédéclarerons		télédéclarer	61
-télédéclareront		télédéclarer	54
-télédéclarés		télédéclarer	53
-télédéclarez		télédéclarer	47
-télédéclariez		télédéclarer	67
-télédéclarions		télédéclarer	65
-télédéclarons		télédéclarer	59
-télédétecter	Détecter à distance.
-télédétection	Ensemble des connaissances et techniques utilisées pour déterminer des caractéristiques physiques et biologiques d'objets par des mesures effectuées à distance…
-télédétections		télédétecter	19
-télédiagnostic	Diagnostic à distance, généralement au moyen de technologie de l’information.
-télédiagnostics		télédiagnostic	0
-télédiffusa		télédiffuser	33
-télédiffusai		télédiffuser	22
-télédiffusaient		télédiffuser	32
-télédiffusais		télédiffuser	29
-télédiffusait		télédiffuser	34
-télédiffusâmes		télédiffuser	3
-télédiffusant		télédiffuser	35
-télédiffusas		télédiffuser	12
-télédiffusasse		télédiffuser	6
-télédiffusasses		télédiffuser	8
-télédiffusât		télédiffuser	20
-télédiffusâtes		télédiffuser	2
-télédiffusé		télédiffuser	46
-télédiffusée		télédiffuser	37
-télédiffusées		télédiffuser	36
-télédiffusent		télédiffuser	31
-télédiffuser	Diffuser à distance par des moyens techniques (télévision en particulier).
-télédiffusera		télédiffuser	21
-télédiffuserai		télédiffuser	16
-télédiffuserais		télédiffuser	18
-télédiffuserait		télédiffuser	26
-télédiffuseras		télédiffuser	7
-télédiffusèrent		télédiffuser	24
-télédiffuserez		télédiffuser	5
-télédiffuseriez		télédiffuser	4
-télédiffuserons		télédiffuser	10
-télédiffuseront		télédiffuser	15
-télédiffusés		télédiffuser	38
-télédiffuseur	Personne ou entité pratiquant la télédiffusion, qui diffuse et produit des programmes télévisés.
-télédiffuseurs		télédiffuseur	0
-télédiffusez		télédiffuser	30
-télédiffusiez		télédiffuser	13
-télédiffusion	Diffusion d'un signal audiovisuel par voie hertzienne.
-télédiffusions		télédiffusion	0
-télédiffusons		télédiffuser	27
-télédynamique	Qui concerne la transmission de la force à distance.
-télédynamiques		télédynamique	0
-téléécriture	Télécommunication ayant pour objet la transmission d'informations graphiques au fur et à mesure de leur tracé manuscrit et la reproduction de ce tracé sur un é…
-téléécritures		téléécriture	0
-téléfax	Synonyme de télécopie.
-téléférique	Variante orthographique de téléphérique.
-téléfériques		téléférique	0
-téléfilm	Film de fiction tourné pour la télévision, par opposition aux films tournés pour le cinéma ou la vidéo.
-téléfilms		téléfilm	0
-téléga	Chariot à quatre roues qui était en usage en Russie.
-télégas		téléga	0
-télégénique	Qui passe bien à la télévision, qui assure l’audience.
-télégéniques		télégénique	0
-télégestion	Contrôle à distance d’installations techniques.
-télégestions		télégestion	0
-télégramme	Dépêche transmise par le télégraphe.
-télégrammes		télégramme	0
-télégraphe	Appareil qui permettait de correspondre à de grandes distances avec une extrême rapidité.
-télégraphes		télégraphe	0
-télégraphia		télégraphier	39
-télégraphiai		télégraphier	55
-télégraphiaient		télégraphier	32
-télégraphiais		télégraphier	29
-télégraphiait		télégraphier	40
-télégraphiâmes		télégraphier	68
-télégraphiant		télégraphier	43
-télégraphias		télégraphier	12
-télégraphiasse		télégraphier	6
-télégraphiasses		télégraphier	8
-télégraphiât		télégraphier	20
-télégraphiâtes		télégraphier	2
-télégraphie	Art d’installer, de faire fonctionner le télégraphe et de transmettre des messages par son truchement.
-télégraphiée		télégraphier	45
-télégraphiées		télégraphier	51
-télégraphient		télégraphier	41
-télégraphier	Transmettre au moyen du télégraphe.
-télégraphiera		télégraphier	21
-télégraphierai		télégraphier	50
-télégraphierais		télégraphier	60
-télégraphierait		télégraphier	49
-télégraphieras		télégraphier	7
-télégraphièrent		télégraphier	24
-télégraphierez		télégraphier	5
-télégraphieriez		télégraphier	4
-télégraphierons		télégraphier	10
-télégraphieront		télégraphier	15
-télégraphiés		télégraphier	53
-télégraphiez		télégraphier	47
-télégraphiiez		télégraphier	13
-télégraphiions		télégraphier	19
-télégraphions		télégraphier	59
-télégraphique	Relatif au télégraphe.
-télégraphiques		télégraphique	0
-télégraphiste	Celui, celle qui est employé au télégraphe.
-télégraphistes		télégraphiste	0
-télègue	Sorte de chariot russe.
-télègues		télègue	0
-téléguida		téléguider	33
-téléguidage	Action de téléguider.
-téléguidages		téléguidage	0
-téléguidai		téléguider	22
-téléguidaient		téléguider	32
-téléguidais		téléguider	29
-téléguidait		téléguider	34
-téléguidâmes		téléguider	3
-téléguidant		téléguider	35
-téléguidas		téléguider	12
-téléguidasse		téléguider	6
-téléguidassent		téléguider	17
-téléguidasses		téléguider	8
-téléguidassiez		téléguider	14
-téléguidassions		téléguider	25
-téléguidât		téléguider	20
-téléguidâtes		téléguider	2
-téléguidé	Commandé par téléguidage.
-téléguidée		téléguider	45
-téléguidées		téléguider	51
-téléguident		téléguider	31
-téléguider	Faire se déplacer (quelque chose) en le guidant avec un système de commande à distance.
-téléguidera		téléguider	21
-téléguiderai		téléguider	16
-téléguideraient		téléguider	28
-téléguiderais		téléguider	18
-téléguiderait		téléguider	26
-téléguideras		téléguider	7
-téléguidèrent		téléguider	24
-téléguiderez		téléguider	5
-téléguideriez		téléguider	4
-téléguiderions		téléguider	11
-téléguiderons		téléguider	10
-téléguideront		téléguider	15
-téléguidés		téléguider	53
-téléguidez		téléguider	30
-téléguidiez		téléguider	13
-téléguidions		téléguider	19
-téléguidons		téléguider	27
-téléimpression	Impression à distance de messages par des solutions télématiques.
-téléimpressions		téléimpression	0
-téléimprimeur	Appareil émetteur et récepteur de télégraphie comportant un clavier alphanumérique pour l’émission et assurant à la réception l’impression de caractères.
-téléimprimeurs		téléimprimeur	0
-téléjournal	Journal d’informations quotidien diffusé par une chaine de télévision à heures fixes.
-téléjournaux		téléjournal	0
-télékinésie	Faculté métapsychique hypothétique de mettre en mouvement un objet matériel.
-télékinésies		télékinésie	0
-télémaintenance	Maintenance d'une unité fonctionnelle, assurée par télécommunication directe entre cette unité et un centre spécialisé.
-télémark	Technique de ski caractérisée par son virage où la jambe intérieure est fléchie (le talon n'étant pas fixé au ski), par opposition à la méthode de virage chris…
-télémarketing	Utilisation des techniques et des moyens de télécommunication au service du a marketing.
-télémarketings		télémarketing	0
-télématique	Relatif à l’informatique à distance.
-télématiques		télématique	0
-télématisa		télématiser	33
-télématisai		télématiser	22
-télématisaient		télématiser	32
-télématisais		télématiser	29
-télématisait		télématiser	34
-télématisâmes		télématiser	3
-télématisant		télématiser	35
-télématisas		télématiser	12
-télématisasse		télématiser	6
-télématisassent		télématiser	17
-télématisasses		télématiser	8
-télématisassiez		télématiser	14
-télématisât		télématiser	20
-télématisâtes		télématiser	2
-télématisé		télématiser	46
-télématisée		télématiser	37
-télématisées		télématiser	36
-télématisent		télématiser	31
-télématiser	Informatiser avec des moyens télématiques.
-télématisera		télématiser	21
-télématiserai		télématiser	16
-télématiserais		télématiser	18
-télématiserait		télématiser	26
-télématiseras		télématiser	7
-télématisèrent		télématiser	24
-télématiserez		télématiser	5
-télématiseriez		télématiser	4
-télématiserions		télématiser	11
-télématiserons		télématiser	10
-télématiseront		télématiser	15
-télématisés		télématiser	38
-télématisez		télématiser	30
-télématisiez		télématiser	13
-télématisions		télématiser	19
-télématisons		télématiser	27
-télémécanicien	Technicien spécialiste des télécommunications dans l’armée de l’air.
-télémécaniciens		télémécanicien	0
-télémécanique	Télécommandé.
-télémécaniques		télémécanique	0
-télémédecine	Médecine pratiquée à distance utilisant les technologies de télécommunication.
-télémédecines		télémédecine	0
-télémercatique	Utilisation des techniques et des moyens de télécommunication au service de la mercatique.
-télémercatiques		télémercatique	0
-télémesure	Élaboration et transmission à distance d'un signal représentant un résultat de mesure.
-télémesures		télémesure	0
-télémétra		télémétrer	33
-télémétrai		télémétrer	22
-télémétraient		télémétrer	32
-télémétrais		télémétrer	29
-télémétrait		télémétrer	34
-télémétrâmes		télémétrer	3
-télémétrant		télémétrer	35
-télémétras		télémétrer	12
-télémétrasse		télémétrer	6
-télémétrassent		télémétrer	17
-télémétrasses		télémétrer	8
-télémétrassiez		télémétrer	14
-télémétrassions		télémétrer	25
-télémétrât		télémétrer	20
-télémétrâtes		télémétrer	2
-télémètre	Instrument permettant de déterminer la distance séparant l'utilisateur d’un point lointain, inaccessible, par un procédé acoustique, optique, ou radioélectriqu…
-télémétrée		télémétrer	37
-télémétrées		télémétrer	36
-télémètrent		télémétrer	31
-télémétrer	Mesurer une distance à distance, souvent avec un télémètre.
-télémètrera		télémétrer	21
-télémètrerai		télémétrer	16
-télémètreraient		télémétrer	28
-télémètrerais		télémétrer	18
-télémètrerait		télémétrer	26
-télémètreras		télémétrer	7
-télémétrèrent		télémétrer	24
-télémètrerez		télémétrer	5
-télémètreriez		télémétrer	4
-télémètrerions		télémétrer	11
-télémètrerons		télémétrer	10
-télémètreront		télémétrer	15
-télémètres		télémètre	0
-télémétreur	Celui qui fait usage du télémètre, qui est chargé d’en tirer des indications.
-télémétreurs		télémétreur	0
-télémétrez		télémétrer	30
-télémétrie	Art de mesurer les distances.
-télémétries		télémétrie	0
-télémétriez		télémétrer	13
-télémétrions		télémétrer	19
-télémétrique	Qui appartient à la télémétrie.
-télémétriques		télémétrique	0
-télémétrons		télémétrer	27
-télencéphale	Ensemble constitué par les hémisphères cérébraux (cortex cérébral, substance blanche et structures sous-corticales) et des structures associées.
-télencéphales		télencéphale	0
-télénovela	Série ou feuilleton télévisé dans le monde hispanophone et lusophone.
-telenovelas		telenovela	0
-téléobjectif	Objectif photographique dont la focale est supérieure à la diagonale de la scène, qui a pour effet de rapprocher cette scène, donc de permettre un cadrage plus…
-téléobjectifs		téléobjectif	0
-téléologie	Doctrine prônant une explication du monde fondée sur les causalités et les fins dernières.
-téléologies		téléologie	0
-téléologique	Se dit d'une démarche d'étude d'un phénomène qui se fait à la lumière d'un résultat connu d'avance.
-téléologiques		téléologique	0
-téléonomie	Concept scientifique de finalité.
-téléonomies		téléonomie	0
-téléonomique	Qui relève de la téléonomie.
-téléonomiques		téléonomique	0
-téléopérateur	Personne qui agit à distance sur un appareil.
-téléopérateurs		téléopérateur	0
-téléopératrice	Celle qui agit à distance sur un appareil
-téléopératrices		téléopératrice	0
-téléosaure	Membre du genre Téléosaure, crocodilien ayant vécu sur Terre durant le Jurassique.
-téléosaures		téléosaure	0
-téléostéen	Super ordre de poissons osseux dont le squelette est entièrement ossifié.
-téléostéens		téléostéen	0
-télépaiement	Paiement réglé à distance.
-télépaiements		télépaiement	0
-télépathe	Personne douée de télépathie.
-télépathes		télépathe	0
-télépathie	Faculté de sentir à distance, extrasensorielle.
-télépathies		télépathie	0
-télépathique	Relatif à la télépathie.
-télépathiques		télépathique	0
-télépéage	Acquittement ou enregistrement du péage par un dispositif automatique, sans arrêt du véhicule.
-télépéages		télépéage	0
-téléphage	Qui regarde trop la télévision.
-téléphages		téléphage	0
-téléphérage	Transport par des véhicules suspendus à des câbles aériens servant à la fois de chemin de roulement et de ligne électrique.
-téléphérages		téléphérage	0
-téléphérique	Moyen de transport à distance par des câbles aériens.
-téléphériques		téléphérique	0
-téléphona		téléphoner	39
-téléphonage	Action de téléphoner, communication téléphonique.
-téléphonages		téléphonage	0
-téléphonai		téléphoner	55
-téléphonaient		téléphoner	128
-téléphonais		téléphoner	52
-téléphonait		téléphoner	40
-téléphonâmes		téléphoner	3
-téléphonant		téléphoner	43
-téléphonas		téléphoner	12
-téléphonasse		téléphoner	6
-téléphonassent		téléphoner	17
-téléphonasses		téléphoner	8
-téléphonassiez		téléphoner	14
-téléphonassions		téléphoner	25
-téléphonât		téléphoner	62
-téléphonâtes		téléphoner	2
-téléphone	Appareil utilisé par deux personnes ou plus, pour mener une conversation à distance, qu'il soit fixe (relié à un réseau câblé) ou mobile (communiquant via des …
-téléphonée		téléphoner	37
-téléphonées		téléphoné	1
-téléphonent		téléphoner	41
-téléphoner	Transmettre, communiquer par téléphone.
-téléphonera		téléphoner	44
-téléphonerai		téléphoner	50
-téléphoneraient		téléphoner	63
-téléphonerais		téléphoner	60
-téléphonerait		téléphoner	49
-téléphoneras		téléphoner	57
-téléphonèrent		téléphoner	24
-téléphonerez		téléphoner	58
-téléphoneriez		téléphoner	74
-téléphonerions		téléphoner	11
-téléphonerons		téléphoner	61
-téléphoneront		téléphoner	54
-téléphonés		téléphoné	9
-téléphonez		téléphoner	47
-téléphonie	Système de communication inventé par F.
-téléphonies		téléphonie	0
-téléphoniez		téléphoner	67
-téléphonions		téléphoner	65
-téléphonique	Qui a trait à la téléphonie.
-téléphoniques		téléphonique	0
-téléphoniste	Employé du téléphone.
-téléphonistes		téléphoniste	0
-téléphonons		téléphoner	59
-télépointage	Pointage à distance des pièces d'artillerie.
-télépointages		télépointage	0
-téléport	Emplacement qui regroupe divers moyens de communication.
-téléporta		téléporter	39
-téléportai		téléporter	55
-téléportaient		téléporter	42
-téléportais		téléporter	52
-téléportait		téléporter	40
-téléportâmes		téléporter	68
-téléportant		téléporter	43
-téléportas		téléporter	83
-téléportasse		téléporter	81
-téléportassent		téléporter	78
-téléportasses		téléporter	87
-téléportassiez		téléporter	88
-téléportassions		téléporter	90
-téléportât		téléporter	62
-téléportâtes		téléporter	84
-téléportation	Action de passer d’un point à un autre sans passer par l’espace intermédiaire : dématérialisation puis rematérialisation à un endroit différent.
-téléportations		téléportation	0
-téléporté		téléporter	56
-téléportée		téléporter	45
-téléportées		téléporter	51
-téléportent		téléporter	41
-téléporter	Transporter au loin.
-téléportera		téléporter	44
-téléporterai		téléporter	50
-téléporteraient		téléporter	63
-téléporterais		téléporter	60
-téléporterait		téléporter	49
-téléporteras		téléporter	57
-téléportèrent		téléporter	48
-téléporterez		téléporter	58
-téléporteriez		téléporter	74
-téléporterions		téléporter	82
-téléporterons		téléporter	61
-téléporteront		téléporter	54
-téléportés		téléporter	53
-téléportez		téléporter	47
-téléportiez		téléporter	67
-téléportions		téléporter	65
-téléportons		téléporter	59
-téléports		téléport	0
-téléprocédure	Procédure administrative effectuée à distance.
-téléprocédures		téléprocédure	0
-téléprompteur	Appareil permettant de lire un texte face à la caméra.
-téléprompteurs		téléprompteur	0
-téléprospecteur	Prospecteur par téléphone.
-téléprospection	Méthode de prospection mercatique par téléphone.
-téléréalité	Genre télévisuel dont le principe est de suivre, le plus souvent sur un mode feuilletonnant, la vie quotidienne d’anonymes ou de célébrités.
-téléréalités		téléréalité	0
-téléreportage	Reportage télévisé.
-téléreportages		téléreportage	0
-téléroman	Feuilleton télévisé.
-téléromans		téléroman	0
-télés		télé	0
-téléscaphe	Dispositif de téléphérique sous-marin.
-téléscaphes		téléscaphe	0
-télescopa		télescoper	33
-télescopage	Action de télescoper.
-télescopages		télescopage	0
-télescopai		télescoper	22
-télescopaient		télescoper	32
-télescopais		télescoper	29
-télescopait		télescoper	40
-télescopâmes		télescoper	3
-télescopant		télescoper	35
-télescopas		télescoper	12
-télescopasse		télescoper	6
-télescopassent		télescoper	17
-télescopasses		télescoper	8
-télescopassiez		télescoper	14
-télescopassions		télescoper	25
-télescopât		télescoper	20
-télescopâtes		télescoper	2
-télescope	Instrument optique à miroir concave servant à observer les astres.
-télescopée		télescoper	45
-télescopées		télescoper	51
-télescopent		télescoper	41
-télescoper	Se replier l’un dans l’autre, en parlant d’objets qui rentrent les uns dans les autres comme les différentes parties d’une lunette, d’un télescope.
-télescopera		télescoper	21
-télescoperai		télescoper	16
-télescoperaient		télescoper	28
-télescoperais		télescoper	18
-télescoperait		télescoper	26
-télescoperas		télescoper	7
-télescopèrent		télescoper	48
-télescoperez		télescoper	5
-télescoperiez		télescoper	4
-télescoperions		télescoper	11
-télescoperons		télescoper	10
-télescoperont		télescoper	15
-télescopes		télescope	0
-télescopez		télescoper	30
-télescopiez		télescoper	13
-télescopions		télescoper	19
-télescopique	Qui a rapport au télescope.
-télescopiques		télescopique	0
-télescopons		télescoper	27
-téléscripteur	Appareil électromécanique permettant la génération et la réception de messages via une ligne filaire, remplacé partiellement par le télécopieur (fax) et totale…
-téléscripteurs		téléscripteur	0
-télésecrétariat	Secrétariat pratiqué à distance grâce aux technologies de télétravail.
-téléservice	Service de télécommunication qui assure tous les aspects de la communication entre usagers, conformément à des protocoles établis par l'entité exploitante ou p…
-téléservices		téléservice	0
-téléshopping	Téléachat.
-téléshoppings		téléshopping	0
-télésiège	Remontée mécanique composée de plusieurs sièges permettant de remonter les pistes de ski.
-télésièges		télésiège	0
-téléski	Tire-fesse.
-téléskis		téléski	0
-télésouffleur	synonyme de prompteur.
-télésouffleurs		télésouffleur	0
-téléspectateur	Personne qui regarde la télévision.
-téléspectateurs		téléspectateur	0
-téléspectatrice	Femme regardant la télévision.
-télesthésie	Suggestion mentale, télépathie volontaire.
-télesthésies		télesthésie	0
-télétexte	Diffusion sur un réseau de télévision de textes parmi lesquels l’usager peut choisir.
-télétextes		télétexte	0
-téléthèque	Lieu où l’on range ou conserve les enregistrements télévisés.
-téléthèques		téléthèque	0
-téléthon	Terme générique désignant une émission (généralement télévisée) durant de nombreuses heures et destinée à récolter des fonds pour une cause.
-téléthons		téléthon	0
-télétoxie	Fait qu’une espèce de plante produise des éléments phytotoxiques afin d’inhiber, limiter, ou empêcher la germination ou la croissance d’autres plantes.
-télétoxies		télétoxie	0
-télétoxique	Qui est relatif à la télétoxie.
-télétoxiques		télétoxique	0
-télétraitement	Mode de traitement selon lequel les données sont émises ou reçues par des terminaux éloignés de l’ordinateur.
-télétraitements		télétraitement	0
-télétransmet		télétransmettre	80
-télétransmets		télétransmettre	72
-télétransmette		télétransmettre	85
-télétransmettes		télétransmettre	98
-télétransmettez		télétransmettre	70
-télétransmettra		télétransmettre	44
-télétransmettre	Transmettre par des moyens télématiques.
-télétransmîmes		télétransmettre	68
-télétransmirent		télétransmettre	48
-télétransmis		télétransmettre	147
-télétransmise		télétransmettre	45
-télétransmises		télétransmettre	51
-télétransmisse		télétransmettre	81
-télétransmisses		télétransmettre	87
-télétransmit		télétransmettre	39
-télétransmîtes		télétransmettre	84
-télétravail	Pratique d’effectuer à distance son travail intellectuel, son travail de bureau, via télécommunications.
-télétravailla		télétravailler	39
-télétravaillai		télétravailler	55
-télétravaillais		télétravailler	52
-télétravaillait		télétravailler	40
-télétravaillant		télétravailler	43
-télétravaillas		télétravailler	83
-télétravaillât		télétravailler	62
-télétravaillé		télétravailler	56
-télétravaillent		télétravailler	41
-télétravailler	Pratiquer le télétravail (travail à distance).
-télétravaillera		télétravailler	44
-télétravailles		télétravailler	77
-télétravailleur	Professionnel qui travaille à domicile en utilisant les télécommunications et l’informatique.
-télétravaillez		télétravailler	47
-télétravailliez		télétravailler	67
-télétravaillons		télétravailler	59
-télétravaux		télétravail	0
-télétype	Téléscripteur.
-télétypes		télétype	0
-téleutospore	Spore pédicellée et bicellulaire produite par la rouille pour l'hivernage qui germe au printemps en donnant une baside.
-téleutospores		téleutospore	0
-télévangélisme	Prédication télévisée.
-télévangélismes		télévangélisme	0
-télévangéliste	Prédicateur qui se sert de la télévision pour produire son message d’évangélisation.
-télévangélistes		télévangéliste	0
-télévendeur	Personne qui effectue la télévente.
-télévendeurs		télévendeur	0
-télévendeuse	Personne qui effectue la télévente.
-télévendeuses		télévendeuse	0
-télévente	Vente à distance qui utilise les techniques de télécommunication ou de radiodiffusion.
-téléventes		télévente	0
-téléversa		téléverser	33
-téléversai		téléverser	22
-téléversaient		téléverser	32
-téléversais		téléverser	29
-téléversait		téléverser	34
-téléversâmes		téléverser	3
-téléversant		téléverser	35
-téléversas		téléverser	12
-téléversasse		téléverser	6
-téléversassent		téléverser	17
-téléversasses		téléverser	8
-téléversassiez		téléverser	14
-téléversassions		téléverser	25
-téléversât		téléverser	20
-téléversâtes		téléverser	2
-téléversé		téléverser	46
-téléversée		téléverser	37
-téléversées		téléverser	36
-téléversent		téléverser	31
-téléverser	Transférer des données d’un ordinateur local vers un ordinateur distant par un réseau informatique.
-téléversera		téléverser	21
-téléverserai		téléverser	16
-téléverseraient		téléverser	28
-téléverserais		téléverser	18
-téléverserait		téléverser	26
-téléverseras		téléverser	7
-téléversèrent		téléverser	24
-téléverserez		téléverser	5
-téléverseriez		téléverser	4
-téléverserions		téléverser	11
-téléverserons		téléverser	10
-téléverseront		téléverser	15
-téléversés		téléverser	38
-téléversez		téléverser	30
-téléversiez		téléverser	13
-téléversions		téléverser	19
-téléversons		téléverser	27
-télévisa		téléviser	33
-télévisai		téléviser	22
-télévisaient		téléviser	32
-télévisais		téléviser	29
-télévisait		téléviser	34
-télévisâmes		téléviser	3
-télévisant		téléviser	35
-télévisas		téléviser	12
-télévisasse		téléviser	6
-télévisassent		téléviser	17
-télévisasses		téléviser	8
-télévisassiez		téléviser	14
-télévisassions		téléviser	25
-télévisât		téléviser	20
-télévisâtes		téléviser	2
-télévisé	Retransmis à la télévision.
-télévisée		télévisé	23
-télévisées		télévisé	1
-télévisent		téléviser	31
-téléviser	Diffuser des images, des programmes pour la télévision.
-télévisera		téléviser	44
-téléviserai		téléviser	16
-téléviseraient		téléviser	28
-téléviserais		téléviser	18
-téléviserait		téléviser	26
-téléviseras		téléviser	7
-télévisèrent		téléviser	24
-téléviserez		téléviser	5
-téléviseriez		téléviser	4
-téléviserions		téléviser	11
-téléviserons		téléviser	10
-téléviseront		téléviser	15
-télévisés		télévisé	9
-téléviseur	Appareil électronique destiné à lire (jouer) des séquences audiovisuelles, généralement pour la télévision, en convertissant un signal pour l'afficher sur un é…
-téléviseurs		téléviseur	0
-télévisez		téléviser	30
-télévisiez		téléviser	13
-télévision	Ensemble des techniques utilisées pour reproduire des séquences audiovisuelles à distance, impliquant généralement la transmission d'un signal par ondes électr…
-télévisions		télévision	0
-télévisons		téléviser	27
-télévisuel	Relatif à la télévision.
-télévisuelle		télévisuel	23
-télévisuelles		télévisuel	1
-télévisuels		télévisuel	9
-télex	Système de communication qui remplaçait, partiellement, le télégraphe en morse et qui a été largement supplanté par le fax et, totalement, par la messagerie él…
-télexa		télexer	39
-télexai		télexer	22
-télexaient		télexer	32
-télexais		télexer	29
-télexait		télexer	34
-télexâmes		télexer	3
-télexant		télexer	35
-télexas		télexer	12
-télexasse		télexer	6
-télexassent		télexer	17
-télexasses		télexer	8
-télexassiez		télexer	14
-télexassions		télexer	25
-télexât		télexer	20
-télexâtes		télexer	2
-télexé		télexer	56
-télexée		télexer	37
-télexées		télexer	36
-télexent		télexer	31
-télexer	Envoyer par télex.
-télexera		télexer	21
-télexerai		télexer	16
-télexeraient		télexer	28
-télexerais		télexer	18
-télexerait		télexer	26
-télexeras		télexer	7
-télexèrent		télexer	24
-télexerez		télexer	5
-télexeriez		télexer	4
-télexerions		télexer	11
-télexerons		télexer	10
-télexeront		télexer	15
-télexes		télexer	77
-télexez		télexer	30
-télexiez		télexer	13
-télexions		télexer	19
-télexiste	Opérateur chargé d’assurer les liaisons par télex.
-télexistes		télexiste	0
-télexons		télexer	27
-tell	Terre labourable, en Algérie.
-telle		tel	23
-tellement	De telle manière.
-telles		tel	1
-tellien	Qui concerne ou se trouve dans le Tell (nord de l’Algérie).
-tellienne		tellien	23
-telliennes		tellien	1
-telliens		tellien	9
-tellière	Utilisé uniquement dans la locution à la tellière, qui qualifie ce format de papier (34 cm × 44 cm).
-telline	Mollusque bivalve marin comestible de la famille des Tellinidae de forme triangulaire allongée.
-tellines		telline	0
-tells		tell	0
-tellurate	Anion de tellure, sel produit par la combinaison de l’acide tellurique avec une base.
-tellurates		tellurate	0
-tellure	Élément chimique de symbole chimique est Te et son numéro atomique 52, généralement classé parmi les métalloïdes en raison de ses propriétés intermédiaires ent…
-tellures		tellure	0
-tellureux	Comprenant du tellure.
-tellurhydrique	Se dit dʼun acide résultant de la combinaison du tellure et de lʼhydrogène.
-tellurhydriques		tellurhydrique	0
-tellurien	Qui provient de la terre.
-tellurienne		tellurien	23
-telluriennes		tellurien	1
-telluriens		tellurien	9
-tellurique	Relatif à la terre ou au sol.
-telluriques		tellurique	0
-tellurisme	Nom par lequel on a désigné le magnétisme terrestre.
-tellurismes		tellurisme	0
-telluromètre	Appareil de mesure des distances entre deux points d’un terrain basé sur la mesure du temps mis par une onde électrique pour aller d’un point à l’autre.
-telluromètres		telluromètre	0
-tellurure	Combinaison de tellure et d’un corps simple.
-tellurures		tellurure	0
-téloche	Téléviseur.
-téloches		téloche	0
-télogène	Se dit de la période qui conduit à la mort d’un tissu.
-télogènes		télogène	0
-télolécithe	Se dit des œufs des oiseaux, monotrèmes, reptiles, céphalopodes et de la plupart des poissons, caractérisé par un volume considérable de vitellus localisé à l’…
-télolécithes		télolécithe	0
-télomérase	Enzyme qui ajoute des chaines répétitives à l’ADN à l’extrémité des chromosomes.
-télomérases		télomérase	0
-télomère	Région répétitive de l’ADN à l’extrémité d’un chromosome.
-télomères		télomère	0
-télophase	Phase de la division cellulaire eucaryote au cours de laquelle les chromosomes se décondensent et l’enveloppe nucléaire se reforme.
-télophases		télophase	0
-télougou	Langue dravidienne du sud de l’Inde.
-télougous		télougou	9
-tels		tel	9
-telson	Segment terminal postérieur du corps des arthropodes.
-telsons		telson	0
-telugu	Variante orthographique de télougou.
-telugus		telugu	0
-téménos	Enceinte consacrée autour d'un temple.
-téméraire	Qui est d’une hardiesse imprudente ou inconsidérée.
-témérairement	D’une manière téméraire.
-téméraires		téméraire	0
-témérité	Hardiesse imprudente et présomptueuse, courage inconsidéré.
-témérités		témérité	0
-témiscabitibien	Relatif à l’Abitibi-Témiscamingue, région administrative québécoise.
-témoigna		témoigner	39
-témoignage	Action de témoigner.
-témoignages		témoignage	0
-témoignai		témoigner	22
-témoignaient		témoigner	42
-témoignais		témoigner	52
-témoignait		témoigner	40
-témoignâmes		témoigner	3
-témoignant		témoigner	43
-témoignas		témoigner	12
-témoignasse		témoigner	6
-témoignassent		témoigner	17
-témoignasses		témoigner	8
-témoignassiez		témoigner	14
-témoignassions		témoigner	25
-témoignât		témoigner	62
-témoignâtes		témoigner	2
-témoigne	Variante de témoignage.
-témoignée		témoigner	45
-témoignées		témoigner	51
-témoignent		témoigner	41
-témoigner	Porter témoignage, servir de témoin.
-témoignera		témoigner	44
-témoignerai		témoigner	50
-témoigneraient		témoigner	63
-témoignerais		témoigner	60
-témoignerait		témoigner	49
-témoigneras		témoigner	57
-témoignèrent		témoigner	48
-témoignerez		témoigner	58
-témoigneriez		témoigner	4
-témoignerions		témoigner	11
-témoignerons		témoigner	10
-témoigneront		témoigner	54
-témoignés		témoigner	53
-témoignez		témoigner	47
-témoigniez		témoigner	67
-témoignions		témoigner	19
-témoignons		témoigner	27
-témoin	Personne qui certifie ou qui peut certifier une chose qu’elle a vue ou entendue.
-témoins		témoin	0
-tempe	Partie latérale de la tête entre l’oreille et le front.
-tempeh	Produit alimentaire à base de soja fermenté, originaire d’Indonésie.
-tempéra	Détrempe, peinture exécutée avec des couleurs mêlées à un liant et diluées dans l’eau.
-tempérai		tempérer	22
-tempéraient		tempérer	42
-tempérais		tempérer	29
-tempérait		tempérer	40
-tempérament	Complexion, constitution du corps, en parlant des personnes, voire des animaux.
-tempéramental	De tempérament, relatif au tempérament.
-tempéramentale		tempéramental	23
-tempéramentales		tempéramental	1
-tempéramentaux		tempéramental	9
-tempéraments		tempérament	0
-tempérâmes		tempérer	3
-tempérance	Fait de tempérer.
-tempérances		tempérance	0
-tempérant	Qui permet de tempérer, de modérer.
-tempérante		tempérant	109
-tempérantes		tempérant	1
-tempérants		tempérant	0
-tempéras		tempéra	0
-tempérasse		tempérer	6
-tempérassent		tempérer	17
-tempérasses		tempérer	8
-tempérassiez		tempérer	14
-tempérassions		tempérer	25
-tempérât		tempérer	20
-tempérâtes		tempérer	2
-température	Degré de chaleur ou de froideur d’un corps ou d’un environnement.
-températures		température	0
-tempéré	Ce qui n’est ni trop chaud ni trop froid, ce qui ne présente ni excès de chaleur ni excès de froid.
-tempérée		tempéré	23
-tempérées		tempéré	1
-tempèrent		tempérer	31
-tempérer	Modérer ou réguler de quelle que manière que ce soit.
-tempèrera		tempérer	21
-tempèrerai		tempérer	16
-tempéreraient		tempérer	108
-tempèrerais		tempérer	18
-tempérerait		tempérer	49
-tempèreras		tempérer	7
-tempérèrent		tempérer	24
-tempèrerez		tempérer	5
-tempèreriez		tempérer	4
-tempèrerions		tempérer	11
-tempèrerons		tempérer	10
-tempèreront		tempérer	15
-tempérés		tempéré	9
-tempérez		tempérer	30
-tempériez		tempérer	13
-tempérions		tempérer	19
-tempérons		tempérer	27
-tempes		tempe	0
-tempêta		tempêter	39
-tempêtai		tempêter	22
-tempêtaient		tempêter	42
-tempêtais		tempêter	52
-tempêtait		tempêter	40
-tempêtâmes		tempêter	3
-tempêtant		tempêter	43
-tempêtas		tempêter	12
-tempêtasse		tempêter	6
-tempêtassent		tempêter	17
-tempêtasses		tempêter	8
-tempêtassiez		tempêter	14
-tempêtassions		tempêter	25
-tempêtât		tempêter	20
-tempêtâtes		tempêter	2
-tempête	Tourmente atmosphérique, violente agitation de l’air, souvent accompagnée de pluie, de neige, de grêle, d’éclairs, de tonnerre, etc.
-tempêtent		tempêter	41
-tempêter	Faire un grand bruit par mécontentement.
-tempêtera		tempêter	21
-tempêterai		tempêter	16
-tempêteraient		tempêter	28
-tempêterais		tempêter	18
-tempêterait		tempêter	26
-tempêteras		tempêter	7
-tempêtèrent		tempêter	24
-tempêterez		tempêter	5
-tempêteriez		tempêter	4
-tempêterions		tempêter	11
-tempêterons		tempêter	10
-tempêteront		tempêter	15
-tempêtes		tempête	0
-tempêtez		tempêter	30
-tempêtiez		tempêter	13
-tempêtions		tempêter	19
-tempêtons		tempêter	27
-tempétueuse		tempétueux	23
-tempétueuses		tempétueux	1
-tempétueux	Qui a le caractère de la tempête.
-tempi		tempo	0
-temple	Édifice public consacré au culte de la divinité.
-temples		temple	0
-templier	Relatif à l'ordre du Temple et à ses membres.
-templière	Femme membre d’un ordre religieux combattant.
-templières	Pluriel de templière.
-templiers		templier	9
-tempo	Vitesse relative avec laquelle une œuvre musicale doit être exécutée.
-temporaire	Pour une durée limitée, éphémère.
-temporairement	D'une manière temporaire.
-temporaires		temporaire	0
-temporal	Qui a rapport aux tempes.
-temporale		temporal	23
-temporales		temporal	1
-temporalité	État de ce qui est temporel.
-temporalités		temporalité	0
-temporaux		temporal	9
-temporel	Relatif au temps.
-temporelle	Féminin singulier de temporel.
-temporellement	Pour un temps.
-temporelles		temporel	1
-temporels		temporel	9
-temporisa		temporiser	33
-temporisai		temporiser	22
-temporisaient		temporiser	42
-temporisais		temporiser	29
-temporisait		temporiser	40
-temporisâmes		temporiser	3
-temporisant		temporiser	35
-temporisas		temporiser	12
-temporisasse		temporiser	6
-temporisassent		temporiser	17
-temporisasses		temporiser	8
-temporisassiez		temporiser	14
-temporisassions		temporiser	25
-temporisât		temporiser	20
-temporisâtes		temporiser	2
-temporisateur	Qui temporise.
-temporisateurs		temporisateur	9
-temporisation	Action de temporiser.
-temporisations		temporisation	0
-temporisatrice	Celle qui temporise.
-temporisatrices		temporisateur	1
-temporisé		temporiser	56
-temporisée		temporiser	45
-temporisées		temporiser	36
-temporisent		temporiser	41
-temporiser	Retarder ou différer, dans l’attente d’une occasion favorable ou d’un temps plus propice.
-temporisera		temporiser	21
-temporiserai		temporiser	50
-temporiseraient		temporiser	28
-temporiserais		temporiser	18
-temporiserait		temporiser	26
-temporiseras		temporiser	7
-temporisèrent		temporiser	24
-temporiserez		temporiser	5
-temporiseriez		temporiser	4
-temporiserions		temporiser	11
-temporiserons		temporiser	10
-temporiseront		temporiser	15
-temporises		temporiser	66
-temporisez		temporiser	47
-temporisiez		temporiser	13
-temporisions		temporiser	19
-temporisons		temporiser	59
-tempos		tempo	0
-tempranillo	Cépage d'origine espagnole donnant de grosses grappes à grains noirs.
-temps	Durée des choses, marquée par certaines périodes, et principalement par la révolution apparente du soleil.
-tempura	Assortiment de beignets à la fois très savoureux et très digeste, populaire au Japon originaire du Portugal, depuis le XVIIᵉ siècle.
-tempuras		tempura	0
-tenable	Se dit d'un lieu, d’un poste, d’une place où l’on peut se défendre, où l’on peut demeurer sans un trop grand péril.
-tenables		tenable	0
-tenace	Qui est adhérent.
-tenacement	D’une manière tenace.
-tenaces		tenace	0
-ténacité	Caractère de ce qui est tenace, de ce qui tient fortement.
-ténacités		ténacité	0
-tenaient		tenir	93
-tenailla		tenailler	33
-tenaillai		tenailler	22
-tenaillaient		tenailler	42
-tenaillais		tenailler	29
-tenaillait		tenailler	40
-tenaillâmes		tenailler	3
-tenaillant	Qui tenaille.
-tenaillante		tenaillant	23
-tenaillantes		tenaillant	1
-tenaillants		tenaillant	9
-tenaillas		tenailler	12
-tenaillasse		tenailler	6
-tenaillassent		tenailler	17
-tenaillasses		tenailler	8
-tenaillassiez		tenailler	14
-tenaillassions		tenailler	25
-tenaillât		tenailler	20
-tenaillâtes		tenailler	2
-tenaille	Tout Instrument ou dispositif qui sert à tenir quelqu'un ou quelque chose (Cette acception première, gommée par l'outil de torture ou de travail, subsiste enco…
-tenaillée	Quantité de tronçons d'épingle que l'empointeur emportait à la meule
-tenaillées		tenaillée	0
-tenaillement	Action de tenailler, résultat de cette action.
-tenaillements		tenaillement	0
-tenaillent		tenailler	41
-tenailler	Tourmenter un criminel avec des tenailles ardentes.
-tenaillera		tenailler	21
-tenaillerai		tenailler	16
-tenailleraient		tenailler	28
-tenaillerais		tenailler	18
-tenaillerait		tenailler	26
-tenailleras		tenailler	7
-tenaillèrent		tenailler	24
-tenaillerez		tenailler	5
-tenailleriez		tenailler	4
-tenaillerions		tenailler	11
-tenaillerons		tenailler	10
-tenailleront		tenailler	15
-tenailles		tenaille	0
-tenaillez		tenailler	30
-tenailliez		tenailler	13
-tenaillions		tenailler	19
-tenaillon	Petite tenaille, ouvrage construit vis-à-vis l’une des faces de la demi-lune.
-tenaillons		tenaillon	0
-tenais		tenir	95
-tenait		tenir	91
-tenancier	Personne qui tenait des terres en tenure, dépendantes d’un fief auquel il était dû des cens ou autres droits.
-tenancière	Personne qui tient, qui gère certains établissements.
-tenancières		tenancière	0
-tenanciers		tenancier	0
-tenant	Qui tient.
-tenante	Celle qui, dans un tournoi, entreprend de tenir le champ contre toutes sortes d’assaillants.
-tenantes		tenant	1
-tenants		tenant	9
-tend		tendre	80
-tendaient		tendre	93
-tendais		tendre	95
-tendait		tendre	91
-tendance	Action ou force par laquelle un corps tend à se mouvoir d’un côté.
-tendances		tendance	0
-tendanceur	Personne dont le métier est de repérer les futures tendances de la mode, du design.
-tendanceurs		tendanceur	0
-tendanciel	Qui indique une tendance.
-tendancielle		tendanciel	23
-tendancielles	Féminin pluriel de tendanciel.
-tendanciels	Masculin pluriel de tendanciel.
-tendancieuse		tendancieux	23
-tendancieuses		tendancieux	1
-tendancieux	Qualifie des paroles ou des écrits qui laissent deviner certaines tendances sans les marquer explicitement.
-tendant	Qui tend à quelque fin.
-tendante		tendant	23
-tendantes		tendant	1
-tendants		tendant	0
-tende	→ voir tende de tranche.
-tendelle	Piège à oiseaux constitué d’une grosse pierre plate tenue en équilibré par une brindille au bout de laquelle est piquée de la nourriture, l’oiseau qui essaie d…
-tendelles		tendelle	0
-tendent		tendre	41
-tender	Bateau annexe d'un paquebot, d'un yacht, destiné à transporter des bagages, du combustible ou de munitions, transborder des passagers, etc.
-tenderie	Chasse où l’on tend des pièges pour attraper des oiseaux ou d’autres animaux.
-tenderies		tenderie	0
-tenders		tender	0
-tendes		tende	0
-tendeur	Celui qui tend quelque chose.
-tendeurs		tendeur	0
-tendeuse	Celle qui tend quelque chose.
-tendeuses		tendeuse	0
-tendez		tendre	70
-tendiez		tendre	102
-tendîmes		tendre	3
-tendineuse		tendineux	23
-tendineuses		tendineux	1
-tendineux	Qui a rapport au tendon, qui est de la nature des tendons.
-tendinite	Inflammation des tendons.
-tendinites		tendinite	0
-tendions		tendre	103
-tendirent		tendre	48
-tendis		tendre	55
-tendisse		tendre	6
-tendissent		tendre	78
-tendisses		tendre	8
-tendissiez		tendre	14
-tendissions		tendre	25
-tendît		tendre	62
-tendîtes		tendre	2
-tendoir	Tige de bois qui empêche la poitrinière du métier à tisser de se dérouler.
-tendoirs		tendoir	0
-tendon	Partie fibreuse, blanchâtre, ronde ou aplatie, qui forme l’extrémité des muscles et qui sert à les attacher aux os ou à d’autres parties.
-tendons		tendon	0
-tendra		tendre	44
-tendrai		tendre	50
-tendraient		tendre	97
-tendrais		tendre	96
-tendrait		tendre	92
-tendras		tendre	7
-tendre	Qui peut aisément être entamé.
-tendrement	Avec tendresse.
-tendres		tendre	0
-tendresse	Qualité de ce qui est tendre.
-tendresses		tendresse	0
-tendreté	Qualité de ce qui est tendre.
-tendretés		tendreté	0
-tendrez		tendre	5
-tendriez		tendre	99
-tendrions		tendre	101
-tendron	Bourgeon, rejeton tendre de quelques arbres, de quelques plantes.
-tendrons		tendron	0
-tendront		tendre	54
-tends		tendre	72
-tendu	Qui subit une tension (arc, élastique, ressort, etc.).
-tendue	Action de tendre un filet, un piège.
-tendues		tendu	1
-tendus		tendu	9
-ténèbres	Privation de lumière.
-ténébreuse		ténébreux	23
-ténébreusement	D’une manière ténébreuse.
-ténébreuses		ténébreux	1
-ténébreux	Qui est sombre, obscur.
-ténébrion	Ami des ténèbres intellectuelles.
-ténébrions		ténébrion	0
-ténelien	Relatif à Terre-Neuve-et-Labrador.
-ténelienne		ténelien	23
-téneliennes		ténelien	1
-téneliens		ténelien	9
-tènement	Terre tenue d’un seigneur.
-tènements		tènement	0
-ténesme	Tension douloureuse de la région anale ou du col de la vessie.
-ténesmes		ténesme	0
-teneur	Ce qui est contenu mot à mot dans un écrit, son texte littéral.
-teneurmètre	Appareil de mesure utilisé pour déterminer la présence de composés dans un matériau grâce aux rayonnements ionisants.
-teneurmètres		teneurmètre	0
-teneurs		teneur	0
-teneuse	Celle qui tient quelque chose.
-teneuses		teneuse	0
-tenez		tenir	70
-tenge	Monnaie ayant cours au Kazakhstan.
-tenges		tenge	163
-ténia	Ver solitaire ; long ver plat (plathelminthe), du genre Taenia, parasite de l’intestin de l’homme ou d’autres mammifères.
-ténias		ténia	0
-téniasis	Maladie parasitaire causée par la présence dans le tube digestif d’un ténia adulte.
-ténicide	Qui tue le ténia.
-ténicides		ténicide	0
-teniez		tenir	102
-ténifuge	Qui expulse les ténias.
-ténifuges		ténifuge	0
-tenions		tenir	103
-tenir	Garder fermement dans la main ou dans les mains.
-tennesse	Élément chimique portant le numéro atomique 117 (symbole Ts).
-tennessine	Tennesse, élément chimique portant le numéro atomique 117 (symbole Ts).
-tennis	Sorte de jeu de balle qui se joue avec des raquettes sur un terrain divisé en deux par un filet.
-tennisman	Joueur de tennis.
-tennismans		tennisman	0
-tennismen		tennisman	0
-tennistique	Relatif au tennis, à sa pratique.
-tennistiques		tennistique	0
-tenniswoman	Joueuse de tennis.
-tenniswomans		tenniswoman	0
-tenniswomen		tenniswoman	0
-Tenno	Commune d’Italie de la province de Trente dans la région du Trentin-Haut-Adige.
-ténois	Relatif aux Territoires du Nord-Ouest.
-ténoise		ténois	23
-ténoises		ténois	1
-tenon	Extrémité d’une pièce de bois ou de métal diminuée d’une partie de son épaisseur, qu’on fait entrer dans une mortaise, c’est-à-dire dans un trou de même forme …
-tenonna		tenonner	33
-tenonnai		tenonner	22
-tenonnaient		tenonner	32
-tenonnais		tenonner	29
-tenonnait		tenonner	34
-tenonnâmes		tenonner	3
-tenonnant		tenonner	35
-tenonnas		tenonner	12
-tenonnasse		tenonner	6
-tenonnassent		tenonner	17
-tenonnasses		tenonner	8
-tenonnassiez		tenonner	14
-tenonnassions		tenonner	25
-tenonnât		tenonner	20
-tenonnâtes		tenonner	2
-tenonné		tenonner	46
-tenonnée		tenonner	37
-tenonnées		tenonner	36
-tenonnent		tenonner	31
-tenonner	Garnir de tenons.
-tenonnera		tenonner	21
-tenonnerai		tenonner	16
-tenonneraient		tenonner	28
-tenonnerais		tenonner	18
-tenonnerait		tenonner	26
-tenonneras		tenonner	7
-tenonnèrent		tenonner	24
-tenonnerez		tenonner	5
-tenonneriez		tenonner	4
-tenonnerions		tenonner	11
-tenonnerons		tenonner	10
-tenonneront		tenonner	15
-tenonnés		tenonner	38
-tenonneuse	Machine-outil servant à usiner des pièces de bois, à faire des tenons.
-tenonneuses		tenonneuse	0
-tenonnez		tenonner	30
-tenonniez		tenonner	13
-tenonnions		tenonner	19
-tenonnons		tenonner	27
-tenons		tenon	0
-ténor	Voix d’homme la plus élevée, qu’on appelait autrefois taille.
-tenorini		tenorino	0
-ténorino	Ténor léger, qui chante en fausset.
-tenorinos		tenorino	0
-ténorisa		ténoriser	33
-ténorisai		ténoriser	22
-ténorisaient		ténoriser	32
-ténorisais		ténoriser	29
-ténorisait		ténoriser	34
-ténorisâmes		ténoriser	3
-ténorisant	Qui se rapproche du ténor.
-ténorisante		ténorisant	23
-ténorisantes		ténorisant	1
-ténorisants		ténorisant	9
-ténorisas		ténoriser	12
-ténorisasse		ténoriser	6
-ténorisassent		ténoriser	17
-ténorisasses		ténoriser	8
-ténorisassiez		ténoriser	14
-ténorisassions		ténoriser	25
-ténorisât		ténoriser	20
-ténorisâtes		ténoriser	2
-ténorisé		ténoriser	46
-ténorisent		ténoriser	31
-ténoriser	Chanter avec une voix de ténor.
-ténorisera		ténoriser	21
-ténoriserai		ténoriser	16
-ténoriseraient		ténoriser	28
-ténoriserais		ténoriser	18
-ténoriserait		ténoriser	26
-ténoriseras		ténoriser	7
-ténorisèrent		ténoriser	24
-ténoriserez		ténoriser	5
-ténoriseriez		ténoriser	4
-ténoriserions		ténoriser	11
-ténoriserons		ténoriser	10
-ténoriseront		ténoriser	15
-ténorises		ténoriser	66
-ténorisez		ténoriser	30
-ténorisiez		ténoriser	13
-ténorisions		ténoriser	19
-ténorisons		ténoriser	27
-ténorite	Oxyde naturel de cuivre.
-ténorites		ténorite	0
-ténors		ténor	0
-ténosynovite	Inflammation d’un tendon et de sa gaine protectrice qui contient le liquide synovial.
-ténosynovites		ténosynovite	0
-ténotomie	Opération qui consiste à pratiquer la section d’un tendon.
-ténotomies		ténotomie	0
-tenrec	Petit mammifère insectivore de Madagascar et des îles de l’océan Indien ressemblant à un hérisson.
-tenrecs		tenrec	0
-tenseur	Qui tend, qui provoque une tension.
-tenseurs		tenseur	0
-tensioactif	Se dit d'un agent chimique dont la présence à une interface entre deux fluides entraîne l'abaissement de la tension interfaciale.
-tensioactifs		tensioactif	0
-tensioactive		tensioactif	23
-tensioactives		tensioactif	1
-tensiomètre	Appareil destiné à mesurer la pression artérielle.
-tensiomètres		tensiomètre	0
-tension	État de ce qui est tendu.
-tensions		tension	0
-tenson	Genre de poésie dialoguée sur un sujet donné.
-tensons		tenson	0
-tensoriel	Qui a un rapport avec les tenseurs.
-tensorielle		tensoriel	23
-tensorielles		tensoriel	1
-tensoriels		tensoriel	9
-tenta		tenter	39
-tentaculaire	Relatif aux tentacules.
-tentaculaires		tentaculaire	0
-tentacule	Appendice charnu et mobile dont plusieurs animaux sont pourvus, et qu’ils tendent en avant, soit pour tâter le terrain ou les objets environnants, soit pour sa…
-tentacules		tentacule	0
-tentai		tenter	55
-tentaient		tenter	42
-tentais		tenter	52
-tentait		tenter	40
-tentâmes		tenter	68
-tentant	Qui tente, qui cause une envie, un désir.
-tentante		tentant	23
-tentantes		tentant	1
-tentants		tentant	9
-tentas		tenter	12
-tentasse		tenter	6
-tentassent		tenter	17
-tentasses		tenter	8
-tentassiez		tenter	14
-tentassions		tenter	25
-tentât		tenter	62
-tentâtes		tenter	2
-tentateur	Qui soumet à la tentation.
-tentateurs		tentateur	9
-tentatif	Expérimental, d’essai.
-tentation	Attrait vers une chose défendue ou déconseillée.
-tentations		tentation	0
-tentative	Action par laquelle on tente, on essaie de faire réussir quelque chose.
-tentatives		tentatif	1
-tentatrice	Celle qui incite à une action que la morale réprouve.
-tentatrices		tentateur	1
-tente	Sorte de pavillon fait ordinairement de toile, d’étoffe tendue, dont on se sert à la guerre, à la campagne, pour se mettre à couvert.
-tentée		tenté	23
-tentées		tenter	51
-tentent		tenter	41
-tenter	Essayer, éprouver ou mettre en usage quelque moyen pour faire réussir quelque chose.
-tentera		tenter	44
-tenterai		tenter	50
-tenteraient		tenter	63
-tenterais	Première personne du singulier du présent du conditionnel du verbe tenter.
-tenterait		tenter	49
-tenteras		tenter	57
-tentèrent		tenter	48
-tenterez		tenter	58
-tenteriez		tenter	74
-tenterions		tenter	11
-tenterons		tenter	61
-tenteront		tenter	54
-tentés		tenté	9
-tentez		tenter	47
-tenthrède	Hyménoptère de la famille des porte-scies.
-tentiez		tenter	67
-tentions		tenter	65
-tentons		tenter	59
-tenture	Ensemble de pièces de tapisserie ordinairement de même dessin, de même facture et représentant une suite de sujets et, ordinairement accrochée, servant à la dé…
-tentures		tenture	0
-tenu	Qui est entretenu, soigné, arrangé, suivi.
-ténue	Féminin singulier de ténu.
-tenues		tenue	0
-ténuirostre	Qui a un bec mince.
-ténuirostres	Famille de passereaux qui ont pour caractère essentiel un bec grêle et long.
-ténuité	Caractère d’une chose ténue.
-ténuités		ténuité	0
-tenure	Terre concédée à une personne non noble par un seigneur, en retenant la propriété pour n’accorder que la jouissance précaire au concessionnaire.
-tenures		tenure	0
-tenus		tenir	146
-tenuto	Tenu, en parlant d’une note jouée.
-tenutos		tenuto	0
-téocali	Variante de téocalli.
-téocalis		téocali	0
-téocalli	Espèce de pyramide qui servait de temple chez les Mexicains.
-téocallis		téocalli	0
-téorbe	Sorte de luth à deux chevilliers et à son plus grave que le luth ordinaire.
-téorbes		téorbe	0
-tep	Unité de mesure énergétique.
-tépale	Pièce de l’enveloppe florale lorsqu’elle est simple, c’est-à-dire lorsqu’on ne peut pas distinguer des pétales et des sépales.
-tépales		tépale	0
-téphra	Fragments de roche solides et liquides provenant du magma expulsés par les gaz pendant l’éruption d’un volcan et se déposant aux alentours.
-téphras		téphra	0
-téphrite	Sorte de roche volcanique.
-téphrites		téphrite	0
-téphrosie	Légumineuse papilionacée, de la tribu des Millettieae.
-téphrosies		téphrosie	0
-tépidarium	Partie centrale des thermes romains.
-tépidariums		tépidarium	0
-teppanyaki	Technique culinaire japonaise traditionnelle de préparation et de cuisson des aliments sur une plaque chauffante
-teppanyakis		teppanyaki	0
-tepui	Variante orthographique de tepuy.
-tepuis		tepui	0
-tequila	Eau-de-vie distillée à partir du jus produit par la plante agave bleu (Agave tequilana F.A.C.Weber var.
-tequilas		tequila	0
-ter	Une troisième fois.
-térabit	Unité de mesure de quantité d’information numérique, valant 10¹² bits, et dont le symbole est Tbit ou parfois Tb.
-térabits		térabit	0
-térabyte	Téraoctet, soit 10¹² bytes.
-térabytes		térabyte	0
-téraflops	Unité de mesure de puissance de calcul numérique, valant 10¹² flops.
-téragone	Polygone ayant un très grand nombre de côtés, utilisé notamment dans la génération de fractales.
-téragones		téragone	0
-térahertz	Unité de mesure de fréquence du Système international (SI), valant 10¹² hertz, et dont le symbole est THz.
-teranga	Hospitalité.
-terangas		teranga	0
-téraoctet	Unité de mesure de quantité d’information numérique, valant 10¹² octets, et dont le symbole est To.
-téraoctets		téraoctet	0
-téraspic	Variante de taraspic.
-téraspics		téraspic	0
-tératogène	Qui engendre des malformations à un embryon, à un fœtus.
-tératogènes		tératogène	0
-tératogenèse	Développement de malformations congénitales.
-tératogenèses		tératogenèse	0
-tératogénie	Mode de production des monstruosités.
-tératogénies		tératogénie	0
-tératologie	Partie des sciences naturelles qui traite des malformations congénitales et des monstruosités organiques.
-tératologies		tératologie	0
-tératologique	Qui a rapport à la tératologie.
-tératologiques		tératologique	0
-tératologiste	Tératologue.
-tératologistes		tératologiste	0
-tératologue	Tératogène, qui provoque des malformations congénitales et des monstruosités organiques.
-tératologues		tératologue	0
-tératome	Tumeur à tissus multiples et disposés de façon anarchique, d’origine embryonnaire ou fœtale.
-tératomes		tératome	0
-térawatt	Unité de mesure de puissance du Système international (SI), valant 10¹² watts, et dont le symbole est TW.
-térawatts		térawatt	0
-terbine	Hydroxyde de terbium.
-terbines		terbine	0
-terbium	Élément chimique de numéro atomique 65 et de symbole Tb qui fait partie de la série chimique des lanthanides et des terres rares.
-terça		tercer	33
-terçai		tercer	22
-terçaient		tercer	32
-terçais		tercer	29
-terçait		tercer	34
-terçâmes		tercer	3
-terçant		tercer	35
-terças		tercer	12
-terçasse		tercer	6
-terçassent		tercer	17
-terçasses		tercer	8
-terçassiez		tercer	14
-terçassions		tercer	25
-terçât		tercer	20
-terçâtes		tercer	2
-terce		tercer	64
-tercée		tercer	37
-tercées		tercer	36
-tercent		tercer	31
-tercer	Donner un troisième labour, une troisième façon à la vigne.
-tercera		tercer	21
-tercerai		tercer	16
-terceraient		tercer	28
-tercerais		tercer	18
-tercerait		tercer	26
-terceras		tercer	7
-tercèrent		tercer	24
-tercerez		tercer	5
-terceriez		tercer	4
-tercerions		tercer	11
-terceron	Métis né d’un mulâtre et d’une femme blanche ou dans le sens inverse d’un blanc et d’une mulâtresse.
-tercerons		terceron	0
-terceront		tercer	15
-tercés		tercer	38
-tercet	Strophe de trois vers.
-tercets		tercet	0
-tercez		tercer	30
-terciez		tercer	13
-tercions		tercer	19
-terçons		tercer	27
-térébelle	Ver marin de la famille des Térébellidés, de 8 à 10 cm (de l’embranchement des Annélides, de la classe des Polychètes, de la famille des Amphitrites) vivant da…
-térébelles		térébelle	0
-terebellum	Variante de térébellum.
-terebellums		terebellum	0
-térébenthène	Alpha-pinène.
-térébenthènes		térébenthène	0
-térébenthine	Oléorésine qui coule du térébinthe et d’autres arbres résineux comme le pin maritime.
-térébenthinés		térébenthiné	9
-térébinthacées	Dans les anciennes classifications du vivant, famille de plantes dont le térébinthe était le type.
-térébinthe	Arbuste résineux au bois dur, à feuilles imparipennées caduques, à petites fleurs en grappes serrées, dont les petits fruits sont blancs, puis roses, rouges et…
-térébinthes		térébinthe	0
-térébique	Relatif à la térébenthine.
-térébiques		térébique	0
-térébrant	Perçant ; cri très aigu
-térébrante		térébrant	23
-térébrantes		térébrant	1
-térébrants		térébrant	9
-térébration	Action de percer avec une tarière.
-térébrations		térébration	0
-térébratule	Brachiopode à coquille ovale et lisse, abondant à l’ère secondaire et répandu encore actuellement dans toutes les mers.
-térébratules		térébratule	0
-téréphtalate	Sel ou ester de l’acide téréphtalique.
-téréphtalates		téréphtalate	0
-terfès	Grosse truffe d’Afrique du Nord.
-terfesse	Variante orthographique de terfès.
-terfesses		terfesse	0
-terfèze	Variante de terfès.
-terfèzes		terfèze	0
-tergal	Fibre de polyester.
-tergale		tergal	23
-tergales		tergal	1
-tergals		tergal	0
-tergaux		tergal	9
-tergite	Sclérite ou plaque de chitine, située sur l’abdomen (le dos) des arthropodes.
-tergites		tergite	0
-tergiversa		tergiverser	33
-tergiversai		tergiverser	22
-tergiversaient		tergiverser	42
-tergiversais		tergiverser	52
-tergiversait		tergiverser	34
-tergiversâmes		tergiverser	3
-tergiversant		tergiverser	43
-tergiversas		tergiverser	12
-tergiversasse		tergiverser	6
-tergiversassent		tergiverser	17
-tergiversasses		tergiverser	8
-tergiversassiez		tergiverser	14
-tergiversât		tergiverser	20
-tergiversâtes		tergiverser	2
-tergiversation	Action de tergiverser, d'hésiter.
-tergiversations		tergiversation	0
-tergiversé		tergiverser	56
-tergiversent		tergiverser	31
-tergiverser	Prendre des détours, des faux-fuyants pour éloigner ou pour éluder la conclusion d’une affaire, la décision d’une question, pour ne pas faire une réponse posit…
-tergiversera		tergiverser	21
-tergiverserai		tergiverser	16
-tergiverserais		tergiverser	18
-tergiverserait		tergiverser	26
-tergiverseras		tergiverser	7
-tergiversèrent		tergiverser	24
-tergiverserez		tergiverser	5
-tergiverseriez		tergiverser	4
-tergiverserions		tergiverser	11
-tergiverserons		tergiverser	10
-tergiverseront		tergiverser	15
-tergiverses		tergiverser	77
-tergiversez		tergiverser	47
-tergiversiez		tergiverser	13
-tergiversions		tergiverser	19
-tergiversons		tergiverser	59
-teriyaki	Viande, poisson ou crustacé grillé ou rôti dans une sauce soja sucrée au mirin.
-teriyakis		teriyaki	0
-terlenka	Fibre synthétique polyester, utilisée notamment pour les vêtements imperméables.
-terlenkas		terlenka	0
-termaillage	Changement dans le rythme des règlements internationaux, caractérisé par un jeu de va-et-vient entre les dates de paiement des créances et de recouvrement des …
-termaillages		termaillage	0
-terme	Borne marquant une limite et faite d’un buste terminé en gaine, en souvenir du dieu Terme.
-termes		terme	0
-termina		terminer	33
-terminai		terminer	55
-terminaient		terminer	42
-terminais		terminer	52
-terminaison	Fin d’une chose.
-terminaisons		terminaison	0
-terminait		terminer	40
-terminal	Qui termine une chose, qui en occupe ou en forme l’extrémité.
-terminale	Dernière classe du lycée, après la première, pour les enfants de 17-18 ans.
-terminales		terminal	1
-terminâmes		terminer	3
-terminant		terminer	43
-terminas		terminer	12
-terminasse		terminer	6
-terminassent		terminer	17
-terminasses		terminer	8
-terminassiez		terminer	14
-terminassions		terminer	25
-terminât	Forme conjuguée du verbe terminer.	terminer
-terminâtes		terminer	2
-terminateur	Pour une planète ou une lune, ligne de séparation entre la partie éclairée (où il fait jour) et la partie obscure (où il fait nuit).
-terminateurs		terminateur	0
-terminaux		terminal	9
-terminé	Qui est achevé.
-terminée		terminer	37
-terminées		terminé	1
-terminent		terminer	41
-terminer	Borner, limiter.
-terminera		terminer	21
-terminerai		terminer	50
-termineraient		terminer	63
-terminerais		terminer	18
-terminerait		terminer	49
-termineras		terminer	57
-terminèrent		terminer	48
-terminerez		terminer	58
-termineriez		terminer	4
-terminerions		terminer	11
-terminerons		terminer	61
-termineront		terminer	54
-terminés	Participe passé masculin pluriel verbe terminer.	terminer
-terminez		terminer	47
-terminiez		terminer	67
-terminions		terminer	65
-terminisme	Doctrine des terministes.
-terminismes		terminisme	0
-terminologie	Ensemble des termes techniques, d’une science, d’un art ou d’un domaine donné.
-terminologies		terminologie	0
-terminologique	Relatif à la terminologie, à l'adéquation entre la désignation d'un mot et le concept auquel ce terme fait référence.
-terminologiques		terminologique	0
-terminologue	Linguiste spécialiste de la terminologie qui détermine l'adéquation entre la désignation d'un mot et le concept auquel ce terme fait référence.
-terminologues		terminologue	0
-terminons		terminer	59
-terminus	Point final, endroit où s’arrête une ligne de chemins de fer, de bateaux, d’avions, de transports quelconques.
-termite	Nom courant des Isoptères, ordre d’insectes sociaux xylophages.
-termitée		termité	23
-termitées		termité	1
-termites		termite	0
-termitière	Nid de termites.
-termitières		termitière	0
-termondois	Relatif à Termonde, ville de Belgique située en province de Flandre-Orientale.
-termondoise		termondois	23
-termondoises		termondois	1
-ternaire	Qui est composé de trois unités.
-ternaires		ternaire	0
-terné	Qui est au nombre de trois sur un support commun, en parlant des parties d'une plante.
-ternes		terne	0
-terni	Devenu terne.
-ternie		terni	23
-ternies		terni	1
-ternîmes		ternir	3
-ternir	Rendre terne, ôter ou diminuer l’éclat de quelque chose.
-ternira		ternir	21
-ternirai		ternir	50
-terniraient		ternir	28
-ternirais		ternir	18
-ternirait		ternir	49
-terniras		ternir	7
-ternirent		ternir	24
-ternirez		ternir	5
-terniriez		ternir	4
-ternirions		ternir	11
-ternirons		ternir	10
-terniront		ternir	15
-ternis		terni	9
-ternissaient		ternir	75
-ternissais		ternir	29
-ternissait		ternir	71
-ternissant		ternir	43
-ternisse		ternir	85
-ternissement	Action de ternir.
-ternissements		ternissement	0
-ternissent		ternir	69
-ternisses		ternir	76
-ternissez		ternir	30
-ternissiez		ternir	13
-ternissions		ternir	19
-ternissons		ternir	27
-ternissure	État de ce qui est terni.
-ternit		ternir	80
-ternîtes		ternir	2
-terpène	Composé naturel issu majoritairement des plantes, formé d’unités d’isoprène (C₅H₈), présent dans de nombreuses huiles essentielles et doué d’activités biologiq…
-terpènes		terpène	0
-terpénique	Relatif aux terpènes ou qui en est dérivé.
-terpéniques		terpénique	0
-terpénoïde	Composé isoprénique dérivé d’un terpène, comportant un ou plusieurs groupes fonctionnels.
-terpénoïdes		terpénoïde	0
-terpine	Hydrate de térébenthine employé contre la toux, comme calmant.
-terpinéol	Alcool monoterpénique de formule C₁₀H₁₈O, existant sous plusieurs isomères, présent dans certaines huiles essentielles et utilisé en parfumerie.
-terpinol	Variante orthographique de terpinéol.
-terra		terrer	39
-terraformation	Processus hypothétique d’ingénierie planétaire visant à modifier l’environnement naturel d’une planète, d’une lune ou d’un autre corps céleste, afin de le rend…
-terraformations		terraformation	0
-terrage	Droit qu’avaient certains seigneurs de prélever des produits de la terre qui était de leur domaine.
-terrager	Lever le droit de terrage.
-terragés		terrager	38
-terrai	Première personne du singulier du passé simple du verbe terrer.
-terraient		terrer	42
-terrain	Terre, sol considéré par rapport à sa nature, à sa composition, à sa forme.
-terrains		terrain	0
-terrais		terrer	52
-terrait	Troisième personne du singulier de l’imparfait de l’indicatif du verbe terrer.
-terramare	Sorte de terre ammoniacale qu'on exploite comme engrais en différents points de l'Italie.
-terramares		terramare	0
-terrâmes		terrer	3
-terrant		terrer	43
-terraqué	Qui est composé de terre et d’eau.
-terraquée		terraqué	109
-terraquées		terraqué	1
-terraqués		terraqué	9
-terrarium	Emplacement disposé pour des animaux de terre.
-terrariums		terrarium	0
-terras	Résine recueillie au pied des pins, parfois à même le sol.
-terrassa		terrasser	39
-terrassai		terrasser	55
-terrassaient		terrasser	42
-terrassais		terrasser	29
-terrassait		terrasser	40
-terrassâmes		terrasser	3
-terrassant	Qui terrasse, qui abat.
-terrassas		terrasser	12
-terrassasse		terrasser	6
-terrassassent		terrasser	17
-terrassasses		terrasser	8
-terrassassiez		terrasser	14
-terrassassions		terrasser	25
-terrassât		terrasser	62
-terrassâtes		terrasser	2
-terrasse	Levée de terre artificielle en plate-forme, ordinairement soutenue par de la maçonnerie.
-terrassée		terrasser	45
-terrassées		terrasser	51
-terrassement	Action de terrasser.
-terrassements		terrassement	0
-terrassent		terrasser	31
-terrasser	Soutenir, fortifier par un amas de terre.
-terrassera		terrasser	21
-terrasserai		terrasser	16
-terrasseraient		terrasser	28
-terrasserais		terrasser	18
-terrasserait		terrasser	49
-terrasseras		terrasser	7
-terrassèrent		terrasser	48
-terrasserez		terrasser	5
-terrasseriez		terrasser	4
-terrasserions		terrasser	11
-terrasserons		terrasser	10
-terrasseront		terrasser	15
-terrassés		terrasser	53
-terrassez		terrasser	30
-terrassier	Qui se rapporte aux travaux de terrassement.
-terrassière	Ouvrière qui travaille à remuer, à transporter des terres.
-terrassières		terrassier	1
-terrassiers		terrassier	9
-terrassiez		terrasser	13
-terrassions		terrasser	19
-terrasson	Partie supérieure la moins pentue d’un toit à l’italienne où d’un toit à la Mansart.
-terrassons		terrasson	9
-terrat	Auget plein d’eau où le potier trempe de temps en temps ses mains pour empêcher que la terre glaise ne s’y attache.
-terrâtes		terrer	2
-terrazzo	Nom donné au granito quand il est réalisé sur place en grandes dalles séparées par des joints de dilatation.
-terrazzos		terrazzo	0
-terre	Sol sur lequel nous marchons, sur lequel les maisons sont construites, qui produit et nourrit les végétaux.
-terreau	Support, substrat, majoritairement composé de débris végétaux, destiné à la culture des plantes en pot.
-terreauta		terreauter	33
-terreautage	Épandage de terreau ou de compost bien décomposé sur une culture afin de lui apporter des matières organiques.
-terreautages		terreautage	0
-terreautai		terreauter	22
-terreautaient		terreauter	32
-terreautais		terreauter	29
-terreautait		terreauter	34
-terreautâmes		terreauter	3
-terreautant		terreauter	35
-terreautas		terreauter	12
-terreautasse		terreauter	6
-terreautassent		terreauter	17
-terreautasses		terreauter	8
-terreautassiez		terreauter	14
-terreautassions		terreauter	25
-terreautât		terreauter	20
-terreautâtes		terreauter	2
-terreauté		terreauter	46
-terreautée		terreauter	37
-terreautées		terreauter	36
-terreautent		terreauter	31
-terreauter	Additionner de terreau.
-terreautera		terreauter	21
-terreauterai		terreauter	16
-terreauteraient		terreauter	28
-terreauterais		terreauter	18
-terreauterait		terreauter	26
-terreauteras		terreauter	7
-terreautèrent		terreauter	24
-terreauterez		terreauter	5
-terreauteriez		terreauter	4
-terreauterions		terreauter	11
-terreauterons		terreauter	10
-terreauteront		terreauter	15
-terreautés		terreauter	38
-terreautez		terreauter	30
-terreautiez		terreauter	13
-terreautions		terreauter	19
-terreautons		terreauter	27
-terreaux		terreau	0
-Terrebonnien	Habitant de Terrebonne, municipalité québécoise ^().
-Terrebonnienne	Habitante de Terrebonne, ville québécoise.
-Terrebonniennes		Terrebonnienne	0
-Terrebonniens		Terrebonnien	0
-terrée		terrer	45
-terrées		terrer	51
-terrent		terrer	41
-terreplein	Variante orthographique de terre-plein
-terrepleins		terreplein	0
-terrer	Entourer, garnir, couvrir de terre.
-terrera		terrer	44
-terrerai		terrer	16
-terreraient		terrer	28
-terrerais		terrer	18
-terrerait		terrer	49
-terreras		terrer	7
-terrèrent		terrer	24
-terrerez		terrer	5
-terreriez		terrer	4
-terrerions		terrer	11
-terrerons		terrer	10
-terreront		terrer	54
-terres		terre	0
-terrestre	Relatif à la planète Terre.
-terrestres		terrestre	0
-terreur	Émotion profonde causée dans l’âme par la présence, l’annonce, la peinture d’un grand mal ou d’un grand péril.
-terreurs		terreur	0
-terreuse		terreux	23
-terreuses		terreux	1
-terreux	Qui a rapport à la terre, qui est de la nature de la terre.
-terrez		terrer	47
-terri	Variante orthographique de terril.
-terrible	Qui cause de la terreur.
-terriblement	De manière à inspirer de la terreur.
-terribles		terrible	0
-terricole	Qui vit sur la terre ou dans la terre.
-terricoles		terricole	0
-terrien	Qui possède des terres.
-terrienne	Celle qui vit du travail de la terre.
-terriennes		terrien	1
-terriens		terrien	9
-terrier	Qualifiait le registre foncier, contenant le dénombrement, les déclarations des particuliers qui relevaient d’une seigneurie, et le détail des droits, cens et …
-terrière	Lieu d’où l’on tire de la terre.
-terrières		terrière	0
-terriers		terrier	0
-terriez		terrer	13
-terrifia		terrifier	39
-terrifiai		terrifier	22
-terrifiaient		terrifier	42
-terrifiais		terrifier	29
-terrifiait		terrifier	40
-terrifiâmes		terrifier	3
-terrifiant	Qui provoque une réaction de terreur.
-terrifiante		terrifiant	23
-terrifiantes		terrifiant	1
-terrifiants		terrifiant	9
-terrifias		terrifier	12
-terrifiasse		terrifier	6
-terrifiassent		terrifier	17
-terrifiasses		terrifier	8
-terrifiassiez		terrifier	14
-terrifiassions		terrifier	25
-terrifiât		terrifier	20
-terrifiâtes		terrifier	2
-terrifié	En proie à la terreur.
-terrifiée		terrifié	23
-terrifiées		terrifié	1
-terrifient		terrifier	41
-terrifier	Frapper de terreur.
-terrifiera		terrifier	21
-terrifierai		terrifier	16
-terrifieraient		terrifier	28
-terrifierais		terrifier	18
-terrifierait		terrifier	49
-terrifieras		terrifier	7
-terrifièrent		terrifier	24
-terrifierez		terrifier	5
-terrifieriez		terrifier	4
-terrifierions		terrifier	11
-terrifierons		terrifier	10
-terrifieront		terrifier	15
-terrifiés		terrifié	9
-terrifiez		terrifier	47
-terrifiiez		terrifier	13
-terrifiions		terrifier	19
-terrifions		terrifier	59
-terrigène	Provenant de l’érosion des terres.
-terrigènes		terrigène	0
-terril	Monticule de déchets houillers.
-terrils		terril	0
-terrîmes		terrir	3
-terrine	Récipient de terre, de faïence, etc., de forme ronde, plat par en bas, et qui va en s’élargissant par en haut.
-terrinée	Ce que peut contenir une terrine, autant qu’il peut en tenir dans une terrine.
-terrinées		terrinée	0
-terrines		terrine	0
-terrions		terrer	19
-terrir	Il se dit des tortues qui, sortant de la mer à certaines époques, viennent sur le rivage, et, après y avoir fait un trou dans le sable, y pondent leurs œufs, p…
-terrira		terrir	21
-terrirai		terrir	16
-terriraient		terrir	28
-terrirais		terrir	18
-terrirait		terrir	26
-terriras		terrir	7
-terrirent		terrir	24
-terrirez		terrir	5
-terririez		terrir	4
-terririons		terrir	11
-terrirons		terrir	10
-terriront		terrir	15
-terris		terrir	79
-terrissaient		terrir	32
-terrissais		terrir	29
-terrissait		terrir	34
-terrissant		terrir	35
-terrisse		terrir	89
-terrissent		terrir	31
-terrisses		terrir	76
-terrissez		terrir	30
-terrissiez		terrir	13
-terrissions		terrir	19
-terrissons		terrir	27
-territ		terrir	107
-terrîtes		terrir	2
-territoire	Étendue de terre plus ou moins précisément délimitée.
-territoires		territoire	0
-territorial	Qui concerne un territoire.
-territoriale	Personnel de l'armée territoriale.
-territoriales		territorial	1
-territorialité	Principe selon lequel une règle de droit, une compétence ou un impôt s’applique aux personnes, aux biens, aux actes ou aux revenus rattachés à un territoire dé…
-territorialités		territorialité	0
-territoriaux		territorial	9
-territorien	Qui concerne les Territoires du Nord-Ouest ou le Yukon, au Canada.
-territorienne		territorien	23
-territoriennes		territorien	1
-territoriens		territorien	9
-terroir	Terre considérée par rapport à la culture.
-terroirs		terroir	0
-terrons		terrer	59
-terrorisa		terroriser	39
-terrorisai		terroriser	22
-terrorisaient		terroriser	42
-terrorisais		terroriser	29
-terrorisait		terroriser	40
-terrorisâmes		terroriser	3
-terrorisant	Qui terrorise ; qui provoque ou institue la terreur.
-terrorisante		terrorisant	23
-terrorisantes		terrorisant	1
-terrorisants		terrorisant	9
-terrorisas		terroriser	12
-terrorisasse		terroriser	6
-terrorisassent		terroriser	17
-terrorisasses		terroriser	8
-terrorisassiez		terroriser	14
-terrorisassions		terroriser	25
-terrorisât		terroriser	20
-terrorisâtes		terroriser	2
-terrorise		terroriser	64
-terrorisée		terroriser	45
-terrorisées		terroriser	51
-terrorisent		terroriser	41
-terroriser	Frapper de terreur.
-terrorisera		terroriser	21
-terroriserai		terroriser	16
-terroriseraient		terroriser	28
-terroriserais		terroriser	18
-terroriserait		terroriser	26
-terroriseras		terroriser	7
-terrorisèrent		terroriser	24
-terroriserez		terroriser	5
-terroriseriez		terroriser	4
-terroriserions		terroriser	11
-terroriserons		terroriser	10
-terroriseront		terroriser	54
-terrorisés		terroriser	53
-terrorisez		terroriser	47
-terrorisiez		terroriser	13
-terrorisions		terroriser	19
-terrorisme	Violences (attentats, assassinats, enlèvements, sabotages…) menées contre des civils, et destinées à frapper l’opinion publique.
-terrorismes		terrorisme	0
-terrorisons		terroriser	27
-terroriste	Relatif à la Terreur et à ses partisans et activistes.
-terroristes		terroriste	0
-tersa		terser	33
-tersai		terser	22
-tersaient	Troisième personne du pluriel de l’imparfait de l’indicatif du verbe terser.
-tersais		terser	29
-tersait	Troisième personne du singulier de l’imparfait de l’indicatif du verbe terser.
-tersâmes		terser	3
-tersant		terser	35
-tersas		terser	12
-tersasse		terser	6
-tersassent		terser	17
-tersasses		terser	8
-tersassiez		terser	14
-tersassions		terser	25
-tersât		terser	20
-tersâtes		terser	2
-tersé		terser	46
-tersée		terser	37
-tersées		terser	36
-tersent		terser	31
-terser	Variante de tercer.
-tersera		terser	21
-terserai		terser	16
-terseraient		terser	28
-terserais		terser	18
-terserait		terser	26
-terseras		terser	7
-tersèrent		terser	24
-terserez		terser	5
-terseriez		terser	4
-terserions		terser	11
-terserons		terser	10
-terseront		terser	15
-tersés		terser	38
-tersez		terser	30
-tersiez		terser	13
-tersions		terser	19
-tersons		terser	27
-tertiaire	Qui apparait en troisième lieu ou en troisième position.
-tertiaires		tertiaire	0
-tertiarisation	Fait d’augmenter la proportion du secteur tertiaire dans l’économie.
-tertiarisations		tertiarisation	0
-tertiarisme	Troisième phase de la syphilis.
-tertiarismes		tertiarisme	0
-tertio	Troisièmement, en troisième lieu.
-tertre	Monticule, éminence isolée.
-tertres		tertre	0
-tervueren	Variante de berger belge tervuren (variété de race de chien).
-terzetto	Tercet.
-terzettos		terzetto	0
-tes	Pluriel de ton, ta.	ta
-tesla	Unité de mesure de la densité de flux magnétique ou de l’induction magnétique du Système international, défini comme weber par mètre carré, dont le symbole est…
-teslas		tesla	0
-tessellé	Qui est disposé par carreaux, comme un damier
-tesseller	Décomposer une surface en éléments de base réguliers disposés bord-à-bord.
-tessellés		tesseller	38
-tessère	Petite tablette d’ivoire, de métal, de bois, qui chez les anciens Romains servait de signe de reconnaissance, de jeton, de billet de théâtre, et pour divers au…
-tessères		tessère	0
-tessinois	Relatif au Tessin, canton du sud de la Suisse.
-tessinoise		tessinois	23
-tessinoises		tessinois	1
-tessiture	Tranche du registre la plus aisée d’une voix.
-tessitures		tessiture	0
-tesson	Débris de bouteille cassée, de pot cassé.
-tessons		tesson	0
-test	Coquille externe dure, calcaire ou chitineuse, de certains invertébrés.
-testa	Enveloppe la plus extérieure de la graine.
-testabilité	Qualité de ce qui est testable.
-testabilités		testabilité	0
-testable	Que l’on peut tester, en particulier, pour assurer la véracité scientifique.
-testables		testable	0
-testacé	Couvert d’une écaille dure et forte.
-testacée		testacé	23
-testacées		testacé	1
-testacelle	Mollusque gastéropode muni d'une coquille très réduite, proche de la limace.
-testacelles		testacelle	0
-testacés		testacé	0
-testage	Sélection des animaux reproducteurs ou des cultivars par observation, contrôle des qualités de leurs premiers descendants et de leurs produits.
-testages		testage	0
-testai	Première personne du singulier du passé simple du verbe tester.
-testaient	Troisième personne du pluriel de l’imparfait de l’indicatif du verbe tester.
-testais	Première personne du singulier de l’imparfait de l’indicatif du verbe tester.
-testait	Troisième personne du singulier de l’imparfait de l’indicatif du verbe tester.
-testament	Acte authentique par lequel on déclare ses dernières volontés.
-testamentaire	Qui concerne un testament, qui a rapport à un testament.
-testamentaires		testamentaire	0
-testaments		testament	0
-testâmes		tester	3
-testant		tester	43
-testas		tester	12
-testasse		tester	6
-testassent		tester	17
-testasses		tester	8
-testassiez		tester	14
-testassions		tester	25
-testât		tester	20
-testâtes		tester	2
-testateur	Celui qui fait ou a fait un testament.
-testateurs		testateur	0
-testatrice	Celle qui fait un testament.
-testatrices		testatrice	0
-testé		tester	56
-testée		tester	37
-testées	Participe passé féminin pluriel du verbe tester.
-testent		tester	41
-tester	Déclarer par un acte ce que l’on veut qui soit exécuté après sa mort.
-testera		tester	44
-testerai	Première personne du singulier du futur simple du verbe tester.
-testeraient		tester	28
-testerais		tester	18
-testerait		tester	26
-testeras		tester	57
-testèrent		tester	48
-testerez		tester	5
-testeriez		tester	4
-testerions		tester	11
-testerons		tester	61
-testeront		tester	54
-testés	Participe passé masculin pluriel du verbetester.	tester
-testeur	Équipement qui permet d'appliquer une séquence de tests sur les entrées d'un circuit et qui mesure les états de sorties afin de vérifier leur conformité aux sp…
-testeurs		testeur	0
-testeuse	Celle chargée de réaliser un ou plusieurs tests.
-testeuses		testeuse	0
-testez		tester	131
-testiculaire	Relatif aux testicules.
-testiculaires		testiculaire	0
-testicule	Glande génitale de l’homme et des animaux mâles qui sécrète la testostérone et fabrique les spermatozoïdes par spermatogenèse.
-testicules		testicule	0
-testiez		tester	67
-testimonial	Qui rend témoignage.
-testimoniale		testimonial	23
-testimoniales		testimonial	1
-testimoniaux		testimonial	9
-testing	Test comparatif.
-testings		testing	0
-testions		tester	65
-testologie	Étude des tests de personnalité.
-testologies		testologie	0
-teston	Ancienne monnaie d’argent en cours dans le royaume de France du règne de François Iᵉʳ à celui de Louis XIII.
-testons		teston	0
-testostérone	Hormone stéroïdienne androgène principalement produite par les cellules de Leydig des testicules, ainsi que par les ovaires et les glandes surrénales, qui part…
-testostérones		testostérone	0
-tests		test	0
-tet	Autre orthographe de tèt (ט), neuvième lettre des alphabets phénicien et hébreu.
-teta		teter	39
-tétai		téter	22
-tétaient		téter	42
-tétais	Première personne du singulier de l’imparfait de l’indicatif du verbe téter.
-tétait		téter	40
-tétâmes		téter	3
-tétanie	Syndrome d’excitabilité neuromusculaire caractérisé par des spasmes douloureux.
-tétanies		tétanie	0
-tétanique	Qui est relatif au tétanos.
-tétaniques		tétanique	0
-tétanisa		tétaniser	33
-tétanisai		tétaniser	22
-tétanisaient		tétaniser	32
-tétanisais		tétaniser	29
-tétanisait		tétaniser	40
-tétanisâmes		tétaniser	3
-tétanisant	Qui tétanise.
-tétanisas		tétaniser	12
-tétanisasse		tétaniser	6
-tétanisassent		tétaniser	17
-tétanisasses		tétaniser	8
-tétanisassiez		tétaniser	14
-tétanisassions		tétaniser	25
-tétanisât		tétaniser	20
-tétanisâtes		tétaniser	2
-tétanisation	Action de tétaniser, de provoquer des contractures tétaniques.
-tétanisations		tétanisation	0
-tétanisé	Dans un état tétanique.
-tétanisée		tétanisé	23
-tétanisées		tétanisé	1
-tétanisent		tétaniser	41
-tétaniser	Rendre tétanique.
-tétanisera		tétaniser	21
-tétaniserai		tétaniser	16
-tétaniseraient		tétaniser	28
-tétaniserais		tétaniser	18
-tétaniserait		tétaniser	26
-tétaniseras		tétaniser	7
-tétanisèrent		tétaniser	24
-tétaniserez		tétaniser	5
-tétaniseriez		tétaniser	4
-tétaniserions		tétaniser	11
-tétaniserons		tétaniser	10
-tétaniseront		tétaniser	15
-tétanisés		tétanisé	9
-tétanisez		tétaniser	30
-tétanisiez		tétaniser	13
-tétanisions		tétaniser	19
-tétanisons		tétaniser	27
-tétanos	Maladie toxi-infectieuse, tellurique, de l’homme et des animaux, généralement mortelle, caractérisée par la contraction convulsive, la rigidité d’un plus ou mo…
-tétant		téter	43
-têtard	Larve de batracien vivant dans l’eau et respirant par des branchies.
-têtards		têtard	0
-tétas		téter	12
-tétasse	Sein de femme, particulièrement s'il est flasque.
-tétassent		téter	17
-tétasses		tétasse	0
-tétassiez		téter	14
-tétassions		téter	25
-tétât		téter	20
-tétâtes		téter	2
-tête	Partie supérieure du corps, qui est le siège du cerveau et des principaux organes des sens, et qui, chez l’être humain et chez la plupart des vertébrés, tient …
-têteau	Extrémité d’une branche maîtresse, coupée à peu de distance du pied.
-têteaux		têteau	0
-têtebêche	Variante orthographique de tête-bêche
-tétée	Action pour un bébé humain ou animal de téter le sein de sa mère ou d'une nourrice.
-tétées		tétée	0
-tètent		téter	41
-téter	Sucer, en parlant du lait d’une femme ou de la femelle d’un animal.
-tètera		téter	21
-tèterai	Première personne du singulier du futur simple du verbe téter.
-tèteraient		téter	28
-tèterais	Première personne du singulier du présent du conditionnel du verbe téter.
-tèterait		téter	26
-tèteras		téter	7
-téterelle	Petit appareil employé pour prélever le lait maternel, l’allaitement artificiel.
-téterelles		téterelle	0
-tétèrent		téter	48
-tèterez		téter	5
-tèteriez		téter	4
-tèterions		téter	11
-tèterons		téter	10
-tèteront		téter	15
-tétés	Participe passé masculin pluriel du verbe téter.
-téteuse	Personne qui cherche à se faire bien voir en utilisant la flatterie ou la gentillesse.
-téteuses		téteux	1
-téteux	Personne lente ou tatillonne.
-tétez		téter	30
-têtière	Partie supérieure de la bride, qui passe par-dessus la tête du cheval et qui soutient le mors.
-têtières		têtière	0
-tétiez		téter	67
-tétin	Bout de la mamelle des mammifères, mamelon (plus fréquemment quand il s’agit d’hommes ou de femmes).
-tétine	Pis de la vache ou de la truie.
-tétines		tétine	0
-tétins		tétin	0
-tétions		téter	19
-téton	Mamelle.
-tétonnière	Se dit d’une femme qui a une grosse poitrine.
-tétonnières		tétonnière	0
-tétons		téton	0
-tetra	Variante orthographique de tétra.
-tétrachlorure	Terme de nomenclature chimique indiquant que le composé contient quatre ions chlorure ou quatre atomes de chlore comme par exemple le tétrachlorure de carbone.
-tétrachlorures		tétrachlorure	0
-tétracorde	Lyre ancienne à quatre cordes.
-tétracordes		tétracorde	0
-tétracycline	Molécule, aux propriétés antibiotiques, produit par Streptomyces aureofasciens, une bactérie du genre Streptomyces.
-tétracyclines		tétracycline	0
-tétradactyle	Qui a quatre doigts à chaque pied.
-tétradactyles		tétradactyle	0
-tétrade	Groupe de quatre éléments solidaires.
-tétrades		tétrade	0
-tétradrachme	Monnaie grecque, qui était d’argent et qui valait quatre drachmes.
-tétradrachmes		tétradrachme	0
-tétradyname	Qui appartient à la tétradynamie.
-tétraèdre	Solide dont la surface est formée de quatre triangles.
-tétraèdres		tétraèdre	0
-tétraédrique	Relatif au tétraèdre.
-tétraédriques		tétraédrique	0
-tétragone	Qui a quatre angles et quatre côtés.
-tétragones		tétragone	0
-tétragramme	Séquence de quatre lettres ou groupe de quatre symboles formant une unité, un phonème ou un mot.
-tétragrammes		tétragramme	0
-tétraline	Nom courant du tétrahydronaphtalène.
-tétralines		tétraline	0
-tétralogie	Nom donné à un ensemble de quatre pièces de théâtre que les poètes tragiques présentaient au concours : les trois premières étaient des tragédies, ordinairemen…
-tétralogies		tétralogie	0
-tétramère	Qui a quatre articles aux tarses.
-tétramères		tétramère	0
-tétramètre	Vers grec ou latin composé de quatre pieds dans le genre dactylique ou anapestique, et de huit pieds dans le genre ïambique.
-tétramètres		tétramètre	0
-tétranyque	Acarien se nourrissant du contenu des cellules du parenchyme et s’abritant dans de fines toiles tissées, sous la surface des feuilles matures.
-tétranyques		tétranyque	0
-tétraphonie	Technique d’enregistrement sonore permettant, si le matériel de l’utilisateur final l’autorise, de restituer le son sur quatre voies indépendantes afin d’améli…
-tétraphonies		tétraphonie	0
-tétraplégie	Paralysie des quatre membres.
-tétraplégies		tétraplégie	0
-tétraplégique	Qui est atteint de tétraplégie.
-tétraplégiques		tétraplégique	0
-tétraploïde	Qui possède 4 jeux complets de chromosomes (4n).
-tétraploïdes		tétraploïde	0
-tétraploïdie	Fait d'être tétraploïde.
-tétraploïdies		tétraploïdie	0
-tétrapode	Qui appartient au groupe des tétrapodes ou qui s’y rapporte.
-tétrapodes		tétrapode	0
-tétraptère	Qui a quatre ailes.
-tétraptères		tétraptère	0
-tétrarchat	Autorité, dignité d’un tétrarque.
-tétrarchats		tétrarchat	0
-tétrarchie	État gouverné par un tétrarque.
-tétrarchies		tétrarchie	0
-tétrarque	Titre par lequel on désignait des souverains du second ordre, subordonnés à une puissance supérieure, et ainsi nommés parce que leurs États étaient censés fair…
-tétrarques		tétrarque	0
-tétras	Nom donné à plusieurs espèces de gallinacés d’Eurasie et d’Amérique, dont le type est le coq de bruyère ou grand tétras.
-tétrastyle	Qui a quatre colonnes de front.
-tétrasyllabe	Composé de quatre syllabes.
-tétrasyllabes		tétrasyllabe	0
-tétrasyllabique	Qui a quatre syllabes.
-tétratomicité	Qualité d’un atome tétratomique.
-tétratomicités		tétratomicité	0
-tétratomique	Se dit d’un atome qui a quatre points d’attraction, et des corps qui ne sont saturés que par quatre atomes d’un autre corps.
-tétratomiques		tétratomique	0
-tétravalence	État d’un atome dont quatre électrons sont disponibles pour former des liaisons chimiques covalentes dans sa couche de valence (couche électronique externe).
-tétravalences		tétravalence	0
-tétravalent	Désigne un élément chimique qui accepte quatre liaisons chimiques.
-tétravalente		tétravalent	23
-tétravalentes		tétravalent	1
-tétravalents		tétravalent	9
-tétrode	Tétrode à vide.
-tétrodes		tétrode	0
-tétrodon	Espèce de poisson osseux marin sans piquants, qui a la faculté de se gonfler.
-tétrodons		tétrodon	0
-tétrodotoxine	Toxine agissant sur le système nerveux (neurotoxine), présente chez certaines espèces de poissons, les tétrodons et les diodons.
-tétrose	Molécule de la famille des oses comportant quatre atomes de carbone.
-tétroses		tétrose	0
-têts		têt	0
-tette	Bout de la mamelle des animaux (pour les êtres humains, on emploie tétin).
-tettes		teter	66
-têtu	Opiniâtre, obstiné, qui ne veut pas démordre de son idée, opinion, ou volonté.
-têtue	Femme obstinée.
-têtues		têtu	1
-têtus		têtu	9
-teuf	Fête.
-teufeur	Personne qui participe aux fêtes, surtout en parlant des personnes qui fréquentent les free parties (manifestations techno aussi appelées rave parties).
-teufeurs		teufeur	0
-teufeuse	Femme qui participe aux fêtes, surtout en parlant des personnes qui fréquentent les free parties (manifestations techno aussi appelées rave parties).
-teufeuses		teufeuse	0
-teufs		teuf	0
-teufteuf	Variante orthographique de teuf-teuf.
-teufteufs		teufteuf	0
-teurgoule	Riz au lait longuement cuit au four, parfumé à la cannelle.
-teurgoules		teurgoule	0
-teuton	Relatif aux Teutons ou à la Germanie médiévale.
-teutonique	Qui a rapport, qui appartient aux anciens Teutons.
-teutoniques		teutonique	0
-teutonne	Moto de la marque BMW.
-teutonnes		teuton	1
-teutons		teuton	9
-tévé	Variante orthographique de TV (télévision, téléviseur).
-tévés		tévé	0
-tex	Unité de mesure du titrage (masse linéique) des fils et filés, équivalant à 10⁻⁶ kg/m, soit 1 gramme par kilomètre de fil.
-texan	Relatif au Texas, à ses habitants et à leur culture.
-texane		texan	23
-texanes		texan	1
-texans		texan	9
-texta		texter	39
-textai		texter	55
-textaient		texter	42
-textais		texter	52
-textait		texter	40
-textâmes		texter	68
-textant		texter	43
-textas		texter	83
-textasse		texter	81
-textassent		texter	78
-textasses		texter	87
-textassiez		texter	88
-textassions		texter	90
-textât		texter	62
-textâtes		texter	84
-texte	Suite ordonnée de mots écrits.
-textée		texter	45
-textées		texter	51
-textent		texter	31
-texter	Communiquer par texto.
-textera		texter	44
-texterai		texter	50
-texteraient		texter	63
-texterais		texter	60
-texterait		texter	49
-texteras		texter	57
-textèrent		texter	48
-texterez		texter	58
-texteriez		texter	74
-texterions		texter	82
-texterons		texter	61
-texteront		texter	54
-textes		texte	0
-textez		texter	47
-textiez		texter	67
-textile	Qui peut être divisé en fils propres à faire un tissu.
-textiles		textile	0
-textions		texter	65
-texto	Mot à mot ; textuellement.
-textons		texter	59
-textos		texto	0
-textota		textoter	39
-textotai		textoter	55
-textotaient		textoter	42
-textotais		textoter	52
-textotait		textoter	40
-textotâmes		textoter	68
-textotant		textoter	43
-textotas		textoter	83
-textotasse		textoter	81
-textotassent		textoter	78
-textotasses		textoter	87
-textotassiez		textoter	88
-textotassions		textoter	90
-textotât		textoter	62
-textotâtes		textoter	84
-textoté		textoter	56
-textotée		textoter	45
-textotées		textoter	51
-textotent		textoter	41
-textoter	Lire et écrire des messages SMS sur un téléphone mobile.
-textotera		textoter	44
-textoterai		textoter	50
-textoteraient		textoter	63
-textoterais		textoter	60
-textoterait		textoter	49
-textoteras		textoter	57
-textotèrent		textoter	48
-textoterez		textoter	58
-textoteriez		textoter	74
-textoterions		textoter	82
-textoterons		textoter	61
-textoteront		textoter	54
-textotés		textoter	53
-textotez		textoter	47
-textotiez		textoter	67
-textotions		textoter	65
-textotons		textoter	59
-textuel	Du texte ; relatif au texte (ou aux textes).
-textuelle	Féminin singulier de textuel.
-textuellement	D’une manière conforme au texte, aux termes employés.
-textuelles		textuel	1
-textuels	Masculin pluriel de textuel.
-textura		texturer	39
-texturai		texturer	22
-texturaient		texturer	32
-texturais		texturer	29
-texturait		texturer	34
-textural	Relatif à la texture.
-texturale		textural	23
-texturales		textural	1
-texturâmes		texturer	3
-texturant	Additif pour donner une certaine texture, en particulier à un produit alimentaire sans en changer le goût.
-texturants		texturant	0
-texturas		texturer	12
-texturasse		texturer	6
-texturassent		texturer	17
-texturasses		texturer	8
-texturassiez		texturer	14
-texturassions		texturer	25
-texturât		texturer	20
-texturâtes		texturer	2
-texturation	Action de texturer.
-texturations		texturation	0
-texturaux		textural	9
-texture	Action de tisser, état d’une chose tissée.
-texturée		texturer	37
-texturées		texturer	36
-texturent		texturer	31
-texturer	Donner, créer une texture à (une image, etc.).
-texturera		texturer	21
-texturerai		texturer	16
-textureraient		texturer	28
-texturerais		texturer	18
-texturerait		texturer	26
-textureras		texturer	7
-texturèrent		texturer	24
-texturerez		texturer	5
-textureriez		texturer	4
-texturerions		texturer	11
-texturerons		texturer	10
-textureront		texturer	15
-texturés		texturer	53
-texturez		texturer	30
-texturiez		texturer	13
-texturions		texturer	19
-texturisa		texturiser	33
-texturisai		texturiser	22
-texturisaient		texturiser	32
-texturisais		texturiser	29
-texturisait		texturiser	34
-texturisâmes		texturiser	3
-texturisant		texturiser	35
-texturisas		texturiser	12
-texturisasse		texturiser	6
-texturisassent		texturiser	17
-texturisasses		texturiser	8
-texturisassiez		texturiser	14
-texturisassions		texturiser	25
-texturisât		texturiser	20
-texturisâtes		texturiser	2
-texturisation	Action de texturiser.
-texturisations		texturisation	0
-texturisé		texturiser	46
-texturisée		texturiser	37
-texturisées		texturiser	36
-texturisent		texturiser	31
-texturiser	Donner de la texture à.
-texturisera		texturiser	21
-texturiserai		texturiser	16
-texturiseraient		texturiser	28
-texturiserais		texturiser	18
-texturiserait		texturiser	26
-texturiseras		texturiser	7
-texturisèrent		texturiser	24
-texturiserez		texturiser	5
-texturiseriez		texturiser	4
-texturiserions		texturiser	11
-texturiserons		texturiser	10
-texturiseront		texturiser	15
-texturisés		texturiser	38
-texturisez		texturiser	30
-texturisiez		texturiser	13
-texturisions		texturiser	19
-texturisons		texturiser	27
-texturons		texturer	27
-tézigue	Toi.
+0te	Pronom à la deuxième personne du singulier, utilisé pour désigner celui à qui l’on parle, en tant que complément d’objet direct ou indirect.
+2am	Équipe, en particulier (mais pas exclusivement) dans un contexte anglo-saxon.
+4s		4	0
+3ser	Leurre sans hameçon créant une agitation dans l’eau, ressemblant à une proie en détresse.
+6s		6	0
+4ing	Technique de vente attirant le spectateur par un message publicitaire en plusieurs étapes.
+7s		7	0
+2c	Unité de mesure énergétique.
+3h	Technologique.
+4nétium	Élément chimique de numéro atomique 43 et de symbole Tc, qui fait partie de la série des métaux de transition.
+5icien	Personne qui connaît les procédés pratiques d’un art, d’un métier et qui sait les employer, qui les enseigne ou les étudie.
+ane	Personne qui connaît les procédés pratiques d’un art, d’un métier et qui sait les employer, qui les enseigne ou les étudie.
+cs		c	0
+as		a	9
+8sa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action de techniciser.
+es		e	0
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Rendre plus technique, très technique.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9me	Fait de mettre la technique au centre de sa pensée ou de ses activités.
+bs		b	0
+9ons		9er	r
+9te	Qui relève du technicisme.
+bs		b	0
+8té	Caractère de ce qui est technique.
+as		a	0
+7olor	Procédé de fabrication d'images de films en couleur, qui recourt à la superposition des trois couleurs primaires (rouge, bleu, vert), concrètement des films sy…
+6que	Manière d’accomplir une tâche qui n’est pas immédiatement évidente.
+9ment	D’une manière technique.
+9s		9	0
+6sa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Rendre technique.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5o	Genre musical populaire appartenant aux musiques électroniques, le plus souvent instrumental, à quatre temps et faisant appel à des outils numériques.
+6crate	Expert technique qui détient le pouvoir.
+bs		b	0
+aie	Système politique, ou de management, dans lequel les experts spécialisés, appelés technocrates, ont un pouvoir prédominant.
+cs		c	0
+bque	Relatif à un technocrate ou à la technocratie.
+es		e	0
+bsa		cer	x
+di		cer	m
+es		cer	t
+et		cer	y
+dnt		cer	z
+ds		cer	c
+cât		cer	k
+cé		cer	1a
+de		cer	11
+es		cer	10
+cent		dr	v
+dr	Donner un caractère technocratique à (quelque chose).
+ea		e	l
+cés		cer	12
+cez		dr	u
+ciez		cer	d
+cme	Attitude, comportement technocratique.
+es		e	0
+cons		cer	r
+6logie	Science des techniques, étude systématique des procédés, des méthodes, des techniques, des instruments ou des outils propres ou pas à un ou plusieurs domaines …
+bs		b	0
+aque	Relatif à la technologie.
+ds		d	0
+aste	Personne qui dans sa profession a une connaissance très pointue dans une technologie particulière.
+ds		d	0
+9ue	Technique, relatif aux arts et métiers.
+bs		b	0
+6phile	Qui aime la technologie, qui croit à ses bienfaits.
+bs		b	0
+8obe	Qui n’aime pas ou a peur de la technologie.
+bs		b	0
+7ole	Site urbain ou périurbain réservé aux activités d’affaires, de recherche et d’innovation technologique.
+7ôles		a	0
+6s		6	0
+7cience	Ensemble des activités humaines relevant de la science et de la technique.
+ds		d	0
+7tructure	Mot-valise qui désigne l’ensemble des cadres dirigeants ou subalternes, des techniciens et des spécialistes qui participent à la prise de décision en groupe da…
+4s		4	0
+3k	Grand arbre de la famille des verbénacées, qui croît dans l’Inde, et dont le bois imputrescible est recherché pour la construction des vaisseaux.
+4el	Race de chien originaire d’Allemagne, basset (chien long et court sur pattes), à poil long, ras ou dur.
+6s		6	0
+5raie	Plantation de tecks.
+9s		9	0
+4s		4	0
+4tonik	Danse électro des années 2000 caractérisée par des mouvements rapides des bras adaptés au rythme de la musique électro house.
+9s		9	0
+3teur	Qualifie une plume qui couvre les ailes et la queue des oiseaux, la tectrice.
+4ibranche	Ordre de mollusques gastéropodes marins possédant une seule branchie latérale protégée par un manteau.
+cs		c	0
+5te	Fragment de roches fondues et expulsées en dehors du cratère lors de l'impact d'une météorite.
+7s		7	0
+4onique	Relative à la structure à grande échelle de la Terre et aux plaques qui constituent son écorce.
+as		a	0
+4rice	Plume qui couvre les ailes et la queue des oiseaux.
+8s		4eur	1
+2ddy	Peluche synthétique.
+5s		5	0
+2e	Support, socle, petit tas de terre facilitant la frappe de la balle.
+3nager	Adolescent, jeune personne ayant entre 13 et 19 ans.
+8s		8	0
+3s		3	0
+4hirt	Variante orthographique de T-shirt.
+8s		8	0
+2f	Variante orthographique de teff.
+0Tefal	Matière antiadhésive.
+5s		5	0
+0teff	Nom vernaculaire de Eragrostis tef plante herbacée la famille des Poaceae (Poacées), originaire d'Éthiopie, où elle est cultivée pour ses fines graines (longue…
+4s		4	0
+1éflon	Teflon.
+6isé	Recouvert de Téflon.
+9e		8er	11
+as		8er	10
+8er	Recouvrir de Teflon.
+8és		8er	12
+6s		6	0
+2génaire	Genre d’araignée de la famille des Agelenidae et comprenant de nombreuses espèces.
+9s		9	0
+4viste	Conductrice ou conducteur de TGV.
+9s		9	0
+3ument	Tissu organique qui recouvre le corps des animaux.
+8aire	Relatif au tégument.
+cs		c	0
+8s		8	0
+2héranais	Relatif à la ville de Téhéran.
+ae		a	n
+bs		a	1
+1eignaient		3ndre	38
+7s		3ndre	2n
+7t		3ndre	2j
+6nt		3ndre	17
+5e	Dermatose du cuir chevelu d'origine cryptogamique ^().
+6nt		3ndre	15
+6s		6	0
+6use	Femme teigneuse.
+9s		7x	1
+7x	Qui a la teigne.
+6z		3ndre	u
+5iez		3ndre	32
+5îmes		3ndre	3
+5ions		3ndre	33
+6rent		3ndre	o
+6s		3ndre	m
+7se		3ndre	6
+9nt		3ndre	h
+9s		3ndre	8
+8iez		3ndre	e
+9ons		3ndre	p
+6t		3ndre	13
+5îtes		3ndre	2
+5ons		3ndre	r
+3lla		5er	x
+6ge	Variante orthographique de tillage.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Bouteille.
+5ée		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Variante de tiller.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5eur	Ouvrier qui teille, qui frappe le lin ou le chanvre avec un écouchoir.
+8s		8	0
+7se	Ouvrière qui teille, qui frappe le lin ou le chanvre avec un écouchoir.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3ndra		6e	18
+7i		6e	1e
+8ent		6e	30
+8s		6e	2y
+8t		6e	2k
+7s		6e	7
+6e	Faire prendre à une étoffe ou à autre chose une couleur différente de celle qu’elle avait, en la plongeant dans un liquide spécial.
+7z		7	5
+6iez		6e	2r
+7ons		6e	2t
+6ons		6e	a
+8t		6e	f
+4s		4dre	20
+4t	Dont la couleur a été changée par teinture.
+5a		5er	13
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es	Deuxième personne du pluriel du passé simple du verbe teinter.
+5e	Nuance de couleur, combinant la tonalité et la saturation.
+5ée		6	n
+7s		6	1
+5ent		6r	15
+6r	Couvrir d’une teinte.
+7a		7	l
+8i		7	g
+9ent		7	1r
+9s		7	i
+9t		7	q
+8s	Deuxième personne du singulier du futur simple du verbe teinter.
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+5ure	Liquide préparé pour teindre.
+8rie	Métier du teinturier.
+bs		b	0
+8s		8	0
+7ier	Celui qui exerce l’art de teindre.
+8ère	Artisane qui exerce l’art de teindre.
+bs		b	0
+8ers		a	0
+1éju	Variante de tégu.
+4s		4	0
+1ek	Variante orthographique de teck.
+1éké	Relatif au peuple Téké, au Congo.
+4e		4	n
+5s		4	1
+4s		4	9
+1eknival	Rassemblement libre de plusieurs sound systems pendant plusieurs jours.
+8s		8	0
+3s		3	0
+2l	Qui est pareil, semblable, qui est du même genre, de la même qualité.
+1élamon	Baudrier en cuir pour fixer l’épée des guerriers achéens.
+7s		7	0
+4ngiectasie	Dilatation vasculaire permanente du derme rouge, non pulsatile qui forme un trait fin, tortueux, souvent en arborisation ou en réseau, le plus souvent localisé…
+es		e	0
+3é	Téléviseur.
+4achat	Achat à distance utilisant les techniques de télécommunication ou de radiodiffusion.
+9s		9	0
+7eteur	Celui qui s’adonne au téléachat.
+cs		c	0
+bse	Celle qui s’adonne au téléachat.
+ds		d	0
+6teur	Vendeur par téléphone, téléprospecteur.
+as		a	0
+7rice	Vendeuse par téléphone.
+bs		b	0
+5ffichage	Variante orthographique de télé-affichage
+ds		d	0
+5larme	Alarme qui prévient à distance pour être alerté automatiquement en cas de panne ou de défaut de fonctionnement d’une installation.
+as		a	0
+5ssistance	Service d’assistance accessible à distance par un moyen de télécommunication.
+es		e	0
+6te	Réalisateur de téléfilms ou d’émissions télévisées.
+8s		8	0
+5vertisseur	Récepteur de messages numériques (codes chiffrés) ou alphanumériques (courts textes) par radiomessagerie.
+4benne	Téléphérage par benne.
+9s		9	0
+5outique	Boutique de téléachat.
+cs		c	0
+4cabine	Système de remontée mécanique dans lequel des cabines, suspendues à un câble porteur-tracteur, transportent les voyageurs.
+as		a	0
+6rte	Carte prépayée permettant de téléphoner depuis une cabine téléphonique.
+9s		9	0
+5entre	Espace public de travail sur Internet.
+as		a	0
+5hargé		9er	1k
+9ea		ar	x
+bble	Qui peut être téléchargé.
+es		e	0
+bi		ar	m
+cent		ar	16
+cs		ar	t
+ct		ar	y
+aâmes		ar	3
+aant		ar	z
+bs		ar	c
+cse		ar	6
+es		ar	8
+aât		ar	k
+ces		ar	2
+9ée		9er	19
+bs		9er	1f
+9ement	Transfert de programmes ou de données d’un ordinateur vers un autre.
+es		e	0
+ant		ar	15
+aons		ar	1n
+ar	Transférer, des données entre deux équipements informatiques, localement ou à travers internet.
+ba		b	18
+ci		b	1e
+ds		b	1o
+dt		b	q
+cs		b	1l
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	1p
+dt		b	1i
+9és		9er	1h
+9eur	Personne qui télécharge.
+cs		c	0
+az		ar	1b
+9iez		9er	1v
+aons		9er	j
+6irurgie	Intervention chirurgicale effectuée à distance géographique du patient par un médecin ayant recours aux technologies informatiques et de télécommunication.
+ds		d	0
+5inéma	Dispositif permettant de convertir un film (pellicule argentique) en source vidéo pour sa télédiffusion, l’enregistrement (magnétoscope) ou l’édition de suppor…
+as		a	0
+5om	Abréviation de télécommunication.
+7manda		ber	x
+ci		ber	m
+ds		ber	t
+dt		ber	y
+bâmes		ber	3
+bant		ber	z
+cs		ber	c
+dse		ber	6
+bât		ber	k
+des		ber	2
+be	Transmission à distance d’un signal déclenchant l’exécution d’un ordre par un dispositif.
+bée		ber	19
+ds		ber	1f
+bent		cr	v
+cr	Commander (un appareil, un véhicule) à distance.
+da		d	l
+ei		d	g
+es		d	7
+dez		d	5
+bés		ber	1h
+bez		cr	u
+biez		ber	d
+cons		ber	j
+bons		ber	r
+7s		7	0
+6nférence	Conférence dans laquelle les interlocuteurs sont répartis dans deux lieux, ou plus, reliés entre eux par des moyens de télécommunication.
+es		e	0
+7seiller	Personne qui travaille dans un centre d’appels et qui communique avec ses clients par téléphone.
+cère	Femme qui travaille dans un centre d’appels et qui communique avec ses clients par téléphone.
+cers		e	0
+6pia		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Télécommunication ayant pour objet la reproduction à distance d’un document graphique sous la forme d’un autre document graphique géométriquement semblable à l…
+8ée		8er	11
+as		8er	10
+8ent		9r	v
+9r	Transmettre un document par télécopie.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8eur	Appareil émetteur et récepteur de télécopie.
+bs		b	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5ran	Sorte de téléviseur pouvant également émettre.
+8s		8	0
+6ochet	Émission télédiffusée d’audition et de sélection de chanteurs et de chanteuses.
+bs		b	0
+4déclara		aer	13
+bi		aer	1j
+cent		aer	16
+cs		aer	1g
+ct		aer	14
+aâmes		aer	1w
+aant	Qui télédéclare.
+ds		d	0
+bs		aer	2b
+cse		aer	29
+es		aer	2f
+aât		aer	1q
+ces		aer	2c
+aation	Déclaration par le canal du réseau informatique.
+aé		aer	1k
+be		aer	19
+cs		aer	1f
+aent		br	15
+br	Faire une déclaration sociale, fiscale ou autre, à distance.
+ca		c	18
+di		c	1e
+es		c	1o
+et		c	1d
+ds		c	1l
+aèrent		aer	1c
+aerez		c	1m
+ciez		c	22
+cons		c	1p
+et		c	1i
+aés		aer	1h
+aez		br	1b
+aiez		aer	1v
+bons		aer	1t
+aons		aer	1n
+6tecter	Détecter à distance.
+aion	Ensemble des connaissances et techniques utilisées pour déterminer des caractéristiques physiques et biologiques d'objets par des mesures effectuées à distance…
+ds		aer	j
+5iagnostic	Diagnostic à distance, généralement au moyen de technologie de l’information.
+es		e	0
+6ffusa		aer	x
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	y
+aâmes		aer	3
+aant		aer	z
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+aé		aer	1a
+be		aer	11
+cs		aer	10
+aent		br	v
+br	Diffuser à distance par des moyens techniques (télévision en particulier).
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aeur	Personne ou entité pratiquant la télédiffusion, qui diffuse et produit des programmes télévisés.
+ds		d	0
+bz		br	u
+aiez		aer	d
+bon	Diffusion d'un signal audiovisuel par voie hertzienne.
+ds		d	0
+aons		aer	r
+5ynamique	Qui concerne la transmission de la force à distance.
+ds		d	0
+4écriture	Télécommunication ayant pour objet la transmission d'informations graphiques au fur et à mesure de leur tracé manuscrit et la reproduction de ce tracé sur un é…
+cs		c	0
+4fax	Synonyme de télécopie.
+5érique	Variante orthographique de téléphérique.
+bs		b	0
+5ilm	Film de fiction tourné pour la télévision, par opposition aux films tournés pour le cinéma ou la vidéo.
+8s		8	0
+4ga	Chariot à quatre roues qui était en usage en Russie.
+6s		6	0
+5énique	Qui passe bien à la télévision, qui assure l’audience.
+bs		b	0
+5estion	Contrôle à distance d’installations techniques.
+bs		b	0
+5ramme	Dépêche transmise par le télégraphe.
+as		a	0
+7phe	Appareil qui permettait de correspondre à de grandes distances avec une extrême rapidité.
+as		a	0
+9ia		aer	13
+bi		aer	1j
+cent		aer	w
+cs		aer	t
+ct		aer	14
+aâmes		aer	1w
+aant		aer	17
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+ae	Art d’installer, de faire fonctionner le télégraphe et de transmettre des messages par son truchement.
+aée		aer	19
+cs		aer	1f
+aent		br	15
+br	Transmettre au moyen du télégraphe.
+ca		c	l
+di		c	1e
+es		c	1o
+et		c	1d
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	1h
+aez		br	1b
+aiez		aer	d
+bons		aer	j
+aons		aer	1n
+aque	Relatif au télégraphe.
+ds		d	0
+aste	Celui, celle qui est employé au télégraphe.
+ds		d	0
+3ègue	Sorte de chariot russe.
+7s		7	0
+3éguida		8er	x
+9ge	Action de téléguider.
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é	Commandé par téléguidage.
+9e		8er	19
+as		8er	1f
+8ent		9r	v
+9r	Faire se déplacer (quelque chose) en le guidant avec un système de commande à distance.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	1h
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+4impression	Impression à distance de messages par des solutions télématiques.
+es		e	0
+8imeur	Appareil émetteur et récepteur de télégraphie comportant un clavier alphanumérique pour l’émission et assurant à la réception l’impression de caractères.
+ds		d	0
+4journal	Journal d’informations quotidien diffusé par une chaine de télévision à heures fixes.
+aux		al	0
+4kinésie	Faculté métapsychique hypothétique de mettre en mouvement un objet matériel.
+bs		b	0
+4maintenance	Maintenance d'une unité fonctionnelle, assurée par télécommunication directe entre cette unité et un centre spécialisé.
+6rk	Technique de ski caractérisée par son virage où la jambe intérieure est fléchie (le talon n'étant pas fixé au ski), par opposition à la méthode de virage chris…
+8eting	Utilisation des techniques et des moyens de télécommunication au service du a marketing.
+ds		d	0
+6tique	Relatif à l’informatique à distance.
+bs		b	0
+8sa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Informatiser avec des moyens télématiques.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+5écanicien	Technicien spécialiste des télécommunications dans l’armée de l’air.
+es		e	0
+aque	Télécommandé.
+ds		d	0
+6decine	Médecine pratiquée à distance utilisant les technologies de télécommunication.
+cs		c	0
+5ercatique	Utilisation des techniques et des moyens de télécommunication au service de la mercatique.
+es		e	0
+6sure	Élaboration et transmission à distance d'un signal représentant un résultat de mesure.
+as		a	0
+5étra		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+5ètre	Instrument permettant de déterminer la distance séparant l'utilisateur d’un point lointain, inaccessible, par un procédé acoustique, optique, ou radioélectriqu…
+5étrée		8er	11
+as		8er	10
+5ètrent		5étrer	v
+5étrer	Mesurer une distance à distance, souvent avec un télémètre.
+5ètrera		5étrer	l
+bi		5étrer	g
+cent		5étrer	s
+cs		5étrer	i
+ct		5étrer	q
+bs		5étrer	7
+5étrèrent		8er	o
+5ètrerez		5étrer	5
+aiez		5étrer	4
+bons		5étrer	b
+aons		5étrer	a
+ct		5étrer	f
+9s		9	0
+5étreur	Celui qui fait usage du télémètre, qui est chargé d’en tirer des indications.
+bs		b	0
+9z		9r	u
+8ie	Art de mesurer les distances.
+as		a	0
+az		8er	d
+9ons		8er	j
+9que	Qui appartient à la télémétrie.
+cs		c	0
+8ons		8er	r
+3encéphale	Ensemble constitué par les hémisphères cérébraux (cortex cérébral, substance blanche et structures sous-corticales) et des structures associées.
+cs		c	0
+3énovela	Série ou feuilleton télévisé dans le monde hispanophone et lusophone.
+1elenovelas		a	0
+1éléobjectif	Objectif photographique dont la focale est supérieure à la diagonale de la scène, qui a pour effet de rapprocher cette scène, donc de permettre un cadrage plus…
+cs		c	0
+5logie	Doctrine prônant une explication du monde fondée sur les causalités et les fins dernières.
+as		a	0
+9que	Se dit d'une démarche d'étude d'un phénomène qui se fait à la lumière d'un résultat connu d'avance.
+cs		c	0
+5nomie	Concept scientifique de finalité.
+as		a	0
+9que	Qui relève de la téléonomie.
+cs		c	0
+5pérateur	Personne qui agit à distance sur un appareil.
+ds		d	0
+arice	Celle qui agit à distance sur un appareil
+es		e	0
+5saure	Membre du genre Téléosaure, crocodilien ayant vécu sur Terre durant le Jurassique.
+as		a	0
+6téen	Super ordre de poissons osseux dont le squelette est entièrement ossifié.
+as		a	0
+4paiement	Paiement réglé à distance.
+cs		c	0
+6the	Personne douée de télépathie.
+9s		9	0
+8ie	Faculté de sentir à distance, extrasensorielle.
+as		a	0
+9que	Relatif à la télépathie.
+cs		c	0
+5éage	Acquittement ou enregistrement du péage par un dispositif automatique, sans arrêt du véhicule.
+9s		9	0
+5hage	Qui regarde trop la télévision.
+9s		9	0
+6érage	Transport par des véhicules suspendus à des câbles aériens servant à la fois de chemin de roulement et de ligne électrique.
+bs		b	0
+8ique	Moyen de transport à distance par des câbles aériens.
+cs		c	0
+6ona		8er	13
+9ge	Action de téléphoner, communication téléphonique.
+bs		b	0
+9i		8er	1j
+aent		8er	3k
+as		8er	1g
+at		8er	14
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	1q
+aes		8er	2
+8e	Appareil utilisé par deux personnes ou plus, pour mener une conversation à distance, qu'il soit fixe (relié à un réseau câblé) ou mobile (communiquant via des …
+8ée		8er	11
+as		9	1
+8ent		9r	15
+9r	Transmettre, communiquer par téléphone.
+aa		a	18
+bi		a	1e
+cent		a	1r
+cs		a	1o
+ct		a	1d
+bs		a	1l
+8èrent		8er	o
+8erez		a	1m
+aiez		a	22
+bons		a	b
+aons		a	1p
+ct		a	1i
+8és		9	9
+8ez		9r	1b
+8ie	Système de communication inventé par F.
+as		a	0
+az		8er	1v
+9ons		8er	1t
+9que	Qui a trait à la téléphonie.
+cs		c	0
+9ste	Employé du téléphone.
+cs		c	0
+8ons		8er	1n
+5ointage	Pointage à distance des pièces d'artillerie.
+cs		c	0
+6rt	Emplacement qui regroupe divers moyens de communication.
+8a		8er	13
+9i		8er	1j
+aent		8er	16
+as		8er	1g
+at		8er	14
+8âmes		8er	1w
+8ant		8er	17
+9s		8er	2b
+ase		8er	29
+cnt		8er	26
+cs		8er	2f
+biez		8er	2g
+cons		8er	2i
+8ât		8er	1q
+aes		8er	2c
+8ation	Action de passer d’un point à un autre sans passer par l’espace intermédiaire : dématérialisation puis rematérialisation à un endroit différent.
+ds		d	0
+8é		8er	1k
+9e		8er	19
+as		8er	1f
+8ent		9r	15
+9r	Transporter au loin.
+aa		a	18
+bi		a	1e
+cent		a	1r
+cs		a	1o
+ct		a	1d
+bs		a	1l
+8èrent		8er	1c
+8erez		a	1m
+aiez		a	22
+bons		a	2a
+aons		a	1p
+ct		a	1i
+8és		8er	1h
+8ez		9r	1b
+8iez		8er	1v
+9ons		8er	1t
+8ons		8er	1n
+8s		8	0
+5rocédure	Procédure administrative effectuée à distance.
+ds		d	0
+7mpteur	Appareil permettant de lire un texte face à la caméra.
+ds		d	0
+7specteur	Prospecteur par téléphone.
+cion	Méthode de prospection mercatique par téléphone.
+4réalité	Genre télévisuel dont le principe est de suivre, le plus souvent sur un mode feuilletonnant, la vie quotidienne d’anonymes ou de célébrités.
+bs		b	0
+5eportage	Reportage télévisé.
+ds		d	0
+5oman	Feuilleton télévisé.
+9s		9	0
+4s		4	0
+5caphe	Dispositif de téléphérique sous-marin.
+as		a	0
+3escopa		8er	x
+9ge	Action de télescoper.
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Instrument optique à miroir concave servant à observer les astres.
+8ée		8er	19
+as		8er	1f
+8ent		9r	15
+9r	Se replier l’un dans l’autre, en parlant d’objets qui rentrent les uns dans les autres comme les différentes parties d’une lunette, d’un télescope.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	1c
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+9que	Qui a rapport au télescope.
+cs		c	0
+8ons		8er	r
+3éscripteur	Appareil électromécanique permettant la génération et la réception de messages via une ligne filaire, remplacé partiellement par le télécopieur (fax) et totale…
+ds		d	0
+5ecrétariat	Secrétariat pratiqué à distance grâce aux technologies de télétravail.
+6rvice	Service de télécommunication qui assure tous les aspects de la communication entre usagers, conformément à des protocoles établis par l'entité exploitante ou p…
+bs		b	0
+5hopping	Téléachat.
+cs		c	0
+5iège	Remontée mécanique composée de plusieurs sièges permettant de remonter les pistes de ski.
+9s		9	0
+5ki	Tire-fesse.
+7s		7	0
+5ouffleur	synonyme de prompteur.
+ds		d	0
+5pectateur	Personne qui regarde la télévision.
+es		e	0
+brice	Femme regardant la télévision.
+3esthésie	Suggestion mentale, télépathie volontaire.
+bs		b	0
+3étexte	Diffusion sur un réseau de télévision de textes parmi lesquels l’usager peut choisir.
+9s		9	0
+5hèque	Lieu où l’on range ou conserve les enregistrements télévisés.
+as		a	0
+6on	Terme générique désignant une émission (généralement télévisée) durant de nombreuses heures et destinée à récolter des fonds pour une cause.
+8s		8	0
+5oxie	Fait qu’une espèce de plante produise des éléments phytotoxiques afin d’inhiber, limiter, ou empêcher la germination ou la croissance d’autres plantes.
+9s		9	0
+8que	Qui est relatif à la télétoxie.
+bs		b	0
+5raitement	Mode de traitement selon lequel les données sont émises ou reçues par des terminaux éloignés de l’ordinateur.
+es		e	0
+7nsmet		ctre	28
+cs		ctre	20
+cte		dre	2d
+es		dre	2q
+ez		dre	1y
+dra		ee	18
+ee	Transmettre par des moyens télématiques.
+aîmes		aettre	1w
+airent		aettre	1c
+bs		aettre	43
+ce		aettre	19
+ds		aettre	1f
+cse		aettre	29
+es		aettre	2f
+bt		aettre	13
+aîtes		aettre	2c
+7vail	Pratique d’effectuer à distance son travail intellectuel, son travail de bureau, via télécommunications.
+bla		cer	13
+di		cer	1j
+es		cer	1g
+et		cer	14
+dnt		cer	17
+ds		cer	2b
+cât		cer	1q
+cé		cer	1k
+cent		dr	15
+dr	Pratiquer le télétravail (travail à distance).
+ea		e	18
+ds		dr	25
+dur	Professionnel qui travaille à domicile en utilisant les télécommunications et l’informatique.
+dz		dr	1b
+ciez		cer	1v
+cons		cer	1n
+9ux		9il	0
+5ype	Téléscripteur.
+8s		8	0
+3eutospore	Spore pédicellée et bicellulaire produite par la rouille pour l'hivernage qui germe au printemps en donnant une baside.
+cs		c	0
+3évangélisme	Prédication télévisée.
+es		e	0
+cte	Prédicateur qui se sert de la télévision pour produire son message d’évangélisation.
+es		e	0
+5endeur	Personne qui effectue la télévente.
+bs		b	0
+ase	Personne qui effectue la télévente.
+cs		c	0
+7te	Vente à distance qui utilise les techniques de télécommunication ou de radiodiffusion.
+9s		9	0
+6rsa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Transférer des données d’un ordinateur local vers un ordinateur distant par un réseau informatique.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5isa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Retransmis à la télévision.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Diffuser des images, des programmes pour la télévision.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7eur	Appareil électronique destiné à lire (jouer) des séquences audiovisuelles, généralement pour la télévision, en convertissant un signal pour l'afficher sur un é…
+as		a	0
+8z		8r	u
+7iez		7er	d
+8on	Ensemble des techniques utilisées pour reproduire des séquences audiovisuelles à distance, impliquant généralement la transmission d'un signal par ondes électr…
+as		a	0
+7ons		7er	r
+7uel	Relatif à la télévision.
+ale		a	n
+cs		a	1
+as		a	9
+3ex	Système de communication qui remplaçait, partiellement, le télégraphe en morse et qui a été largement supplanté par le fax et, totalement, par la messagerie él…
+5a		5er	13
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Envoyer par télex.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	25
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+6ste	Opérateur chargé d’assurer les liaisons par télex.
+9s		9	0
+5ons		5er	r
+1ell	Terre labourable, en Algérie.
+4e		3	n
+5ment	De telle manière.
+5s		3	1
+4ien	Qui concerne ou se trouve dans le Tell (nord de l’Algérie).
+7ne		7	n
+9s		7	1
+7s		7	9
+5ère	Utilisé uniquement dans la locution à la tellière, qui qualifie ce format de papier (34 cm × 44 cm).
+5ne	Mollusque bivalve marin comestible de la famille des Tellinidae de forme triangulaire allongée.
+7s		7	0
+4s		4	0
+4urate	Anion de tellure, sel produit par la combinaison de l’acide tellurique avec une base.
+9s		9	0
+6e	Élément chimique de symbole chimique est Te et son numéro atomique 52, généralement classé parmi les métalloïdes en raison de ses propriétés intermédiaires ent…
+7s		7	0
+7ux	Comprenant du tellure.
+6hydrique	Se dit dʼun acide résultant de la combinaison du tellure et de lʼhydrogène.
+es		e	0
+6ien	Qui provient de la terre.
+9ne		9	n
+bs		9	1
+9s		9	9
+7que	Relatif à la terre ou au sol.
+as		a	0
+7sme	Nom par lequel on a désigné le magnétisme terrestre.
+as		a	0
+6omètre	Appareil de mesure des distances entre deux points d’un terrain basé sur la mesure du temps mis par une onde électrique pour aller d’un point à l’autre.
+cs		c	0
+6ure	Combinaison de tellure et d’un corps simple.
+9s		9	0
+1éloche	Téléviseur.
+7s		7	0
+4gène	Se dit de la période qui conduit à la mort d’un tissu.
+8s		8	0
+4lécithe	Se dit des œufs des oiseaux, monotrèmes, reptiles, céphalopodes et de la plupart des poissons, caractérisé par un volume considérable de vitellus localisé à l’…
+bs		b	0
+4mérase	Enzyme qui ajoute des chaines répétitives à l’ADN à l’extrémité des chromosomes.
+as		a	0
+5ère	Région répétitive de l’ADN à l’extrémité d’un chromosome.
+8s		8	0
+4phase	Phase de la division cellulaire eucaryote au cours de laquelle les chromosomes se décondensent et l’enveloppe nucléaire se reforme.
+9s		9	0
+4ugou	Langue dravidienne du sud de l’Inde.
+8s		8	9
+1els		3	9
+4on	Segment terminal postérieur du corps des arthropodes.
+6s		6	0
+3ugu	Variante orthographique de télougou.
+6s		6	0
+1éménos	Enceinte consacrée autour d'un temple.
+4raire	Qui est d’une hardiesse imprudente ou inconsidérée.
+9ment	D’une manière téméraire.
+9s		9	0
+5ité	Hardiesse imprudente et présomptueuse, courage inconsidéré.
+8s		8	0
+3iscabitibien	Relatif à l’Abitibi-Témiscamingue, région administrative québécoise.
+3oigna		7er	13
+8ge	Action de témoigner.
+as		a	0
+8i		7er	m
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	1q
+9es		7er	2
+7e	Variante de témoignage.
+7ée		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Porter témoignage, servir de témoin.
+9a		9	18
+ai		9	1e
+bent		9	1r
+bs		9	1o
+bt		9	1d
+as		9	1l
+7èrent		7er	1c
+7erez		9	1m
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	1i
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	1v
+8ons		7er	j
+7ons		7er	r
+5n	Personne qui certifie ou qui peut certifier une chose qu’elle a vue ou entendue.
+6s		6	0
+1empe	Partie latérale de la tête entre l’oreille et le front.
+5h	Produit alimentaire à base de soja fermenté, originaire d’Indonésie.
+4éra	Détrempe, peinture exécutée avec des couleurs mêlées à un liant et diluées dans l’eau.
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+7ment	Complexion, constitution du corps, en parlant des personnes, voire des animaux.
+bal	De tempérament, relatif au tempérament.
+de		d	n
+es		d	1
+cux		cl	9
+bs		b	0
+6âmes		6er	3
+6ance	Fait de tempérer.
+as		a	0
+8t	Qui permet de tempérer, de modérer.
+9e		9	31
+as		9	1
+9s		9	0
+7s		7	0
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ature	Degré de chaleur ou de froideur d’un corps ou d’un environnement.
+bs		b	0
+6é	Ce qui n’est ni trop chaud ni trop froid, ce qui ne présente ni excès de chaleur ni excès de froid.
+7e		7	n
+8s		7	1
+4èrent		4érer	v
+4érer	Modérer ou réguler de quelle que manière que ce soit.
+4èrera		4érer	l
+9i		4érer	g
+4éreraient		8	30
+4èrerais		4érer	i
+4érerait		8	1d
+4èreras		4érer	7
+4érèrent		6er	o
+4èrerez		4érer	5
+8iez		4érer	4
+9ons		4érer	b
+8ons		4érer	a
+at		4érer	f
+4érés		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4es		5	0
+4êta		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Tourmente atmosphérique, violente agitation de l’air, souvent accompagnée de pluie, de neige, de grêle, d’éclairs, de tonnerre, etc.
+7nt		7r	15
+7r	Faire un grand bruit par mécontentement.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4étueuse		9x	n
+bs		9x	1
+9x	Qui a le caractère de la tempête.
+4i		4o	0
+4le	Édifice public consacré au culte de la divinité.
+6s		6	0
+5ier	Relatif à l'ordre du Temple et à ses membres.
+6ère	Femme membre d’un ordre religieux combattant.
+9s	Pluriel de templière.
+6ers		8	9
+4o	Vitesse relative avec laquelle une œuvre musicale doit être exécutée.
+5raire	Pour une durée limitée, éphémère.
+ament	D'une manière temporaire.
+as		a	0
+7l	Qui a rapport aux tempes.
+8e		8	n
+9s		8	1
+8ité	État de ce qui est temporel.
+bs		b	0
+7ux		7l	9
+6el	Relatif au temps.
+8le	Féminin singulier de temporel.
+ament	Pour un temps.
+as		8	1
+8s		8	9
+6isa		8er	x
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ateur	Qui temporise.
+ds		d	9
+aion	Action de temporiser.
+ds		d	0
+arice	Celle qui temporise.
+es		aeur	1
+8é		8er	1k
+9e		8er	19
+as		8er	10
+8ent		9r	15
+9r	Retarder ou différer, dans l’attente d’une occasion favorable ou d’un temps plus propice.
+aa		a	l
+bi		a	1e
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9r	1u
+9z		9r	1b
+8iez		8er	d
+9ons		8er	j
+8ons		8er	1n
+5s		5	0
+4ranillo	Cépage d'origine espagnole donnant de grosses grappes à grains noirs.
+4s	Durée des choses, marquée par certaines périodes, et principalement par la révolution apparente du soleil.
+4ura	Assortiment de beignets à la fois très savoureux et très digeste, populaire au Japon originaire du Portugal, depuis le XVIIᵉ siècle.
+7s		7	0
+2nable	Se dit d'un lieu, d’un poste, d’une place où l’on peut se défendre, où l’on peut demeurer sans un trop grand péril.
+7s		7	0
+4ce	Qui est adhérent.
+6ment	D’une manière tenace.
+6s		6	0
+1énacité	Caractère de ce qui est tenace, de ce qui tient fortement.
+8s		8	0
+1enaient		3ir	2l
+5lla		7er	x
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui tenaille.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Tout Instrument ou dispositif qui sert à tenir quelqu'un ou quelque chose (Cette acception première, gommée par l'outil de torture ou de travail, subsiste enco…
+7ée	Quantité de tronçons d'épingle que l'empointeur emportait à la meule
+9s		9	0
+7ement	Action de tenailler, résultat de cette action.
+cs		c	0
+8nt		8r	15
+8r	Tourmenter un criminel avec des tenailles ardentes.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7on	Petite tenaille, ouvrage construit vis-à-vis l’une des faces de la demi-lune.
+9s		9	0
+5s		3ir	2n
+5t		3ir	2j
+4ncier	Personne qui tenait des terres en tenure, dépendantes d’un fief auquel il était dû des cens ou autres droits.
+7ère	Personne qui tient, qui gère certains établissements.
+as		a	0
+7ers		9	0
+5t	Qui tient.
+6e	Celle qui, dans un tournoi, entreprend de tenir le champ contre toutes sortes d’assaillants.
+7s		6	1
+6s		6	9
+3d		4re	28
+4aient		4re	2l
+6s		4re	2n
+6t		4re	2j
+5nce	Action ou force par laquelle un corps tend à se mouvoir d’un côté.
+8s		8	0
+8ur	Personne dont le métier est de repérer les futures tendances de la mode, du design.
+as		a	0
+7iel	Qui indique une tendance.
+ale		a	n
+cs	Féminin pluriel de tendanciel.
+as	Masculin pluriel de tendanciel.
+9use		ax	n
+cs		ax	1
+ax	Qualifie des paroles ou des écrits qui laissent deviner certaines tendances sans les marquer explicitement.
+6t	Qui tend à quelque fin.
+7e		7	n
+8s		7	1
+7s		7	0
+4e	→ voir tende de tranche.
+5lle	Piège à oiseaux constitué d’une grosse pierre plate tenue en équilibré par une brindille au bout de laquelle est piquée de la nourriture, l’oiseau qui essaie d…
+8s		8	0
+5nt		4re	15
+5r	Bateau annexe d'un paquebot, d'un yacht, destiné à transporter des bagages, du combustible ou de munitions, transborder des passagers, etc.
+6ie	Chasse où l’on tend des pièges pour attraper des oiseaux ou d’autres animaux.
+8s		8	0
+6s		6	0
+5s		5	0
+5ur	Celui qui tend quelque chose.
+7s		7	0
+6se	Celle qui tend quelque chose.
+8s		8	0
+5z		4re	1y
+4iez		4re	2u
+4îmes		4re	3
+4ineuse		8x	n
+as		8x	1
+8x	Qui a rapport au tendon, qui est de la nature des tendons.
+6ite	Inflammation des tendons.
+9s		9	0
+5ons		4re	2v
+5rent		4re	1c
+5s		4re	1j
+6se		4re	6
+8nt		4re	26
+8s		4re	8
+7iez		4re	e
+8ons		4re	p
+4ît		4re	1q
+6es		4re	2
+4oir	Tige de bois qui empêche la poitrinière du métier à tisser de se dérouler.
+7s		7	0
+5n	Partie fibreuse, blanchâtre, ronde ou aplatie, qui forme l’extrémité des muscles et qui sert à les attacher aux os ou à d’autres parties.
+6s		6	0
+4ra		5e	18
+6i		5e	1e
+7ent		5e	2p
+7s		5e	2o
+7t		5e	2k
+6s		5e	7
+5e	Qui peut aisément être entamé.
+6ment	Avec tendresse.
+6s		6	0
+7se	Qualité de ce qui est tendre.
+9s		9	0
+6té	Qualité de ce qui est tendre.
+8s		8	0
+6z		6	5
+5iez		5e	2r
+6ons		5e	2t
+5on	Bourgeon, rejeton tendre de quelques arbres, de quelques plantes.
+7s		7	0
+7t		5e	1i
+4s		4re	20
+4u	Qui subit une tension (arc, élastique, ressort, etc.).
+5e	Action de tendre un filet, un piège.
+6s		5	1
+5s		5	9
+1énèbres	Privation de lumière.
+3ébreuse		8x	n
+ament	D’une manière ténébreuse.
+as		8x	1
+8x	Qui est sombre, obscur.
+6ion	Ami des ténèbres intellectuelles.
+9s		9	0
+3elien	Relatif à Terre-Neuve-et-Labrador.
+8ne		8	n
+as		8	1
+8s		8	9
+1ènement	Terre tenue d’un seigneur.
+8s		8	0
+1énesme	Tension douloureuse de la région anale ou du col de la vessie.
+7s		7	0
+1eneur	Ce qui est contenu mot à mot dans un écrit, son texte littéral.
+6mètre	Appareil de mesure utilisé pour déterminer la présence de composés dans un matériau grâce aux rayonnements ionisants.
+bs		b	0
+6s		6	0
+5se	Celle qui tient quelque chose.
+7s		7	0
+4z		3ir	1y
+3ge	Monnaie ayant cours au Kazakhstan.
+5s		5	4j
+1énia	Ver solitaire ; long ver plat (plathelminthe), du genre Taenia, parasite de l’intestin de l’homme ou d’autres mammifères.
+5s		5	0
+6is	Maladie parasitaire causée par la présence dans le tube digestif d’un ténia adulte.
+4cide	Qui tue le ténia.
+8s		8	0
+1eniez		4r	2u
+1énifuge	Qui expulse les ténias.
+8s		8	0
+1enions		4r	2v
+4r	Garder fermement dans la main ou dans les mains.
+3nesse	Élément chimique portant le numéro atomique 117 (symbole Ts).
+7ine	Tennesse, élément chimique portant le numéro atomique 117 (symbole Ts).
+4is	Sorte de jeu de balle qui se joue avec des raquettes sur un terrain divisé en deux par un filet.
+6man	Joueur de tennis.
+9s		9	0
+7en		7an	0
+6tique	Relatif au tennis, à sa pratique.
+bs		b	0
+6woman	Joueuse de tennis.
+bs		b	0
+9en		9an	0
+0Tenno	Commune d’Italie de la province de Trente dans la région du Trentin-Haut-Adige.
+0ténois	Relatif aux Territoires du Nord-Ouest.
+6e		6	n
+7s		6	1
+1enon	Extrémité d’une pièce de bois ou de métal diminuée d’une partie de son épaisseur, qu’on fait entrer dans une mortaise, c’est-à-dire dans un trou de même forme …
+5na		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Garnir de tenons.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6euse	Machine-outil servant à usiner des pièces de bois, à faire des tenons.
+as		a	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5s		5	0
+1énor	Voix d’homme la plus élevée, qu’on appelait autrefois taille.
+1enorini		7o	0
+1énorino	Ténor léger, qui chante en fausset.
+1enorinos		8	0
+1énorisa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui se rapproche du ténor.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+7ent		8r	v
+8r	Chanter avec une voix de ténor.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6te	Oxyde naturel de cuivre.
+8s		8	0
+5s		5	0
+4synovite	Inflammation d’un tendon et de sa gaine protectrice qui contient le liquide synovial.
+cs		c	0
+4tomie	Opération qui consiste à pratiquer la section d’un tendon.
+9s		9	0
+1enrec	Petit mammifère insectivore de Madagascar et des îles de l’océan Indien ressemblant à un hérisson.
+6s		6	0
+3seur	Qui tend, qui provoque une tension.
+7s		7	0
+4ioactif	Se dit d'un agent chimique dont la présence à une interface entre deux fluides entraîne l'abaissement de la tension interfaciale.
+bs		b	0
+ave		af	n
+cs		af	1
+6mètre	Appareil destiné à mesurer la pression artérielle.
+bs		b	0
+6n	État de ce qui est tendu.
+7s		7	0
+4on	Genre de poésie dialoguée sur un sujet donné.
+6s		6	0
+5riel	Qui a un rapport avec les tenseurs.
+9le		9	n
+bs		9	1
+9s		9	9
+3ta		4er	13
+5culaire	Relatif aux tentacules.
+cs		c	0
+8e	Appendice charnu et mobile dont plusieurs animaux sont pourvus, et qu’ils tendent en avant, soit pour tâter le terrain ou les objets environnants, soit pour sa…
+9s		9	0
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	1w
+4ant	Qui tente, qui cause une envie, un désir.
+7e		7	n
+8s		7	1
+7s		7	9
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	1q
+6es		4er	2
+4ateur	Qui soumet à la tentation.
+9s		9	9
+6if	Expérimental, d’essai.
+7on	Attrait vers une chose défendue ou déconseillée.
+9s		9	0
+7ve	Action par laquelle on tente, on essaie de faire réussir quelque chose.
+9s		7f	1
+6rice	Celle qui incite à une action que la morale réprouve.
+as		6eur	1
+4e	Sorte de pavillon fait ordinairement de toile, d’étoffe tendue, dont on se sert à la guerre, à la campagne, pour se mettre à couvert.
+4ée		5	n
+6s		4er	1f
+4ent		5r	15
+5r	Essayer, éprouver ou mettre en usage quelque moyen pour faire réussir quelque chose.
+6a		6	18
+7i		6	1e
+8ent		6	1r
+8s	Première personne du singulier du présent du conditionnel du verbe tenter.
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	22
+7ons		6	b
+6ons		6	1p
+8t		6	1i
+4és		5	9
+4ez		5r	1b
+4hrède	Hyménoptère de la famille des porte-scies.
+4iez		4er	1v
+5ons		4er	1t
+4ons		4er	1n
+4ure	Ensemble de pièces de tapisserie ordinairement de même dessin, de même facture et représentant une suite de sujets et, ordinairement accrochée, servant à la dé…
+7s		7	0
+3u	Qui est entretenu, soigné, arrangé, suivi.
+1énue	Féminin singulier de ténu.
+1enues		5	0
+1énuirostre	Qui a un bec mince.
+bs	Famille de passereaux qui ont pour caractère essentiel un bec grêle et long.
+5té	Caractère d’une chose ténue.
+7s		7	0
+1enure	Terre concédée à une personne non noble par un seigneur, en retenant la propriété pour n’accorder que la jouissance précaire au concessionnaire.
+6s		6	0
+4s		3ir	42
+4to	Tenu, en parlant d’une note jouée.
+6s		6	0
+1éocali	Variante de téocalli.
+7s		7	0
+6li	Espèce de pyramide qui servait de temple chez les Mexicains.
+8s		8	0
+3rbe	Sorte de luth à deux chevilliers et à son plus grave que le luth ordinaire.
+6s		6	0
+1ep	Unité de mesure énergétique.
+1épale	Pièce de l’enveloppe florale lorsqu’elle est simple, c’est-à-dire lorsqu’on ne peut pas distinguer des pétales et des sépales.
+6s		6	0
+3hra	Fragments de roche solides et liquides provenant du magma expulsés par les gaz pendant l’éruption d’un volcan et se déposant aux alentours.
+6s		6	0
+5ite	Sorte de roche volcanique.
+8s		8	0
+5osie	Légumineuse papilionacée, de la tribu des Millettieae.
+9s		9	0
+3idarium	Partie centrale des thermes romains.
+as		a	0
+1eppanyaki	Technique culinaire japonaise traditionnelle de préparation et de cuisson des aliments sur une plaque chauffante
+as		a	0
+3ui	Variante orthographique de tepuy.
+5s		5	0
+2quila	Eau-de-vie distillée à partir du jus produit par la plante agave bleu (Agave tequilana F.A.C.Weber var.
+7s		7	0
+2r	Une troisième fois.
+1érabit	Unité de mesure de quantité d’information numérique, valant 10¹² bits, et dont le symbole est Tbit ou parfois Tb.
+7s		7	0
+5yte	Téraoctet, soit 10¹² bytes.
+8s		8	0
+4flops	Unité de mesure de puissance de calcul numérique, valant 10¹² flops.
+4gone	Polygone ayant un très grand nombre de côtés, utilisé notamment dans la génération de fractales.
+8s		8	0
+4hertz	Unité de mesure de fréquence du Système international (SI), valant 10¹² hertz, et dont le symbole est THz.
+1eranga	Hospitalité.
+7s		7	0
+1éraoctet	Unité de mesure de quantité d’information numérique, valant 10¹² octets, et dont le symbole est To.
+9s		9	0
+4spic	Variante de taraspic.
+8s		8	0
+4togène	Qui engendre des malformations à un embryon, à un fœtus.
+as		a	0
+7enèse	Développement de malformations congénitales.
+cs		c	0
+7énie	Mode de production des monstruosités.
+bs		b	0
+6logie	Partie des sciences naturelles qui traite des malformations congénitales et des monstruosités organiques.
+bs		b	0
+aque	Qui a rapport à la tératologie.
+ds		d	0
+aste	Tératologue.
+ds		d	0
+9ue	Tératogène, qui provoque des malformations congénitales et des monstruosités organiques.
+bs		b	0
+6me	Tumeur à tissus multiples et disposés de façon anarchique, d’origine embryonnaire ou fœtale.
+8s		8	0
+4watt	Unité de mesure de puissance du Système international (SI), valant 10¹² watts, et dont le symbole est TW.
+8s		8	0
+1erbine	Hydroxyde de terbium.
+7s		7	0
+5um	Élément chimique de numéro atomique 65 et de symbole Tb qui fait partie de la série chimique des lanthanides et des terres rares.
+3ça		3cer	x
+5i		3cer	m
+6ent		3cer	w
+6s		3cer	t
+6t		3cer	y
+4âmes		3cer	3
+4ant		3cer	z
+5s		3cer	c
+6se		3cer	6
+8nt		3cer	h
+8s		3cer	8
+7iez		3cer	e
+8ons		3cer	p
+4ât		3cer	k
+6es		3cer	2
+3ce		5r	1s
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Donner un troisième labour, une troisième façon à la vigne.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6on	Métis né d’un mulâtre et d’une femme blanche ou dans le sens inverse d’un blanc et d’une mulâtresse.
+8s		8	0
+8t		6	f
+4és		4er	12
+4et	Strophe de trois vers.
+6s		6	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+3çons		3cer	r
+1érébelle	Ver marin de la famille des Térébellidés, de 8 à 10 cm (de l’embranchement des Annélides, de la classe des Polychètes, de la famille des Amphitrites) vivant da…
+9s		9	0
+1erebellum	Variante de térébellum.
+as		a	0
+1érébenthène	Alpha-pinène.
+cs		c	0
+9ine	Oléorésine qui coule du térébinthe et d’autres arbres résineux comme le pin maritime.
+bés		c	9
+5inthacées	Dans les anciennes classifications du vivant, famille de plantes dont le térébinthe était le type.
+9e	Arbuste résineux au bois dur, à feuilles imparipennées caduques, à petites fleurs en grappes serrées, dont les petits fruits sont blancs, puis roses, rouges et…
+as		a	0
+6que	Relatif à la térébenthine.
+9s		9	0
+5rant	Perçant ; cri très aigu
+9e		9	n
+as		9	1
+9s		9	9
+7tion	Action de percer avec une tarière.
+bs		b	0
+8ule	Brachiopode à coquille ovale et lisse, abondant à l’ère secondaire et répandu encore actuellement dans toutes les mers.
+bs		b	0
+4phtalate	Sel ou ester de l’acide téréphtalique.
+cs		c	0
+1erfès	Grosse truffe d’Afrique du Nord.
+4esse	Variante orthographique de terfès.
+8s		8	0
+4èze	Variante de terfès.
+7s		7	0
+3gal	Fibre de polyester.
+6e		6	n
+7s		6	1
+6s		6	0
+5ux		5l	9
+4ite	Sclérite ou plaque de chitine, située sur l’abdomen (le dos) des arthropodes.
+7s		7	0
+5versa		9er	x
+ai		9er	m
+bent		9er	16
+bs		9er	1g
+bt		9er	y
+9âmes		9er	3
+9ant		9er	17
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action de tergiverser, d'hésiter.
+es		e	0
+9é		9er	1k
+9ent		ar	v
+ar	Prendre des détours, des faux-fuyants pour éloigner ou pour éluder la conclusion d’une affaire, la décision d’une question, pour ne pas faire une réponse posit…
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+as		ar	25
+az		ar	1b
+9iez		9er	d
+aons		9er	j
+9ons		9er	1n
+3iyaki	Viande, poisson ou crustacé grillé ou rôti dans une sauce soja sucrée au mirin.
+8s		8	0
+3lenka	Fibre synthétique polyester, utilisée notamment pour les vêtements imperméables.
+8s		8	0
+3maillage	Changement dans le rythme des règlements internationaux, caractérisé par un jeu de va-et-vient entre les dates de paiement des créances et de recouvrement des …
+bs		b	0
+4e	Borne marquant une limite et faite d’un buste terminé en gaine, en souvenir du dieu Terme.
+5s		5	0
+4ina		6er	x
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+9on	Fin d’une chose.
+bs		b	0
+8t		6er	14
+7l	Qui termine une chose, qui en occupe ou en forme l’extrémité.
+8e	Dernière classe du lycée, après la première, pour les enfants de 17-18 ans.
+9s		8	1
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât	Forme conjuguée du verbe terminer.	6er
+8es		6er	2
+6ateur	Pour une planète ou une lune, ligne de séparation entre la partie éclairée (où il fait jour) et la partie obscure (où il fait nuit).
+bs		b	0
+7ux		7l	9
+6é	Qui est achevé.
+7e		6er	11
+8s		7	1
+6ent		7r	15
+7r	Borner, limiter.
+8a		8	l
+9i		8	1e
+aent		8	1r
+as		8	i
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	1p
+at		8	1i
+6és	Participe passé masculin pluriel verbe terminer.	6er
+6ez		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+7sme	Doctrine des terministes.
+as		a	0
+6ologie	Ensemble des termes techniques, d’une science, d’un art ou d’un domaine donné.
+cs		c	0
+bque	Relatif à la terminologie, à l'adéquation entre la désignation d'un mot et le concept auquel ce terme fait référence.
+es		e	0
+aue	Linguiste spécialiste de la terminologie qui détermine l'adéquation entre la désignation d'un mot et le concept auquel ce terme fait référence.
+cs		c	0
+7ns		6er	1n
+6us	Point final, endroit où s’arrête une ligne de chemins de fer, de bateaux, d’avions, de transports quelconques.
+5te	Nom courant des Isoptères, ordre d’insectes sociaux xylophages.
+6ée		7	n
+8s		7	1
+6es		7	0
+6ière	Nid de termites.
+as		a	0
+4ondois	Relatif à Termonde, ville de Belgique située en province de Flandre-Orientale.
+ae		a	n
+bs		a	1
+3naire	Qui est composé de trois unités.
+8s		8	0
+4é	Qui est au nombre de trois sur un support commun, en parlant des parties d'une plante.
+4es		5	0
+4i	Devenu terne.
+5e		5	n
+6s		5	1
+4îmes		4ir	3
+4ir	Rendre terne, ôter ou diminuer l’éclat de quelque chose.
+6a		6	l
+7i		6	1e
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+6ent		6	o
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	9
+6saient		5r	23
+9s		5r	t
+9t		5r	1z
+8nt		5r	17
+7e		5r	2d
+8ment	Action de ternir.
+cs		c	0
+8nt		5r	1x
+8s		5r	24
+8z		5r	u
+7iez		5r	d
+8ons		5r	j
+7ons		5r	r
+7ure	État de ce qui est terni.
+5t		5r	28
+4îtes		4ir	2
+3pène	Composé naturel issu majoritairement des plantes, formé d’unités d’isoprène (C₅H₈), présent dans de nombreuses huiles essentielles et doué d’activités biologiq…
+7s		7	0
+4énique	Relatif aux terpènes ou qui en est dérivé.
+as		a	0
+6oïde	Composé isoprénique dérivé d’un terpène, comportant un ou plusieurs groupes fonctionnels.
+as		a	0
+4ine	Hydrate de térébenthine employé contre la toux, comme calmant.
+6éol	Alcool monoterpénique de formule C₁₀H₁₈O, existant sous plusieurs isomères, présent dans certaines huiles essentielles et utilisé en parfumerie.
+6ol	Variante orthographique de terpinéol.
+3ra		4er	13
+5formation	Processus hypothétique d’ingénierie planétaire visant à modifier l’environnement naturel d’une planète, d’une lune ou d’un autre corps céleste, afin de le rend…
+es		e	0
+5ge	Droit qu’avaient certains seigneurs de prélever des produits de la terre qui était de leur domaine.
+7r	Lever le droit de terrage.
+6és		6er	12
+5i	Première personne du singulier du passé simple du verbe terrer.
+6ent		4er	16
+6n	Terre, sol considéré par rapport à sa nature, à sa composition, à sa forme.
+7s		7	0
+6s		4er	1g
+6t	Troisième personne du singulier de l’imparfait de l’indicatif du verbe terrer.
+5mare	Sorte de terre ammoniacale qu'on exploite comme engrais en différents points de l'Italie.
+9s		9	0
+4âmes		4er	3
+4ant		4er	17
+5qué	Qui est composé de terre et d’eau.
+8e		8	31
+9s		8	1
+8s		8	9
+5rium	Emplacement disposé pour des animaux de terre.
+9s		9	0
+5s	Résine recueillie au pied des pins, parfois à même le sol.
+6sa		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui terrasse, qui abat.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	1q
+9es		7er	2
+7e	Levée de terre artificielle en plate-forme, ordinairement soutenue par de la maçonnerie.
+7ée		7er	19
+9s		7er	1f
+7ement	Action de terrasser.
+cs		c	0
+8nt		8r	v
+8r	Soutenir, fortifier par un amas de terre.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	u
+7ier	Qui se rapporte aux travaux de terrassement.
+8ère	Ouvrière qui travaille à remuer, à transporter des terres.
+bs		8er	1
+8ers		a	9
+9z		7er	d
+8ons		7er	j
+7on	Partie supérieure la moins pentue d’un toit à l’italienne où d’un toit à la Mansart.
+9s		9	9
+5t	Auget plein d’eau où le potier trempe de temps en temps ses mains pour empêcher que la terre glaise ne s’y attache.
+4âtes		4er	2
+4azzo	Nom donné au granito quand il est réalisé sur place en grandes dalles séparées par des joints de dilatation.
+8s		8	0
+4e	Sol sur lequel nous marchons, sur lequel les maisons sont construites, qui produit et nourrit les végétaux.
+5au	Support, substrat, majoritairement composé de débris végétaux, destiné à la culture des plantes en pot.
+7ta		8er	x
+9ge	Épandage de terreau ou de compost bien décomposé sur une culture afin de lui apporter des matières organiques.
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Additionner de terreau.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+7x		7	0
+0Terrebonnien	Habitant de Terrebonne, municipalité québécoise ^().
+cne	Habitante de Terrebonne, ville québécoise.
+es		e	0
+cs		c	0
+0terrée		4er	19
+6s		4er	1f
+4ent		5r	15
+5plein	Variante orthographique de terre-plein
+as		a	0
+5r	Entourer, garnir, couvrir de terre.
+6a		6	18
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5	0
+6tre	Relatif à la planète Terre.
+9s		9	0
+5ur	Émotion profonde causée dans l’âme par la présence, l’annonce, la peinture d’un grand mal ou d’un grand péril.
+7s		7	0
+6se		6x	n
+8s		6x	1
+6x	Qui a rapport à la terre, qui est de la nature de la terre.
+5z		5r	1b
+4i	Variante orthographique de terril.
+5ble	Qui cause de la terreur.
+8ment	De manière à inspirer de la terreur.
+8s		8	0
+5cole	Qui vit sur la terre ou dans la terre.
+9s		9	0
+5en	Qui possède des terres.
+7ne	Celle qui vit du travail de la terre.
+9s		7	1
+7s		7	9
+6r	Qualifiait le registre foncier, contenant le dénombrement, les déclarations des particuliers qui relevaient d’une seigneurie, et le détail des droits, cens et …
+5ère	Lieu d’où l’on tire de la terre.
+8s		8	0
+5ers		7	0
+6z		4er	d
+5fia		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui provoque une réaction de terreur.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	En proie à la terreur.
+8e		8	n
+9s		8	1
+7ent		8r	15
+8r	Frapper de terreur.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	1n
+5gène	Provenant de l’érosion des terres.
+9s		9	0
+5l	Monticule de déchets houillers.
+6s		6	0
+4îmes		4ir	3
+4ine	Récipient de terre, de faïence, etc., de forme ronde, plat par en bas, et qui va en s’élargissant par en haut.
+6ée	Ce que peut contenir une terrine, autant qu’il peut en tenir dans une terrine.
+8s		8	0
+6es		7	0
+5ons		4er	j
+5r	Il se dit des tortues qui, sortant de la mer à certaines époques, viennent sur le rivage, et, après y avoir fait un trou dans le sable, y pondent leurs œufs, p…
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+6ent		6	o
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	27
+6saient		5r	w
+9s		5r	t
+9t		5r	y
+8nt		5r	z
+7e		5r	2h
+8nt		5r	v
+8s		5r	24
+8z		5r	u
+7iez		5r	d
+8ons		5r	j
+7ons		5r	r
+5t		5r	2z
+4îtes		4ir	2
+4itoire	Étendue de terre plus ou moins précisément délimitée.
+as		a	0
+7rial	Qui concerne un territoire.
+be	Personnel de l'armée territoriale.
+cs		b	1
+bité	Principe selon lequel une règle de droit, une compétence ou un impôt s’applique aux personnes, aux biens, aux actes ou aux revenus rattachés à un territoire dé…
+es		e	0
+aux		al	9
+9en	Qui concerne les Territoires du Nord-Ouest ou le Yukon, au Canada.
+bne		b	n
+ds		b	1
+bs		b	9
+4oir	Terre considérée par rapport à la culture.
+7s		7	0
+5ns		4er	1n
+5risa		8er	13
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant	Qui terrorise ; qui provoque ou institue la terreur.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e		9r	1s
+8ée		8er	19
+as		8er	1f
+8ent		9r	15
+9r	Frapper de terreur.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	1i
+8és		8er	1h
+8ez		9r	1b
+8iez		8er	d
+9ons		8er	j
+8me	Violences (attentats, assassinats, enlèvements, sabotages…) menées contre des civils, et destinées à frapper l’opinion publique.
+as		a	0
+8ons		8er	r
+8te	Relatif à la Terreur et à ses partisans et activistes.
+as		a	0
+3sa		4er	x
+5i		4er	m
+6ent	Troisième personne du pluriel de l’imparfait de l’indicatif du verbe terser.
+6s		4er	t
+6t	Troisième personne du singulier de l’imparfait de l’indicatif du verbe terser.
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Variante de tercer.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3tiaire	Qui apparait en troisième lieu ou en troisième position.
+9s		9	0
+6risation	Fait d’augmenter la proportion du secteur tertiaire dans l’économie.
+es		e	0
+9me	Troisième phase de la syphilis.
+bs		b	0
+5o	Troisièmement, en troisième lieu.
+4re	Monticule, éminence isolée.
+6s		6	0
+3vueren	Variante de berger belge tervuren (variété de race de chien).
+3zetto	Tercet.
+8s		8	0
+2s	Pluriel de ton, ta.	1a
+3la	Unité de mesure de la densité de flux magnétique ou de l’induction magnétique du Système international, défini comme weber par mètre carré, dont le symbole est…
+5s		5	0
+3sellé	Qui est disposé par carreaux, comme un damier
+7er	Décomposer une surface en éléments de base réguliers disposés bord-à-bord.
+7és		7er	12
+4ère	Petite tablette d’ivoire, de métal, de bois, qui chez les anciens Romains servait de signe de reconnaissance, de jeton, de billet de théâtre, et pour divers au…
+7s		7	0
+4inois	Relatif au Tessin, canton du sud de la Suisse.
+9e		9	n
+as		9	1
+5ture	Tranche du registre la plus aisée d’une voix.
+9s		9	0
+4on	Débris de bouteille cassée, de pot cassé.
+6s		6	0
+3t	Coquille externe dure, calcaire ou chitineuse, de certains invertébrés.
+4a	Enveloppe la plus extérieure de la graine.
+5bilité	Qualité de ce qui est testable.
+bs		b	0
+6le	Que l’on peut tester, en particulier, pour assurer la véracité scientifique.
+8s		8	0
+5cé	Couvert d’une écaille dure et forte.
+7e		7	n
+8s		7	1
+6elle	Mollusque gastéropode muni d'une coquille très réduite, proche de la limace.
+as		a	0
+6és		7	0
+5ge	Sélection des animaux reproducteurs ou des cultivars par observation, contrôle des qualités de leurs premiers descendants et de leurs produits.
+7s		7	0
+5i	Première personne du singulier du passé simple du verbe tester.
+6ent	Troisième personne du pluriel de l’imparfait de l’indicatif du verbe tester.
+6s	Première personne du singulier de l’imparfait de l’indicatif du verbe tester.
+6t	Troisième personne du singulier de l’imparfait de l’indicatif du verbe tester.
+5ment	Acte authentique par lequel on déclare ses dernières volontés.
+9aire	Qui concerne un testament, qui a rapport à un testament.
+ds		d	0
+9s		9	0
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4ateur	Celui qui fait ou a fait un testament.
+9s		9	0
+6rice	Celle qui fait un testament.
+as		a	0
+4é		4er	1k
+5e		4er	11
+6s	Participe passé féminin pluriel du verbe tester.
+4ent		5r	15
+5r	Déclarer par un acte ce que l’on veut qui soit exécuté après sa mort.
+6a		6	18
+7i	Première personne du singulier du futur simple du verbe tester.
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	1l
+4èrent		4er	1c
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	1p
+8t		6	1i
+4és	Participe passé masculin pluriel du verbetester.	4er
+4eur	Équipement qui permet d'appliquer une séquence de tests sur les entrées d'un circuit et qui mesure les états de sorties afin de vérifier leur conformité aux sp…
+7s		7	0
+6se	Celle chargée de réaliser un ou plusieurs tests.
+8s		8	0
+5z		5r	3n
+4iculaire	Relatif aux testicules.
+cs		c	0
+8e	Glande génitale de l’homme et des animaux mâles qui sécrète la testostérone et fabrique les spermatozoïdes par spermatogenèse.
+9s		9	0
+5ez		4er	1v
+5monial	Qui rend témoignage.
+be		b	n
+cs		b	1
+aux		al	9
+5ng	Test comparatif.
+7s		7	0
+5ons		4er	1t
+4ologie	Étude des tests de personnalité.
+as		a	0
+5n	Ancienne monnaie d’argent en cours dans le royaume de France du règne de François Iᵉʳ à celui de Louis XIII.
+6s		6	0
+5stérone	Hormone stéroïdienne androgène principalement produite par les cellules de Leydig des testicules, ainsi que par les ovaires et les glandes surrénales, qui part…
+cs		c	0
+4s		4	0
+2t	Autre orthographe de tèt (ט), neuvième lettre des alphabets phénicien et hébreu.
+3a		3er	13
+1étai		3er	m
+5ent		3er	16
+5s	Première personne du singulier de l’imparfait de l’indicatif du verbe téter.
+5t		3er	14
+3âmes		3er	3
+3anie	Syndrome d’excitabilité neuromusculaire caractérisé par des spasmes douloureux.
+7s		7	0
+6que	Qui est relatif au tétanos.
+9s		9	0
+6sa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui tétanise.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action de tétaniser, de provoquer des contractures tétaniques.
+cs		c	0
+7é	Dans un état tétanique.
+8e		8	n
+9s		8	1
+7ent		8r	15
+8r	Rendre tétanique.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5os	Maladie toxi-infectieuse, tellurique, de l’homme et des animaux, généralement mortelle, caractérisée par la contraction convulsive, la rigidité d’un plus ou mo…
+5t		3er	17
+1êtard	Larve de batracien vivant dans l’eau et respirant par des branchies.
+6s		6	0
+1étas		3er	c
+5se	Sein de femme, particulièrement s'il est flasque.
+7nt		3er	h
+7s		7	0
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+1ête	Partie supérieure du corps, qui est le siège du cerveau et des principaux organes des sens, et qui, chez l’être humain et chez la plupart des vertébrés, tient …
+4au	Extrémité d’une branche maîtresse, coupée à peu de distance du pied.
+6x		6	0
+4bêche	Variante orthographique de tête-bêche
+1étée	Action pour un bébé humain ou animal de téter le sein de sa mère ou d'une nourrice.
+5s		5	0
+1ètent		1éter	15
+1éter	Sucer, en parlant du lait d’une femme ou de la femelle d’un animal.
+1ètera		1éter	l
+6i	Première personne du singulier du futur simple du verbe téter.
+7ent		1éter	s
+7s	Première personne du singulier du présent du conditionnel du verbe téter.
+7t		1éter	q
+6s		1éter	7
+1éterelle	Petit appareil employé pour prélever le lait maternel, l’allaitement artificiel.
+9s		9	0
+3èrent		3er	1c
+1èterez		1éter	5
+5iez		1éter	4
+6ons		1éter	b
+5ons		1éter	a
+7t		1éter	f
+1étés	Participe passé masculin pluriel du verbe téter.
+3euse	Personne qui cherche à se faire bien voir en utilisant la flatterie ou la gentillesse.
+7s		5x	1
+5x	Personne lente ou tatillonne.
+4z		4r	u
+1êtière	Partie supérieure de la bride, qui passe par-dessus la tête du cheval et qui soutient le mors.
+7s		7	0
+1étiez		3er	1v
+4n	Bout de la mamelle des mammifères, mamelon (plus fréquemment quand il s’agit d’hommes ou de femmes).
+5e	Pis de la vache ou de la truie.
+6s		6	0
+5s		5	0
+4ons		3er	j
+3on	Mamelle.
+5nière	Se dit d’une femme qui a une grosse poitrine.
+as		a	0
+5s		5	0
+1etra	Variante orthographique de tétra.
+1étrachlorure	Terme de nomenclature chimique indiquant que le composé contient quatre ions chlorure ou quatre atomes de chlore comme par exemple le tétrachlorure de carbone.
+ds		d	0
+6orde	Lyre ancienne à quatre cordes.
+as		a	0
+6ycline	Molécule, aux propriétés antibiotiques, produit par Streptomyces aureofasciens, une bactérie du genre Streptomyces.
+cs		c	0
+5dactyle	Qui a quatre doigts à chaque pied.
+cs		c	0
+6e	Groupe de quatre éléments solidaires.
+7s		7	0
+6rachme	Monnaie grecque, qui était d’argent et qui valait quatre drachmes.
+cs		c	0
+6yname	Qui appartient à la tétradynamie.
+5èdre	Solide dont la surface est formée de quatre triangles.
+9s		9	0
+5édrique	Relatif au tétraèdre.
+cs		c	0
+5gone	Qui a quatre angles et quatre côtés.
+9s		9	0
+6ramme	Séquence de quatre lettres ou groupe de quatre symboles formant une unité, un phonème ou un mot.
+bs		b	0
+5line	Nom courant du tétrahydronaphtalène.
+9s		9	0
+6ogie	Nom donné à un ensemble de quatre pièces de théâtre que les poètes tragiques présentaient au concours : les trois premières étaient des tragédies, ordinairemen…
+as		a	0
+5mère	Qui a quatre articles aux tarses.
+9s		9	0
+7tre	Vers grec ou latin composé de quatre pieds dans le genre dactylique ou anapestique, et de huit pieds dans le genre ïambique.
+as		a	0
+5nyque	Acarien se nourrissant du contenu des cellules du parenchyme et s’abritant dans de fines toiles tissées, sous la surface des feuilles matures.
+as		a	0
+5phonie	Technique d’enregistrement sonore permettant, si le matériel de l’utilisateur final l’autorise, de restituer le son sur quatre voies indépendantes afin d’améli…
+bs		b	0
+6légie	Paralysie des quatre membres.
+bs		b	0
+aque	Qui est atteint de tétraplégie.
+ds		d	0
+7oïde	Qui possède 4 jeux complets de chromosomes (4n).
+bs		b	0
+aie	Fait d'être tétraploïde.
+cs		c	0
+6ode	Qui appartient au groupe des tétrapodes ou qui s’y rapporte.
+9s		9	0
+6tère	Qui a quatre ailes.
+as		a	0
+5rchat	Autorité, dignité d’un tétrarque.
+as		a	0
+8ie	État gouverné par un tétrarque.
+as		a	0
+6que	Titre par lequel on désignait des souverains du second ordre, subordonnés à une puissance supérieure, et ainsi nommés parce que leurs États étaient censés fair…
+9s		9	0
+5s	Nom donné à plusieurs espèces de gallinacés d’Eurasie et d’Amérique, dont le type est le coq de bruyère ou grand tétras.
+6tyle	Qui a quatre colonnes de front.
+6yllabe	Composé de quatre syllabes.
+cs		c	0
+bique	Qui a quatre syllabes.
+5tomicité	Qualité d’un atome tétratomique.
+ds		d	0
+9que	Se dit d’un atome qui a quatre points d’attraction, et des corps qui ne sont saturés que par quatre atomes d’un autre corps.
+cs		c	0
+5valence	État d’un atome dont quatre électrons sont disponibles pour former des liaisons chimiques covalentes dans sa couche de valence (couche électronique externe).
+cs		c	0
+at	Désigne un élément chimique qui accepte quatre liaisons chimiques.
+be		b	n
+cs		b	1
+bs		b	9
+4ode	Tétrode à vide.
+7s		7	0
+6on	Espèce de poisson osseux marin sans piquants, qui a la faculté de se gonfler.
+8s		8	0
+7toxine	Toxine agissant sur le système nerveux (neurotoxine), présente chez certaines espèces de poissons, les tétrodons et les diodons.
+5se	Molécule de la famille des oses comportant quatre atomes de carbone.
+7s		7	0
+1êts		3	0
+1ette	Bout de la mamelle des animaux (pour les êtres humains, on emploie tétin).
+5s		3er	1u
+1êtu	Opiniâtre, obstiné, qui ne veut pas démordre de son idée, opinion, ou volonté.
+4e	Femme obstinée.
+5s		4	1
+4s		4	9
+1euf	Fête.
+4eur	Personne qui participe aux fêtes, surtout en parlant des personnes qui fréquentent les free parties (manifestations techno aussi appelées rave parties).
+7s		7	0
+6se	Femme qui participe aux fêtes, surtout en parlant des personnes qui fréquentent les free parties (manifestations techno aussi appelées rave parties).
+8s		8	0
+4s		4	0
+4teuf	Variante orthographique de teuf-teuf.
+8s		8	0
+3rgoule	Riz au lait longuement cuit au four, parfumé à la cannelle.
+9s		9	0
+3ton	Relatif aux Teutons ou à la Germanie médiévale.
+6ique	Qui a rapport, qui appartient aux anciens Teutons.
+as		a	0
+6ne	Moto de la marque BMW.
+8s		6	1
+6s		6	9
+1évé	Variante orthographique de TV (télévision, téléviseur).
+4s		4	0
+1ex	Unité de mesure du titrage (masse linéique) des fils et filés, équivalant à 10⁻⁶ kg/m, soit 1 gramme par kilomètre de fil.
+3an	Relatif au Texas, à ses habitants et à leur culture.
+5e		5	n
+6s		5	1
+5s		5	9
+3ta		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	1w
+4ant		4er	17
+5s		4er	2b
+6se		4er	29
+8nt		4er	26
+8s		4er	2f
+7iez		4er	2g
+8ons		4er	2i
+4ât		4er	1q
+6es		4er	2c
+4e	Suite ordonnée de mots écrits.
+4ée		4er	19
+6s		4er	1f
+4ent		5r	v
+5r	Communiquer par texto.
+6a		6	18
+7i		6	1e
+8ent		6	1r
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	22
+7ons		6	2a
+6ons		6	1p
+8t		6	1i
+5s		5	0
+5z		5r	1b
+4iez		4er	1v
+5le	Qui peut être divisé en fils propres à faire un tissu.
+7s		7	0
+5ons		4er	1t
+4o	Mot à mot ; textuellement.
+5ns		4er	1n
+5s		5	0
+5ta		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	1w
+6ant		6er	17
+7s		6er	2b
+8se		6er	29
+ant		6er	26
+as		6er	2f
+9iez		6er	2g
+aons		6er	2i
+6ât		6er	1q
+8es		6er	2c
+6é		6er	1k
+7e		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Lire et écrire des messages SMS sur un téléphone mobile.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	22
+9ons		8	2a
+8ons		8	1p
+at		8	1i
+6és		6er	1h
+6ez		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+6ons		6er	1n
+4uel	Du texte ; relatif au texte (ou aux textes).
+7le	Féminin singulier de textuel.
+9ment	D’une manière conforme au texte, aux termes employés.
+9s		7	1
+7s	Masculin pluriel de textuel.
+5ra		6er	13
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+7l	Relatif à la texture.
+8e		8	n
+9s		8	1
+6âmes		6er	3
+6ant	Additif pour donner une certaine texture, en particulier à un produit alimentaire sans en changer le goût.
+9s		9	0
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Action de texturer.
+bs		b	0
+7ux		7l	9
+6e	Action de tisser, état d’une chose tissée.
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Donner, créer une texture à (une image, etc.).
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de texturiser.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Donner de la texture à.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+6ons		6er	r
+1ézigue	Toi.

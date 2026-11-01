@@ -1,20 +1,20 @@
-zucchette	Autre orthographe de zuchette.
-zucchettes		zucchette	0
-zucchini	Variété de plante de l’espèce Cucurbita pepo.
-zucchinis		zucchini	0
-zuchette	Variété ou espèce de concombre.
-zuchettes		zuchette	0
-zugzwang	Position dans laquelle le joueur qui a le trait est contraint de jouer un coup qui dégrade sa position et tel qu’il serait plus avantageux de pouvoir passer so…
-zugzwangs		zugzwang	0
-zumba	Technique de gym tonique ou aérobic, basée sur les rythmes et des chorégraphies inspirées des danses latines.
-zumbas		zumba	0
-zup	Zone à urbaniser en priorité.
-zups		zup	0
-zurichois	Relatif à Zurich en Suisse.
-zurichoise		zurichois	23
-zurichoises		zurichois	1
-zut	Exclamation qui exprime l’impatience, le dépit.
-zutique	Relatif aux zutistes.
-zutiques		zutique	0
-zutiste	Membre d’un groupe de poètes français qui se réunissait à l’Hôtel des Étrangers, boulevard Saint-Michel à Paris à la fin de l’année 1871.
-zutistes		zutiste	0
+0zucchette	Autre orthographe de zuchette.
+9s		9	0
+5ini	Variété de plante de l’espèce Cucurbita pepo.
+8s		8	0
+3hette	Variété ou espèce de concombre.
+8s		8	0
+2gzwang	Position dans laquelle le joueur qui a le trait est contraint de jouer un coup qui dégrade sa position et tel qu’il serait plus avantageux de pouvoir passer so…
+8s		8	0
+2mba	Technique de gym tonique ou aérobic, basée sur les rythmes et des chorégraphies inspirées des danses latines.
+5s		5	0
+2p	Zone à urbaniser en priorité.
+3s		3	0
+2richois	Relatif à Zurich en Suisse.
+9e		9	n
+as		9	1
+2t	Exclamation qui exprime l’impatience, le dépit.
+3ique	Relatif aux zutistes.
+7s		7	0
+4ste	Membre d’un groupe de poètes français qui se réunissait à l’Hôtel des Étrangers, boulevard Saint-Michel à Paris à la fin de l’année 1871.
+7s		7	0

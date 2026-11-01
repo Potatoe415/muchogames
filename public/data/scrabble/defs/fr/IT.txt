@@ -1,114 +1,114 @@
-italia	Nom d'un cépage qui fournit du raisin de table blanc à gros grains ellipsoïdes et à goût de muscat.
-italianisa		italianiser	33
-italianisai		italianiser	22
-italianisaient		italianiser	32
-italianisais		italianiser	29
-italianisait		italianiser	34
-italianisâmes		italianiser	3
-italianisant	Qui a tendance à parler italien ou à prendre l'italien comme modèle.
-italianisante	Personne qui est versée dans la langue et la littérature italiennes.
-italianisantes		italianisante	0
-italianisants		italianisant	0
-italianisas		italianiser	12
-italianisasse		italianiser	6
-italianisassent		italianiser	17
-italianisasses		italianiser	8
-italianisassiez		italianiser	14
-italianisât		italianiser	20
-italianisâtes		italianiser	2
-italianisation	Procédure de substitution forcée d'une culture locale par la culture italienne.
-italianisations		italianisation	0
-italianisé	Soumis à l’influence italienne, marqué du caractère italien.
-italianisée		italianiser	37
-italianisées		italianiser	36
-italianisent		italianiser	31
-italianiser	Soumettre à l’influence italienne, marquer du caractère italien.
-italianisera		italianiser	21
-italianiserai		italianiser	16
-italianiserais		italianiser	18
-italianiserait		italianiser	26
-italianiseras		italianiser	7
-italianisèrent		italianiser	24
-italianiserez		italianiser	5
-italianiseriez		italianiser	4
-italianiserions		italianiser	11
-italianiserons		italianiser	10
-italianiseront		italianiser	15
-italianisés		italianiser	38
-italianisez		italianiser	30
-italianisiez		italianiser	13
-italianisions		italianiser	19
-italianisme	Tour, mot ou usage propres à la langue italienne transposés dans une autre langue.
-italianismes		italianisme	0
-italianisons		italianiser	27
-italianiste	Personne qui est versée dans la langue et la littérature italiennes.
-italianistes		italianiste	0
-italias		italia	0
-italien	Relatif à l’Italie, à ses habitants et à leur culture.
-italienne	Répétition sans mettre le ton, d’une voix neutre qui permet aux acteurs de mémoriser leurs textes sans se fatiguer.
-italiennes		italien	1
-italiens		italien	9
-italiote	Italique.
-italiotes		italiote	0
-italique	Qui appartient à l’Italie ancienne.
-italiques		italique	0
-italophone	De langue italienne.
-italophones		italophone	0
-item	De même, également.
-items		item	0
-itéra		itérer	33
-itérai		itérer	22
-itéraient		itérer	32
-itérais		itérer	29
-itérait		itérer	34
-itérâmes		itérer	3
-itérant		itérer	35
-itéras		itérer	12
-itérasse		itérer	6
-itérassent		itérer	17
-itérasses		itérer	8
-itérassiez		itérer	14
-itérassions		itérer	25
-itérât		itérer	20
-itérâtes		itérer	2
-itératif	Qui est répété, fait plusieurs fois.
-itératifs	Masculin pluriel de itératif.
-itération	Action de répéter la même action sur tout un ensemble, ou résultat de cette action.
-itérations		itération	0
-itérative		itératif	23
-itérativement	D’une manière itérative.
-itératives	Féminin pluriel de itératif.
-itéré	Figure résultant d’une itération.
-itérée		itérer	37
-itérées		itérer	36
-itèrent		itérer	31
-itérer	Répéter la même action, en particulier en informatique.
-itèrera		itérer	21
-itèrerai		itérer	16
-itèreraient		itérer	28
-itèrerais		itérer	18
-itèrerait		itérer	26
-itèreras		itérer	7
-itérèrent		itérer	24
-itèrerez		itérer	5
-itèreriez		itérer	4
-itèrerions		itérer	11
-itèrerons		itérer	10
-itèreront		itérer	15
-itérés		itéré	0
-itérez		itérer	30
-itériez		itérer	13
-itérions		itérer	19
-itérons		itérer	27
-ithos	Variante de éthos suivant la prononciation grecque moderne du mot.
-ithyphallique	Relatif à l’ithyphalle, en particulier à sa représentation.
-ithyphalliques		ithyphallique	0
-itinéraire	Chemin à suivre pour aller d’un lieu à un autre.
-itinéraires		itinéraire	0
-itinérance	Déplacement, fait de se déplacer.
-itinérances		itinérance	0
-itinérant	Qui se déplace dans l’exercice de ses fonctions.
-itinérante	Personne itinérante.
-itinérantes		itinérant	1
-itinérants		itinérant	9
-itou	De même, également, pareillement.
+0italia	Nom d'un cépage qui fournit du raisin de table blanc à gros grains ellipsoïdes et à goût de muscat.
+6nisa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant	Qui a tendance à parler italien ou à prendre l'italien comme modèle.
+ce	Personne qui est versée dans la langue et la littérature italiennes.
+ds		d	0
+cs		c	0
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Procédure de substitution forcée d'une culture locale par la culture italienne.
+es		e	0
+9é	Soumis à l’influence italienne, marqué du caractère italien.
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Soumettre à l’influence italienne, marquer du caractère italien.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9me	Tour, mot ou usage propres à la langue italienne transposés dans une autre langue.
+bs		b	0
+9ons		9er	r
+9te	Personne qui est versée dans la langue et la littérature italiennes.
+bs		b	0
+6s		6	0
+5en	Relatif à l’Italie, à ses habitants et à leur culture.
+7ne	Répétition sans mettre le ton, d’une voix neutre qui permet aux acteurs de mémoriser leurs textes sans se fatiguer.
+9s		7	1
+7s		7	9
+5ote	Italique.
+8s		8	0
+5que	Qui appartient à l’Italie ancienne.
+8s		8	0
+4ophone	De langue italienne.
+as		a	0
+2em	De même, également.
+4s		4	0
+2éra		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4atif	Qui est répété, fait plusieurs fois.
+8s	Masculin pluriel de itératif.
+7on	Action de répéter la même action sur tout un ensemble, ou résultat de cette action.
+9s		9	0
+7ve		7f	n
+9ment	D’une manière itérative.
+9s	Féminin pluriel de itératif.
+4é	Figure résultant d’une itération.
+5e		4er	11
+6s		4er	10
+2èrent		2érer	v
+2érer	Répéter la même action, en particulier en informatique.
+2èrera		2érer	l
+7i		2érer	g
+8ent		2érer	s
+8s		2érer	i
+8t		2érer	q
+7s		2érer	7
+2érèrent		4er	o
+2èrerez		2érer	5
+6iez		2érer	4
+7ons		2érer	b
+6ons		2érer	a
+8t		2érer	f
+2érés		5	0
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2hos	Variante de éthos suivant la prononciation grecque moderne du mot.
+3yphallique	Relatif à l’ithyphalle, en particulier à sa représentation.
+ds		d	0
+2inéraire	Chemin à suivre pour aller d’un lieu à un autre.
+as		a	0
+7nce	Déplacement, fait de se déplacer.
+as		a	0
+8t	Qui se déplace dans l’exercice de ses fonctions.
+9e	Personne itinérante.
+as		9	1
+9s		9	9
+2ou	De même, également, pareillement.

@@ -1,2047 +1,2047 @@
-as	Carte à jouer d’une valeur parfois minimale, le plus souvent maximale.
-Asa	Prénom masculin.
-asado	Mode argentin de cuisson lente de la viande au barbecue.
-asados		asado	0
-asana	Exercice de hatha yoga consistant en une position immobile du corps, un mouvement, ou en une combinaison des deux.
-asanas		asana	0
-asaret	Plante herbacée de la famille des aristolochiacées.
-asarets		asaret	0
-asbeste	Substance minérale composée de filaments moins flexibles que ceux de l’amiante, et qui, comme ce minerai naturel, s’altère très difficilement au feu.
-asbestose	Fibrose pulmonaire interstitielle, diffuse et progressive, due à l'inhalation prolongée de poussière d'amiante.
-asbestoses		asbestose	0
-ascaride	Synonyme de ascaris.
-ascarides		ascaride	0
-ascaridiose	Parasitose cosmopolite résultant de l’infestation de l’homme par Ascaris lumbricoides, un nématode de grande taille.
-ascaridioses		ascaridiose	0
-ascaris	Ver rond faisant partie d’une famille dans laquelle l’adulte parasite l’intestin grêle des mammifères.
-ascendance	Série des ascendants paternels et maternels de tout individu.
-ascendances		ascendance	0
-ascendant	Qui va en montant.
-ascendante	partie d’une lettre de bas de casse supérieure à la hauteur de x
-ascendantes		ascendant	1
-ascendants		ascendant	9
-ascendeur	Poignée d’ascension.
-ascendeurs		ascendeur	0
-ascenseur	Appareil mécanique qui sert à monter ou descendre verticalement sans escalier.
-ascenseurs		ascenseur	0
-ascension	Action de monter, de s’élever.
-ascensionna		ascensionner	33
-ascensionnai		ascensionner	22
-ascensionnaient		ascensionner	32
-ascensionnais	Qui concerne L’Ascension-de-Patapédia, municipalité québécoise ^().
-ascensionnait		ascensionner	34
-ascensionnâmes		ascensionner	3
-ascensionnant		ascensionner	35
-ascensionnas		ascensionner	12
-ascensionnasse		ascensionner	6
-ascensionnasses		ascensionner	8
-ascensionnât		ascensionner	20
-ascensionnâtes		ascensionner	2
-ascensionne		ascensionner	79
-ascensionnée		ascensionner	37
-ascensionnées		ascensionner	36
-ascensionnel	Qui a rapport à l’ascension.
-ascensionnelle		ascensionnel	23
-ascensionnelles		ascensionnel	1
-ascensionnels	Masculin pluriel de ascensionnel.
-ascensionnent		ascensionner	31
-ascensionner	Faire l’ascension d’une montagne.
-ascensionnera		ascensionner	21
-ascensionnerai		ascensionner	16
-ascensionnerais		ascensionner	18
-ascensionnerait		ascensionner	26
-ascensionneras		ascensionner	7
-ascensionnèrent		ascensionner	24
-ascensionnerez		ascensionner	5
-ascensionneriez		ascensionner	4
-ascensionnerons		ascensionner	10
-ascensionneront		ascensionner	15
-ascensionnés		ascensionner	38
-ascensionnez		ascensionner	30
-ascensionniez		ascensionner	13
-ascensionnions		ascensionner	19
-ascensionniste	Celui, celle qui effectue des ascensions.
-ascensionnistes		ascensionniste	0
-ascensionnons		ascensionner	27
-ascensions		ascension	0
-ascensoriste	Personne spécialiste de l’installation, de la maintenance ou encore de la modernisation d’ascenseurs ou de monte-charges.
-ascensoristes		ascensoriste	0
-ascèse	Discipline de vie, ensemble d’exercices physiques et moraux consistant essentiellement à refréner les besoins matériels, pratiqués en vue d’un perfectionnement…
-ascèses		ascèse	0
-ascète	Celui, celle qui se livre, par piété, à des exercices spirituels et physiques, à des mortifications.
-ascètes		ascète	0
-ascétique	Qui a rapport à l’ascétisme.
-ascétiquement	Selon la doctrine des ascètes ou à la manière d'un ascète.
-ascétiques		ascétique	0
-ascétisme	Genre de vie des ascètes.
-ascétismes		ascétisme	0
-ascidie	Organe creux de certaines plantes carnivores, destiné à piéger leurs proies.
-ascidies		ascidie	0
-ascite	Excès d’épanchement de liquide intra-abdominal qui se situe plus précisément dans l’espace entre les feuillets péritonéaux.
-ascites		ascite	0
-ascitique	Qui est affecté d’ascite.
-ascitiques		ascitique	0
-asclépiade	Qui est composé d’un spondée, de deux choriambes et d’un ïambe.
-asclépiades		asclépiade	0
-asclépias	Genre de plantes à graines laineuses.
-ascomycète	Champignon caractérisé par ses spores formées à l'intérieur d'asques, comme l'helvelle.
-ascomycètes	Classe de champignons supérieurs (ascomycota) dont les spores sont contenues dans des asques, tel la morille et la truffe.	truffe
-ascorbate	Un sel de l'acide ascorbique, antioxydant, souvent additif alimentaire.
-ascorbates		ascorbate	0
-ascorbique	Qui fait disparaitre le scorbut.
-ascorbiques		ascorbique	0
-ascospore	Spore haploïde prenant naissance dans des asques.
-ascospores		ascospore	0
-ASDIC	Appareil de détection sous marine par ultra-sons.
-ase	Plante herbacée vivace de la famille des Apiaceae, dont l’espèce la plus connue est l’ase fétide (Ferula assa-foetida).
-aselle	Crustacé isopode vivant dans les eaux douces à faible courant.
-aselles		aselle	0
-asémantique	Se dit d’une phrase qui n’a aucun sens, bien qu’elle soit correcte au point de vue grammatical.
-asémantiques		asémantique	0
-asepsie	Méthode préventive contre les infections et les pollutions du milieu par des micro-organismes pathogènes.
-asepsies		asepsie	0
-aseptique	Relatif à l’asepsie.
-aseptiques		aseptique	0
-aseptisa		aseptiser	33
-aseptisai		aseptiser	22
-aseptisaient		aseptiser	32
-aseptisais		aseptiser	29
-aseptisait		aseptiser	34
-aseptisâmes		aseptiser	3
-aseptisant		aseptiser	35
-aseptisas		aseptiser	12
-aseptisasse		aseptiser	6
-aseptisassent		aseptiser	17
-aseptisasses		aseptiser	8
-aseptisassiez		aseptiser	14
-aseptisassions		aseptiser	25
-aseptisât		aseptiser	20
-aseptisâtes		aseptiser	2
-aseptisation	Action d’aseptiser.
-aseptisations		aseptisation	0
-aseptisé	Qui a été rendu aseptique.
-aseptisée		aseptisé	23
-aseptisées		aseptisé	1
-aseptisent		aseptiser	31
-aseptiser	Soigner par l’asepsie.
-aseptisera		aseptiser	21
-aseptiserai		aseptiser	16
-aseptiseraient		aseptiser	28
-aseptiserais		aseptiser	18
-aseptiserait		aseptiser	26
-aseptiseras		aseptiser	7
-aseptisèrent		aseptiser	24
-aseptiserez		aseptiser	5
-aseptiseriez		aseptiser	4
-aseptiserions		aseptiser	11
-aseptiserons		aseptiser	10
-aseptiseront		aseptiser	15
-aseptisés		aseptisé	9
-aseptisez		aseptiser	30
-aseptisiez		aseptiser	13
-aseptisions		aseptiser	19
-aseptisons		aseptiser	27
-ases		ase	0
-asexualité	Orientation sexuelle décrivant le fait de peu ou de ne pas ressentir d’attirance sexuelle pour autrui.
-asexualités		asexualité	0
-asexué	Se dit de toute chose ou personne privée de sexe.
-asexuée		asexué	23
-asexuées		asexué	1
-asexuel	Qualifie une personne qui ne ressent pas ou peu d’attirance sexuelle.
-asexuelle	Celle qui ne ressent pas ou peu d’attirance sexuelle.
-asexuelles		asexuel	121
-asexuels		asexuel	9
-asexués		asexué	9
-ashanti	Relatif aux Ashantis, groupe ethnique du Ghana.
-ashantie		ashanti	23
-ashanties		ashanti	1
-ashantis		ashanti	9
-ashkénaze	Relatif aux traditions, aux coutumes, à la langue des Juifs du nord de l’Europe.
-ashkénazes		ashkénaze	0
-ashkenazi	Variante de ashkénaze.
-ashkenazis		ashkenazi	0
-ashram	Ermitage où les gourous et autres mahatmas vivent loin de l’agitation du monde.
-ashrams		ashram	0
-asiago	Fromage à base de lait de vache et à pâte cuite, souvent utilisé comme fromage râpé, produit principalement au nord-est de l’Italie.
-asiagos		asiago	0
-asialie	Absence de sécrétion de salive par les glandes salivaires.
-asialies		asialie	0
-asiarque	Magistrat associé au sacerdoce et présidant les jeux sacrés que célébraient en commun les villes grecques d'Asie.
-asiarques		asiarque	0
-asiatique	Relatif à l’Asie, ses peuples et ses cultures.
-asiatiques		asiatique	0
-ASIC	Circuit logique, unique ou sur mesure, plus ou moins complexe permettant sur un minimum d'espace de traiter des informations et de délivrer un signal de comman…
-asiento	Traités signés successivement entre l’Espagne et différents pays pour la traite des esclaves noirs.
-asientos		asiento	0
-asilaire	Relatif à l’asile, à l’hôpital psychiatrique.
-asilaires		asilaire	0
-asile	Privilège d’inviolabilité accordé à certaines personnes et à certains lieux chez les anciens.
-asiles		asile	0
-asin	Relatif aux ânes.
-asiné	Animal du type de l’âne.
-asinerie	Ânerie (étable pour les ânes).
-asineries		asinerie	0
-asines		asin	1
-asinien	Relatif à l’âne.
-asinienne		asinien	23
-asiniennes		asinien	1
-asiniens		asinien	9
-asins		asin	9
-askari	En Afrique de l'Est, soldat ou policier indigène des empires coloniaux italien, allemand ou britannique.
-askaris		askari	0
-asnierois	Relatif à Asnières-la-Giraud, commune de la Charente-Maritime.
-asnieroise		asnierois	23
-asnieroises		asnierois	1
-asociabilité	Qualité de ce qui est asocial, incapacité à vivre en société.
-asociabilités		asociabilité	0
-asocial	Qui n'est pas sociable.
-asociale	Femme qui éprouve des difficultés à s’adapter à la vie sociale.
-asociales		asocial	1
-asocialité	Caractère d’une personne asociale, incapacité à vivre en société.
-asocialités		asocialité	0
-asociaux		asocial	9
-asomatognosie	Trouble de la conscience corporelle ou du schéma corporel, caractérisé par la méconnaissance, l’absence de reconnaissance ou le sentiment de disparition d’une …
-asomatognosies		asomatognosie	0
-asparagacée	Membre des Asparagaceae.
-asparagacées		asparagacée	0
-asparagine	Acide aminé polaire et non-chargé dont le groupement latéral est un carboxamine (-CH₂-CO-NH₂).
-asparagines		asparagine	0
-asparagus	Plante ornementale du genre Asparagus, dont Asparagus setaceus (Kunth) Jessop et Asparagus densiflorus (Kunth) Jessop.
-aspartam	Variante orthographique de aspartame.
-aspartame	Édulcorant artificiel dont les effets secondaires sont discutés.
-aspartames		aspartame	0
-aspartams		aspartam	0
-aspartique	Relatif à un acide aminé dicarboxylique, constituant de toutes les protéines, l’un des vingt acides aminés du code génétique.
-aspartiques		aspartique	0
-aspe	Dévidoir sur lequel on enroule le fil de soie provenant des cocons pour en faire un écheveau.
-aspect	Vue d’une personne ou d’une chose.
-aspects		aspect	0
-aspectuel	Relatif à l’aspect.
-aspectuelle		aspectuel	23
-aspectuelles		aspectuel	1
-aspectuels		aspectuel	9
-asperge	Plante potagère de la famille des liliacées (classification classique) ou asparagacées (classification phylogénétique) dont on mange les jeunes pousses (Aspara…
-aspergea		asperger	33
-aspergeai		asperger	22
-aspergeaient		asperger	32
-aspergeais		asperger	29
-aspergeait		asperger	34
-aspergeâmes		asperger	3
-aspergeant	Qui permet d’asperger.
-aspergeas		asperger	12
-aspergeasse		asperger	6
-aspergeassent		asperger	17
-aspergeasses		asperger	8
-aspergeassiez		asperger	14
-aspergeassions		asperger	25
-aspergeât		asperger	20
-aspergeâtes		asperger	2
-aspergée		asperger	37
-aspergées		asperger	36
-aspergent		asperger	31
-aspergeons		asperger	27
-asperger	Jeter çà et là des gouttes d’eau ou d’un autre liquide sur quelqu’un ou sur quelque chose.
-aspergera		asperger	21
-aspergerai		asperger	16
-aspergeraie	Plantation d’asperges.
-aspergeraient		asperger	28
-aspergeraies		aspergeraie	0
-aspergerais		asperger	18
-aspergerait		asperger	26
-aspergeras		asperger	7
-aspergèrent		asperger	24
-aspergerez		asperger	5
-aspergeriez		asperger	4
-aspergerions		asperger	11
-aspergerons		asperger	10
-aspergeront		asperger	15
-asperges	Variante de’' aspergès.
-aspergez		asperger	30
-aspergiez		asperger	13
-aspergille	Ustensile utilisé pour répandre de l’eau lustrale ou bénite.
-aspergilles		aspergille	0
-aspergillose	Maladie infectieuse fongique causée par un aspergille ou Aspergillus.
-aspergilloses		aspergillose	0
-aspergions		asperger	19
-aspérité	Qualité de ce qui est raboteux, inégal.
-aspérités		aspérité	0
-aspermatisme	Synonyme de l’aspermie.
-aspermatismes		aspermatisme	0
-asperme	Qui ne produit pas de graines, de semence, de sperme.
-aspermes		asperme	0
-aspermie	Condition de ne pas pouvoir produire suffisamment de sperme, chez un mâle.
-aspermies		aspermie	0
-asperseur	Élément d’une installation d’arrosage, qui permet de disperser en gouttelettes un jet d’eau d’une façon aussi uniforme que possible.
-asperseurs		asperseur	0
-aspersion	Action d’asperger, de projeter des gouttes de liquide sur quelque chose ou sur quelqu’un.
-aspersions		aspersion	0
-aspersoir	Goupillon à asperger de l’eau bénite.
-aspersoirs		aspersoir	0
-aspérule	Plante du genre Asperula de la famille des Rubiaceae (Rubiacées) dont le type est l'aspérule des champs (Asperula arvensis).
-aspérules		aspérule	0
-aspes		aspe	0
-asphalta		asphalter	33
-asphaltage	Travail par lequel on pave une rue avec l’asphalte.
-asphaltages		asphaltage	0
-asphaltai		asphalter	22
-asphaltaient		asphalter	32
-asphaltais		asphalter	29
-asphaltait		asphalter	34
-asphaltâmes		asphalter	3
-asphaltant		asphalter	35
-asphaltas		asphalter	12
-asphaltasse		asphalter	6
-asphaltassent		asphalter	17
-asphaltasses		asphalter	8
-asphaltassiez		asphalter	14
-asphaltassions		asphalter	25
-asphaltât		asphalter	20
-asphaltâtes		asphalter	2
-asphalte	Bitume compact, noir et luisant, très fusible, que l’on trouve à la surface de quelques lacs, et particulièrement sur la mer Morte ou lac Asphaltite dans l’anc…
-asphaltée		asphalter	37
-asphaltées		asphalter	36
-asphaltent		asphalter	31
-asphalter	Appliquer de l’asphalte sur.
-asphaltera		asphalter	21
-asphalterai		asphalter	16
-asphalteraient		asphalter	28
-asphalterais		asphalter	18
-asphalterait		asphalter	26
-asphalteras		asphalter	7
-asphaltèrent		asphalter	24
-asphalterez		asphalter	5
-asphalteriez		asphalter	4
-asphalterions		asphalter	11
-asphalterons		asphalter	10
-asphalteront		asphalter	15
-asphaltés		asphalter	38
-asphaltez		asphalter	30
-asphaltier	Navire-citerne conçu pour le transport de produits entre 180 et 250°C, destiné au transport de l’asphalte et du bitume.
-asphaltiers		asphaltier	0
-asphaltiez		asphalter	13
-asphaltions		asphalter	19
-asphaltique	Relatif à l'asphalte, qui en contient.
-asphaltiques		asphaltique	0
-asphaltite	Qui contient de l'asphalte.
-asphaltites		asphaltite	0
-asphaltons		asphalter	27
-asphérique	Se dit d'un verre ou d'une lentille dont la forme se rapproche de celle d'une sphère sans l'être tout à fait, et dont la fonction est d'améliorer la précision …
-asphériques	Pluriel de asphériques.
-asphodèle	Genre de plantes herbacées vivaces (Asphodelus L.) appartenant à la famille des Asphodelaceae (anciennement rattaché aux Liliaceae puis, dans les premières cla…
-asphodèles		asphodèle	0
-asphyxia		asphyxier	39
-asphyxiai		asphyxier	22
-asphyxiaient		asphyxier	32
-asphyxiais		asphyxier	29
-asphyxiait		asphyxier	34
-asphyxiâmes		asphyxier	3
-asphyxiant	Qui produit l’asphyxie.
-asphyxiante		asphyxiant	23
-asphyxiantes		asphyxiant	1
-asphyxiants		asphyxiant	9
-asphyxias		asphyxier	12
-asphyxiasse		asphyxier	6
-asphyxiassent		asphyxier	17
-asphyxiasses		asphyxier	8
-asphyxiassiez		asphyxier	14
-asphyxiassions		asphyxier	25
-asphyxiât		asphyxier	20
-asphyxiâtes		asphyxier	2
-asphyxie	Arrêt plus ou moins long de la respiration, produit par différentes causes, telles que la submersion, la strangulation, l’absorption de gaz irrespirables, la c…
-asphyxiée	Personne ayant suffoqué par asphyxie.
-asphyxiées		asphyxié	1
-asphyxient		asphyxier	31
-asphyxier	Suffoquer par asphyxie.
-asphyxiera		asphyxier	21
-asphyxierai		asphyxier	16
-asphyxieraient		asphyxier	28
-asphyxierais		asphyxier	18
-asphyxierait		asphyxier	26
-asphyxieras		asphyxier	7
-asphyxièrent		asphyxier	24
-asphyxierez		asphyxier	5
-asphyxieriez		asphyxier	4
-asphyxierions		asphyxier	11
-asphyxierons		asphyxier	10
-asphyxieront		asphyxier	15
-asphyxiés		asphyxié	0
-asphyxiez		asphyxier	30
-asphyxiiez		asphyxier	13
-asphyxiions		asphyxier	19
-asphyxions		asphyxier	27
-asphyxique	Relatif ou propre à l’asphyxie.
-asphyxiques		asphyxique	0
-aspi	Jeune officier militaire ou officier appelé.
-aspic	Serpent, proche du naja ou du cobra, répandu dans toute l’Afrique et très venimeux, l’aspic de Cléopâtre ou cobra égyptien.
-aspics		aspic	0
-aspidistra	Couleur verte.
-aspidistras		aspidistra	0
-aspidium	Nom obsolète ambigu donné à plusieurs genres de fougères comme l’athyrium (Athyrium), Christella, etc.
-aspidiums		aspidium	0
-aspira		aspirer	33
-aspirai		aspirer	22
-aspiraient		aspirer	32
-aspirail	Trou pratiqué dans un fourneau pour que l’air puisse y pénétrer.
-aspirais		aspirer	29
-aspirait		aspirer	34
-aspirâmes		aspirer	3
-aspirant	Qui aspire.
-aspirante	Celle qui aspire à une chose, qui veut y parvenir.
-aspirantes		aspirant	1
-aspirants		aspirant	9
-aspiras		aspirer	12
-aspirasse		aspirer	6
-aspirassent		aspirer	17
-aspirasses		aspirer	8
-aspirassiez		aspirer	14
-aspirassions		aspirer	25
-aspirât		aspirer	20
-aspirâtes		aspirer	2
-aspirateur	Qui sert à aspirer.
-aspirateurs		aspirateur	9
-aspiratif	Relatif à l’aspiration.
-aspiratifs		aspiratif	9
-aspiration	Action d’attirer l’air extérieur dans ses poumons.
-aspirations		aspiration	0
-aspirative		aspiratif	23
-aspiratives		aspiratif	1
-aspiratoire	Qui a rapport à l’aspiration.
-aspiratoires		aspiratoire	0
-aspiratrice		aspirateur	23
-aspiratrices		aspirateur	1
-aspiraux		aspirail	0
-aspiré	prononcé avec une aspiration audible
-aspirée	Consonne occlusive, consistant en un retard des cordes vocales à se refermer pour émettre la voyelle.
-aspirées		aspirée	0
-aspirent		aspirer	31
-aspirer	Attirer l’air extérieur dans ses poumons, par opposition à expirer.
-aspirera		aspirer	21
-aspirerai		aspirer	16
-aspireraient		aspirer	28
-aspirerais		aspirer	18
-aspirerait		aspirer	26
-aspireras		aspirer	7
-aspirèrent		aspirer	24
-aspirerez		aspirer	5
-aspireriez		aspirer	4
-aspirerions		aspirer	11
-aspirerons		aspirer	10
-aspireront		aspirer	15
-aspires		aspirer	66
-aspirez		aspirer	30
-aspiriez		aspirer	13
-aspirine	Nom courant de l’acide acétylsalicylique, anti-inflammatoire (AINS) agissant par inhibition de la cyclooxygénase-1, antipyrétique, anti douleur, anti antiagrég…
-aspirines		aspirine	0
-aspirions		aspirer	19
-aspirons		aspirer	27
-aspis	Bouclier utilisé durant l'Antiquité par l'infanterie et la cavalerie Grecs.
-asple	Dévidoir sur lequel on place les écheveaux pour les dévider.
-aspléniacées	Famille de fougères vraies saxicoles.
-asplénium	Plante du genre Asplenium, regroupant des centaines de fougères.
-aspléniums		asplénium	0
-asples		asple	0
-aspre	Petite monnaie d’argent en usage chez les Turcs.
-aspres		aspre	0
-asque	Cellule reproductrice des champignons ascomycètes (dont font partie les truffes, les morilles et les pézizes) en forme de sac généralement allongé qui contient…
-asques		asque	0
-asram	Variante orthographique de ashram.
-asrams		asram	0
-assafétida	Variante orthographique de assa fœtida.
-assafétidas		assafétida	0
-assagi	Qui est devenu sage, qui a perdu de sa violence.
-assagie		assagi	23
-assagies		assagi	1
-assagîmes		assagir	3
-assagir	Rendre sage.
-assagira		assagir	21
-assagirai		assagir	50
-assagiraient		assagir	28
-assagirais		assagir	18
-assagirait		assagir	26
-assagiras		assagir	7
-assagirent		assagir	24
-assagirez		assagir	5
-assagiriez		assagir	4
-assagirions		assagir	11
-assagirons		assagir	10
-assagiront		assagir	15
-assagis		assagi	9
-assagissaient		assagir	32
-assagissais		assagir	29
-assagissait		assagir	34
-assagissant		assagir	35
-assagisse		assagir	85
-assagissement	Action d’assagir ou de s’assagir.
-assagissements		assagissement	0
-assagissent		assagir	31
-assagisses		assagir	76
-assagissez		assagir	30
-assagissiez		assagir	13
-assagissions		assagir	19
-assagissons		assagir	27
-assagit		assagir	80
-assagîtes		assagir	2
-assai	Se joint comme augmentatif au mot qui indique le mouvement d’un air.
-assaillaient		assaillir	93
-assaillais		assaillir	114
-assaillait		assaillir	91
-assaillant	Qui assaille.
-assaillante	Celle qui assaille.
-assaillantes		assaillant	1
-assaillants		assaillant	9
-assaille		assaillir	64
-assaillent		assaillir	69
-assaillera		assaillir	21
-assaillerai		assaillir	16
-assailleraient		assaillir	108
-assaillerais		assaillir	106
-assaillerait		assaillir	112
-assailleras		assaillir	7
-assaillerez		assaillir	5
-assailleriez		assaillir	99
-assaillerions		assaillir	101
-assaillerons		assaillir	10
-assailleront		assaillir	15
-assailles		assaillir	77
-assaillez		assaillir	30
-assailli	Celui qui est victime d'un assaut.
-assaillie	Celle qui est victime d’un assaut.
-assaillies		assaillie	118
-assailliez		assaillir	110
-assaillîmes		assaillir	3
-assaillions		assaillir	111
-assaillir	Survenir subitement et violemment, en parlant d’intempéries ou d’éléments naturels.
-assaillira		assaillir	44
-assaillirai		assaillir	16
-assailliraient		assaillir	108
-assaillirais		assaillir	106
-assaillirait		assaillir	112
-assailliras		assaillir	7
-assaillirent		assaillir	48
-assaillirez		assaillir	5
-assailliriez		assaillir	99
-assaillirions		assaillir	101
-assaillirons		assaillir	10
-assailliront		assaillir	15
-assaillis		assailli	118
-assaillisse		assaillir	6
-assaillissent		assaillir	17
-assaillisses		assaillir	8
-assaillissiez		assaillir	14
-assaillissions		assaillir	25
-assaillit		assaillir	39
-assaillîtes		assaillir	2
-assaillons		assaillir	73
-assaini		assainir	56
-assainie		assainir	45
-assainies		assainir	36
-assainîmes		assainir	3
-assainir	Rendre sain.
-assainira		assainir	21
-assainirai		assainir	16
-assainiraient		assainir	28
-assainirais		assainir	18
-assainirait		assainir	49
-assainiras		assainir	7
-assainirent		assainir	24
-assainirez		assainir	5
-assainiriez		assainir	4
-assainirions		assainir	11
-assainirons		assainir	10
-assainiront		assainir	15
-assainis		assainir	72
-assainissaient		assainir	32
-assainissais		assainir	29
-assainissait		assainir	34
-assainissant		assainir	35
-assainisse		assainir	89
-assainissement	Action d’assainir.
-assainissements		assainissement	0
-assainissent		assainir	31
-assainisses		assainir	76
-assainisseur	Nom générique d’appareil permettant d’assainir un milieu (eau, air, …).
-assainisseurs		assainisseur	0
-assainissez		assainir	30
-assainissiez		assainir	13
-assainissions		assainir	19
-assainissons		assainir	27
-assainit		assainir	107
-assainîtes		assainir	2
-assaisonna		assaisonner	33
-assaisonnai		assaisonner	22
-assaisonnaient		assaisonner	32
-assaisonnais		assaisonner	29
-assaisonnait		assaisonner	34
-assaisonnâmes		assaisonner	3
-assaisonnant		assaisonner	35
-assaisonnas		assaisonner	12
-assaisonnasse		assaisonner	6
-assaisonnassent		assaisonner	17
-assaisonnasses		assaisonner	8
-assaisonnassiez		assaisonner	14
-assaisonnât		assaisonner	20
-assaisonnâtes		assaisonner	2
-assaisonné	Dont le goût est modifié par un assaisonnement.
-assaisonnée		assaisonner	37
-assaisonnées		assaisonner	36
-assaisonnement	Action d’assaisonner.
-assaisonnements		assaisonnement	0
-assaisonnent		assaisonner	31
-assaisonner	Accommoder un mets avec les ingrédients qu’il faut pour le rendre plus agréable au goût.
-assaisonnera		assaisonner	21
-assaisonnerai		assaisonner	16
-assaisonnerais		assaisonner	18
-assaisonnerait		assaisonner	26
-assaisonneras		assaisonner	7
-assaisonnèrent		assaisonner	24
-assaisonnerez		assaisonner	5
-assaisonneriez		assaisonner	4
-assaisonnerions		assaisonner	11
-assaisonnerons		assaisonner	10
-assaisonneront		assaisonner	15
-assaisonnés		assaisonner	38
-assaisonnez		assaisonner	30
-assaisonniez		assaisonner	13
-assaisonnions		assaisonner	19
-assaisonnons		assaisonner	27
-assamais	Relatif à l’Assam, État du nord-est de l’Inde, ou à ses habitants.
-assamaise		assamais	23
-assamaises		assamais	1
-assarmenta		assarmenter	33
-assarmentai		assarmenter	22
-assarmentaient		assarmenter	32
-assarmentais		assarmenter	29
-assarmentait		assarmenter	34
-assarmentâmes		assarmenter	3
-assarmentant		assarmenter	35
-assarmentas		assarmenter	12
-assarmentasse		assarmenter	6
-assarmentassent		assarmenter	17
-assarmentasses		assarmenter	8
-assarmentassiez		assarmenter	14
-assarmentât		assarmenter	20
-assarmentâtes		assarmenter	2
-assarmenté		assarmenter	46
-assarmentée		assarmenter	37
-assarmentées		assarmenter	36
-assarmentent		assarmenter	31
-assarmenter	Supprimer les sarments d'une vigne après la taille.
-assarmentera		assarmenter	21
-assarmenterai		assarmenter	16
-assarmenterais		assarmenter	18
-assarmenterait		assarmenter	26
-assarmenteras		assarmenter	7
-assarmentèrent		assarmenter	24
-assarmenterez		assarmenter	5
-assarmenteriez		assarmenter	4
-assarmenterions		assarmenter	11
-assarmenterons		assarmenter	10
-assarmenteront		assarmenter	15
-assarmentés		assarmenter	38
-assarmentez		assarmenter	30
-assarmentiez		assarmenter	13
-assarmentions		assarmenter	19
-assarmentons		assarmenter	27
-assassin	Celui ou celle qui assassine.
-assassina		assassiner	33
-assassinai		assassiner	22
-assassinaient		assassiner	32
-assassinais		assassiner	29
-assassinait		assassiner	34
-assassinâmes		assassiner	3
-assassinant	Ennuyeux, fatigant.
-assassinas		assassiner	12
-assassinasse		assassiner	6
-assassinassent		assassiner	17
-assassinasses		assassiner	8
-assassinassiez		assassiner	14
-assassinassions		assassiner	25
-assassinat	Action d’assassiner, de donner la mort intentionnellement.
-assassinâtes		assassiner	2
-assassinats		assassinat	115
-assassine	Femme qui assassine.
-assassinée	Celle qui a été assassinée.
-assassinées		assassiné	1
-assassinent		assassiner	31
-assassiner	Tuer intentionnellement.
-assassinera		assassiner	21
-assassinerai		assassiner	16
-assassineraient		assassiner	28
-assassinerais		assassiner	18
-assassinerait		assassiner	26
-assassineras		assassiner	7
-assassinèrent		assassiner	24
-assassinerez		assassiner	5
-assassineriez		assassiner	4
-assassinerions		assassiner	11
-assassinerons		assassiner	10
-assassineront		assassiner	15
-assassines		assassine	0
-assassinez		assassiner	30
-assassiniez		assassiner	13
-assassinions		assassiner	19
-assassinons		assassiner	27
-assassins		assassin	9
-assaut	Attaque pour enlever de vive force.
-assauts		assaut	0
-assavoir	ou (Utilisé uniquement dans faire assavoir) Savoir.
-asse	Dans l’Aunis, nom d’un outil de tonnelier.
-asseau	Marteau de couvreur et de tonnelier avec une tête et un tranchant.
-asseaux		asseau	0
-assec	Période pendant laquelle un étang desséché est livré à la culture.
-assécha		assécher	33
-asséchai		assécher	22
-asséchaient		assécher	32
-asséchais		assécher	29
-asséchait		assécher	34
-asséchâmes		assécher	3
-asséchant	Qui assèche.
-asséchas		assécher	12
-asséchasse		assécher	6
-asséchassent		assécher	17
-asséchasses		assécher	8
-asséchassiez		assécher	14
-asséchassions		assécher	25
-asséchât		assécher	20
-asséchâtes		assécher	2
-assèche		assécher	79
-asséchée		assécher	37
-asséchées		assécher	36
-assèchement	Action d’assécher.
-assèchements		assèchement	0
-assèchent		assécher	31
-assécher	Rendre sec.
-assèchera		assécher	21
-assècherai		assécher	16
-assècheraient		assécher	28
-assècherais		assécher	18
-assécherait		assécher	26
-assècheras		assécher	7
-asséchèrent		assécher	24
-assècherez		assécher	5
-assècheriez		assécher	4
-assècherions		assécher	11
-assècherons		assécher	10
-assècheront		assécher	15
-asséchés		assécher	38
-asséchez		assécher	30
-asséchiez		assécher	13
-asséchions		assécher	19
-asséchons		assécher	27
-assecs		assec	0
-assembla		assembler	33
-assemblage	Action d’assembler ou résultat de cette action.
-assemblages		assemblage	0
-assemblai		assembler	22
-assemblaient		assembler	32
-assemblais		assembler	29
-assemblait		assembler	34
-assemblâmes		assembler	3
-assemblant		assembler	35
-assemblas		assembler	12
-assemblasse		assembler	6
-assemblassent		assembler	17
-assemblasses		assembler	8
-assemblassiez		assembler	14
-assemblassions		assembler	25
-assemblât		assembler	20
-assemblâtes		assembler	2
-assemblé	Joint, réuni.
-assemblée	Réunion d’un certain nombre de personnes dans un même lieu.
-assemblées		assemblée	0
-assemblement	Action d’assembler.
-assemblements		assemblement	0
-assemblent		assembler	31
-assembler	Mettre ensemble.
-assemblera		assembler	21
-assemblerai		assembler	16
-assembleraient		assembler	28
-assemblerais		assembler	18
-assemblerait		assembler	26
-assembleras		assembler	7
-assemblèrent		assembler	24
-assemblerez		assembler	5
-assembleriez		assembler	4
-assemblerions		assembler	11
-assemblerons		assembler	10
-assembleront		assembler	15
-assemblés		assemblé	9
-assembleur	Celui qui assemble.
-assembleurs		assembleur	0
-assembleuse	Celle qui assemble.
-assembleuses		assembleuse	0
-assemblez		assembler	30
-assembliez		assembler	13
-assemblions		assembler	19
-assemblons		assembler	27
-assena		assener	33
-assenai		assener	22
-assenaient		assener	32
-assenais		assener	29
-assenait		assener	34
-assenâmes		assener	3
-assenant		assener	35
-assenas		assener	12
-assenasse		assener	6
-assenassent		assener	17
-assenasses		assener	8
-assenassiez		assener	14
-assenassions		assener	25
-assenât		assener	20
-assenâtes		assener	2
-assène		asséner	79
-assenée		assener	37
-assenées		assener	36
-assènent		asséner	31
-assener	Frapper en portant un coup violent.
-assènera		asséner	21
-assènerai		assener	16
-assèneraient		asséner	28
-assènerais		asséner	18
-assènerait		assener	26
-assèneras		asséner	7
-assenèrent		assener	24
-assènerez		asséner	5
-assèneriez		asséner	4
-assènerions		asséner	11
-assènerons		asséner	10
-assèneront		asséner	15
-assenés		assener	38
-assenez		assener	30
-asseniez		assener	13
-assenions		assener	19
-assenons		assener	27
-assentiment	Acquiescement déclaré ou tacite, volontaire ou forcé à un acte, à une opinion.
-assentiments		assentiment	0
-asseoir	Mettre quelqu’un sur un siège ou sur quelque chose qui tient lieu de siège.
-assermenta		assermenter	33
-assermentai		assermenter	22
-assermentaient		assermenter	32
-assermentais		assermenter	29
-assermentait		assermenter	34
-assermentâmes		assermenter	3
-assermentant		assermenter	35
-assermentas		assermenter	12
-assermentasse		assermenter	6
-assermentassent		assermenter	17
-assermentasses		assermenter	8
-assermentassiez		assermenter	14
-assermentât		assermenter	20
-assermentâtes		assermenter	2
-assermentation	Promesse solennelle que fait une personne avant d’entreprendre les tâches inhérentes à une certaine charge ou fonction, habituellement au sein d’un gouvernemen…
-assermentations		assermentation	0
-assermenté	Qui a prêté serment.
-assermentée		assermenter	37
-assermentées		assermenter	36
-assermentent		assermenter	31
-assermenter	Lier par un serment.
-assermentera		assermenter	21
-assermenterai		assermenter	16
-assermenterais		assermenter	18
-assermenterait		assermenter	26
-assermenteras		assermenter	7
-assermentèrent		assermenter	24
-assermenterez		assermenter	5
-assermenteriez		assermenter	4
-assermenterions		assermenter	11
-assermenterons		assermenter	10
-assermenteront		assermenter	15
-assermentés		assermenté	9
-assermentez		assermenter	30
-assermentiez		assermenter	13
-assermentions		assermenter	19
-assermentons		assermenter	27
-assertif	Qui a le caractère de l’assertion.
-assertifs		assertif	9
-assertion	Proposition qu’on avance et qu’on soutient comme vraie.
-assertions		assertion	0
-assertive		assertif	23
-assertives		assertif	1
-assertivité	Comportement assertif.
-assertivités		assertivité	0
-assertorique	Qui énonce une vérité de fait, sans la poser comme nécessaire.
-assertoriques		assertorique	0
-asservi	Lumière commandée par ordinateur.
-asservie		asservi	23
-asservies		asservi	1
-asservîmes		asservir	3
-asservir	Réduire, un être, un peuple ou une nation à la servitude.
-asservira		asservir	21
-asservirai		asservir	50
-asserviraient		asservir	28
-asservirais		asservir	18
-asservirait		asservir	49
-asserviras		asservir	7
-asservirent		asservir	24
-asservirez		asservir	5
-asserviriez		asservir	4
-asservirions		asservir	11
-asservirons		asservir	10
-asserviront		asservir	54
-asservis		asservi	9
-asservissaient		asservir	75
-asservissais		asservir	29
-asservissait		asservir	71
-asservissant	Qui asservit.
-asservissante		asservissant	23
-asservissantes		asservissant	1
-asservissants		asservissant	9
-asservisse		asservir	89
-asservissement	Action d’asservir ou état de ce qui est asservi.
-asservissements		asservissement	0
-asservissent		asservir	69
-asservisses		asservir	76
-asservisseur	Celui qui asservit.
-asservisseurs		asservisseur	0
-asservissez		asservir	30
-asservissiez		asservir	13
-asservissions		asservir	19
-asservissons		asservir	27
-asservit		asservir	80
-asservîtes		asservir	2
-assés	Ancienne orthographe de assez.
-assesseur	Celui qui détermine l’assiette d’une taxe ou d’un impôt.
-assesseure	Officière de justice adjointe à un juge principal, pour l’assister dans ses fonctions ou le suppléer en son absence.
-assesseures		assesseure	0
-assesseurs		assesseur	0
-assesseuse	Officière de justice adjointe à un juge principal, pour l’assister dans ses fonctions ou le suppléer en son absence.
-assesseuses		assesseuse	0
-assessoral	Qui concerne l’assesseur et ses fonctions.
-assessorale		assessoral	23
-assessorales		assessoral	1
-assessorat	Office d’assesseur.
-assessorats		assessorat	0
-assessoraux		assessoral	9
-assette	Marteau de couvreur avec une tête et un tranchant.
-assettes		assette	0
-asseyaient		assoir	204
-asseyais		assoir	205
-asseyait		assoir	206
-asseyant		assoir	245
-asseye		assoir	207
-asseyent		assoir	208
-asseyes		assoir	209
-asseyez		assoir	210
-asseyiez		assoir	211
-asseyions		assoir	212
-asseyons		assoir	213
-assez	Suffisamment, d'une quantité adéquate, suffisante ou tolérable.
-assibila		assibiler	33
-assibilai		assibiler	22
-assibilaient		assibiler	32
-assibilais		assibiler	29
-assibilait		assibiler	34
-assibilâmes		assibiler	3
-assibilant		assibiler	35
-assibilas		assibiler	12
-assibilasse		assibiler	6
-assibilassent		assibiler	17
-assibilasses		assibiler	8
-assibilassiez		assibiler	14
-assibilassions		assibiler	25
-assibilât		assibiler	20
-assibilâtes		assibiler	2
-assibilation	Modification phonétique d’une consonne dont le résultat est une sifflante.
-assibilations		assibilation	0
-assibilé		assibiler	46
-assibilée		assibiler	37
-assibilées		assibiler	36
-assibilent		assibiler	31
-assibiler	Réaliser l’assibilation : prononcer une sifflante au lieu d’une occlusive dans certains mots comme dans inertie.
-assibilera		assibiler	21
-assibilerai		assibiler	16
-assibileraient		assibiler	28
-assibilerais		assibiler	18
-assibilerait		assibiler	26
-assibileras		assibiler	7
-assibilèrent		assibiler	24
-assibilerez		assibiler	5
-assibileriez		assibiler	4
-assibilerions		assibiler	11
-assibilerons		assibiler	10
-assibileront		assibiler	15
-assibilés		assibiler	38
-assibilez		assibiler	30
-assibiliez		assibiler	13
-assibilions		assibiler	19
-assibilons		assibiler	27
-assidue	Féminin singulier de assidu.
-assidues	Féminin pluriel de assidu.
-assiduité	Régularité à se trouver où l’on doit être.
-assiduités		assiduité	0
-assidument	D’une manière assidue.
-assidus	Masculin pluriel de assidu.
-assied		assoir	214
-assieds	Première personne du singulier de l’indicatif présent de asseoir (ou assoir).	asseoir
-assiégé	Qui subit un siège.
-assiégea		assiéger	33
-assiégeai		assiéger	22
-assiégeaient		assiéger	32
-assiégeais		assiéger	29
-assiégeait		assiéger	34
-assiégeâmes		assiéger	3
-assiégeant	Qui assiège.
-assiégeante		assiégeant	23
-assiégeantes		assiégeant	1
-assiégeants		assiégeant	9
-assiégeas		assiéger	12
-assiégeasse		assiéger	6
-assiégeassent		assiéger	17
-assiégeasses		assiéger	8
-assiégeassiez		assiéger	14
-assiégeassions		assiéger	25
-assiégeât		assiéger	20
-assiégeâtes		assiéger	2
-assiégée	Femme assiégée.
-assiégées		assiégé	1
-assiègent		assiéger	31
-assiégeons		assiéger	27
-assiéger	Action de mener un siège, d’encercler une ville, une citadelle.
-assiégera		assiéger	21
-assiègerai		assiéger	16
-assiégeraient		assiéger	28
-assiègerais		assiéger	18
-assiègerait		assiéger	26
-assiègeras		assiéger	7
-assiégèrent		assiéger	24
-assiègerez		assiéger	5
-assiègeriez		assiéger	4
-assiègerions		assiéger	11
-assiègerons		assiéger	10
-assiègeront		assiéger	15
-assiégés		assiégé	9
-assiégez		assiéger	30
-assiégiez		assiéger	13
-assiégions		assiéger	19
-assiéra		assoir	215
-assiérai		assoir	216
-assiéraient		assoir	222
-assiérais		assoir	217
-assiérait		assoir	218
-assiéras		assoir	219
-assiérez		assoir	275
-assiériez		assoir	276
-assiérions		assoir	220
-assiérons		assoir	274
-assiéront		assoir	221
-assiette	Manière d’être assis, sis ou placé, assise.
-assiettée	Contenu d’une assiette.
-assiettées		assiettée	0
-assiettes		assiette	0
-assigna		assigner	33
-assignable	Se dit d’un paramètre sur lequel on peut agir.
-assignables		assignable	0
-assignai		assigner	22
-assignaient		assigner	32
-assignais		assigner	29
-assignait		assigner	34
-assignâmes		assigner	3
-assignant		assigner	35
-assignas		assigner	12
-assignasse		assigner	6
-assignassent		assigner	17
-assignasses		assigner	8
-assignassiez		assigner	14
-assignassions		assigner	25
-assignat	Constitution ou assignation d’une rente sur un héritage qui demeure nommément affecté au paiement annuel de cette rente.
-assignâtes		assigner	2
-assignation	Action d’assigner.
-assignations		assignation	0
-assignats		assignat	0
-assigné	Qui est sous le coup d’une assignation.
-assignée	Désigne une personne sous le coup d’une assignation.
-assignées		assignée	0
-assignent		assigner	31
-assigner	Attribuer spécifiquement.
-assignera		assigner	21
-assignerai		assigner	16
-assigneraient		assigner	28
-assignerais		assigner	18
-assignerait		assigner	26
-assigneras		assigner	7
-assignèrent		assigner	24
-assignerez		assigner	5
-assigneriez		assigner	4
-assignerions		assigner	11
-assignerons		assigner	10
-assigneront		assigner	15
-assignes		assigner	66
-assignez		assigner	30
-assigniez		assigner	13
-assignions		assigner	19
-assignons		assigner	27
-assîmes	Première personne du pluriel du passé simple du verbe asseoir (ou assoir).	assoir
-assimila		assimiler	33
-assimilable	Qui est susceptible d’assimilation.
-assimilables		assimilable	0
-assimilai		assimiler	22
-assimilaient		assimiler	32
-assimilais		assimiler	29
-assimilait		assimiler	34
-assimilâmes		assimiler	3
-assimilant	Qui assimile, incorpore.
-assimilantes		assimilant	1
-assimilants		assimilant	0
-assimilas		assimiler	12
-assimilasse		assimiler	6
-assimilassent		assimiler	17
-assimilasses		assimiler	8
-assimilassiez		assimiler	14
-assimilassions		assimiler	25
-assimilât		assimiler	20
-assimilâtes		assimiler	2
-assimilateur	Qui procure l’assimilation.
-assimilateurs		assimilateur	125
-assimilation	Action d’assimiler.
-assimilations		assimilation	0
-assimilatrice		assimilateur	23
-assimilatrices		assimilateur	1
-assimilé	Qui est de même nature, semblable.
-assimilée	Femme qui fait partie d’une catégorie du personnel sans en avoir le titre.
-assimilées		assimilé	1
-assimilent		assimiler	69
-assimiler	Rendre semblable.
-assimilera		assimiler	21
-assimilerai		assimiler	16
-assimileraient		assimiler	28
-assimilerais		assimiler	18
-assimilerait		assimiler	26
-assimileras		assimiler	7
-assimilèrent		assimiler	24
-assimilerez		assimiler	5
-assimileriez		assimiler	4
-assimilerions		assimiler	11
-assimilerons		assimiler	10
-assimileront		assimiler	15
-assimilés		assimilé	9
-assimilez		assimiler	30
-assimiliez		assimiler	13
-assimilions		assimiler	19
-assimilons		assimiler	27
-assirent	Troisième personne du pluriel du passé simple du verbe asseoir (ou assoir).	assoir
-assis	Placé sur son séant.
-assise	Base d’une muraille.
-assises	Loi ; institution juridique.
-assisse	Première personne du singulier de l’imparfait du subjonctif du verbe asseoir (ou assoir).	assoir
-assissent	Troisième personne du pluriel de l’imparfait du subjonctif du verbe asseoir (ou assoir).	assoir
-assisses	Deuxième personne du singulier de l’imparfait du subjonctif du verbe asseoir (ou assoir).	assoir
-assissiez	Deuxième personne du pluriel de l’imparfait du subjonctif du verbe asseoir (ou assoir).	assoir
-assissions	Première personne du pluriel de l’imparfait du subjonctif du verbe asseoir (ou assoir).	assoir
-assista		assister	33
-assistai		assister	22
-assistaient		assister	32
-assistais		assister	29
-assistait		assister	34
-assistâmes		assister	3
-assistanat	Fonction d'assistant dans l'enseignement supérieur et dans les industries du spectacle.
-assistanats		assistanat	0
-assistance	Présence.
-assistances		assistance	0
-assistant	Personne présente en un lieu.
-assistante	Celle qui présente en un lieu.
-assistantes		assistante	0
-assistants		assistant	0
-assistas		assister	12
-assistasse		assister	6
-assistassent		assister	17
-assistasses		assister	8
-assistassiez		assister	14
-assistassions		assister	25
-assistât		assister	20
-assistâtes		assister	2
-assisté	Qui bénéficie une aide.
-assistée	Femme qui bénéficie d’une aide.
-assistées		assisté	1
-assistent		assister	41
-assister	Être présent ; être témoin.
-assistera		assister	21
-assisterai		assister	16
-assisteraient		assister	28
-assisterais		assister	18
-assisterait		assister	26
-assisteras		assister	7
-assistèrent		assister	24
-assisterez		assister	5
-assisteriez		assister	4
-assisterions		assister	11
-assisterons		assister	10
-assisteront		assister	15
-assistés		assisté	9
-assistez		assister	30
-assistiez		assister	13
-assistions		assister	19
-assistons		assister	27
-assit	Troisième personne du singulier du passé simple du verbe asseoir (ou assoir).	assoir
-assîtes	Deuxième personne du pluriel du passé simple du verbe asseoir (ou assoir).	assoir
-asso	Association.
-assoce	Association (organisation à caractère officiel qui regroupe des personnes ayant un centre d’intérêt commun).
-assoces		assoce	0
-associa		associer	33
-associai		associer	22
-associaient		associer	32
-associais		associer	29
-associait		associer	34
-associâmes		associer	3
-associant		associer	35
-associas		associer	12
-associasse		associer	6
-associassent		associer	17
-associasses		associer	8
-associassiez		associer	14
-associassions		associer	25
-associât		associer	20
-associâtes		associer	2
-associatif	Relatif aux associations, au milieu des associations.
-associatifs		associatif	9
-association	Action d’associer.
-associations		association	0
-associative		associatif	23
-associatives		associatif	1
-associativité	Propriété d’une opération op qui, appliquée à trois arguments quelconques a, b et c, vérifie toujours l’égalité suivante : a op (b op c) = (a op b) op c.
-associativités		associativité	0
-associé	Qui entre dans une association.
-associée	Femme associée.
-associées		associé	1
-associent		associer	31
-associer	Prendre quelqu’un pour compagnon, pour collègue dans une dignité, dans un emploi, dans une entreprise, etc.
-associera		associer	21
-associerai		associer	16
-associeraient		associer	28
-associerais		associer	18
-associerait		associer	26
-associeras		associer	7
-associèrent		associer	24
-associerez		associer	5
-associeriez		associer	4
-associerions		associer	11
-associerons		associer	10
-associeront		associer	15
-associés		associé	9
-associez		associer	30
-associiez		associer	13
-associions		associer	19
-associons		associer	27
-assoie		assoir	207
-assoient		assoir	208
-assoies		assoir	209
-assoiffa		assoiffer	33
-assoiffai		assoiffer	22
-assoiffaient		assoiffer	32
-assoiffais		assoiffer	29
-assoiffait		assoiffer	34
-assoiffâmes		assoiffer	3
-assoiffant		assoiffer	35
-assoiffas		assoiffer	12
-assoiffasse		assoiffer	6
-assoiffassent		assoiffer	17
-assoiffasses		assoiffer	8
-assoiffassiez		assoiffer	14
-assoiffassions		assoiffer	25
-assoiffât		assoiffer	20
-assoiffâtes		assoiffer	2
-assoiffé	Qui a soif. Il s’emploie surtout figurément.
-assoiffée	Féminin singulier de assoiffé.	soif
-assoiffées		assoiffé	1
-assoiffent		assoiffer	31
-assoiffer	Priver d’eau à boire.
-assoiffera		assoiffer	21
-assoifferai		assoiffer	16
-assoifferaient		assoiffer	28
-assoifferais		assoiffer	18
-assoifferait		assoiffer	26
-assoifferas		assoiffer	7
-assoiffèrent		assoiffer	24
-assoifferez		assoiffer	5
-assoifferiez		assoiffer	4
-assoifferions		assoiffer	11
-assoifferons		assoiffer	10
-assoifferont		assoiffer	15
-assoiffés		assoiffé	9
-assoiffez		assoiffer	30
-assoiffiez		assoiffer	13
-assoiffions		assoiffer	19
-assoiffons		assoiffer	27
-assoir	S’appuyer sur son derrière.
-assoira		assoir	215
-assoirai		assoir	216
-assoiraient		assoir	222
-assoirais		assoir	217
-assoirait		assoir	218
-assoiras		assoir	219
-assoirez		assoir	275
-assoiriez		assoir	276
-assoirions		assoir	220
-assoirons		assoir	274
-assoiront		assoir	221
-assois	Première personne du singulier de l’indicatif présent du verbe asseoir (ou assoir).	assoir
-assoit		assoir	214
-assola		assoler	33
-assolai		assoler	22
-assolaient		assoler	32
-assolais		assoler	29
-assolait		assoler	34
-assolâmes		assoler	3
-assolant		assoler	35
-assolas		assoler	12
-assolasse		assoler	6
-assolassent		assoler	17
-assolasses		assoler	8
-assolassiez		assoler	14
-assolassions		assoler	25
-assolât		assoler	20
-assolâtes		assoler	2
-assolé		assoler	46
-assolée		assoler	37
-assolées		assoler	36
-assolement	Action d’assoler des cultures.
-assolements		assolement	0
-assolent		assoler	31
-assoler	Faire succéder des cultures dans un certain ordre en divisant les terres labourables en grandes portions ou soles.
-assolera		assoler	21
-assolerai		assoler	16
-assoleraient		assoler	28
-assolerais		assoler	18
-assolerait		assoler	26
-assoleras		assoler	7
-assolèrent		assoler	24
-assolerez		assoler	5
-assoleriez		assoler	4
-assolerions		assoler	11
-assolerons		assoler	10
-assoleront		assoler	15
-assolés		assoler	38
-assolez		assoler	30
-assoliez		assoler	13
-assolions		assoler	19
-assolons		assoler	27
-assombri	Rendu sombre par une faible lumière.
-assombrie		assombrir	45
-assombries		assombrir	51
-assombrîmes		assombrir	3
-assombrir	Rendre sombre.
-assombrira		assombrir	44
-assombrirai		assombrir	16
-assombriraient		assombrir	28
-assombrirais		assombrir	60
-assombrirait		assombrir	26
-assombriras		assombrir	7
-assombrirent		assombrir	48
-assombrirez		assombrir	5
-assombririez		assombrir	4
-assombririons		assombrir	11
-assombrirons		assombrir	10
-assombriront		assombrir	15
-assombris		assombrir	72
-assombrissaient		assombrir	75
-assombrissais		assombrir	29
-assombrissait		assombrir	71
-assombrissant	Qui assombrit.
-assombrisse		assombrir	89
-assombrissement	État de ce qui s’assombrit, au propre comme au figuré.
-assombrissent		assombrir	69
-assombrisses		assombrir	76
-assombrissez		assombrir	30
-assombrissiez		assombrir	13
-assombrissions		assombrir	19
-assombrissons		assombrir	27
-assombrit		assombrir	80
-assombrîtes		assombrir	2
-assomma		assommer	33
-assommai		assommer	22
-assommaient		assommer	32
-assommais		assommer	29
-assommait		assommer	34
-assommâmes		assommer	3
-assommant	Qui assomme, au sens figuré.
-assommante		assommant	23
-assommantes		assommant	1
-assommants		assommant	9
-assommas		assommer	12
-assommasse		assommer	6
-assommassent		assommer	17
-assommasses		assommer	8
-assommassiez		assommer	14
-assommassions		assommer	25
-assommât		assommer	20
-assommâtes		assommer	2
-assomme		assommer	79
-assommée		assommer	37
-assommées		assommer	36
-assomment		assommer	31
-assommer	Étourdir, voire tuer, au moyen d’une arme pesante ou par un coup violemment assené.
-assommera		assommer	21
-assommerai		assommer	16
-assommeraient		assommer	28
-assommerais		assommer	18
-assommerait		assommer	26
-assommeras		assommer	7
-assommèrent		assommer	24
-assommerez		assommer	5
-assommeriez		assommer	4
-assommerions		assommer	11
-assommerons		assommer	10
-assommeront		assommer	15
-assommes		assommer	66
-assommeur	Celui qui assomme.
-assommeurs		assommeur	0
-assommeuse	Celle qui assomme.
-assommeuses		assommeuse	0
-assommez		assommer	30
-assommiez		assommer	13
-assommions		assommer	19
-assommoir	Arme qui sert à assommer : bâton garni, à l’une de ses extrémités, d’une balle de plomb enveloppée de ficelle, massue, etc.
-assommoirs		assommoir	0
-assommons		assommer	27
-assomptif	D’assomption, auxiliaire.
-assomptifs		assomptif	9
-assomption	Action d’assumer, de prendre en charge à son compte.
-assomptionniste	Relatif à la congrégation des Augustins de l’Assomption.
-assomptions		assomption	0
-assomptive		assomptif	23
-assomptives		assomptif	1
-assona		assoner	33
-assonai		assoner	22
-assonaient		assoner	32
-assonais	Relatif à Asson, commune française située dans le département des Pyrénées-Atlantiques.
-assonait		assoner	34
-assonâmes		assoner	3
-assonance	Figure de style qui consiste en la répétition d'un son vocalique.
-assonances		assonance	0
-assonant	Qui produit une assonance.
-assonante		assonant	23
-assonantes		assonant	1
-assonants		assonant	9
-assonas		assoner	12
-assonasse		assoner	6
-assonassent		assoner	17
-assonasses		assoner	8
-assonassiez		assoner	14
-assonassions		assoner	25
-assonât		assoner	20
-assonâtes		assoner	2
-assoné		assoner	46
-assonent		assoner	31
-assoner	Produire une assonance
-assonera		assoner	21
-assonerai		assoner	16
-assoneraient		assoner	28
-assonerais		assoner	18
-assonerait		assoner	26
-assoneras		assoner	7
-assonèrent		assoner	24
-assonerez		assoner	5
-assoneriez		assoner	4
-assonerions		assoner	11
-assonerons		assoner	10
-assoneront		assoner	15
-assones		assoner	66
-assonez		assoner	30
-assoniez		assoner	13
-assonions		assoner	19
-assonons		assoner	27
-assorti	Qualifie des choses ou des personnes semblables sur certains aspects importants, qui vont bien ensemble, qui forment un assortiment.
-assortie		assorti	23
-assorties		assorti	1
-assortiment	Convenance de plusieurs choses qui ont rapport entre elles.
-assortiments		assortiment	0
-assortîmes		assortir	3
-assortir	Mettre ensemble deux ou plusieurs choses qui se conviennent.
-assortira		assortir	44
-assortirai		assortir	50
-assortiraient		assortir	28
-assortirais		assortir	60
-assortirait		assortir	26
-assortiras		assortir	7
-assortirent		assortir	24
-assortirez		assortir	5
-assortiriez		assortir	4
-assortirions		assortir	11
-assortirons		assortir	10
-assortiront		assortir	15
-assortis		assorti	9
-assortissaient		assortir	75
-assortissais		assortir	86
-assortissait		assortir	71
-assortissant	Qui convient à.., qui assortit bien.
-assortisse		assortir	89
-assortissent		assortir	69
-assortisses		assortir	76
-assortissez		assortir	30
-assortissiez		assortir	13
-assortissions		assortir	19
-assortissons		assortir	27
-assortit		assortir	80
-assortîtes		assortir	2
-assos		asso	0
-assoupi	Qui est à moitié endormi.
-assoupie	Femme dans un demi-sommeil.
-assoupies		assoupi	1
-assoupîmes		assoupir	3
-assoupir	Endormir à demi.
-assoupira		assoupir	44
-assoupirai		assoupir	16
-assoupiraient		assoupir	28
-assoupirais		assoupir	60
-assoupirait		assoupir	26
-assoupiras		assoupir	7
-assoupirent		assoupir	24
-assoupirez		assoupir	5
-assoupiriez		assoupir	4
-assoupirions		assoupir	11
-assoupirons		assoupir	10
-assoupiront		assoupir	15
-assoupis		assoupi	9
-assoupissaient		assoupir	75
-assoupissais		assoupir	86
-assoupissait		assoupir	71
-assoupissant	Qui assoupit.
-assoupissante		assoupissant	23
-assoupissantes		assoupissant	1
-assoupissants		assoupissant	0
-assoupisse		assoupir	85
-assoupissement	État d’une personne assoupie.
-assoupissements		assoupissement	0
-assoupissent		assoupir	69
-assoupisses		assoupir	76
-assoupissez		assoupir	30
-assoupissiez		assoupir	13
-assoupissions		assoupir	19
-assoupissons		assoupir	27
-assoupit		assoupir	80
-assoupîtes		assoupir	2
-assoupli	Qui est rendu plus souple.
-assouplie		assouplir	45
-assouplies		assouplir	51
-assouplîmes		assouplir	3
-assouplir	Rendre souple.
-assouplira		assouplir	44
-assouplirai		assouplir	16
-assoupliraient		assouplir	28
-assouplirais		assouplir	18
-assouplirait		assouplir	26
-assoupliras		assouplir	7
-assouplirent		assouplir	24
-assouplirez		assouplir	5
-assoupliriez		assouplir	4
-assouplirions		assouplir	11
-assouplirons		assouplir	10
-assoupliront		assouplir	15
-assouplis		assouplir	72
-assouplissaient		assouplir	75
-assouplissais		assouplir	29
-assouplissait		assouplir	71
-assouplissant	Qui assouplit.
-assouplissante		assouplissant	23
-assouplissantes		assouplissant	1
-assouplissants		assouplissant	9
-assouplisse		assouplir	89
-assouplissement	Action d’assouplir, de s’assouplir.
-assouplissent		assouplir	69
-assouplisses		assouplir	76
-assouplisseur	Produit qui adoucit le linge lors du lavage.
-assouplisseurs		assouplisseur	0
-assouplissez		assouplir	30
-assouplissiez		assouplir	13
-assouplissions		assouplir	19
-assouplissons		assouplir	27
-assouplit		assouplir	80
-assouplîtes		assouplir	2
-assourdi	Qualifie une personne devenue sourde de façon transitoire.
-assourdie		assourdi	23
-assourdies		assourdi	1
-assourdîmes		assourdir	3
-assourdir	Rendre sourd momentanément.
-assourdira		assourdir	21
-assourdirai		assourdir	16
-assourdiraient		assourdir	63
-assourdirais		assourdir	18
-assourdirait		assourdir	26
-assourdiras		assourdir	57
-assourdirent		assourdir	48
-assourdirez		assourdir	5
-assourdiriez		assourdir	4
-assourdirions		assourdir	11
-assourdirons		assourdir	10
-assourdiront		assourdir	15
-assourdis		assourdi	9
-assourdissaient		assourdir	75
-assourdissais		assourdir	29
-assourdissait		assourdir	127
-assourdissant	Qui assourdit.
-assourdissante		assourdissant	23
-assourdissantes		assourdissant	1
-assourdissants		assourdissant	9
-assourdisse		assourdir	89
-assourdissement	Action d’assourdir.
-assourdissent		assourdir	69
-assourdisses		assourdir	76
-assourdissez		assourdir	30
-assourdissiez		assourdir	13
-assourdissions		assourdir	19
-assourdissons		assourdir	27
-assourdit		assourdir	80
-assourdîtes		assourdir	2
-assouvi		assouvir	56
-assouvie		assouvir	45
-assouvies		assouvir	51
-assouvîmes		assouvir	3
-assouvir	Rassasier pleinement, délivrer d’une faim vorace, contenter.
-assouvira		assouvir	44
-assouvirai		assouvir	50
-assouviraient		assouvir	28
-assouvirais		assouvir	18
-assouvirait		assouvir	49
-assouviras		assouvir	57
-assouvirent		assouvir	48
-assouvirez		assouvir	5
-assouviriez		assouvir	4
-assouvirions		assouvir	11
-assouvirons		assouvir	10
-assouviront		assouvir	15
-assouvis		assouvir	72
-assouvissaient		assouvir	75
-assouvissais		assouvir	29
-assouvissait		assouvir	71
-assouvissant		assouvir	43
-assouvisse		assouvir	85
-assouvissement	Action d’assouvir ou résultat de cette action.
-assouvissements		assouvissement	0
-assouvissent		assouvir	69
-assouvisses		assouvir	76
-assouvissez		assouvir	30
-assouvissiez		assouvir	13
-assouvissions		assouvir	19
-assouvissons		assouvir	27
-assouvit		assouvir	80
-assouvîtes		assouvir	2
-assoyaient		assoir	204
-assoyais		assoir	205
-assoyait		assoir	206
-assoyant		assoir	245
-assoyez		assoir	210
-assoyiez		assoir	211
-assoyions		assoir	212
-assoyons		assoir	213
-assuétude	Habitude, dépendance.
-assuétudes		assuétude	0
-assujetti	Asservi.
-assujettie	Femme affiliée à un organisme.
-assujetties		assujetti	1
-assujettîmes		assujettir	3
-assujettir	Rendre sujet, soumettre à sa domination.
-assujettira		assujettir	21
-assujettirai		assujettir	16
-assujettiraient		assujettir	63
-assujettirais		assujettir	18
-assujettirait		assujettir	26
-assujettiras		assujettir	7
-assujettirent		assujettir	24
-assujettirez		assujettir	5
-assujettiriez		assujettir	4
-assujettirions		assujettir	11
-assujettirons		assujettir	10
-assujettiront		assujettir	15
-assujettis		assujetti	9
-assujettissais		assujettir	29
-assujettissait		assujettir	71
-assujettissant	Qui astreint, qui tient dans une grande sujétion, qui exige beaucoup d’assiduité.
-assujettissante		assujettissant	23
-assujettissants		assujettissant	0
-assujettisse		assujettir	85
-assujettissent		assujettir	69
-assujettisses		assujettir	76
-assujettissez		assujettir	30
-assujettissiez		assujettir	13
-assujettissions		assujettir	19
-assujettissons		assujettir	27
-assujettit		assujettir	80
-assujettîtes		assujettir	2
-assuma		assumer	33
-assumai		assumer	22
-assumaient		assumer	32
-assumais		assumer	29
-assumait		assumer	34
-assumâmes		assumer	3
-assumant		assumer	35
-assumas		assumer	12
-assumasse		assumer	6
-assumassent		assumer	17
-assumasses		assumer	8
-assumassiez		assumer	14
-assumassions		assumer	25
-assumât		assumer	20
-assumâtes		assumer	2
-assumé	Qui agit de façon responsable, en connaissance de cause.
-assumée		assumer	37
-assumées		assumer	36
-assument		assumer	31
-assumer	Prendre pour soi un acte ou une réalité qui vient de soi et qui est difficile à accepter.
-assumera		assumer	21
-assumerai		assumer	16
-assumeraient		assumer	28
-assumerais		assumer	18
-assumerait		assumer	26
-assumeras		assumer	7
-assumèrent		assumer	24
-assumerez		assumer	5
-assumeriez		assumer	4
-assumerions		assumer	11
-assumerons		assumer	10
-assumeront		assumer	15
-assumés		assumer	38
-assumez		assumer	30
-assumiez		assumer	13
-assumions		assumer	19
-assumons		assumer	27
-assura		assurer	33
-assurable	Qui peut être garanti ou couvert par un contrat d’assurance.
-assurables		assurable	0
-assurage	Action d'assurer.
-assurages		assurage	0
-assurai		assurer	22
-assuraient		assurer	32
-assurais		assurer	29
-assurait		assurer	34
-assurâmes		assurer	3
-assurance	Certitude.
-assurances		assurance	0
-assuranciel	Qualifie un système qui répond aux risques de la vie sous condition de cotisations.
-assurancielle		assuranciel	23
-assurancielles	Féminin pluriel de assurancielle.
-assuranciels		assuranciel	9
-assurant		assurer	35
-assurantiel	Relatif à l’assurance d’un risque.
-assurantielle		assurantiel	23
-assurantielles		assurantiel	1
-assurantiels		assurantiel	9
-assuras		assurer	83
-assurasse		assurer	6
-assurassent		assurer	17
-assurasses		assurer	8
-assurassiez		assurer	14
-assurassions		assurer	25
-assurât		assurer	20
-assurâtes		assurer	2
-assuré	Qui est sûr, qui met en sûreté.
-assurée	Femme qui a contracté une assurance.
-assurées		assuré	1
-assurément	De manière ferme, assurée.
-assurent		assurer	31
-assurer	Rendre stable.
-assurera		assurer	21
-assurerai		assurer	16
-assureraient		assurer	28
-assurerais		assurer	18
-assurerait		assurer	26
-assureras		assurer	7
-assurèrent		assurer	24
-assurerez		assurer	5
-assureriez		assurer	4
-assurerions		assurer	11
-assurerons		assurer	10
-assureront		assurer	15
-assures		assurer	66
-assureur	Personne qui assure un dommage, un risque.
-assureurs		assureur	0
-assureuse	Femme qui travaille dans le domaine des assurances.
-assureuses		assureuse	0
-assurez		assurer	30
-assuriez		assurer	13
-assurions		assurer	19
-assurons		assurer	27
-assurtech	Ensemble des entreprises technologiques dans l'assurance.
-assyrien	Relatif à l’Assyrie, le plus puissant empire mésopotamien de l'Antiquité.
-assyrienne		assyrien	23
-assyriennes		assyrien	1
-assyriens		assyrien	9
-assyriologie	Connaissance de la langue et des antiquités de l’Assyrie et de la Babylonie.
-assyriologue	Personne qui étudie les civilisations de la Mésopotamie et ses langues : le sumérien et l’akkadien (assyro-babylonien).
-assyriologues		assyriologue	0
-astable	Qualifie un système à deux états instables, c’est-à-dire qui commute en permanence entre ces deux états sans aucune intervention extérieure.
-astables		astable	0
-astacicole	Relatif à l’astaciculture, à l’élevage d’écrevisse.
-astacicoles		astacicole	0
-astaciculteur	Personne pratiquant l’astaciculture, élevage des écrevisses.
-astaciculteurs		astaciculteur	0
-astacicultrice	Femme pratiquant l’astaciculture, élevage des écrevisses.
-astacicultrices		astacicultrice	0
-astaciculture	Élevage des écrevisses à but commercial ou semi-commercial.
-astacicultures		astaciculture	0
-astanais	Relatif à Astana, capitale du Kazakhstan, ou à ses habitants.
-astanaise		astanais	23
-astanaises		astanais	1
-astarté	Dans la Haute Antiquité, divinité féminine.
-astartés		astarté	148
-astasie	Difficulté ou impossibilité à se tenir dans la station debout sans pour autant être atteint de troubles musculaires.
-astasies		astasie	0
-astate	Élément chimique de numéro atomique 85 et de symbole At qui fait partie de la série chimique des halogènes.
-astates		astate	0
-astatique	Qui ne prend pas de direction déterminée, instable.
-astatiques		astatique	0
-aste	Variante de haste.
-aster	Genre de plantes de la famille des Astéracées (ou Composées), qui ressemblent à des étoiles.
-astéracée	Plante dicotylédone de la famille des Astéracées dont le type est l’aster.
-astéracées	Variante de Astéracées.
-astéréognosie	Incapacité à identifier un objet par la seule manipulation tactile, sans l’aide de la vue, alors que les fonctions sensitives et motrices élémentaires sont pré…
-astéréognosies		astéréognosie	0
-astéride	Étoile de mer, classe d’animaux qui renferme les astéries.
-astérides		astéride	0
-astérie	Échinoderme de la classe des astérides, communément appelé étoile de mer.
-astéries		astérie	0
-astérisme	Constellation, figure dessinée par plusieurs étoiles.
-astérismes		astérisme	0
-astérisque	Nom du signe typographique en forme d’étoile ‹ * ›.
-astérisques		astérisque	0
-asterixis	Variante orthographique de astérixis.
-astéroïde	Objet céleste dont la taille varie de quelques mètres à plusieurs centaines de kilomètres de diamètre, qui tourne autour du Soleil ou fait partie d’un autre sy…
-astéroïdes		astéroïde	0
-asters		aster	0
-astes		aste	0
-asthénie	Fatigue physique du patient ou de la patiente.
-asthénies		asthénie	0
-asthénique	Qui tient de l’asthénie.
-asthéniques		asthénique	0
-asthénopie	Fatigue de la vue à la suite d'un travail.
-asthénopies		asthénopie	0
-asthénosphère	Partie ductile du manteau terrestre, située entre la lithosphère et la mésosphère.
-asthénosphères		asthénosphère	0
-asthmatique	Qui est atteint d’asthme.
-asthmatiques		asthmatique	123
-asthme	Inflammation chronique et évolutive des bronches, entraînant une bronchoconstriction et une gêne respiratoire à l'expiration.
-asthmes		asthme	0
-asti	Variante de astic.
-astic	Gros os de cheval ou de mulet dont les cordonniers et les savetiers se servent pour lisser certaines parties du soulier, et dont la cavité leur sert à mettre l…
-asticot	Petit ver blanc, servant d’appât pour la pêche et fixé à l’hameçon.
-asticota		asticoter	33
-asticotai		asticoter	22
-asticotaient		asticoter	32
-asticotais		asticoter	29
-asticotait		asticoter	34
-asticotâmes		asticoter	3
-asticotant		asticoter	35
-asticotas		asticoter	12
-asticotasse		asticoter	6
-asticotassent		asticoter	17
-asticotasses		asticoter	8
-asticotassiez		asticoter	14
-asticotassions		asticoter	25
-asticotât		asticoter	20
-asticotâtes		asticoter	2
-asticoté	Qualifie un homme ou un animal qui est agacé ou irrité par quelqu’un.
-asticotée	Salve de coups.
-asticotées		asticoté	1
-asticotent		asticoter	31
-asticoter	Contrarier, tracasser quelqu’un sur de petites choses, taquiner, agacer.
-asticotera		asticoter	21
-asticoterai		asticoter	16
-asticoteraient		asticoter	28
-asticoterais		asticoter	18
-asticoterait		asticoter	26
-asticoteras		asticoter	7
-asticotèrent		asticoter	24
-asticoterez		asticoter	5
-asticoteriez		asticoter	4
-asticoterions		asticoter	11
-asticoterons		asticoter	10
-asticoteront		asticoter	15
-asticotés		asticoté	9
-asticotez		asticoter	30
-asticotiez		asticoter	13
-asticotions		asticoter	19
-asticotons		asticoter	27
-asticots		asticot	0
-astics		astic	0
-astigmate	Qui est atteint d’astigmatisme, d'une inégalité de courbure interne à l’œil.
-astigmates		astigmate	0
-astigmatique	Astigmate.
-astigmatiques		astigmatique	0
-astigmatisme	Inégalité de courbure des milieux réfringents de l’œil.
-astigmatismes		astigmatisme	0
-astilbe	Genre botanique de saxifragacées à fleurs en épis terminaux très voyants et à feuillage caduc, comprenant une vingtaine d’espèces, dont certaines sont cultivée…
-astilbes		astilbe	0
-astiqua		astiquer	33
-astiquage	Action d’astiquer.
-astiquages		astiquage	0
-astiquai		astiquer	22
-astiquaient		astiquer	32
-astiquais		astiquer	29
-astiquait		astiquer	34
-astiquâmes		astiquer	3
-astiquant		astiquer	35
-astiquas		astiquer	12
-astiquasse		astiquer	6
-astiquassent		astiquer	17
-astiquasses		astiquer	8
-astiquassiez		astiquer	14
-astiquassions		astiquer	25
-astiquât		astiquer	20
-astiquâtes		astiquer	2
-astique		astiquer	79
-astiquée		astiquer	37
-astiquées		astiquer	36
-astiquent		astiquer	31
-astiquer	Polir le cuir des semelles avec un astic.
-astiquera		astiquer	21
-astiquerai		astiquer	16
-astiqueraient		astiquer	28
-astiquerais		astiquer	18
-astiquerait		astiquer	26
-astiqueras		astiquer	7
-astiquèrent		astiquer	24
-astiquerez		astiquer	5
-astiqueriez		astiquer	4
-astiquerions		astiquer	11
-astiquerons		astiquer	10
-astiqueront		astiquer	15
-astiqués		astiquer	38
-astiquez		astiquer	30
-astiquiez		astiquer	13
-astiquions		astiquer	19
-astiquons		astiquer	27
-astis		asti	0
-astragale	Moulure composée d’un boudin, d’un listel et d’un congé qui embrasse l’extrémité supérieure d’une colonne.
-astragales		astragale	0
-astrakan	Fourrure d’agneau caracul à laine frisée, mort-né, ou abattu très jeune.
-astrakans		astrakan	0
-astral	Qui a rapport aux astres.
-astrale		astral	23
-astrales		astral	1
-astrance	Genre de plantes de la famille des apiacées, dont une espèce est commune dans les Alpes et les Pyrénées.
-astrances		astrance	0
-astraux		astral	9
-astré	Éclairé par les astres.
-astreignaient		astreindre	116
-astreignais		astreindre	95
-astreignait		astreindre	91
-astreignant	Qui astreint, qui contraint grandement.
-astreignante		astreignant	23
-astreignantes		astreignant	1
-astreignants		astreignant	9
-astreigne		astreindre	85
-astreignent		astreindre	117
-astreignes		astreindre	76
-astreignez		astreindre	30
-astreigniez		astreindre	110
-astreignîmes		astreindre	3
-astreignions		astreindre	103
-astreignirent		astreindre	24
-astreignis		astreindre	55
-astreignisse		astreindre	6
-astreignissent		astreindre	17
-astreignisses		astreindre	8
-astreignissiez		astreindre	14
-astreignissions		astreindre	25
-astreignit		astreindre	39
-astreignîtes		astreindre	2
-astreignons		astreindre	27
-astreindra		astreindre	21
-astreindrai		astreindre	16
-astreindraient		astreindre	108
-astreindrais		astreindre	106
-astreindrait		astreindre	112
-astreindras		astreindre	7
-astreindre	Contraindre à quelque chose.
-astreindrez		astreindre	5
-astreindriez		astreindre	99
-astreindrions		astreindre	101
-astreindrons		astreindre	10
-astreindront		astreindre	15
-astreins		astreindre	72
-astreint	Limité par des règles, lois, conventions.
-astreinte	Sanction éventuelle donnée par une Cour de justice ou un tribunal à un arrêt ou à un jugement.
-astreintes		astreint	1
-astreints		astreint	9
-astres		astre	0
-astrild	Oiseau appartenant aux genres Estrilda ou Coccopygia, petits passereaux originaires d’Afrique, souvent élevés en captivité.
-astrilds		astrild	0
-astringence	Qualité de ce qui est astringent.
-astringent	Qui resserre les tissus vivants.
-astringente		astringent	23
-astringentes		astringent	1
-astringents		astringent	9
-astrobiologie	Exobiologie.
-astroblème	Ensemble des traces laissées par l’impact d’une météorite ou d’un astéroïde.
-astroblèmes		astroblème	0
-astrocytaire	Relatif aux cellules nerveuses en forme d'étoile ou d'araignée.
-astrocytaires		astrocytaire	0
-astrocyte	Cellule gliale de forme étoilée présente dans le système nerveux central.
-astrocytes		astrocyte	0
-astrocytome	Tumeur des astrocytes.
-astrocytomes		astrocytome	0
-astroïde	Qui est disposé en manière d’étoile.
-astroïdes		astroïde	0
-astrolabe	Instrument de navigation servant à déterminer la situation géographique du lieu où l'on se trouve, à partir de l'observation d'un certain nombre d'étoiles et d…
-astrolabes		astrolabe	0
-astrolâtrie	Culte des astres.
-astrolâtries		astrolâtrie	0
-astrologie	Description de l’influence, ou de la correspondance, supposée des astres sur le caractère ou sur la destinée des hommes.
-astrologies		astrologie	0
-astrologique	Relatif à l’astrologie.
-astrologiques		astrologique	0
-astrologue	Celui ou celle qui étudie l’astrologie.
-astrologues		astrologue	0
-astromancie	Divination par les astres.
-astromancies		astromancie	0
-astrométrie	Branche de l’astronomie relative aux calculs des positions et des déplacements des astres.
-astrométrique	Relatif à l'astrométrie.
-astrométriques		astrométrique	0
-astrométriste	Spécialiste d’astrométrie.
-astrométristes		astrométriste	0
-astromobile	Véhicule conçu pour se déplacer à la surface d’astres autres que la Terre.
-astromobiles		astromobile	0
-astronaute	Personne qui effectue ou a effectué un vol dans l’espace extra-atmosphérique.
-astronautes		astronaute	0
-astronauticien	Scientifique qui étudie l’astronautique, spécialiste de cette spécialité.
-astronauticiens		astronauticien	0
-astronautique	Science de la navigation spatiale.
-astronautiques		astronautique	0
-astronef	Appareil conçu pour évoluer dans l’espace.
-astronefs		astronef	0
-astronome	Spécialiste de l'astronomie.
-astronomes		astronome	0
-astronomie	Science ayant pour objet l'observation et l’étude des corps célestes dans leur position, leur mouvement et leur constitution.
-astronomies		astronomie	0
-astronomique	Qui a rapport à l’astronomie.
-astronomiques		astronomique	129
-astroparticule	Particule libre d’origine naturelle présente dans l’espace.
-astroparticules		astroparticule	0
-astrophysicien	Scientifique qui étudie l’astrophysique, l’étude de l’espace et des propriétés des objets de l’univers.
-astrophysiciens		astrophysicien	0
-astrophysique	Relatif à l’astronomie sous un angle physicochimique.
-astrophysiques		astrophysique	0
-astuce	Finesse, ruse qui a pour objet de nuire.
-astuces		astuce	0
-astucieuse		astucieux	23
-astucieusement	Avec astuce, finesse, ruse.
-astucieuses		astucieux	1
-astucieux	Qui a de l’astuce.
-asturien	Qui se rapporte aux Asturies.
-asturienne		asturien	23
-asturiennes		asturien	1
-asturiens		asturien	9
-asymbolie	Trouble acquis des fonctions symboliques, caractérisé par une incapacité à comprendre, reconnaître, utiliser ou élaborer des signes, des symboles ou des gestes…
-asymbolies		asymbolie	0
-asymétrie	Défaut de symétrie en parlant d'objets concrets ou de choses considérées sous un aspect géométrique.
-asymétries		asymétrie	0
-asymétrique	Qui manque de symétrie.
-asymétriques		asymétrique	187
-asymptomatique	Qui ne se manifeste par aucun symptôme.
-asymptomatiques		asymptomatique	0
-asymptote	Se dit d’une droite, et par extension d’une courbe simple, vers laquelle d’autres courbes s’approchent, à l’infini, à une distance plus petite que toute quanti…
-asymptotes		asymptote	0
-asymptotique	Qui a rapport à l’asymptote.
-asymptotiques		asymptotique	0
-asynartète	En métrique ancienne, qualifie un vers qui peut être coupé en deux vers indépendants.
-asynartètes		asynartète	0
-asynchrone	Dont la vitesse n’est pas en rapport avec la fréquence du courant.
-asynchrones		asynchrone	0
-asynchronisme	État de ce qui est asynchrone.
-asynchronismes		asynchronisme	0
-asyndète	Suppression des particules de coordination ou des conjonctions, et par extension de toute liaison attendue ou logique, dans l’ordre grammatical ou sémantique, …
-asyndètes		asyndète	0
-asynergie	Trouble des mouvements et de la coordination.
-asynergies		asynergie	0
-asystole	Arrêt de l'activité cardiaque complète : sans contraction et sans activité électrique.
-asystoles		asystole	0
-asystolie	Trouble du rythme cardiaque, symptôme d’une insuffisance cardiaque.
-asystolies		asystolie	0
+0as	Carte à jouer d’une valeur parfois minimale, le plus souvent maximale.
+0Asa	Prénom masculin.
+0asado	Mode argentin de cuisson lente de la viande au barbecue.
+5s		5	0
+3na	Exercice de hatha yoga consistant en une position immobile du corps, un mouvement, ou en une combinaison des deux.
+5s		5	0
+3ret	Plante herbacée de la famille des aristolochiacées.
+6s		6	0
+2beste	Substance minérale composée de filaments moins flexibles que ceux de l’amiante, et qui, comme ce minerai naturel, s’altère très difficilement au feu.
+6ose	Fibrose pulmonaire interstitielle, diffuse et progressive, due à l'inhalation prolongée de poussière d'amiante.
+9s		9	0
+2caride	Synonyme de ascaris.
+8s		8	0
+7iose	Parasitose cosmopolite résultant de l’infestation de l’homme par Ascaris lumbricoides, un nématode de grande taille.
+bs		b	0
+6s	Ver rond faisant partie d’une famille dans laquelle l’adulte parasite l’intestin grêle des mammifères.
+3endance	Série des ascendants paternels et maternels de tout individu.
+as		a	0
+8t	Qui va en montant.
+9e	partie d’une lettre de bas de casse supérieure à la hauteur de x
+as		9	1
+9s		9	9
+6eur	Poignée d’ascension.
+9s		9	0
+5seur	Appareil mécanique qui sert à monter ou descendre verticalement sans escalier.
+9s		9	0
+6ion	Action de monter, de s’élever.
+9na		aer	x
+bi		aer	m
+cent		aer	w
+cs	Qui concerne L’Ascension-de-Patapédia, municipalité québécoise ^().
+ct		aer	y
+aâmes		aer	3
+aant		aer	z
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+ae		br	27
+aée		aer	11
+cs		aer	10
+ael	Qui a rapport à l’ascension.
+cle		c	n
+es		c	1
+cs	Masculin pluriel de ascensionnel.
+bnt		br	v
+br	Faire l’ascension d’une montagne.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aez		br	u
+aiez		aer	d
+bons		aer	j
+bste	Celui, celle qui effectue des ascensions.
+es		e	0
+aons		aer	r
+9s		9	0
+6oriste	Personne spécialiste de l’installation, de la maintenance ou encore de la modernisation d’ascenseurs ou de monte-charges.
+cs		c	0
+3èse	Discipline de vie, ensemble d’exercices physiques et moraux consistant essentiellement à refréner les besoins matériels, pratiqués en vue d’un perfectionnement…
+6s		6	0
+4te	Celui, celle qui se livre, par piété, à des exercices spirituels et physiques, à des mortifications.
+6s		6	0
+3étique	Qui a rapport à l’ascétisme.
+9ment	Selon la doctrine des ascètes ou à la manière d'un ascète.
+9s		9	0
+6sme	Genre de vie des ascètes.
+9s		9	0
+3idie	Organe creux de certaines plantes carnivores, destiné à piéger leurs proies.
+7s		7	0
+4te	Excès d’épanchement de liquide intra-abdominal qui se situe plus précisément dans l’espace entre les feuillets péritonéaux.
+6s		6	0
+5ique	Qui est affecté d’ascite.
+9s		9	0
+3lépiade	Qui est composé d’un spondée, de deux choriambes et d’un ïambe.
+as		a	0
+8s	Genre de plantes à graines laineuses.
+3omycète	Champignon caractérisé par ses spores formées à l'intérieur d'asques, comme l'helvelle.
+as	Classe de champignons supérieurs (ascomycota) dont les spores sont contenues dans des asques, tel la morille et la truffe.	0truffe
+4rbate	Un sel de l'acide ascorbique, antioxydant, souvent additif alimentaire.
+9s		9	0
+6ique	Qui fait disparaitre le scorbut.
+as		a	0
+4spore	Spore haploïde prenant naissance dans des asques.
+9s		9	0
+0ASDIC	Appareil de détection sous marine par ultra-sons.
+0ase	Plante herbacée vivace de la famille des Apiaceae, dont l’espèce la plus connue est l’ase fétide (Ferula assa-foetida).
+3lle	Crustacé isopode vivant dans les eaux douces à faible courant.
+6s		6	0
+2émantique	Se dit d’une phrase qui n’a aucun sens, bien qu’elle soit correcte au point de vue grammatical.
+bs		b	0
+2epsie	Méthode préventive contre les infections et les pollutions du milieu par des micro-organismes pathogènes.
+7s		7	0
+4tique	Relatif à l’asepsie.
+9s		9	0
+6sa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action d’aseptiser.
+cs		c	0
+7é	Qui a été rendu aseptique.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Soigner par l’asepsie.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+3s		3	0
+3xualité	Orientation sexuelle décrivant le fait de peu ou de ne pas ressentir d’attirance sexuelle pour autrui.
+as		a	0
+5é	Se dit de toute chose ou personne privée de sexe.
+6e		6	n
+7s		6	1
+5el	Qualifie une personne qui ne ressent pas ou peu d’attirance sexuelle.
+7le	Celle qui ne ressent pas ou peu d’attirance sexuelle.
+9s		7	3d
+7s		7	9
+5és		6	9
+2hanti	Relatif aux Ashantis, groupe ethnique du Ghana.
+7e		7	n
+8s		7	1
+7s		7	9
+3kénaze	Relatif aux traditions, aux coutumes, à la langue des Juifs du nord de l’Europe.
+9s		9	0
+4enazi	Variante de ashkénaze.
+9s		9	0
+3ram	Ermitage où les gourous et autres mahatmas vivent loin de l’agitation du monde.
+6s		6	0
+2iago	Fromage à base de lait de vache et à pâte cuite, souvent utilisé comme fromage râpé, produit principalement au nord-est de l’Italie.
+6s		6	0
+4lie	Absence de sécrétion de salive par les glandes salivaires.
+7s		7	0
+4rque	Magistrat associé au sacerdoce et présidant les jeux sacrés que célébraient en commun les villes grecques d'Asie.
+8s		8	0
+4tique	Relatif à l’Asie, ses peuples et ses cultures.
+9s		9	0
+0ASIC	Circuit logique, unique ou sur mesure, plus ou moins complexe permettant sur un minimum d'espace de traiter des informations et de délivrer un signal de comman…
+0asiento	Traités signés successivement entre l’Espagne et différents pays pour la traite des esclaves noirs.
+7s		7	0
+3laire	Relatif à l’asile, à l’hôpital psychiatrique.
+8s		8	0
+4e	Privilège d’inviolabilité accordé à certaines personnes et à certains lieux chez les anciens.
+5s		5	0
+3n	Relatif aux ânes.
+4é	Animal du type de l’âne.
+4erie	Ânerie (étable pour les ânes).
+8s		8	0
+5s		4	1
+4ien	Relatif à l’âne.
+7ne		7	n
+9s		7	1
+7s		7	9
+4s		4	9
+2kari	En Afrique de l'Est, soldat ou policier indigène des empires coloniaux italien, allemand ou britannique.
+6s		6	0
+2nierois	Relatif à Asnières-la-Giraud, commune de la Charente-Maritime.
+9e		9	n
+as		9	1
+2ociabilité	Qualité de ce qui est asocial, incapacité à vivre en société.
+cs		c	0
+6l	Qui n'est pas sociable.
+7e	Femme qui éprouve des difficultés à s’adapter à la vie sociale.
+8s		7	1
+7ité	Caractère d’une personne asociale, incapacité à vivre en société.
+as		a	0
+6ux		6l	9
+3matognosie	Trouble de la conscience corporelle ou du schéma corporel, caractérisé par la méconnaissance, l’absence de reconnaissance ou le sentiment de disparition d’une …
+ds		d	0
+2paragacée	Membre des Asparagaceae.
+bs		b	0
+7ine	Acide aminé polaire et non-chargé dont le groupement latéral est un carboxamine (-CH₂-CO-NH₂).
+as		a	0
+7us	Plante ornementale du genre Asparagus, dont Asparagus setaceus (Kunth) Jessop et Asparagus densiflorus (Kunth) Jessop.
+5tam	Variante orthographique de aspartame.
+8e	Édulcorant artificiel dont les effets secondaires sont discutés.
+9s		9	0
+8s		8	0
+6ique	Relatif à un acide aminé dicarboxylique, constituant de toutes les protéines, l’un des vingt acides aminés du code génétique.
+as		a	0
+3e	Dévidoir sur lequel on enroule le fil de soie provenant des cocons pour en faire un écheveau.
+4ct	Vue d’une personne ou d’une chose.
+6s		6	0
+6uel	Relatif à l’aspect.
+9le		9	n
+bs		9	1
+9s		9	9
+4rge	Plante potagère de la famille des liliacées (classification classique) ou asparagacées (classification phylogénétique) dont on mange les jeunes pousses (Aspara…
+7a		7r	x
+8i		7r	m
+9ent		7r	w
+9s		7r	t
+9t		7r	y
+7âmes		7r	3
+7ant	Qui permet d’asperger.
+8s		7r	c
+9se		7r	6
+bnt		7r	h
+bs		7r	8
+aiez		7r	e
+bons		7r	p
+7ât		7r	k
+9es		7r	2
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7ons		7r	r
+7r	Jeter çà et là des gouttes d’eau ou d’un autre liquide sur quelqu’un ou sur quelque chose.
+8a		8	l
+9i		8	g
+ae	Plantation d’asperges.
+bnt		8	s
+bs		b	0
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s	Variante de’' aspergès.
+7z		7r	u
+6iez		6er	d
+7lle	Ustensile utilisé pour répandre de l’eau lustrale ou bénite.
+as		a	0
+9ose	Maladie infectieuse fongique causée par un aspergille ou Aspergillus.
+cs		c	0
+7ons		6er	j
+3érité	Qualité de ce qui est raboteux, inégal.
+8s		8	0
+3ermatisme	Synonyme de l’aspermie.
+cs		c	0
+6e	Qui ne produit pas de graines, de semence, de sperme.
+7s		7	0
+6ie	Condition de ne pas pouvoir produire suffisamment de sperme, chez un mâle.
+8s		8	0
+5seur	Élément d’une installation d’arrosage, qui permet de disperser en gouttelettes un jet d’eau d’une façon aussi uniforme que possible.
+9s		9	0
+6ion	Action d’asperger, de projeter des gouttes de liquide sur quelque chose ou sur quelqu’un.
+9s		9	0
+6oir	Goupillon à asperger de l’eau bénite.
+9s		9	0
+3érule	Plante du genre Asperula de la famille des Rubiaceae (Rubiacées) dont le type est l'aspérule des champs (Asperula arvensis).
+8s		8	0
+3es		4	0
+3halta		7er	x
+8ge	Travail par lequel on pave une rue avec l’asphalte.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Bitume compact, noir et luisant, très fusible, que l’on trouve à la surface de quelques lacs, et particulièrement sur la mer Morte ou lac Asphaltite dans l’anc…
+7ée		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Appliquer de l’asphalte sur.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7ier	Navire-citerne conçu pour le transport de produits entre 180 et 250°C, destiné au transport de l’asphalte et du bitume.
+as		a	0
+9z		7er	d
+8ons		7er	j
+8que	Relatif à l'asphalte, qui en contient.
+bs		b	0
+8te	Qui contient de l'asphalte.
+as		a	0
+7ons		7er	r
+4érique	Se dit d'un verre ou d'une lentille dont la forme se rapproche de celle d'une sphère sans l'être tout à fait, et dont la fonction est d'améliorer la précision …
+as	Pluriel de asphériques.
+4odèle	Genre de plantes herbacées vivaces (Asphodelus L.) appartenant à la famille des Asphodelaceae (anciennement rattaché aux Liliaceae puis, dans les premières cla…
+9s		9	0
+4yxia		7er	13
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui produit l’asphyxie.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Arrêt plus ou moins long de la respiration, produit par différentes causes, telles que la submersion, la strangulation, l’absorption de gaz irrespirables, la c…
+7ée	Personne ayant suffoqué par asphyxie.
+9s		8	1
+7ent		8r	v
+8r	Suffoquer par asphyxie.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	0
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7que	Relatif ou propre à l’asphyxie.
+as		a	0
+3i	Jeune officier militaire ou officier appelé.
+4c	Serpent, proche du naja ou du cobra, répandu dans toute l’Afrique et très venimeux, l’aspic de Cléopâtre ou cobra égyptien.
+5s		5	0
+4distra	Couleur verte.
+as		a	0
+6um	Nom obsolète ambigu donné à plusieurs genres de fougères comme l’athyrium (Athyrium), Christella, etc.
+8s		8	0
+4ra		5er	x
+6i		5er	m
+7ent		5er	w
+7l	Trou pratiqué dans un fourneau pour que l’air puisse y pénétrer.
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant	Qui aspire.
+8e	Celle qui aspire à une chose, qui veut y parvenir.
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ateur	Qui sert à aspirer.
+as		a	9
+7if	Relatif à l’aspiration.
+9s		9	9
+8on	Action d’attirer l’air extérieur dans ses poumons.
+as		a	0
+8ve		8f	n
+as		8f	1
+7oire	Qui a rapport à l’aspiration.
+bs		b	0
+7rice		7eur	n
+bs		7eur	1
+6ux		6il	0
+5é	prononcé avec une aspiration audible
+6e	Consonne occlusive, consistant en un retard des cordes vocales à se refermer pour émettre la voyelle.
+7s		7	0
+5ent		6r	v
+6r	Attirer l’air extérieur dans ses poumons, par opposition à expirer.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6z		6r	u
+5iez		5er	d
+6ne	Nom courant de l’acide acétylsalicylique, anti-inflammatoire (AINS) agissant par inhibition de la cyclooxygénase-1, antipyrétique, anti douleur, anti antiagrég…
+8s		8	0
+6ons		5er	j
+5ons		5er	r
+4s	Bouclier utilisé durant l'Antiquité par l'infanterie et la cavalerie Grecs.
+3le	Dévidoir sur lequel on place les écheveaux pour les dévider.
+4éniacées	Famille de fougères vraies saxicoles.
+7um	Plante du genre Asplenium, regroupant des centaines de fougères.
+9s		9	0
+4es		5	0
+3re	Petite monnaie d’argent en usage chez les Turcs.
+5s		5	0
+2que	Cellule reproductrice des champignons ascomycètes (dont font partie les truffes, les morilles et les pézizes) en forme de sac généralement allongé qui contient…
+5s		5	0
+2ram	Variante orthographique de ashram.
+5s		5	0
+2safétida	Variante orthographique de assa fœtida.
+as		a	0
+4gi	Qui est devenu sage, qui a perdu de sa violence.
+6e		6	n
+7s		6	1
+5îmes		5ir	3
+5ir	Rendre sage.
+7a		7	l
+8i		7	1e
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+7ent		7	o
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	9
+7saient		6r	w
+as		6r	t
+at		6r	y
+9nt		6r	z
+8e		6r	2d
+9ment	Action d’assagir ou de s’assagir.
+ds		d	0
+9nt		6r	v
+9s		6r	24
+9z		6r	u
+8iez		6r	d
+9ons		6r	j
+8ons		6r	r
+6t		6r	28
+5îtes		5ir	2
+4i	Se joint comme augmentatif au mot qui indique le mouvement d’un air.
+5llaient		7ir	2l
+9s		7ir	36
+9t		7ir	2j
+8nt	Qui assaille.
+ae	Celle qui assaille.
+bs		a	1
+as		a	9
+7e		7ir	1s
+8nt		7ir	1x
+8ra		7ir	l
+ai		7ir	g
+bent		7ir	30
+bs		7ir	2y
+bt		7ir	34
+as		7ir	7
+9ez		7ir	5
+9iez		7ir	2r
+aons		7ir	2t
+9ons		7ir	a
+bt		7ir	f
+8s		7ir	25
+8z		7ir	u
+7i	Celui qui est victime d'un assaut.
+8e	Celle qui est victime d’un assaut.
+9s		9	3a
+9z		8r	32
+7îmes		7ir	3
+7ions		8r	33
+8r	Survenir subitement et violemment, en parlant d’intempéries ou d’éléments naturels.
+9a		9	18
+ai		9	g
+bent		9	30
+bs		9	2y
+bt		9	34
+as		9	7
+9ent		9	1c
+az		9	5
+9iez		9	2r
+aons		9	2t
+9ons		9	a
+bt		9	f
+8s		8	3a
+9se		8r	6
+bnt		8r	h
+bs		8r	8
+aiez		8r	e
+bons		8r	p
+8t		8r	13
+7îtes		7ir	2
+7ons		7ir	21
+5ni		7r	1k
+7e		7r	19
+8s		7r	10
+6îmes		6ir	3
+6ir	Rendre sain.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+8ent		8	o
+9z		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	20
+8saient		7r	w
+bs		7r	t
+bt		7r	y
+ant		7r	z
+9e		7r	2h
+ament	Action d’assainir.
+es		e	0
+ant		7r	v
+as		7r	24
+aur	Nom générique d’appareil permettant d’assainir un milieu (eau, air, …).
+cs		c	0
+az		7r	u
+9iez		7r	d
+aons		7r	j
+9ons		7r	r
+7t		7r	2z
+6îtes		6ir	2
+5sonna		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é	Dont le goût est modifié par un assaisonnement.
+ae		9er	11
+bs		9er	10
+9ement	Action d’assaisonner.
+es		e	0
+ant		ar	v
+ar	Accommoder un mets avec les ingrédients qu’il faut pour le rendre plus agréable au goût.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+4mais	Relatif à l’Assam, État du nord-est de l’Inde, ou à ses habitants.
+8e		8	n
+9s		8	1
+4rmenta		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Supprimer les sarments d'une vigne après la taille.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+4ssin	Celui ou celle qui assassine.
+8a		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant	Ennuyeux, fatigant.
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+9t	Action d’assassiner, de donner la mort intentionnellement.
+8âtes		8er	2
+8ats		a	37
+8e	Femme qui assassine.
+8ée	Celle qui a été assassinée.
+as		9	1
+8ent		9r	v
+9r	Tuer intentionnellement.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8s		8	9
+4ut	Attaque pour enlever de vive force.
+6s		6	0
+4voir	ou (Utilisé uniquement dans faire assavoir) Savoir.
+3e	Dans l’Aunis, nom d’un outil de tonnelier.
+4au	Marteau de couvreur et de tonnelier avec une tête et un tranchant.
+6x		6	0
+4c	Période pendant laquelle un étang desséché est livré à la culture.
+3écha		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Qui assèche.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+3èche		3écher	27
+3échée		6er	11
+8s		6er	10
+3èchement	Action d’assécher.
+bs		b	0
+7nt		3écher	v
+3écher	Rendre sec.
+3èchera		3écher	l
+9i		3écher	g
+aent		3écher	s
+as		3écher	i
+3écherait		8	q
+3ècheras		3écher	7
+3échèrent		6er	o
+3ècherez		3écher	5
+8iez		3écher	4
+9ons		3écher	b
+8ons		3écher	a
+at		3écher	f
+3échés		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+3ecs		5	0
+4mbla		7er	x
+8ge	Action d’assembler ou résultat de cette action.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Joint, réuni.
+8e	Réunion d’un certain nombre de personnes dans un même lieu.
+9s		9	0
+7ement	Action d’assembler.
+cs		c	0
+8nt		8r	v
+8r	Mettre ensemble.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7eur	Celui qui assemble.
+as		a	0
+9se	Celle qui assemble.
+bs		b	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4na		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+3ène		3éner	27
+3enée		5er	11
+7s		5er	10
+3ènent		3éner	v
+3ener	Frapper en portant un coup violent.
+3ènera		3éner	l
+8i		3ener	g
+9ent		3éner	s
+9s		3éner	i
+9t		3ener	q
+8s		3éner	7
+3enèrent		5er	o
+3ènerez		3éner	5
+7iez		3éner	4
+8ons		3éner	b
+7ons		3éner	a
+9t		3éner	f
+3enés		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5timent	Acquiescement déclaré ou tacite, volontaire ou forcé à un acte, à une opinion.
+bs		b	0
+4oir	Mettre quelqu’un sur un siège ou sur quelque chose qui tient lieu de siège.
+4rmenta		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Promesse solennelle que fait une personne avant d’entreprendre les tâches inhérentes à une certaine charge ou fonction, habituellement au sein d’un gouvernemen…
+es		e	0
+9é	Qui a prêté serment.
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Lier par un serment.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		a	9
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+5tif	Qui a le caractère de l’assertion.
+8s		8	9
+7on	Proposition qu’on avance et qu’on soutient comme vraie.
+9s		9	0
+7ve		7f	n
+9s		7f	1
+8ité	Comportement assertif.
+bs		b	0
+6orique	Qui énonce une vérité de fait, sans la poser comme nécessaire.
+cs		c	0
+5vi	Lumière commandée par ordinateur.
+7e		7	n
+8s		7	1
+6îmes		6ir	3
+6ir	Réduire, un être, un peuple ou une nation à la servitude.
+8a		8	l
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+8ent		8	o
+9z		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	1i
+7s		7	9
+8saient		7r	23
+bs		7r	t
+bt		7r	1z
+ant	Qui asservit.
+ce		c	n
+ds		c	1
+cs		c	9
+9e		7r	2h
+ament	Action d’asservir ou état de ce qui est asservi.
+es		e	0
+ant		7r	1x
+as		7r	24
+aur	Celui qui asservit.
+cs		c	0
+az		7r	u
+9iez		7r	d
+aons		7r	j
+9ons		7r	r
+7t		7r	28
+6îtes		6ir	2
+3és	Ancienne orthographe de assez.
+3esseur	Celui qui détermine l’assiette d’une taxe ou d’un impôt.
+9e	Officière de justice adjointe à un juge principal, pour l’assister dans ses fonctions ou le suppléer en son absence.
+as		a	0
+9s		9	0
+8se	Officière de justice adjointe à un juge principal, pour l’assister dans ses fonctions ou le suppléer en son absence.
+as		a	0
+6oral	Qui concerne l’assesseur et ses fonctions.
+ae		a	n
+bs		a	1
+9t	Office d’assesseur.
+as		a	0
+9ux		9l	9
+4tte	Marteau de couvreur avec une tête et un tranchant.
+7s		7	0
+4yaient		3oir	5o
+7s		3oir	5p
+7t		3oir	5q
+6nt		3oir	6t
+5e		3oir	5r
+6nt		3oir	5s
+6s		3oir	5t
+6z		3oir	5u
+5iez		3oir	5v
+6ons		3oir	5w
+5ons		3oir	5x
+4z	Suffisamment, d'une quantité adéquate, suffisante ou tolérable.
+3ibila		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Modification phonétique d’une consonne dont le résultat est une sifflante.
+cs		c	0
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Réaliser l’assibilation : prononcer une sifflante au lieu d’une occlusive dans certains mots comme dans inertie.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4due	Féminin singulier de assidu.
+7s	Féminin pluriel de assidu.
+6ité	Régularité à se trouver où l’on doit être.
+9s		9	0
+6ment	D’une manière assidue.
+6s	Masculin pluriel de assidu.
+4ed		3oir	5y
+6s	Première personne du singulier de l’indicatif présent de asseoir (ou assoir).	3eoir
+4égé	Qui subit un siège.
+6ea		7r	x
+8i		7r	m
+9ent		7r	w
+9s		7r	t
+9t		7r	y
+7âmes		7r	3
+7ant	Qui assiège.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7r	c
+9se		7r	6
+bnt		7r	h
+bs		7r	8
+aiez		7r	e
+bons		7r	p
+7ât		7r	k
+9es		7r	2
+6ée	Femme assiégée.
+8s		7	1
+4ègent		4éger	v
+4égeons		7r	r
+7r	Action de mener un siège, d’encercler une ville, une citadelle.
+8a		8	l
+4ègerai		4éger	g
+4égeraient		8	s
+4ègerais		4éger	i
+at		4éger	q
+9s		4éger	7
+4égèrent		6er	o
+4ègerez		4éger	5
+8iez		4éger	4
+9ons		4éger	b
+8ons		4éger	a
+at		4éger	f
+4égés		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+5ra		3oir	5z
+7i		3oir	60
+8ent		3oir	66
+8s		3oir	61
+8t		3oir	62
+7s		3oir	63
+6ez		3oir	7n
+6iez		3oir	7o
+7ons		3oir	64
+6ons		3oir	7m
+8t		3oir	65
+4ette	Manière d’être assis, sis ou placé, assise.
+7ée	Contenu d’une assiette.
+9s		9	0
+7es		8	0
+4gna		6er	x
+7ble	Se dit d’un paramètre sur lequel on peut agir.
+as		a	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+7t	Constitution ou assignation d’une rente sur un héritage qui demeure nommément affecté au paiement annuel de cette rente.
+6âtes		6er	2
+6ation	Action d’assigner.
+bs		b	0
+8s		8	0
+6é	Qui est sous le coup d’une assignation.
+7e	Désigne une personne sous le coup d’une assignation.
+8s		8	0
+6ent		7r	v
+7r	Attribuer spécifiquement.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	1u
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+3îmes	Première personne du pluriel du passé simple du verbe asseoir (ou assoir).	3oir
+3imila		7er	x
+8ble	Qui est susceptible d’assimilation.
+bs		b	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui assimile, incorpore.
+aes		a	1
+as		a	0
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ateur	Qui procure l’assimilation.
+cs		c	3h
+9ion	Action d’assimiler.
+cs		c	0
+9rice		9eur	n
+ds		9eur	1
+7é	Qui est de même nature, semblable.
+8e	Femme qui fait partie d’une catégorie du personnel sans en avoir le titre.
+9s		8	1
+7ent		8r	1x
+8r	Rendre semblable.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4rent	Troisième personne du pluriel du passé simple du verbe asseoir (ou assoir).	3oir
+4s	Placé sur son séant.
+5e	Base d’une muraille.
+6s	Loi ; institution juridique.
+5se	Première personne du singulier de l’imparfait du subjonctif du verbe asseoir (ou assoir).	3oir
+7nt	Troisième personne du pluriel de l’imparfait du subjonctif du verbe asseoir (ou assoir).	3oir
+7s	Deuxième personne du singulier de l’imparfait du subjonctif du verbe asseoir (ou assoir).	3oir
+6iez	Deuxième personne du pluriel de l’imparfait du subjonctif du verbe asseoir (ou assoir).	3oir
+7ons	Première personne du pluriel de l’imparfait du subjonctif du verbe asseoir (ou assoir).	3oir
+5ta		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6anat	Fonction d'assistant dans l'enseignement supérieur et dans les industries du spectacle.
+as		a	0
+8ce	Présence.
+as		a	0
+8t	Personne présente en un lieu.
+9e	Celle qui présente en un lieu.
+as		a	0
+9s		9	0
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é	Qui bénéficie une aide.
+7e	Femme qui bénéficie d’une aide.
+8s		7	1
+6ent		7r	15
+7r	Être présent ; être témoin.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4t	Troisième personne du singulier du passé simple du verbe asseoir (ou assoir).	3oir
+3îtes	Deuxième personne du pluriel du passé simple du verbe asseoir (ou assoir).	3oir
+3o	Association.
+4ce	Association (organisation à caractère officiel qui regroupe des personnes ayant un centre d’intérêt commun).
+6s		6	0
+5ia		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6atif	Relatif aux associations, au milieu des associations.
+as		a	9
+9on	Action d’associer.
+bs		b	0
+9ve		9f	n
+bs		9f	1
+aité	Propriété d’une opération op qui, appliquée à trois arguments quelconques a, b et c, vérifie toujours l’égalité suivante : a op (b op c) = (a op b) op c.
+ds		d	0
+6é	Qui entre dans une association.
+7e	Femme associée.
+8s		7	1
+6ent		7r	v
+7r	Prendre quelqu’un pour compagnon, pour collègue dans une dignité, dans un emploi, dans une entreprise, etc.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4ie		5r	5r
+6nt		5r	5s
+6s		5r	5t
+5ffa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Qui a soif. Il s’emploie surtout figurément.
+8e	Féminin singulier de assoiffé.	0soif
+9s		8	1
+7ent		8r	v
+8r	Priver d’eau à boire.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5r	S’appuyer sur son derrière.
+6a		6	5z
+7i		6	60
+8ent		6	66
+8s		6	61
+8t		6	62
+7s		6	63
+6ez		6	7n
+6iez		6	7o
+7ons		6	64
+6ons		6	7m
+8t		6	65
+5s	Première personne du singulier de l’indicatif présent du verbe asseoir (ou assoir).	5r
+5t		5r	5y
+4la		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ement	Action d’assoler des cultures.
+as		a	0
+6nt		6r	v
+6r	Faire succéder des cultures dans un certain ordre en divisant les terres labourables en grandes portions ou soles.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4mbri	Rendu sombre par une faible lumière.
+8e		8r	19
+9s		8r	1f
+7îmes		7ir	3
+7ir	Rendre sombre.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	1o
+bt		9	q
+as		9	7
+9ent		9	1c
+az		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	20
+9saient		8r	23
+cs		8r	t
+ct		8r	1z
+bnt	Qui assombrit.
+ae		8r	2h
+bment	État de ce qui s’assombrit, au propre comme au figuré.
+bnt		8r	1x
+bs		8r	24
+bz		8r	u
+aiez		8r	d
+bons		8r	j
+aons		8r	r
+8t		8r	28
+7îtes		7ir	2
+5ma		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Qui assomme, au sens figuré.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e		7r	27
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Étourdir, voire tuer, au moyen d’une arme pesante ou par un coup violemment assené.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	1u
+7ur	Celui qui assomme.
+9s		9	0
+8se	Celle qui assomme.
+as		a	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6oir	Arme qui sert à assommer : bâton garni, à l’une de ses extrémités, d’une balle de plomb enveloppée de ficelle, massue, etc.
+9s		9	0
+7ns		6er	r
+5ptif	D’assomption, auxiliaire.
+9s		9	9
+8on	Action d’assumer, de prendre en charge à son compte.
+aniste	Relatif à la congrégation des Augustins de l’Assomption.
+as		a	0
+8ve		8f	n
+as		8f	1
+4na		5er	x
+6i		5er	m
+7ent		5er	w
+7s	Relatif à Asson, commune française située dans le département des Pyrénées-Atlantiques.
+7t		5er	y
+5âmes		5er	3
+5ance	Figure de style qui consiste en la répétition d'un son vocalique.
+9s		9	0
+7t	Qui produit une assonance.
+8e		8	n
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+5ent		6r	v
+6r	Produire une assonance
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4rti	Qualifie des choses ou des personnes semblables sur certains aspects importants, qui vont bien ensemble, qui forment un assortiment.
+7e		7	n
+8s		7	1
+7ment	Convenance de plusieurs choses qui ont rapport entre elles.
+bs		b	0
+6îmes		6ir	3
+6ir	Mettre ensemble deux ou plusieurs choses qui se conviennent.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	1o
+at		8	q
+9s		8	7
+8ent		8	o
+9z		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	9
+8saient		7r	23
+bs		7r	2e
+bt		7r	1z
+ant	Qui convient à.., qui assortit bien.
+9e		7r	2h
+ant		7r	1x
+as		7r	24
+az		7r	u
+9iez		7r	d
+aons		7r	j
+9ons		7r	r
+7t		7r	28
+6îtes		6ir	2
+4s		4	0
+4upi	Qui est à moitié endormi.
+7e	Femme dans un demi-sommeil.
+8s		7	1
+6îmes		6ir	3
+6ir	Endormir à demi.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	1o
+at		8	q
+9s		8	7
+8ent		8	o
+9z		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	9
+8saient		7r	23
+bs		7r	2e
+bt		7r	1z
+ant	Qui assoupit.
+ce		c	n
+ds		c	1
+cs		c	0
+9e		7r	2d
+ament	État d’une personne assoupie.
+es		e	0
+ant		7r	1x
+as		7r	24
+az		7r	u
+9iez		7r	d
+aons		7r	j
+9ons		7r	r
+7t		7r	28
+6îtes		6ir	2
+6li	Qui est rendu plus souple.
+8e		8r	19
+9s		8r	1f
+7îmes		7ir	3
+7ir	Rendre souple.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+9ent		9	o
+az		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	20
+9saient		8r	23
+cs		8r	t
+ct		8r	1z
+bnt	Qui assouplit.
+de		d	n
+es		d	1
+ds		d	9
+ae		8r	2h
+bment	Action d’assouplir, de s’assouplir.
+bnt		8r	1x
+bs		8r	24
+bur	Produit qui adoucit le linge lors du lavage.
+ds		d	0
+bz		8r	u
+aiez		8r	d
+bons		8r	j
+aons		8r	r
+8t		8r	28
+7îtes		7ir	2
+5rdi	Qualifie une personne devenue sourde de façon transitoire.
+8e		8	n
+9s		8	1
+7îmes		7ir	3
+7ir	Rendre sourd momentanément.
+9a		9	l
+ai		9	g
+bent		9	1r
+bs		9	i
+bt		9	q
+as		9	1l
+9ent		9	1c
+az		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	9
+9saient		8r	23
+cs		8r	t
+ct		8r	3j
+bnt	Qui assourdit.
+de		d	n
+es		d	1
+ds		d	9
+ae		8r	2h
+bment	Action d’assourdir.
+bnt		8r	1x
+bs		8r	24
+bz		8r	u
+aiez		8r	d
+bons		8r	j
+aons		8r	r
+8t		8r	28
+7îtes		7ir	2
+5vi		7r	1k
+7e		7r	19
+8s		7r	1f
+6îmes		6ir	3
+6ir	Rassasier pleinement, délivrer d’une faim vorace, contenter.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	1l
+8ent		8	1c
+9z		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	20
+8saient		7r	23
+bs		7r	t
+bt		7r	1z
+ant		7r	17
+9e		7r	2d
+ament	Action d’assouvir ou résultat de cette action.
+es		e	0
+ant		7r	1x
+as		7r	24
+az		7r	u
+9iez		7r	d
+aons		7r	j
+9ons		7r	r
+7t		7r	28
+6îtes		6ir	2
+4yaient		4ir	5o
+7s		4ir	5p
+7t		4ir	5q
+6nt		4ir	6t
+5ez		4ir	5u
+5iez		4ir	5v
+6ons		4ir	5w
+5ons		4ir	5x
+3uétude	Habitude, dépendance.
+9s		9	0
+4jetti	Asservi.
+9e	Femme affiliée à un organisme.
+as		9	1
+8îmes		8ir	3
+8ir	Rendre sujet, soumettre à sa domination.
+aa		a	l
+bi		a	g
+cent		a	1r
+cs		a	i
+ct		a	q
+bs		a	7
+aent		a	o
+bz		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	9
+asais		9r	t
+dt		9r	1z
+cnt	Qui astreint, qui tient dans une grande sujétion, qui exige beaucoup d’assiduité.
+ee		e	n
+es		e	0
+be		9r	2d
+cnt		9r	1x
+cs		9r	24
+cz		9r	u
+biez		9r	d
+cons		9r	j
+bons		9r	r
+9t		9r	28
+8îtes		8ir	2
+4ma		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Qui agit de façon responsable, en connaissance de cause.
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Prendre pour soi un acte ou une réalité qui vient de soi et qui est difficile à accepter.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4ra		5er	x
+6ble	Qui peut être garanti ou couvert par un contrat d’assurance.
+9s		9	0
+6ge	Action d'assurer.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ance	Certitude.
+9s		9	0
+8iel	Qualifie un système qui répond aux risques de la vie sous condition de cotisations.
+ble		b	n
+ds	Féminin pluriel de assurancielle.
+bs		b	9
+7t		5er	z
+8iel	Relatif à l’assurance d’un risque.
+ble		b	n
+ds		b	1
+bs		b	9
+6s		5er	2b
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Qui est sûr, qui met en sûreté.
+6e	Femme qui a contracté une assurance.
+7s		6	1
+6ment	De manière ferme, assurée.
+5ent		6r	v
+6r	Rendre stable.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6ur	Personne qui assure un dommage, un risque.
+8s		8	0
+7se	Femme qui travaille dans le domaine des assurances.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5tech	Ensemble des entreprises technologiques dans l'assurance.
+3yrien	Relatif à l’Assyrie, le plus puissant empire mésopotamien de l'Antiquité.
+8ne		8	n
+as		8	1
+8s		8	9
+6ologie	Connaissance de la langue et des antiquités de l’Assyrie et de la Babylonie.
+aue	Personne qui étudie les civilisations de la Mésopotamie et ses langues : le sumérien et l’akkadien (assyro-babylonien).
+cs		c	0
+2table	Qualifie un système à deux états instables, c’est-à-dire qui commute en permanence entre ces deux états sans aucune intervention extérieure.
+7s		7	0
+4cicole	Relatif à l’astaciculture, à l’élevage d’écrevisse.
+as		a	0
+7ulteur	Personne pratiquant l’astaciculture, élevage des écrevisses.
+ds		d	0
+arice	Femme pratiquant l’astaciculture, élevage des écrevisses.
+es		e	0
+aure	Élevage des écrevisses à but commercial ou semi-commercial.
+ds		d	0
+4nais	Relatif à Astana, capitale du Kazakhstan, ou à ses habitants.
+8e		8	n
+9s		8	1
+4rté	Dans la Haute Antiquité, divinité féminine.
+7s		7	44
+4sie	Difficulté ou impossibilité à se tenir dans la station debout sans pour autant être atteint de troubles musculaires.
+7s		7	0
+4te	Élément chimique de numéro atomique 85 et de symbole At qui fait partie de la série chimique des halogènes.
+6s		6	0
+5ique	Qui ne prend pas de direction déterminée, instable.
+9s		9	0
+3e	Variante de haste.
+4r	Genre de plantes de la famille des Astéracées (ou Composées), qui ressemblent à des étoiles.
+3éracée	Plante dicotylédone de la famille des Astéracées dont le type est l’aster.
+9s	Variante de Astéracées.
+5éognosie	Incapacité à identifier un objet par la seule manipulation tactile, sans l’aide de la vue, alors que les fonctions sensitives et motrices élémentaires sont pré…
+ds		d	0
+5ide	Étoile de mer, classe d’animaux qui renferme les astéries.
+8s		8	0
+6e	Échinoderme de la classe des astérides, communément appelé étoile de mer.
+7s		7	0
+6sme	Constellation, figure dessinée par plusieurs étoiles.
+9s		9	0
+7que	Nom du signe typographique en forme d’étoile ‹ * ›.
+as		a	0
+3erixis	Variante orthographique de astérixis.
+3éroïde	Objet céleste dont la taille varie de quelques mètres à plusieurs centaines de kilomètres de diamètre, qui tourne autour du Soleil ou fait partie d’un autre sy…
+9s		9	0
+3ers		5	0
+4s		4	0
+3hénie	Fatigue physique du patient ou de la patiente.
+8s		8	0
+7que	Qui tient de l’asthénie.
+as		a	0
+6opie	Fatigue de la vue à la suite d'un travail.
+as		a	0
+7sphère	Partie ductile du manteau terrestre, située entre la lithosphère et la mésosphère.
+ds		d	0
+4matique	Qui est atteint d’asthme.
+bs		b	3f
+5e	Inflammation chronique et évolutive des bronches, entraînant une bronchoconstriction et une gêne respiratoire à l'expiration.
+6s		6	0
+3i	Variante de astic.
+4c	Gros os de cheval ou de mulet dont les cordonniers et les savetiers se servent pour lisser certaines parties du soulier, et dont la cavité leur sert à mettre l…
+5ot	Petit ver blanc, servant d’appât pour la pêche et fixé à l’hameçon.
+7a		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Qualifie un homme ou un animal qui est agacé ou irrité par quelqu’un.
+8e	Salve de coups.
+9s		8	1
+7ent		8r	v
+8r	Contrarier, tracasser quelqu’un sur de petites choses, taquiner, agacer.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7s		7	0
+5s		5	0
+4gmate	Qui est atteint d’astigmatisme, d'une inégalité de courbure interne à l’œil.
+9s		9	0
+8ique	Astigmate.
+cs		c	0
+9sme	Inégalité de courbure des milieux réfringents de l’œil.
+cs		c	0
+4lbe	Genre botanique de saxifragacées à fleurs en épis terminaux très voyants et à feuillage caduc, comprenant une vingtaine d’espèces, dont certaines sont cultivée…
+7s		7	0
+4qua		6er	x
+7ge	Action d’astiquer.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e		7r	27
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Polir le cuir des semelles avec un astic.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4s		4	0
+3ragale	Moulure composée d’un boudin, d’un listel et d’un congé qui embrasse l’extrémité supérieure d’une colonne.
+9s		9	0
+5kan	Fourrure d’agneau caracul à laine frisée, mort-né, ou abattu très jeune.
+8s		8	0
+5l	Qui a rapport aux astres.
+6e		6	n
+7s		6	1
+5nce	Genre de plantes de la famille des apiacées, dont une espèce est commune dans les Alpes et les Pyrénées.
+8s		8	0
+5ux		5l	9
+4é	Éclairé par les astres.
+4eignaient		6ndre	38
+as		6ndre	2n
+at		6ndre	2j
+9nt	Qui astreint, qui contraint grandement.
+be		b	n
+cs		b	1
+bs		b	9
+8e		6ndre	2d
+9nt		6ndre	39
+9s		6ndre	24
+9z		6ndre	u
+8iez		6ndre	32
+8îmes		6ndre	3
+8ions		6ndre	2v
+9rent		6ndre	o
+9s		6ndre	1j
+ase		6ndre	6
+cnt		6ndre	h
+cs		6ndre	8
+biez		6ndre	e
+cons		6ndre	p
+9t		6ndre	13
+8îtes		6ndre	2
+8ons		6ndre	r
+6ndra		9e	l
+ai		9e	g
+bent		9e	30
+bs		9e	2y
+bt		9e	34
+as		9e	7
+9e	Contraindre à quelque chose.
+az		a	5
+9iez		9e	2r
+aons		9e	2t
+9ons		9e	a
+bt		9e	f
+7s		7dre	20
+7t	Limité par des règles, lois, conventions.
+8e	Sanction éventuelle donnée par une Cour de justice ou un tribunal à un arrêt ou à un jugement.
+9s		8	1
+8s		8	9
+5s		5	0
+4ild	Oiseau appartenant aux genres Estrilda ou Coccopygia, petits passereaux originaires d’Afrique, souvent élevés en captivité.
+7s		7	0
+5ngence	Qualité de ce qui est astringent.
+9t	Qui resserre les tissus vivants.
+ae		a	n
+bs		a	1
+as		a	9
+4obiologie	Exobiologie.
+6lème	Ensemble des traces laissées par l’impact d’une météorite ou d’un astéroïde.
+as		a	0
+5cytaire	Relatif aux cellules nerveuses en forme d'étoile ou d'araignée.
+cs		c	0
+8e	Cellule gliale de forme étoilée présente dans le système nerveux central.
+9s		9	0
+8ome	Tumeur des astrocytes.
+bs		b	0
+5ïde	Qui est disposé en manière d’étoile.
+8s		8	0
+5labe	Instrument de navigation servant à déterminer la situation géographique du lieu où l'on se trouve, à partir de l'observation d'un certain nombre d'étoiles et d…
+9s		9	0
+6âtrie	Culte des astres.
+bs		b	0
+6ogie	Description de l’influence, ou de la correspondance, supposée des astres sur le caractère ou sur la destinée des hommes.
+as		a	0
+9que	Relatif à l’astrologie.
+cs		c	0
+8ue	Celui ou celle qui étudie l’astrologie.
+as		a	0
+5mancie	Divination par les astres.
+bs		b	0
+6étrie	Branche de l’astronomie relative aux calculs des positions et des déplacements des astres.
+aque	Relatif à l'astrométrie.
+ds		d	0
+aste	Spécialiste d’astrométrie.
+ds		d	0
+6obile	Véhicule conçu pour se déplacer à la surface d’astres autres que la Terre.
+bs		b	0
+5naute	Personne qui effectue ou a effectué un vol dans l’espace extra-atmosphérique.
+as		a	0
+9icien	Scientifique qui étudie l’astronautique, spécialiste de cette spécialité.
+es		e	0
+aque	Science de la navigation spatiale.
+ds		d	0
+6ef	Appareil conçu pour évoluer dans l’espace.
+8s		8	0
+6ome	Spécialiste de l'astronomie.
+9s		9	0
+8ie	Science ayant pour objet l'observation et l’étude des corps célestes dans leur position, leur mouvement et leur constitution.
+as		a	0
+9que	Qui a rapport à l’astronomie.
+cs		c	3l
+5particule	Particule libre d’origine naturelle présente dans l’espace.
+es		e	0
+6hysicien	Scientifique qui étudie l’astrophysique, l’étude de l’espace et des propriétés des objets de l’univers.
+es		e	0
+aque	Relatif à l’astronomie sous un angle physicochimique.
+ds		d	0
+3uce	Finesse, ruse qui a pour objet de nuire.
+6s		6	0
+5ieuse		8x	n
+ament	Avec astuce, finesse, ruse.
+as		8x	1
+8x	Qui a de l’astuce.
+4rien	Qui se rapporte aux Asturies.
+8ne		8	n
+as		8	1
+8s		8	9
+2ymbolie	Trouble acquis des fonctions symboliques, caractérisé par une incapacité à comprendre, reconnaître, utiliser ou élaborer des signes, des symboles ou des gestes…
+9s		9	0
+4étrie	Défaut de symétrie en parlant d'objets concrets ou de choses considérées sous un aspect géométrique.
+9s		9	0
+8que	Qui manque de symétrie.
+bs		b	57
+4ptomatique	Qui ne se manifeste par aucun symptôme.
+es		e	0
+7te	Se dit d’une droite, et par extension d’une courbe simple, vers laquelle d’autres courbes s’approchent, à l’infini, à une distance plus petite que toute quanti…
+9s		9	0
+8ique	Qui a rapport à l’asymptote.
+cs		c	0
+3nartète	En métrique ancienne, qualifie un vers qui peut être coupé en deux vers indépendants.
+as		a	0
+4chrone	Dont la vitesse n’est pas en rapport avec la fréquence du courant.
+as		a	0
+9isme	État de ce qui est asynchrone.
+ds		d	0
+4dète	Suppression des particules de coordination ou des conjonctions, et par extension de toute liaison attendue ou logique, dans l’ordre grammatical ou sémantique, …
+8s		8	0
+4ergie	Trouble des mouvements et de la coordination.
+9s		9	0
+3stole	Arrêt de l'activité cardiaque complète : sans contraction et sans activité électrique.
+8s		8	0
+7ie	Trouble du rythme cardiaque, symptôme d’une insuffisance cardiaque.
+9s		9	0

@@ -1,1312 +1,1312 @@
-no	Non par un anglophone ou par un pays anglophone.
-Nobel	Prix Nobel.
-nobélisa		nobéliser	33
-nobélisable	Qui peut, potentiellement, recevoir le prix Nobel.
-nobélisables		nobélisable	0
-nobélisai		nobéliser	22
-nobélisaient		nobéliser	32
-nobélisais		nobéliser	29
-nobélisait		nobéliser	34
-nobélisâmes		nobéliser	3
-nobélisant		nobéliser	35
-nobélisas		nobéliser	12
-nobélisasse		nobéliser	6
-nobélisassent		nobéliser	17
-nobélisasses		nobéliser	8
-nobélisassiez		nobéliser	14
-nobélisassions		nobéliser	25
-nobélisât		nobéliser	20
-nobélisâtes		nobéliser	2
-nobélisé		nobéliser	46
-nobélisée		nobéliser	37
-nobélisées		nobéliser	36
-nobélisent		nobéliser	31
-nobéliser	Décerner le prix Nobel.
-nobélisera		nobéliser	21
-nobéliserai		nobéliser	16
-nobéliseraient		nobéliser	28
-nobéliserais		nobéliser	18
-nobéliserait		nobéliser	26
-nobéliseras		nobéliser	7
-nobélisèrent		nobéliser	24
-nobéliserez		nobéliser	5
-nobéliseriez		nobéliser	4
-nobéliserions		nobéliser	11
-nobéliserons		nobéliser	10
-nobéliseront		nobéliser	15
-nobélisés		nobéliser	38
-nobélisez		nobéliser	30
-nobélisiez		nobéliser	13
-nobélisions		nobéliser	19
-nobélisons		nobéliser	27
-nobélium	Élément chimique de numéro atomique 102 et de symbole No appartenant à la série chimique des actinides.
-nobéliums		nobélium	0
-nobiliaire	Qui appartient à la noblesse.
-nobiliaires	Pluriel de l’adjectif' nobiliaire.	nobiliaire
-nobilitas	Noblesse de Rome.
-noblaillon	Synonyme de nobliau.
-noblaillons		noblaillon	0
-noble	Qui est au-dessus du commun, des autres êtres ou objets du même genre.
-noblement	D’une manière noble.
-nobles		noble	0
-noblesse	Qualité de celui qui est noble.
-noblesses		noblesse	0
-nobliau	Un noble, un gentilhomme qui n'a que sa noblesse.
-nobliaux		nobliau	0
-noça		nocer	33
-noçai		nocer	22
-noçaient		nocer	32
-noçais		nocer	29
-noçait		nocer	34
-noçâmes		nocer	3
-noçant		nocer	35
-noças		nocer	12
-noçasse		nocer	6
-noçassent		nocer	17
-noçasses		nocer	8
-noçassiez		nocer	14
-noçassions		nocer	25
-noçât		nocer	20
-noçâtes		nocer	2
-noce	Mariage.
-nocebo	Substance objectivement inoffensive qui produit un effet secondaire négatif sur la personne qui l’utilise.
-nocebos		nocebo	0
-nocent		nocer	31
-nocer	Faire la noce, faire bombance, passer ses journées dans les cabarets.
-nocera		nocer	21
-nocerai		nocer	16
-noceraient		nocer	28
-nocerais		nocer	18
-nocerait		nocer	26
-noceras		nocer	7
-nocèrent		nocer	24
-nocerez		nocer	5
-noceriez		nocer	4
-nocerions		nocer	11
-nocerons		nocer	10
-noceront		nocer	15
-noces		noce	0
-noceur	Celui qui a une vie déréglée, qui fait trop la fête.
-noceurs		noceur	9
-noceuse	Celle qui a une vie déréglée.
-noceuses		noceur	1
-nocez		nocer	30
-nocher	Contre-maître d’un navire, maître ou patron d’un navire.
-nochère	Conduite formée de deux ou trois planches.
-nochères		nochère	0
-nochers		nocher	0
-nocicepteur	Récepteur activé par la douleur.
-nocicepteurs		nocicepteur	0
-nociceptif	Qui a trait à la nociception, perception des stimulations produisant la douleur.
-nociceptifs		nociceptif	9
-nociception	Perception des stimulations produisant la douleur.
-nociceptions		nociception	0
-nociceptive		nociceptif	23
-nociceptives		nociceptif	1
-nociez		nocer	13
-nocif	Qui est nuisible, qui a des effets malfaisants.
-nocifs		nocif	9
-nocions		nocer	19
-nocive		nocif	23
-nocives		nocif	1
-nocivité	Caractère de ce qui est nocif.
-nocivités		nocivité	0
-noçons		nocer	27
-noctambule	Personne souffrant de noctambulisme, maladie entrainant chez le sujet le fait de marcher en dormant sans en garder le souvenir.
-noctambules		noctambule	0
-noctambulisme	Fait de marcher en dormant sans en garder le souvenir.
-noctambulismes		noctambulisme	0
-noctiflore	Se dit dʼune plante dont les fleurs sʼouvrent la nuit.
-noctiflores		noctiflore	0
-noctiluque	Qui luit pendant la nuit.
-noctiluques		noctiluque	0
-noctuelle	Papillon de nuit, lépidoptère de la famille des Noctuidae dont les chenilles sont nuisibles pour les cultures agricoles, pour les arbres et la végétation en gé…
-noctuelles		noctuelle	0
-noctuidé	Membre d’une très grande famille de lépidoptères hétérocères de couleurs souvent sombres parfois vives, munis d’organes auditifs sur le métathorax à droite et …
-noctuidés		noctuidé	0
-noctule	Petite chauve-souris du genre Nyctalus.
-noctules		noctule	0
-nocturnal	Office de nuit, matines.
-nocturne	Qui a lieu ou qui arrive durant la nuit.
-nocturnes		nocturne	0
-nocuité	Qualité de ce qui est nuisible ou nocif.
-nocuités		nocuité	0
-nodal	Relatif au nœud.
-nodale	Féminin singulier de nodal.
-nodales		nodal	1
-nodaux	Masculin pluriel de nodal.
-nodosité	État d’une tige, d’un tronc qui a des nœuds.
-nodosités		nodosité	0
-nodulaire	Ayant un lien, un rapport avec un nodule ou des nodules.
-nodulaires		nodulaire	0
-nodule	Formation anormale, arrondie, palpable dans ou sous la peau, qui peut être une tumeur bénigne ou maligne.
-nodules		nodule	0
-noduleuse		noduleux	23
-noduleuses		noduleux	1
-noduleux	Qui a des nodules, des petits nœuds, généralement en grande quantité.
-noël	Fête de la nativité, de l’anniversaire de la naissance de Jésus-Christ.
-noëls		noël	0
-noématique	Qui exprime une croyance ou une pensée.
-noématiques		noématique	0
-noème	Objet de la pensée, ce qui est pensé, en phénoménologie.
-noèmes		noème	0
-noèse	Acte de penser.
-noèses		noèse	0
-noethérien	Se dit des objets vérifiant la condition de chaîne ascendante ou descendante sur un certain type de sous-objets.
-noétique	Relatif à la connaissance.
-noétiques		noétique	0
-nœud	Enlacement, entrecroisement serré de quelque chose de flexible, ruban, soie, fil, corde, etc.
-nœuds		nœud	0
-nogentais	Relatif à Nogent.
-nogentaise		nogentais	23
-nogentaises		nogentais	1
-noie		noyer	64
-noient		noyer	41
-noiera		noyer	44
-noierai		noyer	50
-noieraient		noyer	63
-noierais		noyer	18
-noierait		noyer	49
-noieras		noyer	57
-noierez		noyer	58
-noieriez		noyer	4
-noierions		noyer	11
-noierons		noyer	10
-noieront		noyer	54
-noies		noyer	77
-noir	Qui absorbe toute la lumière visible qu’il reçoit, donne l’impression d’obscurité.
-noirâtre	Qui tire sur le noir.
-noirâtres		noirâtre	0
-noiraud	Qui a les cheveux noirs et le teint brun.
-noiraude	Celle qui a le teint brun et les cheveux noirs.
-noiraudes		noiraud	1
-noirauds		noiraud	9
-noirceur	Qualité de ce qui est noir.
-noirceurs		noirceur	0
-noirci	Devenu noir.
-noircie		noirci	23
-noircies		noirci	1
-noircîmes		noircir	3
-noircir	Rendre noir, passer au noir.
-noircira		noircir	21
-noircirai		noircir	50
-noirciraient		noircir	28
-noircirais		noircir	60
-noircirait		noircir	49
-noirciras		noircir	7
-noircirent		noircir	48
-noircirez		noircir	5
-noirciriez		noircir	4
-noircirions		noircir	11
-noircirons		noircir	10
-noirciront		noircir	15
-noircis		noirci	9
-noircissaient		noircir	75
-noircissais		noircir	86
-noircissait		noircir	71
-noircissant	Qui noircit.
-noircisse		noircir	85
-noircissement	Action de noircir.
-noircissements		noircissement	0
-noircissent		noircir	69
-noircisses		noircir	76
-noircisseur	Ouvrier teinturier qui achève les noirs.
-noircisseurs		noircisseur	0
-noircissez		noircir	70
-noircissiez		noircir	13
-noircissions		noircir	19
-noircissons		noircir	27
-noircissure	Tache de noir.
-noircissures		noircissure	0
-noircit		noircir	80
-noircîtes		noircir	2
-noire	Figure de note (♩) dont la valeur est égale au quart d’une ronde.
-noires		noir	1
-noirs	Camp qui joue en second, possédant les pièces noires.
-noise	Querelle, dispute sur un sujet de peu d’importance.
-noiseraie	Terrain planté de noyers, plus rarement de noisetiers.
-noiseraies		noiseraie	0
-noises		noise	0
-noisetier	Genre d’arbres et arbustes monoïques de la famille des Bétulacées, à feuilles caduques alternes, aux fleurs mâles et femelles en chatons et produisant des nois…
-noisetiers		noisetier	0
-noisette	Fruit du noisetier à coque dure ovoïde de couleur brun-roux contenant une amande comestible (→ voir nucule).
-noisettes		noisette	0
-noisettine	Noisette enrobée de caramel ou de sirop caramélisé.
-noisettines		noisettine	0
-noix	Fruit charnu produit par le noyer (Juglans).
-nolis	Fret ou louage d’un navire, d’une barque, etc.
-nolisa		noliser	33
-nolisai		noliser	22
-nolisaient		noliser	32
-nolisais		noliser	29
-nolisait		noliser	34
-nolisâmes		noliser	3
-nolisant		noliser	35
-nolisas		noliser	12
-nolisasse		noliser	6
-nolisassent		noliser	17
-nolisasses		noliser	8
-nolisassiez		noliser	14
-nolisassions		noliser	25
-nolisât		noliser	20
-nolisâtes		noliser	2
-nolisé	Affrété pour transporter à un tarif moindre que sur une ligne ordinaire.
-nolisée		noliser	37
-nolisées		noliser	36
-nolisement	Action de noliser, de faire un nolis.
-nolisements		nolisement	0
-nolisent		noliser	31
-noliser	Affréter, fréter un navire, une embarcation.
-nolisera		noliser	21
-noliserai		noliser	16
-noliseraient		noliser	28
-noliserais		noliser	18
-noliserait		noliser	26
-noliseras		noliser	7
-nolisèrent		noliser	24
-noliserez		noliser	5
-noliseriez		noliser	4
-noliserions		noliser	11
-noliserons		noliser	10
-noliseront		noliser	15
-nolisés		noliser	38
-nolisez		noliser	30
-nolisiez		noliser	13
-nolisions		noliser	19
-nolisons		noliser	27
-nolition	Acte de la volonté qui s’oppose, refus.
-nolitions		nolition	0
-nom	Mot ou groupe de mots permettant de nommer un être ou une chose.
-noma	Nom d’un ulcère qui attaque la peau, ainsi que les tissus mous et l’os du visage.
-nomade	Qui est errant, itinérant.
-nomades		nomade	0
-nomadisa		nomadiser	33
-nomadisai		nomadiser	22
-nomadisaient		nomadiser	32
-nomadisais		nomadiser	29
-nomadisait		nomadiser	40
-nomadisâmes		nomadiser	3
-nomadisant		nomadiser	43
-nomadisas		nomadiser	12
-nomadisasse		nomadiser	6
-nomadisassent		nomadiser	17
-nomadisasses		nomadiser	8
-nomadisassiez		nomadiser	14
-nomadisassions		nomadiser	25
-nomadisât		nomadiser	20
-nomadisâtes		nomadiser	2
-nomadisé		nomadiser	46
-nomadisée		nomadiser	37
-nomadisées		nomadiser	36
-nomadisent		nomadiser	41
-nomadiser	Vivre en nomades.
-nomadisera		nomadiser	21
-nomadiserai		nomadiser	16
-nomadiseraient		nomadiser	28
-nomadiserais		nomadiser	18
-nomadiserait		nomadiser	26
-nomadiseras		nomadiser	7
-nomadisèrent		nomadiser	24
-nomadiserez		nomadiser	5
-nomadiseriez		nomadiser	4
-nomadiserions		nomadiser	11
-nomadiserons		nomadiser	10
-nomadiseront		nomadiser	15
-nomadises		nomadiser	66
-nomadisez		nomadiser	30
-nomadisiez		nomadiser	13
-nomadisions		nomadiser	19
-nomadisme	Mode de vie nomade
-nomadismes		nomadisme	0
-nomadisons		nomadiser	27
-nomarque	Gouverneur d’un nome en Égypte.
-nomarques		nomarque	0
-nomas		noma	0
-nombra		nombrer	33
-nombrable	Qui peut être nombré.
-nombrables		nombrable	0
-nombrai		nombrer	22
-nombraient		nombrer	32
-nombrais		nombrer	29
-nombrait		nombrer	34
-nombrâmes		nombrer	3
-nombrant	Qui porte un sens de numérotation pratique.
-nombras		nombrer	12
-nombrasse		nombrer	6
-nombrassent		nombrer	17
-nombrasses		nombrer	8
-nombrassiez		nombrer	14
-nombrassions		nombrer	25
-nombrât		nombrer	20
-nombrâtes		nombrer	2
-nombre	Objet de base des mathématiques, que l’on peut rapporter aux notions de pluralité, d’ensemble, de correspondance, mais qui n’est pas susceptible d’être stricte…
-nombrée		nombrer	37
-nombrées		nombrer	36
-nombrent		nombrer	31
-nombrer	Supputer combien il y a d’unités dans une quantité.
-nombrera		nombrer	21
-nombrerai		nombrer	16
-nombreraient		nombrer	28
-nombrerais		nombrer	18
-nombrerait		nombrer	26
-nombreras		nombrer	7
-nombrèrent		nombrer	24
-nombrerez		nombrer	5
-nombreriez		nombrer	4
-nombrerions		nombrer	11
-nombrerons		nombrer	10
-nombreront		nombrer	15
-nombres		nombre	0
-nombreuse		nombreux	23
-nombreuses		nombreux	1
-nombreux	Qui est en grand nombre.
-nombrez		nombrer	30
-nombriez		nombrer	13
-nombril	Cicatrice du cordon ombilical, placée au milieu du ventre de l’être humain et des quadrupèdes.
-nombrilisme	Narcissisme, égoïsme, égocentrisme, tendance à tout rapporter à soi.
-nombrilismes		nombrilisme	0
-nombriliste	Qualifie le fait qu’une personne, une collectivité, une société ne s’intéresse qu’à elle-même, ne tienne compte des réalités extérieures que dans la mesure où …
-nombrilistes		nombriliste	0
-nombrils		nombril	0
-nombrions		nombrer	19
-nombrons		nombrer	27
-nome	Sorte de poèmes qui se chantaient en l’honneur d’Apollon.
-nomenclateur	Esclave dont les romains qui briguaient les magistratures se faisaient accompagner, afin qu’il leur dît le nom des citoyens qu’ils rencontraient et qu’ils avai…
-nomenclateurs		nomenclateur	0
-nomenclature	Système des noms employés pour désigner les différents objets d’une science ou d’un art.
-nomenclatures		nomenclature	0
-nomenklatura	Liste des postes nommés par un comité d’importance, qu’il s’agisse du Comité central, de comités régionaux ou républicains.
-nomenklaturas		nomenklatura	0
-nomes		nome	0
-nomina		nominer	39
-nominai		nominer	22
-nominaient		nominer	32
-nominais		nominer	29
-nominait		nominer	34
-nominal	Relatif au nom.
-nominale		nominal	23
-nominalement	D’une manière nominale.
-nominales		nominal	1
-nominalisa		nominaliser	33
-nominalisai		nominaliser	22
-nominalisaient		nominaliser	32
-nominalisais		nominaliser	29
-nominalisait		nominaliser	34
-nominalisâmes		nominaliser	3
-nominalisant		nominaliser	35
-nominalisas		nominaliser	12
-nominalisasse		nominaliser	6
-nominalisassent		nominaliser	17
-nominalisasses		nominaliser	8
-nominalisassiez		nominaliser	14
-nominalisât		nominaliser	20
-nominalisâtes		nominaliser	84
-nominalisation	Emploi comme nom, d'un groupe de mots, d'un adjectif, d'un verbe, etc.
-nominalisations		nominalisation	0
-nominalisé		nominaliser	46
-nominalisée		nominaliser	37
-nominalisées		nominaliser	36
-nominalisent		nominaliser	31
-nominaliser	Substantiver, transformer par nominalisation.
-nominalisera		nominaliser	21
-nominaliserai		nominaliser	16
-nominaliserais		nominaliser	18
-nominaliserait		nominaliser	26
-nominaliseras		nominaliser	7
-nominalisèrent		nominaliser	24
-nominaliserez		nominaliser	5
-nominaliseriez		nominaliser	4
-nominaliserions		nominaliser	11
-nominaliserons		nominaliser	10
-nominaliseront		nominaliser	15
-nominalisés		nominaliser	38
-nominalisez		nominaliser	30
-nominalisiez		nominaliser	13
-nominalisions		nominaliser	19
-nominalisme	S'applique à plusieurs doctrines selon lesquelles les idées générales n’ont d'existence que dans les noms dont ils sont les signes, et plus spécialement à cell…
-nominalismes		nominalisme	0
-nominalisons		nominaliser	27
-nominaliste	Relatif au nominalisme.
-nominalistes		nominaliste	0
-nominâmes		nominer	3
-nominant		nominer	35
-nominas		nominer	12
-nominasse		nominer	6
-nominassent		nominer	17
-nominasses		nominer	8
-nominassiez		nominer	14
-nominassions		nominer	25
-nominât		nominer	20
-nominâtes		nominer	2
-nominatif	Cas qui sert à exprimer le sujet ou l’attribut (lorsque accompagné d’un verbe d’état), dans les langues ayant des déclinaisons.
-nominatifs		nominatif	9
-nomination	Action de nommer à un emploi, à une charge, à une dignité, etc.
-nominations		nomination	0
-nominative		nominatif	23
-nominativement	En nommant expressément.
-nominatives		nominatif	1
-nominaux		nominal	9
-nominé	Candidat présélectionné pour un concours de cinéma, de télévision, ou par un parti politique.
-nominée		nominer	45
-nominées		nominer	51
-nominent		nominer	31
-nominer	Présélectionner comme un des lauréats possibles d’un concours cinématographique ou télévisuel.
-nominera		nominer	21
-nominerai		nominer	16
-nomineraient		nominer	28
-nominerais		nominer	18
-nominerait		nominer	26
-nomineras		nominer	7
-nominèrent		nominer	24
-nominerez		nominer	5
-nomineriez		nominer	4
-nominerions		nominer	11
-nominerons		nominer	10
-nomineront		nominer	15
-nominés		nominé	0
-nominette	Étiquette nominative.
-nominettes		nominette	0
-nominez		nominer	30
-nominiez		nominer	13
-nominions		nominer	19
-nominons		nominer	27
-nomma		nommer	39
-nommage	Attribution de noms identifiant des éléments d’un réseau ou des utilisateurs.
-nommages		nommage	0
-nommai		nommer	55
-nommaient		nommer	42
-nommais		nommer	52
-nommait		nommer	40
-nommâmes		nommer	3
-nommant		nommer	43
-nommas		nommer	12
-nommasse		nommer	6
-nommassent		nommer	17
-nommasses		nommer	8
-nommassiez		nommer	14
-nommassions		nommer	25
-nommât		nommer	62
-nommâtes		nommer	2
-nommé	Sélectionné.
-nommée	Personne en tant que porteuse d’un nom.
-nommées		nommé	1
-nommément	Personnellement, en nommant par son nom la personne dont il s’agit.
-nomment		nommer	41
-nommer	Attribuer, imposer un nom à une personne, une chose ou une collectivité.
-nommera		nommer	44
-nommerai		nommer	50
-nommeraient		nommer	28
-nommerais		nommer	60
-nommerait		nommer	49
-nommeras		nommer	57
-nommèrent		nommer	48
-nommerez		nommer	5
-nommeriez		nommer	74
-nommerions		nommer	11
-nommerons		nommer	61
-nommeront		nommer	54
-nommés		nommé	9
-nommez		nommer	47
-nommiez		nommer	67
-nommions		nommer	65
-nommons		nommer	59
-nomogramme	Outil graphique de calcul constitué de courbes graduées entre lesquelles on place une règle.
-nomogrammes		nomogramme	0
-nomographe	Auteur dʼun recueil de lois ou dʼun traité dʼanalyse des lois.
-nomographes		nomographe	0
-nomographie	Traité sur les lois.
-nomographies		nomographie	0
-nomologie	Étude des lois qui président aux phénomènes naturels.
-nomologies		nomologie	0
-nomologique	Relatif à la nomologie.
-nomologiques		nomologique	0
-nomophobe	Qui n’aime pas la loi.
-nomophobes		nomophobe	0
-nomophobie	Méfiance envers les législations.
-nomophobies		nomophobie	0
-nomothète	Législateur, à Athènes.
-nomothètes		nomothète	0
-noms		nom	0
-non	Réponse négative.
-nonagénaire	Qui est âgé de 90 ans ou environ.
-nonagénaires		nonagénaire	0
-nonagésime	Quatre-vingt-dixième, nonantième.
-nonagésimes		nonagésime	0
-nonantaine	Nombre d’environ nonante, quatre-vingt-dix.
-nonantaines		nonantaine	0
-nonante	Quatre-vingt-neuf/huitante-neuf plus un, soit neuf fois dix, adjectif numéral cardinal correspondant au nombre 90.
-nonantième	Qui concerne l’ordinal ou la fraction nonantième.
-nonantièmes		nonantième	0
-nonce	Prélat qui est l’ambassadeur du pape, accrédité auprès d’un gouvernement étranger, chargé de représenter les intérêts du Saint-Siège à l’étranger.
-nonces		nonce	0
-nonchalamment	D’une manière nonchalante.
-nonchalance	Laisser-aller ; négligence.
-nonchalances		nonchalance	0
-nonchalant	Qui apporte de l’insouciance, un manque de zèle, d’ardeur à tout ce qu’il doit faire.
-nonchalante		nonchalant	23
-nonchalantes		nonchalant	1
-nonchalants		nonchalant	9
-nonchaloir	Nonchalance ; laisser-aller.
-nonchaloirs		nonchaloir	0
-nonciature	Charge de nonce.
-nonciatures		nonciature	0
-none	Quatrième partie du jour, qui commençait à la fin de la neuvième heure, ou, selon notre manière de compter, vers trois heures de l’après-midi.
-nones	Septième jour des mois de mars, mai, juillet et octobre, cinquième jour des autres mois, et toujours le neuvième des ides.
-nonidi	Le neuvième jour de la décade, dans le calendrier républicain.
-nonidis		nonidi	0
-noniste	Partisan du vote « non » à un référendum.
-nonistes		noniste	0
-nonne	Religieuse.
-nonnes		nonne	0
-nonnette	Petit pain d’épice de forme arrondie, parfumé à l’anis.
-nonnettes		nonnette	0
-nono	Fruit polynésien, Morinda citrifolia, de la famille des rubiacées.
-nonobstant	ou Malgré, sans être empêché par quelque chose, sans s’y arrêter.
-nonos	Os.
-nonote	Variante orthographique de nonotte.
-nonotes		nonote	0
-nonpareil	Sans pareil, sans égal.
-nonpareille	En mercerie, sorte de ruban fort étroit.
-nonpareilles		nonpareil	1
-nonpareils		nonpareil	9
-nonupla		nonupler	33
-nonuplai		nonupler	22
-nonuplaient		nonupler	32
-nonuplais		nonupler	29
-nonuplait		nonupler	34
-nonuplâmes		nonupler	3
-nonuplant		nonupler	35
-nonuplas		nonupler	12
-nonuplasse		nonupler	6
-nonuplassent		nonupler	17
-nonuplasses		nonupler	8
-nonuplassiez		nonupler	14
-nonuplassions		nonupler	25
-nonuplât		nonupler	20
-nonuplâtes		nonupler	2
-nonuple	Quantité neuf fois plus grande.
-nonuplée		nonupler	37
-nonuplées		nonupler	36
-nonuplent		nonupler	31
-nonupler	Multiplier par neuf.
-nonuplera		nonupler	21
-nonuplerai		nonupler	16
-nonupleraient		nonupler	28
-nonuplerais		nonupler	18
-nonuplerait		nonupler	26
-nonupleras		nonupler	7
-nonuplèrent		nonupler	24
-nonuplerez		nonupler	5
-nonupleriez		nonupler	4
-nonuplerions		nonupler	11
-nonuplerons		nonupler	10
-nonupleront		nonupler	15
-nonuplés		nonuplé	0
-nonuplez		nonupler	30
-nonupliez		nonupler	13
-nonuplions		nonupler	19
-nonuplons		nonupler	27
-noologique	Relatif à la pensée, à l’esprit humain.
-noologiques		noologique	0
-noosphère	Espace composé de l’ensemble des consciences et des pensées humaines.
-noosphères		noosphère	0
-nopal	Autre nom du figuier de Barbarie
-nopals		nopal	0
-noradrénaline	Hormone neuromédiatrice située dans l’hypothalamus.
-noradrénalines		noradrénaline	0
-noradrénergique	Relatif à la noradrénaline.
-nord	Celui des quatre points cardinaux opposé au sud et qui correspond à la direction de l’étoile polaire.
-nordé	Direction nord-est.
-nordés		nordé	0
-nordet	Variante orthographique de nordé.
-nordets		nordet	0
-nordi		nordir	46
-nordicité	Caractère de ce qui est géographiquement nordique.
-nordicités		nordicité	0
-nordîmes		nordir	3
-nordique	Relatif au Nord, à l'hémisphère nord.
-nordiques		nordique	0
-nordir	Tourner au nord.
-nordira		nordir	21
-nordirai		nordir	16
-nordiraient		nordir	28
-nordirais		nordir	18
-nordirait		nordir	26
-nordiras		nordir	7
-nordirent		nordir	24
-nordirez		nordir	5
-nordiriez		nordir	4
-nordirions		nordir	11
-nordirons		nordir	10
-nordiront		nordir	15
-nordis		nordir	79
-nordissaient		nordir	32
-nordissais		nordir	29
-nordissait		nordir	34
-nordissant		nordir	35
-nordisse		nordir	89
-nordissent		nordir	31
-nordisses		nordir	76
-nordissez		nordir	30
-nordissiez		nordir	13
-nordissions		nordir	19
-nordissons		nordir	27
-nordiste	Durant la guerre de Sécession, partisan du maintien des États au sein du gouvernement fédéral des États-Unis d'Amérique, ainsi que de l'abolition de l'esclavag…
-nordistes		nordiste	0
-nordit		nordir	107
-nordîtes		nordir	2
-nori	Algue rouge comestible, utilisée dans la cuisine japonaise, par exemple pour entourer les makizushis.
-noria	Machine hydraulique, composée d’une chaîne sans fin et de seaux à renversement, que l’on emploie pour les irrigations.
-norias		noria	0
-norien	Relatif à Naours, commune française située dans le département de la Somme.
-norienne		norien	23
-noriennes		norien	1
-noriens		norien	9
-noris		nori	0
-norma		normer	39
-normai		normer	22
-normaient		normer	32
-normais		normer	29
-normait		normer	34
-normal	Qui est conforme à la règle, à l’ordre.
-normale	Droite perpendiculaire au plan tangent en un point d’une courbe.
-normalement	D’une manière normale, régulière.
-normales		normal	1
-normalien	Relatif à l'école normale.
-normalienne	Ancienne élève d’une école normale départementale d’instituteurs.
-normaliennes		normalienne	0
-normaliens		normalien	9
-normalisa		normaliser	33
-normalisai		normaliser	22
-normalisaient		normaliser	32
-normalisais		normaliser	29
-normalisait		normaliser	34
-normalisâmes		normaliser	3
-normalisant	Qui normalise.
-normalisas		normaliser	12
-normalisasse		normaliser	6
-normalisassent		normaliser	17
-normalisasses		normaliser	8
-normalisassiez		normaliser	14
-normalisassions		normaliser	25
-normalisât		normaliser	20
-normalisâtes		normaliser	2
-normalisateur	Qui normalise.
-normalisateurs		normalisateur	9
-normalisation	Action de normaliser, ou résultat de cette action.
-normalisations		normalisation	0
-normalisatrice	Celle qui normalise.
-normalisatrices		normalisateur	1
-normalisé	Qui est rendu conforme à une norme.
-normalisée		normaliser	37
-normalisées		normaliser	51
-normalisent		normaliser	41
-normaliser	Rendre conforme à une norme.
-normalisera		normaliser	21
-normaliserai		normaliser	16
-normaliseraient		normaliser	28
-normaliserais		normaliser	18
-normaliserait		normaliser	26
-normaliseras		normaliser	7
-normalisèrent		normaliser	24
-normaliserez		normaliser	5
-normaliseriez		normaliser	4
-normaliserions		normaliser	11
-normaliserons		normaliser	10
-normaliseront		normaliser	15
-normalisés		normalisé	9
-normalisez		normaliser	30
-normalisiez		normaliser	13
-normalisions		normaliser	19
-normalisons		normaliser	59
-normalité	Qualité de ce qui est normal.
-normalités		normalité	0
-normâmes		normer	3
-normand	Relatif à la Normandie, ses habitants, sa culture.
-normande	Race laitière de grand taurin, originaire de France (Normandie), à robe blanche avec plus ou moins de taches brunes ou bringées.
-normandes		normand	1
-normands		normand	9
-normant		normer	35
-normas		normer	83
-normasse		normer	6
-normassent		normer	17
-normasses		normer	8
-normassiez		normer	14
-normassions		normer	25
-normât		normer	20
-normâtes		normer	2
-normatif	Qui a tendance à conforter la norme, qui rend conforme à la norme, qui dénonce tout écart de la norme.
-normatifs		normatif	9
-normative		normatif	23
-normatives		normatif	1
-normativisme	Attitude normative systématique.
-normativismes		normativisme	0
-normativité	Caractère normatif, caractère de ce qui est conforme ou rend conforme à la norme.
-normativités		normativité	0
-normaux		normal	9
-norme	Caractéristique ou comportement généralement attendu d’une personne ou d’une chose.
-normée		normer	37
-normées		normer	36
-norment		normer	31
-normer	Définir une norme (pour).
-normera		normer	21
-normerai		normer	16
-normeraient		normer	28
-normerais		normer	18
-normerait		normer	26
-normeras		normer	7
-normèrent		normer	24
-normerez		normer	5
-normeriez		normer	4
-normerions		normer	11
-normerons		normer	10
-normeront		normer	15
-normes		norme	0
-normez		normer	30
-normiez		normer	13
-normions		normer	19
-normographe	Outil de dessin industriel servant à tracer des lettres ou des symboles.
-normographes		normographe	0
-normons		normer	27
-norois	Variante de norrois.
-noroise		norois	23
-noroises		norois	1
-noroît	Direction nord-ouest.
-noroîts		noroît	0
-norrois	Relatif à la Scandinavie médiévale, scandinave, viking.
-norroise		norrois	23
-norroises		norrois	1
-norvégien	Relatif à la Norvège, à ses habitants et à leur culture.
-norvégienne	Petite barque utilisée autrefois par les baleiniers.
-norvégiennes		norvégien	1
-norvégiens		norvégien	0
-nos	Première personne du pluriel.
-nosémose	Maladie de l’abeille, due à deux espèces de champignons parasites, du genre Nosema.
-nosémoses		nosémose	0
-nosocomial	Relatif à un hôpital, hospitalier.
-nosocomiale		nosocomial	23
-nosocomiales		nosocomial	1
-nosocomiaux		nosocomial	9
-nosographie	Description des maladies.
-nosographies		nosographie	0
-nosographique	Relatif à la nosographie.
-nosographiques		nosographique	0
-nosologie	Étude et classification des maladies.
-nosologies		nosologie	0
-nosologique	Qui a rapport à la nosologie.
-nosologiques		nosologique	0
-nosophobie	Peur irraisonnée d’être malade.
-nosophobies		nosophobie	0
-nosseigneurs	Autre pluriel de monseigneur, dont on se sert quand on parle des personnes qui ont droit à ce titre.	titre
-nostalgie	Souffrance causée par le regret obsédant de la patrie.
-nostalgies		nostalgie	0
-nostalgique	Relatif à la nostalgie.
-nostalgiquement	Avec nostalgie.
-nostalgiques		nostalgique	0
-nostoc	Cyanobactérie du genre Nostoc, ressemblant à une algue quand elle forme une masse gélatineuse.
-nostocs		nostoc	0
-nostras	Qualifie une maladie endémique et sporadique de nos régions.
-nota	Note, avertissement donné au lecteur pour attirer son attention sur une remarque importante.
-notabilité	Caractère de ce qui est notable.
-notabilités		notabilité	0
-notable	Qui est digne d’être signalé.
-notablement	D’une manière notable.
-notables		notable	0
-notai		noter	55
-notaient		noter	42
-notaire	Officier ministériel qui reçoit ou rédige les contrats, les obligations, les transactions et les autres actes volontaires et leur confère l’authenticité.
-notaires		notaire	0
-notairesse	Officière ministérielle qui reçoit ou rédige les contrats, les obligations, les transactions et les autres actes volontaires et leur confère l’authenticité.
-notairesses		notairesse	0
-notais		noter	139
-notait		noter	40
-notâmes		noter	3
-notamment	D’une manière qui doit être notée, relevée.
-notant		noter	43
-notarial	Relatif à la fonction de notaire.
-notariale		notarial	23
-notariales		notarial	1
-notariat	Charge, fonction, profession de notaire.
-notariats		notariat	0
-notariaux		notarial	9
-notarié	Qualifie une procédure, un acte, qui est passé devant notaire, pour l’authentifier.
-notariée		notarié	23
-notariées		notarié	1
-notariés		notarié	9
-notas		noter	12
-notasse		noter	6
-notassent		noter	17
-notasses		noter	8
-notassiez		noter	14
-notassions		noter	25
-notât		noter	62
-notâtes		noter	2
-notateur	Celui qui donne des notes.
-notateurs		notateur	0
-notation	Action, manière d’indiquer, de représenter par des signes convenus.
-notations		notation	0
-notatrice	Celle qui donne des notes.
-notatrices		notatrice	0
-note	Marque que l’on inscrit en quelque endroit d’un livre, d’un écrit.
-notebook	Ultraportable, ordinateur portable de taille très réduite.
-notebooks		notebook	0
-notée		noté	23
-notées		noté	1
-notent		noter	41
-noter	Marquer d’un trait dans un livre, dans un écrit.
-notera		noter	44
-noterai		noter	50
-noteraient		noter	28
-noterais		noter	60
-noterait		noter	49
-noteras		noter	57
-notèrent		noter	48
-noterez		noter	58
-noteriez		noter	4
-noterions		noter	11
-noterons		noter	61
-noteront		noter	54
-notes		note	0
-notez		noter	47
-notice	Exposé sommaire, recueil d’indications, instruction succincte.
-notices		notice	0
-notiez		noter	67
-notifia		notifier	39
-notifiai		notifier	55
-notifiaient		notifier	42
-notifiais		notifier	29
-notifiait		notifier	40
-notifiâmes		notifier	3
-notifiant	Personne ou chose qui notifie.
-notifias		notifier	12
-notifiasse		notifier	6
-notifiassent		notifier	17
-notifiasses		notifier	8
-notifiassiez		notifier	14
-notifiassions		notifier	25
-notifiât		notifier	20
-notifiâtes		notifier	2
-notificatif	Qui sert à notifier.
-notificatifs		notificatif	9
-notification	Action de notifier, de faire savoir dans les formes prescrites par la loi.
-notifications		notification	0
-notificative		notificatif	23
-notificatives		notificatif	1
-notifié	Qui a été transmis, mis au jour, mis à disposition.
-notifiée		notifié	23
-notifiées		notifié	1
-notifient		notifier	31
-notifier	Faire connaître dans les formes prescrites par la loi ou par l'usage.
-notifiera		notifier	21
-notifierai		notifier	16
-notifieraient		notifier	28
-notifierais		notifier	18
-notifierait		notifier	26
-notifieras		notifier	7
-notifièrent		notifier	24
-notifierez		notifier	5
-notifieriez		notifier	4
-notifierions		notifier	11
-notifierons		notifier	10
-notifieront		notifier	15
-notifiés		notifié	9
-notifiez		notifier	47
-notifiiez		notifier	13
-notifiions		notifier	19
-notifions		notifier	59
-notion	Connaissance élémentaire, sommaire, idée plus ou moins précise qu’on a d’une chose.
-notionnel	Relatif à une notion, théorique, mental, imaginaire.
-notionnelle		notionnel	23
-notionnelles	Féminin pluriel de notionnel.
-notionnels	Masculin pluriel de notionnel.
-notions		notion	0
-notocorde	Variante de notochorde.
-notocordes		notocorde	0
-notoire	Connu du public, manifeste.
-notoirement	D’une manière notoire, manifestement, au vu et au su de tous.
-notoires		notoire	0
-notonecte	Punaise aquatique carnassière.
-notonectes		notonecte	0
-notons		noter	59
-notoriété	Connaissance générale, publique, d’un fait.
-notoriétés		notoriété	0
-notre	Première personne du pluriel au singulier.
-nôtres	Folies, bons tours, bons divertissements.
-notule	Courte note, annotation.
-notules		notule	0
-noua		nouer	39
-nouage	Action de nouer.
-nouages		nouage	0
-nouai		nouer	55
-nouaient		nouer	42
-nouais		nouer	52
-nouaison	Stade phénologique de la transformation du pistil en fruit.
-nouaisons		nouaison	0
-nouait		nouer	40
-nouâmes		nouer	3
-nouant		nouer	43
-nouas		nouer	83
-nouasse		nouer	6
-nouassent		nouer	17
-nouasses		nouer	8
-nouassiez		nouer	14
-nouassions		nouer	25
-nouât		nouer	20
-nouâtes		nouer	2
-nouba	Musique arabo-andalouse, jouée sur un mode, à une heure et selon un ordre déterminés.
-noubas		nouba	0
-nouc	Nœud (dans le sens de nœud sur une corde, un lacet, et nœud sur un arbre).
-nouchi	Argot de français parlé en Côte d’Ivoire.
-nouchis		nouchi	0
-noucle	Variante de nouc.
-noucles		noucle	0
-noucs		nouc	0
-noue	Endroit où se rencontrent les surfaces inclinées de deux combles.
-nouée		noué	23
-nouées		noué	1
-nouement	Action de nouer.
-nouements		nouement	0
-nouent		nouer	41
-nouer	Lier au moyen d’un nœud, d'un lien.
-nouera		nouer	44
-nouerai		nouer	16
-noueraient		nouer	28
-nouerais		nouer	60
-nouerait		nouer	49
-noueras		nouer	7
-nouèrent		nouer	48
-nouerez		nouer	58
-noueriez		nouer	4
-nouerions		nouer	11
-nouerons		nouer	10
-noueront		nouer	54
-noués		noué	9
-nouet	Linge noué, dans lequel on a mis quelque substance pour la faire infuser ou bouillir.
-nouets		nouet	0
-nouette	Lien en tissu que l’on noue, servant à fixer des ouvrages en étoffe, comme :
-nouettes		nouette	0
-noueur	Personne qui fait des nœuds, qui est chargée de nouer.
-noueurs		noueur	0
-noueuse	Personne qui fait des nœuds, qui est chargée de nouer.
-noueuses		noueux	1
-noueux	Qui a beaucoup de nœuds, en parlant du bois.
-nouez		nouer	47
-nougat	Confiserie à base de sucre, miel, blanc d’œufs et vanille, garnie d’amandes et de pistaches.
-nougatine	Confiserie faite de sucre caramélisé et de menus morceaux d’amandes ou de noix, souvent utilisée en pâtisserie.
-nougatines		nougatine	0
-nougats		nougat	0
-nouiez		nouer	13
-nouille	Pâte alimentaire (ou simplement pâte) faite avec de la farine de blé et coupée en lanières étroites et minces.
-nouilles		nouille	0
-nouions		nouer	19
-noukta	Blague ; jeu de mots.
-nouktas		noukta	0
-noulet	Canal pour l’écoulement des eaux, fait avec des noues, c’est-à-dire avec des tuiles creuses, des lames de cuivre ou de plomb recourbées, etc.
-noulets		noulet	0
-nouméen	Relatif à Nouméa, commune française située en Nouvelle-Calédonie.
-nouméenne		nouméen	23
-nouméennes		nouméen	1
-nouméens		nouméen	9
-nouménal	Qui a rapport aux noumènes, aux choses telles qu’elles sont en soi.
-nouménale		nouménal	23
-nouménales		nouménal	1
-nouménaux		nouménal	9
-noumène	Chez Kant, désigne la chose en soi, par opposition à phénomène, qui désigne l’objet tel qu’il nous apparaît en passant par notre esprit.
-noumènes		noumène	0
-nounou	Personne qui garde un ou plusieurs enfants de façon professionnelle ou occasionnellement.
-nounoune	Femme ou fille naïve, stupide.
-nounounerie	Bêtise.
-nounouneries		nounounerie	0
-nounounes		nounoune	0
-nounours	Ours en peluche.
-nounous		nounou	0
-nouons		nouer	59
-nourrain	Fretin, petit poisson qu’on met dans un étang pour le repeupler.
-nourrains		nourrain	0
-nourri	Qui reçoit, qui a reçu de la nourriture.
-nourrice	Femme qui allaite l’enfant d’une autre.
-nourricerie	Mot plaisant forgé par Molière : qualité de nourrice.
-nourriceries		nourricerie	0
-nourrices		nourrice	0
-nourricier	Qui sert à la nutrition, qui nourrit, alimente.
-nourricière	Femme qui nourrit.
-nourricières		nourricière	0
-nourriciers		nourricier	9
-nourrie		nourri	23
-nourries		nourri	1
-nourrîmes		nourrir	3
-nourrir	Sustenter, servir d’aliment.
-nourrira		nourrir	44
-nourrirai		nourrir	50
-nourriraient		nourrir	63
-nourrirais		nourrir	60
-nourrirait		nourrir	49
-nourriras		nourrir	57
-nourrirent		nourrir	48
-nourrirez		nourrir	58
-nourririez		nourrir	4
-nourririons		nourrir	82
-nourrirons		nourrir	61
-nourriront		nourrir	54
-nourris		nourri	9
-nourrissage	Soin et manière de nourrir et d’élever les bestiaux.
-nourrissages		nourrissage	0
-nourrissaient		nourrir	75
-nourrissais		nourrir	86
-nourrissait		nourrir	71
-nourrissant	Qui sustente ; qui nourrit beaucoup.
-nourrissante		nourrissant	23
-nourrissantes		nourrissant	1
-nourrissants		nourrissant	9
-nourrisse		nourrir	85
-nourrissement	Action de nourrir.
-nourrissements		nourrissement	0
-nourrissent		nourrir	69
-nourrisses		nourrir	98
-nourrisseur	Celui qui nourrit.
-nourrisseurs		nourrisseur	0
-nourrissez		nourrir	70
-nourrissiez		nourrir	100
-nourrissions		nourrir	94
-nourrisson	Enfant (garçon ou fille) qu’une femme nourrit de son lait.
-nourrissonne	Fille qu’une femme nourrit de son lait.
-nourrissonnes		nourrissonne	0
-nourrissons		nourrisson	0
-nourrît		nourrir	62
-nourrîtes		nourrir	2
-nourriture	Aliment.
-nourritures		nourriture	0
-nous	Pronom de la première personne du pluriel, incluant le locuteur ainsi que d’autres personnes au nom de qui il parle, utilisable en sujet, en complément d’objet…
-nouure	État de ce qui est noué.
-nouures		nouure	0
-nouveau	Qui n’existait pas auparavant, avant telle date donnée, avec rien de pareil ni de comparable.
-nouveauté	Caractère de ce qui n'existait pas auparavant ou qui était inconnu.
-nouveautés	Parures, étoffes les plus nouvelles et les plus à la mode.
-nouveaux		nouveau	9
-nouvel	Masculin singulier de nouveau employée devant une voyelle ou un h muet.	nouveau
-nouvelle	Genre littéraire basé sur un récit de fiction habituellement court, en prose, centré sur un seul événement, laissant peu de répit au lecteur et dont la chute e…
-nouvellement	Depuis peu de temps.
-nouvelles	Renseignement sur l’état d’une personne ou d’une chose dont on n’était pas informé depuis quelque temps.
-nouvelliste	Auteur ou autrice qui écrit des nouvelles.
-nouvellistes		nouvelliste	0
-nova	Étoile qui devient extrêmement brillante pendant quelques jours par une explosion thermonucléaire sur la surface.
-novae		nova	0
-novai		nover	22
-novaient		nover	32
-novais	Relatif à Noves, commune française située dans le département des Bouches-du-Rhône.
-novait		nover	34
-novâmes		nover	3
-novant		nover	35
-novas		nova	0
-novasse		nover	6
-novassent		nover	17
-novasses		nover	8
-novassiez		nover	14
-novassions		nover	25
-novât		nover	20
-novâtes		nover	2
-novateur	Personne qui introduit ou essaie d’introduire des idées nouvelles.
-novateurs		novateur	9
-novation	Changement par lequel un nouveau titre est substitué à un ancien.
-novations		novation	0
-novatoire	Qui est relatif à la novation.
-novatrice	Celle qui innove.
-novatrices		novateur	1
-nove		nover	64
-novée		nover	37
-novées		nover	36
-novela	Sorte de feuilleton à l’eau de rose diffusé sur les chaînes de télévision brésiliennes.
-novelas		novela	0
-novelette	Jeune brebis qui n'a pas encore eu d’agneau.
-novelettes		novelette	0
-novélisa		novéliser	39
-novélisai		novéliser	55
-novélisaient		novéliser	42
-novélisais		novéliser	52
-novélisait		novéliser	40
-novélisâmes		novéliser	68
-novélisant		novéliser	43
-novélisas		novéliser	83
-novélisasse		novéliser	81
-novélisassent		novéliser	78
-novélisasses		novéliser	87
-novélisassiez		novéliser	88
-novélisassions		novéliser	90
-novélisât		novéliser	62
-novélisâtes		novéliser	84
-novélisation	Variante orthographique de novellisation.
-novélisations		novélisation	0
-novélisé		novéliser	56
-novélisée		novéliser	45
-novélisées		novéliser	51
-novélisent		novéliser	41
-novéliser	Adapter pour en faire un roman.
-novélisera		novéliser	44
-novéliserai		novéliser	50
-novéliseraient		novéliser	63
-novéliserais		novéliser	60
-novéliserait		novéliser	49
-novéliseras		novéliser	57
-novélisèrent		novéliser	48
-novéliserez		novéliser	58
-novéliseriez		novéliser	74
-novéliserions		novéliser	82
-novéliserons		novéliser	61
-novéliseront		novéliser	54
-novélisés		novéliser	53
-novélisez		novéliser	47
-novélisiez		novéliser	67
-novélisions		novéliser	65
-novélisons		novéliser	59
-novelle	Loi promulguée par un empereur byzantin.
-novelles	Constitutions de l’empereur Justinien, qui forment la quatrième et dernière partie du corps du droit romain.
-novellisa		novelliser	33
-novellisai		novelliser	22
-novellisaient		novelliser	32
-novellisais		novelliser	29
-novellisait		novelliser	34
-novellisâmes		novelliser	3
-novellisant		novelliser	35
-novellisas		novelliser	12
-novellisasse		novelliser	6
-novellisassent		novelliser	17
-novellisasses		novelliser	8
-novellisassiez		novelliser	14
-novellisassions		novelliser	25
-novellisât		novelliser	20
-novellisâtes		novelliser	2
-novellisation	Adaptation sous forme de roman.
-novellisations		novellisation	0
-novellisé		novelliser	46
-novellisée		novelliser	37
-novellisées		novelliser	36
-novellisent		novelliser	31
-novelliser	Adapter pour en faire un roman.
-novellisera		novelliser	21
-novelliserai		novelliser	16
-novelliseraient		novelliser	28
-novelliserais		novelliser	18
-novelliserait		novelliser	26
-novelliseras		novelliser	7
-novellisèrent		novelliser	24
-novelliserez		novelliser	5
-novelliseriez		novelliser	4
-novelliserions		novelliser	11
-novelliserons		novelliser	10
-novelliseront		novelliser	15
-novellisés		novelliser	38
-novellisez		novelliser	30
-novellisiez		novelliser	13
-novellisions		novelliser	19
-novellisons		novelliser	27
-novembre	Onzième mois de l’année du calendrier grégorien, constitué de 30 jours.
-novembres		novembre	0
-novent		nover	31
-nover	Modifier (une obligation juridique) lors de son renouvellement.
-novera		nover	21
-noverai		nover	16
-noveraient		nover	28
-noverais		nover	18
-noverait		nover	26
-noveras		nover	7
-novèrent		nover	24
-noverez		nover	5
-noveriez		nover	4
-noverions		nover	11
-noverons		nover	10
-noveront		nover	15
-novés		nover	38
-novez		nover	30
-novi	Personne qui s'est engagée par une promesse de mariage, jeune mariée ou marié, ou encore les jeunes mariés, le couple qui vient de s'unir.
-novice	Qui est peu exercé, peu expérimenté en une activité, un métier, une profession.
-novices		novice	0
-noviciat	L’état des novices avant qu’ils fassent profession.
-noviciats		noviciat	0
-noviez		nover	13
-novillada	Corrida opposant de jeunes taureaux (novillos) à de jeunes toreros n’ayant pas encore pris l’alternative (novilleros).
-novilladas		novillada	0
-novillero	Toréro novice.
-novilleros		novillero	0
-novillo	Jeune taureau âgé de deux à trois ans, lidié dans les novilladas.
-novillos		novillo	0
-novions		nover	19
-novlangue	Langue officielle de l’Océania.
-novlangues		novlangue	0
-novocaïne	Chlorhydrate de procaïne, utilisé comme anesthésique local.
-novocaïnes		novocaïne	0
-novons		nover	27
-novotique	Ensemble des techniques et des phénomènes nouveaux liés à l'informatique.
-novotiques		novotique	0
-noya		noyer	39
-noyade	Action de noyer une personne.
-noyades		noyade	0
-noyage	Action de noyer, d’immerger.
-noyages		noyage	0
-noyai		noyer	55
-noyaient		noyer	42
-noyais		noyer	52
-noyait		noyer	40
-noyâmes		noyer	3
-noyant		noyer	43
-noyas		noyer	12
-noyasse		noyer	6
-noyassent		noyer	17
-noyasses		noyer	8
-noyassiez		noyer	14
-noyassions		noyer	25
-noyat	Relatif aux Noës-près-Troyes, commune française située dans le département de l’Aube.
-noyâtes		noyer	2
-noyau	Partie centrale, dure, d’une drupe et qui contient une amande.
-noyauta		noyauter	39
-noyautage	Action de noyauter, tentative de prise de contrôle.
-noyautages		noyautage	0
-noyautai		noyauter	22
-noyautaient		noyauter	32
-noyautais		noyauter	29
-noyautait		noyauter	34
-noyautâmes		noyauter	3
-noyautant		noyauter	43
-noyautas		noyauter	12
-noyautasse		noyauter	6
-noyautassent		noyauter	17
-noyautasses		noyauter	8
-noyautassiez		noyauter	14
-noyautassions		noyauter	25
-noyautât		noyauter	20
-noyautâtes		noyauter	2
-noyauté		noyauter	56
-noyautée		noyauter	45
-noyautées		noyauter	51
-noyautent		noyauter	41
-noyauter	Faire de l’entrisme, prendre le pouvoir au cœur d’un groupe, d’une organisation.
-noyautera		noyauter	21
-noyauterai		noyauter	16
-noyauteraient		noyauter	28
-noyauterais		noyauter	18
-noyauterait		noyauter	26
-noyauteras		noyauter	7
-noyautèrent		noyauter	24
-noyauterez		noyauter	5
-noyauteriez		noyauter	4
-noyauterions		noyauter	11
-noyauterons		noyauter	10
-noyauteront		noyauter	15
-noyautés		noyauter	38
-noyautez		noyauter	30
-noyautiez		noyauter	13
-noyautions		noyauter	19
-noyautons		noyauter	27
-noyaux		noyau	0
-noyé	Personne qui se noie ou qui a péri par noyade.
-noyée	Femme ou fille noyée.
-noyées		noyé	1
-noyer	Nom usuel des arbres du genre Juglans, Grands arbres à feuilles caduques alternes imparipennées, aux petites fleurs femelles verdâtres réunies par deux à quatr…
-noyeraie	Lieu planté de noyers.
-noyeraies		noyeraie	0
-noyèrent		noyer	48
-noyers		noyer	0
-noyés		noyé	9
-noyez		noyer	47
-noyiez		noyer	13
-noyions		noyer	65
-noyons		noyer	59
+0no	Non par un anglophone ou par un pays anglophone.
+0Nobel	Prix Nobel.
+0nobélisa		7er	x
+8ble	Qui peut, potentiellement, recevoir le prix Nobel.
+bs		b	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Décerner le prix Nobel.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6um	Élément chimique de numéro atomique 102 et de symbole No appartenant à la série chimique des actinides.
+8s		8	0
+3iliaire	Qui appartient à la noblesse.
+as	Pluriel de l’adjectif' nobiliaire.	a
+6tas	Noblesse de Rome.
+3laillon	Synonyme de nobliau.
+as		a	0
+4e	Qui est au-dessus du commun, des autres êtres ou objets du même genre.
+5ment	D’une manière noble.
+5s		5	0
+6se	Qualité de celui qui est noble.
+8s		8	0
+4iau	Un noble, un gentilhomme qui n'a que sa noblesse.
+7x		7	0
+2ça		2cer	x
+4i		2cer	m
+5ent		2cer	w
+5s		2cer	t
+5t		2cer	y
+3âmes		2cer	3
+3ant		2cer	z
+4s		2cer	c
+5se		2cer	6
+7nt		2cer	h
+7s		2cer	8
+6iez		2cer	e
+7ons		2cer	p
+3ât		2cer	k
+5es		2cer	2
+2ce	Mariage.
+4bo	Substance objectivement inoffensive qui produit un effet secondaire négatif sur la personne qui l’utilise.
+6s		6	0
+4nt		4r	v
+4r	Faire la noce, faire bombance, passer ses journées dans les cabarets.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+4ur	Celui qui a une vie déréglée, qui fait trop la fête.
+6s		6	9
+5se	Celle qui a une vie déréglée.
+7s		5r	1
+4z		4r	u
+3her	Contre-maître d’un navire, maître ou patron d’un navire.
+4ère	Conduite formée de deux ou trois planches.
+7s		7	0
+4ers		6	0
+3icepteur	Récepteur activé par la douleur.
+bs		b	0
+8if	Qui a trait à la nociception, perception des stimulations produisant la douleur.
+as		a	9
+9on	Perception des stimulations produisant la douleur.
+bs		b	0
+9ve		9f	n
+bs		9f	1
+4ez		3er	d
+4f	Qui est nuisible, qui a des effets malfaisants.
+5s		5	9
+4ons		3er	j
+4ve		4f	n
+6s		4f	1
+5ité	Caractère de ce qui est nocif.
+8s		8	0
+2çons		2cer	r
+2ctambule	Personne souffrant de noctambulisme, maladie entrainant chez le sujet le fait de marcher en dormant sans en garder le souvenir.
+as		a	0
+9isme	Fait de marcher en dormant sans en garder le souvenir.
+ds		d	0
+4iflore	Se dit dʼune plante dont les fleurs sʼouvrent la nuit.
+as		a	0
+5luque	Qui luit pendant la nuit.
+as		a	0
+4uelle	Papillon de nuit, lépidoptère de la famille des Noctuidae dont les chenilles sont nuisibles pour les cultures agricoles, pour les arbres et la végétation en gé…
+9s		9	0
+5idé	Membre d’une très grande famille de lépidoptères hétérocères de couleurs souvent sombres parfois vives, munis d’organes auditifs sur le métathorax à droite et …
+8s		8	0
+5le	Petite chauve-souris du genre Nyctalus.
+7s		7	0
+5rnal	Office de nuit, matines.
+7e	Qui a lieu ou qui arrive durant la nuit.
+8s		8	0
+3uité	Qualité de ce qui est nuisible ou nocif.
+7s		7	0
+2dal	Relatif au nœud.
+5e	Féminin singulier de nodal.
+6s		5	1
+4ux	Masculin pluriel de nodal.
+3osité	État d’une tige, d’un tronc qui a des nœuds.
+8s		8	0
+3ulaire	Ayant un lien, un rapport avec un nodule ou des nodules.
+9s		9	0
+5e	Formation anormale, arrondie, palpable dans ou sous la peau, qui peut être une tumeur bénigne ou maligne.
+6s		6	0
+6use		7x	n
+9s		7x	1
+7x	Qui a des nodules, des petits nœuds, généralement en grande quantité.
+2ël	Fête de la nativité, de l’anniversaire de la naissance de Jésus-Christ.
+4s		4	0
+2ématique	Qui exprime une croyance ou une pensée.
+as		a	0
+2ème	Objet de la pensée, ce qui est pensé, en phénoménologie.
+5s		5	0
+3se	Acte de penser.
+5s		5	0
+2ethérien	Se dit des objets vérifiant la condition de chaîne ascendante ou descendante sur un certain type de sous-objets.
+2étique	Relatif à la connaissance.
+8s		8	0
+1œud	Enlacement, entrecroisement serré de quelque chose de flexible, ruban, soie, fil, corde, etc.
+4s		4	0
+1ogentais	Relatif à Nogent.
+9e		9	n
+as		9	1
+2ie		2yer	1s
+4nt		2yer	15
+4ra		2yer	18
+6i		2yer	1e
+7ent		2yer	1r
+7s		2yer	i
+7t		2yer	1d
+6s		2yer	1l
+5ez		2yer	1m
+5iez		2yer	4
+6ons		2yer	b
+5ons		2yer	a
+7t		2yer	1i
+4s		2yer	25
+3r	Qui absorbe toute la lumière visible qu’il reçoit, donne l’impression d’obscurité.
+4âtre	Qui tire sur le noir.
+8s		8	0
+4aud	Qui a les cheveux noirs et le teint brun.
+7e	Celle qui a le teint brun et les cheveux noirs.
+8s		7	1
+7s		7	9
+4ceur	Qualité de ce qui est noir.
+8s		8	0
+5i	Devenu noir.
+6e		6	n
+7s		6	1
+5îmes		5ir	3
+5ir	Rendre noir, passer au noir.
+7a		7	l
+8i		7	1e
+9ent		7	s
+9s		7	1o
+9t		7	1d
+8s		7	7
+7ent		7	1c
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	9
+7saient		6r	23
+as		6r	2e
+at		6r	1z
+9nt	Qui noircit.
+8e		6r	2d
+9ment	Action de noircir.
+ds		d	0
+9nt		6r	1x
+9s		6r	24
+9ur	Ouvrier teinturier qui achève les noirs.
+bs		b	0
+9z		6r	1y
+8iez		6r	d
+9ons		6r	j
+8ons		6r	r
+8ure	Tache de noir.
+bs		b	0
+6t		6r	28
+5îtes		5ir	2
+4e	Figure de note (♩) dont la valeur est égale au quart d’une ronde.
+5s		4	1
+4s	Camp qui joue en second, possédant les pièces noires.
+3se	Querelle, dispute sur un sujet de peu d’importance.
+5raie	Terrain planté de noyers, plus rarement de noisetiers.
+9s		9	0
+5s		5	0
+5tier	Genre d’arbres et arbustes monoïques de la famille des Bétulacées, à feuilles caduques alternes, aux fleurs mâles et femelles en chatons et produisant des nois…
+9s		9	0
+6te	Fruit du noisetier à coque dure ovoïde de couleur brun-roux contenant une amande comestible (→ voir nucule).
+8s		8	0
+7ine	Noisette enrobée de caramel ou de sirop caramélisé.
+as		a	0
+3x	Fruit charnu produit par le noyer (Juglans).
+2lis	Fret ou louage d’un navire, d’une barque, etc.
+5a		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Affrété pour transporter à un tarif moindre que sur une ligne ordinaire.
+6e		5er	11
+7s		5er	10
+5ement	Action de noliser, de faire un nolis.
+as		a	0
+6nt		6r	v
+6r	Affréter, fréter un navire, une embarcation.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4tion	Acte de la volonté qui s’oppose, refus.
+8s		8	0
+2m	Mot ou groupe de mots permettant de nommer un être ou une chose.
+3a	Nom d’un ulcère qui attaque la peau, ainsi que les tissus mous et l’os du visage.
+4de	Qui est errant, itinérant.
+6s		6	0
+5isa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	15
+8r	Vivre en nomades.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7me	Mode de vie nomade
+9s		9	0
+7ons		7er	r
+4rque	Gouverneur d’un nome en Égypte.
+8s		8	0
+4s		4	0
+3bra		5er	x
+6ble	Qui peut être nombré.
+9s		9	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant	Qui porte un sens de numérotation pratique.
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Objet de base des mathématiques, que l’on peut rapporter aux notions de pluralité, d’ensemble, de correspondance, mais qui n’est pas susceptible d’être stricte…
+5ée		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Supputer combien il y a d’unités dans une quantité.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6use		7x	n
+9s		7x	1
+7x	Qui est en grand nombre.
+6z		6r	u
+5iez		5er	d
+6l	Cicatrice du cordon ombilical, placée au milieu du ventre de l’être humain et des quadrupèdes.
+7isme	Narcissisme, égoïsme, égocentrisme, tendance à tout rapporter à soi.
+bs		b	0
+9te	Qualifie le fait qu’une personne, une collectivité, une société ne s’intéresse qu’à elle-même, ne tienne compte des réalités extérieures que dans la mesure où …
+bs		b	0
+7s		7	0
+6ons		5er	j
+5ons		5er	r
+3e	Sorte de poèmes qui se chantaient en l’honneur d’Apollon.
+4nclateur	Esclave dont les romains qui briguaient les magistratures se faisaient accompagner, afin qu’il leur dît le nom des citoyens qu’ils rencontraient et qu’ils avai…
+cs		c	0
+9ure	Système des noms employés pour désigner les différents objets d’une science ou d’un art.
+cs		c	0
+5klatura	Liste des postes nommés par un comité d’importance, qu’il s’agisse du Comité central, de comités régionaux ou républicains.
+cs		c	0
+4s		4	0
+3ina		5er	13
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+6l	Relatif au nom.
+7e		7	n
+8ment	D’une manière nominale.
+8s		7	1
+7isa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2c
+9ation	Emploi comme nom, d'un groupe de mots, d'un adjectif, d'un verbe, etc.
+es		e	0
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Substantiver, transformer par nominalisation.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9me	S'applique à plusieurs doctrines selon lesquelles les idées générales n’ont d'existence que dans les noms dont ils sont les signes, et plus spécialement à cell…
+bs		b	0
+9ons		9er	r
+9te	Relatif au nominalisme.
+bs		b	0
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5atif	Cas qui sert à exprimer le sujet ou l’attribut (lorsque accompagné d’un verbe d’état), dans les langues ayant des déclinaisons.
+9s		9	9
+8on	Action de nommer à un emploi, à une charge, à une dignité, etc.
+as		a	0
+8ve		8f	n
+ament	En nommant expressément.
+as		8f	1
+6ux		6l	9
+5é	Candidat présélectionné pour un concours de cinéma, de télévision, ou par un parti politique.
+6e		5er	19
+7s		5er	1f
+5ent		6r	v
+6r	Présélectionner comme un des lauréats possibles d’un concours cinématographique ou télévisuel.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	0
+5ette	Étiquette nominative.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3ma		4er	13
+5ge	Attribution de noms identifiant des éléments d’un réseau ou des utilisateurs.
+7s		7	0
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	1q
+6es		4er	2
+4é	Sélectionné.
+5e	Personne en tant que porteuse d’un nom.
+6s		5	1
+5ment	Personnellement, en nommant par son nom la personne dont il s’agit.
+4ent		5r	15
+5r	Attribuer, imposer un nom à une personne, une chose ou une collectivité.
+6a		6	18
+7i		6	1e
+8ent		6	s
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	5
+6iez		6	22
+7ons		6	b
+6ons		6	1p
+8t		6	1i
+4és		5	9
+4ez		5r	1b
+4iez		4er	1v
+5ons		4er	1t
+4ons		4er	1n
+3ogramme	Outil graphique de calcul constitué de courbes graduées entre lesquelles on place une règle.
+as		a	0
+7phe	Auteur dʼun recueil de lois ou dʼun traité dʼanalyse des lois.
+as		a	0
+9ie	Traité sur les lois.
+bs		b	0
+4logie	Étude des lois qui président aux phénomènes naturels.
+9s		9	0
+8que	Relatif à la nomologie.
+bs		b	0
+4phobe	Qui n’aime pas la loi.
+9s		9	0
+8ie	Méfiance envers les législations.
+as		a	0
+4thète	Législateur, à Athènes.
+9s		9	0
+3s		3	0
+2n	Réponse négative.
+3agénaire	Qui est âgé de 90 ans ou environ.
+bs		b	0
+6sime	Quatre-vingt-dixième, nonantième.
+as		a	0
+4ntaine	Nombre d’environ nonante, quatre-vingt-dix.
+as		a	0
+6e	Quatre-vingt-neuf/huitante-neuf plus un, soit neuf fois dix, adjectif numéral cardinal correspondant au nombre 90.
+6ième	Qui concerne l’ordinal ou la fraction nonantième.
+as		a	0
+3ce	Prélat qui est l’ambassadeur du pape, accrédité auprès d’un gouvernement étranger, chargé de représenter les intérêts du Saint-Siège à l’étranger.
+5s		5	0
+4halamment	D’une manière nonchalante.
+8nce	Laisser-aller ; négligence.
+bs		b	0
+9t	Qui apporte de l’insouciance, un manque de zèle, d’ardeur à tout ce qu’il doit faire.
+ae		a	n
+bs		a	1
+as		a	9
+7oir	Nonchalance ; laisser-aller.
+as		a	0
+4iature	Charge de nonce.
+as		a	0
+3e	Quatrième partie du jour, qui commençait à la fin de la neuvième heure, ou, selon notre manière de compter, vers trois heures de l’après-midi.
+4s	Septième jour des mois de mars, mai, juillet et octobre, cinquième jour des autres mois, et toujours le neuvième des ides.
+3idi	Le neuvième jour de la décade, dans le calendrier républicain.
+6s		6	0
+4ste	Partisan du vote « non » à un référendum.
+7s		7	0
+3ne	Religieuse.
+5s		5	0
+5tte	Petit pain d’épice de forme arrondie, parfumé à l’anis.
+8s		8	0
+3o	Fruit polynésien, Morinda citrifolia, de la famille des rubiacées.
+4bstant	ou Malgré, sans être empêché par quelque chose, sans s’y arrêter.
+4s	Os.
+4te	Variante orthographique de nonotte.
+6s		6	0
+3pareil	Sans pareil, sans égal.
+9le	En mercerie, sorte de ruban fort étroit.
+bs		9	1
+9s		9	9
+3upla		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Quantité neuf fois plus grande.
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Multiplier par neuf.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	0
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+2ologique	Relatif à la pensée, à l’esprit humain.
+as		a	0
+3sphère	Espace composé de l’ensemble des consciences et des pensées humaines.
+9s		9	0
+2pal	Autre nom du figuier de Barbarie
+5s		5	0
+2radrénaline	Hormone neuromédiatrice située dans l’hypothalamus.
+ds		d	0
+8ergique	Relatif à la noradrénaline.
+3d	Celui des quatre points cardinaux opposé au sud et qui correspond à la direction de l’étoile polaire.
+4é	Direction nord-est.
+5s		5	0
+4et	Variante orthographique de nordé.
+6s		6	0
+4i		5r	1a
+5cité	Caractère de ce qui est géographiquement nordique.
+9s		9	0
+4îmes		4ir	3
+4ique	Relatif au Nord, à l'hémisphère nord.
+8s		8	0
+5r	Tourner au nord.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+6ent		6	o
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	27
+6saient		5r	w
+9s		5r	t
+9t		5r	y
+8nt		5r	z
+7e		5r	2h
+8nt		5r	v
+8s		5r	24
+8z		5r	u
+7iez		5r	d
+8ons		5r	j
+7ons		5r	r
+6te	Durant la guerre de Sécession, partisan du maintien des États au sein du gouvernement fédéral des États-Unis d'Amérique, ainsi que de l'abolition de l'esclavag…
+8s		8	0
+5t		5r	2z
+4îtes		4ir	2
+3i	Algue rouge comestible, utilisée dans la cuisine japonaise, par exemple pour entourer les makizushis.
+4a	Machine hydraulique, composée d’une chaîne sans fin et de seaux à renversement, que l’on emploie pour les irrigations.
+5s		5	0
+4en	Relatif à Naours, commune française située dans le département de la Somme.
+6ne		6	n
+8s		6	1
+6s		6	9
+4s		4	0
+3ma		4er	13
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+5l	Qui est conforme à la règle, à l’ordre.
+6e	Droite perpendiculaire au plan tangent en un point d’une courbe.
+7ment	D’une manière normale, régulière.
+7s		6	1
+6ien	Relatif à l'école normale.
+9ne	Ancienne élève d’une école normale départementale d’instituteurs.
+bs		b	0
+9s		9	9
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant	Qui normalise.
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ateur	Qui normalise.
+ds		d	9
+aion	Action de normaliser, ou résultat de cette action.
+ds		d	0
+arice	Celle qui normalise.
+es		aeur	1
+8é	Qui est rendu conforme à une norme.
+9e		8er	11
+as		8er	1f
+8ent		9r	15
+9r	Rendre conforme à une norme.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	1n
+7té	Qualité de ce qui est normal.
+9s		9	0
+4âmes		4er	3
+4and	Relatif à la Normandie, ses habitants, sa culture.
+7e	Race laitière de grand taurin, originaire de France (Normandie), à robe blanche avec plus ou moins de taches brunes ou bringées.
+8s		7	1
+7s		7	9
+6t		4er	z
+5s		4er	2b
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4atif	Qui a tendance à conforter la norme, qui rend conforme à la norme, qui dénonce tout écart de la norme.
+8s		8	9
+7ve		7f	n
+9s		7f	1
+8isme	Attitude normative systématique.
+cs		c	0
+9té	Caractère normatif, caractère de ce qui est conforme ou rend conforme à la norme.
+bs		b	0
+5ux		5l	9
+4e	Caractéristique ou comportement généralement attendu d’une personne ou d’une chose.
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Définir une norme (pour).
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ographe	Outil de dessin industriel servant à tracer des lettres ou des symboles.
+bs		b	0
+5ns		4er	r
+3ois	Variante de norrois.
+6e		6	n
+7s		6	1
+4ît	Direction nord-ouest.
+6s		6	0
+3rois	Relatif à la Scandinavie médiévale, scandinave, viking.
+7e		7	n
+8s		7	1
+3végien	Relatif à la Norvège, à ses habitants et à leur culture.
+9ne	Petite barque utilisée autrefois par les baleiniers.
+bs		9	1
+9s		9	0
+2s	Première personne du pluriel.
+3émose	Maladie de l’abeille, due à deux espèces de champignons parasites, du genre Nosema.
+8s		8	0
+3ocomial	Relatif à un hôpital, hospitalier.
+ae		a	n
+bs		a	1
+9ux		9l	9
+4graphie	Description des maladies.
+bs		b	0
+aque	Relatif à la nosographie.
+ds		d	0
+4logie	Étude et classification des maladies.
+9s		9	0
+8que	Qui a rapport à la nosologie.
+bs		b	0
+4phobie	Peur irraisonnée d’être malade.
+as		a	0
+3seigneurs	Autre pluriel de monseigneur, dont on se sert quand on parle des personnes qui ont droit à ce titre.	0titre
+3talgie	Souffrance causée par le regret obsédant de la patrie.
+9s		9	0
+8que	Relatif à la nostalgie.
+bment	Avec nostalgie.
+bs		b	0
+4oc	Cyanobactérie du genre Nostoc, ressemblant à une algue quand elle forme une masse gélatineuse.
+6s		6	0
+4ras	Qualifie une maladie endémique et sporadique de nos régions.
+2ta	Note, avertissement donné au lecteur pour attirer son attention sur une remarque importante.
+4bilité	Caractère de ce qui est notable.
+as		a	0
+5le	Qui est digne d’être signalé.
+7ment	D’une manière notable.
+7s		7	0
+4i		3er	1j
+5ent		3er	16
+5re	Officier ministériel qui reçoit ou rédige les contrats, les obligations, les transactions et les autres actes volontaires et leur confère l’authenticité.
+7s		7	0
+8se	Officière ministérielle qui reçoit ou rédige les contrats, les obligations, les transactions et les autres actes volontaires et leur confère l’authenticité.
+as		a	0
+5s		3er	3v
+5t		3er	14
+3âmes		3er	3
+3amment	D’une manière qui doit être notée, relevée.
+4nt		3er	17
+4rial	Relatif à la fonction de notaire.
+8e		8	n
+9s		8	1
+7t	Charge, fonction, profession de notaire.
+8s		8	0
+7ux		7l	9
+6é	Qualifie une procédure, un acte, qui est passé devant notaire, pour l’authentifier.
+7e		7	n
+8s		7	1
+7s		7	9
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	1q
+5es		3er	2
+3ateur	Celui qui donne des notes.
+8s		8	0
+5ion	Action, manière d’indiquer, de représenter par des signes convenus.
+8s		8	0
+5rice	Celle qui donne des notes.
+9s		9	0
+3e	Marque que l’on inscrit en quelque endroit d’un livre, d’un écrit.
+4book	Ultraportable, ordinateur portable de taille très réduite.
+8s		8	0
+3ée		4	n
+5s		4	1
+3ent		4r	15
+4r	Marquer d’un trait dans un livre, dans un écrit.
+5a		5	18
+6i		5	1e
+7ent		5	s
+7s		5	1o
+7t		5	1d
+6s		5	1l
+3èrent		3er	1c
+3erez		5	1m
+5iez		5	4
+6ons		5	b
+5ons		5	1p
+7t		5	1i
+4s		4	0
+4z		4r	1b
+3ice	Exposé sommaire, recueil d’indications, instruction succincte.
+6s		6	0
+4ez		3er	1v
+4fia		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant	Personne ou chose qui notifie.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6catif	Qui sert à notifier.
+bs		b	9
+aon	Action de notifier, de faire savoir dans les formes prescrites par la loi.
+cs		c	0
+ave		af	n
+cs		af	1
+6é	Qui a été transmis, mis au jour, mis à disposition.
+7e		7	n
+8s		7	1
+6ent		7r	v
+7r	Faire connaître dans les formes prescrites par la loi ou par l'usage.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	1n
+4on	Connaissance élémentaire, sommaire, idée plus ou moins précise qu’on a d’une chose.
+6nel	Relatif à une notion, théorique, mental, imaginaire.
+9le		9	n
+bs	Féminin pluriel de notionnel.
+9s	Masculin pluriel de notionnel.
+6s		6	0
+3ocorde	Variante de notochorde.
+9s		9	0
+4ire	Connu du public, manifeste.
+7ment	D’une manière notoire, manifestement, au vu et au su de tous.
+7s		7	0
+4necte	Punaise aquatique carnassière.
+9s		9	0
+5s		3er	1n
+4riété	Connaissance générale, publique, d’un fait.
+9s		9	0
+3re	Première personne du pluriel au singulier.
+1ôtres	Folies, bons tours, bons divertissements.
+1otule	Courte note, annotation.
+6s		6	0
+2ua		3er	13
+4ge	Action de nouer.
+6s		6	0
+4i		3er	1j
+5ent		3er	16
+5s		3er	1g
+6on	Stade phénologique de la transformation du pistil en fruit.
+8s		8	0
+5t		3er	14
+3âmes		3er	3
+3ant		3er	17
+4s		3er	2b
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3ba	Musique arabo-andalouse, jouée sur un mode, à une heure et selon un ordre déterminés.
+5s		5	0
+3c	Nœud (dans le sens de nœud sur une corde, un lacet, et nœud sur un arbre).
+4hi	Argot de français parlé en Côte d’Ivoire.
+6s		6	0
+4le	Variante de nouc.
+6s		6	0
+4s		4	0
+3e	Endroit où se rencontrent les surfaces inclinées de deux combles.
+3ée		4	n
+5s		4	1
+3ement	Action de nouer.
+8s		8	0
+4nt		4r	15
+4r	Lier au moyen d’un nœud, d'un lien.
+5a		5	18
+6i		5	g
+7ent		5	s
+7s		5	1o
+7t		5	1d
+6s		5	7
+3èrent		3er	1c
+3erez		5	1m
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	1i
+3és		4	9
+3et	Linge noué, dans lequel on a mis quelque substance pour la faire infuser ou bouillir.
+5s		5	0
+5te	Lien en tissu que l’on noue, servant à fixer des ouvrages en étoffe, comme :
+7s		7	0
+4ur	Personne qui fait des nœuds, qui est chargée de nouer.
+6s		6	0
+5se	Personne qui fait des nœuds, qui est chargée de nouer.
+7s		5x	1
+5x	Qui a beaucoup de nœuds, en parlant du bois.
+4z		4r	1b
+3gat	Confiserie à base de sucre, miel, blanc d’œufs et vanille, garnie d’amandes et de pistaches.
+6ine	Confiserie faite de sucre caramélisé et de menus morceaux d’amandes ou de noix, souvent utilisée en pâtisserie.
+9s		9	0
+6s		6	0
+3iez		3er	d
+4lle	Pâte alimentaire (ou simplement pâte) faite avec de la farine de blé et coupée en lanières étroites et minces.
+7s		7	0
+4ons		3er	j
+3kta	Blague ; jeu de mots.
+6s		6	0
+3let	Canal pour l’écoulement des eaux, fait avec des noues, c’est-à-dire avec des tuiles creuses, des lames de cuivre ou de plomb recourbées, etc.
+6s		6	0
+3méen	Relatif à Nouméa, commune française située en Nouvelle-Calédonie.
+7ne		7	n
+9s		7	1
+7s		7	9
+5nal	Qui a rapport aux noumènes, aux choses telles qu’elles sont en soi.
+8e		8	n
+9s		8	1
+7ux		7l	9
+4ène	Chez Kant, désigne la chose en soi, par opposition à phénomène, qui désigne l’objet tel qu’il nous apparaît en passant par notre esprit.
+7s		7	0
+3nou	Personne qui garde un ou plusieurs enfants de façon professionnelle ou occasionnellement.
+6ne	Femme ou fille naïve, stupide.
+8rie	Bêtise.
+bs		b	0
+8s		8	0
+6rs	Ours en peluche.
+6s		6	0
+3ons		3er	1n
+3rrain	Fretin, petit poisson qu’on met dans un étang pour le repeupler.
+8s		8	0
+5i	Qui reçoit, qui a reçu de la nourriture.
+6ce	Femme qui allaite l’enfant d’une autre.
+8rie	Mot plaisant forgé par Molière : qualité de nourrice.
+bs		b	0
+8s		8	0
+7ier	Qui sert à la nutrition, qui nourrit, alimente.
+8ère	Femme qui nourrit.
+bs		b	0
+8ers		a	9
+6e		6	n
+7s		6	1
+5îmes		5ir	3
+5ir	Sustenter, servir d’aliment.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+7ent		7	1c
+8z		7	1m
+7iez		7	4
+8ons		7	2a
+7ons		7	1p
+9t		7	1i
+6s		6	9
+7sage	Soin et manière de nourrir et d’élever les bestiaux.
+bs		b	0
+9ient		6r	23
+as		6r	2e
+at		6r	1z
+9nt	Qui sustente ; qui nourrit beaucoup.
+be		b	n
+cs		b	1
+bs		b	9
+8e		6r	2d
+9ment	Action de nourrir.
+ds		d	0
+9nt		6r	1x
+9s		6r	2q
+9ur	Celui qui nourrit.
+bs		b	0
+9z		6r	1y
+8iez		6r	2s
+9ons		6r	2m
+8on	Enfant (garçon ou fille) qu’une femme nourrit de son lait.
+ane	Fille qu’une femme nourrit de son lait.
+cs		c	0
+as		a	0
+5ît		5ir	1q
+7es		5ir	2
+5iture	Aliment.
+as		a	0
+3s	Pronom de la première personne du pluriel, incluant le locuteur ainsi que d’autres personnes au nom de qui il parle, utilisable en sujet, en complément d’objet…
+3ure	État de ce qui est noué.
+6s		6	0
+3veau	Qui n’existait pas auparavant, avant telle date donnée, avec rien de pareil ni de comparable.
+7té	Caractère de ce qui n'existait pas auparavant ou qui était inconnu.
+9s	Parures, étoffes les plus nouvelles et les plus à la mode.
+7x		7	9
+5l	Masculin singulier de nouveau employée devant une voyelle ou un h muet.	5au
+6le	Genre littéraire basé sur un récit de fiction habituellement court, en prose, centré sur un seul événement, laissant peu de répit au lecteur et dont la chute e…
+8ment	Depuis peu de temps.
+8s	Renseignement sur l’état d’une personne ou d’une chose dont on n’était pas informé depuis quelque temps.
+7iste	Auteur ou autrice qui écrit des nouvelles.
+bs		b	0
+2va	Étoile qui devient extrêmement brillante pendant quelques jours par une explosion thermonucléaire sur la surface.
+4e		4	0
+4i		3er	m
+5ent		3er	w
+5s	Relatif à Noves, commune française située dans le département des Bouches-du-Rhône.
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		4	0
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3ateur	Personne qui introduit ou essaie d’introduire des idées nouvelles.
+8s		8	9
+5ion	Changement par lequel un nouveau titre est substitué à un ancien.
+8s		8	0
+5oire	Qui est relatif à la novation.
+5rice	Celle qui innove.
+9s		5eur	1
+3e		4r	1s
+3ée		3er	11
+5s		3er	10
+3ela	Sorte de feuilleton à l’eau de rose diffusé sur les chaînes de télévision brésiliennes.
+6s		6	0
+5ette	Jeune brebis qui n'a pas encore eu d’agneau.
+9s		9	0
+3élisa		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	1w
+7ant		7er	17
+8s		7er	2b
+9se		7er	29
+bnt		7er	26
+bs		7er	2f
+aiez		7er	2g
+bons		7er	2i
+7ât		7er	1q
+9es		7er	2c
+7ation	Variante orthographique de novellisation.
+cs		c	0
+7é		7er	1k
+8e		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Adapter pour en faire un roman.
+9a		9	18
+ai		9	1e
+bent		9	1r
+bs		9	1o
+bt		9	1d
+as		9	1l
+7èrent		7er	1c
+7erez		9	1m
+9iez		9	22
+aons		9	2a
+9ons		9	1p
+bt		9	1i
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	1v
+8ons		7er	1t
+7ons		7er	1n
+3elle	Loi promulguée par un empereur byzantin.
+7s	Constitutions de l’empereur Justinien, qui forment la quatrième et dernière partie du corps du droit romain.
+6isa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Adaptation sous forme de roman.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Adapter pour en faire un roman.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+4mbre	Onzième mois de l’année du calendrier grégorien, constitué de 30 jours.
+8s		8	0
+4nt		4r	v
+4r	Modifier (une obligation juridique) lors de son renouvellement.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+3és		3er	12
+3ez		4r	u
+3i	Personne qui s'est engagée par une promesse de mariage, jeune mariée ou marié, ou encore les jeunes mariés, le couple qui vient de s'unir.
+4ce	Qui est peu exercé, peu expérimenté en une activité, un métier, une profession.
+6s		6	0
+5iat	L’état des novices avant qu’ils fassent profession.
+8s		8	0
+4ez		3er	d
+4llada	Corrida opposant de jeunes taureaux (novillos) à de jeunes toreros n’ayant pas encore pris l’alternative (novilleros).
+9s		9	0
+6ero	Toréro novice.
+9s		9	0
+6o	Jeune taureau âgé de deux à trois ans, lidié dans les novilladas.
+7s		7	0
+4ons		3er	j
+3langue	Langue officielle de l’Océania.
+9s		9	0
+3ocaïne	Chlorhydrate de procaïne, utilisé comme anesthésique local.
+9s		9	0
+4ns		3er	r
+4tique	Ensemble des techniques et des phénomènes nouveaux liés à l'informatique.
+9s		9	0
+2ya		3er	13
+4de	Action de noyer une personne.
+6s		6	0
+4ge	Action de noyer, d’immerger.
+6s		6	0
+4i		3er	1j
+5ent		3er	16
+5s		3er	1g
+5t		3er	14
+3âmes		3er	3
+3ant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+4t	Relatif aux Noës-près-Troyes, commune française située dans le département de l’Aube.
+3âtes		3er	2
+3au	Partie centrale, dure, d’une drupe et qui contient une amande.
+5ta		6er	13
+7ge	Action de noyauter, tentative de prise de contrôle.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1k
+7e		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Faire de l’entrisme, prendre le pouvoir au cœur d’un groupe, d’une organisation.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5x		5	0
+3é	Personne qui se noie ou qui a péri par noyade.
+4e	Femme ou fille noyée.
+5s		4	1
+3er	Nom usuel des arbres du genre Juglans, Grands arbres à feuilles caduques alternes imparipennées, aux petites fleurs femelles verdâtres réunies par deux à quatr…
+5aie	Lieu planté de noyers.
+8s		8	0
+3èrent		3er	1c
+3ers		5	0
+3és		4	9
+3ez		4r	1b
+3iez		3er	d
+4ons		3er	1t
+3ons		3er	1n

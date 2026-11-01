@@ -1,141 +1,141 @@
-igame	Inspecteur général de l’administration en mission extraordinaire.
-igames		igame	0
-igamie	Circonscription d'un igame
-igamies		igamie	0
-igbo	Relatif aux Igbos en tant que peuple, à leur culture, à leur langue.
-igbos		igbo	0
-igloo	Habitation hémisphérique faite de blocs de neige.
-igloos		igloo	0
-iglou	Habitation hémisphérique faite de blocs de neige (iglou de chasse), soit fait de tourbe.
-iglous		iglou	0
-ignacien	Relatif aux Jésuites dont l’ordre fut fondé par Ignace de Loyola.
-ignacienne		ignacien	23
-ignaciennes		ignacien	1
-ignaciens		ignacien	9
-igname	Plantes grimpantes du genre Dioscorea, dont certaines ont une racine farineuse et alimentaire.
-ignames		igname	0
-ignare	Qui est d’une ignorance excessive.
-ignares		ignare	0
-igné	Qui est de feu, qui a les qualités du feu.
-ignée		igné	23
-ignées		igné	1
-ignés		igné	9
-ignicole	Se dit d’une personne adoratrice du feu.
-ignicoles		ignicole	0
-ignifère	Qui porte, qui transmet le feu.
-ignifères		ignifère	0
-ignifugation	Traitement pour rendre un matériau ininflammable.
-ignifugations		ignifugation	0
-ignifuge	Qui éteint le feu, qui préserve de l’incendie.
-ignifugea		ignifuger	33
-ignifugeai		ignifuger	22
-ignifugeaient		ignifuger	32
-ignifugeais		ignifuger	29
-ignifugeait		ignifuger	34
-ignifugeâmes		ignifuger	3
-ignifugeant		ignifuger	35
-ignifugeas		ignifuger	12
-ignifugeasse		ignifuger	6
-ignifugeassent		ignifuger	17
-ignifugeasses		ignifuger	8
-ignifugeassiez		ignifuger	14
-ignifugeassions		ignifuger	25
-ignifugeât		ignifuger	20
-ignifugeâtes		ignifuger	2
-ignifugée		ignifugé	23
-ignifugées		ignifugé	1
-ignifugent		ignifuger	31
-ignifugeons		ignifuger	27
-ignifuger	Enduire de matières ignifuges, pour protéger du feu.
-ignifugera		ignifuger	21
-ignifugerai		ignifuger	16
-ignifugeraient		ignifuger	28
-ignifugerais		ignifuger	18
-ignifugerait		ignifuger	26
-ignifugeras		ignifuger	7
-ignifugèrent		ignifuger	24
-ignifugerez		ignifuger	5
-ignifugeriez		ignifuger	4
-ignifugerions		ignifuger	11
-ignifugerons		ignifuger	10
-ignifugeront		ignifuger	15
-ignifugés		ignifugé	9
-ignifugez		ignifuger	30
-ignifugiez		ignifuger	13
-ignifugions		ignifuger	19
-ignimbrite	Roche formée de débris de lave acide issus d’une nuée ardente et soudés avant leur refroidissement, mélangés à une matrice vitreuse.
-ignimbrites		ignimbrite	0
-ignipuncture	Méthode de cautérisation à l'aide d'un fil de platine ou d'une aiguille que l'on chauffe au rouge sombre (environ 500°C).
-ignipunctures		ignipuncture	0
-ignition	État des corps en combustion.
-ignitions		ignition	0
-ignitron	Dispositif électronique utilisé pour redresser le courant alternatif.
-ignitrons		ignitron	0
-ignivome	Qui vomit du feu, de la lave.
-ignivomes		ignivome	0
-ignivore	Qualifie une montagne dont la « bouche » (le cratère) contient du « feu » (de la lave).
-ignivores		ignivore	0
-ignoble	De caractère non noble.
-ignoblement	D’une manière ignoble.
-ignobles		ignoble	0
-ignominie	Infamie, grand déshonneur.
-ignominies		ignominie	0
-ignominieuse		ignominieux	23
-ignominieuses		ignominieux	1
-ignominieux	Qui cause de l’ignominie.
-ignora		ignorer	39
-ignorai		ignorer	55
-ignoraient		ignorer	42
-ignorais		ignorer	52
-ignorait		ignorer	40
-ignorâmes		ignorer	3
-ignorance	État de celui qui est ignorant.
-ignorances		ignorance	0
-ignorant	Qui n’est pas instruit de certaines choses, qui ignore certaines choses.
-ignorante	Celle qui est ignorante (dans tous les sens de l’adjectif).
-ignorantes		ignorant	1
-ignorantin	Appartenant à l’ordre des hospitaliers de Saint-Jean-de-Dieu et portant ce nom par humilité.
-ignorantine		ignorantin	23
-ignorantines		ignorantin	1
-ignorantins		ignorantin	9
-ignorantisme	Système de ceux qui prônent les avantages de l’ignorance, ou qui soutiennent que la science est mauvaise en soi.
-ignorantismes		ignorantisme	0
-ignorantiste	Partisan de l’ignorantisme.
-ignorantistes		ignorantiste	0
-ignorants		ignorant	9
-ignoras		ignorer	12
-ignorasse		ignorer	6
-ignorassent		ignorer	78
-ignorasses		ignorer	8
-ignorassiez		ignorer	14
-ignorassions		ignorer	25
-ignorât		ignorer	62
-ignorâtes		ignorer	2
-ignoré	Qui est inconnu, caché.
-ignorée		ignoré	23
-ignorées		ignoré	1
-ignorent		ignorer	41
-ignorer	Ne pas connaître.
-ignorera		ignorer	44
-ignorerai		ignorer	50
-ignoreraient		ignorer	63
-ignorerais		ignorer	60
-ignorerait		ignorer	49
-ignoreras		ignorer	57
-ignorèrent		ignorer	48
-ignorerez		ignorer	5
-ignoreriez		ignorer	74
-ignorerions		ignorer	11
-ignorerons		ignorer	61
-ignoreront		ignorer	54
-ignores		ignorer	77
-ignorez		ignorer	47
-ignoriez		ignorer	67
-ignorions		ignorer	65
-ignorons		ignorer	59
-iguane	Reptile saurien, herbivore, qui ressemble à un grand lézard.
-iguanes		iguane	0
-iguanodon	Grand dinosaure herbivore du crétacé inférieur du sous-ordre des ornitischiens et de l’infra-ordre des ornithopodes.
-iguanodons		iguanodon	0
-igue	Cavité naturelle creusée dans le calcaire par les eaux de ruissellement.
-igues		igue	0
+0igame	Inspecteur général de l’administration en mission extraordinaire.
+5s		5	0
+4ie	Circonscription d'un igame
+6s		6	0
+2bo	Relatif aux Igbos en tant que peuple, à leur culture, à leur langue.
+4s		4	0
+2loo	Habitation hémisphérique faite de blocs de neige.
+5s		5	0
+4u	Habitation hémisphérique faite de blocs de neige (iglou de chasse), soit fait de tourbe.
+5s		5	0
+2nacien	Relatif aux Jésuites dont l’ordre fut fondé par Ignace de Loyola.
+8ne		8	n
+as		8	1
+8s		8	9
+4me	Plantes grimpantes du genre Dioscorea, dont certaines ont une racine farineuse et alimentaire.
+6s		6	0
+4re	Qui est d’une ignorance excessive.
+6s		6	0
+3é	Qui est de feu, qui a les qualités du feu.
+4e		4	n
+5s		4	1
+4s		4	9
+3icole	Se dit d’une personne adoratrice du feu.
+8s		8	0
+4fère	Qui porte, qui transmet le feu.
+8s		8	0
+5ugation	Traitement pour rendre un matériau ininflammable.
+cs		c	0
+7e	Qui éteint le feu, qui préserve de l’incendie.
+8a		8r	x
+9i		8r	m
+aent		8r	w
+as		8r	t
+at		8r	y
+8âmes		8r	3
+8ant		8r	z
+9s		8r	c
+ase		8r	6
+cnt		8r	h
+cs		8r	8
+biez		8r	e
+cons		8r	p
+8ât		8r	k
+aes		8r	2
+7ée		8	n
+9s		8	1
+7ent		8r	v
+8ons		8r	r
+8r	Enduire de matières ignifuges, pour protéger du feu.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+4mbrite	Roche formée de débris de lave acide issus d’une nuée ardente et soudés avant leur refroidissement, mélangés à une matrice vitreuse.
+as		a	0
+4puncture	Méthode de cautérisation à l'aide d'un fil de platine ou d'une aiguille que l'on chauffe au rouge sombre (environ 500°C).
+cs		c	0
+4tion	État des corps en combustion.
+8s		8	0
+5ron	Dispositif électronique utilisé pour redresser le courant alternatif.
+8s		8	0
+4vome	Qui vomit du feu, de la lave.
+8s		8	0
+6re	Qualifie une montagne dont la « bouche » (le cratère) contient du « feu » (de la lave).
+8s		8	0
+3oble	De caractère non noble.
+7ment	D’une manière ignoble.
+7s		7	0
+4minie	Infamie, grand déshonneur.
+9s		9	0
+9use		ax	n
+cs		ax	1
+ax	Qui cause de l’ignominie.
+4ra		5er	13
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ance	État de celui qui est ignorant.
+9s		9	0
+7t	Qui n’est pas instruit de certaines choses, qui ignore certaines choses.
+8e	Celle qui est ignorante (dans tous les sens de l’adjectif).
+9s		8	1
+8in	Appartenant à l’ordre des hospitaliers de Saint-Jean-de-Dieu et portant ce nom par humilité.
+ae		a	n
+bs		a	1
+as		a	9
+9sme	Système de ceux qui prônent les avantages de l’ignorance, ou qui soutiennent que la science est mauvaise en soi.
+cs		c	0
+ate	Partisan de l’ignorantisme.
+cs		c	0
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	26
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	1q
+7es		5er	2
+5é	Qui est inconnu, caché.
+6e		6	n
+7s		6	1
+5ent		6r	15
+6r	Ne pas connaître.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	5
+7iez		7	22
+8ons		7	b
+7ons		7	1p
+9t		7	1i
+6s		6r	25
+6z		6r	1b
+5iez		5er	1v
+6ons		5er	1t
+5ons		5er	1n
+2uane	Reptile saurien, herbivore, qui ressemble à un grand lézard.
+6s		6	0
+5odon	Grand dinosaure herbivore du crétacé inférieur du sous-ordre des ornitischiens et de l’infra-ordre des ornithopodes.
+9s		9	0
+3e	Cavité naturelle creusée dans le calcaire par les eaux de ruissellement.
+4s		4	0

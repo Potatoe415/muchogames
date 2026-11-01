@@ -1,7 +1,7 @@
-ndama	Variante de n’dama (race de bovins).
-ndamas		ndama	0
-ndébélé	Langue parlée par les Ndébélés, peuple d’Afrique australe.
-ndébélés		ndébélé	0
-Ndjaménois	Habitant de Ndjaména, au Tchad.
-ndolé	Variétés alimentaires de Vernonia, genre de plantes légumières, dont les feuilles sont consommées vertes mais aussi dans une moindre mesure séchées.
-ndolés		ndolé	0
+0ndama	Variante de n’dama (race de bovins).
+5s		5	0
+2ébélé	Langue parlée par les Ndébélés, peuple d’Afrique australe.
+7s		7	0
+0Ndjaménois	Habitant de Ndjaména, au Tchad.
+0ndolé	Variétés alimentaires de Vernonia, genre de plantes légumières, dont les feuilles sont consommées vertes mais aussi dans une moindre mesure séchées.
+5s		5	0

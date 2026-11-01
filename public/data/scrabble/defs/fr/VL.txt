@@ -1,10 +1,10 @@
-vlan	Onomatopée indiquant un bruit soudain, un coup subit.
-vlimeuse	Personne qui agit par des moyens détournés pour en tromper une autre et, par extension et atténuation, personne espiègle ou malicieuse.
-vlimeuses		vlimeuse	0
-vlimeux	Personne qui agit par des moyens détournés pour en tromper une autre et, par extension et atténuation, personne espiègle ou malicieuse.
-vlog	Blogue qui utilise la vidéo comme support principal de son contenu.
-vlogs		vlog	0
-vlogueur	Créateur de vlog, vlogue.
-vlogueurs		vlogueur	0
-vlogueuse	Créatrice de vlog.
-vlogueuses		vlogueuse	0
+0vlan	Onomatopée indiquant un bruit soudain, un coup subit.
+2imeuse	Personne qui agit par des moyens détournés pour en tromper une autre et, par extension et atténuation, personne espiègle ou malicieuse.
+8s		8	0
+6x	Personne qui agit par des moyens détournés pour en tromper une autre et, par extension et atténuation, personne espiègle ou malicieuse.
+2og	Blogue qui utilise la vidéo comme support principal de son contenu.
+4s		4	0
+4ueur	Créateur de vlog, vlogue.
+8s		8	0
+7se	Créatrice de vlog.
+9s		9	0

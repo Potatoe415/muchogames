@@ -1,196 +1,196 @@
-oecoumène	Orthographe par contrainte typographique d’œcoumène.
-oecoumènes	Orthographe par contrainte typographique d’œcoumènes.
-œcuménicité	Qualité de ce qui est œcuménique.
-œcuménicités		œcuménicité	0
-oecuménique	Mauvaise orthographe d’œcuménique.
-œcuméniquement	D’une manière œcuménique.
-oecuméniques	Orthographe par contrainte typographique d’œcuméniques.
-œcuménisme	Mouvement visant à la réunion de toutes les Églises chrétiennes.
-oecuménismes	Graphie erronée du mot œcuménismes.
-œcuméniste	Partisan de l'œcuménisme.
-oecuménistes	Graphie erronée du mot œcuménistes.
-oedémateuse	Variante par contrainte typographique d’œdémateuse.
-œdémateuses		œdémateux	1
-œdémateux	Qui est de la nature de l’œdème.
-œdématie	Synonyme de œdème.
-oedématiée	Variante par contrainte typographique du mot œdématiée.
-œdématiées		œdématié	1
-oedématies	Graphie erronée du mot œdématies.
-œdème	Enflure non douloureuse, qui est produite par une infiltration séreuse dans les tissus et qui se distingue des autres enflures parce qu’elle garde quelque temp…
-oedèmes	Pluriel de oedème.
-oedicnème	Orthographe par contrainte typographique d’œdicnème.
-oedicnèmes	Orthographe par contrainte typographique d’œdicnèmes.
-oedipe	Mauvaise orthographe d’œdipe.
-oedipes	Orthographe par contrainte typographique d’œdipes.
-œdipien	Relatif à Œdipe.
-oedipienne	Orthographe par contrainte typographique d’œdipienne.
-oedipiennes	Orthographe par contrainte typographique d’œdipiennes.
-oedipiens	Orthographe par contrainte typographique d’œdipiens.
-œil	Organe de la vue.
-oeillade	Variante par contrainte typographique de œillade.
-œillades		œillade	0
-oeillard	Orthographe par contrainte typographique de œillard.
-oeillards	Orthographe par contrainte typographique d’œillards.
-oeillère	Mauvaise orthographe d’œillère.
-oeillères	Orthographe par contrainte typographique d’œillères.
-oeillet	Voir œillet.
-oeilleton	Mauvaise orthographe d’œilleton.
-œilletonna		œilletonner	33
-oeilletonnage	Écriture qu’on peut rencontrer pour œilletonnage, le caractère œ n’étant pas disponible sur les claviers.
-oeilletonnages	Écriture qu’on peut rencontrer pour œilletonnages, le caractère œ n’étant pas disponible sur les claviers.
-œilletonnai		œilletonner	22
-œilletonnaient		œilletonner	32
-œilletonnais		œilletonner	29
-œilletonnait		œilletonner	34
-œilletonnâmes		œilletonner	3
-œilletonnant		œilletonner	35
-œilletonnas		œilletonner	12
-œilletonnasse		œilletonner	6
-œilletonnasses		œilletonner	8
-œilletonnât		œilletonner	20
-œilletonnâtes		œilletonner	2
-œilletonné		œilletonner	46
-œilletonnée		œilletonner	37
-œilletonnées		œilletonner	36
-œilletonnent		œilletonner	31
-œilletonner	Ôter les œilletons d'une plante.
-œilletonnera		œilletonner	21
-œilletonnerai		œilletonner	16
-œilletonnerais		œilletonner	18
-œilletonnerait		œilletonner	26
-œilletonneras		œilletonner	7
-œilletonnèrent		œilletonner	24
-œilletonnerez		œilletonner	5
-œilletonneriez		œilletonner	4
-œilletonnerons		œilletonner	10
-œilletonneront		œilletonner	15
-œilletonnés		œilletonner	38
-œilletonnez		œilletonner	30
-œilletonniez		œilletonner	13
-œilletonnions		œilletonner	19
-œilletonnons		œilletonner	27
-oeilletons	Orthographe par contrainte typographique d’œilletons.
-œillets		œillet	0
-oeillette	Mauvaise orthographe de œillette.
-oeillettes	Orthographe par contrainte typographique d’œillettes.
-œils	Pluriel inhabituel d’œil (notamment dans les mots composés).	œil
-oekoumène	Orthographe par contrainte typographique de œkoumène.
-oekoumènes	Orthographe par contrainte typographique d’œkoumènes.
-oenanthe	Variante typographique de œnanthe (la ligature est recommandée).
-oenanthes	Orthographe par contrainte typographique d’œnanthes.
-oenanthique	Variante typographique fautive de œnanthique souvent utilisée, le caractère « œ » n’étant pas disponible sur le clavier AZERTY, le plus utilisé par les francop…
-oenanthiques	Orthographe par contrainte typographique d’œnanthiques.
-oenilisme	Orthographe par contrainte typographique d’œnilisme.
-œnilismes		œnilisme	0
-œnochoé	Pichet pour le vin.
-œnochoés		œnochoé	0
-oenolique	Orthographe par contrainte typographique d’œnolique.
-oenoliques	Orthographe par contrainte typographique d’œnoliques.
-oenolisme	Orthographe par contrainte typographique de œnolisme.
-œnolismes		œnolisme	0
-oenologie	Variante orthographique de œnologie.
-œnologies		œnologie	0
-oenologique	Mauvaise orthographe de œnologique.
-oenologiques	Orthographe par contrainte typographique de œnologiques.
-oenologue	Variante par contrainte typographique d’œnologue.
-oenologues	Pluriel de oenologue.
-oenomètre	Mauvaise orthographe de œnomètre.
-oenomètres	Orthographe par contrainte typographique de œnomètres.
-œnométrie	Action, manière de mesurer la qualité du vin avec l’œnomètre.
-œnométries		œnométrie	0
-œnométrique	Qui a rapport à l’oenométrie.
-oenométriques	Orthographe par contrainte typographique d’œnométriques.
-oenophile	Orthographe par contrainte typographique de œnophile.
-oenophiles	Orthographe par contrainte typographique de œnophiles.
-oenotechnie	Orthographe par contrainte typographique d’œnotechnie.
-œnothèque	Magasin spécialisé dans la vente de vins.
-oenothèques	Orthographe par contrainte typographique de œnothèques.
-œnothera	Œnothère.
-oenothéracée	Orthographe par contrainte typographique d’œnothéracée.
-oenothéracées	Orthographe par contrainte typographique d’œnothéracées.
-oenotheras	Mauvaise orthographe de œnotheras.
-oenothère	Orthographe par contrainte typographique de œnothère.
-oenothères	Orthographe par contrainte typographique de œnothères.
-œnotourisme	Tourisme vitivinicole.
-œnotourismes		œnotourisme	0
-oersted	Variante orthographe de œrsted.
-oersteds	Orthographe par contrainte typographique de œrsteds.
-œrstite	Composition d’acier à forte aimantation rémanente, comportant notamment du titane et du cobalt.
-œrstites		œrstite	0
-oesophage	Variante par contrainte typographique d’œsophage.
-œsophages		œsophage	0
-œsophagien	Relatif à l’œsophage.
-oesophagienne	Orthographe par contrainte typographique de œsophagienne.
-oesophagiennes	Orthographe par contrainte typographique de œsophagiennes.
-œsophagiens		œsophagien	9
-oesophagique	Orthographe par contrainte typographique de œsophagique.
-oesophagiques	Orthographe par contrainte typographique de œsophagiques.
-œsophagite	Inflammation de l’œsophage.
-oesophagites	Orthographe par contrainte typographique de œsophagites.
-oesophagoscope	Orthographe par contrainte typographique de œsophagoscope.
-oesophagoscopes	Orthographe par contrainte typographique de œsophagoscopes.
-oesophagoscopie	Orthographe par contrainte typographique de œsophagoscopie.
-œstradiol	Stéroïde œstrogène du métabolisme servant au maintien de la fertilité et des caractères sexuels secondaires chez la femme.
-œstradiols		œstradiol	0
-œstral	Qui a rapport à l’œstrus.
-oestrale	Orthographe par contrainte typographique de œstrale.
-œstrales		œstral	1
-œstraux		œstral	9
-oestre	Variante par contrainte typographique de œstre.
-oestres	Orthographe par contrainte typographique d’œstres.
-oestridé	Orthographe par contrainte typographique d’œstridé.
-œstrides	Œstridés.
-œstriol	Hormone présente dans l’urine des femmes enceintes.
-œstriols		œstriol	0
-oestrogène	Variante orthographique de œstrogène.
-oestrogènes		oestrogène	0
-œstrogénique	Relatif aux œstrogènes.
-œstrogéniques		œstrogénique	0
-œstrone	Hormone sécrétée par l’ovaire.
-œstrones		œstrone	0
-œstrus	Période du cycle sexuel d’une femelle, durant laquelle elle est fécondable.
-œuf	Structure reproductrice produite par les animaux ovipares (oiseaux, reptiles, amphibiens, insectes, etc.) ou par d’autres animaux, formée dans les ovaires ou l…
-œufrier	Vase dans lequel on fait cuire des œufs frais, en y versant de l’eau bouillante.
-œufriers		œufrier	0
-œufs		œuf	0
-œuvé	Se dit des poissons femelles qui ont des œufs.
-oeuvée	Orthographe par contrainte typographique d’œuvée.
-oeuvées	Orthographe par contrainte typographique d’œuvées.
-oeuvés	Orthographe par contrainte typographique d’œuvés.
-œuvra		œuvrer	33
-œuvrai		œuvrer	22
-œuvraient		œuvrer	42
-œuvrais		œuvrer	52
-œuvrait		œuvrer	40
-œuvrâmes		œuvrer	3
-œuvrant		œuvrer	172
-œuvras		œuvrer	12
-œuvrasse		œuvrer	6
-œuvrassent		œuvrer	17
-œuvrasses		œuvrer	8
-œuvrassiez		œuvrer	14
-œuvrassions		œuvrer	25
-œuvrât		œuvrer	20
-œuvrâtes		œuvrer	2
-œuvre	Objet créé par un être vivant, manifestation tangible d’une pensée, même infime, réalisation d’un produit, fonctionnel ou non.
-œuvrent		œuvrer	41
-œuvrer	Travailler.
-œuvrera		œuvrer	44
-œuvrerai		œuvrer	16
-œuvreraient		œuvrer	28
-œuvrerais		œuvrer	18
-œuvrerait		œuvrer	26
-œuvreras		œuvrer	7
-œuvrèrent		œuvrer	24
-œuvrerez		œuvrer	5
-œuvreriez		œuvrer	4
-œuvrerions		œuvrer	11
-œuvrerons		œuvrer	10
-œuvreront		œuvrer	15
-œuvres		œuvre	192
-œuvrette	Œuvre de petite qualité ou de petites dimensions.
-œuvrettes		œuvrette	0
-œuvrez		œuvrer	47
-œuvriez		œuvrer	13
-œuvrions		œuvrer	65
-œuvrons		œuvrer	27
+0oecoumène	Orthographe par contrainte typographique d’œcoumène.
+9s	Orthographe par contrainte typographique d’œcoumènes.
+0œcuménicité	Qualité de ce qui est œcuménique.
+bs		b	0
+0oecuménique	Mauvaise orthographe d’œcuménique.
+0œcuméniquement	D’une manière œcuménique.
+0oecuméniques	Orthographe par contrainte typographique d’œcuméniques.
+0œcuménisme	Mouvement visant à la réunion de toutes les Églises chrétiennes.
+0oecuménismes	Graphie erronée du mot œcuménismes.
+0œcuméniste	Partisan de l'œcuménisme.
+0oecuménistes	Graphie erronée du mot œcuménistes.
+2démateuse	Variante par contrainte typographique d’œdémateuse.
+0œdémateuses		8x	1
+8x	Qui est de la nature de l’œdème.
+6ie	Synonyme de œdème.
+0oedématiée	Variante par contrainte typographique du mot œdématiée.
+0œdématiées		8	1
+0oedématies	Graphie erronée du mot œdématies.
+0œdème	Enflure non douloureuse, qui est produite par une infiltration séreuse dans les tissus et qui se distingue des autres enflures parce qu’elle garde quelque temp…
+0oedèmes	Pluriel de oedème.
+3icnème	Orthographe par contrainte typographique d’œdicnème.
+9s	Orthographe par contrainte typographique d’œdicnèmes.
+4pe	Mauvaise orthographe d’œdipe.
+6s	Orthographe par contrainte typographique d’œdipes.
+0œdipien	Relatif à Œdipe.
+0oedipienne	Orthographe par contrainte typographique d’œdipienne.
+as	Orthographe par contrainte typographique d’œdipiennes.
+8s	Orthographe par contrainte typographique d’œdipiens.
+0œil	Organe de la vue.
+0oeillade	Variante par contrainte typographique de œillade.
+0œillades		7	0
+0oeillard	Orthographe par contrainte typographique de œillard.
+8s	Orthographe par contrainte typographique d’œillards.
+5ère	Mauvaise orthographe d’œillère.
+8s	Orthographe par contrainte typographique d’œillères.
+5et	Voir œillet.
+7on	Mauvaise orthographe d’œilleton.
+0œilletonna		9er	x
+0oeilletonnage	Écriture qu’on peut rencontrer pour œilletonnage, le caractère œ n’étant pas disponible sur les claviers.
+ds	Écriture qu’on peut rencontrer pour œilletonnages, le caractère œ n’étant pas disponible sur les claviers.
+0œilletonnai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+ds		9er	8
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Ôter les œilletons d'une plante.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+0oeilletons	Orthographe par contrainte typographique d’œilletons.
+0œillets		6	0
+0oeillette	Mauvaise orthographe de œillette.
+9s	Orthographe par contrainte typographique d’œillettes.
+0œils	Pluriel inhabituel d’œil (notamment dans les mots composés).	3
+0oekoumène	Orthographe par contrainte typographique de œkoumène.
+9s	Orthographe par contrainte typographique d’œkoumènes.
+2nanthe	Variante typographique de œnanthe (la ligature est recommandée).
+8s	Orthographe par contrainte typographique d’œnanthes.
+7ique	Variante typographique fautive de œnanthique souvent utilisée, le caractère « œ » n’étant pas disponible sur le clavier AZERTY, le plus utilisé par les francop…
+bs	Orthographe par contrainte typographique d’œnanthiques.
+3ilisme	Orthographe par contrainte typographique d’œnilisme.
+0œnilismes		8	0
+2ochoé	Pichet pour le vin.
+7s		7	0
+0oenolique	Orthographe par contrainte typographique d’œnolique.
+9s	Orthographe par contrainte typographique d’œnoliques.
+6sme	Orthographe par contrainte typographique de œnolisme.
+0œnolismes		8	0
+0oenologie	Variante orthographique de œnologie.
+0œnologies		8	0
+0oenologique	Mauvaise orthographe de œnologique.
+bs	Orthographe par contrainte typographique de œnologiques.
+7ue	Variante par contrainte typographique d’œnologue.
+9s	Pluriel de oenologue.
+4mètre	Mauvaise orthographe de œnomètre.
+9s	Orthographe par contrainte typographique de œnomètres.
+0œnométrie	Action, manière de mesurer la qualité du vin avec l’œnomètre.
+9s		9	0
+8que	Qui a rapport à l’oenométrie.
+0oenométriques	Orthographe par contrainte typographique d’œnométriques.
+4phile	Orthographe par contrainte typographique de œnophile.
+9s	Orthographe par contrainte typographique de œnophiles.
+4technie	Orthographe par contrainte typographique d’œnotechnie.
+0œnothèque	Magasin spécialisé dans la vente de vins.
+0oenothèques	Orthographe par contrainte typographique de œnothèques.
+0œnothera	Œnothère.
+0oenothéracée	Orthographe par contrainte typographique d’œnothéracée.
+cs	Orthographe par contrainte typographique d’œnothéracées.
+6eras	Mauvaise orthographe de œnotheras.
+6ère	Orthographe par contrainte typographique de œnothère.
+9s	Orthographe par contrainte typographique de œnothères.
+0œnotourisme	Tourisme vitivinicole.
+bs		b	0
+0oersted	Variante orthographe de œrsted.
+7s	Orthographe par contrainte typographique de œrsteds.
+0œrstite	Composition d’acier à forte aimantation rémanente, comportant notamment du titane et du cobalt.
+7s		7	0
+0oesophage	Variante par contrainte typographique d’œsophage.
+0œsophages		8	0
+7ien	Relatif à l’œsophage.
+0oesophagienne	Orthographe par contrainte typographique de œsophagienne.
+ds	Orthographe par contrainte typographique de œsophagiennes.
+0œsophagiens		a	9
+0oesophagique	Orthographe par contrainte typographique de œsophagique.
+cs	Orthographe par contrainte typographique de œsophagiques.
+0œsophagite	Inflammation de l’œsophage.
+0oesophagites	Orthographe par contrainte typographique de œsophagites.
+8oscope	Orthographe par contrainte typographique de œsophagoscope.
+es	Orthographe par contrainte typographique de œsophagoscopes.
+die	Orthographe par contrainte typographique de œsophagoscopie.
+0œstradiol	Stéroïde œstrogène du métabolisme servant au maintien de la fertilité et des caractères sexuels secondaires chez la femme.
+9s		9	0
+5l	Qui a rapport à l’œstrus.
+0oestrale	Orthographe par contrainte typographique de œstrale.
+0œstrales		6	1
+5ux		5l	9
+0oestre	Variante par contrainte typographique de œstre.
+6s	Orthographe par contrainte typographique d’œstres.
+5idé	Orthographe par contrainte typographique d’œstridé.
+0œstrides	Œstridés.
+5ol	Hormone présente dans l’urine des femmes enceintes.
+7s		7	0
+0oestrogène	Variante orthographique de œstrogène.
+as		a	0
+0œstrogénique	Relatif aux œstrogènes.
+cs		c	0
+5ne	Hormone sécrétée par l’ovaire.
+7s		7	0
+4us	Période du cycle sexuel d’une femelle, durant laquelle elle est fécondable.
+1uf	Structure reproductrice produite par les animaux ovipares (oiseaux, reptiles, amphibiens, insectes, etc.) ou par d’autres animaux, formée dans les ovaires ou l…
+3rier	Vase dans lequel on fait cuire des œufs frais, en y versant de l’eau bouillante.
+7s		7	0
+3s		3	0
+2vé	Se dit des poissons femelles qui ont des œufs.
+0oeuvée	Orthographe par contrainte typographique d’œuvée.
+6s	Orthographe par contrainte typographique d’œuvées.
+5s	Orthographe par contrainte typographique d’œuvés.
+0œuvra		4er	x
+5i		4er	m
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	4s
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Objet créé par un être vivant, manifestation tangible d’une pensée, même infime, réalisation d’un produit, fonctionnel ou non.
+5nt		5r	15
+5r	Travailler.
+6a		6	18
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	5c
+5tte	Œuvre de petite qualité ou de petites dimensions.
+8s		8	0
+5z		5r	1b
+4iez		4er	d
+5ons		4er	1t
+4ons		4er	r

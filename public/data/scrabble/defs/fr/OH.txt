@@ -1,10 +1,10 @@
-oh	Marque l’étonnement ou la surprise.
-ohé	Interjection servant à appeler quelqu’un.
-ohm	Unité de mesure de résistance électrique du Système international, dont le symbole est la lettre grecque oméga (Ω).
-ohmique	Relatif à l’ohm, qui se mesure en ohms.
-ohmiques		ohmique	0
-ohmmètre	Instrument de mesure spécialisé dans la mesure de la résistance électrique.
-ohmmètres		ohmmètre	0
-ohms		ohm	0
-ohnisme	Synonyme de toyotisme.
-ohnismes		ohnisme	0
+0oh	Marque l’étonnement ou la surprise.
+2é	Interjection servant à appeler quelqu’un.
+2m	Unité de mesure de résistance électrique du Système international, dont le symbole est la lettre grecque oméga (Ω).
+3ique	Relatif à l’ohm, qui se mesure en ohms.
+7s		7	0
+3mètre	Instrument de mesure spécialisé dans la mesure de la résistance électrique.
+8s		8	0
+3s		3	0
+2nisme	Synonyme de toyotisme.
+7s		7	0

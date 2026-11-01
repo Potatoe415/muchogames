@@ -1,1076 +1,1076 @@
-or	Élément chimique de symbole Au de numéro atomique 79 et de masse atomique 196,96 qui fait partie des métaux de transition.
-oracle	Selon la croyance des Anciens, réponse d’une divinité que l’on venait consulter en un lieu sacré, et dont un interprète inspiré devait dévoiler le sens, sans p…
-oracles		oracle	0
-orage	Perturbation atmosphérique, ordinairement de peu de durée, qui se manifeste par un vent impétueux, de la pluie ou de la grêle, des éclairs et du tonnerre ou un…
-orages		orage	0
-orageuse		orageux	23
-orageusement	D’une manière orageuse.
-orageuses		orageux	1
-orageux	Qui cause, qui annonce l’orage.
-oraison	Assemblage de mots qui forment un sens complet et qui sont construits suivant les règles grammaticales.
-oraisons		oraison	0
-oral	Qui est exprimé ou transmis de vive voix, par opposition à écrit.
-orale		oral	23
-oralement	Au moyen de la parole.
-orales		oral	1
-oralisa		oraliser	33
-oralisai		oraliser	22
-oralisaient		oraliser	32
-oralisais		oraliser	29
-oralisait		oraliser	34
-oralisâmes		oraliser	3
-oralisant		oraliser	35
-oralisas		oraliser	12
-oralisasse		oraliser	6
-oralisassent		oraliser	17
-oralisasses		oraliser	8
-oralisassiez		oraliser	14
-oralisassions		oraliser	25
-oralisât		oraliser	20
-oralisâtes		oraliser	2
-oralisé		oraliser	46
-oralisée		oraliser	37
-oralisées		oraliser	36
-oralisent		oraliser	31
-oraliser	Exprimer par oral, de vive voix, en prononçant.
-oralisera		oraliser	21
-oraliserai		oraliser	16
-oraliseraient		oraliser	28
-oraliserais		oraliser	18
-oraliserait		oraliser	26
-oraliseras		oraliser	7
-oralisèrent		oraliser	24
-oraliserez		oraliser	5
-oraliseriez		oraliser	4
-oraliserions		oraliser	11
-oraliserons		oraliser	10
-oraliseront		oraliser	15
-oralisés		oraliser	38
-oralisez		oraliser	30
-oralisiez		oraliser	13
-oralisions		oraliser	19
-oralisons		oraliser	27
-oralité	Caractère de ce qui est oral, parlé, par opposition à scribalité.
-oralités		oralité	0
-oranais	Relatif à Oran, sa région, ou ses habitants.
-oranaise		oranais	23
-oranaises		oranais	1
-orange	Fruit de l’oranger, agrume de couleur orangée et de forme sphérique, composé d’une écorce orange avec une chair juteuse et divisé en loges par des cloisons.
-orangea		oranger	33
-orangeade	Boisson qui se fait avec du jus d’orange, du sucre et de l’eau.
-orangeades		orangeade	0
-orangeai		oranger	22
-orangeaient		oranger	32
-orangeais		oranger	29
-orangeait		oranger	34
-orangeâmes		oranger	3
-orangeant		oranger	35
-orangeas		oranger	12
-orangeasse		oranger	6
-orangeassent		oranger	17
-orangeasses		oranger	8
-orangeassiez		oranger	14
-orangeassions		oranger	25
-orangeat	Écorce d’orange confite.
-orangeâtes		oranger	2
-orangeats		orangeat	0
-orangée		orangé	23
-orangées		orangé	1
-orangent		oranger	31
-orangeons		oranger	27
-oranger	Arbre à feuilles persistantes, à fleurs blanches et très odorantes, qui porte les oranges.
-orangera		oranger	21
-orangerai		oranger	16
-orangeraie	Verger d’orangers.
-orangeraient		oranger	28
-orangeraies		orangeraie	0
-orangerais		oranger	18
-orangerait		oranger	26
-orangeras		oranger	7
-orangèrent		oranger	24
-orangerez		oranger	5
-orangerie	Lieu fermé, où l’on conserve, pendant l’hiver, des orangers en caisse et d’autres plantes fragiles.
-orangeries		orangerie	0
-orangeriez		oranger	4
-orangerions		oranger	11
-orangerons		oranger	10
-orangeront		oranger	15
-orangers		oranger	0
-oranges		orange	149
-orangette	Orange cueillie avant la maturité, utilisée en confiserie.
-orangettes		orangette	0
-orangez		oranger	47
-orangiez		oranger	13
-orangions		oranger	19
-orangisme	Système politique des protestants anglais, établis en Irlande, et réclamant envers les catholiques de ce pays la continuation des vexations dont ceux-ci furent…
-orangismes		orangisme	0
-orangiste	Relatif à l’orangisme, mouvement anglican, antipapiste irlandais.
-orangistes		orangiste	0
-orant	Personne en prière.
-orante	Celle qui est en prière.
-orantes		orant	1
-orants		orant	0
-orateur	Celui qui compose, qui prononce des discours ou des ouvrages d’éloquence.
-orateurs		orateur	0
-oratoire	Qui appartient à l’orateur.
-oratoires		oratoire	0
-oratorien	Relatif à la congrégation de l’Oratoire.
-oratorienne		oratorien	23
-oratoriennes		oratorien	1
-oratoriens		oratorien	0
-oratorio	Musique lyrique destinée à être exécutée, sans décors ni costumes.
-oratorios		oratorio	0
-oratrice	Celle qui compose, qui prononce des discours ou des ouvrages d’éloquence.
-oratrices		oratrice	0
-oraux		oral	9
-orbe	Cercle.
-orbes		orbe	0
-orbicole	Susceptible de vivre sur nʼimporte quel point du globe.
-orbicoles		orbicole	0
-orbiculaire	Dont le contour est circulaire.
-orbiculaires		orbiculaire	0
-orbita		orbiter	39
-orbitai		orbiter	22
-orbitaient		orbiter	32
-orbitaire	Qui a rapport à l’orbite de l’œil.
-orbitaires		orbitaire	0
-orbitais		orbiter	29
-orbitait		orbiter	34
-orbital	Qui concerne l’orbite d’un corps céleste ou d’un satellite artificiel.
-orbitale	Fonction mathématique représentant l’onde stationnaire associée à un électron en interaction avec les autres particules constituant l’atome ou l’entité molécul…
-orbitales		orbital	1
-orbitâmes		orbiter	3
-orbitant		orbiter	35
-orbitas		orbiter	12
-orbitasse		orbiter	6
-orbitassent		orbiter	17
-orbitasses		orbiter	8
-orbitassiez		orbiter	14
-orbitassions		orbiter	25
-orbitât		orbiter	20
-orbitâtes		orbiter	2
-orbitaux		orbital	9
-orbite	Cavité osseuse dans laquelle l’œil est placé.
-orbitèle	Se dit dʼune araignée qui tisse une toile formée de cercles concentriques.
-orbitèles		orbitèle	0
-orbitent		orbiter	31
-orbiter	Décrire une orbite autour d’un corps principal.
-orbitera		orbiter	21
-orbiterai		orbiter	16
-orbiteraient		orbiter	28
-orbiterais		orbiter	18
-orbiterait		orbiter	26
-orbiteras		orbiter	7
-orbitèrent		orbiter	24
-orbiterez		orbiter	5
-orbiteriez		orbiter	4
-orbiterions		orbiter	11
-orbiterons		orbiter	10
-orbiteront		orbiter	15
-orbites		orbite	0
-orbiteur	Engin spatial ou élément d’un engin spatial qui reste en orbite autour d’un astre pour assurer des missions spécifiques d’une durée déterminée.
-orbiteurs		orbiteur	0
-orbitez		orbiter	30
-orbitiez		orbiter	13
-orbitions		orbiter	19
-orbitographie	Détermination et représentation des caractéristiques orbitales d’un satellite artificiel.
-orbitographies		orbitographie	0
-orbiton	L’une des trois quasi-particules, avec les chargeons et les spinons, qui résultent de la division des électrons contenus dans les solides au cours du processus…
-orbitons		orbiton	0
-orcanète	Variante de orcanette.
-orcanètes		orcanète	0
-orcanette	Genre de plante de la famille des Boraginacées, dont certaines espèces étaient utilisées jadis en teinturerie comme par exemple l’orcanette des teinturiers (Al…
-orcanettes		orcanette	0
-orcéine	Colorant rouge produit par l’action de l’ammoniaque liquide sur l’orcine.
-orchestique	Qualifie celui des deux genres principaux de la gymnastique ancienne, qui embrassait tout ce qui avait rapport à la danse et à l’exercice de la paume.
-orchestiques		orchestique	0
-orchestra		orchestrer	39
-orchestrai		orchestrer	22
-orchestraient		orchestrer	42
-orchestrais		orchestrer	29
-orchestrait		orchestrer	40
-orchestral	Ayant un lien, un rapport avec un orchestre.
-orchestrale		orchestral	23
-orchestrales		orchestral	1
-orchestrâmes		orchestrer	3
-orchestrant		orchestrer	43
-orchestras		orchestrer	12
-orchestrasse		orchestrer	6
-orchestrassent		orchestrer	17
-orchestrasses		orchestrer	8
-orchestrassiez		orchestrer	14
-orchestrassions		orchestrer	25
-orchestrât		orchestrer	20
-orchestrâtes		orchestrer	2
-orchestrateur	Celui qui finalise l’orchestration d’une musique.
-orchestrateurs		orchestrateur	0
-orchestration	Combinaison des différentes parties d’un ensemble instrumental.
-orchestrations		orchestration	0
-orchestratrice	Celle qui orchestre.
-orchestratrices		orchestratrice	0
-orchestraux		orchestral	9
-orchestre	Partie d’une salle de spectacle contenant les places les plus basses et située au plus près de la scène, entre la fosse d’orchestre et le parterre.
-orchestrée		orchestré	23
-orchestrées		orchestré	1
-orchestrent		orchestrer	41
-orchestrer	Combiner pour l’orchestre une composition musicale.
-orchestrera		orchestrer	21
-orchestrerai		orchestrer	16
-orchestreraient		orchestrer	28
-orchestrerais		orchestrer	18
-orchestrerait		orchestrer	26
-orchestreras		orchestrer	7
-orchestrèrent		orchestrer	24
-orchestrerez		orchestrer	5
-orchestreriez		orchestrer	4
-orchestrerions		orchestrer	11
-orchestrerons		orchestrer	10
-orchestreront		orchestrer	15
-orchestrés		orchestrer	53
-orchestrez		orchestrer	30
-orchestriez		orchestrer	13
-orchestrion	Sorte d’orgue portatif, piano uni à quelques registres d’orgue.
-orchestrions		orchestrion	0
-orchestrons		orchestrer	27
-orchialgie	Douleur nerveuse des testicules.
-orchialgies		orchialgie	0
-orchidacée	Famille de plantes monocotylédones (Orchidacées) dont l'orchis est le type.
-orchidacées	Famille botanique qui regroupe des plantes monocotylédones du type des orchidées.
-orchidée	Plante monocotylédone et bulbeuse, de la famille des Orchidaceae (Orchidacées), dont le type est l’orchis.
-orchidées		orchidée	0
-orchidophile	Amateur, amatrice d’orchidées.
-orchidophiles		orchidophile	0
-orchidophilie	Goût, étude des orchidées.
-orchidophilies		orchidophilie	0
-orchis	Orchidée sauvage terrestre, du genre Orchis, créé par Linné en 1753, qui regroupait alors de nombreuses espèces dont certaines ont ensuite été déplacées dans d…
-orchite	Inflammation aiguë ou chronique du testicule.
-orchites		orchite	0
-ordalie	Épreuve, allant jusqu’à la torture, usitée au Moyen Âge comme preuve en justice.
-ordalies		ordalie	0
-ordalique	Se dit d’un comportement très risqué, qui joue avec la mort.
-ordaliques		ordalique	0
-ordi	Ordinateur.
-ordinaire	Commun ; habituel.
-ordinairement	De manière ordinaire.
-ordinaires		ordinaire	0
-ordinal	Se dit en général d'un nombre lorsqu'il ne sert qu'à indiquer une position ou un rang, dans une série.
-ordinale		ordinal	23
-ordinales		ordinal	1
-ordinand	Celui qui se présente à l’évêque pour être ordonné prêtre ou diacre.
-ordinands		ordinand	0
-ordinant	Évêque qui confère les ordres sacrés.
-ordinants		ordinant	0
-ordinariat	Juridiction appartenant à l’évêque, à l’autorité diocésaine.
-ordinariats		ordinariat	0
-ordinateur	Qui ordonne.
-ordinateurs		ordinateur	0
-ordinaticien	Informaticien.
-ordinaticienne	Informaticienne.
-ordinaticiennes		ordinaticienne	0
-ordinaticiens		ordinaticien	0
-ordination	Action de conférer ou de recevoir les ordres de l’Église.
-ordinations		ordination	0
-ordinatrice	Appareil électronique capable, en appliquant des instructions prédéfinies (programme), d’effectuer des traitements automatisés de données.
-ordinatrices		ordinateur	1
-ordinaux		ordinal	9
-ordinogramme	Organigramme de programmation : c’est la mise en ordre par l’écriture synthétique d’un ensemble de procédures qui seront reprises individuellement sous forme d…
-ordinogrammes		ordinogramme	0
-ordiphone	Téléphone mobile couplé à un assistant numérique personnel.
-ordiphones		ordiphone	0
-ordis		ordi	175
-ordo	Livret qui s’imprime tous les ans, pour indiquer aux ecclésiastiques la manière dont ils doivent faire et réciter l’office de chaque jour et qui comprend aussi…
-ordonna		ordonner	39
-ordonnable	Qui peut être ordonné, rangé dans un certain ordre.
-ordonnables		ordonnable	0
-ordonnai		ordonner	55
-ordonnaient		ordonner	42
-ordonnais		ordonner	52
-ordonnait		ordonner	40
-ordonnâmes		ordonner	3
-ordonnança		ordonnancer	33
-ordonnançai		ordonnancer	22
-ordonnançaient		ordonnancer	32
-ordonnançais		ordonnancer	29
-ordonnançait		ordonnancer	34
-ordonnançâmes		ordonnancer	3
-ordonnançant		ordonnancer	35
-ordonnanças		ordonnancer	12
-ordonnançasse		ordonnancer	6
-ordonnançassent		ordonnancer	17
-ordonnançasses		ordonnancer	8
-ordonnançassiez		ordonnancer	14
-ordonnançât		ordonnancer	20
-ordonnançâtes		ordonnancer	2
-ordonnance	Disposition des choses selon l’ordre, la convenance.
-ordonnancée		ordonnancer	45
-ordonnancées		ordonnancer	36
-ordonnancement	Action d’ordonnancer un paiement.
-ordonnancements		ordonnancement	0
-ordonnancent		ordonnancer	31
-ordonnancer	Inscrire au bas d’un état, d’un mémoire, l’ordre d’en payer le montant.
-ordonnancera		ordonnancer	21
-ordonnancerai		ordonnancer	16
-ordonnancerais		ordonnancer	18
-ordonnancerait		ordonnancer	26
-ordonnanceras		ordonnancer	7
-ordonnancèrent		ordonnancer	24
-ordonnancerez		ordonnancer	5
-ordonnanceriez		ordonnancer	4
-ordonnancerions		ordonnancer	11
-ordonnancerons		ordonnancer	10
-ordonnanceront		ordonnancer	15
-ordonnancés		ordonnancer	38
-ordonnancez		ordonnancer	30
-ordonnancier	Bloc d'ordonnances.
-ordonnanciers		ordonnancier	0
-ordonnanciez		ordonnancer	13
-ordonnancions		ordonnancer	19
-ordonnançons		ordonnancer	27
-ordonnant		ordonner	43
-ordonnas		ordonner	12
-ordonnasse		ordonner	6
-ordonnassent		ordonner	17
-ordonnasses		ordonner	8
-ordonnassiez		ordonner	14
-ordonnassions		ordonner	25
-ordonnât		ordonner	20
-ordonnâtes		ordonner	2
-ordonnateur	Celui qui ordonne, qui dispose.
-ordonnateurs		ordonnateur	0
-ordonnatrice	Celle qui ordonne, qui dispose.
-ordonnatrices		ordonnatrice	0
-ordonné	Qui est dans un ordre donné.
-ordonnée	Position d’un point d’un plan par rapport au deuxième axe, en général représenté verticalement (axe des y), la position par rapport au premier axe étant l’absc…
-ordonnées		ordonné	1
-ordonnent		ordonner	41
-ordonner	Disposer suivant un certain ordre.
-ordonnera		ordonner	44
-ordonnerai		ordonner	50
-ordonneraient		ordonner	28
-ordonnerais		ordonner	60
-ordonnerait		ordonner	49
-ordonneras		ordonner	7
-ordonnèrent		ordonner	48
-ordonnerez		ordonner	5
-ordonneriez		ordonner	4
-ordonnerions		ordonner	11
-ordonnerons		ordonner	10
-ordonneront		ordonner	54
-ordonnés		ordonné	9
-ordonnez		ordonner	47
-ordonniez		ordonner	67
-ordonnions		ordonner	19
-ordonnons		ordonner	59
-ordos		ordo	0
-ordovicien	Relatif à l’Ordovicien.
-ordre	Arrangement raisonné et logique, disposition régulière des choses les unes par rapport aux autres.
-ordrée		ordré	23
-ordrées		ordré	1
-ordres		ordre	0
-ordure	Tout ce qui est malpropre, immondice, crasse.
-ordures		ordure	0
-ordurier	Qui se plaît à dire ou à écrire des choses grossières.
-ordurière		ordurier	23
-ordurières		ordurier	1
-orduriers		ordurier	9
-ore	Contrevent au côté opposé à la tuyère, dans les feux catalans.
-oréade	Nymphe ou divinité des montagnes et des grottes.
-oréades		oréade	0
-orée	Le bord, la lisière d’un bois.
-orées		orée	0
-oreillard	Dont les oreilles sont longues, basses, pendantes ou mal plantées.
-oreillarde		oreillard	23
-oreillardes		oreillard	1
-oreillards		oreillard	9
-oreille	Appareil de l’audition divisé en trois parties.
-oreiller	Coussin qui sert à soutenir la tête quand on est couché.
-oreillers		oreiller	0
-oreilles		oreille	0
-oreillette	Chacune des deux cavités du cœur qui sont placées au-dessus des deux ventricules.
-oreillettes		oreillette	0
-oreillon	Partie saillante de l’oreille chez la chauve-souris.
-oreillons	Infection virale des glandes parotides provoquant des douleurs aux oreilles.
-orémus	Prière, oraison.
-oréopithèque	Hominidé fossile du Miocène, découvert en Italie.
-oréopithèques		oréopithèque	0
-oréotrague	Espèce de petite antilope des régions montagneuses de l'Afrique de l'Est et australe surtout, à petits sabots et au pelage très épais.
-oréotragues		oréotrague	0
-ores	Ne s’emploie que dans d’ores et déjà, « dès maintenant ».
-orexigène	Qui est susceptible de stimuler ou d’augmenter l'appétit.
-orexigènes		orexigène	0
-orfèvre	Artisan et marchand qui fabrique et qui vend des bijoux et autres ouvrages d’or et d’argent, de platine ou de tout métal précieux.
-orfévrée		orfévré	23
-orfévrées		orfévré	1
-orfèvrerie	Art des orfèvres.
-orfèvreries		orfèvrerie	0
-orfèvres		orfèvre	0
-orfraie	Oiseau de proie diurne, l’aigle pygargue (Haliaeetus albicilla).
-orfraies		orfraie	0
-orfroi	Étoffe tissée d’or servant de parement d’une chape, d’une chasuble.
-orfrois		orfroi	0
-organdi	Sorte de mousseline ou de toile de coton fort transparente et qui a de l’apprêt.
-organdis		organdi	0
-organe	Partie d’un organisme vivant, considéré comme un tout et comme remplissant une fonction nécessaire ou utile à sa vie.
-organeau	Anneau de fer où l’on attache un câble.
-organeaux		organeau	0
-organelle	Synonyme de organite.
-organelles		organelle	0
-organes		organe	0
-organicien	Celui qui, dans l’étude des corps vivants, met au premier rang la considération des organes.
-organicienne	Celle qui, dans l’étude des corps vivants, met au premier rang la considération des organes.
-organiciennes		organicienne	0
-organiciens		organicien	0
-organicisme	Théorie médicale qui s’efforce de rattacher toute maladie à une lésion matérielle d’un organe.
-organiciste	Relatif ou relative à l’organicisme.
-organicistes		organiciste	0
-organier	Facteur d’orgues.
-organiers		organier	0
-organigramme	Schéma d’organisation, notamment des rapports hiérarchiques à l’intérieur d’un organisme (entreprise, administration, école…).
-organigrammes		organigramme	0
-organique	Relatif aux organes, à la constitution même d’un être vivant.
-organiquement	D’une manière organique.
-organiques		organique	0
-organisa		organiser	39
-organisable	Qui peut être organisé.
-organisables		organisable	0
-organisai		organiser	55
-organisaient		organiser	42
-organisais		organiser	52
-organisait		organiser	40
-organisâmes		organiser	68
-organisant	Qui organise.
-organisas		organiser	12
-organisasse		organiser	6
-organisassent		organiser	17
-organisasses		organiser	8
-organisassiez		organiser	14
-organisassions		organiser	25
-organisât		organiser	62
-organisâtes		organiser	2
-organisateur	Personne chargée de l'organisation d'un événement.
-organisateurs		organisateur	9
-organisation	Action d’organiser.
-organisationnel	Relatif à l’organisation.
-organisations		organisation	0
-organisatrice	Celle qui organise.
-organisatrices		organisatrice	0
-organisé	Qualifie une personne ou une chose faisant preuve d’organisation, de logique, de rationalité, de pragmatisme.
-organisée		organisé	23
-organisées		organisé	1
-organisent		organiser	41
-organiser	Disposer les parties d’un corps pour les fonctions auxquelles il est destiné.
-organisera		organiser	44
-organiserai		organiser	50
-organiseraient		organiser	28
-organiserais		organiser	60
-organiserait		organiser	49
-organiseras		organiser	7
-organisèrent		organiser	48
-organiserez		organiser	58
-organiseriez		organiser	74
-organiserions		organiser	11
-organiserons		organiser	61
-organiseront		organiser	54
-organisés		organisé	9
-organiseur	Logiciel dédié à la gestion d’un agenda, d’un carnet d’adresses et des rendez-vous.
-organiseurs		organiseur	0
-organisez		organiser	47
-organisiez		organiser	67
-organisions		organiser	65
-organisme	Être vivant individuel, unicellulaire ou pluricellulaire, possédant une organisation interne autonome lui permettant d'accomplir ses fonctions vitales.
-organismes		organisme	0
-organisons		organiser	59
-organiste	Personne qui joue de l’orgue.
-organistes		organiste	0
-organite	Chacune des structures compartimentées et spécialisées contenues dans le cytoplasme des cellules eucaryotes.
-organites		organite	0
-organochloré	Qualifie les composés organiques comportant au moins un atome de chlore.
-organochlorée		organochloré	23
-organochlorées		organochloré	1
-organochlorés		organochloré	0
-organogenèse	Histoire de la manière dont les organes se développent depuis l'état embryonnaire.
-organoleptique	Qui agit sur la perception sensorielle, par exemple pour les aliments : goût, odeur, couleur, aspect, consistance…
-organoleptiques		organoleptique	0
-organologie	Traité des organes.
-organologies		organologie	0
-organologique	Qui a rapport à l’organologie.
-organologiques		organologique	0
-organomagnésien	Qualifie un composé organique qui possède une liaison carbone-magnésium.
-organophosphoré	Qualifie une molécule organique qui contient au moins un atome de phosphore.
-organosol	Partie supérieure du sol composée de matière organique.
-organosols		organosol	0
-organothérapie	Méthode qui consiste à traiter un organe malade par l’utilisation d’extraits de tissus, glandes ou organes de même nature que l’organe déficient.
-organothérapies		organothérapie	0
-organsin	Fil de soie qui a passé deux fois au moulin, la première torsion est nommée filage, la seconde tors, il est destiné à former la chaîne des étoffes.
-organsina		organsiner	33
-organsinage	Action d’organsiner.
-organsinages		organsinage	0
-organsinai		organsiner	22
-organsinaient		organsiner	32
-organsinais		organsiner	29
-organsinait		organsiner	34
-organsinâmes		organsiner	3
-organsinant		organsiner	35
-organsinas		organsiner	12
-organsinasse		organsiner	6
-organsinassent		organsiner	17
-organsinasses		organsiner	8
-organsinassiez		organsiner	14
-organsinassions		organsiner	25
-organsinât		organsiner	20
-organsinâtes		organsiner	2
-organsiné		organsiner	56
-organsinée		organsiner	37
-organsinées		organsiner	36
-organsinent		organsiner	31
-organsiner	Tordre la soie et la passer deux fois au moulin.
-organsinera		organsiner	21
-organsinerai		organsiner	16
-organsineraient		organsiner	28
-organsinerais		organsiner	18
-organsinerait		organsiner	26
-organsineras		organsiner	7
-organsinèrent		organsiner	24
-organsinerez		organsiner	5
-organsineriez		organsiner	4
-organsinerions		organsiner	11
-organsinerons		organsiner	10
-organsineront		organsiner	15
-organsinés		organsiner	38
-organsineur	Fabricant d’organsin.
-organsineurs		organsineur	0
-organsineuse	Fabricante d’organsin.
-organsineuses		organsineuse	0
-organsinez		organsiner	30
-organsiniez		organsiner	13
-organsinions		organsiner	19
-organsinons		organsiner	27
-organsins		organsin	0
-organum	Musique médiévale mettant en valeur l’interprétation du plain-chant par l’adjonction d’une ou plusieurs voix.
-organums		organum	0
-organza	Tissu proche de l’organdi, notamment utilisé pour les tutus.
-organzas		organza	0
-orgasme	État de gonflement et d’excitation des organes.
-orgasmes		orgasme	0
-orgasmique	Relatif à l'orgasme.
-orgasmiques		orgasmique	0
-orgastique	Relatif à l'orgasme.
-orgastiques		orgastique	0
-orge	Nom donné à plusieurs plantes du genre Hordeum de la famille des Poacées (Poaceae), céréale à paille utilisée pour nourrir les animaux et caractérisée par un c…
-orgeat	Sorte de boisson rafraîchissante, faite avec de l’eau, du sucre et une émulsion d’amandes.
-orgeats		orgeat	0
-orgelet	Tumeur inflammatoire de la nature du furoncle et de la forme d’un grain d’orge, qui pousse près du bord libre des paupières.
-orgelets		orgelet	0
-orges		orge	115
-orgiaque	Qui a rapport aux orgies ou fêtes de Bacchus.
-orgiaques		orgiaque	0
-orgiasme	Célébration des mystères, des orgies.
-orgiasmes		orgiasme	0
-orgiaste	Celui, celle qui fête la fête de Bacchus.
-orgiastes		orgiaste	0
-orgie	Fêtes de Bacchus.
-orgies		orgie	0
-orgue	Instrument de musique à vent, à clavier et à pédalier, composé de tuyaux de différentes sortes et de différentes grandeurs, alimentés d’air par des soufflets e…
-orgueil	Sentiment qui porte à se penser au-dessus des autres.
-orgueilleuse	Femme qui montre un certain orgueil.
-orgueilleuses		orgueilleux	1
-orgueilleux	Qui a de l’orgueil.
-orgueils		orgueil	0
-orgues		orgue	0
-oribus	Chandelle de résine destinée à être placée sur une cheminée.
-orichalque	Métal ou alliage métallique mystérieux, ayant pu désigner le cuivre pur, le bronze (alliage de cuivre et d’étain), et, particulièrement chez les Latins, le lai…
-oriel	Avancée en encorbellement sur une façade.
-oriels		oriel	0
-orient	Est : point cardinal indiquant la direction du soleil levant, exacte aux équinoxes.
-orienta		orienter	39
-orientable	Que l'on peut orienter.
-orientables		orientable	0
-orientai		orienter	55
-orientaient		orienter	42
-orientais		orienter	52
-orientait		orienter	40
-oriental	Qui est situé à l’est.
-orientale		oriental	23
-orientales		oriental	1
-orientalisa		orientaliser	33
-orientalisai		orientaliser	22
-orientalisaient		orientaliser	32
-orientalisais		orientaliser	29
-orientalisait		orientaliser	34
-orientalisâmes		orientaliser	3
-orientalisant		orientaliser	35
-orientalisas		orientaliser	12
-orientalisasse		orientaliser	6
-orientalisasses		orientaliser	8
-orientalisât		orientaliser	20
-orientalisâtes		orientaliser	2
-orientalisé		orientaliser	46
-orientalisée		orientaliser	37
-orientalisées		orientaliser	36
-orientalisent		orientaliser	31
-orientaliser	Donner un caractère oriental.
-orientalisera		orientaliser	21
-orientaliserai		orientaliser	16
-orientaliserais		orientaliser	18
-orientaliserait		orientaliser	26
-orientaliseras		orientaliser	7
-orientalisèrent		orientaliser	24
-orientaliserez		orientaliser	5
-orientaliseriez		orientaliser	4
-orientaliserons		orientaliser	10
-orientaliseront		orientaliser	15
-orientalisés		orientaliser	38
-orientalisez		orientaliser	30
-orientalisiez		orientaliser	13
-orientalisions		orientaliser	19
-orientalisme	Ensemble des études relatives à l’Orient.
-orientalismes		orientalisme	0
-orientalisons		orientaliser	27
-orientaliste	Qualifie un peintre qui se spécialisait dans la représentation des choses de l’Orient, ainsi que sa peinture.
-orientalistes		orientaliste	0
-orientâmes		orienter	3
-orientant		orienter	43
-orientas		orienter	12
-orientasse		orienter	6
-orientassent		orienter	17
-orientasses		orienter	8
-orientassiez		orienter	14
-orientassions		orienter	25
-orientât		orienter	20
-orientâtes		orienter	2
-orientation	Détermination des points cardinaux du lieu où l’on se trouve.
-orientations		orientation	0
-orientaux		oriental	9
-orienté	Relatif à l’orientation.
-orientée		orienté	23
-orientées		orienté	1
-orientement	État de ce qui est orienté.
-orientements		orientement	0
-orientent		orienter	41
-orienter	Disposer une chose selon la situation qu’elle doit avoir par rapport à l’orient, aux points cardinaux.
-orientera		orienter	21
-orienterai		orienter	50
-orienteraient		orienter	28
-orienterais		orienter	18
-orienterait		orienter	49
-orienteras		orienter	7
-orientèrent		orienter	48
-orienterez		orienter	58
-orienteriez		orienter	4
-orienterions		orienter	11
-orienterons		orienter	10
-orienteront		orienter	15
-orientés		orienté	9
-orienteur	Appareil destiné à former le midi vrai pour chaque jour de l’année.
-orienteurs		orienteur	0
-orienteuse	Sportive pratiquant la course d’orientation.
-orienteuses		orienteuse	0
-orientez		orienter	47
-orientiez		orienter	13
-orientions		orienter	19
-orientons		orienter	27
-orients		orient	0
-orifice	Ouverture qui forme l’entrée de certaines excavations naturelles ou artificielles.
-orifices		orifice	0
-oriflamme	Petit étendard dont la partie flottante était terminée en pointes, qui fut d’abord la bannière de l’abbaye de Saint-Denis et qui fut porté jusqu’au XVᵉ siècle …
-oriflammes		oriflamme	0
-origami	Art traditionnel japonais du pliage du papier.
-origamis		origami	0
-origan	Origanum, genre de plantes aromatiques herbacées de la famille des Lamiacées.
-origans		origan	0
-origina		originer	33
-originai		originer	22
-originaient		originer	32
-originaire	Qui tire son origine.
-originairement	Dans l’origine.
-originaires		originaire	0
-originais		originer	29
-originait		originer	34
-original	Qui n’a pas été fait d’après un modèle et qui sert ou servira de modèle pour des copies ou des imitations.
-originale	Femme ou fille dont le comportement sort de l’ordinaire.
-originalement	D’une manière originale.
-originales		original	1
-originalité	Qualité globale de ce qui est original, caractère de ce qui est neuf, sans modèle de même nature, unique, créatif.
-originalités		originalité	0
-originâmes		originer	3
-originant		originer	35
-originas		originer	12
-originasse		originer	6
-originassent		originer	17
-originasses		originer	8
-originassiez		originer	14
-originassions		originer	25
-originât		originer	20
-originâtes		originer	2
-originaux		original	9
-origine	Commencement.
-originée		originer	37
-originées		originer	36
-originel	Qui vient de l’origine, qui remonte jusqu’à l’origine.
-originelle		originel	23
-originellement	Dès l’origine, à l’origine.
-originelles		originel	1
-originels		originel	9
-originent		originer	31
-originer	Définir l’origine de.
-originera		originer	21
-originerai		originer	16
-origineraient		originer	28
-originerais		originer	18
-originerait		originer	26
-origineras		originer	7
-originèrent		originer	24
-originerez		originer	5
-origineriez		originer	4
-originerions		originer	11
-originerons		originer	10
-origineront		originer	15
-origines		origine	0
-originez		originer	30
-originiez		originer	13
-originions		originer	19
-originons		originer	27
-orignal	Espèce de mammifères de la famille des cervidés (Cervidae).
-orignaux		orignal	0
-orillon	Partie de quelque chose ressemblant à une petite oreille.
-orillons		orillon	0
-orin	Câble qui relie l’ancre à une bouée.
-orins		orin	0
-oriole	Oiseau passériforme de la famille des ictéridés, il en existe une trentaine d'espèces vivant essentiellement en Amérique et aux Caraïbes.
-orioles		oriole	0
-oriolidé	Membre d’une famille d’oiseaux passereaux de l’Ancien Monde, les loriots et alliés, autrefois inclus dans les corvidés, passereaux de taille moyenne, au bec as…
-oriolidés		oriolidé	0
-oripeau	Lame de laiton très mince polie et brillante, qui de loin a l’éclat de l’or et qui était utilisé en passementerie.
-oripeaux		oripeau	0
-oriya	Langue parlée en Orissa, dans le nord-est de l’Inde.
-oriyas		oriya	0
-orle	Rebord ou filet sous l’ove d’un chapiteau.
-orléanais	Relatif aux Orléanais.
-orléanaise		orléanais	23
-orléanaises		orléanais	1
-orléanisme	Doctrine des orléanistes.
-orléanismes		orléanisme	0
-orléaniste	Relatif au duc d’Orléans, à sa politique.
-orléanistes		orléaniste	0
-orles		orle	0
-orlon	Fibre synthétique de polyacrylonitrile utilisée pour la fabrication de vêtements.
-orlons		orlon	0
-ormaie	Lieu planté d’ormes.
-ormaies		ormaie	0
-orme	Genre de grands arbres à feuilles caduques, simples, doublement dentées, et aux fruits en samares.
-ormeau	Mollusque marin comestible du genre Haliotis, en forme d’oreille avec une rangée de trous.
-ormeaux		ormeau	0
-ormes		orme	0
-ormet	Ormier.
-ormets		ormet	0
-ormier	Nom, dans le département des Côtes-d’Armor, d’un mollusque qui se mange.
-ormiers		ormier	0
-ormille	Plant palissade de petits ormes.
-ormilles		ormille	0
-ormoie	Variante orthographique de ormaie.
-ormoies		ormoie	0
-orna		orner	39
-ornai		orner	22
-ornaient		orner	42
-ornais	Relatif au département de l’Orne, à sa culture, ses habitants.
-ornaise		ornais	23
-ornaises		ornais	1
-ornait		orner	40
-ornâmes		orner	3
-ornant		orner	43
-ornas		orner	12
-ornasse		orner	6
-ornassent		orner	17
-ornasses		orner	8
-ornassiez		orner	14
-ornassions		orner	25
-ornât		orner	62
-ornâtes		orner	2
-orne	Petit arbre qui ressemble beaucoup au frêne commun, le frêne à fleurs.
-ornée		orné	23
-ornées		orné	1
-ornemaniste	Qualifie le travail accompli par une personne spécialisée dans la création d’ornements intérieurs ou extérieurs.
-ornemanistes		ornemaniste	0
-ornement	Ce qui sert à orner, à embellir.
-ornementa		ornementer	33
-ornementai		ornementer	22
-ornementaient		ornementer	32
-ornementais		ornementer	29
-ornementait		ornementer	34
-ornemental	Qui appartient à l’ornement.
-ornementale		ornemental	23
-ornementales		ornemental	1
-ornementâmes		ornementer	3
-ornementant		ornementer	35
-ornementas		ornementer	12
-ornementasse		ornementer	6
-ornementassent		ornementer	17
-ornementasses		ornementer	8
-ornementassiez		ornementer	14
-ornementassions		ornementer	25
-ornementât		ornementer	20
-ornementâtes		ornementer	2
-ornementation	Manière de distribuer, de disposer les ornements.
-ornementations		ornementation	0
-ornementaux		ornemental	9
-ornementé		ornementer	56
-ornementée		ornementer	45
-ornementées		ornementer	36
-ornementent		ornementer	31
-ornementer	Orner.
-ornementera		ornementer	21
-ornementerai		ornementer	16
-ornementeraient		ornementer	28
-ornementerais		ornementer	18
-ornementerait		ornementer	26
-ornementeras		ornementer	7
-ornementèrent		ornementer	24
-ornementerez		ornementer	5
-ornementeriez		ornementer	4
-ornementerions		ornementer	11
-ornementerons		ornementer	10
-ornementeront		ornementer	15
-ornementés		ornementer	53
-ornementez		ornementer	30
-ornementiez		ornementer	13
-ornementions		ornementer	19
-ornementons		ornementer	27
-ornements		ornement	0
-ornent	Troisième personne du pluriel de l’indicatif présent du verbe orner.
-orner	Parer, embellir une chose, y ajouter, y joindre d’autres choses qui lui donnent plus d’éclat, plus d’agrément.
-ornera		orner	44
-ornerai		orner	16
-orneraient		orner	28
-ornerais		orner	18
-ornerait		orner	49
-orneras		orner	7
-ornèrent		orner	48
-ornerez		orner	5
-orneriez		orner	4
-ornerions		orner	11
-ornerons		orner	10
-orneront		orner	54
-ornés		orné	9
-ornez		orner	47
-orniérage	Propension à former, formation des ornières.
-orniérages		orniérage	0
-ornière	Trace profonde que les roues d’un véhicule font dans les chemins ou les terrains détrempés.
-ornières		ornière	0
-orniez		orner	13
-ornions		orner	19
-ornithischien	Dinosaure membre de l’ordre des Ornithischia.
-ornithischiens		ornithischien	0
-ornithogale	Plante bulbeuse de la famille des Liliacées (classification classique) ou des Hyacinthacées (classification phylogénétique).
-ornithogales		ornithogale	0
-ornithologie	Branche de la zoologie consacrée à l’étude des oiseaux.
-ornithologies		ornithologie	0
-ornithologique	Qui a rapport à l’ornithologie.
-ornithologiques		ornithologique	0
-ornithologiste	Celui, celle qui s’occupe d’ornithologie.
-ornithologistes		ornithologiste	0
-ornithologue	Celui, celle qui s’occupe d’ornithologie.
-ornithologues		ornithologue	0
-ornithomancie	Divination qui se base sur le vol des oiseaux comme présage de l’avenir.
-ornithomancies		ornithomancie	0
-ornithorynque	Mammifère monotrème ovipare, à bec d’oiseau, qui vit en Australie.
-ornithorynques		ornithorynque	0
-ornons		orner	27
-orobanche	Plante dicotylédone holoparasite sans chlorophylle, dont la tige est charnue, brunâtre et garnie d’écailles au lieu de feuilles, et dont l’espèce commune croît…
-orobanches		orobanche	0
-orobe	Gesse des montagnes (Lathyrus linifolius var.
-orobes		orobe	0
-orogène	Système montagneux engendré par la collision de deux plaques continentales sur une zone instable de l’écorce terrestre, qui montre des plis et des nappes de ch…
-orogènes		orogène	0
-orogenèse	Phase de formation des montagnes.
-orogenèses		orogenèse	0
-orogénie	Formation des montagnes.
-orogénies		orogénie	0
-orogénique	Relatif à l'orogenèse.
-orogéniques		orogénique	0
-orographie	Représentation topographique à trois dimensions, les échelles planimétrique et altimétrique pouvant être différentes.
-orographies		orographie	0
-orographique	Relatif à l'orographie.
-orographiques		orographique	0
-oromo	Langue couchitique, parlée par les Oromos dans la Corne de l’Afrique, principalement en Éthiopie, mais aussi au Kenya, en Somalie ou à Djibouti.
-Oromos		Oromo	0
-oronge	Amanite à chapeau orangé, qui croît surtout dans le Midi, comestible et estimé pour son goût.
-oronges		oronge	0
-oronyme	Nom porté par un élément de relief : une montagne, une chaîne de montagnes, une colline, une montagne sous-marine, etc.
-oronymes		oronyme	0
-oronymie	Science qui étudie les oronymes, branche de la toponymie consacrée aux noms portés par les formations géologiques telles les montagnes, collines et autres reli…
-oronymies		oronymie	0
-oronymique	Relatif à l’oronymie ou aux oronymes.
-oronymiques		oronymique	0
-oropharynx	Partie moyenne du pharynx située en arrière de la cavité buccale, s'étendant du voile du palais jusqu'à l'os hyoïde.
-orpaillage	Prospection et extraction artisanale de l’or à partir de puits individuels à ciel ouvert, ou dans les rivières.
-orpaillages		orpaillage	0
-orpailleur	Celui qui recueille les paillettes d’or qui se trouvent dans le sable de certaines rivières, au moyen du lavage, et qui exerce le métier minier de la recherche…
-orpailleurs		orpailleur	0
-orpailleuse	Celle qui recueille les paillettes d’or qui se trouvent dans le sable de certaines rivières, au moyen du lavage, et qui exerce le métier minier de la recherche…
-orpailleuses		orpailleuse	0
-orphelin	Qui a perdu son père et sa mère, ou l’un des deux.
-orphelinage	État d’orphelin.
-orphelinages		orphelinage	0
-orphelinat	Établissement charitable destiné à élever des orphelins.
-orphelinats		orphelinat	0
-orpheline	Enfant qui a perdu son père et sa mère.
-orphelines		orphelin	1
-orphelins		orphelin	9
-orphéon	Instrument de musique à cordes frottées par une roue et semblable à une grande vielle montée sur pieds.
-orphéonique	Qui concerne la musique chorale populaire.
-orphéoniques		orphéonique	0
-orphéoniste	Membre d’une société de chant choral.
-orphéonistes		orphéoniste	0
-orphéons		orphéon	0
-orphie	Poisson serpentiforme au long bec armé de fines dents très acérées de la famille des bélonidés dont le nom scientifique est Belone belone et qui se rencontre d…
-orphies		orphie	0
-orphique	Qui se rapporte à Orphée.
-orphiques	Poèmes attribués à Orphée.
-orphisme	Ensemble des doctrines et des mystères orphiques.
-orphismes		orphisme	0
-orpiment	D’un beau jaune doré pouvant tirer sur l’orangé profond.
-orpiments		orpiment	0
-orpin	Plante à feuilles charnues, à fleurs à cinq pétales, qui croît sur les toits, sur les murs.
-orpins		orpin	0
-orque	Espèce de grand cétacé à dents à livrée noire et blanche et à nageoire dorsale très haute.
-orques		orque	0
-ors		or	0
-orseille	Nom vernaculaire de divers lichens du genre Rocella dont on extrayait une matière colorante, l’orcine, pour teindre les étoffes en rouge violet.
-orseilles		orseille	0
-orteil	Doigt du pied, chez les humains et les primates.
-orteils		orteil	0
-orthèse	Appareillage qui compense une fonction déficitaire, assiste une structure articulaire ou musculaire, stabilise un segment corporel pendant une phase de réadapt…
-orthèses		orthèse	0
-orthocentre	Intersection des trois hauteurs d’un triangle.
-orthocentres		orthocentre	0
-orthodontie	Spécialisation de la médecine dentaire dont l’objet est de corriger les mauvaises positions des dents et des mâchoires afin d’optimiser l’occlusion.
-orthodonties		orthodontie	0
-orthodontique	Relatif à l’orthodontie.
-orthodontiques		orthodontique	0
-orthodontiste	Profession du spécialiste de l'orthodontie.
-orthodontistes		orthodontiste	0
-orthodoxe	Qui est conforme à la droite opinion en matière de religion.
-orthodoxes		orthodoxe	0
-orthodoxie	Caractère de ce qui est orthodoxe.
-orthodoxies		orthodoxie	0
-orthodromie	Route d’un navire ou d’un avion par la voie la plus directe, qui est l’arc de grand cercle terrestre reliant le point de départ au point d'arrivée.
-orthodromies		orthodromie	0
-orthodromique	Qui a rapport à l’orthodromie.
-orthodromiques		orthodromique	0
-orthoépie	Manière de prononcer correctement un mot dans une langue.
-orthoépies		orthoépie	0
-orthogenèse	Théorie selon laquelle l'évolution d'une espèce suit une loi régulière, immuable, sans rapport avec l’utilité, et qui ne peut donc donner prise à la sélection …
-orthogenèses		orthogenèse	0
-orthogénie	Ensemble des méthodes de planification et de régulation des naissances appliquées au niveau du couple.
-orthogénies		orthogénie	0
-orthogonal	Qui forme un angle droit.
-orthogonale		orthogonal	124
-orthogonalement	Perpendiculairement.
-orthogonales		orthogonal	121
-orthogonalité	Caractère de ce qui est orthogonal, de ce qui possède un angle droit.
-orthogonalités		orthogonalité	0
-orthogonaux		orthogonal	9
-orthographe	Ensemble des règles permettant de noter les sons, de transcrire les mots d'une langue au moyen de caractères d'écriture, suivant les formes consacrées par l'us…
-orthographes		orthographe	0
-orthographia		orthographier	39
-orthographiai		orthographier	22
-orthographiais		orthographier	29
-orthographiait		orthographier	40
-orthographiâmes		orthographier	3
-orthographiant		orthographier	35
-orthographias		orthographier	12
-orthographiasse		orthographier	6
-orthographiât		orthographier	20
-orthographiâtes		orthographier	2
-orthographie	Profil ou coupe perpendiculaire d’un bâtiment, élévation géométrale.
-orthographiée		orthographier	37
-orthographiées		orthographier	51
-orthographient		orthographier	31
-orthographier	Écrire les mots suivant l’orthographe.
-orthographiera		orthographier	21
-orthographierai		orthographier	16
-orthographieras		orthographier	7
-orthographierez		orthographier	5
-orthographiés		orthographier	38
-orthographiez		orthographier	30
-orthographiiez		orthographier	13
-orthographiions		orthographier	19
-orthographions		orthographier	27
-orthographique	Qui est relatif à l’orthographe.
-orthographiques		orthographique	0
-orthonormal	Normé et orthogonal.
-orthonormale		orthonormal	23
-orthonormales		orthonormal	1
-orthonormaux		orthonormal	9
-orthonormé	Normé dans une base orthogonale en parlant d'un espace vectoriel euclidien.
-orthonormée		orthonormé	23
-orthonormées		orthonormé	1
-orthonormés		orthonormé	9
-orthopédagogie	Branche de la pédagogie qui visent à permettre à des apprenants aux prises avec des difficultés ou des troubles d’apprentissage, de pallier ces entraves et de …
-orthopédagogue	Spécialiste de l’orthopédagogie.
-orthopédagogues		orthopédagogue	0
-orthopédie	Art de corriger ou de prévenir, surtout chez les enfants, les difformités du corps.
-orthopédies		orthopédie	0
-orthopédique	Relatif à l’orthopédie.
-orthopédiques		orthopédique	0
-orthopédiste	Spécialiste de l’orthopédie.
-orthopédistes		orthopédiste	0
-orthophonie	Discipline paramédicale s’occupant du traitement et de la rééducation des troubles du langage, de la déglutition et des fonctions cognitives.
-orthophonies		orthophonie	0
-orthophonique	Relatif à la discipline de l’orthophonie.
-orthophoniques		orthophonique	0
-orthophoniste	Thérapeute paramédical(e) des troubles de la communication liés à la voix, à la parole et au langage oral et écrit, ainsi que des troubles cognitifs et de la d…
-orthophonistes		orthophoniste	0
-orthopnée	Oppression qui ne permet de bien respirer que dans certaines positions : debout ou assis, ou en élevant les épaules.
-orthopnées		orthopnée	0
-orthoptère	Il se dit des insectes pourvus de quatre ailes dont les deux inférieures se replient dans le sens de la longueur.
-orthoptères		orthoptère	0
-orthoptéroïde	Singulier de orthoptéroïdes.
-orthoptéroïdes	Super-ordre d'insectes, sous-classe des ptérygotes, section des néoptères, division des hémimétaboles.
-orthoptie	Science paramédicale qui a pour vocation le dépistage, la rééducation, la réadaptation et l’exploration fonctionnelle des troubles de la vision.
-orthopties		orthoptie	0
-orthoptique	Relatif aux troubles de la vision.
-orthoptiques		orthoptique	0
-orthoptiste	Personnel médical spécialisé dans la détection et la rééducation des déficiences visuelles.
-orthoptistes		orthoptiste	0
-orthorexie	Doctrine obsessionnelle consistant à ne manger que ce qui est considéré comme sain, bon pour la santé.
-orthorexies		orthorexie	0
-orthorexique	Qui souffre d'orthorexie.
-orthorexiques		orthorexique	0
-orthorhombique	Caractérise un prisme droit qui a pour base un losange (rhombe) ou un rectangle.
-orthorhombiques		orthorhombique	0
-orthoscopique	S’applique à un objectif qui ne déforme par une image.
-orthoscopiques		orthoscopique	0
-orthose	Espèce du groupe des silicates, sous-groupe des tectosilicates, famille des feldspaths sous-famille des feldspaths potassiques, dont la composition chimique es…
-orthoses		orthose	0
-orthostate	Orthostat.
-orthostates		orthostate	0
-orthostatique	Relatif à la position debout.
-orthostatiques		orthostatique	0
-orthostatisme	Position debout.
-orthostatismes		orthostatisme	0
-orthotrope	Qui pousse ou est émis verticalement (vers le haut ou le bas).
-orthotropes		orthotrope	0
-ortie	Plante aux feuilles pointues, très dentées et garnies, comme les tiges, de poils urticants.
-orties		ortie	0
-ortif	Levant, relatif à l’orient.
-ortive		ortif	23
-ortives		ortif	1
-ortolan	Petit oiseau, commun dans le Midi de la France et dans les régions méditerranéennes, recherché pour la délicatesse de sa chair.
-ortolans		ortolan	0
-Orval	Commune française, située dans le département du Cher.
-orvale	Sauge sclarée.
-orvales		orvale	0
-orvet	Espèce de lézard sans pattes, d’aspect semblable à un serpent, mais à paupières mobiles, et inoffensif.
-orvets		orvet	0
-orviétan	Sorte d’électuaire auquel on attribuait autrefois toutes sortes de vertus, et dont la composition était proche de la thériaque.
-orviétans		orviétan	0
-orwellien	Relatif à George Orwell ou à son œuvre.
-orwellienne		orwellien	23
-orwelliennes		orwellien	1
-orwelliens		orwellien	9
-orycte	Insecte coléoptère de la famille des scarabéidés (Scarabaeidae) qui vit dans le terreau, les tas de tan ou de feuilles.
-oryctérope	Espèce de mammifère fouisseur d'Afrique, au groin tubulaire, et avec de grandes oreilles ressemblant à celles d'un âne, myrmécophage, capable de fouiller une t…
-oryctéropes		oryctérope	0
-oryctes		orycte	0
-oryx	Espèce de grande antilope d’Afrique et d’Arabie, ayant de longues cornes droites ou courbées pointant vers l'arrière.
+0or	Élément chimique de symbole Au de numéro atomique 79 et de masse atomique 196,96 qui fait partie des métaux de transition.
+2acle	Selon la croyance des Anciens, réponse d’une divinité que l’on venait consulter en un lieu sacré, et dont un interprète inspiré devait dévoiler le sens, sans p…
+6s		6	0
+3ge	Perturbation atmosphérique, ordinairement de peu de durée, qui se manifeste par un vent impétueux, de la pluie ou de la grêle, des éclairs et du tonnerre ou un…
+5s		5	0
+5use		6x	n
+8ment	D’une manière orageuse.
+8s		6x	1
+6x	Qui cause, qui annonce l’orage.
+3ison	Assemblage de mots qui forment un sens complet et qui sont construits suivant les règles grammaticales.
+7s		7	0
+3l	Qui est exprimé ou transmis de vive voix, par opposition à écrit.
+4e		4	n
+5ment	Au moyen de la parole.
+5s		4	1
+4isa		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Exprimer par oral, de vive voix, en prononçant.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5té	Caractère de ce qui est oral, parlé, par opposition à scribalité.
+7s		7	0
+3nais	Relatif à Oran, sa région, ou ses habitants.
+7e		7	n
+8s		7	1
+4ge	Fruit de l’oranger, agrume de couleur orangée et de forme sphérique, composé d’une écorce orange avec une chair juteuse et divisé en loges par des cloisons.
+6a		6r	x
+7de	Boisson qui se fait avec du jus d’orange, du sucre et de l’eau.
+9s		9	0
+7i		6r	m
+8ent		6r	w
+8s		6r	t
+8t		6r	y
+6âmes		6r	3
+6ant		6r	z
+7s		6r	c
+8se		6r	6
+ant		6r	h
+as		6r	8
+9iez		6r	e
+aons		6r	p
+7t	Écorce d’orange confite.
+6âtes		6r	2
+6ats		8	0
+5ée		6	n
+7s		6	1
+5ent		6r	v
+6ons		6r	r
+6r	Arbre à feuilles persistantes, à fleurs blanches et très odorantes, qui porte les oranges.
+7a		7	l
+8i		7	g
+9e	Verger d’orangers.
+ant		7	s
+as		a	0
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7ie	Lieu fermé, où l’on conserve, pendant l’hiver, des orangers en caisse et d’autres plantes fragiles.
+9s		9	0
+9z		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+7s		7	0
+6s		6	45
+6tte	Orange cueillie avant la maturité, utilisée en confiserie.
+9s		9	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+6sme	Système politique des protestants anglais, établis en Irlande, et réclamant envers les catholiques de ce pays la continuation des vexations dont ceux-ci furent…
+9s		9	0
+7te	Relatif à l’orangisme, mouvement anglican, antipapiste irlandais.
+9s		9	0
+4t	Personne en prière.
+5e	Celle qui est en prière.
+6s		5	1
+5s		5	0
+3teur	Celui qui compose, qui prononce des discours ou des ouvrages d’éloquence.
+7s		7	0
+4oire	Qui appartient à l’orateur.
+8s		8	0
+5rien	Relatif à la congrégation de l’Oratoire.
+9ne		9	n
+bs		9	1
+9s		9	0
+7o	Musique lyrique destinée à être exécutée, sans décors ni costumes.
+8s		8	0
+4rice	Celle qui compose, qui prononce des discours ou des ouvrages d’éloquence.
+8s		8	0
+3ux		3l	9
+2be	Cercle.
+4s		4	0
+3icole	Susceptible de vivre sur nʼimporte quel point du globe.
+8s		8	0
+5ulaire	Dont le contour est circulaire.
+bs		b	0
+4ta		5er	13
+6i		5er	m
+7ent		5er	w
+7re	Qui a rapport à l’orbite de l’œil.
+9s		9	0
+7s		5er	t
+7t		5er	y
+6l	Qui concerne l’orbite d’un corps céleste ou d’un satellite artificiel.
+7e	Fonction mathématique représentant l’onde stationnaire associée à un électron en interaction avec les autres particules constituant l’atome ou l’entité molécul…
+8s		7	1
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5aux		6l	9
+5e	Cavité osseuse dans laquelle l’œil est placé.
+5èle	Se dit dʼune araignée qui tisse une toile formée de cercles concentriques.
+8s		8	0
+5ent		6r	v
+6r	Décrire une orbite autour d’un corps principal.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6ur	Engin spatial ou élément d’un engin spatial qui reste en orbite autour d’un astre pour assurer des missions spécifiques d’une durée déterminée.
+8s		8	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ographie	Détermination et représentation des caractéristiques orbitales d’un satellite artificiel.
+ds		d	0
+6n	L’une des trois quasi-particules, avec les chargeons et les spinons, qui résultent de la division des électrons contenus dans les solides au cours du processus…
+7s		7	0
+2canète	Variante de orcanette.
+8s		8	0
+5ette	Genre de plante de la famille des Boraginacées, dont certaines espèces étaient utilisées jadis en teinturerie comme par exemple l’orcanette des teinturiers (Al…
+9s		9	0
+3éine	Colorant rouge produit par l’action de l’ammoniaque liquide sur l’orcine.
+3hestique	Qualifie celui des deux genres principaux de la gymnastique ancienne, qui embrassait tout ce qui avait rapport à la danse et à l’exercice de la paume.
+bs		b	0
+7ra		8er	13
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	14
+9l	Ayant un lien, un rapport avec un orchestre.
+ae		a	n
+bs		a	1
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ateur	Celui qui finalise l’orchestration d’une musique.
+ds		d	0
+aion	Combinaison des différentes parties d’un ensemble instrumental.
+ds		d	0
+arice	Celle qui orchestre.
+es		e	0
+9ux		9l	9
+8e	Partie d’une salle de spectacle contenant les places les plus basses et située au plus près de la scène, entre la fosse d’orchestre et le parterre.
+8ée		9	n
+as		9	1
+8ent		9r	15
+9r	Combiner pour l’orchestre une composition musicale.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	1h
+8ez		9r	u
+8iez		8er	d
+9on	Sorte d’orgue portatif, piano uni à quelques registres d’orgue.
+bs		b	0
+8ons		8er	r
+4ialgie	Douleur nerveuse des testicules.
+as		a	0
+5dacée	Famille de plantes monocotylédones (Orchidacées) dont l'orchis est le type.
+as	Famille botanique qui regroupe des plantes monocotylédones du type des orchidées.
+6ée	Plante monocotylédone et bulbeuse, de la famille des Orchidaceae (Orchidacées), dont le type est l’orchis.
+8s		8	0
+6ophile	Amateur, amatrice d’orchidées.
+cs		c	0
+bie	Goût, étude des orchidées.
+ds		d	0
+5s	Orchidée sauvage terrestre, du genre Orchis, créé par Linné en 1753, qui regroupait alors de nombreuses espèces dont certaines ont ensuite été déplacées dans d…
+5te	Inflammation aiguë ou chronique du testicule.
+7s		7	0
+2dalie	Épreuve, allant jusqu’à la torture, usitée au Moyen Âge comme preuve en justice.
+7s		7	0
+6que	Se dit d’un comportement très risqué, qui joue avec la mort.
+9s		9	0
+3i	Ordinateur.
+4naire	Commun ; habituel.
+9ment	De manière ordinaire.
+9s		9	0
+6l	Se dit en général d'un nombre lorsqu'il ne sert qu'à indiquer une position ou un rang, dans une série.
+7e		7	n
+8s		7	1
+6nd	Celui qui se présente à l’évêque pour être ordonné prêtre ou diacre.
+8s		8	0
+7t	Évêque qui confère les ordres sacrés.
+8s		8	0
+6riat	Juridiction appartenant à l’évêque, à l’autorité diocésaine.
+as		a	0
+6teur	Qui ordonne.
+as		a	0
+7icien	Informaticien.
+cne	Informaticienne.
+es		e	0
+cs		c	0
+8on	Action de conférer ou de recevoir les ordres de l’Église.
+as		a	0
+7rice	Appareil électronique capable, en appliquant des instructions prédéfinies (programme), d’effectuer des traitements automatisés de données.
+bs		7eur	1
+6ux		6l	9
+5ogramme	Organigramme de programmation : c’est la mise en ordre par l’écriture synthétique d’un ensemble de procédures qui seront reprises individuellement sous forme d…
+cs		c	0
+4phone	Téléphone mobile couplé à un assistant numérique personnel.
+9s		9	0
+4s		4	4v
+3o	Livret qui s’imprime tous les ans, pour indiquer aux ecclésiastiques la manière dont ils doivent faire et réciter l’office de chaque jour et qui comprend aussi…
+4nna		6er	13
+7ble	Qui peut être ordonné, rangé dans un certain ordre.
+as		a	0
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ança		8cer	x
+ai		8cer	m
+bent		8cer	w
+bs		8cer	t
+bt		8cer	y
+9âmes		8cer	3
+9ant		8cer	z
+as		8cer	c
+bse		8cer	6
+dnt		8cer	h
+ds		8cer	8
+ciez		8cer	e
+9ât		8cer	k
+bes		8cer	2
+8ce	Disposition des choses selon l’ordre, la convenance.
+9ée		9er	19
+bs		9er	10
+9ement	Action d’ordonnancer un paiement.
+es		e	0
+ant		ar	v
+ar	Inscrire au bas d’un état, d’un mémoire, l’ordre d’en payer le montant.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9ier	Bloc d'ordonnances.
+cs		c	0
+bz		9er	d
+aons		9er	j
+8çons		8cer	r
+8t		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Celui qui ordonne, qui dispose.
+bs		b	0
+8rice	Celle qui ordonne, qui dispose.
+cs		c	0
+6é	Qui est dans un ordre donné.
+7e	Position d’un point d’un plan par rapport au deuxième axe, en général représenté verticalement (axe des y), la position par rapport au premier axe étant l’absc…
+8s		7	1
+6ent		7r	15
+7r	Disposer suivant un certain ordre.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	1o
+at		8	1d
+9s		8	7
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	1i
+6és		7	9
+6ez		7r	1b
+6iez		6er	1v
+7ons		6er	j
+6ons		6er	1n
+4s		4	0
+4vicien	Relatif à l’Ordovicien.
+3re	Arrangement raisonné et logique, disposition régulière des choses les unes par rapport aux autres.
+4ée		5	n
+6s		5	1
+4es		5	0
+3ure	Tout ce qui est malpropre, immondice, crasse.
+6s		6	0
+5ier	Qui se plaît à dire ou à écrire des choses grossières.
+6ère		6er	n
+9s		6er	1
+6ers		8	9
+2e	Contrevent au côté opposé à la tuyère, dans les feux catalans.
+2éade	Nymphe ou divinité des montagnes et des grottes.
+6s		6	0
+3e	Le bord, la lisière d’un bois.
+4s		4	0
+2eillard	Dont les oreilles sont longues, basses, pendantes ou mal plantées.
+9e		9	n
+as		9	1
+9s		9	9
+6e	Appareil de l’audition divisé en trois parties.
+7r	Coussin qui sert à soutenir la tête quand on est couché.
+8s		8	0
+7s		7	0
+7tte	Chacune des deux cavités du cœur qui sont placées au-dessus des deux ventricules.
+as		a	0
+6on	Partie saillante de l’oreille chez la chauve-souris.
+8s	Infection virale des glandes parotides provoquant des douleurs aux oreilles.
+2émus	Prière, oraison.
+3opithèque	Hominidé fossile du Miocène, découvert en Italie.
+cs		c	0
+4trague	Espèce de petite antilope des régions montagneuses de l'Afrique de l'Est et australe surtout, à petits sabots et au pelage très épais.
+as		a	0
+2es	Ne s’emploie que dans d’ores et déjà, « dès maintenant ».
+3xigène	Qui est susceptible de stimuler ou d’augmenter l'appétit.
+9s		9	0
+2fèvre	Artisan et marchand qui fabrique et qui vend des bijoux et autres ouvrages d’or et d’argent, de platine ou de tout métal précieux.
+3évrée		7	n
+8s		7	1
+3èvrerie	Art des orfèvres.
+as		a	0
+7s		7	0
+3raie	Oiseau de proie diurne, l’aigle pygargue (Haliaeetus albicilla).
+7s		7	0
+4oi	Étoffe tissée d’or servant de parement d’une chape, d’une chasuble.
+6s		6	0
+2gandi	Sorte de mousseline ou de toile de coton fort transparente et qui a de l’apprêt.
+7s		7	0
+5e	Partie d’un organisme vivant, considéré comme un tout et comme remplissant une fonction nécessaire ou utile à sa vie.
+6au	Anneau de fer où l’on attache un câble.
+8x		8	0
+6lle	Synonyme de organite.
+9s		9	0
+6s		6	0
+5icien	Celui qui, dans l’étude des corps vivants, met au premier rang la considération des organes.
+ane	Celle qui, dans l’étude des corps vivants, met au premier rang la considération des organes.
+cs		c	0
+as		a	0
+8sme	Théorie médicale qui s’efforce de rattacher toute maladie à une lésion matérielle d’un organe.
+9te	Relatif ou relative à l’organicisme.
+bs		b	0
+6er	Facteur d’orgues.
+8s		8	0
+6gramme	Schéma d’organisation, notamment des rapports hiérarchiques à l’intérieur d’un organisme (entreprise, administration, école…).
+cs		c	0
+6que	Relatif aux organes, à la constitution même d’un être vivant.
+9ment	D’une manière organique.
+9s		9	0
+6sa		7er	13
+8ble	Qui peut être organisé.
+bs		b	0
+8i		7er	1j
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	1w
+7ant	Qui organise.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	1q
+9es		7er	2
+7ateur	Personne chargée de l'organisation d'un événement.
+cs		c	9
+9ion	Action d’organiser.
+cnel	Relatif à l’organisation.
+cs		c	0
+9rice	Celle qui organise.
+ds		d	0
+7é	Qualifie une personne ou une chose faisant preuve d’organisation, de logique, de rationalité, de pragmatisme.
+8e		8	n
+9s		8	1
+7ent		8r	15
+8r	Disposer les parties d’un corps pour les fonctions auxquelles il est destiné.
+9a		9	18
+ai		9	1e
+bent		9	s
+bs		9	1o
+bt		9	1d
+as		9	7
+7èrent		7er	1c
+7erez		9	1m
+9iez		9	22
+aons		9	b
+9ons		9	1p
+bt		9	1i
+7és		8	9
+7eur	Logiciel dédié à la gestion d’un agenda, d’un carnet d’adresses et des rendez-vous.
+as		a	0
+8z		8r	1b
+7iez		7er	1v
+8ons		7er	1t
+7me	Être vivant individuel, unicellulaire ou pluricellulaire, possédant une organisation interne autonome lui permettant d'accomplir ses fonctions vitales.
+9s		9	0
+7ons		7er	1n
+7te	Personne qui joue de l’orgue.
+9s		9	0
+6te	Chacune des structures compartimentées et spécialisées contenues dans le cytoplasme des cellules eucaryotes.
+8s		8	0
+5ochloré	Qualifie les composés organiques comportant au moins un atome de chlore.
+ce		c	n
+ds		c	1
+cs		c	0
+6genèse	Histoire de la manière dont les organes se développent depuis l'état embryonnaire.
+6leptique	Qui agit sur la perception sensorielle, par exemple pour les aliments : goût, odeur, couleur, aspect, consistance…
+es		e	0
+7ogie	Traité des organes.
+bs		b	0
+aque	Qui a rapport à l’organologie.
+ds		d	0
+6magnésien	Qualifie un composé organique qui possède une liaison carbone-magnésium.
+6phosphoré	Qualifie une molécule organique qui contient au moins un atome de phosphore.
+6sol	Partie supérieure du sol composée de matière organique.
+9s		9	0
+6thérapie	Méthode qui consiste à traiter un organe malade par l’utilisation d’extraits de tissus, glandes ou organes de même nature que l’organe déficient.
+es		e	0
+5sin	Fil de soie qui a passé deux fois au moulin, la première torsion est nommée filage, la seconde tors, il est destiné à former la chaîne des étoffes.
+8a		8er	x
+9ge	Action d’organsiner.
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1k
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Tordre la soie et la passer deux fois au moulin.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8eur	Fabricant d’organsin.
+bs		b	0
+ase	Fabricante d’organsin.
+cs		c	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8s		8	0
+5um	Musique médiévale mettant en valeur l’interprétation du plain-chant par l’adjonction d’une ou plusieurs voix.
+7s		7	0
+5za	Tissu proche de l’organdi, notamment utilisé pour les tutus.
+7s		7	0
+4sme	État de gonflement et d’excitation des organes.
+7s		7	0
+6ique	Relatif à l'orgasme.
+as		a	0
+5tique	Relatif à l'orgasme.
+as		a	0
+3e	Nom donné à plusieurs plantes du genre Hordeum de la famille des Poacées (Poaceae), céréale à paille utilisée pour nourrir les animaux et caractérisée par un c…
+4at	Sorte de boisson rafraîchissante, faite avec de l’eau, du sucre et une émulsion d’amandes.
+6s		6	0
+4let	Tumeur inflammatoire de la nature du furoncle et de la forme d’un grain d’orge, qui pousse près du bord libre des paupières.
+7s		7	0
+4s		4	37
+3iaque	Qui a rapport aux orgies ou fêtes de Bacchus.
+8s		8	0
+5sme	Célébration des mystères, des orgies.
+8s		8	0
+6te	Celui, celle qui fête la fête de Bacchus.
+8s		8	0
+4e	Fêtes de Bacchus.
+5s		5	0
+3ue	Instrument de musique à vent, à clavier et à pédalier, composé de tuyaux de différentes sortes et de différentes grandeurs, alimentés d’air par des soufflets e…
+5il	Sentiment qui porte à se penser au-dessus des autres.
+7leuse	Femme qui montre un certain orgueil.
+cs		ax	1
+ax	Qui a de l’orgueil.
+7s		7	0
+5s		5	0
+2ibus	Chandelle de résine destinée à être placée sur une cheminée.
+3chalque	Métal ou alliage métallique mystérieux, ayant pu désigner le cuivre pur, le bronze (alliage de cuivre et d’étain), et, particulièrement chez les Latins, le lai…
+3el	Avancée en encorbellement sur une façade.
+5s		5	0
+4nt	Est : point cardinal indiquant la direction du soleil levant, exacte aux équinoxes.
+6a		6er	13
+7ble	Que l'on peut orienter.
+as		a	0
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+7l	Qui est situé à l’est.
+8e		8	n
+9s		8	1
+8isa		aer	x
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	y
+aâmes		aer	3
+aant		aer	z
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+aé		aer	1a
+be		aer	11
+cs		aer	10
+aent		br	v
+br	Donner un caractère oriental.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aez		br	u
+aiez		aer	d
+bons		aer	j
+ame	Ensemble des études relatives à l’Orient.
+cs		c	0
+aons		aer	r
+ate	Qualifie un peintre qui se spécialisait dans la représentation des choses de l’Orient, ainsi que sa peinture.
+cs		c	0
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Détermination des points cardinaux du lieu où l’on se trouve.
+bs		b	0
+7ux		7l	9
+6é	Relatif à l’orientation.
+7e		7	n
+8s		7	1
+6ement	État de ce qui est orienté.
+bs		b	0
+7nt		7r	15
+7r	Disposer une chose selon la situation qu’elle doit avoir par rapport à l’orient, aux points cardinaux.
+8a		8	l
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6eur	Appareil destiné à former le midi vrai pour chaque jour de l’année.
+9s		9	0
+8se	Sportive pratiquant la course d’orientation.
+as		a	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+3fice	Ouverture qui forme l’entrée de certaines excavations naturelles ou artificielles.
+7s		7	0
+4lamme	Petit étendard dont la partie flottante était terminée en pointes, qui fut d’abord la bannière de l’abbaye de Saint-Denis et qui fut porté jusqu’au XVᵉ siècle …
+9s		9	0
+3gami	Art traditionnel japonais du pliage du papier.
+7s		7	0
+5n	Origanum, genre de plantes aromatiques herbacées de la famille des Lamiacées.
+6s		6	0
+4ina		6er	x
+7i		6er	m
+8ent		6er	w
+8re	Qui tire son origine.
+ament	Dans l’origine.
+as		a	0
+8s		6er	t
+8t		6er	y
+7l	Qui n’a pas été fait d’après un modèle et qui sert ou servira de modèle pour des copies ou des imitations.
+8e	Femme ou fille dont le comportement sort de l’ordinaire.
+9ment	D’une manière originale.
+9s		8	1
+8ité	Qualité globale de ce qui est original, caractère de ce qui est neuf, sans modèle de même nature, unique, créatif.
+bs		b	0
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6aux		7l	9
+6e	Commencement.
+6ée		6er	11
+8s		6er	10
+6el	Qui vient de l’origine, qui remonte jusqu’à l’origine.
+8le		8	n
+ament	Dès l’origine, à l’origine.
+as		8	1
+8s		8	9
+7nt		7r	v
+7r	Définir l’origine de.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4nal	Espèce de mammifères de la famille des cervidés (Cervidae).
+6ux		6l	0
+3llon	Partie de quelque chose ressemblant à une petite oreille.
+7s		7	0
+3n	Câble qui relie l’ancre à une bouée.
+4s		4	0
+3ole	Oiseau passériforme de la famille des ictéridés, il en existe une trentaine d'espèces vivant essentiellement en Amérique et aux Caraïbes.
+6s		6	0
+5idé	Membre d’une famille d’oiseaux passereaux de l’Ancien Monde, les loriots et alliés, autrefois inclus dans les corvidés, passereaux de taille moyenne, au bec as…
+8s		8	0
+3peau	Lame de laiton très mince polie et brillante, qui de loin a l’éclat de l’or et qui était utilisé en passementerie.
+7x		7	0
+3ya	Langue parlée en Orissa, dans le nord-est de l’Inde.
+5s		5	0
+2le	Rebord ou filet sous l’ove d’un chapiteau.
+3éanais	Relatif aux Orléanais.
+9e		9	n
+as		9	1
+6isme	Doctrine des orléanistes.
+as		a	0
+8te	Relatif au duc d’Orléans, à sa politique.
+as		a	0
+3es		4	0
+3on	Fibre synthétique de polyacrylonitrile utilisée pour la fabrication de vêtements.
+5s		5	0
+2maie	Lieu planté d’ormes.
+6s		6	0
+3e	Genre de grands arbres à feuilles caduques, simples, doublement dentées, et aux fruits en samares.
+4au	Mollusque marin comestible du genre Haliotis, en forme d’oreille avec une rangée de trous.
+6x		6	0
+4s		4	0
+4t	Ormier.
+5s		5	0
+3ier	Nom, dans le département des Côtes-d’Armor, d’un mollusque qui se mange.
+6s		6	0
+4lle	Plant palissade de petits ormes.
+7s		7	0
+3oie	Variante orthographique de ormaie.
+6s		6	0
+2na		3er	13
+4i		3er	m
+5ent		3er	16
+5s	Relatif au département de l’Orne, à sa culture, ses habitants.
+6e		6	n
+7s		6	1
+5t		3er	14
+3âmes		3er	3
+3ant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	1q
+5es		3er	2
+3e	Petit arbre qui ressemble beaucoup au frêne commun, le frêne à fleurs.
+3ée		4	n
+5s		4	1
+3emaniste	Qualifie le travail accompli par une personne spécialisée dans la création d’ornements intérieurs ou extérieurs.
+bs		b	0
+5ent	Ce qui sert à orner, à embellir.
+8a		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+9l	Qui appartient à l’ornement.
+ae		a	n
+bs		a	1
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Manière de distribuer, de disposer les ornements.
+ds		d	0
+9ux		9l	9
+8é		8er	1k
+9e		8er	19
+as		8er	10
+8ent		9r	v
+9r	Orner.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	1h
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8s		8	0
+4nt	Troisième personne du pluriel de l’indicatif présent du verbe orner.
+4r	Parer, embellir une chose, y ajouter, y joindre d’autres choses qui lui donnent plus d’éclat, plus d’agrément.
+5a		5	18
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	1d
+6s		5	7
+3èrent		3er	1c
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	1i
+3és		4	9
+3ez		4r	1b
+3iérage	Propension à former, formation des ornières.
+9s		9	0
+4ère	Trace profonde que les roues d’un véhicule font dans les chemins ou les terrains détrempés.
+7s		7	0
+4ez		3er	d
+4ons		3er	j
+4thischien	Dinosaure membre de l’ordre des Ornithischia.
+ds		d	0
+6ogale	Plante bulbeuse de la famille des Liliacées (classification classique) ou des Hyacinthacées (classification phylogénétique).
+bs		b	0
+7logie	Branche de la zoologie consacrée à l’étude des oiseaux.
+cs		c	0
+bque	Qui a rapport à l’ornithologie.
+es		e	0
+bste	Celui, celle qui s’occupe d’ornithologie.
+es		e	0
+aue	Celui, celle qui s’occupe d’ornithologie.
+cs		c	0
+7mancie	Divination qui se base sur le vol des oiseaux comme présage de l’avenir.
+ds		d	0
+7rynque	Mammifère monotrème ovipare, à bec d’oiseau, qui vit en Australie.
+ds		d	0
+3ons		3er	r
+2obanche	Plante dicotylédone holoparasite sans chlorophylle, dont la tige est charnue, brunâtre et garnie d’écailles au lieu de feuilles, et dont l’espèce commune croît…
+9s		9	0
+4e	Gesse des montagnes (Lathyrus linifolius var.
+5s		5	0
+3gène	Système montagneux engendré par la collision de deux plaques continentales sur une zone instable de l’écorce terrestre, qui montre des plis et des nappes de ch…
+7s		7	0
+4enèse	Phase de formation des montagnes.
+9s		9	0
+4énie	Formation des montagnes.
+8s		8	0
+7que	Relatif à l'orogenèse.
+as		a	0
+4raphie	Représentation topographique à trois dimensions, les échelles planimétrique et altimétrique pouvant être différentes.
+as		a	0
+9que	Relatif à l'orographie.
+cs		c	0
+3mo	Langue couchitique, parlée par les Oromos dans la Corne de l’Afrique, principalement en Éthiopie, mais aussi au Kenya, en Somalie ou à Djibouti.
+0Oromos		5	0
+0oronge	Amanite à chapeau orangé, qui croît surtout dans le Midi, comestible et estimé pour son goût.
+6s		6	0
+4yme	Nom porté par un élément de relief : une montagne, une chaîne de montagnes, une colline, une montagne sous-marine, etc.
+7s		7	0
+6ie	Science qui étudie les oronymes, branche de la toponymie consacrée aux noms portés par les formations géologiques telles les montagnes, collines et autres reli…
+8s		8	0
+7que	Relatif à l’oronymie ou aux oronymes.
+as		a	0
+3pharynx	Partie moyenne du pharynx située en arrière de la cavité buccale, s'étendant du voile du palais jusqu'à l'os hyoïde.
+2paillage	Prospection et extraction artisanale de l’or à partir de puits individuels à ciel ouvert, ou dans les rivières.
+as		a	0
+7eur	Celui qui recueille les paillettes d’or qui se trouvent dans le sable de certaines rivières, au moyen du lavage, et qui exerce le métier minier de la recherche…
+as		a	0
+9se	Celle qui recueille les paillettes d’or qui se trouvent dans le sable de certaines rivières, au moyen du lavage, et qui exerce le métier minier de la recherche…
+bs		b	0
+3helin	Qui a perdu son père et sa mère, ou l’un des deux.
+8age	État d’orphelin.
+bs		b	0
+9t	Établissement charitable destiné à élever des orphelins.
+as		a	0
+8e	Enfant qui a perdu son père et sa mère.
+9s		8	1
+8s		8	9
+4éon	Instrument de musique à cordes frottées par une roue et semblable à une grande vielle montée sur pieds.
+7ique	Qui concerne la musique chorale populaire.
+bs		b	0
+8ste	Membre d’une société de chant choral.
+bs		b	0
+7s		7	0
+4ie	Poisson serpentiforme au long bec armé de fines dents très acérées de la famille des bélonidés dont le nom scientifique est Belone belone et qui se rencontre d…
+6s		6	0
+5que	Qui se rapporte à Orphée.
+8s	Poèmes attribués à Orphée.
+5sme	Ensemble des doctrines et des mystères orphiques.
+8s		8	0
+3iment	D’un beau jaune doré pouvant tirer sur l’orangé profond.
+8s		8	0
+4n	Plante à feuilles charnues, à fleurs à cinq pétales, qui croît sur les toits, sur les murs.
+5s		5	0
+2que	Espèce de grand cétacé à dents à livrée noire et blanche et à nageoire dorsale très haute.
+5s		5	0
+2s		2	0
+3eille	Nom vernaculaire de divers lichens du genre Rocella dont on extrayait une matière colorante, l’orcine, pour teindre les étoffes en rouge violet.
+8s		8	0
+2teil	Doigt du pied, chez les humains et les primates.
+6s		6	0
+3hèse	Appareillage qui compense une fonction déficitaire, assiste une structure articulaire ou musculaire, stabilise un segment corporel pendant une phase de réadapt…
+7s		7	0
+4ocentre	Intersection des trois hauteurs d’un triangle.
+bs		b	0
+5dontie	Spécialisation de la médecine dentaire dont l’objet est de corriger les mauvaises positions des dents et des mâchoires afin d’optimiser l’occlusion.
+bs		b	0
+aque	Relatif à l’orthodontie.
+ds		d	0
+aste	Profession du spécialiste de l'orthodontie.
+ds		d	0
+7xe	Qui est conforme à la droite opinion en matière de religion.
+9s		9	0
+8ie	Caractère de ce qui est orthodoxe.
+as		a	0
+6romie	Route d’un navire ou d’un avion par la voie la plus directe, qui est l’arc de grand cercle terrestre reliant le point de départ au point d'arrivée.
+bs		b	0
+aque	Qui a rapport à l’orthodromie.
+ds		d	0
+5épie	Manière de prononcer correctement un mot dans une langue.
+9s		9	0
+5genèse	Théorie selon laquelle l'évolution d'une espèce suit une loi régulière, immuable, sans rapport avec l’utilité, et qui ne peut donc donner prise à la sélection …
+bs		b	0
+6énie	Ensemble des méthodes de planification et de régulation des naissances appliquées au niveau du couple.
+as		a	0
+6onal	Qui forme un angle droit.
+ae		a	3g
+bment	Perpendiculairement.
+bs		a	3d
+aité	Caractère de ce qui est orthogonal, de ce qui possède un angle droit.
+ds		d	0
+9ux		9l	9
+6raphe	Ensemble des règles permettant de noter les sons, de transcrire les mots d'une langue au moyen de caractères d'écriture, suivant les formes consacrées par l'us…
+bs		b	0
+aia		ber	13
+ci		ber	m
+ds		ber	t
+dt		ber	14
+bâmes		ber	3
+bant		ber	z
+cs		ber	c
+dse		ber	6
+bât		ber	k
+des		ber	2
+be	Profil ou coupe perpendiculaire d’un bâtiment, élévation géométrale.
+bée		ber	11
+ds		ber	1f
+bent		cr	v
+cr	Écrire les mots suivant l’orthographe.
+da		d	l
+ei		d	g
+es		d	7
+dez		d	5
+bés		ber	12
+bez		cr	u
+biez		ber	d
+cons		ber	j
+bons		ber	r
+bque	Qui est relatif à l’orthographe.
+es		e	0
+5normal	Normé et orthogonal.
+be		b	n
+cs		b	1
+aux		al	9
+9é	Normé dans une base orthogonale en parlant d'un espace vectoriel euclidien.
+ae		a	n
+bs		a	1
+as		a	9
+5pédagogie	Branche de la pédagogie qui visent à permettre à des apprenants aux prises avec des difficultés ou des troubles d’apprentissage, de pallier ces entraves et de …
+cue	Spécialiste de l’orthopédagogie.
+es		e	0
+8ie	Art de corriger ou de prévenir, surtout chez les enfants, les difformités du corps.
+as		a	0
+9que	Relatif à l’orthopédie.
+cs		c	0
+9ste	Spécialiste de l’orthopédie.
+cs		c	0
+6honie	Discipline paramédicale s’occupant du traitement et de la rééducation des troubles du langage, de la déglutition et des fonctions cognitives.
+bs		b	0
+aque	Relatif à la discipline de l’orthophonie.
+ds		d	0
+aste	Thérapeute paramédical(e) des troubles de la communication liés à la voix, à la parole et au langage oral et écrit, ainsi que des troubles cognitifs et de la d…
+ds		d	0
+6née	Oppression qui ne permet de bien respirer que dans certaines positions : debout ou assis, ou en élevant les épaules.
+9s		9	0
+6tère	Il se dit des insectes pourvus de quatre ailes dont les deux inférieures se replient dans le sens de la longueur.
+as		a	0
+7éroïde	Singulier de orthoptéroïdes.
+ds	Super-ordre d'insectes, sous-classe des ptérygotes, section des néoptères, division des hémimétaboles.
+7ie	Science paramédicale qui a pour vocation le dépistage, la rééducation, la réadaptation et l’exploration fonctionnelle des troubles de la vision.
+9s		9	0
+8que	Relatif aux troubles de la vision.
+bs		b	0
+8ste	Personnel médical spécialisé dans la détection et la rééducation des déficiences visuelles.
+bs		b	0
+5rexie	Doctrine obsessionnelle consistant à ne manger que ce qui est considéré comme sain, bon pour la santé.
+as		a	0
+9que	Qui souffre d'orthorexie.
+cs		c	0
+6hombique	Caractérise un prisme droit qui a pour base un losange (rhombe) ou un rectangle.
+es		e	0
+5scopique	S’applique à un objectif qui ne déforme par une image.
+ds		d	0
+6e	Espèce du groupe des silicates, sous-groupe des tectosilicates, famille des feldspaths sous-famille des feldspaths potassiques, dont la composition chimique es…
+7s		7	0
+6tate	Orthostat.
+as		a	0
+9ique	Relatif à la position debout.
+ds		d	0
+asme	Position debout.
+ds		d	0
+5trope	Qui pousse ou est émis verticalement (vers le haut ou le bas).
+as		a	0
+3ie	Plante aux feuilles pointues, très dentées et garnies, comme les tiges, de poils urticants.
+5s		5	0
+4f	Levant, relatif à l’orient.
+4ve		4f	n
+6s		4f	1
+3olan	Petit oiseau, commun dans le Midi de la France et dans les régions méditerranéennes, recherché pour la délicatesse de sa chair.
+7s		7	0
+0Orval	Commune française, située dans le département du Cher.
+0orvale	Sauge sclarée.
+6s		6	0
+3et	Espèce de lézard sans pattes, d’aspect semblable à un serpent, mais à paupières mobiles, et inoffensif.
+5s		5	0
+3iétan	Sorte d’électuaire auquel on attribuait autrefois toutes sortes de vertus, et dont la composition était proche de la thériaque.
+8s		8	0
+2wellien	Relatif à George Orwell ou à son œuvre.
+9ne		9	n
+bs		9	1
+9s		9	9
+2ycte	Insecte coléoptère de la famille des scarabéidés (Scarabaeidae) qui vit dans le terreau, les tas de tan ou de feuilles.
+5érope	Espèce de mammifère fouisseur d'Afrique, au groin tubulaire, et avec de grandes oreilles ressemblant à celles d'un âne, myrmécophage, capable de fouiller une t…
+as		a	0
+5es		6	0
+3x	Espèce de grande antilope d’Afrique et d’Arabie, ayant de longues cornes droites ou courbées pointant vers l'arrière.

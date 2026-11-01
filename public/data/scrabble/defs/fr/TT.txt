@@ -1,2 +1,2 @@
-ttoro	Soupe de poisson, spécialité du Pays basque, confectionnée avec du merlu, des crustacés et des coquillages où les morceaux de poissons y restent entiers.
-ttoros		ttoro	0
+0ttoro	Soupe de poisson, spécialité du Pays basque, confectionnée avec du merlu, des crustacés et des coquillages où les morceaux de poissons y restent entiers.
+5s		5	0

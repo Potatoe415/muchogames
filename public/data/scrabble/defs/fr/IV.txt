@@ -1,35 +1,35 @@
-ive	Germandrée dont les feuilles, légèrement amères et aromatiques, sont employées en médecine.
-ives		ive	0
-ivette	Autre nom de l’ive.
-ivettes		ivette	0
-ivoire	Substance dure, blanche, opaque qui est la matière principale des dents et des défenses d’animaux comme l’éléphant, l’hippopotame, le morse.
-ivoirerie	Art du sculpteur sur ivoire.
-ivoireries		ivoirerie	0
-ivoires		ivoire	0
-ivoirien	Relatif à la Côte d’Ivoire, son peuple et sa culture.
-ivoirienne		ivoirien	23
-ivoiriennes		ivoirien	1
-ivoiriens		ivoirien	0
-ivoirier	Relatif au commerce de l’ivoire ou à la fabrication d’objets en ivoire.
-ivoirière	Sculptrice qui travaille l’ivoire.
-ivoirières	Pluriel de invoirière.
-ivoiriers		ivoirier	0
-ivoirin	Qui a l’apparence de l’ivoire.
-ivoirine	Substance imitant l’ivoire.
-ivoirines		ivoirin	1
-ivoirins		ivoirin	125
-ivoirité	Concept politique ivoirien : qualité d’être ivoirien.
-ivoirités		ivoirité	0
-ivraie	Graminée particulièrement nuisible aux céréales et provoquant une espèce d'ivresse.
-ivraies		ivraie	0
-ivre	Qui a le cerveau troublé par l’effet des boissons fermentées, par l’alcool, etc.
-ivres		ivre	0
-ivresse	État d’une personne ivre.
-ivresses		ivresse	0
-ivrogne	Qui s'adonne à la consommation outrancière de boissons alcoolisées.
-ivrogner	Boire comme un ivrogne.
-ivrognerie	Habitude de s’enivrer.
-ivrogneries		ivrognerie	0
-ivrognés		ivrogner	38
-ivrognesse	Femme qui a l’habitude de s’enivrer.
-ivrognesses		ivrognesse	0
+0ive	Germandrée dont les feuilles, légèrement amères et aromatiques, sont employées en médecine.
+3s		3	0
+3tte	Autre nom de l’ive.
+6s		6	0
+2oire	Substance dure, blanche, opaque qui est la matière principale des dents et des défenses d’animaux comme l’éléphant, l’hippopotame, le morse.
+6rie	Art du sculpteur sur ivoire.
+9s		9	0
+6s		6	0
+5ien	Relatif à la Côte d’Ivoire, son peuple et sa culture.
+8ne		8	n
+as		8	1
+8s		8	0
+7r	Relatif au commerce de l’ivoire ou à la fabrication d’objets en ivoire.
+6ère	Sculptrice qui travaille l’ivoire.
+9s	Pluriel de invoirière.
+6ers		8	0
+6n	Qui a l’apparence de l’ivoire.
+7e	Substance imitant l’ivoire.
+8s		7	1
+7s		7	3h
+6té	Concept politique ivoirien : qualité d’être ivoirien.
+8s		8	0
+2raie	Graminée particulièrement nuisible aux céréales et provoquant une espèce d'ivresse.
+6s		6	0
+3e	Qui a le cerveau troublé par l’effet des boissons fermentées, par l’alcool, etc.
+4s		4	0
+5se	État d’une personne ivre.
+7s		7	0
+3ogne	Qui s'adonne à la consommation outrancière de boissons alcoolisées.
+7r	Boire comme un ivrogne.
+8ie	Habitude de s’enivrer.
+as		a	0
+6és		6er	12
+6esse	Femme qui a l’habitude de s’enivrer.
+as		a	0

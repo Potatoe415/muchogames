@@ -1,152 +1,152 @@
-ska	Genre musical jamaïcain avec des influences du mento et de R&B apparu à la fin des années 1950.
-skaï	Tissu enduit qui imite le cuir, même s’il n’est pas de la marque Skaï®/Skai®.
-skaïs		skaï	0
-skas		ska	0
-skat	Jeu de cartes d’origine allemande qui se pratique avec un jeu de trente-deux cartes.
-skate	Discipline sportive se pratiquant sur une planche à roulettes.
-skateboard	Planche à roulettes.
-skateboards		skateboard	0
-skatepark	Lieu destiné à la pratique du skateboard.
-skateparks		skatepark	0
-skater	Personne pratiquant le skateboard ou skate.
-skaters		skater	0
-skates		skate	0
-skateur	Personne pratiquant le skateboard ou skate.
-skateurs		skateur	0
-skateuse	Personne pratiquant le skateboard ou skate.
-skateuses		skateuse	0
-skating	Patinage à patins à roulettes ou à patins à glace.
-skats		skat	0
-skeet	Sport de tir visant à atteindre deux plateaux d’argile lancés simultanément.
-skeets		skeet	0
-skeleton	Long toboggan qui glisse sur une piste de neige.
-sketch	Une petite comédie destinée spécialement à faire rire.
-sketches		sketch	0
-sketchs		sketch	0
-ski	Patin très long, légèrement recourbé en avant, qui sert à glisser sur la neige.
-skia		skier	33
-skiable	Où l'on peut faire du ski.
-skiables		skiable	0
-skiai		skier	22
-skiaient		skier	32
-skiais		skier	52
-skiait		skier	40
-skiâmes		skier	3
-skiant		skier	43
-skias		skier	12
-skiascopie	Procédé objectif de détermination de la réfraction totale de l'œil par l'examen du déplacement de l'ombre pupillaire.
-skiascopies		skiascopie	0
-skiasse		skier	6
-skiassent		skier	17
-skiasses		skier	8
-skiassiez		skier	14
-skiassions		skier	25
-skiât		skier	20
-skiâtes		skier	2
-skiathlon	Épreuve de ski de fond qui combine le style classique au style libre.
-skiathlons		skiathlon	0
-skibob	Synonyme de véloski.
-skibobs		skibob	0
-skicross	Discipline sportive de ski acrobatique.
-skie	Ski (ancienne graphie)
-skiée		skié	23
-skiées		skier	51
-skient		skier	41
-skier	Se déplacer sur la neige en utilisant des skis.
-skiera		skier	21
-skierai		skier	50
-skieraient		skier	28
-skierais		skier	18
-skierait		skier	49
-skieras		skier	7
-skièrent		skier	24
-skierez		skier	5
-skieriez		skier	4
-skierions		skier	11
-skierons		skier	10
-skieront		skier	15
-skies		skier	77
-skieur	Personne qui pratique le ski.
-skieurs		skieur	0
-skieuse	Femme pratiquant le ski.
-skieuses		skieuse	0
-skiez		skier	47
-skif	Variante orthographique de skiff.
-skifeur	Variante orthographique de skiffeur.
-skifeurs		skifeur	0
-skifeuse	Variante orthographique de skiffeuse.
-skifeuses		skifeuse	0
-skiff	Bateau assez léger pour générer une vague de sillage et la dépasser en passant au déjaugeage.
-skiffeur	Celui qui rame sur un skiff (embarcation de course pour l’aviron).
-skiffeurs		skiffeur	0
-skiffeuse	Celle qui rame sur un skiff (embarcation de course pour l’aviron).
-skiffeuses		skiffeuse	0
-skiffs		skiff	0
-skifs		skif	0
-skiiez		skier	13
-skiions		skier	19
-skimmer	Système de filtration de piscine.
-skimmers		skimmer	0
-skin	Habillage, couche qui s’applique à une interface de jeu ou de programme pour en modifier l’apparence.
-skinhead	Personne appartenant à un mouvement dont les codes sont l’idéologie de la race blanche, le racisme et l’homophobie, organisation affiliée au Ku Klux Klan, les …
-skinheads		skinhead	0
-skins	Soirée de jeunes et d’adolescents sans limite.
-skions		skier	27
-skip	Grande benne glissant sur un châssis pour transporter le minerai dans les puits inclinés ou verticaux
-skippa		skipper	33
-skippai		skipper	22
-skippaient		skipper	32
-skippais		skipper	29
-skippait		skipper	34
-skippâmes		skipper	3
-skippant		skipper	35
-skippas		skipper	12
-skippasse		skipper	6
-skippassent		skipper	17
-skippasses		skipper	8
-skippassiez		skipper	14
-skippassions		skipper	25
-skippât		skipper	20
-skippâtes		skipper	2
-skippé		skipper	46
-skippée		skipper	37
-skippées		skipper	36
-skippent		skipper	31
-skipper	Capitaine d’un bateau le plus souvent dans le nautisme ou la compétition à la voile.
-skippera		skipper	21
-skipperai		skipper	16
-skipperaient		skipper	28
-skipperais		skipper	18
-skipperait		skipper	26
-skipperas		skipper	7
-skippèrent		skipper	24
-skipperez		skipper	5
-skipperiez		skipper	4
-skipperions		skipper	11
-skipperons		skipper	10
-skipperont		skipper	15
-skippers		skipper	0
-skippés		skipper	38
-skippeur	Capitaine d’un bateau le plus souvent dans le nautisme ou la compétition à la voile.
-skippeurs		skippeur	0
-skippeuse	Capitaine d’un bateau le plus souvent dans le nautisme ou la compétition à la voile.
-skippeuses		skippeuse	0
-skippez		skipper	30
-skippiez		skipper	13
-skippions		skipper	19
-skippons		skipper	27
-skips		skip	0
-skis		ski	0
-skons	Variante orthographique de sconse.
-skopiote	Qui a un rapport avec la ville de Skopje ou ses habitants.
-skopiotes		skopiote	0
-skua	Grand labbe.
-skuas		skua	0
-skunks	Moufette.
-skuns	Variante orthographique de sconse.
-skydome	Hublot de toit servant de puits de lumière ainsi que de trappe de désenfumage lors des incendies.
-skydomes		skydome	0
-skyr	Lait fermenté concentré produit en Islande.
-skyrs		skyr	0
-skysurf	Combinaison de saut en parachute et de figures acrobatiques effectuées avec un surf accroché aux pieds pendant la phase de chute libre.
-skysurfs		skysurf	0
+0ska	Genre musical jamaïcain avec des influences du mento et de R&B apparu à la fin des années 1950.
+3ï	Tissu enduit qui imite le cuir, même s’il n’est pas de la marque Skaï®/Skai®.
+4s		4	0
+3s		3	0
+3t	Jeu de cartes d’origine allemande qui se pratique avec un jeu de trente-deux cartes.
+4e	Discipline sportive se pratiquant sur une planche à roulettes.
+5board	Planche à roulettes.
+as		a	0
+5park	Lieu destiné à la pratique du skateboard.
+9s		9	0
+5r	Personne pratiquant le skateboard ou skate.
+6s		6	0
+5s		5	0
+5ur	Personne pratiquant le skateboard ou skate.
+7s		7	0
+6se	Personne pratiquant le skateboard ou skate.
+8s		8	0
+4ing	Patinage à patins à roulettes ou à patins à glace.
+4s		4	0
+2eet	Sport de tir visant à atteindre deux plateaux d’argile lancés simultanément.
+5s		5	0
+3leton	Long toboggan qui glisse sur une piste de neige.
+3tch	Une petite comédie destinée spécialement à faire rire.
+6es		6	0
+6s		6	0
+2i	Patin très long, légèrement recourbé en avant, qui sert à glisser sur la neige.
+3a		3er	x
+4ble	Où l'on peut faire du ski.
+7s		7	0
+4i		3er	m
+5ent		3er	w
+5s		3er	1g
+5t		3er	14
+3âmes		3er	3
+3ant		3er	17
+4s		3er	c
+5copie	Procédé objectif de détermination de la réfraction totale de l'œil par l'examen du déplacement de l'ombre pupillaire.
+as		a	0
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3athlon	Épreuve de ski de fond qui combine le style classique au style libre.
+9s		9	0
+3bob	Synonyme de véloski.
+6s		6	0
+3cross	Discipline sportive de ski acrobatique.
+3e	Ski (ancienne graphie)
+3ée		4	n
+5s		3er	1f
+3ent		4r	15
+4r	Se déplacer sur la neige en utilisant des skis.
+5a		5	l
+6i		5	1e
+7ent		5	s
+7s		5	i
+7t		5	1d
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4r	25
+4ur	Personne qui pratique le ski.
+6s		6	0
+5se	Femme pratiquant le ski.
+7s		7	0
+4z		4r	1b
+3f	Variante orthographique de skiff.
+4eur	Variante orthographique de skiffeur.
+7s		7	0
+6se	Variante orthographique de skiffeuse.
+8s		8	0
+4f	Bateau assez léger pour générer une vague de sillage et la dépasser en passant au déjaugeage.
+5eur	Celui qui rame sur un skiff (embarcation de course pour l’aviron).
+8s		8	0
+7se	Celle qui rame sur un skiff (embarcation de course pour l’aviron).
+9s		9	0
+5s		5	0
+4s		4	0
+3iez		3er	d
+4ons		3er	j
+3mmer	Système de filtration de piscine.
+7s		7	0
+3n	Habillage, couche qui s’applique à une interface de jeu ou de programme pour en modifier l’apparence.
+4head	Personne appartenant à un mouvement dont les codes sont l’idéologie de la race blanche, le racisme et l’homophobie, organisation affiliée au Ku Klux Klan, les …
+8s		8	0
+4s	Soirée de jeunes et d’adolescents sans limite.
+3ons		3er	r
+3p	Grande benne glissant sur un châssis pour transporter le minerai dans les puits inclinés ou verticaux
+4pa		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Capitaine d’un bateau le plus souvent dans le nautisme ou la compétition à la voile.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+7s		7	0
+5és		5er	12
+5eur	Capitaine d’un bateau le plus souvent dans le nautisme ou la compétition à la voile.
+8s		8	0
+7se	Capitaine d’un bateau le plus souvent dans le nautisme ou la compétition à la voile.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4s		4	0
+3s		3	0
+2ons	Variante orthographique de sconse.
+3piote	Qui a un rapport avec la ville de Skopje ou ses habitants.
+8s		8	0
+2ua	Grand labbe.
+4s		4	0
+3nks	Moufette.
+4s	Variante orthographique de sconse.
+2ydome	Hublot de toit servant de puits de lumière ainsi que de trappe de désenfumage lors des incendies.
+7s		7	0
+3r	Lait fermenté concentré produit en Islande.
+4s		4	0
+3surf	Combinaison de saut en parachute et de figures acrobatiques effectuées avec un surf accroché aux pieds pendant la phase de chute libre.
+7s		7	0

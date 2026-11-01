@@ -1,107 +1,107 @@
-icaque	Fruit de l’icaquier.
-icaques		icaque	0
-icaquier	Nom usuel de Chrysobalanus icaco, arbuste de la famille des Chrysobalanaceae, originaire des zones tropicales d’Amérique et d’Afrique.
-icaquiers		icaquier	0
-icarien	Relatif à Icare ou à sa légende.
-icarienne	Membre du mouvement icarien d'Etienne Cabet.
-icariennes		icarien	1
-icariens		icarien	9
-icaunais	Relatif au département français de l'Yonne et à ses habitants.
-icaunaise		icaunais	23
-icaunaises		icaunais	1
-iceberg	Bloc de glace d’eau douce, détaché du front des glaciers polaires ou d’une barrière flottante, dérivant sur l’océan en fondant peu à peu.
-icebergs		iceberg	0
-icefield	Banquise.
-icefields		icefield	0
-icelle	Celle-ci, celle-là, la personne ou la chose dont on vient de parler.
-icelles	Pluriel d’icelle.
-icelui	ou Ce, cet.
-iceux	Pluriel d’icelui.
-ichneumon	Mangouste d’Égypte que les Égyptiens révéraient dans l’Antiquité parce qu’elle tue les serpents et les jeunes crocodiles.
-ichneumons		ichneumon	0
-ichnologie	Science qui étudie les indices de présence laissées par les animaux.
-ichnologies		ichnologie	0
-ichor	Sang aqueux mêlé de pus âcre, qui est le produit d’une inflammation.
-ichoreuse		ichoreux	23
-ichoreuses		ichoreux	1
-ichoreux	Qui tient de la nature de l’ichor.
-ichors		ichor	0
-ichthus	Symbole en forme de poisson, et monogramme désignant le Christ.
-ichthyose	Variante de ichtyose.
-ichthys	Variante de ichthus.
-ichtyocolle	Colle de poisson, gélatine obtenue de diverses espèces de poissons, et, particulièrement, de la vessie natatoire du grand esturgeon (Acipenser huso), utilisée …
-ichtyocolles		ichtyocolle	0
-ichtyoïde	Variante de ichthyoïde.
-ichtyoïdes		ichtyoïde	115
-ichtyol	Liquide goudronneux et sulfureux thérapeutique obtenue après distillation de schistes bitumeux, il est utilisé dans des produits dermatologiques pour ses propr…
-ichtyologie	Branche de la zoologie consacrée à l’étude des poissons.
-ichtyologies		ichtyologie	0
-ichtyologique	Relatif à l’ichtyologie.
-ichtyologiques		ichtyologique	0
-ichtyologiste	Personne qui est spécialiste de l’ichtyologie, l’étude des poissons.
-ichtyologistes		ichtyologiste	0
-ichtyologue	Spécialiste de l’étude des poissons.
-ichtyologues		ichtyologue	0
-ichtyols		ichtyol	0
-ichtyophage	Qui mange du poisson.
-ichtyophages		ichtyophage	0
-ichtyornis	Variante de ichthyornis
-ichtyosaure	Genre de reptiles à vertèbres de poisson, appartenant aux époques antédiluviennes.
-ichtyosaures		ichtyosaure	0
-ichtyose	Maladie de la peau se caractérisant par une sécheresse importante et la présence de squames (écailles de peau) très fines.
-ichtyoses		ichtyose	0
-Ichtyostéga	Amphibien fossile qui a vécu au Dévonien supérieur, entre 365 et 360 millions d'années avant notre ère.
-Ichtyostégas		Ichtyostéga	0
-ici	Il marque la proximité immédiate dans l’espace par rapport à soi.
-icitte	Ici.
-icoglan	Dans l’empire Ottoman, page du Grand Seigneur.
-icoglans		icoglan	0
-icône	Image sainte, le plus souvent peinte sur bois, qui est vénérée dans l'Église d'Orient.
-icônes		icône	0
-iconicité	Caractère d’une représentation fidèle de quelque chose.
-iconicités		iconicité	0
-iconique	Relatif aux icônes, à la représentation de(s) dieu(x).
-iconiques		iconique	0
-iconoclasme	Doctrine condamnant avec violence l'adoration des icônes.
-iconoclasmes		iconoclasme	0
-iconoclaste	Qui condamne la représentation figurée des divinités.
-iconoclastes		iconoclaste	0
-iconoclastie	Iconoclasme, iconoclasie.
-iconoclasties		iconoclastie	0
-iconogène	Qui crée des images.
-iconogènes		iconogène	0
-iconographe	Peintre d’icônes.
-iconographes		iconographe	0
-iconographie	Science qui décrit les images, les tableaux, médailles, statues, bustes, camées, etc.
-iconographies		iconographie	0
-iconographique	Qui a rapport à l’iconographie.
-iconographiques		iconographique	0
-iconolâtre	Qui pratique l’iconolâtrie ou relève de cette pratique.
-iconolâtres		iconolâtre	0
-iconolâtrie	Adoration des images.
-iconolâtries		iconolâtrie	0
-iconologie	Étude des modes de représentation dans les arts graphiques et plastiques.
-iconologies		iconologie	0
-iconologique	Relatif à l’iconologie.
-iconologiques		iconologique	0
-iconologiste	Auteur d’une iconologie.
-iconologistes		iconologiste	0
-iconologue	Spécialiste de l’iconologie.
-iconologues		iconologue	0
-iconoscope	Tube analyseur de caméra de télévision.
-iconoscopes		iconoscope	0
-iconostase	Grande cloison qui, dans les églises orthodoxes, sépare le sanctuaire et l’autel où se tient le clergé célébrant la liturgie de la nef et où l’on expose les im…
-iconostases		iconostase	0
-iconothèque	Collection d’images.
-iconothèques		iconothèque	0
-icosaédral	Qualifie un polyèdre qui a vingt faces.
-icosaédrale		icosaédral	23
-icosaédrales		icosaédral	1
-icosaédraux		icosaédral	9
-icosaèdre	Polyèdre qui a vingt faces.
-icosaèdres		icosaèdre	0
-ictère	Affection caractérisée par la couleur jaune que prennent les téguments et les muqueuses et qu’on peut attribuer à la présence de bilirubine dans le sang.
-ictères		ictère	0
-ictérique	Qui tient de l’ictère, ou qui en est atteint.
-ictériques		ictérique	0
-ictus	Atteinte subite d’une maladie, en particulier dans le domaine de la neurologie.
+0icaque	Fruit de l’icaquier.
+6s		6	0
+5ier	Nom usuel de Chrysobalanus icaco, arbuste de la famille des Chrysobalanaceae, originaire des zones tropicales d’Amérique et d’Afrique.
+8s		8	0
+3rien	Relatif à Icare ou à sa légende.
+7ne	Membre du mouvement icarien d'Etienne Cabet.
+9s		7	1
+7s		7	9
+3unais	Relatif au département français de l'Yonne et à ses habitants.
+8e		8	n
+9s		8	1
+2eberg	Bloc de glace d’eau douce, détaché du front des glaciers polaires ou d’une barrière flottante, dérivant sur l’océan en fondant peu à peu.
+7s		7	0
+3field	Banquise.
+8s		8	0
+3lle	Celle-ci, celle-là, la personne ou la chose dont on vient de parler.
+6s	Pluriel d’icelle.
+4ui	ou Ce, cet.
+3ux	Pluriel d’icelui.
+2hneumon	Mangouste d’Égypte que les Égyptiens révéraient dans l’Antiquité parce qu’elle tue les serpents et les jeunes crocodiles.
+9s		9	0
+4ologie	Science qui étudie les indices de présence laissées par les animaux.
+as		a	0
+3or	Sang aqueux mêlé de pus âcre, qui est le produit d’une inflammation.
+5euse		7x	n
+9s		7x	1
+7x	Qui tient de la nature de l’ichor.
+5s		5	0
+3thus	Symbole en forme de poisson, et monogramme désignant le Christ.
+5yose	Variante de ichtyose.
+6s	Variante de ichthus.
+4yocolle	Colle de poisson, gélatine obtenue de diverses espèces de poissons, et, particulièrement, de la vessie natatoire du grand esturgeon (Acipenser huso), utilisée …
+bs		b	0
+6ïde	Variante de ichthyoïde.
+9s		9	37
+6l	Liquide goudronneux et sulfureux thérapeutique obtenue après distillation de schistes bitumeux, il est utilisé dans des produits dermatologiques pour ses propr…
+7ogie	Branche de la zoologie consacrée à l’étude des poissons.
+bs		b	0
+aque	Relatif à l’ichtyologie.
+ds		d	0
+aste	Personne qui est spécialiste de l’ichtyologie, l’étude des poissons.
+ds		d	0
+9ue	Spécialiste de l’étude des poissons.
+bs		b	0
+7s		7	0
+6phage	Qui mange du poisson.
+bs		b	0
+6rnis	Variante de ichthyornis
+6saure	Genre de reptiles à vertèbres de poisson, appartenant aux époques antédiluviennes.
+bs		b	0
+7e	Maladie de la peau se caractérisant par une sécheresse importante et la présence de squames (écailles de peau) très fines.
+8s		8	0
+0Ichtyostéga	Amphibien fossile qui a vécu au Dévonien supérieur, entre 365 et 360 millions d'années avant notre ère.
+bs		b	0
+0ici	Il marque la proximité immédiate dans l’espace par rapport à soi.
+3tte	Ici.
+2oglan	Dans l’empire Ottoman, page du Grand Seigneur.
+7s		7	0
+2ône	Image sainte, le plus souvent peinte sur bois, qui est vénérée dans l'Église d'Orient.
+5s		5	0
+2onicité	Caractère d’une représentation fidèle de quelque chose.
+9s		9	0
+5que	Relatif aux icônes, à la représentation de(s) dieu(x).
+8s		8	0
+4oclasme	Doctrine condamnant avec violence l'adoration des icônes.
+bs		b	0
+9te	Qui condamne la représentation figurée des divinités.
+bs		b	0
+aie	Iconoclasme, iconoclasie.
+cs		c	0
+5gène	Qui crée des images.
+9s		9	0
+6raphe	Peintre d’icônes.
+bs		b	0
+aie	Science qui décrit les images, les tableaux, médailles, statues, bustes, camées, etc.
+cs		c	0
+bque	Qui a rapport à l’iconographie.
+es		e	0
+5lâtre	Qui pratique l’iconolâtrie ou relève de cette pratique.
+as		a	0
+9ie	Adoration des images.
+bs		b	0
+6ogie	Étude des modes de représentation dans les arts graphiques et plastiques.
+as		a	0
+9que	Relatif à l’iconologie.
+cs		c	0
+9ste	Auteur d’une iconologie.
+cs		c	0
+8ue	Spécialiste de l’iconologie.
+as		a	0
+5scope	Tube analyseur de caméra de télévision.
+as		a	0
+6tase	Grande cloison qui, dans les églises orthodoxes, sépare le sanctuaire et l’autel où se tient le clergé célébrant la liturgie de la nef et où l’on expose les im…
+as		a	0
+5thèque	Collection d’images.
+bs		b	0
+3saédral	Qualifie un polyèdre qui a vingt faces.
+ae		a	n
+bs		a	1
+9ux		9l	9
+5èdre	Polyèdre qui a vingt faces.
+9s		9	0
+2tère	Affection caractérisée par la couleur jaune que prennent les téguments et les muqueuses et qu’on peut attribuer à la présence de bilirubine dans le sang.
+6s		6	0
+3érique	Qui tient de l’ictère, ou qui en est atteint.
+9s		9	0
+3us	Atteinte subite d’une maladie, en particulier dans le domaine de la neurologie.

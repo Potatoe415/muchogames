@@ -1,46 +1,46 @@
-zwanza		zwanzer	33
-zwanzai		zwanzer	22
-zwanzaient		zwanzer	32
-zwanzais		zwanzer	29
-zwanzait		zwanzer	34
-zwanzâmes		zwanzer	3
-zwanzant		zwanzer	35
-zwanzas		zwanzer	12
-zwanzasse		zwanzer	6
-zwanzassent		zwanzer	17
-zwanzasses		zwanzer	8
-zwanzassiez		zwanzer	14
-zwanzassions		zwanzer	25
-zwanzât		zwanzer	20
-zwanzâtes		zwanzer	2
-zwanze	Humour typiquement gouailleux de Bruxelles mais aussi un art de vivre bruxellois.
-zwanzent		zwanzer	31
-zwanzer	Plaisanter.
-zwanzera		zwanzer	21
-zwanzerai		zwanzer	16
-zwanzeraient		zwanzer	28
-zwanzerais		zwanzer	18
-zwanzerait		zwanzer	26
-zwanzeras		zwanzer	7
-zwanzèrent		zwanzer	24
-zwanzerez		zwanzer	5
-zwanzeriez		zwanzer	4
-zwanzerions		zwanzer	11
-zwanzerons		zwanzer	10
-zwanzeront		zwanzer	15
-zwanzes		zwanzer	66
-zwanzeur	Humoriste bruxellois.
-zwanzeurs		zwanzeur	0
-zwanzeuse	Humoriste bruxelloise.
-zwanzeuses		zwanzeuse	0
-zwanzez		zwanzer	30
-zwanziez		zwanzer	13
-zwanzions		zwanzer	19
-zwanzons		zwanzer	27
-zwieback	Biscotte.
-zwiebacks		zwieback	0
-zwinglianisme	Doctrine réformatrice chrétienne, initiée par Ulrich Zwingli, prêtre zurichois du XVIᵉ siècle.
-zwinglien	Relatif à Zwingli ou au zwinglianisme.
-zwinglienne		zwinglien	23
-zwingliennes		zwinglien	1
-zwingliens		zwinglien	0
+0zwanza		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Humour typiquement gouailleux de Bruxelles mais aussi un art de vivre bruxellois.
+6nt		6r	v
+6r	Plaisanter.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6ur	Humoriste bruxellois.
+8s		8	0
+7se	Humoriste bruxelloise.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+2ieback	Biscotte.
+8s		8	0
+3nglianisme	Doctrine réformatrice chrétienne, initiée par Ulrich Zwingli, prêtre zurichois du XVIᵉ siècle.
+7en	Relatif à Zwingli ou au zwinglianisme.
+9ne		9	n
+bs		9	1
+9s		9	0

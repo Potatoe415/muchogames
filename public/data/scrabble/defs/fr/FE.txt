@@ -1,1747 +1,1747 @@
-féal	Fidèle.
-féale	Amie fidèle.
-féales		féal	1
-féât		féer	20
-féaux		féal	9
-fébricule	Petite fièvre ; fièvre hectique légère.
-fébricules		fébricule	0
-fébrifuge	Qui a la propriété de combattre la fièvre.
-fébrifuges		fébrifuge	0
-fébrile	Qui a rapport à la fièvre, qui produit la fièvre.
-fébrilement	D’une manière fébrile.
-fébriles		fébrile	0
-fébrilité	État de ce qui est fébrile.
-fébrilités		fébrilité	0
-fécal	Qui appartient aux gros excréments de l’homme et des animaux.
-fécale		fécal	23
-fécales		fécal	1
-fécaloïde	Qui a lʼapparence ou lʼodeur des fèces.
-fécaloïdes		fécaloïde	0
-fécalome	Amas dur de matières fécales pouvant être confondu avec une tumeur.
-fécalomes		fécalome	0
-fécaux		fécal	9
-fèces	Sédiment qui reste au fond d’un liquide trouble, après qu’on l’a laissé reposer.
-fécial	Relatif aux traités de paix à Rome.
-féciale		fécial	23
-féciales		fécial	1
-féciaux		fécial	9
-fécond	Qui produit, qui peut produire beaucoup par voie de génération, en parlant des femmes, des animaux.
-féconda		féconder	33
-fécondabilité	Mesure du potentiel reproducteur.
-fécondabilités		fécondabilité	0
-fécondable	Qui peut être fécondé.
-fécondables		fécondable	0
-fécondai		féconder	22
-fécondaient		féconder	32
-fécondais		féconder	52
-fécondait		féconder	40
-fécondâmes		féconder	3
-fécondance	Puissance de féconder.
-fécondances		fécondance	0
-fécondant	Qui féconde.
-fécondante		fécondant	23
-fécondantes		fécondant	1
-fécondants		fécondant	9
-fécondas		féconder	12
-fécondasse		féconder	6
-fécondassent		féconder	17
-fécondasses		féconder	8
-fécondassiez		féconder	14
-fécondassions		féconder	25
-fécondât		féconder	20
-fécondâtes		féconder	2
-fécondateur	Qui a la force de féconder.
-fécondateurs		fécondateur	0
-fécondation	Action de féconder.
-fécondations		fécondation	0
-fécondatrice	Celle qui féconde.
-fécondatrices		fécondateur	1
-féconde		fécond	23
-fécondée		féconder	45
-fécondées		féconder	51
-fécondent		féconder	41
-féconder	Rendre fécond.
-fécondera		féconder	21
-féconderai		féconder	50
-féconderaient		féconder	28
-féconderais		féconder	18
-féconderait		féconder	49
-féconderas		féconder	7
-fécondèrent		féconder	24
-féconderez		féconder	5
-féconderiez		féconder	4
-féconderions		féconder	11
-féconderons		féconder	10
-féconderont		féconder	15
-fécondés		féconder	53
-fécondez		féconder	47
-fécondiez		féconder	13
-fécondions		féconder	19
-fécondité	Qualité de ce qui est fécond.
-fécondités		fécondité	0
-fécondons		féconder	27
-féconds		fécond	0
-fécula		féculer	33
-féculai		féculer	22
-féculaient		féculer	32
-féculais		féculer	29
-féculait		féculer	34
-féculâmes		féculer	3
-féculant		féculer	35
-féculas		féculer	12
-féculasse		féculer	6
-féculassent		féculer	17
-féculasses		féculer	8
-féculassiez		féculer	14
-féculassions		féculer	25
-féculât		féculer	20
-féculâtes		féculer	2
-fécule	Poudre blanche à très forte teneur en amidon, qui provient de certaines racines ou de certaines graines.
-féculée		féculer	37
-féculées		féculer	36
-féculence	État des liqueurs qui sont chargées de lie, de sédiment.
-féculences		féculence	0
-féculent	Qui renferme de la fécule.
-féculente		féculent	109
-féculentes		féculent	1
-féculents		féculent	9
-féculer	Faire de la fécule à partir de.
-féculera		féculer	21
-féculerai		féculer	16
-féculeraient		féculer	28
-féculerais		féculer	18
-féculerait		féculer	26
-féculeras		féculer	7
-féculèrent		féculer	24
-féculerez		féculer	5
-féculerie	Usine où l’on produit la fécule.
-féculeries		féculerie	0
-féculeriez		féculer	4
-féculerions		féculer	11
-féculerons		féculer	10
-féculeront		féculer	15
-féculés		féculer	38
-féculeuse		féculeux	23
-féculeuses		féculeux	1
-féculeux	Qui contient de la fécule.
-féculez		féculer	30
-féculier	Relatif à la fécule.
-féculière	Fabricante de fécule.
-féculières		féculier	1
-féculiers		féculier	9
-féculiez		féculer	13
-féculions		féculer	19
-féculons		féculer	27
-fedayin	À l’époque médiévale, membres de la célèbre secte des Assassins (nizârites).
-fédayins		fédayin	0
-feddayin	Variante orthographique de fedayin.
-feddayins		feddayin	0
-fédé	Fédération.
-fédéra		fédérer	33
-fédérai		fédérer	22
-fédéraient		fédérer	32
-fédérais		fédérer	29
-fédérait		fédérer	34
-fédéral	Qui a rapport à une fédération d’États ou à une fédération de plusieurs sociétés visant un but commun.
-fédérale	Route fédérale (aux États-Unis).
-fédérales		fédéral	1
-fédéralisa		fédéraliser	33
-fédéralisai		fédéraliser	22
-fédéralisaient		fédéraliser	32
-fédéralisais		fédéraliser	29
-fédéralisait		fédéraliser	34
-fédéralisâmes		fédéraliser	3
-fédéralisant		fédéraliser	35
-fédéralisas		fédéraliser	12
-fédéralisasse		fédéraliser	6
-fédéralisassent		fédéraliser	17
-fédéralisasses		fédéraliser	8
-fédéralisassiez		fédéraliser	14
-fédéralisât		fédéraliser	20
-fédéralisâtes		fédéraliser	2
-fédéralisation	Action de fédéraliser.
-fédéralisations		fédéralisation	0
-fédéralisé		fédéraliser	56
-fédéralisée		fédéraliser	37
-fédéralisées		fédéraliser	36
-fédéralisent		fédéraliser	31
-fédéraliser	Appliquer le principe du fédéralisme à.
-fédéralisera		fédéraliser	21
-fédéraliserai		fédéraliser	16
-fédéraliserais		fédéraliser	18
-fédéraliserait		fédéraliser	26
-fédéraliseras		fédéraliser	7
-fédéralisèrent		fédéraliser	24
-fédéraliserez		fédéraliser	5
-fédéraliseriez		fédéraliser	4
-fédéraliserions		fédéraliser	11
-fédéraliserons		fédéraliser	10
-fédéraliseront		fédéraliser	15
-fédéralisés		fédéraliser	38
-fédéralisez		fédéraliser	30
-fédéralisiez		fédéraliser	13
-fédéralisions		fédéraliser	19
-fédéralisme	Système politique ou social de groupement en un seul État de plusieurs États ou en une seule société de plusieurs sociétés.
-fédéralismes		fédéralisme	0
-fédéralisons		fédéraliser	27
-fédéraliste	Partisan du fédéralisme.
-fédéralistes		fédéraliste	0
-fédérâmes		fédérer	3
-fédérant		fédérer	35
-fédéras		fédérer	12
-fédérasse		fédérer	6
-fédérassent		fédérer	17
-fédérasses		fédérer	8
-fédérassiez		fédérer	14
-fédérassions		fédérer	25
-fédérât		fédérer	20
-fédérâtes		fédérer	2
-fédérateur	Qui organise ou favorise une fédération.
-fédérateurs		fédérateur	9
-fédératif	Relatif à une fédération d’États ou de sociétés.
-fédératifs		fédératif	9
-fédération	Groupement en un seul de plusieurs États dont chacun est régi par ses lois particulières.
-fédérations		fédération	0
-fédérative		fédératif	23
-fédératives		fédératif	1
-fédératrice		fédérateur	23
-fédératrices		fédérateur	1
-fédéraux		fédéral	9
-fédéré	Qui fait partie d’une fédération.
-fédérée	Membre d'une des fédérations qui se formèrent sous la Révolution et pendant les Cent-Jours.
-fédérées		fédéré	1
-fédèrent		fédérer	31
-fédérer	Réunir en fédération.
-fédèrera		fédérer	21
-fédèrerai		fédérer	16
-fédèreraient		fédérer	28
-fédèrerais		fédérer	18
-fédèrerait		fédérer	26
-fédèreras		fédérer	7
-fédérèrent		fédérer	24
-fédèrerez		fédérer	5
-fédèreriez		fédérer	4
-fédèrerions		fédérer	11
-fédèrerons		fédérer	10
-fédèreront		fédérer	15
-fédérés		fédéré	9
-fédérez		fédérer	30
-fédériez		fédérer	13
-fédérions		fédérer	19
-fédérons		fédérer	27
-fédés		fédé	0
-fée	Être imaginaire à qui la tradition populaire ou l’imagination des conteurs attribue une puissance surnaturelle.
-feedback	Mécanisme par lequel une partie de la sortie d’un système est réinjectée à l’entrée pour influer sur son comportement (stabilisation, correction d’erreur, etc.…
-feedbacks		feedback	0
-feeder	Long canal qui amène le verre en fusion du bassin du four aux machines de formage.
-feeders		feeder	0
-feeling	Ressenti, intuition.
-feelings		feeling	0
-féer	Douer d’un pouvoir magique.
-féerie	Art des fées.
-féeries		féerie	0
-féerique	Qui est relatif aux fées.
-féeriquement	D'une façon féerique.
-féeriques		féerique	0
-fées		fée	0
-feignaient		feindre	93
-feignais		feindre	95
-feignait		feindre	91
-feignant	Qui feint une action, un état.
-feignante	Fainéante ; paresseuse.
-feignantes		feignant	1
-feignants		feignant	9
-feignasse	Qui est fainéant.
-feignasses		feignasse	0
-feigne	Variante orthographique de faigne
-feignent		feindre	41
-feignes		feindre	76
-feignez		feindre	70
-feigniez		feindre	102
-feignîmes		feindre	68
-feignions		feindre	111
-feignirent		feindre	48
-feignis		feindre	55
-feignisse		feindre	6
-feignissent		feindre	17
-feignisses		feindre	8
-feignissiez		feindre	14
-feignissions		feindre	25
-feignit		feindre	39
-feignîtes		feindre	2
-feignons		feindre	73
-feijoa	Nom usuel de Feijoa sellowiana (anciennement Acca sellowiana), arbre fruitier de la famille des Myrtaceae, originaire des zones subtropicales du sud du Brésil,…
-feijoada	Ragout aux haricots.
-feijoadas		feijoada	0
-feijoas		feijoa	0
-feindra		feindre	44
-feindrai		feindre	50
-feindraient		feindre	108
-feindrais		feindre	106
-feindrait		feindre	92
-feindras		feindre	7
-feindre	Présenter une chose comme réelle en lui donnant une fausse apparence.
-feindrez		feindre	5
-feindriez		feindre	99
-feindrions		feindre	101
-feindrons		feindre	10
-feindront		feindre	15
-feins		feindre	72
-feint	Peinture qui imite le marbre.
-feinta		feinter	33
-feintai		feinter	22
-feintaient		feinter	32
-feintais		feinter	29
-feintait		feinter	40
-feintâmes		feinter	3
-feintant		feinter	43
-feintas		feinter	12
-feintasse		feinter	6
-feintassent		feinter	17
-feintasses		feinter	8
-feintassiez		feinter	14
-feintassions		feinter	25
-feintât		feinter	20
-feintâtes		feinter	2
-feinte	Action de feindre.
-feintée		feinter	37
-feintées		feinter	36
-feintent		feinter	31
-feinter	Faire une feinte.
-feintera		feinter	21
-feinterai		feinter	16
-feinteraient		feinter	28
-feinterais		feinter	18
-feinterait		feinter	26
-feinteras		feinter	7
-feintèrent		feinter	24
-feinterez		feinter	58
-feinteriez		feinter	4
-feinterions		feinter	11
-feinterons		feinter	10
-feinteront		feinter	15
-feintés		feinter	53
-feinteur	Sportif qui sait bien utiliser la feinte.
-feinteurs		feinteur	0
-feinteuse	Femme qui utilise la feinte.
-feinteuses		feinteuse	0
-feintez		feinter	47
-feintiez		feinter	13
-feintions		feinter	19
-feintise	Feinte, ruse.
-feintises		feintise	0
-feintons		feinter	27
-feints		feint	0
-fêla		fêler	39
-fêlai		fêler	22
-fêlaient		fêler	32
-fêlais		fêler	29
-fêlait		fêler	34
-fêlâmes		fêler	3
-fêlant		fêler	43
-fêlas		fêler	12
-fêlasse		fêler	6
-fêlassent		fêler	17
-fêlasses		fêler	8
-fêlassiez		fêler	14
-fêlassions		fêler	25
-fêlât		fêler	20
-fêlâtes		fêler	2
-feldspath	Minéral d’une texture lamelleuse, composé de silice, d’alumine et de potasse, et qui est utilisé pour produire de l’émail blanc.
-feldspathique	Qui contient du feldspath.
-feldspathiques		feldspathique	0
-feldspaths		feldspath	0
-feldwebel	Grade dans l’armée allemande correspondant à celui d’adjudant.
-feldwebels		feldwebel	0
-fêle	Canne, ou espèce de sarbacane ou tuyau creux en fer, au moyen duquel on prélève une portion de pâte de verre du creuset afin de la mettre en forme en la souffl…
-fêlée	Femme fêlée.
-fêlées		fêlé	1
-fêlent		fêler	31
-fêler	Fendre un vase, un cristal, un verre, un métal, etc., de telle sorte que les pièces en demeurent encore jointes l’une avec l’autre.
-fêlera		fêler	21
-fêlerai		fêler	16
-fêleraient		fêler	28
-fêlerais		fêler	18
-fêlerait		fêler	26
-fêleras		fêler	7
-fêlèrent		fêler	24
-fêlerez		fêler	5
-fêleriez		fêler	4
-fêlerions		fêler	11
-fêlerons		fêler	10
-fêleront		fêler	15
-fêles		fêle	0
-fêlez		fêler	30
-félibre	Poète ou prosateur qui écrit en occitan ou plus localement en auvergnat, gascon, languedocien, limousin ou provençal.
-félibres		félibre	0
-félibresse	Poétesse ou prosatrice qui écrit en occitan ou plus localement en auvergnat, gascon, languedocien, limousin, vivaro-alpin ou provençal.
-félibresses		félibresse	0
-félibrige	Association, union, groupement des félibres.
-félibriges		félibrige	0
-félicita		féliciter	39
-félicitai		féliciter	55
-félicitaient		féliciter	42
-félicitais		féliciter	52
-félicitait		féliciter	40
-félicitâmes		féliciter	68
-félicitant		féliciter	43
-félicitas		féliciter	12
-félicitasse		féliciter	6
-félicitassent		féliciter	17
-félicitasses		féliciter	8
-félicitassiez		féliciter	14
-félicitassions		féliciter	25
-félicitât		féliciter	20
-félicitâtes		féliciter	2
-félicitation	Action de féliciter.
-félicitations	Utilisé pour adresser ses félicitations à quelqu’un.
-félicité	Béatitude ; grand bonheur.
-félicitée		féliciter	45
-félicitées		féliciter	36
-félicitent		féliciter	41
-féliciter	Complimenter quelqu’un sur un succès, sur un événement agréable.
-félicitera		féliciter	44
-féliciterai		féliciter	50
-féliciteraient		féliciter	63
-féliciterais		féliciter	60
-féliciterait		féliciter	49
-féliciteras		féliciter	57
-félicitèrent		féliciter	48
-féliciterez		féliciter	5
-féliciteriez		féliciter	74
-féliciterions		féliciter	11
-féliciterons		féliciter	10
-féliciteront		féliciter	15
-félicités		félicité	0
-félicitez		féliciter	47
-félicitiez		féliciter	67
-félicitions		féliciter	65
-félicitons		féliciter	59
-félidé	Membre de la famille des Félidés, des félidés.
-félidés	Orthographe fréquemment utilisée pour Félidés.
-fêliez		fêler	13
-félin	Qui se rapporte au chat ou aux félidés.
-féline		félin	23
-félines		félin	1
-félinité	Qui a la souplesse, la grâce et la ruse d’un chat.
-félinités		félinité	0
-félins		félin	9
-fêlions		fêler	19
-Felix	Commune d’Espagne, située dans la province d’Alméria, en Andalousie.
-fellaga	Nom donné, en Tunisie, puis en Algérie, aux partisans des mouvements de libération nationale soulevés contre l’autorité française pour obtenir l’indépendance d…
-fellagas		fellaga	0
-fellagha	Variante de fellaga.
-fellaghas		fellagha	0
-fellah	Paysan d’Égypte et d'Afrique du Nord.
-fellahs		fellah	0
-fellatio	Variante de fellation.
-fellation	Pratique sexuelle consistant à sucer et lécher le pénis.
-fellations		fellation	0
-fellatios		fellatio	0
-felle	Variante de fêle.
-felles		felle	0
-fellinien	Relatif à Federico Fellini, à son cinéma.
-fellinienne		fellinien	23
-felliniennes		fellinien	1
-felliniens		fellinien	9
-félon	Sous le régime féodal, qui fait quelque chose contre la foi due à son seigneur.
-félonie	Sentiments ou manière d’agir d’un vassal félon vis-à-vis de son seigneur.
-félonies		félonie	0
-félonne	Vassale qui manque à la foi due à son seigneur.
-félonnes		félon	1
-félons		félon	9
-felouque	Sorte de petit bâtiment léger, long et étroit, à voiles et à rames, et qui était principalement en usage dans la Méditerranée.
-felouques		felouque	0
-felquiste	Militant du Front de libération du Québec, organisation indépendantiste terroriste ayant sévi au Québec dans les années 1960 et ayant été grandement affaiblie …
-felquistes		felquiste	0
-fêlure	Fente d’une chose fêlée.
-fêlures		fêlure	0
-femelle	Se dit d’un organisme ou d’un organe produisant des gamètes non motiles riches en réserves nutritives dans le cadre de la reproduction sexuée anisogame.
-femelles		femelle	0
-fémelot	Ferrure de l’étambot qui reçoit l’aiguillot et lui sert de pivot.
-fémelots		fémelot	0
-féminicide	Meurtre d’une femme, d’une jeune fille ou d’une enfant en raison de son sexe ou de son genre.
-féminicides		féminicide	0
-féminin	Qualifie un des genres de mots.
-féminine	Sportive (par opposition aux hommes).
-féminines		féminin	1
-féminins		féminin	9
-féminisa		féminiser	33
-féminisai		féminiser	22
-féminisaient		féminiser	42
-féminisais		féminiser	29
-féminisait		féminiser	34
-féminisâmes		féminiser	3
-féminisant	Qui féminise.
-féminisante		féminisant	23
-féminisantes		féminisant	1
-féminisants		féminisant	9
-féminisas		féminiser	12
-féminisasse		féminiser	6
-féminisassent		féminiser	17
-féminisasses		féminiser	8
-féminisassiez		féminiser	14
-féminisassions		féminiser	25
-féminisât		féminiser	20
-féminisâtes		féminiser	2
-féminisation	Action de donner un aspect ou un comportement plus féminin, voire efféminé, à quelqu’un.
-féminisations		féminisation	0
-féminisé	Composé principalement de femmes.
-féminisée		féminiser	37
-féminisées		féminiser	36
-féminisent		féminiser	31
-féminiser	Faire du genre féminin.
-féminisera		féminiser	21
-féminiserai		féminiser	16
-féminiseraient		féminiser	28
-féminiserais		féminiser	18
-féminiserait		féminiser	26
-féminiseras		féminiser	7
-féminisèrent		féminiser	24
-féminiserez		féminiser	5
-féminiseriez		féminiser	4
-féminiserions		féminiser	11
-féminiserons		féminiser	10
-féminiseront		féminiser	15
-féminisés		féminiser	38
-féminisez		féminiser	30
-féminisiez		féminiser	13
-féminisions		féminiser	19
-féminisme	Mouvement revendicatif ayant pour objet la reconnaissance ou l’extension des droits des femmes dans la société jusqu’à leur pleine libération de la domination …
-féminismes		féminisme	0
-féminisons		féminiser	27
-féministe	Qui a rapport au féminisme, mouvement revendicatif ayant pour objet la reconnaissance ou l’extension des droits des femmes dans la société afin de les libérer …
-féministes		féministe	0
-féminité	Caractère de ce qui est féminin.
-féminités		féminité	0
-féminitude	Attitude, pose revendiquée de femmes, en opposition à la féminité, état ou qualité intrinsèque de la femme.
-féminitudes		féminitude	0
-femme	Être humain adulte de genre ou de sexe féminin (par opposition à fille, fillette, femme-enfant).
-femmes		femme	0
-fémoral	Qui appartient au fémur.
-fémorale		fémoral	23
-fémorales		fémoral	1
-fémoraux		fémoral	9
-fémur	Os long, pair et asymétrique de la cuisse chez les tétrapodes.
-fémurs		fémur	0
-fenaison	Action de faner l’herbe d’un pré après l’avoir fauchée dans le but de la récolter en foin.
-fenaisons		fenaison	0
-fend		fendre	80
-fendage	Action de fendre.
-fendages		fendage	0
-fendaient		fendre	93
-fendais		fendre	95
-fendait		fendre	91
-fendant	Celui qui prend des airs de fanfaron et veut en faire accroire.
-fendante	Celle qui prend des airs de fanfaronne et veut en faire accroire.
-fendantes		fendant	1
-fendants		fendant	9
-fendard	Qui est particulièrement drôle.
-fendarde		fendard	23
-fendardes		fendard	1
-fendards		fendard	9
-fendart	Qui est particulièrement drôle.
-fendarts		fendart	0
-fende		fendre	85
-fendent		fendre	41
-fenderie	Action de fendre le bois, le fer, l’ardoise, etc.
-fenderies		fenderie	0
-fendes		fendre	76
-fendeur	Personne qui fend du bois, du fer, de l’ardoise, etc.
-fendeurs		fendeur	0
-fendeuse	Machine destinée à fendre les bûches de bois.
-fendeuses		fendeuse	0
-fendez		fendre	70
-fendiez		fendre	110
-fendilla		fendiller	39
-fendillai		fendiller	55
-fendillaient		fendiller	42
-fendillais		fendiller	29
-fendillait		fendiller	40
-fendillâmes		fendiller	3
-fendillant		fendiller	35
-fendillas		fendiller	12
-fendillasse		fendiller	6
-fendillassent		fendiller	17
-fendillasses		fendiller	8
-fendillassiez		fendiller	14
-fendillassions		fendiller	25
-fendillât		fendiller	20
-fendillâtes		fendiller	2
-fendillé	Qui présente des petites fentes.
-fendillée		fendillé	23
-fendillées		fendillé	1
-fendillement	Action de se fendiller, résultat de cette action.
-fendillements		fendillement	0
-fendillent		fendiller	31
-fendiller	Former des petites fentes, des gerçures.
-fendillera		fendiller	21
-fendillerai		fendiller	16
-fendilleraient		fendiller	28
-fendillerais		fendiller	18
-fendillerait		fendiller	26
-fendilleras		fendiller	7
-fendillèrent		fendiller	48
-fendillerez		fendiller	5
-fendilleriez		fendiller	4
-fendillerions		fendiller	11
-fendillerons		fendiller	10
-fendilleront		fendiller	15
-fendillés		fendiller	53
-fendillez		fendiller	47
-fendilliez		fendiller	13
-fendillions		fendiller	19
-fendillons		fendiller	27
-fendîmes		fendre	3
-fendions		fendre	111
-fendirent		fendre	24
-fendis	Produit de la fente d’un bloc de schiste à l’épaisseur d’une ardoise mais non aux dimensions.
-fendisse		fendre	6
-fendissent		fendre	78
-fendisses		fendre	87
-fendissiez		fendre	14
-fendissions		fendre	25
-fendit		fendre	39
-fendîtes		fendre	2
-fendoir	Outil qui sert à fendre.
-fendoirs		fendoir	0
-fendons		fendre	73
-fendra		fendre	44
-fendrai		fendre	50
-fendraient		fendre	97
-fendrais		fendre	106
-fendrait		fendre	92
-fendras		fendre	7
-fendre	Diviser, séparer, couper en long ou en large, ou de toute autre manière.
-fendrez		fendre	5
-fendriez		fendre	99
-fendrions		fendre	101
-fendrons		fendre	10
-fendront		fendre	15
-fends		fendre	72
-fendu	Qui présente une fente, une fêlure.
-fendue	Jeune fille, jeune femme.
-fendues		fendue	0
-fendus		fendu	9
-fénelonien	Relatif à l’écrivain Fénelon.
-fénelonienne		fénelonien	23
-féneloniennes		fénelonien	1
-féneloniens		fénelonien	9
-fenestra		fenestrer	39
-fenestrage	Variante de fenêtrage.
-fenestrages		fenestrage	0
-fenestrai		fenestrer	22
-fenestraient		fenestrer	32
-fenestrais		fenestrer	29
-fenestrait		fenestrer	34
-fenestrâmes		fenestrer	3
-fenestrant		fenestrer	35
-fenestras		fenestrer	12
-fenestrasse		fenestrer	6
-fenestrassent		fenestrer	17
-fenestrasses		fenestrer	8
-fenestrassiez		fenestrer	14
-fenestrassions		fenestrer	25
-fenestrât		fenestrer	20
-fenestrâtes		fenestrer	2
-fenestration	Ensemble des fenêtres d’un bâtiment ou disposition générale des ouvertures de fenêtres sur la façade d’un édifice.
-fenestrations		fenestration	0
-fenestré	Qui est percé d'ouvertures.
-fenestrée		fenestré	23
-fenestrées		fenestré	1
-fenestrent		fenestrer	31
-fenestrer	Opérer une ouverture, une fenêtre, dans.
-fenestrera		fenestrer	21
-fenestrerai		fenestrer	16
-fenestreraient		fenestrer	28
-fenestrerais		fenestrer	18
-fenestrerait		fenestrer	26
-fenestreras		fenestrer	7
-fenestrèrent		fenestrer	24
-fenestrerez		fenestrer	5
-fenestreriez		fenestrer	4
-fenestrerions		fenestrer	11
-fenestrerons		fenestrer	10
-fenestreront		fenestrer	15
-fenestrés		fenestré	9
-fenestrez		fenestrer	30
-fenestriez		fenestrer	13
-fenestrions		fenestrer	19
-fenestron	Petite fenêtre.
-fenestrons		fenestron	0
-fenêtra		fenêtrer	33
-fenêtrage	Ensemble des fenêtres d’une maison, l’ordre où elles sont disposées.
-fenêtrages		fenêtrage	0
-fenêtrai		fenêtrer	22
-fenêtraient		fenêtrer	32
-fenêtrais		fenêtrer	29
-fenêtrait		fenêtrer	34
-fenêtrâmes		fenêtrer	3
-fenêtrant		fenêtrer	35
-fenêtras		fenêtrer	12
-fenêtrasse		fenêtrer	6
-fenêtrassent		fenêtrer	17
-fenêtrasses		fenêtrer	8
-fenêtrassiez		fenêtrer	14
-fenêtrassions		fenêtrer	25
-fenêtrât		fenêtrer	20
-fenêtrâtes		fenêtrer	2
-fenêtre	Ouverture faite dans certaines parties d’un bâtiment, pour donner du jour et de l’air à l’intérieur.
-fenêtrée		fenêtré	23
-fenêtrées		fenêtré	1
-fenêtrent		fenêtrer	31
-fenêtrer	Ajouter, percer des ouvertures pour des fenêtres.
-fenêtrera		fenêtrer	21
-fenêtrerai		fenêtrer	16
-fenêtreraient		fenêtrer	28
-fenêtrerais		fenêtrer	18
-fenêtrerait		fenêtrer	26
-fenêtreras		fenêtrer	7
-fenêtrèrent		fenêtrer	24
-fenêtrerez		fenêtrer	5
-fenêtreriez		fenêtrer	4
-fenêtrerions		fenêtrer	11
-fenêtrerons		fenêtrer	10
-fenêtreront		fenêtrer	15
-fenêtres		fenêtre	0
-fenêtrez		fenêtrer	30
-fenêtriez		fenêtrer	13
-fenêtrions		fenêtrer	19
-fenêtrons		fenêtrer	27
-fenian	Qui concerne, ou qui appartient au mouvement nationaliste insurrectionnel irlandais du XIXᵉ siècle, incarné notamment par la « Irish Republican Brotherhood » (…
-feniane		fenian	23
-fenianes		fenian	1
-fenians		fenian	9
-fenil	Lieu où on entrepose le foin.
-fenils		fenil	0
-fennec	Petit renardcaractérisé par ses très grandes oreilles et qui vit essentiellement dans les zones désertiques de l’Afrique du Nord.
-fennecs		fennec	0
-fenouil	Plante aromatique, de la famille des Apiacées, qui porte des fleurs jaunes et qui croît surtout dans le midi de l’Europe, de nom scientifique Foeniculum vulgar…
-fenouillet	Variété de pomme qui a le goût du fenouil.
-fenouillets		fenouillet	0
-fenouillette	Variante de fenouillet (variété de pomme).
-fenouillettes		fenouillette	0
-fenouils		fenouil	0
-fente	Division en long pratiquée à un corps, à une masse quelconque.
-fentes		fente	0
-fenton	Tige de fer de forme carrée, ayant 10 ou 15 mm de section, qui peut-être transformée en divers objets.
-fentons		fenton	0
-fenugrec	Nom usuel de Trigonella foenum-graecum, plante herbacée, annuelle, de la famille des Fabacées, originaire d’une zone allant de l’Irak au Pakistan, dont la grai…
-fenugrecs		fenugrec	0
-féodal	Qui appartient à un fief, qui concerne un fief.
-féodale		féodal	23
-féodalement	En vertu du droit de fief.
-féodales		féodal	1
-féodalisme	Système politique, économique et social du Moyen Âge fondé sur la féodalité et l’oppression d’un peuple majoritairement paysan par une aristocratie foncière qu…
-féodalismes		féodalisme	0
-féodalité	Système politique du Moyen Âge, dans lequel le roi entretient avec ses représentants locaux, les comtes, des relations vassaliques.
-féodalités		féodalité	0
-féodaux		féodal	9
-fer	Élément chimique de numéro atomique 26 et de symbole Fe qui fait partie des métaux de transition.
-féra	Une des espèces de poissons, corégones du lac Léman (France et Suisse).
-ferai		faire	50
-feraient		faire	97
-ferais		faire	96
-ferait		faire	92
-féral	Qualifie une espèce domestique animale qui est retournée à l’état sauvage.
-férale		féral	23
-férales	Dans l'empire romain, fêtes données en hommage aux morts, le 21 février.
-Féralies	Fêtes célébrées chaque mois de février en l’honneur des morts sous l’Antiquité romaine (les Feralia).
-férals		féral	9
-feras		faire	57
-féraux		féral	9
-ferblanterie	Industrie, commerce du ferblantier, assortiment d’objets de fer-blanc.
-ferblanteries		ferblanterie	0
-ferblantier	Qui concerne la ferblanterie.
-ferblantière	Celle qui fait, qui vend des ustensiles de fer-blanc.
-ferblantières		ferblantière	1
-ferblantiers		ferblantier	9
-ferez		faire	58
-féria	Festivités traditionnelles et annuelles sur fond de tauromachie, dans le sud de la France.
-férial	Qui concerne la férie.
-fériale		férial	23
-fériales		férial	1
-férias		féria	0
-fériaux		férial	9
-férie	Jour de la semaine dans les rites et les cultes chrétiens.
-fériée		férier	37
-fériées		férier	36
-férier	Célébrer comme fête.
-fériés		férié	9
-feriez		faire	104
-féringien	Relatif aux Féroé et à ses habitants.
-féringienne		féringien	23
-féringiennes		féringien	1
-féringiens		féringien	9
-ferions		faire	105
-férir	Frapper. Ce verbe n’est plus usité qu’à l’infinitif et au participe passé dans quelques locutions (voir aussi féru).
-ferla		ferler	33
-ferlage	Action de plier une voile sur sa vergue.
-ferlages		ferlage	0
-ferlai		ferler	22
-ferlaient		ferler	32
-ferlais		ferler	29
-ferlait		ferler	34
-ferlâmes		ferler	3
-ferlant		ferler	35
-ferlas		ferler	12
-ferlasse		ferler	6
-ferlassent		ferler	17
-ferlasses		ferler	8
-ferlassiez		ferler	14
-ferlassions		ferler	25
-ferlât		ferler	20
-ferlâtes		ferler	2
-ferlé	Se dit soit d’une voile repliée sur la bôme ou une vergue pour qu’elle ne donne plus prise au vent.
-ferlée		ferler	45
-ferlées		ferler	36
-ferlent		ferler	31
-ferler	Relever une voile pli par pli, sur la vergue, après l’avoir carguée, et l’attacher au moyen de rubans.
-ferlera		ferler	21
-ferlerai		ferler	16
-ferleraient		ferler	28
-ferlerais		ferler	18
-ferlerait		ferler	26
-ferleras		ferler	7
-ferlèrent		ferler	24
-ferlerez		ferler	5
-ferleriez		ferler	4
-ferlerions		ferler	11
-ferlerons		ferler	10
-ferleront		ferler	15
-ferlés		ferler	38
-ferlez		ferler	47
-ferliez		ferler	13
-ferlions		ferler	19
-ferlons		ferler	27
-ferlouche	Variante de farlouche.
-ferlouches		ferlouche	0
-ferma		fermer	39
-fermage	Mode d’exploitation agricole louant un domaine rural à un fermier qui cultive les terres en échange d’une rente payable en argent et invariable pour toute la d…
-fermages		fermage	0
-fermai		fermer	55
-fermaient		fermer	42
-fermail	Agrafe, boucle, broche tenant fermé un vêtement, une ceinture, etc.
-fermais		fermer	52
-fermait		fermer	40
-fermâmes		fermer	3
-fermant	Qui se ferme.
-fermante		fermant	23
-fermantes		fermant	1
-fermants		fermant	0
-fermas		fermer	12
-fermasse		fermer	6
-fermassent		fermer	17
-fermasses		fermer	8
-fermassiez		fermer	14
-fermassions		fermer	25
-fermât		fermer	62
-fermâtes		fermer	2
-fermaux		fermail	0
-ferme	Qui a de la consistance, qui offre une certaine résistance.
-fermée		fermé	23
-fermées		fermé	1
-fermement	D’une manière ferme, avec force, avec vigueur.
-ferment	Ensemble d’êtres microscopiques vivant et se développant aux dépens de certaines matières organiques dont ils provoquent la destruction moléculaire.
-fermenta		fermenter	33
-fermentable	Qui est susceptible de fermenter.
-fermentables		fermentable	0
-fermentai		fermenter	22
-fermentaient		fermenter	128
-fermentaire	Relatif à la fermentation.
-fermentaires		fermentaire	0
-fermentais		fermenter	52
-fermentait		fermenter	40
-fermentâmes		fermenter	3
-fermentant	Qui fermente.
-fermentants		fermentant	0
-fermentas		fermenter	12
-fermentasse		fermenter	6
-fermentassent		fermenter	17
-fermentasses		fermenter	8
-fermentassiez		fermenter	14
-fermentassions		fermenter	25
-fermentât		fermenter	20
-fermentâtes		fermenter	2
-fermentatif	De fermentation.
-fermentatifs		fermentatif	9
-fermentation	Ensemble de phénomènes de décomposition résultant de l’action de micro-organismes sur certaines matières organiques.
-fermentations		fermentation	0
-fermentative		fermentatif	23
-fermentatives		fermentatif	1
-fermenté	Qui a subi la fermentation.
-fermentée		fermenté	23
-fermentées		fermenté	1
-fermentent		fermenter	31
-fermenter	Être en fermentation.
-fermentera		fermenter	21
-fermenterai		fermenter	16
-fermenteraient		fermenter	28
-fermenterais		fermenter	18
-fermenterait		fermenter	26
-fermenteras		fermenter	7
-fermentèrent		fermenter	48
-fermenterez		fermenter	5
-fermenteriez		fermenter	4
-fermenterions		fermenter	11
-fermenterons		fermenter	10
-fermenteront		fermenter	15
-fermentés		fermenté	9
-fermentescible	Qui est susceptible de fermenter.
-fermentescibles		fermentescible	0
-fermenteur	Appareil permettant la culture de micro-organismes (levures, bactéries, champignons microscopiques, algues, cellules animales et végétales).
-fermenteurs		fermenteur	0
-fermentez		fermenter	30
-fermentiez		fermenter	13
-fermentions		fermenter	19
-fermentons		fermenter	27
-ferments		ferment	0
-fermer	Clore ce qui était ouvert, par une porte, un couvercle, une trappe, etc.
-fermera		fermer	44
-fermerai		fermer	50
-fermeraient		fermer	63
-fermerais		fermer	60
-fermerait		fermer	49
-fermeras		fermer	57
-fermèrent		fermer	48
-fermerez		fermer	58
-fermeriez		fermer	74
-fermerions		fermer	11
-fermerons		fermer	61
-fermeront		fermer	54
-fermes		ferme	0
-fermeté	État de ce qui est ferme, difficile à ébranler, de ce qui ne chancelle point.
-fermetés		fermeté	0
-fermette	Petite ferme, maison de campagne.
-fermettes		fermette	0
-fermeture	Dispositif qui sert à fermer.
-fermetures		fermeture	0
-fermez		fermer	47
-fermi	Ancienne unité de mesure de longueur, équivalent du femtomètre.
-fermier	Agriculteur, cultivateur, paysan.
-fermière	Agricultrice, personne qui travaille la terre.
-fermières		fermière	0
-fermiers		fermier	9
-fermiez		fermer	67
-fermion	Particule possédant un spin demi-entier.
-fermions		fermer	65
-fermis		fermi	0
-fermium	Élément chimique de numéro atomique 100 et de symbole Fm appartenant à la série chimique des actinides.
-fermiums		fermium	0
-fermoir	Sorte de fermeture, serrure ou ressort s’appliquant à certains objets, tels que livres, colliers, bracelets, médaillons, coffrets, etc.
-fermoirs		fermoir	0
-fermons		fermer	59
-féroce	Qui est cruel par instinct, en parlant des bêtes.
-férocement	D’une manière féroce.
-féroces		féroce	0
-férocité	Naturel féroce.
-férocités		férocité	0
-féroïen	Relatif aux îles Féroé, à ses habitants, à leur langue.
-féroïenne		féroïen	23
-féroïennes		féroïen	1
-féroïens		féroïen	9
-ferons		faire	61
-feront		faire	54
-ferra		ferrer	33
-ferrade	Action de marquer au fer rouge les taureaux ou les chevaux, spécialement en Camargue et en Petite Camargue.
-ferrades		ferrade	0
-ferrage	Action de ferrer un cheval.
-ferrages		ferrage	0
-ferrai		ferrer	55
-ferraient		ferrer	32
-ferrailla		ferrailler	39
-ferraillage	Ensemble des fers qui renforcent le béton armé
-ferraillages		ferraillage	0
-ferraillai		ferrailler	22
-ferraillaient		ferrailler	42
-ferraillais		ferrailler	29
-ferraillait		ferrailler	40
-ferraillâmes		ferrailler	3
-ferraillant	Qui fait un bruit de ferraille.
-ferraillas		ferrailler	12
-ferraillasse		ferrailler	6
-ferraillassent		ferrailler	17
-ferraillasses		ferrailler	8
-ferraillassiez		ferrailler	14
-ferraillassions		ferrailler	25
-ferraillât		ferrailler	20
-ferraillâtes		ferrailler	2
-ferraille	Vieux morceaux de fer usés ou rouillés.
-ferraillement	Bataille à l’épée.
-ferraillements		ferraillement	0
-ferraillent		ferrailler	31
-ferrailler	Dans un combat ou dans un assaut, manier à tort et à travers épées, sabres ou fleurets.
-ferraillera		ferrailler	21
-ferraillerai		ferrailler	16
-ferrailleraient		ferrailler	28
-ferraillerais		ferrailler	18
-ferraillerait		ferrailler	26
-ferrailleras		ferrailler	57
-ferraillèrent		ferrailler	24
-ferraillerez		ferrailler	5
-ferrailleriez		ferrailler	4
-ferraillerions		ferrailler	11
-ferraillerons		ferrailler	10
-ferrailleront		ferrailler	15
-ferrailles		ferraille	0
-ferrailleur	Celui qui se bat souvent à l’épée, qui en cherche les occasions.
-ferrailleurs		ferrailleur	0
-ferrailleuse	Celle qui se bat souvent à l’épée, qui en cherche les occasions.
-ferrailleuses		ferrailleux	1
-ferrailleux	En ferraille, ou qui évoque la ferraille.
-ferraillez		ferrailler	30
-ferrailliez		ferrailler	13
-ferraillions		ferrailler	19
-ferraillons		ferrailler	27
-ferrais		ferrer	52
-ferrait		ferrer	40
-ferralitique	Qualifie des sols formés sur des roches très basiques, pauvres en silice, et très bien drainées.
-ferralitiques		ferralitique	0
-ferrallitique	Variante de ferralitique.
-ferrallitiques		ferrallitique	0
-ferrâmes		ferrer	3
-ferrant	Qui ferre.
-ferrants	Pluriel de ferrant.
-ferrarais	Relatif à la ville de Ferrare.
-ferraraise		ferrarais	23
-ferraraises		ferrarais	1
-ferras		ferrer	12
-ferrasse	Porte qui, dans les verreries, fermait le bout du tunnel de recuisson nommé arche ou carcaise.
-ferrassent		ferrer	17
-ferrasses		ferrasse	0
-ferrassiez		ferrer	14
-ferrassions		ferrer	25
-ferrat	Une des espèces de poissons, corégones du lac Léman (France et Suisse).
-ferrate	Sel formé avec l’acide ferrique.
-ferrâtes		ferrer	2
-ferratier	Variante de ferretier
-ferratiers		ferratier	0
-ferratiste	Personne qui pratique le ferratisme, branche de l'alpinisme qui consiste à utiliser des vias ferratas.
-ferratistes		ferratiste	0
-ferre	Pince de verrier destinée à façonner les goulots de bouteille.
-ferrée	Au Québec du XIXᵉ siècle, bêche.
-ferrées		ferré	1
-ferrement	Action de ferrer un cheval.
-ferrements	Désigne l'ensemble des instruments de chirurgie.
-ferrent		ferrer	31
-ferrer	Garnir de fer.
-ferrera		ferrer	44
-ferrerai		ferrer	16
-ferreraient		ferrer	28
-ferrerais		ferrer	18
-ferrerait		ferrer	49
-ferreras		ferrer	7
-ferrèrent		ferrer	24
-ferrerez		ferrer	5
-ferreriez		ferrer	4
-ferrerions		ferrer	11
-ferrerons		ferrer	10
-ferreront		ferrer	15
-ferrés		ferré	9
-ferret	Enveloppe de métal ou de plastique qui termine un lacet ou une aiguillette.
-ferretier	Marteau du maréchal, dont il se sert pour forger les fers.
-ferretiers		ferretier	0
-ferrets		ferret	0
-ferreur	Celui qui ferre les chevaux.
-ferreurs		ferreur	0
-ferreuse		ferreux	23
-ferreuses		ferreux	1
-ferreux	Qui contient du fer.
-ferrez		ferrer	47
-ferricyanure	Ion de formule³⁻.
-ferricyanures		ferricyanure	0
-ferrière	Sac de cuir dans lequel on porte des outils de charron, de maréchal, de serrurier.
-ferrières		ferrière	0
-ferries		ferry	0
-ferriez		ferrer	13
-ferrimagnétique	Relatif au ferrimagnétisme.
-ferrimagnétisme	Apparence dans une matière d'un ordre magnétique spontané, partiellement antiparallèle au niveau atomique, de sorte qu'il en résulte un moment magnétique net n…
-ferrions		ferrer	19
-ferrique	Se dit des composés de fer où le fer est trivalent.
-ferriques		ferrique	0
-ferrite	Variété allotropique de fer présente dans des alliages ferreux et contenant une infime partie de carbone.
-ferrites		ferrite	0
-ferritine	Molécule protéique permettant le stockage du fer dans les tissus biologiques et constituée par l’union du fer et de l’apoferritine.
-ferritines		ferritine	0
-ferroalliage	Alliage métallique composé de fer et d’un autre métal, surtout utilisé pour la production d’aciers spéciaux.
-ferroalliages		ferroalliage	0
-ferrochrome	Alliage composé de fer et de chrome.
-ferrochromes		ferrochrome	0
-ferrocyanure	Ion de formule⁴⁻.
-ferrocyanures		ferrocyanure	0
-ferromagnétique	Relatif au ferromagnétisme.
-ferromagnétisme	Capacité d’un corps à s’aimanter lorsqu’il est soumis à un champ magnétique.
-ferromanganèse	Ferroalliage à forte teneur en manganèse (au moins 65 % de la masse).
-ferromanganèses		ferromanganèse	0
-ferromolybdène	Ferroalliage de fer et molybdène avec une proportion de 60 à 75 % de molybdène.
-ferromolybdènes		ferromolybdène	0
-ferron	Marchand de fer, ouvrier qui travaille le fer.
-ferronickel	Ferroalliage composé majoritairement de fer et contenant une quantité importante (plus de 20 %) de nickel, utilisé pour la production d’aciers spéciaux.
-ferronickels		ferronickel	0
-ferronnerie	Lieu où l’on fabrique, où l’on vend les gros ouvrages de fer.
-ferronneries		ferronnerie	0
-ferronnier	Qui concerne la ferronnerie.
-ferronnière	Celle qui fabrique, qui vend des ouvrages de fer.
-ferronnières		ferronnier	1
-ferronniers		ferronnier	9
-ferrons		ferron	0
-ferroprussiate	Anion de formule chimique⁴⁻.
-ferroprussiates		ferroprussiate	0
-ferrosilicium	Ferroalliage composé de fer et de silicium dont la teneur en poids en silicium se situe entre 15 % et 90 %, celui à 75 % de silicium étant le plus utilisé.
-ferrouta		ferrouter	33
-ferroutage	Transport intermodal de marchandises, utilisant des véhicules routiers acheminés sur des wagons.
-ferroutages		ferroutage	0
-ferroutai		ferrouter	22
-ferroutaient		ferrouter	32
-ferroutais		ferrouter	29
-ferroutait		ferrouter	34
-ferroutâmes		ferrouter	3
-ferroutant		ferrouter	35
-ferroutas		ferrouter	12
-ferroutasse		ferrouter	6
-ferroutassent		ferrouter	17
-ferroutasses		ferrouter	8
-ferroutassiez		ferrouter	14
-ferroutassions		ferrouter	25
-ferroutât		ferrouter	20
-ferroutâtes		ferrouter	2
-ferrouté		ferrouter	46
-ferroutée		ferrouter	37
-ferroutées		ferrouter	36
-ferroutent		ferrouter	31
-ferrouter	Transporter jusqu’à destination par ferroutage (en associant transport routier et chemin de fer pour transporter les camions).
-ferroutera		ferrouter	21
-ferrouterai		ferrouter	16
-ferrouteraient		ferrouter	28
-ferrouterais		ferrouter	18
-ferrouterait		ferrouter	26
-ferrouteras		ferrouter	7
-ferroutèrent		ferrouter	24
-ferrouterez		ferrouter	5
-ferrouteriez		ferrouter	4
-ferrouterions		ferrouter	11
-ferrouterons		ferrouter	10
-ferrouteront		ferrouter	15
-ferroutés		ferrouter	38
-ferroutez		ferrouter	30
-ferroutiez		ferrouter	13
-ferroutions		ferrouter	19
-ferroutons		ferrouter	27
-ferroviaire	Relatif aux chemins de fer.
-ferroviaires		ferroviaire	0
-ferrugineuse		ferrugineux	23
-ferrugineuses		ferrugineux	1
-ferrugineux	Qui tient de la nature du fer, ou qui comporte des parties de fer.
-ferrure	Garniture de fer et, par extension, d’autre métal.
-ferrures		ferrure	0
-ferry	Transbordeur.
-ferryboat	Transbordeur.
-ferrys		ferry	0
-fers		fer	0
-ferte	Longue perche de bois servant à sauter par dessus de menus obstacles.
-fertés		ferté	0
-fertile	Qui produit beaucoup, en parlant principalement d’un sol cultivé.
-fertilement	D’une manière fertile.
-fertiles		fertile	0
-fertilisa		fertiliser	33
-fertilisable	Qui peut être fertilisé.
-fertilisables		fertilisable	0
-fertilisai		fertiliser	22
-fertilisaient		fertiliser	32
-fertilisais		fertiliser	29
-fertilisait		fertiliser	40
-fertilisâmes		fertiliser	3
-fertilisant	Qui fertilise, qui est propre à fertiliser.
-fertilisante		fertilisant	23
-fertilisantes		fertilisant	1
-fertilisants		fertilisant	9
-fertilisas		fertiliser	12
-fertilisasse		fertiliser	6
-fertilisassent		fertiliser	17
-fertilisasses		fertiliser	8
-fertilisassiez		fertiliser	14
-fertilisassions		fertiliser	25
-fertilisât		fertiliser	20
-fertilisâtes		fertiliser	2
-fertilisation	Action de fertiliser.
-fertilisations		fertilisation	0
-fertilise		fertiliser	64
-fertilisée		fertiliser	45
-fertilisées		fertiliser	36
-fertilisent		fertiliser	41
-fertiliser	Rendre fertile.
-fertilisera		fertiliser	44
-fertiliserai		fertiliser	16
-fertiliseraient		fertiliser	28
-fertiliserais		fertiliser	18
-fertiliserait		fertiliser	26
-fertiliseras		fertiliser	7
-fertilisèrent		fertiliser	48
-fertiliserez		fertiliser	5
-fertiliseriez		fertiliser	4
-fertiliserions		fertiliser	11
-fertiliserons		fertiliser	61
-fertiliseront		fertiliser	15
-fertilisés		fertiliser	53
-fertilisez		fertiliser	47
-fertilisiez		fertiliser	13
-fertilisions		fertiliser	19
-fertilisons		fertiliser	27
-fertilité	Qualité de ce qui est fertile.
-fertilités		fertilité	0
-fertirrigua		fertirriguer	39
-fertirriguai		fertirriguer	55
-fertirriguaient		fertirriguer	75
-fertirriguais		fertirriguer	86
-fertirriguait		fertirriguer	71
-fertirriguâmes		fertirriguer	68
-fertirriguant		fertirriguer	43
-fertirriguas		fertirriguer	83
-fertirriguasse		fertirriguer	81
-fertirriguasses		fertirriguer	87
-fertirriguât		fertirriguer	62
-fertirriguâtes		fertirriguer	84
-fertirrigué		fertirriguer	56
-fertirriguée		fertirriguer	45
-fertirriguées		fertirriguer	51
-fertirriguent		fertirriguer	69
-fertirriguer	Irriguer et fertiliser en même temps, en ajoutant des fertilisants à l’eau utilisée.
-fertirriguera		fertirriguer	44
-fertirriguerai		fertirriguer	50
-fertirriguerais		fertirriguer	60
-fertirriguerait		fertirriguer	49
-fertirrigueras		fertirriguer	57
-fertirriguèrent		fertirriguer	48
-fertirriguerez		fertirriguer	58
-fertirrigueriez		fertirriguer	74
-fertirriguerons		fertirriguer	61
-fertirrigueront		fertirriguer	54
-fertirrigués		fertirriguer	53
-fertirriguez		fertirriguer	70
-fertirriguiez		fertirriguer	100
-fertirriguions		fertirriguer	94
-fertirriguons		fertirriguer	73
-féru	Qui est blessé, frappé de quelque chose.
-férue	Amatrice passionnée.
-férues		féru	1
-férule	Plante de la famille des Apiacées (Apiaceae) qui croissent principalement dans les régions méridionales et dont une espèce, l’ase fétide ou férule persique, or…
-férules		férule	0
-férus		féru	9
-fervemment	Avec ferveur.
-fervent	Qui a de la ferveur.
-fervente	Admiratrice absolue, femme qui a de la ferveur pour quelque chose ou quelqu’un.
-ferventes		fervent	1
-fervents		fervent	9
-ferveur	Ardeur, zèle, sentiment vif et affectueux avec lequel on se porte aux choses de piété, de charité, etc.
-ferveurs		ferveur	0
-fessa		fesser	33
-fessai		fesser	22
-fessaient		fesser	32
-fessais		fesser	29
-fessait		fesser	40
-fessâmes		fesser	3
-fessant		fesser	35
-fessas		fesser	12
-fessasse		fesser	6
-fessassent		fesser	17
-fessasses		fesser	8
-fessassiez		fesser	14
-fessassions		fesser	25
-fessât		fesser	20
-fessâtes		fesser	2
-fesse	Chacune des deux masses charnues situées à la partie postérieure du bassin, chez l’être humain et certains mammifères.
-fessée	Châtiment corporel consistant en une série de claques ou de coups administrés sur les fesses à main nue ou à l’aide d’un instrument.
-fessées		fessée	0
-fessent		fesser	31
-fesser	Frapper sur les fesses avec la main ou divers instruments.
-fessera		fesser	21
-fesserai		fesser	50
-fesseraient		fesser	28
-fesserais		fesser	60
-fesserait		fesser	26
-fesseras		fesser	7
-fessèrent		fesser	24
-fesserez		fesser	5
-fesseriez		fesser	4
-fesserions		fesser	11
-fesserons		fesser	10
-fesseront		fesser	15
-fesses		fesse	0
-fessez		fesser	30
-fessier	Relatif aux fesses.
-fessière		fessier	23
-fessières		fessier	1
-fessiers		fessier	9
-fessiez		fesser	67
-fessions		fesser	19
-fessons		fesser	27
-fessu	Qui a des fesses imposantes.
-fessue		fessu	23
-fessues		fessu	1
-fessus		fessu	9
-festif	Relatif à la fête, qui a un caractère de fête.
-festifs		festif	9
-festin	Repas de fête abondant et somptueux.
-festina		festiner	33
-festinai		festiner	22
-festinaient		festiner	32
-festinais		festiner	29
-festinait		festiner	34
-festinâmes		festiner	3
-festinant		festiner	35
-festinas		festiner	12
-festinasse		festiner	6
-festinassent		festiner	17
-festinasses		festiner	8
-festinassiez		festiner	14
-festinassions		festiner	25
-festinât		festiner	20
-festinâtes		festiner	2
-festiné		festiner	46
-festinée		festiner	45
-festinent		festiner	31
-festiner	Participer à un festin.
-festinera		festiner	21
-festinerai		festiner	16
-festineraient		festiner	28
-festinerais		festiner	18
-festinerait		festiner	26
-festineras		festiner	7
-festinèrent		festiner	24
-festinerez		festiner	5
-festineriez		festiner	4
-festinerions		festiner	11
-festinerons		festiner	10
-festineront		festiner	15
-festines		festiner	66
-festinez		festiner	30
-festiniez		festiner	13
-festinions		festiner	19
-festinons		festiner	27
-festins		festin	0
-festival	Événement festif.
-festivalier	Relatif à un festival.
-festivalière	Participante à un festival.
-festivalières		festivalier	1
-festivaliers		festivalier	9
-festivals		festival	0
-festive		festif	23
-festives		festif	1
-festivité	Réjouissance qui se tient pour célébrer une fête.
-festivités		festivité	0
-festoie		festoyer	64
-festoiement	Festivité, festin.
-festoiements		festoiement	0
-festoient		festoyer	41
-festoiera		festoyer	44
-festoierai		festoyer	16
-festoieraient		festoyer	28
-festoierais		festoyer	18
-festoierait		festoyer	26
-festoieras		festoyer	7
-festoierez		festoyer	5
-festoieriez		festoyer	4
-festoierions		festoyer	11
-festoierons		festoyer	61
-festoieront		festoyer	15
-festoies		festoyer	77
-feston	Guirlande de feuilles ou faisceau de petites branches d’arbre garnies de leurs feuilles et entremêlées de fleurs, de fruits, etc., qui sert ordinairement de dé…
-festonna		festonner	33
-festonnai		festonner	22
-festonnaient		festonner	42
-festonnais		festonner	29
-festonnait		festonner	40
-festonnâmes		festonner	3
-festonnant		festonner	35
-festonnas		festonner	12
-festonnasse		festonner	6
-festonnassent		festonner	17
-festonnasses		festonner	8
-festonnassiez		festonner	14
-festonnassions		festonner	25
-festonnât		festonner	20
-festonnâtes		festonner	2
-festonné	Qui est garni de festons.
-festonnée		festonner	45
-festonnées		festonner	51
-festonnent		festonner	31
-festonner	Dessiner, broder ou découper en festons.
-festonnera		festonner	21
-festonnerai		festonner	16
-festonneraient		festonner	28
-festonnerais		festonner	18
-festonnerait		festonner	26
-festonneras		festonner	7
-festonnèrent		festonner	24
-festonnerez		festonner	5
-festonneriez		festonner	4
-festonnerions		festonner	11
-festonnerons		festonner	10
-festonneront		festonner	15
-festonnés		festonner	53
-festonnez		festonner	30
-festonniez		festonner	13
-festonnions		festonner	19
-festonnons		festonner	27
-festons		feston	0
-festoya		festoyer	39
-festoyai		festoyer	22
-festoyaient		festoyer	42
-festoyais		festoyer	29
-festoyait		festoyer	34
-festoyâmes		festoyer	68
-festoyant	Celui qui festoie.
-festoyas		festoyer	12
-festoyasse		festoyer	6
-festoyassent		festoyer	17
-festoyasses		festoyer	8
-festoyassiez		festoyer	14
-festoyassions		festoyer	25
-festoyât		festoyer	20
-festoyâtes		festoyer	2
-festoyé		festoyer	56
-festoyer	Recevoir à une fête, à un festin.
-festoyèrent		festoyer	24
-festoyeur	Celui qui aime festoyer, qui fait la fête.
-festoyeurs		festoyeur	0
-festoyeuse	Celle qui aime festoyer, qui fait la fête.
-festoyeuses		festoyeuse	0
-festoyez		festoyer	47
-festoyiez		festoyer	13
-festoyions		festoyer	19
-festoyons		festoyer	27
-feta	Fromage caillé en saumure de Grèce, produit à partir de lait de chèvre ou de brebis.
-fêtable	Que l’on peut fêter.
-fêtables		fêtable	0
-fêtai		fêter	22
-fêtaient		fêter	42
-fêtais		fêter	29
-fêtait		fêter	40
-fêtâmes		fêter	68
-fêtant		fêter	43
-fêtard	Qui aime faire la fête.
-fêtarde	Femme aimant faire la fête, participant à une fête.
-fêtardes		fêtarde	0
-fêtards		fêtard	0
-fêtas		fêter	83
-fêtasse		fêter	6
-fêtassent		fêter	17
-fêtasses		fêter	8
-fêtassiez		fêter	14
-fêtassions		fêter	25
-fêtât		fêter	20
-fêtâtes		fêter	2
-fête	Jour consacré particulièrement à des actes de religion, cérémonies religieuses par lesquelles on célèbre ce jour.
-fêtée		fêter	45
-fêtées		fêter	36
-fêtent		fêter	41
-fêter	Célébrer par une fête.
-fêtera		fêter	44
-fêterai		fêter	16
-fêteraient		fêter	28
-fêterais		fêter	18
-fêterait		fêter	49
-fêteras		fêter	7
-fêtèrent		fêter	48
-fêterez		fêter	5
-fêteriez		fêter	4
-fêterions		fêter	11
-fêterons		fêter	61
-fêteront		fêter	15
-fêtes		fête	0
-fêtez		fêter	47
-fétial	Variante de fécial
-fétiale		fétial	23
-fétiales		fétial	1
-fétiaux		fétial	9
-fétiche	Objet de culte animiste, objet cher aux peuples premiers ou chose qui est chez eux un objet de culte.
-fétiches		fétiche	0
-féticheur	Sorcier des religions animistes.
-féticheurs		féticheur	0
-féticheuse	Sorcière des religions animistes.
-féticheuses		féticheuse	0
-fétichique	De fétiche ; du fétichisme.
-fétichisa		fétichiser	33
-fétichisai		fétichiser	22
-fétichisaient		fétichiser	32
-fétichisais		fétichiser	29
-fétichisait		fétichiser	34
-fétichisâmes		fétichiser	3
-fétichisant		fétichiser	35
-fétichisas		fétichiser	12
-fétichisasse		fétichiser	6
-fétichisassent		fétichiser	17
-fétichisasses		fétichiser	8
-fétichisassiez		fétichiser	14
-fétichisassions		fétichiser	25
-fétichisât		fétichiser	20
-fétichisâtes		fétichiser	2
-fétichisation	Action de fétichiser.
-fétichisations		fétichisation	0
-fétichisé		fétichiser	46
-fétichisée		fétichiser	37
-fétichisées		fétichiser	36
-fétichisent		fétichiser	31
-fétichiser	Considérer comme un fétiche quelque chose qui ne l’est pas.
-fétichisera		fétichiser	21
-fétichiserai		fétichiser	16
-fétichiseraient		fétichiser	28
-fétichiserais		fétichiser	18
-fétichiserait		fétichiser	26
-fétichiseras		fétichiser	7
-fétichisèrent		fétichiser	24
-fétichiserez		fétichiser	5
-fétichiseriez		fétichiser	4
-fétichiserions		fétichiser	11
-fétichiserons		fétichiser	10
-fétichiseront		fétichiser	15
-fétichisés		fétichiser	38
-fétichisez		fétichiser	30
-fétichisiez		fétichiser	13
-fétichisions		fétichiser	19
-fétichisme	Culte des fétiches.
-fétichismes		fétichisme	0
-fétichisons		fétichiser	27
-fétichiste	Qui pratique le fétichisme.
-fétichistes		fétichiste	0
-fétide	Qui a une odeur répugnante et nauséabonde, puant.
-fétides		fétide	0
-fétidité	Caractère de ce qui est fétide.
-fétidités		fétidité	0
-fêtiez		fêter	13
-fêtions		fêter	65
-fêtons		fêter	59
-fettuccine	Pâtes alimentaires en forme de ruban.
-fettuccines		fettuccine	0
-fétu	Brin de paille.
-fétuque	Genre de plantes (Festuca) qui appartient à la famille des Poacées (anciennement graminées), comprenant de 300 à 400 espèces de vivaces rhizomateuses, à feuill…
-fétuques		fétuque	0
-fétus	Variante de fœtus.
-feu	Phénomène calorifique et lumineux produit par la combustion d'une matière inflammable.
-feudataire	Personne qui possédait un fief et qui devait foi et hommage au seigneur suzerain.
-feudataires		feudataire	0
-feudiste	Juriste spécialiste du droit féodal.
-feudistes		feudiste	0
-feue		feu	23
-feues		feu	1
-feuil	Revêtement très mince qui recouvre quelque chose, terme employé comme synonyme de film de peinture.
-feuilla		feuiller	33
-feuillage	L’ensemble des feuilles d’un ou de plusieurs arbres.
-feuillagée		feuillagé	23
-feuillagées		feuillagé	1
-feuillages		feuillage	0
-feuillagiste	Personne qui réalise des feuillages artificiels.
-feuillagistes		feuillagiste	0
-feuillai		feuiller	22
-feuillaient		feuiller	32
-feuillais		feuiller	29
-feuillaison	Renouvellement annuel des feuilles, produit par le développement des bourgeons.
-feuillaisons		feuillaison	0
-feuillait		feuiller	34
-feuillâmes		feuiller	3
-feuillant	Relatif aux Feuillants, cisterciens réformés aux XVIᵉ, XVIIᵉ et XVIIIᵉ siècles.
-feuillantine	Religieuse de l’ordre des Bernardines de l’étroite obédience qui suivaient la réforme des Feuillants.
-feuillantines		feuillantine	0
-feuillants		feuillant	0
-feuillard	Branche ou ramille, pourvue de ses feuilles et qui servait de fourrage frais ou sec.
-feuillards		feuillard	0
-feuillas		feuiller	12
-feuillasse	Branche ou ramille, pourvue de ses feuilles, que l'on mettait à sécher en vue de servir de fourrage.
-feuillassent		feuiller	17
-feuillasses		feuillasse	0
-feuillassiez		feuiller	14
-feuillassions		feuiller	25
-feuillat	Branche ou ramille, pourvue de ses feuilles, que l'on mettait à sécher en vue de servir de fourrage.
-feuillâtes		feuiller	2
-feuille	Organe aérien et généralement plat des plantes vasculaires, inséré sur la tige, spécialisé dans la photosynthèse, les échanges gazeux et la transpiration.
-feuillée	Couvert formé de branches d’arbres garnies de feuilles.
-feuillées	WC temporaires creusés dans la terre.
-feuillent		feuiller	31
-feuiller	Faire une feuillure dans une pièce de bois.
-feuillera		feuiller	21
-feuillerai		feuiller	16
-feuilleraient		feuiller	28
-feuillerais		feuiller	18
-feuillerait		feuiller	26
-feuilleras		feuiller	7
-feuillèrent		feuiller	24
-feuilleret	Rabot servant à réaliser des feuillures.
-feuillerets		feuilleret	0
-feuillerez		feuiller	5
-feuilleriez		feuiller	4
-feuillerions		feuiller	11
-feuillerons		feuiller	10
-feuilleront		feuiller	15
-feuilles		feuille	0
-feuillet	Chaque partie d’une feuille de papier qui a été pliée ou coupée en deux, en quatre, en huit, etc., en vue d’y écrire, d’y imprimer ou d’y dessiner.
-feuilleta		feuilleter	39
-feuilletage	Manière de feuilleter la pâtisserie.
-feuilletages		feuilletage	0
-feuilletai		feuilleter	55
-feuilletaient		feuilleter	42
-feuilletais		feuilleter	52
-feuilletait		feuilleter	40
-feuilletâmes		feuilleter	3
-feuilletant		feuilleter	43
-feuilletas		feuilleter	12
-feuilletasse		feuilleter	6
-feuilletassent		feuilleter	17
-feuilletasses		feuilleter	8
-feuilletassiez		feuilleter	14
-feuilletassions		feuilleter	25
-feuilletât		feuilleter	20
-feuilletâtes		feuilleter	2
-feuilleté	Qualifie un matériau en feuillets.
-feuilletée		feuilleté	23
-feuilletées		feuilleté	1
-feuillètent		feuilleter	31
-feuilleter	Parcourir un livre, un manuscrit en tournant les feuillets.
-feuillètera		feuilleter	21
-feuillèterai		feuilleter	16
-feuillèteraient		feuilleter	28
-feuillèterais		feuilleter	18
-feuillèterait		feuilleter	26
-feuillèteras		feuilleter	7
-feuilletèrent		feuilleter	48
-feuillèterez		feuilleter	5
-feuillèteriez		feuilleter	4
-feuillèterions		feuilleter	11
-feuillèterons		feuilleter	10
-feuillèteront		feuilleter	15
-feuilletés		feuilleté	9
-feuilletez		feuilleter	47
-feuilletiez		feuilleter	67
-feuilletions		feuilleter	65
-feuilletis	Endroit où l’ardoise est facile à diviser en feuillets.
-feuilleton	Partie de certains journaux, ordinairement au bas des pages, et contenant des articles de littérature, de critique, de beaux-arts, ou des romans.
-feuilletonesque	Relatif au feuilleton ou aux feuilletonistes.
-feuilletoniste	Celui ou celle qui, collaborant à un journal, écrit habituellement un feuilleton.
-feuilletonistes		feuilletoniste	0
-feuilletons		feuilleton	0
-feuillets		feuillet	0
-feuillette	Fût contenant environ 225 litres de vin.
-feuillettent		feuilleter	41
-feuillettera		feuilleter	21
-feuilletterai		feuilleter	16
-feuilletterais		feuilleter	18
-feuilletterait		feuilleter	26
-feuilletteras		feuilleter	7
-feuilletterez		feuilleter	5
-feuilletteriez		feuilleter	4
-feuilletterions		feuilleter	11
-feuilletterons		feuilleter	10
-feuilletteront		feuilleter	15
-feuillettes		feuillette	0
-feuillez		feuiller	30
-feuilliez		feuiller	13
-feuillions		feuiller	19
-feuillons		feuiller	27
-feuillu	Qui possède beaucoup de feuilles.
-feuillue	Féminin singulier de feuillu.
-feuillues		feuillu	1
-feuillure	Entaillure dans laquelle les fenêtres et les portes s’engagent un peu pour fermer juste.
-feuillures		feuillure	0
-feuillus		feuillu	9
-feuils		feuil	0
-feuj	Juif.
-feujs		feuj	0
-feula		feuler	33
-feulai		feuler	22
-feulaient		feuler	32
-feulais		feuler	29
-feulait		feuler	40
-feulâmes		feuler	3
-feulant		feuler	43
-feulas		feuler	12
-feulasse		feuler	6
-feulassent		feuler	17
-feulasses		feuler	8
-feulassiez		feuler	14
-feulassions		feuler	25
-feulât		feuler	20
-feulâtes		feuler	2
-feule		feuler	64
-feulement	Cri du tigre, ou rauquement.
-feulements		feulement	0
-feulent		feuler	41
-feuler	En parlant des félins, chats, tigres, etc., pousser un cri.
-feulera		feuler	21
-feulerai		feuler	16
-feuleraient		feuler	28
-feulerais		feuler	18
-feulerait		feuler	26
-feuleras		feuler	7
-feulèrent		feuler	24
-feulerez		feuler	5
-feuleriez		feuler	4
-feulerions		feuler	11
-feulerons		feuler	10
-feuleront		feuler	15
-feules		feuler	66
-feulez		feuler	30
-feuliez		feuler	13
-feulions		feuler	19
-feulons		feuler	27
-feus	Masculin pluriel de feu, personnes décédées.	feu
-feutier	Celui qui, dans les grands appartements ou établissements, est chargé du chauffage et de l’éclairage
-feutière	Celle qui, dans les grands appartements ou établissements, est chargée du chauffage et de l’éclairage
-feutières		feutière	0
-feutiers		feutier	0
-feutra		feutrer	39
-feutrable	Qui est susceptible de se feutrer.
-feutrables		feutrable	0
-feutrage	Action par laquelle on feutre le poil ou la laine.
-feutrages		feutrage	0
-feutrai		feutrer	22
-feutraient		feutrer	32
-feutrais		feutrer	29
-feutrait		feutrer	40
-feutrâmes		feutrer	3
-feutrant	Qui produit du feutre, qui feutre.
-feutrante		feutrant	23
-feutrantes		feutrant	1
-feutrants		feutrant	0
-feutras		feutrer	12
-feutrasse		feutrer	6
-feutrassent		feutrer	17
-feutrasses		feutrer	8
-feutrassiez		feutrer	14
-feutrassions		feutrer	25
-feutrât		feutrer	20
-feutrâtes		feutrer	2
-feutre	Étoffe non tissée constituée de poils ou de fibres de laine agglomérées ensemble par soufflage, et mise sous pression avec ébouillantage dans la forme, ou, en …
-feutrée		feutré	23
-feutrées		feutré	1
-feutrent		feutrer	41
-feutrer	Mettre en feutre du poil ou de la laine.
-feutrera		feutrer	21
-feutrerai		feutrer	16
-feutreraient		feutrer	28
-feutrerais		feutrer	18
-feutrerait		feutrer	26
-feutreras		feutrer	7
-feutrèrent		feutrer	24
-feutrerez		feutrer	5
-feutreriez		feutrer	4
-feutrerions		feutrer	11
-feutrerons		feutrer	10
-feutreront		feutrer	15
-feutres		feutre	0
-feutrez		feutrer	30
-feutriez		feutrer	13
-feutrine	Feutre de laine, souple et mince, généralement teint de couleurs vives, utilisé en confection, décoration.
-feutrines		feutrine	0
-feutrions		feutrer	19
-feutrons		feutrer	27
-feux	Feux tricolores.
-fève	Nom vernaculaire de Vicia faba, plante herbacées annuelle de la famille des Fabacées (Fabaceae, au port érigé, pouvant atteindre 2 mètre de haut et que l’on cu…
-féverole	Nom usuel de Vicia faba, plante herbacée, annuelle de la famille des Fabaceae (Fabacées), cultivées pour leurs graines comestibles données aux bovins.
-féveroles		féverole	0
-fèves		fève	0
-févette	Fève primeur récoltée avant sa complète maturité.
-févettes		févette	0
-fèvier	Nom vulgaire des arbres du genre Gleditsia de la famille des Fabaceae dont les représentant sont presque tous épineux, Ils sont originaires d'Asie et d'Amériqu…
-fèviers		fèvier	0
-février	Deuxième mois du calendrier grégorien qui compte normalement vingt-huit jours, sauf dans les années bissextiles où il en compte vingt-neuf.
-févriers		février	0
-fez	Couvre-chef de laine rouge ou blanche, qui a remplacé le turban dans de nombreuses communautés musulmanes.
+0féal	Fidèle.
+4e	Amie fidèle.
+5s		4	1
+2ât		2er	k
+2aux		3l	9
+2bricule	Petite fièvre ; fièvre hectique légère.
+9s		9	0
+5fuge	Qui a la propriété de combattre la fièvre.
+9s		9	0
+5le	Qui a rapport à la fièvre, qui produit la fièvre.
+7ment	D’une manière fébrile.
+7s		7	0
+6ité	État de ce qui est fébrile.
+9s		9	0
+2cal	Qui appartient aux gros excréments de l’homme et des animaux.
+5e		5	n
+6s		5	1
+5oïde	Qui a lʼapparence ou lʼodeur des fèces.
+9s		9	0
+6me	Amas dur de matières fécales pouvant être confondu avec une tumeur.
+8s		8	0
+4ux		4l	9
+1èces	Sédiment qui reste au fond d’un liquide trouble, après qu’on l’a laissé reposer.
+1écial	Relatif aux traités de paix à Rome.
+6e		6	n
+7s		6	1
+5ux		5l	9
+3ond	Qui produit, qui peut produire beaucoup par voie de génération, en parlant des femmes, des animaux.
+6a		6er	x
+7bilité	Mesure du potentiel reproducteur.
+ds		d	0
+8le	Qui peut être fécondé.
+as		a	0
+7i		6er	m
+8ent		6er	w
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ance	Puissance de féconder.
+as		a	0
+8t	Qui féconde.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Qui a la force de féconder.
+bs		b	0
+8ion	Action de féconder.
+bs		b	0
+8rice	Celle qui féconde.
+cs		8eur	1
+6e		6	n
+6ée		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Rendre fécond.
+8a		8	l
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6ez		7r	1b
+6iez		6er	d
+7ons		6er	j
+7té	Qualité de ce qui est fécond.
+9s		9	0
+6ons		6er	r
+6s		6	0
+3ula		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Poudre blanche à très forte teneur en amidon, qui provient de certaines racines ou de certaines graines.
+5ée		5er	11
+7s		5er	10
+5ence	État des liqueurs qui sont chargées de lie, de sédiment.
+9s		9	0
+7t	Qui renferme de la fécule.
+8e		8	31
+9s		8	1
+8s		8	9
+6r	Faire de la fécule à partir de.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7ie	Usine où l’on produit la fécule.
+9s		9	0
+9z		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5euse		7x	n
+9s		7x	1
+7x	Qui contient de la fécule.
+6z		6r	u
+5ier	Relatif à la fécule.
+6ère	Fabricante de fécule.
+9s		6er	1
+6ers		8	9
+7z		5er	d
+6ons		5er	j
+5ons		5er	r
+1edayin	À l’époque médiévale, membres de la célèbre secte des Assassins (nizârites).
+1édayins		7	0
+1eddayin	Variante orthographique de fedayin.
+8s		8	0
+1édé	Fédération.
+4ra		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+6l	Qui a rapport à une fédération d’États ou à une fédération de plusieurs sociétés visant un but commun.
+7e	Route fédérale (aux États-Unis).
+8s		7	1
+7isa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action de fédéraliser.
+es		e	0
+9é		9er	1k
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Appliquer le principe du fédéralisme à.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9me	Système politique ou social de groupement en un seul État de plusieurs États ou en une seule société de plusieurs sociétés.
+bs		b	0
+9ons		9er	r
+9te	Partisan du fédéralisme.
+bs		b	0
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ateur	Qui organise ou favorise une fédération.
+as		a	9
+7if	Relatif à une fédération d’États ou de sociétés.
+9s		9	9
+8on	Groupement en un seul de plusieurs États dont chacun est régi par ses lois particulières.
+as		a	0
+8ve		8f	n
+as		8f	1
+7rice		7eur	n
+bs		7eur	1
+6ux		6l	9
+5é	Qui fait partie d’une fédération.
+6e	Membre d'une des fédérations qui se formèrent sous la Révolution et pendant les Cent-Jours.
+7s		6	1
+3èrent		3érer	v
+3érer	Réunir en fédération.
+3èrera		3érer	l
+8i		3érer	g
+9ent		3érer	s
+9s		3érer	i
+9t		3érer	q
+8s		3érer	7
+3érèrent		5er	o
+3èrerez		3érer	5
+7iez		3érer	4
+8ons		3érer	b
+7ons		3érer	a
+9t		3érer	f
+3érés		6	9
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4s		4	0
+2e	Être imaginaire à qui la tradition populaire ou l’imagination des conteurs attribue une puissance surnaturelle.
+1eedback	Mécanisme par lequel une partie de la sortie d’un système est réinjectée à l’entrée pour influer sur son comportement (stabilisation, correction d’erreur, etc.…
+8s		8	0
+4er	Long canal qui amène le verre en fusion du bassin du four aux machines de formage.
+6s		6	0
+3ling	Ressenti, intuition.
+7s		7	0
+1éer	Douer d’un pouvoir magique.
+4ie	Art des fées.
+6s		6	0
+5que	Qui est relatif aux fées.
+8ment	D'une façon féerique.
+8s		8	0
+3s		3	0
+1eignaient		3ndre	2l
+7s		3ndre	2n
+7t		3ndre	2j
+6nt	Qui feint une action, un état.
+8e	Fainéante ; paresseuse.
+9s		8	1
+8s		8	9
+6sse	Qui est fainéant.
+9s		9	0
+5e	Variante orthographique de faigne
+6nt		3ndre	15
+6s		3ndre	24
+6z		3ndre	1y
+5iez		3ndre	2u
+5îmes		3ndre	1w
+5ions		3ndre	33
+6rent		3ndre	1c
+6s		3ndre	1j
+7se		3ndre	6
+9nt		3ndre	h
+9s		3ndre	8
+8iez		3ndre	e
+9ons		3ndre	p
+6t		3ndre	13
+5îtes		3ndre	2
+5ons		3ndre	21
+3joa	Nom usuel de Feijoa sellowiana (anciennement Acca sellowiana), arbre fruitier de la famille des Myrtaceae, originaire des zones subtropicales du sud du Brésil,…
+6da	Ragout aux haricots.
+8s		8	0
+6s		6	0
+3ndra		6e	18
+7i		6e	1e
+8ent		6e	30
+8s		6e	2y
+8t		6e	2k
+7s		6e	7
+6e	Présenter une chose comme réelle en lui donnant une fausse apparence.
+7z		7	5
+6iez		6e	2r
+7ons		6e	2t
+6ons		6e	a
+8t		6e	f
+4s		4dre	20
+4t	Peinture qui imite le marbre.
+5a		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Action de feindre.
+5ée		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Faire une feinte.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	1m
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5eur	Sportif qui sait bien utiliser la feinte.
+8s		8	0
+7se	Femme qui utilise la feinte.
+9s		9	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+6se	Feinte, ruse.
+8s		8	0
+5ons		5er	r
+5s		5	0
+1êla		3er	13
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+1eldspath	Minéral d’une texture lamelleuse, composé de silice, d’alumine et de potasse, et qui est utilisé pour produire de l’émail blanc.
+9ique	Qui contient du feldspath.
+ds		d	0
+9s		9	0
+4webel	Grade dans l’armée allemande correspondant à celui d’adjudant.
+9s		9	0
+1êle	Canne, ou espèce de sarbacane ou tuyau creux en fer, au moyen duquel on prélève une portion de pâte de verre du creuset afin de la mettre en forme en la souffl…
+3ée	Femme fêlée.
+5s		4	1
+3ent		4r	v
+4r	Fendre un vase, un cristal, un verre, un métal, etc., de telle sorte que les pièces en demeurent encore jointes l’une avec l’autre.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+4z		4r	u
+1élibre	Poète ou prosateur qui écrit en occitan ou plus localement en auvergnat, gascon, languedocien, limousin ou provençal.
+7s		7	0
+8se	Poétesse ou prosatrice qui écrit en occitan ou plus localement en auvergnat, gascon, languedocien, limousin, vivaro-alpin ou provençal.
+as		a	0
+6ige	Association, union, groupement des félibres.
+9s		9	0
+4cita		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	1w
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action de féliciter.
+cs	Utilisé pour adresser ses félicitations à quelqu’un.
+7é	Béatitude ; grand bonheur.
+8e		7er	19
+9s		7er	10
+7ent		8r	15
+8r	Complimenter quelqu’un sur un succès, sur un événement agréable.
+9a		9	18
+ai		9	1e
+bent		9	1r
+bs		9	1o
+bt		9	1d
+as		9	1l
+7èrent		7er	1c
+7erez		9	5
+9iez		9	22
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	0
+7ez		8r	1b
+7iez		7er	1v
+8ons		7er	1t
+7ons		7er	1n
+4dé	Membre de la famille des Félidés, des félidés.
+6s	Orthographe fréquemment utilisée pour Félidés.
+1êliez		3er	d
+1élin	Qui se rapporte au chat ou aux félidés.
+5e		5	n
+6s		5	1
+5ité	Qui a la souplesse, la grâce et la ruse d’un chat.
+8s		8	0
+5s		5	9
+1êlions		3er	j
+0Felix	Commune d’Espagne, située dans la province d’Alméria, en Andalousie.
+0fellaga	Nom donné, en Tunisie, puis en Algérie, aux partisans des mouvements de libération nationale soulevés contre l’autorité française pour obtenir l’indépendance d…
+7s		7	0
+6ha	Variante de fellaga.
+8s		8	0
+5h	Paysan d’Égypte et d'Afrique du Nord.
+6s		6	0
+5tio	Variante de fellation.
+8n	Pratique sexuelle consistant à sucer et lécher le pénis.
+9s		9	0
+8s		8	0
+4e	Variante de fêle.
+5s		5	0
+4inien	Relatif à Federico Fellini, à son cinéma.
+9ne		9	n
+bs		9	1
+9s		9	9
+1élon	Sous le régime féodal, qui fait quelque chose contre la foi due à son seigneur.
+5ie	Sentiments ou manière d’agir d’un vassal félon vis-à-vis de son seigneur.
+7s		7	0
+5ne	Vassale qui manque à la foi due à son seigneur.
+7s		5	1
+5s		5	9
+1elouque	Sorte de petit bâtiment léger, long et étroit, à voiles et à rames, et qui était principalement en usage dans la Méditerranée.
+8s		8	0
+3quiste	Militant du Front de libération du Québec, organisation indépendantiste terroriste ayant sévi au Québec dans les années 1960 et ayant été grandement affaiblie …
+9s		9	0
+1êlure	Fente d’une chose fêlée.
+6s		6	0
+1emelle	Se dit d’un organisme ou d’un organe produisant des gamètes non motiles riches en réserves nutritives dans le cadre de la reproduction sexuée anisogame.
+7s		7	0
+1émelot	Ferrure de l’étambot qui reçoit l’aiguillot et lui sert de pivot.
+7s		7	0
+3inicide	Meurtre d’une femme, d’une jeune fille ou d’une enfant en raison de son sexe ou de son genre.
+as		a	0
+6n	Qualifie un des genres de mots.
+7e	Sportive (par opposition aux hommes).
+8s		7	1
+7s		7	9
+6sa		7er	x
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui féminise.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action de donner un aspect ou un comportement plus féminin, voire efféminé, à quelqu’un.
+cs		c	0
+7é	Composé principalement de femmes.
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Faire du genre féminin.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7me	Mouvement revendicatif ayant pour objet la reconnaissance ou l’extension des droits des femmes dans la société jusqu’à leur pleine libération de la domination …
+9s		9	0
+7ons		7er	r
+7te	Qui a rapport au féminisme, mouvement revendicatif ayant pour objet la reconnaissance ou l’extension des droits des femmes dans la société afin de les libérer …
+9s		9	0
+6té	Caractère de ce qui est féminin.
+8s		8	0
+7ude	Attitude, pose revendiquée de femmes, en opposition à la féminité, état ou qualité intrinsèque de la femme.
+as		a	0
+1emme	Être humain adulte de genre ou de sexe féminin (par opposition à fille, fillette, femme-enfant).
+5s		5	0
+1émoral	Qui appartient au fémur.
+7e		7	n
+8s		7	1
+6ux		6l	9
+3ur	Os long, pair et asymétrique de la cuisse chez les tétrapodes.
+5s		5	0
+1enaison	Action de faner l’herbe d’un pré après l’avoir fauchée dans le but de la récolter en foin.
+8s		8	0
+3d		4re	28
+4age	Action de fendre.
+7s		7	0
+5ient		4re	2l
+6s		4re	2n
+6t		4re	2j
+5nt	Celui qui prend des airs de fanfaron et veut en faire accroire.
+7e	Celle qui prend des airs de fanfaronne et veut en faire accroire.
+8s		7	1
+7s		7	9
+5rd	Qui est particulièrement drôle.
+7e		7	n
+8s		7	1
+7s		7	9
+6t	Qui est particulièrement drôle.
+7s		7	0
+4e		4re	2d
+5nt		4re	15
+5rie	Action de fendre le bois, le fer, l’ardoise, etc.
+8s		8	0
+5s		4re	24
+5ur	Personne qui fend du bois, du fer, de l’ardoise, etc.
+7s		7	0
+6se	Machine destinée à fendre les bûches de bois.
+8s		8	0
+5z		4re	1y
+4iez		4re	32
+5lla		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Qui présente des petites fentes.
+8e		8	n
+9s		8	1
+7ement	Action de se fendiller, résultat de cette action.
+cs		c	0
+8nt		8r	v
+8r	Former des petites fentes, des gerçures.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4îmes		4re	3
+4ions		4re	33
+5rent		4re	o
+5s	Produit de la fente d’un bloc de schiste à l’épaisseur d’une ardoise mais non aux dimensions.
+6se		4re	6
+8nt		4re	26
+8s		4re	2f
+7iez		4re	e
+8ons		4re	p
+5t		4re	13
+4îtes		4re	2
+4oir	Outil qui sert à fendre.
+7s		7	0
+5ns		4re	21
+4ra		5e	18
+6i		5e	1e
+7ent		5e	2p
+7s		5e	2y
+7t		5e	2k
+6s		5e	7
+5e	Diviser, séparer, couper en long ou en large, ou de toute autre manière.
+6z		6	5
+5iez		5e	2r
+6ons		5e	2t
+5ons		5e	a
+7t		5e	f
+4s		4re	20
+4u	Qui présente une fente, une fêlure.
+5e	Jeune fille, jeune femme.
+6s		6	0
+5s		5	9
+1énelonien	Relatif à l’écrivain Fénelon.
+ane		a	n
+cs		a	1
+as		a	9
+1enestra		7er	13
+8ge	Variante de fenêtrage.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Ensemble des fenêtres d’un bâtiment ou disposition générale des ouvertures de fenêtres sur la façade d’un édifice.
+cs		c	0
+7é	Qui est percé d'ouvertures.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Opérer une ouverture, une fenêtre, dans.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7on	Petite fenêtre.
+9s		9	0
+3êtra		6er	x
+7ge	Ensemble des fenêtres d’une maison, l’ordre où elles sont disposées.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Ouverture faite dans certaines parties d’un bâtiment, pour donner du jour et de l’air à l’intérieur.
+6ée		7	n
+8s		7	1
+6ent		7r	v
+7r	Ajouter, percer des ouvertures pour des fenêtres.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+3ian	Qui concerne, ou qui appartient au mouvement nationaliste insurrectionnel irlandais du XIXᵉ siècle, incarné notamment par la « Irish Republican Brotherhood » (…
+6e		6	n
+7s		6	1
+6s		6	9
+4l	Lieu où on entrepose le foin.
+5s		5	0
+3nec	Petit renardcaractérisé par ses très grandes oreilles et qui vit essentiellement dans les zones désertiques de l’Afrique du Nord.
+6s		6	0
+3ouil	Plante aromatique, de la famille des Apiacées, qui porte des fleurs jaunes et qui croît surtout dans le midi de l’Europe, de nom scientifique Foeniculum vulgar…
+7let	Variété de pomme qui a le goût du fenouil.
+as		a	0
+ate	Variante de fenouillet (variété de pomme).
+cs		c	0
+7s		7	0
+3te	Division en long pratiquée à un corps, à une masse quelconque.
+5s		5	0
+4on	Tige de fer de forme carrée, ayant 10 ou 15 mm de section, qui peut-être transformée en divers objets.
+6s		6	0
+3ugrec	Nom usuel de Trigonella foenum-graecum, plante herbacée, annuelle, de la famille des Fabacées, originaire d’une zone allant de l’Irak au Pakistan, dont la grai…
+8s		8	0
+1éodal	Qui appartient à un fief, qui concerne un fief.
+6e		6	n
+7ment	En vertu du droit de fief.
+7s		6	1
+6isme	Système politique, économique et social du Moyen Âge fondé sur la féodalité et l’oppression d’un peuple majoritairement paysan par une aristocratie foncière qu…
+as		a	0
+7té	Système politique du Moyen Âge, dans lequel le roi entretient avec ses représentants locaux, les comtes, des relations vassaliques.
+9s		9	0
+5ux		5l	9
+1er	Élément chimique de numéro atomique 26 et de symbole Fe qui fait partie des métaux de transition.
+1éra	Une des espèces de poissons, corégones du lac Léman (France et Suisse).
+1erai		1aire	1e
+5ent		1aire	2p
+5s		1aire	2o
+5t		1aire	2k
+1éral	Qualifie une espèce domestique animale qui est retournée à l’état sauvage.
+5e		5	n
+6s	Dans l'empire romain, fêtes données en hommage aux morts, le 21 février.
+0Féralies	Fêtes célébrées chaque mois de février en l’honneur des morts sous l’Antiquité romaine (les Feralia).
+0férals		5	9
+1eras		1aire	1l
+1éraux		4l	9
+1erblanterie	Industrie, commerce du ferblantier, assortiment d’objets de fer-blanc.
+cs		c	0
+8ier	Qui concerne la ferblanterie.
+9ère	Celle qui fait, qui vend des ustensiles de fer-blanc.
+cs		c	1
+9ers		b	9
+3ez		1aire	1m
+1éria	Festivités traditionnelles et annuelles sur fond de tauromachie, dans le sud de la France.
+5l	Qui concerne la férie.
+6e		6	n
+7s		6	1
+5s		5	0
+5ux		5l	9
+4e	Jour de la semaine dans les rites et les cultes chrétiens.
+4ée		4er	11
+6s		4er	10
+4er	Célébrer comme fête.
+4és		5	9
+1eriez		1aire	2w
+1éringien	Relatif aux Féroé et à ses habitants.
+9ne		9	n
+bs		9	1
+9s		9	9
+1erions		1aire	2x
+1érir	Frapper. Ce verbe n’est plus usité qu’à l’infinitif et au participe passé dans quelques locutions (voir aussi féru).
+1erla		4er	x
+5ge	Action de plier une voile sur sa vergue.
+7s		7	0
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é	Se dit soit d’une voile repliée sur la bôme ou une vergue pour qu’elle ne donne plus prise au vent.
+5e		4er	19
+6s		4er	10
+4ent		5r	v
+5r	Relever une voile pli par pli, sur la vergue, après l’avoir carguée, et l’attacher au moyen de rubans.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	1b
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+5uche	Variante de farlouche.
+9s		9	0
+3ma		4er	13
+5ge	Mode d’exploitation agricole louant un domaine rural à un fermier qui cultive les terres en échange d’une rente payable en argent et invariable pour toute la d…
+7s		7	0
+5i		4er	1j
+6ent		4er	16
+6l	Agrafe, boucle, broche tenant fermé un vêtement, une ceinture, etc.
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant	Qui se ferme.
+7e		7	n
+8s		7	1
+7s		7	0
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	1q
+6es		4er	2
+4aux		5il	0
+4e	Qui a de la consistance, qui offre une certaine résistance.
+4ée		5	n
+6s		5	1
+4ement	D’une manière ferme, avec force, avec vigueur.
+5nt	Ensemble d’êtres microscopiques vivant et se développant aux dépens de certaines matières organiques dont ils provoquent la destruction moléculaire.
+7a		7er	x
+8ble	Qui est susceptible de fermenter.
+bs		b	0
+8i		7er	m
+9ent		7er	3k
+9re	Relatif à la fermentation.
+bs		b	0
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant	Qui fermente.
+as		a	0
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7atif	De fermentation.
+bs		b	9
+aon	Ensemble de phénomènes de décomposition résultant de l’action de micro-organismes sur certaines matières organiques.
+cs		c	0
+ave		af	n
+cs		af	1
+7é	Qui a subi la fermentation.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Être en fermentation.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7escible	Qui est susceptible de fermenter.
+es		e	0
+8ur	Appareil permettant la culture de micro-organismes (levures, bactéries, champignons microscopiques, algues, cellules animales et végétales).
+as		a	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7s		7	0
+5r	Clore ce qui était ouvert, par une porte, un couvercle, une trappe, etc.
+6a		6	18
+7i		6	1e
+8ent		6	1r
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	22
+7ons		6	b
+6ons		6	1p
+8t		6	1i
+5s		5	0
+5té	État de ce qui est ferme, difficile à ébranler, de ce qui ne chancelle point.
+7s		7	0
+6te	Petite ferme, maison de campagne.
+8s		8	0
+6ure	Dispositif qui sert à fermer.
+9s		9	0
+5z		5r	1b
+4i	Ancienne unité de mesure de longueur, équivalent du femtomètre.
+5er	Agriculteur, cultivateur, paysan.
+5ère	Agricultrice, personne qui travaille la terre.
+8s		8	0
+5ers		7	9
+6z		4er	1v
+5on	Particule possédant un spin demi-entier.
+7s		4er	1t
+5s		5	0
+5um	Élément chimique de numéro atomique 100 et de symbole Fm appartenant à la série chimique des actinides.
+7s		7	0
+4oir	Sorte de fermeture, serrure ou ressort s’appliquant à certains objets, tels que livres, colliers, bracelets, médaillons, coffrets, etc.
+7s		7	0
+5ns		4er	1n
+1éroce	Qui est cruel par instinct, en parlant des bêtes.
+6ment	D’une manière féroce.
+6s		6	0
+5ité	Naturel féroce.
+8s		8	0
+4ïen	Relatif aux îles Féroé, à ses habitants, à leur langue.
+7ne		7	n
+9s		7	1
+7s		7	9
+1erons		1aire	1p
+5t		1aire	1i
+3ra		4er	x
+5de	Action de marquer au fer rouge les taureaux ou les chevaux, spécialement en Camargue et en Petite Camargue.
+7s		7	0
+5ge	Action de ferrer un cheval.
+7s		7	0
+5i		4er	1j
+6ent		4er	w
+6lla		8er	13
+9ge	Ensemble des fers qui renforcent le béton armé
+bs		b	0
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant	Qui fait un bruit de ferraille.
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Vieux morceaux de fer usés ou rouillés.
+9ment	Bataille à l’épée.
+ds		d	0
+9nt		9r	v
+9r	Dans un combat ou dans un assaut, manier à tort et à travers épées, sabres ou fleurets.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	1l
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	0
+9ur	Celui qui se bat souvent à l’épée, qui en cherche les occasions.
+bs		b	0
+ase	Celle qui se bat souvent à l’épée, qui en cherche les occasions.
+cs		ax	1
+ax	En ferraille, ou qui évoque la ferraille.
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+6s		4er	1g
+6t		4er	14
+5litique	Qualifie des sols formés sur des roches très basiques, pauvres en silice, et très bien drainées.
+cs		c	0
+6litique	Variante de ferralitique.
+ds		d	0
+4âmes		4er	3
+4ant	Qui ferre.
+7s	Pluriel de ferrant.
+5rais	Relatif à la ville de Ferrare.
+9e		9	n
+as		9	1
+5s		4er	c
+6se	Porte qui, dans les verreries, fermait le bout du tunnel de recuisson nommé arche ou carcaise.
+8nt		4er	h
+8s		8	0
+7iez		4er	e
+8ons		4er	p
+5t	Une des espèces de poissons, corégones du lac Léman (France et Suisse).
+6e	Sel formé avec l’acide ferrique.
+4âtes		4er	2
+4atier	Variante de ferretier
+9s		9	0
+7ste	Personne qui pratique le ferratisme, branche de l'alpinisme qui consiste à utiliser des vias ferratas.
+as		a	0
+4e	Pince de verrier destinée à façonner les goulots de bouteille.
+4ée	Au Québec du XIXᵉ siècle, bêche.
+6s		5	1
+4ement	Action de ferrer un cheval.
+9s	Désigne l'ensemble des instruments de chirurgie.
+5nt		5r	v
+5r	Garnir de fer.
+6a		6	18
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		5	9
+4et	Enveloppe de métal ou de plastique qui termine un lacet ou une aiguillette.
+6ier	Marteau du maréchal, dont il se sert pour forger les fers.
+9s		9	0
+6s		6	0
+5ur	Celui qui ferre les chevaux.
+7s		7	0
+6se		6x	n
+8s		6x	1
+6x	Qui contient du fer.
+5z		5r	1b
+4icyanure	Ion de formule³⁻.
+cs		c	0
+5ère	Sac de cuir dans lequel on porte des outils de charron, de maréchal, de serrurier.
+8s		8	0
+5es		4y	0
+6z		4er	d
+5magnétique	Relatif au ferrimagnétisme.
+csme	Apparence dans une matière d'un ordre magnétique spontané, partiellement antiparallèle au niveau atomique, de sorte qu'il en résulte un moment magnétique net n…
+5ons		4er	j
+5que	Se dit des composés de fer où le fer est trivalent.
+8s		8	0
+5te	Variété allotropique de fer présente dans des alliages ferreux et contenant une infime partie de carbone.
+7s		7	0
+6ine	Molécule protéique permettant le stockage du fer dans les tissus biologiques et constituée par l’union du fer et de l’apoferritine.
+9s		9	0
+4oalliage	Alliage métallique composé de fer et d’un autre métal, surtout utilisé pour la production d’aciers spéciaux.
+cs		c	0
+5chrome	Alliage composé de fer et de chrome.
+bs		b	0
+6yanure	Ion de formule⁴⁻.
+cs		c	0
+5magnétique	Relatif au ferromagnétisme.
+csme	Capacité d’un corps à s’aimanter lorsqu’il est soumis à un champ magnétique.
+7nganèse	Ferroalliage à forte teneur en manganèse (au moins 65 % de la masse).
+es		e	0
+6olybdène	Ferroalliage de fer et molybdène avec une proportion de 60 à 75 % de molybdène.
+es		e	0
+5n	Marchand de fer, ouvrier qui travaille le fer.
+6ickel	Ferroalliage composé majoritairement de fer et contenant une quantité importante (plus de 20 %) de nickel, utilisé pour la production d’aciers spéciaux.
+bs		b	0
+6nerie	Lieu où l’on fabrique, où l’on vend les gros ouvrages de fer.
+bs		b	0
+7ier	Qui concerne la ferronnerie.
+8ère	Celle qui fabrique, qui vend des ouvrages de fer.
+bs		8er	1
+8ers		a	9
+6s		6	0
+5prussiate	Anion de formule chimique⁴⁻.
+es		e	0
+5silicium	Ferroalliage composé de fer et de silicium dont la teneur en poids en silicium se situe entre 15 % et 90 %, celui à 75 % de silicium étant le plus utilisé.
+5uta		7er	x
+8ge	Transport intermodal de marchandises, utilisant des véhicules routiers acheminés sur des wagons.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Transporter jusqu’à destination par ferroutage (en associant transport routier et chemin de fer pour transporter les camions).
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5viaire	Relatif aux chemins de fer.
+bs		b	0
+4ugineuse		ax	n
+cs		ax	1
+ax	Qui tient de la nature du fer, ou qui comporte des parties de fer.
+5re	Garniture de fer et, par extension, d’autre métal.
+7s		7	0
+4y	Transbordeur.
+5boat	Transbordeur.
+5s		5	0
+3s		3	0
+3te	Longue perche de bois servant à sauter par dessus de menus obstacles.
+4és		5	0
+4ile	Qui produit beaucoup, en parlant principalement d’un sol cultivé.
+7ment	D’une manière fertile.
+7s		7	0
+6isa		8er	x
+9ble	Qui peut être fertilisé.
+cs		c	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant	Qui fertilise, qui est propre à fertiliser.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de fertiliser.
+ds		d	0
+8e		9r	1s
+8ée		8er	19
+as		8er	10
+8ent		9r	15
+9r	Rendre fertile.
+aa		a	18
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	1c
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	1p
+ct		a	f
+8és		8er	1h
+8ez		9r	1b
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+7té	Qualité de ce qui est fertile.
+9s		9	0
+5rrigua		aer	13
+bi		aer	1j
+cent		aer	23
+cs		aer	2e
+ct		aer	1z
+aâmes		aer	1w
+aant		aer	17
+bs		aer	2b
+cse		aer	29
+es		aer	2f
+aât		aer	1q
+ces		aer	2c
+aé		aer	1k
+be		aer	19
+cs		aer	1f
+aent		br	1x
+br	Irriguer et fertiliser en même temps, en ajoutant des fertilisants à l’eau utilisée.
+ca		c	18
+di		c	1e
+es		c	1o
+et		c	1d
+ds		c	1l
+aèrent		aer	1c
+aerez		c	1m
+ciez		c	22
+cons		c	1p
+et		c	1i
+aés		aer	1h
+aez		br	1y
+aiez		aer	2s
+bons		aer	2m
+aons		aer	21
+1éru	Qui est blessé, frappé de quelque chose.
+4e	Amatrice passionnée.
+5s		4	1
+4le	Plante de la famille des Apiacées (Apiaceae) qui croissent principalement dans les régions méridionales et dont une espèce, l’ase fétide ou férule persique, or…
+6s		6	0
+4s		4	9
+1ervemment	Avec ferveur.
+5nt	Qui a de la ferveur.
+7e	Admiratrice absolue, femme qui a de la ferveur pour quelque chose ou quelqu’un.
+8s		7	1
+7s		7	9
+5ur	Ardeur, zèle, sentiment vif et affectueux avec lequel on se porte aux choses de piété, de charité, etc.
+7s		7	0
+2ssa		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Chacune des deux masses charnues situées à la partie postérieure du bassin, chez l’être humain et certains mammifères.
+4ée	Châtiment corporel consistant en une série de claques ou de coups administrés sur les fesses à main nue ou à l’aide d’un instrument.
+6s		6	0
+4ent		5r	v
+5r	Frapper sur les fesses avec la main ou divers instruments.
+6a		6	l
+7i		6	1e
+8ent		6	s
+8s		6	1o
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4ier	Relatif aux fesses.
+5ère		5er	n
+8s		5er	1
+5ers		7	9
+6z		4er	1v
+5ons		4er	j
+4ons		4er	r
+4u	Qui a des fesses imposantes.
+5e		5	n
+6s		5	1
+5s		5	9
+3tif	Relatif à la fête, qui a un caractère de fête.
+6s		6	9
+5n	Repas de fête abondant et somptueux.
+6a		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	19
+6ent		7r	v
+7r	Participer à un festin.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	1u
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+5val	Événement festif.
+8ier	Relatif à un festival.
+9ère	Participante à un festival.
+cs		9er	1
+9ers		b	9
+8s		8	0
+6e		5f	n
+7s		5f	1
+6ité	Réjouissance qui se tient pour célébrer une fête.
+9s		9	0
+4oie		5yer	1s
+7ment	Festivité, festin.
+bs		b	0
+7nt		5yer	15
+7ra		5yer	18
+9i		5yer	g
+aent		5yer	s
+as		5yer	i
+at		5yer	q
+9s		5yer	7
+8ez		5yer	5
+8iez		5yer	4
+9ons		5yer	b
+8ons		5yer	1p
+at		5yer	f
+7s		5yer	25
+5n	Guirlande de feuilles ou faisceau de petites branches d’arbre garnies de leurs feuilles et entremêlées de fleurs, de fruits, etc., qui sert ordinairement de dé…
+6na		7er	x
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Qui est garni de festons.
+8e		7er	19
+9s		7er	1f
+7ent		8r	v
+8r	Dessiner, broder ou découper en festons.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+5ya		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	y
+6âmes		6er	1w
+6ant	Celui qui festoie.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1k
+6er	Recevoir à une fête, à un festin.
+6èrent		6er	o
+6eur	Celui qui aime festoyer, qui fait la fête.
+9s		9	0
+8se	Celle qui aime festoyer, qui fait la fête.
+as		a	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+2ta	Fromage caillé en saumure de Grèce, produit à partir de lait de chèvre ou de brebis.
+1êtable	Que l’on peut fêter.
+7s		7	0
+4i		3er	m
+5ent		3er	16
+5s		3er	t
+5t		3er	14
+3âmes		3er	1w
+3ant		3er	17
+4rd	Qui aime faire la fête.
+6e	Femme aimant faire la fête, participant à une fête.
+7s		7	0
+6s		6	0
+4s		3er	2b
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Jour consacré particulièrement à des actes de religion, cérémonies religieuses par lesquelles on célèbre ce jour.
+3ée		3er	19
+5s		3er	10
+3ent		4r	15
+4r	Célébrer par une fête.
+5a		5	18
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	1d
+6s		5	7
+3èrent		3er	1c
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	1p
+7t		5	f
+4s		4	0
+4z		4r	1b
+1étial	Variante de fécial
+6e		6	n
+7s		6	1
+5ux		5l	9
+4che	Objet de culte animiste, objet cher aux peuples premiers ou chose qui est chez eux un objet de culte.
+7s		7	0
+7ur	Sorcier des religions animistes.
+9s		9	0
+8se	Sorcière des religions animistes.
+as		a	0
+6ique	De fétiche ; du fétichisme.
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de fétichiser.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Considérer comme un fétiche quelque chose qui ne l’est pas.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8me	Culte des fétiches.
+as		a	0
+8ons		8er	r
+8te	Qui pratique le fétichisme.
+as		a	0
+4de	Qui a une odeur répugnante et nauséabonde, puant.
+6s		6	0
+5ité	Caractère de ce qui est fétide.
+8s		8	0
+1êtiez		3er	d
+4ons		3er	1t
+3ons		3er	1n
+1ettuccine	Pâtes alimentaires en forme de ruban.
+as		a	0
+1étu	Brin de paille.
+4que	Genre de plantes (Festuca) qui appartient à la famille des Poacées (anciennement graminées), comprenant de 300 à 400 espèces de vivaces rhizomateuses, à feuill…
+7s		7	0
+4s	Variante de fœtus.
+1eu	Phénomène calorifique et lumineux produit par la combustion d'une matière inflammable.
+3dataire	Personne qui possédait un fief et qui devait foi et hommage au seigneur suzerain.
+as		a	0
+4iste	Juriste spécialiste du droit féodal.
+8s		8	0
+3e		3	n
+4s		3	1
+3il	Revêtement très mince qui recouvre quelque chose, terme employé comme synonyme de film de peinture.
+5la		6er	x
+7ge	L’ensemble des feuilles d’un ou de plusieurs arbres.
+8ée		9	n
+as		9	1
+8es		9	0
+8iste	Personne qui réalise des feuillages artificiels.
+cs		c	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+9on	Renouvellement annuel des feuilles, produit par le développement des bourgeons.
+bs		b	0
+8t		6er	y
+6âmes		6er	3
+6ant	Relatif aux Feuillants, cisterciens réformés aux XVIᵉ, XVIIᵉ et XVIIIᵉ siècles.
+9ine	Religieuse de l’ordre des Bernardines de l’étroite obédience qui suivaient la réforme des Feuillants.
+cs		c	0
+9s		9	0
+7rd	Branche ou ramille, pourvue de ses feuilles et qui servait de fourrage frais ou sec.
+9s		9	0
+7s		6er	c
+8se	Branche ou ramille, pourvue de ses feuilles, que l'on mettait à sécher en vue de servir de fourrage.
+ant		6er	h
+as		a	0
+9iez		6er	e
+aons		6er	p
+7t	Branche ou ramille, pourvue de ses feuilles, que l'on mettait à sécher en vue de servir de fourrage.
+6âtes		6er	2
+6e	Organe aérien et généralement plat des plantes vasculaires, inséré sur la tige, spécialisé dans la photosynthèse, les échanges gazeux et la transpiration.
+6ée	Couvert formé de branches d’arbres garnies de feuilles.
+8s	WC temporaires creusés dans la terre.
+6ent		7r	v
+7r	Faire une feuillure dans une pièce de bois.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6eret	Rabot servant à réaliser des feuillures.
+as		a	0
+9z		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7t	Chaque partie d’une feuille de papier qui a été pliée ou coupée en deux, en quatre, en huit, etc., en vue d’y écrire, d’y imprimer ou d’y dessiner.
+8a		8er	13
+9ge	Manière de feuilleter la pâtisserie.
+bs		b	0
+9i		8er	1j
+aent		8er	16
+as		8er	1g
+at		8er	14
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é	Qualifie un matériau en feuillets.
+9e		9	n
+as		9	1
+6ètent		6eter	v
+6eter	Parcourir un livre, un manuscrit en tournant les feuillets.
+6ètera		6eter	l
+bi		6eter	g
+cent		6eter	s
+cs		6eter	i
+ct		6eter	q
+bs		6eter	7
+6etèrent		8er	1c
+6èterez		6eter	5
+aiez		6eter	4
+bons		6eter	b
+aons		6eter	a
+ct		6eter	f
+6etés		9	9
+8ez		9r	1b
+8iez		8er	1v
+9ons		8er	1t
+9s	Endroit où l’ardoise est facile à diviser en feuillets.
+8on	Partie de certains journaux, ordinairement au bas des pages, et contenant des articles de littérature, de critique, de beaux-arts, ou des romans.
+aesque	Relatif au feuilleton ou aux feuilletonistes.
+aiste	Celui ou celle qui, collaborant à un journal, écrit habituellement un feuilleton.
+es		e	0
+as		a	0
+8s		8	0
+8te	Fût contenant environ 225 litres de vin.
+ant		8er	15
+ara		8er	l
+ci		8er	g
+ds		8er	i
+dt		8er	q
+cs		8er	7
+bez		8er	5
+biez		8er	4
+cons		8er	b
+bons		8er	a
+dt		8er	f
+as		a	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6u	Qui possède beaucoup de feuilles.
+7e	Féminin singulier de feuillu.
+8s		7	1
+7re	Entaillure dans laquelle les fenêtres et les portes s’engagent un peu pour fermer juste.
+9s		9	0
+7s		7	9
+5s		5	0
+3j	Juif.
+4s		4	0
+3la		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e		5r	1s
+5ment	Cri du tigre, ou rauquement.
+9s		9	0
+5nt		5r	15
+5r	En parlant des félins, chats, tigres, etc., pousser un cri.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	1u
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3s	Masculin pluriel de feu, personnes décédées.	3
+3tier	Celui qui, dans les grands appartements ou établissements, est chargé du chauffage et de l’éclairage
+5ère	Celle qui, dans les grands appartements ou établissements, est chargée du chauffage et de l’éclairage
+8s		8	0
+5ers		7	0
+4ra		5er	13
+6ble	Qui est susceptible de se feutrer.
+9s		9	0
+6ge	Action par laquelle on feutre le poil ou la laine.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant	Qui produit du feutre, qui feutre.
+8e		8	n
+9s		8	1
+8s		8	0
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Étoffe non tissée constituée de poils ou de fibres de laine agglomérées ensemble par soufflage, et mise sous pression avec ébouillantage dans la forme, ou, en …
+5ée		6	n
+7s		6	1
+5ent		6r	15
+6r	Mettre en feutre du poil ou de la laine.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6z		6r	u
+5iez		5er	d
+6ne	Feutre de laine, souple et mince, généralement teint de couleurs vives, utilisé en confection, décoration.
+8s		8	0
+6ons		5er	j
+5ons		5er	r
+3x	Feux tricolores.
+1ève	Nom vernaculaire de Vicia faba, plante herbacées annuelle de la famille des Fabacées (Fabaceae, au port érigé, pouvant atteindre 2 mètre de haut et que l’on cu…
+1éverole	Nom usuel de Vicia faba, plante herbacée, annuelle de la famille des Fabaceae (Fabacées), cultivées pour leurs graines comestibles données aux bovins.
+8s		8	0
+1èves		4	0
+1évette	Fève primeur récoltée avant sa complète maturité.
+7s		7	0
+1èvier	Nom vulgaire des arbres du genre Gleditsia de la famille des Fabaceae dont les représentant sont presque tous épineux, Ils sont originaires d'Asie et d'Amériqu…
+6s		6	0
+1évrier	Deuxième mois du calendrier grégorien qui compte normalement vingt-huit jours, sauf dans les années bissextiles où il en compte vingt-neuf.
+7s		7	0
+1ez	Couvre-chef de laine rouge ou blanche, qui a remplacé le turban dans de nombreuses communautés musulmanes.

@@ -1,102 +1,102 @@
-ozalid	Épreuve en positif tirée sur du papier sensibilisé.
-ozalids		ozalid	0
-ozène	Qui a une odeur nauséabonde, fétide.
-ozènes		ozène	0
-ozéneuse		ozéneux	23
-ozéneuses		ozéneux	1
-ozéneux	Qui a une odeur fétide, rappelant celle de l'ozène.
-ozocérite	Variante orthographique de ozokérite
-ozokérite	Sorte de résine ou de cire fossile, dite aussi poix minérale, très proche de la cérésine.
-ozokérites		ozokérite	0
-ozona		ozoner	33
-ozonai		ozoner	22
-ozonaient		ozoner	32
-ozonais		ozoner	29
-ozonait		ozoner	34
-ozonâmes		ozoner	3
-ozonant		ozoner	35
-ozonas		ozoner	12
-ozonasse		ozoner	6
-ozonassent		ozoner	17
-ozonasses		ozoner	8
-ozonassiez		ozoner	14
-ozonassions		ozoner	25
-ozonât		ozoner	20
-ozonâtes		ozoner	2
-ozonateur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
-ozonateurs		ozonateur	0
-ozonation	Action d’ozoner.
-ozonations		ozonation	0
-ozone	Molécule composée de trois atomes d’oxygène (formule chimique O₃).
-ozonée		ozoné	23
-ozonées		ozoné	1
-ozonent		ozoner	31
-ozoner	Traiter à l’ozone.
-ozonera		ozoner	21
-ozonerai		ozoner	16
-ozoneraient		ozoner	28
-ozonerais		ozoner	18
-ozonerait		ozoner	26
-ozoneras		ozoner	7
-ozonèrent		ozoner	24
-ozonerez		ozoner	5
-ozoneriez		ozoner	4
-ozonerions		ozoner	11
-ozonerons		ozoner	10
-ozoneront		ozoner	15
-ozonés		ozoné	9
-ozoneur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
-ozoneurs		ozoneur	0
-ozonez		ozoner	30
-ozonide	Composé organique formé par réaction de l’ozone sur un alcène.
-ozonides		ozonide	0
-ozoniez		ozoner	13
-ozonions		ozoner	19
-ozonisa		ozoniser	33
-ozonisai		ozoniser	22
-ozonisaient		ozoniser	32
-ozonisais		ozoniser	29
-ozonisait		ozoniser	34
-ozonisâmes		ozoniser	3
-ozonisant		ozoniser	35
-ozonisas		ozoniser	12
-ozonisasse		ozoniser	6
-ozonisassent		ozoniser	17
-ozonisasses		ozoniser	8
-ozonisassiez		ozoniser	14
-ozonisassions		ozoniser	25
-ozonisât		ozoniser	20
-ozonisâtes		ozoniser	2
-ozonisateur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
-ozonisateurs		ozonisateur	0
-ozonisation	Action d’ozoniser.
-ozonisations		ozonisation	0
-ozonisé	Se dit de l’oxygène auquel on a communiqué la propriété d’oxyder à froid l’argent et de donner un bioxyde particulier, ainsi qu’une odeur forte et des qualités…
-ozonisée		ozoniser	37
-ozonisées		ozoniser	36
-ozonisent		ozoniser	31
-ozoniser	Transformer en ozone.
-ozonisera		ozoniser	21
-ozoniserai		ozoniser	16
-ozoniseraient		ozoniser	28
-ozoniserais		ozoniser	18
-ozoniserait		ozoniser	26
-ozoniseras		ozoniser	7
-ozonisèrent		ozoniser	24
-ozoniserez		ozoniser	5
-ozoniseriez		ozoniser	4
-ozoniserions		ozoniser	11
-ozoniserons		ozoniser	10
-ozoniseront		ozoniser	15
-ozonisés		ozoniser	38
-ozoniseur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
-ozoniseurs		ozoniseur	0
-ozonisez		ozoniser	30
-ozonisiez		ozoniser	13
-ozonisions		ozoniser	19
-ozonisons		ozoniser	27
-ozonométrie	Emploi de l’ozonomètre.
-ozonométries		ozonométrie	0
-ozonons		ozoner	27
-ozonosphère	Couche de la stratosphère terrestre dans laquelle la concentration d'ozone est la plus importante.
-ozonosphères		ozonosphère	0
+0ozalid	Épreuve en positif tirée sur du papier sensibilisé.
+6s		6	0
+2ène	Qui a une odeur nauséabonde, fétide.
+5s		5	0
+2éneuse		6x	n
+8s		6x	1
+6x	Qui a une odeur fétide, rappelant celle de l'ozène.
+2océrite	Variante orthographique de ozokérite
+3kérite	Sorte de résine ou de cire fossile, dite aussi poix minérale, très proche de la cérésine.
+9s		9	0
+3na		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4ateur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
+9s		9	0
+6ion	Action d’ozoner.
+9s		9	0
+4e	Molécule composée de trois atomes d’oxygène (formule chimique O₃).
+4ée		5	n
+6s		5	1
+4ent		5r	v
+5r	Traiter à l’ozone.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		5	9
+4eur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
+7s		7	0
+5z		5r	u
+4ide	Composé organique formé par réaction de l’ozone sur un alcène.
+7s		7	0
+5ez		4er	d
+5ons		4er	j
+5sa		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
+bs		b	0
+8ion	Action d’ozoniser.
+bs		b	0
+6é	Se dit de l’oxygène auquel on a communiqué la propriété d’oxyder à froid l’argent et de donner un bioxyde particulier, ainsi qu’une odeur forte et des qualités…
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Transformer en ozone.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6eur	Appareil permettant de fabriquer de l’ozone à partir de l’oxygène de l’air.
+9s		9	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4ométrie	Emploi de l’ozonomètre.
+bs		b	0
+5ns		4er	r
+5sphère	Couche de la stratosphère terrestre dans laquelle la concentration d'ozone est la plus importante.
+bs		b	0

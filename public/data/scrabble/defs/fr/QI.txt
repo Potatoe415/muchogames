@@ -1,6 +1,6 @@
-qi	Énergie vitale.
-qibla	En Islam, la direction de la mosquée de la Kaaba, dans la ville de La Mecque.
-qiblas		qibla	0
-qin	Guqin.
-Qing	Nom de famille chinois
-qins		qin	0
+0qi	Énergie vitale.
+2bla	En Islam, la direction de la mosquée de la Kaaba, dans la ville de La Mecque.
+5s		5	0
+2n	Guqin.
+0Qing	Nom de famille chinois
+0qins		3	0

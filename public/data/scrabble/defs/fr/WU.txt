@@ -1,9 +1,9 @@
-wu	Langue chinoise principalement parlée dans une grande partie de la province du Zhejiang, la municipalité de Shanghai, le sud de la province du Jiangsu.
-würm	Dernière des quatre glaciations alpines de l'ère quaternaire, qui correspond à la glaciation vistulienne de l'Europe du Nord.
-würmien	Relatif au würm, quatrième des grandes glaciations de l’ére quaternaire.
-würmienne		würmien	23
-würmiennes		würmien	1
-würmiens		würmien	9
-wurtembergeois	Qui est relatif ou originaire du Wurtemberg, un ancien État du sud-ouest de l'Allemagne.
-wurtembergeoise		wurtembergeois	23
-wushu	Art martial chinois.
+0wu	Langue chinoise principalement parlée dans une grande partie de la province du Zhejiang, la municipalité de Shanghai, le sud de la province du Jiangsu.
+1ürm	Dernière des quatre glaciations alpines de l'ère quaternaire, qui correspond à la glaciation vistulienne de l'Europe du Nord.
+4ien	Relatif au würm, quatrième des grandes glaciations de l’ére quaternaire.
+7ne		7	n
+9s		7	1
+7s		7	9
+1urtembergeois	Qui est relatif ou originaire du Wurtemberg, un ancien État du sud-ouest de l'Allemagne.
+ee		e	n
+2shu	Art martial chinois.

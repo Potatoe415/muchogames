@@ -1,142 +1,142 @@
-swag	Qui a du style, qui est charismatique.
-swags		swag	0
-swahili	Langue bantoue parlée en Afrique orientale, et influencée par l’arabe.
-swahilie		swahili	23
-swahilies		swahili	1
-swahilis		swahili	9
-swap	Contrat d'échange de flux financiers entre deux parties.
-swappa		swapper	33
-swappai		swapper	22
-swappaient		swapper	32
-swappais		swapper	29
-swappait		swapper	34
-swappâmes		swapper	3
-swappant		swapper	35
-swappas		swapper	12
-swappasse		swapper	6
-swappassent		swapper	17
-swappasses		swapper	8
-swappassiez		swapper	14
-swappassions		swapper	25
-swappât		swapper	20
-swappâtes		swapper	2
-swappé		swapper	46
-swappée		swapper	37
-swappées		swapper	36
-swappent		swapper	31
-swapper	Sauvegarder une partie de la mémoire centrale sur un périphérique de stockage pour la libérer pour utilisation par un programme qui en a besoin.
-swappera		swapper	21
-swapperai		swapper	16
-swapperaient		swapper	28
-swapperais		swapper	18
-swapperait		swapper	26
-swapperas		swapper	7
-swappèrent		swapper	24
-swapperez		swapper	5
-swapperiez		swapper	4
-swapperions		swapper	11
-swapperons		swapper	10
-swapperont		swapper	15
-swappés		swapper	38
-swappez		swapper	30
-swappiez		swapper	13
-swappions		swapper	19
-swappons		swapper	27
-swaps		swap	0
-swastika	Variante de svastika.
-swastikas		swastika	0
-swati	Langue bantoue, du groupe nguni, parlée au Swaziland, en Afrique du Sud, au Lesotho et au Mozambique.
-swatis		swati	0
-swatting	Canular malveillant qui consiste à faire intervenir des unités spéciales de la police (comme le SWAT aux États-Unis ou le GIPN en France), chez quelqu’un sous …
-swazi	Qui a un rapport avec le Swaziland, ses habitants et ses habitantes, ou sa culture.
-swazie		swazi	23
-swazies		swazi	1
-swazis		swazi	0
-sweat	Sweat-shirt.
-sweater	Tricot de maille serrées à manches longues, porté avant ou après un effort sportif ou comme vêtement décontracté.
-sweaters		sweater	0
-sweats		sweat	0
-sweatshirt	Variante orthographique de sweat-shirt, mais moins fréquente.
-sweatshirts		sweatshirt	0
-swedenborgien	Relatif au swedenborgisme.
-sweepstake	Au Royaume-Uni, sorte de jeu qui consiste à miser à plusieurs sur des évènements à venir, lorsqu'un évènement survient, une seule personne remporte toutes les …
-swiftien	Relatif à l’œuvre de Jonathan Swift.
-swiftienne		swiftien	23
-swiftiennes		swiftien	1
-swiftiens		swiftien	9
-swing	Qualifie un phénomène de mode né à la fin des années 30 et associé à la musique swing.
-swings		swing	0
-swingua		swinguer	33
-swinguai		swinguer	22
-swinguaient		swinguer	42
-swinguais		swinguer	29
-swinguait		swinguer	34
-swinguâmes		swinguer	3
-swinguant		swinguer	35
-swinguas		swinguer	12
-swinguasse		swinguer	6
-swinguassent		swinguer	17
-swinguasses		swinguer	8
-swinguassiez		swinguer	14
-swinguassions		swinguer	25
-swinguât		swinguer	20
-swinguâtes		swinguer	2
-swingué		swinguer	46
-swinguent		swinguer	31
-swinguer	Balancer, avoir le swing.
-swinguera		swinguer	21
-swinguerai		swinguer	16
-swingueraient		swinguer	28
-swinguerais		swinguer	18
-swinguerait		swinguer	26
-swingueras		swinguer	7
-swinguèrent		swinguer	24
-swinguerez		swinguer	5
-swingueriez		swinguer	4
-swinguerions		swinguer	11
-swinguerons		swinguer	10
-swingueront		swinguer	15
-swingues		swinguer	66
-swinguez		swinguer	30
-swinguiez		swinguer	13
-swinguions		swinguer	19
-swinguons		swinguer	27
-switch	Interrupteur, commutateur.
-switcha		switcher	33
-switchai		switcher	22
-switchaient		switcher	32
-switchais		switcher	29
-switchait		switcher	34
-switchâmes		switcher	3
-switchant		switcher	35
-switchas		switcher	12
-switchasse		switcher	6
-switchassent		switcher	17
-switchasses		switcher	8
-switchassiez		switcher	14
-switchassions		switcher	25
-switchât		switcher	20
-switchâtes		switcher	2
-switché		switcher	46
-switchée		switcher	37
-switchées		switcher	36
-switchent		switcher	31
-switcher	Changer d’un système d’exploitation pour un autre, d’un navigateur pour un autre, d’une manière générale d’un matériel ou composant informatique pour un autre.
-switchera		switcher	21
-switcherai		switcher	16
-switcheraient		switcher	28
-switcherais		switcher	18
-switcherait		switcher	26
-switcheras		switcher	7
-switchèrent		switcher	24
-switcherez		switcher	5
-switcheriez		switcher	4
-switcherions		switcher	11
-switcherons		switcher	10
-switcheront		switcher	15
-switchés		switcher	38
-switchez		switcher	30
-switchiez		switcher	13
-switchions		switcher	19
-switchons		switcher	27
-switchs		switch	0
+0swag	Qui a du style, qui est charismatique.
+4s		4	0
+3hili	Langue bantoue parlée en Afrique orientale, et influencée par l’arabe.
+7e		7	n
+8s		7	1
+7s		7	9
+3p	Contrat d'échange de flux financiers entre deux parties.
+4pa		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Sauvegarder une partie de la mémoire centrale sur un périphérique de stockage pour la libérer pour utilisation par un programme qui en a besoin.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4s		4	0
+3stika	Variante de svastika.
+8s		8	0
+3ti	Langue bantoue, du groupe nguni, parlée au Swaziland, en Afrique du Sud, au Lesotho et au Mozambique.
+5s		5	0
+4ting	Canular malveillant qui consiste à faire intervenir des unités spéciales de la police (comme le SWAT aux États-Unis ou le GIPN en France), chez quelqu’un sous …
+3zi	Qui a un rapport avec le Swaziland, ses habitants et ses habitantes, ou sa culture.
+5e		5	n
+6s		5	1
+5s		5	0
+2eat	Sweat-shirt.
+5er	Tricot de maille serrées à manches longues, porté avant ou après un effort sportif ou comme vêtement décontracté.
+7s		7	0
+5s		5	0
+6hirt	Variante orthographique de sweat-shirt, mais moins fréquente.
+as		a	0
+3denborgien	Relatif au swedenborgisme.
+3epstake	Au Royaume-Uni, sorte de jeu qui consiste à miser à plusieurs sur des évènements à venir, lorsqu'un évènement survient, une seule personne remporte toutes les …
+2iftien	Relatif à l’œuvre de Jonathan Swift.
+8ne		8	n
+as		8	1
+8s		8	9
+3ng	Qualifie un phénomène de mode né à la fin des années 30 et associé à la musique swing.
+5s		5	0
+5ua		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+6ent		7r	v
+7r	Balancer, avoir le swing.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	1u
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+3tch	Interrupteur, commutateur.
+6a		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Changer d’un système d’exploitation pour un autre, d’un navigateur pour un autre, d’une manière générale d’un matériel ou composant informatique pour un autre.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0

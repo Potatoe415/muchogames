@@ -1,119 +1,119 @@
-zabre	Coléoptère qui se nourrit de grains de céréales et dont la larve dévore le blé naissant.
-zabres		zabre	0
-zadiste	Militant engagé dans la protection d'une zone à défendre (ZAD) ou aussi appelée Zone d'Aménagement Différé : l'occupation et la mise en culture d'une ZAD a pou…
-zadistes		zadiste	0
-zagaie	Variante de sagaie.
-zagaies		zagaie	0
-zagrébois	Relatif à la ville de Zagreb, en Croatie, et à ses habitants.
-zagréboise		zagrébois	23
-zagréboises		zagrébois	1
-zaibatsu	Conglomérat japonais de domaines variés, dirigé par la famille fondatrice.
-zain	Dont la robe ou le poil, simple et uniforme, n’a aucune marque de blanc.
-zains		zain	9
-zaïre	Unité monétaire introduite en 1967 en République démocratique du Congo (remplaçant le franc congolais) jusqu’en 1993 (remplacée à son tour par le nouveau zaïre…
-zaïres		zaïre	0
-zaïrois	Originaire ou relatif à la République du Zaïre.
-zaïroise	Féminin singulier de zaïrois.
-zaïroises		zaïrois	1
-zakât	Charité, l’un des devoirs de tout musulman, qui consiste à donner de l’argent pour les pauvres.
-zakouski	Hors-d’œuvre variés, chauds ou froids, russes ou polonais, servis généralement dans une pièce différente de celle du repas.
-zakouskis		zakouski	0
-zamak	Alliage de zinc, d’aluminium, de magnésium et parfois de cuivre.
-zambien	Propre ou relatif à la Zambie, état d’Afrique.
-zambienne		zambien	23
-zambiennes		zambien	1
-zambiens		zambien	0
-zamia	Plante arbustive de la famille des Zamiacées pouvant atteindre 1,50 mètre de haut et dont le port fait penser aux palmiers et aux fougères.
-zamias		zamia	0
-zamier	Synonyme de zamia.
-zamiers		zamier	0
-zamu	Sentinelle, veilleur de nuit.
-zamus		zamu	0
-zancle	Poisson des mers chaudes vivant sur les fonds coralliens, joliment coloré, au corps latéralement plat, avec une nageoire dorsale longue et effilée en forme de …
-zancléen	Relatif au Zancléen.
-zancles		zancle	0
-zani	Variante de zanni
-zanis		zani	0
-zanni	Personnage bouffon dans les comédies vénitiennes.
-zannis		zanni	0
-zanzi	Zanzibar, sorte de jeu de dés, variante du 421.
-zanzibar	Sorte de jeu de dés, variante du 421, qui se joue avec trois dés.
-zanzibars		zanzibar	0
-zanzis		zanzi	0
-zaouia	Orthographe alternative de zaouïa.
-zaouïas		zaouïa	0
-zapatéado	Danse traditionnelle espagnole très rythmée caractérisée par le claquement des talons sur le sol.
-zapatéados		zapatéado	0
-zapatisme	Mouvement révolutionnaire créé au Mexique par Zapata et qui perdure au sein de la société mexicaine contemporaine.
-zapatismes		zapatisme	0
-zapatiste	Relatif à Zapata, au zapatisme.
-zapatistes		zapatiste	0
-zapette	Télécommande de téléviseur.
-zapettes		zapette	0
-zapotèque	Relatif aux Zapotèques.
-zapotèques		zapotèque	0
-zappa		zapper	33
-zappai		zapper	22
-zappaient		zapper	32
-zappais		zapper	29
-zappait		zapper	34
-zappâmes		zapper	3
-zappant		zapper	43
-zappas		zapper	12
-zappasse		zapper	6
-zappassent		zapper	17
-zappasses		zapper	8
-zappassiez		zapper	14
-zappassions		zapper	25
-zappât		zapper	20
-zappâtes		zapper	2
-zappé		zapper	56
-zappée		zapper	37
-zappées		zapper	36
-zappent		zapper	31
-zapper	Appuyer sur la télécommande pour syntoniser une autre chaîne télévisuelle, changer rapidement de chaîne.
-zappera		zapper	21
-zapperai		zapper	50
-zapperaient		zapper	28
-zapperais		zapper	18
-zapperait		zapper	49
-zapperas		zapper	7
-zappèrent		zapper	24
-zapperez		zapper	5
-zapperiez		zapper	4
-zapperions		zapper	11
-zapperons		zapper	10
-zapperont		zapper	15
-zappes		zapper	77
-zappette	Télécommande de téléviseur.
-zappettes		zappette	0
-zappeur	Celui qui zappe.
-zappeurs		zappeur	0
-zappeuse	Celle qui zappe.
-zappeuses		zappeuse	0
-zappez		zapper	47
-zappiez		zapper	13
-zapping	Changements fréquents de chaînes de télévision à l’aide de la télécommande.
-zappings		zapping	0
-zappions		zapper	19
-zappons		zapper	27
-zarabe	Relatif aux Zarabes.
-zarabes		zarabe	0
-zaraguina	Bandit de grand chemin.
-zarb	Instrument de percussion digitale originaire d’Iran, composé d’une seule pièce de bois creuse de forme cylindrique dont l’ouverture est fermée par une peau ten…
-zarbi	Bizarre, étrange.
-zarbie		zarbi	23
-zarbies		zarbi	1
-zarbis		zarbi	9
-zarbs		zarb	0
-zarma	Groupe de dialectes parlés sur les rives du fleuve Niger depuis Djénne au Mali jusqu’au pays Bariba du nord du Bénin, et dont les principaux dialectes sont le …
-zarzuela	Genre d’opéra-comique espagnol.
-zarzuelas		zarzuela	0
-zawiya	Orthographe alternative de zaouïa.
-zawiyas		zawiya	0
-zaydite	Relatif au zaydisme.
-zaydites		zaydite	0
-zazen	Forme de méditation assise et silencieuse, à la base de la pratique du bouddhisme zen.
-zazens		zazen	0
-zazou	Appellation donnée à des jeunes gens qui ont créé un courant de mode en France dans les années 1930.
-zazous		zazou	0
+0zabre	Coléoptère qui se nourrit de grains de céréales et dont la larve dévore le blé naissant.
+5s		5	0
+2diste	Militant engagé dans la protection d'une zone à défendre (ZAD) ou aussi appelée Zone d'Aménagement Différé : l'occupation et la mise en culture d'une ZAD a pou…
+7s		7	0
+2gaie	Variante de sagaie.
+6s		6	0
+3rébois	Relatif à la ville de Zagreb, en Croatie, et à ses habitants.
+9e		9	n
+as		9	1
+2ibatsu	Conglomérat japonais de domaines variés, dirigé par la famille fondatrice.
+3n	Dont la robe ou le poil, simple et uniforme, n’a aucune marque de blanc.
+4s		4	9
+2ïre	Unité monétaire introduite en 1967 en République démocratique du Congo (remplaçant le franc congolais) jusqu’en 1993 (remplacée à son tour par le nouveau zaïre…
+5s		5	0
+4ois	Originaire ou relatif à la République du Zaïre.
+7e	Féminin singulier de zaïrois.
+8s		7	1
+2kât	Charité, l’un des devoirs de tout musulman, qui consiste à donner de l’argent pour les pauvres.
+3ouski	Hors-d’œuvre variés, chauds ou froids, russes ou polonais, servis généralement dans une pièce différente de celle du repas.
+8s		8	0
+2mak	Alliage de zinc, d’aluminium, de magnésium et parfois de cuivre.
+3bien	Propre ou relatif à la Zambie, état d’Afrique.
+7ne		7	n
+9s		7	1
+7s		7	0
+3ia	Plante arbustive de la famille des Zamiacées pouvant atteindre 1,50 mètre de haut et dont le port fait penser aux palmiers et aux fougères.
+5s		5	0
+4er	Synonyme de zamia.
+6s		6	0
+3u	Sentinelle, veilleur de nuit.
+4s		4	0
+2ncle	Poisson des mers chaudes vivant sur les fonds coralliens, joliment coloré, au corps latéralement plat, avec une nageoire dorsale longue et effilée en forme de …
+5éen	Relatif au Zancléen.
+5es		6	0
+3i	Variante de zanni
+4s		4	0
+3ni	Personnage bouffon dans les comédies vénitiennes.
+5s		5	0
+3zi	Zanzibar, sorte de jeu de dés, variante du 421.
+5bar	Sorte de jeu de dés, variante du 421, qui se joue avec trois dés.
+8s		8	0
+5s		5	0
+2ouia	Orthographe alternative de zaouïa.
+4ïas		6	0
+2patéado	Danse traditionnelle espagnole très rythmée caractérisée par le claquement des talons sur le sol.
+9s		9	0
+5isme	Mouvement révolutionnaire créé au Mexique par Zapata et qui perdure au sein de la société mexicaine contemporaine.
+9s		9	0
+7te	Relatif à Zapata, au zapatisme.
+9s		9	0
+3ette	Télécommande de téléviseur.
+7s		7	0
+3otèque	Relatif aux Zapotèques.
+9s		9	0
+3pa		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1k
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Appuyer sur la télécommande pour syntoniser une autre chaîne télévisuelle, changer rapidement de chaîne.
+6a		6	l
+7i		6	1e
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	25
+5tte	Télécommande de téléviseur.
+8s		8	0
+5ur	Celui qui zappe.
+7s		7	0
+6se	Celle qui zappe.
+8s		8	0
+5z		5r	1b
+4iez		4er	d
+5ng	Changements fréquents de chaînes de télévision à l’aide de la télécommande.
+7s		7	0
+5ons		4er	j
+4ons		4er	r
+2rabe	Relatif aux Zarabes.
+6s		6	0
+4guina	Bandit de grand chemin.
+3b	Instrument de percussion digitale originaire d’Iran, composé d’une seule pièce de bois creuse de forme cylindrique dont l’ouverture est fermée par une peau ten…
+4i	Bizarre, étrange.
+5e		5	n
+6s		5	1
+5s		5	9
+4s		4	0
+3ma	Groupe de dialectes parlés sur les rives du fleuve Niger depuis Djénne au Mali jusqu’au pays Bariba du nord du Bénin, et dont les principaux dialectes sont le …
+3zuela	Genre d’opéra-comique espagnol.
+8s		8	0
+2wiya	Orthographe alternative de zaouïa.
+6s		6	0
+2ydite	Relatif au zaydisme.
+7s		7	0
+2zen	Forme de méditation assise et silencieuse, à la base de la pratique du bouddhisme zen.
+5s		5	0
+3ou	Appellation donnée à des jeunes gens qui ont créé un courant de mode en France dans les années 1930.
+5s		5	0

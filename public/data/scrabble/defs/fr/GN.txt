@@ -1,97 +1,97 @@
-gnagnagna	Critique un propos inintéressant, par exemple un caprice, une plainte, un sarcasme, un rabâchage, une banalité, etc.
-gnangnan	Qui est mou et lent.
-gnangnans		gnangnan	0
-gnaoua	Relatif aux Gnaouas.
-gnaouas		gnaoua	0
-gnaphale	Genre de plantes dicotylédones à feuilles duveteuses.
-gnaphales		gnaphale	0
-gnaqua		gnaquer	39
-gnaquai		gnaquer	55
-gnaquaient		gnaquer	42
-gnaquais		gnaquer	52
-gnaquait		gnaquer	40
-gnaquâmes		gnaquer	68
-gnaquant		gnaquer	43
-gnaquas		gnaquer	83
-gnaquasse		gnaquer	81
-gnaquassent		gnaquer	78
-gnaquasses		gnaquer	87
-gnaquassiez		gnaquer	88
-gnaquassions		gnaquer	90
-gnaquât		gnaquer	62
-gnaquâtes		gnaquer	84
-gnaque	Esprit de compétition.
-gnaquée		gnaquer	45
-gnaquées		gnaquer	51
-gnaquent		gnaquer	41
-gnaquer	Mordre.
-gnaquera		gnaquer	44
-gnaquerai		gnaquer	50
-gnaqueraient		gnaquer	63
-gnaquerais		gnaquer	60
-gnaquerait		gnaquer	49
-gnaqueras		gnaquer	57
-gnaquèrent		gnaquer	48
-gnaquerez		gnaquer	58
-gnaqueriez		gnaquer	74
-gnaquerions		gnaquer	82
-gnaquerons		gnaquer	61
-gnaqueront		gnaquer	54
-gnaqués		gnaquer	53
-gnaquez		gnaquer	47
-gnaquiez		gnaquer	67
-gnaquions		gnaquer	65
-gnaquons		gnaquer	59
-gnard	Enfant.
-gnards		gnard	0
-gnaule	Autre orthographe, moins fréquente, de gnôle.
-gnaules		gnaule	0
-Gnawa	Variante orthographique de Gnaoua.
-gneiss	Roche métamorphique à grain grossier, composée d’une alternance de plages claires (quartz, feldspath) et foncées (mica, amphibole).
-gneisseuse		gneisseux	23
-gneisseuses		gneisseux	1
-gneisseux	Qui appartient au gneiss, qui a le caractère du gneiss.
-gneissique	Qui appartient au gneiss, qui a le caractère du gneiss.
-gneissiques		gneissique	0
-gnète	Genre d’arbre, dont certaines espèces se présentent sous forme de grandes lianes.
-gnètes		gnète	0
-gnetum	Arbrisseau grimpant de la famille des gnétacées poussant dans les forêts des régions tropicales d’Afrique et d’Amérique.
-gnetums		gnetum	0
-gniôle	Autre orthographe, moins fréquente, de gnôle.
-gniôles		gniôle	0
-gniouf	Variante orthographique de gnouf, plus courant, et de niouf.
-gnioufs		gniouf	0
-gnocchi	Pâte alimentaire préparée soit avec de la farine de blé, des pommes de terre pochées à l’eau, soit une préparation à base de semoule de blé dur.
-gnocchis		gnocchi	0
-gnognote	Rien, pas grand-chose, chose de peu de valeur.
-gnognotte	Rien, pas grand-chose, chose de peu de valeur.
-gnole	Éraflure qu’une toupie laisse sur une autre en la heurtant.
-gnôles		gnôle	0
-gnome	Génie de la terre, laid et de très petite taille, considéré comme le gardien des trésors enfouis, des mines, des pierres précieuses.
-gnomes		gnome	0
-gnomique	Qui contient des sentences.
-gnomiques		gnomique	0
-gnomon	Cadran solaire simple qui marque les heures par la direction de l’ombre sur un plan ou sur une surface courbe.
-gnomonique	Qui a rapport au gnomon.
-gnomoniques		gnomonique	0
-gnomons		gnomon	0
-gnon	Coup de poing, tape, claque, gifle… porté à quelqu’un.
-gnons		gnon	0
-gnose	Doctrine affirmant que la connaissance de Dieu est intuitive, et qu’elle est le résultat d’une révélation intérieure (gnose chrétienne).
-gnoséologie	Étude des fondements de la connaissance.
-gnoséologies		gnoséologie	0
-gnoséologique	Relatif à la gnoséologie.
-gnoséologiques		gnoséologique	0
-gnoses		gnose	0
-gnosie	Caractérise le fait de percevoir un objet par les sens.
-gnosies		gnosie	0
-gnosique	Relatif à la gnosie.
-gnosiques		gnosique	0
-gnosticisme	Ensemble des croyances de la gnose.
-gnosticismes		gnosticisme	0
-gnostique	Qui est relatif à la gnose.
-gnostiques		gnostique	0
-gnou	Une des espèces de grandes antilopes africaines du genre Connochaetes.
-gnouf	Prison, poste de police.
-gnoufs		gnouf	0
-gnous		gnou	0
+0gnagnagna	Critique un propos inintéressant, par exemple un caprice, une plainte, un sarcasme, un rabâchage, une banalité, etc.
+3ngnan	Qui est mou et lent.
+8s		8	0
+3oua	Relatif aux Gnaouas.
+6s		6	0
+3phale	Genre de plantes dicotylédones à feuilles duveteuses.
+8s		8	0
+3qua		5er	13
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	1w
+5ant		5er	17
+6s		5er	2b
+7se		5er	29
+9nt		5er	26
+9s		5er	2f
+8iez		5er	2g
+9ons		5er	2i
+5ât		5er	1q
+7es		5er	2c
+5e	Esprit de compétition.
+5ée		5er	19
+7s		5er	1f
+5ent		6r	15
+6r	Mordre.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	22
+8ons		7	2a
+7ons		7	1p
+9t		7	1i
+5és		5er	1h
+5ez		6r	1b
+5iez		5er	1v
+6ons		5er	1t
+5ons		5er	1n
+3rd	Enfant.
+5s		5	0
+3ule	Autre orthographe, moins fréquente, de gnôle.
+6s		6	0
+0Gnawa	Variante orthographique de Gnaoua.
+0gneiss	Roche métamorphique à grain grossier, composée d’une alternance de plages claires (quartz, feldspath) et foncées (mica, amphibole).
+6euse		8x	n
+as		8x	1
+8x	Qui appartient au gneiss, qui a le caractère du gneiss.
+6ique	Qui appartient au gneiss, qui a le caractère du gneiss.
+as		a	0
+2ète	Genre d’arbre, dont certaines espèces se présentent sous forme de grandes lianes.
+5s		5	0
+2etum	Arbrisseau grimpant de la famille des gnétacées poussant dans les forêts des régions tropicales d’Afrique et d’Amérique.
+6s		6	0
+2iôle	Autre orthographe, moins fréquente, de gnôle.
+6s		6	0
+3ouf	Variante orthographique de gnouf, plus courant, et de niouf.
+6s		6	0
+2occhi	Pâte alimentaire préparée soit avec de la farine de blé, des pommes de terre pochées à l’eau, soit une préparation à base de semoule de blé dur.
+7s		7	0
+3gnote	Rien, pas grand-chose, chose de peu de valeur.
+7te	Rien, pas grand-chose, chose de peu de valeur.
+3le	Éraflure qu’une toupie laisse sur une autre en la heurtant.
+2ôles		5	0
+2ome	Génie de la terre, laid et de très petite taille, considéré comme le gardien des trésors enfouis, des mines, des pierres précieuses.
+5s		5	0
+4ique	Qui contient des sentences.
+8s		8	0
+4on	Cadran solaire simple qui marque les heures par la direction de l’ombre sur un plan ou sur une surface courbe.
+6ique	Qui a rapport au gnomon.
+as		a	0
+6s		6	0
+3n	Coup de poing, tape, claque, gifle… porté à quelqu’un.
+4s		4	0
+3se	Doctrine affirmant que la connaissance de Dieu est intuitive, et qu’elle est le résultat d’une révélation intérieure (gnose chrétienne).
+4éologie	Étude des fondements de la connaissance.
+bs		b	0
+aque	Relatif à la gnoséologie.
+ds		d	0
+4es		5	0
+4ie	Caractérise le fait de percevoir un objet par les sens.
+6s		6	0
+5que	Relatif à la gnosie.
+8s		8	0
+4ticisme	Ensemble des croyances de la gnose.
+bs		b	0
+6que	Qui est relatif à la gnose.
+9s		9	0
+3u	Une des espèces de grandes antilopes africaines du genre Connochaetes.
+4f	Prison, poste de police.
+5s		5	0
+4s		4	0

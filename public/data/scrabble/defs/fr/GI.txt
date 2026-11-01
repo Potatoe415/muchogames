@@ -1,570 +1,570 @@
-gianduja	Pâte de chocolat et de noisettes finement broyées à laquelle peuvent être ajoutés d’autres fruits à coques.
-giandujas		gianduja	0
-giaour	Infidèle ; mécréant.
-giaours		giaour	0
-gibassier	Dessert traditionnel provençal.
-gibassiers		gibassier	0
-gibbérelline	Phytohormone utilisée comme hormone de croissance pour diverses plantes dont le riz et comme hormone de bouturage.
-gibbérellines		gibbérelline	0
-gibbeuse		gibbeux	23
-gibbeuses		gibbeux	1
-gibbeux	Qui est proéminent, en forme de bosse.
-gibbon	Grand singe d’Asie (genres Hylobates, Hoolook ou Nomascus, famille des hylobatidés).
-gibbons		gibbon	0
-gibbosité	Courbure anormale de la colonne vertébrale se manifestant par une saillie de la cage thoracique.
-gibbosités		gibbosité	0
-gibbsite	Espèce minérale de formule Al(OH)₃.
-gibbsites		gibbsite	0
-gibecière	Grand sac, ordinairement de cuir et de filet, qui sert aux chasseurs pour mettre le gibier tué.
-gibecières		gibecière	0
-gibelet	Petit foret à main dont on se sert pour percer une barrique, un tonneau de manière a pouvoir en gouter le contenu.
-gibelets		gibelet	0
-gibelin	Qui soutient l’empereur d'Allemagne, et s’oppose aux Guelfes partisans du pape.
-gibeline		gibelin	23
-gibelines		gibelin	1
-gibelins		gibelin	0
-gibelotte	Espèce de fricassée de lapin.
-gibelottes		gibelotte	0
-giberne	Boîte recouverte de cuir dans laquelle les soldats mettaient les cartouches et quelques menus objets pour l’entretien des armes.
-gibernes		giberne	0
-gibet	Potence où l’on exécute ceux qui sont condamnés à être pendus.
-gibets		gibet	0
-gibier	Animaux sauvages comestibles qu’on prend à la chasse.
-gibiers		gibier	0
-giboie		giboyer	79
-giboient		giboyer	31
-giboiera		giboyer	21
-giboierai		giboyer	16
-giboieraient		giboyer	28
-giboierais		giboyer	18
-giboierait		giboyer	26
-giboieras		giboyer	7
-giboierez		giboyer	5
-giboieriez		giboyer	4
-giboierions		giboyer	11
-giboierons		giboyer	10
-giboieront		giboyer	15
-giboies		giboyer	66
-giboulée	Pluie soudaine, de courte durée, et quelquefois mêlée de grêle ou de neige.
-giboulées		giboulée	0
-giboya	Grand serpent sans venin.
-giboyai		giboyer	22
-giboyaient		giboyer	32
-giboyais		giboyer	29
-giboyait		giboyer	34
-giboyâmes		giboyer	3
-giboyant		giboyer	35
-giboyas		giboya	0
-giboyasse		giboyer	6
-giboyassent		giboyer	17
-giboyasses		giboyer	8
-giboyassiez		giboyer	14
-giboyassions		giboyer	25
-giboyât		giboyer	20
-giboyâtes		giboyer	2
-giboyé		giboyer	46
-giboyer	Chasser, prendre du gibier.
-giboyèrent		giboyer	24
-giboyeuse		giboyeux	23
-giboyeuses		giboyeux	1
-giboyeux	Qui abonde en gibier.
-giboyez		giboyer	30
-giboyiez		giboyer	13
-giboyions		giboyer	19
-giboyons		giboyer	27
-gibraltarien	Relatif à Gibraltar et à ses habitants.
-gibraltarienne		gibraltarien	23
-gibraltariennes		gibraltarien	1
-gibraltariens		gibraltarien	9
-gibus	Haut-de-forme qui s’aplatit et se relève à l’aide de ressorts mécaniques.
-gicla		gicler	39
-giclai		gicler	22
-giclaient		gicler	42
-giclais		gicler	52
-giclait		gicler	40
-giclâmes		gicler	3
-giclant	Qui gicle.
-giclas		gicler	12
-giclasse		gicler	6
-giclassent		gicler	17
-giclasses		gicler	8
-giclassiez		gicler	14
-giclassions		gicler	25
-giclât		gicler	20
-giclâtes		gicler	2
-gicle		gicler	64
-giclée	Jet de liquide qui gicle.
-giclées		giclée	0
-giclement	Action de gicler.
-giclements		giclement	0
-giclent		gicler	41
-gicler	Jaillir en éclaboussant, éclabousser, fuser.
-giclera		gicler	44
-giclerai		gicler	16
-gicleraient		gicler	28
-giclerais		gicler	18
-giclerait		gicler	49
-gicleras		gicler	7
-giclèrent		gicler	48
-giclerez		gicler	5
-gicleriez		gicler	4
-giclerions		gicler	11
-giclerons		gicler	10
-gicleront		gicler	54
-gicles		gicler	77
-gicleur	Pièce généralement amovible, comportant un trou calibré, servant à gérer le débit d’un fluide atomisé.
-gicleurs		gicleur	0
-giclez		gicler	47
-gicliez		gicler	13
-giclions		gicler	19
-giclons		gicler	27
-giclure	Trace que laisse un giclement.
-giclures		giclure	0
-gidien	Relatif à l’œuvre d’André Gide ou plus généralement à sa personnalité.
-gidienne	Féminin singulier de gidien.
-gidiennes		gidien	1
-gidiens		gidien	9
-gif	Image numérique au format GIF.
-gifla		gifler	39
-giflai		gifler	55
-giflaient		gifler	42
-giflais		gifler	52
-giflait		gifler	40
-giflâmes		gifler	3
-giflant		gifler	43
-giflas		gifler	12
-giflasse		gifler	6
-giflassent		gifler	17
-giflasses		gifler	8
-giflassiez		gifler	14
-giflassions		gifler	25
-giflât		gifler	62
-giflâtes		gifler	2
-gifle	Joue.
-giflée		gifler	45
-giflées		gifler	51
-giflent		gifler	41
-gifler	Frapper quelqu’un avec le plat de la main sur la joue.
-giflera		gifler	44
-giflerai		gifler	50
-gifleraient		gifler	28
-giflerais		gifler	60
-giflerait		gifler	49
-gifleras		gifler	7
-giflèrent		gifler	24
-giflerez		gifler	5
-gifleriez		gifler	4
-giflerions		gifler	11
-giflerons		gifler	10
-gifleront		gifler	15
-gifles		gifle	0
-giflez		gifler	47
-gifliez		gifler	13
-giflions		gifler	19
-giflons		gifler	27
-Gift	Prénom masculin.
-gifts		gift	0
-giga	Épatant, effarant, frappant.
-gigabit	Unité de mesure de quantité d’information numérique, valant un milliard de bits, et dont le symbole est Gbit ou parfois Gb.
-gigabits		gigabit	0
-gigabyte	Gigaoctet, soit 10⁹ bytes.
-gigabytes		gigabyte	0
-gigaflops	Unité de mesure de puissance de calcul numérique, valant 10⁹ flops.
-gigahertz	Unité de mesure de fréquence du Système international (SI), valant 10⁹ hertz, et dont le symbole est GHz.
-gigantesque	Qui dépasse considérablement la taille ordinaire.
-gigantesquement	Dans des proportions gigantesques.
-gigantesques		gigantesque	0
-gigantisme	Exagération du développement de certaines parties du corps humain ou du corps en général, dans le sens de la hauteur.
-gigantismes		gigantisme	0
-gigantomachie	Combat de géants contre les dieux.
-gigantomachies		gigantomachie	0
-gigantostracé	Singulier de gigantostracés, synonyme d’euryptéride.
-gigantostracés	Synonyme d'euryptérides.
-gigaoctet	Unité de mesure de quantité d’information numérique, valant 1 073 741 824 (2³⁰) octets, valeur qui devrait en théorie être notée avec le symbole Gio, mais est …
-gigaoctets		gigaoctet	0
-gigas		giga	0
-gigawatt	Unité de mesure de puissance du Système international (SI), valant 10⁹ watts, et dont le symbole est GW.
-gigawatts		gigawatt	0
-gigogne	Utilisé dans l'expression mère Gigogne ou mère gigogne : femme qui a beaucoup d’enfants, par allusion à un personnage du théâtre des marionnettes qu’on représe…
-gigognes		gigogne	0
-gigolette	Épaule et muscle de l’épaule du lapin.
-gigolettes		gigolette	0
-gigolo	Compagnon d’une gigolette — son amant de cœur, alors qu’elle peut être entretenue par un autre homme.
-gigolos		gigolo	0
-Gigondas	Commune française, située dans le département du Vaucluse.
-gigot	Cuisse de mouton, d’agneau, de chevreuil séparée du corps de l’animal pour être mangée.
-gigota		gigoter	39
-gigotai		gigoter	22
-gigotaient		gigoter	42
-gigotais		gigoter	29
-gigotait		gigoter	40
-gigotâmes		gigoter	3
-gigotant	Qui gigote.
-gigotas		gigoter	12
-gigotasse		gigoter	6
-gigotassent		gigoter	17
-gigotasses		gigoter	8
-gigotassiez		gigoter	14
-gigotassions		gigoter	25
-gigotât		gigoter	20
-gigotâtes		gigoter	2
-gigote		gigoter	64
-gigotée		gigoter	37
-gigotées		gigoter	36
-gigotement	Action de gigoter.
-gigotements		gigotement	0
-gigotent		gigoter	41
-gigoter	Remuer continuellement les jambes.
-gigotera		gigoter	21
-gigoterai		gigoter	16
-gigoteraient		gigoter	28
-gigoterais		gigoter	18
-gigoterait		gigoter	26
-gigoteras		gigoter	7
-gigotèrent		gigoter	24
-gigoterez		gigoter	5
-gigoteriez		gigoter	4
-gigoterions		gigoter	11
-gigoterons		gigoter	10
-gigoteront		gigoter	15
-gigotes		gigoter	77
-gigoteuse	Vêtement pour bébé qui est porté pour dormir, et qui ne laisse découverts que la tête et parfois les bras.
-gigoteuses		gigoteuse	0
-gigotez		gigoter	47
-gigotiez		gigoter	13
-gigotions		gigoter	19
-gigotons		gigoter	27
-gigots		gigot	0
-gigotté	Qui a les membres forts, en parlant des chevaux et des chiens.
-gigottée		gigotter	37
-gigottées		gigotter	36
-gigotter	ou Remuer continuellement les jambes.
-gigottes		gigotter	66
-gigua		giguer	39
-giguai		giguer	22
-giguaient		giguer	32
-giguais		giguer	29
-giguait		giguer	34
-giguâmes		giguer	3
-giguant		giguer	35
-giguas		giguer	12
-giguasse		giguer	6
-giguassent		giguer	17
-giguasses		giguer	8
-giguassiez		giguer	14
-giguassions		giguer	25
-giguât		giguer	20
-giguâtes		giguer	2
-gigue	Instrument à cordes du Moyen Âge de la famille des vielles.
-giguent		giguer	31
-giguer	Danser, sauter.
-giguera		giguer	21
-giguerai		giguer	16
-gigueraient		giguer	28
-giguerais		giguer	18
-giguerait		giguer	26
-gigueras		giguer	7
-giguèrent		giguer	24
-giguerez		giguer	5
-gigueriez		giguer	4
-giguerions		giguer	11
-giguerons		giguer	10
-gigueront		giguer	15
-gigues		gigue	0
-gigueur	Synonyme de gigueux.
-gigueurs		gigueur	0
-gigueuse	Femme qui aime danser la gigue.
-gigueuses		gigueuse	118
-giguez		giguer	30
-giguiez		giguer	13
-giguions		giguer	19
-giguons		giguer	27
-gilde	Variante de guilde.
-gildes		gilde	0
-gilet	Sorte de veste courte sans pans et le plus souvent sans manches qui se porte sur la chemise.
-giletier	Ouvrier, ouvrière qui fait des gilets.
-giletière	Ouvrière en gilets.
-giletières		giletière	0
-giletiers		giletier	0
-gilets		gilet	0
-gille	Ancien personnage de la comédie burlesque, représentant le type du niais.
-gilles	Variante de gille.
-gimblette	Petite pâtisserie dure et sèche, faite en forme d’anneau.
-gimblettes		gimblette	0
-gimmick	Nouveauté, gadget astucieux, en particulier dans le champ publicitaire.
-gimmicks		gimmick	0
-gin	Boisson alcoolisée aromatisée aux baies de genévrier.
-gindre	Ouvrier d’une boulangerie, celui qui pétrit le pain.
-gindres		gindre	0
-gingembre	Plante herbacée vivace originaire d’Inde méridionale de nom scientifique Zingiber officinale qui est cultivée pour son rhizome comestible.
-gingembrer	Ajouter du gingembre à (une préparation).
-gingembrés		gingembrer	53
-gingival	Qui est relatif à la gencive.
-gingivale		gingival	23
-gingivales		gingival	1
-gingivaux		gingival	9
-gingivite	Inflammation des gencives.
-gingivites		gingivite	0
-ginglard	Variante de ginglet.
-ginglards		ginglard	0
-ginglet	Petit vin aigrelet.
-ginglets		ginglet	0
-ginguet	Linguet ou pieu mobile qui arrête le cabestan après qu’on s’en est servi.
-ginguets		ginguet	0
-ginkgo	Arbre de nom scientifique Ginkgo biloba et considéré comme étant un fossile vivant.
-ginkgos		ginkgo	0
-gins		gin	0
-ginseng	Plante originaire d’Asie de l’Est, dont la racine est réputée pour ses propriétés pharmaceutiques, son appellation binomiale est Panax ginseng.
-ginsengs		ginseng	0
-giobertite	Minéral, synonyme de magnésite.
-giobertites		giobertite	0
-giorno	Utilisé uniquement dans l’expression à giorno, caractérise un éclairage aussi lumineux que la lumière du jour.
-giottesque	Relatif à Giotto di Bondone.
-giottesques		giottesque	0
-gipsy	Nom que l’on donne aux bohémiens en Angleterre.
-girafe	Mammifère ongulé artiodactyle et ruminant, originaire des savanes africaines, caractérisé notamment par un cou très allongé qui lui permet de dépasser souvent …
-girafeau	Petit de la girafe.
-girafeaux		girafeau	0
-girafes		girafe	0
-giraffidé	Membre de la famille des giraffidés.
-giraffidés	Famille de mammifères comprenant la girafe, l’okapi et le Sivatherium.
-girafon	Petit de la girafe.
-girafons		girafon	0
-giralducien	Relatif à l’œuvre de l’écrivain Jean Giraudoux.
-giralducienne		giralducien	23
-giralduciennes		giralducien	1
-giralduciens		giralducien	9
-girandole	Faisceau de plusieurs jets d’eau ou gerbe pyrotechnique de fusées volantes qui partent en même temps.
-girandoles		girandole	0
-girasol	Pierre précieuse chatoyante, sorte d’opale.
-girasols		girasol	0
-giration	Mouvement circulaire.
-girations		giration	0
-giratoire	Qui fait tourner.
-giratoires		giratoire	0
-giraumon	Variante de giraumont.
-giraumons		giraumon	0
-giraumont	Nom usuel d'une variété de potiron (Cucurbita maxima), originaire d'Amérique.
-giraumonts		giraumont	0
-giravion	Terme générique pour les appareils volant grâce à une voilure tournante autour d'un axe situé en général verticalement au-dessus de l’habitacle.
-giravions		giravion	0
-girelle	Le haut de l’arbre de la roue, dit aussi tête de roue, sur lequel on place le morceau de terre glaise pour en faire un vase.
-girelles		girelle	0
-girie	Plainte hypocrite, jérémiade ridicule.
-giries		girie	0
-girl	Jeune danseuse de revue.
-girls		girl	0
-girly	Correspondant bien à une image liée traditionnellement aux filles.
-girodyne	Giravion dont les mouvements verticaux sont assurés par un rotor d’axe vertical, et les mouvements horizontaux par une propulsion de type avion, moteurs à héli…
-girodynes		girodyne	0
-girofle	Bouton des fleurs du giroflier qui est à peu près de la figure d’un petit clou à tête et qui est employé comme épice.
-giroflée	Nom usuel de plusieurs plantes souvent odorantes, de la famille des Brassicacées, du genre Matthiola, dont plusieurs espèces sont cultivées dans les jardins.
-giroflées		giroflée	0
-girofles		girofle	0
-giroflier	Arbre de la famille des Myrtacées, qui porte le clou de girofle.
-girofliers		giroflier	0
-girole	Variante de girolle.
-giroles		girole	0
-girolle	Espèce de champignons à plis lamelliformes, au chapeau convexe, s’aplatissant, puis en entonnoir, jaune plus ou moins orangé, au pied sans anneau, concolore et…
-girolles		girolle	0
-giron	Espace qui s’étend de la ceinture aux genoux d’une personne assise.
-girond	Potelé, aux formes arrondies.
-gironde		girond	23
-girondes		girond	1
-girondin	Du département de la Gironde, de ses habitants.
-girondine	Membre des Girondins, parti formé en 1791 avec quelques députés de la Gironde.
-girondines		girondin	1
-girondins		girondin	9
-gironds		girond	9
-gironna		gironner	33
-gironnai		gironner	22
-gironnaient		gironner	32
-gironnais	Relatif à Giron, commune française située dans le département de l’Ain.
-gironnait		gironner	34
-gironnâmes		gironner	3
-gironnant		gironner	35
-gironnas		gironner	12
-gironnasse		gironner	6
-gironnassent		gironner	17
-gironnasses		gironner	8
-gironnassiez		gironner	14
-gironnassions		gironner	25
-gironnât		gironner	20
-gironnâtes		gironner	2
-gironné	Se dit d'un écu ou d'une figure, divisé en quatre girons d’un émail et quatre d’un autre.
-gironnée	Ce que pouvait contenir le giron d’une personne assise.
-gironnées		gironnée	0
-gironnent		gironner	31
-gironner	Former au marteau les rondeurs d’un ouvrage d’orfèvrerie.
-gironnera		gironner	21
-gironnerai		gironner	16
-gironneraient		gironner	28
-gironnerais		gironner	18
-gironnerait		gironner	26
-gironneras		gironner	7
-gironnèrent		gironner	24
-gironnerez		gironner	5
-gironneriez		gironner	4
-gironnerions		gironner	11
-gironnerons		gironner	10
-gironneront		gironner	15
-gironnés		gironné	9
-gironnez		gironner	30
-gironniez		gironner	13
-gironnions		gironner	19
-gironnons		gironner	27
-girons		giron	0
-girouetta		girouetter	33
-girouettai		girouetter	22
-girouettaient		girouetter	32
-girouettais		girouetter	29
-girouettait		girouetter	40
-girouettâmes		girouetter	3
-girouettant		girouetter	43
-girouettas		girouetter	12
-girouettasse		girouetter	6
-girouettassent		girouetter	17
-girouettasses		girouetter	8
-girouettassiez		girouetter	14
-girouettassions		girouetter	25
-girouettât		girouetter	20
-girouettâtes		girouetter	2
-girouette	Pièce de fer-blanc ou d’autre matière mince et légère, ordinairement en forme de flèche empennée ou de coq, qu’on pose sur un pivot en un lieu élevé (en généra…
-girouettent		girouetter	31
-girouetter	Changer d’avis comme une girouette.
-girouettera		girouetter	21
-girouetterai		girouetter	16
-girouetteraient		girouetter	28
-girouetterais		girouetter	18
-girouetterait		girouetter	26
-girouetteras		girouetter	7
-girouettèrent		girouetter	24
-girouetterez		girouetter	5
-girouetteriez		girouetter	4
-girouetterions		girouetter	11
-girouetterons		girouetter	10
-girouetteront		girouetter	15
-girouettes		girouette	0
-girouettez		girouetter	30
-girouettiez		girouetter	13
-girouettions		girouetter	19
-girouettons		girouetter	27
-girouille	Carotte.
-girouilles		girouille	0
-gis		gésir	72
-gisaient		gésir	42
-gisais		gésir	52
-gisait		gésir	40
-gisant	Qui est couché, étendu.
-gisante	Statue qui représente une défunte reposant, comme élément décoratif d'un tombeau.
-gisantes		gisant	1
-gisants		gisant	9
-giscardien	Partisan de Valéry Giscard d’Estaing.
-giscardienne	Partisane de Valéry Giscard d’Estaing.
-giscardiennes		giscardien	1
-giscardiens		giscardien	0
-giselle	Mousseline imitant la guipure.
-giselles		giselle	0
-gisement	Situation des côtes de la mer.
-gisements		gisement	0
-gisent		gésir	41
-gisez		gésir	47
-gisiez		gésir	67
-gisions		gésir	65
-gisons		gésir	59
-gît		gésir	152
-gita		giter	39
-gitage	Dernière opération que l’on fait avec le chardon pour démêler les poils du drap.
-gitages		gitage	0
-gîtai		gîter	22
-gîtaient		gîter	32
-gîtais		gîter	29
-gîtait		gîter	40
-gîtâmes		gîter	3
-gitan	Bohémien d’Espagne.
-gitane	Bohémienne.
-gitanes		gitan	1
-gitans		gitan	9
-gîtant		gîter	43
-gîtas		gîter	12
-gîtasse		gîter	6
-gîtassent		gîter	17
-gîtasses		gîter	8
-gîtassiez		gîter	14
-gîtassions		gîter	25
-gîtât		gîter	20
-gîtâtes		gîter	2
-gîte	Lieu où on habite et où on dort ordinairement.
-gîtent		gîter	41
-gîter	Demeurer dans un gîte.
-gîtera		gîter	44
-gîterai		gîter	16
-gîteraient		gîter	28
-gîterais		gîter	18
-gîterait		gîter	26
-gîteras		gîter	7
-gîtèrent		gîter	24
-gîterez		gîter	5
-gîteriez		gîter	4
-gîterions		gîter	11
-gîterons		gîter	10
-gîteront		gîter	15
-gîtes		gîte	0
-gîtez		gîter	30
-gîtiez		gîter	13
-gîtions		gîter	19
-gîtologie	Variante orthographique de gitologie.
-gîtologies		gîtologie	0
-gîtologue	Spécialiste de gîtologie.
-gîtologues		gîtologue	0
-giton	Prostitué homosexuel, gigolo, mignon.
-gitons		giton	0
-givra		givrer	33
-givrage	Formation de givre.
-givrages		givrage	0
-givrai		givrer	22
-givraient		givrer	32
-givrais	Relatif au Givre, commune française située dans le département de la Vendée.
-givrait		givrer	40
-givrâmes		givrer	3
-givrant	Qui entraîne la formation de givre.
-givrante		givrant	23
-givrantes		givrant	1
-givrants		givrant	9
-givras		givrer	12
-givrasse		givrer	6
-givrassent		givrer	17
-givrasses		givrer	8
-givrassiez		givrer	14
-givrassions		givrer	25
-givrât		givrer	20
-givrâtes		givrer	2
-givré	Couvert de givre.
-givrée		givré	23
-givrées		givré	1
-givrent		givrer	31
-givrer	Couvrir de givre.
-givrera		givrer	21
-givrerai		givrer	16
-givreraient		givrer	28
-givrerais		givrer	18
-givrerait		givrer	26
-givreras		givrer	7
-givrèrent		givrer	24
-givrerez		givrer	5
-givreriez		givrer	4
-givrerions		givrer	11
-givrerons		givrer	10
-givreront		givrer	15
-givrés		givré	9
-givreuse		givreux	23
-givreuses		givreux	1
-givreux	Se dit d’une pierre précieuse ayant un ou plusieurs givres (éclat ou petite tache blanche).
-givrez		givrer	30
-givriez		givrer	13
-givrions		givrer	19
-givrons		givrer	27
-givrure	Tache d’un blanc mat sur un diamant provenant de l’éclat qu’y a fait l’outil du mineur ou du lapidaire.
-givrures		givrure	0
-givry	Vin rouge ou blanc d’appellation AOC issu de la côte chalonnaise.
-givrys		givry	0
+0gianduja	Pâte de chocolat et de noisettes finement broyées à laquelle peuvent être ajoutés d’autres fruits à coques.
+8s		8	0
+3our	Infidèle ; mécréant.
+6s		6	0
+2bassier	Dessert traditionnel provençal.
+9s		9	0
+3bérelline	Phytohormone utilisée comme hormone de croissance pour diverses plantes dont le riz et comme hormone de bouturage.
+cs		c	0
+4euse		6x	n
+8s		6x	1
+6x	Qui est proéminent, en forme de bosse.
+4on	Grand singe d’Asie (genres Hylobates, Hoolook ou Nomascus, famille des hylobatidés).
+6s		6	0
+5sité	Courbure anormale de la colonne vertébrale se manifestant par une saillie de la cage thoracique.
+9s		9	0
+4site	Espèce minérale de formule Al(OH)₃.
+8s		8	0
+3ecière	Grand sac, ordinairement de cuir et de filet, qui sert aux chasseurs pour mettre le gibier tué.
+9s		9	0
+4let	Petit foret à main dont on se sert pour percer une barrique, un tonneau de manière a pouvoir en gouter le contenu.
+7s		7	0
+5in	Qui soutient l’empereur d'Allemagne, et s’oppose aux Guelfes partisans du pape.
+7e		7	n
+8s		7	1
+7s		7	0
+5otte	Espèce de fricassée de lapin.
+9s		9	0
+4rne	Boîte recouverte de cuir dans laquelle les soldats mettaient les cartouches et quelques menus objets pour l’entretien des armes.
+7s		7	0
+4t	Potence où l’on exécute ceux qui sont condamnés à être pendus.
+5s		5	0
+3ier	Animaux sauvages comestibles qu’on prend à la chasse.
+6s		6	0
+3oie		4yer	27
+6nt		4yer	v
+6ra		4yer	l
+8i		4yer	g
+9ent		4yer	s
+9s		4yer	i
+9t		4yer	q
+8s		4yer	7
+7ez		4yer	5
+7iez		4yer	4
+8ons		4yer	b
+7ons		4yer	a
+9t		4yer	f
+6s		4yer	1u
+4ulée	Pluie soudaine, de courte durée, et quelquefois mêlée de grêle ou de neige.
+8s		8	0
+4ya	Grand serpent sans venin.
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		6	0
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+5er	Chasser, prendre du gibier.
+5èrent		5er	o
+5euse		7x	n
+9s		7x	1
+7x	Qui abonde en gibier.
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3raltarien	Relatif à Gibraltar et à ses habitants.
+cne		c	n
+es		c	1
+cs		c	9
+3us	Haut-de-forme qui s’aplatit et se relève à l’aide de ressorts mécaniques.
+2cla		4er	13
+5i		4er	m
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant	Qui gicle.
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e		5r	1s
+4ée	Jet de liquide qui gicle.
+6s		6	0
+4ement	Action de gicler.
+9s		9	0
+5nt		5r	15
+5r	Jaillir en éclaboussant, éclabousser, fuser.
+6a		6	18
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	1c
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5r	25
+5ur	Pièce généralement amovible, comportant un trou calibré, servant à gérer le débit d’un fluide atomisé.
+7s		7	0
+5z		5r	1b
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+4ure	Trace que laisse un giclement.
+7s		7	0
+2dien	Relatif à l’œuvre d’André Gide ou plus généralement à sa personnalité.
+6ne	Féminin singulier de gidien.
+8s		6	1
+6s		6	9
+2f	Image numérique au format GIF.
+3la		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	1q
+6es		4er	2
+4e	Joue.
+4ée		4er	19
+6s		4er	1f
+4ent		5r	15
+5r	Frapper quelqu’un avec le plat de la main sur la joue.
+6a		6	18
+7i		6	1e
+8ent		6	s
+8s		6	1o
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	1b
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+0Gift	Prénom masculin.
+0gifts		4	0
+2ga	Épatant, effarant, frappant.
+4bit	Unité de mesure de quantité d’information numérique, valant un milliard de bits, et dont le symbole est Gbit ou parfois Gb.
+7s		7	0
+5yte	Gigaoctet, soit 10⁹ bytes.
+8s		8	0
+4flops	Unité de mesure de puissance de calcul numérique, valant 10⁹ flops.
+4hertz	Unité de mesure de fréquence du Système international (SI), valant 10⁹ hertz, et dont le symbole est GHz.
+4ntesque	Qui dépasse considérablement la taille ordinaire.
+bment	Dans des proportions gigantesques.
+bs		b	0
+6isme	Exagération du développement de certaines parties du corps humain ou du corps en général, dans le sens de la hauteur.
+as		a	0
+6omachie	Combat de géants contre les dieux.
+ds		d	0
+7stracé	Singulier de gigantostracés, synonyme d’euryptéride.
+ds	Synonyme d'euryptérides.
+4octet	Unité de mesure de quantité d’information numérique, valant 1 073 741 824 (2³⁰) octets, valeur qui devrait en théorie être notée avec le symbole Gio, mais est …
+9s		9	0
+4s		4	0
+4watt	Unité de mesure de puissance du Système international (SI), valant 10⁹ watts, et dont le symbole est GW.
+8s		8	0
+3ogne	Utilisé dans l'expression mère Gigogne ou mère gigogne : femme qui a beaucoup d’enfants, par allusion à un personnage du théâtre des marionnettes qu’on représe…
+7s		7	0
+4lette	Épaule et muscle de l’épaule du lapin.
+9s		9	0
+5o	Compagnon d’une gigolette — son amant de cœur, alors qu’elle peut être entretenue par un autre homme.
+6s		6	0
+0Gigondas	Commune française, située dans le département du Vaucluse.
+0gigot	Cuisse de mouton, d’agneau, de chevreuil séparée du corps de l’animal pour être mangée.
+5a		5er	13
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant	Qui gigote.
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e		6r	1s
+5ée		5er	11
+7s		5er	10
+5ement	Action de gigoter.
+as		a	0
+6nt		6r	15
+6r	Remuer continuellement les jambes.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	25
+6use	Vêtement pour bébé qui est porté pour dormir, et qui ne laisse découverts que la tête et parfois les bras.
+9s		9	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+5té	Qui a les membres forts, en parlant des chevaux et des chiens.
+7e		6er	11
+8s		6er	10
+6er	ou Remuer continuellement les jambes.
+7s		7r	1u
+3ua		4er	13
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Instrument à cordes du Moyen Âge de la famille des vielles.
+5nt		5r	v
+5r	Danser, sauter.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5ur	Synonyme de gigueux.
+7s		7	0
+6se	Femme qui aime danser la gigue.
+8s		8	3a
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2lde	Variante de guilde.
+5s		5	0
+3et	Sorte de veste courte sans pans et le plus souvent sans manches qui se porte sur la chemise.
+5ier	Ouvrier, ouvrière qui fait des gilets.
+6ère	Ouvrière en gilets.
+9s		9	0
+6ers		8	0
+5s		5	0
+3le	Ancien personnage de la comédie burlesque, représentant le type du niais.
+5s	Variante de gille.
+2mblette	Petite pâtisserie dure et sèche, faite en forme d’anneau.
+9s		9	0
+3mick	Nouveauté, gadget astucieux, en particulier dans le champ publicitaire.
+7s		7	0
+2n	Boisson alcoolisée aromatisée aux baies de genévrier.
+3dre	Ouvrier d’une boulangerie, celui qui pétrit le pain.
+6s		6	0
+3gembre	Plante herbacée vivace originaire d’Inde méridionale de nom scientifique Zingiber officinale qui est cultivée pour son rhizome comestible.
+9r	Ajouter du gingembre à (une préparation).
+8és		8er	1h
+4ival	Qui est relatif à la gencive.
+8e		8	n
+9s		8	1
+7ux		7l	9
+6ite	Inflammation des gencives.
+9s		9	0
+4lard	Variante de ginglet.
+8s		8	0
+5et	Petit vin aigrelet.
+7s		7	0
+4uet	Linguet ou pieu mobile qui arrête le cabestan après qu’on s’en est servi.
+7s		7	0
+3kgo	Arbre de nom scientifique Ginkgo biloba et considéré comme étant un fossile vivant.
+6s		6	0
+3s		3	0
+4eng	Plante originaire d’Asie de l’Est, dont la racine est réputée pour ses propriétés pharmaceutiques, son appellation binomiale est Panax ginseng.
+7s		7	0
+2obertite	Minéral, synonyme de magnésite.
+as		a	0
+3rno	Utilisé uniquement dans l’expression à giorno, caractérise un éclairage aussi lumineux que la lumière du jour.
+3ttesque	Relatif à Giotto di Bondone.
+as		a	0
+2psy	Nom que l’on donne aux bohémiens en Angleterre.
+2rafe	Mammifère ongulé artiodactyle et ruminant, originaire des savanes africaines, caractérisé notamment par un cou très allongé qui lui permet de dépasser souvent …
+6au	Petit de la girafe.
+8x		8	0
+6s		6	0
+5fidé	Membre de la famille des giraffidés.
+9s	Famille de mammifères comprenant la girafe, l’okapi et le Sivatherium.
+5on	Petit de la girafe.
+7s		7	0
+4lducien	Relatif à l’œuvre de l’écrivain Jean Giraudoux.
+bne		b	n
+ds		b	1
+bs		b	9
+4ndole	Faisceau de plusieurs jets d’eau ou gerbe pyrotechnique de fusées volantes qui partent en même temps.
+9s		9	0
+4sol	Pierre précieuse chatoyante, sorte d’opale.
+7s		7	0
+4tion	Mouvement circulaire.
+8s		8	0
+5oire	Qui fait tourner.
+9s		9	0
+4umon	Variante de giraumont.
+8s		8	0
+8t	Nom usuel d'une variété de potiron (Cucurbita maxima), originaire d'Amérique.
+9s		9	0
+4vion	Terme générique pour les appareils volant grâce à une voilure tournante autour d'un axe situé en général verticalement au-dessus de l’habitacle.
+8s		8	0
+3elle	Le haut de l’arbre de la roue, dit aussi tête de roue, sur lequel on place le morceau de terre glaise pour en faire un vase.
+7s		7	0
+3ie	Plainte hypocrite, jérémiade ridicule.
+5s		5	0
+3l	Jeune danseuse de revue.
+4s		4	0
+4y	Correspondant bien à une image liée traditionnellement aux filles.
+3odyne	Giravion dont les mouvements verticaux sont assurés par un rotor d’axe vertical, et les mouvements horizontaux par une propulsion de type avion, moteurs à héli…
+8s		8	0
+4fle	Bouton des fleurs du giroflier qui est à peu près de la figure d’un petit clou à tête et qui est employé comme épice.
+6ée	Nom usuel de plusieurs plantes souvent odorantes, de la famille des Brassicacées, du genre Matthiola, dont plusieurs espèces sont cultivées dans les jardins.
+8s		8	0
+6es		7	0
+6ier	Arbre de la famille des Myrtacées, qui porte le clou de girofle.
+9s		9	0
+4le	Variante de girolle.
+6s		6	0
+5le	Espèce de champignons à plis lamelliformes, au chapeau convexe, s’aplatissant, puis en entonnoir, jaune plus ou moins orangé, au pied sans anneau, concolore et…
+7s		7	0
+4n	Espace qui s’étend de la ceinture aux genoux d’une personne assise.
+5d	Potelé, aux formes arrondies.
+6e		6	n
+7s		6	1
+6in	Du département de la Gironde, de ses habitants.
+8e	Membre des Girondins, parti formé en 1791 avec quelques députés de la Gironde.
+9s		8	1
+8s		8	9
+6s		6	9
+5na		6er	x
+7i		6er	m
+8ent		6er	w
+8s	Relatif à Giron, commune française située dans le département de l’Ain.
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é	Se dit d'un écu ou d'une figure, divisé en quatre girons d’un émail et quatre d’un autre.
+7e	Ce que pouvait contenir le giron d’une personne assise.
+8s		8	0
+6ent		7r	v
+7r	Former au marteau les rondeurs d’un ouvrage d’orfèvrerie.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5s		5	0
+4uetta		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Pièce de fer-blanc ou d’autre matière mince et légère, ordinairement en forme de flèche empennée ou de coq, qu’on pose sur un pivot en un lieu élevé (en généra…
+9nt		9r	v
+9r	Changer d’avis comme une girouette.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5ille	Carotte.
+9s		9	0
+2s		1ésir	20
+3aient		1ésir	16
+5s		1ésir	1g
+5t		1ésir	14
+4nt	Qui est couché, étendu.
+6e	Statue qui représente une défunte reposant, comme élément décoratif d'un tombeau.
+7s		6	1
+6s		6	9
+3cardien	Partisan de Valéry Giscard d’Estaing.
+ane	Partisane de Valéry Giscard d’Estaing.
+cs		a	1
+as		a	0
+3elle	Mousseline imitant la guipure.
+7s		7	0
+4ment	Situation des côtes de la mer.
+8s		8	0
+4nt		1ésir	15
+4z		1ésir	1b
+3iez		1ésir	1v
+4ons		1ésir	1t
+3ons		1ésir	1n
+1ît		1ésir	48
+1ita		3er	13
+4ge	Dernière opération que l’on fait avec le chardon pour démêler les poils du drap.
+6s		6	0
+1îtai		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	14
+3âmes		3er	3
+1itan	Bohémien d’Espagne.
+5e	Bohémienne.
+6s		5	1
+5s		5	9
+1îtant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Lieu où on habite et où on dort ordinairement.
+4nt		4r	15
+4r	Demeurer dans un gîte.
+5a		5	18
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+4z		4r	u
+3iez		3er	d
+4ons		3er	j
+3ologie	Variante orthographique de gitologie.
+9s		9	0
+7ue	Spécialiste de gîtologie.
+9s		9	0
+1iton	Prostitué homosexuel, gigolo, mignon.
+5s		5	0
+2vra		4er	x
+5ge	Formation de givre.
+7s		7	0
+5i		4er	m
+6ent		4er	w
+6s	Relatif au Givre, commune française située dans le département de la Vendée.
+6t		4er	14
+4âmes		4er	3
+4ant	Qui entraîne la formation de givre.
+7e		7	n
+8s		7	1
+7s		7	9
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é	Couvert de givre.
+5e		5	n
+6s		5	1
+4ent		5r	v
+5r	Couvrir de givre.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		5	9
+4euse		6x	n
+8s		6x	1
+6x	Se dit d’une pierre précieuse ayant un ou plusieurs givres (éclat ou petite tache blanche).
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+4ure	Tache d’un blanc mat sur un diamant provenant de l’éclat qu’y a fait l’outil du mineur ou du lapidaire.
+7s		7	0
+4y	Vin rouge ou blanc d’appellation AOC issu de la côte chalonnaise.
+5s		5	0

@@ -1,6 +1,6 @@
-ufologie	Étude des ovnis (objets volants non identifiés), ainsi que des phénomènes qui leur sont associés.
-ufologies		ufologie	0
-ufologique	Relatif à l’ufologie.
-ufologiques		ufologique	0
-ufologue	Spécialiste des ovnis.
-ufologues		ufologue	0
+0ufologie	Étude des ovnis (objets volants non identifiés), ainsi que des phénomènes qui leur sont associés.
+8s		8	0
+7que	Relatif à l’ufologie.
+as		a	0
+6ue	Spécialiste des ovnis.
+8s		8	0

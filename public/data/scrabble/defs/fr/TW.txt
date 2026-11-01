@@ -1,137 +1,137 @@
-tweed	Tissu de laine, généralement de deux couleurs, originaire d’Écosse.
-tweeds		tweed	0
-tween	Substance utilisée dans des préparations comme mouillant ou émulsionnant.
-tweet	Message court – limité à l'origine à 140 caractères et aujourd'hui à 280 – publié sur le service Twitter.
-tweeta		tweeter	33
-tweetai		tweeter	22
-tweetaient		tweeter	32
-tweetais		tweeter	29
-tweetait		tweeter	34
-tweetâmes		tweeter	3
-tweetant		tweeter	35
-tweetas		tweeter	12
-tweetasse		tweeter	6
-tweetassent		tweeter	17
-tweetasses		tweeter	8
-tweetassiez		tweeter	14
-tweetassions		tweeter	25
-tweetât		tweeter	20
-tweetâtes		tweeter	2
-tweeté		tweeter	46
-tweetée		tweeter	37
-tweetées		tweeter	36
-tweetent		tweeter	31
-tweeter	Publier un message sur le réseau Twitter.
-tweetera		tweeter	21
-tweeterai		tweeter	16
-tweeteraient		tweeter	28
-tweeterais		tweeter	18
-tweeterait		tweeter	26
-tweeteras		tweeter	7
-tweetèrent		tweeter	24
-tweeterez		tweeter	5
-tweeteriez		tweeter	4
-tweeterions		tweeter	11
-tweeterons		tweeter	10
-tweeteront		tweeter	15
-tweeters		tweeter	0
-tweetés		tweeter	38
-tweeteur	Variante orthographique de twitteur.
-tweeteurs		tweeteur	0
-tweeteuse	Variante orthographiques de twitteuse.
-tweeteuses		tweeteuse	0
-tweetez		tweeter	30
-tweetiez		tweeter	13
-tweetions		tweeter	19
-tweetons		tweeter	27
-tweets		tweet	0
-twerk	Danse, inspirée de la culture hip-hop américaine, qui consiste à secouer le postérieur de manière frénétique.
-twill	} Étoffe de soie et d’armure sergée, de même origine mais très différente du tweed.
-twills		twill	0
-twin	Chambre à deux lits jumeaux.
-twins		twin	0
-twinset	Variante de twin-set.
-twist	Type de chanson et de danse des années 1960.
-twista		twister	33
-twistai		twister	22
-twistaient		twister	32
-twistais		twister	29
-twistait		twister	34
-twistâmes		twister	3
-twistant		twister	35
-twistas		twister	12
-twistasse		twister	6
-twistassent		twister	17
-twistasses		twister	8
-twistassiez		twister	14
-twistassions		twister	25
-twistât		twister	20
-twistâtes		twister	2
-twisté		twister	46
-twistée		twister	37
-twistées		twister	51
-twistent		twister	31
-twister	Chanter le twist.
-twistera		twister	21
-twisterai		twister	16
-twisteraient		twister	28
-twisterais		twister	18
-twisterait		twister	26
-twisteras		twister	7
-twistèrent		twister	24
-twisterez		twister	5
-twisteriez		twister	4
-twisterions		twister	11
-twisterons		twister	10
-twisteront		twister	15
-twistés		twister	38
-twisteur	Danseur de twist.
-twisteurs		twisteur	0
-twistez		twister	30
-twistiez		twister	13
-twistions		twister	19
-twistons		twister	27
-twists		twist	0
-twitta		twitter	33
-twittai		twitter	22
-twittaient		twitter	32
-twittais		twitter	29
-twittait		twitter	34
-twittâmes		twitter	3
-twittant		twitter	35
-twittas		twitter	12
-twittasse		twitter	6
-twittassent		twitter	17
-twittasses		twitter	8
-twittassiez		twitter	14
-twittassions		twitter	25
-twittât		twitter	20
-twittâtes		twitter	2
-twitté		twitter	46
-twittée		twitter	45
-twittées		twitter	51
-twittent		twitter	31
-twitter	Publier un contenu (texte court, photo ou vidéo) sur Internet par le réseau Twitter.
-twittera		twitter	21
-twitterai		twitter	16
-twitteraient		twitter	28
-twitterais		twitter	18
-twitterait		twitter	26
-twitteras		twitter	7
-twittèrent		twitter	24
-twitterez		twitter	5
-twitteriez		twitter	4
-twitterions		twitter	11
-twitterons		twitter	10
-twitteront		twitter	15
-twittes		twitter	66
-twitteur	Personne qui twitte, utilisateur de Twitter.
-twitteurs		twitteur	0
-twitteuse	Femme qui twitte, utilisatrice de Twitter.
-twitteuses		twitteuse	0
-twittez		twitter	30
-twittiez		twitter	13
-twittions		twitter	19
-twittons		twitter	27
-twittosphère	Communauté des twitteurs, ensemble des tweets.
-twittosphères		twittosphère	0
+0tweed	Tissu de laine, généralement de deux couleurs, originaire d’Écosse.
+5s		5	0
+4n	Substance utilisée dans des préparations comme mouillant ou émulsionnant.
+4t	Message court – limité à l'origine à 140 caractères et aujourd'hui à 280 – publié sur le service Twitter.
+5a		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Publier un message sur le réseau Twitter.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+7s		7	0
+5és		5er	12
+5eur	Variante orthographique de twitteur.
+8s		8	0
+7se	Variante orthographiques de twitteuse.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+3rk	Danse, inspirée de la culture hip-hop américaine, qui consiste à secouer le postérieur de manière frénétique.
+2ill	} Étoffe de soie et d’armure sergée, de même origine mais très différente du tweed.
+5s		5	0
+3n	Chambre à deux lits jumeaux.
+4s		4	0
+5et	Variante de twin-set.
+3st	Type de chanson et de danse des années 1960.
+5a		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	1f
+5ent		6r	v
+6r	Chanter le twist.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5eur	Danseur de twist.
+8s		8	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+3tta		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	19
+7s		5er	1f
+5ent		6r	v
+6r	Publier un contenu (texte court, photo ou vidéo) sur Internet par le réseau Twitter.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6ur	Personne qui twitte, utilisateur de Twitter.
+8s		8	0
+7se	Femme qui twitte, utilisatrice de Twitter.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+6sphère	Communauté des twitteurs, ensemble des tweets.
+cs		c	0

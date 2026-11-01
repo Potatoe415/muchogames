@@ -1,54 +1,54 @@
-ryad	Variante orthographique de riad.
-ryads		ryad	0
-ryal	Variante orthographique de rial.
-ryals		ryal	0
-rye	Whisky canadien.
-ryes		rye	0
-ryokan	Auberge traditionnelle au Japon.
-ryokans		ryokan	0
-rythma		rythmer	33
-rythmai		rythmer	22
-rythmaient		rythmer	42
-rythmais		rythmer	29
-rythmait		rythmer	40
-rythmâmes		rythmer	3
-rythmant		rythmer	43
-rythmas		rythmer	12
-rythmasse		rythmer	6
-rythmassent		rythmer	17
-rythmasses		rythmer	8
-rythmassiez		rythmer	14
-rythmassions		rythmer	25
-rythmât		rythmer	20
-rythmâtes		rythmer	2
-rythme	Nombre ; cadence.
-rythmée		rythmé	23
-rythmées		rythmé	1
-rythment		rythmer	41
-rythmer	Marquer une cadence.
-rythmera		rythmer	44
-rythmerai		rythmer	16
-rythmeraient		rythmer	28
-rythmerais		rythmer	18
-rythmerait		rythmer	26
-rythmeras		rythmer	7
-rythmèrent		rythmer	24
-rythmerez		rythmer	5
-rythmeriez		rythmer	4
-rythmerions		rythmer	11
-rythmerons		rythmer	10
-rythmeront		rythmer	15
-rythmés		rythmé	9
-rythmez		rythmer	30
-rythmicien	Grammairien qui s’occupe de la rythmique grecque ou latine.
-rythmicienne	Grammairienne qui s’occupe de la rythmique grecque ou latine.
-rythmiciennes		rythmicienne	0
-rythmiciens		rythmicien	0
-rythmicité	Qualité ou état d’avoir un rythme.
-rythmicités		rythmicité	0
-rythmiez		rythmer	13
-rythmions		rythmer	19
-rythmique	Relatif au rythme.
-rythmiquement	D'une manière rythmique.
-rythmiques		rythmique	0
-rythmons		rythmer	27
+0ryad	Variante orthographique de riad.
+4s		4	0
+3l	Variante orthographique de rial.
+4s		4	0
+2e	Whisky canadien.
+3s		3	0
+2okan	Auberge traditionnelle au Japon.
+6s		6	0
+2thma		5er	x
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Nombre ; cadence.
+5ée		6	n
+7s		6	1
+5ent		6r	15
+6r	Marquer une cadence.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5ez		6r	u
+5icien	Grammairien qui s’occupe de la rythmique grecque ou latine.
+ane	Grammairienne qui s’occupe de la rythmique grecque ou latine.
+cs		c	0
+as		a	0
+8té	Qualité ou état d’avoir un rythme.
+as		a	0
+6ez		5er	d
+6ons		5er	j
+6que	Relatif au rythme.
+9ment	D'une manière rythmique.
+9s		9	0
+5ons		5er	r

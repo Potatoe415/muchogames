@@ -1,5 +1,5 @@
-AWACS	Système de détection et de commandement aéroporté (SDCA).
-awalé	Jeux de stratégie, originaire d’Afrique de l’Ouest, dans lesquels on distribue des cailloux, graines ou coquillages dans des coupelles ou des trous.
-awalés		awalé	0
-awélé	Variante de awalé
-awélés		awélé	0
+0AWACS	Système de détection et de commandement aéroporté (SDCA).
+0awalé	Jeux de stratégie, originaire d’Afrique de l’Ouest, dans lesquels on distribue des cailloux, graines ou coquillages dans des coupelles ou des trous.
+5s		5	0
+2élé	Variante de awalé
+5s		5	0

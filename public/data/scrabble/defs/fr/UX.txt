@@ -1,4 +1,4 @@
-uxorilocal	Qui vit dans la famille ou le village de l’épouse.
-uxorilocale		uxorilocal	23
-uxorilocales		uxorilocal	1
-uxorilocaux		uxorilocal	9
+0uxorilocal	Qui vit dans la famille ou le village de l’épouse.
+ae		a	n
+bs		a	1
+9ux		9l	9

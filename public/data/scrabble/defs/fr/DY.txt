@@ -1,286 +1,286 @@
-dyade	Paire, ensemble de deux choses, de deux idées.
-dyades		dyade	0
-dyadique	Qui concerne une dyade, ou qui lie deux choses, etc.
-dyadiques		dyadique	0
-dyarchie	Société ou organisation avec deux dirigeants sur une position égale.
-dyarchies		dyarchie	0
-dyarque	Chacun des deux rois gouvernant dans une dyarchie.
-dyarques		dyarque	0
-dyke	Lame de roche magmatique qui s’est infiltrée dans une fissure de l’encaissant, pouvant donner un relief de colonne ou de mur naturel par érosion de ce dernier.
-dykes		dyke	0
-dynamique	Qui change au cours du temps.
-dynamiquement	Avec dynamisme.
-dynamiques		dynamique	0
-dynamisa		dynamiser	33
-dynamisai		dynamiser	22
-dynamisaient		dynamiser	32
-dynamisais		dynamiser	29
-dynamisait		dynamiser	34
-dynamisâmes		dynamiser	3
-dynamisant	Qui apporte du dynamisme, un coup de fouet.
-dynamisante		dynamisant	23
-dynamisantes	Féminin pluriel de dynamisante.
-dynamisants		dynamisant	9
-dynamisas		dynamiser	12
-dynamisasse		dynamiser	6
-dynamisassent		dynamiser	17
-dynamisasses		dynamiser	8
-dynamisassiez		dynamiser	14
-dynamisassions		dynamiser	25
-dynamisât		dynamiser	20
-dynamisâtes		dynamiser	2
-dynamisation	Action de dynamiser, de rendre dynamique.
-dynamisations		dynamisation	0
-dynamisé		dynamiser	46
-dynamisée		dynamiser	45
-dynamisées		dynamiser	51
-dynamisent		dynamiser	31
-dynamiser	Rendre davantage dynamique, énergique.
-dynamisera		dynamiser	44
-dynamiserai		dynamiser	16
-dynamiseraient		dynamiser	28
-dynamiserais		dynamiser	18
-dynamiserait		dynamiser	49
-dynamiseras		dynamiser	7
-dynamisèrent		dynamiser	24
-dynamiserez		dynamiser	5
-dynamiseriez		dynamiser	4
-dynamiserions		dynamiser	11
-dynamiserons		dynamiser	10
-dynamiseront		dynamiser	15
-dynamisés		dynamiser	38
-dynamisez		dynamiser	47
-dynamisiez		dynamiser	13
-dynamisions		dynamiser	19
-dynamisme	Doctrine qui attribue le mouvement de la matière à des forces immanentes et non à une action extérieure et mécanique.
-dynamismes		dynamisme	0
-dynamisons		dynamiser	27
-dynamiste	Relatif au système philosophique du dynamisme.
-dynamistes		dynamiste	0
-dynamita		dynamiter	33
-dynamitage	Action de dynamiter.
-dynamitages		dynamitage	0
-dynamitai		dynamiter	22
-dynamitaient		dynamiter	32
-dynamitais		dynamiter	139
-dynamitait		dynamiter	40
-dynamitâmes		dynamiter	3
-dynamitant		dynamiter	43
-dynamitas		dynamiter	12
-dynamitasse		dynamiter	6
-dynamitassent		dynamiter	17
-dynamitasses		dynamiter	8
-dynamitassiez		dynamiter	14
-dynamitassions		dynamiter	25
-dynamitât		dynamiter	20
-dynamitâtes		dynamiter	2
-dynamite	Substance explosive, à base de nitroglycérine, liquide lui-même extrêmement explosif, et qui n’est devenu maniable qu’absorbé par un corps inerte.
-dynamitée		dynamiter	45
-dynamitées		dynamiter	36
-dynamitent		dynamiter	31
-dynamiter	Faire exploser avec de la dynamite.
-dynamitera		dynamiter	21
-dynamiterai		dynamiter	16
-dynamiteraient		dynamiter	28
-dynamiterais		dynamiter	18
-dynamiterait		dynamiter	26
-dynamiteras		dynamiter	7
-dynamitèrent		dynamiter	24
-dynamiterez		dynamiter	5
-dynamiterie	Fabrique de dynamite.
-dynamiteries		dynamiterie	0
-dynamiteriez		dynamiter	4
-dynamiterions		dynamiter	11
-dynamiterons		dynamiter	10
-dynamiteront		dynamiter	15
-dynamités		dynamiter	38
-dynamiteur	Personne qui dynamite, qui fait exploser une charge.
-dynamiteurs		dynamiteur	0
-dynamiteuse	Femme qui dynamite, qui fait exploser une charge.
-dynamiteuses		dynamiteuse	0
-dynamitez		dynamiter	47
-dynamitiez		dynamiter	13
-dynamitions		dynamiter	19
-dynamitons		dynamiter	59
-dynamo	Machine à courant continu fonctionnant en générateur électrique.
-dynamogène	Dynamique, qui a un mouvement avant.
-dynamogènes		dynamogène	0
-dynamogénie	Augmentation d’activité d’un organe sous l’effet d’une excitation.
-dynamogénies		dynamogénie	0
-dynamographe	Instrument qui sert à mesurer la force musculaire.
-dynamographes		dynamographe	0
-dynamomètre	Instrument qui sert à mesurer les forces d’un homme, d’un animal, d’un moteur, etc., ou la résistance mécanique d’un matériau.
-dynamomètres		dynamomètre	0
-dynamométrie	Science, art de la mesure des forces.
-dynamométries		dynamométrie	0
-dynamométrique	Qui concerne la mesure des forces.
-dynamométriques		dynamométrique	0
-dynamos		dynamo	0
-dynaste	Qualifie une personne, une branche, etc., d’une famille régnante ou ayant régné qui possède des droits successoraux.
-dynastes		dynaste	0
-dynastie	Descendance, succession des souverains d’une même famille qui ont régné dans un pays.
-dynasties		dynastie	0
-dynastique	Relatif à une dynastie.
-dynastiques		dynastique	0
-dyne	Unité de mesure de force du système CGS, dont le symbole est dyn, définie comme la force requise pour produire sur une masse d’un gramme une accélération d’un …
-dynes		dyne	0
-dynode	Électrode susceptible d’émettre des électrons secondaires suite à l’impact d’un seul électron.
-dys	Personne souffrant de troubles dys.
-dysarthrie	Difficulté d’élocution liée à des troubles moteurs originaires du système nerveux affectant les organes de la phonation.
-dysarthries		dysarthrie	0
-dysbasie	Trouble de la marche.
-dysbasies		dysbasie	0
-dysboulie	Nom donné à toutes sortes de troubles de la volonté, comme par exemple l'aboulie
-dysboulies		dysboulie	0
-dyscalculie	Faiblesse dans l’apprentissage des opérations de calcul, difficulté d’appréhension des chiffres ou de la compréhension des mathématiques.
-dyscalculies		dyscalculie	0
-dyscalculique	Qui est atteint de dyscalculie.
-dyscalculiques		dyscalculique	0
-dyschromatopsie	Pathologie congénitale de la vision des couleurs.
-dyschromie	Pigmentation anormale ou pathologique de la peau.
-dyschromies		dyschromie	0
-dyscinésie	Diminution ou abolition des mouvements volontaires.
-dyscinésies		dyscinésie	0
-dyscrasie	Mauvaise constitution ou mauvaise circulation des liquides corporels et organiques.
-dyscrasier	Rendre dyscrasique.
-dyscrasiés		dyscrasier	38
-dyscrasique	Qui a rapport à la dyscrasie.
-dyscrasiques		dyscrasique	0
-dysendocrinie	Trouble des glandes endocrines.
-dysendocrinies		dysendocrinie	0
-dysenterie	Inflammation de la muqueuse de l'intestin qui entraîne des troubles digestifs aigus, souvent douloureux, caractérisée par l'évacuation de selles petites et liq…
-dysenteries		dysenterie	0
-dysentérique	Qui appartient à la dysenterie.
-dysentériques		dysentérique	0
-dysesthésie	Affaiblissement ou abolition de l'action des sens.
-dysesthésies		dysesthésie	0
-dysfonction	Dysfonctionnement.
-dysfonctionna		dysfonctionner	33
-dysfonctionnai		dysfonctionner	22
-dysfonctionnais		dysfonctionner	29
-dysfonctionnait		dysfonctionner	34
-dysfonctionnant		dysfonctionner	35
-dysfonctionnas		dysfonctionner	12
-dysfonctionnât		dysfonctionner	20
-dysfonctionné		dysfonctionner	46
-dysfonctionnel	Qui a un fonctionnement troublé.
-dysfonctionnels		dysfonctionnel	9
-dysfonctionnent		dysfonctionner	31
-dysfonctionner	Mal fonctionner.
-dysfonctionnera		dysfonctionner	21
-dysfonctionnes		dysfonctionner	66
-dysfonctionnez		dysfonctionner	30
-dysfonctionniez		dysfonctionner	13
-dysfonctionnons		dysfonctionner	27
-dysfonctions		dysfonction	0
-dysgénésie	Diminution ou modification pathologique de la capacité de reproduction chez un individu.
-dysgénésies		dysgénésie	0
-dysgénésique	Dysgénique, qui se reproduit mal, en parlant — en particulier — des hybrides.
-dysgénésiques		dysgénésique	0
-dysgénique	Qui a rapport à la dysgénésie, à la détérioration de la qualité génétique d’une espèce.
-dysgéniques		dysgénique	0
-dysgraphie	Trouble de l’apprentissage de l’écriture manuscrite qui relève de la compétence orthophonique.
-dysgraphies		dysgraphie	0
-dysgraphique	Qui est atteinte ou atteint de dysgraphie.
-dysgraphiques		dysgraphique	0
-dysharmonie	Absence de concordance ou d’harmonie, particulièrement dans un contexte médical, psychologique ou social.
-dysharmonies		dysharmonie	0
-dysharmonique	Qui a de la dysharmonie, ne concorde pas, incapable de s’accorder.
-dysharmoniques		dysharmonique	0
-dyshidrose	Forme d’eczéma dit bulleux surtout présent sur les faces palmaires ou plantaires.
-dyshidroses		dyshidrose	0
-dysidrose	Variante orthographique de dyshidrose.
-dysidroses		dysidrose	0
-dyskératose	Ensemble de pathologies évoquant une kératinisation anormale, pathologique de divers tissus.
-dyskératoses		dyskératose	0
-dyslalie	Trouble de l’émission de la parole dû à un problème articulatoire résultant de lésions ou de malformations d'un organe de la phonation.
-dyslalies		dyslalie	0
-dyslexie	Trouble de l’apprentissage de la lecture, en dehors de toute déficience intellectuelle et sensorielle et de toute maladie mentale, qui se traduit par des inver…
-dyslexies		dyslexie	0
-dyslexique	Qui est atteint de dyslexie.
-dyslexiques		dyslexique	0
-dyslipémie	Modification souvent en excès du taux des triglycérides.
-dyslipémies		dyslipémie	0
-dyslipidémie	Modification anormale souvent en excès du taux des graisses dans le sang.
-dyslipidémies		dyslipidémie	0
-dyslogie	Trouble du langage résultant d’une altération psychique.
-dyslogies		dyslogie	0
-dysmélie	Malformation congénitale d’un ou plusieurs membres (bras, mains, jambes ou pieds).
-dysmélies		dysmélie	0
-dysménorrhée	Difficulté de l’écoulement des règles.
-dysménorrhées		dysménorrhée	0
-dysmnésie	Affaiblissement de la mémoire.
-dysmnésies		dysmnésie	0
-dysmorphie	Désigne une anomalie de la forme d’un organe ou autre partie du corps.
-dysmorphies		dysmorphie	0
-dysmorphophobie	Peur, justifiée ou non, des anomalies anatomiques.
-dysmorphose	Synonyme de dysmorphie.
-dysmorphoses		dysmorphose	0
-dysorthographie	Trouble d’apprentissage caractérisé par un défaut d’assimilation important et durable des règles orthographiques (altération de l’écriture spontanée ou de l’éc…
-dysosmie	Trouble de l’olfaction.
-dysosmies		dysosmie	0
-dyspareunie	Douleur lors du coït chez la femme.
-dyspareunies		dyspareunie	0
-dyspepsie	Ensemble de symptômes de douleur épigastriques ou de malaise digestif d'origine gastrique ou gastro-intestinale.
-dyspepsies		dyspepsie	0
-dyspepsique	Atteint de dyspepsie.
-dyspepsiques		dyspepsique	0
-dyspeptique	Atteint de dyspepsie.
-dyspeptiques		dyspeptique	0
-dysphagie	Gêne ou sensation de gêne lors de la déglutition.
-dysphagies		dysphagie	0
-dysphasie	Trouble affectant l’expression (dysphasie expressive) ou la compréhension (dysphasie de réception) du langage parlé.
-dysphasies		dysphasie	0
-dysphasique	Relatif à la dysphasie.
-dysphasiques		dysphasique	0
-dysphonie	Altération du timbre ou de l'intensité de la voix.
-dysphonies		dysphonie	0
-dysphorie	Perturbation de l’humeur caractérisée par l’irritabilité et un sentiment déplaisant de tristesse, d’anxiété.
-dysphories		dysphorie	0
-dysphorique	Qui fait preuve d’une grande tristesse, d’un abattement, très malheureux.
-dysphoriques		dysphorique	0
-dysplasie	Malformation ou déformation résultant d’une anomalie du développement d'un tissu ou d’un organe, qui survient au cours de la période embryonnaire ou après la n…
-dysplasies		dysplasie	0
-dyspnée	Gêne ou difficulté respiratoire pouvant être subjective.
-dyspnées		dyspnée	0
-dyspnéique	Qui éprouve des difficultés à respirer.
-dyspnéiques		dyspnéique	0
-dyspraxie	Trouble spécifique du développement moteur dont la caractéristique essentielle est une altération du développement de la coordination motrice non imputable ent…
-dyspraxies		dyspraxie	0
-dyspraxique	Qui est atteint de dyspraxie.
-dyspraxiques		dyspraxique	0
-dysprosium	Élément chimique de numéro atomique 66 et de symbole Dy qui fait partie de la série chimique des lanthanides et des terres rares.
-dysprosodie	Atteinte partielle de la parole, par une altération du rythme, du timbre, de l’inflexion de la voix.
-dysprosodies		dysprosodie	0
-dyssocial	Qui contrevient à la norme sociale.
-dystasie	Difficulté à se tenir debout.
-dystasies		dystasie	0
-dysthymie	La dysthymie est caractérisé par : Une humeur dépressive persistante, et des sentiments de tristesse et mélancolie.
-dysthymies		dysthymie	0
-dysthymique	Qui souffre de dysthymie.
-dysthymiques		dysthymique	0
-dystocie	Difficulté lors de l’accouchement pour les femmes.
-dystocies		dystocie	0
-dystocique	Qui concerne la dystocie.
-dystociques		dystocique	0
-dystomie	Trouble de la prononciation.
-dystomies		dystomie	0
-dystonie	Trouble moteur caractérisé par des contractions musculaires intenses et involontaires, prolongées, qui provoquent des attitudes et des postures anormales, de t…
-dystonies		dystonie	0
-dystonique	Qualifie la troisième diathèse de Ménétrier.
-dystoniques		dystonique	0
-dystopie	Anomalie ou irrégularité congénitale dans la position anatomique d’un organe du corps (dent, rein, testicule, etc.).
-dystopies		dystopie	0
-dystopique	Relatif à la dystopie.
-dystopiques		dystopique	0
-dystrophie	Dégénérescence ou anomalie de développement d'une structure anatomique.
-dystrophies		dystrophie	0
-dystrophique	Qui concerne la dystrophie.
-dystrophiques		dystrophique	0
-dystrophisation	Eutrophisation accélérée d’un écosystème aquatique soumis à un enrichissement excessif ou déséquilibré en nutriments.
-dysurie	Difficulté d’uriner.
-dysuries		dysurie	0
-dysurique	Qui a rapport à la dysurie.
-dysuriques		dysurique	0
-dytique	Insecte coléoptère carnivore et nageur, de forme ovale et aplatie, vivant dans les eaux stagnantes.
-dytiques		dytique	0
+0dyade	Paire, ensemble de deux choses, de deux idées.
+5s		5	0
+4ique	Qui concerne une dyade, ou qui lie deux choses, etc.
+8s		8	0
+3rchie	Société ou organisation avec deux dirigeants sur une position égale.
+8s		8	0
+4que	Chacun des deux rois gouvernant dans une dyarchie.
+7s		7	0
+2ke	Lame de roche magmatique qui s’est infiltrée dans une fissure de l’encaissant, pouvant donner un relief de colonne ou de mur naturel par érosion de ce dernier.
+4s		4	0
+2namique	Qui change au cours du temps.
+9ment	Avec dynamisme.
+9s		9	0
+6sa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui apporte du dynamisme, un coup de fouet.
+ae		a	n
+bs	Féminin pluriel de dynamisante.
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action de dynamiser, de rendre dynamique.
+cs		c	0
+7é		7er	1a
+8e		7er	19
+9s		7er	1f
+7ent		8r	v
+8r	Rendre davantage dynamique, énergique.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7me	Doctrine qui attribue le mouvement de la matière à des forces immanentes et non à une action extérieure et mécanique.
+9s		9	0
+7ons		7er	r
+7te	Relatif au système philosophique du dynamisme.
+9s		9	0
+6ta		7er	x
+8ge	Action de dynamiter.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	3v
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Substance explosive, à base de nitroglycérine, liquide lui-même extrêmement explosif, et qui n’est devenu maniable qu’absorbé par un corps inerte.
+7ée		7er	19
+9s		7er	10
+7ent		8r	v
+8r	Faire exploser avec de la dynamite.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9ie	Fabrique de dynamite.
+bs		b	0
+bz		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7eur	Personne qui dynamite, qui fait exploser une charge.
+as		a	0
+9se	Femme qui dynamite, qui fait exploser une charge.
+bs		b	0
+8z		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	1n
+5o	Machine à courant continu fonctionnant en générateur électrique.
+6gène	Dynamique, qui a un mouvement avant.
+as		a	0
+7énie	Augmentation d’activité d’un organe sous l’effet d’une excitation.
+bs		b	0
+7raphe	Instrument qui sert à mesurer la force musculaire.
+cs		c	0
+6mètre	Instrument qui sert à mesurer les forces d’un homme, d’un animal, d’un moteur, etc., ou la résistance mécanique d’un matériau.
+bs		b	0
+7étrie	Science, art de la mesure des forces.
+cs		c	0
+bque	Qui concerne la mesure des forces.
+es		e	0
+6s		6	0
+4ste	Qualifie une personne, une branche, etc., d’une famille régnante ou ayant régné qui possède des droits successoraux.
+7s		7	0
+6ie	Descendance, succession des souverains d’une même famille qui ont régné dans un pays.
+8s		8	0
+7que	Relatif à une dynastie.
+as		a	0
+3e	Unité de mesure de force du système CGS, dont le symbole est dyn, définie comme la force requise pour produire sur une masse d’un gramme une accélération d’un …
+4s		4	0
+3ode	Électrode susceptible d’émettre des électrons secondaires suite à l’impact d’un seul électron.
+2s	Personne souffrant de troubles dys.
+3arthrie	Difficulté d’élocution liée à des troubles moteurs originaires du système nerveux affectant les organes de la phonation.
+as		a	0
+3basie	Trouble de la marche.
+8s		8	0
+4oulie	Nom donné à toutes sortes de troubles de la volonté, comme par exemple l'aboulie
+9s		9	0
+3calculie	Faiblesse dans l’apprentissage des opérations de calcul, difficulté d’appréhension des chiffres ou de la compréhension des mathématiques.
+bs		b	0
+aque	Qui est atteint de dyscalculie.
+ds		d	0
+4hromatopsie	Pathologie congénitale de la vision des couleurs.
+8ie	Pigmentation anormale ou pathologique de la peau.
+as		a	0
+4inésie	Diminution ou abolition des mouvements volontaires.
+as		a	0
+4rasie	Mauvaise constitution ou mauvaise circulation des liquides corporels et organiques.
+9r	Rendre dyscrasique.
+8és		8er	12
+8que	Qui a rapport à la dyscrasie.
+bs		b	0
+3endocrinie	Trouble des glandes endocrines.
+ds		d	0
+5terie	Inflammation de la muqueuse de l'intestin qui entraîne des troubles digestifs aigus, souvent douloureux, caractérisée par l'évacuation de selles petites et liq…
+as		a	0
+6érique	Qui appartient à la dysenterie.
+cs		c	0
+4sthésie	Affaiblissement ou abolition de l'action des sens.
+bs		b	0
+3fonction	Dysfonctionnement.
+bna		cer	x
+di		cer	m
+es		cer	t
+et		cer	y
+dnt		cer	z
+ds		cer	c
+cât		cer	k
+cé		cer	1a
+cel	Qui a un fonctionnement troublé.
+es		e	9
+dnt		dr	v
+dr	Mal fonctionner.
+ea		e	l
+ds		dr	1u
+dz		dr	u
+ciez		cer	d
+cons		cer	r
+bs		b	0
+3génésie	Diminution ou modification pathologique de la capacité de reproduction chez un individu.
+as		a	0
+9que	Dysgénique, qui se reproduit mal, en parlant — en particulier — des hybrides.
+cs		c	0
+6ique	Qui a rapport à la dysgénésie, à la détérioration de la qualité génétique d’une espèce.
+as		a	0
+4raphie	Trouble de l’apprentissage de l’écriture manuscrite qui relève de la compétence orthophonique.
+as		a	0
+9que	Qui est atteinte ou atteint de dysgraphie.
+cs		c	0
+3harmonie	Absence de concordance ou d’harmonie, particulièrement dans un contexte médical, psychologique ou social.
+bs		b	0
+aque	Qui a de la dysharmonie, ne concorde pas, incapable de s’accorder.
+ds		d	0
+4idrose	Forme d’eczéma dit bulleux surtout présent sur les faces palmaires ou plantaires.
+as		a	0
+3idrose	Variante orthographique de dyshidrose.
+9s		9	0
+3kératose	Ensemble de pathologies évoquant une kératinisation anormale, pathologique de divers tissus.
+bs		b	0
+3lalie	Trouble de l’émission de la parole dû à un problème articulatoire résultant de lésions ou de malformations d'un organe de la phonation.
+8s		8	0
+4exie	Trouble de l’apprentissage de la lecture, en dehors de toute déficience intellectuelle et sensorielle et de toute maladie mentale, qui se traduit par des inver…
+8s		8	0
+7que	Qui est atteint de dyslexie.
+as		a	0
+4ipémie	Modification souvent en excès du taux des triglycérides.
+as		a	0
+6idémie	Modification anormale souvent en excès du taux des graisses dans le sang.
+cs		c	0
+4ogie	Trouble du langage résultant d’une altération psychique.
+8s		8	0
+3mélie	Malformation congénitale d’un ou plusieurs membres (bras, mains, jambes ou pieds).
+8s		8	0
+5norrhée	Difficulté de l’écoulement des règles.
+cs		c	0
+4nésie	Affaiblissement de la mémoire.
+9s		9	0
+4orphie	Désigne une anomalie de la forme d’un organe ou autre partie du corps.
+as		a	0
+8ophobie	Peur, justifiée ou non, des anomalies anatomiques.
+9se	Synonyme de dysmorphie.
+bs		b	0
+3orthographie	Trouble d’apprentissage caractérisé par un défaut d’assimilation important et durable des règles orthographiques (altération de l’écriture spontanée ou de l’éc…
+4smie	Trouble de l’olfaction.
+8s		8	0
+3pareunie	Douleur lors du coït chez la femme.
+bs		b	0
+4epsie	Ensemble de symptômes de douleur épigastriques ou de malaise digestif d'origine gastrique ou gastro-intestinale.
+9s		9	0
+8que	Atteint de dyspepsie.
+bs		b	0
+6tique	Atteint de dyspepsie.
+bs		b	0
+4hagie	Gêne ou sensation de gêne lors de la déglutition.
+9s		9	0
+6sie	Trouble affectant l’expression (dysphasie expressive) ou la compréhension (dysphasie de réception) du langage parlé.
+9s		9	0
+8que	Relatif à la dysphasie.
+bs		b	0
+5onie	Altération du timbre ou de l'intensité de la voix.
+9s		9	0
+6rie	Perturbation de l’humeur caractérisée par l’irritabilité et un sentiment déplaisant de tristesse, d’anxiété.
+9s		9	0
+8que	Qui fait preuve d’une grande tristesse, d’un abattement, très malheureux.
+bs		b	0
+4lasie	Malformation ou déformation résultant d’une anomalie du développement d'un tissu ou d’un organe, qui survient au cours de la période embryonnaire ou après la n…
+9s		9	0
+4née	Gêne ou difficulté respiratoire pouvant être subjective.
+7s		7	0
+6ique	Qui éprouve des difficultés à respirer.
+as		a	0
+4raxie	Trouble spécifique du développement moteur dont la caractéristique essentielle est une altération du développement de la coordination motrice non imputable ent…
+9s		9	0
+8que	Qui est atteint de dyspraxie.
+bs		b	0
+5osium	Élément chimique de numéro atomique 66 et de symbole Dy qui fait partie de la série chimique des lanthanides et des terres rares.
+7odie	Atteinte partielle de la parole, par une altération du rythme, du timbre, de l’inflexion de la voix.
+bs		b	0
+3social	Qui contrevient à la norme sociale.
+3tasie	Difficulté à se tenir debout.
+8s		8	0
+4hymie	La dysthymie est caractérisé par : Une humeur dépressive persistante, et des sentiments de tristesse et mélancolie.
+9s		9	0
+8que	Qui souffre de dysthymie.
+bs		b	0
+4ocie	Difficulté lors de l’accouchement pour les femmes.
+8s		8	0
+7que	Qui concerne la dystocie.
+as		a	0
+5mie	Trouble de la prononciation.
+8s		8	0
+5nie	Trouble moteur caractérisé par des contractions musculaires intenses et involontaires, prolongées, qui provoquent des attitudes et des postures anormales, de t…
+8s		8	0
+7que	Qualifie la troisième diathèse de Ménétrier.
+as		a	0
+5pie	Anomalie ou irrégularité congénitale dans la position anatomique d’un organe du corps (dent, rein, testicule, etc.).
+8s		8	0
+7que	Relatif à la dystopie.
+as		a	0
+4rophie	Dégénérescence ou anomalie de développement d'une structure anatomique.
+as		a	0
+9que	Qui concerne la dystrophie.
+cs		c	0
+9sation	Eutrophisation accélérée d’un écosystème aquatique soumis à un enrichissement excessif ou déséquilibré en nutriments.
+3urie	Difficulté d’uriner.
+7s		7	0
+6que	Qui a rapport à la dysurie.
+9s		9	0
+2tique	Insecte coléoptère carnivore et nageur, de forme ovale et aplatie, vivant dans les eaux stagnantes.
+7s		7	0

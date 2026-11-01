@@ -1,6 +1,6 @@
-mbabanais	Relatif à Mbabane ou à ses habitants.
-mbabanaise		mbabanais	23
-mbabanaises		mbabanais	1
-mbalakh	Variante de mbalax.
-mbalakhs		mbalakh	0
-mbalax	Type de musique populaire dansant et rythmé, développé au Sénégal sous l’influence du zouk, du soukous, du funk et du jazz depuis les années 1970.
+0mbabanais	Relatif à Mbabane ou à ses habitants.
+9e		9	n
+as		9	1
+3lakh	Variante de mbalax.
+7s		7	0
+5x	Type de musique populaire dansant et rythmé, développé au Sénégal sous l’influence du zouk, du soukous, du funk et du jazz depuis les années 1970.

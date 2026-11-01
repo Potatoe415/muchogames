@@ -1,4 +1,4 @@
-ud	Variante de oud.
-udon	Variété de nouilles épaisses japonaises à la farine de blé tendre.
-udons		udon	0
-uds		ud	0
+0ud	Variante de oud.
+2on	Variété de nouilles épaisses japonaises à la farine de blé tendre.
+4s		4	0
+2s		2	0

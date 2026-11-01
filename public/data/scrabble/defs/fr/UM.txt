@@ -1,9 +1,9 @@
-umami	L’une des cinq saveurs fondamentales, pouvant se décrire comme savoureux, donnée par l’acide glutamique ou par l’acide inosinique, que l’on retrouve, par exemp…
-umamis		umami	0
-umbanda	Religion afro-brésilienne proche du candomblé considérée comme originaire de la région de Rio de Janeiro.
-umbandas		umbanda	0
-umbo	Pointe, cône, calotte faisant saillie au milieu d’un bouclier.
-umbos		umbo	0
-umlaut	Métaphonie, mutation vocalique de l’allemand, montré orthographiquement par un tréma.
-umlauts		umlaut	0
-umma	Communauté des croyants dans l’islam.
+0umami	L’une des cinq saveurs fondamentales, pouvant se décrire comme savoureux, donnée par l’acide glutamique ou par l’acide inosinique, que l’on retrouve, par exemp…
+5s		5	0
+2banda	Religion afro-brésilienne proche du candomblé considérée comme originaire de la région de Rio de Janeiro.
+7s		7	0
+3o	Pointe, cône, calotte faisant saillie au milieu d’un bouclier.
+4s		4	0
+2laut	Métaphonie, mutation vocalique de l’allemand, montré orthographiquement par un tréma.
+6s		6	0
+2ma	Communauté des croyants dans l’islam.

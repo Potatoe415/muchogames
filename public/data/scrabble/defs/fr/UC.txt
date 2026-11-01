@@ -1,7 +1,7 @@
-ucclois	Relatif à Uccle en Belgique.
-uccloise		ucclois	23
-uccloises		ucclois	1
-uchronie	Récit imaginaire prenant comme base de départ une évolution alternative de l’Histoire.
-uchronies		uchronie	0
-uchronique	Relatif à l’uchronie.
-uchroniques		uchronique	0
+0ucclois	Relatif à Uccle en Belgique.
+7e		7	n
+8s		7	1
+2hronie	Récit imaginaire prenant comme base de départ une évolution alternative de l’Histoire.
+8s		8	0
+7que	Relatif à l’uchronie.
+as		a	0

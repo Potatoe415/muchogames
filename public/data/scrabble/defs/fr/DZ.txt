@@ -1,8 +1,8 @@
-dzêta	Variante de zêta (« lettre grecque ζ, Ζ »).
-dzêtas		dzêta	0
-dzo	Animal hybride mâle stérile issu du croisement d’un yak (Bos grunniens) et d’un bovin : taurin (Bos taurus) ou zébu (Bos indicus).
-Dzodzet	Fribourgeois.
-Dzodzets		Dzodzet	0
-Dzodzette	Fribourgeoise.
-Dzodzettes		Dzodzette	0
-dzos	Pluriel de dzo. (hybride de vache et de yack, au Tibet).	dzo
+0dzêta	Variante de zêta (« lettre grecque ζ, Ζ »).
+5s		5	0
+2o	Animal hybride mâle stérile issu du croisement d’un yak (Bos grunniens) et d’un bovin : taurin (Bos taurus) ou zébu (Bos indicus).
+0Dzodzet	Fribourgeois.
+7s		7	0
+7te	Fribourgeoise.
+9s		9	0
+0dzos	Pluriel de dzo. (hybride de vache et de yack, au Tibet).	3

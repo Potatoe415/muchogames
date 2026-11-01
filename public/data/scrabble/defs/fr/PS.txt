@@ -1,299 +1,299 @@
-psallette	Maîtrise, école de musique, attachée à une église, où l’on forme les enfants de chœur (garçons chantant dans le chœur).
-psallettes		psallette	0
-psalliote	Champignon basidiomycète du genre Agaricus, appartenant à la famille des agaricacées, synonyme d’agaric (genre de champignons).
-psalliotes		psalliote	0
-psalmiste	Auteur des Psaumes.
-psalmistes		psalmiste	0
-psalmodia		psalmodier	39
-psalmodiai		psalmodier	22
-psalmodiaient		psalmodier	42
-psalmodiais		psalmodier	52
-psalmodiait		psalmodier	40
-psalmodiâmes		psalmodier	3
-psalmodiant	Qui psalmodie ou semble psalmodier.
-psalmodias		psalmodier	12
-psalmodiasse		psalmodier	6
-psalmodiassent		psalmodier	17
-psalmodiasses		psalmodier	8
-psalmodiassiez		psalmodier	14
-psalmodiassions		psalmodier	25
-psalmodiât		psalmodier	20
-psalmodiâtes		psalmodier	2
-psalmodie	Manière de chanter ou de réciter, à l’église, les psaumes et le reste de l’office, toujours sur la même note.
-psalmodiée		psalmodier	37
-psalmodiées		psalmodier	36
-psalmodient		psalmodier	41
-psalmodier	Réciter des psaumes, à l’église, toujours sur la même note.
-psalmodiera		psalmodier	21
-psalmodierai		psalmodier	16
-psalmodieraient		psalmodier	28
-psalmodierais		psalmodier	18
-psalmodierait		psalmodier	26
-psalmodieras		psalmodier	7
-psalmodièrent		psalmodier	24
-psalmodierez		psalmodier	5
-psalmodieriez		psalmodier	4
-psalmodierions		psalmodier	11
-psalmodierons		psalmodier	10
-psalmodieront		psalmodier	15
-psalmodiés		psalmodier	53
-psalmodiez		psalmodier	30
-psalmodiiez		psalmodier	13
-psalmodiions		psalmodier	19
-psalmodions		psalmodier	27
-psalmodique	Relatif à la psalmodie.
-psalmodiques		psalmodique	0
-psaltérion	Instrument de musique à plusieurs cordes que l’on pinçait ou que l’on touchait avec le plectre.
-psaltérions		psaltérion	0
-psammite	Roche sédimentaire détritique, riche en quartz et en muscovite.
-psammites		psammite	0
-psaume	Cantique religieux.
-psaumes		psaume	0
-psautier	Recueil des psaumes composés par David ou qui lui sont communément attribués.
-psautiers		psautier	0
-pschent	Double couronne des pharaons, formée de la mitre blanche de la Haute Égypte insérée dans la couronne rouge de Basse Égypte et symbolisant leur souveraineté sur…
-pschents		pschent	0
-pschitt	Onomatopée représentant le bruit du gaz qui s’échappe de quelque chose, ou qui se dégonfle très rapidement par une petite ouverture.
-pseudarthrose	Absence de consolidation d’une fracture osseuse provoquant une fausse articulation.
-pseudarthroses		pseudarthrose	0
-pseudo	Qui feint, qui fait semblant, qui prétend.
-pseudogène	Gène inactif au sein d'un génome : gène silencieux.
-pseudogènes		pseudogène	0
-pseudomonas	Genre de bactéries aérobies.
-pseudonymat	État d’un auteur dont on ne connait que le pseudonyme, c’est-à-dire le nom d’emprunt.
-pseudonymats		pseudonymat	0
-pseudonyme	Qui publie des livres ou des écrits sous un nom supposé.
-pseudonymes		pseudonyme	0
-pseudopode	Appendice, non articulé, en forme et pour la fonction, de patte.
-pseudopodes		pseudopode	0
-pseudos		pseudo	0
-pseudoscience	Démarche ou croyance faussement scientifique qui ne respecte pas les méthodes, ni les buts de la science.
-pseudosciences		pseudoscience	0
-pseudoscorpion	Arachnide ressemblant à un scorpion sans queue.
-pseudoscorpions		pseudoscorpion	0
-psi	ψ, Ψ, vingt-troisième lettre et dix-septième consonne de l’alphabet grec.
-psilocybe	Genre de petits champignons, au chapeau conique ou ogival, brun jaunâtre, au pied en général élancé, grégaires, sur humus ou fumier, et ayant des propriétés ps…
-psilocybes		psilocybe	0
-psilocybine	Ester d’acide phosphorique, principe actif de certains champignons hallucinogènes.
-psilocybines		psilocybine	0
-psilophyte	Embranchement de plantes vasculaires existant depuis l'ère Primaire (Paléozoïque), plantes sans racines et sans feuilles, qui ont été les premières plantes ter…
-psilophytes		psilophyte	0
-psis		psi	0
-psitt	Mot que l’on prononce en sifflant et que l’on redouble la plupart du temps, pour attirer l’attention de quelqu’un, pour imposer silence, pour appeler un chien …
-psittacidé	Tout oiseau de la famille des psittacidés, appartenant à l'ordre des psittacifomes, et comprenant 37 genres et environ 167 espèces des écozones afrotropicale e…
-psittacidés	Famille d'oiseaux néognathes arboricoles, granivores ou omnivores, de l'ordre des psittaciformes, de taille généralement moyenne à grande, renfermant 37 genres…
-psittaciforme	Tout oiseau de l'ordre des psittaciformes, ordre d'oiseaux néognathes arboricoles, frugivores et granivores, réunissant environ 92 genres et 393 espèces répart…
-psittaciformes	Grand ordre d'oiseaux néognathes arboricoles, frugivores et granivores, réunissant environ 92 genres et 393 espèces répartis entre deux à cinq familles (selon …
-psittacisme	Disposition d’esprit qui consiste à répéter les paroles d’autrui à la façon des perroquets.
-psittacismes		psittacisme	0
-psittacose	Maladie des perroquets et des perruches, qui est contagieuse pour les êtres humains et dont les symptômes rappellent ceux de la grippe et de la typhoïde.
-psittacoses		psittacose	0
-psoas	Muscle qui s'insère sur les vertèbres lombaires et le petit trochanter.
-psoque	Synonyme de psocoptère.
-psoques		psoque	0
-psoralène	Substance végétale exerçant une action photosensibilisante.
-psoralènes		psoralène	0
-psore	Variante de psora.
-psores		psore	0
-psoriasique	Relatif au psoriasis.
-psoriasiques		psoriasique	0
-psoriasis	Inflammation chronique, non contagieuse de la peau.
-psst	Bruit ou sifflement émis pour interpeller quelqu'un ou appeler un animal
-pst	Onomatopée utilisée pour appeler l'attention de quelqu'un.
-psy	Psychologue, psychiatre, psychothérapeute ou psychanalyste (la plupart du temps sans que soit faite la distinction entre les uns et les autres).
-psychanalysa		psychanalyser	33
-psychanalysai		psychanalyser	22
-psychanalysais		psychanalyser	29
-psychanalysait		psychanalyser	34
-psychanalysâmes		psychanalyser	3
-psychanalysant		psychanalyser	35
-psychanalysas		psychanalyser	12
-psychanalysasse		psychanalyser	6
-psychanalysât		psychanalyser	20
-psychanalysâtes		psychanalyser	2
-psychanalyse	Méthode d’investigation psychologique qui aide à déceler dans l’esprit l’existence de souvenirs, désirs ou images, dont la présence subconsciente cause des tro…
-psychanalysée		psychanalyser	37
-psychanalysées		psychanalyser	36
-psychanalysent		psychanalyser	31
-psychanalyser	Pratiquer la psychanalyse (de quelqu’un).
-psychanalysera		psychanalyser	21
-psychanalyserai		psychanalyser	50
-psychanalyseras		psychanalyser	7
-psychanalyserez		psychanalyser	5
-psychanalyses		psychanalyse	0
-psychanalysez		psychanalyser	30
-psychanalysiez		psychanalyser	13
-psychanalysions		psychanalyser	19
-psychanalysons		psychanalyser	27
-psychanalyste	Celui ou celle qui pratique la psychanalyse de quelqu’un.
-psychanalystes		psychanalyste	0
-psychanalytique	Relatif à la psychanalyse.
-psychasthénie	Faiblesse mentale, état mental morbide.
-psychasthénies		psychasthénie	0
-psychasthénique	Qui est atteint de la pathologie d'une névrose, caractérisée par un manque de volonté.
-psyché	Grand miroir mobile que l’on peut incliner à volonté, au moyen de deux axes qui l’attachent par le milieu aux deux montants d’un châssis.
-psychédélique	Se dit d’une substance qui, lorsque consommée, fait vivre une expérience psychologique exaltée, caractérisée par des hallucinations.
-psychédéliques		psychédélique	0
-psychédélisme	Culture en rapport avec les psychédéliques.
-psychédélismes		psychédélisme	0
-psychés		psyché	0
-psychiatre	Médecin spécialiste de la psychiatrie.
-psychiatres		psychiatre	0
-psychiatrie	Médecine des maladies mentales.
-psychiatries		psychiatrie	0
-psychiatrique	Relatif à la psychiatrie, aux psychiatres.
-psychiatriques		psychiatrique	0
-psychiatrisa		psychiatriser	33
-psychiatrisai		psychiatriser	22
-psychiatrisais		psychiatriser	29
-psychiatrisait		psychiatriser	34
-psychiatrisâmes		psychiatriser	3
-psychiatrisant		psychiatriser	35
-psychiatrisas		psychiatriser	12
-psychiatrisasse		psychiatriser	6
-psychiatrisât		psychiatriser	20
-psychiatrisâtes		psychiatriser	2
-psychiatrisé	Patient du secteur psychiatrique.
-psychiatrisée		psychiatriser	37
-psychiatrisées		psychiatriser	36
-psychiatrisent		psychiatriser	31
-psychiatriser	Faire relever de la psychiatrie.
-psychiatrisera		psychiatriser	21
-psychiatriserai		psychiatriser	16
-psychiatriseras		psychiatriser	7
-psychiatriserez		psychiatriser	5
-psychiatrisés		psychiatrisé	0
-psychiatrisez		psychiatriser	30
-psychiatrisiez		psychiatriser	13
-psychiatrisions		psychiatriser	19
-psychiatrisons		psychiatriser	27
-psychique	Relatif au psychisme, à la psyché, à l'esprit en général, au mental au sens large.
-psychiquement	D'une manière psychique.
-psychiques		psychique	0
-psychisme	Esprit ou psyché, en particulier considéré dans sa globalité.
-psychismes		psychisme	0
-psycho	Personne réformée (pour le service militaire) pour des raisons psychologiques.
-psychoactif	Qui a un effet sur le système nerveux, sur la psyché, qui peut modifier l’état psychique d’un individu.
-psychoactifs		psychoactif	9
-psychoactive		psychoactif	23
-psychoactives		psychoactif	1
-psychoaffectif	Qui relève du psychisme et de l’affectif.
-psychoaffectifs		psychoaffectif	9
-psychoaffective		psychoaffectif	23
-psychodrame	Psychothérapie utilisant la théâtralisation dramatique au moyen de scénarios improvisés, et permettant la mise en scène de névroses.
-psychodrames		psychodrame	0
-psychodynamique	Relatif à l’étude du psychisme, généralement en utilisant plusieurs méthodes en plus de la psychanalyse.
-psychogène	Qualifie un trouble dont l’origine est purement psychique.
-psychogènes		psychogène	0
-psychogenèse	Création et évolution des mécanismes psychiques.
-psychogenèses		psychogenèse	0
-psychogénétique	Étude de l'impact des gènes sur le comportement.
-psychokinèse	Capacité hypothétique de mouvoir des objets ou des êtres vivants par le seul pouvoir de la pensée.
-psychokinèses		psychokinèse	0
-psychokinésie	Capacité d’une personne à utiliser son esprit pour effectuer diverses actions, incluant la micro-psychokinésie (qui permet de contrôler les systèmes déterminis…
-psychokinésies		psychokinésie	0
-psycholeptique	Substance psychotrope qui ralentit l’activité du système nerveux et a une action dépressive sur l’humeur.
-psycholeptiques		psycholeptique	0
-psycholinguiste	Spécialiste de la psycholinguistique.
-psychologie	Étude scientifique des phénomènes psychiques.
-psychologies		psychologie	0
-psychologique	Qui appartient, qui a rapport à la psychologie.
-psychologiques		psychologique	0
-psychologisant	Qui psychologise.
-psychologisante		psychologisant	23
-psychologisants		psychologisant	9
-psychologisme	Philosophie qui tend à expliquer le monde essentiellement par le biais de la psychologie.
-psychologue	Professionnel spécialisé en psychologie.
-psychologues		psychologue	0
-psychométricien	Spécialiste en psychométrie.
-psychométrie	Discipline scientifique consacrée à la conception, la validation (notamment statistique) et l'application de méthodes d'évaluation de la psyché humaine et des …
-psychométries		psychométrie	0
-psychométrique	Relatif à la psychométrie.
-psychométriques		psychométrique	0
-psychomoteur	Qui, dans l’écorce grise des hémisphères du cerveau, siège des facultés psychiques, détermine des mouvements volontaires.
-psychomoteurs		psychomoteur	0
-psychomotrice		psychomoteur	23
-psychomotrices		psychomoteur	1
-psychomotricien	Professionnel qui soigne les troubles physiques d’origine psychologique de ses patients.
-psychomotricité	Étude de l’ensemble des relations entre l’activité motrice et le psychisme.
-psychopathe	Qui est atteint de psychopathie.
-psychopathes		psychopathe	0
-psychopathie	Personnalité pathologique se manifestant essentiellement par des comportements antisociaux.
-psychopathies		psychopathie	0
-psychopathique	Relatif à la psychopathie, au comportement de psychopathe.
-psychopathiques		psychopathique	0
-psychopédagogie	Science du psychopédagogue.
-psychopédagogue	Personne psychologue et pédagogue.
-psychophysique	Étude des relations qui existent entre les phénomènes psychologiques et les conditions physiques où se trouve l’être humain.
-psychophysiques		psychophysique	0
-psychopompe	Conducteur des âmes des morts.
-psychopompes		psychopompe	0
-psychorigide	Qui se trouve psychiquement dans l’incapacité à se mettre à la place de l’autre.
-psychorigides		psychorigide	0
-psychorigidité	État paranoïaque d'un individu incapable de se mettre à la place d'autrui.
-psychorigidités		psychorigidité	0
-psychos		psycho	0
-psychose	Affection psychique grave, qui ne peut se ranger parmi les névroses.
-psychosensoriel	Relatif aux sens et à l’esprit.
-psychoses		psychose	0
-psychosocial	Qui concerne le développement psychologique par son interaction dans un environnement social.
-psychosociale		psychosocial	23
-psychosociales		psychosocial	1
-psychosociaux		psychosocial	9
-psychosomatique	Relatif à l’influence de l’esprit sur le corps (maladies psychosomatiques).
-psychostasie	Jugement divin d'un défunt dans les religions.
-psychostasies		psychostasie	0
-psychostimulant	Qui stimule le fonctionnement du cerveau.
-psychota		psychoter	33
-psychotai		psychoter	22
-psychotaient		psychoter	32
-psychotais		psychoter	29
-psychotait		psychoter	34
-psychotâmes		psychoter	3
-psychotant		psychoter	35
-psychotas		psychoter	12
-psychotasse		psychoter	6
-psychotassent		psychoter	17
-psychotasses		psychoter	8
-psychotassiez		psychoter	14
-psychotassions		psychoter	25
-psychotât		psychoter	20
-psychotâtes		psychoter	2
-psychoté		psychoter	46
-psychotechnique	Relatif à la psychotechnique.
-psychotent		psychoter	31
-psychoter	Agir comme un psychotique, de façon incorrecte et déraisonnable, paniquer.
-psychotera		psychoter	21
-psychoterai		psychoter	16
-psychoteraient		psychoter	28
-psychoterais		psychoter	18
-psychoterait		psychoter	26
-psychoteras		psychoter	7
-psychotèrent		psychoter	24
-psychoterez		psychoter	5
-psychoteriez		psychoter	4
-psychoterions		psychoter	11
-psychoterons		psychoter	10
-psychoteront		psychoter	15
-psychotes		psychoter	66
-psychotez		psychoter	30
-psychothérapie	Pratique censée soigner ou aider à résoudre les problèmes comportementaux et psychologiques rencontrés par des individus.
-psychothérapies		psychothérapie	0
-psychotiez		psychoter	13
-psychotions		psychoter	19
-psychotique	Relatif à la psychose.
-psychotiques		psychotique	0
-psychotons		psychoter	27
-psychotrope	Substance chimique qui agit principalement sur l’état du système nerveux central et y induit des modifications de la perception, des sensations, de l’humeur, d…
-psychotropes		psychotrope	0
-psychromètre	Instrument de mesure composé de deux thermomètres, l’un sec et l’autre humide, et qui sert à mesurer le taux d’humidité de l’air.
-psychromètres		psychromètre	0
-psychrométrie	Domaine scientifique concernant la détermination des caractéristiques physiques et thermodynamiques d’un mélange gaz-vapeur.
-psychrométrique	Relatif à la psychrométrie.
-psychrophile	Qualifie un être vivant qui peut encore se développer à basse température (jusqu’à 0°C voire moins), mais dont la température de développement optimale est bea…
-psychrophiles		psychrophile	0
-psylle	Charmeur de serpents.
-psylles		psylle	0
-psyllium	Nom de divers plantains (Plantago spp.).
-psylliums		psyllium	0
-psys		psy	0
+0psallette	Maîtrise, école de musique, attachée à une église, où l’on forme les enfants de chœur (garçons chantant dans le chœur).
+9s		9	0
+5iote	Champignon basidiomycète du genre Agaricus, appartenant à la famille des agaricacées, synonyme d’agaric (genre de champignons).
+9s		9	0
+4miste	Auteur des Psaumes.
+9s		9	0
+5odia		8er	13
+9i		8er	m
+aent		8er	16
+as		8er	1g
+at		8er	14
+8âmes		8er	3
+8ant	Qui psalmodie ou semble psalmodier.
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Manière de chanter ou de réciter, à l’église, les psaumes et le reste de l’office, toujours sur la même note.
+8ée		8er	11
+as		8er	10
+8ent		9r	15
+9r	Réciter des psaumes, à l’église, toujours sur la même note.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	1h
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8que	Relatif à la psalmodie.
+bs		b	0
+4térion	Instrument de musique à plusieurs cordes que l’on pinçait ou que l’on touchait avec le plectre.
+as		a	0
+3mmite	Roche sédimentaire détritique, riche en quartz et en muscovite.
+8s		8	0
+3ume	Cantique religieux.
+6s		6	0
+4tier	Recueil des psaumes composés par David ou qui lui sont communément attribués.
+8s		8	0
+2chent	Double couronne des pharaons, formée de la mitre blanche de la Haute Égypte insérée dans la couronne rouge de Basse Égypte et symbolisant leur souveraineté sur…
+7s		7	0
+4itt	Onomatopée représentant le bruit du gaz qui s’échappe de quelque chose, ou qui se dégonfle très rapidement par une petite ouverture.
+2eudarthrose	Absence de consolidation d’une fracture osseuse provoquant une fausse articulation.
+ds		d	0
+5o	Qui feint, qui fait semblant, qui prétend.
+6gène	Gène inactif au sein d'un génome : gène silencieux.
+as		a	0
+6monas	Genre de bactéries aérobies.
+6nymat	État d’un auteur dont on ne connait que le pseudonyme, c’est-à-dire le nom d’emprunt.
+bs		b	0
+9e	Qui publie des livres ou des écrits sous un nom supposé.
+as		a	0
+6pode	Appendice, non articulé, en forme et pour la fonction, de patte.
+as		a	0
+6s		6	0
+7cience	Démarche ou croyance faussement scientifique qui ne respecte pas les méthodes, ni les buts de la science.
+ds		d	0
+8orpion	Arachnide ressemblant à un scorpion sans queue.
+es		e	0
+2i	ψ, Ψ, vingt-troisième lettre et dix-septième consonne de l’alphabet grec.
+3locybe	Genre de petits champignons, au chapeau conique ou ogival, brun jaunâtre, au pied en général élancé, grégaires, sur humus ou fumier, et ayant des propriétés ps…
+9s		9	0
+8ine	Ester d’acide phosphorique, principe actif de certains champignons hallucinogènes.
+bs		b	0
+5phyte	Embranchement de plantes vasculaires existant depuis l'ère Primaire (Paléozoïque), plantes sans racines et sans feuilles, qui ont été les premières plantes ter…
+as		a	0
+3s		3	0
+3tt	Mot que l’on prononce en sifflant et que l’on redouble la plupart du temps, pour attirer l’attention de quelqu’un, pour imposer silence, pour appeler un chien …
+5acidé	Tout oiseau de la famille des psittacidés, appartenant à l'ordre des psittacifomes, et comprenant 37 genres et environ 167 espèces des écozones afrotropicale e…
+as	Famille d'oiseaux néognathes arboricoles, granivores ou omnivores, de l'ordre des psittaciformes, de taille généralement moyenne à grande, renfermant 37 genres…
+8forme	Tout oiseau de l'ordre des psittaciformes, ordre d'oiseaux néognathes arboricoles, frugivores et granivores, réunissant environ 92 genres et 393 espèces répart…
+ds	Grand ordre d'oiseaux néognathes arboricoles, frugivores et granivores, réunissant environ 92 genres et 393 espèces répartis entre deux à cinq familles (selon …
+8sme	Disposition d’esprit qui consiste à répéter les paroles d’autrui à la façon des perroquets.
+bs		b	0
+7ose	Maladie des perroquets et des perruches, qui est contagieuse pour les êtres humains et dont les symptômes rappellent ceux de la grippe et de la typhoïde.
+as		a	0
+2oas	Muscle qui s'insère sur les vertèbres lombaires et le petit trochanter.
+3que	Synonyme de psocoptère.
+6s		6	0
+3ralène	Substance végétale exerçant une action photosensibilisante.
+9s		9	0
+4e	Variante de psora.
+5s		5	0
+4iasique	Relatif au psoriasis.
+bs		b	0
+8s	Inflammation chronique, non contagieuse de la peau.
+2st	Bruit ou sifflement émis pour interpeller quelqu'un ou appeler un animal
+2t	Onomatopée utilisée pour appeler l'attention de quelqu'un.
+2y	Psychologue, psychiatre, psychothérapeute ou psychanalyste (la plupart du temps sans que soit faite la distinction entre les uns et les autres).
+3chanalysa		ber	x
+ci		ber	m
+ds		ber	t
+dt		ber	y
+bâmes		ber	3
+bant		ber	z
+cs		ber	c
+dse		ber	6
+bât		ber	k
+des		ber	2
+be	Méthode d’investigation psychologique qui aide à déceler dans l’esprit l’existence de souvenirs, désirs ou images, dont la présence subconsciente cause des tro…
+bée		ber	11
+ds		ber	10
+bent		cr	v
+cr	Pratiquer la psychanalyse (de quelqu’un).
+da		d	l
+ei		d	1e
+es		d	7
+dez		d	5
+cs		c	0
+cz		cr	u
+biez		ber	d
+cons		ber	j
+bons		ber	r
+bte	Celui ou celle qui pratique la psychanalyse de quelqu’un.
+ds		d	0
+atique	Relatif à la psychanalyse.
+6sthénie	Faiblesse mentale, état mental morbide.
+ds		d	0
+cque	Qui est atteint de la pathologie d'une névrose, caractérisée par un manque de volonté.
+5é	Grand miroir mobile que l’on peut incliner à volonté, au moyen de deux axes qui l’attachent par le milieu aux deux montants d’un châssis.
+6délique	Se dit d’une substance qui, lorsque consommée, fait vivre une expérience psychologique exaltée, caractérisée par des hallucinations.
+ds		d	0
+asme	Culture en rapport avec les psychédéliques.
+ds		d	0
+6s		6	0
+5iatre	Médecin spécialiste de la psychiatrie.
+as		a	0
+9ie	Médecine des maladies mentales.
+bs		b	0
+aque	Relatif à la psychiatrie, aux psychiatres.
+ds		d	0
+asa		ber	x
+ci		ber	m
+ds		ber	t
+dt		ber	y
+bâmes		ber	3
+bant		ber	z
+cs		ber	c
+dse		ber	6
+bât		ber	k
+des		ber	2
+bé	Patient du secteur psychiatrique.
+ce		ber	11
+ds		ber	10
+bent		cr	v
+cr	Faire relever de la psychiatrie.
+da		d	l
+ei		d	g
+es		d	7
+dez		d	5
+bés		c	0
+bez		cr	u
+biez		ber	d
+cons		ber	j
+bons		ber	r
+6que	Relatif au psychisme, à la psyché, à l'esprit en général, au mental au sens large.
+9ment	D'une manière psychique.
+9s		9	0
+6sme	Esprit ou psyché, en particulier considéré dans sa globalité.
+9s		9	0
+5o	Personne réformée (pour le service militaire) pour des raisons psychologiques.
+6actif	Qui a un effet sur le système nerveux, sur la psyché, qui peut modifier l’état psychique d’un individu.
+bs		b	9
+ave		af	n
+cs		af	1
+7ffectif	Qui relève du psychisme et de l’affectif.
+es		e	9
+dve		df	n
+6drame	Psychothérapie utilisant la théâtralisation dramatique au moyen de scénarios improvisés, et permettant la mise en scène de névroses.
+bs		b	0
+7ynamique	Relatif à l’étude du psychisme, généralement en utilisant plusieurs méthodes en plus de la psychanalyse.
+6gène	Qualifie un trouble dont l’origine est purement psychique.
+as		a	0
+7enèse	Création et évolution des mécanismes psychiques.
+cs		c	0
+7énétique	Étude de l'impact des gènes sur le comportement.
+6kinèse	Capacité hypothétique de mouvoir des objets ou des êtres vivants par le seul pouvoir de la pensée.
+cs		c	0
+9ésie	Capacité d’une personne à utiliser son esprit pour effectuer diverses actions, incluant la micro-psychokinésie (qui permet de contrôler les systèmes déterminis…
+ds		d	0
+6leptique	Substance psychotrope qui ralentit l’activité du système nerveux et a une action dépressive sur l’humeur.
+es		e	0
+7inguiste	Spécialiste de la psycholinguistique.
+7ogie	Étude scientifique des phénomènes psychiques.
+bs		b	0
+aque	Qui appartient, qui a rapport à la psychologie.
+ds		d	0
+asant	Qui psychologise.
+ee		e	n
+es		e	9
+bme	Philosophie qui tend à expliquer le monde essentiellement par le biais de la psychologie.
+9ue	Professionnel spécialisé en psychologie.
+bs		b	0
+6métricien	Spécialiste en psychométrie.
+be	Discipline scientifique consacrée à la conception, la validation (notamment statistique) et l'application de méthodes d'évaluation de la psyché humaine et des …
+cs		c	0
+bque	Relatif à la psychométrie.
+es		e	0
+7oteur	Qui, dans l’écorce grise des hémisphères du cerveau, siège des facultés psychiques, détermine des mouvements volontaires.
+cs		c	0
+9rice		9eur	n
+ds		9eur	1
+cien	Professionnel qui soigne les troubles physiques d’origine psychologique de ses patients.
+dté	Étude de l’ensemble des relations entre l’activité motrice et le psychisme.
+6pathe	Qui est atteint de psychopathie.
+bs		b	0
+aie	Personnalité pathologique se manifestant essentiellement par des comportements antisociaux.
+cs		c	0
+bque	Relatif à la psychopathie, au comportement de psychopathe.
+es		e	0
+7édagogie	Science du psychopédagogue.
+due	Personne psychologue et pédagogue.
+7hysique	Étude des relations qui existent entre les phénomènes psychologiques et les conditions physiques où se trouve l’être humain.
+es		e	0
+7ompe	Conducteur des âmes des morts.
+bs		b	0
+6rigide	Qui se trouve psychiquement dans l’incapacité à se mettre à la place de l’autre.
+cs		c	0
+bité	État paranoïaque d'un individu incapable de se mettre à la place d'autrui.
+es		e	0
+6s		6	0
+7e	Affection psychique grave, qui ne peut se ranger parmi les névroses.
+8nsoriel	Relatif aux sens et à l’esprit.
+8s		8	0
+7ocial	Qui concerne le développement psychologique par son interaction dans un environnement social.
+ce		c	n
+ds		c	1
+bux		bl	9
+8matique	Relatif à l’influence de l’esprit sur le corps (maladies psychosomatiques).
+7tasie	Jugement divin d'un défunt dans les religions.
+cs		c	0
+8imulant	Qui stimule le fonctionnement du cerveau.
+6ta		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+7echnique	Relatif à la psychotechnique.
+8nt		8r	v
+8r	Agir comme un psychotique, de façon incorrecte et déraisonnable, paniquer.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7hérapie	Pratique censée soigner ou aider à résoudre les problèmes comportementaux et psychologiques rencontrés par des individus.
+es		e	0
+7iez		7er	d
+8ons		7er	j
+8que	Relatif à la psychose.
+bs		b	0
+7ons		7er	r
+7rope	Substance chimique qui agit principalement sur l’état du système nerveux central et y induit des modifications de la perception, des sensations, de l’humeur, d…
+bs		b	0
+5romètre	Instrument de mesure composé de deux thermomètres, l’un sec et l’autre humide, et qui sert à mesurer le taux d’humidité de l’air.
+cs		c	0
+8étrie	Domaine scientifique concernant la détermination des caractéristiques physiques et thermodynamiques d’un mélange gaz-vapeur.
+cque	Relatif à la psychrométrie.
+7phile	Qualifie un être vivant qui peut encore se développer à basse température (jusqu’à 0°C voire moins), mais dont la température de développement optimale est bea…
+cs		c	0
+3lle	Charmeur de serpents.
+6s		6	0
+5ium	Nom de divers plantains (Plantago spp.).
+8s		8	0
+3s		3	0

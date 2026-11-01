@@ -1,138 +1,138 @@
-oïdié	Attaqué par l’oïdium (qualifie un végétal).
-oïdiée		oïdié	23
-oïdiées		oïdié	1
-oïdiés		oïdié	9
-oïdium	Champignon microscopique parasite de certains végétaux et, en particulier, de la vigne.
-oïdiums		oïdium	0
-oie	Oiseau palmipède aquatique, apparenté au canard mais plus gros et plus grand, vivant à l’état sauvage ou à l’état domestique.
-oient		ouïr	31
-oies		oie	0
-oignaient		oindre	116
-oignais		oindre	114
-oignait		oindre	91
-oignant		oindre	43
-oigne	Anus.
-oignent		oindre	117
-oignes		oigne	0
-oignez		oindre	70
-oigniez		oindre	110
-oignîmes		oindre	3
-oignions		oindre	111
-oignirent		oindre	24
-oignis		oindre	22
-oignisse		oindre	6
-oignissent		oindre	17
-oignisses		oindre	8
-oignissiez		oindre	14
-oignissions		oindre	25
-oignit		oindre	39
-oignîtes		oindre	2
-oignon	Plante à bulbe comestible, de la famille des liliacées (classification classique) ou des amaryllidacées (classification phylogénétique).
-oignonade	Mets accommodé avec une grande quantité d’oignons.
-oignonades		oignonade	0
-oignonière	Terre semée d’oignons.
-oignonières		oignonière	0
-oignons		oignon	0
-oïl	Ancienne forme du mot oui dans le nord de la France.
-oille	Sorte de ragoût fait de divers légumes et viandes cuits ensemble.
-oilles		oille	0
-oindra		oindre	44
-oindrai		oindre	16
-oindraient		oindre	108
-oindrais		oindre	106
-oindrait		oindre	112
-oindras		oindre	7
-oindre	Frotter d’huile ou de quelque matière grasse.
-oindrez		oindre	5
-oindriez		oindre	99
-oindrions		oindre	101
-oindrons		oindre	10
-oindront		oindre	15
-oing	Graisse de porc qui était utilisée pour graisser les essieux.
-oings		oing	0
-oins		oindre	72
-oint	Relatif à une onction.
-ointe	Celle qui a reçu une onction.
-ointes		oint	1
-oints		oint	9
-ois		ouïr	72
-oiseau	Animal vertébré théropode, à deux pattes et deux ailes, ovipare, homéotherme, au corps couvert de plumes et qui possède un bec corné dépourvu de dents.
-oiseaux		oiseau	0
-oisela		oiseler	33
-oiselai		oiseler	22
-oiselaient		oiseler	32
-oiselais		oiseler	29
-oiselait		oiseler	34
-oiselâmes		oiseler	3
-oiselant		oiseler	35
-oiselas		oiseler	12
-oiselasse		oiseler	6
-oiselassent		oiseler	17
-oiselasses		oiseler	8
-oiselassiez		oiseler	14
-oiselassions		oiseler	25
-oiselât		oiseler	20
-oiselâtes		oiseler	2
-oiselé		oiseler	56
-oiselée		oiseler	37
-oiselées		oiseler	36
-oisèlent		oiseler	31
-oiseler	Dresser un oiseau pour le vol.
-oisèlera		oiseler	21
-oisèlerai		oiseler	16
-oisèleraient		oiseler	28
-oisèlerais		oiseler	18
-oisèlerait		oiseler	26
-oisèleras		oiseler	7
-oiselèrent		oiseler	24
-oisèlerez		oiseler	5
-oisèleriez		oiseler	4
-oisèlerions		oiseler	11
-oisèlerons		oiseler	10
-oisèleront		oiseler	15
-oiselés		oiseler	38
-oiselet	Petit oiseau.
-oiselets		oiselet	0
-oiseleur	Qui capture les oiseaux.
-oiseleurs		oiseleur	0
-oiseleuse	Celle qui prend les oiseaux à l’aide de filets ou de pièges.
-oiseleuses		oiseleur	1
-oiselez		oiseler	47
-oiselier	Celui qui fait le commerce (et éventuellement l’élevage) des oiseaux d’agrément, dans une oisellerie.
-oiselière	Celle qui fait le commerce (et éventuellement l’élevage) des oiseaux d’agrément, dans une oisellerie.
-oiselières		oiselière	0
-oiseliers		oiselier	0
-oiseliez		oiseler	13
-oiselions		oiseler	19
-oiselle	Femelle oiseau.
-oisellent		oiseler	31
-oisellera		oiseler	21
-oisellerai		oiseler	16
-oiselleraient		oiseler	28
-oisellerais		oiseler	18
-oisellerait		oiseler	26
-oiselleras		oiseler	7
-oisellerez		oiseler	5
-oisellerie	Commerce des oiseaux.
-oiselleries		oisellerie	0
-oiselleriez		oiseler	4
-oisellerions		oiseler	11
-oisellerons		oiseler	10
-oiselleront		oiseler	15
-oiselles		oiselle	0
-oiselons		oiseler	27
-oiseuse		oiseux	23
-oiseuses		oiseux	1
-oiseux	Qui ne sert à rien.
-oisif	Qui ne fait rien, qui n’a pas d’occupation, de profession.
-oisifs		oisif	9
-oisillon	Petit oiseau.
-oisillons		oisillon	0
-oisive	Personne oisive.
-oisivement	D’une manière oisive.
-oisives		oisif	1
-oisiveté	État, habitude d’une personne qui est oisive, qui ne fait rien.
-oisivetés		oisiveté	0
-oison	Le petit d’une oie.
-oisons		oison	0
-oit	Toi.
+0oïdié	Attaqué par l’oïdium (qualifie un végétal).
+5e		5	n
+6s		5	1
+5s		5	9
+4um	Champignon microscopique parasite de certains végétaux et, en particulier, de la vigne.
+6s		6	0
+1ie	Oiseau palmipède aquatique, apparenté au canard mais plus gros et plus grand, vivant à l’état sauvage ou à l’état domestique.
+3nt		1uïr	v
+3s		3	0
+2gnaient		2ndre	38
+6s		2ndre	36
+6t		2ndre	2j
+5nt		2ndre	17
+4e	Anus.
+5nt		2ndre	39
+5s		5	0
+5z		2ndre	1y
+4iez		2ndre	32
+4îmes		2ndre	3
+4ions		2ndre	33
+5rent		2ndre	o
+5s		2ndre	m
+6se		2ndre	6
+8nt		2ndre	h
+8s		2ndre	8
+7iez		2ndre	e
+8ons		2ndre	p
+5t		2ndre	13
+4îtes		2ndre	2
+4on	Plante à bulbe comestible, de la famille des liliacées (classification classique) ou des amaryllidacées (classification phylogénétique).
+6ade	Mets accommodé avec une grande quantité d’oignons.
+9s		9	0
+6ière	Terre semée d’oignons.
+as		a	0
+6s		6	0
+1ïl	Ancienne forme du mot oui dans le nord de la France.
+1ille	Sorte de ragoût fait de divers légumes et viandes cuits ensemble.
+5s		5	0
+2ndra		5e	18
+6i		5e	g
+7ent		5e	30
+7s		5e	2y
+7t		5e	34
+6s		5e	7
+5e	Frotter d’huile ou de quelque matière grasse.
+6z		6	5
+5iez		5e	2r
+6ons		5e	2t
+5ons		5e	a
+7t		5e	f
+3g	Graisse de porc qui était utilisée pour graisser les essieux.
+4s		4	0
+3s		3dre	20
+3t	Relatif à une onction.
+4e	Celle qui a reçu une onction.
+5s		4	1
+4s		4	9
+2s		1uïr	20
+3eau	Animal vertébré théropode, à deux pattes et deux ailes, ovipare, homéotherme, au corps couvert de plumes et qui possède un bec corné dépourvu de dents.
+6x		6	0
+4la		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	11
+7s		5er	10
+3èlent		3eler	v
+3eler	Dresser un oiseau pour le vol.
+3èlera		3eler	l
+8i		3eler	g
+9ent		3eler	s
+9s		3eler	i
+9t		3eler	q
+8s		3eler	7
+3elèrent		5er	o
+3èlerez		3eler	5
+7iez		3eler	4
+8ons		3eler	b
+7ons		3eler	a
+9t		3eler	f
+3elés		5er	12
+5et	Petit oiseau.
+7s		7	0
+6ur	Qui capture les oiseaux.
+8s		8	0
+7se	Celle qui prend les oiseaux à l’aide de filets ou de pièges.
+9s		7r	1
+6z		6r	1b
+5ier	Celui qui fait le commerce (et éventuellement l’élevage) des oiseaux d’agrément, dans une oisellerie.
+6ère	Celle qui fait le commerce (et éventuellement l’élevage) des oiseaux d’agrément, dans une oisellerie.
+9s		9	0
+6ers		8	0
+7z		5er	d
+6ons		5er	j
+5le	Femelle oiseau.
+7nt		5er	v
+7ra		5er	l
+9i		5er	g
+aent		5er	s
+as		5er	i
+at		5er	q
+9s		5er	7
+8ez		5er	5
+8ie	Commerce des oiseaux.
+as		a	0
+az		5er	4
+9ons		5er	b
+8ons		5er	a
+at		5er	f
+7s		7	0
+5ons		5er	r
+4use		5x	n
+7s		5x	1
+5x	Qui ne sert à rien.
+3if	Qui ne fait rien, qui n’a pas d’occupation, de profession.
+5s		5	9
+4llon	Petit oiseau.
+8s		8	0
+4ve	Personne oisive.
+6ment	D’une manière oisive.
+6s		4f	1
+6té	État, habitude d’une personne qui est oisive, qui ne fait rien.
+8s		8	0
+3on	Le petit d’une oie.
+5s		5	0
+2t	Toi.

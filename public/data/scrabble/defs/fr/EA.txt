@@ -1,4 +1,4 @@
-eagle	Performance d’un joueur ou d’une joueuse qui réussit deux coups sous le par.
-eagles		eagle	0
-eau	Liquide transparent, incolore, inodore et insipide à l’état pur, qui est le principal constituant des lacs, rivières, mers et océans.
-eaux		eau	0
+0eagle	Performance d’un joueur ou d’une joueuse qui réussit deux coups sous le par.
+5s		5	0
+2u	Liquide transparent, incolore, inodore et insipide à l’état pur, qui est le principal constituant des lacs, rivières, mers et océans.
+3x		3	0

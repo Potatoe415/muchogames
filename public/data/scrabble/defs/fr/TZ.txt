@@ -1,12 +1,12 @@
-tzar	Variante de tsar.
-tzarine	Variante orthographique de tsarine.
-tzarines		tzarine	0
-tzarisme	Autre orthographe de tsarisme.
-tzarismes		tzarisme	0
-tzariste	Variante orthographique de tsariste.
-tzaristes		tzariste	0
-tzars		tzar	0
-tzatziki	Mezzé grec et turc à base de concombre.
-tzatzikis		tzatziki	0
-tzigane	Peuple nomade d’Europe, originaire d’Inde.
-tziganes		tzigane	0
+0tzar	Variante de tsar.
+4ine	Variante orthographique de tsarine.
+7s		7	0
+5sme	Autre orthographe de tsarisme.
+8s		8	0
+6te	Variante orthographique de tsariste.
+8s		8	0
+4s		4	0
+3tziki	Mezzé grec et turc à base de concombre.
+8s		8	0
+2igane	Peuple nomade d’Europe, originaire d’Inde.
+7s		7	0

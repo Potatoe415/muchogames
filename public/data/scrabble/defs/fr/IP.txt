@@ -1,18 +1,18 @@
-ipé	Arbre tropical au bois très dur de la famille des Bignoniaceae.
-ipéca	Racine brunâtre d’une saveur âcre et nauséabonde, de la famille des rubiacées, originaire d’Amérique du Sud, et qu’on emploie en médecine pour ses propriétés é…
-ipécacuana	Racine brunâtre d’une saveur âcre et nauséabonde, de la famille des Rubiacées, de l’Amérique du Sud, et qu’on emploie en médecine.
-ipécacuanas		ipécacuana	0
-ipécacuanha	Variante orthographique de ipécacuana.
-ipécacuanhas		ipécacuanha	0
-ipécas		ipéca	0
-ipés		ipé	0
-ipomée	Plante de la famille des convolvulacées et comportant des centaines d’espèces de lianes, arbustes ou arbres.
-ipomées		ipomée	0
-ippon	Score le plus élevé qu'un combattant puisse obtenir lors d'une compétition d'arts martiaux japonais (10 points).
-ippons		ippon	0
-ipséité	Identité propre.
-ipséités		ipséité	0
-ipsilatéral	Qui se trouve ou se produit du même côté du corps.
-ipsilatérale		ipsilatéral	23
-ipsilatérales		ipsilatéral	1
-ipsilatéraux		ipsilatéral	9
+0ipé	Arbre tropical au bois très dur de la famille des Bignoniaceae.
+3ca	Racine brunâtre d’une saveur âcre et nauséabonde, de la famille des rubiacées, originaire d’Amérique du Sud, et qu’on emploie en médecine pour ses propriétés é…
+5cuana	Racine brunâtre d’une saveur âcre et nauséabonde, de la famille des Rubiacées, de l’Amérique du Sud, et qu’on emploie en médecine.
+as		a	0
+9ha	Variante orthographique de ipécacuana.
+bs		b	0
+5s		5	0
+3s		3	0
+2omée	Plante de la famille des convolvulacées et comportant des centaines d’espèces de lianes, arbustes ou arbres.
+6s		6	0
+2pon	Score le plus élevé qu'un combattant puisse obtenir lors d'une compétition d'arts martiaux japonais (10 points).
+5s		5	0
+2séité	Identité propre.
+7s		7	0
+3ilatéral	Qui se trouve ou se produit du même côté du corps.
+be		b	n
+cs		b	1
+aux		al	9

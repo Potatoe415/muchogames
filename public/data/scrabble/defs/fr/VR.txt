@@ -1,92 +1,92 @@
-vrac	Marchandise qui n’est pas emballée ou conditionnée lors de son transport ou de sa distribution.
-vracs		vrac	0
-vrai	Qui est conforme à la vérité, à ce qui est réellement.
-vraie		vrai	23
-vraies		vrai	1
-vraiment	Effectivement ; véritablement , d’une manière vraie.
-vrais		vrai	9
-vraisemblable	Qui paraît vrai, qui a l’apparence de la vérité, qui peut passer pour vrai.
-vraisemblables		vraisemblable	0
-vraisemblance	Apparence de vérité.
-vraisemblances		vraisemblance	0
-vraquier	Cargo transportant des marchandises sèches en vrac.
-vraquiers		vraquier	0
-vreneli	Pièce de 20 francs suisses en or, d'une contenance de 5,806 grammes d'or fin.
-vrenelis		vreneli	0
-vrilla		vriller	39
-vrillage	Défaut des fils textiles, des fils à pêche qui vrillent.
-vrillages		vrillage	0
-vrillai		vriller	22
-vrillaient		vriller	42
-vrillais		vriller	29
-vrillait		vriller	40
-vrillâmes		vriller	3
-vrillant		vriller	43
-vrillas		vriller	12
-vrillasse		vriller	6
-vrillassent		vriller	17
-vrillasses		vriller	8
-vrillassiez		vriller	14
-vrillassions		vriller	25
-vrillât		vriller	20
-vrillâtes		vriller	2
-vrille	Pousse filiforme, en spirale avec laquelle la vigne et d’autres plantes grimpantes s’attachent aux corps qui sont près d’elles.
-vrillée	Nom vernaculaire de plusieurs espèces volubiles de renouées du genre Fallopia.
-vrillées		vriller	51
-vrillent		vriller	41
-vriller	Tourner sur soi-même.
-vrillera		vriller	21
-vrillerai		vriller	16
-vrilleraient		vriller	28
-vrillerais		vriller	18
-vrillerait		vriller	26
-vrilleras		vriller	7
-vrillèrent		vriller	48
-vrillerez		vriller	5
-vrilleriez		vriller	4
-vrillerions		vriller	11
-vrillerons		vriller	10
-vrilleront		vriller	15
-vrillés		vrillé	9
-vrillette	Nom donné à certains coléoptères foreurs dont les larves creusent des galeries dans le bois ou d’autres substances d’origine végétale ou animale.
-vrillettes		vrillette	0
-vrillez		vriller	30
-vrilliez		vriller	13
-vrillions		vriller	19
-vrillons		vriller	27
-vrombi		vrombir	46
-vrombîmes		vrombir	3
-vrombir	Produire une sorte de bourdonnement, de ronflement dû à un mouvement très rapide de rotation, d’agitation.
-vrombira		vrombir	21
-vrombirai		vrombir	16
-vrombiraient		vrombir	28
-vrombirais		vrombir	18
-vrombirait		vrombir	26
-vrombiras		vrombir	7
-vrombirent		vrombir	24
-vrombirez		vrombir	5
-vrombiriez		vrombir	4
-vrombirions		vrombir	11
-vrombirons		vrombir	10
-vrombiront		vrombir	15
-vrombis		vrombir	72
-vrombissaient		vrombir	75
-vrombissais		vrombir	29
-vrombissait		vrombir	71
-vrombissant	Qui vrombit.
-vrombissante	Féminin singulier de vrombissant.
-vrombissantes		vrombissant	1
-vrombissants		vrombissant	9
-vrombisse		vrombir	89
-vrombissement	Action de vrombir.
-vrombissements		vrombissement	0
-vrombissent		vrombir	69
-vrombisses		vrombir	76
-vrombissez		vrombir	30
-vrombissiez		vrombir	13
-vrombissions		vrombir	94
-vrombissons		vrombir	27
-vrombit		vrombir	80
-vrombîtes		vrombir	2
-vroom	Variante orthographique de vroum.
-vroum	Onomatopée imitant le bruit d’un moteur qui accélère.
+0vrac	Marchandise qui n’est pas emballée ou conditionnée lors de son transport ou de sa distribution.
+4s		4	0
+3i	Qui est conforme à la vérité, à ce qui est réellement.
+4e		4	n
+5s		4	1
+4ment	Effectivement ; véritablement , d’une manière vraie.
+4s		4	9
+5emblable	Qui paraît vrai, qui a l’apparence de la vérité, qui peut passer pour vrai.
+ds		d	0
+ance	Apparence de vérité.
+ds		d	0
+3quier	Cargo transportant des marchandises sèches en vrac.
+8s		8	0
+2eneli	Pièce de 20 francs suisses en or, d'une contenance de 5,806 grammes d'or fin.
+7s		7	0
+2illa		5er	13
+6ge	Défaut des fils textiles, des fils à pêche qui vrillent.
+8s		8	0
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Pousse filiforme, en spirale avec laquelle la vigne et d’autres plantes grimpantes s’attachent aux corps qui sont près d’elles.
+5ée	Nom vernaculaire de plusieurs espèces volubiles de renouées du genre Fallopia.
+7s		5er	1f
+5ent		6r	15
+6r	Tourner sur soi-même.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	1c
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5ette	Nom donné à certains coléoptères foreurs dont les larves creusent des galeries dans le bois ou d’autres substances d’origine végétale ou animale.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+2ombi		6r	1a
+5îmes		5ir	3
+5ir	Produire une sorte de bourdonnement, de ronflement dû à un mouvement très rapide de rotation, d’agitation.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+7ent		7	o
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	20
+7saient		6r	23
+as		6r	t
+at		6r	1z
+9nt	Qui vrombit.
+be	Féminin singulier de vrombissant.
+cs		b	1
+bs		b	9
+8e		6r	2h
+9ment	Action de vrombir.
+ds		d	0
+9nt		6r	1x
+9s		6r	24
+9z		6r	u
+8iez		6r	d
+9ons		6r	2m
+8ons		6r	r
+6t		6r	28
+5îtes		5ir	2
+3om	Variante orthographique de vroum.
+3um	Onomatopée imitant le bruit d’un moteur qui accélère.

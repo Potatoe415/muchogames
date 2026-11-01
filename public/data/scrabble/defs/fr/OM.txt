@@ -1,211 +1,211 @@
-OM	Ordures ménagères
-omanais	Relatif à Oman.
-omanaise		omanais	23
-omanaises		omanais	1
-omasum	Troisième poche de l’estomac des ruminants.
-omasums		omasum	0
-ombelle	Inflorescence où tous les pédicelles sont attachés au même point de la tige et toutes les fleurs s’élèvent au même niveau selon une surface sphérique.
-ombellée		ombellé	23
-ombellées		ombellé	1
-ombelles		ombelle	0
-ombellifère	Qui porte des ombelles, en parlant des plantes.
-ombellifères	Pluriel de ombellifère.
-ombelliforme	En forme d’ombelle.
-ombelliformes		ombelliforme	0
-ombellule	Petite ombelle.
-ombellules		ombellule	0
-ombilic	Nombril.
-ombilical	Relatif au nombril.
-ombilicale		ombilical	23
-ombilicales		ombilical	1
-ombilicaux		ombilical	9
-ombilics		ombilic	0
-ombiliqué	Pourvu d’un ombilic.
-ombiliquée		ombiliqué	23
-ombiliquées		ombiliqué	1
-ombiliqués		ombiliqué	9
-omble	Poisson d’eau douce de la famille des salmonidés et du genre Salvelinus.
-ombles		omble	0
-ombra		ombrer	39
-ombrage	Ensemble des branches et des feuilles des arbres, qui produit de l’ombre.
-ombragea		ombrager	39
-ombrageai		ombrager	22
-ombrageaient		ombrager	42
-ombrageais		ombrager	29
-ombrageait		ombrager	40
-ombrageâmes		ombrager	3
-ombrageant		ombrager	35
-ombrageas		ombrager	12
-ombrageasse		ombrager	6
-ombrageassent		ombrager	17
-ombrageasses		ombrager	8
-ombrageassiez		ombrager	14
-ombrageassions		ombrager	25
-ombrageât		ombrager	20
-ombrageâtes		ombrager	2
-ombragée		ombragé	23
-ombragées		ombragé	1
-ombragent		ombrager	41
-ombrageons		ombrager	27
-ombrager	Mettre à l’abri des rayons du soleil.
-ombragera		ombrager	21
-ombragerai		ombrager	16
-ombrageraient		ombrager	28
-ombragerais		ombrager	18
-ombragerait		ombrager	26
-ombrageras		ombrager	7
-ombragèrent		ombrager	24
-ombragerez		ombrager	5
-ombrageriez		ombrager	4
-ombragerions		ombrager	11
-ombragerons		ombrager	10
-ombrageront		ombrager	15
-ombragés		ombrager	53
-ombrageuse		ombrageux	23
-ombrageusement	D’une manière ombrageuse.
-ombrageuses		ombrageux	1
-ombrageux	Qui produit de l'ombre.
-ombragez		ombrager	30
-ombragiez		ombrager	13
-ombragions		ombrager	19
-ombrai		ombrer	22
-ombraient		ombrer	42
-ombrais		ombrer	29
-ombrait		ombrer	40
-ombrâmes		ombrer	3
-ombrant	Qui ombre, qui figure les ombres.
-ombras		ombrer	12
-ombrasse		ombrer	6
-ombrassent		ombrer	17
-ombrasses		ombrer	8
-ombrassiez		ombrer	14
-ombrassions		ombrer	25
-ombrât		ombrer	20
-ombrâtes		ombrer	2
-ombre	Obscurité relative que cause un corps opaque en interceptant la lumière.
-ombrée	Versant d’une montagne qui est le moins exposé au soleil, et donc le versant le plus froid.
-ombrées		ombrer	51
-ombrelle	Petit parasol dont se servent surtout les femmes.
-ombrelles		ombrelle	0
-ombrent		ombrer	31
-ombrer	Faire de l'ombre.
-ombrera		ombrer	21
-ombrerai		ombrer	16
-ombreraient		ombrer	28
-ombrerais		ombrer	18
-ombrerait		ombrer	26
-ombreras		ombrer	7
-ombrèrent		ombrer	24
-ombrerez		ombrer	5
-ombreriez		ombrer	4
-ombrerions		ombrer	11
-ombrerons		ombrer	10
-ombreront		ombrer	15
-ombrés		ombré	9
-ombrette	Échassier du Sénégal, son appellation binomiale est Scopus umbretta.
-ombrettes		ombrette	0
-ombreuse	Peintre spécialisée dans les décors de théâtre et qui est en charge d'accentuer les détails avec des ombres.
-ombreuses		ombreux	1
-ombreux	Où il y a de l’ombre.
-ombrez		ombrer	30
-ombrien	Relatif à l’Ombrie, ancienne contrée de l’Italie.
-ombrienne		ombrien	23
-ombriennes		ombrien	1
-ombriens		ombrien	9
-ombrière	Structure destinée à fournir de l’ombre, constituée d'une surface horizontale en hauteur et de ses supports.
-ombrières		ombrière	0
-ombriez		ombrer	13
-ombrine	Espèce de poisson osseux marin comestible, un sciaenidé de l’océan Atlantique et de la mer Méditerranée qui a un barbillon au menton.
-ombrines		ombrine	0
-ombrions		ombrer	19
-ombrons		ombrer	27
-ombrophile	Qui croît sous un climat pluvieux.
-ombrophiles		ombrophile	0
-ombudsman	Médiateur indépendant, représentant un contre-pouvoir, un recours contre l'État, ses abus, ses lourdeurs.
-ombudsmans		ombudsman	0
-oméga	Nom de ω, Ω, vingt-quatrième et dernière lettre et septième voyelle de l’alphabet grec.
-omégas		oméga	0
-omelette	Mets composé d’œufs battus ensemble et cuits à la poêle souvent avec du beurre ou de l’huile.
-omelettes		omelette	0
-omertà	Variante de omerta.
-omertas		omerta	0
-omet		omettre	80
-omets		omettre	72
-omettaient		omettre	93
-omettais		omettre	95
-omettait		omettre	91
-omettant		omettre	43
-omette		omettre	85
-omettent		omettre	69
-omettes		omettre	201
-omettez		omettre	70
-omettiez		omettre	102
-omettions		omettre	111
-omettons		omettre	27
-omettra		omettre	21
-omettrai		omettre	50
-omettraient		omettre	108
-omettrais		omettre	106
-omettrait		omettre	112
-omettras		omettre	7
-omettre	Manquer, soit volontairement, soit involontairement, à faire ou à dire ce qu’on pouvait, ce qu’on devait faire ou dire.
-omettrez		omettre	58
-omettriez		omettre	99
-omettrions		omettre	101
-omettrons		omettre	10
-omettront		omettre	15
-omeyyade	Relatif aux Omeyyades.
-omeyyades		omeyyade	0
-omicron	ο, Ο, quinzième lettre et cinquième voyelle de l’alphabet grec.
-omicrons		omicron	0
-omîmes		omettre	3
-omirent		omettre	24
-omis	Personne qui n'avait pas été inscrite sur les listes de recrutement de l'armée.
-omise		omettre	45
-omises		omettre	51
-omisse		omettre	6
-omissent		omettre	17
-omisses		omettre	8
-omissiez		omettre	14
-omission	Action d’omettre.
-omissions		omission	0
-omît		omettre	62
-omîtes		omettre	2
-ommatidie	Structure unitaire d’un œil composé ou œil à facettes.
-ommatidies		ommatidie	0
-omnibus	Se disait de tout moyen de transport public de voyageurs.
-omnicolore	De toutes les couleurs.
-omnicolores		omnicolore	0
-omnipolaire	Relatif à tous les pôles, d’un circuit électrique par exemple.
-omnipolaires		omnipolaire	0
-omnipotence	Toute-puissance.
-omnipotences		omnipotence	0
-omnipotent	Qui est tout-puissant.
-omnipotente		omnipotent	23
-omnipotentes		omnipotent	1
-omnipotents		omnipotent	125
-omnipraticien	Médecin qui pratique la médecine générale.
-omnipraticienne	Femme médecin qui pratique la médecine générale.
-omnipraticiens		omnipraticien	0
-omniprésence	Présence constante d'une personne.
-omniprésences		omniprésence	0
-omniprésent	Qui est partout.
-omniprésente		omniprésent	23
-omniprésentes		omniprésent	1
-omniprésents		omniprésent	9
-omniscience	Science de toute chose.
-omnisciences		omniscience	0
-omniscient	Qui sait tout, ou paraît tout savoir.
-omnisciente		omniscient	23
-omniscientes		omniscient	1
-omniscients		omniscient	9
-omnisport	Où on peut pratiquer différents sports.
-omnisports		omnisport	0
-omnium	Compétition sportive ouverte à tous.
-omniums		omnium	0
-omnivore	Qui mange de tout.
-omnivores		omnivore	0
-omoplate	Os large, mince et triangulaire, qui forme la partie postérieure de l’épaule et auquel s’articule l’os du bras.
-omoplates		omoplate	0
-omra	Variante orthographique de oumra.
-omras		omra	0
+0OM	Ordures ménagères
+0omanais	Relatif à Oman.
+7e		7	n
+8s		7	1
+3sum	Troisième poche de l’estomac des ruminants.
+6s		6	0
+2belle	Inflorescence où tous les pédicelles sont attachés au même point de la tige et toutes les fleurs s’élèvent au même niveau selon une surface sphérique.
+6ée		7	n
+8s		7	1
+6es		7	0
+6ifère	Qui porte des ombelles, en parlant des plantes.
+bs	Pluriel de ombellifère.
+8orme	En forme d’ombelle.
+cs		c	0
+6ule	Petite ombelle.
+9s		9	0
+3ilic	Nombril.
+7al	Relatif au nombril.
+9e		9	n
+as		9	1
+8ux		8l	9
+7s		7	0
+6qué	Pourvu d’un ombilic.
+9e		9	n
+as		9	1
+9s		9	9
+3le	Poisson d’eau douce de la famille des salmonidés et du genre Salvelinus.
+5s		5	0
+3ra		4er	13
+5ge	Ensemble des branches et des feuilles des arbres, qui produit de l’ombre.
+7a		7r	13
+8i		7r	m
+9ent		7r	16
+9s		7r	t
+9t		7r	14
+7âmes		7r	3
+7ant		7r	z
+8s		7r	c
+9se		7r	6
+bnt		7r	h
+bs		7r	8
+aiez		7r	e
+bons		7r	p
+7ât		7r	k
+9es		7r	2
+6ée		7	n
+8s		7	1
+6ent		7r	15
+7ons		7r	r
+7r	Mettre à l’abri des rayons du soleil.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6euse		8x	n
+ament	D’une manière ombrageuse.
+as		8x	1
+8x	Qui produit de l'ombre.
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+5i		4er	m
+6ent		4er	16
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant	Qui ombre, qui figure les ombres.
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Obscurité relative que cause un corps opaque en interceptant la lumière.
+4ée	Versant d’une montagne qui est le moins exposé au soleil, et donc le versant le plus froid.
+6s		4er	1f
+4elle	Petit parasol dont se servent surtout les femmes.
+8s		8	0
+5nt		5r	v
+5r	Faire de l'ombre.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		5	9
+4ette	Échassier du Sénégal, son appellation binomiale est Scopus umbretta.
+8s		8	0
+5use	Peintre spécialisée dans les décors de théâtre et qui est en charge d'accentuer les détails avec des ombres.
+8s		6x	1
+6x	Où il y a de l’ombre.
+5z		5r	u
+4ien	Relatif à l’Ombrie, ancienne contrée de l’Italie.
+7ne		7	n
+9s		7	1
+7s		7	9
+5ère	Structure destinée à fournir de l’ombre, constituée d'une surface horizontale en hauteur et de ses supports.
+8s		8	0
+5ez		4er	d
+5ne	Espèce de poisson osseux marin comestible, un sciaenidé de l’océan Atlantique et de la mer Méditerranée qui a un barbillon au menton.
+7s		7	0
+5ons		4er	j
+4ons		4er	r
+5phile	Qui croît sous un climat pluvieux.
+as		a	0
+3udsman	Médiateur indépendant, représentant un contre-pouvoir, un recours contre l'État, ses abus, ses lourdeurs.
+9s		9	0
+2éga	Nom de ω, Ω, vingt-quatrième et dernière lettre et septième voyelle de l’alphabet grec.
+5s		5	0
+2elette	Mets composé d’œufs battus ensemble et cuits à la poêle souvent avec du beurre ou de l’huile.
+8s		8	0
+3rtà	Variante de omerta.
+5as		6	0
+3t		4tre	28
+4s		4tre	20
+4taient		5re	2l
+7s		5re	2n
+7t		5re	2j
+6nt		5re	17
+5e		5re	2d
+6nt		5re	1x
+6s		5re	5l
+6z		5re	1y
+5iez		5re	2u
+6ons		5re	33
+5ons		5re	r
+5ra		6e	l
+7i		6e	1e
+8ent		6e	30
+8s		6e	2y
+8t		6e	34
+7s		6e	7
+6e	Manquer, soit volontairement, soit involontairement, à faire ou à dire ce qu’on pouvait, ce qu’on devait faire ou dire.
+7z		7	1m
+6iez		6e	2r
+7ons		6e	2t
+6ons		6e	a
+8t		6e	f
+3yyade	Relatif aux Omeyyades.
+8s		8	0
+2icron	ο, Ο, quinzième lettre et cinquième voyelle de l’alphabet grec.
+7s		7	0
+2îmes		2ettre	3
+2irent		2ettre	o
+3s	Personne qui n'avait pas été inscrite sur les listes de recrutement de l'armée.
+4e		2ettre	19
+5s		2ettre	1f
+4se		2ettre	6
+6nt		2ettre	h
+6s		2ettre	8
+5iez		2ettre	e
+6on	Action d’omettre.
+8s		8	0
+2ît		2ettre	1q
+4es		2ettre	2
+2matidie	Structure unitaire d’un œil composé ou œil à facettes.
+9s		9	0
+2nibus	Se disait de tout moyen de transport public de voyageurs.
+4colore	De toutes les couleurs.
+as		a	0
+4polaire	Relatif à tous les pôles, d’un circuit électrique par exemple.
+bs		b	0
+6tence	Toute-puissance.
+bs		b	0
+9t	Qui est tout-puissant.
+ae		a	n
+bs		a	1
+as		a	3h
+5raticien	Médecin qui pratique la médecine générale.
+dne	Femme médecin qui pratique la médecine générale.
+ds		d	0
+6ésence	Présence constante d'une personne.
+cs		c	0
+at	Qui est partout.
+be		b	n
+cs		b	1
+bs		b	9
+4science	Science de toute chose.
+bs		b	0
+9t	Qui sait tout, ou paraît tout savoir.
+ae		a	n
+bs		a	1
+as		a	9
+5port	Où on peut pratiquer différents sports.
+9s		9	0
+4um	Compétition sportive ouverte à tous.
+6s		6	0
+4vore	Qui mange de tout.
+8s		8	0
+2oplate	Os large, mince et triangulaire, qui forme la partie postérieure de l’épaule et auquel s’articule l’os du bras.
+8s		8	0
+2ra	Variante orthographique de oumra.
+4s		4	0

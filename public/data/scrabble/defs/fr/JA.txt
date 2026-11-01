@@ -1,1240 +1,1240 @@
-jab	Sorte de coup de poing où le boxeur frappe son adversaire rapidement d’une courte distance.
-jabadao	Danse traditionnelle de la Cornouaille, qui alterne rondes et figures par couples.
-jabadaos		jabadao	0
-jabiru	Nom vernaculaire de trois espèces d’oiseaux proches des cigognes, l’une d’Amérique, la seconde d’Afrique et la troisième d’Asie, toutes caractérisées par un lo…
-jabirus		jabiru	0
-jabla		jabler	33
-jablage	Opération qui consiste à creuser les rainures (jables) aux extrémités des douves ou des douelles.
-jablages		jablage	0
-jablai		jabler	22
-jablaient		jabler	32
-jablais		jabler	29
-jablait		jabler	34
-jablâmes		jabler	3
-jablant		jabler	35
-jablas		jabler	12
-jablasse		jabler	6
-jablassent		jabler	17
-jablasses		jabler	8
-jablassiez		jabler	14
-jablassions		jabler	25
-jablât		jabler	20
-jablâtes		jabler	2
-jable	Rainure qu’on fait aux douves des tonneaux pour y loger les pièces constituant le fond.
-jablée		jabler	37
-jablées		jabler	36
-jablent		jabler	31
-jabler	Garnir d’un jable.
-jablera		jabler	21
-jablerai		jabler	16
-jableraient		jabler	28
-jablerais		jabler	18
-jablerait		jabler	26
-jableras		jabler	7
-jablèrent		jabler	24
-jablerez		jabler	5
-jableriez		jabler	4
-jablerions		jabler	11
-jablerons		jabler	10
-jableront		jabler	15
-jables		jable	0
-jableuse	Machine servant à creuser les jables dans les douves des tonneaux.
-jableuses		jableuse	0
-jablez		jabler	30
-jablière	Instrument servant à jabler, qui est fait comme un couteau à gaîne, à l’exception que la lame peut s’allonger et se raccourcir au besoin.
-jablières		jablière	0
-jabliez		jabler	13
-jablions		jabler	19
-jabloir	Rabot de tonnelier, pour creuser les jables.
-jabloire	Instrument pour jabler.
-jabloires		jabloire	0
-jabloirs		jabloir	0
-jablons		jabler	27
-jaborandi	Nom vernaculaire de plusieurs arbustes du genre Pilocarpus de la famille des Rutaceae (Rutacées), dont on extrait la pilocarpine : jaborandi de Guadeloupe, de …
-jaborandis		jaborandi	0
-jabot	Poche que les oiseaux ont dans la gorge et dans laquelle la nourriture qu’ils prennent est d’abord reçue et séjourne quelque temps avant de passer dans l’estom…
-jabota		jaboter	33
-jabotage	Action de jaboter.
-jabotages		jabotage	0
-jabotai		jaboter	22
-jabotaient		jaboter	32
-jabotais		jaboter	29
-jabotait		jaboter	34
-jabotâmes		jaboter	3
-jabotant		jaboter	35
-jabotas		jaboter	12
-jabotasse		jaboter	6
-jabotassent		jaboter	17
-jabotasses		jaboter	8
-jabotassiez		jaboter	14
-jabotassions		jaboter	25
-jabotât		jaboter	20
-jabotâtes		jaboter	2
-jaboté		jaboter	46
-jabotent		jaboter	31
-jaboter	Pousser des cris en secouant leur jabot, en parlant de certaines espèces d'oiseaux.
-jabotera		jaboter	21
-jaboterai		jaboter	16
-jaboteraient		jaboter	28
-jaboterais		jaboter	18
-jaboterait		jaboter	26
-jaboteras		jaboter	7
-jabotèrent		jaboter	24
-jaboterez		jaboter	5
-jaboteriez		jaboter	4
-jaboterions		jaboter	11
-jaboterons		jaboter	10
-jaboteront		jaboter	15
-jabotes		jaboter	66
-jaboteur	Personne qui jabote, bavard.
-jaboteurs		jaboteur	0
-jaboteuse	Personne qui jabote, bavarde.
-jaboteuses		jaboteuse	0
-jabotez		jaboter	30
-jabotiez		jaboter	13
-jabotions		jaboter	19
-jabotons		jaboter	27
-jabots		jabot	0
-jabs		jab	0
-jacamar	Nom normalisé donné à cinq genres d'oiseaux grimpeurs insectivores comprenant 18 espèces de l'ordre des piciformes et de la famille des galbulidés, apparentés …
-jacamars		jacamar	0
-jacana	Oiseau aquatique de taille moyenne (de 15 à 58 cm), vivement colorés de la famille des jacanidés avec des pattes, doigts et ongles allongées, ce pour se déplac…
-jacanas		jacana	0
-jacapucayo	Nom vulgaire du Lecythis ollaria, arbre de la forêt amazonienne, dont les fruits (pyxides) nommés marmite de singe donnent des graines oléagineuses comestibles.
-jacapucayos		jacapucayo	0
-jacaranda	Genre d’arbres d’une dizaine de mètres ayant une couronne en forme de parasol et de superbes fleurs bleues à violettes, originaire d’Amérique du Sud où une tri…
-jacarandas		jacaranda	0
-jacassa		jacasser	33
-jacassai		jacasser	22
-jacassaient		jacasser	42
-jacassais		jacasser	52
-jacassait		jacasser	40
-jacassâmes		jacasser	3
-jacassant	Qui jacasse.
-jacassas		jacasser	12
-jacassasse		jacasser	6
-jacassassent		jacasser	17
-jacassasses		jacasser	8
-jacassassiez		jacasser	14
-jacassassions		jacasser	25
-jacassât		jacasser	20
-jacassâtes		jacasser	2
-jacasse	Nom populaire de la pie bavarde.
-jacassement	Action de jacasser, bavardage.
-jacassements		jacassement	0
-jacassent		jacasser	41
-jacasser	Crier comme la pie, pousser le cri particulier à son espèce.
-jacassera		jacasser	21
-jacasserai		jacasser	16
-jacasseraient		jacasser	63
-jacasserais		jacasser	18
-jacasserait		jacasser	26
-jacasseras		jacasser	7
-jacassèrent		jacasser	24
-jacasserez		jacasser	5
-jacasserie	Action de jacasser.
-jacasseries		jacasserie	0
-jacasseriez		jacasser	4
-jacasserions		jacasser	11
-jacasserons		jacasser	10
-jacasseront		jacasser	15
-jacasses		jacasse	0
-jacasseur	Qui jacasse comme la pie ou qui a un chant bruyant.
-jacasseurs		jacasseur	9
-jacasseuse	Personne bavarde, indiscrète, prolixe, radoteuse.
-jacasseuses		jacasseur	1
-jacassez		jacasser	47
-jacassier	Personne qui a pour habitude de jacasser.
-jacassière	Personne qui a pour habitude de jacasser.
-jacassières		jacassière	0
-jacassiers		jacassier	0
-jacassiez		jacasser	67
-jacassions		jacasser	19
-jacassons		jacasser	27
-jacée	Nom vernaculaire d’une espèce de centaurée dont quelques variétés sont cultivées dans les jardins, à cause de la beauté de leurs fleurs.
-jacées		jacée	0
-jacent	Relatif aux biens qui n’ont pas de propriétaire connu, d’une succession dont l’héritier n’apparaît pas.
-jacente		jacent	109
-jacentes		jacent	1
-jacents		jacent	0
-jachère	État d’une terre labourable dont on abandonne la culture durant un an, pour la laisser reposer.
-jachères		jachère	0
-jacinthe	Plante à bulbe, monocotylédone, cultivée pour sa fleur, appartenant aux genres Hyacinthus ou Hyacinthoides, famille des hyacinthacées (autrefois classée parmi …
-jacinthes		jacinthe	0
-jaciste	Membre de la Jeunesse agricole chrétienne (JAC).
-jacistes		jaciste	0
-jack	Prise, fiche mâle.
-jacket	Revêtement de la couronne d’une dent, imitant l’émail, employé comme prothèse esthétique.
-jackets		jacket	0
-jackpot	Prix très important, très grosse récompense d’argent.
-jackpots		jackpot	0
-jacks		jack	0
-jaco	Perroquet gris.
-jacobée	Synonyme de séneçon de Jacob.
-jacobées		jacobée	0
-jacobien	Relatif à Jacobi, à ses travaux en mathématiques.
-jacobienne		jacobien	23
-jacobiennes		jacobien	1
-jacobiens		jacobien	9
-jacobin	Moine ou moniale qui suit la règle de Saint-Dominique.
-jacobine	Religieuse dominicaine.
-jacobines		jacobin	1
-jacobinisme	Doctrine politique qui défend la souveraineté populaire et l’indivisibilité de la République française.
-jacobinismes		jacobinisme	0
-jacobins		jacobin	9
-jacobite	Royaliste britannique resté fidèle à Jacques II et à ses successeurs.
-jacobites		jacobite	0
-jacobus	Ancienne monnaie d’or d’Angleterre, frappée sous Jacques Ier d'Angleterre et valant environ une guinée.
-jaconas	Espèce de mousseline légèrement plus épaisse que le nansouk.
-jacos		jaco	0
-jacot	Variante orthographique de jaco.
-jacots		jacot	0
-jacquard	Métier à tisser destiné à tisser la soie.
-jacquards		jacquard	0
-jacque	Pourpoint à manches et rembourré, servant à la fois de vêtement et de protection, en usage au Moyen Âge.
-jacqueline	Cruche ventrue, en grès, qui était en usage dans les Flandres.
-jacquelines		jacqueline	0
-jacquemart	Ressort situé au bas de la vis du balancier à frapper les monnaies, et servant à la faire relever lorsqu’elle a pincé l’espèce ou la médaille.
-jacquemarts		jacquemart	0
-jacquère	Cépage donnant du raisin blanc dont les grains à la peau épaisse sont serrés en grappes compactes.
-jacquères		jacquère	0
-jacquerie	Insurrection des paysans et des classes populaires au Moyen Âge.
-jacqueries		jacquerie	0
-jacques	Sorte de sobriquet donné anciennement aux paysans.
-jacquet	Jeu analogue au tric-trac, qui se joue dans une boite à deux compartiments sur lesquels sont dessinés des triangles blancs et noirs.
-jacquets		jacquet	0
-jacquier	Variante de jaquier par rapprochement populaire avec Jacques.
-jacquiers		jacquier	0
-jacquot	Oiseau qui jacasse, perroquet, geai ou pie.
-jacquots		jacquot	0
-jacta		jacter	33
-jactai		jacter	22
-jactaient		jacter	32
-jactais		jacter	52
-jactait		jacter	40
-jactâmes		jacter	3
-jactance	Action, habitude de se faire valoir en paroles.
-jactances		jactance	0
-jactant		jacter	43
-jactas		jacter	12
-jactasse		jacter	6
-jactassent		jacter	17
-jactasses		jacter	8
-jactassiez		jacter	14
-jactassions		jacter	25
-jactât		jacter	20
-jactâtes		jacter	2
-jacte		jacter	64
-jactée		jacter	45
-jactées		jacter	51
-jactent		jacter	41
-jacter	Parler.
-jactera		jacter	21
-jacterai		jacter	16
-jacteraient		jacter	63
-jacterais		jacter	60
-jacterait		jacter	26
-jacteras		jacter	7
-jactèrent		jacter	24
-jacterez		jacter	58
-jacteriez		jacter	4
-jacterions		jacter	11
-jacterons		jacter	10
-jacteront		jacter	15
-jactes		jacter	77
-jacteur	Qui jacte, bavard.
-jacteurs		jacteur	9
-jacteuse	Femme qui jacte, bavarde.
-jacteuses		jacteuse	9
-jactez		jacter	47
-jactiez		jacter	13
-jactions		jacter	141
-jactons		jacter	27
-jaculatoire	Marqué par un jaillissement intérieur intense, exalté, lyrique.
-jaculatoires		jaculatoire	0
-jacuzzi	Baignoire équipée d’un système de pulsion d’air et d’eau sous pression plus ou moins complexe procurant un effet massant et relaxant à son utilisateur.
-jacuzzis		jacuzzi	0
-jade	Pierre dure et translucide d’une couleur verdâtre ou olivâtre, parfois blanche.
-jadéite	Pyroxène (silicate) de formule NaAlSi₂O₆, cristallisant dans le système monoclinique, constituant l’une des deux gemmes désignées sous le nom de jade, avec la …
-jadéites		jadéite	0
-jades		jade	0
-jadis	Autrefois, au temps passé, dans le passé lointain, il y a longtemps.
-jaguar	Grand mammifère carnivore de la famille des félidés en voie de disparition mais que l’on peut rencontrer du Mexique au Brésil.
-jaguarondi	Petit félin d'Amérique tropicale au pelage uni.
-jaguarondis		jaguarondi	0
-jaguars		jaguar	0
-jailli		jaillir	56
-jaillie		jaillir	45
-jaillies		jaillir	51
-jaillîmes		jaillir	3
-jaillir	Sortir impétueusement, en parlant surtout de l’eau ou de tout autre fluide.
-jaillira		jaillir	44
-jaillirai		jaillir	16
-jailliraient		jaillir	63
-jaillirais		jaillir	18
-jaillirait		jaillir	49
-jailliras		jaillir	7
-jaillirent		jaillir	48
-jaillirez		jaillir	5
-jailliriez		jaillir	4
-jaillirions		jaillir	11
-jaillirons		jaillir	10
-jailliront		jaillir	54
-jaillis		jaillir	72
-jaillissaient		jaillir	75
-jaillissais		jaillir	29
-jaillissait		jaillir	71
-jaillissant	Qui jaillit.
-jaillissante		jaillissant	23
-jaillissantes		jaillissant	1
-jaillissants		jaillissant	9
-jaillisse		jaillir	85
-jaillissement	Action de jaillir.
-jaillissements		jaillissement	0
-jaillissent		jaillir	69
-jaillisses		jaillir	76
-jaillissez		jaillir	30
-jaillissiez		jaillir	13
-jaillissions		jaillir	19
-jaillissons		jaillir	27
-jaillit		jaillir	80
-jaillîtes		jaillir	2
-jain	Relatif aux Jaïns et au jaïnisme.
-jaïna	Adepte du jaïnisme, secte religieuse fort répandue dans le sud de l’Inde, dont les trois articles principaux sont la non-violence, l'ouverture d’esprit, et le …
-jaïnas		jaïna	0
-jaïne	Femme adepte du jaïnisme, jaïna.
-jaïnes		jaïn	1
-jaïnisme	Religion qui insiste sur les concepts d’ahimsa (non-violence) et de karma, et met l’accent sur l’ascétisme.
-jaïnismes		jaïnisme	0
-jaïns		jaïn	9
-jais	Bois fossile, assez dur pour être taillé.
-jaja	Vin de table.
-jajas		jaja	0
-jalap	Jalap tubéreux (Ipomoea purga), dont la fleur ressemble à celle du liseron.
-jalapeno	Autre orthographe de jalapeño.
-jalaps		jalap	0
-jale	Sorte de cuveau servant notamment aux vendangeurs.
-jales		jale	0
-jalon	Repère balisé que l’on plante en terre pour prendre des alignements ou déterminer une direction.
-jalonna		jalonner	33
-jalonnai		jalonner	22
-jalonnaient		jalonner	42
-jalonnais		jalonner	52
-jalonnait		jalonner	40
-jalonnâmes		jalonner	3
-jalonnant		jalonner	43
-jalonnas		jalonner	12
-jalonnasse		jalonner	6
-jalonnassent		jalonner	17
-jalonnasses		jalonner	8
-jalonnassiez		jalonner	14
-jalonnassions		jalonner	25
-jalonnât		jalonner	20
-jalonnâtes		jalonner	2
-jalonne		jalonner	64
-jalonnée	Féminin singulier de jalonné.
-jalonnées		jalonner	36
-jalonnement	Action de jalonner.
-jalonnements		jalonnement	0
-jalonnent		jalonner	41
-jalonner	Planter des jalons de distance en distance, soit pour un alignement, soit pour déterminer les différents points d’un plan.
-jalonnera		jalonner	21
-jalonnerai		jalonner	16
-jalonneraient		jalonner	28
-jalonnerais		jalonner	18
-jalonnerait		jalonner	26
-jalonneras		jalonner	7
-jalonnèrent		jalonner	24
-jalonnerez		jalonner	5
-jalonneriez		jalonner	4
-jalonnerions		jalonner	11
-jalonnerons		jalonner	10
-jalonneront		jalonner	15
-jalonnés		jalonner	53
-jalonneur	Homme chargé de jalonner.
-jalonneurs		jalonneur	0
-jalonnez		jalonner	30
-jalonniez		jalonner	13
-jalonnions		jalonner	19
-jalonnons		jalonner	27
-jalons		jalon	0
-jalousa		jalouser	33
-jalousai		jalouser	22
-jalousaient		jalouser	42
-jalousais		jalouser	52
-jalousait		jalouser	40
-jalousâmes		jalouser	3
-jalousant		jalouser	43
-jalousas		jalouser	12
-jalousasse		jalouser	6
-jalousassent		jalouser	17
-jalousasses		jalouser	8
-jalousassiez		jalouser	14
-jalousassions		jalouser	25
-jalousât		jalouser	20
-jalousâtes		jalouser	2
-jalouse	Celle qui a de la jalousie à propos de quelqu’un ou de quelque chose.
-jalousée		jalouser	45
-jalousées		jalouser	51
-jalousement	Avec jalousie, par jalousie.
-jalousent		jalouser	41
-jalouser	Avoir de la jalousie contre quelqu’un.
-jalousera		jalouser	44
-jalouserai		jalouser	50
-jalouseraient		jalouser	28
-jalouserais		jalouser	60
-jalouserait		jalouser	26
-jalouseras		jalouser	57
-jalousèrent		jalouser	24
-jalouserez		jalouser	5
-jalouseriez		jalouser	4
-jalouserions		jalouser	11
-jalouserons		jalouser	10
-jalouseront		jalouser	15
-jalouses		jaloux	1
-jalousez		jalouser	30
-jalousie	Dépit que l’on a de ne pas obtenir ou posséder ce qu’un autre obtient ou possède, comme la richesse, les succès, la gloire, les talents, etc.
-jalousies		jalousie	0
-jalousiez		jalouser	13
-jalousions		jalouser	19
-jalousons		jalouser	27
-jaloux	Qui éprouve une envie se manifestant par le désir qu'une personne bénéficiant d'une situation perçue comme meilleure à la sienne perde son avantage.
-jam	Confiture.
-jamaïcain	Relatif à la Jamaïque.
-jamaïcaine		jamaïcain	23
-jamaïcaines		jamaïcain	1
-jamaïcains		jamaïcain	0
-jamaïquain	Variante orthographique de jamaïcain.
-jamaïquaine		jamaïquain	23
-jamaïquaines		jamaïquain	1
-jamaïquains		jamaïquain	9
-jamais	En un temps quelconque, futur ou hypothétique.
-jambage	Élément vertical qui assure l’étanchéité en partie latérale entre le mur et l’ouverture (exemple : cheminée, linteau d’une porte, etc.).
-jambages		jambage	0
-jambalaya	Spécialité culinaire à base de riz de la Louisiane et de Provence.
-jambalayas		jambalaya	0
-jambart	Synonyme de jambière.
-jambarts		jambart	0
-jambe	Partie de chacun des deux membres inférieurs de l’être humain, entre le genou et le pied.
-jambée		jambé	23
-jambées		jamber	51
-jamber	Tenir la jambe à, importuner.
-jambes		jambe	0
-jambette	Petit couteau sans ressort, dont la lame se replie dans le manche.
-jambettes		jambette	0
-jambier	Qui a rapport à la jambe.
-jambière	Pièce d’étoffe ou de cuir, voire de métal, guêtre haute qui protège la jambe.
-jambières		jambier	1
-jambiers		jambier	0
-jambon	Cuisse (partie supérieure de la patte arrière) d’un suidé (porc ou sanglier), qui a été préparée par cuisson, salage, fumage ou boucanage, comme nourriture.
-jambonneau	Partie de la jambe du porc située au-dessous du genou et préparée en charcuterie.
-jambonneaux		jambonneau	0
-jambonnette	Couenne farcie de viande de porc, notamment de l'épaule et du jambon désossé, on lui donne généralement la forme d'un petit jambon que l'on fait cuire dans un …
-jambonnettes		jambonnette	0
-jambons		jambon	0
-jamboree	Rassemblement de scouts.
-jamborees		jamboree	0
-jambose	Fruit du jambosier.
-jamboses		jambose	0
-jambosier	Arbuste ou arbre originaire d’Inde et de Malaisie mais répandu dans toutes les régions tropicales, aux jolies fleurs garnies de plus de 300 étamines exhalant u…
-jambosiers		jambosier	0
-jamerose	Variante de jambose.
-jameroses		jamerose	0
-jamerosier	Synonyme de jambosier.
-jamerosiers		jamerosier	0
-jams		jam	0
-jan	Chacune des deux tables du jeu de trictrac.
-jangada	Radeau à voile utilisé en Amérique du Sud.
-jangadas		jangada	0
-janissaire	Soldat d’élite de l’infanterie turque, qui servait à la garde du sultan.
-janissaires		janissaire	0
-janotisme	Construction fautive d’une phrase, maladroite et équivoque, via une dissociation interne des éléments significatifs.
-janotismes		janotisme	0
-jans		jan	0
-jansénien	Janséniste.
-jansénienne		jansénien	23
-janséniennes		jansénien	1
-janséniens		jansénien	9
-jansénisme	Doctrine de Jansénius sur la grâce et la prédestination.
-jansénismes		jansénisme	0
-janséniste	Relatif au jansénisme.
-jansénistes		janséniste	123
-jante	Pièce de bois ou de métal courbée, à surface extérieure plate ou usinée, formant la circonférence d'une roue ou d'une poulie et recevant les rayons, le voile o…
-jantes		jante	0
-janthine	Gastéropode marin comestible de la Méditerranée.
-janthines		janthine	0
-jantier	Synonyme de jantière.
-jantière	Machine pour assembler les jantes d’une roue.
-jantières		jantière	0
-jantiers		jantier	0
-jantille	Aube de la zone d’un moulin à eau.
-jantiller	Mettre des jantilles à la roue d’un moulin, etc.
-jantillés		jantiller	38
-janvier	Premier mois de l’année du calendrier grégorien, qui compte 31 jours.
-janviers		janvier	0
-japon	Porcelaine importée du Japon.
-japonais	Relatif au Japon, à ses habitants et à sa culture.
-japonaise	Synonyme de chabo (race de poules).
-japonaiserie	Curiosité exotique provenant ou s’inspirant du Japon.
-japonaiseries		japonaiserie	0
-japonaises		japonais	1
-japonerie	Japonaiserie.
-japoneries		japonerie	0
-japonisa		japoniser	33
-japonisai		japoniser	22
-japonisaient		japoniser	32
-japonisais		japoniser	29
-japonisait		japoniser	34
-japonisâmes		japoniser	3
-japonisant	Philologue ou historien qui s’occupe de la langue ou de l’histoire du Japon.
-japonisante	Philologue ou historienne qui s’occupe de la langue ou de l’histoire du Japon.
-japonisantes		japonisante	0
-japonisants		japonisant	9
-japonisas		japoniser	12
-japonisasse		japoniser	6
-japonisassent		japoniser	17
-japonisasses		japoniser	8
-japonisassiez		japoniser	14
-japonisassions		japoniser	25
-japonisât		japoniser	20
-japonisâtes		japoniser	2
-japonisé		japoniser	46
-japonisée		japoniser	37
-japonisées		japoniser	36
-japonisent		japoniser	31
-japoniser	Rendre plus japonais.
-japonisera		japoniser	21
-japoniserai		japoniser	16
-japoniseraient		japoniser	28
-japoniserais		japoniser	18
-japoniserait		japoniser	26
-japoniseras		japoniser	7
-japonisèrent		japoniser	24
-japoniserez		japoniser	5
-japoniseriez		japoniser	4
-japoniserions		japoniser	11
-japoniserons		japoniser	10
-japoniseront		japoniser	15
-japonisés		japoniser	38
-japonisez		japoniser	30
-japonisiez		japoniser	13
-japonisions		japoniser	19
-japonisme	Influence japonaise.
-japonismes		japonisme	0
-japonisons		japoniser	27
-japoniste	Celui qui étudie la langue, les choses du Japon.
-japonistes		japoniste	0
-japons		japon	0
-jappa		japper	39
-jappai		japper	22
-jappaient		japper	42
-jappais		japper	29
-jappait		japper	40
-jappâmes		japper	3
-jappant	Qui jappe.
-jappas		japper	12
-jappasse		japper	6
-jappassent		japper	17
-jappasses		japper	8
-jappassiez		japper	14
-jappassions		japper	25
-jappât		japper	20
-jappâtes		japper	2
-jappe	Propension à bavarder.
-jappement	Petit aboiement.
-jappements		jappement	0
-jappent		japper	41
-japper	Aboyer, pour désigner l’aboiement des petits chiens.
-jappera		japper	21
-japperai		japper	16
-japperaient		japper	28
-japperais		japper	18
-japperait		japper	26
-japperas		japper	7
-jappèrent		japper	48
-japperez		japper	5
-japperiez		japper	4
-japperions		japper	11
-japperons		japper	10
-japperont		japper	15
-jappes		japper	66
-jappeur	Qui jappe.
-jappeurs		jappeur	9
-jappeuse		jappeur	23
-jappeuses		jappeur	1
-jappez		japper	30
-jappiez		japper	13
-jappions		japper	19
-jappons		japper	27
-jaque	Infrutescence du jaquier.
-jaquelin	Jacqueline ou jaqueline.
-jaqueline	Cruche de grès à long ventre, en usage dans le Nord.
-jaquelines		jaqueline	0
-jaquelins		jaquelin	0
-jaquemart	Figure de fer, de plomb ou de fonte, qui représente un homme armé, et qu’on mettait au Moyen Âge sur le haut d’une tour pour frapper les heures avec un marteau…
-jaquemarts		jaquemart	0
-jaques		jaque	0
-jaquet	Bécassine sourde ou petite bécassine.
-jaquets		jaquet	0
-jaquette	Robe que portaient les petits garçons.
-jaquettes		jaquette	0
-jaquier	Jaquetier
-jaquiers		jaquier	0
-jar	Banc de gros graviers et de sable, amoncellements, pouvant remodeler le lit du fleuve d’une année sur l’autre, et utilisés pour l’empierrement des chaussées, l…
-jard	Sorte de poil, long et raide et de faible densité, qui assure la couverture externe des mammifères, par opposition au duvet.
-jarde	Tare molle du cheval.
-jardes		jarde	0
-jardin	Lieu ordinairement clos de murailles, de haies, de fossés, dans lequel on cultive des légumes, des fleurs, des arbres, etc.
-jardina		jardiner	33
-jardinage	Art de cultiver les jardins, ou travail que l’on fait aux jardins.
-jardinages		jardinage	0
-jardinai		jardiner	22
-jardinaient		jardiner	32
-jardinais		jardiner	29
-jardinait		jardiner	119
-jardinâmes		jardiner	3
-jardinant		jardiner	43
-jardinas		jardiner	12
-jardinasse		jardiner	6
-jardinassent		jardiner	17
-jardinasses		jardiner	8
-jardinassiez		jardiner	14
-jardinassions		jardiner	25
-jardinât		jardiner	20
-jardinâtes		jardiner	2
-jardine		jardiner	130
-jardinée		jardiner	37
-jardinées		jardiner	36
-jardinent		jardiner	41
-jardiner	Travailler à un jardin, en parlant d’une personne qui en fait son passe-temps.
-jardinera		jardiner	21
-jardinerai		jardiner	50
-jardineraient		jardiner	28
-jardinerais		jardiner	18
-jardinerait		jardiner	26
-jardineras		jardiner	57
-jardinèrent		jardiner	24
-jardinerez		jardiner	5
-jardinerie	Établissement commercial, souvent de dimension importante, offrant tout ce qui concerne le jardin.
-jardineries		jardinerie	0
-jardineriez		jardiner	4
-jardinerions		jardiner	11
-jardinerons		jardiner	10
-jardineront		jardiner	15
-jardinés		jardiner	38
-jardinet	Petit jardin.
-jardinets		jardinet	0
-jardineuse		jardineux	23
-jardineuses		jardineux	1
-jardineux	Dont le vert n’est pas net et est mêlé de brun.
-jardinez		jardiner	30
-jardinier	Relatif aux jardins et au jardinage.
-jardinière	Celle dont le métier est de travailler aux jardins, ou qui cultive un jardin pour en vendre les produits.
-jardinières		jardinière	0
-jardiniers		jardinier	0
-jardiniez		jardiner	13
-jardinions		jardiner	19
-jardiniste	Architecte de jardins.
-jardinistes		jardiniste	0
-jardinons		jardiner	27
-jardins		jardin	0
-jardon	Tare molle située à la face arrière du jarret.
-jardons		jardon	0
-jards		jard	0
-jargon	Vocabulaire particulier d'un groupe social ou professionnel, trouvant son origine dans la tradition ou la technologie et dans lequel peut parfois se complaire …
-jargonaphasie	Trouble du langage où l'on observe une déformation et/ou une substitution des mots qui sont parfois choisis de manière imprécise par le malade qui n'a pas cons…
-jargonaphasies		jargonaphasie	0
-jargonna		jargonner	33
-jargonnai		jargonner	22
-jargonnaient		jargonner	32
-jargonnais		jargonner	29
-jargonnait		jargonner	34
-jargonnâmes		jargonner	3
-jargonnant	Caractérise un exposé, un discours… qui tient du jargon.
-jargonnante		jargonnant	23
-jargonnantes		jargonnant	1
-jargonnants		jargonnant	9
-jargonnas		jargonner	12
-jargonnasse		jargonner	6
-jargonnassent		jargonner	17
-jargonnasses		jargonner	8
-jargonnassiez		jargonner	14
-jargonnassions		jargonner	25
-jargonnât		jargonner	20
-jargonnâtes		jargonner	2
-jargonne		jargonner	64
-jargonnent		jargonner	41
-jargonner	S'exprimer en ayant recours à un jargon de manière prétentieuse dans le but de paraître plus malin qu'on ne l'est, en tenant des propos pouvant relever du char…
-jargonnera		jargonner	21
-jargonnerai		jargonner	16
-jargonneraient		jargonner	28
-jargonnerais		jargonner	18
-jargonnerait		jargonner	26
-jargonneras		jargonner	7
-jargonnèrent		jargonner	24
-jargonnerez		jargonner	5
-jargonneriez		jargonner	4
-jargonnerions		jargonner	11
-jargonnerons		jargonner	10
-jargonneront		jargonner	15
-jargonnes		jargonner	66
-jargonnesque	Qui tient du jargon.
-jargonnesques		jargonnesque	0
-jargonneur	Personne qui jargonne.
-jargonneurs		jargonneur	0
-jargonneuse	Personne qui jargonne.
-jargonneuses		jargonneuse	0
-jargonneux	Qui est écrit avec des mots de jargon, qui est difficile à comprendre sans être spécialiste.
-jargonnez		jargonner	30
-jargonniez		jargonner	13
-jargonnions		jargonner	19
-jargonnons		jargonner	27
-jargons		jargon	0
-jarnicoton	Sorte de juron.
-jarnigoine	Intelligence ; capacité de réflexion relative à l’analyse et à la compréhension.
-jarnigoines		jarnigoine	0
-jarosse	Synonyme de gesse chiche
-jarosses		jarosse	0
-jarousse	Variante de jarosse, synonyme de gesse chiche.
-jarousses		jarousse	0
-jarovisation	Vernalisation, printanisation.
-jarovisations		jarovisation	0
-jarre	Récipient généralement en terre cuite, de forme ovoïde et de différentes dimensions, où l’on conserve l’eau, l’huile, les olives.
-jarres		jarre	0
-jarret	La partie du corps humain située entre la cuisse et le mollet, et derrière le genou et qui prend le nom de fosse poplitée (anciennement creux poplité) en anato…
-jarreta		jarreter	39
-jarretai		jarreter	22
-jarretaient		jarreter	32
-jarretais		jarreter	29
-jarretait		jarreter	34
-jarretâmes		jarreter	3
-jarretant		jarreter	35
-jarretas		jarreter	12
-jarretasse		jarreter	6
-jarretassent		jarreter	17
-jarretasses		jarreter	8
-jarretassiez		jarreter	14
-jarretassions		jarreter	25
-jarretât		jarreter	20
-jarretâtes		jarreter	2
-jarreté	Qualifie tout quadrupède qui a les jambes de derrière tournées en dedans, et si peu ouvertes que les deux jarrets se touchent presque en marchant.
-jarretée		jarreter	37
-jarretées		jarreter	36
-jarretelle	Sorte de jarretière terminée par une pince en caoutchouc, cousue ou accrochée au corset, à une gaine, ou à une ceinture, (le porte-jarretelle), et servant à re…
-jarretelles		jarretelle	0
-jarrètent		jarreter	31
-jarreter	Mettre des jarretières.
-jarrètera		jarreter	21
-jarrèterai		jarreter	16
-jarrèteraient		jarreter	28
-jarrèterais		jarreter	18
-jarrèterait		jarreter	26
-jarrèteras		jarreter	7
-jarretèrent		jarreter	24
-jarrèterez		jarreter	5
-jarrèteriez		jarreter	4
-jarrèterions		jarreter	11
-jarrèterons		jarreter	10
-jarrèteront		jarreter	15
-jarretés		jarreter	38
-jarretez		jarreter	30
-jarretière	Sorte de ruban, de tissu élastique entourant la jambe au-dessus ou au-dessous du genou et qui maintient le bas.
-jarretières		jarretière	0
-jarretiez		jarreter	13
-jarretions		jarreter	19
-jarreton	Morceau de viande similaire à un jarret, mais de taille plus petite.
-jarretons		jarreter	27
-jarrets		jarret	0
-jarrette		jarreter	79
-jarrettent		jarreter	31
-jarrettera		jarreter	21
-jarretterai		jarreter	16
-jarretteraient		jarreter	28
-jarretterais		jarreter	18
-jarretterait		jarreter	26
-jarretteras		jarreter	7
-jarretterez		jarreter	5
-jarretteriez		jarreter	4
-jarretterions		jarreter	11
-jarretterons		jarreter	10
-jarretteront		jarreter	15
-jarrettes		jarreter	66
-jars	Mâle de l’oie domestique.
-jarta		jarter	33
-jartai		jarter	22
-jartaient		jarter	32
-jartais		jarter	29
-jartait		jarter	34
-jartâmes		jarter	3
-jartant		jarter	35
-jartas		jarter	12
-jartasse		jarter	6
-jartassent		jarter	17
-jartasses		jarter	8
-jartassiez		jarter	14
-jartassions		jarter	25
-jartât		jarter	20
-jartâtes		jarter	2
-jarté		jarter	46
-jartée		jarter	37
-jartées		jarter	36
-jartent		jarter	31
-jarter	Enlever, renvoyer quelque chose ou quelqu’un, dégager avec l'idée généralement de rapidité et de violence.
-jartera		jarter	21
-jarterai		jarter	16
-jarteraient		jarter	28
-jarterais		jarter	18
-jarterait		jarter	26
-jarteras		jarter	7
-jartèrent		jarter	24
-jarterez		jarter	5
-jarteriez		jarter	4
-jarterions		jarter	11
-jarterons		jarter	10
-jarteront		jarter	15
-jartés		jarter	38
-jartez		jarter	30
-jartiez		jarter	13
-jartions		jarter	19
-jartons		jarter	27
-jas	Barre transversale ajustée par le milieu à l’extrémité de la verge d’une ancre à jas, servant à faire mordre une de ses pattes ou becs sur le fond.
-jasa		jaser	33
-jasai		jaser	22
-jasaient		jaser	42
-jasais		jaser	29
-jasait		jaser	40
-jasâmes		jaser	3
-jasant	Qui jase, causant.
-jasante		jasant	23
-jasantes		jasant	1
-jasants		jasant	9
-jasas		jaser	12
-jasasse		jaser	6
-jasassent		jaser	17
-jasasses		jaser	8
-jasassiez		jaser	14
-jasassions		jaser	25
-jasât		jaser	20
-jasâtes		jaser	2
-jase		jaser	64
-jasement	Action de jaser.
-jasements		jasement	0
-jasent		jaser	41
-jaser	Pousser son cri, en parlant des geais, des pies et de quelques autres oiseaux.
-jasera		jaser	21
-jaserai		jaser	16
-jaseraient		jaser	28
-jaserais		jaser	18
-jaserait		jaser	49
-jaseran	Amanita caesarea ou amanite des Césars.
-jaserans	Pluriel de jaseran (« cotte de maille », « chaine de cou »).	jaseran
-jaseras		jaser	7
-jasèrent		jaser	24
-jaserez		jaser	5
-jaseriez		jaser	4
-jaserions		jaser	11
-jaseron	Variante de jaseran
-jaserons		jaseron	0
-jaseront		jaser	54
-jases		jaser	77
-jasette	Entretien plus ou moins familier de courte durée.
-jasettes		jasette	0
-jaseur	Qui jase.
-jaseurs		jaseur	9
-jaseuse	Celle qui jase.
-jaseuses		jaseur	1
-jasez		jaser	30
-jasiez		jaser	13
-jasione	Genre de la famille des campanulacées.
-jasiones		jasione	0
-jasions		jaser	19
-jasmin	Arbustes sarmenteux du genre Jasminum, de la famille des Oleaceae, aux fleurs souvent jaunes ou blanches et dont plusieurs espèces cultivées ont des fleurs trè…
-jasminé	Qui a le parfum du jasmin.
-jasminée		jasminé	23
-jasminées	Famille de plantes dicotylédones, appartenant aux corolliflores d’Augustin Pyrame de Candolle, arbres ou arbrisseaux indigènes des régions chaudes de l’ancien …
-jasminés		jasminé	9
-jasmins		jasmin	0
-jasons		jaser	27
-jaspa		jasper	33
-jaspai		jasper	22
-jaspaient		jasper	42
-jaspais		jasper	29
-jaspait		jasper	34
-jaspâmes		jasper	3
-jaspant		jasper	35
-jaspas		jasper	12
-jaspasse		jasper	6
-jaspassent		jasper	17
-jaspasses		jasper	8
-jaspassiez		jasper	14
-jaspassions		jasper	25
-jaspât		jasper	20
-jaspâtes		jasper	2
-jaspé	Qui est peint et bigarré, naturellement ou artificiellement, de manière à imiter le jaspe.
-jaspée		jasper	37
-jaspées		jasper	51
-jaspent		jasper	31
-jasper	Bigarrer de diverses couleurs en imitant le jaspe.
-jaspera		jasper	21
-jasperai		jasper	16
-jasperaient		jasper	28
-jasperais		jasper	18
-jasperait		jasper	26
-jasperas		jasper	7
-jaspèrent		jasper	24
-jasperez		jasper	5
-jasperiez		jasper	4
-jasperions		jasper	11
-jasperon	Gros bouillon entier pour les bordures de passementerie
-jasperons		jasperon	0
-jasperont		jasper	15
-jaspés		jasper	53
-jaspez		jasper	30
-jaspiez		jasper	13
-jaspina		jaspiner	33
-jaspinai		jaspiner	22
-jaspinaient		jaspiner	42
-jaspinais		jaspiner	52
-jaspinait		jaspiner	40
-jaspinâmes		jaspiner	3
-jaspinant		jaspiner	35
-jaspinas		jaspiner	12
-jaspinasse		jaspiner	6
-jaspinassent		jaspiner	17
-jaspinasses		jaspiner	8
-jaspinassiez		jaspiner	14
-jaspinassions		jaspiner	25
-jaspinât		jaspiner	20
-jaspinâtes		jaspiner	2
-jaspine		jaspiner	64
-jaspinée		jaspiner	37
-jaspinées		jaspiner	36
-jaspinent		jaspiner	41
-jaspiner	Jaser, bavarder.
-jaspinera		jaspiner	21
-jaspinerai		jaspiner	16
-jaspineraient		jaspiner	28
-jaspinerais		jaspiner	18
-jaspinerait		jaspiner	26
-jaspineras		jaspiner	7
-jaspinèrent		jaspiner	24
-jaspinerez		jaspiner	5
-jaspineriez		jaspiner	4
-jaspinerions		jaspiner	11
-jaspinerons		jaspiner	10
-jaspineront		jaspiner	15
-jaspinés		jaspiner	38
-jaspinez		jaspiner	30
-jaspiniez		jaspiner	13
-jaspinions		jaspiner	19
-jaspinons		jaspiner	27
-jaspions		jasper	19
-jaspons		jasper	27
-jaspure	Jasper, décorer, à l'aide d'une base de couleurs la tranche ou le cuir d'un livre.
-jaspures		jaspure	0
-jass	Jeu de cartes suisse, très proche de la belote française.
-jassa		jasser	39
-jassai		jasser	55
-jassaient		jasser	42
-jassais		jasser	52
-jassait		jasser	40
-jassâmes		jasser	68
-jassant	Participe présent de jasser (au sens du jeu de cartes).	jasser
-jassas		jasser	83
-jassasse		jasser	81
-jassassent		jasser	78
-jassasses		jasser	87
-jassassiez		jasser	88
-jassassions		jasser	90
-jassât		jasser	62
-jassâtes		jasser	84
-jasse	Sorte d'enclos dans lequel les moutons de transhumance passaient la nuit.
-jassent		jasser	41
-jasser	Autre orthographe de yasser (jouer au yass).
-jassera		jasser	44
-jasserai		jasser	50
-jasseraient		jasser	63
-jasserais		jasser	60
-jasserait		jasser	49
-jasseras		jasser	57
-jassèrent		jasser	48
-jasserez		jasser	58
-jasseriez		jasser	74
-jasserions		jasser	82
-jasserons		jasser	61
-jasseront		jasser	54
-jasses	Deuxième personne du singulier du présent de l’indicatif de jasser (au sens du jeu de cartes).	jasser
-jasseur	Joueur de jass.
-jasseurs		jasseur	0
-jasseuse	Joueuse de jass.
-jasseuses		jasseuse	0
-jassez		jasser	47
-jassiez		jasser	67
-jassions		jasser	65
-jassons		jasser	59
-jataka	Contes mythologiques qui racontent les vies antérieures de Bouddha.
-jatakas		jataka	0
-jāti	Découpage de la société indienne en 4 635 professions.
-jatte	Espèce de vase rond, tout d’une pièce et sans rebord, de profondeur intermédiaire entre un grand bol et une écuelle, généralement en terre cuite, en faïence ou…
-jattée	Contenu d'une jatte.
-jattées		jattée	0
-jattes		jatte	0
-jauge	Instrument servant à effectuer une mesure.
-jaugea		jauger	39
-jaugeage	Action de jauger.
-jaugeages		jaugeage	0
-jaugeai		jauger	22
-jaugeaient		jauger	32
-jaugeais		jauger	29
-jaugeait		jauger	40
-jaugeâmes		jauger	3
-jaugeant		jauger	43
-jaugeas		jauger	12
-jaugeasse		jauger	6
-jaugeassent		jauger	17
-jaugeasses		jauger	8
-jaugeassiez		jauger	14
-jaugeassions		jauger	25
-jaugeât		jauger	20
-jaugeâtes		jauger	2
-jaugée		jauger	45
-jaugées		jauger	36
-jaugent		jauger	41
-jaugeons		jauger	27
-jauger	Mesurer un tonneau, une futaille, et en général un récipient quelconque, pour voir s’il est de la mesure dont il doit être ou pour voir quel est son contenu, à…
-jaugera		jauger	21
-jaugerai		jauger	16
-jaugeraient		jauger	28
-jaugerais		jauger	18
-jaugerait		jauger	26
-jaugeras		jauger	7
-jaugèrent		jauger	24
-jaugerez		jauger	5
-jaugeriez		jauger	4
-jaugerions		jauger	11
-jaugerons		jauger	10
-jaugeront		jauger	15
-jaugés		jauger	53
-jaugeur	Qui jauge ; qui évalue.
-jaugeurs		jaugeur	9
-jaugeuse	Celle dont l’emploi est de jauger.
-jaugeuses		jaugeur	1
-jaugez		jauger	47
-jaugiez		jauger	13
-jaugions		jauger	19
-jaumière	Ouverture dans la voûte d’un navire pour le passage de la mèche du gouvernail.
-jaumières		jaumière	0
-jaunasse	Tirant sur le jaune.
-jaunasses		jaunasse	0
-jaunâtre	Qui tire sur le jaune.
-jaunâtres		jaunâtre	0
-jaune	Désigne une couleur du spectre située entre le vert et l’orange.
-jaunes		jaune	0
-jaunet	Un peu jaune.
-jaunets		jaunet	9
-jaunette		jaunet	23
-jaunettes		jaunet	1
-jauni	Devenu jaune.
-jaunie		jauni	23
-jaunies		jauni	1
-jaunîmes		jaunir	3
-jaunir	Rendre jaune, peindre ou teindre en jaune.
-jaunira		jaunir	44
-jaunirai		jaunir	16
-jauniraient		jaunir	28
-jaunirais		jaunir	18
-jaunirait		jaunir	26
-jauniras		jaunir	7
-jaunirent		jaunir	24
-jaunirez		jaunir	5
-jauniriez		jaunir	4
-jaunirions		jaunir	11
-jaunirons		jaunir	10
-jauniront		jaunir	54
-jaunis		jauni	9
-jaunissage	Opération industrielle qui consiste à jaunir un objet.
-jaunissages		jaunissage	0
-jaunissaient		jaunir	75
-jaunissais		jaunir	29
-jaunissait		jaunir	71
-jaunissant	Qui est en train de jaunir.
-jaunissante	Féminin singulier de jaunissant.
-jaunissantes		jaunissant	1
-jaunissants		jaunissant	9
-jaunisse	Nom familier de l’ictère.
-jaunissement	Le fait de devenir jaune.
-jaunissements		jaunissement	0
-jaunissent		jaunir	69
-jaunisses		jaunisse	0
-jaunissez		jaunir	30
-jaunissiez		jaunir	13
-jaunissions		jaunir	19
-jaunissons		jaunir	27
-jaunit		jaunir	80
-jaunîtes		jaunir	2
-java	Danse à trois temps et à cadence rapide et qui se danse à petits pas.
-javanais	Relatif à l’île de Java, ou qui en est originaire.
-javanaise	Chatte de race javanaise.
-javanaises		javanais	1
-javart	Sorte de furoncle dur et douloureux, qui vient au pied du cheval et du bœuf, entre le paturon et la couronne.
-javarts		javart	0
-javas		java	0
-javascript	Programme écrit en Javascript.
-javascripts		javascript	0
-javeau	Île formée de sable et de limon par un débordement d’eau.
-javeaux		javeau	0
-javel	Ellipse de eau de Javel.
-javela		javeler	33
-javelage	Action de javeler du blé, du sel, ou résultat de cette action.
-javelages		javelage	0
-javelai		javeler	22
-javelaient		javeler	32
-javelais		javeler	29
-javelait		javeler	34
-javelâmes		javeler	3
-javelant		javeler	35
-javelas		javeler	12
-javelasse		javeler	6
-javelassent		javeler	17
-javelasses		javeler	8
-javelassiez		javeler	14
-javelassions		javeler	25
-javelât		javeler	20
-javelâtes		javeler	2
-javelé	Dont le grain est devenu noir et pesant par la pluie qui les a mouillés tandis qu’ils étaient en javelle.
-javelée		javeler	37
-javelées		javeler	36
-javèlent		javeler	31
-javeler	Mettre en javelle.
-javèlera		javeler	21
-javèlerai		javeler	16
-javèleraient		javeler	28
-javèlerais		javeler	18
-javèlerait		javeler	26
-javèleras		javeler	7
-javelèrent		javeler	24
-javèlerez		javeler	5
-javèleriez		javeler	4
-javèlerions		javeler	11
-javèlerons		javeler	10
-javèleront		javeler	15
-javelés		javeler	38
-javeleur	Après le fauchage, ouvrier agricole qui forme les javelles afin de mettre la moisson à l’abri.
-javeleurs		javeleur	0
-javeleuse	Après le fauchage, ouvrière agricole qui forme les javelles afin de mettre la moisson à l’abri.
-javeleuses		javeleuse	0
-javelez		javeler	30
-javeliez		javeler	13
-javeline	Espèce de dard long et menu.
-javelines		javeline	0
-javelions		javeler	19
-javelle	Quantité de tiges de blé, de seigle, d’avoine que le faucheur peut faucher d’un seul coup.
-javellent		javeler	31
-javellera		javeler	21
-javellerai		javeler	16
-javelleraient		javeler	28
-javellerais		javeler	18
-javellerait		javeler	26
-javelleras		javeler	7
-javellerez		javeler	5
-javelleriez		javeler	4
-javellerions		javeler	11
-javellerons		javeler	10
-javelleront		javeler	15
-javelles		javelle	132
-javellisa		javelliser	33
-javellisai		javelliser	22
-javellisaient		javelliser	32
-javellisais		javelliser	29
-javellisait		javelliser	34
-javellisâmes		javelliser	3
-javellisant		javelliser	35
-javellisas		javelliser	12
-javellisasse		javelliser	6
-javellisassent		javelliser	17
-javellisasses		javelliser	8
-javellisassiez		javelliser	14
-javellisassions		javelliser	25
-javellisât		javelliser	20
-javellisâtes		javelliser	2
-javellisation	Action de javelliser, stérilisation avec de l’eau de Javel.
-javellisations		javellisation	0
-javellisé	Traité à l’eau de Javel.
-javellisée		javellisé	23
-javellisées		javellisé	1
-javellisent		javelliser	31
-javelliser	Désinfecter avec de l’eau de Javel.
-javellisera		javelliser	21
-javelliserai		javelliser	16
-javelliseraient		javelliser	28
-javelliserais		javelliser	18
-javelliserait		javelliser	26
-javelliseras		javelliser	7
-javellisèrent		javelliser	24
-javelliserez		javelliser	5
-javelliseriez		javelliser	4
-javelliserions		javelliser	11
-javelliserons		javelliser	10
-javelliseront		javelliser	15
-javellisés		javellisé	9
-javellisez		javelliser	30
-javellisiez		javelliser	13
-javellisions		javelliser	19
-javellisons		javelliser	27
-javelons		javeler	27
-javelot	Espèce de dard, arme de trait qu’on lançait avec la main.
-javelots		javelot	0
-javels		javel	0
-javotte	Femme bavarde.
-javottes		javotte	0
-jayet	Bois fossile, assez dur pour être taillé.
-jayets		jayet	0
-jazz	Style de musique afro-américaine né aux États-Unis au début du XXᵉ siècle, issu du croisement du blues, du ragtime et de la musique européenne.
-jazza		jazzer	33
-jazzai		jazzer	22
-jazzaient		jazzer	32
-jazzais		jazzer	29
-jazzait		jazzer	34
-jazzâmes		jazzer	3
-jazzant		jazzer	35
-jazzas		jazzer	12
-jazzasse		jazzer	6
-jazzassent		jazzer	17
-jazzasses		jazzer	8
-jazzassiez		jazzer	14
-jazzassions		jazzer	25
-jazzât		jazzer	20
-jazzâtes		jazzer	2
-jazzé		jazzer	46
-jazzée		jazzer	37
-jazzées		jazzer	36
-jazzent		jazzer	31
-jazzer	Faire du jazz.
-jazzera		jazzer	21
-jazzerai		jazzer	16
-jazzeraient		jazzer	28
-jazzerais		jazzer	18
-jazzerait		jazzer	26
-jazzeras		jazzer	7
-jazzèrent		jazzer	24
-jazzerez		jazzer	5
-jazzeriez		jazzer	4
-jazzerions		jazzer	11
-jazzerons		jazzer	10
-jazzeront		jazzer	15
-jazzés		jazzer	38
-jazzez		jazzer	30
-jazziez		jazzer	13
-jazzions		jazzer	19
-jazzique	Qui concerne ou évoque le jazz.
-jazziques		jazzique	0
-jazzistique	Qui se rapporte au jazz.
-jazzistiques		jazzistique	0
-jazzman	Jazziste, musicien de jazz.
-jazzmans		jazzman	0
-jazzmen		jazzman	0
-jazzons		jazzer	27
-jazzwoman	Jazziste, musicienne de jazz.
-jazzwomans		jazzwoman	0
-jazzwomen		jazzwoman	0
-jazzy	Proche du jazz, qui évoque le jazz.
+0jab	Sorte de coup de poing où le boxeur frappe son adversaire rapidement d’une courte distance.
+3adao	Danse traditionnelle de la Cornouaille, qui alterne rondes et figures par couples.
+7s		7	0
+3iru	Nom vernaculaire de trois espèces d’oiseaux proches des cigognes, l’une d’Amérique, la seconde d’Afrique et la troisième d’Asie, toutes caractérisées par un lo…
+6s		6	0
+3la		4er	x
+5ge	Opération qui consiste à creuser les rainures (jables) aux extrémités des douves ou des douelles.
+7s		7	0
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Rainure qu’on fait aux douves des tonneaux pour y loger les pièces constituant le fond.
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Garnir d’un jable.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5use	Machine servant à creuser les jables dans les douves des tonneaux.
+8s		8	0
+5z		5r	u
+4ière	Instrument servant à jabler, qui est fait comme un couteau à gaîne, à l’exception que la lame peut s’allonger et se raccourcir au besoin.
+8s		8	0
+5ez		4er	d
+5ons		4er	j
+4oir	Rabot de tonnelier, pour creuser les jables.
+7e	Instrument pour jabler.
+8s		8	0
+7s		7	0
+5ns		4er	r
+3orandi	Nom vernaculaire de plusieurs arbustes du genre Pilocarpus de la famille des Rutaceae (Rutacées), dont on extrait la pilocarpine : jaborandi de Guadeloupe, de …
+9s		9	0
+4t	Poche que les oiseaux ont dans la gorge et dans laquelle la nourriture qu’ils prennent est d’abord reçue et séjourne quelque temps avant de passer dans l’estom…
+5a		5er	x
+6ge	Action de jaboter.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+5ent		6r	v
+6r	Pousser des cris en secouant leur jabot, en parlant de certaines espèces d'oiseaux.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6ur	Personne qui jabote, bavard.
+8s		8	0
+7se	Personne qui jabote, bavarde.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+3s		3	0
+2camar	Nom normalisé donné à cinq genres d'oiseaux grimpeurs insectivores comprenant 18 espèces de l'ordre des piciformes et de la famille des galbulidés, apparentés …
+7s		7	0
+4na	Oiseau aquatique de taille moyenne (de 15 à 58 cm), vivement colorés de la famille des jacanidés avec des pattes, doigts et ongles allongées, ce pour se déplac…
+6s		6	0
+4pucayo	Nom vulgaire du Lecythis ollaria, arbre de la forêt amazonienne, dont les fruits (pyxides) nommés marmite de singe donnent des graines oléagineuses comestibles.
+as		a	0
+4randa	Genre d’arbres d’une dizaine de mètres ayant une couronne en forme de parasol et de superbes fleurs bleues à violettes, originaire d’Amérique du Sud où une tri…
+9s		9	0
+4ssa		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui jacasse.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Nom populaire de la pie bavarde.
+7ment	Action de jacasser, bavardage.
+bs		b	0
+7nt		7r	15
+7r	Crier comme la pie, pousser le cri particulier à son espèce.
+8a		8	l
+9i		8	g
+aent		8	1r
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8ie	Action de jacasser.
+as		a	0
+az		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7ur	Qui jacasse comme la pie ou qui a un chant bruyant.
+9s		9	9
+8se	Personne bavarde, indiscrète, prolixe, radoteuse.
+as		8r	1
+7z		7r	1b
+6ier	Personne qui a pour habitude de jacasser.
+7ère	Personne qui a pour habitude de jacasser.
+as		a	0
+7ers		9	0
+8z		6er	1v
+7ons		6er	j
+6ons		6er	r
+3ée	Nom vernaculaire d’une espèce de centaurée dont quelques variétés sont cultivées dans les jardins, à cause de la beauté de leurs fleurs.
+5s		5	0
+3ent	Relatif aux biens qui n’ont pas de propriétaire connu, d’une succession dont l’héritier n’apparaît pas.
+6e		6	31
+7s		6	1
+6s		6	0
+3hère	État d’une terre labourable dont on abandonne la culture durant un an, pour la laisser reposer.
+7s		7	0
+3inthe	Plante à bulbe, monocotylédone, cultivée pour sa fleur, appartenant aux genres Hyacinthus ou Hyacinthoides, famille des hyacinthacées (autrefois classée parmi …
+8s		8	0
+4ste	Membre de la Jeunesse agricole chrétienne (JAC).
+7s		7	0
+3k	Prise, fiche mâle.
+4et	Revêtement de la couronne d’une dent, imitant l’émail, employé comme prothèse esthétique.
+6s		6	0
+4pot	Prix très important, très grosse récompense d’argent.
+7s		7	0
+4s		4	0
+3o	Perroquet gris.
+4bée	Synonyme de séneçon de Jacob.
+7s		7	0
+5ien	Relatif à Jacobi, à ses travaux en mathématiques.
+8ne		8	n
+as		8	1
+8s		8	9
+6n	Moine ou moniale qui suit la règle de Saint-Dominique.
+7e	Religieuse dominicaine.
+8s		7	1
+7isme	Doctrine politique qui défend la souveraineté populaire et l’indivisibilité de la République française.
+bs		b	0
+7s		7	9
+6te	Royaliste britannique resté fidèle à Jacques II et à ses successeurs.
+8s		8	0
+5us	Ancienne monnaie d’or d’Angleterre, frappée sous Jacques Ier d'Angleterre et valant environ une guinée.
+4nas	Espèce de mousseline légèrement plus épaisse que le nansouk.
+4s		4	0
+4t	Variante orthographique de jaco.
+5s		5	0
+3quard	Métier à tisser destiné à tisser la soie.
+8s		8	0
+5e	Pourpoint à manches et rembourré, servant à la fois de vêtement et de protection, en usage au Moyen Âge.
+6line	Cruche ventrue, en grès, qui était en usage dans les Flandres.
+as		a	0
+6mart	Ressort situé au bas de la vis du balancier à frapper les monnaies, et servant à la faire relever lorsqu’elle a pincé l’espèce ou la médaille.
+as		a	0
+5ère	Cépage donnant du raisin blanc dont les grains à la peau épaisse sont serrés en grappes compactes.
+8s		8	0
+5erie	Insurrection des paysans et des classes populaires au Moyen Âge.
+9s		9	0
+6s	Sorte de sobriquet donné anciennement aux paysans.
+6t	Jeu analogue au tric-trac, qui se joue dans une boite à deux compartiments sur lesquels sont dessinés des triangles blancs et noirs.
+7s		7	0
+5ier	Variante de jaquier par rapprochement populaire avec Jacques.
+8s		8	0
+5ot	Oiseau qui jacasse, perroquet, geai ou pie.
+7s		7	0
+3ta		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ance	Action, habitude de se faire valoir en paroles.
+8s		8	0
+6t		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e		5r	1s
+4ée		4er	19
+6s		4er	1f
+4ent		5r	15
+5r	Parler.
+6a		6	l
+7i		6	g
+8ent		6	1r
+8s		6	1o
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	1m
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	25
+5ur	Qui jacte, bavard.
+7s		7	9
+6se	Femme qui jacte, bavarde.
+8s		8	9
+5z		5r	1b
+4iez		4er	d
+5ons		4er	3x
+4ons		4er	r
+3ulatoire	Marqué par un jaillissement intérieur intense, exalté, lyrique.
+bs		b	0
+4zzi	Baignoire équipée d’un système de pulsion d’air et d’eau sous pression plus ou moins complexe procurant un effet massant et relaxant à son utilisateur.
+7s		7	0
+2de	Pierre dure et translucide d’une couleur verdâtre ou olivâtre, parfois blanche.
+3éite	Pyroxène (silicate) de formule NaAlSi₂O₆, cristallisant dans le système monoclinique, constituant l’une des deux gemmes désignées sous le nom de jade, avec la …
+7s		7	0
+3es		4	0
+3is	Autrefois, au temps passé, dans le passé lointain, il y a longtemps.
+2guar	Grand mammifère carnivore de la famille des félidés en voie de disparition mais que l’on peut rencontrer du Mexique au Brésil.
+6ondi	Petit félin d'Amérique tropicale au pelage uni.
+as		a	0
+6s		6	0
+2illi		6r	1k
+6e		6r	19
+7s		6r	1f
+5îmes		5ir	3
+5ir	Sortir impétueusement, en parlant surtout de l’eau ou de tout autre fluide.
+7a		7	18
+8i		7	g
+9ent		7	1r
+9s		7	i
+9t		7	1d
+8s		7	7
+7ent		7	1c
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	1i
+6s		6r	20
+7saient		6r	23
+as		6r	t
+at		6r	1z
+9nt	Qui jaillit.
+be		b	n
+cs		b	1
+bs		b	9
+8e		6r	2d
+9ment	Action de jaillir.
+ds		d	0
+9nt		6r	1x
+9s		6r	24
+9z		6r	u
+8iez		6r	d
+9ons		6r	j
+8ons		6r	r
+6t		6r	28
+5îtes		5ir	2
+3n	Relatif aux Jaïns et au jaïnisme.
+2ïna	Adepte du jaïnisme, secte religieuse fort répandue dans le sud de l’Inde, dont les trois articles principaux sont la non-violence, l'ouverture d’esprit, et le …
+5s		5	0
+4e	Femme adepte du jaïnisme, jaïna.
+5s		4	1
+4isme	Religion qui insiste sur les concepts d’ahimsa (non-violence) et de karma, et met l’accent sur l’ascétisme.
+8s		8	0
+4s		4	9
+2is	Bois fossile, assez dur pour être taillé.
+2ja	Vin de table.
+4s		4	0
+2lap	Jalap tubéreux (Ipomoea purga), dont la fleur ressemble à celle du liseron.
+5eno	Autre orthographe de jalapeño.
+5s		5	0
+3e	Sorte de cuveau servant notamment aux vendangeurs.
+4s		4	0
+3on	Repère balisé que l’on plante en terre pour prendre des alignements ou déterminer une direction.
+5na		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e		7r	1s
+6ée	Féminin singulier de jalonné.
+8s		6er	10
+6ement	Action de jalonner.
+bs		b	0
+7nt		7r	15
+7r	Planter des jalons de distance en distance, soit pour un alignement, soit pour déterminer les différents points d’un plan.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6eur	Homme chargé de jalonner.
+9s		9	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5s		5	0
+4usa		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Celle qui a de la jalousie à propos de quelqu’un ou de quelque chose.
+6ée		6er	19
+8s		6er	1f
+6ement	Avec jalousie, par jalousie.
+7nt		7r	15
+7r	Avoir de la jalousie contre quelqu’un.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	1o
+at		8	q
+9s		8	1l
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		5x	1
+7z		7r	u
+6ie	Dépit que l’on a de ne pas obtenir ou posséder ce qu’un autre obtient ou possède, comme la richesse, les succès, la gloire, les talents, etc.
+8s		8	0
+8z		6er	d
+7ons		6er	j
+6ons		6er	r
+5x	Qui éprouve une envie se manifestant par le désir qu'une personne bénéficiant d'une situation perçue comme meilleure à la sienne perde son avantage.
+2m	Confiture.
+3aïcain	Relatif à la Jamaïque.
+9e		9	n
+as		9	1
+9s		9	0
+5quain	Variante orthographique de jamaïcain.
+ae		a	n
+bs		a	1
+as		a	9
+4is	En un temps quelconque, futur ou hypothétique.
+3bage	Élément vertical qui assure l’étanchéité en partie latérale entre le mur et l’ouverture (exemple : cheminée, linteau d’une porte, etc.).
+7s		7	0
+5laya	Spécialité culinaire à base de riz de la Louisiane et de Provence.
+9s		9	0
+5rt	Synonyme de jambière.
+7s		7	0
+4e	Partie de chacun des deux membres inférieurs de l’être humain, entre le genou et le pied.
+4ée		5	n
+6s		4er	1f
+4er	Tenir la jambe à, importuner.
+5s		5	0
+5tte	Petit couteau sans ressort, dont la lame se replie dans le manche.
+8s		8	0
+4ier	Qui a rapport à la jambe.
+5ère	Pièce d’étoffe ou de cuir, voire de métal, guêtre haute qui protège la jambe.
+8s		5er	1
+5ers		7	0
+4on	Cuisse (partie supérieure de la patte arrière) d’un suidé (porc ou sanglier), qui a été préparée par cuisson, salage, fumage ou boucanage, comme nourriture.
+6neau	Partie de la jambe du porc située au-dessous du genou et préparée en charcuterie.
+ax		a	0
+8tte	Couenne farcie de viande de porc, notamment de l'épaule et du jambon désossé, on lui donne généralement la forme d'un petit jambon que l'on fait cuire dans un …
+bs		b	0
+6s		6	0
+5ree	Rassemblement de scouts.
+8s		8	0
+5se	Fruit du jambosier.
+7s		7	0
+6ier	Arbuste ou arbre originaire d’Inde et de Malaisie mais répandu dans toutes les régions tropicales, aux jolies fleurs garnies de plus de 300 étamines exhalant u…
+9s		9	0
+3erose	Variante de jambose.
+8s		8	0
+7ier	Synonyme de jambosier.
+as		a	0
+3s		3	0
+2n	Chacune des deux tables du jeu de trictrac.
+3gada	Radeau à voile utilisé en Amérique du Sud.
+7s		7	0
+3issaire	Soldat d’élite de l’infanterie turque, qui servait à la garde du sultan.
+as		a	0
+3otisme	Construction fautive d’une phrase, maladroite et équivoque, via une dissociation interne des éléments significatifs.
+9s		9	0
+3s		3	0
+4énien	Janséniste.
+9ne		9	n
+bs		9	1
+9s		9	9
+7sme	Doctrine de Jansénius sur la grâce et la prédestination.
+as		a	0
+8te	Relatif au jansénisme.
+as		a	3f
+3te	Pièce de bois ou de métal courbée, à surface extérieure plate ou usinée, formant la circonférence d'une roue ou d'une poulie et recevant les rayons, le voile o…
+5s		5	0
+4hine	Gastéropode marin comestible de la Méditerranée.
+8s		8	0
+4ier	Synonyme de jantière.
+5ère	Machine pour assembler les jantes d’une roue.
+8s		8	0
+5ers		7	0
+5lle	Aube de la zone d’un moulin à eau.
+8r	Mettre des jantilles à la roue d’un moulin, etc.
+7és		7er	12
+3vier	Premier mois de l’année du calendrier grégorien, qui compte 31 jours.
+7s		7	0
+2pon	Porcelaine importée du Japon.
+5ais	Relatif au Japon, à ses habitants et à sa culture.
+8e	Synonyme de chabo (race de poules).
+9rie	Curiosité exotique provenant ou s’inspirant du Japon.
+cs		c	0
+9s		8	1
+5erie	Japonaiserie.
+9s		9	0
+5isa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Philologue ou historien qui s’occupe de la langue ou de l’histoire du Japon.
+ae	Philologue ou historienne qui s’occupe de la langue ou de l’histoire du Japon.
+bs		b	0
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Rendre plus japonais.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7me	Influence japonaise.
+9s		9	0
+7ons		7er	r
+7te	Celui qui étudie la langue, les choses du Japon.
+9s		9	0
+5s		5	0
+3pa		4er	13
+5i		4er	m
+6ent		4er	16
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant	Qui jappe.
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Propension à bavarder.
+5ment	Petit aboiement.
+9s		9	0
+5nt		5r	15
+5r	Aboyer, pour désigner l’aboiement des petits chiens.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	1c
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	1u
+5ur	Qui jappe.
+7s		7	9
+6se		6r	n
+8s		6r	1
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2que	Infrutescence du jaquier.
+5lin	Jacqueline ou jaqueline.
+8e	Cruche de grès à long ventre, en usage dans le Nord.
+9s		9	0
+8s		8	0
+5mart	Figure de fer, de plomb ou de fonte, qui représente un homme armé, et qu’on mettait au Moyen Âge sur le haut d’une tour pour frapper les heures avec un marteau…
+9s		9	0
+5s		5	0
+5t	Bécassine sourde ou petite bécassine.
+6s		6	0
+6te	Robe que portaient les petits garçons.
+8s		8	0
+4ier	Jaquetier
+7s		7	0
+2r	Banc de gros graviers et de sable, amoncellements, pouvant remodeler le lit du fleuve d’une année sur l’autre, et utilisés pour l’empierrement des chaussées, l…
+3d	Sorte de poil, long et raide et de faible densité, qui assure la couverture externe des mammifères, par opposition au duvet.
+4e	Tare molle du cheval.
+5s		5	0
+4in	Lieu ordinairement clos de murailles, de haies, de fossés, dans lequel on cultive des légumes, des fleurs, des arbres, etc.
+6a		6er	x
+7ge	Art de cultiver les jardins, ou travail que l’on fait aux jardins.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	3b
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e		7r	3m
+6ée		6er	11
+8s		6er	10
+6ent		7r	15
+7r	Travailler à un jardin, en parlant d’une personne qui en fait son passe-temps.
+8a		8	l
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	q
+9s		8	1l
+6èrent		6er	o
+6erez		8	5
+8ie	Établissement commercial, souvent de dimension importante, offrant tout ce qui concerne le jardin.
+as		a	0
+az		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6et	Petit jardin.
+8s		8	0
+7use		8x	n
+as		8x	1
+8x	Dont le vert n’est pas net et est mêlé de brun.
+7z		7r	u
+6ier	Relatif aux jardins et au jardinage.
+7ère	Celle dont le métier est de travailler aux jardins, ou qui cultive un jardin pour en vendre les produits.
+as		a	0
+7ers		9	0
+8z		6er	d
+7ons		6er	j
+7ste	Architecte de jardins.
+as		a	0
+6ons		6er	r
+6s		6	0
+4on	Tare molle située à la face arrière du jarret.
+6s		6	0
+4s		4	0
+3gon	Vocabulaire particulier d'un groupe social ou professionnel, trouvant son origine dans la tradition ou la technologie et dans lequel peut parfois se complaire …
+6aphasie	Trouble du langage où l'on observe une déformation et/ou une substitution des mots qui sont parfois choisis de manière imprécise par le malade qui n'a pas cons…
+ds		d	0
+6na		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Caractérise un exposé, un discours… qui tient du jargon.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e		8r	1s
+8nt		8r	15
+8r	S'exprimer en ayant recours à un jargon de manière prétentieuse dans le but de paraître plus malin qu'on ne l'est, en tenant des propos pouvant relever du char…
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+9que	Qui tient du jargon.
+cs		c	0
+8ur	Personne qui jargonne.
+as		a	0
+9se	Personne qui jargonne.
+bs		b	0
+9x	Qui est écrit avec des mots de jargon, qui est difficile à comprendre sans être spécialiste.
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+3nicoton	Sorte de juron.
+5goine	Intelligence ; capacité de réflexion relative à l’analyse et à la compréhension.
+as		a	0
+3osse	Synonyme de gesse chiche
+7s		7	0
+4usse	Variante de jarosse, synonyme de gesse chiche.
+8s		8	0
+4visation	Vernalisation, printanisation.
+cs		c	0
+3re	Récipient généralement en terre cuite, de forme ovoïde et de différentes dimensions, où l’on conserve l’eau, l’huile, les olives.
+5s		5	0
+5t	La partie du corps humain située entre la cuisse et le mollet, et derrière le genou et qui prend le nom de fosse poplitée (anciennement creux poplité) en anato…
+6a		6er	13
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é	Qualifie tout quadrupède qui a les jambes de derrière tournées en dedans, et si peu ouvertes que les deux jarrets se touchent presque en marchant.
+7e		6er	11
+8s		6er	10
+6elle	Sorte de jarretière terminée par une pince en caoutchouc, cousue ou accrochée au corset, à une gaine, ou à une ceinture, (le porte-jarretelle), et servant à re…
+as		a	0
+4ètent		4eter	v
+4eter	Mettre des jarretières.
+4ètera		4eter	l
+9i		4eter	g
+aent		4eter	s
+as		4eter	i
+at		4eter	q
+9s		4eter	7
+4etèrent		6er	o
+4èterez		4eter	5
+8iez		4eter	4
+9ons		4eter	b
+8ons		4eter	a
+at		4eter	f
+4etés		6er	12
+6ez		7r	u
+6ière	Sorte de ruban, de tissu élastique entourant la jambe au-dessus ou au-dessous du genou et qui maintient le bas.
+as		a	0
+7ez		6er	d
+7ons		6er	j
+6on	Morceau de viande similaire à un jarret, mais de taille plus petite.
+8s		6er	r
+6s		6	0
+6te		6er	27
+8nt		6er	v
+8ra		6er	l
+ai		6er	g
+bent		6er	s
+bs		6er	i
+bt		6er	q
+as		6er	7
+9ez		6er	5
+9iez		6er	4
+aons		6er	b
+9ons		6er	a
+bt		6er	f
+8s		6er	1u
+3s	Mâle de l’oie domestique.
+3ta		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Enlever, renvoyer quelque chose ou quelqu’un, dégager avec l'idée généralement de rapidité et de violence.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2s	Barre transversale ajustée par le milieu à l’extrémité de la verge d’une ancre à jas, servant à faire mordre une de ses pattes ou becs sur le fond.
+3a		3er	x
+4i		3er	m
+5ent		3er	16
+5s		3er	t
+5t		3er	14
+3âmes		3er	3
+3ant	Qui jase, causant.
+6e		6	n
+7s		6	1
+6s		6	9
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e		4r	1s
+4ment	Action de jaser.
+8s		8	0
+4nt		4r	15
+4r	Pousser son cri, en parlant des geais, des pies et de quelques autres oiseaux.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	1d
+6n	Amanita caesarea ou amanite des Césars.
+7s	Pluriel de jaseran (« cotte de maille », « chaine de cou »).	7
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5on	Variante de jaseran
+7s		7	0
+7t		5	1i
+4s		4r	25
+4tte	Entretien plus ou moins familier de courte durée.
+7s		7	0
+4ur	Qui jase.
+6s		6	9
+5se	Celle qui jase.
+7s		5r	1
+4z		4r	u
+3iez		3er	d
+4one	Genre de la famille des campanulacées.
+7s		7	0
+6s		3er	j
+3min	Arbustes sarmenteux du genre Jasminum, de la famille des Oleaceae, aux fleurs souvent jaunes ou blanches et dont plusieurs espèces cultivées ont des fleurs trè…
+6é	Qui a le parfum du jasmin.
+7e		7	n
+8s	Famille de plantes dicotylédones, appartenant aux corolliflores d’Augustin Pyrame de Candolle, arbres ou arbrisseaux indigènes des régions chaudes de l’ancien …
+7s		7	9
+6s		6	0
+3ons		3er	r
+3pa		4er	x
+5i		4er	m
+6ent		4er	16
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é	Qui est peint et bigarré, naturellement ou artificiellement, de manière à imiter le jaspe.
+5e		4er	11
+6s		4er	1f
+4ent		5r	v
+5r	Bigarrer de diverses couleurs en imitant le jaspe.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6on	Gros bouillon entier pour les bordures de passementerie
+8s		8	0
+8t		6	f
+4és		4er	1h
+4ez		5r	u
+4iez		4er	d
+5na		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e		7r	1s
+6ée		6er	11
+8s		6er	10
+6ent		7r	15
+7r	Jaser, bavarder.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5ons		4er	j
+4ons		4er	r
+4ure	Jasper, décorer, à l'aide d'une base de couleurs la tranche ou le cuir d'un livre.
+7s		7	0
+3s	Jeu de cartes suisse, très proche de la belote française.
+4a		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	1w
+4ant	Participe présent de jasser (au sens du jeu de cartes).	4er
+5s		4er	2b
+6se		4er	29
+8nt		4er	26
+8s		4er	2f
+7iez		4er	2g
+8ons		4er	2i
+4ât		4er	1q
+6es		4er	2c
+4e	Sorte d'enclos dans lequel les moutons de transhumance passaient la nuit.
+5nt		5r	15
+5r	Autre orthographe de yasser (jouer au yass).
+6a		6	18
+7i		6	1e
+8ent		6	1r
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	22
+7ons		6	2a
+6ons		6	1p
+8t		6	1i
+5s	Deuxième personne du singulier du présent de l’indicatif de jasser (au sens du jeu de cartes).	5r
+5ur	Joueur de jass.
+7s		7	0
+6se	Joueuse de jass.
+8s		8	0
+5z		5r	1b
+4iez		4er	1v
+5ons		4er	1t
+4ons		4er	1n
+2taka	Contes mythologiques qui racontent les vies antérieures de Bouddha.
+6s		6	0
+1āti	Découpage de la société indienne en 4 635 professions.
+1atte	Espèce de vase rond, tout d’une pièce et sans rebord, de profondeur intermédiaire entre un grand bol et une écuelle, généralement en terre cuite, en faïence ou…
+4ée	Contenu d'une jatte.
+6s		6	0
+4es		5	0
+2uge	Instrument servant à effectuer une mesure.
+5a		5r	13
+6ge	Action de jauger.
+8s		8	0
+6i		5r	m
+7ent		5r	w
+7s		5r	t
+7t		5r	14
+5âmes		5r	3
+5ant		5r	17
+6s		5r	c
+7se		5r	6
+9nt		5r	h
+9s		5r	8
+8iez		5r	e
+9ons		5r	p
+5ât		5r	k
+7es		5r	2
+4ée		4er	19
+6s		4er	10
+4ent		5r	15
+5ons		5r	r
+5r	Mesurer un tonneau, une futaille, et en général un récipient quelconque, pour voir s’il est de la mesure dont il doit être ou pour voir quel est son contenu, à…
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	1h
+4eur	Qui jauge ; qui évalue.
+7s		7	9
+6se	Celle dont l’emploi est de jauger.
+8s		6r	1
+5z		5r	1b
+4iez		4er	d
+5ons		4er	j
+3mière	Ouverture dans la voûte d’un navire pour le passage de la mèche du gouvernail.
+8s		8	0
+3nasse	Tirant sur le jaune.
+8s		8	0
+4âtre	Qui tire sur le jaune.
+8s		8	0
+4e	Désigne une couleur du spectre située entre le vert et l’orange.
+5s		5	0
+5t	Un peu jaune.
+6s		6	9
+6te		6	n
+8s		6	1
+4i	Devenu jaune.
+5e		5	n
+6s		5	1
+4îmes		4ir	3
+4ir	Rendre jaune, peindre ou teindre en jaune.
+6a		6	18
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+6ent		6	o
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5	9
+6sage	Opération industrielle qui consiste à jaunir un objet.
+as		a	0
+8ient		5r	23
+9s		5r	t
+9t		5r	1z
+8nt	Qui est en train de jaunir.
+ae	Féminin singulier de jaunissant.
+bs		a	1
+as		a	9
+7e	Nom familier de l’ictère.
+8ment	Le fait de devenir jaune.
+cs		c	0
+8nt		5r	1x
+8s		8	0
+8z		5r	u
+7iez		5r	d
+8ons		5r	j
+7ons		5r	r
+5t		5r	28
+4îtes		4ir	2
+2va	Danse à trois temps et à cadence rapide et qui se danse à petits pas.
+4nais	Relatif à l’île de Java, ou qui en est originaire.
+8e	Chatte de race javanaise.
+9s		8	1
+4rt	Sorte de furoncle dur et douloureux, qui vient au pied du cheval et du bœuf, entre le paturon et la couronne.
+6s		6	0
+4s		4	0
+5cript	Programme écrit en Javascript.
+as		a	0
+3eau	Île formée de sable et de limon par un débordement d’eau.
+6x		6	0
+4l	Ellipse de eau de Javel.
+5a		5er	x
+6ge	Action de javeler du blé, du sel, ou résultat de cette action.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Dont le grain est devenu noir et pesant par la pluie qui les a mouillés tandis qu’ils étaient en javelle.
+6e		5er	11
+7s		5er	10
+3èlent		3eler	v
+3eler	Mettre en javelle.
+3èlera		3eler	l
+8i		3eler	g
+9ent		3eler	s
+9s		3eler	i
+9t		3eler	q
+8s		3eler	7
+3elèrent		5er	o
+3èlerez		3eler	5
+7iez		3eler	4
+8ons		3eler	b
+7ons		3eler	a
+9t		3eler	f
+3elés		5er	12
+5eur	Après le fauchage, ouvrier agricole qui forme les javelles afin de mettre la moisson à l’abri.
+8s		8	0
+7se	Après le fauchage, ouvrière agricole qui forme les javelles afin de mettre la moisson à l’abri.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ne	Espèce de dard long et menu.
+8s		8	0
+6ons		5er	j
+5le	Quantité de tiges de blé, de seigle, d’avoine que le faucheur peut faucher d’un seul coup.
+7nt		5er	v
+7ra		5er	l
+9i		5er	g
+aent		5er	s
+as		5er	i
+at		5er	q
+9s		5er	7
+8ez		5er	5
+8iez		5er	4
+9ons		5er	b
+8ons		5er	a
+at		5er	f
+7s		7	3o
+6isa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de javelliser, stérilisation avec de l’eau de Javel.
+ds		d	0
+8é	Traité à l’eau de Javel.
+9e		9	n
+as		9	1
+8ent		9r	v
+9r	Désinfecter avec de l’eau de Javel.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5ons		5er	r
+6t	Espèce de dard, arme de trait qu’on lançait avec la main.
+7s		7	0
+5s		5	0
+3otte	Femme bavarde.
+7s		7	0
+2yet	Bois fossile, assez dur pour être taillé.
+5s		5	0
+2zz	Style de musique afro-américaine né aux États-Unis au début du XXᵉ siècle, issu du croisement du blues, du ragtime et de la musique européenne.
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Faire du jazz.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+5que	Qui concerne ou évoque le jazz.
+8s		8	0
+5stique	Qui se rapporte au jazz.
+bs		b	0
+4man	Jazziste, musicien de jazz.
+7s		7	0
+5en		5an	0
+4ons		4er	r
+4woman	Jazziste, musicienne de jazz.
+9s		9	0
+7en		7an	0
+4y	Proche du jazz, qui évoque le jazz.

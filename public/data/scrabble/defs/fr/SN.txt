@@ -1,196 +1,196 @@
-snack	Nom donné, d’après Sonnini, par les Tartares à l’antilope proprement dite.
-snacka		snacker	39
-snackai		snacker	55
-snackaient		snacker	42
-snackais		snacker	52
-snackait		snacker	40
-snackâmes		snacker	68
-snackant		snacker	43
-snackas		snacker	83
-snackasse		snacker	81
-snackassent		snacker	78
-snackasses		snacker	87
-snackassiez		snacker	88
-snackassions		snacker	90
-snackât		snacker	62
-snackâtes		snacker	84
-snacké		snacker	56
-snackée		snacker	45
-snackées		snacker	51
-snackent		snacker	41
-snacker	Saisir rapidement (une viande, un légume) à feu vif, à la poêle ou à la plancha ou directement avec un chalumeau de cuisine (en restauration).
-snackera		snacker	44
-snackerai		snacker	50
-snackeraient		snacker	63
-snackerais		snacker	60
-snackerait		snacker	49
-snackeras		snacker	57
-snackèrent		snacker	48
-snackerez		snacker	58
-snackeriez		snacker	74
-snackerions		snacker	82
-snackerons		snacker	61
-snackeront		snacker	54
-snackés		snacker	53
-snackez		snacker	47
-snackiez		snacker	67
-snacking	Prêt-à-manger.
-snackings		snacking	0
-snackions		snacker	65
-snackons		snacker	59
-snacks		snack	0
-sneaker	Basket, tennis.
-sneakers		sneaker	0
-snif	Variante orthographique de sniff.
-snifa		snifer	33
-snifai		snifer	22
-snifaient		snifer	32
-snifais		snifer	29
-snifait		snifer	34
-snifâmes		snifer	3
-snifant		snifer	35
-snifas		snifer	12
-snifasse		snifer	6
-snifassent		snifer	17
-snifasses		snifer	8
-snifassiez		snifer	14
-snifassions		snifer	25
-snifât		snifer	20
-snifâtes		snifer	2
-snifé		snifer	46
-snifée		snifer	37
-snifées		snifer	36
-snifent		snifer	31
-snifer	Variante orthographique de sniffer.
-snifera		snifer	21
-sniferai		snifer	16
-sniferaient		snifer	28
-sniferais		snifer	18
-sniferait		snifer	26
-sniferas		snifer	7
-snifèrent		snifer	24
-sniferez		snifer	5
-sniferiez		snifer	4
-sniferions		snifer	11
-sniferons		snifer	10
-sniferont		snifer	15
-snifés		snifer	38
-snifeur	Variante orthographique de sniffeur.
-snifeurs		snifeur	0
-snifeuse	Variante orthographique de sniffeuse.
-snifeuses		snifeuse	0
-snifez		snifer	30
-sniff	Bruit de reniflement.
-sniffa		sniffer	33
-sniffai		sniffer	22
-sniffaient		sniffer	42
-sniffais		sniffer	52
-sniffait		sniffer	40
-sniffâmes		sniffer	3
-sniffant		sniffer	43
-sniffas		sniffer	12
-sniffasse		sniffer	6
-sniffassent		sniffer	17
-sniffasses		sniffer	8
-sniffassiez		sniffer	14
-sniffassions		sniffer	25
-sniffât		sniffer	20
-sniffâtes		sniffer	2
-sniffé		sniffer	56
-sniffée		sniffer	45
-sniffées		sniffer	51
-sniffent		sniffer	41
-sniffer	Matériel et/ou logiciel destiné à l’analyse des données circulant sur un réseau informatique.
-sniffera		sniffer	21
-snifferai		sniffer	50
-snifferaient		sniffer	28
-snifferais		sniffer	18
-snifferait		sniffer	26
-snifferas		sniffer	7
-sniffèrent		sniffer	24
-snifferez		sniffer	5
-snifferiez		sniffer	4
-snifferions		sniffer	11
-snifferons		sniffer	10
-snifferont		sniffer	15
-sniffes		sniffer	77
-sniffeur	Celui qui sniffe de la drogue.
-sniffeurs		sniffeur	0
-sniffeuse	Celle qui sniffe de la drogue.
-sniffeuses		sniffeuse	0
-sniffez		sniffer	47
-sniffiez		sniffer	13
-sniffions		sniffer	65
-sniffons		sniffer	27
-sniffs		sniff	0
-snifiez		snifer	13
-snifions		snifer	19
-snifons		snifer	27
-sniper	Tireur d’élite, embusqué, isolé, dans un contexte d’affrontement armé.
-snipers		sniper	0
-snipeur	Sniper.
-snipeurs		snipeur	0
-snipeuse	Combattante charger d'abattre les ennemis en tir d'embuscade.
-snipeuses		snipeuse	0
-snob	Qui est hautain, atteint de snobisme.
-snoba		snober	33
-snobai		snober	22
-snobaient		snober	42
-snobais		snober	52
-snobait		snober	34
-snobâmes		snober	3
-snobant		snober	35
-snobas		snober	12
-snobasse		snober	6
-snobassent		snober	17
-snobasses		snober	8
-snobassiez		snober	14
-snobassions		snober	25
-snobât		snober	20
-snobâtes		snober	2
-snobe	Femme atteinte de snobisme.
-snobée		snober	45
-snobées		snober	36
-snobent		snober	41
-snober	Traiter quelqu’un avec mépris, mépriser, dédaigner
-snobera		snober	21
-snoberai		snober	16
-snoberaient		snober	28
-snoberais		snober	18
-snoberait		snober	26
-snoberas		snober	7
-snobèrent		snober	24
-snoberez		snober	58
-snoberiez		snober	4
-snoberions		snober	11
-snoberons		snober	10
-snoberont		snober	15
-snobés		snober	53
-snobez		snober	47
-snobiez		snober	13
-snobinard	ou Snob.
-snobinarde	ou Celle qui est particulièrement snob.
-snobinardes		snobinard	1
-snobinards		snobinard	9
-snobinet	Diminutif de snob.
-snobinette	Femme, fille, snob.
-snobinettes		snobinet	1
-snobions		snober	19
-snobisme	Vanité ; attitude de snob.
-snobismes		snobisme	0
-snobons		snober	27
-snobs		snob	0
-snood	Cache-col.
-snooker	Variante du billard avec 22 billes de sept couleurs différentes.
-snookers		snooker	0
-snoreau	Homme rusé, malin, bougre.
-snoreaux		snoreau	0
-snowboard	Planche permettant de glisser sur la neige, d’une façon analogue au surf.
-snowboarder	Faire du snowboard.
-snowboardeur	Personne pratiquant le snowboard, sport de glisse pratiqué sur la neige.
-snowboardeurs		snowboardeur	0
-snowboardeuse	Femme pratiquant le snowboard, sport de glisse pratiqué sur la neige.
-snowboardeuses		snowboardeuse	0
-snowboards		snowboard	0
-snowpark	Zone enneigée aménagée dans une station de ski pour la pratique du snowtrott, du snowboard et du ski freestyle.
-snowparks		snowpark	0
+0snack	Nom donné, d’après Sonnini, par les Tartares à l’antilope proprement dite.
+5a		5er	13
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	1w
+5ant		5er	17
+6s		5er	2b
+7se		5er	29
+9nt		5er	26
+9s		5er	2f
+8iez		5er	2g
+9ons		5er	2i
+5ât		5er	1q
+7es		5er	2c
+5é		5er	1k
+6e		5er	19
+7s		5er	1f
+5ent		6r	15
+6r	Saisir rapidement (une viande, un légume) à feu vif, à la poêle ou à la plancha ou directement avec un chalumeau de cuisine (en restauration).
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	22
+8ons		7	2a
+7ons		7	1p
+9t		7	1i
+5és		5er	1h
+5ez		6r	1b
+5iez		5er	1v
+6ng	Prêt-à-manger.
+8s		8	0
+6ons		5er	1t
+5ons		5er	1n
+5s		5	0
+2eaker	Basket, tennis.
+7s		7	0
+2if	Variante orthographique de sniff.
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Variante orthographique de sniffer.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4eur	Variante orthographique de sniffeur.
+7s		7	0
+6se	Variante orthographique de sniffeuse.
+8s		8	0
+5z		5r	u
+4f	Bruit de reniflement.
+5a		5er	x
+6i		5er	m
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	19
+7s		5er	1f
+5ent		6r	15
+6r	Matériel et/ou logiciel destiné à l’analyse des données circulant sur un réseau informatique.
+7a		7	l
+8i		7	1e
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	25
+6ur	Celui qui sniffe de la drogue.
+8s		8	0
+7se	Celle qui sniffe de la drogue.
+9s		9	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	1t
+5ons		5er	r
+5s		5	0
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3per	Tireur d’élite, embusqué, isolé, dans un contexte d’affrontement armé.
+6s		6	0
+5ur	Sniper.
+7s		7	0
+6se	Combattante charger d'abattre les ennemis en tir d'embuscade.
+8s		8	0
+2ob	Qui est hautain, atteint de snobisme.
+4a		4er	x
+5i		4er	m
+6ent		4er	16
+6s		4er	1g
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Femme atteinte de snobisme.
+4ée		4er	19
+6s		4er	10
+4ent		5r	15
+5r	Traiter quelqu’un avec mépris, mépriser, dédaigner
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	1m
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	1h
+4ez		5r	1b
+4iez		4er	d
+5nard	ou Snob.
+9e	ou Celle qui est particulièrement snob.
+as		9	1
+9s		9	9
+6et	Diminutif de snob.
+8te	Femme, fille, snob.
+as		8	1
+5ons		4er	j
+5sme	Vanité ; attitude de snob.
+8s		8	0
+4ons		4er	r
+4s		4	0
+3od	Cache-col.
+4ker	Variante du billard avec 22 billes de sept couleurs différentes.
+7s		7	0
+3reau	Homme rusé, malin, bougre.
+7x		7	0
+3wboard	Planche permettant de glisser sur la neige, d’une façon analogue au surf.
+9er	Faire du snowboard.
+aur	Personne pratiquant le snowboard, sport de glisse pratiqué sur la neige.
+cs		c	0
+bse	Femme pratiquant le snowboard, sport de glisse pratiqué sur la neige.
+ds		d	0
+9s		9	0
+4park	Zone enneigée aménagée dans une station de ski pour la pratique du snowtrott, du snowboard et du ski freestyle.
+8s		8	0

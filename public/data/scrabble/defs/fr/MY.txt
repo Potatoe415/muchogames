@@ -1,429 +1,429 @@
-myalgie	Douleur musculaire.
-myalgies		myalgie	0
-myase	Variante de myiase.
-myases		myase	0
-myasthénie	Affection neurologique grave, caractérisée par une faiblesse musculaire excessive, rapidement augmentée par l'exercice, survenant souvent par poussées, qui son…
-myasthénies		myasthénie	0
-myatonie	Affection infantile congénitale caractérisée par une perte totale ou partielle du tonus musculaire.
-myatonies		myatonie	0
-mycélien	Relatif au mycélium.
-mycélienne		mycélien	23
-mycéliennes		mycélien	1
-mycéliens		mycélien	0
-mycélium	Ensemble de filaments plus ou moins ramifiés formant la partie végétative des champignons (eumycètes).
-mycéliums		mycélium	0
-mycène	Genre de champignons à lames, souvent petits, au chapeau conique ou en cloche, et au pied sans anneau, grêle, à spores blanches, grégaires.
-mycènes		mycène	0
-mycénien	Relatif à Mycènes, une ancienne cité grecque, à ses habitants.
-mycénienne		mycénien	23
-mycéniennes		mycénien	1
-mycéniens		mycénien	9
-mycétome	Pseudo-tumeur inflammatoire sous-cutanée résultant d’une infection par un champignon parasite associé à une bactérie.
-mycétomes		mycétome	0
-myciculture	Culture des champignons comestibles.
-mycicultures		myciculture	0
-mycobactérie	Des bacilles fins, quelquefois incurvés, ne se décolorant ni sous l'action des acides forts, ni sous l'action de l'alcool, donc des « bacilles acido-alcoolo-ré…
-mycobactéries		mycobactérie	0
-mycoderme	Levure qui forme un voile à la surface des liquides alcoolisés, et transforme l’alcool en acide acétique, le vin en vinaigre.
-mycodermes		mycoderme	0
-mycodermique	Relatif aux mycodermes.
-mycodermiques		mycodermique	0
-mycologie	Science qui étudie les champignons.
-mycologies		mycologie	0
-mycologique	Qui se rapporte à la mycologie (l’étude des champignons).
-mycologiques		mycologique	0
-mycologue	Personne dont le métier est l’étude des champignons.
-mycologues		mycologue	0
-mycophage	Qui se nourrit de champignons.
-mycophages		mycophage	0
-mycoplasme	Bactérie, dépourvue de paroi, dont certaines provoquent des maladies, aux humains, aux animaux ou aux plantes.
-mycoplasmes		mycoplasme	0
-mycorhiza		mycorhizer	33
-mycorhizai		mycorhizer	22
-mycorhizaient		mycorhizer	32
-mycorhizais		mycorhizer	29
-mycorhizait		mycorhizer	34
-mycorhizâmes		mycorhizer	3
-mycorhizant		mycorhizer	35
-mycorhizas		mycorhizer	12
-mycorhizasse		mycorhizer	6
-mycorhizassent		mycorhizer	17
-mycorhizasses		mycorhizer	8
-mycorhizassiez		mycorhizer	14
-mycorhizassions		mycorhizer	25
-mycorhizât		mycorhizer	20
-mycorhizâtes		mycorhizer	2
-mycorhization	Association naturelle ou provoquée par l'homme entre champignons mycorhiziens et racines d'une plante.
-mycorhizations		mycorhization	0
-mycorhize	Symbiose entre la racine d'une plante et une colonie de champignons, les hyphes de ces derniers (leurs filaments) pénétrant dans la racine.
-mycorhizée		mycorhizé	23
-mycorhizées		mycorhizé	1
-mycorhizent		mycorhizer	31
-mycorhizer	Associer des champignons mycorhiziens à (un arbre).
-mycorhizera		mycorhizer	21
-mycorhizerai		mycorhizer	16
-mycorhizeraient		mycorhizer	28
-mycorhizerais		mycorhizer	18
-mycorhizerait		mycorhizer	26
-mycorhizeras		mycorhizer	7
-mycorhizèrent		mycorhizer	24
-mycorhizerez		mycorhizer	5
-mycorhizeriez		mycorhizer	4
-mycorhizerions		mycorhizer	11
-mycorhizerons		mycorhizer	10
-mycorhizeront		mycorhizer	15
-mycorhizés		mycorhizé	9
-mycorhizez		mycorhizer	30
-mycorhizien	En rapport avec la mycorhize.
-mycorhizienne		mycorhizien	23
-mycorhiziennes		mycorhizien	1
-mycorhiziens		mycorhizien	9
-mycorhiziez		mycorhizer	13
-mycorhizions		mycorhizer	19
-mycorhizons		mycorhizer	27
-mycose	Dermatose provoquée par des champignons ou des levures parasites ou saprophytes.
-mycoses		mycose	0
-mycosique	Relatif aux mycoses.
-mycosiques		mycosique	0
-mycotoxine	Toxine élaborée par diverses espèces de champignons microscopiques tel que les moisissures (Aspergillus sp., Fusarium sp., Stachybotrys sp., Penicillium sp., e…
-mycotoxines		mycotoxine	0
-mydriase	Paralysie de l’iris caractérisée par la dilatation permanente de la pupille, ou temporaire sous l’effet d’une substance telle que l’atropine.
-mydriases		mydriase	0
-mydriatique	Relatif à la mydriase.
-mydriatiques		mydriatique	0
-mye	Genre de mollusques bivalves.
-myélencéphale	Nom donné à la partie centrale du système nerveux central, la partie caudale du rhombencéphale chez l’embryon, et quasi synonyme de bulbe rachidien chez l’adul…
-myélencéphales		myélencéphale	0
-myéline	Substance de protection des fibres nerveuses.
-myélines		myéline	0
-myélinique	Relatif à la myéline.
-myéliniques		myélinique	0
-myélinisé		myéliniser	46
-myélinisée		myéliniser	37
-myélinisées		myéliniser	36
-myéliniser	Protéger des fibres nerveuses par de la myéline.
-myélinisés		myéliniser	38
-myélite	Inflammation de la moelle épinière.
-myélites		myélite	0
-myéloblaste	Cellule précurseuse d’un myélocyte.
-myéloblastes		myéloblaste	0
-myélocyte	Éléments de la substance grise du système encéphalo-rachidien.
-myélocytes		myélocyte	0
-myélogramme	Examen permettant l’étude cytologique de la moelle osseuse.
-myélogrammes		myélogramme	0
-myélographie	Examen de la moelle épinière obtenu après injection d’un liquide radioopaque ou d‘air (myélographie gazeuse) dans l’espace situé entre l’os et la deuxième méni…
-myélographies		myélographie	0
-myéloïde	Qui ressemble à la moelle des os.
-myéloïdes		myéloïde	0
-myélomatose	Affection touchant le tissu myéloïde, souvent associée à des troubles pathologiques du tissu médullaire.
-myélomatoses		myélomatose	0
-myélome	Tumeur d’une partie médullaire.
-myélomes		myélome	0
-myélopathie	Maladie qui touche la moelle épinière.
-myélopathies		myélopathie	0
-myélosarcome	Sarcome de la moelle des os.
-myélosarcomes		myélosarcome	0
-myes		mye	0
-mygale	Araignée des régions chaudes du sous-ordre des mygalomorphes, du groupe des orthognathes, dont la morsure peut être mortelle.
-mygales		mygale	0
-myiase	Parasitose causée par les larves de mouches.
-myiases		myiase	0
-mylar	Fibre synthétique de polyester.
-mylars		mylar	0
-mylonite	Roche métamorphique dérivant d’une roche magmatique ou métamorphique broyée au point que la majorité des cristaux originels ne soit plus identifiable à l’œil.
-mylonites		mylonite	0
-myoblaste	Cellule embryonnaire indifférenciée (cellule souche) à la base de la formation des muscles striés.
-myoblastes		myoblaste	0
-myocarde	Partie musculaire du cœur.
-myocardes		myocarde	0
-myocardiopathie	Synonyme de cardiomyopathie.
-myocardique	Qui concerne des cellules contractiles qui interviennent dans le fonctionnement du cœur.
-myocardiques		myocardique	0
-myocardite	Inflammation du myocarde.
-myocardites		myocardite	0
-myocastor	Synonyme de ragondin (rongeur).
-myocastors		myocastor	0
-myoclonie	Synonyme de clonie.
-myoclonies		myoclonie	0
-myofibrille	Unité contractile du muscle.
-myofibrilles		myofibrille	0
-myofilament	Filament protéique, constituant des myofibrilles.
-myofilaments		myofilament	0
-myoglobine	Protéine des vertébrés, contenant un noyau porphyrique avec ion fer II au centre, transporteur intracellulaire principal de l’oxygène dans les tissus musculair…
-myoglobines		myoglobine	0
-myogramme	Courbe obtenue lors de l’utilisation d'un myographe.
-myogrammes		myogramme	0
-myographe	Instrument propre à représenter graphiquement la contraction musculaire.
-myographes		myographe	0
-myographie	Description, représentation des muscles.
-myographies		myographie	0
-myologie	Partie de l’anatomie qui traite des muscles.
-myologies		myologie	0
-myome	Tumeur bénigne formée de tissu musculaire.
-myomectomie	Ablation chirurgicale d’un myome utérin.
-myomectomies		myomectomie	0
-myomes		myome	0
-myomètre	Muscle de l’utérus.
-myomètres		myomètre	0
-myopathe	Qui est atteint de myopathie.
-myopathes		myopathe	0
-myopathie	Maladie neuromusculaire se traduisant par une dégénérescence du tissu musculaire.
-myopathies		myopathie	0
-myopathique	Relatif à la myopathie.
-myopathiques		myopathique	0
-myope	Qui a la vue fort courte et qui ne peut voir clairement les objets éloignés sans le secours d’un verre concave.
-myopes		myope	0
-myopie	État de ceux qui sont myopes.
-myopies		myopie	0
-myopotame	Synonyme de ragondin (rongeur).
-myopotames		myopotame	0
-myorelaxant	Qui a pour effet de décontracter les muscles.
-myorelaxante		myorelaxant	23
-myorelaxantes		myorelaxant	1
-myorelaxants		myorelaxant	9
-myorelaxation	Relaxation du muscle.
-myorelaxations		myorelaxation	0
-myosine	Protéine qui joue un rôle fondamental dans les mécanismes de la contraction musculaire.
-myosines		myosine	0
-myosis	Rétrécissement de la pupille.
-myosite	Inflammation du tissu musculaire.
-myosites		myosite	0
-myosotis	Plante du genre Myosotis de la famille des Boraginaceae (borraginées ou Boraginacées) aux fleurs généralement bleues.
-myotique	Qui provoque un myosis (diminution du diamètre de la pupille), notamment en parlant d’un collyre.
-myotiques		myotique	0
-myotonie	Trouble du tonus musculaire caractérisé par une décontraction lente et difficile d'un muscle à la suite d'une contraction volontaire.
-myotonies		myotonie	0
-myriade	Dix-mille.
-myriades		myriade	0
-myriamètre	Unité de mesure de longueur valant dix-mille mètres, soit 10 kilomètres.
-myriamètres		myriamètre	0
-myriapode	Nom scientifique du millepatte, classe d’arthropodes comprenant les iules, les scolopendres etc.
-myriapodes		myriapode	0
-myrica	Plante du genre Myrica.
-myricacée	Plante dicotylédone voisines des cupulifères et des bétulacées.
-myricacées		myricacée	0
-myricas		myrica	0
-myriophylle	Genre de plantes aquatiques de la famille des haloragacées.
-myriophylles		myriophylle	0
-myristicacées	Nom d’une famille de plantes séparée des laurinées et comprenant le genre muscadier (myristica).
-myrmécologie	Branche de l’hyménoptérologie spécialisée dans l'étude des fourmis.
-myrmécologies		myrmécologie	0
-myrmécologue	Entomologiste qui étudie spécialement les fourmis.
-myrmécologues		myrmécologue	0
-myrmécophage	Se nourrissant de fourmis.
-myrmécophages		myrmécophage	0
-myrmécophile	Qui aime les fourmis.
-myrmécophiles		myrmécophile	0
-myrmidon	Variante orthographique de mirmidon.
-myrmidone	Femme ou fille de petite taille, insignifiante et sans valeur, voire prétentieuse, ridicule, et qui veut paraître supérieure.
-myrmidones		myrmidone	0
-myrmidons		myrmidon	0
-myrobalan	Variante de myrobolan.
-myrobalans		myrobalan	0
-myrobolan	Nom usuel donné à plusieurs arbres, généralement accompagné d'une épithète.
-myrobolans		myrobolan	0
-myrosine	Enzyme extraite des graines de différentes brassicacées (anciennement crucifères), dont la moutarde.
-myrosines		myrosine	0
-myroxyle	Synonyme de myroxylon.
-myroxyles		myroxyle	0
-myroxylon	Arbre du genre Myroxylon aussi appelé baumier du Pérou, myroxyle.
-myroxylons		myroxylon	0
-myrrhe	Gomme-résine aromatique qui vient de l’Arabie, produite par une Burséracée du genre Commiphora.
-myrrhes		myrrhe	0
-Myrtacées	Famille de plantes dicotylédones, dont le myrte est le type.
-myrte	Nom vulgaire des arbrisseaux du genre Myrtus, de la famille des Myrtacées (Myrtaceae).
-myrtes		myrte	0
-myrtiforme	Qui a la forme d’une baie de myrte.
-myrtiformes		myrtiforme	0
-myrtille	Sous-arbrisseau de la famille des Éricacées du genre Vaccinium portant des feuilles caduques ovales et finement dentelées formant de vastes populations en sous…
-myrtilles		myrtille	0
-myrtillier	Arbrisseau de petite taille sur lequel poussent les myrtilles.
-myrtilliers		myrtillier	0
-mystagogie	Initiation aux mystères d’un culte religieux.
-mystagogies		mystagogie	0
-mystagogue	Prêtre, prêtresse qui initiait aux mystères de la religion.
-mystagogues		mystagogue	0
-mystère	Ce qu’une religion a de plus caché, ce qui n’est connu que des initiés.
-mystères		mystère	0
-mystérieuse		mystérieux	23
-mystérieusement	Avec mystère.
-mystérieuses		mystérieux	1
-mystérieux	Qui contient quelque mystère, quelque secret, quelque sens caché.
-mysticète	Baleines à fanons.
-mysticètes		mysticète	0
-mysticisme	Doctrine qui affirme la possibilité d’une union directe de l’âme avec Dieu, cette union constituant une forme supérieure d’existence et de connaissance.
-mysticismes		mysticisme	0
-mysticité	Caractère de ce qui est mystique.
-mysticités		mysticité	0
-mystifia		mystifier	33
-mystifiable	Qui peut être mystifié.
-mystifiables		mystifiable	0
-mystifiai		mystifier	22
-mystifiaient		mystifier	32
-mystifiais		mystifier	29
-mystifiait		mystifier	34
-mystifiâmes		mystifier	3
-mystifiant		mystifier	35
-mystifias		mystifier	12
-mystifiasse		mystifier	6
-mystifiassent		mystifier	17
-mystifiasses		mystifier	8
-mystifiassiez		mystifier	14
-mystifiassions		mystifier	25
-mystifiât		mystifier	20
-mystifiâtes		mystifier	2
-mystificateur	Qui mystifie.
-mystificateurs		mystificateur	9
-mystification	Action de mystifier, de berner, de duper.
-mystifications		mystification	0
-mystificatrice	Celle qui a le goût, l’habitude de mystifier.
-mystificatrices		mystificateur	1
-mystifié	Celui qui est ou a été mystifié.
-mystifiée	Celle qui est ou a été mystifiée.
-mystifiées		mystifiée	0
-mystifient		mystifier	31
-mystifier	Abuser de la crédulité de quelqu’un pour s’amuser à ses dépens.
-mystifiera		mystifier	21
-mystifierai		mystifier	16
-mystifieraient		mystifier	28
-mystifierais		mystifier	18
-mystifierait		mystifier	26
-mystifieras		mystifier	7
-mystifièrent		mystifier	24
-mystifierez		mystifier	5
-mystifieriez		mystifier	4
-mystifierions		mystifier	11
-mystifierons		mystifier	10
-mystifieront		mystifier	15
-mystifiés		mystifié	0
-mystifiez		mystifier	30
-mystifiiez		mystifier	13
-mystifiions		mystifier	19
-mystifions		mystifier	27
-mystique	Qui a un sens caché, relatif à la religion.
-mystiquement	Selon le sens mystique.
-mystiques		mystique	0
-mythe	Récit fabuleux d'origine immémoriale contenant un sens allégorique fondateur d'une communauté humaine et de son environnement.
-mythes		mythe	0
-mythifia		mythifier	33
-mythifiai		mythifier	22
-mythifiaient		mythifier	32
-mythifiais		mythifier	29
-mythifiait		mythifier	40
-mythifiâmes		mythifier	3
-mythifiant		mythifier	35
-mythifias		mythifier	12
-mythifiasse		mythifier	6
-mythifiassent		mythifier	17
-mythifiasses		mythifier	8
-mythifiassiez		mythifier	14
-mythifiassions		mythifier	25
-mythifiât		mythifier	20
-mythifiâtes		mythifier	2
-mythification	Création de mythes.
-mythifications		mythification	0
-mythifié		mythifier	46
-mythifiée		mythifier	37
-mythifiées		mythifier	36
-mythifient		mythifier	31
-mythifier	Rendre mythique quelqu’un ou quelque chose.
-mythifiera		mythifier	21
-mythifierai		mythifier	16
-mythifieraient		mythifier	28
-mythifierais		mythifier	18
-mythifierait		mythifier	26
-mythifieras		mythifier	7
-mythifièrent		mythifier	24
-mythifierez		mythifier	5
-mythifieriez		mythifier	4
-mythifierions		mythifier	11
-mythifierons		mythifier	10
-mythifieront		mythifier	15
-mythifiés		mythifier	38
-mythifiez		mythifier	30
-mythifiiez		mythifier	13
-mythifiions		mythifier	19
-mythifions		mythifier	27
-mythique	Qui appartient au mythe, qui est fondé sur un mythe, qui révèle un mythe.
-mythiques		mythique	0
-mytho	Menteur ou menteuse.
-mythographe	Auteur qui a écrit sur les mythes.
-mythographes		mythographe	0
-mythographie	Étude des mythes.
-mythographies		mythographie	0
-mythologie	Ensemble des histoires fabuleuses des dieux, des demi-dieux et des héros de tel ou tel peuple, civilisation, ou région.
-mythologies		mythologie	0
-mythologique	Relatif à la mythologie.
-mythologiques		mythologique	0
-mythologue	Personne qui se consacre à l’étude de la mythologie.
-mythologues		mythologue	0
-mythomane	Qui a la manie pathologique de l’invention mensongère.
-mythomanes		mythomane	0
-mythomaniaque	Relatif à la mythomanie.
-mythomaniaques		mythomaniaque	0
-mythomanie	Recours systématique aux mythes.
-mythomanies		mythomanie	0
-mythonna		mythonner	33
-mythonnai		mythonner	22
-mythonnaient		mythonner	32
-mythonnais		mythonner	29
-mythonnait		mythonner	34
-mythonnâmes		mythonner	3
-mythonnant		mythonner	35
-mythonnas		mythonner	12
-mythonnasse		mythonner	6
-mythonnassent		mythonner	17
-mythonnasses		mythonner	8
-mythonnassiez		mythonner	14
-mythonnassions		mythonner	25
-mythonnât		mythonner	20
-mythonnâtes		mythonner	2
-mythonné		mythonner	46
-mythonnée		mythonner	37
-mythonnées		mythonner	36
-mythonnent		mythonner	31
-mythonner	Raconter volontairement des choses fausses, agir en mythomane.
-mythonnera		mythonner	21
-mythonnerai		mythonner	16
-mythonneraient		mythonner	28
-mythonnerais		mythonner	18
-mythonnerait		mythonner	26
-mythonneras		mythonner	7
-mythonnèrent		mythonner	24
-mythonnerez		mythonner	5
-mythonneriez		mythonner	4
-mythonnerions		mythonner	11
-mythonnerons		mythonner	10
-mythonneront		mythonner	15
-mythonnés		mythonner	38
-mythonnez		mythonner	30
-mythonniez		mythonner	13
-mythonnions		mythonner	19
-mythonnons		mythonner	27
-mythos		mytho	0
-mytilicole	Relatif à la mytiliculture, l’élevage des moules.
-mytilicoles		mytilicole	0
-mytiliculteur	Personne qui s’occupe de mytiliculture, qui élève des moules.
-mytiliculteurs		mytiliculteur	0
-mytilicultrice	Personne qui élève des moules.
-mytilicultrices		mytilicultrice	0
-mytiliculture	Élevage des moules.
-mytilicultures		mytiliculture	0
-mytilidé	Mollusque de la famille des Mytilidae, dont fait partie la moule.
-mytilidés		mytilidé	0
-mytilotoxine	Ancien nom de la saxitoxine.
-mytilotoxines		mytilotoxine	0
-myxine	Une des espèces d'animaux chordés crâniates agnathes marins nécrophages ressemblant à une anguille gluante, à bouche circulaire entourée de barbillons.
-myxines		myxine	0
-myxoedémateuse	Orthographe par contrainte typographique de myxœdémateuse.
-myxoedémateuses	Orthographe par contrainte typographique de myxœdémateuses.
-myxoedémateux	Orthographe par contrainte typographique de myxœdémateux.
-myxoedème	Orthographe par contrainte typographique de myxœdème.
-myxoedèmes	Orthographe par contrainte typographique de myxœdèmes.
-myxomatose	Maladie contagieuse du lapin.
-myxomatoses		myxomatose	0
-myxome	Tumeur formée de tissu conjonctif muqueux.
-myxomes		myxome	0
-myxomycète	Champignon proche du règne animal vivant en symbiose avec des bactéries.
-myxomycètes		myxomycète	0
-myxovirus	Virus à ARN du groupe des orthomyxoviridae.
+0myalgie	Douleur musculaire.
+7s		7	0
+3se	Variante de myiase.
+5s		5	0
+4thénie	Affection neurologique grave, caractérisée par une faiblesse musculaire excessive, rapidement augmentée par l'exercice, survenant souvent par poussées, qui son…
+as		a	0
+3tonie	Affection infantile congénitale caractérisée par une perte totale ou partielle du tonus musculaire.
+8s		8	0
+2célien	Relatif au mycélium.
+8ne		8	n
+as		8	1
+8s		8	0
+6um	Ensemble de filaments plus ou moins ramifiés formant la partie végétative des champignons (eumycètes).
+8s		8	0
+3ène	Genre de champignons à lames, souvent petits, au chapeau conique ou en cloche, et au pied sans anneau, grêle, à spores blanches, grégaires.
+6s		6	0
+3énien	Relatif à Mycènes, une ancienne cité grecque, à ses habitants.
+8ne		8	n
+as		8	1
+8s		8	9
+4tome	Pseudo-tumeur inflammatoire sous-cutanée résultant d’une infection par un champignon parasite associé à une bactérie.
+8s		8	0
+3iculture	Culture des champignons comestibles.
+bs		b	0
+3obactérie	Des bacilles fins, quelquefois incurvés, ne se décolorant ni sous l'action des acides forts, ni sous l'action de l'alcool, donc des « bacilles acido-alcoolo-ré…
+cs		c	0
+4derme	Levure qui forme un voile à la surface des liquides alcoolisés, et transforme l’alcool en acide acétique, le vin en vinaigre.
+9s		9	0
+8ique	Relatif aux mycodermes.
+cs		c	0
+4logie	Science qui étudie les champignons.
+9s		9	0
+8que	Qui se rapporte à la mycologie (l’étude des champignons).
+bs		b	0
+7ue	Personne dont le métier est l’étude des champignons.
+9s		9	0
+4phage	Qui se nourrit de champignons.
+9s		9	0
+5lasme	Bactérie, dépourvue de paroi, dont certaines provoquent des maladies, aux humains, aux animaux ou aux plantes.
+as		a	0
+4rhiza		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Association naturelle ou provoquée par l'homme entre champignons mycorhiziens et racines d'une plante.
+ds		d	0
+8e	Symbiose entre la racine d'une plante et une colonie de champignons, les hyphes de ces derniers (leurs filaments) pénétrant dans la racine.
+8ée		9	n
+as		9	1
+8ent		9r	v
+9r	Associer des champignons mycorhiziens à (un arbre).
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8ez		9r	u
+8ien	En rapport avec la mycorhize.
+bne		b	n
+ds		b	1
+bs		b	9
+az		8er	d
+9ons		8er	j
+8ons		8er	r
+4se	Dermatose provoquée par des champignons ou des levures parasites ou saprophytes.
+6s		6	0
+5ique	Relatif aux mycoses.
+9s		9	0
+4toxine	Toxine élaborée par diverses espèces de champignons microscopiques tel que les moisissures (Aspergillus sp., Fusarium sp., Stachybotrys sp., Penicillium sp., e…
+as		a	0
+2driase	Paralysie de l’iris caractérisée par la dilatation permanente de la pupille, ou temporaire sous l’effet d’une substance telle que l’atropine.
+8s		8	0
+6tique	Relatif à la mydriase.
+bs		b	0
+2e	Genre de mollusques bivalves.
+2élencéphale	Nom donné à la partie centrale du système nerveux central, la partie caudale du rhombencéphale chez l’embryon, et quasi synonyme de bulbe rachidien chez l’adul…
+ds		d	0
+4ine	Substance de protection des fibres nerveuses.
+7s		7	0
+6ique	Relatif à la myéline.
+as		a	0
+7sé		8er	1a
+9e		8er	11
+as		8er	10
+8er	Protéger des fibres nerveuses par de la myéline.
+8és		8er	12
+5te	Inflammation de la moelle épinière.
+7s		7	0
+4oblaste	Cellule précurseuse d’un myélocyte.
+bs		b	0
+5cyte	Éléments de la substance grise du système encéphalo-rachidien.
+9s		9	0
+5gramme	Examen permettant l’étude cytologique de la moelle osseuse.
+bs		b	0
+8phie	Examen de la moelle épinière obtenu après injection d’un liquide radioopaque ou d‘air (myélographie gazeuse) dans l’espace situé entre l’os et la deuxième méni…
+cs		c	0
+5ïde	Qui ressemble à la moelle des os.
+8s		8	0
+5matose	Affection touchant le tissu myéloïde, souvent associée à des troubles pathologiques du tissu médullaire.
+bs		b	0
+6e	Tumeur d’une partie médullaire.
+7s		7	0
+5pathie	Maladie qui touche la moelle épinière.
+bs		b	0
+5sarcome	Sarcome de la moelle des os.
+cs		c	0
+2es		3	0
+2gale	Araignée des régions chaudes du sous-ordre des mygalomorphes, du groupe des orthognathes, dont la morsure peut être mortelle.
+6s		6	0
+2iase	Parasitose causée par les larves de mouches.
+6s		6	0
+2lar	Fibre synthétique de polyester.
+5s		5	0
+3onite	Roche métamorphique dérivant d’une roche magmatique ou métamorphique broyée au point que la majorité des cristaux originels ne soit plus identifiable à l’œil.
+8s		8	0
+2oblaste	Cellule embryonnaire indifférenciée (cellule souche) à la base de la formation des muscles striés.
+9s		9	0
+3carde	Partie musculaire du cœur.
+8s		8	0
+7iopathie	Synonyme de cardiomyopathie.
+8que	Qui concerne des cellules contractiles qui interviennent dans le fonctionnement du cœur.
+bs		b	0
+8te	Inflammation du myocarde.
+as		a	0
+5stor	Synonyme de ragondin (rongeur).
+9s		9	0
+4lonie	Synonyme de clonie.
+9s		9	0
+3fibrille	Unité contractile du muscle.
+bs		b	0
+5lament	Filament protéique, constituant des myofibrilles.
+bs		b	0
+3globine	Protéine des vertébrés, contenant un noyau porphyrique avec ion fer II au centre, transporteur intracellulaire principal de l’oxygène dans les tissus musculair…
+as		a	0
+4ramme	Courbe obtenue lors de l’utilisation d'un myographe.
+9s		9	0
+6phe	Instrument propre à représenter graphiquement la contraction musculaire.
+9s		9	0
+8ie	Description, représentation des muscles.
+as		a	0
+3logie	Partie de l’anatomie qui traite des muscles.
+8s		8	0
+3me	Tumeur bénigne formée de tissu musculaire.
+5ctomie	Ablation chirurgicale d’un myome utérin.
+bs		b	0
+5s		5	0
+4ètre	Muscle de l’utérus.
+8s		8	0
+3pathe	Qui est atteint de myopathie.
+8s		8	0
+7ie	Maladie neuromusculaire se traduisant par une dégénérescence du tissu musculaire.
+9s		9	0
+8que	Relatif à la myopathie.
+bs		b	0
+4e	Qui a la vue fort courte et qui ne peut voir clairement les objets éloignés sans le secours d’un verre concave.
+5s		5	0
+4ie	État de ceux qui sont myopes.
+6s		6	0
+4otame	Synonyme de ragondin (rongeur).
+9s		9	0
+3relaxant	Qui a pour effet de décontracter les muscles.
+be		b	n
+cs		b	1
+bs		b	9
+9tion	Relaxation du muscle.
+ds		d	0
+3sine	Protéine qui joue un rôle fondamental dans les mécanismes de la contraction musculaire.
+7s		7	0
+5s	Rétrécissement de la pupille.
+5te	Inflammation du tissu musculaire.
+7s		7	0
+4otis	Plante du genre Myosotis de la famille des Boraginaceae (borraginées ou Boraginacées) aux fleurs généralement bleues.
+3tique	Qui provoque un myosis (diminution du diamètre de la pupille), notamment en parlant d’un collyre.
+8s		8	0
+4onie	Trouble du tonus musculaire caractérisé par une décontraction lente et difficile d'un muscle à la suite d'une contraction volontaire.
+8s		8	0
+2riade	Dix-mille.
+7s		7	0
+5mètre	Unité de mesure de longueur valant dix-mille mètres, soit 10 kilomètres.
+as		a	0
+5pode	Nom scientifique du millepatte, classe d’arthropodes comprenant les iules, les scolopendres etc.
+9s		9	0
+4ca	Plante du genre Myrica.
+6cée	Plante dicotylédone voisines des cupulifères et des bétulacées.
+9s		9	0
+6s		6	0
+4ophylle	Genre de plantes aquatiques de la famille des haloragacées.
+bs		b	0
+4sticacées	Nom d’une famille de plantes séparée des laurinées et comprenant le genre muscadier (myristica).
+3mécologie	Branche de l’hyménoptérologie spécialisée dans l'étude des fourmis.
+cs		c	0
+aue	Entomologiste qui étudie spécialement les fourmis.
+cs		c	0
+7phage	Se nourrissant de fourmis.
+cs		c	0
+9ile	Qui aime les fourmis.
+cs		c	0
+4idon	Variante orthographique de mirmidon.
+8e	Femme ou fille de petite taille, insignifiante et sans valeur, voire prétentieuse, ridicule, et qui veut paraître supérieure.
+9s		9	0
+8s		8	0
+3obalan	Variante de myrobolan.
+9s		9	0
+5olan	Nom usuel donné à plusieurs arbres, généralement accompagné d'une épithète.
+9s		9	0
+4sine	Enzyme extraite des graines de différentes brassicacées (anciennement crucifères), dont la moutarde.
+8s		8	0
+4xyle	Synonyme de myroxylon.
+8s		8	0
+7on	Arbre du genre Myroxylon aussi appelé baumier du Pérou, myroxyle.
+9s		9	0
+3rhe	Gomme-résine aromatique qui vient de l’Arabie, produite par une Burséracée du genre Commiphora.
+6s		6	0
+0Myrtacées	Famille de plantes dicotylédones, dont le myrte est le type.
+0myrte	Nom vulgaire des arbrisseaux du genre Myrtus, de la famille des Myrtacées (Myrtaceae).
+5s		5	0
+4iforme	Qui a la forme d’une baie de myrte.
+as		a	0
+5lle	Sous-arbrisseau de la famille des Éricacées du genre Vaccinium portant des feuilles caduques ovales et finement dentelées formant de vastes populations en sous…
+8s		8	0
+7ier	Arbrisseau de petite taille sur lequel poussent les myrtilles.
+as		a	0
+2stagogie	Initiation aux mystères d’un culte religieux.
+as		a	0
+8ue	Prêtre, prêtresse qui initiait aux mystères de la religion.
+as		a	0
+4ère	Ce qu’une religion a de plus caché, ce qui n’est connu que des initiés.
+7s		7	0
+4érieuse		9x	n
+bment	Avec mystère.
+bs		9x	1
+9x	Qui contient quelque mystère, quelque secret, quelque sens caché.
+4icète	Baleines à fanons.
+9s		9	0
+6isme	Doctrine qui affirme la possibilité d’une union directe de l’âme avec Dieu, cette union constituant une forme supérieure d’existence et de connaissance.
+as		a	0
+7té	Caractère de ce qui est mystique.
+9s		9	0
+5fia		7er	x
+8ble	Qui peut être mystifié.
+bs		b	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7cateur	Qui mystifie.
+ds		d	9
+aion	Action de mystifier, de berner, de duper.
+ds		d	0
+arice	Celle qui a le goût, l’habitude de mystifier.
+es		aeur	1
+7é	Celui qui est ou a été mystifié.
+8e	Celle qui est ou a été mystifiée.
+9s		9	0
+7ent		8r	v
+8r	Abuser de la crédulité de quelqu’un pour s’amuser à ses dépens.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	0
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5que	Qui a un sens caché, relatif à la religion.
+8ment	Selon le sens mystique.
+8s		8	0
+2the	Récit fabuleux d'origine immémoriale contenant un sens allégorique fondateur d'une communauté humaine et de son environnement.
+5s		5	0
+4ifia		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7cation	Création de mythes.
+ds		d	0
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Rendre mythique quelqu’un ou quelque chose.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5que	Qui appartient au mythe, qui est fondé sur un mythe, qui révèle un mythe.
+8s		8	0
+4o	Menteur ou menteuse.
+5graphe	Auteur qui a écrit sur les mythes.
+bs		b	0
+aie	Étude des mythes.
+cs		c	0
+5logie	Ensemble des histoires fabuleuses des dieux, des demi-dieux et des héros de tel ou tel peuple, civilisation, ou région.
+as		a	0
+9que	Relatif à la mythologie.
+cs		c	0
+8ue	Personne qui se consacre à l’étude de la mythologie.
+as		a	0
+5mane	Qui a la manie pathologique de l’invention mensongère.
+9s		9	0
+8iaque	Relatif à la mythomanie.
+ds		d	0
+9e	Recours systématique aux mythes.
+as		a	0
+5nna		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Raconter volontairement des choses fausses, agir en mythomane.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5s		5	0
+3ilicole	Relatif à la mytiliculture, l’élevage des moules.
+as		a	0
+7ulteur	Personne qui s’occupe de mytiliculture, qui élève des moules.
+ds		d	0
+arice	Personne qui élève des moules.
+es		e	0
+aure	Élevage des moules.
+ds		d	0
+6dé	Mollusque de la famille des Mytilidae, dont fait partie la moule.
+8s		8	0
+5otoxine	Ancien nom de la saxitoxine.
+cs		c	0
+2xine	Une des espèces d'animaux chordés crâniates agnathes marins nécrophages ressemblant à une anguille gluante, à bouche circulaire entourée de barbillons.
+6s		6	0
+3oedémateuse	Orthographe par contrainte typographique de myxœdémateuse.
+es	Orthographe par contrainte typographique de myxœdémateuses.
+cx	Orthographe par contrainte typographique de myxœdémateux.
+6ème	Orthographe par contrainte typographique de myxœdème.
+9s	Orthographe par contrainte typographique de myxœdèmes.
+4matose	Maladie contagieuse du lapin.
+as		a	0
+5e	Tumeur formée de tissu conjonctif muqueux.
+6s		6	0
+5ycète	Champignon proche du règne animal vivant en symbiose avec des bactéries.
+as		a	0
+4virus	Virus à ARN du groupe des orthomyxoviridae.

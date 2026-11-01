@@ -1,923 +1,923 @@
-oba	Nom d’un arbre du Gabon (Mangifera gabonensis), de la famille des térébinthacées, dont le fruit, nommé iba, est comestible.
-obas		oba	0
-obduction	Chevauchement d’une plaque océanique sur une plaque continentale.
-obductions		obduction	0
-obéché	Synonyme de abachi.
-obéchés		obéché	0
-obédience	Obéissance.
-obédiences		obédience	0
-obédiencier	Religieux qui, par ordre de son supérieur, dessert un bénéfice dont il n’est pas titulaire.
-obédienciers		obédiencier	0
-obédientiel	Relatif à l’obédience, à une obédience.
-obédientielle	Féminin singulier de obédientiel.
-obédientielles	Féminin pluriel de obédientiel.
-obédientiels	Masculin pluriel de obédientiel.
-obéi		obéir	56
-obéie		obéir	45
-obéies		obéir	36
-obéîmes		obéir	68
-obéir	Se soumettre à une demande, une règle ou une obligation d’une personne.
-obéira		obéir	44
-obéirai		obéir	50
-obéiraient		obéir	63
-obéirais		obéir	60
-obéirait		obéir	49
-obéiras		obéir	57
-obéirent		obéir	48
-obéirez		obéir	58
-obéiriez		obéir	74
-obéirions		obéir	11
-obéirons		obéir	61
-obéiront		obéir	54
-obéis		obéir	72
-obéissaient		obéir	75
-obéissais		obéir	86
-obéissait		obéir	71
-obéissance	Action d’obéir.
-obéissances		obéissance	0
-obéissant	Qui obéit.
-obéissante		obéissant	23
-obéissantes		obéissant	1
-obéissants		obéissant	9
-obéisse		obéir	85
-obéissent		obéir	69
-obéisses		obéir	98
-obéissez		obéir	70
-obéissiez		obéir	100
-obéissions		obéir	94
-obéissons		obéir	73
-obéit		obéir	80
-obéîtes		obéir	2
-obel	Sorte de signe en forme de broche par lequel on signalait dans les manuscrits anciens les passages interpolés.
-obèle	Signe (—) permettant de repérer une interpolation, une répétition, ou une erreur dans un manuscrit ancien.
-obèles		obèle	0
-obélisque	Monument quadrangulaire en forme d’aiguille, élevé sur un piédestal et ordinairement monolithe.
-obélisques		obélisque	0
-obels		obel	0
-obéra		obérer	33
-obérai		obérer	22
-obéraient		obérer	32
-obérais		obérer	29
-obérait		obérer	34
-obérâmes		obérer	3
-obérant		obérer	43
-obéras		obérer	12
-obérasse		obérer	6
-obérassent		obérer	17
-obérasses		obérer	8
-obérassiez		obérer	14
-obérassions		obérer	25
-obérât		obérer	20
-obérâtes		obérer	2
-obéré	Lourdement endetté, accablé ou criblé de dettes.
-obérée		obéré	23
-obérées		obéré	1
-obèrent		obérer	31
-obérer	Accabler d’une lourde charge financière pouvant endetter jusqu’à la ruine.
-obèrera		obérer	21
-obèrerai		obérer	16
-obèreraient		obérer	28
-obèrerais		obérer	18
-obèrerait		obérer	26
-obèreras		obérer	7
-obérèrent		obérer	24
-obèrerez		obérer	5
-obèreriez		obérer	4
-obèrerions		obérer	11
-obèrerons		obérer	10
-obèreront		obérer	15
-obérés		obéré	9
-obérez		obérer	30
-obériez		obérer	13
-obérions		obérer	19
-obérons		obérer	27
-obèse	Qui est d’un embonpoint excessif, qui est anormalement gros.
-obèses		obèse	0
-obésité	Excès d’embonpoint.
-obésités		obésité	0
-obi	Ceinture de kimono ou de vêtement d’entraînement pour les arts martiaux (keikogi, karategi ou judogi).
-obier	Espèce de viorne dite également viorne obier (Viburnum opulus) ou plus communément boule de neige, arbuste à feuilles caduques de la famille des Adoxacées.
-obiers		obier	0
-obis		obi	0
-obit	Service fondé pour le repos de l’âme d’un mort et qui doit être célébré à des époques déterminées.
-obits		obit	0
-obituaire	Relatif au décès.
-obituaires		obituaire	0
-objecta		objecter	39
-objectai		objecter	55
-objectaient		objecter	32
-objectais		objecter	52
-objectait		objecter	40
-objectal	Relatif à l’objet.
-objectale		objectal	23
-objectales		objectal	1
-objectâmes		objecter	3
-objectant	Qui objecte.
-objectas		objecter	12
-objectasse		objecter	6
-objectassent		objecter	17
-objectasses		objecter	8
-objectassiez		objecter	14
-objectassions		objecter	25
-objectât		objecter	20
-objectâtes		objecter	2
-objectaux		objectal	9
-objecté		objecter	56
-objectée		objecter	37
-objectées		objecter	36
-objectent		objecter	41
-objecter	Opposer un argument ou une affirmation.
-objectera		objecter	44
-objecterai		objecter	16
-objecteraient		objecter	28
-objecterais		objecter	18
-objecterait		objecter	26
-objecteras		objecter	7
-objectèrent		objecter	48
-objecterez		objecter	58
-objecteriez		objecter	4
-objecterions		objecter	11
-objecterons		objecter	10
-objecteront		objecter	54
-objectés		objecter	38
-objecteur	Personne qui objecte.
-objecteurs		objecteur	0
-objectez		objecter	47
-objectiez		objecter	13
-objectif	Qui concerne l’objet.
-objectifs		objectif	9
-objection	Ce que l’on oppose à une affirmation, à une proposition, à une demande.
-objections		objection	0
-objectiva		objectiver	33
-objectivable	Qui peut être objectivé.
-objectivables		objectivable	0
-objectivai		objectiver	22
-objectivaient		objectiver	32
-objectivais		objectiver	29
-objectivait		objectiver	34
-objectivâmes		objectiver	3
-objectivant	Qui objective.
-objectivas		objectiver	12
-objectivasse		objectiver	6
-objectivassent		objectiver	17
-objectivasses		objectiver	8
-objectivassiez		objectiver	14
-objectivassions		objectiver	25
-objectivât		objectiver	20
-objectivâtes		objectiver	2
-objectivation	Action d’objectiver.
-objectivations		objectivation	0
-objective		objectif	23
-objectivée		objectiver	37
-objectivées		objectiver	36
-objectivement	D’une manière objective, relativement aux objets extérieurs, abstraction faite de toute autre et même du sujet observant.
-objectivent		objectiver	41
-objectiver	Rendre perceptible une idée abstraite.
-objectivera		objectiver	21
-objectiverai		objectiver	16
-objectiveraient		objectiver	28
-objectiverais		objectiver	18
-objectiverait		objectiver	26
-objectiveras		objectiver	7
-objectivèrent		objectiver	24
-objectiverez		objectiver	5
-objectiveriez		objectiver	4
-objectiverions		objectiver	11
-objectiverons		objectiver	10
-objectiveront		objectiver	15
-objectives		objectif	1
-objectivez		objectiver	30
-objectiviez		objectiver	13
-objectivions		objectiver	19
-objectivisme	État de ce qui est objectif.
-objectivismes		objectivisme	0
-objectiviste	Relatif à l’objectivisme.
-objectivistes		objectiviste	0
-objectivité	Qualité de ce qui est objectif, existence des objets en dehors de nous.
-objectivités		objectivité	0
-objectivons		objectiver	27
-objectons		objecter	27
-objectrice	Celle qui objecte.
-objectrices		objectrice	0
-objet	Chose tangible et visible, concrète.
-objets		objet	0
-objurgation	Action d’objurguer.
-objurgations		objurgation	0
-oblade	Espèce de poisson osseux marin, un sparidé de l’Atlantique et abondant en Méditerranée, au corps fuselé, de couleur argentée, et ayant une tache noire cerclée …
-oblades		oblade	0
-oblast	Division administrative de la Bulgarie et de plusieurs pays issus de l’éclatement de l’ancienne URSS dont la Russie, la Biélorussie, le Kazakhstan, le Kirghizi…
-oblasts		oblast	0
-oblat	Enfant donné par ses parents à quelque monastère pour y être élevé, ou bien personne qui se donnait elle-même, avec ses biens et parfois avec toute sa famille.
-oblate	Qui a la forme d’un sphéroïde dont l’axe secondaire est choisi comme axe de rotation.
-oblates	Hostie et vin dans l’eucharistie.
-oblatif	Qui s’offre à l’autre, et donne la priorité à la satisfaction des besoins de l’autre.
-oblatifs		oblatif	9
-oblation	Offrande, action par laquelle on offre quelque chose à Dieu.
-oblations		oblation	0
-oblative		oblatif	23
-oblatives		oblatif	1
-oblativité	Capacité à se sacrifier.
-oblativités		oblativité	0
-oblats		oblat	0
-oblature	Oblation, offrande d’un enfant à un monastère, une abbaye, pour y être élevé.
-oblatures		oblature	0
-obligataire	Relatif aux obligations.
-obligataires		obligataire	0
-obligation	Lien moral qui impose quelque devoir concernant la religion, la morale ou la vie civile.
-obligations		obligation	0
-obligatoire	Qui a la force d’obliger suivant la loi.
-obligatoirement	D’une manière obligatoire.
-obligatoires		obligatoire	0
-obligé	Qui est d’usage, dont on ne peut guère se dispenser.
-obligea		obliger	39
-obligeai		obliger	55
-obligeaient		obliger	42
-obligeais		obliger	52
-obligeait		obliger	40
-obligeâmes		obliger	3
-obligeamment	D’une manière obligeante, courtoise ou aimable.
-obligeance	Disposition à se montrer obligeant, serviable.
-obligeances		obligeance	0
-obligeant	Qui aime à obliger, à faire plaisir.
-obligeante		obligeant	23
-obligeantes		obligeant	1
-obligeants		obligeant	9
-obligeas		obliger	12
-obligeasse		obliger	6
-obligeassent		obliger	17
-obligeasses		obliger	8
-obligeassiez		obliger	14
-obligeassions		obliger	25
-obligeât		obliger	62
-obligeâtes		obliger	2
-obligée	Équivalent du mot obligé, en parlant d’une Femme.
-obligées		obligé	1
-obligent		obliger	41
-obligeons		obliger	59
-obliger	Mettre quelqu’un dans l’obligation de faire ou de dire quelque chose.
-obligera		obliger	44
-obligerai		obliger	50
-obligeraient		obliger	28
-obligerais		obliger	60
-obligerait		obliger	49
-obligeras		obliger	57
-obligèrent		obliger	48
-obligerez		obliger	58
-obligeriez		obliger	74
-obligerions		obliger	11
-obligerons		obliger	10
-obligeront		obliger	54
-obligés		obligé	9
-obligez		obliger	47
-obligiez		obliger	67
-obligions		obliger	19
-obliqua		obliquer	39
-obliquai		obliquer	22
-obliquaient		obliquer	42
-obliquais		obliquer	29
-obliquait		obliquer	40
-obliquâmes		obliquer	68
-obliquant		obliquer	43
-obliquas		obliquer	12
-obliquasse		obliquer	6
-obliquassent		obliquer	17
-obliquasses		obliquer	8
-obliquassiez		obliquer	14
-obliquassions		obliquer	25
-obliquât		obliquer	20
-obliquâtes		obliquer	2
-oblique	Qui s’écarte plus ou moins de la verticale.
-obliquement	D’une manière oblique.
-obliquent		obliquer	41
-obliquer	Prendre une direction oblique.
-obliquera		obliquer	21
-obliquerai		obliquer	16
-obliqueraient		obliquer	28
-obliquerais		obliquer	18
-obliquerait		obliquer	26
-obliqueras		obliquer	7
-obliquèrent		obliquer	48
-obliquerez		obliquer	5
-obliqueriez		obliquer	4
-obliquerions		obliquer	11
-obliquerons		obliquer	10
-obliqueront		obliquer	15
-obliques		oblique	0
-obliquez		obliquer	47
-obliquiez		obliquer	13
-obliquions		obliquer	19
-obliquité	Inclinaison d’une ligne ou d’une surface sur une autre.
-obliquités		obliquité	0
-obliquons		obliquer	27
-oblitéra		oblitérer	33
-oblitérai		oblitérer	22
-oblitéraient		oblitérer	42
-oblitérais		oblitérer	29
-oblitérait		oblitérer	40
-oblitérâmes		oblitérer	3
-oblitérant		oblitérer	35
-oblitéras		oblitérer	12
-oblitérasse		oblitérer	6
-oblitérassent		oblitérer	17
-oblitérasses		oblitérer	8
-oblitérassiez		oblitérer	14
-oblitérassions		oblitérer	25
-oblitérât		oblitérer	20
-oblitérâtes		oblitérer	2
-oblitérateur	Qui oblitère.
-oblitérateurs		oblitérateur	0
-oblitération	Action d’oblitérer.
-oblitérations		oblitération	0
-oblitératrice		oblitérateur	23
-oblitératrices		oblitérateur	1
-oblitère		oblitérer	64
-oblitérée		oblitérer	45
-oblitérées		oblitérer	51
-oblitèrent		oblitérer	41
-oblitérer	Effacer, user, surtout en parlant de ce qui a souffert des injures du temps, ou de quelque autre cause naturelle.
-oblitèrera		oblitérer	21
-oblitèrerai		oblitérer	16
-oblitèreraient		oblitérer	28
-oblitèrerais		oblitérer	18
-oblitèrerait		oblitérer	26
-oblitèreras		oblitérer	7
-oblitérèrent		oblitérer	48
-oblitèrerez		oblitérer	5
-oblitèreriez		oblitérer	4
-oblitèrerions		oblitérer	11
-oblitèrerons		oblitérer	10
-oblitèreront		oblitérer	15
-oblitérés	Masculin pluriel de oblitéré.
-oblitérez		oblitérer	30
-oblitériez		oblitérer	13
-oblitérions		oblitérer	19
-oblitérons		oblitérer	59
-oblong	Plus long que large et arrondi aux deux extrémités.
-oblongs		oblong	9
-oblongue		oblong	23
-oblongues		oblong	1
-obnubila		obnubiler	39
-obnubilai		obnubiler	22
-obnubilaient		obnubiler	32
-obnubilais		obnubiler	29
-obnubilait		obnubiler	40
-obnubilâmes		obnubiler	3
-obnubilant		obnubiler	172
-obnubilas		obnubiler	12
-obnubilasse		obnubiler	6
-obnubilassent		obnubiler	17
-obnubilasses		obnubiler	8
-obnubilassiez		obnubiler	14
-obnubilassions		obnubiler	25
-obnubilât		obnubiler	20
-obnubilâtes		obnubiler	2
-obnubilation	Action d’obnubiler.
-obnubilations		obnubilation	0
-obnubilé	Obsédé, qui ne peut s’ôter une idée de l’esprit.
-obnubilée		obnubilé	23
-obnubilées		obnubilé	1
-obnubilent		obnubiler	31
-obnubiler	Couvrir d’une sorte de nuage, assombrir.
-obnubilera		obnubiler	21
-obnubilerai		obnubiler	16
-obnubileraient		obnubiler	28
-obnubilerais		obnubiler	18
-obnubilerait		obnubiler	26
-obnubileras		obnubiler	7
-obnubilèrent		obnubiler	24
-obnubilerez		obnubiler	5
-obnubileriez		obnubiler	4
-obnubilerions		obnubiler	11
-obnubilerons		obnubiler	10
-obnubileront		obnubiler	15
-obnubilés		obnubilé	9
-obnubilez		obnubiler	30
-obnubiliez		obnubiler	13
-obnubilions		obnubiler	19
-obnubilons		obnubiler	27
-obole	Nom d’une ancienne monnaie de peu de valeur, employée dans l’antiquité grecque.
-oboles		obole	0
-obombra		obombrer	33
-obombrai		obombrer	22
-obombraient		obombrer	32
-obombrais		obombrer	29
-obombrait		obombrer	34
-obombrâmes		obombrer	3
-obombrant		obombrer	35
-obombras		obombrer	12
-obombrasse		obombrer	6
-obombrassent		obombrer	17
-obombrasses		obombrer	8
-obombrassiez		obombrer	14
-obombrassions		obombrer	25
-obombrât		obombrer	20
-obombrâtes		obombrer	2
-obombré	Voilé d’ombre.
-obombrée		obombrer	37
-obombrées		obombrer	36
-obombrent		obombrer	31
-obombrer	Ombrager, couvrir de son ombre.
-obombrera		obombrer	21
-obombrerai		obombrer	16
-obombreraient		obombrer	28
-obombrerais		obombrer	18
-obombrerait		obombrer	26
-obombreras		obombrer	7
-obombrèrent		obombrer	24
-obombrerez		obombrer	5
-obombreriez		obombrer	4
-obombrerions		obombrer	11
-obombrerons		obombrer	10
-obombreront		obombrer	15
-obombrés		obombrer	38
-obombrez		obombrer	30
-obombriez		obombrer	13
-obombrions		obombrer	19
-obombrons		obombrer	27
-obscène	Qui blesse ouvertement, qui heurte la décence, la pudeur ou le bon goût.
-obscènes		obscène	0
-obscénité	Caractère de ce qui est obscène.
-obscénités		obscénité	0
-obscur	Où il y a peu, où il n’y a pas de lumière.
-obscurantisme	Attitude des penseurs et des prédicateurs à qui l’on reproche de s’opposer au progrès de la raison et des lumières, dans le domaine scientifique, dans les ques…
-obscurantismes		obscurantisme	0
-obscurantiste	Personne présentée comme s'opposant au progrès, à la science, au rationalisme, à la liberté et à l'ouverture.
-obscurantistes		obscurantiste	0
-obscuration	Obscurcissement causé par une éclipse.
-obscurations		obscuration	0
-obscurci		obscurcir	56
-obscurcie		obscurcir	45
-obscurcies		obscurcir	51
-obscurcîmes		obscurcir	3
-obscurcir	Rendre obscur, priver de lumière.
-obscurcira		obscurcir	44
-obscurcirai		obscurcir	16
-obscurciraient		obscurcir	28
-obscurcirais		obscurcir	18
-obscurcirait		obscurcir	26
-obscurciras		obscurcir	7
-obscurcirent		obscurcir	24
-obscurcirez		obscurcir	5
-obscurciriez		obscurcir	4
-obscurcirions		obscurcir	11
-obscurcirons		obscurcir	10
-obscurciront		obscurcir	15
-obscurcis		obscurcir	72
-obscurcissaient		obscurcir	75
-obscurcissais		obscurcir	29
-obscurcissait		obscurcir	71
-obscurcissant		obscurcir	140
-obscurcisse		obscurcir	89
-obscurcissement	Le fait de devenir obscur ou d’être obscurci.
-obscurcissent		obscurcir	171
-obscurcisses		obscurcir	76
-obscurcissez		obscurcir	30
-obscurcissiez		obscurcir	13
-obscurcissions		obscurcir	19
-obscurcissons		obscurcir	27
-obscurcît		obscurcir	62
-obscurcîtes		obscurcir	2
-obscure		obscur	23
-obscurément	Sans clarté.
-obscures		obscur	1
-obscurité	Absence partielle ou totale de lumière.
-obscurités		obscurité	0
-obscurs		obscur	9
-obsécration	Figure par laquelle l’orateur implore l’assistance de Dieu ou de quelqu’un au nom de Dieu.
-obsécrations		obsécration	0
-obséda		obséder	39
-obsédai		obséder	22
-obsédaient		obséder	42
-obsédais		obséder	52
-obsédait		obséder	40
-obsédâmes		obséder	3
-obsédant	Qui obsède.
-obsédante		obsédant	23
-obsédantes		obsédant	1
-obsédants		obsédant	9
-obsédas		obséder	12
-obsédasse		obséder	6
-obsédassent		obséder	17
-obsédasses		obséder	8
-obsédassiez		obséder	14
-obsédassions		obséder	25
-obsédât		obséder	20
-obsédâtes		obséder	2
-obsédé	Personne obsédée.
-obsédée	Femme obsédée.
-obsédées		obsédé	1
-obsèdent		obséder	41
-obséder	Assiéger quelqu’un, l’entourer pour l'isoler des autres, poursuivre de ses ardeurs.
-obsèdera		obséder	21
-obsèderai		obséder	16
-obsèderaient		obséder	28
-obsèderais		obséder	18
-obsèderait		obséder	26
-obsèderas		obséder	7
-obsédèrent		obséder	48
-obsèderez		obséder	5
-obsèderiez		obséder	4
-obsèderions		obséder	11
-obsèderons		obséder	10
-obsèderont		obséder	15
-obsédés		obsédé	0
-obsédez		obséder	30
-obsédiez		obséder	13
-obsédions		obséder	19
-obsédons		obséder	27
-obsèques	Convoi funèbre ayant plus ou moins un caractère de solennité.
-obséquieuse		obséquieux	23
-obséquieusement	D’une manière obséquieuse.
-obséquieuses		obséquieux	1
-obséquieux	Qui porte à l’excès les témoignages de respect, les égards, la complaisance, les attentions, par servilité ou hypocrisie.
-obséquiosité	Défaut consistant à être exagérément ou artificiellement poli.
-obséquiosités		obséquiosité	0
-observa		observer	39
-observable	Qui peut être observé.
-observables		observable	0
-observai		observer	55
-observaient		observer	42
-observais		observer	52
-observait		observer	40
-observâmes		observer	68
-observance	Pratique d’une règle, exécution de ce que prescrit une règle, et souvent une règle religieuse.
-observances		observance	0
-observant	Qui est fidèle à l’observance religieuse.
-observante		observant	23
-observantes		observant	1
-observantin	Fidèle à l’observance religieuse.
-observantine	Personne qui est fidèle à l’observance religieuse.
-observantines		observantin	1
-observantins	Masculin pluriel de’' observantin.
-observants		observant	0
-observas		observer	12
-observasse		observer	6
-observassent		observer	17
-observasses		observer	8
-observassiez		observer	14
-observassions		observer	25
-observât		observer	20
-observâtes		observer	2
-observateur	Personne qui observe une expérience scientifique ou un phénomène sous l'angle scientifique.
-observateurs		observateur	9
-observation	Action d’observer ce qui est prescrit par quelque loi ou ce que l’on a promis à quelqu’un.
-observationnel	Qui est fondé sur une ou plusieurs observations.
-observationnels		observationnel	9
-observations		observation	0
-observatoire	Édifice construit de façon à pouvoir observer les astres et leurs mouvements.
-observatoires		observatoire	0
-observatrice	Celle qui observe.
-observatrices		observateur	1
-observe		observer	64
-observée		observer	45
-observées		observer	51
-observent		observer	41
-observer	Accomplir, suivre ce qui est prescrit par une loi, par une règle.
-observera		observer	44
-observerai		observer	50
-observeraient		observer	63
-observerais		observer	60
-observerait		observer	49
-observeras		observer	7
-observèrent		observer	48
-observerez		observer	58
-observeriez		observer	4
-observerions		observer	11
-observerons		observer	61
-observeront		observer	54
-observés		observer	53
-observez		observer	47
-observiez		observer	67
-observions		observer	65
-observons		observer	59
-obsessif	Qui obsède.
-obsessifs		obsessif	9
-obsession	Action de celui qui obsède quelqu’un, qui est tellement assidu auprès de lui, que d’autres personnes ne peuvent en approcher.
-obsessionnel	Relatif à l'obsession, aux pensées intrusives.
-obsessionnelle		obsessionnel	23
-obsessionnelles		obsessionnel	1
-obsessionnels		obsessionnel	9
-obsessions		obsession	0
-obsessive		obsessif	23
-obsessives		obsessif	1
-obsidienne	Roche éruptive à structure vitreuse, sans cristaux, de couleur noire (parfois verte).
-obsidiennes		obsidienne	0
-obsidional	Qui concerne le siège d’une ville.
-obsidionale		obsidional	23
-obsidionales		obsidional	1
-obsidionaux		obsidional	9
-obsolescence	Désuétude ; vieillissement.
-obsolescences		obsolescence	0
-obsolescent	Qui a un caractère d’obsolescence, en passe de devenir obsolète, désuet, vieilli.
-obsolescente		obsolescent	23
-obsolescentes		obsolescent	1
-obsolescents		obsolescent	0
-obsolète	Qui n’est plus utilisé, en parlant d’un mot, d’une locution.
-obsolètes		obsolète	0
-obstacle	Ce qui empêche de passer.
-obstacles		obstacle	0
-obstétrical	Qui a rapport aux accouchements.
-obstétricale		obstétrical	23
-obstétricales		obstétrical	1
-obstétricaux		obstétrical	9
-obstétricien	Médecin accoucheur.
-obstétricienne	Médecin femme pratiquant l’obstétrique, médecine relative aux accouchements.
-obstétriciennes		obstétricienne	0
-obstétriciens		obstétricien	0
-obstétrique	Partie de la médecine relative aux accouchements.
-obstétriques		obstétrique	0
-obstina		obstiner	39
-obstinai		obstiner	55
-obstinaient		obstiner	42
-obstinais		obstiner	52
-obstinait		obstiner	40
-obstinâmes		obstiner	3
-obstinant		obstiner	43
-obstinas		obstiner	12
-obstinasse		obstiner	6
-obstinassent		obstiner	17
-obstinasses		obstiner	8
-obstinassiez		obstiner	14
-obstinassions		obstiner	25
-obstinât		obstiner	20
-obstinâtes		obstiner	2
-obstination	Action de s’obstiner, de s’attacher opiniâtrement à une idée, à un sentiment, à une entreprise.
-obstinations		obstination	0
-obstiné	Qui s’obstine ; qui est entêté ou acharné.
-obstinée	Femme obstinée.
-obstinées		obstiné	1
-obstinément	Avec obstination.
-obstinent		obstiner	41
-obstiner	Faire acte d’obstination.
-obstinera		obstiner	44
-obstinerai		obstiner	16
-obstineraient		obstiner	63
-obstinerais		obstiner	18
-obstinerait		obstiner	49
-obstineras		obstiner	57
-obstinèrent		obstiner	48
-obstinerez		obstiner	58
-obstineriez		obstiner	74
-obstinerions		obstiner	11
-obstinerons		obstiner	10
-obstineront		obstiner	54
-obstinés		obstiné	9
-obstineur	Qui s’obstine.
-obstineurs		obstineur	0
-obstineux	Qui obstine sur tout, pour le plaisir de la discussion.
-obstinez		obstiner	47
-obstiniez		obstiner	13
-obstinions		obstiner	65
-obstinons		obstiner	59
-obstrua		obstruer	39
-obstruai		obstruer	22
-obstruaient		obstruer	42
-obstruais		obstruer	29
-obstruait		obstruer	40
-obstruâmes		obstruer	3
-obstruant		obstruer	43
-obstruas		obstruer	83
-obstruasse		obstruer	6
-obstruassent		obstruer	17
-obstruasses		obstruer	8
-obstruassiez		obstruer	14
-obstruassions		obstruer	25
-obstruât		obstruer	62
-obstruâtes		obstruer	2
-obstructif	Qui fait obstruction.
-obstructifs		obstructif	9
-obstruction	Engorgement ou embarras qui se forme dans les conduits de l’organisme.
-obstructions		obstruction	0
-obstructive		obstructif	23
-obstructives		obstructif	1
-obstrue		obstruer	64
-obstruée	Féminin singulier de obstrué.
-obstruées		obstruer	51
-obstruent		obstruer	41
-obstruer	Bloquer, rendre impraticable par quelque obstacle.
-obstruera		obstruer	21
-obstruerai		obstruer	16
-obstrueraient		obstruer	63
-obstruerais		obstruer	18
-obstruerait		obstruer	26
-obstrueras		obstruer	7
-obstruèrent		obstruer	24
-obstruerez		obstruer	5
-obstrueriez		obstruer	4
-obstruerions		obstruer	11
-obstruerons		obstruer	10
-obstrueront		obstruer	54
-obstrués	Masculin pluriel de obstrué.
-obstruez		obstruer	47
-obstruiez		obstruer	13
-obstruions		obstruer	19
-obstruons		obstruer	27
-obtempéra		obtempérer	39
-obtempérai		obtempérer	55
-obtempéraient		obtempérer	42
-obtempérais		obtempérer	29
-obtempérait		obtempérer	40
-obtempérâmes		obtempérer	3
-obtempérant		obtempérer	35
-obtempéras		obtempérer	12
-obtempérasse		obtempérer	6
-obtempérassent		obtempérer	17
-obtempérasses		obtempérer	8
-obtempérassiez		obtempérer	14
-obtempérassions		obtempérer	25
-obtempérât		obtempérer	20
-obtempérâtes		obtempérer	2
-obtempéré		obtempérer	56
-obtempèrent		obtempérer	31
-obtempérer	Obéir ; se soumettre.
-obtempèrera		obtempérer	21
-obtempèrerai		obtempérer	16
-obtempèreraient		obtempérer	28
-obtempèrerais		obtempérer	18
-obtempèrerait		obtempérer	26
-obtempèreras		obtempérer	7
-obtempérèrent		obtempérer	48
-obtempèrerez		obtempérer	5
-obtempèreriez		obtempérer	4
-obtempèrerions		obtempérer	11
-obtempèrerons		obtempérer	10
-obtempèreront		obtempérer	15
-obtempères		obtempérer	66
-obtempérez		obtempérer	47
-obtempériez		obtempérer	13
-obtempérions		obtempérer	65
-obtempérons		obtempérer	27
-obtenaient		obtenir	93
-obtenais		obtenir	95
-obtenait		obtenir	91
-obtenant		obtenir	43
-obtenez		obtenir	70
-obteniez		obtenir	102
-obtenions		obtenir	103
-obtenir	Se faire accorder par tel ou tel moyen une chose que l’on désire.
-obtenons		obtenir	73
-obtenteur	Celui qui obtient.
-obtenteurs		obtenteur	0
-obtention	Action d’obtenir.
-obtentions		obtention	0
-obtentrice	Celle qui obtient.
-obtentrices		obtentrice	0
-obtenu	Que l'on a obtenu.
-obtenue		obtenir	45
-obtenues		obtenir	51
-obtenus		obtenir	53
-obtiendra		obtenir	44
-obtiendrai		obtenir	50
-obtiendraient		obtenir	97
-obtiendrais		obtenir	96
-obtiendrait		obtenir	92
-obtiendras		obtenir	57
-obtiendrez		obtenir	58
-obtiendriez		obtenir	104
-obtiendrions		obtenir	105
-obtiendrons		obtenir	61
-obtiendront		obtenir	54
-obtienne		obtenir	85
-obtiennent		obtenir	69
-obtiennes		obtenir	98
-obtiens		obtenir	72
-obtient		obtenir	80
-obtînmes		obtenir	68
-obtinrent		obtenir	48
-obtins		obtenir	55
-obtinsse		obtenir	81
-obtinssent		obtenir	17
-obtinsses		obtenir	8
-obtinssiez		obtenir	14
-obtinssions		obtenir	25
-obtînt		obtenir	62
-obtîntes		obtenir	2
-obtura		obturer	39
-obturai		obturer	22
-obturaient		obturer	32
-obturais		obturer	29
-obturait		obturer	40
-obturâmes		obturer	3
-obturant		obturer	35
-obturas		obturer	12
-obturasse		obturer	6
-obturassent		obturer	17
-obturasses		obturer	8
-obturassiez		obturer	14
-obturassions		obturer	25
-obturât		obturer	20
-obturâtes		obturer	2
-obturateur	Qualifie certains éléments anatomiques qui servent à boucher le trou ovale de l’os iliaque.
-obturateurs		obturateur	9
-obturation	Action d’obturer ou résultat de cette action.
-obturations		obturation	0
-obturatrice		obturateur	23
-obturatrices		obturateur	1
-obturé		obturer	56
-obturée		obturer	45
-obturées		obturer	36
-obturent		obturer	31
-obturer	Boucher une ouverture qui s’est produite accidentellement.
-obturera		obturer	21
-obturerai		obturer	16
-obtureraient		obturer	28
-obturerais		obturer	18
-obturerait		obturer	26
-obtureras		obturer	7
-obturèrent		obturer	24
-obturerez		obturer	5
-obtureriez		obturer	4
-obturerions		obturer	11
-obturerons		obturer	10
-obtureront		obturer	15
-obturés		obturer	38
-obturez		obturer	47
-obturiez		obturer	13
-obturions		obturer	19
-obturons		obturer	27
-obtus	Qui est arrondi, émoussé au lieu d’être anguleux ou pointu.
-obtusangle	Dont un des angles est obtus (en parlant d'un triangle).
-obtusangles		obtusangle	0
-obtuse		obtus	23
-obtuses		obtus	1
-obtusion	État obtus, en parlant des sens.
-obtusions		obtusion	0
-obus	Projectile creux, en forme de cylindre terminé par un cône, rempli de matière explosive.
-obusier	Pièce d’artillerie courte qui lance des obus, généralement à tir plongeant.
-obusiers		obusier	115
-obusite	Affection psychologique consécutive à l’expérience du bombardement.
-obusites		obusite	0
-obvenaient		obvenir	116
-obvenais		obvenir	114
-obvenait		obvenir	119
-obvenant		obvenir	35
-obvenez		obvenir	30
-obveniez		obvenir	110
-obvenions		obvenir	111
-obvenir	Échoir.
-obvenons		obvenir	27
-obvenu		obvenir	46
-obvenue		obvenir	37
-obvenues		obvenir	36
-obvenus		obvenir	38
-obvers	Côté de la médaille opposé au revers.
-obvia		obvier	33
-obviai		obvier	22
-obviaient		obvier	32
-obviais		obvier	29
-obviait		obvier	34
-obviâmes		obvier	3
-obviant		obvier	35
-obvias		obvier	12
-obviasse		obvier	6
-obviassent		obvier	17
-obviasses		obvier	8
-obviassiez		obvier	14
-obviassions		obvier	25
-obviât		obvier	20
-obviâtes		obvier	2
-obvie	Caractérise le sens d’un mot, d’une expression, qui est celui que l’esprit lui donne sans réflexion et abstraction faite du contexte.
-obviendra		obvenir	21
-obviendrai		obvenir	16
-obviendraient		obvenir	108
-obviendrais		obvenir	106
-obviendrait		obvenir	112
-obviendras		obvenir	7
-obviendrez		obvenir	5
-obviendriez		obvenir	99
-obviendrions		obvenir	101
-obviendrons		obvenir	10
-obviendront		obvenir	15
-obvienne		obvenir	89
-obviennent		obvenir	31
-obviennes		obvenir	76
-obviens		obvenir	79
-obvient		obvier	31
-obvier	Faire obstacle à un événement fâcheux.
-obviera		obvier	21
-obvierai		obvier	16
-obvieraient		obvier	28
-obvierais		obvier	18
-obvierait		obvier	26
-obvieras		obvier	7
-obvièrent		obvier	24
-obvierez		obvier	5
-obvieriez		obvier	4
-obvierions		obvier	11
-obvierons		obvier	10
-obvieront		obvier	15
-obviés		obvier	38
-obviez		obvier	30
-obviiez		obvier	13
-obviions		obvier	19
-obvînmes		obvenir	3
-obvinrent		obvenir	24
-obvins		obvenir	22
-obvinsse		obvenir	6
-obvinssent		obvenir	17
-obvinsses		obvenir	8
-obvinssiez		obvenir	14
-obvinssions		obvenir	25
-obvint		obvenir	33
-obvîntes		obvenir	2
-obvions		obvier	27
+0oba	Nom d’un arbre du Gabon (Mangifera gabonensis), de la famille des térébinthacées, dont le fruit, nommé iba, est comestible.
+3s		3	0
+2duction	Chevauchement d’une plaque océanique sur une plaque continentale.
+9s		9	0
+2éché	Synonyme de abachi.
+6s		6	0
+3dience	Obéissance.
+9s		9	0
+8ier	Religieux qui, par ordre de son supérieur, dessert un bénéfice dont il n’est pas titulaire.
+bs		b	0
+7tiel	Relatif à l’obédience, à une obédience.
+ble	Féminin singulier de obédientiel.
+ds	Féminin pluriel de obédientiel.
+bs	Masculin pluriel de obédientiel.
+3i		4r	1k
+4e		4r	19
+5s		4r	10
+3îmes		3ir	1w
+3ir	Se soumettre à une demande, une règle ou une obligation d’une personne.
+5a		5	18
+6i		5	1e
+7ent		5	1r
+7s		5	1o
+7t		5	1d
+6s		5	1l
+5ent		5	1c
+6z		5	1m
+5iez		5	22
+6ons		5	b
+5ons		5	1p
+7t		5	1i
+4s		4r	20
+5saient		4r	23
+8s		4r	2e
+8t		4r	1z
+7nce	Action d’obéir.
+as		a	0
+8t	Qui obéit.
+9e		9	n
+as		9	1
+9s		9	9
+6e		4r	2d
+7nt		4r	1x
+7s		4r	2q
+7z		4r	1y
+6iez		4r	2s
+7ons		4r	2m
+6ons		4r	21
+4t		4r	28
+3îtes		3ir	2
+2el	Sorte de signe en forme de broche par lequel on signalait dans les manuscrits anciens les passages interpolés.
+2èle	Signe (—) permettant de repérer une interpolation, une répétition, ou une erreur dans un manuscrit ancien.
+5s		5	0
+2élisque	Monument quadrangulaire en forme d’aiguille, élevé sur un piédestal et ordinairement monolithe.
+9s		9	0
+2els		4	0
+2éra		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é	Lourdement endetté, accablé ou criblé de dettes.
+5e		5	n
+6s		5	1
+2èrent		2érer	v
+2érer	Accabler d’une lourde charge financière pouvant endetter jusqu’à la ruine.
+2èrera		2érer	l
+7i		2érer	g
+8ent		2érer	s
+8s		2érer	i
+8t		2érer	q
+7s		2érer	7
+2érèrent		4er	o
+2èrerez		2érer	5
+6iez		2érer	4
+7ons		2érer	b
+6ons		2érer	a
+8t		2érer	f
+2érés		5	9
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2èse	Qui est d’un embonpoint excessif, qui est anormalement gros.
+5s		5	0
+2ésité	Excès d’embonpoint.
+7s		7	0
+2i	Ceinture de kimono ou de vêtement d’entraînement pour les arts martiaux (keikogi, karategi ou judogi).
+3er	Espèce de viorne dite également viorne obier (Viburnum opulus) ou plus communément boule de neige, arbuste à feuilles caduques de la famille des Adoxacées.
+5s		5	0
+3s		3	0
+3t	Service fondé pour le repos de l’âme d’un mort et qui doit être célébré à des époques déterminées.
+4s		4	0
+4uaire	Relatif au décès.
+9s		9	0
+2jecta		6er	13
+7i		6er	1j
+8ent		6er	w
+8s		6er	1g
+8t		6er	14
+7l	Relatif à l’objet.
+8e		8	n
+9s		8	1
+6âmes		6er	3
+6ant	Qui objecte.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6aux		7l	9
+6é		6er	1k
+7e		6er	11
+8s		6er	10
+6ent		7r	15
+7r	Opposer un argument ou une affirmation.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	1i
+6és		6er	12
+6eur	Personne qui objecte.
+9s		9	0
+7z		7r	1b
+6iez		6er	d
+7f	Qui concerne l’objet.
+8s		8	9
+7on	Ce que l’on oppose à une affirmation, à une proposition, à une demande.
+9s		9	0
+7va		8er	x
+9ble	Qui peut être objectivé.
+cs		c	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant	Qui objective.
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action d’objectiver.
+ds		d	0
+8e		7f	n
+8ée		8er	11
+as		8er	10
+8ement	D’une manière objective, relativement aux objets extérieurs, abstraction faite de toute autre et même du sujet observant.
+9nt		9r	15
+9r	Rendre perceptible une idée abstraite.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		7f	1
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+9sme	État de ce qui est objectif.
+cs		c	0
+ate	Relatif à l’objectivisme.
+cs		c	0
+9té	Qualité de ce qui est objectif, existence des objets en dehors de nous.
+bs		b	0
+8ons		8er	r
+6ons		6er	r
+6rice	Celle qui objecte.
+as		a	0
+4t	Chose tangible et visible, concrète.
+5s		5	0
+3urgation	Action d’objurguer.
+bs		b	0
+2lade	Espèce de poisson osseux marin, un sparidé de l’Atlantique et abondant en Méditerranée, au corps fuselé, de couleur argentée, et ayant une tache noire cerclée …
+6s		6	0
+4st	Division administrative de la Bulgarie et de plusieurs pays issus de l’éclatement de l’ancienne URSS dont la Russie, la Biélorussie, le Kazakhstan, le Kirghizi…
+6s		6	0
+4t	Enfant donné par ses parents à quelque monastère pour y être élevé, ou bien personne qui se donnait elle-même, avec ses biens et parfois avec toute sa famille.
+5e	Qui a la forme d’un sphéroïde dont l’axe secondaire est choisi comme axe de rotation.
+6s	Hostie et vin dans l’eucharistie.
+5if	Qui s’offre à l’autre, et donne la priorité à la satisfaction des besoins de l’autre.
+7s		7	9
+6on	Offrande, action par laquelle on offre quelque chose à Dieu.
+8s		8	0
+6ve		6f	n
+8s		6f	1
+7ité	Capacité à se sacrifier.
+as		a	0
+5s		5	0
+5ure	Oblation, offrande d’un enfant à un monastère, une abbaye, pour y être élevé.
+8s		8	0
+3igataire	Relatif aux obligations.
+bs		b	0
+7ion	Lien moral qui impose quelque devoir concernant la religion, la morale ou la vie civile.
+as		a	0
+7oire	Qui a la force d’obliger suivant la loi.
+bment	D’une manière obligatoire.
+bs		b	0
+5é	Qui est d’usage, dont on ne peut guère se dispenser.
+5ea		6r	13
+7i		6r	1j
+8ent		6r	16
+8s		6r	1g
+8t		6r	14
+6âmes		6r	3
+6amment	D’une manière obligeante, courtoise ou aimable.
+7nce	Disposition à se montrer obligeant, serviable.
+as		a	0
+8t	Qui aime à obliger, à faire plaisir.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6r	c
+8se		6r	6
+ant		6r	h
+as		6r	8
+9iez		6r	e
+aons		6r	p
+6ât		6r	1q
+8es		6r	2
+5ée	Équivalent du mot obligé, en parlant d’une Femme.
+7s		6	1
+5ent		6r	15
+6ons		6r	1n
+6r	Mettre quelqu’un dans l’obligation de faire ou de dire quelque chose.
+7a		7	18
+8i		7	1e
+9ent		7	s
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	22
+8ons		7	b
+7ons		7	a
+9t		7	1i
+5és		6	9
+5ez		6r	1b
+5iez		5er	1v
+6ons		5er	j
+4qua		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	1w
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Qui s’écarte plus ou moins de la verticale.
+7ment	D’une manière oblique.
+7nt		7r	15
+7r	Prendre une direction oblique.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+7té	Inclinaison d’une ligne ou d’une surface sur une autre.
+9s		9	0
+6ons		6er	r
+4téra		7er	x
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ateur	Qui oblitère.
+cs		c	0
+9ion	Action d’oblitérer.
+cs		c	0
+9rice		9eur	n
+ds		9eur	1
+5ère		5érer	1s
+5érée		7er	19
+9s		7er	1f
+5èrent		5érer	15
+5érer	Effacer, user, surtout en parlant de ce qui a souffert des injures du temps, ou de quelque autre cause naturelle.
+5èrera		5érer	l
+ai		5érer	g
+bent		5érer	s
+bs		5érer	i
+bt		5érer	q
+as		5érer	7
+5érèrent		7er	1c
+5èrerez		5érer	5
+9iez		5érer	4
+aons		5érer	b
+9ons		5érer	a
+bt		5érer	f
+5érés	Masculin pluriel de oblitéré.
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	1n
+3ong	Plus long que large et arrondi aux deux extrémités.
+6s		6	9
+6ue		6	n
+8s		6	1
+2nubila		7er	13
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	4s
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action d’obnubiler.
+cs		c	0
+7é	Obsédé, qui ne peut s’ôter une idée de l’esprit.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Couvrir d’une sorte de nuage, assombrir.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+2ole	Nom d’une ancienne monnaie de peu de valeur, employée dans l’antiquité grecque.
+5s		5	0
+3mbra		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é	Voilé d’ombre.
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Ombrager, couvrir de son ombre.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+2scène	Qui blesse ouvertement, qui heurte la décence, la pudeur ou le bon goût.
+7s		7	0
+4énité	Caractère de ce qui est obscène.
+9s		9	0
+4ur	Où il y a peu, où il n’y a pas de lumière.
+6antisme	Attitude des penseurs et des prédicateurs à qui l’on reproche de s’opposer au progrès de la raison et des lumières, dans le domaine scientifique, dans les ques…
+ds		d	0
+bte	Personne présentée comme s'opposant au progrès, à la science, au rationalisme, à la liberté et à l'ouverture.
+ds		d	0
+7tion	Obscurcissement causé par une éclipse.
+bs		b	0
+6ci		8r	1k
+8e		8r	19
+9s		8r	1f
+7îmes		7ir	3
+7ir	Rendre obscur, priver de lumière.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+9ent		9	o
+az		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	20
+9saient		8r	23
+cs		8r	t
+ct		8r	1z
+bnt		8r	3w
+ae		8r	2h
+bment	Le fait de devenir obscur ou d’être obscurci.
+bnt		8r	4r
+bs		8r	24
+bz		8r	u
+aiez		8r	d
+bons		8r	j
+aons		8r	r
+7ît		7ir	1q
+9es		7ir	2
+6e		6	n
+6ément	Sans clarté.
+6es		6	1
+6ité	Absence partielle ou totale de lumière.
+9s		9	0
+6s		6	9
+3écration	Figure par laquelle l’orateur implore l’assistance de Dieu ou de quelqu’un au nom de Dieu.
+bs		b	0
+4da		5er	13
+6i		5er	m
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant	Qui obsède.
+8e		8	n
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Personne obsédée.
+6e	Femme obsédée.
+7s		6	1
+3èdent		3éder	15
+3éder	Assiéger quelqu’un, l’entourer pour l'isoler des autres, poursuivre de ses ardeurs.
+3èdera		3éder	l
+8i		3éder	g
+9ent		3éder	s
+9s		3éder	i
+9t		3éder	q
+8s		3éder	7
+3édèrent		5er	1c
+3èderez		3éder	5
+7iez		3éder	4
+8ons		3éder	b
+7ons		3éder	a
+9t		3éder	f
+3édés		6	0
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3èques	Convoi funèbre ayant plus ou moins un caractère de solennité.
+3équieuse		9x	n
+bment	D’une manière obséquieuse.
+bs		9x	1
+9x	Qui porte à l’excès les témoignages de respect, les égards, la complaisance, les attentions, par servilité ou hypocrisie.
+7osité	Défaut consistant à être exagérément ou artificiellement poli.
+cs		c	0
+3erva		6er	13
+7ble	Qui peut être observé.
+as		a	0
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	1w
+6ance	Pratique d’une règle, exécution de ce que prescrit une règle, et souvent une règle religieuse.
+as		a	0
+8t	Qui est fidèle à l’observance religieuse.
+9e		9	n
+as		9	1
+9in	Fidèle à l’observance religieuse.
+be	Personne qui est fidèle à l’observance religieuse.
+cs		b	1
+bs	Masculin pluriel de’' observantin.
+9s		9	0
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Personne qui observe une expérience scientifique ou un phénomène sous l'angle scientifique.
+bs		b	9
+8ion	Action d’observer ce qui est prescrit par quelque loi ou ce que l’on a promis à quelqu’un.
+bnel	Qui est fondé sur une ou plusieurs observations.
+es		e	9
+bs		b	0
+8oire	Édifice construit de façon à pouvoir observer les astres et leurs mouvements.
+cs		c	0
+8rice	Celle qui observe.
+cs		8eur	1
+6e		7r	1s
+6ée		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Accomplir, suivre ce qui est prescrit par une loi, par une règle.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	7
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	1p
+at		8	1i
+6és		6er	1h
+6ez		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+6ons		6er	1n
+4ssif	Qui obsède.
+8s		8	9
+7on	Action de celui qui obsède quelqu’un, qui est tellement assidu auprès de lui, que d’autres personnes ne peuvent en approcher.
+9nel	Relatif à l'obsession, aux pensées intrusives.
+cle		c	n
+es		c	1
+cs		c	9
+9s		9	0
+7ve		7f	n
+9s		7f	1
+3idienne	Roche éruptive à structure vitreuse, sans cristaux, de couleur noire (parfois verte).
+as		a	0
+6onal	Qui concerne le siège d’une ville.
+ae		a	n
+bs		a	1
+9ux		9l	9
+3olescence	Désuétude ; vieillissement.
+cs		c	0
+at	Qui a un caractère d’obsolescence, en passe de devenir obsolète, désuet, vieilli.
+be		b	n
+cs		b	1
+bs		b	0
+5ète	Qui n’est plus utilisé, en parlant d’un mot, d’une locution.
+8s		8	0
+3tacle	Ce qui empêche de passer.
+8s		8	0
+4étrical	Qui a rapport aux accouchements.
+be		b	n
+cs		b	1
+aux		al	9
+9ien	Médecin accoucheur.
+cne	Médecin femme pratiquant l’obstétrique, médecine relative aux accouchements.
+es		e	0
+cs		c	0
+8que	Partie de la médecine relative aux accouchements.
+bs		b	0
+4ina		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Action de s’obstiner, de s’attacher opiniâtrement à une idée, à un sentiment, à une entreprise.
+bs		b	0
+6é	Qui s’obstine ; qui est entêté ou acharné.
+7e	Femme obstinée.
+8s		7	1
+7ment	Avec obstination.
+6ent		7r	15
+7r	Faire acte d’obstination.
+8a		8	18
+9i		8	g
+aent		8	1r
+as		8	i
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	22
+9ons		8	b
+8ons		8	a
+at		8	1i
+6és		7	9
+6eur	Qui s’obstine.
+9s		9	0
+8x	Qui obstine sur tout, pour le plaisir de la discussion.
+7z		7r	1b
+6iez		6er	d
+7ons		6er	1t
+6ons		6er	1n
+4rua		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	2b
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6ctif	Qui fait obstruction.
+as		a	9
+9on	Engorgement ou embarras qui se forme dans les conduits de l’organisme.
+bs		b	0
+9ve		9f	n
+bs		9f	1
+6e		7r	1s
+6ée	Féminin singulier de obstrué.
+8s		6er	1f
+6ent		7r	15
+7r	Bloquer, rendre impraticable par quelque obstacle.
+8a		8	l
+9i		8	g
+aent		8	1r
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	1i
+6és	Masculin pluriel de obstrué.
+6ez		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+2tempéra		8er	13
+9i		8er	1j
+aent		8er	16
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1k
+6èrent		6érer	v
+6érer	Obéir ; se soumettre.
+6èrera		6érer	l
+bi		6érer	g
+cent		6érer	s
+cs		6érer	i
+ct		6érer	q
+bs		6érer	7
+6érèrent		8er	1c
+6èrerez		6érer	5
+aiez		6érer	4
+bons		6érer	b
+aons		6érer	a
+ct		6érer	f
+9s		6érer	1u
+6érez		9r	1b
+8iez		8er	d
+9ons		8er	1t
+8ons		8er	r
+4naient		5ir	2l
+7s		5ir	2n
+7t		5ir	2j
+6nt		5ir	17
+5ez		5ir	1y
+5iez		6r	2u
+6ons		6r	2v
+6r	Se faire accorder par tel ou tel moyen une chose que l’on désire.
+5ons		5ir	21
+5teur	Celui qui obtient.
+9s		9	0
+6ion	Action d’obtenir.
+9s		9	0
+6rice	Celle qui obtient.
+as		a	0
+5u	Que l'on a obtenu.
+6e		5ir	19
+7s		5ir	1f
+6s		5ir	1h
+3iendra		3enir	18
+9i		3enir	1e
+aent		3enir	2p
+as		3enir	2o
+at		3enir	2k
+9s		3enir	1l
+8ez		3enir	1m
+8iez		3enir	2w
+9ons		3enir	2x
+8ons		3enir	1p
+at		3enir	1i
+6ne		3enir	2d
+8nt		3enir	1x
+8s		3enir	2q
+6s		3enir	20
+6t		3enir	28
+3înmes		3enir	1w
+3inrent		3enir	1c
+5s		3enir	1j
+6se		3enir	29
+8nt		3enir	h
+8s		3enir	8
+7iez		3enir	e
+8ons		3enir	p
+3înt		3enir	1q
+6es		3enir	2
+3ura		5er	13
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ateur	Qualifie certains éléments anatomiques qui servent à boucher le trou ovale de l’os iliaque.
+as		a	9
+7ion	Action d’obturer ou résultat de cette action.
+as		a	0
+7rice		7eur	n
+bs		7eur	1
+5é		5er	1k
+6e		5er	19
+7s		5er	10
+5ent		6r	v
+6r	Boucher une ouverture qui s’est produite accidentellement.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4s	Qui est arrondi, émoussé au lieu d’être anguleux ou pointu.
+5angle	Dont un des angles est obtus (en parlant d'un triangle).
+as		a	0
+5e		5	n
+6s		5	1
+5ion	État obtus, en parlant des sens.
+8s		8	0
+2us	Projectile creux, en forme de cylindre terminé par un cône, rempli de matière explosive.
+4ier	Pièce d’artillerie courte qui lance des obus, généralement à tir plongeant.
+7s		7	37
+5te	Affection psychologique consécutive à l’expérience du bombardement.
+7s		7	0
+2venaient		5ir	38
+7s		5ir	36
+7t		5ir	3b
+6nt		5ir	z
+5ez		5ir	u
+5iez		6r	32
+6ons		6r	33
+6r	Échoir.
+5ons		5ir	r
+5u		5ir	1a
+6e		5ir	11
+7s		5ir	10
+6s		5ir	12
+4rs	Côté de la médaille opposé au revers.
+3ia		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Caractérise le sens d’un mot, d’une expression, qui est celui que l’esprit lui donne sans réflexion et abstraction faite du contexte.
+5ndra		3enir	l
+9i		3enir	g
+aent		3enir	30
+as		3enir	2y
+at		3enir	34
+9s		3enir	7
+8ez		3enir	5
+8iez		3enir	2r
+9ons		3enir	2t
+8ons		3enir	a
+at		3enir	f
+6ne		3enir	2h
+8nt		3enir	v
+8s		3enir	24
+6s		3enir	27
+6t		5r	v
+5r	Faire obstacle à un événement fâcheux.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+3înmes		3enir	3
+3inrent		3enir	o
+5s		3enir	m
+6se		3enir	6
+8nt		3enir	h
+8s		3enir	8
+7iez		3enir	e
+8ons		3enir	p
+5t		3enir	x
+3întes		3enir	2
+3ions		4er	r

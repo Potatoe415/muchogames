@@ -1,260 +1,260 @@
-ide	Poisson rouge d’eau douce.
-idéal	Qui n’existe ou ne peut exister que dans l’entendement, dans l’imagination par opposition à réel.
-idéale		idéal	23
-idéalement	D’une manière idéale.
-idéales		idéal	1
-idéalisa		idéaliser	33
-idéalisai		idéaliser	22
-idéalisaient		idéaliser	32
-idéalisais		idéaliser	29
-idéalisait		idéaliser	40
-idéalisâmes		idéaliser	3
-idéalisant		idéaliser	43
-idéalisas		idéaliser	12
-idéalisasse		idéaliser	6
-idéalisassent		idéaliser	17
-idéalisasses		idéaliser	8
-idéalisassiez		idéaliser	14
-idéalisassions		idéaliser	25
-idéalisât		idéaliser	20
-idéalisâtes		idéaliser	2
-idéalisateur	Qualifie une personne, un récit qui idéalise.
-idéalisateurs		idéalisateur	9
-idéalisation	Action d’idéaliser.
-idéalisations		idéalisation	0
-idéalisatrice	Celle qui idéalise.
-idéalisatrices		idéalisateur	1
-idéalisé	Transformé par la pensée, en fonction d’un idéal.
-idéalisée		idéalisé	23
-idéalisées		idéalisé	1
-idéalisent		idéaliser	41
-idéaliser	Revêtir d’un caractère idéal une personne, une chose.
-idéalisera		idéaliser	21
-idéaliserai		idéaliser	16
-idéaliseraient		idéaliser	28
-idéaliserais		idéaliser	18
-idéaliserait		idéaliser	26
-idéaliseras		idéaliser	7
-idéalisèrent		idéaliser	24
-idéaliserez		idéaliser	5
-idéaliseriez		idéaliser	4
-idéaliserions		idéaliser	11
-idéaliserons		idéaliser	10
-idéaliseront		idéaliser	15
-idéalisés		idéalisé	9
-idéalisez		idéaliser	30
-idéalisiez		idéaliser	13
-idéalisions		idéaliser	19
-idéalisme	Attitude de celui qui agit en fonction d’un idéal.
-idéalismes		idéalisme	0
-idéalisons		idéaliser	27
-idéaliste	Relatif à l’idéalisme.
-idéalistes		idéaliste	0
-idéalité	État de ce qui est idéal.
-idéalités		idéalité	0
-idéals		idéal	0
-idéateur	Homme chargé de trouver des idées, des concepts.
-idéateurs		idéateur	0
-idéation	Processus cognitif de production d’une idée.
-idéations		idéation	0
-idéatrice	Femme chargée de trouver des concepts, des idées.
-idéatrices		idéatrice	0
-idéaux		idéal	9
-idée	Suggestion.
-idéel	Relatif aux idées, qui a la nature des idées.
-idéelle		idéel	23
-idéelles		idéel	1
-idéels		idéel	9
-idées		idée	0
-idem	De même, pareillement.
-idempotent	Se dit d’une fonction qui a exactement le même résultat qu’on l’appelle une fois ou plusieurs : f∘f=f,.
-idempotente		idempotent	23
-idempotentes		idempotent	1
-idempotents		idempotent	9
-identifia		identifier	39
-identifiable	Qu’il est possible d’identifier.
-identifiables		identifiable	0
-identifiai		identifier	55
-identifiaient		identifier	42
-identifiais		identifier	52
-identifiait		identifier	40
-identifiâmes		identifier	3
-identifiant	Qui identifie, qui caractérise.
-identifiants		identifiant	9
-identifias		identifier	12
-identifiasse		identifier	6
-identifiassent		identifier	78
-identifiasses		identifier	8
-identifiassiez		identifier	14
-identifiassions		identifier	25
-identifiât		identifier	62
-identifiâtes		identifier	2
-identificateur	Ce qui sert à l'identification.
-identificateurs	Pluriel de 'identificateur'.	identificateur
-identification	Action d’identifier, de reconnaître quelque chose ou quelqu’un comme correspondant à une définition ou une identité.
-identifications		identification	0
-identificatoire	Qui rend possible l’identification.
-identifié	Dont l’identité est connue.
-identifiée		identifier	45
-identifiées		identifier	51
-identifient		identifier	41
-identifier	Comprendre deux choses sous une même idée.
-identifiera		identifier	44
-identifierai		identifier	50
-identifieraient		identifier	63
-identifierais		identifier	60
-identifierait		identifier	49
-identifieras		identifier	7
-identifièrent		identifier	48
-identifierez		identifier	58
-identifieriez		identifier	4
-identifierions		identifier	11
-identifierons		identifier	10
-identifieront		identifier	54
-identifiés		identifier	53
-identifiez		identifier	47
-identifiiez		identifier	13
-identifiions		identifier	19
-identifions		identifier	59
-identique	Propriété de plusieurs objets distincts d'être semblables.
-identiquement	D’une manière identique.
-identiques		identique	0
-identitaire	Qui se définit par son appartenance à un groupe social défini par l'identité de ses membres, dans une optique d'exclusion des autres, généralement sur des crit…
-identitaires		identitaire	0
-identité	Ce qui fait qu’une chose est la même qu’une autre, que deux ou plusieurs choses ne sont qu’une ou sont comprises sous une même idée.
-identités		identité	0
-idéogramme	Caractère représentant un sens ou une idée, comme les chiffres arabes.
-idéogrammes		idéogramme	0
-idéographie	Représentation d’une idée par des signes qui en figurent l’objet.
-idéographies		idéographie	0
-idéographique	Relatif à l’idéographie, aux idéogrammes.
-idéographiques		idéographique	0
-idéologie	Science des idées.
-idéologies		idéologie	0
-idéologique	Qui a rapport à l’idéologie.
-idéologiquement	D'une manière idéologique.
-idéologiques		idéologique	0
-idéologisation	Action de faire coïncider un fait social avec une doctrine idéologique existante.
-idéologisations		idéologisation	0
-idéologue	Celle ou celui qui se consacre à l’étude des idées, de leur formation, de leurs origines, de leur développement et de leur diffusion.
-idéologues		idéologue	0
-idéomoteur	Qui se produit de manière inconsciente (par exemple sous l’effet de l’hypnose ou de l’autosuggestion), en parlant d’un mouvement corporel.
-idéomoteurs		idéomoteur	9
-idéomotrice		idéomoteur	23
-idéomotrices		idéomoteur	1
-ides	Le quinzième jour des mois de mars, de mai, de juillet et d’octobre dans le calendrier des anciens Romains, et le treizième des autres mois.
-idiolectal	Relatif a l'idiolecte.
-idiolectale		idiolectal	23
-idiolectales		idiolectal	1
-idiolectaux		idiolectal	9
-idiolecte	Particularité langagière propre à un individu donné.
-idiolectes		idiolecte	115
-idiomatique	Relatif aux idiomes, aux expressions figées des langues.
-idiomatiques		idiomatique	0
-idiome	Langue propre à une nation.
-idiomes		idiome	0
-idiopathie	Maladie sans cause ni remède connus.
-idiopathies		idiopathie	0
-idiopathique	Qui a le caractère de l’idiopathie.
-idiopathiques		idiopathique	0
-idiophone	Se dit d'un instrument de musique dont le matériau lui-même produit le son lors d'un impact, soit par un instrument extérieur, soit par une autre partie de l'i…
-idiophones		idiophone	0
-idiosyncrasie	Disposition particulière en vertu de laquelle chaque individu reçoit d’une façon qui lui est propre les influences des divers agents qui affectent ses organes.
-idiosyncrasies		idiosyncrasie	0
-idiosyncrasique	Relatif à l’idiosyncrasie.
-idiosyncratique	Particulier.
-idiot	Ignare, ignorant.
-idiote	Femme ou fille idiote.
-idiotement	D’une manière idiote.
-idiotes		idiot	1
-idiotie	Arriération mentale profonde, congénitale, (oligophrénie) caractérisée entre autre par un QI inférieur à 20.
-idioties		idiotie	0
-idiotifia		idiotifier	33
-idiotifiai		idiotifier	22
-idiotifiaient		idiotifier	32
-idiotifiais		idiotifier	29
-idiotifiait		idiotifier	34
-idiotifiâmes		idiotifier	3
-idiotifiant		idiotifier	35
-idiotifias		idiotifier	12
-idiotifiasse		idiotifier	6
-idiotifiassent		idiotifier	17
-idiotifiasses		idiotifier	8
-idiotifiassiez		idiotifier	14
-idiotifiassions		idiotifier	25
-idiotifiât		idiotifier	20
-idiotifiâtes		idiotifier	2
-idiotifié		idiotifier	46
-idiotifiée		idiotifier	37
-idiotifiées		idiotifier	36
-idiotifient		idiotifier	31
-idiotifier	Rendre idiot.
-idiotifiera		idiotifier	21
-idiotifierai		idiotifier	16
-idiotifieraient		idiotifier	28
-idiotifierais		idiotifier	18
-idiotifierait		idiotifier	26
-idiotifieras		idiotifier	7
-idiotifièrent		idiotifier	24
-idiotifierez		idiotifier	5
-idiotifieriez		idiotifier	4
-idiotifierions		idiotifier	11
-idiotifierons		idiotifier	10
-idiotifieront		idiotifier	15
-idiotifiés		idiotifier	38
-idiotifiez		idiotifier	30
-idiotifiiez		idiotifier	13
-idiotifiions		idiotifier	19
-idiotifions		idiotifier	27
-idiotisme	Construction, locution propre à une langue et particulière à son génie, ou à un auteur, ou une personne en particulier.
-idiotismes		idiotisme	0
-idiots		idiot	9
-idoine	Qui est propre ou approprié à quelque chose, qui convient parfaitement à une situation.
-idoines		idoine	0
-idolâtra		idolâtrer	33
-idolâtrai		idolâtrer	22
-idolâtraient		idolâtrer	42
-idolâtrais		idolâtrer	29
-idolâtrait		idolâtrer	40
-idolâtrâmes		idolâtrer	3
-idolâtrant		idolâtrer	43
-idolâtras		idolâtrer	12
-idolâtrasse		idolâtrer	6
-idolâtrassent		idolâtrer	17
-idolâtrasses		idolâtrer	8
-idolâtrassiez		idolâtrer	14
-idolâtrassions		idolâtrer	25
-idolâtrât		idolâtrer	20
-idolâtrâtes		idolâtrer	2
-idolâtre	Qui adore les idoles et leur rend des honneurs.
-idolâtrée		idolâtrer	45
-idolâtrées		idolâtrer	36
-idolâtrent		idolâtrer	41
-idolâtrer	Aimer avec excès quelqu’un ou quelque chose.
-idolâtrera		idolâtrer	21
-idolâtrerai		idolâtrer	16
-idolâtreraient		idolâtrer	28
-idolâtrerais		idolâtrer	18
-idolâtrerait		idolâtrer	26
-idolâtreras		idolâtrer	7
-idolâtrèrent		idolâtrer	24
-idolâtrerez		idolâtrer	5
-idolâtreriez		idolâtrer	4
-idolâtrerions		idolâtrer	11
-idolâtrerons		idolâtrer	10
-idolâtreront		idolâtrer	15
-idolâtres		idolâtre	0
-idolâtrez		idolâtrer	30
-idolâtrie	Adoration des idoles, culte des dieux d’une religion polythéiste ou animiste.
-idolâtries		idolâtrie	0
-idolâtriez		idolâtrer	13
-idolâtrions		idolâtrer	19
-idolâtrique	Qui a rapport à l’idolâtrie, qui tient de l’idolâtrie.
-idolâtriques		idolâtrique	0
-idolâtrons		idolâtrer	27
-idole	Figure, statue représentant une divinité qui fait l'objet d'une adoration religieuse, précisément, une idolâtrie.
-idoles		idole	0
-idylle	Petit poème à sujet pastoral ou amoureux.
-idylles		idylle	0
-idyllique	Qui tient de l’idylle.
-idylliques		idyllique	0
+0ide	Poisson rouge d’eau douce.
+2éal	Qui n’existe ou ne peut exister que dans l’entendement, dans l’imagination par opposition à réel.
+5e		5	n
+6ment	D’une manière idéale.
+6s		5	1
+5isa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ateur	Qualifie une personne, un récit qui idéalise.
+cs		c	9
+9ion	Action d’idéaliser.
+cs		c	0
+9rice	Celle qui idéalise.
+ds		9eur	1
+7é	Transformé par la pensée, en fonction d’un idéal.
+8e		8	n
+9s		8	1
+7ent		8r	15
+8r	Revêtir d’un caractère idéal une personne, une chose.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7me	Attitude de celui qui agit en fonction d’un idéal.
+9s		9	0
+7ons		7er	r
+7te	Relatif à l’idéalisme.
+9s		9	0
+6té	État de ce qui est idéal.
+8s		8	0
+5s		5	0
+4teur	Homme chargé de trouver des idées, des concepts.
+8s		8	0
+5ion	Processus cognitif de production d’une idée.
+8s		8	0
+5rice	Femme chargée de trouver des concepts, des idées.
+9s		9	0
+4ux		4l	9
+3e	Suggestion.
+4l	Relatif aux idées, qui a la nature des idées.
+5le		5	n
+7s		5	1
+5s		5	9
+4s		4	0
+2em	De même, pareillement.
+4potent	Se dit d’une fonction qui a exactement le même résultat qu’on l’appelle une fois ou plusieurs : f∘f=f,.
+ae		a	n
+bs		a	1
+as		a	9
+3ntifia		8er	13
+9ble	Qu’il est possible d’identifier.
+cs		c	0
+9i		8er	1j
+aent		8er	16
+as		8er	1g
+at		8er	14
+8âmes		8er	3
+8ant	Qui identifie, qui caractérise.
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	26
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	1q
+aes		8er	2
+8cateur	Ce qui sert à l'identification.
+es	Pluriel de 'identificateur'.	e
+bion	Action d’identifier, de reconnaître quelque chose ou quelqu’un comme correspondant à une définition ou une identité.
+es		e	0
+boire	Qui rend possible l’identification.
+8é	Dont l’identité est connue.
+9e		8er	19
+as		8er	1f
+8ent		9r	15
+9r	Comprendre deux choses sous une même idée.
+aa		a	18
+bi		a	1e
+cent		a	1r
+cs		a	1o
+ct		a	1d
+bs		a	7
+8èrent		8er	1c
+8erez		a	1m
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	1i
+8és		8er	1h
+8ez		9r	1b
+8iez		8er	d
+9ons		8er	j
+8ons		8er	1n
+6que	Propriété de plusieurs objets distincts d'être semblables.
+9ment	D’une manière identique.
+9s		9	0
+6taire	Qui se définit par son appartenance à un groupe social défini par l'identité de ses membres, dans une optique d'exclusion des autres, généralement sur des crit…
+bs		b	0
+7é	Ce qui fait qu’une chose est la même qu’une autre, que deux ou plusieurs choses ne sont qu’une ou sont comprises sous une même idée.
+8s		8	0
+2éogramme	Caractère représentant un sens ou une idée, comme les chiffres arabes.
+as		a	0
+7phie	Représentation d’une idée par des signes qui en figurent l’objet.
+bs		b	0
+aque	Relatif à l’idéographie, aux idéogrammes.
+ds		d	0
+4logie	Science des idées.
+9s		9	0
+8que	Qui a rapport à l’idéologie.
+bment	D'une manière idéologique.
+bs		b	0
+8sation	Action de faire coïncider un fait social avec une doctrine idéologique existante.
+es		e	0
+7ue	Celle ou celui qui se consacre à l’étude des idées, de leur formation, de leurs origines, de leur développement et de leur diffusion.
+9s		9	0
+4moteur	Qui se produit de manière inconsciente (par exemple sous l’effet de l’hypnose ou de l’autosuggestion), en parlant d’un mouvement corporel.
+as		a	9
+7rice		7eur	n
+bs		7eur	1
+2es	Le quinzième jour des mois de mars, de mai, de juillet et d’octobre dans le calendrier des anciens Romains, et le treizième des autres mois.
+2iolectal	Relatif a l'idiolecte.
+ae		a	n
+bs		a	1
+9ux		9l	9
+8e	Particularité langagière propre à un individu donné.
+9s		9	37
+4matique	Relatif aux idiomes, aux expressions figées des langues.
+bs		b	0
+5e	Langue propre à une nation.
+6s		6	0
+4pathie	Maladie sans cause ni remède connus.
+as		a	0
+9que	Qui a le caractère de l’idiopathie.
+cs		c	0
+5hone	Se dit d'un instrument de musique dont le matériau lui-même produit le son lors d'un impact, soit par un instrument extérieur, soit par une autre partie de l'i…
+9s		9	0
+4syncrasie	Disposition particulière en vertu de laquelle chaque individu reçoit d’une façon qui lui est propre les influences des divers agents qui affectent ses organes.
+ds		d	0
+cque	Relatif à l’idiosyncrasie.
+atique	Particulier.
+4t	Ignare, ignorant.
+5e	Femme ou fille idiote.
+6ment	D’une manière idiote.
+6s		5	1
+5ie	Arriération mentale profonde, congénitale, (oligophrénie) caractérisée entre autre par un QI inférieur à 20.
+7s		7	0
+6fia		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Rendre idiot.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+6sme	Construction, locution propre à une langue et particulière à son génie, ou à un auteur, ou une personne en particulier.
+9s		9	0
+5s		5	9
+2oine	Qui est propre ou approprié à quelque chose, qui convient parfaitement à une situation.
+6s		6	0
+3lâtra		7er	x
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Qui adore les idoles et leur rend des honneurs.
+7ée		7er	19
+9s		7er	10
+7ent		8r	15
+8r	Aimer avec excès quelqu’un ou quelque chose.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	0
+8z		8r	u
+7ie	Adoration des idoles, culte des dieux d’une religion polythéiste ou animiste.
+9s		9	0
+9z		7er	d
+8ons		7er	j
+8que	Qui a rapport à l’idolâtrie, qui tient de l’idolâtrie.
+bs		b	0
+7ons		7er	r
+4e	Figure, statue représentant une divinité qui fait l'objet d'une adoration religieuse, précisément, une idolâtrie.
+5s		5	0
+2ylle	Petit poème à sujet pastoral ou amoureux.
+6s		6	0
+5ique	Qui tient de l’idylle.
+9s		9	0

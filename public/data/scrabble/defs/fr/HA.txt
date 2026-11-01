@@ -1,1989 +1,1989 @@
-ha	Vingt-sixième lettre de l’alphabet arabe.
-habanera	Danse et musique cubaine nées en 1830 à Cuba.
-habaneras		habanera	0
-habile	Adroit ; qui fait ce qu’il entreprend avec souplesse.
-habilement	D'une manière habile.
-habiles		habile	0
-habileté	Facilité, disposition, qualité qui rend propre à faire certaines choses, à réussir dans certaines actions, en particulier en utilisant ses mains.
-habiletés		habileté	0
-habilita		habiliter	33
-habilitai		habiliter	55
-habilitaient		habiliter	32
-habilitais		habiliter	29
-habilitait		habiliter	34
-habilitâmes		habiliter	3
-habilitant	Qui rend une personne habile à faire un acte.
-habilitas		habiliter	12
-habilitasse		habiliter	6
-habilitassent		habiliter	17
-habilitasses		habiliter	8
-habilitassiez		habiliter	14
-habilitassions		habiliter	25
-habilitât		habiliter	20
-habilitâtes		habiliter	2
-habilitation	Action d’habiliter.
-habilitations		habilitation	0
-habilité	Résultat de l’habilitation, aptitude.
-habilitée		habiliter	45
-habilitées		habiliter	51
-habilitent		habiliter	31
-habiliter	Rendre quelqu’un capable d’un acte en justice.
-habilitera		habiliter	21
-habiliterai		habiliter	16
-habiliteraient		habiliter	28
-habiliterais		habiliter	18
-habiliterait		habiliter	26
-habiliteras		habiliter	7
-habilitèrent		habiliter	24
-habiliterez		habiliter	5
-habiliteriez		habiliter	4
-habiliterions		habiliter	11
-habiliterons		habiliter	10
-habiliteront		habiliter	15
-habilités		habilité	0
-habilitez		habiliter	47
-habilitiez		habiliter	13
-habilitions		habiliter	19
-habilitons		habiliter	27
-habilla		habiller	39
-habillable	Qui peut être habillé.
-habillables		habillable	0
-habillage	Apprêt que l’on fait subir à un animal pour le faire cuire.
-habillages		habillage	0
-habillai		habiller	55
-habillaient		habiller	42
-habillais		habiller	52
-habillait		habiller	40
-habillâmes		habiller	68
-habillant	Qui sied, qui va bien.
-habillas		habiller	83
-habillasse		habiller	6
-habillassent		habiller	17
-habillasses		habiller	8
-habillassiez		habiller	14
-habillassions		habiller	25
-habillât		habiller	62
-habillâtes		habiller	2
-habillé	Qui porte un habit, un vêtement, qui n’est pas nu.
-habillée		habillé	23
-habillées		habillé	1
-habillement	Manière de s'habiller.
-habillements		habillement	0
-habillent		habiller	41
-habiller	Mettre des habits à quelqu’un, le vêtir.
-habillera		habiller	44
-habillerai		habiller	50
-habilleraient		habiller	63
-habillerais		habiller	60
-habillerait		habiller	49
-habilleras		habiller	57
-habillèrent		habiller	48
-habillerez		habiller	58
-habilleriez		habiller	4
-habillerions		habiller	11
-habillerons		habiller	61
-habilleront		habiller	15
-habilles		habiller	77
-habilleur	Personne qui aide les acteurs à s’habiller.
-habilleurs		habilleur	0
-habilleuse	Personne qui aide les acteurs à s’habiller.
-habilleuses		habilleuse	0
-habillez		habiller	47
-habilliez		habiller	67
-habillions		habiller	65
-habillons		habiller	59
-habit	Tout ce qui est fait pour couvrir le corps, excepté le linge, la coiffure et la chaussure.
-habita		habiter	39
-habitabilité	Qualité d’un endroit habitable.
-habitabilités		habitabilité	0
-habitable	Qui peut être habité.
-habitables		habitable	118
-habitacle	Habitation, demeure.
-habitacles		habitacle	0
-habitai		habiter	55
-habitaient		habiter	42
-habitais		habiter	52
-habitait		habiter	40
-habitâmes		habiter	3
-habitant	Celui qui habite dans un lieu donné.
-habitante	Celle qui habite dans un lieu donné.
-habitantes		habitante	0
-habitants		habitant	0
-habitas		habiter	12
-habitasse		habiter	6
-habitassent		habiter	78
-habitasses		habiter	8
-habitassiez		habiter	14
-habitassions		habiter	25
-habitat	Milieu naturel offrant à une espèce vivante (animale, végétale, fongique, etc.) les conditions nécessaires à sa survie, son développement et sa reproduction.
-habitâtes		habiter	2
-habitation	Action d’habiter un lieu.
-habitations		habitation	0
-habitats		habitat	0
-habite		habiter	64
-habitée	Féminin singulier de habité.
-habitées	Féminin pluriel de habité.
-habitent		habiter	41
-habiter	Faire sa demeure, son séjour quelque part.
-habitera		habiter	44
-habiterai		habiter	50
-habiteraient		habiter	63
-habiterais		habiter	60
-habiterait		habiter	49
-habiteras		habiter	57
-habitèrent		habiter	48
-habiterez		habiter	58
-habiteriez		habiter	4
-habiterions		habiter	82
-habiterons		habiter	61
-habiteront		habiter	54
-habites		habiter	77
-habitez		habiter	47
-habitiez		habiter	67
-habitions		habiter	65
-habitons		habiter	59
-habits		habit	0
-habitua		habituer	39
-habituai		habituer	178
-habituaient		habituer	42
-habituais		habituer	52
-habituait		habituer	40
-habituâmes		habituer	3
-habituant		habituer	43
-habituas		habituer	83
-habituasse		habituer	6
-habituassent		habituer	17
-habituasses		habituer	8
-habituassiez		habituer	14
-habituassions		habituer	25
-habituât		habituer	62
-habituâtes		habituer	2
-habituation	Action d’habituer.
-habituations		habituation	0
-habitude	Disposition acquise par des actes réitérés.
-habitudes		habitude	0
-habitué	Qui a l’habitude.
-habituée	Celle qui a l’habitude d’aller dans un lieu.
-habituées		habitué	122
-habituel	Qui est devenu une habitude, qui est passé en habitude.
-habituelle		habituel	23
-habituellement	D’habitude ; d’ordinaire.
-habituelles		habituel	1
-habituels		habituel	9
-habituent		habituer	41
-habituer	Faire prendre l’habitude ou une habitude.
-habituera		habituer	44
-habituerai		habituer	50
-habitueraient		habituer	63
-habituerais		habituer	60
-habituerait		habituer	49
-habitueras		habituer	57
-habituèrent		habituer	48
-habituerez		habituer	58
-habitueriez		habituer	4
-habituerions		habituer	11
-habituerons		habituer	61
-habitueront		habituer	54
-habitués		habitué	9
-habituez		habituer	30
-habituiez		habituer	13
-habituions		habituer	19
-habituons		habituer	59
-habitus	Apparence générale du corps considérée comme le reflet de l’état de santé ou de maladie d’un individu.
-hâbla		hâbler	33
-hâblai		hâbler	22
-hâblaient		hâbler	32
-hâblais		hâbler	29
-hâblait		hâbler	34
-hâblâmes		hâbler	3
-hâblant		hâbler	35
-hâblas		hâbler	12
-hâblasse		hâbler	6
-hâblassent		hâbler	17
-hâblasses		hâbler	8
-hâblassiez		hâbler	14
-hâblassions		hâbler	25
-hâblât		hâbler	20
-hâblâtes		hâbler	2
-hâblé		hâbler	46
-hâblent		hâbler	31
-hâbler	Tenir des discours où abondent l’exagération, l’emphase, la vantardise.
-hâblera		hâbler	21
-hâblerai		hâbler	16
-hâbleraient		hâbler	28
-hâblerais		hâbler	18
-hâblerait		hâbler	26
-hâbleras		hâbler	7
-hâblèrent		hâbler	24
-hâblerez		hâbler	5
-hâblerie	Discours plein d'exagération, d’emphase, de vanterie.
-hâbleries		hâblerie	0
-hâbleriez		hâbler	4
-hâblerions		hâbler	11
-hâblerons		hâbler	10
-hâbleront		hâbler	15
-hâblés		hâbler	38
-hâbleur	Qui hâble, qui parle des faits avec exagération, emphase et vantardise.
-hâbleurs		hâbleur	9
-hâbleuse	Personne qui hâble, qui parle avec exagération, emphase et vantardise.
-hâbleuses		hâbleur	1
-hâblez		hâbler	30
-hâbliez		hâbler	13
-hâblions		hâbler	19
-hâblons		hâbler	27
-habsbourgeois	Relatif à la dynastie des Habsbourgs.
-habsbourgeoise		habsbourgeois	23
-habsbourgeoises		habsbourgeois	1
-hacha		hacher	39
-hachage	Action de hacher.
-hachages		hachage	0
-hachai		hacher	55
-hachaient		hacher	42
-hachais		hacher	29
-hachait		hacher	40
-hachâmes		hacher	3
-hachant		hacher	43
-hachas		hacher	12
-hachasse		hacher	6
-hachassent		hacher	17
-hachasses		hacher	8
-hachassiez		hacher	14
-hachassions		hacher	25
-hachât		hacher	20
-hachâtes		hacher	2
-haché	Coupé en petits morceaux.
-hachée	Punition infamante et déshonorante réservée aux nobles à qui l'on faisait porter sur les épaules, sur un parcours déterminé, en public, soit une selle, soit un…
-hachées		haché	122
-hachement	Action d’enlever au bois ce qu’il a de trop.
-hachements		hachement	0
-hachémite	Relatif à la dynastie hachémite, famille régnante en Jordanie.
-hachémites		hachémite	0
-hachent		hacher	41
-hacher	Couper en petits morceaux, avec un instrument tranchant (couteau, hachoir, mixeur…).
-hachera		hacher	21
-hacherai		hacher	50
-hacheraient		hacher	28
-hacherais		hacher	18
-hacherait		hacher	49
-hacheras		hacher	7
-hachereau	Petite hache, marteau tranchant d’un côté.
-hachereaux		hachereau	0
-hachèrent		hacher	48
-hacherez		hacher	5
-hacheriez		hacher	4
-hacherions		hacher	11
-hacheron	Variante de hachereau par substitution de suffixe.
-hacherons		hacheron	0
-hacheront		hacher	15
-hachés		haché	9
-hachette	Petite hache.
-hachettes		hachette	0
-hacheur	Obturateur à fréquence de récurrence déterminée, mécanique ou optoélectronique destiné à échantillonner périodiquement un faisceau ou un signal analogique.
-hacheurs		hacheur	0
-hacheuse	Machine qui hache.
-hacheuses		hacheuse	0
-hachez	Deuxième personne du pluriel du présent de l'indicatif de hacher.	hacher
-hachich	Variante orthographique de haschich.
-hachichs		hachich	0
-hachiez		hacher	13
-hachions		hacher	19
-hachis	Préparation hachée très menue, de viande, poisson ou autre.
-hachisch	Variante orthographique de haschich.
-hachischin	Variante de hachichin.
-hachischins		hachischin	0
-hachischs		hachisch	0
-hachoir	Mécanisme, machine, domestique ou industrielle, manuelle ou automatisée destinées à hacher diverses choses.
-hachoirs		hachoir	0
-hachon	Petite hache servant à débiter du bois.
-hachons		hachon	0
-hachura		hachurer	33
-hachurai		hachurer	22
-hachuraient		hachurer	42
-hachurais		hachurer	29
-hachurait		hachurer	40
-hachurâmes		hachurer	3
-hachurant		hachurer	43
-hachuras		hachurer	12
-hachurasse		hachurer	6
-hachurassent		hachurer	17
-hachurasses		hachurer	8
-hachurassiez		hachurer	14
-hachurassions		hachurer	25
-hachurât		hachurer	20
-hachurâtes		hachurer	2
-hachure	Action de hacher.
-hachurée		hachurer	45
-hachurées		hachurer	51
-hachurent		hachurer	31
-hachurer	Marquer de hachures.
-hachurera		hachurer	21
-hachurerai		hachurer	16
-hachureraient		hachurer	28
-hachurerais		hachurer	18
-hachurerait		hachurer	26
-hachureras		hachurer	7
-hachurèrent		hachurer	24
-hachurerez		hachurer	5
-hachureriez		hachurer	4
-hachurerions		hachurer	11
-hachurerons		hachurer	10
-hachureront		hachurer	15
-hachurés		hachuré	0
-hachurez		hachurer	30
-hachuriez		hachurer	13
-hachurions		hachurer	19
-hachurons		hachurer	27
-hacienda	Grande exploitation agricole d’Amérique du Sud.
-haciendas		hacienda	0
-hacka		hacker	33
-hackai		hacker	22
-hackaient		hacker	32
-hackais		hacker	29
-hackait		hacker	34
-hackâmes		hacker	3
-hackant		hacker	35
-hackas		hacker	12
-hackasse		hacker	6
-hackassent		hacker	17
-hackasses		hacker	8
-hackassiez		hacker	14
-hackassions		hacker	25
-hackât		hacker	20
-hackâtes		hacker	2
-hackathon	Événement où des programmeurs se rencontrent pour collaborer au développement de logiciels.
-hackathons		hackathon	0
-hacké		hacker	46
-hackée		hacker	37
-hackées		hacker	36
-hackent		hacker	31
-hacker	Explorer, fouiller, sonder, bricoler, bidouiller un système d’information, un matériel ou système informatique, par culture numérique ou jeu.
-hackera		hacker	21
-hackerai		hacker	16
-hackeraient		hacker	28
-hackerais		hacker	18
-hackerait		hacker	26
-hackeras		hacker	7
-hackèrent		hacker	24
-hackerez		hacker	5
-hackeriez		hacker	4
-hackerions		hacker	11
-hackerons		hacker	10
-hackeront		hacker	15
-hackers		hacker	0
-hackés		hacker	38
-hackeur	Homme qui hacke.
-hackeurs		hackeur	0
-hackeuse	Femme qui hacke.
-hackeuses		hackeuse	0
-hackez		hacker	30
-hackiez		hacker	13
-hacking	Hackage.
-hackings		hacking	0
-hackions		hacker	19
-hackle	Plume de coq utilisée dans le montage des mouches artificielles pour la pêche.
-hackles		hackle	0
-hackons		hacker	27
-hacktivisme	Forme d’activisme prenant la forme d’actions de piratage informatique.
-hacktivismes		hacktivisme	0
-hacktiviste	Hackeur qui fait de l’activisme par le moyen d’action ou d’attaques informatiques.
-hacktivistes		hacktiviste	0
-hacquebute	Variante de haquebute.
-hacquebutes		hacquebute	0
-hadal	Profond de plus de 6000 mètres.
-hadale		hadal	23
-hadales		hadal	1
-hadaux		hadal	9
-haddock	Aiglefin.
-haddocks		haddock	0
-hadéen	Relatif au Hadéen.
-hadéenne		hadéen	23
-hadéennes		hadéen	1
-hadéens		hadéen	9
-hadith	Paroles du prophète Mahomet considérées comme des ordres à suivre par les musulmans.
-hadiths		hadith	0
-hadj	Pèlerinage musulman aux lieux saints de la ville sainte de La Mecque, un des piliers de l’islam, obligatoire à tout musulman, au moins une fois dans sa vie, s’…
-hadjdj	Variante de hadj.
-hadjdjs		hadjdj	0
-hadji	Dans la religion musulmane, personne qui a accompli les pèlerinages de La Mecque, de Médine ou de Jérusalem.
-hadjis		hadji	0
-hadjs		hadj	0
-hadron	Particule sensible à l’interaction forte.
-hadronique	Relatif à un hadron, aux hadrons.
-hadroniques		hadronique	0
-hadrons		hadron	0
-hafnium	Élément chimique de numéro atomique 72 et de symbole Hf qui fait partie de la série chimique des métaux de transition.
-hafside	Relatif aux Hafsides, dynastie ayant régné sur la Tunisie du XIIIᵉ au XVIᵉ siècle.
-hafsides		hafside	0
-hagard	Qualifie un oiseau de proie qui a été pris, après plus d’une mue, hors du nid et qu’on a de la peine à apprivoiser.
-hagarde		hagard	23
-hagardes		hagard	1
-hagards		hagard	9
-haggis	Panse de brebis farcie (plat national écossais).
-hagiographe	Qui concerne cette partie de l’Ancien Testament qui n’est ni de Moïse, ni des prophètes.
-hagiographes		hagiographe	0
-hagiographie	Traité sur les choses saintes.
-hagiographies		hagiographie	0
-hagiographique	Qui concerne les choses saintes, l’hagiographie.
-hagiographiques		hagiographique	0
-hagiologie	Discours sur les saints ou sur les choses saintes.
-hagiologies		hagiologie	0
-haguenois	Relatif à La Haye ^().
-Haguenoise	Habitante ou personne originaire de la ville néerlandaise La Haye.
-Haguenoises		Haguenoise	0
-haguenovien	Relatif à Haguenau, commune du Bas-Rhin.
-haguenovienne		haguenovien	23
-haguenoviennes		haguenovien	1
-haguenoviens		haguenovien	9
-hahnium	Nom proposé par les américains (l’American Chemical Society) pour l’élément chimique de numéro atomique 105 avec pour symbole Ha en 1970 (élément maintenant ap…
-hahniums		hahnium	0
-haï	Détesté, abhorré, exécré, honni.
-haïda	Langue isolat parlée par les Haïdas aux îles de la Reine-Charlotte au Canada et à l’extrême sud de l’Alaska.
-Haïdas	Peuple amérindien de la côte ouest du Canada et de l’Alaska.
-haïdouc	Variante de heiduque.
-haïdoucs		haïdouc	0
-haïdouk	Variante de heiduque.
-haïdouks		haïdouk	0
-haie	Ensemble linéaire, naturel ou artificiel, de végétaux (dont parfois des arbres), ligneux, semi-ligneux, herbacés, plus ou moins homogène (taille, espèces, etc.…
-haies		haie	0
-haïk	Manteau de laine qui se porte dans les pays du Maghreb.
-haïkaï	Forme de poème japonais.
-haïkaïs		haïkaï	0
-haïks		haïk	0
-haïku	Petit poème japonais de trois vers comportant respectivement 5, 7 et 5 mores (ou syllabes en français) et contenant un kigo (mot de saison).
-haïkus		haïku	0
-haillon	Vieux lambeau de toile ou d’étoffe, guenille.
-haillonneuse	Personne vêtue de haillons.
-haillonneuses		haillonneux	1
-haillonneux	Qui tombe en haillons.
-haillons		haillon	0
-haïmes		haïr	3
-haine	Sentiment d’aversion, de répulsion, envers une personne ou un groupe, qui pousse à mépriser ou à vouloir détruire ce qui en est l’objet.
-haines		haine	0
-haineuse	Celle qui utilise la toile et les réseaux sociaux pour inciter à la haine envers un individu ou un groupe.
-haineusement	D'une manière haineuse, avec haine.
-haineuses		haineux	1
-haineux	Qui est naturellement ou spontanément porté à la haine.
-hainteny	Genre de poème court et allégorique dans la tradition orale de Madagascar, notamment chez les Merinas.
-haintenys		hainteny	0
-hainuyer	Qui concerne le Hainaut.
-hainuyère		hainuyer	23
-hainuyères		hainuyer	1
-hainuyers		hainuyer	9
-haïr	Détester, sentir de l’aversion envers, abhorrer, exécrer (quelque chose ou quelqu’un).
-haïra		haïr	44
-haïrai		haïr	50
-haïraient		haïr	63
-haïrais		haïr	60
-haïrait		haïr	49
-haïras		haïr	57
-haire	Petite chemise faite d’un tissu de poil de chèvre, de crin ou de tout autre poil rude et piquant, qu’on porte sur la chair par mortification.
-haïrent		haïr	24
-haires		haire	0
-haïrez		haïr	58
-haïriez		haïr	74
-haïrions		haïr	11
-haïrons		haïr	61
-haïront		haïr	54
-hais		haïr	72
-haïssable	Qui mérite d’être haï, qu’on doit haïr, qui doit inspirer la haine.
-haïssables		haïssable	0
-haïssaient		haïr	75
-haïssais		haïr	86
-haïssait		haïr	71
-haïssant		haïr	43
-haïsse		haïr	85
-haïssent		haïr	69
-haïsses		haïr	98
-haïssez		haïr	70
-haïssiez		haïr	100
-haïssions		haïr	94
-haïssons		haïr	73
-hait		haïr	80
-haïtes		haïr	2
-haïtien	Relatif à Haïti ou à ses habitants, les Haïtiens.
-haïtienne		haïtien	23
-haïtiennes		haïtien	1
-haïtiens		haïtien	9
-haje	Naja.
-hajes		haje	0
-haka	Danse chantée maorie de Nouvelle-Zélande exécutée lors de rituels ou de manifestations sportives, rendue notamment célèbre par l'équipe de rugby des All Blacks.
-hákarl	Spécialité culinaire islandaise à base de requin du Groenland.
-hakas		haka	0
-hakka	Langue chinoise parlée par les Hakkas principalement dans le sud de la Chine et à Taïwan.
-hakkas		hakka	0
-hala		haler	39
-halage	Action de haler quelque chose.
-halages		halage	0
-hâlai		hâler	22
-halaient		haler	42
-hâlais		hâler	29
-halait		haler	40
-halakha	Partie législative du Talmud qui définit les règles de conduite civiles et religieuses.
-halal	Qui est permis par le Coran.
-halals		halal	0
-hâlâmes		hâler	3
-halant	Signe diacritique représentant une absence de voyelle inhérente, dans l'écriture dévanagari, représenté par un signe souscrit (्).
-hâlas		hâler	12
-hâlasse		hâler	6
-hâlassent		hâler	17
-hâlasses		hâler	8
-hâlassiez		hâler	14
-hâlassions		hâler	25
-hâlât		hâler	20
-hâlâtes		hâler	2
-halbi	Boisson alcoolisée, normande, constituée de poires et de pommes fermentées.
-halbis		halbi	0
-halbran	Jeune canard sauvage.
-halbrans		halbran	0
-halbrené	Déguenillé, mouillé, fatigué.
-halbrenée		halbrener	37
-halbrenées		halbrener	36
-halbrener	Chasser le halbran.
-halbrenés		halbrener	38
-halde	Amoncellement formé dans une mine par les déchets et stériles issus de l’extraction du minerai.
-haldes		halde	0
-hâle	Effet produit par la lumière solaire sur la peau, qui, exposée nue à son influence et au grand air, prend une teinte brune et basanée
-halecret	Pièce d’armure. Corselet en fer battu, composé de deux pièces, une sur le devant et une derrière.
-halecrets		halecret	0
-halée	Action de haler quelque chose.
-hâlées		hâler	51
-haleine	Souffle de la respiration, air attiré et repoussé par les poumons.
-haleines		haleine	0
-halena		halener	39
-halenai		halener	22
-halenaient		halener	32
-halenais		halener	29
-halenait		halener	34
-halenâmes		halener	3
-halenant		halener	35
-halenas		halener	12
-halenasse		halener	6
-halenassent		halener	17
-halenasses		halener	8
-halenassiez		halener	14
-halenassions		halener	25
-halenât		halener	20
-halenâtes		halener	2
-halené		halener	56
-halenée	Haleine accompagnée d'une odeur forte et désagréable.
-halenées		halenée	0
-halènent		halener	31
-halener	Sentir l'haleine de quelqu'un.
-halènera		halener	21
-halènerai		halener	16
-halèneraient		halener	28
-halènerais		halener	18
-halènerait		halener	26
-halèneras		halener	7
-halenèrent		halener	24
-halènerez		halener	5
-halèneriez		halener	4
-halènerions		halener	11
-halènerons		halener	10
-halèneront		halener	15
-halenés		halener	38
-halenez		halener	30
-haleniez		halener	13
-halenions		halener	19
-halenons		halener	27
-halent		haler	41
-haler	Tirer à soi avec force à l’aide d’un cordage.
-hâlera		hâler	21
-hâlerai		hâler	16
-hâleraient		hâler	28
-hâlerais		hâler	18
-hâlerait		hâler	26
-hâleras		hâler	7
-halèrent		haler	48
-hâlerez		hâler	5
-hâleriez		hâler	4
-hâlerions		hâler	11
-hâlerons		hâler	10
-hâleront		hâler	15
-halés		haler	53
-haleta		haleter	39
-haletai		haleter	22
-haletaient		haleter	42
-haletais		haleter	52
-haletait		haleter	40
-haletâmes		haleter	3
-haletant	Qui halète, qui est essoufflé, qui respire fréquemment, péniblement.
-haletante		haletant	23
-haletantes		haletant	1
-haletants		haletant	9
-haletas		haleter	12
-haletasse		haleter	6
-haletassent		haleter	17
-haletasses		haleter	8
-haletassiez		haleter	14
-haletassions		haleter	25
-haletât		haleter	20
-haletâtes		haleter	2
-halète		haleter	64
-halètement	Action de haleter ou état de celui qui est haletant.
-halètements		halètement	0
-halètent		haleter	41
-haleter	Respirer avec force et fréquemment, comme essoufflé, hors d’haleine.
-halètera		haleter	21
-halèterai		haleter	16
-halèteraient		haleter	28
-halèterais		haleter	18
-halèterait		haleter	26
-halèteras		haleter	7
-haletèrent		haleter	24
-halèterez		haleter	5
-halèteriez		haleter	4
-halèterions		haleter	11
-halèterons		haleter	10
-halèteront		haleter	15
-halètes		haleter	77
-haletez		haleter	30
-haletiez		haleter	13
-haletions		haleter	19
-haletons		haleter	27
-halette	Coiffe en linon ou batiste couvrant la tête, la nuque ainsi que les joues, montée sur des arceaux en bois de coudrier et portée par les faneuses lorraines et g…
-halettes		halette	0
-haleur	Celui qui hale, qui tire un bateau à l’aide d'un câble, pour le faire avancer.
-haleurs		haleur	0
-haleuse	Celle qui hale, qui tire un bateau à l’aide d'un câble, pour le faire avancer.
-haleuses		haleuse	0
-halez		haler	47
-halfpipe	Variante orthographique de half-pipe.
-halfpipes		halfpipe	0
-halicte	Insecte hyménoptère, (halictus), de la famille des mellifères, section des porte-aiguillons.
-halictes		halicte	0
-halieute	Technicien qui s’occupe de surveiller et de gérer les ressources halieutiques.
-halieutes		halieute	0
-halieutique	Relatif à la pêche.
-halieutiques		halieutique	0
-hâliez		hâler	13
-haligonien	Qui concerne Halifax, en Nouvelle-Écosse.
-haligonienne		haligonien	23
-haligoniennes		haligonien	1
-haligoniens		haligonien	9
-hâlions		hâler	19
-haliotide	Ormeau.
-haliotides		haliotide	0
-haliotis	Ormeau.
-haliple	Coléoptère carnivore, vivant dans les eaux douces et saumâtres.
-haliples		haliple	0
-halite	Forme minérale naturelle du chlorure de sodium (NaCl), évaporitique, cristallisant dans le système cubique.
-halites		halite	0
-halitose	Mauvaise haleine.
-halitoses		halitose	0
-halitueuse		halitueux	109
-halitueuses	Féminin pluriel de halitueux.
-halitueux	Qui est chargé de vapeurs, qui s’élève en vapeur comme l’haleine pendant la gelée.
-hall	Grande salle.
-hallage	Droit levé sur les marchandises qui s’étalent dans les halles et les foires.
-hallages		hallage	0
-hallal	Au jeu du bouzkachi, cercle tracé à la chaux ou à la craie, entourant la dépouille d’une chèvre ou d’un veau.
-hallali	Cri de victoire dans la chasse à courre, pour annoncer que la bête est aux abois.
-hallalis		hallali	0
-hallals		hallal	0
-halle	Emplacement ordinairement fermé et couvert, destiné à l’emmagasinement et à la vente d’objets d’une utilité première, qui s’y vendent en forte partie, presque …
-hallebarde	Arme d’hast garnie par en haut d’un fer long, large et pointu, traversé d’un autre fer en forme de croissant.
-hallebardes		hallebarde	0
-hallebardier	Soldat portant la hallebarde.
-hallebardiers		hallebardier	9
-halles		halle	0
-hallier	Buisson touffu, fourré où se retire le gibier, bien couvert de broussailles.
-halliers		hallier	0
-halloumi	Fromage semi-ferme plié en deux, à base de lait de chèvre de lait de brebis, originaire de Chypre.
-halloween	Variante de Halloween, les fêtes religieuses (la Saint-Valentin, Pâques) ou non (Nouvel An) prennent une majuscule.
-halls		hall	0
-hallstattien	Relatif à la période de l’âge du fer ancien.
-hallstattienne		hallstattien	23
-hallstattiennes		hallstattien	1
-hallstattiens		hallstattien	9
-hallucina		halluciner	33
-hallucinai		halluciner	22
-hallucinaient		halluciner	32
-hallucinais		halluciner	52
-hallucinait		halluciner	34
-hallucinâmes		halluciner	3
-hallucinant	Qui provoque des hallucinations.
-hallucinante		hallucinant	23
-hallucinantes		hallucinant	1
-hallucinants		hallucinant	9
-hallucinas		halluciner	12
-hallucinasse		halluciner	6
-hallucinassent		halluciner	17
-hallucinasses		halluciner	8
-hallucinassiez		halluciner	14
-hallucinassions		halluciner	25
-hallucinât		halluciner	20
-hallucinâtes		halluciner	2
-hallucination	Perception sans objet réel, qui peut affecter la vision, l'audition, l'olfaction, le toucher et le goût.
-hallucinations		hallucination	0
-hallucinatoire	Qui a rapport à l’hallucination.
-hallucinatoires		hallucinatoire	0
-halluciné	Celui qui est actuellement ou fréquemment en état d’hallucination.
-hallucinée	Celle qui est actuellement ou fréquemment en état d’hallucination.
-hallucinées		hallucinée	0
-hallucinent		halluciner	31
-halluciner	Produire des hallucinations, rendre halluciné.
-hallucinera		halluciner	21
-hallucinerai		halluciner	16
-hallucineraient		halluciner	28
-hallucinerais		halluciner	18
-hallucinerait		halluciner	26
-hallucineras		halluciner	7
-hallucinèrent		halluciner	24
-hallucinerez		halluciner	5
-hallucineriez		halluciner	4
-hallucinerions		halluciner	11
-hallucinerons		halluciner	10
-hallucineront		halluciner	15
-hallucinés		halluciné	9
-hallucinez		halluciner	47
-halluciniez		halluciner	13
-hallucinions		halluciner	19
-hallucinogène	Qui induit des hallucinations.
-hallucinogènes		hallucinogène	0
-hallucinons		halluciner	59
-hallucinose	Hallucination dont le sujet est conscient (dont il reconnaît l'irréalité).
-hallucinoses		hallucinose	0
-hallux	Premier orteil à l’intérieur du pied.
-halo	Anneau ou aire circulaire lumineuse, et de diverses couleurs qui apparaît autour des astres et principalement du Soleil et de la Lune, quand ils sont vus à tra…
-halobios	Ensemble des êtres vivants du milieu marin.
-halogéna		halogéner	33
-halogénai		halogéner	22
-halogénaient		halogéner	32
-halogénais		halogéner	29
-halogénait		halogéner	34
-halogénâmes		halogéner	3
-halogénant		halogéner	35
-halogénas		halogéner	12
-halogénasse		halogéner	6
-halogénassent		halogéner	17
-halogénasses		halogéner	8
-halogénassiez		halogéner	14
-halogénassions		halogéner	25
-halogénât		halogéner	20
-halogénâtes		halogéner	2
-halogénation	Introduction d’halogènes dans une molécule.
-halogénations		halogénation	0
-halogène	Élément du groupe 17, qui comprend le fluor, le chlore, le brome, l’iode et l’astate.
-halogénée		halogéner	37
-halogénées		halogéner	36
-halogènent		halogéner	31
-halogéner	Ajouter des halogènes dans (un corps).
-halogènera		halogéner	21
-halogènerai		halogéner	16
-halogèneraient		halogéner	28
-halogènerais		halogéner	18
-halogènerait		halogéner	26
-halogèneras		halogéner	7
-halogénèrent		halogéner	24
-halogènerez		halogéner	5
-halogèneriez		halogéner	4
-halogènerions		halogéner	11
-halogènerons		halogéner	10
-halogèneront		halogéner	15
-halogènes		halogène	0
-halogénez		halogéner	30
-halogéniez		halogéner	13
-halogénions		halogéner	19
-halogénons		halogéner	27
-halogénure	Anion formé d’un élément chimique de la famille des halogènes.
-halogénures		halogénure	0
-halographie	Description, histoire des sels.
-halographies		halographie	0
-hâloir	Lieu où l'on hâle le chanvre, où on le fait sécher par l'action du feu, avant de le broyer ou de le tiller.
-hâloirs		hâloir	0
-halon	Hydrocarbure halogéné (dont l’hydrogène est remplacé, tout ou partie, par des atomes du groupe des halogènes).
-halons		halon	0
-halopéridol	Médicament neuroleptique antipsychotique.
-halopéridols		halopéridol	0
-halophile	Qui vit dans les milieux salés.
-halophiles		halophile	0
-halophyte	Halophile, adaptée aux milieux salés.
-halophytes		halophyte	0
-halos		halo	0
-halothane	Halo-alcane de formule C₂HBrClF₃, utilisé en tant qu'anesthésique.
-halte	Pause, station des gens de guerre dans leur marche.
-haltère	Balancier, masse de pierre ou de plomb dont on se sert pour faire le contrepoids dans les exercices gymnastiques, comme en dansant sur la corde.
-haltérés	Ordre de la classe des insectes comprenant ceux qui ont des balanciers.
-haltérophile	Personne pratiquant l’haltérophilie.
-haltérophiles		haltérophile	0
-haltérophilie	Sport visant à soulever des poids et haltères.
-haltérophilies		haltérophilie	0
-haltes		halte	0
-halva	Confiserie orientale faite de farine, d'huile de sésame, de miel, de fruits et d'amandes ou de pistaches.
-halvas		halva	0
-hamac	Lit formé d’un morceau de toile ou d’un filet, suspendu horizontalement à deux points fixes par ses extrémités, de manière à pouvoir se balancer, dormir ou se …
-hamacs		hamac	0
-hamada	Plateau rocheux désertique ayant généralement subi une érosion éolienne.
-hamadas		hamada	0
-hamadryade	Nymphe des bois qui naissait et mourait avec l’arbre dont la garde lui était confiée, et qui ne pouvait jamais le quitter.
-hamadryades		hamadryade	0
-hamadryas	Grand singe cynocéphale d'Afrique de l'Est et de la péninsule arabique dont les mâles ont un magnifique pelage argenté.
-hamamélidacée	Plante des dicotylédones, famille des Hamamelidaceae à laquelle appartiennent notamment l'hamamélis et le liquidambar.
-hamamélidacées		hamamélidacée	0
-hamamélis	Genre de plantes (Hamamelis) appartenant à la famille des hamamélidacées qui comprend 5 ou 6 espèces d'arbustes poussant dans les zones boisées et sur les rive…
-hambourgeois	Relatif à Hambourg, la ville allemande.
-hambourgeoise	Taffetas recouvert de poil ras.
-hambourgeoises		hambourgeois	1
-hamburger	Sandwich composé de deux pains ronds, généralement garnis d'une galette de viande hachée, de crudités et d'une sauce.
-hamburgers		hamburger	0
-hameau	En milieu rural, groupe d’habitations à l’écart d’une commune, à laquelle il est rattaché administrativement.
-hameaux		hameau	0
-hameçon	Crochet en matière métallique, que l’on met au bout d’une ligne, avec de l’appât, pour prendre du poisson, et qui est souvent équipé d'un ardillon.
-hameçonna		hameçonner	33
-hameçonnage	Technique de fraude visant à obtenir des informations confidentielles, telles que des mots de passe ou des numéros de cartes de crédit, au moyen de messages ou…
-hameçonnages		hameçonnage	0
-hameçonnai		hameçonner	22
-hameçonnaient		hameçonner	32
-hameçonnais		hameçonner	29
-hameçonnait		hameçonner	34
-hameçonnâmes		hameçonner	3
-hameçonnant		hameçonner	35
-hameçonnas		hameçonner	12
-hameçonnasse		hameçonner	6
-hameçonnassent		hameçonner	17
-hameçonnasses		hameçonner	8
-hameçonnassiez		hameçonner	14
-hameçonnassions		hameçonner	25
-hameçonnât		hameçonner	20
-hameçonnâtes		hameçonner	2
-hameçonne		hameçonner	64
-hameçonnée		hameçonner	37
-hameçonnées		hameçonner	36
-hameçonnent		hameçonner	31
-hameçonner	Garnir d’hameçon.
-hameçonnera		hameçonner	21
-hameçonnerai		hameçonner	16
-hameçonneraient		hameçonner	28
-hameçonnerais		hameçonner	18
-hameçonnerait		hameçonner	26
-hameçonneras		hameçonner	7
-hameçonnèrent		hameçonner	24
-hameçonnerez		hameçonner	5
-hameçonneriez		hameçonner	4
-hameçonnerions		hameçonner	11
-hameçonnerons		hameçonner	10
-hameçonneront		hameçonner	15
-hameçonnés		hameçonner	38
-hameçonnez		hameçonner	30
-hameçonniez		hameçonner	13
-hameçonnions		hameçonner	19
-hameçonnons		hameçonner	27
-hameçons		hameçon	0
-hamiltonien	Relatif à l'œuvre scientifique de William Hamilton.
-hamiltonienne		hamiltonien	23
-hamiltoniennes		hamiltonien	1
-hamiltoniens		hamiltonien	9
-hammam	Établissement dans lequel on prend des bains de vapeur.
-hammams		hammam	0
-hammerless	Fusil de chasse à percuteur central et sans chiens apparents.
-hampe	Long manche ou support, généralement en bois, d’un pinceau, d’une arme d’hast, d’une pertuisane, d’un épieu, d’un écouvillon ou d’un refouloir.
-hampes		hampe	0
-hamster	Petit rongeur nocturne de silhouette massive et d’aspect robuste, pourvus d’abajoues.
-hamsters		hamster	0
-han	Exclamation exprimant le cri sourd et guttural d’un homme fournissant un effort.
-hanafi	Adepte du hanafisme.
-hanafis		hanafi	0
-hanafisme	Plus ancienne des quatre écoles sunnites du droit musulman, considérée comme la plus tolérante et présente surtout en Asie centrale (Inde, Turquie).
-hanafismes		hanafisme	0
-hanafite	Relatif au hanafisme.
-hanafites		hanafite	0
-hanap	Grand vase en métal monté sur un pied et muni d’un couvercle, dont on se servait autrefois pour boire.
-hanaps		hanap	0
-hanbalisme	L’une des quatre écoles juridiques de droit musulman sunnite, la plus conservatrice et traditionaliste, mais aussi la plus souple dans le domaine des contrats …
-hanbalismes		hanbalisme	0
-hanbalite	Relatif au hanbalisme.
-hanbalites		hanbalite	0
-hancha		hancher	33
-hanchai		hancher	22
-hanchaient		hancher	32
-hanchais		hancher	29
-hanchait		hancher	34
-hanchâmes		hancher	3
-hanchant		hancher	35
-hanchas		hancher	12
-hanchasse		hancher	6
-hanchassent		hancher	17
-hanchasses		hancher	8
-hanchassiez		hancher	14
-hanchassions		hancher	25
-hanchât		hancher	20
-hanchâtes		hancher	2
-hanché	Qui a une hanche saillante.
-hanchée		hanché	23
-hanchées		hanché	1
-hanchement	Position ou mouvement mettant en évidence les hanches.
-hanchements		hanchement	0
-hanchent		hancher	31
-hancher	Faire saillir une hanche.
-hanchera		hancher	21
-hancherai		hancher	16
-hancheraient		hancher	28
-hancherais		hancher	18
-hancherait		hancher	26
-hancheras		hancher	7
-hanchèrent		hancher	24
-hancherez		hancher	5
-hancheriez		hancher	4
-hancherions		hancher	11
-hancherons		hancher	10
-hancheront		hancher	15
-hanches		hanche	0
-hanchez		hancher	30
-hanchiez		hancher	13
-hanchions		hancher	19
-hanchons		hancher	27
-hand	Handball.
-handball	Sport collectif d’origine allemande où deux équipes de sept joueurs s’affrontent avec un ballon sur un terrain rectangulaire séparé en deux camps.
-handballeur	Joueur de handball.
-handballeurs		handballeur	0
-handballeuse	Femme qui joue au handball.
-handballeuses		handballeuse	0
-handballs		handball	0
-handicap	Épreuve ou concours de vitesse, de force ou d’endurance dans lesquels on égalise les chances des concurrents d’âge ou de qualités différents, mais en leur attr…
-handicapa		handicaper	33
-handicapai		handicaper	22
-handicapaient		handicaper	32
-handicapais		handicaper	29
-handicapait		handicaper	40
-handicapâmes		handicaper	3
-handicapant	Qui provoque un handicap.
-handicapante		handicapant	23
-handicapantes		handicapant	1
-handicapants		handicapant	9
-handicapas		handicaper	12
-handicapasse		handicaper	6
-handicapassent		handicaper	17
-handicapasses		handicaper	8
-handicapassiez		handicaper	14
-handicapassions		handicaper	25
-handicapât		handicaper	20
-handicapâtes		handicaper	2
-handicapé	Atteint d’un handicap.
-handicapée	Personne handicapée, personne atteinte d’un handicap.
-handicapées		handicapé	1
-handicapent		handicaper	31
-handicaper	Fixer dans un handicap les conditions de poids, de distance, de temps.
-handicapera		handicaper	44
-handicaperai		handicaper	16
-handicaperaient		handicaper	28
-handicaperais		handicaper	18
-handicaperait		handicaper	26
-handicaperas		handicaper	7
-handicapèrent		handicaper	24
-handicaperez		handicaper	5
-handicaperiez		handicaper	4
-handicaperions		handicaper	11
-handicaperons		handicaper	10
-handicaperont		handicaper	15
-handicapés		handicapé	9
-handicapeur	Dans le milieu des courses de galop, personne chargée de déterminer le poids supplémentaire que devront porter les chevaux dans leurs futures épreuves en fonct…
-handicapeurs		handicapeur	0
-handicapeuse	Dans le milieu des courses de galop, personne chargée de déterminer le poids supplémentaire que devront porter les chevaux dans leurs futures épreuves en fonct…
-handicapeuses		handicapeuse	0
-handicapez		handicaper	30
-handicapiez		handicaper	13
-handicapions		handicaper	19
-handicapons		handicaper	27
-handicaps		handicap	0
-handisport	Sport adapté pour être pratiqué par des personnes handicapées, en loisir ou en sport de haut niveau.
-handisports		handisport	0
-hangar	Entrepôt ou remise ordinairement destinée à servir d’abri à des charrettes, à des récoltes, à des marchandises ou encore à des appareils d’aéronautique.
-hangars		hangar	0
-hangûl	Variante orthographique de hangeul.
-hanneton	Insecte coléoptère (Melolontha melolontha) d’un rouge brun, qui a des antennes courtes, frangées à leur extrémité, et qui paraît au printemps.
-hannetonna		hannetonner	33
-hannetonnage	Chasse aux hannetons.
-hannetonnages		hannetonnage	0
-hannetonnai		hannetonner	22
-hannetonnaient		hannetonner	32
-hannetonnais		hannetonner	29
-hannetonnait		hannetonner	34
-hannetonnâmes		hannetonner	3
-hannetonnant		hannetonner	35
-hannetonnas		hannetonner	12
-hannetonnasse		hannetonner	6
-hannetonnassent		hannetonner	17
-hannetonnasses		hannetonner	8
-hannetonnassiez		hannetonner	14
-hannetonnât		hannetonner	20
-hannetonnâtes		hannetonner	2
-hannetonné		hannetonner	46
-hannetonnée		hannetonner	37
-hannetonnées		hannetonner	36
-hannetonnent		hannetonner	31
-hannetonner	Détruire les hannetons.
-hannetonnera		hannetonner	21
-hannetonnerai		hannetonner	16
-hannetonnerais		hannetonner	18
-hannetonnerait		hannetonner	26
-hannetonneras		hannetonner	7
-hannetonnèrent		hannetonner	24
-hannetonnerez		hannetonner	5
-hannetonneriez		hannetonner	4
-hannetonnerions		hannetonner	11
-hannetonnerons		hannetonner	10
-hannetonneront		hannetonner	15
-hannetonnés		hannetonner	38
-hannetonnez		hannetonner	30
-hannetonniez		hannetonner	13
-hannetonnions		hannetonner	19
-hannetonnons		hannetonner	27
-hannetons		hanneton	0
-hanoïen	Relatif à Hanoï, à ses habitants.
-hanoïenne		hanoïen	23
-hanoïennes		hanoïen	1
-hanoïens		hanoïen	9
-Hanoukka	Fête religieuse juive ayant lieu entre fin novembre et fin décembre (25 Kislev).
-hanovrien	Relatif à Hanovre.
-hanovrienne		hanovrien	23
-hanovriennes		hanovrien	1
-hanovriens		hanovrien	9
-hans		han	0
-hansart	En Normandie, hachette ou couperet dont on se sert pour découper la viande.
-hansarts		hansart	0
-hanse	Au Moyen Âge, association des marchands d'une région, telle qu'il s'en forma dans les ports et les villes de l'Europe du Nord.
-hanséate	Qui se rapporte aux villes de la hanse.
-hanséates		hanséate	0
-hanséatique	Relatif aux villes qui faisaient partie de la hanse teutonique.
-hanséatiques		hanséatique	0
-hanses		hanse	0
-hanta		hanter	39
-hantai		hanter	22
-hantaient		hanter	42
-hantais		hanter	52
-hantait		hanter	40
-hantâmes		hanter	3
-hantant		hanter	43
-hantas		hanter	12
-hantasse		hanter	6
-hantassent		hanter	17
-hantasses		hanter	8
-hantassiez		hanter	14
-hantassions		hanter	25
-hantât		hanter	20
-hantâtes		hanter	2
-hantavirus	Virus du genre Orthohantavirus la famille des Hantaviridae.
-hanté	Qui est réputé être occupée par des esprits ou d’autres forces surnaturelles et où se produiraient des phénomènes surnaturels ou paranormaux.
-hantée		hanté	23
-hantées		hanté	1
-hantent		hanter	41
-hanter	Fréquenter quelqu’un que l’on suppose de mauvaise influence ou sur lequel on exerce une mauvaise influence.
-hantera		hanter	44
-hanterai		hanter	50
-hanteraient		hanter	28
-hanterais		hanter	18
-hanterait		hanter	49
-hanteras		hanter	7
-hantèrent		hanter	48
-hanterez		hanter	5
-hanteriez		hanter	4
-hanterions		hanter	11
-hanterons		hanter	10
-hanteront		hanter	54
-hantes		hanter	77
-hantez		hanter	47
-hantiez		hanter	13
-hantions		hanter	19
-hantise	Fréquentation, commerce familier chez quelqu’un.
-hantises		hantise	0
-hantons		hanter	27
-haoussa	Langue tchadique, parlée en Afrique occidentale, principalement au Niger et au Nigeria.
-hapalémur	Genre de lémuridés de Madagascar, fauves à la face foncée, à queue longue et laineuse, herbivores.
-hapalémurs		hapalémur	0
-hapax	Mot, spécialement pour les langues anciennes, dont on ne connaît qu’une seule occurrence dans le corpus d’une langue donnée, globalement ou à une époque donnée.
-haplobionte	Algue rouge qui possède une seule génération dans sa phase diploïde, c’est-à-dire à 2n chromosomes.
-haplobiontes		haplobionte	0
-haploïde	Qui ne possède qu’un exemplaire de chaque chromosome.
-haploïdes		haploïde	0
-haploïdie	Fait d'être haploïde.
-haploïdies		haploïdie	0
-haplologie	Amuïssement dans un mot d’un ou de plusieurs phonèmes identiques ou apparentés.
-haplologies		haplologie	0
-haplonte	Organisme qui vit principalement dans une phase haploïde, c’est-à-dire à n chromosomes.
-haplontes		haplonte	0
-haplophase	Phase haploïde dans le cycle de vie d’un organisme.
-haplophases		haplophase	0
-happa		happer	39
-happai		happer	55
-happaient		happer	42
-happais		happer	29
-happait		happer	40
-happâmes		happer	3
-happant		happer	43
-happas		happer	12
-happasse		happer	6
-happassent		happer	17
-happasses		happer	8
-happassiez		happer	14
-happassions		happer	25
-happât		happer	20
-happâtes		happer	2
-happe	Demi-cercle de fer qu’on met au bout des essieux de carrosses pour empêcher que la roue ne les use à force de tourner.
-happée	Celle qui est happée, saisie, prise.
-happées		happée	0
-happement	Action de happer quelque chose.
-happements		happement	0
-happening	Performance, représentation, événement ou situation à caractère artistique, présenté comme un événement hors normes, original, voire unique.
-happenings		happening	0
-happent		happer	41
-happer	Saisir avidement avec la gueule ce qu’on lui jette, en parlant du chien et des animaux en général.
-happera		happer	21
-happerai		happer	16
-happeraient		happer	28
-happerais		happer	18
-happerait		happer	49
-happeras		happer	7
-happèrent		happer	24
-happerez		happer	5
-happeriez		happer	4
-happerions		happer	11
-happerons		happer	10
-happeront		happer	15
-happes		happe	0
-happez		happer	30
-happiez		happer	13
-happions		happer	19
-happons		happer	27
-haptène	Molécule antigénique de faible poids moléculaire.
-haptènes		haptène	0
-haptique	Relatif au toucher, aux interfaces, procurant cette sensation.
-haptiques		haptique	0
-haptonomie	Discipline permettant d’entrer en contact avec un patient grâce au toucher, aux sensations tactiles et non par la parole.
-haptonomies		haptonomie	0
-haptonomique	Relatif à l’haptonomie.
-haptonomiques		haptonomique	0
-haquebute	Ancêtre de l’arquebuse, datant du xvᵉ siècle, d'un poids élevé elle était servie par deux hommes.
-haquebutes		haquebute	0
-haquenée	Cheval ou jument de moyenne taille, que montaient autrefois les dames et qui allait ordinairement l’amble.
-haquenées		haquenée	0
-haquet	Sorte de charrette étroite, longue et sans ridelles, sur le devant de laquelle est un treuil et qui servait à voiturer du vin, des ballots de marchandises, etc.
-haquets		haquet	0
-harakiri	Variante orthographique de hara-kiri.
-harakiris		harakiri	0
-haram	Interdit par le Coran.
-harams		haram	0
-harangua		haranguer	39
-haranguai		haranguer	22
-haranguaient		haranguer	42
-haranguais		haranguer	29
-haranguait		haranguer	40
-haranguâmes		haranguer	3
-haranguant		haranguer	43
-haranguas		haranguer	12
-haranguasse		haranguer	6
-haranguassent		haranguer	17
-haranguasses		haranguer	8
-haranguassiez		haranguer	14
-haranguassions		haranguer	25
-haranguât		haranguer	20
-haranguâtes		haranguer	2
-harangue	Discours fait à une assemblée, à un prince ou à quelque autre personne élevée en dignité.
-haranguée		haranguer	45
-haranguées		haranguer	36
-haranguent		haranguer	31
-haranguer	Faire une harangue à.
-haranguera		haranguer	21
-haranguerai		haranguer	16
-harangueraient		haranguer	28
-haranguerais		haranguer	60
-haranguerait		haranguer	26
-harangueras		haranguer	7
-haranguèrent		haranguer	24
-haranguerez		haranguer	5
-harangueriez		haranguer	4
-haranguerions		haranguer	11
-haranguerons		haranguer	10
-harangueront		haranguer	15
-harangués		haranguer	53
-harangueur	Qui aime à haranguer.
-harangueurs		harangueur	9
-harangueuse	Celle qui harangue.
-harangueuses		harangueuse	0
-haranguez		haranguer	47
-haranguiez		haranguer	13
-haranguions		haranguer	19
-haranguons		haranguer	27
-hararais	Relatif à Harare ou à ses habitants.
-hararaise		hararais	23
-hararaises		hararais	1
-hararéen	Relatif à Hararé, capitale du Zimbabwé, ou à ses habitants.
-hararéenne		hararéen	23
-hararéennes		hararéen	1
-hararéens		hararéen	9
-haras	Écurie où logent étalons, juments et poulains.
-harassa		harasser	33
-harassai		harasser	22
-harassaient		harasser	42
-harassais		harasser	29
-harassait		harasser	34
-harassâmes		harasser	3
-harassant	Qui harasse, épuise, fatigue énormément.
-harassante	Féminin singulier de harassant.
-harassantes		harassant	1
-harassants		harassant	9
-harassas		harasser	12
-harassasse		harasser	6
-harassassent		harasser	17
-harassasses		harasser	8
-harassassiez		harasser	14
-harassassions		harasser	25
-harassât		harasser	20
-harassâtes		harasser	2
-harasse	Caisse à claire-voie, carrée, pour emballer le verre, mais aussi la porcelaine et d'autres matériaux.
-harassée	Poêlée de châtaignes.
-harassées		harassé	1
-harassement	Action de harasser, état d’une personne harassée.
-harassements		harassement	0
-harassent		harasser	41
-harasser	Fatiguer à l’excès, éreinter.
-harassera		harasser	21
-harasserai		harasser	16
-harasseraient		harasser	28
-harasserais		harasser	18
-harasserait		harasser	26
-harasseras		harasser	7
-harassèrent		harasser	24
-harasserez		harasser	5
-harasseriez		harasser	4
-harasserions		harasser	11
-harasserons		harasser	10
-harasseront		harasser	15
-harassés		harassé	9
-harassez		harasser	30
-harassiez		harasser	13
-harassions		harasser	19
-harassons		harasser	27
-harcela		harceler	39
-harcelai		harceler	55
-harcelaient		harceler	42
-harcelais		harceler	52
-harcelait		harceler	40
-harcelâmes		harceler	3
-harcelant	Qui harcèle, qui importune sans cesse.
-harcelante	Féminin singulier de harcelant.
-harcelantes		harcelant	1
-harcelants		harcelant	9
-harcelas		harceler	12
-harcelasse		harceler	6
-harcelassent		harceler	17
-harcelasses		harceler	8
-harcelassiez		harceler	14
-harcelassions		harceler	25
-harcelât		harceler	20
-harcelâtes		harceler	2
-harcèle		harceler	64
-harcelée		harceler	45
-harcelées		harceler	51
-harcèlement	Tourments occasionnés par d’incessantes poursuites orchestrées, insignifiantes prises isolément.
-harcèlements		harcèlement	0
-harcèlent		harceler	41
-harceler	Tourmenter une personne, ou un animal, en le poursuivant sans relâche, en le malmenant.
-harcèlera		harceler	44
-harcèlerai		harceler	50
-harcèleraient		harceler	63
-harcèlerais		harceler	18
-harcèlerait		harceler	26
-harcèleras		harceler	57
-harcelèrent		harceler	48
-harcèlerez		harceler	58
-harcèleriez		harceler	4
-harcèlerions		harceler	11
-harcèlerons		harceler	61
-harcèleront		harceler	54
-harcelés		harceler	53
-harceleur	Qui harcèle.
-harceleurs		harceleur	9
-harceleuse	Celle qui harcèle.
-harceleuses		harceleur	1
-harcelez		harceler	47
-harceliez		harceler	67
-harcelions		harceler	19
-harcelle		harceler	72
-harcellent		harceler	69
-harcellera		harceler	44
-harcellerai		harceler	50
-harcelleraient		harceler	63
-harcellerais		harceler	60
-harcellerait		harceler	49
-harcelleras		harceler	57
-harcellerez		harceler	58
-harcelleriez		harceler	74
-harcellerions		harceler	82
-harcellerons		harceler	61
-harcelleront		harceler	54
-harcelles		harceler	113
-harcelons		harceler	27
-hard	Pornographique.
-harda		harder	33
-hardai		harder	22
-hardaient		harder	32
-hardais		harder	29
-hardait		harder	34
-hardâmes		harder	3
-hardant		harder	35
-hardas		harder	12
-hardasse		harder	6
-hardassent		harder	17
-hardasses		harder	8
-hardassiez		harder	14
-hardassions		harder	25
-hardât		harder	20
-hardâtes		harder	2
-hardcore	Excessivement explicite, violent ou sans inhibition.
-hardcores		hardcore	0
-harde	Troupeau de bêtes, en particulier de ruminants sauvages.
-hardée	Rupture de piste que fait le gibier dans les taillis.
-hardées		hardée	0
-hardent		harder	41
-harder	Attacher des chiens ensemble par un lien commun.
-hardera		harder	21
-harderai		harder	16
-harderaient		harder	28
-harderais		harder	18
-harderait		harder	26
-harderas		harder	7
-hardèrent		harder	24
-harderez		harder	5
-harderiez		harder	4
-harderions		harder	11
-harderons		harder	10
-harderont		harder	15
-hardes	Effets personnels, vêtements qu’on emporte lors d’un voyage.
-hardeur	Acteur de films pornographiques.
-hardeurs		hardeur	0
-hardeuse	Actrice de films pornographiques.
-hardeuses		hardeuse	0
-hardez		harder	30
-hardi	Qui ose beaucoup.
-hardie		hardi	23
-hardies		hardi	1
-hardiesse	Sentiment ou qualité de celui ou de celle qui est hardi.
-hardiesses		hardiesse	0
-hardiez		harder	13
-hardiment	Avec hardiesse.
-hardions		harder	19
-hardis		hardi	9
-hardons		harder	27
-hards		hard	0
-hardware	Matériel électronique.
-hardwares		hardware	0
-harelde	Nom vernaculaire de certaines espèces d’oiseaux palmipèdes de la famille des anatidés, canards plongeurs.
-hareldes		harelde	0
-harem	Gynécée chez les musulmans.
-harems		harem	0
-hareng	Poisson de la famille des clupéidés d’à peu près 25 cm de long, au corps fin et pourvu d’une petite bouche, au corps bleuté sur le dessus et argenté en-dessous…
-harengaison	Pêche du hareng.
-harengaisons		harengaison	0
-harengère	Vendeuse de harengs et autres poissons au détail.
-harengères		harengère	0
-harengs		hareng	0
-harenguet	Synonyme de sprat.
-harenguets		harenguet	0
-harengueux	Bateau spécialisé dans la pêche du hareng.
-harenguier	Bateau spécialisé dans la pêche du hareng.
-harenguière	Palis pour prendre des harengs.
-harenguières		harenguière	0
-harenguiers		harenguier	0
-haret	Chat domestique sans maître, ou issu de sa descendance, retourné à l’état sauvage.
-harets		haret	0
-harfang	Nom employé soit de façon générique (i.e.
-harfangs		harfang	0
-hargne	Ténacité coléreuse.
-hargnes		hargne	0
-hargneuse		hargneux	23
-hargneusement	D'une manière hargneuse.
-hargneuses		hargneux	1
-hargneux	Qui dénote la hargne, qui est d’humeur chagrine, agressive.
-haricot	Ragoût de mouton.
-haricots		haricot	0
-haridelle	Mauvais cheval maigre et efflanqué.
-haridelles		haridelle	0
-harira	Sorte de soupe, typique de la cuisine marocaine.
-hariras		harira	0
-harissa	Assaisonnement très fort originaire de la Tunisie et à base de purée de piments rouges.
-harissas		harissa	0
-harka	Expédition punitive contre des insurgés.
-harkas		harka	0
-harki	Relatif aux harkis.
-harkie		harki	23
-harkies		harki	1
-harkis		harki	0
-harle	Nom vernaculaire de plusieurs canards piscivores à l'extrémité du bec crochu du genre Mergus.
-harles		harle	0
-harmattan	Alizé hivernal, froid, sec, poussiéreux, soufflant en Afrique de l’Ouest du Sahara vers le golfe de Guinée, entre la fin novembre et le milieu du mois de mars.
-harmattans		harmattan	0
-harmonica	Instrument de musique composé de cloches ou de verres, de différents timbres, qu’on fait résonner.
-harmonicas		harmonica	0
-harmoniciste	Joueur d’harmonica.
-harmonicistes		harmoniciste	0
-harmonicorde	Sorte de piano à queue posé verticalement et dont les cordes métalliques étaient frottées par une roue actionnée par les pieds.
-harmonicordes		harmonicorde	0
-harmonie	Concours et accord de divers sons.
-harmonies		harmonie	0
-harmonieuse		harmonieux	23
-harmonieusement	Avec harmonie, d’une manière harmonieuse.
-harmonieuses		harmonieux	1
-harmonieux	Qui a de l’harmonie.
-harmonique	Qui a rapport à l’harmonie.
-harmoniquement	Suivant les lois de l’harmonie, ou suivant les rapports harmoniques des sons.
-harmoniques		harmonique	123
-harmonisa		harmoniser	33
-harmonisai		harmoniser	22
-harmonisaient		harmoniser	42
-harmonisais		harmoniser	29
-harmonisait		harmoniser	40
-harmonisâmes		harmoniser	3
-harmonisant	Qui harmonise.
-harmonisas		harmoniser	12
-harmonisasse		harmoniser	6
-harmonisassent		harmoniser	17
-harmonisasses		harmoniser	8
-harmonisassiez		harmoniser	14
-harmonisassions		harmoniser	25
-harmonisât		harmoniser	20
-harmonisâtes		harmoniser	2
-harmonisation	Action d'harmoniser ou résultat de cette action.
-harmonisations		harmonisation	0
-harmonise		harmoniser	64
-harmonisée		harmoniser	45
-harmonisées		harmoniser	36
-harmonisent		harmoniser	41
-harmoniser	Mettre en harmonie.
-harmonisera		harmoniser	44
-harmoniserai		harmoniser	16
-harmoniseraient		harmoniser	28
-harmoniserais		harmoniser	18
-harmoniserait		harmoniser	26
-harmoniseras		harmoniser	7
-harmonisèrent		harmoniser	48
-harmoniserez		harmoniser	5
-harmoniseriez		harmoniser	4
-harmoniserions		harmoniser	11
-harmoniserons		harmoniser	10
-harmoniseront		harmoniser	15
-harmonisés		harmoniser	53
-harmonisez		harmoniser	47
-harmonisiez		harmoniser	13
-harmonisions		harmoniser	19
-harmonisons		harmoniser	27
-harmoniste	Musicien ou musicienne qui maîtrise les règles de l’harmonie.
-harmonistes		harmoniste	0
-harmonium	Petit orgue où les tuyaux sont remplacés par des anches libres qui répondent aux touches d’un clavier.
-harmoniums		harmonium	0
-harnacha		harnacher	39
-harnachai		harnacher	22
-harnachaient		harnacher	42
-harnachais		harnacher	52
-harnachait		harnacher	40
-harnachâmes		harnacher	3
-harnachant		harnacher	35
-harnachas		harnacher	12
-harnachasse		harnacher	6
-harnachassent		harnacher	17
-harnachasses		harnacher	8
-harnachassiez		harnacher	14
-harnachassions		harnacher	25
-harnachât		harnacher	20
-harnachâtes		harnacher	2
-harnaché		harnacher	46
-harnachée	Féminin singulier de harnaché.
-harnachées	Féminin pluriel de harnaché.
-harnachement	Action de harnacher.
-harnachements		harnachement	0
-harnachent		harnacher	31
-harnacher	Mettre le harnais ou les harnais à un cheval de trait.
-harnachera		harnacher	21
-harnacherai		harnacher	16
-harnacheraient		harnacher	28
-harnacherais		harnacher	18
-harnacherait		harnacher	26
-harnacheras		harnacher	7
-harnachèrent		harnacher	48
-harnacherez		harnacher	5
-harnacheriez		harnacher	4
-harnacherions		harnacher	11
-harnacherons		harnacher	10
-harnacheront		harnacher	15
-harnachés	Masculin pluriel de harnaché.
-harnacheur	Ouvrier ou artisan qui travaille pour les selliers, qui fait des harnais.
-harnacheurs		harnacheur	0
-harnacheuse	Ouvrière ou artisane qui travaille pour les selliers, qui fait des harnais.
-harnacheuses		harnacheuse	0
-harnachez		harnacher	30
-harnachiez		harnacher	67
-harnachions		harnacher	19
-harnachons		harnacher	27
-harnais	Ensemble des pièces composant l'équipement principal d'un animal de selle, de trait ou de bât.
-harnois	Variante de harnais.
-haro	Cri de victime pour attirer l’attention, appel au secours.
-harpa		harper	39
-harpagon	Avare.
-harpagons		harpagon	0
-harpai		harper	22
-harpaient		harper	32
-harpail	Troupeau d'animaux sauvages
-harpaille	Harde composée exclusivement de biches et de jeunes cerfs.
-harpailler	S’en prendre à, se quereller, insulter, provoquer.
-harpaillés		harpailler	38
-harpails		harpail	0
-harpais		harper	29
-harpait		harper	34
-harpâmes		harper	3
-harpant		harper	35
-harpas		harper	12
-harpasse		harper	6
-harpassent		harper	17
-harpasses		harper	8
-harpassiez		harper	14
-harpassions		harper	25
-harpât		harper	20
-harpâtes		harper	2
-harpe	Cordophone à cordes pincées, que l'on tient debout, reposant par terre, garni de cordes verticales de longueur décroissante, que l’on pince avec les doigts.
-harpée		harper	37
-harpées		harper	36
-harpent		harper	31
-harper	Jouer de la harpe.
-harpera		harper	21
-harperai		harper	16
-harperaient		harper	28
-harperais		harper	18
-harperait		harper	26
-harperas		harper	7
-harpèrent		harper	24
-harperez		harper	5
-harperiez		harper	4
-harperions		harper	11
-harperons		harper	10
-harperont		harper	15
-harpes		harpe	0
-harpez		harper	30
-harpie	Monstre fabuleux, qu’on représentait avec des ailes, un visage de femme, un corps de vautour et des ongles crochus, et qu’on imaginait être extrêmement vorace.
-harpies		harpie	0
-harpiez		harper	13
-harpion	Autre et ancienne graphie de arpion.
-harpions		harpion	0
-harpiste	Musicien ou musicienne qui joue de la harpe.
-harpistes		harpiste	0
-harpoise	Pièce de fer recourbée qui termine le harpon.
-harpoises		harpoise	0
-harpon	Sorte de dard dont la pointe ou harpoise est accompagnée de crocs et dont on se sert spécialement pour la pêche des cétacés.
-harponna		harponner	39
-harponnage	Pêche au harpon ou à la fouane, action de harponner.
-harponnages		harponnage	0
-harponnai		harponner	22
-harponnaient		harponner	32
-harponnais		harponner	29
-harponnait		harponner	34
-harponnâmes		harponner	3
-harponnant		harponner	35
-harponnas		harponner	12
-harponnasse		harponner	6
-harponnassent		harponner	17
-harponnasses		harponner	8
-harponnassiez		harponner	14
-harponnassions		harponner	25
-harponnât		harponner	20
-harponnâtes		harponner	2
-harponne		harponner	64
-harponnée		harponner	45
-harponnées		harponner	36
-harponnement	pêche au harpon ou à la fouane, action de harponner.
-harponnements		harponnement	0
-harponnent		harponner	41
-harponner	Darder ou accrocher avec le harpon.
-harponnera		harponner	44
-harponnerai		harponner	16
-harponneraient		harponner	28
-harponnerais		harponner	18
-harponnerait		harponner	26
-harponneras		harponner	7
-harponnèrent		harponner	24
-harponnerez		harponner	5
-harponneriez		harponner	4
-harponnerions		harponner	11
-harponnerons		harponner	10
-harponneront		harponner	15
-harponnés		harponner	53
-harponneur	Celui qui lance le harpon.
-harponneurs		harponneur	0
-harponneuse	Celle qui lance le harpon.
-harponneuses		harponneuse	0
-harponnez		harponner	30
-harponniez		harponner	13
-harponnions		harponner	19
-harponnons		harponner	27
-harpons		harpon	0
-harraga	Émigrant tentant de quitter son pays pour rejoindre clandestinement l’Europe par des moyens risqués.
-harragas		harraga	0
-harrier	Race de chien courant utilisé pour chasser le lièvre, originaire de Grande-Bretagne, à queue de taille moyenne et à poil court.
-harriers		harrier	0
-harrisme	Doctrine chrétienne protestante de William Wade Harris.
-harrismes		harrisme	0
-harriste	Relatif au harrisme.
-harristes		harriste	0
-hart	Espèce de lien fait d’osier, ou d’autre bois souple, dont on lie les fagots, les bourrées, etc.
-harts		hart	0
-haruspice	Devin, d’origine étrusque, qui faisait profession d’annoncer l’avenir, soit par l’observation de la foudre, soit par l’inspection des entrailles d’animaux sacr…
-haruspices		haruspice	0
-hasard	Cause indiscernable, étrangère à toute intention humaine.
-hasarda		hasarder	39
-hasardai		hasarder	55
-hasardaient		hasarder	42
-hasardais		hasarder	52
-hasardait		hasarder	40
-hasardâmes		hasarder	3
-hasardant		hasarder	43
-hasardas		hasarder	12
-hasardasse		hasarder	6
-hasardassent		hasarder	17
-hasardasses		hasarder	8
-hasardassiez		hasarder	14
-hasardassions		hasarder	25
-hasardât		hasarder	20
-hasardâtes		hasarder	2
-hasardé	En parlant de la couleur des cheveux, de la barbe, qui tire sur le roux.
-hasardée		hasardé	23
-hasardées		hasarder	36
-hasardent		hasarder	41
-hasarder	Risquer ; exposer à la fortune.
-hasardera		hasarder	44
-hasarderai		hasarder	16
-hasarderaient		hasarder	28
-hasarderais		hasarder	60
-hasarderait		hasarder	26
-hasarderas		hasarder	7
-hasardèrent		hasarder	24
-hasarderez		hasarder	5
-hasarderiez		hasarder	4
-hasarderions		hasarder	11
-hasarderons		hasarder	10
-hasarderont		hasarder	15
-hasardés		hasarder	38
-hasardeuse	Celle qui hasarde.
-hasardeusement	D’une manière hasardeuse, avec péril.
-hasardeuses		hasardeux	1
-hasardeux	Qui est lié au hasard, qui relève de l’aléatoire, qui est soumis aux imprévus, dont le résultat est incertain, risqué.
-hasardez		hasarder	30
-hasardiez		hasarder	13
-hasardions		hasarder	19
-hasardons		hasarder	27
-hasards		hasard	0
-hasch	Haschich.
-haschich	Chanvre indien.
-haschichs		haschich	0
-haschisch	Variante orthographique de haschich.
-haschischin	Consommateur de haschisch.
-haschischins		haschischin	0
-hase	Femelle du lièvre.
-hases		hase	0
-hashtag	Mot-clé utilisé sur les réseaux sociaux.
-hashtags		hashtag	0
-hasseltois	Relatif à Hasselt en Belgique.
-hasseltoise		hasseltois	23
-hasseltoises		hasseltois	1
-hassid	Groupe juif refusant l’hellénisation imposée à la Judée par Antiochus IV Épiphane.
-hassidim	Qui est partisan du hassidisme.
-hassidique	Piétiste, pieux, en parlant des juifs.
-hassidiques		hassidique	0
-hassidisme	Judaïsme hassidique, piétisme juif.
-hassidismes		hassidisme	0
-hassids		hassid	0
-hassium	Élément chimique de numéro atomique 108 et de symbole Hs appartenant à la série chimique des métaux de transition.
-hassiums		hassium	0
-hast	Haste.
-hastaire	Soldat romain qui portait un javelot.
-hastaires		hastaire	0
-haste	Longue lance que portaient originairement les hastaires.
-hastée		hasté	23
-hastées		hasté	1
-hastes		haste	0
-hasts		hast	0
-hata	Variété de la race de chien shikoku.
-hâtai		hâter	55
-hâtaient		hâter	128
-hâtais		hâter	52
-hâtait		hâter	40
-hâtâmes		hâter	68
-hâtant		hâter	43
-hâtas		hâter	12
-hâtasse		hâter	6
-hâtassent		hâter	17
-hâtasses		hâter	8
-hâtassiez		hâter	14
-hâtassions		hâter	25
-hâtât		hâter	62
-hâtâtes		hâter	2
-hâte	Extrême promptitude, vivacité, rapidité avec laquelle on fait quelque chose.
-hatée	Barre coudée et contre-coudée d’équerre en forme de bâton rompu dans sa longueur ou à une de ses extrémités.
-hâtées		hâter	36
-hâtelet	Broche utilisée autrefois pour la cuisson de petites pièces de viande dans la cheminée.
-hâtelets		hâtelet	0
-hâtelette	Morceau que l’on fait cuire à la brochette, au hâtelet
-hâtelettes		hâtelette	0
-hâtelle	Variante de hâtelette.
-hâtelles		hâtelle	0
-hâtent		hâter	41
-hâter	Faire avancer vite.
-hâtera		hâter	44
-hâterai		hâter	16
-hâteraient		hâter	63
-hâterais		hâter	18
-hâterait		hâter	49
-hâteras		hâter	7
-hâtereau	Tranche de foie de porc, poivrée, salée et grillée.
-hâtereaux		hâtereau	0
-hâtèrent		hâter	48
-hâterez		hâter	5
-hâteriez		hâter	4
-hâterions		hâter	11
-hâterons		hâter	10
-hâteront		hâter	15
-hâtés		hâter	53
-hâtez		hâter	47
-hâtier	Sorte de grand chenet de cuisine, qui a plusieurs crochets de fer, placés les uns au-dessus des autres, sur lesquels on appuie les broches pour les faire tourn…
-hâtiers		hâtier	0
-hâtiez		hâter	13
-hâtif	Qui devance le temps, en parlant de ce qui est susceptible d’accroissement.
-hâtifs		hâtif	9
-hâtions		hâter	65
-hâtive		hâtif	23
-hativeau	Fruit ou plante hâtive.
-hativeaux		hativeau	0
-hâtivement	Avant le temps ordinaire (en parlant de la culture de fleurs ou de fruits).
-hâtives		hâtif	1
-hâtons		hâter	59
-hâture	Plaque de fer triangulaire, qui fait saillie sur une serrure.
-hâtures		hâture	0
-hauban	Gros cordage ou fil d’acier qui va du bord du navire à la tête des mâts ou des hunes, où il est fixé avec la raideur convenable, et qui sert principalement à s…
-haubana		haubaner	33
-haubanage	Pose de haubans pour immobiliser un arbre, un mât, ou toutes autres structures.
-haubanages		haubanage	0
-haubanai		haubaner	22
-haubanaient		haubaner	32
-haubanais		haubaner	29
-haubanait		haubaner	34
-haubanâmes		haubaner	3
-haubanant		haubaner	35
-haubanas		haubaner	12
-haubanasse		haubaner	6
-haubanassent		haubaner	17
-haubanasses		haubaner	8
-haubanassiez		haubaner	14
-haubanassions		haubaner	25
-haubanât		haubaner	20
-haubanâtes		haubaner	2
-haubané		haubaner	46
-haubanée		haubaner	45
-haubanées		haubaner	36
-haubanent		haubaner	31
-haubaner	Assujettir un mât, une chèvre, etc.
-haubanera		haubaner	21
-haubanerai		haubaner	16
-haubaneraient		haubaner	28
-haubanerais		haubaner	18
-haubanerait		haubaner	26
-haubaneras		haubaner	7
-haubanèrent		haubaner	24
-haubanerez		haubaner	5
-haubaneriez		haubaner	4
-haubanerions		haubaner	11
-haubanerons		haubaner	10
-haubaneront		haubaner	15
-haubanés		haubaner	53
-haubanez		haubaner	30
-haubaniez		haubaner	13
-haubanions		haubaner	19
-haubanons		haubaner	27
-haubans		hauban	0
-haubergeon	Petit haubert, armure de maille de chevalier au Moyen Âge.
-haubergeons		haubergeon	0
-haubert	Sorte de cuirasse ancienne ou de cotte de mailles.
-hauberts		haubert	0
-haussa		hausser	39
-haussai		hausser	55
-haussaient		hausser	42
-haussais		hausser	52
-haussait		hausser	40
-haussâmes		hausser	3
-haussant		hausser	43
-haussas		hausser	12
-haussasse		hausser	6
-haussassent		hausser	17
-haussasses		hausser	8
-haussassiez		hausser	14
-haussassions		hausser	25
-haussât		hausser	62
-haussâtes		hausser	2
-hausse	Action de hausser.
-haussée		hausser	45
-haussées		hausser	51
-haussement	Action de hausser quelque chose.
-haussements		haussement	0
-haussent		hausser	41
-hausser	Rendre plus haut, mettre dans une situation plus haute, élever.
-haussera		hausser	21
-hausserai		hausser	16
-hausseraient		hausser	28
-hausserais		hausser	18
-hausserait		hausser	49
-hausseras		hausser	7
-haussèrent		hausser	48
-hausserez		hausser	5
-hausseriez		hausser	74
-hausserions		hausser	11
-hausserons		hausser	10
-hausseront		hausser	15
-hausses		hausse	0
-haussez		hausser	47
-haussier	Qui concerne un marché boursier à la hausse.
-haussière	Variante de aussière, avec altération d'après hausser.
-haussières		haussière	0
-haussiers		haussier	9
-haussiez		hausser	13
-haussions		hausser	19
-haussmannien	Relatif à la vie et l’œuvre urbanistique du préfet de la Seine, Georges Eugène Haussmann.
-haussmannienne		haussmannien	23
-haussmanniennes		haussmannien	1
-haussmanniens		haussmannien	0
-haussons		hausser	59
-haut	De grande hauteur (dimension verticale).
-hautain	Qui affecte la fierté et le dédain pour mieux marquer la distance entre soi et les autres.
-hautaine		hautain	23
-hautainement	D’une manière hautaine.
-hautaines		hautain	1
-hautains		hautain	9
-hautbois	Instrument à vent, de perce conique et à anche double, de sonorités très variées (puissant et sonore ou doux et charmeur, clair et nasillard ou plein de rondeu…
-hautboïste	Celui, celle qui joue du hautbois.
-hautboïstes		hautboïste	0
-haute	Haute société ; classe sociale supérieure.
-hautecontre	Variante orthographique de haute-contre
-hautecontres		hautecontre	0
-hautement	D’une manière nette et franche.
-hauterivien	Relatif au Hauterivien.
-Hauteriviens		Hauterivien	0
-hautes	Feux de route.
-hautesse	Titre qu’on donnait au sultan.
-hautesses		hautesse	0
-hauteur	Dimension d’un corps considéré de sa base à son sommet.
-hauteurs		hauteur	0
-hautfond	Variante orthographique de haut-fond.
-hautfonds		hautfond	118
-hautin	Variante de hautain.
-hautins		hautin	0
-hautparleur	Variante orthographique de haut-parleur
-hautparleurs		hautparleur	0
-hauts		haut	9
-hauturier	Relatif à la haute mer.
-hauturière		hauturier	23
-hauturières		hauturier	1
-hauturiers		hauturier	9
-haüyne	Espèce minérale du groupe des silicates, sous-groupe des tectosilicates, famille des feldspathoïdes, de formule Na₄Ca₂Al₆Si₆O₂₂S₂(SO₄).
-hauynes		hauyne	118
-hava		haver	33
-havage	Action de pousser ou traîner une charge.
-havages		havage	0
-havai		haver	22
-havaient		haver	32
-havais		haver	29
-havait		haver	34
-havâmes		haver	3
-havanais	Relatif à La Havane, à sa culture, ses habitants.
-havanaise	Femelle du chien dit havanais ou bichon havanais.
-havanaises		havanais	1
-havane	Cigare cubain.
-havanes		havane	0
-havant		haver	35
-havas		haver	12
-havasse		haver	6
-havassent		haver	17
-havasses		haver	8
-havassiez		haver	14
-havassions		haver	25
-havât		haver	20
-havâtes		haver	2
-have	Petite éminence qui, sur le panneton d’une clé bénarde, empêche celle-ci de traverser la serrure.
-havée		haver	37
-havées		haver	36
-haveneau	Sorte de filet pour prendre le poisson plat.
-haveneaux		haveneau	0
-havenet	Synonyme de haveneau.
-havenets		havenet	0
-havent		haver	31
-haver	Desserrer la couche en ouvrant, parallèlement à son plan, une entaille d'une certaine profondeur dans une mine.
-havera		haver	21
-haverai		haver	16
-haveraient		haver	28
-haverais		haver	18
-haverait		haver	26
-haveras		haver	7
-havèrent		haver	24
-haverez		haver	5
-haveriez		haver	4
-haverions		haver	11
-haveron	Folle avoine.
-haverons		haveron	0
-haveront		haver	15
-haves		have	0
-haveur	Ouvrier qui fait le havage pendant la nuit, quand cette opération n'est pas faite pendant le jour, en même temps que l'abatage proprement dit, par l'ouvrier à …
-haveurs		haveur	0
-haveuse	Ouvrière qui fait le havage.
-haveuses		haveuse	0
-havez		haver	30
-havi		havir	56
-havie		havir	37
-havies		havir	36
-haviez		haver	13
-havîmes		havir	3
-havions		haver	19
-havir	Se dit, en parlant de la viande, lorsqu’on la fait rôtir à un grand feu, qui la dessèche et la brûle par-dessus, sans qu’elle soit cuite en dedans.
-havira		havir	21
-havirai		havir	16
-haviraient		havir	28
-havirais		havir	18
-havirait		havir	26
-haviras		havir	7
-havirent		havir	24
-havirez		havir	5
-haviriez		havir	4
-havirions		havir	11
-havirons		havir	10
-haviront		havir	15
-havis		havir	79
-havissaient		havir	32
-havissais		havir	29
-havissait		havir	34
-havissant		havir	35
-havisse		havir	89
-havissent		havir	31
-havisses		havir	76
-havissez		havir	30
-havissiez		havir	13
-havissions		havir	19
-havissons		havir	27
-havit		havir	107
-havîtes		havir	2
-havons		haver	27
-havrais	Relatif à la ville du Havre, commune française située dans le département de la Seine-Maritime.
-havraise		havrais	23
-havraises		havrais	1
-havre	ou Port de mer, naturel ou artificiel, fermé et sûr.
-havres		havre	0
-havresac	Sac à dos dans lequel un fantassin enfermait les effets à son usage.
-havresacs		havresac	0
-havrit	Ensemble des fragments de matériaux arrachés par une haveuse.
-havrits		havrit	0
-hawaïen	Relatif à Hawaï, ses habitants, ou sa langue.
-hawaïenne	Pizza garnie de mozzarella, sauce tomate, jambon, ananas.
-hawaïennes		hawaïen	1
-hawaïens		hawaïen	9
-hawaiien	Variante orthographique de hawaïen.
-hawaiienne		hawaiien	23
-hawaiiennes		hawaiien	1
-hawaiiens		hawaiien	9
-hayon	Planche de bois amovible fermant l’arrière d’une charrette.
-hayons		hayon	0
-hazan	Chantre de synagogue.
-hazans		hazan	0
-hazara	Relatif au peuple des Hazaras, à leur culture, à leurs coutumes, à leur territoire, à leur langue.
-hazaras		hazara	0
+0ha	Vingt-sixième lettre de l’alphabet arabe.
+2banera	Danse et musique cubaine nées en 1830 à Cuba.
+8s		8	0
+3ile	Adroit ; qui fait ce qu’il entreprend avec souplesse.
+6ment	D'une manière habile.
+6s		6	0
+6té	Facilité, disposition, qualité qui rend propre à faire certaines choses, à réussir dans certaines actions, en particulier en utilisant ses mains.
+8s		8	0
+5ita		7er	x
+8i		7er	1j
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui rend une personne habile à faire un acte.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action d’habiliter.
+cs		c	0
+7é	Résultat de l’habilitation, aptitude.
+8e		7er	19
+9s		7er	1f
+7ent		8r	v
+8r	Rendre quelqu’un capable d’un acte en justice.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	0
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5la		6er	13
+7ble	Qui peut être habillé.
+as		a	0
+7ge	Apprêt que l’on fait subir à un animal pour le faire cuire.
+9s		9	0
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	1w
+6ant	Qui sied, qui va bien.
+7s		6er	2b
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6é	Qui porte un habit, un vêtement, qui n’est pas nu.
+7e		7	n
+8s		7	1
+6ement	Manière de s'habiller.
+bs		b	0
+7nt		7r	15
+7r	Mettre des habits à quelqu’un, le vêtir.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	1p
+at		8	f
+7s		7r	25
+7ur	Personne qui aide les acteurs à s’habiller.
+9s		9	0
+8se	Personne qui aide les acteurs à s’habiller.
+as		a	0
+7z		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+6ons		6er	1n
+4t	Tout ce qui est fait pour couvrir le corps, excepté le linge, la coiffure et la chaussure.
+5a		5er	13
+6bilité	Qualité d’un endroit habitable.
+cs		c	0
+7le	Qui peut être habité.
+9s		9	3a
+6cle	Habitation, demeure.
+9s		9	0
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant	Celui qui habite dans un lieu donné.
+8e	Celle qui habite dans un lieu donné.
+9s		9	0
+8s		8	0
+6s		5er	c
+7se		5er	6
+9nt		5er	26
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+6t	Milieu naturel offrant à une espèce vivante (animale, végétale, fongique, etc.) les conditions nécessaires à sa survie, son développement et sa reproduction.
+5âtes		5er	2
+5ation	Action d’habiter un lieu.
+as		a	0
+7s		7	0
+5e		6r	1s
+5ée	Féminin singulier de habité.
+7s	Féminin pluriel de habité.
+5ent		6r	15
+6r	Faire sa demeure, son séjour quelque part.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	4
+8ons		7	2a
+7ons		7	1p
+9t		7	1i
+6s		6r	25
+6z		6r	1b
+5iez		5er	1v
+6ons		5er	1t
+5ons		5er	1n
+5s		5	0
+5ua		6er	13
+7i		6er	4y
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	2b
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6ation	Action d’habituer.
+bs		b	0
+6de	Disposition acquise par des actes réitérés.
+8s		8	0
+6é	Qui a l’habitude.
+7e	Celle qui a l’habitude d’aller dans un lieu.
+8s		7	3e
+6el	Qui est devenu une habitude, qui est passé en habitude.
+8le		8	n
+ament	D’habitude ; d’ordinaire.
+as		8	1
+8s		8	9
+7nt		7r	15
+7r	Faire prendre l’habitude ou une habitude.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	1p
+at		8	1i
+6és		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	1n
+6s	Apparence générale du corps considérée comme le reflet de l’état de santé ou de maladie d’un individu.
+1âbla		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+4ent		5r	v
+5r	Tenir des discours où abondent l’exagération, l’emphase, la vantardise.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6ie	Discours plein d'exagération, d’emphase, de vanterie.
+8s		8	0
+8z		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4eur	Qui hâble, qui parle des faits avec exagération, emphase et vantardise.
+7s		7	9
+6se	Personne qui hâble, qui parle avec exagération, emphase et vantardise.
+8s		6r	1
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+1absbourgeois	Relatif à la dynastie des Habsbourgs.
+de		d	n
+es		d	1
+2cha		4er	13
+5ge	Action de hacher.
+7s		7	0
+5i		4er	1j
+6ent		4er	16
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é	Coupé en petits morceaux.
+5e	Punition infamante et déshonorante réservée aux nobles à qui l'on faisait porter sur les épaules, sur un parcours déterminé, en public, soit une selle, soit un…
+6s		5	3e
+4ement	Action d’enlever au bois ce qu’il a de trop.
+9s		9	0
+4émite	Relatif à la dynastie hachémite, famille régnante en Jordanie.
+9s		9	0
+4ent		5r	15
+5r	Couper en petits morceaux, avec un instrument tranchant (couteau, hachoir, mixeur…).
+6a		6	l
+7i		6	1e
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+6eau	Petite hache, marteau tranchant d’un côté.
+9x		9	0
+4èrent		4er	1c
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6on	Variante de hachereau par substitution de suffixe.
+8s		8	0
+8t		6	f
+4és		5	9
+4ette	Petite hache.
+8s		8	0
+5ur	Obturateur à fréquence de récurrence déterminée, mécanique ou optoélectronique destiné à échantillonner périodiquement un faisceau ou un signal analogique.
+7s		7	0
+6se	Machine qui hache.
+8s		8	0
+5z	Deuxième personne du pluriel du présent de l'indicatif de hacher.	5r
+4ich	Variante orthographique de haschich.
+7s		7	0
+5ez		4er	d
+5ons		4er	j
+5s	Préparation hachée très menue, de viande, poisson ou autre.
+6ch	Variante orthographique de haschich.
+8in	Variante de hachichin.
+as		a	0
+8s		8	0
+4oir	Mécanisme, machine, domestique ou industrielle, manuelle ou automatisée destinées à hacher diverses choses.
+7s		7	0
+5n	Petite hache servant à débiter du bois.
+6s		6	0
+4ura		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Action de hacher.
+6ée		6er	19
+8s		6er	1f
+6ent		7r	v
+7r	Marquer de hachures.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	0
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+3ienda	Grande exploitation agricole d’Amérique du Sud.
+8s		8	0
+3ka		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4athon	Événement où des programmeurs se rencontrent pour collaborer au développement de logiciels.
+9s		9	0
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Explorer, fouiller, sonder, bricoler, bidouiller un système d’information, un matériel ou système informatique, par culture numérique ou jeu.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+6s		6	0
+4és		4er	12
+4eur	Homme qui hacke.
+7s		7	0
+6se	Femme qui hacke.
+8s		8	0
+5z		5r	u
+4iez		4er	d
+5ng	Hackage.
+7s		7	0
+5ons		4er	j
+4le	Plume de coq utilisée dans le montage des mouches artificielles pour la pêche.
+6s		6	0
+4ons		4er	r
+4tivisme	Forme d’activisme prenant la forme d’actions de piratage informatique.
+bs		b	0
+9te	Hackeur qui fait de l’activisme par le moyen d’action ou d’attaques informatiques.
+bs		b	0
+3quebute	Variante de haquebute.
+as		a	0
+2dal	Profond de plus de 6000 mètres.
+5e		5	n
+6s		5	1
+4ux		4l	9
+3dock	Aiglefin.
+7s		7	0
+3éen	Relatif au Hadéen.
+6ne		6	n
+8s		6	1
+6s		6	9
+3ith	Paroles du prophète Mahomet considérées comme des ordres à suivre par les musulmans.
+6s		6	0
+3j	Pèlerinage musulman aux lieux saints de la ville sainte de La Mecque, un des piliers de l’islam, obligatoire à tout musulman, au moins une fois dans sa vie, s’…
+4dj	Variante de hadj.
+6s		6	0
+4i	Dans la religion musulmane, personne qui a accompli les pèlerinages de La Mecque, de Médine ou de Jérusalem.
+5s		5	0
+4s		4	0
+3ron	Particule sensible à l’interaction forte.
+6ique	Relatif à un hadron, aux hadrons.
+as		a	0
+6s		6	0
+2fnium	Élément chimique de numéro atomique 72 et de symbole Hf qui fait partie de la série chimique des métaux de transition.
+3side	Relatif aux Hafsides, dynastie ayant régné sur la Tunisie du XIIIᵉ au XVIᵉ siècle.
+7s		7	0
+2gard	Qualifie un oiseau de proie qui a été pris, après plus d’une mue, hors du nid et qu’on a de la peine à apprivoiser.
+6e		6	n
+7s		6	1
+6s		6	9
+3gis	Panse de brebis farcie (plat national écossais).
+3iographe	Qui concerne cette partie de l’Ancien Testament qui n’est ni de Moïse, ni des prophètes.
+bs		b	0
+aie	Traité sur les choses saintes.
+cs		c	0
+bque	Qui concerne les choses saintes, l’hagiographie.
+es		e	0
+5logie	Discours sur les saints ou sur les choses saintes.
+as		a	0
+3uenois	Relatif à La Haye ^().
+0Haguenoise	Habitante ou personne originaire de la ville néerlandaise La Haye.
+as		a	0
+0haguenovien	Relatif à Haguenau, commune du Bas-Rhin.
+bne		b	n
+ds		b	1
+bs		b	9
+2hnium	Nom proposé par les américains (l’American Chemical Society) pour l’élément chimique de numéro atomique 105 avec pour symbole Ha en 1970 (élément maintenant ap…
+7s		7	0
+2ï	Détesté, abhorré, exécré, honni.
+3da	Langue isolat parlée par les Haïdas aux îles de la Reine-Charlotte au Canada et à l’extrême sud de l’Alaska.
+0Haïdas	Peuple amérindien de la côte ouest du Canada et de l’Alaska.
+0haïdouc	Variante de heiduque.
+7s		7	0
+6k	Variante de heiduque.
+7s		7	0
+2ie	Ensemble linéaire, naturel ou artificiel, de végétaux (dont parfois des arbres), ligneux, semi-ligneux, herbacés, plus ou moins homogène (taille, espèces, etc.…
+4s		4	0
+2ïk	Manteau de laine qui se porte dans les pays du Maghreb.
+4aï	Forme de poème japonais.
+6s		6	0
+4s		4	0
+4u	Petit poème japonais de trois vers comportant respectivement 5, 7 et 5 mores (ou syllabes en français) et contenant un kigo (mot de saison).
+5s		5	0
+2illon	Vieux lambeau de toile ou d’étoffe, guenille.
+7neuse	Personne vêtue de haillons.
+cs		ax	1
+ax	Qui tombe en haillons.
+7s		7	0
+2ïmes		3r	3
+2ine	Sentiment d’aversion, de répulsion, envers une personne ou un groupe, qui pousse à mépriser ou à vouloir détruire ce qui en est l’objet.
+5s		5	0
+5use	Celle qui utilise la toile et les réseaux sociaux pour inciter à la haine envers un individu ou un groupe.
+8ment	D'une manière haineuse, avec haine.
+8s		6x	1
+6x	Qui est naturellement ou spontanément porté à la haine.
+4teny	Genre de poème court et allégorique dans la tradition orale de Madagascar, notamment chez les Merinas.
+8s		8	0
+4uyer	Qui concerne le Hainaut.
+6ère		6er	n
+9s		6er	1
+6ers		8	9
+2ïr	Détester, sentir de l’aversion envers, abhorrer, exécrer (quelque chose ou quelqu’un).
+4a		4	18
+5i		4	1e
+6ent		4	1r
+6s		4	1o
+6t		4	1d
+5s		4	1l
+2ire	Petite chemise faite d’un tissu de poil de chèvre, de crin ou de tout autre poil rude et piquant, qu’on porte sur la chair par mortification.
+2ïrent		4	o
+2ires		5	0
+2ïrez		4	1m
+4iez		4	22
+5ons		4	b
+4ons		4	1p
+6t		4	1i
+2is		2ïr	20
+2ïssable	Qui mérite d’être haï, qu’on doit haïr, qui doit inspirer la haine.
+9s		9	0
+6ient		3r	23
+7s		3r	2e
+7t		3r	1z
+6nt		3r	17
+5e		3r	2d
+6nt		3r	1x
+6s		3r	2q
+6z		3r	1y
+5iez		3r	2s
+6ons		3r	2m
+5ons		3r	21
+2it		2ïr	28
+2ïtes		3r	2
+4ien	Relatif à Haïti ou à ses habitants, les Haïtiens.
+7ne		7	n
+9s		7	1
+7s		7	9
+2je	Naja.
+4s		4	0
+2ka	Danse chantée maorie de Nouvelle-Zélande exécutée lors de rituels ou de manifestations sportives, rendue notamment célèbre par l'équipe de rugby des All Blacks.
+1ákarl	Spécialité culinaire islandaise à base de requin du Groenland.
+1akas		4	0
+3ka	Langue chinoise parlée par les Hakkas principalement dans le sud de la Chine et à Taïwan.
+5s		5	0
+2la		3er	13
+4ge	Action de haler quelque chose.
+6s		6	0
+1âlai		3er	m
+1alaient		3er	16
+1âlais		3er	t
+1alait		3er	14
+4kha	Partie législative du Talmud qui définit les règles de conduite civiles et religieuses.
+4l	Qui est permis par le Coran.
+5s		5	0
+1âlâmes		3er	3
+1alant	Signe diacritique représentant une absence de voyelle inhérente, dans l'écriture dévanagari, représenté par un signe souscrit (्).
+1âlas		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+1albi	Boisson alcoolisée, normande, constituée de poires et de pommes fermentées.
+5s		5	0
+4ran	Jeune canard sauvage.
+7s		7	0
+5ené	Déguenillé, mouillé, fatigué.
+8e		7er	11
+9s		7er	10
+7er	Chasser le halbran.
+7és		7er	12
+3de	Amoncellement formé dans une mine par les déchets et stériles issus de l’extraction du minerai.
+5s		5	0
+1âle	Effet produit par la lumière solaire sur la peau, qui, exposée nue à son influence et au grand air, prend une teinte brune et basanée
+1alecret	Pièce d’armure. Corselet en fer battu, composé de deux pièces, une sur le devant et une derrière.
+8s		8	0
+3ée	Action de haler quelque chose.
+1âlées		3er	1f
+1aleine	Souffle de la respiration, air attiré et repoussé par les poumons.
+7s		7	0
+4na		5er	13
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e	Haleine accompagnée d'une odeur forte et désagréable.
+7s		7	0
+3ènent		3ener	v
+3ener	Sentir l'haleine de quelqu'un.
+3ènera		3ener	l
+8i		3ener	g
+9ent		3ener	s
+9s		3ener	i
+9t		3ener	q
+8s		3ener	7
+3enèrent		5er	o
+3ènerez		3ener	5
+7iez		3ener	4
+8ons		3ener	b
+7ons		3ener	a
+9t		3ener	f
+3enés		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5t		4r	15
+4r	Tirer à soi avec force à l’aide d’un cordage.
+1âlera		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+1alèrent		3er	1c
+1âlerez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+1alés		3er	1h
+3eta		5er	13
+6i		5er	m
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant	Qui halète, qui est essoufflé, qui respire fréquemment, péniblement.
+8e		8	n
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+3ète		3eter	1s
+6ment	Action de haleter ou état de celui qui est haletant.
+as		a	0
+6nt		3eter	15
+3eter	Respirer avec force et fréquemment, comme essoufflé, hors d’haleine.
+3ètera		3eter	l
+8i		3eter	g
+9ent		3eter	s
+9s		3eter	i
+9t		3eter	q
+8s		3eter	7
+3etèrent		5er	o
+3èterez		3eter	5
+7iez		3eter	4
+8ons		3eter	b
+7ons		3eter	a
+9t		3eter	f
+6s		3eter	25
+3etez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5te	Coiffe en linon ou batiste couvrant la tête, la nuque ainsi que les joues, montée sur des arceaux en bois de coudrier et portée par les faneuses lorraines et g…
+7s		7	0
+4ur	Celui qui hale, qui tire un bateau à l’aide d'un câble, pour le faire avancer.
+6s		6	0
+5se	Celle qui hale, qui tire un bateau à l’aide d'un câble, pour le faire avancer.
+7s		7	0
+4z		4r	1b
+3fpipe	Variante orthographique de half-pipe.
+8s		8	0
+3icte	Insecte hyménoptère, (halictus), de la famille des mellifères, section des porte-aiguillons.
+7s		7	0
+4eute	Technicien qui s’occupe de surveiller et de gérer les ressources halieutiques.
+8s		8	0
+7ique	Relatif à la pêche.
+bs		b	0
+1âliez		3er	d
+1aligonien	Qui concerne Halifax, en Nouvelle-Écosse.
+ane		a	n
+cs		a	1
+as		a	9
+1âlions		3er	j
+1aliotide	Ormeau.
+9s		9	0
+7s	Ormeau.
+4ple	Coléoptère carnivore, vivant dans les eaux douces et saumâtres.
+7s		7	0
+4te	Forme minérale naturelle du chlorure de sodium (NaCl), évaporitique, cristallisant dans le système cubique.
+6s		6	0
+5ose	Mauvaise haleine.
+8s		8	0
+5ueuse		8x	31
+as	Féminin pluriel de halitueux.
+8x	Qui est chargé de vapeurs, qui s’élève en vapeur comme l’haleine pendant la gelée.
+3l	Grande salle.
+4age	Droit levé sur les marchandises qui s’étalent dans les halles et les foires.
+7s		7	0
+5l	Au jeu du bouzkachi, cercle tracé à la chaux ou à la craie, entourant la dépouille d’une chèvre ou d’un veau.
+6i	Cri de victoire dans la chasse à courre, pour annoncer que la bête est aux abois.
+7s		7	0
+6s		6	0
+4e	Emplacement ordinairement fermé et couvert, destiné à l’emmagasinement et à la vente d’objets d’une utilité première, qui s’y vendent en forte partie, presque …
+5barde	Arme d’hast garnie par en haut d’un fer long, large et pointu, traversé d’un autre fer en forme de croissant.
+as		a	0
+9ier	Soldat portant la hallebarde.
+cs		c	9
+5s		5	0
+4ier	Buisson touffu, fourré où se retire le gibier, bien couvert de broussailles.
+7s		7	0
+4oumi	Fromage semi-ferme plié en deux, à base de lait de chèvre de lait de brebis, originaire de Chypre.
+5ween	Variante de Halloween, les fêtes religieuses (la Saint-Valentin, Pâques) ou non (Nouvel An) prennent une majuscule.
+4s		4	0
+5tattien	Relatif à la période de l’âge du fer ancien.
+cne		c	n
+es		c	1
+cs		c	9
+4ucina		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	1g
+at		8er	y
+8âmes		8er	3
+8ant	Qui provoque des hallucinations.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Perception sans objet réel, qui peut affecter la vision, l'audition, l'olfaction, le toucher et le goût.
+ds		d	0
+aoire	Qui a rapport à l’hallucination.
+es		e	0
+8é	Celui qui est actuellement ou fréquemment en état d’hallucination.
+9e	Celle qui est actuellement ou fréquemment en état d’hallucination.
+as		a	0
+8ent		9r	v
+9r	Produire des hallucinations, rendre halluciné.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8ez		9r	1b
+8iez		8er	d
+9ons		8er	j
+8ogène	Qui induit des hallucinations.
+ds		d	0
+9ns		8er	1n
+9se	Hallucination dont le sujet est conscient (dont il reconnaît l'irréalité).
+bs		b	0
+5x	Premier orteil à l’intérieur du pied.
+3o	Anneau ou aire circulaire lumineuse, et de diverses couleurs qui apparaît autour des astres et principalement du Soleil et de la Lune, quand ils sont vus à tra…
+4bios	Ensemble des êtres vivants du milieu marin.
+4géna		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Introduction d’halogènes dans une molécule.
+cs		c	0
+5ène	Élément du groupe 17, qui comprend le fluor, le chlore, le brome, l’iode et l’astate.
+5énée		7er	11
+9s		7er	10
+5ènent		5éner	v
+5éner	Ajouter des halogènes dans (un corps).
+5ènera		5éner	l
+ai		5éner	g
+bent		5éner	s
+bs		5éner	i
+bt		5éner	q
+as		5éner	7
+5énèrent		7er	o
+5ènerez		5éner	5
+9iez		5éner	4
+aons		5éner	b
+9ons		5éner	a
+bt		5éner	f
+8s		8	0
+5énez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7ure	Anion formé d’un élément chimique de la famille des halogènes.
+as		a	0
+5raphie	Description, histoire des sels.
+bs		b	0
+1âloir	Lieu où l'on hâle le chanvre, où on le fait sécher par l'action du feu, avant de le broyer ou de le tiller.
+6s		6	0
+1alon	Hydrocarbure halogéné (dont l’hydrogène est remplacé, tout ou partie, par des atomes du groupe des halogènes).
+5s		5	0
+4péridol	Médicament neuroleptique antipsychotique.
+bs		b	0
+5hile	Qui vit dans les milieux salés.
+9s		9	0
+6yte	Halophile, adaptée aux milieux salés.
+9s		9	0
+4s		4	0
+4thane	Halo-alcane de formule C₂HBrClF₃, utilisé en tant qu'anesthésique.
+3te	Pause, station des gens de guerre dans leur marche.
+4ère	Balancier, masse de pierre ou de plomb dont on se sert pour faire le contrepoids dans les exercices gymnastiques, comme en dansant sur la corde.
+4érés	Ordre de la classe des insectes comprenant ceux qui ont des balanciers.
+6ophile	Personne pratiquant l’haltérophilie.
+cs		c	0
+bie	Sport visant à soulever des poids et haltères.
+ds		d	0
+4es		5	0
+3va	Confiserie orientale faite de farine, d'huile de sésame, de miel, de fruits et d'amandes ou de pistaches.
+5s		5	0
+2mac	Lit formé d’un morceau de toile ou d’un filet, suspendu horizontalement à deux points fixes par ses extrémités, de manière à pouvoir se balancer, dormir ou se …
+5s		5	0
+4da	Plateau rocheux désertique ayant généralement subi une érosion éolienne.
+6s		6	0
+5ryade	Nymphe des bois qui naissait et mourait avec l’arbre dont la garde lui était confiée, et qui ne pouvait jamais le quitter.
+as		a	0
+8s	Grand singe cynocéphale d'Afrique de l'Est et de la péninsule arabique dont les mâles ont un magnifique pelage argenté.
+4mélidacée	Plante des dicotylédones, famille des Hamamelidaceae à laquelle appartiennent notamment l'hamamélis et le liquidambar.
+ds		d	0
+8s	Genre de plantes (Hamamelis) appartenant à la famille des hamamélidacées qui comprend 5 ou 6 espèces d'arbustes poussant dans les zones boisées et sur les rive…
+3bourgeois	Relatif à Hambourg, la ville allemande.
+ce	Taffetas recouvert de poil ras.
+ds		c	1
+4urger	Sandwich composé de deux pains ronds, généralement garnis d'une galette de viande hachée, de crudités et d'une sauce.
+9s		9	0
+3eau	En milieu rural, groupe d’habitations à l’écart d’une commune, à laquelle il est rattaché administrativement.
+6x		6	0
+4çon	Crochet en matière métallique, que l’on met au bout d’une ligne, avec de l’appât, pour prendre du poisson, et qui est souvent équipé d'un ardillon.
+7na		8er	x
+9ge	Technique de fraude visant à obtenir des informations confidentielles, telles que des mots de passe ou des numéros de cartes de crédit, au moyen de messages ou…
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e		9r	1s
+8ée		8er	11
+as		8er	10
+8ent		9r	v
+9r	Garnir d’hameçon.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+7s		7	0
+3iltonien	Relatif à l'œuvre scientifique de William Hamilton.
+bne		b	n
+ds		b	1
+bs		b	9
+3mam	Établissement dans lequel on prend des bains de vapeur.
+6s		6	0
+4erless	Fusil de chasse à percuteur central et sans chiens apparents.
+3pe	Long manche ou support, généralement en bois, d’un pinceau, d’une arme d’hast, d’une pertuisane, d’un épieu, d’un écouvillon ou d’un refouloir.
+5s		5	0
+3ster	Petit rongeur nocturne de silhouette massive et d’aspect robuste, pourvus d’abajoues.
+7s		7	0
+2n	Exclamation exprimant le cri sourd et guttural d’un homme fournissant un effort.
+3afi	Adepte du hanafisme.
+6s		6	0
+7me	Plus ancienne des quatre écoles sunnites du droit musulman, considérée comme la plus tolérante et présente surtout en Asie centrale (Inde, Turquie).
+9s		9	0
+6te	Relatif au hanafisme.
+8s		8	0
+4p	Grand vase en métal monté sur un pied et muni d’un couvercle, dont on se servait autrefois pour boire.
+5s		5	0
+3balisme	L’une des quatre écoles juridiques de droit musulman sunnite, la plus conservatrice et traditionaliste, mais aussi la plus souple dans le domaine des contrats …
+as		a	0
+7te	Relatif au hanbalisme.
+9s		9	0
+3cha		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Qui a une hanche saillante.
+6e		6	n
+7s		6	1
+5ement	Position ou mouvement mettant en évidence les hanches.
+as		a	0
+6nt		6r	v
+6r	Faire saillir une hanche.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3d	Handball.
+4ball	Sport collectif d’origine allemande où deux équipes de sept joueurs s’affrontent avec un ballon sur un terrain rectangulaire séparé en deux camps.
+8eur	Joueur de handball.
+bs		b	0
+ase	Femme qui joue au handball.
+cs		c	0
+8s		8	0
+4icap	Épreuve ou concours de vitesse, de force ou d’endurance dans lesquels on égalise les chances des concurrents d’âge ou de qualités différents, mais en leur attr…
+8a		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant	Qui provoque un handicap.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é	Atteint d’un handicap.
+9e	Personne handicapée, personne atteinte d’un handicap.
+as		9	1
+8ent		9r	v
+9r	Fixer dans un handicap les conditions de poids, de distance, de temps.
+aa		a	18
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8eur	Dans le milieu des courses de galop, personne chargée de déterminer le poids supplémentaire que devront porter les chevaux dans leurs futures épreuves en fonct…
+bs		b	0
+ase	Dans le milieu des courses de galop, personne chargée de déterminer le poids supplémentaire que devront porter les chevaux dans leurs futures épreuves en fonct…
+cs		c	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8s		8	0
+5sport	Sport adapté pour être pratiqué par des personnes handicapées, en loisir ou en sport de haut niveau.
+as		a	0
+3gar	Entrepôt ou remise ordinairement destinée à servir d’abri à des charrettes, à des récoltes, à des marchandises ou encore à des appareils d’aéronautique.
+6s		6	0
+4ûl	Variante orthographique de hangeul.
+3neton	Insecte coléoptère (Melolontha melolontha) d’un rouge brun, qui a des antennes courtes, frangées à leur extrémité, et qui paraît au printemps.
+8na		9er	x
+age	Chasse aux hannetons.
+cs		c	0
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Détruire les hannetons.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+8s		8	0
+3oïen	Relatif à Hanoï, à ses habitants.
+7ne		7	n
+9s		7	1
+7s		7	9
+0Hanoukka	Fête religieuse juive ayant lieu entre fin novembre et fin décembre (25 Kislev).
+0hanovrien	Relatif à Hanovre.
+9ne		9	n
+bs		9	1
+9s		9	9
+3s		3	0
+4art	En Normandie, hachette ou couperet dont on se sert pour découper la viande.
+7s		7	0
+4e	Au Moyen Âge, association des marchands d'une région, telle qu'il s'en forma dans les ports et les villes de l'Europe du Nord.
+4éate	Qui se rapporte aux villes de la hanse.
+8s		8	0
+7ique	Relatif aux villes qui faisaient partie de la hanse teutonique.
+bs		b	0
+4es		5	0
+3ta		4er	13
+5i		4er	m
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4avirus	Virus du genre Orthohantavirus la famille des Hantaviridae.
+4é	Qui est réputé être occupée par des esprits ou d’autres forces surnaturelles et où se produiraient des phénomènes surnaturels ou paranormaux.
+5e		5	n
+6s		5	1
+4ent		5r	15
+5r	Fréquenter quelqu’un que l’on suppose de mauvaise influence ou sur lequel on exerce une mauvaise influence.
+6a		6	18
+7i		6	1e
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	1c
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5r	25
+5z		5r	1b
+4iez		4er	d
+5ons		4er	j
+5se	Fréquentation, commerce familier chez quelqu’un.
+7s		7	0
+4ons		4er	r
+2oussa	Langue tchadique, parlée en Afrique occidentale, principalement au Niger et au Nigeria.
+2palémur	Genre de lémuridés de Madagascar, fauves à la face foncée, à queue longue et laineuse, herbivores.
+9s		9	0
+4x	Mot, spécialement pour les langues anciennes, dont on ne connaît qu’une seule occurrence dans le corpus d’une langue donnée, globalement ou à une époque donnée.
+3lobionte	Algue rouge qui possède une seule génération dans sa phase diploïde, c’est-à-dire à 2n chromosomes.
+bs		b	0
+5ïde	Qui ne possède qu’un exemplaire de chaque chromosome.
+8s		8	0
+7ie	Fait d'être haploïde.
+9s		9	0
+5logie	Amuïssement dans un mot d’un ou de plusieurs phonèmes identiques ou apparentés.
+as		a	0
+5nte	Organisme qui vit principalement dans une phase haploïde, c’est-à-dire à n chromosomes.
+8s		8	0
+5phase	Phase haploïde dans le cycle de vie d’un organisme.
+as		a	0
+3pa		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Demi-cercle de fer qu’on met au bout des essieux de carrosses pour empêcher que la roue ne les use à force de tourner.
+4ée	Celle qui est happée, saisie, prise.
+6s		6	0
+4ement	Action de happer quelque chose.
+9s		9	0
+5ning	Performance, représentation, événement ou situation à caractère artistique, présenté comme un événement hors normes, original, voire unique.
+9s		9	0
+6t		5r	15
+5r	Saisir avidement avec la gueule ce qu’on lui jette, en parlant du chien et des animaux en général.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3tène	Molécule antigénique de faible poids moléculaire.
+7s		7	0
+4ique	Relatif au toucher, aux interfaces, procurant cette sensation.
+8s		8	0
+4onomie	Discipline permettant d’entrer en contact avec un patient grâce au toucher, aux sensations tactiles et non par la parole.
+as		a	0
+9que	Relatif à l’haptonomie.
+cs		c	0
+2quebute	Ancêtre de l’arquebuse, datant du xvᵉ siècle, d'un poids élevé elle était servie par deux hommes.
+9s		9	0
+5née	Cheval ou jument de moyenne taille, que montaient autrefois les dames et qui allait ordinairement l’amble.
+8s		8	0
+5t	Sorte de charrette étroite, longue et sans ridelles, sur le devant de laquelle est un treuil et qui servait à voiturer du vin, des ballots de marchandises, etc.
+6s		6	0
+2rakiri	Variante orthographique de hara-kiri.
+8s		8	0
+4m	Interdit par le Coran.
+5s		5	0
+4ngua		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Discours fait à une assemblée, à un prince ou à quelque autre personne élevée en dignité.
+7ée		7er	19
+9s		7er	10
+7ent		8r	v
+8r	Faire une harangue à.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	1o
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7eur	Qui aime à haranguer.
+as		a	9
+9se	Celle qui harangue.
+bs		b	0
+8z		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4rais	Relatif à Harare ou à ses habitants.
+8e		8	n
+9s		8	1
+5éen	Relatif à Hararé, capitale du Zimbabwé, ou à ses habitants.
+8ne		8	n
+as		8	1
+8s		8	9
+4s	Écurie où logent étalons, juments et poulains.
+5sa		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Qui harasse, épuise, fatigue énormément.
+9e	Féminin singulier de harassant.
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Caisse à claire-voie, carrée, pour emballer le verre, mais aussi la porcelaine et d'autres matériaux.
+6ée	Poêlée de châtaignes.
+8s		7	1
+6ement	Action de harasser, état d’une personne harassée.
+bs		b	0
+7nt		7r	15
+7r	Fatiguer à l’excès, éreinter.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+3cela		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui harcèle, qui importune sans cesse.
+9e	Féminin singulier de harcelant.
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+4èle		4eler	1s
+4elée		6er	19
+8s		6er	1f
+4èlement	Tourments occasionnés par d’incessantes poursuites orchestrées, insignifiantes prises isolément.
+bs		b	0
+7nt		4eler	15
+4eler	Tourmenter une personne, ou un animal, en le poursuivant sans relâche, en le malmenant.
+4èlera		4eler	18
+9i		4eler	1e
+aent		4eler	1r
+as		4eler	i
+at		4eler	q
+9s		4eler	1l
+4elèrent		6er	1c
+4èlerez		4eler	1m
+8iez		4eler	4
+9ons		4eler	b
+8ons		4eler	1p
+at		4eler	1i
+4elés		6er	1h
+6eur	Qui harcèle.
+9s		9	9
+8se	Celle qui harcèle.
+as		8r	1
+7z		7r	1b
+6iez		6er	1v
+7ons		6er	j
+6le		6er	20
+8nt		6er	1x
+8ra		6er	18
+ai		6er	1e
+bent		6er	1r
+bs		6er	1o
+bt		6er	1d
+as		6er	1l
+9ez		6er	1m
+9iez		6er	22
+aons		6er	2a
+9ons		6er	1p
+bt		6er	1i
+8s		6er	35
+6ons		6er	r
+3d	Pornographique.
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4core	Excessivement explicite, violent ou sans inhibition.
+8s		8	0
+4e	Troupeau de bêtes, en particulier de ruminants sauvages.
+4ée	Rupture de piste que fait le gibier dans les taillis.
+6s		6	0
+4ent		5r	15
+5r	Attacher des chiens ensemble par un lien commun.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s	Effets personnels, vêtements qu’on emporte lors d’un voyage.
+5ur	Acteur de films pornographiques.
+7s		7	0
+6se	Actrice de films pornographiques.
+8s		8	0
+5z		5r	u
+4i	Qui ose beaucoup.
+5e		5	n
+6s		5	1
+7se	Sentiment ou qualité de celui ou de celle qui est hardi.
+9s		9	0
+6z		4er	d
+5ment	Avec hardiesse.
+5ons		4er	j
+5s		5	9
+4ons		4er	r
+4s		4	0
+4ware	Matériel électronique.
+8s		8	0
+3elde	Nom vernaculaire de certaines espèces d’oiseaux palmipèdes de la famille des anatidés, canards plongeurs.
+7s		7	0
+4m	Gynécée chez les musulmans.
+5s		5	0
+4ng	Poisson de la famille des clupéidés d’à peu près 25 cm de long, au corps fin et pourvu d’une petite bouche, au corps bleuté sur le dessus et argenté en-dessous…
+6aison	Pêche du hareng.
+bs		b	0
+6ère	Vendeuse de harengs et autres poissons au détail.
+9s		9	0
+6s		6	0
+6uet	Synonyme de sprat.
+9s		9	0
+8ux	Bateau spécialisé dans la pêche du hareng.
+7ier	Bateau spécialisé dans la pêche du hareng.
+8ère	Palis pour prendre des harengs.
+bs		b	0
+8ers		a	0
+4t	Chat domestique sans maître, ou issu de sa descendance, retourné à l’état sauvage.
+5s		5	0
+3fang	Nom employé soit de façon générique (i.e.
+7s		7	0
+3gne	Ténacité coléreuse.
+6s		6	0
+6use		7x	n
+9ment	D'une manière hargneuse.
+9s		7x	1
+7x	Qui dénote la hargne, qui est d’humeur chagrine, agressive.
+3icot	Ragoût de mouton.
+7s		7	0
+4delle	Mauvais cheval maigre et efflanqué.
+9s		9	0
+4ra	Sorte de soupe, typique de la cuisine marocaine.
+6s		6	0
+4ssa	Assaisonnement très fort originaire de la Tunisie et à base de purée de piments rouges.
+7s		7	0
+3ka	Expédition punitive contre des insurgés.
+5s		5	0
+4i	Relatif aux harkis.
+5e		5	n
+6s		5	1
+5s		5	0
+3le	Nom vernaculaire de plusieurs canards piscivores à l'extrémité du bec crochu du genre Mergus.
+5s		5	0
+3mattan	Alizé hivernal, froid, sec, poussiéreux, soufflant en Afrique de l’Ouest du Sahara vers le golfe de Guinée, entre la fin novembre et le milieu du mois de mars.
+9s		9	0
+4onica	Instrument de musique composé de cloches ou de verres, de différents timbres, qu’on fait résonner.
+9s		9	0
+8iste	Joueur d’harmonica.
+cs		c	0
+8orde	Sorte de piano à queue posé verticalement et dont les cordes métalliques étaient frottées par une roue actionnée par les pieds.
+cs		c	0
+7e	Concours et accord de divers sons.
+8s		8	0
+8use		9x	n
+bment	Avec harmonie, d’une manière harmonieuse.
+bs		9x	1
+9x	Qui a de l’harmonie.
+7que	Qui a rapport à l’harmonie.
+ament	Suivant les lois de l’harmonie, ou suivant les rapports harmoniques des sons.
+as		a	3f
+7sa		8er	x
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant	Qui harmonise.
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action d'harmoniser ou résultat de cette action.
+ds		d	0
+8e		9r	1s
+8ée		8er	19
+as		8er	10
+8ent		9r	15
+9r	Mettre en harmonie.
+aa		a	18
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	1c
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	1h
+8ez		9r	1b
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8te	Musicien ou musicienne qui maîtrise les règles de l’harmonie.
+as		a	0
+7um	Petit orgue où les tuyaux sont remplacés par des anches libres qui répondent aux touches d’un clavier.
+9s		9	0
+3nacha		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e	Féminin singulier de harnaché.
+9s	Féminin pluriel de harnaché.
+7ement	Action de harnacher.
+cs		c	0
+8nt		8r	v
+8r	Mettre le harnais ou les harnais à un cheval de trait.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és	Masculin pluriel de harnaché.
+7eur	Ouvrier ou artisan qui travaille pour les selliers, qui fait des harnais.
+as		a	0
+9se	Ouvrière ou artisane qui travaille pour les selliers, qui fait des harnais.
+bs		b	0
+8z		8r	u
+7iez		7er	1v
+8ons		7er	j
+7ons		7er	r
+5is	Ensemble des pièces composant l'équipement principal d'un animal de selle, de trait ou de bât.
+4ois	Variante de harnais.
+3o	Cri de victime pour attirer l’attention, appel au secours.
+3pa		4er	13
+5gon	Avare.
+8s		8	0
+5i		4er	m
+6ent		4er	w
+6l	Troupeau d'animaux sauvages
+7le	Harde composée exclusivement de biches et de jeunes cerfs.
+9r	S’en prendre à, se quereller, insulter, provoquer.
+8és		8er	12
+7s		7	0
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Cordophone à cordes pincées, que l'on tient debout, reposant par terre, garni de cordes verticales de longueur décroissante, que l’on pince avec les doigts.
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Jouer de la harpe.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4ie	Monstre fabuleux, qu’on représentait avec des ailes, un visage de femme, un corps de vautour et des ongles crochus, et qu’on imaginait être extrêmement vorace.
+6s		6	0
+6z		4er	d
+5on	Autre et ancienne graphie de arpion.
+7s		7	0
+5ste	Musicien ou musicienne qui joue de la harpe.
+8s		8	0
+4oise	Pièce de fer recourbée qui termine le harpon.
+8s		8	0
+5n	Sorte de dard dont la pointe ou harpoise est accompagnée de crocs et dont on se sert spécialement pour la pêche des cétacés.
+6na		7er	13
+8ge	Pêche au harpon ou à la fouane, action de harponner.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e		8r	1s
+7ée		7er	19
+9s		7er	10
+7ement	pêche au harpon ou à la fouane, action de harponner.
+cs		c	0
+8nt		8r	15
+8r	Darder ou accrocher avec le harpon.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7eur	Celui qui lance le harpon.
+as		a	0
+9se	Celle qui lance le harpon.
+bs		b	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+3raga	Émigrant tentant de quitter son pays pour rejoindre clandestinement l’Europe par des moyens risqués.
+7s		7	0
+4ier	Race de chien courant utilisé pour chasser le lièvre, originaire de Grande-Bretagne, à queue de taille moyenne et à poil court.
+7s		7	0
+5sme	Doctrine chrétienne protestante de William Wade Harris.
+8s		8	0
+6te	Relatif au harrisme.
+8s		8	0
+3t	Espèce de lien fait d’osier, ou d’autre bois souple, dont on lie les fagots, les bourrées, etc.
+4s		4	0
+3uspice	Devin, d’origine étrusque, qui faisait profession d’annoncer l’avenir, soit par l’observation de la foudre, soit par l’inspection des entrailles d’animaux sacr…
+9s		9	0
+2sard	Cause indiscernable, étrangère à toute intention humaine.
+6a		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é	En parlant de la couleur des cheveux, de la barbe, qui tire sur le roux.
+7e		7	n
+8s		6er	10
+6ent		7r	15
+7r	Risquer ; exposer à la fortune.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	1o
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6euse	Celle qui hasarde.
+ament	D’une manière hasardeuse, avec péril.
+as		8x	1
+8x	Qui est lié au hasard, qui relève de l’aléatoire, qui est soumis aux imprévus, dont le résultat est incertain, risqué.
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+3ch	Haschich.
+5ich	Chanvre indien.
+8s		8	0
+6sch	Variante orthographique de haschich.
+9in	Consommateur de haschisch.
+bs		b	0
+3e	Femelle du lièvre.
+4s		4	0
+3htag	Mot-clé utilisé sur les réseaux sociaux.
+7s		7	0
+3seltois	Relatif à Hasselt en Belgique.
+ae		a	n
+bs		a	1
+4id	Groupe juif refusant l’hellénisation imposée à la Judée par Antiochus IV Épiphane.
+6im	Qui est partisan du hassidisme.
+7que	Piétiste, pieux, en parlant des juifs.
+as		a	0
+7sme	Judaïsme hassidique, piétisme juif.
+as		a	0
+6s		6	0
+5um	Élément chimique de numéro atomique 108 et de symbole Hs appartenant à la série chimique des métaux de transition.
+7s		7	0
+3t	Haste.
+4aire	Soldat romain qui portait un javelot.
+8s		8	0
+4e	Longue lance que portaient originairement les hastaires.
+4ée		5	n
+6s		5	1
+4es		5	0
+4s		4	0
+2ta	Variété de la race de chien shikoku.
+1âtai		3er	1j
+5ent		3er	3k
+5s		3er	1g
+5t		3er	14
+3âmes		3er	1w
+3ant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	1q
+5es		3er	2
+3e	Extrême promptitude, vivacité, rapidité avec laquelle on fait quelque chose.
+1atée	Barre coudée et contre-coudée d’équerre en forme de bâton rompu dans sa longueur ou à une de ses extrémités.
+1âtées		3er	10
+3elet	Broche utilisée autrefois pour la cuisson de petites pièces de viande dans la cheminée.
+7s		7	0
+7te	Morceau que l’on fait cuire à la brochette, au hâtelet
+9s		9	0
+5le	Variante de hâtelette.
+7s		7	0
+4nt		4r	15
+4r	Faire avancer vite.
+5a		5	18
+6i		5	g
+7ent		5	1r
+7s		5	i
+7t		5	1d
+6s		5	7
+5eau	Tranche de foie de porc, poivrée, salée et grillée.
+8x		8	0
+3èrent		3er	1c
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+3és		3er	1h
+3ez		4r	1b
+3ier	Sorte de grand chenet de cuisine, qui a plusieurs crochets de fer, placés les uns au-dessus des autres, sur lesquels on appuie les broches pour les faire tourn…
+6s		6	0
+5z		3er	d
+4f	Qui devance le temps, en parlant de ce qui est susceptible d’accroissement.
+5s		5	9
+4ons		3er	1t
+4ve		4f	n
+1ativeau	Fruit ou plante hâtive.
+8x		8	0
+1âtivement	Avant le temps ordinaire (en parlant de la culture de fleurs ou de fruits).
+6s		4f	1
+3ons		3er	1n
+3ure	Plaque de fer triangulaire, qui fait saillie sur une serrure.
+6s		6	0
+1auban	Gros cordage ou fil d’acier qui va du bord du navire à la tête des mâts ou des hunes, où il est fixé avec la raideur convenable, et qui sert principalement à s…
+6a		6er	x
+7ge	Pose de haubans pour immobiliser un arbre, un mât, ou toutes autres structures.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	19
+8s		6er	10
+6ent		7r	v
+7r	Assujettir un mât, une chèvre, etc.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+4ergeon	Petit haubert, armure de maille de chevalier au Moyen Âge.
+as		a	0
+6t	Sorte de cuirasse ancienne ou de cotte de mailles.
+7s		7	0
+3ssa		5er	13
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	1q
+7es		5er	2
+5e	Action de hausser.
+5ée		5er	19
+7s		5er	1f
+5ement	Action de hausser quelque chose.
+as		a	0
+6nt		6r	15
+6r	Rendre plus haut, mettre dans une situation plus haute, élever.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	1d
+8s		7	7
+5èrent		5er	1c
+5erez		7	5
+7iez		7	22
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6z		6r	1b
+5ier	Qui concerne un marché boursier à la hausse.
+6ère	Variante de aussière, avec altération d'après hausser.
+9s		9	0
+6ers		8	9
+7z		5er	d
+6ons		5er	j
+5mannien	Relatif à la vie et l’œuvre urbanistique du préfet de la Seine, Georges Eugène Haussmann.
+cne		c	n
+es		c	1
+cs		c	0
+5ons		5er	1n
+3t	De grande hauteur (dimension verticale).
+4ain	Qui affecte la fierté et le dédain pour mieux marquer la distance entre soi et les autres.
+7e		7	n
+8ment	D’une manière hautaine.
+8s		7	1
+7s		7	9
+4bois	Instrument à vent, de perce conique et à anche double, de sonorités très variées (puissant et sonore ou doux et charmeur, clair et nasillard ou plein de rondeu…
+6ïste	Celui, celle qui joue du hautbois.
+as		a	0
+4e	Haute société ; classe sociale supérieure.
+5contre	Variante orthographique de haute-contre
+bs		b	0
+5ment	D’une manière nette et franche.
+5rivien	Relatif au Hauterivien.
+0Hauteriviens		b	0
+0hautes	Feux de route.
+6se	Titre qu’on donnait au sultan.
+8s		8	0
+5ur	Dimension d’un corps considéré de sa base à son sommet.
+7s		7	0
+4fond	Variante orthographique de haut-fond.
+8s		8	3a
+4in	Variante de hautain.
+6s		6	0
+4parleur	Variante orthographique de haut-parleur
+bs		b	0
+4s		4	9
+4urier	Relatif à la haute mer.
+7ère		7er	n
+as		7er	1
+7ers		9	9
+2üyne	Espèce minérale du groupe des silicates, sous-groupe des tectosilicates, famille des feldspathoïdes, de formule Na₄Ca₂Al₆Si₆O₂₂S₂(SO₄).
+2uynes		6	3a
+2va		3er	x
+4ge	Action de pousser ou traîner une charge.
+6s		6	0
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3anais	Relatif à La Havane, à sa culture, ses habitants.
+8e	Femelle du chien dit havanais ou bichon havanais.
+9s		8	1
+5e	Cigare cubain.
+6s		6	0
+5t		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Petite éminence qui, sur le panneton d’une clé bénarde, empêche celle-ci de traverser la serrure.
+3ée		3er	11
+5s		3er	10
+3eneau	Sorte de filet pour prendre le poisson plat.
+8x		8	0
+6t	Synonyme de haveneau.
+7s		7	0
+5t		4r	v
+4r	Desserrer la couche en ouvrant, parallèlement à son plan, une entaille d'une certaine profondeur dans une mine.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5on	Folle avoine.
+7s		7	0
+7t		5	f
+4s		4	0
+4ur	Ouvrier qui fait le havage pendant la nuit, quand cette opération n'est pas faite pendant le jour, en même temps que l'abatage proprement dit, par l'ouvrier à …
+6s		6	0
+5se	Ouvrière qui fait le havage.
+7s		7	0
+4z		4r	u
+3i		4r	1k
+4e		4r	11
+5s		4r	10
+5z		3er	d
+3îmes		3ir	3
+3ions		3er	j
+4r	Se dit, en parlant de la viande, lorsqu’on la fait rôtir à un grand feu, qui la dessèche et la brûle par-dessus, sans qu’elle soit cuite en dedans.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+5ent		5	o
+6z		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4r	27
+5saient		4r	w
+8s		4r	t
+8t		4r	y
+7nt		4r	z
+6e		4r	2h
+7nt		4r	v
+7s		4r	24
+7z		4r	u
+6iez		4r	d
+7ons		4r	j
+6ons		4r	r
+4t		4r	2z
+3îtes		3ir	2
+3ons		3er	r
+3rais	Relatif à la ville du Havre, commune française située dans le département de la Seine-Maritime.
+7e		7	n
+8s		7	1
+4e	ou Port de mer, naturel ou artificiel, fermé et sûr.
+5s		5	0
+6ac	Sac à dos dans lequel un fantassin enfermait les effets à son usage.
+8s		8	0
+4it	Ensemble des fragments de matériaux arrachés par une haveuse.
+6s		6	0
+2waïen	Relatif à Hawaï, ses habitants, ou sa langue.
+7ne	Pizza garnie de mozzarella, sauce tomate, jambon, ananas.
+9s		7	1
+7s		7	9
+4iien	Variante orthographique de hawaïen.
+8ne		8	n
+as		8	1
+8s		8	9
+2yon	Planche de bois amovible fermant l’arrière d’une charrette.
+5s		5	0
+2zan	Chantre de synagogue.
+5s		5	0
+4ra	Relatif au peuple des Hazaras, à leur culture, à leurs coutumes, à leur territoire, à leur langue.
+6s		6	0

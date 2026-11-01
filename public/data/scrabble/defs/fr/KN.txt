@@ -1,52 +1,52 @@
-knack	Saucisse fumée typique de l’Alsace, à base de viande de porc, au gout fumé.
-knacks		knack	0
-knautie	Non usuel de certaines plantes du genre Knautia.
-knauties		knautie	0
-knepfle	Sorte de pâte alimentaire (ou simplement pâte) alsacienne.
-knepfles		knepfle	0
-Knesset	Parlement monocaméral israélien situé à Jérusalem.
-knicker	Knickers.
-knickerbocker	Pantalon large et court serré au-dessous du genou, utilisé pour le golf, le ski, l’escalade.
-knickerbockers		knickerbocker	0
-knickers	Sorte de bermuda descendant en-dessous du genou et s’attachant par une boutonnière
-knockouta		knockouter	39
-knockoutai		knockouter	55
-knockoutaient		knockouter	42
-knockoutais		knockouter	52
-knockoutait		knockouter	40
-knockoutâmes		knockouter	68
-knockoutant		knockouter	43
-knockoutas		knockouter	83
-knockoutasse		knockouter	81
-knockoutassent		knockouter	78
-knockoutasses		knockouter	87
-knockoutassiez		knockouter	88
-knockoutassions		knockouter	90
-knockoutât		knockouter	62
-knockoutâtes		knockouter	84
-knockouté		knockouter	56
-knockoutée		knockouter	45
-knockoutées		knockouter	51
-knockoutent		knockouter	41
-knockouter	Mettre KO.
-knockoutera		knockouter	44
-knockouterai		knockouter	50
-knockouteraient		knockouter	63
-knockouterais		knockouter	60
-knockouterait		knockouter	49
-knockouteras		knockouter	57
-knockoutèrent		knockouter	48
-knockouterez		knockouter	58
-knockouteriez		knockouter	74
-knockouterions		knockouter	82
-knockouterons		knockouter	61
-knockouteront		knockouter	54
-knockoutés		knockouter	53
-knockoutez		knockouter	47
-knockoutiez		knockouter	67
-knockoutions		knockouter	65
-knockoutons		knockouter	59
-knödel	Type de quenelle, spécialité d’Autriche ou du Luxembourg, et des régions voisines.
-knödels		knödel	0
-knout	Supplice du fouet en Russie tsariste.
-knouts		knout	0
+0knack	Saucisse fumée typique de l’Alsace, à base de viande de porc, au gout fumé.
+5s		5	0
+3utie	Non usuel de certaines plantes du genre Knautia.
+7s		7	0
+2epfle	Sorte de pâte alimentaire (ou simplement pâte) alsacienne.
+7s		7	0
+0Knesset	Parlement monocaméral israélien situé à Jérusalem.
+0knicker	Knickers.
+7bocker	Pantalon large et court serré au-dessous du genou, utilisé pour le golf, le ski, l’escalade.
+ds		d	0
+7s	Sorte de bermuda descendant en-dessous du genou et s’attachant par une boutonnière
+2ockouta		8er	13
+9i		8er	1j
+aent		8er	16
+as		8er	1g
+at		8er	14
+8âmes		8er	1w
+8ant		8er	17
+9s		8er	2b
+ase		8er	29
+cnt		8er	26
+cs		8er	2f
+biez		8er	2g
+cons		8er	2i
+8ât		8er	1q
+aes		8er	2c
+8é		8er	1k
+9e		8er	19
+as		8er	1f
+8ent		9r	15
+9r	Mettre KO.
+aa		a	18
+bi		a	1e
+cent		a	1r
+cs		a	1o
+ct		a	1d
+bs		a	1l
+8èrent		8er	1c
+8erez		a	1m
+aiez		a	22
+bons		a	2a
+aons		a	1p
+ct		a	1i
+8és		8er	1h
+8ez		9r	1b
+8iez		8er	1v
+9ons		8er	1t
+8ons		8er	1n
+2ödel	Type de quenelle, spécialité d’Autriche ou du Luxembourg, et des régions voisines.
+6s		6	0
+2out	Supplice du fouet en Russie tsariste.
+5s		5	0

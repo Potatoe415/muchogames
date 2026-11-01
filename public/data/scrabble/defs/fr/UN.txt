@@ -1,340 +1,340 @@
-un	Marque l’unité, le fait qu’une personne ou une chose est seule, unique en son espèce.
-unaire	Qui n’a qu’un seul opérande.
-unaires		unaire	0
-unanime	Qui réunit tous les suffrages, qui exprime un commun accord.
-unanimement	D’une commune voix, d’un commun sentiment.
-unanimes		unanime	0
-unanimisme	Doctrine littéraire conçue au début du XXᵉ siècle par Jules Romains, selon laquelle l’écrivain doit exprimer la vie collective des groupes humains et ne dépein…
-unanimismes		unanimisme	0
-unanimiste	Relatif à l’unanimisme.
-unanimistes		unanimiste	0
-unanimité	Conformité de sentiments, accord complet de suffrages entre plusieurs personnes.
-unanimités		unanimité	0
-unau	Paresseux didactyle, mammifère de la famille des édentés, un des deux genres de paresseux.
-unaus		unau	0
-unaux		unau	0
-unciforme	Qui est en forme de crochet.
-unciformes		unciforme	115
-unciné	Qualifie un organe (animal ou végétal) en forme de crochet, ou terminé par un crochet.
-uncinée		unciné	23
-uncinées		unciné	1
-uncinés		unciné	9
-underground	Milieu clandestin.
-une	Chose portant le numéro 1.
-unes	Féminin pluriel de un.
-unetelle	Féminin singulier d'untel.
-unguéal	Relatif à l’ongle.
-unguéale		unguéal	23
-unguéales		unguéal	1
-unguéaux		unguéal	9
-unguifère	Qui porte l’ongle.
-unguifères		unguifère	0
-unguis	Le plus petit des os de la face, situé à la paroi interne de l’orbite.
-uni	Université.
-uniate	Relatif aux Églises catholiques orientales, appartenant à ces églises.
-uniates		uniate	0
-uniatisme	Doctrine et pratique ecclésiologiques d'union d'Églises orientales à l'Église catholique, dans le respect de leurs rites et traditions.
-uniatismes		uniatisme	0
-uniaxe	Qui a un seul axe.
-uniaxes		uniaxe	0
-unicaule	Qui n’a qu’une seule tige.
-unicellulaire	Qui n’est constitué que d’une seule cellule.
-unicellulaires		unicellulaire	118
-unicité	Qualité de ce qui est unique.
-unicités		unicité	0
-unicode	Caractère Unicode, notamment de nature graphique, tel qu’un emoji.
-unicodes		unicode	0
-unicolore	Qui n’a qu’une couleur.
-unicolores		unicolore	0
-unicorne	Qui n’a qu’une corne.
-unidimensionnel	Relatif à une dimension, qui se produit dans une dimension seulement.
-unidirectionnel	Qui n’exerce une action que dans un sens, dans une direction.
-unidose	Conditionnement sous la forme d’une dose à usage unique (comme un sachet ou un flacon), notamment pour les médicaments et les cosmétiques.
-unidoses		unidose	0
-unie		uni	23
-unième	Adjectif ordinal de -un des mots composés numéraux.
-unièmement	Adverbe ordinal qui s'emploie, comme le mot unième, avec les nombres vingt, trente, etc.
-unièmes		unième	0
-unies		uni	1
-unif	Université.
-unifamilial	Relatif à une famille.
-unifamiliale		unifamilial	23
-unifamiliales		unifamilial	1
-unifamiliaux		unifamilial	9
-unifia		unifier	33
-unifiai		unifier	22
-unifiaient		unifier	32
-unifiais		unifier	29
-unifiait		unifier	34
-unifiâmes		unifier	3
-unifiant		unifier	35
-unifias		unifier	12
-unifiasse		unifier	6
-unifiassent		unifier	17
-unifiasses		unifier	8
-unifiassiez		unifier	14
-unifiassions		unifier	25
-unifiât		unifier	20
-unifiâtes		unifier	2
-unificateur	Qui unifie.
-unificateurs		unificateur	9
-unification	Action d’unifier ou résultat de cette action.
-unifications		unification	0
-unificatrice	Celle qui unit.
-unificatrices		unificateur	1
-unifié		unifier	56
-unifiée		unifier	45
-unifiées		unifier	51
-unifient		unifier	41
-unifier	Amener à l’unité, faire un tout de diverses parties, rendre uniforme.
-unifiera		unifier	21
-unifierai		unifier	16
-unifieraient		unifier	28
-unifierais		unifier	18
-unifierait		unifier	26
-unifieras		unifier	7
-unifièrent		unifier	48
-unifierez		unifier	5
-unifieriez		unifier	4
-unifierions		unifier	11
-unifierons		unifier	10
-unifieront		unifier	15
-unifiés		unifier	53
-unifiez		unifier	47
-unifiiez		unifier	13
-unifiions		unifier	19
-unifilaire	Qui est composé d’un seul fil.
-unifilaires		unifilaire	0
-unifions		unifier	27
-uniflore	Qui ne porte qu’une fleur.
-uniflores		uniflore	0
-unifocal	Définition manquante ou à compléter.
-unifocale		unifocal	23
-unifocales		unifocal	1
-unifocaux		unifocal	9
-unifolié	Monophylle, à une seule feuille.
-unifoliée		unifolié	23
-unifoliées		unifolié	1
-unifoliés		unifolié	9
-uniforme	Qui présente partout et toujours la même forme, la même unicité, la même constance, la même manière d’être.
-uniformément	D’une manière uniforme.
-uniformes		uniforme	0
-uniformisa		uniformiser	33
-uniformisai		uniformiser	22
-uniformisaient		uniformiser	32
-uniformisais		uniformiser	29
-uniformisait		uniformiser	40
-uniformisâmes		uniformiser	3
-uniformisant	Qui uniformise, qui rend uniforme.
-uniformisas		uniformiser	12
-uniformisasse		uniformiser	6
-uniformisassent		uniformiser	17
-uniformisasses		uniformiser	8
-uniformisassiez		uniformiser	14
-uniformisât		uniformiser	20
-uniformisâtes		uniformiser	2
-uniformisation	Action d’uniformiser.
-uniformisations		uniformisation	0
-uniformise		uniformiser	64
-uniformisée		uniformiser	45
-uniformisées		uniformiser	36
-uniformisent		uniformiser	31
-uniformiser	Rendre uniforme.
-uniformisera		uniformiser	21
-uniformiserai		uniformiser	16
-uniformiserais		uniformiser	18
-uniformiserait		uniformiser	26
-uniformiseras		uniformiser	7
-uniformisèrent		uniformiser	24
-uniformiserez		uniformiser	5
-uniformiseriez		uniformiser	4
-uniformiserions		uniformiser	11
-uniformiserons		uniformiser	10
-uniformiseront		uniformiser	15
-uniformisés		uniformiser	53
-uniformisez		uniformiser	30
-uniformisiez		uniformiser	13
-uniformisions		uniformiser	19
-uniformisons		uniformiser	27
-uniformité	Caractère de ce qui est uniforme.
-uniformités		uniformité	0
-unifs		unif	0
-unijambiste	Personne qui n'est dotée que d'une seule jambe.
-unijambistes		unijambiste	0
-unilatéral	Relatif à un seul côté.
-unilatérale		unilatéral	23
-unilatéralement	D’une manière unilatérale.
-unilatérales		unilatéral	1
-unilatéralisme	Position unilatérale, doctrine qui ne prend en compte qu’un seul côté de la situation.
-unilatéralismes		unilatéralisme	0
-unilatéraliste	Relatif à l’unilatéralisme.
-unilatéralistes		unilatéraliste	0
-unilatéraux		unilatéral	9
-unilinéaire	Qui est constitué d’une seule ligne.
-unilinéaires		unilinéaire	0
-unilingue	Qui ne parle, qui n’emploie qu’une seule langue.
-unilingues		unilingue	0
-unilinguisme	Fait d’être unilingue, de ne parler ou de n’utiliser qu’une seule langue.
-unilinguismes		unilinguisme	0
-unilobé	Qui n’a qu’un seul lobe.
-unilobée		unilobé	23
-unilobées		unilobé	1
-unilobés		unilobé	9
-uniloculaire	Qui n'a qu'une seule loge.
-uniloculaires		uniloculaire	0
-uniment	Également et toujours de même sorte.
-unîmes		unir	3
-unimodal	Qui n'a ou qui ne fonctionne que sur un seul mode.
-unimodale		unimodal	23
-unimodales		unimodal	1
-unimodaux		unimodal	9
-uninominal	Qui a rapport à un seul nom, qui porte sur un seul nom.
-uninominale		uninominal	23
-uninominales		uninominal	1
-uninominaux		uninominal	9
-union	Opérateur de la théorie des ensembles, qui regroupe au sein d'un même ensemble les éléments de deux ensembles.
-unionisme	Type de syndicalisme de salariés propre au Royaume-Uni.
-unionismes		unionisme	0
-unioniste	Relatif à l'Union nationale (UN).
-unionistes		unioniste	0
-unions		union	0
-unipare	Se dit des femelles qui, normalement, ne font qu’un petit à chaque portée.
-unipares		unipare	0
-unipersonnel	Se dit des verbes qui n’ont qu’une personne, impersonnel.
-unipersonnelle		unipersonnel	23
-unipersonnelles		unipersonnel	1
-unipersonnels		unipersonnel	9
-unipolaire	Qui a un seul pôle.
-unipolaires		unipolaire	0
-unipotent	Se dit d’un élément r d’un anneau tel que r-1 est nilpotent.
-unipotente		unipotent	23
-unipotentes		unipotent	1
-unipotents		unipotent	9
-Uniprix	Ancienne chaîne française de magasins populaires.
-unique	Qui est seul en son genre.
-uniquement	Exclusivement à tout autre.
-uniques		unique	0
-unir	Joindre deux ou plusieurs choses ensemble.
-unira		unir	44
-unirai		unir	50
-uniraient		unir	63
-unirais		unir	18
-unirait		unir	49
-uniramé	Qualifie ce qui ne comporte qu'une seule partie, n’a qu’une branche ou un seul rameau.
-uniramée		uniramé	23
-uniramées		uniramé	1
-uniramés		uniramé	9
-uniras		unir	7
-unirent		unir	48
-unirez		unir	58
-uniriez		unir	4
-unirions		unir	82
-unirons		unir	61
-uniront		unir	54
-unis		uni	9
-unisexé	Unisexué.
-unisexes		unisexe	0
-unisexualité	Attirance affective, sentimentale et sexuelle envers les personnes de même sexe.
-unisexualités		unisexualité	0
-unisexué	Synonyme de unisexuel, unisexé.
-unisexuée		unisexuer	45
-unisexuées		unisexuer	51
-unisexuel	Qualifie les fleurs qui ne réunissent pas les deux sexes et qui n’ont que des étamines ou que des pistils.
-unisexuelle	Homosexuelle.
-unisexuelles		unisexuel	1
-unisexuels		unisexuel	9
-unisexuer	Donner un caractère unisexe à.
-unisexués		unisexuer	53
-unissaient		unir	75
-unissais		unir	86
-unissait		unir	71
-unissant	Destiné à unir.
-unisse		unir	85
-unissent		unir	69
-unisses		unir	98
-unissez		unir	70
-unissiez		unir	100
-unissions		unir	94
-unisson	Son unique chanté par deux ou plusieurs voix, joué par deux ou plusieurs instruments.
-unissons		unir	73
-unît		unir	62
-unitaire	Relatif au nombre un, à l'unité.
-unitaires		unitaire	0
-unitarien	Apparenté à l'unitarisme.
-unitarienne	Féminin singulier de unitarien.
-unitariennes	Féminin pluriel de unitarien.
-unitariens	Masculin pluriel de unitarien.
-unitarisme	Doctrine des unitaires.
-unitarismes		unitarisme	0
-unité	Élément singulier, qui a le nombre un.
-unités		unité	0
-unitif	Qui unit, qui est propre à unir.
-unitifs		unitif	9
-unitive		unitif	23
-unitives		unitif	1
-univ	Université (forme utilisée surtout en Belgique).
-univalence	Valence d'un corps chimique dont l'atome ne peut former qu'une seule liaison chimique.
-univalences		univalence	0
-univalent	Se dit d’un élément chimique qui accepte qu’une seule liaison chimique.
-univalente		univalent	23
-univalentes		univalent	1
-univalents		univalent	9
-univalve	Qualifie les mollusques dont la coquille n’est composée que d’une pièce.
-univers	Le monde entier, l’ensemble de tout ce qui existe.
-universalisa		universaliser	33
-universalisai		universaliser	22
-universalisais		universaliser	52
-universalisait		universaliser	34
-universalisâmes		universaliser	3
-universalisant	Qui universalise, qui rend universel.
-universalisas		universaliser	12
-universalisasse		universaliser	6
-universalisât		universaliser	20
-universalisâtes		universaliser	2
-universalise		universaliser	64
-universalisée		universaliser	37
-universalisées		universaliser	36
-universalisent		universaliser	31
-universaliser	Rendre universel.
-universalisera		universaliser	21
-universaliserai		universaliser	16
-universaliseras		universaliser	7
-universaliserez		universaliser	5
-universalisés		universaliser	38
-universalisez		universaliser	30
-universalisiez		universaliser	13
-universalisions		universaliser	19
-universalisme	Système de pensée de ceux qui n’admet pour principe, pour autorité, que l’assentiment universel.
-universalismes		universalisme	0
-universalisons		universaliser	27
-universaliste	Qui embrasse tout le monde.
-universalistes		universaliste	0
-universalité	Ensemble, totalité, ce qui embrasse les différentes espèces.
-universalités		universalité	0
-universaux	Certaines idées générales, qui étaient le genre, la différence, l’espèce, le propre et l’accident.
-universel	Dont la portée est générale, qui s’étend à tout, à tous ou partout.
-universelle		universel	23
-universellement	D’une manière universelle.
-universelles		universel	1
-universels		universel	9
-Universiade	Compétition internationale, organisée sur le modèle des Jeux olympiques, mais réservée au sport universitaire.
-Universiades		Universiade	0
-universitaire	De l’université, voire par extension de l’enseignement supérieur.
-universitaires		universitaire	123
-université	Commune, communauté, corps, compagnie, collège, corporation, assemblée.
-universités		université	0
-univitellin	Qui concerne les jumeaux homozygotes.
-univitelline		univitellin	23
-univitellines		univitellin	1
-univitellins		univitellin	9
-univocité	Qualité de ce qui est univoque, c'est-à-dire qui se comprend d'emblée, sans interprétation nécessaire.
-univocités		univocité	0
-univoltin	Qualifie une espèce d’insecte, en particulier le ver à soie, qui ne fait qu’une génération par an.
-univoltine		univoltin	23
-univoltines		univoltin	1
-univoltins		univoltin	9
-univoque	Qualifie un terme qui conserve le même sens dans des emplois différents.
-univoques		univoque	0
-univs		univ	0
-uns	Pluriel de un ; chacun.
-untel	Variante orthographique de un tel.
+0un	Marque l’unité, le fait qu’une personne ou une chose est seule, unique en son espèce.
+2aire	Qui n’a qu’un seul opérande.
+6s		6	0
+3nime	Qui réunit tous les suffrages, qui exprime un commun accord.
+7ment	D’une commune voix, d’un commun sentiment.
+7s		7	0
+6isme	Doctrine littéraire conçue au début du XXᵉ siècle par Jules Romains, selon laquelle l’écrivain doit exprimer la vie collective des groupes humains et ne dépein…
+as		a	0
+8te	Relatif à l’unanimisme.
+as		a	0
+7té	Conformité de sentiments, accord complet de suffrages entre plusieurs personnes.
+9s		9	0
+3u	Paresseux didactyle, mammifère de la famille des édentés, un des deux genres de paresseux.
+4s		4	0
+4x		4	0
+2ciforme	Qui est en forme de crochet.
+9s		9	37
+4né	Qualifie un organe (animal ou végétal) en forme de crochet, ou terminé par un crochet.
+6e		6	n
+7s		6	1
+6s		6	9
+2derground	Milieu clandestin.
+2e	Chose portant le numéro 1.
+3s	Féminin pluriel de un.
+3telle	Féminin singulier d'untel.
+2guéal	Relatif à l’ongle.
+7e		7	n
+8s		7	1
+6ux		6l	9
+4ifère	Qui porte l’ongle.
+9s		9	0
+5s	Le plus petit des os de la face, situé à la paroi interne de l’orbite.
+2i	Université.
+3ate	Relatif aux Églises catholiques orientales, appartenant à ces églises.
+6s		6	0
+5isme	Doctrine et pratique ecclésiologiques d'union d'Églises orientales à l'Église catholique, dans le respect de leurs rites et traditions.
+9s		9	0
+4xe	Qui a un seul axe.
+6s		6	0
+3caule	Qui n’a qu’une seule tige.
+4ellulaire	Qui n’est constitué que d’une seule cellule.
+ds		d	3a
+4ité	Qualité de ce qui est unique.
+7s		7	0
+4ode	Caractère Unicode, notamment de nature graphique, tel qu’un emoji.
+7s		7	0
+5lore	Qui n’a qu’une couleur.
+9s		9	0
+5rne	Qui n’a qu’une corne.
+3dimensionnel	Relatif à une dimension, qui se produit dans une dimension seulement.
+5rectionnel	Qui n’exerce une action que dans un sens, dans une direction.
+4ose	Conditionnement sous la forme d’une dose à usage unique (comme un sachet ou un flacon), notamment pour les médicaments et les cosmétiques.
+7s		7	0
+3e		3	n
+3ème	Adjectif ordinal de -un des mots composés numéraux.
+6ment	Adverbe ordinal qui s'emploie, comme le mot unième, avec les nombres vingt, trente, etc.
+6s		6	0
+3es		3	1
+3f	Université.
+4amilial	Relatif à une famille.
+be		b	n
+cs		b	1
+aux		al	9
+4ia		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5cateur	Qui unifie.
+bs		b	9
+8ion	Action d’unifier ou résultat de cette action.
+bs		b	0
+8rice	Celle qui unit.
+cs		8eur	1
+5é		5er	1k
+6e		5er	19
+7s		5er	1f
+5ent		6r	15
+6r	Amener à l’unité, faire un tout de diverses parties, rendre uniforme.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	1c
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5ez		6r	1b
+5iez		5er	d
+6ons		5er	j
+5laire	Qui est composé d’un seul fil.
+as		a	0
+5ons		5er	r
+4lore	Qui ne porte qu’une fleur.
+8s		8	0
+4ocal	Définition manquante ou à compléter.
+8e		8	n
+9s		8	1
+7ux		7l	9
+5lié	Monophylle, à une seule feuille.
+8e		8	n
+9s		8	1
+8s		8	9
+5rme	Qui présente partout et toujours la même forme, la même unicité, la même constance, la même manière d’être.
+7ément	D’une manière uniforme.
+7es		8	0
+7isa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	14
+9âmes		9er	3
+9ant	Qui uniformise, qui rend uniforme.
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action d’uniformiser.
+es		e	0
+9e		ar	1s
+9ée		9er	19
+bs		9er	10
+9ent		ar	v
+ar	Rendre uniforme.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	1h
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+8té	Caractère de ce qui est uniforme.
+as		a	0
+4s		4	0
+3jambiste	Personne qui n'est dotée que d'une seule jambe.
+bs		b	0
+3latéral	Relatif à un seul côté.
+ae		a	n
+bment	D’une manière unilatérale.
+bs		a	1
+aisme	Position unilatérale, doctrine qui ne prend en compte qu’un seul côté de la situation.
+es		e	0
+cte	Relatif à l’unilatéralisme.
+es		e	0
+9ux		9l	9
+4inéaire	Qui est constitué d’une seule ligne.
+bs		b	0
+6gue	Qui ne parle, qui n’emploie qu’une seule langue.
+9s		9	0
+8isme	Fait d’être unilingue, de ne parler ou de n’utiliser qu’une seule langue.
+cs		c	0
+4obé	Qui n’a qu’un seul lobe.
+7e		7	n
+8s		7	1
+7s		7	9
+5culaire	Qui n'a qu'une seule loge.
+cs		c	0
+3ment	Également et toujours de même sorte.
+2îmes		2ir	3
+2imodal	Qui n'a ou qui ne fonctionne que sur un seul mode.
+8e		8	n
+9s		8	1
+7ux		7l	9
+3nominal	Qui a rapport à un seul nom, qui porte sur un seul nom.
+ae		a	n
+bs		a	1
+9ux		9l	9
+3on	Opérateur de la théorie des ensembles, qui regroupe au sein d'un même ensemble les éléments de deux ensembles.
+5isme	Type de syndicalisme de salariés propre au Royaume-Uni.
+9s		9	0
+7te	Relatif à l'Union nationale (UN).
+9s		9	0
+5s		5	0
+3pare	Se dit des femelles qui, normalement, ne font qu’un petit à chaque portée.
+7s		7	0
+4ersonnel	Se dit des verbes qui n’ont qu’une personne, impersonnel.
+cle		c	n
+es		c	1
+cs		c	9
+4olaire	Qui a un seul pôle.
+as		a	0
+5tent	Se dit d’un élément r d’un anneau tel que r-1 est nilpotent.
+9e		9	n
+as		9	1
+9s		9	9
+0Uniprix	Ancienne chaîne française de magasins populaires.
+0unique	Qui est seul en son genre.
+6ment	Exclusivement à tout autre.
+6s		6	0
+3r	Joindre deux ou plusieurs choses ensemble.
+4a		4	18
+5i		4	1e
+6ent		4	1r
+6s		4	i
+6t		4	1d
+5mé	Qualifie ce qui ne comporte qu'une seule partie, n’a qu’une branche ou un seul rameau.
+7e		7	n
+8s		7	1
+7s		7	9
+5s		4	7
+4ent		4	1c
+5z		4	1m
+4iez		4	4
+5ons		4	2a
+4ons		4	1p
+6t		4	1i
+3s		3	9
+4exé	Unisexué.
+6es		7	0
+6ualité	Attirance affective, sentimentale et sexuelle envers les personnes de même sexe.
+cs		c	0
+7é	Synonyme de unisexuel, unisexé.
+8e		7er	19
+9s		7er	1f
+7el	Qualifie les fleurs qui ne réunissent pas les deux sexes et qui n’ont que des étamines ou que des pistils.
+9le	Homosexuelle.
+bs		9	1
+9s		9	9
+8r	Donner un caractère unisexe à.
+7és		7er	1h
+4saient		3r	23
+7s		3r	2e
+7t		3r	1z
+6nt	Destiné à unir.
+5e		3r	2d
+6nt		3r	1x
+6s		3r	2q
+6z		3r	1y
+5iez		3r	2s
+6ons		3r	2m
+5on	Son unique chanté par deux ou plusieurs voix, joué par deux ou plusieurs instruments.
+7s		3r	21
+2ît		2ir	1q
+2itaire	Relatif au nombre un, à l'unité.
+8s		8	0
+5rien	Apparenté à l'unitarisme.
+9ne	Féminin singulier de unitarien.
+bs	Féminin pluriel de unitarien.
+9s	Masculin pluriel de unitarien.
+7sme	Doctrine des unitaires.
+as		a	0
+4é	Élément singulier, qui a le nombre un.
+5s		5	0
+4if	Qui unit, qui est propre à unir.
+6s		6	9
+5ve		5f	n
+7s		5f	1
+3v	Université (forme utilisée surtout en Belgique).
+4alence	Valence d'un corps chimique dont l'atome ne peut former qu'une seule liaison chimique.
+as		a	0
+8t	Se dit d’un élément chimique qui accepte qu’une seule liaison chimique.
+9e		9	n
+as		9	1
+9s		9	9
+6ve	Qualifie les mollusques dont la coquille n’est composée que d’une pièce.
+4ers	Le monde entier, l’ensemble de tout ce qui existe.
+7alisa		ber	x
+ci		ber	m
+ds		ber	1g
+dt		ber	y
+bâmes		ber	3
+bant	Qui universalise, qui rend universel.
+cs		ber	c
+dse		ber	6
+bât		ber	k
+des		ber	2
+be		cr	1s
+bée		ber	11
+ds		ber	10
+bent		cr	v
+cr	Rendre universel.
+da		d	l
+ei		d	g
+es		d	7
+dez		d	5
+bés		ber	12
+bez		cr	u
+biez		ber	d
+cons		ber	j
+bme	Système de pensée de ceux qui n’admet pour principe, pour autorité, que l’assentiment universel.
+ds		d	0
+bons		ber	r
+bte	Qui embrasse tout le monde.
+ds		d	0
+até	Ensemble, totalité, ce qui embrasse les différentes espèces.
+cs		c	0
+8ux	Certaines idées générales, qui étaient le genre, la différence, l’espèce, le propre et l’accident.
+7el	Dont la portée est générale, qui s’étend à tout, à tous ou partout.
+9le		9	n
+bment	D’une manière universelle.
+bs		9	1
+9s		9	9
+0Universiade	Compétition internationale, organisée sur le modèle des Jeux olympiques, mais réservée au sport universitaire.
+bs		b	0
+0universitaire	De l’université, voire par extension de l’enseignement supérieur.
+ds		d	3f
+9é	Commune, communauté, corps, compagnie, collège, corporation, assemblée.
+as		a	0
+4itellin	Qui concerne les jumeaux homozygotes.
+be		b	n
+cs		b	1
+bs		b	9
+4ocité	Qualité de ce qui est univoque, c'est-à-dire qui se comprend d'emblée, sans interprétation nécessaire.
+9s		9	0
+5ltin	Qualifie une espèce d’insecte, en particulier le ver à soie, qui ne fait qu’une génération par an.
+9e		9	n
+as		9	1
+9s		9	9
+5que	Qualifie un terme qui conserve le même sens dans des emplois différents.
+8s		8	0
+4s		4	0
+2s	Pluriel de un ; chacun.
+2tel	Variante orthographique de un tel.

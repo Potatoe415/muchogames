@@ -1,48 +1,48 @@
-upanishad	Commentaire religieux et philosophique, que les brahmanes considèrent comme faisant partie de la révélation.
-upanishads		upanishad	0
-upas	Grand arbre de l’île de Java, de la famille des Urticées et d’où découle un suc très vénéneux.
-upcycling	Ensemble de procédés par lesquels on transforme un déchet matériel ou un produit en apparence inutile en un nouveau matériau ou produit de qualité ou d’utilité…
-upérisa		upériser	33
-upérisai		upériser	22
-upérisaient		upériser	32
-upérisais		upériser	29
-upérisait		upériser	34
-upérisâmes		upériser	3
-upérisant		upériser	35
-upérisas		upériser	12
-upérisasse		upériser	6
-upérisassent		upériser	17
-upérisasses		upériser	8
-upérisassiez		upériser	14
-upérisassions		upériser	25
-upérisât		upériser	20
-upérisâtes		upériser	2
-upérisation	Stérilisation de liquide, et en particulier du lait, par injection de vapeur d’eau sous pression afin de porter celui-ci à une température très élevée.
-upérisations		upérisation	0
-upérisé		upériser	46
-upérisée		upériser	37
-upérisées		upériser	36
-upérisent		upériser	31
-upériser	Stériliser (principalement du lait) à très haute température, mais de façon très courte.
-upérisera		upériser	21
-upériserai		upériser	16
-upériseraient		upériser	28
-upériserais		upériser	18
-upériserait		upériser	26
-upériseras		upériser	7
-upérisèrent		upériser	24
-upériserez		upériser	5
-upériseriez		upériser	4
-upériserions		upériser	11
-upériserons		upériser	10
-upériseront		upériser	15
-upérisés		upériser	38
-upérisez		upériser	30
-upérisiez		upériser	13
-upérisions		upériser	19
-upérisons		upériser	27
-uppercut	Coup de poing réalisé de bas en haut, et délivré le plus souvent à mi-distance avec le bras semi-fléchi, dans un combat de boxe ou une rixe.
-uppercuts		uppercut	0
-upsilon	υ, Υ, vingtième lettre et sixième voyelle de l’alphabet grec.
-upsilons		upsilon	0
-upwelling	Résurgence des eaux océaniques venues des profondeurs.
+0upanishad	Commentaire religieux et philosophique, que les brahmanes considèrent comme faisant partie de la révélation.
+9s		9	0
+3s	Grand arbre de l’île de Java, de la famille des Urticées et d’où découle un suc très vénéneux.
+2cycling	Ensemble de procédés par lesquels on transforme un déchet matériel ou un produit en apparence inutile en un nouveau matériau ou produit de qualité ou d’utilité…
+2érisa		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Stérilisation de liquide, et en particulier du lait, par injection de vapeur d’eau sous pression afin de porter celui-ci à une température très élevée.
+bs		b	0
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Stériliser (principalement du lait) à très haute température, mais de façon très courte.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+2percut	Coup de poing réalisé de bas en haut, et délivré le plus souvent à mi-distance avec le bras semi-fléchi, dans un combat de boxe ou une rixe.
+8s		8	0
+2silon	υ, Υ, vingtième lettre et sixième voyelle de l’alphabet grec.
+7s		7	0
+2welling	Résurgence des eaux océaniques venues des profondeurs.

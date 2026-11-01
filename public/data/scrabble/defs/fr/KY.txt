@@ -1,23 +1,23 @@
-kyat	Monnaie du Myanmar (ou Birmanie).
-kyats		kyat	0
-kylix	Coupe large et peu profonde produite en Grèce dans l’antiquité.
-kymographe	Appareil servant à l'enregistrement graphique des mouvements par exemple d'un organe.
-kymographes		kymographe	0
-kymographie	Enregistrement graphique des mouvements par exemple d'un organe.
-kymographies		kymographie	0
-kymrique	Gallois.
-kymriques		kymrique	0
-kyrie	Chant liturgique des Églises catholique et orthodoxe.
-kyrielle	Suite interminable de paroles ou de mots.
-kyrielles		kyrielle	0
-kyries		kyrie	0
-kyste	Formation pathologique, creuse qui renferme des liquides ou autres matières sans que celles-ci ne communiquent avec le reste de l'organisme.
-kystes		kyste	0
-kysteuse		kysteux	23
-kysteuses		kysteux	1
-kysteux	Qui contient des kystes.
-kystique	Qui prend la forme d'un kyste ou qui est relatif à un kyste.
-kystiques		kystique	0
-kyu	Ensemble des différentes étapes de la progression d'un débutant avant l'obtention d'un grade dan.
-kyudo	Tir à l’arc japonais.
-kyus		kyu	0
+0kyat	Monnaie du Myanmar (ou Birmanie).
+4s		4	0
+2lix	Coupe large et peu profonde produite en Grèce dans l’antiquité.
+2mographe	Appareil servant à l'enregistrement graphique des mouvements par exemple d'un organe.
+as		a	0
+9ie	Enregistrement graphique des mouvements par exemple d'un organe.
+bs		b	0
+3rique	Gallois.
+8s		8	0
+2rie	Chant liturgique des Églises catholique et orthodoxe.
+5lle	Suite interminable de paroles ou de mots.
+8s		8	0
+5s		5	0
+2ste	Formation pathologique, creuse qui renferme des liquides ou autres matières sans que celles-ci ne communiquent avec le reste de l'organisme.
+5s		5	0
+5use		6x	n
+8s		6x	1
+6x	Qui contient des kystes.
+4ique	Qui prend la forme d'un kyste ou qui est relatif à un kyste.
+8s		8	0
+2u	Ensemble des différentes étapes de la progression d'un débutant avant l'obtention d'un grade dan.
+3do	Tir à l’arc japonais.
+3s		3	0

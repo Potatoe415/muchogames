@@ -31,7 +31,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-11-01 Scrabble French definitions offline (decision 0057): Wiktionary extract (kaikki.org, CC BY-SA) in `public/data/scrabble/defs/fr/`, 97.4 % of ODS 9, one ≤ 250 KB gzip file per tap; live Wiktionary only for missing words; CC BY-SA credit in the sheet. Node checks on 32 words; browser: TANT defined with no Wikimedia call.
+- 2026-11-01 Scrabble French definitions offline (decision 0057): Wiktionary extract (kaikki.org, CC BY-SA) in `public/data/scrabble/defs/fr/`, 97.4 % of ODS 9, 2.7 MB gzip in all, one ≤ 107 KB gzip file per tap (front-coded, binary search); live Wiktionary only for missing words; CC BY-SA credit in the sheet. Node checks on 32 words; browser: TANT defined with no Wikimedia call.
 - 2026-11-01 Scrabble Junior (was Enfant): Scrabble Junior side-2 rules on an 11x11 board with coloured squares (1/2/3 pts), 5-letter face-up racks, swap 1 letter and still play, no end penalty, kind draws for the child, rude words kept out of the computer and the hint. Node sims of full Junior games; browser-checked.
 - 2026-11-01 Scrabble: in-match ✖ Quit replaced by "Définir" (book): tap a board word → short Wiktionary definition (base word for plurals/conjugations), FR/EN/ES. Browser-checked (ETALENT → étaler).
 - 2026-11-01 Scrabble FR + ES: each player's words checked in their own language, shared 102-tile bag with Ñ, FR/ES tags. Node sims of full mixed games; browser duo start checked.

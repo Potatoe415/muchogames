@@ -1,19 +1,19 @@
-xi	ξ, Ξ, quatorzième lettre et dixième consonne de l’alphabet grec.
-xiang	Langue sino-tibétaine chinoise parlée principalement dans les provinces du Hunan et du Sichuan, comptabilisant plus de 38 millions de locuteurs.
-xième	Sérié, mais de position indéterminé.
-xièmes		xième	0
-ximenia	Variante de ximénie
-ximenias		ximenia	0
-ximénie	Genre d’arbres de la famille des Olacacées.
-ximénies		ximénie	0
-xipho	Poisson d’eau douce tropical.
-xiphoïde	En forme de glaive, d'épée.
-xiphoïdes		xiphoïde	0
-xiphoïdien	Relatif à l’appendice xiphoïde du sternum.
-xiphoïdienne		xiphoïdien	23
-xiphoïdiennes		xiphoïdien	1
-xiphoïdiens		xiphoïdien	9
-xiphophore	Petit poisson d’eau douce originaire d’Amérique centrale, fréquemment élevé en aquariophilie.
-xiphophores		xiphophore	0
-xiphos	Courte épée de la Grèce antique.
-xis		xi	0
+0xi	ξ, Ξ, quatorzième lettre et dixième consonne de l’alphabet grec.
+2ang	Langue sino-tibétaine chinoise parlée principalement dans les provinces du Hunan et du Sichuan, comptabilisant plus de 38 millions de locuteurs.
+2ème	Sérié, mais de position indéterminé.
+5s		5	0
+2menia	Variante de ximénie
+7s		7	0
+3énie	Genre d’arbres de la famille des Olacacées.
+7s		7	0
+2pho	Poisson d’eau douce tropical.
+5ïde	En forme de glaive, d'épée.
+8s		8	0
+7ien	Relatif à l’appendice xiphoïde du sternum.
+ane		a	n
+cs		a	1
+as		a	9
+5phore	Petit poisson d’eau douce originaire d’Amérique centrale, fréquemment élevé en aquariophilie.
+as		a	0
+5s	Courte épée de la Grèce antique.
+2s		2	0

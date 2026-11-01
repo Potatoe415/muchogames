@@ -1,54 +1,54 @@
-ubac	Versant d’une montagne qui est le moins exposé au soleil, et donc le versant le plus froid.
-ubacs		ubac	115
-ubéral	Relatif au sein, aux mamelles.
-ubérale		ubéral	23
-ubérales	Féminin pluriel de ubérale.
-uberisa		uberiser	39
-uberisai		uberiser	55
-uberisaient		uberiser	75
-uberisais		uberiser	86
-uberisait		uberiser	71
-uberisâmes		uberiser	68
-uberisant		uberiser	43
-uberisas		uberiser	83
-uberisasse		uberiser	81
-uberisassent		uberiser	78
-uberisasses		uberiser	87
-uberisassiez		uberiser	88
-uberisassions		uberiser	90
-uberisât		uberiser	62
-uberisâtes		uberiser	84
-uberisation	Changement d’un modèle de commerce où l'intermédiaire entre le client et des ressources devient un service par plateforme numérique centralisée consultable par…
-uberisations		uberisation	0
-uberisé		uberiser	56
-uberisée		uberiser	45
-uberisées		uberiser	51
-uberisent		uberiser	69
-uberiser	Modifier un marché ou un domaine en prenant Uber comme exemple.
-uberisera		uberiser	44
-uberiserai		uberiser	50
-uberiseraient		uberiser	63
-uberiserais		uberiser	60
-uberiserait		uberiser	49
-uberiseras		uberiser	57
-uberisèrent		uberiser	48
-uberiserez		uberiser	58
-uberiseriez		uberiser	74
-uberiserions		uberiser	82
-uberiserons		uberiser	61
-uberiseront		uberiser	54
-uberisés		uberiser	53
-uberisez		uberiser	70
-uberisiez		uberiser	100
-uberisions		uberiser	94
-uberisons		uberiser	73
-ubiquiste	Qui est doué d’ubiquité.
-ubiquistes		ubiquiste	0
-ubiquitaire	Qui possède ou semble posséder le don d’ubiquité.
-ubiquitaires		ubiquitaire	0
-ubiquité	, (Dogmatique) Attribut de Dieu, être présent dans le même temps partout.
-ubiquiter	Rendre présent partout à la fois.
-ubiquités		ubiquiter	53
-ubris	Variante de hybris.
-ubuesque	D’un comique grotesque et démesuré, poussé jusqu’à l’absurde.
-ubuesques		ubuesque	0
+0ubac	Versant d’une montagne qui est le moins exposé au soleil, et donc le versant le plus froid.
+4s		4	37
+2éral	Relatif au sein, aux mamelles.
+6e		6	n
+7s	Féminin pluriel de ubérale.
+2erisa		6er	13
+7i		6er	1j
+8ent		6er	23
+8s		6er	2e
+8t		6er	1z
+6âmes		6er	1w
+6ant		6er	17
+7s		6er	2b
+8se		6er	29
+ant		6er	26
+as		6er	2f
+9iez		6er	2g
+aons		6er	2i
+6ât		6er	1q
+8es		6er	2c
+6ation	Changement d’un modèle de commerce où l'intermédiaire entre le client et des ressources devient un service par plateforme numérique centralisée consultable par…
+bs		b	0
+6é		6er	1k
+7e		6er	19
+8s		6er	1f
+6ent		7r	1x
+7r	Modifier un marché ou un domaine en prenant Uber comme exemple.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	22
+9ons		8	2a
+8ons		8	1p
+at		8	1i
+6és		6er	1h
+6ez		7r	1y
+6iez		6er	2s
+7ons		6er	2m
+6ons		6er	21
+2iquiste	Qui est doué d’ubiquité.
+9s		9	0
+6taire	Qui possède ou semble posséder le don d’ubiquité.
+bs		b	0
+7é	, (Dogmatique) Attribut de Dieu, être présent dans le même temps partout.
+7er	Rendre présent partout à la fois.
+7és		7er	1h
+2ris	Variante de hybris.
+2uesque	D’un comique grotesque et démesuré, poussé jusqu’à l’absurde.
+8s		8	0

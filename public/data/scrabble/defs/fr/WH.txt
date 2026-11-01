@@ -1,19 +1,19 @@
-wharf	Quai ; appontement.
-wharfs		wharf	0
-wheeling	Action de rouler sur la roue arrière.
-wheelings		wheeling	0
-whig	Nom donné aux membres du parti libéral en Angleterre du XVIIᵉ au XIXᵉ siècle.
-whigs		whig	0
-whip	Dans le système parlementaire britannique (Grande-Bretagne, Canada), député qui est chargé du maintien de la discipline de son parti.
-whipcord	Tissu de laine ou de coton, dont la trame est très serrée, et qui a un effet de côtes en diagonale.
-whipcords		whipcord	0
-whippet	Variante de lévrier whippet (race de chien).
-whippets		whippet	0
-whips		whip	0
-whiskey	Whisky produit dans un pays où le mot est écrit ainsi (Irlande, États-Unis en particulier).
-whiskeys		whiskey	0
-whiskies		whisky	0
-whisky	Eau-de-vie d’orge malté.
-whiskys		whisky	0
-whist	Jeu de cartes à levées qui se joue à quatre.
-whists		whist	0
+0wharf	Quai ; appontement.
+5s		5	0
+2eeling	Action de rouler sur la roue arrière.
+8s		8	0
+2ig	Nom donné aux membres du parti libéral en Angleterre du XVIIᵉ au XIXᵉ siècle.
+4s		4	0
+3p	Dans le système parlementaire britannique (Grande-Bretagne, Canada), député qui est chargé du maintien de la discipline de son parti.
+4cord	Tissu de laine ou de coton, dont la trame est très serrée, et qui a un effet de côtes en diagonale.
+8s		8	0
+4pet	Variante de lévrier whippet (race de chien).
+7s		7	0
+4s		4	0
+3skey	Whisky produit dans un pays où le mot est écrit ainsi (Irlande, États-Unis en particulier).
+7s		7	0
+5ies		5y	0
+5y	Eau-de-vie d’orge malté.
+6s		6	0
+4t	Jeu de cartes à levées qui se joue à quatre.
+5s		5	0

@@ -1,27 +1,27 @@
-éocène	Qui se rapporte à l’Éocène, première période de l’ère tertiaire.
-éocènes		éocène	0
-éogène	Synonyme de paléogène.
-éogènes		éogène	0
-éohippus	Équidé fossile de la taille d’un renard, considéré comme l’ancêtre du cheval et que l’on trouve dans les terrains éocènes.
-éolien	Qui est relatif au vent.
-éolienne	Turbine mue par le vent.
-éoliennes		éolien	1
-éoliens		éolien	120
-éolipile	Appareil permettant de montrer la force motrice de la vapeur d’eau.
-éolipiles		éolipile	0
-éolipyle	Boule de métal creuse, qui, étant en partie remplie d’eau et chauffée, produit un jet continu de vapeur par un bec recourbé adapté à un point de sa surface.
-éolipyles		éolipyle	0
-éolique	Éolien.
-éoliques		éolique	0
-éolithe	Fragment de silex prétendument retouché pour servir d’outil par un homininé hypothétique de l’ère tertiaire (pliocène ou miocène), mais qui est en fait un géof…
-éolithes		éolithe	0
-éon	Plus grande unité de période de temps de l’échelle géologique.
-éonisme	Sorte d’hérésie chrétienne du XIIᵉ siècle en Bretagne.
-éonismes		éonisme	0
-éons		éon	0
-éosine	Substance colorée introduite par M.
-éosines		éosine	0
-éosinophile	Qui a une affinité pour un colorant, l’éosine.
-éosinophiles		éosinophile	123
-éosinophilie	L'augmentation permanente de la valeur de la numération des leucocytes polynucléaires éosinophiles (PE) dans le sang au-delà d'un seuil.
-éosinophilies		éosinophilie	0
+0éocène	Qui se rapporte à l’Éocène, première période de l’ère tertiaire.
+6s		6	0
+2gène	Synonyme de paléogène.
+6s		6	0
+2hippus	Équidé fossile de la taille d’un renard, considéré comme l’ancêtre du cheval et que l’on trouve dans les terrains éocènes.
+2lien	Qui est relatif au vent.
+6ne	Turbine mue par le vent.
+8s		6	1
+6s		6	3c
+4pile	Appareil permettant de montrer la force motrice de la vapeur d’eau.
+8s		8	0
+5yle	Boule de métal creuse, qui, étant en partie remplie d’eau et chauffée, produit un jet continu de vapeur par un bec recourbé adapté à un point de sa surface.
+8s		8	0
+4que	Éolien.
+7s		7	0
+4the	Fragment de silex prétendument retouché pour servir d’outil par un homininé hypothétique de l’ère tertiaire (pliocène ou miocène), mais qui est en fait un géof…
+7s		7	0
+2n	Plus grande unité de période de temps de l’échelle géologique.
+3isme	Sorte d’hérésie chrétienne du XIIᵉ siècle en Bretagne.
+7s		7	0
+3s		3	0
+2sine	Substance colorée introduite par M.
+6s		6	0
+5ophile	Qui a une affinité pour un colorant, l’éosine.
+bs		b	3f
+aie	L'augmentation permanente de la valeur de la numération des leucocytes polynucléaires éosinophiles (PE) dans le sang au-delà d'un seuil.
+cs		c	0

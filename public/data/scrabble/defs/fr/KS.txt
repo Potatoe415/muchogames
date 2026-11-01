@@ -1,8 +1,8 @@
-ksar	Village fortifié que l’on rencontre dans les pays du Maghreb.
-ksars		ksar	0
-kṣatriya	Variante de kshatriya.
-kṣatriyas		kṣatriya	0
-kshatriya	Noble indien, membre d'une des quatre varnas (caste en Inde), comprenant les rois, seigneurs, et chefs de guerre.
-ksi	ξ, Ξ, quatorzième lettre et dixième consonne de l’alphabet grec.
-ksis		ksi	0
-ksour		ksar	0
+0ksar	Village fortifié que l’on rencontre dans les pays du Maghreb.
+4s		4	0
+1ṣatriya	Variante de kshatriya.
+8s		8	0
+1shatriya	Noble indien, membre d'une des quatre varnas (caste en Inde), comprenant les rois, seigneurs, et chefs de guerre.
+2i	ξ, Ξ, quatorzième lettre et dixième consonne de l’alphabet grec.
+3s		3	0
+2our		2ar	0

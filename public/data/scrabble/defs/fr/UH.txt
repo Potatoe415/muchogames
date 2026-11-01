@@ -1,2 +1,2 @@
-uhlan	Qui est propre aux uhlans.
-uhlans		uhlan	0
+0uhlan	Qui est propre aux uhlans.
+5s		5	0

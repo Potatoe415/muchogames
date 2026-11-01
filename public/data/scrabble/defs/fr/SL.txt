@@ -1,219 +1,219 @@
-slache	Sandale, pantoufle souvent usée.
-slaches		slache	0
-slackline	Sport s'apparentant au funambulisme, consistant à progresser sur une sangle en nylon ou en polyester, sans l’aide d’accessoires.
-slalom	Descente sinueuse à skis où le parcours est jalonné de piquets.
-slaloma		slalomer	33
-slalomai		slalomer	22
-slalomaient		slalomer	32
-slalomais		slalomer	29
-slalomait		slalomer	34
-slalomâmes		slalomer	3
-slalomant		slalomer	43
-slalomas		slalomer	12
-slalomasse		slalomer	6
-slalomassent		slalomer	17
-slalomasses		slalomer	8
-slalomassiez		slalomer	14
-slalomassions		slalomer	25
-slalomât		slalomer	20
-slalomâtes		slalomer	2
-slalomé		slalomer	56
-slaloment		slalomer	31
-slalomer	Se déplacer en slalom, en zigzaguant entre des obstacles.
-slalomera		slalomer	21
-slalomerai		slalomer	16
-slalomeraient		slalomer	28
-slalomerais		slalomer	18
-slalomerait		slalomer	26
-slalomeras		slalomer	7
-slalomèrent		slalomer	24
-slalomerez		slalomer	5
-slalomeriez		slalomer	4
-slalomerions		slalomer	11
-slalomerons		slalomer	10
-slalomeront		slalomer	15
-slalomés		slalomer	38
-slalomeur	Skieur sportif qui slalome.
-slalomeurs		slalomeur	0
-slalomeuse	Skieuse sportive qui slalome.
-slalomeuses		slalomeuse	0
-slalomez		slalomer	30
-slalomiez		slalomer	13
-slalomions		slalomer	19
-slalomons		slalomer	27
-slaloms		slalom	0
-slam	Sorte de plongeon dans une foule, afin d’y être porté, notamment lors de concerts de rock ou de metal.
-slama		slamer	39
-slamai		slamer	55
-slamaient		slamer	42
-slamais		slamer	52
-slamait		slamer	40
-slamâmes		slamer	68
-slamant		slamer	43
-slamas		slamer	83
-slamasse		slamer	81
-slamassent		slamer	78
-slamasses		slamer	87
-slamassiez		slamer	88
-slamassions		slamer	90
-slamât		slamer	62
-slamâtes		slamer	84
-slamé		slamer	56
-slamée		slamer	45
-slamées		slamer	51
-slament		slamer	41
-slamer	Pratiquer le slam.
-slamera		slamer	44
-slamerai		slamer	50
-slameraient		slamer	63
-slamerais		slamer	60
-slamerait		slamer	49
-slameras		slamer	57
-slamèrent		slamer	48
-slamerez		slamer	58
-slameriez		slamer	74
-slamerions		slamer	82
-slamerons		slamer	61
-slameront		slamer	54
-slames		slamer	77
-slameur	Homme qui interprète ou compose du slam.
-slameurs		slameur	0
-slameuse	Femme qui interprète ou compose du slam.
-slameuses		slameuse	0
-slamez		slamer	47
-slamiez		slamer	67
-slamions		slamer	65
-slamons		slamer	59
-slams		slam	0
-slang	Argot anglophone.
-slangs		slang	0
-slash	Barre oblique (caractère /).
-slasher	Sous-genre de film d’horreur, où un tueur psychopathe élimine un à un les personnages.
-slashers		slasher	0
-slashes		slash	0
-slasheur	Multi-entrepreneur.
-slasheurs		slasheur	0
-slasheuse	Multi-entrepreneuse.
-slasheuses		slasheuse	0
-slashs		slash	0
-slave	Qualifie les peuples d’Europe centrale ou orientale dont la langue fait partie du groupe des langues slaves.
-slaves		slave	0
-slavisa		slaviser	33
-slavisai		slaviser	22
-slavisaient		slaviser	32
-slavisais		slaviser	29
-slavisait		slaviser	34
-slavisâmes		slaviser	3
-slavisant	Spécialiste des langues ou des cultures slaves.
-slavisante		slavisant	23
-slavisantes		slavisant	1
-slavisants		slavisant	0
-slavisas		slaviser	12
-slavisasse		slaviser	6
-slavisassent		slaviser	17
-slavisasses		slaviser	8
-slavisassiez		slaviser	14
-slavisassions		slaviser	25
-slavisât		slaviser	20
-slavisâtes		slaviser	2
-slavisé		slaviser	46
-slavisée		slaviser	37
-slavisées		slaviser	36
-slavisent		slaviser	31
-slaviser	Donner un caractère slave à.
-slavisera		slaviser	21
-slaviserai		slaviser	16
-slaviseraient		slaviser	28
-slaviserais		slaviser	18
-slaviserait		slaviser	26
-slaviseras		slaviser	7
-slavisèrent		slaviser	24
-slaviserez		slaviser	5
-slaviseriez		slaviser	4
-slaviserions		slaviser	11
-slaviserons		slaviser	10
-slaviseront		slaviser	15
-slavisés		slaviser	38
-slavisez		slaviser	30
-slavisiez		slaviser	13
-slavisions		slaviser	19
-slavisme	Courant culturel prônant l’affirmation de l’identité slave.
-slavismes		slavisme	0
-slavisons		slaviser	27
-slaviste	Linguiste qui s’occupe des langues slaves et de l’histoire des Slaves.
-slavistes		slaviste	0
-slavistique	Domaine de la linguistique étudiant les langues slaves.
-slavistiques		slavistique	0
-slavon	Qui habite ou est originaire de la Slavonie.
-slavonne		slavon	23
-slavonnes		slavon	1
-slavons		slavon	9
-slavophile	Qui aime les Slaves, les civilisations slaves.
-slavophiles		slavophile	0
-sleeping	Wagon-lit.
-sleepings		sleeping	0
-sliça		slicer	33
-sliçai		slicer	22
-sliçaient		slicer	32
-sliçais		slicer	29
-sliçait		slicer	34
-sliçâmes		slicer	3
-sliçant		slicer	35
-sliças		slicer	12
-sliçasse		slicer	6
-sliçassent		slicer	17
-sliçasses		slicer	8
-sliçassiez		slicer	14
-sliçassions		slicer	25
-sliçât		slicer	20
-sliçâtes		slicer	2
-slice		slicer	79
-slicée		slicer	37
-slicées		slicer	36
-slicent		slicer	31
-slicer	Donner un effet de slice, coupé à (une balle).
-slicera		slicer	21
-slicerai		slicer	16
-sliceraient		slicer	28
-slicerais		slicer	18
-slicerait		slicer	26
-sliceras		slicer	7
-slicèrent		slicer	24
-slicerez		slicer	5
-sliceriez		slicer	4
-slicerions		slicer	11
-slicerons		slicer	10
-sliceront		slicer	15
-slices		slicer	66
-slicez		slicer	30
-sliciez		slicer	13
-slicions		slicer	19
-sliçons		slicer	27
-slide	Page d’une présentation assistée par ordinateur.
-slides		slide	0
-slikke	Partie basse de l’estran, qui n’est découverte que lors des basses marées.
-slikkes		slikke	0
-slim	Pantalon très serré et moulant.
-slims		slim	0
-slip	Sous-vêtement qui couvre le bas du ventre, les parties génitales et les fesses.
-slips		slip	0
-slivovitz	Eau-de-vie de prunes.
-sloche	Neige fondue au sol.
-sloches		sloche	0
-slogan	Cri de guerre d’un clan écossais.
-slogans		slogan	0
-sloop	Bâtiment à un seul mât avec une seule voile à l'avant.
-sloops		sloop	0
-slopestyle	Sport de descente empruntant différents modules en ayant la plus grande amplitude.
-slopestyles		slopestyle	0
-sloughi	Race de grand chien lévrier, originaire d’Afrique du Nord, à queue mince, à poil ras, à robe sable et noir.
-sloughis		sloughi	0
-slovaque	Relatif aux Slovaques, leur pays, leur langue, leur culture.
-slovaques		slovaque	0
-slovène	Relatif aux Slovènes, à la Slovénie.
-slovènes		slovène	118
-slow	Danse lente que les partenaires dansent enlacés.
-slows		slow	0
-slurp	Bruit de succion, d’une personne sirotant une boisson ou ingurgitant un aliment semi-liquide.
-slush	Neige fondue au sol.
-slushs		slush	0
+0slache	Sandale, pantoufle souvent usée.
+6s		6	0
+4kline	Sport s'apparentant au funambulisme, consistant à progresser sur une sangle en nylon ou en polyester, sans l’aide d’accessoires.
+3lom	Descente sinueuse à skis où le parcours est jalonné de piquets.
+6a		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1k
+6ent		7r	v
+7r	Se déplacer en slalom, en zigzaguant entre des obstacles.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6eur	Skieur sportif qui slalome.
+9s		9	0
+8se	Skieuse sportive qui slalome.
+as		a	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+3m	Sorte de plongeon dans une foule, afin d’y être porté, notamment lors de concerts de rock ou de metal.
+4a		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	1w
+4ant		4er	17
+5s		4er	2b
+6se		4er	29
+8nt		4er	26
+8s		4er	2f
+7iez		4er	2g
+8ons		4er	2i
+4ât		4er	1q
+6es		4er	2c
+4é		4er	1k
+5e		4er	19
+6s		4er	1f
+4ent		5r	15
+5r	Pratiquer le slam.
+6a		6	18
+7i		6	1e
+8ent		6	1r
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	22
+7ons		6	2a
+6ons		6	1p
+8t		6	1i
+5s		5r	25
+5ur	Homme qui interprète ou compose du slam.
+7s		7	0
+6se	Femme qui interprète ou compose du slam.
+8s		8	0
+5z		5r	1b
+4iez		4er	1v
+5ons		4er	1t
+4ons		4er	1n
+4s		4	0
+3ng	Argot anglophone.
+5s		5	0
+3sh	Barre oblique (caractère /).
+5er	Sous-genre de film d’horreur, où un tueur psychopathe élimine un à un les personnages.
+7s		7	0
+6s		5	0
+6ur	Multi-entrepreneur.
+8s		8	0
+7se	Multi-entrepreneuse.
+9s		9	0
+5s		5	0
+3ve	Qualifie les peuples d’Europe centrale ou orientale dont la langue fait partie du groupe des langues slaves.
+5s		5	0
+4isa		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Spécialiste des langues ou des cultures slaves.
+9e		9	n
+as		9	1
+9s		9	0
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Donner un caractère slave à.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6me	Courant culturel prônant l’affirmation de l’identité slave.
+8s		8	0
+6ons		6er	r
+6te	Linguiste qui s’occupe des langues slaves et de l’histoire des Slaves.
+8s		8	0
+7ique	Domaine de la linguistique étudiant les langues slaves.
+bs		b	0
+4on	Qui habite ou est originaire de la Slavonie.
+6ne		6	n
+8s		6	1
+6s		6	9
+5phile	Qui aime les Slaves, les civilisations slaves.
+as		a	0
+2eeping	Wagon-lit.
+8s		8	0
+2iça		3cer	x
+5i		3cer	m
+6ent		3cer	w
+6s		3cer	t
+6t		3cer	y
+4âmes		3cer	3
+4ant		3cer	z
+5s		3cer	c
+6se		3cer	6
+8nt		3cer	h
+8s		3cer	8
+7iez		3cer	e
+8ons		3cer	p
+4ât		3cer	k
+6es		3cer	2
+3ce		5r	27
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Donner un effet de slice, coupé à (une balle).
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	1u
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+3çons		3cer	r
+3de	Page d’une présentation assistée par ordinateur.
+5s		5	0
+3kke	Partie basse de l’estran, qui n’est découverte que lors des basses marées.
+6s		6	0
+3m	Pantalon très serré et moulant.
+4s		4	0
+3p	Sous-vêtement qui couvre le bas du ventre, les parties génitales et les fesses.
+4s		4	0
+3vovitz	Eau-de-vie de prunes.
+2oche	Neige fondue au sol.
+6s		6	0
+3gan	Cri de guerre d’un clan écossais.
+6s		6	0
+3op	Bâtiment à un seul mât avec une seule voile à l'avant.
+5s		5	0
+3pestyle	Sport de descente empruntant différents modules en ayant la plus grande amplitude.
+as		a	0
+3ughi	Race de grand chien lévrier, originaire d’Afrique du Nord, à queue mince, à poil ras, à robe sable et noir.
+7s		7	0
+3vaque	Relatif aux Slovaques, leur pays, leur langue, leur culture.
+8s		8	0
+4ène	Relatif aux Slovènes, à la Slovénie.
+7s		7	3a
+3w	Danse lente que les partenaires dansent enlacés.
+4s		4	0
+2urp	Bruit de succion, d’une personne sirotant une boisson ou ingurgitant un aliment semi-liquide.
+3sh	Neige fondue au sol.
+5s		5	0

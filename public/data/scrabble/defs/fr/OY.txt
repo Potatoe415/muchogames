@@ -1,12 +1,12 @@
-oyaient		ouïr	32
-oyais		ouïr	29
-oyait		ouïr	34
-oyant	Celui à qui on rend un compte en justice.
-oyat	Poacée qui croît dans les terrains sablonneux grâce à des racines très profondes.
-oyats		oyat	0
-oye	Ancienne graphie de oie (oiseau).
-oyes		oye	0
-oyez	Deuxième personne de l’indicatif présent du verbe ouïr.	ouïr
-oyiez		ouïr	13
-oyions		ouïr	19
-oyons		ouïr	185
+0oyaient		1uïr	w
+4s		1uïr	t
+4t		1uïr	y
+3nt	Celui à qui on rend un compte en justice.
+3t	Poacée qui croît dans les terrains sablonneux grâce à des racines très profondes.
+4s		4	0
+2e	Ancienne graphie de oie (oiseau).
+3s		3	0
+3z	Deuxième personne de l’indicatif présent du verbe ouïr.	1uïr
+2iez		1uïr	d
+3ons		1uïr	j
+2ons		1uïr	55

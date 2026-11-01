@@ -1,238 +1,238 @@
-off	Hors antenne ; non diffusé.
-offensa		offenser	39
-offensai		offenser	22
-offensaient		offenser	42
-offensais		offenser	52
-offensait		offenser	40
-offensâmes		offenser	3
-offensant	Qui offense, qui est injurieux.
-offensante		offensant	23
-offensantes		offensant	1
-offensants		offensant	9
-offensas		offenser	12
-offensasse		offenser	6
-offensassent		offenser	17
-offensasses		offenser	8
-offensassiez		offenser	14
-offensassions		offenser	25
-offensât		offenser	20
-offensâtes		offenser	2
-offense	Injure de fait ou de parole.
-offensée	Celle qui subit ou a subi une offense.
-offensées		offensée	0
-offensent		offenser	41
-offenser	Outrager quelqu’un par une offense.
-offensera		offenser	44
-offenserai		offenser	50
-offenseraient		offenser	63
-offenserais		offenser	60
-offenserait		offenser	26
-offenseras		offenser	7
-offensèrent		offenser	48
-offenserez		offenser	58
-offenseriez		offenser	4
-offenserions		offenser	11
-offenserons		offenser	10
-offenseront		offenser	54
-offensés		offensé	0
-offenseur	Celui qui offense, qui a offensé quelqu’un.
-offenseurs		offenseur	0
-offenseuse	Celle qui offense, qui a offensé quelqu’un.
-offenseuses		offenseuse	0
-offensez		offenser	47
-offensiez		offenser	13
-offensif	Qui concerne l’attaque, par opposition à la défense.
-offensifs		offensif	9
-offensions		offenser	19
-offensive	Attaque que l’on fait sans avoir été provoqué par l’adversaire.
-offensivement	D’une manière offensive.
-offensives		offensif	1
-offensons		offenser	59
-offert		offrir	56
-offerte	Offertoire.
-offertes		offerte	0
-offertoire	Prière qui, dans la messe, précède immédiatement l’oblation du pain et du vin.
-offertoires		offertoire	0
-offerts		offrir	53
-office	Fonction ou emploi dont on doit s’acquitter.
-offices		office	0
-officia		officier	39
-officiai		officier	22
-officiaient		officier	42
-officiais		officier	52
-officiait		officier	40
-official	Juge ecclésiastique délégué par l’évêque pour exercer en son nom la juridiction contentieuse.
-officialisa		officialiser	33
-officialisai		officialiser	22
-officialisaient		officialiser	32
-officialisais		officialiser	29
-officialisait		officialiser	40
-officialisâmes		officialiser	3
-officialisant		officialiser	35
-officialisas		officialiser	12
-officialisasse		officialiser	6
-officialisasses		officialiser	8
-officialisât		officialiser	20
-officialisâtes		officialiser	2
-officialisation	Action ou résultat d’officialiser.
-officialisé		officialiser	56
-officialisée		officialiser	37
-officialisées		officialiser	36
-officialisent		officialiser	31
-officialiser	Rendre officiel.
-officialisera		officialiser	21
-officialiserai		officialiser	16
-officialiserais		officialiser	18
-officialiserait		officialiser	26
-officialiseras		officialiser	7
-officialisèrent		officialiser	24
-officialiserez		officialiser	5
-officialiseriez		officialiser	4
-officialiserons		officialiser	10
-officialiseront		officialiser	15
-officialisés		officialiser	38
-officialisez		officialiser	47
-officialisiez		officialiser	13
-officialisions		officialiser	19
-officialisons		officialiser	27
-officialité	Juridiction de l’official.
-officialités		officialité	0
-officiâmes		officier	3
-officiant	Qui officie à l’église.
-officiante	Religieuse qui officie.
-officiantes		officiant	1
-officiants		officiant	9
-officias		officier	12
-officiasse		officier	6
-officiassent		officier	17
-officiasses		officier	8
-officiassiez		officier	14
-officiassions		officier	25
-officiât		officier	20
-officiâtes		officier	2
-officiaux		official	0
-officie		officier	64
-officiel	Qui émane du gouvernement.
-officielle	Femme qui fait partie du gouvernement ou de l’administration.
-officiellement	D’une manière officielle.
-officielles		officiel	1
-officiels		officiel	9
-officient		officier	41
-officier	Celui qui a un office, qui remplit une charge, qui occupe un emploi civil.
-officiera		officier	44
-officierai		officier	16
-officieraient		officier	28
-officierais		officier	18
-officierait		officier	26
-officieras		officier	7
-officière	Celle qui détient un office, qui remplit une charge, qui lui donne une position d’autorité dans une organisation hiérarchique civile.
-officièrent		officier	24
-officières		officière	0
-officierez		officier	5
-officieriez		officier	4
-officierions		officier	11
-officierons		officier	10
-officieront		officier	15
-officiers		officier	0
-officiés		officier	38
-officieuse		officieux	23
-officieusement	D’une manière officieuse.
-officieuses		officieux	1
-officieux	Qui est prompt à rendre de bons offices, serviable.
-officiez		officier	47
-officiiez		officier	13
-officiions		officier	19
-officinal	Médicinal, pharmaceutique.
-officinale		officinal	23
-officinales		officinal	1
-officinaux		officinal	9
-officine	Laboratoire d’un pharmacien, endroit où il prépare ou vend ses médicaments.
-officines		officine	0
-officions		officier	59
-offraient		offrir	93
-offrais		offrir	95
-offrait		offrir	91
-offrande	Don que l’on offre à Dieu, aux saints ou à l’église.
-offrandes		offrande	0
-offrant	Qui offre, qui fait une offre.
-offrante	Celle qui offre, qui fait une offre.
-offrantes		offrant	1
-offrants		offrant	9
-offre	Action d’offrir.
-offrent		offrir	69
-offres		offre	0
-offreur	Homme qui fait une offre.
-offreurs		offreur	0
-offreuse	Femme qui fait une offre.
-offreuses		offreuse	0
-offrez		offrir	70
-offriez		offrir	133
-offrîmes		offrir	3
-offrions		offrir	103
-offrir	Présenter quelque chose à quelqu’un, en souhaitant qu’il l’accepte.
-offrira		offrir	44
-offrirai		offrir	50
-offriraient		offrir	97
-offrirais		offrir	96
-offrirait		offrir	92
-offriras		offrir	57
-offrirent		offrir	48
-offrirez		offrir	58
-offririez		offrir	104
-offririons		offrir	101
-offrirons		offrir	61
-offriront		offrir	54
-offris		offrir	55
-offrisse		offrir	6
-offrissent		offrir	17
-offrisses		offrir	8
-offrissiez		offrir	14
-offrissions		offrir	25
-offrît		offrir	62
-offrîtes		offrir	2
-offrons		offrir	73
-offset	Procédé d’impression.
-offsets		offset	0
-offsettiste	Qui utilise le procédé d’impression offset.
-offsettistes		offsettiste	0
-offshore	Extracôtier, se trouvant en haute mer, au large des côtes.
-offshores		offshore	0
-offusqua		offusquer	39
-offusquai		offusquer	22
-offusquaient		offusquer	42
-offusquais		offusquer	52
-offusquait		offusquer	40
-offusquâmes		offusquer	3
-offusquant		offusquer	35
-offusquas		offusquer	12
-offusquasse		offusquer	6
-offusquassent		offusquer	17
-offusquasses		offusquer	8
-offusquassiez		offusquer	14
-offusquassions		offusquer	25
-offusquât		offusquer	62
-offusquâtes		offusquer	2
-offusque		offusquer	64
-offusquée	Féminin singulier de offusqué.
-offusquées	Féminin pluriel de offusqué.
-offusquent		offusquer	41
-offusquer	Empêcher d’être vu.
-offusquera		offusquer	21
-offusquerai		offusquer	50
-offusqueraient		offusquer	28
-offusquerais		offusquer	18
-offusquerait		offusquer	49
-offusqueras		offusquer	7
-offusquèrent		offusquer	48
-offusquerez		offusquer	58
-offusqueriez		offusquer	4
-offusquerions		offusquer	11
-offusquerons		offusquer	10
-offusqueront		offusquer	15
-offusqués	Masculin pluriel de offusqué.
-offusquez		offusquer	30
-offusquiez		offusquer	13
-offusquions		offusquer	19
-offusquons		offusquer	27
-oflag	En Allemagne, pendant la Seconde Guerre mondiale, camp de prisonniers de guerre réservé aux officiers.
-oflags		oflag	0
+0off	Hors antenne ; non diffusé.
+3ensa		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui offense, qui est injurieux.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Injure de fait ou de parole.
+6ée	Celle qui subit ou a subi une offense.
+8s		8	0
+6ent		7r	15
+7r	Outrager quelqu’un par une offense.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	q
+9s		8	7
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	1i
+6és		7	0
+6eur	Celui qui offense, qui a offensé quelqu’un.
+9s		9	0
+8se	Celle qui offense, qui a offensé quelqu’un.
+as		a	0
+7z		7r	1b
+6iez		6er	d
+7f	Qui concerne l’attaque, par opposition à la défense.
+8s		8	9
+7ons		6er	j
+7ve	Attaque que l’on fait sans avoir été provoqué par l’adversaire.
+9ment	D’une manière offensive.
+9s		7f	1
+6ons		6er	1n
+4rt		3rir	1k
+6e	Offertoire.
+7s		7	0
+6oire	Prière qui, dans la messe, précède immédiatement l’oblation du pain et du vin.
+as		a	0
+6s		3rir	1h
+3ice	Fonction ou emploi dont on doit s’acquitter.
+6s		6	0
+5ia		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+7l	Juge ecclésiastique délégué par l’évêque pour exercer en son nom la juridiction contentieuse.
+8isa		aer	x
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	14
+aâmes		aer	3
+aant		aer	z
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+aation	Action ou résultat d’officialiser.
+aé		aer	1k
+be		aer	11
+cs		aer	10
+aent		br	v
+br	Rendre officiel.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aez		br	1b
+aiez		aer	d
+bons		aer	j
+aons		aer	r
+9té	Juridiction de l’official.
+bs		b	0
+6âmes		6er	3
+6ant	Qui officie à l’église.
+9e	Religieuse qui officie.
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6aux		7l	0
+6e		7r	1s
+7l	Qui émane du gouvernement.
+8le	Femme qui fait partie du gouvernement ou de l’administration.
+ament	D’une manière officielle.
+as		8	1
+8s		8	9
+7nt		7r	15
+7r	Celui qui a un office, qui remplit une charge, qui occupe un emploi civil.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6ère	Celle qui détient un office, qui remplit une charge, qui lui donne une position d’autorité dans une organisation hiérarchique civile.
+9nt		6er	o
+9s		9	0
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+8s		8	0
+6és		6er	12
+6euse		8x	n
+ament	D’une manière officieuse.
+as		8x	1
+8x	Qui est prompt à rendre de bons offices, serviable.
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6nal	Médicinal, pharmaceutique.
+9e		9	n
+as		9	1
+8ux		8l	9
+7e	Laboratoire d’un pharmacien, endroit où il prépare ou vend ses médicaments.
+8s		8	0
+6ons		6er	1n
+3raient		4ir	2l
+6s		4ir	2n
+6t		4ir	2j
+5nde	Don que l’on offre à Dieu, aux saints ou à l’église.
+8s		8	0
+6t	Qui offre, qui fait une offre.
+7e	Celle qui offre, qui fait une offre.
+8s		7	1
+7s		7	9
+4e	Action d’offrir.
+5nt		4ir	1x
+5s		5	0
+5ur	Homme qui fait une offre.
+7s		7	0
+6se	Femme qui fait une offre.
+8s		8	0
+5z		4ir	1y
+4iez		5r	3p
+4îmes		4ir	3
+4ions		5r	2v
+5r	Présenter quelque chose à quelqu’un, en souhaitant qu’il l’accepte.
+6a		6	18
+7i		6	1e
+8ent		6	2p
+8s		6	2o
+8t		6	2k
+7s		6	1l
+6ent		6	1c
+7z		6	1m
+6iez		6	2w
+7ons		6	2t
+6ons		6	1p
+8t		6	1i
+5s		5r	1j
+6se		5r	6
+8nt		5r	h
+8s		5r	8
+7iez		5r	e
+8ons		5r	p
+4ît		4ir	1q
+6es		4ir	2
+4ons		4ir	21
+3set	Procédé d’impression.
+6s		6	0
+6tiste	Qui utilise le procédé d’impression offset.
+bs		b	0
+4hore	Extracôtier, se trouvant en haute mer, au large des côtes.
+8s		8	0
+3usqua		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	1q
+9es		7er	2
+7e		8r	1s
+7ée	Féminin singulier de offusqué.
+9s	Féminin pluriel de offusqué.
+7ent		8r	15
+8r	Empêcher d’être vu.
+9a		9	l
+ai		9	1e
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	1c
+7erez		9	1m
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és	Masculin pluriel de offusqué.
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+2lag	En Allemagne, pendant la Seconde Guerre mondiale, camp de prisonniers de guerre réservé aux officiers.
+5s		5	0

@@ -1,15 +1,15 @@
-ay	Vin rouge de la catégorie « coteaux champenois » et à base de cépage pinot noir produit à Ay, en Champagne.
-ayant		avoir	43
-ayants	Pluriel de ayant dans certaines locutions : ayant cause, ayant droit.
-ayatollah	Un des titres les plus élevés décerné à un membre du clergé chiite.
-ayatollahs		ayatollah	0
-ayez		avoir	138
-aymara	Relatif aux Aymaras.
-Aymaras		Aymara	0
-ayons	Première personne du pluriel du présent du subjonctif du verbe auxiliaire avoir.	avoir
-ays		ay	0
-ayuntamiento	Municipalité espagnole.
-ayurveda	Médecine traditionnelle hindoue.
-ayurvédas		ayurvéda	0
-ayurvédique	De l’ayurvéda, médecine traditionnelle hindoue.
-ayurvédiques		ayurvédique	0
+0ay	Vin rouge de la catégorie « coteaux champenois » et à base de cépage pinot noir produit à Ay, en Champagne.
+2ant		1voir	17
+5s	Pluriel de ayant dans certaines locutions : ayant cause, ayant droit.
+3tollah	Un des titres les plus élevés décerné à un membre du clergé chiite.
+9s		9	0
+2ez		1voir	3u
+2mara	Relatif aux Aymaras.
+0Aymaras		6	0
+0ayons	Première personne du pluriel du présent du subjonctif du verbe auxiliaire avoir.	1voir
+2s		2	0
+2untamiento	Municipalité espagnole.
+3rveda	Médecine traditionnelle hindoue.
+5édas		8	0
+7ique	De l’ayurvéda, médecine traditionnelle hindoue.
+bs		b	0

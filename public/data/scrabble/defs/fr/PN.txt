@@ -1,32 +1,32 @@
-pneu	Enveloppe souple remplie d’air qui entoure une roue et assure son contact avec le sol, inventée en 1888.
-pneumallergène	Allergène respiratoire.
-pneumallergènes		pneumallergène	0
-pneumatique	Relatif à l’air.
-pneumatiques		pneumatique	0
-pneumatologie	Traité sur les maladies venteuses.
-pneumatologies		pneumatologie	0
-pneumatophore	Excroissance aérienne des racines de certains arbres vivant dans des zones humides (marais, marécage, mangrove, etc.).
-pneumatophores		pneumatophore	0
-pneumo	Pneumothorax.
-pneumoconiose	Ensemble de maladies pulmonaires (toxiques) qui sont définies par des altérations causées par l'inhalation et la fixation dans le poumon de particules solides.
-pneumoconioses		pneumoconiose	0
-pneumocoque	Nom usuel de Streptococcus pneumoniae, bactérie responsable de pneumonies, otites, méningites etc.
-pneumocoques		pneumocoque	0
-pneumocystose	Forme de pneumopathie.
-pneumocystoses		pneumocystose	0
-pneumogastrique	Qui est commun aux poumons et à l’estomac.
-pneumographie	Description du poumon.
-pneumographies		pneumographie	0
-pneumologie	Traité sur l’organisation ou les usages du poumon.
-pneumologies		pneumologie	0
-pneumologue	Médecin qui s'occupe de maladies des poumons et du tractus respiratoire.
-pneumologues		pneumologue	0
-pneumonie	Inflammation du parenchyme des poumons.
-pneumonies		pneumonie	0
-pneumonique	Qui est relatif aux maladies du poumon, à la pneumonie.
-pneumoniques		pneumonique	0
-pneumopathie	infection du poumon.
-pneumopathies		pneumopathie	0
-pneumos		pneumo	0
-pneumothorax	Épanchement pathologique, accidentel ou traumatique de gaz (air ou autres gaz) dans la cavité pleurale.
-pneus		pneu	0
+0pneu	Enveloppe souple remplie d’air qui entoure une roue et assure son contact avec le sol, inventée en 1888.
+4mallergène	Allergène respiratoire.
+es		e	0
+6tique	Relatif à l’air.
+bs		b	0
+7ologie	Traité sur les maladies venteuses.
+ds		d	0
+8phore	Excroissance aérienne des racines de certains arbres vivant dans des zones humides (marais, marécage, mangrove, etc.).
+ds		d	0
+5o	Pneumothorax.
+6coniose	Ensemble de maladies pulmonaires (toxiques) qui sont définies par des altérations causées par l'inhalation et la fixation dans le poumon de particules solides.
+ds		d	0
+8que	Nom usuel de Streptococcus pneumoniae, bactérie responsable de pneumonies, otites, méningites etc.
+bs		b	0
+7ystose	Forme de pneumopathie.
+ds		d	0
+6gastrique	Qui est commun aux poumons et à l’estomac.
+7raphie	Description du poumon.
+ds		d	0
+6logie	Traité sur l’organisation ou les usages du poumon.
+bs		b	0
+9ue	Médecin qui s'occupe de maladies des poumons et du tractus respiratoire.
+bs		b	0
+6nie	Inflammation du parenchyme des poumons.
+9s		9	0
+8que	Qui est relatif aux maladies du poumon, à la pneumonie.
+bs		b	0
+6pathie	infection du poumon.
+cs		c	0
+6s		6	0
+6thorax	Épanchement pathologique, accidentel ou traumatique de gaz (air ou autres gaz) dans la cavité pleurale.
+4s		4	0

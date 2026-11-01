@@ -1,6 +1,6 @@
-ikastola	École du Pays basque, de statut associatif, où l’enseignement est principalement effectué en langue basque.
-ikastolas		ikastola	0
-ikat	Étoffe caractérisée par un procédé de teinture des fils avant tissage, originaire d’Asie du Sud-Est.
-ikats		ikat	0
-ikebana	Art traditionnel japonais fondé sur la composition florale.
-ikebanas		ikebana	0
+0ikastola	École du Pays basque, de statut associatif, où l’enseignement est principalement effectué en langue basque.
+8s		8	0
+3t	Étoffe caractérisée par un procédé de teinture des fils avant tissage, originaire d’Asie du Sud-Est.
+4s		4	0
+2ebana	Art traditionnel japonais fondé sur la composition florale.
+7s		7	0

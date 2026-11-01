@@ -1,11 +1,11 @@
-ypérite	Agent chimique de combat à action vésicante, historiquement utilisé comme arme chimique, constitué principalement de sulfure de 2,2′-dichlorodiéthyle, provoqua…
-ypérites		ypérite	0
-yponomeute	Petit papillon nocturne dont la chenille, de nom scientifique Yponomeuta malinellus, très nuisible, qui tisse des toiles denses autour des rameaux des arbres f…
-yponomeutes		yponomeute	0
-ypréau	ou régional Nom vernaculaire du peuplier blanc ou du peuplier gris de l’Oise ou peuplier grisard (Populus ×canescens).
-ypréaux		ypréau	0
-yprésien	Qui concerne l’Yprésien, étage du système éocène.
-yprésiens		yprésien	9
-yprois	Relatif à Ypres en Belgique.
-yproise		yprois	23
-yproises		yprois	1
+0ypérite	Agent chimique de combat à action vésicante, historiquement utilisé comme arme chimique, constitué principalement de sulfure de 2,2′-dichlorodiéthyle, provoqua…
+7s		7	0
+2onomeute	Petit papillon nocturne dont la chenille, de nom scientifique Yponomeuta malinellus, très nuisible, qui tisse des toiles denses autour des rameaux des arbres f…
+as		a	0
+2réau	ou régional Nom vernaculaire du peuplier blanc ou du peuplier gris de l’Oise ou peuplier grisard (Populus ×canescens).
+6x		6	0
+4sien	Qui concerne l’Yprésien, étage du système éocène.
+8s		8	9
+3ois	Relatif à Ypres en Belgique.
+6e		6	n
+7s		6	1

@@ -1,27 +1,27 @@
-qaddich	Variante orthographique de kaddish.
-qadjar	Relatif à la dynastie d’origine turcomane ayant régné sur l’Iran de 1786 à 1925.
-qadjare		qadjar	23
-qadjares		qadjar	1
-qadjars		qadjar	9
-qanoun	Variante de qanûn.
-qanouns		qanoun	0
-qanun	Variante de qanûn.
-qanuns		qanun	0
-qaraïte	Variante orthographique de caraïte.
-qaraïtes		qaraïte	0
-qasida	Sorte de poème arabe.
-qasidas		qasida	0
-qat	Arbuste (Catha edulis) de l’Afrique orientale et de la péninsule arabique.
-qatari	Qui a un rapport avec le Qatar.
-qatarie		qatari	23
-qatarien	Qui a un rapport avec le Qatar.
-qatarienne		qatarien	23
-qatariennes		qatarien	1
-qatariens		qatarien	0
-qataries		qatari	1
-qatariote	De Qatar.
-qatariotes		qatariote	0
-qataris		qatari	9
-qats		qat	0
-qawwali	Type de chant exprimant la foi soufie interprété généralement par un petit ensemble de voix d’hommes accompagnées, pratiqué au Pakistan et en Inde.
-qawwalis		qawwali	0
+0qaddich	Variante orthographique de kaddish.
+3jar	Relatif à la dynastie d’origine turcomane ayant régné sur l’Iran de 1786 à 1925.
+6e		6	n
+7s		6	1
+6s		6	9
+2noun	Variante de qanûn.
+6s		6	0
+3un	Variante de qanûn.
+5s		5	0
+2raïte	Variante orthographique de caraïte.
+7s		7	0
+2sida	Sorte de poème arabe.
+6s		6	0
+2t	Arbuste (Catha edulis) de l’Afrique orientale et de la péninsule arabique.
+3ari	Qui a un rapport avec le Qatar.
+6e		6	n
+7n	Qui a un rapport avec le Qatar.
+8ne		8	n
+as		8	1
+8s		8	0
+7s		6	1
+6ote	De Qatar.
+9s		9	0
+6s		6	9
+3s		3	0
+2wwali	Type de chant exprimant la foi soufie interprété généralement par un petit ensemble de voix d’hommes accompagnées, pratiqué au Pakistan et en Inde.
+7s		7	0

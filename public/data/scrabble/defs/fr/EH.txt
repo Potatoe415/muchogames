@@ -1,8 +1,8 @@
-eh	D’admiration, de surprise.
-éhonté	Qui est sans honte, sans pudeur.
-éhontée		éhonté	23
-éhontées		éhonté	1
-éhontément	D’une manière éhontée.
-éhontés		éhonté	9
-ehrlichiose	Zoonose induite par les bactéries Ehrlichia qui sont des intracellulaires obligatoires, inoculées par une tique.
-ehrlichioses		ehrlichiose	0
+0eh	D’admiration, de surprise.
+0éhonté	Qui est sans honte, sans pudeur.
+6e		6	n
+7s		6	1
+6ment	D’une manière éhontée.
+6s		6	9
+0ehrlichiose	Zoonose induite par les bactéries Ehrlichia qui sont des intracellulaires obligatoires, inoculées par une tique.
+bs		b	0

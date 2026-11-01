@@ -1,4 +1,4 @@
-if	Arbre sempervirent de la famille des taxacées (Taxaceae), à feuilles persistantes longues, étroites, vénéneuses, d’un vert très sombre, à fausses baies rouges,…
-ifs		if	0
-iftar	Repas qui est pris chaque soir au coucher du soleil par les musulmans pendant le jeûne du mois de ramadan.
-iftars		iftar	0
+0if	Arbre sempervirent de la famille des taxacées (Taxaceae), à feuilles persistantes longues, étroites, vénéneuses, d’un vert très sombre, à fausses baies rouges,…
+2s		2	0
+2tar	Repas qui est pris chaque soir au coucher du soleil par les musulmans pendant le jeûne du mois de ramadan.
+5s		5	0

@@ -1,383 +1,383 @@
-kibboutz	Collectivité juive créée, en Israël, par le mouvement sioniste sous l'influence des idées du socialisme associatif.
-kibboutzim		kibboutz	0
-kibboutznik	Membre d'un kibboutz.
-kibitza		kibitzer	39
-kibitzai		kibitzer	55
-kibitzaient		kibitzer	42
-kibitzais		kibitzer	52
-kibitzait		kibitzer	40
-kibitzâmes		kibitzer	68
-kibitzant		kibitzer	43
-kibitzas		kibitzer	83
-kibitzasse		kibitzer	81
-kibitzassent		kibitzer	78
-kibitzasses		kibitzer	87
-kibitzassiez		kibitzer	88
-kibitzassions		kibitzer	90
-kibitzât		kibitzer	62
-kibitzâtes		kibitzer	84
-kibitzé		kibitzer	56
-kibitzée		kibitzer	45
-kibitzées		kibitzer	51
-kibitzent		kibitzer	41
-kibitzer	Au bridge ou aux échecs, regarder une partie en faisant des commentaires indésirables.
-kibitzera		kibitzer	44
-kibitzerai		kibitzer	50
-kibitzeraient		kibitzer	63
-kibitzerais		kibitzer	60
-kibitzerait		kibitzer	49
-kibitzeras		kibitzer	57
-kibitzèrent		kibitzer	48
-kibitzerez		kibitzer	58
-kibitzeriez		kibitzer	74
-kibitzerions		kibitzer	82
-kibitzerons		kibitzer	61
-kibitzeront		kibitzer	54
-kibitzes		kibitzer	77
-kibitzez		kibitzer	47
-kibitziez		kibitzer	67
-kibitzions		kibitzer	65
-kibitzons		kibitzer	59
-kichenotte	Coiffe paysanne de forme cylindrique, portée notamment par les Acadiennes d'origine française.
-kichenottes		kichenotte	0
-kick	Pièce permettant de démarrer une moto au pied.
-kickboxing	Variante orthographique de kick boxing.
-kicker	Baby-foot, football de table.
-kickers		kicker	0
-kicks		kick	0
-kid	Gosse, jeune, enfant, gamin.
-kidnappa		kidnapper	39
-kidnappage	Action de kidnapper.
-kidnappages		kidnappage	0
-kidnappai		kidnapper	22
-kidnappaient		kidnapper	32
-kidnappais		kidnapper	29
-kidnappait		kidnapper	40
-kidnappâmes		kidnapper	3
-kidnappant		kidnapper	43
-kidnappas		kidnapper	12
-kidnappasse		kidnapper	6
-kidnappassent		kidnapper	17
-kidnappasses		kidnapper	8
-kidnappassiez		kidnapper	14
-kidnappassions		kidnapper	25
-kidnappât		kidnapper	20
-kidnappâtes		kidnapper	2
-kidnappe		kidnapper	64
-kidnappée		kidnapper	45
-kidnappées		kidnapper	51
-kidnappent		kidnapper	41
-kidnapper	Enlever une personne en vue de demander une rançon.
-kidnappera		kidnapper	21
-kidnapperai		kidnapper	50
-kidnapperaient		kidnapper	63
-kidnapperais		kidnapper	18
-kidnapperait		kidnapper	26
-kidnapperas		kidnapper	57
-kidnappèrent		kidnapper	24
-kidnapperez		kidnapper	58
-kidnapperiez		kidnapper	4
-kidnapperions		kidnapper	11
-kidnapperons		kidnapper	10
-kidnapperont		kidnapper	15
-kidnappés		kidnapper	53
-kidnappeur	Personne qui pratique le kidnapping.
-kidnappeurs		kidnappeur	0
-kidnappeuse	Femme qui pratique le kidnapping.
-kidnappeuses		kidnappeuse	0
-kidnappez		kidnapper	47
-kidnappiez		kidnapper	67
-kidnapping	Enlèvement généralement accompagné de demande de rançon.
-kidnappings		kidnapping	0
-kidnappions		kidnapper	19
-kidnappons		kidnapper	59
-kids		kid	0
-kief	Repos, sieste, observé au milieu de la journée chez les orientaux.
-kiefs		kief	0
-kierkegaardien	Qui découle ou s'apparente à la pensée de Søren Kierkegaard.
-kierkegaardiens		kierkegaardien	9
-kieselguhr	Terre de diatomée.
-kieselguhrs		kieselguhr	0
-kieselgur	Variante de kieselguhr.
-kieselgurs		kieselgur	0
-kiésérite	Sulfate naturel de magnésium hydraté.
-kiésérites		kiésérite	0
-kiévien	Relatif à Kiev ou aux Kiéviens.
-kiévienne		kiévien	23
-kiéviennes		kiévien	1
-kiéviens		kiévien	9
-kif	Mélange de sommités de fleurs femelles séchées de chanvre indien et de tabac gris finement haché en Algérie et au Maroc.
-kifa		kifer	33
-kifai		kifer	22
-kifaient		kifer	32
-kifais		kifer	29
-kifait		kifer	34
-kifâmes		kifer	3
-kifant		kifer	35
-kifas		kifer	12
-kifasse		kifer	6
-kifassent		kifer	17
-kifasses		kifer	8
-kifassiez		kifer	14
-kifassions		kifer	25
-kifât		kifer	20
-kifâtes		kifer	2
-kifé		kifer	46
-kifée		kifer	37
-kifées		kifer	36
-kifent		kifer	31
-kifer	Variante de kiffer, c’est-à-dire aimer.
-kifera		kifer	21
-kiferai		kifer	16
-kiferaient		kifer	28
-kiferais		kifer	18
-kiferait		kifer	26
-kiferas		kifer	7
-kifèrent		kifer	24
-kiferez		kifer	5
-kiferiez		kifer	4
-kiferions		kifer	11
-kiferons		kifer	10
-kiferont		kifer	15
-kifés		kifer	38
-kifez		kifer	30
-kiff	Variante de kif.
-kiffa		kiffer	33
-kiffai		kiffer	22
-kiffaient		kiffer	32
-kiffais		kiffer	29
-kiffait		kiffer	34
-kiffâmes		kiffer	3
-kiffant		kiffer	35
-kiffas		kiffer	12
-kiffasse		kiffer	6
-kiffassent		kiffer	17
-kiffasses		kiffer	8
-kiffassiez		kiffer	14
-kiffassions		kiffer	25
-kiffât		kiffer	20
-kiffâtes		kiffer	2
-kiffé		kiffer	46
-kiffée		kiffer	37
-kiffées		kiffer	36
-kiffent		kiffer	31
-kiffer	Aimer, apprécier franchement.
-kiffera		kiffer	21
-kifferai		kiffer	16
-kifferaient		kiffer	28
-kifferais		kiffer	18
-kifferait		kiffer	26
-kifferas		kiffer	7
-kiffèrent		kiffer	24
-kifferez		kiffer	5
-kifferiez		kiffer	4
-kifferions		kiffer	11
-kifferons		kiffer	10
-kifferont		kiffer	15
-kiffés		kiffer	38
-kiffez		kiffer	30
-kiffiez		kiffer	13
-kiffions		kiffer	19
-kiffons		kiffer	27
-kiffs		kiff	0
-kifiez		kifer	13
-kifions		kifer	19
-kifkif	Variante de kif-kif.
-kifons		kifer	27
-kifs		kif	0
-kigalois	Relatif à Kigali, capitale du Rwanda, ou à ses habitants.
-kigaloise		kigalois	23
-kigaloises		kigalois	1
-kiki	Gorge.
-kikis		kiki	0
-kikiwi	Nom vernaculaire du tyran quiquivi (Pitangus sulphuratus), espèce de passereau de la famille des Tyrannidae implantée en Amérique latine.
-kikiwis		kikiwi	0
-kikongo	Relatif au kikongo, la langue.
-kikongos		kikongo	0
-kil	Mesure de volume équivalente à environ deux litres.
-kilim	Tapis d’Orient à motifs géométriques, dépourvu de velours.
-kilims		kilim	0
-kilo	Kilogramme.
-kilobase	Unité correspondant à 1 000 bases d’un acide nucléique monocaténaire.
-kilobases		kilobase	0
-kilobit	Unité de mesure de quantité d’information numérique, valant 2¹⁰ bits, ou 10³ bits environ, et dont le symbole est kbit ou parfois kb.
-kilobits		kilobit	0
-kilobyte	Kilooctet.
-kilobytes		Kilobyte	0
-kilocalorie	Unité d’énergie, de symbole kcal, correspondant à mille petites calories, soit entre 4,2045 et 4,1819 kilojoules selon la variante, et surtout employée en diét…
-kilocalories		kilocalorie	0
-kilocycle	Synonyme de Kilohertz (hors Système international).
-kilocycles		kilocycle	0
-kiloeuro	Mille euros (symbole : k€)
-kiloeuros		kiloeuro	0
-kilofranc	Mille francs (symbole : kf)
-kilofrancs		kilofranc	0
-kilogramme	Unité de masse dans le Système international d’unités (SI) qui a pour symbole kg.
-kilogrammes		kilogramme	0
-kilogrammètre	Unité de mesure de travail mécanique produit par une force d’un kilogramme-force dont le point d’application se déplace d’un mètre dans la direction de la forc…
-kilogrammètres		kilogrammètre	0
-kilohertz	Unité de mesure de fréquence du Système international (SI), valant 10³ hertz, et dont le symbole est kHz.
-kilohm	Variante orthographique de kiloohm.
-kilohms		kilohm	0
-kilojoule	Unité de mesure d’énergie du Système international (SI), valant 10³ joules, et dont le symbole est kJ.
-kilojoules		kilojoule	0
-kilométra		kilométrer	33
-kilométrage	Action de kilométrer.
-kilométrages		kilométrage	0
-kilométrai		kilométrer	22
-kilométraient		kilométrer	32
-kilométrais		kilométrer	29
-kilométrait		kilométrer	34
-kilométrâmes		kilométrer	3
-kilométrant		kilométrer	35
-kilométras		kilométrer	12
-kilométrasse		kilométrer	6
-kilométrassent		kilométrer	17
-kilométrasses		kilométrer	8
-kilométrassiez		kilométrer	14
-kilométrassions		kilométrer	25
-kilométrât		kilométrer	20
-kilométrâtes		kilométrer	2
-kilomètre	Unité de mesure de longueur du Système international (SI), valant 10³ mètres, et dont le symbole est km.
-kilométrée		kilométrer	37
-kilométrées		kilométrer	36
-kilomètrent		kilométrer	31
-kilométrer	Mesurer au kilomètre, placer des bornes kilométriques sur une route.
-kilomètrera		kilométrer	21
-kilomètrerai		kilométrer	16
-kilomètreraient		kilométrer	28
-kilomètrerais		kilométrer	18
-kilomètrerait		kilométrer	26
-kilomètreras		kilométrer	7
-kilométrèrent		kilométrer	24
-kilomètrerez		kilométrer	5
-kilomètreriez		kilométrer	4
-kilomètrerions		kilométrer	11
-kilomètrerons		kilométrer	10
-kilomètreront		kilométrer	15
-kilomètres		kilomètre	0
-kilométrez		kilométrer	30
-kilométriez		kilométrer	13
-kilométrions		kilométrer	19
-kilométrique	Relatif au kilomètre.
-kilométriques		kilométrique	0
-kilométrons		kilométrer	27
-kilooctet	Unité de mesure du système international décrivant la quantité d’information numérique, valant 1 000 (10³) octets, et dont le symbole est ko ou Ko.
-kilooctets		kilooctet	0
-kilopascal	Unité de mesure de pression du Système international (SI), valant 10³ pascals, et dont le symbole est kPa.
-kilopascals		kilopascal	0
-kilos		kilo	0
-kilotonne	Unité de mesure de masse en dehors du Système international (mais dont l’usage est accepté avec le SI), valant 10³ tonnes, et dont le symbole est kt.
-kilotonnes		kilotonne	0
-kilotonnique	Dont l’énergie explosive est de l’ordre de la kilotonne.
-kilotonniques		kilotonnique	0
-kilovolt	Unité de mesure de force électromotrice (tension électrique) du Système international (SI), valant 10³ volts, et dont le symbole est kV.
-kilovolts		kilovolt	0
-kilowatt	Unité de mesure de puissance du Système international (SI), valant 10³ watts, et dont le symbole est kW.
-kilowattheure	Unité de mesure d’énergie, équivalant à une puissance d’un kilowatt agissant pendant une heure, soit 3,6 mégajoules.
-kilowattheures		kilowattheure	0
-kilowatts		kilowatt	0
-kils		kil	0
-kilt	Jupe courte fait traditionnellement de pure laine aux motifs colorés d’un tartan.
-kilts		kilt	0
-kimbanguiste	Relatif à Simon Kimbangu ou à son église prophétique chrétienne.
-kimbanguistes		kimbanguiste	0
-kimberlite	Roche ultramafique (riche en magnésium ou en fer), potassique et riche en éléments incompatibles, ainsi qu’en volatils (H₂O et CO₂).
-kimberlites		kimberlite	0
-kimchi	Mets traditionnel coréen composé de piments et de légumes fermentés à l’ail, souvent à base de chou chinois.
-kimchis		kimchi	0
-kimméridgien	Relatif au Kimméridgien.
-kimono	Vêtement japonais traditionnel flottant et à manches.
-kimonos		kimono	0
-kina	Abréviation pour quinquina utilisée dans le milieu pharmaceutique.
-kinas		kina	0
-kinase	Protéine dont la fonction est de modifier les paramètres d’autres protéines en leur ajoutant des phosphates (par phosphorylation).
-kinases		Kinase	0
-kiné	Kinésithérapeute.
-kinés		kiné	0
-kinescope	Ancien appareil qui permet de fixer sur une pellicule de cinéma des images de la télévision.
-kinescoper	Enregistrer (des images vidéo) sur une pellicule de cinéma.
-kinescopés		kinescoper	38
-kinésie	Faculté motrice.
-kinésies		kinésie	0
-kinésiologie	Étude des mouvements du corps humain ou non humain.
-kinésiologue	Personne spécialiste de l’activité physique, qui utilise le mouvement à des fins de prévention, de traitement et de performance.
-kinésiologues		kinésiologue	0
-kinésique	Relatif au mouvement.
-kinésiques		kinésique	0
-kinésiste	Kinésithérapeute.
-kinésistes		kinésiste	0
-kinésithérapie	Thérapie traitant les articulations, muscles ou autres structures de soutien par des mouvements actifs (gymnastique par exemple) et passifs (tels que les massa…
-kinésithérapies		kinésithérapie	0
-kinesthésie	Perception des mouvements de son corps.
-kinesthésies		kinesthésie	0
-kinesthésique	Qui se rapporte à la kinesthésie.
-kinesthésiques		kinesthésique	0
-kinétoscope	Appareil qui permet la vision individuelle de films grâce à un système de défilement continu.
-kinétoscopes		kinétoscope	0
-kinine	Tout élément d’un groupe de polypeptides du plasma à l’origine de phénomènes vasomoteurs (les deux principales kinines sont la bradykinine et la kallidine).
-kinines		kinine	0
-kinkajou	Nom vernaculaire de Proto flavus, petit mammifère de la famille des Procyonidés arboricole et nocturne de la forêt tropicale des Guyanes, de l’Amazonie, des An…
-kinkajous		kinkajou	0
-kinois	Relatif à Kinshasa ou à ses habitants.
-kinoise		kinois	23
-kinoiserie	Trait de caractère propre aux habitants de Kinshasa.
-kinoiseries		kinoiserie	0
-kinoises		kinois	1
-kinyarwanda	Langue bantoue parlée au Rwanda, en République démocratique du Congo, au Burundi, en Ouganda et en Tanzanie.
-kiosque	Dans l’aménagement des parcs et jardins, pavillon pour l’agrément ou la musique, d’inspiration orientale, de structure légère et ouverte et de plan circulaire …
-kiosques		kiosque	0
-kiosquier	Personne dont le métier est de vendre des journaux dans un kiosque à journaux
-kiosquière	Femme dont le métier est de vendre des journaux dans un kiosque à journaux.
-kiosquières		kiosquière	0
-kiosquiers		kiosquier	0
-kiosquiste	synonyme de kiosquier
-kiosquistes		kiosquiste	0
-kip	Unité de mesure de masse anglo-saxonne, valant mille livres.
-kippa	Couvre-chef religieux des Juifs.
-kippas		kippa	0
-kipper	Poisson entier (généralement hareng ou saumon) qui a été fendu en deux de la tête à la queue, aplati, débarrassé de ses arêtes, salé et légèrement fumé (à froi…
-kippers		kipper	0
-Kippour	Fête juive observée le dixième jour du mois de tishrei.
-kips		kip	0
-kir	Cocktail composé de crème de cassis et de vin blanc (du bourgogne aligoté).
-kirghiz	Qui concerne les Kirghiz, le Kirghizistan.
-kirghize		kirghiz	23
-kirghizes	Féminin pluriel de kirghize.
-kiribatien	Qui a un rapport avec les Kiribati ou leurs habitants.
-Kiribatienne	Habitante ou originaire des Kiribati.
-Kiribatiennes		Kiribatienne	0
-kiribatiens		kiribatien	0
-kirigami	Art japonais qui consiste à couper, puis déployer des feuilles de papier, et éventuellement les plier.
-kirigamis		kirigami	0
-kirpan	Arme symbolique s’apparentant à un poignard, portée par les Sikhs orthodoxes pour rappeler le besoin de lutter contre l’oppression et l’injustice.
-kirpans		kirpan	0
-kirs		kir	0
-kirsch	Espèce d’eau-de-vie obtenue par distillation du suc des cerises sauvages.
-kirschs		kirsch	0
-kirundi	Langue bantoue, très proche du kinyarwanda, parlée au Burundi.
-kit	Panoplie, fourniment, attirail, équipement.
-kitch	Variante orthographique de kitsch, de mauvais goût.
-kitchenette	Cuisine de petites dimensions, équipée du strict nécessaire.
-kitchenettes		kitchenette	0
-kitchs		kitch	9
-kite	Structure de pierres sèches longue de plusieurs centaines de mètres à plusieurs kilomètres formant un piège pour des animaux sauvages.
-kites		kite	0
-kitesurf	Sport nautique qui se pratique avec un équipement composé d’une planche de surf modifiée et d’une voile, genre voile de parapente qui, une fois gonflée et atta…
-kitesurfer	Autre orthographe de kitesurfeur.
-kitesurfers		kitesurfer	0
-kitesurfeur	Personne qui pratique le kitesurf.
-kitesurfeurs		kitesurfeur	0
-kitesurfeuse	Femme pratiquant le kitesurf.
-kitesurfeuses		kitesurfeuse	0
-kitesurfs		kitesurf	0
-kits		kit	0
-kitsch	De mauvais goût, surchargé.
-kitschs		kitsch	9
-kiva	Chambre cérémonielle des Indiens Pueblos, généralement de forme circulaire.
-kivas		kiva	0
-kiwi	Aptéryx.
-kiwis		kiwi	0
-kizomba	Genre musical originaire de l’Angola.
-kizombas		kizomber	83
-kizomber	Danser le kizomba.
+0kibboutz	Collectivité juive créée, en Israël, par le mouvement sioniste sous l'influence des idées du socialisme associatif.
+8im		8	0
+8nik	Membre d'un kibboutz.
+3itza		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	1w
+6ant		6er	17
+7s		6er	2b
+8se		6er	29
+ant		6er	26
+as		6er	2f
+9iez		6er	2g
+aons		6er	2i
+6ât		6er	1q
+8es		6er	2c
+6é		6er	1k
+7e		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Au bridge ou aux échecs, regarder une partie en faisant des commentaires indésirables.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	22
+9ons		8	2a
+8ons		8	1p
+at		8	1i
+7s		7r	25
+7z		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+6ons		6er	1n
+2chenotte	Coiffe paysanne de forme cylindrique, portée notamment par les Acadiennes d'origine française.
+as		a	0
+3k	Pièce permettant de démarrer une moto au pied.
+4boxing	Variante orthographique de kick boxing.
+4er	Baby-foot, football de table.
+6s		6	0
+4s		4	0
+2d	Gosse, jeune, enfant, gamin.
+3nappa		7er	13
+8ge	Action de kidnapper.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e		8r	1s
+7ée		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Enlever une personne en vue de demander une rançon.
+9a		9	l
+ai		9	1e
+bent		9	1r
+bs		9	i
+bt		9	q
+as		9	1l
+7èrent		7er	o
+7erez		9	1m
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7eur	Personne qui pratique le kidnapping.
+as		a	0
+9se	Femme qui pratique le kidnapping.
+bs		b	0
+8z		8r	1b
+7iez		7er	1v
+8ng	Enlèvement généralement accompagné de demande de rançon.
+as		a	0
+8ons		7er	j
+7ons		7er	1n
+3s		3	0
+2ef	Repos, sieste, observé au milieu de la journée chez les orientaux.
+4s		4	0
+3rkegaardien	Qui découle ou s'apparente à la pensée de Søren Kierkegaard.
+es		e	9
+3selguhr	Terre de diatomée.
+as		a	0
+8r	Variante de kieselguhr.
+9s		9	0
+2ésérite	Sulfate naturel de magnésium hydraté.
+9s		9	0
+3vien	Relatif à Kiev ou aux Kiéviens.
+7ne		7	n
+9s		7	1
+7s		7	9
+2f	Mélange de sommités de fleurs femelles séchées de chanvre indien et de tabac gris finement haché en Algérie et au Maroc.
+3a		3er	x
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3é		3er	1a
+4e		3er	11
+5s		3er	10
+3ent		4r	v
+4r	Variante de kiffer, c’est-à-dire aimer.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+3és		3er	12
+3ez		4r	u
+3f	Variante de kif.
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Aimer, apprécier franchement.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+4s		4	0
+3iez		3er	d
+4ons		3er	j
+3kif	Variante de kif-kif.
+3ons		3er	r
+3s		3	0
+2galois	Relatif à Kigali, capitale du Rwanda, ou à ses habitants.
+8e		8	n
+9s		8	1
+2ki	Gorge.
+4s		4	0
+4wi	Nom vernaculaire du tyran quiquivi (Pitangus sulphuratus), espèce de passereau de la famille des Tyrannidae implantée en Amérique latine.
+6s		6	0
+3ongo	Relatif au kikongo, la langue.
+7s		7	0
+2l	Mesure de volume équivalente à environ deux litres.
+3im	Tapis d’Orient à motifs géométriques, dépourvu de velours.
+5s		5	0
+3o	Kilogramme.
+4base	Unité correspondant à 1 000 bases d’un acide nucléique monocaténaire.
+8s		8	0
+5it	Unité de mesure de quantité d’information numérique, valant 2¹⁰ bits, ou 10³ bits environ, et dont le symbole est kbit ou parfois kb.
+7s		7	0
+5yte	Kilooctet.
+8s		0Kilobyte	0
+4calorie	Unité d’énergie, de symbole kcal, correspondant à mille petites calories, soit entre 4,2045 et 4,1819 kilojoules selon la variante, et surtout employée en diét…
+bs		b	0
+5ycle	Synonyme de Kilohertz (hors Système international).
+9s		9	0
+4euro	Mille euros (symbole : k€)
+8s		8	0
+4franc	Mille francs (symbole : kf)
+9s		9	0
+4gramme	Unité de masse dans le Système international d’unités (SI) qui a pour symbole kg.
+as		a	0
+9ètre	Unité de mesure de travail mécanique produit par une force d’un kilogramme-force dont le point d’application se déplace d’un mètre dans la direction de la forc…
+ds		d	0
+4hertz	Unité de mesure de fréquence du Système international (SI), valant 10³ hertz, et dont le symbole est kHz.
+5m	Variante orthographique de kiloohm.
+6s		6	0
+4joule	Unité de mesure d’énergie du Système international (SI), valant 10³ joules, et dont le symbole est kJ.
+9s		9	0
+4métra		8er	x
+9ge	Action de kilométrer.
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+5ètre	Unité de mesure de longueur du Système international (SI), valant 10³ mètres, et dont le symbole est km.
+5étrée		8er	11
+as		8er	10
+5ètrent		5étrer	v
+5étrer	Mesurer au kilomètre, placer des bornes kilométriques sur une route.
+5ètrera		5étrer	l
+bi		5étrer	g
+cent		5étrer	s
+cs		5étrer	i
+ct		5étrer	q
+bs		5étrer	7
+5étrèrent		8er	o
+5ètrerez		5étrer	5
+aiez		5étrer	4
+bons		5étrer	b
+aons		5étrer	a
+ct		5étrer	f
+9s		9	0
+5étrez		9r	u
+8iez		8er	d
+9ons		8er	j
+9que	Relatif au kilomètre.
+cs		c	0
+8ons		8er	r
+4octet	Unité de mesure du système international décrivant la quantité d’information numérique, valant 1 000 (10³) octets, et dont le symbole est ko ou Ko.
+9s		9	0
+4pascal	Unité de mesure de pression du Système international (SI), valant 10³ pascals, et dont le symbole est kPa.
+as		a	0
+4s		4	0
+4tonne	Unité de mesure de masse en dehors du Système international (mais dont l’usage est accepté avec le SI), valant 10³ tonnes, et dont le symbole est kt.
+9s		9	0
+8ique	Dont l’énergie explosive est de l’ordre de la kilotonne.
+cs		c	0
+4volt	Unité de mesure de force électromotrice (tension électrique) du Système international (SI), valant 10³ volts, et dont le symbole est kV.
+8s		8	0
+4watt	Unité de mesure de puissance du Système international (SI), valant 10³ watts, et dont le symbole est kW.
+8heure	Unité de mesure d’énergie, équivalant à une puissance d’un kilowatt agissant pendant une heure, soit 3,6 mégajoules.
+ds		d	0
+8s		8	0
+3s		3	0
+3t	Jupe courte fait traditionnellement de pure laine aux motifs colorés d’un tartan.
+4s		4	0
+2mbanguiste	Relatif à Simon Kimbangu ou à son église prophétique chrétienne.
+cs		c	0
+4erlite	Roche ultramafique (riche en magnésium ou en fer), potassique et riche en éléments incompatibles, ainsi qu’en volatils (H₂O et CO₂).
+as		a	0
+3chi	Mets traditionnel coréen composé de piments et de légumes fermentés à l’ail, souvent à base de chou chinois.
+6s		6	0
+3méridgien	Relatif au Kimméridgien.
+3ono	Vêtement japonais traditionnel flottant et à manches.
+6s		6	0
+2na	Abréviation pour quinquina utilisée dans le milieu pharmaceutique.
+4s		4	0
+5e	Protéine dont la fonction est de modifier les paramètres d’autres protéines en leur ajoutant des phosphates (par phosphorylation).
+6s		0Kinase	0
+3é	Kinésithérapeute.
+4s		4	0
+3escope	Ancien appareil qui permet de fixer sur une pellicule de cinéma des images de la télévision.
+9r	Enregistrer (des images vidéo) sur une pellicule de cinéma.
+8és		8er	12
+3ésie	Faculté motrice.
+7s		7	0
+6ologie	Étude des mouvements du corps humain ou non humain.
+aue	Personne spécialiste de l’activité physique, qui utilise le mouvement à des fins de prévention, de traitement et de performance.
+cs		c	0
+6que	Relatif au mouvement.
+9s		9	0
+6ste	Kinésithérapeute.
+9s		9	0
+6thérapie	Thérapie traitant les articulations, muscles ou autres structures de soutien par des mouvements actifs (gymnastique par exemple) et passifs (tels que les massa…
+es		e	0
+3esthésie	Perception des mouvements de son corps.
+bs		b	0
+aque	Qui se rapporte à la kinesthésie.
+ds		d	0
+3étoscope	Appareil qui permet la vision individuelle de films grâce à un système de défilement continu.
+bs		b	0
+3ine	Tout élément d’un groupe de polypeptides du plasma à l’origine de phénomènes vasomoteurs (les deux principales kinines sont la bradykinine et la kallidine).
+6s		6	0
+3kajou	Nom vernaculaire de Proto flavus, petit mammifère de la famille des Procyonidés arboricole et nocturne de la forêt tropicale des Guyanes, de l’Amazonie, des An…
+8s		8	0
+3ois	Relatif à Kinshasa ou à ses habitants.
+6e		6	n
+7rie	Trait de caractère propre aux habitants de Kinshasa.
+as		a	0
+7s		6	1
+3yarwanda	Langue bantoue parlée au Rwanda, en République démocratique du Congo, au Burundi, en Ouganda et en Tanzanie.
+2osque	Dans l’aménagement des parcs et jardins, pavillon pour l’agrément ou la musique, d’inspiration orientale, de structure légère et ouverte et de plan circulaire …
+7s		7	0
+6ier	Personne dont le métier est de vendre des journaux dans un kiosque à journaux
+7ère	Femme dont le métier est de vendre des journaux dans un kiosque à journaux.
+as		a	0
+7ers		9	0
+7ste	synonyme de kiosquier
+as		a	0
+2p	Unité de mesure de masse anglo-saxonne, valant mille livres.
+3pa	Couvre-chef religieux des Juifs.
+5s		5	0
+4er	Poisson entier (généralement hareng ou saumon) qui a été fendu en deux de la tête à la queue, aplati, débarrassé de ses arêtes, salé et légèrement fumé (à froi…
+6s		6	0
+0Kippour	Fête juive observée le dixième jour du mois de tishrei.
+0kips		3	0
+2r	Cocktail composé de crème de cassis et de vin blanc (du bourgogne aligoté).
+3ghiz	Qui concerne les Kirghiz, le Kirghizistan.
+7e		7	n
+8s	Féminin pluriel de kirghize.
+3ibatien	Qui a un rapport avec les Kiribati ou leurs habitants.
+0Kiribatienne	Habitante ou originaire des Kiribati.
+cs		c	0
+0kiribatiens		a	0
+4gami	Art japonais qui consiste à couper, puis déployer des feuilles de papier, et éventuellement les plier.
+8s		8	0
+3pan	Arme symbolique s’apparentant à un poignard, portée par les Sikhs orthodoxes pour rappeler le besoin de lutter contre l’oppression et l’injustice.
+6s		6	0
+3s		3	0
+4ch	Espèce d’eau-de-vie obtenue par distillation du suc des cerises sauvages.
+6s		6	0
+3undi	Langue bantoue, très proche du kinyarwanda, parlée au Burundi.
+2t	Panoplie, fourniment, attirail, équipement.
+3ch	Variante orthographique de kitsch, de mauvais goût.
+5enette	Cuisine de petites dimensions, équipée du strict nécessaire.
+bs		b	0
+5s		5	9
+3e	Structure de pierres sèches longue de plusieurs centaines de mètres à plusieurs kilomètres formant un piège pour des animaux sauvages.
+4s		4	0
+5urf	Sport nautique qui se pratique avec un équipement composé d’une planche de surf modifiée et d’une voile, genre voile de parapente qui, une fois gonflée et atta…
+8er	Autre orthographe de kitesurfeur.
+as		a	0
+9ur	Personne qui pratique le kitesurf.
+bs		b	0
+ase	Femme pratiquant le kitesurf.
+cs		c	0
+8s		8	0
+3s		3	0
+4ch	De mauvais goût, surchargé.
+6s		6	9
+2va	Chambre cérémonielle des Indiens Pueblos, généralement de forme circulaire.
+4s		4	0
+2wi	Aptéryx.
+4s		4	0
+2zomba	Genre musical originaire de l’Angola.
+7s		6er	2b
+6er	Danser le kizomba.

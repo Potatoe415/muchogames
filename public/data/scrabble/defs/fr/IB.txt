@@ -1,29 +1,29 @@
-ibère	Qui concerne le peuple des Ibères.
-ibères		ibère	0
-ibéride	Plante crucifère nommée aussi corbeille d’argent, ibéris, thlaspi etc.
-ibérides		ibéride	0
-ibérien	Synonyme de ibérique.
-ibérienne	Féminin singulier de ibérien.
-ibériennes		ibérien	1
-ibériens		ibérien	9
-ibérique	Relatif à l’Ibérie, à la péninsule Ibérique, à l’Espagne ou au Portugal.
-ibériques		ibérique	0
-ibéris	Genre de plante méditerranéenne, de la famille des Brassicaceae, poussant de l’Espagne à la Perse, cultivée comme plante d’ornement pour ses fleurs et dont les…
-ibidem	Au même endroit.
-ibijau	Nom vernaculaire normalisé du Nyctibius, genre d’oiseaux de la famille des nyctibiidés vivant en Amérique centrale et en Amérique latine.
-ibijaux		ibijau	0
-ibis	Espèce d'oiseau échassier de la famille des threskiornithidés, au bec long, mince et recourbé.
-ibn	Mot Arabe signifiant fils.
-ibns		ibn	0
-ibo	Variante de igbo.
-iboga	Petit arbuste de la famille des apocynacées qui se rencontre en Afrique dans la forêt équatoriale.
-ibogaïne	Alcaloïde psychostimulant et hallucinogène extrait des racines de l’iboga.
-ibogaïnes		ibogaïne	0
-ibogas		iboga	0
-Ibos	Commune française, située dans le département des Hautes-Pyrénées.
-ibsénien	Relatif au dramaturge norvégien Henrik Ibsen (1828-1906).
-ibsénienne		ibsénien	23
-ibséniennes		ibsénien	1
-ibséniens		ibsénien	9
-ibuprofène	Dénomination commune internationale de l’acide alpha-méthyl-4-(2-méthylpropyl)benzènéthanoïque, qui est un anti-inflammatoire non stéroïdien agissant par inhib…
-ibuprofènes		ibuprofène	0
+0ibère	Qui concerne le peuple des Ibères.
+5s		5	0
+2éride	Plante crucifère nommée aussi corbeille d’argent, ibéris, thlaspi etc.
+7s		7	0
+5en	Synonyme de ibérique.
+7ne	Féminin singulier de ibérien.
+9s		7	1
+7s		7	9
+5que	Relatif à l’Ibérie, à la péninsule Ibérique, à l’Espagne ou au Portugal.
+8s		8	0
+5s	Genre de plante méditerranéenne, de la famille des Brassicaceae, poussant de l’Espagne à la Perse, cultivée comme plante d’ornement pour ses fleurs et dont les…
+2idem	Au même endroit.
+3jau	Nom vernaculaire normalisé du Nyctibius, genre d’oiseaux de la famille des nyctibiidés vivant en Amérique centrale et en Amérique latine.
+6x		6	0
+3s	Espèce d'oiseau échassier de la famille des threskiornithidés, au bec long, mince et recourbé.
+2n	Mot Arabe signifiant fils.
+3s		3	0
+2o	Variante de igbo.
+3ga	Petit arbuste de la famille des apocynacées qui se rencontre en Afrique dans la forêt équatoriale.
+5ïne	Alcaloïde psychostimulant et hallucinogène extrait des racines de l’iboga.
+8s		8	0
+5s		5	0
+0Ibos	Commune française, située dans le département des Hautes-Pyrénées.
+0ibsénien	Relatif au dramaturge norvégien Henrik Ibsen (1828-1906).
+8ne		8	n
+as		8	1
+8s		8	9
+2uprofène	Dénomination commune internationale de l’acide alpha-méthyl-4-(2-méthylpropyl)benzènéthanoïque, qui est un anti-inflammatoire non stéroïdien agissant par inhib…
+as		a	0

@@ -1,2 +1,2 @@
-tjäle	Partie de la terre gelée en permanence.
-tjäles		tjäle	0
+0tjäle	Partie de la terre gelée en permanence.
+5s		5	0

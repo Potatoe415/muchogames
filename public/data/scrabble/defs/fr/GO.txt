@@ -1,1743 +1,1743 @@
-go	Jeu de stratégie d'origine chinoise et qui se joue à deux joueurs.
-goal	Gardien de but.
-goals		goal	0
-goba		gober	39
-gobage	Action de gober, d'avaler d'un coup.
-gobages		gobage	0
-gobai		gober	22
-gobaient		gober	42
-gobais		gober	52
-gobait		gober	40
-gobâmes		gober	3
-gobant		gober	43
-gobas		gober	12
-gobasse		gober	6
-gobassent		gober	17
-gobasses		gober	8
-gobassiez		gober	14
-gobassions		gober	25
-gobât		gober	20
-gobâtes		gober	2
-gobe	Variante orthographique de gobbe.
-gobée		gober	45
-gobées		gober	51
-gobelet	Vase à boire, rond, sans anse, et ordinairement sans pied, moins large et plus haut qu’une tasse.
-gobeleterie	Fabrication et commerce de gobelets, et, en particulier, de vases en verre et bouteilles.
-gobeleteries		gobeleterie	0
-gobeletier	Personne qui fabrique, vend des gobelets.
-gobeletière	Personne qui fabrique, vend des gobelets.
-gobeletières		gobeletière	0
-gobeletiers		gobeletier	0
-gobelets		gobelet	0
-gobelin	Esprit follet, lutin.
-gobelins		gobelin	0
-gobemouche	Espèce de petit oiseau passereau, à bec fin et largement fendu, à longues ailes et à pattes courtes qui se nourrit de mouches et d’autres insectes volants qu'i…
-gobemouches		gobemouche	0
-gobent		gober	41
-gober	Avaler en aspirant, sans mâcher (en particulier : une huître, un œuf cru).
-gobera		gober	44
-goberai		gober	16
-goberaient		gober	63
-goberais		gober	18
-goberait		gober	49
-goberas		gober	7
-gobèrent		gober	48
-goberez		gober	5
-goberge	Perche ou instrument de bois, qui sert à tenir quelque chose en presse, surtout chez les menuisiers.
-gobergea		goberger	33
-gobergeai		goberger	22
-gobergeaient		goberger	32
-gobergeais		goberger	29
-gobergeait		goberger	40
-gobergeâmes		goberger	3
-gobergeant		goberger	35
-gobergeas		goberger	12
-gobergeasse		goberger	6
-gobergeassent		goberger	17
-gobergeasses		goberger	8
-gobergeassiez		goberger	14
-gobergeassions		goberger	25
-gobergeât		goberger	20
-gobergeâtes		goberger	2
-gobergée		goberger	37
-gobergées		goberger	36
-gobergent		goberger	41
-gobergeons		goberger	27
-goberger	Accueillir en offrant beaucoup de nourriture.
-gobergera		goberger	21
-gobergerai		goberger	16
-gobergeraient		goberger	28
-gobergerais		goberger	18
-gobergerait		goberger	26
-gobergeras		goberger	7
-gobergèrent		goberger	24
-gobergerez		goberger	5
-gobergeriez		goberger	4
-gobergerions		goberger	11
-gobergerons		goberger	10
-gobergeront		goberger	15
-gobergés		goberger	38
-gobergez		goberger	47
-gobergiez		goberger	13
-gobergions		goberger	19
-goberiez		gober	4
-goberions		gober	11
-goberons		gober	10
-goberont		gober	54
-gobes		gobe	0
-gobeta		gobeter	33
-gobetage	Action de gobeter.
-gobetages		gobetage	0
-gobetai		gobeter	22
-gobetaient		gobeter	32
-gobetais		gobeter	29
-gobetait		gobeter	34
-gobetâmes		gobeter	3
-gobetant		gobeter	35
-gobetas		gobeter	12
-gobetasse		gobeter	6
-gobetassent		gobeter	17
-gobetasses		gobeter	8
-gobetassiez		gobeter	14
-gobetassions		gobeter	25
-gobetât		gobeter	20
-gobetâtes		gobeter	2
-gobeté		gobeter	46
-gobetée		gobeter	37
-gobetées		gobeter	36
-gobètent		gobeter	31
-gobeter	Crépir en jetant du plâtre avec la truelle ou la main pour le faire entrer dans les joints des murs de moellon ou de plâtras.
-gobètera		gobeter	21
-gobèterai		gobeter	16
-gobèteraient		gobeter	28
-gobèterais		gobeter	18
-gobèterait		gobeter	26
-gobèteras		gobeter	7
-gobetèrent		gobeter	24
-gobèterez		gobeter	5
-gobèteriez		gobeter	4
-gobèterions		gobeter	11
-gobèterons		gobeter	10
-gobèteront		gobeter	15
-gobetés		gobeter	38
-gobetez		gobeter	30
-gobetiez		gobeter	13
-gobetions		gobeter	19
-gobetis	Première couche d'enduit assez granuleux projeté ou appliqué à la brosse sur un mur, qui permet d'avoir une bonne accroche.
-gobetons		gobeter	27
-gobette	Gobelet en fer-blanc, d’un tiers de litre, au moyen duquel, autrefois, les prisonniers cantinaient leur vin.
-gobettent		gobeter	31
-gobettera		gobeter	21
-gobetterai		gobeter	16
-gobetteraient		gobeter	28
-gobetterais		gobeter	18
-gobetterait		gobeter	26
-gobetteras		gobeter	7
-gobetterez		gobeter	5
-gobetteriez		gobeter	4
-gobetterions		gobeter	11
-gobetterons		gobeter	10
-gobetteront		gobeter	15
-gobettes		gobette	0
-gobeur	Personne qui gobe.
-gobeurs		gobeur	0
-gobeuse	Personne qui gobe.
-gobeuses		gobeuse	0
-gobez		gober	47
-gobichonna		gobichonner	33
-gobichonnai		gobichonner	22
-gobichonnaient		gobichonner	32
-gobichonnais		gobichonner	29
-gobichonnait		gobichonner	34
-gobichonnâmes		gobichonner	3
-gobichonnant		gobichonner	35
-gobichonnas		gobichonner	12
-gobichonnasse		gobichonner	6
-gobichonnassent		gobichonner	17
-gobichonnasses		gobichonner	8
-gobichonnassiez		gobichonner	14
-gobichonnât		gobichonner	20
-gobichonnâtes		gobichonner	2
-gobichonné		gobichonner	46
-gobichonnée		gobichonner	45
-gobichonnées		gobichonner	51
-gobichonnent		gobichonner	31
-gobichonner	Se régaler de.
-gobichonnera		gobichonner	21
-gobichonnerai		gobichonner	16
-gobichonnerais		gobichonner	18
-gobichonnerait		gobichonner	26
-gobichonneras		gobichonner	7
-gobichonnèrent		gobichonner	24
-gobichonnerez		gobichonner	5
-gobichonneriez		gobichonner	4
-gobichonnerions		gobichonner	11
-gobichonnerons		gobichonner	10
-gobichonneront		gobichonner	15
-gobichonnes		gobichonner	66
-gobichonnez		gobichonner	30
-gobichonniez		gobichonner	13
-gobichonnions		gobichonner	19
-gobichonnons		gobichonner	27
-gobie	Petit poisson osseux marin littoral du fond, qui a souvent une ventouse ventrale, pouvant appartenir à diverses espèces, en général de la famille des gobiidés.
-gobies		gobie	0
-gobiez		gober	13
-gobille	Bille en marbre, en argile ou en pierre dure avec laquelle on joue.
-gobilles		gobille	0
-gobions		gober	65
-gobons		gober	27
-goda		goder	33
-godage	Faux pli sur une étoffe qui gode.
-godages		godage	0
-godai		goder	22
-godaient		goder	32
-godailla		godailler	33
-godaillai		godailler	22
-godaillaient		godailler	32
-godaillais		godailler	29
-godaillait		godailler	34
-godaillâmes		godailler	3
-godaillant		godailler	35
-godaillas		godailler	12
-godaillasse		godailler	6
-godaillassent		godailler	17
-godaillasses		godailler	8
-godaillassiez		godailler	14
-godaillassions		godailler	25
-godaillât		godailler	20
-godaillâtes		godailler	2
-godaille	Part de la pêche remise directement aux marins-pêcheurs.
-godaillent		godailler	31
-godailler	Faire bombance.
-godaillera		godailler	44
-godaillerai		godailler	16
-godailleraient		godailler	28
-godaillerais		godailler	18
-godaillerait		godailler	26
-godailleras		godailler	7
-godaillèrent		godailler	24
-godaillerez		godailler	5
-godailleriez		godailler	4
-godaillerions		godailler	11
-godaillerons		godailler	10
-godailleront		godailler	15
-godailles		godaille	0
-godailleur	Celui qui godaille.
-godailleurs		godailleur	0
-godailleuse	Celle qui godaille.
-godailleuses		godailleuse	0
-godaillez		godailler	30
-godailliez		godailler	13
-godaillions		godailler	19
-godaillons		godailler	27
-godais		goder	29
-godait		goder	40
-godâmes		goder	3
-godant	Mensonge, tromperie.
-godas		goder	12
-godasse	Chaussure.
-godassent		goder	17
-godasses		godasse	0
-godassiez		goder	14
-godassions		goder	25
-godât		goder	20
-godâtes		goder	2
-gode	Godemichet ; objet de forme généralement phallique destiné à procurer un plaisir sexuel.
-godée		goder	37
-godées		goder	36
-godelureau	Jeune homme qui fait le galant auprès de la gent féminine.
-godelureaux		godelureau	0
-godemiché	Variante de godemichet.
-godemichés		godemiché	0
-godendart	Variante de godendard.
-godendarts		godendart	0
-godent		goder	41
-goder	Faire des plis, en parlant d’un vêtement, généralement à cause d’une mauvaise coupe.
-godera		goder	21
-goderai		goder	16
-goderaient		goder	28
-goderais		goder	18
-goderait		goder	26
-goderas		goder	57
-godèrent		goder	24
-goderez		goder	5
-goderiez		goder	4
-goderions		goder	11
-goderons		goder	10
-goderont		goder	15
-godes		gode	0
-godet	Petit vase dans lequel on donne à boire aux oiseaux en cage.
-godetia	Plante d’ornement voisine des onagres à fleurs roses ou blanches.
-godetias		godetia	0
-godets		godet	0
-godez		goder	30
-godiche	Benêt, maladroit.
-godiches		godiche	0
-godichon	Benêt, maladroit.
-godichonne	Empotée, maladroite.
-godichonnes		godichonne	0
-godichons		godichon	0
-godiez		goder	13
-godilla		godiller	33
-godillai		godiller	22
-godillaient		godiller	32
-godillais		godiller	52
-godillait		godiller	40
-godillâmes		godiller	3
-godillant		godiller	43
-godillas		godiller	12
-godillasse		godiller	6
-godillassent		godiller	17
-godillasses		godiller	8
-godillassiez		godiller	14
-godillassions		godiller	25
-godillât		godiller	20
-godillâtes		godiller	2
-godille	Aviron placé à l’arrière d’un canot, d’une embarcation légère et qui les fait avancer par un mouvement spécial.
-godillent		godiller	31
-godiller	Manœuvrer avec la godille.
-godillera		godiller	21
-godillerai		godiller	16
-godilleraient		godiller	28
-godillerais		godiller	18
-godillerait		godiller	26
-godilleras		godiller	7
-godillèrent		godiller	24
-godillerez		godiller	5
-godilleriez		godiller	4
-godillerions		godiller	11
-godillerons		godiller	10
-godilleront		godiller	15
-godilles		godille	0
-godilleur	Qui avance en chaloupant.
-godilleurs		godilleur	0
-godillez		godiller	30
-godilliez		godiller	13
-godillions		godiller	19
-godillons		godiller	27
-godillot	Chaussure de l’armée française.
-godillots		godillot	0
-godions		goder	19
-godiveau	Pâté chaud composé de hachis de viande de veau, de crêtes de coq, de champignons, d’andouillettes, de graisse de bœuf, on peut aussi y mettre des asperges, des…
-godiveaux		godiveau	0
-godon	Anglais, des Anglais.
-godons		godon	9
-godron	Pli rond et tuyauté sur les jabots de chemisettes, certaines coiffures de femmes…, et qu’on faisait autrefois aux fraises.
-godronna		godronner	33
-godronnage	Action de godronner, et résultat de cette action.
-godronnages		godronnage	0
-godronnai		godronner	22
-godronnaient		godronner	32
-godronnais		godronner	29
-godronnait		godronner	34
-godronnâmes		godronner	3
-godronnant		godronner	35
-godronnas		godronner	12
-godronnasse		godronner	6
-godronnassent		godronner	17
-godronnasses		godronner	8
-godronnassiez		godronner	14
-godronnassions		godronner	25
-godronnât		godronner	20
-godronnâtes		godronner	2
-godronné	Qui présente des sinuosités.
-godronnée		godronner	37
-godronnées		godronner	36
-godronnent		godronner	31
-godronner	Border de godrons.
-godronnera		godronner	21
-godronnerai		godronner	16
-godronneraient		godronner	28
-godronnerais		godronner	18
-godronnerait		godronner	26
-godronneras		godronner	7
-godronnèrent		godronner	24
-godronnerez		godronner	5
-godronneriez		godronner	4
-godronnerions		godronner	11
-godronnerons		godronner	10
-godronneront		godronner	15
-godronnés		godronner	53
-godronnez		godronner	30
-godronniez		godronner	13
-godronnions		godronner	19
-godronnons		godronner	27
-godrons		godron	0
-goéland	Grand oiseau palmipède marin.
-goélands		goéland	0
-goélette	Hirondelle de mer, sterne pierregarin.
-goélettes		goélette	0
-goémon	Varech, terme désignant diverses algues marines, en particulier le fucus vésiculeux, qui poussent à faible profondeur et que les marées déposent sur les côtes.
-goëmonier	Navire qui récolte le goëmon.
-goëmoniers		goëmonier	0
-goémons		goémon	0
-goethéen	Relatif à Goethe ou à son œuvre.
-goethéenne		goethéen	23
-goethéennes		goethéen	1
-goethéens		goethéen	9
-goethite	Espèce minérale, forme d’oxyhydroxyde de fer trivalent, polymorphe α du composé FeO(OH).
-goethites		goethite	0
-goétie	Espèce de magie par laquelle on invoquait les génies malfaisants.
-goéties		goétie	0
-gogé		goger	56
-gogea		goger	39
-gogeai		goger	55
-gogeaient		goger	42
-gogeais		goger	52
-gogeait		goger	40
-gogeâmes		goger	68
-gogeant		goger	43
-gogeas		goger	83
-gogeasse		goger	81
-gogeassent		goger	78
-gogeasses		goger	87
-gogeassiez		goger	88
-gogeassions		goger	90
-gogeât		goger	62
-gogeâtes		goger	84
-gogée		goger	37
-gogent		goger	41
-gogeons		goger	59
-goger	Couver une maladie.
-gogera		goger	44
-gogerai		goger	50
-gogeraient		goger	63
-gogerais		goger	60
-gogerait		goger	49
-gogeras		goger	57
-gogèrent		goger	48
-gogerez		goger	58
-gogeriez		goger	74
-gogerions		goger	82
-gogerons		goger	61
-gogeront		goger	54
-goges		goger	77
-gogez		goger	47
-gogiez		goger	67
-gogions		goger	65
-goglu	Espèce d’oiseau vivant en Amérique du Nord (Dolichonyx oryzivorus).
-goglus		goglu	0
-gogo	Personne qui est d’une crédulité niaise et se laisse facilement duper en matière d’affaires et de finances.
-gogos		gogo	0
-gogue	Variété de boudin ou de saucisse aux herbes.
-goguenard	Qui affecte la moquerie, la raillerie.
-goguenarde		goguenard	23
-goguenardes		goguenard	1
-goguenardise	Attitude ironique, moqueuse.
-goguenardises		goguenardise	0
-goguenards		goguenard	9
-goguenot	Pot de chambre.
-goguenots		goguenot	0
-gogues	Pluriel de gogue, boudin, ragout, saucisse.	gogue
-goguette	Joyeux festin où la liberté est de règle.
-goguettes		goguette	0
-goï	Autre orthographe (moins usitée et ancienne) de goy.
-goïm		goï	0
-goinfra		goinfrer	33
-goinfrai		goinfrer	22
-goinfraient		goinfrer	42
-goinfrais		goinfrer	29
-goinfrait		goinfrer	40
-goinfrâmes		goinfrer	3
-goinfrant		goinfrer	35
-goinfras		goinfrer	12
-goinfrasse		goinfrer	6
-goinfrassent		goinfrer	17
-goinfrasses		goinfrer	8
-goinfrassiez		goinfrer	14
-goinfrassions		goinfrer	25
-goinfrât		goinfrer	20
-goinfrâtes		goinfrer	2
-goinfre	Celui qui a l’habitude de manger gloutonnement.
-goinfrée		goinfrer	45
-goinfrées		goinfrer	36
-goinfrent		goinfrer	41
-goinfrer	Manger beaucoup et gloutonnement, s’empiffrer.
-goinfrera		goinfrer	21
-goinfrerai		goinfrer	16
-goinfreraient		goinfrer	28
-goinfrerais		goinfrer	18
-goinfrerait		goinfrer	26
-goinfreras		goinfrer	57
-goinfrèrent		goinfrer	24
-goinfrerez		goinfrer	5
-goinfrerie	action de se goinfrer, de manger comme un goinfre.
-goinfreries		goinfrerie	0
-goinfreriez		goinfrer	4
-goinfrerions		goinfrer	11
-goinfrerons		goinfrer	10
-goinfreront		goinfrer	15
-goinfres		goinfre	0
-goinfrez		goinfrer	47
-goinfriez		goinfrer	13
-goinfrions		goinfrer	19
-goinfrons		goinfrer	27
-goïs		goï	0
-goitre	Hypertrophie diffuse de la glande thyroïde au-devant de la trachée-artère et du larynx et qui déforme le cou.
-goitres		goitre	0
-goitreuse	Personne qui a un goitre.
-goitreuses		goitreux	1
-goitreux	Qui est de la nature du goitre.
-goji	Nom vernaculaire de deux espèces d’arbrisseaux épineux de la famille des Solanacées (Solanaceae) du genre Lycium (Lycium barbarum et Lycium chinense).
-gojis		goji	0
-golden	Pomme de l'espèce Golden Delicious.
-goldens		golden	0
-golée	Grosse gorgée qu’on avale avidement.
-golées		golée	0
-golem	Dans les légendes juives du Moyen Âge, figure d’argile auquel un rabbin donnait vie pour sauver la communauté des pogroms en inscrivant sur le front de ladite …
-golems		golem	0
-golf	Jeu en deux camps sur un vaste terrain, accidenté et gazonné, qui consiste à lancer d’un point de départ fixe une balle dans un trou au moyen de crosses.
-golfa		golfer	33
-golfai		golfer	22
-golfaient		golfer	32
-golfais		golfer	29
-golfait		golfer	34
-golfâmes		golfer	3
-golfant		golfer	35
-golfas		golfer	12
-golfasse		golfer	6
-golfassent		golfer	17
-golfasses		golfer	8
-golfassiez		golfer	14
-golfassions		golfer	25
-golfât		golfer	20
-golfâtes		golfer	2
-golfe	Partie de mer plus ou moins vaste, qui entre, qui avance dans les terres, et dont l’ouverture du côté de la mer est ordinairement fort large.
-golfent		golfer	31
-golfer	Jouer au golf.
-golfera		golfer	21
-golferai		golfer	16
-golferaient		golfer	28
-golferais		golfer	18
-golferait		golfer	26
-golferas		golfer	7
-golfèrent		golfer	24
-golferez		golfer	5
-golferiez		golfer	4
-golferions		golfer	11
-golferons		golfer	10
-golferont		golfer	15
-golfes		golfe	0
-golfeur	Personne qui pratique le golf.
-golfeurs		golfeur	0
-golfeuse	Femme qui pratique le golf.
-golfeuses		golfeuse	0
-golfez		golfer	30
-golfiez		golfer	13
-golfions		golfer	19
-golfique	Qui concerne le golf.
-golfiques		golfique	0
-golfons		golfer	27
-golfs		golf	0
-Golgi	Abréviation de Appareil de Golgi.
-goliard	Au moyen-âge, clerc itinérant qui écrivait des chansons à boire et des poèmes satiriques.
-goliards		goliard	0
-goliath	Homme fort et puissant.
-golmote	Variante orthographique de golmotte.
-golmotes		golmote	0
-golmotte	Nom vernaculaire de l'amanite rougissante.
-golmottes		golmotte	0
-gomarisme	Doctrine de Gomarus, attachée à l'importance de la prédestination.
-gomariste	Protestant attaché à la doctrine de la prédestination.
-gomaristes		gomariste	0
-gomasio	Condiment à base de sésame et de sel.
-gomasios		gomasio	0
-gombo	Plante à fleurs herbacée annuelle ou bisannuelle tropicale du genre Abelmoschus, de la famille des Malvaceae (Malvacées).
-gombos		gombo	0
-goménol	Huile obtenue par distillation de melaleuca quinquenervia (niaouli), elle est utilisée comme antiseptique respiratoire, elle est composée 50% de cinéole (eucal…
-goménolé	Qui renferme du goménol.
-goménolée		goménolé	23
-goménolées		goménolé	1
-goménolés		goménolé	9
-gomina	Pommade pour lustrer les cheveux.
-gominai		gominer	22
-gominaient		gominer	32
-gominais		gominer	29
-gominait		gominer	34
-gominâmes		gominer	3
-gominant		gominer	35
-gominas		gomina	0
-gominasse		gominer	6
-gominassent		gominer	17
-gominasses		gominer	8
-gominassiez		gominer	14
-gominassions		gominer	25
-gominât		gominer	20
-gominâtes		gominer	2
-gominé	Qui est imprégné de gomina.
-gominée	Personnage féminin qui oint ses cheveux de gomina pour paraître en public.
-gominées		gominé	1
-gominent		gominer	31
-gominer	Se passer les cheveux à la gomina.
-gominera		gominer	21
-gominerai		gominer	16
-gomineraient		gominer	28
-gominerais		gominer	18
-gominerait		gominer	26
-gomineras		gominer	7
-gominèrent		gominer	24
-gominerez		gominer	5
-gomineriez		gominer	4
-gominerions		gominer	11
-gominerons		gominer	10
-gomineront		gominer	15
-gominés		gominé	9
-gominez		gominer	30
-gominiez		gominer	13
-gominions		gominer	19
-gominons		gominer	27
-gomma		gommer	39
-gommage	Action de gommer ou résultat de cette action.
-gommages		gommage	0
-gommai		gommer	22
-gommaient		gommer	32
-gommais		gommer	29
-gommait		gommer	40
-gommâmes		gommer	3
-gommant	Qui gomme.
-gommante		gommant	23
-gommantes		gommant	0
-gommants		gommant	0
-gommas		gommer	12
-gommasse		gommer	6
-gommassent		gommer	17
-gommasses		gommer	8
-gommassiez		gommer	14
-gommassions		gommer	25
-gommât		gommer	20
-gommâtes		gommer	2
-gomme	Exsudat végétal riche en polysaccharides, sécrété naturellement ou à la suite d’une blessure par certains arbres, notamment des légumineuses, et utilisé comme …
-gommée		gommé	23
-gommées		gommé	1
-gomment		gommer	41
-gommer	Effacer un écrit au moyen d’une gomme
-gommera		gommer	21
-gommerai		gommer	16
-gommeraient		gommer	28
-gommerais		gommer	18
-gommerait		gommer	49
-gommeras		gommer	7
-gommèrent		gommer	24
-gommerez		gommer	5
-gommeriez		gommer	4
-gommerions		gommer	11
-gommerons		gommer	10
-gommeront		gommer	15
-gommes		gomme	0
-gommette	Figurine en papier coloré gommé autocollante de forme circulaire, destinée à être collée.
-gommettes		gommette	0
-gommeuse	Personne qui opère le gommage.
-gommeuses		gommeux	1
-gommeux	Qui jette de la gomme.
-gommez		gommer	30
-gommier	Nom générique des arbres à gomme, tels que l’acacia, le mimosa, les eucalyptus, etc.
-gommiers		gommier	0
-gommiez		gommer	13
-gommifère	Qui produit de la gomme, qui contient de la gomme.
-gommifères		gommifère	0
-gommions		gommer	19
-gommons		gommer	27
-gommose	Nom d’une maladie des arbres.
-gommoses		gommose	0
-gomorrhéen	Homosexuel.
-gomorrhéenne	Lesbienne.
-gomorrhéennes		gomorrhéen	1
-gomorrhéens		gomorrhéen	0
-gomphide	Genre de champignon dont il existe plusieurs espèces.
-gomphides		gomphide	0
-gon	Symbole du grade, unité de mesure d’angle plan.
-gonade	Organe dans lequel sont produites les cellules reproductrices.
-gonades		gonade	0
-gonadique	Relatif aux gonades.
-gonadiques		gonadique	0
-gonadostimuline	Substance hormonale qui stimule l’activité des glandes génitales sexuelles.
-gonadotrope	Qualifie une cellule de l’anté-hypophyse qui produisent les deux gonadotrophines et les follistatines.
-gonadotropes		gonadotrope	0
-gonadotrophine	Hormone glycoprotéique agissant sur les fonctions des gonades (ovaires et testicules).
-gonadotrophines		gonadotrophine	0
-gonadotropine	Variante de gonadotrophine.
-gonadotropines		gonadotropine	0
-gonalgie	Douleur au genou.
-gonalgies		gonalgie	0
-gonarthrose	Arthrose de l’articulation du genou (chez l’homme) ou du grasset (chez le quadrupède).
-gonarthroses		gonarthrose	0
-goncourable	Qui a des chances d’avoir le Prix Goncourt.
-goncourables		goncourable	0
-gond	Morceau de fer coudé et généralement rond par la partie d’en haut, sur lequel s’emboîtent en tournant les pentures du battant d’une porte, d’un volet, d’une pe…
-gonda		gonder	33
-gondai		gonder	22
-gondaient		gonder	32
-gondais		gonder	29
-gondait		gonder	34
-gondâmes		gonder	3
-gondant		gonder	35
-gondas		gonder	12
-gondasse		gonder	6
-gondassent		gonder	17
-gondasses		gonder	8
-gondassiez		gonder	14
-gondassions		gonder	25
-gondât		gonder	20
-gondâtes		gonder	2
-gonde		gonder	64
-gondée		gonder	37
-gondées		gonder	36
-gondent		gonder	31
-gonder	Mettre des gonds à (une porte).
-gondera		gonder	21
-gonderai		gonder	16
-gonderaient		gonder	28
-gonderais		gonder	18
-gonderait		gonder	26
-gonderas		gonder	7
-gondèrent		gonder	24
-gonderez		gonder	5
-gonderiez		gonder	4
-gonderions		gonder	11
-gonderons		gonder	10
-gonderont		gonder	15
-gondés		gonder	38
-gondez		gonder	30
-gondiez		gonder	13
-gondions		gonder	19
-gondola		gondoler	39
-gondolage	Action de gondoler, de se déjeter, de se renfler, en parlant du bois atteint par l’humidité.
-gondolages		gondolage	0
-gondolai		gondoler	22
-gondolaient		gondoler	42
-gondolais		gondoler	52
-gondolait		gondoler	40
-gondolâmes		gondoler	3
-gondolant	Qui gondole.
-gondolante		gondolant	23
-gondolantes		gondolant	1
-gondolants		gondolant	9
-gondolas		gondoler	12
-gondolasse		gondoler	6
-gondolassent		gondoler	17
-gondolasses		gondoler	8
-gondolassiez		gondoler	14
-gondolassions		gondoler	25
-gondolât		gondoler	20
-gondolâtes		gondoler	2
-gondole	Petite embarcation légère à fond plat, à la proue et à la poupe recourbées, manœuvrée avec un aviron spécial, par un ou deux hommes se tenant debout et qui est…
-gondolée		gondolé	23
-gondolées		gondolé	1
-gondolement	Action de se gondoler.
-gondolements		gondolement	0
-gondolent		gondoler	41
-gondoler	Bomber en se gonflant en parlant du bois, du carton etc.
-gondolera		gondoler	44
-gondolerai		gondoler	16
-gondoleraient		gondoler	28
-gondolerais		gondoler	18
-gondolerait		gondoler	26
-gondoleras		gondoler	7
-gondolèrent		gondoler	48
-gondolerez		gondoler	5
-gondoleriez		gondoler	4
-gondolerions		gondoler	11
-gondolerons		gondoler	10
-gondoleront		gondoler	15
-gondolés		gondolé	9
-gondolez		gondoler	30
-gondolier	Celui qui mène une gondole.
-gondolière	Celle qui mène une gondole.
-gondolières		gondolière	0
-gondoliers		gondolier	0
-gondoliez		gondoler	13
-gondolions		gondoler	19
-gondolons		gondoler	27
-gondons		gonder	27
-gonds		gond	0
-gone	Enfant, gosse.
-gonelle	Robe longue portée au Moyen Âge, gonne.
-gonelles		gonelle	0
-gones		gone	0
-gonfalon	Fanion dont les chevaliers ornaient leur lance.
-gonfalonier	Celui qui porte le gonfalon.
-gonfalonière	Épouse d’un gonfalonier.
-gonfalonières		gonfalonière	0
-gonfaloniers		gonfalonier	0
-gonfalons		gonfalon	0
-gonfanon	Bannière à plusieurs fanons.
-gonfanonier	Variante de gonfalonier.
-gonfanoniers		gonfanonier	0
-gonfanons		gonfanon	0
-gonfla		gonfler	39
-gonflable	Qui peut être gonflé.
-gonflables		gonflable	0
-gonflage	Action de gonfler, le résultat de cette action.
-gonflages		gonflage	0
-gonflai		gonfler	55
-gonflaient		gonfler	42
-gonflais		gonfler	52
-gonflait		gonfler	40
-gonflâmes		gonfler	3
-gonflant	Qui a du volume.
-gonflante	Féminin singulier de gonflant.
-gonflantes		gonflant	1
-gonflants		gonflant	9
-gonflas		gonfler	12
-gonflasse		gonfler	6
-gonflassent		gonfler	17
-gonflasses		gonfler	8
-gonflassiez		gonfler	14
-gonflassions		gonfler	25
-gonflât		gonfler	20
-gonflâtes		gonfler	2
-gonflé	Rempli d’air ou de gaz ou de toute autre matière.
-gonflée		gonflé	23
-gonflées		gonflé	1
-gonflement	État de ce qui est gonflé.
-gonflements		gonflement	0
-gonflent		gonfler	41
-gonfler	Augmenter quelque chose de volume en la remplissant de gaz ou d’un fluide.
-gonflera		gonfler	44
-gonflerai		gonfler	16
-gonfleraient		gonfler	28
-gonflerais		gonfler	18
-gonflerait		gonfler	49
-gonfleras		gonfler	7
-gonflèrent		gonfler	48
-gonflerez		gonfler	5
-gonfleriez		gonfler	4
-gonflerions		gonfler	11
-gonflerons		gonfler	10
-gonfleront		gonfler	15
-gonflés		gonflé	9
-gonflette	Musculation intensive pour développer le volume musculaire.
-gonflettes		gonflette	0
-gonfleur	Outil qui sert à gonfler (par exemple, un ballon, un matelas pneumatique, etc.).
-gonfleurs		gonfleur	0
-gonflez		gonfler	47
-gonfliez		gonfler	13
-gonflions		gonfler	19
-gonflons		gonfler	27
-gong	Percussion d’Extrême-Orient, composée d’un disque de métal dont on tire des sons retentissants en le frappant avec une baguette garnie de peau.
-gongorisme	Écriture précieuse caractérisée par ses recherches de style.
-gongorismes		gongorisme	0
-gongoriste	Celui qui appartient au gongorisme, style littéraire, imitateur, partisan de Gongora.
-gongoristes		gongoriste	0
-gongs		gong	0
-gonio	Pendant la deuxième guerre mondiale, nom donné par les partisans aux camions de détection des émissions de radio clandestines.
-goniomètre	Instrument qui sert à mesurer les angles.
-goniomètres		goniomètre	0
-goniométrie	Art de mesurer les angles.
-goniométries		goniométrie	0
-goniométrique	Qui a rapport au goniomètre.
-goniométriques		goniométrique	0
-gonios		gonio	0
-gonnelle	Espèce de petit poisson osseux marin carnivore de l’Atlantique nord-ouest et de la mer du Nord, au corps très allongé et avec des ocelles noirs.
-gonnelles		gonnelle	0
-gonochorique	Qui présente le caractère du gonochorisme.
-gonochoriques		gonochorique	0
-gonochorisme	Mode de reproduction où un même individu d’une espèce n’est pas porteur de plus d’un sexe biologique et conserve cette sexualité tout au long de sa vie.
-gonochorismes		gonochorisme	0
-gonococcie	Infection due au gonocoque, gonorrhée, blennorragie.
-gonococcies		gonococcie	0
-gonocoque	Bactérie responsable chez l'Homme de la gonococcie (ou gonorrhée).
-gonocoques		gonocoque	0
-gonocyte	Cellule embryonnaire sexuelle diploïde apparaissant à la 3e semaine (18ème jour) de développement chez l’homme.
-gonocytes		gonocyte	0
-gonophore	Prolongement du réceptacle qui porte les étamines et le pistil.
-gonophores		gonophore	0
-gonorrhée	Autre nom de la blennorragie.
-gonorrhées		gonorrhée	0
-gonosome	Chromosome impliqué dans la détermination du sexe d’un individu.
-gonosomes		gonosome	0
-gonosomique	Relatif aux chromosomes sexuels.
-gonosomiques		gonosomique	0
-gonozoïde	Polype sexué.
-gonozoïdes		gonozoïde	0
-gons		gon	0
-gonze	Homme quelconque.
-gonzes		gonze	0
-gonzesse	Femme ou jeune femme, nana.
-gonzesses		gonzesse	0
-gonzo	Qualifie un style journalistique outrageusement personnel, opposé aux dogmes de neutralité subjective de la profession.
-goodie	Produit dérivé.
-goodies	Support médiatique.
-goodwill	Survaleur.
-goodwills		goodwill	0
-googla		googler	33
-googlai		googler	22
-googlaient		googler	32
-googlais		googler	29
-googlait		googler	34
-googlâmes		googler	3
-googlant		googler	35
-googlas		googler	12
-googlasse		googler	6
-googlassent		googler	17
-googlasses		googler	8
-googlassiez		googler	14
-googlassions		googler	25
-googlât		googler	20
-googlâtes		googler	2
-googlé		googler	46
-googlée		googler	37
-googlées		googler	36
-googlent		googler	31
-googler	Saisir un mot, un ensemble de mots ou une phrase sur le moteur de recherche Google dans le but de trouver des réponses à ses questions ou des informations sur …
-googlera		googler	21
-googlerai		googler	16
-googleraient		googler	28
-googlerais		googler	18
-googlerait		googler	26
-googleras		googler	7
-googlèrent		googler	24
-googlerez		googler	5
-googleriez		googler	4
-googlerions		googler	11
-googlerons		googler	10
-googleront		googler	15
-googlés		googler	38
-googlez		googler	30
-googliez		googler	13
-googlions		googler	19
-googlisa		googliser	39
-googlisai		googliser	55
-googlisaient		googliser	42
-googlisais		googliser	52
-googlisait		googliser	40
-googlisâmes		googliser	68
-googlisant		googliser	43
-googlisas		googliser	83
-googlisasse		googliser	81
-googlisassent		googliser	78
-googlisasses		googliser	87
-googlisassiez		googliser	88
-googlisassions		googliser	90
-googlisât		googliser	62
-googlisâtes		googliser	84
-googlisé		googliser	56
-googlisée		googliser	45
-googlisées		googliser	51
-googlisent		googliser	41
-googliser	Rechercher sur Internet en utilisant Google.
-googlisera		googliser	44
-googliserai		googliser	50
-googliseraient		googliser	63
-googliserais		googliser	60
-googliserait		googliser	49
-googliseras		googliser	57
-googlisèrent		googliser	48
-googliserez		googliser	58
-googliseriez		googliser	74
-googliserions		googliser	82
-googliserons		googliser	61
-googliseront		googliser	54
-googlisés		googliser	53
-googlisez		googliser	47
-googlisiez		googliser	67
-googlisions		googliser	65
-googlisons		googliser	59
-googlons		googler	27
-gopak	Hopak, danse populaire ukrainienne.
-gopaks		gopak	0
-gopura	Tour monumentale par laquelle on pénètre dans les enceintes successives des temples hindouistes.
-gopuras		gopura	0
-goral	Nom vernaculaire de Nemorhaedus goral, caprin des montagnes asiatiques vivant entre la Birmanie et le sud de la Sibérie.
-gorals		goral	0
-gorbatchévien	Relatif à Mikhaïl Gorbatchev, à sa politique.
-gorbatchévienne		gorbatchévien	23
-gorbatchéviens		gorbatchévien	9
-gord	Double rangée de perches plantées dans le fond de la rivière, qui forment un angle, au sommet duquel est un filet où viennent se prendre les poissons.
-gordien	Inextricable, insoluble.
-gordiens		gordien	9
-gords		gord	0
-gore	Genre cinématographique et littéraire dérivé de l’horreur, où il y a beaucoup de sang qui coule.
-goréen	De Gorée, île du Sénégal.
-goréenne		goréen	23
-goréennes		goréen	1
-goréens		goréen	9
-gores		gore	186
-goret	Jeune cochon ; porcelet.
-gorets		goret	0
-gorfou	Sphénisciforme (manchot) du genre Eudyptes.
-gorfous		gorfou	0
-gorge	Partie antérieure du cou de l’être humain ou de l’animal.
-gorgea		gorger	39
-gorgeai		gorger	55
-gorgeaient		gorger	42
-gorgeais		gorger	52
-gorgeait		gorger	40
-gorgeâmes		gorger	3
-gorgeant		gorger	43
-gorgeas		gorger	12
-gorgeasse		gorger	6
-gorgeassent		gorger	17
-gorgeasses		gorger	8
-gorgeassiez		gorger	14
-gorgeassions		gorger	25
-gorgeât		gorger	20
-gorgeâtes		gorger	2
-gorgebleue	→ voir gorge-bleue, → voir gorgebleue à miroir
-gorgebleues		gorgebleue	0
-gorgée	Quantité de liquide que l’on peut avaler en une seule fois.
-gorgées		gorgée	0
-gorgent		gorger	41
-gorgeon	Gorgée bue.
-gorgeons		gorgeon	0
-gorger	Alimenter avec excès.
-gorgera		gorger	21
-gorgerai		gorger	16
-gorgeraient		gorger	28
-gorgerais		gorger	18
-gorgerait		gorger	26
-gorgeras		gorger	7
-gorgèrent		gorger	48
-gorgeret	Instrument de chirurgie, constitué principalement d’une gouttière allongée en forme de gorge, utilisé dans l’opération de la fistule à l’anus et dans celle de …
-gorgerets		gorgeret	0
-gorgerette	Espèce de collerette servant à couvrir la gorge des femmes.
-gorgerettes		gorgerette	0
-gorgerez		gorger	5
-gorgeriez		gorger	4
-gorgerin	Pièce de l’armure qui servait autrefois pour couvrir et défendre la gorge d’un homme d’armes.
-gorgerins		gorgerin	0
-gorgerions		gorger	11
-gorgerons		gorger	10
-gorgeront		gorger	15
-gorges		gorge	0
-gorget	Sorte de rabot pour faire des moulures fines et concaves.
-gorgets		gorget	0
-gorgez		gorger	47
-gorgiez		gorger	13
-gorgions		gorger	19
-gorgone	Gorgone.
-gorgones		gorgone	0
-gorgonzola	Fromage italien à pâte molle, à base de lait de vache, à pâte persillée.
-gorgonzolas		gorgonzola	0
-gorgoton	Gorge, gosier.
-gorgotons		gorgoton	0
-gorille	Grand singe de la famille des hominidés dont la forme se rapproche le plus de celle de l’être humain et qu’on trouve dans plusieurs pays d’Afrique.
-gorilles		gorille	0
-goron	Vin rouge valaisan.
-gorons		goron	0
-gos	Pluriel de go (jeu de stratégie).	go
-gosette	Chausson (spécialité pâtissière faite d’une feuille de pâte à tarte repliée sur des fruits cuits : pommes, abricots, cerises).
-gosettes		gosette	0
-gosier	La partie intérieure de la gorge qui fait communiquer le pharynx avec l’œsophage.
-gosiers		gosier	118
-gospel	Chant religieux chrétien développé d’abord chez les afro-américains et les blancs du sud des États-Unis.
-gospels		gospel	0
-Gosplan	Commission de planification de l’URSS qui donnait une prévision de l’ensemble des objectifs à réaliser pour assurer la croissance du pays.
-Gosplans		Gosplan	0
-gossa		gosser	39
-gossai		gosser	22
-gossaient		gosser	32
-gossais		gosser	29
-gossait		gosser	34
-gossâmes		gosser	3
-gossant	Dérangeant ; agaçant.
-gossas		gosser	12
-gossasse		gosser	6
-gossassent		gosser	17
-gossasses		gosser	8
-gossassiez		gosser	14
-gossassions		gosser	25
-gossât		gosser	20
-gossâtes		gosser	2
-gosse	Enfant, garçon ou fille.
-gossée		gosser	37
-gossées		gosser	36
-gossent		gosser	31
-gosser	Tailler un bout de bois avec un couteau dans le but de passer le temps.
-gossera		gosser	21
-gosserai		gosser	16
-gosseraient		gosser	28
-gosserais		gosser	18
-gosserait		gosser	26
-gosseras		gosser	7
-gossèrent		gosser	24
-gosserez		gosser	5
-gosseriez		gosser	4
-gosserions		gosser	11
-gosserons		gosser	10
-gosseront		gosser	15
-gosses		gosse	0
-gossez		gosser	30
-gossiez		gosser	13
-gossions		gosser	19
-gossons		gosser	27
-goth	Relatif aux Goths.
-gotha	Ellipse de almanach de Gotha, bottin qui fut, entre 1763 et 1944, le guide de référence de la haute noblesse et des familles royales européennes.
-gothas		gotha	0
-gothe		goth	23
-gothes		goth	1
-gothique	Qui est relatif aux Goths et aux peuples qui leur ont succédé.
-gothiques		gothique	0
-goths		goth	9
-gotique	Langue germanique aujourd’hui éteinte, parlée au début de l’ère chrétienne par les Goths et, plus particulièrement, les Wisigoths.
-goton	Fille de campagne, servante.
-gotons		goton	0
-gouacha		gouacher	33
-gouachai		gouacher	22
-gouachaient		gouacher	32
-gouachais		gouacher	29
-gouachait		gouacher	34
-gouachâmes		gouacher	3
-gouachant		gouacher	35
-gouachas		gouacher	12
-gouachasse		gouacher	6
-gouachassent		gouacher	17
-gouachasses		gouacher	8
-gouachassiez		gouacher	14
-gouachassions		gouacher	25
-gouachât		gouacher	20
-gouachâtes		gouacher	2
-gouache	Peinture opaque et pâteuse composée d’eau mêlée de gomme.
-gouachée		gouacher	37
-gouachées		gouacher	36
-gouachent		gouacher	31
-gouacher	Recouvrir de gouache, peindre avec de la gouache.
-gouachera		gouacher	21
-gouacherai		gouacher	16
-gouacheraient		gouacher	28
-gouacherais		gouacher	18
-gouacherait		gouacher	26
-gouacheras		gouacher	7
-gouachèrent		gouacher	24
-gouacherez		gouacher	5
-gouacheriez		gouacher	4
-gouacherions		gouacher	11
-gouacherons		gouacher	10
-gouacheront		gouacher	15
-gouaches		gouache	0
-gouachez		gouacher	47
-gouachiez		gouacher	13
-gouachions		gouacher	19
-gouachons		gouacher	27
-gouailla		gouailler	39
-gouaillai		gouailler	22
-gouaillaient		gouailler	32
-gouaillais		gouailler	29
-gouaillait		gouailler	34
-gouaillâmes		gouailler	3
-gouaillant		gouailler	35
-gouaillas		gouailler	12
-gouaillasse		gouailler	6
-gouaillassent		gouailler	17
-gouaillasses		gouailler	8
-gouaillassiez		gouailler	14
-gouaillassions		gouailler	25
-gouaillât		gouailler	20
-gouaillâtes		gouailler	2
-gouaille	Attitude impertinente, moqueuse, insolente.
-gouaillée		gouailler	37
-gouaillées		gouailler	36
-gouaillent		gouailler	31
-gouailler	Railler, plaisanter sans délicatesse.
-gouaillera		gouailler	21
-gouaillerai		gouailler	16
-gouailleraient		gouailler	28
-gouaillerais		gouailler	18
-gouaillerait		gouailler	26
-gouailleras		gouailler	7
-gouaillèrent		gouailler	24
-gouaillerez		gouailler	5
-gouaillerie	Action de gouailler, de se moquer, attitude goguenarde.
-gouailleries		gouaillerie	0
-gouailleriez		gouailler	4
-gouaillerions		gouailler	11
-gouaillerons		gouailler	10
-gouailleront		gouailler	15
-gouaillés		gouailler	38
-gouailleur	Qui se plaît à gouailler, à railler.
-gouailleurs		gouailleur	9
-gouailleuse	Celle qui se plaît à gouailler.
-gouailleuses		gouailleur	1
-gouaillez		gouailler	30
-gouailliez		gouailler	13
-gouaillions		gouailler	19
-gouaillon	Relatif à Gouaix, commune française située dans le département de la Seine-et-Marne.
-gouaillons		gouaillon	9
-goualante	Chanson populaire.
-goualantes		goualante	0
-goualeuse	Chanteuse des rues.
-goualeuses		goualeuse	0
-gouape	Personne peu recommandable.
-gouapes		gouape	0
-gouda	Fromage hollandais.
-goudas		gouda	0
-goudron	Résine noirâtre pour calfater les navires.
-goudronna		goudronner	33
-goudronnage	Action de goudronner
-goudronnages		goudronnage	0
-goudronnai		goudronner	22
-goudronnaient		goudronner	32
-goudronnais		goudronner	29
-goudronnait		goudronner	34
-goudronnâmes		goudronner	3
-goudronnant		goudronner	35
-goudronnas		goudronner	12
-goudronnasse		goudronner	6
-goudronnassent		goudronner	17
-goudronnasses		goudronner	8
-goudronnassiez		goudronner	14
-goudronnassions		goudronner	25
-goudronnât		goudronner	20
-goudronnâtes		goudronner	2
-goudronné	Qui est recouvert de goudron.
-goudronnée		goudronné	23
-goudronnées		goudronné	1
-goudronnent		goudronner	31
-goudronner	Enduire, imbiber ou recouvrir de goudron.
-goudronnera		goudronner	21
-goudronnerai		goudronner	16
-goudronneraient		goudronner	28
-goudronnerais		goudronner	18
-goudronnerait		goudronner	26
-goudronneras		goudronner	7
-goudronnèrent		goudronner	24
-goudronnerez		goudronner	5
-goudronnerie	Lieu où lʼon fabrique le goudron.
-goudronneries		goudronnerie	0
-goudronneriez		goudronner	4
-goudronnerions		goudronner	11
-goudronnerons		goudronner	10
-goudronneront		goudronner	15
-goudronnés		goudronné	9
-goudronneur	Ouvrier qui goudronne des planches, un bateau, etc.
-goudronneurs		goudronneur	0
-goudronneuse	Machine pour goudronner la voie publique.
-goudronneuses		goudronneuse	0
-goudronneux	Qui est de la nature du goudron.
-goudronnez		goudronner	47
-goudronnier	Celui qui fabrique le goudron dans une goudronnière.
-goudronnière	Lieu où l'on fabrique le goudron.
-goudronnières		goudronnière	0
-goudronniers		goudronnier	0
-goudronniez		goudronner	13
-goudronnions		goudronner	19
-goudronnons		goudronner	27
-goudrons		goudron	0
-gouet	Variante de gouais (uva rabuscula).
-gouets		gouet	0
-gouffre	Cavité souterraine naturelle, large et profonde.
-gouffres		gouffre	0
-gouge	Outil de fer, fait en forme de demi-canal, avec un manche de bois, à l’usage de différentes professions: sculpteurs, tourneurs, plombiers, menuisiers, charpent…
-gougea		gouger	33
-gougeage	Opération consistant à éliminer, par des moyens mécaniques ou thermiques, les défauts ou dépôts éventuels sur un cordon de soudure.
-gougeages		gougeage	0
-gougeai		gouger	22
-gougeaient		gouger	32
-gougeais		gouger	29
-gougeait		gouger	34
-gougeâmes		gouger	3
-gougeant		gouger	35
-gougeas		gouger	12
-gougeasse		gouger	6
-gougeassent		gouger	17
-gougeasses		gouger	8
-gougeassiez		gouger	14
-gougeassions		gouger	25
-gougeât		gouger	20
-gougeâtes		gouger	2
-gougée		gouger	37
-gougées		gouger	36
-gougent		gouger	31
-gougeons		gouger	27
-gouger	Travailler avec la gouge.
-gougera		gouger	21
-gougerai		gouger	16
-gougeraient		gouger	28
-gougerais		gouger	18
-gougerait		gouger	26
-gougeras		gouger	7
-gougère	Petit chou au gruyère.
-gougèrent		gouger	24
-gougères		gougère	0
-gougerez		gouger	5
-gougeriez		gouger	4
-gougerions		gouger	11
-gougerons		gouger	10
-gougeront		gouger	15
-gouges		gouge	0
-gougez		gouger	30
-gougiez		gouger	13
-gougions		gouger	19
-gougnafier	Bon à rien.
-gougnafiers		gougnafier	0
-gougoune	Sandale à deux brides dont le point d’attache sur le devant de la semelle se trouve entre le gros et le deuxième orteil.
-gougounes		gougoune	0
-gougoutte	Petite quantité d'un liquide.
-gougouttes		gougoutte	0
-gouille	Flaque, trou d’eau dans une rivière, mare, petit étang.
-gouilles		gouille	0
-goujat	Homme mal élevé et grossier, en particulier avec les femmes.
-goujate	Femme mal élevée et grossière.
-goujatement	De façon goujate.
-goujater	Mal exécuter.
-goujaterie	Acte bas et grossier.
-goujateries		goujaterie	0
-goujatés		goujater	53
-goujats		goujat	0
-goujon	Petite gouge de sculpteur.
-goujonna		goujonner	33
-goujonnage	Action d’assembler avec des goujons.
-goujonnages		goujonnage	0
-goujonnai		goujonner	22
-goujonnaient		goujonner	32
-goujonnais		goujonner	29
-goujonnait		goujonner	34
-goujonnâmes		goujonner	3
-goujonnant		goujonner	35
-goujonnas		goujonner	12
-goujonnasse		goujonner	6
-goujonnassent		goujonner	17
-goujonnasses		goujonner	8
-goujonnassiez		goujonner	14
-goujonnassions		goujonner	25
-goujonnât		goujonner	20
-goujonnâtes		goujonner	2
-goujonné		goujonner	46
-goujonnée		goujonner	37
-goujonnées		goujonner	36
-goujonnent		goujonner	31
-goujonner	Assembler avec des goujons.
-goujonnera		goujonner	21
-goujonnerai		goujonner	16
-goujonneraient		goujonner	28
-goujonnerais		goujonner	18
-goujonnerait		goujonner	26
-goujonneras		goujonner	7
-goujonnèrent		goujonner	24
-goujonnerez		goujonner	5
-goujonneriez		goujonner	4
-goujonnerions		goujonner	11
-goujonnerons		goujonner	10
-goujonneront		goujonner	15
-goujonnés		goujonner	38
-goujonnette	Filet de poisson coupé en bâtonnets de dix centimètres sur trois environ.
-goujonnettes		goujonnette	0
-goujonnez		goujonner	30
-goujonnier	Petit épervier dont les mailles sont très serrées.
-goujonnière		goujonnier	23
-goujonnières		goujonnier	1
-goujonniers		goujonnier	0
-goujonniez		goujonner	13
-goujonnions		goujonner	19
-goujonnons		goujonner	27
-goujons		goujon	0
-goujure	Entaille faite à l'aide d'une gouge.
-goujures		goujure	0
-goulache	Variante de goulash.
-goulaches		goulache	0
-goulafe	Goinfre, glouton.
-goulafes		goulafe	0
-goulafre	Goinfre, glouton.
-goulafres		goulafre	0
-goulag	Système concentrationnaire soviétique.
-goulags		goulag	0
-goulasch	Variante orthographique de goulash.
-goulaschs		goulasch	0
-goulash	Ragout de bœuf au paprika, d’origine hongroise.
-goulashs		goulash	0
-goule	Génie dévorant, d’après les superstitions du Levant, les corps morts dans les cimetières, résurrectionniste.
-goulée	ou Grosse bouchée ou gorgée qu’on avale avidement.
-goulées		goulée	0
-goules		goule	0
-goulet	Entrée étroite d’un port, d’une rade.
-goulets		goulet	0
-goulette	Petit canal de pierre ou de marbre, qui a une pente douce, et qui est interrompu de distance en distance par de petits bassins, pour le jeu des eaux.
-goulettes		goulette	0
-gouleyant	Se dit d’un vin (ou d’une eau-de-vie, d’un cidre, d’une bière) frais, agréable à boire, léger.
-gouleyante		gouleyant	109
-gouleyantes		gouleyant	1
-gouleyants		gouleyant	0
-goulot	Col d’une bouteille, d’une cruche, ou de tout autre récipient dont l’entrée est étroite.
-goulots		goulot	0
-goulotte	Petite rigole pour servir à l’écoulement des eaux.
-goulottes		goulotte	0
-goulu	Qui aime à manger, qui mange avec avidité.
-goulue		goulu	23
-goulues	Type de tenailles.
-goulûment	D’une manière goulue.
-goulus		goulu	9
-goum	Contingent que devait fournir chaque tribu pour les expéditions militaires.
-goumier	Soldat faisant partie d’un goum (unité d’infanterie légère de l’armée d’Afrique composée de troupes autochtones marocaines ou de tribus sahariennes nomades (ar…
-goumiers		goumier	0
-goums		goum	0
-goupil	Renard.
-goupilla		goupiller	33
-goupillai		goupiller	22
-goupillaient		goupiller	32
-goupillais		goupiller	29
-goupillait		goupiller	40
-goupillâmes		goupiller	3
-goupillant		goupiller	35
-goupillas		goupiller	12
-goupillasse		goupiller	6
-goupillassent		goupiller	17
-goupillasses		goupiller	8
-goupillassiez		goupiller	14
-goupillassions		goupiller	25
-goupillât		goupiller	20
-goupillâtes		goupiller	2
-goupille	Petit cylindre, petite cheville métallique, dont on se sert dans l’horlogerie, dans l’armurerie, dans les constructions mécaniques ou métalliques, pour arrêter…
-goupillée		goupiller	45
-goupillées		goupiller	36
-goupillent		goupiller	31
-goupiller	Combiner, arranger, manigancer, concevoir.
-goupillera		goupiller	21
-goupillerai		goupiller	16
-goupilleraient		goupiller	28
-goupillérais	Relatif à Goupillières, commune française située dans le département de la Seine-Maritime.
-goupillerait		goupiller	26
-goupilleras		goupiller	7
-goupillèrent		goupiller	24
-goupillerez		goupiller	5
-goupilleriez		goupiller	4
-goupillerions		goupiller	11
-goupillerons		goupiller	10
-goupilleront		goupiller	15
-goupilles		goupille	0
-goupillez		goupiller	30
-goupilliez		goupiller	13
-goupillions		goupiller	19
-goupillon	Petit bâton de bois ou de métal garni de poils rudes ou d’une boule percée de trous, qui sert à l’église pour prendre de l’eau bénite et pour la jeter sur les …
-goupillons		goupillon	0
-goupils		goupil	0
-gour	Concrétion carbonatée (spéléothème) en forme de barrage en travers d’un écoulement d’eau.
-goura	Genre d’oiseaux de la famille des colombidés regroupant trois espèces endémiques à la Nouvelle-Guinée au plumage d'un beau bleu azuré et dont la grande huppe d…
-gourai		gourer	22
-gouraient		gourer	42
-gourais		gourer	52
-gourait		gourer	40
-gourâmes		gourer	3
-gourami	Nom usuel de plusieurs espèces de poissons des eaux douces et chaudes d’Asie du sud, principalement de la famille des Osphronemidae.
-gouramis		gourami	0
-gourance	Erreur.
-gourances		gourance	0
-gourant		gourer	35
-gourante	Variante de gourance.
-gourantes		gourante	0
-gouras		gourer	12
-gourasse		gourer	6
-gourassent		gourer	17
-gourasses		gourer	8
-gourassiez		gourer	14
-gourassions		gourer	25
-gourât		gourer	20
-gourâtes		gourer	2
-gourbet	Oyat, ou ammophila arenaria.
-gourbets		gourbet	0
-gourbi	Cabane, hutte d’Afrique du Nord.
-gourbis		gourbi	0
-gourbiville	Agglomération d’habitations sommaires et insalubres.
-gourbivilles		gourbiville	0
-gourd	Qui est devenu comme perclus par le froid.
-gourde	Plante de la famille des cucurbitacées.
-gourdes		gourde	0
-gourdin	Gros bâton.
-gourdins		gourdin	0
-gourds		gourd	9
-goure	Drogue falsifiée.
-gourée		gourer	45
-gourées		gourer	51
-gouren	Lutte bretonne.
-gourent		gourer	41
-gourer	Duper ; tromper.
-gourera		gourer	21
-gourerai		gourer	16
-goureraient		gourer	28
-gourerais		gourer	18
-gourerait		gourer	49
-goureras		gourer	7
-gourèrent		gourer	24
-gourerez		gourer	5
-goureriez		gourer	4
-gourerions		gourer	11
-gourerons		gourer	10
-goureront		gourer	15
-goures		gourer	77
-gourez		gourer	47
-gourgandine	Celle qui aime à séduire en quantité, femme de mauvaise vie, dévergondée.
-gourgandines		gourgandine	0
-gourgane	Variété de fève (Vicia faba).
-gourganes		gourgane	0
-gouriez		gourer	13
-gourions		gourer	19
-gourmade	Coup de poing sur la figure.
-gourmades		gourmade	0
-gourmand	Qui mange avec avidité et parfois avec excès.
-gourmanda		gourmander	33
-gourmandai		gourmander	55
-gourmandaient		gourmander	32
-gourmandais		gourmander	52
-gourmandait		gourmander	40
-gourmandâmes		gourmander	3
-gourmandant		gourmander	43
-gourmandas		gourmander	12
-gourmandasse		gourmander	6
-gourmandassent		gourmander	17
-gourmandasses		gourmander	8
-gourmandassiez		gourmander	14
-gourmandassions		gourmander	25
-gourmandât		gourmander	20
-gourmandâtes		gourmander	2
-gourmande	Femme gourmande.
-gourmandée		gourmander	37
-gourmandées		gourmander	36
-gourmandent		gourmander	41
-gourmander	Manier rudement un cheval de la main.
-gourmandera		gourmander	21
-gourmanderai		gourmander	16
-gourmanderaient		gourmander	28
-gourmanderais		gourmander	18
-gourmanderait		gourmander	26
-gourmanderas		gourmander	7
-gourmandèrent		gourmander	24
-gourmanderez		gourmander	5
-gourmanderiez		gourmander	4
-gourmanderions		gourmander	11
-gourmanderons		gourmander	10
-gourmanderont		gourmander	15
-gourmandes		gourmand	1
-gourmandez		gourmander	30
-gourmandiez		gourmander	13
-gourmandions		gourmander	19
-gourmandise	Défaut de celui qui est gourmand, qui mange plus que de raison.
-gourmandises		gourmandise	0
-gourmandons		gourmander	27
-gourmands		gourmand	9
-gourmantché	Langue oti-volta parlée par les Gourmantchés au Burkina Faso, au Togo, au Bénin et au Niger.
-gourme	Inflammation des fosses nasales qui survient aux jeunes chevaux.
-gourmée		gourmé	23
-gourmées		gourmer	36
-gourmer	Brider un cheval en lui fixant la gourmette.
-gourmés		gourmé	9
-gourmet	Qui sait apprécier les vins, en a une bonne connaissance.
-gourmets		gourmet	9
-gourmette	Celle qui, en dégustant le vin, sait en déterminer la provenance, la date et les diverses caractéristiques.
-gourmettes		gourmet	1
-gournabla		gournabler	33
-gournablai		gournabler	22
-gournablaient		gournabler	32
-gournablais		gournabler	29
-gournablait		gournabler	34
-gournablâmes		gournabler	3
-gournablant		gournabler	35
-gournablas		gournabler	12
-gournablasse		gournabler	6
-gournablassent		gournabler	17
-gournablasses		gournabler	8
-gournablassiez		gournabler	14
-gournablassions		gournabler	25
-gournablât		gournabler	20
-gournablâtes		gournabler	2
-gournable	Longue cheville de bois de chêne employée à fixer le bordage sur les membrures d’un vaisseau
-gournablée		gournabler	37
-gournablées		gournabler	36
-gournablent		gournabler	31
-gournabler	Enfoncer des gournables dans un bordage.
-gournablera		gournabler	21
-gournablerai		gournabler	16
-gournableraient		gournabler	28
-gournablerais		gournabler	18
-gournablerait		gournabler	26
-gournableras		gournabler	7
-gournablèrent		gournabler	24
-gournablerez		gournabler	5
-gournableriez		gournabler	4
-gournablerions		gournabler	11
-gournablerons		gournabler	10
-gournableront		gournabler	15
-gournablés		gournabler	38
-gournablez		gournabler	30
-gournabliez		gournabler	13
-gournablions		gournabler	19
-gournablons		gournabler	27
-gouro	Langue mandée des Gouro, parlée en Côte d’Ivoire principalement dans les régions du Haut-Sassandra et de la Marahoué.
-gourons		gourer	27
-gouros		gouro	0
-gourou	Maître spirituel hindou.
-gourous		gourou	0
-gouroute	Maitresse spirituelle hindoue.
-gouroutes		gouroute	0
-gours		gour	0
-goussaut	Plein, fort, en parlant du cheval
-goussauts		goussaut	0
-gousse	Fruit sec, dépourvu de cloison, à deux valves, garnies chacune d’une rangée de graines, et avec deux fentes de déhiscence (mot utilisé notamment pour les fruit…
-gousses		gousse	0
-gousset	Petite poche destinée à renfermer de l’argent, des bijoux, une montre, etc., et fixée à la ceinture du pantalon ou plus souvent au gilet.
-goussets		gousset	0
-goût	Celui des cinq sens par lequel on discerne les saveurs.
-goûta		goûter	39
-goûtai		goûter	55
-goûtaient		goûter	42
-goûtais		goûter	52
-goûtait		goûter	40
-goûtâmes		goûter	68
-goûtant		goûter	43
-goûtas		goûter	12
-goûtasse		goûter	6
-goûtassent		goûter	17
-goûtasses		goûter	8
-goûtassiez		goûter	14
-goûtassions		goûter	25
-goûtât		goûter	20
-goûtâtes		goûter	2
-goute	Variante orthographique de goutte.
-goûtée		goûter	45
-goûtées		goûter	51
-goûtent		goûter	41
-gouter	Exercer le sens du gout sur ce qui a de la saveur.
-goûtera		goûter	44
-goûterai		goûter	50
-goûteraient		goûter	28
-goûterais		goûter	60
-goûterait		goûter	49
-goûteras		goûter	57
-goûtèrent		goûter	48
-goûterez		goûter	58
-goûteriez		goûter	4
-goûterions		goûter	11
-goûterons		goûter	61
-goûteront		goûter	54
-goûters		goûter	0
-goûtes		goûter	77
-gouteur	Variante orthographique de goûteur.
-goûteurs		goûteur	0
-goûteuse	Personne chargée de tester les plats cuisinés pour en apprécier le goût ou pour déterminer s’ils ne sont pas empoisonnés.
-goûteuses		goûteux	1
-goûteux	Variante, dans l’orthographe traditionnelle, de gouteux.
-goûtez		goûter	47
-goûtiez		goûter	67
-goûtions		goûter	65
-goûtons		goûter	59
-goûts		goût	0
-goutta		goutter	33
-gouttai		goutter	22
-gouttaient		goutter	32
-gouttais		goutter	29
-gouttait		goutter	40
-gouttâmes		goutter	3
-gouttant		goutter	43
-gouttas		goutter	12
-gouttasse		goutter	6
-gouttassent		goutter	17
-gouttasses		goutter	8
-gouttassiez		goutter	14
-gouttassions		goutter	25
-gouttât		goutter	20
-gouttâtes		goutter	2
-goutte	Très petite quantité d’un liquide qui se détache avec une forme sphérique.
-gouttelette	Petite goutte de quelque liquide.
-gouttelettes		gouttelette	0
-gouttent		goutter	41
-goutter	S'écouler goutte à goutte.
-gouttera		goutter	44
-goutterai		goutter	16
-goutteraient		goutter	28
-goutterais		goutter	60
-goutterait		goutter	26
-goutteras		goutter	7
-gouttereau	Qui supporte les gouttières et les gargouilles, en parlant d’un mur.
-gouttereaux		gouttereau	9
-gouttèrent		goutter	24
-goutterez		goutter	5
-goutteriez		goutter	4
-goutterions		goutter	11
-goutterons		goutter	10
-goutteront		goutter	15
-gouttes		goutte	0
-goutteur	Dispositif de micro-irrigation permettant d’irriguer un sol cultivé au goutte à goutte, ce qui limite les pertes d’eau par évaporation.
-goutteurs		goutteur	0
-goutteuse	Personne qui souffre de la goutte.
-goutteuses		goutteux	1
-goutteux	Qui est sujet à la goutte.
-gouttez		goutter	30
-gouttier	Qui concerne l’évacuation des eaux.
-gouttière	Petit canal placé au bord des toits et par où les eaux de pluie s’écoulent.
-gouttières		gouttier	1
-gouttiez		goutter	13
-gouttina		gouttiner	39
-gouttinait		gouttiner	71
-gouttinant		gouttiner	43
-gouttinât		gouttiner	62
-gouttiné		gouttiner	56
-gouttiner	Pleuvoir un petit peu.
-gouttinera		gouttiner	44
-gouttinerait		gouttiner	49
-gouttions		goutter	19
-gouttons		goutter	27
-goutu	Gouteux, qui a du gout.
-goutue		goutu	23
-goutues		goutu	1
-goutus		goutu	9
-gouverna		gouverner	33
-gouvernable	Qui peut être gouverné, qui se laisse gouverner.
-gouvernables		gouvernable	0
-gouvernai		gouverner	22
-gouvernaient		gouverner	42
-gouvernail	Dispositif mobile, fixé à l’arrière d’un navire, d’un bateau, d’un avion qui sert à lui faire prendre telle ou telle direction, le faire aller du côté qu’on ve…
-gouvernails		gouvernail	0
-gouvernais		gouverner	29
-gouvernait		gouverner	40
-gouvernâmes		gouverner	3
-gouvernance	Manière de concevoir et d’exercer l’autorité à la tête d’une entreprise, d’une organisation, d’un État.
-gouvernances		gouvernance	0
-gouvernant	Qui gouverne.
-gouvernante	Femme à laquelle on confie l’éducation d’un ou de plusieurs enfants.
-gouvernantes		gouvernant	1
-gouvernants		gouvernant	9
-gouvernas		gouverner	12
-gouvernasse		gouverner	6
-gouvernassent		gouverner	17
-gouvernasses		gouverner	8
-gouvernassiez		gouverner	14
-gouvernassions		gouverner	25
-gouvernat	Mandat, charge, fonction d’un gouverneur.
-gouvernâtes		gouverner	2
-gouverne	Ce qui doit servir de règle de conduite dans une affaire.
-gouvernée		gouverner	45
-gouvernées		gouverner	36
-gouvernement	Action, charge, ou manière de gouverner, de régir, d’administrer quelque chose, en particulier dans le domaine politique.
-gouvernemental	Relatif au gouvernement.
-gouvernementale		gouvernemental	23
-gouvernementaux		gouvernemental	9
-gouvernements		gouvernement	0
-gouvernent		gouverner	41
-gouverner	Diriger une embarcation à l’aide d’un gouvernail.
-gouvernera		gouverner	44
-gouvernerai		gouverner	50
-gouverneraient		gouverner	28
-gouvernerais		gouverner	18
-gouvernerait		gouverner	49
-gouverneras		gouverner	57
-gouvernèrent		gouverner	24
-gouvernerez		gouverner	58
-gouverneriez		gouverner	4
-gouvernerions		gouverner	11
-gouvernerons		gouverner	61
-gouverneront		gouverner	54
-gouvernes		gouverne	0
-gouverneur	Celui qui est chargé de la direction d’une subdivision administrative de premier niveau, comme une province ou un État, d’une colonie ou d’un grand établisseme…
-gouverneure	Femme chargée de la direction d’une subdivision administrative de premier niveau, comme une province ou un État, une colonie ou un grand établissement financie…
-gouverneures		gouverneure	0
-gouverneurs		gouverneur	0
-gouverneuse	Femme qui a soin du ménage d’un homme veuf ou célibataire.
-gouverneuses		gouverneuse	0
-gouvernez		gouverner	47
-gouverniez		gouverner	67
-gouvernions		gouverner	19
-gouvernons		gouverner	27
-gouvernorat	Région dans laquelle s’exerce l’autorité d’un gouverneur, notamment dans certains pays arabes.
-gouvernorats		gouvernorat	0
-goy	Non juif.
-goya	Mare artificielle de récupération d'eau de pluie pour l'abreuvement du bétail.
-goyas		goya	0
-goyave	Fruit tropical comestible originaire des Amériques produit par un arbre, le goyavier, de forme ronde, ovale, ou parfois en forme de poire, qui mesure de 5 à 7 …
-goyaves		goyave	0
-goyavier	Arbre originaire des régions tropicales pouvant atteindre 8 mètres de haut exploité pour ses fruits, les goyaves.
-goyaviers		goyavier	0
-goyère	Tarte salée garnie de maroilles, de fromage frais et d’œufs.
-goyères		goyère	0
-goyesque	Relatif à l’œuvre de Francisco de Goya, à son style.
-goyesques		goyesque	0
-goyim		goy	0
-goym		goy	118
-goys		goy	0
+0go	Jeu de stratégie d'origine chinoise et qui se joue à deux joueurs.
+2al	Gardien de but.
+4s		4	0
+2ba		3er	13
+4ge	Action de gober, d'avaler d'un coup.
+6s		6	0
+4i		3er	m
+5ent		3er	16
+5s		3er	1g
+5t		3er	14
+3âmes		3er	3
+3ant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Variante orthographique de gobbe.
+3ée		3er	19
+5s		3er	1f
+3elet	Vase à boire, rond, sans anse, et ordinairement sans pied, moins large et plus haut qu’une tasse.
+7erie	Fabrication et commerce de gobelets, et, en particulier, de vases en verre et bouteilles.
+bs		b	0
+7ier	Personne qui fabrique, vend des gobelets.
+8ère	Personne qui fabrique, vend des gobelets.
+bs		b	0
+8ers		a	0
+7s		7	0
+5in	Esprit follet, lutin.
+7s		7	0
+4mouche	Espèce de petit oiseau passereau, à bec fin et largement fendu, à longues ailes et à pattes courtes qui se nourrit de mouches et d’autres insectes volants qu'i…
+as		a	0
+4nt		4r	15
+4r	Avaler en aspirant, sans mâcher (en particulier : une huître, un œuf cru).
+5a		5	18
+6i		5	g
+7ent		5	1r
+7s		5	i
+7t		5	1d
+6s		5	7
+3èrent		3er	1c
+3erez		5	5
+5ge	Perche ou instrument de bois, qui sert à tenir quelque chose en presse, surtout chez les menuisiers.
+7a		7r	x
+8i		7r	m
+9ent		7r	w
+9s		7r	t
+9t		7r	14
+7âmes		7r	3
+7ant		7r	z
+8s		7r	c
+9se		7r	6
+bnt		7r	h
+bs		7r	8
+aiez		7r	e
+bons		7r	p
+7ât		7r	k
+9es		7r	2
+6ée		6er	11
+8s		6er	10
+6ent		7r	15
+7ons		7r	r
+7r	Accueillir en offrant beaucoup de nourriture.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	1b
+6iez		6er	d
+7ons		6er	j
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	1i
+4s		4	0
+4ta		5er	x
+6ge	Action de gobeter.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+3ètent		3eter	v
+3eter	Crépir en jetant du plâtre avec la truelle ou la main pour le faire entrer dans les joints des murs de moellon ou de plâtras.
+3ètera		3eter	l
+8i		3eter	g
+9ent		3eter	s
+9s		3eter	i
+9t		3eter	q
+8s		3eter	7
+3etèrent		5er	o
+3èterez		3eter	5
+7iez		3eter	4
+8ons		3eter	b
+7ons		3eter	a
+9t		3eter	f
+3etés		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+6s	Première couche d'enduit assez granuleux projeté ou appliqué à la brosse sur un mur, qui permet d'avoir une bonne accroche.
+5ons		5er	r
+5te	Gobelet en fer-blanc, d’un tiers de litre, au moyen duquel, autrefois, les prisonniers cantinaient leur vin.
+7nt		5er	v
+7ra		5er	l
+9i		5er	g
+aent		5er	s
+as		5er	i
+at		5er	q
+9s		5er	7
+8ez		5er	5
+8iez		5er	4
+9ons		5er	b
+8ons		5er	a
+at		5er	f
+7s		7	0
+4ur	Personne qui gobe.
+6s		6	0
+5se	Personne qui gobe.
+7s		7	0
+4z		4r	1b
+3ichonna		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+ae		9er	19
+bs		9er	1f
+9ent		ar	v
+ar	Se régaler de.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+as		ar	1u
+az		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+4e	Petit poisson osseux marin littoral du fond, qui a souvent une ventouse ventrale, pouvant appartenir à diverses espèces, en général de la famille des gobiidés.
+5s		5	0
+5z		3er	d
+4lle	Bille en marbre, en argile ou en pierre dure avec laquelle on joue.
+7s		7	0
+4ons		3er	1t
+3ons		3er	r
+2da		3er	x
+4ge	Faux pli sur une étoffe qui gode.
+6s		6	0
+4i		3er	m
+5ent		3er	w
+5lla		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Part de la pêche remise directement aux marins-pêcheurs.
+8nt		8r	v
+8r	Faire bombance.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	0
+8ur	Celui qui godaille.
+as		a	0
+9se	Celle qui godaille.
+bs		b	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5s		3er	t
+5t		3er	14
+3âmes		3er	3
+3ant	Mensonge, tromperie.
+4s		3er	c
+5se	Chaussure.
+7nt		3er	h
+7s		7	0
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Godemichet ; objet de forme généralement phallique destiné à procurer un plaisir sexuel.
+3ée		3er	11
+5s		3er	10
+3elureau	Jeune homme qui fait le galant auprès de la gent féminine.
+ax		a	0
+4miché	Variante de godemichet.
+9s		9	0
+4ndart	Variante de godendard.
+9s		9	0
+5t		4r	15
+4r	Faire des plis, en parlant d’un vêtement, généralement à cause d’une mauvaise coupe.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	1l
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+4t	Petit vase dans lequel on donne à boire aux oiseaux en cage.
+5ia	Plante d’ornement voisine des onagres à fleurs roses ou blanches.
+7s		7	0
+5s		5	0
+4z		4r	u
+3iche	Benêt, maladroit.
+7s		7	0
+6on	Benêt, maladroit.
+8ne	Empotée, maladroite.
+as		a	0
+8s		8	0
+4ez		3er	d
+4lla		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Aviron placé à l’arrière d’un canot, d’une embarcation légère et qui les fait avancer par un mouvement spécial.
+7nt		7r	v
+7r	Manœuvrer avec la godille.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7ur	Qui avance en chaloupant.
+9s		9	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+7t	Chaussure de l’armée française.
+8s		8	0
+4ons		3er	j
+4veau	Pâté chaud composé de hachis de viande de veau, de crêtes de coq, de champignons, d’andouillettes, de graisse de bœuf, on peut aussi y mettre des asperges, des…
+8x		8	0
+3on	Anglais, des Anglais.
+5s		5	9
+3ron	Pli rond et tuyauté sur les jabots de chemisettes, certaines coiffures de femmes…, et qu’on faisait autrefois aux fraises.
+6na		7er	x
+8ge	Action de godronner, et résultat de cette action.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Qui présente des sinuosités.
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Border de godrons.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+2éland	Grand oiseau palmipède marin.
+7s		7	0
+4ette	Hirondelle de mer, sterne pierregarin.
+8s		8	0
+3mon	Varech, terme désignant diverses algues marines, en particulier le fucus vésiculeux, qui poussent à faible profondeur et que les marées déposent sur les côtes.
+2ëmonier	Navire qui récolte le goëmon.
+9s		9	0
+2émons		6	0
+2ethéen	Relatif à Goethe ou à son œuvre.
+8ne		8	n
+as		8	1
+8s		8	9
+5ite	Espèce minérale, forme d’oxyhydroxyde de fer trivalent, polymorphe α du composé FeO(OH).
+8s		8	0
+2étie	Espèce de magie par laquelle on invoquait les génies malfaisants.
+6s		6	0
+2gé		3er	1k
+3ea		4r	13
+5i		4r	1j
+6ent		4r	16
+6s		4r	1g
+6t		4r	14
+4âmes		4r	1w
+4ant		4r	17
+5s		4r	2b
+6se		4r	29
+8nt		4r	26
+8s		4r	2f
+7iez		4r	2g
+8ons		4r	2i
+4ât		4r	1q
+6es		4r	2c
+3ée		3er	11
+3ent		4r	15
+4ons		4r	1n
+4r	Couver une maladie.
+5a		5	18
+6i		5	1e
+7ent		5	1r
+7s		5	1o
+7t		5	1d
+6s		5	1l
+3èrent		3er	1c
+3erez		5	1m
+5iez		5	22
+6ons		5	2a
+5ons		5	1p
+7t		5	1i
+4s		4r	25
+4z		4r	1b
+3iez		3er	1v
+4ons		3er	1t
+3lu	Espèce d’oiseau vivant en Amérique du Nord (Dolichonyx oryzivorus).
+5s		5	0
+3o	Personne qui est d’une crédulité niaise et se laisse facilement duper en matière d’affaires et de finances.
+4s		4	0
+3ue	Variété de boudin ou de saucisse aux herbes.
+5nard	Qui affecte la moquerie, la raillerie.
+9e		9	n
+as		9	1
+9ise	Attitude ironique, moqueuse.
+cs		c	0
+9s		9	9
+6ot	Pot de chambre.
+8s		8	0
+5s	Pluriel de gogue, boudin, ragout, saucisse.	5
+5tte	Joyeux festin où la liberté est de règle.
+8s		8	0
+2ï	Autre orthographe (moins usitée et ancienne) de goy.
+3m		3	0
+2infra		6er	x
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Celui qui a l’habitude de manger gloutonnement.
+6ée		6er	19
+8s		6er	10
+6ent		7r	15
+7r	Manger beaucoup et gloutonnement, s’empiffrer.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	1l
+6èrent		6er	o
+6erez		8	5
+8ie	action de se goinfrer, de manger comme un goinfre.
+as		a	0
+az		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+2ïs		3	0
+2itre	Hypertrophie diffuse de la glande thyroïde au-devant de la trachée-artère et du larynx et qui déforme le cou.
+6s		6	0
+6use	Personne qui a un goitre.
+9s		7x	1
+7x	Qui est de la nature du goitre.
+2ji	Nom vernaculaire de deux espèces d’arbrisseaux épineux de la famille des Solanacées (Solanaceae) du genre Lycium (Lycium barbarum et Lycium chinense).
+4s		4	0
+2lden	Pomme de l'espèce Golden Delicious.
+6s		6	0
+3ée	Grosse gorgée qu’on avale avidement.
+5s		5	0
+3em	Dans les légendes juives du Moyen Âge, figure d’argile auquel un rabbin donnait vie pour sauver la communauté des pogroms en inscrivant sur le front de ladite …
+5s		5	0
+3f	Jeu en deux camps sur un vaste terrain, accidenté et gazonné, qui consiste à lancer d’un point de départ fixe une balle dans un trou au moyen de crosses.
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Partie de mer plus ou moins vaste, qui entre, qui avance dans les terres, et dont l’ouverture du côté de la mer est ordinairement fort large.
+5nt		5r	v
+5r	Jouer au golf.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5ur	Personne qui pratique le golf.
+7s		7	0
+6se	Femme qui pratique le golf.
+8s		8	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+5que	Qui concerne le golf.
+8s		8	0
+4ons		4er	r
+4s		4	0
+0Golgi	Abréviation de Appareil de Golgi.
+0goliard	Au moyen-âge, clerc itinérant qui écrivait des chansons à boire et des poèmes satiriques.
+7s		7	0
+5th	Homme fort et puissant.
+3mote	Variante orthographique de golmotte.
+7s		7	0
+6te	Nom vernaculaire de l'amanite rougissante.
+8s		8	0
+2marisme	Doctrine de Gomarus, attachée à l'importance de la prédestination.
+7te	Protestant attaché à la doctrine de la prédestination.
+9s		9	0
+4sio	Condiment à base de sésame et de sel.
+7s		7	0
+3bo	Plante à fleurs herbacée annuelle ou bisannuelle tropicale du genre Abelmoschus, de la famille des Malvaceae (Malvacées).
+5s		5	0
+3énol	Huile obtenue par distillation de melaleuca quinquenervia (niaouli), elle est utilisée comme antiseptique respiratoire, elle est composée 50% de cinéole (eucal…
+7é	Qui renferme du goménol.
+8e		8	n
+9s		8	1
+8s		8	9
+3ina	Pommade pour lustrer les cheveux.
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		6	0
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Qui est imprégné de gomina.
+6e	Personnage féminin qui oint ses cheveux de gomina pour paraître en public.
+7s		6	1
+5ent		6r	v
+6r	Se passer les cheveux à la gomina.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3ma		4er	13
+5ge	Action de gommer ou résultat de cette action.
+7s		7	0
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant	Qui gomme.
+7e		7	n
+8s		7	0
+7s		7	0
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Exsudat végétal riche en polysaccharides, sécrété naturellement ou à la suite d’une blessure par certains arbres, notamment des légumineuses, et utilisé comme …
+4ée		5	n
+6s		5	1
+4ent		5r	15
+5r	Effacer un écrit au moyen d’une gomme
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5tte	Figurine en papier coloré gommé autocollante de forme circulaire, destinée à être collée.
+8s		8	0
+5use	Personne qui opère le gommage.
+8s		6x	1
+6x	Qui jette de la gomme.
+5z		5r	u
+4ier	Nom générique des arbres à gomme, tels que l’acacia, le mimosa, les eucalyptus, etc.
+7s		7	0
+6z		4er	d
+5fère	Qui produit de la gomme, qui contient de la gomme.
+9s		9	0
+5ons		4er	j
+4ons		4er	r
+5se	Nom d’une maladie des arbres.
+7s		7	0
+3orrhéen	Homosexuel.
+ane	Lesbienne.
+cs		a	1
+as		a	0
+3phide	Genre de champignon dont il existe plusieurs espèces.
+8s		8	0
+2n	Symbole du grade, unité de mesure d’angle plan.
+3ade	Organe dans lequel sont produites les cellules reproductrices.
+6s		6	0
+5ique	Relatif aux gonades.
+9s		9	0
+5ostimuline	Substance hormonale qui stimule l’activité des glandes génitales sexuelles.
+6trope	Qualifie une cellule de l’anté-hypophyse qui produisent les deux gonadotrophines et les follistatines.
+bs		b	0
+ahine	Hormone glycoprotéique agissant sur les fonctions des gonades (ovaires et testicules).
+es		e	0
+aine	Variante de gonadotrophine.
+ds		d	0
+4lgie	Douleur au genou.
+8s		8	0
+4rthrose	Arthrose de l’articulation du genou (chez l’homme) ou du grasset (chez le quadrupède).
+bs		b	0
+3courable	Qui a des chances d’avoir le Prix Goncourt.
+bs		b	0
+3d	Morceau de fer coudé et généralement rond par la partie d’en haut, sur lequel s’emboîtent en tournant les pentures du battant d’une porte, d’un volet, d’une pe…
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e		5r	1s
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Mettre des gonds à (une porte).
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ola		6er	13
+7ge	Action de gondoler, de se déjeter, de se renfler, en parlant du bois atteint par l’humidité.
+9s		9	0
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui gondole.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Petite embarcation légère à fond plat, à la proue et à la poupe recourbées, manœuvrée avec un aviron spécial, par un ou deux hommes se tenant debout et qui est…
+6ée		7	n
+8s		7	1
+6ement	Action de se gondoler.
+bs		b	0
+7nt		7r	15
+7r	Bomber en se gonflant en parlant du bois, du carton etc.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	u
+6ier	Celui qui mène une gondole.
+7ère	Celle qui mène une gondole.
+as		a	0
+7ers		9	0
+8z		6er	d
+7ons		6er	j
+6ons		6er	r
+5ns		4er	r
+4s		4	0
+3e	Enfant, gosse.
+4lle	Robe longue portée au Moyen Âge, gonne.
+7s		7	0
+4s		4	0
+3falon	Fanion dont les chevaliers ornaient leur lance.
+8ier	Celui qui porte le gonfalon.
+9ère	Épouse d’un gonfalonier.
+cs		c	0
+9ers		b	0
+8s		8	0
+5non	Bannière à plusieurs fanons.
+8ier	Variante de gonfalonier.
+bs		b	0
+8s		8	0
+4la		5er	13
+6ble	Qui peut être gonflé.
+9s		9	0
+6ge	Action de gonfler, le résultat de cette action.
+8s		8	0
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant	Qui a du volume.
+8e	Féminin singulier de gonflant.
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Rempli d’air ou de gaz ou de toute autre matière.
+6e		6	n
+7s		6	1
+5ement	État de ce qui est gonflé.
+as		a	0
+6nt		6r	15
+6r	Augmenter quelque chose de volume en la remplissant de gaz ou d’un fluide.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	1d
+8s		7	7
+5èrent		5er	1c
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5ette	Musculation intensive pour développer le volume musculaire.
+9s		9	0
+6ur	Outil qui sert à gonfler (par exemple, un ballon, un matelas pneumatique, etc.).
+8s		8	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+3g	Percussion d’Extrême-Orient, composée d’un disque de métal dont on tire des sons retentissants en le frappant avec une baguette garnie de peau.
+4orisme	Écriture précieuse caractérisée par ses recherches de style.
+as		a	0
+8te	Celui qui appartient au gongorisme, style littéraire, imitateur, partisan de Gongora.
+as		a	0
+4s		4	0
+3io	Pendant la deuxième guerre mondiale, nom donné par les partisans aux camions de détection des émissions de radio clandestines.
+5mètre	Instrument qui sert à mesurer les angles.
+as		a	0
+6étrie	Art de mesurer les angles.
+bs		b	0
+aque	Qui a rapport au goniomètre.
+ds		d	0
+5s		5	0
+3nelle	Espèce de petit poisson osseux marin carnivore de l’Atlantique nord-ouest et de la mer du Nord, au corps très allongé et avec des ocelles noirs.
+8s		8	0
+3ochorique	Qui présente le caractère du gonochorisme.
+cs		c	0
+9sme	Mode de reproduction où un même individu d’une espèce n’est pas porteur de plus d’un sexe biologique et conserve cette sexualité tout au long de sa vie.
+cs		c	0
+5occie	Infection due au gonocoque, gonorrhée, blennorragie.
+as		a	0
+6que	Bactérie responsable chez l'Homme de la gonococcie (ou gonorrhée).
+9s		9	0
+5yte	Cellule embryonnaire sexuelle diploïde apparaissant à la 3e semaine (18ème jour) de développement chez l’homme.
+8s		8	0
+4phore	Prolongement du réceptacle qui porte les étamines et le pistil.
+9s		9	0
+4rrhée	Autre nom de la blennorragie.
+9s		9	0
+4some	Chromosome impliqué dans la détermination du sexe d’un individu.
+8s		8	0
+7ique	Relatif aux chromosomes sexuels.
+bs		b	0
+4zoïde	Polype sexué.
+9s		9	0
+3s		3	0
+3ze	Homme quelconque.
+5s		5	0
+6se	Femme ou jeune femme, nana.
+8s		8	0
+4o	Qualifie un style journalistique outrageusement personnel, opposé aux dogmes de neutralité subjective de la profession.
+2odie	Produit dérivé.
+6s	Support médiatique.
+4will	Survaleur.
+8s		8	0
+3gla		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Saisir un mot, un ensemble de mots ou une phrase sur le moteur de recherche Google dans le but de trouver des réponses à ses questions ou des informations sur …
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+6sa		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	1w
+7ant		7er	17
+8s		7er	2b
+9se		7er	29
+bnt		7er	26
+bs		7er	2f
+aiez		7er	2g
+bons		7er	2i
+7ât		7er	1q
+9es		7er	2c
+7é		7er	1k
+8e		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Rechercher sur Internet en utilisant Google.
+9a		9	18
+ai		9	1e
+bent		9	1r
+bs		9	1o
+bt		9	1d
+as		9	1l
+7èrent		7er	1c
+7erez		9	1m
+9iez		9	22
+aons		9	2a
+9ons		9	1p
+bt		9	1i
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	1v
+8ons		7er	1t
+7ons		7er	1n
+5ons		5er	r
+2pak	Hopak, danse populaire ukrainienne.
+5s		5	0
+3ura	Tour monumentale par laquelle on pénètre dans les enceintes successives des temples hindouistes.
+6s		6	0
+2ral	Nom vernaculaire de Nemorhaedus goral, caprin des montagnes asiatiques vivant entre la Birmanie et le sud de la Sibérie.
+5s		5	0
+3batchévien	Relatif à Mikhaïl Gorbatchev, à sa politique.
+dne		d	n
+ds		d	9
+3d	Double rangée de perches plantées dans le fond de la rivière, qui forment un angle, au sommet duquel est un filet où viennent se prendre les poissons.
+4ien	Inextricable, insoluble.
+7s		7	9
+4s		4	0
+3e	Genre cinématographique et littéraire dérivé de l’horreur, où il y a beaucoup de sang qui coule.
+3éen	De Gorée, île du Sénégal.
+6ne		6	n
+8s		6	1
+6s		6	9
+3es		4	56
+4t	Jeune cochon ; porcelet.
+5s		5	0
+3fou	Sphénisciforme (manchot) du genre Eudyptes.
+6s		6	0
+3ge	Partie antérieure du cou de l’être humain ou de l’animal.
+5a		5r	13
+6i		5r	1j
+7ent		5r	16
+7s		5r	1g
+7t		5r	14
+5âmes		5r	3
+5ant		5r	17
+6s		5r	c
+7se		5r	6
+9nt		5r	h
+9s		5r	8
+8iez		5r	e
+9ons		5r	p
+5ât		5r	k
+7es		5r	2
+5bleue	→ voir gorge-bleue, → voir gorgebleue à miroir
+as		a	0
+4ée	Quantité de liquide que l’on peut avaler en une seule fois.
+6s		6	0
+4ent		5r	15
+5on	Gorgée bue.
+7s		7	0
+5r	Alimenter avec excès.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	1c
+4eret	Instrument de chirurgie, constitué principalement d’une gouttière allongée en forme de gorge, utilisé dans l’opération de la fistule à l’anus et dans celle de …
+8s		8	0
+8te	Espèce de collerette servant à couvrir la gorge des femmes.
+as		a	0
+7z		6	5
+6iez		6	4
+7n	Pièce de l’armure qui servait autrefois pour couvrir et défendre la gorge d’un homme d’armes.
+8s		8	0
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5t	Sorte de rabot pour faire des moulures fines et concaves.
+6s		6	0
+5z		5r	1b
+4iez		4er	d
+5ons		4er	j
+4one	Gorgone.
+7s		7	0
+6zola	Fromage italien à pâte molle, à base de lait de vache, à pâte persillée.
+as		a	0
+5ton	Gorge, gosier.
+8s		8	0
+3ille	Grand singe de la famille des hominidés dont la forme se rapproche le plus de celle de l’être humain et qu’on trouve dans plusieurs pays d’Afrique.
+7s		7	0
+3on	Vin rouge valaisan.
+5s		5	0
+2s	Pluriel de go (jeu de stratégie).	2
+3ette	Chausson (spécialité pâtissière faite d’une feuille de pâte à tarte repliée sur des fruits cuits : pommes, abricots, cerises).
+7s		7	0
+3ier	La partie intérieure de la gorge qui fait communiquer le pharynx avec l’œsophage.
+6s		6	3a
+3pel	Chant religieux chrétien développé d’abord chez les afro-américains et les blancs du sud des États-Unis.
+6s		6	0
+0Gosplan	Commission de planification de l’URSS qui donnait une prévision de l’ensemble des objectifs à réaliser pour assurer la croissance du pays.
+7s		7	0
+0gossa		4er	13
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant	Dérangeant ; agaçant.
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Enfant, garçon ou fille.
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Tailler un bout de bois avec un couteau dans le but de passer le temps.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2th	Relatif aux Goths.
+4a	Ellipse de almanach de Gotha, bottin qui fut, entre 1763 et 1944, le guide de référence de la haute noblesse et des familles royales européennes.
+5s		5	0
+4e		4	n
+5s		4	1
+4ique	Qui est relatif aux Goths et aux peuples qui leur ont succédé.
+8s		8	0
+4s		4	9
+3ique	Langue germanique aujourd’hui éteinte, parlée au début de l’ère chrétienne par les Goths et, plus particulièrement, les Wisigoths.
+3on	Fille de campagne, servante.
+5s		5	0
+2uacha		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Peinture opaque et pâteuse composée d’eau mêlée de gomme.
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Recouvrir de gouache, peindre avec de la gouache.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4illa		7er	13
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Attitude impertinente, moqueuse, insolente.
+7ée		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Railler, plaisanter sans délicatesse.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9ie	Action de gouailler, de se moquer, attitude goguenarde.
+bs		b	0
+bz		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7eur	Qui se plaît à gouailler, à railler.
+as		a	9
+9se	Celle qui se plaît à gouailler.
+bs		9r	1
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7on	Relatif à Gouaix, commune française située dans le département de la Seine-et-Marne.
+9s		9	9
+4lante	Chanson populaire.
+9s		9	0
+5euse	Chanteuse des rues.
+9s		9	0
+4pe	Personne peu recommandable.
+6s		6	0
+3da	Fromage hollandais.
+5s		5	0
+4ron	Résine noirâtre pour calfater les navires.
+7na		8er	x
+9ge	Action de goudronner
+bs		b	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é	Qui est recouvert de goudron.
+9e		9	n
+as		9	1
+8ent		9r	v
+9r	Enduire, imbiber ou recouvrir de goudron.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aie	Lieu où lʼon fabrique le goudron.
+cs		c	0
+cz		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8eur	Ouvrier qui goudronne des planches, un bateau, etc.
+bs		b	0
+ase	Machine pour goudronner la voie publique.
+cs		c	0
+ax	Qui est de la nature du goudron.
+9z		9r	1b
+8ier	Celui qui fabrique le goudron dans une goudronnière.
+9ère	Lieu où l'on fabrique le goudron.
+cs		c	0
+9ers		b	0
+az		8er	d
+9ons		8er	j
+8ons		8er	r
+7s		7	0
+3et	Variante de gouais (uva rabuscula).
+5s		5	0
+3ffre	Cavité souterraine naturelle, large et profonde.
+7s		7	0
+3ge	Outil de fer, fait en forme de demi-canal, avec un manche de bois, à l’usage de différentes professions: sculpteurs, tourneurs, plombiers, menuisiers, charpent…
+5a		5r	x
+6ge	Opération consistant à éliminer, par des moyens mécaniques ou thermiques, les défauts ou dépôts éventuels sur un cordon de soudure.
+8s		8	0
+6i		5r	m
+7ent		5r	w
+7s		5r	t
+7t		5r	y
+5âmes		5r	3
+5ant		5r	z
+6s		5r	c
+7se		5r	6
+9nt		5r	h
+9s		5r	8
+8iez		5r	e
+9ons		5r	p
+5ât		5r	k
+7es		5r	2
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5ons		5r	r
+5r	Travailler avec la gouge.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4ère	Petit chou au gruyère.
+7nt		4er	o
+7s		7	0
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4nafier	Bon à rien.
+as		a	0
+4oune	Sandale à deux brides dont le point d’attache sur le devant de la semelle se trouve entre le gros et le deuxième orteil.
+8s		8	0
+6tte	Petite quantité d'un liquide.
+9s		9	0
+3ille	Flaque, trou d’eau dans une rivière, mare, petit étang.
+7s		7	0
+3jat	Homme mal élevé et grossier, en particulier avec les femmes.
+6e	Femme mal élevée et grossière.
+7ment	De façon goujate.
+7r	Mal exécuter.
+8ie	Acte bas et grossier.
+as		a	0
+6és		6er	1h
+6s		6	0
+4on	Petite gouge de sculpteur.
+6na		7er	x
+8ge	Action d’assembler avec des goujons.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Assembler avec des goujons.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ette	Filet de poisson coupé en bâtonnets de dix centimètres sur trois environ.
+bs		b	0
+8z		8r	u
+7ier	Petit épervier dont les mailles sont très serrées.
+8ère		8er	n
+bs		8er	1
+8ers		a	0
+9z		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+4ure	Entaille faite à l'aide d'une gouge.
+7s		7	0
+3lache	Variante de goulash.
+8s		8	0
+5fe	Goinfre, glouton.
+7s		7	0
+6re	Goinfre, glouton.
+8s		8	0
+5g	Système concentrationnaire soviétique.
+6s		6	0
+5sch	Variante orthographique de goulash.
+8s		8	0
+6h	Ragout de bœuf au paprika, d’origine hongroise.
+7s		7	0
+4e	Génie dévorant, d’après les superstitions du Levant, les corps morts dans les cimetières, résurrectionniste.
+4ée	ou Grosse bouchée ou gorgée qu’on avale avidement.
+6s		6	0
+4es		5	0
+5t	Entrée étroite d’un port, d’une rade.
+6s		6	0
+6te	Petit canal de pierre ou de marbre, qui a une pente douce, et qui est interrompu de distance en distance par de petits bassins, pour le jeu des eaux.
+8s		8	0
+5yant	Se dit d’un vin (ou d’une eau-de-vie, d’un cidre, d’une bière) frais, agréable à boire, léger.
+9e		9	31
+as		9	1
+9s		9	0
+4ot	Col d’une bouteille, d’une cruche, ou de tout autre récipient dont l’entrée est étroite.
+6s		6	0
+6te	Petite rigole pour servir à l’écoulement des eaux.
+8s		8	0
+4u	Qui aime à manger, qui mange avec avidité.
+5e		5	n
+6s	Type de tenailles.
+4ûment	D’une manière goulue.
+4us		5	9
+3m	Contingent que devait fournir chaque tribu pour les expéditions militaires.
+4ier	Soldat faisant partie d’un goum (unité d’infanterie légère de l’armée d’Afrique composée de troupes autochtones marocaines ou de tribus sahariennes nomades (ar…
+7s		7	0
+4s		4	0
+3pil	Renard.
+6la		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Petit cylindre, petite cheville métallique, dont on se sert dans l’horlogerie, dans l’armurerie, dans les constructions mécaniques ou métalliques, pour arrêter…
+7ée		7er	19
+9s		7er	10
+7ent		8r	v
+8r	Combiner, arranger, manigancer, concevoir.
+9a		9	l
+ai		9	g
+bent		9	s
+7érais	Relatif à Goupillières, commune française située dans le département de la Seine-Maritime.
+7erait		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7on	Petit bâton de bois ou de métal garni de poils rudes ou d’une boule percée de trous, qui sert à l’église pour prendre de l’eau bénite et pour la jeter sur les …
+9s		9	0
+6s		6	0
+3r	Concrétion carbonatée (spéléothème) en forme de barrage en travers d’un écoulement d’eau.
+4a	Genre d’oiseaux de la famille des colombidés regroupant trois espèces endémiques à la Nouvelle-Guinée au plumage d'un beau bleu azuré et dont la grande huppe d…
+5i		4er	m
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ami	Nom usuel de plusieurs espèces de poissons des eaux douces et chaudes d’Asie du sud, principalement de la famille des Osphronemidae.
+7s		7	0
+5nce	Erreur.
+8s		8	0
+6t		4er	z
+7e	Variante de gourance.
+8s		8	0
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4bet	Oyat, ou ammophila arenaria.
+7s		7	0
+5i	Cabane, hutte d’Afrique du Nord.
+6s		6	0
+6ville	Agglomération d’habitations sommaires et insalubres.
+bs		b	0
+4d	Qui est devenu comme perclus par le froid.
+5e	Plante de la famille des cucurbitacées.
+6s		6	0
+5in	Gros bâton.
+7s		7	0
+5s		5	9
+4e	Drogue falsifiée.
+4ée		4er	19
+6s		4er	1f
+4en	Lutte bretonne.
+6t		5r	15
+5r	Duper ; tromper.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	25
+5z		5r	1b
+4gandine	Celle qui aime à séduire en quantité, femme de mauvaise vie, dévergondée.
+bs		b	0
+7e	Variété de fève (Vicia faba).
+8s		8	0
+4iez		4er	d
+5ons		4er	j
+4made	Coup de poing sur la figure.
+8s		8	0
+6nd	Qui mange avec avidité et parfois avec excès.
+8a		8er	x
+9i		8er	1j
+aent		8er	w
+as		8er	1g
+at		8er	14
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Femme gourmande.
+8ée		8er	11
+as		8er	10
+8ent		9r	15
+9r	Manier rudement un cheval de la main.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		8	1
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+9se	Défaut de celui qui est gourmand, qui mange plus que de raison.
+bs		b	0
+8ons		8er	r
+8s		8	9
+7tché	Langue oti-volta parlée par les Gourmantchés au Burkina Faso, au Togo, au Bénin et au Niger.
+5e	Inflammation des fosses nasales qui survient aux jeunes chevaux.
+5ée		6	n
+7s		5er	10
+5er	Brider un cheval en lui fixant la gourmette.
+5és		6	9
+5et	Qui sait apprécier les vins, en a une bonne connaissance.
+7s		7	9
+7te	Celle qui, en dégustant le vin, sait en déterminer la provenance, la date et les diverses caractéristiques.
+9s		7	1
+4nabla		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Longue cheville de bois de chêne employée à fixer le bordage sur les membrures d’un vaisseau
+8ée		8er	11
+as		8er	10
+8ent		9r	v
+9r	Enfoncer des gournables dans un bordage.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+4o	Langue mandée des Gouro, parlée en Côte d’Ivoire principalement dans les régions du Haut-Sassandra et de la Marahoué.
+5ns		4er	r
+5s		5	0
+5u	Maître spirituel hindou.
+6s		6	0
+6te	Maitresse spirituelle hindoue.
+8s		8	0
+4s		4	0
+3ssaut	Plein, fort, en parlant du cheval
+8s		8	0
+5e	Fruit sec, dépourvu de cloison, à deux valves, garnies chacune d’une rangée de graines, et avec deux fentes de déhiscence (mot utilisé notamment pour les fruit…
+6s		6	0
+6t	Petite poche destinée à renfermer de l’argent, des bijoux, une montre, etc., et fixée à la ceinture du pantalon ou plus souvent au gilet.
+7s		7	0
+2ût	Celui des cinq sens par lequel on discerne les saveurs.
+4a		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	1w
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+2ute	Variante orthographique de goutte.
+2ûtée		4er	19
+6s		4er	1f
+4ent		5r	15
+2uter	Exercer le sens du gout sur ce qui a de la saveur.
+2ûtera		6	18
+7i		6	1e
+8ent		6	s
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	4
+7ons		6	b
+6ons		6	1p
+8t		6	1i
+6s		6	0
+5s		5r	25
+2uteur	Variante orthographique de goûteur.
+2ûteurs		7	0
+6se	Personne chargée de tester les plats cuisinés pour en apprécier le goût ou pour déterminer s’ils ne sont pas empoisonnés.
+8s		6x	1
+6x	Variante, dans l’orthographe traditionnelle, de gouteux.
+5z		5r	1b
+4iez		4er	1v
+5ons		4er	1t
+4ons		4er	1n
+4s		4	0
+2utta		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Très petite quantité d’un liquide qui se détache avec une forme sphérique.
+6lette	Petite goutte de quelque liquide.
+bs		b	0
+6nt		6r	15
+6r	S'écouler goutte à goutte.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	1o
+9t		7	q
+8s		7	7
+7eau	Qui supporte les gouttières et les gargouilles, en parlant d’un mur.
+ax		a	9
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6ur	Dispositif de micro-irrigation permettant d’irriguer un sol cultivé au goutte à goutte, ce qui limite les pertes d’eau par évaporation.
+8s		8	0
+7se	Personne qui souffre de la goutte.
+9s		7x	1
+7x	Qui est sujet à la goutte.
+6z		6r	u
+5ier	Qui concerne l’évacuation des eaux.
+6ère	Petit canal placé au bord des toits et par où les eaux de pluie s’écoulent.
+9s		6er	1
+6ez		5er	d
+6na		7er	13
+8it		7er	1z
+8nt		7er	17
+7ât		7er	1q
+7é		7er	1k
+7er	Pleuvoir un petit peu.
+9a		9	18
+ait		9	1d
+6ons		5er	j
+5ons		5er	r
+4u	Gouteux, qui a du gout.
+5e		5	n
+6s		5	1
+5s		5	9
+3verna		7er	x
+8ble	Qui peut être gouverné, qui se laisse gouverner.
+bs		b	0
+8i		7er	m
+9ent		7er	16
+9l	Dispositif mobile, fixé à l’arrière d’un navire, d’un bateau, d’un avion qui sert à lui faire prendre telle ou telle direction, le faire aller du côté qu’on ve…
+as		a	0
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ance	Manière de concevoir et d’exercer l’autorité à la tête d’une entreprise, d’une organisation, d’un État.
+bs		b	0
+9t	Qui gouverne.
+ae	Femme à laquelle on confie l’éducation d’un ou de plusieurs enfants.
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+8t	Mandat, charge, fonction d’un gouverneur.
+7âtes		7er	2
+7e	Ce qui doit servir de règle de conduite dans une affaire.
+7ée		7er	19
+9s		7er	10
+7ement	Action, charge, ou manière de gouverner, de régir, d’administrer quelque chose, en particulier dans le domaine politique.
+cal	Relatif au gouvernement.
+ee		e	n
+dux		dl	9
+cs		c	0
+8nt		8r	15
+8r	Diriger une embarcation à l’aide d’un gouvernail.
+9a		9	18
+ai		9	1e
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	1l
+7èrent		7er	o
+7erez		9	1m
+9iez		9	4
+aons		9	b
+9ons		9	1p
+bt		9	1i
+8s		8	0
+8ur	Celui qui est chargé de la direction d’une subdivision administrative de premier niveau, comme une province ou un État, d’une colonie ou d’un grand établisseme…
+ae	Femme chargée de la direction d’une subdivision administrative de premier niveau, comme une province ou un État, une colonie ou un grand établissement financie…
+bs		b	0
+as		a	0
+9se	Femme qui a soin du ménage d’un homme veuf ou célibataire.
+bs		b	0
+8z		8r	1b
+7iez		7er	1v
+8ons		7er	j
+7ons		7er	r
+8rat	Région dans laquelle s’exerce l’autorité d’un gouverneur, notamment dans certains pays arabes.
+bs		b	0
+2y	Non juif.
+3a	Mare artificielle de récupération d'eau de pluie pour l'abreuvement du bétail.
+4s		4	0
+4ve	Fruit tropical comestible originaire des Amériques produit par un arbre, le goyavier, de forme ronde, ovale, ou parfois en forme de poire, qui mesure de 5 à 7 …
+6s		6	0
+5ier	Arbre originaire des régions tropicales pouvant atteindre 8 mètres de haut exploité pour ses fruits, les goyaves.
+8s		8	0
+3ère	Tarte salée garnie de maroilles, de fromage frais et d’œufs.
+6s		6	0
+3esque	Relatif à l’œuvre de Francisco de Goya, à son style.
+8s		8	0
+3im		3	0
+3m		3	3a
+3s		3	0

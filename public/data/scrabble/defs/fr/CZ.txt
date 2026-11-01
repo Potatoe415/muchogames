@@ -1,5 +1,5 @@
-czar	Variante de tsar.
-czardas	Variante orthographique de csardas.	csardas
-czars		czar	0
-czimbalum	Variante orthographique de cymbalum.
-czimbalums		czimbalum	0
+0czar	Variante de tsar.
+4das	Variante orthographique de csardas.	1sardas
+4s		4	0
+2imbalum	Variante orthographique de cymbalum.
+9s		9	0

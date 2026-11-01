@@ -167,16 +167,18 @@ function once(key, load) {
 const formTexts = (lang) =>
   once(`${lang}:forms`, () => fetchLines(lang, "forms"));
 
+const decode = (from, coded) =>
+  from.slice(0, parseInt(coded[0], 36)) + coded.slice(1);
+
+// [title, rest of its line], in board-word order; the rest is read on lookup.
 async function fetchShard(lang, prefix) {
-  const lines = await fetchLines(lang, prefix);
-  const forms = lines.some((line) => line.includes("\t\t"))
-    ? await formTexts(lang)
-    : [];
-  const entries = new Map();
-  for (const line of lines) {
-    const [title, text, base = "", form] = line.split("\t");
-    const shown = form ? forms[Number(form)]?.replace("~", base) : text;
-    if (shown) entries.set(fold(title), { title, text: shown, base });
+  const entries = [];
+  let title = "";
+  for (const line of await fetchLines(lang, prefix)) {
+    const tab = line.indexOf("\t");
+    if (tab < 0) continue;
+    title = decode(title, line.slice(0, tab));
+    entries.push([title, line.slice(tab + 1)]);
   }
   return entries;
 }
@@ -184,11 +186,34 @@ async function fetchShard(lang, prefix) {
 const shard = (lang, word) =>
   once(`${lang}:${word.slice(0, 2)}`, () => fetchShard(lang, word.slice(0, 2)));
 
-async function lookUpOffline(lang, word) {
-  const found = (await shard(lang, word)).get(word);
+// Binary search: folding every title of a big file takes ~100 ms.
+function find(entries, word) {
+  let lo = 0;
+  let hi = entries.length;
+  while (lo < hi) {
+    const mid = (lo + hi) >>> 1;
+    if (fold(entries[mid][0]) < word) lo = mid + 1;
+    else hi = mid;
+  }
+  return entries[lo] && fold(entries[lo][0]) === word ? entries[lo] : null;
+}
+
+async function entryOf(lang, word) {
+  const found = find(await shard(lang, word), word);
   if (!found) return null;
-  const baseWord = fold(found.base);
-  const base = baseWord && (await shard(lang, baseWord)).get(baseWord);
+  const [title, rest] = found;
+  const [text, codedBase, form] = rest.split("\t");
+  const base = codedBase ? decode(title, codedBase) : "";
+  const shown = form
+    ? (await formTexts(lang))[parseInt(form, 36)]?.replace("~", base)
+    : text;
+  return shown ? { title, text: shown, base } : null;
+}
+
+async function lookUpOffline(lang, word) {
+  const found = await entryOf(lang, word);
+  if (!found) return null;
+  const base = found.base && (await entryOf(lang, fold(found.base)));
   return {
     title: found.title,
     text: found.text,

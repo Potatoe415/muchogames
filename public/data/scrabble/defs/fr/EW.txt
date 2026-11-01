@@ -1,4 +1,4 @@
-ewe	Variante orthographique de éwé.
-éwée		éwé	23
-éwées		éwé	1
-éwés		éwé	9
+0ewe	Variante orthographique de éwé.
+0éwée		3	n
+4s		3	1
+3s		3	9

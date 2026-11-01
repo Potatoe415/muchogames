@@ -1,49 +1,49 @@
-widget	Élément de base d’une interface graphique comme un bouton par exemple.
-widgets		widget	0
-widia	Alliage très dur à base de carbure de tungstène et de métaux rares qui sert à fabriquer des outils coupants et remplace le diamant dans certaines utilisations.
-widias		widia	0
-wienerli	Saucisse allongée, à chair rose, dont le diamètre est inférieur à celui du schüblig et comparable à la saucisse de Francfort.
-wifi	Variante de Wi-Fi.
-wifis		wifi	0
-wigwam	Type d’habitation traditionnelle construite par les Amérindiens semi-nomades d’Amérique du Nord.
-wigwams		wigwam	0
-wiki	Site web dynamique dont les pages peuvent être modifiées par tout visiteur.
-wikis		wiki	0
-wilaya	Division administrative qui existe dans plusieurs pays africains et asiatiques.
-wilayas		wilaya	0
-wildien	Relatif à l’écrivain irlandais Oscar Wilde.
-wildienne		wildien	23
-wildiennes		wildien	1
-wildiens		wildien	9
-willaya	Autre orthographe de wilaya.
-willayas		willaya	0
-williamine	Eau-de-vie à base de poire Williams, produite dans le Valais.
-williamines		williamine	0
-williams	Variété de poire.
-WIMAX	Standard de communication sans fil.
-winch	Équipement fixe placé sur le pont d’un voilier qui permet de démultiplier la traction exercée par l’équipage sur les cordages (écoute, drisse, bras de spinnake…
-winches		winch	0
-winchester	Carabine américaine, à répétition, de la fin du XIXᵉ siècle.
-winchesters		winchester	0
-wincheur	Matelot préposé à la manœuvre d’un ou plusieurs winch(s)
-wincheurs		wincheur	0
-winchs		winch	0
-wingsuit	Combinaison de saut particulière augmentant la surface de portance et utilisée dans des sports extrêmes tels le parachutisme.
-wingsuits		wingsuit	0
-winnipégois	Relatif à Winnipeg.
-winnipégoise		winnipégois	23
-winnipégoises		winnipégois	1
-winstub	Café ou taverne avec nourriture rapide, en Alsace et en Suisse alémaniques.
-winstubs		winstub	0
-wintergreen	Huile aromatique tirée de la gaulthérie (Gaultheria procumbens).
-wishbone	Espar particulier qui permet de tendre une voile à la manière d'une bôme.
-wisigoth	Relatif aux Wisigoths.
-wisigothe		wisigoth	23
-wisigothes		wisigoth	1
-wisigothique	Relatif aux Wisigoths.
-wisigothiques		wisigothique	0
-wisigoths		wisigoth	9
-wiski	Cabriolet hippomobile, élevé et léger.
-witloof	Légume de couleur blanche obtenu d’une variété de chicorée.
-witloofs		witloof	0
-witz	Blague, plaisanterie, bon mot.
+0widget	Élément de base d’une interface graphique comme un bouton par exemple.
+6s		6	0
+3ia	Alliage très dur à base de carbure de tungstène et de métaux rares qui sert à fabriquer des outils coupants et remplace le diamant dans certaines utilisations.
+5s		5	0
+2enerli	Saucisse allongée, à chair rose, dont le diamètre est inférieur à celui du schüblig et comparable à la saucisse de Francfort.
+2fi	Variante de Wi-Fi.
+4s		4	0
+2gwam	Type d’habitation traditionnelle construite par les Amérindiens semi-nomades d’Amérique du Nord.
+6s		6	0
+2ki	Site web dynamique dont les pages peuvent être modifiées par tout visiteur.
+4s		4	0
+2laya	Division administrative qui existe dans plusieurs pays africains et asiatiques.
+6s		6	0
+3dien	Relatif à l’écrivain irlandais Oscar Wilde.
+7ne		7	n
+9s		7	1
+7s		7	9
+3laya	Autre orthographe de wilaya.
+7s		7	0
+4iamine	Eau-de-vie à base de poire Williams, produite dans le Valais.
+as		a	0
+7s	Variété de poire.
+0WIMAX	Standard de communication sans fil.
+0winch	Équipement fixe placé sur le pont d’un voilier qui permet de démultiplier la traction exercée par l’équipage sur les cordages (écoute, drisse, bras de spinnake…
+5es		5	0
+7ter	Carabine américaine, à répétition, de la fin du XIXᵉ siècle.
+as		a	0
+6ur	Matelot préposé à la manœuvre d’un ou plusieurs winch(s)
+8s		8	0
+5s		5	0
+3gsuit	Combinaison de saut particulière augmentant la surface de portance et utilisée dans des sports extrêmes tels le parachutisme.
+8s		8	0
+3nipégois	Relatif à Winnipeg.
+be		b	n
+cs		b	1
+3stub	Café ou taverne avec nourriture rapide, en Alsace et en Suisse alémaniques.
+7s		7	0
+3tergreen	Huile aromatique tirée de la gaulthérie (Gaultheria procumbens).
+2shbone	Espar particulier qui permet de tendre une voile à la manière d'une bôme.
+3igoth	Relatif aux Wisigoths.
+8e		8	n
+9s		8	1
+8ique	Relatif aux Wisigoths.
+cs		c	0
+8s		8	9
+3ki	Cabriolet hippomobile, élevé et léger.
+2tloof	Légume de couleur blanche obtenu d’une variété de chicorée.
+7s		7	0
+3z	Blague, plaisanterie, bon mot.

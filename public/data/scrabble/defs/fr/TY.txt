@@ -1,239 +1,239 @@
-tycoon	Magnat.
-tycoons		tycoon	0
-tylenchus	Ver nématode, parasite de plusieurs plantes, et particulièrement du blé, chez qui il fait apparaître des galles.
-tympan	Cavité de forme irrégulière, qui constitue l'oreille moyenne, et qui est fermée du côté de l'oreille externe par une membrane.
-tympanal	Relatif au tympan.
-tympanale		tympanal	23
-tympanales		tympanal	1
-tympanaux		tympanal	9
-tympanique	Relatif au tambour.
-tympaniques		tympanique	0
-tympanisa		tympaniser	33
-tympanisai		tympaniser	22
-tympanisaient		tympaniser	32
-tympanisais		tympaniser	29
-tympanisait		tympaniser	34
-tympanisâmes		tympaniser	3
-tympanisant		tympaniser	35
-tympanisas		tympaniser	12
-tympanisasse		tympaniser	6
-tympanisassent		tympaniser	17
-tympanisasses		tympaniser	8
-tympanisassiez		tympaniser	14
-tympanisassions		tympaniser	25
-tympanisât		tympaniser	20
-tympanisâtes		tympaniser	2
-tympanisé		tympaniser	56
-tympanisée		tympaniser	37
-tympanisées		tympaniser	36
-tympanisent		tympaniser	31
-tympaniser	Décrier hautement et publiquement quelqu’un, déclamer contre lui.
-tympanisera		tympaniser	21
-tympaniserai		tympaniser	16
-tympaniseraient		tympaniser	28
-tympaniserais		tympaniser	18
-tympaniserait		tympaniser	26
-tympaniseras		tympaniser	7
-tympanisèrent		tympaniser	24
-tympaniserez		tympaniser	5
-tympaniseriez		tympaniser	4
-tympaniserions		tympaniser	11
-tympaniserons		tympaniser	10
-tympaniseront		tympaniser	15
-tympanisés		tympaniser	38
-tympanisez		tympaniser	30
-tympanisiez		tympaniser	13
-tympanisions		tympaniser	19
-tympanisme	Gonflement de l’abdomen causé par l’accumulation des gaz.
-tympanismes		tympanisme	0
-tympanisons		tympaniser	27
-tympanon	Instrument de musique fait d’une caisse plate montée de cordes métalliques qu’on touche avec deux petites baguettes de bois de la famille des cithares.
-tympanons		tympanon	0
-tympanoplastie	Opération de réparation de la membrane tympanique.
-tympans		tympan	0
-tyndallisation	Procédé de stérilisation modérée qui permet d’éliminer du milieu les formes de résistance des bactéries que sont les spores.
-tyndallisations		tyndallisation	0
-typa		typer	39
-typage	Détermination automatique du type d’une variable en fonction des affectations de valeur dont elle est l’objet
-typages		typage	0
-typai		typer	22
-typaient		typer	32
-typais		typer	29
-typait		typer	34
-typâmes		typer	3
-typant		typer	35
-typas		typer	12
-typasse		typer	6
-typassent		typer	17
-typasses		typer	8
-typassiez		typer	14
-typassions		typer	25
-typât		typer	20
-typâtes		typer	2
-type	Modèle, figure originale que l’on considère comme l’empreinte ou reflet d’un concept.
-typée		typer	37
-typées		typer	36
-typent		typer	31
-typer	Marquer d’un type.
-typera		typer	21
-typerai		typer	16
-typeraient		typer	28
-typerais		typer	18
-typerait		typer	26
-typeras		typer	7
-typèrent		typer	24
-typerez		typer	5
-typeriez		typer	4
-typerions		typer	11
-typerons		typer	10
-typeront		typer	15
-types		type	0
-typesse	Femme anonyme.
-typesses		typesse	0
-typez		typer	30
-typha	Massette d’eau ^(), plante monocotylédone poussant dans les milieux humides.
-typhacées	Famille de plantes monocotylédones en forme de roseaux poussant dans les milieux humides et dont le genre type est le typha.
-typhas		typha	0
-typhique	Qui a rapport à la fièvre typhoïde.
-typhiques		typhique	0
-typhlite	Inflammation du cæcum.
-typhlites		typhlite	0
-typhoïde	Qui a le caractère du typhus.
-typhoïdes		typhoïde	0
-typhoïdique	Relatif à la typhoïde, qui en présente les symptômes.
-typhoïdiques		typhoïdique	0
-typhomycine	Antibiotique actif sur les microbes de la fièvre typhoïde.
-typhomycines		typhomycine	0
-typhon	Cyclone tropical très violent en Extrême-Orient, issu du Pacifique nord-ouest ou de la mer de Chine méridionale.
-typhons		typhon	0
-typhose	État fébrile s'accompagnant de stupeur, présentant quelque ressemblance avec la fièvre typhoïde, mais sans que l'on puisse constater la présence du bacille d'É…
-typhoses		typhose	0
-typhus	Nom donné à diverses rickettsioses véhiculées par des arthropodes (poux, puces, acariens, …) et spécialement le typhus exanthématique,
-typicité	Qualité de ce qui est typique, caractéristique de quelque chose.
-typicités		typicité	0
-typiez		typer	13
-typions		typer	19
-typique	Qui concerne un type.
-typiquement	D'une manière typique.
-typiques		typique	0
-typo	Typographique.
-typochromie	Impression typographique en couleur.
-typochromies		typochromie	0
-typographe	Celui ou celle qui connaît, qui exerce l’art de la typographie.
-typographes	Pluriel de typographe (métier).	typographe
-typographia		typographier	33
-typographiai		typographier	22
-typographiaient		typographier	32
-typographiais		typographier	29
-typographiait		typographier	34
-typographiâmes		typographier	3
-typographiant		typographier	35
-typographias		typographier	12
-typographiasse		typographier	6
-typographiasses		typographier	8
-typographiât		typographier	20
-typographiâtes		typographier	2
-typographie	Art d’agencer les textes avec des caractères, « types », pour l’imprimerie ou pour tout autre support.
-typographiée		typographier	37
-typographiées		typographier	36
-typographient		typographier	31
-typographier	Composer un texte, mettre en page un document à l’aide d’éléments typographiques, de composition.
-typographiera		typographier	21
-typographierai		typographier	16
-typographierais		typographier	18
-typographierait		typographier	26
-typographieras		typographier	7
-typographièrent		typographier	24
-typographierez		typographier	5
-typographieriez		typographier	4
-typographierons		typographier	10
-typographieront		typographier	15
-typographiés		typographier	38
-typographiez		typographier	30
-typographiiez		typographier	13
-typographiions		typographier	19
-typographions		typographier	27
-typographique	Relatif à la typographie.
-typographiques		typographique	0
-typologie	Groupement systématique de phénomènes étudiés en divers types en fonction de propriétés données.
-typologies		typologie	0
-typologique	De classification, qui appartient à la typologie, fondé sur une typologie.
-typologiques		typologique	0
-typomètre	Règle divisée en cicéros, demi cicéros et quarts de cicéros, avec laquelle on évalue les compositions typographiques.
-typomètres		typomètre	0
-typon	Masque, feuille transparente, sur laquelle est imprimé un motif dans une encre opaque qui permet d'insoler, puis de graver la plaque qui servira à imprimer.
-typons		typer	27
-typos	Pluriel de typo.
-typote	Ouvrière typographe, ouvrière qui compose les textes destinés à l’impression typographique.
-typotes		typote	0
-typtologie	Communication avec les esprits frappeurs au moyen de coups frappés par les tables tournantes ou sur un objet quelconque.
-typtologies		typtologie	0
-tyramine	Amine primaire biogène, de formule C₈H₁₁NO, issue de la décarboxylation de la tyrosine et présente notamment dans certains aliments fermentés.
-tyran	Roi absolu, monarque, despote qui usurpe la puissance souveraine.
-tyrane	Variante orthographique de tyranne.
-tyranes		tyrane	0
-tyranneau	Petit tyran.
-tyranneaux		tyranneau	0
-tyrannicide	Personne qui tue un tyran.
-tyrannidés	Famille de passereaux.
-tyrannie	Domination usurpée et illégale.
-tyrannies		tyrannie	0
-tyrannique	Qui tient de la tyrannie, qui est injuste, violent, contre le droit et la raison.
-tyranniquement	Avec tyrannie ; d’une manière tyrannique.
-tyranniques		tyrannique	0
-tyrannisa		tyranniser	33
-tyrannisai		tyranniser	22
-tyrannisaient		tyranniser	32
-tyrannisais		tyranniser	52
-tyrannisait		tyranniser	40
-tyrannisâmes		tyranniser	3
-tyrannisant		tyranniser	43
-tyrannisas		tyranniser	12
-tyrannisasse		tyranniser	6
-tyrannisassent		tyranniser	17
-tyrannisasses		tyranniser	8
-tyrannisassiez		tyranniser	14
-tyrannisassions		tyranniser	25
-tyrannisât		tyranniser	20
-tyrannisâtes		tyranniser	2
-tyrannisé		tyranniser	56
-tyrannisée		tyranniser	45
-tyrannisées		tyranniser	36
-tyrannisent		tyranniser	41
-tyranniser	Gouverner comme un tyran.
-tyrannisera		tyranniser	21
-tyranniserai		tyranniser	16
-tyranniseraient		tyranniser	28
-tyranniserais		tyranniser	18
-tyranniserait		tyranniser	26
-tyranniseras		tyranniser	7
-tyrannisèrent		tyranniser	48
-tyranniserez		tyranniser	5
-tyranniseriez		tyranniser	4
-tyranniserions		tyranniser	11
-tyranniserons		tyranniser	10
-tyranniseront		tyranniser	15
-tyrannisés		tyranniser	38
-tyrannisez		tyranniser	30
-tyrannisiez		tyranniser	13
-tyrannisions		tyranniser	19
-tyrannisons		tyranniser	27
-tyrannosaure	Grand dinosaure carnivore du Campanien et du Maastrichtien, de la famille des tyrannosauridés.
-tyrannosaures		tyrannosaure	0
-tyrans		tyran	0
-tyrien	Relatif à Tyr.
-tyrienne		tyrien	23
-tyriennes		tyrien	1
-tyriens		tyrien	9
-tyrolien	Relatif au Tyrol.
-tyrolienne	Sorte de chanson des zones alpines.
-tyroliennes		tyrolien	1
-tyroliens		tyrolien	9
-tyrosine	Acide aminé dont la chaîne latérale est (-CH₂-C₆H₄-OH).
-tyrosines		tyrosine	0
-tyrothricine	Antibiotique peptidique, fabriqué par Bacillus brevis, actif sur certains gram positif par inhibition de la synthèse des protéines de la paroi.
-tyrothricines		tyrothricine	0
-tyrrhénien	Qui a rapport à l'ancienne Tyrrhénie ou aux Tyrrhéniens.
-tyrrhénienne		tyrrhénien	109
-tyrrhéniennes		tyrrhénien	1
-tyrrhéniens		tyrrhénien	0
+0tycoon	Magnat.
+6s		6	0
+2lenchus	Ver nématode, parasite de plusieurs plantes, et particulièrement du blé, chez qui il fait apparaître des galles.
+2mpan	Cavité de forme irrégulière, qui constitue l'oreille moyenne, et qui est fermée du côté de l'oreille externe par une membrane.
+6al	Relatif au tympan.
+8e		8	n
+9s		8	1
+7ux		7l	9
+6ique	Relatif au tambour.
+as		a	0
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1k
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Décrier hautement et publiquement quelqu’un, déclamer contre lui.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8me	Gonflement de l’abdomen causé par l’accumulation des gaz.
+as		a	0
+8ons		8er	r
+6on	Instrument de musique fait d’une caisse plate montée de cordes métalliques qu’on touche avec deux petites baguettes de bois de la famille des cithares.
+8s		8	0
+7plastie	Opération de réparation de la membrane tympanique.
+6s		6	0
+2ndallisation	Procédé de stérilisation modérée qui permet d’éliminer du milieu les formes de résistance des bactéries que sont les spores.
+es		e	0
+2pa		3er	13
+4ge	Détermination automatique du type d’une variable en fonction des affectations de valeur dont elle est l’objet
+6s		6	0
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Modèle, figure originale que l’on considère comme l’empreinte ou reflet d’un concept.
+3ée		3er	11
+5s		3er	10
+3ent		4r	v
+4r	Marquer d’un type.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+5se	Femme anonyme.
+7s		7	0
+4z		4r	u
+3ha	Massette d’eau ^(), plante monocotylédone poussant dans les milieux humides.
+5cées	Famille de plantes monocotylédones en forme de roseaux poussant dans les milieux humides et dont le genre type est le typha.
+5s		5	0
+4ique	Qui a rapport à la fièvre typhoïde.
+8s		8	0
+4lite	Inflammation du cæcum.
+8s		8	0
+4oïde	Qui a le caractère du typhus.
+8s		8	0
+7ique	Relatif à la typhoïde, qui en présente les symptômes.
+bs		b	0
+5mycine	Antibiotique actif sur les microbes de la fièvre typhoïde.
+bs		b	0
+5n	Cyclone tropical très violent en Extrême-Orient, issu du Pacifique nord-ouest ou de la mer de Chine méridionale.
+6s		6	0
+5se	État fébrile s'accompagnant de stupeur, présentant quelque ressemblance avec la fièvre typhoïde, mais sans que l'on puisse constater la présence du bacille d'É…
+7s		7	0
+4us	Nom donné à diverses rickettsioses véhiculées par des arthropodes (poux, puces, acariens, …) et spécialement le typhus exanthématique,
+3icité	Qualité de ce qui est typique, caractéristique de quelque chose.
+8s		8	0
+4ez		3er	d
+4ons		3er	j
+4que	Qui concerne un type.
+7ment	D'une manière typique.
+7s		7	0
+3o	Typographique.
+4chromie	Impression typographique en couleur.
+bs		b	0
+4graphe	Celui ou celle qui connaît, qui exerce l’art de la typographie.
+as	Pluriel de typographe (métier).	a
+9ia		aer	x
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	y
+aâmes		aer	3
+aant		aer	z
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+ae	Art d’agencer les textes avec des caractères, « types », pour l’imprimerie ou pour tout autre support.
+aée		aer	11
+cs		aer	10
+aent		br	v
+br	Composer un texte, mettre en page un document à l’aide d’éléments typographiques, de composition.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aez		br	u
+aiez		aer	d
+bons		aer	j
+aons		aer	r
+aque	Relatif à la typographie.
+ds		d	0
+4logie	Groupement systématique de phénomènes étudiés en divers types en fonction de propriétés données.
+9s		9	0
+8que	De classification, qui appartient à la typologie, fondé sur une typologie.
+bs		b	0
+4mètre	Règle divisée en cicéros, demi cicéros et quarts de cicéros, avec laquelle on évalue les compositions typographiques.
+9s		9	0
+4n	Masque, feuille transparente, sur laquelle est imprimé un motif dans une encre opaque qui permet d'insoler, puis de graver la plaque qui servira à imprimer.
+5s		3er	r
+4s	Pluriel de typo.
+4te	Ouvrière typographe, ouvrière qui compose les textes destinés à l’impression typographique.
+6s		6	0
+3tologie	Communication avec les esprits frappeurs au moyen de coups frappés par les tables tournantes ou sur un objet quelconque.
+as		a	0
+2ramine	Amine primaire biogène, de formule C₈H₁₁NO, issue de la décarboxylation de la tyrosine et présente notamment dans certains aliments fermentés.
+4n	Roi absolu, monarque, despote qui usurpe la puissance souveraine.
+5e	Variante orthographique de tyranne.
+6s		6	0
+5neau	Petit tyran.
+9x		9	0
+6icide	Personne qui tue un tyran.
+7dés	Famille de passereaux.
+7e	Domination usurpée et illégale.
+8s		8	0
+7que	Qui tient de la tyrannie, qui est injuste, violent, contre le droit et la raison.
+ament	Avec tyrannie ; d’une manière tyrannique.
+as		a	0
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	1g
+at		8er	14
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8é		8er	1k
+9e		8er	19
+as		8er	10
+8ent		9r	15
+9r	Gouverner comme un tyran.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	1c
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+6osaure	Grand dinosaure carnivore du Campanien et du Maastrichtien, de la famille des tyrannosauridés.
+cs		c	0
+5s		5	0
+3ien	Relatif à Tyr.
+6ne		6	n
+8s		6	1
+6s		6	9
+3olien	Relatif au Tyrol.
+8ne	Sorte de chanson des zones alpines.
+as		8	1
+8s		8	9
+4sine	Acide aminé dont la chaîne latérale est (-CH₂-C₆H₄-OH).
+8s		8	0
+4thricine	Antibiotique peptidique, fabriqué par Bacillus brevis, actif sur certains gram positif par inhibition de la synthèse des protéines de la paroi.
+cs		c	0
+3rhénien	Qui a rapport à l'ancienne Tyrrhénie ou aux Tyrrhéniens.
+ane		a	31
+cs		a	1
+as		a	0

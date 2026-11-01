@@ -1,114 +1,114 @@
-gym	Gymnastique.
-gymkhana	Fête de plein air, publique ou privée, organisée dans un parc ou un jardin, qui comprend des épreuves sportives, des jeux d’adresse, des courses d’animaux.
-gymkhanas		gymkhana	0
-gymnase	Lieu où les Grecs s’exerçaient, nus (ou presque nus) à lutter, à lancer le disque, et à d’autres jeux propres à développer et à fortifier le corps.
-gymnases		gymnase	0
-gymnasial	Relatif au gymnase (dans le sens de lycée).
-gymnasiale		gymnasial	23
-gymnasiales		gymnasial	1
-gymnasiarque	Chef du gymnase.
-gymnasiarques		gymnasiarque	0
-gymnasiaux		gymnasial	9
-gymnasien	Lycéen.
-gymnasienne	Lycéenne.
-gymnasiennes		gymnasienne	0
-gymnasiens		gymnasien	0
-gymnaste	Entraineur, dans un gymnase, chargé des athlètes.
-gymnastes		gymnaste	0
-gymnastique	Qui est relatif aux exercices du corps.
-gymnastiques		gymnastique	0
-gymnique	Se dit des Jeux publics où les athlètes combattaient nus.
-gymniques		gymnique	162
-gymnocarpe	Dont le fruit n’est enveloppé par aucun organe.
-gymnocarpes		gymnocarpe	0
-gymnosophie	Doctrine des gymnosophistes, philosophes ascétiques indiens.
-gymnosophies		gymnosophie	0
-gymnosophiste	Philosophe de religions de l’Inde (notamment dans le jaïnisme et l’hindouisme) dont les membres allaient nus et s’adonnaient à la contemplation et à la méditat…
-gymnosophistes		gymnosophiste	0
-gymnosperme	Se dit d’une plante dont les ovules ne sont pas enfermés dans un ovaire.
-gymnospermes		gymnosperme	0
-gymnote	Poisson d'eau douce du genre Gymnotus, de la famille des Gymnotidae, à peau nue d'Amérique ressemblant à une anguille, il est pourvu d'organes pouvant provoque…
-gymnotes		gymnote	0
-gyms		gym	0
-gynandrie	Classe du système de Linné, qui renferme les plantes dont les étamines sont insérées sur le pistil.
-gynandries		gynandrie	0
-gynandromorphe	Qui présente les caractéristiques des deux sexes, en parlant d’un insecte.
-gynandromorphes		gynandromorphe	0
-gynécée	Appartement réservé aux femmes chez les Grecs.
-gynécées		gynécée	0
-gynéco	Gynécologue.
-gynécologie	Étude scientifique et pratique du fonctionnement du corps humain de sexe féminin ainsi que des maladies spécifiques aux femmes.
-gynécologies		gynécologie	0
-gynécologique	Qui se rapporte à la gynécologie.
-gynécologiques		gynécologique	0
-gynécologiste	Gynécologue.
-gynécologistes		gynécologiste	0
-gynécologue	Médecin spécialisé en gynécologie.
-gynécologues		gynécologue	0
-gynécomastie	Développement excessif des glandes mammaires chez l’homme, qui peut être congénital, dû à une maladie, à une tumeur ou à la prise de certains médicaments.
-gynécomasties		gynécomastie	0
-gynécos		gynéco	0
-gynerium	Plante de la famille des Poacées, appelée aussi herbe de la pampa.
-gyneriums		gynerium	0
-gynoïde	Qui présente des caractères féminins en parlant d’un individu mâle.
-gynoïdes		gynoïde	0
-gynostème	Partie de la fleur des plantes orchidées qui porte les étamines et le stigmate.
-gynostèmes		gynostème	0
-gyoza	Jiaozi frit, à la vapeur ou bouilli , ravioli chinois, préparé dans la culture japonaise et coréenne (mandu).
-gyozas		gyoza	0
-gypaète	Grand rapace diurne qui vit en hautes montagnes et se nourrit de charognes.
-gypaètes		gypaète	0
-gypsage	Épandage de gypse à la surface d’un sol cultivé, afin notamment d’en réduire la salinité après une inondation par la mer.
-gypsages		gypsage	0
-gypse	Espèce minérale composée de sulfate de calcium hydraté de formule brute CaSO₄, 2(H₂O).
-gypserie	Travail de plâtrage, activité de la plâtrerie.
-gypseries		gypserie	0
-gypses		gypse	0
-gypseuse		gypseux	23
-gypseuses		gypseux	1
-gypseux	Qui est de la nature du gypse.
-gypsier	Ouvrier carrier qui extrait le gypse.
-gypsière	Carrière de gypse.
-gypsières		gypsière	0
-gypsiers		gypsier	0
-gypsomètre	Appareil qui permet de déterminer la teneur des vins en sulfate de potassium.
-gypsomètres		gypsomètre	0
-gypsophile	Genre de plantes herbacées de la famille des caryophyllacées.
-gypsophiles		gypsophile	0
-gyration	Variante de giration.
-gyrations		gyration	0
-gyre	Immense tourbillon que les courants marins forment dans les océans.
-gyrer	Mettre un corps en rotation.
-gyrés		gyrer	38
-gyrin	Petit coléoptère aquatique au corps noir brillant appelé aussi tourniquet.
-gyrins		gyrin	0
-gyrobroyeur	Matériel agricole s’attelant derrière un tracteur et servant à broyer les ronces, arbustes, etc.
-gyrobroyeurs		gyrobroyeur	0
-gyrobus	Type d’autobus utilisé dans les années 1950 fonctionnant à l’électricité, sans batterie ni ligne de contact ni rails mais à l’aide d’un volant d’inertie, avec …
-gyrocompas	Instrument de navigation qui fonctionne comme un gyroscope et permet de déterminer le nord géographique en conservant toujours la même direction horizontale.
-gyrolaser	Gyromètre recourant à la technique du laser.
-gyrolasers		gyrolaser	0
-gyromagnétique	Relatif au gyromagnétisme.
-gyromagnétiques		gyromagnétique	0
-gyromètre	Appareil permettant de mesurer la vitesse de rotation du référentiel du capteur par rapport à un référentiel inertiel (ou galiléen), suivant un ou plusieurs ax…
-gyromètres		gyromètre	0
-gyromitre	Genre de champignons sans lames, au chapeau évoquant une cervelle, et au pied sans anneau, creux.
-gyromitres		gyromitre	0
-gyrophare	Feu spécial d’avertissement émettant de la lumière tournant autour d’un axe vertical.
-gyrophares		gyrophare	0
-gyropode	Véhicule à stabilisation gyroscopique composé de deux roues, d’un manche de conduite, et d’une plateforme monoplace sur laquelle l’utilisateur se tient debout.
-gyropodes		gyropode	0
-gyros	Sandwich grec formé d’un pain pita garni de viande d’agneau marinée grillée et d’une salade de concombre à la menthe.
-gyroscope	Appareil qui exploite le principe de la conservation du moment angulaire en physique.
-gyroscopes		gyroscope	0
-gyroscopique	Qui a un rapport avec le gyroscope.
-gyroscopiques		gyroscopique	0
-gyrostat	Solide animé d'un rapide mouvement de rotation autour de son axe.
-gyrostatique	Relatif au gyrostat.
-gyrostatiques		gyrostatique	0
-gyrostats		gyrostat	0
-gyrotrain	Train monorail muni d’un gyrostat.
-gyrotrains		gyrotrain	0
-gyrovague	Errant, en parlant d’un moine.
-gyrovagues		gyrovague	0
-gyrus	Circonvolution cérébrale.
+0gym	Gymnastique.
+3khana	Fête de plein air, publique ou privée, organisée dans un parc ou un jardin, qui comprend des épreuves sportives, des jeux d’adresse, des courses d’animaux.
+8s		8	0
+3nase	Lieu où les Grecs s’exerçaient, nus (ou presque nus) à lutter, à lancer le disque, et à d’autres jeux propres à développer et à fortifier le corps.
+7s		7	0
+6ial	Relatif au gymnase (dans le sens de lycée).
+9e		9	n
+as		9	1
+8rque	Chef du gymnase.
+cs		c	0
+8ux		8l	9
+7en	Lycéen.
+9ne	Lycéenne.
+bs		b	0
+9s		9	0
+6te	Entraineur, dans un gymnase, chargé des athlètes.
+8s		8	0
+7ique	Qui est relatif aux exercices du corps.
+bs		b	0
+4ique	Se dit des Jeux publics où les athlètes combattaient nus.
+8s		8	4i
+4ocarpe	Dont le fruit n’est enveloppé par aucun organe.
+as		a	0
+5sophie	Doctrine des gymnosophistes, philosophes ascétiques indiens.
+bs		b	0
+aste	Philosophe de religions de l’Inde (notamment dans le jaïnisme et l’hindouisme) dont les membres allaient nus et s’adonnaient à la contemplation et à la méditat…
+ds		d	0
+6perme	Se dit d’une plante dont les ovules ne sont pas enfermés dans un ovaire.
+bs		b	0
+5te	Poisson d'eau douce du genre Gymnotus, de la famille des Gymnotidae, à peau nue d'Amérique ressemblant à une anguille, il est pourvu d'organes pouvant provoque…
+7s		7	0
+3s		3	0
+2nandrie	Classe du système de Linné, qui renferme les plantes dont les étamines sont insérées sur le pistil.
+9s		9	0
+7omorphe	Qui présente les caractéristiques des deux sexes, en parlant d’un insecte.
+es		e	0
+3écée	Appartement réservé aux femmes chez les Grecs.
+7s		7	0
+5o	Gynécologue.
+6logie	Étude scientifique et pratique du fonctionnement du corps humain de sexe féminin ainsi que des maladies spécifiques aux femmes.
+bs		b	0
+aque	Qui se rapporte à la gynécologie.
+ds		d	0
+aste	Gynécologue.
+ds		d	0
+9ue	Médecin spécialisé en gynécologie.
+bs		b	0
+6mastie	Développement excessif des glandes mammaires chez l’homme, qui peut être congénital, dû à une maladie, à une tumeur ou à la prise de certains médicaments.
+cs		c	0
+6s		6	0
+3erium	Plante de la famille des Poacées, appelée aussi herbe de la pampa.
+8s		8	0
+3oïde	Qui présente des caractères féminins en parlant d’un individu mâle.
+7s		7	0
+4stème	Partie de la fleur des plantes orchidées qui porte les étamines et le stigmate.
+9s		9	0
+2oza	Jiaozi frit, à la vapeur ou bouilli , ravioli chinois, préparé dans la culture japonaise et coréenne (mandu).
+5s		5	0
+2paète	Grand rapace diurne qui vit en hautes montagnes et se nourrit de charognes.
+7s		7	0
+3sage	Épandage de gypse à la surface d’un sol cultivé, afin notamment d’en réduire la salinité après une inondation par la mer.
+7s		7	0
+4e	Espèce minérale composée de sulfate de calcium hydraté de formule brute CaSO₄, 2(H₂O).
+5rie	Travail de plâtrage, activité de la plâtrerie.
+8s		8	0
+5s		5	0
+5use		6x	n
+8s		6x	1
+6x	Qui est de la nature du gypse.
+4ier	Ouvrier carrier qui extrait le gypse.
+5ère	Carrière de gypse.
+8s		8	0
+5ers		7	0
+4omètre	Appareil qui permet de déterminer la teneur des vins en sulfate de potassium.
+as		a	0
+5phile	Genre de plantes herbacées de la famille des caryophyllacées.
+as		a	0
+2ration	Variante de giration.
+8s		8	0
+3e	Immense tourbillon que les courants marins forment dans les océans.
+4r	Mettre un corps en rotation.
+3és		3er	12
+3in	Petit coléoptère aquatique au corps noir brillant appelé aussi tourniquet.
+5s		5	0
+3obroyeur	Matériel agricole s’attelant derrière un tracteur et servant à broyer les ronces, arbustes, etc.
+bs		b	0
+5us	Type d’autobus utilisé dans les années 1950 fonctionnant à l’électricité, sans batterie ni ligne de contact ni rails mais à l’aide d’un volant d’inertie, avec …
+4compas	Instrument de navigation qui fonctionne comme un gyroscope et permet de déterminer le nord géographique en conservant toujours la même direction horizontale.
+4laser	Gyromètre recourant à la technique du laser.
+9s		9	0
+4magnétique	Relatif au gyromagnétisme.
+es		e	0
+5ètre	Appareil permettant de mesurer la vitesse de rotation du référentiel du capteur par rapport à un référentiel inertiel (ou galiléen), suivant un ou plusieurs ax…
+9s		9	0
+5itre	Genre de champignons sans lames, au chapeau évoquant une cervelle, et au pied sans anneau, creux.
+9s		9	0
+4phare	Feu spécial d’avertissement émettant de la lumière tournant autour d’un axe vertical.
+9s		9	0
+5ode	Véhicule à stabilisation gyroscopique composé de deux roues, d’un manche de conduite, et d’une plateforme monoplace sur laquelle l’utilisateur se tient debout.
+8s		8	0
+4s	Sandwich grec formé d’un pain pita garni de viande d’agneau marinée grillée et d’une salade de concombre à la menthe.
+5cope	Appareil qui exploite le principe de la conservation du moment angulaire en physique.
+9s		9	0
+8ique	Qui a un rapport avec le gyroscope.
+cs		c	0
+5tat	Solide animé d'un rapide mouvement de rotation autour de son axe.
+8ique	Relatif au gyrostat.
+cs		c	0
+8s		8	0
+4train	Train monorail muni d’un gyrostat.
+9s		9	0
+4vague	Errant, en parlant d’un moine.
+9s		9	0
+3us	Circonvolution cérébrale.

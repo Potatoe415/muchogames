@@ -1,21 +1,21 @@
-akan	Langue parlée principalement au Ghana de la famille kwa, du sous-groupe des langues tano central.
-Akans	Peuple d'Afrique de l’Ouest installée principalement au Ghana.	Ghana
-akassa	Pâte de farine de maïs fermentée.
-akassas		akassa	0
-akathisie	Impossibilité (ou grande difficulté) de rester assis, pour cause d’une forte sensation d'inconfort.
-akathisies		akathisie	0
-akathisique	Variante orthographique de acathisique.
-akathisiques		akathisique	123
-akène	Fruit sec et indéhiscent ne contenant qu’une graine dont le péricarpe, plus ou moins sclérifié, n’est pas soudé à la graine.
-akènes		akène	0
-akinésie	Impossibilité ou difficulté d’initier des mouvements volontaires, due à des problèmes d’activation de zones du cerveau.
-akinésies		akinésie	0
-akinétique	Relatif à l’akinésie.
-akinétiques		akinétique	0
-akita	Race de chien originaire du Japon, à queue longue et épaisse, à poil court et dur.
-akitas		akita	0
-akkadien	Langue anciennement parlée en Akkad.
-akkadienne		akkadien	124
-akkadiennes		akkadien	1
-akkadiens		akkadien	9
-akvavit	Aquavit.
+0akan	Langue parlée principalement au Ghana de la famille kwa, du sous-groupe des langues tano central.
+0Akans	Peuple d'Afrique de l’Ouest installée principalement au Ghana.	0Ghana
+0akassa	Pâte de farine de maïs fermentée.
+6s		6	0
+3thisie	Impossibilité (ou grande difficulté) de rester assis, pour cause d’une forte sensation d'inconfort.
+9s		9	0
+8que	Variante orthographique de acathisique.
+bs		b	3f
+2ène	Fruit sec et indéhiscent ne contenant qu’une graine dont le péricarpe, plus ou moins sclérifié, n’est pas soudé à la graine.
+5s		5	0
+2inésie	Impossibilité ou difficulté d’initier des mouvements volontaires, due à des problèmes d’activation de zones du cerveau.
+8s		8	0
+5tique	Relatif à l’akinésie.
+as		a	0
+3ta	Race de chien originaire du Japon, à queue longue et épaisse, à poil court et dur.
+5s		5	0
+2kadien	Langue anciennement parlée en Akkad.
+8ne		8	3g
+as		8	1
+8s		8	9
+2vavit	Aquavit.

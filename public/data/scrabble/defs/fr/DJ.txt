@@ -1,41 +1,41 @@
-djaïn	Variante de jaïn.
-djaïna	Variante de jaïna, djaïn.
-djaïnas		djaïna	0
-djaïne	Variante de jaïne.
-djaïnes		djaïn	1
-djaïnisme	Variante orthographique de jaïnisme.
-djaïnismes		djaïnisme	0
-djaïns		djaïn	9
-djamaâ	Mosquée, lieu de prière.
-djamaâs		djamaâ	0
-djebel	Massif montagneux ou montagne, en Afrique du Nord ou au Moyen-Orient.
-djebels		djebel	0
-djellaba	Longue tunique qui descend aux chevilles et généralement munie d’une capuche.
-djellabas		djellaba	0
-djemâa	Sorte de districts ou communes coutumiers des Kabyles.
-djemaas		djemaa	0
-djembé	Instrument de musique originaire d’Afrique, composé d'une pièce de bois recouvert d’une peau tendue.
-djember	Jouer du djembé.
-djembes		djember	113
-djerbien	Relatif à l’île de Djerba, au nord-est de la Tunisie, ou à ses habitants.
-djerbienne		djerbien	23
-djerbiennes		djerbien	1
-djerbiens		djerbien	9
-djeun	Variante orthographique de djeune.
-djeune	Jeune ; mais plus particulièrement lorsque cette personne jeune adopte un comportement, une attitude, un langage, des vêtements typiques ouvertement référés à …
-djeunes		djeune	0
-djeuns		djeun	0
-djiboutien	Relatif à Djibouti, à ses habitants ou à sa culture.
-djiboutienne		djiboutien	23
-djiboutiennes		djiboutien	1
-djiboutiens		djiboutien	0
-djihad	Combat pour étendre le domaine de l’Islam (دَارُ ٱلسَّلَامِ (dâru ^lsalâmi) : pays musulman) par la conquête des pays non soumis (دَارُ ٱلحَرْبِ (dâru ^lHarbi)…
-djihadisme	Mouvement de l'islamisme, qui place l’usage de la violence et la lutte (djihad) « comme moyen pour la réalisation des objectifs islamistes
-djihadismes		djihadisme	0
-djihadiste	Concernant le djihad.
-djihadistes		djihadiste	0
-djihads		djihad	0
-djinn	Entité polymorphe née du feu, potentiellement malfaisante et dotée du pouvoir d’influence sur les humains dans les contes et légendes préislamiques du Moyen-Or…
-djinns		djinn	0
-djobeur	Bricoleur.
-djobeurs		djobeur	0
+0djaïn	Variante de jaïn.
+5a	Variante de jaïna, djaïn.
+6s		6	0
+5e	Variante de jaïne.
+6s		5	1
+5isme	Variante orthographique de jaïnisme.
+9s		9	0
+5s		5	9
+3maâ	Mosquée, lieu de prière.
+6s		6	0
+2ebel	Massif montagneux ou montagne, en Afrique du Nord ou au Moyen-Orient.
+6s		6	0
+3llaba	Longue tunique qui descend aux chevilles et généralement munie d’une capuche.
+8s		8	0
+3mâa	Sorte de districts ou communes coutumiers des Kabyles.
+4aas		6	0
+4bé	Instrument de musique originaire d’Afrique, composé d'une pièce de bois recouvert d’une peau tendue.
+5er	Jouer du djembé.
+6s		6r	35
+3rbien	Relatif à l’île de Djerba, au nord-est de la Tunisie, ou à ses habitants.
+8ne		8	n
+as		8	1
+8s		8	9
+3un	Variante orthographique de djeune.
+5e	Jeune ; mais plus particulièrement lorsque cette personne jeune adopte un comportement, une attitude, un langage, des vêtements typiques ouvertement référés à …
+6s		6	0
+5s		5	0
+2iboutien	Relatif à Djibouti, à ses habitants ou à sa culture.
+ane		a	n
+cs		a	1
+as		a	0
+3had	Combat pour étendre le domaine de l’Islam (دَارُ ٱلسَّلَامِ (dâru ^lsalâmi) : pays musulman) par la conquête des pays non soumis (دَارُ ٱلحَرْبِ (dâru ^lHarbi)…
+6isme	Mouvement de l'islamisme, qui place l’usage de la violence et la lutte (djihad) « comme moyen pour la réalisation des objectifs islamistes
+as		a	0
+8te	Concernant le djihad.
+as		a	0
+6s		6	0
+3nn	Entité polymorphe née du feu, potentiellement malfaisante et dotée du pouvoir d’influence sur les humains dans les contes et légendes préislamiques du Moyen-Or…
+5s		5	0
+2obeur	Bricoleur.
+7s		7	0

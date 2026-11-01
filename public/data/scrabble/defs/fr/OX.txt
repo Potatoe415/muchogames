@@ -1,175 +1,175 @@
-oxacide	Variante de oxoacide.
-oxacides		oxacide	0
-oxalate	Sel dérivé de l’acide oxalique.
-oxalates		oxalate	0
-oxalidacées	Oxalidaceae, famille de plantes de l'ordre des géraniales dont le type est l'oxalis (Oxalis).
-oxalide	Oxalis, genre de plantes de la famille des oxalidacées (Oxalidaceae).
-oxalides		oxalide	0
-oxalique	Qualifie un acide aussi appelé sel d’oseille.
-oxaliques		oxalique	0
-oxalis	Oxalis, genre de plante de la famille des oxalidacées.
-oxamide	Produit de distillation de l’oxalate d’ammoniaque.
-oxamides		oxamide	0
-oxer	Type d’obstacle constitué de deux plans (haut et large).
-oxers		oxer	0
-oxford	Espèce de toile de coton ou de lin, à raies ou à carreaux, très solide.
-oxfordien	Relatif à l’Oxfordien.
-oxfordienne		oxfordien	23
-oxfordiennes		oxfordien	121
-oxfordiens		oxfordien	9
-oxfords		oxford	0
-oxhydrique	Composé d’oxygène et d’hydrogène.
-oxhydriques		oxhydrique	0
-oxhydryle	Synonyme de hydroxyle.
-oxime	Composé organique azoté de formule R₂C=NOH, dérivé d'une imine, dont l'azote substitué est porteur d'un groupement hydroxyle.
-oximer	Faire apparaître un groupement oxime dans.
-oximés		oximer	38
-oxo	Qualifie un composé contenant un atome d'oxygène doublement lié (=O) à un atome de carbone ou à un autre type d'atomes.
-oxonien	Relatif à Oxford et à ses habitants.
-oxonienne		oxonien	23
-oxoniennes		oxonien	1
-oxoniens		oxonien	9
-oxonium	Cation portant une charge positive localisée sur un atome d’oxygène trivalent.
-oxoniums		oxonium	0
-oxyacétylénique	Qui se rapporte au mélange oxygène plus acétylène.
-oxyacide	Variante de oxoacide.
-oxyacides		oxyacide	0
-oxycarboné	Qui contient de l’oxyde de carbone, qui a un rapport avec le monoxyde de carbone.
-oxycarbonée		oxycarboné	23
-oxycarbonées		oxycarboné	1
-oxycarbonés		oxycarboné	9
-oxychlorure	Combinaison de chlore et d’un oxyde.
-oxychlorures		oxychlorure	0
-oxycoupage	Technique de coupe ou de découpe des métaux avec un chalumeau oxyacétylénique.
-oxycoupages		oxycoupage	0
-oxycoupeur	Machine de découpe thermique des métaux.
-oxycoupeurs		oxycoupeur	0
-oxycrat	Mélange d’eau et de vinaigre, dont on faisait un fréquent usage dans le traitement de quelques maladies inflammatoires et biliaires.
-oxycrats		oxycrat	0
-oxyda		oxyder	33
-oxydabilité	Qualité de ce qui est oxydable.
-oxydabilités		oxydabilité	0
-oxydable	Qui peut s’oxyder.
-oxydables		oxydable	0
-oxydai		oxyder	22
-oxydaient		oxyder	32
-oxydais		oxyder	29
-oxydait		oxyder	34
-oxydâmes		oxyder	3
-oxydant	Qui oxyde.
-oxydante		oxydant	23
-oxydantes		oxydant	1
-oxydants		oxydant	0
-oxydas		oxyder	12
-oxydase	Enzyme catalysant une réaction d'oxydo-réduction impliquant une molécule de dioxygène comme accepteur d'électron.
-oxydases		oxydase	0
-oxydasse		oxyder	6
-oxydassent		oxyder	17
-oxydasses		oxyder	8
-oxydassiez		oxyder	14
-oxydassions		oxyder	25
-oxydât		oxyder	20
-oxydâtes		oxyder	2
-oxydatif	Provoqué par ou autrement lié à des réactions d’oxydation.
-oxydatifs		oxydatif	9
-oxydation	Corrosion par l’oxygène de l’air ou celui dissous dans l’eau.
-oxydations		oxydation	0
-oxydative		oxydatif	23
-oxydatives		oxydatif	1
-oxyde	Résultat de la combinaison de l’oxygène avec une autre substance.
-oxydée		oxyder	45
-oxydées		oxyder	51
-oxydent		oxyder	31
-oxyder	Appliquer une oxydation.
-oxydera		oxyder	21
-oxyderai		oxyder	16
-oxyderaient		oxyder	28
-oxyderais		oxyder	18
-oxyderait		oxyder	26
-oxyderas		oxyder	7
-oxydèrent		oxyder	24
-oxyderez		oxyder	5
-oxyderiez		oxyder	4
-oxyderions		oxyder	11
-oxyderons		oxyder	10
-oxyderont		oxyder	15
-oxydes		oxyde	0
-oxydez		oxyder	30
-oxydiez		oxyder	13
-oxydions		oxyder	19
-oxydons		oxyder	27
-oxydoréductase	Enzyme catalysant une réaction d’oxydoréduction, en transférant des électrons d’un donneur (substrat oxydé) vers un accepteur (substrat réduit).
-oxydoréductases		oxydoréductase	0
-oxydoréduction	Réaction chimique au cours de laquelle se produit un transfert d’électrons entre l’oxydant, qui capte un ou plusieurs électrons, et le réducteur, qui perd un o…
-oxydoréductions		oxydoréduction	0
-oxygéna		oxygéner	33
-oxygénable	Qui est susceptible de se combiner avec l’oxygène.
-oxygénables		oxygénable	0
-oxygénai		oxygéner	22
-oxygénaient		oxygéner	32
-oxygénais		oxygéner	29
-oxygénait		oxygéner	34
-oxygénâmes		oxygéner	3
-oxygénant	Qui produit des oxydes.
-oxygénants		oxygénant	0
-oxygénas		oxygéner	12
-oxygénase	Enzyme ayant pour fonction d’introduire un dioxygène réduit dans une protéine.
-oxygénases		oxygénase	0
-oxygénasse		oxygéner	6
-oxygénassent		oxygéner	17
-oxygénasses		oxygéner	8
-oxygénassiez		oxygéner	14
-oxygénassions		oxygéner	25
-oxygénât		oxygéner	20
-oxygénâtes		oxygéner	2
-oxygénateur	Appareil destiné à oxygéner le sang, notamment durant les opérations chirurgicales à cœur ouvert.
-oxygénateurs		oxygénateur	0
-oxygénation	Oxydation.
-oxygénations		oxygénation	0
-oxygène	Élément chimique de numéro atomique 8 et de symbole O qui fait partie des non-métaux, plus spécifiquement des chalcogènes.
-oxygénée		oxygéné	23
-oxygénées		oxygéné	1
-oxygènent		oxygéner	41
-oxygéner	Combiner avec de l’oxygène → voir oxyder
-oxygènera		oxygéner	21
-oxygènerai		oxygéner	16
-oxygèneraient		oxygéner	28
-oxygènerais		oxygéner	18
-oxygènerait		oxygéner	26
-oxygèneras		oxygéner	7
-oxygénèrent		oxygéner	24
-oxygènerez		oxygéner	5
-oxygèneriez		oxygéner	4
-oxygènerions		oxygéner	11
-oxygènerons		oxygéner	10
-oxygèneront		oxygéner	15
-oxygénés		oxygéné	9
-oxygénez		oxygéner	30
-oxygéniez		oxygéner	13
-oxygénions		oxygéner	19
-oxygénons		oxygéner	27
-oxygénothérapie	Fait d’apporter un supplément de dioxygène à un patient.
-oxyhémoglobine	Forme de l’hémoglobine lorsqu'elle est à l’état oxydé.
-oxyhémoglobines		oxyhémoglobine	0
-oxylithe	Composé chimique solide à base de peroxyde de sodium, qui se dissout au contact de l’eau en libérant de l’oxygène, anciennement utilisé par exemple dans les mi…
-oxylithes		oxylithe	0
-oxymel	Préparation pharmaceutique qui se fait avec de l’eau, du miel et du vinaigre.
-oxymels		oxymel	0
-oxymètre	Appareil permettant la mesure de la saturation en oxygène.
-oxymètres		oxymètre	0
-oxymétrie	Dosage de la quantité d’oxygène dissous dans un liquide.
-oxymétries		oxymétrie	0
-oxymore	Alliance de mots surprenante.
-oxymores		oxymore	0
-oxymoron	Combinaison dans un même groupe syntaxique de deux notions contradictoires.
-oxymorons		oxymoron	0
-oxysulfure	Combinaison d'un sulfure avec un oxyde.
-oxysulfures		oxysulfure	0
-oxyton	Accentué sur la dernière syllabe.
-oxytonne	Installation de production et de stockage d’oxygène sous forme liquide ou gazeuse.
-oxytonnes		oxytonne	0
-oxytons		oxyton	9
-oxyure	Nématode de la famille des oxyuridés à la queue pointue et dont une espèce est parasite de l’homme et se trouve surtout dans le gros intestin et le bord de l’a…
-oxyures		oxyure	0
-oxyurose	Maladie parasitaire des intestins due à un oxyure (nématode) nommé Enterobius vermicularis.
-oxyuroses		oxyurose	0
+0oxacide	Variante de oxoacide.
+7s		7	0
+3late	Sel dérivé de l’acide oxalique.
+7s		7	0
+4idacées	Oxalidaceae, famille de plantes de l'ordre des géraniales dont le type est l'oxalis (Oxalis).
+6e	Oxalis, genre de plantes de la famille des oxalidacées (Oxalidaceae).
+7s		7	0
+5que	Qualifie un acide aussi appelé sel d’oseille.
+8s		8	0
+5s	Oxalis, genre de plante de la famille des oxalidacées.
+3mide	Produit de distillation de l’oxalate d’ammoniaque.
+7s		7	0
+2er	Type d’obstacle constitué de deux plans (haut et large).
+4s		4	0
+2ford	Espèce de toile de coton ou de lin, à raies ou à carreaux, très solide.
+6ien	Relatif à l’Oxfordien.
+9ne		9	n
+bs		9	3d
+9s		9	9
+6s		6	0
+2hydrique	Composé d’oxygène et d’hydrogène.
+as		a	0
+6yle	Synonyme de hydroxyle.
+2ime	Composé organique azoté de formule R₂C=NOH, dérivé d'une imine, dont l'azote substitué est porteur d'un groupement hydroxyle.
+5r	Faire apparaître un groupement oxime dans.
+4és		4er	12
+2o	Qualifie un composé contenant un atome d'oxygène doublement lié (=O) à un atome de carbone ou à un autre type d'atomes.
+3nien	Relatif à Oxford et à ses habitants.
+7ne		7	n
+9s		7	1
+7s		7	9
+5um	Cation portant une charge positive localisée sur un atome d’oxygène trivalent.
+7s		7	0
+2yacétylénique	Qui se rapporte au mélange oxygène plus acétylène.
+5ide	Variante de oxoacide.
+8s		8	0
+3carboné	Qui contient de l’oxyde de carbone, qui a un rapport avec le monoxyde de carbone.
+ae		a	n
+bs		a	1
+as		a	9
+4hlorure	Combinaison de chlore et d’un oxyde.
+bs		b	0
+4oupage	Technique de coupe ou de découpe des métaux avec un chalumeau oxyacétylénique.
+as		a	0
+7eur	Machine de découpe thermique des métaux.
+as		a	0
+4rat	Mélange d’eau et de vinaigre, dont on faisait un fréquent usage dans le traitement de quelques maladies inflammatoires et biliaires.
+7s		7	0
+3da		4er	x
+5bilité	Qualité de ce qui est oxydable.
+bs		b	0
+6le	Qui peut s’oxyder.
+8s		8	0
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant	Qui oxyde.
+7e		7	n
+8s		7	1
+7s		7	0
+5s		4er	c
+6e	Enzyme catalysant une réaction d'oxydo-réduction impliquant une molécule de dioxygène comme accepteur d'électron.
+7s		7	0
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4atif	Provoqué par ou autrement lié à des réactions d’oxydation.
+8s		8	9
+7on	Corrosion par l’oxygène de l’air ou celui dissous dans l’eau.
+9s		9	0
+7ve		7f	n
+9s		7f	1
+4e	Résultat de la combinaison de l’oxygène avec une autre substance.
+4ée		4er	19
+6s		4er	1f
+4ent		5r	v
+5r	Appliquer une oxydation.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+5réductase	Enzyme catalysant une réaction d’oxydoréduction, en transférant des électrons d’un donneur (substrat oxydé) vers un accepteur (substrat réduit).
+es		e	0
+bion	Réaction chimique au cours de laquelle se produit un transfert d’électrons entre l’oxydant, qui capte un ou plusieurs électrons, et le réducteur, qui perd un o…
+es		e	0
+3géna		6er	x
+7ble	Qui est susceptible de se combiner avec l’oxygène.
+as		a	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Qui produit des oxydes.
+9s		9	0
+7s		6er	c
+8e	Enzyme ayant pour fonction d’introduire un dioxygène réduit dans une protéine.
+9s		9	0
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Appareil destiné à oxygéner le sang, notamment durant les opérations chirurgicales à cœur ouvert.
+bs		b	0
+8ion	Oxydation.
+bs		b	0
+4ène	Élément chimique de numéro atomique 8 et de symbole O qui fait partie des non-métaux, plus spécifiquement des chalcogènes.
+4énée		7	n
+8s		7	1
+4ènent		4éner	15
+4éner	Combiner avec de l’oxygène → voir oxyder
+4ènera		4éner	l
+9i		4éner	g
+aent		4éner	s
+as		4éner	i
+at		4éner	q
+9s		4éner	7
+4énèrent		6er	o
+4ènerez		4éner	5
+8iez		4éner	4
+9ons		4éner	b
+8ons		4éner	a
+at		4éner	f
+4énés		7	9
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+7thérapie	Fait d’apporter un supplément de dioxygène à un patient.
+3hémoglobine	Forme de l’hémoglobine lorsqu'elle est à l’état oxydé.
+es		e	0
+3lithe	Composé chimique solide à base de peroxyde de sodium, qui se dissout au contact de l’eau en libérant de l’oxygène, anciennement utilisé par exemple dans les mi…
+8s		8	0
+3mel	Préparation pharmaceutique qui se fait avec de l’eau, du miel et du vinaigre.
+6s		6	0
+4ètre	Appareil permettant la mesure de la saturation en oxygène.
+8s		8	0
+4étrie	Dosage de la quantité d’oxygène dissous dans un liquide.
+9s		9	0
+4ore	Alliance de mots surprenante.
+7s		7	0
+6on	Combinaison dans un même groupe syntaxique de deux notions contradictoires.
+8s		8	0
+3sulfure	Combinaison d'un sulfure avec un oxyde.
+as		a	0
+3ton	Accentué sur la dernière syllabe.
+6ne	Installation de production et de stockage d’oxygène sous forme liquide ou gazeuse.
+8s		8	0
+6s		6	9
+3ure	Nématode de la famille des oxyuridés à la queue pointue et dont une espèce est parasite de l’homme et se trouve surtout dans le gros intestin et le bord de l’a…
+6s		6	0
+5ose	Maladie parasitaire des intestins due à un oxyure (nématode) nommé Enterobius vermicularis.
+8s		8	0

@@ -1,4 +1,4 @@
-bhojpuri	Langue parlée dans le nord-est de l’Inde.
-bhoutanais	Relatif au Bhoutan ou aux Bhoutanais.
-bhoutanaise		bhoutanais	23
-bhoutanaises		bhoutanais	1
+0bhojpuri	Langue parlée dans le nord-est de l’Inde.
+3utanais	Relatif au Bhoutan ou aux Bhoutanais.
+ae		a	n
+bs		a	1

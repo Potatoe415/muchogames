@@ -1,13 +1,13 @@
-jigger	Agiter verticalement un leurre appelé jig.
-jiggers		jigger	0
-jihad	Variante de djihad.
-jihadiste	Qui fait le jihad.
-jihadistes		jihadiste	0
-jihads		jihad	0
-jingle	Mélodie courte et accrocheuse servant en général d’annonce musicale, généralement associée à un slogan, accompagnant une publicité, ou à une marque.
-jingles		jingle	0
-jinisme	Variante de jaïnisme.
-jinismes		jinisme	0
-jiujitsu	Variante orthographique de jiu-jitsu.
-jiujitsus		jiujitsu	0
-jive	Danse latine de compétition descendant du lindy hop.
+0jigger	Agiter verticalement un leurre appelé jig.
+6s		6	0
+2had	Variante de djihad.
+5iste	Qui fait le jihad.
+9s		9	0
+5s		5	0
+2ngle	Mélodie courte et accrocheuse servant en général d’annonce musicale, généralement associée à un slogan, accompagnant une publicité, ou à une marque.
+6s		6	0
+3isme	Variante de jaïnisme.
+7s		7	0
+2ujitsu	Variante orthographique de jiu-jitsu.
+8s		8	0
+2ve	Danse latine de compétition descendant du lindy hop.

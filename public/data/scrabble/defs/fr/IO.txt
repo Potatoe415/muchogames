@@ -1,197 +1,197 @@
-ioda		ioder	33
-iodai		ioder	22
-iodaient		ioder	32
-iodais		ioder	29
-iodait		ioder	34
-iodâmes		ioder	3
-iodant		ioder	35
-iodas		ioder	12
-iodasse		ioder	6
-iodassent		ioder	17
-iodasses		ioder	8
-iodassiez		ioder	14
-iodassions		ioder	25
-iodât		ioder	20
-iodate	Anion d’iode.
-iodâtes		ioder	2
-iodé	Qui contient de l’iode.
-iodée		iodé	23
-iodées		ioder	36
-iodent		ioder	31
-ioder	Couvrir d’iode.
-iodera		ioder	21
-ioderai		ioder	16
-ioderaient		ioder	28
-ioderais		ioder	18
-ioderait		ioder	26
-ioderas		ioder	7
-iodèrent		ioder	24
-ioderez		ioder	5
-ioderiez		ioder	4
-ioderions		ioder	11
-ioderons		ioder	10
-ioderont		ioder	15
-iodés		ioder	38
-iodeuse		iodeux	23
-iodeuses		iodeux	1
-iodeux	Se dit de l’un des acides que l’iode produit en se combinant avec l’oxygène, de formule chimique HIO.
-iodez		ioder	30
-iodhydrique	Se dit du monoacide de formule HI.
-iodhydriques		iodhydrique	0
-iodiez		ioder	13
-iodions		ioder	19
-iodique	Qui contient de l’iode.
-iodiques		iodique	0
-iodisme	Intoxication due à une absorption excessive d'iode.
-iodismes		iodisme	0
-iodla		iodler	33
-iodlai		iodler	22
-iodlaient		iodler	32
-iodlais		iodler	29
-iodlait		iodler	34
-iodlâmes		iodler	3
-iodlant		iodler	35
-iodlas		iodler	12
-iodlasse		iodler	6
-iodlassent		iodler	17
-iodlasses		iodler	8
-iodlassiez		iodler	14
-iodlassions		iodler	25
-iodlât		iodler	20
-iodlâtes		iodler	2
-iodlé	Chanté en iodlant.
-iodlent		iodler	31
-iodler	Variante de yodler.
-iodlera		iodler	21
-iodlerai		iodler	16
-iodleraient		iodler	28
-iodlerais		iodler	18
-iodlerait		iodler	26
-iodleras		iodler	7
-iodlèrent		iodler	24
-iodlerez		iodler	5
-iodleriez		iodler	4
-iodlerions		iodler	11
-iodlerons		iodler	10
-iodleront		iodler	15
-iodles		iodler	66
-iodleur	Variante orthographique de yodleur.
-iodleurs		iodleur	0
-iodleuse	Variante orthographique de yodleuse.
-iodleuses		iodleuse	0
-iodlez		iodler	30
-iodliez		iodler	13
-iodlions		iodler	19
-iodlons		iodler	27
-iodoforme	Composé jaunâtre généralement obtenu par la réaction de l’iode sur l’alcool en présence du carbonate de potasse et qui s’emploie comme antiseptique.
-iodoformer	Imbiber d'iodoforme.
-iodoformés		iodoformer	38
-iodons		ioder	27
-ioduré	Qui contient de l’iodure.
-iodurée		iodurer	37
-iodurées		iodurer	36
-iodurer	Additionner d’iodure.
-iodurés		iodurer	38
-ion	Atome ou molécule ayant perdu ou gagné des électrons sur sa couche externe.
-ionien	Qui appartient, qui est particulier à l’ancienne Ionie.
-ionienne	Féminin de ionien.
-ioniennes		ionien	1
-ioniens		ionien	9
-ionique	Relatif à l’Ionie.
-ioniques		ionique	0
-ionisa		ioniser	33
-ionisai		ioniser	22
-ionisaient		ioniser	32
-ionisais		ioniser	29
-ionisait		ioniser	34
-ionisâmes		ioniser	3
-ionisant	Qui produit des ions.
-ionisante		ionisant	23
-ionisantes		ionisant	1
-ionisants		ionisant	9
-ionisas		ioniser	12
-ionisasse		ioniser	6
-ionisassent		ioniser	17
-ionisasses		ioniser	8
-ionisassiez		ioniser	14
-ionisassions		ioniser	25
-ionisât		ioniser	20
-ionisâtes		ioniser	2
-ionisation	Action d’ioniser.
-ionisations		ionisation	0
-ionisé	Qui a été transformé en ion.
-ionisée		ionisé	239
-ionisées		ionisé	1
-ionisent		ioniser	31
-ioniser	Provoquer l’ionisation d’un élément.
-ionisera		ioniser	21
-ioniserai		ioniser	16
-ioniseraient		ioniser	28
-ioniserais		ioniser	18
-ioniserait		ioniser	26
-ioniseras		ioniser	7
-ionisèrent		ioniser	24
-ioniserez		ioniser	5
-ioniseriez		ioniser	4
-ioniserions		ioniser	11
-ioniserons		ioniser	10
-ioniseront		ioniser	15
-ionisés		ionisé	244
-ioniseur	Appareil électroménager destiné à purifier l’air ambiant en générant et libérant des ions négatifs qui se fixent aux particules en suspension et les font retom…
-ioniseurs		ioniseur	0
-ionisez		ioniser	47
-ionisiez		ioniser	13
-ionisions		ioniser	19
-ionisme	Mot ou tournure propre au dialecte grec de la Ionie (celui d’Hérodote).
-ionismes		ionisme	118
-ionisons		ioniser	27
-ionogramme	Examen de laboratoire de biologie médicale qui analyse la concentration en électrolytes d’un liquide organique (sang, urines, liquide céphalo-rachidien).
-ionogrammes		ionogramme	0
-ionone	Cétone à odeur de violette utilisée en parfumerie et dans l'industrie pour la synthèse de la vitamine A.
-ionones		ionone	0
-ionosphère	Région entourant un objet céleste, ionisée par les radiations d’une étoile proche.
-ionosphères		ionosphère	0
-ionosphérique	Relatif à la ionosphère
-ionosphériques		ionosphérique	0
-ions		ion	0
-iota	Nom de ι, Ι, neuvième lettre et quatrième voyelle de l’alphabet grec.
-iotacisme	Évolution, notamment en grec postclassique, d’une voyelle ou d’une diphtongue vers le son \i\.
-iotacismes		iotacisme	0
-iotas		iota	0
-ioula		iouler	33
-ioulai		iouler	22
-ioulaient		iouler	32
-ioulais		iouler	29
-ioulait		iouler	34
-ioulâmes		iouler	3
-ioulant		iouler	35
-ioulas		iouler	12
-ioulasse		iouler	6
-ioulassent		iouler	17
-ioulasses		iouler	8
-ioulassiez		iouler	14
-ioulassions		iouler	25
-ioulât		iouler	20
-ioulâtes		iouler	2
-ioulé		iouler	46
-ioulent		iouler	31
-iouler	Chanter en vocalises comme les Tyroliens.
-ioulera		iouler	21
-ioulerai		iouler	16
-iouleraient		iouler	28
-ioulerais		iouler	18
-ioulerait		iouler	26
-iouleras		iouler	7
-ioulèrent		iouler	24
-ioulerez		iouler	5
-iouleriez		iouler	4
-ioulerions		iouler	11
-ioulerons		iouler	10
-iouleront		iouler	15
-ioules		iouler	66
-ioulez		iouler	30
-iouliez		iouler	13
-ioulions		iouler	19
-ioulons		iouler	27
-iourte	Variante orthographique de yourte
-iourtes		iourte	0
+0ioda		3er	x
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+3ate	Anion d’iode.
+3âtes		3er	2
+3é	Qui contient de l’iode.
+4e		4	n
+5s		3er	10
+3ent		4r	v
+4r	Couvrir d’iode.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+3és		3er	12
+3euse		5x	n
+7s		5x	1
+5x	Se dit de l’un des acides que l’iode produit en se combinant avec l’oxygène, de formule chimique HIO.
+4z		4r	u
+3hydrique	Se dit du monoacide de formule HI.
+bs		b	0
+3iez		3er	d
+4ons		3er	j
+4que	Qui contient de l’iode.
+7s		7	0
+4sme	Intoxication due à une absorption excessive d'iode.
+7s		7	0
+3la		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é	Chanté en iodlant.
+4ent		5r	v
+5r	Variante de yodler.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	1u
+5ur	Variante orthographique de yodleur.
+7s		7	0
+6se	Variante orthographique de yodleuse.
+8s		8	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3oforme	Composé jaunâtre généralement obtenu par la réaction de l’iode sur l’alcool en présence du carbonate de potasse et qui s’emploie comme antiseptique.
+9r	Imbiber d'iodoforme.
+8és		8er	12
+4ns		3er	r
+3uré	Qui contient de l’iodure.
+6e		5er	11
+7s		5er	10
+5er	Additionner d’iodure.
+5és		5er	12
+2n	Atome ou molécule ayant perdu ou gagné des électrons sur sa couche externe.
+3ien	Qui appartient, qui est particulier à l’ancienne Ionie.
+6ne	Féminin de ionien.
+8s		6	1
+6s		6	9
+4que	Relatif à l’Ionie.
+7s		7	0
+4sa		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant	Qui produit des ions.
+8e		8	n
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ation	Action d’ioniser.
+as		a	0
+5é	Qui a été transformé en ion.
+6e		6	6n
+7s		6	1
+5ent		6r	v
+6r	Provoquer l’ionisation d’un élément.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	6s
+5eur	Appareil électroménager destiné à purifier l’air ambiant en générant et libérant des ions négatifs qui se fixent aux particules en suspension et les font retom…
+8s		8	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+5me	Mot ou tournure propre au dialecte grec de la Ionie (celui d’Hérodote).
+7s		7	3a
+5ons		5er	r
+3ogramme	Examen de laboratoire de biologie médicale qui analyse la concentration en électrolytes d’un liquide organique (sang, urines, liquide céphalo-rachidien).
+as		a	0
+4ne	Cétone à odeur de violette utilisée en parfumerie et dans l'industrie pour la synthèse de la vitamine A.
+6s		6	0
+4sphère	Région entourant un objet céleste, ionisée par les radiations d’une étoile proche.
+as		a	0
+7érique	Relatif à la ionosphère
+ds		d	0
+3s		3	0
+2ta	Nom de ι, Ι, neuvième lettre et quatrième voyelle de l’alphabet grec.
+4cisme	Évolution, notamment en grec postclassique, d’une voyelle ou d’une diphtongue vers le son \i\.
+9s		9	0
+4s		4	0
+2ula		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+4ent		5r	v
+5r	Chanter en vocalises comme les Tyroliens.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	1u
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3rte	Variante orthographique de yourte
+6s		6	0

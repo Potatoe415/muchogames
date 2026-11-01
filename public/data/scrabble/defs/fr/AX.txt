@@ -1,120 +1,120 @@
-axa		axer	33
-axai		axer	22
-axaient		axer	32
-axais		axer	29
-axait		axer	34
-axâmes		axer	3
-axant		axer	35
-axas		axer	12
-axasse		axer	6
-axassent		axer	17
-axasses		axer	8
-axassiez		axer	14
-axassions		axer	25
-axât		axer	20
-axâtes		axer	2
-axe	Pièce de fer ou de bois qui passe par le centre d’un corps et qui sert à faire tourner ce corps sur lui-même.
-axée		axer	37
-axées		axer	36
-axel	Saut partant sur une carre extérieure avant et se terminant sur une carre extérieure arrière après une rotation d’un tour et demi dans l’espace.
-axels		axel	0
-axène	Caractérise un phénomène qui se développe dans un milieu stérile.
-axènes		axène	0
-axénique	Se dit d’un animal de laboratoire exempt de tous germes saprophytes ou pathogènes.
-axéniques		axénique	0
-axénisation	Opération rendant axénique un organisme.
-axénisations		axénisation	0
-axent		axer	31
-axer	Orienter suivant un axe, une direction.
-axera		axer	21
-axerai		axer	16
-axeraient		axer	28
-axerais		axer	18
-axerait		axer	26
-axeras		axer	7
-axèrent		axer	24
-axerez		axer	5
-axeriez		axer	4
-axerions		axer	11
-axerons		axer	10
-axeront		axer	15
-axérophtol	Vitamine A.
-axés		axer	38
-axez		axer	30
-axial	Qui appartient à un axe, qui a le caractère d’axe, par opposition à ce qui est latéral, périphérique.
-axiale		axial	23
-axiales		axial	1
-axiaux		axial	0
-axiez		axer	13
-axile	Qui a rapport à l’axe d’une plante.
-axiles		axile	0
-axillaire	Qui a rapport à l’aisselle.
-axillaires		axillaire	0
-axiologie	Branche de la philosophie qui étudie la nature, les fondements et la hiérarchie des valeurs (morales, esthétiques, politiques, spirituelles, etc.).
-axiologies		axiologie	0
-axiologique	Relatif à l’axiologie, aux valeurs.
-axiologiques		axiologique	0
-axiomatique	Fondé sur des axiomes, d’une logique de vérité indémontrable, mais faisant autorité en la matière.
-axiomatiques		axiomatique	0
-axiomatisa		axiomatiser	33
-axiomatisai		axiomatiser	22
-axiomatisaient		axiomatiser	32
-axiomatisais		axiomatiser	29
-axiomatisait		axiomatiser	34
-axiomatisâmes		axiomatiser	3
-axiomatisant		axiomatiser	35
-axiomatisas		axiomatiser	12
-axiomatisasse		axiomatiser	6
-axiomatisassent		axiomatiser	17
-axiomatisasses		axiomatiser	8
-axiomatisassiez		axiomatiser	14
-axiomatisât		axiomatiser	20
-axiomatisâtes		axiomatiser	2
-axiomatisation	Action d’axiomatiser, de fonder sur des axiomes.
-axiomatisations		axiomatisation	0
-axiomatisé		axiomatiser	46
-axiomatisée		axiomatiser	37
-axiomatisées		axiomatiser	36
-axiomatisent		axiomatiser	31
-axiomatiser	Fonder sur des axiomes.
-axiomatisera		axiomatiser	21
-axiomatiserai		axiomatiser	16
-axiomatiserais		axiomatiser	18
-axiomatiserait		axiomatiser	26
-axiomatiseras		axiomatiser	7
-axiomatisèrent		axiomatiser	24
-axiomatiserez		axiomatiser	5
-axiomatiseriez		axiomatiser	4
-axiomatiserions		axiomatiser	11
-axiomatiserons		axiomatiser	10
-axiomatiseront		axiomatiser	15
-axiomatisés		axiomatiser	38
-axiomatisez		axiomatiser	30
-axiomatisiez		axiomatiser	13
-axiomatisions		axiomatiser	19
-axiomatisons		axiomatiser	27
-axiome	Postulat ou principe, considéré comme évident en soi.
-axiomes		axiome	0
-axiomètre	Indicateur de la position de la barre du gouvernail.
-axiomètres		axiomètre	0
-axion	Particule théorique stable, neutre et de très faible masse (1 microélectronvolt), et qui serait la particule à la base de la matière noire.
-axions		axion	0
-axis	Deuxième vertèbre cervicale.
-axisymétrique	Symétrique autour d’un axe.
-axisymétriques		axisymétrique	0
-axoa	Plat traditionnel labourdin au Pays basque à base d’épaule de veau, de poivron, d’oignon et de piment.
-axoas		axoa	0
-axolotl	Espèce d’amphibien urodèle d’Amérique pouvant passer toute sa vie à l’état larvaire sans jamais se métamorphoser en adulte (on parle de néoténie), et donc de s…
-axolotls		axolotl	0
-axonais	Relatif à l’Aisne ou aux Axonais.
-axonaise		axonais	23
-axonaises		axonais	1
-axone	Partie allongée d’un neurone qui permet le passage de l’information sous forme d’impulsions électriques.
-axones	Ensemble des lois que Solon établit à Athènes.
-axonge	Graisse de porc utilisée autrefois pour graisser les moyeux des roues
-axonges		axonge	0
-axonométrie	Système de représentation spatiale où les trois axes de l'espace sont projetés de façon bidimensionnelle suivant trois droites, sans correction optique de la p…
-axonométries		axonométrie	0
-axonométrique	Relatif à l’axonométrie.
-axonométriques		axonométrique	0
-axons		axer	27
+0axa		2er	x
+3i		2er	m
+4ent		2er	w
+4s		2er	t
+4t		2er	y
+2âmes		2er	3
+2ant		2er	z
+3s		2er	c
+4se		2er	6
+6nt		2er	h
+6s		2er	8
+5iez		2er	e
+6ons		2er	p
+2ât		2er	k
+4es		2er	2
+2e	Pièce de fer ou de bois qui passe par le centre d’un corps et qui sert à faire tourner ce corps sur lui-même.
+2ée		2er	11
+4s		2er	10
+2el	Saut partant sur une carre extérieure avant et se terminant sur une carre extérieure arrière après une rotation d’un tour et demi dans l’espace.
+4s		4	0
+2ène	Caractérise un phénomène qui se développe dans un milieu stérile.
+5s		5	0
+2énique	Se dit d’un animal de laboratoire exempt de tous germes saprophytes ou pathogènes.
+8s		8	0
+5sation	Opération rendant axénique un organisme.
+bs		b	0
+2ent		3r	v
+3r	Orienter suivant un axe, une direction.
+4a		4	l
+5i		4	g
+6ent		4	s
+6s		4	i
+6t		4	q
+5s		4	7
+2èrent		2er	o
+2erez		4	5
+4iez		4	4
+5ons		4	b
+4ons		4	a
+6t		4	f
+2érophtol	Vitamine A.
+3s		2er	12
+2ez		3r	u
+2ial	Qui appartient à un axe, qui a le caractère d’axe, par opposition à ce qui est latéral, périphérique.
+5e		5	n
+6s		5	1
+4ux		4l	0
+3ez		2er	d
+3le	Qui a rapport à l’axe d’une plante.
+5s		5	0
+4laire	Qui a rapport à l’aisselle.
+9s		9	0
+3ologie	Branche de la philosophie qui étudie la nature, les fondements et la hiérarchie des valeurs (morales, esthétiques, politiques, spirituelles, etc.).
+9s		9	0
+8que	Relatif à l’axiologie, aux valeurs.
+bs		b	0
+4matique	Fondé sur des axiomes, d’une logique de vérité indémontrable, mais faisant autorité en la matière.
+bs		b	0
+8sa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action d’axiomatiser, de fonder sur des axiomes.
+es		e	0
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Fonder sur des axiomes.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+5e	Postulat ou principe, considéré comme évident en soi.
+6s		6	0
+5ètre	Indicateur de la position de la barre du gouvernail.
+9s		9	0
+4n	Particule théorique stable, neutre et de très faible masse (1 microélectronvolt), et qui serait la particule à la base de la matière noire.
+5s		5	0
+3s	Deuxième vertèbre cervicale.
+4ymétrique	Symétrique autour d’un axe.
+ds		d	0
+2oa	Plat traditionnel labourdin au Pays basque à base d’épaule de veau, de poivron, d’oignon et de piment.
+4s		4	0
+3lotl	Espèce d’amphibien urodèle d’Amérique pouvant passer toute sa vie à l’état larvaire sans jamais se métamorphoser en adulte (on parle de néoténie), et donc de s…
+7s		7	0
+3nais	Relatif à l’Aisne ou aux Axonais.
+7e		7	n
+8s		7	1
+4e	Partie allongée d’un neurone qui permet le passage de l’information sous forme d’impulsions électriques.
+5s	Ensemble des lois que Solon établit à Athènes.
+4ge	Graisse de porc utilisée autrefois pour graisser les moyeux des roues
+6s		6	0
+4ométrie	Système de représentation spatiale où les trois axes de l'espace sont projetés de façon bidimensionnelle suivant trois droites, sans correction optique de la p…
+bs		b	0
+aque	Relatif à l’axonométrie.
+ds		d	0
+4s		2er	r

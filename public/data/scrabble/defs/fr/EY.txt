@@ -1,4 +1,4 @@
-eyalet	Nom des gouvernements de la Turquie appelés aussi pachaliks.
-eyalets		eyalet	0
-eyra	Nom donné au jaguarondi, félin d’Amérique proche du puma, de couleur rousse.
-eyras	pluriel de eyra.
+0eyalet	Nom des gouvernements de la Turquie appelés aussi pachaliks.
+6s		6	0
+2ra	Nom donné au jaguarondi, félin d’Amérique proche du puma, de couleur rousse.
+4s	pluriel de eyra.

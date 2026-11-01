@@ -1,57 +1,57 @@
-aoriste	Dans certaines langues indo-européennes telles que le sanskrit, le serbe, le bulgare, le croate, l’ancien tchèque ou le grec (ancien et moderne), qualifie un t…
-aoristes		aoriste	0
-aorte	Artère qui sort du ventricule gauche du cœur.
-aortes		aorte	0
-aortique	Qui tient à l’aorte
-aortiques		aortique	1
-aortite	Inflammation de l’aorte.
-aortites		aortite	0
-aortographie	Examen radiologique de l’aorte.
-aortographies		aortographie	0
-aout	Huitième mois de l’année du calendrier grégorien, constitué de 31 jours.
-aoûta		aoûter	33
-aoûtai		aoûter	22
-aoûtaient		aoûter	32
-aoûtais		aoûter	29
-aoûtait		aoûter	34
-aoûtâmes		aoûter	3
-aoûtant		aoûter	35
-aoûtas		aoûter	12
-aoûtasse		aoûter	6
-aoûtassent		aoûter	17
-aoûtasses		aoûter	8
-aoûtassiez		aoûter	14
-aoûtassions		aoûter	25
-aoutat	Nymphe de Trombicula autumnalis, acarien qui se nourrit de peau et de lymphe causant des démangeaisons.
-aoûtâtes		aoûter	2
-aoutats		aoutat	0
-aoûté	Se dit d’un végétal ou d’une partie de végétal qui a subi l’aoûtement.
-aoûtée		aoûter	37
-aoûtées		aoûter	36
-aoutement	Durcissement des branches et rameaux de l'année en vue de l'hiver.
-aoûtements		aoûtement	0
-aoûtent		aoûter	31
-aoûter	Changer, en parlant du temps typique du mois d’août.
-aoûtera		aoûter	21
-aoûterai		aoûter	16
-aoûteraient		aoûter	28
-aoûterais		aoûter	18
-aoûterait		aoûter	26
-aoûteras		aoûter	7
-aoûtèrent		aoûter	24
-aoûterez		aoûter	5
-aoûteriez		aoûter	4
-aoûterions		aoûter	11
-aoûteron	Ouvrier loué pour les travaux de la campagne comme les moissons dans le mois d’août.
-aoûterons		aoûteron	0
-aoûteront		aoûter	15
-aoûtés		aoûter	38
-aoûtez		aoûter	30
-aoutien	Personne qui prend ses vacances durant le mois d’aout.
-aoutienne	Variante orthographique de aoûtienne.
-aoutiennes	Variante orthographique de aoûtiennes.
-aoutiens		aoutien	0
-aoûtiez		aoûter	13
-aoûtions		aoûter	19
-aoûtons		aoûter	27
-aoûts		août	0
+0aoriste	Dans certaines langues indo-européennes telles que le sanskrit, le serbe, le bulgare, le croate, l’ancien tchèque ou le grec (ancien et moderne), qualifie un t…
+7s		7	0
+3te	Artère qui sort du ventricule gauche du cœur.
+5s		5	0
+4ique	Qui tient à l’aorte
+8s		8	1
+5te	Inflammation de l’aorte.
+7s		7	0
+4ographie	Examen radiologique de l’aorte.
+cs		c	0
+2ut	Huitième mois de l’année du calendrier grégorien, constitué de 31 jours.
+2ûta		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+2utat	Nymphe de Trombicula autumnalis, acarien qui se nourrit de peau et de lymphe causant des démangeaisons.
+2ûtâtes		4er	2
+2utats		6	0
+2ûté	Se dit d’un végétal ou d’une partie de végétal qui a subi l’aoûtement.
+5e		4er	11
+6s		4er	10
+2utement	Durcissement des branches et rameaux de l'année en vue de l'hiver.
+2ûtements		9	0
+5nt		5r	v
+5r	Changer, en parlant du temps typique du mois d’août.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6on	Ouvrier loué pour les travaux de la campagne comme les moissons dans le mois d’août.
+8s		8	0
+8t		6	f
+4és		4er	12
+4ez		5r	u
+2utien	Personne qui prend ses vacances durant le mois d’aout.
+7ne	Variante orthographique de aoûtienne.
+9s	Variante orthographique de aoûtiennes.
+7s		7	0
+2ûtiez		4er	d
+5ons		4er	j
+4ons		4er	r
+4s		4	0

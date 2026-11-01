@@ -1,4 +1,4 @@
-tlemcénien	Relatif à la ville et à la région de Tlemcen, dans le nord-ouest de l'Algérie.
-tlemcénienne		tlemcénien	23
-tlemcéniennes		tlemcénien	1
-tlemcéniens		tlemcénien	9
+0tlemcénien	Relatif à la ville et à la région de Tlemcen, dans le nord-ouest de l'Algérie.
+ane		a	n
+cs		a	1
+as		a	9

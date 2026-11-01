@@ -1,27 +1,27 @@
-ogam	Variante orthographique de ogham.
-ogamique	Variante de oghamique.
-ogamiques		ogamique	0
-ogams		ogam	0
-oganesson	Nom de l’élément chimique portant le numéro atomique 118 (symbole Og), d’abord synthétisé en octobre 2006.
-ogham	Écriture en usage chez les Celtes irlandais.
-oghamique	Relatif à l’ogham.
-oghamiques		oghamique	0
-ogif	En forme d’ogive.
-ogival	Qui présente des ogives, dont le caractère est l’ogive.
-ogivale		ogival	23
-ogivales		ogival	1
-ogivaux		ogival	9
-ogive	Chacun des arcs qui, en se croisant en X, soutiennent la voûte dans l’architecture gothique.
-ogives		ogif	1
-ognette	Ciseau dont le tranchant est très étroit - Il sert à faire la taille sur le joint d'un marbre très-mince, ou sur d'autres parties de peu de largeur.
-ognettes		ognette	0
-ognon	Plante à bulbe comestible, de la famille des liliacées (classification classique) ou des amaryllidacées (classification phylogénétique).
-ognonade	Mets accommodé avec une grande quantité d’ognons.
-ognonades		ognonade	0
-ognonière	Terre semée d’ognons.
-ognonières		ognonière	0
-ognons		ognon	0
-ogre	Personnage de conte de fées, sorte de monstre, de géant qui passe pour se nourrir de chair humaine, spécialement de celle des enfants.
-ogres		ogre	0
-ogresse	Ogre femelle.
-ogresses		ogresse	0
+0ogam	Variante orthographique de ogham.
+4ique	Variante de oghamique.
+8s		8	0
+4s		4	0
+3nesson	Nom de l’élément chimique portant le numéro atomique 118 (symbole Og), d’abord synthétisé en octobre 2006.
+2ham	Écriture en usage chez les Celtes irlandais.
+5ique	Relatif à l’ogham.
+9s		9	0
+2if	En forme d’ogive.
+3val	Qui présente des ogives, dont le caractère est l’ogive.
+6e		6	n
+7s		6	1
+5ux		5l	9
+4e	Chacun des arcs qui, en se croisant en X, soutiennent la voûte dans l’architecture gothique.
+5s		3f	1
+2nette	Ciseau dont le tranchant est très étroit - Il sert à faire la taille sur le joint d'un marbre très-mince, ou sur d'autres parties de peu de largeur.
+7s		7	0
+3on	Plante à bulbe comestible, de la famille des liliacées (classification classique) ou des amaryllidacées (classification phylogénétique).
+5ade	Mets accommodé avec une grande quantité d’ognons.
+8s		8	0
+5ière	Terre semée d’ognons.
+9s		9	0
+5s		5	0
+2re	Personnage de conte de fées, sorte de monstre, de géant qui passe pour se nourrir de chair humaine, spécialement de celle des enfants.
+4s		4	0
+5se	Ogre femelle.
+7s		7	0

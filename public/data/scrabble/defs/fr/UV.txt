@@ -1,14 +1,14 @@
-uval	Relatif au raisin.
-uvale		uval	23
-uvales		uval	1
-uvaux		uval	9
-uvée	Membrane vascularisée et nourricière de l’œil, située entre la sclérotique et la rétine.
-uvées		uvée	0
-uvéite	Inflammation de l’uvée, la couche pigmentaire de l’iris.
-uvéites		uvéite	0
-uvula	Luette.
-uvulaire	Relatif à l’uvule.
-uvulaires		uvulaire	0
-uvulas		uvula	0
-uvule	Luette.
-uvules		uvule	0
+0uval	Relatif au raisin.
+4e		4	n
+5s		4	1
+3ux		3l	9
+2ée	Membrane vascularisée et nourricière de l’œil, située entre la sclérotique et la rétine.
+4s		4	0
+3ite	Inflammation de l’uvée, la couche pigmentaire de l’iris.
+6s		6	0
+2ula	Luette.
+5ire	Relatif à l’uvule.
+8s		8	0
+5s		5	0
+4e	Luette.
+5s		5	0

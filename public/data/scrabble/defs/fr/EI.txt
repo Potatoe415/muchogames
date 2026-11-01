@@ -1,13 +1,13 @@
-eider	Anatidé, aux formes massives, dont une espèce fournit l’édredon.
-eiders		eider	0
-éidétique	Variante de eidétique.
-éidétiques		éidétique	0
-eidétisme	Vision que l'on peut avoir d'un objet, vu auparavant, quand on fixe ensuite une surface claire et unie.
-eidétismes		eidétisme	0
-eighties	Décennie des années 1980.
-einsteinien	Relatif à la vie, à l’œuvre et aux découvertes d’Albert Einstein.
-einsteinienne	Physicienne partisane des thèses d’Albert Einstein.
-einsteiniennes		einsteinien	1
-einsteiniens		einsteinien	9
-einsteinium	Élément chimique de numéro atomique 99 et de symbole Es appartenant à la série chimique des actinides.
-einsteiniums		einsteinium	0
+0eider	Anatidé, aux formes massives, dont une espèce fournit l’édredon.
+5s		5	0
+0éidétique	Variante de eidétique.
+9s		9	0
+0eidétisme	Vision que l'on peut avoir d'un objet, vu auparavant, quand on fixe ensuite une surface claire et unie.
+9s		9	0
+2ghties	Décennie des années 1980.
+2nsteinien	Relatif à la vie, à l’œuvre et aux découvertes d’Albert Einstein.
+bne	Physicienne partisane des thèses d’Albert Einstein.
+ds		b	1
+bs		b	9
+9um	Élément chimique de numéro atomique 99 et de symbole Es appartenant à la série chimique des actinides.
+bs		b	0

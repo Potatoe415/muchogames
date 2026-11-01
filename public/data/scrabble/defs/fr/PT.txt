@@ -1,35 +1,35 @@
-ptéranodon	Genre de ptérosaure du Crétacé.
-ptéranodons		ptéranodon	0
-ptéride	Fougère du genre Pteris.
-ptérides		ptéride	0
-ptéridophyte	Membre d'une division de trachéophytes comprenant des plantes cryptogames qui ont des vaisseaux conducteurs, et donc des racines, des tiges et des feuilles ou …
-ptéridophytes		ptéridophyte	0
-ptérobranche	Qui a des branchies en forme d’ailes ou de nageoires.
-ptérodactyle	Genre de ptérosaures de la famille des Pterodactylidae dont on ne connaît que des débris fossiles.
-ptérodactyles		ptérodactyle	0
-ptéropode	Qui a des nageoires pour organes locomoteurs.
-ptéropodes		ptéropode	0
-ptérosaure	Ordre de reptiles volants du mésozoïque.
-ptérosaures		ptérosaure	0
-ptérosaurien	Synonyme de ptérosaure.
-ptérosauriens		ptérosaurien	0
-ptérygoïde	Qui a la forme d’une aile.
-ptérygoïdes		ptérygoïde	0
-ptérygoïdien	Qui a rapport à l’apophyse ptérygoïde.
-ptérygoïdienne		ptérygoïdien	23
-ptérygoïdiennes		ptérygoïdien	1
-ptérygoïdiens		ptérygoïdien	9
-ptérygote	Insecte ailé.
-ptérygotes		ptérygote	0
-ptolémaïque	Relatif aux pharaons Ptolémées, à leur dynastie, à la période de leur règne (de 332 à 30 avant J.-C.).
-ptolémaïques		ptolémaïque	0
-ptoléméen	Ptolémaïque.
-ptomaïne	Alcaloïde provenant de la décomposition des matières animales.
-ptomaïnes		ptomaïne	0
-ptôse	Position anormalement basse occupée par un organe ou une partie d'organe.
-ptoses		ptose	0
-ptosis	Chute de la paupière supérieure, recouvrant partiellement ou entièrement l’œil dans les cas les plus sévères.
-ptyaline	Amylase salivaire qui transforme lʼamidon en dextrose et maltose.
-ptyalines		ptyaline	0
-ptyalisme	Salivation ^().
-ptyalismes		ptyalisme	0
+0ptéranodon	Genre de ptérosaure du Crétacé.
+as		a	0
+4ide	Fougère du genre Pteris.
+7s		7	0
+6ophyte	Membre d'une division de trachéophytes comprenant des plantes cryptogames qui ont des vaisseaux conducteurs, et donc des racines, des tiges et des feuilles ou …
+cs		c	0
+4obranche	Qui a des branchies en forme d’ailes ou de nageoires.
+5dactyle	Genre de ptérosaures de la famille des Pterodactylidae dont on ne connaît que des débris fossiles.
+cs		c	0
+5pode	Qui a des nageoires pour organes locomoteurs.
+9s		9	0
+5saure	Ordre de reptiles volants du mésozoïque.
+as		a	0
+9ien	Synonyme de ptérosaure.
+cs		c	0
+4ygoïde	Qui a la forme d’une aile.
+as		a	0
+9ien	Qui a rapport à l’apophyse ptérygoïde.
+cne		c	n
+es		c	1
+cs		c	9
+7te	Insecte ailé.
+9s		9	0
+2olémaïque	Relatif aux pharaons Ptolémées, à leur dynastie, à la période de leur règne (de 332 à 30 avant J.-C.).
+bs		b	0
+6éen	Ptolémaïque.
+3maïne	Alcaloïde provenant de la décomposition des matières animales.
+8s		8	0
+2ôse	Position anormalement basse occupée par un organe ou une partie d'organe.
+2oses		5	0
+4is	Chute de la paupière supérieure, recouvrant partiellement ou entièrement l’œil dans les cas les plus sévères.
+2yaline	Amylase salivaire qui transforme lʼamidon en dextrose et maltose.
+8s		8	0
+6sme	Salivation ^().
+9s		9	0

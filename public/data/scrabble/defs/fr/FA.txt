@@ -1,2481 +1,2481 @@
-fa	La quatrième note de la gamme en musique occidentale.
-fabacée	Toute plante dicotylédone de la famille des fabacées, à laquelle appartiennent entre autres l’acacia, le mimosa, la dalbergie, le haricot ou la lentille.
-fabacées		fabacée	0
-fablab	Lieu ouvert au public où il est mis à sa disposition toutes sortes d’outils pour la conception et la réalisation d’objets.
-fablabs		fablab	0
-fable	Ce que l’on dit, ce que l’on raconte.
-fables		fable	0
-fabliau	Genre de conte en vers, plaisant et satirique, usité dans la littérature du moyen-âge.
-fabliaux		fabliau	0
-fablier	Faiseur, faiseuse de fables.
-fabliers		fablier	0
-fabophile	Collectionneur de fèves des galettes des rois.
-fabophiles		fabophile	0
-fabricable	Qui peut être fabriqué.
-fabricables		fabricable	0
-fabricant	Industriel ou artisan qui fabrique ou qui fait fabriquer.
-fabricante	Industrielle ou artisane qui fabrique ou qui fait fabriquer.
-fabricantes		fabricante	0
-fabricants		fabricant	0
-fabricateur	Celui qui confectionne quelque chose.
-fabricateurs		fabricateur	0
-fabrication	Action de fabriquer ou résultat de cette action.
-fabrications		fabrication	0
-fabricatrice	Celle qui confectionne quelque chose.
-fabricatrices		fabricatrice	0
-fabricien	Membre de la fabrique d’une église, marguillier.
-fabricienne		fabricien	23
-fabriciennes		fabricien	1
-fabriciens		fabricien	0
-fabriqua		fabriquer	39
-fabriquai		fabriquer	55
-fabriquaient		fabriquer	42
-fabriquais		fabriquer	52
-fabriquait		fabriquer	40
-fabriquâmes		fabriquer	3
-fabriquant		fabriquer	43
-fabriquas		fabriquer	12
-fabriquasse		fabriquer	6
-fabriquassent		fabriquer	17
-fabriquasses		fabriquer	8
-fabriquassiez		fabriquer	14
-fabriquassions		fabriquer	25
-fabriquât		fabriquer	20
-fabriquâtes		fabriquer	2
-fabrique	Bâtiment où l’on fabrique des objets destinés aux différents usages de la vie.
-fabriquée		fabriquer	45
-fabriquées		fabriquer	51
-fabriquent		fabriquer	41
-fabriquer	Exécuter ou faire exécuter certains ouvrages suivant les procédés d’un art mécanique, en atelier ou en usine.
-fabriquera		fabriquer	44
-fabriquerai		fabriquer	50
-fabriqueraient		fabriquer	28
-fabriquerais		fabriquer	60
-fabriquerait		fabriquer	49
-fabriqueras		fabriquer	7
-fabriquèrent		fabriquer	48
-fabriquerez		fabriquer	58
-fabriqueriez		fabriquer	4
-fabriquerions		fabriquer	11
-fabriquerons		fabriquer	61
-fabriqueront		fabriquer	54
-fabriqués		fabriquer	53
-fabriquez		fabriquer	47
-fabriquiez		fabriquer	67
-fabriquions		fabriquer	65
-fabriquons		fabriquer	59
-fabula		fabuler	33
-fabulai		fabuler	22
-fabulaient		fabuler	32
-fabulais		fabuler	29
-fabulait		fabuler	34
-fabulâmes		fabuler	3
-fabulant		fabuler	35
-fabulas		fabuler	12
-fabulasse		fabuler	6
-fabulassent		fabuler	17
-fabulasses		fabuler	8
-fabulassiez		fabuler	14
-fabulassions		fabuler	25
-fabulât		fabuler	20
-fabulâtes		fabuler	2
-fabulateur	Qui fabule.
-fabulateurs		fabulateur	9
-fabulation	Récit inventé et présenté comme véridique.
-fabulations		fabulation	0
-fabulatrice	Celle qui fabule.
-fabulatrices		fabulateur	1
-fabule		fabuler	64
-fabulée		fabuler	45
-fabulées		fabuler	51
-fabulent		fabuler	31
-fabuler	Raconter des choses inventées, des fabulations.
-fabulera		fabuler	21
-fabulerai		fabuler	16
-fabuleraient		fabuler	28
-fabulerais		fabuler	18
-fabulerait		fabuler	26
-fabuleras		fabuler	7
-fabulèrent		fabuler	24
-fabulerez		fabuler	5
-fabuleriez		fabuler	4
-fabulerions		fabuler	11
-fabulerons		fabuler	10
-fabuleront		fabuler	15
-fabules		fabuler	66
-fabuleuse		fabuleux	23
-fabuleusement	D’une manière fabuleuse.
-fabuleuses		fabuleux	1
-fabuleux	Relatif à la fable.
-fabulez		fabuler	47
-fabuliez		fabuler	13
-fabulions		fabuler	19
-fabuliste	Qui relève de la fable.
-fabulistes		fabuliste	0
-fabulons		fabuler	27
-fac	Faculté ; université.
-façade	Un des côtés d’un bâtiment, d’un édifice, lorsqu’il se présente au spectateur.
-façades		façade	0
-façadier	Ouvrier responsable des façades.
-façadière	Ouvrière responsable des façades.
-façadières		façadière	0
-façadiers		façadier	0
-façadisme	Pratique qui consiste à conserver uniquement la façade d’un bâtiment et à reconstruire tout le reste.
-façadismes		façadisme	0
-facancier	Travailleur émigré en France retournant au Maroc pour les vacances.
-facancière	Travailleuse émigrée en France retournant au Maroc pour les vacances.
-facancières		facancière	0
-facanciers		facancier	0
-face	Visage.
-faces		face	0
-facétie	Plaisanterie plus ou moins subtile que l’on dit ou fait pour divertir, pour faire rire.
-facéties		facétie	0
-facétieuse		facétieux	23
-facétieusement	D’une manière facétieuse.
-facétieuses		facétieux	1
-facétieux	Qui tient de la facétie, de la plaisanterie.
-facetta		facetter	33
-facettai		facetter	22
-facettaient		facetter	32
-facettais		facetter	29
-facettait		facetter	34
-facettâmes		facetter	3
-facettant		facetter	35
-facettas		facetter	12
-facettasse		facetter	6
-facettassent		facetter	17
-facettasses		facetter	8
-facettassiez		facetter	14
-facettassions		facetter	25
-facettât		facetter	20
-facettâtes		facetter	2
-facette	Petite face, une des petites faces d’un corps qui en a plusieurs.
-facettée		facetter	37
-facettées		facetter	36
-facettent		facetter	31
-facetter	Tailler à facettes.
-facettera		facetter	21
-facetterai		facetter	16
-facetteraient		facetter	28
-facetterais		facetter	18
-facetterait		facetter	26
-facetteras		facetter	7
-facettèrent		facetter	24
-facetterez		facetter	5
-facetteriez		facetter	4
-facetterions		facetter	11
-facetterons		facetter	10
-facetteront		facetter	15
-facettés		facetter	53
-facettez		facetter	30
-facettiez		facetter	13
-facettions		facetter	19
-facettons		facetter	27
-fâcha		fâcher	39
-fâchai		fâcher	55
-fâchaient		fâcher	42
-fâchais		fâcher	52
-fâchait		fâcher	40
-fâchâmes		fâcher	3
-fâchant		fâcher	35
-fâchas		fâcher	12
-fâchasse		fâcher	6
-fâchassent		fâcher	17
-fâchasses		fâcher	8
-fâchassiez		fâcher	14
-fâchassions		fâcher	25
-fâchât		fâcher	20
-fâchâtes		fâcher	2
-fâche	Pièce de tissu rectangulaire, typique de Catalogne et d'Occitanie.
-fâchée		fâché	23
-fâchées		fâché	1
-fâchent		fâcher	41
-fâcher	Mettre en colère, irriter.
-fâchera		fâcher	44
-fâcherai		fâcher	50
-fâcheraient		fâcher	28
-fâcherais		fâcher	60
-fâcherait		fâcher	49
-fâcheras		fâcher	57
-fâchèrent		fâcher	48
-fâcherez		fâcher	5
-fâcherie	État de celui qui est fâché plus ou moins fortement contre quelqu’un.
-fâcheries		fâcherie	0
-fâcheriez		fâcher	4
-fâcherions		fâcher	11
-fâcherons		fâcher	10
-fâcheront		fâcher	54
-fâches		fâcher	77
-fâcheuse	Femme importune ou déplaisante.
-fâcheusement	D’une manière fâcheuse.
-fâcheuses		fâcheux	1
-fâcheux	Qui donne du déplaisir ou de la peine.
-fâchez		fâcher	47
-fâchiez		fâcher	67
-fâchions		fâcher	65
-facho	Sympathisant de doctrines fascistes ou assimilées au fascisme par ceux qui emploient le mot.
-fâchons		fâcher	59
-fachos		facho	0
-fachosphère	Ensemble des partis et mouvances fascistes et, plus généralement, de tout ce qui est assimilé au fascisme.
-fachosphères		fachosphère	0
-facial	Relatif à la face.
-faciale	Éjaculation sur le visage du ou de la partenaire.
-faciales		faciale	0
-faciaux		facial	9
-facies	Variante orthographique de faciès.
-facile	Qui se fait sans peine.
-facilement	Avec facilité ; sans peine.
-faciles		facile	0
-facilita		faciliter	39
-facilitai		faciliter	22
-facilitaient		faciliter	42
-facilitais		faciliter	29
-facilitait		faciliter	40
-facilitâmes		faciliter	3
-facilitant	Qui facilite, qui rend les choses plus faciles.
-facilitante		facilitant	23
-facilitantes		facilitant	1
-facilitants		facilitant	9
-facilitas		faciliter	12
-facilitasse		faciliter	6
-facilitassent		faciliter	17
-facilitasses		faciliter	8
-facilitassiez		faciliter	14
-facilitassions		faciliter	25
-facilitât		faciliter	20
-facilitâtes		faciliter	2
-facilitateur	Qui facilite, rend aisée, une action.
-facilitateurs		facilitateur	0
-facilitation	Action de faciliter ou résultat de cette action.
-facilitations		facilitation	0
-facilitatrice	Celle qui est chargée de faire en sorte que les choses se passent mieux.
-facilitatrices		facilitatrice	0
-facilité	Qualité de ce qui est fait ou employé sans peine.
-facilitée		faciliter	45
-facilitées		faciliter	51
-facilitent		faciliter	41
-faciliter	Rendre facile.
-facilitera		faciliter	44
-faciliterai		faciliter	50
-faciliteraient		faciliter	63
-faciliterais		faciliter	60
-faciliterait		faciliter	49
-faciliteras		faciliter	7
-facilitèrent		faciliter	24
-faciliterez		faciliter	5
-faciliteriez		faciliter	4
-faciliterions		faciliter	11
-faciliterons		faciliter	10
-faciliteront		faciliter	54
-facilités		facilité	0
-facilitez		faciliter	47
-facilitiez		faciliter	13
-facilitions		faciliter	19
-facilitons		faciliter	59
-façon	Action de faire.
-faconde	Élégance de bien parler.
-facondes		faconde	0
-façonna		façonner	39
-façonnable	Que l’on peut façonner.
-façonnables		façonnable	0
-façonnage	Ensemble des opérations fait pour donner une forme à une matière quelconque.
-façonnages		façonnage	0
-façonnai		façonner	22
-façonnaient		façonner	42
-façonnais		façonner	29
-façonnait		façonner	40
-façonnâmes		façonner	3
-façonnant		façonner	43
-façonnas		façonner	12
-façonnasse		façonner	6
-façonnassent		façonner	17
-façonnasses		façonner	8
-façonnassiez		façonner	14
-façonnassions		façonner	25
-façonnât		façonner	20
-façonnâtes		façonner	2
-façonné	Qui est fait de la main de l’homme, qui n’est pas naturel.
-façonnée		façonné	23
-façonnées		façonné	1
-façonnement	Action de façonner, de donner la façon.
-façonnements		façonnement	0
-façonnent		façonner	41
-façonner	Travailler une chose en vue de lui donner une certaine façon.
-façonnera		façonner	44
-façonnerai		façonner	50
-façonneraient		façonner	28
-façonnerais		façonner	60
-façonnerait		façonner	26
-façonneras		façonner	7
-façonnèrent		façonner	24
-façonnerez		façonner	58
-façonneriez		façonner	4
-façonnerions		façonner	11
-façonnerons		façonner	10
-façonneront		façonner	54
-façonnés		façonné	9
-façonnez		façonner	30
-façonnier	Qui fait trop de façons, trop de cérémonies.
-façonnière	Celle qui travaille à façon.
-façonnières		façonnier	1
-façonniers		façonnier	9
-façonniez		façonner	13
-façonnions		façonner	19
-façonnons		façonner	27
-façons		façon	0
-facs		fac	0
-facsimilé	Reproduction exacte, ou prétendument telle, imprimée, gravée, ou photographiée, d’une peinture, d’une signature, d’un dessin, d’un ouvrage unique, rare, ou épu…
-facsimiler	Reproduire à l'identique.
-facsimilés		facsimiler	38
-factage	Action de transporter des marchandises ou du courrier à domicile, ou au dépôt de consignation.
-factages		factage	0
-facteur	Nombre ou variable constitutive d’un produit.
-facteurs		facteur	0
-factice	Qui est fait artificiellement ou imité de la nature.
-facticement	De manière factice.
-factices		factice	0
-facticité	Caractère de ce qui est factice, qui est ou semble faux, artificiel.
-facticités		facticité	0
-factieuse	Personne factieuse.
-factieuses		factieux	1
-factieux	Qui cherche à provoquer des troubles politiques ou civils.
-faction	Action ou tâche quelconque qu'un soldat est en charge de faire.
-factionnaire	Soldat qui est en faction.
-factionnaires		factionnaire	0
-factions		faction	0
-factitif	Se dit d’un verbe où le sujet fait faire l’action.
-factitifs		factitif	0
-factitive		factitif	23
-factitives		factitif	1
-factorage	Droit conventionnel que reçoit le facteur sur la valeur des marchandises dont il procure la vente.
-factorages		factorage	0
-factorerie	Le lieu, le bureau où les facteurs ou agents font les affaires d’une compagnie de commerce en pays étranger, surtout aux colonies.
-factoreries		factorerie	0
-factoriel	Relatif à un facteur.
-factorielle	Résultat de la multiplication d’un nombre entier par tous les nombres entiers supérieurs à 0 inférieurs à celui-ci.
-factorielles		factorielle	0
-factoriels		factoriel	9
-factorisa		factoriser	33
-factorisai		factoriser	22
-factorisaient		factoriser	32
-factorisais		factoriser	29
-factorisait		factoriser	34
-factorisâmes		factoriser	3
-factorisant		factoriser	35
-factorisas		factoriser	12
-factorisasse		factoriser	6
-factorisassent		factoriser	17
-factorisasses		factoriser	8
-factorisassiez		factoriser	14
-factorisassions		factoriser	25
-factorisât		factoriser	20
-factorisâtes		factoriser	2
-factorisation	Action de factoriser ou résultat de cette action.
-factorisations		factorisation	0
-factorisé		factoriser	46
-factorisée		factoriser	37
-factorisées		factoriser	36
-factorisent		factoriser	31
-factoriser	Écrire une expression sous la forme d’un produit de facteurs.
-factorisera		factoriser	21
-factoriserai		factoriser	16
-factoriseraient		factoriser	28
-factoriserais		factoriser	18
-factoriserait		factoriser	26
-factoriseras		factoriser	7
-factorisèrent		factoriser	24
-factoriserez		factoriser	5
-factoriseriez		factoriser	4
-factoriserions		factoriser	11
-factoriserons		factoriser	10
-factoriseront		factoriser	15
-factorisés		factoriser	38
-factorisez		factoriser	30
-factorisiez		factoriser	13
-factorisions		factoriser	19
-factorisons		factoriser	27
-factotum	Personne qui s’occupe de tout dans une maison où elle est employée.
-factotums		factotum	0
-factrice	Celle qui fait, qui concourt à un résultat.
-factrices		factrice	0
-factuel	Relatif aux faits ou à ce qui est réel.
-factuelle	Féminin singulier de factuel.
-factuellement	De façon factuelle.
-factuelles		factuel	1
-factuels		factuel	9
-factum	Exposé écrit des faits et du raisonnement juridique présenté devant un tribunal.
-factums		factum	0
-factura		facturer	39
-facturable	Que l'on peut ou que l'on doit facturer.
-facturables		facturable	0
-facturai		facturer	22
-facturaient		facturer	32
-facturais		facturer	29
-facturait		facturer	34
-facturâmes		facturer	3
-facturant		facturer	35
-facturas		facturer	12
-facturasse		facturer	6
-facturassent		facturer	17
-facturasses		facturer	8
-facturassiez		facturer	14
-facturassions		facturer	25
-facturât		facturer	20
-facturâtes		facturer	2
-facturation	Action de facturer, de marquer sur une facture la marchandise livrée et son prix.
-facturations		facturation	0
-facture	Manière dont est composée une œuvre d’art.
-facturée		facturé	23
-facturées		facturer	51
-facturent		facturer	41
-facturer	Indiquer, marquer sur une facture la marchandise livrée et son prix.
-facturera		facturer	44
-facturerai		facturer	16
-factureraient		facturer	28
-facturerais		facturer	18
-facturerait		facturer	49
-factureras		facturer	7
-facturèrent		facturer	24
-facturerez		facturer	5
-factureriez		facturer	4
-facturerions		facturer	11
-facturerons		facturer	10
-factureront		facturer	15
-facturés		facturé	9
-facturette	Ticket de caisse plus détaillé.
-facturettes		facturette	0
-facturez		facturer	47
-facturier	Document contenant des factures.
-facturière	Employée de bureau chargée de rédiger les factures.
-facturières		facturière	0
-facturiers		facturier	0
-facturiez		facturer	13
-facturions		facturer	19
-facturons		facturer	59
-faculaire	Relatif à une facule.
-faculaires		faculaire	0
-facule	Région brillante apparaissant durant quelques jours sur la photosphère du Soleil et précédant souvent l’apparition d’une tache.
-facules		facule	0
-facultaire	Relatif à la faculté d'une université.
-facultaires		facultaire	0
-facultatif	Qui laisse la faculté de faire ou de ne pas faire une chose.
-facultatifs		facultatif	9
-facultative		facultatif	23
-facultativement	D’une manière facultative.
-facultatives		facultatif	1
-faculté	Puissance physique ou morale qui rend un être capable d’agir d’une certaine manière, de produire certains effets.
-facultés		faculté	0
-fada	Simple d’esprit.
-fadai		fader	22
-fadaient		fader	32
-fadais		fader	29
-fadaise	Propos qui n’a aucun intérêt, aucune saveur.
-fadaises		fadaise	0
-fadait		fader	34
-fadâmes		fader	3
-fadant		fader	35
-fadas		fader	12
-fadasse	Qui donne une certaine impression de fadeur.
-fadassent		fader	17
-fadasserie	Synonyme de fadaise.
-fadasseries		fadasserie	0
-fadasses		fadasse	0
-fadassiez		fader	14
-fadassions		fader	25
-fadât		fader	20
-fadâtes		fader	2
-fade	Qui est sans saveur ou de peu de goût.
-fadée	Féminin singulier de fadé.
-fadées		fader	36
-fadement	D’une manière fade.
-fadent		fader	41
-fader	Partager le butin → voir fade.
-fadera		fader	21
-faderai		fader	16
-faderaient		fader	28
-faderais		fader	18
-faderait		fader	26
-faderas		fader	57
-fadèrent		fader	24
-faderez		fader	5
-faderiez		fader	4
-faderions		fader	11
-faderons		fader	10
-faderont		fader	15
-fadés		fader	53
-fadet	Petite créature légendaire folklorique, souvent espiègle.
-fadets		fadet	0
-fadette	Petite fée.
-fadettes		fadette	0
-fadeur	Propriété de ce qui est fade.
-fadeurs		fadeur	0
-fadez		fader	30
-fadiez		fader	13
-fading	Évanouissement des signaux sonores.
-fadings		fading	0
-fadions		fader	19
-fadiste	Personne qui joue du fado.
-fadistes		fadiste	0
-fado	Genre musical portugais caractérisé par des chants avec des thèmes mélancoliques accompagné par des instruments à cordes pincées.
-fadons		fader	27
-fados		fado	0
-faena	Troisième acte (tercio) d'une corrida, série de passe avec la cape (ou muleta) avant la mise à mort (ou estocade) du taureau.
-faenas		faena	0
-faf	Militant d’extrême droite française.
-fafiot	Billet de banque.
-fafiots		fafiot	0
-fafs	Papiers d'identité.
-fagacée	Arbre ou arbuste de la famille des Fagacées.
-fagacées		fagacée	0
-fagale	Arbre de la famille des Fagales, de type hêtre, bouleaux, aulnes, noisetiers…
-fagales		fagale	0
-fagnard	Celui qui aime, qui apprécie la fagne (marais tourbeux des plateaux ardennais).
-fagnarde	Celle qui aime, qui apprécie la fagne (marais tourbeux des plateaux ardennais).
-fagnardes		fagnard	1
-fagnards		fagnard	9
-fagne	Marais dans une petite cavité au sommet d’une montagne.
-fagnes		fagne	0
-fagot	Faisceau de menu bois, de branchages.
-fagota		fagoter	33
-fagotage	Action de fagoter, mettre en fagots.
-fagotages		fagotage	0
-fagotai		fagoter	22
-fagotaient		fagoter	32
-fagotais		fagoter	29
-fagotait		fagoter	40
-fagotâmes		fagoter	3
-fagotant		fagoter	43
-fagotas		fagoter	12
-fagotasse		fagoter	6
-fagotassent		fagoter	17
-fagotasses		fagoter	8
-fagotassiez		fagoter	14
-fagotassions		fagoter	25
-fagotât		fagoter	20
-fagotâtes		fagoter	2
-fagoté	Rangé, emballé en fagots.
-fagotée		fagoté	23
-fagotées		fagoté	1
-fagotent		fagoter	31
-fagoter	Mettre en fagots.
-fagotera		fagoter	21
-fagoterai		fagoter	16
-fagoteraient		fagoter	28
-fagoterais		fagoter	18
-fagoterait		fagoter	26
-fagoteras		fagoter	7
-fagotèrent		fagoter	24
-fagoterez		fagoter	5
-fagoteriez		fagoter	4
-fagoterions		fagoter	11
-fagoterons		fagoter	10
-fagoteront		fagoter	15
-fagotés		fagoté	9
-fagoteur	Celui qui confectionne des fagots.
-fagoteurs		fagoteur	0
-fagoteuse	Celle qui confectionne des fagots.
-fagoteuses		fagoteuse	0
-fagotez		fagoter	30
-fagotier	Personne qui confectionne des fagots.
-fagotière	Femme qui confectionne des fagots.
-fagotières		fagotière	0
-fagotiers		fagotier	0
-fagotiez		fagoter	13
-fagotin	Petit fagot de bois sec très menu, utilisé pour allumer du feu.
-fagotins		fagotin	0
-fagotions		fagoter	19
-fagotons		fagoter	27
-fagots		fagot	0
-fagoue	Pancréas chez le bétail, bœuf, porc…
-fagoues		fagoue	0
-faiblard	Qui est très faible.
-faiblarde	Femme qui est très faible.
-faiblardes		faiblard	1
-faiblards		faiblard	9
-faible	Qui est débile, qui manque de force, de vigueur.
-faiblement	D’une manière faible.
-faibles		faible	0
-faiblesse	État de ce qui est faible.
-faiblesses		faiblesse	0
-faibli		faiblir	46
-faiblîmes		faiblir	3
-faiblir	Devenir faible.
-faiblira		faiblir	44
-faiblirai		faiblir	16
-faibliraient		faiblir	28
-faiblirais		faiblir	18
-faiblirait		faiblir	26
-faibliras		faiblir	7
-faiblirent		faiblir	48
-faiblirez		faiblir	5
-faibliriez		faiblir	4
-faiblirions		faiblir	11
-faiblirons		faiblir	10
-faibliront		faiblir	15
-faiblis		faiblir	72
-faiblissaient		faiblir	75
-faiblissais		faiblir	86
-faiblissait		faiblir	71
-faiblissant	Qui faiblit.
-faiblissante		faiblissant	23
-faiblissantes		faiblissant	1
-faiblissants		faiblissant	9
-faiblisse		faiblir	85
-faiblissent		faiblir	69
-faiblisses		faiblir	76
-faiblissez		faiblir	70
-faiblissiez		faiblir	13
-faiblissions		faiblir	94
-faiblissons		faiblir	73
-faiblit		faiblir	80
-faiblîtes		faiblir	2
-faïençage	Phénomène de fissuration plus ou moins superficielle de corps rigides.
-faïençages		faïençage	0
-faïence	Poterie de terre ordinairement vernissée ou émaillée de bleu sur fond blanc.
-faïencée		faïencer	37
-faïencées		faïencer	36
-faïencer	Couvrir de carreaux de faïence.
-faïencerie	Lieu où l’on fabrique de la faïence.
-faïenceries		faïencerie	0
-faïences		faïence	0
-faïencier	Celui qui fabrique ou qui vend de la faïence.
-faïencière	Celle qui fabrique ou qui vend de la faïence.
-faïencières		faïencier	1
-faïenciers		faïencier	9
-faignant	Variante orthographique de feignant.
-faignante	Variante orthographique de feignante.
-faignantes	Fémoinin pluriel de faignant.	faignant
-faignants		faignant	9
-failla		failler	39
-faillai		failler	22
-faillaient		faillir	116
-faillais		faillir	114
-faillait		faillir	119
-faillâmes		failler	3
-faillant		faillir	35
-faillas		failler	12
-faillasse		failler	6
-faillassent		failler	17
-faillasses		failler	8
-faillassiez		failler	14
-faillassions		failler	25
-faillât		failler	20
-faillâtes		failler	2
-faille	Fracture, fissure avec rejet des deux blocs situés de part et d’autre de la cassure.
-faillée		failler	37
-faillées		failler	36
-faillent		faillir	31
-failler	Se déplacer en provoquant des failles.
-faillera		failler	21
-faillerai		failler	16
-failleraient		failler	28
-faillerais		failler	18
-faillerait		failler	26
-failleras		failler	7
-faillèrent		failler	24
-faillerez		failler	5
-failleriez		failler	4
-faillerions		failler	11
-faillerons		failler	10
-failleront		failler	15
-failles		faille	0
-faillez		faillir	30
-failli	Se dit d'un chevron, d'une bande, d'une fasce, d'un pal, d'un meuble quelconque, dont la longueur ou la largeur se trouve interrompue par un vide parfaitement …
-faillibilité	Possibilité de faillir, de se tromper.
-faillibilités		faillibilité	0
-faillible	Qui est sujet à faillir, à se tromper ou à commettre une faute.
-faillibles		faillible	0
-faillie	Femme qui a fait faillite.
-faillies		faillie	0
-failliez		faillir	110
-faillîmes		faillir	68
-faillions		faillir	111
-faillir	Ne pas tenir le coup.
-faillira		faillir	21
-faillirai		faillir	50
-failliraient		faillir	28
-faillirais		faillir	18
-faillirait		faillir	26
-failliras		faillir	7
-faillirent		faillir	48
-faillirez		faillir	5
-failliriez		faillir	4
-faillirions		faillir	11
-faillirons		faillir	10
-failliront		faillir	15
-faillis		failli	0
-faillissaient		faillir	32
-faillissais		faillir	29
-faillissait		faillir	34
-faillissant		faillir	35
-faillisse		faillir	85
-faillissent		faillir	31
-faillisses		faillir	76
-faillissez		faillir	30
-faillissiez		faillir	13
-faillissions		faillir	19
-faillissons		faillir	27
-faillit		faillir	80
-faillite	Banqueroute forcée d’un négociant, obligation pour lui de suspendre ses paiements.
-faillites		faillite	0
-faillons		faillir	27
-faim	Sensation qui révèle l’envie ou le besoin de manger.
-faims		faim	0
-faine	Fruit du hêtre.
-fainéant	Qui évite l’effort ou le travail, par paresse.
-fainéanta		fainéanter	33
-fainéantai		fainéanter	22
-fainéantaient		fainéanter	32
-fainéantais		fainéanter	52
-fainéantait		fainéanter	34
-fainéantâmes		fainéanter	3
-fainéantant		fainéanter	43
-fainéantas		fainéanter	12
-fainéantasse		fainéanter	6
-fainéantassent		fainéanter	17
-fainéantasses		fainéanter	8
-fainéantassiez		fainéanter	14
-fainéantassions		fainéanter	25
-fainéantât		fainéanter	20
-fainéantâtes		fainéanter	2
-fainéante	Celle qui ne veut rien faire.
-fainéantent		fainéanter	31
-fainéanter	Ne rien faire ; ne vouloir rien faire.
-fainéantera		fainéanter	21
-fainéanterai		fainéanter	16
-fainéanteraient		fainéanter	28
-fainéanterais		fainéanter	18
-fainéanterait		fainéanter	26
-fainéanteras		fainéanter	7
-fainéantèrent		fainéanter	24
-fainéanterez		fainéanter	5
-fainéanteriez		fainéanter	4
-fainéanterions		fainéanter	11
-fainéanterons		fainéanter	10
-fainéanteront		fainéanter	15
-fainéantes		fainéant	1
-fainéantez		fainéanter	30
-fainéantiez		fainéanter	13
-fainéantions		fainéanter	19
-fainéantise	Action de fainéanter.
-fainéantises		fainéantise	0
-fainéantons		fainéanter	27
-fainéants		fainéant	9
-faînée	Récolte des faînes.
-faînées		faînée	0
-faînes		faîne	0
-faire	Créer, produire, fabriquer, en parlant de toute œuvre matérielle.
-fairepart	Variante orthographique de faire-part.
-faireparts		fairepart	0
-fairplay	Conduite honnête dans un sport ou dans toute autre circonstance et honorable dans la défaite.
-fairplays		fairplay	0
-fairway	Zone d’un parcours de golf, l’allée, où l’on est censé se placer entre le point de départ (tee) et le trou (sur le green).
-fairways		fairway	0
-fais		faire	72
-faisabilité	Possibilité de faire quelque chose en particulier de réaliser un projet technique.
-faisabilités		faisabilité	0
-faisable	Qui peut se faire.
-faisables		faisable	0
-faisaient		faire	42
-faisais		faire	52
-faisait		faire	40
-faisan	Nom donné à cinq genres de gallinacés de la famille des phasianidés, englobant une vintaine d'espèces qui fréquentent différents habitats forestiers dans les v…
-faisanda		faisander	33
-faisandage	Action de faisander, résultat de cette action.
-faisandages		faisandage	0
-faisandai		faisander	22
-faisandaient		faisander	32
-faisandais		faisander	29
-faisandait		faisander	34
-faisandâmes		faisander	3
-faisandant		faisander	35
-faisandas		faisander	12
-faisandasse		faisander	6
-faisandassent		faisander	17
-faisandasses		faisander	8
-faisandassiez		faisander	14
-faisandassions		faisander	25
-faisandât		faisander	20
-faisandâtes		faisander	2
-faisandé	Se dit de certaines préparations culinaires, dont la maturation accroît le goût.
-faisandeau	Jeune faisan.
-faisandeaux		faisandeau	0
-faisandée		faisandé	23
-faisandées		faisandé	1
-faisandent		faisander	31
-faisander	Acquérir du fumet en se mortifiant comme la chair du faisan, en parlant d’une pièce de gibier.
-faisandera		faisander	21
-faisanderai		faisander	16
-faisanderaient		faisander	28
-faisanderais		faisander	18
-faisanderait		faisander	26
-faisanderas		faisander	7
-faisandèrent		faisander	24
-faisanderez		faisander	5
-faisanderie	Lieu où l’on élève des faisans.
-faisanderies		faisanderie	0
-faisanderiez		faisander	4
-faisanderions		faisander	11
-faisanderons		faisander	10
-faisanderont		faisander	15
-faisandés		faisandé	9
-faisandez		faisander	30
-faisandier	Personne qui élève des faisans.
-faisandière	Femme qui élève des faisans.
-faisandières		faisandière	0
-faisandiers		faisandier	0
-faisandiez		faisander	13
-faisandions		faisander	19
-faisandons		faisander	27
-faisane	Faisan femelle.
-faisanes		faisane	0
-faisans		faisan	0
-faisant		faire	35
-faisceau	Assemblage de certaines choses de même nature et de forme allongée liées ensemble.
-faisceaux		faisceau	0
-faiseur	Celui qui fait certains ouvrages, qui fabrique certains objets, en parlant des choses de mode.
-faiseurs		faiseur	0
-faiseuse	Celle qui fait certains ouvrages, qui fabrique certains objets, en parlant des choses de mode.
-faiseuses		faiseuse	0
-faisiez		faire	67
-faisions		faire	65
-faisons		faire	59
-faisselle	Récipient à parois percées de trous dans lequel on fait égoutter le fromage.
-faisselles		faisselle	0
-fait	Réalisé ; construit.
-faîtage	Ouvrage qui permet de joindre les deux versants d'une toiture.
-faîtages		faîtage	0
-faîte	Comble, partie la plus élevée d’un bâtiment, d’un édifice.
-faîteau	Ornement qu’on place aux extrémités d’un faîtage.
-faîteaux		faîteau	0
-faites		fait	1
-faîtier	Qui appartient au faîte.
-faîtière	Tuile faîtière, tuile creuse qui sert à recouvrir le faîte d’un toit ou d’un mur.
-faîtières		faîtière	1
-faîtiers		faîtier	9
-faitout	Variante orthographique de fait-tout.
-faitouts		faitout	0
-faits		fait	9
-faix	Charge pesante.
-fajita	Mets de cuisine tex-mex constitué d’une tortilla de farine de blé pliée et remplie de viande et de crudités diverses, sauces et condiments.
-fajitas		fajita	0
-fake	Faux.
-fakes		fake	0
-fakir	Ascète soufi, derviche musulman qui court le pays en vivant d’aumônes.
-fakirisme	Mouvement mystique hindou dont les membres, des fakirs vivent d’aumônes et s’imposent des pénitences corporelles douloureuses dans un but d’élévation spirituel…
-fakirismes		fakirisme	0
-fakirs		fakir	0
-falafel	Nourriture du Moyen-Orient en forme de boules frites constituées de pois chiches ou de fèves et d’épices.
-falafels		falafel	0
-falaise	Masse de terres et de rochers en escarpement au bord de la mer.
-falaises		falaise	0
-falarique	Arme de jet en forme de flèche parfois garnie d'étoupe enflammée qui se lançait soit à la main, soit avec une machine.
-falariques		falarique	0
-falbala	Pièce d’étoffe plissée utilisée pour rehausser l’apparence d’un vêtement ou d’un rideau.
-falbalas		falbala	0
-falciforme	Qui a la forme d’une faucille.
-falciformes		falciforme	0
-falconidé	Tout oiseau de la famille des falconidés, qui comprend 11 genres et une soixantaine d'espèces, dont la mandibule supérieure du bec est munie d’une dent tomiale…
-falconidés	Famille d'oiseaux de proie diurnes, la seule de l'ordre des falconiformes, comprenant les faucons, les caracaras, les carnifex, les fauconnets, les crécerelles…
-falconiforme	Tout oiseau arboricole et omnivore de l’ordre des falconiformes, qui comprend les 11 genres et la soixantaine d'espèces existantes de faucons, caracaras, carni…
-falconiformes	Ordre d'oiseaux néognathes rapaces à régime carnivore, réunissant 11 genres et plus de 60 espèces au sein d'une famille unique, i.e.
-faldistoire	Siège liturgique des évêques.
-faldistoires		faldistoire	0
-falerne	Vin des environs de Falerne en Campanie, qui avait une grande réputation.
-falernes		falerne	0
-fallacieuse		fallacieux	23
-fallacieusement	D’une manière fallacieuse.
-fallacieuses		fallacieux	1
-fallacieux	Qui est fondé sur un mensonge ou un faux.
-fallait		falloir	91
-falle	Variante de fale.
-falloir	Être de nécessité, de devoir, d’obligation, de bienséance.
-fallu		falloir	158
-fallue	Sorte de brioche.
-fallues		fallue	0
-fallut		falloir	39
-falot	Plaisant, comique.
-falote		falot	23
-falotes		falot	1
-falots		falot	9
-falourde	Gros fagot de bûches de bois à brûler.
-falourdes		falourde	0
-falsafa	Ensemble des courants philosophiques médiévaux (IXe - XIIe siècle) de la civilisation islamique héritiers et continuateurs de la philosophie grecque de l’Antiq…
-falsetto	Voix de fausset, la plus aiguë des voix du registre masculin.
-falsettos		falsetto	0
-falsifia		falsifier	33
-falsifiabilité	Possibilité qu’il y a de consigner une observation, ou de mener une expérience, qui démontre qu’une affirmation est fausse.
-falsifiabilités		falsifiabilité	0
-falsifiable	Qui peut être falsifié.
-falsifiables		falsifiable	0
-falsifiai		falsifier	22
-falsifiaient		falsifier	42
-falsifiais		falsifier	52
-falsifiait		falsifier	40
-falsifiâmes		falsifier	3
-falsifiant		falsifier	43
-falsifias		falsifier	12
-falsifiasse		falsifier	6
-falsifiassent		falsifier	17
-falsifiasses		falsifier	8
-falsifiassiez		falsifier	14
-falsifiassions		falsifier	25
-falsifiât		falsifier	20
-falsifiâtes		falsifier	2
-falsificateur	Celui qui est coupable d’une falsification.
-falsificateurs		falsificateur	0
-falsification	Action de falsifier.
-falsifications		falsification	0
-falsificatrice	Celle qui est coupable d’une falsification.
-falsificatrices		falsificatrice	0
-falsifié		falsifier	56
-falsifiée		falsifier	45
-falsifiées		falsifier	51
-falsifient		falsifier	41
-falsifier	Altérer une substance, un document, etc.
-falsifiera		falsifier	21
-falsifierai		falsifier	16
-falsifieraient		falsifier	28
-falsifierais		falsifier	18
-falsifierait		falsifier	26
-falsifieras		falsifier	7
-falsifièrent		falsifier	48
-falsifierez		falsifier	5
-falsifieriez		falsifier	4
-falsifierions		falsifier	11
-falsifierons		falsifier	10
-falsifieront		falsifier	15
-falsifiés		falsifier	53
-falsifiez		falsifier	47
-falsifiiez		falsifier	13
-falsifiions		falsifier	19
-falsifions		falsifier	27
-faluche	Pain blanc des Flandres sans croûte, plat et arrondi.
-faluches		faluche	0
-falun	Assemblage de coquilles brisées qu’on trouve en masse à une certaine profondeur de terre et qu’on emploie en engrais comme la marne.
-faluna		faluner	33
-falunage	Action de faluner, déposer du falun sur les terrains en culture, pour les amender.
-falunages		falunage	0
-falunai		faluner	22
-falunaient		faluner	32
-falunais		faluner	29
-falunait		faluner	34
-falunâmes		faluner	3
-falunant		faluner	35
-falunas		faluner	12
-falunasse		faluner	6
-falunassent		faluner	17
-falunasses		faluner	8
-falunassiez		faluner	14
-falunassions		faluner	25
-falunât		faluner	20
-falunâtes		faluner	2
-faluné		faluner	56
-falunée		faluner	37
-falunées		faluner	36
-falunent		faluner	31
-faluner	Amender en répandant du falun.
-falunera		faluner	21
-falunerai		faluner	16
-faluneraient		faluner	28
-falunerais		faluner	18
-falunerait		faluner	26
-faluneras		faluner	7
-falunèrent		faluner	24
-falunerez		faluner	5
-faluneriez		faluner	4
-falunerions		faluner	11
-falunerons		faluner	10
-faluneront		faluner	15
-falunés		faluner	38
-falunez		faluner	30
-falunière	Endroit d’où l’on extrait du falun.
-falunières		falunière	0
-faluniez		faluner	13
-falunions		faluner	19
-falunons		faluner	27
-faluns		falun	0
-falzar	Pantalon grimpant.
-falzars		falzar	0
-famas	Fusil d’assaut français.
-famé	Réputé, reconnu.
-famée	Féminin singulier de famé.
-famées		famé	1
-famélique	Qui n’a guère de quoi satisfaire sa faim.
-faméliques		famélique	0
-fames		fame	0
-fameuse		fameux	23
-fameusement	D’une manière fameuse, remarquable, en bonne et en mauvaise part.
-fameuses		fameux	1
-fameux	Dont la réputation est très grande.
-familial	Qui est relatif à la famille.
-familiale	Voiture familiale.
-familialement	De façon familiale.
-familiales		familial	1
-familialisme	Tendance à accorder une valeur excessive à la famille sur le plan social.
-familialismes		familialisme	0
-familialiste	Relatif au familialisme.
-familiarisa		familiariser	39
-familiarisai		familiariser	22
-familiarisaient		familiariser	42
-familiarisais		familiariser	52
-familiarisait		familiariser	40
-familiarisâmes		familiariser	3
-familiarisant		familiariser	43
-familiarisas		familiariser	12
-familiarisasse		familiariser	6
-familiarisasses		familiariser	8
-familiarisât		familiariser	20
-familiarisâtes		familiariser	2
-familiarisation	Action de rendre familier.
-familiarise		familiariser	64
-familiarisée		familiariser	45
-familiarisées		familiariser	36
-familiarisent		familiariser	41
-familiariser	Rendre familier avec quelqu’un ou avec quelque chose.
-familiarisera		familiariser	21
-familiariserai		familiariser	16
-familiariserais		familiariser	18
-familiariserait		familiariser	26
-familiariseras		familiariser	7
-familiarisèrent		familiariser	24
-familiariserez		familiariser	58
-familiariseriez		familiariser	4
-familiariserons		familiariser	10
-familiariseront		familiariser	15
-familiarisés		familiariser	53
-familiarisez		familiariser	47
-familiarisiez		familiariser	67
-familiarisions		familiariser	19
-familiarisons		familiariser	27
-familiarité	Manière de vivre dans l’intimité de quelqu’un.
-familiarités		familiarité	0
-familiaux		familial	9
-familier	Qui est considéré comme appartenant à la famille.
-familière	Personne très proche dans ses habitudes et ses fréquentations.
-familièrement	D’une manière familière.
-familières		familier	1
-familiers		familier	9
-familistère	Établissement où plusieurs familles ou individus vivent ensemble dans une sorte de communauté et trouvent dans des magasins coopératifs ce qui leur est nécessa…
-familistères		familistère	0
-famille	Ensemble formé par les parents et leurs enfants.
-familles		famille	0
-famine	Indisponibilité générale des aliments les plus essentiels.
-famines		famine	0
-fan	Admirateur, admiratrice enthousiaste d’une personne ou d’une chose.
-fana	Fanatique.
-fanage	Action de faner l’herbe d’un pré fauché.
-fanages		fanage	0
-fanai		faner	22
-fanaient		faner	42
-fanais		faner	29
-fanaison	Temps où l’on coupe les foins.
-fanaisons		fanaison	0
-fanait		faner	40
-fanal	Grosse lanterne.
-fanâmes		faner	3
-fanant		faner	35
-fanart	Toute œuvre d’art (peinture, dessin, croquis,…) réalisée par un artiste et qui met en scène un personnage, un lieu ou une scène de l’univers qu’un autre artist…
-fanarts		fanart	0
-fanas		fana	0
-fanasse		faner	6
-fanassent		faner	17
-fanasses		faner	8
-fanassiez		faner	14
-fanassions		faner	25
-fanât		faner	20
-fanâtes		faner	2
-fanatique	Qui est emporté par une passion excessive pour la politique ou la religion.
-fanatiquement	D'une manière fanatique.
-fanatiques		fanatique	0
-fanatisa		fanatiser	33
-fanatisai		fanatiser	22
-fanatisaient		fanatiser	32
-fanatisais		fanatiser	29
-fanatisait		fanatiser	40
-fanatisâmes		fanatiser	3
-fanatisant		fanatiser	35
-fanatisas		fanatiser	12
-fanatisasse		fanatiser	6
-fanatisassent		fanatiser	17
-fanatisasses		fanatiser	8
-fanatisassiez		fanatiser	14
-fanatisassions		fanatiser	25
-fanatisât		fanatiser	20
-fanatisâtes		fanatiser	2
-fanatise		fanatiser	64
-fanatisée		fanatiser	37
-fanatisées		fanatiser	36
-fanatisent		fanatiser	31
-fanatiser	Rendre fanatique.
-fanatisera		fanatiser	21
-fanatiserai		fanatiser	16
-fanatiseraient		fanatiser	28
-fanatiserais		fanatiser	18
-fanatiserait		fanatiser	26
-fanatiseras		fanatiser	7
-fanatisèrent		fanatiser	24
-fanatiserez		fanatiser	5
-fanatiseriez		fanatiser	4
-fanatiserions		fanatiser	11
-fanatiserons		fanatiser	10
-fanatiseront		fanatiser	15
-fanatisés		fanatiser	53
-fanatiseur	Celui qui fanatise.
-fanatiseurs		fanatiseur	0
-fanatiseuse	Celle qui fanatise.
-fanatiseuses		fanatiseuse	0
-fanatisez		fanatiser	30
-fanatisiez		fanatiser	13
-fanatisions		fanatiser	19
-fanatisme	Zèle outré, et souvent cruel, pour une religion, ou, par extension, attachement opiniâtre et violent à un parti, à une opinion, etc.
-fanatismes		fanatisme	0
-fanatisons		fanatiser	27
-fanaux		fanal	0
-fanchon	Petit fichu que les femmes portent sur la tête et nouent sous le menton.
-fanchons		fanchon	0
-fanclub	Variante orthographique de fan-club.
-fanclubs		fanclub	0
-fancy	Tissu de coton imprimé.
-fandango	Danse espagnole, d’origine andalouse, exécutée au son de la guitare par deux hommes qui accompagnent leurs mouvements du jeu des castagnettes.
-fandangos		fandango	0
-fane	Feuille tombée d’un arbre.
-fanée		fané	23
-fanées		fané	1
-fanent		faner	41
-faner	Faire les foins, tourner et retourner l’herbe d’un pré fauché, pour la faire sécher.
-fanera		faner	44
-fanerai		faner	16
-faneraient		faner	63
-fanerais		faner	18
-fanerait		faner	49
-faneras		faner	57
-fanèrent		faner	24
-fanerez		faner	5
-faneriez		faner	4
-fanerions		faner	82
-fanerons		faner	10
-faneront		faner	54
-fanés		fané	9
-faneur	Celui qui fane les foins.
-faneurs		faneur	0
-faneuse	Celle qui fane les foins.
-faneuses		faneuse	0
-fanez		faner	47
-fanfan	Terme dont les mères et les nourrices se servent quelquefois en parlant aux enfants.
-fanfans		fanfan	0
-fanfare	Air exécuté par des cors ou des trompettes.
-fanfares		fanfare	0
-fanfaron	Vantard, hâbleur.
-fanfaronna		fanfaronner	39
-fanfaronnade	Air, parole, attitude de fanfaron.
-fanfaronnades		fanfaronnade	0
-fanfaronnai		fanfaronner	22
-fanfaronnaient		fanfaronner	42
-fanfaronnais		fanfaronner	29
-fanfaronnait		fanfaronner	40
-fanfaronnâmes		fanfaronner	3
-fanfaronnant		fanfaronner	43
-fanfaronnas		fanfaronner	12
-fanfaronnasse		fanfaronner	6
-fanfaronnassent		fanfaronner	17
-fanfaronnasses		fanfaronner	8
-fanfaronnassiez		fanfaronner	14
-fanfaronnât		fanfaronner	20
-fanfaronnâtes		fanfaronner	2
-fanfaronne	Personne qui se vante, qui étale une prétendue bravoure, ou toute autre qualité.
-fanfaronnent		fanfaronner	31
-fanfaronner	Prétendre ouvertement à des actions ou des qualités.
-fanfaronnera		fanfaronner	21
-fanfaronnerai		fanfaronner	16
-fanfaronnerais		fanfaronner	18
-fanfaronnerait		fanfaronner	26
-fanfaronneras		fanfaronner	7
-fanfaronnèrent		fanfaronner	24
-fanfaronnerez		fanfaronner	5
-fanfaronneriez		fanfaronner	4
-fanfaronnerions		fanfaronner	11
-fanfaronnerons		fanfaronner	10
-fanfaronneront		fanfaronner	15
-fanfaronnes		fanfaron	1
-fanfaronnez		fanfaronner	30
-fanfaronniez		fanfaronner	13
-fanfaronnions		fanfaronner	19
-fanfaronnons		fanfaronner	27
-fanfarons		fanfaron	9
-fanfiction	Écrit mettant en scène des personnes célèbres ou des personnages issus d’autres œuvres.
-fanfictions		fanfiction	0
-fanfreluche	Garnitures légères, enjolivements de la toilette féminine.
-fanfreluches		fanfreluche	0
-fang	Relatif aux Fangs ou à leur langue.
-fange	Bourbe ; boue.
-fanges		fange	0
-fangeuse		fangeux	23
-fangeuses		fangeux	1
-fangeux	Qui est plein de fange.
-fangothérapie	Méthode utilisée dans un but antalgique consistant à appliquer sur le corps de la boue d’origine volcanique sous forme de cataplasme.
-fangothérapies		fangothérapie	0
-fangs		fang	0
-faniez		faner	13
-fanion	Petit drapeau à hampe très courte.
-fanions		fanion	0
-Fanny	Prénom féminin, diminutif de Stéphanie ou de Françoise.
-fanon	Peau qui pend sous la gorge d’un taureau, d’un bœuf, d’une oie.
-fanons		fanon	0
-fans		fan	0
-fantaisie	Esprit ; pensée.
-fantaisies		fantaisie	0
-fantaisiste	Qui est controuvé, imaginaire, en parlant des choses.
-fantaisistes		fantaisiste	0
-fantasia	Divertissement équestre, pratiqué surtout au Maghreb, dans lequel des cavaliers font, à grande allure, des exercices de voltige en chargeant et en déchargeant …
-fantasias		fantasia	0
-fantasie	Genre anglo-saxon proche du merveilleux rattaché aux littératures de l'imaginaire qui décrit des univers créés de toute pièce parfois reliés au nôtre et dotés …
-fantasies		fantasie	0
-fantasma		fantasmer	39
-fantasmagorie	Sorte de spectacle qui consiste à faire apparaître, dans un lieu obscur, des images qui semblent être des fantômes.
-fantasmagories		fantasmagorie	0
-fantasmagorique	Qui tient de la fantasmagorie.
-fantasmai		fantasmer	22
-fantasmaient		fantasmer	42
-fantasmais		fantasmer	52
-fantasmait		fantasmer	40
-fantasmâmes		fantasmer	3
-fantasmant		fantasmer	35
-fantasmas		fantasmer	12
-fantasmasse		fantasmer	6
-fantasmassent		fantasmer	17
-fantasmasses		fantasmer	8
-fantasmassiez		fantasmer	14
-fantasmassions		fantasmer	25
-fantasmât		fantasmer	20
-fantasmâtes		fantasmer	2
-fantasmatique	Qui présente un caractère irréel, fantomatique.
-fantasmatiques		fantasmatique	0
-fantasme	Vision illusoire, produite par une lésion du sens optique ou par un trouble des facultés mentales.
-fantasmée		fantasmé	23
-fantasmées		fantasmer	51
-fantasment		fantasmer	41
-fantasmer	Avoir un fantasme, ou des fantasmes.
-fantasmera		fantasmer	21
-fantasmerai		fantasmer	16
-fantasmeraient		fantasmer	28
-fantasmerais		fantasmer	18
-fantasmerait		fantasmer	26
-fantasmeras		fantasmer	7
-fantasmèrent		fantasmer	24
-fantasmerez		fantasmer	5
-fantasmeriez		fantasmer	4
-fantasmerions		fantasmer	11
-fantasmerons		fantasmer	10
-fantasmeront		fantasmer	15
-fantasmes		fantasme	0
-fantasmez		fantasmer	47
-fantasmiez		fantasmer	13
-fantasmions		fantasmer	19
-fantasmons		fantasmer	27
-fantasque	Qui suit librement et joyeusement sa fantaisie, original, imaginatif, non-conformiste.
-fantasques		fantasque	0
-fantassin	Qui concerne les fantassins.
-fantassins		fantassin	9
-fantastique	Qui tient de la fantaisie, de l’imagination, qui ne correspond pas à la réalité.
-fantastiquement	D’une manière fantastique.
-fantastiquer	Imaginer selon sa fantaisie.
-fantastiqués		fantastiquer	38
-fantasy	Un genre narratif présentant dans son récit un ou plusieurs éléments irrationnels qui relèvent généralement d’un aspect mythique et qui sont souvent incarnés p…
-fantasys		fantasy	0
-fantoche	Qualifie une chose ou un groupe manipulé.
-fantoches		fantoche	0
-fantomal	Qui tient de l’apparition ou qui évoque l’apparition.
-fantomale		fantomal	23
-fantomales		fantomal	1
-fantomatique	Qui a rapport aux fantômes.
-fantomatiques		fantomatique	0
-fantômaux		fantômal	9
-fantôme	Apparition d’un défunt sous l’aspect qu’il avait de son vivant ou sous une autre forme, notamment sous un drap blanchâtre.
-fantômes		fantôme	0
-fanton	Variante orthographique de fenton.
-fantons		fanton	0
-fanum	Terrain consacré.
-fanums		fanum	0
-fanure	État de ce qui est fané.
-fanures		fanure	0
-fanzine	Publication indépendante de faible diffusion élaborée par des amateurs à propos de sujets culturels ou politiques.
-fanzines		fanzine	0
-faon	Petit d’une biche (cas d’emploi le plus courant), d’une daine ou d’une chevrette.
-faons		faon	0
-faq	Variante de FAQ.
-faqs		faq	0
-faquin	Portefaix.
-faquins		faquin	0
-far	Bouillie de blé à laquelle on ajoutait des fruits secs avant cuisson.
-farad	Unité de mesure de capacité électrique du Système international, dont le symbole est F.
-Faraday	Michael Faraday.
-faradique	Alternatif, relativement à un courant électrique.
-faradiques		faradique	0
-faradisation	Application médicale de l’électricité d’induction.
-faradisations		faradisation	0
-farads		farad	0
-faramineuse		faramineux	23
-faramineuses		faramineux	1
-faramineux	Extraordinaire, énorme.
-farandola		farandoler	39
-farandolai		farandoler	22
-farandolaient		farandoler	42
-farandolais		farandoler	29
-farandolait		farandoler	34
-farandolâmes		farandoler	3
-farandolant		farandoler	35
-farandolas		farandoler	12
-farandolasse		farandoler	6
-farandolassent		farandoler	17
-farandolasses		farandoler	8
-farandolassiez		farandoler	14
-farandolassions		farandoler	25
-farandolât		farandoler	20
-farandolâtes		farandoler	2
-farandole	Sorte de danse provençale, que plusieurs personnes exécutent en se tenant par la main et en formant une chaîne ^().
-farandolent		farandoler	31
-farandoler	Danser en faisant une farandole.
-farandolera		farandoler	21
-farandolerai		farandoler	16
-farandoleraient		farandoler	28
-farandolerais		farandoler	18
-farandolerait		farandoler	26
-farandoleras		farandoler	7
-farandolèrent		farandoler	24
-farandolerez		farandoler	5
-farandoleriez		farandoler	4
-farandolerions		farandoler	11
-farandolerons		farandoler	10
-farandoleront		farandoler	15
-farandoles		farandole	0
-farandoleur	Personne qui danse ou joue la farandole.
-farandoleurs		farandoleur	0
-farandoleuse	Danseuse de farandole.
-farandoleuses		farandoleuse	0
-farandolez		farandoler	30
-farandoliez		farandoler	13
-farandolions		farandoler	19
-farandolons		farandoler	27
-Farani	Français de la métropole.
-Faranis		Farani	0
-faraud	Qui est fier de son allure.
-faraude	Celle qui porte ses beaux habits et qui en est fière.
-faraudes		faraud	0
-farauds		faraud	9
-farça		farcer	33
-farçai		farcer	22
-farçaient		farcer	32
-farçais		farcer	29
-farçait		farcer	34
-farçâmes		farcer	3
-farçant		farcer	35
-farças		farcer	12
-farçasse		farcer	6
-farçassent		farcer	17
-farçasses		farcer	8
-farçassiez		farcer	14
-farçassions		farcer	25
-farçât		farcer	20
-farçâtes		farcer	2
-farce	Hachis d’ingrédients épicés que l’on introduit dans le ventre vidé de ses entrailles de l’animal destiné à être cuit entier, ou dans un organe creux d’un anima…
-farcée		farcer	37
-farcées		farcer	36
-farcent		farcer	31
-farcer	Rire, plaisanter, faire des farces.
-farcera		farcer	21
-farcerai		farcer	16
-farceraient		farcer	28
-farcerais		farcer	18
-farcerait		farcer	26
-farceras		farcer	7
-farcèrent		farcer	24
-farcerez		farcer	5
-farceriez		farcer	4
-farcerions		farcer	11
-farcerons		farcer	10
-farceront		farcer	15
-farces		farce	0
-farceur	Qui joue des farces.
-farceurs		farceur	0
-farceuse	Celle qui aime à faire ou à dire des choses bouffonnes ou à jouer des tours plaisants aux gens.
-farceuses		farceuse	0
-farcez		farcer	30
-farci	Rempli de farce.
-farcie		farci	23
-farcies		farci	1
-farciez		farcer	13
-farcîmes		farcir	3
-farcin	Forme cutanée de la morve, chez les chevaux et mulets, avec adénites et lymphangites.
-farcins		farcin	0
-farcions		farcer	19
-farcir	Remplir de farce.
-farcira		farcir	21
-farcirai		farcir	50
-farciraient		farcir	28
-farcirais		farcir	18
-farcirait		farcir	49
-farciras		farcir	7
-farcirent		farcir	24
-farcirez		farcir	5
-farciriez		farcir	4
-farcirions		farcir	11
-farcirons		farcir	10
-farciront		farcir	54
-farcis		farci	9
-farcissaient		farcir	75
-farcissais		farcir	86
-farcissait		farcir	71
-farcissant		farcir	43
-farcisse		farcir	85
-farcissent		farcir	31
-farcisses		farcir	76
-farcissez		farcir	70
-farcissiez		farcir	13
-farcissions		farcir	19
-farcissons		farcir	27
-farcit		farcir	80
-farcîtes		farcir	2
-farçons		farcer	27
-fard	Enduit qu’on applique sur la peau ou une partie du visage pour la colorer ou pour la protéger.
-farda		farder	33
-fardage	Action de farder.
-fardages		fardage	0
-fardai		farder	22
-fardaient		farder	42
-fardais		farder	29
-fardait		farder	40
-fardâmes		farder	3
-fardant		farder	43
-fardas		farder	12
-fardasse		farder	6
-fardassent		farder	17
-fardasses		farder	8
-fardassiez		farder	14
-fardassions		farder	25
-fardât		farder	20
-fardâtes		farder	2
-farde	Lourd paquet de marchandise.
-fardeau	Faix ; charge.
-fardeaux		fardeau	0
-fardée		fardé	23
-fardées		fardé	1
-fardela		fardeler	33
-fardelage	Procédé d’emballage consistant à envelopper des fardeaux sous film rétractable.
-fardelages		fardelage	0
-fardelai		fardeler	22
-fardelaient		fardeler	32
-fardelais		fardeler	29
-fardelait		fardeler	34
-fardelâmes		fardeler	3
-fardelant		fardeler	35
-fardelas		fardeler	12
-fardelasse		fardeler	6
-fardelassent		fardeler	17
-fardelasses		fardeler	8
-fardelassiez		fardeler	14
-fardelassions		fardeler	25
-fardelât		fardeler	20
-fardelâtes		fardeler	2
-fardelé		fardeler	46
-fardelée		fardeler	37
-fardelées		fardeler	36
-fardèlent		fardeler	31
-fardeler	Rassembler un certain nombre d'objets sous emballage en un bloc formant fardeau, généralement par une mise sous film plastique rétractable ou par la pose d'une…
-fardèlera		fardeler	21
-fardèlerai		fardeler	16
-fardèleraient		fardeler	28
-fardèlerais		fardeler	18
-fardèlerait		fardeler	26
-fardèleras		fardeler	7
-fardelèrent		fardeler	24
-fardèlerez		fardeler	5
-fardèleriez		fardeler	4
-fardèlerions		fardeler	11
-fardèlerons		fardeler	10
-fardèleront		fardeler	15
-fardelés		fardeler	38
-fardeleuse	Machine qui rassemble des produits pour faciliter le transport.
-fardeleuses		fardeleuse	0
-fardelez		fardeler	30
-fardeliez		fardeler	13
-fardelions		fardeler	19
-fardelle		fardeler	79
-fardellent		fardeler	31
-fardellera		fardeler	21
-fardellerai		fardeler	16
-fardelleraient		fardeler	28
-fardellerais		fardeler	18
-fardellerait		fardeler	26
-fardelleras		fardeler	7
-fardellerez		fardeler	5
-fardelleriez		fardeler	4
-fardellerions		fardeler	11
-fardellerons		fardeler	10
-fardelleront		fardeler	15
-fardelles		fardeler	66
-fardelons		fardeler	27
-fardent		farder	41
-farder	Enduire de fard.
-fardera		farder	21
-farderai		farder	16
-farderaient		farder	28
-farderais		farder	18
-farderait		farder	26
-farderas		farder	7
-fardèrent		farder	24
-farderez		farder	5
-farderiez		farder	4
-farderions		farder	11
-farderons		farder	10
-farderont		farder	15
-fardés		fardé	9
-fardez		farder	30
-fardier	Chariot utilisé pour transporter des charges pesantes.
-fardiers		fardier	0
-fardiez		farder	13
-fardions		farder	19
-fardoche	Les broussailles.
-fardoches		fardoche	0
-fardons		farder	27
-fards		fard	0
-fare	Pêche solennelle que les pêcheurs faisaient pour leur fête, vers le mois de mai, et qui fut interdite en 1670, parce qu’elle dépeuplait les rivières.
-fares		fare	0
-farfadet	Être imaginaire, sorte d’esprit follet, de lutin.
-farfadets		farfadet	0
-farfalle	Pâte alimentaire (ou simplement pâte) en forme de papillon ou de nœud papillon.
-farfalles		farfalle	0
-farfelu	Qui a un comportement bizarre.
-farfelue	Personne au comportement, aux idées fantasques.
-farfelues		farfelu	122
-farfelus		farfelu	120
-farfouilla		farfouiller	39
-farfouillage	Action de farfouiller.
-farfouillages		farfouillage	0
-farfouillai		farfouiller	22
-farfouillaient		farfouiller	32
-farfouillais		farfouiller	52
-farfouillait		farfouiller	40
-farfouillâmes		farfouiller	3
-farfouillant		farfouiller	43
-farfouillas		farfouiller	12
-farfouillasse		farfouillasser	72
-farfouillassent		farfouillasser	69
-farfouillasser	Farfouiller (souvent avec une nuance péjorative).
-farfouillasses		farfouillasser	113
-farfouillassiez		farfouillasser	100
-farfouillât		farfouiller	20
-farfouillâtes		farfouiller	2
-farfouille	Sorte de marché où on vend des choses de petite valeur.
-farfouillent		farfouiller	41
-farfouiller	Fouiller dans quelque chose avec désordre et en brouillant tout ce qui s’y trouve.
-farfouillera		farfouiller	21
-farfouillerai		farfouiller	16
-farfouillerais		farfouiller	18
-farfouillerait		farfouiller	49
-farfouilleras		farfouiller	7
-farfouillèrent		farfouiller	24
-farfouillerez		farfouiller	5
-farfouilleriez		farfouiller	4
-farfouillerions		farfouiller	11
-farfouillerons		farfouiller	10
-farfouilleront		farfouiller	15
-farfouilles		farfouille	0
-farfouilleur	Celui qui farfouille.
-farfouilleurs		farfouilleur	0
-farfouilleuse	Celle qui farfouille.
-farfouilleuses		farfouilleuse	0
-farfouillez		farfouiller	47
-farfouilliez		farfouiller	13
-farfouillions		farfouiller	19
-farfouillons		farfouiller	27
-fargué		farguer	46
-farguer	Accuser, charger.
-fargués		farguer	38
-faribole	Propos frivole, vain et plaisant.
-fariboles		faribole	0
-farigoule	Thym (herbe aromatique).
-farigoules		farigoule	0
-farina		fariner	39
-farinacé	Qui a l’apparence ou qui est de la nature de la farine.
-farinacée		farinacé	23
-farinacées		farinacé	1
-farinacés		farinacé	9
-farinage	Droit payé au meunier pour le blé moulu.
-farinages		farinage	0
-farinai		fariner	22
-farinaient		fariner	32
-farinais		fariner	29
-farinait		fariner	34
-farinâmes		fariner	3
-farinant		fariner	35
-farinas		fariner	12
-farinasse		fariner	6
-farinassent		fariner	17
-farinasses		fariner	8
-farinassiez		fariner	14
-farinassions		fariner	25
-farinât		fariner	20
-farinâtes		fariner	2
-farine	Poudre blanche obtenue par la mouture de grains céréaliers et utilisée dans la fabrication du pain et de pâtisseries.
-farinée		fariner	45
-farinées		fariner	36
-farinent		fariner	31
-fariner	Saupoudrer de farine.
-farinera		fariner	21
-farinerai		fariner	16
-farineraient		fariner	28
-farinerais		fariner	18
-farinerait		fariner	26
-farineras		fariner	7
-farinèrent		fariner	24
-farinerez		fariner	5
-farineriez		fariner	4
-farinerions		fariner	11
-farinerons		fariner	10
-farineront		fariner	15
-farinés		fariner	53
-farineuse		farineux	23
-farineuses		farineux	1
-farineux	Qui tient de la nature de la farine, qui en a la texture ou le goût.
-farinez		fariner	30
-farinier	Personne qui vend de la farine ou qui travaille dans un moulin.
-farinière	Pièce où l’on met la farine.
-farinières		farinière	0
-fariniers		farinier	0
-fariniez		fariner	13
-farinions		fariner	19
-farinons		fariner	27
-fario	Poisson qui précède un grand banc des harengs.
-farios		fario	0
-farlouche	Mélange à base de raisins secs et de mélasse, utilisé comme garniture à tarte.
-farlouches		farlouche	0
-farlouse	Anthe des prés, connu, en diverses localités, sous les noms de pipit des arbres, pipit des prés, alouette bretonne, alouette courte, alouette folle, etc.
-farlouses		farlouse	0
-farniente	Oisiveté à laquelle on prend plaisir.
-farnienter	Se livrer au farniente.
-farnientes		farnienter	66
-faro	Espèce de bière fortement alcoolisée qui se fabrique particulièrement à Bruxelles et dans les environs.
-faros		faro	0
-farota		faroter	33
-farotai		faroter	22
-farotaient		faroter	32
-farotais		faroter	29
-farotait		faroter	34
-farotâmes		faroter	3
-farotant		faroter	35
-farotas		faroter	12
-farotasse		faroter	6
-farotassent		faroter	17
-farotasses		faroter	8
-farotassiez		faroter	14
-farotassions		faroter	25
-farotât		faroter	20
-farotâtes		faroter	2
-faroté		faroter	46
-farotée		faroter	37
-farotées		faroter	36
-farotent		faroter	31
-faroter	Frimer.
-farotera		faroter	21
-faroterai		faroter	16
-faroteraient		faroter	28
-faroterais		faroter	18
-faroterait		faroter	26
-faroteras		faroter	7
-farotèrent		faroter	24
-faroterez		faroter	5
-faroteriez		faroter	4
-faroterions		faroter	11
-faroterons		faroter	10
-faroteront		faroter	15
-farotés		faroter	38
-farotez		faroter	30
-farotiez		faroter	13
-farotions		faroter	19
-farotons		faroter	27
-farouch	Trèfle incarnat.
-farouche	Sauvage, indompté, qui s’enfuit quand on l’approche, en parlant des bêtes.
-farouchement	D’une manière farouche.
-farouches		farouche	0
-farouchs		farouch	0
-farrago	Mélange de diverses graines semées afin d’obtenir du fourrage.
-fars		far	0
-farsi	Relatif aux habitants de la région du Fars ou Pars en Iran.
-farsis		farsi	9
-fart	Substance cireuse avec laquelle on enduit les semelles des skis ou des planches de glisse (snowboard, planche de surf…) afin de les rendre plus glissantes, ou …
-farta		farter	33
-fartage	Action de farter.
-fartages		fartage	0
-fartai		farter	22
-fartaient		farter	32
-fartais		farter	29
-fartait		farter	34
-fartâmes		farter	3
-fartant		farter	35
-fartas		farter	12
-fartasse		farter	6
-fartassent		farter	17
-fartasses		farter	8
-fartassiez		farter	14
-fartassions		farter	25
-fartât		farter	20
-fartâtes		farter	2
-farté		farter	46
-fartée		farter	37
-fartées		farter	36
-fartent		farter	31
-farter	Enduire (des skis, en particulier) de fart.
-fartera		farter	21
-farterai		farter	16
-farteraient		farter	28
-farterais		farter	18
-farterait		farter	26
-farteras		farter	7
-fartèrent		farter	24
-farterez		farter	5
-farteriez		farter	4
-farterions		farter	11
-farterons		farter	10
-farteront		farter	15
-fartés		farter	38
-fartez		farter	30
-fartiez		farter	13
-fartions		farter	19
-fartons		farter	27
-farts		fart	0
-fascé	Qui est chargé de fasces (bandes horizontales) égales en largeur et en nombre, dont l'émail alterne, en parlant d’un écu.
-fascée		fascé	23
-fascées		fascé	1
-fasces		fasce	0
-fascia	Bande d’étoffe longue et étroite employée comme bandage.
-fascias		fascia	0
-fasciation	Vice de conformation des branches d'un arbre, des pédoncules et pétioles d'une plante, qui s'aplatissent et s'étendent en forme de bande au lieu de conserver l…
-fasciations		fasciation	0
-fasciculation	Disposition en fascicules ou faisceaux.
-fasciculations		fasciculation	0
-fascicule	Poignée d’herbes, de plantes.
-fasciculée		fasciculé	23
-fasciculées		fasciculé	1
-fascicules		fascicule	0
-fascié	Qui est marqué de bandes ou de bandelettes.
-fasciée		fascié	23
-fasciées		fascié	1
-fasciés		fascié	9
-fasciite	Inflammation d’un fascia (tissu conjonctif qui enveloppe les muscles et les organes).
-fasciites		fasciite	0
-fascina		fasciner	39
-fascinage	Technique de génie végétal, mise en place de fagots de branches inertes ou vivantes, fixés par des pieux et recouverts de terre.
-fascinages		fascinage	0
-fascinai		fasciner	22
-fascinaient		fasciner	42
-fascinais		fasciner	52
-fascinait		fasciner	40
-fascinâmes		fasciner	3
-fascinant	Qui suscite une profonde attirance.
-fascinante		fascinant	23
-fascinantes		fascinant	1
-fascinants		fascinant	9
-fascinas		fasciner	12
-fascinasse		fasciner	6
-fascinassent		fasciner	17
-fascinasses		fasciner	8
-fascinassiez		fasciner	14
-fascinassions		fasciner	25
-fascinât		fasciner	20
-fascinâtes		fasciner	2
-fascinateur	Qui fascine.
-fascinateurs		fascinateur	9
-fascination	Action à distance qui passe par le regard pour nuire ou tuer, mauvais œil.
-fascinations		fascination	0
-fascinatrice	Celle qui fascine.
-fascinatrices		fascinateur	1
-fascine	Fagot de petit bois.
-fascinée	Personne à qui un fascinateur a jeté le mauvais œil.
-fascinées		fasciner	51
-fascinent		fasciner	41
-fasciner	Action à distance qui passe par le regard pour nuire ou tuer, jeter le mauvais œil.
-fascinera		fasciner	21
-fascinerai		fasciner	16
-fascineraient		fasciner	28
-fascinerais		fasciner	18
-fascinerait		fasciner	49
-fascineras		fasciner	7
-fascinèrent		fasciner	48
-fascinerez		fasciner	5
-fascineriez		fasciner	4
-fascinerions		fasciner	11
-fascinerons		fasciner	10
-fascineront		fasciner	15
-fascines		fascine	0
-fascinez		fasciner	47
-fasciniez		fasciner	13
-fascinions		fasciner	19
-fascinons		fasciner	27
-fascisa		fasciser	33
-fascisai		fasciser	22
-fascisaient		fasciser	32
-fascisais		fasciser	29
-fascisait		fasciser	34
-fascisâmes		fasciser	3
-fascisant	Qui tend vers le fascisme.
-fascisante		fascisant	23
-fascisantes		fascisant	1
-fascisants		fascisant	9
-fascisas		fasciser	12
-fascisasse		fasciser	6
-fascisassent		fasciser	17
-fascisasses		fasciser	8
-fascisassiez		fasciser	14
-fascisassions		fasciser	25
-fascisât		fasciser	20
-fascisâtes		fasciser	2
-fascisation	Processus conduisant une personne ou une entité à un comportement et une idéologie fasciste.
-fascisations		fascisation	0
-fascisé		fasciser	46
-fascisée		fasciser	45
-fascisées		fasciser	36
-fascisent		fasciser	31
-fasciser	Introduire le fascisme, ou des méthodes, un régime inspirés du fascisme.
-fascisera		fasciser	21
-fasciserai		fasciser	16
-fasciseraient		fasciser	28
-fasciserais		fasciser	18
-fasciserait		fasciser	26
-fasciseras		fasciser	7
-fascisèrent		fasciser	24
-fasciserez		fasciser	5
-fasciseriez		fasciser	4
-fasciserions		fasciser	11
-fasciserons		fasciser	10
-fasciseront		fasciser	15
-fascisés		fasciser	38
-fascisez		fasciser	30
-fascisiez		fasciser	13
-fascisions		fasciser	19
-fascisme	Doctrine et système politique instauré par Mussolini en 1922 et jusqu’en 1943, caractérisé par une toute puissance de l’État, le corporatisme, l’exaltation du …
-fascismes		fascisme	0
-fascisons		fasciser	27
-fasciste	Qui est propre au fascisme.
-fascistes		fasciste	0
-faseilla		faseiller	33
-faseillai		faseiller	22
-faseillaient		faseiller	32
-faseillais		faseiller	29
-faseillait		faseiller	34
-faseillâmes		faseiller	3
-faseillant		faseiller	35
-faseillas		faseiller	12
-faseillasse		faseiller	6
-faseillassent		faseiller	17
-faseillasses		faseiller	8
-faseillassiez		faseiller	14
-faseillassions		faseiller	25
-faseillât		faseiller	20
-faseillâtes		faseiller	2
-faseillé		faseiller	46
-faseillent		faseiller	31
-faseiller	Variante orthographique de faséyer.
-faseillera		faseiller	21
-faseillerai		faseiller	16
-faseilleraient		faseiller	28
-faseillerais		faseiller	18
-faseillerait		faseiller	26
-faseilleras		faseiller	7
-faseillèrent		faseiller	24
-faseillerez		faseiller	5
-faseilleriez		faseiller	4
-faseillerions		faseiller	11
-faseillerons		faseiller	10
-faseilleront		faseiller	15
-faseilles		faseiller	66
-faseillez		faseiller	30
-faseilliez		faseiller	13
-faseillions		faseiller	19
-faseillons		faseiller	27
-faséole	Féverole.
-faséoles		faséole	0
-faseya		faseyer	33
-faseyai		faseyer	22
-faseyaient		faseyer	42
-faseyais		faseyer	29
-faseyait		faseyer	40
-faseyâmes		faseyer	3
-faseyant		faseyer	35
-faseyas		faseyer	12
-faseyasse		faseyer	6
-faseyassent		faseyer	17
-faseyasses		faseyer	8
-faseyassiez		faseyer	14
-faseyassions		faseyer	25
-faseyât		faseyer	20
-faseyâtes		faseyer	2
-faseyé		faseyer	46
-faseyent		faseyer	31
-faséyer	En parlant d’une voile, battre parce que le vent est trop faible ou mal orienté pour la faire enfler.
-faseyera		faseyer	21
-faseyerai		faseyer	16
-faseyeraient		faseyer	28
-faseyerais		faseyer	18
-faseyerait		faseyer	26
-faseyeras		faseyer	7
-faseyèrent		faseyer	24
-faseyerez		faseyer	5
-faseyeriez		faseyer	4
-faseyerions		faseyer	11
-faseyerons		faseyer	10
-faseyeront		faseyer	15
-faseyes		faseyer	66
-faseyez		faseyer	30
-faseyiez		faseyer	13
-faséyions		faséyer	19
-faseyons		faseyer	27
-fashion	La société élégante, le beau monde.
-fashionista	Fanatique de la mode.
-fashionistas		fashionista	0
-fasse		faire	85
-fassent		faire	137
-fasses		faire	98
-fassi	Qui est originaire, qui se rapporte à Fez.
-fassie		fassi	23
-fassies		fassi	1
-fassiez		faire	138
-fassions		faire	142
-fassis		fassi	9
-faste	Propice, favorable, heureux, où tout réussit.
-fastes	Tables ou livres du calendrier où étaient indiqués les jours de fêtes, d’assemblées publiques, de jeux.
-fastfood	Restauration rapide où le but est de faire gagner du temps au client.
-fastfoods		fastfood	0
-fastidieuse		fastidieux	23
-fastidieusement	D’une manière fastidieuse.
-fastidieuses		fastidieux	1
-fastidieux	Qui cause de l’ennui, qui est insipide.
-fastigié	Qui se dresse verticalement, en parlant de fleurs, de rameaux, du port d’un arbre, par exemple.
-fastigiée		fastigié	109
-fastigiées		fastigié	1
-fastigiés		fastigié	9
-fastoche	Facile.
-fastoches		fastoche	0
-fastueuse		fastueux	23
-fastueusement	D’une manière fastueuse.
-fastueuses		fastueux	1
-fastueux	Qui aime le faste.
-fat	Sot, niais.
-fatal	Qu’on ne peut éviter, qui doit arriver inévitablement, qui est fixé d’une manière irrévocable.
-fatale		fatal	23
-fatalement	Par une destinée inévitable.
-fatales		fatal	1
-fatalisme	Doctrine exposant que la situation et les événements (désagréables) sont à mettre au compte de la fatalité, ou de la volonté divine.
-fatalismes		fatalisme	0
-fataliste	Qui est un fataliste.
-fatalistes		fataliste	0
-fatalité	Destinée inévitable.
-fatalités		fatalité	0
-fatals		fatal	0
-fate	Celle qui est contente d’elle-même et qui le laisse voir.
-fates		fat	1
-fatidique	Qui révèle ce que les destins ont ordonné.
-fatidiquement	D’une manière fatidique.
-fatidiques		fatidique	0
-fatigabilité	Qualité de ce qui est fatigable.
-fatigabilités		fatigabilité	0
-fatigable	Qui peut être soumis à la fatigue.
-fatigables		fatigable	0
-fatigant	Qui cause de la fatigue.
-fatigante	Personne importune, ennuyeuse.
-fatigantes		fatigant	1
-fatigants		fatigant	9
-fatigua		fatiguer	39
-fatiguai		fatiguer	55
-fatiguaient		fatiguer	42
-fatiguais		fatiguer	52
-fatiguait		fatiguer	40
-fatiguâmes		fatiguer	3
-fatiguant	Qui fatigue. De nos jours on écrit fatigant.
-fatiguas		fatiguer	12
-fatiguasse		fatiguer	6
-fatiguassent		fatiguer	17
-fatiguasses		fatiguer	8
-fatiguassiez		fatiguer	14
-fatiguassions		fatiguer	25
-fatiguât		fatiguer	62
-fatiguâtes		fatiguer	2
-fatigue	Sensation de faiblesse physique.
-fatiguée		fatigué	23
-fatiguées		fatigué	1
-fatiguent		fatiguer	41
-fatiguer	Affaiblir par une trop grande dépense de force.
-fatiguera		fatiguer	44
-fatiguerai		fatiguer	50
-fatigueraient		fatiguer	63
-fatiguerais		fatiguer	60
-fatiguerait		fatiguer	49
-fatigueras		fatiguer	57
-fatiguèrent		fatiguer	48
-fatiguerez		fatiguer	5
-fatigueriez		fatiguer	4
-fatiguerions		fatiguer	11
-fatiguerons		fatiguer	10
-fatigueront		fatiguer	15
-fatigués		fatigué	9
-fatiguez		fatiguer	47
-fatiguiez		fatiguer	13
-fatiguions		fatiguer	19
-fatiguons		fatiguer	59
-Fatiha	Sourate d’ouverture du Coran.
-fatimide	Relatif à la dynastie égyptienne des Fatimides qui a régné en Afrique du Nord (909-1048) et en Égypte (969-1171).
-fatimides		fatimide	0
-fatma	Femme.
-fatmas		fatma	0
-fatras	Amas confus de plusieurs choses.
-fatrasie	Pièce de vers amphigourique.
-fatrasies		fatrasie	0
-fats		fat	9
-fatuité	Manière de parler et d’agir de celui qui est fat.
-fatuités		fatuité	0
-fatum	Destin ; fatalité.
-fatums		fatum	0
-fatwa	Consultation, décret ou décision rendue par un mufti sur un point de la loi musulmane.
-fatwas		fatwa	0
-fauber	Variante de faubert.
-faubers		fauber	0
-faubert	Balai fait de vieux cordages.
-fauberts		faubert	0
-faubourg	Partie d’une ville qui est au-delà de ses portes et de son enceinte.
-faubourgs		faubourg	0
-faubourien	Relatif aux faubourgs, ou à la population ouvrière des quartiers excentriques d’une grande ville.
-faubourienne	Habitante des faubourgs, membre de la population ouvrière des quartiers excentriques de Paris.
-faubouriennes		faubourien	1
-faubouriens		faubourien	9
-faucard	Faux à long manche, manœuvrée à la main ou adaptée à un bateau muni d’un moteur, et qui sert à faucher les herbes des rivières et des marais.
-faucarda		faucarder	33
-faucardage	Action de faucarder pour assurer le bon écoulement de l'eau et éviter « l'étouffement » des rivières ou fossés par les proliférations végétales (problèmes d'ox…
-faucardages		faucardage	0
-faucardai		faucarder	22
-faucardaient		faucarder	32
-faucardais		faucarder	29
-faucardait		faucarder	34
-faucardâmes		faucarder	3
-faucardant		faucarder	35
-faucardas		faucarder	12
-faucardasse		faucarder	6
-faucardassent		faucarder	17
-faucardasses		faucarder	8
-faucardassiez		faucarder	14
-faucardassions		faucarder	25
-faucardât		faucarder	20
-faucardâtes		faucarder	2
-faucardé		faucarder	56
-faucardée		faucarder	45
-faucardées		faucarder	51
-faucardement	Action de faucarder
-faucardements		faucardement	0
-faucardent		faucarder	31
-faucarder	Faucher à l’aide du faucard ou de la faucardeuse.
-faucardera		faucarder	21
-faucarderai		faucarder	16
-faucarderaient		faucarder	28
-faucarderais		faucarder	18
-faucarderait		faucarder	26
-faucarderas		faucarder	7
-faucardèrent		faucarder	24
-faucarderez		faucarder	5
-faucarderiez		faucarder	4
-faucarderions		faucarder	11
-faucarderons		faucarder	10
-faucarderont		faucarder	15
-faucardés		faucarder	53
-faucardeur	Qui est muni d’un faucard.
-faucardeurs		faucardeur	0
-faucardeuse	Embarcation ou machine destinée à faucher les algues, notamment dans les ports, où ces plantes constituent un problème pour les hélices de bateaux.
-faucardeuses		faucardeuse	0
-faucardez		faucarder	30
-faucardiez		faucarder	13
-faucardions		faucarder	19
-faucardons		faucarder	27
-faucards		faucard	0
-faucha		faucher	33
-fauchage	Action de faucher.
-fauchages		fauchage	0
-fauchai		faucher	22
-fauchaient		faucher	128
-fauchailles	Temps de la fauchaison.
-fauchais		faucher	139
-fauchaison	Temps où l’on fauche.
-fauchaisons		fauchaison	0
-fauchait		faucher	127
-fauchâmes		faucher	3
-fauchant		faucher	35
-fauchard	Arme d’hast au tranchant convexe dérivée de la faux de guerre, utilisée essentiellement au Moyen Âge.
-fauchards		fauchard	0
-fauchas		faucher	12
-fauchasse		faucher	6
-fauchassent		faucher	17
-fauchasses		faucher	8
-fauchassiez		faucher	14
-fauchassions		faucher	25
-fauchât		faucher	20
-fauchâtes		faucher	2
-fauche	Action de faucher.
-fauchée	Action de faucher.
-fauchées		fauché	1
-fauchent		faucher	31
-faucher	Couper à la faux ou à la machine.
-fauchera		faucher	44
-faucherai		faucher	16
-faucheraient		faucher	28
-faucherais		faucher	18
-faucherait		faucher	49
-faucheras		faucher	57
-fauchèrent		faucher	24
-faucherez		faucher	5
-faucheriez		faucher	4
-faucherions		faucher	11
-faucherons		faucher	10
-faucheront		faucher	54
-fauches		fauche	0
-fauchet	Sorte de serpe en forme de croissant.
-fauchets		fauchet	0
-fauchette	Instrument dont on se sert pour mettre à l’alignement les branches des arbustes qui bordent les plates-bandes.
-fauchettes		fauchette	0
-faucheur	Ouvrier qui fauche.
-faucheurs		faucheur	0
-faucheuse	Celle qui fauche (souvent dans un sens figuré).
-faucheuses		faucheuse	0
-faucheux	Ordre d’arachnides également nommés opilions et possédant quatre paires de pattes grêles.
-fauchez		faucher	30
-fauchiez		faucher	13
-fauchions		faucher	19
-fauchon	Sabre de taille moyenne, dont la poignée est protégée par une garde.
-fauchons		fauchon	0
-faucille	Outil qui consiste en une lame d’acier courbée en demi-cercle, dentelée et fixée à une poignée de bois et qui sert à couper l'herbe, les céréales.
-faucilles		faucille	0
-faucillon	Instrument fait en forme de faucille, pour couper du menu bois, des broussailles et aussi de l’herbe.
-faucillons		faucillon	0
-faucon	Rapace diurne falconiformes du genre Falco au sein de la famille des falconidés (les autres espèces du genre étant appelées crécerelles), caractérisées par leu…
-fauconneau	Petit faucon.
-fauconneaux		fauconneau	0
-fauconnerie	Art de dresser et de gouverner les faucons et toutes sortes d’oiseaux de proie.
-fauconneries		fauconnerie	0
-fauconnier	Celui qui dresse et gouverne les oiseaux de proie et qui les fait voler.
-fauconnière	Celle qui dresse et gouverne les oiseaux de proie et qui les fait voler.
-fauconnières		fauconnier	1
-fauconniers		fauconnier	0
-faucons		faucon	0
-faucre	Pièce de fer ou d’osier, qu’on plaçait sur le côté droit des cuirasses, au Moyen Âge, pour tenir la lance en arrêt.
-faucres		faucre	0
-faudra		falloir	44
-faudrait		falloir	92
-faufil	Fil pour faufiler.
-faufila		faufiler	39
-faufilage	Action de faufiler, coudre à longs points en attendant lʼassemblage définitif.
-faufilages		faufilage	0
-faufilai		faufiler	55
-faufilaient		faufiler	42
-faufilais		faufiler	52
-faufilait		faufiler	40
-faufilâmes		faufiler	68
-faufilant		faufiler	43
-faufilas		faufiler	83
-faufilasse		faufiler	6
-faufilassent		faufiler	17
-faufilasses		faufiler	8
-faufilassiez		faufiler	14
-faufilassions		faufiler	25
-faufilât		faufiler	62
-faufilâtes		faufiler	2
-faufile		faufiler	64
-faufilée		faufiler	45
-faufilées		faufiler	51
-faufilent		faufiler	41
-faufiler	Introduire, glisser subrepticement.
-faufilera		faufiler	44
-faufilerai		faufiler	50
-faufileraient		faufiler	28
-faufilerais		faufiler	18
-faufilerait		faufiler	49
-faufileras		faufiler	57
-faufilèrent		faufiler	48
-faufilerez		faufiler	5
-faufileriez		faufiler	4
-faufilerions		faufiler	11
-faufilerons		faufiler	61
-faufileront		faufiler	54
-faufilés		faufiler	53
-faufilez		faufiler	47
-faufiliez		faufiler	13
-faufilions		faufiler	19
-faufilons		faufiler	59
-faufils		faufil	0
-faufilure	Couture faite en faufilant.
-faufilures		faufilure	0
-faugères	Vin d’appellation d’origine contrôlée produit sur la commune précédente et quelques communes voisines : Autignac, Cabrerolles, Caussiniojouls, Fos, Laurens et …
-faulknérien	Propre ou relatif à William Faulkner et son œuvre.
-faulknérienne		faulknérien	23
-faulknériennes		faulknérien	1
-faulknériens		faulknérien	9
-faune	Divinité champêtre mi-homme, mi-bouc, chez les Romains.
-faunes		faune	0
-faunesque	Qui a les traits caractéristiques du faune.
-faunesques		faunesque	118
-faunesse	Sorte de nymphe lascive dont l’aspect rappelle celui du faune.
-faunesses		faunesse	0
-faunique	Relatif à la faune.
-fauniques		faunique	0
-faunistique	Relatif à la faune.
-faunistiques		faunistique	0
-faunule	Faune des très petits animaux.
-faunules		faunule	0
-faussa		fausser	39
-faussai		fausser	22
-faussaient		fausser	42
-faussaire	Celui, celle qui fait un faux acte, une fausse signature, un objet faux, une œuvre d’art fausse, un faux-billet.
-faussaires		faussaire	0
-faussais		fausser	29
-faussait		fausser	40
-faussâmes		fausser	3
-faussant	Qui se fausse facilement.
-faussas		fausser	12
-faussasse		fausser	6
-faussassent		fausser	17
-faussasses		fausser	8
-faussassiez		fausser	14
-faussassions		fausser	25
-faussât		fausser	62
-faussâtes		fausser	2
-fausse		faux	23
-faussée		fausser	37
-faussées		fausser	36
-faussement	Contre la vérité.
-faussent		fausser	41
-fausser	Rendre faux, déformer la réalité, la vérité ou l'exactitude de quelque chose.
-faussera		fausser	21
-fausserai		fausser	16
-fausseraient		fausser	28
-fausserais		fausser	18
-fausserait		fausser	26
-fausseras		fausser	7
-faussèrent		fausser	24
-fausserez		fausser	5
-fausseriez		fausser	4
-fausserions		fausser	11
-fausserons		fausser	10
-fausseront		fausser	54
-faussés		fausser	36
-fausset	Petite cheville de bois servant à boucher le trou que l’on fait à un tonneau pour en goûter le contenu.
-fausseté	Qualité d’une chose fausse, ce qui rend une chose fausse.
-faussetés		fausseté	0
-faussets		fausset	0
-faussez		fausser	47
-faussiez		fausser	13
-faussions		fausser	65
-faussons		fausser	27
-faustien	Relatif à Faust, au mythe de Faust, dont le personnage signe un pacte avec le Diable.
-faustienne	Féminin singulier de faustien.
-faustiennes		faustien	1
-faustiens		faustien	9
-faut		falloir	80
-fauta		fauter	39
-fautai		fauter	22
-fautaient		fauter	32
-fautais	Relatif à La Faute-sur-Mer, commune française située dans le département de la Vendée.
-fautait		fauter	34
-fautâmes		fauter	3
-fautant		fauter	35
-fautas		fauter	83
-fautasse		fauter	6
-fautassent		fauter	17
-fautasses		fauter	8
-fautassiez		fauter	14
-fautassions		fauter	25
-fautât		fauter	62
-fautâtes		fauter	2
-faute	Manquement plus ou moins grave à un devoir, à une loi, à une règle, à un usage, à une convenance.
-fautent		fauter	31
-fauter	Commettre une faute, se tromper.
-fautera		fauter	21
-fauterai		fauter	16
-fauteraient		fauter	28
-fauterais		fauter	18
-fauterait		fauter	26
-fauteras		fauter	7
-fautèrent		fauter	24
-fauterez		fauter	5
-fauteriez		fauter	4
-fauterions		fauter	11
-fauterons		fauter	10
-fauteront		fauter	15
-fautes		faute	0
-fauteuil	Siège comportant des accotoirs, et un dossier.
-fauteuils		fauteuil	0
-fauteur	Celui qui favorise, protège, une personne ou une chose.
-fauteurs		fauteur	0
-fautez		fauter	30
-fautiez		fauter	13
-fautif	Qui est sujet à faillir, à faire défaut, à faire erreur.
-fautifs		fautif	9
-fautions		fauter	19
-fautive		fautif	23
-fautivement	D’une manière fautive.
-fautives		fautif	1
-fautons		fauter	27
-fautrice	Celle qui favorise, protège, une personne ou une chose.
-fautrices		fautrice	0
-fauve	De la couleur ocre orangé à roux.
-fauverie	Caractère de ce qui a la couleur fauve.
-fauveries		fauverie	0
-fauves		fauve	0
-fauvette	Petit oiseau passereau insectivore et chanteur à bec court, tête souvent bombée et queue étroite, parfois redressée.
-fauvettes		fauvette	0
-fauvisme	Mouvement pictural du début du XXᵉ siècle d’une jeune école française caractérisé par l’audace et la nouveauté de ses recherches chromatiques en de larges apla…
-fauvismes		fauvisme	0
-fauviste	Relatif au fauvisme.
-fauvistes		fauviste	0
-faux	Qui n’est pas conforme, ou qui ne se conforme pas à la réalité.
-favela	Bidonville brésilien.
-favelas		favela	0
-faverole	Variante de féverole.
-faveroles		faverole	0
-faveur	Marque d’une bienveillante attention ou d’une préférence particulière.
-faveurs		faveur	0
-favique	Qui concerne le favus.
-faviques		favique	0
-favisme	Intoxication par l'ingestion de fève, de féverole ou de pois avec déficit en glucose-6-phosphate déshydrogénase.
-favismes		favisme	0
-favorable	Qui marque une bienveillante attention ou une préférence marquée pour quelqu’un.
-favorablement	D’une manière favorable.
-favorables		favorable	0
-favori	Qui est l’objet de faveur, d’une préférence marquée.
-favoris	Touffes de barbe que certains laissent croître de chaque côté du visage entre l’oreille et le menton.
-favorisa		favoriser	39
-favorisai		favoriser	22
-favorisaient		favoriser	42
-favorisais		favoriser	29
-favorisait		favoriser	40
-favorisâmes		favoriser	3
-favorisant	Qui favorise.
-favorisante		favorisant	23
-favorisantes		favorisant	1
-favorisants		favorisant	9
-favorisas		favoriser	12
-favorisasse		favoriser	6
-favorisassent		favoriser	17
-favorisasses		favoriser	8
-favorisassiez		favoriser	14
-favorisassions		favoriser	25
-favorisât		favoriser	62
-favorisâtes		favoriser	2
-favorisé	Celui qui est favorisé par le sort ou par son état.
-favorisée	Celle qui est favorisée par le sort ou par son état.
-favorisées		favorisée	0
-favorisent		favoriser	41
-favoriser	Traiter avec les signes d’une préférence ou d'une bienveillance marquée.
-favorisera		favoriser	44
-favoriserai		favoriser	50
-favoriseraient		favoriser	63
-favoriserais		favoriser	18
-favoriserait		favoriser	49
-favoriseras		favoriser	7
-favorisèrent		favoriser	48
-favoriserez		favoriser	5
-favoriseriez		favoriser	4
-favoriserions		favoriser	11
-favoriserons		favoriser	10
-favoriseront		favoriser	15
-favorisés		favorisé	0
-favorisez		favoriser	47
-favorisiez		favoriser	13
-favorisions		favoriser	19
-favorisons		favoriser	27
-favorite	Celle qui est l’objet d’une préférence marquée.
-favorites		favorite	0
-favoritisme	Tendance habituelle d’un supérieur ou d’un gouvernement à accorder des faveurs injustes ou illégales.
-favoritismes		favoritisme	0
-favouille	Carcinus maenas ou crabe vert.
-favouilles		favouille	0
-favus	Dermatose d'origine fongique, très contagieuse intéressant généralement le cuir chevelu.
-fax	Document numérisé, transmis par liaison téléphonique, puis imprimé par le matériel de réception.
-faxa		faxer	33
-faxai		faxer	22
-faxaient		faxer	32
-faxais		faxer	29
-faxait		faxer	34
-faxâmes		faxer	3
-faxant		faxer	35
-faxas		faxer	12
-faxasse		faxer	6
-faxassent		faxer	17
-faxasses		faxer	8
-faxassiez		faxer	14
-faxassions		faxer	25
-faxât		faxer	20
-faxâtes		faxer	2
-faxe		faxer	64
-faxée		faxer	37
-faxées		faxer	36
-faxent		faxer	31
-faxer	Transmettre (un document) par télécopie.
-faxera		faxer	44
-faxerai		faxer	50
-faxeraient		faxer	28
-faxerais		faxer	18
-faxerait		faxer	26
-faxeras		faxer	7
-faxèrent		faxer	24
-faxerez		faxer	5
-faxeriez		faxer	4
-faxerions		faxer	11
-faxerons		faxer	10
-faxeront		faxer	15
-faxes		faxer	77
-faxez		faxer	47
-faxiez		faxer	13
-faxions		faxer	19
-faxons		faxer	59
-fayard	Hêtre.
-fayards		fayard	0
-fayot	Haricot sec.
-fayota		fayoter	33
-fayotage	Action de fayoter.
-fayotages		fayotage	0
-fayotai		fayoter	22
-fayotaient		fayoter	42
-fayotais		fayoter	52
-fayotait		fayoter	40
-fayotâmes		fayoter	3
-fayotant		fayoter	35
-fayotas		fayoter	12
-fayotasse		fayoter	6
-fayotassent		fayoter	17
-fayotasses		fayoter	8
-fayotassiez		fayoter	14
-fayotassions		fayoter	25
-fayotât		fayoter	20
-fayotâtes		fayoter	2
-fayote		fayoter	64
-fayotée		fayoter	45
-fayotent		fayoter	31
-fayoter	Faire tout pour se faire bien considérer (par un enseignant, par ses supérieurs…).
-fayotera		fayoter	21
-fayoterai		fayoter	16
-fayoteraient		fayoter	28
-fayoterais		fayoter	18
-fayoterait		fayoter	26
-fayoteras		fayoter	7
-fayotèrent		fayoter	24
-fayoterez		fayoter	5
-fayoteriez		fayoter	4
-fayoterions		fayoter	11
-fayoterons		fayoter	10
-fayoteront		fayoter	15
-fayotes		fayoter	66
-fayotez		fayoter	30
-fayotiez		fayoter	13
-fayotions		fayoter	19
-fayotons		fayoter	27
-fayots		fayot	9
-fayotte	Celle qui cherche à se faire bien voir de ses supérieurs.
-fayotter	Faire tout pour se faire bien considérer (par un enseignant, par ses supérieurs…).
-fayottes		fayotter	66
-fazenda	Grande ferme au Brésil.
-fazendas		fazenda	0
+0fa	La quatrième note de la gamme en musique occidentale.
+2bacée	Toute plante dicotylédone de la famille des fabacées, à laquelle appartiennent entre autres l’acacia, le mimosa, la dalbergie, le haricot ou la lentille.
+7s		7	0
+3lab	Lieu ouvert au public où il est mis à sa disposition toutes sortes d’outils pour la conception et la réalisation d’objets.
+6s		6	0
+4e	Ce que l’on dit, ce que l’on raconte.
+5s		5	0
+4iau	Genre de conte en vers, plaisant et satirique, usité dans la littérature du moyen-âge.
+7x		7	0
+5er	Faiseur, faiseuse de fables.
+7s		7	0
+3ophile	Collectionneur de fèves des galettes des rois.
+9s		9	0
+3ricable	Qui peut être fabriqué.
+as		a	0
+7nt	Industriel ou artisan qui fabrique ou qui fait fabriquer.
+9e	Industrielle ou artisane qui fabrique ou qui fait fabriquer.
+as		a	0
+9s		9	0
+7teur	Celui qui confectionne quelque chose.
+bs		b	0
+8ion	Action de fabriquer ou résultat de cette action.
+bs		b	0
+8rice	Celle qui confectionne quelque chose.
+cs		c	0
+6ien	Membre de la fabrique d’une église, marguillier.
+9ne		9	n
+bs		9	1
+9s		9	0
+5qua		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Bâtiment où l’on fabrique des objets destinés aux différents usages de la vie.
+7ée		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Exécuter ou faire exécuter certains ouvrages suivant les procédés d’un art mécanique, en atelier ou en usine.
+9a		9	18
+ai		9	1e
+bent		9	s
+bs		9	1o
+bt		9	1d
+as		9	7
+7èrent		7er	1c
+7erez		9	1m
+9iez		9	4
+aons		9	b
+9ons		9	1p
+bt		9	1i
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	1v
+8ons		7er	1t
+7ons		7er	1n
+3ula		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ateur	Qui fabule.
+as		a	9
+7ion	Récit inventé et présenté comme véridique.
+as		a	0
+7rice	Celle qui fabule.
+bs		7eur	1
+5e		6r	1s
+5ée		5er	19
+7s		5er	1f
+5ent		6r	v
+6r	Raconter des choses inventées, des fabulations.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6use		7x	n
+9ment	D’une manière fabuleuse.
+9s		7x	1
+7x	Relatif à la fable.
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+6ste	Qui relève de la fable.
+9s		9	0
+5ons		5er	r
+2c	Faculté ; université.
+2çade	Un des côtés d’un bâtiment, d’un édifice, lorsqu’il se présente au spectateur.
+6s		6	0
+5ier	Ouvrier responsable des façades.
+6ère	Ouvrière responsable des façades.
+9s		9	0
+6ers		8	0
+6sme	Pratique qui consiste à conserver uniquement la façade d’un bâtiment et à reconstruire tout le reste.
+9s		9	0
+2cancier	Travailleur émigré en France retournant au Maroc pour les vacances.
+7ère	Travailleuse émigrée en France retournant au Maroc pour les vacances.
+as		a	0
+7ers		9	0
+3e	Visage.
+4s		4	0
+3étie	Plaisanterie plus ou moins subtile que l’on dit ou fait pour divertir, pour faire rire.
+7s		7	0
+7use		8x	n
+ament	D’une manière facétieuse.
+as		8x	1
+8x	Qui tient de la facétie, de la plaisanterie.
+3etta		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Petite face, une des petites faces d’un corps qui en a plusieurs.
+6ée		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Tailler à facettes.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+1âcha		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Pièce de tissu rectangulaire, typique de Catalogne et d'Occitanie.
+4ée		5	n
+6s		5	1
+4ent		5r	15
+5r	Mettre en colère, irriter.
+6a		6	18
+7i		6	1e
+8ent		6	s
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	5
+6ie	État de celui qui est fâché plus ou moins fortement contre quelqu’un.
+8s		8	0
+8z		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5r	25
+5use	Femme importune ou déplaisante.
+8ment	D’une manière fâcheuse.
+8s		6x	1
+6x	Qui donne du déplaisir ou de la peine.
+5z		5r	1b
+4iez		4er	1v
+5ons		4er	1t
+1acho	Sympathisant de doctrines fascistes ou assimilées au fascisme par ceux qui emploient le mot.
+1âchons		4er	1n
+1achos		5	0
+6phère	Ensemble des partis et mouvances fascistes et, plus généralement, de tout ce qui est assimilé au fascisme.
+bs		b	0
+3ial	Relatif à la face.
+6e	Éjaculation sur le visage du ou de la partenaire.
+7s		7	0
+5ux		5l	9
+4es	Variante orthographique de faciès.
+4le	Qui se fait sans peine.
+6ment	Avec facilité ; sans peine.
+6s		6	0
+5ita		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui facilite, qui rend les choses plus faciles.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ateur	Qui facilite, rend aisée, une action.
+cs		c	0
+9ion	Action de faciliter ou résultat de cette action.
+cs		c	0
+9rice	Celle qui est chargée de faire en sorte que les choses se passent mieux.
+ds		d	0
+7é	Qualité de ce qui est fait ou employé sans peine.
+8e		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Rendre facile.
+9a		9	18
+ai		9	1e
+bent		9	1r
+bs		9	1o
+bt		9	1d
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	1i
+7és		8	0
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	1n
+2çon	Action de faire.
+2conde	Élégance de bien parler.
+7s		7	0
+2çonna		6er	13
+7ble	Que l’on peut façonner.
+as		a	0
+7ge	Ensemble des opérations fait pour donner une forme à une matière quelconque.
+9s		9	0
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant		6er	17
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é	Qui est fait de la main de l’homme, qui n’est pas naturel.
+7e		7	n
+8s		7	1
+6ement	Action de façonner, de donner la façon.
+bs		b	0
+7nt		7r	15
+7r	Travailler une chose en vue de lui donner une certaine façon.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	1o
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	1i
+6és		7	9
+6ez		7r	u
+6ier	Qui fait trop de façons, trop de cérémonies.
+7ère	Celle qui travaille à façon.
+as		7er	1
+7ers		9	9
+8z		6er	d
+7ons		6er	j
+6ons		6er	r
+5s		5	0
+2cs		3	0
+4imilé	Reproduction exacte, ou prétendument telle, imprimée, gravée, ou photographiée, d’une peinture, d’une signature, d’un dessin, d’un ouvrage unique, rare, ou épu…
+8er	Reproduire à l'identique.
+8és		8er	12
+3tage	Action de transporter des marchandises ou du courrier à domicile, ou au dépôt de consignation.
+7s		7	0
+4eur	Nombre ou variable constitutive d’un produit.
+7s		7	0
+4ice	Qui est fait artificiellement ou imité de la nature.
+7ment	De manière factice.
+7s		7	0
+6ité	Caractère de ce qui est factice, qui est ou semble faux, artificiel.
+9s		9	0
+5euse	Personne factieuse.
+9s		7x	1
+7x	Qui cherche à provoquer des troubles politiques ou civils.
+5on	Action ou tâche quelconque qu'un soldat est en charge de faire.
+7naire	Soldat qui est en faction.
+cs		c	0
+7s		7	0
+5tif	Se dit d’un verbe où le sujet fait faire l’action.
+8s		8	0
+7ve		7f	n
+9s		7f	1
+4orage	Droit conventionnel que reçoit le facteur sur la valeur des marchandises dont il procure la vente.
+9s		9	0
+6erie	Le lieu, le bureau où les facteurs ou agents font les affaires d’une compagnie de commerce en pays étranger, surtout aux colonies.
+as		a	0
+6iel	Relatif à un facteur.
+9le	Résultat de la multiplication d’un nombre entier par tous les nombres entiers supérieurs à 0 inférieurs à celui-ci.
+bs		b	0
+9s		9	9
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de factoriser ou résultat de cette action.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Écrire une expression sous la forme d’un produit de facteurs.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5tum	Personne qui s’occupe de tout dans une maison où elle est employée.
+8s		8	0
+4rice	Celle qui fait, qui concourt à un résultat.
+8s		8	0
+4uel	Relatif aux faits ou à ce qui est réel.
+7le	Féminin singulier de factuel.
+9ment	De façon factuelle.
+9s		7	1
+7s		7	9
+5m	Exposé écrit des faits et du raisonnement juridique présenté devant un tribunal.
+6s		6	0
+5ra		6er	13
+7ble	Que l'on peut ou que l'on doit facturer.
+as		a	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Action de facturer, de marquer sur une facture la marchandise livrée et son prix.
+bs		b	0
+6e	Manière dont est composée une œuvre d’art.
+6ée		7	n
+8s		6er	1f
+6ent		7r	15
+7r	Indiquer, marquer sur une facture la marchandise livrée et son prix.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ette	Ticket de caisse plus détaillé.
+as		a	0
+7z		7r	1b
+6ier	Document contenant des factures.
+7ère	Employée de bureau chargée de rédiger les factures.
+as		a	0
+7ers		9	0
+8z		6er	d
+7ons		6er	j
+6ons		6er	1n
+3ulaire	Relatif à une facule.
+9s		9	0
+5e	Région brillante apparaissant durant quelques jours sur la photosphère du Soleil et précédant souvent l’apparition d’une tache.
+6s		6	0
+5taire	Relatif à la faculté d'une université.
+as		a	0
+7tif	Qui laisse la faculté de faire ou de ne pas faire une chose.
+as		a	9
+9ve		9f	n
+bment	D’une manière facultative.
+bs		9f	1
+6é	Puissance physique ou morale qui rend un être capable d’agir d’une certaine manière, de produire certains effets.
+7s		7	0
+2da	Simple d’esprit.
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+6e	Propos qui n’a aucun intérêt, aucune saveur.
+7s		7	0
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se	Qui donne une certaine impression de fadeur.
+7nt		3er	h
+7rie	Synonyme de fadaise.
+as		a	0
+7s		7	0
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e	Qui est sans saveur ou de peu de goût.
+3ée	Féminin singulier de fadé.
+5s		3er	10
+3ement	D’une manière fade.
+4nt		4r	15
+4r	Partager le butin → voir fade.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	1l
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+3és		3er	1h
+3et	Petite créature légendaire folklorique, souvent espiègle.
+5s		5	0
+5te	Petite fée.
+7s		7	0
+4ur	Propriété de ce qui est fade.
+6s		6	0
+4z		4r	u
+3iez		3er	d
+4ng	Évanouissement des signaux sonores.
+6s		6	0
+4ons		3er	j
+4ste	Personne qui joue du fado.
+7s		7	0
+3o	Genre musical portugais caractérisé par des chants avec des thèmes mélancoliques accompagné par des instruments à cordes pincées.
+4ns		3er	r
+4s		4	0
+2ena	Troisième acte (tercio) d'une corrida, série de passe avec la cape (ou muleta) avant la mise à mort (ou estocade) du taureau.
+5s		5	0
+2f	Militant d’extrême droite française.
+3iot	Billet de banque.
+6s		6	0
+3s	Papiers d'identité.
+2gacée	Arbre ou arbuste de la famille des Fagacées.
+7s		7	0
+4le	Arbre de la famille des Fagales, de type hêtre, bouleaux, aulnes, noisetiers…
+6s		6	0
+3nard	Celui qui aime, qui apprécie la fagne (marais tourbeux des plateaux ardennais).
+7e	Celle qui aime, qui apprécie la fagne (marais tourbeux des plateaux ardennais).
+8s		7	1
+7s		7	9
+4e	Marais dans une petite cavité au sommet d’une montagne.
+5s		5	0
+3ot	Faisceau de menu bois, de branchages.
+5a		5er	x
+6ge	Action de fagoter, mettre en fagots.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Rangé, emballé en fagots.
+6e		6	n
+7s		6	1
+5ent		6r	v
+6r	Mettre en fagots.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5eur	Celui qui confectionne des fagots.
+8s		8	0
+7se	Celle qui confectionne des fagots.
+9s		9	0
+6z		6r	u
+5ier	Personne qui confectionne des fagots.
+6ère	Femme qui confectionne des fagots.
+9s		9	0
+6ers		8	0
+7z		5er	d
+6n	Petit fagot de bois sec très menu, utilisé pour allumer du feu.
+7s		7	0
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+4ue	Pancréas chez le bétail, bœuf, porc…
+6s		6	0
+2iblard	Qui est très faible.
+8e	Femme qui est très faible.
+9s		8	1
+8s		8	9
+5e	Qui est débile, qui manque de force, de vigueur.
+6ment	D’une manière faible.
+6s		6	0
+7se	État de ce qui est faible.
+9s		9	0
+5i		6r	1a
+5îmes		5ir	3
+5ir	Devenir faible.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+7ent		7	1c
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	20
+7saient		6r	23
+as		6r	2e
+at		6r	1z
+9nt	Qui faiblit.
+be		b	n
+cs		b	1
+bs		b	9
+8e		6r	2d
+9nt		6r	1x
+9s		6r	24
+9z		6r	1y
+8iez		6r	d
+9ons		6r	2m
+8ons		6r	21
+6t		6r	28
+5îtes		5ir	2
+2ïençage	Phénomène de fissuration plus ou moins superficielle de corps rigides.
+9s		9	0
+5ce	Poterie de terre ordinairement vernissée ou émaillée de bleu sur fond blanc.
+6ée		6er	11
+8s		6er	10
+6er	Couvrir de carreaux de faïence.
+8ie	Lieu où l’on fabrique de la faïence.
+as		a	0
+7s		7	0
+6ier	Celui qui fabrique ou qui vend de la faïence.
+7ère	Celle qui fabrique ou qui vend de la faïence.
+as		7er	1
+7ers		9	9
+2ignant	Variante orthographique de feignant.
+8e	Variante orthographique de feignante.
+9s	Fémoinin pluriel de faignant.	8
+8s		8	9
+3lla		5er	13
+6i		5er	m
+7ent		5ir	38
+7s		5ir	36
+7t		5ir	3b
+5âmes		5er	3
+5ant		5ir	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Fracture, fissure avec rejet des deux blocs situés de part et d’autre de la cassure.
+5ée		5er	11
+7s		5er	10
+5ent		5ir	v
+6r	Se déplacer en provoquant des failles.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6z		5ir	u
+5i	Se dit d'un chevron, d'une bande, d'une fasce, d'un pal, d'un meuble quelconque, dont la longueur ou la largeur se trouve interrompue par un vide parfaitement …
+6bilité	Possibilité de faillir, de se tromper.
+cs		c	0
+7le	Qui est sujet à faillir, à se tromper ou à commettre une faute.
+9s		9	0
+6e	Femme qui a fait faillite.
+7s		7	0
+7z		6r	32
+5îmes		5ir	1w
+5ions		6r	33
+6r	Ne pas tenir le coup.
+7a		7	l
+8i		7	1e
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+7ent		7	1c
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+7saient		6r	w
+as		6r	t
+at		6r	y
+9nt		6r	z
+8e		6r	2d
+9nt		6r	v
+9s		6r	24
+9z		6r	u
+8iez		6r	d
+9ons		6r	j
+8ons		6r	r
+6t		6r	28
+7e	Banqueroute forcée d’un négociant, obligation pour lui de suspendre ses paiements.
+8s		8	0
+5ons		5ir	r
+3m	Sensation qui révèle l’envie ou le besoin de manger.
+4s		4	0
+3ne	Fruit du hêtre.
+4éant	Qui évite l’effort ou le travail, par paresse.
+8a		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	1g
+at		8er	y
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Celle qui ne veut rien faire.
+9nt		9r	v
+9r	Ne rien faire ; ne vouloir rien faire.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		8	1
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+9se	Action de fainéanter.
+bs		b	0
+8ons		8er	r
+8s		8	9
+2înée	Récolte des faînes.
+6s		6	0
+4es		5	0
+2ire	Créer, produire, fabriquer, en parlant de toute œuvre matérielle.
+5part	Variante orthographique de faire-part.
+9s		9	0
+4play	Conduite honnête dans un sport ou dans toute autre circonstance et honorable dans la défaite.
+8s		8	0
+4way	Zone d’un parcours de golf, l’allée, où l’on est censé se placer entre le point de départ (tee) et le trou (sur le green).
+7s		7	0
+3s		3re	20
+4abilité	Possibilité de faire quelque chose en particulier de réaliser un projet technique.
+bs		b	0
+6le	Qui peut se faire.
+8s		8	0
+5ient		3re	16
+6s		3re	1g
+6t		3re	14
+5n	Nom donné à cinq genres de gallinacés de la famille des phasianidés, englobant une vintaine d'espèces qui fréquentent différents habitats forestiers dans les v…
+6da		7er	x
+8ge	Action de faisander, résultat de cette action.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Se dit de certaines préparations culinaires, dont la maturation accroît le goût.
+7eau	Jeune faisan.
+ax		a	0
+7ée		8	n
+9s		8	1
+7ent		8r	v
+8r	Acquérir du fumet en se mortifiant comme la chair du faisan, en parlant d’une pièce de gibier.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9ie	Lieu où l’on élève des faisans.
+bs		b	0
+bz		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7ier	Personne qui élève des faisans.
+8ère	Femme qui élève des faisans.
+bs		b	0
+8ers		a	0
+9z		7er	d
+8ons		7er	j
+7ons		7er	r
+6e	Faisan femelle.
+7s		7	0
+6s		6	0
+6t		3re	z
+4ceau	Assemblage de certaines choses de même nature et de forme allongée liées ensemble.
+8x		8	0
+4eur	Celui qui fait certains ouvrages, qui fabrique certains objets, en parlant des choses de mode.
+7s		7	0
+6se	Celle qui fait certains ouvrages, qui fabrique certains objets, en parlant des choses de mode.
+8s		8	0
+4iez		3re	1v
+5ons		3re	1t
+4ons		3re	1n
+4selle	Récipient à parois percées de trous dans lequel on fait égoutter le fromage.
+9s		9	0
+3t	Réalisé ; construit.
+2îtage	Ouvrage qui permet de joindre les deux versants d'une toiture.
+7s		7	0
+4e	Comble, partie la plus élevée d’un bâtiment, d’un édifice.
+5au	Ornement qu’on place aux extrémités d’un faîtage.
+7x		7	0
+2ites		4	1
+2îtier	Qui appartient au faîte.
+5ère	Tuile faîtière, tuile creuse qui sert à recouvrir le faîte d’un toit ou d’un mur.
+8s		8	1
+5ers		7	9
+2itout	Variante orthographique de fait-tout.
+7s		7	0
+4s		4	9
+3x	Charge pesante.
+2jita	Mets de cuisine tex-mex constitué d’une tortilla de farine de blé pliée et remplie de viande et de crudités diverses, sauces et condiments.
+6s		6	0
+2ke	Faux.
+4s		4	0
+3ir	Ascète soufi, derviche musulman qui court le pays en vivant d’aumônes.
+5isme	Mouvement mystique hindou dont les membres, des fakirs vivent d’aumônes et s’imposent des pénitences corporelles douloureuses dans un but d’élévation spirituel…
+9s		9	0
+5s		5	0
+2lafel	Nourriture du Moyen-Orient en forme de boules frites constituées de pois chiches ou de fèves et d’épices.
+7s		7	0
+4ise	Masse de terres et de rochers en escarpement au bord de la mer.
+7s		7	0
+4rique	Arme de jet en forme de flèche parfois garnie d'étoupe enflammée qui se lançait soit à la main, soit avec une machine.
+9s		9	0
+3bala	Pièce d’étoffe plissée utilisée pour rehausser l’apparence d’un vêtement ou d’un rideau.
+7s		7	0
+3ciforme	Qui a la forme d’une faucille.
+as		a	0
+4onidé	Tout oiseau de la famille des falconidés, qui comprend 11 genres et une soixantaine d'espèces, dont la mandibule supérieure du bec est munie d’une dent tomiale…
+9s	Famille d'oiseaux de proie diurnes, la seule de l'ordre des falconiformes, comprenant les faucons, les caracaras, les carnifex, les fauconnets, les crécerelles…
+7forme	Tout oiseau arboricole et omnivore de l’ordre des falconiformes, qui comprend les 11 genres et la soixantaine d'espèces existantes de faucons, caracaras, carni…
+cs	Ordre d'oiseaux néognathes rapaces à régime carnivore, réunissant 11 genres et plus de 60 espèces au sein d'une famille unique, i.e.
+3distoire	Siège liturgique des évêques.
+bs		b	0
+3erne	Vin des environs de Falerne en Campanie, qui avait une grande réputation.
+7s		7	0
+3lacieuse		9x	n
+bment	D’une manière fallacieuse.
+bs		9x	1
+9x	Qui est fondé sur un mensonge ou un faux.
+5it		4oir	2j
+4e	Variante de fale.
+4oir	Être de nécessité, de devoir, d’obligation, de bienséance.
+4u		4oir	4e
+5e	Sorte de brioche.
+6s		6	0
+5t		4oir	13
+3ot	Plaisant, comique.
+5e		5	n
+6s		5	1
+5s		5	9
+4urde	Gros fagot de bûches de bois à brûler.
+8s		8	0
+3safa	Ensemble des courants philosophiques médiévaux (IXe - XIIe siècle) de la civilisation islamique héritiers et continuateurs de la philosophie grecque de l’Antiq…
+4etto	Voix de fausset, la plus aiguë des voix du registre masculin.
+8s		8	0
+4ifia		7er	x
+8bilité	Possibilité qu’il y a de consigner une observation, ou de mener une expérience, qui démontre qu’une affirmation est fausse.
+es		e	0
+9le	Qui peut être falsifié.
+bs		b	0
+8i		7er	m
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7cateur	Celui qui est coupable d’une falsification.
+ds		d	0
+aion	Action de falsifier.
+ds		d	0
+arice	Celle qui est coupable d’une falsification.
+es		e	0
+7é		7er	1k
+8e		7er	19
+9s		7er	1f
+7ent		8r	15
+8r	Altérer une substance, un document, etc.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+3uche	Pain blanc des Flandres sans croûte, plat et arrondi.
+7s		7	0
+4n	Assemblage de coquilles brisées qu’on trouve en masse à une certaine profondeur de terre et qu’on emploie en engrais comme la marne.
+5a		5er	x
+6ge	Action de faluner, déposer du falun sur les terrains en culture, pour les amender.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Amender en répandant du falun.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5ière	Endroit d’où l’on extrait du falun.
+9s		9	0
+6ez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+3zar	Pantalon grimpant.
+6s		6	0
+2mas	Fusil d’assaut français.
+3é	Réputé, reconnu.
+4e	Féminin singulier de famé.
+5s		4	1
+4lique	Qui n’a guère de quoi satisfaire sa faim.
+9s		9	0
+3es		4	0
+4use		5x	n
+7ment	D’une manière fameuse, remarquable, en bonne et en mauvaise part.
+7s		5x	1
+5x	Dont la réputation est très grande.
+3ilial	Qui est relatif à la famille.
+8e	Voiture familiale.
+9ment	De façon familiale.
+9s		8	1
+8isme	Tendance à accorder une valeur excessive à la famille sur le plan social.
+cs		c	0
+ate	Relatif au familialisme.
+7risa		aer	13
+bi		aer	m
+cent		aer	16
+cs		aer	1g
+ct		aer	14
+aâmes		aer	3
+aant		aer	17
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+aation	Action de rendre familier.
+ae		br	1s
+aée		aer	19
+cs		aer	10
+aent		br	15
+br	Rendre familier avec quelqu’un ou avec quelque chose.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	1m
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	1h
+aez		br	1b
+aiez		aer	1v
+bons		aer	j
+aons		aer	r
+9té	Manière de vivre dans l’intimité de quelqu’un.
+bs		b	0
+7ux		7l	9
+6er	Qui est considéré comme appartenant à la famille.
+6ère	Personne très proche dans ses habitudes et ses fréquentations.
+9ment	D’une manière familière.
+9s		6er	1
+6ers		8	9
+6stère	Établissement où plusieurs familles ou individus vivent ensemble dans une sorte de communauté et trouvent dans des magasins coopératifs ce qui leur est nécessa…
+bs		b	0
+5le	Ensemble formé par les parents et leurs enfants.
+7s		7	0
+4ne	Indisponibilité générale des aliments les plus essentiels.
+6s		6	0
+2n	Admirateur, admiratrice enthousiaste d’une personne ou d’une chose.
+3a	Fanatique.
+4ge	Action de faner l’herbe d’un pré fauché.
+6s		6	0
+4i		3er	m
+5ent		3er	16
+5s		3er	t
+6on	Temps où l’on coupe les foins.
+8s		8	0
+5t		3er	14
+4l	Grosse lanterne.
+3âmes		3er	3
+3ant		3er	z
+4rt	Toute œuvre d’art (peinture, dessin, croquis,…) réalisée par un artiste et qui met en scène un personnage, un lieu ou une scène de l’univers qu’un autre artist…
+6s		6	0
+4s		4	0
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3atique	Qui est emporté par une passion excessive pour la politique ou la religion.
+9ment	D'une manière fanatique.
+9s		9	0
+6sa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e		8r	1s
+7ée		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Rendre fanatique.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7eur	Celui qui fanatise.
+as		a	0
+9se	Celle qui fanatise.
+bs		b	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7me	Zèle outré, et souvent cruel, pour une religion, ou, par extension, attachement opiniâtre et violent à un parti, à une opinion, etc.
+9s		9	0
+7ons		7er	r
+4ux		4l	0
+3chon	Petit fichu que les femmes portent sur la tête et nouent sous le menton.
+7s		7	0
+4lub	Variante orthographique de fan-club.
+7s		7	0
+4y	Tissu de coton imprimé.
+3dango	Danse espagnole, d’origine andalouse, exécutée au son de la guitare par deux hommes qui accompagnent leurs mouvements du jeu des castagnettes.
+8s		8	0
+3e	Feuille tombée d’un arbre.
+3ée		4	n
+5s		4	1
+3ent		4r	15
+4r	Faire les foins, tourner et retourner l’herbe d’un pré fauché, pour la faire sécher.
+5a		5	18
+6i		5	g
+7ent		5	1r
+7s		5	i
+7t		5	1d
+6s		5	1l
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	2a
+5ons		5	a
+7t		5	1i
+3és		4	9
+3eur	Celui qui fane les foins.
+6s		6	0
+5se	Celle qui fane les foins.
+7s		7	0
+4z		4r	1b
+3fan	Terme dont les mères et les nourrices se servent quelquefois en parlant aux enfants.
+6s		6	0
+5re	Air exécuté par des cors ou des trompettes.
+7s		7	0
+6on	Vantard, hâbleur.
+8na		9er	13
+ade	Air, parole, attitude de fanfaron.
+cs		c	0
+ai		9er	m
+bent		9er	16
+bs		9er	t
+bt		9er	14
+9âmes		9er	3
+9ant		9er	17
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9e	Personne qui se vante, qui étale une prétendue bravoure, ou toute autre qualité.
+ant		ar	v
+ar	Prétendre ouvertement à des actions ou des qualités.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+as		8	1
+az		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+8s		8	9
+4iction	Écrit mettant en scène des personnes célèbres ou des personnages issus d’autres œuvres.
+as		a	0
+4reluche	Garnitures légères, enjolivements de la toilette féminine.
+bs		b	0
+3g	Relatif aux Fangs ou à leur langue.
+4e	Bourbe ; boue.
+5s		5	0
+5use		6x	n
+8s		6x	1
+6x	Qui est plein de fange.
+4othérapie	Méthode utilisée dans un but antalgique consistant à appliquer sur le corps de la boue d’origine volcanique sous forme de cataplasme.
+ds		d	0
+4s		4	0
+3iez		3er	d
+4on	Petit drapeau à hampe très courte.
+6s		6	0
+0Fanny	Prénom féminin, diminutif de Stéphanie ou de Françoise.
+0fanon	Peau qui pend sous la gorge d’un taureau, d’un bœuf, d’une oie.
+5s		5	0
+3s		3	0
+3taisie	Esprit ; pensée.
+9s		9	0
+8ste	Qui est controuvé, imaginaire, en parlant des choses.
+bs		b	0
+5sia	Divertissement équestre, pratiqué surtout au Maghreb, dans lequel des cavaliers font, à grande allure, des exercices de voltige en chargeant et en déchargeant …
+8s		8	0
+7e	Genre anglo-saxon proche du merveilleux rattaché aux littératures de l'imaginaire qui décrit des univers créés de toute pièce parfois reliés au nôtre et dotés …
+8s		8	0
+6ma		7er	13
+8gorie	Sorte de spectacle qui consiste à faire apparaître, dans un lieu obscur, des images qui semblent être des fantômes.
+ds		d	0
+cque	Qui tient de la fantasmagorie.
+8i		7er	m
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7atique	Qui présente un caractère irréel, fantomatique.
+ds		d	0
+7e	Vision illusoire, produite par une lésion du sens optique ou par un trouble des facultés mentales.
+7ée		8	n
+9s		7er	1f
+7ent		8r	15
+8r	Avoir un fantasme, ou des fantasmes.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	0
+8z		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6que	Qui suit librement et joyeusement sa fantaisie, original, imaginatif, non-conformiste.
+9s		9	0
+6sin	Qui concerne les fantassins.
+9s		9	9
+6tique	Qui tient de la fantaisie, de l’imagination, qui ne correspond pas à la réalité.
+bment	D’une manière fantastique.
+br	Imaginer selon sa fantaisie.
+aés		aer	12
+6y	Un genre narratif présentant dans son récit un ou plusieurs éléments irrationnels qui relèvent généralement d’un aspect mythique et qui sont souvent incarnés p…
+7s		7	0
+4oche	Qualifie une chose ou un groupe manipulé.
+8s		8	0
+5mal	Qui tient de l’apparition ou qui évoque l’apparition.
+8e		8	n
+9s		8	1
+7tique	Qui a rapport aux fantômes.
+cs		c	0
+4ômaux		7l	9
+6e	Apparition d’un défunt sous l’aspect qu’il avait de son vivant ou sous une autre forme, notamment sous un drap blanchâtre.
+7s		7	0
+4on	Variante orthographique de fenton.
+6s		6	0
+3um	Terrain consacré.
+5s		5	0
+4re	État de ce qui est fané.
+6s		6	0
+3zine	Publication indépendante de faible diffusion élaborée par des amateurs à propos de sujets culturels ou politiques.
+7s		7	0
+2on	Petit d’une biche (cas d’emploi le plus courant), d’une daine ou d’une chevrette.
+4s		4	0
+2q	Variante de FAQ.
+3s		3	0
+3uin	Portefaix.
+6s		6	0
+2r	Bouillie de blé à laquelle on ajoutait des fruits secs avant cuisson.
+3ad	Unité de mesure de capacité électrique du Système international, dont le symbole est F.
+0Faraday	Michael Faraday.
+0faradique	Alternatif, relativement à un courant électrique.
+9s		9	0
+6sation	Application médicale de l’électricité d’induction.
+cs		c	0
+5s		5	0
+4mineuse		9x	n
+bs		9x	1
+9x	Extraordinaire, énorme.
+4ndola		8er	13
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Sorte de danse provençale, que plusieurs personnes exécutent en se tenant par la main et en formant une chaîne ^().
+9nt		9r	v
+9r	Danser en faisant une farandole.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	0
+9ur	Personne qui danse ou joue la farandole.
+bs		b	0
+ase	Danseuse de farandole.
+cs		c	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+0Farani	Français de la métropole.
+6s		6	0
+0faraud	Qui est fier de son allure.
+6e	Celle qui porte ses beaux habits et qui en est fière.
+7s		6	0
+6s		6	9
+3ça		3cer	x
+5i		3cer	m
+6ent		3cer	w
+6s		3cer	t
+6t		3cer	y
+4âmes		3cer	3
+4ant		3cer	z
+5s		3cer	c
+6se		3cer	6
+8nt		3cer	h
+8s		3cer	8
+7iez		3cer	e
+8ons		3cer	p
+4ât		3cer	k
+6es		3cer	2
+3ce	Hachis d’ingrédients épicés que l’on introduit dans le ventre vidé de ses entrailles de l’animal destiné à être cuit entier, ou dans un organe creux d’un anima…
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Rire, plaisanter, faire des farces.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5ur	Qui joue des farces.
+7s		7	0
+6se	Celle qui aime à faire ou à dire des choses bouffonnes ou à jouer des tours plaisants aux gens.
+8s		8	0
+5z		5r	u
+4i	Rempli de farce.
+5e		5	n
+6s		5	1
+6z		4er	d
+4îmes		4ir	3
+4in	Forme cutanée de la morve, chez les chevaux et mulets, avec adénites et lymphangites.
+6s		6	0
+5ons		4er	j
+5r	Remplir de farce.
+6a		6	l
+7i		6	1e
+8ent		6	s
+8s		6	i
+8t		6	1d
+7s		6	7
+6ent		6	o
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5	9
+6saient		5r	23
+9s		5r	2e
+9t		5r	1z
+8nt		5r	17
+7e		5r	2d
+8nt		5r	v
+8s		5r	24
+8z		5r	1y
+7iez		5r	d
+8ons		5r	j
+7ons		5r	r
+5t		5r	28
+4îtes		4ir	2
+3çons		3cer	r
+3d	Enduit qu’on applique sur la peau ou une partie du visage pour la colorer ou pour la protéger.
+4a		4er	x
+5ge	Action de farder.
+7s		7	0
+5i		4er	m
+6ent		4er	16
+6s		4er	t
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Lourd paquet de marchandise.
+5au	Faix ; charge.
+7x		7	0
+4ée		5	n
+6s		5	1
+4ela		6er	x
+7ge	Procédé d’emballage consistant à envelopper des fardeaux sous film rétractable.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+4èlent		4eler	v
+4eler	Rassembler un certain nombre d'objets sous emballage en un bloc formant fardeau, généralement par une mise sous film plastique rétractable ou par la pose d'une…
+4èlera		4eler	l
+9i		4eler	g
+aent		4eler	s
+as		4eler	i
+at		4eler	q
+9s		4eler	7
+4elèrent		6er	o
+4èlerez		4eler	5
+8iez		4eler	4
+9ons		4eler	b
+8ons		4eler	a
+at		4eler	f
+4elés		6er	12
+6euse	Machine qui rassemble des produits pour faciliter le transport.
+as		a	0
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6le		6er	27
+8nt		6er	v
+8ra		6er	l
+ai		6er	g
+bent		6er	s
+bs		6er	i
+bt		6er	q
+as		6er	7
+9ez		6er	5
+9iez		6er	4
+aons		6er	b
+9ons		6er	a
+bt		6er	f
+8s		6er	1u
+6ons		6er	r
+5nt		5r	15
+5r	Enduire de fard.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		5	9
+4ez		5r	u
+4ier	Chariot utilisé pour transporter des charges pesantes.
+7s		7	0
+6z		4er	d
+5ons		4er	j
+4oche	Les broussailles.
+8s		8	0
+5ns		4er	r
+4s		4	0
+3e	Pêche solennelle que les pêcheurs faisaient pour leur fête, vers le mois de mai, et qui fut interdite en 1670, parce qu’elle dépeuplait les rivières.
+4s		4	0
+3fadet	Être imaginaire, sorte d’esprit follet, de lutin.
+8s		8	0
+5lle	Pâte alimentaire (ou simplement pâte) en forme de papillon ou de nœud papillon.
+8s		8	0
+4elu	Qui a un comportement bizarre.
+7e	Personne au comportement, aux idées fantasques.
+8s		7	3e
+7s		7	3c
+4ouilla		9er	13
+age	Action de farfouiller.
+cs		c	0
+ai		9er	m
+bent		9er	w
+bs		9er	1g
+bt		9er	14
+9âmes		9er	3
+9ant		9er	17
+as		9er	c
+bse		dr	20
+dnt		dr	1x
+dr	Farfouiller (souvent avec une nuance péjorative).
+ds		dr	35
+ciez		cer	2s
+9ât		9er	k
+bes		9er	2
+9e	Sorte de marché où on vend des choses de petite valeur.
+ant		ar	15
+ar	Fouiller dans quelque chose avec désordre et en brouillant tout ce qui s’y trouve.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	1d
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+as		a	0
+aur	Celui qui farfouille.
+cs		c	0
+bse	Celle qui farfouille.
+ds		d	0
+az		ar	1b
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+3gué		5er	1a
+5er	Accuser, charger.
+5és		5er	12
+3ibole	Propos frivole, vain et plaisant.
+8s		8	0
+4goule	Thym (herbe aromatique).
+9s		9	0
+4na		5er	13
+6cé	Qui a l’apparence ou qui est de la nature de la farine.
+8e		8	n
+9s		8	1
+8s		8	9
+6ge	Droit payé au meunier pour le blé moulu.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Poudre blanche obtenue par la mouture de grains céréaliers et utilisée dans la fabrication du pain et de pâtisseries.
+5ée		5er	19
+7s		5er	10
+5ent		6r	v
+6r	Saupoudrer de farine.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5euse		7x	n
+9s		7x	1
+7x	Qui tient de la nature de la farine, qui en a la texture ou le goût.
+6z		6r	u
+5ier	Personne qui vend de la farine ou qui travaille dans un moulin.
+6ère	Pièce où l’on met la farine.
+9s		9	0
+6ers		8	0
+7z		5er	d
+6ons		5er	j
+5ons		5er	r
+4o	Poisson qui précède un grand banc des harengs.
+5s		5	0
+3louche	Mélange à base de raisins secs et de mélasse, utilisé comme garniture à tarte.
+9s		9	0
+6se	Anthe des prés, connu, en diverses localités, sous les noms de pipit des arbres, pipit des prés, alouette bretonne, alouette courte, alouette folle, etc.
+8s		8	0
+3niente	Oisiveté à laquelle on prend plaisir.
+9r	Se livrer au farniente.
+9s		9r	1u
+3o	Espèce de bière fortement alcoolisée qui se fabrique particulièrement à Bruxelles et dans les environs.
+4s		4	0
+4ta		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Frimer.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4uch	Trèfle incarnat.
+7e	Sauvage, indompté, qui s’enfuit quand on l’approche, en parlant des bêtes.
+8ment	D’une manière farouche.
+8s		8	0
+7s		7	0
+3rago	Mélange de diverses graines semées afin d’obtenir du fourrage.
+3s		3	0
+4i	Relatif aux habitants de la région du Fars ou Pars en Iran.
+5s		5	9
+3t	Substance cireuse avec laquelle on enduit les semelles des skis ou des planches de glisse (snowboard, planche de surf…) afin de les rendre plus glissantes, ou …
+4a		4er	x
+5ge	Action de farter.
+7s		7	0
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Enduire (des skis, en particulier) de fart.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+4s		4	0
+2scé	Qui est chargé de fasces (bandes horizontales) égales en largeur et en nombre, dont l'émail alterne, en parlant d’un écu.
+5e		5	n
+6s		5	1
+4es		5	0
+4ia	Bande d’étoffe longue et étroite employée comme bandage.
+6s		6	0
+6tion	Vice de conformation des branches d'un arbre, des pédoncules et pétioles d'une plante, qui s'aplatissent et s'étendent en forme de bande au lieu de conserver l…
+as		a	0
+5culation	Disposition en fascicules ou faisceaux.
+ds		d	0
+8e	Poignée d’herbes, de plantes.
+8ée		9	n
+as		9	1
+8es		9	0
+5é	Qui est marqué de bandes ou de bandelettes.
+6e		6	n
+7s		6	1
+6s		6	9
+5ite	Inflammation d’un fascia (tissu conjonctif qui enveloppe les muscles et les organes).
+8s		8	0
+5na		6er	13
+7ge	Technique de génie végétal, mise en place de fagots de branches inertes ou vivantes, fixés par des pieux et recouverts de terre.
+9s		9	0
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui suscite une profonde attirance.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Qui fascine.
+bs		b	9
+8ion	Action à distance qui passe par le regard pour nuire ou tuer, mauvais œil.
+bs		b	0
+8rice	Celle qui fascine.
+cs		8eur	1
+6e	Fagot de petit bois.
+6ée	Personne à qui un fascinateur a jeté le mauvais œil.
+8s		6er	1f
+6ent		7r	15
+7r	Action à distance qui passe par le regard pour nuire ou tuer, jeter le mauvais œil.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5sa		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Qui tend vers le fascisme.
+9e		9	n
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Processus conduisant une personne ou une entité à un comportement et une idéologie fasciste.
+bs		b	0
+6é		6er	1a
+7e		6er	19
+8s		6er	10
+6ent		7r	v
+7r	Introduire le fascisme, ou des méthodes, un régime inspirés du fascisme.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6me	Doctrine et système politique instauré par Mussolini en 1922 et jusqu’en 1943, caractérisé par une toute puissance de l’État, le corporatisme, l’exaltation du …
+8s		8	0
+6ons		6er	r
+6te	Qui est propre au fascisme.
+8s		8	0
+3eilla		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+7ent		8r	v
+8r	Variante orthographique de faséyer.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+3éole	Féverole.
+7s		7	0
+3eya		5er	x
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1a
+5ent		6r	v
+3éyer	En parlant d’une voile, battre parce que le vent est trop faible ou mal orienté pour la faire enfler.
+3eyera		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6z		6r	u
+5iez		5er	d
+3éyions		5er	j
+3eyons		5er	r
+3hion	La société élégante, le beau monde.
+7ista	Fanatique de la mode.
+bs		b	0
+3se		2ire	2d
+5nt		2ire	3t
+5s		2ire	2q
+4i	Qui est originaire, qui se rapporte à Fez.
+5e		5	n
+6s		5	1
+6z		2ire	3u
+5ons		2ire	3y
+5s		5	9
+3te	Propice, favorable, heureux, où tout réussit.
+5s	Tables ou livres du calendrier où étaient indiqués les jours de fêtes, d’assemblées publiques, de jeux.
+4food	Restauration rapide où le but est de faire gagner du temps au client.
+8s		8	0
+4idieuse		9x	n
+bment	D’une manière fastidieuse.
+bs		9x	1
+9x	Qui cause de l’ennui, qui est insipide.
+5gié	Qui se dresse verticalement, en parlant de fleurs, de rameaux, du port d’un arbre, par exemple.
+8e		8	31
+9s		8	1
+8s		8	9
+4oche	Facile.
+8s		8	0
+4ueuse		7x	n
+9ment	D’une manière fastueuse.
+9s		7x	1
+7x	Qui aime le faste.
+2t	Sot, niais.
+3al	Qu’on ne peut éviter, qui doit arriver inévitablement, qui est fixé d’une manière irrévocable.
+5e		5	n
+6ment	Par une destinée inévitable.
+6s		5	1
+5isme	Doctrine exposant que la situation et les événements (désagréables) sont à mettre au compte de la fatalité, ou de la volonté divine.
+9s		9	0
+7te	Qui est un fataliste.
+9s		9	0
+6té	Destinée inévitable.
+8s		8	0
+5s		5	0
+3e	Celle qui est contente d’elle-même et qui le laisse voir.
+4s		3	1
+3idique	Qui révèle ce que les destins ont ordonné.
+9ment	D’une manière fatidique.
+9s		9	0
+4gabilité	Qualité de ce qui est fatigable.
+cs		c	0
+7le	Qui peut être soumis à la fatigue.
+9s		9	0
+6nt	Qui cause de la fatigue.
+8e	Personne importune, ennuyeuse.
+9s		8	1
+8s		8	9
+5ua		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui fatigue. De nos jours on écrit fatigant.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6e	Sensation de faiblesse physique.
+6ée		7	n
+8s		7	1
+6ent		7r	15
+7r	Affaiblir par une trop grande dépense de force.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		7	9
+6ez		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	1n
+0Fatiha	Sourate d’ouverture du Coran.
+0fatimide	Relatif à la dynastie égyptienne des Fatimides qui a régné en Afrique du Nord (909-1048) et en Égypte (969-1171).
+8s		8	0
+3ma	Femme.
+5s		5	0
+3ras	Amas confus de plusieurs choses.
+6ie	Pièce de vers amphigourique.
+8s		8	0
+3s		3	9
+3uité	Manière de parler et d’agir de celui qui est fat.
+7s		7	0
+4m	Destin ; fatalité.
+5s		5	0
+3wa	Consultation, décret ou décision rendue par un mufti sur un point de la loi musulmane.
+5s		5	0
+2uber	Variante de faubert.
+6s		6	0
+6t	Balai fait de vieux cordages.
+7s		7	0
+4ourg	Partie d’une ville qui est au-delà de ses portes et de son enceinte.
+8s		8	0
+7ien	Relatif aux faubourgs, ou à la population ouvrière des quartiers excentriques d’une grande ville.
+ane	Habitante des faubourgs, membre de la population ouvrière des quartiers excentriques de Paris.
+cs		a	1
+as		a	9
+3card	Faux à long manche, manœuvrée à la main ou adaptée à un bateau muni d’un moteur, et qui sert à faucher les herbes des rivières et des marais.
+7a		7er	x
+8ge	Action de faucarder pour assurer le bon écoulement de l'eau et éviter « l'étouffement » des rivières ou fossés par les proliférations végétales (problèmes d'ox…
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1k
+8e		7er	19
+9s		7er	1f
+7ement	Action de faucarder
+cs		c	0
+8nt		8r	v
+8r	Faucher à l’aide du faucard ou de la faucardeuse.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7eur	Qui est muni d’un faucard.
+as		a	0
+9se	Embarcation ou machine destinée à faucher les algues, notamment dans les ports, où ces plantes constituent un problème pour les hélices de bateaux.
+bs		b	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7s		7	0
+4ha		5er	x
+6ge	Action de faucher.
+8s		8	0
+6i		5er	m
+7ent		5er	3k
+7lles	Temps de la fauchaison.
+7s		5er	3v
+8on	Temps où l’on fauche.
+as		a	0
+7t		5er	3j
+5âmes		5er	3
+5ant		5er	z
+6rd	Arme d’hast au tranchant convexe dérivée de la faux de guerre, utilisée essentiellement au Moyen Âge.
+8s		8	0
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Action de faucher.
+5ée	Action de faucher.
+7s		6	1
+5ent		6r	v
+6r	Couper à la faux ou à la machine.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	1d
+8s		7	1l
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	1i
+6s		6	0
+6t	Sorte de serpe en forme de croissant.
+7s		7	0
+7te	Instrument dont on se sert pour mettre à l’alignement les branches des arbustes qui bordent les plates-bandes.
+9s		9	0
+6ur	Ouvrier qui fauche.
+8s		8	0
+7se	Celle qui fauche (souvent dans un sens figuré).
+9s		9	0
+7x	Ordre d’arachnides également nommés opilions et possédant quatre paires de pattes grêles.
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5on	Sabre de taille moyenne, dont la poignée est protégée par une garde.
+7s		7	0
+4ille	Outil qui consiste en une lame d’acier courbée en demi-cercle, dentelée et fixée à une poignée de bois et qui sert à couper l'herbe, les céréales.
+8s		8	0
+7on	Instrument fait en forme de faucille, pour couper du menu bois, des broussailles et aussi de l’herbe.
+9s		9	0
+4on	Rapace diurne falconiformes du genre Falco au sein de la famille des falconidés (les autres espèces du genre étant appelées crécerelles), caractérisées par leu…
+6neau	Petit faucon.
+ax		a	0
+8rie	Art de dresser et de gouverner les faucons et toutes sortes d’oiseaux de proie.
+bs		b	0
+7ier	Celui qui dresse et gouverne les oiseaux de proie et qui les fait voler.
+8ère	Celle qui dresse et gouverne les oiseaux de proie et qui les fait voler.
+bs		8er	1
+8ers		a	0
+6s		6	0
+4re	Pièce de fer ou d’osier, qu’on plaçait sur le côté droit des cuirasses, au Moyen Âge, pour tenir la lance en arrêt.
+6s		6	0
+3dra		2lloir	18
+6it		2lloir	2k
+3fil	Fil pour faufiler.
+6a		6er	13
+7ge	Action de faufiler, coudre à longs points en attendant lʼassemblage définitif.
+9s		9	0
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	1w
+6ant		6er	17
+7s		6er	2b
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6e		7r	1s
+6ée		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Introduire, glisser subrepticement.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	1p
+at		8	1i
+6és		6er	1h
+6ez		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	1n
+6s		6	0
+6ure	Couture faite en faufilant.
+9s		9	0
+3gères	Vin d’appellation d’origine contrôlée produit sur la commune précédente et quelques communes voisines : Autignac, Cabrerolles, Caussiniojouls, Fos, Laurens et …
+3lknérien	Propre ou relatif à William Faulkner et son œuvre.
+bne		b	n
+ds		b	1
+bs		b	9
+3ne	Divinité champêtre mi-homme, mi-bouc, chez les Romains.
+5s		5	0
+6que	Qui a les traits caractéristiques du faune.
+9s		9	3a
+6se	Sorte de nymphe lascive dont l’aspect rappelle celui du faune.
+8s		8	0
+4ique	Relatif à la faune.
+8s		8	0
+5stique	Relatif à la faune.
+bs		b	0
+4ule	Faune des très petits animaux.
+7s		7	0
+3ssa		5er	13
+6i		5er	m
+7ent		5er	16
+7re	Celui, celle qui fait un faux acte, une fausse signature, un objet faux, une œuvre d’art fausse, un faux-billet.
+9s		9	0
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant	Qui se fausse facilement.
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	1q
+7es		5er	2
+5e		3x	n
+5ée		5er	11
+7s		5er	10
+5ement	Contre la vérité.
+6nt		6r	15
+6r	Rendre faux, déformer la réalité, la vérité ou l'exactitude de quelque chose.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	1i
+5és		5er	10
+5et	Petite cheville de bois servant à boucher le trou que l’on fait à un tonneau pour en goûter le contenu.
+7é	Qualité d’une chose fausse, ce qui rend une chose fausse.
+8s		8	0
+7s		7	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	1t
+5ons		5er	r
+4tien	Relatif à Faust, au mythe de Faust, dont le personnage signe un pacte avec le Diable.
+8ne	Féminin singulier de faustien.
+as		8	1
+8s		8	9
+3t		2lloir	28
+4a		4er	13
+5i		4er	m
+6ent		4er	w
+6s	Relatif à La Faute-sur-Mer, commune française située dans le département de la Vendée.
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	2b
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	1q
+6es		4er	2
+4e	Manquement plus ou moins grave à un devoir, à une loi, à une règle, à un usage, à une convenance.
+5nt		5r	v
+5r	Commettre une faute, se tromper.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5uil	Siège comportant des accotoirs, et un dossier.
+8s		8	0
+6r	Celui qui favorise, protège, une personne ou une chose.
+7s		7	0
+5z		5r	u
+4iez		4er	d
+5f	Qui est sujet à faillir, à faire défaut, à faire erreur.
+6s		6	9
+5ons		4er	j
+5ve		5f	n
+7ment	D’une manière fautive.
+7s		5f	1
+4ons		4er	r
+4rice	Celle qui favorise, protège, une personne ou une chose.
+8s		8	0
+3ve	De la couleur ocre orangé à roux.
+5rie	Caractère de ce qui a la couleur fauve.
+8s		8	0
+5s		5	0
+5tte	Petit oiseau passereau insectivore et chanteur à bec court, tête souvent bombée et queue étroite, parfois redressée.
+8s		8	0
+4isme	Mouvement pictural du début du XXᵉ siècle d’une jeune école française caractérisé par l’audace et la nouveauté de ses recherches chromatiques en de larges apla…
+8s		8	0
+6te	Relatif au fauvisme.
+8s		8	0
+3x	Qui n’est pas conforme, ou qui ne se conforme pas à la réalité.
+2vela	Bidonville brésilien.
+6s		6	0
+4role	Variante de féverole.
+8s		8	0
+4ur	Marque d’une bienveillante attention ou d’une préférence particulière.
+6s		6	0
+3ique	Qui concerne le favus.
+7s		7	0
+4sme	Intoxication par l'ingestion de fève, de féverole ou de pois avec déficit en glucose-6-phosphate déshydrogénase.
+7s		7	0
+3orable	Qui marque une bienveillante attention ou une préférence marquée pour quelqu’un.
+9ment	D’une manière favorable.
+9s		9	0
+5i	Qui est l’objet de faveur, d’une préférence marquée.
+6s	Touffes de barbe que certains laissent croître de chaque côté du visage entre l’oreille et le menton.
+7a		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui favorise.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	1q
+9es		7er	2
+7é	Celui qui est favorisé par le sort ou par son état.
+8e	Celle qui est favorisée par le sort ou par son état.
+9s		9	0
+7ent		8r	15
+8r	Traiter avec les signes d’une préférence ou d'une bienveillance marquée.
+9a		9	18
+ai		9	1e
+bent		9	1r
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	0
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6te	Celle qui est l’objet d’une préférence marquée.
+8s		8	0
+7isme	Tendance habituelle d’un supérieur ou d’un gouvernement à accorder des faveurs injustes ou illégales.
+bs		b	0
+4uille	Carcinus maenas ou crabe vert.
+9s		9	0
+3us	Dermatose d'origine fongique, très contagieuse intéressant généralement le cuir chevelu.
+2x	Document numérisé, transmis par liaison téléphonique, puis imprimé par le matériel de réception.
+3a		3er	x
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e		4r	1s
+3ée		3er	11
+5s		3er	10
+3ent		4r	v
+4r	Transmettre (un document) par télécopie.
+5a		5	18
+6i		5	1e
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4r	25
+4z		4r	1b
+3iez		3er	d
+4ons		3er	j
+3ons		3er	1n
+2yard	Hêtre.
+6s		6	0
+3ot	Haricot sec.
+5a		5er	x
+6ge	Action de fayoter.
+8s		8	0
+6i		5er	m
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e		6r	1s
+5ée		5er	19
+5ent		6r	v
+6r	Faire tout pour se faire bien considérer (par un enseignant, par ses supérieurs…).
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	1u
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	9
+5te	Celle qui cherche à se faire bien voir de ses supérieurs.
+7r	Faire tout pour se faire bien considérer (par un enseignant, par ses supérieurs…).
+7s		7r	1u
+2zenda	Grande ferme au Brésil.
+7s		7	0

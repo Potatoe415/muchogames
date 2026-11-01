@@ -1,88 +1,88 @@
-ôta		ôter	39
-otage	Personne livrée ou prise afin de garantir des accords entre ennemis.
-otages		otage	0
-ôtai		ôter	55
-ôtaient		ôter	42
-ôtais		ôter	52
-ôtait		ôter	40
-otalgie	Douleur d’oreille.
-otalgies		otalgie	0
-otalgique	Relatif à l’otalgie.
-otalgiques		otalgique	0
-ôtâmes		ôter	3
-ôtant		ôter	43
-otarie	Nom vernaculaire de différentes espèces de mammifères marins appartenant à la famille des otariidés, dont les espèces les plus connues sont l'otarie de Califor…
-otaries		otarie	0
-ôtas		ôter	12
-ôtasse		ôter	6
-ôtassent		ôter	17
-ôtasses		ôter	8
-ôtassiez		ôter	14
-ôtassions		ôter	25
-ôtât		ôter	62
-ôtâtes		ôter	2
-ôté	En exceptant, sauf.
-ôtée		ôter	45
-ôtées		ôter	51
-ôtent		ôter	41
-ôter	Tirer une chose de la place où elle est.
-ôtera		ôter	44
-ôterai		ôter	50
-ôteraient		ôter	28
-ôterais		ôter	60
-ôterait		ôter	49
-ôteras		ôter	57
-ôtèrent		ôter	48
-ôterez		ôter	58
-ôteriez		ôter	4
-ôterions		ôter	82
-ôterons		ôter	10
-ôteront		ôter	15
-ôtes		ôter	77
-ôtez		ôter	47
-othello	Nom d'un cépage donnant de gros grains de raisin noirs.
-othellos		othello	0
-otididé	Tout oiseau de la famille des otididés.
-otididés	Famille d'oiseaux néognathes et échassiers terrestres, la seule à l'intérieur de l'ordre des otidiformes auquel elle appartient, et regroupant les outardes, do…
-ôtiez		ôter	67
-ôtions		ôter	19
-otique	Relatif à l’oreille.
-otiques		otique	0
-otite	Inflammation de la peau ou de la muqueuse de l’oreille.
-otites		otite	0
-otocyon	Espèce de canidé africain à longues oreilles.
-otocyons		otocyon	0
-otocyste	Organe auditif et d’équilibrage de divers invertébrés, contenant des otolithes.
-otocystes		otocyste	0
-otolithe	Concrétion pierreuse qu’on trouve dans l’oreille interne des vertébrés, surtout les poissons.
-otolithes		otolithe	0
-otologie	Partie de la médecine qui traite de l’oreille, souvent regroupée avec les spécialisations relatives au nez et à la gorge → voir ORL et oto-rhino-laryngologie d…
-otologies		otologie	0
-otologique	Relatif à l'otologie, médecine de l’oreille et de ses troubles.
-otologiques		otologique	0
-otomi	Relatif aux Otomi
-ôtons		ôter	59
-otorhino	Médecin spécialisé dans l’oto-rhino-laryngologie (oto: oreilles, rhino: nez, laryngo: larynx, gorge).
-otorhinos		otorhino	0
-otorrhée	Écoulement de liquide séreux, mucoïde ou purulent provenant du conduit auditif externe, témoin d'une infection de l'oreille.
-otorrhées		otorrhée	0
-otosclérose	Otite chronique, inflammation des petits os de l’oreille aboutissant à des lésions qui peuvent dégénérer en surdité définitive.
-otoscléroses		otosclérose	0
-otoscope	Instrument employé pour l’examen du canal auditif et du tympan.
-otoscopes		otoscope	0
-otoscopie	Examen clinique du tympan et du conduit externe de l’oreille.
-otoscopies		otoscopie	0
-otospongiose	Pathologie de l’oreille moyenne, qui est provoquée par l’étrier (stapes) dont la platine se soude à la fenêtre ovale.
-otospongioses		otospongiose	0
-ottavien	Relatif à Ottawa.
-ottavienne		ottavien	23
-ottaviennes		ottavien	1
-ottaviens		ottavien	9
-ottoman	Relatif à Osman Iᵉʳ.
-ottomane	Sorte de grand siège, avec ou sans dossier, où plusieurs personnes peuvent être assises à la fois, attribué autrefois à la façon supposée des Turcs.
-ottomanes		ottoman	1
-ottomans		ottoman	9
-ottonien	Relatif à la dynastie fondée par Otton Ier, à la politique menée par ses descendants, à l'art de leur époque.
-ottonienne		ottonien	23
-ottoniennes		ottonien	1
-ottoniens		ottonien	9
+0ôta		2er	13
+0otage	Personne livrée ou prise afin de garantir des accords entre ennemis.
+5s		5	0
+0ôtai		2er	1j
+4ent		2er	16
+4s		2er	1g
+4t		2er	14
+0otalgie	Douleur d’oreille.
+7s		7	0
+6que	Relatif à l’otalgie.
+9s		9	0
+0ôtâmes		2er	3
+2ant		2er	17
+0otarie	Nom vernaculaire de différentes espèces de mammifères marins appartenant à la famille des otariidés, dont les espèces les plus connues sont l'otarie de Califor…
+6s		6	0
+0ôtas		2er	c
+4se		2er	6
+6nt		2er	h
+6s		2er	8
+5iez		2er	e
+6ons		2er	p
+2ât		2er	1q
+4es		2er	2
+2é	En exceptant, sauf.
+3e		2er	19
+4s		2er	1f
+2ent		3r	15
+3r	Tirer une chose de la place où elle est.
+4a		4	18
+5i		4	1e
+6ent		4	s
+6s		4	1o
+6t		4	1d
+5s		4	1l
+2èrent		2er	1c
+2erez		4	1m
+4iez		4	4
+5ons		4	2a
+4ons		4	a
+6t		4	f
+3s		3r	25
+3z		3r	1b
+0othello	Nom d'un cépage donnant de gros grains de raisin noirs.
+7s		7	0
+2ididé	Tout oiseau de la famille des otididés.
+7s	Famille d'oiseaux néognathes et échassiers terrestres, la seule à l'intérieur de l'ordre des otidiformes auquel elle appartient, et regroupant les outardes, do…
+0ôtiez		2er	1v
+3ons		2er	j
+0otique	Relatif à l’oreille.
+6s		6	0
+3te	Inflammation de la peau ou de la muqueuse de l’oreille.
+5s		5	0
+2ocyon	Espèce de canidé africain à longues oreilles.
+7s		7	0
+5ste	Organe auditif et d’équilibrage de divers invertébrés, contenant des otolithes.
+8s		8	0
+3lithe	Concrétion pierreuse qu’on trouve dans l’oreille interne des vertébrés, surtout les poissons.
+8s		8	0
+4ogie	Partie de la médecine qui traite de l’oreille, souvent regroupée avec les spécialisations relatives au nez et à la gorge → voir ORL et oto-rhino-laryngologie d…
+8s		8	0
+7que	Relatif à l'otologie, médecine de l’oreille et de ses troubles.
+as		a	0
+3mi	Relatif aux Otomi
+0ôtons		2er	1n
+0otorhino	Médecin spécialisé dans l’oto-rhino-laryngologie (oto: oreilles, rhino: nez, laryngo: larynx, gorge).
+8s		8	0
+4rhée	Écoulement de liquide séreux, mucoïde ou purulent provenant du conduit auditif externe, témoin d'une infection de l'oreille.
+8s		8	0
+3sclérose	Otite chronique, inflammation des petits os de l’oreille aboutissant à des lésions qui peuvent dégénérer en surdité définitive.
+bs		b	0
+5ope	Instrument employé pour l’examen du canal auditif et du tympan.
+8s		8	0
+7ie	Examen clinique du tympan et du conduit externe de l’oreille.
+9s		9	0
+4pongiose	Pathologie de l’oreille moyenne, qui est provoquée par l’étrier (stapes) dont la platine se soude à la fenêtre ovale.
+cs		c	0
+2tavien	Relatif à Ottawa.
+8ne		8	n
+as		8	1
+8s		8	9
+3oman	Relatif à Osman Iᵉʳ.
+7e	Sorte de grand siège, avec ou sans dossier, où plusieurs personnes peuvent être assises à la fois, attribué autrefois à la façon supposée des Turcs.
+8s		7	1
+7s		7	9
+4nien	Relatif à la dynastie fondée par Otton Ier, à la politique menée par ses descendants, à l'art de leur époque.
+8ne		8	n
+as		8	1
+8s		8	9

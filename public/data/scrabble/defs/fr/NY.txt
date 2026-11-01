@@ -1,47 +1,47 @@
-nyala	Une des espèces d'antilopes africaines, ayant de fines rayures blanches sur un pelage gris ou brun.
-nyalas		nyala	0
-nyctaginacées	Famille de plantes dicotylédones dont la nyctage est le type.
-nyctale	Genre de rapaces nocturnes de la famille des strigidés (Aegolius spp.) comprenant quatre espèces de chouettes trapues de la taille de petits-ducs mais dépourvu…
-nyctales		nyctale	0
-nyctalope	Qui a la faculté de voir dans l’obscurité.
-nyctalopes		nyctalope	0
-nyctalopie	Capacité de certains animaux de voir dans l’obscurité et dans la nuit.
-nyctalopies		nyctalopie	0
-nycthéméral	Relatif au cycle du nycthémère, la succession du jour et de la nuit dans les régions non polaires.
-nycthémérale		nycthéméral	23
-nycthémérales		nycthéméral	1
-nycthéméraux		nycthéméral	9
-nycthémère	Période de vingt-quatre heures correspondant à la succession d’une nuit et d’un jour.
-nycthémères		nycthémère	0
-nycturie	Besoin nocturne d'uriner qui interrompt le sommeil.
-nycturies		nycturie	0
-nylon	Matière plastique de type polyamide inventée par Wallace Carothers.
-nylons		nylon	0
-nymphal	Relatif à la nymphe, stade du développement des insectes entre la larve et l’imago.
-nymphale	Genre de papillons diurnes.
-nymphales		nymphal	1
-nymphalidé	Membre d'une famille de lépidoptères rhopalocères comprenant des papillons de taille moyenne ou grande à ailes vivement colorées dont les chenilles ont souvent…
-nymphals		nymphal	9
-nymphaux		nymphal	9
-nymphe	Divinité féminine grecque d’un rang inférieur qui hante les fleuves, les sources, les bois, les montagnes, les prairies, les mers, etc., et personnifie les for…
-nymphéa	Plante aquatique ornementale de la famille des Nymphéacées, appartenant au genre Nymphaea.
-nymphéacée	Plante aquatique, dicotylédone, de la famille des Nymphéacées.
-nymphéacées		nymphéacée	0
-nymphéas		nymphéa	0
-nymphée	Construction destinée à recevoir de l’eau et le plus souvent ornée de statues, de vases, de portiques.
-nymphées		nymphée	0
-nymphes		nymphe	0
-nymphette	Petite nymphe.
-nymphettes		nymphette	0
-nympho	Nymphomane.
-nymphomane	Atteint de nymphomanie ou relatif à la nymphomanie
-nymphomanes		nymphomane	0
-nymphomanie	Amplification pathologique des besoins sexuels chez la femme.
-nymphomanies		nymphomanie	0
-nymphos		nympho	0
-nymphose	Étape du cycle de vie d'un insecte où la larve mue en adulte.
-nymphoser	Se transformer en nymphe (pour un insecte).
-nymphosés		nymphoser	38
-nystagmus	Réflexe physiologique oculaire saccadé composé de mouvements compensatoires et anti-compensatoires de l'œil, permettant notamment de fixer le regard sur un obj…
-nystatine	Groupe de molécules macro-cyclique d'origine bactérienne, sécrétées par Streptomyces nourei, bactérie du genre Streptomyces.
-nystatines		nystatine	0
+0nyala	Une des espèces d'antilopes africaines, ayant de fines rayures blanches sur un pelage gris ou brun.
+5s		5	0
+2ctaginacées	Famille de plantes dicotylédones dont la nyctage est le type.
+5le	Genre de rapaces nocturnes de la famille des strigidés (Aegolius spp.) comprenant quatre espèces de chouettes trapues de la taille de petits-ducs mais dépourvu…
+7s		7	0
+6ope	Qui a la faculté de voir dans l’obscurité.
+9s		9	0
+8ie	Capacité de certains animaux de voir dans l’obscurité et dans la nuit.
+as		a	0
+4héméral	Relatif au cycle du nycthémère, la succession du jour et de la nuit dans les régions non polaires.
+be		b	n
+cs		b	1
+aux		al	9
+7ère	Période de vingt-quatre heures correspondant à la succession d’une nuit et d’un jour.
+as		a	0
+4urie	Besoin nocturne d'uriner qui interrompt le sommeil.
+8s		8	0
+2lon	Matière plastique de type polyamide inventée par Wallace Carothers.
+5s		5	0
+2mphal	Relatif à la nymphe, stade du développement des insectes entre la larve et l’imago.
+7e	Genre de papillons diurnes.
+8s		7	1
+7idé	Membre d'une famille de lépidoptères rhopalocères comprenant des papillons de taille moyenne ou grande à ailes vivement colorées dont les chenilles ont souvent…
+7s		7	9
+6ux		6l	9
+5e	Divinité féminine grecque d’un rang inférieur qui hante les fleuves, les sources, les bois, les montagnes, les prairies, les mers, etc., et personnifie les for…
+5éa	Plante aquatique ornementale de la famille des Nymphéacées, appartenant au genre Nymphaea.
+7cée	Plante aquatique, dicotylédone, de la famille des Nymphéacées.
+as		a	0
+7s		7	0
+6e	Construction destinée à recevoir de l’eau et le plus souvent ornée de statues, de vases, de portiques.
+7s		7	0
+5es		6	0
+6tte	Petite nymphe.
+9s		9	0
+5o	Nymphomane.
+6mane	Atteint de nymphomanie ou relatif à la nymphomanie
+as		a	0
+9ie	Amplification pathologique des besoins sexuels chez la femme.
+bs		b	0
+6s		6	0
+7e	Étape du cycle de vie d'un insecte où la larve mue en adulte.
+8r	Se transformer en nymphe (pour un insecte).
+7és		7er	12
+2stagmus	Réflexe physiologique oculaire saccadé composé de mouvements compensatoires et anti-compensatoires de l'œil, permettant notamment de fixer le regard sur un obj…
+5tine	Groupe de molécules macro-cyclique d'origine bactérienne, sécrétées par Streptomyces nourei, bactérie du genre Streptomyces.
+9s		9	0

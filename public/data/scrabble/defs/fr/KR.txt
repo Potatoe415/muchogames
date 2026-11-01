@@ -1,34 +1,34 @@
-kraal	Village indigène en Afrique du Sud.
-kraals		kraal	0
-krach	Désastre boursier, chute soudaine de la bourse.
-krachs		krach	0
-kraft	Synonyme de papier kraft.
-krafts		kraft	0
-krak	Forteresse des croisés en Palestine ou en Syrie.
-kraken	Créature fantastique représentée sous la forme d’une pieuvre géante, dans les légendes scandinaves médiévales.
-krakens		kraken	0
-kraks		krak	0
-kreml	Synonyme de kremlin.
-kremlin	Partie centrale fortifiée d’une ville russe.
-kremlinologie	Étude du fonctionnement du pouvoir soviétique.
-kremlinologies		kremlinologie	0
-kremlinologique	Relatif à la kremlinologie et aux kremlinologues.
-kremlinologue	Spécialiste de la politique soviétique, puis russe.
-kremlinologues		kremlinologue	0
-kremlins		kremlin	0
-kremls		kreml	0
-kreutzer	Ancienne monnaie autrichienne qui est la soixantième partie du florin.
-kreutzers		kreutzer	0
-kreuzer	Pièce d’argent et unité de la monnaie en vigueur dans les états du sud de l’Allemagne avant la réunification de l’Allemagne et en Autriche.
-kreuzers		kreuzer	0
-kriek	Bière belge aromatisée avec des cerises acides, produite dans la région de Bruxelles.
-krieks		kriek	0
-krill	Nom générique de petites crevettes des eaux froides, de la famille des euphausiacés.
-krills		krill	0
-kriss	Poignard malais dont la lame est parfois ondulée.
-kronprinz	Dauphin, héritier de la couronne dans les pays germaniques.
-kroumir	Confiserie à la pâte d’amande et au chocolat (il s’agit d’une marque déposée depuis 1930).
-kroumirs		kroumir	0
-kru	Relatif aux Kru, un peuple du Liberia et de l’ouest de la Côte d’Ivoire.
-krus		kru	0
-krypton	Élément chimique de numéro atomique 36 et de symbole Kr qui fait partie de la série des gaz nobles.
+0kraal	Village indigène en Afrique du Sud.
+5s		5	0
+3ch	Désastre boursier, chute soudaine de la bourse.
+5s		5	0
+3ft	Synonyme de papier kraft.
+5s		5	0
+3k	Forteresse des croisés en Palestine ou en Syrie.
+4en	Créature fantastique représentée sous la forme d’une pieuvre géante, dans les légendes scandinaves médiévales.
+6s		6	0
+4s		4	0
+2eml	Synonyme de kremlin.
+5in	Partie centrale fortifiée d’une ville russe.
+7ologie	Étude du fonctionnement du pouvoir soviétique.
+ds		d	0
+cque	Relatif à la kremlinologie et aux kremlinologues.
+bue	Spécialiste de la politique soviétique, puis russe.
+ds		d	0
+7s		7	0
+5s		5	0
+3utzer	Ancienne monnaie autrichienne qui est la soixantième partie du florin.
+8s		8	0
+4zer	Pièce d’argent et unité de la monnaie en vigueur dans les états du sud de l’Allemagne avant la réunification de l’Allemagne et en Autriche.
+7s		7	0
+2iek	Bière belge aromatisée avec des cerises acides, produite dans la région de Bruxelles.
+5s		5	0
+3ll	Nom générique de petites crevettes des eaux froides, de la famille des euphausiacés.
+5s		5	0
+3ss	Poignard malais dont la lame est parfois ondulée.
+2onprinz	Dauphin, héritier de la couronne dans les pays germaniques.
+3umir	Confiserie à la pâte d’amande et au chocolat (il s’agit d’une marque déposée depuis 1930).
+7s		7	0
+2u	Relatif aux Kru, un peuple du Liberia et de l’ouest de la Côte d’Ivoire.
+3s		3	0
+2ypton	Élément chimique de numéro atomique 36 et de symbole Kr qui fait partie de la série des gaz nobles.

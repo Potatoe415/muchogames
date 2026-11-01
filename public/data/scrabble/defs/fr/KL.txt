@@ -1,93 +1,93 @@
-klaxon	Avertisseur sonore généralement électrique qui équipe un véhicule automobile.
-klaxonna		klaxonner	39
-klaxonnai		klaxonner	55
-klaxonnaient		klaxonner	42
-klaxonnais		klaxonner	52
-klaxonnait		klaxonner	40
-klaxonnâmes		klaxonner	3
-klaxonnant		klaxonner	43
-klaxonnas		klaxonner	12
-klaxonnasse		klaxonner	6
-klaxonnassent		klaxonner	17
-klaxonnasses		klaxonner	8
-klaxonnassiez		klaxonner	14
-klaxonnassions		klaxonner	25
-klaxonnât		klaxonner	20
-klaxonnâtes		klaxonner	2
-klaxonne		klaxonner	64
-klaxonnée		klaxonner	37
-klaxonnées		klaxonner	36
-klaxonnent		klaxonner	41
-klaxonner	Actionner un klaxon dans le but d'avertir d'un danger.
-klaxonnera		klaxonner	44
-klaxonnerai		klaxonner	50
-klaxonneraient		klaxonner	28
-klaxonnerais		klaxonner	18
-klaxonnerait		klaxonner	26
-klaxonneras		klaxonner	7
-klaxonnèrent		klaxonner	24
-klaxonnerez		klaxonner	5
-klaxonneriez		klaxonner	4
-klaxonnerions		klaxonner	11
-klaxonnerons		klaxonner	10
-klaxonneront		klaxonner	15
-klaxonnes		klaxonner	77
-klaxonnez		klaxonner	47
-klaxonniez		klaxonner	13
-klaxonnions		klaxonner	19
-klaxonnons		klaxonner	27
-klaxons		klaxon	0
-kleenex	Mouchoir en papier.
-klephte	Nom de certains montagnards grecs, mi-insurgés, mi-brigands.
-klephtes		klephte	0
-kleptocratie	Régime politique où l’autorité et le pouvoir de la ou les personnes qui en sont à la tête pratiquent à une très grande échelle la corruption pour s’enrichir et…
-kleptocraties		kleptocratie	0
-kleptomane	Variante orthographique de cleptomane.
-kleptomanes		kleptomane	0
-kleptomanie	Tendance pathologique et irrésistible à commettre des vols, sans que les objets volés aient une quelconque utilité pour l’auteur de ces vols.
-kleptomanies		kleptomanie	0
-klevener	Vin blanc d’Alsace produit autour de la commune d’Heiligenstein, dont le nom est issu de son cépage.
-kleveners		klevener	0
-klezmer	Qualifie la musique juive d’Europe centrale.
-klezmers		klezmer	0
-klippe	Partie d’une nappe de charriage formant un îlot séparé du reste de la nappe par l’érosion.
-klippes		klippe	0
-klouka		klouker	39
-kloukai		klouker	55
-kloukaient		klouker	75
-kloukais		klouker	86
-kloukait		klouker	71
-kloukâmes		klouker	68
-kloukant		klouker	43
-kloukas		klouker	83
-kloukasse		klouker	81
-kloukassent		klouker	78
-kloukasses		klouker	87
-kloukassiez		klouker	88
-kloukassions		klouker	90
-kloukât		klouker	62
-kloukâtes		klouker	84
-klouké		klouker	56
-kloukée		klouker	45
-kloukées		klouker	51
-kloukent		klouker	69
-klouker	Manger de façon gloutonne.
-kloukera		klouker	44
-kloukerai		klouker	50
-kloukeraient		klouker	63
-kloukerais		klouker	60
-kloukerait		klouker	49
-kloukeras		klouker	57
-kloukèrent		klouker	48
-kloukerez		klouker	58
-kloukeriez		klouker	74
-kloukerions		klouker	82
-kloukerons		klouker	61
-kloukeront		klouker	54
-kloukés		klouker	53
-kloukez		klouker	70
-kloukiez		klouker	100
-kloukions		klouker	94
-kloukons		klouker	73
-klystron	Tube à vide qui permet de réaliser des amplificateurs de moyenne et forte puissance à bande étroite en hyperfréquences.
-klystrons		klystron	0
+0klaxon	Avertisseur sonore généralement électrique qui équipe un véhicule automobile.
+6na		7er	13
+8i		7er	1j
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e		8r	1s
+7ée		7er	11
+9s		7er	10
+7ent		8r	15
+8r	Actionner un klaxon dans le but d'avertir d'un danger.
+9a		9	18
+ai		9	1e
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	25
+8z		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+2eenex	Mouchoir en papier.
+3phte	Nom de certains montagnards grecs, mi-insurgés, mi-brigands.
+7s		7	0
+4tocratie	Régime politique où l’autorité et le pouvoir de la ou les personnes qui en sont à la tête pratiquent à une très grande échelle la corruption pour s’enrichir et…
+cs		c	0
+6mane	Variante orthographique de cleptomane.
+as		a	0
+9ie	Tendance pathologique et irrésistible à commettre des vols, sans que les objets volés aient une quelconque utilité pour l’auteur de ces vols.
+bs		b	0
+3vener	Vin blanc d’Alsace produit autour de la commune d’Heiligenstein, dont le nom est issu de son cépage.
+8s		8	0
+3zmer	Qualifie la musique juive d’Europe centrale.
+7s		7	0
+2ippe	Partie d’une nappe de charriage formant un îlot séparé du reste de la nappe par l’érosion.
+6s		6	0
+2ouka		5er	13
+6i		5er	1j
+7ent		5er	23
+7s		5er	2e
+7t		5er	1z
+5âmes		5er	1w
+5ant		5er	17
+6s		5er	2b
+7se		5er	29
+9nt		5er	26
+9s		5er	2f
+8iez		5er	2g
+9ons		5er	2i
+5ât		5er	1q
+7es		5er	2c
+5é		5er	1k
+6e		5er	19
+7s		5er	1f
+5ent		6r	1x
+6r	Manger de façon gloutonne.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	22
+8ons		7	2a
+7ons		7	1p
+9t		7	1i
+5és		5er	1h
+5ez		6r	1y
+5iez		5er	2s
+6ons		5er	2m
+5ons		5er	21
+2ystron	Tube à vide qui permet de réaliser des amplificateurs de moyenne et forte puissance à bande étroite en hyperfréquences.
+8s		8	0

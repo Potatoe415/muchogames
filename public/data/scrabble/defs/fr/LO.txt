@@ -1,1505 +1,1505 @@
-loa	Esprit qui vient chevaucher un choual et auquel on rend un culte.
-loader	Programme dont la fonction est d’en charger d’autres.
-loaders		loader	0
-loas		loa	0
-loase	Infestation par un filaire appelé Filaria loa ou Loa-loa.
-loases		loase	0
-lob	chandelle, coup qui consiste à faire passer la balle ou le ballon au-dessus d’un adversaire, assez haut pour qu’il ne puisse pas l’intercepter.
-loba		lober	39
-lobai		lober	22
-lobaient		lober	32
-lobaire	Relatif aux lobes.
-lobaires		lobaire	0
-lobais		lober	29
-lobait		lober	34
-lobâmes		lober	3
-lobant		lober	35
-lobas		lober	12
-lobasse		lober	6
-lobassent		lober	17
-lobasses		lober	8
-lobassiez		lober	14
-lobassions		lober	25
-lobât		lober	20
-lobâtes		lober	2
-lobbies		lobby	0
-lobby	Groupe ayant des intérêts convergents et réalisant des activités ayant pour but d’influencer la prise de décisions dans une orientation favorable à ses intérêt…
-lobbying	Activités ou pressions exercées par un lobby afin d’obtenir des décisions qui lui sont favorables ou une influence favorable sur des décisions.
-lobbyings		lobbying	0
-lobbyisme	Activités ou pressions exercées par un lobby afin d’obtenir des décisions qui lui sont favorables.
-lobbyismes		lobbyisme	0
-lobbyiste	personne engagée dans des activités de lobbying, de lobbyisme
-lobbyistes		lobbyiste	0
-lobbys		lobby	0
-lobbysme	Variante orthographique de lobbyisme.
-lobbysmes		lobbysme	0
-lobbyste	Variante de lobbyiste.
-lobbystes		lobbyste	0
-lobe	Division d’une partie de certains organes formée par des sillons ou des échancrures.
-lobectomie	Ectomie d’un lobe d’organe comme le poumon, le foie, le cerveau, la glande thyroïde.
-lobectomies		lobectomie	0
-lobée		lober	37
-lobées		lober	36
-lobélia	Plante de la famille des campanulacées, originaire d'Amérique du nord, et comportant plusieurs espèces appréciées pour leurs qualités ornementales et médicinal…
-lobélias		lobélia	0
-lobélie	Plante du genre Lobelia, de la famille des Campanulacées, originaire d'Amérique du nord, et comportant plusieurs espèces appréciées pour leurs qualités ornemen…
-lobélies		lobélie	0
-lobéline	Alcaloïde pyridinique dont les doses thérapeutiques sont très proches des doses toxiques bien qu’on lui ait découvert bon nombre de propriétés médicales.
-lobélines		lobéline	0
-lobent		lober	31
-lober	Effectuer un lob.
-lobera		lober	21
-loberai		lober	16
-loberaient		lober	28
-loberais		lober	18
-loberait		lober	26
-loberas		lober	7
-lobèrent		lober	24
-loberez		lober	5
-loberiez		lober	4
-loberions		lober	11
-loberons		lober	10
-loberont		lober	15
-lobes		lobe	0
-lobez		lober	30
-lobi	Synonyme de baoulé (race de bovins).
-Lobie	Celle qui appartient au peuple des Lobis.
-Lobies		Lobie	0
-lobiez		lober	13
-lobions		lober	19
-lobis		lobi	0
-lobons		lober	27
-lobotomie	Intervention chirurgicale sur le cerveau consistant en une section de la substance blanche du lobe frontal afin d'isoler le cortex préfrontal du reste du cerve…
-lobotomies		lobotomie	0
-lobotomisa		lobotomiser	33
-lobotomisai		lobotomiser	22
-lobotomisaient		lobotomiser	32
-lobotomisais		lobotomiser	29
-lobotomisait		lobotomiser	34
-lobotomisâmes		lobotomiser	3
-lobotomisant		lobotomiser	35
-lobotomisas		lobotomiser	12
-lobotomisasse		lobotomiser	6
-lobotomisassent		lobotomiser	17
-lobotomisasses		lobotomiser	8
-lobotomisassiez		lobotomiser	14
-lobotomisât		lobotomiser	20
-lobotomisâtes		lobotomiser	2
-lobotomisation	Action de lobotomiser.
-lobotomisations		lobotomisation	0
-lobotomisé	Qui a subi une lobotomie.
-lobotomisée		lobotomiser	37
-lobotomisées		lobotomiser	36
-lobotomisent		lobotomiser	31
-lobotomiser	Faire subir une lobotomie à.
-lobotomisera		lobotomiser	21
-lobotomiserai		lobotomiser	16
-lobotomiserais		lobotomiser	18
-lobotomiserait		lobotomiser	26
-lobotomiseras		lobotomiser	7
-lobotomisèrent		lobotomiser	24
-lobotomiserez		lobotomiser	5
-lobotomiseriez		lobotomiser	4
-lobotomiserions		lobotomiser	11
-lobotomiserons		lobotomiser	10
-lobotomiseront		lobotomiser	15
-lobotomisés		lobotomiser	38
-lobotomisez		lobotomiser	30
-lobotomisiez		lobotomiser	13
-lobotomisions		lobotomiser	19
-lobotomisons		lobotomiser	27
-lobs		lob	0
-lobulaire	Qui a la forme d’un lobule, qui appartient à un lobule.
-lobulaires		lobulaire	0
-lobule	Petit lobe.
-lobulée		lobulé	23
-lobulées		lobulé	1
-lobules		lobule	0
-lobuleuse		lobuleux	23
-lobuleuses		lobuleux	1
-lobuleux	Qui contient des lobules, est composé de lobules (petits lobes).
-local	Qui appartient à un lieu.
-locale		local	23
-localement	D’une manière locale, relativement aux lieux.
-locales		local	1
-localier	Journaliste qui rapporte les nouvelles d'intérêt seulement local.
-localière	Femme journaliste qui rapporte les nouvelles d'intérêt seulement local.
-localières		localière	0
-localiers		localier	0
-localisa		localiser	39
-localisable	Qui peut être localisé.
-localisables		localisable	0
-localisai		localiser	22
-localisaient		localiser	42
-localisais		localiser	52
-localisait		localiser	40
-localisâmes		localiser	3
-localisant	Qui localise.
-localisas		localiser	12
-localisasse		localiser	6
-localisassent		localiser	17
-localisasses		localiser	8
-localisassiez		localiser	14
-localisassions		localiser	25
-localisât		localiser	20
-localisâtes		localiser	2
-localisateur	Qui sert à localiser, à situer dans l'espace.
-localisateurs		localisateur	0
-localisation	Action de localiser, de se localiser.
-localisations		localisation	0
-localisé	Qui reste limité à une zone déterminée.
-localisée		localisé	23
-localisées		localisé	1
-localisent		localiser	41
-localiser	Déterminer avec un certain degré de précision l’emplacement physique de quelqu’un ou quelque chose.
-localisera		localiser	44
-localiserai		localiser	16
-localiseraient		localiser	28
-localiserais		localiser	18
-localiserait		localiser	26
-localiseras		localiser	7
-localisèrent		localiser	24
-localiserez		localiser	5
-localiseriez		localiser	4
-localiserions		localiser	11
-localiserons		localiser	10
-localiseront		localiser	54
-localisés		localisé	9
-localisez		localiser	47
-localisiez		localiser	13
-localisions		localiser	65
-localisme	Doctrine qui consiste à privilégier ce qui est local.
-localismes		localisme	0
-localisons		localiser	59
-localiste	Qui privilégie ce qui est local.
-localistes		localiste	0
-localité	Lieu habité.
-localités		localité	0
-locataire	Celui, celle qui occupe une maison ou une partie de maison à loyer.
-locataires		locataire	0
-locateur	Celui qui donne à bail.
-locateurs		locateur	0
-locatif	Relatif à une location ou au locataire.
-locatifs		locatif	9
-location	Action par laquelle le propriétaire d’une chose la donne à quelqu’un, à titre de louage ou de bail.
-locations		location	0
-locative		locatif	23
-locatives		locatif	1
-locatrice	Celle qui donne à bail.
-locatrices		locatrice	0
-locaux		local	9
-locavore	Qui se nourrit d’aliments produits près de chez lui.
-locavores		locavore	0
-locavorisme	Pratique consistant à se nourrir d’aliments produits près de chez soi.
-locavorismes		locavorisme	0
-loch	Plan d’eau, lac, fjord, estuaire, baie ou crique en Écosse ou en Irlande.
-locha		locher	33
-lochai		locher	22
-lochaient		locher	32
-lochais		locher	29
-lochait		locher	34
-lochâmes		locher	3
-lochant		locher	35
-lochas		locher	12
-lochasse		locher	6
-lochassent		locher	17
-lochasses		locher	8
-lochassiez		locher	14
-lochassions		locher	25
-lochât		locher	20
-lochâtes		locher	2
-loche	Nom donné à plusieurs espèces de petits poissons osseux d’eau douce de différentes familles, allongés, pourvus de 6 à 10 barbillons, entre autres de la famille…
-lochée		locher	37
-lochées		locher	36
-lochent		locher	31
-locher	Secouer, branler.
-lochera		locher	21
-locherai		locher	16
-locheraient		locher	28
-locherais		locher	18
-locherait		locher	26
-locheras		locher	7
-lochèrent		locher	24
-locherez		locher	5
-locheriez		locher	4
-locherions		locher	11
-locherons		locher	10
-locheront		locher	15
-loches		loche	0
-lochez		locher	30
-lochies	Pertes de sang, de débris de muqueuse et de sécrétions lymphatiques et glandulaires s’écoulant par le vagin pendant les vingt jours suivant l’accouchement jusq…
-lochiez		locher	13
-lochions		locher	19
-lochon	Amende, contravention.
-lochons		lochon	0
-lochs		loch	0
-loci		locus	0
-lockisme	Philosophie de John Locke.
-lockismes		lockisme	0
-lockiste	Partisan de John Locke et de sa philosophie.
-lockistes		lockiste	0
-lockout	Variante de lock-out.
-lockouta		lockouter	33
-lockoutai		lockouter	22
-lockoutaient		lockouter	32
-lockoutais		lockouter	29
-lockoutait		lockouter	34
-lockoutâmes		lockouter	3
-lockoutant		lockouter	35
-lockoutas		lockouter	12
-lockoutasse		lockouter	6
-lockoutassent		lockouter	17
-lockoutasses		lockouter	8
-lockoutassiez		lockouter	14
-lockoutassions		lockouter	25
-lockoutât		lockouter	20
-lockoutâtes		lockouter	2
-lockouté	Employé en lockout.
-lockoutée		lockouter	37
-lockoutées		lockouter	36
-lockoutent		lockouter	31
-lockouter	Décider le lock-out de.
-lockoutera		lockouter	21
-lockouterai		lockouter	16
-lockouteraient		lockouter	28
-lockouterais		lockouter	18
-lockouterait		lockouter	26
-lockouteras		lockouter	7
-lockoutèrent		lockouter	24
-lockouterez		lockouter	5
-lockouteriez		lockouter	4
-lockouterions		lockouter	11
-lockouterons		lockouter	10
-lockouteront		lockouter	15
-lockoutés		lockouté	0
-lockoutez		lockouter	30
-lockoutiez		lockouter	13
-lockoutions		lockouter	19
-lockoutons		lockouter	27
-lockouts		lockout	0
-loco	Locomotive.
-locomobile	Sorte de machine à vapeur, puis ensuite à moteur à combustion interne, qui se déplace et qui servait à l’agriculture ou à l’industrie.
-locomobiles		locomobile	0
-locomoteur	Qui opère la locomotion.
-locomoteurs		locomoteur	9
-locomotif	Relatif à la locomotion.
-locomotifs		locomotif	0
-locomotion	Changement de lieu en vertu de la faculté locomotrice.
-locomotions		locomotion	0
-locomotive	Machine actionnée par la vapeur, le fioul ou l’électricité, montée sur roues, qui sert à la traction de voitures et/ou de wagons placée sur une voie ferrée, ou…
-locomotives		locomotif	1
-locomotrice	Sorte de locomotive à moteur diesel ou électrique.
-locomotrices		locomotrice	0
-locorégional	Qui concerne une partie spécifique du corps.
-locorégionale		locorégional	23
-locorégionales		locorégional	1
-locorégionaux		locorégional	9
-locos		loco	0
-locotracteur	Engin de traction évoluant sur rail ou sur route.
-locotracteurs		locotracteur	0
-loculaire	Qui est partagé en plusieurs locules, loges.
-loculaires		loculaire	0
-locule	Loge.
-loculée		loculé	23
-loculées		loculé	1
-locules		locule	0
-loculeuse		loculeux	109
-loculeuses	Pluriel de loculeuse.
-loculeux	Synonyme de loculaire.
-locus	Emplacement d’un gène sur un chromosome.
-locuste	Genre d’insectes orthoptères plus généralement appelés criquets.
-locustelle	Genre de petit oiseau passereau, fauvette de marais dont le chant évoque celui d’un insecte tel une locuste.
-locustelles		locustelle	0
-locustes		locuste	0
-locuteur	Personne qui parle.
-locuteurs		locuteur	0
-locution	Unité fonctionnelle du langage, composée de plusieurs mots graphiques, appartenant à la langue et devant être apprise en tant que forme globale non divisible.
-locutions		locution	0
-locutrice	Personne qui parle.
-locutrices		locutrice	0
-loden	Tissu feutré et velu, chaud et imperméable, en laine verte, utilisé d’abord en Allemagne, en Autriche et en Suisse, et servant notamment à la confection de man…
-lodens		loden	0
-lodge	Résidence pour touristes située dans des espaces naturels.
-lodges		lodge	0
-lods	Variante de lauds.
-loempia	Variante de lumpia.
-loempias		loempia	0
-lœss	Dépôt sédimentaire détritique meuble, d’origine éolienne et périglaciaire, limon jaune clair ou chamois, au toucher farineux et pulvérulent, renfermant à l’ori…
-lœssique	De la nature du lœss.
-lœssiques		lœssique	0
-lof	Côté que le navire présente au vent.
-lofa		lofer	39
-lofai		lofer	22
-lofaient		lofer	32
-lofais		lofer	29
-lofait		lofer	34
-lofâmes		lofer	3
-lofant		lofer	35
-lofas		lofer	12
-lofasse		lofer	6
-lofassent		lofer	17
-lofasses		lofer	8
-lofassiez		lofer	14
-lofassions		lofer	25
-lofât		lofer	20
-lofâtes		lofer	2
-lofe		lofer	64
-lofent		lofer	31
-lofer	Modifier l’axe du bateau (voilier) pour le rapprocher du lit du vent.
-lofera		lofer	21
-loferai		lofer	16
-loferaient		lofer	28
-loferais		lofer	18
-loferait		lofer	26
-loferas		lofer	7
-lofèrent		lofer	24
-loferez		lofer	5
-loferiez		lofer	4
-loferions		lofer	11
-loferons		lofer	10
-loferont		lofer	15
-lofes		lofer	66
-lofez		lofer	131
-lofiez		lofer	13
-lofions		lofer	19
-lofons		lofer	27
-lofs		lof	0
-loft	Logement constitué d'espaces ouverts le plus souvent situé dans un ancien atelier, entrepôt ou usine.
-lofts		loft	0
-log	Mesure des liquides chez les Hébreux, valant 0,251 litre.
-loganiacées	Famille de plantes formée d’espèces séparées des rubiacées et des gentianées.
-logarithme	Nombre pris dans une progression arithmétique et correspondant à un autre nombre pris dans une progression géométrique.
-logarithmes		logarithme	0
-logarithmique	Relatif aux logarithmes.
-logarithmiques		logarithmique	0
-logatome	Mot qui n’a pas de signification, mais qui est construit avec des syllabes et conformément aux schémas phonologiques d’une langue.
-logatomes		logatome	0
-loge	Petite cabane, cabanon, hutte.
-logea		loger	39
-logeable	Où l’on peut loger commodément.
-logeables		logeable	0
-logeai		loger	55
-logeaient		loger	42
-logeais	Relatif aux Loges, commune française située dans le département de la Seine-Maritime.
-logeait		loger	40
-logeâmes		loger	3
-logeant		loger	43
-logeas		loger	12
-logeasse		loger	6
-logeassent		loger	78
-logeasses		loger	8
-logeassiez		loger	14
-logeassions		loger	25
-logeât		loger	20
-logeâtes		loger	2
-logée		logé	23
-logées		loger	51
-logement	Endroit où loger.
-logements		logement	0
-logent		loger	41
-logeons		loger	27
-loger	Séjourner ; avoir sa demeure habituelle ou temporaire dans un logis.
-logera		loger	44
-logerai		loger	50
-logeraient		loger	63
-logerais		loger	18
-logerait		loger	49
-logeras		loger	57
-logèrent		loger	48
-logerez		loger	58
-logeriez		loger	4
-logerions		loger	82
-logerons		loger	61
-logeront		loger	54
-loges		loge	0
-logette	Petite loge.
-logettes		logette	0
-logeur	Celui qui loge moyennant finance.
-logeurs		logeur	0
-logeuse	Celle qui loge moyennant finance.
-logeuses		logeuse	0
-logez		loger	47
-loggia	Galerie, portique en avant-corps, pratiqué à l’un des étages d’un édifice, pour jouir de la vue du dehors et de la fraîcheur de l’air.
-loggias		loggia	0
-logiciel	Qui concerne les aspects logiques d’un ordinateur ou d’un système de traitement de l’information, par opposition aux aspects matériels.
-logicielle		logiciel	23
-logicielles		logiciel	1
-logiciels		logiciel	9
-logicien	Spécialiste de la logique en tant que discipline.
-logicienne	Spécialiste de la logique en tant que discipline.
-logiciennes		logicienne	0
-logiciens		logicien	0
-logicisme	Attitude préférentielle envers ce qui est logique au point de l’appliquer à des domaines étrangers à la logique.
-logicismes		logicisme	0
-logiciste	Qui applique, extrapole les notions du domaine de la logique à d’autres domaines.
-logicistes		logiciste	0
-logiez		loger	67
-logigramme	Organigramme de programmation, schéma logique.
-logigrammes		logigramme	0
-login	Identifiant à fournir pour accéder à un système informatique, et associé à un utilisateur (ou à un type d’utilisateur).
-logins		login	0
-logions		loger	65
-logique	Qui est conforme aux règles de la raison, rationnel.
-logiquement	D’une manière conforme à la logique.
-logiques		logique	0
-logis	Endroit où l’on demeure.
-logiste	Comptable dans les antiques villes grecques.
-logistes		logiste	0
-logisticien	Spécialiste de la logistique.
-logisticienne	Spécialiste de la logistique.
-logisticiennes		logisticienne	0
-logisticiens		logisticien	0
-logistique	Ensemble des moyens et méthodes de transport, de manutention ou de ravitaillement.
-logistiques		logistique	0
-logithèque	Site web où il est possible de téléverser (habituellement gratuitement) des logiciels.
-logithèques		logithèque	0
-logo	Logotype, symbole ou emblème qui représente une marque, une organisation, une entreprise commerciale ou tout autre entité.
-logogramme	Caractère représentant un morphème (mot, etc.) ayant un sens et une séquence de phonèmes (sons).
-logogrammes		logogramme	0
-logographe	Prosateur grec.
-logographes		logographe	0
-logographie	Art du logographe ou la composition en prose.
-logographies		logographie	0
-logographique	Relatif aux logogrammes.
-logographiques		logographique	0
-logogriphe	Jeu d’esprit qui consiste à former d’autres mots avec les lettres d’un mot.
-logogriphes		logogriphe	0
-logomachie	Dispute de mots lorsque chacun utilise des mots dans un sens différent de celui de l'autre, usage de termes creux.
-logomachies		logomachie	0
-logomachique	Relatif à la logomachie.
-logomachiques		logomachique	0
-logopède	Professionnel de la logopédie ou orthophonie, la thérapie du langage.
-logopèdes		logopède	0
-logopédie	Art de prononcer correctement, de corriger les défauts de prononciation.
-logopédies		logopédie	0
-logopédiste	Professionnel de la logopédie ou orthophonie, la thérapie du langage.
-logopédistes		logopédiste	0
-logorrhée	Trouble du langage caractérisé par un besoin irrésistible et morbide de parler.
-logorrhées		logorrhée	0
-logorrhéique	Qui tient de la logorrhée.
-logorrhéiques		logorrhéique	0
-logos	La raison, le discours rationnel, par opposition au muthos, le discours irrationnel.
-logothète	Secrétaire responsable d'un important bureau administratif dans l’Empire byzantin
-logothètes		logothète	0
-logotype	Ensemble de caractères réunis en un seul pour en faciliter la composition manuelle.
-logotypes		logotype	0
-logs		log	0
-logua		loguer	33
-loguai		loguer	22
-loguaient		loguer	32
-loguais		loguer	29
-loguait		loguer	34
-loguâmes		loguer	3
-loguant		loguer	35
-loguas		loguer	12
-loguasse		loguer	6
-loguassent		loguer	17
-loguasses		loguer	8
-loguassiez		loguer	14
-loguassions		loguer	25
-loguât		loguer	20
-loguâtes		loguer	2
-logué		loguer	56
-loguée		loguer	37
-loguées		loguer	36
-loguent		loguer	31
-loguer	Humecter les formes des pains de sucre, en les frottant à l’intérieur avec un linge mouillé.
-loguera		loguer	21
-loguerai		loguer	16
-logueraient		loguer	28
-loguerais		loguer	18
-loguerait		loguer	26
-logueras		loguer	57
-loguèrent		loguer	24
-loguerez		loguer	5
-logueriez		loguer	4
-loguerions		loguer	11
-loguerons		loguer	10
-logueront		loguer	15
-logués		loguer	38
-loguez		loguer	30
-loguiez		loguer	13
-loguions		loguer	19
-loguons		loguer	27
-loi	Règle, obligations écrites, prescrites ou tacites, auxquelles les personnes se doivent de se conformer.
-loin	Se trouvant à une grande distance.
-lointain	Qui est fort éloigné du lieu où l’on est ou dont on parle.
-lointaine		lointain	23
-lointainement	Au loin, dans le lointain.
-lointaines		lointain	1
-lointains		lointain	9
-loir	Petit mammifère de la famille des gliridés ou myoxidés, sous-ordre des myomorphes, ordre des rongeurs vrais.
-Loirétain	Habitant du Loiret.
-Loirétaine	Habitante du Loiret.
-Loirétaines		Loirétaine	0
-Loirétains		Loirétain	0
-loirs		loir	0
-lois		loi	0
-loisible	Qui est permis.
-loisibles		loisible	0
-loisir	Temps libre dont on peut disposer en dehors de ses occupations habituelles (emploi, gestion de la maison, éducation des enfants, etc.) et des contraintes qu’el…
-loisirs		loisir	0
-lokoum	Variante de loukoum.
-lokoums		lokoum	0
-lol	Formule qui est principalement utilisée à l’écrit (par Internet puis par SMS) et qui indique que son auteur est en train de rire ou est très amusé.
-lolette	Tétine.
-lolettes		lolette	0
-lolita	Jeune ou très jeune fille qui plait de par son extrême jeunesse.
-lolitas		lolita	0
-lollard	Relatif à une secte de pénitents apparue au XIVᵉ siècle.
-lollards		lollard	9
-lolo	Lait.
-lolos		lolo	0
-lombago	Variante de lumbago.
-lombagos		lombago	0
-lombaire	Relatif aux lombes.
-lombaires		lombaire	0
-lombalgie	Douleur située au niveau des vertèbres lombaires.
-lombalgies		lombalgie	0
-lombalgique	Qui souffre de lombalgie.
-lombalgiques		lombalgique	0
-lombard	Qui a un rapport avec la Lombardie.
-lombarde	Vent d'est qui souffle sur les crêtes frontalières des Alpes.
-lombardes		lombard	1
-lombards		lombard	9
-lombes	Parties musculaires, situées en arrière de l’abdomen, à droite et à gauche de la colonne vertébrale.
-lombosacré	Qui concerne les vertèbres lombaires et sacrées.
-lombosacrée		lombosacré	23
-lombosacrées		lombosacré	1
-lombosacrés		lombosacré	9
-lombosciatique	Synonyme de sciatique.
-lombosciatiques		lombosciatique	0
-lombostat	Orthèse lombaire.
-lombostats		lombostat	0
-lombric	Genre d’annélides de la famille des lumbricidés (Lumbricidae).
-lombricoïde	Qui a la forme du lombric, qui ressemble à un lombric.
-lombricoïdes		lombricoïde	0
-lombricole	Relatif à la lombriculture, l’élevage des lombrics.
-lombricoles		lombricole	0
-lombrics		lombric	0
-lombriculture	Élevage de lombrics.
-lombricultures		lombriculture	0
-loméchuse	Genre d’insectes coléoptères.
-loméchuses		loméchuse	0
-loméen	Qui concerne la ville de Lomé, au Togo, ses habitants, sa culture.
-loméenne		loméen	23
-loméennes		loméen	1
-loméens		loméen	9
-lomo	Appareil photo permettant de faire de la lomographie.
-lomos		lomo	0
-lompe	Espèce de poisson osseux marin de l’Atlantique Nord, la mer du Nord et la mer Baltique, au corps massif, recouvert de petits nodules, avec quatre rangées de tu…
-lompes		lompe	0
-londonien	Relatif à Londres et à ses habitants.
-londonienne		londonien	23
-londoniennes		londonien	1
-londoniens		londonien	9
-londres	Variante orthographique de londrès.
-lône	Tout bras du Rhône en voie de colmatage, soit naturellement, soit par suite d’un barrage construit en amont ou en aval.
-lônes		lône	0
-long	Qualifie des objets considérés dans leur dimension d’une extrémité à l’autre, par opposition à court.
-longane	Fruit du longanier (Dimocarpus longan), ressemblant au litchi, dont la peau extérieure, fine et dure, se pèle facilement, et dont l’arille translucide très suc…
-longanes		longane	0
-longanier	Nom vernaculaire de Dimocarpus longan petit arbre tropical de la famille des Sapindacées (Sapindaceae), originaire d’Asie du sud où il est cultivé pour ses fru…
-longaniers		longanier	0
-longanime	Qui fait preuve de patience dans l’épreuve, dans le malheur (peu usité, sens avant tout religieux).
-longanimité	Patience avec laquelle un être puissant et bon endure les fautes, les insultes qu’il pourrait punir.
-longanimités		longanimité	0
-longe	Longue corde pour le dressage des chevaux.
-longea		longer	39
-longeai		longer	55
-longeaient		longer	42
-longeais		longer	52
-longeait		longer	40
-longeâmes		longer	68
-longeant	Qui longe, qui présente la particularité de longer quelque chose, qui a pour propriété de longer.
-longeas		longer	12
-longeasse		longer	6
-longeassent		longer	17
-longeasses		longer	8
-longeassiez		longer	14
-longeassions		longer	25
-longeât		longer	20
-longeâtes		longer	2
-longée		longer	37
-longées		longer	36
-longent		longer	41
-longeôle	Autre orthographe de longeole.
-longeoles		longeole	0
-longeons		longer	59
-longer	Passer le long de.
-longera		longer	44
-longerai		longer	16
-longeraient		longer	63
-longerais		longer	18
-longerait		longer	49
-longeras		longer	7
-longère	Champ long et étroit.
-longèrent		longer	48
-longères		longère	0
-longerez		longer	5
-longeriez		longer	4
-longerions		longer	82
-longeron	Élément principal d’une structure porteuse, généralement posé de façon longitudinale ou latérale.
-longerons		longeron	0
-longeront		longer	54
-longés		longer	53
-longévité	Longue durée de la vie.
-longévités		longévité	0
-longez		longer	47
-longicorne	Se dit d'un insecte qui a de longues antennes.
-longicornes		longicorne	0
-longiez		longer	67
-longiligne	De taille longue et mince, et avec des membres longs et minces.
-longilignes		longiligne	0
-longimétrie	Art de mesurer par la trigonométrie les longueurs inaccessibles.
-longions		longer	65
-longipenne	Qui a de longues plumes à la queue et aux ailes.
-longipennes		longipenne	0
-longirostre	Qui a un bec ou un museau très long.
-longirostres		longirostre	0
-longitude	Angle formé par le méridien astronomique d’un lieu et le méridien de référence.
-longitudes		longitude	0
-longitudinal	Qui est étendu en long.
-longitudinale		longitudinal	23
-longitudinales		longitudinal	1
-longitudinaux		longitudinal	9
-longotte	Calicot gros et lourd qui forme une sorte d’intermédiaire entre la toile de coton et les tissus destinés à l’impression, ses fils de trame sont plus fin que ce…
-longottes		longotte	0
-longrine	Élément de fondation horizontal répartissant les charges de l’ouvrage sur ses points d’appui.
-longrines		longrine	0
-longs		long	9
-longtemps	Pendant un long temps.
-longue	Syllabe, voyelle dont la prononciation doit avoir plus de durée que celle d’une syllabe, d’une voyelle brève.
-longuement	D’une façon longue et qui passe la durée ordinaire.
-longues		long	1
-longuet	Petit marteau utilisé par les facteurs de piano pour enfoncer les chevilles dans la table.
-longuets		longuet	0
-longuette		longuet	23
-longuettes		longuet	1
-Longueuilloise	Habitante de Longueuil, ville québécoise située sur la rive opposée (sud) de l’île de Montréal.
-Longueuilloises		Longueuilloise	0
-longueur	Étendue d’un objet considéré, dans une seule dimension, d’une de ses extrémités à l’autre.
-longueurs		longueur	0
-lonzo	Longe de porc salée, séchée et affinée.
-lonzos		lonzo	0
-looch	Potion médicinale adoucissante et calmante.
-loochs		looch	0
-loofa	Courge d’Asie et d’Afrique de la famille des Cucurbitaceae.
-loofas		loofa	0
-look	Aspect, apparence, style, allure.
-looké		looker	46
-lookée		looker	37
-lookées		looker	36
-looker	Donner un look à.
-lookés		looker	38
-looks		look	0
-looping	Figure de voltige aérienne en forme de boucle où l'aéronef se cabre, passe sur le dos puis redescend.
-loopings		looping	0
-lophobranche	Dont les ouïes sont en forme de houppes.
-lophobranches		lophobranche	0
-lophophore	Genre d’oiseaux de l’ordre des galliformes et de la famille des phasianidés, comprenant trois espèces de grande taille semblables à des faisans, présentant un …
-lophophorés	Clade d'animaux protostomiens à l'intérieur du super-embranchement des lophotrochozoaires comprenant les groupes munis d'un lophophore, ce qui inclut principal…
-lophophorien	Tout animal du clade des lophophoriens.
-lophophoriens	Clade d'animaux protostomiens à l'intérieur du super-embranchement des lophotrochozoaires comprenant les groupes munis d'un lophophore, ce qui inclut principal…
-lopin	Petite parcelle de terrain.
-lopins		lopin	0
-loquace	Qui parle beaucoup.
-loquaces		loquace	0
-loquacité	Habitude de parler beaucoup.
-loquacités		loquacité	0
-loque	Étoffe réduite en lambeaux par suite de l’usure.
-loquer	Habiller.
-loqués		loquer	53
-loquet	Sorte de fermeture très simple que l’on met aux portes qui n’ont pas de serrure et à celles dont le pêne est dormant.
-loqueta		loqueter	33
-loquetai		loqueter	22
-loquetaient		loqueter	32
-loquetais		loqueter	29
-loquetait		loqueter	34
-loquetâmes		loqueter	3
-loquetant		loqueter	35
-loquetas		loqueter	12
-loquetasse		loqueter	6
-loquetassent		loqueter	17
-loquetasses		loqueter	8
-loquetassiez		loqueter	14
-loquetassions		loqueter	25
-loquetât		loqueter	20
-loquetâtes		loqueter	2
-loqueté		loqueter	46
-loqueteau	Petit loquet, utilisé notamment pour la fermeture de placards, de persiennes, de vasistas, qui se manœuvre parfois à l’aide d’un fil de tirage, et peut être mu…
-loqueteaux		loqueteau	0
-loquètent		loqueter	31
-loqueter	Remuer le loquet d’une porte pour indiquer qu’on a l’intention d’entrer.
-loquètera		loqueter	21
-loquèterai		loqueter	16
-loquèteraient		loqueter	28
-loquèterais		loqueter	18
-loquèterait		loqueter	26
-loquèteras		loqueter	7
-loquetèrent		loqueter	24
-loquèterez		loqueter	5
-loquèteriez		loqueter	4
-loquèterions		loqueter	11
-loquèterons		loqueter	10
-loquèteront		loqueter	15
-loquètes		loqueter	66
-loqueteuse	Celle dont les vêtements sont en loques.
-loqueteuses		loqueteux	1
-loqueteux	Qui est en loques.
-loquetez		loqueter	30
-loquetiez		loqueter	13
-loquetions		loqueter	19
-loquetons		loqueter	27
-loquets		loquet	0
-loquette	Petit morceau.
-loquettent		loqueter	31
-loquettera		loqueter	21
-loquetterai		loqueter	16
-loquetteraient		loqueter	28
-loquetterais		loqueter	18
-loquetterait		loqueter	26
-loquetteras		loqueter	7
-loquetterez		loqueter	5
-loquetteriez		loqueter	4
-loquetterions		loqueter	11
-loquetterons		loqueter	10
-loquetteront		loqueter	15
-loquettes		loquette	0
-loran	Ancien système de radio navigation maritime ou aérienne.
-loranthacées	Famille de plantes parasites comprenant le gui et le genre loranthus.
-lord	Titre honorifique usité en Angleterre, seigneur, sieur.
-lordose	Courbure de la colonne vertébrale à convexité antérieure.
-lordoses		lordose	0
-lords		lord	0
-lorette	Nom qu’on donne à certaines femmes de plaisir, qui tiennent le milieu entre la grisette et la femme entretenue, n’ayant pas un état comme la grisette, et n’éta…
-lorettes		lorette	0
-lorgna		lorgner	39
-lorgnai		lorgner	22
-lorgnaient		lorgner	42
-lorgnais		lorgner	52
-lorgnait		lorgner	40
-lorgnâmes		lorgner	3
-lorgnant		lorgner	43
-lorgnas		lorgner	12
-lorgnasse		lorgner	6
-lorgnassent		lorgner	17
-lorgnasses		lorgner	8
-lorgnassiez		lorgner	14
-lorgnassions		lorgner	25
-lorgnât		lorgner	20
-lorgnâtes		lorgner	2
-lorgné		lorgner	56
-lorgnée		lorgner	37
-lorgnées		lorgner	51
-lorgnent		lorgner	41
-lorgner	Regarder quelque chose ou quelqu'un du coin de l’œil avec envie ou curiosité
-lorgnera		lorgner	21
-lorgnerai		lorgner	50
-lorgneraient		lorgner	63
-lorgnerais		lorgner	18
-lorgnerait		lorgner	26
-lorgneras		lorgner	7
-lorgnèrent		lorgner	48
-lorgnerez		lorgner	58
-lorgneriez		lorgner	4
-lorgnerions		lorgner	11
-lorgnerons		lorgner	10
-lorgneront		lorgner	15
-lorgnés		lorgner	53
-lorgnette	Petite lunette d’approche dont on se sert pour voir les objets plus ou moins éloignés.
-lorgnettes		lorgnette	0
-lorgneur	Personne qui lorgne.
-lorgneurs		lorgneur	0
-lorgneuse	Personne qui lorgne.
-lorgneuses		lorgneuse	0
-lorgnez		lorgner	47
-lorgniez		lorgner	13
-lorgnions		lorgner	19
-lorgnon	Monocle à monture.
-lorgnons		lorgnon	0
-lori	Nom normalisé donné à dix genres d'oiseaux de la famille des psittaculidés (e.g.
-loricaire	Poisson du genre Loricaria, proche des silures, muni de plaques osseuses et d’une ventouse buccale, originaire des eaux douces d’Amérique du Sud.
-loricaires		loricaire	0
-lorientais	Relatif à Lorient, commune française située dans le département du Morbihan.
-lorientaise		lorientais	23
-lorientaises		lorientais	1
-loriot	Oiseau de l’ordre des passereaux, à peu près de la grosseur d’un merle, au plumage d’un beau jaune pour le mâle, verdâtre pour la femelle (Oriolus oriolus).
-loriots		loriot	9
-loriquet	Nom normalisé donné à deux genres d'oiseaux de petite taille et généralement multicolores et de couleurs très vives, comprenant 15 espèces de la famille des ps…
-loriquets		loriquet	0
-loris	Genre de la sous-famille des Lorinae comprenant des primates prosimiens de l’Inde.
-lorisidé	Membre des lorisidés.
-lorisidés	Famille de primates prosimiens au corps grêle.
-lorisiformes	Taxon de strepsirrhiniens (Strepsirrhini) opposé aux lémuriformes.
-lorrain	Relatif à la Lorraine.
-lorraine		lorrain	23
-lorraines		lorrain	1
-lorrains		lorrain	9
-lorries		lorry	0
-lorry	Petit chariot plat à poussée manuelle ou motorisée roulant sur une voie ferrée.
-lorrys		lorry	0
-lors	Ce temps-là. S’emploie seulement en composition dans les locutions suivantes :
-lorsque	Quand, au moment où.
-los	Louange, employé parfois dans le style recherché ou plaisant.
-losange	Les définitions suivantes sont équivalentes : quadrilatère dont les quatre côtés sont de même longueur.
-losangée	Féminin singulier de losangé.
-losangées		losanger	36
-losanger	Distribuer en forme de losanges.
-losangés		losangé	9
-losangique	Qui a la forme de losange.
-lose	Sorte de peluche ou de duvet qui s’accroche ou se forme sur les tissus et leur donne un aspect malpropre.
-loser	Personne sans succès social ou professionnel.
-losers		loser	0
-loses		lose	0
-loseur	Variante de looseur.
-loseurs		loseur	0
-loseuse	Variante orthographique de loseuse.
-loseuses		loseuse	0
-lot	Portion d’un tout que l’on partage entre plusieurs personnes.
-lote	Variante de lotte.
-loterie	Sorte de jeu de hasard où l’on fait des mises, pour lesquelles on reçoit des billets portant des numéros : celui ou ceux de ces numéros qui sortent, lorsque le…
-loteries		loterie	0
-lotes		lote	0
-loti	Devise officielle du Lesotho.
-lotie	Groupe d’œillets.
-lotier	Plante du genre Lotus, herbacée, annuelle ou vivace de la famille des Fabacées, sous-famille des Papillonoidées.
-lotiers		lotier	0
-loties		loti	1
-lotîmes		lotir	3
-lotion	Action de mouiller, d’imbiber d’un liquide quelque partie du corps pour l’adoucir, l’amollir, la rafraîchir, etc.
-lotionna		lotionner	33
-lotionnai		lotionner	22
-lotionnaient		lotionner	32
-lotionnais		lotionner	29
-lotionnait		lotionner	34
-lotionnâmes		lotionner	3
-lotionnant		lotionner	35
-lotionnas		lotionner	12
-lotionnasse		lotionner	6
-lotionnassent		lotionner	17
-lotionnasses		lotionner	8
-lotionnassiez		lotionner	14
-lotionnassions		lotionner	25
-lotionnât		lotionner	20
-lotionnâtes		lotionner	2
-lotionné		lotionner	46
-lotionnée		lotionner	37
-lotionnées		lotionner	36
-lotionnent		lotionner	31
-lotionner	Appliquer une lotion sur (quelque chose).
-lotionnera		lotionner	21
-lotionnerai		lotionner	16
-lotionneraient		lotionner	28
-lotionnerais		lotionner	18
-lotionnerait		lotionner	26
-lotionneras		lotionner	7
-lotionnèrent		lotionner	24
-lotionnerez		lotionner	5
-lotionneriez		lotionner	4
-lotionnerions		lotionner	11
-lotionnerons		lotionner	10
-lotionneront		lotionner	15
-lotionnés		lotionner	53
-lotionnez		lotionner	30
-lotionniez		lotionner	13
-lotionnions		lotionner	19
-lotionnons		lotionner	27
-lotions		lotion	0
-lotir	Diviser un domaine en lotissements.
-lotira		lotir	21
-lotirai		lotir	16
-lotiraient		lotir	28
-lotirais		lotir	18
-lotirait		lotir	26
-lotiras		lotir	7
-lotirent		lotir	24
-lotirez		lotir	5
-lotiriez		lotir	4
-lotirions		lotir	11
-lotirons		lotir	10
-lotiront		lotir	15
-lotis		loti	9
-lotissaient		lotir	32
-lotissais		lotir	29
-lotissait		lotir	34
-lotissant		lotir	35
-lotisse		lotir	89
-lotissement	Action de diviser en parts pour les vendre, un terrain, une propriété, etc.
-lotissements		lotissement	0
-lotissent		lotir	31
-lotisses		lotir	76
-lotisseur	Celui qui divisait les marchandises par lots.
-lotisseurs		lotisseur	0
-lotissez		lotir	30
-lotissiez		lotir	13
-lotissions		lotir	19
-lotissons		lotir	27
-lotit		lotir	107
-lotîtes		lotir	2
-loto	Sorte de jeu qu’on joue avec des numéros, dont les uns sont sur des sortes de boules, de jetons qu’on tire au sort, les autres sur des tableaux distribués aux …
-lotois	Relatif au Lot ou aux Lotois.
-lotoise		lotois	23
-lotoises		lotois	1
-lotos	Fruit au goût de miel qui fait perdre la mémoire, qui apparaît dans l’Odyssée d'Homère.
-lots		lot	0
-lotta	Engagée volontaire comme auxiliaire dans les forces armées finlandaises, membre de l’organisation Lotta Svärd (créée en 1918).
-lottas		lotta	0
-lotte	Poisson de rivière, et des lacs européens, à plusieurs barbillons, appartenant aux gadiformes, de nom scientifique Lota lota.
-lottes		lotte	0
-lotus	Nom usuel donné à plusieurs plantes appartenant à divers genres : Nelumbo avec le lotus sacré et le lotus jaune.
-loua		louer	39
-louable	Qui est digne de louange.
-louables		louable	0
-louage	Cession de l’usage de quelque chose, faite par le propriétaire pour un certain temps, moyennant un certain prix.
-louages		louage	0
-louai		louer	55
-louaient		louer	42
-louais		louer	52
-louait		louer	40
-louâmes		louer	68
-louange	Discours ou paroles par lesquelles on relève le mérite de quelqu’un, de quelque action, de quelque chose.
-louangea		louanger	39
-louangeai		louanger	22
-louangeaient		louanger	42
-louangeais		louanger	29
-louangeait		louanger	34
-louangeâmes		louanger	3
-louangeant		louanger	43
-louangeas		louanger	12
-louangeasse		louanger	6
-louangeassent		louanger	17
-louangeasses		louanger	8
-louangeassiez		louanger	14
-louangeassions		louanger	25
-louangeât		louanger	20
-louangeâtes		louanger	2
-louangée		louanger	45
-louangées		louanger	36
-louangent		louanger	31
-louangeons		louanger	27
-louanger	Manifester son admiration avec excès.
-louangera		louanger	21
-louangerai		louanger	16
-louangeraient		louanger	28
-louangerais		louanger	18
-louangerait		louanger	26
-louangeras		louanger	7
-louangèrent		louanger	24
-louangerez		louanger	5
-louangeriez		louanger	4
-louangerions		louanger	11
-louangerons		louanger	10
-louangeront		louanger	15
-louangés		louanger	53
-louangeur	Qui louange.
-louangeurs		louangeur	9
-louangeuse	Celle qui louange.
-louangeuses		louangeur	1
-louangez		louanger	30
-louangiez		louanger	13
-louangions		louanger	19
-louant		louer	43
-louas		louer	83
-louasse		louer	6
-louassent		louer	17
-louasses		louer	8
-louassiez		louer	14
-louassions		louer	25
-louât		louer	62
-louâtes		louer	2
-loubar	Variante de loubard.
-loubard	Jeune au comportement marginal, ressenti comme une menace, un danger et souvent effectivement délinquant.
-loubarde	Jeune au comportement marginal, ressentie comme une menace, un danger et souvent effectivement délinquante.
-loubardes		loubarde	0
-loubards		loubard	0
-loubars		loubar	0
-loubavitch	Relatif à une des branches principales du hassidisme.
-loubavitchs		loubavitch	9
-loubine	Bar commun, perche de Cayenne.
-loubines		loubine	0
-loucha		loucher	39
-louchai		loucher	55
-louchaient		loucher	42
-louchais		loucher	52
-louchait		loucher	40
-louchâmes		loucher	3
-louchant	Qui est affecté de strabisme.
-louchas		loucher	12
-louchasse		loucher	6
-louchassent		loucher	17
-louchasses		loucher	8
-louchassiez		loucher	14
-louchassions		loucher	25
-louchât		loucher	62
-louchâtes		loucher	2
-louche	Dont les yeux ont une direction différente.
-louchée	Ce que contient une louche.
-louchées		louchée	0
-louchement	Strabisme.
-louchements		louchement	0
-louchent		loucher	41
-loucher	Être atteint de strabisme, en parlant d'une personne.
-louchera		loucher	21
-loucherai		loucher	16
-loucheraient		loucher	28
-loucherais		loucher	18
-loucherait		loucher	26
-loucheras		loucher	7
-loucherbem	Variante de louchébem.
-loucherbems		loucherbem	0
-louchèrent		loucher	24
-loucherez		loucher	5
-loucherie	État des yeux qui louchent : strabisme.
-loucheries		loucherie	0
-loucheriez		loucher	4
-loucherions		loucher	11
-loucherons		loucher	10
-loucheront		loucher	15
-louches		louche	0
-louchet	Sorte de bêche étroite utilisée notamment par les pépiniéristes.
-louchets		louchet	0
-loucheur	Qui louche.
-loucheurs		loucheur	0
-loucheuse	Celle qui louche.
-loucheuses		loucheuse	0
-louchez		loucher	47
-louchi		louchir	46
-louchiez		loucher	13
-louchîmes		louchir	3
-louchions		loucher	19
-louchir	Devenir trouble, perdre sa transparence, en parlant d’un liquide.
-louchira		louchir	21
-louchirai		louchir	16
-louchiraient		louchir	28
-louchirais		louchir	18
-louchirait		louchir	26
-louchiras		louchir	7
-louchirent		louchir	24
-louchirez		louchir	5
-louchiriez		louchir	4
-louchirions		louchir	11
-louchirons		louchir	10
-louchiront		louchir	15
-louchis		louchir	79
-louchissaient		louchir	32
-louchissais		louchir	29
-louchissait		louchir	34
-louchissant		louchir	35
-louchisse		louchir	89
-louchissent		louchir	31
-louchisses		louchir	76
-louchissez		louchir	30
-louchissiez		louchir	13
-louchissions		louchir	19
-louchissons		louchir	27
-louchit		louchir	107
-louchîtes		louchir	2
-louchon	Tronc de sapin sans nœuds.
-louchonne	Nom donné parfois à la lune.
-louchonnes		louchonne	0
-louchons		loucher	135
-loué	Qui est l’objet de louange.
-louée	Pratique traditionnelle au cours de laquelle les domestiques proposaient leurs services.
-louées		louée	0
-louent		louer	41
-louer	Donner à louage ou à loyer.
-louera		louer	21
-louerai		louer	50
-loueraient		louer	63
-louerais		louer	60
-louerait		louer	49
-loueras		louer	57
-louèrent		louer	48
-louerez		louer	5
-loueriez		louer	74
-louerions		louer	11
-louerons		louer	61
-loueront		louer	15
-loués		louer	53
-loueur	Celui qui donne des louanges.
-loueurs		loueur	0
-loueuse	Celle qui loue.
-loueuses		loueuse	0
-louez		louer	47
-louf	Fou.
-loufiat	ou Garçon de café.
-loufiats		loufiat	0
-loufoque	Fou.
-loufoquerie	Acte, parole loufoque, extravagance.
-loufoqueries		loufoquerie	0
-loufoques		loufoque	0
-loufs		louf	0
-louftingue	Fou.
-louftingues		louftingue	0
-lougre	Sorte de bâtiment marchand destiné au cabotage avec deux ou trois mâts qui portent des voiles au tiers.
-lougres		lougre	0
-louiez		louer	13
-louions		louer	65
-louis	Ancienne monnaie d’or française.
-louise	Femme.
-louises		louise	0
-louisianais	Relatif à la Louisiane et à ses habitants.
-louisianaise		louisianais	23
-louisianaises		louisianais	1
-loukoum	Bonbon oriental moelleux à base d’amidon gélifié dans l’eau, de sucre, de colorants, d’arômes, de pistache, de sésame, etc..
-loukoums		loukoum	0
-loulou	Petit chien à longs poils, au museau pointu et à la queue recourbée sur le dos.
-loulous	Pluriel de loulou (chien).	loulou
-louloute	Petit louve, mot tendre, souvent adressé aux enfants.
-louloutes		louloute	0
-louloutte	Variante orthographique de louloute.
-loulouttes		louloutte	0
-louma	Caméra de prise de vue multidirectionnelle fixée sur une grue dirigée par une télécommande ou manuellement.
-loumas		louma	0
-lounge	Style de musique minimaliste diffusée dans les bars d’ambiance, petits cabarets ou bar-salons.
-lounges		lounge	0
-louons		louer	59
-loup	Mammifère carnivore de la famille des canidés, à l'allure d'un grand chien au pelage gris jaunâtre, aux yeux obliques et aux oreilles dressées, de nom scientif…
-loupa		louper	39
-loupage	Fait de louper quelque-chose.
-loupages		loupage	0
-loupai		louper	55
-loupaient		louper	42
-loupais		louper	52
-loupait		louper	40
-loupâmes		louper	3
-loupant		louper	35
-loupas		louper	12
-loupasse		louper	6
-loupassent		louper	17
-loupasses		louper	8
-loupassiez		louper	14
-loupassions		louper	25
-loupât		louper	20
-loupâtes		louper	2
-loupe	Verre convexe des deux côtés qui grossit les objets à la vue.
-loupée		louper	45
-loupées		louper	51
-loupent		louper	41
-louper	Rater.
-loupera		louper	44
-louperai		louper	50
-louperaient		louper	28
-louperais		louper	60
-louperait		louper	49
-louperas		louper	57
-loupèrent		louper	24
-louperez		louper	58
-louperiez		louper	4
-louperions		louper	11
-louperons		louper	10
-louperont		louper	15
-loupés		loupé	0
-loupez		louper	47
-Loupiac	Commune française, située dans le département de la Gironde.
-loupiez		louper	67
-loupions		louper	19
-loupiot	Petit enfant.
-loupiote	Petite lampe ou bougie.
-loupiotes	Pluriel de loupiote (lampe)..	loupiote
-loupiots		loupiot	0
-loupiotte	Autre orthographe (moins fréquente) de loupiote (petite lampe ou bougie).
-loupiottes		loupiotte	0
-loupons		louper	27
-loups		loup	0
-loura		lourer	33
-lourai		lourer	22
-louraient		lourer	32
-lourais	Relatif à Loures-Barousse, commune française située dans le département des Hautes-Pyrénées.
-lourait		lourer	34
-lourâmes		lourer	3
-lourant		lourer	43
-louras		lourer	12
-lourasse		lourer	6
-lourassent		lourer	17
-lourasses		lourer	8
-lourassiez		lourer	14
-lourassions		lourer	25
-lourât		lourer	20
-lourâtes		lourer	2
-lourd	Pesant ; dont le poids est élevé.
-lourda		lourder	33
-lourdai		lourder	22
-lourdaient		lourder	32
-lourdais	Relatif à Lourde, commune française située dans le département de la Haute-Garonne.
-lourdaise	Race surtout laitière de taurin, originaire de France (Hautes-Pyrénées), à robe froment blond ou blanche.
-lourdaises		lourdais	1
-lourdait		lourder	40
-lourdâmes		lourder	3
-lourdant		lourder	35
-lourdas		lourder	12
-lourdasse	Qualifie un type de neige peu propice à la pratique de sports de glisse.
-lourdassent		lourder	17
-lourdasses		lourdasse	0
-lourdassiez		lourder	14
-lourdassions		lourder	25
-lourdât		lourder	20
-lourdâtes		lourder	2
-lourdaud	Lourd et maladroit, pataud.
-lourdaude	Femme lourde et maladroite, pataude.
-lourdaudes		lourdaude	0
-lourdauds		lourdaud	0
-lourde	Porte.
-lourdée		lourder	45
-lourdées		lourder	51
-lourdement	D’une manière lourde, gauche, sans finesse.
-lourdent		lourder	31
-lourder	Mettre à la porte.
-lourdera		lourder	21
-lourderai		lourder	16
-lourderaient		lourder	28
-lourderais		lourder	18
-lourderait		lourder	26
-lourderas		lourder	7
-lourdèrent		lourder	24
-lourderez		lourder	5
-lourderie	Qualité de ce qui est lourd, grossier, malséant.
-lourderies		lourderie	0
-lourderiez		lourder	4
-lourderions		lourder	11
-lourderons		lourder	10
-lourderont		lourder	15
-lourdés		lourder	53
-lourdeur	État de ce qui est lourd.
-lourdeurs		lourdeur	0
-lourdez		lourder	30
-lourdiez		lourder	13
-lourdingue	Lourd, dépourvu de finesse, de subtilité.
-lourdingues		lourdingue	0
-lourdions		lourder	19
-lourdise	Lourdeur, lourderie.
-lourdises		lourdise	0
-lourdons		lourder	27
-lourds		lourd	9
-louré	Indique qu'une note est jouée sur toute sa longueur, sans la raccourcir, tout en étant détachée des notes précédente et suivante.
-lourée		lourer	37
-lourées		lourer	36
-lourent		lourer	31
-lourer	Jouer les notes détachées mais sans raccourcir les notes.
-lourera		lourer	21
-lourerai		lourer	16
-loureraient		lourer	28
-lourerais		lourer	18
-lourerait		lourer	26
-loureras		lourer	7
-lourèrent		lourer	24
-lourerez		lourer	5
-loureriez		lourer	4
-lourerions		lourer	11
-lourerons		lourer	10
-loureront		lourer	15
-lourés		lourer	38
-lourez		lourer	30
-louriez		lourer	13
-lourions		lourer	19
-lourons		lourer	27
-lousse	Lâche, détendu, desserré, ample.
-lousses		lousse	0
-loustic	Amuseur attitré d'une compagnie militaire.
-loustics		loustic	0
-loutre	Espèce de mammifère carnivore de la famille des martres, grand à peu près comme un renard, mais plus bas de pattes, et à tête plate et obtuse, semi-aquatiques,…
-loutres		loutre	0
-loutrier	Personne qui chasse les loutres.
-loutriers		loutrier	0
-louva		louver	33
-louvai		louver	22
-louvaient		louver	32
-louvais		louver	29
-louvait		louver	34
-louvâmes		louver	3
-louvaniste	Relatif à la ville belge de Louvain.
-louvanistes		louvaniste	0
-louvant		louver	35
-louvas		louver	12
-louvasse		louver	6
-louvassent		louver	17
-louvasses		louver	8
-louvassiez		louver	14
-louvassions		louver	25
-louvat	Louveteau âgé d'un an.
-louvâtes		louver	2
-louve	Loup femelle.
-louvée		louver	37
-louvées		louver	36
-louvent		louver	31
-louver	Faire un trou dans une pierre pour y mettre la louve dans le but de la soulever.
-louvera		louver	21
-louverai		louver	16
-louveraient		louver	28
-louverais		louver	18
-louverait		louver	26
-louveras		louver	7
-louvèrent		louver	24
-louverez		louver	5
-louveriez		louver	4
-louverions		louver	11
-louverons		louver	10
-louveront		louver	15
-louves		louve	0
-louvet	Maladie du charbon chez les ovins.
-louveta		louveter	33
-louvetai		louveter	22
-louvetaient		louveter	32
-louvetais		louveter	29
-louvetait		louveter	34
-louvetâmes		louveter	3
-louvetant		louveter	35
-louvetas		louveter	12
-louvetasse		louveter	6
-louvetassent		louveter	17
-louvetasses		louveter	8
-louvetassiez		louveter	14
-louvetassions		louveter	25
-louvetât		louveter	20
-louvetâtes		louveter	2
-louveté		louveter	46
-louveteau	Petit du loup et de la louve.
-louveteaux		louveteau	0
-louvètent		louveter	31
-louveter	Mettre bas, en parlant d’une louve.
-louvètera		louveter	21
-louvèterai		louveter	16
-louvèteraient		louveter	28
-louvèterais		louveter	18
-louvèterait		louveter	26
-louvèteras		louveter	7
-louvetèrent		louveter	24
-louvèterez		louveter	5
-louveterie	Équipage pour la chasse au loup.
-louveteries		louveterie	0
-louvèteriez		louveter	4
-louvèterions		louveter	11
-louvèterons		louveter	10
-louvèteront		louveter	15
-louvètes		louveter	66
-louvetez		louveter	30
-louvetier	Chasseur de loups et de certaines bêtes nuisibles.
-louvetière	Chasseuse de loups et de certaines bêtes nuisibles.
-louvetières		louvetière	0
-louvetiers		louvetier	0
-louvetiez		louveter	13
-louvetions		louveter	19
-louvetons		louveter	27
-louvets		louvet	9
-louvette	Synonyme de crocote (hybride).
-louvettent		louveter	31
-louvettera		louveter	21
-louvetterai		louveter	16
-louvetteraient		louveter	28
-louvetterais		louveter	18
-louvetterait		louveter	26
-louvetteras		louveter	7
-louvetterez		louveter	5
-louvetteriez		louveter	4
-louvetterions		louveter	11
-louvetterons		louveter	10
-louvetteront		louveter	15
-louvettes		louvette	0
-louvez		louver	30
-louviérois	Relatif à La Louvière en Belgique.
-louvièroise		louvièrois	23
-louvièroises		louvièrois	1
-louviez		louver	13
-louvions		louver	19
-louvoie		louvoyer	64
-louvoiement	Action de louvoyer.
-louvoiements		louvoiement	0
-louvoient		louvoyer	41
-louvoiera		louvoyer	21
-louvoierai		louvoyer	16
-louvoieraient		louvoyer	28
-louvoierais		louvoyer	18
-louvoierait		louvoyer	26
-louvoieras		louvoyer	7
-louvoierez		louvoyer	5
-louvoieriez		louvoyer	4
-louvoierions		louvoyer	11
-louvoierons		louvoyer	10
-louvoieront		louvoyer	15
-louvoies		louvoyer	66
-louvons		louver	27
-louvoya		louvoyer	33
-louvoyage	Action de louvoyer.
-louvoyages		louvoyage	0
-louvoyai		louvoyer	22
-louvoyaient		louvoyer	42
-louvoyais		louvoyer	29
-louvoyait		louvoyer	40
-louvoyâmes		louvoyer	3
-louvoyant		louvoyer	35
-louvoyas		louvoyer	12
-louvoyasse		louvoyer	6
-louvoyassent		louvoyer	17
-louvoyasses		louvoyer	8
-louvoyassiez		louvoyer	14
-louvoyassions		louvoyer	25
-louvoyât		louvoyer	62
-louvoyâtes		louvoyer	2
-louvoyé		louvoyer	56
-louvoyer	Faire plusieurs routes en zigzag au plus près du vent, en lui présentant tantôt un côté du bâtiment, tantôt l’autre.
-louvoyèrent		louvoyer	24
-louvoyez		louvoyer	30
-louvoyiez		louvoyer	13
-louvoyions		louvoyer	19
-louvoyons		louvoyer	59
-lova		lover	39
-lovai		lover	22
-lovaient		lover	42
-lovais		lover	52
-lovait		lover	40
-lovâmes		lover	3
-lovant		lover	43
-lovas		lover	12
-lovasse		lover	6
-lovassent		lover	17
-lovasses		lover	8
-lovassiez		lover	14
-lovassions		lover	25
-lovât		lover	20
-lovâtes		lover	2
-lové	Sou, somme d’argent.
-lovée		lover	45
-lovées		lover	51
-lovelace	Élégant séducteur de femmes.
-lovelaces		lovelace	0
-lovent		lover	41
-lover	Enrouler en spirale (un câble, un cordage, un bout ou une haussière).
-lovera		lover	21
-loverai		lover	16
-loveraient		lover	28
-loverais		lover	18
-loverait		lover	26
-loveras		lover	7
-lovèrent		lover	24
-loverez		lover	5
-loveriez		lover	4
-loverions		lover	11
-loverons		lover	10
-loveront		lover	15
-lovés	Pluriel de lové (ce pluriel signifiant argent, de façon générale, tout comme on dit les sous).	lové
-lovez		lover	30
-loviez		lover	13
-lovions		lover	19
-lovons		lover	27
-loxodromie	Courbe tracée sur la surface d'une sphère, qui coupe tous les méridiens sous le même angle.
-loxodromies		loxodromie	0
-loxodromique	Relatif à la loxodromie.
-loxodromiques		loxodromique	0
-loyal	Qui montre de la loyauté.
-loyale		loyal	23
-loyalement	D’une manière loyale.
-loyales		loyal	1
-loyalisme	Obéissance fidèle à son souverain, au gouvernement établi.
-loyalismes		loyalisme	0
-loyaliste	Personne qui a des sentiments de loyalisme.
-loyalistes		loyaliste	0
-loyauté	Fidélité à tenir parole, à faire honneur à ses engagements.
-loyautés		loyauté	0
-loyaux		loyal	9
-loyer	Prix de la location d’une maison ou d’un appartement.
-loyers		loyer	0
-lozérien	Relatif à la Lozère, département français, ou à ses habitants.
-lozérienne		lozérien	23
-lozériennes		lozérien	1
-lozériens		lozérien	9
+0loa	Esprit qui vient chevaucher un choual et auquel on rend un culte.
+3der	Programme dont la fonction est d’en charger d’autres.
+6s		6	0
+3s		3	0
+4e	Infestation par un filaire appelé Filaria loa ou Loa-loa.
+5s		5	0
+2b	chandelle, coup qui consiste à faire passer la balle ou le ballon au-dessus d’un adversaire, assez haut pour qu’il ne puisse pas l’intercepter.
+3a		3er	13
+4i		3er	m
+5ent		3er	w
+5re	Relatif aux lobes.
+7s		7	0
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3bies		4y	0
+4y	Groupe ayant des intérêts convergents et réalisant des activités ayant pour but d’influencer la prise de décisions dans une orientation favorable à ses intérêt…
+5ing	Activités ou pressions exercées par un lobby afin d’obtenir des décisions qui lui sont favorables ou une influence favorable sur des décisions.
+8s		8	0
+6sme	Activités ou pressions exercées par un lobby afin d’obtenir des décisions qui lui sont favorables.
+9s		9	0
+7te	personne engagée dans des activités de lobbying, de lobbyisme
+9s		9	0
+5s		5	0
+6me	Variante orthographique de lobbyisme.
+8s		8	0
+6te	Variante de lobbyiste.
+8s		8	0
+3e	Division d’une partie de certains organes formée par des sillons ou des échancrures.
+4ctomie	Ectomie d’un lobe d’organe comme le poumon, le foie, le cerveau, la glande thyroïde.
+as		a	0
+3ée		3er	11
+5s		3er	10
+4lia	Plante de la famille des campanulacées, originaire d'Amérique du nord, et comportant plusieurs espèces appréciées pour leurs qualités ornementales et médicinal…
+7s		7	0
+6e	Plante du genre Lobelia, de la famille des Campanulacées, originaire d'Amérique du nord, et comportant plusieurs espèces appréciées pour leurs qualités ornemen…
+7s		7	0
+6ne	Alcaloïde pyridinique dont les doses thérapeutiques sont très proches des doses toxiques bien qu’on lui ait découvert bon nombre de propriétés médicales.
+8s		8	0
+3ent		4r	v
+4r	Effectuer un lob.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+4z		4r	u
+3i	Synonyme de baoulé (race de bovins).
+0Lobie	Celle qui appartient au peuple des Lobis.
+5s		5	0
+0lobiez		3er	d
+4ons		3er	j
+4s		4	0
+3ons		3er	r
+4tomie	Intervention chirurgicale sur le cerveau consistant en une section de la substance blanche du lobe frontal afin d'isoler le cortex préfrontal du reste du cerve…
+9s		9	0
+8sa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action de lobotomiser.
+es		e	0
+9é	Qui a subi une lobotomie.
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Faire subir une lobotomie à.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+3s		3	0
+3ulaire	Qui a la forme d’un lobule, qui appartient à un lobule.
+9s		9	0
+5e	Petit lobe.
+5ée		6	n
+7s		6	1
+5es		6	0
+6use		7x	n
+9s		7x	1
+7x	Qui contient des lobules, est composé de lobules (petits lobes).
+2cal	Qui appartient à un lieu.
+5e		5	n
+6ment	D’une manière locale, relativement aux lieux.
+6s		5	1
+5ier	Journaliste qui rapporte les nouvelles d'intérêt seulement local.
+6ère	Femme journaliste qui rapporte les nouvelles d'intérêt seulement local.
+9s		9	0
+6ers		8	0
+6sa		7er	13
+8ble	Qui peut être localisé.
+bs		b	0
+8i		7er	m
+9ent		7er	16
+9s		7er	1g
+9t		7er	14
+7âmes		7er	3
+7ant	Qui localise.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ateur	Qui sert à localiser, à situer dans l'espace.
+cs		c	0
+9ion	Action de localiser, de se localiser.
+cs		c	0
+7é	Qui reste limité à une zone déterminée.
+8e		8	n
+9s		8	1
+7ent		8r	15
+8r	Déterminer avec un certain degré de précision l’emplacement physique de quelqu’un ou quelque chose.
+9a		9	18
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	1i
+7és		8	9
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	1t
+7me	Doctrine qui consiste à privilégier ce qui est local.
+9s		9	0
+7ons		7er	1n
+7te	Qui privilégie ce qui est local.
+9s		9	0
+6té	Lieu habité.
+8s		8	0
+4taire	Celui, celle qui occupe une maison ou une partie de maison à loyer.
+9s		9	0
+5eur	Celui qui donne à bail.
+8s		8	0
+5if	Relatif à une location ou au locataire.
+7s		7	9
+6on	Action par laquelle le propriétaire d’une chose la donne à quelqu’un, à titre de louage ou de bail.
+8s		8	0
+6ve		6f	n
+8s		6f	1
+5rice	Celle qui donne à bail.
+9s		9	0
+4ux		4l	9
+4vore	Qui se nourrit d’aliments produits près de chez lui.
+8s		8	0
+7isme	Pratique consistant à se nourrir d’aliments produits près de chez soi.
+bs		b	0
+3h	Plan d’eau, lac, fjord, estuaire, baie ou crique en Écosse ou en Irlande.
+4a		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Nom donné à plusieurs espèces de petits poissons osseux d’eau douce de différentes familles, allongés, pourvus de 6 à 10 barbillons, entre autres de la famille…
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Secouer, branler.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4ies	Pertes de sang, de débris de muqueuse et de sécrétions lymphatiques et glandulaires s’écoulant par le vagin pendant les vingt jours suivant l’accouchement jusq…
+6z		4er	d
+5ons		4er	j
+4on	Amende, contravention.
+6s		6	0
+4s		4	0
+3i		3us	0
+3kisme	Philosophie de John Locke.
+8s		8	0
+6te	Partisan de John Locke et de sa philosophie.
+8s		8	0
+4out	Variante de lock-out.
+7a		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Employé en lockout.
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Décider le lock-out de.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	0
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7s		7	0
+3o	Locomotive.
+4mobile	Sorte de machine à vapeur, puis ensuite à moteur à combustion interne, qui se déplace et qui servait à l’agriculture ou à l’industrie.
+as		a	0
+6teur	Qui opère la locomotion.
+as		a	9
+7if	Relatif à la locomotion.
+9s		9	0
+8on	Changement de lieu en vertu de la faculté locomotrice.
+as		a	0
+8ve	Machine actionnée par la vapeur, le fioul ou l’électricité, montée sur roues, qui sert à la traction de voitures et/ou de wagons placée sur une voie ferrée, ou…
+as		8f	1
+7rice	Sorte de locomotive à moteur diesel ou électrique.
+bs		b	0
+4régional	Qui concerne une partie spécifique du corps.
+ce		c	n
+ds		c	1
+bux		bl	9
+4s		4	0
+4tracteur	Engin de traction évoluant sur rail ou sur route.
+cs		c	0
+3ulaire	Qui est partagé en plusieurs locules, loges.
+9s		9	0
+5e	Loge.
+5ée		6	n
+7s		6	1
+5es		6	0
+6use		7x	31
+9s	Pluriel de loculeuse.
+7x	Synonyme de loculaire.
+4s	Emplacement d’un gène sur un chromosome.
+5te	Genre d’insectes orthoptères plus généralement appelés criquets.
+7lle	Genre de petit oiseau passereau, fauvette de marais dont le chant évoque celui d’un insecte tel une locuste.
+as		a	0
+7s		7	0
+4teur	Personne qui parle.
+8s		8	0
+5ion	Unité fonctionnelle du langage, composée de plusieurs mots graphiques, appartenant à la langue et devant être apprise en tant que forme globale non divisible.
+8s		8	0
+5rice	Personne qui parle.
+9s		9	0
+2den	Tissu feutré et velu, chaud et imperméable, en laine verte, utilisé d’abord en Allemagne, en Autriche et en Suisse, et servant notamment à la confection de man…
+5s		5	0
+3ge	Résidence pour touristes située dans des espaces naturels.
+5s		5	0
+3s	Variante de lauds.
+2empia	Variante de lumpia.
+7s		7	0
+1œss	Dépôt sédimentaire détritique meuble, d’origine éolienne et périglaciaire, limon jaune clair ou chamois, au toucher farineux et pulvérulent, renfermant à l’ori…
+4ique	De la nature du lœss.
+8s		8	0
+1of	Côté que le navire présente au vent.
+3a		3er	13
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3e		4r	1s
+4nt		4r	v
+4r	Modifier l’axe du bateau (voilier) pour le rapprocher du lit du vent.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4r	1u
+4z		4r	3n
+3iez		3er	d
+4ons		3er	j
+3ons		3er	r
+3s		3	0
+3t	Logement constitué d'espaces ouverts le plus souvent situé dans un ancien atelier, entrepôt ou usine.
+4s		4	0
+2g	Mesure des liquides chez les Hébreux, valant 0,251 litre.
+3aniacées	Famille de plantes formée d’espèces séparées des rubiacées et des gentianées.
+4rithme	Nombre pris dans une progression arithmétique et correspondant à un autre nombre pris dans une progression géométrique.
+as		a	0
+9ique	Relatif aux logarithmes.
+ds		d	0
+4tome	Mot qui n’a pas de signification, mais qui est construit avec des syllabes et conformément aux schémas phonologiques d’une langue.
+8s		8	0
+3e	Petite cabane, cabanon, hutte.
+4a		4r	13
+5ble	Où l’on peut loger commodément.
+8s		8	0
+5i		4r	1j
+6ent		4r	16
+6s	Relatif aux Loges, commune française située dans le département de la Seine-Maritime.
+6t		4r	14
+4âmes		4r	3
+4ant		4r	17
+5s		4r	c
+6se		4r	6
+8nt		4r	26
+8s		4r	8
+7iez		4r	e
+8ons		4r	p
+4ât		4r	k
+6es		4r	2
+3ée		4	n
+5s		3er	1f
+3ement	Endroit où loger.
+8s		8	0
+4nt		4r	15
+4ons		4r	r
+4r	Séjourner ; avoir sa demeure habituelle ou temporaire dans un logis.
+5a		5	18
+6i		5	1e
+7ent		5	1r
+7s		5	i
+7t		5	1d
+6s		5	1l
+3èrent		3er	1c
+3erez		5	1m
+5iez		5	4
+6ons		5	2a
+5ons		5	1p
+7t		5	1i
+4s		4	0
+4tte	Petite loge.
+7s		7	0
+4ur	Celui qui loge moyennant finance.
+6s		6	0
+5se	Celle qui loge moyennant finance.
+7s		7	0
+4z		4r	1b
+3gia	Galerie, portique en avant-corps, pratiqué à l’un des étages d’un édifice, pour jouir de la vue du dehors et de la fraîcheur de l’air.
+6s		6	0
+3iciel	Qui concerne les aspects logiques d’un ordinateur ou d’un système de traitement de l’information, par opposition aux aspects matériels.
+8le		8	n
+as		8	1
+8s		8	9
+7n	Spécialiste de la logique en tant que discipline.
+8ne	Spécialiste de la logique en tant que discipline.
+as		a	0
+8s		8	0
+6sme	Attitude préférentielle envers ce qui est logique au point de l’appliquer à des domaines étrangers à la logique.
+9s		9	0
+7te	Qui applique, extrapole les notions du domaine de la logique à d’autres domaines.
+9s		9	0
+4ez		3er	1v
+4gramme	Organigramme de programmation, schéma logique.
+as		a	0
+4n	Identifiant à fournir pour accéder à un système informatique, et associé à un utilisateur (ou à un type d’utilisateur).
+5s		5	0
+4ons		3er	1t
+4que	Qui est conforme aux règles de la raison, rationnel.
+7ment	D’une manière conforme à la logique.
+7s		7	0
+4s	Endroit où l’on demeure.
+5te	Comptable dans les antiques villes grecques.
+7s		7	0
+6icien	Spécialiste de la logistique.
+bne	Spécialiste de la logistique.
+ds		d	0
+bs		b	0
+7que	Ensemble des moyens et méthodes de transport, de manutention ou de ravitaillement.
+as		a	0
+4thèque	Site web où il est possible de téléverser (habituellement gratuitement) des logiciels.
+as		a	0
+3o	Logotype, symbole ou emblème qui représente une marque, une organisation, une entreprise commerciale ou tout autre entité.
+4gramme	Caractère représentant un morphème (mot, etc.) ayant un sens et une séquence de phonèmes (sons).
+as		a	0
+7phe	Prosateur grec.
+as		a	0
+9ie	Art du logographe ou la composition en prose.
+bs		b	0
+aque	Relatif aux logogrammes.
+ds		d	0
+6iphe	Jeu d’esprit qui consiste à former d’autres mots avec les lettres d’un mot.
+as		a	0
+4machie	Dispute de mots lorsque chacun utilise des mots dans un sens différent de celui de l'autre, usage de termes creux.
+as		a	0
+9que	Relatif à la logomachie.
+cs		c	0
+4pède	Professionnel de la logopédie ou orthophonie, la thérapie du langage.
+8s		8	0
+5édie	Art de prononcer correctement, de corriger les défauts de prononciation.
+9s		9	0
+8ste	Professionnel de la logopédie ou orthophonie, la thérapie du langage.
+bs		b	0
+4rrhée	Trouble du langage caractérisé par un besoin irrésistible et morbide de parler.
+9s		9	0
+8ique	Qui tient de la logorrhée.
+cs		c	0
+4s	La raison, le discours rationnel, par opposition au muthos, le discours irrationnel.
+4thète	Secrétaire responsable d'un important bureau administratif dans l’Empire byzantin
+9s		9	0
+5ype	Ensemble de caractères réunis en un seul pour en faciliter la composition manuelle.
+8s		8	0
+3s		3	0
+3ua		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4é		4er	1k
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Humecter les formes des pains de sucre, en les frottant à l’intérieur avec un linge mouillé.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	1l
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+2i	Règle, obligations écrites, prescrites ou tacites, auxquelles les personnes se doivent de se conformer.
+3n	Se trouvant à une grande distance.
+4tain	Qui est fort éloigné du lieu où l’on est ou dont on parle.
+8e		8	n
+9ment	Au loin, dans le lointain.
+9s		8	1
+8s		8	9
+3r	Petit mammifère de la famille des gliridés ou myoxidés, sous-ordre des myomorphes, ordre des rongeurs vrais.
+0Loirétain	Habitant du Loiret.
+9e	Habitante du Loiret.
+as		a	0
+9s		9	0
+0loirs		4	0
+3s		3	0
+4ible	Qui est permis.
+8s		8	0
+5r	Temps libre dont on peut disposer en dehors de ses occupations habituelles (emploi, gestion de la maison, éducation des enfants, etc.) et des contraintes qu’el…
+6s		6	0
+2koum	Variante de loukoum.
+6s		6	0
+2l	Formule qui est principalement utilisée à l’écrit (par Internet puis par SMS) et qui indique que son auteur est en train de rire ou est très amusé.
+3ette	Tétine.
+7s		7	0
+3ita	Jeune ou très jeune fille qui plait de par son extrême jeunesse.
+6s		6	0
+3lard	Relatif à une secte de pénitents apparue au XIVᵉ siècle.
+7s		7	9
+3o	Lait.
+4s		4	0
+2mbago	Variante de lumbago.
+7s		7	0
+5ire	Relatif aux lombes.
+8s		8	0
+5lgie	Douleur située au niveau des vertèbres lombaires.
+9s		9	0
+8que	Qui souffre de lombalgie.
+bs		b	0
+5rd	Qui a un rapport avec la Lombardie.
+7e	Vent d'est qui souffle sur les crêtes frontalières des Alpes.
+8s		7	1
+7s		7	9
+4es	Parties musculaires, situées en arrière de l’abdomen, à droite et à gauche de la colonne vertébrale.
+4osacré	Qui concerne les vertèbres lombaires et sacrées.
+ae		a	n
+bs		a	1
+as		a	9
+6ciatique	Synonyme de sciatique.
+es		e	0
+6tat	Orthèse lombaire.
+9s		9	0
+4ric	Genre d’annélides de la famille des lumbricidés (Lumbricidae).
+7oïde	Qui a la forme du lombric, qui ressemble à un lombric.
+bs		b	0
+8le	Relatif à la lombriculture, l’élevage des lombrics.
+as		a	0
+7s		7	0
+7ulture	Élevage de lombrics.
+ds		d	0
+3échuse	Genre d’insectes coléoptères.
+9s		9	0
+4en	Qui concerne la ville de Lomé, au Togo, ses habitants, sa culture.
+6ne		6	n
+8s		6	1
+6s		6	9
+3o	Appareil photo permettant de faire de la lomographie.
+4s		4	0
+3pe	Espèce de poisson osseux marin de l’Atlantique Nord, la mer du Nord et la mer Baltique, au corps massif, recouvert de petits nodules, avec quatre rangées de tu…
+5s		5	0
+2ndonien	Relatif à Londres et à ses habitants.
+9ne		9	n
+bs		9	1
+9s		9	9
+4res	Variante orthographique de londrès.
+1ône	Tout bras du Rhône en voie de colmatage, soit naturellement, soit par suite d’un barrage construit en amont ou en aval.
+4s		4	0
+1ong	Qualifie des objets considérés dans leur dimension d’une extrémité à l’autre, par opposition à court.
+4ane	Fruit du longanier (Dimocarpus longan), ressemblant au litchi, dont la peau extérieure, fine et dure, se pèle facilement, et dont l’arille translucide très suc…
+7s		7	0
+6ier	Nom vernaculaire de Dimocarpus longan petit arbre tropical de la famille des Sapindacées (Sapindaceae), originaire d’Asie du sud où il est cultivé pour ses fru…
+9s		9	0
+7me	Qui fait preuve de patience dans l’épreuve, dans le malheur (peu usité, sens avant tout religieux).
+8ité	Patience avec laquelle un être puissant et bon endure les fautes, les insultes qu’il pourrait punir.
+bs		b	0
+4e	Longue corde pour le dressage des chevaux.
+5a		5r	13
+6i		5r	1j
+7ent		5r	16
+7s		5r	1g
+7t		5r	14
+5âmes		5r	1w
+5ant	Qui longe, qui présente la particularité de longer quelque chose, qui a pour propriété de longer.
+6s		5r	c
+7se		5r	6
+9nt		5r	h
+9s		5r	8
+8iez		5r	e
+9ons		5r	p
+5ât		5r	k
+7es		5r	2
+4ée		4er	11
+6s		4er	10
+4ent		5r	15
+5ôle	Autre orthographe de longeole.
+5oles		8	0
+6ns		5r	1n
+5r	Passer le long de.
+6a		6	18
+7i		6	g
+8ent		6	1r
+8s		6	i
+8t		6	1d
+7s		6	7
+4ère	Champ long et étroit.
+7nt		4er	1c
+7s		7	0
+4erez		6	5
+6iez		6	4
+7ons		6	2a
+6on	Élément principal d’une structure porteuse, généralement posé de façon longitudinale ou latérale.
+8s		8	0
+8t		6	1i
+4és		4er	1h
+5vité	Longue durée de la vie.
+9s		9	0
+4ez		5r	1b
+4icorne	Se dit d'un insecte qui a de longues antennes.
+as		a	0
+5ez		4er	1v
+5ligne	De taille longue et mince, et avec des membres longs et minces.
+as		a	0
+5métrie	Art de mesurer par la trigonométrie les longueurs inaccessibles.
+5ons		4er	1t
+5penne	Qui a de longues plumes à la queue et aux ailes.
+as		a	0
+5rostre	Qui a un bec ou un museau très long.
+bs		b	0
+5tude	Angle formé par le méridien astronomique d’un lieu et le méridien de référence.
+9s		9	0
+8inal	Qui est étendu en long.
+ce		c	n
+ds		c	1
+bux		bl	9
+4otte	Calicot gros et lourd qui forme une sorte d’intermédiaire entre la toile de coton et les tissus destinés à l’impression, ses fils de trame sont plus fin que ce…
+8s		8	0
+4rine	Élément de fondation horizontal répartissant les charges de l’ouvrage sur ses points d’appui.
+8s		8	0
+4s		4	9
+4temps	Pendant un long temps.
+4ue	Syllabe, voyelle dont la prononciation doit avoir plus de durée que celle d’une syllabe, d’une voyelle brève.
+6ment	D’une façon longue et qui passe la durée ordinaire.
+6s		4	1
+6t	Petit marteau utilisé par les facteurs de piano pour enfoncer les chevilles dans la table.
+7s		7	0
+7te		7	n
+9s		7	1
+0Longueuilloise	Habitante de Longueuil, ville québécoise située sur la rive opposée (sud) de l’île de Montréal.
+es		e	0
+0longueur	Étendue d’un objet considéré, dans une seule dimension, d’une de ses extrémités à l’autre.
+8s		8	0
+3zo	Longe de porc salée, séchée et affinée.
+5s		5	0
+2och	Potion médicinale adoucissante et calmante.
+5s		5	0
+3fa	Courge d’Asie et d’Afrique de la famille des Cucurbitaceae.
+5s		5	0
+3k	Aspect, apparence, style, allure.
+4é		4er	1a
+5e		4er	11
+6s		4er	10
+4er	Donner un look à.
+4és		4er	12
+4s		4	0
+3ping	Figure de voltige aérienne en forme de boucle où l'aéronef se cabre, passe sur le dos puis redescend.
+7s		7	0
+2phobranche	Dont les ouïes sont en forme de houppes.
+cs		c	0
+5phore	Genre d’oiseaux de l’ordre des galliformes et de la famille des phasianidés, comprenant trois espèces de grande taille semblables à des faisans, présentant un …
+9és	Clade d'animaux protostomiens à l'intérieur du super-embranchement des lophotrochozoaires comprenant les groupes munis d'un lophophore, ce qui inclut principal…
+9ien	Tout animal du clade des lophophoriens.
+cs	Clade d'animaux protostomiens à l'intérieur du super-embranchement des lophotrochozoaires comprenant les groupes munis d'un lophophore, ce qui inclut principal…
+3in	Petite parcelle de terrain.
+5s		5	0
+2quace	Qui parle beaucoup.
+7s		7	0
+6ité	Habitude de parler beaucoup.
+9s		9	0
+4e	Étoffe réduite en lambeaux par suite de l’usure.
+5r	Habiller.
+4és		4er	1h
+4et	Sorte de fermeture très simple que l’on met aux portes qui n’ont pas de serrure et à celles dont le pêne est dormant.
+6a		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+6eau	Petit loquet, utilisé notamment pour la fermeture de placards, de persiennes, de vasistas, qui se manœuvre parfois à l’aide d’un fil de tirage, et peut être mu…
+9x		9	0
+4ètent		4eter	v
+4eter	Remuer le loquet d’une porte pour indiquer qu’on a l’intention d’entrer.
+4ètera		4eter	l
+9i		4eter	g
+aent		4eter	s
+as		4eter	i
+at		4eter	q
+9s		4eter	7
+4etèrent		6er	o
+4èterez		4eter	5
+8iez		4eter	4
+9ons		4eter	b
+8ons		4eter	a
+at		4eter	f
+7s		4eter	1u
+4eteuse	Celle dont les vêtements sont en loques.
+as		8x	1
+8x	Qui est en loques.
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+6te	Petit morceau.
+8nt		6er	v
+8ra		6er	l
+ai		6er	g
+bent		6er	s
+bs		6er	i
+bt		6er	q
+as		6er	7
+9ez		6er	5
+9iez		6er	4
+aons		6er	b
+9ons		6er	a
+bt		6er	f
+8s		8	0
+2ran	Ancien système de radio navigation maritime ou aérienne.
+5thacées	Famille de plantes parasites comprenant le gui et le genre loranthus.
+3d	Titre honorifique usité en Angleterre, seigneur, sieur.
+4ose	Courbure de la colonne vertébrale à convexité antérieure.
+7s		7	0
+4s		4	0
+3ette	Nom qu’on donne à certaines femmes de plaisir, qui tiennent le milieu entre la grisette et la femme entretenue, n’ayant pas un état comme la grisette, et n’éta…
+7s		7	0
+3gna		5er	13
+6i		5er	m
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	11
+7s		5er	1f
+5ent		6r	15
+6r	Regarder quelque chose ou quelqu'un du coin de l’œil avec envie ou curiosité
+7a		7	l
+8i		7	1e
+9ent		7	1r
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5ette	Petite lunette d’approche dont on se sert pour voir les objets plus ou moins éloignés.
+9s		9	0
+6ur	Personne qui lorgne.
+8s		8	0
+7se	Personne qui lorgne.
+9s		9	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+5on	Monocle à monture.
+7s		7	0
+3i	Nom normalisé donné à dix genres d'oiseaux de la famille des psittaculidés (e.g.
+4caire	Poisson du genre Loricaria, proche des silures, muni de plaques osseuses et d’une ventouse buccale, originaire des eaux douces d’Amérique du Sud.
+9s		9	0
+4entais	Relatif à Lorient, commune française située dans le département du Morbihan.
+ae		a	n
+bs		a	1
+4ot	Oiseau de l’ordre des passereaux, à peu près de la grosseur d’un merle, au plumage d’un beau jaune pour le mâle, verdâtre pour la femelle (Oriolus oriolus).
+6s		6	9
+4quet	Nom normalisé donné à deux genres d'oiseaux de petite taille et généralement multicolores et de couleurs très vives, comprenant 15 espèces de la famille des ps…
+8s		8	0
+4s	Genre de la sous-famille des Lorinae comprenant des primates prosimiens de l’Inde.
+5idé	Membre des lorisidés.
+8s	Famille de primates prosimiens au corps grêle.
+6formes	Taxon de strepsirrhiniens (Strepsirrhini) opposé aux lémuriformes.
+3rain	Relatif à la Lorraine.
+7e		7	n
+8s		7	1
+7s		7	9
+4ies		4y	0
+4y	Petit chariot plat à poussée manuelle ou motorisée roulant sur une voie ferrée.
+5s		5	0
+3s	Ce temps-là. S’emploie seulement en composition dans les locutions suivantes :
+4que	Quand, au moment où.
+2s	Louange, employé parfois dans le style recherché ou plaisant.
+3ange	Les définitions suivantes sont équivalentes : quadrilatère dont les quatre côtés sont de même longueur.
+6ée	Féminin singulier de losangé.
+8s		6er	10
+6er	Distribuer en forme de losanges.
+6és		7	9
+6ique	Qui a la forme de losange.
+3e	Sorte de peluche ou de duvet qui s’accroche ou se forme sur les tissus et leur donne un aspect malpropre.
+4r	Personne sans succès social ou professionnel.
+5s		5	0
+4s		4	0
+4ur	Variante de looseur.
+6s		6	0
+5se	Variante orthographique de loseuse.
+7s		7	0
+2t	Portion d’un tout que l’on partage entre plusieurs personnes.
+3e	Variante de lotte.
+4rie	Sorte de jeu de hasard où l’on fait des mises, pour lesquelles on reçoit des billets portant des numéros : celui ou ceux de ces numéros qui sortent, lorsque le…
+7s		7	0
+4s		4	0
+3i	Devise officielle du Lesotho.
+4e	Groupe d’œillets.
+5r	Plante du genre Lotus, herbacée, annuelle ou vivace de la famille des Fabacées, sous-famille des Papillonoidées.
+6s		6	0
+5s		4	1
+3îmes		3ir	3
+3ion	Action de mouiller, d’imbiber d’un liquide quelque partie du corps pour l’adoucir, l’amollir, la rafraîchir, etc.
+6na		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Appliquer une lotion sur (quelque chose).
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+4r	Diviser un domaine en lotissements.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+5ent		5	o
+6z		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	9
+5saient		4r	w
+8s		4r	t
+8t		4r	y
+7nt		4r	z
+6e		4r	2h
+7ment	Action de diviser en parts pour les vendre, un terrain, une propriété, etc.
+bs		b	0
+7nt		4r	v
+7s		4r	24
+7ur	Celui qui divisait les marchandises par lots.
+9s		9	0
+7z		4r	u
+6iez		4r	d
+7ons		4r	j
+6ons		4r	r
+4t		4r	2z
+3îtes		3ir	2
+3o	Sorte de jeu qu’on joue avec des numéros, dont les uns sont sur des sortes de boules, de jetons qu’on tire au sort, les autres sur des tableaux distribués aux …
+4is	Relatif au Lot ou aux Lotois.
+6e		6	n
+7s		6	1
+4s	Fruit au goût de miel qui fait perdre la mémoire, qui apparaît dans l’Odyssée d'Homère.
+3s		3	0
+3ta	Engagée volontaire comme auxiliaire dans les forces armées finlandaises, membre de l’organisation Lotta Svärd (créée en 1918).
+5s		5	0
+4e	Poisson de rivière, et des lacs européens, à plusieurs barbillons, appartenant aux gadiformes, de nom scientifique Lota lota.
+5s		5	0
+3us	Nom usuel donné à plusieurs plantes appartenant à divers genres : Nelumbo avec le lotus sacré et le lotus jaune.
+2ua		3er	13
+4ble	Qui est digne de louange.
+7s		7	0
+4ge	Cession de l’usage de quelque chose, faite par le propriétaire pour un certain temps, moyennant un certain prix.
+6s		6	0
+4i		3er	1j
+5ent		3er	16
+5s		3er	1g
+5t		3er	14
+3âmes		3er	1w
+3ange	Discours ou paroles par lesquelles on relève le mérite de quelqu’un, de quelque action, de quelque chose.
+7a		7r	13
+8i		7r	m
+9ent		7r	16
+9s		7r	t
+9t		7r	y
+7âmes		7r	3
+7ant		7r	17
+8s		7r	c
+9se		7r	6
+bnt		7r	h
+bs		7r	8
+aiez		7r	e
+bons		7r	p
+7ât		7r	k
+9es		7r	2
+6ée		6er	19
+8s		6er	10
+6ent		7r	v
+7ons		7r	r
+7r	Manifester son admiration avec excès.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6eur	Qui louange.
+9s		9	9
+8se	Celle qui louange.
+as		8r	1
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+5t		3er	17
+4s		3er	2b
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	1q
+5es		3er	2
+3bar	Variante de loubard.
+6d	Jeune au comportement marginal, ressenti comme une menace, un danger et souvent effectivement délinquant.
+7e	Jeune au comportement marginal, ressentie comme une menace, un danger et souvent effectivement délinquante.
+8s		8	0
+7s		7	0
+6s		6	0
+5vitch	Relatif à une des branches principales du hassidisme.
+as		a	9
+4ine	Bar commun, perche de Cayenne.
+7s		7	0
+3cha		5er	13
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant	Qui est affecté de strabisme.
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	1q
+7es		5er	2
+5e	Dont les yeux ont une direction différente.
+5ée	Ce que contient une louche.
+7s		7	0
+5ement	Strabisme.
+as		a	0
+6nt		6r	15
+6r	Être atteint de strabisme, en parlant d'une personne.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+7bem	Variante de louchébem.
+as		a	0
+5èrent		5er	o
+5erez		7	5
+7ie	État des yeux qui louchent : strabisme.
+9s		9	0
+9z		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6t	Sorte de bêche étroite utilisée notamment par les pépiniéristes.
+7s		7	0
+6ur	Qui louche.
+8s		8	0
+7se	Celle qui louche.
+9s		9	0
+6z		6r	1b
+5i		6r	1a
+6ez		5er	d
+5îmes		5ir	3
+5ions		5er	j
+6r	Devenir trouble, perdre sa transparence, en parlant d’un liquide.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+7ent		7	o
+8z		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6r	27
+7saient		6r	w
+as		6r	t
+at		6r	y
+9nt		6r	z
+8e		6r	2h
+9nt		6r	v
+9s		6r	24
+9z		6r	u
+8iez		6r	d
+9ons		6r	j
+8ons		6r	r
+6t		6r	2z
+5îtes		5ir	2
+5on	Tronc de sapin sans nœuds.
+7ne	Nom donné parfois à la lune.
+9s		9	0
+7s		5er	3r
+3é	Qui est l’objet de louange.
+4e	Pratique traditionnelle au cours de laquelle les domestiques proposaient leurs services.
+5s		5	0
+3ent		4r	15
+4r	Donner à louage ou à loyer.
+5a		5	l
+6i		5	1e
+7ent		5	1r
+7s		5	1o
+7t		5	1d
+6s		5	1l
+3èrent		3er	1c
+3erez		5	5
+5iez		5	22
+6ons		5	b
+5ons		5	1p
+7t		5	f
+3és		3er	1h
+3eur	Celui qui donne des louanges.
+6s		6	0
+5se	Celle qui loue.
+7s		7	0
+4z		4r	1b
+3f	Fou.
+4iat	ou Garçon de café.
+7s		7	0
+4oque	Fou.
+8rie	Acte, parole loufoque, extravagance.
+bs		b	0
+8s		8	0
+4s		4	0
+4tingue	Fou.
+as		a	0
+3gre	Sorte de bâtiment marchand destiné au cabotage avec deux ou trois mâts qui portent des voiles au tiers.
+6s		6	0
+3iez		3er	d
+4ons		3er	1t
+4s	Ancienne monnaie d’or française.
+5e	Femme.
+6s		6	0
+5ianais	Relatif à la Louisiane et à ses habitants.
+be		b	n
+cs		b	1
+3koum	Bonbon oriental moelleux à base d’amidon gélifié dans l’eau, de sucre, de colorants, d’arômes, de pistache, de sésame, etc..
+7s		7	0
+3lou	Petit chien à longs poils, au museau pointu et à la queue recourbée sur le dos.
+6s	Pluriel de loulou (chien).	6
+6te	Petit louve, mot tendre, souvent adressé aux enfants.
+8s		8	0
+7te	Variante orthographique de louloute.
+9s		9	0
+3ma	Caméra de prise de vue multidirectionnelle fixée sur une grue dirigée par une télécommande ou manuellement.
+5s		5	0
+3nge	Style de musique minimaliste diffusée dans les bars d’ambiance, petits cabarets ou bar-salons.
+6s		6	0
+3ons		3er	1n
+3p	Mammifère carnivore de la famille des canidés, à l'allure d'un grand chien au pelage gris jaunâtre, aux yeux obliques et aux oreilles dressées, de nom scientif…
+4a		4er	13
+5ge	Fait de louper quelque-chose.
+7s		7	0
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Verre convexe des deux côtés qui grossit les objets à la vue.
+4ée		4er	19
+6s		4er	1f
+4ent		5r	15
+5r	Rater.
+6a		6	18
+7i		6	1e
+8ent		6	s
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	o
+4erez		6	1m
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		5	0
+4ez		5r	1b
+0Loupiac	Commune française, située dans le département de la Gironde.
+0loupiez		4er	1v
+5ons		4er	j
+6t	Petit enfant.
+7e	Petite lampe ou bougie.
+8s	Pluriel de loupiote (lampe)..	8
+7s		7	0
+7te	Autre orthographe (moins fréquente) de loupiote (petite lampe ou bougie).
+9s		9	0
+4ons		4er	r
+4s		4	0
+3ra		4er	x
+5i		4er	m
+6ent		4er	w
+6s	Relatif à Loures-Barousse, commune française située dans le département des Hautes-Pyrénées.
+6t		4er	y
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4d	Pesant ; dont le poids est élevé.
+5a		5er	x
+6i		5er	m
+7ent		5er	w
+7s	Relatif à Lourde, commune française située dans le département de la Haute-Garonne.
+8e	Race surtout laitière de taurin, originaire de France (Hautes-Pyrénées), à robe froment blond ou blanche.
+9s		8	1
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se	Qualifie un type de neige peu propice à la pratique de sports de glisse.
+9nt		5er	h
+9s		9	0
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5aud	Lourd et maladroit, pataud.
+8e	Femme lourde et maladroite, pataude.
+9s		9	0
+8s		8	0
+5e	Porte.
+5ée		5er	19
+7s		5er	1f
+5ement	D’une manière lourde, gauche, sans finesse.
+6nt		6r	v
+6r	Mettre à la porte.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7ie	Qualité de ce qui est lourd, grossier, malséant.
+9s		9	0
+9z		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5eur	État de ce qui est lourd.
+8s		8	0
+6z		6r	u
+5iez		5er	d
+6ngue	Lourd, dépourvu de finesse, de subtilité.
+as		a	0
+6ons		5er	j
+6se	Lourdeur, lourderie.
+8s		8	0
+5ons		5er	r
+5s		5	9
+4é	Indique qu'une note est jouée sur toute sa longueur, sans la raccourcir, tout en étant détachée des notes précédente et suivante.
+5e		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Jouer les notes détachées mais sans raccourcir les notes.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3sse	Lâche, détendu, desserré, ample.
+6s		6	0
+4tic	Amuseur attitré d'une compagnie militaire.
+7s		7	0
+3tre	Espèce de mammifère carnivore de la famille des martres, grand à peu près comme un renard, mais plus bas de pattes, et à tête plate et obtuse, semi-aquatiques,…
+6s		6	0
+5ier	Personne qui chasse les loutres.
+8s		8	0
+3va		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4aniste	Relatif à la ville belge de Louvain.
+as		a	0
+6t		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+5t	Louveteau âgé d'un an.
+4âtes		4er	2
+4e	Loup femelle.
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Faire un trou dans une pierre pour y mettre la louve dans le but de la soulever.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5t	Maladie du charbon chez les ovins.
+6a		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+6eau	Petit du loup et de la louve.
+9x		9	0
+4ètent		4eter	v
+4eter	Mettre bas, en parlant d’une louve.
+4ètera		4eter	l
+9i		4eter	g
+aent		4eter	s
+as		4eter	i
+at		4eter	q
+9s		4eter	7
+4etèrent		6er	o
+4èterez		4eter	5
+4eterie	Équipage pour la chasse au loup.
+as		a	0
+4èteriez		4eter	4
+9ons		4eter	b
+8ons		4eter	a
+at		4eter	f
+7s		4eter	1u
+4etez		7r	u
+6ier	Chasseur de loups et de certaines bêtes nuisibles.
+7ère	Chasseuse de loups et de certaines bêtes nuisibles.
+as		a	0
+7ers		9	0
+8z		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	9
+6te	Synonyme de crocote (hybride).
+8nt		6er	v
+8ra		6er	l
+ai		6er	g
+bent		6er	s
+bs		6er	i
+bt		6er	q
+as		6er	7
+9ez		6er	5
+9iez		6er	4
+aons		6er	b
+9ons		6er	a
+bt		6er	f
+8s		8	0
+5z		5r	u
+4iérois	Relatif à La Louvière en Belgique.
+5èroise		a	n
+bs		a	1
+5ez		4er	d
+5ons		4er	j
+4oie		5yer	1s
+7ment	Action de louvoyer.
+bs		b	0
+7nt		5yer	15
+7ra		5yer	l
+9i		5yer	g
+aent		5yer	s
+as		5yer	i
+at		5yer	q
+9s		5yer	7
+8ez		5yer	5
+8iez		5yer	4
+9ons		5yer	b
+8ons		5yer	a
+at		5yer	f
+7s		5yer	1u
+5ns		4er	r
+5ya		6er	x
+7ge	Action de louvoyer.
+9s		9	0
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6é		6er	1k
+6er	Faire plusieurs routes en zigzag au plus près du vent, en lui présentant tantôt un côté du bâtiment, tantôt l’autre.
+6èrent		6er	o
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	1n
+2va		3er	13
+4i		3er	m
+5ent		3er	16
+5s		3er	1g
+5t		3er	14
+3âmes		3er	3
+3ant		3er	17
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3é	Sou, somme d’argent.
+4e		3er	19
+5s		3er	1f
+3elace	Élégant séducteur de femmes.
+8s		8	0
+4nt		4r	15
+4r	Enrouler en spirale (un câble, un cordage, un bout ou une haussière).
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+3és	Pluriel de lové (ce pluriel signifiant argent, de façon générale, tout comme on dit les sous).	4
+3ez		4r	u
+3iez		3er	d
+4ons		3er	j
+3ons		3er	r
+2xodromie	Courbe tracée sur la surface d'une sphère, qui coupe tous les méridiens sous le même angle.
+as		a	0
+9que	Relatif à la loxodromie.
+cs		c	0
+2yal	Qui montre de la loyauté.
+5e		5	n
+6ment	D’une manière loyale.
+6s		5	1
+5isme	Obéissance fidèle à son souverain, au gouvernement établi.
+9s		9	0
+7te	Personne qui a des sentiments de loyalisme.
+9s		9	0
+4uté	Fidélité à tenir parole, à faire honneur à ses engagements.
+7s		7	0
+5x		4l	9
+3er	Prix de la location d’une maison ou d’un appartement.
+5s		5	0
+2zérien	Relatif à la Lozère, département français, ou à ses habitants.
+8ne		8	n
+as		8	1
+8s		8	9

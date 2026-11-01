@@ -1,287 +1,287 @@
-il	Pronom de la troisième personne du singulier masculin (utilisé exclusivement en tant que sujet).
-ile	Espace de terre entouré d’eau de tous côtés.
-iléal	Relatif à l’iléon.
-iléale		iléal	23
-iléales		iléal	1
-iléaux		iléal	9
-iléite	Inflammation de la membrane muqueuse de l’iléon.
-iléites		iléite	0
-iléocæcal	Relatif, à la fois, à l’iléon et au cæcum.
-iléocæcale		iléocæcal	23
-iléocæcales		iléocæcal	1
-iléocæcaux		iléocæcal	9
-iléocolique	Variante orthographique de iléo-colique (qui est l’orthographe traditionnelle).
-iléocoliques		iléocolique	0
-iléon	Le dernier et le plus long des segments de l’intestin grêle.
-iléons		iléon	0
-iles	Parties latérales et inférieures du bas-ventre.
-îlet	Petite île.
-ilets		ilet	0
-îlette	Petite île (et surtout : très petite île), Îlot, îlet.
-îlettes		îlette	0
-iléus	Obstruction causée par l’enroulement des masses intestinales les unes autour des autres.
-iliaque	Qui a rapport aux hanches.
-iliaques		iliaque	0
-ilien	Relatif à une ile ou aux iles.
-îlienne	Habitante d’une ile.
-îliennes		îlienne	0
-îliens		îlien	9
-ilion	Variante de ilium.
-ilions		ilion	0
-illectronisme	Manque de connaissance des clés nécessaires à l’utilisation des ressources numériques.
-illectronismes		illectronisme	0
-illégal	Qui est contre la loi, qui ne respecte pas la loi.
-illégale	Espionne.
-illégalement	D’une manière illégale.
-illégales		illégale	0
-illégalité	Caractère de ce qui est illégal.
-illégalités		illégalité	0
-illégaux		illégal	9
-illégitime	Qui n’est pas légitime.
-illégitimement	D’une manière illégitime.
-illégitimes		illégitime	0
-illégitimité	Caractère de ce qui est illégitime, de ce qui n’a aucune légitimité.
-illégitimités		illégitimité	0
-illettré	Qui ne connaît pas ses lettres, qui ne sait ni lire ni écrire.
-illettrée	Femme qui ne connaît pas ses lettres, qui ne sait ni lire ni écrire.
-illettrées		illettré	1
-illettrés		illettré	9
-illettrisme	Maîtrise insuffisante de l’écriture et de la lecture.
-illettrismes		illettrisme	0
-illibéral	Qui n’est pas libéral, qui ne donne pas, avare, radin, mesquin.
-illibérale		illibéral	23
-illibérales		illibéral	1
-illibéraux		illibéral	9
-illicéité	Caractère illicite (de quelque chose).
-illicéités		illicéité	0
-illicite	Qui est interdit par la morale ou par la loi.
-illicitement	D’une manière illicite.
-illicites		illicite	0
-illico	Sur-le-champ, immédiatement.
-illimité	Qui n’a pas de limites.
-illimitée		illimité	23
-illimitées		illimité	1
-illimités		illimité	9
-illipé	Arbre de la famille des Sapotacées, originaire d'Inde et adapté aux milieux arides, dont les graines servent à produire de l’huile utilisée comme carburant vég…
-illipés		illipé	0
-illiquidité	Manque de liquidité empêchant l’achat ou la vente d’actifs.
-illiquidités		illiquidité	0
-illisibilité	Qualité de ce qui est matériellement illisible.
-illisibilités		illisibilité	0
-illisible	Qu’on ne peut lire ou qu’on ne lit que très difficilement.
-illisiblement	De manière illisible.
-illisibles		illisible	0
-illite	Minéral micacé phyllosilicate avec des agrégats de cristaux monocyclique gris ou blancs
-illites		illite	0
-illocutoire	Qui s’obtient par l’usage de la parole.
-illocutoires		illocutoire	0
-illogique	Qui est contraire à la logique, qui manque de logique.
-illogiquement	D’une manière illogique.
-illogiques		illogique	115
-illogisme	Caractère d’une proposition, d’une action, d’un sentiment contraire à la logique.
-illogismes		illogisme	0
-illumina		illuminer	39
-illuminai		illuminer	22
-illuminaient		illuminer	42
-illuminais		illuminer	29
-illuminait		illuminer	40
-illuminâmes		illuminer	3
-illuminant	Qui illumine.
-illuminas		illuminer	12
-illuminasse		illuminer	6
-illuminassent		illuminer	17
-illuminasses		illuminer	8
-illuminassiez		illuminer	14
-illuminassions		illuminer	25
-illuminât		illuminer	20
-illuminâtes		illuminer	2
-illumination	Action d’illuminer ou état de ce qui est illuminé.
-illuminations	Coutume traditionnelle de Lyon et de ses environs consistant à illuminer, chaque 8 décembre, les habitations par des lumignons posés sur les rebords des fenêtr…
-illuminé	Qui est mis en valeur par de forts projecteurs, la nuit.
-illuminée	Femme illuminée.
-illuminées		illuminé	1
-illuminent		illuminer	41
-illuminer	Éclairer d’une vive lumière.
-illuminera		illuminer	44
-illuminerai		illuminer	50
-illumineraient		illuminer	28
-illuminerais		illuminer	18
-illuminerait		illuminer	49
-illumineras		illuminer	7
-illuminèrent		illuminer	48
-illuminerez		illuminer	5
-illumineriez		illuminer	4
-illuminerions		illuminer	11
-illuminerons		illuminer	10
-illumineront		illuminer	54
-illuminés		illuminé	9
-illuminez		illuminer	47
-illuminiez		illuminer	13
-illuminions		illuminer	19
-illuminisme	Opinions chimériques des illuminés.
-illuminismes		illuminisme	0
-illuministes	Féminin pluriel de illuministe.
-illuminons		illuminer	27
-illusion	Fausse apparence matérielle ou morale qui, en nous faisant voir les choses autrement qu’elles ne sont, semble se jouer de nos sens ou de notre esprit.
-illusionna		illusionner	33
-illusionnai		illusionner	22
-illusionnaient		illusionner	32
-illusionnais		illusionner	29
-illusionnait		illusionner	40
-illusionnâmes		illusionner	3
-illusionnant		illusionner	35
-illusionnas		illusionner	12
-illusionnasse		illusionner	6
-illusionnassent		illusionner	17
-illusionnasses		illusionner	8
-illusionnassiez		illusionner	14
-illusionnât		illusionner	20
-illusionnâtes		illusionner	2
-illusionne		illusionner	64
-illusionnée		illusionner	37
-illusionnées		illusionner	36
-illusionnent		illusionner	41
-illusionner	Faire une illusion.
-illusionnera		illusionner	21
-illusionnerai		illusionner	16
-illusionnerais		illusionner	18
-illusionnerait		illusionner	26
-illusionneras		illusionner	7
-illusionnèrent		illusionner	24
-illusionnerez		illusionner	5
-illusionneriez		illusionner	4
-illusionnerions		illusionner	11
-illusionnerons		illusionner	10
-illusionneront		illusionner	15
-illusionnés		illusionner	38
-illusionnez		illusionner	47
-illusionniez		illusionner	13
-illusionnions		illusionner	19
-illusionnisme	Art de l'illusionniste.
-illusionnismes		illusionnisme	0
-illusionniste	Prestidigitateur, créateur d’illusions.
-illusionnistes		illusionniste	0
-illusionnons		illusionner	27
-illusions		illusion	0
-illusoire	Qui est captieux, qui tend à tromper sous une fausse apparence.
-illusoirement	D’une manière illusoire.
-illusoires		illusoire	0
-illustra		illustrer	39
-illustrai		illustrer	22
-illustraient		illustrer	42
-illustrais		illustrer	29
-illustrait		illustrer	40
-illustrâmes		illustrer	3
-illustrant		illustrer	140
-illustras		illustrer	12
-illustrasse		illustrer	6
-illustrassent		illustrer	17
-illustrasses		illustrer	8
-illustrassiez		illustrer	14
-illustrassions		illustrer	25
-illustrat	Dignité d’illustre.
-illustrâtes		illustrer	2
-illustrateur	Celui qui illustre, qui dessine, qui compose des illustrations pour les livres, les journaux, les revues.
-illustrateurs		illustrateur	0
-illustratif	Qui sert à illustrer, explicatif.
-illustratifs		illustratif	9
-illustration	Dessin pour accompagner du texte, en particulier de la presse écrite.
-illustrations		illustration	0
-illustrative		illustratif	23
-illustratives		illustratif	1
-illustratrice	Celle qui illustre, qui dessine, qui compose des illustrations pour les livres, les journaux, les revues.
-illustratrices		illustratrice	0
-illustre	Qui est célèbre par le mérite, par la noblesse, par quelque chose de louable et d’extraordinaire.
-illustrée		illustré	23
-illustrées		illustré	1
-illustrent		illustrer	41
-illustrer	Rendre illustre.
-illustrera		illustrer	44
-illustrerai		illustrer	50
-illustreraient		illustrer	28
-illustrerais		illustrer	18
-illustrerait		illustrer	49
-illustreras		illustrer	7
-illustrèrent		illustrer	24
-illustrerez		illustrer	5
-illustreriez		illustrer	4
-illustrerions		illustrer	11
-illustrerons		illustrer	10
-illustreront		illustrer	15
-illustrés		illustré	9
-illustrez		illustrer	30
-illustriez		illustrer	13
-illustrions		illustrer	65
-illustrissime	Qui est très illustre.
-illustrissimes		illustrissime	0
-illustrons		illustrer	27
-illuta		illuter	33
-illutai		illuter	22
-illutaient		illuter	32
-illutais		illuter	29
-illutait		illuter	34
-illutâmes		illuter	3
-illutant		illuter	35
-illutas		illuter	12
-illutasse		illuter	6
-illutassent		illuter	17
-illutasses		illuter	8
-illutassiez		illuter	14
-illutassions		illuter	25
-illutât		illuter	20
-illutâtes		illuter	2
-illutation	Action d'illuter, enduire de boue une partie du corps.
-illutations		illutation	0
-illuté		illuter	46
-illutée		illuter	37
-illutées		illuter	36
-illutent		illuter	31
-illuter	Couvrir de boue issue de sources minérales.
-illutera		illuter	21
-illuterai		illuter	16
-illuteraient		illuter	28
-illuterais		illuter	18
-illuterait		illuter	26
-illuteras		illuter	7
-illutèrent		illuter	24
-illuterez		illuter	5
-illuteriez		illuter	4
-illuterions		illuter	11
-illuterons		illuter	10
-illuteront		illuter	15
-illutés		illuter	38
-illutez		illuter	30
-illutiez		illuter	13
-illutions		illuter	19
-illutons		illuter	27
-illuvial	Qui résulte de, relatif à l’illuviation.
-illuviale		illuvial	23
-illuviales		illuvial	1
-illuviation	Accumulation progressive dans une couche du sol (ou horizon) de diverses substances déposées par l'infiltration des eaux.
-illuviations		illuviation	0
-illuviaux		illuvial	9
-illuvion	Dépôt laissé par l’illuviation, horizon formé par illuviation.
-illuvions		illuvion	0
-illyrien	Relatif à l’Illyrie, région antique correspondant à la Yougoslavie du XXᵉ siècle.
-illyrienne		illyrien	23
-illyriennes		illyrien	1
-illyriens		illyrien	9
-illyrisme	Idéologie née en Croatie au XIXᵉ siècle visant à unifier les populations slaves méridionales, notamment en réponse à l’assimilation de ces peuples par l’Empire…
-illyrismes		illyrisme	0
-ilménite	Minerai d’oxyde de fer et de titane de formule brute FeTiO₃.
-ilménites		ilménite	0
-ilomba	Nom vernaculaire de Pycnanthus angolensis arbre d’Afrique tropicale et équatoriale occidentale de la famille des Myristicaceae (Myristicacées), poussant surtou…
-ilombas		ilomba	0
-ilot	Variante orthographique de îlot.
-îlotage	Division d’un quartier en îlots placés sous la surveillance d’îlotiers.
-ilotages		ilotage	0
-ilote	Habitant de la Laconie réduit à l’esclavage par les Spartiates.
-ilotes		ilote	0
-ilotier	Gardien de la paix chargé de la surveillance d'ilots d’habitations.
-ilotière	Gardienne de la paix chargé de la surveillance d’ilots d’habitations.
-ilotières		ilotière	0
-ilotiers		ilotier	0
-ilotisme	Condition d’ilote.
-ilotismes		ilotisme	0
-ilots	Variante orthographique de îlots..
-ils	Pronom clitique de la troisième personne du pluriel sujet, quand on parle d’un groupe d’hommes et de femmes ou de choses grammaticalement masculines et féminin…
+0il	Pronom de la troisième personne du singulier masculin (utilisé exclusivement en tant que sujet).
+2e	Espace de terre entouré d’eau de tous côtés.
+2éal	Relatif à l’iléon.
+5e		5	n
+6s		5	1
+4ux		4l	9
+3ite	Inflammation de la membrane muqueuse de l’iléon.
+6s		6	0
+3ocæcal	Relatif, à la fois, à l’iléon et au cæcum.
+9e		9	n
+as		9	1
+8ux		8l	9
+5olique	Variante orthographique de iléo-colique (qui est l’orthographe traditionnelle).
+bs		b	0
+4n	Le dernier et le plus long des segments de l’intestin grêle.
+5s		5	0
+2es	Parties latérales et inférieures du bas-ventre.
+0îlet	Petite île.
+0ilets		4	0
+0îlette	Petite île (et surtout : très petite île), Îlot, îlet.
+6s		6	0
+0iléus	Obstruction causée par l’enroulement des masses intestinales les unes autour des autres.
+2iaque	Qui a rapport aux hanches.
+7s		7	0
+3en	Relatif à une ile ou aux iles.
+0îlienne	Habitante d’une ile.
+7s		7	0
+5s		5	9
+0ilion	Variante de ilium.
+5s		5	0
+2lectronisme	Manque de connaissance des clés nécessaires à l’utilisation des ressources numériques.
+ds		d	0
+3égal	Qui est contre la loi, qui ne respecte pas la loi.
+7e	Espionne.
+8ment	D’une manière illégale.
+8s		8	0
+7ité	Caractère de ce qui est illégal.
+as		a	0
+6ux		6l	9
+5itime	Qui n’est pas légitime.
+ament	D’une manière illégitime.
+as		a	0
+9ité	Caractère de ce qui est illégitime, de ce qui n’a aucune légitimité.
+cs		c	0
+3ettré	Qui ne connaît pas ses lettres, qui ne sait ni lire ni écrire.
+8e	Femme qui ne connaît pas ses lettres, qui ne sait ni lire ni écrire.
+9s		8	1
+8s		8	9
+7isme	Maîtrise insuffisante de l’écriture et de la lecture.
+bs		b	0
+3ibéral	Qui n’est pas libéral, qui ne donne pas, avare, radin, mesquin.
+9e		9	n
+as		9	1
+8ux		8l	9
+4céité	Caractère illicite (de quelque chose).
+9s		9	0
+5ite	Qui est interdit par la morale ou par la loi.
+8ment	D’une manière illicite.
+8s		8	0
+5o	Sur-le-champ, immédiatement.
+4mité	Qui n’a pas de limites.
+8e		8	n
+9s		8	1
+8s		8	9
+4pé	Arbre de la famille des Sapotacées, originaire d'Inde et adapté aux milieux arides, dont les graines servent à produire de l’huile utilisée comme carburant vég…
+6s		6	0
+4quidité	Manque de liquidité empêchant l’achat ou la vente d’actifs.
+bs		b	0
+4sibilité	Qualité de ce qui est matériellement illisible.
+cs		c	0
+7le	Qu’on ne peut lire ou qu’on ne lit que très difficilement.
+9ment	De manière illisible.
+9s		9	0
+4te	Minéral micacé phyllosilicate avec des agrégats de cristaux monocyclique gris ou blancs
+6s		6	0
+3ocutoire	Qui s’obtient par l’usage de la parole.
+bs		b	0
+4gique	Qui est contraire à la logique, qui manque de logique.
+9ment	D’une manière illogique.
+9s		9	37
+6sme	Caractère d’une proposition, d’une action, d’un sentiment contraire à la logique.
+9s		9	0
+3umina		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui illumine.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ation	Action d’illuminer ou état de ce qui est illuminé.
+cs	Coutume traditionnelle de Lyon et de ses environs consistant à illuminer, chaque 8 décembre, les habitations par des lumignons posés sur les rebords des fenêtr…
+7é	Qui est mis en valeur par de forts projecteurs, la nuit.
+8e	Femme illuminée.
+9s		8	1
+7ent		8r	15
+8r	Éclairer d’une vive lumière.
+9a		9	18
+ai		9	1e
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	1c
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	1i
+7és		8	9
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+8sme	Opinions chimériques des illuminés.
+bs		b	0
+9tes	Féminin pluriel de illuministe.
+7ons		7er	r
+4sion	Fausse apparence matérielle ou morale qui, en nous faisant voir les choses autrement qu’elles ne sont, semble se jouer de nos sens ou de notre esprit.
+8na		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	14
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9e		ar	1s
+9ée		9er	11
+bs		9er	10
+9ent		ar	15
+ar	Faire une illusion.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	1b
+9iez		9er	d
+aons		9er	j
+asme	Art de l'illusionniste.
+ds		d	0
+bte	Prestidigitateur, créateur d’illusions.
+ds		d	0
+9ons		9er	r
+8s		8	0
+5oire	Qui est captieux, qui tend à tromper sous une fausse apparence.
+9ment	D’une manière illusoire.
+9s		9	0
+5tra		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	3w
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+8t	Dignité d’illustre.
+7âtes		7er	2
+7ateur	Celui qui illustre, qui dessine, qui compose des illustrations pour les livres, les journaux, les revues.
+cs		c	0
+9if	Qui sert à illustrer, explicatif.
+bs		b	9
+aon	Dessin pour accompagner du texte, en particulier de la presse écrite.
+cs		c	0
+ave		af	n
+cs		af	1
+9rice	Celle qui illustre, qui dessine, qui compose des illustrations pour les livres, les journaux, les revues.
+ds		d	0
+7e	Qui est célèbre par le mérite, par la noblesse, par quelque chose de louable et d’extraordinaire.
+7ée		8	n
+9s		8	1
+7ent		8r	15
+8r	Rendre illustre.
+9a		9	18
+ai		9	1e
+bent		9	s
+bs		9	i
+bt		9	1d
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	1t
+8ssime	Qui est très illustre.
+ds		d	0
+7ons		7er	r
+4ta		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ation	Action d'illuter, enduire de boue une partie du corps.
+as		a	0
+5é		5er	1a
+6e		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Couvrir de boue issue de sources minérales.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	12
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4vial	Qui résulte de, relatif à l’illuviation.
+8e		8	n
+9s		8	1
+7tion	Accumulation progressive dans une couche du sol (ou horizon) de diverses substances déposées par l'infiltration des eaux.
+bs		b	0
+7ux		7l	9
+6on	Dépôt laissé par l’illuviation, horizon formé par illuviation.
+8s		8	0
+3yrien	Relatif à l’Illyrie, région antique correspondant à la Yougoslavie du XXᵉ siècle.
+8ne		8	n
+as		8	1
+8s		8	9
+6sme	Idéologie née en Croatie au XIXᵉ siècle visant à unifier les populations slaves méridionales, notamment en réponse à l’assimilation de ces peuples par l’Empire…
+9s		9	0
+2ménite	Minerai d’oxyde de fer et de titane de formule brute FeTiO₃.
+8s		8	0
+2omba	Nom vernaculaire de Pycnanthus angolensis arbre d’Afrique tropicale et équatoriale occidentale de la famille des Myristicaceae (Myristicacées), poussant surtou…
+6s		6	0
+3t	Variante orthographique de îlot.
+0îlotage	Division d’un quartier en îlots placés sous la surveillance d’îlotiers.
+0ilotages		7	0
+4e	Habitant de la Laconie réduit à l’esclavage par les Spartiates.
+5s		5	0
+4ier	Gardien de la paix chargé de la surveillance d'ilots d’habitations.
+5ère	Gardienne de la paix chargé de la surveillance d’ilots d’habitations.
+8s		8	0
+5ers		7	0
+5sme	Condition d’ilote.
+8s		8	0
+4s	Variante orthographique de îlots..
+2s	Pronom clitique de la troisième personne du pluriel sujet, quand on parle d’un groupe d’hommes et de femmes ou de choses grammaticalement masculines et féminin…

@@ -1,48 +1,48 @@
-ixa	Crustacé de l'Océan Indien, de la famille des leucosiidés.
-ixage	Fait de ixer un film (le classer dans la catégorie des films X).
-ixages		ixage	0
-ixai		ixer	22
-ixaient		ixer	32
-ixais		ixer	29
-ixait		ixer	34
-ixâmes		ixer	3
-ixant		ixer	35
-ixas		ixer	12
-ixasse		ixer	6
-ixassent		ixer	17
-ixasses		ixer	8
-ixassiez		ixer	14
-ixassions		ixer	25
-ixât		ixer	20
-ixâtes		ixer	2
-ixe	Lettre latine X, x.
-ixée		ixer	37
-ixées		ixer	36
-ixellois	Relatif à Ixelles en Belgique.
-ixelloise		ixellois	136
-ixelloises		ixellois	143
-ixent		ixer	31
-ixer	Classer un film dans la catégorie des films X (films pornographiques, ou parfois films d’extrême violence).
-ixera		ixer	21
-ixerai		ixer	16
-ixeraient		ixer	28
-ixerais		ixer	18
-ixerait		ixer	26
-ixeras		ixer	7
-ixèrent		ixer	24
-ixerez		ixer	5
-ixeriez		ixer	4
-ixerions		ixer	11
-ixerons		ixer	10
-ixeront		ixer	15
-ixés		ixer	38
-ixez		ixer	30
-ixia	Plante bulbeuse de la famille des iridacées, cultivée ordinairement dans les jardins comme plante d’ornement.
-ixias		ixia	0
-ixième	Qui occupe une place indéterminée dans une suite considérée comme trop longue.
-ixièmes		ixième	0
-ixiez		ixer	13
-ixions		ixer	19
-ixode	Tique.
-ixodes		ixode	0
-ixons		ixer	27
+0ixa	Crustacé de l'Océan Indien, de la famille des leucosiidés.
+3ge	Fait de ixer un film (le classer dans la catégorie des films X).
+5s		5	0
+3i		2er	m
+4ent		2er	w
+4s		2er	t
+4t		2er	y
+2âmes		2er	3
+2ant		2er	z
+3s		2er	c
+4se		2er	6
+6nt		2er	h
+6s		2er	8
+5iez		2er	e
+6ons		2er	p
+2ât		2er	k
+4es		2er	2
+2e	Lettre latine X, x.
+2ée		2er	11
+4s		2er	10
+2ellois	Relatif à Ixelles en Belgique.
+8e		8	3s
+9s		8	3z
+3nt		3r	v
+3r	Classer un film dans la catégorie des films X (films pornographiques, ou parfois films d’extrême violence).
+4a		4	l
+5i		4	g
+6ent		4	s
+6s		4	i
+6t		4	q
+5s		4	7
+2èrent		2er	o
+2erez		4	5
+4iez		4	4
+5ons		4	b
+4ons		4	a
+6t		4	f
+2és		2er	12
+2ez		3r	u
+2ia	Plante bulbeuse de la famille des iridacées, cultivée ordinairement dans les jardins comme plante d’ornement.
+4s		4	0
+3ème	Qui occupe une place indéterminée dans une suite considérée comme trop longue.
+6s		6	0
+3ez		2er	d
+3ons		2er	j
+2ode	Tique.
+5s		5	0
+3ns		2er	r

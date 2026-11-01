@@ -1,1198 +1,1198 @@
-ci	ou (Utilisé uniquement dans les compositions, pas utilisé isolément) Ici.
-ciabatta	Pain large contenant de l’huile d’olive.
-ciabattas		ciabatta	0
-ciao	Au revoir.
-cibiche	Cigarette.
-cibiches		cibiche	0
-cibiste	Personne communiquant avec une CB.
-cibistes		cibiste	0
-cibla		cibler	33
-ciblage	Action de cibler, résultat de cette action.
-ciblages		ciblage	0
-ciblai		cibler	22
-ciblaient		cibler	32
-ciblais		cibler	29
-ciblait		cibler	34
-ciblâmes		cibler	3
-ciblant		cibler	35
-ciblas		cibler	12
-ciblasse		cibler	6
-ciblassent		cibler	17
-ciblasses		cibler	8
-ciblassiez		cibler	14
-ciblassions		cibler	25
-ciblât		cibler	20
-ciblâtes		cibler	2
-cible	Sorte de planche servant de but pour le tir à l’arc ou avec des armes à feu.
-ciblée		cibler	37
-ciblées		cibler	36
-ciblent		cibler	31
-cibler	Lancer quelque chose sur quelqu’un.
-ciblera		cibler	21
-ciblerai		cibler	16
-cibleraient		cibler	28
-ciblerais		cibler	18
-ciblerait		cibler	26
-cibleras		cibler	7
-ciblèrent		cibler	24
-ciblerez		cibler	5
-cibleriez		cibler	4
-ciblerions		cibler	11
-ciblerons		cibler	10
-cibleront		cibler	15
-ciblés		cibler	38
-ciblez		cibler	30
-cibliez		cibler	13
-ciblions		cibler	19
-ciblons		cibler	27
-ciboire	Coupe sacrée où l’on conserve les hosties pour la communion des fidèles.
-ciboires		ciboire	0
-ciborium	Dais (de pierre, de métal ou de bois) qui est porté par quatre colonnes et qui surmonte un autel pour le protéger et le mettre en valeur.
-ciboriums		ciborium	0
-ciboule	Nom usuel d'une plante herbacée vivace de la famille des Amaryllidaceae (Amaryllidacées), sorte de petit oignon dont les feuilles et le bulbe aromatiques serve…
-ciboules		ciboule	0
-ciboulette	Plante condimentaire vivace aux feuilles en forme de tube fin et effilé, employée en assaisonnement.
-ciboulettes		ciboulette	0
-ciboulot	Petit oignon.
-ciboulots		ciboulot	0
-cicadelle	Un insecte piqueur de la famille des cicadellidés (Cicadellidae) qui ressemble à une petite cigale.
-cicadelles		cicadelle	0
-cicatrice	Marque des blessures, des plaies, qui reste après la guérison.
-cicatrices		cicatrice	0
-cicatriciel	Qui a rapport à une cicatrice.
-cicatricielle		cicatriciel	23
-cicatricielles	Féminin pluriel de cicatriciel.
-cicatriciels		cicatriciel	9
-cicatricule	Tache blanche sur le jaune de l’œuf, qui indique le germe.
-cicatricules		cicatricule	0
-cicatrisa		cicatriser	33
-cicatrisable	Qui peut se cicatriser.
-cicatrisables		cicatrisable	0
-cicatrisai		cicatriser	22
-cicatrisaient		cicatriser	32
-cicatrisais		cicatriser	29
-cicatrisait		cicatriser	34
-cicatrisâmes		cicatriser	3
-cicatrisant	Remède propre à cicatriser les plaies.
-cicatrisante		cicatrisant	23
-cicatrisantes		cicatrisant	1
-cicatrisants		cicatrisant	9
-cicatrisas		cicatriser	12
-cicatrisasse		cicatriser	6
-cicatrisassent		cicatriser	17
-cicatrisasses		cicatriser	8
-cicatrisassiez		cicatriser	14
-cicatrisassions		cicatriser	25
-cicatrisât		cicatriser	20
-cicatrisâtes		cicatriser	2
-cicatrisation	Action de cicatriser.
-cicatrisations		cicatrisation	0
-cicatrise		cicatriser	79
-cicatrisée		cicatriser	37
-cicatrisées		cicatriser	36
-cicatrisent		cicatriser	31
-cicatriser	Produire une cicatrice.
-cicatrisera		cicatriser	21
-cicatriserai		cicatriser	16
-cicatriseraient		cicatriser	28
-cicatriserais		cicatriser	18
-cicatriserait		cicatriser	26
-cicatriseras		cicatriser	7
-cicatrisèrent		cicatriser	24
-cicatriserez		cicatriser	5
-cicatriseriez		cicatriser	4
-cicatriserions		cicatriser	11
-cicatriserons		cicatriser	10
-cicatriseront		cicatriser	15
-cicatrisés		cicatriser	38
-cicatrisez		cicatriser	30
-cicatrisiez		cicatriser	13
-cicatrisions		cicatriser	19
-cicatrisons		cicatriser	27
-cicéro	Point typographique de 4,512 mm.
-cicerone	Variante orthographique de cicérone.
-cicérones		cicérone	0
-cicéronien	De Cicéron, ou du style de Cicéron.
-cicéronienne	Féminin singulier de cicéronien.
-cicéroniennes		cicéronien	1
-cicéroniens		cicéronien	9
-cicéros		cicéro	0
-cichlidé	Poisson présent dans les grands lacs d'eau douce des régions chaudes du monde.
-cichlidés		cichlidé	0
-cicindèle	Nom donné à des coléoptères prédateurs, rapides à la course et à fortes mandibules, appartenant au genre Cicindela ou à des genres voisins comme Cylindera.
-cicindèles		cicindèle	0
-cicla		cicler	39
-ciclai		cicler	55
-ciclaient		cicler	42
-ciclais		cicler	52
-ciclait		cicler	40
-ciclâmes		cicler	68
-ciclant		cicler	43
-ciclas		cicler	83
-ciclasse		cicler	81
-ciclassent		cicler	78
-ciclasses		cicler	87
-ciclassiez		cicler	88
-ciclassions		cicler	90
-ciclât		cicler	62
-ciclâtes		cicler	84
-cicle		cicler	64
-ciclée	Cri perçant.
-ciclées		ciclée	0
-ciclent		cicler	41
-cicler	Pousser des cris aigus.
-ciclera		cicler	44
-ciclerai		cicler	50
-cicleraient		cicler	63
-ciclerais		cicler	60
-ciclerait		cicler	49
-cicleras		cicler	57
-ciclèrent		cicler	48
-ciclerez		cicler	58
-cicleriez		cicler	74
-ciclerions		cicler	82
-ciclerons		cicler	61
-cicleront		cicler	54
-cicles		cicler	77
-ciclez		cicler	47
-cicliez		cicler	67
-ciclions		cicler	65
-ciclons		cicler	59
-ciclosporine	Agent immunosuppresseur dont l’utilisation thérapeutique, dès le début des années 1980, a permis un essor considérable du domaine de la transplantation d'organ…
-ciclosporines		ciclosporine	0
-ciconiidé	Tout oiseau de la famille des ciconiidés.
-ciconiidés	Famille d'oiseaux échassiers de grande taille appartenant à l'ordre des ciconiiformes, formée de 19 espèces réparties en six genres, et comprenant les cigognes…
-ciconiiforme	Oiseau de l’ordre des ciconiiformes.
-ciconiiformes	Ordre d'oiseaux, incluant une partie du groupe artificiel et maintenant désuet d'oiseaux appelés "échassiers", comprenant une seule famille, les ciconiidés, qu…
-cicutine	Alcaloïde toxique présent dans la grande cigüe (Conium maculatum) et la petite ciguë (Aethusa cynapium) et utilisé comme analgésique, anticonvulsif et antispas…
-cicutines		cicutine	0
-cidre	Boisson faite par fermentation alcoolique de jus de pommes pressurées.
-cidrerie	Industrie de la fabrication du cidre ou établissement où se fait cette fabrication.
-cidreries		cidrerie	0
-cidres		cidre	0
-cidricole	Qui est relatif au cidre, à sa production.
-cidricoles		cidricole	0
-cidrier	Relatif au cidre.
-cidrière	Productrice de cidre.
-cidrières		cidrière	0
-cidriers		cidrier	0
-ciel	Espace immense dans lequel se meuvent tous les astres.
-ciels	Pluriel de ciel (dans certains sens seulement comme la peinture, l’ameublement, la poésie).	ciel
-cierge	Chandelle de cire à l’usage de l’église.
-cierges		cierge	0
-cieux	Pluriel de ciel, utilisé dans un sens singulier.	ciel
-cif	Incluant le coût, l’assurance et le fret (cost, insurance and freight en anglais).
-cigale	Insecte ailé de la famille des cicadidés, commun dans les régions méditerranéennes.
-cigales		cigale	0
-cigalière	Membre féminin d’une Cigales, investisseur solidaire.
-cigalières		cigalière	0
-cigalon	Petite cigale, et en particulier la cigale cotonneuse (Tibicina tomentosa).
-cigalons		cigalon	0
-cigare	Petit rouleau de feuilles de tabac préparé pour être fumé.
-cigares		cigare	0
-cigarette	Petit cylindre de tabac finement haché entouré d’une feuille de papier fin, que l’on fume.
-cigarettes		cigarette	0
-cigarettier	Relatif à la cigarette.
-cigarettière	Fabricante de cigarettes.
-cigarettières		cigarettier	1
-cigarettiers		cigarettier	0
-cigarier	Ouvrier travaillant à la confection des cigares.
-cigarière	Ouvrière travaillant à la confection des cigares, on dit aussi cigareuse.
-cigarières		cigarière	0
-cigariers		cigarier	0
-cigarillo	Petit cigare d’une taille proche de celle de la cigarette, cigarette où le papier est remplacé par une feuille de tabac.
-cigarillos		cigarillo	0
-cigogne	Oiseau échassier migrateur aux longues pattes et au long bec droit (du genre Ciconia).
-cigogneau	Petit de la cigogne.
-cigogneaux		cigogneau	0
-cigognes		cigogne	0
-ciguatéra	Forme particulière d’intoxication alimentaire par les chairs de poissons contaminés par la ciguatoxine produite par la microalgue benthique Gambierdiscus toxic…
-ciguateras		ciguatera	0
-ciguë	Orthographe traditionnelle de cigüe : plante ombellifère dont certaines espèces sont très vénéneuses.
-ciguës		ciguë	0
-cil	Poil des paupières.
-ciliaire	Relatif aux cils.
-ciliaires		ciliaire	0
-ciliature	Ensemble des cils d’une cellule.
-ciliatures		ciliature	0
-cilice	Espèce de plastron ou de large ceinture, qui est faite d’un tissu de poil de chèvre, de crin de cheval, ou de quelque autre poil rude et piquant, et que l’on p…
-cilices		cilice	0
-cilié	Se dit d'une cellule qui porte sur le bord des cils vibratiles, qui lui permettent de se mouvoir.
-ciliée		cilié	23
-ciliées		cilié	1
-ciliés		cilié	9
-cilla		ciller	39
-cillai		ciller	22
-cillaient		ciller	32
-cillais		ciller	29
-cillait		ciller	34
-cillâmes		ciller	3
-cillant		ciller	35
-cillas		ciller	12
-cillasse		ciller	6
-cillassent		ciller	17
-cillasses		ciller	8
-cillassiez		ciller	14
-cillassions		ciller	25
-cillât		ciller	20
-cillâtes		ciller	2
-cille		ciller	79
-cillée		ciller	37
-cillées		ciller	36
-cillement	Action de ciller les yeux.
-cillements		cillement	0
-cillent		ciller	31
-ciller	Fermer et rouvrir l’œil rapidement en rapprochant puis séparant les paupières.
-cillera		ciller	21
-cillerai		ciller	16
-cilleraient		ciller	28
-cillerais		ciller	18
-cillerait		ciller	26
-cilleras		ciller	7
-cillèrent		ciller	24
-cillerez		ciller	5
-cilleriez		ciller	4
-cillerions		ciller	11
-cillerons		ciller	10
-cilleront		ciller	15
-cilles		ciller	66
-cillez		ciller	30
-cilliez		ciller	13
-cillions		ciller	19
-cillons		ciller	27
-cils		cil	0
-cimaise	Moulure qui forme la partie supérieure d’une corniche.
-cimaises		cimaise	0
-cime	Partie la plus haute d’une montagne, d’un rocher, d’un arbre, etc.
-ciment	Mélange de briques pulvérisées et de chaux dont on faisait un mortier ^().
-cimenta		cimenter	33
-cimentage	Action de cimenter, le résultat de cette action.
-cimentages		cimentage	0
-cimentai		cimenter	22
-cimentaient		cimenter	32
-cimentaire	Relatif au ciment.
-cimentaires		cimentaire	0
-cimentais		cimenter	29
-cimentait		cimenter	34
-cimentâmes		cimenter	3
-cimentant		cimenter	35
-cimentas		cimenter	12
-cimentasse		cimenter	6
-cimentassent		cimenter	17
-cimentasses		cimenter	8
-cimentassiez		cimenter	14
-cimentassions		cimenter	25
-cimentât		cimenter	20
-cimentâtes		cimenter	2
-cimentation	Action de cimenter.
-cimentations		cimentation	0
-cimenté	Ferme, solide, comme fait de ciment.
-cimentée		cimenter	37
-cimentées		cimenter	36
-cimentent		cimenter	31
-cimenter	Lier avec du ciment, enduire de ciment.
-cimentera		cimenter	21
-cimenterai		cimenter	16
-cimenteraient		cimenter	28
-cimenterais		cimenter	18
-cimenterait		cimenter	26
-cimenteras		cimenter	7
-cimentèrent		cimenter	24
-cimenterez		cimenter	5
-cimenterie	Usine spécialisée dans la fabrication de ciment.
-cimenteries		cimenterie	0
-cimenteriez		cimenter	4
-cimenterions		cimenter	11
-cimenterons		cimenter	10
-cimenteront		cimenter	15
-cimentés		cimenter	38
-cimentez		cimenter	30
-cimentier	Relatif au ciment, cimentaire.
-cimentière	Femme fabriquant du ciment.
-cimentières		cimentier	1
-cimentiers		cimentier	9
-cimentiez		cimenter	13
-cimentions		cimenter	19
-cimentons		cimenter	27
-ciments		ciment	0
-cimes		cime	0
-cimeterre	Sabre, principalement en usage au Moyen-Orient et avec une lame très large et recourbée.
-cimeterres		cimeterre	0
-cimetière	Lieu où l’on enterre les morts.
-cimetières		cimetière	0
-cimicaire	Nom désuet de l'actée, genre de la famille des renonculacées, auquel appartient la Actaea cimicifuga (anciennement nommée Cimicifuga foetida ), dont l’odeur éc…
-cimicaires		cimicaire	0
-cimier	Ornement qui forme la cime d’un casque, ou plus généralement de tout couvre-chef.
-cimiers		cimier	0
-cimmérien	Relatif aux Cimmériens, un peuple scythique habitant au nord, ou à la Cimmérie, leur territoire.
-cimmérienne		cimmérien	23
-cimmériennes		cimmérien	1
-cimmériens		cimmérien	9
-cinabre	Combinaison naturelle ou artificielle de mercure et de soufre, de formule HgS, dont on fait le vermillon.
-cinabres		cinabre	0
-cinchonine	Alcaloïde que l’on trouve dans diverses espèces de quinquina.
-cinchonines		cinchonine	0
-cincle	Merle d’eau.
-cincles		cincle	0
-cindynique	Étude des risques et des situations dangereuses qui prend en compte les aspects techniques, humains et organisationnels liés à une activité donnée.
-cindyniques		cindynique	0
-ciné	Salle de cinéma.
-cinéaste	Réalisateur ou réalisatrice de film de cinéma qui a pour particularité de considérer son travail comme un art.
-cinéastes		cinéaste	0
-cinéclub	Variante orthographique de ciné-club.
-cinéclubs		cinéclub	0
-cinéconcert	Concert musical accompagné d’une projection cinématographique.
-cinéconcerts		cinéconcert	0
-cinégénie	Beauté dont la reproduction cinématographique produit un effet esthétique.
-cinégénies		cinégénie	0
-cinégénique	Qui donne, au cinéma, des images esthétiques.
-cinégéniques		cinégénique	0
-cinégraphie	Cinématographie.
-cinégraphier	Reproduire en utilisant la technique du cinéma.
-cinégraphiés		cinégraphier	38
-cinégraphique	Relatif à la cinégraphie.
-cinégraphiques		cinégraphique	0
-cinéma	Art de réaliser un film ainsi que l’ensemble des techniques employées.
-cinémas		cinéma	0
-cinémascope	Système optique (hypergonar) qui permet de projeter des films en grande largeur — avec un rapport largeur sur hauteur de 2,35:1 (avant 1970) ou 2,39:1 (après 1…
-cinémascopes		cinémascope	0
-cinémathèque	Lieu de diffusion, de conservation, de documentation, de préservation, de restauration et de mise en valeur du patrimoine cinématographique et télévisuel.
-cinémathèques		cinémathèque	0
-cinématique	Relatif au mouvement, à la cinématique.
-cinématiques		cinématique	0
-cinématographe	Appareil d’optique qui, au moyen de projections photographiques, donne aux spectateurs l’illusion de voir des mouvements réels.
-cinématographes		cinématographe	0
-cinématographia	Troisième personne du singulier du passé simple du verbe cinématographier.
-cinématographie	Art de réaliser un film ainsi que l’ensemble des techniques employées.
-cinémomètre	Appareil servant à mesurer la vitesse des automobiles.
-cinémomètres		cinémomètre	0
-cinéparc	Variante de ciné-parc.
-cinéparcs		cinéparc	0
-cinéphage	Qui dévore les films.
-cinéphages		cinéphage	0
-cinéphile	Qui aime le cinéma.
-cinéphiles		cinéphile	0
-cinéphilie	Amour du cinéma.
-cinéphilies		cinéphilie	0
-cinéphilique	Relatif à la cinéphilie, à l’amour du cinéma.
-cinéphiliques		cinéphilique	0
-cinéraire	Qui renferme les cendres d’un mort.
-cinéraires		cinéraire	0
-cinérama	Système de projection de films en grande largeur.
-cinéramas		cinérama	0
-cinérite	Roche volcanique généralement tendre et poreuse résultant de l’accumulation de cendre volcanique.
-cinérites		cinérite	0
-cinéroman	Anciennement, surtout à l'époque du cinéma muet : film à épisodes.
-cinéromans		cinéroman	0
-cinés		ciné	0
-cinèse	Variante de kinèse.
-cinèses		cinèse	0
-cinétique	Mobile, en mouvement.
-cinétiques		cinétique	0
-cinétir	Procédé d’entraînement au tir pour la chasse par lequel on tire sur un écran projetant des scènes de chasse filmées en conditions réelles.
-cinétirs		cinétir	0
-cinétose	Mal des transports.
-cinétoses		cinétose	0
-cingalais	Langue parlée au Sri Lanka principalement par les Cingalais, appartenant au groupe indo-aryen des langues indo-européennes, c’est une des deux langues officiel…
-cingalaise		cingalais	23
-cingalaises		cingalais	1
-cinghalais	Variante orthographique de cingalais.
-cinghalaise		cinghalais	23
-cinghalaises		cinghalais	1
-cingla		cingler	39
-cinglage	Action de cingler le fer.
-cinglages		cinglage	0
-cinglai		cingler	22
-cinglaient		cingler	32
-cinglais		cingler	29
-cinglait		cingler	34
-cinglâmes		cingler	3
-cinglant	Qui cingle, qui fouette.
-cinglante		cinglant	23
-cinglantes		cinglant	1
-cinglants		cinglant	9
-cinglas		cingler	12
-cinglasse		cingler	6
-cinglassent		cingler	17
-cinglasses		cingler	8
-cinglassiez		cingler	14
-cinglassions		cingler	25
-cinglât		cingler	20
-cinglâtes		cingler	2
-cinglé	Fou.
-cinglée	Personnage de sexe féminin qui est cinglée.
-cinglées		cinglé	1
-cinglent		cingler	31
-cingler	Faire voile vers une direction, en parlant de la route sur laquelle on gouverne.
-cinglera		cingler	21
-cinglerai		cingler	16
-cingleraient		cingler	28
-cinglerais		cingler	18
-cinglerait		cingler	26
-cingleras		cingler	7
-cinglèrent		cingler	24
-cinglerez		cingler	5
-cingleriez		cingler	4
-cinglerions		cingler	11
-cinglerons		cingler	10
-cingleront		cingler	15
-cinglés		cinglé	9
-cinglez		cingler	30
-cingliez		cingler	13
-cinglions		cingler	19
-cinglons	Pluriel de cinglon.
-cinnamome	Autre nom du cannelier.
-cinnamomes		cinnamome	0
-cinoche	Cinéma.
-cinoches		cinoche	0
-cinoque	Homme un peu fou, dérangé, qui n’a pas toute sa tête.
-cinoques		cinoque	0
-cinq	Adjectif numéral correspondant au cardinal quatre plus un.
-cinquantaine	Assemblage de choses de même nature au nombre de cinquante environ.
-cinquantaines		cinquantaine	0
-cinquante	Quarante-neuf plus un, soit cinq fois dix, cardinal correspondant au nombre 50.
-cinquantenaire	Qui est âgé d'environ cinquante ans, qui dure depuis cinquante ans.
-cinquantenaires		cinquantenaire	0
-cinquantenier	Autrefois, commandant de cinquante hommes dans une milice urbaine.
-cinquanteniers		cinquantenier	0
-cinquantième	Élément ordinal, correspondant au cardinal cinquante.
-cinquantièmes		cinquantième	0
-cinquième	Qui vient après le quatrième.
-cinquièmement	En cinquième lieu.
-cinquièmes		cinquième	0
-cinsault	Cépage noir, utilisé notamment pour certains rosés.
-cinsaults		cinsault	0
-cinsaut	Variante de cinsault.
-cinsauts		cinsaut	0
-cintra		cintrer	33
-cintrage	Opération qui consiste à donner à des pièces de bois, de fer, etc., la forme d’un cintre.
-cintrages		cintrage	0
-cintrai		cintrer	22
-cintraient		cintrer	32
-cintrais		cintrer	29
-cintrait		cintrer	34
-cintrâmes		cintrer	3
-cintrant		cintrer	35
-cintras		cintrer	12
-cintrasse		cintrer	6
-cintrassent		cintrer	17
-cintrasses		cintrer	8
-cintrassiez		cintrer	14
-cintrassions		cintrer	25
-cintrât		cintrer	20
-cintrâtes		cintrer	2
-cintre	Courbure en arcade, en demi-cercle.
-cintrée		cintré	23
-cintrées		cintré	1
-cintrent		cintrer	31
-cintrer	Bâtir en cintre, faire un ouvrage en cintre.
-cintrera		cintrer	21
-cintrerai		cintrer	16
-cintreraient		cintrer	28
-cintrerais		cintrer	18
-cintrerait		cintrer	26
-cintreras		cintrer	7
-cintrèrent		cintrer	24
-cintrerez		cintrer	5
-cintreriez		cintrer	4
-cintrerions		cintrer	11
-cintrerons		cintrer	10
-cintreront		cintrer	15
-cintrés		cintré	9
-cintreuse	Machine pour effectuer le cintrage des profilés et tubes métalliques pour réaliser des parties courbes.
-cintreuses		cintreuse	0
-cintrez		cintrer	30
-cintriez		cintrer	13
-cintrions		cintrer	19
-cintrons		cintrer	27
-cipaille	Plat traditionnel québécois fait avec de la viande, des pâtes et des patates originaire des régions du Bas-Saint-Laurent et de la Gaspésie.
-cipailles		cipaille	0
-cipal	Garde municipal.
-cipale	Vélodrome municipal de Paris.
-cipales		cipale	0
-cipâte	Plat traditionnel québécois fait avec de la viande, des pâtes et des patates originaire des régions du Bas-Saint-Laurent et de la Gaspésie.
-cipâtes		cipâte	0
-cipaux		cipal	0
-cipaye	Relatif aux mercenaires (ou soldats réguliers) hindous au service d’une armée occidentale (britannique, française ou portugaise) à l’époque de la colonisation …
-cipayes		cipaye	0
-cipolin	Aux veines épaisses et ondulées rappelant les feuilles concentriques d’un oignon, pour qualifier du marbre.
-cipolins		cipolin	0
-cippe	Demi-colonne sans chapiteau, sur laquelle on grave quelquefois des inscriptions.
-cippes		cippe	0
-cipre	Nom vernaculaire du cyprès chauve.
-cipres		cipre	0
-ciprière	En Louisiane, marécage dont la végétation est dominée par les cipres.
-ciprières		ciprière	0
-cira		cirer	39
-cirage	Action de cirer ou résultat de cette action.
-cirages		cirage	0
-cirai		cirer	22
-ciraient		cirer	32
-cirais		cirer	29
-cirait		cirer	34
-cirâmes		cirer	3
-cirant		cirer	35
-ciras		cirer	12
-cirasse		cirer	6
-cirassent		cirer	17
-cirasses		cirer	8
-cirassiez		cirer	14
-cirassions		cirer	25
-cirât		cirer	20
-cirâtes		cirer	2
-circa	À peu près, aux environs de, vers.
-circadien	D’un rythme biologique dont la période est d’environ 24 heures.
-circadienne		circadien	23
-circadiennes		circadien	1
-circadiens		circadien	9
-circaète	Rapace du genre Circaetus, spécialisé dans la chasse aux reptiles.
-circaètes		circaète	0
-circassien	Relatif à la Circassie : à la région, ses habitants, sa culture, etc.
-circassienne	Artiste féminine de cirque.
-circassiennes		circassienne	0
-circassiens	Masculin pluriel de circassien.
-circée	Circaea, genre de plantes de la famille des Onagracées.
-circées		circée	0
-circiné	Qui est roulé sur soi-même en manière de crosse.
-circinée		circiné	23
-circinées		circiné	1
-circinés		circiné	9
-circoncîmes		circoncire	68
-circoncira		circoncire	44
-circoncirai		circoncire	50
-circonciraient		circoncire	97
-circoncirais		circoncire	96
-circoncirait		circoncire	92
-circonciras		circoncire	57
-circoncire	Couper le prépuce, pratiquer la circoncision.
-circoncirent		circoncire	48
-circoncirez		circoncire	58
-circonciriez		circoncire	104
-circoncirions		circoncire	105
-circoncirons		circoncire	61
-circonciront		circoncire	54
-circoncis	Qui a subi la circoncision.
-circoncisaient		circoncire	93
-circoncisais		circoncire	95
-circoncisait		circoncire	91
-circoncisant		circoncire	43
-circoncise		circoncire	45
-circoncisent		circoncire	41
-circoncises		circoncire	51
-circonciseur	Officiant dans la religion juive et islamique pratiquant la circoncision.
-circonciseurs		circonciseur	0
-circoncisez		circoncire	70
-circoncisiez		circoncire	102
-circoncision	Ablation totale ou partielle du prépuce, pour des raisons ou médicales.
-circoncisions		circoncision	0
-circoncisons		circoncire	73
-circoncisse		circoncire	81
-circoncissent		circoncire	78
-circoncisses		circoncire	87
-circoncissiez		circoncire	88
-circoncissions		circoncire	90
-circoncit		circoncire	80
-circoncîtes		circoncire	84
-circonférence	Contour d’un cercle.
-circonférences		circonférence	0
-circonférentiel	Relatif à la circonférence.
-circonflexe	Qui a des courbures, des sinuosités.
-circonflexes		circonflexe	0
-circonlocution	Circuit de paroles dont on se sert quand on veut évoquer une chose sans l’exprimer directement.
-circonlocutions		circonlocution	0
-circonscription	Action de circonscrire.
-circonscrira		circonscrire	44
-circonscrirai		circonscrire	50
-circonscrirais		circonscrire	96
-circonscrirait		circonscrire	92
-circonscriras		circonscrire	57
-circonscrire	Enfermer dans des limites.
-circonscrirez		circonscrire	58
-circonscririez		circonscrire	104
-circonscririons		circonscrire	105
-circonscrirons		circonscrire	61
-circonscriront		circonscrire	54
-circonscris		circonscrire	72
-circonscrit	Décrit autour.
-circonscrite		circonscrit	23
-circonscrites		circonscrit	1
-circonscrits		circonscrit	9
-circonscrivais		circonscrire	95
-circonscrivait		circonscrire	91
-circonscrivant		circonscrire	43
-circonscrive		circonscrire	85
-circonscrivent		circonscrire	41
-circonscrives		circonscrire	98
-circonscrivez		circonscrire	70
-circonscriviez		circonscrire	102
-circonscrivîmes		circonscrire	68
-circonscrivions		circonscrire	103
-circonscrivis		circonscrire	55
-circonscrivisse		circonscrire	81
-circonscrivit		circonscrire	39
-circonscrivîtes		circonscrire	84
-circonscrivons		circonscrire	73
-circonspect	Qui prend garde à ce qu’il dit, à ce qu’il fait, en ayant égard aux circonstances, au milieu.
-circonspecte		circonspect	23
-circonspectes		circonspect	1
-circonspection	Manière d’agir ou de parler de celui qui est circonspect, qui fait attention aux circonstances.
-circonspections		circonspection	0
-circonspects		circonspect	9
-circonstance	Particularité qui accompagne et distingue un fait, une situation, etc.
-circonstances		circonstance	0
-circonstancia		circonstancier	33
-circonstanciai		circonstancier	22
-circonstanciais		circonstancier	29
-circonstanciait		circonstancier	34
-circonstanciant		circonstancier	35
-circonstancias		circonstancier	12
-circonstanciât		circonstancier	20
-circonstancié	Exposé dans tous ses détails.
-circonstanciée		circonstancié	23
-circonstanciées		circonstancié	1
-circonstanciel	Qui indique une circonstance de l’action ou de l’état marqué par le verbe.
-circonstanciels		circonstanciel	9
-circonstancient		circonstancier	31
-circonstancier	Exposer en détaillant les circonstances.
-circonstanciera		circonstancier	21
-circonstanciés		circonstancié	9
-circonstanciez		circonstancier	30
-circonstanciiez		circonstancier	13
-circonstancions		circonstancier	27
-circonvallation	Tranchée à parapet, à redoutes, à place d’armes, etc., que des assiégeants font autour de leur position pour se garantir des attaques du dehors et pour empêche…
-circonvenaient		circonvenir	116
-circonvenais		circonvenir	114
-circonvenait		circonvenir	119
-circonvenant	Qui entoure, environne.
-circonvenez		circonvenir	30
-circonveniez		circonvenir	110
-circonvenions		circonvenir	111
-circonvenir	Entourer, assaillir.
-circonvenons		circonvenir	27
-circonvenu		circonvenir	56
-circonvenue		circonvenir	45
-circonvenues		circonvenir	36
-circonvenus		circonvenir	38
-circonviendra		circonvenir	21
-circonviendrai		circonvenir	16
-circonviendrais		circonvenir	106
-circonviendrait		circonvenir	112
-circonviendras		circonvenir	7
-circonviendrez		circonvenir	5
-circonviendriez		circonvenir	99
-circonviendrons		circonvenir	10
-circonviendront		circonvenir	15
-circonvienne		circonvenir	89
-circonviennent		circonvenir	31
-circonviennes		circonvenir	76
-circonviens		circonvenir	79
-circonvient		circonvenir	80
-circonvînmes		circonvenir	3
-circonvinrent		circonvenir	24
-circonvins		circonvenir	22
-circonvinsse		circonvenir	6
-circonvinssent		circonvenir	17
-circonvinsses		circonvenir	8
-circonvinssiez		circonvenir	14
-circonvinssions		circonvenir	25
-circonvint		circonvenir	33
-circonvîntes		circonvenir	2
-circonvoisin	Qui est situé tout près et autour de ce dont on parle.
-circonvoisine	Celui qui est situé tout près et autour de ce dont on parle.
-circonvoisines		circonvoisin	1
-circonvoisins		circonvoisin	9
-circonvolutif	Qui a rapport aux circonvolutions du cerveau.
-circonvolutifs		circonvolutif	9
-circonvolution	Course circulaire ou elliptique autour d’un centre plus ou moins fixe.
-circonvolutions		circonvolution	0
-circonvolutive		circonvolutif	23
-circonvolutives		circonvolutif	1
-circuit	Pourtour d’un lieu déterminé.
-circuiterie	Ensemble des composants d’un circuit.
-circuiteries		circuiterie	0
-circuits		circuit	0
-circula		circuler	33
-circulai		circuler	22
-circulaient		circuler	32
-circulaire	Relatif au cercle.
-circulairement	D'une façon circulaire, dans un mouvement, une forme de rotation.
-circulaires		circulaire	0
-circulais		circuler	29
-circulait		circuler	34
-circulâmes		circuler	3
-circulant	Qui circule, qui est en circulation.
-circulante		circulant	23
-circulantes		circulant	1
-circulants		circulant	9
-circularisa		circulariser	33
-circularisai		circulariser	22
-circularisaient		circulariser	32
-circularisais		circulariser	29
-circularisait		circulariser	34
-circularisâmes		circulariser	3
-circularisant		circulariser	35
-circularisas		circulariser	12
-circularisasse		circulariser	6
-circularisasses		circulariser	8
-circularisât		circulariser	20
-circularisâtes		circulariser	2
-circularisé		circulariser	46
-circularisée		circulariser	37
-circularisées		circulariser	36
-circularisent		circulariser	31
-circulariser	Rendre circulaire.
-circularisera		circulariser	21
-circulariserai		circulariser	16
-circulariserais		circulariser	18
-circulariserait		circulariser	26
-circulariseras		circulariser	7
-circularisèrent		circulariser	24
-circulariserez		circulariser	5
-circulariseriez		circulariser	4
-circulariserons		circulariser	10
-circulariseront		circulariser	15
-circularisés		circulariser	38
-circularisez		circulariser	30
-circularisiez		circulariser	13
-circularisions		circulariser	19
-circularisons		circulariser	27
-circularité	Caractère de ce qui est circulaire, de ce qui tourne en rond.
-circularités		circularité	0
-circulas		circuler	12
-circulasse		circuler	6
-circulassent		circuler	17
-circulasses		circuler	8
-circulassiez		circuler	14
-circulassions		circuler	25
-circulât		circuler	20
-circulâtes		circuler	2
-circulateur	Qui fait circuler.
-circulateurs		circulateur	0
-circulation	Mouvement circulaire, en se référant aux planètes.
-circulations		circulation	0
-circulatoire	Relatif à la circulation d'un fluide.
-circulatoires		circulatoire	0
-circule		circuler	79
-circulent		circuler	31
-circuler	Se mouvoir circulairement.
-circulera		circuler	21
-circulerai		circuler	16
-circuleraient		circuler	28
-circulerais		circuler	18
-circulerait		circuler	26
-circuleras		circuler	7
-circulèrent		circuler	24
-circulerez		circuler	5
-circuleriez		circuler	4
-circulerions		circuler	11
-circulerons		circuler	10
-circuleront		circuler	15
-circules		circuler	66
-circulez		circuler	30
-circuliez		circuler	13
-circulions		circuler	19
-circulons		circuler	27
-circumduction	Mouvement de rotation autour d'un axe ou d'un point central.
-circumlunaire	Autour du globe de la Lune, qui entoure la Lune.
-circumlunaires		circumlunaire	0
-circumpolaire	Relatif à l’environnement des pôles terrestres.
-circumpolaires		circumpolaire	0
-circumstellaire	Qui se situe tout autour d’une étoile.
-circumterrestre	Autour du globe de la Terre.
-cire	Ester d'éthylène glycol et d’acides gras.
-cirée		cirer	37
-cirées		cirer	36
-cirent		cirer	31
-cirer	Enduire ou frotter de cire.
-cirera		cirer	21
-cirerai		cirer	16
-cireraient		cirer	28
-cirerais		cirer	18
-cirerait		cirer	26
-cireras		cirer	7
-cirèrent		cirer	24
-cirerez		cirer	5
-cireriez		cirer	4
-cirerions		cirer	11
-cirerons		cirer	10
-cireront		cirer	15
-cires		cire	0
-cireur	Celui qui a pour métier de cirer les chaussures.
-cireurs		cireur	0
-cireuse	Celle qui a pour métier de cirer les chaussures.
-cireuses		cireux	1
-cireux	Relatif à la cire.
-cirez		cirer	30
-cirier	Artisan qui travaille en cire, qui fait et vend toutes sortes de cierges et de bougies.
-cirière	Artisane qui travaille en cire, qui fait et vend toutes sortes de cierges et de bougies.
-cirières		cirière	0
-ciriers		cirier	0
-ciriez		cirer	13
-cirions		cirer	19
-ciron	Acarien qui se développe sur la croûte du fromage, du jambon, dans la farine, et qui est le plus petit des animaux visibles à l’œil nu.
-cironné	Vermoulu.
-cironnée		cironné	23
-cironnées		cironné	1
-cironnés		cironné	9
-cirons		ciron	0
-cirque	Lieu destiné, chez les Romains, à accueillir les jeux publics, et particulièrement les diverses formes de lutte et les courses de chevaux et de chars.
-cirques		cirque	0
-cirre	Appendice filiforme, simple ou rameux, diversement tortillé ou roulé, au moyen duquel certaines plantes s'attachent aux corps voisins, parfois considéré comme …
-cirres		cirre	0
-cirrhe	Variante de cirre.
-cirrhes		cirrhe	0
-cirrhose	Affection du foie caractérisée par des granulations.
-cirrhoses		cirrhose	0
-cirrhotique	Qui se rapporte à la cirrhose ou qui est atteint de cette maladie.
-cirrhotiques		cirrhotique	0
-cirripède	Groupe d’animaux marins appartenant au sous-embranchement des crustacés.
-cirripèdes		cirripède	0
-cirrocumulus	Nuage appartenant à l'étage supérieur, situé à une altitude comprise entre 5000 et 10000 mètres, en forme de fleur de coton.
-cirrostratus	Nuage situé à une altitude variant entre 4500 et 12000 mètres formant un voile continu translucide couvrant totalement ou partiellement le ciel.
-cirrus	Nuage présent dans la couche supérieure de la troposphère (entre 6000 et 15000 mètres d’altitude), formé de cristaux de glace en forme de filaments blancs et q…
-cirse	Plantes du genre Cirsium, aux feuilles épineuses, de la famille des Astéracées, très proche du chardon.
-cirses		cirse	0
-cis	Relatif à des substituants se trouvant du même côté de l’axe d'une liaison chimique incapable de rotation libre.
-cisailla		cisailler	33
-cisaillage	Cisaillement, action de cisailler.
-cisaillages		cisaillage	0
-cisaillai		cisailler	22
-cisaillaient		cisailler	32
-cisaillais		cisailler	29
-cisaillait		cisailler	34
-cisaillâmes		cisailler	3
-cisaillant	Qui cisaille.
-cisaillas		cisailler	12
-cisaillasse		cisailler	6
-cisaillassent		cisailler	17
-cisaillasses		cisailler	8
-cisaillassiez		cisailler	14
-cisaillassions		cisailler	25
-cisaillât		cisailler	20
-cisaillâtes		cisailler	2
-cisaille	Outil servant à découper des matériaux durs ou épais.
-cisaillée		cisailler	37
-cisaillées		cisailler	36
-cisaillement	Action de cisailler.
-cisaillements		cisaillement	0
-cisaillent		cisailler	31
-cisailler	Couper, découper avec une ou des cisailles.
-cisaillera		cisailler	21
-cisaillerai		cisailler	16
-cisailleraient		cisailler	28
-cisaillerais		cisailler	18
-cisaillerait		cisailler	26
-cisailleras		cisailler	7
-cisaillèrent		cisailler	24
-cisaillerez		cisailler	5
-cisailleriez		cisailler	4
-cisaillerions		cisailler	11
-cisaillerons		cisailler	10
-cisailleront		cisailler	15
-cisailles	Gros ciseaux qui servent à couper des plaques ou des feuilles de métal.
-cisaillez		cisailler	30
-cisailliez		cisailler	13
-cisaillions		cisailler	19
-cisaillons		cisailler	27
-cisalpin	De ce côté-ci des Alpes (tel que vu de Rome), au sud des Alpes.
-cisalpine		cisalpin	23
-cisalpines		cisalpin	1
-cisalpins		cisalpin	9
-ciseau	Lame, pièce métallique aiguisée à son extrémité, servant à couper ou à travailler le bois, le métal, etc.
-ciseaux	Instrument à deux lames pivotant sur un axe qui se chevauchent en partie pour couper ou rogner.
-cisela		ciseler	33
-ciselage	Action de ciseler.
-ciselages		ciselage	0
-ciselai		ciseler	22
-ciselaient		ciseler	32
-ciselais		ciseler	29
-ciselait		ciseler	34
-ciselâmes		ciseler	3
-ciselant	Qui cisèle.
-ciselas		ciseler	12
-ciselasse		ciseler	6
-ciselassent		ciseler	17
-ciselasses		ciseler	8
-ciselassiez		ciseler	14
-ciselassions		ciseler	25
-ciselât		ciseler	20
-ciselâtes		ciseler	2
-ciselé	Orné de ciselures, finement sculpté.
-ciselée		ciselé	23
-ciselées		ciselé	1
-cisèlement	Action de ciseler les grappes de raisin, c’est-à-dire d’en ôter les grains qui nuiraient au grossissement et à la maturité du reste.
-cisèlements		cisèlement	0
-cisèlent		ciseler	31
-ciseler	Travailler avec le ciseau, le ciselet des ouvrages de bronze, d’or, d’argent, etc.
-cisèlera		ciseler	21
-cisèlerai		ciseler	16
-cisèleraient		ciseler	28
-cisèlerais		ciseler	18
-cisèlerait		ciseler	26
-cisèleras		ciseler	7
-ciselèrent		ciseler	24
-cisèlerez		ciseler	5
-cisèleriez		ciseler	4
-cisèlerions		ciseler	11
-cisèlerons		ciseler	10
-cisèleront		ciseler	15
-ciselés		ciselé	9
-ciselet	Petit ciseau frappé au marteau dont se servent les orfèvres, les graveurs, les armuriers, etc.
-ciselets		ciselet	0
-ciseleur	Ouvrier dont le métier est de ciseler.
-ciseleurs		ciseleur	0
-ciseleuse	Ouvrière dont le métier est de ciseler.
-ciseleuses		ciseleuse	0
-ciselez		ciseler	30
-ciseliez		ciseler	13
-ciselions		ciseler	19
-cisellement	Variante orthographique de cisèlement.
-cisellements		cisellement	0
-ciselons		ciseler	27
-ciselure	Art de ciseler.
-ciselures		ciselure	0
-cisgenre	Qualifie une personne dont l’identité de genre, est en concordance avec le genre qui lui a été assigné à la naissance.
-cisgenres		cisgenre	0
-cisjordanien	Qui a un rapport avec la Cisjordanie ou ses habitants.
-cisjordanienne		cisjordanien	23
-cisjordaniennes		cisjordanien	1
-cisjordaniens		cisjordanien	0
-cisjuran	Qui se trouve en deçà du Jura vers l'ouest.
-cisjurane		cisjuran	109
-cisjuranes		cisjuran	1
-cisjurans		cisjuran	0
-cisleithan	Qui est en deçà de la Leitha.
-cisleithane		cisleithan	23
-cisleithanes	Pluriel de cisleithane.
-cisleithans		cisleithan	9
-cisoires	Gros ciseaux dont le manche est attaché et monté sur un pied.
-cispadan	Qui est en deçà du Pô.(du point de vue de Rome)
-cispadane		cispadan	23
-cispadanes		cispadan	1
-cispadans		cispadan	9
-cisplatine	Complexe organométallique à base de platine.
-cisplatines		cisplatine	0
-cisrhénan	Qui est en deçà du Rhin.
-cisrhénane		cisrhénan	23
-cisrhénanes		cisrhénan	1
-cisrhénans		cisrhénan	9
-cissoïde	Courbe du troisième degré s’enroulant comme le lierre.
-cissoïdes		cissoïde	0
-cistacée	Famille de plantes comprenant, entre autres, le ciste et l’hélianthème.
-cistacées		cistacée	0
-ciste	Arbrisseau poussant le plus souvent sur le pourtour méditerranéen, à feuilles persistantes simples, souvent velues, aux fleurs à cinq pétales, souvent plissés …
-cistercien	Relatif à l’ordre monastique chrétien défini à l’abbaye de Cîteaux par Robert de Molesme en 1098.
-cistercienne	Moniale de l’ordre monastique chrétien fondé à l’abbaye de Cîteaux.
-cisterciennes		cistercien	1
-cisterciens		cistercien	9
-cistes		ciste	0
-cisticole	Petit passereau, proche de la fauvette, surtout d’Afrique.
-cisticoles		cisticole	0
-cistophore	Jeune fille qui portait des corbeilles dans les fêtes de Bacchus.
-cistophores		cistophore	0
-cistre	Instrument de musique à cordes en usage aux XVIᵉ et XVIIᵉ siècles.
-cistres		cistre	0
-cistron	Région du génome qui ne porte qu’une seule information génétique transcrite en ARN.
-cistrons		cistron	0
-cistude	Genre de tortues au plastron large et mobile.
-cistudes		cistude	0
-cita		citer	33
-citadelle	Forteresse qui commandait une ville.
-citadelles		citadelle	0
-citadin	Celui qui habite une ville ou une zone urbaine.
-citadine	Celle qui habite une ville ou une zone urbaine.
-citadines		citadin	1
-citadins		citadin	9
-citai		citer	22
-citaient		citer	32
-citais		citer	29
-citait		citer	34
-citâmes		citer	3
-citant		citer	35
-citas		citer	12
-citasse		citer	6
-citassent		citer	17
-citasses		citer	8
-citassiez		citer	14
-citassions		citer	25
-citât		citer	20
-citâtes		citer	2
-citateur	Celui qui a l’habitude de faire des citations.
-citateurs		citateur	0
-citation	Acte notifié à la partie qu’on veut obliger à comparaître devant un juge ou devant un tribunal.
-citations		citation	0
-citatrice	Celle qui a l’habitude de faire des citations.
-citatrices		citatrice	0
-cité	Ville, surtout quand on veut en faire ressortir l’importance.
-citée		citer	37
-citées		citer	36
-citent		citer	31
-citer	Assigner à comparaître devant une juridiction civile ou religieuse.
-citera		citer	21
-citerai		citer	16
-citeraient		citer	28
-citerais		citer	18
-citerait		citer	26
-citeras		citer	7
-citèrent		citer	24
-citerez		citer	5
-citérieur	Qui est en deçà, de notre côté, plus près de nous (par opposition à ultérieur).
-citérieure		citérieur	23
-citérieures		citérieur	1
-citérieurs		citérieur	9
-citeriez		citer	4
-citerions		citer	11
-citerne	Réservoir souterrain ou non, destiné à recevoir et garder l’eau pluviale.
-citerneau	Petite citerne où l’eau s’épure par décantation avant de passer dans la citerne.
-citerneaux		citerneau	0
-citernes		citerne	0
-citerons		citer	10
-citeront		citer	15
-cites		citer	66
-citez		citer	30
-cithare	Instrument à corde pincées qui vibrent à vide, dérivé de la lyre.
-citharède	Chanteur qui s’accompagne à la cithare.
-citharèdes		citharède	0
-cithares		cithare	0
-cithariste	Joueur de cithare.
-citharistes		cithariste	0
-citiez		citer	13
-citions		citer	19
-citons		citer	27
-citoyen	Homme libre de l’Empire romain, doté de droits politiques dans une cité.
-citoyenne	Femme faisant partie de celles et ceux qui, dans un état organisé, jouissent des mêmes droits et obéissent aux mêmes lois.
-citoyennes		citoyenne	0
-citoyenneté	Les droits et devoirs d’un citoyen respectant la cité (en général l’État où il vit).
-citoyennetés		citoyenneté	0
-citoyens		citoyen	0
-citrate	Nom générique des sels formés par la combinaison de l’acide citrique avec différentes bases.
-citrates		citrate	0
-citrin	Qui est de couleur de citron.
-citrine	Variété de quartz dont la couleur jaune est due à la présence d’infimes quantités d’oxydes de fer.
-citrines		citrine	1
-citrins		citrin	9
-citrique	Qualifie un acide qu’on trouve dans le citron et dans certains autres fruits.
-citriques		citrique	0
-citron	Fruit du citronnier (Citrus × limon), de couleur jaune, à la peau rugueuse et de forme ovoïde.
-citronna		citronner	33
-citronnade	Boisson à base de sucre, de jus de citron et d’eau.
-citronnades		citronnade	0
-citronnai		citronner	22
-citronnaient		citronner	32
-citronnais		citronner	29
-citronnait		citronner	34
-citronnâmes		citronner	3
-citronnant		citronner	35
-citronnas		citronner	12
-citronnasse		citronner	6
-citronnassent		citronner	17
-citronnasses		citronner	8
-citronnassiez		citronner	14
-citronnassions		citronner	25
-citronnat	Écorce de citron confite.
-citronnâtes		citronner	2
-citronné	Qui goute ou sent le citron.
-citronnée		citronné	23
-citronnées		citronné	1
-citronnelle	Artemisia abrotanum, l’aurone ^().
-citronnelles		citronnelle	0
-citronnent		citronner	31
-citronner	Additionner de jus de citron.
-citronnera		citronner	21
-citronnerai		citronner	16
-citronneraient		citronner	28
-citronnerais		citronner	18
-citronnerait		citronner	26
-citronneras		citronner	7
-citronnèrent		citronner	24
-citronnerez		citronner	5
-citronneriez		citronner	4
-citronnerions		citronner	11
-citronnerons		citronner	10
-citronneront		citronner	15
-citronnés		citronné	9
-citronnez		citronner	30
-citronnier	Petit arbre originaire du nord de l’Inde, à feuilles persistantes, qui fleurit et donne des fruits pendant toute l’année, et qui est cultivé pour son fruit, le…
-citronniers		citronnier	0
-citronniez		citronner	13
-citronnions		citronner	19
-citronnons		citronner	27
-citrons		citron	0
-citrouille	Espèce de courge de la famille des Cucurbitacées, dont les tiges rampent à terre, de nom scientifique Cucurbita pepo.
-citrouilles		citrouille	0
-civadière	Voile carrée fixée sous le mât de beaupré.
-civadières		civadière	0
-civaïsme	Religion hindouiste.
-çivaïsmes		çivaïsme	0
-civaïte	Variante de shivaïste.
-civaïtes		civaïte	0
-cive	Ciboule, plante bulbeuse de la famille des Liliacées, dont les feuilles sont utilisées comme condiment.
-civelle	Lamproyon (petite lamproie).
-civelles		civelle	0
-cives		cive	0
-civet	Ragout de lièvre, lapin, de chevreuil ou d’autres mammifères sauvages, cuisiné avec une sauce au vin rouge et oignons, liée avec le sang de l’animal.
-civets		civet	0
-civette	Viverridé carnivore d’Afrique et d’Asie, au corps allongé, recherché pour le musc sécrété par deux glandes anales.
-civettes		civette	0
-civière	Dispositif muni de brancards sur lequel on porte à bras des fardeaux.
-civières		civière	0
-civil	Citoyen ; relatif aux citoyens.
-civile	Personne de la population qui n’a pas le statut de combattante et qui n’est ni une prisonnière de guerre, ni une combattante ne prenant plus part aux hostilité…
-civilement	En matière civile.
-civiles		civil	1
-civilisa		civiliser	33
-civilisable	Qui peut être civilisé.
-civilisables		civilisable	0
-civilisai		civiliser	22
-civilisaient		civiliser	32
-civilisais		civiliser	29
-civilisait		civiliser	34
-civilisâmes		civiliser	3
-civilisant		civiliser	35
-civilisas		civiliser	12
-civilisasse		civiliser	6
-civilisassent		civiliser	17
-civilisasses		civiliser	8
-civilisassiez		civiliser	14
-civilisassions		civiliser	25
-civilisât		civiliser	20
-civilisâtes		civiliser	2
-civilisateur	Qui civilise, qui répand la civilisation.
-civilisateurs		civilisateur	9
-civilisation	Action de civiliser ou état de ce qui est civilisé.
-civilisationnel	Relatif à la civilisation.
-civilisations		civilisation	0
-civilisatrice	Celle qui apporte la civilisation.
-civilisatrices		civilisateur	1
-civilisé	Relatif à une civilisation.
-civilisée		civilisé	23
-civilisées		civilisé	1
-civilisent		civiliser	31
-civiliser	Rendre civil, policé et sociable.
-civilisera		civiliser	21
-civiliserai		civiliser	16
-civiliseraient		civiliser	28
-civiliserais		civiliser	18
-civiliserait		civiliser	26
-civiliseras		civiliser	7
-civilisèrent		civiliser	24
-civiliserez		civiliser	5
-civiliseriez		civiliser	4
-civiliserions		civiliser	11
-civiliserons		civiliser	10
-civiliseront		civiliser	15
-civilises		civiliser	66
-civilisez		civiliser	30
-civilisiez		civiliser	13
-civilisions		civiliser	19
-civilisons		civiliser	27
-civiliste	Qualifie les praticiens du droit civil.
-civilistes		civiliste	0
-civilité	Ensemble de comportements liés à la politesse et au savoir-vivre.
-civilités		civilité	0
-civils		civil	9
-civique	Qui concerne le citoyen et la citoyenne.
-civiquement	D’une façon civique.
-civiques		civique	0
-civisme	Dévouement et attachement du citoyen à la Cité, tels qu'il assume ses devoirs avant de réclamer ses droits.
-civismes		civisme	0
+0ci	ou (Utilisé uniquement dans les compositions, pas utilisé isolément) Ici.
+2abatta	Pain large contenant de l’huile d’olive.
+8s		8	0
+3o	Au revoir.
+2biche	Cigarette.
+7s		7	0
+4ste	Personne communiquant avec une CB.
+7s		7	0
+3la		4er	x
+5ge	Action de cibler, résultat de cette action.
+7s		7	0
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Sorte de planche servant de but pour le tir à l’arc ou avec des armes à feu.
+4ée		4er	11
+6s		4er	10
+4ent		5r	v
+5r	Lancer quelque chose sur quelqu’un.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+4és		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3oire	Coupe sacrée où l’on conserve les hosties pour la communion des fidèles.
+7s		7	0
+4rium	Dais (de pierre, de métal ou de bois) qui est porté par quatre colonnes et qui surmonte un autel pour le protéger et le mettre en valeur.
+8s		8	0
+4ule	Nom usuel d'une plante herbacée vivace de la famille des Amaryllidaceae (Amaryllidacées), sorte de petit oignon dont les feuilles et le bulbe aromatiques serve…
+7s		7	0
+7tte	Plante condimentaire vivace aux feuilles en forme de tube fin et effilé, employée en assaisonnement.
+as		a	0
+6ot	Petit oignon.
+8s		8	0
+2cadelle	Un insecte piqueur de la famille des cicadellidés (Cicadellidae) qui ressemble à une petite cigale.
+9s		9	0
+4trice	Marque des blessures, des plaies, qui reste après la guérison.
+9s		9	0
+8iel	Qui a rapport à une cicatrice.
+ble		b	n
+ds	Féminin pluriel de cicatriciel.
+bs		b	9
+8ule	Tache blanche sur le jaune de l’œuf, qui indique le germe.
+bs		b	0
+7sa		8er	x
+9ble	Qui peut se cicatriser.
+cs		c	0
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant	Remède propre à cicatriser les plaies.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de cicatriser.
+ds		d	0
+8e		9r	27
+8ée		8er	11
+as		8er	10
+8ent		9r	v
+9r	Produire une cicatrice.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+3éro	Point typographique de 4,512 mm.
+3erone	Variante orthographique de cicérone.
+3érones		8	0
+7ien	De Cicéron, ou du style de Cicéron.
+ane	Féminin singulier de cicéronien.
+cs		a	1
+as		a	9
+6s		6	0
+3hlidé	Poisson présent dans les grands lacs d'eau douce des régions chaudes du monde.
+8s		8	0
+3indèle	Nom donné à des coléoptères prédateurs, rapides à la course et à fortes mandibules, appartenant au genre Cicindela ou à des genres voisins comme Cylindera.
+9s		9	0
+3la		4er	13
+5i		4er	1j
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	1w
+4ant		4er	17
+5s		4er	2b
+6se		4er	29
+8nt		4er	26
+8s		4er	2f
+7iez		4er	2g
+8ons		4er	2i
+4ât		4er	1q
+6es		4er	2c
+4e		5r	1s
+4ée	Cri perçant.
+6s		6	0
+4ent		5r	15
+5r	Pousser des cris aigus.
+6a		6	18
+7i		6	1e
+8ent		6	1r
+8s		6	1o
+8t		6	1d
+7s		6	1l
+4èrent		4er	1c
+4erez		6	1m
+6iez		6	22
+7ons		6	2a
+6ons		6	1p
+8t		6	1i
+5s		5r	25
+5z		5r	1b
+4iez		4er	1v
+5ons		4er	1t
+4ons		4er	1n
+5sporine	Agent immunosuppresseur dont l’utilisation thérapeutique, dès le début des années 1980, a permis un essor considérable du domaine de la transplantation d'organ…
+cs		c	0
+3oniidé	Tout oiseau de la famille des ciconiidés.
+9s	Famille d'oiseaux échassiers de grande taille appartenant à l'ordre des ciconiiformes, formée de 19 espèces réparties en six genres, et comprenant les cigognes…
+7forme	Oiseau de l’ordre des ciconiiformes.
+cs	Ordre d'oiseaux, incluant une partie du groupe artificiel et maintenant désuet d'oiseaux appelés "échassiers", comprenant une seule famille, les ciconiidés, qu…
+3utine	Alcaloïde toxique présent dans la grande cigüe (Conium maculatum) et la petite ciguë (Aethusa cynapium) et utilisé comme analgésique, anticonvulsif et antispas…
+8s		8	0
+2dre	Boisson faite par fermentation alcoolique de jus de pommes pressurées.
+5rie	Industrie de la fabrication du cidre ou établissement où se fait cette fabrication.
+8s		8	0
+5s		5	0
+4icole	Qui est relatif au cidre, à sa production.
+9s		9	0
+5er	Relatif au cidre.
+5ère	Productrice de cidre.
+8s		8	0
+5ers		7	0
+2el	Espace immense dans lequel se meuvent tous les astres.
+4s	Pluriel de ciel (dans certains sens seulement comme la peinture, l’ameublement, la poésie).	4
+3rge	Chandelle de cire à l’usage de l’église.
+6s		6	0
+3ux	Pluriel de ciel, utilisé dans un sens singulier.	3l
+2f	Incluant le coût, l’assurance et le fret (cost, insurance and freight en anglais).
+2gale	Insecte ailé de la famille des cicadidés, commun dans les régions méditerranéennes.
+6s		6	0
+5ière	Membre féminin d’une Cigales, investisseur solidaire.
+9s		9	0
+5on	Petite cigale, et en particulier la cigale cotonneuse (Tibicina tomentosa).
+7s		7	0
+4re	Petit rouleau de feuilles de tabac préparé pour être fumé.
+6s		6	0
+6tte	Petit cylindre de tabac finement haché entouré d’une feuille de papier fin, que l’on fume.
+9s		9	0
+8ier	Relatif à la cigarette.
+9ère	Fabricante de cigarettes.
+cs		9er	1
+9ers		b	0
+5ier	Ouvrier travaillant à la confection des cigares.
+6ère	Ouvrière travaillant à la confection des cigares, on dit aussi cigareuse.
+9s		9	0
+6ers		8	0
+6llo	Petit cigare d’une taille proche de celle de la cigarette, cigarette où le papier est remplacé par une feuille de tabac.
+9s		9	0
+3ogne	Oiseau échassier migrateur aux longues pattes et au long bec droit (du genre Ciconia).
+7au	Petit de la cigogne.
+9x		9	0
+7s		7	0
+3uatéra	Forme particulière d’intoxication alimentaire par les chairs de poissons contaminés par la ciguatoxine produite par la microalgue benthique Gambierdiscus toxic…
+6eras		9	0
+4ë	Orthographe traditionnelle de cigüe : plante ombellifère dont certaines espèces sont très vénéneuses.
+5s		5	0
+2l	Poil des paupières.
+3iaire	Relatif aux cils.
+8s		8	0
+5ture	Ensemble des cils d’une cellule.
+9s		9	0
+4ce	Espèce de plastron ou de large ceinture, qui est faite d’un tissu de poil de chèvre, de crin de cheval, ou de quelque autre poil rude et piquant, et que l’on p…
+6s		6	0
+4é	Se dit d'une cellule qui porte sur le bord des cils vibratiles, qui lui permettent de se mouvoir.
+5e		5	n
+6s		5	1
+5s		5	9
+3la		4er	13
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e		5r	27
+4ée		4er	11
+6s		4er	10
+4ement	Action de ciller les yeux.
+9s		9	0
+5nt		5r	v
+5r	Fermer et rouvrir l’œil rapidement en rapprochant puis séparant les paupières.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	1u
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+3s		3	0
+2maise	Moulure qui forme la partie supérieure d’une corniche.
+7s		7	0
+3e	Partie la plus haute d’une montagne, d’un rocher, d’un arbre, etc.
+4nt	Mélange de briques pulvérisées et de chaux dont on faisait un mortier ^().
+6a		6er	x
+7ge	Action de cimenter, le résultat de cette action.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8re	Relatif au ciment.
+as		a	0
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ation	Action de cimenter.
+bs		b	0
+6é	Ferme, solide, comme fait de ciment.
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Lier avec du ciment, enduire de ciment.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8ie	Usine spécialisée dans la fabrication de ciment.
+as		a	0
+az		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6ier	Relatif au ciment, cimentaire.
+7ère	Femme fabriquant du ciment.
+as		7er	1
+7ers		9	9
+8z		6er	d
+7ons		6er	j
+6ons		6er	r
+6s		6	0
+4s		4	0
+4terre	Sabre, principalement en usage au Moyen-Orient et avec une lame très large et recourbée.
+9s		9	0
+5ière	Lieu où l’on enterre les morts.
+9s		9	0
+3icaire	Nom désuet de l'actée, genre de la famille des renonculacées, auquel appartient la Actaea cimicifuga (anciennement nommée Cimicifuga foetida ), dont l’odeur éc…
+9s		9	0
+4er	Ornement qui forme la cime d’un casque, ou plus généralement de tout couvre-chef.
+6s		6	0
+3mérien	Relatif aux Cimmériens, un peuple scythique habitant au nord, ou à la Cimmérie, leur territoire.
+9ne		9	n
+bs		9	1
+9s		9	9
+2nabre	Combinaison naturelle ou artificielle de mercure et de soufre, de formule HgS, dont on fait le vermillon.
+7s		7	0
+3chonine	Alcaloïde que l’on trouve dans diverses espèces de quinquina.
+as		a	0
+4le	Merle d’eau.
+6s		6	0
+3dynique	Étude des risques et des situations dangereuses qui prend en compte les aspects techniques, humains et organisationnels liés à une activité donnée.
+as		a	0
+3é	Salle de cinéma.
+4aste	Réalisateur ou réalisatrice de film de cinéma qui a pour particularité de considérer son travail comme un art.
+8s		8	0
+4club	Variante orthographique de ciné-club.
+8s		8	0
+5oncert	Concert musical accompagné d’une projection cinématographique.
+bs		b	0
+4génie	Beauté dont la reproduction cinématographique produit un effet esthétique.
+9s		9	0
+8que	Qui donne, au cinéma, des images esthétiques.
+bs		b	0
+5raphie	Cinématographie.
+br	Reproduire en utilisant la technique du cinéma.
+aés		aer	12
+aque	Relatif à la cinégraphie.
+ds		d	0
+4ma	Art de réaliser un film ainsi que l’ensemble des techniques employées.
+6s		6	0
+7cope	Système optique (hypergonar) qui permet de projeter des films en grande largeur — avec un rapport largeur sur hauteur de 2,35:1 (avant 1970) ou 2,39:1 (après 1…
+bs		b	0
+6thèque	Lieu de diffusion, de conservation, de documentation, de préservation, de restauration et de mise en valeur du patrimoine cinématographique et télévisuel.
+cs		c	0
+7ique	Relatif au mouvement, à la cinématique.
+bs		b	0
+7ographe	Appareil d’optique qui, au moyen de projections photographiques, donne aux spectateurs l’illusion de voir des mouvements réels.
+es		e	0
+dia	Troisième personne du singulier du passé simple du verbe cinématographier.
+ee	Art de réaliser un film ainsi que l’ensemble des techniques employées.
+5omètre	Appareil servant à mesurer la vitesse des automobiles.
+bs		b	0
+4parc	Variante de ciné-parc.
+8s		8	0
+5hage	Qui dévore les films.
+9s		9	0
+6ile	Qui aime le cinéma.
+9s		9	0
+8ie	Amour du cinéma.
+as		a	0
+9que	Relatif à la cinéphilie, à l’amour du cinéma.
+cs		c	0
+4raire	Qui renferme les cendres d’un mort.
+9s		9	0
+6ma	Système de projection de films en grande largeur.
+8s		8	0
+5ite	Roche volcanique généralement tendre et poreuse résultant de l’accumulation de cendre volcanique.
+8s		8	0
+5oman	Anciennement, surtout à l'époque du cinéma muet : film à épisodes.
+9s		9	0
+4s		4	0
+3èse	Variante de kinèse.
+6s		6	0
+3étique	Mobile, en mouvement.
+9s		9	0
+6r	Procédé d’entraînement au tir pour la chasse par lequel on tire sur un écran projetant des scènes de chasse filmées en conditions réelles.
+7s		7	0
+5ose	Mal des transports.
+8s		8	0
+3galais	Langue parlée au Sri Lanka principalement par les Cingalais, appartenant au groupe indo-aryen des langues indo-européennes, c’est une des deux langues officiel…
+9e		9	n
+as		9	1
+4halais	Variante orthographique de cingalais.
+ae		a	n
+bs		a	1
+4la		5er	13
+6ge	Action de cingler le fer.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant	Qui cingle, qui fouette.
+8e		8	n
+9s		8	1
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Fou.
+6e	Personnage de sexe féminin qui est cinglée.
+7s		6	1
+5ent		6r	v
+6r	Faire voile vers une direction, en parlant de la route sur laquelle on gouverne.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5ez		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons	Pluriel de cinglon.
+3namome	Autre nom du cannelier.
+9s		9	0
+3oche	Cinéma.
+7s		7	0
+4que	Homme un peu fou, dérangé, qui n’a pas toute sa tête.
+7s		7	0
+3q	Adjectif numéral correspondant au cardinal quatre plus un.
+4uantaine	Assemblage de choses de même nature au nombre de cinquante environ.
+cs		c	0
+8e	Quarante-neuf plus un, soit cinq fois dix, cardinal correspondant au nombre 50.
+9naire	Qui est âgé d'environ cinquante ans, qui dure depuis cinquante ans.
+es		e	0
+aier	Autrefois, commandant de cinquante hommes dans une milice urbaine.
+ds		d	0
+8ième	Élément ordinal, correspondant au cardinal cinquante.
+cs		c	0
+5ième	Qui vient après le quatrième.
+9ment	En cinquième lieu.
+9s		9	0
+3sault	Cépage noir, utilisé notamment pour certains rosés.
+8s		8	0
+6t	Variante de cinsault.
+7s		7	0
+3tra		5er	x
+6ge	Opération qui consiste à donner à des pièces de bois, de fer, etc., la forme d’un cintre.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Courbure en arcade, en demi-cercle.
+5ée		6	n
+7s		6	1
+5ent		6r	v
+6r	Bâtir en cintre, faire un ouvrage en cintre.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		6	9
+5euse	Machine pour effectuer le cintrage des profilés et tubes métalliques pour réaliser des parties courbes.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+2paille	Plat traditionnel québécois fait avec de la viande, des pâtes et des patates originaire des régions du Bas-Saint-Laurent et de la Gaspésie.
+8s		8	0
+4l	Garde municipal.
+5e	Vélodrome municipal de Paris.
+6s		6	0
+3âte	Plat traditionnel québécois fait avec de la viande, des pâtes et des patates originaire des régions du Bas-Saint-Laurent et de la Gaspésie.
+6s		6	0
+3aux		4l	0
+4ye	Relatif aux mercenaires (ou soldats réguliers) hindous au service d’une armée occidentale (britannique, française ou portugaise) à l’époque de la colonisation …
+6s		6	0
+3olin	Aux veines épaisses et ondulées rappelant les feuilles concentriques d’un oignon, pour qualifier du marbre.
+7s		7	0
+3pe	Demi-colonne sans chapiteau, sur laquelle on grave quelquefois des inscriptions.
+5s		5	0
+3re	Nom vernaculaire du cyprès chauve.
+5s		5	0
+4ière	En Louisiane, marécage dont la végétation est dominée par les cipres.
+8s		8	0
+2ra		3er	13
+4ge	Action de cirer ou résultat de cette action.
+6s		6	0
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3ca	À peu près, aux environs de, vers.
+5dien	D’un rythme biologique dont la période est d’environ 24 heures.
+9ne		9	n
+bs		9	1
+9s		9	9
+5ète	Rapace du genre Circaetus, spécialisé dans la chasse aux reptiles.
+8s		8	0
+5ssien	Relatif à la Circassie : à la région, ses habitants, sa culture, etc.
+ane	Artiste féminine de cirque.
+cs		c	0
+as	Masculin pluriel de circassien.
+4ée	Circaea, genre de plantes de la famille des Onagracées.
+6s		6	0
+4iné	Qui est roulé sur soi-même en manière de crosse.
+7e		7	n
+8s		7	1
+7s		7	9
+4oncîmes		7ire	1w
+7ira		9e	18
+ai		9e	1e
+bent		9e	2p
+bs		9e	2o
+bt		9e	2k
+as		9e	1l
+9e	Couper le prépuce, pratiquer la circoncision.
+ant		a	1c
+az		a	1m
+9iez		9e	2w
+aons		9e	2x
+9ons		9e	1p
+bt		9e	1i
+8s	Qui a subi la circoncision.
+9aient		8re	2l
+bs		8re	2n
+bt		8re	2j
+ant		8re	17
+9e		8re	19
+ant		8re	15
+as		8re	1f
+aur	Officiant dans la religion juive et islamique pratiquant la circoncision.
+cs		c	0
+az		8re	1y
+9iez		8re	2u
+aon	Ablation totale ou partielle du prépuce, pour des raisons ou médicales.
+cs		c	0
+9ons		8re	21
+9se		8re	29
+bnt		8re	26
+bs		8re	2f
+aiez		8re	2g
+bons		8re	2i
+8t		8re	28
+7îtes		7ire	2c
+6férence	Contour d’un cercle.
+ds		d	0
+btiel	Relatif à la circonférence.
+7lexe	Qui a des courbures, des sinuosités.
+bs		b	0
+6locution	Circuit de paroles dont on se sert quand on veut évoquer une chose sans l’exprimer directement.
+es		e	0
+6scription	Action de circonscrire.
+ara		be	18
+ci		be	1e
+ds		be	2o
+dt		be	2k
+cs		be	1l
+be	Enfermer dans des limites.
+cz		c	1m
+biez		be	2w
+cons		be	2x
+bons		be	1p
+dt		be	1i
+as		are	20
+at	Décrit autour.
+be		b	n
+cs		b	1
+bs		b	9
+avais		are	2n
+dt		are	2j
+cnt		are	17
+be		are	2d
+cnt		are	15
+cs		are	2q
+cz		are	1y
+biez		are	2u
+bîmes		are	1w
+bions		are	2v
+cs		are	1j
+dse		are	29
+ct		are	13
+bîtes		are	2c
+bons		are	21
+7pect	Qui prend garde à ce qu’il dit, à ce qu’il fait, en ayant égard aux circonstances, au milieu.
+be		b	n
+cs		b	1
+bion	Manière d’agir ou de parler de celui qui est circonspect, qui fait attention aux circonstances.
+es		e	0
+bs		b	9
+7tance	Particularité qui accompagne et distingue un fait, une situation, etc.
+cs		c	0
+bia		cer	x
+di		cer	m
+es		cer	t
+et		cer	y
+dnt		cer	z
+ds		cer	c
+cât		cer	k
+cé	Exposé dans tous ses détails.
+de		d	n
+es		d	1
+cel	Qui indique une circonstance de l’action ou de l’état marqué par le verbe.
+es		e	9
+dnt		dr	v
+dr	Exposer en détaillant les circonstances.
+ea		e	l
+cés		d	9
+cez		dr	u
+ciez		cer	d
+cons		cer	r
+6vallation	Tranchée à parapet, à redoutes, à place d’armes, etc., que des assiégeants font autour de leur position pour se garantir des attaques du dehors et pour empêche…
+7enaient		9ir	38
+bs		9ir	36
+bt		9ir	3b
+ant	Qui entoure, environne.
+9ez		9ir	u
+9iez		ar	32
+aons		ar	33
+ar	Entourer, assaillir.
+9ons		9ir	r
+9u		9ir	1k
+ae		9ir	19
+bs		9ir	10
+as		9ir	12
+7iendra		7enir	l
+di		7enir	g
+es		7enir	2y
+et		7enir	34
+ds		7enir	7
+cez		7enir	5
+ciez		7enir	2r
+cons		7enir	a
+et		7enir	f
+ane		7enir	2h
+cnt		7enir	v
+cs		7enir	24
+as		7enir	27
+at		7enir	28
+7înmes		7enir	3
+7inrent		7enir	o
+9s		7enir	m
+ase		7enir	6
+cnt		7enir	h
+cs		7enir	8
+biez		7enir	e
+cons		7enir	p
+9t		7enir	x
+7întes		7enir	2
+7oisin	Qui est situé tout près et autour de ce dont on parle.
+ce	Celui qui est situé tout près et autour de ce dont on parle.
+ds		c	1
+cs		c	9
+8lutif	Qui a rapport aux circonvolutions du cerveau.
+ds		d	9
+con	Course circulaire ou elliptique autour d’un centre plus ou moins fixe.
+es		e	0
+cve		cf	n
+es		cf	1
+4uit	Pourtour d’un lieu déterminé.
+7erie	Ensemble des composants d’un circuit.
+bs		b	0
+7s		7	0
+5la		6er	x
+7i		6er	m
+8ent		6er	w
+8re	Relatif au cercle.
+ament	D'une façon circulaire, dans un mouvement, une forme de rotation.
+as		a	0
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant	Qui circule, qui est en circulation.
+9e		9	n
+as		9	1
+9s		9	9
+7risa		aer	x
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	y
+aâmes		aer	3
+aant		aer	z
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+aé		aer	1a
+be		aer	11
+cs		aer	10
+aent		br	v
+br	Rendre circulaire.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aez		br	u
+aiez		aer	d
+bons		aer	j
+aons		aer	r
+9té	Caractère de ce qui est circulaire, de ce qui tourne en rond.
+bs		b	0
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6ateur	Qui fait circuler.
+bs		b	0
+8ion	Mouvement circulaire, en se référant aux planètes.
+bs		b	0
+8oire	Relatif à la circulation d'un fluide.
+cs		c	0
+6e		7r	27
+7nt		7r	v
+7r	Se mouvoir circulairement.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7r	1u
+7z		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5mduction	Mouvement de rotation autour d'un axe ou d'un point central.
+6lunaire	Autour du globe de la Lune, qui entoure la Lune.
+ds		d	0
+6polaire	Relatif à l’environnement des pôles terrestres.
+ds		d	0
+6stellaire	Qui se situe tout autour d’une étoile.
+6terrestre	Autour du globe de la Terre.
+3e	Ester d'éthylène glycol et d’acides gras.
+3ée		3er	11
+5s		3er	10
+3ent		4r	v
+4r	Enduire ou frotter de cire.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4	0
+4ur	Celui qui a pour métier de cirer les chaussures.
+6s		6	0
+5se	Celle qui a pour métier de cirer les chaussures.
+7s		5x	1
+5x	Relatif à la cire.
+4z		4r	u
+3ier	Artisan qui travaille en cire, qui fait et vend toutes sortes de cierges et de bougies.
+4ère	Artisane qui travaille en cire, qui fait et vend toutes sortes de cierges et de bougies.
+7s		7	0
+4ers		6	0
+5z		3er	d
+4ons		3er	j
+3on	Acarien qui se développe sur la croûte du fromage, du jambon, dans la farine, et qui est le plus petit des animaux visibles à l’œil nu.
+5né	Vermoulu.
+7e		7	n
+8s		7	1
+7s		7	9
+5s		5	0
+3que	Lieu destiné, chez les Romains, à accueillir les jeux publics, et particulièrement les diverses formes de lutte et les courses de chevaux et de chars.
+6s		6	0
+3re	Appendice filiforme, simple ou rameux, diversement tortillé ou roulé, au moyen duquel certaines plantes s'attachent aux corps voisins, parfois considéré comme …
+5s		5	0
+4he	Variante de cirre.
+6s		6	0
+5ose	Affection du foie caractérisée par des granulations.
+8s		8	0
+6tique	Qui se rapporte à la cirrhose ou qui est atteint de cette maladie.
+bs		b	0
+4ipède	Groupe d’animaux marins appartenant au sous-embranchement des crustacés.
+9s		9	0
+4ocumulus	Nuage appartenant à l'étage supérieur, situé à une altitude comprise entre 5000 et 10000 mètres, en forme de fleur de coton.
+5stratus	Nuage situé à une altitude variant entre 4500 et 12000 mètres formant un voile continu translucide couvrant totalement ou partiellement le ciel.
+4us	Nuage présent dans la couche supérieure de la troposphère (entre 6000 et 15000 mètres d’altitude), formé de cristaux de glace en forme de filaments blancs et q…
+3se	Plantes du genre Cirsium, aux feuilles épineuses, de la famille des Astéracées, très proche du chardon.
+5s		5	0
+2s	Relatif à des substituants se trouvant du même côté de l’axe d'une liaison chimique incapable de rotation libre.
+3ailla		7er	x
+8ge	Cisaillement, action de cisailler.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui cisaille.
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Outil servant à découper des matériaux durs ou épais.
+7ée		7er	11
+9s		7er	10
+7ement	Action de cisailler.
+cs		c	0
+8nt		8r	v
+8r	Couper, découper avec une ou des cisailles.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s	Gros ciseaux qui servent à couper des plaques ou des feuilles de métal.
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4lpin	De ce côté-ci des Alpes (tel que vu de Rome), au sud des Alpes.
+8e		8	n
+9s		8	1
+8s		8	9
+3eau	Lame, pièce métallique aiguisée à son extrémité, servant à couper ou à travailler le bois, le métal, etc.
+6x	Instrument à deux lames pivotant sur un axe qui se chevauchent en partie pour couper ou rogner.
+4la		5er	x
+6ge	Action de ciseler.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant	Qui cisèle.
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Orné de ciselures, finement sculpté.
+6e		6	n
+7s		6	1
+3èlement	Action de ciseler les grappes de raisin, c’est-à-dire d’en ôter les grains qui nuiraient au grossissement et à la maturité du reste.
+as		a	0
+6nt		3eler	v
+3eler	Travailler avec le ciseau, le ciselet des ouvrages de bronze, d’or, d’argent, etc.
+3èlera		3eler	l
+8i		3eler	g
+9ent		3eler	s
+9s		3eler	i
+9t		3eler	q
+8s		3eler	7
+3elèrent		5er	o
+3èlerez		3eler	5
+7iez		3eler	4
+8ons		3eler	b
+7ons		3eler	a
+9t		3eler	f
+3elés		6	9
+5et	Petit ciseau frappé au marteau dont se servent les orfèvres, les graveurs, les armuriers, etc.
+7s		7	0
+6ur	Ouvrier dont le métier est de ciseler.
+8s		8	0
+7se	Ouvrière dont le métier est de ciseler.
+9s		9	0
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5lement	Variante orthographique de cisèlement.
+bs		b	0
+5ons		5er	r
+5ure	Art de ciseler.
+8s		8	0
+3genre	Qualifie une personne dont l’identité de genre, est en concordance avec le genre qui lui a été assigné à la naissance.
+8s		8	0
+3jordanien	Qui a un rapport avec la Cisjordanie ou ses habitants.
+cne		c	n
+es		c	1
+cs		c	0
+4uran	Qui se trouve en deçà du Jura vers l'ouest.
+8e		8	31
+9s		8	1
+8s		8	0
+3leithan	Qui est en deçà de la Leitha.
+ae		a	n
+bs	Pluriel de cisleithane.
+as		a	9
+3oires	Gros ciseaux dont le manche est attaché et monté sur un pied.
+3padan	Qui est en deçà du Pô.(du point de vue de Rome)
+8e		8	n
+9s		8	1
+8s		8	9
+4latine	Complexe organométallique à base de platine.
+as		a	0
+3rhénan	Qui est en deçà du Rhin.
+9e		9	n
+as		9	1
+9s		9	9
+3soïde	Courbe du troisième degré s’enroulant comme le lierre.
+8s		8	0
+3tacée	Famille de plantes comprenant, entre autres, le ciste et l’hélianthème.
+8s		8	0
+4e	Arbrisseau poussant le plus souvent sur le pourtour méditerranéen, à feuilles persistantes simples, souvent velues, aux fleurs à cinq pétales, souvent plissés …
+5rcien	Relatif à l’ordre monastique chrétien défini à l’abbaye de Cîteaux par Robert de Molesme en 1098.
+ane	Moniale de l’ordre monastique chrétien fondé à l’abbaye de Cîteaux.
+cs		a	1
+as		a	9
+5s		5	0
+4icole	Petit passereau, proche de la fauvette, surtout d’Afrique.
+9s		9	0
+4ophore	Jeune fille qui portait des corbeilles dans les fêtes de Bacchus.
+as		a	0
+4re	Instrument de musique à cordes en usage aux XVIᵉ et XVIIᵉ siècles.
+6s		6	0
+5on	Région du génome qui ne porte qu’une seule information génétique transcrite en ARN.
+7s		7	0
+4ude	Genre de tortues au plastron large et mobile.
+7s		7	0
+2ta		3er	x
+4delle	Forteresse qui commandait une ville.
+9s		9	0
+5in	Celui qui habite une ville ou une zone urbaine.
+7e	Celle qui habite une ville ou une zone urbaine.
+8s		7	1
+7s		7	9
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant		3er	z
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3ateur	Celui qui a l’habitude de faire des citations.
+8s		8	0
+5ion	Acte notifié à la partie qu’on veut obliger à comparaître devant un juge ou devant un tribunal.
+8s		8	0
+5rice	Celle qui a l’habitude de faire des citations.
+9s		9	0
+3é	Ville, surtout quand on veut en faire ressortir l’importance.
+4e		3er	11
+5s		3er	10
+3ent		4r	v
+4r	Assigner à comparaître devant une juridiction civile ou religieuse.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+3érieur	Qui est en deçà, de notre côté, plus près de nous (par opposition à ultérieur).
+9e		9	n
+as		9	1
+9s		9	9
+3eriez		5	4
+6ons		5	b
+5ne	Réservoir souterrain ou non, destiné à recevoir et garder l’eau pluviale.
+7au	Petite citerne où l’eau s’épure par décantation avant de passer dans la citerne.
+9x		9	0
+7s		7	0
+5ons		5	a
+7t		5	f
+4s		4r	1u
+4z		4r	u
+3hare	Instrument à corde pincées qui vibrent à vide, dérivé de la lyre.
+6ède	Chanteur qui s’accompagne à la cithare.
+9s		9	0
+6es		7	0
+6iste	Joueur de cithare.
+as		a	0
+3iez		3er	d
+4ons		3er	j
+3ons		3er	r
+4yen	Homme libre de l’Empire romain, doté de droits politiques dans une cité.
+7ne	Femme faisant partie de celles et ceux qui, dans un état organisé, jouissent des mêmes droits et obéissent aux mêmes lois.
+9s		9	0
+9té	Les droits et devoirs d’un citoyen respectant la cité (en général l’État où il vit).
+bs		b	0
+7s		7	0
+3rate	Nom générique des sels formés par la combinaison de l’acide citrique avec différentes bases.
+7s		7	0
+4in	Qui est de couleur de citron.
+6e	Variété de quartz dont la couleur jaune est due à la présence d’infimes quantités d’oxydes de fer.
+7s		7	1
+6s		6	9
+5que	Qualifie un acide qu’on trouve dans le citron et dans certains autres fruits.
+8s		8	0
+4on	Fruit du citronnier (Citrus × limon), de couleur jaune, à la peau rugueuse et de forme ovoïde.
+6na		7er	x
+8de	Boisson à base de sucre, de jus de citron et d’eau.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+8t	Écorce de citron confite.
+7âtes		7er	2
+7é	Qui goute ou sent le citron.
+8e		8	n
+9s		8	1
+7elle	Artemisia abrotanum, l’aurone ^().
+bs		b	0
+8nt		8r	v
+8r	Additionner de jus de citron.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7ier	Petit arbre originaire du nord de l’Inde, à feuilles persistantes, qui fleurit et donne des fruits pendant toute l’année, et qui est cultivé pour son fruit, le…
+as		a	0
+9z		7er	d
+8ons		7er	j
+7ons		7er	r
+6s		6	0
+5uille	Espèce de courge de la famille des Cucurbitacées, dont les tiges rampent à terre, de nom scientifique Cucurbita pepo.
+as		a	0
+2vadière	Voile carrée fixée sous le mât de beaupré.
+9s		9	0
+4ïsme	Religion hindouiste.
+0çivaïsmes		8	0
+0civaïte	Variante de shivaïste.
+7s		7	0
+3e	Ciboule, plante bulbeuse de la famille des Liliacées, dont les feuilles sont utilisées comme condiment.
+4lle	Lamproyon (petite lamproie).
+7s		7	0
+4s		4	0
+4t	Ragout de lièvre, lapin, de chevreuil ou d’autres mammifères sauvages, cuisiné avec une sauce au vin rouge et oignons, liée avec le sang de l’animal.
+5s		5	0
+5te	Viverridé carnivore d’Afrique et d’Asie, au corps allongé, recherché pour le musc sécrété par deux glandes anales.
+7s		7	0
+3ière	Dispositif muni de brancards sur lequel on porte à bras des fardeaux.
+7s		7	0
+4l	Citoyen ; relatif aux citoyens.
+5e	Personne de la population qui n’a pas le statut de combattante et qui n’est ni une prisonnière de guerre, ni une combattante ne prenant plus part aux hostilité…
+6ment	En matière civile.
+6s		5	1
+5isa		7er	x
+8ble	Qui peut être civilisé.
+bs		b	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7ateur	Qui civilise, qui répand la civilisation.
+cs		c	9
+9ion	Action de civiliser ou état de ce qui est civilisé.
+cnel	Relatif à la civilisation.
+cs		c	0
+9rice	Celle qui apporte la civilisation.
+ds		9eur	1
+7é	Relatif à une civilisation.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Rendre civil, policé et sociable.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7te	Qualifie les praticiens du droit civil.
+9s		9	0
+6té	Ensemble de comportements liés à la politesse et au savoir-vivre.
+8s		8	0
+5s		5	9
+4que	Qui concerne le citoyen et la citoyenne.
+7ment	D’une façon civique.
+7s		7	0
+4sme	Dévouement et attachement du citoyen à la Cité, tels qu'il assume ses devoirs avant de réclamer ses droits.
+7s		7	0

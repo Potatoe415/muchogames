@@ -1,81 +1,81 @@
-ut	La première note de l’échelle des sons.
-ute	Relatif aux Utes, une ethnie amérindienne vivant essentiellement dans l’Utah et le Colorado.
-utérin	Qui concerne l’utérus.
-utérine		utérin	23
-utérines		utérin	1
-utérins	Dénomination générique pour désigner le/les sœur ou frère, né/nés de même mère, mais non de même père.
-utérus	Organe de la gestation en forme de poche situé dans le bas-ventre chez les femmes et les femelles des autres mammifères.
-utes		ute	0
-utile	Qui est profitable ou avantageux.
-utilement	D’une manière utile.
-utiles		utile	0
-utilisa		utiliser	39
-utilisable	Qui peut être utilisé.
-utilisables		utilisable	0
-utilisai		utiliser	55
-utilisaient		utiliser	42
-utilisais		utiliser	52
-utilisait		utiliser	40
-utilisâmes		utiliser	3
-utilisant		utiliser	35
-utilisas		utiliser	12
-utilisasse		utiliser	6
-utilisassent		utiliser	17
-utilisasses		utiliser	8
-utilisassiez		utiliser	14
-utilisassions		utiliser	25
-utilisât		utiliser	62
-utilisâtes		utiliser	2
-utilisateur	Celui qui utilise un outil ou quelque chose.
-utilisateurs		utilisateur	0
-utilisation	Fait ou manière d’utiliser.
-utilisations		utilisation	0
-utilisatrice	Celle qui utilise un outil ou quelque chose.
-utilisatrices		utilisatrice	0
-utilisé		utiliser	56
-utilisée		utiliser	45
-utilisées		utiliser	51
-utilisent		utiliser	41
-utiliser	Tirer de l’utilité de.
-utilisera		utiliser	44
-utiliserai		utiliser	50
-utiliseraient		utiliser	63
-utiliserais		utiliser	60
-utiliserait		utiliser	49
-utiliseras		utiliser	57
-utilisèrent		utiliser	48
-utiliserez		utiliser	58
-utiliseriez		utiliser	74
-utiliserions		utiliser	82
-utiliserons		utiliser	61
-utiliseront		utiliser	54
-utilisés		utiliser	53
-utilisez		utiliser	47
-utilisiez		utiliser	67
-utilisions		utiliser	65
-utilisons		utiliser	59
-utilitaire	Qui ne vise que des buts intéressés.
-utilitaires		utilitaire	0
-utilitarisme	Doctrine qui consiste à ramener la notion du bien à celle de l’utilité, à faire de l’intérêt le principe du droit et de la morale.
-utilitarismes		utilitarisme	115
-utilitariste	Partisan de l'utilitarisme.
-utilitaristes		utilitariste	0
-utilité	Aptitude d’une chose, d’une action ou d’une connaissance à répondre à un besoin ou à procurer un avantage.
-utilités		utilité	0
-utopie	Pays imaginaire où un gouverneur idéal règne sur un peuple heureux.
-utopies		utopie	0
-utopique	Qui a le caractère de l’utopie.
-utopiques		utopique	0
-utopisme	Projet ou idée utopique, idéaliste et irréalisable.
-utopismes		utopisme	0
-utopiste	Qui est relatif à l’utopie et aux utopistes.
-utopistes		utopiste	0
-utraquiste	Hussite qui regardait comme indispensable la communion sous les deux espèces (sub utraque specie), c’est-à-dire le pain et le vin.
-utraquistes		utraquiste	0
-utriculaire	Relatif à l’utricule.
-utriculaires		utriculaire	0
-utricule	Partie du tissu cellulaire des végétaux.
-utricules		utricule	0
-utriculeuse		utriculeux	23
-utriculeuses		utriculeux	1
-utriculeux	Garni de petites outres, comme les racines, les feuilles radicales et les rameaux des utriculaires.
+0ut	La première note de l’échelle des sons.
+2e	Relatif aux Utes, une ethnie amérindienne vivant essentiellement dans l’Utah et le Colorado.
+2érin	Qui concerne l’utérus.
+6e		6	n
+7s		6	1
+6s	Dénomination générique pour désigner le/les sœur ou frère, né/nés de même mère, mais non de même père.
+4us	Organe de la gestation en forme de poche situé dans le bas-ventre chez les femmes et les femelles des autres mammifères.
+2es		3	0
+2ile	Qui est profitable ou avantageux.
+5ment	D’une manière utile.
+5s		5	0
+4isa		6er	13
+7ble	Qui peut être utilisé.
+as		a	0
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	1q
+8es		6er	2
+6ateur	Celui qui utilise un outil ou quelque chose.
+bs		b	0
+8ion	Fait ou manière d’utiliser.
+bs		b	0
+8rice	Celle qui utilise un outil ou quelque chose.
+cs		c	0
+6é		6er	1k
+7e		6er	19
+8s		6er	1f
+6ent		7r	15
+7r	Tirer de l’utilité de.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	22
+9ons		8	2a
+8ons		8	1p
+at		8	1i
+6és		6er	1h
+6ez		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+6ons		6er	1n
+5taire	Qui ne vise que des buts intéressés.
+as		a	0
+7risme	Doctrine qui consiste à ramener la notion du bien à celle de l’utilité, à faire de l’intérêt le principe du droit et de la morale.
+cs		c	37
+ate	Partisan de l'utilitarisme.
+cs		c	0
+6é	Aptitude d’une chose, d’une action ou d’une connaissance à répondre à un besoin ou à procurer un avantage.
+7s		7	0
+2opie	Pays imaginaire où un gouverneur idéal règne sur un peuple heureux.
+6s		6	0
+5que	Qui a le caractère de l’utopie.
+8s		8	0
+5sme	Projet ou idée utopique, idéaliste et irréalisable.
+8s		8	0
+6te	Qui est relatif à l’utopie et aux utopistes.
+8s		8	0
+2raquiste	Hussite qui regardait comme indispensable la communion sous les deux espèces (sub utraque specie), c’est-à-dire le pain et le vin.
+as		a	0
+3iculaire	Relatif à l’utricule.
+bs		b	0
+7e	Partie du tissu cellulaire des végétaux.
+8s		8	0
+8use		9x	n
+bs		9x	1
+9x	Garni de petites outres, comme les racines, les feuilles radicales et les rameaux des utriculaires.

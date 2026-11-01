@@ -1,1821 +1,1821 @@
-scabieuse	Nom usuel des plantes du genre Scabiosa, de la famille des Caprifoliaceae (Caprifoliacées), comme la scabieuse du Caucase.
-scabieuses		scabieuse	0
-scabieux	Relatif à la gale ou qui lui ressemble.
-scabinal	Relatif à la fonction des scabins.
-scabinale		scabinal	23
-scabinales		scabinal	1
-scabinaux		scabinal	9
-scabreuse		scabreux	23
-scabreuses		scabreux	1
-scabreux	Qui est rude, raboteux.
-scaferlati	Tabac mis sous forme de lanières finement tranchées, et destiné à la pipe et à la cigarette.
-scaferlatis		scaferlati	0
-scalaire	Poisson au corps aplati, aux grandes nageoires, fréquent dans les aquariums.
-scalaires		scalaire	0
-scalant	Qui est caractérisé par l’invariance d’échelle (comportement invariant quelle que soit l’échelle utilisée), en parlant d’une loi mathématique, éventuellement d…
-scalante		scalant	23
-scalantes		scalant	1
-scalants		scalant	9
-scalde	Nom que les anciens Scandinaves donnaient à leurs poètes.
-scaldéen	Qui a rapport à l'Escaut.
-scaldéenne		scaldéen	23
-scaldéennes		scaldéen	1
-scaldéens		scaldéen	9
-scaldes		scalde	0
-scaldien	Qui a rapport à la région de l’Escaut.
-scaldienne		scaldien	23
-scaldiennes		scaldien	1
-scaldiens		scaldien	9
-scaldique	Relatif aux scaldes et à leur poésie.
-scaldiques		scaldique	0
-scalène	Se dit d’un triangle dont les trois côtés sont de longueurs différentes.
-scalènes		scalène	277
-scalp	Cuir chevelu, chevelure détachée du crâne avec la peau.
-scalpa	Pascal : billet de cinq-cents francs français, sur lequel apparaissait le portrait de Blaise Pascal.
-scalpai		scalper	22
-scalpaient		scalper	42
-scalpais		scalper	29
-scalpait		scalper	40
-scalpâmes		scalper	3
-scalpant		scalper	35
-scalpas		scalper	12
-scalpasse		scalper	6
-scalpassent		scalper	17
-scalpasses		scalper	8
-scalpassiez		scalper	14
-scalpassions		scalper	25
-scalpât		scalper	20
-scalpâtes		scalper	2
-scalpé		scalper	56
-scalpée		scalper	37
-scalpées		scalper	36
-scalpel	Sorte de couteau pointu, à lame fixe, à un ou deux tranchants, dont on se sert pour disséquer.
-scalpels		scalpel	0
-scalpent		scalper	41
-scalper	Arracher la peau du crâne.
-scalpera		scalper	44
-scalperai		scalper	16
-scalperaient		scalper	28
-scalperais		scalper	18
-scalperait		scalper	26
-scalperas		scalper	7
-scalpèrent		scalper	24
-scalperez		scalper	5
-scalperiez		scalper	4
-scalperions		scalper	11
-scalperons		scalper	10
-scalperont		scalper	15
-scalpés		scalper	53
-scalpez		scalper	47
-scalpiez		scalper	13
-scalpions		scalper	19
-scalpons		scalper	27
-scalps		scalp	0
-scamorza	Fromage d’Italie du Sud à pâte filée peu affiné et produit avec du lait entier pasteurisé.
-scampi	Variété de langoustines frites.
-scampis		scampi	0
-scan	Scanner, examen radiologique.
-scanda		scander	39
-scandai		scander	22
-scandaient		scander	42
-scandais		scander	29
-scandait		scander	40
-scandale	Ce qui est occasion de tomber dans l’erreur, occasion de chute.
-scandales		scandale	0
-scandaleuse		scandaleux	23
-scandaleusement	D’une manière scandaleuse.
-scandaleuses		scandaleux	1
-scandaleux	Qui cause du scandale, qui est un mauvais exemple.
-scandalisa		scandaliser	39
-scandalisai		scandaliser	55
-scandalisaient		scandaliser	116
-scandalisais		scandaliser	52
-scandalisait		scandaliser	40
-scandalisâmes		scandaliser	3
-scandalisant		scandaliser	43
-scandalisas		scandaliser	12
-scandalisasse		scandaliser	6
-scandalisassent		scandaliser	17
-scandalisasses		scandaliser	8
-scandalisassiez		scandaliser	14
-scandalisât		scandaliser	20
-scandalisâtes		scandaliser	2
-scandalise		scandaliser	64
-scandalisée	Féminin singulier de scandalisé.
-scandalisées	Féminin pluriel de scandalisé.
-scandalisent		scandaliser	41
-scandaliser	Mettre en danger de chute, de péché.
-scandalisera		scandaliser	44
-scandaliserai		scandaliser	16
-scandaliserais		scandaliser	18
-scandaliserait		scandaliser	49
-scandaliseras		scandaliser	7
-scandalisèrent		scandaliser	48
-scandaliserez		scandaliser	5
-scandaliseriez		scandaliser	4
-scandaliserions		scandaliser	11
-scandaliserons		scandaliser	10
-scandaliseront		scandaliser	15
-scandalisés	Masculin pluriel de scandalisé.
-scandalisez		scandaliser	30
-scandalisiez		scandaliser	13
-scandalisions		scandaliser	19
-scandalisons		scandaliser	59
-scandâmes		scander	3
-scandant		scander	43
-scandas		scander	12
-scandasse		scander	6
-scandassent		scander	17
-scandasses		scander	8
-scandassiez		scander	14
-scandassions		scander	25
-scandât		scander	20
-scandâtes		scander	2
-scandé		scander	56
-scandée		scander	45
-scandées		scander	51
-scandent		scander	41
-scander	Décomposer un vers en ses éléments, en ses pieds formés de longues et de brèves, comme sont les vers latins et les vers grecs, pour juger s’il est selon les rè…
-scandera		scander	44
-scanderai		scander	16
-scanderaient		scander	28
-scanderais		scander	18
-scanderait		scander	26
-scanderas		scander	7
-scandèrent		scander	24
-scanderez		scander	5
-scanderiez		scander	4
-scanderions		scander	11
-scanderons		scander	10
-scanderont		scander	15
-scandés		scander	53
-scandez		scander	30
-scandiez		scander	13
-scandinave	Relatif à la Scandinavie, aux Scandinaves.
-scandinaves		scandinave	0
-scandinavisme	Caractère des peuples scandinaves et de leurs idiomes.
-scandinavismes		scandinavisme	0
-scandions		scander	19
-scandium	Élément chimique de numéro atomique 21 et de symbole Sc qui fait partie des métaux de transition et des terres rares.
-scandiums		scandium	0
-scandix	Genre de plante dicotylédone de la famille des Apiacées.
-scandons		scander	27
-scanna		scanner	33
-scannage	Contrôle effectué avec des moyens d’imagerie tels les rayons X.
-scannages		scannage	0
-scannai		scanner	22
-scannaient		scanner	32
-scannais		scanner	52
-scannait		scanner	40
-scannâmes		scanner	3
-scannant		scanner	35
-scannas		scanner	12
-scannasse		scanner	6
-scannassent		scanner	17
-scannasses		scanner	8
-scannassiez		scanner	14
-scannassions		scanner	25
-scannât		scanner	20
-scannâtes		scanner	2
-scanné		scanner	56
-scannée		scanner	45
-scannées		scanner	36
-scannent		scanner	41
-scanner	Analyser automatiquement un document, un objet, ou un environnement pour le transformer en fichier numérique.
-scannera		scanner	44
-scannerai		scanner	16
-scanneraient		scanner	28
-scannerais		scanner	18
-scannerait		scanner	26
-scanneras		scanner	7
-scannèrent		scanner	24
-scannerez		scanner	5
-scanneriez		scanner	4
-scannerions		scanner	11
-scannérisa		scannériser	33
-scannérisai		scannériser	22
-scannérisaient		scannériser	32
-scannérisais		scannériser	29
-scannérisait		scannériser	34
-scannérisâmes		scannériser	3
-scannérisant		scannériser	35
-scannérisas		scannériser	12
-scannérisasse		scannériser	6
-scannérisassent		scannériser	17
-scannérisasses		scannériser	8
-scannérisassiez		scannériser	14
-scannérisât		scannériser	20
-scannérisâtes		scannériser	2
-scannérisation	Action de scannériser.
-scannérisations		scannérisation	0
-scannérisé		scannériser	46
-scannérisée		scannériser	37
-scannérisées		scannériser	36
-scannérisent		scannériser	31
-scannériser	Numériser grâce à un scanneur.
-scannérisera		scannériser	21
-scannériserai		scannériser	16
-scannériserais		scannériser	18
-scannériserait		scannériser	26
-scannériseras		scannériser	7
-scannérisèrent		scannériser	24
-scannériserez		scannériser	5
-scannériseriez		scannériser	4
-scannériserions		scannériser	11
-scannériserons		scannériser	10
-scannériseront		scannériser	15
-scannérisés		scannériser	38
-scannérisez		scannériser	30
-scannérisiez		scannériser	13
-scannérisions		scannériser	19
-scannérisons		scannériser	27
-scannerons		scanner	10
-scanneront		scanner	54
-scanners		scanner	0
-scannés		scanner	53
-scanneur	Numériseur à balayage pouvant inclure un traitement de l’information numérisée.
-scanneurs		scanneur	0
-scannez		scanner	47
-scanniez		scanner	13
-scannions		scanner	19
-scannons		scanner	59
-scanographie	Technique de capture d'image d'objets en utilisant un scanner.
-scanographies		scanographie	0
-scanographique	Relatif à la scanographie, produit par une technique de scanographie.
-scanographiques		scanographique	0
-scans		scan	0
-scansion	Action de scander.
-scansions		scansion	0
-scaphandre	Bouée, corset garni de liège, au moyen duquel on se soutient sur l'eau, sans savoir nager.
-scaphandres		scaphandre	0
-scaphandrier	Plongeur qui utilise un scaphandre.
-scaphandrière	Plongeuse qui utilise un scaphandre.
-scaphandrières		scaphandrière	0
-scaphandriers		scaphandrier	0
-scaphite	Ammonite fossile.
-scaphites		scaphite	0
-scaphoïde	Évidé, creux (comme la carène du navire).
-scaphoïdes		scaphoïde	0
-scaphopode	Classe de mollusques.
-scaphopodes		scaphopode	0
-scapula	Omoplate ; os large, mince et triangulaire, qui forme la partie postérieure de l’épaule et auquel s’articule l’os du bras.
-scapulaire	Relatif à l’épaule.
-scapulaires		scapulaire	0
-scapulalgie	Douleur de l'épaule, de l'omoplate.
-scapulalgies		scapulalgie	0
-scapulohuméral	En lien avec l’omoplate et l’humérus.
-scapulohumérale		scapulohuméral	23
-scapulohuméraux		scapulohuméral	9
-scapulomancie	Technique de divination par l’interprétation des omoplates et autres os plats.
-scapulomancies		scapulomancie	0
-scarabée	Insectes coléoptères dont les ailes sont recouvertes par des élytres.
-scarabées		scarabée	0
-scarabéides	Tribu dans la famille des palpicornes, ordre des coléoptères.
-scare	Poisson-perroquet.
-scares		scare	0
-scarieuse		scarieux	23
-scarieuses		scarieux	1
-scarieux	Se dit de toute partie qui est mince, sèche et demi-transparente.
-scarifia		scarifier	33
-scarifiage	Labour superficiel.
-scarifiages		scarifiage	0
-scarifiai		scarifier	22
-scarifiaient		scarifier	32
-scarifiais		scarifier	29
-scarifiait		scarifier	34
-scarifiâmes		scarifier	3
-scarifiant		scarifier	43
-scarifias		scarifier	12
-scarifiasse		scarifier	6
-scarifiassent		scarifier	17
-scarifiasses		scarifier	8
-scarifiassiez		scarifier	14
-scarifiassions		scarifier	25
-scarifiât		scarifier	20
-scarifiâtes		scarifier	2
-scarificateur	Qui scarifie.
-scarificateurs		scarificateur	0
-scarification	Incision superficielle faite à la peau avec une lancette ou un bistouri pour permettre l’écoulement d’un peu de sang ou de sérosité.
-scarifications		scarification	0
-scarifié	Qui a été incisé en y pratiquant des petites entailles.
-scarifiée		scarifié	23
-scarifiées		scarifié	1
-scarifient		scarifier	31
-scarifier	Inciser en pratiquant des petites entailles.
-scarifiera		scarifier	21
-scarifierai		scarifier	16
-scarifieraient		scarifier	28
-scarifierais		scarifier	18
-scarifierait		scarifier	26
-scarifieras		scarifier	7
-scarifièrent		scarifier	24
-scarifierez		scarifier	5
-scarifieriez		scarifier	4
-scarifierions		scarifier	11
-scarifierons		scarifier	10
-scarifieront		scarifier	15
-scarifiés		scarifié	9
-scarifiez		scarifier	30
-scarifiiez		scarifier	13
-scarifiions		scarifier	19
-scarifions		scarifier	27
-scarlatin	Écarlate
-scarlatine	Maladie infectieuse dont un des principaux symptômes est une éruption cutanée d’aspect granité et rouge écarlate.
-scarlatines		scarlatine	0
-scarlatins		scarlatin	9
-scarole	Variété de chicorée à larges feuilles, qui se mange ordinairement en salade et quelquefois cuite à l’étouffée.
-scaroles		scarole	0
-scat	Forme d’improvisation vocale où des onomatopées sont utilisées plutôt que des paroles.
-scato	Apocope de scatologique.
-scatol	Dérivé méthylé de l’indole (3-méthylindole) qui tous deux se rencontrent dans les excréments de carnivores et proviennent de la dégradation des protéines.
-scatole	Variante orthographique de scatol
-scatoles		scatole	0
-scatologie	Propos, écrits qui ont trait aux excréments.
-scatologies		scatologie	0
-scatologique	Relatif à la scatologie, aux excréments.
-scatologiques		scatologique	0
-scatols		scatol	0
-scatophage	Qui mange les excréments.
-scatophages		scatophage	0
-scatophile	Qui est attiré par les excréments humains.
-scatophiles		scatophile	0
-scatos		scato	0
-scats		scat	0
-sceau	Cachet officiel où sont gravées en creux la figure, les armoiries, la devise d’un roi, d’un prince, d’un état, d’un corps, d’une communauté, d’un seigneur, etc.
-sceaux		sceau	0
-scélérat	Qui a commis ou qui est capable de commettre de grands crimes.
-scélérate	Celle qui manifeste des intentions ou des sentiments criminels et perfides.
-scélérates		scélérate	0
-scélératesse	Manière d’être, d’agir de celui qui est scélérat.
-scélératesses		scélératesse	0
-scélérats		scélérat	9
-scella		sceller	39
-scellage	Action de sceller un produit.
-scellages		scellage	0
-scellai		sceller	22
-scellaient		sceller	42
-scellais		sceller	29
-scellait		sceller	40
-scellâmes		sceller	3
-scellant	Produit de jointoiement, en particulier produit à base de silicone pour les sanitaires.
-scellas		sceller	12
-scellasse		sceller	6
-scellassent		sceller	17
-scellasses		sceller	8
-scellassiez		sceller	14
-scellassions		sceller	25
-scellât		sceller	20
-scellâtes		sceller	2
-scellé	Deux cachets de cire reliés par un ruban que l’on appose à des serrures, à des armoires, etc., par autorité de justice, pour empêcher de les ouvrir.
-scellée		scellé	23
-scellées		scellé	1
-scellement	Action de sceller ou résultat de cette action.
-scellements		scellement	0
-scellent		sceller	41
-sceller	Marquer d’un sceau.
-scellera		sceller	44
-scellerai		sceller	16
-scelleraient		sceller	28
-scellerais		sceller	18
-scellerait		sceller	49
-scelleras		sceller	7
-scellèrent		sceller	48
-scellerez		sceller	5
-scelleriez		sceller	4
-scellerions		sceller	11
-scellerons		sceller	10
-scelleront		sceller	54
-scellés		scellé	9
-scellez		sceller	47
-scelliez		sceller	13
-scellions		sceller	19
-scellons		sceller	59
-scénar	Scénario.
-scénarii		scénario	0
-scénarimage	Ensemble des dessins représentant, avant le tournage, le film dans sa totalité.
-scénarimages		scénarimage	0
-scénario	Description détaillée des différentes scènes d’un film, d’une bande dessinée.
-scénarios		scénario	149
-scénarisa		scénariser	33
-scénarisai		scénariser	22
-scénarisaient		scénariser	32
-scénarisais		scénariser	29
-scénarisait		scénariser	34
-scénarisâmes		scénariser	3
-scénarisant		scénariser	35
-scénarisas		scénariser	12
-scénarisasse		scénariser	6
-scénarisassent		scénariser	17
-scénarisasses		scénariser	8
-scénarisassiez		scénariser	14
-scénarisassions		scénariser	25
-scénarisât		scénariser	20
-scénarisâtes		scénariser	2
-scénarisation	Réflexion établie sur la base de scénarios.
-scénarisations		scénarisation	0
-scénarisé		scénariser	46
-scénarisée		scénariser	37
-scénarisées		scénariser	36
-scénarisent		scénariser	31
-scénariser	Mettre sous forme de scénario.
-scénarisera		scénariser	21
-scénariserai		scénariser	16
-scénariseraient		scénariser	28
-scénariserais		scénariser	18
-scénariserait		scénariser	26
-scénariseras		scénariser	7
-scénarisèrent		scénariser	24
-scénariserez		scénariser	5
-scénariseriez		scénariser	4
-scénariserions		scénariser	11
-scénariserons		scénariser	10
-scénariseront		scénariser	15
-scénarisés		scénariser	38
-scénarisez		scénariser	30
-scénarisiez		scénariser	13
-scénarisions		scénariser	19
-scénarisons		scénariser	27
-scénariste	Auteur ou autrice de scénarios.
-scénaristes		scénariste	0
-scénaristique	Relatif au scénario.
-scénaristiques		scénaristique	0
-scénars		scénar	0
-scène	Partie du théâtre où les acteurs jouent devant le public.
-scènes		scène	0
-scénique	Relatif à la scène, au théâtre.
-scéniquement	Au point de vue de la scène.
-scéniques		scénique	0
-scénographe	Celui, celle qui pratique la scénographie.
-scénographes		scénographe	0
-scénographie	Art d’organiser l’espace.
-scénographier	Mettre au point une scénographie.
-scénographiés		scénographier	38
-scénographique	Relatif à la scénographie.
-scénographiques		scénographique	0
-scénologie	Étude de la scène théâtrale ou cinématographique.
-scénologies		scénologie	0
-scénopégie	Fête des tabernacles, commémorée par les juifs.
-scénopégies		scénopégie	0
-scepticisme	Doctrine, sentiment des philosophes dont le dogme principal est de douter, de n’affirmer rien, de tenir leur jugement en suspens sur chaque chose.
-scepticismes		scepticisme	0
-sceptique	Qualifie les philosophes qui disent qu’il n’y a rien de certain.
-sceptiquement	D’une manière sceptique.
-sceptiques		sceptique	0
-sceptre	Bâton de commandement, qui est une des marques de la royauté.
-sceptres		sceptre	0
-schabraque	Variante orthographique de chabraque.
-schabraques		schabraque	0
-schada		schader	39
-schadai		schader	55
-schadaient		schader	75
-schadais		schader	86
-schadait		schader	71
-schadâmes		schader	68
-schadant		schader	43
-schadas		schader	83
-schadasse		schader	81
-schadassent		schader	78
-schadasses		schader	87
-schadassiez		schader	88
-schadassions		schader	90
-schadât		schader	62
-schadâtes		schader	84
-schade		schader	72
-schadent		schader	69
-schader	Aller vite.
-schadera		schader	44
-schaderai		schader	50
-schaderaient		schader	63
-schaderais		schader	60
-schaderait		schader	49
-schaderas		schader	57
-schadèrent		schader	48
-schaderez		schader	58
-schaderiez		schader	74
-schaderions		schader	82
-schaderons		schader	61
-schaderont		schader	54
-schades		schader	113
-schadez		schader	70
-schadiez		schader	100
-schadions		schader	94
-schadons		schader	73
-schaerbeekois	Relatif à Schaerbeek en Belgique.
-Schaerbeekoise	Habitante de Schaerbeek en Belgique.
-Schaerbeekoises		Schaerbeekoise	0
-schaffhousois	Relatif à Schaffhouse-près-Seltz, commune française située dans le département du Bas-Rhin.
-schaffhousoise		schaffhousois	23
-schaffhousoises		schaffhousois	1
-schah	Variante de chah.
-schahs		schah	0
-schako	Variante de shako.
-schakos	Variante de shako.
-schappe	Dénomination collective de l'ensemble des déchets de soie.
-schappes		schappe	0
-schapska	Casque au dessus carré des lanciers polonais.
-schapskas		schapska	0
-scheida		scheider	33
-scheidage	Opération de triage manuel du minerai.
-scheidages		scheidage	0
-scheidai		scheider	22
-scheidaient		scheider	32
-scheidais		scheider	29
-scheidait		scheider	34
-scheidâmes		scheider	3
-scheidant		scheider	35
-scheidas		scheider	12
-scheidasse		scheider	6
-scheidassent		scheider	17
-scheidasses		scheider	8
-scheidassiez		scheider	14
-scheidassions		scheider	25
-scheidât		scheider	20
-scheidâtes		scheider	2
-scheidé		scheider	46
-scheidée		scheider	37
-scheidées		scheider	36
-scheident		scheider	31
-scheider	Trier du minerai, pour obtenir une meilleure qualité.
-scheidera		scheider	21
-scheiderai		scheider	16
-scheideraient		scheider	28
-scheiderais		scheider	18
-scheiderait		scheider	26
-scheideras		scheider	7
-scheidèrent		scheider	24
-scheiderez		scheider	5
-scheideriez		scheider	4
-scheiderions		scheider	11
-scheiderons		scheider	10
-scheideront		scheider	15
-scheidés		scheider	38
-scheidez		scheider	30
-scheidiez		scheider	13
-scheidions		scheider	19
-scheidons		scheider	27
-scheik	Variante orthographique de cheik.
-scheikh	Variante orthographique de cheik.
-scheikhs		scheikh	0
-scheiks		scheik	0
-schelem	Variante de chelem.
-schelems		schelem	0
-schelingua		schelinguer	33
-schelinguai		schelinguer	22
-schelinguaient		schelinguer	32
-schelinguais		schelinguer	29
-schelinguait		schelinguer	34
-schelinguâmes		schelinguer	3
-schelinguant		schelinguer	35
-schelinguas		schelinguer	12
-schelinguasse		schelinguer	6
-schelinguassent		schelinguer	17
-schelinguasses		schelinguer	8
-schelinguassiez		schelinguer	14
-schelinguât		schelinguer	20
-schelinguâtes		schelinguer	2
-schelingué		schelinguer	46
-schelinguent		schelinguer	31
-schelinguer	Autre orthographe, moins courante, de schlinguer.
-schelinguera		schelinguer	21
-schelinguerai		schelinguer	16
-schelinguerais		schelinguer	18
-schelinguerait		schelinguer	26
-schelingueras		schelinguer	7
-schelinguèrent		schelinguer	24
-schelinguerez		schelinguer	5
-schelingueriez		schelinguer	4
-schelinguerions		schelinguer	11
-schelinguerons		schelinguer	10
-schelingueront		schelinguer	15
-schelingues		schelinguer	66
-schelinguez		schelinguer	30
-schelinguiez		schelinguer	13
-schelinguions		schelinguer	19
-schelinguons		schelinguer	27
-schelling	Variante de shilling.
-schellings		schelling	0
-schéma	Tracé figurant d’une façon simplifiée la disposition d’un bâtiment, d’un appareil, d’un organe, etc.
-schémas		schéma	0
-schématique	Relatif à un schéma.
-schématiquement	D’une manière schématique.
-schématiques		schématique	0
-schématisa		schématiser	33
-schématisai		schématiser	22
-schématisaient		schématiser	32
-schématisais		schématiser	29
-schématisait		schématiser	34
-schématisâmes		schématiser	3
-schématisant		schématiser	35
-schématisas		schématiser	12
-schématisasse		schématiser	6
-schématisassent		schématiser	17
-schématisasses		schématiser	8
-schématisassiez		schématiser	14
-schématisât		schématiser	20
-schématisâtes		schématiser	2
-schématisation	Action de schématiser, présentation schématique.
-schématisations		schématisation	0
-schématisé		schématiser	56
-schématisée		schématiser	45
-schématisées		schématiser	36
-schématisent		schématiser	31
-schématiser	Dans le kantisme, considérer les objets comme des abstractions, des schèmes.
-schématisera		schématiser	21
-schématiserai		schématiser	16
-schématiserais		schématiser	18
-schématiserait		schématiser	26
-schématiseras		schématiser	7
-schématisèrent		schématiser	24
-schématiserez		schématiser	5
-schématiseriez		schématiser	4
-schématiserions		schématiser	11
-schématiserons		schématiser	10
-schématiseront		schématiser	15
-schématisés		schématiser	38
-schématisez		schématiser	30
-schématisiez		schématiser	13
-schématisions		schématiser	19
-schématisme	Tendance à la représentation générale ou fondamentale dans ce dont on rend compte sans rentrer dans les particularismes.
-schématismes		schématisme	0
-schématisons		schématiser	27
-schème	→ voir schéma.
-schèmes		schème	0
-schéol	Variante orthographique de shéol.
-schéols		schéol	0
-scherzando	Mot italien qui signifie en badinant, et que l’on met sur les partitions, pour indiquer qu’un passage doit être exécuté d’une manière badine et légère.
-scherzi		scherzo	0
-scherzo	Morceau de musique similaire à un menuet mais de caractère vif et brillant, indépendant ou intégré comme deuxième ou troisième mouvement d’une symphonie ou d’u…
-scherzos		scherzo	118
-schibboleth	Variante de shibboleth.
-schibboleths		schibboleth	0
-schiedam	Eau-de-vie de grain parfumée au baies de genièvre, équivalent local du gin.
-schiedams		schiedam	0
-schilling	Monnaie de l'Autriche avant l'euro, et de divers autres pays.
-schillings		schilling	0
-schinda		schinder	39
-schindai		schinder	55
-schindaient		schinder	42
-schindais		schinder	52
-schindait		schinder	40
-schindâmes		schinder	68
-schindant		schinder	43
-schindas		schinder	83
-schindasse		schinder	81
-schindassent		schinder	78
-schindasses		schinder	87
-schindassiez		schinder	88
-schindassions		schinder	90
-schindât		schinder	62
-schindâtes		schinder	84
-schindé		schinder	56
-schindent		schinder	41
-schinder	Tricher.
-schindera		schinder	44
-schinderai		schinder	50
-schinderaient		schinder	63
-schinderais		schinder	60
-schinderait		schinder	49
-schinderas		schinder	57
-schindèrent		schinder	48
-schinderez		schinder	58
-schinderiez		schinder	74
-schinderions		schinder	82
-schinderons		schinder	61
-schinderont		schinder	54
-schindes		schinder	77
-schindez		schinder	47
-schindiez		schinder	67
-schindions		schinder	65
-schindons		schinder	59
-schipperke	Race de petit chien de berger lupoïde d’origine belge, à robe noire, le plus petit chien de berger.
-schipperkes		schipperke	0
-schismatique	Qui fait schisme, qui est dans le schisme, qui se sépare de la communion d’une religion.
-schismatiques		schismatique	0
-schisme	Division au sein d’une Église donnant naissance à une nouvelle Église.
-schismes		schisme	0
-schiste	Roche sédimentaire ou métamorphique (cristallophyllienne) à structure feuilletée et pouvant se diviser (se cliver) facilement en lames ou feuilles.
-schistes		schiste	0
-schisteuse		schisteux	23
-schisteuses		schisteux	1
-schisteux	Qui est de la nature du schiste.
-schistoïde	Qui a l'aspect d'un schiste.
-schistoïdes		schistoïde	0
-schistosité	État des roches qui se clivent facilement en feuillets plus ou moins épais en plans parallèles et régulièrement espacés.
-schistosités		schistosité	0
-schistosome	Se dit des monstres qui présentent une éventration latérale ou médiane sur toute la longueur de l’abdomen et qui n’ont pas de membres pelviens ou n’en ont que …
-schistosomes		schistosome	0
-schistosomiase	Parasitose causée par des schistosomes.
-schistosomiases		schistosomiase	0
-schizo	Schizophrène ou personne semblant l’être.
-schizogamie	Schizogenèse, reproduction asexuée, qui produit des êtres sexués.
-schizogamies		schizogamie	0
-schizogenèse	Reproduction asexuée par fission.
-schizogenèses		schizogenèse	0
-schizogonie	Formation de schizozoïtes (ou mérozoïtes) dans des cellules cibles.
-schizogonies		schizogonie	0
-schizoïde	Se dit des individus repliés, inhibés, fuyant le contact d’autrui et se réfugiant dans un autisme plus ou moins complet et énigmatique.
-schizoïdes		schizoïde	0
-schizoïdie	Structure caractérielle, aux limites du pathologique, caractérisée par la tendance à l’isolement, à la rêverie, à l’intériorisation des affects, à l’abstractio…
-schizoïdies		schizoïdie	0
-schizophasie	État schizophrénique où le trouble du langage est un élément précurseur.
-schizophasies		schizophasie	0
-schizophrène	Personne atteinte de schizophrénie.
-schizophrènes		schizophrène	0
-schizophrénie	Pathologie psychiatrique, psychose d’évolution chronique, qui a pour conséquences une altération de la perception de la réalité, des troubles cognitifs, et un …
-schizophrénies		schizophrénie	0
-schizophrénique	Qui appartient, qui a rapport à la schizophrénie.
-schizos		schizo	0
-schizose	Ensemble des troubles mentaux que présente une personne schizophrène ou schizoïde.
-schizoses		schizose	0
-schizothyme	Relatif à la schizothymie.
-schizothymes		schizothyme	0
-schizothymie	Caractère pathologique lié au repli sur soi, selon Ernst Kretschmer.
-schizothymies		schizothymie	0
-schlague	Peine disciplinaire usitée autrefois dans les armées allemandes et autrichiennes et qui consistait en des coups de baguette que l’on donnait à l’homme puni.
-schlagues		schlague	0
-schlamm	Résidu du lavage du charbon au faible pouvoir calorifique, très cendreux, argileux et humide.
-schlamms		schlamm	0
-schlass	Qui est dans un état d’ébriété avancé.
-schlasse		schlass	23
-schlasses		schlass	1
-schlich	Minerai écrasé, lavé et préparé pour la fusion dans un fourneau.
-schlichs		schlich	0
-schlingua		schlinguer	33
-schlinguai		schlinguer	22
-schlinguaient		schlinguer	32
-schlinguais		schlinguer	29
-schlinguait		schlinguer	40
-schlinguâmes		schlinguer	3
-schlinguant		schlinguer	43
-schlinguas		schlinguer	12
-schlinguasse		schlinguer	6
-schlinguassent		schlinguer	17
-schlinguasses		schlinguer	8
-schlinguassiez		schlinguer	14
-schlinguassions		schlinguer	25
-schlinguât		schlinguer	20
-schlinguâtes		schlinguer	2
-schlingue		schlinguer	64
-schlinguent		schlinguer	31
-schlinguer	Sentir mauvais, puer.
-schlinguera		schlinguer	21
-schlinguerai		schlinguer	16
-schlingueraient		schlinguer	28
-schlinguerais		schlinguer	18
-schlinguerait		schlinguer	26
-schlingueras		schlinguer	7
-schlinguèrent		schlinguer	24
-schlinguerez		schlinguer	5
-schlingueriez		schlinguer	4
-schlinguerions		schlinguer	11
-schlinguerons		schlinguer	10
-schlingueront		schlinguer	15
-schlingues		schlinguer	77
-schlinguez		schlinguer	30
-schlinguiez		schlinguer	13
-schlinguions		schlinguer	19
-schlinguons		schlinguer	27
-schlitta		schlitter	33
-schlittage	Transport au moyen de la schlitte.
-schlittages		schlittage	0
-schlittai		schlitter	22
-schlittaient		schlitter	32
-schlittais		schlitter	29
-schlittait		schlitter	34
-schlittâmes		schlitter	3
-schlittant		schlitter	35
-schlittas		schlitter	12
-schlittasse		schlitter	6
-schlittassent		schlitter	17
-schlittasses		schlitter	8
-schlittassiez		schlitter	14
-schlittassions		schlitter	25
-schlittât		schlitter	20
-schlittâtes		schlitter	2
-schlitte	Sorte de traîneau circulant sur des rails en bois, qui servait, dans les Vosges, à transporter les bois abattus.
-schlittée		schlitter	37
-schlittées		schlitter	36
-schlittent		schlitter	31
-schlitter	Transporter en utilisant une schlitte.
-schlittera		schlitter	21
-schlitterai		schlitter	16
-schlitteraient		schlitter	28
-schlitterais		schlitter	18
-schlitterait		schlitter	26
-schlitteras		schlitter	7
-schlittèrent		schlitter	24
-schlitterez		schlitter	5
-schlitteriez		schlitter	4
-schlitterions		schlitter	11
-schlitterons		schlitter	10
-schlitteront		schlitter	15
-schlittés		schlitter	38
-schlitteur	Celui qui transporte les bois abattus au moyen de la schlitte.
-schlitteurs		schlitteur	0
-schlittez		schlitter	30
-schlittiez		schlitter	13
-schlittions		schlitter	19
-schlittons		schlitter	27
-schmilblick	Appareil invraisemblable ne servant à rien du tout.
-schmilblicks		schmilblick	0
-schmoutz	Bisou.
-schnaps	Eau-de-vie.
-schnauzer	Une des races de chiens originaires du sud de l’Allemagne, à poils durs et secs, avec moustaches et sourcils développés, utilisées comme chien de garde et de d…
-schnauzers		schnauzer	0
-schneck	Pain aux raisins.
-schnecks		schneck	0
-schneuqua		schneuquer	39
-schneuquai		schneuquer	55
-schneuquaient		schneuquer	75
-schneuquais		schneuquer	86
-schneuquait		schneuquer	71
-schneuquâmes		schneuquer	68
-schneuquant		schneuquer	43
-schneuquas		schneuquer	83
-schneuquasse		schneuquer	81
-schneuquassent		schneuquer	78
-schneuquasses		schneuquer	87
-schneuquassiez		schneuquer	88
-schneuquassions		schneuquer	90
-schneuquât		schneuquer	62
-schneuquâtes		schneuquer	84
-schneuqué		schneuquer	56
-schneuquent		schneuquer	69
-schneuquer	Fouiner, farfouiller.
-schneuquera		schneuquer	44
-schneuquerai		schneuquer	50
-schneuqueraient		schneuquer	63
-schneuquerais		schneuquer	60
-schneuquerait		schneuquer	49
-schneuqueras		schneuquer	57
-schneuquèrent		schneuquer	48
-schneuquerez		schneuquer	58
-schneuqueriez		schneuquer	74
-schneuquerions		schneuquer	82
-schneuquerons		schneuquer	61
-schneuqueront		schneuquer	54
-schneuqués		schneuquer	53
-schneuquez		schneuquer	70
-schneuquiez		schneuquer	100
-schneuquions		schneuquer	94
-schneuquons		schneuquer	73
-schnick	Alcool blanc, de grain ou de pomme de terre, en général de mauvaise qualité.
-schnicks		schnick	0
-schnock	Imbécile, con.
-schnocks		schnock	0
-schnoque	Variante orthographique de schnock.
-schnoques		schnoque	0
-schnorchel	Tube périscopique permettant à un sous-marin d’alimenter ses moteurs diesel en air sans avoir à émerger.
-schnorchels		schnorchel	0
-schnorkel	Variante orthographique de schnorchel.
-schnorkels		schnorkel	0
-schnouf	Variante orthographique de schnouff.
-schnouff	Drogue dure, héroïne ou cocaïne, principalement.
-schnouffs		schnouff	0
-schofar	Instrument de musique à vent en usage dans le rituel israélite depuis l’Antiquité, fabriqué principalement au moyen d’une corne de bélier.
-schofars		schofar	0
-scholiaste	Variante orthographique de scoliaste.
-scholiastes		scholiaste	0
-scholie	Variante de scolie.
-scholies		scholie	0
-schooner	Deux-mâts, gréé comme une goélette.
-schooners		schooner	0
-schorre	Partie haute de l’estran, qui n’est recouverte que lors des hautes marées.
-schorres		schorre	0
-schproum	Tapage, petit scandale.
-schubertien	Relatif à la musique de Franz Schubert.
-schubertienne		schubertien	23
-schubertiennes		schubertien	1
-schubertiens		schubertien	9
-schupo	Policier allemand.
-schupos		schupo	0
-schuss	Descente rapide à ski, en trace directe, dans le sens de la pente.
-schwa	Voyelle neutre, de son /ə/ en API, intercalée sans signification phonologique et parfois de manière facultative entre deux consonnes.
-schwas		schwa	0
-scia		scier	39
-sciable	Que l’on peut scier.
-sciables		sciable	0
-sciage	Action, travail de celui qui scie du bois ou de la pierre.
-sciages		sciage	0
-sciai		scier	22
-sciaient		scier	42
-sciais		scier	52
-sciait		scier	40
-scialytique	Qui éclaire partout, sans ombre.
-scialytiques		scialytique	0
-sciâmes		scier	3
-sciant	Qui scie, qui ennuie.
-sciante		sciant	23
-sciantes		sciant	1
-sciants		sciant	0
-sciaphile	Qui se plaît à l’ombre.
-sciaphiles		sciaphile	0
-scias		scier	12
-sciasse	Cordage garni d'estrope pour élonger les fils de caret.
-sciassent		scier	17
-sciasses		scier	8
-sciassiez		scier	14
-sciassions		scier	25
-sciât		scier	20
-sciatalgie	Sciatique.
-sciatalgies		sciatalgie	0
-sciâtes		scier	2
-sciatique	Qui a rapport à la hanche, à l’os ischion.
-sciatiques		sciatique	0
-scie	Outil, instrument ou machine possédant une lame dentée (rectiligne ou circulaire) et dont on se sert pour scier.
-sciée		scier	45
-sciées		scier	51
-sciemment	Avec pleine connaissance de ce que l’on fait.
-science	Connaissance, savoir.
-sciences		science	0
-sciène	Poisson perciforme de la famille des sciénidés proche des perches.
-sciènes		sciène	0
-sciénidé	Famille taxinomique de poissons perciformes.
-sciénidés		sciénidé	0
-scient		scier	41
-scientificité	Caractère, qualité scientifique de pratiques et de théories.
-scientificités		scientificité	0
-scientifique	Qui concerne les sciences.
-scientifiques		scientifique	0
-scientisme	Doctrine selon laquelle la connaissance scientifique permettrait d'échapper à l'ignorance et l'obscurantisme, foi dans l'application des principes de la scienc…
-scientismes		scientisme	0
-scientiste	Relatif au scientisme.
-scientistes		scientiste	0
-scientologie	Mouvement religieux et sectaire fondé aux États-Unis en 1954 par L.
-scientologue	Relatif à la scientologie.
-scientologues		scientologue	0
-scier	Couper, fendre avec une scie.
-sciera		scier	44
-scierai		scier	16
-scieraient		scier	28
-scierais		scier	18
-scierait		scier	49
-scieras		scier	7
-scièrent		scier	48
-scierez		scier	5
-scierie	Usine où des scies, mises en mouvement par quelque agent naturel ou mécanique, scient en long la pierre, le bois, le marbre, etc.
-scieries		scierie	0
-scieriez		scier	4
-scierions		scier	11
-scierons		scier	10
-scieront		scier	54
-sciés		scier	53
-scieur	Celui dont le métier est de scier.
-scieurs		scieur	9
-scieuse	Appareil pour scier.
-scieuses		scieuse	0
-sciez		scier	131
-sciiez		scier	13
-sciions		scier	19
-scille	Plante bulbeuse du genre Drimia dont l’espèce la plus connue, la scille maritime, a un bulbe épais et était employé comme diurétique et tonicardiaque.
-scilles		scille	0
-scincidé	Famille taxinomique des lézards.
-scincidés		scincidé	0
-scinda		scinder	33
-scindai		scinder	22
-scindaient		scinder	42
-scindais		scinder	29
-scindait		scinder	40
-scindâmes		scinder	3
-scindant		scinder	43
-scindas		scinder	12
-scindasse		scinder	6
-scindassent		scinder	17
-scindasses		scinder	8
-scindassiez		scinder	14
-scindassions		scinder	25
-scindât		scinder	20
-scindâtes		scinder	2
-scindé	Qualifie un polynôme qui peut s'écrire comme un produit de polynômes de degré 1.
-scindée		scinder	45
-scindées		scinder	36
-scindent		scinder	31
-scinder	Couper ; diviser.
-scindera		scinder	21
-scinderai		scinder	16
-scinderaient		scinder	28
-scinderais		scinder	18
-scinderait		scinder	26
-scinderas		scinder	57
-scindèrent		scinder	48
-scinderez		scinder	5
-scinderiez		scinder	4
-scinderions		scinder	11
-scinderons		scinder	10
-scinderont		scinder	15
-scindés		scinder	53
-scindez		scinder	47
-scindiez		scinder	13
-scindions		scinder	19
-scindons		scinder	27
-scinque	Lézard de la famille des scincidés qui compte des centaines d’espèces et dont la structuration phylogénétique semble très complexe.
-scinques		scinque	0
-scintigraphe	Appareil d’imagerie médicale qui procède par l’administration, dans l’organisme, d’isotopes radioactifs dont le rayonnement est capté par les organes à examine…
-scintigraphes		scintigraphe	0
-scintigraphie	Imagerie médicale qui procède par l’administration, dans l’organisme, d’isotopes radioactifs dont le rayonnement est capté par les organes à examiner.
-scintigraphies		scintigraphie	0
-scintigraphique	Relatif à la scintigraphie.
-scintilla		scintiller	39
-scintillai		scintiller	22
-scintillaient		scintiller	42
-scintillais		scintiller	29
-scintillait		scintiller	40
-scintillâmes		scintiller	3
-scintillant	Qui scintille.
-scintillante		scintillant	23
-scintillantes		scintillant	1
-scintillants		scintillant	9
-scintillas		scintiller	12
-scintillasse		scintiller	6
-scintillassent		scintiller	17
-scintillasses		scintiller	8
-scintillassiez		scintiller	14
-scintillassions		scintiller	25
-scintillât		scintiller	20
-scintillâtes		scintiller	2
-scintillateur	Matériau émettant de la lumière suite à l’absorption d’un rayonnement ionisant (photon ou particule chargée).
-scintillateurs		scintillateur	0
-scintillation	Vif mouvement d’agitation qu’on observe dans la lumière des étoiles, surtout lorsque l’atmosphère n’est pas tranquille.
-scintillations		scintillation	0
-scintillé		scintiller	56
-scintillement	Action de scintiller.
-scintillements		scintillement	0
-scintillent		scintiller	41
-scintiller	Briller, jeter des éclats par intermittence.
-scintillera		scintiller	21
-scintillerai		scintiller	16
-scintilleraient		scintiller	63
-scintillerais		scintiller	60
-scintillerait		scintiller	26
-scintilleras		scintiller	7
-scintillèrent		scintiller	48
-scintillerez		scintiller	5
-scintilleriez		scintiller	4
-scintillerions		scintiller	11
-scintillerons		scintiller	10
-scintilleront		scintiller	54
-scintilles		scintiller	77
-scintillez		scintiller	30
-scintilliez		scintiller	13
-scintillions		scintiller	19
-scintillomètre	Instrument propre à mesurer le scintillement.
-scintillomètres		scintillomètre	0
-scintillons		scintiller	59
-sciographie	Coupe d’un édifice pour en faire voir les dedans, la disposition intérieure, l’épaisseur des murs, les portes, les passages.
-sciographies		sciographie	0
-scion	Petit brin, petit rejeton tendre et très flexible d’un arbre, d’un arbrisseau.
-scions		scion	0
-sciotte	Scie avec une lame mince attachée à un arc, généralement de métal, mais traditionnellement de bois.
-sciotter	Trancher avec une sciotte.
-sciottés		sciotter	38
-scirpe	Plante monocotylédone, affectionnant les lieux humides, de la famille des cypéracées.
-scirpes		scirpe	0
-scissile	Qui peut être scindé.
-scissiles		scissile	0
-scission	Séparation, division dans une assemblée politique, dans un parti, etc.
-scissionna		scissionner	33
-scissionnai		scissionner	22
-scissionnaient		scissionner	32
-scissionnais		scissionner	29
-scissionnait		scissionner	34
-scissionnâmes		scissionner	3
-scissionnant		scissionner	35
-scissionnas		scissionner	12
-scissionnasse		scissionner	6
-scissionnassent		scissionner	17
-scissionnasses		scissionner	8
-scissionnassiez		scissionner	14
-scissionnât		scissionner	20
-scissionnâtes		scissionner	2
-scissionné		scissionner	46
-scissionnent		scissionner	31
-scissionner	Diviser en deux, provoquer la scission de.
-scissionnera		scissionner	21
-scissionnerai		scissionner	16
-scissionnerais		scissionner	18
-scissionnerait		scissionner	26
-scissionneras		scissionner	7
-scissionnèrent		scissionner	24
-scissionnerez		scissionner	5
-scissionneriez		scissionner	4
-scissionnerions		scissionner	11
-scissionnerons		scissionner	10
-scissionneront		scissionner	15
-scissionnés		scissionner	38
-scissionnez		scissionner	30
-scissionniez		scissionner	13
-scissionnions		scissionner	19
-scissionniste	Relatif à la scission.
-scissionnistes		scissionniste	0
-scissionnons		scissionner	27
-scissions		scission	0
-scissipare	Qui concerne la scissiparité.
-scissipares		scissipare	0
-scissiparité	Multiplication par division de certains êtres.
-scissiparités		scissiparité	0
-scissomètre	Instrument utilisé en mécanique des sols pour mesurer la cohésion de certains sols fins.
-scissomètres		scissomètre	0
-scissure	Sillon ou fente naturelle qu’on observe sur les os et sur divers organes.
-scissures		scissure	0
-sciure	Parcelles qui tombent du bois ou de toute autre matière dure que l’on scie.
-sciures		sciure	0
-sciuridé	Famille taxinomique de l'ordre des rongeurs et du sous-ordre des sciuromorphes qui regroupe les écureuils.
-sciuridés		sciuridé	0
-scléral	Qui se rapporte à la sclérotique.
-sclérale		scléral	23
-sclérales		scléral	1
-scléranthe	Plante herbacée annuelle à tiges raides et divisées, aux feuilles opposées, connées à la base, subulées, aux fleurs fasciculées, vertes, apétales au calice à t…
-scléranthes		scléranthe	0
-scléraux		scléral	9
-sclère	Membrane blanche et opaque, résistante, de nature conjonctive, qui forme le blanc de l’œil.
-sclérenchyme	Tissu de soutien rigide des plantes, constitué de cellules mortes à paroi lignifiée de type fibres scléreuses ou scléréides, et qui confère la rigidité et la s…
-sclérenchymes		sclérenchyme	0
-sclères		sclère	0
-scléreuse		scléreux	23
-scléreuses		scléreux	1
-scléreux	Se dit d’un tissu devenu épais et dur par suite d’un développement pathologique d’éléments conjonctifs fibreux.
-scléroderme	Genre de champignons de la famille des Sclérodermacées dont la cuticule est recouverte d’écailles.
-sclérodermes		scléroderme	0
-sclérodermie	Pathologie caractérisée par une surproduction de collagène au niveau de la peau et des organes internes.
-sclérodermies		sclérodermie	0
-scléromètre	Instrument propre à fournir une sorte de mesure de la force qu’on emploie pour vaincre la dureté d’un minéral, c’est-à-dire pour le rayer à l’aide d’une pointe.
-scléromètres		scléromètre	0
-sclérophylle	Qui a les feuilles coriaces à cuticule épaisse.
-sclérophylles		sclérophylle	0
-scléroprotéine	Classe de protéine animale fibreuse insoluble dans l’eau.
-scléroprotéines		scléroprotéine	0
-sclérosa		scléroser	33
-sclérosai		scléroser	22
-sclérosaient		scléroser	32
-sclérosais		scléroser	29
-sclérosait		scléroser	34
-sclérosâmes		scléroser	3
-sclérosant	Qui sclérose.
-sclérosante		sclérosant	23
-sclérosantes		sclérosant	1
-sclérosants		sclérosant	9
-sclérosas		scléroser	12
-sclérosasse		scléroser	6
-sclérosassent		scléroser	17
-sclérosasses		scléroser	8
-sclérosassiez		scléroser	14
-sclérosassions		scléroser	25
-sclérosât		scléroser	20
-sclérosâtes		scléroser	2
-sclérosé	Qui est atteint de sclérose.
-sclérosée		sclérosé	23
-sclérosées		scléroser	36
-sclérosent		scléroser	31
-scléroser	Créer une sorte d’endurcissement morbide des tissus.
-sclérosera		scléroser	21
-scléroserai		scléroser	50
-scléroseraient		scléroser	28
-scléroserais		scléroser	18
-scléroserait		scléroser	26
-scléroseras		scléroser	7
-sclérosèrent		scléroser	24
-scléroserez		scléroser	5
-scléroseriez		scléroser	4
-scléroserions		scléroser	11
-scléroserons		scléroser	10
-scléroseront		scléroser	15
-sclérosés		sclérosé	9
-sclérosez		scléroser	30
-sclérosiez		scléroser	13
-sclérosions		scléroser	19
-sclérosons		scléroser	27
-sclérote	Organe de réserve permettant la conservation hivernale de certains champignons, dur car formé de mycélium très compact.
-sclérotes		sclérote	0
-sclérothérapie	Traitement de l’insuffisance veineuse par sclérose.
-sclérothérapies		sclérothérapie	0
-sclérotique	Qui fait preuve de dureté, sclérifié.
-sclérotiques		sclérotique	0
-scolaire	Qui se rapporte à l’école, que ce soit à l'enseignement qui y est prodigué, aux bâtiments qu'elle occupe ou aux personnes qui la fréquentent, notamment les élè…
-scolairement	D’une manière scolaire.
-scolaires		scolaire	0
-scolarisa		scolariser	33
-scolarisai		scolariser	22
-scolarisaient		scolariser	32
-scolarisais		scolariser	29
-scolarisait		scolariser	34
-scolarisâmes		scolariser	3
-scolarisant		scolariser	35
-scolarisas		scolariser	12
-scolarisasse		scolariser	6
-scolarisassent		scolariser	17
-scolarisasses		scolariser	8
-scolarisassiez		scolariser	14
-scolarisassions		scolariser	25
-scolarisât		scolariser	20
-scolarisâtes		scolariser	2
-scolarisation	Action de scolariser.
-scolarisations		scolarisation	0
-scolarisé	Qui va à l’école.
-scolarisée		scolarisé	23
-scolarisées		scolarisé	1
-scolarisent		scolariser	31
-scolariser	Faire fréquenter l’école à (un enfant).
-scolarisera		scolariser	21
-scolariserai		scolariser	16
-scolariseraient		scolariser	28
-scolariserais		scolariser	18
-scolariserait		scolariser	26
-scolariseras		scolariser	7
-scolarisèrent		scolariser	24
-scolariserez		scolariser	5
-scolariseriez		scolariser	4
-scolariserions		scolariser	11
-scolariserons		scolariser	10
-scolariseront		scolariser	15
-scolarisés		scolarisé	9
-scolarisez		scolariser	30
-scolarisiez		scolariser	13
-scolarisions		scolariser	19
-scolarisons		scolariser	27
-scolarité	Durée des études prescrites aux écoliers, aux collégiens, aux lycéens, aux étudiants des universités, pour qu’ils puissent se présenter à tel examen ou à tel c…
-scolarités		scolarité	0
-scolasticat	Séminaire, cursus religieux avant les études de théologie.
-scolasticats		scolasticat	0
-scolastique	Qui appartient à l’école.
-scolastiques		scolastique	0
-scolex	Extrémité antérieure des cestodes (vers cestoïdes) munie de crochets ou de ventouses.
-scoliaste	Celui qui a fait des scolies sur les anciens auteurs classiques.
-scoliastes		scoliaste	0
-scolie	Note explicative.
-scolies		scolie	0
-scoliose	Déviation latérale de la colonne vertébrale.
-scolioses		scoliose	0
-scoliotique	Qui se rapporte à la scoliose.
-scoliotiques		scoliotique	0
-scolopacidé	Tout oiseau de la famille des scolopacidés, grand groupe d'échassiers terrestres ou aquatiques de l'ordre des charadriiformes, réunissant plusieurs types de li…
-scolopacidés	Grande famille d'oiseaux néognathes limicoles terrestres ou aquatiques de l'ordre des charadriiformes, composée d'environ 90 espèces existantes réparties en 21…
-scolopendre	Nom vulgaire de Asplenium scolopendrium une fougère à longues feuilles, qui croît dans les régions humides et ombreuses.
-scolopendres		scolopendre	0
-scolyme	Genre de plantes de la famille des composées, dont les feuilles sont armées de fortes épines.
-scolymes		scolyme	0
-scolyte	Sous-famille d’insectes coléoptères xylophages creusant sous l’écorce des arbres des systèmes de galeries maternelles et larvaires souvent caractéristiques de …
-scolytes		scolyte	0
-scombridé	Poisson de la famille des scombridés (scombridae), comme le thon.
-scombridés	Famille de poissons osseux perciformes marins de haute mer qui ont un corps fuselé, deux nageoires dorsales et une séries de petites fausses nageoires derrière…
-scone	Petit pain britannique généralement rond légèrement salé ou sucré pouvant contenir des raisins, du fromage et consommé avec le thé.
-scones		scone	0
-sconse	Nom commercial de la fourrure de la mouffette.
-sconses		sconse	0
-scoop	Exclusivité ou primeur d'une information.
-scoops		scoop	0
-scoot	Variante familière de scooter (motocycle).
-scooter	Petite motocyclette caractérisée par de petites roues, un plancher plat et un carénage.
-scootériste	Conducteur de scooter.
-scootéristes		scootériste	0
-scooters		scooter	0
-scoots		scoot	0
-scopa	Jeu de cartes italien consistant à ramasser des cartes en fonction de leurs valeurs.
-scopas		scoper	83
-scope	Ensemble des choses qui sont dans la définition du rôle de quelqu’un ou de quelque chose.
-scoper	Relier un patient à un ordinateur.
-scopes		scope	0
-scopie	Radioscopie.
-scopies		scopie	0
-scopitone	Jukebox des années 60, associant l’image à la musique.
-scopitones		scopitone	0
-scopolamine	Alcaloïde tropanique de plusieurs Solanacées (notamment le datura et le brugmansia), à action anticholinergique (parasympatholytique) et à effet sédatif.
-scopolamines		scopolamine	0
-scora		scorer	33
-scorai		scorer	22
-scoraient		scorer	32
-scorais		scorer	29
-scorait		scorer	34
-scorâmes		scorer	3
-scorant		scorer	35
-scoras		scorer	12
-scorasse		scorer	6
-scorassent		scorer	17
-scorasses		scorer	8
-scorassiez		scorer	14
-scorassions		scorer	25
-scorât		scorer	20
-scorâtes		scorer	2
-scorbut	Maladie générale caractérisée par des hémorragies, des troubles gastro-intestinaux, des gencives attaquées, l’affaiblissement progressif puis la consomption, e…
-scorbutique	Qui a rapport au scorbut, qui tient de la nature du scorbut.
-scorbutiques		scorbutique	0
-scorbuts		scorbut	0
-score	Nombre de points qu’un joueur, une équipe a marqué.
-scorent		scorer	31
-scorer	Marquer un but au hockey, au foot, etc.
-scorera		scorer	21
-scorerai		scorer	16
-scoreraient		scorer	28
-scorerais		scorer	18
-scorerait		scorer	26
-scoreras		scorer	7
-scorèrent		scorer	24
-scorerez		scorer	5
-scoreriez		scorer	4
-scorerions		scorer	11
-scorerons		scorer	10
-scoreront		scorer	15
-scores		score	0
-scoreur	Sportif qui marque un point.
-scoreurs		scoreur	0
-scoreuse	Sportive qui marque un point.
-scoreuses		scoreuse	0
-scorez		scorer	30
-scoriacé	Qui contient des scories, en parlant des volcans ou de leurs éruptions.
-scoriacée		scoriacé	23
-scoriacées		scoriacé	1
-scoriacés		scoriacé	9
-scorie	Substance terreuse ou pierreuse vitrifiée, qui monte comme une écume à la surface des métaux en fusion.
-scories		scorie	0
-scoriez		scorer	13
-scorifia		scorifier	33
-scorifiai		scorifier	22
-scorifiaient		scorifier	32
-scorifiais		scorifier	29
-scorifiait		scorifier	34
-scorifiâmes		scorifier	3
-scorifiant		scorifier	43
-scorifias		scorifier	12
-scorifiasse		scorifier	6
-scorifiassent		scorifier	17
-scorifiasses		scorifier	8
-scorifiassiez		scorifier	14
-scorifiassions		scorifier	25
-scorifiât		scorifier	20
-scorifiâtes		scorifier	2
-scorifié		scorifier	46
-scorifiée		scorifier	37
-scorifiées		scorifier	36
-scorifient		scorifier	31
-scorifier	Réduire en scories certaines matières étrangères au métal en fusion.
-scorifiera		scorifier	21
-scorifierai		scorifier	16
-scorifieraient		scorifier	28
-scorifierais		scorifier	18
-scorifierait		scorifier	26
-scorifieras		scorifier	7
-scorifièrent		scorifier	24
-scorifierez		scorifier	5
-scorifieriez		scorifier	4
-scorifierions		scorifier	11
-scorifierons		scorifier	10
-scorifieront		scorifier	15
-scorifiés		scorifier	38
-scorifiez		scorifier	30
-scorifiiez		scorifier	13
-scorifiions		scorifier	19
-scorifions		scorifier	27
-scorions		scorer	19
-scorons		scorer	27
-scorpène	Genre de poissons dont la rascasse est le type.
-scorpènes		scorpène	0
-scorpioïde	En forme de queue de scorpion.
-scorpioïdes		scorpioïde	0
-scorpion	Arthropode de la classe des Arachnides, dont la queue est armée d’un dard relié à une glande à venin.
-scorpionides	Définition manquante ou à compléter.
-scorpions		scorpion	0
-scorsonère	Genre de composées, dont l’espèce la plus connue, à racine noire en dessus et blanche en dedans, se mange cuite, comme le salsifis.
-scorsonères		scorsonère	0
-scotch	Whisky écossais.
-scotcha		scotcher	33
-scotchai		scotcher	22
-scotchaient		scotcher	32
-scotchais		scotcher	52
-scotchait		scotcher	34
-scotchâmes		scotcher	3
-scotchant	Qui provoque un grand intérêt, qui attache.
-scotchas		scotcher	12
-scotchasse		scotcher	6
-scotchassent		scotcher	17
-scotchasses		scotcher	8
-scotchassiez		scotcher	14
-scotchassions		scotcher	25
-scotchât		scotcher	20
-scotchâtes		scotcher	2
-scotche		scotcher	64
-scotchée		scotcher	45
-scotchées		scotcher	51
-scotchent		scotcher	31
-scotcher	Coller avec du ruban adhésif.
-scotchera		scotcher	44
-scotcherai		scotcher	16
-scotcheraient		scotcher	28
-scotcherais		scotcher	18
-scotcherait		scotcher	26
-scotcheras		scotcher	7
-scotchèrent		scotcher	24
-scotcherez		scotcher	5
-scotcheriez		scotcher	4
-scotcherions		scotcher	11
-scotcherons		scotcher	10
-scotcheront		scotcher	15
-scotchés		scotcher	53
-scotchez		scotcher	30
-scotchiez		scotcher	13
-scotchions		scotcher	19
-scotchons		scotcher	59
-scotchs		scotch	0
-scotie	Moulure concave dont la partie inférieure est plus saillante que la partie supérieure et qui, le plus souvent, fait partie de la base de la colonne.
-scoties		scotie	0
-scotisme	Doctrine scolastique de John Duns Scot et de ses adeptes.
-scotismes	Pluriel de scotisme.
-scotiste	Relatif à la pensée de Jean Duns Scot.
-scotistes		scotiste	0
-scotome	Tache plus ou moins étendue, de forme arrondie et d'une teinte sombre, gris foncé ou noire, perçue par l'œil affecté.
-scotomes		scotome	0
-scotomisa		scotomiser	33
-scotomisai		scotomiser	22
-scotomisaient		scotomiser	32
-scotomisais		scotomiser	29
-scotomisait		scotomiser	34
-scotomisâmes		scotomiser	3
-scotomisant		scotomiser	43
-scotomisas		scotomiser	12
-scotomisasse		scotomiser	6
-scotomisassent		scotomiser	17
-scotomisasses		scotomiser	8
-scotomisassiez		scotomiser	14
-scotomisassions		scotomiser	25
-scotomisât		scotomiser	20
-scotomisâtes		scotomiser	2
-scotomisation	Mécanisme de défense psychique par oubli de faits vécus mais intolérables au sujet.
-scotomisations		scotomisation	0
-scotomisé		scotomiser	46
-scotomisée		scotomiser	37
-scotomisées		scotomiser	36
-scotomisent		scotomiser	31
-scotomiser	Rejeter inconsciemment de sa conscience une réalité pénible.
-scotomisera		scotomiser	21
-scotomiserai		scotomiser	16
-scotomiseraient		scotomiser	28
-scotomiserais		scotomiser	18
-scotomiserait		scotomiser	26
-scotomiseras		scotomiser	7
-scotomisèrent		scotomiser	24
-scotomiserez		scotomiser	5
-scotomiseriez		scotomiser	4
-scotomiserions		scotomiser	11
-scotomiserons		scotomiser	10
-scotomiseront		scotomiser	15
-scotomisés		scotomiser	38
-scotomisez		scotomiser	30
-scotomisiez		scotomiser	13
-scotomisions		scotomiser	19
-scotomisons		scotomiser	27
-scotopique	Qui se rapporte à la vision nocturne ou à l'obscurité, à laquelle participent les cellules photoréceptrices à bâtonnets.
-scotopiques		scotopique	0
-scottish	Schottisch.
-scottishs		scottish	0
-scoubidou	Objet ludique fait de fils de plastique creux tressés de même couleur ou de couleurs différentes, prenant la forme d’un boudin à section carrée et terminé par …
-scoubidous		scoubidou	0
-scoumoune	Malchance durable.
-scoumounes		scoumoune	0
-scoured	Laine destinée au négoce, lavée à l’eau tiède après sa tonte afin d’en alléger le volume et le poids pour son transport.
-scoureds		scoured	0
-scout	Personne qui pratique le scoutisme.
-scoute	Jeune femme qui pratique le scoutisme.
-scouter	Regarder (des sportifs) en action pour essayer de détecter de nouveaux talents.
-scoutés		scouter	38
-scoutisme	Mouvement de jeunesse créé au début du XXᵉ siècle par Lord Robert Baden-Powell, basé sur quelques principes dont la loi scoute, la promesse, l’uniforme.
-scoutismes		scoutisme	0
-scouts		scout	9
-scrabbla		scrabbler	33
-scrabblai		scrabbler	22
-scrabblaient		scrabbler	32
-scrabblais		scrabbler	29
-scrabblait		scrabbler	34
-scrabblâmes		scrabbler	3
-scrabblant		scrabbler	35
-scrabblas		scrabbler	12
-scrabblasse		scrabbler	6
-scrabblassent		scrabbler	17
-scrabblasses		scrabbler	8
-scrabblassiez		scrabbler	14
-scrabblassions		scrabbler	25
-scrabblât		scrabbler	20
-scrabblâtes		scrabbler	2
-scrabble	Au jeu de Scrabble, coup où un joueur réussit à placer un mot qui utilise les sept lettres de son jeu.
-scrabblent		scrabbler	31
-scrabbler	Réussir un scrabble, un coup où l’on place toutes les lettres.
-scrabblera		scrabbler	21
-scrabblerai		scrabbler	16
-scrabbleraient		scrabbler	28
-scrabblerais		scrabbler	18
-scrabblerait		scrabbler	26
-scrabbleras		scrabbler	7
-scrabblèrent		scrabbler	24
-scrabblerez		scrabbler	5
-scrabbleriez		scrabbler	4
-scrabblerions		scrabbler	11
-scrabblerons		scrabbler	10
-scrabbleront		scrabbler	15
-scrabbles		scrabble	0
-scrabblesque	Qui concerne le jeu de Scrabble sous forme de compétition.
-scrabblesques		scrabblesque	0
-scrabbleur	Joueur de Scrabble.
-scrabbleurs		scrabbleur	0
-scrabbleuse	Joueuse de Scrabble.
-scrabbleuses		scrabbleuse	0
-scrabblez		scrabbler	30
-scrabbliez		scrabbler	13
-scrabblions		scrabbler	19
-scrabblons		scrabbler	27
-scramasaxe	Genre d’épée franque (voire germanique) à un tranchant, dont l’autre coté de la lame n’était affuté que sur le dernier tiers, et dont les plus petits étaient v…
-scramasaxes		scramasaxe	0
-scrapbook	Album de photos ou coupures de presse.
-scrapbooking	Forme de loisir créatif consistant à introduire des photographies dans un décor en rapport avec le thème abordé, dans le but de les mettre en valeur par une pr…
-scrapbooks		scrapbook	0
-scraper	Briser ; abîmer.
-scrapers		scraper	0
-scrapeur	Variante orthographique de scraper (engin de terrassement pour travaux publics), niveleuse.
-scrapeurs		scrapeur	0
-scrapie	Synonyme de tremblante du mouton.
-scrapies		scrapie	0
-scratch	Système de classement mixte dans le cyclisme, la course à pied et les sports combinés (triathlon, duathlon...).
-scratcha		scratcher	33
-scratchai		scratcher	22
-scratchaient		scratcher	32
-scratchais		scratcher	29
-scratchait		scratcher	34
-scratchâmes		scratcher	3
-scratchant		scratcher	35
-scratchas		scratcher	12
-scratchasse		scratcher	6
-scratchassent		scratcher	17
-scratchasses		scratcher	8
-scratchassiez		scratcher	14
-scratchassions		scratcher	25
-scratchât		scratcher	20
-scratchâtes		scratcher	2
-scratché		scratcher	46
-scratchée	Féminin singulier de scratché.
-scratchent		scratcher	31
-scratcher	Produire des sons à partir d'une platine de disques en perturbant la rotation des disques.
-scratchera		scratcher	21
-scratcherai		scratcher	16
-scratcheraient		scratcher	28
-scratcherais		scratcher	18
-scratcherait		scratcher	26
-scratcheras		scratcher	7
-scratchèrent		scratcher	24
-scratcherez		scratcher	5
-scratcheriez		scratcher	4
-scratcherions		scratcher	11
-scratcherons		scratcher	10
-scratcheront		scratcher	15
-scratches		scratcher	66
-scratchez		scratcher	30
-scratchiez		scratcher	13
-scratchions		scratcher	19
-scratchons		scratcher	27
-scratchs		scratch	0
-scriban	Surmeuble qui présente un pan légèrement incliné pour mieux écrire.
-scribanne	Scribain.
-scribannes		scribanne	0
-scribans		scriban	0
-scribe	Copiste, homme employé à faire des écritures.
-scribes		scribe	0
-scribouilla		scribouiller	33
-scribouillage	Action ou résultat de scribouiller.
-scribouillages		scribouillage	0
-scribouillai		scribouiller	22
-scribouillaient		scribouiller	32
-scribouillais		scribouiller	29
-scribouillait		scribouiller	34
-scribouillâmes		scribouiller	3
-scribouillant		scribouiller	35
-scribouillard	Préposé aux écritures, notamment dans l’armée.
-scribouillarde	Préposée aux écritures, notamment dans l’armée.
-scribouillardes		scribouillarde	0
-scribouillards		scribouillard	0
-scribouillas		scribouiller	12
-scribouillasse		scribouiller	6
-scribouillasses		scribouiller	8
-scribouillât		scribouiller	20
-scribouillâtes		scribouiller	2
-scribouille		scribouiller	64
-scribouillée		scribouiller	37
-scribouillées		scribouiller	36
-scribouillent		scribouiller	31
-scribouiller	Écrire dans un mauvais style.
-scribouillera		scribouiller	21
-scribouillerai		scribouiller	16
-scribouillerais		scribouiller	18
-scribouillerait		scribouiller	26
-scribouilleras		scribouiller	7
-scribouillèrent		scribouiller	24
-scribouillerez		scribouiller	5
-scribouilleriez		scribouiller	4
-scribouillerons		scribouiller	10
-scribouilleront		scribouiller	15
-scribouillés		scribouiller	38
-scribouilleur	Préposé aux écritures, employé de bureau, écrivain sans talent.
-scribouilleurs		scribouilleur	0
-scribouilleuse	Préposée aux écritures, employée de bureau, écrivaine sans talent.
-scribouilleuses		scribouilleuse	0
-scribouillez		scribouiller	30
-scribouilliez		scribouiller	13
-scribouillions		scribouiller	19
-scribouillons		scribouiller	27
-scripophile	Collectionneur de titres anciens (actions, obligations, bons de jouissance, parts bénéficiaires, parts sociales, etc.) qui n’ont plus cours.
-scripophiles		scripophile	0
-scripophilie	Collection des anciens titres de bourse et des actions.
-scripophilies		scripophilie	0
-script	Se dit de l’écriture manuscrite où les lettres ne sont pas liées les unes aux autres et dont le tracé correspond approximativement à celui des caractères typog…
-scripte	Responsable de la continuité de la réalisation et de la tenue des documents auprès du réalisateur d’un film ou d’une émission.
-scriptes	Famille de caractères dans la classification proposée par Maximilien Vox en 1954 et comprenant toutes les lettres imitées de l'écriture cursive.
-scripteur	Secrétaire apostolique chargé de l'écriture des bulles papales.
-scripteurs		scripteur	0
-scriptophile	Collectionneur d'actions et de titres anciens.
-scriptophiles		scriptophile	0
-scriptophilie	Collection des anciens titres de bourse et des actions.
-scriptophilies		scriptophilie	0
-scriptorium	Au Moyen Âge, atelier d’écriture et d’enluminure d’un monastère.
-scriptoriums		scriptorium	0
-scriptrice	Celle qui écrit, sans pour autant être écrivaine.
-scriptrices		scriptrice	0
-scripts		script	0
-scripturaire	Qui a rapport à l’Écriture sainte.
-scripturaires		scripturaire	0
-scriptural	Relatif à l'écriture.
-scripturale		scriptural	23
-scripturales		scriptural	1
-scripturaux		scriptural	9
-scrofulaire	Genre de plantes herbacées bisannuelles ou vivaces de la famille des scrofulariacées, à tige carrée poussant dans les régions tempérées de l’hémisphère nord.
-scrofulaires		scrofulaire	0
-scrofulariacée	Famille de plante gamopétale apparentée à la scrofulaire.
-scrofulariacées		scrofulariacée	0
-scrofule	Lésion d’altérations de la peau et des muqueuses avec gonflement des ganglions lymphatiques du cou, susceptible de produire des tumeurs et des ulcères.
-scrofules		scrofule	0
-scrofuleuse		scrofuleux	23
-scrofuleuses		scrofuleux	1
-scrofuleux	Qui a rapport à la scrofule, qui tient de la scrofule.
-scrogneugneu	Juron qui exprime le déplaisir.
-scrogneugneux		scrogneugneu	0
-scrolla		scroller	33
-scrollai		scroller	22
-scrollaient		scroller	32
-scrollais		scroller	29
-scrollait		scroller	34
-scrollâmes		scroller	3
-scrollant		scroller	35
-scrollas		scroller	12
-scrollasse		scroller	6
-scrollassent		scroller	17
-scrollasses		scroller	8
-scrollassiez		scroller	14
-scrollassions		scroller	25
-scrollât		scroller	20
-scrollâtes		scroller	2
-scrollé		scroller	46
-scrollée		scroller	37
-scrollées		scroller	36
-scrollent		scroller	31
-scroller	Faire défiler verticalement le contenu d’un document sur un écran d’ordinateur à l’aide de la molette d’une souris, d’un pavé tactile (touchpad, trackpad), mai…
-scrollera		scroller	21
-scrollerai		scroller	16
-scrolleraient		scroller	28
-scrollerais		scroller	18
-scrollerait		scroller	26
-scrolleras		scroller	7
-scrollèrent		scroller	24
-scrollerez		scroller	5
-scrolleriez		scroller	4
-scrollerions		scroller	11
-scrollerons		scroller	10
-scrolleront		scroller	15
-scrollés		scroller	38
-scrollez		scroller	30
-scrolliez		scroller	13
-scrollions		scroller	19
-scrollons		scroller	27
-scrotal	Qui est relatif au scrotum.
-scrotale		scrotal	23
-scrotales		scrotal	1
-scrotaux		scrotal	9
-scrotum	Enveloppe cutanée des deux testicules faisant partie des bourses testiculaires.
-scrotums		scrotum	0
-scrub	Végétation de broussailles.
-scrubber	Filtre permettant de traiter les fumées d’échappement, en particulier dans les navires.
-scrubbers		scrubber	0
-scrubs		scrub	0
-scrupule	Doute ou hésitation que l'on éprouve à la peur de mal faire ou d'être importun.
-scrupules		scrupule	0
-scrupuleuse		scrupuleux	23
-scrupuleusement	D’une manière scrupuleuse.
-scrupuleuses		scrupuleux	1
-scrupuleux	Qui est sujet à avoir des scrupules.
-scruta		scruter	134
-scrutai		scruter	55
-scrutaient		scruter	42
-scrutais		scruter	52
-scrutait		scruter	40
-scrutâmes		scruter	68
-scrutant		scruter	43
-scrutas		scruter	12
-scrutasse		scruter	6
-scrutassent		scruter	17
-scrutasses		scruter	8
-scrutassiez		scruter	14
-scrutassions		scruter	25
-scrutât		scruter	20
-scrutâtes		scruter	2
-scrutateur	Celui qui scrute.
-scrutateurs		scrutateur	9
-scrutation	Examen répété de l'état d'un ou plusieurs éléments d'un système pour y détecter un changement éventuel.
-scrutations		scrutation	0
-scrutatrice	Celle qui scrute.
-scrutatrices		scrutateur	1
-scruté		scruter	56
-scrutée		scruter	45
-scrutées		scruter	36
-scrutent		scruter	41
-scruter	Sonder ou examiner profondément.
-scrutera		scruter	44
-scruterai		scruter	50
-scruteraient		scruter	28
-scruterais		scruter	18
-scruterait		scruter	49
-scruteras		scruter	7
-scrutèrent		scruter	48
-scruterez		scruter	5
-scruteriez		scruter	4
-scruterions		scruter	11
-scruterons		scruter	10
-scruteront		scruter	54
-scrutés		scruter	53
-scrutez		scruter	47
-scrutiez		scruter	13
-scrutin	Vote au moyen de bulletins ou de boules que l’on dépose dans une urne, d’où on les tire ensuite pour les compter.
-scrutins		scrutin	0
-scrutions		scruter	65
-scrutons		scruter	59
-scud	Synonyme de pannus.
-scuds		scud	0
-scull	Embarcation de compétition où les rameurs tiennent un aviron dans chaque main.
-sculls		scull	0
-sculpta		sculpter	39
-sculptai		sculpter	22
-sculptaient		sculpter	42
-sculptais		sculpter	52
-sculptait		sculpter	40
-sculptâmes		sculpter	3
-sculptant	Qui est censé sculpter le corps et affiner la silhouette, en parlant de lingerie féminine.
-sculptas		sculpter	12
-sculptasse		sculpter	6
-sculptassent		sculpter	17
-sculptasses		sculpter	8
-sculptassiez		sculpter	14
-sculptassions		sculpter	25
-sculptât		sculpter	20
-sculptâtes		sculpter	84
-sculpte		sculpter	64
-sculptée		sculpter	45
-sculptées	Féminin pluriel de sculpté.
-sculptent		sculpter	41
-sculpter	Façonner, avec le ciseau ou un autre outil, une figure en relief, en pierre, en marbre, en bois, etc.
-sculptera		sculpter	44
-sculpterai		sculpter	50
-sculpteraient		sculpter	28
-sculpterais		sculpter	18
-sculpterait		sculpter	49
-sculpteras		sculpter	57
-sculptèrent		sculpter	24
-sculpterez		sculpter	58
-sculpteriez		sculpter	4
-sculpterions		sculpter	11
-sculpterons		sculpter	10
-sculpteront		sculpter	15
-sculptés	Masculin pluriel de sculpté.
-sculpteur	Artiste qui sculpte la matière.
-sculpteure	Femme qui sculpte.
-sculpteures		sculpteure	0
-sculpteurs		sculpteur	0
-sculpteuse	Femme qui sculpte.
-sculpteuses		sculpteuse	0
-sculptez		sculpter	47
-sculptiez		sculpter	67
-sculptions		sculpter	19
-sculptons		sculpter	27
-sculptrice	Artiste qui sculpte.
-sculptrices		sculptrice	0
-sculptural	Qui appartient, qui a rapport à la sculpture.
-sculpturale		sculptural	23
-sculpturales		sculptural	1
-sculpturaux		sculptural	9
-sculpture	Art de sculpter.
-sculptures		sculpture	0
-scuta		scutum	0
-scutellaire	Scutellaria, genre de plantes herbacées de la famille des Lamiacées.
-scutellaires		scutellaire	0
-scutiforme	Qui a la forme d’un écu.
-scutiformes		scutiforme	0
-scutum	Bouclier du légionnaire romain, originellement de forme ovale et cintré.
-scutums		scutum	0
-scyphozoaire	Nom scientifique des méduses.
-scyphozoaires		scyphozoaire	0
-scytale	Encodage dont se servaient les Lacédémoniens pour écrire des lettres chiffrées, et qui consistait en ceci : on prenait deux rouleaux de bois de grosseur égale,…
-scytales		scytale	0
-scythe	Relatif aux Scythes, un peuple barbare des bords de la mer Noire.
-scythes		scythe	0
-scythique	Relatif aux Scythes.
-scythiques		scythique	0
+0scabieuse	Nom usuel des plantes du genre Scabiosa, de la famille des Caprifoliaceae (Caprifoliacées), comme la scabieuse du Caucase.
+9s		9	0
+7x	Relatif à la gale ou qui lui ressemble.
+5nal	Relatif à la fonction des scabins.
+8e		8	n
+9s		8	1
+7ux		7l	9
+4reuse		7x	n
+9s		7x	1
+7x	Qui est rude, raboteux.
+3ferlati	Tabac mis sous forme de lanières finement tranchées, et destiné à la pipe et à la cigarette.
+as		a	0
+3laire	Poisson au corps aplati, aux grandes nageoires, fréquent dans les aquariums.
+8s		8	0
+5nt	Qui est caractérisé par l’invariance d’échelle (comportement invariant quelle que soit l’échelle utilisée), en parlant d’une loi mathématique, éventuellement d…
+7e		7	n
+8s		7	1
+7s		7	9
+4de	Nom que les anciens Scandinaves donnaient à leurs poètes.
+5éen	Qui a rapport à l'Escaut.
+8ne		8	n
+as		8	1
+8s		8	9
+5es		6	0
+5ien	Qui a rapport à la région de l’Escaut.
+8ne		8	n
+as		8	1
+8s		8	9
+6que	Relatif aux scaldes et à leur poésie.
+9s		9	0
+4ène	Se dit d’un triangle dont les trois côtés sont de longueurs différentes.
+7s		7	7p
+4p	Cuir chevelu, chevelure détachée du crâne avec la peau.
+5a	Pascal : billet de cinq-cents francs français, sur lequel apparaissait le portrait de Blaise Pascal.
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	11
+7s		5er	10
+5el	Sorte de couteau pointu, à lame fixe, à un ou deux tranchants, dont on se sert pour disséquer.
+7s		7	0
+6nt		6r	15
+6r	Arracher la peau du crâne.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5ez		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5s		5	0
+3morza	Fromage d’Italie du Sud à pâte filée peu affiné et produit avec du lait entier pasteurisé.
+4pi	Variété de langoustines frites.
+6s		6	0
+3n	Scanner, examen radiologique.
+4da		5er	13
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+6le	Ce qui est occasion de tomber dans l’erreur, occasion de chute.
+8s		8	0
+8use		9x	n
+bment	D’une manière scandaleuse.
+bs		9x	1
+9x	Qui cause du scandale, qui est un mauvais exemple.
+7isa		9er	13
+ai		9er	1j
+bent		9er	38
+bs		9er	1g
+bt		9er	14
+9âmes		9er	3
+9ant		9er	17
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9e		ar	1s
+9ée	Féminin singulier de scandalisé.
+bs	Féminin pluriel de scandalisé.
+9ent		ar	15
+ar	Mettre en danger de chute, de péché.
+ba		b	18
+ci		b	g
+ds		b	i
+dt		b	1d
+cs		b	7
+9èrent		9er	1c
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és	Masculin pluriel de scandalisé.
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	1n
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	19
+7s		5er	1f
+5ent		6r	15
+6r	Décomposer un vers en ses éléments, en ses pieds formés de longues et de brèves, comme sont les vers latins et les vers grecs, pour juger s’il est selon les rè…
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5ez		6r	u
+5iez		5er	d
+6nave	Relatif à la Scandinavie, aux Scandinaves.
+as		a	0
+9isme	Caractère des peuples scandinaves et de leurs idiomes.
+ds		d	0
+6ons		5er	j
+6um	Élément chimique de numéro atomique 21 et de symbole Sc qui fait partie des métaux de transition et des terres rares.
+8s		8	0
+6x	Genre de plante dicotylédone de la famille des Apiacées.
+5ons		5er	r
+4na		5er	x
+6ge	Contrôle effectué avec des moyens d’imagerie tels les rayons X.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é		5er	1k
+6e		5er	19
+7s		5er	10
+5ent		6r	15
+6r	Analyser automatiquement un document, un objet, ou un environnement pour le transformer en fichier numérique.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+5érisa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action de scannériser.
+es		e	0
+9é		9er	1a
+ae		9er	11
+bs		9er	10
+9ent		ar	v
+ar	Numériser grâce à un scanneur.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+5erons		7	a
+9t		7	1i
+7s		7	0
+5és		5er	1h
+5eur	Numériseur à balayage pouvant inclure un traitement de l’information numérisée.
+8s		8	0
+6z		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	1n
+4ographie	Technique de capture d'image d'objets en utilisant un scanner.
+cs		c	0
+bque	Relatif à la scanographie, produit par une technique de scanographie.
+es		e	0
+4s		4	0
+5ion	Action de scander.
+8s		8	0
+3phandre	Bouée, corset garni de liège, au moyen duquel on se soutient sur l'eau, sans savoir nager.
+as		a	0
+9ier	Plongeur qui utilise un scaphandre.
+aère	Plongeuse qui utilise un scaphandre.
+ds		d	0
+aers		c	0
+5ite	Ammonite fossile.
+8s		8	0
+5oïde	Évidé, creux (comme la carène du navire).
+9s		9	0
+6pode	Classe de mollusques.
+as		a	0
+4ula	Omoplate ; os large, mince et triangulaire, qui forme la partie postérieure de l’épaule et auquel s’articule l’os du bras.
+7ire	Relatif à l’épaule.
+as		a	0
+7lgie	Douleur de l'épaule, de l'omoplate.
+bs		b	0
+6ohuméral	En lien avec l’omoplate et l’humérus.
+ee		e	n
+dux		dl	9
+7mancie	Technique de divination par l’interprétation des omoplates et autres os plats.
+ds		d	0
+3rabée	Insectes coléoptères dont les ailes sont recouvertes par des élytres.
+8s		8	0
+7ides	Tribu dans la famille des palpicornes, ordre des coléoptères.
+4e	Poisson-perroquet.
+5s		5	0
+4ieuse		7x	n
+9s		7x	1
+7x	Se dit de toute partie qui est mince, sèche et demi-transparente.
+5fia		7er	x
+8ge	Labour superficiel.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7cateur	Qui scarifie.
+ds		d	0
+aion	Incision superficielle faite à la peau avec une lancette ou un bistouri pour permettre l’écoulement d’un peu de sang ou de sérosité.
+ds		d	0
+7é	Qui a été incisé en y pratiquant des petites entailles.
+8e		8	n
+9s		8	1
+7ent		8r	v
+8r	Inciser en pratiquant des petites entailles.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4latin	Écarlate
+9e	Maladie infectieuse dont un des principaux symptômes est une éruption cutanée d’aspect granité et rouge écarlate.
+as		a	0
+9s		9	9
+4ole	Variété de chicorée à larges feuilles, qui se mange ordinairement en salade et quelquefois cuite à l’étouffée.
+7s		7	0
+3t	Forme d’improvisation vocale où des onomatopées sont utilisées plutôt que des paroles.
+4o	Apocope de scatologique.
+5l	Dérivé méthylé de l’indole (3-méthylindole) qui tous deux se rencontrent dans les excréments de carnivores et proviennent de la dégradation des protéines.
+6e	Variante orthographique de scatol
+7s		7	0
+6ogie	Propos, écrits qui ont trait aux excréments.
+as		a	0
+9que	Relatif à la scatologie, aux excréments.
+cs		c	0
+6s		6	0
+5phage	Qui mange les excréments.
+as		a	0
+7ile	Qui est attiré par les excréments humains.
+as		a	0
+5s		5	0
+4s		4	0
+2eau	Cachet officiel où sont gravées en creux la figure, les armoiries, la devise d’un roi, d’un prince, d’un état, d’un corps, d’une communauté, d’un seigneur, etc.
+5x		5	0
+2élérat	Qui a commis ou qui est capable de commettre de grands crimes.
+8e	Celle qui manifeste des intentions ou des sentiments criminels et perfides.
+9s		9	0
+ase	Manière d’être, d’agir de celui qui est scélérat.
+cs		c	0
+8s		8	9
+2ella		5er	13
+6ge	Action de sceller un produit.
+8s		8	0
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant	Produit de jointoiement, en particulier produit à base de silicone pour les sanitaires.
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Deux cachets de cire reliés par un ruban que l’on appose à des serrures, à des armoires, etc., par autorité de justice, pour empêcher de les ouvrir.
+6e		6	n
+7s		6	1
+5ement	Action de sceller ou résultat de cette action.
+as		a	0
+6nt		6r	15
+6r	Marquer d’un sceau.
+7a		7	18
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	1d
+8s		7	7
+5èrent		5er	1c
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	1i
+5és		6	9
+5ez		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	1n
+2énar	Scénario.
+6ii		7o	0
+7mage	Ensemble des dessins représentant, avant le tournage, le film dans sa totalité.
+bs		b	0
+7o	Description détaillée des différentes scènes d’un film, d’une bande dessinée.
+8s		8	45
+7sa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Réflexion établie sur la base de scénarios.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Mettre sous forme de scénario.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+8te	Auteur ou autrice de scénarios.
+as		a	0
+9ique	Relatif au scénario.
+ds		d	0
+6s		6	0
+2ène	Partie du théâtre où les acteurs jouent devant le public.
+5s		5	0
+2énique	Relatif à la scène, au théâtre.
+8ment	Au point de vue de la scène.
+8s		8	0
+4ographe	Celui, celle qui pratique la scénographie.
+bs		b	0
+aie	Art d’organiser l’espace.
+cr	Mettre au point une scénographie.
+bés		ber	12
+bque	Relatif à la scénographie.
+es		e	0
+5logie	Étude de la scène théâtrale ou cinématographique.
+as		a	0
+5pégie	Fête des tabernacles, commémorée par les juifs.
+as		a	0
+2epticisme	Doctrine, sentiment des philosophes dont le dogme principal est de douter, de n’affirmer rien, de tenir leur jugement en suspens sur chaque chose.
+bs		b	0
+6que	Qualifie les philosophes qui disent qu’il n’y a rien de certain.
+9ment	D’une manière sceptique.
+9s		9	0
+5re	Bâton de commandement, qui est une des marques de la royauté.
+7s		7	0
+2habraque	Variante orthographique de chabraque.
+as		a	0
+4da		5er	13
+6i		5er	1j
+7ent		5er	23
+7s		5er	2e
+7t		5er	1z
+5âmes		5er	1w
+5ant		5er	17
+6s		5er	2b
+7se		5er	29
+9nt		5er	26
+9s		5er	2f
+8iez		5er	2g
+9ons		5er	2i
+5ât		5er	1q
+7es		5er	2c
+5e		6r	20
+6nt		6r	1x
+6r	Aller vite.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	1l
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	22
+8ons		7	2a
+7ons		7	1p
+9t		7	1i
+6s		6r	35
+6z		6r	1y
+5iez		5er	2s
+6ons		5er	2m
+5ons		5er	21
+4erbeekois	Relatif à Schaerbeek en Belgique.
+0Schaerbeekoise	Habitante de Schaerbeek en Belgique.
+es		e	0
+0schaffhousois	Relatif à Schaffhouse-près-Seltz, commune française située dans le département du Bas-Rhin.
+de		d	n
+es		d	1
+4h	Variante de chah.
+5s		5	0
+4ko	Variante de shako.
+6s	Variante de shako.
+4ppe	Dénomination collective de l'ensemble des déchets de soie.
+7s		7	0
+5ska	Casque au dessus carré des lanciers polonais.
+8s		8	0
+3eida		6er	x
+7ge	Opération de triage manuel du minerai.
+9s		9	0
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Trier du minerai, pour obtenir une meilleure qualité.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+5k	Variante orthographique de cheik.
+6h	Variante orthographique de cheik.
+7s		7	0
+6s		6	0
+4lem	Variante de chelem.
+7s		7	0
+5ingua		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+9ent		ar	v
+ar	Autre orthographe, moins courante, de schlinguer.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+as		ar	1u
+az		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+5ling	Variante de shilling.
+9s		9	0
+3éma	Tracé figurant d’une façon simplifiée la disposition d’un bâtiment, d’un appareil, d’un organe, etc.
+6s		6	0
+6tique	Relatif à un schéma.
+bment	D’une manière schématique.
+bs		b	0
+8sa		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9ation	Action de schématiser, présentation schématique.
+es		e	0
+9é		9er	1k
+ae		9er	19
+bs		9er	10
+9ent		ar	v
+ar	Dans le kantisme, considérer les objets comme des abstractions, des schèmes.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+9me	Tendance à la représentation générale ou fondamentale dans ce dont on rend compte sans rentrer dans les particularismes.
+bs		b	0
+9ons		9er	r
+3ème	→ voir schéma.
+6s		6	0
+3éol	Variante orthographique de shéol.
+6s		6	0
+3erzando	Mot italien qui signifie en badinant, et que l’on met sur les partitions, pour indiquer qu’un passage doit être exécuté d’une manière badine et légère.
+6i		6o	0
+6o	Morceau de musique similaire à un menuet mais de caractère vif et brillant, indépendant ou intégré comme deuxième ou troisième mouvement d’une symphonie ou d’u…
+7s		7	3a
+3ibboleth	Variante de shibboleth.
+bs		b	0
+4edam	Eau-de-vie de grain parfumée au baies de genièvre, équivalent local du gin.
+8s		8	0
+4lling	Monnaie de l'Autriche avant l'euro, et de divers autres pays.
+9s		9	0
+4nda		6er	13
+7i		6er	1j
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	1w
+6ant		6er	17
+7s		6er	2b
+8se		6er	29
+ant		6er	26
+as		6er	2f
+9iez		6er	2g
+aons		6er	2i
+6ât		6er	1q
+8es		6er	2c
+6é		6er	1k
+6ent		7r	15
+7r	Tricher.
+8a		8	18
+9i		8	1e
+aent		8	1r
+as		8	1o
+at		8	1d
+9s		8	1l
+6èrent		6er	1c
+6erez		8	1m
+8iez		8	22
+9ons		8	2a
+8ons		8	1p
+at		8	1i
+7s		7r	25
+7z		7r	1b
+6iez		6er	1v
+7ons		6er	1t
+6ons		6er	1n
+4pperke	Race de petit chien de berger lupoïde d’origine belge, à robe noire, le plus petit chien de berger.
+as		a	0
+4smatique	Qui fait schisme, qui est dans le schisme, qui se sépare de la communion d’une religion.
+cs		c	0
+6e	Division au sein d’une Église donnant naissance à une nouvelle Église.
+7s		7	0
+5te	Roche sédimentaire ou métamorphique (cristallophyllienne) à structure feuilletée et pouvant se diviser (se cliver) facilement en lames ou feuilles.
+7s		7	0
+7use		8x	n
+as		8x	1
+8x	Qui est de la nature du schiste.
+6oïde	Qui a l'aspect d'un schiste.
+as		a	0
+7sité	État des roches qui se clivent facilement en feuillets plus ou moins épais en plans parallèles et régulièrement espacés.
+bs		b	0
+8ome	Se dit des monstres qui présentent une éventration latérale ou médiane sur toute la longueur de l’abdomen et qui n’ont pas de membres pelviens ou n’en ont que …
+bs		b	0
+aiase	Parasitose causée par des schistosomes.
+es		e	0
+4zo	Schizophrène ou personne semblant l’être.
+6gamie	Schizogenèse, reproduction asexuée, qui produit des êtres sexués.
+bs		b	0
+7enèse	Reproduction asexuée par fission.
+cs		c	0
+7onie	Formation de schizozoïtes (ou mérozoïtes) dans des cellules cibles.
+bs		b	0
+6ïde	Se dit des individus repliés, inhibés, fuyant le contact d’autrui et se réfugiant dans un autisme plus ou moins complet et énigmatique.
+9s		9	0
+8ie	Structure caractérielle, aux limites du pathologique, caractérisée par la tendance à l’isolement, à la rêverie, à l’intériorisation des affects, à l’abstractio…
+as		a	0
+6phasie	État schizophrénique où le trouble du langage est un élément précurseur.
+cs		c	0
+8rène	Personne atteinte de schizophrénie.
+cs		c	0
+9énie	Pathologie psychiatrique, psychose d’évolution chronique, qui a pour conséquences une altération de la perception de la réalité, des troubles cognitifs, et un …
+ds		d	0
+cque	Qui appartient, qui a rapport à la schizophrénie.
+6s		6	0
+7e	Ensemble des troubles mentaux que présente une personne schizophrène ou schizoïde.
+8s		8	0
+6thyme	Relatif à la schizothymie.
+bs		b	0
+aie	Caractère pathologique lié au repli sur soi, selon Ernst Kretschmer.
+cs		c	0
+3lague	Peine disciplinaire usitée autrefois dans les armées allemandes et autrichiennes et qui consistait en des coups de baguette que l’on donnait à l’homme puni.
+8s		8	0
+5mm	Résidu du lavage du charbon au faible pouvoir calorifique, très cendreux, argileux et humide.
+7s		7	0
+5ss	Qui est dans un état d’ébriété avancé.
+7e		7	n
+8s		7	1
+4ich	Minerai écrasé, lavé et préparé pour la fusion dans un fourneau.
+7s		7	0
+5ngua		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e		9r	1s
+9nt		9r	v
+9r	Sentir mauvais, puer.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9r	25
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5tta		7er	x
+8ge	Transport au moyen de la schlitte.
+as		a	0
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Sorte de traîneau circulant sur des rails en bois, qui servait, dans les Vosges, à transporter les bois abattus.
+7ée		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Transporter en utilisant une schlitte.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7eur	Celui qui transporte les bois abattus au moyen de la schlitte.
+as		a	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+3milblick	Appareil invraisemblable ne servant à rien du tout.
+bs		b	0
+4outz	Bisou.
+3naps	Eau-de-vie.
+5uzer	Une des races de chiens originaires du sud de l’Allemagne, à poils durs et secs, avec moustaches et sourcils développés, utilisées comme chien de garde et de d…
+9s		9	0
+4eck	Pain aux raisins.
+7s		7	0
+5uqua		8er	13
+9i		8er	1j
+aent		8er	23
+as		8er	2e
+at		8er	1z
+8âmes		8er	1w
+8ant		8er	17
+9s		8er	2b
+ase		8er	29
+cnt		8er	26
+cs		8er	2f
+biez		8er	2g
+cons		8er	2i
+8ât		8er	1q
+aes		8er	2c
+8é		8er	1k
+8ent		9r	1x
+9r	Fouiner, farfouiller.
+aa		a	18
+bi		a	1e
+cent		a	1r
+cs		a	1o
+ct		a	1d
+bs		a	1l
+8èrent		8er	1c
+8erez		a	1m
+aiez		a	22
+bons		a	2a
+aons		a	1p
+ct		a	1i
+8és		8er	1h
+8ez		9r	1y
+8iez		8er	2s
+9ons		8er	2m
+8ons		8er	21
+4ick	Alcool blanc, de grain ou de pomme de terre, en général de mauvaise qualité.
+7s		7	0
+4ock	Imbécile, con.
+7s		7	0
+5que	Variante orthographique de schnock.
+8s		8	0
+5rchel	Tube périscopique permettant à un sous-marin d’alimenter ses moteurs diesel en air sans avoir à émerger.
+as		a	0
+6kel	Variante orthographique de schnorchel.
+9s		9	0
+5uf	Variante orthographique de schnouff.
+7f	Drogue dure, héroïne ou cocaïne, principalement.
+8s		8	0
+3ofar	Instrument de musique à vent en usage dans le rituel israélite depuis l’Antiquité, fabriqué principalement au moyen d’une corne de bélier.
+7s		7	0
+4liaste	Variante orthographique de scoliaste.
+as		a	0
+6e	Variante de scolie.
+7s		7	0
+4oner	Deux-mâts, gréé comme une goélette.
+8s		8	0
+4rre	Partie haute de l’estran, qui n’est recouverte que lors des hautes marées.
+7s		7	0
+3proum	Tapage, petit scandale.
+3ubertien	Relatif à la musique de Franz Schubert.
+bne		b	n
+ds		b	1
+bs		b	9
+4po	Policier allemand.
+6s		6	0
+4ss	Descente rapide à ski, en trace directe, dans le sens de la pente.
+3wa	Voyelle neutre, de son /ə/ en API, intercalée sans signification phonologique et parfois de manière facultative entre deux consonnes.
+5s		5	0
+2ia		3er	13
+4ble	Que l’on peut scier.
+7s		7	0
+4ge	Action, travail de celui qui scie du bois ou de la pierre.
+6s		6	0
+4i		3er	m
+5ent		3er	16
+5s		3er	1g
+5t		3er	14
+4lytique	Qui éclaire partout, sans ombre.
+bs		b	0
+3âmes		3er	3
+3ant	Qui scie, qui ennuie.
+6e		6	n
+7s		6	1
+6s		6	0
+4phile	Qui se plaît à l’ombre.
+9s		9	0
+4s		3er	c
+5se	Cordage garni d'estrope pour élonger les fils de caret.
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+3atalgie	Sciatique.
+as		a	0
+3âtes		3er	2
+3atique	Qui a rapport à la hanche, à l’os ischion.
+9s		9	0
+3e	Outil, instrument ou machine possédant une lame dentée (rectiligne ou circulaire) et dont on se sert pour scier.
+3ée		3er	19
+5s		3er	1f
+3emment	Avec pleine connaissance de ce que l’on fait.
+4nce	Connaissance, savoir.
+7s		7	0
+3ène	Poisson perciforme de la famille des sciénidés proche des perches.
+6s		6	0
+3énidé	Famille taxinomique de poissons perciformes.
+8s		8	0
+3ent		4r	15
+6ificité	Caractère, qualité scientifique de pratiques et de théories.
+ds		d	0
+9que	Qui concerne les sciences.
+cs		c	0
+7sme	Doctrine selon laquelle la connaissance scientifique permettrait d'échapper à l'ignorance et l'obscurantisme, foi dans l'application des principes de la scienc…
+as		a	0
+8te	Relatif au scientisme.
+as		a	0
+6ologie	Mouvement religieux et sectaire fondé aux États-Unis en 1954 par L.
+aue	Relatif à la scientologie.
+cs		c	0
+4r	Couper, fendre avec une scie.
+5a		5	18
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	1d
+6s		5	7
+3èrent		3er	1c
+3erez		5	5
+5ie	Usine où des scies, mises en mouvement par quelque agent naturel ou mécanique, scient en long la pierre, le bois, le marbre, etc.
+7s		7	0
+7z		5	4
+6ons		5	b
+5ons		5	a
+7t		5	1i
+3és		3er	1h
+3eur	Celui dont le métier est de scier.
+6s		6	9
+5se	Appareil pour scier.
+7s		7	0
+4z		4r	3n
+3iez		3er	d
+4ons		3er	j
+3lle	Plante bulbeuse du genre Drimia dont l’espèce la plus connue, la scille maritime, a un bulbe épais et était employé comme diurétique et tonicardiaque.
+6s		6	0
+3ncidé	Famille taxinomique des lézards.
+8s		8	0
+4da		5er	x
+6i		5er	m
+7ent		5er	16
+7s		5er	t
+7t		5er	14
+5âmes		5er	3
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Qualifie un polynôme qui peut s'écrire comme un produit de polynômes de degré 1.
+6e		5er	19
+7s		5er	10
+5ent		6r	v
+6r	Couper ; diviser.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	1l
+5èrent		5er	1c
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és		5er	1h
+5ez		6r	1b
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+4que	Lézard de la famille des scincidés qui compte des centaines d’espèces et dont la structuration phylogénétique semble très complexe.
+7s		7	0
+4tigraphe	Appareil d’imagerie médicale qui procède par l’administration, dans l’organisme, d’isotopes radioactifs dont le rayonnement est capté par les organes à examine…
+cs		c	0
+bie	Imagerie médicale qui procède par l’administration, dans l’organisme, d’isotopes radioactifs dont le rayonnement est capté par les organes à examiner.
+ds		d	0
+cque	Relatif à la scintigraphie.
+6lla		8er	13
+9i		8er	m
+aent		8er	16
+as		8er	t
+at		8er	14
+8âmes		8er	3
+8ant	Qui scintille.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ateur	Matériau émettant de la lumière suite à l’absorption d’un rayonnement ionisant (photon ou particule chargée).
+ds		d	0
+aion	Vif mouvement d’agitation qu’on observe dans la lumière des étoiles, surtout lorsque l’atmosphère n’est pas tranquille.
+ds		d	0
+8é		8er	1k
+8ement	Action de scintiller.
+ds		d	0
+9nt		9r	15
+9r	Briller, jeter des éclats par intermittence.
+aa		a	l
+bi		a	g
+cent		a	1r
+cs		a	1o
+ct		a	q
+bs		a	7
+8èrent		8er	1c
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	1i
+9s		9r	25
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8omètre	Instrument propre à mesurer le scintillement.
+es		e	0
+9ns		8er	1n
+3ographie	Coupe d’un édifice pour en faire voir les dedans, la disposition intérieure, l’épaisseur des murs, les portes, les passages.
+bs		b	0
+4n	Petit brin, petit rejeton tendre et très flexible d’un arbre, d’un arbrisseau.
+5s		5	0
+4tte	Scie avec une lame mince attachée à un arc, généralement de métal, mais traditionnellement de bois.
+7r	Trancher avec une sciotte.
+6és		6er	12
+3rpe	Plante monocotylédone, affectionnant les lieux humides, de la famille des cypéracées.
+6s		6	0
+3ssile	Qui peut être scindé.
+8s		8	0
+6on	Séparation, division dans une assemblée politique, dans un parti, etc.
+8na		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	y
+9âmes		9er	3
+9ant		9er	z
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9é		9er	1a
+9ent		ar	v
+ar	Diviser en deux, provoquer la scission de.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+9és		9er	12
+9ez		ar	u
+9iez		9er	d
+aons		9er	j
+aste	Relatif à la scission.
+ds		d	0
+9ons		9er	r
+8s		8	0
+6pare	Qui concerne la scissiparité.
+as		a	0
+9ité	Multiplication par division de certains êtres.
+cs		c	0
+5omètre	Instrument utilisé en mécanique des sols pour mesurer la cohésion de certains sols fins.
+bs		b	0
+5ure	Sillon ou fente naturelle qu’on observe sur les os et sur divers organes.
+8s		8	0
+3ure	Parcelles qui tombent du bois ou de toute autre matière dure que l’on scie.
+6s		6	0
+5idé	Famille taxinomique de l'ordre des rongeurs et du sous-ordre des sciuromorphes qui regroupe les écureuils.
+8s		8	0
+2léral	Qui se rapporte à la sclérotique.
+7e		7	n
+8s		7	1
+6nthe	Plante herbacée annuelle à tiges raides et divisées, aux feuilles opposées, connées à la base, subulées, aux fleurs fasciculées, vertes, apétales au calice à t…
+as		a	0
+6ux		6l	9
+3ère	Membrane blanche et opaque, résistante, de nature conjonctive, qui forme le blanc de l’œil.
+3érenchyme	Tissu de soutien rigide des plantes, constitué de cellules mortes à paroi lignifiée de type fibres scléreuses ou scléréides, et qui confère la rigidité et la s…
+cs		c	0
+3ères		6	0
+3éreuse		7x	n
+9s		7x	1
+7x	Se dit d’un tissu devenu épais et dur par suite d’un développement pathologique d’éléments conjonctifs fibreux.
+5oderme	Genre de champignons de la famille des Sclérodermacées dont la cuticule est recouverte d’écailles.
+bs		b	0
+aie	Pathologie caractérisée par une surproduction de collagène au niveau de la peau et des organes internes.
+cs		c	0
+6mètre	Instrument propre à fournir une sorte de mesure de la force qu’on emploie pour vaincre la dureté d’un minéral, c’est-à-dire pour le rayer à l’aide d’une pointe.
+bs		b	0
+6phylle	Qui a les feuilles coriaces à cuticule épaisse.
+cs		c	0
+7rotéine	Classe de protéine animale fibreuse insoluble dans l’eau.
+es		e	0
+6sa		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant	Qui sclérose.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é	Qui est atteint de sclérose.
+8e		8	n
+9s		7er	10
+7ent		8r	v
+8r	Créer une sorte d’endurcissement morbide des tissus.
+9a		9	l
+ai		9	1e
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		8	9
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+6te	Organe de réserve permettant la conservation hivernale de certains champignons, dur car formé de mycélium très compact.
+8s		8	0
+7hérapie	Traitement de l’insuffisance veineuse par sclérose.
+es		e	0
+7ique	Qui fait preuve de dureté, sclérifié.
+bs		b	0
+2olaire	Qui se rapporte à l’école, que ce soit à l'enseignement qui y est prodigué, aux bâtiments qu'elle occupe ou aux personnes qui la fréquentent, notamment les élè…
+8ment	D’une manière scolaire.
+8s		8	0
+5risa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Action de scolariser.
+ds		d	0
+8é	Qui va à l’école.
+9e		9	n
+as		9	1
+8ent		9r	v
+9r	Faire fréquenter l’école à (un enfant).
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		9	9
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+7té	Durée des études prescrites aux écoliers, aux collégiens, aux lycéens, aux étudiants des universités, pour qu’ils puissent se présenter à tel examen ou à tel c…
+9s		9	0
+5sticat	Séminaire, cursus religieux avant les études de théologie.
+bs		b	0
+8que	Qui appartient à l’école.
+bs		b	0
+4ex	Extrémité antérieure des cestodes (vers cestoïdes) munie de crochets ou de ventouses.
+4iaste	Celui qui a fait des scolies sur les anciens auteurs classiques.
+9s		9	0
+5e	Note explicative.
+6s		6	0
+5ose	Déviation latérale de la colonne vertébrale.
+8s		8	0
+6tique	Qui se rapporte à la scoliose.
+bs		b	0
+4opacidé	Tout oiseau de la famille des scolopacidés, grand groupe d'échassiers terrestres ou aquatiques de l'ordre des charadriiformes, réunissant plusieurs types de li…
+bs	Grande famille d'oiseaux néognathes limicoles terrestres ou aquatiques de l'ordre des charadriiformes, composée d'environ 90 espèces existantes réparties en 21…
+6endre	Nom vulgaire de Asplenium scolopendrium une fougère à longues feuilles, qui croît dans les régions humides et ombreuses.
+bs		b	0
+4yme	Genre de plantes de la famille des composées, dont les feuilles sont armées de fortes épines.
+7s		7	0
+5te	Sous-famille d’insectes coléoptères xylophages creusant sous l’écorce des arbres des systèmes de galeries maternelles et larvaires souvent caractéristiques de …
+7s		7	0
+3mbridé	Poisson de la famille des scombridés (scombridae), comme le thon.
+9s	Famille de poissons osseux perciformes marins de haute mer qui ont un corps fuselé, deux nageoires dorsales et une séries de petites fausses nageoires derrière…
+3ne	Petit pain britannique généralement rond légèrement salé ou sucré pouvant contenir des raisins, du fromage et consommé avec le thé.
+5s		5	0
+4se	Nom commercial de la fourrure de la mouffette.
+6s		6	0
+3op	Exclusivité ou primeur d'une information.
+5s		5	0
+4t	Variante familière de scooter (motocycle).
+5er	Petite motocyclette caractérisée par de petites roues, un plancher plat et un carénage.
+5ériste	Conducteur de scooter.
+bs		b	0
+5ers		7	0
+5s		5	0
+3pa	Jeu de cartes italien consistant à ramasser des cartes en fonction de leurs valeurs.
+5s		4er	2b
+4e	Ensemble des choses qui sont dans la définition du rôle de quelqu’un ou de quelque chose.
+5r	Relier un patient à un ordinateur.
+5s		5	0
+4ie	Radioscopie.
+6s		6	0
+5tone	Jukebox des années 60, associant l’image à la musique.
+9s		9	0
+4olamine	Alcaloïde tropanique de plusieurs Solanacées (notamment le datura et le brugmansia), à action anticholinergique (parasympatholytique) et à effet sédatif.
+bs		b	0
+3ra		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4but	Maladie générale caractérisée par des hémorragies, des troubles gastro-intestinaux, des gencives attaquées, l’affaiblissement progressif puis la consomption, e…
+7ique	Qui a rapport au scorbut, qui tient de la nature du scorbut.
+bs		b	0
+7s		7	0
+4e	Nombre de points qu’un joueur, une équipe a marqué.
+5nt		5r	v
+5r	Marquer un but au hockey, au foot, etc.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5ur	Sportif qui marque un point.
+7s		7	0
+6se	Sportive qui marque un point.
+8s		8	0
+5z		5r	u
+4iacé	Qui contient des scories, en parlant des volcans ou de leurs éruptions.
+8e		8	n
+9s		8	1
+8s		8	9
+5e	Substance terreuse ou pierreuse vitrifiée, qui monte comme une écume à la surface des métaux en fusion.
+6s		6	0
+6z		4er	d
+5fia		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e		7er	11
+9s		7er	10
+7ent		8r	v
+8r	Réduire en scories certaines matières étrangères au métal en fusion.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	12
+7ez		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+5ons		4er	j
+4ons		4er	r
+4pène	Genre de poissons dont la rascasse est le type.
+8s		8	0
+5ioïde	En forme de queue de scorpion.
+as		a	0
+7n	Arthropode de la classe des Arachnides, dont la queue est armée d’un dard relié à une glande à venin.
+8ides	Définition manquante ou à compléter.
+8s		8	0
+4sonère	Genre de composées, dont l’espèce la plus connue, à racine noire en dessus et blanche en dedans, se mange cuite, comme le salsifis.
+as		a	0
+3tch	Whisky écossais.
+6a		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	1g
+8t		6er	y
+6âmes		6er	3
+6ant	Qui provoque un grand intérêt, qui attache.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e		7r	1s
+6ée		6er	19
+8s		6er	1f
+6ent		7r	v
+7r	Coller avec du ruban adhésif.
+8a		8	18
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	1h
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	1n
+6s		6	0
+4ie	Moulure concave dont la partie inférieure est plus saillante que la partie supérieure et qui, le plus souvent, fait partie de la base de la colonne.
+6s		6	0
+5sme	Doctrine scolastique de John Duns Scot et de ses adeptes.
+8s	Pluriel de scotisme.
+6te	Relatif à la pensée de Jean Duns Scot.
+8s		8	0
+4ome	Tache plus ou moins étendue, de forme arrondie et d'une teinte sombre, gris foncé ou noire, perçue par l'œil affecté.
+7s		7	0
+6isa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	17
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Mécanisme de défense psychique par oubli de faits vécus mais intolérables au sujet.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Rejeter inconsciemment de sa conscience une réalité pénible.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+5pique	Qui se rapporte à la vision nocturne ou à l'obscurité, à laquelle participent les cellules photoréceptrices à bâtonnets.
+as		a	0
+4tish	Schottisch.
+8s		8	0
+3ubidou	Objet ludique fait de fils de plastique creux tressés de même couleur ou de couleurs différentes, prenant la forme d’un boudin à section carrée et terminé par …
+9s		9	0
+4moune	Malchance durable.
+9s		9	0
+4red	Laine destinée au négoce, lavée à l’eau tiède après sa tonte afin d’en alléger le volume et le poids pour son transport.
+7s		7	0
+4t	Personne qui pratique le scoutisme.
+5e	Jeune femme qui pratique le scoutisme.
+6r	Regarder (des sportifs) en action pour essayer de détecter de nouveaux talents.
+5és		5er	12
+5isme	Mouvement de jeunesse créé au début du XXᵉ siècle par Lord Robert Baden-Powell, basé sur quelques principes dont la loi scoute, la promesse, l’uniforme.
+9s		9	0
+5s		5	9
+2rabbla		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e	Au jeu de Scrabble, coup où un joueur réussit à placer un mot qui utilise les sept lettres de son jeu.
+8nt		8r	v
+8r	Réussir un scrabble, un coup où l’on place toutes les lettres.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8	0
+9que	Qui concerne le jeu de Scrabble sous forme de compétition.
+cs		c	0
+8ur	Joueur de Scrabble.
+as		a	0
+9se	Joueuse de Scrabble.
+bs		b	0
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+4masaxe	Genre d’épée franque (voire germanique) à un tranchant, dont l’autre coté de la lame n’était affuté que sur le dernier tiers, et dont les plus petits étaient v…
+as		a	0
+4pbook	Album de photos ou coupures de presse.
+9ing	Forme de loisir créatif consistant à introduire des photographies dans un décor en rapport avec le thème abordé, dans le but de les mettre en valeur par une pr…
+9s		9	0
+5er	Briser ; abîmer.
+7s		7	0
+6ur	Variante orthographique de scraper (engin de terrassement pour travaux publics), niveleuse.
+8s		8	0
+5ie	Synonyme de tremblante du mouton.
+7s		7	0
+4tch	Système de classement mixte dans le cyclisme, la course à pied et les sports combinés (triathlon, duathlon...).
+7a		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+8e	Féminin singulier de scratché.
+7ent		8r	v
+8r	Produire des sons à partir d'une platine de disques en perturbant la rotation des disques.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7s		7	0
+3iban	Surmeuble qui présente un pan légèrement incliné pour mieux écrire.
+7ne	Scribain.
+9s		9	0
+7s		7	0
+5e	Copiste, homme employé à faire des écritures.
+6s		6	0
+5ouilla		aer	x
+bge	Action ou résultat de scribouiller.
+ds		d	0
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	y
+aâmes		aer	3
+aant		aer	z
+brd	Préposé aux écritures, notamment dans l’armée.
+de	Préposée aux écritures, notamment dans l’armée.
+es		e	0
+ds		d	0
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+ae		br	1s
+aée		aer	11
+cs		aer	10
+aent		br	v
+br	Écrire dans un mauvais style.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+aés		aer	12
+aeur	Préposé aux écritures, employé de bureau, écrivain sans talent.
+ds		d	0
+cse	Préposée aux écritures, employée de bureau, écrivaine sans talent.
+es		e	0
+bz		br	u
+aiez		aer	d
+bons		aer	j
+aons		aer	r
+4pophile	Collectionneur de titres anciens (actions, obligations, bons de jouissance, parts bénéficiaires, parts sociales, etc.) qui n’ont plus cours.
+bs		b	0
+aie	Collection des anciens titres de bourse et des actions.
+cs		c	0
+5t	Se dit de l’écriture manuscrite où les lettres ne sont pas liées les unes aux autres et dont le tracé correspond approximativement à celui des caractères typog…
+6e	Responsable de la continuité de la réalisation et de la tenue des documents auprès du réalisateur d’un film ou d’une émission.
+7s	Famille de caractères dans la classification proposée par Maximilien Vox en 1954 et comprenant toutes les lettres imitées de l'écriture cursive.
+7ur	Secrétaire apostolique chargé de l'écriture des bulles papales.
+9s		9	0
+6ophile	Collectionneur d'actions et de titres anciens.
+cs		c	0
+bie	Collection des anciens titres de bourse et des actions.
+ds		d	0
+7rium	Au Moyen Âge, atelier d’écriture et d’enluminure d’un monastère.
+bs		b	0
+6rice	Celle qui écrit, sans pour autant être écrivaine.
+as		a	0
+6s		6	0
+6uraire	Qui a rapport à l’Écriture sainte.
+cs		c	0
+9l	Relatif à l'écriture.
+ae		a	n
+bs		a	1
+9ux		9l	9
+3ofulaire	Genre de plantes herbacées bisannuelles ou vivaces de la famille des scrofulariacées, à tige carrée poussant dans les régions tempérées de l’hémisphère nord.
+bs		b	0
+8riacée	Famille de plante gamopétale apparentée à la scrofulaire.
+es		e	0
+7e	Lésion d’altérations de la peau et des muqueuses avec gonflement des ganglions lymphatiques du cou, susceptible de produire des tumeurs et des ulcères.
+8s		8	0
+8use		9x	n
+bs		9x	1
+9x	Qui a rapport à la scrofule, qui tient de la scrofule.
+4gneugneu	Juron qui exprime le déplaisir.
+cx		c	0
+4lla		6er	x
+7i		6er	m
+8ent		6er	w
+8s		6er	t
+8t		6er	y
+6âmes		6er	3
+6ant		6er	z
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6é		6er	1a
+7e		6er	11
+8s		6er	10
+6ent		7r	v
+7r	Faire défiler verticalement le contenu d’un document sur un écran d’ordinateur à l’aide de la molette d’une souris, d’un pavé tactile (touchpad, trackpad), mai…
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	q
+9s		8	7
+6èrent		6er	o
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és		6er	12
+6ez		7r	u
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4tal	Qui est relatif au scrotum.
+7e		7	n
+8s		7	1
+6ux		6l	9
+5um	Enveloppe cutanée des deux testicules faisant partie des bourses testiculaires.
+7s		7	0
+3ub	Végétation de broussailles.
+5ber	Filtre permettant de traiter les fumées d’échappement, en particulier dans les navires.
+8s		8	0
+5s		5	0
+4pule	Doute ou hésitation que l'on éprouve à la peur de mal faire ou d'être importun.
+8s		8	0
+8use		9x	n
+bment	D’une manière scrupuleuse.
+bs		9x	1
+9x	Qui est sujet à avoir des scrupules.
+4ta		5er	3q
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	1w
+5ant		5er	17
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5ateur	Celui qui scrute.
+as		a	9
+7ion	Examen répété de l'état d'un ou plusieurs éléments d'un système pour y détecter un changement éventuel.
+as		a	0
+7rice	Celle qui scrute.
+bs		7eur	1
+5é		5er	1k
+6e		5er	19
+7s		5er	10
+5ent		6r	15
+6r	Sonder ou examiner profondément.
+7a		7	18
+8i		7	1e
+9ent		7	s
+9s		7	i
+9t		7	1d
+8s		7	7
+5èrent		5er	1c
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	1i
+5és		5er	1h
+5ez		6r	1b
+5iez		5er	d
+6n	Vote au moyen de bulletins ou de boules que l’on dépose dans une urne, d’où on les tire ensuite pour les compter.
+7s		7	0
+6ons		5er	1t
+5ons		5er	1n
+2ud	Synonyme de pannus.
+4s		4	0
+3ll	Embarcation de compétition où les rameurs tiennent un aviron dans chaque main.
+5s		5	0
+4pta		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	1g
+8t		6er	14
+6âmes		6er	3
+6ant	Qui est censé sculpter le corps et affiner la silhouette, en parlant de lingerie féminine.
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2c
+6e		7r	1s
+6ée		6er	19
+8s	Féminin pluriel de sculpté.
+6ent		7r	15
+7r	Façonner, avec le ciseau ou un autre outil, une figure en relief, en pierre, en marbre, en bois, etc.
+8a		8	18
+9i		8	1e
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	1l
+6èrent		6er	o
+6erez		8	1m
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+6és	Masculin pluriel de sculpté.
+6eur	Artiste qui sculpte la matière.
+9e	Femme qui sculpte.
+as		a	0
+9s		9	0
+8se	Femme qui sculpte.
+as		a	0
+7z		7r	1b
+6iez		6er	1v
+7ons		6er	j
+6ons		6er	r
+6rice	Artiste qui sculpte.
+as		a	0
+6ural	Qui appartient, qui a rapport à la sculpture.
+ae		a	n
+bs		a	1
+9ux		9l	9
+8e	Art de sculpter.
+9s		9	0
+3ta		4um	0
+4ellaire	Scutellaria, genre de plantes herbacées de la famille des Lamiacées.
+bs		b	0
+4iforme	Qui a la forme d’un écu.
+as		a	0
+4um	Bouclier du légionnaire romain, originellement de forme ovale et cintré.
+6s		6	0
+2yphozoaire	Nom scientifique des méduses.
+cs		c	0
+3tale	Encodage dont se servaient les Lacédémoniens pour écrire des lettres chiffrées, et qui consistait en ceci : on prenait deux rouleaux de bois de grosseur égale,…
+7s		7	0
+4he	Relatif aux Scythes, un peuple barbare des bords de la mer Noire.
+6s		6	0
+5ique	Relatif aux Scythes.
+9s		9	0

@@ -1,1139 +1,1139 @@
-glabelle	Éminence de l’os frontal située entre les deux arcades sourcilières.
-glabelles		glabelle	0
-glabre	Qui est sans poil, sans duvet.
-glabres		glabre	0
-glaça		glacer	39
-glaçage	Action de glacer, d’appliquer sur un objet un enduit qui lui donne l’apparence du vernis, par exemple d’appliquer un sirop à base de sucre glace sur un gâteau.
-glaçages		glaçage	0
-glaçai		glacer	22
-glaçaient		glacer	42
-glaçais		glacer	52
-glaçait		glacer	40
-glaçâmes		glacer	3
-glaçant	Qui glace.
-glaçante		glaçant	23
-glaçantes		glaçant	1
-glaçants		glaçant	9
-glaças		glacer	12
-glaçasse		glacer	6
-glaçassent		glacer	17
-glaçasses		glacer	8
-glaçassiez		glacer	14
-glaçassions		glacer	25
-glaçât		glacer	20
-glaçâtes		glacer	2
-glace	ou Eau à l’état solide.
-glacée		glacé	23
-glacées		glacé	1
-glacent		glacer	41
-glacer	Solidifier un liquide, en sorte qu’il passe à l’état de glace.
-glacera		glacer	44
-glacerai		glacer	16
-glaceraient		glacer	28
-glacerais		glacer	18
-glacerait		glacer	26
-glaceras		glacer	7
-glacèrent		glacer	48
-glacerez		glacer	5
-glacerie	Commerce de glaces alimentaires, de sorbets.
-glaceries		glacerie	0
-glaceriez		glacer	4
-glacerions		glacer	11
-glacerons		glacer	10
-glaceront		glacer	54
-glaces		glace	0
-glaceur	Ouvrier qui glace les indiennes ou autres étoffes.
-glaceurs		glaceur	0
-glaceuse	Machine, appareil à glacer le papier, en particulier le papier photographique.
-glaceuses		glaceuse	0
-glaceux	Qui a une glace ou tache qui en diminue le prix.
-glacez		glacer	47
-glaciaire	Qui appartient aux glaciers.
-glaciaires		glaciaire	0
-glaciairiste	Glaciologue.
-glaciairistes		glaciairiste	0
-glacial	Qui glace ; qui pénètre d’un froid vif.
-glaciale		glacial	23
-glacialement	D'une manière glaciale.
-glaciales		glacial	1
-glacials		glacial	9
-glaciation	Action de geler.
-glaciations		glaciation	0
-glaciaux		glacial	9
-glaciel	Relatif aux glaces flottantes (banquise, icebergs).
-glacielle		glaciel	23
-glacielles		glaciel	1
-glaciels		glaciel	9
-glacier	Celui qui prépare et vend des glaces, des sirops, des fruits glacés.
-glacière	Glacier.
-glacières		glacière	0
-glaciérisme	Forme d’alpinisme spécialisé dans l’ascension des glaciers.
-glaciériste	Glaciologue.
-glaciéristes		glaciériste	0
-glaciers		glacier	0
-glaciez		glacer	13
-glaciologie	Étude de la glace, des glaciers, de la banquise, des névés et des périodes de glaciation.
-glaciologies		glaciologie	0
-glaciologique	Relatif à la glaciologie.
-glaciologiques		glaciologique	0
-glaciologue	Spécialiste de la glaciologie.
-glaciologues		glaciologue	0
-glacions		glacer	19
-glacis	Talus, pente douce et unie.
-glaçon	Morceau de glace.
-glaçons		glaçon	0
-glaçure	Action de recouvrir les poteries d’un enduit qui au feu doit se vitrifier.
-glaçures		glaçure	0
-gladiateur	Combattant qui, dans les jeux du cirque de la Rome antique, participait volontairement ou de force à des joutes pour l’amusement des spectateurs, avec des arme…
-gladiateurs		gladiateur	0
-gladiatrice	Combattante qui, dans les jeux du cirque de la Rome antique, participait volontairement ou de force à des joutes pour l’amusement des spectateurs, avec des arm…
-gladiatrices		gladiatrice	0
-glageon	Espèce de marbre.
-glageons		glageon	0
-glagla	Se dit quand il fait très froid.
-glagolitique	Relatif au glagol, le plus ancien alphabet du slavon.
-glagolitiques		glagolitique	0
-glaïeul	Plante herbacée de la famille des iridacées dont les feuilles sont longues, étroites et pointues.
-glaïeuls		glaïeul	0
-glaira		glairer	33
-glairai		glairer	22
-glairaient		glairer	32
-glairais		glairer	29
-glairait		glairer	34
-glairâmes		glairer	3
-glairant		glairer	35
-glairas		glairer	12
-glairasse		glairer	6
-glairassent		glairer	17
-glairasses		glairer	8
-glairassiez		glairer	14
-glairassions		glairer	25
-glairât		glairer	20
-glairâtes		glairer	2
-glaire	Blanc d’œuf non cuit.
-glairée		glairer	37
-glairées		glairer	36
-glairent		glairer	31
-glairer	Frotter avec de la glairure.
-glairera		glairer	21
-glairerai		glairer	16
-glaireraient		glairer	28
-glairerais		glairer	18
-glairerait		glairer	26
-glaireras		glairer	7
-glairèrent		glairer	24
-glairerez		glairer	5
-glaireriez		glairer	4
-glairerions		glairer	11
-glairerons		glairer	10
-glaireront		glairer	15
-glaires		glaire	0
-glaireuse		glaireux	23
-glaireuses		glaireux	1
-glaireux	Qui est de la nature de la glaire.
-glairez		glairer	30
-glairiez		glairer	13
-glairions		glairer	19
-glairons		glairer	27
-glairure	Blanc d’œuf battu avec de l’alcool dont on frotte la reliure d’un livre avant de lui appliquer la dorure.
-glairures		glairure	0
-glaisa		glaiser	33
-glaisai		glaiser	22
-glaisaient		glaiser	32
-glaisais		glaiser	29
-glaisait		glaiser	34
-glaisâmes		glaiser	3
-glaisant		glaiser	35
-glaisas		glaiser	12
-glaisasse		glaiser	6
-glaisassent		glaiser	17
-glaisasses		glaiser	8
-glaisassiez		glaiser	14
-glaisassions		glaiser	25
-glaisât		glaiser	20
-glaisâtes		glaiser	2
-glaise	Argile grasse et compacte que l’eau ne pénètre pas et dont on se sert pour faire de la poterie, pour amender des terrains ou, en sculpture, pour modeler une éb…
-glaisée		glaiser	37
-glaisées		glaiser	36
-glaisent		glaiser	31
-glaiser	Enduire de terre glaise.
-glaisera		glaiser	21
-glaiserai		glaiser	16
-glaiseraient		glaiser	28
-glaiserais		glaiser	18
-glaiserait		glaiser	26
-glaiseras		glaiser	7
-glaisèrent		glaiser	24
-glaiserez		glaiser	5
-glaiseriez		glaiser	4
-glaiserions		glaiser	11
-glaiserons		glaiser	10
-glaiseront		glaiser	15
-glaises		glaise	0
-glaiseuse		glaiseux	23
-glaiseuses		glaiseux	1
-glaiseux	Qui est de la nature de la glaise.
-glaisez		glaiser	30
-glaisière	Endroit d’où l’on tire de la glaise.
-glaisières		glaisière	0
-glaisiez		glaiser	13
-glaisions		glaiser	19
-glaisons		glaiser	27
-glaive	Épée tranchante et courte que les Romains utilisaient.
-glaives		glaive	0
-glam	Variante de glamour.
-glamour	Charme envoûtant, séduction qu’une actrice de cinéma ou une jolie femme exerce par son attitude sensuelle et sa tenue vestimentaire suggestive.
-glamoureuse		glamoureux	23
-glamoureuses		glamoureux	1
-glamoureux	Relatif au glamour.
-glamourisa		glamouriser	39
-glamourisai		glamouriser	55
-glamourisaient		glamouriser	75
-glamourisais		glamouriser	86
-glamourisait		glamouriser	71
-glamourisâmes		glamouriser	68
-glamourisant		glamouriser	43
-glamourisas		glamouriser	83
-glamourisasse		glamouriser	81
-glamourisassent		glamouriser	78
-glamourisasses		glamouriser	87
-glamourisassiez		glamouriser	88
-glamourisât		glamouriser	62
-glamourisâtes		glamouriser	84
-glamourisé		glamouriser	56
-glamourisée		glamouriser	45
-glamourisées		glamouriser	51
-glamourisent		glamouriser	69
-glamouriser	Rendre glamour, sexy, attirant.
-glamourisera		glamouriser	44
-glamouriserai		glamouriser	50
-glamouriserais		glamouriser	60
-glamouriserait		glamouriser	49
-glamouriseras		glamouriser	57
-glamourisèrent		glamouriser	48
-glamouriserez		glamouriser	58
-glamouriseriez		glamouriser	74
-glamouriserions		glamouriser	82
-glamouriserons		glamouriser	61
-glamouriseront		glamouriser	54
-glamourisés		glamouriser	53
-glamourisez		glamouriser	70
-glamourisiez		glamouriser	100
-glamourisions		glamouriser	94
-glamourisons		glamouriser	73
-glamours		glamour	0
-glams		glam	0
-glana		glaner	39
-glanage	Activité de récupération consistant à ramasser de manière artisanale les produits agricoles restants après une moisson.
-glanages		glanage	0
-glanai		glaner	22
-glanaient		glaner	42
-glanais		glaner	52
-glanait		glaner	40
-glanâmes		glaner	3
-glanant		glaner	43
-glanas		glaner	12
-glanasse		glaner	6
-glanassent		glaner	17
-glanasses		glaner	8
-glanassiez		glaner	14
-glanassions		glaner	25
-glanât		glaner	20
-glanâtes		glaner	2
-gland	Fruit du chêne, akène logé dans une cupule.
-glanda		glander	33
-glandage	Action de glander, glande.
-glandages		glandage	0
-glandai		glander	22
-glandaient		glander	32
-glandais		glander	52
-glandait		glander	40
-glandâmes		glander	3
-glandant		glander	35
-glandas		glander	12
-glandasse		glander	6
-glandassent		glander	17
-glandasses		glander	8
-glandassiez		glander	14
-glandassions		glander	25
-glandât		glander	20
-glandâtes		glander	2
-glandé	Qui porte des glands.
-glandée	Récolte des glands.
-glandées	Féminin pluriel de glandé.
-glandent		glander	41
-glander	Manger des glands (en parlant des cochons), ramasser des glands.
-glandera		glander	21
-glanderai		glander	16
-glanderaient		glander	28
-glanderais		glander	18
-glanderait		glander	26
-glanderas		glander	7
-glandèrent		glander	24
-glanderez		glander	5
-glanderiez		glander	4
-glanderions		glander	11
-glanderons		glander	10
-glanderont		glander	15
-glandés	Masculin pluriel de glandé.
-glandeur	Qui aime à flemmarder, à rien faire ou pas grand chose.
-glandeurs		glandeur	9
-glandeuse	Fainéante, flemmarde, femme qui ne fait rien ou pas grand chose.
-glandeuses		glandeur	1
-glandez		glander	47
-glandiez		glander	67
-glandions		glander	19
-glandons		glander	59
-glandouilla		glandouiller	33
-glandouillai		glandouiller	22
-glandouillaient		glandouiller	32
-glandouillais		glandouiller	29
-glandouillait		glandouiller	40
-glandouillâmes		glandouiller	3
-glandouillant		glandouiller	43
-glandouillas		glandouiller	12
-glandouillasse		glandouiller	6
-glandouillasses		glandouiller	8
-glandouillât		glandouiller	20
-glandouillâtes		glandouiller	2
-glandouille	Fait de glandouiller.
-glandouillent		glandouiller	31
-glandouiller	Glander, ne rien faire.
-glandouillera		glandouiller	21
-glandouillerai		glandouiller	16
-glandouillerais		glandouiller	18
-glandouillerait		glandouiller	26
-glandouilleras		glandouiller	7
-glandouillèrent		glandouiller	24
-glandouillerez		glandouiller	5
-glandouilleriez		glandouiller	4
-glandouillerons		glandouiller	10
-glandouilleront		glandouiller	15
-glandouilles		glandouiller	66
-glandouillez		glandouiller	47
-glandouilliez		glandouiller	13
-glandouillions		glandouiller	19
-glandouillons		glandouiller	27
-glands		gland	0
-glandu	Niais, sot.
-glandue	Personne quelconque, sans importance, sans esprit.
-glandues		glandu	1
-glandulaire	Qui a l'aspect, la forme ou la texture d’une glande.
-glandulaires		glandulaire	0
-glandule	Petite glande.
-glandules		glandule	0
-glanduleuse		glanduleux	23
-glanduleuses		glanduleux	1
-glanduleux	Qui a la texture des glandes, des glandules.
-glandus		glandu	9
-glane	Poignée d’épis que l’on ramasse dans le champ après que la moisson en a été emportée, ou que les gerbes sont liées.
-glanée	Piège, dont l’appât est du blé, destiné à attraper des canards sauvages.
-glanées		glanée	0
-glanement	Synonyme de glanage.
-glanements		glanement	0
-glanent		glaner	41
-glaner	Ramasser des épis de blé après la moisson.
-glanera		glaner	21
-glanerai		glaner	16
-glaneraient		glaner	28
-glanerais		glaner	18
-glanerait		glaner	26
-glaneras		glaner	7
-glanèrent		glaner	24
-glanerez		glaner	5
-glaneriez		glaner	4
-glanerions		glaner	11
-glanerons		glaner	10
-glaneront		glaner	15
-glanes		glane	0
-glaneur	Celui qui glane.
-glaneurs		glaneur	0
-glaneuse	Celle qui glane.
-glaneuses		glaneuse	0
-glanez		glaner	47
-glaniez		glaner	13
-glanions		glaner	19
-glanons		glaner	27
-glanure	Ce que l’on a glané dans les champs après la moisson faite.
-glanures		glanure	0
-glapi		glapir	56
-glapie		glapir	37
-glapies		glapir	36
-glapîmes		glapir	3
-glapir	Pousser des cris aigus, en parlant des petits chiens et des renards.
-glapira		glapir	21
-glapirai		glapir	16
-glapiraient		glapir	28
-glapirais		glapir	18
-glapirait		glapir	26
-glapiras		glapir	7
-glapirent		glapir	48
-glapirez		glapir	5
-glapiriez		glapir	4
-glapirions		glapir	11
-glapirons		glapir	10
-glapiront		glapir	15
-glapis		glapir	38
-glapissaient		glapir	75
-glapissais		glapir	29
-glapissait		glapir	71
-glapissant	Qui glapit.
-glapissante	Féminin singulier de glapissant.
-glapissantes		glapissant	1
-glapissants		glapissant	9
-glapisse		glapir	89
-glapissement	Cri aigu que fait entendre un animal qui glapit, notamment le renard.
-glapissements		glapissement	0
-glapissent		glapir	69
-glapisses		glapir	76
-glapissez		glapir	30
-glapissiez		glapir	13
-glapissions		glapir	94
-glapissons		glapir	27
-glapit		glapir	80
-glapîtes		glapir	2
-glaréole	Genre d’oiseaux de la famille des glaréolidés, à pattes courtes, à ailes longues et pointues, et à longue queue pointue.
-glaréoles		glaréole	0
-glas	Sonnerie d’une cloche qui tinte, annonçant l’agonie ou la mort d’une personne.
-glasnost	Politique de liberté d’expression et de la publication d’informations, introduite par Mikhaïl Gorbatchev en Union soviétique en 1985.
-glass	Verre.
-glasse	Verre (récipient pour boire).
-glasses		glasse	0
-Glasvégien	Habitant ou originaire de Glasgow, en Écosse ^().
-Glasvégiens		Glasvégien	0
-Glaswégien	Habitant ou originaire de Glasgow, en Écosse.
-Glaswégiens		Glaswégien	0
-glati		glatir	46
-glatîmes		glatir	3
-glatir	Aboyer, pousser des aboiements répétés.
-glatira		glatir	21
-glatirai		glatir	16
-glatiraient		glatir	28
-glatirais		glatir	18
-glatirait		glatir	26
-glatiras		glatir	7
-glatirent		glatir	24
-glatirez		glatir	5
-glatiriez		glatir	4
-glatirions		glatir	11
-glatirons		glatir	10
-glatiront		glatir	15
-glatis		glatir	79
-glatissaient		glatir	32
-glatissais		glatir	29
-glatissait		glatir	34
-glatissant		glatir	35
-glatisse		glatir	89
-glatissent		glatir	31
-glatisses		glatir	76
-glatissez		glatir	30
-glatissiez		glatir	13
-glatissions		glatir	19
-glatissons		glatir	27
-glatit		glatir	107
-glatîtes		glatir	2
-glaucomateux	Affecté de glaucome.
-glaucome	Affection oculaire caractérisée par l’atrophie des membranes de l’œil et l’excavation du nerf optique, provoquant une diminution du champ visuel pouvant aller …
-glaucomes		glaucome	0
-glauconie	Association de minéraux argileux du groupe des smectites et de micas comme la glauconite.
-glauconies		glauconie	0
-glauconite	Variété de mica de couleur verte et de formule (K,Na)(Fe³⁺,Al,Mg)₂(Si,Al)₄O₁₀(OH)₂.
-glauconites		glauconite	0
-glaucophane	Espèce minérale du groupe des silicates sous groupe des inosilicates de la famille des amphiboles sodiques.
-glaucophanes		glaucophane	0
-glauque	De la couleur vert moyen tirant sur le bleu comme la mer.
-glauques		glauque	0
-glaviot	Glaire, crachat.
-glaviota		glavioter	33
-glaviotai		glavioter	22
-glaviotaient		glavioter	42
-glaviotais		glavioter	29
-glaviotait		glavioter	40
-glaviotâmes		glavioter	3
-glaviotant		glavioter	43
-glaviotas		glavioter	12
-glaviotasse		glavioter	6
-glaviotassent		glavioter	17
-glaviotasses		glavioter	8
-glaviotassiez		glavioter	14
-glaviotassions		glavioter	25
-glaviotât		glavioter	20
-glaviotâtes		glavioter	2
-glaviote		glavioter	64
-glaviotent		glavioter	31
-glavioter	Projeter de la salive, des mucosités de la bouche.
-glaviotera		glavioter	21
-glavioterai		glavioter	16
-glavioteraient		glavioter	28
-glavioterais		glavioter	18
-glavioterait		glavioter	26
-glavioteras		glavioter	7
-glaviotèrent		glavioter	24
-glavioterez		glavioter	5
-glavioteriez		glavioter	4
-glavioterions		glavioter	11
-glavioterons		glavioter	10
-glavioteront		glavioter	15
-glaviotes		glavioter	66
-glaviotez		glavioter	30
-glaviotiez		glavioter	13
-glaviotions		glavioter	19
-glaviotons		glavioter	27
-glaviots		glaviot	0
-glèbe	Terre du domaine auquel un serf était attaché, à l’époque féodale, en sorte qu’on le vendait avec le fonds.
-glèbes		glèbe	0
-gléchome	Genre de la famille des labiées.
-gléchomes		gléchome	0
-glécome	Variante orthographique de gléchome.
-glécomes		glécome	0
-gléna		gléner	33
-glénai		gléner	22
-glénaient		gléner	32
-glénais		gléner	29
-glénait		gléner	34
-glénâmes		gléner	3
-glénant		gléner	35
-glénas		gléner	12
-glénasse		gléner	6
-glénassent		gléner	17
-glénasses		gléner	8
-glénassiez		gléner	14
-glénassions		gléner	25
-glénât		gléner	20
-glénâtes		gléner	2
-glène	Cavité peu profonde d’un os dans laquelle un autre s’articule.
-glénée		gléner	37
-glénées		gléner	36
-glènent		gléner	31
-gléner	Lover un cordage en l'enroulant sur lui-même.
-glènera		gléner	21
-glènerai		gléner	16
-glèneraient		gléner	28
-glènerais		gléner	18
-glènerait		gléner	26
-glèneras		gléner	7
-glénèrent		gléner	24
-glènerez		gléner	5
-glèneriez		gléner	4
-glènerions		gléner	11
-glènerons		gléner	10
-glèneront		gléner	15
-glénés		gléner	38
-glénez		gléner	30
-gléniez		gléner	13
-glénions		gléner	19
-glénoïdal	Qui présente une glène.
-glénoïdale		glénoïdal	23
-glénoïdales		glénoïdal	1
-glénoïdaux		glénoïdal	9
-glénoïde	Synonyme de glénoïdal.
-glénoïdes		glénoïde	0
-glénons		gléner	27
-gley	Sol ou partie du sol, plus ou moins compact, engorgé d’eau et dans lequel se forment des processus de réduction des oxydes métalliques..
-gleys		gley	0
-glial	Qui se rapporte à la glie.
-gliale		glial	23
-gliales		glial	1
-gliaux		glial	0
-glide	Son phonétiquement intermédiaire entre les voyelles et les consonnes, souvent utilisé pour comprendre les glides phonologiquement vocaliques et consonantiques …
-glides		glide	0
-glie	Cellule du système nerveux.
-glies		glie	0
-glinglin	Petit doigt, en langage enfantin.
-glinglins		glinglin	0
-glioblastome	Tumeur astrocytaire maligne du cerveau.
-glioblastomes		glioblastome	0
-gliome	Tumeur de consistance gluante se développant à partir du tissu nerveux (ou tissu glial ou névroglie).
-gliomes		gliome	0
-glissa		glisser	39
-glissade	Action de glisser involontairement.
-glissades		glissade	0
-glissage	Action de faire glisser quelque chose.
-glissages		glissage	0
-glissai		glisser	55
-glissaient		glisser	42
-glissais		glisser	52
-glissait		glisser	40
-glissâmes		glisser	68
-glissance	Mesure du caractère glissant (d’une route, d’un revêtement de sol en particulier).
-glissances		glissance	0
-glissando	Transition progressive, continue ou non, d’une note à une autre.
-glissandos		glissando	0
-glissant	Sur quoi l’on glisse facilement.
-glissante	Glide.
-glissantes		glissante	0
-glissants		glissant	9
-glissas		glisser	12
-glissasse		glisser	6
-glissassent		glisser	17
-glissasses		glisser	8
-glissassiez		glisser	14
-glissassions		glisser	25
-glissât		glisser	62
-glissâtes		glisser	2
-glissé	Pas de danse qui consiste à passer et à avancer le pied doucement devant soi, en touchant légèrement le plancher.
-glissée		glisser	45
-glissées		glisser	51
-glissement	Action de glisser.
-glissements		glissement	0
-glissent		glisser	41
-glisser	Se mettre en mouvement, comme en coulant sur une surface lisse ou le long d’un autre corps.
-glissera		glisser	44
-glisserai		glisser	50
-glisseraient		glisser	63
-glisserais		glisser	60
-glisserait		glisser	49
-glisseras		glisser	7
-glissèrent		glisser	48
-glisserez		glisser	58
-glisseriez		glisser	74
-glisserions		glisser	11
-glisserons		glisser	61
-glisseront		glisser	54
-glisses		glisse	0
-glisseur	Celui qui glisse sur la glace.
-glisseurs		glisseur	0
-glisseuse	Celle qui glisse sur la glace.
-glisseuses		glisseuse	0
-glissez		glisser	47
-glissière	Rainure pratiquée dans un mécanisme pour le glissement d’une de ses pièces.
-glissières		glissière	0
-glissiez		glisser	13
-glissions		glisser	65
-glissoir	Couloir pratiqué le long d'un versant montagneux, à travers une forêt, pour y faire glisser des troncs d'arbres.
-glissoire	Chemin frayé sur la glace pour y glisser par amusement.
-glissoires		glissoire	0
-glissoirs		glissoir	0
-glissons		glisser	59
-global	Qui s’applique en bloc à l’ensemble d’un certain nombre de choses matérielles ou morales.
-globale		global	23
-globalement	D’une façon globale, générale, en bloc.
-globales	Féminin pluriel de global.
-globalisa		globaliser	33
-globalisai		globaliser	22
-globalisaient		globaliser	32
-globalisais		globaliser	29
-globalisait		globaliser	34
-globalisâmes		globaliser	3
-globalisant	Qui réunit ou perçoit plusieurs éléments distincts en un tout.
-globalisante		globalisant	23
-globalisantes		globalisant	1
-globalisants		globalisant	9
-globalisas		globaliser	12
-globalisasse		globaliser	6
-globalisassent		globaliser	17
-globalisasses		globaliser	8
-globalisassiez		globaliser	14
-globalisassions		globaliser	25
-globalisât		globaliser	20
-globalisâtes		globaliser	2
-globalisation	Réunion d’éléments constituant une globalité.
-globalisations		globalisation	0
-globalisé		globaliser	46
-globalisée		globaliser	37
-globalisées		globaliser	36
-globalisent		globaliser	31
-globaliser	Devenir global.
-globalisera		globaliser	21
-globaliserai		globaliser	16
-globaliseraient		globaliser	28
-globaliserais		globaliser	18
-globaliserait		globaliser	26
-globaliseras		globaliser	7
-globalisèrent		globaliser	24
-globaliserez		globaliser	5
-globaliseriez		globaliser	4
-globaliserions		globaliser	11
-globaliserons		globaliser	10
-globaliseront		globaliser	15
-globalisés		globaliser	38
-globalisez		globaliser	30
-globalisiez		globaliser	13
-globalisions		globaliser	19
-globalisme	Conception globale.
-globalismes		globalisme	0
-globalisons		globaliser	27
-globaliste	Relatif au globalisme.
-globalistes		globaliste	0
-globalité	Caractère de ce qui est global.
-globalités		globalité	0
-globaux		global	9
-globe	Sphère, corps sphérique.
-globes		globe	0
-globetrotteur	Personne qui voyage beaucoup, qui parcourt le monde.
-globetrotteurs		globetrotteur	0
-globicéphale	Une des espèces de grand dauphins au front bombé.
-globicéphales		globicéphale	0
-globigérine	Genre de foraminifère du plancton de la mer.
-globigérines		globigérine	0
-globine	Protéine que l’on retrouve dans le sang de tous les animaux, ainsi que chez certaines plantes (soja par exemple), et dont un dérivé (l’hémoglobine) a pour char…
-globines		globine	0
-globique	Se dit d’une vis dont le diamètre est plus grand aux extrémités qu’au centre.
-globiques		globique	0
-globish	Jargon utilisé par des locuteurs non anglophones quand ils veulent communiquer en anglais.
-globulaire	Qui a la forme d’un globe.
-globulaires		globulaire	0
-globule	Petit corps sphérique ou sphéroïdal.
-globules		globule	0
-globuleuse		globuleux	23
-globuleuses		globuleux	1
-globuleux	Qui est composé de globules.
-globulin	Cellule sanguine dépourvue de noyau, formé dans la moelle osseuse, de formes très diverses et jouant un rôle très important dans la coagulation.
-globuline	Protéine sérique de plus grande taille, de poids moléculaire plus élevé et plus soluble dans l’eau que l’albumine.
-globulines		globuline	0
-globulins		globulin	0
-glockenspiel	Carillon d'orchestre composé autrefois de clochettes, aujourd'hui de lames de métal, que l'on met en vibration à l'aide de maillets ou d'un clavier.
-glockenspiels		glockenspiel	0
-gloire	Renommée brillante, universelle et durable, éclat que les vertus, le mérite, les grandes qualités, les grandes actions ou les grandes œuvres attirent à quelqu’…
-gloires		gloire	0
-glome	Chez les équidés, plaque cornée qui termine la fourchette du sabot.
-gloméris	Petit mille-pattes de l'ordre des diplopodes.
-glomérulaire	Qui à un rapport avec le glomérule, ou qui a l’aspect d'un glomérule.
-glomérulaires		glomérulaire	0
-glomérule	Inflorescence dense plus ou moins sphérique de fleurs sessiles.
-glomérules		glomérule	0
-glomes		glome	0
-gloria	Prière de louange commençant par les mots Gloria in excelsis Deo (« Gloire à Dieu dans les cieux »).
-glorias		gloria	0
-gloriette	Pavillon en pierre situé dans un parc, pouvant être ouvert ou cloisonné.
-gloriettes		gloriette	0
-glorieuse	Plante grimpante de la famille des liliacées.
-glorieusement	D’une manière glorieuse, digne de louanges.
-glorieuses		glorieux	1
-glorieux	Qui donne de la gloire.
-glorifia		glorifier	39
-glorifiai		glorifier	22
-glorifiaient		glorifier	42
-glorifiais		glorifier	29
-glorifiait		glorifier	40
-glorifiâmes		glorifier	3
-glorifiant	Qui glorifie.
-glorifiante		glorifiant	23
-glorifiantes		glorifiant	1
-glorifiants		glorifiant	9
-glorifias		glorifier	12
-glorifiasse		glorifier	6
-glorifiassent		glorifier	17
-glorifiasses		glorifier	8
-glorifiassiez		glorifier	14
-glorifiassions		glorifier	25
-glorifiât		glorifier	20
-glorifiâtes		glorifier	2
-glorificateur	Qui glorifie, glorifiant.
-glorificateurs		glorificateur	0
-glorification	Action de glorifier.
-glorifications		glorification	0
-glorificatrice		glorificateur	23
-glorificatrices		glorificateur	1
-glorifie		glorifier	130
-glorifiée		glorifier	37
-glorifiées		glorifier	51
-glorifient		glorifier	41
-glorifier	Honorer, célébrer par de grandes louanges.
-glorifiera		glorifier	21
-glorifierai		glorifier	16
-glorifieraient		glorifier	28
-glorifierais		glorifier	18
-glorifierait		glorifier	26
-glorifieras		glorifier	7
-glorifièrent		glorifier	24
-glorifierez		glorifier	5
-glorifieriez		glorifier	4
-glorifierions		glorifier	11
-glorifierons		glorifier	10
-glorifieront		glorifier	15
-glorifiés		glorifier	53
-glorifiez		glorifier	47
-glorifiiez		glorifier	13
-glorifiions		glorifier	19
-glorifions		glorifier	59
-gloriole	Vaine gloire que l’on tire de petites choses.
-glorioles		gloriole	0
-glosa	Langue artificielle développée par les Anglais Ronald Clark et Wendy Ashby dans les années 1970 et 1980, basée sur l’interglossa, une autre langue construite.
-glosai		gloser	22
-glosaient		gloser	42
-glosais		gloser	29
-glosait		gloser	34
-glosâmes		gloser	3
-glosant		gloser	35
-glosas		gloser	12
-glosasse		gloser	6
-glosassent		gloser	17
-glosasses		gloser	8
-glosassiez		gloser	14
-glosassions		gloser	25
-glosât		gloser	20
-glosâtes		gloser	2
-glose	Mot vieilli ou difficile, recueilli dans les auteurs grecs et expliqué.
-glosée		gloser	37
-glosées		gloser	51
-glosent		gloser	31
-gloser	Expliquer par une glose.
-glosera		gloser	21
-gloserai		gloser	16
-gloseraient		gloser	28
-gloserais		gloser	18
-gloserait		gloser	26
-gloseras		gloser	7
-glosèrent		gloser	24
-gloserez		gloser	5
-gloseriez		gloser	4
-gloserions		gloser	11
-gloserons		gloser	10
-gloseront		gloser	15
-gloses		glose	0
-glosez		gloser	30
-glosiez		gloser	13
-glosions		gloser	19
-glosons		gloser	27
-gloss	Produit cosmétique liquide servant à donner un effet brillant et mouillé aux lèvres, il peut être incolore, teinté, pailleté, et même parfumé.
-glossaire	Dictionnaire spécialisé servant à expliquer le vocabulaire d'un domaine technique.
-glossaires		glossaire	0
-glossateur	Qui recueille et reformule les propos d’un autre.
-glossateurs		glossateur	0
-glossatrice	Celle qui fait ou recueille des gloses.
-glossatrices		glossatrice	0
-glossectomie	Ablation de la langue.
-glossectomies		glossectomie	0
-glossématique	Théorie de linguistique structurale, basée sur le concept de glossème.
-glossématiques		glossématique	0
-glossème	En glossématique, qualifie les formes minimales considérées comme invariants irréductibles sur les plans de l’expression et du contenu.
-glossèmes		glossème	0
-glossette	Comprimé sublingual.
-glossettes		glossette	0
-glossine	Mouche tsé-tsé.
-glossines		glossine	0
-glossite	Lésion inflammatoire de la langue.
-glossites		glossite	0
-glossodynie	Douleur au niveau de la langue.
-glossodynies		glossodynie	0
-glossolalie	Don de parler une langue étrangère sans la connaitre, don de parler la (supposée) langue des anges.
-glossolalies		glossolalie	0
-glossotomie	Intervention chirurgicale ayant pour but l’ablation totale ou partielle de la langue.
-glossotomies		glossotomie	0
-glottal	Relatif à la glotte.
-glottale	Consonne glottale.
-glottales		glottale	0
-glottaux		glottal	9
-glotte	Orifice du larynx qui sert à l’émission de la voix.
-glottes		glotte	0
-glottique	Appartenant ou relatif à la glotte.
-glottiques		glottique	0
-glottophobie	Forme de discrimination basée sur le langage, certaines langues, ou certains accents régionaux.
-glottophobies		glottophobie	0
-glottora		glottorer	33
-glottorai		glottorer	22
-glottoraient		glottorer	32
-glottorais		glottorer	29
-glottorait		glottorer	34
-glottorâmes		glottorer	3
-glottorant		glottorer	35
-glottoras		glottorer	12
-glottorasse		glottorer	6
-glottorassent		glottorer	17
-glottorasses		glottorer	8
-glottorassiez		glottorer	14
-glottorassions		glottorer	25
-glottorât		glottorer	20
-glottorâtes		glottorer	2
-glottoré		glottorer	46
-glottorent		glottorer	31
-glottorer	Pousser son cri, en parlant de la cigogne.
-glottorera		glottorer	21
-glottorerai		glottorer	16
-glottoreraient		glottorer	28
-glottorerais		glottorer	18
-glottorerait		glottorer	26
-glottoreras		glottorer	7
-glottorèrent		glottorer	24
-glottorerez		glottorer	5
-glottoreriez		glottorer	4
-glottorerions		glottorer	11
-glottorerons		glottorer	10
-glottoreront		glottorer	15
-glottores		glottorer	66
-glottorez		glottorer	30
-glottoriez		glottorer	13
-glottorions		glottorer	19
-glottorons		glottorer	27
-Gloucester	Ville d’Angleterre situé dans le Gloucestershire, duquel elle est le chef-lieu.
-glouglou	Bruit que fait un liquide qui se déverse ou qui est en train de bouillir.
-glouglous		glouglou	0
-glouglouta		glouglouter	33
-glougloutai		glouglouter	22
-glougloutaient		glouglouter	32
-glougloutais		glouglouter	29
-glougloutait		glouglouter	40
-glougloutâmes		glouglouter	3
-glougloutant	Qui glougloute.
-glougloutas		glouglouter	12
-glougloutasse		glouglouter	6
-glougloutassent		glouglouter	17
-glougloutasses		glouglouter	8
-glougloutassiez		glouglouter	14
-glougloutât		glouglouter	20
-glougloutâtes		glouglouter	2
-glougloute		glouglouter	64
-glougloutent		glouglouter	31
-glouglouter	Faire entendre son cri, en parlant du dindon.
-glougloutera		glouglouter	21
-glouglouterai		glouglouter	16
-glouglouterais		glouglouter	18
-glouglouterait		glouglouter	26
-glouglouteras		glouglouter	7
-glougloutèrent		glouglouter	24
-glouglouterez		glouglouter	5
-glouglouteriez		glouglouter	4
-glouglouterions		glouglouter	11
-glouglouterons		glouglouter	10
-glouglouteront		glouglouter	15
-glougloutes		glouglouter	66
-glougloutez		glouglouter	30
-glougloutiez		glouglouter	13
-glougloutions		glouglouter	19
-glougloutons		glouglouter	27
-gloup	Variante de glou.
-gloups	Onomatopée évoquant le bruit de la déglutition.
-gloussa		glousser	39
-gloussai		glousser	22
-gloussaient		glousser	42
-gloussais		glousser	29
-gloussait		glousser	40
-gloussâmes		glousser	3
-gloussant	Qui glousse.
-gloussante	Féminin singulier de gloussant.
-gloussantes		gloussant	1
-gloussants		gloussant	9
-gloussas		glousser	12
-gloussasse		glousser	6
-gloussassent		glousser	17
-gloussasses		glousser	8
-gloussassiez		glousser	14
-gloussassions		glousser	25
-gloussât		glousser	20
-gloussâtes		glousser	2
-glousse	Poule qui couve.
-gloussement	Cri de la poule.
-gloussements		gloussement	0
-gloussent		glousser	41
-glousser	Faire son cri de communication avec ses congénères, en parlant de la poule.
-gloussera		glousser	21
-glousserai		glousser	16
-glousseraient		glousser	28
-glousserais		glousser	18
-glousserait		glousser	49
-glousseras		glousser	7
-gloussèrent		glousser	48
-glousserez		glousser	5
-glousseriez		glousser	4
-glousserions		glousser	11
-glousserons		glousser	10
-glousseront		glousser	15
-glousses		glousse	0
-gloussez		glousser	47
-gloussiez		glousser	13
-gloussions		glousser	19
-gloussons		glousser	27
-glouteron	Désigne plusieurs plantes bisannuelles de la famille des Astéracées, sorte de bardane, notamment la grande bardane, la petite bardane et la lampourde épineuse.
-glouterons		glouteron	0
-glouton	Qui dévore, engloutit sa nourriture avec avidité, en parlant d’un humain ou d’un animal.
-gloutonne	Celle qui mange avidement sa nourriture.
-gloutonnement	D’une manière gloutonne, voracement.
-gloutonnerie	Défaut de celui qui est glouton.
-gloutonneries		gloutonnerie	0
-gloutonnes		glouton	1
-gloutons		glouton	9
-gloxinia	Genre de plantes (sinningia) de la famille des gesnériacées qui comprend environ 400 espèces de vivaces tubéreuses et d’arbrisseaux caducs ou persistants pouss…
-gloxinias		gloxinia	0
-glu	Colle végétale extraite du houx, du gui, des baies de genêt, dont on se sert surtout pour prendre les oiseaux.
-glua		gluer	33
-gluai		gluer	22
-gluaient		gluer	32
-gluais		gluer	29
-gluait		gluer	34
-gluâmes		gluer	3
-gluant	Qui est de la nature de la glu.
-gluante		gluant	23
-gluantes		gluant	1
-gluants		gluant	9
-gluas		gluer	12
-gluasse		gluer	6
-gluassent		gluer	17
-gluasses		gluer	8
-gluassiez		gluer	14
-gluassions		gluer	25
-gluât		gluer	20
-gluâtes		gluer	2
-gluau	Petite branche enduite de glu pour prendre des oiseaux.
-gluaux		gluau	0
-glucagon	Hormone polypeptidique sécrétée par les cellules alpha des îlots de Langerhans du pancréas, qui élève le glycémie en stimulant la dégradation du glycogène hépa…
-glucide	Type de molécule composée de carbone, d’hydrogène et d’oxygène, un des constituants essentiels des êtres vivants, qui correspond aux molécules des sucres.
-glucides		glucide	0
-glucidique	Relatif aux glucides.
-glucidiques		glucidique	0
-glucine	Autre nom de l’oxyde de béryllium, substance particulièrement cancérigène qui doit être manipulée avec de grandes précautions.
-glucines		glucine	0
-glucinium	Ancien nom du béryllium.
-gluciniums		glucinium	0
-gluckiste	Partisan de la musique de Gluck, compositeur allemand du XVIIIᵉ siècle.
-gluckistes		gluckiste	0
-glucocorticoïde	Corticostéroïde qui a une action sur le métabolisme protidique et glucidique.
-glucomètre	Appareil pour mesurer la teneur en glucides d’un liquide, aréomètre qui mesure la quantité de sucre des moûts.
-glucomètres		glucomètre	0
-gluconéogenèse	Synthèse du glucose à partir de précurseurs non-glucidiques.
-gluconéogenèses		gluconéogenèse	0
-gluconique	Qualifie l'acide gluconique, obtenu par l'oxydation de la fonction aldéhyde du glucose.
-gluconiques		gluconique	0
-glucose	Sucre simple le plus commun et en particulier dans sa forme D (→ voir dextrose).
-glucosée		glucosé	23
-glucosées		glucosé	1
-glucoserie	Fabrique de glucose.
-glucoseries		glucoserie	0
-glucosés		glucosé	9
-glucoside	Molécule formée de l'association d'une molécule appartenant à la famille des oses (telle que le glucose, le fructose, le mannose, le ribose...) et d'une autre …
-glue		gluer	64
-gluée		gluer	37
-gluées		gluer	36
-gluent		gluer	41
-gluer	Enduire de glu.
-gluera		gluer	21
-gluerai		gluer	16
-glueraient		gluer	28
-gluerais		gluer	18
-gluerait		gluer	26
-glueras		gluer	7
-gluèrent		gluer	24
-gluerez		gluer	5
-glueriez		gluer	4
-gluerions		gluer	11
-gluerons		gluer	10
-glueront		gluer	15
-glues		gluer	66
-gluez		gluer	30
-glui	Paille de seigle à usage domestique (emballage du poisson, couverture de toit, liens divers...).
-gluiez		gluer	13
-gluions		gluer	19
-gluis		glui	0
-glume	Enveloppe de chaque fleur des graminées.
-glumelle	Petite glume enveloppant la fleur des graminées.
-glumelles		glumelle	0
-glumes		glume	0
-gluon	Boson responsable de l’interaction forte.
-gluons		gluon	0
-glus		glu	0
-glutamate	Acide aminé de chaîne latérale (-CH₂-CH₂-COO⁻), base conjuguée de l’acide glutamique.
-glutamates		glutamate	0
-glutamine	Acide aminé polaire, non-chargé et hydrophile dont le groupement latéral est un amide (-CH₂-CH₂-CO-NH₂).
-glutamines		glutamine	0
-glutamique	Qui concerne le glutamate.
-glutamiques		glutamique	0
-glutathion	Tripeptide, formé par la condensation de 3 acides aminés : acide glutamique, cystéine et glycine, un antioxydant.
-gluten	Réseau de protéines formé lors du pétrissage d’une pâte à base de farine de certaines céréales (comme le blé), lorsque les protéines natives — principalement l…
-glutens		gluten	0
-glutineuse		glutineux	23
-glutineuses		glutineux	1
-glutineux	Qui est de la nature du gluten, à la fois visqueux et mucilagineux, collant ou poisseux comme le gluten.
-glycémie	Taux de glucose dans le sang.
-glycémies		glycémie	0
-glycémique	Qui a un rapport avec la glycémie, le taux de sucre dans le sang.
-glycémiques		glycémique	0
-glycéride	Ester d’acides gras et de glycérol.
-glycérides		glycéride	0
-glycérie	Graminée du genre Glyceria qui comprend 40 espèces de vivaces hygrophytes ou aquatiques.
-glycéries		glycérie	0
-glycérina		glycériner	33
-glycérinai		glycériner	22
-glycérinaient		glycériner	32
-glycérinais		glycériner	29
-glycérinait		glycériner	34
-glycérinâmes		glycériner	3
-glycérinant		glycériner	35
-glycérinas		glycériner	12
-glycérinasse		glycériner	6
-glycérinassent		glycériner	17
-glycérinasses		glycériner	8
-glycérinassiez		glycériner	14
-glycérinassions		glycériner	25
-glycérinât		glycériner	20
-glycérinâtes		glycériner	2
-glycérine	Liquide incolore, transparent, facilement soluble dans l’alcool, d’une saveur sucrée et d’une consistance sirupeuse, qui est le produit de la saponification de…
-glycérinée		glycériner	37
-glycérinées		glycériner	36
-glycérinent		glycériner	31
-glycériner	Additionner de glycérine.
-glycérinera		glycériner	21
-glycérinerai		glycériner	16
-glycérineraient		glycériner	28
-glycérinerais		glycériner	18
-glycérinerait		glycériner	26
-glycérineras		glycériner	7
-glycérinèrent		glycériner	24
-glycérinerez		glycériner	5
-glycérineriez		glycériner	4
-glycérinerions		glycériner	11
-glycérinerons		glycériner	10
-glycérineront		glycériner	15
-glycérines		glycérine	0
-glycérinez		glycériner	30
-glycériniez		glycériner	13
-glycérinions		glycériner	19
-glycérinons		glycériner	27
-glycérique	Qui concerne la glycérine.
-glycériques		glycérique	0
-glycéro	Synonyme d'alkyde.
-glycérol	Liquide incolore, transparent, facilement soluble dans l’alcool, d’une saveur sucrée et d’une consistance sirupeuse, qui est le produit de la saponification de…
-glycérolé	Préparation à base de glycérol.
-glycérolés		glycérolé	0
-glycérols		glycérol	0
-glycéros		glycéro	0
-glycine	Plante grimpante du genre Wisteria de la famille des Fabacées.
-glycines		glycine	0
-glycocolle	Ancien nom de la glycine (acide aminé).
-glycocolles		glycocolle	0
-glycogène	Glucide complexe polymère du glucose.
-glycogènes		glycogène	0
-glycogenèse	Production de sucre, de glucose.
-glycogenèses		glycogenèse	0
-glycogénie	Glycogenèse.
-glycogénies		glycogénie	0
-glycogénique	Qui a rapport à la glycogénie.
-glycogéniques		glycogénique	0
-glycogénogenèse	Synthèse, par l’organisme et en particulier le foie et les muscles, du glycogène à partir de glucose pour constituer des réserves d’énergie.
-glycogénolyse	Dégradation du glycogène en glucose.
-glycogénolyses		glycogénolyse	0
-glycol	Diol non géminal, souvent vicinal.
-glycolique	Terme présent dans la locution « acide glycolique ».
-glycoliques		glycolique	0
-glycols		glycol	0
-glycolyse	Voie métabolique d’assimilation du glucose et de production d'énergie.
-glycolyses		glycolyse	0
-glycomètre	Instrument qui indique la pesanteur spécifique du moût du raisin, et, par suite, la quantité de sucre qu’il contient.
-glycomètres		glycomètre	0
-glycoprotéine	Protéine portant un groupement oligosaccharide et une chaîne polypeptidique.
-glycoprotéines		glycoprotéine	0
-glycoprotéique	Qui concerne la glycoprotéine.
-glycoprotéiques		glycoprotéique	0
-glycosurie	Présence de sucre dans l’urine.
-glycosuries		glycosurie	0
-glycosurique	Relatif à une présence anormale de glucose dans les urines.
-glycosuriques		glycosurique	0
-glyphe	Signe graphique inscrit, gravé en creux
-glyphes		glyphe	0
-glyphosate	Aminophosphonate de formule brute C₃H₈NO₅P, à usage d'herbicide de nombreuses graminées et de nombreuses dicotylédones, annuelles ou vivaces, et qui n'est séle…
-glyphosates		glyphosate	0
-glyptique	Art de graver en pierres fines, soit en creux (les intailles), soit en relief (les camées).
-glyptiques		glyptique	0
-glyptodon	Espèce disparue de tatou géant.
-glyptodons		glyptodon	0
-glyptodonte	Clade éteint de grands tatous lourdement cuirassés, atteignant jusqu'à 1,5 mètre de hauteur et des masses corporelles maximales d'environ 2 tonnes.
-glyptodontes		glyptodonte	0
-glyptographie	Art de la gravure sur pierre précieuse.
-glyptographies		glyptographie	0
-glyptologie	Traité sur les pierres gravées antiques.
-glyptologies		glyptologie	0
-glyptothèque	Musée de pierres gravées ou de sculptures.
-glyptothèques		glyptothèque	0
-glyqué	Sur lequel une molécule de glucose — ou plus généralement un glucide — s'est fixée de manière plus ou moins réversible par glycation (ou éventuellement par abu…
-glyquée		glyqué	23
-glyquées		glyqué	1
-glyqués		glyqué	9
+0glabelle	Éminence de l’os frontal située entre les deux arcades sourcilières.
+8s		8	0
+4re	Qui est sans poil, sans duvet.
+6s		6	0
+3ça		3cer	13
+5ge	Action de glacer, d’appliquer sur un objet un enduit qui lui donne l’apparence du vernis, par exemple d’appliquer un sirop à base de sucre glace sur un gâteau.
+7s		7	0
+5i		3cer	m
+6ent		3cer	16
+6s		3cer	1g
+6t		3cer	14
+4âmes		3cer	3
+4ant	Qui glace.
+7e		7	n
+8s		7	1
+7s		7	9
+5s		3cer	c
+6se		3cer	6
+8nt		3cer	h
+8s		3cer	8
+7iez		3cer	e
+8ons		3cer	p
+4ât		3cer	k
+6es		3cer	2
+3ce	ou Eau à l’état solide.
+4ée		5	n
+6s		5	1
+4ent		5r	15
+5r	Solidifier un liquide, en sorte qu’il passe à l’état de glace.
+6a		6	18
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	1c
+4erez		6	5
+6ie	Commerce de glaces alimentaires, de sorbets.
+8s		8	0
+8z		6	4
+7ons		6	b
+6ons		6	a
+8t		6	1i
+5s		5	0
+5ur	Ouvrier qui glace les indiennes ou autres étoffes.
+7s		7	0
+6se	Machine, appareil à glacer le papier, en particulier le papier photographique.
+8s		8	0
+6x	Qui a une glace ou tache qui en diminue le prix.
+5z		5r	1b
+4iaire	Qui appartient aux glaciers.
+9s		9	0
+8iste	Glaciologue.
+cs		c	0
+6l	Qui glace ; qui pénètre d’un froid vif.
+7e		7	n
+8ment	D'une manière glaciale.
+8s		7	1
+7s		7	9
+6tion	Action de geler.
+as		a	0
+6ux		6l	9
+5el	Relatif aux glaces flottantes (banquise, icebergs).
+7le		7	n
+9s		7	1
+7s		7	9
+6r	Celui qui prépare et vend des glaces, des sirops, des fruits glacés.
+5ère	Glacier.
+8s		8	0
+5érisme	Forme d’alpinisme spécialisé dans l’ascension des glaciers.
+9te	Glaciologue.
+bs		b	0
+5ers		7	0
+6z		4er	d
+5ologie	Étude de la glace, des glaciers, de la banquise, des névés et des périodes de glaciation.
+bs		b	0
+aque	Relatif à la glaciologie.
+ds		d	0
+9ue	Spécialiste de la glaciologie.
+bs		b	0
+6ns		4er	j
+5s	Talus, pente douce et unie.
+3çon	Morceau de glace.
+6s		6	0
+4ure	Action de recouvrir les poteries d’un enduit qui au feu doit se vitrifier.
+7s		7	0
+3diateur	Combattant qui, dans les jeux du cirque de la Rome antique, participait volontairement ou de force à des joutes pour l’amusement des spectateurs, avec des arme…
+as		a	0
+7rice	Combattante qui, dans les jeux du cirque de la Rome antique, participait volontairement ou de force à des joutes pour l’amusement des spectateurs, avec des arm…
+bs		b	0
+3geon	Espèce de marbre.
+7s		7	0
+4la	Se dit quand il fait très froid.
+4olitique	Relatif au glagol, le plus ancien alphabet du slavon.
+cs		c	0
+3ïeul	Plante herbacée de la famille des iridacées dont les feuilles sont longues, étroites et pointues.
+7s		7	0
+3ira		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Blanc d’œuf non cuit.
+5ée		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Frotter avec de la glairure.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6use		7x	n
+9s		7x	1
+7x	Qui est de la nature de la glaire.
+6z		6r	u
+5iez		5er	d
+6ons		5er	j
+5ons		5er	r
+5ure	Blanc d’œuf battu avec de l’alcool dont on frotte la reliure d’un livre avant de lui appliquer la dorure.
+8s		8	0
+4sa		5er	x
+6i		5er	m
+7ent		5er	w
+7s		5er	t
+7t		5er	y
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5e	Argile grasse et compacte que l’eau ne pénètre pas et dont on se sert pour faire de la poterie, pour amender des terrains ou, en sculpture, pour modeler une éb…
+5ée		5er	11
+7s		5er	10
+5ent		6r	v
+6r	Enduire de terre glaise.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+6s		6	0
+6use		7x	n
+9s		7x	1
+7x	Qui est de la nature de la glaise.
+6z		6r	u
+5ière	Endroit d’où l’on tire de la glaise.
+9s		9	0
+6ez		5er	d
+6ons		5er	j
+5ons		5er	r
+4ve	Épée tranchante et courte que les Romains utilisaient.
+6s		6	0
+3m	Variante de glamour.
+4our	Charme envoûtant, séduction qu’une actrice de cinéma ou une jolie femme exerce par son attitude sensuelle et sa tenue vestimentaire suggestive.
+7euse		9x	n
+bs		9x	1
+9x	Relatif au glamour.
+7isa		9er	13
+ai		9er	1j
+bent		9er	23
+bs		9er	2e
+bt		9er	1z
+9âmes		9er	1w
+9ant		9er	17
+as		9er	2b
+bse		9er	29
+dnt		9er	26
+ds		9er	2f
+ciez		9er	2g
+9ât		9er	1q
+bes		9er	2c
+9é		9er	1k
+ae		9er	19
+bs		9er	1f
+9ent		ar	1x
+ar	Rendre glamour, sexy, attirant.
+ba		b	18
+ci		b	1e
+ds		b	1o
+dt		b	1d
+cs		b	1l
+9èrent		9er	1c
+9erez		b	1m
+biez		b	22
+cons		b	2a
+bons		b	1p
+dt		b	1i
+9és		9er	1h
+9ez		ar	1y
+9iez		9er	2s
+aons		9er	2m
+9ons		9er	21
+7s		7	0
+4s		4	0
+3na		4er	13
+5ge	Activité de récupération consistant à ramasser de manière artisanale les produits agricoles restants après une moisson.
+7s		7	0
+5i		4er	m
+6ent		4er	16
+6s		4er	1g
+6t		4er	14
+4âmes		4er	3
+4ant		4er	17
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4d	Fruit du chêne, akène logé dans une cupule.
+5a		5er	x
+6ge	Action de glander, glande.
+8s		8	0
+6i		5er	m
+7ent		5er	w
+7s		5er	1g
+7t		5er	14
+5âmes		5er	3
+5ant		5er	z
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	k
+7es		5er	2
+5é	Qui porte des glands.
+6e	Récolte des glands.
+7s	Féminin pluriel de glandé.
+5ent		6r	15
+6r	Manger des glands (en parlant des cochons), ramasser des glands.
+7a		7	l
+8i		7	g
+9ent		7	s
+9s		7	i
+9t		7	q
+8s		7	7
+5èrent		5er	o
+5erez		7	5
+7iez		7	4
+8ons		7	b
+7ons		7	a
+9t		7	f
+5és	Masculin pluriel de glandé.
+5eur	Qui aime à flemmarder, à rien faire ou pas grand chose.
+8s		8	9
+7se	Fainéante, flemmarde, femme qui ne fait rien ou pas grand chose.
+9s		7r	1
+6z		6r	1b
+5iez		5er	1v
+6ons		5er	j
+5ons		5er	1n
+6uilla		aer	x
+bi		aer	m
+cent		aer	w
+cs		aer	t
+ct		aer	14
+aâmes		aer	3
+aant		aer	17
+bs		aer	c
+cse		aer	6
+es		aer	8
+aât		aer	k
+ces		aer	2
+ae	Fait de glandouiller.
+bnt		br	v
+br	Glander, ne rien faire.
+ca		c	l
+di		c	g
+es		c	i
+et		c	q
+ds		c	7
+aèrent		aer	o
+aerez		c	5
+ciez		c	4
+cons		c	a
+et		c	f
+bs		br	1u
+bz		br	1b
+aiez		aer	d
+bons		aer	j
+aons		aer	r
+5s		5	0
+5u	Niais, sot.
+6e	Personne quelconque, sans importance, sans esprit.
+7s		6	1
+6laire	Qui a l'aspect, la forme ou la texture d’une glande.
+bs		b	0
+7e	Petite glande.
+8s		8	0
+8use		9x	n
+bs		9x	1
+9x	Qui a la texture des glandes, des glandules.
+6s		6	9
+4e	Poignée d’épis que l’on ramasse dans le champ après que la moisson en a été emportée, ou que les gerbes sont liées.
+4ée	Piège, dont l’appât est du blé, destiné à attraper des canards sauvages.
+6s		6	0
+4ement	Synonyme de glanage.
+9s		9	0
+5nt		5r	15
+5r	Ramasser des épis de blé après la moisson.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5ur	Celui qui glane.
+7s		7	0
+6se	Celle qui glane.
+8s		8	0
+5z		5r	1b
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+4ure	Ce que l’on a glané dans les champs après la moisson faite.
+7s		7	0
+3pi		5r	1k
+5e		5r	11
+6s		5r	10
+4îmes		4ir	3
+4ir	Pousser des cris aigus, en parlant des petits chiens et des renards.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+6ent		6	1c
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	12
+6saient		5r	23
+9s		5r	t
+9t		5r	1z
+8nt	Qui glapit.
+ae	Féminin singulier de glapissant.
+bs		a	1
+as		a	9
+7e		5r	2h
+8ment	Cri aigu que fait entendre un animal qui glapit, notamment le renard.
+cs		c	0
+8nt		5r	1x
+8s		5r	24
+8z		5r	u
+7iez		5r	d
+8ons		5r	2m
+7ons		5r	r
+5t		5r	28
+4îtes		4ir	2
+3réole	Genre d’oiseaux de la famille des glaréolidés, à pattes courtes, à ailes longues et pointues, et à longue queue pointue.
+8s		8	0
+3s	Sonnerie d’une cloche qui tinte, annonçant l’agonie ou la mort d’une personne.
+4nost	Politique de liberté d’expression et de la publication d’informations, introduite par Mikhaïl Gorbatchev en Union soviétique en 1985.
+4s	Verre.
+5e	Verre (récipient pour boire).
+6s		6	0
+0Glasvégien	Habitant ou originaire de Glasgow, en Écosse ^().
+as		a	0
+4wégien	Habitant ou originaire de Glasgow, en Écosse.
+as		a	0
+0glati		5r	1a
+4îmes		4ir	3
+4ir	Aboyer, pousser des aboiements répétés.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+6ent		6	o
+7z		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5r	27
+6saient		5r	w
+9s		5r	t
+9t		5r	y
+8nt		5r	z
+7e		5r	2h
+8nt		5r	v
+8s		5r	24
+8z		5r	u
+7iez		5r	d
+8ons		5r	j
+7ons		5r	r
+5t		5r	2z
+4îtes		4ir	2
+3ucomateux	Affecté de glaucome.
+7e	Affection oculaire caractérisée par l’atrophie des membranes de l’œil et l’excavation du nerf optique, provoquant une diminution du champ visuel pouvant aller …
+8s		8	0
+6nie	Association de minéraux argileux du groupe des smectites et de micas comme la glauconite.
+9s		9	0
+8te	Variété de mica de couleur verte et de formule (K,Na)(Fe³⁺,Al,Mg)₂(Si,Al)₄O₁₀(OH)₂.
+as		a	0
+6phane	Espèce minérale du groupe des silicates sous groupe des inosilicates de la famille des amphiboles sodiques.
+bs		b	0
+4que	De la couleur vert moyen tirant sur le bleu comme la mer.
+7s		7	0
+3viot	Glaire, crachat.
+7a		7er	x
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant		7er	17
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7e		8r	1s
+8nt		8r	v
+8r	Projeter de la salive, des mucosités de la bouche.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+7s		7	0
+2èbe	Terre du domaine auquel un serf était attaché, à l’époque féodale, en sorte qu’on le vendait avec le fonds.
+5s		5	0
+2échome	Genre de la famille des labiées.
+8s		8	0
+4ome	Variante orthographique de gléchome.
+7s		7	0
+3na		4er	x
+5i		4er	m
+6ent		4er	w
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+2ène	Cavité peu profonde d’un os dans laquelle un autre s’articule.
+2énée		4er	11
+6s		4er	10
+2ènent		2éner	v
+2éner	Lover un cordage en l'enroulant sur lui-même.
+2ènera		2éner	l
+7i		2éner	g
+8ent		2éner	s
+8s		2éner	i
+8t		2éner	q
+7s		2éner	7
+2énèrent		4er	o
+2ènerez		2éner	5
+6iez		2éner	4
+7ons		2éner	b
+6ons		2éner	a
+8t		2éner	f
+2énés		4er	12
+4ez		5r	u
+4iez		4er	d
+5ons		4er	j
+4oïdal	Qui présente une glène.
+9e		9	n
+as		9	1
+8ux		8l	9
+7e	Synonyme de glénoïdal.
+8s		8	0
+5ns		4er	r
+2ey	Sol ou partie du sol, plus ou moins compact, engorgé d’eau et dans lequel se forment des processus de réduction des oxydes métalliques..
+4s		4	0
+2ial	Qui se rapporte à la glie.
+5e		5	n
+6s		5	1
+4ux		4l	0
+3de	Son phonétiquement intermédiaire entre les voyelles et les consonnes, souvent utilisé pour comprendre les glides phonologiquement vocaliques et consonantiques …
+5s		5	0
+3e	Cellule du système nerveux.
+4s		4	0
+3nglin	Petit doigt, en langage enfantin.
+8s		8	0
+3oblastome	Tumeur astrocytaire maligne du cerveau.
+cs		c	0
+4me	Tumeur de consistance gluante se développant à partir du tissu nerveux (ou tissu glial ou névroglie).
+6s		6	0
+3ssa		5er	13
+6de	Action de glisser involontairement.
+8s		8	0
+6ge	Action de faire glisser quelque chose.
+8s		8	0
+6i		5er	1j
+7ent		5er	16
+7s		5er	1g
+7t		5er	14
+5âmes		5er	1w
+5ance	Mesure du caractère glissant (d’une route, d’un revêtement de sol en particulier).
+9s		9	0
+7do	Transition progressive, continue ou non, d’une note à une autre.
+9s		9	0
+7t	Sur quoi l’on glisse facilement.
+8e	Glide.
+9s		9	0
+8s		8	9
+6s		5er	c
+7se		5er	6
+9nt		5er	h
+9s		5er	8
+8iez		5er	e
+9ons		5er	p
+5ât		5er	1q
+7es		5er	2
+5é	Pas de danse qui consiste à passer et à avancer le pied doucement devant soi, en touchant légèrement le plancher.
+6e		5er	19
+7s		5er	1f
+5ement	Action de glisser.
+as		a	0
+6nt		6r	15
+6r	Se mettre en mouvement, comme en coulant sur une surface lisse ou le long d’un autre corps.
+7a		7	18
+8i		7	1e
+9ent		7	1r
+9s		7	1o
+9t		7	1d
+8s		7	7
+5èrent		5er	1c
+5erez		7	1m
+7iez		7	22
+8ons		7	b
+7ons		7	1p
+9t		7	1i
+6s		6	0
+6ur	Celui qui glisse sur la glace.
+8s		8	0
+7se	Celle qui glisse sur la glace.
+9s		9	0
+6z		6r	1b
+5ière	Rainure pratiquée dans un mécanisme pour le glissement d’une de ses pièces.
+9s		9	0
+6ez		5er	d
+6ons		5er	1t
+5oir	Couloir pratiqué le long d'un versant montagneux, à travers une forêt, pour y faire glisser des troncs d'arbres.
+8e	Chemin frayé sur la glace pour y glisser par amusement.
+9s		9	0
+8s		8	0
+6ns		5er	1n
+2obal	Qui s’applique en bloc à l’ensemble d’un certain nombre de choses matérielles ou morales.
+6e		6	n
+7ment	D’une façon globale, générale, en bloc.
+7s	Féminin pluriel de global.
+6isa		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant	Qui réunit ou perçoit plusieurs éléments distincts en un tout.
+be		b	n
+cs		b	1
+bs		b	9
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8ation	Réunion d’éléments constituant une globalité.
+ds		d	0
+8é		8er	1a
+9e		8er	11
+as		8er	10
+8ent		9r	v
+9r	Devenir global.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+8és		8er	12
+8ez		9r	u
+8iez		8er	d
+9ons		8er	j
+8me	Conception globale.
+as		a	0
+8ons		8er	r
+8te	Relatif au globalisme.
+as		a	0
+7té	Caractère de ce qui est global.
+9s		9	0
+5ux		5l	9
+4e	Sphère, corps sphérique.
+5s		5	0
+5trotteur	Personne qui voyage beaucoup, qui parcourt le monde.
+ds		d	0
+4icéphale	Une des espèces de grand dauphins au front bombé.
+cs		c	0
+5gérine	Genre de foraminifère du plancton de la mer.
+bs		b	0
+5ne	Protéine que l’on retrouve dans le sang de tous les animaux, ainsi que chez certaines plantes (soja par exemple), et dont un dérivé (l’hémoglobine) a pour char…
+7s		7	0
+5que	Se dit d’une vis dont le diamètre est plus grand aux extrémités qu’au centre.
+8s		8	0
+5sh	Jargon utilisé par des locuteurs non anglophones quand ils veulent communiquer en anglais.
+4ulaire	Qui a la forme d’un globe.
+as		a	0
+6e	Petit corps sphérique ou sphéroïdal.
+7s		7	0
+7use		8x	n
+as		8x	1
+8x	Qui est composé de globules.
+6in	Cellule sanguine dépourvue de noyau, formé dans la moelle osseuse, de formes très diverses et jouant un rôle très important dans la coagulation.
+8e	Protéine sérique de plus grande taille, de poids moléculaire plus élevé et plus soluble dans l’eau que l’albumine.
+9s		9	0
+8s		8	0
+3ckenspiel	Carillon d'orchestre composé autrefois de clochettes, aujourd'hui de lames de métal, que l'on met en vibration à l'aide de maillets ou d'un clavier.
+cs		c	0
+3ire	Renommée brillante, universelle et durable, éclat que les vertus, le mérite, les grandes qualités, les grandes actions ou les grandes œuvres attirent à quelqu’…
+6s		6	0
+3me	Chez les équidés, plaque cornée qui termine la fourchette du sabot.
+4éris	Petit mille-pattes de l'ordre des diplopodes.
+6ulaire	Qui à un rapport avec le glomérule, ou qui a l’aspect d'un glomérule.
+cs		c	0
+8e	Inflorescence dense plus ou moins sphérique de fleurs sessiles.
+9s		9	0
+4es		5	0
+3ria	Prière de louange commençant par les mots Gloria in excelsis Deo (« Gloire à Dieu dans les cieux »).
+6s		6	0
+5ette	Pavillon en pierre situé dans un parc, pouvant être ouvert ou cloisonné.
+9s		9	0
+6use	Plante grimpante de la famille des liliacées.
+9ment	D’une manière glorieuse, digne de louanges.
+9s		7x	1
+7x	Qui donne de la gloire.
+5fia		7er	13
+8i		7er	m
+9ent		7er	16
+9s		7er	t
+9t		7er	14
+7âmes		7er	3
+7ant	Qui glorifie.
+ae		a	n
+bs		a	1
+as		a	9
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7cateur	Qui glorifie, glorifiant.
+ds		d	0
+aion	Action de glorifier.
+ds		d	0
+arice		aeur	n
+es		aeur	1
+7e		8r	3m
+7ée		7er	11
+9s		7er	1f
+7ent		8r	15
+8r	Honorer, célébrer par de grandes louanges.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+7és		7er	1h
+7ez		8r	1b
+7iez		7er	d
+8ons		7er	j
+7ons		7er	1n
+5ole	Vaine gloire que l’on tire de petites choses.
+8s		8	0
+3sa	Langue artificielle développée par les Anglais Ronald Clark et Wendy Ashby dans les années 1970 et 1980, basée sur l’interglossa, une autre langue construite.
+5i		4er	m
+6ent		4er	16
+6s		4er	t
+6t		4er	y
+4âmes		4er	3
+4ant		4er	z
+5s		4er	c
+6se		4er	6
+8nt		4er	h
+8s		4er	8
+7iez		4er	e
+8ons		4er	p
+4ât		4er	k
+6es		4er	2
+4e	Mot vieilli ou difficile, recueilli dans les auteurs grecs et expliqué.
+4ée		4er	11
+6s		4er	1f
+4ent		5r	v
+5r	Expliquer par une glose.
+6a		6	l
+7i		6	g
+8ent		6	s
+8s		6	i
+8t		6	q
+7s		6	7
+4èrent		4er	o
+4erez		6	5
+6iez		6	4
+7ons		6	b
+6ons		6	a
+8t		6	f
+5s		5	0
+5z		5r	u
+4iez		4er	d
+5ons		4er	j
+4ons		4er	r
+4s	Produit cosmétique liquide servant à donner un effet brillant et mouillé aux lèvres, il peut être incolore, teinté, pailleté, et même parfumé.
+5aire	Dictionnaire spécialisé servant à expliquer le vocabulaire d'un domaine technique.
+9s		9	0
+6teur	Qui recueille et reformule les propos d’un autre.
+as		a	0
+7rice	Celle qui fait ou recueille des gloses.
+bs		b	0
+5ectomie	Ablation de la langue.
+cs		c	0
+5ématique	Théorie de linguistique structurale, basée sur le concept de glossème.
+ds		d	0
+5ème	En glossématique, qualifie les formes minimales considérées comme invariants irréductibles sur les plans de l’expression et du contenu.
+8s		8	0
+5ette	Comprimé sublingual.
+9s		9	0
+5ine	Mouche tsé-tsé.
+8s		8	0
+6te	Lésion inflammatoire de la langue.
+8s		8	0
+5odynie	Douleur au niveau de la langue.
+bs		b	0
+6lalie	Don de parler une langue étrangère sans la connaitre, don de parler la (supposée) langue des anges.
+bs		b	0
+6tomie	Intervention chirurgicale ayant pour but l’ablation totale ou partielle de la langue.
+bs		b	0
+3ttal	Relatif à la glotte.
+7e	Consonne glottale.
+8s		8	0
+6ux		6l	9
+5e	Orifice du larynx qui sert à l’émission de la voix.
+6s		6	0
+5ique	Appartenant ou relatif à la glotte.
+9s		9	0
+5ophobie	Forme de discrimination basée sur le langage, certaines langues, ou certains accents régionaux.
+cs		c	0
+6ra		7er	x
+8i		7er	m
+9ent		7er	w
+9s		7er	t
+9t		7er	y
+7âmes		7er	3
+7ant		7er	z
+8s		7er	c
+9se		7er	6
+bnt		7er	h
+bs		7er	8
+aiez		7er	e
+bons		7er	p
+7ât		7er	k
+9es		7er	2
+7é		7er	1a
+7ent		8r	v
+8r	Pousser son cri, en parlant de la cigogne.
+9a		9	l
+ai		9	g
+bent		9	s
+bs		9	i
+bt		9	q
+as		9	7
+7èrent		7er	o
+7erez		9	5
+9iez		9	4
+aons		9	b
+9ons		9	a
+bt		9	f
+8s		8r	1u
+8z		8r	u
+7iez		7er	d
+8ons		7er	j
+7ons		7er	r
+0Gloucester	Ville d’Angleterre situé dans le Gloucestershire, duquel elle est le chef-lieu.
+0glouglou	Bruit que fait un liquide qui se déverse ou qui est en train de bouillir.
+8s		8	0
+8ta		9er	x
+ai		9er	m
+bent		9er	w
+bs		9er	t
+bt		9er	14
+9âmes		9er	3
+9ant	Qui glougloute.
+as		9er	c
+bse		9er	6
+dnt		9er	h
+ds		9er	8
+ciez		9er	e
+9ât		9er	k
+bes		9er	2
+9e		ar	1s
+ant		ar	v
+ar	Faire entendre son cri, en parlant du dindon.
+ba		b	l
+ci		b	g
+ds		b	i
+dt		b	q
+cs		b	7
+9èrent		9er	o
+9erez		b	5
+biez		b	4
+cons		b	b
+bons		b	a
+dt		b	f
+as		ar	1u
+az		ar	u
+9iez		9er	d
+aons		9er	j
+9ons		9er	r
+4p	Variante de glou.
+5s	Onomatopée évoquant le bruit de la déglutition.
+4ssa		6er	13
+7i		6er	m
+8ent		6er	16
+8s		6er	t
+8t		6er	14
+6âmes		6er	3
+6ant	Qui glousse.
+9e	Féminin singulier de gloussant.
+as		9	1
+9s		9	9
+7s		6er	c
+8se		6er	6
+ant		6er	h
+as		6er	8
+9iez		6er	e
+aons		6er	p
+6ât		6er	k
+8es		6er	2
+6e	Poule qui couve.
+7ment	Cri de la poule.
+bs		b	0
+7nt		7r	15
+7r	Faire son cri de communication avec ses congénères, en parlant de la poule.
+8a		8	l
+9i		8	g
+aent		8	s
+as		8	i
+at		8	1d
+9s		8	7
+6èrent		6er	1c
+6erez		8	5
+8iez		8	4
+9ons		8	b
+8ons		8	a
+at		8	f
+7s		7	0
+7z		7r	1b
+6iez		6er	d
+7ons		6er	j
+6ons		6er	r
+4teron	Désigne plusieurs plantes bisannuelles de la famille des Astéracées, sorte de bardane, notamment la grande bardane, la petite bardane et la lampourde épineuse.
+9s		9	0
+5on	Qui dévore, engloutit sa nourriture avec avidité, en parlant d’un humain ou d’un animal.
+7ne	Celle qui mange avidement sa nourriture.
+9ment	D’une manière gloutonne, voracement.
+9rie	Défaut de celui qui est glouton.
+cs		c	0
+9s		7	1
+7s		7	9
+3xinia	Genre de plantes (sinningia) de la famille des gesnériacées qui comprend environ 400 espèces de vivaces tubéreuses et d’arbrisseaux caducs ou persistants pouss…
+8s		8	0
+2u	Colle végétale extraite du houx, du gui, des baies de genêt, dont on se sert surtout pour prendre les oiseaux.
+3a		3er	x
+4i		3er	m
+5ent		3er	w
+5s		3er	t
+5t		3er	y
+3âmes		3er	3
+3ant	Qui est de la nature de la glu.
+6e		6	n
+7s		6	1
+6s		6	9
+4s		3er	c
+5se		3er	6
+7nt		3er	h
+7s		3er	8
+6iez		3er	e
+7ons		3er	p
+3ât		3er	k
+5es		3er	2
+3au	Petite branche enduite de glu pour prendre des oiseaux.
+5x		5	0
+3cagon	Hormone polypeptidique sécrétée par les cellules alpha des îlots de Langerhans du pancréas, qui élève le glycémie en stimulant la dégradation du glycogène hépa…
+4ide	Type de molécule composée de carbone, d’hydrogène et d’oxygène, un des constituants essentiels des êtres vivants, qui correspond aux molécules des sucres.
+7s		7	0
+6ique	Relatif aux glucides.
+as		a	0
+5ne	Autre nom de l’oxyde de béryllium, substance particulièrement cancérigène qui doit être manipulée avec de grandes précautions.
+7s		7	0
+6ium	Ancien nom du béryllium.
+9s		9	0
+4kiste	Partisan de la musique de Gluck, compositeur allemand du XVIIIᵉ siècle.
+9s		9	0
+4ocorticoïde	Corticostéroïde qui a une action sur le métabolisme protidique et glucidique.
+5mètre	Appareil pour mesurer la teneur en glucides d’un liquide, aréomètre qui mesure la quantité de sucre des moûts.
+as		a	0
+5néogenèse	Synthèse du glucose à partir de précurseurs non-glucidiques.
+es		e	0
+6ique	Qualifie l'acide gluconique, obtenu par l'oxydation de la fonction aldéhyde du glucose.
+as		a	0
+5se	Sucre simple le plus commun et en particulier dans sa forme D (→ voir dextrose).
+6ée		7	n
+8s		7	1
+6erie	Fabrique de glucose.
+as		a	0
+6és		7	9
+6ide	Molécule formée de l'association d'une molécule appartenant à la famille des oses (telle que le glucose, le fructose, le mannose, le ribose...) et d'une autre …
+3e		4r	1s
+3ée		3er	11
+5s		3er	10
+3ent		4r	15
+4r	Enduire de glu.
+5a		5	l
+6i		5	g
+7ent		5	s
+7s		5	i
+7t		5	q
+6s		5	7
+3èrent		3er	o
+3erez		5	5
+5iez		5	4
+6ons		5	b
+5ons		5	a
+7t		5	f
+4s		4r	1u
+4z		4r	u
+3i	Paille de seigle à usage domestique (emballage du poisson, couverture de toit, liens divers...).
+4ez		3er	d
+4ons		3er	j
+4s		4	0
+3me	Enveloppe de chaque fleur des graminées.
+5lle	Petite glume enveloppant la fleur des graminées.
+8s		8	0
+5s		5	0
+3on	Boson responsable de l’interaction forte.
+5s		5	0
+3s		3	0
+3tamate	Acide aminé de chaîne latérale (-CH₂-CH₂-COO⁻), base conjuguée de l’acide glutamique.
+9s		9	0
+6ine	Acide aminé polaire, non-chargé et hydrophile dont le groupement latéral est un amide (-CH₂-CH₂-CO-NH₂).
+9s		9	0
+7que	Qui concerne le glutamate.
+as		a	0
+5thion	Tripeptide, formé par la condensation de 3 acides aminés : acide glutamique, cystéine et glycine, un antioxydant.
+4en	Réseau de protéines formé lors du pétrissage d’une pâte à base de farine de certaines céréales (comme le blé), lorsque les protéines natives — principalement l…
+6s		6	0
+4ineuse		8x	n
+as		8x	1
+8x	Qui est de la nature du gluten, à la fois visqueux et mucilagineux, collant ou poisseux comme le gluten.
+2ycémie	Taux de glucose dans le sang.
+8s		8	0
+7que	Qui a un rapport avec la glycémie, le taux de sucre dans le sang.
+as		a	0
+5ride	Ester d’acides gras et de glycérol.
+9s		9	0
+7e	Graminée du genre Glyceria qui comprend 40 espèces de vivaces hygrophytes ou aquatiques.
+8s		8	0
+7na		8er	x
+9i		8er	m
+aent		8er	w
+as		8er	t
+at		8er	y
+8âmes		8er	3
+8ant		8er	z
+9s		8er	c
+ase		8er	6
+cnt		8er	h
+cs		8er	8
+biez		8er	e
+cons		8er	p
+8ât		8er	k
+aes		8er	2
+8e	Liquide incolore, transparent, facilement soluble dans l’alcool, d’une saveur sucrée et d’une consistance sirupeuse, qui est le produit de la saponification de…
+8ée		8er	11
+as		8er	10
+8ent		9r	v
+9r	Additionner de glycérine.
+aa		a	l
+bi		a	g
+cent		a	s
+cs		a	i
+ct		a	q
+bs		a	7
+8èrent		8er	o
+8erez		a	5
+aiez		a	4
+bons		a	b
+aons		a	a
+ct		a	f
+9s		9	0
+9z		9r	u
+8iez		8er	d
+9ons		8er	j
+8ons		8er	r
+7que	Qui concerne la glycérine.
+as		a	0
+6o	Synonyme d'alkyde.
+7l	Liquide incolore, transparent, facilement soluble dans l’alcool, d’une saveur sucrée et d’une consistance sirupeuse, qui est le produit de la saponification de…
+8é	Préparation à base de glycérol.
+9s		9	0
+8s		8	0
+7s		7	0
+4ine	Plante grimpante du genre Wisteria de la famille des Fabacées.
+7s		7	0
+4ocolle	Ancien nom de la glycine (acide aminé).
+as		a	0
+5gène	Glucide complexe polymère du glucose.
+9s		9	0
+6enèse	Production de sucre, de glucose.
+bs		b	0
+6énie	Glycogenèse.
+as		a	0
+9que	Qui a rapport à la glycogénie.
+cs		c	0
+8ogenèse	Synthèse, par l’organisme et en particulier le foie et les muscles, du glycogène à partir de glucose pour constituer des réserves d’énergie.
+9lyse	Dégradation du glycogène en glucose.
+ds		d	0
+5l	Diol non géminal, souvent vicinal.
+6ique	Terme présent dans la locution « acide glycolique ».
+as		a	0
+6s		6	0
+6yse	Voie métabolique d’assimilation du glucose et de production d'énergie.
+9s		9	0
+5mètre	Instrument qui indique la pesanteur spécifique du moût du raisin, et, par suite, la quantité de sucre qu’il contient.
+as		a	0
+5protéine	Protéine portant un groupement oligosaccharide et une chaîne polypeptidique.
+ds		d	0
+bque	Qui concerne la glycoprotéine.
+es		e	0
+5surie	Présence de sucre dans l’urine.
+as		a	0
+9que	Relatif à une présence anormale de glucose dans les urines.
+cs		c	0
+3phe	Signe graphique inscrit, gravé en creux
+6s		6	0
+5osate	Aminophosphonate de formule brute C₃H₈NO₅P, à usage d'herbicide de nombreuses graminées et de nombreuses dicotylédones, annuelles ou vivaces, et qui n'est séle…
+as		a	0
+4tique	Art de graver en pierres fines, soit en creux (les intailles), soit en relief (les camées).
+9s		9	0
+5odon	Espèce disparue de tatou géant.
+9s		9	0
+9te	Clade éteint de grands tatous lourdement cuirassés, atteignant jusqu'à 1,5 mètre de hauteur et des masses corporelles maximales d'environ 2 tonnes.
+bs		b	0
+6graphie	Art de la gravure sur pierre précieuse.
+ds		d	0
+6logie	Traité sur les pierres gravées antiques.
+bs		b	0
+6thèque	Musée de pierres gravées ou de sculptures.
+cs		c	0
+3qué	Sur lequel une molécule de glucose — ou plus généralement un glucide — s'est fixée de manière plus ou moins réversible par glycation (ou éventuellement par abu…
+6e		6	n
+7s		6	1
+6s		6	9

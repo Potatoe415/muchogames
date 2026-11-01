@@ -1,17 +1,17 @@
-yuan	Devise officielle de la Chine.
-yuans		yuan	0
-yucca	Nom usuel donné à de nombreuses plantes du genre Yucca de la famille des Asparagaceae (Asparagacées).
-yuccas		yucca	0
-yue	Cantonais.
-yues		yue	0
-yukata	Léger kimono d’été.
-yukatas		yukata	0
-yuko	Plus petit avantage lors d’une compétition (5 points).
-yukonnais	Relatif à l'état du Yukon au Canada.
-yukonnaise		yukonnais	23
-yukonnaises		yukonnais	1
-yukos		yuko	0
-yuppie	Jeune cadre dynamique.
-yuppies		yuppie	0
-yuzu	Agrume originaire de l’est de l’Asie (Citrus junos), hybride de mandarine sauvage (C.
-yuzus		yuzu	0
+0yuan	Devise officielle de la Chine.
+4s		4	0
+2cca	Nom usuel donné à de nombreuses plantes du genre Yucca de la famille des Asparagaceae (Asparagacées).
+5s		5	0
+2e	Cantonais.
+3s		3	0
+2kata	Léger kimono d’été.
+6s		6	0
+3o	Plus petit avantage lors d’une compétition (5 points).
+4nnais	Relatif à l'état du Yukon au Canada.
+9e		9	n
+as		9	1
+4s		4	0
+2ppie	Jeune cadre dynamique.
+6s		6	0
+2zu	Agrume originaire de l’est de l’Asie (Citrus junos), hybride de mandarine sauvage (C.
+4s		4	0
