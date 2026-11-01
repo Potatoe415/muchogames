@@ -1,5 +1,7 @@
 // Choice buttons ([data-setting][data-value]) on the start screen and in the
-// options panel, the two player names, the level record, the resume button.
+// options panel, the level slider and its record, the two player names, the
+// resume button.
+import { LEVEL_IDS } from "./ai.js";
 import { CHOICES, cleanName } from "./store.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -11,6 +13,10 @@ export function bindChoices(onChoose, onNames) {
       const { setting, value } = button.dataset;
       if (CHOICES[setting]?.includes(value)) onChoose(setting, value);
     });
+  });
+  $("scrabble-level-slider").addEventListener("input", (event) => {
+    const level = LEVEL_IDS[Number(event.target.value)];
+    if (level) onChoose("level", level);
   });
   NAME_IDS.forEach((id) =>
     $(id).addEventListener("input", () =>
@@ -36,7 +42,14 @@ export function renderChoices(settings) {
   });
 }
 
+// Slider position, its colour and the record of the selected level.
 export function renderLevel(level, stats, t) {
+  const index = Math.max(0, LEVEL_IDS.indexOf(level));
+  const slider = $("scrabble-level-slider");
+  slider.value = String(index);
+  slider.setAttribute("aria-valuetext", t(level));
+  slider.closest(".sc-slider").dataset.level = level;
+  slider.style.setProperty("--fill", index / (LEVEL_IDS.length - 1));
   const { won, played } = stats[level];
   $("scrabble-level-record").textContent = played
     ? t("levelRecord", { won, played })

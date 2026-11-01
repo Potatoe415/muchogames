@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="scores.css" />
     <link rel="stylesheet" href="stage.css" />
     <link rel="stylesheet" href="board.css" />
@@ -239,31 +240,51 @@
 
           <div class="sc-field" data-id="scrabble-level-field" data-solo-only>
             <p class="sc-label" data-i18n="level"></p>
-            <div class="sc-seg">
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="level"
-                data-value="easy"
-                data-id="scrabble-level-easy"
-                data-i18n="easy"
-              ></button>
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="level"
-                data-value="medium"
-                data-id="scrabble-level-medium"
-                data-i18n="medium"
-              ></button>
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="level"
-                data-value="hard"
-                data-id="scrabble-level-hard"
-                data-i18n="hard"
-              ></button>
+            <div class="sc-slider" data-level="medium">
+              <input
+                type="range"
+                class="sc-range"
+                min="0"
+                max="3"
+                step="1"
+                data-id="scrabble-level-slider"
+                aria-label="Niveau"
+                data-i18n-aria="level"
+              />
+              <div class="sc-ticks">
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="level"
+                  data-value="easy"
+                  data-id="scrabble-level-easy"
+                  data-i18n="easy"
+                ></button>
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="level"
+                  data-value="medium"
+                  data-id="scrabble-level-medium"
+                  data-i18n="medium"
+                ></button>
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="level"
+                  data-value="hard"
+                  data-id="scrabble-level-hard"
+                  data-i18n="hard"
+                ></button>
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="level"
+                  data-value="expert"
+                  data-id="scrabble-level-expert"
+                  data-i18n="expert"
+                ></button>
+              </div>
             </div>
             <p class="sc-record" data-id="scrabble-level-record"></p>
           </div>

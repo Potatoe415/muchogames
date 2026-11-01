@@ -1,12 +1,13 @@
-// The computer player. Hard plays the best score plus a small bonus for the
-// letters it keeps; medium and easy aim at a share of the best score, easy
-// with short words only. With no move it swaps (if the bag allows) or passes.
+// The computer player. Expert plays the best score plus a small bonus for
+// the letters it keeps; the other levels aim at a share of the best score,
+// easy with short words only. With no move it swaps (if the bag allows) or
+// passes.
 import { generateMoves } from "./movegen.js";
 import { BLANK, RACK_SIZE, VOWELS } from "./tiles.js";
 
-export const LEVEL_IDS = ["easy", "medium", "hard"];
+export const LEVEL_IDS = ["easy", "medium", "hard", "expert"];
 
-const TARGET = { easy: 0.35, medium: 0.6 };
+const TARGET = { easy: 0.3, medium: 0.55, hard: 0.8 };
 const KEEP = {
   [BLANK]: 22,
   S: 7,
@@ -40,7 +41,7 @@ function leaveValue(left) {
   return value - 3 * dupes;
 }
 
-function pickHard(moves, rack, bagCount) {
+function pickExpert(moves, rack, bagCount) {
   if (!bagCount) return moves.reduce((a, b) => (b.score > a.score ? b : a));
   const rated = moves.map((m) => [
     m.score + leaveValue(leftover(rack, m.tiles)),
@@ -75,8 +76,8 @@ export function chooseMove({ board, rack, bagCount, level, dict }) {
   const moves = generateMoves(board, rack, dict);
   if (!moves.length) return noMove(rack, bagCount);
   const move =
-    level === "hard"
-      ? pickHard(moves, rack, bagCount)
+    level === "expert"
+      ? pickExpert(moves, rack, bagCount)
       : pickTarget(moves, level);
   return { kind: "play", ...move };
 }

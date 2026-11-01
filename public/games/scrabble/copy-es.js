@@ -21,6 +21,7 @@ export const STRINGS = {
   easy: "Fácil",
   medium: "Medio",
   hard: "Difícil",
+  expert: "Experto",
   levelRecord: "Victorias en este nivel: {won} de {played}",
   noRecord: "Aún no hay partidas en este nivel",
   players: "Jugadores",

@@ -2,7 +2,7 @@
 // Everything read back is validated: a bad value falls back to the default.
 import { LEVEL_IDS } from "./ai.js";
 
-const SETTINGS_KEY = "scrabble-settings";
+const SETTINGS_KEY = "scrabble-settings-v2";
 const SAVED_KEY = "scrabble-saved-game";
 const STATS_KEY = "scrabble-stats";
 const NAME_MAX = 16;
@@ -14,7 +14,7 @@ export const CHOICES = {
   hints: ["on", "off"]
 };
 
-const DEFAULTS = { mode: "solo", level: "medium", sound: "on", hints: "on" };
+const DEFAULTS = { mode: "solo", level: "medium", sound: "on", hints: "off" };
 
 export function readText(key, fallback) {
   try {

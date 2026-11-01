@@ -1,6 +1,6 @@
 # Scrabble — notes for agents
 
-French Scrabble vs the computer (3 levels) or two players on one device.
+French Scrabble vs the computer (4 levels, slider on the start screen) or two players on one device.
 Words are always French (ODS 9); the interface is FR/EN/ES. Vanilla ES
 modules, DOM board of `<button>` cells, no dependency, no worker (a move
 search takes ≤ ~120 ms on a desktop, runs during the 750 ms "thinking" pause).
@@ -16,7 +16,7 @@ Read this before opening the sources.
 | `draft.js` | Pure helpers for the draft `[{ k: rack slot, i: cell, l: letter }]`, `slotFor` (a typed letter uses a blank if missing), `draftFits` (save check). |
 | `rules.js` | Pure rules: `analyzeMove(board, tiles)` → `{ error }` (`line`, `gap`, `center`, `short`, `detached`) or `{ words, score, bingo }`; `invalidWords(analysis, dict)`. |
 | `movegen.js` | Appel & Jacobson move generator (anchors, left parts, cross-checks, prefix cache). Every move scored with `analyzeMove`. |
-| `ai.js` | Levels: easy (aims at 35 % of the best score, words ≤ 6 letters), medium (60 %), hard (best score + leave value). No move: swap (bag ≥ 7) or pass. `bestMove` = hint. |
+| `ai.js` | Levels: easy (aims at 30 % of the best score, words ≤ 6 letters), medium (55 %), hard (80 %), expert (best score + leave value). No move: swap (bag ≥ 7) or pass. `bestMove` = hint. |
 | `game.js` | Match state and transitions (`playTiles`, `swapTiles`, `passTurn`), end + rack adjustments, `restoreGame` (shape + every one of the 102 tiles accounted for). |
 | `dict.js` | Loads `/data/scrabble/ods9.txt` once, sorted array + binary search (`has`, `hasPrefix`). |
 | `tiles.js` | French set (102 tiles, values), premium layout, constants. Board cell: `""`, uppercase letter, or lowercase = blank played as that letter. Rack: `"?"` = blank. |
@@ -24,7 +24,8 @@ Read this before opening the sources.
 | `input.js`, `keys.js` | Pointer tap/drag (ghost lifted above the finger on touch), keyboard (letters, Backspace, arrows, Enter, Escape). |
 | `dialogs.js`, `hud.js`, `end.js` | Sheets (blank picker, swap/pass, letters left, handoff), score cards + guide line + buttons, end card. |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings + rules HTML. |
-| `styles.css`, `scores.css`, `stage.css`, `board.css`, `sheets.css` | Page + start screen; score cards; stage layout (portrait column, aspect ≥ 6/5 side column); board/tiles/rack; sheets. |
+| `setup.js` | Start-screen choices, level slider (`scrabble-level-slider`, 0–3, labels below are `data-setting` buttons) + the level's record, names, resume button. |
+| `styles.css`, `slider.css`, `scores.css`, `stage.css`, `board.css`, `sheets.css` | Page + start screen; level slider; score cards; stage layout (portrait column, aspect ≥ 6/5 side column); board/tiles/rack; sheets. |
 
 ## Rules in code
 
@@ -38,7 +39,7 @@ Read this before opening the sources.
 
 - Key `scrabble-saved-game` = `{ config: { mode, level, names }, game, draft }`. Written at match start, after every change (draft edits included) and on `pagehide` / `visibilitychange`. Cleared in `onEnd`.
 - A computer turn in progress restarts on resume; two-player resume always shows the handoff sheet first (racks stay hidden).
-- Other keys: `scrabble-settings` (mode, level, sound, hints, names), `scrabble-stats` (`{ <level>: { won, played } }`).
+- Other keys: `scrabble-settings-v2` (mode, level, sound, hints — the Hint button, off by default, switched on in the options panel — names), `scrabble-stats` (`{ <level>: { won, played } }`).
 
 ## Dictionary
 
