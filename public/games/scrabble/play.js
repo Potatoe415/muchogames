@@ -1,7 +1,7 @@
 // The match on screen: live preview, play / swap / pass / hint, the
 // computer's turns in solo and the "pass the device" screen between two
 // players. Editing the draft lives in edit.js.
-import { bestMove, chooseMove } from "./ai.js";
+import { bestMove, chooseMove, KID_HINT_MAX } from "./ai.js";
 import { createBoardView } from "./board-view.js";
 import { define } from "./define.js";
 import { draftAt, draftTiles } from "./draft.js";
@@ -41,6 +41,8 @@ export function createPlay(opts) {
   const { els, game, config, t, dialogs, sound } = opts;
   const dict = () => opts.dicts[game.turn];
   const solo = config.mode === "solo";
+  // Kid level: the Hint button is always there and suggests short words.
+  const kid = solo && config.level === "kid";
   const s = {
     draft: opts.draft || [],
     cursor: null,
@@ -76,7 +78,7 @@ export function createPlay(opts) {
       hidden: s.hidden || game.over !== null
     });
     const names = opts.names();
-    const hints = opts.hints();
+    const hints = opts.hints() || kid;
     const { langs } = opts;
     renderHud(s, { game, names, langs, t, solo, canAct: canAct(), hints });
   }
@@ -163,7 +165,8 @@ export function createPlay(opts) {
 
   function hint() {
     if (!canAct()) return;
-    const move = bestMove(game.board, myRack(), dict());
+    const maxLength = kid ? KID_HINT_MAX : Infinity;
+    const move = bestMove(game.board, myRack(), dict(), maxLength);
     if (move) return edit.layOut(move.tiles);
     s.draft = [];
     s.notice = "noMove";

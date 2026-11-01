@@ -1,6 +1,6 @@
 # Scrabble — notes for agents
 
-Scrabble vs the computer (4 levels, slider on the start screen) or two players on one device.
+Scrabble vs the computer (5 levels, slider on the start screen) or two players on one device.
 Words in French, English or Spanish (start-screen choice `words`, defaults to
 the interface language on a first visit), or "FR + ES": each player checked
 against their own language (`p1Lang` = player 1's / your language; `playerLangs`
@@ -21,7 +21,7 @@ Read this before opening the sources.
 | `draft.js` | Pure helpers for the draft `[{ k: rack slot, i: cell, l: letter }]`, `slotFor` (a typed letter uses a blank if missing), `draftFits` (save check). |
 | `rules.js` | Pure rules: `analyzeMove(board, tiles)` → `{ error }` (`line`, `gap`, `center`, `short`, `detached`) or `{ words, score, bingo }`; `invalidWords(analysis, dict)`. |
 | `movegen.js` | Appel & Jacobson move generator (anchors, left parts, cross-checks, prefix cache). Every move scored with `analyzeMove`. |
-| `ai.js` | Levels: easy (aims at 30 % of the best score, words ≤ 6 letters), medium (55 %), hard (80 %), expert (best score + leave value). No move: swap (bag ≥ 7) or pass. `bestMove` = hint. |
+| `ai.js` | Levels: kid (aims at 12 % of the best score, at most ~10 pts, words of 3–4 letters; in kid solo the Hint button always shows and suggests main words ≤ 5 letters, `KID_HINT_MAX`), easy (30 %, words ≤ 6 letters), medium (55 %), hard (80 %), expert (best score + leave value). No move: swap (bag ≥ 7) or pass. `bestMove` = hint. |
 | `game.js` | Match state and transitions (`playTiles`, `swapTiles`, `passTurn`), end + rack adjustments, `restoreGame` (shape + every tile of the active set accounted for). |
 | `dict.js` | `loadDictionary(lang)`: `/data/scrabble/ods9.txt` (fr), `enable.txt` (en), `es.txt` (es), each once; sorted array + binary search (`has`, `hasPrefix`). |
 | `tiles.js` | Tile sets per word language (fr 102 official; en 100 official; es 100 = official minus the CH/LL/RR tiles, given to C/L/R; Ñ is a letter, no K/W), `useTileSet(lang)` switches the live `LETTERS`/`LETTER_INDEX`/values/bag, premium layout, constants. Board cell: `""`, uppercase letter, or lowercase = blank played as that letter. Rack: `"?"` = blank. |
@@ -30,7 +30,7 @@ Read this before opening the sources.
 | `dialogs.js`, `hud.js`, `end.js` | Sheets (blank picker, swap/pass, letters left, definitions, handoff), score cards + guide line + buttons, end card. |
 | `define.js`, `define-view.js` | "Définir" button (replaces the in-match ✖; the header back button stays): arms a tap-a-word mode (`s.lookup` in `play.js`, works any time, even on the computer's turn or after the end), then `define(word, lang)` asks Wiktionary (fr/en/es editions, CORS `origin=*`, `Api-User-Agent` header): accent-insensitive search → first definition of the language section, first sentence only; inflected forms ("pluriel de", "plural of", "forma del plural de"…) followed once to the base word. Cached per page. Text is inserted as plain text only. The word's language = the current player's if valid there (matters in FR + ES). |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings + rules HTML. |
-| `setup.js` | Start-screen choices, level slider (`scrabble-level-slider`, 0–3, labels below are `data-setting` buttons) + the level's record, names, resume button. |
+| `setup.js` | Start-screen choices, level slider (`scrabble-level-slider`, 0–4, labels below are `data-setting` buttons) + the level's record, names, resume button. |
 | `styles.css`, `slider.css`, `scores.css`, `stage.css`, `board.css`, `sheets.css` | Page + start screen; level slider; score cards; stage layout (portrait column, aspect ≥ 6/5 side column); board/tiles/rack; sheets. |
 
 ## Rules in code

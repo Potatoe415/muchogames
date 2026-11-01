@@ -1,10 +1,15 @@
-/* Level slider on the start screen: a 4-step range whose thumb centres line
-   up with the 4 tappable labels below it (one grid column each). The fill
-   and thumb take the soft colour of the selected level. */
+/* Level slider on the start screen: a 5-step range whose thumb centres line
+   up with the 5 tappable labels below it (one grid column each, so the range
+   spans 4/5 of the width plus one thumb). The fill and thumb take the soft
+   colour of the selected level. */
 .sc-slider {
   --thumb: 30px;
   --track: 10px;
   --level-color: #c9a24a;
+}
+
+.sc-slider[data-level="kid"] {
+  --level-color: #7aa7c7;
 }
 
 .sc-slider[data-level="easy"] {
@@ -21,7 +26,7 @@
 
 .sc-range {
   display: block;
-  width: calc(75% + var(--thumb));
+  width: calc(80% + var(--thumb));
   height: var(--thumb);
   margin: 0 auto;
   background: transparent;
@@ -83,7 +88,7 @@
 
 .sc-ticks {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin-top: 4px;
 }
 
@@ -94,7 +99,7 @@
   background: none;
   color: #7d918a;
   font: inherit;
-  font-size: 0.85rem;
+  font-size: clamp(0.7rem, 3.3vw, 0.85rem);
   font-weight: 700;
   cursor: pointer;
   touch-action: manipulation;

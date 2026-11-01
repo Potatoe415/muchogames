@@ -27,6 +27,7 @@ export const STRINGS = {
   modeSolo: "Contre l'ordinateur",
   modeDuo: "À deux",
   level: "Niveau",
+  kid: "Enfant",
   easy: "Facile",
   medium: "Moyen",
   hard: "Difficile",
@@ -104,6 +105,7 @@ export const RULES = `
   <li>Le premier mot passe par l'étoile ★ au centre.</li>
   <li>Tous les mots formés doivent exister dans le dictionnaire de la langue choisie : le jeu vérifie avant de valider, sans pénalité. Français : Officiel du Scrabble (ODS 9). Anglais : ENABLE. Espagnol : liste libre de 635 000 mots.</li>
   <li>Les accents ne comptent pas. En espagnol, Ñ est une lettre à part ; CH, LL et RR s'écrivent avec deux lettres. Chaque langue a ses propres lettres et valeurs.</li>
+  <li><strong>Niveau Enfant :</strong> l'ordinateur pose de petits mots, et le bouton Indice est toujours là pour proposer un mot court.</li>
   <li><strong>FR + ES :</strong> un joueur pose des mots français, l'autre des mots espagnols, sur le même plateau. Seuls les mots formés par le joueur doivent exister dans sa langue. Le sac est commun (valeurs françaises, avec le Ñ).</li>
   <li><strong>Points :</strong> chaque lettre a sa valeur. LD et LT doublent ou triplent la lettre, MD et MT le mot entier (l'étoile compte MD). Une case ne compte qu'au moment où on la couvre.</li>
   <li>Le <strong>joker</strong> remplace n'importe quelle lettre et vaut 0 point.</li>
