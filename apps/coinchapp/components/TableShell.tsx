@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { MatchInfo } from "@/lib/client/matchCoin";
+import { CardBackProvider } from "./CardBackContext";
 import { MatchGate } from "./MatchGate";
 
 /**
@@ -7,7 +8,8 @@ import { MatchGate } from "./MatchGate";
  * `--card-*-w` / `--table-hud-top` / `--slap-circle-size` on `.table-shell-metrics`
  * (`12svmin` / `36svmin`, clamped), and keeps a safe-area spacer under the hand.
  * Scene children should be `relative h-0 min-h-0 flex-1`.
- * `match` turns on the platform's per-match coin and leave confirmation.
+ * `match` turns on the platform's per-match coin and leave confirmation, and
+ * picks the card back stored for `match.game`.
  */
 export function TableShell({
   children,
@@ -28,7 +30,7 @@ export function TableShell({
         aria-hidden="true"
       />
       <div className="table-shell-metrics relative flex min-h-0 flex-1 flex-col">
-        {children}
+        <CardBackProvider game={match?.game}>{children}</CardBackProvider>
         <div
           className="min-h-[calc(env(safe-area-inset-bottom,0px)+12px)] shrink-0"
           aria-hidden="true"

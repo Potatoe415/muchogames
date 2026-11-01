@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { CardBackPicker } from "@/components/CardBackPicker";
 import { HomeTopBar } from "@/components/HomeTopBar";
 import { forceUpdate } from "@/lib/client/forceUpdate";
 import { useI18n } from "@/lib/client/i18n";
@@ -65,6 +66,8 @@ export default function BataillecorsePage() {
           {t("playAdhoc")}
           <span className="mt-0.5 block text-xs font-medium text-[var(--surface)]/80">{t("adhocOfflineNote")}</span>
         </button>
+
+        <CardBackPicker game="bataillecorse" />
       </div>
 
       <div

@@ -60,6 +60,12 @@ const TRANSLATIONS = {
     bataillecorseFaceToFaceButton: "Jouer face à face",
     bataillecorseFaceToFaceNote: "Un téléphone, deux joueurs, assis face à face",
     forceRefreshButton: "Forcer le refresh",
+    cardBackLabel: "Dos des cartes",
+    cardBackClassic: "Classique",
+    cardBackHogwarts: "Sorciers",
+    cardBackCasino: "Casino",
+    cardBackStars: "Étoiles",
+    cardBackGarden: "Jardin",
     playOnline: "Jouer en ligne",
     onlineSubtitle: "Créez une partie ou rejoignez une room existante.",
     beloteOnlineTitle: "la Belote en ligne",
@@ -282,6 +288,12 @@ const TRANSLATIONS = {
     bataillecorseFaceToFaceButton: "Play face to face",
     bataillecorseFaceToFaceNote: "One phone, two players, sitting across from each other",
     forceRefreshButton: "Force refresh",
+    cardBackLabel: "Card back",
+    cardBackClassic: "Classic",
+    cardBackHogwarts: "Wizards",
+    cardBackCasino: "Casino",
+    cardBackStars: "Stars",
+    cardBackGarden: "Garden",
     playOnline: "Play online",
     onlineSubtitle: "Create a game or join an existing room.",
     beloteOnlineTitle: "Play Belote online",
@@ -462,7 +474,7 @@ const TRANSLATIONS = {
   },
 } as const;
 
-type TranslationKey = keyof (typeof TRANSLATIONS)["fr"];
+export type TranslationKey = keyof (typeof TRANSLATIONS)["fr"];
 
 const I18nContext = createContext<I18nContextValue | null>(null);
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { CardBackPicker } from "@/components/CardBackPicker";
 import { HomeTopBar } from "@/components/HomeTopBar";
 import { SOLITAIRE_LABELS } from "@/components/solitaireLabels";
 import { useI18n } from "@/lib/client/i18n";
@@ -42,6 +43,8 @@ export default function SolitairePage() {
           {labels.draw3}
           <span className="mt-0.5 block text-xs font-medium text-[var(--surface)]/80">{labels.draw3Note}</span>
         </button>
+
+        <CardBackPicker game="solitaire" />
       </div>
     </main>
   );

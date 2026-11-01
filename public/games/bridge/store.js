@@ -14,7 +14,8 @@ export const CHOICES = {
   hints: ["on", "off"],
   autoplay: ["on", "off"],
   deck: ["two", "four"],
-  openHands: ["off", "on"]
+  openHands: ["off", "on"],
+  back: ["classic", "hogwarts", "casino", "stars", "garden"]
 };
 
 const DEFAULTS = {
@@ -24,7 +25,8 @@ const DEFAULTS = {
   hints: "off",
   autoplay: "on",
   deck: "two",
-  openHands: "off"
+  openHands: "off",
+  back: "classic"
 };
 
 export function readText(key, fallback) {

@@ -2,8 +2,10 @@
 
 import type { CSSProperties } from "react";
 import type { CardOf, Suit } from "@/lib/cards";
+import { cardBackSrc, type CardBackId } from "@/lib/client/cardBack";
 import { faceRank } from "@/lib/client/cardFace";
 import { useI18n } from "@/lib/client/i18n";
+import { useCardBack } from "./CardBackContext";
 
 const SUIT_SYMBOL: Record<Suit, string> = { H: "\u2665", D: "\u2666", C: "\u2663", S: "\u2660" };
 const RED_SUITS: Suit[] = ["H", "D"];
@@ -101,13 +103,21 @@ function CornerIndex({ rank, suit, side }: { rank: string; suit: Suit; side: "le
 }
 
 export function CardBack({ size = "md", dataId }: { size?: CardSize; dataId?: string }) {
+  return <CardBackArt back={useCardBack()} style={cardBoxStyle(size)} dataId={dataId} />;
+}
+
+/** One back at any box size: the classic CSS back, or a picture stretched to
+ *  the 2:3 box so its own frame stays whole. */
+export function CardBackArt({ back, style, dataId }: { back: CardBackId; style?: CSSProperties; dataId?: string }) {
+  const src = cardBackSrc(back);
   return (
     <div
       data-id={dataId}
-      style={cardBoxStyle(size)}
+      data-card-back={back}
+      style={src ? { ...style, backgroundImage: `url('${src}')`, backgroundSize: "100% 100%" } : style}
       className="relative overflow-hidden rounded-lg border-[0.5px] border-[var(--card-ink)] bg-[var(--card-back)] shadow-[0_2px_0_rgba(32,40,58,0.75)]"
     >
-      <div className="absolute inset-[8%] rounded-sm border-[0.5px] border-[var(--card-back-line)]/60" />
+      {!src && <div className="absolute inset-[8%] rounded-sm border-[0.5px] border-[var(--card-back-line)]/60" />}
     </div>
   );
 }

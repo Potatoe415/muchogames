@@ -24,7 +24,7 @@ modules, no dependency. Read this before opening the sources.
 | `dds.js` | Double-dummy solver (alpha-beta, transposition table per trick, touching cards merged, node budget). Too slow for a full 13-trick deal; used for endings only. |
 | `robot.js`, `robot-worker.js`, `robot-view.js` | Module worker for robot cards and claim checks (main-thread fallback). `playView` gives a robot only what its seat sees. |
 | `table-view.js`, `hand-view.js`, `auction-view.js`, `bidbox.js`, `panels.js` | Rendering. Cards: `data-id="bridge-card-<suit><rank>"` (`bridge-card-sa`); auction calls `bridge-auction-call-<n>`; bidding box `bridge-bid-level-<n>`, `bridge-bid-strain-<name>`, `bridge-bid-pass/double/redouble`. |
-| `setup.js`, `store.js` | Options panel sections (built in JS between Language and Rules), level slider, localStorage: `bridge-settings`, `bridge-saved-match`, `bridge-stats` (`{ <level>: { won, played } }`). |
+| `setup.js`, `store.js` | Options panel sections (built in JS between Language and Rules), level slider, localStorage: `bridge-settings`, `bridge-saved-match`, `bridge-stats` (`{ <level>: { won, played } }`). The card back (`back` in `bridge-settings`, start screen only) sets `data-back` on `bridge-app`; `cards.css` maps it to `--br-back`, pictures in `public/shared/card-backs/` (decision 0056). |
 | `saving.js` | Writes the match in progress with its view (`saveProgress`, skipped once the match is over) and on `pagehide` / `visibilitychange` hidden. |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings, bid-explanation tags, rules HTML. |
 | `styles.css`, `slider.css`, `table.css`, `cards.css`, `bidding.css`, `panels.css` | Page/start screen; level slider; table layout (card size from viewport); card faces; auction + bidding box; overlays. |

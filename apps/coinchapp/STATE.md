@@ -2,21 +2,21 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Six card games. In French the faces print V (valet), D (dame), R (roi). English keeps J, Q, K. The ace stays A. Big screens still use the remote (0078).
+Status: Six card games. Each home screen has a card-back picker (Classique, Sorciers, Casino, Étoiles, Jardin), stored per game (0079). French faces print V, D, R. Big screens use the remote (0078).
 Focus: n/a (task complete on this side)
-Level: L1 (French card faces)
+Level: L2 (card back across the six games)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `lib/client/cardFace.ts`, `components/PlayingCard.tsx`, `components/cardSprite.ts`, `components/SolitaireWinCascade.tsx`
+- Relevant_Files: `lib/client/cardBack.ts`, `components/CardBackContext.tsx`, `components/CardBackPicker.tsx`, `components/PlayingCard.tsx` (`CardBack`, `CardBackArt`), `components/TableShell.tsx`, `public/card-backs/`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0078, 0077, 0076
+- Relevant_Decisions: 0079, 0078, 0077, 0076
 
 Next:
-- Owner: on the 4K TV browser, play Solitaire and one trick game with the remote: arrows reach every card, OK plays, Back closes the settings panel (or leaves to the hub on Android TV: match saved). Is 400 ms right for a double OK / double tap?
+- Owner: on a phone, pick a back on each home screen, start a match, check the opponents' hands, Bataille corse piles and Solitaire stock.
+- Owner: on the 4K TV browser, play Solitaire and one trick game with the remote: arrows reach every card (and the back picker), OK plays, Back closes the settings panel (or leaves to the hub on Android TV: match saved). Is 400 ms right for a double OK / double tap?
 - Owner: play one Belote match online and one ad-hoc between two phones.
-- Owner: provide splash art + hub thumbnail for Belote (`public/belote-full.jpg`, root `public/games/coinchapp/assets/thumbnail-belote.jpg`), or ask for them to be generated.
-- Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote; root font size scales `TableShell` metrics; `RemoteNav` in the shared base) edits; not applied yet.
+- Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules, card-back picker) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote; root font size scales `TableShell` metrics; `RemoteNav` and `CardBackProvider` in the shared base) edits; not applied yet.
 - Owner: set `ADMIN_USER_IDS` on the `coinchapp` Vercel project (Production + Preview), same value as the hub, then redeploy.
 - Move to `cartes.muchogames.win` once the owner approves adding the domain (root BACKLOG).
 
@@ -31,8 +31,8 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
-- 2026-11-01 French faces: valet V, dame D, roi R. English stays J, Q, K. Browser: Solitaire FR→EN→FR; Coinche hand showed V/D/R while `data-card` stayed J/Q/K. `npm test` 373/373, `tsc` clean, `npm run build` clean, lint: only the known `useMatchStats.ts:220` error.
+- 2026-11-01 Card back per game (0079). Browser: Solitaire Sorciers on stock; Coinche Casino on the 24 opponent backs, Coinche kept its own choice. `npm test` 377/377, `tsc` clean, `npm run build` clean, lint: only the known `useMatchStats.ts:220` error.
+- 2026-11-01 French faces: valet V, dame D, roi R. English stays J, Q, K.
 - 2026-11-01 Remote + arrows (decision 0078).
 - 2026-11-01 Solitaire double tap (decision 0077).
-- 2026-11-01 Big screens (decision 0076).
 - 2026-10-31 Belote (decision 0075).

@@ -170,6 +170,7 @@ function applyLanguage() {
 
 function applySettings() {
   $("bridge-app").dataset.deck = page.settings.deck;
+  $("bridge-app").dataset.back = page.settings.back;
   setSoundEnabled(page.settings.sound === "on");
   renderChoices(page.settings);
   showLevel();

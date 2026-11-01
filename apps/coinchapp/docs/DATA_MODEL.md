@@ -305,3 +305,9 @@ Impact: Only wins are ever recorded for `solitaire`. A saved game is resumed onl
 Change: No SQL change. `GameType` gains `"belote"`; its `state` is a Coinche `GameState` with three optional fields: `variant: "belote"` (absent = Coinche), `turnedCard` (public face-up card, then held by the taker) and `stock` (the 11 undealt cards during bidding, server-only, never in a `PlayerView`; `[]` once someone takes). A take is stored in `bids` as `{ seat, type: "bid", suit }` with no `value`; `contract.value` is `82`. The Coinche `PlayerView` gains optional `variant` and `turnedCard`. Belote `settings` keep only `targetPoints`, `botPunch`, `stillThereTimeoutSec`, `botThinkMs`. `COINCHAPP_GAMES` gains `belote`. Solo saves under `coinchapp:local-belote:v1`.
 Reason: Decision 0075.
 Impact: Existing Coinche rows have no `variant` and behave as before.
+
+## 2026-11-01 - Card back per game
+
+Change: No SQL change. New `localStorage` keys `coinchapp-card-back:<game>` (one per `CoinchappGame`), value `classic` | `hogwarts` | `casino` | `stars` | `garden`; anything else reads as `classic`.
+Reason: Decision 0079.
+Impact: Never sent to the server or to other players.
