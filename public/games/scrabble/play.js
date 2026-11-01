@@ -5,6 +5,7 @@ import { bestMove, chooseMove, KID_HINT_MAX } from "./ai.js";
 import { createBoardView } from "./board-view.js";
 import { define } from "./define.js";
 import { draftAt, draftTiles } from "./draft.js";
+import { makeKidDraw } from "./easy-draw.js";
 import { createEditor } from "./edit.js";
 import {
   canSwap,
@@ -43,6 +44,7 @@ export function createPlay(opts) {
   const solo = config.mode === "solo";
   // Kid level: the Hint button is always there and suggests short words.
   const kid = solo && config.level === "kid";
+  const kidDraw = kid ? makeKidDraw(opts.dicts[0]) : undefined;
   const s = {
     draft: opts.draft || [],
     cursor: null,
@@ -115,7 +117,7 @@ export function createPlay(opts) {
   function play() {
     if (!canAct() || s.preview.tone !== "ok") return false;
     const { analysis } = s.preview;
-    playTiles(game, draftTiles(s.draft), analysis);
+    playTiles(game, draftTiles(s.draft), analysis, kidDraw);
     (analysis.bingo ? sound.bingo : sound.play)();
     afterMove();
     return true;
@@ -179,7 +181,7 @@ export function createPlay(opts) {
     refresh();
     const choice = await dialogs.swapOrPass(myRack(), canSwap(game), t);
     if (!choice || game.over) return refresh();
-    if (choice.kind === "swap") swapTiles(game, choice.letters);
+    if (choice.kind === "swap") swapTiles(game, choice.letters, kidDraw);
     else passTurn(game);
     sound.tap();
     afterMove();

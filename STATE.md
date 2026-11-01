@@ -31,7 +31,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-11-01 Scrabble Enfant level (left of Facile): computer plays 3–4-letter words for ~10 pts (~108 pts/game vs Facile in Node sims), Hint always shown, short words.
+- 2026-11-01 Scrabble Enfant level (left of Facile): computer plays 3–4-letter words for ~10 pts (~108 pts/game vs Facile in Node sims), Hint always shown, short words. The child's draws are picked kindly (`easy-draw.js`): 300-rack test, words formable ×2 (FR 37 → 73), never a 8+ letter, never a rack with no word.
 - 2026-11-01 Scrabble: in-match ✖ Quit replaced by "Définir" (book): tap a board word → short Wiktionary definition (base word for plurals/conjugations), FR/EN/ES. Browser-checked (ETALENT → étaler).
 - 2026-11-01 Scrabble FR + ES: each player's words checked in their own language, shared 102-tile bag with Ñ, FR/ES tags. Node sims of full mixed games; browser duo start checked.
 - 2026-11-01 Scrabble: word language FR/EN/ES on the start screen, each with its own tile set and list (EN ENABLE, ES 635k words, Ñ tile, no CH/LL/RR tiles). Node sims of full games in all 3; browser: Spanish match + old French save resumed.

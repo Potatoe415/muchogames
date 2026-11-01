@@ -16,19 +16,21 @@ const SCORELESS_END = 4;
 
 const asRackLetter = (l) => (l === l.toLowerCase() ? BLANK : l);
 
-export function createGame() {
-  const bag = shuffle(fullBag());
-  const racks = [bag.splice(-RACK_SIZE), bag.splice(-RACK_SIZE)];
-  return {
+// chooser (optional): picks player 1's draws (kid level, easy-draw.js).
+export function createGame(chooser) {
+  const game = {
     board: Array(CELLS).fill(""),
-    bag,
-    racks,
+    bag: shuffle(fullBag()),
+    racks: [[], []],
     scores: [0, 0],
     turn: 0,
     history: [],
     scoreless: 0,
     over: null
   };
+  refill(game, 0, chooser);
+  refill(game, 1);
+  return game;
 }
 
 function removeFromRack(rack, letter) {
@@ -36,9 +38,17 @@ function removeFromRack(rack, letter) {
   if (k >= 0) rack.splice(k, 1);
 }
 
-function refill(game, p) {
+// chooser(rack, bag, need) -> bag indices; without one, the next tiles.
+function refill(game, p, chooser) {
   const rack = game.racks[p];
-  while (rack.length < RACK_SIZE && game.bag.length) rack.push(game.bag.pop());
+  const need = Math.min(RACK_SIZE - rack.length, game.bag.length);
+  if (need <= 0) return;
+  const picks = chooser
+    ? chooser(rack, game.bag, need)
+    : [...game.bag.keys()].slice(-need);
+  picks
+    .sort((a, b) => b - a)
+    .forEach((i) => rack.push(...game.bag.splice(i, 1)));
 }
 
 function finish(game, reason, outPlayer) {
@@ -57,13 +67,13 @@ function endTurn(game) {
   game.turn = 1 - p;
 }
 
-export function playTiles(game, tiles, analysis) {
+export function playTiles(game, tiles, analysis, chooser) {
   const p = game.turn;
   tiles.forEach(({ i, l }) => {
     game.board[i] = l;
     removeFromRack(game.racks[p], asRackLetter(l));
   });
-  refill(game, p);
+  refill(game, p, chooser);
   game.scores[p] += analysis.score;
   game.history.push({
     p,
@@ -79,10 +89,10 @@ export function playTiles(game, tiles, analysis) {
 export const canSwap = (game) => game.bag.length >= RACK_SIZE;
 
 // New letters are drawn before the swapped ones go back into the bag.
-export function swapTiles(game, letters) {
+export function swapTiles(game, letters, chooser) {
   const p = game.turn;
   letters.forEach((letter) => removeFromRack(game.racks[p], letter));
-  refill(game, p);
+  refill(game, p, chooser);
   game.bag = shuffle([...game.bag, ...letters]);
   game.history.push({ p, kind: "swap", count: letters.length });
   game.scoreless += 1;

@@ -4,6 +4,7 @@
 import { createDialogs } from "./dialogs.js";
 import { loadDictionary } from "./dict.js";
 import { draftFits } from "./draft.js";
+import { makeKidDraw } from "./easy-draw.js";
 import { renderEnd as paintEnd } from "./end.js";
 import { createGame, restoreGame } from "./game.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
@@ -209,7 +210,9 @@ async function startMatch() {
   page.starting = false;
   if (!allowed) return void (page.play && returnToStart());
   useTileSet(config.words);
-  const game = createGame();
+  const kid = config.mode === "solo" && config.level === "kid";
+  const kidLang = playerLangs(config.words, config.p1Lang)[0];
+  const game = createGame(kid ? makeKidDraw(page.dicts[kidLang]) : undefined);
   saveGame(config, game, []);
   renderResume(null);
   mount(game, config, []);
