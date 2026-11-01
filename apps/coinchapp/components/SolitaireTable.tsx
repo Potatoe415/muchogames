@@ -13,11 +13,12 @@ import { Tableau, TopRow } from "./SolitairePiles";
 import { SolitaireWinCascade } from "./SolitaireWinCascade";
 import { TableShell } from "./TableShell";
 import { useSolitaireDrag } from "./useSolitaireDrag";
+import { useSolitaireFanRoom } from "./useSolitaireFanRoom";
 
-/** 7 columns (+ gaps) across the width; the tallest possible column (6 face
- *  down + K..A face up) plus the top row and HUD down the height. */
+/** 7 columns (+ gaps) across the width; HUD, top row and a column fanned over
+ *  4 card widths down the height. Longer columns tighten their fan to fit. */
 const SCENE_STYLE = {
-  "--card-md-w": "min(calc((100vw - 1rem) / 7.5), calc((100svh - 7rem) / 10.5), 6.5rem)",
+  "--card-md-w": "min(calc((100vw - 1rem) / 7.5), calc((100svh - 7rem) / 7.25))",
   width: "calc(var(--card-md-w) * 7.5)",
 } as CSSProperties;
 
@@ -44,6 +45,7 @@ export function SolitaireTable({
   const [cascadeDone, setCascadeDone] = useState(false);
   const finished = state.phase === "finished";
   const { drag, startDrag, isClickAfterDrag } = useSolitaireDrag(actions.onDrop);
+  const { sceneRef, tableauRef, fanRoom } = useSolitaireFanRoom();
   const piles = {
     state,
     selection,
@@ -77,10 +79,12 @@ export function SolitaireTable({
 
       {panelOpen && <SolitaireInfoPanel onReset={onReset} onClose={() => setPanelOpen(false)} />}
 
-      <div className="relative h-0 min-h-0 flex-1" data-id="solitaire-scene">
+      <div ref={sceneRef} className="relative h-0 min-h-0 flex-1" data-id="solitaire-scene">
         <div className="mx-auto flex flex-col gap-[calc(var(--card-md-w)*0.25)] pt-[calc(var(--table-hud-top)+4.75rem)]" style={SCENE_STYLE}>
           <TopRow {...piles} onDraw={actions.onDraw} foundationsHidden={finished} />
-          <Tableau {...piles} />
+          <div ref={tableauRef}>
+            <Tableau {...piles} fanRoom={fanRoom} />
+          </div>
         </div>
       </div>
 

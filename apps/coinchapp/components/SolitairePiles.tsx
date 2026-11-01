@@ -8,6 +8,7 @@ import { dropKey, type DragState } from "./useSolitaireDrag";
 
 const CARD_H = "calc(var(--card-md-w) * 1.5)";
 const FACE_DOWN_STEP = 0.2;
+const MIN_FACE_DOWN_STEP = 0.06;
 const FACE_UP_STEP = 0.5;
 const SUIT_SYMBOL: Record<Suit, string> = { H: "\u2665", D: "\u2666", C: "\u2663", S: "\u2660" };
 const TARGET_RING = "rounded-lg ring-4 ring-[var(--accent-cyan)]";
@@ -154,11 +155,17 @@ export function TopRow({ onDraw, foundationsHidden, ...props }: PilesProps & { o
   );
 }
 
-function cardTops(column: TableauCard[]): number[] {
+/** Each card's top, in card widths, so the last one starts within `fanRoom`:
+ *  face-down cards close up first, then face-up ones. */
+function cardTops(column: TableauCard[], fanRoom: number): number[] {
+  const downs = column.filter((entry) => !entry.faceUp).length;
+  const ups = Math.max(0, column.length - 1 - downs);
+  const downStep = downs === 0 ? FACE_DOWN_STEP : Math.min(FACE_DOWN_STEP, Math.max(MIN_FACE_DOWN_STEP, (fanRoom - ups * FACE_UP_STEP) / downs));
+  const upStep = ups === 0 ? FACE_UP_STEP : Math.min(FACE_UP_STEP, Math.max(0, (fanRoom - downs * downStep) / ups));
   let offset = 0;
   return column.map((entry) => {
     const top = offset;
-    offset += entry.faceUp ? FACE_UP_STEP : FACE_DOWN_STEP;
+    offset += entry.faceUp ? upStep : downStep;
     return top;
   });
 }
@@ -169,13 +176,13 @@ function draggedFrom(drag: DragState | null, col: number, columnLength: number):
   return drag.from.index ?? columnLength - 1;
 }
 
-function TableauColumn({ col, column, selection, targets, onTap, labels, ...dragging }: Omit<PilesProps, "state"> & { col: number; column: TableauCard[] }) {
+function TableauColumn({ col, column, fanRoom, selection, targets, onTap, labels, ...dragging }: Omit<PilesProps, "state"> & { col: number; column: TableauCard[]; fanRoom: number }) {
   const target: Target = { kind: "tableau", col };
   const highlighted = isTarget(targets, target);
   if (column.length === 0) {
     return <EmptySlot label={labels.emptyColumn} dataId={`solitaire-tableau-${col}-empty`} highlighted={highlighted} onClick={() => onTap(target)} drop={target} />;
   }
-  const tops = cardTops(column);
+  const tops = cardTops(column, fanRoom);
   const selectedFrom = selection?.kind === "tableau" && selection.col === col ? selection.index ?? column.length - 1 : null;
   const dragFrom = draggedFrom(dragging.drag, col, column.length);
   return (
@@ -214,10 +221,10 @@ function TableauColumn({ col, column, selection, targets, onTap, labels, ...drag
   );
 }
 
-export function Tableau(props: PilesProps) {
+export function Tableau({ state, ...props }: PilesProps & { fanRoom: number }) {
   return (
     <div className="flex items-start justify-between" data-id="solitaire-tableau">
-      {props.state.tableau.map((column, col) => (
+      {state.tableau.map((column, col) => (
         <TableauColumn key={col} col={col} column={column} {...props} />
       ))}
     </div>

@@ -68,6 +68,12 @@ body {
   overscroll-behavior: none;
 }
 
+/* Every size is in rem: on big screens (desktop, 4K TV browsers) the whole
+   UI grows with the screen's smaller side. Below ~900px it stays 16px. */
+html {
+  font-size: clamp(16px, calc(100svmin / 56), 48px);
+}
+
 /*
   Keep form controls readable across dark panels and browser-native dropdown menus.
   Without this, some systems render light text on light option backgrounds.

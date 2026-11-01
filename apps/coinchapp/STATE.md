@@ -2,19 +2,21 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Sixth game Belote live (decision 0075). Splash and home tile use `public/belote-full.jpg`. Hub tile is the same art, cropped.
+Status: Six card games (Coinche, Belote, Bouilla, Président, Bataille Corse, Solitaire). They now scale up on big screens such as a 4K TV browser (decision 0076).
 Focus: n/a (task complete on this side)
-Level: L2 (new game, approved 2026-10-31)
+Level: L2 (big-screen scaling, approved 2026-11-01)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `lib/coinche/belote.ts`, `lib/coinche/belote-bot.ts`, `components/BeloteBiddingPanel.tsx`, `components/beloteRules.ts`, `app/belote/page.tsx`, `lib/supabase/types.ts` (`usesCoincheEngine`)
+- Relevant_Files: `app/globals.css` (root font size), `components/SolitaireTable.tsx`, `components/SolitairePiles.tsx` (`cardTops`), `components/useSolitaireFanRoom.ts`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0075 (this), 0072 (Solitaire precedent), 0071 (coins per match)
+- Relevant_Decisions: 0076 (this), 0075 (Belote), 0072 (Solitaire)
 
 Next:
-- Owner: play one Belote match online (no Supabase keys locally, so online was not browser-tested) and one ad-hoc between two phones.
-- Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote) edits; not applied yet.
+- Owner: open Solitaire and one trick game on the 4K TV browser; check the board fills the screen and long columns stay on screen.
+- Owner: play one Belote match online and one ad-hoc between two phones.
+- Owner: provide splash art + hub thumbnail for Belote (`public/belote-full.jpg`, root `public/games/coinchapp/assets/thumbnail-belote.jpg`), or ask for them to be generated.
+- Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote; root font size scales `TableShell` metrics) edits; not applied yet.
 - Owner: set `ADMIN_USER_IDS` on the `coinchapp` Vercel project (Production + Preview), same value as the hub, then redeploy.
 - Move to `cartes.muchogames.win` once the owner approves adding the domain (root BACKLOG).
 
@@ -29,10 +31,8 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
-- 2026-11-01 Belote splash + home tile: `public/belote-full.jpg` (same art as the hub thumbnail).
-- 2026-10-31 Belote (decision 0075). `npm test` 366/366, `tsc --noEmit` clean, lint: only the known `useMatchStats.ts:220` error, `npm run build` clean. Browser at phone size: solo take on the turned suit, pass to the second go-round (turned suit excluded), naming a suit gives the taker the turned card, full deal scored 106 + 56 = 162, next deal re-opens bidding; ad-hoc setup shows only target + bot level; Coinche solo unchanged.
+- 2026-11-01 Big screens (decision 0076): root font `clamp(16px, 100svmin / 56, 48px)`; Solitaire cards sized for a 4-width fan, long columns tighten (face-down first). Browser at 3840x2160: Solitaire cards 261 px (was 104 max), a 19-card column ends inside the screen, Président and Coinche fill the screen; at 390x844 unchanged (16 px, 50 px cards). `npm test` 366/366, `tsc` clean, `npm run build` clean, lint: only the known `useMatchStats.ts:220` error.
+- 2026-10-31 Belote (decision 0075).
 - 2026-10-31 Hub daily coins: `DAILY_COINS` in `lib/server/actions-match.ts` is 20, same as the hub (root decision 0055).
 - 2026-10-24 Solitaire: tapping an Ace sends it straight to its foundation (decision 0074).
 - 2026-10-23 Solitaire: no auto-move (decision 0073): tap picks up, tap a lit destination to move; drag and drop alongside.
-- 2026-10-23 Solitaire: "Terminer" button and Windows-style win cascade.
-- 2026-10-23 Solitaire (decision 0072).
