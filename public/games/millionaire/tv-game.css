@@ -178,7 +178,14 @@ html.tv .answer-text {
   line-height: 1.2;
 }
 
-html.tv .answer-button:is(:hover, :focus):not(:disabled) {
+/* TV browsers leave a sticky hover where the last OK landed: only the remote
+   focus may highlight an answer. */
+html.tv .answer-button:hover:not(:disabled) {
+  transform: none;
+  box-shadow: none;
+}
+
+html.tv .answer-button:focus:not(:disabled) {
   --tv-edge: linear-gradient(180deg, #fff6c2, #ffc21a);
   --tv-fill: linear-gradient(180deg, #1d4fc4, #072483);
   transform: scale(1.025);

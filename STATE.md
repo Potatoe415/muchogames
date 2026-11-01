@@ -33,7 +33,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-01 Millionaire TV: answer B looked pre-selected (sticky hover from the TV pointer). On TV only the remote focus highlights an answer; A/B ties under the question go to A.
 - 2026-11-01 Card back choice (0056): Bridge start screen + six Coinchapp home screens; per game, per device. Browser: Bridge Étoiles on hidden hands; Coinche Casino on opponents; Solitaire Sorciers on stock. `npm run check` clean.
 - 2026-11-01 Belote and Bridge hub tiles use the illustrated jpgs (top-cropped). Belote splash is the same art.
 - 2026-11-01 Card backs: sheet sliced into hogwarts, casino, stars, garden (`public/shared/card-backs/`).
-- 2026-11-01 Chip's Challenge: last completed level saved locally ("Continuer · niveau N" on the start screen); "?" hints translated FR/ES (`hints.js`).

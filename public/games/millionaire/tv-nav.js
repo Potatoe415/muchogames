@@ -76,7 +76,9 @@
     scope.querySelectorAll(FOCUSABLE).forEach((el) => {
       if (el === origin || !isShown(el)) return;
       var result = measure(from, el.getBoundingClientRect(), dir);
-      if (!best || result.score < best.score) best = { el: el, main: result.main, score: result.score };
+      // Near ties (A and B under the question) go to the first in page order,
+      // whatever the TV zoom's subpixel rounding.
+      if (!best || result.score < best.score - 0.5) best = { el: el, main: result.main, score: result.score };
     });
     return best && best.score < Infinity ? best : null;
   }
