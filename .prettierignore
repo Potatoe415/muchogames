@@ -63,3 +63,6 @@ public/games/bridge/**/*.md
 !public/games/fruitslash/
 !public/games/fruitslash/**
 public/games/fruitslash/**/*.md
+!public/games/scrabble/
+!public/games/scrabble/**
+public/games/scrabble/**/*.md
