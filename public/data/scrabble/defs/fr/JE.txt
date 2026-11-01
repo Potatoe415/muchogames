@@ -1,0 +1,221 @@
+je	Pronom de la première personne du singulier.
+jean	Tissu épais, à armure serge, généralement bleu et écru, utilisé à l'origine pour les bleus de travail.
+jeanfoutre	Variante orthographique de jean-foutre.
+jeanfoutres		jeanfoutre	0
+jeannette	Croix d’or suspendue au cou.
+jeannettes		jeannette	0
+jeannois	Relatif au Lac-Saint-Jean.
+jeannoise		jeannois	23
+jeannoises		jeannois	1
+jeannotisme	Variante de janotisme.
+jeannotismes		jeannotisme	0
+jeans		jean	0
+jéciste	Relatif à la JEC.
+jécistes		jéciste	0
+jectisse	terres jectisses : terres qui ont été rapportées ou remuées.
+jectisses		jectisse	0
+jeep	Véhicule tout-terrain à quatre roues motrices apparu durant la Seconde Guerre mondiale.
+jeeps		jeep	0
+jéjunal	Relatif au jéjunum.
+jéjunale		jéjunal	23
+jéjunales		jéjunal	1
+jéjunaux		jéjunal	9
+jéjunum	Partie centrale de l’intestin grêle entre le duodénum et l’iléon.
+jéjunums		jéjunum	0
+jennérien	Relatif au médecin anglais qui découvrit la vaccine.
+jenny	Machine à filer le coton en gros ou en doux, portant un grand nombre de fuseaux, et inventée par Hargreaves.
+jennys		jenny	0
+jérémiade	Plainte fréquente et importune.
+jérémiades		jérémiade	0
+jerez	Vin d’Espagne très renommé récolté en Andalousie, aux environs de Jerez.
+jerk	Danse populaire vers la fin des années 1960, début 1970.
+jerka		jerker	33
+jerkai		jerker	22
+jerkaient		jerker	32
+jerkais		jerker	29
+jerkait		jerker	34
+jerkâmes		jerker	3
+jerkant		jerker	35
+jerkas		jerker	12
+jerkasse		jerker	6
+jerkassent		jerker	17
+jerkasses		jerker	8
+jerkassiez		jerker	14
+jerkassions		jerker	25
+jerkât		jerker	20
+jerkâtes		jerker	2
+jerke		jerker	79
+jerkent		jerker	31
+jerker	Danser le jerk.
+jerkera		jerker	21
+jerkerai		jerker	16
+jerkeraient		jerker	28
+jerkerais		jerker	18
+jerkerait		jerker	26
+jerkeras		jerker	7
+jerkèrent		jerker	24
+jerkerez		jerker	5
+jerkeriez		jerker	4
+jerkerions		jerker	11
+jerkerons		jerker	10
+jerkeront		jerker	15
+jerkes		jerker	66
+jerkez		jerker	30
+jerkiez		jerker	13
+jerkions		jerker	19
+jerkons		jerker	27
+jerks		jerk	0
+jéroboam	Grosse bouteille d’une contenance de quatre bouteilles de 75 cl (soit 3 litres).
+jéroboams		jéroboam	0
+jérômien	Relatif à Saint-Jérôme, ville du Québec, ou à ses habitants.
+jérômienne		jérômien	23
+jérômiennes		jérômien	1
+jérômiens		jérômien	9
+jerrican	Bidon pour carburant automobile.
+jerricane	Variante orthographique de jerrican.
+jerricanes		jerricane	0
+jerricans		jerrican	0
+jerrycan	Variante orthographique de jerrican.
+jerrycans		jerrycan	0
+jersey	Textile naturel.
+jerseys		jersey	0
+jersiais	Dialecte normand utilisé sur l'île anglo-normande de Jersey.
+jersiaise	Race laitière de taurin, originaire de l’île anglo-normande de Jersey, à robe fauve.
+jersiaises		jersiaise	0
+jérusalémite	Relatif à la ville de Jérusalem.
+jérusalémites		jérusalémite	0
+jèse	Variante de jèze.
+jèses		jèse	0
+jésuite	Relatif à la Compagnie de Jésus.
+jésuites		jésuite	0
+jésuitique	Qui appartient, qui est propre aux jésuites.
+jésuitiquement	À la manière des jésuites, c’est-à-dire en employant des équivoques, en usant de détours.
+jésuitiques		jésuitique	0
+jésuitisme	Doctrine, système de religion et de conduite attribués aux jésuites.
+jésuitismes		jésuitisme	0
+jésus	Sorte de saucisson de grand diamètre, produit en particulier à Lyon (jésus de Lyon) et en Franche-Comté (jésus de Morteau ou jésu de morteau).
+jet	Action de jeter ou mouvement qu’on imprime à un corps en le jetant.
+jeta		jeter	39
+jetable	Qui peut être jeté, lancé.
+jetables		jetable	0
+jetage	Action de jeter.
+jetages		jetage	0
+jetai		jeter	55
+jetaient		jeter	42
+jetais		jeter	52
+jetait		jeter	40
+jetâmes		jeter	68
+jetant		jeter	43
+jetas		jeter	83
+jetasse		jeter	6
+jetassent		jeter	17
+jetasses		jeter	8
+jetassiez		jeter	14
+jetassions		jeter	25
+jetât		jeter	62
+jetâtes		jeter	2
+jeté	Un des pas de danse.
+jetée	Amas de pierres, de cailloux et d’autres matériaux jetés à côté du canal qui forme l’entrée d’un port, fortement maçonnés et ordinairement soutenus de pilotis,…
+jetées		jeté	1
+jeter	Lancer avec la main ou de quelque autre manière.
+jetèrent		jeter	48
+jetés		jeté	9
+jeteur	Personne qui jette quelque chose.
+jeteurs		jeteur	0
+jeteuse	Femme qui jette quelque chose.
+jeteuses		jeteuse	0
+jetez		jeter	47
+jetiez		jeter	67
+jetions		jeter	65
+jetisse	Variante orthographique de jectisse
+jetisses		jetisse	0
+jetlag	Syndrome physiologique dû au décalage horaire.
+jetlags		jetlag	0
+jeton	Pièce de métal, d’ivoire, etc., plate et ordinairement ronde, dont on se servait autrefois pour calculer des sommes, et dont on se sert encore pour marquer et …
+jetonnier	Celui qui reçoit des jetons de présence, c’est-à-dire un revenu de présence.
+jetonniers		jetonnier	0
+jetons	Pluriel de jeton.
+jets	Pluriel de jet (action de jeter)..	jet
+jetset	Variante de jet set.
+jetsets		jetset	0
+jetsetteur	Appartenant à la jet-set.
+jetsetteurs		jetsetteur	9
+jetsetteuse	Femme faisant partie de la jet-set.
+jetsetteuses		jetsetteur	1
+jettatura	Mauvais œil, qui est jeté par le jettatore, le jeteur de sort en Italie du Sud.
+jettaturas		jettatura	0
+jette		jeter	64
+jettent		jeter	41
+jettera		jeter	44
+jetterai		jeter	50
+jetteraient		jeter	63
+jetterais		jeter	60
+jetterait		jeter	49
+jetteras		jeter	57
+jetterez		jeter	58
+jetteriez		jeter	74
+jetterions		jeter	82
+jetterons		jeter	61
+jetteront		jeter	54
+jettes		jeter	77
+jeu	Divertissement, activité avec des règles, pouvant être exercé seul, ou en groupe, pour s’amuser.
+jeudi	Quatrième jour de la semaine.
+jeudis		jeudi	0
+jeun	N'existe qu'à travers la locution à jeun.
+jeûna		jeûner	39
+jeûnai		jeûner	22
+jeûnaient		jeûner	42
+jeûnais		jeûner	29
+jeûnait		jeûner	40
+jeûnâmes		jeûner	3
+jeûnant		jeûner	43
+jeûnas		jeûner	12
+jeûnasse		jeûner	6
+jeûnassent		jeûner	17
+jeûnasses		jeûner	8
+jeûnassiez		jeûner	14
+jeûnassions		jeûner	25
+jeûnât		jeûner	20
+jeûnâtes		jeûner	2
+jeune	Qui est dans une phase au commencement de sa vie ou de son développement.
+jeunement	En jeune homme.
+jeûnent		jeûner	41
+jeûner	Manger peu, manger moins qu’il ne faut, ou même ne pas manger du tout, soit par une privation volontaire, soit par une abstinence forcée et faute d’aliments.
+jeûnera		jeûner	21
+jeûnerai		jeûner	50
+jeûneraient		jeûner	28
+jeûnerais		jeûner	18
+jeûnerait		jeûner	49
+jeûneras		jeûner	57
+jeûnèrent		jeûner	24
+jeûnerez		jeûner	5
+jeûneriez		jeûner	4
+jeûnerions		jeûner	11
+jeûnerons		jeûner	61
+jeûneront		jeûner	15
+jeûnes		jeûne	0
+jeunesse	Partie de la vie qui est entre l’enfance et l’âge des responsabilités, adolescence.
+jeunesses		jeunesse	0
+jeunet	Qui est extrêmement jeune, jeunot.
+jeunets		jeunet	9
+jeunette	Jeune femme.
+jeunettes		jeunet	1
+jeûneur	Personne qui jeûne.
+jeûneurs		jeûneur	0
+jeûneuse	Femme qui jeûne.
+jeûneuses		jeûneuse	0
+jeûnez		jeûner	47
+jeûniez		jeûner	13
+jeûnions		jeûner	19
+jeunisme	Excès d’amour pour la jeunesse.
+jeunismes		jeunisme	0
+jeuniste	Qui exalte les jeunes et la jeunesse, en ignorant ou dépréciant la vieillesse et les personnes âgées.
+jeunistes		jeuniste	0
+jeûnons		jeûner	27
+jeunot	Jeune avec un trait affectueux ou péjoratif.
+jeunots		jeunot	9
+jeunotte	Jeune.
+jeunottes		jeunot	1
+jeux		jeu	0
+jèze	Appellation populaire des jésuites.
+jèzes		jèze	0

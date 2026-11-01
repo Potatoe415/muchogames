@@ -1,0 +1,952 @@
+tu	Pronom personnel sujet de la deuxième personne du singulier.
+tua		tuer	39
+tuable	Qui peut être tué.
+tuables		tuable	0
+tuage	Action de tuer un animal.
+tuages		tuage	0
+tuai		tuer	55
+tuaient		tuer	42
+tuais		tuer	52
+tuait		tuer	40
+tuâmes		tuer	68
+tuant	Qui est très fatigant, qui cause beaucoup de peine.
+tuante	Féminin singulier de tuant.
+tuantes		tuant	1
+tuants		tuant	9
+tuas		tuer	83
+tuasse	Ravin, gouffre, trou sans fond.
+tuassent		tuer	17
+tuasses		tuer	8
+tuassiez		tuer	14
+tuassions		tuer	25
+tuât		tuer	62
+tuâtes		tuer	84
+tub	Bassin, le plus souvent en zinc, dans lequel on fait ses ablutions.
+tuba	Gros instrument de musique à vent, à embouchure faisant partie de la famille des cuivres.
+tubage	Action d'introduire un tube souple ou rigide dans un conduit ou une cavité pour alimenter, prélever, examiner ou soigner un patient.
+tubages		tubage	0
+tubai		tuber	22
+tubaient		tuber	32
+tubaire	Qui a rapport aux tubes des bronches.
+tubaires		tubaire	0
+tubais		tuber	29
+tubait		tuber	34
+tubâmes		tuber	3
+tubant		tuber	35
+tubard	Tuberculeux, atteint de tuberculose.
+tubarde	Celle qui est atteinte de tuberculose, tuberculeuse.
+tubardes		tubard	1
+tubards		tubard	9
+tubas		tuba	0
+tubasse		tuber	6
+tubassent		tuber	17
+tubasses		tuber	8
+tubassiez		tuber	14
+tubassions		tuber	25
+tubât		tuber	20
+tubâtes		tuber	2
+tube	Conduit, tuyau de plomb, de verre, de fer, etc., par où les gaz ou les liquides peuvent circuler.
+tubée		tuber	37
+tubées		tuber	36
+tubeless	Qualifie un pneu monté sans chambre à air.
+tubent		tuber	31
+tuber	Forger en forme de tube.
+tubera		tuber	21
+tubéracé	Relatif à, en forme de tubercules, de truffes.
+tuberai		tuber	16
+tuberaient		tuber	28
+tuberais		tuber	18
+tuberait		tuber	26
+tubérale	Ordre de champignons, dont fait partie la truffe.
+tubérales		tubérale	0
+tuberas		tuber	7
+tubercule	Excroissance en forme de bosse qui survient à une feuille, à une racine d’une plante → voir tuberculé.
+tubercules		tubercule	0
+tuberculeuse	Personne atteinte de tuberculose.
+tuberculeuses		tuberculeux	1
+tuberculeux	Tuberculé ; comportant des excroissances.
+tuberculide	Dermatose provoquée par une réaction allergique à la tuberculose, mais qui, à l'examen, ne présente pas de bacille tuberculeux.
+tuberculides		tuberculide	0
+tuberculina		tuberculiner	33
+tuberculinai		tuberculiner	22
+tuberculinaient		tuberculiner	32
+tuberculinais		tuberculiner	29
+tuberculinait		tuberculiner	34
+tuberculinâmes		tuberculiner	3
+tuberculinant		tuberculiner	35
+tuberculinas		tuberculiner	12
+tuberculinasse		tuberculiner	6
+tuberculinasses		tuberculiner	8
+tuberculinât		tuberculiner	20
+tuberculinâtes		tuberculiner	2
+tuberculination	Utilisation de la tuberculine pour révéler une allergie à cet extrait dans le diagnostic et la prophylaxie de la tuberculose chez les animaux ou les humains, g…
+tuberculine	Extrait de cultures du bacille tuberculeux utilisé pour révéler l’exposition de l’animal ou de l’homme à ce bacille par tuberculination.
+tuberculinée		tuberculiner	37
+tuberculinées		tuberculiner	36
+tuberculinent		tuberculiner	31
+tuberculiner	Injecter de la tuberculine à.
+tuberculinera		tuberculiner	21
+tuberculinerai		tuberculiner	16
+tuberculinerais		tuberculiner	18
+tuberculinerait		tuberculiner	26
+tuberculineras		tuberculiner	7
+tuberculinèrent		tuberculiner	24
+tuberculinerez		tuberculiner	5
+tuberculineriez		tuberculiner	4
+tuberculinerons		tuberculiner	10
+tuberculineront		tuberculiner	15
+tuberculinés		tuberculiner	38
+tuberculinez		tuberculiner	30
+tuberculiniez		tuberculiner	13
+tuberculinions		tuberculiner	19
+tuberculinique	Relatif à la tuberculose.
+tuberculiniques		tuberculinique	0
+tuberculinisa		tuberculiniser	33
+tuberculinisai		tuberculiniser	22
+tuberculinisais		tuberculiniser	29
+tuberculinisait		tuberculiniser	34
+tuberculinisant		tuberculiniser	35
+tuberculinisas		tuberculiniser	12
+tuberculinisât		tuberculiniser	20
+tuberculinisé		tuberculiniser	46
+tuberculinisée		tuberculiniser	37
+tuberculinisées		tuberculiniser	36
+tuberculinisent		tuberculiniser	31
+tuberculiniser	Injecter de la tuberculine à.
+tuberculinisera		tuberculiniser	21
+tuberculinisés		tuberculiniser	38
+tuberculinisez		tuberculiniser	30
+tuberculinisiez		tuberculiniser	13
+tuberculinisons		tuberculiniser	27
+tuberculinons		tuberculiner	27
+tuberculisa		tuberculiser	33
+tuberculisai		tuberculiser	22
+tuberculisaient		tuberculiser	32
+tuberculisais		tuberculiser	29
+tuberculisait		tuberculiser	34
+tuberculisâmes		tuberculiser	3
+tuberculisant		tuberculiser	35
+tuberculisas		tuberculiser	12
+tuberculisasse		tuberculiser	6
+tuberculisasses		tuberculiser	8
+tuberculisât		tuberculiser	20
+tuberculisâtes		tuberculiser	2
+tuberculisation	Formation des tubercules.
+tuberculisé		tuberculiser	46
+tuberculisent		tuberculiser	31
+tuberculiser	Produire des tubercules.
+tuberculisera		tuberculiser	21
+tuberculiserai		tuberculiser	16
+tuberculiserais		tuberculiser	18
+tuberculiserait		tuberculiser	26
+tuberculiseras		tuberculiser	7
+tuberculisèrent		tuberculiser	24
+tuberculiserez		tuberculiser	5
+tuberculiseriez		tuberculiser	4
+tuberculiserons		tuberculiser	10
+tuberculiseront		tuberculiser	15
+tuberculises		tuberculiser	66
+tuberculisez		tuberculiser	30
+tuberculisiez		tuberculiser	13
+tuberculisions		tuberculiser	19
+tuberculisons		tuberculiser	27
+tuberculoïde	Relatif à ou rappelant la tuberculose.
+tuberculoïdes		tuberculoïde	0
+tuberculose	Maladie infectieuse et contagieuse, chronique, des animaux et des humains (zoonose), pouvant atteindre tous les organes, caractérisée par la présence du bacill…
+tuberculoses		tuberculose	0
+tubèrent		tuber	24
+tubéreuse	Plante (polianthes) de la famille des agavacées venant d’un oignon, dont la tige est haute et dont la fleur, qui porte le même nom, est blanche et très odorifé…
+tubéreuses		tubéreux	1
+tubéreux	Se dit d’un organe végétal renflé, servant de réserve nutritive, en particulier d’une tige ou d’une racine.
+tuberez		tuber	5
+tuberiez		tuber	4
+tubériforme	En forme de tubercule, de truffe.
+tubériformes		tubériforme	0
+tuberions		tuber	11
+tubérisation	Transformation en tubercule.
+tubérisations		tubérisation	0
+tubérisé		tubériser	56
+tubérisée		tubériser	45
+tubérisées		tubériser	51
+tubériser	Transformer en tubercule.
+tubérisés		tubériser	53
+tuberons		tuber	10
+tuberont		tuber	15
+tubérosité	Éminence plus ou moins volumineuse, à surface inégale, qui se trouve sur un os et où s’attachent des muscles ou des ligaments.
+tubérosités		tubérosité	0
+tubes		tube	0
+tubez		tuber	30
+tubicole	Qualifie des animaux qui construisent un tube dans lequel ils vivent.
+tubicoles	Annélides qui vivent dans des tubes ou concrétions calcaires plus ou moins membraneux.
+tubiez		tuber	13
+tubifex	Annélide tubicole, de couleur rougeâtre, qui vit sur le fond des étangs.
+tubing	Activité de loisir consistant à se propulser ou descendre sur de l’eau ou de la neige dans une grosse chambre à air ou une bouée gonflable éventuellement équip…
+tubings		tubing	0
+tubions		tuber	19
+tubipore	Cœlentéré des récifs équatoriaux dont le polypier calcaire est formé de tubes juxtaposés rappelant des tuyaux d'orgue.
+tubipores		tubipore	0
+tubiste	Joueur de tuba (instrument de musique).
+tubistes		tubiste	0
+tubitèle	Se dit d’une araignée qui tisse un tube où elle se met à l’affût de proies.
+tubitèles		tubitèle	0
+tubons		tuber	27
+tubs		tub	0
+tubulaire	Qui a la forme d’un tube.
+tubulaires		tubulaire	0
+tubulé	Qui a une ou plusieurs tubulures.
+tubulée		tubulé	23
+tubulées		tubulé	1
+tubulés		tubulé	9
+tubuleuse		tubuleux	109
+tubuleuses		tubuleux	1
+tubuleux	Qui est en forme de tube.
+tubuliflore	Dont la corolle est tubuleuse.
+tubuliflores		tubuliflore	0
+tubuline	Principale protéine constitutive des cils, des flagelles et des microtubules du cytosquelette.
+tubulure	Ouverture de certains récipients de chimie destinée à recevoir un bouchon percé d’un trou dans lequel passe un tube.
+tubulures		tubulure	0
+tucard	Jeune homme engagé pour un TUC (Travail d’Utilité Collective).
+tucarde	Jeune femme engagée pour un TUC (Travail d’Utilité Collective).
+tucardes		tucarde	0
+tucards		tucard	0
+tuciste	Jeune engagé pour un TUC (Travail d’Utilité Collective).
+tucistes		tuciste	0
+tudesque	Relatif aux anciens Germains.
+tudesques		tudesque	0
+tudieu	Juron de l’ancienne comédie.
+tué	Homme, ou garçon, décédé par fait de violence.
+tuée	Femme tuée.
+tuées		tué	1
+tuent		tuer	41
+tuer	Ôter la vie d’une manière violente.
+tuera		tuer	44
+tuerai		tuer	50
+tueraient		tuer	28
+tuerais		tuer	60
+tuerait		tuer	49
+tueras		tuer	57
+tuèrent		tuer	48
+tuerez		tuer	58
+tuerie	Carnage ; massacre.
+tueries		tuerie	0
+tueriez		tuer	74
+tuerions		tuer	82
+tuerons		tuer	61
+tueront		tuer	54
+tués		tué	9
+tueur	Personne qui tue, commet un meurtre.
+tueurs		tueur	0
+tueuse	Femme qui tue, qui commet un meurtre.
+tueuses		tueuse	0
+tuez		tuer	47
+tuf	Roche formée par l’accumulation de petits fragments soit de roches volcaniques et de cendres, soit de calcaire.
+tufeau	Variante orthographique de tuffeau.
+tufeaux		tufeau	0
+tuffeau	Variété de tuf.
+tuffeaux		tuffeau	0
+tufier	Qui est de la nature du tuf.
+tufière	Lieu où se forme le tuf par écoulement d’eau très calcaire.
+tufières		tufier	1
+tufiers	Pluriel de tufier.
+tufs		tuf	0
+tufté	Variante de touffeté.
+tuftée		tufté	23
+tuftées		tufté	1
+tuftés		tufté	9
+tugrik	Unité monétaire utilisée en Mongolie.
+tugriks		tugrik	0
+tuiez		tuer	67
+tuila		tuiler	33
+tuilage	Opération consistant à passer une tuile sur un drap.
+tuilages		tuilage	0
+tuilai		tuiler	22
+tuilaient		tuiler	32
+tuilais		tuiler	29
+tuilait		tuiler	34
+tuilâmes		tuiler	3
+tuilant		tuiler	35
+tuilas		tuiler	12
+tuilasse		tuiler	6
+tuilassent		tuiler	17
+tuilasses		tuiler	8
+tuilassiez		tuiler	14
+tuilassions		tuiler	25
+tuilât		tuiler	20
+tuilâtes		tuiler	2
+tuile	Carreau de peu d’épaisseur, fait de terre grasse pétrie, séchée et cuite au four, tantôt plat, tantôt courbé en demi-cylindre, et dont on se sert pour couvrir …
+tuileau	Morceau, fragment de tuile cassée.
+tuileaux	Pluriel de tuileau.
+tuilée	Nom donné à la belle coquille dite bénitier.
+tuilées		tuiler	36
+tuilent		tuiler	31
+tuiler	Couvrir de tuiles.
+tuilera		tuiler	21
+tuilerai		tuiler	16
+tuileraient		tuiler	28
+tuilerais		tuiler	18
+tuilerait		tuiler	26
+tuileras		tuiler	7
+tuilèrent		tuiler	24
+tuilerez		tuiler	5
+tuilerie	Usine dont l’activité principale est de fabriquer des tuiles.
+tuileries		tuilerie	0
+tuileriez		tuiler	4
+tuilerions		tuiler	11
+tuilerons		tuiler	10
+tuileront		tuiler	15
+tuiles		tuile	0
+tuilette	Petite tuile.
+tuilettes		tuilette	0
+tuilez		tuiler	30
+tuilier	Relatif aux tuiles et aux tuileries.
+tuilière	Ouvrière qui fait des tuiles.
+tuilières		tuilier	1
+tuiliers		tuilier	9
+tuiliez		tuiler	13
+tuilions		tuiler	19
+tuilons		tuiler	27
+tuions		tuer	65
+tularémie	Maladie contagieuse, transmise des rongeurs sauvages à l'homme par des tiques, des taons et par le contact des dépouilles du gibier infecté, qui se manifeste n…
+tularémies		tularémie	0
+tulipe	Plante de la famille des Liliacées (Liliaceae), à racine bulbeuse, à tige haute, qui porte une belle fleur et dont il existe un très grand nombre de variétés.
+tulipes		tulipe	0
+tulipier	Nom vernaculaire donné à plusieurs espèces d'arbres dont la fleur ressemble à celle de la tulipe, s'il est utilisé seul on se réfère généralement à Liriodendro…
+tulipiers		tulipier	0
+tulle	Tissu mince, léger et transparent, en coton, soie ou matière synthétique, qui s’emploie pour réaliser des rideaux, des voilages, des toilettes raffinées.
+tullerie	Industrie qui fabrique le tulle.
+tulleries		tullerie	0
+tulles		tulle	0
+tullier	Relatif au tulle.
+tullière		tullier	23
+tullières		tullier	1
+tulliers		tullier	9
+tulliste	Relatif à la production et à la vente du tulle.
+tullistes		tulliste	118
+tullois	Relatif à la ville de Tulle, en France.
+tulloise		tullois	23
+tulloises		tullois	1
+tumba	Percussion en forme de tambour à une membrane.
+tumbling	Sorte de gymnastique sportive acrobatique se pratiquant sur une piste élastique longiligne.
+tumblings		tumbling	0
+tuméfaction	Enflure ; gonflement.
+tuméfactions		tuméfaction	0
+tuméfia		tuméfier	33
+tuméfiai		tuméfier	22
+tuméfiaient		tuméfier	32
+tuméfiais		tuméfier	29
+tuméfiait		tuméfier	34
+tuméfiâmes		tuméfier	3
+tuméfiant		tuméfier	35
+tuméfias		tuméfier	12
+tuméfiasse		tuméfier	6
+tuméfiassent		tuméfier	17
+tuméfiasses		tuméfier	8
+tuméfiassiez		tuméfier	14
+tuméfiassions		tuméfier	25
+tuméfiât		tuméfier	20
+tuméfiâtes		tuméfier	2
+tuméfié	Enflé, gonflé.
+tuméfiée		tuméfié	23
+tuméfiées		tuméfié	1
+tuméfient		tuméfier	31
+tuméfier	Causer de la tuméfaction.
+tuméfiera		tuméfier	21
+tuméfierai		tuméfier	16
+tuméfieraient		tuméfier	28
+tuméfierais		tuméfier	18
+tuméfierait		tuméfier	26
+tuméfieras		tuméfier	7
+tuméfièrent		tuméfier	24
+tuméfierez		tuméfier	5
+tuméfieriez		tuméfier	4
+tuméfierions		tuméfier	11
+tuméfierons		tuméfier	10
+tuméfieront		tuméfier	15
+tuméfiés		tuméfié	9
+tuméfiez		tuméfier	30
+tuméfiiez		tuméfier	13
+tuméfiions		tuméfier	19
+tuméfions		tuméfier	27
+tûmes		taire	68
+tumescence	Action par laquelle une chose s’enfle.
+tumescent	Qui est gonflé du fait de l'érection, qui enfle.
+tumescente		tumescent	23
+tumescentes		tumescent	1
+tumescents		tumescent	0
+tumeur	Éminence, grosseur plus ou moins considérable, développée dans quelque partie du corps, soit par une maladie, soit par une autre cause.
+tumeurs		tumeur	0
+tumoral	Qui concerne la tumeur, une excroissance du corps.
+tumorale		tumoral	23
+tumorales		tumoral	1
+tumoraux		tumoral	0
+tumorectomie	Ablation chirurgicale d’une tumeur.
+tumorectomies		tumorectomie	0
+tumorigène	Qualifie une cellule susceptible de dégénérer en tumeur.
+tumorigènes		tumorigène	0
+tumulaire	Qui appartient, qui est relatif aux tombeaux.
+tumulaires		tumulaire	0
+tumuli		tumulus	0
+tumulte	Grand mouvement accompagné de désordre et souvent de bruit.
+tumultes		tumulte	0
+tumultueuse		tumultueux	23
+tumultueusement	En tumulte ; d'une manière tumultueuse.
+tumultueuses		tumultueux	1
+tumultueux	Qui se fait avec tumulte, avec confusion et bruit.
+tumulus	Amas de terre ou de pierre, en forme de cône ou de pyramide, que les anciens élevaient au-dessus des sépultures pour servir de tombeau.
+tuna		tuner	33
+tunage	Assemblage fait avec des pieux et des branches d’arbres en forme de claies, pour empêcher la terre de s’ébouler, ou pour protéger les berges d'une rivière.
+tunages		tunage	0
+tunai		tuner	22
+tunaient		tuner	32
+tunais		tuner	29
+tunait		tuner	34
+tunâmes		tuner	3
+tunant		tuner	35
+tunas		tuner	12
+tunasse		tuner	6
+tunassent		tuner	17
+tunasses		tuner	8
+tunassiez		tuner	14
+tunassions		tuner	25
+tunât		tuner	20
+tunâtes		tuner	2
+tune	Variante orthographique de thune.
+tunée		tuner	37
+tunées		tuner	36
+tunent		tuner	31
+tuner	Équipement destiné à convertir les ondes hertziennes en signaux audio ou vidéo, syntoniseur.
+tunera		tuner	21
+tunerai		tuner	16
+tuneraient		tuner	28
+tunerais		tuner	18
+tunerait		tuner	26
+tuneras		tuner	7
+tunèrent		tuner	24
+tunerez		tuner	5
+tuneriez		tuner	4
+tunerions		tuner	11
+tunerons		tuner	10
+tuneront		tuner	15
+tuners		tuner	0
+tunes		tune	0
+tuneur	Homme adepte du tuning.
+tuneurs		tuneur	0
+tuneuse	Femme adepte du tuning.
+tuneuses		tuneuse	0
+tunez		tuner	30
+tungar	Tube à haute pression d'argon, redresseur de courants alternatifs de forte intensité.
+tungars		tungar	0
+tungstate	Anion de tungstène (WO₄), sel produit par la combinaison de l’acide tungstique avec une base.
+tungstates		tungstate	0
+tungstène	Élément chimique de numéro atomique 74, son symbole W appartenant à la série chimique des métaux de transition.
+tungstique	Qui se rapporte au tungstène.
+tungstiques		tungstique	0
+tunicelle	Petite tunique blanche des augustins déchaussés (déchaux) et de quelques autres religieux.
+tunicelles		tunicelle	0
+tunicier	Organisme filtreur marin, métazoaire, chordé, du groupe des Tunicata, ressemblant à un sac fixé (sous sa forme adulte), aspirant l’eau par son siphon inhalant,…
+tuniciers	Animaux très petits, autrefois rangés parmi les polypes, qui forment un ordre distinct dans la classe des mollusques acéphales.
+tuniez		tuner	13
+tuning	Ensemble d'améliorations sur un véhicule de série pour le modifier ou le personnaliser.
+tunings		tuning	0
+tunions		tuner	19
+tunique	Vêtement de dessous que portaient les Anciens.
+tuniquée		tuniqué	23
+tuniquées		tuniqué	1
+tuniques		tunique	0
+tunisien	Relatif à la Tunisie.
+tunisienne		tunisien	23
+tunisiennes		tunisien	1
+tunisiens		tunisien	0
+tunisois	Relatif à la ville de Tunis ou à ses habitants.
+tunisoise		tunisois	23
+tunisoises		tunisois	1
+tunnel	Voie souterraine percée à travers une montagne, une colline, établie sous une rivière, etc.
+tunnelier	Ouvrier chargé de creuser des tunnels.
+tunnelière	Ouvrière chargée de creuser des tunnels.
+tunnelières		tunnelière	0
+tunneliers		tunnelier	0
+tunnels		tunnel	0
+tunons		tuner	27
+tuons		tuer	59
+tupaïa	Variante de toupaye.
+tupaïas		tupaïa	0
+tupaja	Variante de toupaye.
+tupajas		tupaja	0
+tupi	Relatif aux Tupis.
+tupie		tupi	23
+tupies		tupi	1
+tupinambis	Tupinambis.
+tupis		tupi	0
+tupperware	Récipient en plastique avec couvercle hermétique pour conserver la nourriture.
+tupperwares		tupperware	0
+tuque	Tente ou abri qu’on élevait quelquefois à l’avant, plus souvent à l’arrière, sur la dunette.
+tuques		tuque	0
+turban	Coiffure d’homme usitée chez les Orientaux et faite d’une longue bande d’étoffe, qui est roulée et entrelacée autour de la tête.
+turbans		turban	0
+turbe	Groupe de dix témoins dans une enquête par turbe, notamment dans le Nord de la France au Moyen Âge.
+turbeh	Variante de turbe.
+turbehs		turbeh	0
+turbellarié	Classe de plathelminthes ou vers plats munis de cils créant des tourbillons, qui ont des formes libres et sont aquatiques, pour la plupart marins.
+turbés		turbé	0
+turbide	Trouble, non limpide.
+turbides		turbide	0
+turbidimètre	Appareil de mesure de la turbidité par néphélométrie.
+turbidimètres		turbidimètre	0
+turbidimétrie	Mesure du degré de turbidité d'une suspension.
+turbidimétries		turbidimétrie	0
+turbidité	État d’un liquide trouble, teneur d’un liquide en matières qui le troublent.
+turbidites		turbidite	0
+turbin	Travail.
+turbina		turbiner	39
+turbinage	Action de la turbine.
+turbinages		turbinage	0
+turbinai		turbiner	22
+turbinaient		turbiner	42
+turbinais		turbiner	29
+turbinait		turbiner	40
+turbinâmes		turbiner	3
+turbinant		turbiner	35
+turbinas		turbiner	12
+turbinasse		turbiner	6
+turbinassent		turbiner	17
+turbinasses		turbiner	8
+turbinassiez		turbiner	14
+turbinassions		turbiner	25
+turbinât		turbiner	20
+turbinâtes		turbiner	2
+turbine	Dispositif rotatif mu par un fluide et communiquant son mouvement à une machine.
+turbinée		turbiner	37
+turbinées		turbiner	36
+turbinelle	Genre de coquilles univalves dans lequel on distingue : la turbinelle poire, dite poire et plomb, la volute poire de certains auteurs la turbinelle navet, ap…
+turbinelles		turbinelle	0
+turbinent		turbiner	31
+turbiner	Faire passer par une turbine.
+turbinera		turbiner	21
+turbinerai		turbiner	16
+turbineraient		turbiner	28
+turbinerais		turbiner	18
+turbinerait		turbiner	26
+turbineras		turbiner	7
+turbinèrent		turbiner	24
+turbinerez		turbiner	5
+turbineriez		turbiner	4
+turbinerions		turbiner	11
+turbinerons		turbiner	10
+turbineront		turbiner	15
+turbines		turbine	0
+turbinez		turbiner	47
+turbiniez		turbiner	13
+turbinions		turbiner	19
+turbinons		turbiner	27
+turbins		turbin	0
+turbith	Plante grimpante tubéreuse de la famille des convolvulacées (Operculina turpethum), dont la racine était employée pour ses propriétés purgatives.
+turbiths		turbith	0
+turbo	Turbo, genre de gastéropodes prosobranches des mers chaudes dont la coquille présente une large ouverture circulaire et est utilisée dans l'industrie de la nac…
+turbodiesel	Se dit d’un moteur Diesel dont l’admission d’air est suralimentée par un turbocompresseur.
+turbodiesels		turbodiesel	0
+turbomachine	Appareil employant une turbine à gaz.
+turbomachines		turbomachine	0
+turbomoteur	Moteur basé sur le cycle thermodynamique de Joule, qui tire son énergie des gaz de combustion obtenus en brûlant le combustible injecté dans une chambre rempli…
+turbomoteurs		turbomoteur	0
+turbopropulseur	Système de propulsion dont l'energie est fourni par une turbine à gaz et dont la poussée principale est obtenue par la rotation d'une hélice.
+turboréacteur	Réacteur dans lequel l'air est comprimé par un turbocompresseur, puis porté à très haute enthalpie et enfin détendu dans une tuyère.
+turboréacteurs		turboréacteur	0
+turbos		turbo	0
+turbosoufflante	Pompe centrifuge composée de deux ou trois aubages.
+turbot	Poisson plat marin et de forme ovale, comestible recherché, de l'Atlantique, la Méditerranée et la mer Noire.
+turbotière	Récipient destiné à faire cuire des turbots.
+turbotières		turbotière	0
+turbotin	Turbot encore de petite taille.
+turbotins		turbotin	0
+turbotrain	Train propulsé par des turbines à gaz.
+turbotrains		turbotrain	0
+turbots		turbot	0
+turbulence	Caractère de celui qui est turbulent.
+turbulences		turbulence	0
+turbulent	Qui est impétueux, qui est porté à faire du bruit, à exciter du trouble, du désordre.
+turbulente		turbulent	23
+turbulentes		turbulent	1
+turbulents		turbulent	9
+turbulette	Vêtement pour bébé qui est porté pour dormir, et qui ne laisse découverts que la tête et parfois les bras.
+turbulettes		turbulette	0
+turc	Relatif aux Turcs, à la Turquie.
+turcique	Turc, de Turquie.
+turciques		turcique	0
+turco	Nom familier des tirailleurs indigènes et en particulier des tirailleurs algériens.
+turcoman	Turkmène.
+turcomane	Relatif à la turcomanie
+turcomanes		turcomane	0
+turcomans		turcoman	9
+turcophone	De langue turque.
+turcophones		turcophone	0
+turcos		turco	0
+turcs		turc	9
+turdidé	Membre d'une famille d’oiseaux passereaux, petits ou moyens, au petit bec conique, souvent chanteurs, les grives et alliés.
+turdidés	Pluriel de turdidé, famille d’oiseaux passereaux.	passereaux
+turelure	Refrain de chanson.
+turelures		turelure	0
+turent		taire	48
+turf	Lieu où se font les courses de chevaux.
+turfiste	Personne qui fréquente les champs de courses, qui parie.
+turfistes		turfiste	0
+turfs		turf	0
+turgescence	Gonflement ; enflure.
+turgescences		turgescence	0
+turgescent	Qui s’enfle, qui se gonfle.
+turgescente		turgescent	23
+turgescentes		turgescent	1
+turgescents		turgescent	9
+turgide	Bouffi, gonflé, enflé.
+turgides		turgide	0
+turinois	Relatif à Turin, commune piémontaise en Italie.
+turinoise		turinois	23
+turinoises		turinois	1
+turion	Pousse ou bourgeon enterré, partant directement de la souche, d'un rhizome ou du plateau radical, chez de nombreuses plantes vivaces.
+turions		turion	0
+turista	Variante de tourista.
+turistas		turista	0
+turkmène	Qui concerne les Turkmènes, leur culture, leur pays ou leur langue.
+turkmènes		turkmène	0
+turlupin	Homme qui fait de basses plaisanteries, de mauvais jeux de mots.
+turlupina		turlupiner	33
+turlupinade	Genre de farce grossière jouée par les trois acteurs Turlupin, Gros-Guillaume et Gaultier-Garguille en France au XVIIᵉ siècle.
+turlupinades		turlupinade	0
+turlupinai		turlupiner	55
+turlupinaient		turlupiner	42
+turlupinais		turlupiner	29
+turlupinait		turlupiner	40
+turlupinâmes		turlupiner	3
+turlupinant	Qui turlupine.
+turlupinas		turlupiner	12
+turlupinasse		turlupiner	6
+turlupinassent		turlupiner	17
+turlupinasses		turlupiner	8
+turlupinassiez		turlupiner	14
+turlupinassions		turlupiner	25
+turlupinât		turlupiner	20
+turlupinâtes		turlupiner	2
+turlupiné		turlupiner	56
+turlupinée		turlupiner	45
+turlupinées		turlupiner	51
+turlupinent		turlupiner	41
+turlupiner	Faire des turlupinades, des mauvaises plaisanteries.
+turlupinera		turlupiner	44
+turlupinerai		turlupiner	16
+turlupineraient		turlupiner	28
+turlupinerais		turlupiner	18
+turlupinerait		turlupiner	26
+turlupineras		turlupiner	7
+turlupinèrent		turlupiner	24
+turlupinerez		turlupiner	5
+turlupineriez		turlupiner	4
+turlupinerions		turlupiner	11
+turlupinerons		turlupiner	10
+turlupineront		turlupiner	15
+turlupines		turlupiner	77
+turlupinez		turlupiner	47
+turlupiniez		turlupiner	13
+turlupinions		turlupiner	19
+turlupinons		turlupiner	27
+turlupins		turlupin	0
+turlurette	Sorte de guitare en usage au XIVᵉ siècle.
+turluta		turluter	33
+turlutai		turluter	22
+turlutaient		turluter	32
+turlutaine	Propos frivole.
+turlutaines		turlutaine	0
+turlutais		turluter	29
+turlutait		turluter	34
+turlutâmes		turluter	3
+turlutant		turluter	35
+turlutas		turluter	12
+turlutasse		turluter	6
+turlutassent		turluter	17
+turlutasses		turluter	8
+turlutassiez		turluter	14
+turlutassions		turluter	25
+turlutât		turluter	20
+turlutâtes		turluter	2
+turlute	Cri de l’alouette.
+turlutent		turluter	41
+turluter	Pousser son cri, en parlant de l’alouette.
+turlutera		turluter	21
+turluterai		turluter	16
+turluteraient		turluter	28
+turluterais		turluter	18
+turluterait		turluter	26
+turluteras		turluter	7
+turlutèrent		turluter	24
+turluterez		turluter	5
+turluteriez		turluter	4
+turluterions		turluter	11
+turluterons		turluter	10
+turluteront		turluter	15
+turlutes		turluter	77
+turluteur	Homme qui joue d’un instrument à vent.
+turluteurs		turluteur	0
+turluteuse	Femme qui pratique des fellations.
+turluteuses		turluteuse	0
+turlutez		turluter	30
+turlutiez		turluter	13
+turlutions		turluter	19
+turlutons		turluter	27
+turlutte	Leurre de pêche, en plastique garni d’une ou de deux rangées d’hameçons, pour capturer la seiche ou l’encornet.
+turlutter	Pousser son cri, en parlant de l'alouette.
+turluttes		turlutter	66
+turlututu	Mot employé dans des refrains de vieilles chansons.
+turne	Maison, chambre, dans l’argot scolaire et universitaire.
+turnep	Variété de navet fourrager (Brassica rapa rapifera).
+turneps	Variété de navet fourrager.
+turnes		turne	0
+turnover	Rotation de l'emploi, renouvellement du personnel.
+turnovers		turnover	0
+turonien	Relatif au Turonien.
+turonienne		turonien	23
+turoniennes		turonien	1
+turoniens		turonien	9
+turpide	Laid pour ce qui est de la morale, méprisable, écœurant, fangeux, hideux, honteux, ignoble, infâme.
+turpidement	Avec turpitude.
+turpides		turpide	0
+turpitude	Ignominie qui résulte de quelque action honteuse.
+turpitudes		turpitude	0
+turque	Brebis de plus d'un an, mais qui n'a pas encore eu d'agneau.
+turquerie	Composition artistique ou littéraire dont les sujets ou les détails pittoresques sont empruntés aux mœurs turques ou au décor oriental.
+turqueries		turquerie	0
+turques		turc	1
+turquette	Herniaire
+turquin	Il ne s’emploie qu’avec bleu et signifie « foncé ».
+turquoise	Pierre de couleur bleu clair à bleu-vert qui provient du phosphate hydraté d’aluminium ou de cuivre.
+turquoises		turquoise	0
+turriculé	En forme de petite tour.
+turriculée		turriculé	109
+turriculées		turriculé	1
+turricules		turricule	0
+turritelle	Mollusque gastéropode, à coquille très allongée et pointue, vivant dans le sable et répandu dans toutes les mers.
+turritelles		turritelle	0
+tursan	Vin français dont le vignoble s’étend sur deux départements, les Landes et le Gers.
+tus		tu	9
+tussah	Issu du ver à soie sauvage.
+tussahs		tussah	0
+tussau	Variante de tussah.
+tussaus		tussau	0
+tusse		taire	81
+tussent		taire	78
+tusses		taire	87
+tussiez		taire	88
+tussilage	Plante de la famille des Astéracées, à capitules jaunes, qui croît dans les lieux humides, aussi nommée pas-d’âne (Tussilago farfara).
+tussilages		tussilage	0
+tussions		taire	90
+tussor	Variante de tussore.
+tussore	Foulard fabriqué dans l'Inde avec une soie particulière provenant du ver à soie sauvage.
+tussores		tussore	0
+tussors		tussor	0
+tût		taire	62
+tute	Sucette en matière souple données aux bébés pour combler leur besoin de succion et les apaiser.
+tutélaire	Qui tient sous sa garde, sous sa protection.
+tutélaires		tutélaire	0
+tutelle	Autorité donnée conformément à la loi, pour avoir soin de la personne et des biens d’un mineur ou d’un majeur protégé (autrefois, d’un interdit).
+tutelles		tutelle	0
+tuter	Sucer une tute.
+tutes		tuter	66
+tuteur	Celui à qui la tutelle est confiée.
+tuteura		tuteurer	33
+tuteurage	Action de tuteurer.
+tuteurages		tuteurage	0
+tuteurai		tuteurer	22
+tuteuraient		tuteurer	32
+tuteurais		tuteurer	29
+tuteurait		tuteurer	34
+tuteurâmes		tuteurer	3
+tuteurant		tuteurer	35
+tuteuras		tuteurer	12
+tuteurasse		tuteurer	6
+tuteurassent		tuteurer	17
+tuteurasses		tuteurer	8
+tuteurassiez		tuteurer	14
+tuteurassions		tuteurer	25
+tuteurât		tuteurer	20
+tuteurâtes		tuteurer	2
+tuteuré		tuteurer	46
+tuteurée		tuteurer	37
+tuteurées		tuteurer	36
+tuteurent		tuteurer	31
+tuteurer	Munir d’un tuteur.
+tuteurera		tuteurer	21
+tuteurerai		tuteurer	16
+tuteureraient		tuteurer	28
+tuteurerais		tuteurer	18
+tuteurerait		tuteurer	26
+tuteureras		tuteurer	7
+tuteurèrent		tuteurer	24
+tuteurerez		tuteurer	5
+tuteureriez		tuteurer	4
+tuteurerions		tuteurer	11
+tuteurerons		tuteurer	10
+tuteureront		tuteurer	15
+tuteurés		tuteurer	38
+tuteurez		tuteurer	30
+tuteuriez		tuteurer	13
+tuteurions		tuteurer	19
+tuteurons		tuteurer	27
+tuteurs		tuteur	0
+tuthie	Oxyde de zinc entrant dans la préparation de certains collyres.
+tuthies		tuthie	0
+tutie	Variante de tuthie.
+tuties		tutie	0
+tuto	Tutoriel.
+tutoie		tutoyer	64
+tutoiement	Action de tutoyer.
+tutoiements		tutoiement	0
+tutoient		tutoyer	41
+tutoiera	Troisième personne du futur du verbe tutoyer.	verbe
+tutoierai		tutoyer	50
+tutoieraient		tutoyer	28
+tutoierais		tutoyer	18
+tutoierait		tutoyer	26
+tutoieras		tutoyer	7
+tutoierez		tutoyer	5
+tutoieriez		tutoyer	4
+tutoierions		tutoyer	11
+tutoierons		tutoyer	10
+tutoieront		tutoyer	15
+tutoies		tutoyer	77
+tutora		tutorer	39
+tutorai		tutorer	22
+tutoraient		tutorer	32
+tutorais		tutorer	29
+tutorait		tutorer	34
+tutorâmes		tutorer	3
+tutorant		tutorer	35
+tutoras		tutorer	12
+tutorasse		tutorer	6
+tutorassent		tutorer	17
+tutorasses		tutorer	8
+tutorassiez		tutorer	14
+tutorassions		tutorer	25
+tutorat	Qualité de tuteur.
+tutorâtes		tutorer	2
+tutorats		tutorat	0
+tutoré	Personne ou élève qui est tutorée, qui est encadrée par un tuteur dans le but de se former.
+tutorée		tutorer	37
+tutorées		tutorer	36
+tutorent		tutorer	31
+tutorer	Assurer le tutorat (d’un élève).
+tutorera		tutorer	21
+tutorerai		tutorer	16
+tutoreraient		tutorer	28
+tutorerais		tutorer	18
+tutorerait		tutorer	26
+tutoreras		tutorer	7
+tutorèrent		tutorer	24
+tutorerez		tutorer	5
+tutoreriez		tutorer	4
+tutorerions		tutorer	11
+tutorerons		tutorer	10
+tutoreront		tutorer	15
+tutorés		tutoré	0
+tutorez		tutorer	30
+tutoriel	De tuteur.
+tutorielle		tutoriel	23
+tutorielles		tutoriel	1
+tutoriels		tutoriel	0
+tutoriez		tutorer	13
+tutorions		tutorer	19
+tutorons		tutorer	27
+tutos		tuto	0
+tutoya		tutoyer	39
+tutoyai		tutoyer	22
+tutoyaient		tutoyer	42
+tutoyais		tutoyer	52
+tutoyait		tutoyer	40
+tutoyâmes		tutoyer	3
+tutoyant		tutoyer	43
+tutoyas		tutoyer	12
+tutoyasse		tutoyer	6
+tutoyassent		tutoyer	17
+tutoyasses		tutoyer	8
+tutoyassiez		tutoyer	14
+tutoyassions		tutoyer	25
+tutoyât		tutoyer	62
+tutoyâtes		tutoyer	2
+tutoyé		tutoyer	56
+tutoyée		tutoyer	45
+tutoyées		tutoyer	36
+tutoyer	User des mots de tu et de toi en parlant à quelqu’un.
+tutoyèrent		tutoyer	48
+tutoyés		tutoyer	53
+tutoyeur	Celui qui tutoie aisément, fréquemment.
+tutoyeurs		tutoyeur	0
+tutoyeuses		tutoyeur	1
+tutoyez		tutoyer	47
+tutoyiez		tutoyer	13
+tutoyions		tutoyer	133
+tutoyons		tutoyer	59
+tutrice	Protectrice, entité protectrice.
+tutrices		tutrice	0
+tutsi	Relatif aux Tutsis.
+tutsie		tutsi	23
+tutsies		tutsi	1
+tutsis		tutsi	9
+tutti	Sur une partition désigne un passage où tous les instruments de l'orchestre sont sollicités et jouent ensemble.
+tuttis		tutti	0
+tutu	Cul, derrière, fesses.
+tutus		tutu	0
+tutute	Sucette en matière souple données aux bébés pour combler leur besoin de succion et les apaiser.
+tututer	Tutoyer.
+tututés		tututer	38
+tuvalais	Relatif aux Tuvalu.
+tuvalaise		tuvalais	23
+tuvalaises		tuvalais	1
+tuvaluan	Qui a un rapport avec l’État des Tuvalu ou ses habitants.
+tuvaluane		tuvaluan	23
+tuvaluanes		tuvaluan	1
+tuvaluans		tuvaluan	9
+tuyau	Tube ou conduit souple ou rigide, de fer, de plomb, de fer-blanc, de terre cuite, de matière plastique, etc.
+tuyauta		tuyauter	33
+tuyautage	Ensemble des tuyaux d’une machine à vapeur, ou de toute autre machine.
+tuyautages		tuyautage	0
+tuyautai		tuyauter	22
+tuyautaient		tuyauter	42
+tuyautais		tuyauter	29
+tuyautait		tuyauter	40
+tuyautâmes		tuyauter	3
+tuyautant		tuyauter	35
+tuyautas		tuyauter	12
+tuyautasse		tuyauter	6
+tuyautassent		tuyauter	17
+tuyautasses		tuyauter	8
+tuyautassiez		tuyauter	14
+tuyautassions		tuyauter	25
+tuyautât		tuyauter	20
+tuyautâtes		tuyauter	2
+tuyauté	Qui forme des tuyaux, plis cylindriques donnés lors du repassage.
+tuyautée		tuyauter	45
+tuyautées		tuyauter	51
+tuyautent		tuyauter	41
+tuyauter	Former avec un fer rond des tuyaux à du linge, à de la dentelle.
+tuyautera		tuyauter	44
+tuyauterai		tuyauter	16
+tuyauteraient		tuyauter	28
+tuyauterais		tuyauter	18
+tuyauterait		tuyauter	26
+tuyauteras		tuyauter	7
+tuyautèrent		tuyauter	24
+tuyauterez		tuyauter	5
+tuyauterie	Ensemble des tuyaux et des conduites d’une construction.
+tuyauteries		tuyauterie	0
+tuyauteriez		tuyauter	4
+tuyauterions		tuyauter	11
+tuyauterons		tuyauter	10
+tuyauteront		tuyauter	15
+tuyautés		tuyauté	0
+tuyauteur	Celui qui assemble ou construit un réseau de tuyauterie.
+tuyauteurs		tuyauteur	0
+tuyauteuse	Celle qui assemble ou construit un réseau de tuyauterie.
+tuyauteuses		tuyauteuse	0
+tuyautez		tuyauter	30
+tuyautiez		tuyauter	13
+tuyautions		tuyauter	19
+tuyautons		tuyauter	27
+tuyaux		tuyau	0
+tuyère	Ouverture pratiquée à la partie inférieure et latérale d’un fourneau, et destinée à recevoir le tuyau ou bec des soufflets.
+tuyères		tuyère	0

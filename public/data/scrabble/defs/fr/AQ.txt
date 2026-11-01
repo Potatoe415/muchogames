@@ -1,0 +1,124 @@
+aquabike	Aquacycle.
+aquabikes		aquabike	0
+aquabiking	Vélo statique dans une piscine.
+aquabikings		aquabiking	0
+aquacole	Relatif à l’aquaculture.
+aquacoles		aquacole	0
+aquaculteur	Celui qui s’occupe d’aquaculture.
+aquaculteurs		aquaculteur	0
+aquacultrice	Celle qui s’occupe d’aquaculture.
+aquacultrices		aquacultrice	0
+aquaculture	Élevage animal ou culture végétale en milieu aquatique.
+aquacultures		aquaculture	0
+aquafortiste	Graveur·euse sur cuivre à l’eau-forte.
+aquafortistes		aquafortiste	0
+aquagym	Gymnastique pratiquée dans l’eau.
+aquamanile	Petit bassin servant à se laver les mains, en usage au Moyen Âge.
+aquamaniles		aquamanile	0
+aquanaute	Plongeur ou plongeuse sous-marine, personne qui effectue des expéditions sous-marines.
+aquanautes		aquanaute	0
+aquaplanage	Perte d’adhérence souvent brutale des roues d’un véhicule sur une surface mouillée due à la formation d’une pellicule d’eau entre les pneus et cette surface.
+aquaplanages		aquaplanage	0
+aquaplane	Planche reliée à un canot à moteur par des cordes grâce à laquelle on glisse sur l’eau.
+aquaplanes		aquaplane	0
+aquaplaning	Perte d’adhérence souvent brutale des roues d’un véhicule sur une surface mouillée due à la formation d’une pellicule d’eau entre les pneus et cette surface.
+aquaplanings		aquaplaning	0
+aquaponie	Pratique associant dans un même milieu la culture de végétaux et l’élevage de poissons en symbiose.
+aquaponies		aquaponie	0
+aquarella		aquareller	39
+aquarellai		aquareller	55
+aquarellaient		aquareller	42
+aquarellais		aquareller	52
+aquarellait		aquareller	40
+aquarellâmes		aquareller	68
+aquarellant		aquareller	43
+aquarellas		aquareller	83
+aquarellasse		aquareller	81
+aquarellassent		aquareller	78
+aquarellasses		aquareller	87
+aquarellassiez		aquareller	88
+aquarellassions		aquareller	90
+aquarellât		aquareller	62
+aquarellâtes		aquareller	84
+aquarelle	Technique de peinture à l’eau sur papier, avec des couleurs transparentes, ayant le moins d’épaisseur possible.
+aquarellée		aquarellé	23
+aquarellées		aquarellé	1
+aquarellent		aquareller	41
+aquareller	Peindre à l'aquarelle.
+aquarellera		aquareller	44
+aquarellerai		aquareller	50
+aquarelleraient		aquareller	63
+aquarellerais		aquareller	60
+aquarellerait		aquareller	49
+aquarelleras		aquareller	57
+aquarellèrent		aquareller	48
+aquarellerez		aquareller	58
+aquarelleriez		aquareller	74
+aquarellerions		aquareller	82
+aquarellerons		aquareller	61
+aquarelleront		aquareller	54
+aquarellés		aquarellé	9
+aquarellez		aquareller	47
+aquarelliez		aquareller	67
+aquarellions		aquareller	65
+aquarelliste	Personne qui peint à l’aquarelle.
+aquarellistes		aquarelliste	0
+aquarellons		aquareller	59
+aquariophile	Qui a la passion des poissons et des plantes d’aquarium.
+aquariophiles		aquariophile	123
+aquariophilie	Élevage de poissons d’ornement en aquarium.
+aquariophilies		aquariophilie	0
+aquarium	Réservoir d’eau, généralement en verre épais, dans lequel on garde des poissons ou des algues.
+aquariums		aquarium	0
+aquathlon	Épreuve sportive enchaînée de natation et de course à pied où le chronomètre n’est pas arrêté.
+aquathlons		aquathlon	0
+aquatinte	Gravure chimique sur métal à l’eau-forte, imitant les dessins au lavis.
+aquatintes		aquatinte	0
+aquatintiste	Celui, celle qui grave à l’aquatinte.
+aquatintistes		aquatintiste	0
+aquatique	Qui croît et se nourrit dans l’eau.
+aquatiques		aquatique	0
+aquatubulaire	Se dit d’une chaudière à tubes d’eau.
+aquatubulaires		aquatubulaire	0
+aquavit	Boisson alcoolisée scandinave distillée à partir de pommes de terre ou de céréales, et parfumée avec différentes épices.
+aquavits		aquavit	0
+aquazole	Carburant constitué d’une émulsion de gazole et d’eau, permettant de réduire les rejets polluants.
+aquazoles		aquazole	0
+aqueduc	Canal ou conduite en maçonnerie (visible quand elle est surélevée) destinée à apporter de l’eau potable dans une ville, malgré la distance et la dénivelée entr…
+aqueducs		aqueduc	0
+aqueuse		aqueux	23
+aqueuses		aqueux	1
+aqueux	Qui est de la nature de l’eau.
+aquicole	Variante de aquacole.
+aquicoles		aquicole	0
+aquiculteur	Celui qui s’occupe d’aquiculture.
+aquiculteurs		aquiculteur	0
+aquicultrice	Celle qui s’occupe d’aquiculture.
+aquicultrices		aquicultrice	0
+aquiculture	Variante de aquaculture.
+aquicultures		aquiculture	0
+aquifère	Qui porte ou qui contient de l’eau en partie mobilisable par gravité.
+aquifères		aquifère	0
+aquifoliacées	Famille de plantes à laquelle le houx a donné son nom.
+aquilain	Dont la robe est de couleur fauve ou brune (pour un cheval).
+aquilains		aquilain	0
+aquilin	Qualifie un nez fin et courbé en bec d’aigle.
+aquiline		aquilin	23
+aquilines		aquilin	1
+aquilins		aquilin	9
+aquilon	Vent du nord.
+aquilons		aquilon	115
+aquitain	Forme ancienne du basque et un substrat du gascon, langue parlée par les Aquitains ou Proto-Basques habitant une aire qui correspond aux provinces romaines d’A…
+aquitaine		aquitain	124
+aquitaines		aquitain	1
+aquitains		aquitain	9
+aquitanien	Qualifie une zone de végétation du domaine atlantico-européen, qui se trouve en Aquitaine.
+aquitanienne	Plante qui croît préférentiellement dans la zone aquitanienne.
+aquitaniennes		aquitanien	1
+aquitaniens		aquitanien	9
+aquoibonisme	Refus d’agir, de s’engager, dû au sentiment de l’inanité, de la stérilité de toute action envisagée.
+aquoibonismes		aquoibonisme	0
+aquoiboniste	Personne qui, par aquoibonisme, refuse de s’engager dans l’action.
+aquoibonistes		aquoiboniste	0
+aquosité	Qualité de ce qui est aqueux.
+aquosités		aquosité	0

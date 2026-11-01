@@ -1,0 +1,1499 @@
+geai	Espèce d’oiseau passereau, de taille moyenne, souvent au plumage coloré, souvent bruyant, de la famille des corvidés.
+geais		geai	0
+géant	Excédant de beaucoup la stature ordinaire, très grand.
+géante	Géant femelle.
+géantes		géant	1
+géantiste	Sportif spécialisé dans le slalom géant en ski alpin.
+géantistes		géantiste	0
+géants		géant	9
+géaster	Variante de géastre (espèce de champignons).
+géasters		géaster	0
+gecko	Nom vernaculaire de nombreux lézards constituant l’infra-ordre des Gekkota.
+geckos		gecko	0
+geek	Personne prise par une passion, à l’origine dans le domaine de la high-tech, puis par extension dans n’importe quel domaine.
+geeka		geeker	39
+geekai		geeker	55
+geekaient		geeker	42
+geekais		geeker	52
+geekait		geeker	40
+geekâmes		geeker	68
+geekant		geeker	43
+geekas		geeker	83
+geekasse		geeker	81
+geekassent		geeker	78
+geekasses		geeker	87
+geekassiez		geeker	88
+geekassions		geeker	90
+geekât		geeker	62
+geekâtes		geeker	84
+geeké		geeker	56
+geekent		geeker	41
+geeker	Agir comme un geek.
+geekera		geeker	44
+geekerai		geeker	50
+geekeraient		geeker	63
+geekerais		geeker	60
+geekerait		geeker	49
+geekeras		geeker	57
+geekèrent		geeker	48
+geekerez		geeker	58
+geekeriez		geeker	74
+geekerions		geeker	82
+geekerons		geeker	61
+geekeront		geeker	54
+geekes		geeker	77
+geekette	Femme qui a un comportement de geek.
+geekettes		geekette	0
+geekez		geeker	47
+geekiez		geeker	67
+geekions		geeker	65
+geekons		geeker	59
+geeks		geek	0
+gégène	Dynamo électrique manuelle dont l’utilisation première est d’alimenter les téléphones de campagne.
+gégènes		gégène	0
+géhenne	L’enfer.
+géhennes		géhenne	0
+geignaient		geindre	93
+geignais		geindre	95
+geignait		geindre	91
+geignant	Qui a l’habitude de geindre.
+geignante		geignant	23
+geignantes		geignant	1
+geignants		geignant	9
+geignard	Qui se lamente.
+geignarde	Personne qui geint, gémit, se lamente ou se plaint volontiers.
+geignardes		geignard	1
+geignards		geignard	9
+geigne		geindre	89
+geignement	Cri étouffé.
+geignements		geignement	0
+geignent		geindre	41
+geignes		geindre	76
+geignez		geindre	70
+geigniez		geindre	110
+geignîmes		geindre	3
+geignions		geindre	111
+geignirent		geindre	24
+geignis		geindre	22
+geignisse		geindre	6
+geignissent		geindre	17
+geignisses		geindre	8
+geignissiez		geindre	14
+geignissions		geindre	25
+geignit		geindre	39
+geignîtes		geindre	2
+geignons		geindre	27
+geindra		geindre	21
+geindrai		geindre	50
+geindraient		geindre	108
+geindrais		geindre	106
+geindrait		geindre	112
+geindras		geindre	7
+geindre	Se lamenter, gémir, se plaindre à diverses reprises d’une voix languissante et non articulée.
+geindres		geindre	0
+geindrez		geindre	5
+geindriez		geindre	99
+geindrions		geindre	101
+geindrons		geindre	10
+geindront		geindre	15
+geins		geindre	72
+geint		geindre	56
+geisha	Au Japon, femme chanteuse, danseuse, hôtesse, artiste et entraîneuse ayant reçu une éducation spécifique.
+geishas		geisha	0
+gel	Solidification de l’eau en glace.
+gela		geler	39
+gelada	Synonyme de gelada
+géladas		gélada	0
+gelai		geler	22
+gelaient		geler	42
+gelais		geler	52
+gelait		geler	40
+gelâmes		geler	3
+gelant		geler	43
+gelas		geler	12
+gelasien	Relatif à Saint-Gelais, commune française située dans le département des Deux-Sèvres.
+gelasienne		gelasien	23
+gelasiennes		gelasien	1
+gelasiens		gelasien	9
+gelasse		geler	6
+gelassent		geler	17
+gelasses		geler	8
+gelassiez		geler	14
+gelassions		geler	25
+gelât		geler	62
+gelâtes		geler	2
+gélatine	Protéine obtenue par hydrolyse du collagène issu des os et des cartilages des animaux.
+gélatinée		gélatiner	37
+gélatinées		gélatiner	36
+gélatiner	Couvrir de gélatine.
+gélatines		gélatine	0
+gélatineuse	Fabricante de gélatine.
+gélatineuses		gélatineux	1
+gélatineux	Qui est de la nature de la gélatine.
+gélatiniforme	Qui a la forme, lʼapparence de la gélatine.
+gélatiniformes		gélatiniforme	0
+gélatinisation	Passage d’un corps à l’état de gélatine ou à l’aspect gélatineux.
+gélatinisations		gélatinisation	0
+gélatinobromure	Émulsion de bromure dans de la gélatine.
+gelé	Transformé en glace, en parlant d’eau.
+gelée	Froid qui glace l’eau et qui rend les corps plus rigides.
+gelées		gelée	0
+gèlent		geler	41
+geler	Durcir, rendre solide par le froid, transformer en glace.
+gèlera		geler	44
+gèlerai		geler	50
+gèleraient		geler	28
+gèlerais		geler	60
+gèlerait		geler	49
+gèleras		geler	7
+gelèrent		geler	24
+gèlerez		geler	5
+gèleriez		geler	4
+gèlerions		geler	11
+gèlerons		geler	10
+gèleront		geler	15
+gèles		geler	77
+gelez		geler	47
+geliez		geler	13
+gélif	Qui a été fendu par les grandes gelées.
+gélifia		gélifier	33
+gélifiai		gélifier	22
+gélifiaient		gélifier	32
+gélifiais		gélifier	29
+gélifiait		gélifier	34
+gélifiâmes		gélifier	3
+gélifiant	Qui donne une consistance gélatineuse.
+gélifiante		gélifiant	23
+gélifiantes		gélifiant	1
+gélifiants		gélifiant	9
+gélifias		gélifier	12
+gélifiasse		gélifier	6
+gélifiassent		gélifier	17
+gélifiasses		gélifier	8
+gélifiassiez		gélifier	14
+gélifiassions		gélifier	25
+gélifiât		gélifier	20
+gélifiâtes		gélifier	2
+gélification	Transition pouvant apparaître au cours de la polymérisation et modifiant les propriétés du matériau.
+gélifications		gélification	0
+gélifié		gélifier	56
+gélifiée		gélifier	37
+gélifiées		gélifier	36
+gélifient		gélifier	31
+gélifier	Transformer en gelée (en particulier destinée à l’alimentation).
+gélifiera		gélifier	21
+gélifierai		gélifier	16
+gélifieraient		gélifier	28
+gélifierais		gélifier	18
+gélifierait		gélifier	26
+gélifieras		gélifier	7
+gélifièrent		gélifier	24
+gélifierez		gélifier	5
+gélifieriez		gélifier	4
+gélifierions		gélifier	11
+gélifierons		gélifier	10
+gélifieront		gélifier	15
+gélifiés		gélifier	38
+gélifiez		gélifier	30
+gélifiiez		gélifier	13
+gélifiions		gélifier	19
+gélifions		gélifier	27
+gélifluxion	Solifluxion due au dégel.
+gélifluxions		gélifluxion	0
+gélifraction	Mode d’altération du sol rocheux causé par les cycles de gel et de dégel de l’eau à l’intérieur du sol.
+gélifractions		gélifraction	0
+gélifs		gélif	9
+géline	La volaille, au Moyen Âge.
+gélines		géline	0
+gelinotte	Variante de gélinotte.
+gelinottes		gelinotte	0
+gelions		geler	19
+gélisol	Sol gelé de façon intermittente.
+gélisols		gélisol	0
+géliturbation	Cryoturbation.
+géliturbations		géliturbation	0
+gélivation	Fragmentation des roches due à l’augmentation du volume de l’eau interstitielle lors du gel.
+gélivations		gélivation	0
+gélive	Roche gélive.
+gélives		gélif	1
+gélivité	Caractéristique de ce qui est gélif.
+gélivités		gélivité	0
+gélivure	Fente ou gerçure des arbres, creusée par les grandes gelées.
+gélivures		gélivure	0
+gélolevure	Levure cultivée sur gélose.
+gélolevures		gélolevure	0
+gelons		geler	59
+gélose	Substance gélatineuse extraite de l'agar-agar, c'est un polysaccharide complexe.
+géloses		gélose	0
+gels		gel	0
+gélule	Capsule gélatineuse formée de deux parties emboîtées l’une dans l’autre, destinée à contenir une poudre médicamenteuse en vue de son absorption par voie orale.
+gélules		gélule	0
+gelure	Action du froid sur le corps.
+gelures		gelure	0
+gémeau	Jumeau.
+gémeaux		gémeau	120
+gémellaire	Qui concerne les jumeaux.
+gémellaires		gémellaire	0
+gémelle		gémeau	23
+gémellée		gémeller	45
+gémellées		gémeller	51
+gémeller	Donner naissance à des jumeaux.
+gémelles		gémeau	1
+gémellipare	Qui produit des jumeaux.
+gémellipares		gémellipare	0
+gémellité	Occurrence de jumeaux.
+gémellités		gémellité	0
+gémi		gémir	56
+gémie		gémir	45
+gémies		gémir	51
+gémîmes		gémir	3
+gémina		géminer	33
+géminai		géminer	22
+géminaient		géminer	32
+géminais		géminer	29
+géminait		géminer	34
+géminâmes		géminer	3
+géminant		géminer	35
+géminas	Deuxième personne du singulier du passé simple de l’indicatif de géminer.	géminer
+géminasse		géminer	6
+géminassent		géminer	17
+géminasses		géminer	8
+géminassiez		géminer	14
+géminassions		géminer	25
+géminât		géminer	20
+géminâtes		géminer	2
+gémination	Redoublement d'un son.
+géminations		gémination	0
+géminé	Double ; doublé.
+géminée	Consonne longue répartie entre la fin d’une syllabe et le début de la syllabe suivante.
+géminées		géminée	0
+géminent		géminer	31
+géminer	Se doubler.
+géminera		géminer	21
+géminerai		géminer	16
+gémineraient		géminer	28
+géminerais		géminer	18
+géminerait		géminer	26
+gémineras		géminer	7
+géminèrent		géminer	24
+géminerez		géminer	5
+gémineriez		géminer	4
+géminerions		géminer	11
+géminerons		géminer	10
+gémineront		géminer	15
+géminés		géminer	38
+géminez		géminer	30
+géminiez		géminer	13
+géminions		géminer	19
+géminons		géminer	27
+gémir	Exprimer sa souffrance d’une voix plaintive et non articulée.
+gémira		gémir	44
+gémirai		gémir	50
+gémiraient		gémir	63
+gémirais		gémir	60
+gémirait		gémir	49
+gémiras		gémir	7
+gémirent		gémir	48
+gémirez		gémir	5
+gémiriez		gémir	4
+gémirions		gémir	11
+gémirons		gémir	10
+gémiront		gémir	15
+gémis		gémir	53
+gémissaient		gémir	75
+gémissais		gémir	86
+gémissait		gémir	71
+gémissant	Qui gémit.
+gémissante		gémissant	23
+gémissantes		gémissant	1
+gémissants		gémissant	9
+gémisse		gémir	85
+gémissement	Action de gémir.
+gémissements		gémissement	0
+gémissent		gémir	69
+gémisses		gémir	76
+gémissez		gémir	70
+gémissiez		gémir	100
+gémissions		gémir	19
+gémissons		gémir	27
+gémit		gémir	80
+gémîtes		gémir	2
+gemma		gemmer	39
+gemmage	Opération qui consiste à blesser le pin pour en récolter la gemme ou résine.
+gemmages		gemmage	0
+gemmai		gemmer	22
+gemmaient		gemmer	32
+gemmail	Lames de verre coloré superposées ou/et juxtaposées et éclairées par transparence, mais sans nervures de plomb à la différence du vitrail.
+gemmais	Relatif à Sainte-Gemme-Martaillac, commune française située dans le département du Lot-et-Garonne.
+gemmait		gemmer	34
+gemmal	Qui fait partie du bourgeon.
+gemmâmes		gemmer	3
+gemmant		gemmer	35
+gemmas		gemmer	12
+gemmasse		gemmer	6
+gemmassent		gemmer	17
+gemmasses		gemmer	8
+gemmassiez		gemmer	14
+gemmassions		gemmer	25
+gemmât		gemmer	20
+gemmâtes		gemmer	2
+gemmation	Développement des bourgeons, dans les plantes ligneuses et vivaces.
+gemmations		gemmation	0
+gemmaux		gemmal	9
+gemme	Pierre fine, pierre précieuse, pierre ornementale ou synthétique répondant à des critères de dureté, d’éclat, de couleur et de transparence.
+gemmée		gemmer	37
+gemmées		gemmer	36
+gemment		gemmer	31
+gemmer	Inciser les pins pour exploiter leur résine.
+gemmera		gemmer	21
+gemmerai		gemmer	16
+gemmeraient		gemmer	28
+gemmerais		gemmer	18
+gemmerait		gemmer	26
+gemmeras		gemmer	7
+gemmèrent		gemmer	24
+gemmerez		gemmer	5
+gemmeriez		gemmer	4
+gemmerions		gemmer	11
+gemmerons		gemmer	10
+gemmeront		gemmer	15
+gemmes		gemme	0
+gemmeur	Celui qui gemme, qui entaille les écorces de pins pour provoquer l’écoulement de la résine.
+gemmeurs		gemmeur	0
+gemmeuse	Femme qui gemme, qui entaille les écorces de pins pour provoquer l’écoulement de la résine.
+gemmeuses		gemmeuse	0
+gemmez		gemmer	30
+gemmiez		gemmer	13
+gemmifère	Qui contient des pierres précieuses.
+gemmifères		gemmifère	0
+gemmions		gemmer	19
+gemmipare	Qui produit des bourgeons.
+gemmipares		gemmipare	0
+gemmologie	Science qui consiste à étudier les gemmes.
+gemmologies		gemmologie	0
+gemmologiste	Spécialiste de la gemmologie.
+gemmologistes		gemmologiste	0
+gemmologue	Professionnel spécialiste en gemmologie et chargé de définir le classement des catégories de diamants.
+gemmologues		gemmologue	0
+gemmons		gemmer	27
+gemmothérapie	Méthode thérapeutique utilisant essentiellement des bourgeons de plantes par voie interne comme traitement.
+gemmothérapies		gemmothérapie	0
+gemmule	Premier bourgeon apparaissant à la base de la plante qui donne naissance à la tige.
+gemmules		gemmule	0
+gémonies	Lieu qui était destiné, chez les Romains, à exposer les corps des criminels après l’exécution.
+gemsbok	Synonyme d’oryx gazelle.
+gemsboks		gemsbok	0
+gêna		gêner	39
+gênai		gêner	22
+gênaient		gêner	42
+gênais		gêner	52
+gênait		gêner	40
+génal	Qui appartient aux joues.
+génale		génal	109
+génales		génal	1
+gênâmes		gêner	3
+génance	État de gêne physique ou morale.
+génances		génance	0
+gênant	Qui gêne.
+gênante		gênant	23
+gênantes		gênant	1
+gênants		gênant	9
+gênas		gêner	12
+gênasse		gêner	6
+gênassent		gêner	17
+gênasses		gêner	8
+gênassiez		gêner	14
+gênassions		gêner	25
+gênât		gêner	62
+gênâtes		gêner	2
+génaux		génal	0
+gencive	Chair, tissus muqueux qui est autour des dents et dans laquelle celles-ci sont comme enchâssées.
+gencives		gencive	0
+gendarma		gendarmer	33
+gendarmai		gendarmer	22
+gendarmaient		gendarmer	32
+gendarmais		gendarmer	29
+gendarmait		gendarmer	34
+gendarmâmes		gendarmer	3
+gendarmant		gendarmer	35
+gendarmas		gendarmer	12
+gendarmasse		gendarmer	6
+gendarmassent		gendarmer	17
+gendarmasses		gendarmer	8
+gendarmassiez		gendarmer	14
+gendarmassions		gendarmer	25
+gendarmât		gendarmer	20
+gendarmâtes		gendarmer	2
+gendarme	Militaire d’un corps de troupes spécialement chargé de maintenir la sécurité et la tranquillité publique.
+gendarmée		gendarmer	37
+gendarmées		gendarmer	36
+gendarment		gendarmer	31
+gendarmer	S’emporter mal à propos pour une cause légère.
+gendarmera		gendarmer	21
+gendarmerai		gendarmer	16
+gendarmeraient		gendarmer	28
+gendarmerais		gendarmer	18
+gendarmerait		gendarmer	26
+gendarmeras		gendarmer	7
+gendarmèrent		gendarmer	24
+gendarmerez		gendarmer	5
+gendarmerie	L’enquête continue sur le crime de la Sauge-aux-Bois..
+gendarmeries		gendarmerie	0
+gendarmeriez		gendarmer	4
+gendarmerions		gendarmer	11
+gendarmerons		gendarmer	10
+gendarmeront		gendarmer	15
+gendarmes		gendarme	0
+gendarmesque	Relatif aux gendarmes, à la gendarmerie.
+gendarmesques		gendarmesque	0
+gendarmette	Femme gendarme.
+gendarmettes		gendarmette	0
+gendarmez		gendarmer	30
+gendarmiez		gendarmer	13
+gendarmions		gendarmer	19
+gendarmons		gendarmer	27
+gendelettre	Homme ou femme de lettres.
+gendelettres		gendelettre	0
+gendre	Le mari de la fille ou du fils de quelqu’un.
+gendres		gendre	0
+gène	Unité de base de l’information biologique qui se transmet de génération en génération.
+généalogie	Dénombrement des ancêtres de quelqu’un, ou des autres parents.
+généalogies		généalogie	0
+généalogique	Relatif à la généalogie.
+généalogiques		généalogique	0
+généalogiste	Celui ou celle qui dresse les généalogies.
+généalogistes		généalogiste	0
+gênée	Personne qui éprouve de la gêne, de la honte.
+gênées		gêné	1
+gênent		gêner	41
+génépi	Nom vernaculaire de plusieurs espèces de plantes du genre Artemisia, dont certaines sont utilisées comme plantes médicinales ou pour la fabrication de boissons…
+génépis		génépi	0
+gêner	Incommoder quelqu’un ou quelque chose dont on empêche le libre mouvement, causer de la gêne, importuner, déranger.
+genera	Livre relatif aux genres et espèces du vivant.
+gênerai		gêner	50
+gêneraient		gêner	63
+gênerais		gêner	60
+gênerait		gêner	49
+général	Commun à tous les individus d’un genre, applicable à un très grand nombre de personnes ou de choses.
+généralat	Dignité de général d’armée.
+généralats		généralat	0
+générale	Militaire (officière) qui porte le grade de général.
+généralement	La plupart du temps, couramment, fréquemment, en général...
+générales		général	1
+généralisa		généraliser	33
+généralisable	Qui peut être généralisé.
+généralisables		généralisable	0
+généralisai		généraliser	22
+généralisaient		généraliser	32
+généralisais		généraliser	29
+généralisait		généraliser	40
+généralisâmes		généraliser	3
+généralisant		généraliser	43
+généralisas		généraliser	12
+généralisasse		généraliser	6
+généralisassent		généraliser	17
+généralisasses		généraliser	8
+généralisassiez		généraliser	14
+généralisât		généraliser	20
+généralisâtes		généraliser	2
+généralisateur	Qui généralise.
+généralisateurs		généralisateur	9
+généralisation	Action de généraliser.
+généralisations		généralisation	0
+généralisatrice	Celle qui généralise.
+généralisé	Qui s’est généralisé, qui est devenu la règle générale.
+généralisée		généralisé	23
+généralisées		généralisé	1
+généralisent		généraliser	31
+généraliser	Donner un caractère général.
+généralisera		généraliser	21
+généraliserai		généraliser	16
+généraliserais		généraliser	18
+généraliserait		généraliser	26
+généraliseras		généraliser	7
+généralisèrent		généraliser	24
+généraliserez		généraliser	5
+généraliseriez		généraliser	4
+généraliserions		généraliser	11
+généraliserons		généraliser	10
+généraliseront		généraliser	15
+généralisés		généralisé	9
+généralisez		généraliser	47
+généralisiez		généraliser	13
+généralisions		généraliser	65
+généralisons		généraliser	27
+généralissime	Très général.
+généralissimes		généralissime	0
+généraliste	Qui est d’ordre général.
+généralistes		généraliste	0
+généralité	Qualité de ce qui est général.
+généralités		généralité	0
+générâmes		générer	3
+générant		générer	43
+gêneras		gêner	7
+générasse		générer	6
+générassent		générer	17
+générasses		générer	8
+générassiez		générer	14
+générassions		générer	25
+générât		générer	20
+générâtes		générer	2
+générateur	Qui sert à engendrer.
+générateurs		générateur	9
+génératif	Qualifie un mode de reproduction des plantes par la voie sexuelle.
+génératifs		génératif	9
+génération	Action d’engendrer, de produire son semblable.
+générationnel	Relatif à toute une génération.
+générationnelle		générationnel	23
+générationnels		générationnel	9
+générations		génération	0
+générative		génératif	23
+génératives		génératif	1
+génératrice	Génitrice.
+génératrices		générateur	1
+généraux		général	9
+génère		générer	64
+générée		générer	45
+générées		générer	36
+gênèrent		gêner	48
+générer	ou Donner corps à, engendrer, donner naissance à.
+génèrera		générer	21
+génèrerai		générer	16
+génèreraient		générer	28
+génèrerais		générer	18
+génèrerait		générer	26
+génèreras		générer	7
+générèrent		générer	24
+génèrerez		générer	5
+génèreriez		générer	4
+génèrerions		générer	11
+génèrerons		générer	10
+génèreront		générer	15
+génères		générer	77
+généreuse	Mouche généreuse, grain de beauté factice placé sur la poitrine.
+généreusement	D’une manière généreuse, avec un grand cœur.
+généreuses		généreux	1
+généreux	Qui est de nature élevée, noble.
+générez		générer	47
+gêneriez		gêner	4
+gênerions		gêner	11
+génériquable	Qualifie un médicament (princeps) qui peut être produit sous forme de générique, de médicament générique.
+génériquables		génériquable	0
+générique	Relatif au genre.
+génériques		générique	0
+génériqueur	Société spécialisée dans la production de médicaments génériques.
+génériqueurs		génériqueur	0
+gênerons		gêner	61
+gêneront		gêner	54
+générosité	Disposition à donner plus qu’on n’est tenu de donner et à recevoir moins qu’on pourrait réclamer.
+générosités		générosité	0
+gênes		gêne	0
+genèse	Production, développement, croissance, début.
+genèses		genèse	0
+génésiaque	Qui est relatif à la Genèse.
+genésiaques		genésiaque	0
+génésique	Qui tient, qui a rapport aux faits physiologiques de la génération (procréation).
+génésiques		génésique	0
+genêt	Différents genres de plantes de la famille des Fabacées, qui renferment un grand nombre d’arbrisseaux et d’arbustes, la plupart à fleurs jaunes.
+généthliaque	Qui a rapport à la naissance d’un enfant.
+généthliaques		généthliaque	0
+généticien	Scientifique qui étudie les gènes, spécialiste de la génétique.
+généticienne	Scientifique qui étudie les gènes, spécialiste de la génétique.
+généticiennes		généticienne	0
+généticiens		généticien	0
+genêtière	Champ de genêts.
+genétières		genétière	0
+génétique	Relatif aux gènes, qui dépend des gènes (dans ces sens on dit plus rigoureusement génique).
+génétiquement	D’une manière, d’un point de vue génétique.
+génétiques		génétique	0
+génétiste	Spécialiste de la génétique.
+génétistes		génétiste	0
+genêts		genêt	0
+genette	Espèce de viverridé proche des civettes, surtout d’Afrique, et dont la peau s’emploie en fourrures.
+genettes		genette	0
+gêneur	Celui qui est habituellement ou accidentellement gênant.
+gêneurs		gêneur	0
+gêneuse	Celle qui est habituellement ou accidentellement gênante.
+gêneuses		gêneuse	0
+genevois	Relatif à la ville de Genève ou aux Genevois.
+genevoise	Sauce utilisée pour accompagner les poissons d’eau douce.
+genevoiserie	Situation politique compliquée ou absurde se passant dans le canton de Genève.
+genevoiseries		genevoiserie	0
+genevoises		genevois	1
+genévrette	Boisson obtenue par la fermentation des baies de genièvre qu’on met à macérer pendant un mois dans de l’eau avec trois ou quatre poignées d’absinthe.
+genévrettes		genévrette	0
+genévrier	Genre de plantes conifères de la famille des cupressacées, qui comprend de nombreux arbres et arbrisseaux toujours verts, aux feuilles en aiguilles piquantes o…
+genévrière	Lieu planté de genévriers.
+genévrières		genévrière	0
+genévriers		genévrier	0
+gênez		gêner	47
+génial	Où il y a du génie.
+géniale		génial	23
+génialement	D’une manière géniale.
+géniales		génial	1
+génialissime	Superlatif de génial: Tout à fait génial, extrêmement génial.
+génialissimes		génialissime	0
+génialité	Qualité de celui ou de celle qui a du génie.
+génialités		génialité	0
+géniaux		génial	9
+géniculé	Se dit d'une partie, tige ou racine, ou d’un organe qui est articulé et se fléchit en genou, de manière à former un angle.
+géniculée		géniculé	23
+géniculées		géniculé	1
+géniculés		géniculé	0
+génie	Esprit ou démon qui, selon les Romains, présidait à certains lieux, à des villes, etc.
+génien	Qui a rapport au menton.
+génienne		génien	23
+géniennes		génien	1
+géniens		génien	9
+génies		génie	0
+genièvre	Nom vulgaire du genévrier commun, (Juniperus communis) arbuste odoriférant dont les feuilles sont cylindriques, un peu longues et pointues par le bout, et qui …
+genièvrerie	Fabrique, distillerie de genièvre.
+genièvreries		genièvrerie	0
+genièvres		genièvre	0
+gêniez		gêner	67
+génine	Synonyme de aglycone.
+génines		génine	0
+gênions		gêner	19
+génique	Qui concerne les gènes.
+géniques		génique	0
+génisse	Jeune vache ou bisonne nullipare.
+génisses		génisse	0
+génital	Qui sert à la génération, à la reproduction biologique.
+génitale		génital	23
+génitales		génital	1
+génitalité	Caractère de ce qui est génital, lié aux organes génitaux.
+génitalités		génitalité	0
+génitaux		génital	9
+géniteur	Celui qui engendre.
+géniteurs		géniteur	0
+génitif	Relatif au génitif, cas de déclinaison.
+génitifs		génitif	0
+génitoire		génitoires	252
+génitoires	Parties génitales, testicules.
+génitrice	Celle qui engendre, mère.
+génitrices		génitrice	0
+gennaker	Voile d'avant de taille intermédiaire entre le génois et le spinnaker asymétrique.
+gennakers		gennaker	0
+génocida		génocider	39
+génocidai		génocider	55
+génocidaient		génocider	42
+génocidaire	Qui est relatif à un génocide.
+génocidaires		génocidaire	0
+génocidais		génocider	52
+génocidait		génocider	40
+génocidâmes		génocider	68
+génocidant		génocider	43
+génocidas		génocider	83
+génocidasse		génocider	81
+génocidassent		génocider	78
+génocidasses		génocider	87
+génocidassiez		génocider	88
+génocidassions		génocider	90
+génocidât		génocider	62
+génocidâtes		génocider	84
+génocide	Élimination physique intentionnelle, totale ou partielle, d’un groupe humain (national, ethnique ou religieux) ce qui veut dire que les membres sont exterminés…
+génocidée		génocider	45
+génocidées		génocider	51
+génocident		génocider	41
+génocider	Pratiquer un génocide sur (un peuple).
+génocidera		génocider	44
+génociderai		génocider	50
+génocideraient		génocider	63
+génociderais		génocider	60
+génociderait		génocider	49
+génocideras		génocider	57
+génocidèrent		génocider	48
+génociderez		génocider	58
+génocideriez		génocider	74
+génociderions		génocider	82
+génociderons		génocider	61
+génocideront		génocider	54
+génocides		génocide	0
+génocidez		génocider	47
+génocidiez		génocider	67
+génocidions		génocider	65
+génocidons		génocider	59
+génois	Relatif à Gênes (ville italienne) ou à ses habitants.
+génoise	Biscuit léger à base d’œufs, de sucre, de farine et, facultativement, de beurre fondu, rentrant dans la composition de gâteaux sophistiqués.
+génoises		génois	1
+génome	Ensemble du matériel héréditaire composé d’acides nucléiques (ADN ou ARN) d’un organite cellulaire, d’un organisme ou d’une espèce.
+génomes		génome	0
+génomique	Branche de la génétique qui étudie les génomes.
+génomiques		génomique	0
+gênons		gêner	59
+génopole	Synonyme de biocluster.
+génopoles		génopole	0
+génotoxicité	Capacité d’un composé chimique à induire des modifications physiques ou fonctionnelles dans un génome.
+génotoxicités		génotoxicité	0
+génotoxique	Se dit d’une substance ou d’un rayonnement qui peut compromettre l’intégrité du génome.
+génotoxiques		génotoxique	0
+génotypage	Discipline qui vise à déterminer l’identité d’une variation génétique, à une position spécifique sur tout ou partie du génome, pour un individu ou un groupe d’…
+génotypages		génotypage	0
+génotype	Ensemble ou partie donnée de la composition génétique d’un individu.
+génotypes		génotype	0
+génotypique	Lié au génotype.
+génotypiques		génotypique	0
+genou	Articulation joignant la jambe à la cuisse chez l’être humain.
+genouillé	Qui est articulé et se fléchit en genou, de manière à former un angle.
+genouillée		genouillé	23
+genouillées		genouillé	1
+genouillère	Ce qu’on attache sur le genou pour le protéger.
+genouillères		genouillère	0
+genouillés		genouillé	9
+genoux		genou	0
+génovéfain	Chanoine régulier de l’ordre de Sainte-Geneviève.
+génovéfains		génovéfain	0
+génovéfine	Femme qui appartient à la congrégation de Sainte-Geneviève.
+génovéfines		génovéfine	0
+genra		genrer	39
+genrai		genrer	55
+genraient		genrer	75
+genrais		genrer	86
+genrait		genrer	71
+genrâmes		genrer	68
+genrant		genrer	43
+genras		genrer	83
+genrasse		genrer	81
+genrassent		genrer	78
+genrasses		genrer	87
+genrassiez		genrer	88
+genrassions		genrer	90
+genrât		genrer	62
+genrâtes		genrer	84
+genre	Ensemble d’êtres, ou de choses, caractérisé par un ou des traits communs.
+genrée		genré	23
+genrées		genré	1
+genrent		genrer	69
+genrer	Attribuer un genre à.
+genrera		genrer	44
+genrerai		genrer	50
+genreraient		genrer	63
+genrerais		genrer	60
+genrerait		genrer	49
+genreras		genrer	57
+genrèrent		genrer	48
+genrerez		genrer	58
+genreriez		genrer	74
+genrerions		genrer	82
+genrerons		genrer	61
+genreront		genrer	54
+genres		genre	0
+genrez		genrer	70
+genriez		genrer	100
+genrions		genrer	94
+genrons		genrer	73
+gens	Personnes en nombre indéterminé.
+gent	Peuple, ethnie, groupe caractérisé par un trait particulier.
+gentamicine	Antibiotique bactéricide de la famille des aminoglycosides (aminosides) naturels, produit par une bactérie nommée Micromonospora purpurea.
+gentamicines		gentamicine	0
+gente		gens	109
+gentes		gent	1
+Gentianacées	Famille de plantes dicotylédones dont le type est la gentiane (Gentiana).
+gentiane	Nom usuel des plantes du genre Gentiana.
+gentianes		gentiane	0
+gentil	Agréable, charmant, mignon, aimable.
+gentilé	Nom donné aux habitants d’un lieu, d’un pays, d’un continent, d’une région, d’une province, etc.
+gentilés		gentilé	0
+gentilhomme	Celui qui est de naissance noble.
+gentilhommerie	Qualité de gentilhomme.
+gentilhommeries		gentilhommerie	0
+gentilhommière	Petit domaine d’un gentilhomme à la campagne.
+gentilhommières		gentilhommière	0
+gentilice	Relatif à la gens, la famille romaine.
+gentilices		gentilice	0
+gentilité	Toutes les nations païennes.
+gentilités		gentilité	0
+gentille	Personnage féminin d’une œuvre de fiction qui incarne le bien, par opposition à la méchante qui fait le mal.
+gentilles		gentil	1
+gentillesse	Agrément accompagné de délicatesse.
+gentillesses		gentillesse	0
+gentillet	Qui est assez gentil, assez agréable, mais sans plus.
+gentillets		gentillet	9
+gentillette	Féminin singulier de gentillet.
+gentillettes		gentillet	1
+gentils		gentil	9
+gentilshommes		gentilhomme	0
+gentiment	D’une manière gentille, avec gentillesse.
+gentleman	Gentilhomme anglais.
+gentlemans		gentleman	0
+gentlemen		gentleman	0
+gentries	Autre forme du pluriel de gentry.	gentry
+gentrifia		gentrifier	39
+gentrifiai		gentrifier	55
+gentrifiaient		gentrifier	42
+gentrifiais		gentrifier	52
+gentrifiait		gentrifier	40
+gentrifiâmes		gentrifier	68
+gentrifiant		gentrifier	43
+gentrifias		gentrifier	83
+gentrifiasse		gentrifier	81
+gentrifiassent		gentrifier	78
+gentrifiasses		gentrifier	87
+gentrifiassiez		gentrifier	88
+gentrifiassions		gentrifier	90
+gentrifiât		gentrifier	62
+gentrifiâtes		gentrifier	84
+gentrification	Processus par lequel le profil sociologique et social d’un quartier se transforme au profit d’une couche sociale supérieure.
+gentrifications		gentrification	0
+gentrifié		gentrifier	56
+gentrifiée		gentrifier	45
+gentrifiées		gentrifier	51
+gentrifient		gentrifier	41
+gentrifier	Embourgeoiser ; élever la catégorie sociale de.
+gentrifiera		gentrifier	44
+gentrifierai		gentrifier	50
+gentrifieraient		gentrifier	63
+gentrifierais		gentrifier	60
+gentrifierait		gentrifier	49
+gentrifieras		gentrifier	57
+gentrifièrent		gentrifier	48
+gentrifierez		gentrifier	58
+gentrifieriez		gentrifier	74
+gentrifierions		gentrifier	82
+gentrifierons		gentrifier	61
+gentrifieront		gentrifier	54
+gentrifies		gentrifier	77
+gentrifiez		gentrifier	47
+gentrifiiez		gentrifier	67
+gentrifiions		gentrifier	65
+gentrifions		gentrifier	59
+gentry	Nom par lequel on désigne en Angleterre la petite noblesse non titrée, par opposition à nobility, la haute noblesse.
+gentrys	Une des formes du pluriel de gentry.	gentry
+gents		gent	9
+génuflexion	Acte du culte religieux, qui se fait en fléchissant le genou.
+génuflexions		génuflexion	0
+géo	Géographie.
+géobiologie	Branche de la paléontologie étudiant les êtres vivants à l’échelle des temps géologiques.
+géobotanique	Science qui étudie la manière dont les plantes sont distribuées à la surface de la Terre.
+géobotaniques		géobotanique	0
+géocentrique	Qui a pour centre la planète Terre (et plus précisément le centre de celle-ci), ou qui est mesuré dans un référentiel centré sur elle.
+géocentriques		géocentrique	0
+géocentrisme	Conception du monde plaçant la Terre au centre de l’univers.
+géocentrismes		géocentrisme	0
+géochimie	Étude des composants chimiques de la Terre (et des autres planètes) et de leurs transformations.
+géochimies		géochimie	0
+géochimique	Relatif à la géochimie.
+géochimiques		géochimique	0
+géochimiste	Spécialiste de géochimie.
+géochimistes		géochimiste	0
+géochronologie	Étude du temps dans les séquences.
+géochronologies		géochronologie	0
+géocroiseur	Qui croise l’orbite de la Terre.
+géocroiseurs		géocroiseur	0
+géode	Cavité rocheuse tapissée de cristaux et autres matières minérales.
+géodes		géode	0
+géodésie	Étude de la forme du globe terrestre déduite des mesures d’arcs de méridien et des mesures de la pesanteur.
+géodésien	Ingénieur qui s’occupe de géodésie.
+géodésiens		géodésien	0
+géodésies		géodésie	0
+géodésique	Qui a rapport à la géodésie.
+géodésiques	Pluriel de adjectif géodésique.	géodésique
+géodynamique	Définition manquante ou à compléter.
+géodynamiques		géodynamique	0
+géoglyphe	Grand dessin, grand motif à même le sol, visible depuis le ciel.
+géoglyphes		géoglyphe	0
+géographe	Personne qui étudie la géographie.
+géographes		géographe	0
+géographie	Science qui a pour objet la description du globe terrestre, de sa constitution, de son relief, de ses climats, de ses ressources, de ses populations et de leur…
+géographies		géographie	0
+géographique	Relatif à la géographie.
+géographiques		géographique	0
+géoïde	Représentation de la surface terrestre plus précise que l’approximation sphérique ou ellipsoïdale, qui correspond à une équipotentielle dans le champ de gravit…
+géoïdes		géoïde	0
+geôle	Prison.
+geôles		geôle	0
+geôlier	Celui qui garde les prisonniers.
+geôlière	Celle qui garde les prisonniers.
+geôlières		geôlière	0
+geôliers		geôlier	0
+géolocalisa		géolocaliser	33
+géolocalisai		géolocaliser	22
+géolocalisaient		géolocaliser	32
+géolocalisais		géolocaliser	29
+géolocalisait		géolocaliser	34
+géolocalisâmes		géolocaliser	3
+géolocalisant		géolocaliser	35
+géolocalisas		géolocaliser	12
+géolocalisasse		géolocaliser	6
+géolocalisasses		géolocaliser	8
+géolocalisât		géolocaliser	20
+géolocalisâtes		géolocaliser	2
+géolocalisation	Localisation d’un objet sur une carte à l’aide de coordonnées géographiques.
+géolocalisé		géolocaliser	46
+géolocalisée		géolocaliser	37
+géolocalisées		géolocaliser	36
+géolocalisent		géolocaliser	31
+géolocaliser	Déterminer la position géographique où se trouve (quelque chose).
+géolocalisera		géolocaliser	21
+géolocaliserai		géolocaliser	16
+géolocaliserais		géolocaliser	18
+géolocaliserait		géolocaliser	26
+géolocaliseras		géolocaliser	7
+géolocalisèrent		géolocaliser	24
+géolocaliserez		géolocaliser	5
+géolocaliseriez		géolocaliser	4
+géolocaliserons		géolocaliser	10
+géolocaliseront		géolocaliser	15
+géolocalisés		géolocaliser	38
+géolocalisez		géolocaliser	30
+géolocalisiez		géolocaliser	13
+géolocalisions		géolocaliser	19
+géolocalisons		géolocaliser	27
+géologie	Science qui a pour objet l’étude des matériaux qui composent le globe terrestre et de l’ordre suivant lequel ces matériaux ont été disposés dans le temps et da…
+géologies		géologie	0
+géologique	Qui concerne la géologie.
+géologiquement	D'une manière conforme à la géologie.
+géologiques		géologique	0
+géologue	Celui qui est savant en géologie, qui s’occupe de géologie.
+géologues		géologue	0
+géomagnétique	Relatif au champ magnétique de la Terre, au géomagnétisme.
+géomagnétiques		géomagnétique	0
+géomagnétisme	Magnétisme terrestre.
+géomagnétismes		géomagnétisme	0
+géomancie	Divination de l’avenir ou des choses secrètes par des points que l’on marque au hasard sur la terre ou sur du papier, que l’on réunit par des lignes, et dont o…
+géomancien	Relatif à la géomancie.
+géomancienne	Personne qui pratique la géomancie.
+géomanciennes		géomancien	1
+géomanciens		géomancien	9
+géomancies		géomancie	0
+géomarketing	Synonyme de géomercatique.
+géomarketings		géomarketing	0
+géomaticien	Nom donné aux professionnels travaillant à l’étude de la géomatique et de ses logiciels.
+géomaticienne	Scientifique, technicienne, qui se sert de la géomatique dans son métier.
+géomaticiennes		géomaticienne	0
+géomaticiens		géomaticien	0
+géomatique	Ensemble de techniques de traitement informatique des données géographiques dont certaines peuvent provenir de la télédétection aérospatiale.
+géomatiques		géomatique	0
+géométral	Qui restitue les formes et distances réelles, mais ne tient pas compte de la perspective.
+géométrale		géométral	23
+géométrales		géométral	1
+géométraux		géométral	9
+géomètre	Expert en géométrie.
+géomètres		géomètre	0
+géométridé	Membre de la famille des Géométridés.
+géométridés		géométridé	0
+géométrie	Science étudiant les figures de l’espace en dimensions quelconques.
+géométries		géométrie	0
+géométrique	Relatif à la géométrie.
+géométriquement	D’une manière géométrique.
+géométriques		géométrique	0
+géométrisa		géométriser	33
+géométrisai		géométriser	22
+géométrisaient		géométriser	32
+géométrisais		géométriser	29
+géométrisait		géométriser	34
+géométrisâmes		géométriser	3
+géométrisant		géométriser	35
+géométrisas		géométriser	12
+géométrisasse		géométriser	6
+géométrisassent		géométriser	17
+géométrisasses		géométriser	8
+géométrisassiez		géométriser	14
+géométrisât		géométriser	20
+géométrisâtes		géométriser	2
+géométrisation	Utilisation de concepts et de techniques géométriques dans un autre domaine d’étude, ou le fait de donner un caractère géométrique à quelque chose.
+géométrisations		géométrisation	0
+géométrisé		géométriser	46
+géométrisée		géométriser	37
+géométrisées		géométriser	36
+géométrisent		géométriser	31
+géométriser	Rendre géométrique.
+géométrisera		géométriser	21
+géométriserai		géométriser	16
+géométriserais		géométriser	18
+géométriserait		géométriser	26
+géométriseras		géométriser	7
+géométrisèrent		géométriser	24
+géométriserez		géométriser	5
+géométriseriez		géométriser	4
+géométriserions		géométriser	11
+géométriserons		géométriser	10
+géométriseront		géométriser	15
+géométrisés		géométriser	38
+géométrisez		géométriser	30
+géométrisiez		géométriser	13
+géométrisions		géométriser	19
+géométrisons		géométriser	27
+géomorphologie	Étude descriptive et explicative des formes du relief.
+géomorphologies		géomorphologie	0
+géomorphologue	Chercheur ou chercheuse qui étudie les sols, les reliefs et les processus qui les façonnent.
+géomorphologues		géomorphologue	0
+géopélie	Genre de la famille des colombidés et de nom scientifique Geopelia comprenant cinq espèces de petites tourterelles au plumage délicatement orné de taches et de…
+géopélies		géopélie	0
+géophage	Qui mange de la terre.
+géophages		géophage	0
+géophagie	Habitude pathologique de manger de la terre.
+géophagies		géophagie	0
+géophile	Myriapode chilopode, type de l’ordre des Géophilomorphes.
+géophiles	Division de l’ordre des gastéropodes pulmonés, comprenant ceux qui vivent sur terre.
+géophone	Appareil servant à enregistrer ou à mesurer la vitesse des vibrations sismiques.
+géophones		géophone	0
+géophysicien	Celui qui s’occupe de géophysique.
+géophysicienne	Celle qui s’occupe de géophysique.
+géophysiciennes		géophysicienne	0
+géophysiciens		géophysicien	0
+géophysique	Relatif à la physique de la Terre.
+géophysiques		géophysique	0
+géophyte	Plante dont les parties qui en assurent la pérennité (bourgeons, mycélium, etc.) sont situées dans le sol durant la saison défavorable.
+géophytes		géophyte	0
+géopoliticien	Spécialiste de la géopolitique.
+géopoliticienne	Spécialiste de la géopolitique.
+géopoliticiens		géopoliticien	0
+géopolitique	Relatif à la géopolitique.
+géopolitiques		géopolitique	0
+géorgien	Relatif à la Géorgie du Caucase, aux Géorgiens.
+géorgienne		géorgien	23
+géorgiennes		géorgien	1
+géorgiens		géorgien	9
+géorgique	Agricole, qualifie, soit des ouvrages qui ont rapport à la culture de la terre, soit de poésies relatives à la nature en général.
+géorgiques		géorgique	118
+géos		géo	0
+géoscience	Ensemble des sciences qui s'intéressent à la Terre.
+géosciences		géoscience	0
+géosphère	Ensemble des matières minérales de la Terre, en particulier sa partie solide (roches, reliefs, sols), par opposition à l’atmosphère, l’hydrosphère et la biosph…
+géosphères		géosphère	0
+géostationnaire	Immobile par rapport à un point de la Terre, mais tournant autour de celle-ci dans l’espace.
+géostatique	Se dit d’un modèle cosmologique ou d’une conception selon laquelle la Terre est immobile dans l’univers.
+géostatiques		géostatique	0
+géostratégie	Stratégie au niveau mondial.
+géostratégies		géostratégie	0
+géostratégique	Relatif à la géostratégie.
+géostratégiques		géostratégique	0
+géosynchrone	Caractéristique d’une révolution d’un véhicule spatial de période égale à celle de la rotation de la Terre autour d’elle-même, soit 23 heures, 56 minutes et 4,…
+géosynchrones		géosynchrone	0
+géosynclinal	Qui concerne les géosynclinaux.
+géosynclinale		géosynclinal	23
+géosynclinales		géosynclinal	1
+géosynclinaux		géosynclinal	9
+géotaxie	Mouvement ou orientation prise par un être vivant par rapport au centre de la terre, en réponse à un stimulus : géotaxie positive (rapprochement) ou négative (…
+géotaxies		géotaxie	0
+géotechnique	Qui se rapporte à l’étude des propriétés des sols et des roches ainsi qu’à leurs interactions avec les ouvrages de construction.
+géotechniques		géotechnique	0
+géotextile	Tissu synthétique destiné aux travaux de bâtiment, de génie civil et d’agriculture.
+géotextiles		géotextile	0
+géothermal	Géothermique ; en rapport avec la chaleur de la Terre.
+géothermale		géothermal	23
+géothermales		géothermal	1
+géothermaux		géothermal	9
+géothermie	Science qui étudie les phénomènes thermiques internes du globe terrestre et la technique qui vise à l’exploiter.
+géothermies		géothermie	0
+géothermique	Relatif à la géothermie.
+géothermiques		géothermique	0
+géotropisme	Propriété d'un organisme vivant de s'orienter ou de se déplacer par rapport à la gravité terrestre.
+géotropismes		géotropisme	0
+géotrupe	Coléoptère scarabéidé, vivant dans les matières en décomposition (excréments et parfois champignons).
+géotrupes		géotrupe	0
+gera	Langue afro-asiatique parlée au Nigeria.
+gérable	Que l’on peut gérer.
+gérables		gérable	0
+gérai		gérer	22
+géraient		gérer	32
+gérais		gérer	52
+gérait		gérer	40
+gérâmes		gérer	3
+gérance	Fonctions de gérant.
+gérances		gérance	0
+géraniacée	Plante dicotylédone appartenant à une famille qui comprend des centaines d'espèces, herbacées ou arbustes, en particulier les géraniums et les pélargoniums.
+géraniacées	Famille de plantes dicotylédonées, dont le géranium est le type.
+géraniale	Plante d'un ordre de dicotylédones (Geraniales) comprenant notamment la famille des géraniacées qui contient des centaines d’espèces, herbacées ou arbustes, en…
+géraniales		géraniale	0
+géraniol	Alcool primaire principal constituant de l'essence de géranium, elle-même issue de la distillation des fleurs de divers pélargonium.
+géraniols		géraniol	0
+géranium	Plante du genre Geranium L., 1753, de la famille des Geraniaceae (Géraniacées), qui regroupe des espèces des régions tempérées dont quelques-unes sont cultivée…
+géraniums		géranium	0
+gérant	Qui administre.
+gérante	Celle qui gère, qui administre pour le compte d’autrui.
+gérantes		gérant	1
+gérants		gérant	9
+géras		gérer	12
+gérasse		gérer	6
+gérassent		gérer	17
+gérasses		gérer	8
+gérassiez		gérer	14
+gérassions		gérer	25
+gérât		gérer	20
+gérâtes		gérer	2
+gerba		gerber	39
+gerbage	Opération consistant à superposer des conteneurs sur des wagons construits à cet effet en vue de leur transport sur des lignes où le gabarit en hauteur est suf…
+gerbages		gerbage	0
+gerbai		gerber	22
+gerbaient		gerber	42
+gerbais		gerber	52
+gerbait		gerber	40
+gerbâmes		gerber	3
+gerbant	Qui fait gerber.
+gerbante		gerbant	23
+gerbantes		gerbant	1
+gerbants		gerbant	0
+gerbas		gerber	12
+gerbasse		gerber	6
+gerbassent		gerber	17
+gerbasses		gerber	8
+gerbassiez		gerber	14
+gerbassions		gerber	25
+gerbât		gerber	20
+gerbâtes		gerber	2
+gerbaude	Grosse gerbe de céréales que l’on agrémentait de fleurs et qui était placée autrefois sur la dernière charretée de la moisson.
+gerbaudes		gerbaude	0
+gerbe	Botte de céréales, où les épis sont disposés d’un même côté.
+gerbée	Botte de paille où il reste encore quelques grains.
+gerbées		gerbée	0
+gerbent		gerber	41
+gerber	Mettre en gerbe.
+gerbera	Plante du genre Gerbera.
+gerberai		gerber	16
+gerberaient		gerber	28
+gerberais		gerber	60
+gerberait		gerber	26
+gerberas		gerbera	0
+gerbèrent		gerber	48
+gerberez		gerber	5
+gerberiez		gerber	4
+gerberions		gerber	11
+gerberons		gerber	10
+gerberont		gerber	15
+gerbes		gerbe	0
+gerbeur	Engin de levage autonome, monté sur pneumatiques, destiné à charger, décharger, déplacer ou gerber des conteneurs et des caisses mobiles.
+gerbeurs		gerbeur	0
+gerbeuse	Appareil de levage utilisé pour empiler les fûts.
+gerbeuses		gerbeuse	0
+gerbez		gerber	30
+gerbier	Meule de gerbes.
+gerbière	Sorte de grande meule de gerbes.
+gerbières		gerbière	0
+gerbiers		gerbier	0
+gerbiez		gerber	13
+gerbille	Petit rongeur appartenant à la sous-famille des Gerbilles, se distinguant facilement des souris et des rats par sa queue poilue.
+gerbilles		gerbille	0
+gerbillon	Petite gerbe.
+gerbillons		gerbillon	0
+gerbions		gerber	19
+gerboise	Mammifère rongeur (surtout Allactaga) dont les pattes de devant sont fort courtes & les postérieures fort longues et qui marche et saute facilement à l’aide de…
+gerboises		gerboise	0
+gerbons		gerber	27
+gerça		gercer	33
+gerçai		gercer	22
+gerçaient		gercer	32
+gerçais		gercer	29
+gerçait		gercer	40
+gerçâmes		gercer	3
+gerçant		gercer	35
+gerças		gercer	12
+gerçasse		gercer	6
+gerçassent		gercer	17
+gerçasses		gercer	8
+gerçassiez		gercer	14
+gerçassions		gercer	25
+gerçât		gercer	20
+gerçâtes		gercer	2
+gerce	Fente produite dans une pièce de bois par la dessiccation.
+gercée		gercer	45
+gercées		gercer	51
+gercement	Action de gercer, effet de cette action.
+gercements		gercement	0
+gercent		gercer	41
+gercer	Fendiller, en parlant de l’action du froid ou de la sécheresse.
+gercera		gercer	21
+gercerai		gercer	16
+gerceraient		gercer	28
+gercerais		gercer	18
+gercerait		gercer	26
+gerceras		gercer	7
+gercèrent		gercer	48
+gercerez		gercer	5
+gerceriez		gercer	4
+gercerions		gercer	11
+gercerons		gercer	10
+gerceront		gercer	15
+gercés		gercer	53
+gercez		gercer	30
+gerciez		gercer	13
+gercions		gercer	19
+gerçons		gercer	27
+gerçure	Fente produite à la surface de la peau par le froid ou la sécheresse, à certaines parties du corps, principalement aux lèvres et aux mains.
+gerçures		gerçure	0
+gère		gérer	64
+gérée		gérer	45
+gérées		gérer	51
+gèrent		gérer	41
+gérer	Administrer pour le compte d’un autre.
+gérera		gérer	44
+gérerai		gérer	50
+gèreraient		gérer	28
+gérerais		gérer	60
+gèrerait		gérer	26
+gèreras		gérer	7
+gérèrent		gérer	24
+gérerez		gérer	58
+géreriez		gérer	74
+gèrerions		gérer	11
+gérerons		gérer	61
+gèreront		gérer	15
+gérés		gérer	53
+géreur	Celui qui, du temps des colonies, était le directeur d’une exploitation.
+géreurs		géreur	0
+gérez		gérer	47
+gerfaut	Oiseau de proies rapace diurne (falconiforme) de la famille des falconidés, le plus grand faucon, vivant dans les régions les plus septentrionales de l’hémisph…
+gerfauts		gerfaut	0
+gériatre	Médecin spécialisé dans les soins aux personnes âgées.
+gériatres		gériatre	0
+gériatrie	Branche de la médecine qui s’intéresse aux personnes âgées.
+gériatries		gériatrie	0
+gériatrique	Relatif à la gériatrie.
+gériatriques		gériatrique	0
+gériez		gérer	13
+gérions		gérer	19
+gerle	Sorte de demi-tonneau de bois muni de deux anses de portage où l’on foule les raisins dans la vigne même pour les verser ensuite dans les cuves, le même ustens…
+gerles		gerle	0
+germa		germer	39
+germai		germer	22
+germaient		germer	42
+germain	De mêmes père et mère, par opposition à consanguin (de même père et de mères différentes) et à utérin (de même mère et de pères différents).
+germaine	Femme autoritaire qui « gère » et « mène » son entourage et se complait à ce faire.
+germaines		germain	1
+germains		germain	9
+germais		germer	29
+germait		germer	40
+germâmes		germer	3
+germandrée	Plante de la famille des Lamiacées, composée d’un très grand nombre d’espèces.
+germandrées		germandrée	0
+germanique	Relatif à la Germanie ou aux Germains.
+germaniques		germanique	0
+germanisa		germaniser	33
+germanisai		germaniser	22
+germanisaient		germaniser	32
+germanisais		germaniser	29
+germanisait		germaniser	34
+germanisâmes		germaniser	3
+germanisant	Se dit d’une personne qui s’intéresse à ce qui est germanique ou à ce qui est allemand.
+germanisants		germanisant	0
+germanisas		germaniser	12
+germanisasse		germaniser	6
+germanisassent		germaniser	17
+germanisasses		germaniser	8
+germanisassiez		germaniser	14
+germanisassions		germaniser	25
+germanisât		germaniser	20
+germanisâtes		germaniser	2
+germanisation	Action de germaniser, de rendre allemand.
+germanisations		germanisation	0
+germanisé	Qui a pris la nationalité allemande, en parlant d'une personne.
+germanisée		germaniser	37
+germanisées		germaniser	36
+germanisent		germaniser	31
+germaniser	Rendre proche de la langue ou de la culture allemande.
+germanisera		germaniser	21
+germaniserai		germaniser	16
+germaniseraient		germaniser	28
+germaniserais		germaniser	18
+germaniserait		germaniser	26
+germaniseras		germaniser	7
+germanisèrent		germaniser	24
+germaniserez		germaniser	5
+germaniseriez		germaniser	4
+germaniserions		germaniser	11
+germaniserons		germaniser	10
+germaniseront		germaniser	15
+germanisés		germaniser	38
+germanisez		germaniser	30
+germanisiez		germaniser	13
+germanisions		germaniser	19
+germanisme	Façon de parler propre à la langue allemande.
+germanismes		germanisme	0
+germanisons		germaniser	27
+germaniste	Qui étudie la langue allemande.
+germanistes		germaniste	0
+germanite	Espèce minérale constituée de sulfure minéral de cuivre, fer et germanium, de formule Cu₁₃Fe₂Ge₂S₁₆.
+germanites		germanite	0
+germanium	Élément chimique, de symbole Ge et de numéro atomique 32, élément du groupe 14 du tableau périodique, généralement classé parmi les métalloïdes en raison de se…
+germaniums		germanium	0
+germanophile	Qui aime l’Allemagne, son peuple, la culture et la langue allemandes.
+germanophiles		germanophile	0
+germanophilie	Attrait pour l’Allemagne et tout ce qui la concerne.
+germanophilies		germanophilie	0
+germanophobe	Qui n'aime pas les Allemands, la culture allemande.
+germanophobes		germanophobe	0
+germanophobie	Haine des Allemands.
+germanophobies		germanophobie	0
+germanophone	Personne parlant allemand.
+germanophones		germanophone	0
+germanopratin	Relatif au quartier parisien de Saint-Germain-des-Prés.
+germanopratine	Féminin singulier de germanopratin.
+germanopratines	Féminin pluriel de germanopratin.
+germanopratins	Masculin pluriel de germanopratin.
+germant	Qui est dans un état de germination.
+germas		germer	12
+germasse		germer	6
+germassent		germer	17
+germasses		germer	8
+germassiez		germer	14
+germassions		germer	25
+germât		germer	20
+germâtes		germer	2
+germe	Rudiment de tout être organisé, végétal ou animal.
+germée		germé	23
+germées		germé	1
+germen	Ensemble des cellules reproductrices d’un organisme et des éléments qui leur donnent naissance.
+germent		germer	41
+germer	Pousser son germe au dehors, en parlant d’une semence ou d’une spore.
+germera		germer	44
+germerai		germer	16
+germeraient		germer	28
+germerais		germer	18
+germerait		germer	49
+germeras		germer	7
+germèrent		germer	24
+germerez		germer	5
+germeriez		germer	4
+germerions		germer	11
+germerons		germer	10
+germeront		germer	15
+germes		germe	0
+germez		germer	30
+germicide	Produit ou objet qui détruit les germes (bactéries, virus, vers, champignons, parasites) pathogènes.
+germicides		germicide	0
+germiez		germer	13
+germinal	Qui a rapport au germe.
+germinale	Féminin singulier de germinal.
+germinales		germinal	1
+germinals		germinal	0
+germinateur	Relatif à la germination.
+germinateurs		germinateur	9
+germinatif	Qui a rapport à la germination.
+germinatifs		germinatif	9
+germination	Processus par lequel une graine ou une spore reprend son développement après une phase de dormance, sous l’effet de conditions favorables (eau, oxygène, tempér…
+germinations		germination	0
+germinative		germinatif	109
+germinatives		germinatif	1
+germinatrice		germinateur	23
+germinatrices		germinateur	1
+germinaux		germinal	9
+germions		germer	19
+germoir	Cellier où germent les graines.
+germoirs		germoir	0
+germon	Nom usuel du thon blanc (poisson).
+germons		germon	0
+géromé	Fromage affiné au lait de vache, à pâte molle et à croûte lavée, fabriqué dans les Vosges, notamment dans la région de Gérardmer.
+géromés		géromé	0
+gérondif	En latin, forme verbale dérivée de l’infinitif qui sert à décliner l’infinitif substantivé aux autres cas que le nominatif et l’accusatif.
+gérondifs		gérondif	0
+gérons		gérer	59
+géronte	Vieillard de caractère faible, qui se laisse facilement duper.
+gérontes		géronte	0
+gérontisme	Sénilité.
+gérontismes		gérontisme	0
+gérontocratie	Gouvernement, domination des vieillards.
+gérontocraties		gérontocratie	0
+gérontocratique	Relatif à la gérontocratie, composé de gérontocrates.
+gérontologie	Étude du vieillissement.
+gérontologies		gérontologie	0
+gérontologique	Relatif à la gérontologie.
+gérontologiques		gérontologique	0
+gérontologiste	Spécialiste en gérontologie (science du vieillissement).
+gérontologistes		gérontologiste	0
+gérontologue	Médecin spécialiste en gérontologie.
+gérontologues		gérontologue	0
+gérontophile	Qui aime les vieux, les vieillards.
+gérontophiles		gérontophile	0
+gérontophilie	Attirance pour les vieilles personnes.
+gérontophilies		gérontophilie	0
+gérontoxon	Zone blanchâtre formé au bord de la cornée chez les personnes âgées.
+gérontoxons		gérontoxon	0
+gerris	Punaise carnivore vivant à la surface des eaux grâce à la propriété superhydrophobe de la texture de ses pattes.
+gerseau	Corde qui sert à suspendre une poulie ou à la renforcer de peur qu’elle n’éclate.
+gerseaux		gerseau	0
+gersois	Relatif au département du Gers, en France, ou à ses habitants.
+gersoise		gersois	23
+gersoises		gersois	1
+gerzeau	Nielle des blés.
+gerzeaux		gerzeau	0
+gésier	Le second ventricule de certains oiseaux qui se nourrissent de grains, comme les poules, les pigeons, etc.
+gésiers		gésier	0
+gésine	État d’une femme, ou de la femelle d’un mammifère, sur le point d’accoucher.
+gésines		gésine	0
+gésir	Être étendu ; être couché.
+gesnériacées	Nom d’une famille de plantes dicotylédones, toutes de l’Asie, de l’Afrique et de l’Australie.
+gesse	Nom usuel donné à plusieurs plantes du genre Lathyrus de la famille des Fabaceae (Fabacées, plantes herbacées grimpantes, aux tiges ailées ou non, à feuilles c…
+gesses		gesse	0
+gestalt	Structure, forme à laquelle sont subordonnées les perceptions.
+gestaltisme	Synonyme de gestalt-theorie.
+gestaltismes		gestaltisme	0
+gestalts		gestalt	0
+gestant	En gestation.
+gestante		gestant	23
+gestantes		gestant	1
+gestants		gestant	9
+gestapiste	Membre de la Gestapo.
+gestapistes		gestapiste	0
+gestapo	Force policière aux méthodes contraires à l’État de droit.
+gestapos		gestapo	0
+gestation	État d’une femme enceinte ou d’une femelle mammifère gravide.
+gestationnel	Propre ou relatif à la gestation.
+gestations		gestation	0
+gestatoire	Qui se porte, à porteurs.
+gestatoires		gestatoire	0
+geste	Action et mouvement du corps et particulièrement des bras et des mains, action et mouvement employés à signifier quelque chose.
+gestes		geste	0
+gesticula		gesticuler	39
+gesticulai		gesticuler	55
+gesticulaient		gesticuler	42
+gesticulais		gesticuler	52
+gesticulait		gesticuler	40
+gesticulâmes		gesticuler	3
+gesticulant	Qui gesticule.
+gesticulante	Féminin singulier de gesticulant.
+gesticulantes		gesticulant	1
+gesticulants		gesticulant	9
+gesticulas		gesticuler	12
+gesticulasse		gesticuler	6
+gesticulassent		gesticuler	17
+gesticulasses		gesticuler	8
+gesticulassiez		gesticuler	14
+gesticulassions		gesticuler	25
+gesticulât		gesticuler	20
+gesticulâtes		gesticuler	2
+gesticulation	Action de gesticuler.
+gesticulations		gesticulation	0
+gesticulatoire	Accompagné(e) de gesticulations.
+gesticulatoires		gesticulatoire	0
+gesticule		gesticuler	64
+gesticulent		gesticuler	41
+gesticuler	Faire trop de gestes.
+gesticulera		gesticuler	21
+gesticulerai		gesticuler	16
+gesticuleraient		gesticuler	28
+gesticulerais		gesticuler	18
+gesticulerait		gesticuler	26
+gesticuleras		gesticuler	7
+gesticulèrent		gesticuler	24
+gesticulerez		gesticuler	5
+gesticuleriez		gesticuler	4
+gesticulerions		gesticuler	11
+gesticulerons		gesticuler	10
+gesticuleront		gesticuler	15
+gesticules		gesticuler	77
+gesticulez		gesticuler	30
+gesticuliez		gesticuler	13
+gesticulions		gesticuler	19
+gesticulons		gesticuler	27
+gestion	Action et effet de gérer, d’administrer.
+gestionnaire	Qui est chargé d’une gestion, qui administre un dépôt.
+gestionnaires		gestionnaire	0
+gestions		gestion	0
+gestique	Code gestuel par lequel le chef d’orchestre oriente l’exécution d’une œuvre par ses musiciens.
+gestiques		gestique	0
+gestualité	Ensemble des gestes expressifs.
+gestualités		gestualité	0
+gestuel	Relatif aux gestes, aux mouvements.
+gestuelle	Ensemble des gestes propres à une personne, considérés sous l’angle de leur expressivité.
+gestuelles		gestuel	1
+gestuels		gestuel	9
+getter	Substance facilement oxydable, dont la pression de vapeur saturante est faible, utilisé à l’intérieur des tubes électroniques, qui par la suite forme un dépôt …
+getters		getter	0
+gewurztraminer	Cépage donnant des petites grappes de petits grains de raisin de couleur rosée, On en cultive environ 2700 hectares en France, en particulier en Alsace.
+gewurztraminers		gewurztraminer	0
+gex	Fromage français des plateaux du Haut-Jura à base de lait de vache et à pâte persillée.
+geyser	Source d’eau chaude qui jaillit par intermittence.
+geysérite	Espèce d’opale, silice déposée par les geysers.
+geysérites		geysérite	0
+geysers		geyser	0

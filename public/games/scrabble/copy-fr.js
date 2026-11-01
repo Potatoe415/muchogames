@@ -48,6 +48,7 @@ export const STRINGS = {
   defMissing: "Pas de définition trouvée.",
   defError: "Définition indisponible (connexion ?).",
   defSource: "Voir sur le Wiktionnaire ↗",
+  defLicense: "Définitions : Wiktionnaire, licence CC BY-SA 4.0",
   playWord: "Jouer",
   firstTurn:
     "Premier mot : il passe par l'étoile ★. Touchez une lettre puis une case.",
@@ -114,5 +115,5 @@ export const RULES = `
   <li><strong>Fin :</strong> quand le sac est vide et qu'un joueur a posé toutes ses lettres, ou après 4 tours de suite sans points. Les lettres restantes sont retirées du score ; celui qui a fini gagne celles de l'adversaire.</li>
 </ul>
 <p><strong>Commandes :</strong> touchez une lettre puis une case, ou faites-la glisser. Touchez une lettre posée pour la reprendre. Astuce : touchez une case vide (une flèche apparaît, retouchez pour la tourner) puis vos lettres à la suite. Au clavier : tapez les lettres, Entrée pour jouer, Retour arrière pour enlever, Échap pour tout rappeler.</p>
-<p><strong>Définir :</strong> touchez le livre puis un mot du plateau pour lire une définition courte (Wiktionnaire, connexion nécessaire).</p>
+<p><strong>Définir :</strong> touchez le livre puis un mot du plateau pour lire une définition courte (Wiktionnaire ; mots français inclus dans le jeu, autres langues : connexion nécessaire).</p>
 `;

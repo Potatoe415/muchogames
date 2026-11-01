@@ -1,0 +1,861 @@
+joailler	Personne qui fabrique des objets de parure, en mettant en valeur principalement des pierres précieuses, des pierres fines, des pierres ornementales et des perl…
+joaillère	Fabricante ou vendeuse de joyaux.
+joaillères		joaillère	0
+joaillerie	Art et commerce des joailliers.
+joailleries		joaillerie	0
+joaillers		joailler	0
+joaillier	Fabricant ou vendeur de joyaux.
+joaillière	Fabricante ou vendeuse de joyaux.
+joaillières		joaillière	0
+joailliers		joaillier	0
+job	Petit emploi, petit boulot, souvent faiblement rémunéré et temporaire.
+joba		jober	39
+jobai		jober	55
+jobaient		jober	75
+jobais		jober	86
+jobait		jober	71
+jobâmes		jober	68
+jobant		jober	43
+jobard	Simple d’esprit, crédule, niais.
+jobarda		jobarder	33
+jobardai		jobarder	22
+jobardaient		jobarder	32
+jobardais		jobarder	29
+jobardait		jobarder	34
+jobardâmes		jobarder	3
+jobardant		jobarder	35
+jobardas		jobarder	12
+jobardasse		jobarder	6
+jobardassent		jobarder	17
+jobardasses		jobarder	8
+jobardassiez		jobarder	14
+jobardassions		jobarder	25
+jobardât		jobarder	20
+jobardâtes		jobarder	2
+jobarde	Celle qui est simple d’esprit, crédule, niaise.
+jobardée		jobarder	37
+jobardées		jobarder	36
+jobardent		jobarder	31
+jobarder	Duper.
+jobardera		jobarder	21
+jobarderai		jobarder	16
+jobarderaient		jobarder	28
+jobarderais		jobarder	18
+jobarderait		jobarder	26
+jobarderas		jobarder	7
+jobardèrent		jobarder	24
+jobarderez		jobarder	5
+jobarderie	Niaiserie bouffonne, plaisanterie sotte.
+jobarderies		jobarderie	0
+jobarderiez		jobarder	4
+jobarderions		jobarder	11
+jobarderons		jobarder	10
+jobarderont		jobarder	15
+jobardes		jobard	1
+jobardez		jobarder	30
+jobardiez		jobarder	13
+jobardions		jobarder	19
+jobardise	Caractère, comportement de jobard, bêtise, crédulité, niaiserie.
+jobardises		jobardise	0
+jobardons		jobarder	27
+jobards		jobard	9
+jobas		jober	83
+jobasse		jober	81
+jobassent		jober	78
+jobasses		jober	87
+jobassiez		jober	88
+jobassions		jober	90
+jobastre	Fou.
+jobastres		jobastre	0
+jobât		jober	62
+jobâtes		jober	84
+jobe		jober	72
+jobelin	Jeune jobard, personne simple d’esprit, crédule, niaise.
+jobelins		jobelin	0
+jobent		jober	69
+jober	Avoir un job, un petit travail.
+jobera		jober	44
+joberai		jober	50
+joberaient		jober	63
+joberais		jober	60
+joberait		jober	49
+joberas		jober	57
+jobèrent		jober	48
+joberez		jober	58
+joberiez		jober	74
+joberions		jober	82
+joberons		jober	61
+joberont		jober	54
+jobes		jober	113
+jobez		jober	70
+jobiez		jober	100
+jobions		jober	94
+jobiste	Étudiant qui exerce un job de vacance.
+jobistes		jobiste	0
+jobons		jober	73
+jobs		job	0
+jocasse	Synonyme de litorne.
+jocasses		jocasse	0
+jocisme	Le mouvement de la JOC (Jeunesse ouvrière chrétienne), sa pensée, les convictions qui l’animent.
+jocismes		jocisme	0
+jociste	Adhérent de la Jeunesse ouvrière chrétienne.
+jocistes		jociste	0
+jockey	Personne qui a pour métier de monter des chevaux dans les courses.
+jockeys		jockey	0
+jocko	Espèce de singe, qu’on nomme aussi orang-outang.
+jockos		jocko	0
+jocrisse	Benêt qui se laisse mener par le premier venu.
+jocrisses		jocrisse	0
+jodel	Variante de yodel.
+jodels		jodel	0
+jodhpurs	Pantalon d’équitation ajusté du genou à la cheville et qui se porte sans bottes.
+jodla		jodler	33
+jodlai		jodler	22
+jodlaient		jodler	32
+jodlais		jodler	29
+jodlait		jodler	34
+jodlâmes		jodler	3
+jodlant		jodler	35
+jodlas		jodler	12
+jodlasse		jodler	6
+jodlassent		jodler	17
+jodlasses		jodler	8
+jodlassiez		jodler	14
+jodlassions		jodler	25
+jodlât		jodler	20
+jodlâtes		jodler	2
+jodlé		jodler	46
+jodlent		jodler	31
+jodler	Variante de yodler.
+jodlera		jodler	21
+jodlerai		jodler	16
+jodleraient		jodler	28
+jodlerais		jodler	18
+jodlerait		jodler	26
+jodleras		jodler	7
+jodlèrent		jodler	24
+jodlerez		jodler	5
+jodleriez		jodler	4
+jodlerions		jodler	11
+jodlerons		jodler	10
+jodleront		jodler	15
+jodles		jodler	66
+jodleur	Variante orthographique de yodleur.
+jodleurs		jodleur	0
+jodleuse	Variante orthographique de yodleuse.
+jodleuses		jodleuse	0
+jodlez		jodler	30
+jodliez		jodler	13
+jodlions		jodler	19
+jodlons		jodler	27
+jogga		jogger	33
+joggai		jogger	22
+joggaient		jogger	32
+joggais		jogger	29
+joggait		jogger	34
+joggâmes		jogger	3
+joggant		jogger	35
+joggas		jogger	12
+joggasse		jogger	6
+joggassent		jogger	17
+joggasses		jogger	8
+joggassiez		jogger	14
+joggassions		jogger	25
+joggât		jogger	20
+joggâtes		jogger	2
+jogge		jogger	64
+joggent		jogger	31
+jogger	Faire un jogging.
+joggera		jogger	21
+joggerai		jogger	16
+joggeraient		jogger	28
+joggerais		jogger	18
+joggerait		jogger	26
+joggeras		jogger	7
+joggèrent		jogger	24
+joggerez		jogger	5
+joggeriez		jogger	4
+joggerions		jogger	11
+joggerons		jogger	10
+joggeront		jogger	15
+joggers		jogger	0
+jogges		jogger	66
+joggeur	Personne qui pratique le jogging.
+joggeurs		joggeur	0
+joggeuse	Sportive qui fait du jogging.
+joggeuses		joggeuse	0
+joggez		jogger	30
+joggiez		jogger	13
+jogging	Course à pied à un rythme lent, qui sert d’exercice cardiopulmonaire.
+joggings		jogging	0
+joggions		jogger	19
+joggons		jogger	27
+johannais	Relatif à Saint-Jean-aux-Amognes, commune française située dans le département de la Nièvre.
+johannaise		johannais	23
+johannaises		johannais	1
+johannique	Qui a rapport à l’apôtre ou l’évangéliste Jean.
+johanniques		johannique	0
+johannisberg	Synonyme – selon les régions et les auteurs – de riesling ou de sylvaner et parfois de marsanne qui sont tous des cépages différents.
+johannite	Membre d’une secte chrétienne répandue en Asie, et qui n’administre le baptême qu’au nom de saint Jean-Baptiste.
+joice	Variante orthographique de joisse.
+joices		joice	0
+joie	Sentiment de bonheur, de satisfaction vive et intense qui vient du plaisir que l'on a à agir, à accomplir non pas une tâche répétitive, mais de contribuer à un…
+joies		joie	0
+joignabilité	Qualité de ce qui peut être joint, qui est joignable.
+joignable	Qui peut être joint ou relié.
+joignables		joignable	0
+joignaient		joindre	93
+joignais		joindre	95
+joignait		joindre	91
+joignant	Qui est contigu, en parlant des maisons, des jardins et autres possessions en terres.
+joigne		joindre	85
+joignent		joindre	41
+joignes		joindre	98
+joignez		joindre	70
+joigniez		joindre	102
+joignîmes		joindre	68
+joignions		joindre	103
+joignirent		joindre	48
+joignis		joindre	55
+joignisse		joindre	6
+joignissent		joindre	78
+joignisses		joindre	8
+joignissiez		joindre	14
+joignissions		joindre	25
+joignit		joindre	39
+joignîtes		joindre	2
+joignons		joindre	73
+joindra		joindre	44
+joindrai		joindre	50
+joindraient		joindre	97
+joindrais		joindre	96
+joindrait		joindre	92
+joindras		joindre	57
+joindre	Approcher deux choses l’une contre l’autre, en sorte qu’elles se touchent ou qu’elles se tiennent.
+joindrez		joindre	58
+joindriez		joindre	104
+joindrions		joindre	101
+joindrons		joindre	61
+joindront		joindre	54
+joins		joindre	130
+joint	Qui est joint.
+jointa		jointer	33
+jointage	Opération consistant à assembler et coller entre elles plusieurs feuilles de placage destinées à un revêtement.
+jointages		jointage	0
+jointai		jointer	22
+jointaient		jointer	32
+jointais		jointer	29
+jointait		jointer	34
+jointâmes		jointer	3
+jointant		jointer	35
+jointas		jointer	12
+jointasse		jointer	6
+jointassent		jointer	17
+jointasses		jointer	8
+jointassiez		jointer	14
+jointassions		jointer	25
+jointât		jointer	20
+jointâtes		jointer	2
+jointé	Ne s’emploie qu’en composition dans les expressions :
+jointée	Ce que les deux mains rapprochées peuvent contenir.
+jointées		jointée	0
+jointement	Action de joindre, aboutage, aboutement, accolement.
+jointements		jointement	0
+jointent		jointer	31
+jointer	Relier avec des joints.
+jointera		jointer	21
+jointerai		jointer	16
+jointeraient		jointer	28
+jointerais		jointer	18
+jointerait		jointer	26
+jointeras		jointer	7
+jointèrent		jointer	24
+jointerez		jointer	5
+jointeriez		jointer	4
+jointerions		jointer	11
+jointerons		jointer	10
+jointeront		jointer	15
+jointés		jointer	53
+jointez		jointer	30
+jointiez		jointer	13
+jointif	Qui est joint.
+jointifs		jointif	9
+jointions		jointer	19
+jointive		jointif	23
+jointivement	De façon jointive.
+jointives		jointif	1
+jointoie		jointoyer	79
+jointoiement	Action de jointoyer.
+jointoiements		jointoiement	0
+jointoient		jointoyer	31
+jointoiera		jointoyer	21
+jointoierai		jointoyer	16
+jointoieraient		jointoyer	28
+jointoierais		jointoyer	18
+jointoierait		jointoyer	26
+jointoieras		jointoyer	7
+jointoierez		jointoyer	5
+jointoieriez		jointoyer	4
+jointoierions		jointoyer	11
+jointoierons		jointoyer	10
+jointoieront		jointoyer	15
+jointoies		jointoyer	66
+jointons		jointer	27
+jointoya		jointoyer	33
+jointoyai		jointoyer	22
+jointoyaient		jointoyer	42
+jointoyais		jointoyer	29
+jointoyait		jointoyer	34
+jointoyâmes		jointoyer	3
+jointoyant		jointoyer	35
+jointoyas		jointoyer	12
+jointoyasse		jointoyer	6
+jointoyassent		jointoyer	17
+jointoyasses		jointoyer	8
+jointoyassiez		jointoyer	14
+jointoyassions		jointoyer	25
+jointoyât		jointoyer	20
+jointoyâtes		jointoyer	2
+jointoyé		jointoyer	46
+jointoyée		jointoyer	37
+jointoyées		jointoyer	36
+jointoyer	Remplir les joints des pierres avec du mortier ou du plâtre.
+jointoyèrent		jointoyer	24
+jointoyés		jointoyer	38
+jointoyeur	Personne spécialisée dans la réalisation de joints en ciment, chaux, etc.
+jointoyeurs		jointoyeur	0
+jointoyeuse	Personne spécialisée dans la réalisation de joints en ciment, chaux, etc.
+jointoyeuses		jointoyeuse	0
+jointoyez		jointoyer	30
+jointoyiez		jointoyer	13
+jointoyions		jointoyer	19
+jointoyons		jointoyer	27
+joints		joint	9
+jointure	Endroit où deux parties se joignent.
+jointures		jointure	0
+jojo	Imbécile ; jobard.
+jojoba	Arbuste de la famille des Simmondsiaceae originaire d’Arizona et du Mexique, cultivé pour la cire contenue dans ses graines, appelée « huile de jojoba ».
+jojobas		jojoba	0
+jojos		jojo	0
+jokari	Variété de pelote basque désignant un jeu formé d’une balle reliée par un élastique à un socle, et que l’on renvoie grâce à une palette de bois, sur le princip…
+jokaris		jokari	0
+joker	Carte qui peut prendre à certains jeux n’importe quelle valeur, selon la volonté de celui qui la détient.
+jokers		joker	0
+joli	Qui a de la grâce, de l’agrément.
+jolie		joli	23
+jolies		joli	1
+joliesse	Qualité de ce qui est joli.
+joliesses		joliesse	0
+joliet	Qui est assez joli.
+joliets		joliet	9
+joliette	Planchette recouverte d'oxyde d'étain, destinée au polissage de certains outils utilisés par les dinandiers.
+joliettes		joliette	0
+joliment	D’une manière jolie.
+jolis		joli	9
+joliveté	Joliesse.
+jolivetés		joliveté	0
+Jomon	Nom de l'époque néolithique japonaise (V-XIᵉ siècle avant Jésus Christ).
+Jomons		Jomon	0
+jonagold	Variante orthographique de Jonagold (variété de pomme).
+jonagolds		jonagold	0
+jonc	Nom donné à des plantes à tige droite et flexible, qui croissent ordinairement le long des eaux, ou même dans l’eau, et dont plusieurs espèces servaient à fair…
+jonça		joncer	33
+joncacée	Plante de type jonc.
+joncacées	Famille de plantes (Juncaceae) monocotylédones, dont le jonc est le type.
+jonçai		joncer	22
+jonçaient		joncer	32
+jonçais		joncer	29
+jonçait		joncer	34
+jonçâmes		joncer	3
+jonçant		joncer	35
+jonças		joncer	12
+jonçasse		joncer	6
+jonçassent		joncer	17
+jonçasses		joncer	8
+jonçassiez		joncer	14
+jonçassions		joncer	25
+jonçât		joncer	20
+jonçâtes		joncer	2
+joncé		joncer	46
+joncée	Plante de la même famille botanique que les joncs.
+joncées		joncer	36
+joncent		joncer	31
+joncer	Garnir des chaises de jonc.
+joncera		joncer	21
+joncerai		joncer	16
+jonceraient		joncer	28
+joncerais		joncer	18
+joncerait		joncer	26
+jonceras		joncer	7
+joncèrent		joncer	24
+joncerez		joncer	5
+jonceriez		joncer	4
+joncerions		joncer	11
+joncerons		joncer	10
+jonceront		joncer	15
+joncés		joncer	38
+joncez		joncer	30
+joncha		joncher	39
+jonchai		joncher	22
+jonchaie	Lieu où poussent les joncs.
+jonchaient		joncher	42
+jonchaies		jonchaie	0
+jonchais		joncher	29
+jonchait		joncher	40
+jonchâmes		joncher	3
+jonchant		joncher	43
+jonchas		joncher	12
+jonchasse		joncher	6
+jonchassent		joncher	17
+jonchasses		joncher	8
+jonchassiez		joncher	14
+jonchassions		joncher	25
+jonchât		joncher	20
+jonchâtes		joncher	2
+jonche	Ganse de cordes qui unit les pièces des filets.
+jonchée	Arrangement d’herbes, de fleurs et de branchages disposé sur le sol, dans les rues, les églises, etc., lors d’une cérémonie.
+jonchées		jonché	1
+jonchement	Action de joncher, résultat de cette action.
+jonchements		jonchement	0
+jonchent		joncher	41
+joncher	Parsemer de jonc, de feuillages, de fleurs, de branchages verts, pour une cérémonie.
+jonchera		joncher	21
+joncherai		joncher	16
+joncheraie	Lieu de tressage des joncs.
+joncheraient		joncher	28
+joncheraies		joncheraie	0
+joncherais		joncher	18
+joncherait		joncher	26
+joncheras		joncher	7
+jonchère	Jonchaie.
+jonchèrent		joncher	24
+jonchères		jonchère	0
+joncherez		joncher	5
+joncheriez		joncher	4
+joncherions		joncher	11
+joncherons		joncher	10
+joncheront		joncher	15
+jonchés		jonché	9
+jonchet	Fin petit bâtonnet, que l’on jette avec d’autres en tas les uns sur les autres pour jouer à qui en retirera le plus avec un crochet, sans en faire remuer d’aut…
+jonchets		jonchet	0
+jonchez		joncher	30
+jonchiez		joncher	13
+jonchions		joncher	19
+jonchons		joncher	27
+jonciez		joncer	13
+joncions		joncer	19
+jonçons		joncer	27
+joncs		jonc	0
+jonction	Action de joindre ou fait d’être joint, réuni ou relié.
+jonctions		jonction	0
+jongla		jongler	33
+jonglage	Action de jongler.
+jonglages		jonglage	0
+jonglai		jongler	22
+jonglaient		jongler	42
+jonglais		jongler	52
+jonglait		jongler	40
+jonglâmes		jongler	3
+jonglant		jongler	43
+jonglas		jongler	12
+jonglasse		jongler	6
+jonglassent		jongler	17
+jonglasses		jongler	8
+jonglassiez		jongler	14
+jonglassions		jongler	25
+jonglât		jongler	20
+jonglâtes		jongler	2
+jongle	Action de jongler.
+jonglent		jongler	41
+jongler	Faire sauter plusieurs boules ou autres objets, qui s’entrecroisent en passant d’une main, voire d’un pied, dans l’autre.
+jonglera		jongler	44
+jonglerai		jongler	16
+jongleraient		jongler	28
+jonglerais		jongler	18
+jonglerait		jongler	26
+jongleras		jongler	7
+jonglèrent		jongler	24
+jonglerez		jongler	5
+jonglerie	Action de jongler, spectacle donné par cette action.
+jongleries		jonglerie	0
+jongleriez		jongler	4
+jonglerions		jongler	11
+jonglerons		jongler	10
+jongleront		jongler	15
+jongles		jongle	0
+jongleur	Sorte de ménestrel qui allait, chantant des poèmes ou récitant des contes, dans les cours des princes et dans les maisons des grands seigneurs.
+jongleurs		jongleur	0
+jongleuse	Celle qui jongle, en amatrice ou comme artiste de cirque.
+jongleuses		jongleuse	0
+jonglez		jongler	47
+jongliez		jongler	13
+jonglions		jongler	19
+jonglons		jongler	27
+jonkheer	Titre nobiliaire hollandais.
+jonkheers		jonkheer	0
+jonque	Type d’embarcation à trois mâts utilisée en Extrême-Orient pour le transport de marchandises ou la pêche et avec des lattes en bambou pour tendre les voiles.
+jonques		jonque	0
+jonquille	Plante du genre des narcisses (Narcissus jonquilla L., 1753), spontanée en Europe, que l’on cultive aussi dans les jardins pour son élégance et son parfum.
+jonquilles		jonquille	0
+joran	Vent du nord-ouest qui souffle sur le sud du Jura et du lac Léman.
+jorans		joran	0
+jordanien	Relatif à la Jordanie.
+jordanienne		jordanien	23
+jordaniennes		jordanien	1
+jordaniens		jordanien	9
+joruri	Récit épique de la littérature japonaise du XVII^(ème) siècle.
+joseph	Mince, bible (à propos du papier).
+joséphisme	Ensemble des mesures prises par Joseph II, empereur d’Allemagne, pour subordonner l’Église à l’État.
+joséphismes		joséphisme	0
+joséphiste	Relatif aux mesures prises par Joseph II, empereur d’Allemagne, pour subordonner l’Église à l’État.
+joséphistes		joséphiste	0
+josephs		joseph	0
+jota	Nom espagnol de la lettre j, qui dans cette langue produit le son \x\.
+jotas		jota	0
+jottereau	Variante de jotterau.
+jottereaux		jottereau	0
+joua		jouer	39
+jouabilité	Ensemble des possibilités d’action offertes au joueur par un jeu vidéo.
+jouabilités		jouabilité	0
+jouable	Qui peut être représenté sur scène, qui se prête à la mise en scène, compte tenu des contraintes de l'art scénique, de la censure ou des conditions de représen…
+jouables		jouable	0
+jouai		jouer	55
+jouaient		jouer	42
+jouailla		jouailler	33
+jouaillai		jouailler	22
+jouaillaient		jouailler	32
+jouaillais		jouailler	29
+jouaillait		jouailler	34
+jouaillâmes		jouailler	3
+jouaillant		jouailler	35
+jouaillas		jouailler	12
+jouaillasse		jouailler	6
+jouaillassent		jouailler	17
+jouaillasses		jouailler	8
+jouaillassiez		jouailler	14
+jouaillassions		jouailler	25
+jouaillât		jouailler	20
+jouaillâtes		jouailler	2
+jouaille	Vignes dont on laisse un espace libre tous les 4 ou 5 rangs de manière à y cultiver une autre variété végétale : céréale, arbres, etc.
+jouaillent		jouailler	31
+jouailler	Jouer petit jeu, et seulement pour s’amuser.
+jouaillera		jouailler	21
+jouaillerai		jouailler	16
+jouailleraient		jouailler	28
+jouaillerais		jouailler	18
+jouaillerait		jouailler	26
+jouailleras		jouailler	7
+jouaillèrent		jouailler	24
+jouaillerez		jouailler	5
+jouailleriez		jouailler	4
+jouaillerions		jouailler	11
+jouaillerons		jouailler	10
+jouailleront		jouailler	15
+jouailles		jouaille	0
+jouaillez		jouailler	30
+jouailliez		jouailler	13
+jouaillions		jouailler	19
+jouaillon	Personne qui jouaille, qui ne joue que pour s'amuser, ou personne qui joue mal.
+jouaillons		jouaillon	0
+jouais		jouer	52
+jouait		jouer	40
+joual	Sociolecte de langue française issu de la culture populaire de la région de Montréal dans les années 1960.
+jouale		joual	23
+jouales		joual	1
+joualisa		joualiser	33
+joualisai		joualiser	22
+joualisaient		joualiser	32
+joualisais		joualiser	29
+joualisait		joualiser	34
+joualisâmes		joualiser	3
+joualisant	Qui se rapproche du joual, forme de français parlé au Canada.
+joualisas		joualiser	12
+joualisasse		joualiser	6
+joualisassent		joualiser	17
+joualisasses		joualiser	8
+joualisassiez		joualiser	14
+joualisassions		joualiser	25
+joualisât		joualiser	20
+joualisâtes		joualiser	2
+joualisé		joualiser	46
+joualisée		joualiser	37
+joualisées		joualiser	36
+joualisent		joualiser	31
+joualiser	Utiliser le joual pour.
+joualisera		joualiser	21
+joualiserai		joualiser	16
+joualiseraient		joualiser	28
+joualiserais		joualiser	18
+joualiserait		joualiser	26
+joualiseras		joualiser	7
+joualisèrent		joualiser	24
+joualiserez		joualiser	5
+joualiseriez		joualiser	4
+joualiserions		joualiser	11
+joualiserons		joualiser	10
+joualiseront		joualiser	15
+joualisés		joualiser	38
+joualisez		joualiser	30
+joualisiez		joualiser	13
+joualisions		joualiser	19
+joualisons		joualiser	27
+jouals		joual	9
+jouâmes		jouer	68
+jouant		jouer	43
+jouas		jouer	12
+jouasse	Content, satisfait.
+jouassent		jouer	17
+jouasses		jouasse	0
+jouassiez		jouer	14
+jouassions		jouer	25
+jouât		jouer	62
+jouâtes		jouer	2
+jouaux	Autre pluriel de l'adjectif masculin joual.	joual
+joubarbe	Crassulacée toujours verte, dont l’espèce la plus commune croît ordinairement sur les toits et sur les murs et se nomme artichaut bâtard.
+joubarbes		joubarbe	0
+joue	Partie du visage de l’humain qui est au-dessous des tempes et des yeux, et qui s’étend de chaque côté du nez jusqu’au menton dont la peau ferme latéralement la…
+jouée	Paroi latérale d'une lucarne.
+jouées		jouée	0
+jouent		jouer	41
+jouer	En parlant d'un enfant, se plonger dans un monde imaginé appuyé par des éléments de la réalité dans un but de divertissement, de développement ou d'apprentissa…
+jouera		jouer	44
+jouerai		jouer	50
+joueraient		jouer	63
+jouerais		jouer	60
+jouerait		jouer	49
+joueras		jouer	57
+jouèrent		jouer	48
+jouerez		jouer	58
+jouerie	Jeu, amusement enfantin.
+joueries		jouerie	0
+joueriez		jouer	74
+jouerions		jouer	82
+jouerons		jouer	61
+joueront		jouer	54
+joues		joue	0
+jouet	Objet qui sert à amuser les enfants.
+jouets		jouet	0
+jouette	Trou que le lapin fait en se jouant, et qui est moins profond que le terrier.
+jouettes		jouette	0
+joueur	Celui qui joue ou qui a le goût de jouer.
+joueurs		joueur	9
+joueuse	Celle qui joue ou qui a le goût de jouer.
+joueuses		joueuse	0
+jouez		jouer	47
+joufflu	Qui a de grosses joues.
+joufflue	Féminin singulier de joufflu.
+joufflues		joufflu	1
+joufflus		joufflu	9
+joug	Pièce de bois que l’on pose sur l’échine des bœufs ou autres animaux de trait et avec laquelle ils sont attelés pour tirer un chariot ou une charrue.
+jougs		joug	0
+joui		jouir	56
+jouiez		jouer	67
+jouîmes		jouir	3
+jouions		jouer	65
+jouir	Profiter d’une chose que l’on a, que l’on possède, en goûter le plaisir, l’agrément, etc.
+jouira		jouir	44
+jouirai		jouir	50
+jouiraient		jouir	63
+jouirais		jouir	60
+jouirait		jouir	49
+jouiras		jouir	57
+jouirent		jouir	48
+jouirez		jouir	5
+jouiriez		jouir	4
+jouirions		jouir	82
+jouirons		jouir	61
+jouiront		jouir	15
+jouis		jouir	72
+jouissaient		jouir	75
+jouissais		jouir	86
+jouissait		jouir	71
+jouissance	Satisfaction voluptueuse, éprouvée tantôt par les sens, tantôt par l’âme ou l’esprit.
+jouissances		jouissance	0
+jouissant	Qui jouit de quelque chose.
+jouissante		jouissant	109
+jouissantes		jouissant	1
+jouissants		jouissant	9
+jouisse		jouir	85
+jouissent		jouir	69
+jouisses		jouir	98
+jouisseur	Qui aime à jouir de la vie et des biens matériels.
+jouisseurs		jouisseur	0
+jouisseuse	Celle qui recherche avant tout les jouissances matérielles de la vie.
+jouisseuses		jouisseuse	0
+jouissez		jouir	70
+jouissiez		jouir	13
+jouissif	Qui provoque l’orgasme.
+jouissifs		jouissif	9
+jouissions		jouir	94
+jouissive		jouissif	23
+jouissives		jouissif	1
+jouissons		jouir	73
+jouit		jouir	80
+jouîtes		jouir	2
+joujou	Jouet d’enfant.
+joujouthèque	Ludothèque.
+joujouthèques		joujouthèque	0
+joujoux		joujou	0
+joule	Unité de mesure d’énergie du Système international, égale au travail produit par une force d’un newton dont le point d’application se déplace d’un mètre dans l…
+joules		joule	0
+jouons		jouer	59
+jour	Période de vingt-quatre heures, commençant généralement à minuit.
+journade	Vêtement flottant du XVᵉ siècle, ouvert sous les bras, pourvu de manches courtes, avec ou sans ceinture, souvent utilisé pour la chevauchée et par les hérauts.
+journades		journade	0
+journal	Qui est relatif à chaque jour.
+journaleuse	Journaliste.
+journaleuses		journaleuse	0
+journaleux	Mauvais journaliste.
+journalier	Qui se fait chaque jour.
+journalière	Personne qui travaille à la journée.
+journalières		journalier	1
+journaliers		journalier	9
+journalisa		journaliser	33
+journalisai		journaliser	22
+journalisaient		journaliser	32
+journalisais		journaliser	29
+journalisait		journaliser	34
+journalisâmes		journaliser	3
+journalisant		journaliser	35
+journalisas		journaliser	12
+journalisasse		journaliser	6
+journalisassent		journaliser	17
+journalisasses		journaliser	8
+journalisassiez		journaliser	14
+journalisât		journaliser	20
+journalisâtes		journaliser	2
+journalisé		journaliser	46
+journalisée		journaliser	37
+journalisées		journaliser	36
+journalisent		journaliser	31
+journaliser	Faire des journaux, des recueils périodiques.
+journalisera		journaliser	21
+journaliserai		journaliser	16
+journaliserais		journaliser	18
+journaliserait		journaliser	26
+journaliseras		journaliser	7
+journalisèrent		journaliser	24
+journaliserez		journaliser	5
+journaliseriez		journaliser	4
+journaliserions		journaliser	11
+journaliserons		journaliser	10
+journaliseront		journaliser	15
+journalisés		journaliser	38
+journalisez		journaliser	30
+journalisiez		journaliser	13
+journalisions		journaliser	19
+journalisme	Profession de journaliste.
+journalismes		journalisme	0
+journalisons		journaliser	27
+journaliste	Personne qui fait, qui rédige un journal, qui travaille, à la rédaction d’un journal.
+journalistes		journaliste	0
+journalistique	Relatif au journalisme.
+journalistiques		journalistique	0
+journaux		journal	9
+journée	Période diurne, du lever au coucher du Soleil.
+journées		journée	0
+journellement	Tous les jours.
+jours		jour	0
+jouta		jouter	33
+joutai		jouter	22
+joutaient		jouter	32
+joutais		jouter	29
+joutait		jouter	34
+joutâmes		jouter	3
+joutant		jouter	35
+joutas		jouter	12
+joutasse		jouter	6
+joutassent		jouter	17
+joutasses		jouter	8
+joutassiez		jouter	14
+joutassions		jouter	25
+joutât		jouter	20
+joutâtes		jouter	2
+joute	Combat à cheval d'homme à homme avec la lance.
+joutent		jouter	31
+jouter	Combattre, anciennement avec des lances, aujourd’hui avec de longues perches, sur l’eau.
+joutera		jouter	21
+jouterai		jouter	16
+jouteraient		jouter	28
+jouterais		jouter	18
+jouterait		jouter	26
+jouteras		jouter	7
+joutèrent		jouter	24
+jouterez		jouter	5
+jouteriez		jouter	4
+jouterions		jouter	11
+jouterons		jouter	10
+jouteront		jouter	15
+joutes		joute	0
+jouteur	Celui qui joute contre quelqu’un.
+jouteurs		jouteur	0
+jouteuse	Celle qui joute contre quelqu’un.
+jouteuses		jouteuse	0
+joutez	Indicatif présent, deuxième personne du pluriel, du verbe jouter.	jouter
+joutiez		jouter	13
+joutions		jouter	19
+joutons		jouter	27
+jouvence	Jeunesse.
+jouvenceau	Jeune homme qui est encore dans l’adolescence.
+jouvenceaux		jouvenceau	9
+jouvencelle	Jeune fille.
+jouvencelles		jouvenceau	1
+jouvences		jouvence	0
+jouxta		jouxter	33
+jouxtai		jouxter	22
+jouxtaient		jouxter	42
+jouxtais		jouxter	29
+jouxtait		jouxter	40
+jouxtâmes		jouxter	3
+jouxtant	Qui jouxte.
+jouxtas		jouxter	12
+jouxtasse		jouxter	6
+jouxtassent		jouxter	17
+jouxtasses		jouxter	8
+jouxtassiez		jouxter	14
+jouxtassions		jouxter	25
+jouxtât		jouxter	20
+jouxtâtes		jouxter	2
+jouxte	Proche de.
+jouxtée		jouxter	37
+jouxtées		jouxter	36
+jouxtent		jouxter	31
+jouxter	Être proche de.
+jouxtera		jouxter	21
+jouxterai		jouxter	16
+jouxteraient		jouxter	28
+jouxterais		jouxter	18
+jouxterait		jouxter	26
+jouxteras		jouxter	7
+jouxtèrent		jouxter	24
+jouxterez		jouxter	5
+jouxteriez		jouxter	4
+jouxterions		jouxter	11
+jouxterons		jouxter	10
+jouxteront		jouxter	15
+jouxtés		jouxter	38
+jouxtez		jouxter	30
+jouxtiez		jouxter	13
+jouxtions		jouxter	19
+jouxtons		jouxter	27
+jovial	Qui est d’une gaieté communicative.
+joviale		jovial	23
+jovialement	D’une manière joviale.
+joviales		jovial	1
+jovialité	Humeur joviale.
+jovialités		jovialité	0
+joviaux		jovial	9
+jovien	Qui se rapporte au dieu Jupiter.
+jovienne		jovien	23
+joviennes		jovien	1
+joviens		jovien	9
+joyau	Ornement précieux d’or, d’argent, de pierreries, qui sert à la parure, comme les bracelets, les pendants d’oreilles, etc.
+joyaux		joyau	0
+joyeuse	Testicule.
+joyeusement	D’une manière joyeuse, avec entrain et gaieté.
+joyeuses	Testicules.
+joyeuseté	Plaisanterie, mot pour rire.
+joyeusetés		joyeuseté	0
+joyeux	Qui a de la joie.
+joystick	Manette de jeu vidéo ou d'engins roulants, composée d’un manche et de boutons.
+joysticks		joystick	0

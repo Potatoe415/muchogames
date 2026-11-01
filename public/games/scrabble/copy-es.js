@@ -48,6 +48,7 @@ export const STRINGS = {
   defMissing: "No se encontró ninguna definición.",
   defError: "Definición no disponible (¿conexión?).",
   defSource: "Ver en Wikcionario ↗",
+  defLicense: "Definiciones: Wikcionario, licencia CC BY-SA 4.0",
   playWord: "Jugar",
   firstTurn:
     "Primera palabra: pasa por la estrella ★. Toca una letra y luego una casilla.",
@@ -114,5 +115,5 @@ export const RULES = `
   <li><strong>Fin:</strong> cuando la bolsa está vacía y un jugador ha colocado todas sus letras, o tras 4 turnos seguidos sin puntos. Las letras restantes se restan; quien terminó gana las del rival.</li>
 </ul>
 <p><strong>Controles:</strong> toca una letra y luego una casilla, o arrástrala. Toca una letra colocada para recuperarla. Truco: toca una casilla vacía (aparece una flecha, tócala otra vez para girarla) y luego tus letras seguidas. Teclado: escribe las letras, Intro para jugar, Retroceso para quitar, Escape para recoger todo.</p>
-<p><strong>Definir:</strong> toca el libro y luego una palabra del tablero para leer una definición corta (Wikcionario, requiere conexión).</p>
+<p><strong>Definir:</strong> toca el libro y luego una palabra del tablero para leer una definición corta (Wikcionario; palabras francesas incluidas en el juego, otros idiomas requieren conexión).</p>
 `;

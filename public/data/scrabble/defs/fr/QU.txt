@@ -1,0 +1,1311 @@
+quad	Véhicule à moteur tout terrain, non carrossé et doté de quatre roues à larges pneus, d’une selle et d’un guidon.
+quadeur	Conducteur de quad.
+quadeurs		quadeur	0
+quadeuse	Conductrice de quad.
+quadeuses		quadeuse	0
+quado	Ouvrier d'un service de réparation de pneus.
+quados		quado	149
+quadra	Quadragénaire.
+quadragénaire	Dont l’âge se situe de quarante à quarante-neuf ans révolus.
+quadragénaires		quadragénaire	0
+quadragésimal	Qui concerne la base 40.
+quadragésimale		quadragésimal	23
+quadragésimales		quadragésimal	1
+quadragésimaux		quadragésimal	9
+quadragésime	La sainte quarantaine, le carême.
+quadrangle	Figure géométrique formée par quatre points A, B, C, D (les sommets) tels que trois quelconques d'entre eux ne soient pas alignés.
+quadrangles		quadrangle	0
+quadrangulaire	Qui a quatre angles.
+quadrangulaires		quadrangulaire	9
+quadrant	Quart de circonférence.
+quadrants		quadrant	0
+quadras		quadra	0
+quadrat	Cadre (souvent carré ou rectangulaire) de surface connue (p.
+quadratique	Qui se rapporte au carré au sens géométrique ou numérique.
+quadratiques		quadratique	0
+quadrats		quadrat	0
+quadrature	Calcul d’une aire.
+quadratures		quadrature	0
+quadrette	Aux jeux de boules, équipe de quatre joueurs (composée en principe de deux tireurs et deux pointeurs).
+quadrettes		quadrette	0
+quadri	En quadrichromie, quadrichromique.
+quadriceps	Muscle de la cuisse, situé en avant et autour du fémur.
+quadrichromie	Procédé d’impression en couleurs fondé sur la superposition de quatre encres : cyan, magenta, jaune et noir (CMJN).
+quadrichromies		quadrichromie	0
+quadricolore	Qui a quatre couleurs.
+quadricolores		quadricolore	0
+quadricycle	Véhicule à quatre roues, généralement actionné par un moteur, en particulier voiturette
+quadricycles		quadricycle	0
+quadriennal	Qui dure quatre ans.
+quadriennale	Féminin singulier de quadriennal.
+quadriennales		quadriennal	1
+quadriennaux		quadriennal	9
+quadrifide	Divisé en quatre par des incisions.
+quadrifides		quadrifide	0
+quadrifolié	Qui a les feuilles disposées quatre par quatre.
+quadrifoliée		quadrifolié	23
+quadrifoliées		quadrifolié	1
+quadrifoliés		quadrifolié	9
+quadrige	Char antique à deux roues, attelage de quatre chevaux de front, généralement utilisé pour les courses.
+quadriges		quadrige	0
+quadrijumeau	Qui est jumeau quatre fois.
+quadrijumeaux	Quatre enfants nés d’un même accouchement
+quadrilatéral	Qui a quatre côtés.
+quadrilatérale		quadrilatéral	23
+quadrilatérales		quadrilatéral	1
+quadrilatéraux		quadrilatéral	9
+quadrilatère	Polygone qui a quatre côtés.
+quadrilatères		quadrilatère	0
+quadrilingue	Qui parle quatre langues.
+quadrilingues		quadrilingue	0
+quadrilla		quadriller	33
+quadrillage	Disposition qui figure un assemblage de losanges, généralement des carrés.
+quadrillages		quadrillage	0
+quadrillai		quadriller	22
+quadrillaient		quadriller	42
+quadrillais		quadriller	52
+quadrillait		quadriller	40
+quadrillâmes		quadriller	3
+quadrillant		quadriller	35
+quadrillas		quadriller	12
+quadrillasse		quadriller	6
+quadrillassent		quadriller	17
+quadrillasses		quadriller	8
+quadrillassiez		quadriller	14
+quadrillassions		quadriller	25
+quadrillât		quadriller	20
+quadrillâtes		quadriller	2
+quadrillé	Marqué de carreaux.
+quadrillée		quadrillé	23
+quadrillées		quadrillé	1
+quadrillent		quadriller	41
+quadriller	Diviser en utilisant un quadrillage.
+quadrillera		quadriller	21
+quadrillerai		quadriller	16
+quadrilleraient		quadriller	28
+quadrillerais		quadriller	18
+quadrillerait		quadriller	26
+quadrilleras		quadriller	7
+quadrillèrent		quadriller	24
+quadrillerez		quadriller	58
+quadrilleriez		quadriller	4
+quadrillerions		quadriller	11
+quadrillerons		quadriller	10
+quadrilleront		quadriller	15
+quadrillés		quadrillé	1
+quadrillez		quadriller	47
+quadrilliez		quadriller	13
+quadrillion	Un million à la puissance quatre.
+quadrillions		quadrillion	0
+quadrillons		quadriller	59
+quadrilobé	Qui a quatre lobes.
+quadrilobée		quadrilobé	23
+quadrilobées		quadrilobé	1
+quadrilobes		quadrilobe	0
+quadrimestre	Espace de quatre mois divisant l’année.
+quadrimestres		quadrimestre	0
+quadrimestriel	Qui se fait, qui paraît, qui revient tous les quatre mois.
+quadrimestriels	Masculin pluriel de quadrimestriel.
+quadrimoteur	Équipé de quatre moteurs.
+quadrimoteurs		quadrimoteur	0
+quadriparti	Qui est divisé en quatre parties, qui relève de quatre partis.
+quadripartie		quadriparti	23
+quadriparties		quadriparti	1
+quadripartis		quadriparti	9
+quadripartite	Qui est divisé en quatre parties.
+quadripartites		quadripartite	0
+quadriphonie	Technique d’enregistrement sonore permettant, si le matériel de l’utilisateur final l’autorise, de restituer le son sur quatre voies indépendantes afin d’améli…
+quadriphonies		quadriphonie	0
+quadriphonique	Utilisant la technique de quadriphonie.
+quadriphoniques		quadriphonique	0
+quadriplace	Qui comporte quatre places.
+quadriplaces		quadriplace	0
+quadriplégie	Paralysie des quatre membres.
+quadriplégies		quadriplégie	0
+quadriplégique	ou Atteint de quadriplégie.
+quadriplégiques		quadriplégique	0
+quadripolaire	Qui a quatre pôles.
+quadripolaires		quadripolaire	0
+quadripôle	Composant électrique à quatre bornes.
+quadripôles		quadripôle	0
+quadrique	Définition manquante ou à compléter.
+quadriques		quadrique	123
+quadriréacteur	Qui a quatre réacteurs.
+quadriréacteurs		quadriréacteur	0
+quadrirème	Galère à quatre rangs de rames superposés.
+quadrirèmes		quadrirème	0
+quadris	Synonyme de quadriceps.
+quadrisyllabe	Vers de quatre syllables.
+quadrisyllabes		quadrisyllabe	0
+quadrivalent	Désigne un élément chimique qui n’accepte que quatre liaisons chimiques.
+quadrivalente		quadrivalent	23
+quadrivalentes		quadrivalent	1
+quadrivalents		quadrivalent	9
+quadrivium	Partie de l’enseignement du Moyen Âge qui comprenait l’arithmétique, la musique, la géométrie et l’astronomie réunies sous le nom des quatre arts mathématiques.
+quadrumane	Qui a quatre mains.
+quadrumanes		quadrumane	0
+quadrupède	Qui a quatre pieds
+quadrupèdes		quadrupède	0
+quadrupédie	Fait de marcher à quatre pattes.
+quadrupédies		quadrupédie	0
+quadrupla		quadrupler	39
+quadruplai		quadrupler	55
+quadruplaient		quadrupler	32
+quadruplais		quadrupler	29
+quadruplait		quadrupler	40
+quadruplâmes		quadrupler	3
+quadruplant		quadrupler	35
+quadruplas		quadrupler	12
+quadruplasse		quadrupler	6
+quadruplassent		quadrupler	17
+quadruplasses		quadrupler	8
+quadruplassiez		quadrupler	14
+quadruplassions		quadrupler	25
+quadruplât		quadrupler	20
+quadruplâtes		quadrupler	2
+quadruple	La quantité quatre fois plus grande.
+quadruplée	Enfant née d’un même accouchement parmi quatre enfants.
+quadruplées		quadruplé	1
+quadruplement	D’une manière quadruple.
+quadruplements		quadruplement	0
+quadruplent		quadrupler	31
+quadrupler	Multiplier par quatre.
+quadruplera		quadrupler	21
+quadruplerai		quadrupler	16
+quadrupleraient		quadrupler	28
+quadruplerais		quadrupler	18
+quadruplerait		quadrupler	26
+quadrupleras		quadrupler	7
+quadruplèrent		quadrupler	24
+quadruplerez		quadrupler	5
+quadrupleriez		quadrupler	4
+quadruplerions		quadrupler	11
+quadruplerons		quadrupler	10
+quadrupleront		quadrupler	54
+quadruplés		quadruplé	0
+quadruplet	Ensemble de quatre éléments, quatuor.
+quadruplets		quadruplet	0
+quadruplex	Transmission en diplex et duplex, deux dans le même sens et deux en sens contraire.
+quadruplez		quadrupler	47
+quadrupliez		quadrupler	13
+quadruplions		quadrupler	19
+quadruplon	Élément présent en quatre exemplaires identiques.
+quadruplons		quadruplon	0
+quadrupôle	Structure à quatre pôles.
+quadrupôles		quadrupôle	0
+quads		quad	0
+quahog	Palourde (Mercenaria mercenaria).
+quahogs		quahog	0
+quai	Levée ordinairement revêtue de pierres de taille et faite le long d’une rivière ou d’un canal, pour rendre le chemin praticable et pour empêcher le débordement…
+quais		quai	0
+quaker	Membre d’un mouvement chrétien, la Société religieuse des Amis, établi principalement en Angleterre et aux États-Unis.
+quakeresse	Femme membre d’un mouvement chrétien, la Société religieuse des Amis, établi principalement en Angleterre et aux États-Unis.
+quakeresses		quaker	1
+quakerisme	Doctrine des quakers, les membres de la Société religieuse des Amis.
+quakerismes		quakerisme	0
+quakers		quaker	0
+qualif	Qualification.
+qualifia		qualifier	39
+qualifiable	Qui peut être qualifié.
+qualifiables		qualifiable	0
+qualifiai		qualifier	22
+qualifiaient		qualifier	42
+qualifiais		qualifier	52
+qualifiait		qualifier	40
+qualifiâmes		qualifier	3
+qualifiant	Qui qualifie, qui donne une qualification.
+qualifiante		qualifiant	23
+qualifiantes		qualifiant	1
+qualifiants	Pluriel masculin de qualifiant.	qualifiant
+qualifias		qualifier	12
+qualifiasse		qualifier	6
+qualifiassent		qualifier	78
+qualifiasses		qualifier	8
+qualifiassiez		qualifier	14
+qualifiassions		qualifier	25
+qualifiât		qualifier	62
+qualifiâtes		qualifier	2
+qualificateur	Qui qualifie.
+qualificateurs		qualificateur	9
+qualificatif	Ce qui énonce une qualité, bonne ou mauvaise, prêtée à quelqu’un ou à quelque chose.
+qualificatifs		qualificatif	9
+qualification	Action de qualifier.
+qualifications		qualification	0
+qualificative	Course qualificative.
+qualificatives		qualificative	0
+qualificatrice	Celle qui qualifie, qui dispense une qualification.
+qualificatrices		qualificatrice	0
+qualifié	Désigne une personne de qualité.
+qualifiée		qualifié	23
+qualifiées		qualifié	1
+qualifient		qualifier	41
+qualifier	Marquer de quel caractère est une chose, une proposition, une action.
+qualifiera		qualifier	44
+qualifierai		qualifier	50
+qualifieraient		qualifier	28
+qualifierais		qualifier	60
+qualifierait		qualifier	49
+qualifieras		qualifier	7
+qualifièrent		qualifier	24
+qualifierez		qualifier	5
+qualifieriez		qualifier	74
+qualifierions		qualifier	11
+qualifierons		qualifier	10
+qualifieront		qualifier	15
+qualifies		qualifier	77
+qualifiez		qualifier	47
+qualifiiez		qualifier	13
+qualifiions		qualifier	19
+qualifions		qualifier	27
+qualifs		qualif	0
+qualitatif	Qui concerne la qualité (souvent par opposition à quantitatif).
+qualitatifs		qualitatif	9
+qualitative		qualitatif	23
+qualitativement	D’un point de vue qualitatif, et non pas quantitatif.
+qualitatives		qualitatif	1
+qualité	Manière d’être, bonne ou mauvaise, grande ou petite, etc., de quelque chose ou de quelqu’un, état, caractéristique.
+qualités		qualité	0
+qualiticien	Salarié qui s’occupe de la qualité.
+qualiticienne	Spécialiste de la qualité.
+qualiticiennes		qualiticienne	0
+qualiticiens		qualiticien	0
+quand	Lorsque, dans le temps que.
+quant	Désignation de l’état caractérisé par différentes propriétés identiques pour un article donné stocké à un emplacement donné.
+quanta		quantum	0
+quanteur	Quantificateur, quantifieur.
+quanteurs		quanteur	0
+quantième	Désigne le rang ou l’ordre dans une série.
+quantièmes		quantième	0
+quantifia		quantifier	33
+quantifiable	Que l’on peut quantifier.
+quantifiables		quantifiable	0
+quantifiai		quantifier	22
+quantifiaient		quantifier	32
+quantifiais		quantifier	29
+quantifiait		quantifier	34
+quantifiâmes		quantifier	3
+quantifiant		quantifier	35
+quantifias		quantifier	12
+quantifiasse		quantifier	6
+quantifiassent		quantifier	17
+quantifiasses		quantifier	8
+quantifiassiez		quantifier	14
+quantifiassions		quantifier	25
+quantifiât		quantifier	20
+quantifiâtes		quantifier	2
+quantificateur	Symbole représentant une quantification.
+quantificateurs		quantificateur	0
+quantification	Action de quantifier.
+quantifications		quantification	0
+quantifié	Dont la quantité est déterminée.
+quantifiée		quantifier	37
+quantifiées		quantifier	36
+quantifient		quantifier	31
+quantifier	Évaluer la quantité.
+quantifiera		quantifier	21
+quantifierai		quantifier	16
+quantifieraient		quantifier	28
+quantifierais		quantifier	18
+quantifierait		quantifier	26
+quantifieras		quantifier	7
+quantifièrent		quantifier	24
+quantifierez		quantifier	5
+quantifieriez		quantifier	4
+quantifierions		quantifier	11
+quantifierons		quantifier	10
+quantifieront		quantifier	15
+quantifiés		quantifier	38
+quantifiez		quantifier	30
+quantifiiez		quantifier	13
+quantifiions		quantifier	19
+quantifions		quantifier	27
+quantile	Valeur qui partage une distribution statistique en effectifs égaux.
+quantiles		quantile	0
+quantique	Relatif aux théories des quanta.
+quantiques		quantique	0
+quantitatif	Qui a rapport à la quantité ou aux quantités, dont la propriété est d'être mesurable.
+quantitatifs		quantitatif	9
+quantitative		quantitatif	23
+quantitatives		quantitatif	1
+quantité	Tout ce qui peut être mesuré par un nombre, et par conséquent susceptible d’accroissement ou de diminution.
+quantités		quantité	0
+quanton	Objet traité par la physique quantique.
+quantons		quanton	0
+quantum	Montant (d'une amende, d'une indemnité, d'une part), quotité.
+quantums		quantum	0
+quarantaine	Ensemble de quarante ou environ.
+quarantaines		quarantaine	0
+quarante	Trente-neuf plus un, soit quatre fois dix, adjectif numéral cardinal correspondant au nombre 40.
+quarantenaire	Qui dure quarante ans.
+quarantenaires		quarantenaire	0
+quarantième	Qui concerne l’ordinal ou la fraction quarantième.
+quarantièmes		quarantième	0
+quarderonna		quarderonner	33
+quarderonnai		quarderonner	22
+quarderonnaient		quarderonner	32
+quarderonnais		quarderonner	29
+quarderonnait		quarderonner	34
+quarderonnâmes		quarderonner	3
+quarderonnant		quarderonner	35
+quarderonnas		quarderonner	12
+quarderonnasse		quarderonner	6
+quarderonnasses		quarderonner	8
+quarderonnât		quarderonner	20
+quarderonnâtes		quarderonner	2
+quarderonné		quarderonner	56
+quarderonnée		quarderonner	37
+quarderonnées		quarderonner	36
+quarderonnent		quarderonner	31
+quarderonner	Faire un quart de rond sur l’angle d’une pierre, d’une pièce de bois.
+quarderonnera		quarderonner	21
+quarderonnerai		quarderonner	16
+quarderonnerais		quarderonner	18
+quarderonnerait		quarderonner	26
+quarderonneras		quarderonner	7
+quarderonnèrent		quarderonner	24
+quarderonnerez		quarderonner	5
+quarderonneriez		quarderonner	4
+quarderonnerons		quarderonner	10
+quarderonneront		quarderonner	15
+quarderonnés		quarderonner	38
+quarderonnez		quarderonner	30
+quarderonniez		quarderonner	13
+quarderonnions		quarderonner	19
+quarderonnons		quarderonner	27
+quark	Particules élémentaires qui s'associent entre elles pour former les hadrons, comme les protons et les neutrons.
+quarks		quark	0
+quarra		quarrer	33
+quarrai		quarrer	22
+quarraient		quarrer	32
+quarrais		quarrer	29
+quarrait		quarrer	34
+quarrâmes		quarrer	3
+quarrant		quarrer	35
+quarras		quarrer	12
+quarrasse		quarrer	6
+quarrassent		quarrer	17
+quarrasses		quarrer	8
+quarrassiez		quarrer	14
+quarrassions		quarrer	25
+quarrât		quarrer	20
+quarrâtes		quarrer	2
+quarré	Graphie ancienne de carré.
+quarrée		quarré	23
+quarrées		quarré	1
+quarrent		quarrer	31
+quarrer	Trouver le carré équivalent à une surface terminée par des lignes courbes.
+quarrera		quarrer	21
+quarrerai		quarrer	16
+quarreraient		quarrer	28
+quarrerais		quarrer	18
+quarrerait		quarrer	26
+quarreras		quarrer	7
+quarrèrent		quarrer	24
+quarrerez		quarrer	5
+quarreriez		quarrer	4
+quarrerions		quarrer	11
+quarrerons		quarrer	10
+quarreront		quarrer	15
+quarrés		quarré	0
+quarrez		quarrer	47
+quarriez		quarrer	13
+quarrions		quarrer	19
+quarrons		quarrer	27
+quart	Partie d’une unité subdivisée en quatre parties égales.
+quarta		quarter	39
+quartagé		quartager	46
+quartagea		quartager	33
+quartageai		quartager	22
+quartageaient		quartager	32
+quartageais		quartager	29
+quartageait		quartager	34
+quartageâmes		quartager	3
+quartageant		quartager	35
+quartageas		quartager	12
+quartageasse		quartager	6
+quartageassent		quartager	17
+quartageasses		quartager	8
+quartageassiez		quartager	14
+quartageassions		quartager	25
+quartageât		quartager	20
+quartageâtes		quartager	2
+quartagée		quartager	37
+quartagées		quartager	36
+quartagent		quartager	31
+quartageons		quartager	27
+quartager	Donner un quatrième labour.
+quartagera		quartager	21
+quartagerai		quartager	16
+quartageraient		quartager	28
+quartagerais		quartager	18
+quartagerait		quartager	26
+quartageras		quartager	7
+quartagèrent		quartager	24
+quartagerez		quartager	5
+quartageriez		quartager	4
+quartagerions		quartager	11
+quartagerons		quartager	10
+quartageront		quartager	15
+quartagés		quartager	38
+quartagez		quartager	30
+quartagiez		quartager	13
+quartagions		quartager	19
+quartai		quarter	22
+quartaient		quarter	32
+quartais	Relatif à La Quarte, commune de la Haute-Saône.
+quartait		quarter	34
+quartâmes		quarter	3
+quartanier	Sanglier de quatre ans.
+quartaniers		quartanier	0
+quartannier	Variante orthographique de quartanier.
+quartanniers		quartannier	0
+quartant		quarter	35
+quartas		quarter	12
+quartasse		quarter	6
+quartassent		quarter	17
+quartasses		quarter	8
+quartassiez		quarter	14
+quartassions		quarter	25
+quartât		quarter	20
+quartâtes		quarter	2
+quartation	Opération qui consiste à allier avec de l’or assez d’argent pour que dans la masse totale il n’y ait qu’un quart d’or contre trois quarts d’argent.
+quartations		quartation	0
+quartaut	Volume d'un quart de la pièce (225 litres) soit environ cinquante-sept litres.
+quartauts		quartaut	0
+quarte	Intervalle de quatre notes consécutives, y compris les deux extrêmes.
+quartée		quarter	37
+quartées		quarter	36
+quartefeuille	Synonyme de quadrilobe.
+quartefeuilles		quartefeuille	0
+quartelette	Petite ardoise.
+quartelettes		quartelette	0
+quartenier	Officier de ville qui était préposé à la surveillance d’un quartier.
+quarteniers		quartenier	0
+quartent		quarter	31
+quarter	Pièce d'un quart de dollar américain, soit 25 cents.
+quartera		quarter	21
+quarterai		quarter	16
+quarteraient		quarter	28
+quarterais		quarter	18
+quarterait		quarter	26
+quarteras		quarter	7
+quarterback	Quart-arrière : poste offensif, juste derrière la ligne offensive, au football américain et au football canadien.
+quarterbacks		quarterback	118
+quartèrent		quarter	24
+quarterez		quarter	5
+quarteriez		quarter	4
+quarterions		quarter	11
+quarteron	Quart d’une livre (soit 125 grammes dans le cas d'une livre métrique).
+quarteronne	Métisse née d’un homme blanc et d’une femme mulâtre ou dans le sens inverse d’un homme mulâtre et d’une femme blanche.
+quarteronnes		quarteronne	0
+quarterons		quarteron	0
+quarteront		quarter	15
+quartes		quart	0
+quartet	Groupe de deux neutrons et deux protons, dans un noyau.
+quartets		quartet	0
+quartette	Morceau de musique écrit pour quatre voix ou pour quatre instruments, plus couramment quatuor.
+quartettes		quartette	0
+quartettiste	Membre d’un quartet de musiciens.
+quartettistes		quartettiste	0
+quartez		quarter	30
+quartidi	Le quatrième jour de la décade, dans le calendrier républicain.
+quartidis		quartidi	0
+quartier	Quart, une des quatre parties plus ou moins égales d'un tout.
+quartiers	Endroit où l’on est installé ou établi.
+quartiez		quarter	13
+quartile	Chacune des trois valeurs qui divisent une distribution statistique ordonnée en quatre groupes d’effectifs égaux.
+quartiles		quartile	0
+quartions		quarter	19
+quartique	Objet mathématique représenté, dans un espace euclidien à 3 dimensions, par une surface dont les points vérifient une équation polynomiale de degré 4.
+quartiques		quartique	0
+quarto	Quatrièmement, en quatrième lieu.
+quarton	Ancienne unité de mesure du grain qui variait selon les régions.
+quartons		quarton	0
+quarts		quart	0
+quartz	Espèce minérale, du groupe des silicates, sous-groupe des tectosilicates composé de dioxyde de silicium de formule SiO₂.
+quartzeuse		quartzeux	23
+quartzeuses		quartzeux	1
+quartzeux	Qui est de la nature du quartz.
+quartzifère	Qui contient du quartz.
+quartzifères		quartzifère	0
+quartzique	Quartzeux.
+quartziques		quartzique	0
+quartzite	Roche siliceuse massive, constituée de cristaux de quartz soudés.
+quartzites		quartzite	0
+quasar	Radiosource ponctuelle dont le rayonnement est très intense et constant à quelques sursauts sporadiques près.
+quasars		quasar	0
+quasi	Morceau de la cuisse d’un bœuf ou d’un veau, placé sous le gîte à la noix.
+quasiment	Quasi ; presque.
+quasimodo	Premier dimanche après Pâques.
+quasimodos		quasimodo	0
+quasis		quasi	0
+quassia	Écorce amère fournie par le quassier et employée en médecine comme tonique.
+quassias		quassia	0
+quassier	Arbrisseau de la Guyane et des Antilles, qui donne l’écorce amère appelée quassia.
+quassiers		quassier	0
+quassine	Synonyme de quassite.
+quassines		quassine	0
+quater	Une quatrième fois.
+quaternaire	Qui est composé de quatre éléments.
+quaternaires		quaternaire	0
+quaterne	Combinaison de quatre numéros pris ensemble à la loterie et sortis ensemble.
+quaternés		quaterné	9
+quaternion	Nombre découvert par le mathématicien irlandais William Rowan Hamilton, et qui s’écrit sous la forme a + bi + cj + dk avec i² = j² = k² = -1 et ij = -ji = k, j…
+quaternions		quaternion	0
+quatorzaine	Espace de quatorze jours, qui s’observait de l’une à l’autre des quatre criées des biens saisis réellement.
+quatorzaines		quatorzaine	0
+quatorze	Treize plus un, adjectif numéral cardinal correspondant au nombre 14.
+quatorzième	Adjectif ordinal, correspondant au cardinal quatorze.
+quatorzièmement	En quatorzième lieu.
+quatorzièmes		quatorzième	0
+quatrain	Pièce de poésie qui contient quatre vers, dont les rimes sont ordinairement croisées.
+quatrains		quatrain	0
+quatre	Trois plus un, adjectif numéral cardinal correspondant au nombre 4.
+quatrième	Adjectif ordinal correspondant au nombre quatre.
+quatrièmement	En quatrième lieu.
+quatrièmes		quatrième	0
+quatrillion	Variante de quadrillion.
+quatrillions		quatrillion	0
+quattrocentiste	Relatif au quattrocento.
+quattrocento	Art du quinzième siècle italien.
+quatuor	Morceau de musique vocale ou instrumentale qui est à quatre parties, parfois quartette.
+quatuors		quatuor	0
+qubit	Unité élémentaire de stockage d’information quantique.
+qubits		qubit	0
+que	Complémenteur pour introduire une proposition subordonnée complétive.
+québécisa		québéciser	33
+québécisai		québéciser	22
+québécisaient		québéciser	32
+québécisais		québéciser	29
+québécisait		québéciser	34
+québécisâmes		québéciser	3
+québécisant		québéciser	35
+québécisas		québéciser	12
+québécisasse		québéciser	6
+québécisassent		québéciser	17
+québécisasses		québéciser	8
+québécisassiez		québéciser	14
+québécisassions		québéciser	25
+québécisât		québéciser	20
+québécisâtes		québéciser	2
+québécisé		québéciser	46
+québécisée		québéciser	37
+québécisées		québéciser	36
+québécisent		québéciser	31
+québéciser	Modifier un mot (ou une expression) d’une langue étrangère (ou même d’une autre variété régionale ou dialectale du français que celles utilisées au Québec) dan…
+québécisera		québéciser	21
+québéciserai		québéciser	16
+québéciseraient		québéciser	28
+québéciserais		québéciser	18
+québéciserait		québéciser	26
+québéciseras		québéciser	7
+québécisèrent		québéciser	24
+québéciserez		québéciser	5
+québéciseriez		québéciser	4
+québéciserions		québéciser	11
+québéciserons		québéciser	10
+québéciseront		québéciser	15
+québécisés		québéciser	38
+québécisez		québéciser	30
+québécisiez		québéciser	13
+québécisions		québéciser	19
+québécisme	Régionalisme québécois.
+québécismes		québécisme	0
+québécisons		québéciser	27
+québécois	Relatif à la province de Québec, à ses habitants et habitantes, à leur langue ou à leur culture.
+québécoise		québécois	23
+québécoises		québécois	1
+quebracho	Variante orthographique de québracho
+québrachos		québracho	0
+quechua	Relatif aux Quechuas, leur culture, leur langue.
+quechuas		quechua	0
+queer	Se dit d’une personne dont l’identité de genre, l’expression de genre, la sexualité ou l’orientation sexuelle ne se conforme pas aux normes hétérosexuelles et …
+queers		queer	0
+quel	Interroge sur l’identité du nom suivant.
+quelconque	Quel que ce soit.
+quelconques		quelconque	0
+quéléa	Synonyme de travailleur à bec rouge (oiseau).
+quéléas		quéléa	0
+quelle		quel	23
+quelles		quel	1
+quelque	Un parmi d’autres.
+quelquefois	Parfois ; à certains moments et non à d’autres.
+quelques	Un petit nombre d’unités, d’objets, comme un cardinal.
+quels		quel	9
+quémanda		quémander	39
+quémandai		quémander	22
+quémandaient		quémander	42
+quémandais		quémander	29
+quémandait		quémander	40
+quémandâmes		quémander	3
+quémandant		quémander	43
+quémandas		quémander	12
+quémandasse		quémander	6
+quémandassent		quémander	17
+quémandasses		quémander	8
+quémandassiez		quémander	14
+quémandassions		quémander	25
+quémandât		quémander	20
+quémandâtes		quémander	2
+quémande	Celle qui mendie, qui gueuse.
+quémandée		quémander	37
+quémandées		quémander	36
+quémandent		quémander	41
+quémander	Solliciter, mendier avec insistance et importunité.
+quémandera		quémander	21
+quémanderai		quémander	16
+quémanderaient		quémander	28
+quémanderais		quémander	18
+quémanderait		quémander	26
+quémanderas		quémander	7
+quémandèrent		quémander	24
+quémanderez		quémander	5
+quémanderiez		quémander	4
+quémanderions		quémander	11
+quémanderons		quémander	10
+quémanderont		quémander	15
+quémandés		quémander	38
+quémandeur	Qui quémande, implorant.
+quémandeurs		quémandeur	9
+quémandeuse	Celle qui quémande.
+quémandeuses		quémandeur	1
+quémandez		quémander	30
+quémandiez		quémander	13
+quémandions		quémander	19
+quémandons		quémander	59
+quena	Flûte à encoche amérindienne d'Amérique du Sud, droite, isolée, ouverte, à trous de jeu, d’origine précolombienne.
+quenas		quena	0
+quenelle	Boulette de composition variée et de forme généralement allongée, faite à base de pain ou de farine, relevée de viande ou de poisson, cuite à l’eau et qui gros…
+quenelles		quenelle	0
+quenette	Fruit du quenettier.
+quenettes		quenette	0
+quenotte	Dent d’un enfant.
+quenottes		quenotte	0
+quenouille	Bâton à l’extrémité supérieure duquel on attache des fibres à filer en le dévidant au moyen du fuseau ou du rouet.
+quenouillée	Quantité de lin, de chanvre, etc., nécessaire pour garnir une quenouille.
+quenouillées		quenouillée	0
+quenouilles		quenouille	0
+quéquette	Pénis, le plus souvent celui d’un jeune garçon.
+quéquettes		quéquette	0
+quérable	Qu’on doit aller quérir.
+quérables		quérable	0
+quercinois	Variante de quercynois.
+quercinoise		quercinois	23
+quercinoises		quercinois	1
+quercitrin	Rhamnoside de la quercétine (un flavonoïde) de couleur jaune vif, cristallisable à partir du quercitron — qui est une poudre brute d’écorce de chêne noir (Quer…
+quercitrine	Rhamnoside de la quercétine (un flavonoïde) de couleur jaune vif, cristallisable à partir du quercitron — qui est une poudre brute d’écorce de chêne noir (Quer…
+quercitrines		quercitrine	0
+quercitrins		quercitrin	0
+quercitron	Autre nom vernaculaire de Quercus velutina, ou chêne noir d’Amérique du Nord de la famille des Fagaceae, appartenant au sous-genre des chênes rouges, utilisé e…
+quercitrons		quercitron	0
+quercynois	Relatif au Quercy ou aux Quercynois.
+quercynoise		quercynois	23
+quercynoises		quercynois	1
+querella		quereller	39
+querellai		quereller	22
+querellaient		quereller	42
+querellais		quereller	52
+querellait		quereller	40
+querellâmes		quereller	3
+querellant		quereller	43
+querellas		quereller	12
+querellasse		quereller	6
+querellassent		quereller	17
+querellasses		quereller	8
+querellassiez		quereller	14
+querellassions		quereller	25
+querellât		quereller	20
+querellâtes		quereller	2
+querelle	Contestation, démêlé, dispute mêlée d’aigreur et d’animosité.
+querellée		quereller	45
+querellées		quereller	51
+querellent		quereller	41
+quereller	Chercher querelle à quelqu’un.
+querellera		quereller	21
+querellerai		quereller	16
+querelleraient		quereller	28
+querellerais		quereller	18
+querellerait		quereller	26
+querelleras		quereller	7
+querellèrent		quereller	48
+querellerez		quereller	5
+querelleriez		quereller	4
+querellerions		quereller	11
+querellerons		quereller	10
+querelleront		quereller	15
+querellés		quereller	53
+querelleur	Qui aime chercher querelle.
+querelleurs		querelleur	9
+querelleuse	Celle qui aime chercher querelle.
+querelleuses		querelleur	1
+querellez		quereller	47
+querelliez		quereller	13
+querellions		quereller	19
+querellons		quereller	59
+quérir	Chercher avec charge d’amener la personne, ou d’apporter la chose dont il est question.
+quérulence	Tendance pathologique à rechercher les querelles et à revendiquer, d’une manière hors de proportion avec la cause, la réparation d’un préjudice réel ou imagina…
+quérulences		quérulence	0
+quérulent	Qui a une tendance pathologique à chercher querelle et à revendiquer une réparation disproportionnée d’un préjudice réel ou imaginaire.
+quérulente	Femme qui a une tendance pathologique à chercher querelle et à revendiquer une réparation disproportionnée d’un préjudice réel ou imaginaire.
+quérulentes		quérulent	1
+quérulents		quérulent	9
+quésaco	Qu’est-ce que c’est ?
+quesadilla	Crêpe de maïs fourrée au fromage.
+quesadillas		quesadilla	0
+questeur	Magistrat romain chargé, dans les armées ou dans les provinces, de l’administration des finances.
+questeure	Dans les assemblées politiques, membre qui est chargée de l’administration et de la police intérieure.
+questeures		questeure	0
+questeurs		questeur	0
+question	Interrogation, demande que l’on fait pour s’informer de quelque chose.
+questionna		questionner	39
+questionnai		questionner	55
+questionnaient		questionner	42
+questionnaire	Bourreau qui donnait la question aux accusés.
+questionnaires		questionnaire	0
+questionnais		questionner	52
+questionnait		questionner	40
+questionnâmes		questionner	3
+questionnant		questionner	43
+questionnas		questionner	12
+questionnasse		questionner	6
+questionnassent		questionner	17
+questionnasses		questionner	8
+questionnassiez		questionner	14
+questionnât		questionner	62
+questionnâtes		questionner	2
+questionné		questionner	56
+questionnée		questionner	45
+questionnées		questionner	51
+questionnement	Fait de poser un ensemble de questions.
+questionnements		questionnement	0
+questionnent		questionner	41
+questionner	Interroger quelqu’un, lui poser des questions.
+questionnera		questionner	44
+questionnerai		questionner	50
+questionnerais		questionner	18
+questionnerait		questionner	49
+questionneras		questionner	7
+questionnèrent		questionner	48
+questionnerez		questionner	5
+questionneriez		questionner	4
+questionnerions		questionner	11
+questionnerons		questionner	61
+questionneront		questionner	54
+questionnés		questionner	53
+questionneur	Qui questionne, qui interroge.
+questionneurs		questionneur	9
+questionneuse	Celle qui pose des questions.
+questionneuses		questionneuse	0
+questionnez		questionner	47
+questionniez		questionner	13
+questionnions		questionner	65
+questionnons		questionner	59
+questions		question	0
+questrice	Dans les assemblées politiques, membre qui est chargée de l’administration et de la police intérieure.
+questrices		questrice	0
+questure	Dignité, charge de questeur.
+questures		questure	0
+quêta		quêter	39
+quêtai		quêter	55
+quêtaient		quêter	42
+quétaine	Qui manque de raffinement, est de mauvais goût, démodé, ou qui relève du cliché.
+quétainerie	Objet ou coutume qui manque de raffinement, de mauvais goût, démodé, etc.
+quétaineries		quétainerie	0
+quétaines		quétaine	0
+quêtais		quêter	52
+quêtait		quêter	40
+quêtâmes		quêter	3
+quêtant		quêter	43
+quêtas		quêter	12
+quêtasse		quêter	6
+quêtassent		quêter	17
+quêtasses		quêter	8
+quêtassiez		quêter	14
+quêtassions		quêter	25
+quêtât		quêter	20
+quêtâtes		quêter	2
+quête	Action par laquelle on cherche.
+quêtée		quêter	37
+quêtées		quêter	51
+quêtent		quêter	41
+quêter	Demander et recueillir des aumônes.
+quêtera		quêter	21
+quêterai		quêter	16
+quêteraient		quêter	28
+quêterais		quêter	18
+quêterait		quêter	26
+quêteras		quêter	7
+quêtèrent		quêter	24
+quêterez		quêter	5
+quêteriez		quêter	4
+quêterions		quêter	11
+quêterons		quêter	10
+quêteront		quêter	15
+quêtes		quête	0
+quêteur	Celui qui quête, qui cherche.
+quêteurs		quêteur	9
+quêteuse	Celle qui quête.
+quêteuses		quêteuse	0
+quêteux	Autrefois, personne défavorisée qui errait sur les chemins en demandant la charité dans diverses maisons sur son passage.
+quêtez		quêter	47
+quêtiez		quêter	13
+quêtions		quêter	19
+quêtons		quêter	27
+quetsche	Grosse prune oblongue, le plus souvent violette ou noire.
+quetsches		quetsche	0
+quetschier	Prunier donnant des quetsches.
+quetschiers		quetschier	0
+quette	Petite tresse de cheveux.
+quetter	Copuler.
+quettés		quetter	38
+quetzal	Nom normalisé donné à deux genres comprenant six espèces d'oiseaux arboricoles de la famille des trogonidés, de taille supérieure à celle des trogons, au pluma…
+quetzals		quetzal	0
+queue	Appendice postérieur, plus ou moins développé, qui termine la colonne vertébrale d’un très grand nombre de vertébrés.
+queues		queue	0
+queusot	Petit tube en verre, qui sur les lampes à incandescence, tubes à vide et tubes cathodiques permet d'y faire le vide et éventuellement de les remplir d'un autre…
+queusots		queusot	0
+queuta		queuter	33
+queutage	Action de queuter.
+queutages		queutage	0
+queutai		queuter	22
+queutaient		queuter	32
+queutais		queuter	29
+queutait		queuter	34
+queutâmes		queuter	3
+queutant		queuter	35
+queutard	Qui est porté sur le sexe.
+queutarde	Femme portée sur le sexe.
+queutardes		queutard	1
+queutards		queutard	9
+queutas		queuter	12
+queutasse		queuter	6
+queutassent		queuter	17
+queutasses		queuter	8
+queutassiez		queuter	14
+queutassions		queuter	25
+queutât		queuter	20
+queutâtes		queuter	2
+queuté		queuter	56
+queutée		queuter	45
+queutées		queuter	36
+queutent		queuter	31
+queuter	Pousser d’un même coup de queue sa bille et celle sur laquelle on joue.
+queutera		queuter	21
+queuterai		queuter	16
+queuteraient		queuter	28
+queuterais		queuter	18
+queuterait		queuter	26
+queuteras		queuter	7
+queutèrent		queuter	24
+queuterez		queuter	5
+queuteriez		queuter	4
+queuterions		queuter	11
+queuterons		queuter	10
+queuteront		queuter	15
+queutés		queuter	38
+queutez		queuter	30
+queutiez		queuter	13
+queutions		queuter	19
+queutons		queuter	27
+queux	Cuisinier.
+qui	Lequel, laquelle, lesquels, lesquelles.
+quia	Utilisée uniquement dans la locution à quia.
+quiche	Tarte.
+quichenotte	Coiffe paysanne traditionnelle de forme cylindrique très enveloppante, accrochée sous le menton et destinée à protéger contre l'ardeur du soleil.
+quichenottes		quichenotte	0
+quiches		quiche	0
+quichua	Variante de quechua.
+quichuas		quichua	0
+quick	Revêtement dur de certains courts de tennis.
+quicks		quick	0
+quiconque	Toute personne qui, qui que ce soit qui.
+quid	Qu’en est-il ?
+quidam	S’emploie dans les monitoires, procès-verbaux, informations, etc., pour désigner les personnes dont on ignore ou dont on n’exprime pas le nom.
+quidams		quidam	0
+quiddité	Ce qu’une chose est en elle-même.
+quiddités		quiddité	0
+quiescence	Ralentissement voire arrêt de développement dépendant exclusivement des conditions du milieu de vie de l’organisme ou de la cellule (température trop basse ou …
+quiescences		quiescence	0
+quiescent	Qui n’est pas en action, qui ne fonctionne pas.
+quiescente		quiescent	23
+quiescentes		quiescent	1
+quiescents		quiescent	9
+quiet	Tranquille ; calme.
+quiète		quiet	23
+quiètes		quiet	1
+quiétisme	Doctrine d’apparence mystique, élaborée par Miguel de Molinos, au XVIIᵉ siècle, et représentée en France par Fénelon, qui vise la perfection chrétienne à trave…
+quiétismes		quiétisme	0
+quiétiste	Qui concerne le quiétisme.
+quiétistes		quiétiste	0
+quiets		quiet	9
+quiétude	Tranquillité ; repos.
+quiétudes		quiétude	0
+quignon	Morceau de pain plus ou moins gros désignant généralement le bout du pain.
+quignons		quignon	0
+quilla		quiller	33
+quillai		quiller	55
+quillaient		quiller	32
+quillais		quiller	29
+quillait		quiller	34
+quillâmes		quiller	3
+quillant		quiller	35
+quillard	Voilier possédant un lest placé très bas.
+quillards		quillard	0
+quillas		quiller	12
+quillasse		quiller	6
+quillassent		quiller	17
+quillasses		quiller	8
+quillassiez		quiller	14
+quillassions		quiller	25
+quillat	Synonyme de jurançon blanc.
+quillâtes		quiller	2
+quille	Partie fixe et immergée de la coque sous le bateau faisant office de dérive fixe et de contrepoids à la gîte.
+quillée		quiller	45
+quillent		quiller	31
+quiller	Soutenir un bloc de pierre avec des quilles ^().
+quillera		quiller	21
+quillerai		quiller	16
+quilleraient		quiller	28
+quillerais		quiller	18
+quillerait		quiller	26
+quilleras		quiller	7
+quillèrent		quiller	24
+quillerez		quiller	5
+quilleriez		quiller	4
+quillerions		quiller	11
+quilleron	Relatif à Quilly, commune française située dans le département de la Loire-Atlantique.
+quillerons		quilleron	9
+quilleront		quiller	15
+quillers		quiller	0
+quilles	Bowling.
+quilleur	Personne chargée de remettre debout les quilles tombées.
+quilleurs		quilleur	0
+quillez		quiller	30
+quillier	Espace carré dans lequel on range les neuf quilles.
+quilliers		quillier	0
+quilliez		quiller	13
+quillion	Synonyme de quintillion
+quillions		quillion	0
+quillon	Chacune des deux branches de la garde d’une épée, d’un poignard, d’un couteau…
+quillons		quillon	0
+quimbois	Sorcellerie présente dans les Antilles françaises, apparentée au vaudou haïtien, à la santeria cubaine ou au candomblé brésilien.
+quimboiseur	Sorcier.
+quimboiseurs		quimboiseur	0
+quimpérois	Relatif à Quimper, commune du Finistère.
+quimpéroise		quimpérois	23
+quimpéroises		quimpérois	1
+quinaire	Qui est divisible par cinq.
+quinaires		quinaire	0
+quinaud	Qui est confus, honteux d’avoir eu le dessous dans une contestation.
+quinaude		quinaud	23
+quinaudes		quinaud	1
+quinauds		quinaud	9
+quincaille	Toute sorte d’ustensiles, d’instruments de fer ou de cuivre comme couteaux, ciseaux, chandeliers, etc.
+quincailler	Celui qui tient un commerce de quincaillerie.
+quincaillère	Celle qui tient un commerce de quincaillerie.
+quincaillères		quincailler	1
+quincaillerie	Fabrique, commerce de quincaille, magasin où l'on vend des outils, des vis, boulons, clous, produits métallurgiques, serrures, charnières, etc.
+quincailleries		quincaillerie	0
+quincaillers		quincailler	0
+quincailles		quincaille	0
+quincaillier	Celui qui tient un commerce de quincaillerie.
+quincaillière	Celle qui tient un commerce de quincaillerie.
+quincaillières		quincaillier	1
+quincailliers		quincaillier	9
+quinconce	Groupe de cinq arbres dont quatre sont plantés en carré et le cinquième au milieu.
+quinconces		quinconce	0
+quinconcial	Disposé en quinconce.
+quinconciale		quinconcial	23
+quinconciales		quinconcial	1
+quinconciaux		quinconcial	9
+quincy	Vin blanc d’appellation AOC.
+quincys		quincy	0
+quindécemvir	Chacun des quinze prêtres chargés de la garde et de l'interprétation des livres sibyllins ainsi que de l'organisation de certaines célébrations, en particulier…
+quindécemvirs		quindécemvir	0
+quindécimvir	Variante de quindécemvir.
+quindécimvirs		quindécimvir	0
+quine	Coup de dés qui amène deux cinq.
+quinée		quiné	23
+quinées		quiné	1
+quines		quine	0
+quinidine	Composé isomère de la quinine, mais hydraté, efflorescent, et plus dextrogyre que la quinicine.
+quinidines		quinidine	0
+quinine	Alcaloïde végétal extrait en particulier du quinquina jaune (Cinchona calisaya).
+quinines		quinine	0
+quinoa	Nom usuel de Chenopodium quinoa, plante de la famille des Amaranthaceae (Amaranthacées), originaire de la Cordillère des Andes, cultivée pour ses graines comes…
+quinoas		quinoa	0
+quinola	Nom du valet de cœur, au jeu du reversi, et principale carte de ce jeu.
+quinolas		quinola	0
+quinoléine	Composé organique aromatique hétérocyclique de formule chimique C₉H₇N, se présentant sous la forme d’un liquide incolore hygroscopique possédant une odeur fort…
+quinoléines		quinoléine	0
+quinolone	Famille d’antibiotique.
+quinolones		quinolone	0
+quinone	Composé benzénique possédant deux fonctions cétone.
+quinones		quinone	0
+quinqua	Quinquagénaire.
+quinquagénaire	Dont l’âge se situe entre cinquante et cinquante-neuf ans.
+quinquagénaires		quinquagénaire	0
+quinquagésime	Dimanche qui précède le premier dimanche de carême et qui est le cinquantième jour avant pâques.
+quinquagésimes		quinquagésime	0
+quinquas		quinqua	0
+quinquennal	Qui dure cinq ans.
+quinquennale		quinquennal	23
+quinquennales		quinquennal	1
+quinquennat	Mandat de cinq ans.
+quinquennats		quinquennat	0
+quinquennaux		quinquennal	9
+quinquet	Sorte de lampe à huile à double courant d’air et à réservoir supérieur.
+quinquets		quinquet	0
+quinquin	Petit enfant.
+quinquina	Écorce amère et fébrifuge qui est fournie par des arbres du genre Cinchona du Pérou.
+quinquinas		quinquina	0
+quinquins		quinquin	0
+quint	Cinquième partie dans quelque somme, dans quelque marché, dans quelque succession.
+quintaine	Poteau fiché en terre, contre lequel on s’exerce à courir avec la lance ou à jeter des flèches.
+quintaines		quintaine	0
+quintal	Ancienne mesure de masse de 100 livres.
+quintaux		quintal	0
+quinte	Intervalle de cinq notes consécutives, y compris les deux extrêmes.
+quintefeuille	Plante de la famille des rosacées, ainsi nommée parce que sa feuille a cinq folioles.
+quintefeuilles		quintefeuille	0
+quintes		quinte	0
+quintessence	Cinquième élément, qui s’ajoute chez les philosophes anciens aux quatre premiers (la terre, le feu, l’air, l’eau) et qui en assure la cohésion ou la vie.
+quintessences		quintessence	0
+quintessencia		quintessencier	33
+quintessenciai		quintessencier	22
+quintessenciais		quintessencier	29
+quintessenciait		quintessencier	34
+quintessenciant		quintessencier	35
+quintessencias		quintessencier	12
+quintessenciât		quintessencier	20
+quintessencié	Transformé pour devenir la quintessence d'un phénomène.
+quintessenciée		quintessencié	23
+quintessenciées		quintessencié	1
+quintessencient		quintessencier	31
+quintessencier	Raffiner, subtiliser à l’excès.
+quintessenciera		quintessencier	21
+quintessenciés		quintessencier	38
+quintessenciez		quintessencier	30
+quintessenciiez		quintessencier	13
+quintessencions		quintessencier	27
+quintet	Variante de quintette.
+quintets		quintet	0
+quintette	Morceau de musique écrit pour cinq voix ou pour cinq instruments.
+quintettes		quintette	0
+quinteuse	Femme qui est fantasque, qui est sujet à des quintes, à des accès de mauvaise humeur.
+quinteuses		quinteuse	0
+quinteux	Qui est fantasque, qui est sujet à des quintes, à des accès de mauvaise humeur.
+quintidi	Cinquième jour de la décade, dans le calendrier républicain.
+quintidis		quintidi	0
+quintil	Strophe de cinq vers.
+quintile	Cinquième partie d’un tout, un cinquième.
+quintiles		quintile	0
+quintillion	Un million de quadrillions ou un million à la puissance cinq, soit 10³⁰.
+quintillions		quintillion	0
+quintils		quintil	0
+quinto	Cinquièmement, en cinquième lieu.
+quintoie		quintoyer	79
+quintoient		quintoyer	31
+quintoiera		quintoyer	21
+quintoierai		quintoyer	16
+quintoieraient		quintoyer	28
+quintoierais		quintoyer	18
+quintoierait		quintoyer	26
+quintoieras		quintoyer	7
+quintoierez		quintoyer	5
+quintoieriez		quintoyer	4
+quintoierions		quintoyer	11
+quintoierons		quintoyer	10
+quintoieront		quintoyer	15
+quintoies		quintoyer	66
+quintolet	Division exceptionnelle du temps formée d’un groupe de cinq figures égales, dont la somme équivaut, soit à quatre figures identiques dans un temps normalement …
+quintolets		quintolet	0
+quintoya		quintoyer	33
+quintoyai		quintoyer	22
+quintoyaient		quintoyer	32
+quintoyais		quintoyer	29
+quintoyait		quintoyer	34
+quintoyâmes		quintoyer	3
+quintoyant		quintoyer	35
+quintoyas		quintoyer	12
+quintoyasse		quintoyer	6
+quintoyassent		quintoyer	17
+quintoyasses		quintoyer	8
+quintoyassiez		quintoyer	14
+quintoyassions		quintoyer	25
+quintoyât		quintoyer	20
+quintoyâtes		quintoyer	2
+quintoyé		quintoyer	46
+quintoyer	Faire entendre la quinte supérieure d’un son au lieu de ce son lui-même.
+quintoyèrent		quintoyer	24
+quintoyez		quintoyer	30
+quintoyiez		quintoyer	13
+quintoyions		quintoyer	19
+quintoyons		quintoyer	27
+quints		quint	9
+quintupla		quintupler	39
+quintuplai		quintupler	22
+quintuplaient		quintupler	32
+quintuplais		quintupler	29
+quintuplait		quintupler	34
+quintuplâmes		quintupler	3
+quintuplant		quintupler	35
+quintuplas		quintupler	12
+quintuplasse		quintupler	6
+quintuplassent		quintupler	17
+quintuplasses		quintupler	8
+quintuplassiez		quintupler	14
+quintuplassions		quintupler	25
+quintuplât		quintupler	20
+quintuplâtes		quintupler	2
+quintuple	Qui vaut cinq fois autant.
+quintuplée		quintupler	37
+quintuplées	Pluriel de quintuplée.
+quintuplent		quintupler	31
+quintupler	Rendre cinq fois aussi grand, multiplier par cinq.
+quintuplera		quintupler	21
+quintuplerai		quintupler	16
+quintupleraient		quintupler	28
+quintuplerais		quintupler	18
+quintuplerait		quintupler	26
+quintupleras		quintupler	7
+quintuplèrent		quintupler	24
+quintuplerez		quintupler	5
+quintupleriez		quintupler	4
+quintuplerions		quintupler	11
+quintuplerons		quintupler	10
+quintupleront		quintupler	15
+quintuples		quintuple	0
+quintuplez		quintupler	30
+quintupliez		quintupler	13
+quintuplions		quintupler	19
+quintuplons		quintupler	27
+quinzain	De quinze, comptant quinze.
+quinzaine	Réunion de choses de même nature, au nombre de quinze ou à peu près.
+quinzaines		quinzain	1
+quinze	Quatorze plus un, adjectif numéral cardinal correspondant au nombre 15.
+quinzième	Qui concerne l’ordinal de quinze.
+quinzièmement	En quinzième lieu.
+quinzièmes		quinzième	0
+quinziste	Personne qui joue au rugby à quinze.
+quinzistes		quinziste	0
+quinzomadaire	Qui paraît toutes les deux semaines.
+quinzomadaires		quinzomadaire	0
+quipo	Variante de quipou.
+quipos		quipo	0
+quipou	Dans la civilisation inca, ensemble de fils de coton tressés, dont le nombre, les couleurs et les nœuds étaient porteurs de sens.
+quipous		quipou	0
+quiproquo	Méprise qui consiste à prendre une personne pour une autre, une chose pour une autre.
+quiproquos		quiproquo	0
+quipu	Variante de quipou.
+quipus		quipu	132
+quiquajon	Abri de jardin à claire-voie.
+quiquajons		quiquajon	0
+quiquette	Variante de quéquette.
+quiquettes		quiquette	0
+quirat	Part de propriété d’un navire indivis.
+quirataire	Copropriétaire d’un navire indivis, celui qui possède un ou plusieurs quirats.
+quirataires		quirataire	0
+quirite	Variante de Quirite.
+quirites		quirite	0
+quiscale	Espèce de passereau américain appartenant à la famille des Icteridae.
+quiscales		quiscale	0
+quitta		quitter	39
+quittai		quitter	22
+quittaient		quitter	128
+quittais	Première personne du singulier de l’imparfait du subjonctif du verbe quitter.
+quittait		quitter	127
+quittâmes		quitter	68
+quittança		quittancer	39
+quittançai		quittancer	22
+quittançaient		quittancer	32
+quittançais		quittancer	29
+quittançait		quittancer	34
+quittançâmes		quittancer	3
+quittançant		quittancer	35
+quittanças		quittancer	12
+quittançasse		quittancer	6
+quittançassent		quittancer	17
+quittançasses		quittancer	8
+quittançassiez		quittancer	14
+quittançassions		quittancer	25
+quittançât		quittancer	20
+quittançâtes		quittancer	2
+quittance	Écrit que l’on donne à quelqu’un et par lequel on déclare qu’il a payé, a acquitté une somme d’argent, une redevance, un droit, etc.
+quittancée		quittancer	37
+quittancées		quittancer	36
+quittancent		quittancer	31
+quittancer	Donner quittance.
+quittancera		quittancer	21
+quittancerai		quittancer	16
+quittanceraient		quittancer	28
+quittancerais		quittancer	18
+quittancerait		quittancer	26
+quittanceras		quittancer	7
+quittancèrent		quittancer	24
+quittancerez		quittancer	5
+quittanceriez		quittancer	4
+quittancerions		quittancer	11
+quittancerons		quittancer	10
+quittanceront		quittancer	15
+quittances		quittance	0
+quittancez		quittancer	30
+quittanciez		quittancer	13
+quittancions		quittancer	19
+quittançons		quittancer	27
+quittant		quitter	43
+quittas		quitter	83
+quittasse		quitter	6
+quittassent		quitter	17
+quittasses		quitter	8
+quittassiez		quitter	14
+quittassions		quitter	25
+quittât		quitter	62
+quittâtes		quitter	2
+quitte	Libéré d’une dette, d’une obligation, d’un devoir moral.
+quittée		quitter	45
+quittées		quitter	51
+quittent		quitter	117
+quitter	Laisser quelqu’un quelque part.
+quittera		quitter	44
+quitterai		quitter	50
+quitteraient		quitter	63
+quitterais		quitter	60
+quitterait		quitter	49
+quitteras		quitter	57
+quittèrent		quitter	48
+quitterez		quitter	58
+quitteriez		quitter	74
+quitterions		quitter	82
+quitterons		quitter	61
+quitteront		quitter	54
+quittés		quitter	53
+quittez		quitter	47
+quittiez		quitter	67
+quittions		quitter	65
+quittons		quitter	59
+quitus	Arrêté ou jugement définitif d’un compte, par lequel la personne responsable est déclarée quitte.
+quiz	Jeu qui consiste en un questionnaire permettant de tester des connaissances générales ou spécifiques.
+quoi	Quelle chose, dans la fonction d’objet.
+quoique	Encore que ; bien que.
+quokka	Macropode (groupe des kangourous) de la taille d’un chat vivant dans des îles au large du Sud-Ouest de l’Australie.
+quokkas		quokka	0
+quolibet	Plaisanterie vulgaire et injurieuse.
+quolibets		quolibet	0
+quorum	Nombre des membres d’une réunion qui est nécessaire pour que les décisions que cette réunion doit prendre soient valables.
+quorums		quorum	0
+quota	Quantité limitée ou réglementaire.
+quotas		quota	0
+quotepart	Variante orthographique de quote-part
+quoteparts		quotepart	0
+quotidien	De chaque jour.
+quotidienne		quotidien	23
+quotidiennement	Tous les jours.
+quotidiennes		quotidien	1
+quotidienneté	État de ce qui se fait chaque jour.
+quotidiennetés		quotidienneté	0
+quotidiens		quotidien	9
+quotient	Résultat de la division d’un nombre (le dividende) par un autre (le diviseur).
+quotients		quotient	0
+quotité	Montant proportionnel dans un partage, une répartition, une quote-part.
+quotités		quotité	0

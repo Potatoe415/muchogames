@@ -1,0 +1,745 @@
+sybarite	Qui appartient à Sybaris ou à ses habitants.
+sybarites		sybarite	0
+sybaritique	Relatif aux Sybarites.
+sybaritiques		sybaritique	0
+sybaritisme	Fait de vouloir vivre comme les Sybarites, dans le plaisir et la luxure.
+sybaritismes		sybaritisme	0
+sycomore	Espèce de figuier très courante en Égypte et au Proche-Orient dans l'Antiquité.
+sycomores		sycomore	0
+sycone	Inflorescence particulière de certaines moracées qui donne naissance à un faux fruit tel la figue.
+sycones		sycone	0
+sycophante	Dans l’Athènes antique, délateur professionnel, Athénien mettant en accusation ses concitoyens devant le tribunal populaire de l’Héliée en vue de s’enrichir.
+sycophantes		sycophante	0
+sycosis	Infection profonde des follicules pileux avec suppuration.
+syénite	Roche plutonique, rose, composé grenu de feldspath alcalin, de biotite et de hornblende.
+syénites		syénite	0
+syli	Devise officielle de la Guinée entre 1972 et 1986.
+sylis		syli	0
+syllabaire	Syllabique.
+syllabaires		syllabaire	0
+syllabation	Découpage en syllabes.
+syllabations		syllabation	0
+syllabe	Voyelle ou réunion de phonèmes qui se prononcent par une seule émission de voix.
+syllabes		syllabe	0
+syllabique	Qui a rapport aux syllabes.
+syllabiquement	Par syllabes, d’une manière syllabique.
+syllabiques		syllabique	0
+syllabisme	Système d’écriture qui note les syllabes.
+syllabismes		syllabisme	0
+syllabus	Recueil de questions tranchées par l’autorité papale.
+syllepse	Figure de style dans laquelle l’accord grammatical (en genre, nombre ou personne), répond à notre pensée plutôt qu’aux règles grammaticales.
+syllepses		syllepse	0
+sylleptique	Qui a rapport à la syllepse.
+sylleptiques		sylleptique	0
+syllogisme	Raisonnement composé de trois propositions, la majeure, la mineure et la conclusion.
+syllogismes		syllogisme	0
+syllogistique	Qui appartient au syllogisme.
+syllogistiques		syllogistique	0
+syllogomanie	Collectionnite aiguë.
+syllogomanies		syllogomanie	0
+sylphe	Génie de l’air des mythologies celte, notamment gauloise, et germanique.
+sylphes		sylphe	0
+sylphide	Sylphe femelle, génie ailé qui vit dans les airs.
+sylphides		sylphide	0
+sylvain	Qui vit dans la forêt, sylvestre.
+sylvaine		sylvain	23
+sylvaines		sylvain	1
+sylvains		sylvain	0
+sylvaner	Cépage donnant des petites grappes de petits raisins blancs.
+sylvaners		sylvaner	0
+sylve	Forêt.
+sylves		sylve	0
+sylvestre	Qui vit, croît dans la forêt.
+sylvestres		sylvestre	0
+sylvicole	Relatif à la sylviculture, à la gestion de la forêt.
+sylvicoles		sylvicole	0
+sylviculteur	Celui qui s’occupe de cultiver les bois, les forêts.
+sylviculteurs		sylviculteur	0
+sylvicultrice	Celle qui s’occupe de cultiver les bois, les forêts.
+sylvicultrices		sylvicultrice	0
+sylviculture	Ensemble des techniques visant à créer, renouveler, améliorer un peuplement forestier en anticipant, accompagnant ou orientant la croissance naturelle des arbr…
+sylvicultures		sylviculture	0
+sylvie	Sylvia, genre de passereaux de la famille des Sylviidae.
+sylvies		sylvie	0
+sylviidé	Variante de sylvidé (oiseau).
+sylviidés		sylviidé	0
+sylvine	Espèce d’insecte lépidoptère (papillon) de nuit de la famille des hépialidés (Hepialidae), dont le dos des ailes antérieures est de couleur orange avec 2 barre…
+sylvines		sylvine	0
+sylvinite	Chlorure de potassium minéral associé à du chlorure de sodium.
+sylvinites		sylvinite	0
+sylvite	Chlorure de potassium (KCl), minéral évaporitique du système cubique, généralement incolore ou blanc, parfois coloré par des impuretés.
+sylvites		sylvite	0
+symbionte	Variante de symbiote.
+symbiontes		symbionte	0
+symbiose	Association obligatoire de deux ou de plusieurs organismes différents, les symbiotes, avec bénéfice réciproque et qui leur permet de vivre.
+symbioses		symbiose	0
+symbiote	Organisme qui vit en symbiose avec un autre.
+symbiotes		symbiote	0
+symbiotique	Relatif à la symbiose.
+symbiotiques		symbiotique	0
+symbole	Figure ou image qui sert à désigner une chose le plus souvent abstraite, une idée ou un concept.
+symboles		symbole	0
+symbolique	Qui se rapporte à un symbole, ou à l'activité de symbolisation, ou qui sert de symbole.
+symboliquement	D'une manière symbolique.
+symboliques		symbolique	0
+symbolisa		symboliser	39
+symbolisai		symboliser	22
+symbolisaient		symboliser	42
+symbolisais		symboliser	29
+symbolisait		symboliser	40
+symbolisâmes		symboliser	3
+symbolisant	Qui symbolise.
+symbolisas		symboliser	12
+symbolisasse		symboliser	6
+symbolisassent		symboliser	17
+symbolisasses		symboliser	8
+symbolisassiez		symboliser	14
+symbolisassions		symboliser	25
+symbolisât		symboliser	62
+symbolisâtes		symboliser	2
+symbolisation	Action de symboliser, de représenter par des symboles.
+symbolisations		symbolisation	0
+symbolisé		symboliser	56
+symbolisée		symboliser	45
+symbolisées		symboliser	36
+symbolisent		symboliser	41
+symboliser	Représenter par un symbole.
+symbolisera		symboliser	44
+symboliserai		symboliser	50
+symboliseraient		symboliser	28
+symboliserais		symboliser	18
+symboliserait		symboliser	49
+symboliseras		symboliser	7
+symbolisèrent		symboliser	24
+symboliserez		symboliser	5
+symboliseriez		symboliser	4
+symboliserions		symboliser	11
+symboliserons		symboliser	10
+symboliseront		symboliser	15
+symbolisés		symboliser	53
+symbolisez		symboliser	30
+symbolisiez		symboliser	13
+symbolisions		symboliser	19
+symbolisme	Figuration par des symboles, interprétation par les symboles.
+symbolismes		symbolisme	0
+symbolisons		symboliser	27
+symboliste	Qui a rapport au symbolisme littéraire ou artistique.
+symbolistes		symboliste	0
+symbologie	Étude des symboles et plus particulièrement d’un système de symboles attachée à une culture, à une religion ou à une époque.
+symbologies		symbologie	0
+symétrie	Correspondance de grandeur, de forme et de position que les parties d’un corps naturel ou artificiel ont entre elles et avec leur tout.
+symétries		symétrie	0
+symétrique	Qui a de la symétrie, qui a une symétrie.
+symétriquement	Avec symétrie.
+symétriques		symétrique	0
+symétrisa		symétriser	33
+symétrisai		symétriser	22
+symétrisaient		symétriser	32
+symétrisais		symétriser	29
+symétrisait		symétriser	34
+symétrisâmes		symétriser	3
+symétrisant		symétriser	35
+symétrisas		symétriser	12
+symétrisasse		symétriser	6
+symétrisassent		symétriser	17
+symétrisasses		symétriser	8
+symétrisassiez		symétriser	14
+symétrisassions		symétriser	25
+symétrisât		symétriser	20
+symétrisâtes		symétriser	2
+symétrisation	Action de rendre symétrique.
+symétrisations		symétrisation	0
+symétrisé		symétriser	46
+symétrisée		symétriser	37
+symétrisées		symétriser	36
+symétrisent		symétriser	31
+symétriser	Rendre symétrique un élément, un ensemble.
+symétrisera		symétriser	21
+symétriserai		symétriser	16
+symétriseraient		symétriser	28
+symétriserais		symétriser	18
+symétriserait		symétriser	26
+symétriseras		symétriser	7
+symétrisèrent		symétriser	24
+symétriserez		symétriser	5
+symétriseriez		symétriser	4
+symétriserions		symétriser	11
+symétriserons		symétriser	10
+symétriseront		symétriser	15
+symétrisés		symétriser	38
+symétrisez		symétriser	30
+symétrisiez		symétriser	13
+symétrisions		symétriser	19
+symétrisons		symétriser	27
+sympa	Sympathique.
+sympas		sympa	0
+sympathectomie	Ablation de nerfs, ou de ganglions liés au système nerveux sympathique.
+sympathectomies		sympathectomie	0
+sympathicotonie	Exacerbation de la sensibilité du système nerveux sympathique qui se manifeste par une instabilité de l’humeur, de la tachycardie, une mydriase avec un amincis…
+sympathie	Penchant instinctif qui attire des personnes les unes vers les autres.
+sympathies		sympathie	0
+sympathique	Relatif à la sympathie.
+sympathiquement	D'une manière sympathique.
+sympathiques		sympathique	0
+sympathisa		sympathiser	33
+sympathisai		sympathiser	55
+sympathisaient		sympathiser	128
+sympathisais		sympathiser	29
+sympathisait		sympathiser	40
+sympathisâmes		sympathiser	3
+sympathisant	Qui a de la sympathie avec.
+sympathisante	Personne qui, sans y adhérer, a de la sympathie pour les idées développées par une organisation.
+sympathisantes		sympathisant	1
+sympathisants		sympathisant	9
+sympathisas		sympathiser	12
+sympathisasse		sympathiser	6
+sympathisassent		sympathiser	17
+sympathisasses		sympathiser	8
+sympathisassiez		sympathiser	14
+sympathisât		sympathiser	20
+sympathisâtes		sympathiser	2
+sympathisé		sympathiser	56
+sympathisent		sympathiser	41
+sympathiser	Éprouver de la sympathie.
+sympathisera		sympathiser	44
+sympathiserai		sympathiser	16
+sympathiserais		sympathiser	18
+sympathiserait		sympathiser	26
+sympathiseras		sympathiser	7
+sympathisèrent		sympathiser	24
+sympathiserez		sympathiser	58
+sympathiseriez		sympathiser	4
+sympathiserions		sympathiser	11
+sympathiserons		sympathiser	10
+sympathiseront		sympathiser	15
+sympathises		sympathiser	66
+sympathisez		sympathiser	47
+sympathisiez		sympathiser	13
+sympathisions		sympathiser	65
+sympathisons		sympathiser	59
+sympatholytique	Substance chimique qui inhibe l’action du système nerveux sympathique.
+sympatrique	Se dit de populations qui appartiennent à des espèces distinctes tout en étant taxonomiquement proches et vivent dans une même aire de distribution géographiqu…
+sympatriques		sympatrique	0
+symphonie	Concert d’instruments de musique.
+symphonies		symphonie	0
+symphonique	Qui se rapporte à la symphonie.
+symphoniquement	Dans la forme de la symphonie.
+symphoniques		symphonique	0
+symphoniste	Compositeur ou compositrice de symphonies.
+symphonistes		symphoniste	0
+symphorine	Plante du genre Symphoricarpos de la famille des Caprifoliacées, originaire d'Amérique, il compte 17 espèces d'arbustes caducs.
+symphorines		symphorine	0
+symphyse	Type d’articulation cartilagineuse dans laquelle deux surfaces osseuses (recouvertes de cartilage hyalin) sont unies par un disque, un coussinet ou une lame de…
+symphyses		symphyse	0
+symplectique	Qui est entrelacé avec un autre corps ou élément.
+symplectiques		symplectique	0
+symposion	Banquet, festin.
+symposions		symposion	0
+symposium	Seconde partie d'un repas, correspondant aujourd'hui au dessert, pendant laquelle un groupe restreint de convives buvaient et discouraient sur un sujet.
+symposiums		symposium	0
+symptomatique	Qui est un symptôme.
+symptomatiques		symptomatique	0
+symptomatologie	Étude scientifique des symptômes.
+symptôme	Phénomène caractéristique d’un trouble organique ou fonctionnel.
+symptômes		symptôme	0
+synagogal	Qui appartient à la synagogue et aux pratiques qui y sont associées.
+synagogale		synagogal	23
+synagogales		synagogal	1
+synagogaux		synagogal	9
+synagogue	Assemblée religieuse des juifs.
+synagogues		synagogue	0
+synalèphe	Contraction des syllabes.
+synalèphes		synalèphe	0
+synallagmatique	Qualifie les contrats qui contiennent une obligation réciproque entre les parties.
+synanthéré	Dont les étamines sont soudées par les anthères.
+synanthérée		synanthéré	23
+synanthérées		synanthéré	1
+synanthérés		synanthéré	9
+synapomorphie	Caractère nouveau apparu chez un ancêtre commun et partagé par tous ses descendants, servant à définir un clade.
+synapomorphies		synapomorphie	0
+synapse	Zone de quasi-contact qui permet la transmission d’un signal électrique entre deux neurones.
+synapses		synapse	0
+synaptase	Enzyme présente dans diverses amandes.
+synaptases		synaptase	0
+synaptique	Qui a rapport avec la synapse.
+synaptiques		synaptique	0
+synarchie	Règne de plusieurs princes qui gouvernent simultanément les diverses portions d’un même empire.
+synarchies		synarchie	0
+synarthrose	Articulation fixe de deux os.
+synarthroses		synarthrose	0
+synase	Lyase.
+synases		synase	0
+synchondrose	Type de jointure cartilagineuse immobile (synarthrose), temporaire ou permanente, dans laquelle les deux pièces osseuses sont unies par du cartilage hyalin.
+synchondroses		synchondrose	0
+synchro	Synchronisé.
+synchrone	Qualifie les mouvements qui se font en même temps.
+synchrones		synchrone	0
+synchronicité	Qualité de ce qui est synchronique, de ce qui se passe en même temps.
+synchronicités		synchronicité	0
+synchronie	Coordination inconsciente des gestes, de la posture, du rythme entre personnes, signe d’une connexion émotionnelle.
+synchronies		synchronie	0
+synchronique	Qui est relatif à ce qui se fait dans le même temps.
+synchroniques		synchronique	0
+synchronisa		synchroniser	33
+synchronisai		synchroniser	22
+synchronisaient		synchroniser	42
+synchronisais		synchroniser	29
+synchronisait		synchroniser	34
+synchronisâmes		synchroniser	3
+synchronisant		synchroniser	35
+synchronisas		synchroniser	12
+synchronisasse		synchroniser	6
+synchronisasses		synchroniser	8
+synchronisât		synchroniser	20
+synchronisâtes		synchroniser	2
+synchronisation	Coordination de plusieurs opérations entre elles en fonction du temps.
+synchronisé		synchroniser	56
+synchronisée		synchroniser	45
+synchronisées		synchroniser	51
+synchronisent		synchroniser	31
+synchroniser	Coordonner plusieurs opérations entre elles dans le temps.
+synchronisera		synchroniser	44
+synchroniserai		synchroniser	16
+synchroniserais		synchroniser	18
+synchroniserait		synchroniser	26
+synchroniseras		synchroniser	7
+synchronisèrent		synchroniser	24
+synchroniserez		synchroniser	5
+synchroniseriez		synchroniser	4
+synchroniserons		synchroniser	10
+synchroniseront		synchroniser	15
+synchronisés		synchroniser	53
+synchroniseur	Dispositif permettant de coupler automatiquement deux alternateurs au moment du synchronisme.
+synchroniseurs		synchroniseur	0
+synchronisez		synchroniser	47
+synchronisiez		synchroniser	13
+synchronisions		synchroniser	19
+synchronisme	Rapport de deux choses qui se font au même moment.
+synchronismes		synchronisme	0
+synchronisons		synchroniser	59
+synchros		synchro	0
+synchrotron	Instrument électromagnétique destiné à l'accélération à haute énergie de particules élémentaires.
+synchrotrons		synchrotron	0
+syncinésie	Contraction musculaire involontaire apparaissant alors qu'un autre mouvement volontaire ou réflexe est effectué.
+syncinésies		syncinésie	0
+synclinal	Qui concerne les plis concaves des couches géologiques.
+synclinale		synclinal	23
+synclinales		synclinal	1
+synclinaux		synclinal	9
+syncopa		syncoper	39
+syncopai		syncoper	22
+syncopaient		syncoper	32
+syncopais		syncoper	29
+syncopait		syncoper	34
+syncopal	Relatif à la syncope dans le sens de « perte de connaissance ».
+syncopale		syncopal	23
+syncopales		syncopal	1
+syncopâmes		syncoper	3
+syncopant		syncoper	35
+syncopas		syncoper	12
+syncopasse		syncoper	6
+syncopassent		syncoper	17
+syncopasses		syncoper	8
+syncopassiez		syncoper	14
+syncopassions		syncoper	25
+syncopât		syncoper	20
+syncopâtes		syncoper	2
+syncopaux		syncopal	9
+syncope	Perte de connaissance brève et brutale liée à une diminution brusque du débit sanguin cérébral.
+syncopée		syncopé	23
+syncopées		syncopé	1
+syncopent		syncoper	31
+syncoper	Faire une syncope.
+syncopera		syncoper	21
+syncoperai		syncoper	16
+syncoperaient		syncoper	28
+syncoperais		syncoper	18
+syncoperait		syncoper	26
+syncoperas		syncoper	7
+syncopèrent		syncoper	24
+syncoperez		syncoper	5
+syncoperiez		syncoper	4
+syncoperions		syncoper	11
+syncoperons		syncoper	10
+syncoperont		syncoper	15
+syncopés		syncopé	9
+syncopez		syncoper	30
+syncopiez		syncoper	13
+syncopions		syncoper	19
+syncopons		syncoper	27
+syncrétique	Relatif au syncrétisme, issu de la fusion de différents cultes, religions ou doctrines philosophiques, etc.
+syncrétiques		syncrétique	0
+syncrétisme	Système de philosophie grecque qui faisait la synthèse des divers systèmes de pensée.
+syncrétismes		syncrétisme	0
+syncrétiste	Relatif au syncrétisme.
+syncrétistes		syncrétiste	0
+syncristallisa		syncristalliser	33
+syncristallisai		syncristalliser	22
+syncristallisas		syncristalliser	12
+syncristallisât		syncristalliser	20
+syncristallisé		syncristalliser	46
+syncristalliser	Cristalliser ensemble.
+syncristallises		syncristalliser	66
+syncristallisez		syncristalliser	30
+syncytial	Relatif au syncytium.
+syncytiale		syncytial	23
+syncytiales		syncytial	1
+syncytiaux		syncytial	9
+syncytium	Cellule polynucléée provenant de la fusion de plusieurs cellules (e.g.
+syncytiums		syncytium	0
+syndactyle	Qui a les doigts de la main ou du pied réunis.
+syndactyles		syndactyle	0
+syndactylie	Réunion des doigts ou des orteils par une membrane plus ou moins épaisse de peau ou par soudure des os.
+syndactylies		syndactylie	0
+synderme	Substitut du cuir constitué d'au moins 50% de fibres de cuir assemblées par du latex ou une autre résine.
+syndermes		synderme	0
+syndic	Personne qui est élue ou désignée pour gérer les affaires d’une collectivité.
+syndical	Relatif au syndicalisme et aux syndicats.
+syndicale		syndical	23
+syndicales		syndical	1
+syndicalisa		syndicaliser	33
+syndicalisai		syndicaliser	22
+syndicalisaient		syndicaliser	32
+syndicalisais		syndicaliser	29
+syndicalisait		syndicaliser	34
+syndicalisâmes		syndicaliser	3
+syndicalisant		syndicaliser	35
+syndicalisas		syndicaliser	12
+syndicalisasse		syndicaliser	6
+syndicalisasses		syndicaliser	8
+syndicalisât		syndicaliser	20
+syndicalisâtes		syndicaliser	2
+syndicalisation	Action de se syndicaliser, résultat de cette action.
+syndicalisé		syndicaliser	46
+syndicalisée		syndicaliser	37
+syndicalisées		syndicaliser	36
+syndicalisent		syndicaliser	31
+syndicaliser	Faire participer au syndicalisme, à l’action syndicale.
+syndicalisera		syndicaliser	21
+syndicaliserai		syndicaliser	16
+syndicaliserais		syndicaliser	18
+syndicaliserait		syndicaliser	26
+syndicaliseras		syndicaliser	7
+syndicalisèrent		syndicaliser	24
+syndicaliserez		syndicaliser	5
+syndicaliseriez		syndicaliser	4
+syndicaliserons		syndicaliser	10
+syndicaliseront		syndicaliser	15
+syndicalisés		syndicaliser	38
+syndicalisez		syndicaliser	30
+syndicalisiez		syndicaliser	13
+syndicalisions		syndicaliser	19
+syndicalisme	Activisme des syndicats dans lequel des acteurs économiques s’unissent.
+syndicalismes		syndicalisme	0
+syndicalisons		syndicaliser	27
+syndicaliste	Relatif ou favorable au syndicalisme.
+syndicalistes		syndicaliste	0
+syndicat	Fonction de syndic.
+syndicataire	Membre d'un syndicat financier, d'un syndicat de propriétaires.
+syndicataires		syndicataire	0
+syndication	Pratique qui consiste à vendre à plusieurs diffuseurs le droit de reproduire un contenu ou de diffuser un programme.
+syndications		syndication	0
+syndicats		syndicat	0
+syndicaux		syndical	9
+syndics		syndic	0
+syndiqua		syndiquer	33
+syndiquai		syndiquer	22
+syndiquaient		syndiquer	32
+syndiquais		syndiquer	29
+syndiquait		syndiquer	34
+syndiquâmes		syndiquer	3
+syndiquant		syndiquer	35
+syndiquas		syndiquer	12
+syndiquasse		syndiquer	6
+syndiquassent		syndiquer	17
+syndiquasses		syndiquer	8
+syndiquassiez		syndiquer	14
+syndiquassions		syndiquer	25
+syndiquât		syndiquer	20
+syndiquâtes		syndiquer	2
+syndiqué	Qui a adhéré à un syndicat.
+syndiquée		syndiqué	23
+syndiquées		syndiqué	1
+syndiquent		syndiquer	31
+syndiquer	Réunir en un syndicat.
+syndiquera		syndiquer	21
+syndiquerai		syndiquer	16
+syndiqueraient		syndiquer	28
+syndiquerais		syndiquer	18
+syndiquerait		syndiquer	26
+syndiqueras		syndiquer	7
+syndiquèrent		syndiquer	24
+syndiquerez		syndiquer	5
+syndiqueriez		syndiquer	4
+syndiquerions		syndiquer	11
+syndiquerons		syndiquer	10
+syndiqueront		syndiquer	15
+syndiqués		syndiqué	9
+syndiquez		syndiquer	47
+syndiquiez		syndiquer	13
+syndiquions		syndiquer	19
+syndiquons		syndiquer	27
+syndrome	Ensemble de symptômes caractéristiques d’une maladie.
+syndromes		syndrome	0
+synecdoque	Figure de style par laquelle on fait entendre le plus en disant le moins, ou le moins en disant le plus.
+synecdoques		synecdoque	0
+synéchie	Adhérence.
+synéchies		synéchie	0
+synécologie	Analyse des rapports entre des individus d’espèces différentes dans une communauté d’organismes vivants.
+synécologies		synécologie	0
+synectique	Technique créative de stimulation des facultés créatrices.
+synectiques		synectique	0
+synérèse	Contraction, réunion de deux syllabes en une seule dans un même mot, mais sans aucun changement de lettres.
+synérèses		synérèse	0
+synergide	Une des deux cellules haploïdes du sac embryonnaire qui accompagne l’oosphère pour la production de l’embryon.
+synergides		synergide	0
+synergie	Action où l’effet cumulatif de deux composants d’un mélange est plus important que la somme des effets individuels des composants.
+synergies		synergie	0
+synergique	Relatif à l'association de plusieurs organes, muscles ou médicaments pour remplir une fonction.
+synergiques		synergique	0
+synergiste	Adepte du synergisme.
+synergistes	Nom donné, dans le XVIe siècle, à quelques théologiens d’Allemagne qui, trouvant trop dure l’hypothèse de Luther sur le franc arbitre, enseignèrent que la grâc…
+synesthésie	Trouble de la perception des sensations, qui fait éprouver deux perceptions simultanées à la sollicitation d’un seul sens.
+synesthésies		synesthésie	0
+synforme	Pli des couches géologiques dessinant une courbure concave vers le haut.
+synformes		synforme	0
+syngnathe	Une des espèces de poissons osseux marins de fond, des vipères de mer du genre Syngnathus.
+syngnathes		syngnathe	0
+syngnathidé	Membre d'une famille de poissons osseux marins au museau allongé, aux mâchoires fusionnées, sans nageoires pelviennes, et avec des plaques osseuses sur le corp…
+syngnathidés		syngnathidé	0
+synodal	Relatif à un synode.
+synodale		synodal	23
+synodales		synodal	1
+synodaux		synodal	9
+synode	Assemblée ecclésiastique.
+synodes		synode	0
+synodique	Relatif aux synodes.
+synodiques		synodique	0
+synoecisme	Variante orthographique de synœcisme.
+synœcismes		synœcisme	0
+synonyme	Qui a le même sens qu’un autre mot ou une signification presque semblable.
+synonymes		synonyme	0
+synonymie	Caractère de ce qui est synonyme.
+synonymies		synonymie	0
+synonymique	Qui appartient à la synonymie.
+synonymiques		synonymique	0
+synopse	Ouvrage qui reproduit trois des quatre évangiles, non pas successivement, mais, côte à côte, simultanément, en colonnes qui permettent de les confronter dans l…
+synopses		synopse	0
+synopsie	Synesthésie où les sons se voient associés une couleur.
+synopsies		synopsie	0
+synopsis	Résumé d’un film, d’un livre, plus détaillé que l'argument ou accroche.
+synoptique	Qui permet d’embrasser, de saisir d’un même coup d’œil les diverses parties d’un ensemble, qui en offre une vue générale.
+synoptiques		synoptique	0
+synostose	Désigne principalement la soudure des os du crâne mais également la soudure entre d'autres os tels que le radius et le cubitus, le péroné et le tibia.
+synostoses		synostose	0
+synovectomie	Ablation des gaines synoviales.
+synovectomies		synovectomie	0
+synovial	Relatif à la synovie.
+synoviale	Synonyme de membrane synoviale.
+synoviales	Féminin pluriel de synoviall.
+synoviaux	Masculin pluriel de synovial.
+synovie	Liquide produit par la membrane synoviale, transparent ou jaune pâle et huileux, qui lubrifie les articulations mobiles et en facilite le mouvement.
+synovies		synovie	0
+synovite	Inflammation des membranes synoviales.
+synovites		synovite	0
+syntacticien	Linguiste spécialiste de l'étude de la syntaxe.
+syntacticienne	Linguiste (femme) spécialiste de l’étude de la syntaxe.
+syntacticiennes		syntacticienne	0
+syntacticiens		syntacticien	0
+syntactique	Syntaxique.
+syntactiques		syntactique	132
+syntagmatique	Qui est relatif au syntagme.
+syntagmatiques		syntagmatique	0
+syntagme	Dans la phalange grecque, division de 256 hommes, formant un carré plein de 16 hommes de côté.
+syntagmes		syntagme	0
+syntaxe	Arrangement des mots et construction des propositions dans la phrase selon les règles de la grammaire.
+syntaxes		syntaxe	0
+syntaxique	Qui appartient à la syntaxe.
+syntaxiquement	Au point de vue de la syntaxe.
+syntaxiques		syntaxique	0
+synthé	Synthétiseur.
+synthés		synthé	0
+synthèse	Recomposition des éléments d’un tout, en particulier, de la thèse et de l'antithèse.
+synthèses		synthèse	0
+synthétique	Relatif à la synthèse.
+synthétiquement	D’une manière synthétique.
+synthétiques		synthétique	0
+synthétisa		synthétiser	33
+synthétisable	Que l’on peut synthétiser
+synthétisables		synthétisable	0
+synthétisai		synthétiser	22
+synthétisaient		synthétiser	32
+synthétisais		synthétiser	29
+synthétisait		synthétiser	34
+synthétisâmes		synthétiser	3
+synthétisant	Qui synthétise.
+synthétisante		synthétisant	23
+synthétisantes		synthétisant	1
+synthétisants		synthétisant	9
+synthétisas		synthétiser	12
+synthétisasse		synthétiser	6
+synthétisassent		synthétiser	17
+synthétisasses		synthétiser	8
+synthétisassiez		synthétiser	14
+synthétisât		synthétiser	20
+synthétisâtes		synthétiser	2
+synthétisé		synthétiser	56
+synthétisée		synthétiser	45
+synthétisées		synthétiser	36
+synthétisent		synthétiser	41
+synthétiser	Faire la synthèse de.
+synthétisera		synthétiser	44
+synthétiserai		synthétiser	16
+synthétiserais		synthétiser	18
+synthétiserait		synthétiser	26
+synthétiseras		synthétiser	7
+synthétisèrent		synthétiser	24
+synthétiserez		synthétiser	5
+synthétiseriez		synthétiser	4
+synthétiserions		synthétiser	11
+synthétiserons		synthétiser	10
+synthétiseront		synthétiser	15
+synthétisés		synthétiser	53
+synthétiseur	Appareil qui permet la synthèse de quelque chose.
+synthétiseurs		synthétiseur	0
+synthétisez		synthétiser	30
+synthétisiez		synthétiser	13
+synthétisions		synthétiser	19
+synthétisme	Ensemble des quatre opérations nécessaires pour faire la synthèse, c’est-à-dire pour réduire une fracture et la maintenir réduite : l’extension, la réduction, …
+synthétismes		synthétisme	0
+synthétisons		synthétiser	27
+syntone	Dont les sentiments sont en harmonie.
+syntones		syntone	0
+syntonie	Ajustement de deux circuits sur la même fréquence.
+syntonies		syntonie	0
+syntonisa		syntoniser	33
+syntonisai		syntoniser	22
+syntonisaient		syntoniser	32
+syntonisais		syntoniser	29
+syntonisait		syntoniser	34
+syntonisâmes		syntoniser	3
+syntonisant		syntoniser	35
+syntonisas		syntoniser	12
+syntonisasse		syntoniser	6
+syntonisassent		syntoniser	17
+syntonisasses		syntoniser	8
+syntonisassiez		syntoniser	14
+syntonisassions		syntoniser	25
+syntonisât		syntoniser	20
+syntonisâtes		syntoniser	2
+syntonisateur	Appareil électronique capable de convertir un signal radiofréquence reçu par une antenne en un signal audiofréquence de faible puissance.
+syntonisateurs		syntonisateur	0
+syntonisation	Ajustement de deux circuits sur la même fréquence.
+syntonisations		syntonisation	0
+syntonisé		syntoniser	46
+syntonisée		syntoniser	37
+syntonisées		syntoniser	36
+syntonisent		syntoniser	31
+syntoniser	Ajuster deux circuits à la même fréquence.
+syntonisera		syntoniser	21
+syntoniserai		syntoniser	16
+syntoniseraient		syntoniser	28
+syntoniserais		syntoniser	18
+syntoniserait		syntoniser	26
+syntoniseras		syntoniser	7
+syntonisèrent		syntoniser	24
+syntoniserez		syntoniser	5
+syntoniseriez		syntoniser	4
+syntoniserions		syntoniser	11
+syntoniserons		syntoniser	10
+syntoniseront		syntoniser	15
+syntonisés		syntoniser	38
+syntoniseur	Appareil électronique capable de convertir un signal radiofréquence reçu par une antenne en un signal audiofréquence de faible puissance.
+syntoniseurs		syntoniseur	0
+syntonisez		syntoniser	30
+syntonisiez		syntoniser	13
+syntonisions		syntoniser	19
+syntonisons		syntoniser	27
+syphilide	Nom donné aux affections cutanées qui sont sous la dépendance de la syphilis.
+syphilides		syphilide	0
+syphiligraphe	Médecin spécialiste de la syphilis et de son traitement.
+syphiligraphes		syphiligraphe	0
+syphiligraphie	Médecine spécialisée dans le traitement de la syphilis.
+syphiligraphies		syphiligraphie	0
+syphilis	Maladie vénérienne, autrefois mortelle, due à une infection par le tréponème pâle (Treponema pallidum).
+syphilitique	Relatif à la syphilis.
+syphilitiques		syphilitique	0
+syphilographe	Variante de syphiligraphe.
+syphilographes		syphilographe	0
+syphilographie	Spécialité médicale de l'étude de la syphilis et de son traitement
+syphilographies		syphilographie	0
+syracusain	Relatif à la ville de Syracuse ou aux Syracusains.
+syracusaine		syracusain	23
+syracusaines		syracusain	1
+syracusains		syracusain	9
+syrah	Cépage originaire des côtes du Rhône, mais maintenant utilisée dans le monde entier.
+syrahs		syrah	0
+syriaque	Relatif à la langue que parlaient les anciens peuples de la Syrie.
+syriaques		syriaque	0
+syrien	De Syrie.
+syrienne		syrien	23
+syriennes		syrien	1
+syriens		syrien	0
+syringe	Tombeau souterrain de l’Égypte ancienne où les sépultures sont précédées d’un couloir long et étroit.
+syringes		syringe	0
+syringomyélie	Maladie de la moelle épinière liée au développement d'une cavité en son centre qui tend à comprimer et à détruire progressivement la substance grise puis la su…
+syringomyélies		syringomyélie	0
+syrinx	Flûte de Pan.
+syrphe	Insecte diptère de la famille des syrphidés à l’abdomen jaune et caractérisé par un vol particulier : il reste immobile en l’air, ailes battantes, puis s’élanc…
+syrphes		syrphe	132
+syrphidés	Famille de diptères brachycères (mouches) qui comprend environ 200 genres et plus de 5000 espèces décrites, comme par exemple l’éristale, la volucelle et le sy…
+syrrhapte	Genre d’oiseau à petite tête, au corps robuste et compact, aux ailes et à queue longues et pointues, aux pattes et aux pieds emplumés.
+syrrhaptes		syrrhapte	0
+syrte	Petit lait
+syrtes	Sables mouvants très dangereux pour les navires.
+systématicien	Celui qui est compétent en systématique, spécialiste de la classification des organismes.
+systématiciens		systématicien	0
+systématique	Qui appartient, qui se rapporte à un système.
+systématiques		systématique	0
+systématisa		systématiser	33
+systématisai		systématiser	22
+systématisaient		systématiser	32
+systématisais		systématiser	29
+systématisait		systématiser	34
+systématisâmes		systématiser	3
+systématisant		systématiser	35
+systématisas		systématiser	12
+systématisasse		systématiser	6
+systématisasses		systématiser	8
+systématisât		systématiser	20
+systématisâtes		systématiser	2
+systématisation	Action de systématiser, de rendre systématique.
+systématisé		systématiser	46
+systématisée	Féminin singulier de systématisé.
+systématisées		systématiser	36
+systématisent		systématiser	31
+systématiser	Réunir des faits ou des opinions en un seul corps de doctrine, ramener un grand nombre de faits à un système.
+systématisera		systématiser	21
+systématiserai		systématiser	16
+systématiserais		systématiser	18
+systématiserait		systématiser	26
+systématiseras		systématiser	7
+systématisèrent		systématiser	24
+systématiserez		systématiser	5
+systématiseriez		systématiser	4
+systématiserons		systématiser	10
+systématiseront		systématiser	15
+systématisés	Masculin pluriel de systématisé.
+systématisez		systématiser	30
+systématisiez		systématiser	13
+systématisions		systématiser	19
+systématisme	Méthode par laquelle on rassemble tous les faits d’une science autour d’une opinion vraie ou fausse.
+systématismes		systématisme	0
+systématisons		systématiser	27
+système	Ensemble d’éléments, de concepts reliés, organisés en une structure.
+systèmes		système	0
+systémique	Relatif à un système.
+systémiques		systémique	0
+systole	Mouvement par lequel les fibres musculaires du cœur se contractent pour chasser le sang dans les artères.
+systoles		systole	0
+systolique	Qui a rapport à la systole.
+systoliques		systolique	0
+systyle	Ordonnance d’architecture suivant laquelle l’entrecolonnement est de deux diamètres ou quatre modules.
+systyles		systyle	0
+syzygie	Situation de trois corps célestes ou plus en conjonction ou en opposition.
+syzygies		syzygie	0

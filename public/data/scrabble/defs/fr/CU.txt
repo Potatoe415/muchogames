@@ -1,0 +1,1203 @@
+cuadrilla	Équipe de toreros placés sous les ordres du matador et qui affrontent, à pied ou à cheval, le taureau.
+cuadrillas		cuadrilla	0
+Cuadros	Commune d’Espagne, située dans la province de León et la Communauté autonome de Castille-et-León.
+cuba		cuber	39
+cubable	Qui peut être cubé.
+cubables		cubable	0
+cubage	Action de cuber.
+cubages		cubage	0
+cubai		cuber	22
+cubaient		cuber	32
+cubain	Relatif à Cuba, à sa culture, à son peuple, etc.
+cubaine		cubain	23
+cubaines		cubain	1
+cubains		cubain	9
+cubais		cuber	29
+cubait		cuber	71
+cubâmes		cuber	3
+cubant		cuber	35
+cubas		cuber	12
+cubasse		cuber	81
+cubassent		cuber	17
+cubasses		cuber	8
+cubassiez		cuber	14
+cubassions		cuber	25
+cubât		cuber	20
+cubâtes		cuber	2
+cubature	Action de cuber.
+cubatures		cubature	0
+cube	Polyèdre limité par six carrés.
+cubèbe	Nom vulgaire de Piper cubeba, arbre des Indes, ses fruits séchés sont utilisées en cuisine comme épice et on en extrait une huile essentielle contenant de la c…
+cubèbes		cubèbe	0
+cubée		cuber	37
+cubées		cuber	36
+cubent		cuber	31
+cuber	Évaluer le nombre d’unités cubiques que renferme un volume.
+cubera		cuber	21
+cuberai		cuber	16
+cuberaient		cuber	28
+cuberais		cuber	18
+cuberait		cuber	26
+cuberas		cuber	7
+cuberdon	Friandise, bonbon de forme conique, de couleur violacée, d’environ 2,5 cm de haut.
+cuberdons		cuberdon	0
+cubèrent		cuber	24
+cuberez		cuber	5
+cuberiez		cuber	4
+cuberions		cuber	11
+cuberons		cuber	10
+cuberont		cuber	15
+cubes		cube	0
+cubez		cuber	30
+cubi	Appellation courante d’un cubiteneur.
+cubiez		cuber	13
+cubilot	Four à cuve cylindrique portant plusieurs tuyères sur les côtés pour y insuffler l’air nécessaire à la combustion et permettre la fusion rapide de la fonte.
+cubilots		cubilot	0
+cubions		cuber	19
+cubique	Relatif au cube, en forme de cube.
+cubiques		cubique	0
+cubis		cubi	0
+cubisme	Mouvement artistique qui utilise les formes géométriques de base (cube, prisme, cylindre, sphère, cône, etc.) comme moyen d'expression.
+cubismes		cubisme	0
+cubiste	Relatif au cubisme, qui appartient au cubisme.
+cubistes		cubiste	0
+cubitainer	Contenant parallélépipédique servant à transporter des liquides.
+cubitainers		cubitainer	0
+cubital	Qui concerne le cubitus.
+cubitale	Ellipse de nervule cubitale.
+cubitales		cubital	1
+cubitaux		cubital	9
+cubitière	Partie de l’armure à plates qui protège le coude
+cubitières		cubitière	0
+cubitus	Plus long des deux os de l’avant-bras, au côté du petit doigt, dont l’extrémité supérieure forme le coude.
+cuboïde	Un des sept os du tarse présents sur le bord externe du pied.
+cuboïdes		cuboïde	0
+cuboméduse	Cnidaire à l'apparence de méduse, de la classe des cubozoaires, ou méduses-boîtes, comprenant des espèces parmi les plus venimeuses connues.
+cuboméduses		cuboméduse	0
+cubons		cuber	27
+cuchaule	Pâtisserie originaire du canton de Fribourg, en Suisse.
+cuchaules		cuchaule	0
+cucu	Cul, derrière.
+cucul	Naïf, niais voire simplet.
+cuculidé	Tout oiseau de la famille des cuculidés, constituée des 32 genres et 146 espèces existants de coucous et de ses formes apparentées répandues sur tous les conti…
+cuculides	Variante désuète de cuculidés.
+cuculiforme	Tout oiseau de l’ordre des cuculiformes, qui comprend les 32 genres et 146 espèces de coucous, de coucals, de géocoucous et de formes apparentées existantes, e…
+cuculiformes	Ordre d’oiseaux néognathes arboricoles ou terrestres, zygodactyles, et constitué de la seule famille des cuculidés, qui renferme les 32 genres et 146 espèces c…
+cuculle	Vêtement ample avec capuchon, aujourd’hui appelé coule, porté par les moines anciens au-dessus de la tunique.
+cuculles		cuculle	0
+cuculs		cucul	0
+cucurbitacée	Plante herbacée dicotylédone caractérisée par des tiges couchées, plus ou moins grimpantes, par des fleurs gamopétales et pentamères à cinq étamines, et dont p…
+cucurbitacées		cucurbitacée	0
+cucurbitain	Variante de cucurbitin.
+cucurbitains		cucurbitain	9
+cucurbite	Partie inférieure de l’alambic, récipient d’étain, de cuivre ou de verre, dans lequel on met les mélanges que l’on veut distiller et au-dessus duquel on adapte…
+cucurbites		cucurbite	0
+cucurbitin	Qui ressemble au potiron, en parlant des baies de certaines plantes.
+cucurbitins		cucurbitin	9
+cucus		cucu	0
+cucuterie	Chose ridicule, niaise.
+cucuteries		cucuterie	0
+cueillage	Cueillette.
+cueillages		cueillage	0
+cueillaient		cueillir	93
+cueillais		cueillir	95
+cueillaison	Époque où l’on cueille les fruits.
+cueillaisons		cueillaison	0
+cueillait		cueillir	91
+cueillant		cueillir	43
+cueille	Action de cueillir.
+cueillent		cueillir	69
+cueillera		cueillir	44
+cueillerai		cueillir	50
+cueilleraient		cueillir	108
+cueillerais		cueillir	96
+cueillerait		cueillir	92
+cueilleras		cueillir	57
+cueillerez		cueillir	5
+cueilleriez		cueillir	99
+cueillerions		cueillir	101
+cueillerons		cueillir	10
+cueilleront		cueillir	54
+cueilles		cueille	0
+cueillette	Action de cueillir.
+cueillettes		cueillette	0
+cueilleur	Qui cueille.
+cueilleurs		cueilleur	0
+cueilleuse	Personne qui cueille des fruits, des fleurs, des champignons, etc.
+cueilleuses		cueilleuse	0
+cueillez		cueillir	70
+cueilli		cueillir	56
+cueillie	Langage du bâtiment : angle rentrant entre deux plans, par exemple entre un mur et le plafond.
+cueillies		cueillir	51
+cueilliez		cueillir	110
+cueillîmes		cueillir	68
+cueillions		cueillir	111
+cueillir	Détacher des fruits, des fleurs, des légumes de leurs branches ou de leurs tiges.
+cueillirent		cueillir	48
+cueillis		cueillir	53
+cueillisse		cueillir	6
+cueillissent		cueillir	78
+cueillisses		cueillir	8
+cueillissiez		cueillir	14
+cueillissions		cueillir	25
+cueillit		cueillir	39
+cueillîtes		cueillir	2
+cueilloir	Panier emmanché d’un long bâton muni d’une cisaille dans lequel tombent les fruits que l’on cueille.
+cueilloirs		cueilloir	0
+cueillons		cueillir	73
+cuesta	Forme du relief dissymétrique constituée d’un coté par un talus à profil concave en pente raide, et de l’autre, par un plateau doucement incliné en sens invers…
+cuestas		cuesta	0
+cueva	Cabaret qui présente des spectacles de flamencos.
+cuevas		cueva	0
+cufat	Variante orthographique de cuffat.
+cufats		cufat	0
+cuffat	Sorte de tonne, employée dans les puits de mines, pour monter et descendre le minerai et les mineurs.
+cuffats		cuffat	0
+cuicui	Pépiement.
+cuicuis		cuicui	0
+cuiller	Autre orthographe possible pour cuillère.
+cuillère	Ustensile de table formé d’un manche et d’un cuilleron dont on se sert ordinairement pour manger le potage et d’autres aliments liquides ou de peu de consistan…
+cuillerée	Ce que contient une cuillère.
+cuillerées		cuillerée	0
+cuillères		cuillère	0
+cuilleron	Partie creuse d’une cuillère.
+cuillerons		cuilleron	0
+cuillers		cuiller	0
+cuir	Peau épaisse de certains animaux.
+cuira		cuire	44
+cuirai		cuire	50
+cuiraient		cuire	97
+cuirais		cuire	96
+cuirait		cuire	92
+cuiras		cuire	57
+cuirassa		cuirasser	39
+cuirassai		cuirasser	22
+cuirassaient		cuirasser	75
+cuirassais		cuirasser	29
+cuirassait		cuirasser	71
+cuirassâmes		cuirasser	3
+cuirassant		cuirasser	35
+cuirassas		cuirasser	12
+cuirassasse		cuirasser	6
+cuirassassent		cuirasser	17
+cuirassasses		cuirasser	8
+cuirassassiez		cuirasser	14
+cuirassassions		cuirasser	25
+cuirassât		cuirasser	20
+cuirassâtes		cuirasser	2
+cuirasse	Arme défensive qui couvre la poitrine et quelquefois le dos.
+cuirassée		cuirassé	23
+cuirassées		cuirassé	1
+cuirassement	Action de revêtir d’une cuirasse une surface, et particulièrement les vaisseaux de guerre.
+cuirassements		cuirassement	0
+cuirassent		cuirasser	69
+cuirasser	Revêtir d’une cuirasse ou d’un revêtement métallique.
+cuirassera		cuirasser	21
+cuirasserai		cuirasser	16
+cuirasseraient		cuirasser	28
+cuirasserais		cuirasser	18
+cuirasserait		cuirasser	26
+cuirasseras		cuirasser	7
+cuirassèrent		cuirasser	24
+cuirasserez		cuirasser	5
+cuirasseriez		cuirasser	4
+cuirasserions		cuirasser	11
+cuirasserons		cuirasser	10
+cuirasseront		cuirasser	15
+cuirassés		cuirassé	9
+cuirassez		cuirasser	30
+cuirassier	Cavalier armé d’une cuirasse.
+cuirassiers		cuirassier	0
+cuirassiez		cuirasser	13
+cuirassions		cuirasser	19
+cuirassons		cuirasser	27
+cuire	Préparer les aliments par le moyen du feu, de la chaleur, pour les rendre propres à être mangés.
+cuirette	Matière textile synthétique imitant le cuir.
+cuirettes		cuirette	0
+cuirez		cuire	58
+cuiriez		cuire	104
+cuirions		cuire	105
+cuirons		cuire	61
+cuiront		cuire	54
+cuirs		cuir	0
+cuis		cuire	72
+cuisaient		cuire	93
+cuisais		cuire	95
+cuisait		cuire	91
+cuisant	Qui produit une douleur âpre et aiguë.
+cuisante		cuisant	23
+cuisantes		cuisant	1
+cuisants		cuisant	9
+cuise		cuire	85
+cuisent		cuire	41
+cuises		cuire	98
+cuiseur	Ustensile pour cuire.
+cuiseurs		cuiseur	0
+cuisez		cuire	70
+cuisiez		cuire	102
+cuisîmes		cuire	68
+cuisina		cuisiner	39
+cuisinai		cuisiner	22
+cuisinaient		cuisiner	75
+cuisinais		cuisiner	86
+cuisinait		cuisiner	71
+cuisinâmes		cuisiner	3
+cuisinant		cuisiner	43
+cuisinas		cuisiner	12
+cuisinasse		cuisiner	6
+cuisinassent		cuisiner	17
+cuisinasses		cuisiner	8
+cuisinassiez		cuisiner	14
+cuisinassions		cuisiner	25
+cuisinât		cuisiner	20
+cuisinâtes		cuisiner	2
+cuisine	Pièce où l’on prépare et fait cuire les aliments.
+cuisinée		cuisiné	23
+cuisinées		cuisiné	1
+cuisinent		cuisiner	31
+cuisiner	Préparer à manger.
+cuisinera		cuisiner	44
+cuisinerai		cuisiner	50
+cuisineraient		cuisiner	28
+cuisinerais		cuisiner	60
+cuisinerait		cuisiner	49
+cuisineras		cuisiner	57
+cuisinèrent		cuisiner	24
+cuisinerez		cuisiner	5
+cuisineriez		cuisiner	4
+cuisinerions		cuisiner	11
+cuisinerons		cuisiner	61
+cuisineront		cuisiner	15
+cuisines		cuisine	0
+cuisinette	Petite cuisine.
+cuisinettes		cuisinette	0
+cuisinez		cuisiner	70
+cuisinier	Celui qui prépare, qui cuit la nourriture.
+cuisinière	Celle qui cuisine, qui prépare, qui cuit la nourriture.
+cuisinières		cuisinière	0
+cuisiniers		cuisinier	0
+cuisiniez		cuisiner	100
+cuisinions		cuisiner	19
+cuisiniste	Concepteur et aménageur de cuisines.
+cuisinistes		cuisiniste	0
+cuisinons		cuisiner	73
+cuisions		cuire	103
+cuisirent		cuire	48
+cuisis		cuire	55
+cuisisse		cuire	81
+cuisissent		cuire	78
+cuisisses		cuire	87
+cuisissiez		cuire	88
+cuisissions		cuire	90
+cuisit		cuire	39
+cuisîtes		cuire	84
+cuisons		cuire	73
+cuissage	Dépucelage.
+cuissard	Culotte collante d’un cycliste.
+cuissarde	Botte qui monte jusqu’aux cuisses.
+cuissardes		cuissarde	0
+cuissards		cuissard	0
+cuisse	Partie du membre inférieur allant de la hanche au genou.
+cuisseau	Partie de la chair qui entoure le bassin d’un veau dépecé pour la boucherie.
+cuisseaux		cuisseau	0
+cuisses		cuisse	0
+cuissettes	Short de sport sans poche, sans braguette, parfois légèrement échancré et assez court.
+cuisson	Action de cuire.
+cuissons		cuisson	0
+cuissot	Cuisse de cerf, de chevreuil, de sanglier, etc.
+cuissots		cuissot	0
+cuistance	Durant la Première Guerre mondiale, lieu situé en arrière les tranchées où l’on prépare le repas des soldats du front.
+cuistances		cuistance	0
+cuistax	Vélocipède que l’on loue sur la côte belge ou dans d’autres lieux de villégiature, comportant plus de deux roues (tricycles, quadricycles), muni d’un nombre va…
+cuistot	Cuisinier.
+cuistots		cuistot	0
+cuistre	Personne pédante, vaniteuse et ridicule, souvent fière d’étaler son savoir mal assimilé devant des gens simples qu’elle croit moins éclairés qu’elle, parce qu’…
+cuistrerie	Propos, manières, théorie de cuistre.
+cuistreries		cuistrerie	0
+cuistres		cuistre	0
+cuit	Qui a été soumis à une température élevée dans le but de changer sa texture avant de le manger, en parlant d’un aliment.
+cuita		cuiter	39
+cuitai		cuiter	22
+cuitaient		cuiter	32
+cuitais		cuiter	29
+cuitait		cuiter	71
+cuitâmes		cuiter	3
+cuitant		cuiter	43
+cuitas		cuiter	12
+cuitasse		cuiter	6
+cuitassent		cuiter	17
+cuitasses		cuiter	8
+cuitassiez		cuiter	14
+cuitassions		cuiter	25
+cuitât		cuiter	20
+cuitâtes		cuiter	2
+cuite	Sorte de cuisson donnée à la porcelaine, aux briques, au plâtre, etc.
+cuitée		cuiter	45
+cuitées		cuiter	51
+cuitent		cuiter	31
+cuiter	S’enivrer.
+cuitera		cuiter	44
+cuiterai		cuiter	16
+cuiteraient		cuiter	28
+cuiterais		cuiter	18
+cuiterait		cuiter	26
+cuiteras		cuiter	7
+cuitèrent		cuiter	24
+cuiterez		cuiter	5
+cuiteriez		cuiter	4
+cuiterions		cuiter	11
+cuiterons		cuiter	10
+cuiteront		cuiter	15
+cuités		cuiter	53
+cuitez		cuiter	30
+cuitiez		cuiter	13
+cuitions		cuiter	19
+cuitons		cuiter	27
+cuits		cuit	9
+cuivra		cuivrer	39
+cuivrage	Action de cuivrer.
+cuivrages		cuivrage	0
+cuivrai		cuivrer	22
+cuivraient		cuivrer	32
+cuivrais		cuivrer	29
+cuivrait		cuivrer	71
+cuivrâmes		cuivrer	3
+cuivrant		cuivrer	35
+cuivras		cuivrer	12
+cuivrasse		cuivrer	6
+cuivrassent		cuivrer	17
+cuivrasses		cuivrer	8
+cuivrassiez		cuivrer	14
+cuivrassions		cuivrer	25
+cuivrât		cuivrer	20
+cuivrâtes		cuivrer	2
+cuivre	Élément chimique de symbole Cu et de numéro atomique 29.
+cuivrée	Fausse dorure faite avec des feuilles de cuivre ou d'alliage à base de cuivre.
+cuivrées		cuivrée	0
+cuivrent		cuivrer	31
+cuivrer	Revêtir d’une couche de cuivre.
+cuivrera		cuivrer	21
+cuivrerai		cuivrer	16
+cuivreraient		cuivrer	28
+cuivrerais		cuivrer	18
+cuivrerait		cuivrer	26
+cuivreras		cuivrer	7
+cuivrèrent		cuivrer	24
+cuivrerez		cuivrer	5
+cuivrerie	Fabrique d’objets en cuivre.
+cuivreries		cuivrerie	0
+cuivreriez		cuivrer	4
+cuivrerions		cuivrer	11
+cuivrerons		cuivrer	10
+cuivreront		cuivrer	15
+cuivrés		cuivré	9
+cuivreuse		cuivreux	23
+cuivreuses		cuivreux	1
+cuivreux	Qui comporte du cuivre.
+cuivrez		cuivrer	30
+cuivriez		cuivrer	13
+cuivrions		cuivrer	19
+cuivrique	Qui contient du cuivre.
+cuivriques		cuivrique	0
+cuivrons		cuivrer	27
+cul	Derrière d’un animal, d’un humain.
+cula		culer	33
+culai		culer	22
+culaient		culer	32
+culais		culer	29
+culait		culer	34
+culâmes		culer	3
+culant		culer	35
+culard	Animal culard.
+culards		culard	9
+culas		culer	12
+culasse	Partie de derrière d’une arme à feu, canon, fusil, revolver, etc.
+culassent		culasser	31
+culasser	Mettre la culasse d’une arme à feu.
+culasses		culasse	0
+culassiez		culasser	13
+culassions		culasser	19
+culât		culer	20
+culâtes		culer	2
+culbuta		culbuter	39
+culbutage	Action de culbuter ou de faire culbuter.
+culbutages		culbutage	0
+culbutai		culbuter	22
+culbutaient		culbuter	75
+culbutais		culbuter	29
+culbutait		culbuter	71
+culbutâmes		culbuter	3
+culbutant	Race de pigeon.
+culbutas		culbuter	12
+culbutasse		culbuter	6
+culbutassent		culbuter	17
+culbutasses		culbuter	8
+culbutassiez		culbuter	14
+culbutassions		culbuter	25
+culbutât		culbuter	20
+culbutâtes		culbuter	2
+culbute	Tour qu’on fait en mettant la tête en bas et les jambes en haut, pour retomber de l’autre côté.
+culbutée		culbuter	45
+culbutées		culbuter	51
+culbutent		culbuter	69
+culbuter	Faire une culbute.
+culbutera		culbuter	21
+culbuterai		culbuter	16
+culbuteraient		culbuter	28
+culbuterais		culbuter	60
+culbuterait		culbuter	26
+culbuteras		culbuter	7
+culbutèrent		culbuter	48
+culbuterez		culbuter	5
+culbuteriez		culbuter	4
+culbuterions		culbuter	11
+culbuterons		culbuter	10
+culbuteront		culbuter	15
+culbutés		culbuter	53
+culbuteur	Pièce de mécanique destinée à transmettre un mouvement en en changeant la direction et le sens.
+culbuteurs		culbuteur	0
+culbutez		culbuter	30
+culbutiez		culbuter	13
+culbutions		culbuter	19
+culbutons		culbuter	27
+cule		culer	72
+culée	Massif de maçonnerie qui soutient, dans leur poussée, les voûtes des dernières arches d’un pont.
+culées		culée	0
+culent		culer	31
+culer	Aller en arrière, ou reculer.
+culera		culer	21
+culerai		culer	16
+culeraient		culer	28
+culerais		culer	18
+culerait		culer	26
+culeras		culer	7
+culèrent		culer	24
+culerez		culer	5
+culeriez		culer	4
+culerions		culer	11
+culeron	Partie de la croupière qui porte la queue du cheval.
+culerons		culeron	0
+culeront		culer	15
+culés		culer	38
+culex	Moustique, cousin.
+culez		culer	30
+culicide	Nom d’une famille d’insectes ayant pour type le genre cousin.
+culicidés	Famille d'insectes de l'ordre des diptères et du sous-ordre des nématocères, les moustiques, caractérisée par des individus aux antennes longues et fines, des …
+culier	Qui se termine à l’anus.
+culière	Sangle de cuir au derrière d’un cheval pour maintenir le harnais.
+culières		culier	1
+culiez		culer	13
+culinaire	Qui a rapport à la cuisine.
+culinairement	À la façon d'un cuisinier.
+culinaires		culinaire	0
+culions		culer	19
+culmina		culminer	39
+culminai		culminer	22
+culminaient		culminer	32
+culminais		culminer	29
+culminait		culminer	71
+culminâmes		culminer	3
+culminant	Qui atteint sa plus grande hauteur.
+culminante		culminant	23
+culminantes		culminant	1
+culminants		culminant	9
+culminas		culminer	12
+culminasse		culminer	6
+culminassent		culminer	17
+culminasses		culminer	8
+culminassiez		culminer	14
+culminassions		culminer	25
+culminât		culminer	20
+culminâtes		culminer	2
+culmination	Moment du passage d’un astre par le méridien.
+culminations		culmination	0
+culmine		culminer	72
+culminent		culminer	69
+culminer	Atteindre, en parlant d’un astre, sa plus grande hauteur en passant au méridien.
+culminera		culminer	21
+culminerai		culminer	16
+culmineraient		culminer	28
+culminerais		culminer	18
+culminerait		culminer	26
+culmineras		culminer	7
+culminèrent		culminer	24
+culminerez		culminer	5
+culmineriez		culminer	4
+culminerions		culminer	11
+culminerons		culminer	10
+culmineront		culminer	15
+culminés		culminer	38
+culminez		culminer	30
+culminiez		culminer	13
+culminions		culminer	19
+culminons		culminer	27
+culons		culer	73
+culot	Ce qui est au bas, ce qui reste au fond d’une chose.
+culotage	Variante orthographique de culottage
+culotages		culotage	0
+culoter	Variante orthographique de culotter
+culots		culot	0
+culotta		culotter	33
+culottage	Action de culotter, en parlant d’une pipe, c’est à dire de provoquer la formation d’une couche protectrice et odorante dans le foyer.
+culottages		culottage	0
+culottai		culotter	22
+culottaient		culotter	32
+culottais		culotter	29
+culottait		culotter	34
+culottâmes		culotter	3
+culottant		culotter	35
+culottas		culotter	12
+culottasse		culotter	6
+culottassent		culotter	17
+culottasses		culotter	8
+culottassiez		culotter	14
+culottassions		culotter	25
+culottât		culotter	20
+culottâtes		culotter	2
+culotte	Pantalon court.
+culottée		culotté	23
+culottées		culotter	51
+culottent		culotter	31
+culotter	Vêtir d’une culotte.
+culottera		culotter	21
+culotterai		culotter	16
+culotteraient		culotter	28
+culotterais		culotter	18
+culotterait		culotter	26
+culotteras		culotter	7
+culottèrent		culotter	24
+culotterez		culotter	5
+culotteriez		culotter	4
+culotterions		culotter	11
+culotterons		culotter	10
+culotteront		culotter	15
+culottés		culotté	9
+culottez		culotter	30
+culottier	Personne qui fait, qui vend des culottes de peau, des gants, des guêtres, des pantalons, etc.
+culottière	Celle qui fait, qui vend des culottes de peau, des gants, des guêtres, etc.
+culottières		culottière	0
+culottiers		culottier	0
+culottiez		culotter	13
+culottions		culotter	19
+culottons		culotter	27
+culpabilisa		culpabiliser	33
+culpabilisai		culpabiliser	22
+culpabilisaient		culpabiliser	32
+culpabilisais		culpabiliser	139
+culpabilisait		culpabiliser	127
+culpabilisâmes		culpabiliser	3
+culpabilisant	Qui culpabilise.
+culpabilisante		culpabilisant	23
+culpabilisantes		culpabilisant	1
+culpabilisants		culpabilisant	0
+culpabilisas		culpabiliser	12
+culpabilisasse		culpabiliser	6
+culpabilisasses		culpabiliser	8
+culpabilisât		culpabiliser	20
+culpabilisâtes		culpabiliser	2
+culpabilisateur	Qui culpabilise, qui fait naitre un sentiment de culpabilité chez quelqu’un.
+culpabilisation	Action de culpabiliser ou résultat de cette action.
+culpabilise		culpabiliser	72
+culpabilisée		culpabiliser	45
+culpabilisées		culpabiliser	36
+culpabilisent		culpabiliser	69
+culpabiliser	Faire naître un sentiment de culpabilité chez quelqu’un.
+culpabilisera		culpabiliser	44
+culpabiliserai		culpabiliser	50
+culpabiliserais		culpabiliser	18
+culpabiliserait		culpabiliser	26
+culpabiliseras		culpabiliser	7
+culpabilisèrent		culpabiliser	24
+culpabiliserez		culpabiliser	5
+culpabiliseriez		culpabiliser	4
+culpabiliserons		culpabiliser	10
+culpabiliseront		culpabiliser	15
+culpabilises		culpabiliser	113
+culpabilisez		culpabiliser	70
+culpabilisiez		culpabiliser	100
+culpabilisions		culpabiliser	19
+culpabilisons		culpabiliser	135
+culpabilité	État de celui ou de celle qui est coupable ou réputé coupable d’un crime, d’un délit.
+culpabilités		culpabilité	0
+culs		cul	0
+culte	Qui a, ou a eu, un grand succès auprès d’un certain public et est devenu presque légendaire
+cultes		culte	0
+cultisme	Recherche de style, écriture précieuse, à la mode chez certains écrivains espagnols du XVIIᵉ siècle.
+cultismes		cultisme	0
+cultissime	Qui est extrêmement culte.
+cultissimes		cultissime	0
+cultiva		cultiver	39
+cultivable	Qui peut être cultivé.
+cultivables		cultivable	0
+cultivai		cultiver	55
+cultivaient		cultiver	75
+cultivais		cultiver	86
+cultivait		cultiver	71
+cultivâmes		cultiver	3
+cultivant		cultiver	35
+cultivar	Ensemble des individus d’une espèce de plante cultivée, qui résulte d’une sélection et qui peut être génétiquement reproduit à l’identique.
+cultivars		cultivar	0
+cultivas		cultiver	12
+cultivasse		cultiver	6
+cultivassent		cultiver	17
+cultivasses		cultiver	8
+cultivassiez		cultiver	14
+cultivassions		cultiver	25
+cultivât		cultiver	20
+cultivâtes		cultiver	2
+cultivateur	Celui qui cultive la terre ou qui exploite une terre, un domaine.
+cultivateurs		cultivateur	0
+cultivatrice	Celle qui cultive.
+cultivatrices		cultivateur	1
+cultivé	Travaillé pour rendre plus fertile et productif.
+cultivée	Femme cultivée.
+cultivées		cultivé	122
+cultivent		cultiver	69
+cultiver	Travailler une terre pour la rendre plus fertile et pour améliorer ses productions.
+cultivera		cultiver	44
+cultiverai		cultiver	50
+cultiveraient		cultiver	63
+cultiverais		cultiver	18
+cultiverait		cultiver	49
+cultiveras		cultiver	57
+cultivèrent		cultiver	48
+cultiverez		cultiver	5
+cultiveriez		cultiver	4
+cultiverions		cultiver	11
+cultiverons		cultiver	10
+cultiveront		cultiver	15
+cultivés		cultivé	176
+cultivez		cultiver	70
+cultiviez		cultiver	13
+cultivions		cultiver	94
+cultivons		cultiver	73
+cultuel	Qui a trait au culte.
+cultuelle	Féminin singulier de cultuel.
+cultuelles	Féminin pluriel de cultuel.
+cultuels	Masculin pluriel de cultuel.
+cultural	Qui est propre à la culture des terres et des sols, à l’agriculture.
+culturale		cultural	23
+culturales		cultural	1
+culturalisme	Doctrine qui souligne l'influence prépondérante de la culture sur la personnalité des individus.
+culturalismes		culturalisme	0
+culturaliste	Partisan du culturalisme.
+culturalistes		culturaliste	0
+culturaux		cultural	9
+culture	Action de cultiver la terre.
+culturel	Relatif à la culture.
+culturelle		culturel	23
+culturellement	Du point de vue culturel.
+culturelles		culturel	1
+culturels		culturel	9
+cultures		culture	0
+culturisme	Sport qui consiste à développer sa musculature.
+culturismes		culturisme	0
+culturiste	Sportif qui pratique le culturisme.
+culturistes		culturiste	0
+culturologie	Science sociale qui étudie systématiquement les cultures et les systèmes culturels.
+culturologies		culturologie	0
+cumbia	Genre musical et danse de Colombie, nés au XVIIᵉ siècle.
+cumbias		cumbia	0
+cumin	Nom usuel de Cuminum cyminum, plante herbacée annuelle de la famille des Apiaceae (Apiacées).
+cumins		cumin	0
+cumul	Action de cumuler une chose avec une autre.
+cumula		cumuler	33
+cumulable	Qui peut être cumulé.
+cumulables		cumulable	0
+cumulai		cumuler	22
+cumulaient		cumuler	75
+cumulais		cumuler	29
+cumulait		cumuler	71
+cumulâmes		cumuler	3
+cumulant	Celui qui cumule les mandats.
+cumulard	Celui qui cumule les emplois, fonctions, salaires, etc.
+cumularde	Celle qui cumule les emplois, fonctions, salaires, etc.
+cumulardes		cumularde	0
+cumulards		cumulard	0
+cumulas		cumuler	12
+cumulasse		cumuler	6
+cumulassent		cumuler	17
+cumulasses		cumuler	8
+cumulassiez		cumuler	14
+cumulassions		cumuler	25
+cumulât		cumuler	20
+cumulâtes		cumuler	2
+cumulatif	Qui cumule, qui fait double emploi.
+cumulatifs		cumulatif	9
+cumulative		cumulatif	23
+cumulativement	D’une manière cumulative.
+cumulatives		cumulatif	1
+cumule		cumuler	72
+cumulée		cumuler	37
+cumulées		cumuler	36
+cumulent		cumuler	31
+cumuler	Réunir en sa personne plusieurs choses différentes.
+cumulera		cumuler	44
+cumulerai		cumuler	16
+cumuleraient		cumuler	28
+cumulerais		cumuler	18
+cumulerait		cumuler	26
+cumuleras		cumuler	7
+cumulèrent		cumuler	24
+cumulerez		cumuler	5
+cumuleriez		cumuler	4
+cumulerions		cumuler	11
+cumulerons		cumuler	10
+cumuleront		cumuler	15
+cumulés		cumuler	53
+cumulet	Culbute, roulade.
+cumulets		cumulet	0
+cumulez		cumuler	70
+cumuliez		cumuler	100
+cumulions		cumuler	19
+cumulonimbus	Nuage dense et haut, donnant des orages.
+cumulons		cumuler	27
+cumuls		cumul	0
+cumulus	Amas de nuages dont la partie supérieure est arrondie et présente des reflets blancs, tandis que la partie inférieure est sombre.
+cunéiforme	Qui a la forme d’un coin.
+cunéiformes		cunéiforme	0
+cunette	Canal de fond d’une fortification.
+cunettes		cunette	0
+cunicole	Relatif à la cuniculture, l’élevage des lapins.
+cunicoles		cunicole	0
+cuniculiculture	Élevage de lapins.
+cuniculture	Variante de cuniculiculture.
+cunicultures		cuniculture	0
+cunnilinctus	Excitation buccale des organes génitaux féminins.
+cunnilingus	Excitation buccale des organes génitaux féminins.
+cupcake	Petit gâteau américain souvent très coloré en portion individuelle, qui ressemble à un muffin.
+cupcakes		cupcake	0
+cupessé		cupesser	56
+cupesser	Tomber, faire une chute légère, se renverser.
+cupessés		cupesser	53
+cupide	Qui aime exagérément l'argent.
+cupidement	D’une façon cupide.
+cupides		cupide	0
+cupidité	Recherche immodérée du gain, des richesses.
+cupidités		cupidité	0
+cupidon	Représentation de Cupidon, putto ailé armé d'un arc, chérubin.
+cupidons		cupidon	0
+cuprate	Composé chimique d’atomes de cuivre et d’oxygène, alliés d’autres éléments (de formule chimique générique XCuₘOₙ).
+cuprates		cuprate	0
+cupressacée	Tout arbre de la famille des cupressacées, qui comprend 29 genres totalisant 135 espèces caractérisées par leurs feuilles squameuses ou aciculaires persistante…
+cupressacées	Famille de conifères de l'ordre des pinales, comprenant 29 genres totalisant 135 espèces caractérisées par leurs feuilles squameuses ou aciculaires persistante…
+cuprifère	Qui renferme du cuivre.
+cuprifères		cuprifère	0
+cuprique	Qui a rapport au cuivre, qui contient du cuivre.
+cupriques		cuprique	1
+cuprite	Espèce minérale composée d’oxyde cuivreux de formule Cu₂O.
+cuprites		cuprite	0
+cupro	Textile de soie artificielle.
+cuproaluminium	Alliage de cuivre et d’aluminium.
+cuproaluminiums		cuproaluminium	0
+cuproammoniacal	Qui contient à la fois des sels de cuivre et de l'ammoniac.
+cuprolithique	Chalcolithique.
+cuprolithiques		cuprolithique	0
+cupronickel	Alliage métallique de cuivre et de nickel, ainsi que d’autres éléments minoritaires.
+cupronickels		cupronickel	0
+cuproplomb	Alliage de cuivre et de plomb.
+cuproplombs		cuproplomb	0
+cupros		cupro	0
+cupule	Godet qui enveloppe la base de certains fruits comme le gland chez les chênes.
+cupules		cupule	0
+cupulifère	Qui porte une cupule.
+cupulifères	Synonyme de fagacées.
+cura		curer	39
+curabilité	Qualité de ce qui est curable.
+curabilités		curabilité	0
+curable	Qui peut être guéri.
+curables		curable	0
+curaçao	Liqueur préparée avec de l’eau-de-vie, de l’écorce d’oranges amères (ou bigarade) et du sucre.
+curaçaos		curaçao	0
+curage	Action de curer ou résultat de cette action.
+curages		curage	0
+curai		curer	22
+curaient		curer	32
+curaillon	Synonyme de cureton.
+curaillons		curaillon	0
+curais		curer	29
+curait		curer	71
+curâmes		curer	3
+curant		curer	43
+curare	Nom donné à plusieurs substances extraites entre autres de certaines lianes d'Amazonie, notamment Chondodendron tomentosum et Strychnos toxifera, poison violen…
+curares		curare	0
+curarine	Principe extrait du curare.
+curarines		curarine	0
+curarisa		curariser	33
+curarisai		curariser	22
+curarisaient		curariser	32
+curarisais		curariser	29
+curarisait		curariser	34
+curarisâmes		curariser	3
+curarisant	Qui curarise.
+curarisante		curarisant	23
+curarisantes		curarisant	1
+curarisants		curarisant	9
+curarisas		curariser	12
+curarisasse		curariser	6
+curarisassent		curariser	17
+curarisasses		curariser	8
+curarisassiez		curariser	14
+curarisassions		curariser	25
+curarisât		curariser	20
+curarisâtes		curariser	2
+curarisation	Action de curariser.
+curarisations		curarisation	0
+curarisé		curariser	46
+curarisée		curariser	37
+curarisées		curariser	36
+curarisent		curariser	31
+curariser	Injecter du curare, un curarisant à.
+curarisera		curariser	21
+curariserai		curariser	16
+curariseraient		curariser	28
+curariserais		curariser	18
+curariserait		curariser	26
+curariseras		curariser	7
+curarisèrent		curariser	24
+curariserez		curariser	5
+curariseriez		curariser	4
+curariserions		curariser	11
+curariserons		curariser	10
+curariseront		curariser	15
+curarisés		curariser	38
+curarisez		curariser	30
+curarisiez		curariser	13
+curarisions		curariser	19
+curarisons		curariser	27
+curas		curer	12
+curasse		curer	6
+curassent		curer	17
+curasses		curer	8
+curassiez		curer	14
+curassions		curer	25
+curât		curer	62
+curatelle	Pouvoir et charge de curateur.
+curatelles		curatelle	0
+curâtes		curer	2
+curateur	Celui qui est établi par justice, soit pour veiller aux intérêts d’un mineur émancipé et l’assister dans certains actes, soit pour administrer les biens d’un m…
+curateurs		curateur	0
+curatif	Qui est propre à la cure, à la guérison d’une maladie.
+curatifs		curatif	9
+curation	Traitement d’une maladie, d’une plaie.
+curations		curation	0
+curative		curatif	23
+curatives		curatif	1
+curatrice	Celle qui est établie par justice, soit pour veiller aux intérêts d’un mineur émancipé et l’assister dans certains actes, soit pour administrer les biens d’un …
+curatrices		curatrice	0
+curculionide	Insecte de la famille des charançons, les Curculionidae.
+curculionides		curculionide	0
+curcuma	Plante herbacée rhizomateuse nommée Curcuma longa, vivace, de la famille des Zingibéraceae (Zingibéracées) originaire du Sud de l’Asie.
+curcumas		curcuma	0
+curcumine	Matière colorante jaune du curcuma.
+curcumines		curcumine	0
+cure	Soin, souci. — En ce sens, il est surtout usité dans l’expression : n’avoir cure.
+curée	Portion de la bête que l’on donne aux chiens après sa prise.
+curées		curée	132
+curent		curer	31
+curer	Débarrasser quelque chose de creux de la vase, des immondices, des ordures.
+curera		curer	21
+curerai		curer	16
+cureraient		curer	28
+curerais		curer	18
+curerait		curer	26
+cureras		curer	57
+curèrent		curer	24
+curerez		curer	5
+cureriez		curer	4
+curerions		curer	11
+curerons		curer	10
+cureront		curer	15
+cures		cure	0
+cureta		cureter	33
+curetage	Opération chirurgicale par laquelle on nettoie certains organes intérieurs, surtout chez les femmes.
+curetages		curetage	0
+curetai		cureter	22
+curetaient		cureter	32
+curetais		cureter	29
+curetait		cureter	34
+curetâmes		cureter	3
+curetant		cureter	35
+curetas		cureter	12
+curetasse		cureter	6
+curetassent		cureter	17
+curetasses		cureter	8
+curetassiez		cureter	14
+curetassions		cureter	25
+curetât		cureter	20
+curetâtes		cureter	2
+cureté		cureter	46
+curetée		cureter	37
+curetées		cureter	36
+curètent		cureter	31
+cureter	Soumettre à un curetage.
+curètera		cureter	21
+curèterai		cureter	16
+curèteraient		cureter	28
+curèterais		cureter	18
+curèterait		cureter	26
+curèteras		cureter	7
+curetèrent		cureter	24
+curèterez		cureter	5
+curèteriez		cureter	4
+curèterions		cureter	11
+curèterons		cureter	10
+curèteront		cureter	15
+curetés		cureter	38
+curetez		cureter	30
+curetiez		cureter	13
+curetions		cureter	19
+cureton	Prêtre, curé.
+curetons		cureton	0
+curettage	Variante orthographique de curetage.
+curettages		curettage	0
+curette	Nom de divers outils servant à creuser, à gratter ou à nettoyer.
+curettent		cureter	31
+curettera		cureter	21
+curetterai		cureter	16
+curetteraient		cureter	28
+curetterais		cureter	18
+curetterait		cureter	26
+curetteras		cureter	7
+curetterez		cureter	5
+curetteriez		cureter	4
+curetterions		cureter	11
+curetterons		cureter	10
+curetteront		cureter	15
+curettes		curette	0
+cureur	Celui qui fait un curage.
+cureurs		cureur	0
+cureuse	Celle qui fait un curage.
+cureuses		cureuse	0
+curez		curer	30
+curial	Qui concerne une cure ou une fonction de curé.
+curiale	Membre de la classe appelée aux honneurs et aux charges des cités sous l’Empire.
+curiales		curial	1
+curiate	Relatif aux curies.
+curiates		curiate	0
+curiaux		curial	9
+curide	Catégorie d’éléments chimiques radioactifs incluant le curium et les éléments de numéro atomique supérieur.
+curides		curide	0
+curie	Subdivision de la tribu chez les Romains.
+curies		curie	0
+curiethérapie	Opération consistant en l’implantation, au cœur ou au voisinage d’une tumeur, d’éléments radioactifs tumoricides.
+curiethérapies		curiethérapie	0
+curieuse	Femme qui est curieuse.
+curieusement	Avec curiosité, avec désir de voir et de savoir.
+curieuses		curieux	1
+curieux	Qui a le désir d’apprendre, de voir des choses nouvelles, intéressantes, rares, etc.
+curiez		curer	13
+curion	Magistrat romain en charge d’une curie.
+curions		curion	0
+curiosa	Œuvres ou objets curieux, curiosités.
+curiosité	Passion, désir, empressement de voir, d’apprendre des choses nouvelles, intéressantes, rares, etc.
+curiosités		curiosité	0
+curiste	Personne qui fait une cure thermale.
+curistes		curiste	0
+curium	Élément chimique transuranien, de numéro atomique 96 et de symbole Cm appartenant à la série chimique des actinides.
+curiums		curium	0
+curleur	Joueur de curling.
+curleurs		curleur	0
+curleuse	Joueuse de curling.
+curleuses		curleuse	0
+curling	Sport collectif consistant à faire glisser sur la glace un palet vers une cible.
+curlings		curling	0
+curon	Bâton pour nettoyer la charrue.
+curons		curon	0
+curopalate	Dignitaire byzantin qui était à l’origine chargé de la défense du palais.
+curopalates		curopalate	0
+curriculaire	Relatif au curriculum (cursus scolaire), à l’ensemble des pratiques éducatives.
+curriculaires		curriculaire	0
+curriculum	Curriculum vitæ.
+curriculums		curriculum	0
+curry	Cari, mélange d’épices réduites en poudre, très répandu dans la cuisine indienne, comprenant notamment du curcuma qui donne la couleur orangée.
+currys		curry	0
+curseur	Barre de réglage de divers instruments (compas, etc.).
+curseurs		curseur	0
+cursif	Tracé à main courante, pour les usages ordinaires, en parlant d’une écriture.
+cursifs	Masculin pluriel de cursif.
+cursive	Écriture cursive, écriture liée.
+cursivement	D’une manière cursive.
+cursives		cursive	0
+cursus	Cycle éducatif, échelonnement graduel des matières enseignées et des diplômes.
+curule	Qualifiait une chaise d’ivoire qui était à l’usage de certains magistrats romains.
+curules		curule	0
+curure	Produit du curage des étangs, des mares, des puits, composé de substances terreuses et de détritus organiques dans un état variable de décomposition.
+curures		curure	0
+curviligne	Qui est formé par des lignes courbes.
+curvilignes		curviligne	0
+curvimètre	Petit instrument portatif qui sert à donner la longueur métrique d’une ligne tracée sur un plan, sur des cartes.
+curvimètres		curvimètre	0
+cuscute	Plante dicotylédone holoparasite sans chlorophylle, et sans feuilles, à tiges très déliées jaunâtres ou rougeâtres, grimpantes, avec suçoirs, à petites fleurs …
+cuscutes		cuscute	0
+cuspide	Crête présente sur la partie supérieure de la dentine, et constituant ainsi l’interface entre la dentine et l’émail des molaires et prémolaires.
+cuspidée		cuspidé	23
+cuspidées		cuspidé	1
+cuspides	Pluriel de cuspide.
+cussonné	Rongé par les cussons (charançons), vermoulu, en parlant de bois.
+cussonnée		cussonné	23
+cussonnées		cussonné	1
+cussonnés		cussonné	9
+custode	Moine inspecteur dans certains ordres religieux.
+custodes		custode	0
+custom	Véhicule personnalisé par l’ajout d’accessoires.
+customisa		customiser	33
+customisai		customiser	22
+customisaient		customiser	32
+customisais		customiser	29
+customisait		customiser	34
+customisâmes		customiser	3
+customisant		customiser	35
+customisas		customiser	12
+customisasse		customiser	6
+customisassent		customiser	17
+customisasses		customiser	8
+customisassiez		customiser	14
+customisassions		customiser	25
+customisât		customiser	20
+customisâtes		customiser	2
+customisation	Action de customiser.
+customisations		customisation	0
+customisé		customiser	56
+customisée		customiser	37
+customisées		customiser	36
+customisent		customiser	31
+customiser	Personnaliser (un objet, un logiciel,etc.) à son goût personnel (par exemple en y ajoutant des accessoires).
+customisera		customiser	21
+customiserai		customiser	16
+customiseraient		customiser	28
+customiserais		customiser	18
+customiserait		customiser	26
+customiseras		customiser	7
+customisèrent		customiser	24
+customiserez		customiser	5
+customiseriez		customiser	4
+customiserions		customiser	11
+customiserons		customiser	10
+customiseront		customiser	15
+customisés		customiser	38
+customisez		customiser	30
+customisiez		customiser	13
+customisions		customiser	19
+customisons		customiser	27
+customs		custom	0
+cut	Pointage permettant de se qualifier.
+cutané	Relatif à la peau.
+cutanée		cutané	23
+cutanées		cutané	1
+cutanés		cutané	9
+cuti	Cuti-réaction.
+cuticulaire	Qui appartient à la cuticule.
+cuticulaires		cuticulaire	0
+cuticule	Petite peau très mince, pellicule, épiderme.
+cuticules		cuticule	0
+cutine	Polymère d'acide gras déposé dans les couches superficielles des plantes jeunes, provenant de la transformation de la membrane cellulosique des cellules et con…
+cutines		cutine	0
+cutiréaction	Réaction cutanée au test de dépistage de la tuberculose.
+cutiréactions		cutiréaction	0
+cutis		cuti	0
+cuts		cut	0
+cutter	Instrument muni d’une lame fixe, rétractable ou pliante, très tranchante.
+cutters		cutter	0
+cutteur	Variante orthographique de cutter.
+cutteurs		cutteur	0
+cuva		cuver	33
+cuvage	Temps pendant lequel la vendange cuve.
+cuvages		cuvage	0
+cuvai		cuver	22
+cuvaient		cuver	75
+cuvais		cuver	29
+cuvaison	Action de cuver.
+cuvaisons		cuvaison	0
+cuvait		cuver	71
+cuvâmes		cuver	3
+cuvant		cuver	43
+cuvas		cuver	12
+cuvasse		cuver	6
+cuvassent		cuver	17
+cuvasses		cuver	8
+cuvassiez		cuver	14
+cuvassions		cuver	25
+cuvât		cuver	20
+cuvâtes		cuver	2
+cuve	Grand récipient de bois, de métal ou de maçonnerie dont on se sert ordinairement pour fouler la vendange ou pour y laisser fermenter le vin nouveau avec la gra…
+cuveau	Petite cuve.
+cuveaux		cuveau	0
+cuvée	Quantité de vin qui se fait à la fois dans une cuve.
+cuvées		cuvée	0
+cuvela		cuveler	33
+cuvelage	Opération par laquelle on revêt de planches et de solives, ou de pièces métalliques l’intérieur des puits qui descendent dans les mines, pour empêcher l’éboule…
+cuvelages		cuvelage	0
+cuvelai		cuveler	22
+cuvelaient		cuveler	32
+cuvelais		cuveler	29
+cuvelait		cuveler	34
+cuvelâmes		cuveler	3
+cuvelant		cuveler	35
+cuvelas		cuveler	12
+cuvelasse		cuveler	6
+cuvelassent		cuveler	17
+cuvelasses		cuveler	8
+cuvelassiez		cuveler	14
+cuvelassions		cuveler	25
+cuvelât		cuveler	20
+cuvelâtes		cuveler	2
+cuvelé		cuveler	56
+cuvèlent		cuveler	31
+cuveler	Revêtir les parois d'un puits de mine de planches, de solives, afin d'empêcher les éboulements et de résister à la pression de l'eau.
+cuvèlera		cuveler	21
+cuvèlerai		cuveler	16
+cuvèleraient		cuveler	28
+cuvèlerais		cuveler	18
+cuvèlerait		cuveler	26
+cuvèleras		cuveler	7
+cuvelèrent		cuveler	24
+cuvèlerez		cuveler	5
+cuvèleriez		cuveler	4
+cuvèlerions		cuveler	11
+cuvèlerons		cuveler	10
+cuvèleront		cuveler	15
+cuvèles		cuveler	66
+cuvelez		cuveler	30
+cuveliez		cuveler	13
+cuvelions		cuveler	19
+cuvelle	Petite cuve.
+cuvellent		cuveler	31
+cuvellera		cuveler	21
+cuvellerai		cuveler	16
+cuvelleraient		cuveler	28
+cuvellerais		cuveler	18
+cuvellerait		cuveler	26
+cuvelleras		cuveler	7
+cuvellerez		cuveler	5
+cuvelleriez		cuveler	4
+cuvellerions		cuveler	11
+cuvellerons		cuveler	10
+cuvelleront		cuveler	15
+cuvelles		cuvelle	0
+cuvelons		cuveler	27
+cuvent		cuver	69
+cuver	Demeurer dans la cuve en parlant du vin nouveau qu’on y laisse avec la rafle durant quelques jours, pour qu’il se fasse, pour qu’il fermente.
+cuvera		cuver	44
+cuverai		cuver	16
+cuveraient		cuver	28
+cuverais		cuver	18
+cuverait		cuver	26
+cuveras		cuver	7
+cuvèrent		cuver	24
+cuverez		cuver	58
+cuverie	Lieu où se trouvent les cuves de vinification.
+cuveries		cuverie	0
+cuveriez		cuver	4
+cuverions		cuver	11
+cuverons		cuver	10
+cuveront		cuver	15
+cuves		cuve	0
+cuvette	Récipient large et peu profond dont on se sert pour se laver, ou destiné à des usages domestiques.
+cuvettes		cuvette	0
+cuvez		cuver	30
+cuvier	Cuve où l’on fait la lessive, où l’on prend son bain.
+cuviers		cuvier	0
+cuviez		cuver	13
+cuvions		cuver	19
+cuvons		cuver	27

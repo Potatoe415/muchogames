@@ -1,7 +1,10 @@
-// Short definitions from Wiktionary (fr / en / es editions, CORS API, no
-// key). Board words have no accents, so the page is found with the
+// Short definitions from Wiktionary. French: our own copy first
+// (/data/scrabble/defs/fr/, built by scripts/scrabble_defs.mjs), the live
+// API only for words missing there. Live (fr / en / es editions, CORS API,
+// no key): board words have no accents, so the page is found with the
 // accent-insensitive search; an inflected form ("pluriel de maison") is
 // followed to its base word once. Wiktionary text is shown as plain text.
+const OFFLINE = new Set(["fr"]);
 const HOSTS = {
   fr: "fr.wiktionary.org",
   en: "en.wiktionary.org",
@@ -17,11 +20,14 @@ const INFLECTION =
   /^(plural|pluriel|forma|féminin|feminine|masculin|first|second|third|première|deuxième|troisième|primera|segunda|tercera|participe|participio|past|present|simple past|comparative|superlative|alternative|variante?|grafía|obsolete|ancienne orthographe)\b/i;
 const MAX_LENGTH = 160;
 const cache = new Map();
+const files = new Map();
 
-// "Été" -> "ETE", keeps Ñ (its own tile).
+// "Été" -> "ETE", "cœur" -> "COEUR", keeps Ñ (its own tile).
 export const fold = (text) =>
   text
     .toUpperCase()
+    .replace(/Œ/g, "OE")
+    .replace(/Æ/g, "AE")
     .normalize("NFD")
     .replace(/N\u0303/g, "Ñ")
     .replace(/\p{M}/gu, "");
@@ -92,12 +98,15 @@ function firstDefinition(lines, lang, word) {
 }
 
 // Drops leading "(Domain)" labels and "[notes]", keeps the first sentence.
-function tidy(text) {
+export function tidy(text) {
   const plain = text
     .replace(/^(\([^)]*\)\s*)+/, "")
     .replace(/\s*\[[^\]]*\]/g, "")
     .trim();
-  const first = plain.match(/^.{15,}?[.;](?=\s)/)?.[0] || plain;
+  const first = (plain.match(/^.{15,}?[.;](?=\s)/)?.[0] || plain).replace(
+    /\s*;$/,
+    "."
+  );
   return first.length > MAX_LENGTH
     ? `${first.slice(0, MAX_LENGTH - 1)}…`
     : first;
@@ -134,12 +143,72 @@ async function lookUp(lang, word) {
   return null;
 }
 
+// File format: see scripts/scrabble_defs.mjs.
+async function fetchLines(lang, name) {
+  const url = new URL(
+    `../../data/scrabble/defs/${lang}/${name}.txt`,
+    import.meta.url
+  );
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`definitions ${response.status}`);
+  return (await response.text()).split("\n");
+}
+
+// Each file fetched once per page; a failed fetch can retry.
+function once(key, load) {
+  if (!files.has(key)) {
+    const promise = load();
+    promise.catch(() => files.delete(key));
+    files.set(key, promise);
+  }
+  return files.get(key);
+}
+
+const formTexts = (lang) =>
+  once(`${lang}:forms`, () => fetchLines(lang, "forms"));
+
+async function fetchShard(lang, prefix) {
+  const lines = await fetchLines(lang, prefix);
+  const forms = lines.some((line) => line.includes("\t\t"))
+    ? await formTexts(lang)
+    : [];
+  const entries = new Map();
+  for (const line of lines) {
+    const [title, text, base = "", form] = line.split("\t");
+    const shown = form ? forms[Number(form)]?.replace("~", base) : text;
+    if (shown) entries.set(fold(title), { title, text: shown, base });
+  }
+  return entries;
+}
+
+const shard = (lang, word) =>
+  once(`${lang}:${word.slice(0, 2)}`, () => fetchShard(lang, word.slice(0, 2)));
+
+async function lookUpOffline(lang, word) {
+  const found = (await shard(lang, word)).get(word);
+  if (!found) return null;
+  const baseWord = fold(found.base);
+  const base = baseWord && (await shard(lang, baseWord)).get(baseWord);
+  return {
+    title: found.title,
+    text: found.text,
+    base: base ? found.base : "",
+    baseText: base?.text || ""
+  };
+}
+
+async function lookUpAny(lang, word) {
+  const offline =
+    OFFLINE.has(lang) && (await lookUpOffline(lang, word).catch(() => null));
+  return offline || lookUp(lang, word);
+}
+
 // -> Promise<{ word, lang, title, text, base, baseText, url } | { word, lang, missing: true }>
 // Rejects when Wiktionary cannot be reached.
 export function define(word, lang) {
   const key = `${lang}:${word}`;
   if (!cache.has(key)) {
-    const promise = lookUp(lang, word).then((entry) => {
+    const promise = lookUpAny(lang, word).then((entry) => {
       const title = entry?.title || word.toLowerCase();
       const url = `https://${HOSTS[lang]}/wiki/${encodeURIComponent(title)}`;
       return entry

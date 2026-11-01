@@ -1,0 +1,24 @@
+bye	Au revoir, salut, à plus.
+byline	Poème épique russe.
+bylines		byline	0
+byronien	Qualifie le style ou de l’école du poète anglais lord Byron, qui se caractérisent surtout par une haute poésie et une sombre imagination.
+byronienne		byronien	23
+byroniennes		byronien	1
+byroniens		byronien	9
+byssinose	Pneumoconiose causée par l’exposition à la poussière de coton, ou d’autres fibres textiles (lin, chanvre, etc.) dans des environnements de travail mal ventilés.
+byssinoses		byssinose	0
+byssus	Batiste, lin très fin et luxueux.
+byte	Multiplet, séquence de bits successifs, généralement au nombre de huit, traités comme un tout sur un ordinateur, généralement pour coder tout ou partie d’un ca…
+bytes		byte	0
+byzantin	Relatif à Byzance.
+byzantine		byzantin	23
+byzantines		byzantin	1
+byzantinisme	Disposition à discuter avec une subtilité byzantine.
+byzantinismes		byzantinisme	0
+byzantiniste	Spécialiste de Byzance.
+byzantinistes		byzantiniste	0
+byzantinologie	Étude de la civilisation byzantine.
+byzantinologies		byzantinologie	0
+byzantinologue	Spécialiste de Byzance.
+byzantinologues		byzantinologue	0
+byzantins		byzantin	9

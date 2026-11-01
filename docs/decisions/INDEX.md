@@ -62,6 +62,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0054 | 2026-10-29 | Leaving never loses the match: exact resume, quit is not an end, online seat kept (Space Cadet exempt) | Accepted |
 | 0055 | 2026-10-31 | Daily play allowance is 20 coins (supersedes the "10 per day" in 0046) | Accepted |
 | 0056 | 2026-11-01 | Each card game lets the player pick its card back (per game, per device) | Accepted |
+| 0057 | 2026-11-01 | Scrabble French definitions ship with the game (Wiktionary extract, CC BY-SA), live lookup only for missing words | Accepted |
 
 ## When to log a decision
 Any of:

@@ -1,0 +1,49 @@
+widget	Élément de base d’une interface graphique comme un bouton par exemple.
+widgets		widget	0
+widia	Alliage très dur à base de carbure de tungstène et de métaux rares qui sert à fabriquer des outils coupants et remplace le diamant dans certaines utilisations.
+widias		widia	0
+wienerli	Saucisse allongée, à chair rose, dont le diamètre est inférieur à celui du schüblig et comparable à la saucisse de Francfort.
+wifi	Variante de Wi-Fi.
+wifis		wifi	0
+wigwam	Type d’habitation traditionnelle construite par les Amérindiens semi-nomades d’Amérique du Nord.
+wigwams		wigwam	0
+wiki	Site web dynamique dont les pages peuvent être modifiées par tout visiteur.
+wikis		wiki	0
+wilaya	Division administrative qui existe dans plusieurs pays africains et asiatiques.
+wilayas		wilaya	0
+wildien	Relatif à l’écrivain irlandais Oscar Wilde.
+wildienne		wildien	23
+wildiennes		wildien	1
+wildiens		wildien	9
+willaya	Autre orthographe de wilaya.
+willayas		willaya	0
+williamine	Eau-de-vie à base de poire Williams, produite dans le Valais.
+williamines		williamine	0
+williams	Variété de poire.
+WIMAX	Standard de communication sans fil.
+winch	Équipement fixe placé sur le pont d’un voilier qui permet de démultiplier la traction exercée par l’équipage sur les cordages (écoute, drisse, bras de spinnake…
+winches		winch	0
+winchester	Carabine américaine, à répétition, de la fin du XIXᵉ siècle.
+winchesters		winchester	0
+wincheur	Matelot préposé à la manœuvre d’un ou plusieurs winch(s)
+wincheurs		wincheur	0
+winchs		winch	0
+wingsuit	Combinaison de saut particulière augmentant la surface de portance et utilisée dans des sports extrêmes tels le parachutisme.
+wingsuits		wingsuit	0
+winnipégois	Relatif à Winnipeg.
+winnipégoise		winnipégois	23
+winnipégoises		winnipégois	1
+winstub	Café ou taverne avec nourriture rapide, en Alsace et en Suisse alémaniques.
+winstubs		winstub	0
+wintergreen	Huile aromatique tirée de la gaulthérie (Gaultheria procumbens).
+wishbone	Espar particulier qui permet de tendre une voile à la manière d'une bôme.
+wisigoth	Relatif aux Wisigoths.
+wisigothe		wisigoth	23
+wisigothes		wisigoth	1
+wisigothique	Relatif aux Wisigoths.
+wisigothiques		wisigothique	0
+wisigoths		wisigoth	9
+wiski	Cabriolet hippomobile, élevé et léger.
+witloof	Légume de couleur blanche obtenu d’une variété de chicorée.
+witloofs		witloof	0
+witz	Blague, plaisanterie, bon mot.

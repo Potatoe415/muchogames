@@ -1,0 +1,277 @@
+lycanthrope	Être humain ayant la capacité de se transformer en loup, en particulier pendant les nuits de pleine lune.
+lycanthropes		lycanthrope	0
+lycanthropie	Caractère d’un être mi-humain, mi-loup.
+lycanthropies		lycanthropie	0
+lycaon	Mammifère carnassier d’Afrique, de la famille des Canidés, au pelage fauve tacheté de noir.
+lycaons		lycaon	0
+lycée	Établissement public ou privé d’enseignement du second cycle du second degré en France.
+lycéen	De lycée.
+lycéenne	Élève fille d’un lycée.
+lycéennes		lycéenne	0
+lycéens		lycéen	9
+lycées		lycée	0
+lycène	Petit papillon dont le mâle est bleu, et la femelle brune, de la famille des lycénidés.
+lycènes		lycène	0
+lycénidé	Lépidoptère de la famille des Lycénidés, comprenant des papillons rhopalocères, petits, aux ailes souvent de couleurs brillantes, à fort dimorphisme sexuel, au…
+lycénidés		lycénidé	0
+lychee	Variante orthographique de litchi.
+lychees		lychee	0
+lychnide	Genre de plantes de la famille des caryophyllées, dont plusieurs espèces sont cultivées dans les jardins.
+lychnides		lychnide	0
+lychnis	Genre d'angiospermes dicotylédones de la famille des Caryophyllacées.
+lycien	Relatif à la Lycie, aux Lyciens.
+lycienne		lycien	23
+lyciennes	Pluriel de lycienne.
+lyciens		lycien	9
+lyciet	Arbrisseau épineux et toxique de la famille des Solanacées (genre Lycium).
+lyciets		lyciet	0
+lycope	Plante herbacée vivace de la famille des lamiacées.
+lycopène	Antioxydant, tétraterpène de la famille des caroténoïdes, et carotènes.
+lycopènes		lycopène	0
+lycoperdon	Un des genres de champignons qui constituent les vesses de loup.
+lycoperdons		lycoperdon	0
+lycopes		lycope	0
+lycophyte	Plante appartenant à l'embranchement de plante Lycopodiophyta.
+lycophytes		lycophyte	0
+lycopode	Plante cryptogame vasculaire vivace des tourbières, appartenant à un ordre (Lycopodiales) voisin des mousses.
+lycopodes		lycopode	0
+lycopodiacées	Famille de plantes acotylédones formant autrefois une section des mousses.
+lycose	Araignée commune, qui ne tisse pas de toile, mais chasse ses proies à l’affût.
+lycoses		lycose	0
+lycra	Tissu en élasthanne.
+lycras		lycra	0
+lyddite	Nom commercial de l’acide picrique, un explosif.
+lyddites		lyddite	0
+lydien	Relatif à la Lydie, ses habitants et leur culture.
+lydienne	Jaspe noir ou quartz lydien employé comme pierre de touche.
+lydiennes		lydienne	0
+lydiens		lydien	9
+lymnée	Variante de limnée.
+lymnées		lymnée	0
+lymphangiome	Dilatation et prolifération sous cutanée des vaisseaux lymphatiques.
+lymphangiomes		lymphangiome	0
+lymphangite	Inflammation de certains vaisseaux lymphatiques.
+lymphangites		lymphangite	0
+lymphatique	Qui a rapport à la lymphe, où domine la lymphe.
+lymphatiques		lymphatique	0
+lymphatisme	Tempérament lymphatique.
+lymphatismes		lymphatisme	0
+lymphe	Humeur transparente qui circule dans des vaisseaux qui lui sont propres et à laquelle on a longtemps attribué la cause de plusieurs maladies.
+lymphes		lymphe	0
+lymphoblaste	Cellule souche des lymphocytes.
+lymphoblastes		lymphoblaste	0
+lymphoblastique	Relatif au lymphoblaste.
+lymphocytaire	Qui est en rapport avec les lymphocytes.
+lymphocytaires		lymphocytaire	0
+lymphocyte	Cellule sanguine de la famille des leucocytes, cellule immunitaire spécifique (anticorps), impliquée dans les immunités humorale et cellulaire.
+lymphocytes		lymphocyte	0
+lymphocytose	Anomalie de l’hémogramme, caractérisée par un nombre trop élevé de lymphocytes.
+lymphocytoses		lymphocytose	0
+lymphœdème	Œdème causé par une obstruction des vaisseaux lymphatiques, d’origine congénitale ou acquise.
+lymphœdèmes		lymphœdème	0
+lymphographie	Examen de la lymphe par radiographie obtenue en opacifiant les vaisseaux lymphatiques et les ganglions.
+lymphographies		lymphographie	0
+lymphoïde	Relatif à la lymphe, aux lymphocytes, aux ganglions lymphatiques ou d'une manière générale au système lymphatique.
+lymphoïdes		lymphoïde	0
+lymphome	Tumeur composée de tissu adénoïde typique, c'est-à-dire tumeur d’un tissu ou d’un organe lymphoïde.
+lymphomes		lymphome	0
+lymphopénie	État clinique d’un individu présentant un nombre de lymphocytes (globules blancs) inférieur à la normale, et qui indique une faible capacité de l’organisme à s…
+lymphopénies		lymphopénie	0
+lymphosarcome	Cancer du système lymphatique s'attaquant aux lymphocytes.
+lymphosarcomes		lymphosarcome	0
+lyncha		lyncher	33
+lynchage	Action de lyncher.
+lynchages		lynchage	0
+lynchai		lyncher	22
+lynchaient		lyncher	32
+lynchais		lyncher	29
+lynchait		lyncher	40
+lynchâmes		lyncher	3
+lynchant		lyncher	35
+lynchas		lyncher	12
+lynchasse		lyncher	6
+lynchassent		lyncher	17
+lynchasses		lyncher	8
+lynchassiez		lyncher	14
+lynchassions		lyncher	25
+lynchât		lyncher	20
+lynchâtes		lyncher	2
+lynché		lyncher	56
+lynchée		lyncher	45
+lynchées		lyncher	36
+lynchent		lyncher	117
+lyncher	Exécuter sans jugement (d’après ce que les Américains du Nord appellent la loi de Lynch, la loi du talion).
+lynchera		lyncher	21
+lyncherai		lyncher	16
+lyncheraient		lyncher	28
+lyncherais		lyncher	18
+lyncherait		lyncher	26
+lyncheras		lyncher	7
+lynchèrent		lyncher	24
+lyncherez		lyncher	5
+lyncheriez		lyncher	4
+lyncherions		lyncher	11
+lyncherons		lyncher	10
+lyncheront		lyncher	15
+lynchés		lyncher	53
+lyncheur	Qui participe ou pousse à un lynchage, concerne le lynchage.
+lyncheurs		lyncheur	0
+lyncheuse	Celle qui participe à un lynchage, une exécution sommaire commise par une foule.
+lyncheuses		lyncheuse	0
+lynchez		lyncher	47
+lynchiez		lyncher	67
+lynchions		lyncher	19
+lynchons		lyncher	59
+lynx	Une des espèces de félins sauvages ressemblant à un gros chat, dont la face est ornée de favoris et d’oreilles triangulaires surmontées d’une touffe de poil, e…
+lyocell	Fibre artificielle produite à partir de pulpe de bois et utilisée par l’industrie textile.
+lyonnais	Qui concerne Lyon et ses habitants.
+lyonnaise	Race de poules, originaires de France (Lyonnais), de taille moyenne, à plumes frisées noires.
+lyonnaises		lyonnais	1
+lyophile	Qui présente une affinité avec un solvant donné.
+lyophiles		lyophobe	0
+lyophilisa		lyophiliser	33
+lyophilisai		lyophiliser	22
+lyophilisaient		lyophiliser	32
+lyophilisais		lyophiliser	29
+lyophilisait		lyophiliser	34
+lyophilisâmes		lyophiliser	3
+lyophilisant		lyophiliser	43
+lyophilisas		lyophiliser	12
+lyophilisasse		lyophiliser	6
+lyophilisassent		lyophiliser	17
+lyophilisasses		lyophiliser	8
+lyophilisassiez		lyophiliser	14
+lyophilisat	Produit résultant d'une opération de lyophilisation consistant en une déshydratation à basse température et sous vide d’une substance dissoute dans de l’eau.
+lyophilisâtes		lyophiliser	2
+lyophilisateur	Machine permettant de procéder à une lyophilisation.
+lyophilisateurs		lyophilisateur	0
+lyophilisation	Dessiccation d'un produit préalablement surgelé, par sublimation (le solvant sublimé est généralement de l'eau, mais ce peut être également un alcool).
+lyophilisations		lyophilisation	0
+lyophilisats		lyophilisat	0
+lyophilisé	Sur lequel on a réalisé une lyophilisation.
+lyophilisée		lyophilisé	23
+lyophilisées		lyophiliser	36
+lyophilisent		lyophiliser	31
+lyophiliser	Dessécher un produit préalablement surgelé, par sublimation.
+lyophilisera		lyophiliser	21
+lyophiliserai		lyophiliser	16
+lyophiliserais		lyophiliser	18
+lyophiliserait		lyophiliser	26
+lyophiliseras		lyophiliser	7
+lyophilisèrent		lyophiliser	24
+lyophiliserez		lyophiliser	5
+lyophiliseriez		lyophiliser	4
+lyophiliserions		lyophiliser	11
+lyophiliserons		lyophiliser	10
+lyophiliseront		lyophiliser	15
+lyophilisés		lyophilisé	9
+lyophilisez		lyophiliser	30
+lyophilisiez		lyophiliser	13
+lyophilisions		lyophiliser	19
+lyophilisons		lyophiliser	27
+lyophobe	Qui ne présente pas d’affinité avec un solvant donné.
+lyophobes		lyophobe	0
+lyra	Genre de vièle dont il existe de nombreuses variantes (byzantine, calabraise, crétoise, etc.).
+lyrai		lyrer	22
+lyraient		lyrer	32
+lyrais		lyrer	29
+lyrait		lyrer	34
+lyrâmes		lyrer	3
+lyrant		lyrer	35
+lyras		lyra	0
+lyrasse		lyrer	6
+lyrassent		lyrer	17
+lyrasses		lyrer	8
+lyrassiez		lyrer	14
+lyrassions		lyrer	25
+lyrât		lyrer	20
+lyrâtes		lyrer	2
+lyre	Cordophone portable à cordes pincées parallèles au chevalet, dont la caisse de résonance ne se prolonge pas par un manche, qui était en usage chez les anciens.
+lyrée		lyré	23
+lyrées		lyré	1
+lyrent		lyrer	31
+lyrer	Pleurnicher, pleurer.
+lyrera		lyrer	21
+lyrerai		lyrer	16
+lyreraient		lyrer	28
+lyrerais		lyrer	18
+lyrerait		lyrer	26
+lyreras		lyrer	7
+lyrèrent		lyrer	24
+lyrerez		lyrer	5
+lyreriez		lyrer	4
+lyrerions		lyrer	11
+lyrerons		lyrer	10
+lyreront		lyrer	15
+lyres		lyre	0
+lyrez		lyrer	30
+lyric	Paroles de chanson.
+lyrics	Paroles de chanson.
+lyriez		lyrer	13
+lyrions		lyrer	19
+lyrique	Qui se chante sur la lyre.
+lyriquement	D’une manière lyrique.
+lyriques		lyrique	0
+lyrisme	Qualité, ensemble de qualités constituant le caractère d’un style, soit dans les sentiments et les idées, soit dans le mouvement et la couleur.
+lyrismes		lyrisme	0
+lyrons		lyrer	27
+lys	Genre de liliacées qui porte, sur une haute tige, des fleurs à trois pétales et trois sépales pétaloïdes.
+lysa		lyser	33
+lysai		lyser	22
+lysaient		lyser	32
+lysais		lyser	29
+lysait		lyser	34
+lysâmes		lyser	3
+lysant		lyser	35
+lysas		lyser	12
+lysasse		lyser	6
+lysassent		lyser	17
+lysasses		lyser	8
+lysassiez		lyser	14
+lysassions		lyser	25
+lysat	Produit d’une lyse.
+lysâtes		lyser	2
+lysats		lysat	0
+lyse	Désagrégation de substances ou d’organismes par l’action d’un agent physique, chimique ou biologique.
+lysée		lyser	37
+lysées		lyser	36
+lysent		lyser	31
+lyser	Dissoudre par un mécanisme de lyse.
+lysera		lyser	21
+lyserai		lyser	16
+lyseraient		lyser	28
+lyserais		lyser	18
+lyserait		lyser	26
+lyseras		lyser	7
+lysèrent		lyser	24
+lyserez		lyser	5
+lysergamide	Composé dérivé des extraits de l'ergot de seigle, à propriétés hallucinatoires.
+lysergamides		lysergamide	0
+lysergique	Qualifie des composés organiques dérivés de l’ergot de seigle, précurseurs de médicaments et du LSD.
+lysergiques		lysergique	0
+lyseriez		lyser	4
+lyserions		lyser	11
+lyserons		lyser	10
+lyseront		lyser	15
+lyses		lyse	0
+lysez		lyser	30
+lysiez		lyser	13
+lysimaque	Plante herbacée vivace à cinq pétales et à cinq étamines, surtout jaunes et quelquefois blanches, croissant dans les régions tempérées et subtropicales et dans…
+lysimaques		lysimaque	0
+lysine	Acide aminé dont la chaîne latérale est (-CH₂-CH₂-CH₂-CH₂-NH₂).
+lysines		lysine	0
+lysions		lyser	19
+lysogène	Qui héberge un phage latent, en parlant d’une bactérie.
+lysogènes		lysogène	0
+lysons		lyser	27
+lysosomal	Qui concerne le lysosome.
+lysosomale		lysosomal	23
+lysosomales		lysosomal	1
+lysosomaux		lysosomal	9
+lysosome	Organite cellulaire effectuant la digestion intracellulaire, et présent dans le cytosol de toutes les cellules eucaryotes animales, à l'exception des globules …
+lysosomes		lysosome	0
+lysozyme	Enzyme bactéricide présente dans les sécrétions (larmes, salive, lait…) de nombreuses espèces animales et dans le blanc d’œuf.
+lysozymes		lysozyme	0
+lythracées	Famille de plantes dont le genre type est la salicaire (Lythrum).
+lytique	Relatif à la lyse, qui provoque la lyse.
+lytiques		lytique	0

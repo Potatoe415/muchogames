@@ -1,0 +1,303 @@
+uracile	Base azotée qu’on trouve dans l’ARN, constituée d'un squelette de pyrimidine avec deux groupements cétones.
+uraciles		uracile	0
+uraète	Grand aigle d'Australie au plumage noir.
+uraètes		uraète	0
+uraeus	Figure d’un petit serpent que les anciens Égyptiens considéraient comme un des symboles de la royauté.
+uranais	Qui concerne le canton d’Uri, en Suisse, ou ses habitants.
+uranaise		uranais	23
+uranaises		uranais	1
+uranate	Anion d’uranium.
+uranates		uranate	0
+urane	Oxyde d’uranium.
+uranes		urane	0
+uraneuse		uraneux	23
+uraneuses		uraneux	1
+uraneux	Dérivé de l’uranium.
+uranide	Famille de minéral dérivés de l’uranium.
+uranides		uranide	0
+uranie	Papillon de la famille des Uraniidés aux grandes ailes très colorées.
+uranien	Ceux qui jugeaient que le sonnet d’Uranie de Voiture, était meilleur que Sonnet de Job de Benserade.
+uranienne	Femme sous l’influence zodiacale de la planète Uranus.
+uraniennes		uranien	1
+uraniens		uranien	9
+uranies		uranie	0
+uranifère	Qui contient de l’uranium.
+uranifères		uranifère	0
+uraninite	Minerai uranifère, noir, à forte teneur en oxyde d'uranium généralement associé à l'oxyde de thorium dont la pechblende est une variété.
+uranique	Se dit du second oxyde d’uranium et des sels qu’il produit.
+uraniques		uranique	0
+uranisme	Homosexualité masculine.
+uranismes		uranisme	0
+uraniste	Partisan du Sonnet d’Uranie lors de la querelle des jobelins et des uranistes survenue en 1648.
+uranistes		uraniste	0
+uranite	Torbernite.
+uranites		uranite	0
+uranium	Élément chimique de numéro atomique 92 et de symbole U appartenant à la série chimique des actinides.
+uraniums		uranium	0
+uranographie	Cartographie du ciel, des astres.
+uranographies		uranographie	0
+uranoplastie	Opération qui a pour but de guérir les fissures congénitales du palais.
+uranoplasties		uranoplastie	0
+uranoscope	poisson osseux marin, un uranoscopidé qui a donc les deux yeux au-dessus de la tête et tournés vers le ciel.
+uranoscopes		uranoscope	0
+uranyle	Cation de formule UO₂²⁺ dans lequel l'uranium est à son état d'oxydation +6
+uranyles		uranyle	0
+urate	Nom générique des sels formés par la combinaison de l’acide urique avec différentes bases.
+urates		urate	0
+urbain	Relatif à la ville.
+urbaine	Femme vivant en ville.
+urbaines		urbain	1
+urbains		urbain	9
+urbanisa		urbaniser	33
+urbanisable	Qui peut être urbanisé.
+urbanisables		urbanisable	0
+urbanisai		urbaniser	22
+urbanisaient		urbaniser	32
+urbanisais		urbaniser	29
+urbanisait		urbaniser	34
+urbanisâmes		urbaniser	3
+urbanisant		urbaniser	35
+urbanisas		urbaniser	12
+urbanisasse		urbaniser	6
+urbanisassent		urbaniser	17
+urbanisasses		urbaniser	8
+urbanisassiez		urbaniser	14
+urbanisassions		urbaniser	25
+urbanisât		urbaniser	20
+urbanisâtes		urbaniser	2
+urbanisation	Action d’urbaniser, c’est-à-dire de favoriser la croissance ou la naissance des villes.
+urbanisé	Transformé en ville.
+urbanisée		urbanisé	23
+urbanisées		urbanisé	1
+urbanisent		urbaniser	31
+urbaniser	Donner un caractère urbain, citadin, de ville à une région.
+urbanisera		urbaniser	21
+urbaniserai		urbaniser	16
+urbaniseraient		urbaniser	28
+urbaniserais		urbaniser	18
+urbaniserait		urbaniser	26
+urbaniseras		urbaniser	7
+urbanisèrent		urbaniser	24
+urbaniserez		urbaniser	5
+urbaniseriez		urbaniser	4
+urbaniserions		urbaniser	11
+urbaniserons		urbaniser	10
+urbaniseront		urbaniser	15
+urbanisés		urbanisé	9
+urbanisez		urbaniser	30
+urbanisiez		urbaniser	13
+urbanisions		urbaniser	19
+urbanisme	Art de construire, de transformer, d’aménager les villes au mieux de la commodité, suivant les règles de l’esthétique et de l’hygiène.
+urbanismes		urbanisme	0
+urbanisons		urbaniser	27
+urbaniste	Architecte ou technicien spécialisé dans les réalisations de l’urbanisme.
+urbanistes	Religieuses de sainte Claire.
+urbanistique	Qui a trait à l’urbanisation, à l’urbanisme.
+urbanistiques		urbanistique	0
+urbanité	Politesse, affabilité que donne l’usage du monde.
+urbanites		urbanite	0
+urbanologie	Science qui étudie les phénomènes d’urbanisation.
+urbanologies		urbanologie	0
+urcéolé	En forme de cruche, renflé comme une petite outre et rétréci vers l’orifice.
+urcéolée		urcéolé	23
+urcéolées		urcéolé	1
+urcéoles		urcéole	0
+urdu	Variante de ourdou.
+urdus		urdu	0
+ure	Aurochs, taureau sauvage, à présent disparu et ancêtre des bovinés actuels.
+uréase	Enzyme qui catalyse la réaction d’hydrolyse de l’urée qui conduit à la formation de dioxyde de carbone et d’ammoniac.
+uréases		uréase	0
+urédinale	Ordre de champignons basidiomycètes, parasites produisant des rouilles (maladies cryptogamiques) sur de nombreux végétaux notamment sur les céréales.
+urédinales		urédinale	0
+urédinée	Champignon parasite produisant des rouilles, maladies cryptogamiques de nombreux végétaux.
+urédinées		urédinée	0
+urédospore	Spore fongique caractéristique des urédinées.
+urédospores		urédospore	0
+urée	Substance cristallisable, incolore, de formule chimique COH₄N₂, dont la présence caractérise l’urine de la plupart des animaux dont l’homme.
+urées		urée	0
+uréide	Composé résultant de la substitution de radicaux acides à l’urée.
+uréides		uréide	0
+uréique	Qui est relatif à l’urée.
+uréiques		uréique	0
+urémie	Accumulation de l’urée dans le sang.
+urémies		urémie	0
+urémique	Qui a rapport à l’urémie.
+urémiques		urémique	0
+uréotélie	Caractère des animaux qui excrètent principalement leurs déchets azotés sous forme d’urée.
+uréotélies		uréotélie	0
+ures		ure	0
+urétéral	Relatif à l’uretère.
+urétérale		urétéral	23
+urétérales		urétéral	1
+urétéraux		urétéral	9
+uretère	Chacun des deux canaux qui transportent l’urine des reins à la vessie.
+uretères		uretère	0
+urétérite	Inflammation des uretères.
+urétérites		urétérite	0
+urétérostomie	Intervention chirurgicale dont le but est de faire aboucher les uretères avec la peau, au niveau de la paroi abdominale.
+urétérostomies		urétérostomie	0
+urétral	Qui concerne l'urètre.
+urétrale		urétral	23
+urétrales		urétral	1
+urétraux		urétral	9
+urètre	Canal par où sort l’urine.
+urètres		urètre	0
+urétrite	Inflammation de l’urètre, blennorragie.
+urétrites		urétrite	0
+urge		urger	64
+urgea		urger	33
+urgeaient		urger	32
+urgeait		urger	40
+urgeant		urger	35
+urgeassent		urger	17
+urgeât		urger	20
+urgemment	D’une manière urgente.
+urgence	Caractère de ce qui est urgent.
+urgences	Service hospitalier accueillant les personnes nécessitant des soins immédiats.
+urgent	Qui est pressant, qui ne souffre aucun retard.
+urgente		urgent	23
+urgentes		urgent	1
+urgentissime	Très urgent.
+urgentissimes		urgentissime	0
+urgentiste	Médecin spécialiste de la médecine d’urgence, l’urgentologie.
+urgentistes		urgentiste	0
+urgentologue	Médecin spécialisé dans le service d’urgence d’un hôpital.
+urgentologues		urgentologue	0
+urgents		urgent	125
+urger	Presser (de faire quelque chose)
+urgera		urger	21
+urgeraient		urger	28
+urgerait		urger	26
+urgèrent		urger	24
+urgeront		urger	15
+urgonien	Qui est en rapport avec le faciès géologique de l’Urgonien.
+urgonienne		urgonien	23
+urgoniennes		urgonien	1
+urgoniens		urgonien	9
+uricémie	Taux d’acide urique dans le sérum sanguin.
+uricotélie	Production par désamination à l'aide de l'uricase des déchets azotés et élimination d’acide urique au lieu d’urée (chez l'Homme), comme chez les insectes, les …
+uricotélies		uricotélie	0
+uricotélique	Relatif à l’uricotélie.
+uridine	Nucléoside formé d'un cycle ribose attaché à la base azotée uracile.
+uridines		uridine	0
+urina		uriner	33
+urinai		uriner	22
+urinaient		uriner	42
+urinaire	Relatif à l’urine.
+urinaires		urinaire	0
+urinais		uriner	52
+urinait		uriner	40
+urinal	Vase de porcelaine, de verre, de caoutchouc, etc., à col incliné, permettant aux malades alités d’uriner plus commodément.
+urinâmes		uriner	3
+urinant		uriner	43
+urinas		uriner	12
+urinasse		uriner	6
+urinassent		uriner	78
+urinasses		uriner	8
+urinassiez		uriner	14
+urinassions		uriner	25
+urinât		uriner	20
+urinâtes		uriner	2
+urinaux		urinal	0
+urine	Liquide dû à la filtration du sang par les reins et conduit par les uretères dans la vessie, puis évacué par le canal de l’urètre.
+urinée		uriner	37
+urinées		uriner	36
+urinent		uriner	41
+uriner	Évacuer de l’urine.
+urinera		uriner	44
+urinerai		uriner	16
+urineraient		uriner	28
+urinerais		uriner	18
+urinerait		uriner	26
+urineras		uriner	7
+urinèrent		uriner	24
+urinerez		uriner	5
+urineriez		uriner	4
+urinerions		uriner	11
+urinerons		uriner	10
+urineront		uriner	15
+urines		urine	0
+urineuse		urineux	23
+urineuses		urineux	1
+urineux	Qui a rapport à l’urine.
+urinez		uriner	47
+uriniez		uriner	13
+urinifère	Qui porte l’urine.
+urinions		uriner	19
+urinoir	Local disposé sur la voie publique, dans les gares, etc., pour uriner.
+urinoirs		urinoir	0
+urinons		uriner	59
+urique	Qualifie l’acide qui existe à l’état normal en faible proportion dans l’urine humaine et qui forme la plupart des calculs de la vessie.
+uriques		urique	0
+urne	Vase de forme et de capacité variables qui, chez les anciens, servait à divers usages.
+urnes		urne	115
+urobiline	Pigment biliaire jaune produit par la dégradation de la bilirubine, présent dans les urines et les matières fécales de mammifères
+urobilinurie	Présence d’urobiline dans l’urine.
+urobilinuries		urobilinurie	0
+urochordé	Organisme filtreur marin, métazoaire, chordé, du groupe des Tunicata, ressemblant à un sac fixé (sous sa forme adulte), aspirant l'eau par son siphon inhalant,…
+urochordés		urochordé	0
+urochrome	Matière colorante de l’urine.
+urochromes		urochrome	0
+urocordé	Variante orthographique de urochordé.
+urocordés		urocordé	0
+urodèle	Animal du taxon des urodèles, amphibiens marchant avec quatre pattes, gardant une queue à l’état adulte et regroupant entre autres les salamandres et les trito…
+urodèles	Pluriel d’urodèle.
+urogénital	Qui a rapport à l’appareil urinaire et à l’appareil génital.
+urogénitale		urogénital	23
+urogénitales		urogénital	1
+urogénitaux		urogénital	9
+urographie	Image de l’appareil urinaire.
+urographies		urographie	0
+urokinase	Protéase à sérine appelée aussi activateur du plasminogène.
+urokinases		urokinase	0
+urolagnie	Attirance sexuelle d'un urophile pour l'urine ou la miction.
+urolagnies		urolagnie	0
+urologie	Partie de la médecine qui s’occupe spécialement des voies urinaires.
+urologies		urologie	0
+urologique	Relatif à l’urologie.
+urologiques		urologique	0
+urologue	Spécialiste des voies urinaires.
+urologues		urologue	0
+uromètre	Aréomètre disposé de manière à donner la densité de l’urine.
+uromètres		uromètre	0
+uronique	Nom générique des acides aldéhydes.
+uroniques		uronique	0
+uropode	Partie de la queue de certains crustacés leur servant de nageoire.
+uropodes		uropode	0
+uropyge	Ordre d’arachnides de petite taille dont la « queue » (en fait le dernier segment abdominal) est pourvue d’un flagelle et dont l’aspect évoque celui des scorpi…
+uropyges		uropyge	0
+uropygial	Relatif au croupion.
+uropygiale		uropygial	23
+uropygiales	Féminin pluriel de uropygiale.
+uropygiaux		uropygial	9
+uropygien	Uropygial.
+uropygienne		uropygien	23
+uropygiennes		uropygien	1
+uropygiens		uropygien	9
+urotélique	Se dit d’un animal qui produit de l’urée.
+urotéliques		urotélique	0
+ursidé	Mammifère caniforme plantigrade de l’ordre des carnivores, dont le type est l’ours.
+ursidés		ursidé	0
+ursin	Qui concerne les ours, qui rappelle les ours.
+ursine		ursin	23
+ursines		ursin	1
+ursins		ursin	9
+ursuline	Religieuse d’un ordre enseignant fondé par Ursule de Cologne.
+ursulines		ursuline	0
+urticacée	Plante apparentée à l’ortie, de la famille des Urticaceae.
+urticacées		urticacée	0
+urticaire	Éruption qui donne des démangeaisons assez semblables à celles que produirait l’application de feuilles d’orties sur la peau.
+urticaires		urticaire	0
+urticant	Dont le contact produit une irritation douloureuse analogue à celle des piqûres d’ortie.
+urticante		urticant	23
+urticantes		urticant	1
+urticants		urticant	9
+urtication	Flagellation avec des orties pour produire une excitation.
+urtications		urtication	0
+urubu	Oiseau de proie du continent américain, du genre vautour, dont il existe quatre espèces.
+urubus		urubu	0
+uruguayen	Ayant un rapport, un lien avec l’Uruguay, pays sud-américain.
+uruguayenne		uruguayen	23
+uruguayennes		uruguayen	1
+uruguayens		uruguayen	0
+urus	Aurochs, taureau sauvage, à présent disparu et ancêtre des bovinés actuels.

@@ -1,0 +1,1912 @@
+va	Soit ; j’y consens.
+vacance	État d'une charge, d'une dignité, d'un poste vacant.
+vacances	Période de repos, durant un certain nombre de jours, accordée à des employés dans une entreprise, à des élèves dans une école, etc.
+vacancier	Qui concerne les vacances.
+vacancière	Personne qui est en vacances, qui prend des vacances.
+vacancières		vacancière	0
+vacanciers		vacancier	0
+vacant	Qui n’est pas occupé ou qui est à remplir, en parlant des maisons, lieux et places qui ne sont pas occupés.
+vacante		vacant	23
+vacantes		vacant	1
+vacants		vacant	9
+vacarme	Tumulte ; grand bruit.
+vacarmes		vacarme	0
+vacataire	Rémunéré à la vacation.
+vacataires		vacataire	0
+vacation	Durée de travail quotidien consacrée par règlement de justice ou d’administration publique à une affaire.
+vacations		vacation	0
+vaccaire	Nom vernaculaire de la saponaria vaccaria, plante messicole, aussi cultivée pour ses propriétés médicales.
+vaccaires		vaccaire	0
+vaccin	Toute substance inoculée à un individu pour l’immuniser contre la maladie qui a produit cette substance (vaccin préventif) ou pour lutter contre la maladie (va…
+vaccina		vacciner	39
+vaccinable	Qui peut être vacciné.
+vaccinables		vaccinable	0
+vaccinai		vacciner	22
+vaccinaient		vacciner	32
+vaccinais		vacciner	29
+vaccinait		vacciner	34
+vaccinal	Relatif au vaccin, à la vaccination.
+vaccinale	Féminin singulier de vaccinal.
+vaccinales		vaccinal	1
+vaccinâmes		vacciner	3
+vaccinant		vacciner	35
+vaccinas		vacciner	12
+vaccinasse		vacciner	6
+vaccinassent		vacciner	17
+vaccinasses		vacciner	8
+vaccinassiez		vacciner	14
+vaccinassions		vacciner	25
+vaccinât		vacciner	20
+vaccinâtes		vacciner	2
+vaccinateur	Celui qui vaccine.
+vaccinateurs		vaccinateur	0
+vaccination	Action de vacciner.
+vaccinations		vaccination	0
+vaccinatrice	Celle qui vaccine.
+vaccinatrices		vaccinatrice	0
+vaccinaux		vaccinal	9
+vaccine	Maladie propre à la vache et qu’on transmet à l’être humain au moyen de l’inoculation, pour le préserver de la variole.
+vaccinée		vacciné	23
+vaccinées		vacciner	51
+vaccinelle	Autre nom d'une dermatose nommée tubercule des trayeurs.
+vaccinelles		vaccinelle	0
+vaccinent		vacciner	41
+vacciner	Immuniser à l’aide de toute sorte de vaccin pour préparer ou provoquer une réponse immunitaire.
+vaccinera		vacciner	21
+vaccinerai		vacciner	16
+vaccineraient		vacciner	28
+vaccinerais		vacciner	18
+vaccinerait		vacciner	26
+vaccineras		vacciner	7
+vaccinèrent		vacciner	24
+vaccinerez		vacciner	5
+vaccineriez		vacciner	4
+vaccinerions		vacciner	11
+vaccinerons		vacciner	10
+vaccineront		vacciner	15
+vaccinés		vacciné	0
+vaccinez		vacciner	47
+vaccinide	Synonyme de vaccinelle.
+vaccinier	Vaciet, airelle.
+vacciniez		vacciner	13
+vaccinifère	Qui fournit la lymphe vaccinale, afin de préparer le vaccin antivariolique.
+vaccinifères		vaccinifère	123
+vaccinions		vacciner	19
+vaccinodrome	Centre de vaccination collective mis en place dans le cadre de la lutte contre une épidémie ou une pandémie.
+vaccinodromes		vaccinodrome	0
+vaccinogène	Relatif à la production d’un vaccin, de vaccines.
+vaccinogènes		vaccinogène	0
+vaccinoïde	Autre nom d'une dermatose nommée tubercule des trayeurs.
+vaccinoïdes		vaccinoïde	0
+vaccinons		vacciner	27
+vaccinostyle	Plume métallique, pointue, non fendue et tranchante utilisée pour la cutiréaction et pour pratiquer autrefois la vaccination antivariolique (vaccination jennér…
+vaccinostyles		vaccinostyle	0
+vaccinothérapie	Synonyme de vaccination, traitement de certaines maladies infectieuses au moyen de vaccins.
+vaccins		vaccin	0
+vacha		vacher	33
+vachai		vacher	22
+vachaient		vacher	32
+vachais		vacher	29
+vachait		vacher	34
+vachâmes		vacher	3
+vachant		vacher	35
+vachard	Méchant, volontairement blessant.
+vacharde		vachard	23
+vachardes		vachard	1
+vachards		vachard	9
+vachas		vacher	12
+vachasse		vacher	6
+vachassent		vacher	17
+vachasses		vacher	8
+vachassiez		vacher	14
+vachassions		vacher	25
+vachât		vacher	20
+vachâtes		vacher	2
+vache	Bovidé domestique ruminant, femelle du taureau.
+vachée		vacher	37
+vachées		vacher	36
+vachement	D’une manière vache, méchante.
+vachent		vacher	31
+vacher	Personne qui mène paître les vaches, les bovins, qui les garde, les soigne et s’en occupe.
+vachera		vacher	21
+vacherai		vacher	16
+vacheraient		vacher	28
+vacherais		vacher	18
+vacherait		vacher	26
+vacheras		vacher	7
+vachère	Femme qui mène paître les vaches, les bovins, qui les garde, les soigne et s’en occupe.
+vachèrent		vacher	24
+vachères		vachère	0
+vacherez		vacher	5
+vacherie	Étable à vaches.
+vacheries		vacherie	0
+vacheriez		vacher	4
+vacherin	Gâteau composé d’une croûte de meringue, de fruits et de chantilly.
+vacherins		vacherin	0
+vacherions		vacher	11
+vacherons		vacher	10
+vacheront		vacher	15
+vachers		vacher	0
+vaches		vache	0
+vachette	Petite vache ; jeune vache.
+vachettes		vachette	0
+vachez		vacher	30
+vachiez		vacher	13
+vachions		vacher	19
+vachons		vacher	27
+vacieu	Dans le sud de la France, ensemble des brebis d’un troupeau qui ne produisent pas de lait.
+vacieux		vacieu	0
+vacilla		vaciller	39
+vacillai		vaciller	55
+vacillaient		vaciller	42
+vacillais		vaciller	52
+vacillait		vaciller	40
+vacillâmes		vaciller	3
+vacillant	Qui vacille.
+vacillante	Féminin singulier de vacillant.
+vacillantes		vacillant	1
+vacillants		vacillant	9
+vacillas		vaciller	12
+vacillasse		vaciller	6
+vacillassent		vaciller	17
+vacillasses		vaciller	8
+vacillassiez		vaciller	14
+vacillassions		vaciller	25
+vacillât		vaciller	62
+vacillâtes		vaciller	2
+vacillation	Mouvement de ce qui vacille.
+vacillations		vacillation	0
+vacillé		vaciller	56
+vacillement	Action de vaciller.
+vacillements		vacillement	0
+vacillent		vaciller	41
+vaciller	Chanceler ; trembler.
+vacillera		vaciller	21
+vacillerai		vaciller	16
+vacilleraient		vaciller	28
+vacillerais		vaciller	18
+vacillerait		vaciller	26
+vacilleras		vaciller	7
+vacillèrent		vaciller	48
+vacillerez		vaciller	5
+vacilleriez		vaciller	4
+vacillerions		vaciller	11
+vacillerons		vaciller	10
+vacilleront		vaciller	15
+vacilles		vaciller	77
+vacillez		vaciller	47
+vacilliez		vaciller	13
+vacillions		vaciller	19
+vacillons		vaciller	27
+vacive	Jeune brebis qui n’a jamais été en gestation.
+vacives		vacive	0
+vacoa	Nom vernaculaire de Pandanus utilis et parfois d’autres espèces du m
+vacoas		vacoa	0
+Vacqueyras	Commune française, située dans le département du Vaucluse.
+vacuité	État de ce qui est vide.
+vacuités		vacuité	0
+vacuolaire	Relatif aux vacuoles.
+vacuolaires		vacuolaire	0
+vacuole	Interstice ou petit espace vide.
+vacuoles		vacuole	0
+vacuolisa		vacuoliser	33
+vacuolisai		vacuoliser	22
+vacuolisaient		vacuoliser	32
+vacuolisais		vacuoliser	29
+vacuolisait		vacuoliser	34
+vacuolisâmes		vacuoliser	3
+vacuolisant		vacuoliser	35
+vacuolisas		vacuoliser	12
+vacuolisasse		vacuoliser	6
+vacuolisassent		vacuoliser	17
+vacuolisasses		vacuoliser	8
+vacuolisassiez		vacuoliser	14
+vacuolisassions		vacuoliser	25
+vacuolisât		vacuoliser	20
+vacuolisâtes		vacuoliser	2
+vacuolisation	Formation de vacuoles dans un tissu cellulaire.
+vacuolisations		vacuolisation	0
+vacuolisé		vacuoliser	46
+vacuolisée		vacuoliser	37
+vacuolisées		vacuoliser	36
+vacuolisent		vacuoliser	31
+vacuoliser	Se transformer avec apparition de vacuole.
+vacuolisera		vacuoliser	21
+vacuoliserai		vacuoliser	16
+vacuoliseraient		vacuoliser	28
+vacuoliserais		vacuoliser	18
+vacuoliserait		vacuoliser	26
+vacuoliseras		vacuoliser	7
+vacuolisèrent		vacuoliser	24
+vacuoliserez		vacuoliser	5
+vacuoliseriez		vacuoliser	4
+vacuoliserions		vacuoliser	11
+vacuoliserons		vacuoliser	10
+vacuoliseront		vacuoliser	15
+vacuolisés		vacuoliser	38
+vacuolisez		vacuoliser	30
+vacuolisiez		vacuoliser	13
+vacuolisions		vacuoliser	19
+vacuolisons		vacuoliser	27
+vacuome	Ensemble des vacuoles d'une cellule.
+vacuomes		vacuome	0
+vacuomètre	Dispositif indiquant le degré de vide régnant dans une enceinte.
+vacuomètres		vacuomètre	0
+vacuum	Espace sans matière.
+vacuums		vacuum	0
+vademecum	Variante de vadémécum.
+vadémécums		vadémécum	0
+vadrouilla		vadrouiller	33
+vadrouillai		vadrouiller	22
+vadrouillaient		vadrouiller	32
+vadrouillais		vadrouiller	52
+vadrouillait		vadrouiller	40
+vadrouillâmes		vadrouiller	3
+vadrouillant		vadrouiller	35
+vadrouillas		vadrouiller	12
+vadrouillasse		vadrouiller	6
+vadrouillassent		vadrouiller	17
+vadrouillasses		vadrouiller	8
+vadrouillassiez		vadrouiller	14
+vadrouillât		vadrouiller	20
+vadrouillâtes		vadrouiller	2
+vadrouille	Balade, promenade sans but particulier.
+vadrouillent		vadrouiller	31
+vadrouiller	Fauberter, balayer un navire.
+vadrouillera		vadrouiller	21
+vadrouillerai		vadrouiller	16
+vadrouillerais		vadrouiller	18
+vadrouillerait		vadrouiller	26
+vadrouilleras		vadrouiller	7
+vadrouillèrent		vadrouiller	24
+vadrouillerez		vadrouiller	5
+vadrouilleriez		vadrouiller	4
+vadrouillerions		vadrouiller	11
+vadrouillerons		vadrouiller	10
+vadrouilleront		vadrouiller	15
+vadrouilles		vadrouille	0
+vadrouilleur	Qui vadrouille, qui traine
+vadrouilleurs		vadrouilleur	0
+vadrouilleuse	Personne qui vadrouille, qui traine.
+vadrouilleuses		vadrouilleuse	0
+vadrouillez		vadrouiller	47
+vadrouilliez		vadrouiller	13
+vadrouillions		vadrouiller	19
+vadrouillons		vadrouiller	27
+vagabond	Qui erre çà et là.
+vagabonda		vagabonder	39
+vagabondage	État social du vagabond.
+vagabondages		vagabondage	0
+vagabondai		vagabonder	22
+vagabondaient		vagabonder	42
+vagabondais		vagabonder	52
+vagabondait		vagabonder	40
+vagabondâmes		vagabonder	3
+vagabondant		vagabonder	43
+vagabondas		vagabonder	12
+vagabondasse		vagabonder	6
+vagabondassent		vagabonder	17
+vagabondasses		vagabonder	8
+vagabondassiez		vagabonder	14
+vagabondassions		vagabonder	25
+vagabondât		vagabonder	20
+vagabondâtes		vagabonder	2
+vagabonde	Personne errante, sans domicile, sans patrie.
+vagabondent		vagabonder	41
+vagabonder	Être vagabond, faire le vagabond.
+vagabondera		vagabonder	21
+vagabonderai		vagabonder	16
+vagabonderaient		vagabonder	28
+vagabonderais		vagabonder	18
+vagabonderait		vagabonder	26
+vagabonderas		vagabonder	7
+vagabondèrent		vagabonder	48
+vagabonderez		vagabonder	5
+vagabonderiez		vagabonder	4
+vagabonderions		vagabonder	11
+vagabonderons		vagabonder	10
+vagabonderont		vagabonder	15
+vagabondes		vagabond	1
+vagabondez		vagabonder	30
+vagabondiez		vagabonder	67
+vagabondions		vagabonder	19
+vagabondons		vagabonder	27
+vagabonds		vagabond	9
+vagal	Relatif au nerf vague.
+vagale		vagal	23
+vagales		vagal	1
+vagaux		vagal	9
+vagi		vagir	56
+vagile	Qualifie un organisme capable de se déplacer dans son environnement (par opposition aux organismes sessiles).
+vagiles		vagile	0
+vagîmes		vagir	3
+vagin	Passage menant de l’ouverture de la vulve au col de l’utérus chez les mammifères femelles.
+vaginal	Relatif au vagin.
+vaginale	Enveloppe séreuse qui entoure les testicules.
+vaginales		vaginal	1
+vaginalite	Inflammation de la vaginale (enveloppe testiculaire).
+vaginalites		vaginalite	0
+vaginaux		vaginal	9
+vaginé	Qui est embrassé par une gaine.
+vaginée		vaginé	23
+vaginées		vaginé	1
+vaginés		vaginé	9
+vaginisme	Contractions douloureuses et spasmodiques des muscles qui entourent le vagin.
+vaginismes		vaginisme	0
+vaginite	Inflammation de la muqueuse vaginale, caractérisée entre autres par des brûlures vaginales, des leucorrhées et des démangeaisons vaginales et vulvaires.
+vaginites		vaginite	0
+vagins		vagin	0
+vagir	Pousser des vagissements.
+vagira		vagir	21
+vagirai		vagir	16
+vagiraient		vagir	28
+vagirais		vagir	18
+vagirait		vagir	26
+vagiras		vagir	7
+vagirent		vagir	24
+vagirez		vagir	5
+vagiriez		vagir	4
+vagirions		vagir	11
+vagirons		vagir	10
+vagiront		vagir	15
+vagis		vagir	130
+vagissaient		vagir	75
+vagissais		vagir	86
+vagissait		vagir	71
+vagissant	Qui vagit.
+vagissante		vagissant	109
+vagissantes		vagissant	1
+vagissants		vagissant	9
+vagisse		vagir	89
+vagissement	Cri des nouveau-nés, des bébés.
+vagissements		vagissement	0
+vagissent		vagir	69
+vagisses		vagir	76
+vagissez		vagir	30
+vagissiez		vagir	13
+vagissions		vagir	19
+vagissons		vagir	73
+vagit		vagir	80
+vagîtes		vagir	2
+vagolytique	Qualifie une substance paralysant le nerf vague ou pneumogastrique.
+vagolytiques		vagolytique	0
+vagotomie	Section chirurgicale du nerf vague, au niveau de l’abdomen, dans le but de réduire la sécrétion d’acide chlorhydrique dans l’estomac des patients atteints d’un…
+vagotomies		vagotomie	0
+vagotonie	Hyperexcitabilité du système nerveux parasympathique (nerf vague).
+vagotonies		vagotonie	0
+vagotonique	Relatif à la vagotonie.
+vagotoniques		vagotonique	0
+vagua		vaguer	39
+vaguai		vaguer	22
+vaguaient		vaguer	32
+vaguais		vaguer	29
+vaguait		vaguer	40
+vaguâmes		vaguer	3
+vaguant		vaguer	43
+vaguas		vaguer	12
+vaguasse		vaguer	6
+vaguassent		vaguer	17
+vaguasses		vaguer	8
+vaguassiez		vaguer	14
+vaguassions		vaguer	25
+vaguât		vaguer	20
+vaguâtes		vaguer	2
+vague	Qui est indéfini.
+vaguelette	Petite vague.
+vaguelettes		vaguelette	0
+vaguement	D’une manière vague.
+vaguemestre	Officier qui était chargé du soin des équipages militaires.
+vaguemestres		vaguemestre	0
+vaguent		vaguer	41
+vaguer	Errer çà et là, aller de côté et d’autre à l’aventure.
+vaguera		vaguer	21
+vaguerai		vaguer	16
+vagueraient		vaguer	28
+vaguerais		vaguer	18
+vaguerait		vaguer	26
+vagueras		vaguer	7
+vaguèrent		vaguer	24
+vaguerez		vaguer	5
+vagueriez		vaguer	4
+vaguerions		vaguer	11
+vaguerons		vaguer	10
+vagueront		vaguer	15
+vagues		vague	0
+vaguez		vaguer	30
+vaguiez		vaguer	13
+vaguions		vaguer	19
+vaguons		vaguer	27
+vahiné	Femme polynésienne.
+vahinés		vahiné	0
+vaigrage	L’ensemble des vaigres, les pièces de bois formant le plancher à l’intérieur de la coque d’un bateau.
+vaigre	Planche posée à l’intérieur de la coque pour former une sorte de plancher ou de doublage.
+vaigrer	Lambrisser un navire de vaigres.
+vaigrés		vaigrer	38
+vaillamment	D’une manière vaillante.
+vaillance	Courage ; bravoure.
+vaillances		vaillance	0
+vaillant	Qui a de la vaillance, qui est courageux.
+vaillante		vaillant	23
+vaillantes		vaillant	1
+vaillantie	Plante herbacée, de la famille des Rubiacées, à fleurs blanches ou jaunâtres et dont le fruit est muni d'aiguillons, poussant dans les lieux arides de la régio…
+vaillanties		vaillantie	0
+vaillants		vaillant	9
+vaille		valoir	85
+vaillent		valoir	137
+vailles		valoir	76
+vain	Qui est inutile, qui ne produit rien.
+vainc	Troisième personne du singulier de l’indicatif présent de vaincre.
+vaincra		vaincre	44
+vaincrai		vaincre	50
+vaincraient		vaincre	97
+vaincrais		vaincre	96
+vaincrait		vaincre	92
+vaincras		vaincre	57
+vaincre	Remporter la victoire sur un ennemi, sur un rival, sur un concurrent.
+vaincrez		vaincre	58
+vaincriez		vaincre	104
+vaincrions		vaincre	105
+vaincrons		vaincre	61
+vaincront		vaincre	54
+vaincs		vaincre	72
+vaincu	Qui a été vaincu.
+vaincue	Femme vaincue.
+vaincues		vaincu	1
+vaincus		vaincu	9
+vaine	Fumée légère et mal formée.
+vainement	En vain ; inutilement.
+vaines	Fumées légères et mal formées.
+vainquaient		vaincre	93
+vainquais	Relatif à Vains, commune de la Manche.
+vainquait		vaincre	91
+vainquant		vaincre	43
+vainque		vaincre	85
+vainquent		vaincre	41
+vainques		vaincre	98
+vainqueur	Personne ayant remporté une bataille ou une guerre.
+vainqueure	Femme qui gagne, qui remporte la victoire.
+vainqueures		vainqueure	0
+vainqueurs		vainqueur	0
+vainquez		vaincre	70
+vainquiez		vaincre	102
+vainquîmes		vaincre	68
+vainquions		vaincre	103
+vainquirent		vaincre	48
+vainquis		vaincre	55
+vainquisse		vaincre	81
+vainquissent		vaincre	78
+vainquisses		vaincre	87
+vainquissiez		vaincre	88
+vainquissions		vaincre	90
+vainquit		vaincre	39
+vainquîtes		vaincre	68
+vainquons		vaincre	73
+vains		vain	120
+vair	Fourrure blanche et grise de quelques espèces d’écureuils et particulièrement de celle du petit-gris.
+vairé	Bigarré, tacheté, se dit de l’écu, quand les points de vair (ou cloches) sont d’autre émail et métal que l’argent et l’azur.
+vairée		vairé	23
+vairées		vairé	1
+vairés		vairé	9
+vairon	Qualifie l’œil d’un cheval, d’un chien, etc., dont la prunelle est entourée d’un cercle blanchâtre.
+vairons		vairon	9
+vairs		vair	0
+vais		aller	72
+vaishya	Membre d'une des quatre varnas (caste en Inde), représentant les artisans, commerçants, hommes d'affaires, agriculteurs et bergers.
+vaishyas		vaishya	0
+vaisseau	Vase, ustensile, de toute matière, destiné à contenir des liquides.
+vaisseaux		vaisseau	0
+vaisselier	Dressoir sur lequel on place, en général verticalement, des plats et des assiettes, dans une salle à manger ou une cuisine.
+vaisselière	Variante de vaisselier.
+vaisselières		vaisselière	0
+vaisseliers		vaisselier	0
+vaisselle	Ce qui sert à l’usage ordinaire de la table, comme plats, assiettes, etc.
+vaissellerie	Réunion d’articles comprenant les seaux, les sébiles, les écuelles, les gamelles, les mortiers, les salières et égrugeoires, et les moules à fromages.
+vaisselles		vaisselle	0
+vaiśya	Variante orthographique de vaishya.
+vaisyas		vaisya	0
+vajrayana	Une des trois voies (ou véhicule) spirituelles enseignées par Bouddha.
+val	Vallée étroite, espace de terre resserré entre deux coteaux.
+valable	Qui est acceptable, bien fondé.
+valablement	D’une manière valable.
+valables		valable	0
+valaient		valoir	93
+valais		valoir	95
+valaisan	Du Valais, canton suisse.
+valaisanne		valaisan	23
+valaisannes		valaisan	1
+valaisans		valaisan	9
+valait		valoir	91
+valanginien	Relatif au Valanginien.
+valant		valoir	43
+valaque	Relatif à la Valachie.
+valaques		valaque	0
+valdingua		valdinguer	39
+valdinguai		valdinguer	22
+valdinguaient		valdinguer	32
+valdinguais		valdinguer	29
+valdinguait		valdinguer	34
+valdinguâmes		valdinguer	3
+valdinguant		valdinguer	35
+valdinguas		valdinguer	12
+valdinguasse		valdinguer	6
+valdinguassent		valdinguer	17
+valdinguasses		valdinguer	8
+valdinguassiez		valdinguer	14
+valdinguassions		valdinguer	25
+valdinguât		valdinguer	20
+valdinguâtes		valdinguer	2
+valdingue	Chute.
+valdinguent		valdinguer	31
+valdinguer	Tomber.
+valdinguera		valdinguer	21
+valdinguerai		valdinguer	16
+valdingueraient		valdinguer	28
+valdinguerais		valdinguer	18
+valdinguerait		valdinguer	26
+valdingueras		valdinguer	7
+valdinguèrent		valdinguer	24
+valdinguerez		valdinguer	5
+valdingueriez		valdinguer	4
+valdinguerions		valdinguer	11
+valdinguerons		valdinguer	10
+valdingueront		valdinguer	15
+valdingues		valdinguer	77
+valdinguez		valdinguer	30
+valdinguiez		valdinguer	13
+valdinguions		valdinguer	19
+valdinguons		valdinguer	27
+valdisme	Religion des vaudois.
+valdismes		valdisme	0
+Valdorien	Habitant de Val-d’Or, ville québécoise ^().
+Valdoriens		Valdorien	0
+valdotain	Du Val d’Aoste (dit aussi vallée d’Aoste), région d’Italie entre le Piémont, auquel elle est rattachée, la Suisse et la Savoie.
+valdôtaine		valdôtain	23
+valdôtaines		valdôtain	1
+valdôtains		valdôtain	9
+valdrague	Désordre.
+valençay	Fromage berrichon de la région Centre-Val de Loire au lait de chèvre à pâte molle à croûte fleurie.
+valençays		valençay	0
+valence	Nombre maximum de liaisons chimiques qu’un atome peut former avec un autre atome donné.
+valences		valence	0
+valencia	Tissu léger en laine fabriqué en Angleterre.
+valencias		valencia	0
+valencien	Relatif à Valence, commune du Tarn-et-Garonne, en France.
+valencienne		valencien	23
+valenciennes	Dentelle fine, fabriquée originairement à Valenciennes.
+valenciennois	Relatif à Valenciennes, commune du Nord.
+valenciennoise		valenciennois	23
+valenciennoises		valenciennois	1
+valenciens		valencien	9
+valent		valoir	69
+valentin	Relatif à Saint-Valentin, municipalité québécoise ^().
+valentine	Carte de vœux pour la Saint-Valentin.
+valentines		valentin	1
+valentinite	Oxyde d’antimoine, incolore, blanchâtre.
+valentinites		valentinite	0
+valentinois	Relatif à Valence, commune de la Drôme.
+valentinoise		valentinois	23
+valentinoises		valentinois	1
+valentins		valentin	9
+valérianacée	Plante apparentée à la valériane, de la sous-famille des Valerianoideae.
+valérianacées	Famille de plantes dicotylédones dont la valériane est le type.
+valériane	Nom donné à plusieurs plantes de la famille des caprifoliacées (anciennement dans la famille des valérianacées) comme la valériane rouge (Centranthus ruber).
+valérianelle	Genre de la famille des Caprifoliacées.
+valérianelles		valérianelle	0
+valérianes		valériane	0
+valérianique	Qui est dérivé de la valériane, qui a rapport avec la valériane.
+valérianiques		valérianique	0
+valérien	Relatif à l’empereur romain Valérien.
+valérienne		valérien	23
+valériennes		valérien	1
+valériens		valérien	9
+valérique	Dérivé de la valériane.
+valériques		valérique	0
+valet	Jeune écuyer au service d’un seigneur.
+valetaille	Multitude de valets.
+valetailles		valetaille	0
+valets		valet	0
+valétudinaire	Qui est maladif, qui est souvent malade.
+valétudinaires		valétudinaire	0
+valeur	Qualité ou justesse d’une chose, d’une idée, d’un ouvrage.
+valeureuse		valeureux	23
+valeureusement	Avec vaillance, avec courage, d’une manière valeureuse.
+valeureuses		valeureux	1
+valeureux	Qui est brave, vaillant, qui a beaucoup de valeur et de courage.
+valeurs		valeur	0
+valez		valoir	70
+Valga	Commune d’Espagne, située dans la province de Pontevedra et la Communauté autonome de Galice.
+valgus	Caractère de ce qui est dévié vers l’extérieur.
+valida		valider	39
+validai		valider	22
+validaient		valider	32
+validais		valider	29
+validait		valider	40
+validâmes		valider	3
+validant		valider	43
+validas		valider	12
+validasse		valider	6
+validassent		valider	17
+validasses		valider	8
+validassiez		valider	14
+validassions		valider	25
+validât		valider	20
+validâtes		valider	2
+validation	Action de valider, spécialement en termes de procédure.
+validations		validation	0
+valide	Qui est valable, qui a les conditions requises par la loi pour produire son effet.
+validée		validé	23
+validées		valider	36
+validement	Valablement, avec assurance que la chose dont il s’agit aura son effet.
+valident		valider	41
+valider	Rendre valide ou déclarer valide.
+validera		valider	21
+validerai		valider	16
+valideraient		valider	28
+validerais		valider	18
+validerait		valider	26
+valideras		valider	7
+validèrent		valider	24
+validerez		valider	5
+valideriez		valider	4
+validerions		valider	11
+validerons		valider	10
+valideront		valider	54
+validés		valider	38
+valideur	Appareil qui, après avoir validé un titre de transport, autorise le passage de son détenteur.
+valideurs		valideur	9
+valideuse	Appareil servant à valider des bulletins de loterie.
+valideuses		valideuse	0
+validez		valider	30
+validiez		valider	13
+validions		valider	19
+validisme	Oppression vécue par les personnes en situation de handicap physique ou mental.
+validismes		validisme	0
+validiste	Relatif au validisme.
+validistes		validiste	0
+validité	Caractère de ce qui est valide ou valable.
+validités		validité	0
+validons		valider	27
+valiez		valoir	102
+valiha	Variété de cithare tubulaire en bambou que l'on rencontre dans tout Madagascar.
+valihas		valiha	0
+valine	Acide aminé dont la chaîne latérale est (-CH(CH₃)₂).
+valines		valine	0
+valions		valoir	103
+valise	Petite malle de voyage, qu’on porte à la main.
+valises		valise	0
+valisette	Petite valise.
+valisettes		valisette	0
+valium	Diazépam.
+valiums		valium	0
+valkyrie	Déesses messagères d’Odin, qui conduisaient au Walhalla, ou paradis d’Odin, les héros morts sur le champ de bataille, chez les anciens Scandinaves.
+valkyries		valkyrie	0
+vallée	Espace resserré entre deux ou plusieurs montagnes.
+vallées		vallée	0
+valleuse	Dépression du terrain permettant l’accès à la mer inscrit dans la hauteur des falaises crayeuses du Pays de Caux.
+valleuses		valleuse	0
+vallisnérie	Plante monocotylédone herbacée vivant dans les eaux douces des régions chaudes et tempérées d'Europe, d'Amérique, caractérisée par une souche stolonifère, de l…
+vallisnéries		vallisnérie	0
+vallon	Petite vallée, espace de terre resserré entre deux coteaux.
+vallonna		vallonner	33
+vallonnai		vallonner	22
+vallonnaient		vallonner	42
+vallonnais	Relatif à Vallon-Pont-d’Arc, commune de l’Ardèche.
+vallonnait		vallonner	40
+vallonnâmes		vallonner	3
+vallonnant		vallonner	35
+vallonnas		vallonner	12
+vallonnasse		vallonner	6
+vallonnassent		vallonner	17
+vallonnasses		vallonner	8
+vallonnassiez		vallonner	14
+vallonnassions		vallonner	25
+vallonnât		vallonner	20
+vallonnâtes		vallonner	2
+vallonné	Qui présente des vallonnements.
+vallonnée		vallonné	23
+vallonnées		vallonné	1
+vallonnement	Forme de terrain naturel ou artificiel, fait de pentes douces et de vallées peu marquées.
+vallonnements		vallonnement	0
+vallonnent		vallonner	31
+vallonner	Pratiquer des vallonnements.
+vallonnera		vallonner	21
+vallonnerai		vallonner	16
+vallonneraient		vallonner	28
+vallonnerais		vallonner	18
+vallonnerait		vallonner	26
+vallonneras		vallonner	7
+vallonnèrent		vallonner	24
+vallonnerez		vallonner	5
+vallonneriez		vallonner	4
+vallonnerions		vallonner	11
+vallonnerons		vallonner	10
+vallonneront		vallonner	15
+vallonnés		vallonné	9
+vallonneuse		vallonneux	23
+vallonneuses		vallonneux	1
+vallonneux	Vallonné, abondant en vallons.
+vallonnez		vallonner	30
+vallonniez		vallonner	13
+vallonnions		vallonner	19
+vallonnons		vallonner	27
+vallons		vallon	0
+valoche	Valise.
+valoches		valoche	0
+valoir	Être d’un certain prix.
+valons		valoir	73
+valorisa		valoriser	33
+valorisable	Qui peut être valorisé.
+valorisables		valorisable	0
+valorisai		valoriser	22
+valorisaient		valoriser	32
+valorisais		valoriser	29
+valorisait		valoriser	40
+valorisâmes		valoriser	3
+valorisant	Qui valorise, donne un sentiment de valeur.
+valorisante		valorisant	23
+valorisantes		valorisant	1
+valorisants		valorisant	9
+valorisas		valoriser	12
+valorisasse		valoriser	6
+valorisassent		valoriser	17
+valorisasses		valoriser	8
+valorisassiez		valoriser	14
+valorisassions		valoriser	25
+valorisât		valoriser	20
+valorisâtes		valoriser	2
+valorisation	Action de mettre en valeur quelque chose ou quelqu’un.
+valorisations		valorisation	0
+valorisé		valoriser	56
+valorisée		valoriser	45
+valorisées		valoriser	36
+valorisent		valoriser	31
+valoriser	Augmenter le prix ou la rentabilité de quelque chose, donner plus de valeur à quelque chose.
+valorisera		valoriser	21
+valoriserai		valoriser	16
+valoriseraient		valoriser	28
+valoriserais		valoriser	18
+valoriserait		valoriser	26
+valoriseras		valoriser	7
+valorisèrent		valoriser	24
+valoriserez		valoriser	5
+valoriseriez		valoriser	4
+valoriserions		valoriser	11
+valoriserons		valoriser	10
+valoriseront		valoriser	15
+valorisés		valoriser	53
+valorisez		valoriser	47
+valorisiez		valoriser	13
+valorisions		valoriser	19
+valorisons		valoriser	27
+valpolicella	Vin sec de la région de Vénétie.
+valpolicellas		valpolicella	0
+vals		val	0
+valsa		valser	39
+valsai		valser	55
+valsaient		valser	42
+valsais		valser	29
+valsait		valser	40
+valsâmes		valser	3
+valsant		valser	43
+valsas		valser	12
+valsasse		valser	6
+valsassent		valser	17
+valsasses		valser	8
+valsassiez		valser	14
+valsassions		valser	25
+valsât		valser	20
+valsâtes		valser	2
+valse	Danse tournante exécutée par un couple sur un mouvement, habituellement à trois temps.
+valsée		valser	45
+valsées		valser	51
+valsent		valser	41
+valser	Danser la valse, une valse.
+valsera		valser	44
+valserai		valser	16
+valseraient		valser	28
+valserais		valser	18
+valserait		valser	49
+valseras		valser	7
+valsèrent		valser	48
+valserez		valser	5
+valseriez		valser	4
+valserions		valser	11
+valserons		valser	10
+valseront		valser	15
+valses		valse	0
+valseur	Celui qui valse.
+valseurs		valseur	0
+valseuse	Danseuse de valse.
+valseuses		valseuse	0
+valsez		valser	47
+valsiez		valser	13
+valsions		valser	19
+valsons		valser	59
+valu		valoir	56
+valué	Se dit d'un graphe dont les arêtes portent des valeurs calculables.
+values		valoir	51
+valûmes		valoir	3
+valurent		valoir	48
+valus		valoir	38
+valusse		valoir	6
+valussent		valoir	17
+valusses		valoir	8
+valussiez		valoir	14
+valussions		valoir	25
+valût		valoir	62
+valûtes		valoir	2
+valvaire	Relatif aux valves.
+valvaires		valvaire	0
+valve	Sorte de clapet qui empêche le retour du sang après son éjection par le cœur.
+valvée	Variante de valvate.
+valvées		valver	36
+valver	Munir de valves.
+valves	Tableau d’affichage, dans le contexte étudiant.
+valvulaire	Relatif à la valvule.
+valvulaires		valvulaire	0
+valvule	Membrane qui, dans les vaisseaux ou autres conduits du corps de l’homme et de l’animal, dirige les liquides dans un certain sens et les empêche de refluer.
+valvules		valvule	0
+valvulopathie	Maladie des valves du cœur.
+valvulopathies		valvulopathie	0
+valvuloplastie	Opération chirurgicale réparatrice de valve cardiaque.
+valvulotomie	Ablation partielle d'une valvule.
+valvulotomies		valvulotomie	0
+vamp	Femme fatale, séductrice irrésistible.
+vampa		vamper	39
+vampai		vamper	22
+vampaient		vamper	32
+vampais		vamper	29
+vampait		vamper	34
+vampâmes		vamper	3
+vampant		vamper	35
+vampas		vamper	12
+vampasse		vamper	6
+vampassent		vamper	17
+vampasses		vamper	8
+vampassiez		vamper	14
+vampassions		vamper	25
+vampât		vamper	20
+vampâtes		vamper	2
+vampé		vamper	56
+vampée		vamper	37
+vampées		vamper	36
+vampent		vamper	31
+vamper	Se comporter en vamp avec un homme pour le séduire.
+vampera		vamper	21
+vamperai		vamper	16
+vamperaient		vamper	28
+vamperais		vamper	18
+vamperait		vamper	26
+vamperas		vamper	7
+vampèrent		vamper	24
+vamperez		vamper	5
+vamperiez		vamper	4
+vamperions		vamper	11
+vamperons		vamper	10
+vamperont		vamper	15
+vampés		vamper	38
+vampez		vamper	30
+vampiez		vamper	13
+vampions		vamper	19
+vampire	Mort-vivant se nourrissant du sang de ses victimes, ces dernières étant par la suite contaminées et changées en vampire si la saignée ne les avait pas tuées.
+vampires		vampire	0
+vampirique	Relatif aux vampires.
+vampiriques		vampirique	0
+vampirisa		vampiriser	33
+vampirisai		vampiriser	22
+vampirisaient		vampiriser	32
+vampirisais		vampiriser	29
+vampirisait		vampiriser	34
+vampirisâmes		vampiriser	3
+vampirisant		vampiriser	43
+vampirisas		vampiriser	12
+vampirisasse		vampiriser	6
+vampirisassent		vampiriser	17
+vampirisasses		vampiriser	8
+vampirisassiez		vampiriser	14
+vampirisassions		vampiriser	25
+vampirisât		vampiriser	20
+vampirisâtes		vampiriser	2
+vampirisation	Fait de vampiriser, de rendre vampire, ou d’être vampirisé, de devenir vampire.
+vampirisations		vampirisation	0
+vampirisé		vampiriser	56
+vampirisée		vampiriser	37
+vampirisées		vampiriser	51
+vampirisent		vampiriser	31
+vampiriser	Tirer profit, de façon nuisible, du travail ou des biens d’autrui, comme un vampire de sa victime.
+vampirisera		vampiriser	21
+vampiriserai		vampiriser	16
+vampiriseraient		vampiriser	28
+vampiriserais		vampiriser	18
+vampiriserait		vampiriser	26
+vampiriseras		vampiriser	7
+vampirisèrent		vampiriser	24
+vampiriserez		vampiriser	5
+vampiriseriez		vampiriser	4
+vampiriserions		vampiriser	11
+vampiriserons		vampiriser	10
+vampiriseront		vampiriser	15
+vampirisés		vampiriser	38
+vampirisez		vampiriser	30
+vampirisiez		vampiriser	13
+vampirisions		vampiriser	19
+vampirisme	État des vampires.
+vampirismes		vampirisme	0
+vampirisons		vampiriser	27
+vampons		vamper	27
+vamps		vamp	0
+van	Instrument d’osier, en forme de coquille, qui a deux anses, et dont on se sert pour secouer le grain, les impuretés, afin de séparer la paille d’avec le bon gr…
+vanadate	Sel produit par la combinaison de l’acide vanadique avec une base.
+vanadinite	Minéral composé de chlorovanadate de plomb.
+vanadinites		vanadinite	0
+vanadique	Terme présent dans la locution « acide vanadique »
+vanadiques		vanadique	0
+vanadium	Élément chimique de numéro atomique 23 et de symbole V qui fait partie des métaux de transition.
+vanadiums		vanadium	0
+vancouvérois	Relatif à Vancouver, à ses habitants.
+vancouvéroise		vancouvérois	23
+vancouvéroises		vancouvérois	1
+vanda	Genre d'orchidée épiphyte ou épilithe des forêts tropicales d'Asie et d'Océanie.
+vandale	Relatif aux Vandales.
+vandales		vandale	0
+vandalisa		vandaliser	39
+vandalisai		vandaliser	22
+vandalisaient		vandaliser	32
+vandalisais		vandaliser	29
+vandalisait		vandaliser	34
+vandalisâmes		vandaliser	68
+vandalisant		vandaliser	35
+vandalisas		vandaliser	83
+vandalisasse		vandaliser	6
+vandalisassent		vandaliser	17
+vandalisasses		vandaliser	8
+vandalisassiez		vandaliser	14
+vandalisassions		vandaliser	25
+vandalisât		vandaliser	62
+vandalisâtes		vandaliser	84
+vandalisé		vandaliser	56
+vandalisée		vandaliser	37
+vandalisées		vandaliser	36
+vandalisent		vandaliser	41
+vandaliser	Commettre un acte de vandalisme, détériorer avec le souci évident de nuire.
+vandalisera		vandaliser	21
+vandaliserai		vandaliser	16
+vandaliseraient		vandaliser	28
+vandaliserais		vandaliser	18
+vandaliserait		vandaliser	26
+vandaliseras		vandaliser	7
+vandalisèrent		vandaliser	24
+vandaliserez		vandaliser	5
+vandaliseriez		vandaliser	4
+vandaliserions		vandaliser	11
+vandaliserons		vandaliser	10
+vandaliseront		vandaliser	15
+vandalisés		vandaliser	38
+vandalisez		vandaliser	30
+vandalisiez		vandaliser	13
+vandalisions		vandaliser	19
+vandalisme	Acte de vandale, saccage, destruction.
+vandalismes		vandalisme	0
+vandalisons		vandaliser	27
+vandas		vanda	0
+vandois	Relatif à Juvanzé, commune française située dans le département de l’Aube.
+vandoise	Espèce de petit poisson osseux d’eau douce comestible d’Europe et d’Asie.
+vandoises		vandois	1
+vanesse	Papillon de la famille des nymphalidés.
+vanesses		vanesse	0
+vangeron	Poisson des lacs de Lausanne et de Neuchâtel.
+vangerons		vangeron	0
+vanilla	Version la plus simple d'un jeu vidéo, c'est-à-dire qui ne contient pas de mod.
+vanillai		vaniller	22
+vanillaient		vaniller	32
+vanillais		vaniller	29
+vanillait		vaniller	34
+vanillâmes		vaniller	3
+vanillant		vaniller	35
+vanillas		vaniller	12
+vanillasse		vaniller	6
+vanillassent		vaniller	17
+vanillasses		vaniller	8
+vanillassiez		vaniller	14
+vanillassions		vaniller	25
+vanillât		vaniller	20
+vanillâtes		vaniller	2
+vanille	Plante grimpante sempervirente tropicale cultivée pour ses fruits aromatiques de nom scientifique Vanilla planifolia (→ voir vanillier à feuilles planes et van…
+vanillée		vanillé	23
+vanillées		vanillé	1
+vanillent		vaniller	31
+vaniller	Additionner de vanille, donner un goût de vanille à.
+vanillera		vaniller	21
+vanillerai		vaniller	16
+vanilleraient		vaniller	28
+vanillerais		vaniller	18
+vanillerait		vaniller	26
+vanilleras		vaniller	7
+vanillèrent		vaniller	24
+vanillerez		vaniller	5
+vanilleriez		vaniller	4
+vanillerions		vaniller	11
+vanillerons		vaniller	10
+vanilleront		vaniller	15
+vanillés		vaniller	38
+vanillez		vaniller	30
+vanillier	Orchidée grimpante aux longues feuilles vertes charnues et aux fleurs jaunes originaire du Mexique et des Caraïbes.
+vanilliers		vanillier	0
+vanilliez		vaniller	13
+vanilline	Aldéhyde aromatique naturel qui se développe dans les gousses de vanille, caractéristique de son arôme.
+vanillines		vanilline	0
+vanillions		vaniller	19
+vanillisme	Pathologie due aux effets indésirables de la vanille (vertige, conjonctivite, diarrhée, vomissements, insomnie, allergie).
+vanillismes		vanillisme	0
+vanillon	Espèce de vanille très inférieure.
+vanillons		vaniller	27
+vanisage	Procédé de tricotage dans lequel deux fils de matières ou de couleurs différentes sont tricotés l’un sur l’autre.
+vanisages		vanisage	0
+vanisé	Tricoté avec deux fils différents.
+vanisée		vanisé	23
+vanisées		vanisé	1
+vanisés		vanisé	9
+vanité	Caractère de ce qui est vain, futile.
+vanités		vanité	0
+vaniteuse	Personne vaniteuse.
+vaniteusement	D'une manière vaniteuse.
+vaniteuses		vaniteux	1
+vaniteux	Qui a beaucoup de vanité, de désir de paraître.
+vanity	Vanity-case.
+vanitys		vanity	0
+vanna		vanner	39
+vannage	Nettoyage des grains au moyen d’un van.
+vannages		vannage	0
+vannai		vanner	22
+vannaient		vanner	32
+vannais		vanner	52
+vannait		vanner	40
+vannâmes		vanner	3
+vannant		vanner	35
+vannas		vanner	12
+vannasse		vanner	6
+vannassent		vanner	17
+vannasses		vanner	8
+vannassiez		vanner	14
+vannassions		vanner	25
+vannât		vanner	20
+vannâtes		vanner	2
+vanne	Panneau de fermeture fixe et étanche servant à régler le débit d’un fluide liquide, gazeux ou pulvérulent dans une canalisation.
+vanneau	Nom d'une vingtaine d'espèces d'oiseaux petits échassiers limicoles.
+vanneaux		vanneau	0
+vannée	Synonyme de vannure.
+vannées		vanné	1
+vannelle	Variante orthographique de vantelle.
+vannelles		vannelle	0
+vannent		vanner	41
+vanner	Nettoyer les grains au moyen d’un van ou en les lançant en l'air.
+vannera		vanner	21
+vannerai		vanner	16
+vanneraient		vanner	28
+vannerais		vanner	18
+vannerait		vanner	26
+vanneras		vanner	7
+vannèrent		vanner	48
+vannerez		vanner	5
+vannerie	Art du vannier.
+vanneries		vannerie	0
+vanneriez		vanner	4
+vannerions		vanner	11
+vannerons		vanner	10
+vanneront		vanner	15
+vannés		vanné	9
+vannet	Meuble représentant une coquille dont on voit le fond dans les armoiries.
+vannetais	Relatif à Vannes, commune française située dans le département du Morbihan.
+vannetaise		vannetais	23
+vannetaises		vannetais	1
+vannets		vannet	0
+vannette	Grand panier rond, plat et à petit bord, dont on se servait jadis pour vanner l’avoine, avant de la donner aux chevaux.
+vannettes		vannette	0
+vanneur	Celui qui vanne, qui nettoie les grains.
+vanneurs		vanneur	0
+vanneuse	Celle qui vanne, qui nettoie les grains.
+vanneuses		vanneuse	0
+vannez		vanner	30
+vannier	Relatif à la vannerie et aux vanniers.
+vannière	Ouvrière ou artisane qui travaille les fibres d'origine végétales et qui fait des vans, des corbeilles, des paniers, des hottes, etc.
+vannières		vannier	1
+vanniers		vannier	9
+vanniez		vanner	13
+vannions		vanner	19
+vannons		vanner	27
+vannure	Poussière des balles et de tous les corps légers qui s’en vont par le vannage.
+vannures		vannure	0
+Vanouatais	Habitant du Vanouatou.
+vans		van	0
+vanta		vanter	39
+vantai		vanter	55
+vantaient		vanter	42
+vantail	Battant d’une porte, d’une fenêtre.
+vantais		vanter	52
+vantait		vanter	40
+vantâmes		vanter	3
+vantant		vanter	43
+vantard	Qui a l’habitude de se vanter.
+vantarde	Personne se vantant facilement.
+vantardes		vantard	1
+vantardise	Habitude de se vanter.
+vantardises		vantardise	0
+vantards		vantard	9
+vantas		vanter	12
+vantasse		vanter	6
+vantassent		vanter	17
+vantasses		vanter	8
+vantassiez		vanter	14
+vantassions		vanter	25
+vantât		vanter	62
+vantâtes		vanter	2
+vantaux		vantail	0
+vanté	Loué, recommandé
+vantée		vanté	23
+vantées		vanté	1
+vantelle	Vanne à guichet coulissant dans un cadre.
+vantelles		vantelle	0
+vantent		vanter	41
+vanter	Louer, exalter.
+vantera		vanter	44
+vanterai		vanter	50
+vanteraient		vanter	28
+vanterais		vanter	60
+vanterait		vanter	49
+vanteras		vanter	57
+vantèrent		vanter	24
+vanterez		vanter	5
+vanterie	Vaine louange qu’on se donne à soi-même et qui marque de la présomption.
+vanteries		vanterie	0
+vanteriez		vanter	4
+vanterions		vanter	11
+vanterons		vanter	10
+vanteront		vanter	54
+vantés		vanté	9
+vantez		vanter	30
+vantiez		vanter	67
+vantions		vanter	65
+vantons		vanter	59
+vanuatais	Qui a un rapport avec la république du Vanuatu ou ses habitants.
+vanuataise		vanuatais	23
+vanuataises		vanuatais	1
+vanupied	Variante orthographique de va-nu-pieds.
+vanupieds		vanupied	0
+vape	Situation louche.
+vapes		vape	0
+vapeur	Exhalaison gazeuse résultant de la transformation partielle ou totale d’une substance ordinairement liquide ou solide en gaz.
+vapeurs		vapeur	0
+vapo	Vaporisateur.
+vapocraquage	Procédé par lequel des hydrocarbures saturés sont cassés en molécules plus petites, à l’aide de la vapeur.
+vapocraquages		vapocraquage	0
+vapocraqueur	Installation industrielle où l’on réalise le vapocraquage.
+vapocraqueurs		vapocraqueur	0
+vaporetto	Bateau faisant office de transport public à Venise et, par extension, en Suisse.
+vaporettos		vaporetto	0
+vaporeuse		vaporeux	23
+vaporeusement	De façon vaporeuse.
+vaporeuses		vaporeux	1
+vaporeux	Qui contient ou semble contenir de la vapeur.
+vaporisa		vaporiser	39
+vaporisage	Séchage à la vapeur pour fixer les colorants sur les tissus.
+vaporisages		vaporisage	0
+vaporisai		vaporiser	55
+vaporisaient		vaporiser	32
+vaporisais		vaporiser	52
+vaporisait		vaporiser	40
+vaporisâmes		vaporiser	3
+vaporisant		vaporiser	43
+vaporisas		vaporiser	12
+vaporisasse		vaporiser	6
+vaporisassent		vaporiser	17
+vaporisasses		vaporiser	8
+vaporisassiez		vaporiser	14
+vaporisassions		vaporiser	25
+vaporisât		vaporiser	20
+vaporisâtes		vaporiser	2
+vaporisateur	Qui vaporise.
+vaporisateurs		vaporisateur	0
+vaporisation	Changement d’état de liquide à gazeux.
+vaporisations		vaporisation	0
+vaporisatrice		vaporisateur	23
+vaporisatrices		vaporisateur	1
+vaporisé		vaporiser	56
+vaporisée		vaporiser	45
+vaporisées		vaporiser	51
+vaporisent		vaporiser	41
+vaporiser	Faire passer une substance de l’état liquide à l’état gazeux.
+vaporisera		vaporiser	21
+vaporiserai		vaporiser	50
+vaporiseraient		vaporiser	28
+vaporiserais		vaporiser	18
+vaporiserait		vaporiser	49
+vaporiseras		vaporiser	7
+vaporisèrent		vaporiser	24
+vaporiserez		vaporiser	5
+vaporiseriez		vaporiser	4
+vaporiserions		vaporiser	11
+vaporiserons		vaporiser	10
+vaporiseront		vaporiser	15
+vaporises		vaporiser	77
+vaporisez		vaporiser	47
+vaporisiez		vaporiser	13
+vaporisions		vaporiser	19
+vaporisons		vaporiser	27
+vapos		vapo	0
+vapota		vapoter	39
+vapotage	Consommation de cigarette électronique.
+vapotages		vapotage	0
+vapotai		vapoter	55
+vapotaient		vapoter	42
+vapotais		vapoter	52
+vapotait		vapoter	40
+vapotâmes		vapoter	68
+vapotant		vapoter	43
+vapotas		vapoter	83
+vapotasse		vapoter	81
+vapotassent		vapoter	78
+vapotasses		vapoter	87
+vapotassiez		vapoter	88
+vapotassions		vapoter	90
+vapotât		vapoter	62
+vapotâtes		vapoter	84
+vapote	Fait de vapoter, d’utiliser une cigarette électronique.
+vapotée		vapoter	45
+vapotées		vapoter	51
+vapotent		vapoter	41
+vapoter	Utiliser une cigarette électronique.
+vapotera		vapoter	44
+vapoterai		vapoter	50
+vapoteraient		vapoter	63
+vapoterais		vapoter	60
+vapoterait		vapoter	49
+vapoteras		vapoter	57
+vapotèrent		vapoter	48
+vapoterez		vapoter	58
+vapoteriez		vapoter	74
+vapoterions		vapoter	82
+vapoterons		vapoter	61
+vapoteront		vapoter	54
+vapotés		vapoter	53
+vapoteur	Utilisateur d’une cigarette électronique.
+vapoteurs		vapoteur	0
+vapoteuse	Cigarette électronique.
+vapoteuses		vapoteuse	0
+vapotez		vapoter	47
+vapotiez		vapoter	67
+vapotions		vapoter	65
+vapotons		vapoter	59
+vaqua		vaquer	33
+vaquai		vaquer	55
+vaquaient		vaquer	42
+vaquais		vaquer	52
+vaquait		vaquer	40
+vaquâmes		vaquer	3
+vaquant		vaquer	43
+vaquas		vaquer	12
+vaquasse		vaquer	6
+vaquassent		vaquer	17
+vaquasses		vaquer	8
+vaquassiez		vaquer	14
+vaquassions		vaquer	25
+vaquât		vaquer	20
+vaquâtes		vaquer	2
+vaque		vaquer	64
+vaquent		vaquer	41
+vaquer	Être vacant, ne pas être occupé, ne pas être rempli.
+vaquera	Gardienne ou éleveuse de bétail, en Espagne et en Amérique latine.
+vaquerai		vaquer	16
+vaqueraient		vaquer	28
+vaquerais		vaquer	18
+vaquerait		vaquer	49
+vaqueras		vaquer	7
+vaquèrent		vaquer	24
+vaquerez		vaquer	5
+vaqueriez		vaquer	4
+vaquerions		vaquer	11
+vaquero	Gardien ou éleveur de bétail en Espagne et en Amérique latine.
+vaquerons		vaquer	10
+vaqueront		vaquer	15
+vaquéros	Variante orthographique de vaqueros.
+vaques		vaquer	66
+vaquez		vaquer	30
+vaquiez		vaquer	13
+vaquions		vaquer	65
+vaquons		vaquer	59
+var	Unité de puissance réactive qui correspond à un courant alternatif de 1 ampère sous une chute de tension de 1 volt
+vara	Mesure de longueur d’environ 85 centimètres, utilisée en Espagne, au Portugal et en Amérique du Sud.
+varaigne	Ouverture par laquelle l’eau de la mer entre dans le premier réservoir d’un marais salant.
+varaignes		varaigne	0
+varan	Sorte de grand lézard de la famille des varanidés.
+varangue	Pièce raidisseuse de la membrure d’un navire, placée sur un plan perpendiculaire au dessus de la quille.
+varangues		varangue	0
+varans		varan	0
+varappa		varapper	33
+varappai		varapper	22
+varappaient		varapper	32
+varappais		varapper	29
+varappait		varapper	34
+varappâmes		varapper	3
+varappant		varapper	35
+varappas		varapper	12
+varappasse		varapper	6
+varappassent		varapper	17
+varappasses		varapper	8
+varappassiez		varapper	14
+varappassions		varapper	25
+varappât		varapper	20
+varappâtes		varapper	2
+varappe	Sport consistant à atteindre le haut d’une structure naturelle ou artificielle.
+varappent		varapper	31
+varapper	Pratiquer la varappe.
+varappera		varapper	21
+varapperai		varapper	16
+varapperaient		varapper	28
+varapperais		varapper	18
+varapperait		varapper	26
+varapperas		varapper	7
+varappèrent		varapper	24
+varapperez		varapper	5
+varapperiez		varapper	4
+varapperions		varapper	11
+varapperons		varapper	10
+varapperont		varapper	15
+varappés		varapper	38
+varappeur	Personne pratiquant la varappe, l’escalade.
+varappeurs		varappeur	0
+varappeuse	Personne pratiquant la varappe, l’escalade.
+varappeuses		varappeuse	0
+varappez		varapper	30
+varappiez		varapper	13
+varappions		varapper	19
+varappons		varapper	27
+varech	Algue ou plante marine qui pousse sur les roches que la mer tantôt couvre et tantôt laisse à sec.
+varechs		varech	0
+varenne	Terrain inculte, où les bestiaux trouvent pâture et que le gibier fréquente.
+varennes		varenne	0
+vareuse	Sorte de blouse que portent les matelots.
+vareuses		vareuse	0
+varheure	Unité d'énergie correspondant à la mise en jeu, pendant une heure, d'une puissance réactive de 1 var.
+varheures		varheure	0
+varia	Recueil de pièces diverses et variées.
+variabilité	Disposition habituelle à varier.
+variabilités		variabilité	0
+variable	Qui est susceptible de changer, de varier, d’évoluer.
+variablement	D’une manière variable.
+variables		variable	0
+variai		varier	55
+variaient		varier	42
+variais		varier	52
+variait		varier	40
+variâmes		varier	3
+variance	Mesure de la dispersion des échantillons autour de la moyenne.
+variances		variance	0
+variant	Qui change souvent.
+variante	Version d’un même texte, d’une histoire, d’un mot, d’une lettre.
+variantes		variant	1
+variants		variant	9
+varias		varier	12
+variasse		varier	6
+variassent		varier	17
+variasses		varier	8
+variassiez		varier	14
+variassions		varier	25
+variât		varier	62
+variâtes		varier	2
+variateur	Appareil permettant de varier :
+variateurs		variateur	0
+variation	Changement.
+variations		variation	0
+varice	Dilatation permanente d’une veine, produite par l’accumulation du sang dans sa cavité.
+varicelle	Maladie infectieuse et contagieuse, qui affecte particulièrement les enfants et qui est caractérisée par une éruption de petites vésicules.
+varicelles		varicelle	0
+varices		varice	0
+varicocèle	Tumeur formée par la dilatation variqueuse des veines du scrotum et du cordon spermatique.
+varicocèles		varicocèle	0
+varicosité	Petite formation variqueuse dans le derme.
+varicosités		varicosité	0
+varié	Qui présente des aspects ou éléments distincts.
+variée		varié	23
+variées		varié	1
+varient		varier	41
+varier	Diversifier.
+variera		varier	21
+varierai		varier	50
+varieraient		varier	63
+varierais		varier	18
+varierait		varier	49
+varieras		varier	7
+varièrent		varier	24
+varierez		varier	5
+varieriez		varier	4
+varierions		varier	11
+varierons		varier	10
+varieront		varier	54
+variés		varié	9
+variétal	Relatif à une variété, dans son sens en sciences naturelles.
+variétale		variétal	23
+variétales		variétal	1
+variétaux		variétal	9
+variété	État de ce qui est varié, diversité.
+variétés		variété	0
+variétoche	Variétés (chanson ou musique) de très mauvaise qualité.
+variétoches		variétoche	0
+variez		varier	47
+variiez		varier	13
+variions		varier	19
+variole	Maladie générale, infectieuse et contagieuse, des humains et des animaux, caractérisée par une éruption de boutons pustuleux, qui laissent ordinairement de pet…
+variolée		variolé	23
+variolées		variolé	1
+varioles		variole	0
+varioleuse	Femme atteinte de la variole.
+varioleuses		varioleux	1
+varioleux	Qui a la variole.
+variolique	Relatif à la variole.
+varioliques		variolique	0
+variolisation	Inoculation de la variole.
+variolisations		variolisation	0
+variolite	Roche de cristallisation, constituée par une pâte de pétrosilex de diverses couleurs, renfermant des noyaux sphéroïdaux de pétrosilex, dont la couleur diffère …
+variolites		variolite	0
+variomètre	Instrument de bord qui indique la vitesse verticale d'un aéronef (vitesse ascensionnelle ou taux de chute).
+variomètres		variomètre	0
+varions		varier	27
+variorum	Imprimé avec des notes de plusieurs commentateurs, pour des œuvres en latin.
+variqueuse		variqueux	109
+variqueuses		variqueux	1
+variqueux	Qui est affecté de varices.
+varistance	Résistance dont la conductivité augmente avec la tension à ses bornes.
+varistances		varistance	0
+varlet	Page, jeune seigneur, au temps de la chevalerie.
+varlets		varlet	0
+varlopa		varloper	33
+varlopage	Action de varloper.
+varlopages		varlopage	0
+varlopai		varloper	22
+varlopaient		varloper	32
+varlopais		varloper	29
+varlopait		varloper	34
+varlopâmes		varloper	3
+varlopant		varloper	35
+varlopas		varloper	12
+varlopasse		varloper	6
+varlopassent		varloper	17
+varlopasses		varloper	8
+varlopassiez		varloper	14
+varlopassions		varloper	25
+varlopât		varloper	20
+varlopâtes		varloper	2
+varlope	Grand rabot muni d’une poignée, qui sert aux menuisiers et aux charpentiers pour dresser et aplanir les pièces de bois.
+varlopée		varloper	37
+varlopées		varloper	36
+varlopent		varloper	31
+varloper	Polir, raboter avec la varlope.
+varlopera		varloper	21
+varloperai		varloper	16
+varloperaient		varloper	28
+varloperais		varloper	18
+varloperait		varloper	26
+varloperas		varloper	7
+varlopèrent		varloper	24
+varloperez		varloper	5
+varloperiez		varloper	4
+varloperions		varloper	11
+varloperons		varloper	10
+varloperont		varloper	15
+varlopés		varloper	38
+varlopez		varloper	30
+varlopiez		varloper	13
+varlopions		varloper	19
+varlopons		varloper	27
+varmètre	Instrument de mesure des vars, unité de puissance électrique.
+varmètres		varmètre	0
+varna	Caste hindoue.
+varnas		varna	0
+varois	Relatif au Var ou aux Varois.
+varoise		varois	23
+varoises		varois	1
+varon	Variante de varron.
+varonné	Attaqué par les varrons, en parlant d’un bovin d’élevage.
+varonnée		varonné	23
+varonnées		varonné	1
+varonnés		varonné	9
+varons		varon	0
+varroa	Acarien qui parasite les abeilles, de nom scientifique Varroa destructor.
+varroas		varroa	0
+varroase	Maladie parasitaire des abeilles due au varroa.
+varron	Larve de l'hypoderme, mouche parasite de la peau des ruminants.
+varronné	Variante orthographique de varonné.
+varronnée		varronné	23
+varronnées		varronné	1
+varronnés		varronné	9
+varrons		varron	0
+vars		var	0
+varsovien	Relatif à Varsovie ou à ses habitants.
+varsovienne	Synonyme de varsoviana.
+varsoviennes		varsovienne	0
+varsoviens		varsovien	9
+varus	Dévié vers l'intérieur.
+varve	Couche sédimentaire annuelle des milieux lacustres.
+varves		varve	0
+vas		aller	113
+vasa		vaser	134
+vasai		vaser	55
+vasaient		vaser	75
+vasais	Grand bassin de saline dans lequel arrive l’eau de mer.
+vasait		vaser	40
+vasâmes		vaser	68
+vasant		vaser	35
+vasard	Vaseux
+vasarde		vasard	23
+vasardes		vasard	1
+vasards		vasard	9
+vasas		vaser	83
+vasasse		vaser	81
+vasassent		vaser	78
+vasasses		vaser	87
+vasassiez		vaser	88
+vasassions		vaser	90
+vasât		vaser	20
+vasâtes		vaser	84
+vasculaire	Qui appartient, qui a rapport aux vaisseaux.
+vasculaires		vasculaire	0
+vascularisation	Production de vaisseaux dans un tissu qui n’en contenait pas, ou augmentation du nombre de ceux qui existaient.
+vascularisé	Qui contient beaucoup de vaisseaux sanguins.
+vascularisée		vasculariser	37
+vascularisées		vasculariser	36
+vasculariser	Irriguer de nombreux vaisseaux sanguins.
+vascularisés		vasculariser	38
+vascularité	Présence des vaisseaux sanguins ou lymphatiques en quantité plus ou moins grande.
+vascularités		vascularité	0
+vasculonerveuse		vasculonerveux	23
+vasculonerveux	Composé de vaisseaux et de nerfs.
+vase	Bourbe, limon qui se dépose au fond de la mer, des fleuves, des étangs, etc.
+vasectomie	Section des canaux déférents ayant pour but de rendre stérile un homme, les spermatozoïdes ne pouvant plus être transportés des testicules à l'urètre.
+vasectomies		vasectomie	0
+vasectomisa		vasectomiser	33
+vasectomisai		vasectomiser	22
+vasectomisaient		vasectomiser	32
+vasectomisais		vasectomiser	29
+vasectomisait		vasectomiser	34
+vasectomisâmes		vasectomiser	3
+vasectomisant		vasectomiser	35
+vasectomisas		vasectomiser	12
+vasectomisasse		vasectomiser	6
+vasectomisasses		vasectomiser	8
+vasectomisât		vasectomiser	20
+vasectomisâtes		vasectomiser	2
+vasectomisé		vasectomiser	46
+vasectomisée		vasectomiser	37
+vasectomisées		vasectomiser	36
+vasectomisent		vasectomiser	31
+vasectomiser	Sectionner les canaux déférents, pratiquer une vasectomie pour rendre stérile un homme ou un animal mâle, les spermatozoïdes ne pouvant plus être transportés d…
+vasectomisera		vasectomiser	21
+vasectomiserai		vasectomiser	16
+vasectomiserais		vasectomiser	18
+vasectomiserait		vasectomiser	26
+vasectomiseras		vasectomiser	7
+vasectomisèrent		vasectomiser	24
+vasectomiserez		vasectomiser	5
+vasectomiseriez		vasectomiser	4
+vasectomiserons		vasectomiser	10
+vasectomiseront		vasectomiser	15
+vasectomisés		vasectomiser	38
+vasectomisez		vasectomiser	30
+vasectomisiez		vasectomiser	13
+vasectomisions		vasectomiser	19
+vasectomisons		vasectomiser	27
+vasée		vaser	45
+vasées		vaser	51
+vaselina		vaseliner	33
+vaselinai		vaseliner	22
+vaselinaient		vaseliner	32
+vaselinais		vaseliner	29
+vaselinait		vaseliner	34
+vaselinâmes		vaseliner	3
+vaselinant		vaseliner	35
+vaselinas		vaseliner	12
+vaselinasse		vaseliner	6
+vaselinassent		vaseliner	17
+vaselinasses		vaseliner	8
+vaselinassiez		vaseliner	14
+vaselinassions		vaseliner	25
+vaselinât		vaseliner	20
+vaselinâtes		vaseliner	2
+vaseline	Substance blanche, onctueuse, extraite du pétrole, et qui constitue une sorte de pommade.
+vaselinée		vaseliner	37
+vaselinées		vaseliner	36
+vaselinent		vaseliner	31
+vaseliner	Enduire de vaseline.
+vaselinera		vaseliner	21
+vaselinerai		vaseliner	16
+vaselineraient		vaseliner	28
+vaselinerais		vaseliner	18
+vaselinerait		vaseliner	26
+vaselineras		vaseliner	7
+vaselinèrent		vaseliner	24
+vaselinerez		vaseliner	5
+vaselineriez		vaseliner	4
+vaselinerions		vaseliner	11
+vaselinerons		vaseliner	10
+vaselineront		vaseliner	15
+vaselinés		vaseliner	38
+vaselinez		vaseliner	47
+vaseliniez		vaseliner	13
+vaselinions		vaseliner	19
+vaselinons		vaseliner	27
+vasent		vaser	69
+vaser	Pleuvoir en général, pleuvoir beaucoup, pleuvoir à verse.
+vasera		vaser	21
+vaserai		vaser	50
+vaseraient		vaser	63
+vaserais		vaser	60
+vaserait		vaser	26
+vaseras		vaser	57
+vasèrent		vaser	48
+vaserez		vaser	58
+vaseriez		vaser	74
+vaserions		vaser	82
+vaserons		vaser	61
+vaseront		vaser	54
+vases		vase	0
+vaseuse		vaseux	23
+vaseuses		vaseux	1
+vaseux	Qui contient de la vase.
+vasez		vaser	70
+vasière	Grand bassin de saline dans lequel arrive l’eau de mer.
+vasières		vasière	0
+vasiez		vaser	100
+vasions		vaser	94
+vasistas	Ouverture aménagée dans une fenêtre ou dans une porte, à hauteur d’yeux.
+vasodilatateur	Qui permet de dilater les vaisseaux sanguins en relâchant les muscles lisses des parois de ces vaisseaux.
+vasodilatateurs		vasodilatateur	0
+vasodilatation	Dilatation des vaisseaux sanguins.
+vasodilatations		vasodilatation	0
+vasodilatatrice		vasodilatateur	23
+vasomoteur	Qui produit les mouvements des vaisseaux sanguins.
+vasomoteurs		vasomoteur	9
+vasomotrice		vasomoteur	23
+vasomotrices		vasomoteur	1
+vasomotricité	Propriété des vaisseaux sanguins à varier en diamètre.
+vasomotricités		vasomotricité	0
+vason	Motte de terre préparée, qui servait à façonner à la main la tuile ou la brique.
+vasons		vason	0
+vasopresseur	Désigne une substance qui augmente la pression sanguine et qui contracte les artères.
+vasopresseurs		vasopresseur	0
+vasopressine	Hormone peptidique synthétisée par l’hypothalamus et libérée par l’hypophyse postérieure.
+vasopressines		vasopressine	0
+vasotomie	Vasectomie.
+vasotomies		vasotomie	0
+vasouilla		vasouiller	33
+vasouillai		vasouiller	22
+vasouillaient		vasouiller	32
+vasouillais		vasouiller	29
+vasouillait		vasouiller	34
+vasouillâmes		vasouiller	3
+vasouillant		vasouiller	35
+vasouillard	Qui a l'esprit embrumé, mal réveillé, vaseux.
+vasouillarde		vasouillard	23
+vasouillardes		vasouillard	1
+vasouillards		vasouillard	9
+vasouillas		vasouiller	12
+vasouillasse		vasouiller	6
+vasouillassent		vasouiller	17
+vasouillasses		vasouiller	8
+vasouillassiez		vasouiller	14
+vasouillassions		vasouiller	25
+vasouillât		vasouiller	20
+vasouillâtes		vasouiller	2
+vasouille	Zone marécageuse.
+vasouillent		vasouiller	31
+vasouiller	Être empêtré dans ses explications ou dans ce qu’on fait.
+vasouillera		vasouiller	21
+vasouillerai		vasouiller	16
+vasouilleraient		vasouiller	28
+vasouillerais		vasouiller	18
+vasouillerait		vasouiller	26
+vasouilleras		vasouiller	7
+vasouillèrent		vasouiller	24
+vasouillerez		vasouiller	5
+vasouilleriez		vasouiller	4
+vasouillerions		vasouiller	11
+vasouillerons		vasouiller	10
+vasouilleront		vasouiller	15
+vasouilles		vasouiller	77
+vasouillez		vasouiller	30
+vasouilliez		vasouiller	13
+vasouillions		vasouiller	19
+vasouillons		vasouiller	27
+vasque	Sorte de bassin rond et peu profond, qui reçoit l’eau d’une fontaine, d’un jet d’eau.
+vasques		vasque	0
+vassal	Qui est dépendant d’un seigneur, d'un suzerain, d’un souverain.
+vassale	Celle qui est liée par serment d’allégeance et d’hommage à un suzerain qui en retour lui reconnaît la propriété d’un fief.
+vassales		vassal	1
+vassalique	Relatif à la vassalité.
+vassaliques		vassalique	0
+vassalisa		vassaliser	33
+vassalisai		vassaliser	22
+vassalisaient		vassaliser	32
+vassalisais		vassaliser	29
+vassalisait		vassaliser	34
+vassalisâmes		vassaliser	3
+vassalisant		vassaliser	35
+vassalisas		vassaliser	12
+vassalisasse		vassaliser	6
+vassalisassent		vassaliser	17
+vassalisasses		vassaliser	8
+vassalisassiez		vassaliser	14
+vassalisassions		vassaliser	25
+vassalisât		vassaliser	20
+vassalisâtes		vassaliser	2
+vassalisation	Action de vassaliser.
+vassalisations		vassalisation	0
+vassalisé		vassaliser	46
+vassalisée		vassaliser	37
+vassalisées		vassaliser	36
+vassalisent		vassaliser	31
+vassaliser	Faire devenir son vassal.
+vassalisera		vassaliser	21
+vassaliserai		vassaliser	16
+vassaliseraient		vassaliser	28
+vassaliserais		vassaliser	18
+vassaliserait		vassaliser	26
+vassaliseras		vassaliser	7
+vassalisèrent		vassaliser	24
+vassaliserez		vassaliser	5
+vassaliseriez		vassaliser	4
+vassaliserions		vassaliser	11
+vassaliserons		vassaliser	10
+vassaliseront		vassaliser	15
+vassalisés		vassaliser	38
+vassalisez		vassaliser	30
+vassalisiez		vassaliser	13
+vassalisions		vassaliser	19
+vassalisons		vassaliser	27
+vassalité	Condition, dépendance du vassal par rapport au seigneur.
+vassalités		vassalité	0
+vassaux		vassal	0
+vasselage	État, condition de vassal.
+vasselages		vasselage	0
+vassiveau	Agneau d’un à deux ans.
+vassiveaux		vassiveau	0
+vaste	Qui est d’une grande étendue.
+vastement	D’une manière vaste.
+vastes		vaste	0
+vastitude	Vaste étendue.
+vastitudes		vastitude	0
+VAT	Appareil servant à vérifier qu’un circuit est bien hors tension, et que donc on peut y travailler en sécurité.
+vatican	Relatif au Vatican.
+vaticane	Féminin singulier de vatican.
+vaticanes		vatican	1
+vaticans		vatican	9
+vaticina		vaticiner	33
+vaticinai		vaticiner	22
+vaticinaient		vaticiner	32
+vaticinais		vaticiner	29
+vaticinait		vaticiner	40
+vaticinâmes		vaticiner	3
+vaticinant		vaticiner	43
+vaticinas		vaticiner	12
+vaticinasse		vaticiner	6
+vaticinassent		vaticiner	17
+vaticinasses		vaticiner	8
+vaticinassiez		vaticiner	14
+vaticinassions		vaticiner	25
+vaticinât		vaticiner	20
+vaticinâtes		vaticiner	2
+vaticinateur	Qui vaticine.
+vaticinateurs		vaticinateur	279
+vaticination	Prédiction des choses futures, prophétie.
+vaticinations		vaticination	0
+vaticinatrice	Celle qui fait des vaticinations, prédictions de choses futures.
+vaticinatrices		vaticinateur	1
+vaticine		vaticiner	64
+vaticinent		vaticiner	31
+vaticiner	Prophétiser avec emphase.
+vaticinera		vaticiner	21
+vaticinerai		vaticiner	16
+vaticineraient		vaticiner	28
+vaticinerais		vaticiner	18
+vaticinerait		vaticiner	26
+vaticineras		vaticiner	7
+vaticinèrent		vaticiner	24
+vaticinerez		vaticiner	5
+vaticineriez		vaticiner	4
+vaticinerions		vaticiner	11
+vaticinerons		vaticiner	10
+vaticineront		vaticiner	15
+vaticines		vaticiner	66
+vaticinez		vaticiner	30
+vaticiniez		vaticiner	13
+vaticinions		vaticiner	19
+vaticinons		vaticiner	27
+vatout	Variante orthographique de va-tout.
+vatouts		vatout	0
+vatrouchka	Gâteau au fromage blanc d’origine ukrainienne et russe.
+vatrouchkas		vatrouchka	0
+vatu	Devise officielle du Vanuatu depuis 1982.
+vatus		vatu	0
+vau	Partie du cintre utilisée pour soutenir la voute pendant sa construction.
+vauchérie	Algue verte d'eau douce
+vauchéries		vauchérie	0
+vauclusien	Relatif au Vaucluse (département français) ou à ses habitants.
+vauclusienne		vauclusien	23
+vauclusiennes		vauclusien	1
+vauclusiens		vauclusien	9
+vaudaire	Vent estival soufflant sur le lac Léman depuis le sud-est.
+vaudeville	Comédie légère, qui utilise des procédés comme la complication de l’intrigue et l’emploi du quiproquo.
+vaudevilles		vaudeville	0
+vaudevillesque	Qui fait penser aux pièces de vaudeville.
+vaudevillesques		vaudevillesque	0
+vaudevilliste	Celui, celle qui écrit des vaudevilles pour le théâtre.
+vaudevillistes		vaudevilliste	118
+vaudevire	Variante de Vaudevire.
+vaudevires		vaudevire	0
+vaudois	Parler (dialecte franco-provençal) du canton de Vaud.
+vaudoise	Variante de vandoise.
+vaudoises		vaudois	1
+vaudou	Religion animiste originaire de l’ancien royaume du Dahomey, répandue au Bénin et au Togo, aux Antilles et en Amérique latine, principalement.
+vaudoue		vaudou	23
+vaudoues		vaudou	1
+vaudous		vaudou	9
+vaudra		valoir	44
+vaudrai		valoir	50
+vaudraient		valoir	97
+vaudrais		valoir	96
+vaudrait		valoir	92
+vaudras		valoir	57
+vaudrez		valoir	58
+vaudriez		valoir	99
+vaudrion	Relatif à Vaudrey, commune française située dans le département du Jura.
+vaudrions		vaudrion	9
+vaudrons		valoir	61
+vaudront		valoir	54
+vaurien	Fainéant, libertin, être dénué de toute valeur morale.
+vaurienne	Fainéante, libertine, être dénuée de toute valeur morale.
+vauriennes		vaurien	1
+vauriens		vaurien	0
+vaut		valoir	80
+vautour	Oiseau rapace charognard, à tête et à col nus.
+vautours		vautour	0
+vautra		vautrer	39
+vautrai		vautrer	22
+vautraient		vautrer	42
+vautrais		vautrer	52
+vautrait	Équipage royal de chasse pour le sanglier.
+vautraits		vautrait	0
+vautrâmes		vautrer	3
+vautrant		vautrer	43
+vautras		vautrer	12
+vautrasse		vautrer	6
+vautrassent		vautrer	17
+vautrasses		vautrer	8
+vautrassiez		vautrer	14
+vautrassions		vautrer	25
+vautrât		vautrer	20
+vautrâtes		vautrer	2
+vautre	Chien de chasse à la bête noire (ours, sanglier).
+vautrée		vautré	23
+vautrées		vautré	1
+vautrent		vautrer	41
+vautrer	Chasser le sanglier avec le vautrait.
+vautrera		vautrer	21
+vautrerai		vautrer	16
+vautreraient		vautrer	63
+vautrerais		vautrer	60
+vautrerait		vautrer	26
+vautreras		vautrer	7
+vautrèrent		vautrer	48
+vautrerez		vautrer	5
+vautreriez		vautrer	4
+vautrerions		vautrer	11
+vautrerons		vautrer	10
+vautreront		vautrer	15
+vautrés		vautré	9
+vautrez		vautrer	47
+vautriez		vautrer	13
+vautrions		vautrer	19
+vautrons		vautrer	27
+Vauvert	Commune située dans le département du Gard, en France.
+vaux		val	200
+vavassal	Synonyme de vavasseur.
+vavasseur	Vassal d’un vassal, arrière-vassal.
+vavasseurs		vavasseur	0

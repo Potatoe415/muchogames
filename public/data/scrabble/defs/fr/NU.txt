@@ -1,0 +1,463 @@
+nu	Qui n’a pas de vêtements, qui est dévêtu.
+nua		nuer	39
+nuage	Amas de gouttelettes d’eau maintenues en suspension dans l’atmosphère et qui se résolvent ordinairement en pluie.
+nuages		nuage	0
+nuageuse		nuageux	23
+nuageuses		nuageux	1
+nuageux	Où il y a des nuages.
+nuai		nuer	22
+nuaient		nuer	32
+nuais		nuer	29
+nuaison	Durée d’un vent soutenu.
+nuaisons		nuaison	0
+nuait		nuer	34
+nuâmes		nuer	3
+nuança		nuancer	39
+nuançai		nuancer	22
+nuançaient		nuancer	42
+nuançais		nuancer	29
+nuançait		nuancer	40
+nuançâmes		nuancer	3
+nuançant		nuancer	43
+nuanças		nuancer	12
+nuançasse		nuancer	6
+nuançassent		nuancer	17
+nuançasses		nuancer	8
+nuançassiez		nuancer	14
+nuançassions		nuancer	25
+nuançât		nuancer	62
+nuançâtes		nuancer	2
+nuance	Chacun des degrés différents par lesquels peut passer une couleur, en conservant le nom qui la distingue des autres.
+nuancée		nuancé	23
+nuancées		nuancé	1
+nuancément	D’une manière nuancée.
+nuancements		nuancement	0
+nuancent		nuancer	31
+nuancer	Diversifier les couleurs en les disposant de manière qu’il se fasse une transition insensible d’une couleur à l’autre, ou une gradation insensible dans une mêm…
+nuancera		nuancer	21
+nuancerai		nuancer	16
+nuanceraient		nuancer	28
+nuancerais		nuancer	18
+nuancerait		nuancer	26
+nuanceras		nuancer	7
+nuancèrent		nuancer	24
+nuancerez		nuancer	5
+nuanceriez		nuancer	4
+nuancerions		nuancer	11
+nuancerons		nuancer	10
+nuanceront		nuancer	15
+nuancés		nuancé	9
+nuancez		nuancer	30
+nuancier	Palette présentant les nuances d’un produit coloré, encre, peinture, crépis, teinture, tissus, etc.
+nuanciers		nuancier	0
+nuanciez		nuancer	13
+nuancions		nuancer	19
+nuançons		nuancer	27
+nuant		nuer	35
+nuas		nuer	83
+nuasse		nuer	6
+nuassent		nuer	17
+nuasses		nuer	8
+nuassiez		nuer	14
+nuassions		nuer	25
+nuât		nuer	62
+nuâtes		nuer	2
+nuba	Relatif à l'ethnie, qui y habite ou en est originaire.
+nubien	Relatif à la Nubie, son peuple, son histoire.
+nubienne		nubien	23
+nubiennes		nubien	1
+nubiens		nubien	9
+nubile	Qui est en âge de se marier.
+nubiles		nubile	0
+nubilité	État d’une personne nubile, en âge de procréer, de se marier.
+nubilités		nubilité	0
+nubuck	Cuir de bovin dont la surface côté fleur est poncée afin de lui donner un aspect velouté et de la douceur au toucher, utilisé pour l’ameublement (fauteuils, ca…
+nubucks		nubuck	0
+nucal	Qui tient à la nuque, qui appartient ou qui a rapport à la nuque.
+nucale		nucal	23
+nucales		nucal	1
+nucaux		nucal	9
+nucelle	Partie centrale de l’ovule des spermaphytes, entourant le gamétophyte femelle.
+nucelles		nucelle	0
+nuchal	Variante orthographique de nucal.
+nuchale		nuchal	23
+nuchales		nuchal	1
+nuchaux		nuchal	9
+nucléaire	Relatif au noyau atomique.
+nucléaires		nucléaire	0
+nucléarisa		nucléariser	33
+nucléarisai		nucléariser	22
+nucléarisaient		nucléariser	32
+nucléarisais		nucléariser	29
+nucléarisait		nucléariser	34
+nucléarisâmes		nucléariser	3
+nucléarisant		nucléariser	35
+nucléarisas		nucléariser	12
+nucléarisasse		nucléariser	6
+nucléarisassent		nucléariser	17
+nucléarisasses		nucléariser	8
+nucléarisassiez		nucléariser	14
+nucléarisât		nucléariser	20
+nucléarisâtes		nucléariser	2
+nucléarisation	Fait de nucléariser civilement, d’utiliser l’énergie nucléaire comme source d’énergie.
+nucléarisations		nucléarisation	0
+nucléarisé		nucléariser	46
+nucléarisée		nucléariser	37
+nucléarisées		nucléariser	36
+nucléarisent		nucléariser	31
+nucléariser	Doter (un pays, une organisation) d’énergie ou d’armes nucléaires.
+nucléarisera		nucléariser	21
+nucléariserai		nucléariser	16
+nucléariserais		nucléariser	18
+nucléariserait		nucléariser	26
+nucléariseras		nucléariser	7
+nucléarisèrent		nucléariser	24
+nucléariserez		nucléariser	5
+nucléariseriez		nucléariser	4
+nucléariserions		nucléariser	11
+nucléariserons		nucléariser	10
+nucléariseront		nucléariser	15
+nucléarisés		nucléariser	38
+nucléarisez		nucléariser	30
+nucléarisiez		nucléariser	13
+nucléarisions		nucléariser	19
+nucléarisons		nucléariser	27
+nucléariste	Qui est pour l’utilisation de l’énergie ou de l’armement nucléaire.
+nucléaristes		nucléariste	0
+nucléase	Enzyme qui coupent les liaisons phosphodiesters des brins d'acide nucléique entre deux nucléotides.
+nucléases		nucléase	0
+nucléé	Qui est pourvu de noyau.
+nucléée		nucléé	23
+nucléées		nucléé	1
+nucléés		nucléé	9
+nucléide	Espèce nucléaire caractérisée par son nombre de masse, son numéro atomique et son état d’énergie nucléaire.
+nucléides		nucléide	0
+nucléine	Substance riche en phosphate découverte dans le noyau des cellules par Johann Friedrich Miescher qui sera identifiée et nommée acide désoxyribonucléique (ADN) …
+nucléines		nucléine	0
+nucléique	Relatif au noyau.
+nucléiques		nucléique	0
+nucléocapside	L'ensemble formé de la capside du virus et du génome viral (ARN ou ADN).
+nucléocapsides		nucléocapside	0
+nucléocrate	Personne de l’administration d’un État ou d’un gouvernement qui est pronucléaire, qui est partisane de l’utilisation de l’énergie nucléaire.
+nucléocrates		nucléocrate	0
+nucléole	Petit nucléus présent dans le noyau de la cellule, en charge de la synthèse des ARN ribosomiques.
+nucléoles		nucléole	0
+nucléolyse	Thérapie pratiquée pour soigner une hernie discale en l’absence d’efficacité de traitement et qui consiste à détruire le disque intervertébral en y injectant d…
+nucléolyses		nucléolyse	0
+nucléon	Particule qui est un composant du noyau atomique.
+nucléonique	Relatif à un nucléon, aux nucléons.
+nucléoniques		nucléonique	0
+nucléons		nucléon	0
+nucléophile	Réactif qui forme avec un autre réactif, l'électrophile, une liaison en apportant le doublet d'électrons liants.
+nucléophiles		nucléophile	0
+nucléoprotéide	Nucléoprotéine.
+nucléoprotéides		nucléoprotéide	0
+nucléoprotéine	Protéine structurellement associée à un acide nucléique (ADN ou ARN).
+nucléoprotéines		nucléoprotéine	0
+nucléoside	Molécule, constituée d’un pentose et d’une base purique ou d'une base pyrimidique, présente dans les cellules en tant que produit de dégradation des nucléotide…
+nucléosides		nucléoside	0
+nucléosome	Complexe de protéines, octamère d’histones et d’ADN.
+nucléosomes		nucléosome	0
+nucléosynthèse	Ensemble de processus physiques qui conduisent dans les étoiles à la formation de noyaux atomiques par réaction de fusion ou de fission atomique.
+nucléosynthèses		nucléosynthèse	0
+nucléotide	Monomère, composant de base de l’acide désoxyribonucléique et de l’acide ribonucléique, composé d’un groupement phosphate (ou acide phosphorique), d’un pentose…
+nucléotides		nucléotide	0
+nucléotidique	Relatif aux nucléotides.
+nucléotidiques		nucléotidique	0
+nucleus	Variante de nucléus.
+nuclide	Variante de nucléide.
+nuclides		nuclide	0
+nucule	Akène doté d'une paroi particulièrement coriace.
+nucules		nucule	0
+nudibranche	Nom donné à un ordre de gastéropodes marins ayant la particularité d’avoir des branchies nues.
+nudibranches		nudibranche	0
+nudisme	Mouvement qui prône la nudité pour assurer une bonne hygiène du corps et de l'esprit.
+nudismes		nudisme	0
+nudiste	Relatif au nudisme.
+nudistes		nudiste	0
+nudité	État d’une personne qui est nue.
+nudités		nudité	0
+nue	Synonyme de nuage.
+nuée	Nuage étendu, épais, sombre.
+nuées		nuée	0
+nuement	En état de nudité.
+nuent		nuer	31
+nuer	Assortir, disposer des couleurs, dans des ouvrages de laine ou de soie, etc., de manière qu'il se fasse une diminution insensible d'une couleur à l'autre, ou d…
+nuera		nuer	21
+nuerai		nuer	16
+nueraient		nuer	28
+nuerais		nuer	18
+nuerait		nuer	26
+nueras		nuer	7
+nuèrent		nuer	24
+nuerez		nuer	5
+nueriez		nuer	4
+nuerions		nuer	11
+nuerons		nuer	10
+nueront		nuer	15
+nues		nu	1
+nuez		nuer	30
+nugget	Morceau, habituellement de poulet, ou à base de poulet (occasionnellement un autre ingrédient est utilisé à la place, comme du fromage, ou du bœuf), pané, et f…
+nuggets		nugget	0
+nui		nuire	56
+nuiez		nuer	13
+nuions		nuer	19
+nuira		nuire	44
+nuirai		nuire	50
+nuiraient		nuire	97
+nuirais		nuire	96
+nuirait		nuire	92
+nuiras		nuire	57
+nuire	Causer du tort.
+nuirez		nuire	58
+nuiriez		nuire	104
+nuirions		nuire	105
+nuirons		nuire	61
+nuiront		nuire	54
+nuis		nuire	72
+nuisaient		nuire	93
+nuisais		nuire	95
+nuisait		nuire	91
+nuisance	Trouble, dérangement, gêne persistante, calamité, fléau, pollution.
+nuisances		nuisance	0
+nuisant		nuire	43
+nuise		nuire	85
+nuisent		nuire	41
+nuises		nuire	98
+nuisette	Chemise de nuit courte utilisée par les femmes, généralement constituée de tissu léger et souple tel le satin ou la soie, arrivant généralement au-dessus du ge…
+nuisettes		nuisette	0
+nuisez		nuire	70
+nuisibilité	Nocivité.
+nuisibilités		nuisibilité	0
+nuisible	Qui porte dommage.
+nuisiblement	D’une manière nuisible.
+nuisibles		nuisible	0
+nuisiez		nuire	102
+nuisîmes		nuire	68
+nuisions		nuire	103
+nuisirent		nuire	48
+nuisis		nuire	55
+nuisisse		nuire	81
+nuisissent		nuire	78
+nuisisses		nuire	87
+nuisissiez		nuire	88
+nuisissions		nuire	90
+nuisît		nuire	62
+nuisîtes		nuire	84
+nuisons		nuire	73
+nuit	Période qui s’écoule entre le coucher de soleil et le lever du soleil.
+nuitamment	De nuit ; durant la nuit.
+nuitard	Travailleur de nuit.
+nuitarde	Travailleuse de nuit.
+nuitardes		nuitarde	0
+nuitards		nuitard	0
+nuitée	Durée d’une nuit, notamment pour le sommeil.
+nuitées		nuitée	0
+nuiteuse	Prostituée qui travaille la nuit.
+nuiteuses		nuiteuse	0
+nuiteux	Qui concerne la nuit.
+nuits		nuit	0
+nul	Égal à zéro, en parlant d’un nombre, d’une grandeur ou d’une valeur.
+nullard	Sans aucune qualité, dépourvu de talent, incompétent, ignorant.
+nullarde	Femme sans talent, incompétente ou ignorante.
+nullardes		nullard	1
+nullards		nullard	9
+nulle	Celle qui est nulle.
+nullement	En aucune manière.
+nulles		nul	1
+nullipare	Qui n'a jamais accouché ou mis bas.
+nullipares		nullipare	0
+nullissime	Qui est nul à l’extrême.
+nullissimes		nullissime	0
+nullité	Caractère de ce qui est nul ou sans valeur.
+nullités		nullité	0
+nuls		nul	9
+numbat	Petit marsupial endémique d’Australie occidentale se nourrissant presque exclusivement de termites.
+numbats		numbat	0
+nûment	En état de nudité.
+numéraire	Qui sert à compter.
+numéraires		numéraire	0
+numéral	Qui désigne un nombre.
+numérale		numéral	23
+numérales		numéral	1
+numérateur	Premier terme d’une fraction, écrit au-dessus du trait de fraction ou avant son trait oblique.
+numérateurs		numérateur	0
+numératif	Relatif à une numération.
+numératifs		numératif	9
+numération	Mode de représentation des nombres.
+numérations		numération	0
+numérative		numératif	23
+numératives		numératif	1
+numéraux		numéral	9
+numérique	Qui appartient aux nombres.
+numériquement	Relativement au nombre.
+numériques		numérique	0
+numérisa		numériser	33
+numérisable	Qui peut être numérisé.
+numérisables		numérisable	0
+numérisai		numériser	22
+numérisaient		numériser	32
+numérisais		numériser	29
+numérisait		numériser	34
+numérisâmes		numériser	3
+numérisant		numériser	35
+numérisas		numériser	12
+numérisasse		numériser	6
+numérisassent		numériser	17
+numérisasses		numériser	8
+numérisassiez		numériser	14
+numérisassions		numériser	25
+numérisât		numériser	20
+numérisâtes		numériser	2
+numérisation	Action de numériser, transformation de données analogiques en données numériques.
+numérisations		numérisation	0
+numérisé	Qui a été numérisé.
+numérisée		numérisé	126
+numérisées		numérisé	122
+numérisent		numériser	31
+numériser	Représenter un signal (caractère, image, impulsion, etc.
+numérisera		numériser	21
+numériserai		numériser	16
+numériseraient		numériser	28
+numériserais		numériser	18
+numériserait		numériser	26
+numériseras		numériser	7
+numérisèrent		numériser	24
+numériserez		numériser	5
+numériseriez		numériser	4
+numériserions		numériser	11
+numériserons		numériser	10
+numériseront		numériser	15
+numérisés		numérisé	120
+numériseur	Appareil permettant de transformer un signal analogique en un signal numérique.
+numériseurs		numériseur	0
+numérisez		numériser	47
+numérisiez		numériser	13
+numérisions		numériser	19
+numérisons		numériser	27
+numéro	Identifiant numérique ou parfois alphanumérique qu’on met sur quelque chose et qui sert à le reconnaître.
+numérologie	Ensemble de croyances et de pratiques fondées sur l’attribution de propriétés à des nombres.
+numérologies		numérologie	0
+numérologue	Spécialiste de la symbolique des nombres.
+numérologues		numérologue	0
+numéros		numéro	0
+numérota		numéroter	39
+numérotage	Action de numéroter.
+numérotages		numérotage	0
+numérotai		numéroter	22
+numérotaient		numéroter	42
+numérotais		numéroter	29
+numérotait		numéroter	40
+numérotâmes		numéroter	3
+numérotant		numéroter	35
+numérotas		numéroter	12
+numérotasse		numéroter	6
+numérotassent		numéroter	17
+numérotasses		numéroter	8
+numérotassiez		numéroter	14
+numérotassions		numéroter	25
+numérotât		numéroter	20
+numérotâtes		numéroter	2
+numérotation	Action de numéroter.
+numérotations		numérotation	0
+numérote		numéroter	64
+numérotée		numéroter	37
+numérotées		numéroter	51
+numérotent		numéroter	41
+numéroter	Distinguer par un numéro des choses de même ordre.
+numérotera		numéroter	21
+numéroterai		numéroter	16
+numéroteraient		numéroter	28
+numéroterais		numéroter	18
+numéroterait		numéroter	26
+numéroteras		numéroter	7
+numérotèrent		numéroter	24
+numéroterez		numéroter	5
+numéroteriez		numéroter	4
+numéroterions		numéroter	11
+numéroterons		numéroter	10
+numéroteront		numéroter	15
+numérotés		numéroter	53
+numéroteur	Qui numérote.
+numéroteurs		numéroteur	0
+numéroteuse		numéroteur	23
+numéroteuses		numéroteur	1
+numérotez		numéroter	47
+numérotiez		numéroter	13
+numérotions		numéroter	19
+numérotons		numéroter	27
+numide	Relatif à la Numidie ou aux Numides.
+numides		numide	0
+numismate	Qui s’occupe de numismatique.
+numismates		numismate	0
+numismatique	Relatif à la monnaie et aux médailles.
+numismatiques		numismatique	0
+nummulaire	Variété de lysimaque, apparentée à la primevère, dont les feuilles ont la forme de petites pièces de monnaie.
+nummulaires		nummulaire	0
+nummulite	Foraminifère fossile en forme de spirale, de lentille, qui compose souvent des roches entières.
+nummulites		nummulite	0
+nummulitique	Qui a rapport aux nummulites.
+nummulitiques		nummulitique	0
+nunatak	Sommet rocheux émergeant d’un inlandsis.
+nunataks		nunatak	0
+Nunavimiuq	Variante orthographique de Nunavimmiuq
+nunchaku	Arme d'origine japonaise constituée la plupart du temps de deux bâtons reliés par une chaîne.
+nunchakus		nunchaku	0
+nuncupatif	Se dit d’un testament dicté par le testateur lorsque les lois admettaient cette manière de tester.
+nuncupatifs		nuncupatif	9
+nuncupation	Déclaration faite par le testateur devant témoins pour désigner ses héritiers.
+nuncupations		nuncupation	0
+nuncupative		nuncupatif	23
+nuncupatives		nuncupatif	1
+nunuche	Bête, stupide, niais.
+nunuches		nunuche	0
+nuocmam	Variante orthographique de nuoc mam.
+nuocmams		nuocmam	0
+nuons		nuer	27
+nuptial	Qui concerne le mariage ^().
+nuptiale		nuptial	23
+nuptiales		nuptial	1
+nuptialité	Quantité de personnes qui se marient sur une population donnée pendant une période donnée.
+nuptialités		nuptialité	0
+nuptiaux		nuptial	9
+nuque	Partie dorsale du cou.
+nuques		nuque	0
+nuraghe	Construction conique formée de mégalithes.
+nuraghes		nuraghe	0
+nuragique	Relatif à une culture de l’âge du bronze en Sardaigne.
+nuragiques		nuragique	0
+nursage	Synonyme de nursing.
+nursages		nursage	0
+nurse	Personne qui s’occupe de jeunes enfants.
+nurserie	Variante orthographique de nursery.
+nurseries	Pluriel de nursery et de nurserie.	nurserie
+nursery	Pièce réservée aux enfants
+nurserys		nursery	0
+nurses		nurse	0
+nursing	Ensemble des soins infirmiers, d’hygiène et de confort apportés aux personnes dépendantes.
+nursings		nursing	0
+nus		nu	9
+nutation	Léger balancement de l’axe de rotation de la terre autour d’un axe moyen, qui décrit lui-même en vingt-six mille ans un cône autour de la perpendiculaire au pl…
+nutations		nutation	0
+nuton	Petite créature du folklore et des croyances populaires des Ardennes françaises et de la Belgique, très proche du lutin.
+nutonne	Femme du nuton, petite créature du folklore et des croyances populaires des Ardennes françaises et de la Belgique, très proche du lutin.
+nutonnes		nutonne	0
+nutons		nuton	0
+nutricier	Qui sert à la nutrition, qui nourrit.
+nutricière		nutricier	23
+nutricières		nutricier	1
+nutriciers		nutricier	9
+nutriment	Composé organique ou minéral assimilable par un organisme vivant, vital pour son développement et son entretien.
+nutriments		nutriment	0
+nutritif	Relatif à la nutrition.
+nutritifs		nutritif	9
+nutrition	Métabolisation des nutriments en vue de leur assimilation pour la croissance, l'entretien, le fonctionnement de l'organisme.
+nutritionnel	Relatif à la nutrition.
+nutritionnelle	Féminin singulier de nutritionnel.
+nutritionnelles	Féminin pluriel de nutritionnel.’	nutritionnel
+nutritionnels		nutritionnel	9
+nutritionniste	Spécialiste de la nutrition.
+nutritionnistes		nutritionniste	0
+nutritions		nutrition	0
+nutritive		nutritif	23
+nutritives		nutritif	1

@@ -1,0 +1,35 @@
+ive	Germandrée dont les feuilles, légèrement amères et aromatiques, sont employées en médecine.
+ives		ive	0
+ivette	Autre nom de l’ive.
+ivettes		ivette	0
+ivoire	Substance dure, blanche, opaque qui est la matière principale des dents et des défenses d’animaux comme l’éléphant, l’hippopotame, le morse.
+ivoirerie	Art du sculpteur sur ivoire.
+ivoireries		ivoirerie	0
+ivoires		ivoire	0
+ivoirien	Relatif à la Côte d’Ivoire, son peuple et sa culture.
+ivoirienne		ivoirien	23
+ivoiriennes		ivoirien	1
+ivoiriens		ivoirien	0
+ivoirier	Relatif au commerce de l’ivoire ou à la fabrication d’objets en ivoire.
+ivoirière	Sculptrice qui travaille l’ivoire.
+ivoirières	Pluriel de invoirière.
+ivoiriers		ivoirier	0
+ivoirin	Qui a l’apparence de l’ivoire.
+ivoirine	Substance imitant l’ivoire.
+ivoirines		ivoirin	1
+ivoirins		ivoirin	125
+ivoirité	Concept politique ivoirien : qualité d’être ivoirien.
+ivoirités		ivoirité	0
+ivraie	Graminée particulièrement nuisible aux céréales et provoquant une espèce d'ivresse.
+ivraies		ivraie	0
+ivre	Qui a le cerveau troublé par l’effet des boissons fermentées, par l’alcool, etc.
+ivres		ivre	0
+ivresse	État d’une personne ivre.
+ivresses		ivresse	0
+ivrogne	Qui s'adonne à la consommation outrancière de boissons alcoolisées.
+ivrogner	Boire comme un ivrogne.
+ivrognerie	Habitude de s’enivrer.
+ivrogneries		ivrognerie	0
+ivrognés		ivrogner	38
+ivrognesse	Femme qui a l’habitude de s’enivrer.
+ivrognesses		ivrognesse	0

@@ -1,0 +1,183 @@
+us	Usages, coutumes, habitudes.
+usa		user	39
+usable	Qui peut s’user.
+usables		usable	115
+usage	Coutume ; pratique reçue.
+usagée		usagé	23
+usagées		usagé	1
+usager	D’usage courant.
+usagère	Femme qui a droit d’usage, qui fait usage.
+usagères		usager	1
+usagers		usager	9
+usages		usage	0
+usai		user	55
+usaient		user	42
+usais		user	52
+usait		user	34
+usâmes		user	3
+usance	En droit commercial, règle découlant de pratiques généralement reconnues.
+usances		usance	0
+usant	Qui use physiquement ou moralement une personne, fatigant, crevant.
+usante		usant	23
+usantes		usant	1
+usants		usant	9
+usas		user	12
+usasse		user	6
+usassent		user	17
+usasses		user	8
+usassiez		user	14
+usassions		user	25
+usât		user	62
+usâtes		user	2
+usé	Détérioré, diminué par le frottement, ruiné.
+usée		usé	23
+usées		usé	1
+usent		user	41
+user	Détériorer par l’usage.
+usera		user	44
+userai		user	50
+useraient		user	28
+userais		user	60
+userait		user	49
+useras		user	7
+usèrent		user	48
+userez		user	5
+useriez		user	74
+userions		user	11
+userons		user	61
+useront		user	54
+usés		usé	9
+usez		user	47
+usiez		user	13
+usina		usiner	33
+usinabilité	Aptitude d’un matériau à être usiné, en fonction de ses propriétés mécaniques, chimiques et thermiques, et des outils ou procédés employés.
+usinabilités		usinabilité	0
+usinable	Qui peut être usiné.
+usinables		usinable	0
+usinage	Opération ou ensemble d’opérations consistant à enlever de la matière à une pièce brute à l’aide d’outils coupants, dans le but d’obtenir une forme ou des dime…
+usinages		usinage	0
+usinai		usiner	22
+usinaient		usiner	42
+usinais		usiner	29
+usinait		usiner	34
+usinâmes		usiner	3
+usinant		usiner	35
+usinas		usiner	12
+usinasse		usiner	6
+usinassent		usiner	17
+usinasses		usiner	8
+usinassiez		usiner	14
+usinassions		usiner	25
+usinât		usiner	20
+usinâtes		usiner	2
+usine	Établissement pourvu de machines, où l’on travaille des matières premières pour en tirer certains produits.
+usinée		usiner	45
+usinées		usiner	51
+usinent		usiner	31
+usiner	Façonner, fabriquer à l'aide d’une machine-outil.
+usinera		usiner	21
+usinerai		usiner	16
+usineraient		usiner	28
+usinerais		usiner	18
+usinerait		usiner	26
+usineras		usiner	7
+usinèrent		usiner	24
+usinerez		usiner	5
+usineriez		usiner	4
+usinerions		usiner	11
+usinerons		usiner	10
+usineront		usiner	15
+usinés		usiner	53
+usineur	Tourneur-fraiseur.
+usineurs		usineur	0
+usineuse	Tourneuse-fraiseuse.
+usineuses		usineuse	0
+usinez		usiner	30
+usinier	Relatif aux usines ou à leur activité, industriel ou fabriqué industriellement.
+usinière		usinier	23
+usinières		usinier	1
+usiniers		usinier	0
+usiniez		usiner	13
+usinions		usiner	19
+usinons		usiner	27
+usions		user	65
+usité	Qui est en usage, qui est pratiqué communément.
+usitée		usiter	45
+usitées		usiter	36
+usiter	Utiliser souvent.
+usités		usiter	53
+usnée	Nom vulgaire de lichens fruticuleux appartenant au genre botanique Usnea.
+usnées		usnée	0
+usons		user	59
+ustensile	Objet servant aux usages domestiques et principalement à la cuisine.
+ustensiles		ustensile	0
+usucapion	Manière d’acquérir par la possession ou par l’usage.
+usucapions		usucapion	0
+usuel	Dont on se sert ordinairement.
+usuelle		usuel	23
+usuellement	Communément ; à l’ordinaire.
+usuelles		usuel	1
+usuels		usuel	9
+usufructuaire	Qui a rapport à un usufruit.
+usufructuaires		usufructuaire	0
+usufruit	Droit de jouir d’un bien dont la propriété appartient à un autre.
+usufruitier	Qui concerne un usufruit.
+usufruitière	Personne qui a l’usufruit.
+usufruitières		usufruitier	1
+usufruitiers		usufruitier	0
+usufruits		usufruit	0
+usuraire	Où il y a manifestement de l’usure.
+usurairement	D’une manière usuraire.
+usuraires		usuraire	0
+usure	Intérêt, profit qu’on exige d’un argent ou d’une marchandise prêtée, au-dessus du taux fixé par la loi ou établi par l’usage en matière de commerce.
+usures		usure	0
+usurier	Prêteur qui prête à un taux d’intérêt trop élevé, un taux usuraire.
+usurière	Celle qui prête à un taux d’intérêt trop élevé, à un taux usuraire.
+usurières		usurière	0
+usuriers		usurier	0
+usurpa		usurper	33
+usurpai		usurper	22
+usurpaient		usurper	42
+usurpais		usurper	29
+usurpait		usurper	40
+usurpâmes		usurper	3
+usurpant		usurper	43
+usurpas		usurper	12
+usurpasse		usurper	6
+usurpassent		usurper	17
+usurpasses		usurper	8
+usurpassiez		usurper	14
+usurpassions		usurper	25
+usurpât		usurper	20
+usurpâtes		usurper	2
+usurpateur	Personne qui, par violence ou par ruse, s’empare d’un bien, d’une souveraineté, d’un pouvoir, d’une dignité, d’un titre, etc., qui ne lui appartient pas.
+usurpateurs		usurpateur	0
+usurpation	Action d’usurper ou résultat de cette action.
+usurpations		usurpation	0
+usurpatoire	Qui a le caractère de l’usurpation.
+usurpatoires		usurpatoire	0
+usurpatrice	Celle qui prend indûment la place de quelqu’un, de quelque chose.
+usurpatrices		usurpatrice	0
+usurpé	Obtenu par des moyens douteux.
+usurpée		usurper	45
+usurpées		usurper	51
+usurpent		usurper	41
+usurper	S’emparer, par violence ou par ruse, d’un bien, d’une souveraineté, d’une dignité, etc.
+usurpera		usurper	21
+usurperai		usurper	16
+usurperaient		usurper	28
+usurperais		usurper	18
+usurperait		usurper	26
+usurperas		usurper	7
+usurpèrent		usurper	24
+usurperez		usurper	5
+usurperiez		usurper	4
+usurperions		usurper	11
+usurperons		usurper	10
+usurperont		usurper	54
+usurpés		usurper	53
+usurpez		usurper	30
+usurpiez		usurper	13
+usurpions		usurper	19
+usurpons		usurper	27
+usus	Droit d’usage d’un bien.

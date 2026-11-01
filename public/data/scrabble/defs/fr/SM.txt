@@ -1,0 +1,170 @@
+smack	Navire caboteur anglais.
+smacks		smack	0
+smala	Réunion de tentes abritant des familles et les équipages d’un chef de clan arabe qui l’accompagnent lors de ses déplacements.
+smalah	Réunion des tentes d’un chef arabe avec sa famille, ses compagnons et soldats, biens et troupeaux, capitale mobile.
+smalahs		smalah	0
+smalas		smala	0
+smalt	Pigment de couleur bleue (appelée bleu cobalt) composé d’un mélange d’oxyde de cobalt et de verre (silice et potassium).
+smaltine	Minéral synonyme de smaltite.
+smaltines		smaltine	0
+smaltite	Minéral variété de skutterudite de formule idéale (Co,Fe,Ni)As2.
+smaltites		smaltite	0
+smalts		smalt	0
+smaragdin	Qui est vert émeraude.
+smaragdine		smaragdin	23
+smaragdines		smaragdin	1
+smaragdins		smaragdin	9
+smaragdite	Variété d’actinote dont la couleur verte intense est liée à la présence de chrome.
+smaragdites		smaragdite	0
+smart	Intelligent, fin, habile.
+smartphone	Téléphone mobile incluant un ordinateur de poche.
+smartphones		smartphone	0
+smash	Coup frappé violemment vers le sol.
+smasha		smasher	33
+smashai		smasher	22
+smashaient		smasher	32
+smashais		smasher	29
+smashait		smasher	34
+smashâmes		smasher	3
+smashant		smasher	35
+smashas		smasher	12
+smashasse		smasher	6
+smashassent		smasher	17
+smashasses		smasher	8
+smashassiez		smasher	14
+smashassions		smasher	25
+smashât		smasher	20
+smashâtes		smasher	2
+smashe		smasher	64
+smashée		smasher	37
+smashées		smasher	36
+smashent		smasher	31
+smasher	Faire un smash.
+smashera		smasher	21
+smasherai		smasher	16
+smasheraient		smasher	28
+smasherais		smasher	18
+smasherait		smasher	26
+smasheras		smasher	7
+smashèrent		smasher	24
+smasherez		smasher	5
+smasheriez		smasher	4
+smasherions		smasher	11
+smasherons		smasher	10
+smasheront		smasher	15
+smashes		smasher	66
+smashez		smasher	30
+smashiez		smasher	13
+smashions		smasher	19
+smashons		smasher	27
+smashs		smash	0
+smectique	Qui a la propriété d’absorber les matières grasses et dont on se sert, en particulier, pour dégraisser la laine.
+smectiques		smectique	0
+smegma	Sécrétion sébacée mêlée de débris cellulaires épithéliaux qui s’accumule entre le gland du pénis et le prépuce chez l’homme, et entre le clitoris et les petite…
+smegmas		smegma	0
+smic	Variante orthographique de SMIC.
+smicard	Personne payée au SMIC.
+smicarde	Personne payée au SMIC.
+smicardes		smicarde	0
+smicardisation	Situation dans laquelle les salaires de l’ensemble des salariés ou d’une catégorie de salariés ont tendance à régresser vers le salaire minimum.
+smicards		smicard	0
+smics		smic	0
+smiley	Représentation graphique d’un visage humain souriant, le plus souvent coloré en jaune.
+smileys		smiley	0
+smilla		smiller	33
+smillage	Martelage de la pierre avec le smille, marteau à deux pointes des carriers.
+smillages		smillage	0
+smillai		smiller	22
+smillaient		smiller	32
+smillais		smiller	29
+smillait		smiller	34
+smillâmes		smiller	3
+smillant		smiller	35
+smillas		smiller	12
+smillasse		smiller	6
+smillassent		smiller	17
+smillasses		smiller	8
+smillassiez		smiller	14
+smillassions		smiller	25
+smillât		smiller	20
+smillâtes		smiller	2
+smille	Marteau à deux pointes avec lequel on pique la pierre.
+smillée		smiller	37
+smillées		smiller	36
+smillent		smiller	31
+smiller	Piquer avec une smille.
+smillera		smiller	21
+smillerai		smiller	16
+smilleraient		smiller	28
+smillerais		smiller	18
+smillerait		smiller	26
+smilleras		smiller	7
+smillèrent		smiller	24
+smillerez		smiller	5
+smilleriez		smiller	4
+smillerions		smiller	11
+smillerons		smiller	10
+smilleront		smiller	15
+smillés		smiller	38
+smillez		smiller	30
+smilliez		smiller	13
+smillions		smiller	19
+smillons		smiller	27
+smithsonite	Espèce minérale formée de carbonate de zinc de formule ZnCO₃.
+smithsonites		smithsonite	0
+smocké		smocker	46
+smockée		smocker	37
+smockées		smocker	36
+smocker	Froncer et broder, faire des smocks à.
+smockés		smocker	38
+smocks	Fronces rebrodées en diagonale sur l’endroit du tissu, servant de garniture à des vêtements d’enfants ou des robes légères.
+smog	Brume bleutée à roussâtre provenant d’un mélange de polluants atmosphériques qui limite la visibilité dans l’atmosphère.
+smogs		smog	0
+smok	Smoking.
+smoking	Tenue de soirée ou de cérémonie pour homme, qui comprend un costume à revers de soie et en guise de cravate un nœud papillon.
+smokings		smoking	0
+smoks		smok	0
+smolt	Saumoneau qui est prêt à dévaler la rivière où il est né pour rejoindre dans l’océan sa zone de grossissement.
+smolts		smolt	0
+smoothie	Boisson faite principalement à base de fruits frais mixés ou en jus, selon les fruits, parfois mélangés à du yaourt, lait, fromage blanc ou de la glace pilée.
+smoothies		smoothie	0
+smorrebrod	Tranche de pain beurrée garnie de divers ingrédients, typique de la cuisine danoise.
+smorrebrods		smorrebrod	0
+smorzando	En affaiblissant.
+smurf	Genre musical et style de danse de rue né aux États-Unis (arrivé en France dans les années 1980 avec le hip-hop).
+smurfa		smurfer	33
+smurfai		smurfer	22
+smurfaient		smurfer	32
+smurfais		smurfer	29
+smurfait		smurfer	34
+smurfâmes		smurfer	3
+smurfant		smurfer	35
+smurfas		smurfer	12
+smurfasse		smurfer	6
+smurfassent		smurfer	17
+smurfasses		smurfer	8
+smurfassiez		smurfer	14
+smurfassions		smurfer	25
+smurfât		smurfer	20
+smurfâtes		smurfer	2
+smurfé		smurfer	46
+smurfent		smurfer	31
+smurfer	Danser le smurf.
+smurfera		smurfer	21
+smurferai		smurfer	16
+smurferaient		smurfer	28
+smurferais		smurfer	18
+smurferait		smurfer	26
+smurferas		smurfer	7
+smurfèrent		smurfer	24
+smurferez		smurfer	5
+smurferiez		smurfer	4
+smurferions		smurfer	11
+smurferons		smurfer	10
+smurferont		smurfer	15
+smurfes		smurfer	66
+smurfez		smurfer	30
+smurfiez		smurfer	13
+smurfions		smurfer	19
+smurfons		smurfer	27
+smurfs		smurf	0

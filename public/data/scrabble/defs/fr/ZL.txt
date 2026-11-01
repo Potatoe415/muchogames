@@ -1,0 +1,4 @@
+zlabia	Spécialité frite de la cuisine orientale traditionnelle, entre un gâteau et une confiserie.
+zlabias		zlabia	0
+zloty	Unité monétaire principale de la Pologne.
+zlotys		zloty	0

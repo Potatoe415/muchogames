@@ -1,0 +1,4 @@
+wrap	Sandwich constitué d’une galette fine enroulée autour d’une garniture.
+wraps		wrap	0
+wronskien	Déterminant d’une famille de solutions d’une équation différentielle linéaire homogène.
+wronskiens		wronskien	0

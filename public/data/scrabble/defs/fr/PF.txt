@@ -1,0 +1,5 @@
+pfennig	Subdivision du Deutsche Mark et des monnaies allemandes antérieures, qui a pour symbole ₰ (Unicode U+20B0), et qui correspondait à l’origine au denier.
+pfennigs		pfennig	0
+pff	Bruit de souffle.
+pfft	Interjection exprimant le départ, la disparition ou l'absence.
+pfut	Onomatopée qui marque une forme de désintérêt.

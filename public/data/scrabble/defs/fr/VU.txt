@@ -1,0 +1,156 @@
+vu	Ce qui est exposé sur les productions respectives, les pièces, les raisons qui sont énoncées avant le dispositif.
+vue	Faculté de voir.
+vues	Cinéma (lieu).
+vulcain	Forgeron.
+vulcains		vulcain	0
+vulcanales	Fêtes en l’honneur de Vulcain.
+vulcanien	Relatif au vulcanisme qui attribue au feu la formation de la croute du globe.
+vulcanienne		vulcanien	23
+vulcaniennes		vulcanien	1
+vulcaniens		vulcanien	9
+vulcanisa		vulcaniser	33
+vulcanisai		vulcaniser	22
+vulcanisaient		vulcaniser	32
+vulcanisais		vulcaniser	29
+vulcanisait		vulcaniser	40
+vulcanisâmes		vulcaniser	3
+vulcanisant	Qui vulcanise.
+vulcanisas		vulcaniser	12
+vulcanisasse		vulcaniser	6
+vulcanisassent		vulcaniser	17
+vulcanisasses		vulcaniser	8
+vulcanisassiez		vulcaniser	14
+vulcanisassions		vulcaniser	25
+vulcanisât		vulcaniser	20
+vulcanisâtes		vulcaniser	2
+vulcanisation	Opération qui consiste à chauffer du souffre avec du caoutchouc pour permettre la polymérisation de ce dernier, le rendre insoluble, plus élastique, moins sens…
+vulcanisations		vulcanisation	0
+vulcanisé	Mélangé de soufre pour le rendre insoluble et moins sensible à la chaleur et à la lumière, en parlant du caoutchouc.
+vulcanisée		vulcaniser	37
+vulcanisées		vulcaniser	36
+vulcanisent		vulcaniser	31
+vulcaniser	Faire subir une préparation au caoutchouc en le mélangeant de soufre pour le rendre insoluble et moins sensible à la chaleur et à la lumière.
+vulcanisera		vulcaniser	21
+vulcaniserai		vulcaniser	16
+vulcaniseraient		vulcaniser	28
+vulcaniserais		vulcaniser	18
+vulcaniserait		vulcaniser	26
+vulcaniseras		vulcaniser	7
+vulcanisèrent		vulcaniser	24
+vulcaniserez		vulcaniser	5
+vulcaniseriez		vulcaniser	4
+vulcaniserions		vulcaniser	11
+vulcaniserons		vulcaniser	10
+vulcaniseront		vulcaniser	15
+vulcanisés		vulcaniser	38
+vulcanisez		vulcaniser	30
+vulcanisiez		vulcaniser	13
+vulcanisions		vulcaniser	19
+vulcanisons		vulcaniser	27
+vulcanologie	Variante moins courante de volcanologie.
+vulcanologies		vulcanologie	0
+vulcanologique	Qui concerne la vulcanologie, qui a rapport à la vulcanologie.
+vulcanologiques		vulcanologique	0
+vulcanologue	Ingénieur qui étudie la vulcanisation de latex et autres polymères liquides, en caoutchouc ou autre matériau solide élastique, sous l'effet d'un adjuvant réact…
+vulcanologues		vulcanologue	0
+vulgaire	Qui concerne le peuple, le quidam, le personnage quelconque.
+vulgairement	Communément ; dans le langage populaire ou familier.
+vulgaires		vulgaire	0
+vulgarisa		vulgariser	33
+vulgarisai		vulgariser	22
+vulgarisaient		vulgariser	32
+vulgarisais		vulgariser	29
+vulgarisait		vulgariser	34
+vulgarisâmes		vulgariser	3
+vulgarisant		vulgariser	35
+vulgarisas		vulgariser	12
+vulgarisasse		vulgariser	6
+vulgarisassent		vulgariser	17
+vulgarisasses		vulgariser	8
+vulgarisassiez		vulgariser	14
+vulgarisassions		vulgariser	25
+vulgarisât		vulgariser	20
+vulgarisâtes		vulgariser	2
+vulgarisateur	Qui vulgarise.
+vulgarisateurs		vulgarisateur	9
+vulgarisation	Action de rendre accessible une connaissance, un savoir ou un savoir-faire.
+vulgarisations		vulgarisation	0
+vulgarisatrice	Celle qui vulgarise.
+vulgarisatrices		vulgarisatrice	0
+vulgarisé	Rendu compréhensible ou accessible à tout un chacun.
+vulgarisée		vulgarisé	23
+vulgarisées		vulgarisé	122
+vulgarisent		vulgariser	31
+vulgariser	Mettre à la portée de toutes les intelligences des notions de science et d’art.
+vulgarisera		vulgariser	21
+vulgariserai		vulgariser	16
+vulgariseraient		vulgariser	28
+vulgariserais		vulgariser	18
+vulgariserait		vulgariser	26
+vulgariseras		vulgariser	7
+vulgarisèrent		vulgariser	24
+vulgariserez		vulgariser	5
+vulgariseriez		vulgariser	4
+vulgariserions		vulgariser	11
+vulgariserons		vulgariser	10
+vulgariseront		vulgariser	15
+vulgarisés		vulgarisé	9
+vulgarisez		vulgariser	30
+vulgarisiez		vulgariser	13
+vulgarisions		vulgariser	19
+vulgarisme	Expression vulgaire, populaire.
+vulgarismes		vulgarisme	0
+vulgarisons		vulgariser	27
+vulgarité	Caractère ou défaut de ce qui est vulgaire ou trivial.
+vulgarités		vulgarité	0
+vulgate	Ensemble de textes qui font foi dans un domaine quelconque, texte canonique, vadémécum.
+vulgates		vulgate	0
+vulgo	En langage courant, non scientifique.
+vulgos	Vulgaire.
+vulnérabilisa		vulnérabiliser	33
+vulnérabilisai		vulnérabiliser	22
+vulnérabilisais		vulnérabiliser	29
+vulnérabilisait		vulnérabiliser	34
+vulnérabilisant	Qui rend plus vulnérable.
+vulnérabilisas		vulnérabiliser	12
+vulnérabilisât		vulnérabiliser	20
+vulnérabilisé		vulnérabiliser	46
+vulnérabilisée		vulnérabiliser	37
+vulnérabilisées		vulnérabiliser	36
+vulnérabilisent		vulnérabiliser	31
+vulnérabiliser	Rendre plus vulnérable.
+vulnérabilisera		vulnérabiliser	21
+vulnérabilisés		vulnérabiliser	38
+vulnérabilisez		vulnérabiliser	30
+vulnérabilisiez		vulnérabiliser	13
+vulnérabilisons		vulnérabiliser	27
+vulnérabilité	Caractère de ce qui est vulnérable.
+vulnérabilités		vulnérabilité	0
+vulnérable	Qui peut être blessé.
+vulnérables		vulnérable	0
+vulnéraire	Qui guérit les plaies.
+vulnéraires		vulnéraire	0
+vulnérant	Qui blesse.
+vulnérante		vulnérant	23
+vulnérantes		vulnérant	1
+vulnérants		vulnérant	0
+vulpin	En rapport avec les renards.
+vulpine		vulpin	23
+vulpines		vulpin	1
+vulpins		vulpin	9
+vultueuse		vultueux	23
+vultueuses		vultueux	1
+vultueux	Se dit de la face quand elle est bouffie et vermeille à l’excès, et que les joues et les lèvres sont gonflées, le teint enluminé, les yeux saillants, et leur b…
+vultuosité	État, aspect dʼune face vultueuse.
+vultuosités		vultuosité	0
+vulvaire	Relatif à la vulve.
+vulvaires		vulvaire	0
+vulve	Ensemble des organes génitaux externes des filles et des femmes et de certaines femelles de mammifères, constitué principalement des grandes lèvres et des peti…
+vulves		vulve	0
+vulvite	Inflammation de la vulve.
+vulvites		vulvite	0
+vumètre	Appareil servant à contrôler un signal électroacoustique.
+vumètres		vumètre	0
+vus		voir	53
+vuvuzela	Long cor, d’environ un mètre de long, utilisé par les supporters de football dans les stades d’Afrique du Sud pour soutenir leur équipe.
+vuvuzelas		vuvuzela	0

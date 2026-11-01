@@ -1,0 +1,3887 @@
+me	Pronom de la première personne du singulier en tant que complément d’objet direct.
+méandre	Sinuosité d’un fleuve, d’une rivière, par allusion au fleuve de Phrygie qui portait ce nom.
+méandres		méandre	0
+méandreuse		méandreux	23
+méandreuses		méandreux	1
+méandreux	Qui est sinueux, fait des méandres.
+méandrine	Madrépore des mers chaudes aux polypiers disposés en méandres.
+méandrines		méandrine	0
+méat	Orifice d’un conduit.
+méats		méat	0
+mec	Individu de sexe ou genre masculin.
+mécanicien	Celui qui invente, conçoit, construit des machines.
+mécanicienne	Celle qui invente, conçoit, construit des machines, qui possède la science mécanique.
+mécaniciennes		mécanicienne	0
+mécaniciens		mécanicien	0
+mécanique	Relatif aux machines, aux mécanismes.
+mécaniquement	D’une façon mécanique.
+mécaniques		mécanique	0
+mécanisa		mécaniser	33
+mécanisai		mécaniser	22
+mécanisaient		mécaniser	32
+mécanisais		mécaniser	29
+mécanisait		mécaniser	40
+mécanisâmes		mécaniser	3
+mécanisant		mécaniser	35
+mécanisas		mécaniser	12
+mécanisasse		mécaniser	6
+mécanisassent		mécaniser	17
+mécanisasses		mécaniser	8
+mécanisassiez		mécaniser	14
+mécanisassions		mécaniser	25
+mécanisât		mécaniser	20
+mécanisâtes		mécaniser	2
+mécanisation	Action de mécaniser.
+mécanisations		mécanisation	0
+mécanisé	Qui a été transformé en mécanique.
+mécanisée		mécanisé	23
+mécanisées		mécanisé	1
+mécanisent		mécaniser	31
+mécaniser	Introduire l’utilisation d'une machine, d’un mécanisme dans un procédé.
+mécanisera		mécaniser	21
+mécaniserai		mécaniser	16
+mécaniseraient		mécaniser	28
+mécaniserais		mécaniser	18
+mécaniserait		mécaniser	26
+mécaniseras		mécaniser	7
+mécanisèrent		mécaniser	24
+mécaniserez		mécaniser	5
+mécaniseriez		mécaniser	4
+mécaniserions		mécaniser	11
+mécaniserons		mécaniser	10
+mécaniseront		mécaniser	15
+mécanisés		mécanisé	9
+mécanisez		mécaniser	30
+mécanisiez		mécaniser	13
+mécanisions		mécaniser	19
+mécanisme	Structure d’un organisme naturel ou artificiel en tant que combinaison animée de ses parties.
+mécanismes		mécanisme	0
+mécanisons		mécaniser	27
+mécaniste	Relatif au mécanisme.
+mécanistes		mécaniste	0
+mécano	Mécanicien ou mécanicienne
+mécanographe	Opérateur chargé de la saisie de données sur une machine à cartes perforées.
+mécanographes		mécanographe	0
+mécanographie	Traitement mécanique ou électromécanique de l'information par le biais de machine à cartes perforées.
+mécanographies		mécanographie	0
+mécanographique	Relatif à la mécanographie.
+mécanorécepteur	Récepteur sensible à une déformation mécanique.
+mécanos		mécano	0
+mécanothérapie	Méthode de rééducation qui permet à l’aide d’appareils de mobiliser les articulations.
+mécanothérapies		mécanothérapie	0
+mécatronique	Combinaison synergique et systémique de la mécanique, de l’électronique et de l’informatique temps réel afin de concevoir des systèmes automatiques puissants e…
+mécatroniques		mécatronique	0
+meccano	Jeu de construction constitué exclusivement de pièces métalliques.
+meccanos		meccano	0
+mécéna		mécéner	39
+mécénai		mécéner	55
+mécénaient		mécéner	75
+mécénais		mécéner	86
+mécénait		mécéner	71
+mécénâmes		mécéner	68
+mécénant		mécéner	43
+mécénas		mécéner	83
+mécénasse		mécéner	81
+mécénassent		mécéner	78
+mécénasses		mécéner	87
+mécénassiez		mécéner	88
+mécénassions		mécéner	90
+mécénat	Soutien matériel apporté, sans contrepartie directe de la part du bénéficiaire, à une œuvre ou à une personne pour l’exercice d’activités présentant un intérêt…
+mécénâtes		mécéner	84
+mécénats		mécénat	0
+mécène	Celui qui encourage par ses libéralités les sciences, les lettres et les arts.
+mécénée		mécéner	45
+mécénées		mécéner	51
+mécènent		mécéner	69
+mécéner	Financer en tant que mécène.
+mécènera		mécéner	44
+mécènerai		mécéner	50
+mécèneraient		mécéner	63
+mécènerais		mécéner	60
+mécènerait		mécéner	49
+mécèneras		mécéner	57
+mécénèrent		mécéner	48
+mécènerez		mécéner	58
+mécèneriez		mécéner	74
+mécènerions		mécéner	82
+mécènerons		mécéner	61
+mécèneront		mécéner	54
+mécènes		mécène	0
+mécénez		mécéner	70
+mécéniez		mécéner	100
+mécénions		mécéner	94
+mécénons		mécéner	73
+mecha	Thème de science-fiction, mettant en scène des personnages utilisant ou incarnant des armures robotisées, généralement de forme humanoïde.
+méchage	Action de mécher.
+méchages		méchage	0
+méchai		mécher	22
+méchaient		mécher	32
+méchais		mécher	29
+méchait		mécher	40
+méchâmes		mécher	3
+méchamment	Avec méchanceté.
+méchanceté	Penchant à faire du mal.
+méchancetés		méchanceté	0
+méchant	Mauvais, contraire de bon.
+méchante	Personne cruelle.
+méchantes		méchant	1
+méchants		méchant	9
+méchas		mécher	12
+méchasse		mécher	6
+méchassent		mécher	17
+méchasses		mécher	8
+méchassiez		mécher	14
+méchassions		mécher	25
+méchât		mécher	20
+méchâtes		mécher	2
+mèche	Assemblage de fils de coton, de chanvre, etc., qu’on utilise pour l’éclairage dans les lampes à huile, à pétrole, à essence, etc.
+méchée		mécher	37
+méchées		mécher	36
+mèchent		mécher	31
+mécher	Faire entrer dans un tonneau la vapeur du soufre brûlant, au moyen d’une mèche.
+mèchera		mécher	21
+mècherai		mécher	16
+mècheraient		mécher	28
+mècherais		mécher	18
+mècherait		mécher	26
+mècheras		mécher	7
+méchèrent		mécher	24
+mècherez		mécher	5
+mècheriez		mécher	4
+mècherions		mécher	11
+mècherons		mécher	10
+mècheront		mécher	15
+mèches		mèche	0
+mécheuse		mécheux	23
+mécheuses		mécheux	1
+mécheux	Qui forme mèche.
+méchez		mécher	30
+méchiez		mécher	13
+méchions		mécher	19
+méchons		mécher	27
+méchoui	Mouton, agneau ou, par extension, porc, cochon de lait entier rôti à la broche sur les braises d’un feu de bois.
+méchouis		méchoui	0
+mechta	Hameau d’Afrique du Nord.
+mechtas		mechta	0
+mécompte	Espérance trompée, idée fausse ou exagérée qu’on s’est faite d’une chose.
+mécomptes		mécompte	0
+méconduira		méconduire	44
+méconduirai		méconduire	50
+méconduiraient		méconduire	97
+méconduirais		méconduire	96
+méconduirait		méconduire	92
+méconduiras		méconduire	57
+méconduire	Se conduire mal.
+méconduirez		méconduire	58
+méconduiriez		méconduire	104
+méconduirions		méconduire	105
+méconduirons		méconduire	61
+méconduiront		méconduire	54
+méconduis		méconduire	72
+méconduisaient		méconduire	93
+méconduisais		méconduire	95
+méconduisait		méconduire	91
+méconduisant		méconduire	43
+méconduise		méconduire	85
+méconduisent		méconduire	41
+méconduises		méconduire	98
+méconduisez		méconduire	70
+méconduisiez		méconduire	102
+méconduisîmes		méconduire	68
+méconduisions		méconduire	103
+méconduisirent		méconduire	48
+méconduisis		méconduire	55
+méconduisisse		méconduire	81
+méconduisissent		méconduire	78
+méconduisisses		méconduire	87
+méconduisissiez		méconduire	88
+méconduisit		méconduire	39
+méconduisîtes		méconduire	84
+méconduisons		méconduire	73
+méconduit		méconduire	56
+méconduite	Mauvaise conduite.
+méconduites		méconduite	0
+méconduits		méconduire	53
+méconial	Relatif au méconium.
+méconiale		méconial	23
+méconiales		méconial	1
+méconiaux		méconial	9
+méconium	Suc exprimé des têtes et des feuilles de pavot mises sous presse.
+méconiums		méconium	0
+méconnais	Première personne du singulier de l’indicatif présent de méconnaître (ou méconnaitre).	méconnaitre
+méconnaissable	Qu’on ne peut reconnaître qu’avec peine.
+méconnaissables		méconnaissable	0
+méconnaissaient	Troisième personne du pluriel de l’imparfait du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaissais	Première personne du singulier de l’imparfait de méconnaître (ou méconnaitre).	méconnaitre
+méconnaissait	Troisième personne du singulier de l’imparfait du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaissance	État de mal connaître, de méconnaître.
+méconnaissances		méconnaissance	0
+méconnaissant	Participe présent de méconnaître (ou méconnaitre).	méconnaitre
+méconnaisse	Première personne du singulier du présent du subjonctif de méconnaître (ou méconnaitre).	méconnaitre
+méconnaissent	Troisième personne du pluriel du présent de l’indicatif de méconnaître (ou méconnaitre).	méconnaitre
+méconnaisses	Deuxième personne du singulier du présent du subjonctif du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaissez	Deuxième personne du pluriel de l’indicatif présent du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaissiez	Deuxième personne du pluriel de l’imparfait du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaissions	Première personne du pluriel de l’imparfait du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaissons	Première personne du pluriel de l’indicatif présent du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnaît		méconnaître	107
+méconnaîtra		méconnaître	44
+méconnaîtrai		méconnaître	16
+méconnaîtraient		méconnaître	108
+méconnaîtrais		méconnaître	106
+méconnaîtrait		méconnaître	112
+méconnaîtras		méconnaître	7
+méconnaître	Ne pas reconnaître.
+méconnaîtrez		méconnaître	5
+méconnaîtriez		méconnaître	99
+méconnaîtrions		méconnaître	101
+méconnaîtrons		méconnaître	10
+méconnaîtront		méconnaître	15
+méconnu	Qui n'est pas reconnu.
+méconnue	Celle à laquelle on ne rend pas justice, dont on n’apprécie pas le mérite.
+méconnues		méconnue	0
+méconnûmes	Première personne du pluriel du passé simple du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnurent	Troisième personne du pluriel du passé simple du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnus		méconnu	9
+méconnusse	Première personne du singulier de l’imparfait du subjonctif du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnussent	Troisième personne du pluriel de l’imparfait du subjonctif du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnusses	Deuxième personne du singulier de l’imparfait du subjonctif du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnussiez	Deuxième personne du pluriel de l’imparfait du subjonctif du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnussions	Première personne du pluriel de l’imparfait du subjonctif du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnut	Troisième personne du singulier du passé simple du verbe méconnaître (ou méconnaitre).	méconnaitre
+méconnûtes	Deuxième personne du pluriel du passé simple du verbe méconnaître (ou méconnaitre).	méconnaitre
+mécontent	Insatisfait de quelque chose ou de quelqu'un.
+mécontenta		mécontenter	39
+mécontentai		mécontenter	22
+mécontentaient		mécontenter	32
+mécontentais		mécontenter	29
+mécontentait		mécontenter	40
+mécontentâmes		mécontenter	3
+mécontentant		mécontenter	35
+mécontentas		mécontenter	12
+mécontentasse		mécontenter	6
+mécontentassent		mécontenter	17
+mécontentasses		mécontenter	8
+mécontentassiez		mécontenter	14
+mécontentât		mécontenter	20
+mécontentâtes		mécontenter	2
+mécontente	Femme mécontente.
+mécontentée		mécontenter	37
+mécontentées		mécontenter	36
+mécontentement	Sentiment, état d'indignation de quelqu'un, d'un groupe de personnes, qui est mécontent.
+mécontentements		mécontentement	0
+mécontentent		mécontenter	31
+mécontenter	Rendre mécontent.
+mécontentera		mécontenter	21
+mécontenterai		mécontenter	16
+mécontenterais		mécontenter	18
+mécontenterait		mécontenter	26
+mécontenteras		mécontenter	7
+mécontentèrent		mécontenter	24
+mécontenterez		mécontenter	5
+mécontenteriez		mécontenter	4
+mécontenterions		mécontenter	11
+mécontenterons		mécontenter	10
+mécontenteront		mécontenter	15
+mécontentés		mécontenter	53
+mécontentez		mécontenter	30
+mécontentiez		mécontenter	13
+mécontentions		mécontenter	19
+mécontentons		mécontenter	27
+mécontents		mécontent	9
+mécoptère	Singulier de mécoptères.
+mécoptères	Ordre d'insectes, sous-classe des ptérygotes, section des néoptères, division des endoptérygotes qui ont la tête en forme de rostre et chez le mâle un abdomen …
+Mecque	Centre de rayonnement d'un art ou d'une science.
+mecquois	Relatif ou propre à La Mecque.
+mecquoise		mecquois	23
+mecquoises		mecquois	1
+mécréance	Absence de croyance, de foi, en matière religieuse.
+mécréances		mécréance	0
+mécréant	Qui n’adhère pas à la foi.
+mécréante	Personne non catholique, ou fidèle non pratiquante.
+mécréantes		mécréant	1
+mécréants		mécréant	9
+mecs		mec	0
+mecton	Type, mec.
+mectons		mecton	0
+médailla		médailler	33
+médaillable	Qui peut obtenir une médaille lors d’une compétition sportive.
+médaillables		médaillable	0
+médaillai		médailler	22
+médaillaient		médailler	32
+médaillais		médailler	29
+médaillait		médailler	34
+médaillâmes		médailler	3
+médaillant		médailler	35
+médaillas		médailler	12
+médaillasse		médailler	6
+médaillassent		médailler	17
+médaillasses		médailler	8
+médaillassiez		médailler	14
+médaillassions		médailler	25
+médaillât		médailler	20
+médaillâtes		médailler	2
+médaillé	Qui a reçu une ou des médailles.
+médaillée	Femme qui a reçu une médaille.
+médaillées		médaillée	0
+médaillent		médailler	31
+médailler	Récompenser par une médaille.
+médaillera		médailler	21
+médaillerai		médailler	16
+médailleraient		médailler	28
+médaillerais		médailler	18
+médaillerait		médailler	26
+médailleras		médailler	7
+médaillèrent		médailler	24
+médaillerez		médailler	5
+médailleriez		médailler	4
+médaillerions		médailler	11
+médaillerons		médailler	10
+médailleront		médailler	15
+médailles		médaille	0
+médailleur	Artiste qui fait des médailles, qui grave les coins destinés à faire les médailles.
+médailleurs		médailleur	0
+médaillez		médailler	30
+médaillier	Meuble composé de plusieurs tablettes à tiroir dans lesquelles il y a de petites découpures en creux, de forme ronde et de différentes grandeurs, propres à rec…
+médailliers		médaillier	0
+médailliez		médailler	13
+médaillions		médailler	19
+médailliste	Celui ou celle qui est curieux et connaisseur en médailles.
+médaillistes		médailliste	0
+médaillon	Grosse médaille.
+médaillons		médaillon	0
+mède	Relatif à la Médie, aux Mèdes.
+médecin	De médecin, des médecins.
+médecine	Science des maladies et art de les guérir.
+médecines		médecin	1
+médecins		médecin	0
+medersa	École ou université musulmane.
+médersas		médersa	0
+mèdes		mède	0
+média	Ensemble des moyens d’information.
+médiagraphie	Liste de médias se rapportant à un sujet.
+médiagraphies		médiagraphie	0
+médial	Qui occupe le milieu d’un mot ou d’une syllabe.
+médiale	Consonne qui occupe le milieu d’un mot.
+médiales		médial	1
+médian	Qui est placé au milieu.
+médiane	Ligne qui va du sommet d’un triangle au milieu du côté opposé, ou qui relie les milieux de deux côtés opposés d’un quadrilatère, ou qui relie les sommets d’un …
+médianes		médiane	0
+médianoche	Désigne à l’origine un repas pris après minuit, marquant le passage d’un jour maigre à un jour gras, puis, la mode évoluant, une collation faite vers minuit.
+médianoches		médianoche	0
+médians		médian	9
+médiante	La tierce qui tient le milieu entre la tonique et la dominante.
+médiantes		médiante	0
+médias		média	0
+médiascope	Appareil permettant de donner une réponse graduée positive, neutre ou négative, lors d’une médiascopie pour l’évaluation de contenu audiovisuel.
+médiascopes		médiascope	0
+médiascopie	Méthode de mesure instantanée et continue de l’adhésion d’un public à un contenu audiovisuel.
+médiascopies		médiascopie	0
+médiasphère	Ensemble du milieu des médias.
+médiasphères		médiasphère	0
+médiastin	Cloison membraneuse formée par l’adossement des deux plèvres et qui sépare la poitrine en deux parties, l’une à droite, l’autre à gauche.
+médiastins		médiastin	0
+médiat	Qui n’est en relation avec un corps que par un autre interposé.
+médiate		médiat	109
+médiates		médiat	1
+médiateur	Qui opère la médiation.
+médiateurs		médiateur	9
+médiathécaire	Personne travaillant dans une médiathèque.
+médiathécaires		médiathécaire	0
+médiathèque	Établissement, généralement public, qui conserve et donne accès à différents types de médias.
+médiathèques		médiathèque	0
+médiation	Moyen indirect par lequel on fait connaître un message ou une intention.
+médiations		médiation	0
+médiatique	Qui concerne les médias.
+médiatiquement	De façon médiatique.
+médiatiques		médiatique	0
+médiatisa		médiatiser	33
+médiatisai		médiatiser	22
+médiatisaient		médiatiser	32
+médiatisais		médiatiser	29
+médiatisait		médiatiser	34
+médiatisâmes		médiatiser	3
+médiatisant	Qui médiatise.
+médiatisas		médiatiser	12
+médiatisasse		médiatiser	6
+médiatisassent		médiatiser	17
+médiatisasses		médiatiser	8
+médiatisassiez		médiatiser	14
+médiatisassions		médiatiser	25
+médiatisât		médiatiser	20
+médiatisâtes		médiatiser	2
+médiatisation	Le fait pour un prince, un pays, en Allemagne antérieure à la république, de ne plus relever immédiatement de l’empereur.
+médiatisations		médiatisation	0
+médiatisé		médiatiser	56
+médiatisée		médiatiser	45
+médiatisées		médiatiser	51
+médiatisent		médiatiser	31
+médiatiser	Faire qu’un prince, un pays, en Allemagne antérieure à la république, ne relève plus immédiatement de l’empereur.
+médiatisera		médiatiser	21
+médiatiserai		médiatiser	16
+médiatiseraient		médiatiser	28
+médiatiserais		médiatiser	18
+médiatiserait		médiatiser	26
+médiatiseras		médiatiser	7
+médiatisèrent		médiatiser	24
+médiatiserez		médiatiser	5
+médiatiseriez		médiatiser	4
+médiatiserions		médiatiser	11
+médiatiserons		médiatiser	10
+médiatiseront		médiatiser	15
+médiatisés		médiatiser	53
+médiatisez		médiatiser	30
+médiatisiez		médiatiser	13
+médiatisions		médiatiser	19
+médiatisons		médiatiser	27
+médiator	Plectre, petit accessoire que l’on tient entre le pouce et l’index pour jouer de certains instruments à cordes.
+médiators		médiator	0
+médiatrice	Celle qui s’entremet pour opérer un accord, un accommodement entre deux ou plusieurs personnes, entre différents partis.
+médiatrices		médiateur	1
+médiats		médiat	9
+médiaux		médial	9
+médical	Ce qui a trait à la médecine ou à la santé.
+médicale	Émission à thème médical.
+médicalement	D'une manière médicale.
+médicales		médical	1
+médicalisa		médicaliser	33
+médicalisai		médicaliser	22
+médicalisaient		médicaliser	32
+médicalisais		médicaliser	29
+médicalisait		médicaliser	34
+médicalisâmes		médicaliser	3
+médicalisant		médicaliser	35
+médicalisas		médicaliser	12
+médicalisasse		médicaliser	6
+médicalisassent		médicaliser	17
+médicalisasses		médicaliser	8
+médicalisassiez		médicaliser	14
+médicalisât		médicaliser	20
+médicalisâtes		médicaliser	2
+médicalisation	Action de médicaliser, de confier quelque chose aux soins de la médecine, de donner un caractère médical.
+médicalisations		médicalisation	0
+médicalisé	Équipé pour donner des soins médicaux.
+médicalisée		médicaliser	45
+médicalisées		médicaliser	36
+médicalisent		médicaliser	31
+médicaliser	Équiper pour permettre le travail médical.
+médicalisera		médicaliser	21
+médicaliserai		médicaliser	16
+médicaliserais		médicaliser	18
+médicaliserait		médicaliser	26
+médicaliseras		médicaliser	7
+médicalisèrent		médicaliser	24
+médicaliserez		médicaliser	5
+médicaliseriez		médicaliser	4
+médicaliserions		médicaliser	11
+médicaliserons		médicaliser	10
+médicaliseront		médicaliser	15
+médicalisés		médicaliser	38
+médicalisez		médicaliser	30
+médicalisiez		médicaliser	13
+médicalisions		médicaliser	19
+médicalisons		médicaliser	27
+médicament	Substance ou composition possédant des propriétés curatives ou préventives, destinées à guérir, à soulager ou à prévenir des maladies humaines ou animales.
+médicamenta		médicamenter	33
+médicamentai		médicamenter	22
+médicamentaient		médicamenter	32
+médicamentais		médicamenter	29
+médicamentait		médicamenter	40
+médicamentâmes		médicamenter	3
+médicamentant		médicamenter	35
+médicamentas		médicamenter	12
+médicamentasse		médicamenter	6
+médicamentasses		médicamenter	8
+médicamentât		médicamenter	20
+médicamentâtes		médicamenter	2
+médicamenté		médicamenter	56
+médicamentée		médicamenter	37
+médicamentées		médicamenter	36
+médicamentent		médicamenter	31
+médicamenter	Prescrire, administrer des médicaments à un malade.
+médicamentera		médicamenter	21
+médicamenterai		médicamenter	16
+médicamenterais		médicamenter	18
+médicamenterait		médicamenter	26
+médicamenteras		médicamenter	7
+médicamentèrent		médicamenter	24
+médicamenterez		médicamenter	5
+médicamenteriez		médicamenter	4
+médicamenterons		médicamenter	10
+médicamenteront		médicamenter	15
+médicamentés		médicamenter	38
+médicamenteuse		médicamenteux	23
+médicamenteuses		médicamenteux	1
+médicamenteux	Qui a la vertu d’un médicament.
+médicamentez		médicamenter	30
+médicamentiez		médicamenter	13
+médicamentions		médicamenter	19
+médicamentons		médicamenter	27
+médicaments		médicament	0
+médicastre	Médecin ignorant et hâbleur.
+médicastres		médicastre	0
+médicat	Ancien concours qui permettait d’obtenir le titre de médecin hospitalier en France, supprimé en 1970.
+médication	Fait d’administrer des remèdes à quelqu’un.
+médications		médication	0
+médicats		médicat	0
+médicaux		médical	9
+médicinal	Qui sert de remède.
+médicinale		médicinal	23
+médicinales		médicinal	1
+médicinaux		médicinal	9
+médicinier	Arbuste médicinal du genre Jatropha, en particulier, l’arbre corail.
+médiciniers		médicinier	0
+médicolégal	Qui a rapport à la médecine légale.
+médicolégale		médicolégal	23
+médicolégales		médicolégal	1
+médicolégaux		médicolégal	9
+médicosocial	Relatif à des aspects médicaux et sociaux.
+médicosociale	Féminin singulier de médicosocial.
+médicosociales		médicosocial	1
+médicosociaux		médicosocial	9
+médiéval	Relatif au Moyen Âge.
+médiévale		médiéval	23
+médiévales		médiéval	1
+médiévaux		médiéval	9
+médiévisme	Étude scientifique du Moyen Âge.
+médiévismes		médiévisme	0
+médiéviste	Celui, celle qui se consacre à l'étude du Moyen Âge.
+médiévistes		médiéviste	0
+médîmes		médire	68
+médimne	Mesure de capacité dans la Grèce antique, valant approximativement 53 litres.
+médimnes		médimne	0
+médina	Vieille ville des villes du monde arabe.
+médinas		médina	0
+médiocratie	Gouvernement, domination des médiocres.
+médiocraties		médiocratie	0
+médiocratique	Qui concerne la médiocratie.
+médiocratiques		médiocratique	0
+médiocre	Qui est entre le grand et le petit, qui est moyen, aussi bien en quantité qu’en qualité.
+médiocrement	D’une façon médiocre, moyenne.
+médiocres		médiocre	0
+médiocrité	État ou qualité de ce qui est médiocre (moyen, peu important, peu digne d'être remarqué).
+médiocrités		médiocrité	0
+médiologie	Discipline proposée par Régis Debray, qui étudie les conditions techniques, sociales et institutionnelles de la transmission des idées, des croyances et des re…
+médiologies		médiologie	0
+médiologue	Intellectuel spécialisé dans la médiologie.
+médiologues		médiologue	0
+médique	Qui appartient aux Mèdes, ou aux Perses que les Grecs appelaient souvent Mèdes.
+médiques		médique	0
+médira		médire	44
+médirai		médire	50
+médiraient		médire	97
+médirais		médire	96
+médirait		médire	92
+médiras		médire	57
+médire	Dire du mal de quelqu’un, soit par méchanceté, soit par légèreté.
+médirent		médire	48
+médirez		médire	58
+médiriez		médire	104
+médirions		médire	105
+médirons		médire	61
+médiront		médire	54
+médis		médire	72
+médisaient		médire	93
+médisais	Relatif à Médis, commune française située dans le département de la Charente-Maritime.
+médisait		médire	91
+médisance	Action de médire, de dire un mal de quelqu'un ou de quelque chose qui est réel dans le but de lui nuire.
+médisances		médisance	0
+médisant	Qui médit.
+médisante	Celle qui médit.
+médisantes		médisant	1
+médisants		médisant	9
+médise		médire	85
+médisent		médire	41
+médises		médire	98
+médisez		médire	70
+médisiez		médire	102
+médisions		médire	103
+médisons		médire	73
+médisse		médire	81
+médissent		médire	78
+médisses		médire	87
+médissiez		médire	88
+médissions		médire	90
+médit		médire	56
+médita		méditer	39
+méditai		méditer	55
+méditaient		méditer	42
+méditais		méditer	52
+méditait		méditer	40
+méditâmes		méditer	3
+méditant	Qui médite.
+méditas		méditer	12
+méditasse		méditer	6
+méditassent		méditer	17
+méditasses		méditer	8
+méditassiez		méditer	14
+méditassions		méditer	25
+méditât		méditer	20
+méditâtes		méditer	2
+méditatif	Qui est porté, livré, consacré à la méditation.
+méditatifs		méditatif	9
+méditation	Action de méditer.
+méditations		méditation	0
+méditative	Femme portée à la méditation.
+méditatives		méditatif	1
+médité	Qui a été l’objet de méditations.
+méditée		méditer	45
+méditées		méditer	51
+méditent		méditer	41
+méditer	Réfléchir sur quelque chose, l’examiner mûrement, de manière à l’approfondir.
+méditera		méditer	44
+méditerai		méditer	16
+méditeraient		méditer	28
+méditerais		méditer	60
+méditerait		méditer	49
+méditeras		méditer	57
+méditèrent		méditer	48
+méditerez		méditer	5
+méditeriez		méditer	4
+méditerions		méditer	11
+méditerons		méditer	10
+méditeront		méditer	15
+méditerrané	Qui est au milieu des terres, enfermé dans les terres.
+méditerranée	Forme désuète de méditerrané (« qui est au milieu des terres »).
+méditerranéen	Qui appartient à la mer Méditerranée ou aux pays qui bordent cette mer.
+méditerranéenne	Femme vivant dans un pays limitrophe de la mer Méditerranée ou qui en est originaire.
+méditerranéens		méditerranéen	9
+méditerranées	Pluriel de méditerranée, forme elle-même désuète de méditerrané.	méditerrané
+méditerranés		méditerrané	9
+médités		méditer	53
+méditez		méditer	47
+méditiez		méditer	67
+méditions		méditer	19
+méditons		méditer	59
+medium	Panneau de fibres à densité moyenne.
+médiumnique	Qui est relatif aux médiums.
+médiumniques		médiumnique	0
+médiumnité	Faculté, état médiumnique.
+médiumnités		médiumnité	0
+médiums		médium	0
+médius	Doigt du milieu de la main.
+medley	Course en individuel ou en équipe où quatre différents styles de nage (papillon, dos, brasse et nage libre) sont utilisés
+medleys		medley	0
+médoc	Bordeaux renommé pour sa couleur rubis, son bouquet, sa finesse et son moelleux, provenant du Bas et Haut-Médoc, classé en grands crus (Château-Lafitte, Châtea…
+médocain	Qui se rapporte à la région du Médoc.
+médocaine		médocain	23
+médocaines		médocain	1
+médocains		médocain	9
+médocs	Pluriel de médoc (vin).	médoc
+médulla	Partie centrale d’un organe.
+médullaire	Qui appartient à la moelle ou qui en a la nature.
+médullaires		médullaire	0
+médullas		médulla	0
+médulleuse		médulleux	23
+médulleuses		médulleux	1
+médulleux	Se dit des tiges qui ont un large canal médullaire.
+médusa		méduser	39
+médusai		méduser	22
+médusaient		méduser	32
+médusais		méduser	29
+médusait		méduser	40
+médusâmes		méduser	3
+médusant	Qui frappe de stupeur.
+médusas		méduser	12
+médusasse		méduser	6
+médusassent		méduser	17
+médusasses		méduser	8
+médusassiez		méduser	14
+médusassions		méduser	25
+médusât		méduser	20
+médusâtes		méduser	2
+méduse	Cnidaire aquatique au corps gélatineux en forme d’ombrelle, généralement libre et nageur, souvent muni de tentacules urticants.
+médusée		médusé	23
+médusées		médusé	1
+médusent		méduser	41
+méduser	Frapper de stupeur.
+médusera		méduser	21
+méduserai		méduser	16
+méduseraient		méduser	28
+méduserais		méduser	18
+méduserait		méduser	26
+méduseras		méduser	7
+médusèrent		méduser	24
+méduserez		méduser	5
+méduseriez		méduser	4
+méduserions		méduser	11
+méduserons		méduser	10
+méduseront		méduser	15
+médusés		médusé	9
+médusez		méduser	30
+médusiez		méduser	13
+médusions		méduser	19
+médusons		méduser	27
+meeting	Réunion ou assemblée publique.
+meetings		meeting	0
+méfait	Mauvaise action.
+méfaits		méfait	0
+méfia		méfier	33
+méfiai		méfier	22
+méfiaient		méfier	42
+méfiais		méfier	52
+méfiait		méfier	40
+méfiâmes		méfier	3
+méfiance	Disposition à se méfier, à soupçonner, crainte habituelle d’être trompé.
+méfiances		méfiance	0
+méfiant	Qui se méfie.
+méfiante		méfiant	23
+méfiantes		méfiant	1
+méfiants		méfiant	9
+méfias		méfier	12
+méfiasse		méfier	6
+méfiassent		méfier	17
+méfiasses		méfier	8
+méfiassiez		méfier	14
+méfiassions		méfier	25
+méfiât		méfier	20
+méfiâtes		méfier	2
+méfié		méfier	56
+méfiée		méfier	45
+méfiées		méfier	36
+méfient		méfier	41
+méfier	Ne pas se fier à quelqu’un, à ce qu’il dit, à ce qu’il fait paraître, parce qu’on le soupçonne de ne pas être sincère ni sûr.
+méfiera		méfier	44
+méfierai		méfier	50
+méfieraient		méfier	63
+méfierais		méfier	60
+méfierait		méfier	49
+méfieras		méfier	7
+méfièrent		méfier	48
+méfierez		méfier	5
+méfieriez		méfier	4
+méfierions		méfier	11
+méfierons		méfier	10
+méfieront		méfier	54
+méfiés		méfier	53
+méfiez		méfier	47
+méfiiez		méfier	13
+méfiions		méfier	65
+méfions		méfier	59
+méforme	Mauvaise condition physique.
+méformes		méforme	0
+méga	Mégaoctet.
+mégabase	Unité de mesure en biologie moléculaire qui représente une longueur d'un million de paires de bases d’ADN ou d’ARN.
+mégabases		mégabase	0
+mégabit	Unité de mesure de quantité d’information numérique, valant 2²⁰ bits, ou 10⁶ bits environ, et dont le symbole est Mbit ou parfois Mb.
+mégabits		mégabit	0
+mégabyte	Mégaoctet, soit 10⁶ bytes.
+mégabytes		mégabyte	0
+mégacaryocyte	Cellule géante (d’environ 50 à 100 µm de diamètre) de la moelle hématopoïétique, responsable de la production des thrombocytes (par thrombopoïèse).
+mégacaryocytes		mégacaryocyte	0
+mégacéphalie	Volume important de la boite crânienne, avec ou sans incidence pathologique.
+mégacéphalies		mégacéphalie	0
+mégacéros	Cervidé géant, préhistorique et aujourd'hui éteint, dont les bois mesuraient jusqu'à 3,50 m d'une extrémité à l'autre.
+mégachile	Abeille solitaire aux grosses mandibules, dont certaines espèces sont qualifiées d’abeilles « coupeuses de feuilles » : elles découpent des fragments de feuill…
+mégachiles		mégachile	0
+mégacôlon	Côlon très dilaté.
+mégacôlons		mégacôlon	0
+mégadonnée	Variante plus rare de mégadonnées.
+mégadonnées	Ensemble de données informatiques à très grande échelle.
+mégafeu	Incendie qui ravage une très grande surface, typiquement plus de 1 000 ou 10 000 hectares.
+mégafeux		mégafeu	0
+mégaflops	Unité de mesure de puissance de calcul numérique, valant 10⁶ flops.
+mégahertz	Unité de mesure de fréquence du Système international (SI), valant 10⁶ hertz, et dont le symbole est MHz.
+mégajoule	Unité de mesure d’énergie du Système international (SI), valant 10⁶ joules, et dont le symbole est MJ.
+mégajoules		mégajoule	0
+mégalithe	Pierre très grosse, non travaillée, ou très gros assemblage de pierres qui, dans les temps primitifs, constituaient des monuments de destinations diverses.
+mégalithes		mégalithe	0
+mégalithique	Relatif aux mégalithes.
+mégalithiques		mégalithique	0
+mégalithisme	Sorte d'architecture caractérisée par des mégalithes.
+mégalithismes		mégalithisme	0
+mégalo	Mégalomane ; désigne quelqu'un qui a une estime de lui-même exagérée, délirante.
+mégalomane	Qui est atteint de mégalomanie.
+mégalomanes		mégalomane	0
+mégalomaniaque	Qui a trait à la mégalomanie.
+mégalomaniaques		mégalomaniaque	0
+mégalomanie	Manie qui consiste soit en un désir insatiable de gloire, de grandeur, soit dans l’illusion qu’on les possède.
+mégalomanies		mégalomanie	0
+mégalopole	Très grande agglomération, formée de plusieurs grandes villes proches et comportant plusieurs millions d’habitants.
+mégalopoles		mégalopole	0
+mégalos		mégalo	0
+mégalosaure	Dinosaure carnivore pouvant mesurer jusqu’à neuf mètres.
+mégalosaures		mégalosaure	0
+mégaoctet	Unité de mesure de quantité d’information numérique, valant 1 048 576 (2²⁰) octets, et dont le symbole est Mo.
+mégaoctets		mégaoctet	0
+mégaphone	Porte-voix à amplification électronique.
+mégaphones		mégaphone	0
+mégapixel	Un million de pixels.
+mégapixels		mégapixel	0
+mégapode	Genre d'oiseaux galliformes de la famille des mégapodiidés, comprenant 16 espèces appartenant à trois genres différents, habitant les forêts de l'Océanie et d'…
+mégapodes		mégapode	0
+mégapole	Très grande agglomération, comportant plusieurs millions d’habitants.
+mégapoles		mégapole	0
+mégaptère	Jubarte, baleine à bosse.
+mégaptères		mégaptère	0
+mégarde	Erreur d’inattention, étourderie.
+mégardes		mégarde	0
+mégarique	Qui appartient à une école de philosophie fondée à Mégare par Euclide, vers l’an 400 avant Jésus-Christ.
+mégariques		mégarique	0
+mégaron	Partie centrale et principale des palais grecs de l'époque mycénienne, elle comporte une salle de réception, une antichambre et la salle du trône.
+mégarons		mégaron	0
+mégas		méga	0
+mégastore	Très grand magasin : hypermarché, grande surface, magasin à grande surface.
+mégastores		mégastore	0
+mégathérium	Grand mammifère fossile.
+mégathériums		mégathérium	0
+mégatonne	Unité de mesure de masse en dehors du Système international (mais dont l’usage est accepté avec le SI), valant 10⁶ tonnes, et dont le symbole est Mt.
+mégatonnes		mégatonne	0
+mégatonnique	Dont l’énergie explosive est de l’ordre de la mégatonne.
+mégatonniques		mégatonnique	0
+Mégavirus	Genre de virus caractérisé par une taille particulièrement importante.
+mégawatt	Unité de mesure de puissance du Système international (SI), valant 10⁶ watts, et dont le symbole est MW.
+mégawatts		mégawatt	0
+mégère	Femme méchante et emportée, par allusion à l’une des Érinyes.
+mégères		mégère	0
+mégi		mégir	46
+mégie	Préparation des peaux de mouton et autres peaux délicates par un mégissier.
+mégies		mégie	0
+mégîmes		mégir	3
+mégir	Mettre en mégie.
+mégira		mégir	21
+mégirai		mégir	16
+mégiraient		mégir	28
+mégirais		mégir	18
+mégirait		mégir	26
+mégiras		mégir	7
+mégirent		mégir	24
+mégirez		mégir	5
+mégiriez		mégir	4
+mégirions		mégir	11
+mégirons		mégir	10
+mégiront		mégir	15
+mégis	Préparation d’alun, de cendres et d’eau pour assouplir les peaux, le cuir.
+mégissa		mégisser	33
+mégissai		mégisser	22
+mégissaient		mégisser	32
+mégissais		mégisser	29
+mégissait		mégisser	34
+mégissâmes		mégisser	3
+mégissant		mégisser	35
+mégissas		mégisser	12
+mégissasse		mégisser	6
+mégissassent		mégisser	17
+mégissasses		mégisser	8
+mégissassiez		mégisser	14
+mégissassions		mégisser	25
+mégissât		mégisser	20
+mégissâtes		mégisser	2
+mégissé		mégisser	46
+mégissée		mégisser	37
+mégissées		mégisser	36
+mégissent		mégisser	31
+mégisser	Tanner une peau pour en faire un cuir souple.
+mégissera		mégisser	21
+mégisserai		mégisser	16
+mégisseraient		mégisser	28
+mégisserais		mégisser	18
+mégisserait		mégisser	26
+mégisseras		mégisser	7
+mégissèrent		mégisser	24
+mégisserez		mégisser	5
+mégisserie	Métier et commerce des peaux principalement d’ovins et de caprins à l’exclusion des grosses peaux de bovins.
+mégisseries		mégisserie	0
+mégisseriez		mégisser	4
+mégisserions		mégisser	11
+mégisserons		mégisser	10
+mégisseront		mégisser	15
+mégissés		mégisser	38
+mégissez		mégisser	30
+mégissier	Celui qui apprête les peaux principalement d’ovins et de caprins à l’exclusion des grosses peaux de bovins dont s’occupent les tanneurs.
+mégissière	Celle qui apprête les peaux principalement d’ovins et de caprins à l’exclusion des grosses peaux de bovins dont s’occupent les tanneurs.
+mégissières		mégissière	0
+mégissiers		mégissier	0
+mégissiez		mégisser	13
+mégissions		mégisser	19
+mégissons		mégisser	27
+mégit		mégir	107
+mégîtes		mégir	2
+mégohm	Unité de résistance électrique équivalant à un million d’ohms.
+mégohmmètre	Instrument de mesure spécialisé dans la mesure des résistances électriques de fortes valeurs.
+mégohmmètres		mégohmmètre	0
+mégohms		mégohm	0
+mégot	Bout qui reste d’un cigare ou d’une cigarette quand on a fini de les fumer.
+mégota		mégoter	33
+mégotage	Dans une discussion, fait de s’arrêter sur des détails inutiles.
+mégotages		mégotage	0
+mégotai		mégoter	22
+mégotaient		mégoter	42
+mégotais		mégoter	29
+mégotait		mégoter	40
+mégotâmes		mégoter	3
+mégotant		mégoter	35
+mégotas		mégoter	12
+mégotasse		mégoter	6
+mégotassent		mégoter	17
+mégotasses		mégoter	8
+mégotassiez		mégoter	14
+mégotassions		mégoter	25
+mégotât		mégoter	20
+mégotâtes		mégoter	2
+mégoté		mégoter	56
+mégotée		mégoter	37
+mégotées		mégoter	36
+mégotent		mégoter	31
+mégoter	Négocier sur des détails inutiles (des mégots, métaphoriquement parlant), vouloir économiser mesquinement.
+mégotera		mégoter	21
+mégoterai		mégoter	16
+mégoteraient		mégoter	28
+mégoterais		mégoter	18
+mégoterait		mégoter	26
+mégoteras		mégoter	7
+mégotèrent		mégoter	24
+mégoterez		mégoter	5
+mégoteriez		mégoter	4
+mégoterions		mégoter	11
+mégoterons		mégoter	10
+mégoteront		mégoter	15
+mégotés		mégoter	38
+mégoteur	Celui qui mégote, radin.
+mégoteurs		mégoteur	0
+mégoteuse	Celle qui mégote, qui a un comportement radin.
+mégoteuses		mégoteuse	0
+mégotez		mégoter	30
+mégotiez		mégoter	13
+mégotions		mégoter	19
+mégotons		mégoter	27
+mégots		mégot	0
+mehalla	Colonne de soldats ou de guerriers en Afrique du Nord.
+mehallas		mehalla	0
+méhara		méhari	0
+méharée	Randonnée organisée dans le désert à dos de dromadaire de type méhari.
+méharées		méharée	0
+méhari	Dromadaire de course, en pays arabe.
+méharis		méhari	0
+méhariste	Qui monte un dromadaire.
+méharistes		méhariste	0
+Meiji	122ᵉ empereur du Japon, de 1852 à 1912.
+meilleur	Comparatif de bon.
+meilleure	Celle qui est la mieux placée, la première.
+meilleures		meilleur	1
+meilleurs		meilleur	9
+méiose	Ensemble des deux divisions cellulaires aboutissant à la formation du gamète par réduction chromatique.
+méioses		méiose	0
+méiotique	Relatif à la méiose.
+méiotiques		méiotique	0
+meistre	Nom du grand mât dans certains bâtiments du Levant.
+meistres		meistre	0
+meitnérium	Élément chimique synthétique de numéro atomique 109 et de symbole Mt appartenant à la série chimique des métaux de transition.
+meitnériums		meitnérium	0
+méjanage	Tri des peaux en fonction de la qualité de la laine.
+méjanages		méjanage	0
+méjugé		méjuger	46
+méjugea		méjuger	33
+méjugeai		méjuger	22
+méjugeaient		méjuger	32
+méjugeais		méjuger	29
+méjugeait		méjuger	34
+méjugeâmes		méjuger	3
+méjugeant		méjuger	35
+méjugeas		méjuger	12
+méjugeasse		méjuger	6
+méjugeassent		méjuger	17
+méjugeasses		méjuger	8
+méjugeassiez		méjuger	14
+méjugeassions		méjuger	25
+méjugeât		méjuger	20
+méjugeâtes		méjuger	2
+méjugée		méjuger	37
+méjugées		méjuger	36
+méjugent		méjuger	31
+méjugeons		méjuger	27
+méjuger	Mal juger.
+méjugera		méjuger	21
+méjugerai		méjuger	16
+méjugeraient		méjuger	28
+méjugerais		méjuger	18
+méjugerait		méjuger	26
+méjugeras		méjuger	7
+méjugèrent		méjuger	24
+méjugerez		méjuger	5
+méjugeriez		méjuger	4
+méjugerions		méjuger	11
+méjugerons		méjuger	10
+méjugeront		méjuger	15
+méjugés		méjuger	53
+méjugez		méjuger	47
+méjugiez		méjuger	13
+méjugions		méjuger	19
+meknassi	Relatif à Meknès, ville du Maroc, ou à ses habitants.
+meknassie		meknassi	23
+meknassies		meknassi	1
+meknassis		meknassi	9
+mektoub	Exclamation qui exprime le fatalisme.
+mektoubs		mektoub	0
+mel	Unité de mesure de hauteur tonale (ou tonie), en acoustique.
+mêla		mêler	39
+mélaena	Variante de méléna.
+melaenas		melaena	0
+mêlai		mêler	55
+mêlaient		mêler	42
+mélais	Relatif à Mela, commune de la Corse-du-Sud.
+mêlait		mêler	40
+mêlâmes		mêler	68
+mélamine	Base salifiable produite par le mélam.
+mélaminée		mélaminé	23
+mélaminées		mélaminé	1
+mélaminés		mélaminé	0
+mélampyre	Plante herbacée annuelle du genre Melampyrum de la famille des Orobanchacées.
+mélampyres		mélampyre	0
+mélancolie	Hypothétique bile noire dont l’excès de sécrétion prédisposerait le patient à la tristesse, selon la médecine ancienne et sa théorie des humeurs.
+mélancolies		mélancolie	0
+mélancolique	Qui se livre à la mélancolie.
+mélancoliques		mélancolique	0
+mélanésien	Relatif à la Mélanésie.
+mélanésienne		mélanésien	23
+mélanésiennes		mélanésien	1
+mélanésiens		mélanésien	9
+mélange	Action de mélanger ou résultat de cette action.
+mélangea		mélanger	39
+mélangeai		mélanger	22
+mélangeaient		mélanger	42
+mélangeais		mélanger	52
+mélangeait		mélanger	40
+mélangeâmes		mélanger	3
+mélangeant	Qui provoque la confusion.
+mélangeas		mélanger	12
+mélangeasse		mélanger	6
+mélangeassent		mélanger	17
+mélangeasses		mélanger	8
+mélangeassiez		mélanger	14
+mélangeassions		mélanger	25
+mélangeât		mélanger	20
+mélangeâtes		mélanger	2
+mélangée		mélangé	23
+mélangées		mélangé	1
+mélangent		mélanger	41
+mélangeons		mélanger	59
+mélanger	Unir une chose avec une autre, ou plusieurs choses ensemble, de façon qu’elles forment comme un tout.
+mélangera		mélanger	44
+mélangerai		mélanger	50
+mélangeraient		mélanger	63
+mélangerais		mélanger	18
+mélangerait		mélanger	26
+mélangeras		mélanger	7
+mélangèrent		mélanger	48
+mélangerez		mélanger	5
+mélangeriez		mélanger	4
+mélangerions		mélanger	11
+mélangerons		mélanger	10
+mélangeront		mélanger	15
+mélanges		mélange	0
+mélangeur	Machine, mécanisme qui assure un mélange homogène.
+mélangeurs		mélangeur	0
+mélangeuse	Partie du mécanisme du broyage du cacao qui y mêle le sucre.
+mélangeuses		mélangeuse	0
+mélangez		mélanger	47
+mélangiez		mélanger	13
+mélangions		mélanger	65
+mélanine	Pigment noir de la peau des animaux et des hommes.
+mélanines		mélanine	0
+mélanique	Qui a rapport à la mélanine, à sa couleur, aux tumeurs qu’elle colore.
+mélaniques		mélanique	0
+mélanisme	Anomalie caractérisée par une couleur accidentellement noire ou plus obscure du pelage des animaux.
+mélanismes		mélanisme	0
+mélanoblastome	Mélanome.
+mélanoblastomes		mélanoblastome	0
+mélanocyte	Cellule qui pigmente la peau, les poils ou les plumes des vertébrés.
+mélanocytes		mélanocyte	0
+mélanoderme	À la peau de couleur foncée.
+mélanodermes		mélanoderme	0
+mélanodermie	Coloration foncée naturelle chez les populations noires.
+mélanodermies		mélanodermie	0
+mélanome	Tumeur dont les cellules sont pigmentées par de la mélanine.
+mélanomes		mélanome	0
+mélanose	Tumeur mélanique.
+mélanoses		mélanose	0
+mêlant	Compliqué.
+mêlante		mêlant	23
+mêlantes		mêlant	1
+mêlants		mêlant	9
+mélas	Ancien nom d'une variété de panthère de l’île de Java.
+mélasse	Résidu visqueux du sucre après son extraction et sa cristallisation.
+mêlassent		mêler	78
+mêlasses		mêler	87
+mêlassiez		mêler	88
+mêlassions		mêler	90
+mêlât		mêler	62
+mêlâtes		mêler	84
+mélatonine	Une neurohormone, sécrétée surtout par la glande pinéale en absence de lumière, réputée l’hormone centrale de régulation des rythmes chronobiologiques chez les…
+mélatonines		mélatonine	0
+melba	Qui est servi avec du sirop, de la glace à la vanille et de la crème chantilly.
+melbas		melba	0
+melchior	Grosse bouteille de vin d'une contenance de 18 litres, c'est à dire 24 bouteilles de 75 centilitres.
+melchiors		melchior	0
+melchite	Grec-orthodoxe ou grec-catholique du Moyen-Orient.
+melchites		melchite	0
+meldois	Relatif à Meaux, commune française située dans le département de la Seine-et-Marne.
+meldoise		meldois	23
+meldoises		meldois	1
+mêlé	Mélangé, entremêlé, embrouillé, désordonné.
+méléagrine	Huître perlière de la mer Rouge et de l’océan Indien.
+méléagrines		méléagrine	0
+mêlécasse	Variante de mêlé-cassis.
+mêlécasses		mêlécasse	0
+mêlée	Combat opiniâtre, où deux troupes s’attaquent corps-à-corps et se mêlent.
+mêlées		mêlé	1
+méléna	Déjection de sang noir, pâteux et nauséabond mélangé ou non aux selles indiquant une digestion partielle et que l’hémorragie se situe relativement haut dans le…
+mélénas		méléna	0
+mêlent		mêler	41
+mêler	Mettre ensemble des choses et les confondre.
+mêlera		mêler	44
+mêlerai		mêler	50
+mêleraient		mêler	63
+mêlerais		mêler	60
+mêlerait		mêler	49
+mêleras		mêler	57
+mêlèrent		mêler	48
+mêlerez		mêler	58
+mêleriez		mêler	74
+mêlerions		mêler	82
+mêlerons		mêler	61
+mêleront		mêler	54
+mêlés		mêlé	9
+mêletout	Personne qui s’occupe de ce qui ne la regarde pas.
+mêletouts		mêletout	0
+mêlez		mêler	47
+mélèze	Genre de conifères, grand arbre résineux de forme pyramidale, à aiguilles caduques, étroites et groupées en bouquets.
+mélèzes		mélèze	0
+mélia	Genre d’arbres dont le feuillage de certaines espèces ressemble à celui du frêne commun.
+Méliacées	Nom d’une famille de plantes de l’ordre des Sapindales.
+mélias		mélia	0
+mêliez		mêler	67
+mélilot	Plante de la famille des fabacées (légumineuses), utilisée en pharmacie et en parfumerie.
+mélilots		mélilot	0
+mélimélo	Mélange confus et désordonné.
+mélimélos		mélimélo	0
+mélinite	Explosif puissant, — de l’acide picrique fondu et moulé —, employé dans le chargement des obus et dû au chimiste Eugène Turpin.
+méliniter	Faire exploser avec de la mélinite.
+mélinités		méliniter	53
+mêlions		mêler	65
+mélioratif	Qui donne un sens plus favorable.
+mélioratifs		mélioratif	9
+méliorative		mélioratif	23
+mélioratives		mélioratif	1
+méliphage	Mellivore.
+méliphages		méliphage	0
+méliphagidé	Membre d'une famille de passereaux se nourrissant essentiellement du nectar des fleurs.
+méliphagidés		méliphagidé	0
+mélique	Chantant, en parlant de la poésie des Grecs anciens.
+méliques		mélique	0
+mélismatique	Relatif au mélisme.
+mélismatiques		mélismatique	0
+mélisme	Modulation de plusieurs notes sur la même syllabe d’un mot.
+mélismes		mélisme	0
+mélisse	Plante aromatique de la famille des lamiacées, dont on fait une eau distillée, appelée eau de mélisse ou eau des Carmes.
+mélisses		mélisse	0
+mélitococcie	Brucellose de l’homme et des petits ruminants due à Brucella melitensis.
+mélitococcies		mélitococcie	0
+mélitte	Plante herbacée vivace de la famille des Lamiacées originaire d’Europe, seule espèce du genre Melittis.
+mélittes		mélitte	0
+melkite	Variante de melchite.
+melkites		melkite	0
+mellah	Quartier juif au Maroc.
+mellahs		mellah	0
+mellifère	Qui porte, qui produit du miel.
+mellifères		mellifère	0
+mellification	Confection du miel par les abeilles.
+mellifications		mellification	0
+mellifique	Qui fait du miel.
+mellifiques		mellifique	0
+melliflu	Variante de melliflue.
+melliflue	Qui abonde en miel, qui fait le miel.
+melliflues		melliflue	0
+melliflus		melliflu	9
+mellite	Espèce minérale d’origine organique de la classe des organolites et particulièrement des mellates, chimiquement identique au sel d’aluminium de l’acide melliti…
+mellites		mellite	0
+melo	Langue omotique parlée en Éthiopie.
+mélodica	Instrument ayant la forme d'un clavecin mais où les sons sont produits par le frottement de lames de laiton contre un cylindre d'acier tournant.
+mélodicas		mélodica	0
+mélodie	Suite de sons d’où résulte un chant agréable et régulier.
+mélodies		mélodie	0
+mélodieuse		mélodieux	23
+mélodieusement	D’une manière mélodieuse.
+mélodieuses		mélodieux	1
+mélodieux	Qui est agréable à l’oreille.
+mélodique	Qui appartient à la mélodie.
+mélodiquement	D’une manière mélodique.
+mélodiques		mélodique	0
+mélodiste	Compositeur de mélodies.
+mélodistes		mélodiste	0
+mélodramatique	Relatif au mélodrame, qui ressemble au mélodrame, qui est exagéré.
+mélodramatiques		mélodramatique	0
+mélodramatisa		mélodramatiser	33
+mélodramatisai		mélodramatiser	22
+mélodramatisais		mélodramatiser	29
+mélodramatisait		mélodramatiser	34
+mélodramatisant		mélodramatiser	35
+mélodramatisas		mélodramatiser	12
+mélodramatisât		mélodramatiser	20
+mélodramatisé		mélodramatiser	46
+mélodramatisée		mélodramatiser	37
+mélodramatisées		mélodramatiser	36
+mélodramatisent		mélodramatiser	31
+mélodramatiser	Se comporter de façon mélodramatique.
+mélodramatisera		mélodramatiser	21
+mélodramatisés		mélodramatiser	38
+mélodramatisez		mélodramatiser	30
+mélodramatisiez		mélodramatiser	13
+mélodramatisons		mélodramatiser	27
+mélodrame	Sorte de drame populaire, mêlé de musique.
+mélodrames		mélodrame	0
+méloé	Genre d’insectes coléoptères.
+méloés		méloé	0
+méloïdes	Genre des méloés.
+mélomane	Qui aime la musique avec passion.
+mélomanes		mélomane	0
+mélomanie	Amour passionné de la musique.
+mélomanies		mélomanie	0
+mélomèle	Qualifie les monstres qui ont un ou deux membres accessoires insérés par leur base sur les membres principaux.
+mélomèles		mélomèle	0
+mélomélie	Nom de la monstruosité dont souffrent les mélomèles.
+mélomélies		mélomélie	0
+melon	Plante rampante, potagère, annuelle, de la famille des cucurbitacées et qui produit des fruits comestibles.
+melongène	Autre nom de l’aubergine.
+melongènes		melongène	0
+mélongine	Un des multiples synonymes de aubergine
+mélongines		mélongine	0
+melonné	Qui a la forme, lʼaspect du melon.
+melonnée	Pépon musqué.
+melonnées		melonnée	0
+melonnés		melonné	9
+melonnière	Champ de melons.
+melonnières		melonnière	0
+mêlons		mêler	59
+mélopée	Composition du chant, on ne l’emploie qu’en parlant de la musique antique.
+mélopées		mélopée	0
+mélophage	Insecte diptère de la famille des hippoboscidés, aptère, aux pattes fortes, parasite hématophage du mouton dont il détériore la peau en provoquant des noisillu…
+mélophages		mélophage	0
+mélos		mélo	0
+méls		mél	0
+meltem	Synonyme de étésien
+meltems		meltem	0
+melunais	Relatif à Melun, commune française située dans le département de la Seine-et-Marne, ou à ses habitants.
+melunaise		melunais	23
+melunaises		melunais	1
+mélusine	De sorcière, envoûtant.
+mélusines		mélusine	0
+membranaire	Qui a rapport à une membrane, qu’elle soit biologique ou artificielle.
+membranaires		membranaire	0
+membrane	Tissu organique animal servant à former, envelopper, séparer ou tapisser des cellules ou des organes.
+membranes		membrane	0
+membraneuse		membraneux	23
+membraneuses		membraneux	1
+membraneux	Qui est de la nature de la membrane.
+membranophone	Instrument de musique qui produit des sons principalement au moyen d’une membrane tendue qui vibre.
+membranophones		membranophone	0
+membranule	Petite membrane, tissu organique animal.
+membranules		membranule	0
+membre	Partie extérieure du corps d’un être humain ou d’un animal, distinguée de toutes les autres par quelque fonction particulière.
+membrée		membré	23
+membrées		membré	1
+membres		membre	0
+membron	Baguette, ordinairement de trois quarts de ligne d’épaisseur, qui sert d’ourlet à la bavette d’un bourseau.
+membrons		membron	0
+membru	Qui a les membres fort gros, notamment le pénis.
+membrue		membru	109
+membrues		membru	1
+membrure	Ensemble des membres d’un individu.
+membrures		membrure	0
+membrus		membru	9
+même	Qui n’est pas autre, qui n’est pas différent.
+mémée	Grand-mère.
+mémées		mémée	0
+mêmement	De même.
+memento	Variante orthographique de mémento
+mémentos		mémento	0
+méméra		mémérer	33
+mémérage	Commérage.
+mémérages		mémérage	0
+mémérai		mémérer	22
+méméraient		mémérer	32
+mémérais		mémérer	29
+mémérait		mémérer	34
+mémérâmes		mémérer	3
+mémérant		mémérer	35
+méméras		mémérer	12
+mémérasse		mémérer	6
+mémérassent		mémérer	17
+mémérasses		mémérer	8
+mémérassiez		mémérer	14
+mémérassions		mémérer	25
+mémérât		mémérer	20
+mémérâtes		mémérer	2
+mémère	Grand-mère.
+mémèrent		mémérer	31
+mémérer	Raconter (des commérages).
+mémèrera		mémérer	21
+mémèrerai		mémérer	16
+mémèreraient		mémérer	28
+mémèrerais		mémérer	18
+mémèrerait		mémérer	26
+mémèreras		mémérer	7
+mémérèrent		mémérer	24
+mémèrerez		mémérer	5
+mémèreriez		mémérer	4
+mémèrerions		mémérer	11
+mémèrerons		mémérer	10
+mémèreront		mémérer	15
+mémères		mémère	0
+mémérez		mémérer	30
+mémériez		mémérer	13
+mémérions		mémérer	19
+mémérisa		mémériser	39
+mémérisai		mémériser	55
+mémérisaient		mémériser	42
+mémérisais		mémériser	52
+mémérisait		mémériser	40
+mémérisâmes		mémériser	68
+mémérisant		mémériser	43
+mémérisas		mémériser	83
+mémérisasse		mémériser	81
+mémérisassent		mémériser	78
+mémérisasses		mémériser	87
+mémérisassiez		mémériser	88
+mémérisassions		mémériser	90
+mémérisât		mémériser	62
+mémérisâtes		mémériser	84
+mémérisé		mémériser	56
+mémérisée		mémériser	45
+mémérisées		mémériser	51
+mémérisent		mémériser	41
+mémériser	Donner des caractéristiques de mémère à.
+mémérisera		mémériser	44
+mémériserai		mémériser	50
+mémériseraient		mémériser	63
+mémériserais		mémériser	60
+mémériserait		mémériser	49
+mémériseras		mémériser	57
+mémérisèrent		mémériser	48
+mémériserez		mémériser	58
+mémériseriez		mémériser	74
+mémériserions		mémériser	82
+mémériserons		mémériser	61
+mémériseront		mémériser	54
+mémérisés		mémériser	53
+mémérisez		mémériser	47
+mémérisiez		mémériser	67
+mémérisions		mémériser	65
+mémérisons		mémériser	59
+mémérons		mémérer	27
+mêmes		même	0
+mémo	Mémorandum.
+mémoire	Capacité à retenir, conserver et rappeler de nombreuses informations antérieures.
+mémoires	Récit écrit qu’une personne fait des événements auxquels elle a participé ou dont elle a été témoin.
+mémorable	Qui est digne de mémoire, qui mérite d’être conservé dans la mémoire, qui est remarquable.
+mémorablement	D’une manière mémorable.
+mémorables		mémorable	0
+mémorandum	Aide-mémoire, pense-bête, note des choses dont on veut se souvenir.
+mémorandums		mémorandum	0
+mémoration	Évocation de la mémoire, du souvenir de quelque chose.
+mémorations		mémoration	0
+mémorial	Livre où sont consignés les souvenirs d’une personne.
+mémorialiste	Auteur de mémoires historiques.
+mémorialistes		mémorialiste	0
+mémoriaux		mémorial	0
+mémoriel	Relatif à la mémoire collective d’une nation.
+mémorielle		mémoriel	23
+mémorielles		mémoriel	1
+mémoriels		mémoriel	9
+mémorisa		mémoriser	33
+mémorisable	qui peut être mémorisé.
+mémorisables		mémorisable	0
+mémorisai		mémoriser	22
+mémorisaient		mémoriser	42
+mémorisais		mémoriser	29
+mémorisait		mémoriser	40
+mémorisâmes		mémoriser	3
+mémorisant		mémoriser	35
+mémorisas		mémoriser	12
+mémorisasse		mémoriser	6
+mémorisassent		mémoriser	17
+mémorisasses		mémoriser	8
+mémorisassiez		mémoriser	14
+mémorisassions		mémoriser	25
+mémorisât		mémoriser	20
+mémorisâtes		mémoriser	2
+mémorisation	Travail de la mémoire.
+mémorisations		mémorisation	0
+mémorise		mémoriser	64
+mémorisée		mémoriser	45
+mémorisées		mémoriser	51
+mémorisent		mémoriser	41
+mémoriser	Conserver en mémoire.
+mémorisera		mémoriser	21
+mémoriserai		mémoriser	50
+mémoriseraient		mémoriser	28
+mémoriserais		mémoriser	60
+mémoriserait		mémoriser	26
+mémoriseras		mémoriser	7
+mémorisèrent		mémoriser	24
+mémoriserez		mémoriser	5
+mémoriseriez		mémoriser	4
+mémoriserions		mémoriser	11
+mémoriserons		mémoriser	10
+mémoriseront		mémoriser	15
+mémorisés		mémoriser	53
+mémorisez		mémoriser	47
+mémorisiez		mémoriser	67
+mémorisions		mémoriser	19
+mémorisons		mémoriser	27
+mémos		mémo	0
+memphite	Relatif à Memphis.
+memphites		memphite	0
+mena		mener	39
+menaça		menacer	39
+menaçai		menacer	22
+menaçaient		menacer	42
+menaçais		menacer	52
+menaçait		menacer	40
+menaçâmes		menacer	3
+menaçant	Qui menace.
+menaçante		menaçant	23
+menaçantes		menaçant	1
+menaçants		menaçant	9
+menaças		menacer	12
+menaçasse		menacer	6
+menaçassent		menacer	17
+menaçasses		menacer	8
+menaçassiez		menacer	14
+menaçassions		menacer	25
+menaçât		menacer	62
+menaçâtes		menacer	2
+menace	Parole ou geste pour marquer sa colère, son ressentiment et pour faire craindre le mal qu’on prépare.
+menacée		menacé	23
+menacées		menacé	1
+menacent		menacer	41
+menacer	Se proposer intempestivement de faire.
+menacera		menacer	44
+menacerai		menacer	16
+menaceraient		menacer	63
+menacerais		menacer	18
+menacerait		menacer	49
+menaceras		menacer	57
+menacèrent		menacer	48
+menacerez		menacer	5
+menaceriez		menacer	74
+menacerions		menacer	11
+menacerons		menacer	10
+menaceront		menacer	54
+menacés		menacé	9
+menacez		menacer	47
+menaciez		menacer	67
+menacions		menacer	65
+menaçons		menacer	59
+ménade	Bacchante, femme qui célébrait les fêtes de Bacchus et se livrait à un délire qui allait jusqu’à la fureur.
+ménades		ménade	0
+ménage	Gouvernement domestique et tout ce qui concerne la dépense et l’entretien d’une famille.
+ménagea		ménager	39
+ménageai		ménager	22
+ménageaient		ménager	42
+ménageais		ménager	52
+ménageait		ménager	40
+ménageâmes		ménager	3
+ménageant		ménager	43
+ménageas		ménager	12
+ménageasse		ménager	6
+ménageassent		ménager	17
+ménageasses		ménager	8
+ménageassiez		ménager	14
+ménageassions		ménager	25
+ménageât		ménager	62
+ménageâtes		ménager	2
+ménagée		ménager	45
+ménagées		ménager	51
+ménagement	Circonspection, mesure dont on use à propos de quelqu’un ou de quelque chose.
+ménagements		ménagement	0
+ménagent		ménager	41
+ménageons		ménager	27
+ménager	Qui administre avec épargne, avec économie.
+ménagera		ménager	44
+ménagerai		ménager	50
+ménageraient		ménager	28
+ménagerais		ménager	18
+ménagerait		ménager	49
+ménageras		ménager	57
+ménagère	Femme qui, dans un couple, s’occupe du ménage.
+ménagèrent		ménager	48
+ménagères		ménager	1
+ménagerez		ménager	5
+ménagerie	Endroit où sont réunis, en vue de l’étude de la zoologie, les principales espèces d’animaux.
+ménageries		ménagerie	0
+ménageriez		ménager	4
+ménagerions		ménager	11
+ménagerons		ménager	10
+ménageront		ménager	15
+ménagers		ménager	9
+ménagés		ménager	53
+ménagez		ménager	47
+ménagiez		ménager	67
+ménagions		ménager	65
+menai		mener	55
+menaient		mener	42
+menais		mener	52
+menait		mener	40
+menâmes		mener	3
+menant	Qualifie l’élément d’un engrenage (une roue dentée, par exemple) qui reçoit la force motrice et transmet sa rotation au deuxième élément (dit « mené »).
+menante		menant	23
+menantes		menant	1
+menants		menant	9
+Ménapiens	Peuple celte de Gaule belgique dont l’actuelle ville de Cassel était la place principale.
+ménaquinone	Synonyme de vitamine K2.
+ménaquinones		ménaquinone	0
+ménarche	Période où apparaissent les premières règles.
+ménarches		ménarche	0
+menas		mener	83
+menasse		mener	6
+menassent		mener	78
+menasses		mener	8
+menassiez		mener	14
+menassions		mener	25
+menât		mener	62
+menâtes		mener	2
+menchévik	Membre de la fraction modérée du Parti social-démocrate russe, peu avant la révolution de 1917.
+menchéviks		menchévik	0
+menchévique	Relatif à la doctrine des menchéviks.
+mencheviques		menchevique	0
+mendélévium	Élément chimique de numéro atomique 101 et de symbole Md (Mv entre 1955 et 1963) appartenant à la série chimique des actinides.
+mendéléviums		mendélévium	0
+mendélien	Relatif aux lois de Gregor Mendel.
+mendélienne		mendélien	23
+mendéliennes		mendélien	1
+mendéliens		mendélien	9
+mendélisme	Théorie de la transmission de l’hérédité, selon les lois de Gregor Mendel.
+mendélismes		mendélisme	0
+mendia		mendier	39
+mendiai		mendier	22
+mendiaient		mendier	42
+mendiais		mendier	52
+mendiait		mendier	40
+mendiâmes		mendier	3
+mendiant	Dont la subsistance dépend de la charité publique.
+mendiante	Celle qui sollicite des dons pour survivre, qui vit de mendicité.
+mendiantes		mendiant	1
+mendiants		mendiant	9
+mendias		mendier	12
+mendiasse		mendier	6
+mendiassent		mendier	17
+mendiasses		mendier	8
+mendiassiez		mendier	14
+mendiassions		mendier	25
+mendiât		mendier	20
+mendiâtes		mendier	2
+mendicité	État d’indigence qui amène à mendier.
+mendicités		mendicité	0
+mendié		mendier	46
+mendiée		mendier	45
+mendiées		mendier	51
+mendient		mendier	41
+mendier	Demander l’aumône.
+mendiera		mendier	21
+mendierai		mendier	16
+mendieraient		mendier	28
+mendierais		mendier	18
+mendierait		mendier	49
+mendieras		mendier	57
+mendièrent		mendier	24
+mendierez		mendier	5
+mendieriez		mendier	4
+mendierions		mendier	11
+mendierons		mendier	10
+mendieront		mendier	15
+mendies	Deuxième personne de l’indicatif présent de mendier.	mendier
+mendiez		mendier	47
+mendigot	Mendiant.
+mendigota		mendigoter	33
+mendigotai		mendigoter	22
+mendigotaient		mendigoter	32
+mendigotais		mendigoter	29
+mendigotait		mendigoter	34
+mendigotâmes		mendigoter	3
+mendigotant		mendigoter	43
+mendigotas		mendigoter	12
+mendigotasse		mendigoter	6
+mendigotassent		mendigoter	17
+mendigotasses		mendigoter	8
+mendigotassiez		mendigoter	14
+mendigotassions		mendigoter	25
+mendigotât		mendigoter	20
+mendigotâtes		mendigoter	2
+mendigote	Mendiante.
+mendigotée		mendigoter	37
+mendigotées		mendigoter	36
+mendigotent		mendigoter	31
+mendigoter	Mendier.
+mendigotera		mendigoter	21
+mendigoterai		mendigoter	16
+mendigoteraient		mendigoter	28
+mendigoterais		mendigoter	18
+mendigoterait		mendigoter	26
+mendigoteras		mendigoter	7
+mendigotèrent		mendigoter	24
+mendigoterez		mendigoter	5
+mendigoteriez		mendigoter	4
+mendigoterions		mendigoter	11
+mendigoterons		mendigoter	10
+mendigoteront		mendigoter	15
+mendigotés		mendigoter	38
+mendigotez		mendigoter	30
+mendigotiez		mendigoter	13
+mendigotions		mendigoter	19
+mendigotons		mendigoter	27
+mendigots		mendigot	0
+mendiiez		mendier	13
+mendiions		mendier	19
+mendions		mendier	59
+mendois	Relatif à Mende, commune française située dans le département de la Lozère.
+mendoise		mendois	23
+mendoises		mendois	1
+mendole	espèce de poisson osseux marin de la famille des Ménidés.
+mendoles		mendole	0
+mené	Petit poisson.
+meneau	Montant ou traverse de bois, de pierre ou de fer qui partage l’ouverture d’une croisée.
+meneaux		meneau	0
+menée	Pratique secrète et artificieuse dont on se sert pour faire réussir un projet.
+menées		menée	0
+mènent		mener	41
+mener	Conduire quelqu’un vers un être ou une chose.
+mènera		mener	44
+mènerai		mener	50
+mèneraient		mener	63
+mènerais		mener	60
+mènerait		mener	49
+mèneras		mener	57
+menèrent		mener	48
+mènerez		mener	58
+mèneriez		mener	4
+mènerions		mener	11
+mènerons		mener	61
+mèneront		mener	54
+menés		mener	53
+ménestrel	Poète et musicien qui allait, au Moyen Âge, de châteaux en châteaux, chantant des vers composés par lui ou par d’autres.
+ménestrels		ménestrel	0
+ménétrier	Violoniste de village qui escorte notamment les noces et fait danser les invités.
+ménétrière	Violoniste de village qui escorte notamment les noces et fait danser les invités.
+ménétrières		ménétrière	0
+ménétriers		ménétrier	0
+meneur	Celui qui mène.
+meneurs		meneur	0
+meneuse	Celle qui mène.
+meneuses		meneuse	0
+menez		mener	47
+menhir	Bloc de pierre de forme allongée, dressé par les populations néolithiques, que l’on trouve en territoire celte, notamment en Bretagne et Grande-Bretagne.
+menhirs		menhir	0
+méniane	Balcon sur colonne, principalement répandu sous l’Empire romain.
+ménianes		méniane	0
+meniez		mener	67
+menin	Page ou demoiselle de compagnie attaché au service de la famille royale.
+menine	Demoiselle de compagnie attachée au service de la famille royale.
+ménines		ménin	1
+méninge	Chacune des trois membranes qui enveloppent le cerveau et qui se nomment la dure-mère, la pie-mère et l’arachnoïde.
+méningée		méningé	23
+méningées		méningé	1
+méninges		méninge	0
+méningiome	Tumeur des méninges qui se développe aux dépens de l'arachnoïde.
+méningiomes		méningiome	0
+méningite	Nom générique donné aux diverses inflammations des méninges.
+méningites		méningite	0
+méningitique	Relatif à la méningite.
+méningitiques		méningitique	0
+méningococcie	Infection grave liée à la méningocoque.
+méningococcies		méningococcie	0
+méningocoque	Bactérie pathogène pour l’homme, responsable de la méningite cérébrospinale.
+méningocoques		méningocoque	278
+ménins		ménin	9
+menions		mener	65
+méniscal	Relatif au ménisque.
+méniscale		méniscal	23
+méniscales		méniscal	1
+méniscaux		méniscal	9
+méniscite	Altération d'un ménisque, d'origine traumatique, inflammatoire, ou autres.
+méniscites		méniscite	0
+ménispermacée	Synonyme de ménispermée.
+ménispermacées		ménispermacée	0
+ménisque	Lame fibro-cartilagineuse permettant à deux os de forme différente de s’ajuster plus étroitement l’un à l’autre en assurant la concordance de leurs surfaces ar…
+ménisques		ménisque	0
+mennonite	Nom d’un mouvement parmi les anabaptistes qui repousse tout emploi de la force et de la violence et qui se donne à elle-même le titre de chrétiens sans défense.
+mennonites		mennonite	0
+ménologe	Traité sur le système de la division en mois adoptée par tel ou tel peuple.
+ménologes		ménologe	0
+menon	Bouc de tête, muni de cloches, chargé de mener un troupeau, notamment durant une transhumance.
+menons		menon	0
+ménopause	Cessation définitive de la fonction menstruelle, due à l'âge.
+ménopausée		ménopausé	23
+ménopausées		ménopausé	1
+ménopauses		ménopause	0
+ménopausique	Relatif à la ménopause.
+ménopausiques		ménopausique	0
+ménopome	Espèce d’urodèle de grande taille, endémique des Appalaches, aux États-Unis.
+ménopomes		ménopome	0
+menora	Chandelier à sept branches issu du culte hébraïque.
+menorah	Autre orthographe de menora.
+menorahs		menorah	0
+menoras		menora	0
+ménorragie	Menstruation anormalement longue et abondante.
+ménorragies		ménorragie	0
+ménorragique	Qui a rapport à la ménorragie.
+ménorragiques		ménorragique	0
+menotta		menotter	33
+menottage	Action de menotter.
+menottages		menottage	0
+menottai		menotter	22
+menottaient		menotter	32
+menottais		menotter	29
+menottait		menotter	34
+menottâmes		menotter	3
+menottant		menotter	35
+menottas		menotter	12
+menottasse		menotter	6
+menottassent		menotter	17
+menottasses		menotter	8
+menottassiez		menotter	14
+menottassions		menotter	25
+menottât		menotter	20
+menottâtes		menotter	2
+menotte	Main d’un enfant.
+menottée		menotter	45
+menottées		menotter	36
+menottent		menotter	31
+menotter	Mettre les menottes à.
+menottera		menotter	44
+menotterai		menotter	16
+menotteraient		menotter	28
+menotterais		menotter	18
+menotterait		menotter	26
+menotteras		menotter	57
+menottèrent		menotter	24
+menotterez		menotter	5
+menotteriez		menotter	4
+menotterions		menotter	11
+menotterons		menotter	10
+menotteront		menotter	54
+menottes	Lien de fer ou de corde qu’on met aux poignets d’une personne, pour lui ôter l’usage des mains.
+menottez		menotter	47
+menottiez		menotter	13
+menottions		menotter	19
+menottons		menotter	27
+mens		mentir	72
+mense	Table.
+menses		mense	0
+mensonge	Propos contraire à la vérité, tenu avec dessein de tromper.
+mensonger	Qui repose sur un mensonge.
+mensongère		mensonger	23
+mensongèrement	D’une manière mensongère.
+mensongères		mensonger	1
+mensongers		mensonger	9
+mensonges		mensonge	0
+menstrua		menstruer	39
+menstruai		menstruer	55
+menstruaient		menstruer	42
+menstruais		menstruer	52
+menstruait		menstruer	40
+menstruâmes		menstruer	68
+menstruant		menstruer	43
+menstruas		menstruer	83
+menstruasse		menstruer	81
+menstruassent		menstruer	78
+menstruasses		menstruer	87
+menstruassiez		menstruer	88
+menstruassions		menstruer	90
+menstruât		menstruer	62
+menstruâtes		menstruer	84
+menstruation	Ensemble des phénomènes qui, à des intervalles quasi mensuels, se manifestent au cours du cycle menstruel.
+menstruations		menstruation	0
+menstrue	Liqueur propre à dissoudre les corps solides, à en tirer les teintures, les extraits, les parties les plus subtiles et les plus essentielles.
+menstruée	Réglée, qui a ses règles.
+menstruées		menstruée	0
+menstruel	Qui arrive tous les mois, qui a rapport à la menstruation.
+menstruelle		menstruel	23
+menstruelles		menstruel	1
+menstruels		menstruel	9
+menstruent		menstruer	41
+menstruer	Avoir ses règles, ses menstrues.
+menstruera		menstruer	44
+menstruerai		menstruer	50
+menstrueraient		menstruer	63
+menstruerais		menstruer	60
+menstruerait		menstruer	49
+menstrueras		menstruer	57
+menstruèrent		menstruer	48
+menstruerez		menstruer	58
+menstrueriez		menstruer	74
+menstruerions		menstruer	82
+menstruerons		menstruer	61
+menstrueront		menstruer	54
+menstrues	Écoulement de sang mensuel chez les femmes non enceintes, règles.
+menstruez		menstruer	47
+menstruiez		menstruer	67
+menstruions		menstruer	65
+menstruons		menstruer	59
+mensualisa		mensualiser	33
+mensualisai		mensualiser	22
+mensualisaient		mensualiser	32
+mensualisais		mensualiser	29
+mensualisait		mensualiser	34
+mensualisâmes		mensualiser	3
+mensualisant		mensualiser	35
+mensualisas		mensualiser	12
+mensualisasse		mensualiser	6
+mensualisassent		mensualiser	17
+mensualisasses		mensualiser	8
+mensualisassiez		mensualiser	14
+mensualisât		mensualiser	20
+mensualisâtes		mensualiser	2
+mensualisation	Action de mensualiser, étalement sur plusieurs mois.
+mensualisations		mensualisation	0
+mensualisé		mensualiser	46
+mensualisée		mensualiser	37
+mensualisées		mensualiser	36
+mensualisent		mensualiser	31
+mensualiser	Rendre mensuel.
+mensualisera		mensualiser	21
+mensualiserai		mensualiser	16
+mensualiserais		mensualiser	18
+mensualiserait		mensualiser	26
+mensualiseras		mensualiser	7
+mensualisèrent		mensualiser	24
+mensualiserez		mensualiser	5
+mensualiseriez		mensualiser	4
+mensualiserions		mensualiser	11
+mensualiserons		mensualiser	10
+mensualiseront		mensualiser	15
+mensualisés		mensualiser	38
+mensualisez		mensualiser	30
+mensualisiez		mensualiser	13
+mensualisions		mensualiser	19
+mensualisons		mensualiser	27
+mensualité	Somme d’argent qu’on verse chaque mois en suivant des clauses contractuelles.
+mensualités		mensualité	0
+mensuel	Qui a lieu ou qui se fait tous les mois.
+mensuelle		mensuel	23
+mensuellement	Tous les mois.
+mensuelles		mensuel	1
+mensuels		mensuel	9
+mensuration	Moyen par lequel, en médecine, en anthropométrie, etc., on se rend compte des dimensions d’un être vivant ou de quelque partie de son corps.
+mensurations		mensuration	0
+ment		mentir	80
+mentaient		mentir	93
+mentais		mentir	95
+mentait		mentir	91
+mental	Qui se fait, qui s’exécute dans l’esprit, dans l’entendement.
+mentale		mental	23
+mentalement	D’une manière mentale.
+mentales		mental	1
+mentalisa		mentaliser	33
+mentalisai		mentaliser	22
+mentalisaient		mentaliser	32
+mentalisais		mentaliser	29
+mentalisait		mentaliser	34
+mentalisâmes		mentaliser	3
+mentalisant		mentaliser	35
+mentalisas		mentaliser	12
+mentalisasse		mentaliser	6
+mentalisassent		mentaliser	17
+mentalisasses		mentaliser	8
+mentalisassiez		mentaliser	14
+mentalisassions		mentaliser	25
+mentalisât		mentaliser	20
+mentalisâtes		mentaliser	2
+mentalisation	Capacité ou activité mentale par laquelle une personne interprète les comportements d'autrui ou les siens en se reportant aux états mentaux qui pourraient être…
+mentalisations		mentalisation	0
+mentalisé		mentaliser	46
+mentalisée		mentaliser	37
+mentalisées		mentaliser	36
+mentalisent		mentaliser	31
+mentaliser	Se représenter mentalement.
+mentalisera		mentaliser	21
+mentaliserai		mentaliser	16
+mentaliseraient		mentaliser	28
+mentaliserais		mentaliser	18
+mentaliserait		mentaliser	26
+mentaliseras		mentaliser	7
+mentalisèrent		mentaliser	24
+mentaliserez		mentaliser	5
+mentaliseriez		mentaliser	4
+mentaliserions		mentaliser	11
+mentaliserons		mentaliser	10
+mentaliseront		mentaliser	15
+mentalisés		mentaliser	38
+mentalisez		mentaliser	30
+mentalisiez		mentaliser	13
+mentalisions		mentaliser	19
+mentalisme	Conception qui, pour la compréhension des concepts autant en logique qu’en linguistique, privilégie l’approche intuitive.
+mentalismes		mentalisme	0
+mentalisons		mentaliser	27
+mentaliste	Relatif au mentalisme.
+mentalistes		mentaliste	0
+mentalité	État d’esprit ; habitudes de pensée.
+mentalités		mentalité	0
+mentant		mentir	43
+mentaux		mental	9
+mente		mentir	85
+mentent		mentir	69
+menterie	ou Propos par lequel on donne pour vrai ce qu’on sait être faux.
+menteries		menterie	0
+mentes		mentir	98
+menteur	Qui ment, qui a l’habitude de mentir.
+menteurs		menteur	9
+menteuse	Personne qui ment, qui a l’habitude de mentir.
+menteuses		menteur	1
+mentez		mentir	70
+menthane	Hydrocarbure extrait de la menthe.
+menthanes		menthane	0
+menthe	Plante odoriférante du genre Mentha de la famille des Lamiacées (Lamiaceae), ordre des Lamiales.
+menthes		menthe	0
+menthol	Cyclohexanol monoterpénique tiré de la feuille de menthe.
+mentholé	Qui présente une odeur ou un goût rappelant la menthe ou le menthol, avec souvent une sensation trigéminale de fraîcheur.
+mentholée	Cigarette au goût de menthe.
+mentholées		mentholé	1
+mentholés		mentholé	9
+menthols	Pluriel de menthol (substance).	menthol
+menti		mentir	56
+mentiez		mentir	102
+mentîmes		mentir	3
+mention	Action de mentionner, résultat de cette action.
+mentionna		mentionner	39
+mentionnai		mentionner	55
+mentionnaient		mentionner	42
+mentionnais		mentionner	52
+mentionnait		mentionner	40
+mentionnâmes		mentionner	3
+mentionnant		mentionner	43
+mentionnas		mentionner	12
+mentionnasse		mentionner	6
+mentionnassent		mentionner	17
+mentionnasses		mentionner	8
+mentionnassiez		mentionner	14
+mentionnassions		mentionner	25
+mentionnât		mentionner	62
+mentionnâtes		mentionner	2
+mentionné		mentionner	56
+mentionnée		mentionner	45
+mentionnées		mentionner	51
+mentionnent		mentionner	41
+mentionner	Citer, nommer ou indiquer, de vive voix ou par écrit.
+mentionnera		mentionner	21
+mentionnerai		mentionner	50
+mentionneraient		mentionner	28
+mentionnerais		mentionner	60
+mentionnerait		mentionner	49
+mentionneras		mentionner	57
+mentionnèrent		mentionner	24
+mentionnerez		mentionner	58
+mentionneriez		mentionner	4
+mentionnerions		mentionner	11
+mentionnerons		mentionner	61
+mentionneront		mentionner	15
+mentionnés		mentionner	53
+mentionnez		mentionner	47
+mentionniez		mentionner	67
+mentionnions		mentionner	19
+mentionnons		mentionner	59
+mentions		mention	0
+mentir	Ne pas dire la vérité.
+mentira		mentir	44
+mentirai		mentir	50
+mentiraient		mentir	97
+mentirais		mentir	96
+mentirait		mentir	92
+mentiras		mentir	57
+mentirent		mentir	24
+mentirez		mentir	58
+mentiriez		mentir	104
+mentirions		mentir	101
+mentirons		mentir	61
+mentiront		mentir	54
+mentis		mentir	53
+mentisme	Défilement rapide et incoercible d'idées obsédantes et récurantes lors d’états anxieux ou insomniaques.
+mentismes		mentisme	0
+mentisse		mentir	6
+mentissent		mentir	78
+mentisses		mentir	8
+mentissiez		mentir	14
+mentissions		mentir	25
+mentît		mentir	62
+mentîtes		mentir	2
+menton	Partie inférieure de la face située au-dessous de la lèvre inférieure, et qui, bien apparente chez l’être humain, diminue chez le singe, et disparaît à peu prè…
+mentonnet	Désigne en général une pièce souvent métallique ayant un côté arrondi, et servant de butée, d’arrêt, de came etc...
+mentonnets		mentonnet	0
+mentonnier	Qui a rapport au menton.
+mentonnière	Partie inférieure de la visière des casques qui protégeait la mâchoire inférieure.
+mentonnières		mentonnière	0
+mentonniers		mentonnier	9
+mentons		menton	0
+mentor	Celui qui sert de guide ou de conseiller à quelqu’un.
+mentorat	Activité du mentor.
+mentorats		mentorat	0
+mentoré	Personne qui est mentorée, qui est encadrée par un mentor dans le but de s’améliorer.
+mentorée	Personne qui est mentorée, qui est encadrée par un mentor dans le but de s’améliorer.
+mentorées		mentorée	0
+mentorés		mentoré	0
+mentors		mentor	0
+menu	Qui est délié, qui a peu de volume, peu de grosseur.
+menue		menu	23
+menues		menu	1
+menuet	Air à danser, dont la mesure se bat à trois temps, dans lequel il y a un repos de quatre en quatre mesures et qui est composé de deux reprises.
+menuets		menuet	0
+menuisa		menuiser	33
+menuisage	Action de menuiser, de travailler le bois en menuiserie.
+menuisages		menuisage	0
+menuisai		menuiser	22
+menuisaient		menuiser	32
+menuisais		menuiser	29
+menuisait		menuiser	34
+menuisâmes		menuiser	3
+menuisant		menuiser	35
+menuisas		menuiser	12
+menuisasse		menuiser	6
+menuisassent		menuiser	17
+menuisasses		menuiser	8
+menuisassiez		menuiser	14
+menuisassions		menuiser	25
+menuisât		menuiser	20
+menuisâtes		menuiser	2
+menuise	Synonyme de sprat, le poisson.
+menuisée		menuiser	37
+menuisées		menuiser	36
+menuisent		menuiser	31
+menuiser	Réduire en petits morceaux.
+menuisera		menuiser	44
+menuiserai		menuiser	16
+menuiseraient		menuiser	28
+menuiserais		menuiser	18
+menuiserait		menuiser	26
+menuiseras		menuiser	7
+menuisèrent		menuiser	24
+menuiserez		menuiser	5
+menuiserie	À l'origine désigne un atelier où l'on fabriquait des objets menus.
+menuiseries		menuiserie	0
+menuiseriez		menuiser	4
+menuiserions		menuiser	11
+menuiserons		menuiser	10
+menuiseront		menuiser	15
+menuisés		menuiser	38
+menuisez		menuiser	30
+menuisier	Artisan qui travaille le bois pour en faire des meubles ou des pièces utiles pour les bâtiments.
+menuisière	Artisane qui travaille le bois pour en faire des meubles ou des pièces utiles pour les bâtiments.
+menuisières		menuisière	0
+menuisiers		menuisier	0
+menuisiez		menuiser	13
+menuisions		menuiser	19
+menuisons		menuiser	27
+ménure	Oiseau endémique d’Australie.
+ménures		ménure	0
+menus		menu	9
+ményanthacées	Famille de plantes aquatiques ou des milieux humides, appartenant à l’ordre des gentianales, caractérisées par des feuilles opposées ou radicales souvent entiè…
+ményanthe	Plante herbacée vivace semi-aquatique de la famille des Ményanthacées.
+ményanthes		ményanthe	0
+méo	Qui concerne, qui se rapporte au peuple Méo (Sud Ouest du Vietnam).
+méos		méo	0
+méphitique	Qui produit des effets plus ou moins nuisibles, en parlant de certaines exhalaisons gazeuses.
+méphitiques		méphitique	0
+méphitisme	État de ce qui est méphitique, exhalaison malfaisante, toxique.
+méphitismes		méphitisme	0
+méplat	Qui a plus de largeur que d’épaisseur.
+méplate		méplat	109
+méplater	Faire un méplat.
+méplatés		méplater	53
+méplats		méplat	9
+méprenaient		méprendre	116
+méprenais		méprendre	95
+méprenait		méprendre	91
+méprenant		méprendre	43
+méprend		méprendre	80
+méprendra		méprendre	21
+méprendrai		méprendre	16
+méprendraient		méprendre	108
+méprendrais		méprendre	106
+méprendrait		méprendre	112
+méprendras		méprendre	7
+méprendre	Se tromper, prendre une personne ou une chose pour une autre.
+méprendrez		méprendre	5
+méprendriez		méprendre	104
+méprendrions		méprendre	101
+méprendrons		méprendre	10
+méprendront		méprendre	15
+méprends		méprendre	72
+méprenez		méprendre	70
+mépreniez		méprendre	102
+méprenions		méprendre	111
+méprenne		méprendre	85
+méprennent		méprendre	69
+méprennes		méprendre	76
+méprenons		méprendre	27
+méprîmes		méprendre	3
+méprirent		méprendre	24
+mépris	Sentiment par lequel on juge une personne ou une chose indigne d’estime, d’égards, d’attention.
+méprisa		mépriser	39
+méprisable	Qui est digne de mépris.
+méprisables		méprisable	0
+méprisai		mépriser	55
+méprisaient		mépriser	42
+méprisais		mépriser	52
+méprisait		mépriser	40
+méprisâmes		mépriser	3
+méprisant	Qui marque du mépris.
+méprisante	Féminin singulier de méprisant.
+méprisantes		méprisant	1
+méprisants		méprisant	9
+méprisas		mépriser	12
+méprisasse		mépriser	6
+méprisassent		mépriser	17
+méprisasses		mépriser	8
+méprisassiez		mépriser	14
+méprisassions		mépriser	25
+méprisât		mépriser	20
+méprisâtes		mépriser	2
+méprise	Erreur, faute de celui qui se méprend.
+méprisée		mépriser	45
+méprisées		mépriser	51
+méprisent		mépriser	41
+mépriser	Considérer quelqu’un comme indigne d’estime.
+méprisera		mépriser	44
+mépriserai		mépriser	50
+mépriseraient		mépriser	63
+mépriserais		mépriser	60
+mépriserait		mépriser	49
+mépriseras		mépriser	57
+méprisèrent		mépriser	24
+mépriserez		mépriser	5
+mépriseriez		mépriser	74
+mépriserions		mépriser	11
+mépriserons		mépriser	10
+mépriseront		mépriser	15
+méprisés		mépriser	53
+méprisez		mépriser	47
+méprisiez		mépriser	67
+méprisions		mépriser	65
+méprisons		mépriser	59
+méprisse		méprendre	6
+méprissent		méprendre	17
+méprisses		méprendre	8
+méprissiez		méprendre	14
+méprissions		méprendre	25
+méprît		méprendre	62
+méprîtes		méprendre	2
+mer	Vaste étendue d’eau salée qui baigne les diverses parties de la terre.
+méranti	Arbre tropical du genre Shorea.
+mérantis		méranti	0
+merbau	Variante orthographique de merbeau.
+merbaux		merbau	0
+mercanti	Marchand, dans les pays d’Orient.
+mercantile	Qui concerne le commerce.
+mercantiles		mercantile	0
+mercantilisa		mercantiliser	33
+mercantilisai		mercantiliser	22
+mercantilisais		mercantiliser	29
+mercantilisait		mercantiliser	34
+mercantilisâmes		mercantiliser	3
+mercantilisant		mercantiliser	35
+mercantilisas		mercantiliser	12
+mercantilisasse		mercantiliser	6
+mercantilisât		mercantiliser	20
+mercantilisâtes		mercantiliser	2
+mercantilisé		mercantiliser	46
+mercantilisée		mercantiliser	37
+mercantilisées		mercantiliser	36
+mercantilisent		mercantiliser	31
+mercantiliser	Donner un caractère mercantile à.
+mercantilisera		mercantiliser	21
+mercantiliserai		mercantiliser	16
+mercantiliseras		mercantiliser	7
+mercantiliserez		mercantiliser	5
+mercantilisés		mercantiliser	38
+mercantilisez		mercantiliser	30
+mercantilisiez		mercantiliser	13
+mercantilisions		mercantiliser	19
+mercantilisme	Propension à rechercher en toute circonstance un gain, un profit.
+mercantilismes		mercantilisme	0
+mercantilisons		mercantiliser	27
+mercantiliste	Qui se rapporte au mercantilisme.
+mercantilistes		mercantiliste	0
+mercantis		mercanti	0
+mercaptan	Thiol.
+mercaptans		mercaptan	0
+mercaticien	Spécialiste de la mercatique.
+mercaticienne	Spécialiste de la mercatique.
+mercaticiennes		mercaticienne	0
+mercaticiens		mercaticien	0
+mercatique	Ensemble des techniques et des actions grâce auxquelles une entreprise développe méthodiquement la vente de ses produits et de ses services, en adaptant, le ca…
+mercatiques		mercatique	0
+mercato	Marché des transferts.
+mercatos		mercato	0
+mercenaire	Dont on trouve commode d’acheter le service, ou l’usage pour une période limitée.
+mercenaires		mercenaire	0
+mercenariat	Fonction de mercenaire, activité de mercenaire.
+mercenariats		mercenariat	0
+mercerie	Terme collectif par lequel on désigne les diverses marchandises qui servent pour l’habillement et la parure, comme le fil, les aiguilles, les épingles, les rub…
+merceries		mercerie	0
+mercerisa		merceriser	33
+mercerisage	Opération consistant à donner aux fils et étoffes de coton un aspect brillant et soyeux, par trempage dans une solution d'hydroxyde de sodium (soude caustique)…
+mercerisages		mercerisage	0
+mercerisai		merceriser	22
+mercerisaient		merceriser	42
+mercerisais		merceriser	29
+mercerisait		merceriser	34
+mercerisâmes		merceriser	3
+mercerisant		merceriser	35
+mercerisas		merceriser	12
+mercerisasse		merceriser	6
+mercerisassent		merceriser	17
+mercerisasses		merceriser	8
+mercerisassiez		merceriser	14
+mercerisassions		merceriser	25
+mercerisât		merceriser	20
+mercerisâtes		merceriser	2
+mercerisé	Qui a subi une mercerisation, un mercerisage.
+mercerisée		merceriser	37
+mercerisées		merceriser	36
+mercerisent		merceriser	31
+merceriser	Traiter à la soude caustique un fil ou une étoffe de coton afin de lui donner un aspect brillant soyeux et d'en améliorer l'affinité tinctoriale.
+mercerisera		merceriser	21
+merceriserai		merceriser	16
+merceriseraient		merceriser	28
+merceriserais		merceriser	18
+merceriserait		merceriser	26
+merceriseras		merceriser	7
+mercerisèrent		merceriser	24
+merceriserez		merceriser	5
+merceriseriez		merceriser	4
+merceriserions		merceriser	11
+merceriserons		merceriser	10
+merceriseront		merceriser	15
+mercerisés		merceriser	38
+mercerisez		merceriser	30
+mercerisiez		merceriser	13
+mercerisions		merceriser	19
+mercerisons		merceriser	27
+merchandiser	Optimiser la rentabilité d’un point de vente et des produits qu’il contient.
+merchandisers		merchandiser	0
+merchandising	Ensemble des méthodes et techniques ayant trait à la présentation et à la mise en valeur des produits sur les lieux de vente.
+merchandisings		merchandising	0
+merci	Miséricorde, grâce, pitié.
+mercier	Membre de la mercerie, corps qui importait des marchandises d’orient.
+mercière	Vendeuse d’articles permettant les travaux de couture, de confection ou de passementerie.
+mercières		mercière	0
+merciers		mercier	0
+mercis		merci	0
+mercredi	Troisième jour de la semaine.
+mercredis		mercredi	0
+mercure	Élément chimique de numéro atomique 80 et de symbole Hg qui fait partie de la série chimique des métaux de transition.
+mercurer	Ajouter du mercure à.
+mercurés		mercurer	53
+mercurescéine	Antiseptique local à base de mercure organique, d’un rouge vif.
+mercurescéines		mercurescéine	0
+mercureuse		mercureux	23
+mercureuses		mercureux	1
+mercureux	Se dit des substances composées du mercure monovalent.
+mercurey	vin d’appellation d’origine contrôlée (AOC) de la Bourgogne viticole, de vignoble situé en Saône-et-Loire sur les communes de Mercurey et de Saint-Martin-sous-…
+mercureys		mercurey	0
+mercuriale	Genre d’euphorbiacées, herbacées pérennes sans latex et dioïques et dont une espèce, la mercuriale annuelle (Mercurialis annua L.) est une mauvaise herbe très …
+mercuriales		mercuriale	0
+mercuriel	De mercure.
+mercurielle		mercuriel	23
+mercurielles		mercuriel	1
+mercuriels		mercuriel	9
+mercurien	Qui se rapporte à Mercure, la planète.
+mercurienne	Citoyenne du monde, qui n’a aucune attache nationale ni territoriale.
+mercuriennes		mercurien	1
+mercuriens		mercurien	9
+mercurique	Qualifie un sel au mercure dans sa forme la plus oxydée.
+mercuriques		mercurique	0
+mercurochrome	Antiseptique de couleur rouge qui contenait de la merbromine (ou mercurescéine sodique) dont l'usage est désormais interdit.
+mercurochromer	Désinfecter avec du mercurochrome.
+mercurochromés		mercurochromer	53
+merda		merder	39
+merdai		merder	22
+merdaient		merder	32
+merdaillon	Enfant en bas âge.
+merdaillons		merdaillon	0
+merdais		merder	29
+merdait		merder	40
+merdâmes		merder	3
+merdant		merder	35
+merdas		merder	12
+merdasse	Merde (chose sans valeur).
+merdassent		merdasser	31
+merdasser	Salir par de la merdasse.
+merdasses		merdasse	0
+merdassiez		merdasser	13
+merdassions		merdasser	19
+merdât		merder	20
+merdâtes		merder	2
+merde	Excrément de personne ou d’animal.
+merdée		merder	45
+merdées		merder	36
+merdent		merder	41
+merder	Ne pas arriver à faire le meilleur, faire de la merde.
+merdera		merder	21
+merderai		merder	50
+merderaient		merder	28
+merderais		merder	18
+merderait		merder	26
+merderas		merder	7
+merdèrent		merder	24
+merderez		merder	5
+merderiez		merder	4
+merderions		merder	11
+merderons		merder	10
+merderont		merder	15
+merdes		merde	0
+merdeuse	Gamine.
+merdeuses		merdeux	1
+merdeux	Sali d’excréments.
+merdez		merder	47
+merdier	Bordel, désordre.
+merdiers		merdier	0
+merdiez		merder	13
+merdions		merder	19
+merdique	Qui est de mauvaise qualité.
+merdiquer	Merder, cafouiller.
+merdiques		merdiquer	66
+merdoie	Couleur entre le vert et le jaune.
+merdoient		merdoyer	69
+merdoiera		merdoyer	21
+merdoierai		merdoyer	16
+merdoieraient		merdoyer	28
+merdoierais		merdoyer	18
+merdoierait		merdoyer	26
+merdoieras		merdoyer	7
+merdoierez		merdoyer	5
+merdoieriez		merdoyer	4
+merdoierions		merdoyer	11
+merdoierons		merdoyer	10
+merdoieront		merdoyer	15
+merdoies		merdoyer	66
+merdons		merder	59
+merdouilla		merdouiller	33
+merdouillai		merdouiller	22
+merdouillaient		merdouiller	32
+merdouillais		merdouiller	29
+merdouillait		merdouiller	34
+merdouillâmes		merdouiller	3
+merdouillant		merdouiller	35
+merdouillas		merdouiller	12
+merdouillasse		merdouiller	6
+merdouillassent		merdouiller	17
+merdouillasses		merdouiller	8
+merdouillassiez		merdouiller	14
+merdouillât		merdouiller	20
+merdouillâtes		merdouiller	2
+merdouille	Substitut dépréciatif à un nom que l’on ne souhaite pas préciser, mais qui se déduit d’après le contexte.
+merdouillent		merdouiller	31
+merdouiller	Merder ; merder un peu.
+merdouillera		merdouiller	21
+merdouillerai		merdouiller	16
+merdouillerais		merdouiller	18
+merdouillerait		merdouiller	26
+merdouilleras		merdouiller	7
+merdouillèrent		merdouiller	24
+merdouillerez		merdouiller	5
+merdouilleriez		merdouiller	4
+merdouillerions		merdouiller	11
+merdouillerons		merdouiller	10
+merdouilleront		merdouiller	15
+merdouillés		merdouiller	38
+merdouillez		merdouiller	30
+merdouilliez		merdouiller	13
+merdouillions		merdouiller	19
+merdouillons		merdouiller	27
+merdoya		merdoyer	33
+merdoyai		merdoyer	22
+merdoyaient		merdoyer	32
+merdoyais		merdoyer	29
+merdoyait		merdoyer	40
+merdoyâmes		merdoyer	3
+merdoyant		merdoyer	35
+merdoyas		merdoyer	12
+merdoyasse		merdoyer	6
+merdoyassent		merdoyer	17
+merdoyasses		merdoyer	8
+merdoyassiez		merdoyer	14
+merdoyassions		merdoyer	25
+merdoyât		merdoyer	20
+merdoyâtes		merdoyer	2
+merdoyé		merdoyer	46
+merdoyer	Merder, cafouiller, s’embrouiller, s’empêtrer (dans quelque chose).
+merdoyèrent		merdoyer	24
+merdoyez		merdoyer	30
+merdoyiez		merdoyer	13
+merdoyions		merdoyer	19
+merdoyons		merdoyer	27
+mère	Femme qui a donné naissance à au moins un enfant.
+méreau	Petite pièce de métal ou de carton que l'on donne dans les Églises Cathédrales et Collégiales à chaque Chanoine, pour marque de son assistance à l'Office divin…
+méreaux		méreau	0
+merengue	Genre musical né au milieu du XIXᵉ siècle à Saint-Domingue.
+merengues		merengue	0
+mérens	Race de cheval polyvalent, un poney originaire de l'Ariège (Pyrénées orientales) et du nord de l'Espagne, de robe noire, dont la taille au garrot moyenne est v…
+mères		mère	0
+merguez	Fine saucisse épicée, faite de bœuf ou de mouton, originaire du Maghreb et destinée à la grillade.
+mergule	Palmipède de la famille des alcidés, vivant en Arctique.
+mergules		mergule	0
+méricarpe	Portion de fruit isolée naturellement dans le sens longitudinal et contenant une seule graine.
+méricarpes		méricarpe	0
+méridien	Relatif à l’heure de midi.
+méridienne	Ligne d’intersection du plan méridien et du plan horizontal en un lieu donné.
+méridiennes		méridienne	0
+méridiens		méridien	0
+méridional	Qui est du côté du sud, qui est propre au sud.
+méridionale	Femme originaire des régions du sud de la France.
+méridionales		méridional	1
+méridionaux		méridional	9
+mérignacais	Relatif à Mérignac, commune française située dans le département de la Charente.
+mérignacaise		mérignacais	23
+mérignacaises		mérignacais	1
+merina	Relatif au peuple Merina, sa langue et ses coutumes.
+merinas		merina	0
+meringua		meringuer	33
+meringuai		meringuer	22
+meringuaient		meringuer	32
+meringuais		meringuer	29
+meringuait		meringuer	34
+meringuâmes		meringuer	3
+meringuant		meringuer	35
+meringuas		meringuer	12
+meringuasse		meringuer	6
+meringuassent		meringuer	17
+meringuasses		meringuer	8
+meringuassiez		meringuer	14
+meringuassions		meringuer	25
+meringuât		meringuer	20
+meringuâtes		meringuer	2
+meringue	Sorte de pâtisserie très légère faite avec des blancs d’œuf et du sucre en poudre.
+meringuée		meringuer	45
+meringuées		meringuer	51
+meringuent		meringuer	31
+meringuer	Recouvrir d’une couche de blancs d’œufs et de sucre passée au four.
+meringuera		meringuer	21
+meringuerai		meringuer	16
+meringueraient		meringuer	28
+meringuerais		meringuer	18
+meringuerait		meringuer	26
+meringueras		meringuer	7
+meringuèrent		meringuer	24
+meringuerez		meringuer	5
+meringueriez		meringuer	4
+meringuerions		meringuer	11
+meringuerons		meringuer	10
+meringueront		meringuer	15
+meringues		meringue	0
+meringuez		meringuer	30
+meringuiez		meringuer	13
+meringuions		meringuer	19
+meringuons		meringuer	27
+mérinide	Relatif aux Mérinides, une dynastie d’origine berbère zénète.
+mérinides		mérinide	0
+mérinos	Race de mouton d’origine nord-africaine puis espagnole dont la toison est épaisse et dont la laine est très fine.
+mérione	Rongeur de la famille des Muridés, sous-famille des Gerbillinés, représenté par le genre Meriones et qui comprend 17 espèces apparentées aux gerbilles.
+mériones		mérione	0
+merise	Fruit du merisier, similaire à la cerise.
+merises		merise	0
+merisier	Arbre forestier de la famille des rosacées.
+merisiers		merisier	0
+mérismatique	De division.
+mérismatiques		mérismatique	0
+mérisme	Division d’un sujet, d’un point à traiter en ses diverses parties.
+mérismes		mérisme	0
+méristématique	Relatif au méristème ou qui le constitue.
+méristématiques		méristématique	0
+méristème	Tissu constitué de cellules indifférenciées en division active, responsable de la formation des tissus primaires et secondaires ainsi que de la croissance des …
+méristèmes		méristème	0
+mérita		mériter	39
+méritai		mériter	22
+méritaient		mériter	42
+méritais		mériter	52
+méritait		mériter	40
+méritâmes		mériter	3
+méritant	Qui a du mérite.
+méritante		méritant	23
+méritantes		méritant	1
+méritants		méritant	9
+méritas		mériter	12
+méritasse		mériter	6
+méritassent		mériter	78
+méritasses		mériter	8
+méritassiez		mériter	14
+méritassions		mériter	25
+méritât		mériter	62
+méritâtes		mériter	2
+mérite	Ce qui rend une personne digne d’estime.
+méritée		mériter	45
+méritées		mériter	51
+méritent		mériter	41
+mériter	Être digne, se rendre digne de.
+méritera		mériter	44
+mériterai		mériter	50
+mériteraient		mériter	63
+mériterais		mériter	60
+mériterait		mériter	49
+mériteras		mériter	57
+méritèrent		mériter	24
+mériterez		mériter	5
+mériteriez		mériter	74
+mériterions		mériter	11
+mériterons		mériter	10
+mériteront		mériter	54
+mérités		mériter	53
+méritez		mériter	47
+méritiez		mériter	67
+méritions		mériter	65
+méritocrate	Qui relève de la méritocratie.
+méritocrates		méritocrate	0
+méritocratie	Système politique, économique et social fondé sur le mérite (c’est-à-dire le talent et l’effort individuels) et non sur la reproduction sociale (système de cla…
+méritocraties		méritocratie	0
+méritocratique	Relatif à la méritocratie.
+méritocratiques		méritocratique	0
+méritoire	Qui mérite l’approbation, l’estime.
+méritoirement	De façon méritoire, digne dʼestime ou de récompense.
+méritoires		méritoire	0
+méritons		mériter	59
+merl	Variante de maërl.
+merlan	Espèce de poisson argenté de 30 à 50 cm vivant dans l’Atlantique nord à proximité des côtes d’Europe occidentale, de nom scientifique Merlangius merlangus.
+merlans		merlan	0
+merle	Type de coloration de pelage chez le chien.
+merleau	Jeune merle.
+merleaux		merleau	0
+merles		merle	0
+merlette	Meuble représentant un petit oiseau morné (sans bec ni pattes) imaginaire dans les armoiries.
+merlettes		merlette	0
+merlin	Long marteau dont les bouchers se servent pour assommer les bœufs.
+merlins		merlin	0
+merlon	Partie pleine du parapet qui est entre deux embrasures, entre deux créneaux.
+merlonna		merlonner	39
+merlonnai		merlonner	55
+merlonnaient		merlonner	42
+merlonnais		merlonner	52
+merlonnait		merlonner	40
+merlonnâmes		merlonner	68
+merlonnant		merlonner	43
+merlonnas		merlonner	83
+merlonnasse		merlonner	81
+merlonnassent		merlonner	78
+merlonnasses		merlonner	87
+merlonnassiez		merlonner	88
+merlonnassions		merlonner	90
+merlonnât		merlonner	62
+merlonnâtes		merlonner	84
+merlonné		merlonner	56
+merlonnée		merlonner	45
+merlonnées		merlonner	51
+merlonnent		merlonner	41
+merlonner	Sécuriser par des merlons.
+merlonnera		merlonner	44
+merlonnerai		merlonner	50
+merlonneraient		merlonner	63
+merlonnerais		merlonner	60
+merlonnerait		merlonner	49
+merlonneras		merlonner	57
+merlonnèrent		merlonner	48
+merlonnerez		merlonner	58
+merlonneriez		merlonner	74
+merlonnerions		merlonner	82
+merlonnerons		merlonner	61
+merlonneront		merlonner	54
+merlonnés		merlonner	53
+merlonnez		merlonner	47
+merlonniez		merlonner	67
+merlonnions		merlonner	65
+merlonnons		merlonner	59
+merlons		merlon	0
+merlot	Cépage donnant des raisins sphériques d'un noir bleuté, cultivé entre autre dans le Bordelais, et dont le nom officiel international est merlot noir.
+merlots		merlot	0
+merls		merl	0
+merlu	Espèces de poissons osseux marins allongés à 2 nageoires dorsales et une anale.
+merluche	Merlus séché au soleil, morue sèche.
+merluches		merluche	0
+merluchon	Merlu commun de petite taille.
+merluchons		merluchon	0
+merlus	Poisson de mer du genre gade.
+mérocrine	Qualifie une glande ou un mode de sécrétion chez lequel il y a maintien de l’intégrité cellulaire et où la substance est entreposée dans des vésicules.
+mérocrines		mérocrine	0
+méroïtique	Langue qui fut parlée dans le royaume de Koush, de la fin du IIIᵉ siècle avant notre ère jusqu’au Vᵉ siècle.
+méroïtiques		méroïtique	0
+mérostome	Singulier de mérostomes.
+mérostomes	Chélicérés marins chez lesquels le prosome joue le rôle d'un grand bouclier indivis, et l'opisthosome est constitué d'appendices biramés.
+mérou	Type de gros et puissant poisson osseux marin, à longue nageoire dorsale épineuse, carnivore, qui avale sa proie.
+mérous		mérou	0
+mérovingien	Relatif à la dynastie fondée par Mérovée et à l'époque (du Vᵉ au VIIIᵉ siècles) pendant laquelle elle a régné.
+mérovingienne		mérovingien	23
+mérovingiennes		mérovingien	1
+mérovingiens		mérovingien	9
+merrain	Bois de chêne ou de châtaignier fendu en fil, sans nœud ni aubier, utilisé surtout en tonnellerie et aussi nommé bourdillon.
+merrains		merrain	0
+merroutage	Transport intermodal de marchandises, utilisant des véhicules routiers acheminés sur des navires rouliers.
+merroutages		merroutage	0
+mers		mer	0
+mérule	Champignon lignivore des maisons ou des charpentes, de nom scientifique Serpula lacrymans en Europe et Poria incrassata en Amérique du Nord.
+mérules		mérule	0
+merveille	Chose qui cause une grande admiration.
+merveilles		merveille	0
+merveilleuse	Femme qui affectait une élégance excentrique.
+merveilleuses		merveilleux	1
+merveilleux	Qui cause une grande admiration, mêlée d’une sorte de surprise.
+mérycisme	Trouble du comportement alimentaire caractérisé par la régurgitation et remastication des aliments.
+mérycismes		mérycisme	0
+merzlota	Couche du sol ne dégelant jamais.
+merzlotas		merzlota	0
+mes	Pluriel de mon, ma.	moi
+mesa	Plateau formé des restes d’une coulée volcanique.
+mésadapté	Qui n’est pas adapté.
+mésadaptés		mésadapté	9
+mésaise	Insuffisance des moyens d’existence.
+mésaises		mésaise	0
+mésallia		mésallier	33
+mésalliai		mésallier	22
+mésalliaient		mésallier	32
+mésalliais		mésallier	29
+mésalliait		mésallier	34
+mésalliâmes		mésallier	3
+mésalliance	Alliance, mariage avec une personne d’une condition fort inférieure à celle de la personne qui l’épouse.
+mésalliances		mésalliance	0
+mésalliant		mésallier	35
+mésallias		mésallier	12
+mésalliasse		mésallier	6
+mésalliassent		mésallier	17
+mésalliasses		mésallier	8
+mésalliassiez		mésallier	14
+mésalliassions		mésallier	25
+mésalliât		mésallier	20
+mésalliâtes		mésallier	2
+mésallié		mésallier	56
+mésalliée		mésallier	37
+mésalliées		mésallier	36
+mésallient		mésallier	31
+mésallier	Marier à une personne d’une naissance ou d’un rang fort inférieur.
+mésalliera		mésallier	21
+mésallierai		mésallier	16
+mésallieraient		mésallier	28
+mésallierais		mésallier	18
+mésallierait		mésallier	26
+mésallieras		mésallier	57
+mésallièrent		mésallier	24
+mésallierez		mésallier	5
+mésallieriez		mésallier	4
+mésallierions		mésallier	11
+mésallierons		mésallier	10
+mésallieront		mésallier	15
+mésalliés		mésallier	53
+mésalliez		mésallier	30
+mésalliiez		mésallier	13
+mésalliions		mésallier	19
+mésallions		mésallier	27
+mésange	Petit oiseau passereau, actif, au bec court, de forme assez trapue, qui est remarquable par son plumage varié.
+mésangeai	Sorte de geai vivant dans les régions froides de l’Europe et de l’Amérique du Nord.
+mésangeais		mésangeai	0
+mésanges		mésange	0
+mésangette	Cage à trébuchet pour prendre les mésanges.
+mésangettes		mésangette	0
+mesas		mesa	0
+mésaventure	Événement fâcheux.
+mésaventures		mésaventure	0
+mésaxonien	Se dit d’un animal (ou de son pied/membre) dont l’axe fonctionnel du membre passe par le troisième doigt (doigt médian), généralement le principal doigt porteu…
+mésaxoniens		mésaxonien	0
+mescal	Variante de mezcal.
+mescaline	Alcaloïde extrait, entre autre, d'un cactus nommé peyotl (Lophophora williamsii).
+mescalines		mescaline	0
+mescals		mescal	0
+mesclun	Mélange de différentes variétés de salades.
+mescluns		mesclun	0
+mesdames		madame	0
+mesdemoiselles		mademoiselle	0
+mésembryanthème	Genre de la famille des mésembryanthémées.
+mésencéphale	Partie du tronc cérébral reliée au cerveau, formé des deux pédoncules cérébraux, du tegmentum et du tectum.
+mésencéphales		mésencéphale	0
+mésenchymateuse		mésenchymateux	23
+mésenchymateux	Caractérise des tissus ou des cellules qui, au moment du développement embryonnaire donneront naissance aux squelettes et aux muscles.
+mésenchyme	Tissu de soutien embryonnaire issu du mésoderme, à l'origine de diverses formes de ces tissus chez l'adulte.
+mésenchymes		mésenchyme	0
+mésentente	Mauvaise entente, désaccord.
+mésententes		mésentente	0
+mésentère	Organe du corps humain formé d’une membrane qui est un repli du péritoine et qui maintient l’intestin.
+mésentères		mésentère	0
+mésentérique	Relatif au mésentère.
+mésestima		mésestimer	33
+mésestimai		mésestimer	22
+mésestimaient		mésestimer	32
+mésestimais		mésestimer	29
+mésestimait		mésestimer	34
+mésestimâmes		mésestimer	3
+mésestimant		mésestimer	43
+mésestimas		mésestimer	12
+mésestimasse		mésestimer	6
+mésestimassent		mésestimer	17
+mésestimasses		mésestimer	8
+mésestimassiez		mésestimer	14
+mésestimassions		mésestimer	25
+mésestimât		mésestimer	20
+mésestimâtes		mésestimer	2
+mésestimation	Estimation erronée.
+mésestimations		mésestimation	0
+mésestime	Mauvaise opinion que l’on a de quelqu’un.
+mésestimée		mésestimer	45
+mésestimées		mésestimer	36
+mésestiment		mésestimer	31
+mésestimer	Tenir quelqu’un en mésestime.
+mésestimera		mésestimer	21
+mésestimerai		mésestimer	16
+mésestimeraient		mésestimer	28
+mésestimerais		mésestimer	18
+mésestimerait		mésestimer	26
+mésestimeras		mésestimer	7
+mésestimèrent		mésestimer	24
+mésestimerez		mésestimer	5
+mésestimeriez		mésestimer	4
+mésestimerions		mésestimer	11
+mésestimerons		mésestimer	10
+mésestimeront		mésestimer	15
+mésestimés		mésestimer	38
+mésestimez		mésestimer	47
+mésestimiez		mésestimer	13
+mésestimions		mésestimer	19
+mésestimons		mésestimer	27
+mésintelligence	Manque d’entente, d’accord entre personnes qui ont été ou qui devraient être bien ensemble.
+mesmérien	Relatif à Mesmer ou au mesmérisme.
+mesmérienne	Partisane de la théorie de Mesmer.
+mesmériennes		mesmérien	1
+mesmériens		mesmérien	9
+mesmérisme	Technique d'hypnose appliquée par Mesmer.
+mesmérismes		mesmérisme	0
+mésoblaste	Feuillet embryonnaire cellulaire de l'embryon des métazoaires triploblastiques qui se met en place au moment de la gastrulation entre l'endoderme et l'ectoderm…
+mésoblastes		mésoblaste	0
+mésoblastique	Relatif au mésoblaste.
+mésoblastiques		mésoblastique	0
+mésocarpe	Partie charnue ou filandreuse située entre l’épiderme et la pellicule interne de certains fruits.
+mésocarpes		mésocarpe	0
+mésocôlon	Expansions du péritoine dans la duplicature desquelles sont comprises les diverses portions de l’intestin côlon.
+mésocôlons		mésocôlon	0
+mésoderme	Feuillet embryonnaire cellulaire de l'embryon des métazoaires triploblastiques qui se met en place au moment de la gastrulation entre l'endoderme et à l'ectode…
+mésodermes		mésoderme	0
+mésolithique	Relatif au Mésolithique, âge de pierre compris entre le Paléolithique et le Néolithique, soit entre environ 10 000 et 5 000 ans avant J.-C.
+mésolithiques		mésolithique	0
+mésologie	Science des milieux, qui étudie de manière interdisciplinaire la relation des êtres vivants en général, ou des êtres humains en particulier, avec leur environn…
+mésologies		mésologie	0
+mésomère	Relatif à la mésomérie.
+mésomères		mésomère	0
+mésomérie	Mode de représentation ou d’étude de la structure réelle d'une entité moléculaire dont les électrons de liaison sont délocalisés.
+mésoméries		mésomérie	0
+mésomorphe	État de la matière intermédiaire entre le solide et le liquide.
+mésomorphes		mésomorphe	0
+méson	Particule non élémentaire composée d’un nombre pair de quarks et d’antiquarks.
+mésons		méson	0
+mésopause	Partie de l’atmosphère terrestre séparant la mésosphère de la thermosphère.
+mésophyte	Ligne de démarcation entre la tige et la racine d’une plante, autrement dite collet.
+mésophytes		mésophyte	0
+mésopotamien	Relatif à la Mésopotamie, ou à une contrée située entre deux fleuves.
+mésopotamienne		mésopotamien	23
+mésopotamiennes		mésopotamien	1
+mésopotamiens		mésopotamien	0
+mésoscaphe	Sous-marin utilisé pour explorer les fonds marins à profondeur moyenne, mais aussi utilisable à des fins touristiques.
+mésoscaphes		mésoscaphe	0
+mésosphère	Couche de l’atmosphère terrestre juste au-dessus de la stratosphère, séparée de cette dernière par la stratopause.
+mésosphères		mésosphère	0
+mésothéliome	Forme rare de cancer des surfaces mésothéliales qui affecte le revêtement des poumons (la plèvre), de la cavité abdominale (le péritoine) ou l'enveloppe du cœu…
+mésothéliomes		mésothéliome	0
+mésothélium	Tissu biologique constitué d'une couche de cellules épithéliales qui tapisse la surface interne des cavités séreuses de l’organisme.
+mésothéliums		mésothélium	0
+mésothérapie	Technique médicale de traitement de la douleur qui repose sur des injections locales et très superficielles de doses faibles de médicaments à l’endroit où le t…
+mésothérapies		mésothérapie	0
+mésothorax	Segment médian du thorax des insectes, situé entre le prothorax et le métathorax
+mésothorium	Ancienne désignation des produits de désintégration du thorium naturel (²³²Th), symbole MsTh.
+mésothoriums		mésothorium	0
+mésozoïque	Qualifie les terrains les plus récents parmi les terrains secondaires, contenant les animaux moyennement récents.
+mésozoïques		mésozoïque	0
+mesquin	Sans importance ni valeur, exigu et pauvre.
+mesquine		mesquin	23
+mesquinement	D’une façon mesquine.
+mesquinerie	Caractère de ce qui est mesquin.
+mesquineries		mesquinerie	0
+mesquines		mesquin	1
+mesquins		mesquin	9
+mess	Lieu où des officiers ou des sous-officiers prennent leurs repas ensemble.
+message	Charge ou commission de dire ou de porter quelque chose.
+messager	Qui transmet des messages.
+messagère	Celle qui est chargée de porter un message.
+messagères		messagère	0
+messagerie	Entreprise ayant pour objet de faire partir, à jour et à heure fixes, pour une ou plusieurs localités, des voitures qui transportent des colis.
+messageries		messagerie	0
+messagers		messager	0
+messages		message	0
+messaline	Femme particulièrement dévergondée, caractérisée par un appétit de luxe, une soif de plaisir et un esprit de lucre immodérés et ne reculant pas devant le meurt…
+messalines		messaline	0
+messe	Rite catholique qui commémore la mort de Jésus-Christ, et qui se fait par le ministère du prêtre devant un autel.
+messéant	Qui est malséant, qui est contraire à la bienséance.
+messéante		messéant	23
+messéantes		messéant	1
+messéants		messéant	9
+messeigneurs	Pluriel de monseigneur, dont on se sert quand on s’adresse aux personnes qui ont droit au titre de monseigneur.	titre
+messeoir	Ne pas être convenable, ne pas être séant.
+messer	Messire.
+messers		messer	0
+messes		messe	0
+messeyaient		messeoir	116
+messeyait		messeoir	119
+messianique	Qui a rapport au messie, au messianisme.
+messianiques		messianique	0
+messianisme	Doctrine des hommes ou de groupes d’hommes qui attendent et annoncent un messie.
+messianismes		messianisme	0
+messianiste	Partisan du messianisme.
+messianistes		messianiste	0
+messicole	Qui croit dans les champs de céréales.
+messicoles		messicole	0
+messidor	Dixième mois du calendrier républicain, qui commençait le 19 ou le 20 juin.
+messidors		messidor	0
+messie	Libérateur promis par Dieu dans l’Ancien Testament (pour les chrétiens, il s'agit du Christ).
+messied		messeoir	80
+messiée	Troisième personne du singulier du présent du subjonctif du verbe messeoir (au sens de ne pas convenir).	messeoir
+messiéent	Troisième personne du pluriel du présent de l’indicatif de messeoir (forme conjuguée non standard).	messeoir
+messier	Garde préposé à la sureté des récoltes, à la garde des fruits quand ils commencent à murir.
+messiers		messier	0
+messies		messie	0
+messieurs		monsieur	0
+messin	Relatif à Metz, commune de la Moselle, ou à ses habitants.
+messine		messin	23
+messines		messin	1
+messinien	Relatif au Messinien.
+messins		messin	9
+messire	Titre d’honneur qui se donnait anciennement, dans les actes, à des personnes de distinction.
+messires		messire	0
+messoir	Variante orthographique de messeoir.
+messti	Fête votive d'un village, d'une ville, dans le nord de l'Alsace et l'extrême sud-est de la Moselle.
+messtis		messti	0
+mestrance	Variante orthographique de maistrance.
+mestrances		mestrance	0
+mestre	Grand mât des bâtiments à voiles latines par opposition au mât de trinquet.
+mestres		mestre	0
+mesura		mesurer	39
+mesurable	Qui peut se mesurer.
+mesurables		mesurable	0
+mesurage	Action de mesurer.
+mesurages		mesurage	0
+mesurai		mesurer	55
+mesuraient		mesurer	42
+mesurais		mesurer	52
+mesurait		mesurer	40
+mesurâmes		mesurer	3
+mesurant		mesurer	43
+mesuras		mesurer	12
+mesurasse		mesurer	6
+mesurassent		mesurer	78
+mesurasses		mesurer	8
+mesurassiez		mesurer	14
+mesurassions		mesurer	25
+mesurât		mesurer	62
+mesurâtes		mesurer	2
+mesure	Dimension.
+mesurée		mesuré	23
+mesurées		mesuré	1
+mesurément	D’une manière mesurée, prudemment.
+mesurent		mesurer	41
+mesurer	Chercher à connaître, ou déterminer une quantité par le moyen d’une mesure.
+mesurera		mesurer	44
+mesurerai		mesurer	16
+mesureraient		mesurer	28
+mesurerais		mesurer	18
+mesurerait		mesurer	49
+mesureras		mesurer	7
+mesurèrent		mesurer	48
+mesurerez		mesurer	58
+mesureriez		mesurer	4
+mesurerions		mesurer	11
+mesurerons		mesurer	61
+mesureront		mesurer	54
+mesures		mesure	0
+mesurette	Petit ustensile pour doser une quantité précise (par exemple, une dose de médicament, de lessive, etc.)
+mesurettes		mesurette	0
+mesureur	Qui sert à mesurer.
+mesureurs		mesureur	9
+mesureuse	Celle qui est chargée de mesurer.
+mesureuses		mesureur	1
+mesurez		mesurer	47
+mesuriez		mesurer	67
+mesurions		mesurer	65
+mesuron	Ancienne mesure pour le vin.
+mesurons		mesuron	0
+mésusa		mésuser	33
+mésusage	Mauvais usage d’une chose.
+mésusages		mésusage	0
+mésusai		mésuser	22
+mésusaient		mésuser	32
+mésusais		mésuser	29
+mésusait		mésuser	34
+mésusâmes		mésuser	3
+mésusant		mésuser	35
+mésusas		mésuser	12
+mésusasse		mésuser	6
+mésusassent		mésuser	17
+mésusasses		mésuser	8
+mésusassiez		mésuser	14
+mésusassions		mésuser	25
+mésusât		mésuser	20
+mésusâtes		mésuser	2
+mésusé		mésuser	46
+mésusent		mésuser	31
+mésuser	Mal user d’une chose.
+mésusera		mésuser	21
+mésuserai		mésuser	16
+mésuseraient		mésuser	28
+mésuserais		mésuser	18
+mésuserait		mésuser	26
+mésuseras		mésuser	7
+mésusèrent		mésuser	24
+mésuserez		mésuser	5
+mésuseriez		mésuser	4
+mésuserions		mésuser	11
+mésuserons		mésuser	10
+mésuseront		mésuser	15
+mésusés		mésuser	38
+mésusez		mésuser	30
+mésusiez		mésuser	13
+mésusions		mésuser	19
+mésusons		mésuser	27
+met	Unité de mesure du métabolisme énergétique, équivalant à 50 kilocalories par mètre carré de surface corporelle par heure, soit environ 58 watts par mètre carré.
+méta	Qui appartient à un niveau supérieur.
+métabole	Qui subit un changement.
+métaboles		métabole	0
+métabolique	Relatif au métabolisme.
+métaboliques		métabolique	0
+métabolisa		métaboliser	33
+métabolisai		métaboliser	22
+métabolisaient		métaboliser	32
+métabolisais		métaboliser	29
+métabolisait		métaboliser	34
+métabolisâmes		métaboliser	3
+métabolisant		métaboliser	35
+métabolisas		métaboliser	12
+métabolisasse		métaboliser	6
+métabolisassent		métaboliser	17
+métabolisasses		métaboliser	8
+métabolisassiez		métaboliser	14
+métabolisât		métaboliser	20
+métabolisâtes		métaboliser	2
+métabolisation	Transformation par le métabolisme.
+métabolisations		métabolisation	0
+métabolisé		métaboliser	56
+métabolisée		métaboliser	37
+métabolisées		métaboliser	36
+métabolisent		métaboliser	31
+métaboliser	Assimiler par réaction métabolique.
+métabolisera		métaboliser	21
+métaboliserai		métaboliser	16
+métaboliserais		métaboliser	18
+métaboliserait		métaboliser	26
+métaboliseras		métaboliser	7
+métabolisèrent		métaboliser	24
+métaboliserez		métaboliser	5
+métaboliseriez		métaboliser	4
+métaboliserions		métaboliser	11
+métaboliserons		métaboliser	10
+métaboliseront		métaboliser	15
+métabolisés		métaboliser	38
+métabolisez		métaboliser	30
+métabolisiez		métaboliser	13
+métabolisions		métaboliser	19
+métabolisme	Ensemble des transformations moléculaires et des transferts d’énergie qui se déroulent de manière ininterrompue dans la cellule ou l’organisme vivant.
+métabolismes		métabolisme	0
+métabolisons		métaboliser	27
+métabolite	Élément du métabolisme de l'organisme, produit lors d'une réaction métabolique.
+métabolites		métabolite	0
+métacarpe	Partie de la main qui est entre les doigts et le carpe ou le poignet.
+métacarpes		métacarpe	0
+métacarpien	Qui a rapport au métacarpe.
+métacarpienne	Féminin singulier de métacarpien.
+métacarpiennes	Féminin pluriel de métacarpien.
+métacarpiens		métacarpien	0
+métacentre	Point où la ligne verticale, passant par le centre de gravité d’un navire, se rencontre avec la résultante de la pression latérale que l’eau exerce sur ce navi…
+métacentres		métacentre	0
+métacentrique	Qualifie une courbe formée de la réunion des métacentres correspondant à toutes les inclinaisons possibles du navire.
+métacentriques		métacentrique	0
+métacognition	Connaissance qu’un individu a de ses propres processus cognitifs et capacité à les évaluer, les contrôler ou les réguler.
+métacognitions		métacognition	0
+métadone	Variante orthographique de méthadone.
+métadones		métadone	0
+métadonnée	Donnée servant à définir ou décrire une autre donnée quel que soit son support (papier ou électronique).
+métadonnées		métadonnée	0
+métagalaxie	Partie observable de l'Univers.
+métagramme	Métaplasme, changement de lettre dans un mot.
+métagrammes		métagramme	0
+métairie	Bien-fonds exploité par un colon qui donne pour fermage la moitié des récoltes, ou telle autre portion qui est réglée entre les contractants.
+métairies		métairie	0
+metal	Musique caractérisé par de vivaces battements de batterie, des guitares distordues et l’utilisation d’accords dissonants tel que le triton.
+métalangage	Discours, parole dont le langage est l’objet.
+métalangages		métalangage	0
+métalangue	Partie de la langue qui exprime la métalinguistique, c’est-à-dire qui permet de produire un discours sur la langue en question.
+métalangues		métalangue	0
+métaldéhyde	Polymère cyclique d’acétaldéhyde, de formule brute (CH₃CHO)₂, phytosanitaire molluscicide (employé pour tuer des limaces et autres gastéropodes).
+métaldéhydes		métaldéhyde	0
+métalepse	Figure de style par laquelle on prend l’antécédent pour le conséquent, ou le conséquent pour l’antécédent.
+métalepses		métalepse	0
+métallerie	Art de travailler le métal.
+métalleries		métallerie	0
+metalleuse	Personne participant à la culture heavy metal, par la création ou par l’écoute de musique.
+metalleuses	Féminin pluriel de metalleux, personne participant à la culture heavy metal, par la création ou par l’écoute de musique.
+métalleux	Personne participant à la culture heavy metal, par la création ou par l’écoute de musique.
+métallier	Personne qui travaille le métal.
+métallière	Femme exerçant le métier de métallier.
+métallières		métallière	0
+métalliers		métallier	0
+métallifère	Qui contient du métal.
+métallifères		métallifère	0
+métallique	Qui est de métal, qui concerne le métal.
+métalliques		métallique	0
+métallisa		métalliser	33
+métallisai		métalliser	22
+métallisaient		métalliser	32
+métallisais		métalliser	29
+métallisait		métalliser	34
+métallisâmes		métalliser	3
+métallisant	Qui métallise ; qui recouvre de métal.
+métallisas		métalliser	12
+métallisasse		métalliser	6
+métallisassent		métalliser	17
+métallisasses		métalliser	8
+métallisassiez		métalliser	14
+métallisassions		métalliser	25
+métallisât		métalliser	20
+métallisâtes		métalliser	2
+métallisation	Action de métalliser.
+métallisations		métallisation	0
+métallisé		métalliser	56
+métallisée		métalliser	45
+métallisées		métalliser	51
+métallisent		métalliser	41
+métalliser	Faire passer à l’état de métal un oxyde, un sulfure ou tout autre composé à base métallique.
+métallisera		métalliser	21
+métalliserai		métalliser	16
+métalliseraient		métalliser	28
+métalliserais		métalliser	18
+métalliserait		métalliser	26
+métalliseras		métalliser	7
+métallisèrent		métalliser	24
+métalliserez		métalliser	5
+métalliseriez		métalliser	4
+métalliserions		métalliser	11
+métalliserons		métalliser	10
+métalliseront		métalliser	15
+métallisés		métalliser	53
+métallisez		métalliser	30
+métallisiez		métalliser	13
+métallisions		métalliser	19
+métallisons		métalliser	27
+métallo	Ouvrier de, dans la métallurgie.
+métallochimie	Partie de la chimie qui traite des métaux.
+métallochromie	Coloration superficielle d’un métal par oxydation
+métallochromies		métallochromie	0
+métallogénie	Étude de la formation des dépôts, des gisements contenant des métaux.
+métallogénies		métallogénie	0
+métallogénique	Qui concerne la métallogénie.
+métallogéniques		métallogénique	0
+métallographe	Auteur d’une métallographie.
+métallographes		métallographe	0
+métallographie	Ensemble des diverses méthodes d’essais physiques et chimiques employées pour l’étude approfondie des métaux.
+métallographies		métallographie	0
+métalloïde	Qui a certaines des caractéristiques d'un métal.
+métalloïdes		métalloïde	0
+métalloïdique	Qui concerne les métalloïdes.
+métalloïdiques		métalloïdique	0
+métallophone	Instrument de musique dont le son est issu de la percussion de lames de métal.
+métallophones		métallophone	0
+métalloprotéine	Protéine comportant un ou plusieurs cofacteurs métalliques.
+métallos		métallo	0
+métallurgie	Industrie qui a pour objet l’extraction et la purification des métaux, de leurs alliages, et leur emploi.
+métallurgies		métallurgie	0
+métallurgique	Qui a rapport à la métallurgie.
+métallurgiques		métallurgique	0
+métallurgiste	Qui pratique la métallurgie.
+métallurgistes		métallurgiste	0
+métalogique	Relatif à l’analyse de la logique.
+métalogiques		métalogique	0
+métamère	Segment dont est composé le corps des vers annélides, des arthropodes et des chordés.
+métamères		métamère	0
+métamérie	Système dʼorganisation embryonnaire sous forme de segments ou métamères.
+métaméries		métamérie	0
+métamérisé		métamériser	46
+métamérisée		métamériser	37
+métamérisées		métamériser	36
+métamériser	Se segmenter en métamères.
+métamérisés		métamériser	38
+métamorphique	Qui a été profondément modifié dans sa structure (par la pression ou la température), en parlant d’une roche, d’un terrain.
+métamorphiques		métamorphique	0
+métamorphisa		métamorphiser	33
+métamorphisai		métamorphiser	22
+métamorphisais		métamorphiser	29
+métamorphisait		métamorphiser	34
+métamorphisâmes		métamorphiser	3
+métamorphisant		métamorphiser	35
+métamorphisas		métamorphiser	12
+métamorphisasse		métamorphiser	6
+métamorphisât		métamorphiser	20
+métamorphisâtes		métamorphiser	2
+métamorphisé		métamorphiser	46
+métamorphisée		métamorphiser	37
+métamorphisées		métamorphiser	36
+métamorphisent		métamorphiser	31
+métamorphiser	Transformer par métamorphisme.
+métamorphisera		métamorphiser	21
+métamorphiserai		métamorphiser	16
+métamorphiseras		métamorphiser	7
+métamorphiserez		métamorphiser	5
+métamorphisés		métamorphiser	38
+métamorphisez		métamorphiser	30
+métamorphisiez		métamorphiser	13
+métamorphisions		métamorphiser	19
+métamorphisme	Ensemble des transformations minéralogiques et structurales qui affectent une roche soumise à des conditions de température et de pression différentes de celle…
+métamorphismes		métamorphisme	0
+métamorphisons		métamorphiser	27
+métamorphosa		métamorphoser	39
+métamorphosable	Qui a la possibilité dʼêtre métamorphosé.
+métamorphosai		métamorphoser	22
+métamorphosais		métamorphoser	29
+métamorphosait		métamorphoser	40
+métamorphosâmes		métamorphoser	3
+métamorphosant		métamorphoser	43
+métamorphosas		métamorphoser	12
+métamorphosasse		métamorphoser	6
+métamorphosât		métamorphoser	62
+métamorphosâtes		métamorphoser	2
+métamorphose	Transformation, changement d’une forme en une autre.
+métamorphosée		métamorphoser	45
+métamorphosées		métamorphoser	51
+métamorphosent		métamorphoser	41
+métamorphoser	Faire passer un être de sa forme naturelle à une autre par l’effet de la métamorphose.
+métamorphosera		métamorphoser	21
+métamorphoserai		métamorphoser	16
+métamorphoseras		métamorphoser	7
+métamorphoserez		métamorphoser	5
+métamorphosés		métamorphoser	53
+métamorphosez		métamorphoser	47
+métamorphosiez		métamorphoser	13
+métamorphosions		métamorphoser	65
+métamorphosons		métamorphoser	27
+métamoteur	Moteur de recherche qui puise ses informations à travers plusieurs autres.
+métamoteurs		métamoteur	0
+métaphase	Deuxième phase de la division cellulaire eucaryote par mitose au cours de laquelle les chromosomes s’alignent au centre de la cellule.
+métaphases		métaphase	0
+métaphore	Figure de style qui consiste à remplacer un mot par un autre, présentant avec lui un rapport d’analogie.
+métaphores		métaphore	0
+métaphorique	Qui se rapporte à la métaphore.
+métaphoriques		métaphorique	0
+métaphorisa		métaphoriser	33
+métaphorisai		métaphoriser	22
+métaphorisaient		métaphoriser	32
+métaphorisais		métaphoriser	29
+métaphorisait		métaphoriser	34
+métaphorisâmes		métaphoriser	3
+métaphorisant		métaphoriser	35
+métaphorisas		métaphoriser	12
+métaphorisasse		métaphoriser	6
+métaphorisasses		métaphoriser	8
+métaphorisât		métaphoriser	20
+métaphorisâtes		métaphoriser	2
+métaphorisé		métaphoriser	46
+métaphorisée		métaphoriser	37
+métaphorisées		métaphoriser	36
+métaphorisent		métaphoriser	31
+métaphoriser	Transformer en métaphore.
+métaphorisera		métaphoriser	21
+métaphoriserai		métaphoriser	50
+métaphoriserais		métaphoriser	18
+métaphoriserait		métaphoriser	26
+métaphoriseras		métaphoriser	7
+métaphorisèrent		métaphoriser	24
+métaphoriserez		métaphoriser	5
+métaphoriseriez		métaphoriser	4
+métaphoriserons		métaphoriser	10
+métaphoriseront		métaphoriser	15
+métaphorisés		métaphoriser	38
+métaphorisez		métaphoriser	30
+métaphorisiez		métaphoriser	13
+métaphorisions		métaphoriser	19
+métaphorisons		métaphoriser	27
+métaphrase	Traduction faite pour exprimer le sens général dʼun texte plutôt que sa forme.
+métaphrases		métaphrase	0
+métaphyse	Zone de jonction entre la diaphyse et l’épiphyse qui correspond au cartilage de conjugaison et qui permet la croissance de l’os jusqu’à l’âge adulte.
+métaphyses		métaphyse	0
+métaphysicien	Qui participe de la métaphysique.
+métaphysicienne	Femme qui étudie la métaphysique.
+métaphysiciens		métaphysicien	0
+métaphysique	Partie de la philosophie qui traite des premiers principes de nos connaissances et des idées universelles.
+métaphysiques		métaphysique	0
+métaplasie	Transformation d'un tissu cellulaire différencié en un autre tissu cellulaire.
+métaplasies		métaplasie	0
+métapsychique	Parapsychologique.
+métapsychiques		métapsychique	0
+métapsychologie	Ensemble des concepts théoriques formulés par la psychanalyse freudienne.
+métas		méta	0
+métastable	Instable mais durable, se dit d’un état de la matière qu’un facteur déclenchant peut troubler.
+métastables		métastable	0
+métastasa		métastaser	33
+métastasai		métastaser	22
+métastasaient		métastaser	32
+métastasais		métastaser	29
+métastasait		métastaser	34
+métastasâmes		métastaser	3
+métastasant		métastaser	35
+métastasas		métastaser	12
+métastasasse		métastaser	6
+métastasassent		métastaser	17
+métastasasses		métastaser	8
+métastasassiez		métastaser	14
+métastasassions		métastaser	25
+métastasât		métastaser	20
+métastasâtes		métastaser	2
+métastase	Croissance d’un organisme pathogène ou d’une cellule tumorale à distance du site initialement atteint.
+métastasée		métastasé	23
+métastasées		métastasé	1
+métastasent		métastaser	31
+métastaser	Produire une métastase.
+métastasera		métastaser	21
+métastaserai		métastaser	16
+métastaseraient		métastaser	28
+métastaserais		métastaser	18
+métastaserait		métastaser	26
+métastaseras		métastaser	7
+métastasèrent		métastaser	24
+métastaserez		métastaser	5
+métastaseriez		métastaser	4
+métastaserions		métastaser	11
+métastaserons		métastaser	10
+métastaseront		métastaser	15
+métastases		métastase	0
+métastasez		métastaser	30
+métastasiez		métastaser	13
+métastasions		métastaser	19
+métastasons		métastaser	27
+métastatique	Qui provient d’une tumeur primaire.
+métastatiques		métastatique	0
+métatarse	Partie du pied qui est entre les orteils et le tarse ou le cou-de-pied.
+métatarses		métatarse	0
+métatarsien	En rapport avec les os du métatarse entre eux.
+métatarsienne		métatarsien	23
+métatarsiennes		métatarsien	1
+métatarsiens		métatarsien	9
+métathéorie	Théorie dont l’objet est une théorie.
+métathéories		métathéorie	0
+métathèse	Métaplasme qui consiste dans l’inversion de deux lettres ou phonèmes.
+métathèses		métathèse	0
+métathorax	Dernier segment du thorax des insectes, il est directement précédé par le mésothorax ensuite vient le prothorax.
+métaux		métal	0
+métavers	Univers virtuel.
+métayage	Mode de fermage, fait avec un métayer, dont la rente est payable en nature par une part sur la récolte (d’habitude la moitié).
+métayages		métayage	0
+métayer	Celui qui fait valoir une métairie.
+métayère	Celle qui fait valoir une métairie.
+métayères		métayère	0
+métayers		métayer	0
+métazoaire	Animal eucaryote multicellulaire mobile et hétérotrophe.
+métazoaires		métazoaire	0
+méteil	Froment et seigle mêlés ensemble.
+méteils		méteil	0
+métempsychose	Variante orthographique de métempsycose.
+métempsychoser	Transformer par métempsychose.
+métempsychosés		métempsychoser	38
+métempsycose	Transmigration d’une âme d’un corps dans un autre.
+métempsycoser	Transformer par métempsychose.
+métempsycosés		métempsycoser	38
+métencéphale	Partie du rhombencéphale embryonnaire dont sont issus, au terme du développement embryonnaire, le pont de Varole (dit aussi protubérance annulaire) et le cerve…
+métencéphales		métencéphale	0
+météo	Temps (conditions météorologiques).
+météore	Phénomène atmosphérique.
+météores		météore	0
+météorique	Qui concerne les météores.
+météoriques		météorique	0
+météorisa		météoriser	33
+météorisai		météoriser	22
+météorisaient		météoriser	32
+météorisais		météoriser	29
+météorisait		météoriser	34
+météorisâmes		météoriser	3
+météorisant		météoriser	35
+météorisas		météoriser	12
+météorisasse		météoriser	6
+météorisassent		météoriser	17
+météorisasses		météoriser	8
+météorisassiez		météoriser	14
+météorisassions		météoriser	25
+météorisât		météoriser	20
+météorisâtes		météoriser	2
+météorisation	Gonflement de l’abdomen chez les bestiaux qui ont mangé des herbages humides.
+météorisations		météorisation	0
+météorisé	Atteint de météorisation.
+météorisée		météoriser	37
+météorisées		météoriser	36
+météorisent		météoriser	31
+météoriser	Gonfler et distendre l’abdomen par des flatuosités.
+météorisera		météoriser	21
+météoriserai		météoriser	16
+météoriseraient		météoriser	28
+météoriserais		météoriser	18
+météoriserait		météoriser	26
+météoriseras		météoriser	7
+météorisèrent		météoriser	24
+météoriserez		météoriser	5
+météoriseriez		météoriser	4
+météoriserions		météoriser	11
+météoriserons		météoriser	10
+météoriseront		météoriser	15
+météorisés		météoriser	38
+météorisez		météoriser	30
+météorisiez		météoriser	13
+météorisions		météoriser	19
+météorisme	Enflure générale de l’abdomen due à la distension du tube alimentaire par des gaz qui s’y trouvent accumulés.
+météorismes		météorisme	0
+météorisons		météoriser	27
+météorite	Aérolithe, masse minérale, pierre tombée du ciel.
+météorites		météorite	0
+météoritique	Qui concerne les météorites, qui appartient aux météorites.
+météoritiques		météoritique	0
+météorologie	Partie de l’astronomie qui étudie la chute des bolides et météorites sur la terre.
+météorologies		météorologie	0
+météorologique	Qui concerne les météores et les variations de l’atmosphère.
+météorologiques		météorologique	0
+météorologiste	Celui, celle qui s’occupe de météorologie.
+météorologistes		météorologiste	0
+météorologue	Celui, celle qui s’occupe de météorologie.
+météorologues		météorologue	0
+météos		météo	0
+métèque	Relatif aux métèques de la Grèce antique.
+métèques		métèque	0
+méthacrylate	Sorte de plastique dur, transparent et incassable employé comme verre de sécurité ou dans la fabrication d’objets divers.
+méthacrylates		méthacrylate	0
+méthacrylique	Relatif à l'acide méthacrylique.
+méthacryliques		méthacrylique	0
+méthadone	Opioïde analgésique.
+méthadones		méthadone	0
+méthamphétamine	Drogue de synthèse psycho-stimulante hautement addictive.
+méthanal	Composé organique de la famille des aldéhydes et dont la molécule se compose de 2 atomes d'hydrogène, 1 de carbone et 1 d'oxygène, il est utilisé comme désinfe…
+méthane	Hydrocarbure saturé, premier membre de la famille des paraffines, de formule brute CH₄.
+méthanier	Qui concerne le transport du méthane ou d’autres gaz.
+méthanière		méthanier	23
+méthanières		méthanier	1
+méthaniers		méthanier	0
+méthanique	Relatif au méthane.
+méthaniques		méthanique	0
+méthanisa		méthaniser	33
+méthanisai		méthaniser	22
+méthanisaient		méthaniser	32
+méthanisais		méthaniser	29
+méthanisait		méthaniser	34
+méthanisâmes		méthaniser	3
+méthanisant		méthaniser	35
+méthanisas		méthaniser	12
+méthanisasse		méthaniser	6
+méthanisassent		méthaniser	17
+méthanisasses		méthaniser	8
+méthanisassiez		méthaniser	14
+méthanisassions		méthaniser	25
+méthanisât		méthaniser	20
+méthanisâtes		méthaniser	2
+méthanisation	Processus naturel biologique de dégradations biologiques (hydrolyse, fermentation, acétogénèse, méthanogénèse) de matières organiques en absence d’oxygène prod…
+méthanisations		méthanisation	0
+méthanisé		méthaniser	46
+méthanisée		méthaniser	37
+méthanisées		méthaniser	36
+méthanisent		méthaniser	31
+méthaniser	Produire du méthane à partir de.
+méthanisera		méthaniser	21
+méthaniserai		méthaniser	16
+méthaniseraient		méthaniser	28
+méthaniserais		méthaniser	18
+méthaniserait		méthaniser	26
+méthaniseras		méthaniser	7
+méthanisèrent		méthaniser	24
+méthaniserez		méthaniser	5
+méthaniseriez		méthaniser	4
+méthaniserions		méthaniser	11
+méthaniserons		méthaniser	10
+méthaniseront		méthaniser	15
+méthanisés		méthaniser	38
+méthaniseur	Appareil, utilisé en chromatographie en phase gazeuse, qui permet de détecter de très faibles concentrations de monoxyde de carbone et dioxyde de carbone.
+méthaniseurs		méthaniseur	0
+méthanisez		méthaniser	30
+méthanisiez		méthaniser	13
+méthanisions		méthaniser	19
+méthanisons		méthaniser	27
+méthanoduc	Canalisation de gros diamètre ayant pour fonction le transport de méthane.
+méthanoducs		méthanoduc	0
+méthanogène	Qui produit du méthane.
+méthanogènes		méthanogène	0
+méthanol	Composé organique appartenant au groupe des alcools de formule semi-développée CH₃OH.
+méthémoglobine	Hétéroprotéine de couleur brune, dérivée de l’hémoglobine.
+méthémoglobines		méthémoglobine	0
+méthionine	Acide aminé soufré non polaire (acide 2-amino-4-(méthylsulfanyl)butanoïque) qui joue un rôle critique dans la reproduction, la survie cellulaire, la méthylatio…
+méthionines		méthionine	0
+méthode	Manière de conduire sa pensée, de penser, de dire ou de faire quelque chose suivant certains principes et avec un certain ordre.
+méthodes		méthode	0
+méthodique	Qui a de la règle et de la méthode.
+méthodiquement	D’une manière méthodique.
+méthodiques		méthodique	0
+méthodisme	Mouvement protestant né en Angleterre au XVIIIᵉ siècle.
+méthodismes		méthodisme	0
+méthodiste	Relatif au mouvement du méthodisme et à ses adhérents.
+méthodistes		méthodiste	0
+méthodologie	Science de la méthode en général ou des méthodes particulières de diverses sciences.
+méthodologies		méthodologie	0
+méthodologique	Qui concerne la méthodologie, la méthode.
+méthodologiques		méthodologique	0
+méthylamine	Amine primaire de formule CH₃–NH₂, dont le groupe –NH₂ est lié à un groupe méthyle.
+méthylamines		méthylamine	0
+méthylation	Ajout ou substitution d’un groupement méthyle à un substrat.
+méthylations		méthylation	0
+méthyle	Groupement de carbone et d’hydrogène de structure (CH₃–) dérivé de la structure du méthane et lié de façon covalente à une autre molécule, et entrant dans la c…
+méthylène	Groupe fonctionnel divalent : — CH₂ —.
+méthylènes		méthylène	0
+méthyler	Transformer en y faisant apparaître le radical méthyle.
+méthylés		méthyler	38
+méthylique	Qui dérive du méthane.
+méthyliques		méthylique	0
+méthylorange	Colorant azoïque de la famille des tropéolines, nommé aussi hélianthine.
+metical	Devise officielle du Mozambique depuis 1980.
+meticals		metical	0
+méticuleuse	Une espèce d’insecte lépidoptère (papillon) de nuit de la famille des noctuidés (Noctuidae) dont le dos des ailes antérieures est de couleur bois de rose avec …
+méticuleusement	D’une manière méticuleuse.
+méticuleuses		méticuleux	1
+méticuleux	Qui est soigneux à l’excès, qui a le goût des moindres détails et qui en est préoccupé.
+méticulosité	Caractère de celui, celle ou ce qui est méticuleux.
+méticulosités		méticulosité	0
+métier	Activité impliquant l’acquisition d’un savoir-faire particulier.
+métiers		métier	0
+métis	Qui est né de parents d’origines différentes.
+métissa		métisser	33
+métissage	Croisement d’une race avec une autre pour améliorer celle qui a moins de valeur.
+métissages		métissage	0
+métissai		métisser	22
+métissaient		métisser	32
+métissais		métisser	29
+métissait		métisser	34
+métissâmes		métisser	3
+métissant		métisser	35
+métissas		métisser	12
+métissasse		métisser	6
+métissassent		métisser	17
+métissasses		métisser	8
+métissassiez		métisser	14
+métissassions		métisser	25
+métissât		métisser	20
+métissâtes		métisser	2
+métisse	Femme née de parents d’origine différentes.
+métissée		métisser	45
+métissées		métisser	36
+métissent		métisser	31
+métisser	Faire devenir métis.
+métissera		métisser	21
+métisserai		métisser	16
+métisseraient		métisser	28
+métisserais		métisser	18
+métisserait		métisser	26
+métisseras		métisser	7
+métissèrent		métisser	24
+métisserez		métisser	5
+métisseriez		métisser	4
+métisserions		métisser	11
+métisserons		métisser	10
+métisseront		métisser	15
+métisses		métis	1
+métissez		métisser	47
+métissiez		métisser	13
+métissions		métisser	19
+métissons		métisser	27
+métonien	En rapport avec Méton, astronome athénien du Vᵉ siècle avant Jésus-Christ.
+métoniens		métonien	9
+métonymie	Procédé du langage qui consiste à remplacer un mot par un autre mot qui entretient avec le premier un rapport logique, par exemple un objet par sa matière, un …
+métonymies		métonymie	0
+métonymique	Relatif à la métonymie.
+métonymiques		métonymique	0
+métope	Intervalle rectangulaire situé entre les triglyphes de la frise dorique et généralement orné de reliefs.
+métopes		métope	0
+métopique	Situé sur le front, frontal.
+métopiques		métopique	0
+métra		métrer	39
+métrage	Action de métrer ou résultat de cette action.
+métrages		métrage	0
+métrai		métrer	22
+métraient		métrer	32
+métrais		métrer	29
+métrait		métrer	34
+métrâmes		métrer	3
+métrant		métrer	35
+métras		métrer	83
+métrasse		métrer	6
+métrassent		métrer	17
+métrasses		métrer	8
+métrassiez		métrer	14
+métrassions		métrer	25
+métrât		métrer	20
+métrâtes		métrer	2
+mètre	Unité de mesure de longueur du Système international, dont le symbole est m.
+métrée		métrer	37
+métrées		métrer	36
+mètrent		métrer	31
+métrer	Mesurer au mètre une surface ou un solide quelconque.
+mètrera		métrer	21
+mètrerai		métrer	16
+mètreraient		métrer	28
+mètrerais		métrer	18
+mètrerait		métrer	26
+mètreras		métrer	7
+métrèrent		métrer	24
+mètrerez		métrer	5
+mètreriez		métrer	4
+mètrerions		métrer	11
+mètrerons		métrer	10
+mètreront		métrer	15
+mètres		mètre	0
+métreur	Personne qui mesure au mètre, dont la profession est de mesurer au mètre soit certaines matières, soit des travaux d’architecture.
+métreurs		métreur	0
+métreuse	Instrument de mesure qui mètre dans le système métrique.
+métreuses		métreuse	0
+métrez		métrer	30
+métricien	Érudit qui se consacre à l’étude de la métrique grecque ou latine.
+métricienne	Érudite qui se consacre à l’étude de la métrique grecque ou latine.
+métriciennes		métricienne	0
+métriciens		métricien	0
+métriez		métrer	13
+métrions		métrer	19
+métrique	Qui est composé de mètres.
+métriques	métriques\me.tʁik\féminin
+métrisable	Pour lequel il est possible de définir une distance, en créant ainsi un espace métrique.
+métrisables		métrisable	0
+métrite	Inflammation de la matrice ou utérus.
+métrites		métrite	0
+métro	Mesure en poésie.
+métrologie	Discipline qui a pour objet les méthodes et les techniques employées pour obtenir la plus grande précision dans les mesures.
+métrologies		métrologie	0
+métrologique	Relatif à la métrologie.
+métrologiques		métrologique	0
+métrologiste	Auteur d’une métrologie, de recherches métrologiques.
+métrologistes		métrologiste	0
+métrologue	Spécialiste de la métrologie.
+métrologues		métrologue	0
+métromane	Celui, celle qui est atteint de métromanie.
+métromanes		métromane	0
+métromanie	Manie de faire des vers.
+métromanies		métromanie	0
+métronome	Instrument d’horlogerie qui sert à battre la mesure.
+métronomes		métronome	0
+métronomique	Relatif au métronome.
+métronomiques		métronomique	0
+métrons		métrer	27
+métropole	Ville ayant fondé, au-delà des mers, une ou plusieurs autres colonies.
+métropoles		métropole	0
+métropolisation	Fait de métropoliser, d’organiser un territoire autour d’une métropole.
+métropolitain	Relatif à une métropole, c’est-à-dire une grande ville, ou un groupement de communes au sens administratif français.
+métropolitaine		métropolitain	23
+métropolitaines		métropolitain	1
+métropolitains		métropolitain	9
+métropolite	Titre des évêques ou archevêques dont le siège est une métropole.
+métropolites		métropolite	0
+métrorragie	Hémorragie utérine qui se produit en dehors des règles.
+métrorragies		métrorragie	0
+métrorrhagie	Variante de métrorragie.
+métrorrhagies		métrorrhagie	0
+métros		métro	0
+métrosexuel	voire Relatif à un homme citadin qui soigne particulièrement son apparence.
+métrosexuelle		métrosexuel	23
+métrosexuelles		métrosexuel	1
+métrosexuels		métrosexuel	0
+mets	Chacun des aliments apprêtés qu’on sert pour les repas.
+mettable	Présentable, de commerce agréable.
+mettables		mettable	0
+mettaient		mettre	93
+mettais		mettre	95
+mettait		mettre	91
+mettant		mettre	43
+mette	Huche à pain, maie.
+mettent		mettre	69
+mettes		mette	0
+metteur	Personne qui met.
+metteurs		metteur	0
+metteuse	Celle qui met, qui prépare.
+metteuses		metteuse	0
+mettez		mettre	70
+mettiez		mettre	102
+mettions		mettre	103
+metton	Fromage de lait de vache, écrémé puis caillé par présure ou par fermentation lactique, servant à la préparation de la cancoillotte.
+mettons		metton	0
+mettra		mettre	44
+mettrai		mettre	50
+mettraient		mettre	97
+mettrais		mettre	96
+mettrait		mettre	92
+mettras		mettre	57
+mettre	Placer une personne, ou un animal, ou une chose dans un lieu déterminé.
+mettrez		mettre	58
+mettriez		mettre	104
+mettrions		mettre	105
+mettrons		mettre	61
+mettront		mettre	54
+meubla		meubler	39
+meublai		meubler	22
+meublaient		meubler	42
+meublais		meubler	52
+meublait		meubler	40
+meublâmes		meubler	3
+meublant	Qui est propre à meubler, qui s’emploie en tenture, en garniture de meubles.
+meublante		meublant	109
+meublantes		meublant	1
+meublants		meublant	0
+meublas		meubler	12
+meublasse		meubler	6
+meublassent		meubler	17
+meublasses		meubler	8
+meublassiez		meubler	14
+meublassions		meubler	25
+meublât		meubler	20
+meublâtes		meubler	2
+meuble	Mobile, que l’on peut déplacer, mouvoir.
+meublée		meublé	23
+meublées		meublé	1
+meublent		meubler	41
+meubler	Garnir de meubles.
+meublera		meubler	21
+meublerai		meubler	16
+meubleraient		meubler	28
+meublerais		meubler	18
+meublerait		meubler	26
+meubleras		meubler	7
+meublèrent		meubler	48
+meublerez		meubler	5
+meubleriez		meubler	4
+meublerions		meubler	11
+meublerons		meubler	10
+meubleront		meubler	15
+meublés		meublé	9
+meublez		meubler	30
+meubliez		meubler	13
+meublions		meubler	19
+meublons		meubler	27
+meuf	Individu de sexe ou genre féminin.
+meufs		meuf	0
+meugla		meugler	39
+meuglai		meugler	22
+meuglaient		meugler	42
+meuglais		meugler	29
+meuglait		meugler	40
+meuglâmes		meugler	3
+meuglant		meugler	43
+meuglas		meugler	12
+meuglasse		meugler	6
+meuglassent		meugler	17
+meuglasses		meugler	8
+meuglassiez		meugler	14
+meuglassions		meugler	25
+meuglât		meugler	20
+meuglâtes		meugler	2
+meuglé		meugler	56
+meuglement	Cri des animaux du genre bovin.
+meuglements		meuglement	0
+meuglent		meugler	31
+meugler	Pousser des meuglements.
+meuglera		meugler	21
+meuglerai		meugler	16
+meugleraient		meugler	28
+meuglerais		meugler	18
+meuglerait		meugler	26
+meugleras		meugler	7
+meuglèrent		meugler	24
+meuglerez		meugler	5
+meugleriez		meugler	4
+meuglerions		meugler	11
+meuglerons		meugler	10
+meugleront		meugler	15
+meugles		meugler	66
+meuglez		meugler	30
+meugliez		meugler	13
+meuglions		meugler	19
+meuglons		meugler	27
+meuh	Imitation du bruit produit par les bovins (meuglement).
+meula		meuler	33
+meulage	Action de meuler.
+meulages		meulage	0
+meulai		meuler	22
+meulaient		meuler	32
+meulais		meuler	29
+meulait		meuler	34
+meulâmes		meuler	3
+meulant		meuler	35
+meulard	Meule à moudre de grande dimension.
+meularde	Meule à moudre de moyenne dimension.
+meulardes		meularde	0
+meulards		meulard	0
+meulas		meuler	12
+meulasse		meuler	6
+meulassent		meuler	17
+meulasses		meuler	8
+meulassiez		meuler	14
+meulassions		meuler	25
+meulât		meuler	20
+meulâtes		meuler	2
+meule	Roue en pierre, en bois, qui sert à broyer en tournant.
+meulée		meuler	37
+meulées		meuler	36
+meulent		meuler	31
+meuler	Passer (quelque chose) à la meule.
+meulera		meuler	21
+meulerai		meuler	16
+meuleraient		meuler	28
+meulerais		meuler	18
+meulerait		meuler	26
+meuleras		meuler	7
+meulèrent		meuler	24
+meulerez		meuler	5
+meulerie	Atelier où l’on prépare les meules.
+meuleries		meulerie	0
+meuleriez		meuler	4
+meulerions		meuler	11
+meulerons		meuler	10
+meuleront		meuler	15
+meules		meule	0
+meuleton	Machine dans laquelle tournent une ou deux meules pour réduire la matière première en pâte à papier.
+meuletons		meuleton	0
+meulette	Estomac des morues.
+meulettes		meulette	0
+meuleuse	Outil électrique ou pneumatique entraînant en rotation une meule ou un disque pour couper, ébavurer, meuler ou surfacer.
+meuleuses		meuleuse	0
+meulez		meuler	47
+meulier	Relatif aux pierres propres à la fabrication des meules à moudre.
+meulière	Pierre rocailleuse dont on fait des meules de moulin et qu’on emploie aussi comme moellon pour bâtir.
+meulières		meulier	1
+meuliers		meulier	9
+meuliez		meuler	13
+meulions		meuler	19
+meulon	Petite meule de trèfle, de luzerne, de foin, que l’on fait après avoir laissé sécher les andains et avant de dresser les grandes meules ou de botteler.
+meulons		meulon	0
+meunerie	Endroit où l’on transforme les grains en farine.
+meuneries		meunerie	0
+meunier	Relatif à la minoterie, au moulinage.
+meunière	Femme dont la profession est de moudre de la farine de céréales ou de l’huile en utilisant un moulin ou une minoterie, qu’elle possède ou qu’elle exploite.
+meunières		meunier	1
+meuniers		meunier	9
+meure	Graphie ancienne de mûre.
+meurent		mourir	69
+meures		meure	0
+meurette	Sauce matelote bourguignonne au vin rouge utilisée en cuisine.
+meurettes		meurette	0
+meuron	Mûre.
+meurons		meuron	0
+meurs		mourir	72
+meursault	Vin produit sur une partie de la commune de Meursault, en Côte-d’Or.
+meursaults		meursault	0
+meurt		mourir	198
+meurtiat	Dans les mines du nord de la France, mur de pierres sèches destiné à maintenir des remblais.
+meurtiats		meurtiat	0
+meurtre	Homicide volontaire.
+meurtres		meurtre	0
+meurtri	Qui est marqué d'une meurtrissure.
+meurtrie	Celle qui vit avec une meurtrissure morale.
+meurtrier	Celui qui a commis un meurtre.
+meurtrière	Celle qui a commis un meurtre.
+meurtrières		meurtrier	1
+meurtriers		meurtrier	9
+meurtries		meurtri	1
+meurtrîmes		meurtrir	3
+meurtrir	Tuer, assassiner.
+meurtrira		meurtrir	44
+meurtrirai		meurtrir	16
+meurtriraient		meurtrir	28
+meurtrirais		meurtrir	18
+meurtrirait		meurtrir	26
+meurtriras		meurtrir	7
+meurtrirent		meurtrir	24
+meurtrirez		meurtrir	5
+meurtririez		meurtrir	4
+meurtririons		meurtrir	11
+meurtrirons		meurtrir	10
+meurtriront		meurtrir	54
+meurtris		meurtri	9
+meurtrissaient		meurtrir	75
+meurtrissais		meurtrir	86
+meurtrissait		meurtrir	71
+meurtrissant	Qui meurtrit.
+meurtrisse		meurtrir	89
+meurtrissent		meurtrir	69
+meurtrisses		meurtrir	76
+meurtrissez		meurtrir	30
+meurtrissiez		meurtrir	13
+meurtrissions		meurtrir	19
+meurtrissons		meurtrir	27
+meurtrissure	Contusion avec tache livide.
+meurtrissures		meurtrissure	0
+meurtrit		meurtrir	80
+meurtrîtes		meurtrir	2
+meus		mouvoir	72
+meusien	Relatif au département de la Meuse.
+meusienne	Synonyme de poule meusienne (race de poules).
+meusiennes		meusien	1
+meusiens		meusien	9
+meut		mouvoir	80
+meute	Troupe de chiens courants dressés pour la vénerie ou chasse à courre.
+meutes		meute	0
+meuve		mouvoir	85
+meuvent		mouvoir	69
+meuves		mouvoir	98
+mévend		mévendre	107
+mévendaient		mévendre	116
+mévendais		mévendre	114
+mévendait		mévendre	119
+mévendant		mévendre	35
+mévende		mévendre	89
+mévendent		mévendre	117
+mévendes		mévendre	76
+mévendez		mévendre	30
+mévendiez		mévendre	110
+mévendîmes		mévendre	3
+mévendions		mévendre	111
+mévendirent		mévendre	24
+mévendis		mévendre	22
+mévendisse		mévendre	6
+mévendissent		mévendre	17
+mévendisses		mévendre	8
+mévendissiez		mévendre	14
+mévendissions		mévendre	25
+mévendit		mévendre	33
+mévendîtes		mévendre	2
+mévendons		mévendre	27
+mévendra		mévendre	21
+mévendrai		mévendre	16
+mévendraient		mévendre	108
+mévendrais		mévendre	106
+mévendrait		mévendre	112
+mévendras		mévendre	7
+mévendre	Vendre une chose à perte.
+mévendrez		mévendre	5
+mévendriez		mévendre	99
+mévendrions		mévendre	101
+mévendrons		mévendre	10
+mévendront		mévendre	15
+mévends		mévendre	79
+mévendu		mévendre	46
+mévendue		mévendre	37
+mévendues		mévendre	36
+mévendus		mévendre	38
+mévente	Vente à trop bas prix.
+méventes		mévente	0
+mexicain	Qui se rapporte au Mexique, à ses habitants.
+mexicaine	Action de police faite sans s'occuper du cadre légal, et que l'on cherche à justifier légalement a posteriori.
+mexicaines		mexicain	1
+mexicains		mexicain	0
+mézail	Partie mobile du milieu et devant du heaume, puis de l'armet, qui protège le visage.
+mézails		mézail	0
+mezcal	Boisson alcoolisée mexicaine extraite de l’agave.
+mezcals		mezcal	0
+mézé	Amuse-gueule apéritif grec, libanais ou turc, semblable aux tapas espagnoles.
+mézés		mézé	0
+mézig	Autre orthographe de mézigue.
+mézigue	Moi.
+mezoued	Type de cornemuse traditionnelle dont le sac est en peau de chèvre, originaire de Tunisie et qui s’est répandu dans le Maghreb, notamment en Algérie et en Liby…
+mezoueds		mezoued	0
+mezouza	Variante orthographique de mezouzah.
+mezouzah	Objet de culte qui consiste en un rouleau de parchemin comportant deux passages bibliques, emboîté dans un réceptacle, et fixé au linteau (ou aux poteaux) des …
+mezouzahs		mezouzah	0
+mezouzas		mezouza	0
+mezzanine	Plancher intermédiaire n’occupant pas toute la surface de la pièce qu’il surplombe.
+mezzanines		mezzanine	0
+mezzé	Ensemble de petits plats constituant une tradition culinaire levantine.
+mezzes		mezze	0
+mezzo	Mot italien qui veut dire « moyen » et qui s’emploie dans les expressions suivantes :
+mezzos		mezzo	0

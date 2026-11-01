@@ -1,0 +1,88 @@
+odalisque	Femme de chambre ou esclave qui était au service des femmes d'un harem.
+odalisques		odalisque	0
+ode	Poème lyrique (donc chanté) composé d’une strophe, d’une antistrophe et d’une épode, que le chœur chantait en décrivant certaines évolutions.
+odelette	Petite ode du genre gracieux.
+odelettes		odelette	0
+odéon	Édifice destiné, chez les anciens, à la répétition de la musique qui devait être chantée sur le théâtre.
+odéons		odéon	0
+odes		ode	0
+odeur	Sensation que produisent sur l’odorat les émanations des corps.
+odeurs		odeur	0
+odieuse		odieux	109
+odieusement	D’une manière odieuse.
+odieuses		odieux	1
+odieux	Qui excite la haine, l’aversion, la réprobation, l’indignation.
+odologie	Étude scientifique de la voix chantée.
+odomètre	Appareil mécanique ou électronique mesurant les distances parcourues.
+odomètres		odomètre	0
+odométrie	Mesure de distance à l’aide d’un odomètre.
+odométries		odométrie	0
+odonate	Insecte de l’ordre des Odonata qui regroupe les libellules (Anisoptera) et les demoiselles (Zygoptera).
+odonates		odonate	0
+odontalgie	Douleur des dents.
+odontalgies		odontalgie	0
+odontalgique	Qui a rapport à l’odontalgie.
+odontalgiques		odontalgique	0
+odontocète	Cétacé à dents.
+odontocètes		odontocète	0
+odontoïde	Qui a la forme d’une dent.
+odontoïdes		odontoïde	0
+odontologie	Étude et pratique médicale et chirurgicale des soins dentaires.
+odontologies		odontologie	0
+odontologique	Relatif à l’odontologie.
+odontologiques		odontologique	0
+odontologiste	Celui qui écrit ou a écrit sur les dents.
+odontologistes		odontologiste	0
+odontomètre	Dispositif servant à mesurer la dentelure des timbres (nombre de dents sur une longueur donnée).
+odontomètres		odontomètre	0
+odorant	Qui exhale une odeur.
+odorante		odorant	23
+odorantes		odorant	1
+odorants		odorant	9
+odorat	Sens qui perçoit les odeurs.
+odorats		odorat	0
+odoriférant	Qui répand une odeur agréable.
+odoriférante		odoriférant	23
+odoriférantes		odoriférant	1
+odoriférants		odoriférant	9
+odorisa		odoriser	33
+odorisai		odoriser	22
+odorisaient		odoriser	32
+odorisais		odoriser	29
+odorisait		odoriser	34
+odorisâmes		odoriser	3
+odorisant		odoriser	35
+odorisas		odoriser	12
+odorisasse		odoriser	6
+odorisassent		odoriser	17
+odorisasses		odoriser	8
+odorisassiez		odoriser	14
+odorisassions		odoriser	25
+odorisât		odoriser	20
+odorisâtes		odoriser	2
+odorisation	Action d’odoriser, de donner une odeur à.
+odorisations		odorisation	0
+odorisé		odoriser	46
+odorisée		odoriser	37
+odorisées		odoriser	36
+odorisent		odoriser	31
+odoriser	Donner une odeur à.
+odorisera		odoriser	21
+odoriserai		odoriser	16
+odoriseraient		odoriser	28
+odoriserais		odoriser	18
+odoriserait		odoriser	26
+odoriseras		odoriser	7
+odorisèrent		odoriser	24
+odoriserez		odoriser	5
+odoriseriez		odoriser	4
+odoriserions		odoriser	11
+odoriserons		odoriser	10
+odoriseront		odoriser	15
+odorisés		odoriser	38
+odorisez		odoriser	30
+odorisiez		odoriser	13
+odorisions		odoriser	19
+odorisons		odoriser	27
+odyssée	Voyage maritime, très long et riche en péripéties.
+odyssées		odyssée	0

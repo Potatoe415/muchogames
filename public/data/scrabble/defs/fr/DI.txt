@@ -1,0 +1,4593 @@
+dia	Cri que les charretiers poussaient pour faire aller leurs chevaux vers la gauche.
+diabète	Nom donné à plusieurs pathologies donnant un dérèglement du contrôle de la glycémie.
+diabètes		diabète	0
+diabétique	Qui tient du diabète.
+diabétiques		diabétique	0
+diabétologie	Branche de l’endocrinologie qui se consacre à l’étude du diabète.
+diabétologies		diabétologie	0
+diabétologue	Spécialiste du diabète.
+diabétologues		diabétologue	0
+diable	Créature infernale.
+diablement	En diable, excessivement.
+diablerie	Maléfice qui vient du diable ou qu’on lui attribue.
+diableries		diablerie	0
+diables		diable	0
+diablesse	Démone, diable femelle.
+diablesses		diablesse	0
+diablotin	Petit diable.
+diablotine	Petite diablesse.
+diablotines		diablotine	0
+diablotins		diablotin	0
+diabolique	Qui est relatif au diable, qui vient du diable, qui ressemble au diable.
+diaboliquement	Avec un esprit, une méchanceté diabolique.
+diaboliques		diabolique	0
+diabolisa		diaboliser	33
+diabolisai		diaboliser	22
+diabolisaient		diaboliser	32
+diabolisais		diaboliser	29
+diabolisait		diaboliser	34
+diabolisâmes		diaboliser	3
+diabolisant		diaboliser	35
+diabolisas		diaboliser	12
+diabolisasse		diaboliser	6
+diabolisassent		diaboliser	17
+diabolisasses		diaboliser	8
+diabolisassiez		diaboliser	14
+diabolisassions		diaboliser	25
+diabolisât		diaboliser	20
+diabolisâtes		diaboliser	2
+diabolisation	Action de prêter des intentions diaboliques, malfaisantes ou pernicieuses à quelqu'un ou à quelque chose.
+diabolisations		diabolisation	0
+diabolisé		diaboliser	56
+diabolisée		diaboliser	45
+diabolisées		diaboliser	36
+diabolisent		diaboliser	41
+diaboliser	Prêter un rôle, des comportements ou des intentions diaboliques ou pernicieuses.
+diabolisera		diaboliser	21
+diaboliserai		diaboliser	16
+diaboliseraient		diaboliser	28
+diaboliserais		diaboliser	18
+diaboliserait		diaboliser	26
+diaboliseras		diaboliser	7
+diabolisèrent		diaboliser	24
+diaboliserez		diaboliser	5
+diaboliseriez		diaboliser	4
+diaboliserions		diaboliser	11
+diaboliserons		diaboliser	10
+diaboliseront		diaboliser	15
+diabolisés		diaboliser	53
+diabolisez		diaboliser	30
+diabolisiez		diaboliser	13
+diabolisions		diaboliser	19
+diabolisons		diaboliser	27
+diabolo	Instrument de jonglerie ressemblant à deux cônes reliés à leur extrémité la plus fine par un axe.
+diabolos		diabolo	0
+diachronie	Transformations des faits linguistiques dans le temps.
+diachronies		diachronie	0
+diachronique	Qui est relatif à la diachronie, à l’évolution d’un fait dans le temps.
+diachroniques		diachronique	0
+diachylon	Emplâtre considéré comme résolutif, composé de savon de plomb, de gommes-résines, de cire jaune, de poix de Bourgogne et de térébenthine de mélèze.
+diachylons		diachylon	0
+diachylum	Emplâtre considéré comme résolutif, composé de savon de plomb, de gommes-résines, de cire jaune, de poix de Bourgogne et de térébenthine de mélèze.
+diachylums		diachylum	0
+diacide	Corps chimique comportant deux fois la fonction acide, qui a la possibilité de libérer deux ions H+ par opposition aux monoacides qui ne peuvent en libérer qu’…
+diacides		diacide	0
+diaclase	Fissure dans une roche sans que les parties disjointes s'éloignent l'une de l'autre (comme pour une faille).
+diaclases		diaclase	0
+diacode	Fait avec du pavot.
+diacodes		diacode	0
+diaconal	Relatif au diacre.
+diaconale		diaconal	109
+diaconales		diaconal	1
+diaconat	Le premier des ordres sacrés, ou l’office de diacre, de l’Église catholique romaine.
+diaconats		diaconat	0
+diaconaux		diaconal	9
+diaconesse	Femme qui, dans la primitive église, était employée à certains ministères ecclésiastiques.
+diaconesses		diaconesse	0
+diacoustique	Branche de la physique, qui étudie la réfraction des sons.
+diacoustiques		diacoustique	0
+diacre	Celui qui, dans l’Église catholique romaine, l’Église catholique-chrétienne ou dans l’Église copte, est promu au premier des ordres sacrés.
+diacres		diacre	0
+diacritique	Qui sert à distinguer plusieurs lettres écrites presque de la même façon, en parlant des signes graphiques qui ont par exemple pour but d’empêcher, pour les ye…
+diacritiques		diacritique	0
+diadème	Sorte de bandeau qui était la marque de la royauté chez les Anciens et dont les rois et les reines se ceignaient le front.
+diadèmes		diadème	0
+diadoque	Successeur.
+diadoques		diadoque	0
+diagenèse	Ensemble des processus de transformation de sédiments en une roche sédimentaire.
+diagenèses		diagenèse	0
+diagnose	Connaissance qui s’acquiert par l’observation des signes diagnostiques.
+diagnoses		diagnose	0
+diagnostic	Partie de la médecine qui a pour objet la distinction des maladies, l'identification d’une maladie à partir de symptômes.
+diagnosticien	Médecin habitué à déterminer l’affection dont souffre ses patients.
+diagnosticienne	Médecin habituée à déterminer l’affection dont souffre ses patients.
+diagnosticiens		diagnosticien	0
+diagnostics		diagnostic	0
+diagnostiqua		diagnostiquer	39
+diagnostiquai		diagnostiquer	22
+diagnostiquais		diagnostiquer	29
+diagnostiquait		diagnostiquer	40
+diagnostiquâmes		diagnostiquer	3
+diagnostiquant		diagnostiquer	43
+diagnostiquas		diagnostiquer	12
+diagnostiquasse		diagnostiquer	6
+diagnostiquât		diagnostiquer	20
+diagnostiquâtes		diagnostiquer	2
+diagnostique	Qui sert à établir le diagnostic d’une maladie.
+diagnostiquée		diagnostiquer	37
+diagnostiquées		diagnostiquer	51
+diagnostiquent		diagnostiquer	31
+diagnostiquer	Reconnaitre une maladie par ses symptômes.
+diagnostiquera		diagnostiquer	21
+diagnostiquerai		diagnostiquer	16
+diagnostiqueras		diagnostiquer	7
+diagnostiquerez		diagnostiquer	5
+diagnostiqués		diagnostiquer	53
+diagnostiqueur	Personne qui pose un diagnostic, médical, technique ou autre.
+diagnostiqueurs		diagnostiqueur	0
+diagnostiqueuse	Personne qui pose un diagnostic, médical, technique ou autre.
+diagnostiquez		diagnostiquer	47
+diagnostiquiez		diagnostiquer	13
+diagnostiquions		diagnostiquer	19
+diagnostiquons		diagnostiquer	27
+diagonal	Qui va d’un angle d’une figure rectiligne à l’angle opposé.
+diagonale	Ligne qui passe par deux sommets non consécutifs d’un polygone.
+diagonalement	D’une manière diagonale.
+diagonales		diagonal	1
+diagonalisa		diagonaliser	33
+diagonalisable	Que l’on peut diagonaliser.
+diagonalisables		diagonalisable	0
+diagonalisai		diagonaliser	22
+diagonalisaient		diagonaliser	32
+diagonalisais		diagonaliser	29
+diagonalisait		diagonaliser	34
+diagonalisâmes		diagonaliser	3
+diagonalisant		diagonaliser	35
+diagonalisas		diagonaliser	12
+diagonalisasse		diagonaliser	6
+diagonalisasses		diagonaliser	8
+diagonalisât		diagonaliser	20
+diagonalisâtes		diagonaliser	2
+diagonalisation	Action de diagonaliser une matrice carrée.
+diagonalisé		diagonaliser	46
+diagonalisée		diagonaliser	37
+diagonalisées		diagonaliser	36
+diagonalisent		diagonaliser	31
+diagonaliser	Rendre (quelque chose, en particulier une matrice...) diagonal.
+diagonalisera		diagonaliser	21
+diagonaliserai		diagonaliser	16
+diagonaliserais		diagonaliser	18
+diagonaliserait		diagonaliser	26
+diagonaliseras		diagonaliser	7
+diagonalisèrent		diagonaliser	24
+diagonaliserez		diagonaliser	5
+diagonaliseriez		diagonaliser	4
+diagonaliserons		diagonaliser	10
+diagonaliseront		diagonaliser	15
+diagonalisés		diagonaliser	38
+diagonalisez		diagonaliser	30
+diagonalisiez		diagonaliser	13
+diagonalisions		diagonaliser	19
+diagonalisons		diagonaliser	27
+diagonaux		diagonal	9
+diagramme	Tracé géométrique sommaire de la forme essentielle ou générale d’un objet.
+diagrammes		diagramme	0
+diagraphe	Instrument servant à transporter sur le papier la représentation des objets, sans connaître le dessin et la perspective.
+diagraphes		diagraphe	0
+diagraphie	Art de dessiner avec le diagraphe.
+diagraphies		diagraphie	0
+diakène	Composé de deux akènes.
+diakènes		diakène	0
+dial	Corps qui a deux fonctions aldéhyde.
+dialcool	Corps chimique dont la molécule compte deux fonctions alcool.
+dialcools		dialcool	0
+dialdéhyde	Corps qui a deux fonctions aldéhyde.
+dialdéhydes		dialdéhyde	0
+dialectal	Relatif au dialecte, au parler régional.
+dialectale		dialectal	23
+dialectales		dialectal	1
+dialectalisme	Tournure ou mot dialectal introduit dans la langue de référence.
+dialectalismes		dialectalisme	0
+dialectaux		dialectal	9
+dialecte	Proche parent d’une langue dominante ou officielle mais qui s’en distingue et qui, avec cette langue dominante, étaient autrefois variétés régionales l’une de …
+dialectes		dialecte	0
+dialecticien	Celui qui en pensant, parlant ou écrivant, applique les procédés de la dialectique.
+dialecticienne	Celle qui en pensant, parlant ou écrivant, applique les procédés de la dialectique.
+dialecticiennes		dialecticienne	0
+dialecticiens		dialecticien	0
+dialectique	Qui a rapport aux règles du raisonnement.
+dialectiquement	Dʼune manière dialectique, en dialecticien.
+dialectiques		dialectique	0
+dialectisa		dialectiser	33
+dialectisai		dialectiser	22
+dialectisaient		dialectiser	32
+dialectisais		dialectiser	29
+dialectisait		dialectiser	34
+dialectisâmes		dialectiser	3
+dialectisant		dialectiser	35
+dialectisas		dialectiser	12
+dialectisasse		dialectiser	6
+dialectisassent		dialectiser	17
+dialectisasses		dialectiser	8
+dialectisassiez		dialectiser	14
+dialectisât		dialectiser	20
+dialectisâtes		dialectiser	2
+dialectisé		dialectiser	46
+dialectisée		dialectiser	37
+dialectisées		dialectiser	36
+dialectisent		dialectiser	31
+dialectiser	Traiter par une approche dialectique.
+dialectisera		dialectiser	21
+dialectiserai		dialectiser	16
+dialectiserais		dialectiser	18
+dialectiserait		dialectiser	26
+dialectiseras		dialectiser	7
+dialectisèrent		dialectiser	24
+dialectiserez		dialectiser	5
+dialectiseriez		dialectiser	4
+dialectiserions		dialectiser	11
+dialectiserons		dialectiser	10
+dialectiseront		dialectiser	15
+dialectisés		dialectiser	38
+dialectisez		dialectiser	30
+dialectisiez		dialectiser	13
+dialectisions		dialectiser	19
+dialectisons		dialectiser	27
+dialectologie	Branche de la linguistique qui étudie la variation diatopique du langage.
+dialectologies		dialectologie	0
+dialectologique	Relatif à la dialectologie.
+dialectologue	Linguiste spécialiste des dialectes.
+dialectologues		dialectologue	0
+dialectophone	Qui parle un dialecte.
+dialectophones		dialectophone	0
+diallèle	Paralogisme dans lequel est donné pour preuve d'une proposition une seconde proposition que l’on prouve elle-même par la première.
+diallèles		diallèle	0
+dialogique	Qui a la forme du dialogue.
+dialogiques		dialogique	0
+dialogua		dialoguer	33
+dialoguai		dialoguer	55
+dialoguaient		dialoguer	42
+dialoguais		dialoguer	29
+dialoguait		dialoguer	40
+dialoguâmes		dialoguer	3
+dialoguant		dialoguer	43
+dialoguas		dialoguer	12
+dialoguasse		dialoguer	6
+dialoguassent		dialoguer	17
+dialoguasses		dialoguer	8
+dialoguassiez		dialoguer	14
+dialoguassions		dialoguer	25
+dialoguât		dialoguer	62
+dialoguâtes		dialoguer	2
+dialogue	Entretien entre deux ou plusieurs personnes.
+dialoguée		dialogué	23
+dialoguées		dialogué	1
+dialoguent		dialoguer	41
+dialoguer	Converser ou discuter avec une autre personne.
+dialoguera		dialoguer	44
+dialoguerai		dialoguer	16
+dialogueraient		dialoguer	28
+dialoguerais		dialoguer	18
+dialoguerait		dialoguer	26
+dialogueras		dialoguer	7
+dialoguèrent		dialoguer	24
+dialoguerez		dialoguer	5
+dialogueriez		dialoguer	4
+dialoguerions		dialoguer	11
+dialoguerons		dialoguer	10
+dialogueront		dialoguer	15
+dialogues		dialogue	0
+dialoguez		dialoguer	47
+dialoguiez		dialoguer	13
+dialoguions		dialoguer	19
+dialoguiste	Écrivain, scénariste spécialisé dans l'écriture des dialogues.
+dialoguistes		dialoguiste	0
+dialoguons		dialoguer	59
+dials		dial	0
+dialypétale	Se dit des fleurs et des plantes dont la corolle est faite de pétales séparés.
+dialypétales		dialypétale	0
+dialysa		dialyser	33
+dialysai		dialyser	22
+dialysaient		dialyser	32
+dialysais		dialyser	29
+dialysait		dialyser	34
+dialysâmes		dialyser	3
+dialysant		dialyser	35
+dialysas		dialyser	12
+dialysasse		dialyser	6
+dialysassent		dialyser	17
+dialysasses		dialyser	8
+dialysassiez		dialyser	14
+dialysassions		dialyser	25
+dialysât		dialyser	20
+dialysâtes		dialyser	2
+dialyse	Épuration de liquides via un procédé se fondant sur l’osmose des corps que l’on veut séparer.
+dialysée	Femme qui est soignée par dialyse.
+dialysées		dialyser	36
+dialysent		dialyser	31
+dialysépale	Dont les sépales ou pièces du calice sont libres.
+dialysépales		dialysépale	0
+dialyser	Procéder à une dialyse.
+dialysera		dialyser	21
+dialyserai		dialyser	16
+dialyseraient		dialyser	28
+dialyserais		dialyser	18
+dialyserait		dialyser	26
+dialyseras		dialyser	7
+dialysèrent		dialyser	24
+dialyserez		dialyser	5
+dialyseriez		dialyser	4
+dialyserions		dialyser	11
+dialyserons		dialyser	10
+dialyseront		dialyser	15
+dialyses		dialyse	0
+dialyseur	Appareil ou procédé servant à la dialyse.
+dialyseurs		dialyseur	0
+dialysez		dialyser	30
+dialysiez		dialyser	13
+dialysions		dialyser	19
+dialysons		dialyser	27
+diam	Diamant.
+diamagnétique	Qualifie un matériau très faiblement influencé par un champ magnétique.
+diamagnétiques		diamagnétique	0
+diamagnétisme	Ensemble de phénomènes offerts par les corps diamagnétiques.
+diamagnétismes		diamagnétisme	0
+diamant	Corps simple le plus dur du règne minéral, constitué de carbone cristallisé dans le système cubique, utilisé en joaillerie et dans l’industrie.
+diamanta		diamanter	33
+diamantai		diamanter	22
+diamantaient		diamanter	32
+diamantaire	Personne qui vend ou qui taille des diamants.
+diamantaires		diamantaire	0
+diamantais		diamanter	29
+diamantait		diamanter	34
+diamantâmes		diamanter	3
+diamantant		diamanter	35
+diamantas		diamanter	12
+diamantasse		diamanter	6
+diamantassent		diamanter	17
+diamantasses		diamanter	8
+diamantassiez		diamanter	14
+diamantassions		diamanter	25
+diamantât		diamanter	20
+diamantâtes		diamanter	2
+diamante		diamanter	64
+diamantée		diamanter	45
+diamantées		diamanter	36
+diamantent		diamanter	31
+diamanter	Donner l’éclat du diamant à (quelque chose).
+diamantera		diamanter	21
+diamanterai		diamanter	16
+diamanteraient		diamanter	28
+diamanterais		diamanter	18
+diamanterait		diamanter	26
+diamanteras		diamanter	7
+diamantèrent		diamanter	24
+diamanterez		diamanter	5
+diamanteriez		diamanter	4
+diamanterions		diamanter	11
+diamanterons		diamanter	10
+diamanteront		diamanter	15
+diamantés	Masculin pluriel de diamanté.
+diamantez		diamanter	30
+diamantiez		diamanter	13
+diamantifère	Qui contient ou qui produit du diamant.
+diamantifères		diamantifère	0
+diamantin	Qui a l’éclat ou la dureté du diamant.
+diamantine	Poudre fine de diamant, pour le polissage en horlogerie.
+diamantines		diamantine	0
+diamantins		diamantin	9
+diamantions		diamanter	19
+diamantons		diamanter	27
+diamants		diamant	0
+diamétral	Qui appartient au diamètre.
+diamétrale		diamétral	23
+diamétralement	D’une extrémité du diamètre à l’autre.
+diamétrales		diamétral	1
+diamétraux		diamétral	9
+diamètre	Ligne droite qui va d’un point de la circonférence d’un cercle (ou d’une sphère) à un autre point en passant par le centre.
+diamètres		diamètre	0
+diamide	Composé chimique ayant deux groupes amides.
+diamides		diamide	0
+diamidophénol	Corps dérivé du phénol, employé comme révélateur en photographie.
+diamidophénols		diamidophénol	0
+diamine	Composé chimique comportant deux fois la fonction amine.
+diamines		diamine	0
+diams	Diamant, diam.
+diandre	Qui a deux étamines.
+diandres		diandre	0
+diandrie	Classe du système de Linné, qui renferme les plantes à deux étamines.
+diandries		diandrie	0
+diane	La lune.
+dianes		diane	0
+diantre	Interjection, qui est tantôt une sorte d’imprécation, tantôt un signe d’étonnement, d’admiration.
+diantrement	Marque le plus souvent l’affirmation énergique ou l’étonnement.
+diapason	Étendue des sons qu’une voix ou un instrument peut parcourir, depuis le ton le plus bas jusqu’au plus haut.
+diapasons		diapason	0
+diapause	Arrêt temporaire génétiquement déterminé, chez les insectes, de l'activité ou du développement durant l’hiver, la saison sèche, ou encore en cas de carence ali…
+diapauses		diapause	0
+diapédèse	Migration des globules blancs du sang hors des capillaires.
+diapédèses		diapédèse	0
+diaphane	Qui laisse passer à travers soi les rayons lumineux.
+diaphanéité	Propriété de ce qui est diaphane.
+diaphanéités		diaphanéité	0
+diaphanes		diaphane	0
+diaphanoscopie	Procédé dʼéclairage de certaines parties internes du corps, permettant de les examiner par transparence.
+diaphanoscopies		diaphanoscopie	0
+diaphonie	Dissonance, par opposition à symphonie.
+diaphonies		diaphonie	0
+diaphorèse	Transpiration, sudation de la peau.
+diaphorèses		diaphorèse	0
+diaphorétique	Qui facilite la transpiration.
+diaphorétiques	Pluriel de diaphorétique.
+diaphragma		diaphragmer	39
+diaphragmai		diaphragmer	22
+diaphragmaient		diaphragmer	32
+diaphragmais		diaphragmer	29
+diaphragmait		diaphragmer	34
+diaphragmâmes		diaphragmer	3
+diaphragmant		diaphragmer	35
+diaphragmas		diaphragmer	12
+diaphragmasse		diaphragmer	6
+diaphragmassent		diaphragmer	17
+diaphragmasses		diaphragmer	8
+diaphragmassiez		diaphragmer	14
+diaphragmât		diaphragmer	20
+diaphragmâtes		diaphragmer	2
+diaphragmatique	Relatif au diaphragme.
+diaphragme	Paroi musculaire large, mince, convexe et animée de mouvements rythmiques, située entre le thorax et l’abdomen.
+diaphragmée		diaphragmer	37
+diaphragmées		diaphragmer	36
+diaphragment		diaphragmer	31
+diaphragmer	Ajuster un diaphragme vers une ouverture plus petite.
+diaphragmera		diaphragmer	21
+diaphragmerai		diaphragmer	16
+diaphragmerais		diaphragmer	18
+diaphragmerait		diaphragmer	26
+diaphragmeras		diaphragmer	7
+diaphragmèrent		diaphragmer	24
+diaphragmerez		diaphragmer	5
+diaphragmeriez		diaphragmer	4
+diaphragmerions		diaphragmer	11
+diaphragmerons		diaphragmer	10
+diaphragmeront		diaphragmer	15
+diaphragmes		diaphragme	0
+diaphragmez		diaphragmer	30
+diaphragmiez		diaphragmer	13
+diaphragmions		diaphragmer	19
+diaphragmons		diaphragmer	27
+diaphyse	Forme tubulaire qui constitue la portion centrale du corps d'un os long.
+diaphyses		diaphyse	0
+diapir	Type d’intrusion impliquant une structure plus ou moins globuleuse, résultant de la remontée de roches plus légères à travers des roches plus denses.
+diapirs		diapir	0
+diapo	Cadre en plastique ou en carton qui contient un morceau de film inversible montrant une photographie.
+diaporama	Ensemble de diapositives.
+diaporamas		diaporama	0
+diapos		diapo	0
+diapositive	Cadre en plastique ou en carton qui contient un morceau de film inversible montrant une photographie.
+diapositives		diapositive	0
+diapra		diaprer	33
+diaprai		diaprer	22
+diapraient		diaprer	32
+diaprais		diaprer	29
+diaprait		diaprer	34
+diaprâmes		diaprer	3
+diaprant		diaprer	35
+diapras		diaprer	12
+diaprasse		diaprer	6
+diaprassent		diaprer	17
+diaprasses		diaprer	8
+diaprassiez		diaprer	14
+diaprassions		diaprer	25
+diaprât		diaprer	20
+diaprâtes		diaprer	2
+diapré	Varié de plusieurs couleurs.
+diaprée		diapré	23
+diaprées		diapré	1
+diaprent		diaprer	31
+diaprer	Varier de plusieurs couleurs.
+diaprera		diaprer	21
+diaprerai		diaprer	16
+diapreraient		diaprer	28
+diaprerais		diaprer	18
+diaprerait		diaprer	26
+diapreras		diaprer	7
+diaprèrent		diaprer	24
+diaprerez		diaprer	5
+diapreriez		diaprer	4
+diaprerions		diaprer	11
+diaprerons		diaprer	10
+diapreront		diaprer	15
+diaprés		diapré	9
+diaprez		diaprer	30
+diapriez		diaprer	13
+diaprions		diaprer	19
+diaprons		diaprer	27
+diaprure	Diaprerie, irisation, variation de couleurs.
+diaprures		diaprure	0
+diariste	Personne tenant un journal intime.
+diaristes		diariste	0
+diarrhée	Maladie caractérisée par des évacuations de selles, liquides et fréquentes, et qui est ordinairement due à l’inflammation de l’intestin.
+diarrhées		diarrhée	0
+diarrhéique	Personne ayant la diarrhée.
+diarrhéiques		diarrhéique	0
+diarthrose	Articulation mobile, comme celles du coude et du genou, caractérisée par un cartilage articulaire, la présence de synovie et une capsule fibreuse entourant le …
+diarthroses		diarthrose	0
+dias		dia	0
+diascope	Rétroprojecteur qui permet de projeter des documents réalisés sur supports transparent.
+diascopes		diascope	0
+diascopie	Synonyme de diaphanoscopie.
+diascopies		diascopie	0
+diaspora	Communauté juive installée dans un pays quelconque.
+diasporas		diaspora	0
+diaspore	Espèce minérale de formule AlO(OH).
+diaspores	Pluriel de diaspore (sens utilisé en minéralogie).	diaspore
+diasporique	Relatif à une diaspora.
+diasporiques		diasporique	0
+diastase	Écartement, séparation de deux os qui étaient contigus, et particulièrement du tibia et du péroné, du cubitus et du radius.
+diastases		diastase	0
+diastasique	Enzymatique.
+diastasiques		diastasique	0
+diastème	Écartement particulièrement important des dents chez un individu ou un animal.
+diastèmes		diastème	0
+diastole	Mouvement de dilatation du cœur et des artères qui alterne avec le mouvement de contraction dit systole.
+diastoles		diastole	0
+diastolique	Relatif à la diastole.
+diastoliques		diastolique	0
+diathèque	Établissement, généralement public, qui conserve et donne accès à des diapositives.
+diathèques		diathèque	0
+diathermane	Se dit d’un matériau, ou de la frontière d’un système thermodynamique, perméable à la chaleur si celle-ci est transmise par rayonnement.
+diathermanéité	Qualité de ce qui est diathermane.
+diathermanéités		diathermanéité	0
+diathermanes		diathermane	0
+diathermansie	Faculté qu'ont certains rayons de chaleur de traverser plus facilement que d'autres un milieu donné, comme certains rayons lumineux traversent avec plus de fac…
+diathermansies		diathermansie	0
+diatherme	Se dit d’un matériau, ou de la frontière d’un système thermodynamique, perméable à la chaleur quel que soit son mode de transmission.
+diathermes		diatherme	0
+diathermie	Type de darsonvalisation permettant d'échauffer certains tissus, de provoquer une vasodilatation.
+diathermies		diathermie	0
+diathèse	Disposition générale d’une personne à être souvent ou habituellement affectée de telle ou telle maladie.
+diathèses		diathèse	0
+diathésique	Qui dépend d’une diathèse antécédente.
+diathésiques		diathésique	0
+diatomée	Organisme unicellulaire et planctonique, souvent associé aux microalgues, enfermé entre deux valves siliceuses : le frustule.
+diatomées		diatomée	0
+diatomique	Se dit d’un atome qui a deux points d’attraction, qui peut se combiner avec un ou deux équivalents.
+diatomiques		diatomique	0
+diatomite	Roche sédimentaire siliceuse, poreuse et friable, formée par l’accumulation de valves de diatomées (frustules).
+diatomites		diatomite	0
+diatonique	Qui procède par les tons naturels de la gamme.
+diatoniquement	Par degrés diatoniques.
+diatoniques		diatonique	0
+diatribe	Critique amère et violente.
+diatribes		diatribe	0
+diaule	Double flûte.
+diaules		diaule	0
+diazépam	Composé chimique de formule brute C₁₆H₁₃ClN₂O, utilisé en pharmacologie pour ses propriétés anxiolytiques et anticonvulsivantes.
+diazote	Molécule diazotée, formée de deux atomes d’azote (formule N₂), elle entre à 78 % dans la composition de l’air.
+diazotée		diazoté	23
+diazotées		diazoté	1
+diazotés		diazoté	9
+dibase	Corps ayant deux fois la fonction base.
+dibases		dibase	0
+dibi	Viande grillée au feu de bois et accompagnée d’oignons.
+dibis		dibi	0
+dibiterie	Établissement de restauration populaire spécialisé dans la préparation du dibi (viande grillée au feu de bois).
+dibiteries		dibiterie	0
+dibrome	Molécule composée de deux atomes de brome, de formule brute Br₂.
+dibromes		dibrome	0
+dicarbonylé	Qualifie un composé qui porte deux fonctions carbonyles.
+dicarbonylée		dicarbonylé	23
+dicarbonylées		dicarbonylé	1
+dicarbonylés		dicarbonylé	9
+dicaryon	Cellule de champignon qui contient deux noyaux haploïdes avant de subir, par la suite, une caryogamie.
+dicaryons		dicaryon	0
+dicastère	À Athènes, chacune des dix sections du tribunal populaire, appelé tribunal des Héliastes.
+dicastères		dicastère	0
+dicétone	Corps qui a deux fonctions caractéristiques de la cétone.
+dicétones		dicétone	0
+dichlore	Composé chimique, gazeux dans des conditions normales de température et de pression, de couleur verdâtre, souvent appelé chlore, très toxique, de formule Cl₂.
+dichlores		dichlore	0
+dichlorure	Terme de nomenclature chimique indiquant que le composé contient deux ions chlorure ou deux atomes de chlore.
+dichlorures		dichlorure	0
+dichogame	Dont les fleurs ou les organes d'une même fleur mâles et femelles ne se développent pas en même temps.
+dichogames		dichogame	0
+dichogamie	Mode de fécondation dans les plantes unisexuées, dont les fleurs mâles et les fleurs femelles ne se développent pas en même temps.
+dichogamies		dichogamie	0
+dichotome	Qui est coupé en deux.
+dichotomes		dichotome	0
+dichotomie	État de la lune quand la moitié seulement de son disque est éclairée par le soleil.
+dichotomies		dichotomie	0
+dichotomique	Relatif à la dichotomie, coupé en deux.
+dichotomiques		dichotomique	0
+dichroïque	Qui a la propriété de prendre une couleur différente suivant l’angle sous lequel on le regarde.
+dichroïques		dichroïque	0
+dichroïsme	Propriété physique que possèdent certaines substances de présenter des colorations différentes suivant les circonstances dʼobservation.
+dichroïsmes		dichroïsme	0
+dichromate	Personne daltonienne, atteinte de dichromatopsie.
+dichromates		dichromate	0
+dichromatique	Bicolore, qui a deux teintes, l’une pouvant être visible à la fois en fonction de la concentration de la substance absorbante, de la profondeur ou de l’épaisse…
+dichromatiques		dichromatique	0
+dichromie	Procédé d'impression utilisant deux couleurs.
+dichromies		dichromie	0
+dicibilité	Qualité de ce qui est dicible.
+dicibilités		dicibilité	0
+dicible	Qui peut être dit.
+dicibles		dicible	0
+dicline	Chez les angiospermes, se dit d'espèces dont les fleurs sont unisexuées, ces espèces sont soit polygames, soit monoïques ou soit dioïques.
+diclines		dicline	0
+dico	Dictionnaire.
+dicos		dico	0
+dicotylédone	Dont les semences ou embryon ont deux lobes ou cotylédons.
+dicotylédones	Classe des végétaux phanérogames angiospermes comprenant les plantes à ovaires renfermant deux cotylédons dans l’embryon de leur graine.
+dicoumarol	Composé chimique de formule brute C₁₉H₁₂O₆.
+dicoumarols		dicoumarol	0
+dicrote	Qualifie une sensation de double pulsation à chaque battement.
+dicrotes		dicrote	123
+dicta		dicter	39
+dictai		dicter	55
+dictaient		dicter	42
+dictais		dicter	52
+dictait		dicter	40
+dictame	Plante aromatique de la famille des labiées, passant chez les Grecs pour être un puissant vulnéraire.
+dictames		dictame	0
+dictant		dicter	43
+dictaphone	Appareil de bureau inventé dans les années 1960 pour pouvoir dicter du courrier sans avoir recours à la présence d’une sténo.
+dictaphones		dictaphone	0
+dictas		dicter	12
+dictasse		dicter	6
+dictassent		dicter	17
+dictasses		dicter	8
+dictassiez		dicter	14
+dictassions		dicter	25
+dictat	Contrainte jugée excessive.
+dictâtes		dicter	2
+dictateur	Magistrat unique et souverain qu’on nommait extraordinairement à Rome, du temps de la République, en certaines circonstances critiques, et au maximum pour six …
+dictateurs		dictateur	0
+dictatorial	Qui a rapport à la dictature, au dictateur.
+dictatoriale	Féminin singulier de dictatorial.
+dictatoriales		dictatorial	1
+dictatoriaux		dictatorial	9
+dictatrice	Celle qui est investie, temporairement ou à perpétuité, d’une autorité souveraine et absolue et de tous les pouvoirs politiques.
+dictatrices		dictatrice	0
+dictature	Dignité, pouvoir du dictateur.
+dictatures		dictature	0
+dicte		dicter	64
+dictée	Action de dicter.
+dictées		dictée	0
+dictent		dicter	41
+dicter	Prononcer plus ou moins lentement et à haute voix ce qu'on fait écrire au fur et à mesure par quelqu'un.
+dictera		dicter	44
+dicterai		dicter	50
+dicteraient		dicter	28
+dicterais		dicter	18
+dicterait		dicter	26
+dicteras		dicter	7
+dictèrent		dicter	48
+dicterez		dicter	58
+dicteriez		dicter	4
+dicterions		dicter	11
+dicterons		dicter	10
+dicteront		dicter	15
+dictes		dicter	77
+dictez		dicter	47
+dictiez		dicter	67
+diction	Manière de dire, de prononcer un discours, des vers, etc.
+dictionnaire	Ouvrage de référence qui répertorie des mots dans un ordre convenu (alphabétique en général) fournissant pour chacun d’eux différentes informations concernant …
+dictionnaires		dictionnaire	0
+dictionnairique	Discipline traitant de la conception des dictionnaires, notamment sur les aspects de présentation de l’information.
+dictionnariste	Rédacteur ou rédactrice d’un dictionnaire.
+dictionnaristes		dictionnariste	0
+dictions		diction	0
+dicton	Mot ou phrase qui a pris la forme d'une référence à l'expérience, au savoir des anciens.
+dictons		dicton	0
+dictyoptère	Insecte du super-ordre des Dictyoptères.
+dictyoptères	Super-ordre d'insectes.
+dictyosome	Ensemble de saccules empilés les uns sur les autres formant l'une des composantes de l'appareil de Golgi, et qui est impliqué dans la modification post-traduct…
+dictyosomes		dictyosome	0
+didacthèque	Bibliothèque composée de didacticiels.
+didacthèques		didacthèque	0
+didacticiel	Logiciel à fonction pédagogique.
+didacticiels		didacticiel	0
+didacticien	Auteur qui écrit un ouvrage didactique.
+didacticienne	Autrice qui écrit un ouvrage didactique.
+didacticiennes		didacticienne	0
+didacticiens		didacticien	0
+didactique	Instructif ; explicatif.
+didactiquement	D’une manière didactique.
+didactiques		didactique	0
+didactisme	Caractère didactique de quelque chose, de quelqu’un.
+didactismes		didactisme	0
+didactyle	Qui a deux doigts, deux orteils.
+didactyles		didactyle	0
+didascalie	Instruction que le poète dramatique donnait aux acteurs sur la manière dont ils devaient jouer ses pièces.
+didascalies		didascalie	0
+didgeridoo	Instrument de musique à vent joué par les Aborigènes du Nord de l’Australie, constitué d’une longue bûche évidée qui produit un son grave et profond.
+didgeridoos		didgeridoo	0
+didjeridoo	Variante orthographique de didgeridoo.
+didjeridoos		didjeridoo	0
+didot	Point typographique d’environ 0,375971 mm.
+didots		didot	0
+diduction	Mouvement latéral exécuté par la mâchoire inférieure chez tous les herbivores pendant la mastication et, chez ceux qui ruminent, pendant la rumination.
+diductions		diduction	0
+didyme	Qui est formé de deux parties plus ou moins arrondies et accouplées.
+didymes		didyme	0
+dièdre	Qui est déterminé par la rencontre de deux plans.
+dièdres		dièdre	0
+dieffenbachia	Genre de la famille des Araceae, plantes aux feuilles tachetées, dont certaines espèces sont cultivées comme plantes d’appartement.
+dieffenbachias		dieffenbachia	0
+diégèse	Ensemble des éléments qui constituent le monde de l’œuvre (événements, personnages, lieux, objets) tel qu’il est posé par le récit.
+diégèses		diégèse	0
+diégétique	Qui relève de la narration
+diégétiques		diégétique	0
+dieldrine	Composé organochloré, de formule brute C₁₂H₈Cl₆O, à usage insecticide.
+dieldrines		dieldrine	0
+diélectrique	Qui ne contient pas de charges électriques susceptibles de se déplacer de façon macroscopique.
+diélectriques		diélectrique	0
+diencéphale	En neuroanatomie des vertébrés, désigne des ensembles de substance grise, de forme ovoïde situés au milieu et à la base du cerveau, soit aussi une partie du tr…
+diencéphales		diencéphale	0
+diencéphalique	Relatif au diencéphale.
+diencéphaliques		diencéphalique	0
+diéne	Hydrocarbure dont la molécule contient deux doubles liaisons entre atomes de carbone.
+diènes		diène	0
+diénique	Relatif aux diènes, hydrocarbures renfermant deux doubles liaisons carbone carbone.
+diéniques		diénique	0
+dieppois	Relatif à Dieppe, commune française située dans le département de la Seine-Maritime.
+dieppoise		dieppois	23
+dieppoises		dieppois	1
+diérèse	Division d’une diphtongue en deux syllabes, le fait que deux voyelles consécutives se prononcent séparément.
+diérèses		diérèse	0
+diergol	Propergol composé de deux ergols liquides stockés séparément, puis injectés dans la chambre de combustion où ils se mélangent.
+diergols		diergol	0
+diésa		diéser	33
+diésai		diéser	22
+diésaient		diéser	32
+diésais		diéser	29
+diésait		diéser	34
+diésâmes		diéser	3
+diésant		diéser	35
+diésas		diéser	12
+diésasse		diéser	6
+diésassent		diéser	17
+diésasses		diéser	8
+diésassiez		diéser	14
+diésassions		diéser	25
+diésât		diéser	20
+diésâtes		diéser	2
+dièse	Symbole graphique, formé de deux doubles barres croisées, (♯) appartenant à la famille des altérations et dont la fonction est d’indiquer sur la partition, que…
+diésée		diéser	37
+diésées		diéser	36
+diesel	Carburant destiné aux moteurs Diesel.
+diésélisa		diéséliser	33
+diésélisai		diéséliser	22
+diésélisaient		diéséliser	32
+diésélisais		diéséliser	29
+diésélisait		diéséliser	34
+diésélisâmes		diéséliser	3
+diésélisant		diéséliser	35
+diésélisas		diéséliser	12
+diésélisasse		diéséliser	6
+diésélisassent		diéséliser	17
+diésélisasses		diéséliser	8
+diésélisassiez		diéséliser	14
+diésélisassions		diéséliser	25
+diésélisât		diéséliser	20
+diésélisâtes		diéséliser	2
+diésélisation	Fait de diéséliser.
+diésélisations		diésélisation	0
+diésélisé		diéséliser	46
+diésélisée		diéséliser	37
+diésélisées		diéséliser	36
+diésélisent		diéséliser	31
+diéséliser	Convertir au diésel.
+diésélisera		diéséliser	21
+diéséliserai		diéséliser	16
+diéséliseraient		diéséliser	28
+diéséliserais		diéséliser	18
+diéséliserait		diéséliser	26
+diéséliseras		diéséliser	7
+diésélisèrent		diéséliser	24
+diéséliserez		diéséliser	5
+diéséliseriez		diéséliser	4
+diéséliserions		diéséliser	11
+diéséliserons		diéséliser	10
+diéséliseront		diéséliser	15
+diésélisés		diéséliser	38
+diésélisez		diéséliser	30
+diésélisiez		diéséliser	13
+diésélisions		diéséliser	19
+diésélisons		diéséliser	27
+dieseliste	Orthographe alternative de diéséliste.
+diésélistes		diéséliste	0
+diesels		diesel	0
+dièsent		diéser	31
+diéser	Marquer d’un dièse ou hausser d’un demi-ton.
+dièsera		diéser	21
+dièserai		diéser	16
+dièseraient		diéser	28
+dièserais		diéser	18
+dièserait		diéser	26
+dièseras		diéser	7
+diésèrent		diéser	24
+dièserez		diéser	5
+dièseriez		diéser	4
+dièserions		diéser	11
+dièserons		diéser	10
+dièseront		diéser	15
+dièses		dièse	0
+diésez		diéser	30
+diésiez		diéser	13
+diésions		diéser	19
+diésons		diéser	27
+diester	Synonyme de « ester méthylique d'huile végétale » (abrégé en EMHV), biodiésel élaboré principalement à partir d’huile de colza.
+diesters		diester	0
+diète	Manière d’employer régulièrement tout ce qui est nécessaire pour conserver la vie, soit dans la santé soit dans la maladie.
+diètes		diète	0
+diététicien	Spécialiste dont le métier est d’équilibrer le régime ou la pratique alimentaire de ses patients.
+diététicienne	Femme spécialiste dont le métier est d’équilibrer le régime ou la pratique alimentaire de ses patients.
+diététiciennes		diététicienne	0
+diététiciens		diététicien	0
+diététique	Qui a rapport au régime de la diète.
+diététiquement	Conformément aux préceptes de la diététique.
+diététiques		diététique	0
+diététiste	Nom donné à une ancienne classe de médecins qui n’employaient dans le traitement des maladies que des moyens diététiques.
+diététistes		diététiste	0
+dieu	Être surnaturel objet de déférence d’une religion.
+dieux		dieu	0
+diffa	Dans les pays du Maghreb, réception faite à des hôtes et marquée par un grand repas.
+diffama		diffamer	33
+diffamai		diffamer	22
+diffamaient		diffamer	32
+diffamais		diffamer	29
+diffamait		diffamer	40
+diffamâmes		diffamer	3
+diffamant	Qui diffame.
+diffamante		diffamant	23
+diffamantes		diffamant	1
+diffamants		diffamant	9
+diffamas		diffamer	12
+diffamasse		diffamer	6
+diffamassent		diffamer	17
+diffamasses		diffamer	8
+diffamassiez		diffamer	14
+diffamassions		diffamer	25
+diffamât		diffamer	20
+diffamâtes		diffamer	2
+diffamateur	Celui qui diffame.
+diffamateurs		diffamateur	0
+diffamation	Action de diffamer ou résultat de cette action.
+diffamations		diffamation	0
+diffamatoire	Qui est de nature à diffamer.
+diffamatoires		diffamatoire	0
+diffamatrice	Celle qui diffame.
+diffamatrices		diffamatrice	0
+diffamé	Privé de queue, en parlant d'un animal.
+diffamée		diffamer	45
+diffamées		diffamer	51
+diffament		diffamer	41
+diffamer	Décrier, chercher à déshonorer, à nuire à la réputation par ses paroles ou par ses écrits.
+diffamera		diffamer	21
+diffamerai		diffamer	16
+diffameraient		diffamer	28
+diffamerais		diffamer	18
+diffamerait		diffamer	26
+diffameras		diffamer	7
+diffamèrent		diffamer	24
+diffamerez		diffamer	5
+diffameriez		diffamer	4
+diffamerions		diffamer	11
+diffamerons		diffamer	10
+diffameront		diffamer	15
+diffamés		diffamé	9
+diffamez		diffamer	30
+diffamiez		diffamer	13
+diffamions		diffamer	19
+diffamons		diffamer	27
+diffas		diffa	0
+différa		différer	39
+différai		différer	22
+différaient		différer	42
+différais		différer	52
+différait		différer	40
+différâmes		différer	3
+différant		différer	43
+différas		différer	12
+différasse		différer	6
+différassent		différer	17
+différasses		différer	8
+différassiez		différer	14
+différassions		différer	25
+différât		différer	62
+différâtes		différer	2
+différé	Diffusion d’une émission après sa diffusion en direct ou après son enregistrement.
+différée		différé	23
+différées		différé	1
+différemment	D’une manière différente.
+différence	Objet de comparaison, de distinction d’une chose par rapport à une autre.
+différences		différence	0
+différencia		différencier	33
+différenciai		différencier	22
+différenciaient		différencier	42
+différenciais		différencier	52
+différenciait		différencier	40
+différenciâmes		différencier	3
+différenciant	Qui différencie.
+différenciante		différenciant	23
+différenciantes		différenciant	1
+différenciants		différenciant	9
+différencias		différencier	12
+différenciasse		différencier	6
+différenciasses		différencier	8
+différenciât		différencier	20
+différenciâtes		différencier	2
+différenciateur	Qui différencie.
+différenciation	Action de différencier, ou résultat de cette action.
+différencié	Marqué par une différence.
+différenciée		différencié	23
+différenciées		différencié	1
+différencient		différencier	41
+différencier	Distinguer par telle ou telle différence.
+différenciera		différencier	44
+différencierai		différencier	16
+différencierais		différencier	18
+différencierait		différencier	49
+différencieras		différencier	7
+différencièrent		différencier	24
+différencierez		différencier	58
+différencieriez		différencier	4
+différencierons		différencier	10
+différencieront		différencier	54
+différenciés		différencier	53
+différenciez		différencier	47
+différenciiez		différencier	13
+différenciions		différencier	19
+différencions		différencier	27
+différend	Différence entre le prix demandé et le prix offert, dans une transaction commerciale.
+différends		différend	0
+différent	Qui n’est pas pareil.
+différente		différent	23
+différentes		différent	1
+différentia		différentier	33
+différentiable	Qui peut être différentié (→ voir différentiel).
+différentiables		différentiable	0
+différentiai		différentier	22
+différentiaient		différentier	32
+différentiais		différentier	29
+différentiait		différentier	34
+différentiâmes		différentier	3
+différentiant		différentier	35
+différentias		différentier	12
+différentiasse		différentier	6
+différentiasses		différentier	8
+différentiât		différentier	20
+différentiâtes		différentier	2
+différentiateur	Variante de différenciateur.
+différentiation	Action de différentier, ou résultat de cette action.
+différentié	Qui a subi l’opération de la différentiation.
+différentiée		différentier	37
+différentiées		différentier	36
+différentiel	Relatif à la différence.
+différentielle	Partie principale de l’accroissement d’une fonction ou d’une application pour un accroissement infiniment petit de la variable.
+différentielles		différentiel	1
+différentiels		différentiel	9
+différentient		différentier	31
+différentier	Calculer la différentielle ou la dérivée d’une fonction.
+différentiera		différentier	21
+différentierai		différentier	16
+différentierais		différentier	18
+différentierait		différentier	26
+différentieras		différentier	7
+différentièrent		différentier	24
+différentierez		différentier	5
+différentieriez		différentier	4
+différentierons		différentier	10
+différentieront		différentier	15
+différentiés		différentier	38
+différentiez		différentier	30
+différentiiez		différentier	13
+différentiions		différentier	19
+différentions		différentier	27
+différents	Plusieurs et distincts les uns des autres.
+différer	Remettre à un autre temps, à plus tard.
+différera		différer	44
+diffèrerai		différer	16
+diffèreraient		différer	28
+différerais		différer	60
+différerait		différer	49
+diffèreras		différer	7
+différèrent		différer	48
+diffèrerez		différer	5
+diffèreriez		différer	4
+diffèrerions		différer	11
+diffèrerons		différer	10
+différeront		différer	54
+différés		différé	0
+différez		différer	47
+différiez		différer	13
+différions		différer	65
+différons		différer	59
+difficile	Non facile, qui nécessite un grand effort.
+difficilement	Avec difficulté, avec peine.
+difficiles		difficile	0
+difficulté	Ce qui rend une chose difficile.
+difficultés		difficulté	0
+difficultueuse		difficultueux	23
+difficultueuses		difficultueux	1
+difficultueux	Qui allègue des difficultés.
+difflua		diffluer	33
+diffluai		diffluer	22
+diffluaient		diffluer	32
+diffluais		diffluer	29
+diffluait		diffluer	34
+diffluâmes		diffluer	3
+diffluant		diffluer	35
+diffluas		diffluer	12
+diffluasse		diffluer	6
+diffluassent		diffluer	17
+diffluasses		diffluer	8
+diffluassiez		diffluer	14
+diffluassions		diffluer	25
+diffluât		diffluer	20
+diffluâtes		diffluer	2
+difflué		diffluer	46
+diffluence	État ou qualité de ce qui est diffluent.
+diffluences		diffluence	0
+diffluent	Qui se répand en liquide.
+diffluente		diffluent	23
+diffluentes		diffluent	1
+diffluents		diffluent	0
+diffluer	S’écouler de tous côtés, se dissoudre.
+diffluera		diffluer	21
+diffluerai		diffluer	16
+difflueraient		diffluer	28
+diffluerais		diffluer	18
+diffluerait		diffluer	26
+difflueras		diffluer	7
+diffluèrent		diffluer	24
+diffluerez		diffluer	5
+difflueriez		diffluer	4
+diffluerions		diffluer	11
+diffluerons		diffluer	10
+difflueront		diffluer	15
+difflues		diffluer	66
+diffluez		diffluer	30
+diffluiez		diffluer	13
+diffluions		diffluer	19
+diffluons		diffluer	27
+difforme	Qui est contrefait, qui n’a pas la figure, la forme ou les proportions qu’il devrait avoir.
+difformer	Rendre difforme, déformer.
+difformés		difformer	38
+difformité	Défaut très apparent dans la forme, dans les proportions.
+difformités		difformité	0
+diffracta		diffracter	33
+diffractai		diffracter	22
+diffractaient		diffracter	32
+diffractais		diffracter	29
+diffractait		diffracter	34
+diffractâmes		diffracter	3
+diffractant		diffracter	35
+diffractas		diffracter	12
+diffractasse		diffracter	6
+diffractassent		diffracter	17
+diffractasses		diffracter	8
+diffractassiez		diffracter	14
+diffractassions		diffracter	25
+diffractât		diffracter	20
+diffractâtes		diffracter	2
+diffracté	Qui a subi la diffraction.
+diffractée		diffracter	45
+diffractées		diffracter	36
+diffractent		diffracter	41
+diffracter	Subir la diffraction ou opérer la diffraction.
+diffractera		diffracter	21
+diffracterai		diffracter	16
+diffracteraient		diffracter	28
+diffracterais		diffracter	18
+diffracterait		diffracter	26
+diffracteras		diffracter	7
+diffractèrent		diffracter	24
+diffracterez		diffracter	5
+diffracteriez		diffracter	4
+diffracterions		diffracter	11
+diffracterons		diffracter	10
+diffracteront		diffracter	15
+diffractés		diffracter	38
+diffractez		diffracter	30
+diffractiez		diffracter	13
+diffractif	Qui produit la diffraction.
+diffractifs		diffractif	9
+diffraction	Déviation d’une onde, d’un faisceau de corpuscules.
+diffractions		diffraction	0
+diffractive		diffractif	23
+diffractives		diffractif	1
+diffractons		diffracter	27
+diffringent	Qui diffracte, qui opère la diffraction.
+diffringente		diffringent	109
+diffringents		diffringent	0
+diffus	Qui se répand dans tous les sens.
+diffusa		diffuser	39
+diffusable	Qui peut être diffusé (à la radio, ou sur un réseau informatique, ou au sein d'un organisme).
+diffusables		diffusable	0
+diffusai		diffuser	22
+diffusaient		diffuser	42
+diffusais		diffuser	52
+diffusait		diffuser	40
+diffusâmes		diffuser	3
+diffusant	Qui diffuse.
+diffusante		diffusant	23
+diffusantes		diffusant	1
+diffusants		diffusant	0
+diffusas		diffuser	12
+diffusasse		diffuser	6
+diffusassent		diffuser	17
+diffusasses		diffuser	8
+diffusassiez		diffuser	14
+diffusassions		diffuser	25
+diffusât		diffuser	20
+diffusâtes		diffuser	2
+diffusé		diffuser	56
+diffusée		diffuser	45
+diffusées		diffuser	51
+diffusément	Dʼune façon diffuse, dans tous les sens.
+diffusent		diffuser	41
+diffuser	Répandre dans toutes les directions.
+diffusera		diffuser	44
+diffuserai		diffuser	50
+diffuseraient		diffuser	63
+diffuserais		diffuser	60
+diffuserait		diffuser	49
+diffuseras		diffuser	7
+diffusèrent		diffuser	48
+diffuserez		diffuser	5
+diffuseriez		diffuser	4
+diffuserions		diffuser	82
+diffuserons		diffuser	61
+diffuseront		diffuser	54
+diffusés		diffuser	53
+diffuseur	Qui diffuse.
+diffuseurs		diffuseur	0
+diffuseuse	Personne ou entreprise qui se charge de la diffusion de produits culturels.
+diffuseuses		diffuseuse	0
+diffusez		diffuser	47
+diffusible	Qui est susceptible dʼêtre diffusé ou dʼêtre répandu dans toutes les directions.
+diffusibles		diffusible	0
+diffusiez		diffuser	13
+diffusion	Action de répandre dans tous les sens.
+diffusionnisme	Étude des cultures humaines par leur distribution dans l’espace, leur historicité et les dynamiques géographiques associées.
+diffusionnismes		diffusionnisme	0
+diffusions		diffusion	0
+diffusons		diffuser	59
+difluor	Molécule composée de deux atomes de fluor, de formule brute F₂.
+difluors		difluor	0
+digamma	Nom actuel d’une lettre grecque archaïque servant à noter le phonème \w\, remplacée par l’upsilon en grec moderne, mais dont est issue la lettre latine f.
+digammas		digamma	0
+digastrique	Qualifie le muscle de la mâchoire inférieure qui a deux portions charnues ou comme deux ventres attachés bout à bout.
+digastriques		digastrique	0
+digéra		digérer	39
+digérable	Qui peut être digéré, facilement assimilable par lʼorganisme.
+digérables		digérable	0
+digérai		digérer	55
+digéraient		digérer	42
+digérais		digérer	29
+digérait		digérer	40
+digérâmes		digérer	3
+digérant		digérer	43
+digéras		digérer	12
+digérasse		digérer	6
+digérassent		digérer	17
+digérasses		digérer	8
+digérassiez		digérer	14
+digérassions		digérer	25
+digérât		digérer	62
+digérâtes		digérer	2
+digère		digérer	64
+digérée		digérer	45
+digérées		digérer	51
+digèrent		digérer	41
+digérer	Ordonner méthodiquement un sujet.
+digérera		digérer	44
+digèrerai		digérer	16
+digèreraient		digérer	28
+digèrerais		digérer	18
+digérerait		digérer	49
+digèreras		digérer	7
+digérèrent		digérer	24
+digèrerez		digérer	5
+digèreriez		digérer	4
+digèrerions		digérer	11
+digèrerons		digérer	10
+digèreront		digérer	15
+digérés		digérer	53
+digérez		digérer	30
+digériez		digérer	13
+digérions		digérer	19
+digérons		digérer	59
+digest	Réduction de texte, abrégé, condensé.
+digestat	Matière résiduaire organique qui subsiste après la digestion anaérobie.
+digestats		digestat	0
+digeste	Digestible, que l’on peut digérer.
+digestes		digeste	0
+digesteur	Réacteur qui produit du biogaz grâce à la digestion anaérobie des matières organiques.
+digesteurs		digesteur	0
+digestibilité	Qualité de ce qui est digestible.
+digestibilités		digestibilité	0
+digestible	Qui peut être facilement digéré.
+digestibles		digestible	0
+digestif	Qui sert à la digestion.
+digestifs		digestif	9
+digestion	Action de digérer : processus au cours duquel un organisme vivant élabore les aliments mangés en nutriments, les assimile, et défèque le rebut.
+digestions		digestion	0
+digestive	Biscuit anglais, à réputation antiacide (contenant anciennement du bicarbonate de soude).
+digestives		digestif	1
+digests		digest	0
+digicode	Pavé numérique et dispositif électronique commandant l'ouverture d'une serrure électrique quand on tape un code secret.
+digicodes		digicode	0
+digit	Chiffre, symbole graphique.
+digital	Qui appartient aux doigts.
+digitale	Plante de la famille des Scrophulariacées, dont la fleur en longs épis pourpres ressemble quelque peu à un doigt de gant.
+digitales		digital	1
+digitaline	Hétéroside cardiotonique extrait de la digitale pourprée.
+digitalines		digitaline	0
+digitalique	Relatif à la digitale.
+digitaliques		digitalique	0
+digitalisa		digitaliser	33
+digitalisai		digitaliser	22
+digitalisaient		digitaliser	32
+digitalisais		digitaliser	29
+digitalisait		digitaliser	34
+digitalisâmes		digitaliser	3
+digitalisant		digitaliser	35
+digitalisas		digitaliser	12
+digitalisasse		digitaliser	6
+digitalisassent		digitaliser	17
+digitalisasses		digitaliser	8
+digitalisassiez		digitaliser	14
+digitalisât		digitaliser	20
+digitalisâtes		digitaliser	2
+digitalisation	Numérisation : action de digitaliser, enregistrement sur support numérique.
+digitalisations		digitalisation	0
+digitalisé		digitaliser	46
+digitalisée		digitaliser	45
+digitalisées		digitaliser	51
+digitalisent		digitaliser	31
+digitaliser	Soumettre à l’action de la digitale ou de la digitaline.
+digitalisera		digitaliser	21
+digitaliserai		digitaliser	16
+digitaliserais		digitaliser	18
+digitaliserait		digitaliser	26
+digitaliseras		digitaliser	7
+digitalisèrent		digitaliser	24
+digitaliserez		digitaliser	5
+digitaliseriez		digitaliser	4
+digitaliserions		digitaliser	11
+digitaliserons		digitaliser	10
+digitaliseront		digitaliser	15
+digitalisés		digitaliser	38
+digitalisez		digitaliser	30
+digitalisiez		digitaliser	13
+digitalisions		digitaliser	19
+digitalisons		digitaliser	27
+digitaux		digital	9
+digité	Qui est allongé en forme de doigt.
+digitée		digité	23
+digitées		digité	1
+digités		digité	9
+digitiforme	Qui a la forme d’un doigt.
+digitiformes		digitiforme	0
+digitigrade	Qualifie un animal vertébré mammifère dont les doigts servent de surface d’appui au sol.
+digitigrades		digitigrade	0
+digitoplastie	Opération visant à reconstruire un doigt accidenté ou amputé, notamment par l’utilisation d’une greffe.
+digitoplasties		digitoplastie	0
+digitopuncture	Technique de massage utilisant la pression des doigts sur les points d’acupuncture.
+digitopunctures		digitopuncture	0
+digitoxine	Glycoside cardiotonique extrait de la digitale pourpre et de la digitale laineuse ou Digitalis lanata.
+digitoxines		digitoxine	0
+digits		digit	0
+diglossie	Cohabitation de deux langues parmi une même population, l’une d’elles étant pressentie comme formelle et l’autre comme inférieure et impropre à certains usages…
+diglossies		diglossie	0
+digne	Qui mérite quelque chose.
+dignement	Selon ce qu’on mérite.
+dignes		digne	0
+dignitaire	Celui qui est revêtu d’une dignité.
+dignitaires		dignitaire	0
+dignité	Gravité noble qui inspire la considération, commande le respect, les égards.
+dignités		dignité	0
+dignois	Relatif à Digne-les-Bains, commune des Alpes-de-Haute-Provence.
+dignoise		dignois	23
+dignoises		dignois	1
+digon	Mât, pièce de bois posée entre la gorgère et l’étrave.
+digons		digon	0
+digramme	Groupe de deux lettres employé pour transcrire un phonème unique.
+digrammes		digramme	0
+digraphie	Technique comptable consistant à une double écriture des opérations.
+digraphies		digraphie	0
+digressa		digresser	33
+digressai		digresser	22
+digressaient		digresser	32
+digressais		digresser	29
+digressait		digresser	34
+digressâmes		digresser	3
+digressant		digresser	35
+digressas		digresser	12
+digressasse		digresser	6
+digressassent		digresser	17
+digressasses		digresser	8
+digressassiez		digresser	14
+digressassions		digresser	25
+digressât		digresser	20
+digressâtes		digresser	2
+digresse		digresser	64
+digressent		digresser	31
+digresser	Faire des digressions.
+digressera		digresser	21
+digresserai		digresser	16
+digresseraient		digresser	28
+digresserais		digresser	18
+digresserait		digresser	26
+digresseras		digresser	7
+digressèrent		digresser	24
+digresserez		digresser	5
+digresseriez		digresser	4
+digresserions		digresser	11
+digresserons		digresser	10
+digresseront		digresser	15
+digresses		digresser	66
+digressez		digresser	30
+digressiez		digresser	13
+digressif	Qui consiste dans une suite de digressions.
+digressifs		digressif	9
+digression	Ce qui dans un exposé, dans une conversation, un discours ou un développement s’écarte du sujet principal.
+digressions		digression	0
+digressive		digressif	23
+digressives		digressif	1
+digressons		digresser	27
+digue	Levée de terre, de pierres, de bois, etc.
+digues		digue	0
+diguette	Petite digue.
+diguettes		diguette	0
+diholoside	Sucre formé par deux oses (sucres simples non-hydrolysable).
+diholosides		diholoside	0
+dihydrogène	Gaz inflammable inodore, dihydrogène, molécule H₂.
+dihydrogènes		dihydrogène	0
+diiode	Forme habituelle de l’iode, de formule chimique I₂.
+diiodes		diiode	0
+dijonnais	Relatif à Dijon, commune française située dans le département de la Côte-d’Or.
+dijonnaise		dijonnais	23
+dijonnaises		dijonnais	1
+diktat	Nom donné par dénigrement, en Allemagne, à un ordre ou un traité imposé par la force.
+diktats		diktat	0
+dilacéra		dilacérer	33
+dilacérai		dilacérer	22
+dilacéraient		dilacérer	32
+dilacérais		dilacérer	29
+dilacérait		dilacérer	34
+dilacérâmes		dilacérer	3
+dilacérant		dilacérer	35
+dilacéras		dilacérer	12
+dilacérasse		dilacérer	6
+dilacérassent		dilacérer	17
+dilacérasses		dilacérer	8
+dilacérassiez		dilacérer	14
+dilacérassions		dilacérer	25
+dilacérât		dilacérer	20
+dilacérâtes		dilacérer	2
+dilacération	Action de dilacérer.
+dilacérations		dilacération	0
+dilacéré		dilacérer	56
+dilacérée		dilacérer	37
+dilacérées		dilacérer	36
+dilacèrent		dilacérer	31
+dilacérer	Déchirer, mettre en pièces.
+dilacèrera		dilacérer	21
+dilacèrerai		dilacérer	16
+dilacèreraient		dilacérer	28
+dilacèrerais		dilacérer	18
+dilacèrerait		dilacérer	26
+dilacèreras		dilacérer	7
+dilacérèrent		dilacérer	24
+dilacèrerez		dilacérer	5
+dilacèreriez		dilacérer	4
+dilacèrerions		dilacérer	11
+dilacèrerons		dilacérer	10
+dilacèreront		dilacérer	15
+dilacérés		dilacérer	38
+dilacérez		dilacérer	30
+dilacériez		dilacérer	13
+dilacérions		dilacérer	19
+dilacérons		dilacérer	27
+dilapida		dilapider	39
+dilapidai		dilapider	22
+dilapidaient		dilapider	32
+dilapidais		dilapider	29
+dilapidait		dilapider	40
+dilapidâmes		dilapider	3
+dilapidant		dilapider	35
+dilapidas		dilapider	12
+dilapidasse		dilapider	6
+dilapidassent		dilapider	17
+dilapidasses		dilapider	8
+dilapidassiez		dilapider	14
+dilapidassions		dilapider	25
+dilapidât		dilapider	20
+dilapidâtes		dilapider	2
+dilapidateur	Celui qui dilapide un bien, une fortune, des fonds.
+dilapidateurs		dilapidateur	0
+dilapidation	Action de dilapider.
+dilapidations		dilapidation	0
+dilapidatrice	Celle qui dilapide un bien, une fortune, des fonds.
+dilapidatrices		dilapidatrice	0
+dilapidé	Qui a été gâché, gaspillé.
+dilapidée		dilapidé	23
+dilapidées		dilapider	51
+dilapident		dilapider	31
+dilapider	Dépenser avec excès et avec désordre, gaspiller.
+dilapidera		dilapider	21
+dilapiderai		dilapider	16
+dilapideraient		dilapider	28
+dilapiderais		dilapider	18
+dilapiderait		dilapider	26
+dilapideras		dilapider	7
+dilapidèrent		dilapider	24
+dilapiderez		dilapider	5
+dilapideriez		dilapider	4
+dilapiderions		dilapider	11
+dilapiderons		dilapider	10
+dilapideront		dilapider	15
+dilapides		dilapider	77
+dilapidez		dilapider	47
+dilapidiez		dilapider	13
+dilapidions		dilapider	19
+dilapidons		dilapider	27
+dilata		dilater	39
+dilatabilité	Propriété que possèdent les corps de pouvoir, sans se désagréger, admettre des variations plus ou moins étendues de distance entre les particules matérielles q…
+dilatabilités		dilatabilité	0
+dilatable	Qui est susceptible de dilatation.
+dilatables		dilatable	0
+dilatai		dilater	22
+dilataient		dilater	42
+dilatais		dilater	29
+dilatait		dilater	40
+dilatâmes		dilater	3
+dilatant	Qui dilate.
+dilatante		dilatant	23
+dilatantes		dilatant	1
+dilatants		dilatant	9
+dilatas		dilater	12
+dilatasse		dilater	6
+dilatassent		dilater	17
+dilatasses		dilater	8
+dilatassiez		dilater	14
+dilatassions		dilater	25
+dilatât		dilater	62
+dilatâtes		dilater	2
+dilatateur	Qui dilate un canal, un orifice.
+dilatateurs		dilatateur	9
+dilatation	Action de dilater ou de se dilater.
+dilatations		dilatation	0
+dilatatrice		dilatateur	23
+dilatatrices		dilatateur	1
+dilaté	Qui a augmenté de volume par dilatation.
+dilatée		dilaté	23
+dilatées		dilaté	1
+dilatent		dilater	41
+dilater	Rendre plus large, plus ample.
+dilatera		dilater	44
+dilaterai		dilater	16
+dilateraient		dilater	28
+dilaterais		dilater	18
+dilaterait		dilater	26
+dilateras		dilater	7
+dilatèrent		dilater	48
+dilaterez		dilater	5
+dilateriez		dilater	4
+dilaterions		dilater	11
+dilaterons		dilater	10
+dilateront		dilater	15
+dilatés		dilaté	9
+dilatez		dilater	30
+dilatiez		dilater	13
+dilation	Action de différer, de retarder.
+dilations		dilation	0
+dilatoire	Qui tend à prolonger.
+dilatoirement	D’une manière dilatoire.
+dilatoires		dilatoire	0
+dilatomètre	Appareil servant à mesurer la dilatation d’un objet en fonction de la température et inversement.
+dilatomètres		dilatomètre	0
+dilatons		dilater	27
+dilection	Amour pieux.
+dilections		dilection	0
+dilemme	Sorte d’argument qui contient deux ou plusieurs propositions différentes ou contraires, dont on laisse le choix à l’adversaire, pour le convaincre également, q…
+dilemmes		dilemme	0
+dilettante	Mélomane, amateur de musique italienne.
+dilettantes		dilettante	0
+dilettantisme	Caractère ou manière d’être de celui qui est dilettante, qui n’est pas professionnel.
+dilettantismes		dilettantisme	0
+diligemment	Avec soin, attention.
+diligence	Promptitude d’action.
+diligences		diligence	0
+diligent	Qui est prompt dans l’exécution d’une chose.
+diligenta		diligenter	39
+diligentai		diligenter	22
+diligentaient		diligenter	32
+diligentais		diligenter	29
+diligentait		diligenter	34
+diligentâmes		diligenter	3
+diligentant		diligenter	35
+diligentas		diligenter	12
+diligentasse		diligenter	6
+diligentassent		diligenter	17
+diligentasses		diligenter	8
+diligentassiez		diligenter	14
+diligentassions		diligenter	25
+diligentât		diligenter	20
+diligentâtes		diligenter	2
+diligente	Variété de tulipe précoce.
+diligentée		diligenter	37
+diligentées		diligenter	36
+diligentent		diligenter	31
+diligenter	Faire diligence, réaliser rapidement une tâche.
+diligentera		diligenter	21
+diligenterai		diligenter	16
+diligenteraient		diligenter	28
+diligenterais		diligenter	18
+diligenterait		diligenter	26
+diligenteras		diligenter	7
+diligentèrent		diligenter	24
+diligenterez		diligenter	5
+diligenteriez		diligenter	4
+diligenterions		diligenter	11
+diligenterons		diligenter	10
+diligenteront		diligenter	15
+diligentes		diligente	0
+diligentez		diligenter	30
+diligentiez		diligenter	13
+diligentions		diligenter	19
+diligentons		diligenter	27
+diligents		diligent	9
+dilua		diluer	39
+diluai		diluer	22
+diluaient		diluer	42
+diluais		diluer	29
+diluait		diluer	40
+diluâmes		diluer	3
+diluant	Liquide volatil ajouté à une colle ou une peinture, qui en la rendant plus liquide facilite son application, avant de durcir.
+diluante		diluant	23
+diluantes		diluant	1
+diluants		diluant	9
+diluas	Deuxième personne du passé simple du verbe diluer.	diluer
+diluasse		diluer	6
+diluassent		diluer	17
+diluasses		diluer	8
+diluassiez		diluer	14
+diluassions		diluer	25
+diluât		diluer	62
+diluâtes		diluer	2
+dilué	Se dit d’une substance dont on a diminué la concentration.
+diluée		diluer	45
+diluées		diluer	51
+diluent		diluer	41
+diluer	Étendre d’eau ou d’un solvant adapté, un liquide quelconque.
+diluera		diluer	21
+diluerai		diluer	16
+dilueraient		diluer	28
+diluerais		diluer	18
+diluerait		diluer	49
+dilueras		diluer	7
+diluèrent		diluer	24
+diluerez		diluer	5
+dilueriez		diluer	4
+diluerions		diluer	11
+diluerons		diluer	10
+dilueront		diluer	15
+dilués		diluer	53
+dilueur	Appareil qui dilue.
+dilueurs		dilueur	0
+diluez		diluer	30
+diluiez		diluer	13
+diluions		diluer	19
+diluons		diluer	59
+dilutif	Qui dilue.
+dilutifs		dilutif	9
+dilution	Action de diluer, d'étendre avec de l'eau ou un autre solvant.
+dilutions		dilution	0
+dilutive		dilutif	23
+dilutives		dilutif	1
+diluvial	Diluvien.
+diluviale	Féminin singulier de diluvial.
+diluviales	Féminin pluriel de diluvial.
+diluviaux	Masculin pluriel de diluvial.
+diluvien	Relatif aux inondations.
+diluvienne		diluvien	23
+diluviennes		diluvien	1
+diluviens		diluvien	9
+diluvium	Matière des alluvions antérieures aux temps historiques.
+diluviums		diluvium	0
+dimanche	Septième ^() jour de la semaine.
+dimanches		dimanche	0
+dîme	Portion des grains, des vins, des fruits, etc., qui se payait à l’église, ou au seigneur du lieu, et qui en était ordinairement le dixième.
+dimension	Direction d’expansion d’un objet dans l’espace.
+dimensionna		dimensionner	33
+dimensionnai		dimensionner	22
+dimensionnaient		dimensionner	32
+dimensionnais		dimensionner	29
+dimensionnait		dimensionner	34
+dimensionnâmes		dimensionner	3
+dimensionnant		dimensionner	35
+dimensionnas		dimensionner	12
+dimensionnasse		dimensionner	6
+dimensionnasses		dimensionner	8
+dimensionnât		dimensionner	20
+dimensionnâtes		dimensionner	2
+dimensionné		dimensionner	46
+dimensionnée		dimensionner	37
+dimensionnées		dimensionner	36
+dimensionnel	Relatif à une ou des dimensions.
+dimensionnelle	Féminin singulier de dimensionnel.
+dimensionnelles		dimensionnel	1
+dimensionnels		dimensionnel	9
+dimensionnement	Action de calculer les dimensions d’une chose.
+dimensionnent		dimensionner	31
+dimensionner	Fixer, déterminer les dimensions d'un objet, d'un édifice, etc.
+dimensionnera		dimensionner	21
+dimensionnerai		dimensionner	16
+dimensionnerais		dimensionner	18
+dimensionnerait		dimensionner	26
+dimensionneras		dimensionner	7
+dimensionnèrent		dimensionner	24
+dimensionnerez		dimensionner	5
+dimensionneriez		dimensionner	4
+dimensionnerons		dimensionner	10
+dimensionneront		dimensionner	15
+dimensionnés		dimensionner	38
+dimensionnez		dimensionner	30
+dimensionniez		dimensionner	13
+dimensionnions		dimensionner	19
+dimensionnons		dimensionner	27
+dimensions		dimension	0
+dimère	Qui est composé de deux parties, de deux segments ou articles.
+dimères		dimère	0
+dîmes		dîme	0
+dimétrodon	Reptile avec une voile sur le dos, ayant vécu au Permien inférieur.
+dimétrodons		dimétrodon	0
+diminua		diminuer	39
+diminuai		diminuer	22
+diminuaient		diminuer	42
+diminuais		diminuer	52
+diminuait		diminuer	40
+diminuâmes		diminuer	3
+diminuant		diminuer	35
+diminuas		diminuer	83
+diminuasse		diminuer	6
+diminuassent		diminuer	17
+diminuasses		diminuer	8
+diminuassiez		diminuer	14
+diminuassions		diminuer	25
+diminuât		diminuer	62
+diminuâtes		diminuer	2
+diminué	Qui a été rendu plus petit.
+diminuée		diminué	23
+diminuées		diminué	1
+diminuendo	Marque de nuance pour indiquer qu'un passage doit être joué progressivement moins fort.
+diminuendos		diminuendo	0
+diminuent		diminuer	41
+diminuer	Réduire quelque chose en retranchant une partie.
+diminuera		diminuer	44
+diminuerai		diminuer	50
+diminueraient		diminuer	28
+diminuerais		diminuer	60
+diminuerait		diminuer	49
+diminueras		diminuer	7
+diminuèrent		diminuer	48
+diminuerez		diminuer	5
+diminueriez		diminuer	4
+diminuerions		diminuer	11
+diminuerons		diminuer	10
+diminueront		diminuer	54
+diminués		diminué	9
+diminuez		diminuer	47
+diminuiez		diminuer	67
+diminuions		diminuer	19
+diminuons		diminuer	27
+diminutif	Qui marque une diminution de l’idée exprimée par le radical.
+diminutifs		diminutif	9
+diminution	Action de diminuer, fait de devenir moindre.
+diminutions		diminution	0
+diminutive		diminutif	23
+diminutives		diminutif	1
+dimissoire	Lettre par laquelle un évêque consent qu’un de ses diocésains soit promu à la cléricature ou aux ordres par un autre évêque.
+dimissoires		dimissoire	0
+dimissorial	Qui contient un dimissoire.
+dimissoriale		dimissorial	109
+dimissoriales		dimissorial	1
+dimissoriaux		dimissorial	9
+dimorphe	Qui peut prendre deux formes différentes.
+dimorphes		dimorphe	0
+dimorphisme	Existence de deux formes distinctes pour une même espèce animale ou végétale.
+dimorphismes		dimorphisme	0
+DIN	Institut allemand de normalisation.
+dina		diner	33
+dînai		dîner	55
+dînaient		dîner	42
+dînais		dîner	52
+dînait		dîner	40
+dînâmes		dîner	68
+dinanderie	Objet composé de cuivre jaune, principalement des batteries de cuisine et des objets religieux.
+dinanderies		dinanderie	0
+dinandier	Fabricant ou marchand de dinanderie, les objets en cuivre ou laiton.
+dinandière	Fabricante ou marchande de dinanderie, les objets en cuivre ou laiton.
+dinandières		dinandière	0
+dinandiers		dinandier	0
+dînant		dîner	43
+dinar	Monnaie d’or arabe copiée à partir du denier d’or de l’empire romain d’orient.
+dinars		dinar	0
+dinas		diner	12
+dînasse		dîner	6
+dînassent		dîner	17
+dînasses		dîner	8
+dînassiez		dîner	14
+dînassions		dîner	90
+dînât		dîner	62
+dînâtes		dîner	2
+dînatoire	Relatif au dîner.
+dînatoires		dînatoire	0
+dinde	Femelle du dindon.
+dindes		dinde	0
+dindon	Qui est d’une stupidité prétentieuse.
+dindonna		dindonner	33
+dindonnai		dindonner	22
+dindonnaient		dindonner	32
+dindonnais		dindonner	29
+dindonnait		dindonner	34
+dindonnâmes		dindonner	3
+dindonnant		dindonner	35
+dindonnas		dindonner	12
+dindonnasse		dindonner	6
+dindonnassent		dindonner	17
+dindonnasses		dindonner	8
+dindonnassiez		dindonner	14
+dindonnassions		dindonner	25
+dindonnât		dindonner	20
+dindonnâtes		dindonner	2
+dindonne	Dinde.
+dindonneau	Petit dindon ou petite dinde.
+dindonneaux		dindonneau	0
+dindonnée		dindonner	37
+dindonnées		dindonner	36
+dindonnent		dindonner	31
+dindonner	Duper, tromper.
+dindonnera		dindonner	21
+dindonnerai		dindonner	16
+dindonneraient		dindonner	28
+dindonnerais		dindonner	18
+dindonnerait		dindonner	26
+dindonneras		dindonner	7
+dindonnèrent		dindonner	24
+dindonnerez		dindonner	5
+dindonneriez		dindonner	4
+dindonnerions		dindonner	11
+dindonnerons		dindonner	10
+dindonneront		dindonner	15
+dindonnés		dindonner	38
+dindonnez		dindonner	30
+dindonnier	Qui concerne les dindons.
+dindonnière	Celle qui est chargée de garder les dindons.
+dindonnières		dindonnière	0
+dindonniers		dindonnier	0
+dindonniez		dindonner	13
+dindonnions		dindonner	19
+dindonnons		dindonner	27
+dindons		dindon	9
+dine	Daine (femelle du daim).
+dînent		dîner	41
+diner	Variante orthographique de dîner.
+dînera		dîner	21
+dînerai		dîner	50
+dîneraient		dîner	63
+dînerais		dîner	60
+dînerait		dîner	49
+dîneras		dîner	57
+dînèrent		dîner	48
+dînerez		dîner	58
+dîneriez		dîner	74
+dînerions		dîner	82
+dînerons		dîner	61
+dîneront		dîner	54
+dîners		dîner	0
+dînes		dîner	77
+dînette	Variante, dans l'orthographe traditionnelle, de dinette.
+dînettes		dînette	0
+dîneur	Celui qui participe à un dîner.
+dîneurs		dîneur	0
+dîneuse	Celle qui participe à un dîner.
+dîneuses		dîneuse	0
+dînez		dîner	47
+ding	Son métallique.
+dingbat	Sorte de rébus graphique qui consiste à deviner un mot ou une expression connue à partir du dessin ou du mot lui-même.
+dingbats		dingbat	0
+dinghie	Variante orthographique de dinghy.
+dinghies		dinghie	0
+dinghy	Petite embarcation ouverte (non pontée), à rames ou à voile.
+dinghys		dinghy	0
+dingo	Fou.
+dingos		dingo	0
+dingua		dinguer	33
+dinguai		dinguer	22
+dinguaient		dinguer	32
+dinguais		dinguer	29
+dinguait		dinguer	34
+dinguâmes		dinguer	3
+dinguant		dinguer	35
+dinguas		dinguer	12
+dinguasse		dinguer	6
+dinguassent		dinguer	17
+dinguasses		dinguer	8
+dinguassiez		dinguer	14
+dinguassions		dinguer	25
+dinguât		dinguer	20
+dinguâtes		dinguer	2
+dingue	Fou, fada.
+dinguent		dinguer	41
+dinguer	Tomber brutalement, projeter au loin.
+dinguera		dinguer	21
+dinguerai		dinguer	16
+dingueraient		dinguer	28
+dinguerais		dinguer	18
+dinguerait		dinguer	26
+dingueras		dinguer	7
+dinguèrent		dinguer	24
+dinguerez		dinguer	5
+dinguerie	Folie, chose insensée, dingue.
+dingueries		dinguerie	0
+dingueriez		dinguer	4
+dinguerions		dinguer	11
+dinguerons		dinguer	10
+dingueront		dinguer	15
+dingues		dingue	118
+dinguez		dinguer	30
+dinguiez		dinguer	13
+dinguions		dinguer	19
+dinguons		dinguer	27
+dîniez		dîner	67
+dînions		dîner	65
+dinka	Langue parlée au Sud Soudan par les Dinkas.
+dinkas		dinka	0
+dinoflagellé	Membre d’une super-classe d'organismes eucaryotes unicellulaires, les Dinoflagellata, qui sont des microorganismes aquatiques (marins ou dulçaquicoles).
+dinoflagellés		dinoflagellé	0
+dînons		dîner	59
+dinornis	Oiseau coureur fossile du pléistocène proche de l’autruche appelé géant Moa par les Maoris.
+dinosaure	Membre d'un super-ordre d’archosaures qui a connu son apogée durant le Mésozoïque (ou ère secondaire), dont les représentants actuels sont les oiseaux et compr…
+dinosaures		dinosaure	0
+dinosaurien	Relatif aux dinosaures.
+dinosaurienne		dinosaurien	23
+dinosauriennes		dinosaurien	1
+dinosauriens		dinosaurien	9
+dinotherium	Grand mammifère pachyderme fossile.
+dinotheriums		dinotherium	0
+diocésain	Qui appartient à un diocèse.
+diocésaine	Femme qui fait partie d’un diocèse.
+diocésaines		diocésain	1
+diocésains		diocésain	9
+diocèse	Dans l’Empire romain, circonscription administrative formant des subdivisions des préfectures et gérée par un vicaire.
+diocèses		diocèse	0
+diode	Composant électronique qui ne laisse passer le courant électrique que dans un sens (sauf pour la diode Zener).
+diodes		diode	0
+diodon	Espèce de poissons osseux marins avec piquants et qui peuvent se gonfler.
+diodons		diodon	0
+diœcie	Variante de dioécie.
+dioecies	Orthographe par contrainte typographique de diœcies.
+dioïque	Se dit d’une espèce dont les fleurs unisexuées mâles (à étamines) et femelles (à pistil) sont portées par des pieds différents.
+dioïques		dioïque	0
+diol	Glycol, (polyalcool) possédant deux groupements hydroxyles.
+diola	Relatif au diola, langue des Diolas.
+diolas		diola	0
+dioléfine	Synonyme de diène.
+dioléfines		dioléfine	0
+diols	Pluriel de diol.
+dionée	Plante herbacée remarquable par l’extrême irritabilité de ses feuilles, dont les lobes, garnis de poils, se rejoignent quand un insecte vient s’y poser et le r…
+dionées		dionée	0
+dionysiaque	Qui concerne Dionysos.
+dionysiaques	Fêtes en l’honneur de Dionysos, qui se célébraient, chez les Grecs, en automne et au printemps.
+dionysien	Relatif à saint Denis.
+dionysienne		dionysien	23
+dionysiennes		dionysien	1
+dionysiens		dionysien	9
+dionysies	Variante moins courante de Dionysies.
+dioptre	Surface séparant deux milieux transparents ayant chacun un indice de réfraction différent.
+dioptres		dioptre	0
+dioptrie	Unité de convergence des lentilles ou autres systèmes optiques dont le symbole est δ, et se mesure en m⁻¹.
+dioptries		dioptrie	0
+dioptrique	Relatif à l’optique, la vue.
+dioptriques		dioptrique	0
+diorama	Tableau que les spectateurs, placés dans l’obscurité, voient à travers une espèce de corridor noir, tandis que le tableau lui-même est éclairé par le comble, o…
+dioramas		diorama	0
+diorite	Roche plutonique grenue composée de plagioclase, d’amphibole verte (hornblende) et de mica.
+diorites		diorite	0
+dioscoréacée	Membre d'une famille de plantes monocotylédones (Dioscoreaceae) dont l'igname est le type.
+dioscoréacées		dioscoréacée	0
+diot	Saucisse de porc.
+diots		diot	0
+dioula	Relatif au dioula, langue des Dioulas.
+dioulas		dioula	0
+dioxine	Hétérocycle aromatique dont le carbocycle comporte deux atomes d'oxygène.
+dioxines		dioxine	0
+dioxyde	Oxyde comportant deux atomes d’oxygène.
+dioxydes		dioxyde	0
+dioxygène	Corps simple moléculaire gazeux composé de deux atomes d’oxygène, de formule chimique O₂.
+dioxygènes		dioxygène	0
+dip	Préparation culinaire onctueuse dans laquelle on peut tremper différents morceaux de fruits ou légumes, ou que l’on peut tartiner sur un toast, une tartine, un…
+dipeptide	Molécule constituée de deux acides aminés liés par une liaison peptidique.
+dipeptides		dipeptide	0
+dipétale	Qui a deux pétales.
+dipétales		dipétale	0
+diphasé	Qui est alternatif, sur deux phases.
+diphasée		diphasé	23
+diphasées		diphasé	1
+diphasés		diphasé	9
+diphénol	Composé chimique aromatique portant deux fonctions hydroxyle -OH.
+diphénols		diphénol	0
+diphényle	Composé chimique engendré par la réunion de deux molécules de benzine.
+diphényles		diphényle	0
+diphosphate	Anion de l’acide pyrophosphorique.
+diphtérie	Maladie infectieuse et contagieuse caractérisée par la formation de fausses membranes dans la gorge.
+diphtéries		diphtérie	0
+diphtérique	Qui se rapporte à la diphtérie.
+diphtériques		diphtérique	0
+diphtongaison	Le fait de diphtonguer, de se diphtonguer.
+diphtongaisons		diphtongaison	0
+diphtongua		diphtonguer	33
+diphtonguai		diphtonguer	22
+diphtonguaient		diphtonguer	32
+diphtonguais		diphtonguer	29
+diphtonguait		diphtonguer	34
+diphtonguâmes		diphtonguer	3
+diphtonguant		diphtonguer	35
+diphtonguas		diphtonguer	12
+diphtonguasse		diphtonguer	6
+diphtonguassent		diphtonguer	17
+diphtonguasses		diphtonguer	8
+diphtonguassiez		diphtonguer	14
+diphtonguât		diphtonguer	20
+diphtonguâtes		diphtonguer	2
+diphtongue	Voyelle complexe qui change de timbre en cours d’émission.
+diphtonguée		diphtongué	23
+diphtonguées		diphtongué	1
+diphtonguent		diphtonguer	31
+diphtonguer	Transformer en diphtongue, prononcer en diphtongue.
+diphtonguera		diphtonguer	21
+diphtonguerai		diphtonguer	16
+diphtonguerais		diphtonguer	18
+diphtonguerait		diphtonguer	26
+diphtongueras		diphtonguer	7
+diphtonguèrent		diphtonguer	24
+diphtonguerez		diphtonguer	5
+diphtongueriez		diphtonguer	4
+diphtonguerions		diphtonguer	11
+diphtonguerons		diphtonguer	10
+diphtongueront		diphtonguer	15
+diphtongues		diphtongue	0
+diphtonguez		diphtonguer	30
+diphtonguiez		diphtonguer	13
+diphtonguions		diphtonguer	19
+diphtonguons		diphtonguer	27
+diploblastique	Qui possède deux feuillets embryonnaires (ectoderme et endoderme).
+diploblastiques		diploblastique	0
+diplocoque	Bactéries de forme arrondie (nommée coque ou coccus) regroupées par deux.
+diplocoques		diplocoque	0
+diplodocus	Grand dinosaure herbivore du jurassique.
+diploé	Tissu osseux et spongieux situé entre les deux lames interne et externe d’os compact qui forment les os dits « plats ».
+diploés		diploé	0
+diploïde	Qui contient un nombre double ou pair (deux fois N) de chromosomes.
+diploïdes		diploïde	0
+diploïdie	Fait d'être diploïde.
+diploïdies		diploïdie	0
+diplôma		diplômer	33
+diplômai		diplômer	22
+diplômaient		diplômer	32
+diplômais		diplômer	29
+diplômait		diplômer	34
+diplômâmes		diplômer	3
+diplômant	Qui délivre un diplôme.
+diplômante		diplômant	23
+diplômantes		diplômant	1
+diplômants		diplômant	0
+diplômas		diplômer	12
+diplômasse		diplômer	6
+diplômassent		diplômer	17
+diplômasses		diplômer	8
+diplômassiez		diplômer	14
+diplômassions		diplômer	25
+diplômât		diplômer	20
+diplomate	Fonctionnaire qui est de la carrière diplomatique.
+diplômâtes		diplômer	2
+diplomatie	Connaissance des traditions qui règlent les rapports mutuels des États, art de concilier leurs intérêts respectifs.
+diplomaties		diplomatie	0
+diplomatique	Relatif à la diplomatie.
+diplomatiques		diplomatique	0
+diplômé	Qui a obtenu un diplôme.
+diplômée	Celle qui a obtenu un diplôme.
+diplômées		diplômé	1
+diplôment		diplômer	31
+diplômer	Décerner un diplôme à.
+diplômera		diplômer	21
+diplômerai		diplômer	16
+diplômeraient		diplômer	28
+diplômerais		diplômer	18
+diplômerait		diplômer	26
+diplômeras		diplômer	7
+diplômèrent		diplômer	24
+diplômerez		diplômer	5
+diplômeriez		diplômer	4
+diplômerions		diplômer	11
+diplômerons		diplômer	10
+diplômeront		diplômer	15
+diplômés		diplômé	9
+diplômez		diplômer	30
+diplômiez		diplômer	13
+diplômions		diplômer	19
+diplômons		diplômer	27
+diplopie	Trouble de la vision amenant à voir double.
+diplopies		diplopie	0
+diplopode	Mille-pattes (ou millepatte) dont la plupart des segments du corps portent deux paires de pattes.
+diplopodes		diplopode	0
+diploure	Arthropode de la classe des diploures.
+diploures	Classe d’invertébrés terrestres
+dipneumoné	Qui est muni de deux poumons ou de deux sacs pulmonaires seulement.
+dipneumonée		dipneumoné	23
+dipneumonées		dipneumoné	1
+dipneumonés		dipneumoné	9
+dipneuste	Poisson de la sous-classe des dipneustes.
+dipneustes		dipneuste	0
+dipode	Bipède.
+dipodes		dipode	0
+dipolaire	Relatif à un dipôle.
+dipolaires		dipolaire	0
+dipôle	Structure à deux pôles.
+dipôles		dipôle	0
+dips	Exercice de flexions de bras sur deux barres parallèles.
+dipsacé	Qui ressemble à la cardère.
+dipsacée		dipsacé	23
+dipsacées		dipsacé	1
+dipsomane	Qui a un besoin maladif de boire des boissons toxiques (en particulier de l’alcool) lors de crises intermittentes.
+dipsomanes		dipsomane	0
+dipsomanie	Delirium tremens.
+dipsomanies		dipsomanie	0
+diptère	Qualifie un ordre d'insectes caractérisé par la présence de deux ailes (une seule paire).
+diptères		diptère	0
+diptyque	Tableau composé de deux panneaux qui se rabattent l’un sur l’autre.
+diptyques		diptyque	0
+dira		dire	44
+dirai		dire	50
+diraient		dire	97
+dirais		dire	96
+dirait		dire	92
+diras		dire	228
+dircab	Directeur de cabinet.
+dircabs		dircab	0
+dircom	Directeur ou directrice de la communication.
+dircoms		dircom	0
+dire	Exprimer par la parole.
+direct	Qui est droit, qui ne fait aucun détour.
+directe		direct	23
+directement	En ligne droite, tout droit.
+directes		direct	1
+directeur	Qui dirige.
+directeurs		directeur	0
+directif	Qui donne des directives, des directions.
+directifs		directif	9
+direction	Action de diriger, de régler l’exécution d’une action, d'administrer un établissement ou de conduire une personne.
+directionnel	Qui indique une direction.
+directionnelle	Féminin singulier de directionnel.
+directionnelles		directionnel	1
+directionnels		directionnel	9
+directions		direction	0
+directive	Acte par lequel une administration, une entreprise, une collectivité se fixe une ligne de conduite, une direction.
+directives		directive	0
+directivisme	Propension à diriger sans tenir compte des autres intervenants dans un processus.
+directivismes		directivisme	0
+directivité	Propriété de capter ou d'émettre de manière préférentielle un rayonnement sonore ou électrique dans une direction déterminée.
+directivités		directivité	0
+directoire	Définition manquante ou à compléter.
+directoires		directoire	0
+directorat	Fonction de directeur, exercice ou durée de cette fonction.
+directorats		directorat	0
+directorial	Qui appartient ou qui se rapporte à un directoire, à un directeur ou une directrice.
+directoriale	Féminin singulier de directorial.
+directoriales		directorial	1
+directoriaux		directorial	9
+directrice	Celle qui dirige un établissement, un service, etc.
+directrices		directeur	1
+directs		direct	9
+dirent		dire	48
+dires		dire	0
+direz		dire	58
+dirham	Monnaie de différents États arabes.
+dirhams		dirham	0
+dirhem	Variante orthographique de dirham.
+dirhems		dirhem	0
+diriez		dire	104
+dirigé	Celui ou celle qui est soumis à un dirigeant.
+dirigea		diriger	39
+dirigeable	Ballon pouvant être dirigé.
+dirigeables		dirigeable	0
+dirigeai		diriger	55
+dirigeaient		diriger	42
+dirigeais		diriger	52
+dirigeait		diriger	40
+dirigeâmes		diriger	68
+dirigeant	Qui dirige, qui détient le pouvoir.
+dirigeante	Celle qui dirige.
+dirigeantes		dirigeante	0
+dirigeants		dirigeant	9
+dirigeas		diriger	12
+dirigeasse		diriger	6
+dirigeassent		diriger	17
+dirigeasses		diriger	8
+dirigeassiez		diriger	14
+dirigeassions		diriger	25
+dirigeât		diriger	62
+dirigeâtes		diriger	2
+dirigée	Celle qui est soumise à un dirigeant.
+dirigées		dirigée	0
+dirigent		diriger	41
+dirigeons		diriger	59
+diriger	Conduire en exerçant un pouvoir, un commandement.
+dirigera		diriger	44
+dirigerai		diriger	50
+dirigeraient		diriger	63
+dirigerais		diriger	60
+dirigerait		diriger	49
+dirigeras		diriger	57
+dirigèrent		diriger	48
+dirigerez		diriger	58
+dirigeriez		diriger	4
+dirigerions		diriger	11
+dirigerons		diriger	61
+dirigeront		diriger	54
+diriges		diriger	77
+dirigez		diriger	47
+dirigiez		diriger	67
+dirigions		diriger	65
+dirigisme	Système dans lequel l’État dirige l’économie du pays ou influe sur son orientation, sans sortir du cadre de l’économie capitaliste.
+dirigismes		dirigisme	0
+dirigiste	Relatif au dirigisme.
+dirigistes		dirigiste	0
+dirimant	Qui entraine la nullité d’un acte, particulièrement d’un mariage.
+dirimante		dirimant	23
+dirimantes		dirimant	1
+dirimants		dirimant	9
+dirions		dire	105
+dirlo	Directeur, directrice.
+dirlos		dirlo	0
+dirons		dire	61
+diront		dire	54
+dis	Variante orthographique de diss.
+disable	Qui peut se dire.
+disables		disable	0
+disaccaride	Variante orthographique de disaccharide.
+disaccarides		disaccaride	0
+disaccharide	Oligosaccharide composé par deux saccharides.
+disaccharides		disaccharide	0
+disaient		dire	93
+disais		dire	95
+disait		dire	91
+disamare	Samare double : akènes ou fruits groupés par paire de certaines variétés de végétaux.
+disamares		disamare	0
+disant	Qui dit.
+disante		disant	23
+disantes		disant	1
+disants		disant	9
+discal	Relatif au disque intervertébral.
+discale	Perte de poids d'une marchandise, par suite de l'évaporation de son humidité.
+discales		discale	0
+discarthrose	Arthrose des disques intervertébraux.
+discarthroses		discarthrose	0
+discaux		discal	9
+discerna		discerner	39
+discernable	Qui peut être discerné.
+discernables		discernable	0
+discernai		discerner	55
+discernaient		discerner	42
+discernais		discerner	52
+discernait		discerner	40
+discernâmes		discerner	68
+discernant		discerner	43
+discernas		discerner	12
+discernasse		discerner	6
+discernassent		discerner	17
+discernasses		discerner	8
+discernassiez		discerner	14
+discernassions		discerner	25
+discernât		discerner	62
+discernâtes		discerner	2
+discerne		discerner	64
+discernée		discerner	37
+discernées		discerner	51
+discernement	Faculté de l’esprit qui sert à distinguer les choses, à séparer les questions, à en juger sainement, à apprécier la valeur intellectuelle et morale des gens.
+discernements		discernement	0
+discernent		discerner	41
+discerner	Voir distinctement un objet de manière à ne pas le confondre avec un ou plusieurs autres.
+discernera		discerner	21
+discernerai		discerner	16
+discerneraient		discerner	28
+discernerais		discerner	18
+discernerait		discerner	49
+discerneras		discerner	7
+discernèrent		discerner	24
+discernerez		discerner	5
+discerneriez		discerner	4
+discernerions		discerner	11
+discernerons		discerner	10
+discerneront		discerner	15
+discernes		discerner	77
+discernez		discerner	30
+discerniez		discerner	13
+discernions		discerner	65
+discernons		discerner	27
+disciple	Personne qui apprend d’un maître quelque science ou quelque art libéral.
+disciples		disciple	0
+disciplina		discipliner	39
+disciplinable	Qui est aisé à discipliner.
+disciplinables		disciplinable	0
+disciplinai		discipliner	22
+disciplinaient		discipliner	42
+disciplinaire	Qui concerne la discipline.
+disciplinaires		disciplinaire	0
+disciplinais		discipliner	52
+disciplinait		discipliner	40
+disciplinâmes		discipliner	3
+disciplinant	Qui établit, produit la discipline.
+disciplinas		discipliner	12
+disciplinasse		discipliner	6
+disciplinassent		discipliner	17
+disciplinasses		discipliner	8
+disciplinassiez		discipliner	14
+disciplinât		discipliner	20
+disciplinâtes		discipliner	2
+discipline	Méthode d’enseignement, d’éducation et de direction.
+disciplinée		discipliné	23
+disciplinées		discipliné	1
+disciplinent		discipliner	31
+discipliner	Habituer à la discipline.
+disciplinera		discipliner	44
+disciplinerai		discipliner	16
+disciplinerais		discipliner	18
+disciplinerait		discipliner	49
+disciplineras		discipliner	7
+disciplinèrent		discipliner	24
+disciplinerez		discipliner	5
+disciplineriez		discipliner	4
+disciplinerions		discipliner	11
+disciplinerons		discipliner	10
+disciplineront		discipliner	15
+disciplinés		discipliné	9
+disciplinez		discipliner	30
+discipliniez		discipliner	13
+disciplinions		discipliner	19
+disciplinons		discipliner	27
+disco	Discothèque. Endroit où l’on va habituellement de nuit pour écouter de la musique et danser.
+discobole	Athlète lanceur de disque ou de palet.
+discoboles		discobole	0
+discographie	Radiographie d'un disque intervertébral.
+discographies		discographie	0
+discographique	Qui se rapporte aux enregistrements sur disques.
+discographiques		discographique	0
+discoïdal	Qui ressemble à un disque.
+discoïdale		discoïdal	23
+discoïdales		discoïdal	1
+discoïdaux		discoïdal	9
+discoïdé	Qui est aplati en manière de disque.
+discoïdes		discoïde	0
+discompte	Système de commercialisation permettant d’offrir au client des produits à prix réduit.
+discomptée		discompté	23
+discomptées		discompté	1
+discompter	Pratiquer le discompte.
+discompteraient		discompter	28
+discomptes		discompte	0
+discompteur	Spécialiste du discompte.
+discompteurs		discompteur	0
+discomycète	Section désuète de la nomenclature mycologique comprenant les ascomycètes à fructifications en forme de bol (dites discoïdes) comme chez les pézizes, cylindriq…
+discomycètes		discomycète	0
+discontacteur	Disjoncteur contacteur (association d’un relais thermique et d’un contacteur).
+discontacteurs		discontacteur	0
+discontinu	Qui ne se répète pas d’une façon continue ou régulière.
+discontinua		discontinuer	33
+discontinuai		discontinuer	22
+discontinuaient		discontinuer	42
+discontinuais		discontinuer	29
+discontinuait		discontinuer	34
+discontinuâmes		discontinuer	3
+discontinuant		discontinuer	35
+discontinuas		discontinuer	12
+discontinuasse		discontinuer	6
+discontinuasses		discontinuer	8
+discontinuât		discontinuer	20
+discontinuâtes		discontinuer	2
+discontinuation	Interruption.
+discontinue		discontinu	23
+discontinuée		discontinuer	37
+discontinuées		discontinuer	36
+discontinuent		discontinuer	31
+discontinuer	Interrompre pour un temps une action ou un ouvrage.
+discontinuera		discontinuer	21
+discontinuerai		discontinuer	16
+discontinuerais		discontinuer	18
+discontinuerait		discontinuer	26
+discontinueras		discontinuer	7
+discontinuèrent		discontinuer	24
+discontinuerez		discontinuer	5
+discontinueriez		discontinuer	4
+discontinuerons		discontinuer	10
+discontinueront		discontinuer	15
+discontinues		discontinu	1
+discontinuez		discontinuer	30
+discontinuiez		discontinuer	13
+discontinuions		discontinuer	19
+discontinuité	Défaut ou absence de continuité.
+discontinuités		discontinuité	0
+discontinuons		discontinuer	27
+discontinus		discontinu	9
+disconvenaient		disconvenir	116
+disconvenais		disconvenir	114
+disconvenait		disconvenir	119
+disconvenance	Défaut de convenance, de rapport, de proportion.
+disconvenances		disconvenance	0
+disconvenant		disconvenir	35
+disconvenez		disconvenir	30
+disconveniez		disconvenir	110
+disconvenions		disconvenir	111
+disconvenir	Ne pas convenir, ne pas demeurer d’accord d’une chose.
+disconvenons		disconvenir	27
+disconvenu		disconvenir	46
+disconvenue		disconvenir	37
+disconvenues		disconvenir	36
+disconvenus		disconvenir	38
+disconviendra		disconvenir	21
+disconviendrai		disconvenir	16
+disconviendrais		disconvenir	106
+disconviendrait		disconvenir	112
+disconviendras		disconvenir	7
+disconviendrez		disconvenir	5
+disconviendriez		disconvenir	99
+disconviendrons		disconvenir	10
+disconviendront		disconvenir	15
+disconvienne		disconvenir	89
+disconviennent		disconvenir	31
+disconviennes		disconvenir	76
+disconviens		disconvenir	72
+disconvient		disconvenir	107
+disconvînmes		disconvenir	3
+disconvinrent		disconvenir	24
+disconvins		disconvenir	22
+disconvinsse		disconvenir	6
+disconvinssent		disconvenir	17
+disconvinsses		disconvenir	8
+disconvinssiez		disconvenir	14
+disconvinssions		disconvenir	25
+disconvint		disconvenir	39
+disconvîntes		disconvenir	2
+discopathie	Pathologie du disque intervertébral.
+discopathies		discopathie	0
+discophile	Collectionneur de disques de musique.
+discophiles		discophile	0
+discophilie	Intérêt pour les enregistrements sur disque, goût qui porte à les collectionner.
+discophilies		discophilie	0
+discord	Qualifie un instrument de musique qui est mal accordé.
+discorda		discorder	33
+discordai		discorder	22
+discordaient		discorder	32
+discordais		discorder	29
+discordait		discorder	34
+discordâmes		discorder	3
+discordance	État de ce qui est discordant.
+discordances		discordance	0
+discordant	Qui n’est pas d’accord, ou qu’on ne peut que difficilement accorder.
+discordante		discordant	23
+discordantes		discordant	1
+discordants		discordant	9
+discordas		discorder	12
+discordasse		discorder	6
+discordassent		discorder	17
+discordasses		discorder	8
+discordassiez		discorder	14
+discordassions		discorder	25
+discordât		discorder	20
+discordâtes		discorder	2
+discorde	Dissentiment violent et durable entre deux ou plusieurs personnes qui les porte à l’inimitié, à la haine.
+discordent		discorder	31
+discorder	Ne pas être en accord, diverger.
+discordera		discorder	21
+discorderai		discorder	16
+discorderaient		discorder	28
+discorderais		discorder	18
+discorderait		discorder	26
+discorderas		discorder	7
+discordèrent		discorder	24
+discorderez		discorder	5
+discorderiez		discorder	4
+discorderions		discorder	11
+discorderons		discorder	10
+discorderont		discorder	15
+discordes		discord	1
+discordez		discorder	30
+discordiez		discorder	13
+discordions		discorder	19
+discordons		discorder	27
+discords		discord	0
+discos		disco	0
+discothécaire	Personne ayant pour rôle de s’occuper d’une discothèque, et par exemple de classer les disques, de conseiller les personnes, de leur faire découvrir de la musi…
+discothécaires		discothécaire	0
+discothèque	Endroit où l’on va habituellement de nuit pour écouter de la musique et danser.
+discothèques		discothèque	0
+discount	Réduction du prix de vente d’un produit ou d’une marchandise.
+discounta		discounter	33
+discountai		discounter	22
+discountaient		discounter	32
+discountais		discounter	29
+discountait		discounter	34
+discountâmes		discounter	3
+discountant		discounter	35
+discountas		discounter	12
+discountasse		discounter	6
+discountassent		discounter	17
+discountasses		discounter	8
+discountassiez		discounter	14
+discountassions		discounter	25
+discountât		discounter	20
+discountâtes		discounter	2
+discounté		discounter	46
+discountée		discounter	37
+discountées		discounter	36
+discountent		discounter	31
+discounter	Magasin spécialisé dans la vente à prix réduits.
+discountera		discounter	21
+discounterai		discounter	16
+discounteraient		discounter	28
+discounterais		discounter	18
+discounterait		discounter	26
+discounteras		discounter	7
+discountèrent		discounter	48
+discounterez		discounter	5
+discounteriez		discounter	4
+discounterions		discounter	11
+discounterons		discounter	10
+discounteront		discounter	15
+discounters		discounter	0
+discountés		discounter	38
+discounteur	Magasin spécialisé dans la vente à prix réduits.
+discounteurs		discounteur	0
+discountez		discounter	30
+discountiez		discounter	13
+discountions		discounter	19
+discountons		discounter	27
+discounts		discount	0
+discouraient		discourir	93
+discourais		discourir	114
+discourait		discourir	91
+discourant		discourir	43
+discoure		discourir	85
+discourent		discourir	69
+discoures		discourir	76
+discoureur	Celui qui aime à discourir, surtout à propos de choses vaines.
+discoureurs		discoureur	0
+discoureuse	Celle qui aime à discourir, surtout à propos de choses vaines.
+discoureuses		discoureuse	0
+discourez		discourir	30
+discouriez		discourir	110
+discourions		discourir	111
+discourir	Parler sur une matière avec quelque étendue.
+discourons		discourir	27
+discourra		discourir	21
+discourrai		discourir	16
+discourraient		discourir	108
+discourrais		discourir	106
+discourrait		discourir	112
+discourras		discourir	7
+discourrez		discourir	5
+discourriez		discourir	99
+discourrions		discourir	101
+discourrons		discourir	10
+discourront		discourir	15
+discours	Actualisation de la langue.
+discourt		discourir	80
+discourtois	Qui n’est pas courtois, pas aimable, pas très poli, pas très respectueux…
+discourtoise	Féminin singulier de discourtois.
+discourtoises		discourtois	1
+discourtoisie	Manque de courtoisie.
+discourtoisies		discourtoisie	0
+discouru	Participe passé invariable masculin singulier de discourir.	discourir
+discourûmes		discourir	3
+discoururent		discourir	24
+discourus		discourir	22
+discourusse		discourir	6
+discourussent		discourir	17
+discourusses		discourir	8
+discourussiez		discourir	14
+discourussions		discourir	25
+discourut		discourir	39
+discourûtes		discourir	2
+discrédit	Diminution du crédit dont jouissait une personne ou une chose.
+discrédita		discréditer	33
+discréditai		discréditer	22
+discréditaient		discréditer	32
+discréditais		discréditer	29
+discréditait		discréditer	40
+discréditâmes		discréditer	3
+discréditant		discréditer	43
+discréditas		discréditer	12
+discréditasse		discréditer	6
+discréditassent		discréditer	17
+discréditasses		discréditer	8
+discréditassiez		discréditer	14
+discréditât		discréditer	20
+discréditâtes		discréditer	2
+discrédité	Définition manquante ou à compléter.
+discréditée		discréditer	45
+discréditées		discréditer	51
+discréditent		discréditer	31
+discréditer	Faire tomber en discrédit.
+discréditera		discréditer	21
+discréditerai		discréditer	16
+discréditerais		discréditer	18
+discréditerait		discréditer	49
+discréditeras		discréditer	7
+discréditèrent		discréditer	24
+discréditerez		discréditer	5
+discréditeriez		discréditer	4
+discréditerions		discréditer	11
+discréditerons		discréditer	10
+discréditeront		discréditer	15
+discrédités		discrédité	9
+discréditez		discréditer	47
+discréditiez		discréditer	13
+discréditions		discréditer	19
+discréditons		discréditer	27
+discrédits		discrédit	0
+discret	Qui ne se fait pas remarquer, par exemple qui est réservé, retenu dans ses paroles et dans ses actions.
+discrète	Mouche discrète, c’est-à-dire grain de beauté factice placé sous de la lèvre inférieure, vers le menton.
+discrètement	Avec retenue ; avec réserve.
+discrètes		discret	1
+discrétion	Réserve, retenue, dans les actions et dans les paroles.
+discrétionnaire	Dont le pouvoir de décider est laissé à la discrétion, au jugement, au choix, à la préférence, à la volonté de quelqu'un.
+discrétions		discrétion	0
+discrétisa		discrétiser	33
+discrétisai		discrétiser	22
+discrétisaient		discrétiser	32
+discrétisais		discrétiser	29
+discrétisait		discrétiser	34
+discrétisâmes		discrétiser	3
+discrétisant		discrétiser	35
+discrétisas		discrétiser	12
+discrétisasse		discrétiser	6
+discrétisassent		discrétiser	17
+discrétisasses		discrétiser	8
+discrétisassiez		discrétiser	14
+discrétisât		discrétiser	20
+discrétisâtes		discrétiser	2
+discrétisation	Action de rendre discret.
+discrétisations		discrétisation	0
+discrétisé		discrétiser	46
+discrétisée		discrétiser	37
+discrétisées		discrétiser	36
+discrétisent		discrétiser	31
+discrétiser	Rendre discret, dégager des valeurs individuelles à partir de quelque chose de continu.
+discrétisera		discrétiser	21
+discrétiserai		discrétiser	16
+discrétiserais		discrétiser	18
+discrétiserait		discrétiser	26
+discrétiseras		discrétiser	7
+discrétisèrent		discrétiser	24
+discrétiserez		discrétiser	5
+discrétiseriez		discrétiser	4
+discrétiserions		discrétiser	11
+discrétiserons		discrétiser	10
+discrétiseront		discrétiser	15
+discrétisés		discrétiser	38
+discrétisez		discrétiser	30
+discrétisiez		discrétiser	13
+discrétisions		discrétiser	19
+discrétisons		discrétiser	27
+discrétoire	Assemblée de religieuses ou de religieux qui forment le conseil de la supérieure ou du supérieur.
+discrétoires		discrétoire	0
+discrets		discret	9
+discrimina		discriminer	33
+discriminai		discriminer	22
+discriminaient		discriminer	32
+discriminais		discriminer	29
+discriminait		discriminer	34
+discriminâmes		discriminer	3
+discriminant	Notion algébrique intervenant dans la résolution d’une équation du second degré, plus connue sous le nom de delta (Δ).
+discriminante		discriminant	23
+discriminantes		discriminant	1
+discriminants		discriminant	9
+discriminas		discriminer	12
+discriminasse		discriminer	6
+discriminassent		discriminer	17
+discriminasses		discriminer	8
+discriminassiez		discriminer	14
+discriminât		discriminer	20
+discriminâtes		discriminer	2
+discriminateur	Qui discrimine, qui distingue.
+discriminateurs		discriminateur	9
+discriminatif	Synonyme de discriminant.
+discriminatifs		discriminatif	9
+discrimination	Distinction précise.
+discriminations		discrimination	0
+discriminative		discriminatif	23
+discriminatives		discriminatif	1
+discriminatoire	Qui discrimine ou tente de le faire.
+discriminé		discriminer	46
+discriminée		discriminer	37
+discriminées		discriminer	36
+discriminent		discriminer	31
+discriminer	Distinguer précisément.
+discriminera		discriminer	21
+discriminerai		discriminer	16
+discriminerais		discriminer	18
+discriminerait		discriminer	26
+discrimineras		discriminer	7
+discriminèrent		discriminer	24
+discriminerez		discriminer	5
+discrimineriez		discriminer	4
+discriminerions		discriminer	11
+discriminerons		discriminer	10
+discrimineront		discriminer	15
+discriminés		discriminer	38
+discriminez		discriminer	30
+discriminiez		discriminer	13
+discriminions		discriminer	19
+discriminons		discriminer	27
+disculpa		disculper	39
+disculpai		disculper	22
+disculpaient		disculper	32
+disculpais		disculper	29
+disculpait		disculper	40
+disculpâmes		disculper	3
+disculpant		disculper	35
+disculpas		disculper	12
+disculpasse		disculper	6
+disculpassent		disculper	17
+disculpasses		disculper	8
+disculpassiez		disculper	14
+disculpassions		disculper	25
+disculpât		disculper	20
+disculpâtes		disculper	2
+disculpation	Action de disculper autrui ou de se disculper.
+disculpations		disculpation	0
+disculpe		disculper	64
+disculpée		disculper	37
+disculpées		disculper	36
+disculpent		disculper	41
+disculper	Justifier quelqu’un d’une faute imputée.
+disculpera		disculper	21
+disculperai		disculper	16
+disculperaient		disculper	28
+disculperais		disculper	18
+disculperait		disculper	49
+disculperas		disculper	7
+disculpèrent		disculper	24
+disculperez		disculper	5
+disculperiez		disculper	4
+disculperions		disculper	11
+disculperons		disculper	10
+disculperont		disculper	15
+disculpés		disculper	53
+disculpez		disculper	131
+disculpiez		disculper	13
+disculpions		disculper	19
+disculpons		disculper	27
+discursif	Qui passe d'une proposition à une autre par le raisonnement.
+discursifs		discursif	9
+discursive		discursif	23
+discursives		discursif	1
+discussion	Action de discuter.
+discussions		discussion	0
+discuta		discuter	39
+discutable	Qui peut se discuter, qui est susceptible d’être discuté.
+discutables		discutable	0
+discutai		discuter	55
+discutaient		discuter	42
+discutailla		discutailler	33
+discutaillai		discutailler	22
+discutaillaient		discutailler	42
+discutaillais		discutailler	29
+discutaillait		discutailler	40
+discutaillâmes		discutailler	3
+discutaillant		discutailler	35
+discutaillas		discutailler	12
+discutaillasse		discutailler	6
+discutaillasses		discutailler	8
+discutaillât		discutailler	20
+discutaillâtes		discutailler	2
+discutaille		discutailler	64
+discutaillent		discutailler	41
+discutailler	Discuter sans cesse de choses insignifiantes.
+discutaillera		discutailler	21
+discutaillerai		discutailler	16
+discutaillerais		discutailler	18
+discutaillerait		discutailler	26
+discutailleras		discutailler	7
+discutaillèrent		discutailler	24
+discutaillerez		discutailler	5
+discutaillerie	Action de discutailler, discussion oiseuse et dénuée d'intérêt.
+discutailleries		discutaillerie	0
+discutailleriez		discutailler	4
+discutaillerons		discutailler	10
+discutailleront		discutailler	15
+discutailles		discutailler	66
+discutailleur	Celui qui aime à discutailler.
+discutailleurs		discutailleur	0
+discutailleuse	Celle qui aime à discutailler.
+discutailleuses		discutailleuse	0
+discutaillez		discutailler	30
+discutailliez		discutailler	13
+discutaillions		discutailler	19
+discutaillons		discutailler	27
+discutais		discuter	52
+discutait		discuter	40
+discutâmes		discuter	68
+discutant	Personne qui discute, qui questionne une présentation qui vient d’être donnée.
+discutas		discuter	12
+discutasse		discutasser	72
+discutassent		discutasser	69
+discutasser	Discuter (avec une nuance péjorative).
+discutasses		discutasser	113
+discutassiez		discutasser	100
+discutassions		discutasser	94
+discutât		discuter	62
+discutâtes		discuter	2
+discute	Discussion, conversation.
+discutée		discuter	45
+discutées		discuter	51
+discutent		discuter	41
+discuter	Examiner, débattre avec quelqu’un une question, une affaire avec soin, avec exactitude, et en bien considérer le pour et le contre.
+discutera		discuter	44
+discuterai		discuter	50
+discuteraient		discuter	63
+discuterais		discuter	60
+discuterait		discuter	49
+discuteras		discuter	7
+discutèrent		discuter	48
+discuterez		discuter	58
+discuteriez		discuter	74
+discuterions		discuter	82
+discuterons		discuter	61
+discuteront		discuter	54
+discutes		discute	0
+discuteur	Celui qui discute, qui soutient des discussions.
+discuteurs		discuteur	0
+discutez		discuter	47
+discutiez		discuter	67
+discutions		discuter	65
+discutons		discuter	59
+dise		dire	85
+disent		dire	41
+disert	Se dit de quelqu’un qui a de l’aisance à parler.
+diserte		disert	23
+disertement	D'une manière diserte.
+disertes		disert	1
+diserts		disert	9
+dises		dire	98
+disette	Manque de certaines choses utiles.
+disettes		disette	0
+disetteuse	Indigente.
+disetteuses		disetteuse	0
+disetteux	Qui est dans la disette, qui manque des choses nécessaires.
+diseur	Personne qui dit.
+diseurs		diseur	0
+diseuse	Celle qui dit.
+diseuses		diseuse	0
+disgrâce	Perte, privation des bonnes grâces d’une personne puissante, d’une autorité.
+disgrâces		disgrâce	0
+disgracia		disgracier	39
+disgraciai		disgracier	22
+disgraciaient		disgracier	42
+disgraciais		disgracier	29
+disgraciait		disgracier	40
+disgraciâmes		disgracier	3
+disgraciant		disgracier	35
+disgracias		disgracier	12
+disgraciasse		disgracier	6
+disgraciassent		disgracier	17
+disgraciasses		disgracier	8
+disgraciassiez		disgracier	14
+disgraciassions		disgracier	25
+disgraciât		disgracier	20
+disgraciâtes		disgracier	2
+disgracié	Celui qui est en disgrâce.
+disgraciée	Celle qui est en disgrâce.
+disgraciées		disgraciée	0
+disgracient		disgracier	31
+disgracier	Priver quelqu’un de ses bonnes grâces, de la faveur qu’on lui accordait jusqu’ici.
+disgraciera		disgracier	44
+disgracierai		disgracier	16
+disgracieraient		disgracier	28
+disgracierais		disgracier	18
+disgracierait		disgracier	26
+disgracieras		disgracier	7
+disgracièrent		disgracier	24
+disgracierez		disgracier	5
+disgracieriez		disgracier	4
+disgracierions		disgracier	11
+disgracierons		disgracier	10
+disgracieront		disgracier	15
+disgraciés		disgracié	0
+disgracieuse		disgracieux	23
+disgracieuses		disgracieux	1
+disgracieux	Qui est dépourvu de grâce.
+disgraciez		disgracier	30
+disgraciiez		disgracier	13
+disgraciions		disgracier	19
+disgracions		disgracier	27
+disharmonie	Absence de concordance ou d’harmonie.
+disharmonies		disharmonie	0
+disiez		dire	102
+disions		dire	103
+disjoignaient		disjoindre	116
+disjoignais		disjoindre	114
+disjoignait		disjoindre	91
+disjoignant		disjoindre	43
+disjoigne		disjoindre	89
+disjoignent		disjoindre	41
+disjoignes		disjoindre	76
+disjoignez		disjoindre	30
+disjoigniez		disjoindre	110
+disjoignîmes		disjoindre	3
+disjoignions		disjoindre	111
+disjoignirent		disjoindre	24
+disjoignis		disjoindre	22
+disjoignisse		disjoindre	6
+disjoignissent		disjoindre	17
+disjoignisses		disjoindre	8
+disjoignissiez		disjoindre	14
+disjoignissions		disjoindre	25
+disjoignit		disjoindre	33
+disjoignîtes		disjoindre	2
+disjoignons		disjoindre	27
+disjoindra		disjoindre	21
+disjoindrai		disjoindre	16
+disjoindraient		disjoindre	108
+disjoindrais		disjoindre	106
+disjoindrait		disjoindre	112
+disjoindras		disjoindre	7
+disjoindre	Séparer des choses qui étaient jointes.
+disjoindrez		disjoindre	58
+disjoindriez		disjoindre	99
+disjoindrions		disjoindre	101
+disjoindrons		disjoindre	10
+disjoindront		disjoindre	15
+disjoins		disjoindre	79
+disjoint	Qui n’est plus joint, collé ou rattaché à quelque chose.
+disjointe		disjoint	23
+disjointes		disjoint	1
+disjoints		disjoint	9
+disjoncta		disjoncter	39
+disjonctai		disjoncter	22
+disjonctaient		disjoncter	32
+disjonctais		disjoncter	52
+disjonctait		disjoncter	40
+disjonctâmes		disjoncter	3
+disjonctant		disjoncter	35
+disjonctas		disjoncter	12
+disjonctasse		disjoncter	6
+disjonctassent		disjoncter	17
+disjonctasses		disjoncter	8
+disjonctassiez		disjoncter	14
+disjonctassions		disjoncter	25
+disjonctât		disjoncter	20
+disjonctâtes		disjoncter	2
+disjoncté	Dont l’alimentation électrique est interrompue.
+disjonctée		disjoncté	23
+disjonctées		disjoncté	1
+disjonctent		disjoncter	41
+disjoncter	Interrompre le flux du courant électrique.
+disjonctera		disjoncter	21
+disjoncterai		disjoncter	16
+disjoncteraient		disjoncter	28
+disjoncterais		disjoncter	60
+disjoncterait		disjoncter	49
+disjoncteras		disjoncter	7
+disjonctèrent		disjoncter	24
+disjoncterez		disjoncter	5
+disjoncteriez		disjoncter	4
+disjoncterions		disjoncter	11
+disjoncterons		disjoncter	10
+disjoncteront		disjoncter	15
+disjonctes		disjoncter	77
+disjoncteur	Organe de protection électromécanique, voire électronique, dont la fonction est d’interrompre le courant électrique en cas de surcharge, ou d'anomalie sur un c…
+disjoncteurs		disjoncteur	0
+disjonctez		disjoncter	47
+disjonctiez		disjoncter	13
+disjonctif	Qui disjoint, sépare.
+disjonctifs		disjonctif	9
+disjonction	Action de disjoindre (ou de se disjoindre), ou son résultat, au propre ou au figuré.
+disjonctions		disjonction	0
+disjonctive	Féminin singulier de disjonctif.
+disjonctives		disjonctif	1
+disjonctons		disjoncter	27
+dislocation	Déplacement d’une ou de plusieurs parties d’un tout.
+dislocations		dislocation	0
+disloqua		disloquer	39
+disloquai		disloquer	55
+disloquaient		disloquer	42
+disloquais		disloquer	29
+disloquait		disloquer	40
+disloquâmes		disloquer	3
+disloquant		disloquer	43
+disloquas		disloquer	12
+disloquasse		disloquer	6
+disloquassent		disloquer	17
+disloquasses		disloquer	8
+disloquassiez		disloquer	14
+disloquassions		disloquer	25
+disloquât		disloquer	62
+disloquâtes		disloquer	2
+disloque		disloquer	64
+disloquée	Féminin singulier de disloqué.
+disloquées	Féminin pluriel de disloqué.
+disloquent		disloquer	41
+disloquer	Déplacer violemment une ou plusieurs parties d’un tout.
+disloquera		disloquer	21
+disloquerai		disloquer	50
+disloqueraient		disloquer	28
+disloquerais		disloquer	18
+disloquerait		disloquer	26
+disloqueras		disloquer	7
+disloquèrent		disloquer	48
+disloquerez		disloquer	5
+disloqueriez		disloquer	4
+disloquerions		disloquer	11
+disloquerons		disloquer	10
+disloqueront		disloquer	54
+disloqués	Masculin pluriel de disloqué.
+disloquez		disloquer	30
+disloquiez		disloquer	13
+disloquions		disloquer	19
+disloquons		disloquer	27
+dismutation	Type de réaction d'oxydoréduction dans laquelle deux molécules d'une espèce chimique A réagissent entre elles en donnant naissance à une molécule Aʹ par oxydat…
+dismutations		dismutation	0
+disons		dire	73
+disparais	Première personne du singulier de l’indicatif présent de disparaître (ou disparaitre).	disparaitre
+disparaissaient	Troisième personne du pluriel de l’imparfait de disparaître (ou disparaitre).	disparaitre
+disparaissais	Première personne du singulier de l’imparfait de disparaître (ou disparaitre).	disparaitre
+disparaissait	Troisième personne du singulier de l’imparfait de disparaître (ou disparaitre).	disparaitre
+disparaissant	Qui devient invisible.
+disparaisse	Première personne du singulier du présent du subjonctif de disparaître (ou disparaitre).	disparaitre
+disparaissent	Troisième personne du pluriel du présent de l’indicatif de disparaître (ou disparaitre).	disparaitre
+disparaisses	Deuxième personne du singulier du présent du subjonctif de disparaître (ou disparaitre).	disparaitre
+disparaissez	Deuxième personne du pluriel de l’indicatif présent de disparaître (ou disparaitre).	disparaitre
+disparaissiez	Deuxième personne du pluriel de l’imparfait de disparaître (ou disparaitre).	disparaitre
+disparaissions	Première personne du pluriel de l’imparfait de disparaître (ou disparaitre).	disparaitre
+disparaissons	Première personne du pluriel de l’indicatif présent de disparaître (ou disparaitre).	disparaitre
+disparaît		disparaître	80
+disparaîtra		disparaître	44
+disparaîtrai		disparaître	50
+disparaîtraient		disparaître	97
+disparaîtrais		disparaître	96
+disparaîtrait		disparaître	92
+disparaîtras		disparaître	57
+disparaitre	Cesser de paraitre, ne plus être visible.
+disparaîtrez		disparaître	58
+disparaîtriez		disparaître	99
+disparaîtrions		disparaître	105
+disparaîtrons		disparaître	61
+disparaîtront		disparaître	54
+disparate	Qui présente un défaut de conformité d’un effet désagréable.
+disparates		disparate	0
+disparation	Différence entre les visions d’un même objet par les deux rétines.
+disparations		disparation	0
+disparité	Manque de parité, absence d'égalité entre des personnes ou des choses que l'on compare.
+disparités		disparité	0
+disparition	Action de disparaître.
+disparitions		disparition	0
+disparu	Soldat, marin ou aviateur qui, après une action de guerre, manque à l’appel sans être retrouvé parmi les morts et les blessés.
+disparue	Femme disparue.
+disparues		disparu	1
+disparûmes	Première personne du pluriel du passé simple de disparaître (ou disparaitre).	disparaitre
+disparurent	Troisième personne du pluriel du passé simple de disparaître (ou disparaitre).	disparaitre
+disparus		disparu	9
+disparusse	Première personne du singulier de l’imparfait du subjonctif du verbe disparaître (ou disparaitre).	disparaitre
+disparussent	Troisième personne du pluriel de l’imparfait du subjonctif du verbe disparaître (ou disparaitre).	disparaitre
+disparusses	Deuxième personne du singulier de l’imparfait du subjonctif du verbe disparaître (ou disparaitre).	disparaitre
+disparussiez	Deuxième personne du pluriel de l’imparfait du subjonctif du verbe disparaître (ou disparaitre).	disparaitre
+disparussions	Première personne du pluriel de l’imparfait du subjonctif du verbe disparaître (ou disparaitre).	disparaitre
+disparut	Troisième personne du singulier du passé simple de disparaître (ou disparaitre).	disparaitre
+disparûtes	Deuxième personne du pluriel du passé simple du verbe disparaître (ou disparaitre).	disparaitre
+dispatcha		dispatcher	33
+dispatchai		dispatcher	22
+dispatchaient		dispatcher	32
+dispatchais		dispatcher	52
+dispatchait		dispatcher	40
+dispatchâmes		dispatcher	3
+dispatchant		dispatcher	35
+dispatchas		dispatcher	12
+dispatchasse		dispatcher	6
+dispatchassent		dispatcher	17
+dispatchasses		dispatcher	8
+dispatchassiez		dispatcher	14
+dispatchassions		dispatcher	25
+dispatchât		dispatcher	20
+dispatchâtes		dispatcher	2
+dispatche		dispatcher	64
+dispatchée		dispatcher	37
+dispatchées		dispatcher	36
+dispatchent		dispatcher	31
+dispatcher	Distribuer, ventiler, répartir.
+dispatchera		dispatcher	21
+dispatcherai		dispatcher	16
+dispatcheraient		dispatcher	28
+dispatcherais		dispatcher	18
+dispatcherait		dispatcher	26
+dispatcheras		dispatcher	7
+dispatchèrent		dispatcher	24
+dispatcherez		dispatcher	5
+dispatcheriez		dispatcher	4
+dispatcherions		dispatcher	11
+dispatcherons		dispatcher	10
+dispatcheront		dispatcher	15
+dispatchés		dispatcher	38
+dispatcheur	Salarié qui organise les transports.
+dispatcheurs		dispatcheur	0
+dispatchez		dispatcher	30
+dispatchiez		dispatcher	13
+dispatching	Dans le monde de l’énergie, le dispatching, ou conduite réseau, recouvre les actions liées au maintien de l’équilibre offre-demande, à la maîtrise du plan de t…
+dispatchings		dispatching	0
+dispatchions		dispatcher	19
+dispatchons		dispatcher	27
+dispendieuse		dispendieux	23
+dispendieuses		dispendieux	1
+dispendieux	Qui exige beaucoup de dépenses.
+dispensa		dispenser	39
+dispensable	Pour lequel on peut accorder dispense.
+dispensai		dispenser	22
+dispensaient		dispenser	42
+dispensaire	Établissement médical où l’on donne des soins et des remèdes aux indigents.
+dispensaires		dispensaire	0
+dispensais		dispenser	52
+dispensait		dispenser	40
+dispensâmes		dispenser	3
+dispensant		dispenser	43
+dispensas		dispenser	12
+dispensasse		dispenser	6
+dispensassent		dispenser	17
+dispensasses		dispenser	8
+dispensassiez		dispenser	14
+dispensassions		dispenser	25
+dispensât		dispenser	62
+dispensâtes		dispenser	2
+dispensateur	Celui qui dispense, qui distribue.
+dispensateurs		dispensateur	0
+dispensation	Suspension des lois générales par les autorités compétentes.
+dispensations		dispensation	0
+dispensatrice	Celle qui dispense, qui distribue.
+dispensatrices		dispensatrice	0
+dispense	Exemption, acte par lequel on dispense une personne de quelque chose.
+dispensée		dispenser	45
+dispensées		dispensé	1
+dispensent		dispenser	41
+dispenser	Exempter de la règle ordinaire, par faveur spéciale, ou simplement exempter de quelque chose.
+dispensera		dispenser	21
+dispenserai		dispenser	16
+dispenseraient		dispenser	28
+dispenserais		dispenser	18
+dispenserait		dispenser	49
+dispenseras		dispenser	57
+dispensèrent		dispenser	48
+dispenserez		dispenser	5
+dispenseriez		dispenser	4
+dispenserions		dispenser	11
+dispenserons		dispenser	10
+dispenseront		dispenser	15
+dispensés		dispenser	53
+dispensez		dispenser	47
+dispensiez		dispenser	13
+dispensions		dispenser	19
+dispensons		dispenser	27
+dispersa		disperser	39
+dispersai		disperser	22
+dispersaient		disperser	42
+dispersais		disperser	29
+dispersait		disperser	40
+dispersâmes		disperser	3
+dispersant	Adjuvant qui a la propriété de maintenir en suspension des particules se trouvant dans un bain.
+dispersants		dispersant	0
+dispersas		disperser	12
+dispersasse		disperser	6
+dispersassent		disperser	17
+dispersasses		disperser	8
+dispersassiez		disperser	14
+dispersassions		disperser	25
+dispersât		disperser	62
+dispersâtes		disperser	2
+dispersé	Qui est disséminé.
+dispersée		dispersé	23
+dispersées		dispersé	1
+dispersement	Action de disperser ou de se disperser, résultat de cette action.
+dispersements		dispersement	0
+dispersent		disperser	41
+disperser	Répandre, jeter çà et là.
+dispersera		disperser	44
+disperserai		disperser	50
+disperseraient		disperser	63
+disperserais		disperser	18
+disperserait		disperser	49
+disperseras		disperser	7
+dispersèrent		disperser	48
+disperserez		disperser	5
+disperseriez		disperser	4
+disperserions		disperser	11
+disperserons		disperser	61
+disperseront		disperser	54
+disperses		disperser	77
+dispersez		disperser	47
+dispersiez		disperser	13
+dispersif	Qui disperse.
+dispersion	Action de disperser, de se disperser ou résultat de cette action.
+dispersions		dispersion	0
+dispersons		disperser	59
+display	Présentoir pour produit, physique ou virtuel.
+dispo	Disponible.
+disponibilité	État d’une personne qui est disponible.
+disponibilités		disponibilité	0
+disponible	Que l’on a à sa disposition, dont on peut disposer.
+disponibles		disponible	0
+dispos	Qui a toutes les dispositions voulues pour agir.
+disposa		disposer	39
+disposai		disposer	55
+disposaient		disposer	42
+disposais		disposer	52
+disposait		disposer	40
+disposâmes		disposer	68
+disposant	Qui favorise un effet, une pathologie.
+disposante	Celle qui fait une disposition en faveur de quelqu’un par testament, par donation.
+disposantes		disposante	0
+disposants		disposant	0
+disposas		disposer	83
+disposasse		disposer	6
+disposassent		disposer	17
+disposasses		disposer	8
+disposassiez		disposer	14
+disposassions		disposer	25
+disposât		disposer	62
+disposâtes		disposer	2
+disposé	Prêt à faire quelque chose, en parlant de quelqu’un.
+disposée		disposé	23
+disposées		disposé	1
+disposent		disposer	41
+disposer	Arranger, mettre dans l’ordre le plus convenable.
+disposera		disposer	44
+disposerai		disposer	50
+disposeraient		disposer	63
+disposerais		disposer	60
+disposerait		disposer	49
+disposeras		disposer	57
+disposèrent		disposer	48
+disposerez		disposer	58
+disposeriez		disposer	4
+disposerions		disposer	11
+disposerons		disposer	61
+disposeront		disposer	54
+disposes		disposer	77
+disposez		disposer	47
+disposiez		disposer	67
+disposions		disposer	65
+dispositif	Agencement d’éléments techniques accomplissant un but précis.
+dispositifs		dispositif	0
+disposition	Action de disposer ou résultat de cette action.
+dispositions		disposition	0
+disposons		disposer	59
+disproportion	Défaut de proportion entre différentes choses ou entre les parties d’une même chose.
+disproportionné	Qui manque de proportion.
+disproportions		disproportion	0
+disputa		disputer	39
+disputable	Qui peut être disputé, contestable.
+disputables		disputable	0
+disputai		disputer	22
+disputaient		disputer	42
+disputailla		disputailler	33
+disputaillai		disputailler	22
+disputaillaient		disputailler	32
+disputaillais		disputailler	29
+disputaillait		disputailler	34
+disputaillâmes		disputailler	3
+disputaillant		disputailler	35
+disputaillas		disputailler	12
+disputaillasse		disputailler	6
+disputaillasses		disputailler	8
+disputaillât		disputailler	20
+disputaillâtes		disputailler	2
+disputaillé		disputailler	46
+disputaillent		disputailler	31
+disputailler	Disputer inutilement et longuement.
+disputaillera		disputailler	21
+disputaillerai		disputailler	16
+disputaillerais		disputailler	18
+disputaillerait		disputailler	26
+disputailleras		disputailler	7
+disputaillèrent		disputailler	24
+disputaillerez		disputailler	5
+disputailleriez		disputailler	4
+disputaillerons		disputailler	10
+disputailleront		disputailler	15
+disputaillés		disputailler	38
+disputaillez		disputailler	30
+disputailliez		disputailler	13
+disputaillions		disputailler	19
+disputaillons		disputailler	27
+disputais		disputer	52
+disputait		disputer	40
+disputâmes		disputer	68
+disputant		disputer	43
+disputas		disputer	12
+disputasse		disputer	6
+disputassent		disputer	17
+disputasses		disputer	8
+disputassiez		disputer	14
+disputassions		disputer	25
+disputât		disputer	62
+disputâtes		disputer	2
+dispute	Discussion plus ou moins vive à propos d’opinions, d’intérêts.
+disputée		disputé	23
+disputées		disputé	1
+disputent		disputer	41
+disputer	Être en discussion plus ou moins vive à propos d’opinions, d’intérêts.
+disputera		disputer	44
+disputerai		disputer	50
+disputeraient		disputer	63
+disputerais		disputer	18
+disputerait		disputer	49
+disputeras		disputer	7
+disputèrent		disputer	48
+disputerez		disputer	58
+disputeriez		disputer	4
+disputerions		disputer	11
+disputerons		disputer	61
+disputeront		disputer	54
+disputes		dispute	0
+disputez		disputer	47
+disputiez		disputer	67
+disputions		disputer	65
+disputons		disputer	59
+disqua		disquer	33
+disquai		disquer	22
+disquaient		disquer	32
+disquaire	Commerçant qui vend des disques ou tout support d’enregistrements sonores.
+disquaires		disquaire	0
+disquais		disquer	29
+disquait		disquer	34
+disqualifia		disqualifier	33
+disqualifiai		disqualifier	22
+disqualifiaient		disqualifier	32
+disqualifiais		disqualifier	29
+disqualifiait		disqualifier	40
+disqualifiâmes		disqualifier	3
+disqualifiant		disqualifier	35
+disqualifias		disqualifier	12
+disqualifiasse		disqualifier	6
+disqualifiasses		disqualifier	8
+disqualifiât		disqualifier	20
+disqualifiâtes		disqualifier	2
+disqualifie		disqualifier	64
+disqualifiée	Féminin singulier de disqualifié.
+disqualifiées		disqualifier	51
+disqualifient		disqualifier	41
+disqualifier	Frapper d’un blâme, d’un discrédit celui qui s’est rendu coupable de quelque acte d’indélicatesse, qui a employé dans un concours, dans un jeu, dans les relati…
+disqualifiera		disqualifier	21
+disqualifierai		disqualifier	16
+disqualifierais		disqualifier	18
+disqualifierait		disqualifier	26
+disqualifieras		disqualifier	7
+disqualifièrent		disqualifier	24
+disqualifierez		disqualifier	5
+disqualifieriez		disqualifier	4
+disqualifierons		disqualifier	10
+disqualifieront		disqualifier	15
+disqualifiés		disqualifier	53
+disqualifiez		disqualifier	30
+disqualifiiez		disqualifier	13
+disqualifiions		disqualifier	19
+disqualifions		disqualifier	27
+disquâmes		disquer	3
+disquant		disquer	35
+disquas		disquer	12
+disquasse		disquer	6
+disquassent		disquer	17
+disquasses		disquer	8
+disquassiez		disquer	14
+disquassions		disquer	25
+disquât		disquer	20
+disquâtes		disquer	2
+disque	Palet circulaire utilisé pour le lancer du disque.
+disquée		disquer	37
+disquées		disquer	36
+disquent		disquer	31
+disquer	Travailler à l’aide d’une machine à disque, d'un cultivateur-tasseur.
+disquera		disquer	21
+disquerai		disquer	16
+disqueraient		disquer	28
+disquerais		disquer	18
+disquerait		disquer	26
+disqueras		disquer	7
+disquèrent		disquer	24
+disquerez		disquer	5
+disqueriez		disquer	4
+disquerions		disquer	11
+disquerons		disquer	10
+disqueront		disquer	15
+disques		disque	0
+disquette	Petit disque souple enfermé dans une enveloppe rigide, utilisé en informatique comme moyen amovible de stockage d’information.
+disquettes		disquette	0
+disqueuse	Machine à meuler, équipée d’un moteur électrique faisant tourner un disque abrasif.
+disqueuses		disqueuse	0
+disquez		disquer	30
+disquiez		disquer	13
+disquions		disquer	19
+disquons		disquer	27
+disraélien	Propre ou relatif à Benjamin Disraeli, à son œuvre et à son action politique.
+disraélienne		disraélien	23
+disraéliennes		disraélien	1
+disraéliens		disraélien	9
+disruptif	Qui transperce un isolant en désorganisant sa structure mécanique et chimique, momentanément ou définitivement.
+disruptifs		disruptif	9
+disruption	Rupture, fracture.
+disruptions		disruption	0
+disruptive		disruptif	23
+disruptives		disruptif	1
+disse		dire	81
+dissécable	Qui peut être disséqué.
+dissécables		dissécable	0
+dissecteur	Celui qui dissèque.
+dissecteurs		dissecteur	9
+dissection	Action de disséquer ou état d’un corps disséqué.
+dissections		dissection	0
+dissemblable	Qui n’est pas semblable.
+dissemblables		dissemblable	0
+dissemblance	Manque de ressemblance.
+dissemblances		dissemblance	0
+dissémina		disséminer	39
+disséminai		disséminer	22
+disséminaient		disséminer	32
+disséminais		disséminer	29
+disséminait		disséminer	40
+disséminâmes		disséminer	3
+disséminant		disséminer	43
+disséminas		disséminer	12
+disséminasse		disséminer	6
+disséminassent		disséminer	17
+disséminasses		disséminer	8
+disséminassiez		disséminer	14
+disséminassions		disséminer	25
+disséminât		disséminer	20
+disséminâtes		disséminer	2
+dissémination	Dispersion des diaspores.
+disséminations		dissémination	0
+disséminé		disséminer	56
+disséminée	Féminin singulier de disséminé.
+disséminées	Féminin pluriel de disséminé.
+disséminent		disséminer	41
+disséminer	Semer çà et là, éparpiller, répandre.
+disséminera		disséminer	21
+disséminerai		disséminer	16
+dissémineraient		disséminer	28
+disséminerais		disséminer	18
+disséminerait		disséminer	26
+dissémineras		disséminer	7
+disséminèrent		disséminer	48
+disséminerez		disséminer	5
+dissémineriez		disséminer	4
+disséminerions		disséminer	11
+disséminerons		disséminer	10
+dissémineront		disséminer	15
+disséminés	Masculin pluriel de disséminé.
+disséminez		disséminer	30
+disséminiez		disséminer	13
+disséminions		disséminer	19
+disséminons		disséminer	27
+dissension	Dissentiment violent, mais passager, d’opinions, de sentiments, d’intérêts entre deux ou plusieurs personnes.
+dissensions		dissension	0
+dissensus	Absence de consensus (d'accord global) constatée à l’issue d’une négociation.
+dissent		dire	78
+dissentiment	Différence de manière de voir, de juger.
+dissentiments		dissentiment	0
+disséqua		disséquer	33
+disséquai		disséquer	55
+disséquaient		disséquer	32
+disséquais		disséquer	29
+disséquait		disséquer	40
+disséquâmes		disséquer	3
+disséquant		disséquer	35
+disséquas		disséquer	12
+disséquasse		disséquer	6
+disséquassent		disséquer	17
+disséquasses		disséquer	8
+disséquassiez		disséquer	14
+disséquassions		disséquer	25
+disséquât		disséquer	20
+disséquâtes		disséquer	2
+dissèque		disséquer	64
+disséquée		disséquer	45
+disséquées		disséquer	36
+dissèquent		disséquer	41
+disséquer	Diviser les différentes parties d’un corps, soit pour en étudier ou en démontrer la structure, soit pour connaître les causes et le siège d’une maladie ou prob…
+dissèquera		disséquer	21
+dissèquerai		disséquer	16
+disséqueraient		disséquer	63
+disséquerais		disséquer	60
+dissèquerait		disséquer	26
+dissèqueras		disséquer	7
+disséquèrent		disséquer	24
+dissèquerez		disséquer	5
+dissèqueriez		disséquer	4
+dissèquerions		disséquer	11
+dissèquerons		disséquer	10
+dissèqueront		disséquer	15
+disséqués		disséquer	53
+disséqueur	Synonyme de dissecteur.
+disséqueurs		disséqueur	0
+disséqueuse	Synonyme de dissectrice.
+disséqueuses		disséqueuse	0
+disséquez		disséquer	47
+disséquiez		disséquer	67
+disséquions		disséquer	65
+disséquons		disséquer	59
+dissert	Dissertation.
+disserta		disserter	33
+dissertai		disserter	22
+dissertaient		disserter	32
+dissertais		disserter	29
+dissertait		disserter	40
+dissertâmes		disserter	3
+dissertant	Qui a pour caractéristique de disserter.
+dissertas		disserter	12
+dissertasse		disserter	6
+dissertassent		disserter	17
+dissertasses		disserter	8
+dissertassiez		disserter	14
+dissertassions		disserter	25
+dissertât		disserter	20
+dissertâtes		disserter	2
+dissertation	Développement le plus souvent écrit dans lequel on examine en détail une matière, une question, un ouvrage de l’esprit.
+dissertations		dissertation	0
+disserte	Dissertation.
+dissertent		disserter	41
+disserter	Faire un développement le plus souvent oral sur une matière, une question, un ouvrage de l’esprit.
+dissertera		disserter	21
+disserterai		disserter	16
+disserteraient		disserter	28
+disserterais		disserter	18
+disserterait		disserter	49
+disserteras		disserter	7
+dissertèrent		disserter	24
+disserterez		disserter	5
+disserteriez		disserter	4
+disserterions		disserter	11
+disserterons		disserter	10
+disserteront		disserter	15
+dissertes		disserte	0
+dissertez		disserter	30
+dissertiez		disserter	13
+dissertions		disserter	19
+dissertons		disserter	27
+disserts		dissert	0
+disses		dire	87
+dissidence	Action ou état de ceux qui s’éloignent de la doctrine ou de l’opinion majoritairement admise, surtout en matière religieuse et politique.
+dissidences		dissidence	0
+dissident	Qui est en désaccord.
+dissidente	Personne qui se démarque d'une doctrine religieuse ou d'un dogme.
+dissidentes		dissident	1
+dissidents		dissident	9
+dissiez		dire	88
+dissimilation	Différenciation phonétique de deux phonèmes similaires ou voisins.
+dissimilations		dissimilation	0
+dissimilitude	Absence ou manque de similitude.
+dissimilitudes		dissimilitude	0
+dissimula		dissimuler	39
+dissimulai		dissimuler	55
+dissimulaient		dissimuler	42
+dissimulais		dissimuler	52
+dissimulait		dissimuler	40
+dissimulâmes		dissimuler	3
+dissimulant	Qui dissimule.
+dissimulas		dissimuler	12
+dissimulasse		dissimuler	6
+dissimulassent		dissimuler	17
+dissimulasses		dissimuler	8
+dissimulassiez		dissimuler	14
+dissimulassions		dissimuler	25
+dissimulât		dissimuler	62
+dissimulâtes		dissimuler	2
+dissimulateur	Qui dissimule.
+dissimulateurs		dissimulateur	0
+dissimulation	Action de dissimuler.
+dissimulations		dissimulation	0
+dissimulatrice	Celle qui dissimule.
+dissimulatrices		dissimulateur	1
+dissimulé	Qui ne laisse pas apercevoir ses sentiments, ses desseins.
+dissimulée		dissimulé	23
+dissimulées		dissimulé	1
+dissimulent		dissimuler	41
+dissimuler	Cacher ses sentiments, ses desseins ou, par une conduite réservée, artificieuse, ne pas les laisser apercevoir.
+dissimulera		dissimuler	44
+dissimulerai		dissimuler	16
+dissimuleraient		dissimuler	63
+dissimulerais		dissimuler	60
+dissimulerait		dissimuler	49
+dissimuleras		dissimuler	7
+dissimulèrent		dissimuler	48
+dissimulerez		dissimuler	5
+dissimuleriez		dissimuler	4
+dissimulerions		dissimuler	11
+dissimulerons		dissimuler	61
+dissimuleront		dissimuler	15
+dissimules		dissimuler	77
+dissimulez		dissimuler	47
+dissimuliez		dissimuler	67
+dissimulions		dissimuler	65
+dissimulons		dissimuler	59
+dissions		dire	90
+dissipa		dissiper	39
+dissipai		dissiper	22
+dissipaient		dissiper	42
+dissipais		dissiper	29
+dissipait		dissiper	40
+dissipâmes		dissiper	3
+dissipant		dissiper	43
+dissipas		dissiper	12
+dissipasse		dissiper	6
+dissipassent		dissiper	17
+dissipasses		dissiper	8
+dissipassiez		dissiper	14
+dissipassions		dissiper	25
+dissipât		dissiper	20
+dissipâtes		dissiper	2
+dissipateur	Qui dissipe.
+dissipateurs		dissipateur	0
+dissipatif	Relatif à la dissipation de l’énergie.
+dissipatifs		dissipatif	9
+dissipation	Action par laquelle une chose est dissipée ou se dissipe.
+dissipations		dissipation	0
+dissipative		dissipatif	23
+dissipatives		dissipatif	1
+dissipatrice	Celle qui dissipe.
+dissipatrices		dissipateur	1
+dissipé	Détourné du devoir par des distractions frivoles.
+dissipée		dissipé	23
+dissipées		dissipé	1
+dissipent		dissiper	41
+dissiper	Détruire en dispersant.
+dissipera		dissiper	44
+dissiperai		dissiper	16
+dissiperaient		dissiper	28
+dissiperais		dissiper	60
+dissiperait		dissiper	49
+dissiperas		dissiper	7
+dissipèrent		dissiper	48
+dissiperez		dissiper	5
+dissiperiez		dissiper	4
+dissiperions		dissiper	11
+dissiperons		dissiper	10
+dissiperont		dissiper	54
+dissipés		dissipé	9
+dissipez		dissiper	47
+dissipiez		dissiper	13
+dissipions		dissiper	19
+dissipons		dissiper	27
+dissocia		dissocier	39
+dissociabilité	Caractère de ce qui peut être dissocier.
+dissociabilités		dissociabilité	0
+dissociable	Que l’on peut dissocier.
+dissociables		dissociable	0
+dissociai		dissocier	22
+dissociaient		dissocier	42
+dissociais		dissocier	29
+dissociait		dissocier	40
+dissociâmes		dissocier	3
+dissociant	Qui dissocie.
+dissocias		dissocier	12
+dissociasse		dissocier	6
+dissociassent		dissocier	17
+dissociasses		dissocier	8
+dissociassiez		dissocier	14
+dissociassions		dissocier	25
+dissociât		dissocier	20
+dissociâtes		dissocier	2
+dissociatif	Relatif à la dissociation psychique.
+dissociatifs		dissociatif	9
+dissociation	Action de dissocier.
+dissociations		dissociation	0
+dissociative		dissociatif	23
+dissociatives		dissociatif	1
+dissocie		dissocier	64
+dissociée		dissocier	45
+dissociées		dissocier	51
+dissocient		dissocier	41
+dissocier	Séparer des éléments qui étaient associés.
+dissociera		dissocier	21
+dissocierai		dissocier	16
+dissocieraient		dissocier	28
+dissocierais		dissocier	18
+dissocierait		dissocier	26
+dissocieras		dissocier	7
+dissocièrent		dissocier	24
+dissocierez		dissocier	5
+dissocieriez		dissocier	4
+dissocierions		dissocier	11
+dissocierons		dissocier	61
+dissocieront		dissocier	15
+dissociés		dissocier	53
+dissociez		dissocier	30
+dissociiez		dissocier	13
+dissociions		dissocier	19
+dissocions		dissocier	27
+dissolu	Qui vit dans la dissolution, dans la débauche.
+dissolubilité	Qualifie ce qui est dissoluble, ce qui peut se dissoudre, ce qui peut être dissous.
+dissolubilités		dissolubilité	0
+dissoluble	Qui peut être dissous.
+dissolubles		dissoluble	0
+dissolue		dissolu	23
+dissolues		dissolu	1
+dissolûmes		dissoudre	3
+dissolurent		dissoudre	24
+dissolus		dissolu	9
+dissolusse		dissoudre	6
+dissolussent		dissoudre	17
+dissolusses		dissoudre	8
+dissolussiez		dissoudre	14
+dissolussions		dissoudre	25
+dissolut		dissoudre	33
+dissolûtes		dissoudre	2
+dissolutif	Relatif à une dissolution.
+dissolutifs		dissolutif	9
+dissolution	État d’un corps primitivement solide dont les parties se sont séparées les unes des autres.
+dissolutions		dissolution	0
+dissolutive		dissolutif	23
+dissolutives		dissolutif	1
+dissolvaient		dissoudre	93
+dissolvais		dissoudre	29
+dissolvait		dissoudre	91
+dissolvant	Qui permet de dissoudre.
+dissolvante		dissolvant	23
+dissolvantes		dissolvant	1
+dissolvants		dissolvant	9
+dissolve		dissoudre	85
+dissolvent		dissoudre	41
+dissolves		dissoudre	98
+dissolvez		dissoudre	70
+dissolviez		dissoudre	13
+dissolvions		dissoudre	19
+dissolvons		dissoudre	27
+dissona		dissoner	33
+dissonai		dissoner	22
+dissonaient		dissoner	32
+dissonais		dissoner	29
+dissonait		dissoner	34
+dissonâmes		dissoner	3
+dissonance	Faux accord, relation d’un son à un autre avec lequel il n’est pas consonant.
+dissonances		dissonance	0
+dissonant	Qui forme dissonance.
+dissonante		dissonant	23
+dissonantes		dissonant	1
+dissonants		dissonant	9
+dissonas		dissoner	12
+dissonasse		dissoner	6
+dissonassent		dissoner	17
+dissonasses		dissoner	8
+dissonassiez		dissoner	14
+dissonassions		dissoner	25
+dissonât		dissoner	20
+dissonâtes		dissoner	2
+dissoné		dissoner	46
+dissonent		dissoner	31
+dissoner	Former dissonance.
+dissonera		dissoner	21
+dissonerai		dissoner	16
+dissoneraient		dissoner	28
+dissonerais		dissoner	18
+dissonerait		dissoner	26
+dissoneras		dissoner	7
+dissonèrent		dissoner	24
+dissonerez		dissoner	5
+dissoneriez		dissoner	4
+dissonerions		dissoner	11
+dissonerons		dissoner	10
+dissoneront		dissoner	15
+dissones		dissoner	66
+dissonez		dissoner	30
+dissoniez		dissoner	13
+dissonions		dissoner	19
+dissonons		dissoner	27
+dissoudra		dissoudre	44
+dissoudrai		dissoudre	50
+dissoudraient		dissoudre	28
+dissoudrais		dissoudre	18
+dissoudrait		dissoudre	92
+dissoudras		dissoudre	7
+dissoudre	Décomposer un organisme par la séparation de ses parties.
+dissoudrez		dissoudre	5
+dissoudriez		dissoudre	4
+dissoudrions		dissoudre	11
+dissoudrons		dissoudre	10
+dissoudront		dissoudre	54
+dissous	Qui a été solubilisé, dispersé dans un liquide appelé « solvant ».
+dissout	Qui a été solubilisé.
+dissoute	Féminin singulier de dissous (ou dissout).	dissout
+dissoutes		dissous	1
+dissouts		dissout	9
+dissuada		dissuader	39
+dissuadai		dissuader	55
+dissuadaient		dissuader	32
+dissuadais		dissuader	29
+dissuadait		dissuader	40
+dissuadâmes		dissuader	3
+dissuadant		dissuader	43
+dissuadas		dissuader	12
+dissuadasse		dissuader	6
+dissuadassent		dissuader	17
+dissuadasses		dissuader	8
+dissuadassiez		dissuader	14
+dissuadassions		dissuader	25
+dissuadât		dissuader	20
+dissuadâtes		dissuader	2
+dissuade		dissuader	64
+dissuadée		dissuader	45
+dissuadées		dissuader	36
+dissuadent		dissuader	41
+dissuader	Détourner de l’exécution d’un dessein ou d’une résolution prise.
+dissuadera		dissuader	44
+dissuaderai		dissuader	16
+dissuaderaient		dissuader	28
+dissuaderais		dissuader	18
+dissuaderait		dissuader	26
+dissuaderas		dissuader	57
+dissuadèrent		dissuader	48
+dissuaderez		dissuader	58
+dissuaderiez		dissuader	4
+dissuaderions		dissuader	11
+dissuaderons		dissuader	10
+dissuaderont		dissuader	54
+dissuadés		dissuader	53
+dissuadez		dissuader	47
+dissuadiez		dissuader	67
+dissuadions		dissuader	19
+dissuadons		dissuader	27
+dissuasif	Qui dissuade.
+dissuasifs		dissuasif	9
+dissuasion	Action de dissuader.
+dissuasions		dissuasion	0
+dissuasive		dissuasif	23
+dissuasives		dissuasif	1
+dissyllabe	Qui est de deux syllabes.
+dissyllabes	Pluriel de dissylabe.
+dissyllabique	Dont tous les mots sont des dissyllabes, ou qui n’ont que deux syllabes, en parlant de certains vers.
+dissyllabiques		dissyllabique	0
+dissymétrie	Défaut de symétrie.
+dissymétries		dissymétrie	0
+dissymétrique	Qui présente de la dissymétrie.
+dissymétriques		dissymétrique	0
+distal	Qui est le plus éloigné du corps, du centre d’un organe, de l’origine d'une structure ou du point d’attache d’un membre au tronc.
+distale		distal	23
+distales		distal	1
+distança		distancer	39
+distançai		distancer	22
+distançaient		distancer	32
+distançais		distancer	29
+distançait		distancer	40
+distançâmes		distancer	3
+distançant		distancer	43
+distanças		distancer	12
+distançasse		distancer	6
+distançassent		distancer	17
+distançasses		distancer	8
+distançassiez		distancer	14
+distançassions		distancer	25
+distançât		distancer	20
+distançâtes		distancer	2
+distance	Intervalle ; longueur.
+distancée		distancer	45
+distancées		distancer	36
+distancemètre	Appareil de mesure de la distance.
+distancemètres		distancemètre	0
+distancent		distancer	41
+distancer	Dépasser d’un intervalle plus ou moins grand.
+distancera		distancer	21
+distancerai		distancer	16
+distanceraient		distancer	28
+distancerais		distancer	18
+distancerait		distancer	26
+distanceras		distancer	7
+distancèrent		distancer	24
+distancerez		distancer	58
+distanceriez		distancer	4
+distancerions		distancer	11
+distancerons		distancer	10
+distanceront		distancer	15
+distancés		distancer	53
+distancez		distancer	30
+distancia		distancier	39
+distanciai		distancier	22
+distanciaient		distancier	32
+distanciais		distancier	29
+distanciait		distancier	34
+distanciâmes		distancier	3
+distanciant		distancier	35
+distancias		distancier	12
+distanciasse		distancier	6
+distanciassent		distancier	17
+distanciasses		distancier	8
+distanciassiez		distancier	14
+distanciassions		distancier	25
+distanciât		distancier	20
+distanciâtes		distancier	2
+distanciation	Fait de mettre de la distance entre soi et une action effectuée ou une parole prononcée.
+distanciations		distanciation	0
+distancié		distancier	46
+distanciée		distancier	37
+distanciées		distancier	36
+distanciel	Qui se fait à distance.
+distancielle		distanciel	23
+distancielles		distanciel	1
+distanciels		distanciel	9
+distancient		distancier	31
+distancier	Établir mentalement une distance vers quelque chose ou quelqu’un pour le regarder d’un œil extérieur.
+distanciera		distancier	21
+distancierai		distancier	16
+distancieraient		distancier	28
+distancierais		distancier	18
+distancierait		distancier	26
+distancieras		distancier	7
+distancièrent		distancier	24
+distancierez		distancier	5
+distancieriez		distancier	4
+distancierions		distancier	11
+distancierons		distancier	10
+distancieront		distancier	15
+distanciés		distancier	38
+distanciez		distancer	13
+distanciiez		distancier	13
+distanciions		distancier	19
+distancions		distancer	19
+distançons		distancer	59
+distant	Qui est séparé par un intervalle plus ou moins grand.
+distante		distant	23
+distantes		distant	1
+distants		distant	9
+distaux		distal	9
+distend		distendre	80
+distendaient		distendre	93
+distendais		distendre	114
+distendait		distendre	91
+distendant		distendre	43
+distende		distendre	85
+distendent		distendre	41
+distendes		distendre	76
+distendez		distendre	30
+distendiez		distendre	110
+distendîmes		distendre	3
+distendions		distendre	111
+distendirent		distendre	24
+distendis		distendre	22
+distendisse		distendre	6
+distendissent		distendre	17
+distendisses		distendre	8
+distendissiez		distendre	14
+distendissions		distendre	25
+distendit		distendre	39
+distendîtes		distendre	2
+distendons		distendre	27
+distendra		distendre	21
+distendrai		distendre	16
+distendraient		distendre	108
+distendrais		distendre	106
+distendrait		distendre	92
+distendras		distendre	7
+distendre	Élargir ou allonger par la tension.
+distendrez		distendre	5
+distendriez		distendre	99
+distendrions		distendre	101
+distendrons		distendre	10
+distendront		distendre	15
+distends		distendre	79
+distendu		distendre	56
+distendue	Féminin singulier de distendu.
+distendues	Féminin pluriel de distendu.
+distendus	Masculin pluriel de distendu.
+distension	Élargissement ou allongement d’un corps élastique.
+distensions		distension	0
+disthène	Synonyme de kyanite, qui est le nom agrée par l’IMA.
+disthènes		disthène	0
+distilla		distiller	33
+distillai		distiller	22
+distillaient		distiller	42
+distillais		distiller	29
+distillait		distiller	40
+distillâmes		distiller	3
+distillant		distiller	43
+distillas		distiller	12
+distillasse		distiller	6
+distillassent		distiller	17
+distillasses		distiller	8
+distillassiez		distiller	14
+distillassions		distiller	25
+distillat	Produit de la distillation.
+distillâtes		distiller	2
+distillateur	Celui qui fait des distillations.
+distillateurs		distillateur	0
+distillation	Action de distiller, opération par laquelle on sépare par la chaleur des substances composées pour en recueillir les parties volatiles.
+distillations		distillation	0
+distillatrice	Celle qui fait des distillations.
+distillatrices		distillatrice	0
+distillats		distillat	0
+distille		distiller	64
+distillée		distiller	45
+distillées		distiller	51
+distillent		distiller	41
+distiller	Soumettre à la distillation.
+distillera		distiller	44
+distillerai		distiller	16
+distilleraient		distiller	28
+distillerais		distiller	18
+distillerait		distiller	26
+distilleras		distiller	7
+distillèrent		distiller	24
+distillerez		distiller	5
+distillerie	Lieu où l’on fabrique et où l’on vend des produits obtenus par la distillation.
+distilleries		distillerie	0
+distilleriez		distiller	4
+distillerions		distiller	11
+distillerons		distiller	10
+distilleront		distiller	54
+distillés		distiller	53
+distillez		distiller	47
+distilliez		distiller	13
+distillions		distiller	19
+distillons		distiller	27
+distinct	Qui est nettement séparé d’une autre, en parlant de certaines choses.
+distincte		distinct	23
+distinctement	D’une manière distincte.
+distinctes		distinct	1
+distinctif	Qui distingue.
+distinctifs		distinctif	9
+distinction	Action de séparer nettement une chose d’une autre.
+distinctions		distinction	0
+distinctive		distinctif	23
+distinctives		distinctif	1
+distincts		distinct	9
+distingua		distinguer	39
+distinguable	Qui est susceptible d’être distingué.
+distinguables		distinguable	0
+distinguai		distinguer	55
+distinguaient		distinguer	42
+distinguais		distinguer	52
+distinguait		distinguer	40
+distinguâmes		distinguer	3
+distinguant		distinguer	43
+distinguas		distinguer	12
+distinguasse		distinguer	6
+distinguassent		distinguer	17
+distinguasses		distinguer	8
+distinguassiez		distinguer	14
+distinguassions		distinguer	25
+distinguât		distinguer	62
+distinguâtes		distinguer	2
+distingué	Qui est au-dessus du lot.
+distinguée		distingué	23
+distinguées		distingué	1
+distinguent		distinguer	41
+distinguer	Discerner par l’un des sens.
+distinguera		distinguer	44
+distinguerai		distinguer	16
+distingueraient		distinguer	63
+distinguerais		distinguer	18
+distinguerait		distinguer	49
+distingueras		distinguer	7
+distinguèrent		distinguer	48
+distinguerez		distinguer	58
+distingueriez		distinguer	4
+distinguerions		distinguer	11
+distinguerons		distinguer	10
+distingueront		distinguer	15
+distingues		distinguer	77
+distinguez		distinguer	47
+distinguiez		distinguer	67
+distinguions		distinguer	65
+distinguo	Interjection servant à marquer une distinction, une nuance, dans un débat contradictoire.
+distinguons		distinguer	59
+distinguos		distinguo	0
+distique	Qualifie les parties qui, sur un même plan, sont rangées en deux séries opposées.
+distiques		distique	0
+distomatose	Nom générique donné à de nombreuses maladies parasitaires dues à un ver trématode distome, e.g.
+distomatoses		distomatose	0
+distome	Ancien taxon de vers trématodes digènes munis de deux ventouses, déclenchant des distomoses ou distomatoses.
+distomes		distome	0
+distord		distordre	80
+distordaient		distordre	75
+distordais		distordre	86
+distordait		distordre	71
+distordant		distordre	43
+distorde		distordre	85
+distordent		distordre	69
+distordes		distordre	98
+distordez		distordre	70
+distordiez		distordre	100
+distordîmes		distordre	68
+distordions		distordre	94
+distordirent		distordre	48
+distordis		distordre	55
+distordisse		distordre	81
+distordissent		distordre	78
+distordisses		distordre	87
+distordissiez		distordre	88
+distordissions		distordre	90
+distordit		distordre	39
+distordîtes		distordre	84
+distordons		distordre	73
+distordra		distordre	44
+distordrai		distordre	50
+distordraient		distordre	63
+distordrais		distordre	60
+distordrait		distordre	49
+distordras		distordre	57
+distordre	Déformer en tordant.
+distordrez		distordre	58
+distordriez		distordre	74
+distordrions		distordre	82
+distordrons		distordre	61
+distordront		distordre	54
+distords		distordre	64
+distordu		distordre	56
+distordue		distordre	45
+distordues		distordre	51
+distordus		distordre	53
+distors	Qui est de travers ou contourné.
+distorse		distors	23
+distorses		distors	1
+distorsion	Déformation par une torsion.
+distorsions		distorsion	0
+distractif	Distrayant.
+distractifs		distractif	9
+distraction	Inattention, inapplication de la pensée aux choses dont on devrait s’occuper.
+distractions		distraction	0
+distractive		distractif	23
+distractives		distractif	1
+distraie		distraire	85
+distraient		distraire	41
+distraies		distraire	98
+distraira		distraire	44
+distrairai		distraire	50
+distrairaient		distraire	97
+distrairais		distraire	96
+distrairait		distraire	92
+distrairas		distraire	57
+distraire	Détourner de quelque application.
+distrairez		distraire	58
+distrairiez		distraire	104
+distrairions		distraire	105
+distrairons		distraire	61
+distrairont		distraire	54
+distrais		distraire	72
+distrait	Qui n’a pas d’attention à ce qu’il dit ou à ce qu’il fait, qui n’est pas à l'écoute de ce qu’on lui dit.
+distraite		distrait	23
+distraitement	D’une manière distraite.
+distraites		distrait	1
+distraits		distrait	9
+distrayaient		distraire	93
+distrayais		distraire	95
+distrayait		distraire	91
+distrayant	Qui est propre à distraire, à délasser et divertir l'esprit.
+distrayante		distrayant	23
+distrayantes		distrayant	1
+distrayants		distrayant	9
+distrayez		distraire	70
+distrayiez		distraire	102
+distrayions		distraire	103
+distrayons		distraire	73
+distribua		distribuer	39
+distribuable	Qui peut, qui doit être distribué.
+distribuables		distribuable	0
+distribuai		distribuer	55
+distribuaient		distribuer	42
+distribuais		distribuer	52
+distribuait		distribuer	40
+distribuâmes		distribuer	3
+distribuant		distribuer	43
+distribuas		distribuer	12
+distribuasse		distribuer	6
+distribuassent		distribuer	17
+distribuasses		distribuer	8
+distribuassiez		distribuer	14
+distribuassions		distribuer	25
+distribuât		distribuer	62
+distribuâtes		distribuer	2
+distribué	Qui est distribué, réparti.
+distribuée		distribué	23
+distribuées		distribué	1
+distribuent		distribuer	41
+distribuer	Répartir une chose entre plusieurs personnes ou plusieurs endroits.
+distribuera		distribuer	44
+distribuerai		distribuer	50
+distribueraient		distribuer	28
+distribuerais		distribuer	60
+distribuerait		distribuer	49
+distribueras		distribuer	7
+distribuèrent		distribuer	48
+distribuerez		distribuer	58
+distribueriez		distribuer	4
+distribuerions		distribuer	82
+distribuerons		distribuer	61
+distribueront		distribuer	54
+distribues		distribuer	77
+distribuez		distribuer	47
+distribuiez		distribuer	67
+distribuions		distribuer	65
+distribuons		distribuer	59
+distributaire	Qui reçoit une part dans une distribution.
+distributaires		distributaire	0
+distributeur	Qui distribue.
+distributeurs		distributeur	9
+distributif	Qui distribue.
+distributifs		distributif	9
+distribution	Action de distribuer ou résultat de cette action.
+distributions		distribution	0
+distributive		distributif	23
+distributives		distributif	1
+distributivité	Propriété que peut avoir une loi de composition interne par rapport à une autre dans un ensemble donné.
+distributivités		distributivité	0
+distributrice	Celle qui distribue, qui partage, qui répartit.
+distributrices		distributeur	1
+district	Division territoriale de moyenne étendue.
+districts		district	0
+distyle	Qui comporte un couple de colonnes.
+distyles		distyle	0
+disulfirame	Composé chimique, de formule C₁₀H₂₀N₂S₄, et médicament utilisé dans les cures de désintoxication alcoolique, et dont l’association avec l’alcool provoque l’eff…
+disulfirames	Pluriel de disulfirame.
+disulfure	Bisulfure.
+disulfures		disulfure	0
+dit	Mot, propos, maxime, sentence.
+dite		dit	23
+dites		dire	36
+dithyrambe	Poème lyrique en l’honneur de Dionysos.
+dithyrambes		dithyrambe	0
+dithyrambique	Qui appartient au genre poétique du dithyrambe.
+dithyrambiques		dithyrambique	0
+dito	Même chose. S’emploie pour éviter de répéter le nom d’une marchandise déjà désignée juste avant.
+dits		dit	9
+diurèse	Processus par lequel un être vivant élimine son urine.
+diurèses		diurèse	0
+diurétique	Qui fait uriner.
+diurétiques		diurétique	0
+diurnal	Dans l'Église catholique, bréviaire abrégé, qui, à l'exception des matines et quelquefois des laudes, ne contient que les offices récités au cours de la journé…
+diurnaux		diurnal	0
+diurne	Qui dure vingt-quatre heures.
+diurnes		diurne	0
+diva	Chanteuse, notamment cantatrice d’art lyrique, de grand talent.
+divagateur	Qui divague, qui aime à divaguer.
+divagateurs		divagateur	9
+divagation	Errance d’un animal sur la voie publique ou sur des propriétés privées.
+divagations		divagation	0
+divagatrice		divagateur	23
+divagatrices		divagateur	1
+divagua		divaguer	33
+divaguai		divaguer	22
+divaguaient		divaguer	42
+divaguais		divaguer	29
+divaguait		divaguer	40
+divaguâmes		divaguer	3
+divaguant		divaguer	43
+divaguas		divaguer	12
+divaguasse		divaguer	6
+divaguassent		divaguer	17
+divaguasses		divaguer	8
+divaguassiez		divaguer	14
+divaguassions		divaguer	25
+divaguât		divaguer	20
+divaguâtes		divaguer	2
+divague		divaguer	64
+divaguent		divaguer	41
+divaguer	Errer.
+divaguera		divaguer	21
+divaguerai		divaguer	16
+divagueraient		divaguer	28
+divaguerais		divaguer	18
+divaguerait		divaguer	26
+divagueras		divaguer	7
+divaguèrent		divaguer	24
+divaguerez		divaguer	5
+divagueriez		divaguer	4
+divaguerions		divaguer	11
+divaguerons		divaguer	10
+divagueront		divaguer	54
+divagues		divaguer	77
+divaguez		divaguer	47
+divaguiez		divaguer	67
+divaguions		divaguer	19
+divaguons		divaguer	27
+divalent	Synonyme de bivalent.
+divalente		divalent	23
+divalentes		divalent	1
+divalents		divalent	9
+divan	Conseil suprême, tribunal, assemblée de notables, de l’Empire ottoman, qui siégeaient sur des coussins.
+divans		divan	0
+divas		diva	0
+dive	Qui est divine.
+diverge		diverger	64
+divergea		diverger	33
+divergeai		diverger	22
+divergeaient		diverger	42
+divergeais		diverger	29
+divergeait		diverger	40
+divergeâmes		diverger	3
+divergeant		diverger	43
+divergeas		diverger	12
+divergeasse		diverger	6
+divergeassent		diverger	17
+divergeasses		diverger	8
+divergeassiez		diverger	14
+divergeassions		diverger	25
+divergeât		diverger	20
+divergeâtes		diverger	2
+divergence	Le fait de diverger.
+divergences		divergence	0
+divergent	Qui diverge.
+divergente		divergent	23
+divergentes		divergent	1
+divergents		divergent	9
+divergeons		diverger	59
+diverger	S’écarter de plus en plus l’un de l’autre.
+divergera		diverger	21
+divergerai		diverger	16
+divergeraient		diverger	28
+divergerais		diverger	18
+divergerait		diverger	26
+divergeras		diverger	7
+divergèrent		diverger	24
+divergerez		diverger	5
+divergeriez		diverger	4
+divergerions		diverger	11
+divergerons		diverger	10
+divergeront		diverger	15
+diverges		diverger	66
+divergez		diverger	47
+divergiez		diverger	13
+divergions		diverger	65
+divers	Qui est de nature ou de qualité différente, ou qui présente plusieurs faces, plusieurs apparences.
+diverse		divers	23
+diversement	De diverse manière.
+diverses		divers	1
+diversifia		diversifier	33
+diversifiai		diversifier	22
+diversifiaient		diversifier	32
+diversifiais		diversifier	29
+diversifiait		diversifier	34
+diversifiâmes		diversifier	3
+diversifiant		diversifier	43
+diversifias		diversifier	12
+diversifiasse		diversifier	6
+diversifiassent		diversifier	17
+diversifiasses		diversifier	8
+diversifiassiez		diversifier	14
+diversifiât		diversifier	20
+diversifiâtes		diversifier	2
+diversification	Action de diversifier.
+diversifie		diversifier	64
+diversifiée		diversifier	45
+diversifiées		diversifier	51
+diversifient		diversifier	41
+diversifier	Rendre divers.
+diversifiera		diversifier	21
+diversifierai		diversifier	16
+diversifierais		diversifier	18
+diversifierait		diversifier	26
+diversifieras		diversifier	7
+diversifièrent		diversifier	24
+diversifierez		diversifier	5
+diversifieriez		diversifier	4
+diversifierions		diversifier	11
+diversifierons		diversifier	10
+diversifieront		diversifier	15
+diversifiés		diversifier	53
+diversifiez		diversifier	30
+diversifiiez		diversifier	13
+diversifiions		diversifier	19
+diversifions		diversifier	27
+diversiforme	Qui se présente sous diverses formes.
+diversiformes		diversiforme	0
+diversion	Action de détourner quelqu’un de ce qui le préoccupe, le chagrine.
+diversions		diversion	0
+diversité	État d’un ensemble comportant plusieurs éléments différents.
+diversités		diversité	0
+diverti		divertir	56
+diverticule	Petite poche en cul-de-sac, petite cavité naturelle ou pathologique située dans la paroi d’un organe creux, principalement le tube digestif et en particulier l…
+diverticules		diverticule	0
+diverticulite	Inflammation d’un diverticule.
+diverticulites		diverticulite	0
+diverticulose	Présence de petites hernies muqueuses, de diverticules sur la paroi du tube digestif : côlon, intestin grêle, œsophage.
+diverticuloses		diverticulose	0
+divertie		divertir	45
+diverties		divertir	36
+divertimento	Genre musical apparu à partir du XVIIIᵉ siècle.
+divertimentos		divertimento	0
+divertîmes		divertir	3
+divertir	Détourner de ce qui préoccupe, fatigue, ennuie en amusant, en récréant.
+divertira		divertir	44
+divertirai		divertir	16
+divertiraient		divertir	28
+divertirais		divertir	18
+divertirait		divertir	49
+divertiras		divertir	57
+divertirent		divertir	48
+divertirez		divertir	58
+divertiriez		divertir	4
+divertirions		divertir	11
+divertirons		divertir	61
+divertiront		divertir	54
+divertis		divertir	72
+divertissaient		divertir	75
+divertissais		divertir	86
+divertissait		divertir	71
+divertissant	Qui divertit ; qui amuse.
+divertissante		divertissant	23
+divertissantes		divertissant	1
+divertissants		divertissant	9
+divertisse		divertir	89
+divertissement	Récréation, amusement.
+divertissements		divertissement	0
+divertissent		divertir	69
+divertisses		divertir	76
+divertissez		divertir	70
+divertissiez		divertir	13
+divertissions		divertir	19
+divertissons		divertir	73
+divertit		divertir	80
+divertîtes		divertir	2
+dives		dive	0
+divette	Chanteuse de petit théâtre, de cabaret, de café-concert.
+divettes		divette	0
+dividende	Nombre à diviser selon la règle de division.
+dividendes		dividende	0
+divin	Qui est de Dieu, qui appartient à Dieu, à un dieu.
+divinateur	Qui prévoit ce qui doit arriver.
+divinateurs		divinateur	9
+divination	Art de deviner, de prédire l’avenir.
+divinations		divination	0
+divinatoire	Relatif à la divination.
+divinatoires		divinatoire	0
+divinatrice		divinateur	23
+divinatrices		divinateur	1
+divine		divin	23
+divinement	De manière divine, par la vertu de Dieu, d’un dieu ou d’une déesse.
+divines		divin	1
+divinisa		diviniser	33
+divinisai		diviniser	22
+divinisaient		diviniser	42
+divinisais		diviniser	29
+divinisait		diviniser	34
+divinisâmes		diviniser	3
+divinisant	Qui divinise.
+divinisas		diviniser	12
+divinisasse		diviniser	6
+divinisassent		diviniser	17
+divinisasses		diviniser	8
+divinisassiez		diviniser	14
+divinisassions		diviniser	25
+divinisât		diviniser	20
+divinisâtes		diviniser	2
+divinisation	Action de diviniser.
+divinisations		divinisation	0
+divinise		diviniser	64
+divinisée		diviniser	45
+divinisées		diviniser	36
+divinisent		diviniser	31
+diviniser	Reconnaitre pour divin, mettre au rang des dieux.
+divinisera		diviniser	21
+diviniserai		diviniser	16
+diviniseraient		diviniser	28
+diviniserais		diviniser	18
+diviniserait		diviniser	26
+diviniseras		diviniser	7
+divinisèrent		diviniser	24
+diviniserez		diviniser	5
+diviniseriez		diviniser	4
+diviniserions		diviniser	11
+diviniserons		diviniser	10
+diviniseront		diviniser	15
+divinisés	Masculin pluriel de divinisé.
+divinisez		diviniser	47
+divinisiez		diviniser	13
+divinisions		diviniser	19
+divinisons		diviniser	27
+divinité	Essence divine.
+divinités		divinité	0
+divins		divin	9
+divis	Qui est partagé.
+divisa		diviser	39
+divisai		diviser	55
+divisaient		diviser	42
+divisais		diviser	52
+divisait		diviser	40
+divisâmes		diviser	3
+divisant		diviser	43
+divisas		diviser	12
+divisasse		diviser	6
+divisassent		diviser	17
+divisasses		diviser	8
+divisassiez		diviser	14
+divisassions		diviser	25
+divisât		diviser	20
+divisâtes		diviser	2
+divisé	Qui ne penche ni dans un sens ni dans un autre.
+divisée	Synonyme de phalène blanche (papillon).
+divisées		diviser	51
+divisent		diviser	41
+diviser	Séparer en parties.
+divisera		diviser	44
+diviserai		diviser	16
+diviseraient		diviser	28
+diviserais		diviser	60
+diviserait		diviser	49
+diviseras		diviser	7
+divisèrent		diviser	48
+diviserez		diviser	5
+diviseriez		diviser	4
+diviserions		diviser	11
+diviserons		diviser	10
+diviseront		diviser	15
+divisés		divisé	9
+diviseur	Nombre par lequel on divise un autre nombre, ce dernier étant appelé le dividende.
+diviseurs	Pluriel de diviseur.
+diviseuse	Celle qui est cause de division, de désunion.
+diviseuses		diviseur	1
+divisez		diviser	47
+divisibilité	Qualité de ce qui peut être divisé.
+divisibilités		divisibilité	0
+divisible	Qui peut être divisé.
+divisibles		divisible	0
+divisiez		diviser	13
+division	Action de diviser.
+divisionnaire	Qui appartient à une division.
+divisionnaires		divisionnaire	0
+divisionnisme	Technique picturale mise en place par Georges Seurat et Paul Signac consistant à rendre une couleur sur la toile en la décomposant en ses couleurs primaires et…
+divisionnismes		divisionnisme	0
+divisionniste	Relatif au divisionnisme.
+divisionnistes		divisionniste	0
+divisions		division	0
+divisons		diviser	59
+divorça		divorcer	39
+divorçai		divorcer	22
+divorçaient		divorcer	42
+divorçais		divorcer	29
+divorçait		divorcer	40
+divorçâmes		divorcer	3
+divorçant		divorcer	43
+divorças		divorcer	12
+divorçasse		divorcer	6
+divorçassent		divorcer	17
+divorçasses		divorcer	8
+divorçassiez		divorcer	14
+divorçassions		divorcer	25
+divorçât		divorcer	20
+divorçâtes		divorcer	2
+divorce	Dissolution judiciaire du mariage.
+divorcée	Femme qui a divorcé.
+divorcées		divorcé	1
+divorcent		divorcer	41
+divorcer	Prononcer, demander, obtenir la dissolution d'un mariage.
+divorcera		divorcer	44
+divorcerai		divorcer	50
+divorceraient		divorcer	28
+divorcerais		divorcer	60
+divorcerait		divorcer	49
+divorceras		divorcer	57
+divorcèrent		divorcer	48
+divorcerez		divorcer	58
+divorceriez		divorcer	74
+divorcerions		divorcer	11
+divorcerons		divorcer	61
+divorceront		divorcer	54
+divorcés		divorcé	0
+divorcez		divorcer	47
+divorciez		divorcer	67
+divorcions		divorcer	65
+divorçons		divorcer	59
+divortialité	Taux de divorce.
+divortialités		divortialité	0
+divot	Motte de terre ou de gazon enlevée par la tête de la canne au moment de l’impact.
+divots		divot	0
+divulgacha		divulgacher	39
+divulgachai		divulgacher	55
+divulgachaient		divulgacher	75
+divulgachais		divulgacher	86
+divulgachait		divulgacher	71
+divulgachâmes		divulgacher	68
+divulgachant		divulgacher	43
+divulgachas		divulgacher	83
+divulgachasse		divulgacher	81
+divulgachassent		divulgacher	78
+divulgachasses		divulgacher	87
+divulgachassiez		divulgacher	88
+divulgachât		divulgacher	62
+divulgachâtes		divulgacher	84
+divulgaché		divulgacher	56
+divulgachée		divulgacher	45
+divulgachées		divulgacher	51
+divulgachent		divulgacher	69
+divulgâcher	Divulguer prématurément un élément-clé (d’une intrigue, d’un jeu, etc.) susceptible de gâcher une partie du plaisir.
+divulgachera		divulgacher	44
+divulgacherai		divulgacher	50
+divulgacherais		divulgacher	60
+divulgacherait		divulgacher	49
+divulgacheras		divulgacher	57
+divulgachèrent		divulgacher	48
+divulgacherez		divulgacher	58
+divulgacheriez		divulgacher	74
+divulgacherions		divulgacher	82
+divulgacherons		divulgacher	61
+divulgacheront		divulgacher	54
+divulgachés		divulgacher	53
+divulgachez		divulgacher	70
+divulgachiez		divulgacher	100
+divulgachions		divulgacher	94
+divulgachons		divulgacher	73
+divulgateur	Celui qui divulgue.
+divulgateurs		divulgateur	0
+divulgation	Action de divulguer ou état d’une chose divulguée.
+divulgations		divulgation	0
+divulgatrice	Celle qui divulgue.
+divulgatrices		divulgatrice	0
+divulgua		divulguer	33
+divulguai		divulguer	22
+divulguaient		divulguer	32
+divulguais		divulguer	29
+divulguait		divulguer	40
+divulguâmes		divulguer	3
+divulguant		divulguer	43
+divulguas		divulguer	12
+divulguasse		divulguer	6
+divulguassent		divulguer	17
+divulguasses		divulguer	8
+divulguassiez		divulguer	14
+divulguassions		divulguer	25
+divulguât		divulguer	20
+divulguâtes		divulguer	2
+divulgue		divulguer	64
+divulguée		divulguer	45
+divulguées		divulguer	51
+divulguent		divulguer	31
+divulguer	Rendre public ce qui n’était pas su.
+divulguera		divulguer	44
+divulguerai		divulguer	16
+divulgueraient		divulguer	28
+divulguerais		divulguer	18
+divulguerait		divulguer	26
+divulgueras		divulguer	7
+divulguèrent		divulguer	24
+divulguerez		divulguer	5
+divulgueriez		divulguer	4
+divulguerions		divulguer	11
+divulguerons		divulguer	10
+divulgueront		divulguer	15
+divulgués		divulguer	53
+divulguez		divulguer	47
+divulguiez		divulguer	13
+divulguions		divulguer	19
+divulguons		divulguer	59
+divulsion	Action d’arracher, de séparer avec violence.
+divulsions		divulsion	0
+diwan	Recueil de poésie ou de prose dans les littératures arabe, persane, ottomane et ourdou.
+diwans		diwan	0
+dix	Neuf plus un, adjectif numéral cardinal correspondant au nombre 10.
+dixie	Style de jazz de la Nouvelle-Orléans.
+dixieland	Musique jazz de style New Orleans lorsqu'elle est jouée par des musiciens blancs, suivant le modèle des musiciens noirs.
+dixielands		dixieland	0
+dixième	Qui concerne l’ordinal ou la fraction dixième.
+dixièmement	En dixième (10^(ème)) lieu.
+dixièmes		dixième	0
+dixies		dixie	0
+dixit	Sert à introduire l’auteur d'une citation, celle-ci étant implicitement présentée comme exacte.
+dizain	Ce qui est composé de dix parties.
+dizaine	Groupe de dix unités.
+dizaines		dizaine	0
+dizainier	Variante orthographique de dizenier.
+dizainiers		dizainier	0
+dizains		dizain	0
+dizenier	Chef d’une dizaine, ou celui qui a dix personnes sous sa direction.
+dizeniers		dizenier	0
+dizygote	Qui proviennent de deux zygotes différents.
+dizygotes		dizygote	0

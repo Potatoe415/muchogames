@@ -153,6 +153,16 @@
   color: #5f8f7a;
 }
 
+.sc-define-license {
+  margin: 14px 0 0;
+  font-size: 0.72rem;
+  color: #8a9a94;
+}
+
+.sc-define-license a {
+  color: inherit;
+}
+
 /* --- End card --- */
 .sc-end-title {
   margin: 0 0 6px;

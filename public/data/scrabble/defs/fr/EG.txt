@@ -1,0 +1,845 @@
+égagropile	Concrétion qui se forme parfois dans l’estomac de certains ruminants, faite de poils, de plumes et de débris végétaux non digérés.
+égagropiles		égagropile	0
+égaie		égayer	64
+égaiement	Action d’égayer, de rendre joyeux, ou de s’égayer, fait d’être joyeux.
+égaiements		égaiement	0
+égaient		égayer	31
+égaiera		égayer	21
+égaierai		égayer	16
+égaieraient		égayer	63
+égaierais		égayer	18
+égaierait		égayer	49
+égaieras		égayer	7
+égaierez		égayer	5
+égaieriez		égayer	4
+égaierions		égayer	11
+égaierons		égayer	61
+égaieront		égayer	54
+égaies		égayer	66
+égailla		égailler	39
+égaillai		égailler	22
+égaillaient		égailler	42
+égaillais		égailler	29
+égaillait		égailler	40
+égaillâmes		égailler	3
+égaillant		égailler	43
+égaillas		égailler	12
+égaillasse		égailler	6
+égaillassent		égailler	17
+égaillasses		égailler	8
+égaillassiez		égailler	14
+égaillassions		égailler	25
+égaillât		égailler	20
+égaillâtes		égailler	2
+égaillé	Dispersé.
+égaillée		égaillé	23
+égaillées		égaillé	1
+égaillent		égailler	41
+égailler	Disperser.
+égaillera		égailler	21
+égaillerai		égailler	16
+égailleraient		égailler	28
+égaillerais		égailler	18
+égaillerait		égailler	26
+égailleras		égailler	7
+égaillèrent		égailler	48
+égaillerez		égailler	5
+égailleriez		égailler	4
+égaillerions		égailler	11
+égaillerons		égailler	10
+égailleront		égailler	15
+égaillés		égaillé	9
+égaillez		égailler	30
+égailliez		égailler	13
+égaillions		égailler	19
+égaillons		égailler	27
+égal	Qui est semblable, soit en nature, soit en quantité, soit en qualité.
+égala		égaler	39
+égalable	Qu’on peut égaler.
+égalables		égalable	0
+égalai		égaler	22
+égalaient		égaler	42
+égalais		égaler	52
+égalait		égaler	40
+égalâmes		égaler	3
+égalant		égaler	43
+égalas		égaler	12
+égalasse		égaler	6
+égalassent		égaler	17
+égalasses		égaler	8
+égalassiez		égaler	14
+égalassions		égaler	25
+égalât		égaler	62
+égalâtes		égaler	2
+égalé	Dont quelqu’un a a atteint le niveau.
+égalée		égaler	45
+égalées		égaler	51
+également	Aussi.
+égalent		égaler	41
+égaler	Rendre égal.
+égalera		égaler	44
+égalerai		égaler	50
+égaleraient		égaler	28
+égalerais		égaler	60
+égalerait		égaler	112
+égaleras		égaler	57
+égalèrent		égaler	24
+égalerez		égaler	5
+égaleriez		égaler	4
+égalerions		égaler	11
+égalerons		égaler	10
+égaleront		égaler	54
+égales		égal	1
+égalez		égaler	30
+égaliez		égaler	13
+égalions		égaler	19
+égalisa		égaliser	39
+égalisai		égaliser	22
+égalisaient		égaliser	32
+égalisais		égaliser	52
+égalisait		égaliser	40
+égalisâmes		égaliser	3
+égalisant	Qui égalise ; qui établit une égalité.
+égalisas		égaliser	12
+égalisasse		égaliser	6
+égalisassent		égaliser	17
+égalisasses		égaliser	8
+égalisassiez		égaliser	14
+égalisassions		égaliser	25
+égalisât		égaliser	20
+égalisâtes		égaliser	2
+égalisateur	Qui égalise.
+égalisateurs		égalisateur	9
+égalisation	Action d’égaliser.
+égalisations		égalisation	0
+égalisatrice		égalisateur	23
+égalisatrices		égalisateur	1
+égalise		égaliser	64
+égalisée		égaliser	37
+égalisées		égaliser	51
+égalisent		égaliser	41
+égaliser	Rendre égal, en parlant des choses.
+égalisera		égaliser	21
+égaliserai		égaliser	16
+égaliseraient		égaliser	28
+égaliserais		égaliser	18
+égaliserait		égaliser	26
+égaliseras		égaliser	7
+égalisèrent		égaliser	48
+égaliserez		égaliser	5
+égaliseriez		égaliser	4
+égaliserions		égaliser	11
+égaliserons		égaliser	10
+égaliseront		égaliser	15
+égalisés		égaliser	53
+égaliseur	Ensemble électronique possédant un grand nombre de réglages de tonalité permettant de modeler, au gré de l'utilisateur, la courbe de réponse d'un amplificateur.
+égaliseurs		égaliseur	0
+égalisez		égaliser	47
+égalisiez		égaliser	13
+égalisions		égaliser	19
+égalisons		égaliser	27
+égalitaire	Relatif à un principe d’égalité entre les parties d’un ensemble.
+égalitaires		égalitaire	0
+égalitarisme	Doctrine politique prônant l’égalité des citoyens en matière politique, économique et sociale.
+égalitarismes		égalitarisme	0
+égalitariste	Adepte de l’égalitarisme.
+égalitaristes		égalitariste	0
+égalité	Qualité de ce qui est égal.
+égalités		égalité	0
+égalons		égaler	27
+égara		égarer	39
+égarai		égarer	55
+égaraient		égarer	42
+égarais		égarer	52
+égarait		égarer	40
+égarâmes		égarer	3
+égarant		égarer	140
+égaras		égarer	12
+égarasse		égarer	6
+égarassent		égarer	17
+égarasses		égarer	8
+égarassiez		égarer	14
+égarassions		égarer	25
+égarât		égarer	62
+égarâtes		égarer	2
+égard	Action de prendre quelque chose en considération, d’y faire attention, d’en tenir compte.
+égards		égard	0
+égaré	Écarté du droit chemin, perdu, qui ne sait plus où il est.
+égarée	Féminin singulier de égaré.
+égarées		égaré	1
+égarement	Action de s’égarer.
+égarements		égarement	0
+égarent		égarer	41
+égarer	Mettre hors du droit chemin.
+égarera		égarer	21
+égarerai		égarer	16
+égareraient		égarer	63
+égarerais		égarer	60
+égarerait		égarer	49
+égareras		égarer	7
+égarèrent		égarer	48
+égarerez		égarer	5
+égareriez		égarer	4
+égarerions		égarer	82
+égarerons		égarer	10
+égareront		égarer	15
+égarés		égaré	9
+égarez		égarer	47
+égariez		égarer	13
+égarions		égarer	19
+égarons		égarer	135
+égaux		égal	9
+égaya		égayer	39
+égayai		égayer	55
+égayaient		égayer	42
+égayais		égayer	52
+égayait		égayer	40
+égayâmes		égayer	68
+égayant	Qui égaye, qui rend gai.
+égayante		égayant	23
+égayantes		égayant	1
+égayants		égayant	9
+égayas		égayer	83
+égayasse		égayer	81
+égayassent		égayer	78
+égayasses		égayer	87
+égayassiez		égayer	14
+égayassions		égayer	90
+égayât		égayer	62
+égayâtes		égayer	84
+égaye		égayer	64
+égayée		égayer	45
+égayées		égayer	51
+égayement	Variante de égaiement.
+égayements		égayement	0
+égayent		égayer	41
+égayer	Rendre gai.
+égayera		égayer	21
+égayerai		égayer	50
+égayeraient		égayer	28
+égayerais		égayer	60
+égayerait		égayer	26
+égayeras		égayer	57
+égayèrent		égayer	48
+égayerez		égayer	58
+égayeriez		égayer	4
+égayerions		égayer	11
+égayerons		égayer	61
+égayeront		égayer	54
+égayés		égayer	38
+égayez		égayer	47
+égayiez		égayer	67
+égayions		égayer	65
+égayons		égayer	59
+égéen	Relatif à la mer Égée.
+égéenne		égéen	23
+égéennes		égéen	1
+égéens		égéen	9
+égérie	Femme qui est l’inspiratrice d’un homme, d’un écrivain, d’un artiste.
+égéries		égérie	0
+égerma		égermer	33
+égermai		égermer	22
+égermaient		égermer	32
+égermais		égermer	29
+égermait		égermer	34
+égermâmes		égermer	3
+égermant		égermer	35
+égermas		égermer	12
+égermasse		égermer	6
+égermassent		égermer	17
+égermasses		égermer	8
+égermassiez		égermer	14
+égermassions		égermer	25
+égermât		égermer	20
+égermâtes		égermer	2
+égermé		égermer	46
+égermée		égermer	37
+égermées		égermer	36
+égerment		égermer	31
+égermer	Enlever le germe de quelque chose.
+égermera		égermer	21
+égermerai		égermer	16
+égermeraient		égermer	28
+égermerais		égermer	18
+égermerait		égermer	26
+égermeras		égermer	7
+égermèrent		égermer	24
+égermerez		égermer	5
+égermeriez		égermer	4
+égermerions		égermer	11
+égermerons		égermer	10
+égermeront		égermer	15
+égermés		égermer	38
+égermez		égermer	30
+égermiez		égermer	13
+égermions		égermer	19
+égermons		égermer	27
+égide	Arme mythique prodigieuse, autant offensive que défensive, utilisée par Athéna Pallas, symbole de sa puissance protectrice, et par Zeus qui en l’agitant déclen…
+égides		égide	0
+églantier	Rosier sauvage aux fruits oblongs, d’un rouge vif, renfermant des semences enveloppées de poils (→ voir gratte-cul).
+églantiers		églantier	0
+églantine	Fleur de l’églantier.
+églantines		églantine	0
+églefin	Autre graphie d’aiglefin, espèce de morue des mers du Nord.
+églefins		églefin	0
+église	Lieu de culte dans la religion chrétienne.
+églises		église	0
+églogue	Petit poème pastoral et bucolique qui met souvent en scène des bergers.
+églogues		églogue	0
+églomisa		églomiser	33
+églomisai		églomiser	22
+églomisaient		églomiser	32
+églomisais		églomiser	29
+églomisait		églomiser	34
+églomisâmes		églomiser	3
+églomisant		églomiser	35
+églomisas		églomiser	12
+églomisasse		églomiser	6
+églomisassent		églomiser	17
+églomisasses		églomiser	8
+églomisassiez		églomiser	14
+églomisassions		églomiser	25
+églomisât		églomiser	20
+églomisâtes		églomiser	2
+églomisé	Se dit d’un verre portant, sur sa face interne, découpée dans une mince feuille d’or fixée au vernis une décoration qui apparaît par transparence à travers la …
+églomisée		églomiser	37
+églomisées		églomiser	36
+églomisent		églomiser	31
+églomiser	Fixer une mince feuille d’or ou d’argent sous le verre, avant que le dessin soit ensuite exécuté à la pointe sèche et maintenu par une deuxième couche ou une p…
+églomisera		églomiser	21
+églomiserai		églomiser	16
+églomiseraient		églomiser	28
+églomiserais		églomiser	18
+églomiserait		églomiser	26
+églomiseras		églomiser	7
+églomisèrent		églomiser	24
+églomiserez		églomiser	5
+églomiseriez		églomiser	4
+églomiserions		églomiser	11
+églomiserons		églomiser	10
+églomiseront		églomiser	15
+églomisés		églomiser	38
+églomisez		églomiser	30
+églomisiez		églomiser	13
+églomisions		églomiser	19
+églomisons		églomiser	27
+ego	Représentation et conscience que l’on a de soi-même, en tant qu’individu séparé des autres, voire unique au monde, cherchant à être valorisé.
+égocentrique	Centré sur soi-même, qui se croit le centre de l'attention.
+égocentriques		égocentrique	0
+égocentrisme	Tendance à ramener tout à soi-même, à se sentir le centre du monde.
+égocentrismes		égocentrisme	0
+égocentriste	Centré sur soi-même.
+égocentristes		égocentriste	0
+égohine	Variante orthographique de égoïne.
+égohines		égohine	0
+égoïne	Scie à main, dont la lame est rigide et maniée par une poignée simple.
+égoïnes		égoïne	0
+égoïsme	Tendance a décider et agir en privilégiant son intérêt propre aux dépens de celui du reste du monde en général, ou d'autrui en particulier.
+égoïsmes		égoïsme	0
+égoïste	Qui ne pense qu'à soi, à ses intérêts.
+égoïstement	D’une manière égoïste.
+égoïstes		égoïste	0
+égoportrait	Autoportrait fait à l’aide d’un appareil photo ou d’un photophone, en général pour le publier sur un réseau social.
+égoportraits		égoportrait	0
+égorgé	Celui que l’on a égorgé, qui fut victime d’un égorgement.
+égorgea		égorger	39
+égorgeai		égorger	22
+égorgeaient		égorger	42
+égorgeais		égorger	52
+égorgeait		égorger	40
+égorgeâmes		égorger	3
+égorgeant		égorger	43
+égorgeas		égorger	12
+égorgeasse		égorger	6
+égorgeassent		égorger	17
+égorgeasses		égorger	8
+égorgeassiez		égorger	14
+égorgeassions		égorger	25
+égorgeât		égorger	20
+égorgeâtes		égorger	2
+égorgée	Celle que l’on a égorgé, qui fut victime d’un égorgement.
+égorgées	Pluriel de égorgée.
+égorgement	Action d’égorger.
+égorgements		égorgement	0
+égorgent		égorger	41
+égorgeons		égorger	27
+égorger	Tuer un animal en lui coupant la gorge.
+égorgera		égorger	21
+égorgerai		égorger	50
+égorgeraient		égorger	63
+égorgerais		égorger	60
+égorgerait		égorger	26
+égorgeras		égorger	57
+égorgèrent		égorger	48
+égorgerez		égorger	5
+égorgeriez		égorger	4
+égorgerions		égorger	11
+égorgerons		égorger	10
+égorgeront		égorger	54
+égorgés		égorgé	0
+égorgeur	Celui qui égorge d’autres personnes ou des animaux.
+égorgeurs		égorgeur	0
+égorgeuse	Celle qui égorge d’autres personnes ou des animaux.
+égorgeuses		égorgeuse	0
+égorgez		égorger	47
+égorgiez		égorger	13
+égorgions		égorger	19
+égos		égo	0
+égosilla		égosiller	39
+égosillai		égosiller	22
+égosillaient		égosiller	42
+égosillais		égosiller	29
+égosillait		égosiller	40
+égosillâmes		égosiller	3
+égosillant		égosiller	43
+égosillas		égosiller	12
+égosillasse		égosiller	6
+égosillassent		égosiller	17
+égosillasses		égosiller	8
+égosillassiez		égosiller	14
+égosillassions		égosiller	25
+égosillât		égosiller	20
+égosillâtes		égosiller	2
+égosillé	Dont la voix s’est épuisée à force de crier.
+égosillée		égosiller	45
+égosillées		égosiller	36
+égosillent		égosiller	41
+égosiller	Se faire mal à la gorge à force de crier.
+égosillera		égosiller	21
+égosillerai		égosiller	16
+égosilleraient		égosiller	28
+égosillerais		égosiller	18
+égosillerait		égosiller	49
+égosilleras		égosiller	7
+égosillèrent		égosiller	24
+égosillerez		égosiller	5
+égosilleriez		égosiller	4
+égosillerions		égosiller	11
+égosillerons		égosiller	10
+égosilleront		égosiller	15
+égosillés		égosiller	38
+égosillez		égosiller	30
+égosilliez		égosiller	13
+égosillions		égosiller	19
+égosillons		égosiller	27
+égosome	Variante orthographique de ægosome.
+égosomes		égosome	0
+égotique	Relatif à l'égo, narcissique.
+égotiques		égotique	0
+égotisme	Étude sans complaisance qu’un écrivain fait de lui-même, de son physique et de son caractère, de sa personnalité.
+égotismes		égotisme	0
+égotiste	Celui, celle qui pratique l’égotisme.
+égotistes		égotiste	118
+égourmanda		égourmander	39
+égourmandai		égourmander	55
+égourmandaient		égourmander	42
+égourmandais		égourmander	52
+égourmandait		égourmander	40
+égourmandâmes		égourmander	68
+égourmandant		égourmander	43
+égourmandas		égourmander	83
+égourmandasse		égourmander	81
+égourmandassent		égourmander	78
+égourmandasses		égourmander	87
+égourmandassiez		égourmander	88
+égourmandât		égourmander	62
+égourmandâtes		égourmander	84
+égourmandé		égourmander	56
+égourmandée		égourmander	45
+égourmandées		égourmander	51
+égourmandent		égourmander	41
+égourmander	Enlever les pousses gourmandes.
+égourmandera		égourmander	44
+égourmanderai		égourmander	50
+égourmanderais		égourmander	60
+égourmanderait		égourmander	49
+égourmanderas		égourmander	57
+égourmandèrent		égourmander	48
+égourmanderez		égourmander	58
+égourmanderiez		égourmander	74
+égourmanderions		égourmander	82
+égourmanderons		égourmander	61
+égourmanderont		égourmander	54
+égourmandés		égourmander	53
+égourmandez		égourmander	47
+égourmandiez		égourmander	67
+égourmandions		égourmander	65
+égourmandons		égourmander	59
+égout	Chute et écoulement des eaux qui viennent de quelque endroit.
+égoutier	Ouvrier qui travaille dans les réseaux d’égouts.
+égoutière	Ouvrière qui travaille dans les réseaux d’égouts.
+égoutières		égoutière	0
+égoutiers		égoutier	0
+égouts		égout	0
+égoutta		égoutter	39
+égouttage	Action d'égoutter.
+égouttages		égouttage	0
+égouttai		égoutter	22
+égouttaient		égoutter	42
+égouttais		égoutter	29
+égouttait		égoutter	40
+égouttâmes		égoutter	3
+égouttant		égoutter	43
+égouttas		égoutter	12
+égouttasse		égoutter	6
+égouttassent		égoutter	17
+égouttasses		égoutter	8
+égouttassiez		égoutter	14
+égouttassions		égoutter	25
+égouttât		égoutter	20
+égouttâtes		égoutter	2
+égoutté	Qui a subi un égouttage.
+égouttée		égoutter	37
+égouttées		égoutter	36
+égouttement	Action d’égoutter.
+égouttements		égouttement	0
+égouttent		égoutter	41
+égoutter	Faire qu’une chose se débarrasse goutte à goutte du liquide qu’elle contient.
+égouttera		égoutter	21
+égoutterai		égoutter	16
+égoutteraient		égoutter	28
+égoutterais		égoutter	18
+égoutterait		égoutter	49
+égoutteras		égoutter	7
+égouttèrent		égoutter	48
+égoutterez		égoutter	5
+égoutteriez		égoutter	4
+égoutterions		égoutter	11
+égoutterons		égoutter	10
+égoutteront		égoutter	15
+égouttés		égoutter	38
+égouttez		égoutter	47
+égouttiez		égoutter	13
+égouttions		égoutter	19
+égouttoir	Planche, treillis, éclisse sur laquelle on met égoutter quelque chose.
+égouttoirs		égouttoir	0
+égouttons		égoutter	27
+égoutture	Reste de liqueur si petit qu’il ne tombe que goutte à goutte, quand on le verse.
+égouttures		égoutture	0
+égraina		égrainer	33
+égrainage	Variante de égrenage.
+égrainages		égrainage	0
+égrainai		égrainer	22
+égrainaient		égrainer	32
+égrainais		égrainer	29
+égrainait		égrainer	34
+égrainâmes		égrainer	3
+égrainant		égrainer	35
+égrainas		égrainer	12
+égrainasse		égrainer	6
+égrainassent		égrainer	17
+égrainasses		égrainer	8
+égrainassiez		égrainer	14
+égrainassions		égrainer	25
+égrainât		égrainer	20
+égrainâtes		égrainer	2
+égrainé		égrainer	46
+égrainée		égrainer	37
+égrainées		égrainer	36
+égrainent		égrainer	31
+égrainer	Variante de égrener.
+égrainera		égrainer	21
+égrainerai		égrainer	16
+égraineraient		égrainer	28
+égrainerais		égrainer	18
+égrainerait		égrainer	26
+égraineras		égrainer	7
+égrainèrent		égrainer	24
+égrainerez		égrainer	5
+égraineriez		égrainer	4
+égrainerions		égrainer	11
+égrainerons		égrainer	10
+égraineront		égrainer	15
+égrainés		égrainer	38
+égrainez		égrainer	30
+égrainiez		égrainer	13
+égrainions		égrainer	19
+égrainons		égrainer	27
+égrappa		égrapper	33
+égrappage	Action d’égrapper les raisins, les groseilles, etc.
+égrappages		égrappage	0
+égrappai		égrapper	22
+égrappaient		égrapper	32
+égrappais		égrapper	29
+égrappait		égrapper	40
+égrappâmes		égrapper	3
+égrappant		égrapper	35
+égrappas		égrapper	12
+égrappasse		égrapper	6
+égrappassent		égrapper	17
+égrappasses		égrapper	8
+égrappassiez		égrapper	14
+égrappassions		égrapper	25
+égrappât		égrapper	20
+égrappâtes		égrapper	2
+égrappé		égrapper	46
+égrappée		égrapper	37
+égrappées		égrapper	36
+égrappent		égrapper	31
+égrapper	Dégarnir de ses grains un fruit à grappe.
+égrappera		égrapper	21
+égrapperai		égrapper	16
+égrapperaient		égrapper	28
+égrapperais		égrapper	18
+égrapperait		égrapper	26
+égrapperas		égrapper	7
+égrappèrent		égrapper	24
+égrapperez		égrapper	5
+égrapperiez		égrapper	4
+égrapperions		égrapper	11
+égrapperons		égrapper	10
+égrapperont		égrapper	15
+égrappés		égrapper	38
+égrappez		égrapper	30
+égrappiez		égrapper	13
+égrappions		égrapper	19
+égrappoir	Machine qui "égrappe" le raisin, c’est-à-dire qui sépare les grains de la grappe.
+égrappoirs		égrappoir	0
+égrappons		égrapper	27
+égratigna		égratigner	39
+égratignai		égratigner	22
+égratignaient		égratigner	42
+égratignais		égratigner	52
+égratignait		égratigner	40
+égratignâmes		égratigner	3
+égratignant		égratigner	35
+égratignas		égratigner	12
+égratignasse		égratigner	6
+égratignassent		égratigner	17
+égratignasses		égratigner	8
+égratignassiez		égratigner	14
+égratignassions		égratigner	25
+égratignât		égratigner	20
+égratignâtes		égratigner	2
+égratigné	Qui a une égratignure.
+égratignée		égratigner	45
+égratignées		égratigner	36
+égratignent		égratigner	41
+égratigner	Écorcher légèrement la peau avec une griffe, les ongles, etc.
+égratignera		égratigner	21
+égratignerai		égratigner	16
+égratigneraient		égratigner	28
+égratignerais		égratigner	18
+égratignerait		égratigner	26
+égratigneras		égratigner	7
+égratignèrent		égratigner	24
+égratignerez		égratigner	5
+égratigneriez		égratigner	4
+égratignerions		égratigner	11
+égratignerons		égratigner	10
+égratigneront		égratigner	15
+égratignes		égratigner	77
+égratigneur	Personne qui égratigne.
+égratigneurs		égratigneur	0
+égratigneuse	Celle qui égratigne.
+égratigneuses		égratigneuse	0
+égratignez		égratigner	30
+égratigniez		égratigner	13
+égratignions		égratigner	19
+égratignons		égratigner	27
+égratignure	Action d’égratigner ou résultat de cette action.
+égratignures		égratignure	0
+égravillonna		égravillonner	33
+égravillonnai		égravillonner	22
+égravillonnais		égravillonner	29
+égravillonnait		égravillonner	34
+égravillonnâmes		égravillonner	3
+égravillonnant		égravillonner	35
+égravillonnas		égravillonner	12
+égravillonnasse		égravillonner	6
+égravillonnât		égravillonner	20
+égravillonnâtes		égravillonner	2
+égravillonné		égravillonner	46
+égravillonnée		égravillonner	37
+égravillonnées		égravillonner	36
+égravillonnent		égravillonner	31
+égravillonner	Débarrasser de la plus grande partie de la terre qui les entoure les racines d’un arbre qui a été levé en motte et qu’on veut replanter.
+égravillonnera		égravillonner	21
+égravillonnerai		égravillonner	16
+égravillonneras		égravillonner	7
+égravillonnerez		égravillonner	5
+égravillonnés		égravillonner	38
+égravillonnez		égravillonner	30
+égravillonniez		égravillonner	13
+égravillonnions		égravillonner	19
+égravillonnons		égravillonner	27
+égrena		égrener	39
+égrenage	Action d’égrener, de détacher les grains.
+égrenages		égrenage	0
+égrenai		égrener	22
+égrenaient		égrener	42
+égrenais		égrener	52
+égrenait		égrener	40
+égrenâmes		égrener	3
+égrenant		égrener	43
+égrenas		égrener	12
+égrenasse		égrener	6
+égrenassent		égrener	17
+égrenasses		égrener	8
+égrenassiez		égrener	14
+égrenassions		égrener	25
+égrenât		égrener	20
+égrenâtes		égrener	2
+égrène	Coins en métal que l'on pose dans les angles des caisses en bois, des malles, ou autre, dans le but de les renforcer et d'en éviter l'usure.
+égrenée		égrener	45
+égrenées		égrener	51
+égrènement	Variante de égrénement.
+égrènements		égrènement	0
+égrènent		égrener	41
+égrener	Dégarnir de ses grains une plante à épi, un fruit à grappe ou à gousse.
+égrènera		égrener	21
+égrènerai		égrener	16
+égrèneraient		égrener	28
+égrènerais		égrener	18
+égrènerait		égrener	26
+égrèneras		égrener	7
+égrenèrent		égrener	48
+égrènerez		égrener	5
+égrèneriez		égrener	4
+égrènerions		égrener	11
+égrènerons		égrener	10
+égrèneront		égrener	15
+égrenés		égrener	53
+égreneuse	Personne qui égrène.
+égreneuses		égreneuse	0
+égrenez		égrener	30
+égreniez		égrener	13
+égrenions		égrener	19
+égrenons		égrener	27
+égression	Parenthèse dans le discours, digression.
+égressions		égression	118
+égrillard	Gaillard ; grivois.
+égrillarde		égrillard	23
+égrillardes		égrillard	1
+égrillards		égrillard	9
+égrisa		égriser	33
+égrisage	Action d’égriser.
+égrisages		égrisage	0
+égrisai		égriser	22
+égrisaient		égriser	32
+égrisais		égriser	29
+égrisait		égriser	34
+égrisâmes		égriser	3
+égrisant		égriser	35
+égrisas		égriser	12
+égrisasse		égriser	6
+égrisassent		égriser	17
+égrisasses		égriser	8
+égrisassiez		égriser	14
+égrisassions		égriser	25
+égrisât		égriser	20
+égrisâtes		égriser	2
+égrisé		égriser	56
+égrisée	Poussière de diamant qui sert à polir les diamants bruts et que l'on recueille dans un égrisoir.
+égrisées		égrisée	0
+égrisent		égriser	31
+égriser	User par frottement.
+égrisera		égriser	21
+égriserai		égriser	16
+égriseraient		égriser	28
+égriserais		égriser	18
+égriserait		égriser	26
+égriseras		égriser	7
+égrisèrent		égriser	24
+égriserez		égriser	5
+égriseriez		égriser	4
+égriserions		égriser	11
+égriserons		égriser	10
+égriseront		égriser	15
+égrisés		égriser	38
+égrisez		égriser	30
+égrisiez		égriser	13
+égrisions		égriser	19
+égrisons		égriser	27
+égrotant	Qui est malade de façon continue, permanente.
+égrotante	Femme qui est malade de façon continue, permanente.
+égrotantes		égrotant	0
+égrotants		égrotant	9
+égrugé		égruger	56
+égrugea		égruger	33
+égrugeage	Action d’égruger.
+égrugeages		égrugeage	0
+égrugeai		égruger	22
+égrugeaient		égruger	32
+égrugeais		égruger	29
+égrugeait		égruger	34
+égrugeâmes		égruger	3
+égrugeant		égruger	35
+égrugeas		égruger	12
+égrugeasse		égruger	6
+égrugeassent		égruger	17
+égrugeasses		égruger	8
+égrugeassiez		égruger	14
+égrugeassions		égruger	25
+égrugeât		égruger	20
+égrugeâtes		égruger	2
+égrugée		égruger	37
+égrugées		égruger	36
+égrugent		égruger	31
+égrugeoir	Petit récipient ordinairement de buis (en France), dans lequel on égruge du sel, du sucre.
+égrugeoirs		égrugeoir	0
+égrugeons		égruger	27
+égruger	Briser, mettre en poudre dans l’égrugeoir.
+égrugera		égruger	21
+égrugerai		égruger	16
+égrugeraient		égruger	28
+égrugerais		égruger	18
+égrugerait		égruger	26
+égrugeras		égruger	7
+égrugèrent		égruger	24
+égrugerez		égruger	5
+égrugeriez		égruger	4
+égrugerions		égruger	11
+égrugerons		égruger	10
+égrugeront		égruger	15
+égrugés		égruger	38
+égrugez		égruger	30
+égrugiez		égruger	13
+égrugions		égruger	19
+égueula		égueuler	33
+égueulai		égueuler	22
+égueulaient		égueuler	32
+égueulais		égueuler	29
+égueulait		égueuler	34
+égueulâmes		égueuler	3
+égueulant		égueuler	35
+égueulas		égueuler	12
+égueulasse		égueuler	6
+égueulassent		égueuler	17
+égueulasses		égueuler	8
+égueulassiez		égueuler	14
+égueulassions		égueuler	25
+égueulât		égueuler	20
+égueulâtes		égueuler	2
+égueulé	Qui a été égueulé.
+égueulée	Personne qui est grossière dans ses propos.
+égueulées		égueulé	1
+égueulement	Action d’égueuler ou résultat de cette action.
+égueulements		égueulement	0
+égueulent		égueuler	31
+égueuler	Déformer par le bord, par l’orifice.
+égueulera		égueuler	21
+égueulerai		égueuler	16
+égueuleraient		égueuler	28
+égueulerais		égueuler	18
+égueulerait		égueuler	26
+égueuleras		égueuler	7
+égueulèrent		égueuler	24
+égueulerez		égueuler	5
+égueuleriez		égueuler	4
+égueulerions		égueuler	11
+égueulerons		égueuler	10
+égueuleront		égueuler	15
+égueulés		égueulé	9
+égueulez		égueuler	30
+égueuliez		égueuler	13
+égueulions		égueuler	19
+égueulons		égueuler	27
+égyptien	De l’Égypte.
+égyptienne	Femme d’une population européenne errante.
+égyptiennes		égyptien	1
+égyptiens		égyptien	9
+égyptologie	Branche de l’archéologie se préoccupant des antiquités égyptiennes.
+égyptologies		égyptologie	0
+égyptologue	Archéologue spécialisé en égyptologie.
+égyptologues		égyptologue	0

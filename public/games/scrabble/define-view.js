@@ -28,6 +28,20 @@ function fill(block, entry, t) {
   block.append(link);
 }
 
+// Wiktionary text is CC BY-SA: the sheet credits it, live or offline.
+function licenseNote(t) {
+  const note = el("p", "sc-define-license");
+  note.dataset.id = "scrabble-define-license";
+  const link = el("a", "", t("defLicense"));
+  Object.assign(link, {
+    href: "https://creativecommons.org/licenses/by-sa/4.0/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  });
+  note.append(link);
+  return note;
+}
+
 // items: [{ word, lang, entry: Promise }]; showLang when the match mixes languages.
 export function renderDefinitions(host, items, t, showLang) {
   host.replaceChildren(
@@ -43,6 +57,7 @@ export function renderDefinitions(host, items, t, showLang) {
           block.querySelector(".sc-define-text").textContent = t("defError");
         });
       return block;
-    })
+    }),
+    licenseNote(t)
   );
 }

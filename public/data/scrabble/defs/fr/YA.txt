@@ -1,0 +1,99 @@
+yacht	Bâtiment de plaisance, à voiles ou à moteur.
+yachting	Pratique de la navigation de plaisance.
+yachtman	Pilote d’un yacht.
+yachtmans		yachtman	0
+yachtmen		yachtman	0
+yachts		yacht	0
+yachtsman	Pilote d’un yacht.
+yachtsmen		yachtsman	0
+yachtswoman	Pilote d’un yacht.
+yachtswomen		yachtswoman	0
+yachtwoman	Variante de yachtswoman.
+yachtwomans		yachtwoman	0
+yachtwomen		yachtwoman	0
+yack	Ruminant à cornes et à longs poils, qui vit dans l’Asie centrale sur les hauts plateaux en altitude.
+yacks		yack	0
+yak	Variante orthographique de yack.
+yaka	Langue bantoue parlée en République démocratique du Congo.
+yakas		yaka	0
+yakitori	Brochette de volaille grillée.
+yakitoris		yakitori	0
+yakoute	Relatif aux Yakoutes, un peuple turc.
+yakoutes		yakoute	0
+yaks		yak	0
+yakusa	Variante orthographique de yakuza.
+yakusas		yakusa	0
+yakuza	Membre de la mafia japonaise.
+yakuzas		yakuza	0
+yam	Nom donné, en Nouvelle-Guinée, à une racine analogue à la pomme de terre, igname.
+yamba	Chanvre indien.
+yambas		yamba	0
+Yamoussoukrois	Habitant de Yamoussoukro, capitale de Côte d’Ivoire.
+Yamoussoukroise	Habitante de Yamoussoukro, capitale de Côte d’Ivoire.
+yams	Yahtzee, jeu de dé.
+yang	Une des deux forces, le coté actif, de la réalité dans la philosophie et la médecine chinoise, associée à la lumière, au soleil, à la chaleur, à la sécheresse …
+yangs		yang	0
+yankee	Relatif aux Yankees, Américains.
+yankées		yankée	0
+yaoundéen	Relatif à Yaoundé, la capitale du Cameroun.
+Yaoundéens		Yaoundéen	0
+yaourt	Lait caillé préparé à partir de ferments lactiques.
+yaourtier	Relatif au yaourt, qui fabrique du yaourt.
+yaourtière	Appareil électroménager utilisé pour fabriquer des yaourts.
+yaourtières		yaourtière	0
+yaourtiers		yaourtier	0
+yaourts		yaourt	0
+yapock	Espèce d’opossum d’Amérique caractérisée par ses mœurs aquatiques et la coloration noire et blanche de son fin pelage.
+yapocks		yapock	0
+yapok	Variante de yapock.
+yapoks		yapok	0
+yard	Unité de mesure de la longueur (système impérial britannique), encore utilisée aux États-Unis, définie comme exactement 0,9144 mètre depuis 1959.
+yards		yard	0
+yass	Variante orthographique de jass
+yassa	Ragoût de poisson, de poulet ou de mouton dont la sauce est aromatisée au citron.
+yassai		yasser	55
+yassaient		yasser	42
+yassais		yasser	52
+yassait		yasser	40
+yassâmes		yasser	68
+yassant		yasser	43
+yassas		yassa	0
+yassasse		yasser	81
+yassassent		yasser	78
+yassasses		yasser	87
+yassassiez		yasser	88
+yassassions		yasser	90
+yassât		yasser	62
+yassâtes		yasser	84
+yasse	Variante orthographique de jass
+yassent		yasser	41
+yasser	Jouer au yass.
+yassera		yasser	44
+yasserai		yasser	50
+yasseraient		yasser	63
+yasserais		yasser	60
+yasserait		yasser	49
+yasseras		yasser	57
+yassèrent		yasser	48
+yasserez		yasser	58
+yasseriez		yasser	74
+yasserions		yasser	82
+yasserons		yasser	61
+yasseront		yasser	54
+yasses		yasser	77
+yasseur	Joueur de jass.
+yasseurs		yasseur	0
+yasseuse	Joueuse de jass.
+yasseuses		yasseuse	0
+yassez		yasser	47
+yassiez		yasser	67
+yassions		yasser	65
+yassons		yasser	59
+yatagan	Sabre turc, à lame recourbée et dont le tranchant forme, vers la pointe, une courbe rentrante.
+yatagans		yatagan	0
+yawl	Voilier à deux mâts dont l’artimon (mât arrière) est positionné en arrière de la mèche de safran.
+yawls		yawl	0
+yazidi	Relatif aux Yazidis.
+yazidis		yazidi	0
+yazidisme	Religion pratiquée par les Yazidis.
+yazidismes		yazidisme	0

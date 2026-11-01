@@ -1,0 +1,504 @@
+cyan	Couleur bleu-vert, complémentaire du rouge.
+cyanamide	Acide organique simple, de formule brute CH₂N₂, dénommé surtout cyanamide hydrogène ou cyanamide d’hydrogène.
+cyanamides		cyanamide	0
+cyanate	Sel produit par la combinaison de l’acide cyanique avec une base.
+cyanates		cyanate	0
+cyanéa	Méduse des mers froides de très grande taille et de couleur bleue.
+cyanéas		cyanéa	0
+cyanée	Méduse des mers froides de très grande taille et de couleur bleue, appartenant à la famille des Cyaneidae.
+cyanées		cyanée	0
+cyanelle	Genre d’herbacées natives du cap de Bonne-Espérance, de la famille des Tecophilaeaceae.
+cyanelles		cyanelle	0
+cyanhydrique	Qui est produit par la combinaison de l’hydrogène et du cyanogène.
+cyanhydriques		cyanhydrique	0
+cyanique	Dérivé d’un cyanure.
+cyaniques		cyanique	0
+cyanite	Kyanite, pierre bleutée.
+cyanites		cyanite	0
+cyanoacrylate	Ester d’acide cyanoacrylique, utilisé comme adhésif puissant et rapide.
+cyanobactérie	Sous-classe de bactéries (procaryotes) bleu-vert, marron ou rouge foncé.
+cyanobactéries		cyanobactérie	0
+cyanocobalamine	Forme de vitamine B₁₂.
+cyanogène	Synonyme de cyanogénétique.
+cyanogènes		cyanogène	0
+cyanophycée	Cyanobactérie.
+cyanophycées		cyanophycée	0
+cyanosa		cyanoser	33
+cyanosai		cyanoser	22
+cyanosaient		cyanoser	32
+cyanosais		cyanoser	29
+cyanosait		cyanoser	34
+cyanosâmes		cyanoser	3
+cyanosant		cyanoser	35
+cyanosas		cyanoser	12
+cyanosasse		cyanoser	6
+cyanosassent		cyanoser	17
+cyanosasses		cyanoser	8
+cyanosassiez		cyanoser	14
+cyanosassions		cyanoser	25
+cyanosât		cyanoser	20
+cyanosâtes		cyanoser	2
+cyanose	Coloration bleuâtre due à la stase du sang veineux ou aux communications pathologiques des systèmes veineux et artériel.
+cyanosée		cyanoser	37
+cyanosées		cyanoser	36
+cyanosent		cyanoser	31
+cyanoser	Provoquer la cyanose de.
+cyanosera		cyanoser	21
+cyanoserai		cyanoser	16
+cyanoseraient		cyanoser	28
+cyanoserais		cyanoser	18
+cyanoserait		cyanoser	26
+cyanoseras		cyanoser	7
+cyanosèrent		cyanoser	24
+cyanoserez		cyanoser	5
+cyanoseriez		cyanoser	4
+cyanoserions		cyanoser	11
+cyanoserons		cyanoser	10
+cyanoseront		cyanoser	15
+cyanoses		cyanose	0
+cyanosez		cyanoser	30
+cyanosiez		cyanoser	13
+cyanosions		cyanoser	19
+cyanosons		cyanoser	27
+cyanotique	Qui concerne la cyanose.
+cyanotiques		cyanotique	0
+cyans		cyan	0
+cyanura		cyanurer	33
+cyanurai		cyanurer	22
+cyanuraient		cyanurer	32
+cyanurais		cyanurer	29
+cyanurait		cyanurer	34
+cyanurâmes		cyanurer	3
+cyanurant		cyanurer	35
+cyanuras		cyanurer	12
+cyanurasse		cyanurer	6
+cyanurassent		cyanurer	17
+cyanurasses		cyanurer	8
+cyanurassiez		cyanurer	14
+cyanurassions		cyanurer	25
+cyanurât		cyanurer	20
+cyanurâtes		cyanurer	2
+cyanuration	Action de traiter par un cyanure.
+cyanurations		cyanuration	0
+cyanure	Combinaison du cyanogène avec un corps simple.
+cyanurée		cyanurer	37
+cyanurées		cyanurer	36
+cyanurent		cyanurer	31
+cyanurer	Procéder à la cyanuration de.
+cyanurera		cyanurer	21
+cyanurerai		cyanurer	16
+cyanureraient		cyanurer	28
+cyanurerais		cyanurer	18
+cyanurerait		cyanurer	26
+cyanureras		cyanurer	7
+cyanurèrent		cyanurer	24
+cyanurerez		cyanurer	5
+cyanureriez		cyanurer	4
+cyanurerions		cyanurer	11
+cyanurerons		cyanurer	10
+cyanureront		cyanurer	15
+cyanurés		cyanurer	38
+cyanurez		cyanurer	30
+cyanuriez		cyanurer	13
+cyanurions		cyanurer	19
+cyanurons		cyanurer	27
+cyberattaque	Ensemble coordonné d’actions menées dans le cyberespace qui visent des informations ou les systèmes qui les traitent, en portant atteinte à leur disponibilité,…
+cyberattaques		cyberattaque	0
+cybercafé	Établissement où l’on peut boire des boissons fraiches ou chaudes et surfer sur Internet grâce aux ordinateurs mis à la disposition des consommateurs.
+cybercafés		cybercafé	0
+cybercaméra	Caméra numérique, reliée à un ordinateur, qui permet de filmer et de diffuser en temps réel des vidéogrammes sur un réseau, en particulier l’internet.
+cybercaméras		cybercaméra	0
+cybercrime	Infraction pénale susceptible de se commettre sur ou au moyen d’un système informatique généralement connecté à un réseau.
+cybercrimes		cybercrime	0
+cyberculture	Culture liée à l’informatique et à internet.
+cybercultures		cyberculture	0
+cyberdéfense	Ensemble des moyens mis en place par un État pour défendre dans le cyberespace les systèmes d’information jugés d’importance vitale, qui contribuent à assurer …
+cyberdéfenses		cyberdéfense	0
+cyberdépendance	État de dépendance psychologique à l’égard des techniques de l’information et de la communication.
+cyberdépendant	Personne ayant une dépendance à internet
+cyberdépendante	Celle qui a une dépendance à internet.
+cyberdépendants		cyberdépendant	0
+cyberdjihadisme	Djihadisme sur le réseau internet.
+cyberdjihadiste	Qui concerne le djihadisme sur le réseau Internet.
+cyberespace	Espace constitué par les infrastructures interconnectées relevant des technologies de l’information, notamment l’internet, et par les données qui y sont traité…
+cyberespaces		cyberespace	0
+cyberespionnage	Ensemble d’actions menées dans le cyberespace consistant à infiltrer, clandestinement ou sous de faux prétextes, les systèmes informatiques d’une organisation …
+cyberguerre	Conflit se caractérisant par un ensemble d’actions offensives et défensives menées dans le cyberespace.
+cyberguerres		cyberguerre	0
+cyberjihadiste	Qui concerne le jihadisme sur le réseau Internet.
+cyberjihadistes		cyberjihadiste	0
+cybermonde	Cyberespace.
+cybermondes		cybermonde	0
+cybernaute	Internaute qui participe activement à la vie sur internet, par exemple en faisant partie d’une communauté, en y développant des relations, en y faisant de l’ac…
+cybernautes		cybernaute	0
+cybernéticien	Relatif à la cybernétique.
+cybernéticienne	Femme qui étudie la cybernétique.
+cybernéticiens		cybernéticien	9
+cybernétique	Science du gouvernement.
+cybernétiques		cybernétique	0
+cyberpirate	Hacker, bandit du cyberespace.
+cyberpirates		cyberpirate	0
+cybersécurité	État d’un système d’information qui résiste aux cyberattaques et aux pannes accidentelles survenant dans le cyberespace.
+cybersécurités		cybersécurité	0
+cybersexe	Ensemble des activités liées à la sexualité sur Internet.
+cybersexes		cybersexe	0
+cyberspatial	Relatif au cyberespace.
+cyberspatiale	Féminin de cyberspacial.
+cyberspatiales		cyberspatiale	0
+cyberspatiaux		cyberspatial	0
+cyberstratégie	Stratégie offensive ou défensive dans le cyberespace.
+cyberstratégies		cyberstratégie	0
+cyberterrorisme	Ensemble des cyberattaques à caractère terroriste qui visent principalement un État ou un groupe d’États, un opérateur d’importance vitale, une entreprise, une…
+cyborg	Androïde mi-robot, mi-humain.
+cyborgs		cyborg	0
+cycas	Genre de plantes arborescentes (Cycas spp.) palmiformes de l’embranchement des Cycadophytes, croissant sous les tropiques et considérées comme des gymnospermes…
+cyclable	Où l'on peut faire du vélo.
+cyclables		cyclable	0
+cycladique	Relatif aux Cyclades.
+cycladiques		cycladique	0
+cyclamate	Édulcorant artificiel principalement utilisé avec la saccharine comme produit sucrant, qui a pour formule chimique C₆H₁₂NNaO₃S.
+cyclamates		cyclamate	0
+cyclamen	Genre de plantes, de la famille des Primulacées.
+cyclamens		cyclamen	0
+cyclane	Composé chimique organique composé uniquement de carbone et d’hydrogène, de formule brute générale CₙH₂ₙ, et dont les atomes de carbone forment une chaîne qui …
+cyclanes	Pluriel de cyclane.
+cycle	Révolution astronomique.
+cyclecar	Voiturette à deux places, roulant sur trois ou quatre roues.
+cyclecars		cyclecar	0
+cycles		cycle	0
+cyclicité	Propriété de se produire régulièrement.
+cyclicités		cyclicité	0
+cycline	Protéine régulatrice des eucaryotes qui, en activant une kinase, permet le passage d’une phase du cycle cellulaire à la suivante.
+cyclines		cycline	0
+cyclique	Qui suit un cycle, qui se reproduit à intervalles réguliers.
+cycliquement	D'une manière cyclique.
+cycliques		cyclique	0
+cyclisa		cycliser	33
+cyclisai		cycliser	22
+cyclisaient		cycliser	32
+cyclisais		cycliser	29
+cyclisait		cycliser	34
+cyclisâmes		cycliser	3
+cyclisant		cycliser	35
+cyclisas		cycliser	12
+cyclisasse		cycliser	6
+cyclisassent		cycliser	17
+cyclisasses		cycliser	8
+cyclisassiez		cycliser	14
+cyclisassions		cycliser	25
+cyclisât		cycliser	20
+cyclisâtes		cycliser	2
+cyclisation	Obtention d'une molécule organique formée d’un cycle d’atomes.
+cyclisations		cyclisation	0
+cyclisé		cycliser	46
+cyclisée		cycliser	37
+cyclisées		cycliser	36
+cyclisent		cycliser	31
+cycliser	Rendre une chaîne d’atomes fermée, dans un composé organique.
+cyclisera		cycliser	21
+cycliserai		cycliser	16
+cycliseraient		cycliser	28
+cycliserais		cycliser	18
+cycliserait		cycliser	26
+cycliseras		cycliser	7
+cyclisèrent		cycliser	24
+cycliserez		cycliser	5
+cycliseriez		cycliser	4
+cycliserions		cycliser	11
+cycliserons		cycliser	10
+cycliseront		cycliser	15
+cyclisés		cycliser	38
+cyclisez		cycliser	30
+cyclisiez		cycliser	13
+cyclisions		cycliser	19
+cyclisme	Sport qui consiste à monter une bicyclette ou une motocyclette (bien qu’on dise plutôt motocyclisme dans ce second cas).
+cyclismes		cyclisme	0
+cyclisons		cycliser	27
+cycliste	Qui concerne le cyclisme.
+cyclistes		cycliste	0
+cyclo	Apocope de cyclorama.
+cycloalcane	Composé chimique organique composé uniquement de carbone et d’hydrogène, de formule brute générale CₙH₂ₙ, et dont les atomes de carbone forment une chaîne qui …
+cycloalcanes		cycloalcane	0
+cyclocross	Variante de cyclo-cross.
+cyclogenèse	Processus de formation, de développement ou d'intensification d'un cyclone ou d'une dépression atmosphérique.
+cyclogenèses		cyclogenèse	0
+cyclohexane	Hydrocarbure toxique et inflammable de formule brute C₆H₁₂.
+cyclohexanes		cyclohexane	0
+cyclohexanol	Composé organique alcoolique (formule C₆H₁₂O), obtenu par oxydation du cyclohexane.
+cyclohexanols		cyclohexanol	0
+cycloïdal	Qui appartient à la cycloïde.
+cycloïdale		cycloïdal	23
+cycloïdales		cycloïdal	1
+cycloïdaux		cycloïdal	9
+cycloïde	Qui a un bord postérieur libre lisse, en parlant d'une écaille, avec un chevauchement avec les écailles voisines.
+cycloïdes		cycloïde	0
+cyclomoteur	Bicyclette à moteur auxiliaire dont la cylindrée est inférieure à 50 centimètres cubes.
+cyclomoteurs		cyclomoteur	0
+cyclomotoriste	Personne conduisant un cyclomoteur.
+cyclomotoristes		cyclomotoriste	0
+cyclonal	Relatif au cyclone.
+cyclonale		cyclonal	23
+cyclonales		cyclonal	1
+cyclonaux		cyclonal	9
+cyclone	Tempête atmosphérique, organisée autour d’un centre de basse pression, qui balaie la terre ou la mer en tournoyant sur elle-même.
+cyclones		cyclone	0
+cyclonique	Relatif au cyclone.
+cycloniques		cyclonique	0
+cyclope	Sorte de géant monstrueux qui n’a qu’un œil, de forme ronde, au milieu du front.
+cyclopéen	Qui remonte au temps légendaire des cyclopes.
+cyclopéenne		cyclopéen	23
+cyclopéennes		cyclopéen	1
+cyclopéens		cyclopéen	9
+cyclopentane	Alcane cyclique à cinq carbones.
+cyclopentanes		cyclopentane	0
+cyclopes		cyclope	0
+cyclopie	Conformation des monstres dont les deux yeux se sont confondus en un seul.
+cyclopien	Affecté de cyclopie.
+cyclopies		cyclopie	0
+cyclopousse	poussepousse tiré par un vélo.
+cyclopousses		cyclopousse	0
+cyclopropane	Cycloalcane formé de trois atomes de carbone disposés en triangle équilatéral, de formule brute C₃H₆.
+cyclopropanes		cyclopropane	0
+cycloptère	Synonyme de lompe (poisson).
+cycloptères	Genre de poissons de mer de l’ordre des branchiostèges, dont les nageoires sont arrondies.
+cyclorama	Fresque murale à 360 degrés de grande dimension.
+cyclorameur	Tricycle d’enfant, dirigé par les pieds et mû par la force des bras.
+cyclorameurs		cyclorameur	0
+cyclos		cyclo	0
+cyclose	Mouvement giratoire du cytoplasme d’une cellule.
+cycloses		cyclose	0
+cyclosportif	Qui concerne le cyclosport, pratique en amateur de la compétition cycliste d’endurance.
+cyclosportifs		cyclosportif	9
+cyclosportive	Femme pratiquant le cyclosport.
+cyclosportives		cyclosportif	1
+cyclostome	Tout animal appartenant à un groupe de vertébrés aquatiques dépourvus de mâchoires qui inclut les lamproies et les myxines.
+cyclostomes		cyclostome	0
+cyclothyme	Relatif à la cyclothymie.
+cyclothymes		cyclothyme	0
+cyclothymie	Trouble de l’humeur où se succèdent les phases d’euphorie et de dépression.
+cyclothymies		cyclothymie	0
+cyclothymique	Relatif à la cyclothymie.
+cyclothymiques		cyclothymique	0
+cyclotourisme	Pratique du vélo en tant que loisir, moyen de locomotion pour promenades et voyages, sans esprit de compétition.
+cyclotourismes		cyclotourisme	0
+cyclotouriste	Relatif au cyclotourisme.
+cyclotouristes		cyclotouriste	0
+cyclotron	Accélérateur de particules dans lequel les particules chargées sont générées par une source au centre, décrivent une spirale au travers d’un champ magnétique e…
+cyclotrons		cyclotron	0
+cygne	Gros oiseau palmipède, aquatique, dont le plumage est d’ordinaire blanc et qui a un cou long et souple.
+cygnes		cygne	0
+cylindra		cylindrer	33
+cylindrage	Pression du cylindre sur les corps qu’on lui soumet, et résultat de cette action.
+cylindrages		cylindrage	0
+cylindrai		cylindrer	22
+cylindraient		cylindrer	32
+cylindrais		cylindrer	29
+cylindrait		cylindrer	34
+cylindrâmes		cylindrer	3
+cylindrant		cylindrer	35
+cylindras		cylindrer	12
+cylindrasse		cylindrer	6
+cylindrassent		cylindrer	17
+cylindrasses		cylindrer	8
+cylindrassiez		cylindrer	14
+cylindrassions		cylindrer	25
+cylindrât		cylindrer	20
+cylindrâtes		cylindrer	2
+cylindre	Surface réglée dont les génératrices sont des droites parallèles.
+cylindrée	Volume intérieur d'un cylindre, correspondant à la course du piston dans une pompe ou dans un moteur à explosion.
+cylindrées		cylindrée	0
+cylindrent		cylindrer	31
+cylindrer	Donner la forme d’un cylindre à quelque chose.
+cylindrera		cylindrer	21
+cylindrerai		cylindrer	16
+cylindreraient		cylindrer	28
+cylindrerais		cylindrer	18
+cylindrerait		cylindrer	26
+cylindreras		cylindrer	7
+cylindrèrent		cylindrer	24
+cylindrerez		cylindrer	5
+cylindreriez		cylindrer	4
+cylindrerions		cylindrer	11
+cylindrerons		cylindrer	10
+cylindreront		cylindrer	15
+cylindres		cylindre	0
+cylindreur	Ouvrier qui fait passer au rouleau, au cylindre.
+cylindreurs		cylindreur	0
+cylindrez		cylindrer	30
+cylindriez		cylindrer	13
+cylindrions		cylindrer	19
+cylindrique	Qui a la forme d’un cylindre.
+cylindriques		cylindrique	0
+cylindroïde	Qui est presque de forme cylindrique.
+cylindroïdes		cylindroïde	145
+cylindrons		cylindrer	27
+cylindrurie	Présence de cylindres urinaires dans l'urine
+cylindruries		cylindrurie	0
+cymaise	Variante orthographique de cimaise.
+cymaises		cymaise	0
+cymbalaire	Genre de plantes, voisines des linaires et des mufliers, à tiges rampantes et à fleurs bleues ou blanches, dont les feuilles ont la forme d’une cymbale.
+cymbalaires		cymbalaire	0
+cymbale	Instrument de musique de l’Antiquité, fait de deux moitiés de globe en airain.
+cymbales		cymbale	0
+cymbalier	Celui qui joue des cymbales.
+cymbaliers		cymbalier	0
+cymbaliste	Joueur de cymbale.
+cymbalistes		cymbaliste	0
+cymbalum	Instrument de musique à cordes frappées d’origine hongroise.
+cymbalums		cymbalum	0
+cyme	Inflorescence simple définie, dans laquelle l'axe principal se termine par une fleur.
+cymes		cyme	0
+cymomètre	Appareil destiné à mesurer la longueur des ondes.
+cymomètres		cymomètre	0
+cymrique	Variante orthographique de kymrique.
+cymriques		cymrique	0
+cynégétique	Qui a rapport à la chasse, aux chiens.
+cynégétiques		cynégétique	0
+cynhyène	Lycaon.
+cynhyènes		cynhyène	0
+cynips	Insecte hyménoptère appartenant à divers genres de la famille des cynipidés et dont les piqûres dans les végétaux provoquent des galles (cécidies).
+cynique	Qui a rapport au chien.
+cyniquement	D’une manière cynique.
+cyniques		cynique	0
+cynisme	Philosophie cynique, doctrine matérialiste et anticonformiste des philosophes cyniques.
+cynismes		cynisme	0
+cynocéphale	Qui a une tête de chien ou de canidé.
+cynocéphales		cynocéphale	0
+cynodrome	Circuit dévolu aux courses de lévriers.
+cynodromes		cynodrome	0
+cynoglosse	Genre de plante herbacée de la famille des Boraginacées comprenant plus d'une trentaine d'espèces, et également appelée langue-de-chien à cause de la forme de …
+cynoglosses		cynoglosse	0
+cynologie	Branche de la mammalogie consacrée à l’étude des chiens.
+cynologique	Qui a rapport avec la cynologie, avec l’étude du chien
+cynologiques		cynologique	0
+cynophile	Qui aime les chiens.
+cynophiles		cynophile	0
+cynophilie	Intérêt porté au chien.
+cynophilies		cynophilie	0
+cynorhodon	Faux fruit d’un rosier sauvage (églantier, rosier pimprenelle, etc.) à la pulpe comestible, acide et astringente, dont on fait des confitures.
+cynorhodons		cynorhodon	0
+cynorrhodon	Variante orthographique de cynorhodon.
+cynorrhodons		cynorrhodon	0
+cynotechnique	Qui a rapport avec la cynotechnie, avec l’utilisation des chiens.
+cynotechniques		cynotechnique	0
+cyon	Nom donné parfois à un canidé sauvage d’Asie, le dhole.
+cyons		cyon	0
+cypéracé	Qui ressemble à un souchet.
+cypéracée		cypéracé	23
+cypéracées	Famille de plantes monocotylédones poales (Poales), herbacées en touffe, des lieux humides.
+cyphoscoliose	Mélange de cyphose et de scoliose.
+cyphoscolioses		cyphoscoliose	0
+cyphose	Courbure de la colonne vertébrale à convexité arrière.
+cyphoses		cyphose	0
+cyphotique	Qui relève de la cyphose, qui est atteint de cyphose.
+cyphotiques		cyphotique	0
+cyprès	Nom donné à des nombreuses espèces de conifères au feuillage persistant pouvant appartenir à plusieurs genres différent : principalement à Cupressus mais aussi…
+cyprière	Plantation de cyprès.
+cyprières		cyprière	0
+cyprin	Qui ressemble à la carpe.
+cyprine	Épithète de la déesse Vénus à Chypre.
+cyprines		cyprin	1
+cypriniculture	Élevage de carpes et de tanches
+cyprinicultures		cypriniculture	0
+cyprinidé	Membre de la plus grande famille de poissons d’eau douce, les Cyprinidés ou cyprinidés.
+cyprinidés	Famille de poissons d’eau douce.
+cypriniforme	Qui appartient à la famille des Cypriniformes.
+cypriniformes		cypriniforme	123
+cyprins		cyprin	9
+cypriote	Relatif à l’île de Chypre.
+cypriotes		cypriote	0
+cypris	Genre de petit crustacé microscopique (Cypris spp.), de la classe des ostracodes, aux longues antennes, et vivant en eaux douces ou salées.
+cyrard	Relatif de l’École spéciale militaire de Saint-Cyr, à ses élèves et aux officiers qui en sont issus.
+cyrarde	Élève officier féminine de l’École spéciale militaire de Saint-Cyr.
+cyrardes		cyrard	1
+cyrards		cyrard	0
+cyrénaïque	Relatif au cyrénaïsme.
+cyrénaïques		cyrénaïque	0
+cyrillique	Qualifie l’alphabet utilisé pour la transcription de langues slaves.
+cyrilliques		cyrillique	0
+cystalgie	Douleur nerveuse de la vessie.
+cystalgies		cystalgie	0
+cystectomie	Ablation d’un kyste.
+cystectomies		cystectomie	0
+cystéine	Acide aminé dont la chaîne latérale (-CH2-SH) un groupement sulfhydryle (ou thiol), capable de former des ponts disulfure.
+cystéines		cystéine	0
+cysticercose	Maladie parasitaire causée par la présence d’un ou plusieurs cysticerques.
+cysticercoses		cysticercose	0
+cysticerque	Larve de certains ténias et cestodes ressemblant à une vésicule translucide dans laquelle le scolex est invaginé.
+cysticerques		cysticerque	0
+cystine	Acide aminé composé de deux unités cystéine liées par un pont disulfure.
+cystines		cystine	0
+cystique	Relatif à la vessie.
+cystiques		cystique	0
+cystite	Inflammation de la vessie.
+cystites		cystite	0
+cystographie	Radiographie de la vessie et de l’urètre.
+cystographies		cystographie	0
+cystoïde	Qui ressemble à une vessie.
+cystoïdes		cystoïde	0
+cystoplastie	Restauration de la vessie qui a subi, par quelque accident, une certaine perte de substance.
+cystoplasties		cystoplastie	0
+cystoscope	Instrument qui sert à explorer la vessie.
+cystoscopes		cystoscope	0
+cystoscopie	Action d’explorer la vessie au moyen du cystoscope.
+cystoscopies		cystoscopie	0
+cystostomie	Opération qui réalise un abouchement de la vessie à la paroi externe au niveau de l’abdomen.
+cystostomies		cystostomie	0
+cystotomie	Opération qui consiste à inciser la vessie.
+cystotomies		cystotomie	0
+cytaphérèse	Technique de prélèvement de cellules, triées sélectivement dans le sang, qui fait ensuite l'objet de fractionnement en plusieurs composants utilisés séparément.
+cytaphérèses		cytaphérèse	0
+cythéréen	Relatif à l’île ou à la ville de Cythère.
+cythéréenne		cythéréen	23
+cythéréennes		cythéréen	1
+cythéréens		cythéréen	9
+cytise	Nom désignant plusieurs espèces d’arbres appartenant à des genres différents mais tous de la famille de Fabacées : Argyrolobium, Calicotome, Cytisus, Cytisophy…
+cytises		cytise	0
+cytochimie	Étude de la biochimie des cellules.
+cytochimies		cytochimie	0
+cytochrome	Chromoprotéine hémique, intervenant comme transporteur d'électrons dans la chaîne de respiration cellulaire.
+cytocinèse	Phase de la division cellulaire où le cytoplasme se divise.
+cytocinèses		cytocinèse	0
+cytodiagnostic	Le diagnostic utilisant la cytologie ou l'histologie.
+cytodiagnostics		cytodiagnostic	0
+cytogénéticien	Spécialiste de la cytogénétique.
+cytogénéticiens		cytogénéticien	0
+cytogénétique	Relatif à l'étude des phénomènes génétiques au niveau de la cellule.
+cytogénétiques		cytogénétique	0
+cytokine	Substance soluble de communication synthétisée par les cellules du système immunitaire ou par d’autres cellules ou tissus, agissant à distance sur d’autres cel…
+cytokines		cytokine	0
+cytokinique	Relatif à la cytokine.
+cytokiniques		cytokinique	0
+cytologie	Partie de la biologie qui étudie la cellule, sous différents aspects.
+cytologies		cytologie	0
+cytologique	Qui concerne la cytologie.
+cytologiques		cytologique	1
+cytologiste	Biologiste spécialisé dans le domaine des cellules vivantes.
+cytologistes		cytologiste	0
+cytolyse	Destruction de cellule par dissolution des éléments qui la composent.
+cytolyses		cytolyse	0
+cytolytique	Qui a la propriété de détruire des cellules.
+cytolytiques		cytolytique	0
+cytomégalovirus	Virus de la famille des Herpesviridae, c’est un commensal chez environ 50 % de la population.
+cytométrie	Méthode permettant de mesurer certains paramètres des cellules.
+cytométries		cytométrie	0
+cytopathologie	Cytologie pathologique.
+cytopathologies		cytopathologie	0
+cytopénie	Carence d’un certain type de cellule du sang.
+cytopénies		cytopénie	0
+cytoplasme	Contenu d’une cellule vivante compris entre la membrane et le noyau.
+cytoplasmes		cytoplasme	0
+cytoplasmique	Relatif au cytoplasme cellulaire.
+cytoplasmiques		cytoplasmique	0
+cytosine	Base azotée qu’on trouve dans l’ADN et l’ARN, constituée d'un squelette de pyrimidine avec un groupement amine et un groupement cétone.
+cytosines		cytosine	0
+cytosol	Contenu d'une cellule, à l'exception du cytosquelette et des organites (et donc du noyau également).
+cytosols		cytosol	0
+cytosquelette	L’ensemble organisé des polymères biologiques constituant le squelette de la cellule.
+cytosquelettes		cytosquelette	0
+cytostatique	Se dit des substances ayant la propriété de bloquer la synthèse, le fonctionnement ou la multiplication cellulaires.
+cytostatiques		cytostatique	0
+cytotoxicité	Propriété d’un agent chimique ou biologique qui est toxique pour les cellules.
+cytotoxicités		cytotoxicité	0
+cytotoxique	Qui est toxique pour les cellules, qui est capable de les tuer.
+cytotoxiques		cytotoxique	0

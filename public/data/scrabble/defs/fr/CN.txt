@@ -1,0 +1,8 @@
+cnémide	Hautes jambières en bronze que portaient les guerriers grecs sur le devant des jambes, de la cheville jusqu’au-dessus du genou.
+cnémides		cnémide	0
+cnidaire	Métazoaire aquatique diploblastique, à symétrie radiaire ou biradiaire, dont le corps se compose d’un ectoderme et d’un endoderme séparés par une mésoglée.
+cnidaires		cnidaire	0
+cnidoblaste	Forme immature du cnidocyte.
+cnidoblastes		cnidoblaste	0
+cnidocyste	Capsule urticante incluse dans un cnidocyte.
+cnidocystes		cnidocyste	0

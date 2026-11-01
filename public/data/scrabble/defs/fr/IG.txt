@@ -1,0 +1,141 @@
+igame	Inspecteur général de l’administration en mission extraordinaire.
+igames		igame	0
+igamie	Circonscription d'un igame
+igamies		igamie	0
+igbo	Relatif aux Igbos en tant que peuple, à leur culture, à leur langue.
+igbos		igbo	0
+igloo	Habitation hémisphérique faite de blocs de neige.
+igloos		igloo	0
+iglou	Habitation hémisphérique faite de blocs de neige (iglou de chasse), soit fait de tourbe.
+iglous		iglou	0
+ignacien	Relatif aux Jésuites dont l’ordre fut fondé par Ignace de Loyola.
+ignacienne		ignacien	23
+ignaciennes		ignacien	1
+ignaciens		ignacien	9
+igname	Plantes grimpantes du genre Dioscorea, dont certaines ont une racine farineuse et alimentaire.
+ignames		igname	0
+ignare	Qui est d’une ignorance excessive.
+ignares		ignare	0
+igné	Qui est de feu, qui a les qualités du feu.
+ignée		igné	23
+ignées		igné	1
+ignés		igné	9
+ignicole	Se dit d’une personne adoratrice du feu.
+ignicoles		ignicole	0
+ignifère	Qui porte, qui transmet le feu.
+ignifères		ignifère	0
+ignifugation	Traitement pour rendre un matériau ininflammable.
+ignifugations		ignifugation	0
+ignifuge	Qui éteint le feu, qui préserve de l’incendie.
+ignifugea		ignifuger	33
+ignifugeai		ignifuger	22
+ignifugeaient		ignifuger	32
+ignifugeais		ignifuger	29
+ignifugeait		ignifuger	34
+ignifugeâmes		ignifuger	3
+ignifugeant		ignifuger	35
+ignifugeas		ignifuger	12
+ignifugeasse		ignifuger	6
+ignifugeassent		ignifuger	17
+ignifugeasses		ignifuger	8
+ignifugeassiez		ignifuger	14
+ignifugeassions		ignifuger	25
+ignifugeât		ignifuger	20
+ignifugeâtes		ignifuger	2
+ignifugée		ignifugé	23
+ignifugées		ignifugé	1
+ignifugent		ignifuger	31
+ignifugeons		ignifuger	27
+ignifuger	Enduire de matières ignifuges, pour protéger du feu.
+ignifugera		ignifuger	21
+ignifugerai		ignifuger	16
+ignifugeraient		ignifuger	28
+ignifugerais		ignifuger	18
+ignifugerait		ignifuger	26
+ignifugeras		ignifuger	7
+ignifugèrent		ignifuger	24
+ignifugerez		ignifuger	5
+ignifugeriez		ignifuger	4
+ignifugerions		ignifuger	11
+ignifugerons		ignifuger	10
+ignifugeront		ignifuger	15
+ignifugés		ignifugé	9
+ignifugez		ignifuger	30
+ignifugiez		ignifuger	13
+ignifugions		ignifuger	19
+ignimbrite	Roche formée de débris de lave acide issus d’une nuée ardente et soudés avant leur refroidissement, mélangés à une matrice vitreuse.
+ignimbrites		ignimbrite	0
+ignipuncture	Méthode de cautérisation à l'aide d'un fil de platine ou d'une aiguille que l'on chauffe au rouge sombre (environ 500°C).
+ignipunctures		ignipuncture	0
+ignition	État des corps en combustion.
+ignitions		ignition	0
+ignitron	Dispositif électronique utilisé pour redresser le courant alternatif.
+ignitrons		ignitron	0
+ignivome	Qui vomit du feu, de la lave.
+ignivomes		ignivome	0
+ignivore	Qualifie une montagne dont la « bouche » (le cratère) contient du « feu » (de la lave).
+ignivores		ignivore	0
+ignoble	De caractère non noble.
+ignoblement	D’une manière ignoble.
+ignobles		ignoble	0
+ignominie	Infamie, grand déshonneur.
+ignominies		ignominie	0
+ignominieuse		ignominieux	23
+ignominieuses		ignominieux	1
+ignominieux	Qui cause de l’ignominie.
+ignora		ignorer	39
+ignorai		ignorer	55
+ignoraient		ignorer	42
+ignorais		ignorer	52
+ignorait		ignorer	40
+ignorâmes		ignorer	3
+ignorance	État de celui qui est ignorant.
+ignorances		ignorance	0
+ignorant	Qui n’est pas instruit de certaines choses, qui ignore certaines choses.
+ignorante	Celle qui est ignorante (dans tous les sens de l’adjectif).
+ignorantes		ignorant	1
+ignorantin	Appartenant à l’ordre des hospitaliers de Saint-Jean-de-Dieu et portant ce nom par humilité.
+ignorantine		ignorantin	23
+ignorantines		ignorantin	1
+ignorantins		ignorantin	9
+ignorantisme	Système de ceux qui prônent les avantages de l’ignorance, ou qui soutiennent que la science est mauvaise en soi.
+ignorantismes		ignorantisme	0
+ignorantiste	Partisan de l’ignorantisme.
+ignorantistes		ignorantiste	0
+ignorants		ignorant	9
+ignoras		ignorer	12
+ignorasse		ignorer	6
+ignorassent		ignorer	78
+ignorasses		ignorer	8
+ignorassiez		ignorer	14
+ignorassions		ignorer	25
+ignorât		ignorer	62
+ignorâtes		ignorer	2
+ignoré	Qui est inconnu, caché.
+ignorée		ignoré	23
+ignorées		ignoré	1
+ignorent		ignorer	41
+ignorer	Ne pas connaître.
+ignorera		ignorer	44
+ignorerai		ignorer	50
+ignoreraient		ignorer	63
+ignorerais		ignorer	60
+ignorerait		ignorer	49
+ignoreras		ignorer	57
+ignorèrent		ignorer	48
+ignorerez		ignorer	5
+ignoreriez		ignorer	74
+ignorerions		ignorer	11
+ignorerons		ignorer	61
+ignoreront		ignorer	54
+ignores		ignorer	77
+ignorez		ignorer	47
+ignoriez		ignorer	67
+ignorions		ignorer	65
+ignorons		ignorer	59
+iguane	Reptile saurien, herbivore, qui ressemble à un grand lézard.
+iguanes		iguane	0
+iguanodon	Grand dinosaure herbivore du crétacé inférieur du sous-ordre des ornitischiens et de l’infra-ordre des ornithopodes.
+iguanodons		iguanodon	0
+igue	Cavité naturelle creusée dans le calcaire par les eaux de ruissellement.
+igues		igue	0

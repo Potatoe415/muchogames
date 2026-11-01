@@ -1,0 +1,6 @@
+fjeld	Plateau rocheux usé par un glacier.
+fjelds		fjeld	0
+fjell	Plateau rocheux rongé par un glacier.
+fjells		fjell	0
+fjord	Crique qui s’enfonce profondément dans la côte, en Scandinavie ou en Écosse, sur l’emplacement d’une ancienne vallée glaciaire.
+fjords		fjord	0
