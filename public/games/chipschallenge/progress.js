@@ -1,6 +1,6 @@
 // Saved progress (localStorage `chipschallenge-progress`): unlocked levels
-// (by finishing the previous one or typing its password) and the best score
-// and time left per level. Scoring follows the original: time bonus = 10 per
+// (by finishing the previous one or typing its password), the best score
+// and time left per level and the last level completed (`last`, 0 = none). Scoring follows the original: time bonus = 10 per
 // second left, level bonus = 500 x level, minus 20% per failed attempt (the
 // first four count).
 import { LEVELS } from "./levels.js";
@@ -34,7 +34,10 @@ export function loadProgress() {
   }
   const list = Array.isArray(data.unlocked) ? data.unlocked : [];
   const unlocked = new Set([1, ...list.map(Number).filter(validLevel)]);
-  return { unlocked, best: sanitizeBest(data.best) };
+  const best = sanitizeBest(data.best);
+  const cleared = Object.keys(best).map(Number);
+  const last = validLevel(data.last) ? data.last : Math.max(0, ...cleared);
+  return { unlocked, best, last };
 }
 
 export function saveProgress(progress) {
@@ -42,10 +45,16 @@ export function saveProgress(progress) {
     KEY,
     JSON.stringify({
       unlocked: [...progress.unlocked].sort((a, b) => a - b),
-      best: progress.best
+      best: progress.best,
+      last: progress.last
     })
   );
 }
+
+// Level after the last one completed, or 0 (none completed, or it was the
+// last level).
+export const nextLevel = (progress) =>
+  progress.last && validLevel(progress.last + 1) ? progress.last + 1 : 0;
 
 export function unlock(progress, number) {
   if (!validLevel(number) || progress.unlocked.has(number)) return;
@@ -77,6 +86,7 @@ export function recordWin(progress, number, score, timeLeft) {
     score: Math.max(score, previous?.score ?? 0),
     time: Math.max(timeLeft, previous?.time ?? 0)
   };
+  progress.last = number;
   if (validLevel(number + 1)) progress.unlocked.add(number + 1);
   saveProgress(progress);
   return { previousTime: previous ? previous.time : null };

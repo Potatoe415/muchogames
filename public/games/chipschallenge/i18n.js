@@ -1,5 +1,6 @@
 // Player-facing copy in FR/EN/ES. Level titles stay in English, as in the
-// original game.
+// original game; the "?" hints are translated (hints.js).
+import { HINTS } from "./hints.js";
 import { RULES } from "./rules.js";
 
 export const LANGS = ["fr", "en", "es"];
@@ -30,6 +31,7 @@ const STRINGS = {
     paused: "Pause",
     resume: "Reprendre",
     continue: "Reprendre · niveau {number}",
+    playNext: "Continuer · niveau {number}",
     up: "Haut",
     down: "Bas",
     left: "Gauche",
@@ -87,6 +89,7 @@ const STRINGS = {
     paused: "Paused",
     resume: "Resume",
     continue: "Resume · level {number}",
+    playNext: "Continue · level {number}",
     up: "Up",
     down: "Down",
     left: "Left",
@@ -144,6 +147,7 @@ const STRINGS = {
     paused: "Pausa",
     resume: "Continuar",
     continue: "Continuar · nivel {number}",
+    playNext: "Seguir · nivel {number}",
     up: "Arriba",
     down: "Abajo",
     left: "Izquierda",
@@ -187,6 +191,11 @@ export function translate(lang, key, vars = {}) {
     String(vars[name] ?? "")
   );
   return lang === "fr" ? frenchSpaces(filled) : filled;
+}
+
+export function translateHint(lang, level, original) {
+  const text = HINTS[level]?.[lang] ?? original;
+  return lang === "fr" ? frenchSpaces(text) : text;
 }
 
 export const rulesHtml = (lang) => RULES[lang] || RULES.fr;

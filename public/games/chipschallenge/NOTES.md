@@ -32,6 +32,9 @@ this before opening the sources.
   stay with Microsoft / Epyx, like the tiles. Titles, hints and passwords are
   read from it (English, as in the original). `levels.js` loads it once
   (`loadLevels()`, live `LEVELS`, `levelPack()`).
+- Hints ("?" squares, 21 levels, one text each): FR/ES in `hints.js` by
+  level number, shown through `i18n.translateHint` (EN keeps the file's
+  text; level 16 overrides it, the original talks about Ctrl+R / menus).
 
 ## Graphics
 
@@ -55,7 +58,7 @@ this before opening the sources.
 | `save.js`, `replay.js` | Match in progress: storage + validation; input log + silent replay. |
 | `engine.js`, `levels.js`, `tiles.js` | Engine bridge; level file loading; tile name → original code. |
 | `render.js`, `sheet.js`, `surface.js`, `panel.js`, `led.js` | Drawing. |
-| `input.js`, `audio.js`, `progress.js`, `i18n.js`, `rules.js`, `storage.js` | Controls (input bits, one queued tap), sounds, saved progress, copy. |
+| `input.js`, `audio.js`, `progress.js`, `i18n.js`, `hints.js`, `rules.js`, `storage.js` | Controls (input bits, one queued tap), sounds, saved progress, copy. |
 | `win31.css`, `styles.css`, `panel.css` | Windows 3.1 widgets; page + board; side panel, D-pad, responsive layouts. |
 
 `index.html` is ~400 lines: header boilerplate plus every dialog and the
@@ -70,8 +73,11 @@ D-pad as static markup (`data-id` on each), kept out of JS on purpose.
   monster. Score: time bonus 10/s left + level bonus 500 x level, -20 % per
   failed attempt (first four). One match = one level; deaths and R stay in
   the match (R / retry: `failures + 1`, fresh attempt). Storage:
-  `chipschallenge-progress` (unlocked levels, best score/time),
+  `chipschallenge-progress` (unlocked levels, best score/time, `last` =
+  last level completed; older saves derive it from the highest cleared),
   `chipschallenge-sound`, `chipschallenge-current` (below).
+- Start screen button: "Reprendre · niveau N" if a match is saved, else
+  "Continuer · niveau last+1"; the level list scrolls to that level.
 
 ## Match in progress (exact resume, decision 0054)
 

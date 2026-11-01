@@ -3,8 +3,15 @@
 // and the death / win dialogs.
 import { rulesHtml } from "./i18n.js";
 import { LEVELS } from "./levels.js";
+import { nextLevel } from "./progress.js";
 import { readMatch } from "./save.js";
-import { fillList, renderLevelList, totalLine, winLines } from "./screens.js";
+import {
+  fillList,
+  renderLevelList,
+  scrollToLevel,
+  totalLine,
+  winLines
+} from "./screens.js";
 
 /** @returns {HTMLElement} */
 export const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -29,12 +36,19 @@ export function renderDialogs(page, t) {
   }
 }
 
+// "Reprendre" the saved match, else "Continuer" at the level after the last
+// one completed.
 function renderStart(page, t) {
   const saved = readMatch();
+  const next = nextLevel(page.progress);
   const resume = $("chips-continue-button");
-  resume.hidden = !saved;
+  resume.hidden = !saved && !next;
   if (saved) resume.textContent = t("continue", { number: saved.level });
-  renderLevelList($("chips-level-list"), page.progress, t);
+  else if (next) resume.textContent = t("playNext", { number: next });
+  const list = $("chips-level-list");
+  renderLevelList(list, page.progress, t);
+  const focus = saved?.level || next;
+  if (focus) scrollToLevel(list, focus);
   $("chips-total-score").textContent = totalLine(page.progress, t);
 }
 

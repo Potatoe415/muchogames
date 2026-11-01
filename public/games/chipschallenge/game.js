@@ -113,7 +113,9 @@ function createFrames(run, parts, options) {
         surface.size.zoom,
         seconds
       );
-      panel.update(status(r.level, options.level), sheet.image);
+      const s = status(r.level, options.level);
+      if (s.hint !== null) s.hint = options.hint(s.hint);
+      panel.update(s, sheet.image);
       options.titleCard.hidden = r.started || r.ending;
     }
   );

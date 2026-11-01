@@ -43,6 +43,16 @@ export function renderLevelList(list, progress, t) {
   );
 }
 
+// Scrolls the list box only (not the page) so that level is in view.
+export function scrollToLevel(list, number) {
+  const item = /** @type {HTMLElement | undefined} */ (
+    list.children[number - 1]
+  );
+  if (!item) return;
+  const top = item.offsetTop - list.offsetTop;
+  list.scrollTop = top - (list.clientHeight - item.offsetHeight) / 2;
+}
+
 export function totalLine(progress, t) {
   return t("totalScore", { value: totalScore(progress) });
 }

@@ -11,11 +11,12 @@ import {
   renderTitleCard
 } from "./copy.js";
 import { createGame } from "./game.js";
-import { LANGS, translate } from "./i18n.js";
+import { LANGS, translate, translateHint } from "./i18n.js";
 import { LEVELS, loadLevels } from "./levels.js";
 import {
   levelForPassword,
   loadProgress,
+  nextLevel,
   recordWin,
   scoreLevel,
   unlock
@@ -183,6 +184,7 @@ function mountGame(level, saved = null) {
     titleCard: $("chips-title-card"),
     muted: page.muted,
     t,
+    hint: (text) => translateHint(page.lang, level, text),
     onDeath,
     onWin,
     onCommand,
@@ -203,9 +205,14 @@ async function startLevel(level) {
   else if (page.game) returnToSelect();
 }
 
-function resumeMatch() {
+// Saved match first, else the level after the last one completed.
+function continueGame() {
   const saved = readMatch();
-  if (page.starting || !saved) return applyLanguage();
+  if (page.starting) return;
+  if (!saved) {
+    const next = nextLevel(page.progress);
+    return next ? startLevel(next) : applyLanguage();
+  }
   shell.MuchogamesMatch.resume(GAME_ID);
   mountGame(saved.level, saved);
 }
@@ -277,7 +284,7 @@ function bindButtons() {
     page.game?.setMuted(page.muted);
     applyLanguage();
   });
-  onButton("chips-continue-button", resumeMatch);
+  onButton("chips-continue-button", continueGame);
   onButton("chips-restart-button", restartKey);
   onButton("chips-pause-button", togglePause);
   onButton("chips-levels-button", returnToSelect);
