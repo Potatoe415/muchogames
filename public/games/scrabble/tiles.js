@@ -71,10 +71,32 @@ export function tileValue(letter) {
   return set[letter]?.[1] ?? 0;
 }
 
+const JUNIOR_TILES = 60;
+
+// Junior bag: the language's counts scaled down to 60 tiles with the two
+// blanks, at least one of each letter, rounded by largest remainder.
+function juniorCounts() {
+  const letters = Object.entries(set).filter(([l]) => l !== BLANK);
+  const target = JUNIOR_TILES - set[BLANK][0];
+  const total = letters.reduce((sum, [, [count]]) => sum + count, 0);
+  const rows = letters.map(([letter, [count]]) => {
+    const exact = (count * target) / total;
+    const rest = exact >= 1 ? exact % 1 : 0; // rare letters already got 1
+    return { letter, n: Math.max(1, Math.floor(exact)), rest };
+  });
+  let left = target - rows.reduce((sum, r) => sum + r.n, 0);
+  const byRest = rows.slice().sort((a, b) => b.rest - a.rest);
+  const byCount = rows.slice().sort((a, b) => b.n - a.n);
+  for (let k = 0; left > 0; k++, left--) byRest[k % byRest.length].n++;
+  for (let k = 0; left < 0; k++, left++) byCount[k % byCount.length].n--;
+  return [...rows.map((r) => [r.letter, r.n]), [BLANK, set[BLANK][0]]];
+}
+
 export function fullBag() {
-  return Object.entries(set).flatMap(([letter, [count]]) =>
-    Array(count).fill(letter)
-  );
+  const counts = JUNIOR
+    ? juniorCounts()
+    : Object.entries(set).map(([letter, [count]]) => [letter, count]);
+  return counts.flatMap(([letter, count]) => Array(count).fill(letter));
 }
 
 export function shuffle(list) {
