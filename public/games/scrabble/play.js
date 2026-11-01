@@ -3,6 +3,7 @@
 // players. Editing the draft lives in edit.js.
 import { bestMove, chooseMove } from "./ai.js";
 import { createBoardView } from "./board-view.js";
+import { define } from "./define.js";
 import { draftAt, draftTiles } from "./draft.js";
 import { createEditor } from "./edit.js";
 import {
@@ -16,7 +17,7 @@ import { lastMoveLine, renderHud } from "./hud.js";
 import { bindInput } from "./input.js";
 import { bindKeys } from "./keys.js";
 import { createRackView } from "./rack-view.js";
-import { analyzeMove, invalidWords } from "./rules.js";
+import { analyzeMove, invalidWords, wordsAt } from "./rules.js";
 
 const BOT_DELAY_MS = 750;
 
@@ -46,6 +47,7 @@ export function createPlay(opts) {
     selected: -1,
     thinking: false,
     hidden: false,
+    lookup: false,
     notice: "",
     preview: { tone: "idle" },
     timer: 0
@@ -64,7 +66,7 @@ export function createPlay(opts) {
       board: game.board,
       draft: s.draft,
       last: s.draft.length ? new Set() : lastCells(game),
-      cursor: canAct() ? s.cursor : null,
+      cursor: canAct() && !s.lookup ? s.cursor : null,
       preview: s.preview
     });
     rack.paint({
@@ -186,11 +188,43 @@ export function createPlay(opts) {
     dialogs.showBag(unseenLetters(game, viewer), game.bag.length, t);
   }
 
+  // Dictionary: the button arms a "tap a word" mode, open to both players
+  // at any time (even during the computer's turn or after the end).
+  function toggleLookup() {
+    if (s.hidden || dialogs.isOpen()) return;
+    s.lookup = !s.lookup;
+    s.selected = -1;
+    sound.tap();
+    refresh();
+  }
+
+  // The language a board word belongs to: the current player's if valid there.
+  function wordLang(word) {
+    const order = [game.turn, 1 - game.turn];
+    const p = order.find((n) => opts.dicts[n].has(word)) ?? game.turn;
+    return opts.langs[p];
+  }
+
+  function lookUpAt(i) {
+    const words = wordsAt(game.board, draftTiles(s.draft), i);
+    if (!words.length) return;
+    s.lookup = false;
+    refresh();
+    const items = words.map((word) => {
+      const lang = wordLang(word);
+      return { word, lang, entry: define(word, lang) };
+    });
+    dialogs.showDefinitions(items, t, opts.langs[0] !== opts.langs[1]);
+  }
+
   const unbindInput = bindInput(els, {
-    canDrag: canAct,
+    canDrag: () => canAct() && !s.lookup,
     slotOf: (i) => draftAt(s.draft, i)?.k ?? -1,
-    onRackTap: edit.onRackTap,
-    onCellTap: edit.onCellTap,
+    onRackTap: (k) => {
+      s.lookup = false;
+      edit.onRackTap(k);
+    },
+    onCellTap: (i) => (s.lookup ? lookUpAt(i) : edit.onCellTap(i)),
     onDrop: edit.onDrop
   });
   const unbindKeys = bindKeys({
@@ -225,7 +259,8 @@ export function createPlay(opts) {
       shuffle: edit.shuffle,
       hint,
       pass: swapOrPass,
-      bag: showBag
+      bag: showBag,
+      define: toggleLookup
     },
     relabel: () => (board.relabel(t), refresh()),
     refresh,

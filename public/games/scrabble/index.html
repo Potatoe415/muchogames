@@ -476,13 +476,16 @@
           <button
             type="button"
             class="sc-action"
-            data-id="scrabble-quit-button"
-            data-match-quit
+            data-id="scrabble-define-button"
+            aria-pressed="false"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M18 6 6 18M6 6l12 12" />
+              <path
+                d="M4 19.5V5a2 2 0 0 1 2-2h14v15H6.5A2.5 2.5 0 0 0 4 20.5"
+              />
+              <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-4M9 7h7M9 11h5" />
             </svg>
-            <span data-i18n="quit"></span>
+            <span data-i18n="define"></span>
           </button>
           <button
             type="button"
@@ -542,6 +545,24 @@
                 data-i18n="cancel"
               ></button>
             </div>
+          </div>
+        </div>
+
+        <div class="sc-sheet" data-id="scrabble-define-dialog" hidden>
+          <div class="sc-sheet-backdrop" data-sheet-close></div>
+          <div class="sc-sheet-card" role="dialog" aria-modal="true">
+            <div
+              class="sc-define-body"
+              data-id="scrabble-define-body"
+              aria-live="polite"
+            ></div>
+            <button
+              type="button"
+              class="sc-button sc-button-ghost"
+              data-sheet-close
+              data-id="scrabble-define-close"
+              data-i18n="close"
+            ></button>
           </div>
         </div>
 

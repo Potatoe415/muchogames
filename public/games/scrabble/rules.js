@@ -98,5 +98,15 @@ export function analyzeMove(board, tiles) {
   return { words, score, bingo };
 }
 
+// Words (≥ 2 letters) through cell i, across then down, draft included.
+export function wordsAt(board, tiles, i) {
+  const placed = new Map(tiles.map((t) => [t.i, t.l]));
+  if (!placed.get(i) && !board[i]) return [];
+  return [ACROSS, DOWN]
+    .map((dir) => wordCells(board, placed, i, dir))
+    .filter((cells) => cells.length > 1)
+    .map((cells) => makeWord(board, placed, cells).text);
+}
+
 export const invalidWords = (analysis, dict) =>
   analysis.words.filter((w) => !dict.has(w.text)).map((w) => w.text);

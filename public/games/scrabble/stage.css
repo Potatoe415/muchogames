@@ -95,6 +95,11 @@
   cursor: default;
 }
 
+.sc-action.active {
+  background: #5f8f7a;
+  color: #ffffff;
+}
+
 .sc-action svg {
   width: 21px;
   height: 21px;

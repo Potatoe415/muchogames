@@ -2,6 +2,7 @@
 // "pass the device" screen between two players. Each open() returns a promise
 // of the choice (null when dismissed by the backdrop, Cancel or Escape).
 import { tileHtml } from "./board-view.js";
+import { renderDefinitions } from "./define-view.js";
 import { LETTERS } from "./tiles.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -104,6 +105,11 @@ export function createDialogs() {
     return open("scrabble-bag-dialog");
   }
 
+  function showDefinitions(items, t, showLang) {
+    renderDefinitions($("scrabble-define-body"), items, t, showLang);
+    return open("scrabble-define-dialog");
+  }
+
   function handoff(title, line) {
     $("scrabble-handoff-title").textContent = title;
     $("scrabble-handoff-line").textContent = line;
@@ -135,6 +141,7 @@ export function createDialogs() {
     pickBlank,
     swapOrPass,
     showBag,
+    showDefinitions,
     handoff,
     isOpen: () => Boolean(current),
     closeAll: () => current?.resolve(null)

@@ -121,6 +121,38 @@
   color: #6c7f78;
 }
 
+/* --- Definitions --- */
+.sc-define-body {
+  margin: 0 0 14px;
+  text-align: left;
+}
+
+.sc-define-entry + .sc-define-entry {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e4ebe6;
+}
+
+.sc-define-entry .sc-sheet-title {
+  margin-bottom: 6px;
+  letter-spacing: 0.06em;
+}
+
+.sc-define-text,
+.sc-define-base {
+  margin: 0 0 6px;
+  line-height: 1.45;
+}
+
+.sc-define-base {
+  color: #5d706a;
+}
+
+.sc-define-link {
+  font-size: 0.82rem;
+  color: #5f8f7a;
+}
+
 /* --- End card --- */
 .sc-end-title {
   margin: 0 0 6px;

@@ -25,6 +25,7 @@ function previewLine({ preview }, t) {
 
 function guide(s, ctx) {
   const { game, names, t, solo } = ctx;
+  if (s.lookup) return [t("lookupHint"), "ok"];
   if (s.thinking) return [t("thinking", { name: names[1] }), "wait"];
   if (s.notice) return [t(s.notice), "error"];
   if (s.preview.tone !== "idle") return [previewLine(s, t), s.preview.tone];
@@ -65,6 +66,10 @@ export function renderHud(s, ctx) {
   $("scrabble-shuffle-button").hidden = drafting;
   $("scrabble-recall-button").hidden = !drafting;
   $("scrabble-hint-button").hidden = !ctx.hints;
+  const define = $("scrabble-define-button");
+  define.disabled = s.hidden;
+  define.classList.toggle("active", s.lookup);
+  define.setAttribute("aria-pressed", String(s.lookup));
   ["shuffle", "recall", "hint", "pass"].forEach((name) => {
     $(`scrabble-${name}-button`).disabled = !canAct;
   });

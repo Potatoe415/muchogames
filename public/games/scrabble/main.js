@@ -270,7 +270,7 @@ function bindPage() {
     "scrabble-hint-button": play("hint"),
     "scrabble-pass-button": play("pass"),
     "scrabble-bag-button": play("bag"),
-    "scrabble-quit-button": returnToStart,
+    "scrabble-define-button": play("define"),
     "scrabble-again-button": startMatch,
     "scrabble-replay-button": startMatch,
     "scrabble-change-settings-button": returnToStart,

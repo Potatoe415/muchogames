@@ -44,7 +44,12 @@ export const STRINGS = {
   recall: "Recall",
   hint: "Hint",
   pass: "Pass",
-  quit: "Quit",
+  define: "Define",
+  lookupHint: "Tap a word on the board to see its definition.",
+  defLoading: "Looking up the definition…",
+  defMissing: "No definition found.",
+  defError: "Definition unavailable (connection?).",
+  defSource: "See on Wiktionary ↗",
   playWord: "Play",
   firstTurn:
     "First word: it goes through the star ★. Tap a letter, then a square.",
@@ -107,4 +112,5 @@ export const RULES = `
   <li><strong>End:</strong> when the bag is empty and a player has used all their letters, or after 4 turns in a row without points. Letters left are taken off the score; the player who went out gains the opponent's.</li>
 </ul>
 <p><strong>Controls:</strong> tap a letter then a square, or drag it. Tap a placed letter to take it back. Tip: tap an empty square (an arrow appears, tap again to turn it) then your letters one after another. Keyboard: type letters, Enter to play, Backspace to remove, Escape to recall all.</p>
+<p><strong>Define:</strong> tap the book, then a word on the board, to read a short definition (Wiktionary, needs a connection).</p>
 `;
