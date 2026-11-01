@@ -6,6 +6,7 @@ import {
   BLANK,
   CELLS,
   fullBag,
+  JUNIOR,
   LETTERS,
   RACK_SIZE,
   rackValue,
@@ -16,7 +17,7 @@ const SCORELESS_END = 4;
 
 const asRackLetter = (l) => (l === l.toLowerCase() ? BLANK : l);
 
-// chooser (optional): picks player 1's draws (kid level, easy-draw.js).
+// chooser (optional): picks player 1's draws (Junior level, easy-draw.js).
 export function createGame(chooser) {
   const game = {
     board: Array(CELLS).fill(""),
@@ -51,9 +52,10 @@ function refill(game, p, chooser) {
     .forEach((i) => rack.push(...game.bag.splice(i, 1)));
 }
 
+// Junior keeps the scores as they are: no rack adjustment at the end.
 function finish(game, reason, outPlayer) {
-  const left = game.racks.map(rackValue);
-  const adjust = left.map((value) => -value);
+  const left = game.racks.map((rack) => (JUNIOR ? 0 : rackValue(rack)));
+  const adjust = left.map((value) => (value ? -value : 0));
   if (outPlayer >= 0) adjust[outPlayer] = left[1 - outPlayer];
   adjust.forEach((value, p) => (game.scores[p] += value));
   const [a, b] = game.scores;
@@ -86,7 +88,15 @@ export function playTiles(game, tiles, analysis, chooser) {
   endTurn(game);
 }
 
-export const canSwap = (game) => game.bag.length >= RACK_SIZE;
+// Classic: swapping needs 7 tiles in the bag. Junior: any tile left.
+export const canSwap = (game) => game.bag.length >= (JUNIOR ? 1 : RACK_SIZE);
+
+// Junior: one letter swapped at the start of the turn, the turn goes on.
+export function swapOne(game, letter, chooser) {
+  removeFromRack(game.racks[game.turn], letter);
+  refill(game, game.turn, chooser);
+  game.bag = shuffle([...game.bag, letter]);
+}
 
 // New letters are drawn before the swapped ones go back into the bag.
 export function swapTiles(game, letters, chooser) {
@@ -105,9 +115,10 @@ export function passTurn(game) {
   endTurn(game);
 }
 
-// Letters the player p cannot see: the bag and the other rack.
+// Letters the player p cannot see: the bag and the other rack (Junior racks
+// are face up, so only the bag).
 export const unseenLetters = (game, p) =>
-  [...game.bag, ...game.racks[1 - p]].sort();
+  [...game.bag, ...(JUNIOR ? [] : game.racks[1 - p])].sort();
 
 export function bestPlay(game, p) {
   const plays = game.history.filter((h) => h.p === p && h.kind === "play");

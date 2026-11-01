@@ -27,7 +27,7 @@ export const STRINGS = {
   modeSolo: "Against the computer",
   modeDuo: "Two players",
   level: "Level",
-  kid: "Kids",
+  junior: "Junior",
   easy: "Easy",
   medium: "Medium",
   hard: "Hard",
@@ -73,6 +73,9 @@ export const STRINGS = {
   cancel: "Cancel",
   swapTitle: "Swap or pass",
   swapHelp: "Tap the letters to put back in the bag.",
+  swapHelpJunior:
+    "One letter: you swap it and still play. Several: you pass your turn.",
+  swapOneConfirm: "Swap 1 letter and play",
   swapNone: "Fewer than 7 letters in the bag: swapping is no longer allowed.",
   swapConfirm: "Swap ({count})",
   passConfirm: "Pass my turn",
@@ -105,7 +108,7 @@ export const RULES = `
   <li>The first word goes through the star ★ in the centre.</li>
   <li>Every word formed must be in the dictionary of the chosen language: the game checks before playing, with no penalty. French: Officiel du Scrabble (ODS 9). English: ENABLE. Spanish: a free list of 635,000 words.</li>
   <li>Accents do not count. In Spanish, Ñ is a letter of its own; CH, LL and RR are written with two letters. Each language has its own letters and values.</li>
-  <li><strong>Kids level:</strong> the computer plays small words, and the Hint button is always there to suggest a short word.</li>
+  <li><strong>Junior</strong> (against the computer, age 7+): the rules of side 2 of Scrabble Junior. Small board, 5 letters each, and the computer's letters are visible. Only coloured squares score: green 1, blue 2, pink 3 for each letter placed on them (letter values do not count). At the start of your turn you may swap 1 letter and still play, or pass to swap several. Nothing is taken off at the end. The Hint button is always there and the letters you draw are easier.</li>
   <li><strong>FR + ES:</strong> one player plays French words, the other Spanish words, on the same board. The words a player forms must exist in that player's language. The bag is shared (French values, plus the Ñ).</li>
   <li><strong>Points:</strong> each letter has a value. DL and TL double or triple the letter, DW and TW the whole word (the star counts as DW). A square counts only when it is first covered.</li>
   <li>The <strong>blank</strong> stands for any letter and is worth 0.</li>

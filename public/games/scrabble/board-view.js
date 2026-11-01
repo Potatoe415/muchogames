@@ -1,10 +1,24 @@
-// The 15×15 board: one <button> per cell (data-id "scrabble-cell-h8": column
-// letter + row number), repainted in place. Shows played tiles, the draft,
-// the last move, the typing cursor and the live score bubble.
+// The board (15×15, or 11×11 in Junior): one <button> per cell (data-id
+// "scrabble-cell-h8": column letter + row number), repainted in place. Shows
+// played tiles, the draft, the last move, the typing cursor and the live
+// score bubble. Junior tiles carry no value, coloured squares show points.
 import { draftAt } from "./draft.js";
-import { CELLS, CENTER, PREMIUM, SIZE, tileValue } from "./tiles.js";
+import {
+  CELLS,
+  CENTER,
+  colorPoints,
+  JUNIOR,
+  PREMIUM,
+  SIZE,
+  tileValue
+} from "./tiles.js";
 
 const PREMIUM_KEY = { T: "premTW", D: "premDW", t: "premTL", d: "premDL" };
+
+function premiumLabel(p, i, t) {
+  if (p === "*") return "★";
+  return JUNIOR ? String(colorPoints(i)) : t(PREMIUM_KEY[p]);
+}
 
 export const cellName = (i) =>
   `${String.fromCharCode(97 + (i % SIZE))}${Math.floor(i / SIZE) + 1}`;
@@ -12,7 +26,7 @@ export const cellName = (i) =>
 export function tileHtml(letter) {
   const blank = letter === "?" || letter !== letter.toUpperCase();
   const face = letter === "?" ? "" : letter.toUpperCase();
-  const value = blank ? "" : tileValue(letter);
+  const value = blank || JUNIOR ? "" : tileValue(letter);
   return `<span class="sc-tile${blank ? " is-blank" : ""}"><b>${face}</b><small>${value}</small></span>`;
 }
 
@@ -31,11 +45,13 @@ export function createBoardView(host) {
   const cells = Array.from({ length: CELLS }, (_, i) => makeCell(i));
   const shown = Array(CELLS).fill(null);
   host.replaceChildren(...cells);
+  host.style.setProperty("--size", String(SIZE));
+  host.classList.toggle("is-junior", JUNIOR);
 
   function relabel(t) {
     cells.forEach((cell, i) => {
       const p = PREMIUM[i];
-      if (p !== ".") cell.dataset.label = p === "*" ? "★" : t(PREMIUM_KEY[p]);
+      if (p !== ".") cell.dataset.label = premiumLabel(p, i, t);
     });
   }
 

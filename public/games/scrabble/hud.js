@@ -39,7 +39,7 @@ function guide(s, ctx) {
 }
 
 // The language tag (FR / ES) shows only when the two players differ.
-function paintPlayers(game, { names, langs }, thinking) {
+function paintPlayers(game, { names, langs, junior }, thinking) {
   const mixed = langs[0] !== langs[1];
   [0, 1].forEach((p) => {
     const card = $(`scrabble-player-${p + 1}`);
@@ -50,8 +50,13 @@ function paintPlayers(game, { names, langs }, thinking) {
       ? langs[p].toUpperCase()
       : "";
     card.querySelector("[data-score]").textContent = String(game.scores[p]);
+    const peek = card.querySelector("[data-rack-peek]");
+    peek.textContent = junior && p === 1 ? rackText(game.racks[1]) : "";
   });
 }
+
+// Junior racks are face up: the computer's letters show under its name.
+const rackText = (rack) => rack.map((l) => (l === "?" ? "☆" : l)).join(" ");
 
 // s: play state; ctx: { game, names, langs, t, solo, canAct, hints }
 export function renderHud(s, ctx) {

@@ -12,8 +12,8 @@
   width: min(100cqw, 100cqh);
   aspect-ratio: 1;
   display: grid;
-  grid-template-columns: repeat(15, minmax(0, 1fr));
-  grid-template-rows: repeat(15, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--size, 15), minmax(0, 1fr));
+  grid-template-rows: repeat(var(--size, 15), minmax(0, 1fr));
   gap: var(--gap);
   padding: 5px;
   border-radius: 14px;
@@ -21,7 +21,7 @@
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.7) inset,
     0 14px 34px rgba(46, 61, 57, 0.14);
-  font-size: calc(min(100cqw, 100cqh) / 15 * 0.46);
+  font-size: calc(min(100cqw, 100cqh) / var(--size, 15) * 0.46);
 }
 
 .sc-cell {
@@ -77,6 +77,31 @@
 
 .sc-cell[data-premium="*"]::after {
   font-size: 1.3em;
+}
+
+/* Junior: coloured squares worth 1 (green), 2 (blue), 3 (pink) points. */
+.sc-board.is-junior .sc-cell[data-premium="*"] {
+  background: #f8e7b5;
+  color: #c39a3a;
+}
+
+.sc-cell[data-premium="g"] {
+  background: #c4e3cd;
+  color: #4f8a62;
+}
+
+.sc-cell[data-premium="b"] {
+  background: #c7dcef;
+  color: #4f7ea6;
+}
+
+.sc-cell[data-premium="r"] {
+  background: #f3c9cf;
+  color: #b0606d;
+}
+
+.sc-board.is-junior .sc-cell::after {
+  font-size: 0.9em;
 }
 
 .sc-cell.is-cursor {
@@ -177,7 +202,7 @@
 /* --- Rack --- */
 .sc-rack {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 52px));
+  grid-template-columns: repeat(var(--rack, 7), minmax(0, 52px));
   justify-content: center;
   gap: 6px;
   min-height: 44px;
@@ -244,7 +269,7 @@
   }
 
   .sc-rack {
-    grid-template-columns: repeat(7, minmax(0, 58px));
+    grid-template-columns: repeat(var(--rack, 7), minmax(0, 58px));
   }
 
   .sc-slot {

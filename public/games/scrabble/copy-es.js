@@ -27,7 +27,7 @@ export const STRINGS = {
   modeSolo: "Contra el ordenador",
   modeDuo: "Entre dos",
   level: "Nivel",
-  kid: "Niños",
+  junior: "Junior",
   easy: "Fácil",
   medium: "Medio",
   hard: "Difícil",
@@ -73,6 +73,9 @@ export const STRINGS = {
   cancel: "Cancelar",
   swapTitle: "Cambiar o pasar",
   swapHelp: "Toca las letras que vuelven a la bolsa.",
+  swapHelpJunior:
+    "Una sola letra: la cambias y juegas igualmente. Varias: pasas tu turno.",
+  swapOneConfirm: "Cambiar 1 letra y jugar",
   swapNone: "Menos de 7 letras en la bolsa: ya no se puede cambiar.",
   swapConfirm: "Cambiar ({count})",
   passConfirm: "Pasar mi turno",
@@ -105,7 +108,7 @@ export const RULES = `
   <li>La primera palabra pasa por la estrella ★ del centro.</li>
   <li>Todas las palabras formadas deben estar en el diccionario del idioma elegido: el juego lo comprueba antes de validar, sin penalización. Francés: Officiel du Scrabble (ODS 9). Inglés: ENABLE. Español: lista libre de 635 000 palabras.</li>
   <li>Los acentos no cuentan. En español, la Ñ es una letra propia; CH, LL y RR se escriben con dos letras. Cada idioma tiene sus propias letras y valores.</li>
-  <li><strong>Nivel Niños:</strong> el ordenador pone palabras pequeñas y el botón Pista siempre está para proponer una palabra corta.</li>
+  <li><strong>Junior</strong> (contra el ordenador, desde 7 años): las reglas de la cara 2 del Scrabble Junior. Tablero pequeño, 5 letras cada uno y las letras del ordenador están a la vista. Solo puntúan las casillas de color: verde 1, azul 2, rosa 3 por cada letra colocada encima (el valor de las letras no cuenta). Al empezar tu turno puedes cambiar 1 letra y jugar igualmente, o pasar para cambiar varias. No se resta nada al final. El botón Pista siempre está y las letras que robas son más fáciles.</li>
   <li><strong>FR + ES:</strong> un jugador pone palabras francesas y el otro palabras españolas, en el mismo tablero. Las palabras que forma cada jugador deben existir en su idioma. La bolsa es común (valores franceses, con la Ñ).</li>
   <li><strong>Puntos:</strong> cada letra tiene su valor. LD y LT doblan o triplican la letra, PD y PT la palabra entera (la estrella cuenta como PD). Una casilla solo cuenta cuando se cubre por primera vez.</li>
   <li>El <strong>comodín</strong> sustituye cualquier letra y vale 0.</li>

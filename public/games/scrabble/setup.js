@@ -3,6 +3,7 @@
 // resume button.
 import { LEVEL_IDS } from "./ai.js";
 import { CHOICES, cleanName } from "./store.js";
+import { useJunior, useTileSet } from "./tiles.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 const NAME_IDS = ["scrabble-name-1", "scrabble-name-2"];
@@ -62,6 +63,15 @@ export function renderLevel(level, stats, t) {
 export const renderResume = (saved) => {
   $("scrabble-resume-button").hidden = !saved;
 };
+
+export const isJunior = (config) =>
+  config.mode === "solo" && config.level === "junior";
+
+// Tile set and board of a match: word language, then Junior or classic.
+export function useRules(config) {
+  useTileSet(config.words);
+  useJunior(isJunior(config));
+}
 
 export const matchConfig = (settings) => ({
   mode: settings.mode,

@@ -33,6 +33,23 @@
   font-weight: 600;
 }
 
+.sc-player:has(.sc-peek:not(:empty)) {
+  flex-wrap: wrap;
+  row-gap: 0;
+}
+
+.sc-peek {
+  flex-basis: 100%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6c7f78;
+}
+
+.sc-peek:empty {
+  display: none;
+}
+
 .sc-word-lang {
   padding: 1px 6px;
   border-radius: 999px;

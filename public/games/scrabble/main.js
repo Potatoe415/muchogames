@@ -4,17 +4,19 @@
 import { createDialogs } from "./dialogs.js";
 import { loadDictionary } from "./dict.js";
 import { draftFits } from "./draft.js";
-import { makeKidDraw } from "./easy-draw.js";
+import { makeJuniorDraw } from "./easy-draw.js";
 import { renderEnd as paintEnd } from "./end.js";
 import { createGame, restoreGame } from "./game.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
 import { createPlay } from "./play.js";
 import {
   bindChoices,
+  isJunior,
   matchConfig,
   renderChoices,
   renderLevel,
-  renderResume
+  renderResume,
+  useRules
 } from "./setup.js";
 import { setSoundEnabled, sound } from "./sound.js";
 import {
@@ -28,7 +30,7 @@ import {
   saveStats,
   writeText
 } from "./store.js";
-import { playerLangs, useTileSet } from "./tiles.js";
+import { playerLangs } from "./tiles.js";
 
 const GAME_ID = "scrabble";
 const LANG_KEY = "bergamots-lang";
@@ -53,7 +55,6 @@ const page = {
 
 const t = (key, vars) => translate(page.lang, key, vars);
 const isSolo = () => page.config?.mode === "solo";
-
 function names() {
   if (isSolo()) return [t("you"), t("computer")];
   return page.config.names.map((name, p) => name || t(`player${p + 1}`));
@@ -152,7 +153,7 @@ function unmount() {
 
 function mount(game, config, draft) {
   unmount();
-  useTileSet(config.words);
+  useRules(config);
   Object.assign(page, { game, config });
   showScreen(true);
   renderOver();
@@ -182,7 +183,7 @@ function mount(game, config, draft) {
 // The saved match, checked tile by tile; a damaged save is dropped.
 function loadResumable() {
   const saved = loadSaved();
-  if (saved) useTileSet(saved.config.words);
+  if (saved) useRules(saved.config);
   const game = saved && restoreGame(saved.game);
   if (!game) {
     clearGame();
@@ -209,10 +210,11 @@ async function startMatch() {
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!allowed) return void (page.play && returnToStart());
-  useTileSet(config.words);
-  const kid = config.mode === "solo" && config.level === "kid";
-  const kidLang = playerLangs(config.words, config.p1Lang)[0];
-  const game = createGame(kid ? makeKidDraw(page.dicts[kidLang]) : undefined);
+  useRules(config);
+  const juniorLang = playerLangs(config.words, config.p1Lang)[0];
+  const game = createGame(
+    isJunior(config) ? makeJuniorDraw(page.dicts[juniorLang]) : undefined
+  );
   saveGame(config, game, []);
   renderResume(null);
   mount(game, config, []);

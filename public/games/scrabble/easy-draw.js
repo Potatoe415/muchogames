@@ -1,6 +1,6 @@
-// Kid level: a gentler draw for the child. Instead of the next tiles of the
+// Junior level: a gentler draw for the child. Instead of the next tiles of the
 // bag, several random draws are tried and the one giving the friendliest
-// rack is kept: about 3 vowels, no hard letters (worth 8+), few doubles, and
+// rack is kept: about 43 % vowels (2 of 5), no hard letters (worth 8+), few doubles, and
 // as many real 3–5-letter words as possible from the rack alone. Tiles not
 // taken stay in the bag.
 import { BLANK, tileValue, VOWELS } from "./tiles.js";
@@ -51,7 +51,7 @@ function randomPick(size, need) {
 }
 
 // -> chooser(rack, bag, need) -> bag indices to draw.
-export function makeKidDraw(dict) {
+export function makeJuniorDraw(dict) {
   return (rack, bag, need) => {
     if (bag.length <= need) return [...bag.keys()];
     let best = null;

@@ -83,7 +83,7 @@
 
 .sc-swap-tiles {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 46px));
+  grid-template-columns: repeat(var(--rack, 7), minmax(0, 46px));
   justify-content: center;
   gap: 6px;
   margin: 0 0 14px;

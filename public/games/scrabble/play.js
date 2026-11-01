@@ -1,16 +1,17 @@
 // The match on screen: live preview, play / swap / pass / hint, the
 // computer's turns in solo and the "pass the device" screen between two
 // players. Editing the draft lives in edit.js.
-import { bestMove, chooseMove, KID_HINT_MAX } from "./ai.js";
+import { bestMove, chooseMove } from "./ai.js";
 import { createBoardView } from "./board-view.js";
 import { define } from "./define.js";
 import { draftAt, draftTiles } from "./draft.js";
-import { makeKidDraw } from "./easy-draw.js";
+import { makeJuniorDraw } from "./easy-draw.js";
 import { createEditor } from "./edit.js";
 import {
   canSwap,
   passTurn,
   playTiles,
+  swapOne,
   swapTiles,
   unseenLetters
 } from "./game.js";
@@ -19,6 +20,7 @@ import { bindInput } from "./input.js";
 import { bindKeys } from "./keys.js";
 import { createRackView } from "./rack-view.js";
 import { analyzeMove, invalidWords, wordsAt } from "./rules.js";
+import { JUNIOR } from "./tiles.js";
 
 const BOT_DELAY_MS = 750;
 
@@ -42,9 +44,10 @@ export function createPlay(opts) {
   const { els, game, config, t, dialogs, sound } = opts;
   const dict = () => opts.dicts[game.turn];
   const solo = config.mode === "solo";
-  // Kid level: the Hint button is always there and suggests short words.
-  const kid = solo && config.level === "kid";
-  const kidDraw = kid ? makeKidDraw(opts.dicts[0]) : undefined;
+  // Junior level: the Hint button is always there and suggests short words;
+  // the child's draws are friendlier (easy-draw.js).
+  const junior = solo && config.level === "junior";
+  const juniorDraw = junior ? makeJuniorDraw(opts.dicts[0]) : undefined;
   const s = {
     draft: opts.draft || [],
     cursor: null,
@@ -52,6 +55,7 @@ export function createPlay(opts) {
     thinking: false,
     hidden: false,
     lookup: false,
+    freeSwapUsed: false,
     notice: "",
     preview: { tone: "idle" },
     timer: 0
@@ -80,9 +84,10 @@ export function createPlay(opts) {
       hidden: s.hidden || game.over !== null
     });
     const names = opts.names();
-    const hints = opts.hints() || kid;
+    const hints = opts.hints() || junior;
     const { langs } = opts;
-    renderHud(s, { game, names, langs, t, solo, canAct: canAct(), hints });
+    const ctx = { game, names, langs, t, solo, junior, hints };
+    renderHud(s, { ...ctx, canAct: canAct() });
   }
 
   function changed() {
@@ -105,6 +110,7 @@ export function createPlay(opts) {
 
   function afterMove() {
     Object.assign(s, { draft: [], cursor: null, selected: -1 });
+    s.freeSwapUsed = false;
     if (game.over) {
       refresh();
       return opts.onEnd(game);
@@ -117,7 +123,7 @@ export function createPlay(opts) {
   function play() {
     if (!canAct() || s.preview.tone !== "ok") return false;
     const { analysis } = s.preview;
-    playTiles(game, draftTiles(s.draft), analysis, kidDraw);
+    playTiles(game, draftTiles(s.draft), analysis, juniorDraw);
     (analysis.bingo ? sound.bingo : sound.play)();
     afterMove();
     return true;
@@ -167,8 +173,7 @@ export function createPlay(opts) {
 
   function hint() {
     if (!canAct()) return;
-    const maxLength = kid ? KID_HINT_MAX : Infinity;
-    const move = bestMove(game.board, myRack(), dict(), maxLength);
+    const move = bestMove(game.board, myRack(), dict(), junior);
     if (move) return edit.layOut(move.tiles);
     s.draft = [];
     s.notice = "noMove";
@@ -179,11 +184,21 @@ export function createPlay(opts) {
     if (!canAct()) return;
     s.draft = [];
     refresh();
-    const choice = await dialogs.swapOrPass(myRack(), canSwap(game), t);
+    const rules = {
+      allowed: canSwap(game),
+      max: game.bag.length,
+      freeOne: JUNIOR && !s.freeSwapUsed
+    };
+    const choice = await dialogs.swapOrPass(myRack(), rules, t);
     if (!choice || game.over) return refresh();
-    if (choice.kind === "swap") swapTiles(game, choice.letters, kidDraw);
-    else passTurn(game);
     sound.tap();
+    if (choice.keepTurn) {
+      swapOne(game, choice.letters[0], juniorDraw);
+      s.freeSwapUsed = true;
+      return changed();
+    }
+    if (choice.kind === "swap") swapTiles(game, choice.letters, juniorDraw);
+    else passTurn(game);
     afterMove();
   }
 

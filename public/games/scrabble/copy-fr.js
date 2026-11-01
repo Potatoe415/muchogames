@@ -27,7 +27,7 @@ export const STRINGS = {
   modeSolo: "Contre l'ordinateur",
   modeDuo: "À deux",
   level: "Niveau",
-  kid: "Enfant",
+  junior: "Junior",
   easy: "Facile",
   medium: "Moyen",
   hard: "Difficile",
@@ -73,6 +73,9 @@ export const STRINGS = {
   cancel: "Annuler",
   swapTitle: "Échanger ou passer",
   swapHelp: "Touchez les lettres à remettre dans le sac.",
+  swapHelpJunior:
+    "Une seule lettre : vous l'échangez et vous jouez quand même. Plusieurs : vous passez votre tour.",
+  swapOneConfirm: "Échanger 1 lettre et jouer",
   swapNone: "Moins de 7 lettres dans le sac : l'échange n'est plus possible.",
   swapConfirm: "Échanger ({count})",
   passConfirm: "Passer mon tour",
@@ -105,7 +108,7 @@ export const RULES = `
   <li>Le premier mot passe par l'étoile ★ au centre.</li>
   <li>Tous les mots formés doivent exister dans le dictionnaire de la langue choisie : le jeu vérifie avant de valider, sans pénalité. Français : Officiel du Scrabble (ODS 9). Anglais : ENABLE. Espagnol : liste libre de 635 000 mots.</li>
   <li>Les accents ne comptent pas. En espagnol, Ñ est une lettre à part ; CH, LL et RR s'écrivent avec deux lettres. Chaque langue a ses propres lettres et valeurs.</li>
-  <li><strong>Niveau Enfant :</strong> l'ordinateur pose de petits mots, et le bouton Indice est toujours là pour proposer un mot court.</li>
+  <li><strong>Junior</strong> (contre l'ordinateur, dès 7 ans) : les règles de la face 2 du Scrabble Junior. Petit plateau, 5 lettres chacun, et les lettres de l'ordinateur sont visibles. Seules les cases de couleur rapportent des points : vert 1, bleu 2, rose 3 pour chaque lettre posée dessus (la valeur des lettres ne compte pas). Au début de son tour, on peut échanger 1 lettre et jouer quand même, ou passer son tour pour en échanger plusieurs. Rien n'est retiré à la fin. Le bouton Indice est toujours là et les lettres piochées sont plus faciles.</li>
   <li><strong>FR + ES :</strong> un joueur pose des mots français, l'autre des mots espagnols, sur le même plateau. Seuls les mots formés par le joueur doivent exister dans sa langue. Le sac est commun (valeurs françaises, avec le Ñ).</li>
   <li><strong>Points :</strong> chaque lettre a sa valeur. LD et LT doublent ou triplent la lettre, MD et MT le mot entier (l'étoile compte MD). Une case ne compte qu'au moment où on la couvre.</li>
   <li>Le <strong>joker</strong> remplace n'importe quelle lettre et vaut 0 point.</li>

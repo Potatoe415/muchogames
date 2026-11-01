@@ -52,8 +52,13 @@ export function createDialogs() {
     return open("scrabble-blank-dialog");
   }
 
-  function renderSwap(rack, chosen, allowed, t) {
-    $("scrabble-swap-tiles").replaceChildren(
+  // rules: { allowed, max (tiles in the bag), freeOne (Junior: one letter
+  // swapped keeps the turn) }
+  function renderSwap(rack, chosen, rules, t) {
+    const { allowed } = rules;
+    const host = $("scrabble-swap-tiles");
+    host.style.setProperty("--rack", String(rack.length));
+    host.replaceChildren(
       ...rack.map((letter, k) => {
         const b = document.createElement("button");
         b.type = "button";
@@ -65,24 +70,32 @@ export function createDialogs() {
         b.innerHTML = tileHtml(letter);
         b.addEventListener("click", () => {
           chosen.has(k) ? chosen.delete(k) : chosen.add(k);
-          renderSwap(rack, chosen, allowed, t);
+          renderSwap(rack, chosen, rules, t);
         });
         return b;
       })
     );
+    const one = rules.freeOne && chosen.size === 1;
     const confirm = $("scrabble-swap-confirm");
-    confirm.disabled = !allowed || !chosen.size;
-    confirm.textContent = t("swapConfirm", { count: chosen.size });
+    confirm.disabled = !allowed || !chosen.size || chosen.size > rules.max;
+    confirm.textContent = one
+      ? t("swapOneConfirm")
+      : t("swapConfirm", { count: chosen.size });
   }
 
-  // -> { kind: "swap", letters } | { kind: "pass" } | null
-  function swapOrPass(rack, allowed, t) {
+  // -> { kind: "swap", letters, keepTurn } | { kind: "pass" } | null
+  function swapOrPass(rack, rules, t) {
     const chosen = new Set();
-    $("scrabble-swap-note").textContent = t(allowed ? "swapHelp" : "swapNone");
-    renderSwap(rack, chosen, allowed, t);
+    const help = rules.freeOne ? "swapHelpJunior" : "swapHelp";
+    $("scrabble-swap-note").textContent = t(rules.allowed ? help : "swapNone");
+    renderSwap(rack, chosen, rules, t);
     const done = open("scrabble-swap-dialog");
     $("scrabble-swap-confirm").onclick = () =>
-      answer({ kind: "swap", letters: [...chosen].map((k) => rack[k]) });
+      answer({
+        kind: "swap",
+        letters: [...chosen].map((k) => rack[k]),
+        keepTurn: rules.freeOne && chosen.size === 1
+      });
     $("scrabble-pass-confirm").onclick = () => answer({ kind: "pass" });
     return done;
   }

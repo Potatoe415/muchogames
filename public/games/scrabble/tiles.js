@@ -1,11 +1,15 @@
-// Tile sets per word language and the 15×15 board. A board cell holds ""
-// (empty), an uppercase letter (normal tile) or a lowercase letter (a blank
-// played as that letter, worth 0). In a rack "?" is a blank. One set is
-// active at a time (useTileSet), set by the match being played.
-export const SIZE = 15;
-export const CELLS = SIZE * SIZE;
-export const CENTER = 7 * SIZE + 7;
-export const RACK_SIZE = 7;
+// Tile sets per word language and the board. A board cell holds "" (empty),
+// an uppercase letter (normal tile) or a lowercase letter (a blank played as
+// that letter, worth 0). In a rack "?" is a blank. One set and one board are
+// active at a time (useTileSet, useJunior), set by the match being played:
+// classic 15×15 with 7-letter racks, or Junior (Scrabble Junior, side 2):
+// 11×11, 5-letter racks, points only from coloured squares.
+export let JUNIOR = false;
+export let SIZE = 15;
+export let CELLS = SIZE * SIZE;
+export let CENTER = 7 * SIZE + 7;
+export let RACK_SIZE = 7;
+export let PREMIUM = "";
 export const BINGO = 50;
 export const BLANK = "?";
 
@@ -82,8 +86,10 @@ export function shuffle(list) {
   return out;
 }
 
-// T = word ×3, D = word ×2 (* = centre, word ×2), t = letter ×3, d = letter ×2.
-const TOP = [
+// Top half of each board down to the centre row, mirrored below.
+// Classic: T = word ×3, D = word ×2 (* = centre, word ×2), t = letter ×3,
+// d = letter ×2. Junior: coloured squares g = 1 point, b = 2, r = 3, * = star.
+const CLASSIC_TOP = [
   "T..d...T...d..T",
   ".D...t...t...D.",
   "..D...d.d...D..",
@@ -93,18 +99,41 @@ const TOP = [
   "..d...d.d...d..",
   "T..d...*...d..T"
 ];
+const JUNIOR_TOP = [
+  "r..g...g..r",
+  ".b...g...b.",
+  "..g.b.b.g..",
+  "g..r...r..g",
+  "..b.g.g.b..",
+  ".g...*...g."
+];
+const COLOR_POINTS = { g: 1, b: 2, r: 3 };
 
-export const PREMIUM = [...TOP, ...TOP.slice(0, 7).reverse()].join("");
+const mirror = (top) => [...top, ...top.slice(0, -1).reverse()].join("");
+
+export function useJunior(on) {
+  JUNIOR = on;
+  SIZE = on ? 11 : 15;
+  CELLS = SIZE * SIZE;
+  CENTER = Math.floor(CELLS / 2);
+  RACK_SIZE = on ? 5 : 7;
+  PREMIUM = mirror(on ? JUNIOR_TOP : CLASSIC_TOP);
+}
+
+useJunior(false);
 
 export function letterFactor(index) {
-  const p = PREMIUM[index];
+  const p = JUNIOR ? "" : PREMIUM[index];
   return p === "t" ? 3 : p === "d" ? 2 : 1;
 }
 
 export function wordFactor(index) {
-  const p = PREMIUM[index];
+  const p = JUNIOR ? "" : PREMIUM[index];
   return p === "T" ? 3 : p === "D" || p === "*" ? 2 : 1;
 }
+
+// Junior: points of the coloured square under a newly placed letter.
+export const colorPoints = (index) => COLOR_POINTS[PREMIUM[index]] || 0;
 
 export const rackValue = (rack) =>
   rack.reduce((sum, letter) => sum + tileValue(letter), 0);

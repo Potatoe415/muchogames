@@ -4,6 +4,8 @@
 import {
   BINGO,
   CENTER,
+  colorPoints,
+  JUNIOR,
   letterFactor,
   RACK_SIZE,
   SIZE,
@@ -93,10 +95,15 @@ export function analyzeMove(board, tiles) {
   const touches = words.some((w) => w.cells.some((i) => board[i]));
   if (!isBoardEmpty(board) && !touches) return { error: "detached" };
   if (!words.length) return { error: "short" };
+  if (JUNIOR) return { words, score: juniorScore(tiles), bingo: false };
   const bingo = tiles.length === RACK_SIZE;
   const score = words.reduce((sum, w) => sum + w.score, bingo ? BINGO : 0);
   return { words, score, bingo };
 }
+
+// Junior: only coloured squares covered this turn count, once per letter.
+const juniorScore = (tiles) =>
+  tiles.reduce((sum, t) => sum + colorPoints(t.i), 0);
 
 // Words (≥ 2 letters) through cell i, across then down, draft included.
 export function wordsAt(board, tiles, i) {

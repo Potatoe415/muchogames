@@ -2,6 +2,7 @@
 // empty slot behind; between two players on one device the tiles are face down.
 import { tileHtml } from "./board-view.js";
 import { isPlaced } from "./draft.js";
+import { RACK_SIZE } from "./tiles.js";
 
 function slotButton(letter, k, { selected, hidden }) {
   const button = document.createElement("button");
@@ -27,6 +28,7 @@ function emptySlot(k) {
 
 export function createRackView(host) {
   let key = "";
+  host.style.setProperty("--rack", String(RACK_SIZE));
 
   // { rack, draft, selected, hidden }
   function paint(state) {

@@ -1,24 +1,24 @@
 // The computer player. Expert plays the best score plus a small bonus for
 // the letters it keeps; the other levels aim at a share of the best score,
-// kid and easy with short words only. With no move it swaps (if the bag
-// allows) or passes.
+// junior and easy with short words only. Junior is played on the Junior
+// board (tiles.js), where only coloured squares score. With no move it swaps
+// (if the bag allows) or passes.
+import { isKidFriendly } from "./junior-words.js";
 import { generateMoves } from "./movegen.js";
 import { BLANK, RACK_SIZE, VOWELS } from "./tiles.js";
 
-export const LEVEL_IDS = ["kid", "easy", "medium", "hard", "expert"];
+export const LEVEL_IDS = ["junior", "easy", "medium", "hard", "expert"];
 
-const TARGET = { kid: 0.12, easy: 0.3, medium: 0.55, hard: 0.8 };
-// Kid aims at no more than this many points per move.
-const KID_CAP = 10;
-// Word lengths a level prefers, tried in order (kid: 3–4 letters, else ≤ 4).
+const TARGET = { junior: 0.35, easy: 0.3, medium: 0.55, hard: 0.8 };
+// Word lengths a level prefers, tried in order (junior: 3–4 letters, else ≤ 4).
 const LENGTHS = {
-  kid: [
+  junior: [
     [3, 4],
     [2, 4]
   ],
   easy: [[2, 6]]
 };
-export const KID_HINT_MAX = 5;
+const JUNIOR_HINT_MAX = 5;
 const KEEP = {
   [BLANK]: 22,
   S: 7,
@@ -74,8 +74,7 @@ function preferredMoves(moves, level) {
 function pickTarget(moves, level) {
   const list = preferredMoves(moves, level);
   const best = Math.max(...list.map((m) => m.score));
-  const share = best * TARGET[level];
-  const target = level === "kid" ? Math.min(share, KID_CAP) : share;
+  const target = best * TARGET[level];
   const near = list
     .map((m) => [Math.abs(m.score - target), m])
     .sort((a, b) => a[0] - b[0])
@@ -93,7 +92,7 @@ function noMove(rack, bagCount) {
 
 // -> { kind: "play", tiles, score, word } | { kind: "swap", letters } | { kind: "pass" }
 export function chooseMove({ board, rack, bagCount, level, dict }) {
-  const moves = generateMoves(board, rack, dict);
+  const moves = movesFor(board, rack, dict, level === "junior");
   if (!moves.length) return noMove(rack, bagCount);
   const move =
     level === "expert"
@@ -102,9 +101,17 @@ export function chooseMove({ board, rack, bagCount, level, dict }) {
   return { kind: "play", ...move };
 }
 
-// The best-scoring move for a hint (main word ≤ maxLength if possible), or null.
-export function bestMove(board, rack, dict, maxLength = Infinity) {
-  const all = generateMoves(board, rack, dict);
+// Junior leaves out rude words (junior-words.js).
+function movesFor(board, rack, dict, junior) {
+  const moves = generateMoves(board, rack, dict);
+  return junior ? moves.filter((m) => isKidFriendly(m.word)) : moves;
+}
+
+// The best-scoring move for a hint, or null. Junior: main word ≤ 5 letters
+// if possible, no rude word.
+export function bestMove(board, rack, dict, junior = false) {
+  const maxLength = junior ? JUNIOR_HINT_MAX : Infinity;
+  const all = movesFor(board, rack, dict, junior);
   const short = all.filter((m) => m.word.length <= maxLength);
   const moves = short.length ? short : all;
   return moves.length
