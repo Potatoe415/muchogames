@@ -1,4 +1,6 @@
 import type { CardOf, Suit } from "@/lib/cards";
+import { faceRank } from "@/lib/client/cardFace";
+import type { Locale } from "@/lib/client/i18n";
 
 const SUIT_SYMBOL: Record<Suit, string> = { H: "\u2665", D: "\u2666", C: "\u2663", S: "\u2660" };
 
@@ -22,7 +24,7 @@ export function readSpriteStyle(): SpriteStyle {
 
 /** A canvas copy of `PlayingCard`'s look (corner index + big centre suit),
  *  for animations drawn on a `<canvas>` rather than in the DOM. */
-export function renderCardSprite(card: CardOf<string>, width: number, height: number, dpr: number, style: SpriteStyle): HTMLCanvasElement {
+export function renderCardSprite(card: CardOf<string>, width: number, height: number, dpr: number, style: SpriteStyle, locale: Locale = "fr"): HTMLCanvasElement {
   const canvas = document.createElement("canvas");
   canvas.width = Math.ceil(width * dpr);
   canvas.height = Math.ceil(height * dpr);
@@ -42,7 +44,7 @@ export function renderCardSprite(card: CardOf<string>, width: number, height: nu
   ctx.textAlign = "center";
   ctx.textBaseline = "top";
   ctx.font = `900 ${fontSize}px ${style.font}`;
-  ctx.fillText(card.rank, width * 0.08 + fontSize * 0.45, height * 0.06);
+  ctx.fillText(faceRank(card.rank, locale), width * 0.08 + fontSize * 0.45, height * 0.06);
   ctx.font = `${fontSize * 0.9}px ${style.font}`;
   ctx.fillText(SUIT_SYMBOL[card.suit], width * 0.08 + fontSize * 0.45, height * 0.06 + fontSize);
   ctx.textBaseline = "middle";

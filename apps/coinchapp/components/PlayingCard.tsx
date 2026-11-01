@@ -1,5 +1,9 @@
+"use client";
+
 import type { CSSProperties } from "react";
 import type { CardOf, Suit } from "@/lib/cards";
+import { faceRank } from "@/lib/client/cardFace";
+import { useI18n } from "@/lib/client/i18n";
 
 const SUIT_SYMBOL: Record<Suit, string> = { H: "\u2665", D: "\u2666", C: "\u2663", S: "\u2660" };
 const RED_SUITS: Suit[] = ["H", "D"];
@@ -54,6 +58,8 @@ export function PlayingCard({
   onClick,
   dataId,
 }: PlayingCardProps) {
+  const { locale } = useI18n();
+  const label = faceRank(card.rank, locale);
   const red = RED_SUITS.includes(card.suit);
   const interactive = !!onClick;
   const Tag = interactive ? "button" : "div";
@@ -75,8 +81,8 @@ export function PlayingCard({
         "transition-transform",
       ].join(" ")}
     >
-      <CornerIndex rank={card.rank} suit={card.suit} side="left" />
-      {showRightIndex && <CornerIndex rank={card.rank} suit={card.suit} side="right" />}
+      <CornerIndex rank={label} suit={card.suit} side="left" />
+      {showRightIndex && <CornerIndex rank={label} suit={card.suit} side="right" />}
       <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[35%] text-[2.2em] leading-none">
         {SUIT_SYMBOL[card.suit]}
       </span>

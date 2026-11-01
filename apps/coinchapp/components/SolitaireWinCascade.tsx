@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { SUITS } from "@/lib/cards";
+import { useI18n, type Locale } from "@/lib/client/i18n";
 import {
   FRAME_MS,
   ORIGINAL_CARD_WIDTH,
@@ -32,7 +33,7 @@ interface Scene {
 
 /** Sizes the canvas to its box and finds the four foundations on screen
  *  (`SolitairePiles`' `solitaire-foundation-<suit>` elements). */
-function buildScene(canvas: HTMLCanvasElement, foundations: GameState["foundations"]): Scene | null {
+function buildScene(canvas: HTMLCanvasElement, foundations: GameState["foundations"], locale: Locale): Scene | null {
   const ctx = canvas.getContext("2d");
   const box = canvas.getBoundingClientRect();
   const rects = SUITS.map((suit) => document.querySelector(`[data-id="solitaire-foundation-${suit}"]`)?.getBoundingClientRect());
@@ -47,7 +48,7 @@ function buildScene(canvas: HTMLCanvasElement, foundations: GameState["foundatio
   const sprites = new Map<string, HTMLCanvasElement>();
   const draw = (card: Card, x: number, y: number) => {
     const key = `${card.rank}${card.suit}`;
-    if (!sprites.has(key)) sprites.set(key, renderCardSprite(card, w, h, dpr, style));
+    if (!sprites.has(key)) sprites.set(key, renderCardSprite(card, w, h, dpr, style, locale));
     ctx.drawImage(sprites.get(key)!, x, y, w, h);
   };
   return { ctx, width: box.width, height: box.height, piles: SUITS.map((suit) => foundations[suit]), rects: pileRects, draw };
@@ -104,6 +105,7 @@ function playCascade(scene: Scene, onDone: () => void): () => void {
  *  trailing copies of itself. Tap to skip. With reduced motion, the
  *  foundations are just shown as they are. */
 export function SolitaireWinCascade({ foundations, onDone, skipHint }: { foundations: GameState["foundations"]; onDone: () => void; skipHint: string }) {
+  const { locale } = useI18n();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const finishRef = useRef<() => void>(() => {});
 
@@ -117,7 +119,7 @@ export function SolitaireWinCascade({ foundations, onDone, skipHint }: { foundat
       onDone();
     };
     finishRef.current = finish;
-    const scene = canvasRef.current && buildScene(canvasRef.current, foundations);
+    const scene = canvasRef.current && buildScene(canvasRef.current, foundations, locale);
     if (!scene) return finish();
     scene.piles.forEach((pile, i) => drawPile(scene, i, pile.length));
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return finish();

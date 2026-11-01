@@ -2,15 +2,15 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Six card games (Coinche, Belote, Bouilla, Président, Bataille Corse, Solitaire). Big screens: they fill a 4K TV (0076) and play with arrow keys / the TV remote (0078). Solitaire: double tap sends a card to its foundation (0077).
+Status: Six card games. In French the faces print V (valet), D (dame), R (roi). English keeps J, Q, K. The ace stays A. Big screens still use the remote (0078).
 Focus: n/a (task complete on this side)
-Level: L2 (remote + arrow navigation, approved 2026-11-01)
+Level: L1 (French card faces)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `components/RemoteNav.tsx` (mounted in `app/layout.tsx`), `app/globals.css` (root font size, pink focus ring), `components/SolitairePiles.tsx` (`cardTops`), `lib/client/useLocalSolitaireGame.ts` (`DOUBLE_TAP_MS`)
+- Relevant_Files: `lib/client/cardFace.ts`, `components/PlayingCard.tsx`, `components/cardSprite.ts`, `components/SolitaireWinCascade.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked)
-- Relevant_Decisions: 0078, 0077, 0076, 0073 (no auto-move)
+- Relevant_Decisions: 0078, 0077, 0076
 
 Next:
 - Owner: on the 4K TV browser, play Solitaire and one trick game with the remote: arrows reach every card, OK plays, Back closes the settings panel (or leaves to the hub on Android TV: match saved). Is 400 ms right for a double OK / double tap?
@@ -31,8 +31,8 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
-- 2026-11-01 Remote + arrows (decision 0078). Keyboard only in the browser: Solitaire waste 3♥ picked up with OK, Right to its foundation, OK moved it; Down walks a fanned column card by card; settings panel opened with OK, arrows stayed inside it, Escape closed it; Président hand reached with arrows, card played with OK. `npm test` 373/373, `tsc` clean, `npm run build` clean.
+- 2026-11-01 French faces: valet V, dame D, roi R. English stays J, Q, K. Browser: Solitaire FR→EN→FR; Coinche hand showed V/D/R while `data-card` stayed J/Q/K. `npm test` 373/373, `tsc` clean, `npm run build` clean, lint: only the known `useMatchStats.ts:220` error.
+- 2026-11-01 Remote + arrows (decision 0078).
 - 2026-11-01 Solitaire double tap (decision 0077).
-- 2026-11-01 Big screens (decision 0076): root font `clamp(16px, 100svmin / 56, 48px)`; Solitaire long columns tighten (face-down first). 4K: Solitaire cards 261 px (was 104 max); phone unchanged.
+- 2026-11-01 Big screens (decision 0076).
 - 2026-10-31 Belote (decision 0075).
-- 2026-10-23 Solitaire: no auto-move (decision 0073): tap picks up, tap a lit destination to move; drag and drop alongside.
