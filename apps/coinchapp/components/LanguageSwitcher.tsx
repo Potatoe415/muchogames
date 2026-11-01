@@ -7,18 +7,17 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
   const { locale, setLocale } = useI18n();
   const isInStartedGame = pathname === "/local/play" || pathname.startsWith("/game/");
-  // The home splash screens (`/`, `/bouilla`, `/president`, `/coinche`,
-  // `/bataillecorse`) have their own settings panel (`HomeTopBar`) with an
-  // equivalent language switch, so this global one would be a duplicate
-  // control there (previously missing `/bataillecorse` here showed both at
-  // once on that screen, as a stray extra language control).
+  // Home splash screens have their own settings panel (`HomeTopBar`) with an
+  // equivalent language switch, so this global one would sit on top of the
+  // paramètres button (previously missing `/bataillecorse`, then `/solitaire`).
   const hasOwnLanguageSwitch =
     pathname === "/" ||
     pathname === "/bouilla" ||
     pathname === "/president" ||
     pathname === "/coinche" ||
     pathname === "/belote" ||
-    pathname === "/bataillecorse";
+    pathname === "/bataillecorse" ||
+    pathname === "/solitaire";
 
   if (isInStartedGame || hasOwnLanguageSwitch) return null;
 

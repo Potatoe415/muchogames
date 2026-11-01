@@ -184,6 +184,16 @@
     "duration": 1
   },
   {
+    "id": "scrabble",
+    "title": "Scrabble",
+    "kind": "custom",
+    "category": "mots",
+    "added": "2026-11-01",
+    "launch": "/games/scrabble/index.html",
+    "thumbnail": "/games/scrabble/assets/thumbnail.svg",
+    "players": [1, 2]
+  },
+  {
     "id": "sudoku",
     "title": "Sudoku",
     "kind": "custom",
