@@ -1,7 +1,5 @@
 export const STRINGS = {
   title: "Scrabble",
-  pitch:
-    "El juego de letras, en francés, inglés o español. Contra el ordenador o entre dos.",
   words: "Idioma de las palabras",
   p1LangSolo: "Tu idioma",
   p1LangDuo: "Idioma del jugador 1",
