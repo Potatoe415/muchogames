@@ -2,18 +2,18 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Chip's Challenge keeps the last completed level and shows hints in FR/EN/ES. SkiFree arrow-up jumps (keyboard and TV remote). Millionaire has a TV mode. Daily play coins are 20 per Paris day (decision 0055).
-Focus: Owner play-test of SkiFree up-arrow jump on the Bravia; Millionaire on the Bravia 8 II; Fruit Slash and Échecs on phones.
+Status: Four playing-card backs are cut and not wired into the games yet. SkiFree arrow-up jumps. Millionaire has a TV mode. Daily play coins are 20 per Paris day (decision 0055).
+Focus: Wire `public/shared/card-backs/` into Bridge and the Coinchapp card games. Owner play-test of SkiFree, Millionaire, Fruit Slash, and Échecs.
 Level: L1
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/skifree/input.js`, `rules.js`
+- Relevant_Files: `public/shared/card-backs/{hogwarts,casino,stars,garden}.webp`
 - Do_Not_Touch: `apps/**`; Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0055, 0054, 0053, 0050
 
 Next:
-- Wire the four backs as a player choice in Bridge and every Coinchapp card game. Memory stays on its square backs.
+- Wire hogwarts, casino, stars, and garden as a back choice in Bridge and every Coinchapp card game. Memory keeps its square backs.
 - Owner: on the TV browser open `https://www.muchogames.win/games/millionaire/index.html?tv=1` once (then remembered; Options → "Mode TV" toggles it). Check: whole screen, remote arrows/OK/Back, fullscreen on "Commencer", no screen saver mid-match.
 - Owner: play Fruit Slash with a kid on a phone and a tablet, both orientations: item size/speed in Petit ninja, star thresholds (`MODES.*.stars` in `public/games/fruitslash/rules.js`).
 - Owner: play Échecs on iPhone and Android, the 4 levels, castling, promotion, clock + Pause, "Reprendre".
@@ -33,7 +33,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-11-01 Chip's Challenge: last completed level saved locally ("Continuer · niveau N" on the start screen); "?" hints translated FR/ES (`hints.js`).
+- 2026-11-01 Card backs: sheet sliced into hogwarts, casino, stars, garden (`public/shared/card-backs/`).
 - 2026-11-01 SkiFree: arrow up jumps (keyboard and TV remote, even if a button has focus). Z/W and numpad 8 still climb.
 - 2026-10-31 Millionaire TV mode: 1920x1080 canvas zoomed to the TV, ladder always shown, show-style lozenges, remote spatial navigation, fullscreen + wake lock. `app.js` untouched.
 - 2026-10-31 Memory online: opponent's cards stay face up at least 1 s on the other device (`REVEAL_MS`).
