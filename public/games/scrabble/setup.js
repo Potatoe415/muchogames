@@ -32,14 +32,13 @@ export function renderChoices(settings) {
     button.classList.toggle("active", on);
     button.setAttribute("aria-pressed", String(on));
   });
-  document.querySelectorAll("[data-solo-only]").forEach((node) => {
-    node.hidden = settings.mode !== "solo";
-  });
-  document.querySelectorAll("[data-duo-only]").forEach((node) => {
-    node.hidden = settings.mode !== "duo";
-  });
-  document.querySelectorAll("[data-mix-only]").forEach((node) => {
-    node.hidden = settings.words !== "fr-es";
+  const only = "[data-solo-only], [data-duo-only], [data-mix-only]";
+  document.querySelectorAll(only).forEach((node) => {
+    const { soloOnly, duoOnly, mixOnly } = node.dataset;
+    node.hidden =
+      (soloOnly !== undefined && settings.mode !== "solo") ||
+      (duoOnly !== undefined && settings.mode !== "duo") ||
+      (mixOnly !== undefined && settings.words !== "fr-es");
   });
   NAME_IDS.forEach((id, p) => {
     if (document.activeElement !== $(id)) $(id).value = settings.names[p];
@@ -73,10 +72,17 @@ export function useRules(config) {
   useJunior(isJunior(config));
 }
 
-export const matchConfig = (settings) => ({
+// Against the computer in FR + ES, the player's words follow the interface
+// language (Spanish if the app is in Spanish, French otherwise).
+export const matchConfig = (settings, uiLang) => ({
   mode: settings.mode,
   level: settings.level,
   words: settings.words,
-  p1Lang: settings.p1Lang,
+  p1Lang:
+    settings.mode === "solo"
+      ? uiLang === "es"
+        ? "es"
+        : "fr"
+      : settings.p1Lang,
   names: settings.names.slice()
 });

@@ -203,7 +203,7 @@ function returnToStart() {
 }
 
 async function startMatch() {
-  const config = matchConfig(page.settings);
+  const config = matchConfig(page.settings, page.lang);
   if (page.starting || !dictsReady(config.words)) return;
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();

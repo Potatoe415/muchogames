@@ -1,7 +1,6 @@
 export const STRINGS = {
   title: "Scrabble",
   words: "Idioma de las palabras",
-  p1LangSolo: "Tu idioma",
   p1LangDuo: "Idioma del jugador 1",
   mixHelp:
     "Cada uno pone palabras en su idioma en el mismo tablero. Bolsa común con la Ñ.",
