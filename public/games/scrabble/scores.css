@@ -1,0 +1,83 @@
+/* Score cards (name, score, whose turn) and the bag counter above the board. */
+
+.sc-player {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: inset 0 0 0 2px transparent;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+.sc-player.is-active {
+  background: #ffffff;
+  box-shadow:
+    inset 0 0 0 2px #8fb9a5,
+    0 6px 16px rgba(46, 61, 57, 0.08);
+}
+
+.sc-player-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sc-player-score {
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+  color: #3d5c50;
+}
+
+.sc-player.is-thinking .sc-player-name::after {
+  content: " …";
+  animation: sc-breathe 1s ease-in-out infinite;
+}
+
+.sc-bag {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 48px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.45);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.sc-bag svg {
+  width: 22px;
+  height: 22px;
+  fill: #e9dcc0;
+  stroke: #9a8662;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+}
+
+.sc-bag-text {
+  display: grid;
+  line-height: 1.05;
+  text-align: left;
+}
+
+.sc-bag-text small {
+  font-size: 0.65rem;
+  color: #7d918a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}

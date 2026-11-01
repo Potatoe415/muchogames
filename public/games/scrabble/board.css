@@ -1,0 +1,253 @@
+/* Board, premium squares, tiles, rack and the dragged ghost tile. Sizes
+   follow the board area (container query), so the board is always the
+   largest square that fits. */
+.sc-board-area,
+.sc-rack {
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+.sc-board {
+  --gap: 2px;
+  width: min(100cqw, 100cqh);
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(15, minmax(0, 1fr));
+  grid-template-rows: repeat(15, minmax(0, 1fr));
+  gap: var(--gap);
+  padding: 5px;
+  border-radius: 14px;
+  background: #d3dfd7;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 14px 34px rgba(46, 61, 57, 0.14);
+  font-size: calc(min(100cqw, 100cqh) / 15 * 0.46);
+}
+
+.sc-cell {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background: #f7f4ec;
+  color: #9aa8a2;
+  font: inherit;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.sc-cell::after {
+  content: attr(data-label);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 0.62em;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+.sc-cell.is-filled::after {
+  content: none;
+}
+
+.sc-cell[data-premium="T"] {
+  background: #e7a596;
+  color: #ffffff;
+}
+
+.sc-cell[data-premium="D"],
+.sc-cell[data-premium="*"] {
+  background: #f4d6cb;
+  color: #b0705f;
+}
+
+.sc-cell[data-premium="t"] {
+  background: #88afbf;
+  color: #ffffff;
+}
+
+.sc-cell[data-premium="d"] {
+  background: #d3e6ec;
+  color: #5d8899;
+}
+
+.sc-cell[data-premium="*"]::after {
+  font-size: 1.3em;
+}
+
+.sc-cell.is-cursor {
+  box-shadow: inset 0 0 0 2px #5f8f7a;
+}
+
+.sc-cell.is-cursor::after {
+  color: #5f8f7a;
+  font-size: 1.15em;
+  font-weight: 900;
+}
+
+.sc-cell.is-cursor[data-dir="across"]::after {
+  content: "→";
+}
+
+.sc-cell.is-cursor[data-dir="down"]::after {
+  content: "↓";
+}
+
+/* --- Tiles --- */
+.sc-tile {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12%;
+  background: linear-gradient(160deg, #fffaf0 0%, #f6ead0 55%, #eddcb7 100%);
+  box-shadow:
+    inset 0 -0.12em 0 rgba(160, 130, 80, 0.28),
+    0 0.06em 0.16em rgba(60, 45, 25, 0.25);
+  color: #3a3128;
+  line-height: 1;
+}
+
+.sc-tile b {
+  font-size: 1.28em;
+  font-weight: 800;
+  transform: translate(-0.04em, -0.02em);
+}
+
+.sc-tile small {
+  position: absolute;
+  right: 9%;
+  bottom: 6%;
+  font-size: 0.52em;
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+.sc-tile.is-blank b {
+  color: #b0705f;
+}
+
+.sc-tile.is-back {
+  background: linear-gradient(160deg, #a9c9b8, #85ad99);
+  box-shadow: inset 0 -0.12em 0 rgba(40, 80, 60, 0.25);
+}
+
+.sc-cell.is-last .sc-tile {
+  background: linear-gradient(160deg, #fff6dc 0%, #f8e2a8 60%, #f0d48e 100%);
+}
+
+.sc-cell.is-draft .sc-tile {
+  box-shadow:
+    0 0 0 2px #6fa58c,
+    0 0.18em 0.4em rgba(46, 61, 57, 0.3);
+  transform: translateY(-4%);
+}
+
+.sc-cell.is-lifted .sc-tile {
+  opacity: 0.3;
+}
+
+/* Live score bubble on the last tile put down. */
+.sc-cell.has-score::before {
+  content: attr(data-score);
+  position: absolute;
+  top: -0.9em;
+  right: -0.8em;
+  z-index: 2;
+  min-width: 1.6em;
+  padding: 0.18em 0.35em;
+  border-radius: 999px;
+  background: #5f8f7a;
+  color: #ffffff;
+  font-size: 0.78em;
+  font-weight: 800;
+  line-height: 1.1;
+  box-shadow: 0 2px 6px rgba(46, 61, 57, 0.25);
+  pointer-events: none;
+}
+
+.sc-cell.has-score[data-tone="bad"]::before {
+  background: #c4887a;
+}
+
+/* --- Rack --- */
+.sc-rack {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 52px));
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 6px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.sc-slot {
+  position: relative;
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 21px;
+  font-family: inherit;
+  cursor: grab;
+  transition: transform 0.15s ease;
+}
+
+.sc-slot.is-empty {
+  box-shadow: inset 0 0 0 2px rgba(95, 143, 122, 0.18);
+  cursor: default;
+}
+
+.sc-slot.is-selected {
+  transform: translateY(-8px);
+}
+
+.sc-slot.is-selected .sc-tile {
+  box-shadow:
+    0 0 0 3px #6fa58c,
+    0 6px 12px rgba(46, 61, 57, 0.25);
+}
+
+.sc-slot.is-lifted .sc-tile {
+  opacity: 0.3;
+}
+
+.sc-slot:disabled {
+  cursor: default;
+}
+
+.sc-ghost {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  font-size: 22px;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 12px rgba(46, 61, 57, 0.3));
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+  .sc-board {
+    --gap: 3px;
+    padding: 7px;
+    border-radius: 18px;
+  }
+
+  .sc-rack {
+    grid-template-columns: repeat(7, minmax(0, 58px));
+  }
+
+  .sc-slot {
+    font-size: 24px;
+  }
+}

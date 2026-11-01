@@ -1,0 +1,284 @@
+/* Scrabble: calm sage-and-paper page over the shared header. Start screen,
+   chips and buttons. Stage layout in stage.css, board and tiles in
+   board.css, sheets (dialogs, end card) in sheets.css. */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 70% at 50% 0%, #f6f9f6 0%, #e4ece6 60%, #d8e3dc 100%)
+      fixed,
+    #e4ece6;
+  color: #2e3d39;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(46, 61, 57, 0.08);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #2e3d39;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.options-panel-sheet {
+  color: #2e3d39;
+}
+
+.sc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sc-chip {
+  min-width: 56px;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 2px solid #dde6e0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #2e3d39;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sc-chip.active {
+  border-color: #5f8f7a;
+  background: #e6f0ea;
+}
+
+.sc-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sc-app [hidden] {
+  display: none !important;
+}
+
+.sc-app button:focus-visible,
+.sc-app input:focus-visible {
+  outline: 3px solid rgba(95, 143, 122, 0.55);
+  outline-offset: 2px;
+}
+
+/* --- Start screen --- */
+.sc-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 16px max(14px, env(safe-area-inset-right))
+    calc(16px + env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.sc-card {
+  width: min(100%, 420px);
+  padding: 24px 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  text-align: center;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 20px 50px rgba(46, 61, 57, 0.12);
+}
+
+.sc-logo {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 19px;
+}
+
+.sc-logo .sc-tile {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.sc-logo .sc-tile:nth-child(odd) {
+  transform: rotate(-4deg);
+}
+
+.sc-logo .sc-tile:nth-child(even) {
+  transform: rotate(3deg) translateY(2px);
+}
+
+.sc-title {
+  margin: 12px 0 4px;
+  font-size: clamp(1.7rem, 7vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.sc-pitch {
+  margin: 0 0 16px;
+  color: #6c7f78;
+  line-height: 1.4;
+}
+
+.sc-dict {
+  margin: 0 0 14px;
+  color: #6c7f78;
+  font-size: 0.9rem;
+  animation: sc-breathe 1.6s ease-in-out infinite;
+}
+
+.sc-dict-error {
+  margin: 0 0 14px;
+  color: #a35b4b;
+}
+
+.sc-field {
+  margin: 0 0 16px;
+}
+
+.sc-label {
+  margin: 0 0 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7d918a;
+}
+
+.sc-seg {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: 6px;
+}
+
+.sc-option {
+  min-height: 46px;
+  padding: 8px 6px;
+  border: 2px solid #e1e9e4;
+  border-radius: 14px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.sc-option.active {
+  border-color: #5f8f7a;
+  background: #e6f0ea;
+}
+
+.sc-record {
+  margin: 6px 0 0;
+  font-size: 0.82rem;
+  color: #7d918a;
+}
+
+.sc-names {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 6px;
+}
+
+.sc-input {
+  min-width: 0;
+  min-height: 46px;
+  padding: 8px 12px;
+  border: 2px solid #e1e9e4;
+  border-radius: 14px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.sc-button {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #6e9e88, #5a8a74);
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #436b59;
+  touch-action: manipulation;
+}
+
+.sc-button:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #436b59;
+}
+
+.sc-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.sc-button-resume {
+  margin-bottom: 16px;
+  background: linear-gradient(180deg, #d9a679, #c58e5f);
+  box-shadow: 0 3px 0 #9a6a40;
+}
+
+.sc-button-ghost {
+  background: #ffffff;
+  color: #2e3d39;
+  box-shadow: inset 0 0 0 2px #dde6e0;
+}
+
+.sc-button-ghost:active:not(:disabled) {
+  box-shadow: inset 0 0 0 2px #dde6e0;
+}
+
+.sc-link {
+  min-height: 40px;
+  border: none;
+  background: none;
+  color: #6c7f78;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes sc-breathe {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-dict {
+    animation: none;
+  }
+}

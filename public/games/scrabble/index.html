@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#e7eee8" />
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="scores.css" />
+    <link rel="stylesheet" href="stage.css" />
+    <link rel="stylesheet" href="board.css" />
+    <link rel="stylesheet" href="sheets.css" />
+  </head>
+  <body data-match-saved>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Scrabble</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="scrabble-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="sc-chips">
+              <button
+                type="button"
+                class="sc-chip"
+                data-lang="fr"
+                data-id="scrabble-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="sc-chip"
+                data-lang="en"
+                data-id="scrabble-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="sc-chip"
+                data-lang="es"
+                data-id="scrabble-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="scrabble-options-sound">
+            <p class="options-panel-section-title" data-i18n="sound">Son</p>
+            <div class="sc-chips">
+              <button
+                type="button"
+                class="sc-chip"
+                data-setting="sound"
+                data-value="on"
+                data-id="scrabble-sound-on"
+                data-i18n="on"
+              ></button>
+              <button
+                type="button"
+                class="sc-chip"
+                data-setting="sound"
+                data-value="off"
+                data-id="scrabble-sound-off"
+                data-i18n="off"
+              ></button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="scrabble-options-hints">
+            <p class="options-panel-section-title" data-i18n="hintOption"></p>
+            <div class="sc-chips">
+              <button
+                type="button"
+                class="sc-chip"
+                data-setting="hints"
+                data-value="on"
+                data-id="scrabble-hints-on"
+                data-i18n="on"
+              ></button>
+              <button
+                type="button"
+                class="sc-chip"
+                data-setting="hints"
+                data-value="off"
+                data-id="scrabble-hints-off"
+                data-i18n="off"
+              ></button>
+            </div>
+          </div>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
+            <div
+              class="rules-modal-content"
+              data-id="scrabble-rules-content"
+            ></div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <main class="sc-app" data-id="scrabble-app">
+      <section class="sc-start" data-id="scrabble-start-screen">
+        <div class="sc-card">
+          <div class="sc-logo" aria-hidden="true">
+            <span class="sc-tile"><b>M</b><small>2</small></span
+            ><span class="sc-tile"><b>O</b><small>1</small></span
+            ><span class="sc-tile"><b>T</b><small>1</small></span
+            ><span class="sc-tile"><b>S</b><small>1</small></span>
+          </div>
+          <h2 class="sc-title" data-i18n="title">Scrabble</h2>
+          <p class="sc-pitch" data-i18n="pitch"></p>
+
+          <p class="sc-dict" data-id="scrabble-dict-status" aria-live="polite">
+            <span data-i18n="dictLoading"></span>
+          </p>
+          <div class="sc-dict-error" data-id="scrabble-dict-error" hidden>
+            <p data-i18n="dictError"></p>
+            <button
+              type="button"
+              class="sc-button sc-button-ghost"
+              data-id="scrabble-dict-retry"
+              data-i18n="retry"
+            ></button>
+          </div>
+
+          <button
+            type="button"
+            class="sc-button sc-button-resume"
+            data-id="scrabble-resume-button"
+            data-i18n="resume"
+            hidden
+          ></button>
+
+          <div class="sc-field" data-id="scrabble-mode-field">
+            <p class="sc-label" data-i18n="mode"></p>
+            <div class="sc-seg">
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="mode"
+                data-value="solo"
+                data-id="scrabble-mode-solo"
+                data-i18n="modeSolo"
+              ></button>
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="mode"
+                data-value="duo"
+                data-id="scrabble-mode-duo"
+                data-i18n="modeDuo"
+              ></button>
+            </div>
+          </div>
+
+          <div class="sc-field" data-id="scrabble-level-field" data-solo-only>
+            <p class="sc-label" data-i18n="level"></p>
+            <div class="sc-seg">
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="level"
+                data-value="easy"
+                data-id="scrabble-level-easy"
+                data-i18n="easy"
+              ></button>
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="level"
+                data-value="medium"
+                data-id="scrabble-level-medium"
+                data-i18n="medium"
+              ></button>
+              <button
+                type="button"
+                class="sc-option"
+                data-setting="level"
+                data-value="hard"
+                data-id="scrabble-level-hard"
+                data-i18n="hard"
+              ></button>
+            </div>
+            <p class="sc-record" data-id="scrabble-level-record"></p>
+          </div>
+
+          <div class="sc-field" data-id="scrabble-names-field" data-duo-only>
+            <p class="sc-label" data-i18n="players"></p>
+            <div class="sc-names">
+              <input
+                class="sc-input"
+                type="text"
+                maxlength="16"
+                autocomplete="off"
+                data-id="scrabble-name-1"
+                data-i18n-placeholder="player1"
+                aria-label="Joueur 1"
+                data-i18n-aria="player1"
+              />
+              <input
+                class="sc-input"
+                type="text"
+                maxlength="16"
+                autocomplete="off"
+                data-id="scrabble-name-2"
+                data-i18n-placeholder="player2"
+                aria-label="Joueur 2"
+                data-i18n-aria="player2"
+              />
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="sc-button"
+            data-id="scrabble-start-button"
+            data-i18n="start"
+            disabled
+          ></button>
+        </div>
+      </section>
+
+      <section class="sc-stage" data-id="scrabble-stage" hidden>
+        <div class="sc-top" data-id="scrabble-scores">
+          <div class="sc-player" data-id="scrabble-player-1">
+            <span class="sc-player-name" data-name></span>
+            <strong class="sc-player-score" data-score>0</strong>
+          </div>
+          <div class="sc-player" data-id="scrabble-player-2">
+            <span class="sc-player-name" data-name></span>
+            <strong class="sc-player-score" data-score>0</strong>
+          </div>
+          <button type="button" class="sc-bag" data-id="scrabble-bag-button">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 8h10l1.5 11a2 2 0 0 1-2 2.3h-9a2 2 0 0 1-2-2.3z" />
+              <path d="M9 8V6.5a3 3 0 0 1 6 0V8" />
+            </svg>
+            <span class="sc-bag-text"
+              ><small data-i18n="bag"></small
+              ><strong data-id="scrabble-bag-count">0</strong></span
+            >
+          </button>
+        </div>
+        <p class="sc-info" data-id="scrabble-info" aria-live="polite"></p>
+        <div class="sc-board-area" data-id="scrabble-board-area">
+          <div class="sc-board" data-id="scrabble-board"></div>
+        </div>
+        <div class="sc-rack" data-id="scrabble-rack"></div>
+        <div class="sc-actions" data-id="scrabble-actions">
+          <button
+            type="button"
+            class="sc-action"
+            data-id="scrabble-shuffle-button"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
+            </svg>
+            <span data-i18n="shuffle"></span>
+          </button>
+          <button
+            type="button"
+            class="sc-action"
+            data-id="scrabble-recall-button"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4v12M6 10l6 6 6-6M5 20h14" />
+            </svg>
+            <span data-i18n="recall"></span>
+          </button>
+          <button
+            type="button"
+            class="sc-action"
+            data-id="scrabble-hint-button"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18h6M10 22h4" />
+              <path d="M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z" />
+            </svg>
+            <span data-i18n="hint"></span>
+          </button>
+          <button
+            type="button"
+            class="sc-action"
+            data-id="scrabble-pass-button"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 2l4 4-4 4" />
+              <path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4" />
+              <path d="M21 13v2a3 3 0 0 1-3 3H3" />
+            </svg>
+            <span data-i18n="pass"></span>
+          </button>
+          <button
+            type="button"
+            class="sc-action"
+            data-id="scrabble-quit-button"
+            data-match-quit
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+            <span data-i18n="quit"></span>
+          </button>
+          <button
+            type="button"
+            class="sc-play"
+            data-id="scrabble-play-button"
+            disabled
+          >
+            <span data-play-label></span><small data-play-score></small>
+          </button>
+          <button
+            type="button"
+            class="sc-play sc-play-again"
+            data-id="scrabble-again-button"
+            data-i18n="replay"
+            hidden
+          ></button>
+        </div>
+
+        <div class="sc-sheet" data-id="scrabble-blank-dialog" hidden>
+          <div class="sc-sheet-backdrop" data-sheet-close></div>
+          <div class="sc-sheet-card" role="dialog" aria-modal="true">
+            <h2 class="sc-sheet-title" data-i18n="blankTitle"></h2>
+            <div class="sc-picks" data-id="scrabble-blank-letters"></div>
+            <button
+              type="button"
+              class="sc-link"
+              data-sheet-close
+              data-id="scrabble-blank-cancel"
+              data-i18n="cancel"
+            ></button>
+          </div>
+        </div>
+
+        <div class="sc-sheet" data-id="scrabble-swap-dialog" hidden>
+          <div class="sc-sheet-backdrop" data-sheet-close></div>
+          <div class="sc-sheet-card" role="dialog" aria-modal="true">
+            <h2 class="sc-sheet-title" data-i18n="swapTitle"></h2>
+            <p class="sc-sheet-note" data-id="scrabble-swap-note"></p>
+            <div class="sc-swap-tiles" data-id="scrabble-swap-tiles"></div>
+            <div class="sc-sheet-actions">
+              <button
+                type="button"
+                class="sc-button"
+                data-id="scrabble-swap-confirm"
+              ></button>
+              <button
+                type="button"
+                class="sc-button sc-button-ghost"
+                data-id="scrabble-pass-confirm"
+                data-i18n="passConfirm"
+              ></button>
+              <button
+                type="button"
+                class="sc-link"
+                data-sheet-close
+                data-id="scrabble-swap-cancel"
+                data-i18n="cancel"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc-sheet" data-id="scrabble-bag-dialog" hidden>
+          <div class="sc-sheet-backdrop" data-sheet-close></div>
+          <div class="sc-sheet-card" role="dialog" aria-modal="true">
+            <h2 class="sc-sheet-title" data-i18n="bagTitle"></h2>
+            <p class="sc-sheet-note" data-id="scrabble-bag-summary"></p>
+            <div class="sc-bag-letters" data-id="scrabble-bag-letters"></div>
+            <button
+              type="button"
+              class="sc-button sc-button-ghost"
+              data-sheet-close
+              data-id="scrabble-bag-close"
+              data-i18n="close"
+            ></button>
+          </div>
+        </div>
+
+        <div class="sc-sheet sc-handoff" data-id="scrabble-handoff" hidden>
+          <div class="sc-sheet-backdrop"></div>
+          <div class="sc-sheet-card" role="dialog" aria-modal="true">
+            <h2 class="sc-sheet-title" data-id="scrabble-handoff-title"></h2>
+            <p class="sc-sheet-note" data-id="scrabble-handoff-line"></p>
+            <p class="sc-sheet-note" data-i18n="handoffHint"></p>
+            <button
+              type="button"
+              class="sc-button"
+              data-id="scrabble-handoff-button"
+              data-i18n="handoffButton"
+            ></button>
+          </div>
+        </div>
+
+        <div class="sc-sheet" data-id="scrabble-end" hidden>
+          <div class="sc-sheet-backdrop"></div>
+          <div
+            class="sc-sheet-card sc-end-card"
+            role="dialog"
+            aria-modal="true"
+          >
+            <h2 class="sc-end-title" data-id="scrabble-end-title"></h2>
+            <p class="sc-sheet-note" data-id="scrabble-end-reason"></p>
+            <div class="sc-end-lines" data-id="scrabble-end-lines"></div>
+            <div class="sc-sheet-actions">
+              <button
+                type="button"
+                class="sc-button"
+                data-id="scrabble-replay-button"
+                data-i18n="replay"
+              ></button>
+              <button
+                type="button"
+                class="sc-button sc-button-ghost"
+                data-id="scrabble-change-settings-button"
+                data-i18n="changeSettings"
+              ></button>
+              <button
+                type="button"
+                class="sc-link"
+                data-id="scrabble-see-board-button"
+                data-i18n="seeBoard"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
