@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Four playing-card backs are cut and not wired into the games yet. SkiFree arrow-up jumps. Millionaire has a TV mode. Daily play coins are 20 per Paris day (decision 0055).
+Status: Four playing-card backs are cut and not wired into the games yet. Chip's Challenge remembers the last level. SkiFree arrow-up jumps. Millionaire has a TV mode. Daily play coins are 20 per Paris day (decision 0055).
 Focus: Wire `public/shared/card-backs/` into Bridge and the Coinchapp card games. Owner play-test of SkiFree, Millionaire, Fruit Slash, and Échecs.
 Level: L1
 
@@ -34,7 +34,7 @@ Blockers:
 
 Recent_Changes:
 - 2026-11-01 Card backs: sheet sliced into hogwarts, casino, stars, garden (`public/shared/card-backs/`).
+- 2026-11-01 Chip's Challenge: last completed level saved locally ("Continuer · niveau N" on the start screen); "?" hints translated FR/ES (`hints.js`).
 - 2026-11-01 SkiFree: arrow up jumps (keyboard and TV remote, even if a button has focus). Z/W and numpad 8 still climb.
 - 2026-10-31 Millionaire TV mode: 1920x1080 canvas zoomed to the TV, ladder always shown, show-style lozenges, remote spatial navigation, fullscreen + wake lock. `app.js` untouched.
 - 2026-10-31 Memory online: opponent's cards stay face up at least 1 s on the other device (`REVEAL_MS`).
-- 2026-10-31 Yatzy online: game ended by the opponent's move no longer crashes (sw v45).
