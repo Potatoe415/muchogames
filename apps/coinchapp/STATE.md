@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Sixth game Belote live in code (decision 0075): Coinche engine with `variant: "belote"` (turned card, take or pass over two go-rounds, belote scoring), every mode (solo, online, ad-hoc). Home tile + `/belote` splash + hub tile (no art yet).
+Status: Sixth game Belote live (decision 0075). Splash and home tile use `public/belote-full.jpg`. Hub tile is the same art, cropped.
 Focus: n/a (task complete on this side)
 Level: L2 (new game, approved 2026-10-31)
 
@@ -14,7 +14,6 @@ Context:
 
 Next:
 - Owner: play one Belote match online (no Supabase keys locally, so online was not browser-tested) and one ad-hoc between two phones.
-- Owner: provide splash art + hub thumbnail for Belote (`public/belote-full.jpg`, root `public/games/coinchapp/assets/thumbnail-belote.jpg`), or ask for them to be generated.
 - Owner: confirm the `docs/PRODUCT.md` (six games, Belote rules) and `docs/ARCHITECTURE.md` (`lib/coinche` also runs Belote) edits; not applied yet.
 - Owner: set `ADMIN_USER_IDS` on the `coinchapp` Vercel project (Production + Preview), same value as the hub, then redeploy.
 - Move to `cartes.muchogames.win` once the owner approves adding the domain (root BACKLOG).
@@ -30,10 +29,10 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-11-01 Belote splash + home tile: `public/belote-full.jpg` (same art as the hub thumbnail).
 - 2026-10-31 Belote (decision 0075). `npm test` 366/366, `tsc --noEmit` clean, lint: only the known `useMatchStats.ts:220` error, `npm run build` clean. Browser at phone size: solo take on the turned suit, pass to the second go-round (turned suit excluded), naming a suit gives the taker the turned card, full deal scored 106 + 56 = 162, next deal re-opens bidding; ad-hoc setup shows only target + bot level; Coinche solo unchanged.
 - 2026-10-31 Hub daily coins: `DAILY_COINS` in `lib/server/actions-match.ts` is 20, same as the hub (root decision 0055).
 - 2026-10-24 Solitaire: tapping an Ace sends it straight to its foundation (decision 0074).
 - 2026-10-23 Solitaire: no auto-move (decision 0073): tap picks up, tap a lit destination to move; drag and drop alongside.
 - 2026-10-23 Solitaire: "Terminer" button and Windows-style win cascade.
 - 2026-10-23 Solitaire (decision 0072).
-- 2026-10-03 Per-match hub coins + platform chrome `data-id`s (decision 0071).

@@ -200,7 +200,7 @@
     "category": "cartesdes",
     "added": "2026-10-28",
     "launch": "/games/bridge/index.html",
-    "thumbnail": "/games/bridge/assets/thumbnail.svg",
+    "thumbnail": "/games/bridge/assets/thumbnail.jpg",
     "players": [1, 1]
   },
   {
@@ -262,6 +262,7 @@
     "category": "cartesdes",
     "added": "2026-10-31",
     "launch": "https://coinchapp.vercel.app/belote",
+    "thumbnail": "/games/coinchapp/assets/thumbnail-belote.jpg",
     "sameTab": true,
     "players": [1, 4],
     "source": "apps/coinchapp"

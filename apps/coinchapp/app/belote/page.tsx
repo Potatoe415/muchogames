@@ -6,23 +6,24 @@ import { useI18n } from "@/lib/client/i18n";
 import { withHubName } from "@/lib/client/hubName";
 
 /** Same layout/mode picker as the Coinche splash, with `?game=belote` on the shared
- *  /local, /online, /adhoc routes. No splash art yet: plain felt background. */
+ *  /local, /online, /adhoc routes. The painted title lives in the splash art. */
 export default function BelotePage() {
   const router = useRouter();
   const { t } = useI18n();
 
   return (
     <main
-      className="relative mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-between overflow-hidden bg-felt"
+      className="relative mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-between overflow-hidden"
       data-id="belote-home-screen"
+      style={{
+        backgroundImage: "url('/belote-full.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+      }}
     >
       <HomeTopBar game="belote" />
 
       <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25vh]" data-id="belote-splash-actions">
-        <h1 className="mb-4 text-5xl font-black tracking-tight text-white" data-id="belote-title">
-          {t("gameTabBelote")}
-        </h1>
-
         <button
           data-id="belote-play-local-button"
           onClick={() => router.push("/local?game=belote")}

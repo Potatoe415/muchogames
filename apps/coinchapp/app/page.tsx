@@ -70,7 +70,7 @@ interface GameTile {
 
 const TILES: GameTile[] = [
   { game: "coinche", href: "/coinche", image: "/splashscreen.jpg", titleKey: "gameTabCoinche", accent: "var(--accent-yellow)" },
-  { game: "belote", href: "/belote", titleKey: "gameTabBelote", accent: "var(--accent-yellow)" },
+  { game: "belote", href: "/belote", image: "/belote-full.jpg", titleKey: "gameTabBelote", accent: "var(--accent-yellow)" },
   { game: "bouilla", href: "/bouilla", image: "/bouilla-full.jpg", titleKey: "gameTabBouilla", accent: "var(--accent-cyan)" },
   { game: "president", href: "/president", image: "/president-full.jpg", titleKey: "gameTabPresident", accent: "var(--accent-green)" },
   { game: "bataillecorse", href: "/bataillecorse", image: "/bataillecorse-full.jpg", titleKey: "gameTabBataillecorse", accent: "var(--accent-red)" },

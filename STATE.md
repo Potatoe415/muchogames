@@ -25,7 +25,7 @@ Next:
 
 Open_Questions:
 - TV Back key: Android TV browsers may navigate back instead of sending a key to the page; then Back leaves to the hub (the match stays saved).
-- Fruit Slash and Bridge thumbnails are hand-made SVGs; swap for illustrated images if wanted.
+- Fruit Slash thumbnail is still a hand-made SVG; swap for an illustrated image if wanted.
 - Git stash `wip-memory-aside` (another session, 2026-10-29) is still there; owner to keep or drop.
 - SkiFree, Chip's Challenge and Space Cadet assets are copyrighted; Memory's Miraculous, Ghibli and Pat' Patrouille themes are AI art of licensed characters.
 
@@ -33,8 +33,8 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-01 Belote and Bridge hub tiles use the illustrated jpgs (top-cropped). Belote splash is the same art.
 - 2026-11-01 Card backs: sheet sliced into hogwarts, casino, stars, garden (`public/shared/card-backs/`).
 - 2026-11-01 Chip's Challenge: last completed level saved locally ("Continuer · niveau N" on the start screen); "?" hints translated FR/ES (`hints.js`).
 - 2026-11-01 SkiFree: arrow up jumps (keyboard and TV remote, even if a button has focus). Z/W and numpad 8 still climb.
 - 2026-10-31 Millionaire TV mode: 1920x1080 canvas zoomed to the TV, ladder always shown, show-style lozenges, remote spatial navigation, fullscreen + wake lock. `app.js` untouched.
-- 2026-10-31 Memory online: opponent's cards stay face up at least 1 s on the other device (`REVEAL_MS`).
