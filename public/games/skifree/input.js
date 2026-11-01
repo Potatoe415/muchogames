@@ -1,22 +1,34 @@
-// Keyboard, mouse, touch and on-screen buttons. Mouse: the cursor position
+// Keyboard, mouse, touch and on-screen buttons. Arrow up jumps, on a keyboard
+// and on a TV remote (some remotes omit event.code and leave focus on a
+// button). W/Z and numpad 8 still brake and climb. Mouse: the cursor position
 // relative to the skier sets the ski angle, left click jumps / flips, right
 // click spins in the air. Touch: dragging on the lower half sets the angle
 // from the finger's horizontal offset to the skier, a tap turns one notch
 // (a tap just above the skier climbs), a second finger jumps. Returns a
 // function removing every listener.
 const INTERACTIVE = "button, a, input, select, textarea, [contenteditable]";
-const KEYS = {
+const TYPING = "input, select, textarea, [contenteditable]";
+const MENU = "#optionsPanel, .sf-overlay, [role='dialog']";
+const ARROWS = {
   ArrowLeft: "left",
+  ArrowRight: "right",
+  ArrowDown: "down",
+  ArrowUp: "jump",
+  Left: "left",
+  Right: "right",
+  Down: "down",
+  Up: "jump"
+};
+// Older TV browsers only fill keyCode.
+const ARROW_CODES = { 37: "left", 38: "jump", 39: "right", 40: "down" };
+const KEYS = {
   KeyA: "left",
   KeyQ: "left",
   Numpad4: "left",
-  ArrowRight: "right",
   KeyD: "right",
   Numpad6: "right",
-  ArrowDown: "down",
   KeyS: "down",
   Numpad2: "down",
-  ArrowUp: "up",
   KeyW: "up",
   KeyZ: "up",
   Numpad8: "up",
@@ -91,12 +103,29 @@ function createTouch(canvas, skierAt, actions) {
   };
 }
 
+function arrowAction(event) {
+  if (ARROWS[event.code] || ARROWS[event.key])
+    return ARROWS[event.code] || ARROWS[event.key];
+  const bare = !event.key || event.key === "Unidentified";
+  return bare ? ARROW_CODES[event.keyCode] : null;
+}
+
+function inMenu(event) {
+  const target = event.target;
+  if (!(target instanceof Element)) return false;
+  return Boolean(target.closest(TYPING) || target.closest(MENU));
+}
+
 function keyHandler(actions) {
   return (event) => {
-    if (event.target.closest?.(INTERACTIVE)) return;
-    const name = KEYS[event.code];
     const dir = NUMPAD_DIR[event.code];
+    const arrow = arrowAction(event);
+    const name = dir === undefined ? arrow || KEYS[event.code] : null;
     if (!name && dir === undefined) return;
+    if (inMenu(event)) return;
+    const onControl =
+      event.target instanceof Element && event.target.closest(INTERACTIVE);
+    if (onControl && !arrow && dir === undefined) return;
     event.preventDefault();
     actions.unlock();
     if (dir !== undefined) return actions.steer(dir);

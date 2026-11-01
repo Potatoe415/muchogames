@@ -2,13 +2,13 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Millionaire has a TV mode (Sony Bravia / Google TV browser, played with the remote). Daily play coins are 20 per Paris day (decision 0055).
-Focus: Owner play-test of Millionaire on the Bravia 8 II; Fruit Slash and Échecs on phones; resume checks (local + online).
+Status: SkiFree arrow-up jumps (keyboard and TV remote). Millionaire has a TV mode. Daily play coins are 20 per Paris day (decision 0055).
+Focus: Owner play-test of SkiFree up-arrow jump on the Bravia; Millionaire on the Bravia 8 II; Fruit Slash and Échecs on phones.
 Level: L1
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/millionaire/tv.js`, `tv-nav.js`, `tv.css`, `tv-game.css` (see that folder's `NOTES.md`, "TV mode")
+- Relevant_Files: `public/games/skifree/input.js`, `rules.js`
 - Do_Not_Touch: `apps/**`; Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0055, 0054, 0053, 0050
 
@@ -32,6 +32,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-01 SkiFree: arrow up jumps (keyboard and TV remote, even if a button has focus). Z/W and numpad 8 still climb.
 - 2026-10-31 Millionaire TV mode: 1920x1080 canvas zoomed to the TV, ladder always shown, show-style lozenges, remote spatial navigation, fullscreen + wake lock. `app.js` untouched.
 - 2026-10-31 Memory online: opponent's cards stay face up at least 1 s on the other device (`REVEAL_MS`).
 - 2026-10-31 Yatzy online: game ended by the opponent's move no longer crashes (sw v45).
