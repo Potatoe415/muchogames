@@ -17,7 +17,7 @@ export const SOLITAIRE_RULES = {
       },
       {
         heading: "Jouer une carte",
-        body: "Faites glisser la carte (ou la suite) jusqu'à sa place. Ou touchez-la : elle s'allume avec ses destinations possibles, puis touchez celle que vous voulez. Touchez-la à nouveau pour la reposer. Un As va directement sur sa fondation.",
+        body: "Faites glisser la carte (ou la suite) jusqu'à sa place. Ou touchez-la : elle s'allume avec ses destinations possibles, puis touchez celle que vous voulez. Touchez-la à nouveau pour la reposer. Un As va directement sur sa fondation. Un double appui envoie une carte sur sa fondation quand elle peut y monter.",
       },
       {
         heading: "Terminer",
@@ -42,7 +42,7 @@ export const SOLITAIRE_RULES = {
       },
       {
         heading: "Playing a card",
-        body: "Drag the card (or run) to where it goes. Or tap it: it lights up with its possible destinations, then tap the one you want. Tap it again to put it back down. An Ace goes straight onto its foundation.",
+        body: "Drag the card (or run) to where it goes. Or tap it: it lights up with its possible destinations, then tap the one you want. Tap it again to put it back down. An Ace goes straight onto its foundation. A double tap sends a card onto its foundation when it can go there.",
       },
       {
         heading: "Finish",

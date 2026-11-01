@@ -13,19 +13,26 @@ function asTarget(pile: PileRef): Target | null {
   return null;
 }
 
-function samePileRef(a: PileRef, b: PileRef): boolean {
+export function samePileRef(a: PileRef, b: PileRef): boolean {
   if (a.kind === "tableau" && b.kind === "tableau") return a.col === b.col && a.index === b.index;
   if (a.kind === "foundation" && b.kind === "foundation") return a.suit === b.suit;
   return a.kind === b.kind;
 }
 
+/** The pile's single top card moved onto its own foundation, when legal
+ *  (what a double tap does). A foundation's card is left alone. */
+export function moveToFoundation(state: GameState, pile: PileRef): GameState | null {
+  if (pile.kind === "foundation") return null;
+  const [card, extra] = movableCards(state, pile);
+  if (!card || extra) return null;
+  return applyMove(state, pile, { kind: "foundation", suit: card.suit });
+}
+
 /** A tap on an Ace sends it to its own foundation, even when it could also
  *  sit on a 2. An Ace already on its foundation is left alone. */
 function aceToFoundation(state: GameState, pile: PileRef): GameState | null {
-  if (pile.kind === "foundation") return null;
-  const [card, extra] = movableCards(state, pile);
-  if (!card || extra || card.rank !== "A") return null;
-  return applyMove(state, pile, { kind: "foundation", suit: card.suit });
+  if (pile.kind === "foundation" || movableCards(state, pile)[0]?.rank !== "A") return null;
+  return moveToFoundation(state, pile);
 }
 
 /** One tap on the table. The first tap picks a card up (only if it can go

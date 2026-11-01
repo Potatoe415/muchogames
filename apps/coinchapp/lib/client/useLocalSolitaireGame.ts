@@ -8,7 +8,9 @@ import {
   createInitialState,
   draw,
   legalTargets,
+  moveToFoundation,
   resolveTap,
+  samePileRef,
   type DrawCount,
   type GameState,
   type PileRef,
@@ -19,6 +21,8 @@ import { LOCAL_SOLITAIRE_STORAGE_KEY, loadPersistedGame, savePersistedGame } fro
 
 /** Pause between two cards climbing to the foundations on "Terminer". */
 const AUTO_FINISH_STEP_MS = 90;
+/** Two taps on the same card this close together send it to its foundation. */
+const DOUBLE_TAP_MS = 400;
 
 export interface SolitaireActions {
   onDraw: () => void;
@@ -40,6 +44,7 @@ export function useLocalSolitaireGame(seed: number, drawCount: DrawCount) {
   const [gameId] = useState(() => `local-solitaire-${seed}`);
   const stateRef = useRef(state);
   const selectionRef = useRef(selection);
+  const lastTapRef = useRef<{ pile: PileRef; at: number } | null>(null);
 
   const commit = useCallback((next: GameState, nextSelection: PileRef | null) => {
     stateRef.current = next;
@@ -72,7 +77,14 @@ export function useLocalSolitaireGame(seed: number, drawCount: DrawCount) {
     onDraw: () => !autoFinishing && commit(draw(stateRef.current), null),
     onTap: (pile) => {
       if (autoFinishing) return;
+      const now = performance.now();
+      const last = lastTapRef.current;
+      lastTapRef.current = null;
+      const isDoubleTap = last !== null && now - last.at < DOUBLE_TAP_MS && samePileRef(last.pile, pile);
+      const climbed = isDoubleTap ? moveToFoundation(stateRef.current, pile) : null;
+      if (climbed) return commit(climbed, null);
       const result = resolveTap(stateRef.current, selectionRef.current, pile);
+      if (result.state === stateRef.current) lastTapRef.current = { pile, at: now };
       commit(result.state, result.selection);
     },
     onDrop: (from, to) => {

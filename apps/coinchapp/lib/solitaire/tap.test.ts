@@ -1,6 +1,33 @@
 import { describe, expect, it } from "vitest";
-import { resolveTap } from "./tap";
-import { card, stateWith, up } from "./test-utils";
+import { moveToFoundation, resolveTap } from "./tap";
+import { card, down, stateWith, up } from "./test-utils";
+
+describe("moveToFoundation", () => {
+  it("sends the waste's top card to its foundation when it follows on", () => {
+    const state = stateWith({ waste: [card("2", "H")], foundations: { H: [card("A", "H")] }, tableau: [[up("3", "S")]] });
+    const moved = moveToFoundation(state, { kind: "waste" });
+    expect(moved?.foundations.H).toEqual([card("A", "H"), card("2", "H")]);
+    expect(moved?.waste).toEqual([]);
+  });
+
+  it("sends a column's last card up and leaves the rest of the column", () => {
+    const state = stateWith({ foundations: { S: [card("A", "S")] }, tableau: [[down("9", "D"), up("2", "S")]] });
+    const moved = moveToFoundation(state, { kind: "tableau", col: 0, index: 1 });
+    expect(moved?.foundations.S).toEqual([card("A", "S"), card("2", "S")]);
+    expect(moved?.tableau[0]).toHaveLength(1);
+  });
+
+  it("refuses a card that does not follow on its foundation", () => {
+    const state = stateWith({ waste: [card("3", "H")], foundations: { H: [card("A", "H")] } });
+    expect(moveToFoundation(state, { kind: "waste" })).toBeNull();
+  });
+
+  it("refuses a run of several cards and a foundation's own card", () => {
+    const state = stateWith({ foundations: { H: [card("A", "H")] }, tableau: [[up("3", "S"), up("2", "H")]] });
+    expect(moveToFoundation(state, { kind: "tableau", col: 0, index: 0 })).toBeNull();
+    expect(moveToFoundation(state, { kind: "foundation", suit: "H" })).toBeNull();
+  });
+});
 
 describe("resolveTap", () => {
   it("sends an Ace straight to its foundation, even when a 2 could also take it", () => {

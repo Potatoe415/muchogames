@@ -82,6 +82,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0074 | 2026-10-24 | Solitaire: a tapped Ace goes straight to its foundation | Accepted |
 | 0075 | 2026-10-31 | Sixth game: Belote, as a variant of the Coinche engine | Accepted |
 | 0076 | 2026-11-01 | Card games scale up on big screens; Solitaire columns tighten to fit | Accepted |
+| 0077 | 2026-11-01 | Solitaire: a double tap sends a card to its foundation | Accepted |
 
 ## When to log a decision
 Any of:
