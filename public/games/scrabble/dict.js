@@ -6,7 +6,7 @@ const DICT_URL = new URL("../../data/scrabble/ods9.txt", import.meta.url);
 let loading = null;
 
 function decode(text) {
-  const lines = text.split("\n");
+  const lines = text.split(/\r?\n/);
   const words = [];
   let prev = "";
   for (const line of lines) {
