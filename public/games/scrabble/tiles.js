@@ -1,55 +1,63 @@
-// French Scrabble set (102 tiles) and the 15×15 board. A board cell holds ""
+// Tile sets per word language and the 15×15 board. A board cell holds ""
 // (empty), an uppercase letter (normal tile) or a lowercase letter (a blank
-// played as that letter, worth 0). In a rack "?" is a blank.
+// played as that letter, worth 0). In a rack "?" is a blank. One set is
+// active at a time (useTileSet), set by the match being played.
 export const SIZE = 15;
 export const CELLS = SIZE * SIZE;
 export const CENTER = 7 * SIZE + 7;
 export const RACK_SIZE = 7;
 export const BINGO = 50;
 export const BLANK = "?";
-export const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-// letter: [count, value]
-const SET = {
-  A: [9, 1],
-  B: [2, 3],
-  C: [2, 3],
-  D: [3, 2],
-  E: [15, 1],
-  F: [2, 4],
-  G: [2, 2],
-  H: [2, 4],
-  I: [8, 1],
-  J: [1, 8],
-  K: [1, 10],
-  L: [5, 1],
-  M: [3, 2],
-  N: [6, 1],
-  O: [6, 1],
-  P: [2, 3],
-  Q: [1, 8],
-  R: [6, 1],
-  S: [6, 1],
-  T: [6, 1],
-  U: [6, 1],
-  V: [2, 4],
-  W: [1, 10],
-  X: [1, 10],
-  Y: [1, 10],
-  Z: [1, 10],
-  [BLANK]: [2, 0]
+// "letter count value": French 102 tiles (official), English 100 (official),
+// Spanish 100 (official minus the CH, LL and RR tiles, written with two
+// letters here; their three tiles go to C, L and R).
+const SETS = {
+  fr: "A9:1 B2:3 C2:3 D3:2 E15:1 F2:4 G2:2 H2:4 I8:1 J1:8 K1:10 L5:1 M3:2 N6:1 O6:1 P2:3 Q1:8 R6:1 S6:1 T6:1 U6:1 V2:4 W1:10 X1:10 Y1:10 Z1:10",
+  en: "A9:1 B2:3 C2:3 D4:2 E12:1 F2:4 G3:2 H2:4 I9:1 J1:8 K1:5 L4:1 M2:3 N6:1 O8:1 P2:3 Q1:10 R6:1 S4:1 T6:1 U4:1 V2:4 W2:4 X1:8 Y2:4 Z1:10",
+  es: "A12:1 B2:3 C5:3 D5:2 E12:1 F1:4 G2:2 H2:4 I6:1 J1:8 L5:1 M2:3 N5:1 Ñ1:8 O9:1 P2:3 Q1:5 R6:1 S6:1 T4:1 U5:1 V1:4 X1:8 Y1:4 Z1:10"
 };
+
+export const WORD_LANGS = Object.keys(SETS);
+
+function parseSet(text) {
+  const set = { [BLANK]: [2, 0] };
+  text.split(" ").forEach((item) => {
+    const [, letter, count, value] = item.match(/^(\D)(\d+):(\d+)$/u);
+    set[letter] = [Number(count), Number(value)];
+  });
+  return set;
+}
+
+let set = parseSet(SETS.fr);
+export let LETTERS = "";
+export let LETTER_INDEX = new Map();
+
+export function useTileSet(lang) {
+  set = parseSet(SETS[lang] || SETS.fr);
+  LETTERS = Object.keys(set)
+    .filter((l) => l !== BLANK)
+    .join("");
+  LETTER_INDEX = new Map([...LETTERS].map((l, n) => [l, n]));
+}
+
+useTileSet("fr");
+
+export const alphabetOf = (lang) =>
+  Object.keys(parseSet(SETS[lang] || SETS.fr))
+    .filter((l) => l !== BLANK)
+    .join("");
 
 export const VOWELS = new Set(["A", "E", "I", "O", "U", "Y"]);
 
 // Value of a rack letter or a board cell (lowercase = blank = 0).
 export function tileValue(letter) {
   if (letter === BLANK || letter !== letter.toUpperCase()) return 0;
-  return SET[letter]?.[1] ?? 0;
+  return set[letter]?.[1] ?? 0;
 }
 
 export function fullBag() {
-  return Object.entries(SET).flatMap(([letter, [count]]) =>
+  return Object.entries(set).flatMap(([letter, [count]]) =>
     Array(count).fill(letter)
   );
 }

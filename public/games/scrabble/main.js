@@ -27,6 +27,7 @@ import {
   saveStats,
   writeText
 } from "./store.js";
+import { useTileSet } from "./tiles.js";
 
 const GAME_ID = "scrabble";
 const LANG_KEY = "bergamots-lang";
@@ -35,12 +36,13 @@ const END_DELAY_MS = 1100;
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const storedLang = readText(LANG_KEY, "fr");
+const uiLang = LANGS.includes(storedLang) ? storedLang : "fr";
 const page = {
-  lang: LANGS.includes(storedLang) ? storedLang : "fr",
-  settings: loadSettings(),
+  lang: uiLang,
+  settings: loadSettings(uiLang),
   stats: loadStats(),
   dialogs: createDialogs(),
-  dict: null,
+  dicts: {},
   play: null,
   game: null,
   config: null,
@@ -97,6 +99,7 @@ function choose(setting, value) {
   page.settings[setting] = value;
   saveSettings(page.settings);
   applySettings();
+  if (setting === "words") loadDict();
 }
 
 function setNames(list) {
@@ -148,6 +151,7 @@ function unmount() {
 
 function mount(game, config, draft) {
   unmount();
+  useTileSet(config.words);
   Object.assign(page, { game, config });
   showScreen(true);
   renderOver();
@@ -160,7 +164,7 @@ function mount(game, config, draft) {
     game,
     draft,
     config,
-    dict: page.dict,
+    dict: page.dicts[config.words],
     t,
     names,
     hints: () => page.settings.hints === "on",
@@ -176,6 +180,7 @@ function mount(game, config, draft) {
 // The saved match, checked tile by tile; a damaged save is dropped.
 function loadResumable() {
   const saved = loadSaved();
+  if (saved) useTileSet(saved.config.words);
   const game = saved && restoreGame(saved.game);
   if (!game) {
     clearGame();
@@ -195,41 +200,45 @@ function returnToStart() {
 }
 
 async function startMatch() {
-  if (page.starting || !page.dict) return;
+  const config = matchConfig(page.settings);
+  if (page.starting || !page.dicts[config.words]) return;
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
-  const config = matchConfig(page.settings);
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!allowed) return void (page.play && returnToStart());
+  useTileSet(config.words);
   const game = createGame();
   saveGame(config, game, []);
   renderResume(null);
   mount(game, config, []);
 }
 
-function resumeMatch() {
-  const resumable = page.dict && loadResumable();
+async function resumeMatch() {
+  const resumable = loadResumable();
   renderResume(resumable);
-  if (!resumable) return;
+  if (!resumable || !(await loadDict(resumable.config.words))) return;
   window.MuchogamesMatch.resume(GAME_ID);
   mount(resumable.game, resumable.config, resumable.draft);
 }
 
-function loadDict() {
-  $("scrabble-dict-status").hidden = false;
+// Loads a word list (the selected one by default); the start button waits
+// for the selected list. Resolves false when the list could not load.
+async function loadDict(lang = page.settings.words) {
+  const selected = () => lang === page.settings.words;
+  $("scrabble-dict-status").hidden = Boolean(page.dicts[lang]);
   $("scrabble-dict-error").hidden = true;
-  loadDictionary()
-    .then((dict) => {
-      page.dict = dict;
-      $("scrabble-dict-status").hidden = true;
-      $("scrabble-start-button").disabled = false;
-      renderResume(loadResumable());
-    })
-    .catch(() => {
-      $("scrabble-dict-status").hidden = true;
-      $("scrabble-dict-error").hidden = false;
-    });
+  if (selected()) $("scrabble-start-button").disabled = !page.dicts[lang];
+  try {
+    page.dicts[lang] = await loadDictionary(lang);
+    if (selected()) $("scrabble-start-button").disabled = false;
+    return true;
+  } catch {
+    $("scrabble-dict-error").hidden = false;
+    return false;
+  } finally {
+    $("scrabble-dict-status").hidden = true;
+  }
 }
 
 function bindPage() {
@@ -249,7 +258,7 @@ function bindPage() {
   const actions = {
     "scrabble-start-button": startMatch,
     "scrabble-resume-button": resumeMatch,
-    "scrabble-dict-retry": loadDict,
+    "scrabble-dict-retry": () => loadDict(),
     "scrabble-play-button": play("play"),
     "scrabble-shuffle-button": play("shuffle"),
     "scrabble-recall-button": play("recall"),
@@ -274,4 +283,5 @@ function bindPage() {
 bindPage();
 applySettings();
 applyLanguage();
+renderResume(loadResumable());
 loadDict();

@@ -3,7 +3,7 @@
 // between the rack and the board, take tiles back, shuffle.
 import * as D from "./draft.js";
 import { isBoardEmpty } from "./rules.js";
-import { BLANK, CENTER, SIZE, shuffle } from "./tiles.js";
+import { BLANK, CENTER, LETTERS, SIZE, shuffle } from "./tiles.js";
 
 // ctx: { s, game, myRack(), canAct(), dialogs, sound, changed(), refresh(),
 //        focusCell(i) }
@@ -75,6 +75,7 @@ export function createEditor(ctx) {
   }
 
   function typeLetter(letter) {
+    if (!LETTERS.includes(letter)) return void sound.invalid();
     if (!s.cursor && isBoardEmpty(game.board)) s.cursor = { i: CENTER, dir: 0 };
     if (s.cursor && taken(s.cursor.i)) advanceCursor();
     const pick = s.cursor && D.slotFor(ctx.myRack(), s.draft, letter);

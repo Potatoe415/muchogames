@@ -1,6 +1,7 @@
 // localStorage for settings, the match in progress and wins per level.
 // Everything read back is validated: a bad value falls back to the default.
 import { LEVEL_IDS } from "./ai.js";
+import { WORD_LANGS } from "./tiles.js";
 
 const SETTINGS_KEY = "scrabble-settings-v2";
 const SAVED_KEY = "scrabble-saved-game";
@@ -10,11 +11,18 @@ const NAME_MAX = 16;
 export const CHOICES = {
   mode: ["solo", "duo"],
   level: LEVEL_IDS,
+  words: WORD_LANGS,
   sound: ["on", "off"],
   hints: ["on", "off"]
 };
 
-const DEFAULTS = { mode: "solo", level: "medium", sound: "on", hints: "off" };
+const DEFAULTS = {
+  mode: "solo",
+  level: "medium",
+  words: "fr",
+  sound: "on",
+  hints: "off"
+};
 
 export function readText(key, fallback) {
   try {
@@ -47,10 +55,15 @@ const writeJson = (key, value) =>
 export const cleanName = (name) =>
   typeof name === "string" ? name.trim().slice(0, NAME_MAX) : "";
 
-export function loadSettings() {
+// The word language defaults to the interface language on a first visit.
+export function loadSettings(uiLang) {
   const stored = readJson(SETTINGS_KEY) || {};
+  const defaults = {
+    ...DEFAULTS,
+    words: WORD_LANGS.includes(uiLang) ? uiLang : "fr"
+  };
   const settings = Object.fromEntries(
-    Object.entries(DEFAULTS).map(([name, fallback]) => [
+    Object.entries(defaults).map(([name, fallback]) => [
       name,
       CHOICES[name].includes(stored[name]) ? stored[name] : fallback
     ])
@@ -75,12 +88,15 @@ export function loadStats() {
 
 export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 
-// { config: { mode, level, names }, game, draft } — game and draft are
-// checked by game.js restoreGame and draft.js draftFits.
+// { config: { mode, level, words, names }, game, draft } — game and draft
+// are checked by game.js restoreGame and draft.js draftFits. Saves from
+// before the word-language choice are French.
 export function loadSaved() {
   const saved = readJson(SAVED_KEY);
   const config = saved?.config;
   if (!config || !saved.game) return null;
+  config.words ??= "fr";
+  if (!WORD_LANGS.includes(config.words)) return null;
   const valid =
     CHOICES.mode.includes(config.mode) &&
     CHOICES.level.includes(config.level) &&

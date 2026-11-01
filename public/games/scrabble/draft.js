@@ -1,7 +1,7 @@
 // The letters the player has put on the board but not played yet:
 // draft = [{ k, i, l }] — rack slot, cell, letter (lowercase for a blank),
 // in the order they were put down. Pure helpers, no DOM.
-import { BLANK, SIZE } from "./tiles.js";
+import { BLANK, LETTERS, SIZE } from "./tiles.js";
 
 export const draftTiles = (draft) => draft.map(({ i, l }) => ({ i, l }));
 export const draftAt = (draft, i) => draft.find((d) => d.i === i);
@@ -47,6 +47,9 @@ export function nextFree(board, draft, i, dir) {
   }
 }
 
+const isBlankLetter = (l) =>
+  l.length === 1 && l !== l.toUpperCase() && LETTERS.includes(l.toUpperCase());
+
 // A saved draft is kept only if it still fits the rack and the board.
 export function draftFits(draft, rack, board) {
   if (!Array.isArray(draft)) return false;
@@ -60,7 +63,7 @@ export function draftFits(draft, rack, board) {
       !cells.has(d.i) &&
       board[d.i] === "" &&
       typeof d.l === "string" &&
-      (letter === BLANK ? /^[a-z]$/.test(d.l) : d.l === letter);
+      (letter === BLANK ? isBlankLetter(d.l) : d.l === letter);
     slots.add(d.k);
     cells.add(d.i);
     return ok;

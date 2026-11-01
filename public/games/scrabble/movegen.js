@@ -3,10 +3,9 @@
 // the free cells before it, then extend right through the board, keeping only
 // dictionary prefixes and letters allowed by the perpendicular words.
 import { analyzeMove, isBoardEmpty } from "./rules.js";
-import { BLANK, CENTER, LETTERS, SIZE } from "./tiles.js";
+import { BLANK, CENTER, LETTER_INDEX, LETTERS, SIZE } from "./tiles.js";
 
-const ALL = (1 << 26) - 1;
-const bit = (letter) => 1 << (letter.charCodeAt(0) - 65);
+const bit = (letter) => 1 << LETTER_INDEX.get(letter);
 
 // dir 0 = across (line = row), 1 = down (line = column).
 const at = (dir, line, pos) => (dir ? pos * SIZE + line : line * SIZE + pos);
@@ -36,7 +35,7 @@ function crossMask(ctx, dir, line, pos) {
     before = board[at(dir, l, pos)].toUpperCase() + before;
   for (let l = line + 1; l < SIZE && board[at(dir, l, pos)]; l++)
     after += board[at(dir, l, pos)].toUpperCase();
-  if (!before && !after) return ALL;
+  if (!before && !after) return ctx.all;
   let mask = 0;
   for (const letter of LETTERS)
     if (dict.has(before + letter + after)) mask |= bit(letter);
@@ -98,7 +97,7 @@ function extendRight(ctx, lc, partial, pos, anchor) {
 function leftPart(ctx, lc, partial, limit, anchor) {
   extendRight(ctx, lc, partial, anchor, anchor);
   if (!limit) return;
-  eachRackLetter(ctx, ALL, (letter, as) => {
+  eachRackLetter(ctx, ctx.all, (letter, as) => {
     const next = partial + letter;
     if (!ctx.hasPrefix(next)) return;
     lc.left.push(as);
@@ -148,6 +147,7 @@ function makeContext(board, rack, dict) {
     kinds,
     hasPrefix,
     rackSize: rack.length,
+    all: (1 << LETTERS.length) - 1,
     out: [],
     singles: new Set()
   };

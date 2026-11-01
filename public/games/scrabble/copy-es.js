@@ -1,6 +1,8 @@
 export const STRINGS = {
   title: "Scrabble",
-  pitch: "El juego de letras, en francés. Contra el ordenador o entre dos.",
+  pitch:
+    "El juego de letras, en francés, inglés o español. Contra el ordenador o entre dos.",
+  words: "Idioma de las palabras",
   back: "Volver",
   options: "Opciones",
   close: "Cerrar",
@@ -47,7 +49,7 @@ export const STRINGS = {
   err_center: "La primera palabra debe pasar por la estrella ★.",
   err_short: "Hacen falta al menos dos letras.",
   err_detached: "La palabra debe tocar una letra ya colocada.",
-  badWord: "«{word}» no está en el diccionario francés.",
+  badWord: "«{word}» no está en el diccionario.",
   okWord: "{words} · {score} pts",
   bingo: "¡Scrabble! +50",
   lastPlay: "{name}: {word} · {score} pts",
@@ -84,11 +86,12 @@ export const STRINGS = {
 };
 
 export const RULES = `
-<p><strong>Objetivo:</strong> sumar más puntos formando palabras en la cuadrícula, como un crucigrama. Las palabras son francesas.</p>
+<p><strong>Objetivo:</strong> sumar más puntos formando palabras en la cuadrícula, como un crucigrama.</p>
 <ul>
   <li>Cada jugador tiene 7 letras. En tu turno, pon una o varias letras en una misma fila o columna, sin huecos, tocando las palabras ya colocadas.</li>
   <li>La primera palabra pasa por la estrella ★ del centro.</li>
-  <li>Todas las palabras formadas deben estar en el diccionario oficial del Scrabble francés (ODS 9): el juego lo comprueba antes de validar, sin penalización.</li>
+  <li>Todas las palabras formadas deben estar en el diccionario del idioma elegido: el juego lo comprueba antes de validar, sin penalización. Francés: Officiel du Scrabble (ODS 9). Inglés: ENABLE. Español: lista libre de 635 000 palabras.</li>
+  <li>Los acentos no cuentan. En español, la Ñ es una letra propia; CH, LL y RR se escriben con dos letras. Cada idioma tiene sus propias letras y valores.</li>
   <li><strong>Puntos:</strong> cada letra tiene su valor. LD y LT doblan o triplican la letra, PD y PT la palabra entera (la estrella cuenta como PD). Una casilla solo cuenta cuando se cubre por primera vez.</li>
   <li>El <strong>comodín</strong> sustituye cualquier letra y vale 0.</li>
   <li><strong>Scrabble:</strong> colocar las 7 letras de una vez da 50 puntos extra.</li>

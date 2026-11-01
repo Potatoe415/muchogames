@@ -63,5 +63,6 @@ export const renderResume = (saved) => {
 export const matchConfig = (settings) => ({
   mode: settings.mode,
   level: settings.level,
+  words: settings.words,
   names: settings.names.slice()
 });

@@ -1,6 +1,8 @@
 export const STRINGS = {
   title: "Scrabble",
-  pitch: "Le jeu de lettres, en français. Seul contre l'ordinateur ou à deux.",
+  pitch:
+    "Le jeu de lettres, en français, anglais ou espagnol. Seul contre l'ordinateur ou à deux.",
+  words: "Langue des mots",
   back: "Retour",
   options: "Options",
   close: "Fermer",
@@ -88,7 +90,8 @@ export const RULES = `
 <ul>
   <li>Chaque joueur a 7 lettres. À votre tour, posez une ou plusieurs lettres sur une même ligne ou colonne, sans trou, collées aux mots déjà posés.</li>
   <li>Le premier mot passe par l'étoile ★ au centre.</li>
-  <li>Tous les mots formés doivent exister dans l'Officiel du Scrabble (ODS 9) : le jeu vérifie avant de valider, sans pénalité.</li>
+  <li>Tous les mots formés doivent exister dans le dictionnaire de la langue choisie : le jeu vérifie avant de valider, sans pénalité. Français : Officiel du Scrabble (ODS 9). Anglais : ENABLE. Espagnol : liste libre de 635 000 mots.</li>
+  <li>Les accents ne comptent pas. En espagnol, Ñ est une lettre à part ; CH, LL et RR s'écrivent avec deux lettres. Chaque langue a ses propres lettres et valeurs.</li>
   <li><strong>Points :</strong> chaque lettre a sa valeur. LD et LT doublent ou triplent la lettre, MD et MT le mot entier (l'étoile compte MD). Une case ne compte qu'au moment où on la couvre.</li>
   <li>Le <strong>joker</strong> remplace n'importe quelle lettre et vaut 0 point.</li>
   <li><strong>Scrabble :</strong> poser ses 7 lettres d'un coup rapporte 50 points de bonus.</li>

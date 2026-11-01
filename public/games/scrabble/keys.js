@@ -15,7 +15,7 @@ export function bindKeys(actions) {
     if (!actions.active() || event.ctrlKey || event.metaKey || event.altKey)
       return;
     const { key } = event;
-    if (/^[a-zA-Z]$/.test(key)) actions.typeLetter(key.toUpperCase());
+    if (/^[a-zñ]$/i.test(key)) actions.typeLetter(key.toUpperCase());
     else if (key === "Backspace") actions.backspace();
     else if (ARROWS[key]) actions.moveCursor(...ARROWS[key]);
     else if (key === "Enter") {

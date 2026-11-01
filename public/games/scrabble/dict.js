@@ -1,9 +1,10 @@
-// The French Scrabble word list (ODS 9, 2–15 letters, uppercase), loaded once
-// per page or worker. File format: see scripts/scrabble_dict.mjs. Lookups are
-// binary searches over the sorted array, which keeps memory low on phones.
-const DICT_URL = new URL("../../data/scrabble/ods9.txt", import.meta.url);
+// Word lists per word language (2–15 letters, uppercase), each loaded once
+// per page: French ODS 9, English ENABLE, Spanish an-array-of-spanish-words.
+// File format: see scripts/scrabble_dict.mjs. Lookups are binary searches
+// over the sorted array, which keeps memory low on phones.
+const FILES = { fr: "ods9.txt", en: "enable.txt", es: "es.txt" };
 
-let loading = null;
+const loading = new Map();
 
 function decode(text) {
   const lines = text.split(/\r?\n/);
@@ -37,17 +38,21 @@ export function createDictionary(words) {
   };
 }
 
+async function fetchDictionary(lang) {
+  const url = new URL(`../../data/scrabble/${FILES[lang]}`, import.meta.url);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`dictionary ${response.status}`);
+  return createDictionary(decode(await response.text()));
+}
+
 // -> Promise<{ size, has(word), hasPrefix(prefix) }>; a failed load can retry.
-export function loadDictionary() {
-  loading ??= fetch(DICT_URL)
-    .then((response) => {
-      if (!response.ok) throw new Error(`dictionary ${response.status}`);
-      return response.text();
-    })
-    .then((text) => createDictionary(decode(text)))
-    .catch((error) => {
-      loading = null;
+export function loadDictionary(lang) {
+  if (!loading.has(lang)) {
+    const promise = fetchDictionary(lang).catch((error) => {
+      loading.delete(lang);
       throw error;
     });
-  return loading;
+    loading.set(lang, promise);
+  }
+  return loading.get(lang);
 }

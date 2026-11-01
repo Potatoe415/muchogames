@@ -1,5 +1,5 @@
-// Player-facing copy in FR/EN/ES, one file per language. The words played
-// are always French (ODS 9 dictionary); only the interface is translated.
+// Player-facing copy in FR/EN/ES, one file per language. The language of
+// the words played is a separate setting (`words`, tiles.js / dict.js).
 import * as en from "./copy-en.js";
 import * as es from "./copy-es.js";
 import * as fr from "./copy-fr.js";

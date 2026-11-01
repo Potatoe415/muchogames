@@ -106,7 +106,8 @@ export function bestPlay(game, p) {
 
 // --- Save / restore ---
 
-const isLetter = (s) => typeof s === "string" && /^[A-Za-z]$/.test(s);
+const isLetter = (s) =>
+  typeof s === "string" && s.length === 1 && LETTERS.includes(s.toUpperCase());
 const isRackLetter = (s) => s === BLANK || LETTERS.includes(s);
 const isCount = (n) => Number.isInteger(n) && n >= 0;
 

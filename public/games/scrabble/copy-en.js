@@ -1,6 +1,8 @@
 export const STRINGS = {
   title: "Scrabble",
-  pitch: "The word game, in French. Play the computer or a friend.",
+  pitch:
+    "The word game, in French, English or Spanish. Play the computer or a friend.",
+  words: "Word language",
   back: "Back",
   options: "Options",
   close: "Close",
@@ -47,7 +49,7 @@ export const STRINGS = {
   err_center: "The first word must go through the star ★.",
   err_short: "At least two letters are needed.",
   err_detached: "The word must touch a letter already on the board.",
-  badWord: "“{word}” is not in the French dictionary.",
+  badWord: "“{word}” is not in the dictionary.",
   okWord: "{words} · {score} pts",
   bingo: "Scrabble! +50",
   lastPlay: "{name}: {word} · {score} pts",
@@ -84,11 +86,12 @@ export const STRINGS = {
 };
 
 export const RULES = `
-<p><strong>Goal:</strong> score the most points by making words on the grid, crossword style. Words are French.</p>
+<p><strong>Goal:</strong> score the most points by making words on the grid, crossword style.</p>
 <ul>
   <li>Each player has 7 letters. On your turn, put one or more letters on one row or column, with no gap, touching the words already played.</li>
   <li>The first word goes through the star ★ in the centre.</li>
-  <li>Every word formed must be in the official French Scrabble dictionary (ODS 9): the game checks before playing, with no penalty.</li>
+  <li>Every word formed must be in the dictionary of the chosen language: the game checks before playing, with no penalty. French: Officiel du Scrabble (ODS 9). English: ENABLE. Spanish: a free list of 635,000 words.</li>
+  <li>Accents do not count. In Spanish, Ñ is a letter of its own; CH, LL and RR are written with two letters. Each language has its own letters and values.</li>
   <li><strong>Points:</strong> each letter has a value. DL and TL double or triple the letter, DW and TW the whole word (the star counts as DW). A square counts only when it is first covered.</li>
   <li>The <strong>blank</strong> stands for any letter and is worth 0.</li>
   <li><strong>Scrabble:</strong> playing all 7 letters at once earns a 50-point bonus.</li>

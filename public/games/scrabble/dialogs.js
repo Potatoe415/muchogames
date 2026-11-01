@@ -41,7 +41,8 @@ export function createDialogs() {
         const b = document.createElement("button");
         b.type = "button";
         b.className = "sc-pick";
-        b.dataset.id = `scrabble-blank-letter-${letter.toLowerCase()}`;
+        const name = letter === "Ñ" ? "enye" : letter.toLowerCase();
+        b.dataset.id = `scrabble-blank-letter-${name}`;
         b.textContent = letter;
         b.addEventListener("click", () => answer(letter));
         return b;
@@ -116,10 +117,11 @@ export function createDialogs() {
     $("scrabble-handoff-button").addEventListener("click", () => answer(true));
     document.addEventListener("keydown", (event) => {
       const picking = current?.el === $("scrabble-blank-dialog");
-      if (picking && /^[a-z]$/i.test(event.key)) {
+      const typed = event.key.length === 1 ? event.key.toUpperCase() : "";
+      if (picking && typed && LETTERS.includes(typed)) {
         event.preventDefault();
         event.stopImmediatePropagation();
-        answer(event.key.toUpperCase());
+        answer(typed);
       } else if (event.key === "Escape" && current?.dismissable) {
         event.preventDefault();
         event.stopImmediatePropagation();
