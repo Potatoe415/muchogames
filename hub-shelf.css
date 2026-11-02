@@ -65,11 +65,27 @@
   outline-offset: 2px;
 }
 
-/* --- Search --- */
+/* --- Search: in the bar row. Phones show only the magnifier until it is
+   tapped (`.hub-nav.is-searching`, hub-nav.js); wide screens always show
+   the field. --- */
 .hub-search {
   position: relative;
+  flex: none;
   display: flex;
   align-items: center;
+}
+
+.hub-search__toggle {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(90, 58, 34, 0.08);
+  color: #5a3a22;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
 }
 
 .hub-search__icon {
@@ -80,8 +96,9 @@
 }
 
 .hub-search__input {
-  width: 100%;
-  min-height: 40px;
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
   box-sizing: border-box;
   padding: 0 14px 0 40px;
   border: 1.5px solid rgba(90, 58, 34, 0.18);
@@ -95,6 +112,73 @@
 
 .hub-search__input::placeholder {
   color: rgba(90, 58, 34, 0.45);
+}
+
+.hub-search__close {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  font-size: 26px;
+  line-height: 1;
+  color: rgba(90, 58, 34, 0.6);
+  cursor: pointer;
+}
+
+.hub-search__toggle:focus-visible,
+.hub-search__close:focus-visible {
+  outline: 2px solid #5a3a22;
+  outline-offset: 2px;
+}
+
+@media (max-width: 459px) {
+  .hub-view__count {
+    display: none;
+  }
+}
+
+@media (max-width: 699px) {
+  .hub-search__icon,
+  .hub-search__input,
+  .hub-search__close {
+    display: none;
+  }
+
+  .hub-nav.is-searching .hub-views,
+  .hub-nav.is-searching .hub-search__toggle {
+    display: none;
+  }
+
+  .hub-nav.is-searching .hub-search {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .hub-nav.is-searching .hub-search__icon,
+  .hub-nav.is-searching .hub-search__close {
+    display: block;
+  }
+
+  .hub-nav.is-searching .hub-search__input {
+    display: block;
+  }
+
+  .hub-search__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .hub-search {
+    width: 260px;
+  }
+
+  .hub-search__toggle,
+  .hub-search__close {
+    display: none;
+  }
 }
 
 /* --- Sort (library only) --- */
