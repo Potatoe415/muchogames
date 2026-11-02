@@ -1,0 +1,273 @@
+/* Trivial Pursuit: navy game-table skin over the shared header; start
+   screen, cards and overlays. The play stage lives in stage.css. */
+:root {
+  --tp-bg: #16213a;
+  --tp-surface: #ffffff;
+  --tp-soft: #f1f4fa;
+  --tp-ink: #1d2738;
+  --tp-muted: #5f6b82;
+  --tp-accent: #2f7de1;
+  --tp-line: #d3d9e6;
+  --tp-right: #2e9e57;
+  --tp-wrong: #d23b3b;
+  --tp-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, #22325a, var(--tp-bg) 70%);
+  color: var(--tp-ink);
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+.back-button,
+.options-button {
+  background: var(--tp-accent);
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.tp-lang-switch,
+.tp-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tp-counts {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.tp-chip {
+  min-width: 48px;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 2px solid var(--tp-line);
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tp-chip.active {
+  border-color: var(--tp-accent);
+  background: #dfe9fb;
+}
+
+.tp-option-button {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tp-option-button:focus-visible,
+.tp-chip:focus-visible,
+.tp-button:focus-visible,
+.tp-resume:focus-visible,
+.tp-link:focus-visible {
+  outline: 3px solid #ffd54a;
+  outline-offset: 2px;
+}
+
+.tp-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tp-app [hidden] {
+  display: none !important;
+}
+
+.tp-app button {
+  touch-action: manipulation;
+  font: inherit;
+}
+
+/* --- Start screen and end card --- */
+.tp-start {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 12px 12px max(16px, env(safe-area-inset-bottom));
+  overflow-y: auto;
+}
+
+.tp-card {
+  width: min(100%, 480px);
+  padding: 22px 18px;
+  border-radius: 20px;
+  background: var(--tp-surface);
+  box-shadow: var(--tp-shadow);
+  text-align: center;
+}
+
+.tp-card p {
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+
+.tp-logo {
+  margin: 0 0 8px;
+  font-size: clamp(1.8rem, 8vw, 2.5rem);
+  font-weight: 900;
+  color: var(--tp-accent);
+}
+
+.tp-pitch,
+.tp-note {
+  color: var(--tp-muted);
+}
+
+.tp-note {
+  font-weight: 700;
+}
+
+.tp-label {
+  font-weight: 800;
+}
+
+.tp-resume {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  margin: 4px 0 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: var(--tp-accent);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.tp-resume-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.tp-resume-info {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.tp-names {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tp-name-input {
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 2px solid var(--tp-line);
+  border-left: 8px solid var(--pawn);
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--tp-ink);
+  background: #ffffff;
+}
+
+.tp-name-input:focus {
+  outline: 3px solid #ffd54a;
+}
+
+.tp-load.is-error {
+  color: var(--tp-wrong);
+  font-weight: 700;
+}
+
+.tp-button {
+  min-width: 180px;
+  min-height: 48px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  background: var(--tp-accent);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tp-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tp-button-ghost {
+  border: 2px solid var(--tp-line);
+  background: transparent;
+  color: var(--tp-ink);
+}
+
+.tp-button:active:not(:disabled),
+.tp-resume:active,
+.tp-chip:active {
+  transform: scale(0.97);
+}
+
+.tp-end-title {
+  margin: 0 0 8px;
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: var(--tp-accent);
+}
+
+.tp-end-stats {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  color: var(--tp-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.tp-actions {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tp-app *,
+  .tp-app *::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}

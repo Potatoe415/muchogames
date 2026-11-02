@@ -194,6 +194,16 @@
     "players": [1, 2]
   },
   {
+    "id": "trivialpursuit",
+    "title": "Trivial Pursuit",
+    "kind": "custom",
+    "category": "autres",
+    "added": "2026-11-02",
+    "launch": "/games/trivialpursuit/index.html",
+    "thumbnail": "/games/trivialpursuit/assets/thumbnail.svg",
+    "players": [1, 6]
+  },
+  {
     "id": "sudoku",
     "title": "Sudoku",
     "kind": "custom",

@@ -1,0 +1,142 @@
+/* Question card, category picker and end overlays over the play stage. */
+.tp-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 12px max(12px, env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  overflow-y: auto;
+  background: rgba(8, 13, 26, 0.6);
+}
+
+.tp-qcard {
+  width: min(100%, 540px);
+  padding: 14px 16px 16px;
+  border-top: 10px solid var(--cat, var(--tp-accent));
+  border-radius: 18px;
+  background: var(--tp-surface);
+  box-shadow: var(--tp-shadow);
+  text-align: center;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.tp-qcat {
+  margin: 0;
+  color: var(--cat, var(--tp-accent));
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  filter: brightness(0.85);
+}
+
+.tp-qtag {
+  display: inline-block;
+  margin: 6px 0 0;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--cat, var(--tp-accent));
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.tp-qtext {
+  margin: 10px 0 14px;
+  font-size: clamp(1.05rem, 4.4vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.38;
+}
+
+.tp-qanswer {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--tp-soft);
+}
+
+.tp-qanswer-label {
+  margin: 0;
+  color: var(--tp-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.tp-qanswer-text {
+  margin: 2px 0 0;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.tp-qinfo {
+  margin: 6px 0 0;
+  color: var(--tp-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.tp-qactions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tp-qactions .tp-button {
+  flex: 1 1 140px;
+  min-width: 0;
+}
+
+.tp-right {
+  background: var(--tp-right);
+}
+
+.tp-wrong {
+  background: var(--tp-wrong);
+}
+
+.tp-link {
+  flex-basis: 100%;
+  padding: 8px;
+  border: none;
+  background: none;
+  color: var(--tp-muted);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tp-cat-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.tp-cat-button {
+  min-height: 52px;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  background: var(--cat);
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tp-cat-button[data-cat="2"] {
+  color: #1f2937;
+}
+
+.tp-cat-button:focus-visible {
+  outline: 3px solid #1f2937;
+  outline-offset: 2px;
+}
+
+@media (min-width: 900px) {
+  .tp-qtext {
+    font-size: 1.4rem;
+  }
+}

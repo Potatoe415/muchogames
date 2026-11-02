@@ -1,0 +1,278 @@
+// Page shell: language, options panel, players setup and resume, end overlay
+// and the match lifecycle (docs/PLATFORM_RULES.md). The match lives in play.js.
+import { PAWN_COLORS } from "./board-view.js";
+import { loadDeck } from "./deck.js";
+import { LANGS, translate } from "./i18n.js";
+import { newMatch } from "./model.js";
+import { createPlay } from "./play.js";
+import { rulesHtml } from "./rules.js";
+import * as store from "./store.js";
+
+const GAME_ID = "trivialpursuit";
+const LANG_KEY = "bergamots-lang";
+
+const $ = (id) => document.querySelector(`[data-id="${id}"]`);
+
+const storedLang = store.readStorage(LANG_KEY, "fr");
+const page = {
+  lang: LANGS.includes(storedLang) ? storedLang : "fr",
+  saved: store.loadMatch(),
+  names: store.loadNames(),
+  count: 2,
+  deck: null,
+  deckError: false,
+  play: null,
+  panel: null,
+  last: null,
+  starting: false
+};
+page.count = Math.max(1, page.names.length || 2);
+
+const t = (key, vars) => translate(page.lang, key, vars);
+
+function defaultName(i) {
+  const profile = i === 0 ? window.PlayerProfile?.getName?.("") : "";
+  return (profile || t("playerName", { n: i + 1 })).slice(0, store.NAME_MAX);
+}
+
+function renderNames() {
+  const list = $("trivialpursuit-names");
+  list.replaceChildren(
+    ...Array.from({ length: page.count }, (_, i) => {
+      const input = document.createElement("input");
+      input.type = "text";
+      input.className = "tp-name-input";
+      input.maxLength = store.NAME_MAX;
+      input.dataset.id = `trivialpursuit-name-${i + 1}`;
+      input.style.setProperty("--pawn", PAWN_COLORS[i]);
+      input.setAttribute("aria-label", t("playerName", { n: i + 1 }));
+      input.placeholder = t("playerName", { n: i + 1 });
+      input.value = page.names[i] ?? defaultName(i);
+      input.addEventListener("input", () => (page.names[i] = input.value));
+      return input;
+    })
+  );
+  document.querySelectorAll("[data-count]").forEach((chip) => {
+    chip.classList.toggle("active", Number(chip.dataset.count) === page.count);
+  });
+}
+
+function renderStart() {
+  const resume = $("trivialpursuit-resume-button");
+  resume.hidden = !page.saved || !page.deck;
+  if (page.saved) {
+    resume.querySelector("[data-resume-info]").textContent = t("resumeInfo", {
+      count: page.saved.players.length,
+      turn: page.saved.turns
+    });
+  }
+  $("trivialpursuit-start-button").disabled = !page.deck;
+  const status = $("trivialpursuit-load-status");
+  status.hidden = Boolean(page.deck);
+  status.textContent = page.deckError ? t("loadError") : t("loading");
+  status.classList.toggle("is-error", page.deckError);
+  renderNames();
+}
+
+function renderEnd() {
+  const s = page.last;
+  if (!s) return;
+  const solo = s.players.length === 1;
+  const winner = s.players[s.winner];
+  $("trivialpursuit-end-title").textContent = solo
+    ? t("wonSolo")
+    : t("won", { name: winner.name });
+  $("trivialpursuit-end-line").textContent = t("wonLine");
+  $("trivialpursuit-end-stats").replaceChildren(
+    ...s.players.map((p) => {
+      const item = document.createElement("li");
+      const wedges = p.wedges.filter(Boolean).length;
+      item.textContent = t("playerStats", { ...p, wedges });
+      return item;
+    })
+  );
+}
+
+function applyLanguage() {
+  document.documentElement.lang = page.lang;
+  document.title = t("title");
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    node.textContent = t(node.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    node.setAttribute("aria-label", t(node.dataset.i18nAria));
+  });
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.lang === page.lang);
+  });
+  $("trivialpursuit-rules-content").innerHTML = rulesHtml(page.lang);
+  $("trivialpursuit-lang-note").hidden = !t("langNote");
+  renderStart();
+  renderEnd();
+  page.play?.relabel();
+}
+
+function showScreen(playing) {
+  $("trivialpursuit-start-screen").hidden = playing;
+  $("trivialpursuit-stage").hidden = !playing;
+  $("trivialpursuit-options-play").hidden = !playing;
+}
+
+function playElements() {
+  const q = (name) => $(`trivialpursuit-${name}`);
+  return {
+    board: q("board"),
+    players: q("players"),
+    status: q("status"),
+    turn: q("turn"),
+    die: q("die"),
+    roll: q("roll-button"),
+    q: {
+      question: q("question"),
+      card: q("question-card"),
+      cat: q("question-category"),
+      tag: q("question-tag"),
+      text: q("question-text"),
+      answer: q("answer"),
+      answerText: q("answer-text"),
+      info: q("answer-info"),
+      reveal: q("show-answer-button"),
+      right: q("right-button"),
+      wrong: q("wrong-button"),
+      other: q("other-question-button"),
+      choose: q("choose"),
+      chooseTitle: q("choose-title"),
+      catList: q("category-list")
+    }
+  };
+}
+
+function unmount() {
+  page.play?.destroy();
+  page.play = null;
+  $("trivialpursuit-end").hidden = true;
+}
+
+function onWin(state) {
+  store.saveMatch(null);
+  page.saved = null;
+  page.last = state;
+  const solo = state.players.length === 1;
+  window.MuchogamesMatch.finish(solo ? { won: true } : {});
+  renderEnd();
+  $("trivialpursuit-end").hidden = false;
+  $("trivialpursuit-replay-button").focus({ preventScroll: true });
+}
+
+function mount(state) {
+  unmount();
+  page.saved = state;
+  showScreen(true);
+  page.play = createPlay({
+    els: playElements(),
+    state,
+    deck: page.deck,
+    t,
+    save: store.saveMatch,
+    onWin
+  });
+}
+
+// Quitting is not an end (no finish()): the match stays saved and
+// "Reprendre" brings it back for free.
+function returnToStart() {
+  unmount();
+  page.saved = store.loadMatch();
+  showScreen(false);
+  applyLanguage();
+}
+
+function playerNames() {
+  return Array.from({ length: page.count }, (_, i) => {
+    const typed = (page.names[i] ?? defaultName(i))
+      .trim()
+      .slice(0, store.NAME_MAX);
+    return typed || t("playerName", { n: i + 1 });
+  });
+}
+
+async function startMatch(names) {
+  if (page.starting || !page.deck) return;
+  page.starting = true;
+  const allowed = await window.MuchogamesMatch.start(GAME_ID);
+  page.starting = false;
+  if (!allowed) return page.play && returnToStart();
+  store.saveNames(names);
+  const state = newMatch(names);
+  store.saveMatch(state);
+  mount(state);
+}
+
+function resumeMatch() {
+  if (!page.saved || !page.deck || page.starting) return;
+  window.MuchogamesMatch.resume(GAME_ID);
+  mount(page.saved);
+}
+
+function bindOptions() {
+  page.panel = window.GameHeader?.initOptionsPanel(
+    $("game-options-button"),
+    $("game-options-panel")
+  );
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.addEventListener("click", () => {
+      page.lang = button.dataset.lang;
+      store.writeStorage(LANG_KEY, page.lang);
+      applyLanguage();
+    });
+  });
+  $("trivialpursuit-options-quit").addEventListener("click", () => {
+    page.panel?.close();
+    returnToStart();
+  });
+}
+
+function bindStart() {
+  document.querySelectorAll("[data-count]").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      page.count = Number(chip.dataset.count);
+      renderNames();
+    });
+  });
+  $("trivialpursuit-start-button").addEventListener("click", () =>
+    startMatch(playerNames())
+  );
+  $("trivialpursuit-resume-button").addEventListener("click", resumeMatch);
+  $("trivialpursuit-replay-button").addEventListener("click", () =>
+    startMatch(page.last.players.map((p) => p.name))
+  );
+  $("trivialpursuit-new-game-button").addEventListener("click", returnToStart);
+}
+
+function bindPage() {
+  bindOptions();
+  bindStart();
+  window.addEventListener("pagehide", () => page.play?.save());
+  document.addEventListener("visibilitychange", () => page.play?.save());
+  // Back/forward cache: the page comes back with its match still on screen.
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted && page.play && page.saved) {
+      window.MuchogamesMatch.resume(GAME_ID);
+    }
+  });
+}
+
+async function boot() {
+  bindPage();
+  showScreen(false);
+  applyLanguage();
+  try {
+    page.deck = await loadDeck();
+  } catch (error) {
+    console.error("[trivialpursuit]", error);
+    page.deckError = true;
+  }
+  renderStart();
+}
+
+boot();

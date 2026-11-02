@@ -1,0 +1,254 @@
+/* Play stage: square board and side panel (players, die, roll button).
+   Phone portrait first: board on top, panel below; wider-than-tall screens
+   put the panel beside the board. Overlays live in overlay.css. */
+.tp-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.tp-board-area {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  padding: 4px 8px;
+  container-type: size;
+}
+
+.tp-board {
+  position: relative;
+  width: min(100cqw, 100cqh);
+  aspect-ratio: 1;
+  touch-action: manipulation;
+}
+
+.tp-board-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
+.tp-pawns,
+.tp-targets {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.tp-pawn {
+  position: absolute;
+  width: 7%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  transition:
+    left 0.13s linear,
+    top 0.13s linear;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.45));
+}
+
+.tp-pawn svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tp-pawn.is-current,
+.tp-pawn.is-moving {
+  z-index: 2;
+  width: 8.4%;
+}
+
+.tp-target {
+  position: absolute;
+  width: 8%;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.65);
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  cursor: pointer;
+  animation: tp-pulse 0.8s ease-in-out infinite alternate;
+}
+
+.tp-target:focus-visible {
+  outline: 4px solid #ffd54a;
+  outline-offset: 1px;
+}
+
+@keyframes tp-pulse {
+  to {
+    background: rgba(255, 255, 255, 0.75);
+    transform: translate(-50%, -50%) scale(1.12);
+  }
+}
+
+/* --- Panel --- */
+.tp-panel {
+  flex: 0 0 auto;
+  display: grid;
+  gap: 8px;
+  padding: 6px max(12px, env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+}
+
+.tp-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tp-player {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  padding: 3px 9px 3px 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #e8edf6;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.tp-player.is-current {
+  background: #ffffff;
+  color: var(--tp-ink);
+}
+
+.tp-player-pawn svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.tp-player-name {
+  max-width: 7.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tp-player-count {
+  opacity: 0.75;
+}
+
+.tp-turn-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: #ffffff;
+}
+
+.tp-die {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  border-radius: 11px;
+  background: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.tp-die.is-rolling {
+  animation: tp-shake 0.14s linear infinite;
+}
+
+@keyframes tp-shake {
+  50% {
+    transform: rotate(14deg) scale(1.06);
+  }
+}
+
+.tp-pip {
+  width: 72%;
+  aspect-ratio: 1;
+  place-self: center;
+  border-radius: 50%;
+  background: #1f2937;
+}
+
+.tp-pip-1 {
+  grid-area: 1 / 1;
+}
+.tp-pip-3 {
+  grid-area: 1 / 3;
+}
+.tp-pip-4 {
+  grid-area: 2 / 1;
+}
+.tp-pip-5 {
+  grid-area: 2 / 2;
+}
+.tp-pip-6 {
+  grid-area: 2 / 3;
+}
+.tp-pip-7 {
+  grid-area: 3 / 1;
+}
+.tp-pip-9 {
+  grid-area: 3 / 3;
+}
+
+.tp-turn-text {
+  min-width: 0;
+}
+
+.tp-turn {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.05rem;
+}
+
+.tp-status {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #c9d3e6;
+}
+
+.tp-roll {
+  width: 100%;
+}
+
+/* --- Wider than tall: panel beside the board --- */
+@media (min-aspect-ratio: 5/4) {
+  .tp-stage {
+    flex-direction: row;
+  }
+
+  .tp-panel {
+    width: clamp(210px, 34vw, 360px);
+    align-content: center;
+    padding-left: 4px;
+  }
+
+  .tp-board-area {
+    flex: 1 1 auto;
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+}
+
+@media (min-width: 900px) {
+  .tp-player {
+    font-size: 0.95rem;
+  }
+}
