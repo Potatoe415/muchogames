@@ -146,6 +146,7 @@ function playElements() {
       right: q("right-button"),
       wrong: q("wrong-button"),
       other: q("other-question-button"),
+      close: q("question-close"),
       choose: q("choose"),
       chooseTitle: q("choose-title"),
       catList: q("category-list")

@@ -31,6 +31,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-02 Trivial Quizz: × on the question card hides it; the roll button becomes "Voir la question" and opens the same question again. Match state unchanged. Browser-checked on the wheel (close, reopen) at desktop and 390×760.
 - 2026-11-02 Hub coins: one 36 px coin in the banner, left of the flags, gold pie = coins left today (number in its tooltip / aria-label). Home tiles 144 px on desktop/TV (≥ 1000×500).
 - 2026-11-02 Trivial Quizz: third mode "Roue de la fortune" (no board; swipe or button spins a 6-colour wheel that picks the category; wedges as in quick; with 6 wedges the wheel picks the final question). Browser-checked at 390×760 and 900×500: button spin, swipe spin, wedge, final question, win; classic unchanged.
 - 2026-11-02 Hub Home rows + library (decision 0058): new modules `hub-taxonomy.js` (DOM-free, also used by `check-games.mjs`), `hub-route.js`, `hub-home.js`, `hub-library.js`, `hub-nav.js`, `hub-tiles.js`; `hub-tags.js` and the tab swipe removed. Browser-checked at 390×760 and desktop: rows, pills, search, ★, Back, shared link, FR/EN.

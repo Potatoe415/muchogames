@@ -12,6 +12,7 @@
 }
 
 .tp-qcard {
+  position: relative;
   width: min(100%, 540px);
   padding: 14px 16px 16px;
   border-top: 10px solid var(--cat, var(--tp-accent));
@@ -23,8 +24,30 @@
   -webkit-user-select: text;
 }
 
+.tp-qclose {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--tp-muted);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tp-qclose:hover,
+.tp-qclose:focus-visible {
+  background: var(--tp-soft);
+  color: var(--tp-ink);
+}
+
 .tp-qcat {
-  margin: 0;
+  margin: 0 28px;
   color: var(--cat, var(--tp-accent));
   font-size: 0.85rem;
   font-weight: 900;

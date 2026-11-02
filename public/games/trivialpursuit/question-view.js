@@ -8,6 +8,7 @@ export function createQuestionView(els, t, signal, on) {
   els.right.addEventListener("click", () => on.answer(true), { signal });
   els.wrong.addEventListener("click", () => on.answer(false), { signal });
   els.other.addEventListener("click", on.other, { signal });
+  els.close.addEventListener("click", on.close, { signal });
   buildCategories(els.catList, on.choose);
 
   function showQuestion(item, q, revealed) {

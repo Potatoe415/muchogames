@@ -77,8 +77,14 @@ function refresh(ctx) {
   renderPlayers(ctx);
   els.status.textContent = statusText(ctx);
   els.turn.textContent = model.current(state).name;
-  els.roll.disabled = state.phase !== "roll" || ctx.busy;
-  els.roll.textContent = t(wheel ? "spinWheel" : "rollDie");
+  const asking = state.phase === "ask" || state.phase === "reveal";
+  if (!asking) ctx.questionClosed = false;
+  els.roll.disabled = ctx.questionClosed
+    ? ctx.busy
+    : state.phase !== "roll" || ctx.busy;
+  els.roll.textContent = ctx.questionClosed
+    ? t("showQuestion")
+    : t(wheel ? "spinWheel" : "rollDie");
   els.die.hidden = Boolean(wheel);
   if (wheel) wheel.setLabel(t("wheelAria"));
   else {
@@ -87,7 +93,11 @@ function refresh(ctx) {
       board.showTargets(model.targets(state), (id) => pick(ctx, id));
     } else board.clearTargets();
   }
-  if (state.phase === "ask" || state.phase === "reveal") showQuestion(ctx);
+  if (
+    (state.phase === "ask" || state.phase === "reveal") &&
+    !ctx.questionClosed
+  )
+    showQuestion(ctx);
   else if (state.phase === "choose") ctx.questions.showChoose(chooseTitle(ctx));
   else ctx.questions.hide();
   paintDie(els.die, state.die, ctx.t);
@@ -115,13 +125,14 @@ async function rollDie(ctx) {
   ctx.board.focusTarget();
 }
 
-// `speed` comes from a swipe on the wheel; the button spins at random speed.
-async function spinWheel(ctx, speed) {
+// `turn` spins the wheel (swipe speed, or random from the button) or turns
+// a tapped colour under the pointer; it resolves with the category.
+async function turnWheel(ctx, turn) {
   const { state, deck } = ctx;
   if (ctx.busy || state.phase !== "roll") return;
   ctx.busy = true;
   ctx.els.roll.disabled = true;
-  const cat = await ctx.wheel.spin(speed);
+  const cat = await turn(ctx.wheel);
   await wait(LANDED_MS);
   ctx.busy = false;
   if (ctx.destroyed) return;
@@ -175,7 +186,15 @@ function bindPlay(ctx, signal) {
   const { els, state } = ctx;
   els.roll.addEventListener(
     "click",
-    () => (ctx.wheel ? spinWheel(ctx) : rollDie(ctx)),
+    () => {
+      if (ctx.questionClosed) {
+        ctx.questionClosed = false;
+        refresh(ctx);
+        return;
+      }
+      if (ctx.wheel) turnWheel(ctx, (w) => w.spin());
+      else rollDie(ctx);
+    },
     { signal }
   );
   return createQuestionView(els.q, ctx.t, signal, {
@@ -194,6 +213,12 @@ function bindPlay(ctx, signal) {
       if (state.phase !== "choose") return;
       model.ask(state, cat, ctx.deck.draw(cat), state.choose === "final");
       commit(ctx);
+    },
+    close: () => {
+      if (state.phase !== "ask" && state.phase !== "reveal") return;
+      ctx.questionClosed = true;
+      refresh(ctx);
+      els.roll.focus({ preventScroll: true });
     }
   });
 }
@@ -206,7 +231,8 @@ export function createPlay({ els, state, deck, t, save, onWin }) {
       els.board,
       {
         canSpin: () => !ctx.busy && state.phase === "roll",
-        onFling: (speed) => spinWheel(ctx, speed)
+        onFling: (speed) => turnWheel(ctx, (w) => w.spin(speed)),
+        onPick: (segment) => turnWheel(ctx, (w) => w.turnTo(segment))
       },
       abort.signal
     );
