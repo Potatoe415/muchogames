@@ -86,10 +86,15 @@ function createDeck(initial, lang) {
     return pick;
   }
 
+  function release(cat, index) {
+    if (!seen[cat]?.delete(index)) return;
+    save();
+  }
+
   function get(cat, index) {
     const item = cats[cat]?.[index];
     return item ? { q: item[0], a: item[1], info: item[2] || "" } : null;
   }
 
-  return { draw, get, setLang, size: (cat) => cats[cat].length };
+  return { draw, get, release, setLang, size: (cat) => cats[cat].length };
 }

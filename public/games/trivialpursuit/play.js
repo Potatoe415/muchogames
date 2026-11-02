@@ -77,14 +77,8 @@ function refresh(ctx) {
   renderPlayers(ctx);
   els.status.textContent = statusText(ctx);
   els.turn.textContent = model.current(state).name;
-  const asking = state.phase === "ask" || state.phase === "reveal";
-  if (!asking) ctx.questionClosed = false;
-  els.roll.disabled = ctx.questionClosed
-    ? ctx.busy
-    : state.phase !== "roll" || ctx.busy;
-  els.roll.textContent = ctx.questionClosed
-    ? t("showQuestion")
-    : t(wheel ? "spinWheel" : "rollDie");
+  els.roll.disabled = state.phase !== "roll" || ctx.busy;
+  els.roll.textContent = t(wheel ? "spinWheel" : "rollDie");
   els.die.hidden = Boolean(wheel);
   if (wheel) wheel.setLabel(t("wheelAria"));
   else {
@@ -93,11 +87,7 @@ function refresh(ctx) {
       board.showTargets(model.targets(state), (id) => pick(ctx, id));
     } else board.clearTargets();
   }
-  if (
-    (state.phase === "ask" || state.phase === "reveal") &&
-    !ctx.questionClosed
-  )
-    showQuestion(ctx);
+  if (state.phase === "ask" || state.phase === "reveal") showQuestion(ctx);
   else if (state.phase === "choose") ctx.questions.showChoose(chooseTitle(ctx));
   else ctx.questions.hide();
   paintDie(els.die, state.die, ctx.t);
@@ -186,15 +176,7 @@ function bindPlay(ctx, signal) {
   const { els, state } = ctx;
   els.roll.addEventListener(
     "click",
-    () => {
-      if (ctx.questionClosed) {
-        ctx.questionClosed = false;
-        refresh(ctx);
-        return;
-      }
-      if (ctx.wheel) turnWheel(ctx, (w) => w.spin());
-      else rollDie(ctx);
-    },
+    () => (ctx.wheel ? turnWheel(ctx, (w) => w.spin()) : rollDie(ctx)),
     { signal }
   );
   return createQuestionView(els.q, ctx.t, signal, {
@@ -216,8 +198,10 @@ function bindPlay(ctx, signal) {
     },
     close: () => {
       if (state.phase !== "ask" && state.phase !== "reveal") return;
-      ctx.questionClosed = true;
-      refresh(ctx);
+      const q = state.q;
+      if (q) ctx.deck.release(q.cat, q.i);
+      model.cancel(state);
+      commit(ctx);
       els.roll.focus({ preventScroll: true });
     }
   });

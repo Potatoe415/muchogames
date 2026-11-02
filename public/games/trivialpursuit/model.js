@@ -80,6 +80,15 @@ export function reveal(s) {
   s.phase = "reveal";
 }
 
+// Drops the question. Same player, no wedge, no score: the turn is as if
+// the question was never asked (wheel can spin again, board can roll again).
+export function cancel(s) {
+  if (s.phase !== "ask" && s.phase !== "reveal") return false;
+  s.q = null;
+  s.phase = "roll";
+  return true;
+}
+
 function nextPlayer(s) {
   s.cur = (s.cur + 1) % s.players.length;
   s.turns += 1;
