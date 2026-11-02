@@ -1,0 +1,112 @@
+{
+  "cards": [
+    {
+      "theme": "Improbable",
+      "subject": "Les cartes mères",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Où se trouve la carte mère dans un ordinateur ?",
+          "a": "À l'intérieur de l'unité centrale."
+        },
+        {
+          "level": 2,
+          "q": "Quel composant principal se branche sur le socket ?",
+          "a": "Le processeur (CPU)."
+        },
+        { "level": 3, "q": "Que signifie RAM ?", "a": "Random Access Memory." },
+        {
+          "level": 4,
+          "q": "Quel est le rôle du BIOS ?",
+          "a": "Initialiser le matériel au démarrage."
+        },
+        {
+          "level": 5,
+          "q": "Citez un format de carte mère courant.",
+          "a": "ATX, Micro-ATX, Mini-ITX."
+        },
+        {
+          "level": 6,
+          "q": "Quel bus remplace l'AGP pour les cartes graphiques ?",
+          "a": "PCI Express (PCIe)."
+        },
+        {
+          "level": 7,
+          "q": "À quoi sert la pile bouton sur la carte mère ?",
+          "a": "Conserver l'heure et les paramètres du BIOS/UEFI."
+        },
+        {
+          "level": 8,
+          "q": "Que relie le 'Northbridge' historiquement ?",
+          "a": "Le CPU, la RAM et la carte graphique."
+        },
+        {
+          "level": 9,
+          "q": "Qu'est-ce que le VRM ?",
+          "a": "Voltage Regulator Module (régulateur de tension)."
+        },
+        {
+          "level": 10,
+          "q": "Combien de broches possède un connecteur d'alimentation EPS 12V standard pour CPU ?",
+          "a": "8 broches (ou 4+4)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie de l'Europe",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de la France ?",
+          "a": "Paris."
+        },
+        {
+          "level": 2,
+          "q": "Dans quel pays se trouve Rome ?",
+          "a": "L'Italie."
+        },
+        {
+          "level": 3,
+          "q": "Quel fleuve traverse Londres ?",
+          "a": "La Tamise."
+        },
+        {
+          "level": 4,
+          "q": "Quelle mer borde le sud de l'Europe ?",
+          "a": "La mer Méditerranée."
+        },
+        {
+          "level": 5,
+          "q": "Quel est le plus grand pays d'Europe par superficie (hors Russie) ?",
+          "a": "L'Ukraine (ou la France pour l'UE)."
+        },
+        {
+          "level": 6,
+          "q": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+          "a": "Les Pyrénées."
+        },
+        {
+          "level": 7,
+          "q": "Combien de pays composent les pays baltes et quels sont-ils ?",
+          "a": "3 (Estonie, Lettonie, Lituanie)."
+        },
+        {
+          "level": 8,
+          "q": "Quel détroit sépare l'Europe de l'Afrique ?",
+          "a": "Le détroit de Gibraltar."
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la capitale du Kosovo ?",
+          "a": "Tallinn, non c'est Pristina ! (Attention piège : Estonie = Tallinn)."
+        },
+        {
+          "level": 10,
+          "q": "Citez le plus long fleuve d'Europe.",
+          "a": "La Volga."
+        }
+      ]
+    }
+  ]
+}

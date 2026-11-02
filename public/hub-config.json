@@ -389,5 +389,17 @@
     "coinPolicy": "launch",
     "players": [1, 1],
     "duration": 15
+  },
+  {
+    "id": "ttmc",
+    "title": "Tu Te Mets Combien ?",
+    "kind": "custom",
+    "tags": ["quiz", "soiree"],
+    "added": "2026-11-02",
+    "launch": "/games/ttmc/index.html",
+    "thumbnail": "/games/ttmc/assets/thumbnail.jpg",
+    "resumable": false,
+    "players": [2, 10],
+    "duration": 45
   }
 ]
