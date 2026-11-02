@@ -117,9 +117,12 @@ function setNames(list) {
   saveSettings(page.settings);
 }
 
+// In a match the header arrow returns to this start screen; here, to the hub.
 function showScreen(playing) {
   $("scrabble-start-screen").hidden = playing;
   $("scrabble-stage").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("scrabble-quit-button").hidden = !playing;
 }
 
 function saveNow() {
@@ -286,6 +289,7 @@ function bindPage() {
     "scrabble-again-button": startMatch,
     "scrabble-replay-button": startMatch,
     "scrabble-change-settings-button": returnToStart,
+    "scrabble-quit-button": returnToStart,
     "scrabble-see-board-button": () => ($("scrabble-end").hidden = true)
   };
   Object.entries(actions).forEach(([id, fn]) =>

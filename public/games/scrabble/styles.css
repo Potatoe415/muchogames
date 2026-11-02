@@ -73,7 +73,8 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-.sc-app [hidden] {
+.sc-app [hidden],
+.game-nav .back-button[hidden] {
   display: none !important;
 }
 
