@@ -1,10 +1,11 @@
-// localStorage: the match in progress (resumed after leaving by any route)
-// and the last player names. Everything read back is validated before use.
+// localStorage: the match in progress (resumed after leaving by any route),
+// the last player names and game mode. Everything read back is validated.
 import { CATS, isNode } from "./board.js";
-import { MAX_PLAYERS } from "./model.js";
+import { MAX_PLAYERS, MODES } from "./model.js";
 
 const GAME_KEY = "trivialpursuit-current";
 const NAMES_KEY = "trivialpursuit-names";
+const MODE_KEY = "trivialpursuit-mode";
 const PHASES = ["roll", "move", "ask", "reveal", "choose", "over"];
 export const NAME_MAX = 16;
 
@@ -72,7 +73,9 @@ function isValidMatch(s) {
 
 export function loadMatch() {
   const state = readJson(GAME_KEY);
-  return isValidMatch(state) && state.phase !== "over" ? state : null;
+  if (!isValidMatch(state) || state.phase === "over") return null;
+  state.mode ??= "classic";
+  return MODES.includes(state.mode) ? state : null;
 }
 
 export const saveMatch = (state) =>
@@ -87,3 +90,10 @@ export function loadNames() {
 
 export const saveNames = (names) =>
   writeStorage(NAMES_KEY, JSON.stringify(names));
+
+export function loadMode() {
+  const mode = readStorage(MODE_KEY, "classic");
+  return MODES.includes(mode) ? mode : "classic";
+}
+
+export const saveMode = (mode) => writeStorage(MODE_KEY, mode);

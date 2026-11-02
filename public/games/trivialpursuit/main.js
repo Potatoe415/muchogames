@@ -18,6 +18,7 @@ const page = {
   lang: LANGS.includes(storedLang) ? storedLang : "fr",
   saved: store.loadMatch(),
   names: store.loadNames(),
+  mode: store.loadMode(),
   count: 2,
   deck: null,
   deckError: false,
@@ -35,7 +36,7 @@ function defaultName(i) {
   return (profile || t("playerName", { n: i + 1 })).slice(0, store.NAME_MAX);
 }
 
-function renderNames() {
+function renderSetup() {
   const list = $("trivialpursuit-names");
   list.replaceChildren(
     ...Array.from({ length: page.count }, (_, i) => {
@@ -55,6 +56,11 @@ function renderNames() {
   document.querySelectorAll("[data-count]").forEach((chip) => {
     chip.classList.toggle("active", Number(chip.dataset.count) === page.count);
   });
+  document.querySelectorAll("[data-mode]").forEach((button) => {
+    const active = button.dataset.mode === page.mode;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
 
 function renderStart() {
@@ -62,6 +68,7 @@ function renderStart() {
   resume.hidden = !page.saved || !page.deck;
   if (page.saved) {
     resume.querySelector("[data-resume-info]").textContent = t("resumeInfo", {
+      mode: t(page.saved.mode),
       count: page.saved.players.length,
       turn: page.saved.turns
     });
@@ -71,7 +78,7 @@ function renderStart() {
   status.hidden = Boolean(page.deck);
   status.textContent = page.deckError ? t("loadError") : t("loading");
   status.classList.toggle("is-error", page.deckError);
-  renderNames();
+  renderSetup();
 }
 
 function renderEnd() {
@@ -196,14 +203,15 @@ function playerNames() {
   });
 }
 
-async function startMatch(names) {
+async function startMatch(names, mode) {
   if (page.starting || !page.deck) return;
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!allowed) return page.play && returnToStart();
   store.saveNames(names);
-  const state = newMatch(names);
+  store.saveMode(mode);
+  const state = newMatch(names, mode);
   store.saveMatch(state);
   mount(state);
 }
@@ -236,15 +244,24 @@ function bindStart() {
   document.querySelectorAll("[data-count]").forEach((chip) => {
     chip.addEventListener("click", () => {
       page.count = Number(chip.dataset.count);
-      renderNames();
+      renderSetup();
+    });
+  });
+  document.querySelectorAll("[data-mode]").forEach((button) => {
+    button.addEventListener("click", () => {
+      page.mode = button.dataset.mode;
+      renderSetup();
     });
   });
   $("trivialpursuit-start-button").addEventListener("click", () =>
-    startMatch(playerNames())
+    startMatch(playerNames(), page.mode)
   );
   $("trivialpursuit-resume-button").addEventListener("click", resumeMatch);
   $("trivialpursuit-replay-button").addEventListener("click", () =>
-    startMatch(page.last.players.map((p) => p.name))
+    startMatch(
+      page.last.players.map((p) => p.name),
+      page.last.mode
+    )
   );
   $("trivialpursuit-new-game-button").addEventListener("click", returnToStart);
 }

@@ -4,10 +4,14 @@
 import { CATS, HUB, catOf, kindOf, reachable } from "./board.js";
 
 export const MAX_PLAYERS = 6;
+// classic: wedges only on headquarters; quick: any right answer wins the
+// wedge of its category. Saves from before `mode` existed are classic.
+export const MODES = ["classic", "quick"];
 
-export function newMatch(names) {
+export function newMatch(names, mode = "classic") {
   return {
     v: 1,
+    mode,
     players: names.map((name) => ({
       name,
       pos: HUB,
@@ -54,14 +58,16 @@ export function land(s, node) {
   return "question";
 }
 
-export function ask(s, cat, index, final = false) {
+// `hq` = a right answer wins the wedge of `cat` (if not owned yet).
+function wedgeAtStake(s, cat, final) {
   const node = current(s).pos;
-  s.q = {
-    cat,
-    i: index,
-    final,
-    hq: kindOf(node) === "hq" && catOf(node) === cat
-  };
+  if (final) return false;
+  if (s.mode === "quick") return !current(s).wedges[cat];
+  return kindOf(node) === "hq" && catOf(node) === cat;
+}
+
+export function ask(s, cat, index, final = false) {
+  s.q = { cat, i: index, final, hq: wedgeAtStake(s, cat, final) };
   s.choose = null;
   s.phase = "ask";
 }
