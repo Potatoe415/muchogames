@@ -1,8 +1,9 @@
 /* Daily coins (hub-coins.js): one coin top-right of the banner, left of the
-   language switcher, same size as it and the profile button. Its gold part
-   is a pie of the coins left today (`--coins-fill`, 0 to 1); a tap shows
-   the count in a bubble under it. The out-of-coins dialog is the shared
-   one from /shared/js/game-session.js. */
+   language switcher, same size as it and the profile button. The coin art
+   (public/assets/hub-coin.webp) is gold for the share of today's coins
+   left (`--coins-fill`, 0 to 1, a pie from 12 o'clock) and faded grey for
+   the spent part; a tap shows the count in a bubble under it. The
+   out-of-coins dialog is the shared one from /shared/js/game-session.js. */
 .hub-coins {
   position: absolute;
   top: 14px;
@@ -10,17 +11,24 @@
   z-index: 20;
   width: 36px;
   height: 36px;
-  box-sizing: border-box;
   display: grid;
   place-items: center;
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(4px);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  background: none;
+  filter: drop-shadow(0 3px 4px rgba(40, 50, 30, 0.45));
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  transition: transform 0.18s;
+}
+
+.hub-coins:hover {
+  transform: scale(1.06);
+}
+
+.hub-coins:active {
+  transform: scale(0.94);
 }
 
 .hub-coins:focus-visible {
@@ -59,21 +67,31 @@
 }
 
 .hub-coins__coin {
-  width: 26px;
-  height: 26px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 2px solid #b97a1f;
-  background: conic-gradient(
-    #f2b53a calc(var(--coins-fill, 1) * 360deg),
-    rgba(185, 122, 31, 0.18) 0
-  );
-  box-shadow:
-    0 0 0 2.5px #fff,
-    0 3px 8px -2px rgba(40, 70, 90, 0.5);
-  transition: background 0.3s;
+  position: relative;
+  width: 34px;
+  height: 34px;
 }
 
-.hub-coins.is-empty .hub-coins__coin {
-  border-color: #b3261e;
+.hub-coins__coin::before,
+.hub-coins__coin::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/hub-coin.webp") center / contain no-repeat;
+}
+
+.hub-coins__coin::before {
+  filter: grayscale(1) brightness(1.15);
+  opacity: 0.7;
+}
+
+.hub-coins__coin::after {
+  -webkit-mask-image: conic-gradient(
+    #000 calc(var(--coins-fill, 1) * 360deg),
+    transparent 0
+  );
+  mask-image: conic-gradient(
+    #000 calc(var(--coins-fill, 1) * 360deg),
+    transparent 0
+  );
 }
