@@ -1,5 +1,4 @@
-// Player-facing copy in FR/EN/ES. The questions themselves are French only
-// for now. Rules HTML lives in rules.js.
+// Player-facing copy in FR/EN/ES. Rules HTML lives in rules.js.
 export const LANGS = ["fr", "en", "es"];
 
 const STRINGS = {
@@ -7,7 +6,6 @@ const STRINGS = {
     title: "Trivial Quizz",
     pitch:
       "Répondez aux questions, gagnez les 6 camemberts puis la question finale au centre du plateau.",
-    langNote: "",
     modeLabel: "Type de partie",
     classic: "Classique",
     classicInfo: "Camemberts sur les cases camembert",
@@ -69,7 +67,6 @@ const STRINGS = {
     title: "Trivial Quizz",
     pitch:
       "Answer questions, win the 6 wedges, then the final question in the middle of the board.",
-    langNote: "Questions are in French only for now.",
     modeLabel: "Game type",
     classic: "Classic",
     classicInfo: "Wedges on the wedge spaces",
@@ -130,7 +127,6 @@ const STRINGS = {
     title: "Trivial Quizz",
     pitch:
       "Responde a las preguntas, gana los 6 quesitos y luego la pregunta final en el centro del tablero.",
-    langNote: "Por ahora las preguntas solo están en francés.",
     modeLabel: "Tipo de partida",
     classic: "Clásica",
     classicInfo: "Quesitos en las casillas de quesito",

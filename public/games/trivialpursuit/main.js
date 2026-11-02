@@ -113,7 +113,6 @@ function applyLanguage() {
     button.classList.toggle("active", button.dataset.lang === page.lang);
   });
   $("trivialpursuit-rules-content").innerHTML = rulesHtml(page.lang);
-  $("trivialpursuit-lang-note").hidden = !t("langNote");
   renderStart();
   renderEnd();
   page.play?.relabel();
@@ -232,6 +231,7 @@ function bindOptions() {
       page.lang = button.dataset.lang;
       store.writeStorage(LANG_KEY, page.lang);
       applyLanguage();
+      useDeckLanguage();
     });
   });
   $("trivialpursuit-options-quit").addEventListener("click", () => {
@@ -279,17 +279,28 @@ function bindPage() {
   });
 }
 
+// Questions follow the interface language; the match keeps its indexes.
+function useDeckLanguage() {
+  if (!page.deck) return;
+  page.deck
+    .setLang(page.lang)
+    .then(() => page.play?.relabel())
+    .catch((error) => console.error("[trivialpursuit]", error));
+}
+
 async function boot() {
   bindPage();
   showScreen(false);
   applyLanguage();
   try {
-    page.deck = await loadDeck();
+    page.deck = await loadDeck(page.lang);
   } catch (error) {
     console.error("[trivialpursuit]", error);
     page.deckError = true;
   }
   renderStart();
+  // The language may have changed while the deck was loading.
+  useDeckLanguage();
 }
 
 boot();

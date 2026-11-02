@@ -1,6 +1,6 @@
 # Trivial Quizz — notes for agents
 
-Wedge-collecting trivia board game for 1 to 6 players on one device (pass and play). Vanilla ES modules, SVG board, no dependency. Interface in FR/EN/ES; the questions are French only. Read this before opening the sources.
+Wedge-collecting trivia board game for 1 to 6 players on one device (pass and play). Vanilla ES modules, SVG board, no dependency. Interface and questions in FR/EN/ES. Read this before opening the sources.
 
 ## Files
 
@@ -12,7 +12,7 @@ Wedge-collecting trivia board game for 1 to 6 players on one device (pass and pl
 | `board.js` | Board graph and geometry. Ring 0–41 (headquarters at 0, 7, 14, 21, 28, 35 = category 0–5), spoke k cell j at `41 + 5k + j`, hub 72. Segment pattern `[3, ROLL, 1, 4, ROLL, 2]` (offsets from the segment's HQ category); spoke k cell j has category `(k + j) % 6`. Each category: 1 HQ, 4 ring + 5 spoke cells; 12 roll-again cells. `reachable(from, steps)` = exact count, no cell twice. |
 | `board-view.js` | Static SVG drawing, HTML pawns (little pie of the wedges) and HTML target buttons (`trivialpursuit-target-<node>`, arrows move focus between them). `CAT_COLORS`, `PAWN_COLORS`. |
 | `question-view.js` | Question card (question → "Voir la réponse" → right / wrong, "Autre question") and the hub category picker. |
-| `deck.js` | Loads `/data/trivialpursuit/questions_fr.json` (`{ version, categories: [6 × [[question, answer, info?]]] }`), validates it, draws without repeat. Asked questions are remembered across matches in `trivialpursuit-seen` (per category, cleared when a category is used up). |
+| `deck.js` | Loads `/data/trivialpursuit/questions_<lang>.json` (`{ version, categories: [6 × [[question, answer, info?]]] }`), validates it, draws without repeat. `setLang(lang)` swaps the language on the same indexes (same question); every language file must have the same size per category. Asked questions are remembered across matches in `trivialpursuit-seen` (per category, cleared when a category is used up). |
 | `store.js` | localStorage: `trivialpursuit-current` (match in progress, validated on read), `trivialpursuit-names` (last names), `trivialpursuit-mode` (last mode). A save without `mode` loads as classic. |
 | `i18n.js`, `rules.js` | FR/EN/ES copy; rules HTML. |
 | `styles.css`, `stage.css`, `overlay.css` | Theme + start/end cards; board + panel (landscape `min-aspect-ratio: 5/4` puts the panel beside the board); question / category / end overlays. |
@@ -27,4 +27,4 @@ Wedge-collecting trivia board game for 1 to 6 players on one device (pass and pl
 
 ## Question bank
 
-Built once from the owner's phone photos of the cards (`tmp-resources/`, not committed): Tesseract OCR per colour slot, question side paired with answer side by photo position, then every card proofread (OCR fixes; picture questions, broken text and dated answers dropped). 2,321 questions kept. The bank is in `.prettierignore` (content, not code).
+Built once from the owner's phone photos of the cards (`tmp-resources/`, not committed): Tesseract OCR per colour slot, question side paired with answer side by photo position, then every card proofread (OCR fixes; picture questions, broken text and dated answers dropped). 2,321 questions kept (FR). `questions_en.json` and `questions_es.json` are translations of that bank, same order and indexes, made by AI and not yet proof-read by a native speaker. The banks are in `.prettierignore` (content, not code).

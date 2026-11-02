@@ -18,7 +18,7 @@ apps/
 # Reformatting these produced ~500k changed lines for zero readability gain.
 public/data/**/*_words.json
 public/data/olemains/words.json
-public/data/trivialpursuit/questions_fr.json
+public/data/trivialpursuit/questions_*.json
 
 # Game code, excluded on purpose so that `format:check` can be a real CI gate
 # today instead of staying red forever. These 79 files were never formatted;

@@ -27,7 +27,7 @@ const RULES = {
       <li>With all 6 wedges, reach the middle by exact count: the opponents pick the category of the final question. Right answer: you win.</li>
     </ul>
     <p><b>Quick game</b>: every right answer wins the wedge of its category, on any space. The final question in the middle is still required.</p>
-    <p>Questions are in French only for now. “Another question” swaps an unreadable or known question, no penalty.</p>`,
+    <p>“Another question” swaps an unreadable or known question, no penalty.</p>`,
   es: `
     <p>De 1 a 6 jugadores en el mismo dispositivo. Todas las fichas salen del centro.</p>
     <ul>
@@ -41,7 +41,7 @@ const RULES = {
       <li>Con los 6 quesitos, llega al centro con el número exacto: los rivales eligen la categoría de la pregunta final. Si aciertas, ganas.</li>
     </ul>
     <p><b>Partida rápida</b>: cada acierto da el quesito de su categoría, en cualquier casilla. La pregunta final en el centro sigue siendo obligatoria.</p>
-    <p>Por ahora las preguntas solo están en francés. «Otra pregunta» cambia una pregunta ilegible o conocida, sin penalización.</p>`
+    <p>«Otra pregunta» cambia una pregunta ilegible o conocida, sin penalización.</p>`
 };
 
 export const rulesHtml = (lang) => RULES[lang] || RULES.fr;
