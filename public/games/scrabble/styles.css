@@ -236,7 +236,7 @@ body {
 }
 
 .sc-button-resume {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   background: linear-gradient(180deg, #d9a679, #c58e5f);
   box-shadow: 0 3px 0 #9a6a40;
 }
