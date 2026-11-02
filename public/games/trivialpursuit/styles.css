@@ -1,4 +1,4 @@
-/* Trivial Pursuit: navy game-table skin over the shared header; start
+/* Trivial Quizz: navy game-table skin over the shared header; start
    screen, cards and overlays. The play stage lives in stage.css. */
 :root {
   --tp-bg: #16213a;

@@ -4,7 +4,7 @@ export const LANGS = ["fr", "en", "es"];
 
 const STRINGS = {
   fr: {
-    title: "Trivial Pursuit",
+    title: "Trivial Quizz",
     pitch:
       "Répondez aux questions, gagnez les 6 camemberts puis la question finale au centre du plateau.",
     langNote: "",
@@ -61,7 +61,7 @@ const STRINGS = {
     cat5: "Sports et loisirs"
   },
   en: {
-    title: "Trivial Pursuit",
+    title: "Trivial Quizz",
     pitch:
       "Answer questions, win the 6 wedges, then the final question in the middle of the board.",
     langNote: "Questions are in French only for now.",
@@ -117,7 +117,7 @@ const STRINGS = {
     cat5: "Sports & Leisure"
   },
   es: {
-    title: "Trivial Pursuit",
+    title: "Trivial Quizz",
     pitch:
       "Responde a las preguntas, gana los 6 quesitos y luego la pregunta final en el centro del tablero.",
     langNote: "Por ahora las preguntas solo están en francés.",

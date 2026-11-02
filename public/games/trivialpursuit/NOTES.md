@@ -1,6 +1,6 @@
-# Trivial Pursuit — notes for agents
+# Trivial Quizz — notes for agents
 
-Classic Trivial Pursuit for 1 to 6 players on one device (pass and play). Vanilla ES modules, SVG board, no dependency. Interface in FR/EN/ES; the questions are French only. Read this before opening the sources.
+Wedge-collecting trivia board game for 1 to 6 players on one device (pass and play). Vanilla ES modules, SVG board, no dependency. Interface in FR/EN/ES; the questions are French only. Read this before opening the sources.
 
 ## Files
 
