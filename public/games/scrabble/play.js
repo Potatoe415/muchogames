@@ -1,9 +1,10 @@
 // The match on screen: live preview, play / swap / pass / hint, the
-// computer's turns in solo and the "pass the device" screen between two
+// computer's turns in solo and the "pass the device" screen between
 // players. Editing the draft lives in edit.js.
 import { bestMove, chooseMove } from "./ai.js";
 import { createBoardView } from "./board-view.js";
 import { define } from "./define.js";
+import { combineDictionaries } from "./dict.js";
 import { draftAt, draftTiles } from "./draft.js";
 import { makeJuniorDraw } from "./easy-draw.js";
 import { createEditor } from "./edit.js";
@@ -38,16 +39,17 @@ function lastCells(game) {
   return new Set(last?.kind === "play" ? last.cells : []);
 }
 
-// opts: { els, game, draft, config, names(), langs, dicts (one per player),
-//         t, hints(), keysActive(), dialogs, sound, onSave(), onEnd(game) }
+// opts: { els, game, draft, config, names(), langs (word languages), dicts
+//         (one per word language), t, hints(), keysActive(), dialogs, sound,
+//         onSave(), onEnd(game) }
 export function createPlay(opts) {
   const { els, game, config, t, dialogs, sound } = opts;
-  const dict = () => opts.dicts[game.turn];
-  const solo = config.mode === "solo";
+  const dict = combineDictionaries(opts.dicts);
+  const solo = config.players === 1;
   // Junior level: the Hint button is always there and suggests short words;
   // the child's draws are friendlier (easy-draw.js).
   const junior = solo && config.level === "junior";
-  const juniorDraw = junior ? makeJuniorDraw(opts.dicts[0]) : undefined;
+  const juniorDraw = junior ? makeJuniorDraw(dict) : undefined;
   const s = {
     draft: opts.draft || [],
     cursor: null,
@@ -69,7 +71,7 @@ export function createPlay(opts) {
   const myRack = () => game.racks[game.turn];
 
   function refresh() {
-    s.preview = computePreview(game, s.draft, dict());
+    s.preview = computePreview(game, s.draft, dict);
     board.paint({
       board: game.board,
       draft: s.draft,
@@ -85,8 +87,7 @@ export function createPlay(opts) {
     });
     const names = opts.names();
     const hints = opts.hints() || junior;
-    const { langs } = opts;
-    const ctx = { game, names, langs, t, solo, junior, hints };
+    const ctx = { game, names, t, solo, junior, hints };
     renderHud(s, { ...ctx, canAct: canAct() });
   }
 
@@ -146,7 +147,7 @@ export function createPlay(opts) {
         rack: game.racks[1],
         bagCount: game.bag.length,
         level: config.level,
-        dict: dict()
+        dict
       });
       s.thinking = false;
       applyBot(move);
@@ -158,12 +159,7 @@ export function createPlay(opts) {
     s.hidden = true;
     changed();
     const names = opts.names();
-    const name = names[game.turn];
-    const lang = opts.langs[game.turn];
-    const title =
-      opts.langs[0] === opts.langs[1]
-        ? t("handoffTitle", { name })
-        : t("handoffTitleLang", { name, lang: t(`lang_${lang}`) });
+    const title = t("handoffTitle", { name: names[game.turn] });
     dialogs.handoff(title, lastMoveLine(game, names, t)).then((ok) => {
       if (!ok) return;
       s.hidden = false;
@@ -173,7 +169,7 @@ export function createPlay(opts) {
 
   function hint() {
     if (!canAct()) return;
-    const move = bestMove(game.board, myRack(), dict(), junior);
+    const move = bestMove(game.board, myRack(), dict, junior);
     if (move) return edit.layOut(move.tiles);
     s.draft = [];
     s.notice = "noMove";
@@ -208,7 +204,7 @@ export function createPlay(opts) {
     dialogs.showBag(unseenLetters(game, viewer), game.bag.length, t);
   }
 
-  // Dictionary: the button arms a "tap a word" mode, open to both players
+  // Dictionary: the button arms a "tap a word" mode, open to every player
   // at any time (even during the computer's turn or after the end).
   function toggleLookup() {
     if (s.hidden || dialogs.isOpen()) return;
@@ -218,11 +214,10 @@ export function createPlay(opts) {
     refresh();
   }
 
-  // The language a board word belongs to: the current player's if valid there.
+  // The language a board word belongs to: the first word language that has it.
   function wordLang(word) {
-    const order = [game.turn, 1 - game.turn];
-    const p = order.find((n) => opts.dicts[n].has(word)) ?? game.turn;
-    return opts.langs[p];
+    const n = opts.dicts.findIndex((d) => d.has(word));
+    return opts.langs[Math.max(0, n)];
   }
 
   function lookUpAt(i) {
@@ -234,7 +229,7 @@ export function createPlay(opts) {
       const lang = wordLang(word);
       return { word, lang, entry: define(word, lang) };
     });
-    dialogs.showDefinitions(items, t, opts.langs[0] !== opts.langs[1]);
+    dialogs.showDefinitions(items, t, opts.langs.length > 1);
   }
 
   const unbindInput = bindInput(els, {

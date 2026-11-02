@@ -1,11 +1,13 @@
 # Scrabble — notes for agents
 
-Scrabble vs the computer (5 levels, slider on the start screen) or two players on one device.
-Words in French, English or Spanish (start-screen buttons `FR` / `EN` / `ES`, choice `words`, defaults to
-the interface language on a first visit), or "FR+ES" (two players only; hidden against the computer, and a saved solo mixed choice falls back to the interface language via `wordsForMode`): each player checked
-against their own language (`p1Lang` = player 1's language, chosen on the start screen in two-player
-mode only; `playerLangs` in `tiles.js`), one shared bag (`fr-es` set: French values + Ñ, 102 tiles),
-FR/ES tags on the score cards and in the handoff title. The interface is
+Scrabble for 1 to 4 players (players slider `scrabble-players-slider`, setting `players`): 1 = you vs the
+computer (5 levels, level slider), 2–4 = people on one device ("pass the device" sheet each turn). Solo
+matches still have two racks (`seatsOf` in `setup.js`).
+Words in French, English and/or Spanish: the `FR` / `EN` / `ES` start-screen buttons tick on and off
+together (setting `words` = array in `WORD_LANGS` order, never empty, defaults to the interface language
+on a first visit). A word counts if any ticked list has it (`combineDictionaries` in `dict.js`), for every
+player, the computer and the hint. Bag (`tileSetFor` in `tiles.js`): one language = its own set; with ES
+and another = the `mix` set (French values + Ñ, 102 tiles); FR + EN = the French set. The interface is
 FR/EN/ES separately. Vanilla ES
 modules, DOM board of `<button>` cells, no dependency, no worker (a move
 search takes ≤ ~120 ms on a desktop, runs during the 750 ms "thinking" pause).
@@ -16,7 +18,7 @@ Read this before opening the sources.
 | File | Role |
 |---|---|
 | `main.js` | Page shell: i18n, settings, dictionary loading per word language (Start waits for the selected list, Resume loads the saved match's list), `useTileSet` before restoring or mounting a match, screens, save/resume, `MuchogamesMatch.start/resume/finish`, stats. |
-| `play.js` | `createPlay(opts)` (`dicts`/`langs` one per player) → `{ actions, relabel, refresh, destroy, snapshot }`. Live preview, play / swap-or-pass / hint / bag, computer turns, "pass the device" between two players. |
+| `play.js` | `createPlay(opts)` (`dicts`/`langs` one per word language, combined for checks) → `{ actions, relabel, refresh, destroy, snapshot }`. Live preview, play / swap-or-pass / hint / bag, computer turns, "pass the device" between players. |
 | `edit.js` | The draft: tap tile then cell, tap a cell for the typing cursor (tap again = turn ↓) then tap/type letters, drag rack ↔ board, reorder the rack, take back, shuffle, `layOut` for hints. |
 | `draft.js` | Pure helpers for the draft `[{ k: rack slot, i: cell, l: letter }]`, `slotFor` (a typed letter uses a blank if missing), `draftFits` (save check). |
 | `rules.js` | Pure rules: `analyzeMove(board, tiles)` → `{ error }` (`line`, `gap`, `center`, `short`, `detached`) or `{ words, score, bingo }`; `invalidWords(analysis, dict)`. |
@@ -27,30 +29,30 @@ Read this before opening the sources.
 | `easy-draw.js` | Junior solo only: `makeJuniorDraw(dict)` → chooser for the child's draws (start, after a play, after a swap): 24 random draws tried, kept the one with ~43 % vowels, no tile worth 8+, few doubles, most 3–5-letter words from the rack alone. Passed to `createGame` / `playTiles` / `swapTiles` / `swapOne`; the computer draws normally. Not saved: a resumed Junior match keeps drawing kindly. |
 | `junior-words.js` | Rude words (FR/EN/ES, best effort) the Junior computer never plays and the Junior hint never suggests; still valid if the child plays them. |
 | `junior-words.js` | Rude words (FR/EN/ES, best effort) the Junior computer never plays and the Junior hint never suggests; still valid if the child plays them. |
-| `game.js` | Match state and transitions (`playTiles`, `swapTiles`, `passTurn`), end + rack adjustments, `restoreGame` (shape + every tile of the active set accounted for). |
-| `dict.js` | `loadDictionary(lang)`: `/data/scrabble/ods9.txt` (fr), `enable.txt` (en), `es.txt` (es), each once; sorted array + binary search (`has`, `hasPrefix`). |
-| `tiles.js` | Tile sets per word language (fr 102 official; en 100 official; es 100 = official minus the CH/LL/RR tiles, given to C/L/R; Ñ is a letter, no K/W), `useTileSet(lang)` switches the live `LETTERS`/`LETTER_INDEX`/values/bag, premium layout, constants. Board cell: `""`, uppercase letter, or lowercase = blank played as that letter. Rack: `"?"` = blank. |
+| `game.js` | Match state and transitions (`createGame(seats)`, `playTiles`, `swapTiles`, `passTurn`; turn goes round the seats), end + rack adjustments, `restoreGame(raw, seats)` (shape + every tile of the active set accounted for). |
+| `dict.js` | `loadDictionary(lang)`: `/data/scrabble/ods9.txt` (fr), `enable.txt` (en), `es.txt` (es), each once; sorted array + binary search (`has`, `hasPrefix`). `combineDictionaries(list)`: a word/prefix is in if any list has it. |
+| `tiles.js` | Tile sets per word language (fr 102 official; en 100 official; es 100 = official minus the CH/LL/RR tiles, given to C/L/R; Ñ is a letter, no K/W; `mix` for several languages, see top), `tileSetFor(words)`, `useTileSet(set)` switches the live `LETTERS`/`LETTER_INDEX`/values/bag, premium layout, constants. Board cell: `""`, uppercase letter, or lowercase = blank played as that letter. Rack: `"?"` = blank. |
 | `board-view.js`, `rack-view.js` | DOM painting: cells `data-id="scrabble-cell-h8"` (column letter + row), rack `scrabble-rack-tile-<n>`, score bubble, cursor, last move. |
 | `input.js`, `keys.js` | Pointer tap/drag (ghost centered on the finger), keyboard (letters, Backspace, arrows, Enter, Escape). |
 | `dialogs.js`, `hud.js`, `end.js` | Sheets (blank picker, swap/pass, letters left, definitions, handoff), score cards + guide line + buttons, end card. |
-| `define.js`, `define-view.js` | "Définir" button (replaces the in-match ✖; the header back button stays): arms a tap-a-word mode (`s.lookup` in `play.js`, works any time, even on the computer's turn or after the end), then `define(word, lang)`: French reads our copy first (`/data/scrabble/defs/fr/<first 2 letters>.txt` + `forms.txt`, see Dictionaries; decision 0057), live Wiktionary only for words missing there; English/Spanish always live (fr/en/es editions, CORS `origin=*`, `Api-User-Agent` header): accent-insensitive search → first definition of the language section, first sentence only; inflected forms ("pluriel de", "plural of", "forma del plural de"…) followed once to the base word. Files and answers cached per page. Text is inserted as plain text only. The sheet ends with the CC BY-SA credit (`scrabble-define-license`). The word's language = the current player's if valid there (matters in FR + ES). |
+| `define.js`, `define-view.js` | "Définir" button (replaces the in-match ✖; the header back button stays): arms a tap-a-word mode (`s.lookup` in `play.js`, works any time, even on the computer's turn or after the end), then `define(word, lang)`: French reads our copy first (`/data/scrabble/defs/fr/<first 2 letters>.txt` + `forms.txt`, see Dictionaries; decision 0057), live Wiktionary only for words missing there; English/Spanish always live (fr/en/es editions, CORS `origin=*`, `Api-User-Agent` header): accent-insensitive search → first definition of the language section, first sentence only; inflected forms ("pluriel de", "plural of", "forma del plural de"…) followed once to the base word. Files and answers cached per page. Text is inserted as plain text only. The sheet ends with the CC BY-SA credit (`scrabble-define-license`). The word's language = the first ticked language that has it; the sheet tags it when several are ticked. |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings + rules HTML. |
-| `setup.js` | Start-screen choices, level slider (`scrabble-level-slider`, 0–4, labels below are `data-setting` buttons) + the level's record, names, resume button. |
-| `styles.css`, `slider.css`, `scores.css`, `stage.css`, `board.css`, `sheets.css` | Page + start screen; level slider; score cards; stage layout (portrait column, aspect ≥ 6/5 side column); board/tiles/rack; sheets. |
+| `setup.js` | Start-screen choices (word buttons tick, others pick one), players slider (0–3 → 1–4 players, caption below) and level slider (`scrabble-level-slider`, 0–4); labels below each are `data-setting` buttons; the level's record, names (one input per player, 2–4), resume button. |
+| `styles.css`, `slider.css`, `scores.css`, `stage.css`, `board.css`, `sheets.css` | Page + start screen; sliders; score cards; stage layout (portrait column, aspect ≥ 6/5 side column; 3–4 players: cards 2×2 with the bag beside, `data-players` on `scrabble-scores`); board/tiles/rack; sheets. |
 
 ## Rules in code
 
 - First word covers the centre and has ≥ 2 letters. Every word formed must be in the word language's list; the game refuses unknown words before playing (no challenge, no penalty) and says which word.
 - Bingo +50 for 7 tiles. Swap only with ≥ 7 tiles in the bag (new tiles drawn before the old go back). Swaps and passes are scoreless turns.
-- End: bag empty and a rack emptied (that player gains the other rack's value, the other loses it), or 4 scoreless turns in a row (each loses their own rack value).
-- Human always plays first (player 1 in duo, "Vous" in solo).
-- `finish({ won, score })` in solo when there is a winner; `finish()` for a solo draw and for two-player games.
+- End: bag empty and a rack emptied (that player gains every other rack's value, the others lose theirs), or 2 × players scoreless turns in a row (4 for two racks; each loses their own rack value). A tie at the top is a draw.
+- Human always plays first (player 1 with 2–4 players, "Vous" in solo).
+- `finish({ won, score })` in solo when there is a winner; `finish()` for a solo draw and for 2–4 player games.
 
 ## Save / resume (decision 0054)
 
-- Key `scrabble-saved-game` = `{ config: { mode, level, words, p1Lang, names }, game, draft }` (a save without `words` is French). Written at match start, after every change (draft edits included) and on `pagehide` / `visibilitychange`. Cleared in `onEnd`.
+- Key `scrabble-saved-game` = `{ config: { players, level, words: ["fr", …], names: [4] }, game, draft }`. Older saves migrate in `loadSaved`: no `words` = French, a string `"fr-es"` = `["fr", "es"]` (now checked as one combined list), `mode` solo/duo = 1/2 players. Written at match start, after every change (draft edits included) and on `pagehide` / `visibilitychange`. Cleared in `onEnd`.
 - A computer turn in progress restarts on resume; two-player resume always shows the handoff sheet first (racks stay hidden).
-- Other keys: `scrabble-settings-v2` (mode, level, words, p1Lang, sound, hints — the Hint button, off by default, switched on in the options panel — names), `scrabble-stats` (`{ <level>: { won, played } }`).
+- Other keys: `scrabble-settings-v2` (players, level, words, sound, hints — the Hint button, off by default, switched on in the options panel — names), `scrabble-stats` (`{ <level>: { won, played } }`).
 
 ## Dictionaries
 

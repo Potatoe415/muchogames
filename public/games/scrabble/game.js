@@ -1,7 +1,8 @@
-// One match: board, bag, two racks, scores, turn, history. Pure state changes;
-// the caller validates a placement (rules.js) before playTiles. The match ends
-// when a player empties their rack with the bag empty, or after four turns in
-// a row without points (each player passed or swapped twice).
+// One match: board, bag, one rack and score per player (2 to 4; solo is you
+// and the computer), turn, history. Pure state changes; the caller validates
+// a placement (rules.js) before playTiles. The match ends when a player
+// empties their rack with the bag empty, or after two scoreless turns per
+// player in a row (each player passed or swapped twice).
 import {
   BLANK,
   CELLS,
@@ -13,24 +14,24 @@ import {
   shuffle
 } from "./tiles.js";
 
-const SCORELESS_END = 4;
+const SCORELESS_ROUNDS = 2;
 
 const asRackLetter = (l) => (l === l.toLowerCase() ? BLANK : l);
 
-// chooser (optional): picks player 1's draws (Junior level, easy-draw.js).
-export function createGame(chooser) {
+// seats: number of racks. chooser (optional): picks player 1's draws (Junior
+// level, easy-draw.js).
+export function createGame(seats, chooser) {
   const game = {
     board: Array(CELLS).fill(""),
     bag: shuffle(fullBag()),
-    racks: [[], []],
-    scores: [0, 0],
+    racks: Array.from({ length: seats }, () => []),
+    scores: Array(seats).fill(0),
     turn: 0,
     history: [],
     scoreless: 0,
     over: null
   };
-  refill(game, 0, chooser);
-  refill(game, 1);
+  game.racks.forEach((_, p) => refill(game, p, p === 0 ? chooser : undefined));
   return game;
 }
 
@@ -52,21 +53,30 @@ function refill(game, p, chooser) {
     .forEach((i) => rack.push(...game.bag.splice(i, 1)));
 }
 
-// Junior keeps the scores as they are: no rack adjustment at the end.
+// The player who went out gains every other rack's value. Junior keeps the
+// scores as they are: no rack adjustment at the end. A tie at the top is a
+// draw (winner -1).
 function finish(game, reason, outPlayer) {
   const left = game.racks.map((rack) => (JUNIOR ? 0 : rackValue(rack)));
   const adjust = left.map((value) => (value ? -value : 0));
-  if (outPlayer >= 0) adjust[outPlayer] = left[1 - outPlayer];
+  if (outPlayer >= 0) adjust[outPlayer] = left.reduce((sum, v) => sum + v, 0);
   adjust.forEach((value, p) => (game.scores[p] += value));
-  const [a, b] = game.scores;
-  game.over = { reason, adjust, winner: a === b ? -1 : a > b ? 0 : 1 };
+  const top = Math.max(...game.scores);
+  const leaders = game.scores.flatMap((score, p) => (score === top ? [p] : []));
+  game.over = {
+    reason,
+    adjust,
+    winner: leaders.length === 1 ? leaders[0] : -1
+  };
 }
 
 function endTurn(game) {
   const p = game.turn;
+  const seats = game.racks.length;
   if (!game.racks[p].length && !game.bag.length) return finish(game, "out", p);
-  if (game.scoreless >= SCORELESS_END) return finish(game, "blocked", -1);
-  game.turn = 1 - p;
+  if (game.scoreless >= SCORELESS_ROUNDS * seats)
+    return finish(game, "blocked", -1);
+  game.turn = (p + 1) % seats;
 }
 
 export function playTiles(game, tiles, analysis, chooser) {
@@ -115,10 +125,13 @@ export function passTurn(game) {
   endTurn(game);
 }
 
-// Letters the player p cannot see: the bag and the other rack (Junior racks
+// Letters the player p cannot see: the bag and the other racks (Junior racks
 // are face up, so only the bag).
 export const unseenLetters = (game, p) =>
-  [...game.bag, ...(JUNIOR ? [] : game.racks[1 - p])].sort();
+  [
+    ...game.bag,
+    ...(JUNIOR ? [] : game.racks.filter((_, n) => n !== p).flat())
+  ].sort();
 
 export function bestPlay(game, p) {
   const plays = game.history.filter((h) => h.p === p && h.kind === "play");
@@ -142,7 +155,7 @@ function tilesComplete(game) {
   return all.join("") === fullBag().sort().join("");
 }
 
-function shapeValid(raw) {
+function shapeValid(raw, seats) {
   return (
     Array.isArray(raw?.board) &&
     raw.board.length === CELLS &&
@@ -150,29 +163,30 @@ function shapeValid(raw) {
     Array.isArray(raw.bag) &&
     raw.bag.every(isRackLetter) &&
     Array.isArray(raw.racks) &&
-    raw.racks.length === 2 &&
+    raw.racks.length === seats &&
     raw.racks.every(
       (r) => Array.isArray(r) && r.length <= RACK_SIZE && r.every(isRackLetter)
     ) &&
     Array.isArray(raw.scores) &&
-    raw.scores.length === 2 &&
+    raw.scores.length === seats &&
     raw.scores.every(Number.isInteger) &&
-    (raw.turn === 0 || raw.turn === 1) &&
+    isCount(raw.turn) &&
+    raw.turn < seats &&
     Array.isArray(raw.history) &&
     isCount(raw.scoreless)
   );
 }
 
-// -> game or null when the save is damaged.
-export function restoreGame(raw) {
-  if (!shapeValid(raw)) return null;
+// seats: racks the match must have. -> game or null when the save is damaged.
+export function restoreGame(raw, seats) {
+  if (!shapeValid(raw, seats)) return null;
   const game = {
     board: raw.board.slice(),
     bag: raw.bag.slice(),
     racks: raw.racks.map((r) => r.slice()),
     scores: raw.scores.slice(),
     turn: raw.turn,
-    history: raw.history.filter((h) => h && (h.p === 0 || h.p === 1)),
+    history: raw.history.filter((h) => isCount(h?.p) && h.p < seats),
     scoreless: raw.scoreless,
     over: null
   };

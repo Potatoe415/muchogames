@@ -15,24 +15,23 @@ export const BLANK = "?";
 
 // "letter count value": French 102 tiles (official), English 100 (official),
 // Spanish 100 (official minus the CH, LL and RR tiles, written with two
-// letters here; their three tiles go to C, L and R). "fr-es" is the shared
-// bag of a French + Spanish match: French values, counts between the two
-// languages, plus the Ñ (102 tiles).
+// letters here; their three tiles go to C, L and R). "mix" is the bag of a
+// match with Spanish and another language: French values, counts between
+// French and Spanish, every letter of the three plus the Ñ (102 tiles).
+// French + English uses the French bag.
 const SETS = {
-  "fr-es":
-    "A10:1 B2:3 C3:3 D4:2 E13:1 F2:4 G2:2 H2:4 I6:1 J1:8 K1:10 L5:1 M3:2 N6:1 Ñ1:8 O7:1 P2:3 Q1:8 R6:1 S6:1 T5:1 U6:1 V2:4 W1:10 X1:10 Y1:10 Z1:10",
+  mix: "A10:1 B2:3 C3:3 D4:2 E13:1 F2:4 G2:2 H2:4 I6:1 J1:8 K1:10 L5:1 M3:2 N6:1 Ñ1:8 O7:1 P2:3 Q1:8 R6:1 S6:1 T5:1 U6:1 V2:4 W1:10 X1:10 Y1:10 Z1:10",
   fr: "A9:1 B2:3 C2:3 D3:2 E15:1 F2:4 G2:2 H2:4 I8:1 J1:8 K1:10 L5:1 M3:2 N6:1 O6:1 P2:3 Q1:8 R6:1 S6:1 T6:1 U6:1 V2:4 W1:10 X1:10 Y1:10 Z1:10",
   en: "A9:1 B2:3 C2:3 D4:2 E12:1 F2:4 G3:2 H2:4 I9:1 J1:8 K1:5 L4:1 M2:3 N6:1 O8:1 P2:3 Q1:10 R6:1 S4:1 T6:1 U4:1 V2:4 W2:4 X1:8 Y2:4 Z1:10",
   es: "A12:1 B2:3 C5:3 D5:2 E12:1 F1:4 G2:2 H2:4 I6:1 J1:8 L5:1 M2:3 N5:1 Ñ1:8 O9:1 P2:3 Q1:5 R6:1 S6:1 T4:1 U5:1 V1:4 X1:8 Y1:4 Z1:10"
 };
 
-export const WORD_LANGS = ["fr", "en", "es", "fr-es"];
+export const WORD_LANGS = ["fr", "en", "es"];
 
-// Dictionary language of each player: [player 1, player 2]. In "fr-es",
-// p1Lang says which of the two player 1 uses.
-export function playerLangs(words, p1Lang) {
-  if (words !== "fr-es") return [words, words];
-  return p1Lang === "es" ? ["es", "fr"] : ["fr", "es"];
+// Tile set of the word languages of a match (one or more of WORD_LANGS).
+export function tileSetFor(words) {
+  if (words.length === 1) return words[0];
+  return words.includes("es") ? "mix" : "fr";
 }
 
 function parseSet(text) {

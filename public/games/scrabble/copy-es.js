@@ -1,12 +1,8 @@
 export const STRINGS = {
   title: "Scrabble",
   words: "Idioma de las palabras",
-  p1LangDuo: "Idioma del jugador 1",
   mixHelp:
-    "Cada uno pone palabras en su idioma en el mismo tablero. Bolsa común con la Ñ.",
-  lang_fr: "francés",
-  lang_es: "español",
-  handoffTitleLang: "Turno de {name} · {lang}",
+    "Una palabra vale si existe en al menos uno de los idiomas marcados.",
   back: "Volver",
   options: "Opciones",
   close: "Cerrar",
@@ -20,9 +16,8 @@ export const STRINGS = {
   dictError: "No se pudo cargar el diccionario.",
   retry: "Reintentar",
   resume: "Reanudar la partida",
-  mode: "Modo",
-  modeSolo: "Contra el ordenador",
-  modeDuo: "Entre dos",
+  vsComputer: "Contra el ordenador",
+  onOneDevice: "{n} jugadores en el mismo dispositivo",
   level: "Nivel",
   junior: "Junior",
   easy: "Fácil",
@@ -32,8 +27,11 @@ export const STRINGS = {
   levelRecord: "Victorias en este nivel: {won} de {played}",
   noRecord: "Aún no hay partidas en este nivel",
   players: "Jugadores",
+  names: "Nombres",
   player1: "Jugador 1",
   player2: "Jugador 2",
+  player3: "Jugador 3",
+  player4: "Jugador 4",
   start: "Empezar",
   you: "Tú",
   computer: "Ordenador",
@@ -78,7 +76,7 @@ export const STRINGS = {
   swapConfirm: "Cambiar ({count})",
   passConfirm: "Pasar mi turno",
   bagTitle: "Letras restantes",
-  bagSummary: "{bag} en la bolsa · {unseen} sin ver (bolsa + rival)",
+  bagSummary: "{bag} en la bolsa · {unseen} sin ver (bolsa + rivales)",
   handoffTitle: "Turno de {name}",
   handoffHint: "Pasa el dispositivo y toca el botón.",
   handoffButton: "Ver mis letras",
@@ -87,7 +85,7 @@ export const STRINGS = {
   draw: "Empate",
   nameWins: "¡{name} gana!",
   endOut: "{name} colocó todas sus letras.",
-  endBlocked: "Cuatro turnos sin puntos: la partida termina.",
+  endBlocked: "Dos turnos sin puntos cada uno: la partida termina.",
   endPlayer: "{name}: {score} pts ({adjust} al final)",
   bestWord: "Mejor palabra: {word} ({score} pts)",
   replay: "Jugar otra vez",
@@ -102,17 +100,18 @@ export const STRINGS = {
 export const RULES = `
 <p><strong>Objetivo:</strong> sumar más puntos formando palabras en la cuadrícula, como un crucigrama.</p>
 <ul>
+  <li>De 1 a 4 jugadores: solo contra el ordenador, o de 2 a 4 en el mismo dispositivo (se pasa en cada turno).</li>
   <li>Cada jugador tiene 7 letras. En tu turno, pon una o varias letras en una misma fila o columna, sin huecos, tocando las palabras ya colocadas.</li>
   <li>La primera palabra pasa por la estrella ★ del centro.</li>
-  <li>Todas las palabras formadas deben estar en el diccionario del idioma elegido: el juego lo comprueba antes de validar, sin penalización. Francés: Officiel du Scrabble (ODS 9). Inglés: ENABLE. Español: lista libre de 635 000 palabras.</li>
+  <li>Todas las palabras formadas deben estar en el diccionario de uno de los idiomas elegidos: el juego lo comprueba antes de validar, sin penalización. Francés: Officiel du Scrabble (ODS 9). Inglés: ENABLE. Español: lista libre de 635 000 palabras.</li>
   <li>Los acentos no cuentan. En español, la Ñ es una letra propia; CH, LL y RR se escriben con dos letras. Cada idioma tiene sus propias letras y valores.</li>
   <li><strong>Junior</strong> (contra el ordenador, desde 7 años): las reglas de la cara 2 del Scrabble Junior. Tablero pequeño, bolsa de 60 fichas, 5 letras cada uno y las letras del ordenador están a la vista. Solo puntúan las casillas de color: verde 1, azul 2, rosa 3 por cada letra colocada encima (el valor de las letras no cuenta). Al empezar tu turno puedes cambiar 1 letra y jugar igualmente, o pasar para cambiar varias. No se resta nada al final. El botón Pista siempre está y las letras que robas son más fáciles.</li>
-  <li><strong>FR + ES:</strong> un jugador pone palabras francesas y el otro palabras españolas, en el mismo tablero. Las palabras que forma cada jugador deben existir en su idioma. La bolsa es común (valores franceses, con la Ñ).</li>
+  <li><strong>Varios idiomas:</strong> marca FR, EN y/o ES. Una palabra se acepta si existe en al menos uno de los idiomas marcados, para todos, ordenador incluido. Con el español, la bolsa tiene todas las letras y la Ñ (valores franceses); francés + inglés usa la bolsa francesa.</li>
   <li><strong>Puntos:</strong> cada letra tiene su valor. LD y LT doblan o triplican la letra, PD y PT la palabra entera (la estrella cuenta como PD). Una casilla solo cuenta cuando se cubre por primera vez.</li>
   <li>El <strong>comodín</strong> sustituye cualquier letra y vale 0.</li>
   <li><strong>Scrabble:</strong> colocar las 7 letras de una vez da 50 puntos extra.</li>
   <li>En lugar de jugar puedes <strong>cambiar</strong> letras (si quedan al menos 7 en la bolsa) o <strong>pasar</strong>.</li>
-  <li><strong>Fin:</strong> cuando la bolsa está vacía y un jugador ha colocado todas sus letras, o tras 4 turnos seguidos sin puntos. Las letras restantes se restan; quien terminó gana las del rival.</li>
+  <li><strong>Fin:</strong> cuando la bolsa está vacía y un jugador ha colocado todas sus letras, o cuando cada jugador ha pasado o cambiado dos veces seguidas. Las letras restantes se restan; quien terminó gana las de los demás.</li>
 </ul>
 <p><strong>Controles:</strong> toca una letra y luego una casilla, o arrástrala. Toca una letra colocada para recuperarla. Truco: toca una casilla vacía (aparece una flecha, tócala otra vez para girarla) y luego tus letras seguidas. Teclado: escribe las letras, Intro para jugar, Retroceso para quitar, Escape para recoger todo.</p>
 <p><strong>Definir:</strong> toca el libro y luego una palabra del tablero para leer una definición corta (Wikcionario; palabras francesas incluidas en el juego, otros idiomas requieren conexión).</p>

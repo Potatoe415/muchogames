@@ -38,17 +38,16 @@ function guide(s, ctx) {
   ];
 }
 
-// The language tag (FR / ES) shows only when the two players differ.
-function paintPlayers(game, { names, langs, junior }, thinking) {
-  const mixed = langs[0] !== langs[1];
-  [0, 1].forEach((p) => {
-    const card = $(`scrabble-player-${p + 1}`);
+// One card per rack (2 to 4); the unused cards are hidden.
+function paintPlayers(game, { names, junior }, thinking) {
+  const seats = game.racks.length;
+  $("scrabble-scores").dataset.players = String(seats);
+  document.querySelectorAll("[data-player-card]").forEach((card, p) => {
+    card.hidden = p >= seats;
+    if (p >= seats) return;
     card.classList.toggle("is-active", !game.over && game.turn === p);
     card.classList.toggle("is-thinking", thinking && game.turn === p);
     card.querySelector("[data-name]").textContent = names[p];
-    card.querySelector("[data-word-lang]").textContent = mixed
-      ? langs[p].toUpperCase()
-      : "";
     card.querySelector("[data-score]").textContent = String(game.scores[p]);
     const peek = card.querySelector("[data-rack-peek]");
     peek.textContent = junior && p === 1 ? rackText(game.racks[1]) : "";
@@ -58,7 +57,7 @@ function paintPlayers(game, { names, langs, junior }, thinking) {
 // Junior racks are face up: the computer's letters show under its name.
 const rackText = (rack) => rack.map((l) => (l === "?" ? "☆" : l)).join(" ");
 
-// s: play state; ctx: { game, names, langs, t, solo, canAct, hints }
+// s: play state; ctx: { game, names, t, solo, junior, canAct, hints }
 export function renderHud(s, ctx) {
   const { game, t, canAct } = ctx;
   paintPlayers(game, ctx, s.thinking);

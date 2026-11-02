@@ -2,7 +2,7 @@
 // saving and the match lifecycle (docs/PLATFORM_RULES.md). The match on
 // screen lives in play.js.
 import { createDialogs } from "./dialogs.js";
-import { loadDictionary } from "./dict.js";
+import { combineDictionaries, loadDictionary } from "./dict.js";
 import { draftFits } from "./draft.js";
 import { makeJuniorDraw } from "./easy-draw.js";
 import { renderEnd as paintEnd } from "./end.js";
@@ -15,7 +15,9 @@ import {
   matchConfig,
   renderChoices,
   renderLevel,
+  renderPlayers,
   renderResume,
+  seatsOf,
   useRules
 } from "./setup.js";
 import { setSoundEnabled, sound } from "./sound.js";
@@ -28,10 +30,9 @@ import {
   saveGame,
   saveSettings,
   saveStats,
-  wordsForMode,
+  toggleWord,
   writeText
 } from "./store.js";
-import { playerLangs } from "./tiles.js";
 
 const GAME_ID = "scrabble";
 const LANG_KEY = "bergamots-lang";
@@ -55,10 +56,12 @@ const page = {
 };
 
 const t = (key, vars) => translate(page.lang, key, vars);
-const isSolo = () => page.config?.mode === "solo";
+const isSolo = () => page.config?.players === 1;
 function names() {
   if (isSolo()) return [t("you"), t("computer")];
-  return page.config.names.map((name, p) => name || t(`player${p + 1}`));
+  return page.config.names
+    .slice(0, page.config.players)
+    .map((name, p) => name || t(`player${p + 1}`));
 }
 
 const renderEnd = () =>
@@ -86,6 +89,7 @@ function applyLanguage() {
     button.classList.toggle("active", button.dataset.lang === page.lang);
   });
   $("scrabble-rules-content").innerHTML = rulesHtml(page.lang);
+  renderPlayers(page.settings.players, t);
   renderLevel(page.settings.level, page.stats, t);
   page.play?.relabel();
   renderEnd();
@@ -94,22 +98,18 @@ function applyLanguage() {
 function applySettings() {
   setSoundEnabled(page.settings.sound === "on");
   renderChoices(page.settings);
+  renderPlayers(page.settings.players, t);
   renderLevel(page.settings.level, page.stats, t);
   page.play?.refresh();
 }
 
 function choose(setting, value) {
-  page.settings[setting] = value;
-  const words = wordsForMode(
-    page.settings.mode,
-    page.settings.words,
-    page.lang
-  );
-  const wordsChanged = words !== page.settings.words;
-  page.settings.words = words;
-  saveSettings(page.settings);
+  const { settings } = page;
+  settings[setting] =
+    setting === "words" ? toggleWord(settings.words, value) : value;
+  saveSettings(settings);
   applySettings();
-  if (setting === "words" || wordsChanged) loadDict();
+  if (setting === "words") loadDict();
 }
 
 function setNames(list) {
@@ -174,8 +174,8 @@ function mount(game, config, draft) {
     game,
     draft,
     config,
-    langs: playerLangs(config.words, config.p1Lang),
-    dicts: playerLangs(config.words, config.p1Lang).map((l) => page.dicts[l]),
+    langs: config.words,
+    dicts: config.words.map((l) => page.dicts[l]),
     t,
     names,
     hints: () => page.settings.hints === "on",
@@ -192,7 +192,7 @@ function mount(game, config, draft) {
 function loadResumable() {
   const saved = loadSaved();
   if (saved) useRules(saved.config);
-  const game = saved && restoreGame(saved.game);
+  const game = saved && restoreGame(saved.game, seatsOf(saved.config));
   if (!game) {
     clearGame();
     return null;
@@ -211,7 +211,7 @@ function returnToStart() {
 }
 
 async function startMatch() {
-  const config = matchConfig(page.settings, page.lang);
+  const config = matchConfig(page.settings);
   if (page.starting || !dictsReady(config.words)) return;
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
@@ -219,9 +219,10 @@ async function startMatch() {
   page.starting = false;
   if (!allowed) return void (page.play && returnToStart());
   useRules(config);
-  const juniorLang = playerLangs(config.words, config.p1Lang)[0];
+  const dict = combineDictionaries(config.words.map((l) => page.dicts[l]));
   const game = createGame(
-    isJunior(config) ? makeJuniorDraw(page.dicts[juniorLang]) : undefined
+    seatsOf(config),
+    isJunior(config) ? makeJuniorDraw(dict) : undefined
   );
   saveGame(config, game, []);
   renderResume(null);
@@ -236,19 +237,17 @@ async function resumeMatch() {
   mount(resumable.game, resumable.config, resumable.draft);
 }
 
-const dictLangs = (words) => (words === "fr-es" ? ["fr", "es"] : [words]);
-const dictsReady = (words) => dictLangs(words).every((l) => page.dicts[l]);
+const dictsReady = (words) => words.every((l) => page.dicts[l]);
 
-// Loads the word lists of a word language (the selected one by default);
+// Loads the word lists of the word languages (the selected ones by default);
 // the start button waits for them. Resolves false when a list cannot load.
 async function loadDict(words = page.settings.words) {
-  const selected = () => words === page.settings.words;
+  const selected = () => words.join() === page.settings.words.join();
   $("scrabble-dict-status").hidden = dictsReady(words);
   $("scrabble-dict-error").hidden = true;
   if (selected()) $("scrabble-start-button").disabled = !dictsReady(words);
   try {
-    for (const lang of dictLangs(words))
-      page.dicts[lang] = await loadDictionary(lang);
+    for (const lang of words) page.dicts[lang] = await loadDictionary(lang);
     if (selected()) $("scrabble-start-button").disabled = false;
     return true;
   } catch {

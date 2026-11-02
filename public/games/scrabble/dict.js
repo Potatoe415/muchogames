@@ -38,6 +38,16 @@ export function createDictionary(words) {
   };
 }
 
+// Several word languages in one match: a word counts if any list has it.
+export function combineDictionaries(dicts) {
+  if (dicts.length === 1) return dicts[0];
+  return {
+    size: dicts.reduce((sum, d) => sum + d.size, 0),
+    has: (word) => dicts.some((d) => d.has(word)),
+    hasPrefix: (prefix) => dicts.some((d) => d.hasPrefix(prefix))
+  };
+}
+
 async function fetchDictionary(lang) {
   const url = new URL(`../../data/scrabble/${FILES[lang]}`, import.meta.url);
   const response = await fetch(url);

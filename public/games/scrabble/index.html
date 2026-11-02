@@ -217,26 +217,59 @@
             hidden
           ></button>
 
-          <div class="sc-field" data-id="scrabble-mode-field">
-            <p class="sc-label" data-i18n="mode"></p>
-            <div class="sc-seg">
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="mode"
-                data-value="solo"
-                data-id="scrabble-mode-solo"
-                data-i18n="modeSolo"
-              ></button>
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="mode"
-                data-value="duo"
-                data-id="scrabble-mode-duo"
-                data-i18n="modeDuo"
-              ></button>
+          <div class="sc-field" data-id="scrabble-players-field">
+            <p class="sc-label" data-i18n="players"></p>
+            <div class="sc-slider sc-slider-players">
+              <input
+                type="range"
+                class="sc-range"
+                min="0"
+                max="3"
+                step="1"
+                data-id="scrabble-players-slider"
+                aria-label="Joueurs"
+                data-i18n-aria="players"
+              />
+              <div class="sc-ticks">
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="players"
+                  data-value="1"
+                  data-id="scrabble-players-1"
+                >
+                  1
+                </button>
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="players"
+                  data-value="2"
+                  data-id="scrabble-players-2"
+                >
+                  2
+                </button>
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="players"
+                  data-value="3"
+                  data-id="scrabble-players-3"
+                >
+                  3
+                </button>
+                <button
+                  type="button"
+                  class="sc-tick"
+                  data-setting="players"
+                  data-value="4"
+                  data-id="scrabble-players-4"
+                >
+                  4
+                </button>
+              </div>
             </div>
+            <p class="sc-record" data-id="scrabble-players-caption"></p>
           </div>
 
           <div class="sc-field" data-id="scrabble-words-field">
@@ -275,53 +308,13 @@
               >
                 ES
               </button>
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="words"
-                data-value="fr-es"
-                data-id="scrabble-words-fr-es"
-                data-duo-only
-                aria-label="FR + ES"
-                hidden
-              >
-                FR+ES
-              </button>
             </div>
-          </div>
-
-          <div
-            class="sc-field"
-            data-id="scrabble-p1-lang-field"
-            data-mix-only
-            data-duo-only
-          >
-            <p class="sc-label" data-i18n="p1LangDuo"></p>
-            <div class="sc-seg">
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="p1Lang"
-                data-value="fr"
-                data-id="scrabble-p1-lang-fr"
-                lang="fr"
-                aria-label="Français"
-              >
-                FR
-              </button>
-              <button
-                type="button"
-                class="sc-option"
-                data-setting="p1Lang"
-                data-value="es"
-                data-id="scrabble-p1-lang-es"
-                lang="es"
-                aria-label="Español"
-              >
-                ES
-              </button>
-            </div>
-            <p class="sc-record" data-i18n="mixHelp"></p>
+            <p
+              class="sc-record"
+              data-id="scrabble-words-mix-help"
+              data-i18n="mixHelp"
+              data-mix-only
+            ></p>
           </div>
 
           <div class="sc-field" data-id="scrabble-level-field" data-solo-only>
@@ -383,8 +376,8 @@
             <p class="sc-record" data-id="scrabble-level-record"></p>
           </div>
 
-          <div class="sc-field" data-id="scrabble-names-field" data-duo-only>
-            <p class="sc-label" data-i18n="players"></p>
+          <div class="sc-field" data-id="scrabble-names-field" data-group-only>
+            <p class="sc-label" data-i18n="names"></p>
             <div class="sc-names">
               <input
                 class="sc-input"
@@ -406,6 +399,26 @@
                 aria-label="Joueur 2"
                 data-i18n-aria="player2"
               />
+              <input
+                class="sc-input"
+                type="text"
+                maxlength="16"
+                autocomplete="off"
+                data-id="scrabble-name-3"
+                data-i18n-placeholder="player3"
+                aria-label="Joueur 3"
+                data-i18n-aria="player3"
+              />
+              <input
+                class="sc-input"
+                type="text"
+                maxlength="16"
+                autocomplete="off"
+                data-id="scrabble-name-4"
+                data-i18n-placeholder="player4"
+                aria-label="Joueur 4"
+                data-i18n-aria="player4"
+              />
             </div>
           </div>
 
@@ -421,15 +434,33 @@
 
       <section class="sc-stage" data-id="scrabble-stage" hidden>
         <div class="sc-top" data-id="scrabble-scores">
-          <div class="sc-player" data-id="scrabble-player-1">
+          <div class="sc-player" data-id="scrabble-player-1" data-player-card>
             <span class="sc-player-name" data-name></span>
-            <small class="sc-word-lang" data-word-lang></small>
             <strong class="sc-player-score" data-score>0</strong>
             <span class="sc-peek" data-rack-peek></span>
           </div>
-          <div class="sc-player" data-id="scrabble-player-2">
+          <div class="sc-player" data-id="scrabble-player-2" data-player-card>
             <span class="sc-player-name" data-name></span>
-            <small class="sc-word-lang" data-word-lang></small>
+            <strong class="sc-player-score" data-score>0</strong>
+            <span class="sc-peek" data-rack-peek></span>
+          </div>
+          <div
+            class="sc-player"
+            data-id="scrabble-player-3"
+            data-player-card
+            hidden
+          >
+            <span class="sc-player-name" data-name></span>
+            <strong class="sc-player-score" data-score>0</strong>
+            <span class="sc-peek" data-rack-peek></span>
+          </div>
+          <div
+            class="sc-player"
+            data-id="scrabble-player-4"
+            data-player-card
+            hidden
+          >
+            <span class="sc-player-name" data-name></span>
             <strong class="sc-player-score" data-score>0</strong>
             <span class="sc-peek" data-rack-peek></span>
           </div>

@@ -21,6 +21,25 @@
   gap: 8px;
 }
 
+/* 3 or 4 players: score cards two by two, the bag beside them. */
+.sc-top[data-players="3"],
+.sc-top[data-players="4"] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  gap: 6px;
+}
+
+.sc-top[data-players="3"] .sc-player,
+.sc-top[data-players="4"] .sc-player {
+  min-height: 40px;
+}
+
+.sc-top[data-players="3"] .sc-bag,
+.sc-top[data-players="4"] .sc-bag {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
 .sc-info {
   grid-area: info;
   min-height: 2.6em;

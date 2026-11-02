@@ -109,3 +109,20 @@
   color: var(--level-color);
   font-weight: 900;
 }
+
+/* Players slider: 4 steps, same layout rule (3/4 of the width + a thumb). */
+.sc-slider-players {
+  --level-color: #6fa58c;
+}
+
+.sc-slider-players .sc-range {
+  width: calc(75% + var(--thumb));
+}
+
+.sc-slider-players .sc-ticks {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.sc-slider-players .sc-tick {
+  font-size: 1rem;
+}

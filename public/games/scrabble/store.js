@@ -8,20 +8,20 @@ const SAVED_KEY = "scrabble-saved-game";
 const STATS_KEY = "scrabble-stats";
 const NAME_MAX = 16;
 
+// players: 1 = you against the computer, 2–4 = people on one device.
+export const PLAYER_COUNTS = [1, 2, 3, 4];
+export const NAME_SLOTS = 4;
+
 export const CHOICES = {
-  mode: ["solo", "duo"],
+  players: PLAYER_COUNTS,
   level: LEVEL_IDS,
-  words: WORD_LANGS,
-  p1Lang: ["fr", "es"],
   sound: ["on", "off"],
   hints: ["on", "off"]
 };
 
 const DEFAULTS = {
-  mode: "solo",
+  players: 1,
   level: "medium",
-  words: "fr",
-  p1Lang: "fr",
   sound: "on",
   hints: "off"
 };
@@ -57,30 +57,53 @@ const writeJson = (key, value) =>
 export const cleanName = (name) =>
   typeof name === "string" ? name.trim().slice(0, NAME_MAX) : "";
 
+const cleanNames = (names) =>
+  Array.from({ length: NAME_SLOTS }, (_, p) =>
+    cleanName(Array.isArray(names) ? names[p] : "")
+  );
+
+// Word languages: one or more of WORD_LANGS, in that order. Older values were
+// one string ("fr", "en", "es" or "fr-es").
+function cleanWords(raw) {
+  const list = typeof raw === "string" ? raw.split("-") : raw;
+  if (!Array.isArray(list)) return [];
+  return WORD_LANGS.filter((lang) => list.includes(lang));
+}
+
+// Ticks a word language on or off; the last one stays on.
+export function toggleWord(words, lang) {
+  const next = words.includes(lang)
+    ? words.filter((l) => l !== lang)
+    : [...words, lang];
+  return next.length ? cleanWords(next) : words;
+}
+
+// Older settings and saves had mode "solo" (1 player) or "duo" (2).
+const playersOf = (stored) =>
+  PLAYER_COUNTS.includes(stored.players)
+    ? stored.players
+    : stored.mode === "duo"
+      ? 2
+      : stored.mode === "solo"
+        ? 1
+        : null;
+
 // The word language defaults to the interface language on a first visit.
 export function loadSettings(uiLang) {
   const stored = readJson(SETTINGS_KEY) || {};
-  const defaults = {
-    ...DEFAULTS,
-    words: WORD_LANGS.includes(uiLang) ? uiLang : "fr"
-  };
   const settings = Object.fromEntries(
-    Object.entries(defaults).map(([name, fallback]) => [
+    Object.entries(DEFAULTS).map(([name, fallback]) => [
       name,
       CHOICES[name].includes(stored[name]) ? stored[name] : fallback
     ])
   );
-  const names = Array.isArray(stored.names) ? stored.names : [];
-  settings.names = [cleanName(names[0]), cleanName(names[1])];
-  settings.words = wordsForMode(settings.mode, settings.words, uiLang);
+  settings.players = playersOf(stored) ?? DEFAULTS.players;
+  const words = cleanWords(stored.words);
+  settings.words = words.length
+    ? words
+    : [WORD_LANGS.includes(uiLang) ? uiLang : "fr"];
+  settings.names = cleanNames(stored.names);
   return settings;
-}
-
-// FR + ES is two players on one device. Against the computer, a saved
-// mixed choice falls back to the interface language.
-export function wordsForMode(mode, words, uiLang) {
-  if (mode !== "solo" || words !== "fr-es") return words;
-  return uiLang === "en" || uiLang === "es" ? uiLang : "fr";
 }
 
 export const saveSettings = (settings) => writeJson(SETTINGS_KEY, settings);
@@ -98,25 +121,24 @@ export function loadStats() {
 
 export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 
-// { config: { mode, level, words, p1Lang, names }, game, draft } — game and
-// draft are checked by game.js restoreGame and draft.js draftFits. Saves
-// from before the word-language choice are French.
+// { config: { players, level, words, names }, game, draft } — game and draft
+// are checked by game.js restoreGame and draft.js draftFits. Saves from
+// before the word-language choice are French.
 export function loadSaved() {
   const saved = readJson(SAVED_KEY);
-  const config = saved?.config;
-  if (!config || !saved.game) return null;
-  config.words ??= "fr";
-  config.p1Lang ??= "fr";
+  const raw = saved?.config;
+  if (!raw || !saved.game) return null;
+  const config = {
+    players: playersOf(raw),
+    level: raw.level,
+    words: cleanWords(raw.words ?? "fr"),
+    names: cleanNames(raw.names)
+  };
   const valid =
-    CHOICES.words.includes(config.words) &&
-    CHOICES.p1Lang.includes(config.p1Lang) &&
-    CHOICES.mode.includes(config.mode) &&
+    config.players !== null &&
     CHOICES.level.includes(config.level) &&
-    Array.isArray(config.names) &&
-    config.names.length === 2;
-  if (!valid) return null;
-  config.names = config.names.map(cleanName);
-  return saved;
+    config.words.length > 0;
+  return valid ? { ...saved, config } : null;
 }
 
 export const saveGame = (config, game, draft) =>

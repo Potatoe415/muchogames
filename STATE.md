@@ -2,19 +2,19 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: New game Trivial Quizz (id `trivialpursuit`): 1 to 6 players on one device, classic board (6 wedges, final question in the middle), 2,321 questions from the owner's card photos (FR), also translated to EN and ES; interface FR/EN/ES. Scrabble (FR/EN/ES words, 5 levels) before it. Daily play coins are 20 per Paris day (decision 0055).
-Focus: Owner play-test of Trivial Quizz (FR/EN/ES pots on the question) and Scrabble on a phone; card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
-Level: L1 (Trivial Quizz question languages)
+Status: New game Trivial Quizz (id `trivialpursuit`): 1 to 6 players on one device, classic board (6 wedges, final question in the middle), 2,321 questions from the owner's card photos (FR), also translated to EN and ES; interface FR/EN/ES. Scrabble (1 to 4 players, any mix of FR/EN/ES words, 5 levels) before it. Daily play coins are 20 per Paris day (decision 0055).
+Focus: Owner play-test of Trivial Quizz (FR/EN/ES pots on the question) and Scrabble on a phone (players slider 1–4, word languages ticked together); card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
+Level: L1 (Scrabble players and word languages)
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/trivialpursuit/index.html`, `public/games/trivialpursuit/overlay.css`, `public/games/trivialpursuit/main.js`
+- Relevant_Files: `public/games/scrabble/setup.js`, `public/games/scrabble/store.js`, `public/games/scrabble/game.js`
 - Do_Not_Touch: Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0057, 0056, 0055, 0054
 
 Next:
 - Owner: play Trivial Quizz on a phone (portrait + landscape) and desktop with 1, 2 and 4+ players: move picking, wedges, "Rejouez", hub picker, final question, "Autre question" and the FR/EN/ES pots beside it, reload then "Reprendre". Judge the length: solo classic ~125 questions, quick ~33 (Node sims, 60 % right).
-- Owner: play Scrabble on a phone and desktop: solo is FR/EN/ES only, duo can pick FR+ES, 5 levels, reload then "Reprendre", "Définir".
+- Owner: play Scrabble on a phone and desktop: slider 1 (computer) to 4 players, FR + EN + ES ticked together, 5 levels, reload then "Reprendre", "Définir". Judge the end rule (two scoreless turns per player) at 3–4 players.
 - Owner: on a phone, pick a back in Bridge and in each Coinchapp game, start a match, check the hidden hands and the Solitaire stock show it.
 - Owner: on the TV browser open `https://www.muchogames.win/games/millionaire/index.html?tv=1` once. Check: whole screen, remote arrows/OK/Back, fullscreen on "Commencer", no screen saver mid-match.
 - Owner phone check of resume in every game, then Memory and Yatzy online on two phones — see `docs/BACKLOG.md` Now.
@@ -31,9 +31,9 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-02 Scrabble: players slider 1–4 (1 = against the computer, 2–4 on one device, 2×2 score cards) replaces the mode buttons; FR/EN/ES word buttons tick together, a word counts if any ticked list has it (computer and hint too; bag: with ES the 102-tile mix with Ñ, FR+EN the French bag). Per-player FR+ES and its player-1 picker removed. Old settings/saves migrate. Node sims 2–4 players × 4 language mixes; browser-checked 390×760 and 800×370.
 - 2026-11-02 Trivial Quizz: three pots (FR/EN/ES) on the question card, left of "Autre question", switch the question and the interface. Browser-checked on desktop and at 390×760.
 - 2026-11-02 Trivial Quizz questions in EN and ES (`questions_en.json`, `questions_es.json`, same indexes as FR; the language switch swaps the bank, saves keep working). "Questions are in French only" note removed.
-- 2026-11-02 Scrabble: FR+ES hidden against the computer (a saved solo mixed choice falls back to the interface language); start-screen languages show as FR/EN/ES.
 - 2026-11-02 Trivial Quizz quick game ("Rapide" on the start screen): any right answer wins the wedge of its category; final question unchanged. Old saves load as classic. Node sims of both modes; browser-checked.
 - 2026-11-02 Trivial Pursuit renamed Trivial Quizz (title only; id, folder and storage keys stay `trivialpursuit`).
 - 2026-11-02 Trivial Quizz: SVG board (42-cell ring, 6 spokes, hub), die + exact-count moves (tap / Tab + arrows), self-judged answers, wedges, hub picker, final question, "Autre question", asked questions remembered across matches, save/resume. Bank: per-slot Tesseract OCR of 950 card photos, question/answer sides paired by photo position, every card proofread. 200 Node sims (1–6 players) end and every save restores; browser-checked at 390×760, 800×370, 320×640.

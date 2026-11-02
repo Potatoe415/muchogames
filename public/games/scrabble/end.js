@@ -11,7 +11,7 @@ function title(winner, { solo, names, t }) {
 }
 
 function lines(game, { names, t }) {
-  return [0, 1].flatMap((p) => {
+  return game.scores.flatMap((_, p) => {
     const adjust = game.over.adjust[p];
     const signed = adjust > 0 ? `+${adjust}` : String(adjust);
     const score = game.scores[p];
@@ -26,7 +26,7 @@ function lines(game, { names, t }) {
   });
 }
 
-// ctx: { solo, names: [a, b], t }
+// ctx: { solo, names: one per player, t }
 export function renderEnd(game, ctx) {
   if (!game?.over) return;
   const { winner, reason } = game.over;
