@@ -109,6 +109,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 4px;
+  margin: 0 0 16px;
   font-size: clamp(14px, 4.4vw, 18px);
 }
 
@@ -124,13 +125,6 @@ body {
 
 .sc-logo .sc-tile:nth-child(even) {
   transform: rotate(3deg) translateY(2px);
-}
-
-.sc-title {
-  margin: 12px 0 16px;
-  font-size: clamp(1.7rem, 7vw, 2.1rem);
-  font-weight: 800;
-  letter-spacing: 0.02em;
 }
 
 .sc-dict {

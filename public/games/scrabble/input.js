@@ -1,9 +1,7 @@
 // Pointer input on the board and the rack. A press that moves less than 8 px
-// is a tap; beyond that a ghost tile follows the finger (drawn above it on
-// touch so the finger never hides it) and is dropped on a cell or the rack.
-// Keyboard activation arrives as a click with detail 0.
+// is a tap; beyond that a ghost tile stays under the finger and is dropped
+// on a cell or the rack. Keyboard activation arrives as a click with detail 0.
 const DRAG_PX = 8;
-const TOUCH_LIFT_PX = 44;
 
 function rackIndexAt(rackHost, x) {
   const slots = [...rackHost.querySelectorAll("[data-slot]")];
@@ -64,7 +62,6 @@ export function bindInput(hosts, handlers) {
       id: event.pointerId,
       ghost: null
     };
-    press.lift = event.pointerType === "touch" ? TOUCH_LIFT_PX : 0;
     try {
       hosts.stage.setPointerCapture(event.pointerId);
     } catch {
@@ -73,7 +70,7 @@ export function bindInput(hosts, handlers) {
   }
 
   function moveGhost(event) {
-    press.ghost.style.transform = `translate(${event.clientX}px, ${event.clientY - press.lift}px)`;
+    press.ghost.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
   }
 
   function onMove(event) {
@@ -91,7 +88,7 @@ export function bindInput(hosts, handlers) {
   function finishDrag(event) {
     press.ghost.remove();
     press.el.classList.remove("is-lifted");
-    const target = dropTarget(hosts, event.clientX, event.clientY - press.lift);
+    const target = dropTarget(hosts, event.clientX, event.clientY);
     if (target) handlers.onDrop(press.k, target);
   }
 
