@@ -57,7 +57,8 @@ function paintPlayers(game, { names, junior }, thinking) {
 // Junior racks are face up: the computer's letters show under its name.
 const rackText = (rack) => rack.map((l) => (l === "?" ? "☆" : l)).join(" ");
 
-// s: play state; ctx: { game, names, t, solo, junior, canAct, hints }
+// s: play state; ctx: { game, names, t, solo, junior, canAct, hints,
+//   hintsLeft }
 export function renderHud(s, ctx) {
   const { game, t, canAct } = ctx;
   paintPlayers(game, ctx, s.thinking);
@@ -76,6 +77,11 @@ export function renderHud(s, ctx) {
   define.setAttribute("aria-pressed", String(s.lookup));
   ["shuffle", "recall", "hint", "pass"].forEach((name) => {
     $(`scrabble-${name}-button`).disabled = !canAct;
+  });
+  const hint = $("scrabble-hint-button");
+  if (ctx.hintsLeft <= 0) hint.disabled = true;
+  hint.querySelector("[data-hint-label]").textContent = t("hintLeft", {
+    n: Math.max(0, ctx.hintsLeft)
   });
   const play = $("scrabble-play-button");
   play.disabled = !canAct || s.preview.tone !== "ok";

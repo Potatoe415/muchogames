@@ -1,7 +1,7 @@
 // The match on screen: live preview, play / swap / pass / hint, the
 // computer's turns in solo and the "pass the device" screen between
 // players. Editing the draft lives in edit.js.
-import { bestMove, chooseMove } from "./ai.js";
+import { chooseMove, hintMoves } from "./ai.js";
 import { createBoardView } from "./board-view.js";
 import { define } from "./define.js";
 import { combineDictionaries } from "./dict.js";
@@ -24,6 +24,7 @@ import { analyzeMove, invalidWords, wordsAt } from "./rules.js";
 import { JUNIOR } from "./tiles.js";
 
 const BOT_DELAY_MS = 750;
+const HINTS_PER_TURN = 3;
 
 function computePreview(game, draft, dict) {
   if (!draft.length) return { tone: "idle" };
@@ -58,6 +59,9 @@ export function createPlay(opts) {
     hidden: false,
     lookup: false,
     freeSwapUsed: false,
+    // This turn's hints: the list (computed on the first tap, again after
+    // the rack changes), the next one to show, how many were shown.
+    hints: { list: null, next: 0, used: 0 },
     notice: "",
     preview: { tone: "idle" },
     timer: 0
@@ -88,7 +92,7 @@ export function createPlay(opts) {
     const names = opts.names();
     const hints = opts.hints() || junior;
     const ctx = { game, names, t, solo, junior, hints };
-    renderHud(s, { ...ctx, canAct: canAct() });
+    renderHud(s, { ...ctx, canAct: canAct(), hintsLeft: hintsLeft() });
   }
 
   function changed() {
@@ -112,6 +116,7 @@ export function createPlay(opts) {
   function afterMove() {
     Object.assign(s, { draft: [], cursor: null, selected: -1 });
     s.freeSwapUsed = false;
+    s.hints = { list: null, next: 0, used: 0 };
     if (game.over) {
       refresh();
       return opts.onEnd(game);
@@ -167,10 +172,24 @@ export function createPlay(opts) {
     });
   }
 
+  // Hints left this turn: fewer when the rack has fewer distinct words.
+  function hintsLeft() {
+    const { list, next, used } = s.hints;
+    const left = HINTS_PER_TURN - used;
+    return list ? Math.min(left, list.length - next) : left;
+  }
+
+  // Each tap lays out the next best word, up to HINTS_PER_TURN per turn.
   function hint() {
-    if (!canAct()) return;
-    const move = bestMove(game.board, myRack(), dict, junior);
-    if (move) return edit.layOut(move.tiles);
+    const h = s.hints;
+    if (!canAct() || hintsLeft() <= 0) return;
+    h.list ??= hintMoves(game.board, myRack(), dict, junior, HINTS_PER_TURN);
+    const move = h.list[h.next];
+    if (move) {
+      h.next += 1;
+      h.used += 1;
+      return edit.layOut(move.tiles);
+    }
     s.draft = [];
     s.notice = "noMove";
     refresh();
@@ -191,6 +210,7 @@ export function createPlay(opts) {
     if (choice.keepTurn) {
       swapOne(game, choice.letters[0], juniorDraw);
       s.freeSwapUsed = true;
+      Object.assign(s.hints, { list: null, next: 0 });
       return changed();
     }
     if (choice.kind === "swap") swapTiles(game, choice.letters, juniorDraw);

@@ -37,7 +37,7 @@ export const STRINGS = {
   bag: "Sac",
   shuffle: "Mélanger",
   recall: "Rappeler",
-  hint: "Indice",
+  hintLeft: "Indice ({n})",
   pass: "Passer",
   define: "Définir",
   lookupHint: "Touchez un mot du plateau pour voir sa définition.",

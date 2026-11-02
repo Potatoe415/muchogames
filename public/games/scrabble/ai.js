@@ -107,14 +107,21 @@ function movesFor(board, rack, dict, junior) {
   return junior ? moves.filter((m) => isKidFriendly(m.word)) : moves;
 }
 
-// The best-scoring move for a hint, or null. Junior: main word ≤ 5 letters
-// if possible, no rude word.
-export function bestMove(board, rack, dict, junior = false) {
+// Up to `count` hints, best score first, one per main word (the same word
+// elsewhere is not a new idea). Junior: main word ≤ 5 letters if possible,
+// no rude word.
+export function hintMoves(board, rack, dict, junior = false, count = 3) {
   const maxLength = junior ? JUNIOR_HINT_MAX : Infinity;
   const all = movesFor(board, rack, dict, junior);
   const short = all.filter((m) => m.word.length <= maxLength);
-  const moves = short.length ? short : all;
-  return moves.length
-    ? moves.reduce((a, b) => (b.score > a.score ? b : a))
-    : null;
+  const moves = (short.length ? short : all).sort((a, b) => b.score - a.score);
+  const words = new Set();
+  const picks = [];
+  for (const move of moves) {
+    if (picks.length === count) break;
+    if (words.has(move.word)) continue;
+    words.add(move.word);
+    picks.push(move);
+  }
+  return picks;
 }

@@ -38,7 +38,7 @@ export const STRINGS = {
   bag: "Bolsa",
   shuffle: "Mezclar",
   recall: "Recoger",
-  hint: "Pista",
+  hintLeft: "Pista ({n})",
   pass: "Pasar",
   define: "Definir",
   lookupHint: "Toca una palabra del tablero para ver su definición.",
