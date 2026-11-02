@@ -1,0 +1,160 @@
+/* Start screen: fruit parade, title, resume / play / how-to buttons, best
+   score. The "how to play" dialog too. */
+.fm-start {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.fm-parade {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.2em;
+  margin: 0 0 0.4em !important;
+}
+
+.fm-parade canvas {
+  width: 2.6em;
+  height: 2.6em;
+}
+
+.fm-parade canvas:nth-child(3) {
+  width: 3.4em;
+  height: 3.4em;
+}
+
+.fm-logo {
+  margin: 0 0 0.3em;
+  font-size: 2em;
+  font-weight: 900;
+  color: #b4572f;
+  letter-spacing: 0.02em;
+}
+
+.fm-pitch {
+  font-weight: 700;
+}
+
+.fm-resume {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1em;
+  background: #e2559a;
+  box-shadow: 0 0.25em 0 #a8306d;
+}
+
+.fm-resume-info {
+  font-size: 0.75em;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.fm-howto-card {
+  width: min(100%, 24em);
+}
+
+.fm-howto-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  min-height: 7em;
+  margin-bottom: 0.6em;
+  padding: 0.6em;
+  border-radius: 1em;
+  background: #cfe7c8;
+}
+
+.fm-howto-fruit {
+  width: 3.4em;
+  height: 3.4em;
+}
+
+.fm-howto-art.is-row .fm-howto-fruit {
+  width: 1.9em;
+  height: 1.9em;
+}
+
+.fm-howto-glyph {
+  font-size: 2em;
+  font-weight: 900;
+  color: #6c3a73;
+}
+
+.fm-howto-text {
+  min-height: 4.2em;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.fm-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.fm-dot {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background: #f6d9b2;
+}
+
+.fm-dot.is-on {
+  background: #f08c3a;
+}
+
+.fm-howto-nav {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.fm-howto-nav .fm-button {
+  width: 100%;
+  margin: 0;
+}
+
+.fm-button-icon {
+  width: 2.6em !important;
+  min-height: 2.3em;
+  padding: 0.2em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .fm-parade canvas,
+  .fm-parade canvas:nth-child(3) {
+    width: 2em;
+    height: 2em;
+  }
+
+  .fm-logo {
+    font-size: 1.5em;
+  }
+
+  .fm-howto-art {
+    min-height: 4em;
+    margin-bottom: 0.3em;
+    padding: 0.3em;
+  }
+
+  .fm-howto-fruit {
+    width: 2.4em;
+    height: 2.4em;
+  }
+
+  .fm-howto-text {
+    min-height: 2.8em;
+    margin-bottom: 0.3em !important;
+  }
+}

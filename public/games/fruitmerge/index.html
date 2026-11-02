@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#cfe7c8" />
+    <title>Fusion de fruits</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="start.css" />
+    <link rel="stylesheet" href="stage.css" />
+    <script src="/shared/js/tv-remote.js"></script>
+  </head>
+  <body data-match-saved>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          data-tv-back
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+      </div>
+      <div class="nav-center">
+        <h1 class="nav-title" data-i18n="title">Fusion de fruits</h1>
+      </div>
+      <div class="nav-side nav-right">
+        <button
+          class="options-button"
+          type="button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="fruitmerge-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="fm-chips">
+              <button
+                type="button"
+                class="fm-chip"
+                data-lang="fr"
+                data-id="fruitmerge-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="fm-chip"
+                data-lang="en"
+                data-id="fruitmerge-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="fm-chip"
+                data-lang="es"
+                data-id="fruitmerge-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="fruitmerge-options-sound">
+            <p class="options-panel-section-title" data-i18n="sound">Son</p>
+            <button
+              type="button"
+              class="fm-chip"
+              data-id="fruitmerge-sound-toggle"
+              aria-pressed="true"
+            ></button>
+          </div>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
+            <div
+              class="rules-modal-content"
+              data-id="fruitmerge-rules-content"
+            ></div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <main class="fm-app" data-id="fruitmerge-app">
+      <section
+        class="fm-start"
+        data-id="fruitmerge-start-screen"
+        data-tv-screen
+      >
+        <div class="fm-card">
+          <p class="fm-parade" aria-hidden="true">
+            <canvas data-parade></canvas><canvas data-parade></canvas
+            ><canvas data-parade></canvas><canvas data-parade></canvas
+            ><canvas data-parade></canvas>
+          </p>
+          <h2 class="fm-logo" data-i18n="title">Fusion de fruits</h2>
+          <p class="fm-pitch" data-i18n="pitch"></p>
+          <button
+            type="button"
+            class="fm-button fm-resume"
+            data-id="fruitmerge-resume-button"
+            data-tv-focus
+            hidden
+          >
+            <span data-i18n="resume">Reprendre</span>
+            <span class="fm-resume-info" data-resume-info></span>
+          </button>
+          <button
+            type="button"
+            class="fm-button"
+            data-id="fruitmerge-play-button"
+            data-tv-focus
+            data-i18n="play"
+          >
+            Jouer
+          </button>
+          <button
+            type="button"
+            class="fm-button fm-button-soft"
+            data-id="fruitmerge-howto-button"
+            data-i18n="howto"
+          >
+            Comment jouer
+          </button>
+          <p class="fm-best" data-id="fruitmerge-start-best"></p>
+        </div>
+      </section>
+
+      <section
+        class="fm-stage"
+        data-id="fruitmerge-stage"
+        data-tv-screen
+        hidden
+      >
+        <div class="fm-tools" data-id="fruitmerge-tools">
+          <button
+            type="button"
+            class="fm-tool"
+            data-id="fruitmerge-sweep-button"
+          >
+            <span aria-hidden="true">🧹</span>
+            <span class="fm-count" data-count></span>
+          </button>
+          <button
+            type="button"
+            class="fm-tool"
+            data-id="fruitmerge-undo-button"
+          >
+            <span aria-hidden="true">↶</span>
+            <span class="fm-count" data-count></span>
+          </button>
+          <div class="fm-score" data-id="fruitmerge-score">
+            <span class="fm-score-label" data-i18n="score">Score</span>
+            <span class="fm-score-value" data-id="fruitmerge-score-value"
+              >0</span
+            >
+          </div>
+          <div
+            class="fm-next"
+            data-id="fruitmerge-next"
+            role="group"
+            data-i18n-aria="nextFruits"
+          >
+            <canvas data-id="fruitmerge-next-1" role="img"></canvas>
+            <canvas data-id="fruitmerge-next-2" role="img"></canvas>
+            <canvas data-id="fruitmerge-next-3" role="img"></canvas>
+          </div>
+          <button
+            type="button"
+            class="fm-tool fm-tool-pause"
+            data-id="fruitmerge-pause-button"
+            data-tv-back
+            aria-label="Pause"
+            data-i18n-aria="pause"
+          >
+            ⏸
+          </button>
+        </div>
+
+        <div class="fm-board" data-id="fruitmerge-board">
+          <canvas
+            class="fm-canvas"
+            data-id="fruitmerge-canvas"
+            tabindex="0"
+            data-tv-focus
+            data-tv-keys="left right down"
+            role="img"
+            data-i18n-aria="canvas"
+          ></canvas>
+          <p
+            class="fm-danger"
+            data-id="fruitmerge-danger"
+            data-i18n="danger"
+            role="status"
+            hidden
+          ></p>
+        </div>
+
+        <div
+          class="fm-evolution"
+          data-id="fruitmerge-evolution"
+          role="group"
+          data-i18n-aria="evolution"
+        ></div>
+      </section>
+
+      <div
+        class="fm-overlay"
+        data-id="fruitmerge-paused"
+        data-tv-overlay
+        hidden
+      >
+        <div class="fm-card" role="dialog" aria-modal="true">
+          <h2 class="fm-overlay-title" data-i18n="paused">Pause</h2>
+          <button
+            type="button"
+            class="fm-button"
+            data-id="fruitmerge-continue-button"
+            data-tv-focus
+            data-tv-back
+            data-i18n="continue"
+          ></button>
+          <button
+            type="button"
+            class="fm-button fm-button-soft"
+            data-id="fruitmerge-paused-howto-button"
+            data-i18n="howto"
+          ></button>
+          <button
+            type="button"
+            class="fm-button fm-button-soft"
+            data-id="fruitmerge-paused-menu-button"
+            data-match-quit
+            data-i18n="menu"
+          ></button>
+        </div>
+      </div>
+
+      <div class="fm-overlay" data-id="fruitmerge-end" data-tv-overlay hidden>
+        <div class="fm-card fm-end-card" role="dialog" aria-modal="true">
+          <h2 class="fm-overlay-title" data-i18n="endTitle"></h2>
+          <canvas
+            class="fm-end-fruit"
+            data-id="fruitmerge-end-fruit"
+            aria-hidden="true"
+          ></canvas>
+          <p class="fm-score-line" data-id="fruitmerge-end-score"></p>
+          <p data-id="fruitmerge-end-top"></p>
+          <p class="fm-best" data-id="fruitmerge-end-best"></p>
+          <button
+            type="button"
+            class="fm-button"
+            data-id="fruitmerge-replay-button"
+            data-tv-focus
+            data-i18n="replay"
+          ></button>
+          <button
+            type="button"
+            class="fm-button fm-button-soft"
+            data-id="fruitmerge-end-menu-button"
+            data-tv-back
+            data-i18n="menu"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        class="fm-overlay fm-howto"
+        data-id="fruitmerge-howto"
+        data-tv-overlay
+        hidden
+      >
+        <div
+          class="fm-card fm-howto-card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="fruitmerge-howto-title"
+        >
+          <h2
+            class="fm-overlay-title"
+            id="fruitmerge-howto-title"
+            data-i18n="howto"
+          ></h2>
+          <div class="fm-howto-art" data-id="fruitmerge-howto-art"></div>
+          <p
+            class="fm-howto-text"
+            data-id="fruitmerge-howto-text"
+            aria-live="polite"
+          ></p>
+          <div class="fm-dots" data-id="fruitmerge-howto-dots" role="img"></div>
+          <div class="fm-howto-nav">
+            <button
+              type="button"
+              class="fm-button fm-button-icon"
+              data-id="fruitmerge-howto-prev"
+              aria-label="Page précédente"
+              data-i18n-aria="prev"
+            >
+              ⇤
+            </button>
+            <button
+              type="button"
+              class="fm-button"
+              data-id="fruitmerge-howto-ok"
+              data-tv-back
+              data-i18n="ok"
+            >
+              OK
+            </button>
+            <button
+              type="button"
+              class="fm-button fm-button-icon"
+              data-id="fruitmerge-howto-next"
+              data-tv-focus
+              aria-label="Page suivante"
+              data-i18n-aria="next"
+            >
+              ⇥
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -21,6 +21,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] **User**: play-test Trivial Quizz (`/games/trivialpursuit/`) on phone (portrait + landscape), tablet and desktop: classic, quick and wheel ("Roue de la fortune": swipe the wheel, or the button; does a weak swipe feel right?) games, 1 to 6 players, move picking (tap / Tab + arrows + Enter), wedge, "Rejouez" space, hub category picker, final question, "Autre question" and the FR/EN/ES pots beside it, reload mid-game then "Reprendre". Solo is ~125 questions in classic, ~33 in quick: judge the length.
 - [ ] **User**: proof-read the Trivial Quizz EN and ES questions (`public/data/trivialpursuit/questions_en.json`, `questions_es.json`): AI translation of the FR bank; one flagged answer fixed (water polo), others unchecked.
 - [ ] Optional: Trivial Quizz dropped 16 cards (~96 questions) whose answer side could not be matched; their photos are in `tmp-resources/cards/`.
+- [ ] **User**: play-test Fusion de fruits (`/games/fruitmerge/`) on phone (portrait + landscape), tablet, desktop and the TV (`?tv=1` once): drop feel and speed, fruit sizes, broom (2/match, blueberries + strawberries) and undo (3/match) counts, loss after 3 s above the line, the 8 how-to pages, reload mid-game then "Reprendre". Judge the procedurally drawn fruits.
 - [ ] **User**: play-test Échecs (`/games/chess/`) on phone (iPhone + Android), tablet and desktop: the 4 levels, two players, castling, promotion picker, undo/hint, reload mid-game then "Reprendre".
 - [ ] **User**: play-test Pipe Dream (`/games/pipedream/`), JezzBall (`/games/jezzball/`), SkiFree (`/games/skifree/`) and Chip's Challenge (`/games/chipschallenge/`, the 149 original levels on Lexy's Labyrinth engine, Lynx rules, 147/149 proven winnable) on phone (portrait + landscape) and desktop.
 - [ ] `loop.js` and `storage.js` are now verbatim copies in 4 Entertainment Pack games: extract to `public/shared/` the first time one copy has to change.
@@ -55,7 +56,8 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
 ## Next
-- [ ] **User**: bring the existing games to the TV rule one by one (`docs/PLATFORM_RULES.md` section 6 "TV", decision 0059). Millionaire already has it.
+- [ ] **User**: bring the existing games to the TV rule one by one (`docs/PLATFORM_RULES.md` section 6 "TV", decision 0059). Millionaire already has it; use `public/shared/js/tv-remote.js`.
+- [ ] Millionaire: replace `tv-nav.js` and the detection / wake-lock half of `tv.js` with the shared `tv-remote.js` (keep its zoomed layout), then re-check on the Bravia.
 - [ ] Pyramide: 55 broken accent characters (U+FFFD) already committed in `i18n.js` and 9 in `app.js` (rules show "R�gles"); retype the FR/ES copy. Pre-existing, found 2026-10-29.
 - [ ] Split `blackstories.js` (414 lines since the save was added).
 - [ ] Jeu de dames online mode on `online-room.js` (needs `checkers` in `ROOM_GAMES`, `api/_lib/rooms.js` — L2).

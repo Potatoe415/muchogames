@@ -70,3 +70,6 @@ public/games/scrabble/**/*.md
 !public/games/trivialpursuit/
 !public/games/trivialpursuit/**
 public/games/trivialpursuit/**/*.md
+!public/games/fruitmerge/
+!public/games/fruitmerge/**
+public/games/fruitmerge/**/*.md

@@ -181,9 +181,11 @@ existing games are brought to it one by one by the owner (decision 0059).
 - TV behaviour (remote focus, fullscreen, wake lock) turns on from `?tv=1`
   (`?tv=0` off, remembered per game) or a TV user agent. The layout
   itself never depends on it: it follows the screen size.
-- Millionaire (`public/games/millionaire/tv.js`, `tv-nav.js`) is the
-  reference. The second game that needs this code moves it to
-  `public/shared/js/` instead of copying it.
+- New games load `/shared/js/tv-remote.js` (`window.MuchogamesTv`, see
+  `shared/CONTRACT.md`): detection, spatial focus, Back, fullscreen and
+  wake lock, driven by `data-tv-*` attributes. Millionaire
+  (`public/games/millionaire/tv.js`, `tv-nav.js`) still runs its own
+  older copy plus a zoomed 1920×1080 layout.
 - Not statically checkable: verify in the browser at 960×540, 1920×1080
   and 3840×2160, keyboard arrows only, then on a real TV.
 

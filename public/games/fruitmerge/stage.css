@@ -1,0 +1,197 @@
+/* Play stage. Portrait: tools on top, board, fruit order below.
+   Landscape: tools left, board centre, fruit order right. */
+.fm-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 0.5em;
+  padding: 0.5em max(0.6em, env(safe-area-inset-right))
+    max(0.6em, env(safe-area-inset-bottom))
+    max(0.6em, env(safe-area-inset-left));
+}
+
+.fm-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  min-width: 0;
+}
+
+.fm-tool {
+  position: relative;
+  flex: 0 0 auto;
+  width: clamp(44px, 7vmin, 180px);
+  height: clamp(44px, 7vmin, 180px);
+  border: none;
+  border-radius: 50%;
+  background: #e2559a;
+  color: #ffffff;
+  font: inherit;
+  font-size: clamp(20px, 3.4vmin, 90px);
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 0.12em 0 #a8306d;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.fm-tool:disabled {
+  background: #c9a9bb;
+  box-shadow: 0 0.12em 0 #9c8090;
+  cursor: default;
+}
+
+.fm-tool-pause {
+  margin-left: auto;
+  background: #9b5aa3;
+  box-shadow: 0 0.12em 0 #6c3a73;
+}
+
+.fm-count {
+  position: absolute;
+  top: -0.2em;
+  right: -0.2em;
+  min-width: 1.25em;
+  padding: 0.1em 0.2em;
+  border-radius: 1em;
+  background: #ffffff;
+  color: #a8306d;
+  font-size: 0.45em;
+  font-weight: 900;
+}
+
+.fm-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 2.5em;
+  line-height: 1.1;
+}
+
+.fm-score-label {
+  font-size: 0.7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.fm-score-value {
+  font-size: 1.4em;
+  font-weight: 900;
+  color: #6c3a73;
+}
+
+.fm-next {
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+  padding: 0.15em 0.5em;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 2em;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.fm-next canvas {
+  width: clamp(22px, 4.6vmin, 120px);
+  height: clamp(22px, 4.6vmin, 120px);
+}
+
+.fm-next canvas:first-child {
+  width: clamp(26px, 5.6vmin, 150px);
+  height: clamp(26px, 5.6vmin, 150px);
+}
+
+.fm-board {
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.fm-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  touch-action: none;
+  overscroll-behavior: none;
+  cursor: crosshair;
+}
+
+.fm-danger {
+  position: absolute;
+  top: 0.4em;
+  left: 50%;
+  z-index: 1;
+  margin: 0;
+  padding: 0.2em 0.8em;
+  border-radius: 1em;
+  background: #e2574c;
+  color: #ffffff;
+  font-weight: 900;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  pointer-events: none;
+  animation: fm-blink 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes fm-blink {
+  to {
+    opacity: 0.55;
+  }
+}
+
+.fm-evolution {
+  display: flex;
+  justify-content: center;
+  gap: 0.1em;
+  padding: 0.2em 0.5em;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 2em;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.fm-evolution-fruit {
+  width: min(7.4vw, 5dvh);
+  height: min(7.4vw, 5dvh);
+}
+
+@media (orientation: landscape) {
+  .fm-stage {
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr);
+  }
+
+  .fm-tools {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .fm-tool-pause {
+    margin-left: 0;
+  }
+
+  .fm-evolution {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    border-radius: 1.2em;
+  }
+
+  .fm-evolution-fruit {
+    width: min(11dvh, 5vw);
+    height: min(11dvh, 5vw);
+  }
+}
+
+/* Big screens: 3% overscan margin. */
+@media (min-width: 900px) and (min-height: 500px) {
+  .fm-stage,
+  .fm-start {
+    padding: 2dvh 3vw 3dvh;
+  }
+}

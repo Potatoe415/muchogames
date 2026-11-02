@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="melon" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#86de8c" />
+      <stop offset="0.5" stop-color="#3fae4b" />
+      <stop offset="1" stop-color="#1d742a" />
+    </radialGradient>
+    <radialGradient id="pine" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff1a2" />
+      <stop offset="0.5" stop-color="#ffd23a" />
+      <stop offset="1" stop-color="#dea000" />
+    </radialGradient>
+    <radialGradient id="apple" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ff9286" />
+      <stop offset="0.5" stop-color="#f2403f" />
+      <stop offset="1" stop-color="#b51d24" />
+    </radialGradient>
+    <radialGradient id="orange" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffcb7d" />
+      <stop offset="0.5" stop-color="#ff981f" />
+      <stop offset="1" stop-color="#dc6a00" />
+    </radialGradient>
+    <radialGradient id="plum" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#d39ce9" />
+      <stop offset="0.5" stop-color="#9a4cba" />
+      <stop offset="1" stop-color="#652785" />
+    </radialGradient>
+    <radialGradient id="berry" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#a9c6ff" />
+      <stop offset="0.5" stop-color="#5b8def" />
+      <stop offset="1" stop-color="#2f5cc0" />
+    </radialGradient>
+    <radialGradient id="straw" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ff9ba5" />
+      <stop offset="0.5" stop-color="#ff4b5c" />
+      <stop offset="1" stop-color="#c62837" />
+    </radialGradient>
+    <pattern id="cloth" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#fdefc4" />
+      <rect width="12" height="24" fill="#f0c478" fill-opacity="0.28" />
+      <rect width="24" height="12" fill="#f0c478" fill-opacity="0.28" />
+    </pattern>
+    <g id="face">
+      <ellipse cx="-12" cy="0" rx="3.2" ry="4.2" fill="#3b2a2f" />
+      <ellipse cx="12" cy="0" rx="3.2" ry="4.2" fill="#3b2a2f" />
+      <path d="M-6 5 Q0 11 6 5" fill="none" stroke="#3b2a2f" stroke-width="2.4" stroke-linecap="round" />
+      <ellipse cx="-20" cy="8" rx="4.5" ry="3" fill="#ff788c" fill-opacity="0.45" />
+      <ellipse cx="20" cy="8" rx="4.5" ry="3" fill="#ff788c" fill-opacity="0.45" />
+    </g>
+  </defs>
+  <rect width="400" height="400" fill="#cfe7c8" />
+  <rect x="62" y="88" width="276" height="270" fill="url(#cloth)" />
+  <line x1="62" y1="124" x2="338" y2="124" stroke="#e2574c" stroke-width="4" stroke-dasharray="12 8" />
+  <rect x="48" y="80" width="16" height="292" rx="7" fill="#c8643b" />
+  <rect x="336" y="80" width="16" height="292" rx="7" fill="#c8643b" />
+  <rect x="48" y="356" width="304" height="16" rx="6" fill="#c8643b" />
+
+  <g transform="translate(264 290)">
+    <circle r="66" fill="url(#melon)" />
+    <path d="M-40 -52 q8 52 0 104 M-12 -64 q8 64 0 128 M16 -64 q8 64 0 128 M44 -50 q8 50 0 100" fill="none" stroke="#1d742a" stroke-width="9" stroke-linecap="round" />
+    <use href="#face" transform="scale(1.7)" />
+  </g>
+  <g transform="translate(130 304)">
+    <circle r="52" fill="url(#pine)" />
+    <path d="M-50 -20 L20 50 M-40 -40 L40 40 M-20 -50 L50 20 M50 -20 L-20 50 M40 -40 L-40 40 M20 -50 L-50 20" stroke="#dea000" stroke-width="2.5" />
+    <path d="M0 -48 q-18 -24 -10 -44 q8 20 10 44 q4 -26 16 -40 q-2 24 -16 40" fill="#5cbf3a" stroke="#3a8f24" stroke-width="2" />
+    <use href="#face" transform="scale(1.35)" />
+  </g>
+  <g transform="translate(176 202)">
+    <circle r="44" fill="url(#apple)" />
+    <path d="M0 -40 q2 -14 8 -20" stroke="#8a5a2b" stroke-width="5" fill="none" stroke-linecap="round" />
+    <ellipse cx="18" cy="-50" rx="12" ry="6" transform="rotate(-25 18 -50)" fill="#5cbf3a" stroke="#3a8f24" stroke-width="2" />
+    <use href="#face" transform="scale(1.15)" />
+  </g>
+  <g transform="translate(276 186)">
+    <circle r="36" fill="url(#orange)" />
+    <use href="#face" transform="scale(0.95)" />
+  </g>
+  <g transform="translate(98 220)">
+    <circle r="32" fill="url(#plum)" />
+    <use href="#face" transform="scale(0.85)" />
+  </g>
+  <g transform="translate(228 132)">
+    <circle r="17" fill="url(#straw)" />
+    <path d="M-10 -14 L0 -8 L10 -14 L4 -18 L0 -22 L-4 -18 Z" fill="#5cbf3a" />
+    <use href="#face" transform="scale(0.45)" />
+  </g>
+  <g transform="translate(200 60)">
+    <circle r="22" fill="url(#berry)" />
+    <path d="M0 -26 l3 6 l6 1 l-4 4 l1 6 l-6 -3 l-6 3 l1 -6 l-4 -4 l6 -1 z" fill="#2f5cc0" />
+    <use href="#face" transform="scale(0.6)" />
+  </g>
+  <line x1="200" y1="88" x2="200" y2="114" stroke="#465aaa" stroke-width="4" stroke-dasharray="2 7" stroke-linecap="round" />
+</svg>

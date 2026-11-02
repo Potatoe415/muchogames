@@ -401,5 +401,16 @@
     "resumable": false,
     "players": [2, 10],
     "duration": 45
+  },
+  {
+    "id": "fruitmerge",
+    "title": "Fusion de fruits",
+    "kind": "custom",
+    "tags": ["arcade", "reflexion"],
+    "added": "2026-11-02",
+    "launch": "/games/fruitmerge/index.html",
+    "thumbnail": "/games/fruitmerge/assets/thumbnail.svg",
+    "players": [1, 1],
+    "duration": 10
   }
 ]

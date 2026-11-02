@@ -2,24 +2,25 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Hub reorganised (decision 0058): Home view with rows of small square tiles (Récents, Favoris, À la une, Parties rapides, one row per type) and a "Tous les jeux" library (sticky pills, instant search, compact list with ★), view and filters in the URL. `category` replaced by `tags`; every game now has `tags`, `players`, `duration` (checked by `npm run check`).
-Focus: Owner phone check of the new hub and of the estimated `players` / `duration`; then play-tests of Trivial Quizz, Scrabble, card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
-Level: L2 (hub-wide navigation + catalog fields)
+Status: New game Fusion de fruits (`fruitmerge`, Suika-style merge puzzle) in the catalog, first game built to the TV rule (decision 0059) with the new shared `public/shared/js/tv-remote.js`. Hub reorganised earlier today (decision 0058).
+Focus: Owner play-test of Fusion de fruits (phone, desktop, TV); owner phone check of the new hub and of the estimated `players` / `duration`; then play-tests of Trivial Quizz, Scrabble, card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
+Level: L1 (one new game + one shared module used only by it)
 
 Context:
 - Working_On: none
-- Relevant_Files: `hub.js`, `hub-taxonomy.js`, `hub-route.js`, `hub-home.js`, `hub-library.js`, `hub-nav.js`, `hub-tiles.js`, `public/hub-config.json`
+- Relevant_Files: `public/games/fruitmerge/` (see its `NOTES.md`), `public/shared/js/tv-remote.js`, `public/hub-config.json`
 - Do_Not_Touch: Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
-- Relevant_Decisions: 0059, 0058, 0057, 0056, 0055
+- Relevant_Decisions: 0059, 0058, 0054, 0053
 
 Next:
-- Owner: on a phone, try the hub: rows scroll sideways, "Tout voir", pills combined (one per axis), search ("echecs", "cards"), ★ in the list, Back button, a shared `?view=all&type=cartes&players=duo` link. Fix my estimates in `public/hub-config.json` (every `duration`; `players` of the party games, Millionaire, Easy Frog, Tranquil, GameBoy Web) and judge each thumbnail's square crop.
+- Owner: play Fusion de fruits on a phone (portrait + landscape), desktop and the TV (`/games/fruitmerge/index.html?tv=1` once): drop feel, broom/undo counts, loss rule, how-to pages, "Reprendre".
+- Owner: on a phone, try the hub: rows, "Tout voir", pills, search, ★, Back, a shared `?view=all&type=cartes&players=duo` link. Fix my estimates in `public/hub-config.json` (every `duration`, party-game `players`) and judge each thumbnail's square crop.
 - Owner: play Trivial Quizz and Scrabble on a phone and desktop (see `docs/BACKLOG.md` Now).
-- Owner: on a phone, pick a back in Bridge and in each Coinchapp game, start a match, check the hidden hands and the Solitaire stock show it.
 - Owner: on the TV browser open `https://www.muchogames.win/games/millionaire/index.html?tv=1` once; whole screen, remote keys, fullscreen, no screen saver.
+- Millionaire onto the shared `tv-remote.js` (see `docs/BACKLOG.md` Next).
 - Owner phone check of resume in every game, then Memory and Yatzy online on two phones — see `docs/BACKLOG.md` Now.
 - Platform leftovers: `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on coinchapp; Tranquil match start after its Vercel repoint (must pass `p_daily` 20).
-- Proposed: `docs/PRODUCT.md` "Hub conveniences" still describes the "My games" tab and tile badges (now Home rows + library) and "Daily play coins" a "🪙 n/20" badge (now a pie coin); `docs/ARCHITECTURE.md` hub row still names `hub-tags.js` and the "My games" tab; `docs/ARCHITECTURE.md` still says 7 Hobby functions and omits `GET /api/popular`; `docs/SECURITY.md` does not list that public read, nor Scrabble's browser calls to Wiktionary.
+- Proposed: `docs/PRODUCT.md` "Hub conveniences" still describes the "My games" tab and tile badges and a "🪙 n/20" badge; `docs/ARCHITECTURE.md` hub row still names `hub-tags.js`, says 7 Hobby functions, omits `GET /api/popular` and the shared `tv-remote.js`; `docs/SECURITY.md` does not list that public read, nor Scrabble's browser calls to Wiktionary.
 
 Open_Questions:
 - Scrabble: French ODS 9 list is Larousse/FISF copyright and "Scrabble" a Mattel/Hasbro trademark. Keep, or switch French to a free list and another title.
@@ -31,10 +32,8 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-11-02 Platform rule (decision 0059): new games also adapt to a TV browser — fill the screen at 960×540 to 3840×2160 CSS px, couch-readable, 3% overscan margin, remote only (arrows / OK / Back), fullscreen + wake lock; `?tv=1` or TV user agent. Existing games: owner, one by one.
-- 2026-11-02 Trivial Quizz: × cancels the question (same player, no score). The drawn card goes back in the pile. Wheel can spin again; board can roll again. Browser-checked on the wheel: close, then a new spin asks a new question.
-- 2026-11-02 Hub coins: one 36 px coin in the banner, left of the flags, gold pie = coins left today (number in its tooltip / aria-label). Home tiles 144 px on desktop/TV (≥ 1000×500).
-- 2026-11-02 Trivial Quizz: third mode "Roue de la fortune" (no board; swipe or button spins a 6-colour wheel that picks the category; wedges as in quick; with 6 wedges the wheel picks the final question). Swipe speed sets spin time and distance (slow ≈ 2 s, fast ≈ 5 s); tapping a colour picks it. Browser-checked: button / slow / fast swipe, tap, centre tap ignored, final question, win; classic unchanged.
-- 2026-11-02 Hub Home rows + library (decision 0058): new modules `hub-taxonomy.js` (DOM-free, also used by `check-games.mjs`), `hub-route.js`, `hub-home.js`, `hub-library.js`, `hub-nav.js`, `hub-tiles.js`; `hub-tags.js` and the tab swipe removed. Browser-checked at 390×760 and desktop: rows, pills, search, ★, Back, shared link, FR/EN.
-- 2026-11-02 Scrabble: players slider 1–4, FR/EN/ES word buttons tick together; old settings/saves migrate.
-- 2026-11-02 Trivial Quizz: FR/EN/ES pots on the question card; EN and ES question banks; quick game mode; renamed from Trivial Pursuit.
+- 2026-11-02 Fusion de fruits (`public/games/fruitmerge/`): drop and merge 11 fruits up to the watermelon (two watermelons vanish, +100), next-3 preview, fruit-order bar, broom (2/match) and undo (3/match), loss after 3 s above the red line, 8-page how-to, record, full resume. Own circle physics, procedural kawaii fruits, no asset. Browser-checked at 320×568, 390×800, 740×360, 960×540, 1920×1080, 3840×2160: merges, pair, broom, undo, loss + end card, resume, keyboard aim, TV focus / Back.
+- 2026-11-02 Shared `public/shared/js/tv-remote.js` (`window.MuchogamesTv`, `data-tv-*` markup), generic version of Millionaire's `tv-nav.js` (decision 0059: second TV game moves it to shared); Millionaire not switched yet.
+- 2026-11-02 Platform rule (decision 0059): new games also adapt to a TV browser — fill the screen at 960×540 to 3840×2160 CSS px, couch-readable, 3% overscan margin, remote only, fullscreen + wake lock; `?tv=1` or TV user agent.
+- 2026-11-02 Trivial Quizz: × cancels the question; third mode "Roue de la fortune"; FR/EN/ES pots; EN and ES banks; quick mode.
+- 2026-11-02 Hub Home rows + library (decision 0058); hub coin pie in the banner.

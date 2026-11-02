@@ -145,6 +145,29 @@ A new game also needs its id in `ROOM_GAMES` (`api/_lib/rooms.js`).
   `MuchogamesMatch.start` per room code, `resume` on a code already paid.
 - `normalizeCode(raw)`, `CODE_LENGTH`, `GAME_TTL_MS`.
 
+## `public/shared/js/tv-remote.js` (global script → `window.MuchogamesTv`)
+
+TV remote for `docs/PLATFORM_RULES.md` section 6 "TV". Include in `<head>`
+via `<script src="/shared/js/tv-remote.js">` so `html.tv` is set before the
+first paint. On from `?tv=1` (remembered as `<gameId>-tv`, `?tv=0` turns
+it off) or a TV user agent. While on, arrows move the focus to the nearest
+shown control, OK is the native Enter click, Back closes the topmost
+dialog (shared match dialog, feedback, options panel, then the last shown
+`[data-tv-overlay]`) or presses the last shown `[data-tv-back]`.
+
+- Markup: `[data-tv-overlay]` game dialog (focus stays inside),
+  `[data-tv-screen]` screen (focus moves in when it appears),
+  `[data-tv-back]` what Back presses, `[data-tv-focus]` where the focus
+  lands, `[data-tv-keys="left right down"]` directions the focused
+  element handles itself (a board moving its own cursor).
+- `isOn()` → `boolean`.
+- `focusScreen()` — focus the topmost dialog's or the page's
+  `[data-tv-focus]`.
+- `play()` — call from the click that starts or resumes a match:
+  fullscreen + screen wake lock when TV is on (refusals ignored).
+- Used by Fusion de fruits. Millionaire still runs its own `tv.js` /
+  `tv-nav.js`.
+
 ## `public/shared/js/feedback.js` (global script → `window.MuchogamesFeedback`)
 
 - `open({ gameId })` — shows the report dialog (bug / idea + message),
