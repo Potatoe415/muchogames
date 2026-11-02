@@ -5,8 +5,9 @@ import { CATS, HUB, catOf, kindOf, reachable } from "./board.js";
 
 export const MAX_PLAYERS = 6;
 // classic: wedges only on headquarters; quick: any right answer wins the
-// wedge of its category. Saves from before `mode` existed are classic.
-export const MODES = ["classic", "quick"];
+// wedge of its category; wheel: no board, a spun wheel picks the category,
+// wedges as in quick. Saves from before `mode` existed are classic.
+export const MODES = ["classic", "quick", "wheel"];
 
 export function newMatch(names, mode = "classic") {
   return {
@@ -62,7 +63,7 @@ export function land(s, node) {
 function wedgeAtStake(s, cat, final) {
   const node = current(s).pos;
   if (final) return false;
-  if (s.mode === "quick") return !current(s).wedges[cat];
+  if (s.mode !== "classic") return !current(s).wedges[cat];
   return kindOf(node) === "hq" && catOf(node) === cat;
 }
 
@@ -71,6 +72,9 @@ export function ask(s, cat, index, final = false) {
   s.choose = null;
   s.phase = "ask";
 }
+
+// Wheel mode: with all 6 wedges, the spun category is the final question.
+export const spin = (s, cat, index) => ask(s, cat, index, hasAll(current(s)));
 
 export function reveal(s) {
   s.phase = "reveal";

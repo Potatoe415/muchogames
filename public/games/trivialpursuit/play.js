@@ -1,12 +1,15 @@
-// One match on screen: model + board view + question card + die. Saves after
-// every step. main.js owns the page shell and the match lifecycle.
+// One match on screen: model + board view (or the wheel in wheel mode) +
+// question card + die. Saves after every step. main.js owns the page shell
+// and the match lifecycle.
 import { PAWN_COLORS, createBoardView, pawnSvg } from "./board-view.js";
 import { catOf } from "./board.js";
 import * as model from "./model.js";
 import { createQuestionView } from "./question-view.js";
+import { createWheelView } from "./wheel-view.js";
 
 const ROLL_FRAMES = 6;
 const FRAME_MS = 70;
+const LANDED_MS = 450;
 const PIPS = {
   1: [5],
   2: [1, 9],
@@ -70,15 +73,20 @@ function chooseTitle(ctx) {
 }
 
 function refresh(ctx) {
-  const { els, state, board } = ctx;
+  const { els, state, board, wheel, t } = ctx;
   renderPlayers(ctx);
-  board.render(state);
   els.status.textContent = statusText(ctx);
   els.turn.textContent = model.current(state).name;
-  els.roll.disabled = state.phase !== "roll";
-  if (state.phase === "move") {
-    board.showTargets(model.targets(state), (id) => pick(ctx, id));
-  } else board.clearTargets();
+  els.roll.disabled = state.phase !== "roll" || ctx.busy;
+  els.roll.textContent = t(wheel ? "spinWheel" : "rollDie");
+  els.die.hidden = Boolean(wheel);
+  if (wheel) wheel.setLabel(t("wheelAria"));
+  else {
+    board.render(state);
+    if (state.phase === "move") {
+      board.showTargets(model.targets(state), (id) => pick(ctx, id));
+    } else board.clearTargets();
+  }
   if (state.phase === "ask" || state.phase === "reveal") showQuestion(ctx);
   else if (state.phase === "choose") ctx.questions.showChoose(chooseTitle(ctx));
   else ctx.questions.hide();
@@ -107,6 +115,20 @@ async function rollDie(ctx) {
   ctx.board.focusTarget();
 }
 
+// `speed` comes from a swipe on the wheel; the button spins at random speed.
+async function spinWheel(ctx, speed) {
+  const { state, deck } = ctx;
+  if (ctx.busy || state.phase !== "roll") return;
+  ctx.busy = true;
+  ctx.els.roll.disabled = true;
+  const cat = await ctx.wheel.spin(speed);
+  await wait(LANDED_MS);
+  ctx.busy = false;
+  if (ctx.destroyed) return;
+  model.spin(state, cat, deck.draw(cat));
+  commit(ctx);
+}
+
 async function pick(ctx, node) {
   const { state, deck } = ctx;
   const path = model.targets(state).get(node);
@@ -131,7 +153,8 @@ function answerStatus(ctx, result, cat) {
   if (result === "wrong") return t("wrong", { name });
   if (result === "right") return t("right", { name });
   const won = t("wedge", { cat: t(`cat${cat}`), name });
-  return model.hasAll(model.current(state)) ? `${won} ${t("goHub")}` : won;
+  if (!model.hasAll(model.current(state))) return won;
+  return `${won} ${t(ctx.wheel ? "goWheel" : "goHub")}`;
 }
 
 function answer(ctx, correct) {
@@ -150,7 +173,11 @@ function answer(ctx, correct) {
 
 function bindPlay(ctx, signal) {
   const { els, state } = ctx;
-  els.roll.addEventListener("click", () => rollDie(ctx), { signal });
+  els.roll.addEventListener(
+    "click",
+    () => (ctx.wheel ? spinWheel(ctx) : rollDie(ctx)),
+    { signal }
+  );
   return createQuestionView(els.q, ctx.t, signal, {
     reveal: () => {
       if (state.phase !== "ask") return;
@@ -174,7 +201,16 @@ function bindPlay(ctx, signal) {
 export function createPlay({ els, state, deck, t, save, onWin }) {
   const abort = new AbortController();
   const ctx = { els, state, deck, t, save, onWin, busy: false, status: "" };
-  ctx.board = createBoardView(els.board, t);
+  if (state.mode === "wheel") {
+    ctx.wheel = createWheelView(
+      els.board,
+      {
+        canSpin: () => !ctx.busy && state.phase === "roll",
+        onFling: (speed) => spinWheel(ctx, speed)
+      },
+      abort.signal
+    );
+  } else ctx.board = createBoardView(els.board, t);
   ctx.questions = bindPlay(ctx, abort.signal);
   refresh(ctx);
   if (state.phase === "roll") els.roll.focus({ preventScroll: true });

@@ -31,8 +31,8 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-02 Trivial Quizz: third mode "Roue de la fortune" (no board; swipe or button spins a 6-colour wheel that picks the category; wedges as in quick; with 6 wedges the wheel picks the final question). Browser-checked at 390×760 and 900×500: button spin, swipe spin, wedge, final question, win; classic unchanged.
 - 2026-11-02 Hub Home rows + library (decision 0058): new modules `hub-taxonomy.js` (DOM-free, also used by `check-games.mjs`), `hub-route.js`, `hub-home.js`, `hub-library.js`, `hub-nav.js`, `hub-tiles.js`; `hub-tags.js` and the tab swipe removed. Browser-checked at 390×760 and desktop: rows, pills, search, ★, Back, shared link, FR/EN.
 - 2026-11-02 Scrabble: players slider 1–4, FR/EN/ES word buttons tick together; old settings/saves migrate.
 - 2026-11-02 Trivial Quizz: FR/EN/ES pots on the question card; EN and ES question banks; quick game mode; renamed from Trivial Pursuit.
 - 2026-11-02 Trivial Quizz: SVG board, die, wedges, hub picker, final question, save/resume; 2,321 questions OCR'd from the owner's card photos.
-- 2026-11-01 Scrabble French definitions offline (decision 0057).
