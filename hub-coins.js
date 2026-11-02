@@ -11,10 +11,24 @@ import { ensureLiveIdToken } from "./auth.js";
 const DAILY_COINS = 20;
 const REQUEST_TIMEOUT_MS = 4000;
 
+const TIP_MS = 3000;
+
 const LABELS = {
   fr: "Pièces du jour",
   en: "Today's coins",
   es: "Monedas de hoy"
+};
+
+const TIPS = {
+  fr: {
+    left: (value) => `${value} pièces restantes`,
+    unlimited: "Pièces illimitées"
+  },
+  en: { left: (value) => `${value} coins left`, unlimited: "Unlimited coins" },
+  es: {
+    left: (value) => `${value} monedas restantes`,
+    unlimited: "Monedas ilimitadas"
+  }
 };
 
 const coins = { remaining: DAILY_COINS, unlimited: false };
@@ -82,20 +96,50 @@ export async function spendLaunchCoin(gameId) {
   }
 }
 
-/** One coin in the header, filled like a pie chart by what is left today. */
+let tipTimer = 0;
+
+function setTipOpen(container, open) {
+  clearTimeout(tipTimer);
+  container.classList.toggle("is-open", open);
+  container.setAttribute("aria-expanded", String(open));
+  if (open) tipTimer = setTimeout(() => setTipOpen(container, false), TIP_MS);
+}
+
+// Built once: the coin, its bubble, and the tap / outside-tap / Escape wiring.
+function mountCoin(container) {
+  const coin = document.createElement("span");
+  coin.className = "hub-coins__coin";
+  coin.setAttribute("aria-hidden", "true");
+  const tip = document.createElement("span");
+  tip.className = "hub-coins__tip";
+  tip.dataset.id = "hub-coins-tip";
+  tip.setAttribute("role", "status");
+  container.append(coin, tip);
+
+  container.addEventListener("click", () =>
+    setTipOpen(container, !container.classList.contains("is-open"))
+  );
+  document.addEventListener("pointerdown", (event) => {
+    if (!container.contains(event.target)) setTipOpen(container, false);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setTipOpen(container, false);
+  });
+}
+
+/** One coin in the header, filled like a pie chart by what is left today;
+ *  a tap shows the count. */
 export function renderCoinBadge(container, lang) {
   if (!container) return;
   const label = LABELS[lang] || LABELS.fr;
+  const tips = TIPS[lang] || TIPS.fr;
   const value = coins.unlimited ? "∞" : `${coins.remaining}/${DAILY_COINS}`;
   const fill = coins.unlimited ? 1 : Math.min(1, coins.remaining / DAILY_COINS);
-  if (!container.firstElementChild) {
-    const coin = document.createElement("span");
-    coin.className = "hub-coins__coin";
-    coin.setAttribute("aria-hidden", "true");
-    container.appendChild(coin);
-  }
+  if (!container.querySelector(".hub-coins__tip")) mountCoin(container);
+  container.querySelector(".hub-coins__tip").textContent = coins.unlimited
+    ? tips.unlimited
+    : tips.left(value);
   container.style.setProperty("--coins-fill", String(fill));
-  container.title = `${label} : ${value}`;
   container.setAttribute("aria-label", `${label} : ${value}`);
   container.classList.toggle(
     "is-empty",

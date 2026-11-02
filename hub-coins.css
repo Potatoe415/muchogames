@@ -1,7 +1,8 @@
 /* Daily coins (hub-coins.js): one coin top-right of the banner, left of the
    language switcher, same size as it and the profile button. Its gold part
-   is a pie of the coins left today (`--coins-fill`, 0 to 1). The
-   out-of-coins dialog is the shared one from /shared/js/game-session.js. */
+   is a pie of the coins left today (`--coins-fill`, 0 to 1); a tap shows
+   the count in a bubble under it. The out-of-coins dialog is the shared
+   one from /shared/js/game-session.js. */
 .hub-coins {
   position: absolute;
   top: 14px;
@@ -12,10 +13,49 @@
   box-sizing: border-box;
   display: grid;
   place-items: center;
+  padding: 0;
+  border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(4px);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hub-coins:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.hub-coins__tip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.25);
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a3a22;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -6px) scale(0.95);
+  transition:
+    opacity 0.18s,
+    transform 0.18s;
+}
+
+.hub-coins.is-open .hub-coins__tip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.hub-coins.is-empty .hub-coins__tip {
+  color: #b3261e;
 }
 
 .hub-coins__coin {
