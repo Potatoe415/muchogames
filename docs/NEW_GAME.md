@@ -12,7 +12,8 @@ ask instead of improvising a one-off exception (`AGENTS.md` Section 7).
 **Read `docs/PLATFORM_RULES.md` too** — the common base every game shares
 (back/options buttons, collapsed rules, coins spent per match, matches
 started/won/lost, URLs, mobile-first phone/tablet/desktop in both
-orientations, system bars, touch/mouse/keyboard, resume after reload). `npm run check` fails until a new game follows it; a new game never
+orientations, TV 1080p/4K with the remote, system bars,
+touch/mouse/keyboard, resume after reload). `npm run check` fails until a new game follows it; a new game never
 goes in the check's baseline.
 
 ---

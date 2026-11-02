@@ -110,11 +110,13 @@ a match.
 
 ## 6. Screens and orientation
 
-Every game plays fully on phone, tablet and desktop (decision 0053).
+Every game plays fully on phone, tablet and desktop (decision 0053), and on
+a TV browser (decision 0059, see "TV" below).
 
-- **Mobile first**: the base CSS is the phone layout (360px wide); tablet
-  and desktop are added with `min-width` media queries, never the reverse.
-- Works from 320px wide up to a large desktop screen.
+- **Mobile first**: the base CSS is the phone layout (360px wide); tablet,
+  desktop and TV are added with `min-width` media queries, never the
+  reverse.
+- Works from 320px wide up to a 4K TV.
 - **Portrait and landscape**, on phone and tablet. Never ask the player to
   rotate the device. A landscape phone is only ~360px tall: the board and
   its controls must still fit (e.g. controls move beside the board).
@@ -148,6 +150,42 @@ page. In landscape, the Android 3-button bar and the iPhone notch sit on the
 - The shared header and options panel already respect the safe areas.
 - Verify on a real phone, both orientations (DevTools device mode does not
   show the system bars).
+
+### TV (1080p, 4K)
+
+A TV browser (Google TV / Android TV, Fire TV, Tizen, webOS), played from
+the couch with the remote. Applies to every game added from 2026-11-02;
+existing games are brought to it one by one by the owner (decision 0059).
+
+- TV browsers report very different CSS sizes for the same screen:
+  960×540, 1280×720, 1920×1080 or 3840×2160 CSS px (1080p and 4K panels,
+  `devicePixelRatio` 1 to 4). The game fills the whole screen at each of
+  them: no page scroll during a match, no small island in the middle of a
+  4K screen. Sizes grow with the screen (`clamp()` with `vmin`/`dvh`, or a
+  fixed 1920×1080 canvas zoomed to the viewport like Millionaire's
+  `tv.js`); no fixed `max-width` that leaves most of a TV empty.
+- Readable from 3 m: body text at least ~2.2% of the screen height
+  (24px on a 1080-px-tall viewport), controls at least ~5% of it.
+- Keep text and controls ≥ 3% from the screen edges (TV overscan).
+- Sharp at 4K: SVG, CSS or images at least 2× their displayed size.
+- **Remote only**: every action works with the arrows, OK and Back alone —
+  no Tab, no hover, no typing required to play (a name field stays
+  optional). Arrows move the focus to the nearest control (spatial
+  navigation), OK is Enter, Back/Escape closes the open dialog or panel.
+  The focus is always on a control and shown with a thick, high-contrast
+  ring; a new screen places it on its main button.
+- Android TV browsers may navigate back instead of sending Back to the
+  page: that is fine, the match is saved (section 8).
+- On match start, ask for fullscreen and a screen wake lock (ignore a
+  refusal).
+- TV behaviour (remote focus, fullscreen, wake lock) turns on from `?tv=1`
+  (`?tv=0` off, remembered per game) or a TV user agent. The layout
+  itself never depends on it: it follows the screen size.
+- Millionaire (`public/games/millionaire/tv.js`, `tv-nav.js`) is the
+  reference. The second game that needs this code moves it to
+  `public/shared/js/` instead of copying it.
+- Not statically checkable: verify in the browser at 960×540, 1920×1080
+  and 3840×2160, keyboard arrows only, then on a real TV.
 
 ## 7. Input
 

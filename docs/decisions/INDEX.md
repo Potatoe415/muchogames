@@ -64,6 +64,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0056 | 2026-11-01 | Each card game lets the player pick its card back (per game, per device) | Accepted |
 | 0057 | 2026-11-01 | Scrabble French definitions ship with the game (Wiktionary extract, CC BY-SA), live lookup only for missing words | Accepted |
 | 0058 | 2026-11-02 | Hub: Home rows + filtered library with URL state; flat tags (type / time / players) replace categories | Accepted |
+| 0059 | 2026-11-02 | New games adapt to TV browsers (1080p/4K, remote only); existing games done one by one by the owner | Accepted |
 
 ## When to log a decision
 Any of:

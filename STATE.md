@@ -10,7 +10,7 @@ Context:
 - Working_On: none
 - Relevant_Files: `hub.js`, `hub-taxonomy.js`, `hub-route.js`, `hub-home.js`, `hub-library.js`, `hub-nav.js`, `hub-tiles.js`, `public/hub-config.json`
 - Do_Not_Touch: Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
-- Relevant_Decisions: 0058, 0057, 0056, 0055, 0054
+- Relevant_Decisions: 0059, 0058, 0057, 0056, 0055
 
 Next:
 - Owner: on a phone, try the hub: rows scroll sideways, "Tout voir", pills combined (one per axis), search ("echecs", "cards"), ★ in the list, Back button, a shared `?view=all&type=cartes&players=duo` link. Fix my estimates in `public/hub-config.json` (every `duration`; `players` of the party games, Millionaire, Easy Frog, Tranquil, GameBoy Web) and judge each thumbnail's square crop.
@@ -31,6 +31,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-02 Platform rule (decision 0059): new games also adapt to a TV browser — fill the screen at 960×540 to 3840×2160 CSS px, couch-readable, 3% overscan margin, remote only (arrows / OK / Back), fullscreen + wake lock; `?tv=1` or TV user agent. Existing games: owner, one by one.
 - 2026-11-02 Trivial Quizz: × cancels the question (same player, no score). The drawn card goes back in the pile. Wheel can spin again; board can roll again. Browser-checked on the wheel: close, then a new spin asks a new question.
 - 2026-11-02 Hub coins: one 36 px coin in the banner, left of the flags, gold pie = coins left today (number in its tooltip / aria-label). Home tiles 144 px on desktop/TV (≥ 1000×500).
 - 2026-11-02 Trivial Quizz: third mode "Roue de la fortune" (no board; swipe or button spins a 6-colour wheel that picks the category; wedges as in quick; with 6 wedges the wheel picks the final question). Swipe speed sets spin time and distance (slow ≈ 2 s, fast ≈ 5 s); tapping a colour picks it. Browser-checked: button / slow / fast swipe, tap, centre tap ignored, final question, win; classic unchanged.

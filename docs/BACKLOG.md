@@ -55,6 +55,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
 ## Next
+- [ ] **User**: bring the existing games to the TV rule one by one (`docs/PLATFORM_RULES.md` section 6 "TV", decision 0059). Millionaire already has it.
 - [ ] Pyramide: 55 broken accent characters (U+FFFD) already committed in `i18n.js` and 9 in `app.js` (rules show "R�gles"); retype the FR/ES copy. Pre-existing, found 2026-10-29.
 - [ ] Split `blackstories.js` (414 lines since the save was added).
 - [ ] Jeu de dames online mode on `online-room.js` (needs `checkers` in `ROOM_GAMES`, `api/_lib/rooms.js` — L2).
