@@ -28,6 +28,7 @@ import {
   saveGame,
   saveSettings,
   saveStats,
+  wordsForMode,
   writeText
 } from "./store.js";
 import { playerLangs } from "./tiles.js";
@@ -99,9 +100,16 @@ function applySettings() {
 
 function choose(setting, value) {
   page.settings[setting] = value;
+  const words = wordsForMode(
+    page.settings.mode,
+    page.settings.words,
+    page.lang
+  );
+  const wordsChanged = words !== page.settings.words;
+  page.settings.words = words;
   saveSettings(page.settings);
   applySettings();
-  if (setting === "words") loadDict();
+  if (setting === "words" || wordsChanged) loadDict();
 }
 
 function setNames(list) {

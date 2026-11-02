@@ -2,7 +2,7 @@
 // options panel, the level slider and its record, the two player names, the
 // resume button.
 import { LEVEL_IDS } from "./ai.js";
-import { CHOICES, cleanName } from "./store.js";
+import { CHOICES, cleanName, wordsForMode } from "./store.js";
 import { useJunior, useTileSet } from "./tiles.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -72,17 +72,11 @@ export function useRules(config) {
   useJunior(isJunior(config));
 }
 
-// Against the computer in FR + ES, the player's words follow the interface
-// language (Spanish if the app is in Spanish, French otherwise).
+// FR + ES is duo only. A solo start never keeps a mixed word language.
 export const matchConfig = (settings, uiLang) => ({
   mode: settings.mode,
   level: settings.level,
-  words: settings.words,
-  p1Lang:
-    settings.mode === "solo"
-      ? uiLang === "es"
-        ? "es"
-        : "fr"
-      : settings.p1Lang,
+  words: wordsForMode(settings.mode, settings.words, uiLang),
+  p1Lang: settings.p1Lang,
   names: settings.names.slice()
 });

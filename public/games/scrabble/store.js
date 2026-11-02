@@ -72,7 +72,15 @@ export function loadSettings(uiLang) {
   );
   const names = Array.isArray(stored.names) ? stored.names : [];
   settings.names = [cleanName(names[0]), cleanName(names[1])];
+  settings.words = wordsForMode(settings.mode, settings.words, uiLang);
   return settings;
+}
+
+// FR + ES is two players on one device. Against the computer, a saved
+// mixed choice falls back to the interface language.
+export function wordsForMode(mode, words, uiLang) {
+  if (mode !== "solo" || words !== "fr-es") return words;
+  return uiLang === "en" || uiLang === "es" ? uiLang : "fr";
 }
 
 export const saveSettings = (settings) => writeJson(SETTINGS_KEY, settings);

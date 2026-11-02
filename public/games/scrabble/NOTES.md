@@ -1,11 +1,10 @@
 # Scrabble — notes for agents
 
 Scrabble vs the computer (5 levels, slider on the start screen) or two players on one device.
-Words in French, English or Spanish (start-screen choice `words`, defaults to
-the interface language on a first visit), or "FR + ES": each player checked
+Words in French, English or Spanish (start-screen buttons `FR` / `EN` / `ES`, choice `words`, defaults to
+the interface language on a first visit), or "FR+ES" (two players only; hidden against the computer, and a saved solo mixed choice falls back to the interface language via `wordsForMode`): each player checked
 against their own language (`p1Lang` = player 1's language, chosen on the start screen in two-player
-mode only; against the computer it follows the interface language, Spanish if
-the app is in Spanish, French otherwise, `matchConfig`; `playerLangs` in `tiles.js`), one shared bag (`fr-es` set: French values + Ñ, 102 tiles),
+mode only; `playerLangs` in `tiles.js`), one shared bag (`fr-es` set: French values + Ñ, 102 tiles),
 FR/ES tags on the score cards and in the handoff title. The interface is
 FR/EN/ES separately. Vanilla ES
 modules, DOM board of `<button>` cells, no dependency, no worker (a move
