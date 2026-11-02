@@ -5,7 +5,6 @@ import {
   refreshAuthWidget
 } from "./auth.js";
 import {
-  createNewBadge,
   fetchHubSettings,
   pinnedIds,
   renderAnnouncement,
@@ -17,11 +16,15 @@ import {
   renderCoinBadge,
   spendLaunchCoin
 } from "./hub-coins.js";
+import { renderHome } from "./hub-home.js";
+import { renderLibrary, renderPills } from "./hub-library.js";
+import { initNav, renderNav } from "./hub-nav.js";
+import { onRouteChange, readRoute, writeRoute } from "./hub-route.js";
 import {
-  createFavoriteButton,
-  recordRecentGame,
-  shelfGames,
-  shelfLabel
+  favoriteGames,
+  isFavorite,
+  recentGames,
+  recordRecentGame
 } from "./hub-shelf.js";
 import {
   enableHorizontalWheel,
@@ -34,39 +37,24 @@ import {
   revealActiveTab,
   sortGames
 } from "./hub-sort.js";
-import { createPlayersBadge, createTileTags } from "./hub-tags.js";
+import {
+  activeFilterCount,
+  EMPTY_FILTERS,
+  matchesFilters,
+  matchesQuery
+} from "./hub-taxonomy.js";
+import { createIconTile, createListRow } from "./hub-tiles.js";
 import { APP_VERSION } from "./version.js";
 
 const CONFIG_URL = "/hub-config.json";
-const GRID_ID = "games-grid";
-const TABS_ID = "category-tabs";
+const HOME_ID = "hub-home";
+const LIBRARY_ID = "hub-library";
+const PILLS_ID = "hub-pills";
+const SORT_ID = "hub-sort";
 const LANG_SWITCHER_ID = "lang-switcher";
 const LANG_STORAGE_KEY = "bergamots-lang";
 
 const LANGS = ["fr", "en", "es"];
-// "mesjeux" (favorites + recents) is first and only shown when it has games.
-const MY_GAMES = "mesjeux";
-const CATEGORY_ORDER = [MY_GAMES, "tous", "cartesdes", "mots", "autres"];
-const CATEGORY_LABELS = {
-  fr: {
-    tous: "Tous",
-    cartesdes: "Cartes & dés",
-    mots: "Mots",
-    autres: "Autres"
-  },
-  en: {
-    tous: "All",
-    cartesdes: "Cards & Dice",
-    mots: "Words",
-    autres: "Other"
-  },
-  es: {
-    tous: "Todos",
-    cartesdes: "Cartas y dados",
-    mots: "Palabras",
-    autres: "Otros"
-  }
-};
 
 const FEEDBACK_LABELS = {
   fr: "Signaler un problème",
@@ -75,16 +63,14 @@ const FEEDBACK_LABELS = {
 };
 
 const PINNED_GAME_IDS = ["coinche", "bouilla", "president", "bataillecorse"];
-const SLIDE_DURATION_MS = 220;
-const SWIPE_THRESHOLD_PX = 50;
 
 const state = {
   games: [],
   settings: null,
-  category: "tous",
   lang: readStoredLang(),
   sort: readStoredSort(),
-  popular: new Map()
+  popular: new Map(),
+  ...readRoute()
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -221,10 +207,10 @@ function openFeedbackFromUrl() {
 }
 
 async function initializeDashboard() {
-  const gridElement = document.getElementById(GRID_ID);
+  const homeElement = document.getElementById(HOME_ID);
 
-  if (!gridElement) {
-    throw new Error(`Élément DOM manquant : '${GRID_ID}'`);
+  if (!homeElement) {
+    throw new Error(`Élément DOM manquant : '${HOME_ID}'`);
   }
 
   try {
@@ -241,13 +227,16 @@ async function initializeDashboard() {
     state.settings = await settingsRequest;
     persistLang(state.lang);
     renderLangSwitcher();
-    renderCategoryTabs();
     renderHubAnnouncement();
-    renderGames();
-    setupSwipeNavigation();
+    initNav({ onView: selectView, onQuery: searchGames });
+    onRouteChange((route) => {
+      applyRoute(route);
+      render();
+    });
+    render();
     loadPopularRanking();
   } catch (error) {
-    gridElement.innerHTML =
+    homeElement.innerHTML =
       "<p>Erreur critique : Impossible de charger la liste des jeux.</p>";
     console.error("Échec de l'initialisation du Dashboard :", error);
   }
@@ -274,9 +263,8 @@ function selectLang(lang) {
   state.lang = lang;
   persistLang(lang);
   renderLangSwitcher();
-  renderCategoryTabs();
   renderHubAnnouncement();
-  renderGames();
+  render();
   renderCoins();
   refreshAuthWidget();
   const feedbackButton = document.getElementById("hub-feedback-button");
@@ -307,42 +295,112 @@ function renderHubAnnouncement() {
   );
 }
 
-function myGames() {
-  return shelfGames(visibleGames(state.games, state.settings));
+function applyRoute(route) {
+  state.view = route.view;
+  state.query = route.query;
+  state.filters = route.filters;
 }
 
-function availableCategories() {
-  const hasMyGames = myGames().length > 0;
-  return CATEGORY_ORDER.filter(
-    (category) => category !== MY_GAMES || hasMyGames
+function currentRoute() {
+  return { view: state.view, query: state.query, filters: state.filters };
+}
+
+// A new view or filter scrolls back up to the bar when the page is below it,
+// so "See all" from a low Home row shows the start of the list.
+function navigate(route, { replace = false } = {}) {
+  applyRoute(route);
+  writeRoute(route, { replace });
+  render();
+  const main = document.querySelector(".hub-main");
+  if (!replace && main && window.scrollY > main.offsetTop) {
+    window.scrollTo({ top: main.offsetTop });
+  }
+}
+
+function selectView(view) {
+  if (view === state.view) return;
+  navigate({ view, query: "", filters: { ...EMPTY_FILTERS } });
+}
+
+// The first letter typed on Home opens the library (one history entry);
+// the following ones only update the URL.
+function searchGames(query) {
+  navigate(
+    { ...currentRoute(), view: "library", query },
+    { replace: state.view === "library" }
   );
 }
 
-// A star toggled on a tile can empty "My games" while it is the open tab.
-function refreshAfterFavoriteChange() {
-  if (state.category === MY_GAMES && myGames().length === 0) {
-    state.category = "tous";
-  }
-  renderCategoryTabs();
-  renderGames();
+function render() {
+  const library = state.view === "library";
+  renderNav({
+    lang: state.lang,
+    view: state.view,
+    query: state.query,
+    total: visibleGames(state.games, state.settings).length
+  });
+  document.getElementById(HOME_ID).hidden = library;
+  document.getElementById(LIBRARY_ID).hidden = !library;
+  document.getElementById(PILLS_ID).hidden = !library;
+  document.getElementById(SORT_ID).hidden = !library;
+  if (library) renderLibraryView();
+  else renderHomeView();
 }
 
-function categoryLabel(category) {
-  return category === MY_GAMES
-    ? shelfLabel(state.lang)
-    : CATEGORY_LABELS[state.lang][category];
+function renderHomeView() {
+  const games = visibleGames(state.games, state.settings);
+  renderHome(document.getElementById(HOME_ID), {
+    sorted: sortedGames(games),
+    rows: {
+      recent: recentGames(games),
+      favorites: favoriteGames(games),
+      featured: featuredGames(games)
+    },
+    lang: state.lang,
+    tile: (game, section) =>
+      createIconTile(game, section, {
+        lang: state.lang,
+        settings: state.settings,
+        anchor: createLaunchAnchor(game)
+      }),
+    onSeeAll: (filters) => navigate({ view: "library", query: "", filters })
+  });
 }
 
-function selectCategory(category) {
-  if (category === state.category) return;
+function renderLibraryView() {
+  const pills = document.getElementById(PILLS_ID);
+  renderPills(pills, {
+    filters: state.filters,
+    lang: state.lang,
+    onChange: (filters) => navigate({ ...currentRoute(), filters })
+  });
+  enableHorizontalWheel(pills);
+  revealActiveTab(pills);
+  mountSortControl(document.getElementById(SORT_ID), {
+    lang: state.lang,
+    sort: state.sort,
+    onChange: selectSort
+  });
 
-  const direction =
-    CATEGORY_ORDER.indexOf(category) > CATEGORY_ORDER.indexOf(state.category)
-      ? "left"
-      : "right";
-  state.category = category;
-  renderCategoryTabs();
-  renderGames(direction);
+  const games = sortedGames(visibleGames(state.games, state.settings)).filter(
+    (game) =>
+      matchesFilters(game, state.filters, isFavorite) &&
+      matchesQuery(game, state.query)
+  );
+  renderLibrary(document.getElementById(LIBRARY_ID), {
+    games,
+    narrowed: activeFilterCount(state.filters) > 0 || Boolean(state.query),
+    lang: state.lang,
+    row: (game) =>
+      createListRow(game, {
+        lang: state.lang,
+        settings: state.settings,
+        anchor: createLaunchAnchor(game),
+        onFavoriteChange: render
+      }),
+    onClear: () =>
+      navigate({ view: "library", query: "", filters: { ...EMPTY_FILTERS } })
+  });
 }
 
 function renderLangSwitcher() {
@@ -371,37 +429,10 @@ function createLangFlagButton(lang, isActive) {
   return button;
 }
 
-function renderCategoryTabs() {
-  const nav = document.getElementById(TABS_ID);
-  if (!nav) return;
-
-  nav.innerHTML = "";
-
-  availableCategories().forEach((category) => {
-    const isActive = category === state.category;
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `category-tab category-tab--${category}${isActive ? " is-active" : ""}`;
-    button.dataset.id = `hub-tab-${category}`;
-    button.textContent = categoryLabel(category);
-    button.addEventListener("click", () => selectCategory(category));
-    nav.appendChild(button);
-  });
-
-  enableHorizontalWheel(nav);
-  revealActiveTab(nav);
-  mountSortControl(document.getElementById("hub-sort"), {
-    lang: state.lang,
-    sort: state.sort,
-    onChange: selectSort
-  });
-}
-
 function selectSort(sort) {
   state.sort = sort;
   persistSort(sort);
-  renderCategoryTabs();
-  renderGames();
+  render();
 }
 
 function loadPopularRanking() {
@@ -409,186 +440,25 @@ function loadPopularRanking() {
     const map = popularMap(rows);
     if (map.size === 0) return;
     state.popular = map;
-    if (state.sort === "popular") renderGames();
+    if (state.sort === "popular") render();
   });
 }
 
-function renderGames(direction) {
-  const gridElement = document.getElementById(GRID_ID);
-
-  const applyContent = () => {
-    const gamesInCategory = gamesForCategory(state.category);
-
-    gridElement.innerHTML = "";
-
-    if (gamesInCategory.length === 0) {
-      const empty = document.createElement("p");
-      empty.dataset.id = "hub-games-empty";
-      empty.textContent = "Aucun jeu disponible dans cette catégorie.";
-      gridElement.appendChild(empty);
-      return;
-    }
-
-    const fragment = document.createDocumentFragment();
-    gamesInCategory.forEach((game) =>
-      fragment.appendChild(createTileNode(game))
-    );
-    gridElement.appendChild(fragment);
-  };
-
-  if (!direction) {
-    applyContent();
-    return;
-  }
-
-  slideGridContent(gridElement, direction, applyContent);
-}
-
-function gamesForCategory(category) {
-  const games = category === MY_GAMES ? myGames() : gamesInCategory(category);
-  if (!state.sort) {
-    return category === MY_GAMES ? games : sortWithPinnedFirst(games);
-  }
+function sortedGames(games) {
+  if (!state.sort) return sortWithPinnedFirst(games);
   const popular = state.popular.size > 0 ? state.popular : localPopularMap();
   return sortGames(games, state.sort, popular);
 }
 
-function gamesInCategory(category) {
-  const games = visibleGames(state.games, state.settings);
-  return category === "tous"
-    ? games
-    : games.filter((game) => game.category === category);
-}
-
-function slideGridContent(gridElement, direction, applyContent) {
-  const exitClass =
-    direction === "left"
-      ? "games-grid--out-to-left"
-      : "games-grid--out-to-right";
-  const enterFromClass =
-    direction === "left"
-      ? "games-grid--out-to-right"
-      : "games-grid--out-to-left";
-
-  gridElement.classList.add(exitClass);
-
-  setTimeout(() => {
-    applyContent();
-    gridElement.classList.remove(exitClass);
-    gridElement.classList.add("games-grid--no-transition", enterFromClass);
-
-    requestAnimationFrame(() => {
-      gridElement.classList.remove("games-grid--no-transition");
-      requestAnimationFrame(() => {
-        gridElement.classList.remove(enterFromClass);
-      });
-    });
-  }, SLIDE_DURATION_MS);
-}
-
-function setupSwipeNavigation() {
-  let touchStartX = null;
-  let touchStartY = null;
-
-  document.body.addEventListener(
-    "touchstart",
-    (event) => {
-      if (event.target.closest?.(".category-bar")) {
-        touchStartX = null;
-        touchStartY = null;
-        return;
-      }
-      const touch = event.touches[0];
-      touchStartX = touch.clientX;
-      touchStartY = touch.clientY;
-    },
-    { passive: true }
-  );
-
-  document.body.addEventListener(
-    "touchend",
-    (event) => {
-      if (touchStartX === null) return;
-
-      const touch = event.changedTouches[0];
-      const deltaX = touch.clientX - touchStartX;
-      const deltaY = touch.clientY - touchStartY;
-      touchStartX = null;
-      touchStartY = null;
-
-      if (
-        Math.abs(deltaX) < SWIPE_THRESHOLD_PX ||
-        Math.abs(deltaX) < Math.abs(deltaY)
-      )
-        return;
-
-      const categories = availableCategories();
-      const currentIndex = categories.indexOf(state.category);
-      const targetIndex = currentIndex + (deltaX < 0 ? 1 : -1);
-
-      if (targetIndex < 0 || targetIndex >= categories.length) return;
-
-      selectCategory(categories[targetIndex]);
-    },
-    { passive: true }
-  );
+function featuredGames(games) {
+  return pinnedIds(state.settings, PINNED_GAME_IDS)
+    .map((id) => games.find((game) => game.id === id))
+    .filter(Boolean);
 }
 
 function sortWithPinnedFirst(games) {
-  const pinnedOrder = pinnedIds(state.settings, PINNED_GAME_IDS);
-  const pinned = pinnedOrder
-    .map((id) => games.find((game) => game.id === id))
-    .filter(Boolean);
-  const rest = games.filter((game) => !pinnedOrder.includes(game.id));
-  return [...pinned, ...rest];
-}
-
-// The grid wraps the tile so the favorite star can sit over it without being
-// nested inside the <a>.
-function createTileNode(game) {
-  const wrap = document.createElement("div");
-  wrap.className = "game-tile-wrap";
-  wrap.append(
-    createGameTile(game),
-    createFavoriteButton(game, state.lang, refreshAfterFavoriteChange)
-  );
-  return wrap;
-}
-
-function createGameTile(game) {
-  const anchor = createLaunchAnchor(game);
-  anchor.className = "game-tile";
-  anchor.dataset.id = `hub-tile-${game.id}`;
-
-  const media = document.createElement("div");
-  media.className = "game-tile__media";
-
-  const img = document.createElement("img");
-  img.className = "game-tile__thumb";
-  img.src = game.thumbnail || "";
-  img.alt = `Miniature de ${game.title}`;
-  img.loading = "lazy";
-  attachThumbnailFallback(img);
-
-  const overlay = document.createElement("div");
-  overlay.className = "game-tile__overlay";
-
-  const title = document.createElement("div");
-  title.className = "game-tile__title";
-  title.textContent = game.title;
-  const tags = createTileTags(game);
-  if (tags) title.appendChild(tags);
-
-  media.append(img, overlay, title);
-  const players = createPlayersBadge(game);
-  if (players) {
-    title.classList.add("game-tile__title--with-players");
-    media.appendChild(players);
-  }
-  const badge = createNewBadge(game, state.settings, state.lang);
-  if (badge) media.appendChild(badge);
-  anchor.appendChild(media);
-  return anchor;
+  const pinned = featuredGames(games);
+  return [...pinned, ...games.filter((game) => !pinned.includes(game))];
 }
 
 // Every way of launching a game goes through here: same URL params, recents, profile hand-off, and the
@@ -655,21 +525,6 @@ function openGame(href, newTab, tab) {
   window.location.assign(href);
 }
 
-function attachThumbnailFallback(img) {
-  img.onerror = () => {
-    const currentSource = typeof img.src === "string" ? img.src : "";
-    const hasTriedPngFallback = img.dataset.triedPngFallback === "true";
-
-    if (!hasTriedPngFallback && currentSource.endsWith(".jpg")) {
-      img.dataset.triedPngFallback = "true";
-      img.src = currentSource.replace(/\.jpg$/, ".png");
-      return;
-    }
-
-    img.src = generateBlackFallbackSVG();
-  };
-}
-
 function isExternalLaunch(launchUrl) {
   if (!launchUrl || typeof launchUrl !== "string") return false;
   return launchUrl.startsWith("http://") || launchUrl.startsWith("https://");
@@ -712,14 +567,6 @@ function appendLaunchParams(url, lang, name, avatarThumb, deviceId) {
   }
   const separator = url.includes("?") ? "&" : "?";
   return `${url}${separator}${params.toString()}`;
-}
-
-function generateBlackFallbackSVG() {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
-    <rect width="300" height="150" fill="#111"/>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#555" font-family="sans-serif" font-size="14">Image Manquante</text>
-  </svg>`;
-  return `data:image/svg+xml;base64,${btoa(svg)}`;
 }
 
 // Enregistrement du Service Worker pour la PWA

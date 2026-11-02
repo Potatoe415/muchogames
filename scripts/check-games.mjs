@@ -1,10 +1,13 @@
-// Enforces docs/PLATFORM_RULES.md for every game in public/hub-config.json.
+// Enforces docs/PLATFORM_RULES.md for every game in public/hub-config.json,
+// plus the hub catalog fields (`tags`, `duration`, `players`).
 // Known gaps of existing games live in check-games.baseline.json: a new
 // violation fails, and so does a baseline entry that no longer occurs, so the
 // baseline can only shrink.
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { dirname, extname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
+
+import { catalogProblems } from "../hub-taxonomy.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const BASELINE_FILE = join(ROOT, "scripts", "check-games.baseline.json");
@@ -213,7 +216,9 @@ function collectViolations() {
   const games = readJson(join(ROOT, "public", "hub-config.json"));
   return [
     ...games.flatMap((game) =>
-      checkGame(game).map((rule) => `${game.id}: ${rule}`)
+      [...catalogProblems(game), ...checkGame(game)].map(
+        (rule) => `${game.id}: ${rule}`
+      )
     ),
     ...checkUrls()
   ];

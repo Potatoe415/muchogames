@@ -1,7 +1,14 @@
 // Flat hub taxonomy: three independent axes read from public/hub-config.json.
 // `type` from `tags`, `time` from `duration` (minutes), `players` from
 // `players: [min, max]`. No DOM here: scripts/check-games.mjs imports it too.
-export const TYPES = ["cartes", "soiree", "mots", "reflexion", "arcade", "quiz"];
+export const TYPES = [
+  "cartes",
+  "soiree",
+  "mots",
+  "reflexion",
+  "arcade",
+  "quiz"
+];
 export const TIMES = ["rapide", "moyen", "long"];
 export const PLAYERS = ["solo", "duo", "groupe"];
 export const AXES = { type: TYPES, time: TIMES, players: PLAYERS };
@@ -69,7 +76,10 @@ export function readPlayers(game) {
   const players = game.players;
   if (!Array.isArray(players) || players.length !== 2) return null;
   const [min, max] = players.map(Number);
-  return Number.isInteger(min) && Number.isInteger(max) && min >= 1 && min <= max
+  return Number.isInteger(min) &&
+    Number.isInteger(max) &&
+    min >= 1 &&
+    min <= max
     ? { min, max }
     : null;
 }

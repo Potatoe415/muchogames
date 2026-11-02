@@ -19,14 +19,9 @@ export default [
   // tree without browser globals, which reported 1164 phantom no-undef errors.
   {
     files: [
-      "hub.js",
+      "hub*.js",
       "auth.js",
       "auth-admin.js",
-      "hub-catalog.js",
-      "hub-coins.js",
-      "hub-shelf.js",
-      "hub-sort.js",
-      "hub-tags.js",
       "version.js",
       "wordplayer.js",
       "public/**/*.js",

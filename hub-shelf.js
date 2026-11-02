@@ -1,26 +1,13 @@
-// "My games" category tab (the first one): favorites first, then recently
-// launched games. Both lists are per-browser localStorage.
+// Favorite and recently launched games, per-browser localStorage. Read by
+// the hub's Home rows and the library's "Favorites" pill.
 const RECENT_KEY = "muchogames-recent-games";
 const FAVORITES_KEY = "muchogames-favorite-games";
 const MAX_RECENT = 8;
-const MAX_SHELF = 10;
 
 const COPY = {
-  fr: {
-    title: "Mes jeux",
-    add: "Ajouter aux favoris",
-    remove: "Retirer des favoris"
-  },
-  en: {
-    title: "My games",
-    add: "Add to favorites",
-    remove: "Remove from favorites"
-  },
-  es: {
-    title: "Mis juegos",
-    add: "Añadir a favoritos",
-    remove: "Quitar de favoritos"
-  }
+  fr: { add: "Ajouter aux favoris", remove: "Retirer des favoris" },
+  en: { add: "Add to favorites", remove: "Remove from favorites" },
+  es: { add: "Añadir a favoritos", remove: "Quitar de favoritos" }
 };
 
 function readIds(key) {
@@ -60,26 +47,27 @@ function toggleFavorite(id) {
   return next.includes(id);
 }
 
-/** Favorites first, then recently launched games, for the "My games" tab. */
-export function shelfGames(games) {
+function gamesByIds(games, ids) {
   const byId = new Map(games.map((game) => [game.id, game]));
-  const ids = new Set([...readIds(FAVORITES_KEY), ...readIds(RECENT_KEY)]);
-  return [...ids]
-    .map((id) => byId.get(id))
-    .filter(Boolean)
-    .slice(0, MAX_SHELF);
+  return ids.map((id) => byId.get(id)).filter(Boolean);
 }
 
-export function shelfLabel(lang) {
-  return (COPY[lang] || COPY.fr).title;
+/** Most recently launched first. */
+export function recentGames(games) {
+  return gamesByIds(games, readIds(RECENT_KEY));
 }
 
-/** Star toggle placed over a grid tile (outside the tile's <a>). */
+/** In the order they were starred. */
+export function favoriteGames(games) {
+  return gamesByIds(games, readIds(FAVORITES_KEY));
+}
+
+/** Star toggle placed next to a game link (outside the <a>). */
 export function createFavoriteButton(game, lang, onChange) {
   const copy = COPY[lang] || COPY.fr;
   const button = document.createElement("button");
   button.type = "button";
-  button.className = "game-tile__favorite";
+  button.className = "game-row__favorite";
   button.dataset.id = `hub-favorite-${game.id}`;
 
   const paint = (favorite) => {

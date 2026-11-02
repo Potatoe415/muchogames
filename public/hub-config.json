@@ -3,180 +3,205 @@
     "id": "pictionary",
     "title": "Dessiner c'est gagné",
     "kind": "wordpack",
-    "category": "mots",
+    "tags": ["soiree", "mots"],
     "added": "2026-03-10",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=pictionary",
     "data": "/data/pictionary/pictionary_words.json",
-    "thumbnail": "/games/pictionary/assets/thumbnail.jpg"
+    "thumbnail": "/games/pictionary/assets/thumbnail.jpg",
+    "players": [4, 12],
+    "duration": 30
   },
   {
     "id": "taboo",
     "title": "Taboo",
     "kind": "wordpack",
-    "category": "mots",
+    "tags": ["soiree", "mots"],
     "added": "2026-03-10",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=taboo",
     "data": "/data/taboo/taboo_words.json",
     "thumbnail": "/games/taboo/assets/Gemini_Generated_Image_4xl1b54xl1b54xl1.jpg",
-    "banner": "/games/taboo/assets/tab-short.jpg"
+    "banner": "/games/taboo/assets/tab-short.jpg",
+    "players": [4, 12],
+    "duration": 30
   },
   {
     "id": "esquisse",
     "title": "Téléphone bizarre",
     "kind": "wordpack",
-    "category": "mots",
+    "tags": ["soiree"],
     "added": "2026-03-10",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=esquisse",
     "data": "/data/esquisse/esquisse_words.json",
-    "thumbnail": "/games/esquisse/assets/thumbnail.jpg"
+    "thumbnail": "/games/esquisse/assets/thumbnail.jpg",
+    "players": [4, 12],
+    "duration": 20
   },
   {
     "id": "blackstories",
     "title": "Black Stories",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["soiree"],
     "added": "2026-03-10",
     "launch": "/games/blackstories/index.html",
     "thumbnail": "/games/blackstories/assets/thumbnail.jpg",
-    "endless": true
+    "endless": true,
+    "players": [2, 10],
+    "duration": 15
   },
   {
     "id": "olemains",
     "title": "Jeu de mains",
     "kind": "custom",
-    "category": "mots",
+    "tags": ["soiree", "mots"],
     "added": "2026-03-10",
     "launch": "/games/olemains/index.html",
     "data": "/data/olemains/words.json",
-    "thumbnail": "/games/olemains/assets/thumbnail.jpg"
+    "thumbnail": "/games/olemains/assets/thumbnail.jpg",
+    "players": [4, 12],
+    "duration": 20
   },
   {
     "id": "easyfrog",
     "title": "Easy Frog",
     "kind": "external",
-    "category": "autres",
+    "tags": ["arcade"],
     "added": "2026-03-10",
     "launch": "https://easyfrog.web.app/",
     "thumbnail": "/games/easyfrog/assets/thumbnail.jpg",
-    "coinPolicy": "launch"
+    "coinPolicy": "launch",
+    "players": [1, 1],
+    "duration": 5
   },
   {
     "id": "cafards",
     "title": "Salade de Cafards",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["cartes", "soiree"],
     "added": "2026-03-10",
     "launch": "/games/cafards/index.html",
-    "thumbnail": "/games/cafards/assets/background.jpg"
+    "thumbnail": "/games/cafards/assets/background.jpg",
+    "players": [2, 6],
+    "duration": 15
   },
   {
     "id": "millionaire",
     "title": "Qui veut gagner des millions ?",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["quiz"],
     "added": "2026-03-10",
     "launch": "/games/millionaire/index.html",
-    "thumbnail": "/games/millionaire/assets/thumbnail.jpg"
+    "thumbnail": "/games/millionaire/assets/thumbnail.jpg",
+    "players": [1, 1],
+    "duration": 15
   },
   {
     "id": "pipedream",
     "title": "Pipe Dream",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion", "arcade"],
     "added": "2026-10-24",
     "launch": "/games/pipedream/index.html",
     "thumbnail": "/games/pipedream/assets/thumbnail.jpg",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 10
   },
   {
     "id": "jezzball",
     "title": "JezzBall",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["arcade"],
     "added": "2026-10-24",
     "launch": "/games/jezzball/index.html",
     "thumbnail": "/games/jezzball/assets/thumbnail.jpg",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 10
   },
   {
     "id": "skifree",
     "title": "SkiFree",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["arcade"],
     "added": "2026-10-24",
     "launch": "/games/skifree/index.html",
     "thumbnail": "/games/skifree/assets/thumbnail.png",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 3
   },
   {
     "id": "chipschallenge",
     "title": "Chip's Challenge",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion"],
     "added": "2026-10-24",
     "launch": "/games/chipschallenge/index.html",
     "thumbnail": "/games/chipschallenge/assets/thumbnail.png",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 15
   },
   {
     "id": "minesweeper",
     "title": "Démineur",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion"],
     "added": "2026-10-24",
     "launch": "/games/minesweeper/index.html",
     "thumbnail": "/games/minesweeper/assets/thumbnail.jpg",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 5
   },
   {
     "id": "spacecadet",
     "title": "Space Cadet",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["arcade"],
     "added": "2026-10-25",
     "launch": "/games/spacecadet/index.html",
     "thumbnail": "/games/spacecadet/assets/thumbnail.jpg",
     "players": [1, 1],
+    "duration": 10,
     "resumable": false
   },
   {
     "id": "memory",
     "title": "Memory",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion"],
     "added": "2026-10-25",
     "launch": "/games/memory/index.html",
     "thumbnail": "/games/memory/assets/thumbnail.jpg",
-    "players": [1, 2]
+    "players": [1, 2],
+    "duration": 10
   },
   {
     "id": "checkers",
     "title": "Jeu de dames",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion"],
     "added": "2026-10-28",
     "launch": "/games/checkers/index.html",
     "thumbnail": "/games/checkers/assets/thumbnail.svg",
-    "players": [1, 2]
+    "players": [1, 2],
+    "duration": 20
   },
   {
     "id": "chess",
     "title": "Échecs",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion"],
     "added": "2026-10-31",
     "launch": "/games/chess/index.html",
     "thumbnail": "/games/chess/assets/thumbnail.webp",
-    "players": [1, 2]
+    "players": [1, 2],
+    "duration": 30
   },
   {
     "id": "fruitslash",
     "title": "Fruit Slash",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["arcade"],
     "added": "2026-10-31",
     "launch": "/games/fruitslash/index.html",
     "thumbnail": "/games/fruitslash/assets/thumbnail.svg",
@@ -187,163 +212,182 @@
     "id": "scrabble",
     "title": "Scrabble",
     "kind": "custom",
-    "category": "mots",
+    "tags": ["mots", "reflexion"],
     "added": "2026-11-01",
     "launch": "/games/scrabble/index.html",
     "thumbnail": "/games/scrabble/assets/thumbnail.svg",
-    "players": [1, 4]
+    "players": [1, 4],
+    "duration": 45
   },
   {
     "id": "trivialpursuit",
     "title": "Trivial Quizz",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["quiz"],
     "added": "2026-11-02",
     "launch": "/games/trivialpursuit/index.html",
     "thumbnail": "/games/trivialpursuit/assets/thumbnail.svg",
-    "players": [1, 6]
+    "players": [1, 6],
+    "duration": 45
   },
   {
     "id": "sudoku",
     "title": "Sudoku",
     "kind": "custom",
-    "category": "autres",
+    "tags": ["reflexion"],
     "added": "2026-10-28",
     "launch": "/games/sudoku/index.html",
     "thumbnail": "/games/sudoku/assets/thumbnail.svg",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 15
   },
   {
     "id": "bridge",
     "title": "Bridge",
     "kind": "custom",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-10-28",
     "launch": "/games/bridge/index.html",
     "thumbnail": "/games/bridge/assets/thumbnail.jpg",
-    "players": [1, 1]
+    "players": [1, 1],
+    "duration": 30
   },
   {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
     "kind": "wordpack",
-    "category": "mots",
+    "tags": ["soiree", "mots"],
     "added": "2026-03-11",
     "engine": "wordplayer",
     "launch": "/wordplayer.html?game=pigeonpigeon",
     "data": "/data/pigeonpigeon/pigeonpigeon_words.json",
-    "thumbnail": "/games/pigeonpigeon/assets/thumbnail.jpg"
+    "thumbnail": "/games/pigeonpigeon/assets/thumbnail.jpg",
+    "players": [3, 10],
+    "duration": 30
   },
   {
     "id": "pyramide",
     "title": "Pyramide",
     "kind": "custom",
-    "category": "mots",
+    "tags": ["mots", "soiree"],
     "added": "2026-03-11",
     "launch": "/games/pyramide/index.html",
-    "thumbnail": "/games/pyramide/data/images/thumbnail.jpg"
+    "thumbnail": "/games/pyramide/data/images/thumbnail.jpg",
+    "players": [2, 6],
+    "duration": 20
   },
   {
     "id": "yatsy",
     "title": "Yams",
     "kind": "custom",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-05-23",
     "launch": "/games/yatsy/index.html",
     "thumbnail": "/games/yatsy/assets/Gemini_Generated_Image_z31dj3z31dj3z31d.jpg",
-    "players": [1, 2]
+    "players": [1, 2],
+    "duration": 20
   },
   {
     "id": "tranquil",
     "title": "Tranquil",
     "kind": "external",
-    "category": "autres",
+    "tags": ["cartes"],
     "added": "2026-06-05",
     "launch": "https://tranquil-woad.vercel.app/",
     "thumbnail": "/games/tranquil/assets/thumbnail.webp",
-    "source": "apps/tranquil"
+    "source": "apps/tranquil",
+    "players": [1, 5],
+    "duration": 20
   },
   {
     "id": "coinche",
     "title": "Coinche",
     "kind": "external",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-08-17",
     "launch": "https://coinchapp.vercel.app/coinche",
     "thumbnail": "/games/coinchapp/assets/coinche-thumb.jpg",
     "sameTab": true,
     "players": [1, 4],
+    "duration": 30,
     "source": "apps/coinchapp"
   },
   {
     "id": "belote",
     "title": "Belote",
     "kind": "external",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-10-31",
     "launch": "https://coinchapp.vercel.app/belote",
     "thumbnail": "/games/coinchapp/assets/thumbnail-belote.jpg",
     "sameTab": true,
     "players": [1, 4],
+    "duration": 30,
     "source": "apps/coinchapp"
   },
   {
     "id": "bouilla",
     "title": "Bouilla",
     "kind": "external",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-08-17",
     "launch": "https://coinchapp.vercel.app/bouilla",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bouilla.png",
     "sameTab": true,
     "players": [1, 4],
+    "duration": 20,
     "source": "apps/coinchapp"
   },
   {
     "id": "president",
     "title": "Président",
     "kind": "external",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-09-10",
     "launch": "https://coinchapp.vercel.app/president",
     "thumbnail": "/games/coinchapp/assets/thumbnail-president.jpg",
     "sameTab": true,
     "players": [1, 4],
+    "duration": 15,
     "source": "apps/coinchapp"
   },
   {
     "id": "bataillecorse",
     "title": "La Bataille Corse",
     "kind": "external",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-09-16",
     "launch": "https://coinchapp.vercel.app/bataillecorse",
     "thumbnail": "/games/coinchapp/assets/thumbnail-bataillecorse.jpg",
     "sameTab": true,
     "players": [1, 2],
+    "duration": 10,
     "source": "apps/coinchapp"
   },
   {
     "id": "solitaire",
     "title": "Solitaire",
     "kind": "external",
-    "category": "cartesdes",
+    "tags": ["cartes"],
     "added": "2026-10-23",
     "launch": "https://coinchapp.vercel.app/solitaire",
     "thumbnail": "/games/coinchapp/assets/thumbnail-solitaire.jpg",
     "sameTab": true,
     "players": [1, 1],
+    "duration": 10,
     "source": "apps/coinchapp"
   },
   {
     "id": "gameboy-web",
     "title": "GameBoy Web",
     "kind": "external",
-    "category": "autres",
+    "tags": ["arcade"],
     "added": "2026-09-01",
     "launch": "https://gameboy-web.vercel.app/binjgb/docs/simple.html",
     "thumbnail": "/games/gameboy-web/assets/thumbnail.jpg",
     "sameTab": true,
-    "coinPolicy": "launch"
+    "coinPolicy": "launch",
+    "players": [1, 1],
+    "duration": 15
   }
 ]

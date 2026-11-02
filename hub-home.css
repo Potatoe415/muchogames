@@ -1,0 +1,159 @@
+/* Home view (hub-home.js, hub-tiles.js): rows of small square tiles that
+   scroll sideways on touch screens and wrap on wide mouse screens. */
+.hub-home {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hub-home[hidden] {
+  display: none;
+}
+
+.hub-row__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.hub-row__title {
+  margin: 0;
+  font-family: "Baloo 2", cursive;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #5a3a22;
+}
+
+.hub-row__more {
+  flex: none;
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #c8663f;
+  cursor: pointer;
+}
+
+.hub-row__track {
+  display: flex;
+  gap: 12px;
+  margin: 0 calc(-1 * clamp(20px, 3vw, 32px));
+  padding: 2px clamp(20px, 3vw, 32px) 6px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: clamp(20px, 3vw, 32px);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hub-row__track::-webkit-scrollbar {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+  .hub-row__track {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    margin: 0;
+    padding: 2px 0 6px;
+  }
+}
+
+/* --- Square tile + title under it --- */
+.game-icon {
+  flex: none;
+  width: clamp(80px, 22vw, 96px);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none;
+  color: #5a3a22;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-icon__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #eef3f6;
+  box-shadow: 0 3px 10px rgba(60, 40, 20, 0.16);
+  transition: transform 0.15s ease;
+}
+
+.game-icon:hover .game-icon__media {
+  transform: translateY(-2px);
+}
+
+.game-icon:active .game-icon__media {
+  transform: scale(0.95);
+}
+
+.game-icon:focus-visible {
+  outline: none;
+}
+
+.game-icon:focus-visible .game-icon__media {
+  outline: 3px solid #5a3a22;
+  outline-offset: 2px;
+}
+
+.game-icon__thumb,
+.game-row__thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-icon__thumb[data-game="coinche"],
+.game-icon__thumb[data-game="yatsy"],
+.game-icon__thumb[data-game="bataillecorse"],
+.game-icon__thumb[data-game="solitaire"],
+.game-icon__thumb[data-game="belote"],
+.game-icon__thumb[data-game="bridge"],
+.game-row__thumb[data-game="coinche"],
+.game-row__thumb[data-game="yatsy"],
+.game-row__thumb[data-game="bataillecorse"],
+.game-row__thumb[data-game="solitaire"],
+.game-row__thumb[data-game="belote"],
+.game-row__thumb[data-game="bridge"] {
+  object-position: top;
+}
+
+.game-icon__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.game-icon__quick {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}

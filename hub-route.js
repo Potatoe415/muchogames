@@ -5,7 +5,7 @@
 import { AXES, EMPTY_FILTERS } from "./hub-taxonomy.js";
 
 const VIEW_ALL = "all";
-const MAX_QUERY_LENGTH = 60;
+export const MAX_QUERY_LENGTH = 60;
 const KEYS = ["view", "q", "fav", ...Object.keys(AXES)];
 
 export function readRoute(search = window.location.search) {

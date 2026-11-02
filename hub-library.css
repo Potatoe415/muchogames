@@ -1,0 +1,178 @@
+/* "All games" library (hub-library.js, hub-tiles.js): one-line pill row in
+   the sticky bar and a compact list of games. */
+.hub-pills {
+  display: flex;
+  gap: 6px;
+  margin: 0 calc(-1 * clamp(20px, 3vw, 32px));
+  padding: 0 clamp(20px, 3vw, 32px);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hub-pills[hidden] {
+  display: none;
+}
+
+.hub-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.hub-pill {
+  flex: none;
+  min-height: 34px;
+  padding: 0 13px;
+  border: 1.5px solid rgba(90, 58, 34, 0.18);
+  border-radius: 999px;
+  background: #fff;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #5a3a22;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.hub-pill.is-active {
+  border-color: #5a3a22;
+  background: #5a3a22;
+  color: #fff;
+}
+
+.hub-pill:focus-visible {
+  outline: 2px solid #c8663f;
+  outline-offset: 2px;
+}
+
+.hub-library {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hub-library[hidden] {
+  display: none;
+}
+
+.hub-library__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(90, 58, 34, 0.65);
+}
+
+.hub-library__clear {
+  border: none;
+  background: none;
+  padding: 4px 0;
+  font: inherit;
+  color: #c8663f;
+  cursor: pointer;
+}
+
+.hub-library__empty {
+  margin: 24px 0;
+  text-align: center;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-weight: 600;
+  color: rgba(90, 58, 34, 0.7);
+}
+
+.hub-library__list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 3px 12px rgba(60, 40, 20, 0.08);
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .hub-library__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- One game per row: icon, title, meta, star --- */
+.game-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-right: 4px;
+  border-bottom: 1px solid rgba(90, 58, 34, 0.08);
+}
+
+.game-row__link {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0 8px 10px;
+  text-decoration: none;
+  color: #5a3a22;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-row__link:active {
+  background: rgba(90, 58, 34, 0.06);
+}
+
+.game-row__link:focus-visible {
+  outline: 2px solid #5a3a22;
+  outline-offset: -2px;
+}
+
+.game-row__thumb {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eef3f6;
+}
+
+.game-row__body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.game-row__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Baloo 2", cursive;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.15;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.game-row__meta {
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(90, 58, 34, 0.65);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.game-row__title .game-tile__new {
+  position: static;
+  flex: none;
+  padding: 0 7px;
+  font-size: 10px;
+  line-height: 1.6;
+  box-shadow: none;
+}

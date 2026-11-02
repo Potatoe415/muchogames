@@ -4,6 +4,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] **User**: on a phone, try the new hub (decision 0058): Home rows scroll sideways, "Tout voir", Tous les jeux pills combined, search, ★ in the list, Back button, a shared `?view=all&type=…` link. Check my estimates in `public/hub-config.json`: every `duration` (only Fruit Slash had one) and `players` of Pictionary, Taboo, Téléphone bizarre, Dictionnaire, Jeu de mains, Pyramide, Black Stories, Salade de Cafards, Millionaire, Easy Frog, Tranquil, GameBoy Web; and the square crop of each thumbnail.
 - [ ] **User**: play Millionaire on the Sony Bravia 8 II browser (`/games/millionaire/index.html?tv=1` once, then remembered): whole screen filled, remote arrows/OK/Back, fullscreen on "Commencer", screen stays awake. If the TV's Back key leaves the page instead of closing dialogs, report it (Android TV browsers may not send it to the page).
 - [ ] Millionaire "Avis du public" can total over 100 % and drop an answer (`buildAudienceDistribution`, pre-existing): seen A 45 % / B 8 % / C 48 %, D missing.
 - [ ] Millionaire `style.css`: the `.start-card, .result-card` rule has a literal `` `n `` in its selector, so the browser drops it (pre-existing; TV mode sets its own sizes).
@@ -67,14 +68,14 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Decide: keep `data-id` attributes or migrate to `data-testid` (bootstrap v10.1 default) — most existing games predate `data-id` entirely; a repo-wide rename is a separate, larger decision.
 - [ ] Continue splitting `public/games/yatsy/app.js` (1187 lines against the 300-line limit; `storage.js`/`render.js`/`session.js` already extracted). `public/games/millionaire/app.js` (1069), `public/games/pyramide/app.js` (847), `wordplayer.js` (700) are also over limit.
 - [ ] Serve `@supabase/supabase-js` from the npm dependency instead of the unpinned runtime CDN import in `public/shared/js/online-room.js`.
-- [ ] Accessibility pass on the hub: `role="tablist"`/`aria-selected` on category tabs, keyboard support + `aria-expanded` on the language switcher, `:focus-visible`, `prefers-reduced-motion`, update `<html lang>`.
+- [ ] Accessibility pass on the hub: `aria-pressed` is on the Home / All games switch and pills; still to do: keyboard support + `aria-expanded` on the language switcher, `:focus-visible`, `prefers-reduced-motion`, update `<html lang>`.
 - [ ] Deduplicate the rules-modal loading logic repeated across several games.
 - [ ] Author a `NOTES.md` (per `docs/GAMES_MAP.md`'s convention) for `millionaire`, `pyramide`, `yatsy`.
 - [ ] Fix `public/games/pictionary/index.html` + `main.js`: orphaned, not referenced by `hub-config.json` (pre-existing dead code, left untouched per `AGENTS.md`).
 - [ ] Extend the admin page further if wanted (hub visits, per-language split, live event feed) — declined once already (2026-08-30), needs new columns + a deliberate personal-data decision.
 - [ ] Split `public/admin/admin.css` when it next grows (271/300 lines).
 - [ ] Finish the "bergamots" → "muchogames" rename: `localStorage` keys (`bergamots-lang`, `bergamots-player-name`, `bergamots-player-avatar*`, `bergamots-auth`, `bergamots-launch-counts`) and the `yatzy_*` Supabase tables are still unrenamed (deliberate — renaming either resets/migrates real user data).
-- [ ] **User**: give `players: [min, max]` and `duration` for the 12 untagged games in `public/hub-config.json` (Pictionary, Taboo, Téléphone bizarre, Dictionnaire, Jeu de mains, Pyramide, Black Stories, Salade de Cafards, Millionnaire, Easy Frog, Tranquil, GameBoy Web) and durations for all 17 — the tile badges only show what is filled in.
+- [ ] Hub step 2 (decision 0058): bottom sheet for advanced filters ("Afficher X jeux"), square WebP icons ~120 px if the CSS crop of the current thumbnails looks bad, an "offline" badge only once some games really play offline.
 - [ ] Whether to raise `printWidth` from 80 to 100.
 - [ ] Whether PRODUCT should stay "max 3 rolls" given the online joke extra roll.
 - [ ] Whether PRODUCT/TECH should drop "avatar is Bergamots-only".

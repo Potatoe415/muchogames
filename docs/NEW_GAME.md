@@ -33,15 +33,15 @@ See `docs/GAMES_MAP.md` for what each looks like today.
 - **Zero changes to `hub.js` or `vite.config.js`** — config over code
   (`AGENTS.md` Section 6, `docs/TECH.md` Architecture_Principles).
 - Register one entry in `public/hub-config.json`: `id`, `title`, `kind`,
-  `category` (reuse an existing one — `mots`, `cartesdes`, `autres` —
-  unless the game genuinely needs a new one; a new category is a
-  `docs/PRODUCT.md`-level decision, ask first), `launch`, `thumbnail`,
-  and `data` if `wordpack`. Required: `added` (`YYYY-MM-DD`, the day it
-  joins the catalog — the hub sort uses it; same day keeps catalog order).
-  Optional: `players: [min, max]` (humans
-  needed, bots don't count) and `duration` (typical minutes) — they drive
-  the tile tags and the hub's "how many are we?" filter; omit them rather
-  than guess. An `external` game also needs `source` (its colocated
+  `tags` (one or more existing types from `hub-taxonomy.js` — `cartes`,
+  `soiree`, `mots`, `reflexion`, `arcade`, `quiz`; a new type is a
+  `docs/PRODUCT.md`-level decision, ask first), `launch`, `thumbnail`
+  (shown cropped to a square: keep the subject centred), and `data` if
+  `wordpack`. Also required: `added` (`YYYY-MM-DD`, the day it joins the
+  catalog — the hub sort uses it; same day keeps catalog order),
+  `players: [min, max]` (humans needed, bots don't count) and `duration`
+  (typical minutes; ≤ 5 puts it in the Quick row) — they drive the
+  library filters, and `npm run check` fails without them. An `external` game also needs `source` (its colocated
   `apps/<name>` folder) or `"coinPolicy": "launch"` when its code is not in
   this repo (`docs/PLATFORM_RULES.md` section 3). `"endless": true` only
   for a game with no end screen (`docs/PLATFORM_RULES.md` section 2).
@@ -110,6 +110,6 @@ See `docs/GAMES_MAP.md` for what each looks like today.
 ## 3. Confirm before diverging
 
 Stop and ask instead of silently improvising if the game seems to need:
-a new `hub-config.json` category or `kind` beyond `wordpack`/`custom`/
+a new `hub-config.json` type tag or `kind` beyond `wordpack`/`custom`/
 `external`, a new shared dependency, or an exception to a size/`data-id`/
 i18n rule above.

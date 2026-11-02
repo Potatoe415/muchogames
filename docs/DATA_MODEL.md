@@ -35,14 +35,14 @@ Fields:
 | id | string | Yes | kebab-case, matches `public/games/<id>/` folder |
 | title | string | Yes | Display name on the hub tile |
 | kind | string | Yes | `wordpack` \| `custom` \| `external` |
-| category | string | Yes | `cartesdes` \| `mots` \| `autres` — which hub tab the tile appears under |
+| tags | string[] | Yes | One or more of `cartes` \| `soiree` \| `mots` \| `reflexion` \| `arcade` \| `quiz` (`hub-taxonomy.js`). Home row(s) and library "type" pill |
 | added | string | Yes | `YYYY-MM-DD`, the day the game joined the catalog. Hub sort "newest" (the default) uses it. Same day keeps catalog order. Missing sorts last |
 | engine | string | wordpack only | e.g. `wordplayer` |
 | launch | string | Yes | Relative path or external URL to open |
 | data | string | wordpack only | Path to the game's word JSON |
 | thumbnail | string | Yes | Path to `assets/thumbnail.jpg` for the tile |
-| players | [int, int] | No | `[min, max]` humans; player-count badge, bottom-right of the hub tile (`hub-tags.js`). Missing = no badge |
-| duration | int | No | Typical minutes; tile tag only |
+| players | [int, int] | Yes | `[min, max]` humans needed (bots don't count), `1 <= min <= max`. Library list text and the Solo / 2 players / Group (3+) pills |
+| duration | int | Yes | Typical minutes. ≤ 5 = Quick (⚡ badge, Home row), ≤ 20 = medium, else long |
 | resumable | boolean | No | `false` only for a game that cannot save a match in progress (`docs/PLATFORM_RULES.md` section 8); `scripts/check-games.mjs` then skips the resume checks. Missing = resumable |
 
 Relationships:
@@ -52,7 +52,7 @@ Relationships:
 Constraints:
 - `id` must be unique across the array.
 - `thumbnail` file must exist at build time for the tile to render correctly.
-- `category` must be one of `cartesdes` / `mots` / `autres`; `hub.js` renders only the games matching the currently selected tab (no fallback bucket), so every entry needs a valid value.
+- `tags`, `players` and `duration` must be valid on every entry; `npm run check` (`scripts/check-games.mjs`, rules `catalog-*`) fails otherwise. A game with no valid tag appears in no Home type row.
 
 Access_Rules:
 - Public, read-only, fetched client-side by `hub.js` and `wordplayer.js`.
@@ -338,3 +338,9 @@ Reason: Owner request. The "least recent" row is gone.
 Change: `HubGameEntry` gains optional `resumable` (only `false`, Space Cadet). Every other game keeps its match in progress in its own `localStorage` key until the match ends (decision 0054); keys are listed in each game's `NOTES.md`.
 Reason: Owner request: leaving a match by mistake must never lose it.
 Impact: Browser only, no server data.
+
+## 2026-11-02 - Hub tags (`tags` replaces `category`)
+
+Change: `HubGameEntry.category` removed; `tags` (types), `players` and `duration` now required on every entry and checked by `npm run check`. The hub reads its view and filters from the URL (`?view=all&type=&time=&players=&fav=1&q=`); no new storage key.
+Reason: Owner request: too many games for tabs; Home rows + filtered library (decision 0058).
+Impact: Browser only. `players` / `duration` of games that lacked them are estimates, to adjust in `public/hub-config.json`.

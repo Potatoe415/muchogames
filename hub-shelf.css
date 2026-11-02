@@ -1,43 +1,115 @@
-/* "My games" tab, favorite stars, tile tags / player-count badge
-   (hub-shelf.js, hub-tags.js) and the category-bar sort (hub-sort.js).
-   Kept apart from hub.css, which is already past the file-size limit. */
+/* Sticky hub bar (hub-nav.js): Home / All games switch, sort (hub-sort.js),
+   search box and the library pill row, plus the favorite star of a list row
+   (hub-shelf.js). Kept apart from hub.css, which is past the size limit. */
+.hub-nav {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: -8px calc(-1 * clamp(20px, 3vw, 32px)) 0;
+  padding: 8px clamp(20px, 3vw, 32px) 10px;
+  background: rgba(255, 250, 235, 0.94);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 12px -10px rgba(90, 58, 34, 0.45);
+}
 
-/* One line. Scroll sideways when the labels don't fit. The sort
-   button stays at the end and does not scroll away. */
-.category-bar {
+.hub-nav__bar {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
-  position: relative;
-  z-index: 5;
   min-width: 0;
 }
 
-.category-tabs {
-  position: relative;
-  flex-wrap: nowrap;
-  justify-content: safe center;
-  gap: 8px clamp(10px, 3.2vw, 26px);
+.hub-views {
+  flex: 1;
+  display: flex;
+  gap: 4px;
   min-width: 0;
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(90, 58, 34, 0.08);
 }
 
-.category-tabs::-webkit-scrollbar {
-  display: none;
+.hub-view {
+  flex: 1;
+  min-width: 0;
+  min-height: 36px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 999px;
+  background: none;
+  font-family: "Baloo 2", cursive;
+  font-size: clamp(14px, 4vw, 17px);
+  font-weight: 700;
+  color: rgba(90, 58, 34, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    color 0.18s;
 }
 
+.hub-view.is-active {
+  background: #fff;
+  color: #5a3a22;
+  box-shadow: 0 2px 6px rgba(90, 58, 34, 0.18);
+}
+
+.hub-view:focus-visible,
+.hub-search__input:focus-visible {
+  outline: 2px solid #5a3a22;
+  outline-offset: 2px;
+}
+
+/* --- Search --- */
+.hub-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hub-search__icon {
+  position: absolute;
+  left: 13px;
+  color: rgba(90, 58, 34, 0.55);
+  pointer-events: none;
+}
+
+.hub-search__input {
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  padding: 0 14px 0 40px;
+  border: 1.5px solid rgba(90, 58, 34, 0.18);
+  border-radius: 999px;
+  background: #fff;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5a3a22;
+}
+
+.hub-search__input::placeholder {
+  color: rgba(90, 58, 34, 0.45);
+}
+
+/* --- Sort (library only) --- */
 .hub-sort {
   position: relative;
   flex: none;
 }
 
+.hub-sort[hidden] {
+  display: none;
+}
+
 .hub-sort__button {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border: none;
   border-radius: 50%;
   background: rgba(90, 58, 34, 0.08);
@@ -91,78 +163,22 @@
   background: rgba(90, 58, 34, 0.1);
 }
 
-.category-tab {
+/* --- Favorite star at the end of a list row --- */
+.game-row__favorite {
   flex: none;
-  font-size: clamp(14px, 4.1vw, 19px);
-}
-
-.category-tab--mesjeux.is-active {
-  border-bottom-color: #5b8fb9;
-}
-
-/* --- Favorite star over a grid tile --- */
-.game-tile-wrap {
-  position: relative;
-}
-
-.game-tile__favorite {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 2;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   border: none;
   border-radius: 50%;
-  background: rgba(20, 38, 48, 0.45);
-  color: #fff;
-  font-size: 18px;
-  line-height: 32px;
+  background: none;
+  color: rgba(90, 58, 34, 0.4);
+  font-size: 22px;
+  line-height: 44px;
   text-align: center;
   cursor: pointer;
   padding: 0;
 }
 
-.game-tile__favorite.is-favorite {
-  color: #ffc94d;
-  background: rgba(20, 38, 48, 0.65);
-}
-
-/* --- Duration tag under the tile title --- */
-.game-tile__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin-top: 4px;
-}
-
-.game-tile__tag {
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.22);
-  font-family: "Quicksand", system-ui, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  text-shadow: none;
-}
-
-/* --- Player count, bottom-right corner of the tile --- */
-.game-tile__title--with-players {
-  padding-right: 62px;
-}
-
-.game-tile__players {
-  position: absolute;
-  right: 10px;
-  bottom: 13px;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.22);
-  font-family: "Quicksand", system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #fff;
-  text-shadow: none;
-  white-space: nowrap;
+.game-row__favorite.is-favorite {
+  color: #e0a63f;
 }
