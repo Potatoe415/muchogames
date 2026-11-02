@@ -13,7 +13,7 @@ const RULES = {
       <li>Avec les 6 camemberts, rejoignez le centre au compte exact : les adversaires choisissent la catégorie de la question finale. Bonne réponse : vous gagnez.</li>
     </ul>
     <p><b>Partie rapide</b> : chaque bonne réponse donne le camembert de sa catégorie, sur n'importe quelle case. La question finale au centre reste obligatoire.</p>
-    <p><b>Roue de la fortune</b> : pas de plateau. Faites tourner la roue en glissant le doigt dessus, ou avec « Lancer la roue » : sa couleur donne la catégorie. Chaque bonne réponse donne le camembert de cette couleur. Avec les 6 camemberts, la roue donne la catégorie de la question finale.</p>
+    <p><b>Roue de la fortune</b> : pas de plateau. Faites tourner la roue en glissant le doigt dessus (plus le geste est rapide, plus elle tourne longtemps), ou avec « Lancer la roue » : sa couleur donne la catégorie. Vous pouvez aussi toucher une couleur pour la choisir. Chaque bonne réponse donne le camembert de cette couleur. Avec les 6 camemberts, la roue donne la catégorie de la question finale.</p>
     <p>« Autre question » remplace une question illisible ou déjà connue, sans pénalité.</p>`,
   en: `
     <p>1 to 6 players on one device. Every pawn starts in the middle.</p>
@@ -28,7 +28,7 @@ const RULES = {
       <li>With all 6 wedges, reach the middle by exact count: the opponents pick the category of the final question. Right answer: you win.</li>
     </ul>
     <p><b>Quick game</b>: every right answer wins the wedge of its category, on any space. The final question in the middle is still required.</p>
-    <p><b>Fortune wheel</b>: no board. Spin the wheel with a swipe, or with “Spin the wheel”: its colour gives the category. Every right answer wins the wedge of that colour. With all 6 wedges, the wheel gives the category of the final question.</p>
+    <p><b>Fortune wheel</b>: no board. Spin the wheel with a swipe (the faster the swipe, the longer it spins), or with “Spin the wheel”: its colour gives the category. You can also tap a colour to pick it. Every right answer wins the wedge of that colour. With all 6 wedges, the wheel gives the category of the final question.</p>
     <p>“Another question” swaps an unreadable or known question, no penalty.</p>`,
   es: `
     <p>De 1 a 6 jugadores en el mismo dispositivo. Todas las fichas salen del centro.</p>
@@ -43,7 +43,7 @@ const RULES = {
       <li>Con los 6 quesitos, llega al centro con el número exacto: los rivales eligen la categoría de la pregunta final. Si aciertas, ganas.</li>
     </ul>
     <p><b>Partida rápida</b>: cada acierto da el quesito de su categoría, en cualquier casilla. La pregunta final en el centro sigue siendo obligatoria.</p>
-    <p><b>Rueda de la fortuna</b>: sin tablero. Gira la rueda deslizando el dedo, o con «Girar la rueda»: su color da la categoría. Cada acierto da el quesito de ese color. Con los 6 quesitos, la rueda da la categoría de la pregunta final.</p>
+    <p><b>Rueda de la fortuna</b>: sin tablero. Gira la rueda deslizando el dedo (cuanto más rápido, más tiempo gira), o con «Girar la rueda»: su color da la categoría. También puedes tocar un color para elegirlo. Cada acierto da el quesito de ese color. Con los 6 quesitos, la rueda da la categoría de la pregunta final.</p>
     <p>«Otra pregunta» cambia una pregunta ilegible o conocida, sin penalización.</p>`
 };
 

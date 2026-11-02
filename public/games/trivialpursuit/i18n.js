@@ -32,7 +32,7 @@ const STRINGS = {
     rollDie: "Lancer le dé",
     spinWheel: "Lancer la roue",
     wheelAria:
-      "Roue des catégories : glissez le doigt dessus pour la faire tourner",
+      "Roue des catégories : glissez le doigt pour la faire tourner, ou touchez une couleur pour la choisir",
     goWheel: "Les 6 camemberts ! Lancez la roue pour la question finale.",
     moveHint: "Avancez de {n} : touchez une case en surbrillance.",
     again: "Case « Rejouez » : relancez le dé !",
@@ -99,7 +99,8 @@ const STRINGS = {
     turnOf: "{name}'s turn",
     rollDie: "Roll the die",
     spinWheel: "Spin the wheel",
-    wheelAria: "Category wheel: swipe it to spin it",
+    wheelAria:
+      "Category wheel: swipe it to spin it, or tap a colour to pick it",
     goWheel: "All 6 wedges! Spin the wheel for the final question.",
     moveHint: "Move {n}: tap a highlighted space.",
     again: "“Roll again” space: roll once more!",
@@ -165,7 +166,8 @@ const STRINGS = {
     turnOf: "Turno de {name}",
     rollDie: "Tirar el dado",
     spinWheel: "Girar la rueda",
-    wheelAria: "Rueda de categorías: desliza el dedo para girarla",
+    wheelAria:
+      "Rueda de categorías: desliza el dedo para girarla, o toca un color para elegirlo",
     goWheel: "¡Los 6 quesitos! Gira la rueda para la pregunta final.",
     moveHint: "Avanza {n}: toca una casilla resaltada.",
     again: "Casilla «Vuelve a tirar»: ¡tira otra vez!",

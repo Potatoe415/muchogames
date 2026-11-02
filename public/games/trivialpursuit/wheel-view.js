@@ -1,14 +1,23 @@
 // Wheel mode: a category wheel in place of the board. Drag it with a finger
-// and let go fast enough to spin it, or call spin() (the button). The pointer
-// sits at 12 o'clock; spin() resolves with the category under it.
+// and let go fast enough to spin it (or call spin() from the button), or tap
+// a colour to pick it. The pointer sits at 12 o'clock; spin() and turnTo()
+// resolve with the category under it.
 import { CAT_COLORS } from "./board-view.js";
 
 const SEGMENTS = [0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5];
 const SEG = 360 / SEGMENTS.length;
 const EDGE = 2.5;
-const FLING_MIN = 0.3;
+const FLING_MIN = 0.2;
+const SPEED_MAX = 3;
+const TAP_PX = 8;
+const HUB_SHARE = 0.2;
 const SAMPLE_MS = 100;
 const REDUCED_MS = 300;
+// Exact quadratic ease-out = constant deceleration: the wheel leaves at the
+// finger's speed (deg/ms) and slows to a stop, so a faster swipe spins
+// longer and farther.
+const DECELERATE = "cubic-bezier(0.333, 0.667, 0.667, 1)";
+const spinMs = (speed) => 1500 + 2000 * speed;
 
 const norm = (deg) => ((deg % 360) + 360) % 360;
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -51,40 +60,97 @@ function landing(rot, distance) {
   return end;
 }
 
-function pointerAngle(el, event) {
+function offset(el, event) {
   const box = el.getBoundingClientRect();
-  const x = event.clientX - (box.left + box.width / 2);
-  const y = event.clientY - (box.top + box.height / 2);
-  return (Math.atan2(y, x) * 180) / Math.PI;
+  return {
+    x: event.clientX - (box.left + box.width / 2),
+    y: event.clientY - (box.top + box.height / 2),
+    radius: box.width / 2
+  };
 }
 
-export function createWheelView(boardEl, { canSpin, onFling }, signal) {
-  boardEl.innerHTML =
-    `<div class="tp-wheel" data-id="trivialpursuit-wheel" role="img">` +
-    `<div class="tp-wheel-disc">${wheelSvg()}</div>` +
-    `<div class="tp-wheel-pointer">${POINTER_SVG}</div></div>`;
-  const wheel = boardEl.querySelector(".tp-wheel");
-  const disc = wheel.querySelector(".tp-wheel-disc");
-  const view = { rot: -SEG / 2, drag: null };
+const pointerAngle = (el, event) => {
+  const { x, y } = offset(el, event);
+  return (Math.atan2(y, x) * 180) / Math.PI;
+};
 
-  const paint = () => (disc.style.transform = `rotate(${view.rot}deg)`);
-  paint();
+// Segment under a tap, or -1 on the centre circle.
+function segmentAt(view, event) {
+  const { x, y, radius } = offset(view.wheel, event);
+  if (Math.hypot(x, y) < radius * HUB_SHARE) return -1;
+  const screen = (Math.atan2(x, -y) * 180) / Math.PI;
+  return Math.floor(norm(screen - view.rot) / SEG);
+}
 
+const paint = (view) => (view.disc.style.transform = `rotate(${view.rot}deg)`);
+
+async function rotate(view, to, ms, easing) {
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const time = reduced ? Math.min(ms, REDUCED_MS) : ms;
+  view.rot = to;
+  view.wheel.style.removeProperty("--landed");
+  view.disc.style.transition = `transform ${time}ms ${easing}`;
+  paint(view);
+  await wait(time);
+  const cat = catAt(view.rot);
+  view.wheel.style.setProperty("--landed", CAT_COLORS[cat]);
+  return cat;
+}
+
+// `speed` in degrees per ms; its sign gives the direction. A ±10 % spread on
+// the time keeps the result out of reach of a practised swipe.
+function spin(view, speed = 1 + Math.random()) {
+  const v = Math.min(SPEED_MAX, Math.max(FLING_MIN, Math.abs(speed)));
+  const dir = speed < 0 ? -1 : 1;
+  const ms = Math.round(spinMs(v) * (0.9 + Math.random() * 0.2));
+  return rotate(view, landing(view.rot, (dir * v * ms) / 2), ms, DECELERATE);
+}
+
+// Shortest turn that brings `segment` under the pointer.
+function turnTo(view, segment) {
+  const delta = norm(-(segment + 0.5) * SEG - view.rot + 180) - 180;
+  return rotate(view, view.rot + delta, 250 + Math.abs(delta) * 3, "ease-out");
+}
+
+function release(view, event, on) {
+  const drag = view.drag;
+  if (!drag) return;
+  view.drag = null;
+  view.wheel.classList.remove("is-dragging");
+  if (event.type !== "pointerup" || !on.canSpin()) return;
+  if (drag.moved < TAP_PX) {
+    const segment = segmentAt(view, event);
+    if (segment >= 0) on.onPick(segment);
+    return;
+  }
+  const recent = drag.samples.filter((s) => s.t >= event.timeStamp - SAMPLE_MS);
+  const first = recent[0];
+  const last = recent[recent.length - 1];
+  const ms = last && last.t - first.t;
+  const speed = ms > 0 ? (last.rot - first.rot) / ms : 0;
+  if (Math.abs(speed) >= FLING_MIN) on.onFling(speed);
+}
+
+function bindPointer(view, on, signal) {
+  const { wheel } = view;
+  const opts = { signal };
   wheel.addEventListener(
     "pointerdown",
     (event) => {
-      if (!canSpin()) return;
+      if (!on.canSpin()) return;
       wheel.setPointerCapture(event.pointerId);
       wheel.classList.add("is-dragging");
-      disc.style.transition = "none";
+      view.disc.style.transition = "none";
       view.drag = {
+        x: event.clientX,
+        y: event.clientY,
+        moved: 0,
         last: pointerAngle(wheel, event),
         samples: [{ t: event.timeStamp, rot: view.rot }]
       };
     },
-    { signal }
+    opts
   );
-
   wheel.addEventListener(
     "pointermove",
     (event) => {
@@ -93,53 +159,41 @@ export function createWheelView(boardEl, { canSpin, onFling }, signal) {
       const angle = pointerAngle(wheel, event);
       view.rot += norm(angle - drag.last + 180) - 180;
       drag.last = angle;
+      drag.moved = Math.max(
+        drag.moved,
+        Math.hypot(event.clientX - drag.x, event.clientY - drag.y)
+      );
       drag.samples.push({ t: event.timeStamp, rot: view.rot });
       drag.samples = drag.samples.filter(
         (s) => s.t >= event.timeStamp - SAMPLE_MS
       );
-      paint();
+      paint(view);
     },
-    { signal }
+    opts
   );
+  const end = (event) => release(view, event, on);
+  wheel.addEventListener("pointerup", end, opts);
+  wheel.addEventListener("pointercancel", end, opts);
+}
 
-  const release = (event) => {
-    const drag = view.drag;
-    if (!drag) return;
-    view.drag = null;
-    wheel.classList.remove("is-dragging");
-    if (event.type !== "pointerup") return;
-    const recent = drag.samples.filter(
-      (s) => s.t >= event.timeStamp - SAMPLE_MS
-    );
-    const first = recent[0];
-    const last = recent[recent.length - 1];
-    const ms = last && last.t - first.t;
-    const speed = ms > 0 ? (last.rot - first.rot) / ms : 0;
-    if (Math.abs(speed) >= FLING_MIN && canSpin()) onFling(speed);
+// on = { canSpin(), onFling(speed), onPick(segment) }
+export function createWheelView(boardEl, on, signal) {
+  boardEl.innerHTML =
+    `<div class="tp-wheel" data-id="trivialpursuit-wheel" role="img">` +
+    `<div class="tp-wheel-disc">${wheelSvg()}</div>` +
+    `<div class="tp-wheel-pointer">${POINTER_SVG}</div></div>`;
+  const wheel = boardEl.querySelector(".tp-wheel");
+  const view = {
+    wheel,
+    disc: wheel.querySelector(".tp-wheel-disc"),
+    rot: -SEG / 2,
+    drag: null
   };
-  wheel.addEventListener("pointerup", release, { signal });
-  wheel.addEventListener("pointercancel", release, { signal });
-
-  // `speed` in degrees per ms; its sign gives the direction. The random
-  // last turn makes every category equally likely whatever the swipe.
-  async function spin(speed = 1.2 + Math.random() * 1.2) {
-    const strength = Math.min(3, Math.max(0.6, Math.abs(speed)));
-    const dir = speed < 0 ? -1 : 1;
-    const distance = 1080 + strength * 600 + Math.random() * 360;
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const ms = reduced ? REDUCED_MS : Math.round(3200 + strength * 400);
-    view.rot = landing(view.rot, dir * distance);
-    wheel.style.removeProperty("--landed");
-    disc.style.transition = `transform ${ms}ms cubic-bezier(0.12, 0.8, 0.2, 1)`;
-    paint();
-    await wait(ms);
-    const cat = catAt(view.rot);
-    wheel.style.setProperty("--landed", CAT_COLORS[cat]);
-    return cat;
-  }
-
+  paint(view);
+  bindPointer(view, on, signal);
   return {
-    spin,
+    spin: (speed) => spin(view, speed),
+    turnTo: (segment) => turnTo(view, segment),
     setLabel: (text) => wheel.setAttribute("aria-label", text)
   };
 }
