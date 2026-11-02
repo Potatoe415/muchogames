@@ -19,7 +19,7 @@ Next:
 - Owner: on the TV browser open `https://www.muchogames.win/games/millionaire/index.html?tv=1` once; whole screen, remote keys, fullscreen, no screen saver.
 - Owner phone check of resume in every game, then Memory and Yatzy online on two phones — see `docs/BACKLOG.md` Now.
 - Platform leftovers: `0007_coins.sql` then `0008_match_coins.sql`; `ADMIN_USER_IDS` on coinchapp; Tranquil match start after its Vercel repoint (must pass `p_daily` 20).
-- Proposed: `docs/PRODUCT.md` "Hub conveniences" still describes the "My games" tab and tile badges (now Home rows + library); `docs/ARCHITECTURE.md` still says 7 Hobby functions and omits `GET /api/popular`; `docs/SECURITY.md` does not list that public read, nor Scrabble's browser calls to Wiktionary.
+- Proposed: `docs/PRODUCT.md` "Hub conveniences" still describes the "My games" tab and tile badges (now Home rows + library) and "Daily play coins" a "🪙 n/20" badge (now a pie coin); `docs/ARCHITECTURE.md` hub row still names `hub-tags.js` and the "My games" tab; `docs/ARCHITECTURE.md` still says 7 Hobby functions and omits `GET /api/popular`; `docs/SECURITY.md` does not list that public read, nor Scrabble's browser calls to Wiktionary.
 
 Open_Questions:
 - Scrabble: French ODS 9 list is Larousse/FISF copyright and "Scrabble" a Mattel/Hasbro trademark. Keep, or switch French to a free list and another title.
@@ -31,6 +31,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-02 Hub coins: one 36 px coin in the banner, left of the flags, gold pie = coins left today (number in its tooltip / aria-label). Home tiles 144 px on desktop/TV (≥ 1000×500).
 - 2026-11-02 Trivial Quizz: third mode "Roue de la fortune" (no board; swipe or button spins a 6-colour wheel that picks the category; wedges as in quick; with 6 wedges the wheel picks the final question). Browser-checked at 390×760 and 900×500: button spin, swipe spin, wedge, final question, win; classic unchanged.
 - 2026-11-02 Hub Home rows + library (decision 0058): new modules `hub-taxonomy.js` (DOM-free, also used by `check-games.mjs`), `hub-route.js`, `hub-home.js`, `hub-library.js`, `hub-nav.js`, `hub-tiles.js`; `hub-tags.js` and the tab swipe removed. Browser-checked at 390×760 and desktop: rows, pills, search, ★, Back, shared link, FR/EN.
 - 2026-11-02 Scrabble: players slider 1–4, FR/EN/ES word buttons tick together; old settings/saves migrate.

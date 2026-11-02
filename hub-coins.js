@@ -82,12 +82,20 @@ export async function spendLaunchCoin(gameId) {
   }
 }
 
+/** One coin in the header, filled like a pie chart by what is left today. */
 export function renderCoinBadge(container, lang) {
   if (!container) return;
   const label = LABELS[lang] || LABELS.fr;
   const value = coins.unlimited ? "∞" : `${coins.remaining}/${DAILY_COINS}`;
-  container.textContent = `🪙 ${value}`;
-  container.title = label;
+  const fill = coins.unlimited ? 1 : Math.min(1, coins.remaining / DAILY_COINS);
+  if (!container.firstElementChild) {
+    const coin = document.createElement("span");
+    coin.className = "hub-coins__coin";
+    coin.setAttribute("aria-hidden", "true");
+    container.appendChild(coin);
+  }
+  container.style.setProperty("--coins-fill", String(fill));
+  container.title = `${label} : ${value}`;
   container.setAttribute("aria-label", `${label} : ${value}`);
   container.classList.toggle(
     "is-empty",
