@@ -1487,6 +1487,4450 @@
           "a": "Charles Baudelaire"
         }
       ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en sports de glisse ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel sport se pratique sur la neige avec deux planches ?",
+          "a": "Le ski"
+        },
+        {
+          "level": 2,
+          "q": "Quel sport se pratique sur la neige avec une seule planche ?",
+          "a": "Le snowboard (ou surf des neiges)"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la planche à roulettes en anglais ?",
+          "a": "Le skateboard"
+        },
+        {
+          "level": 4,
+          "q": "Quel sport consiste à glisser sur les vagues avec une planche ?",
+          "a": "Le surf"
+        },
+        {
+          "level": 5,
+          "q": "Quel sport de glisse nautique se pratique tracté par un bateau avec une planche ?",
+          "a": "Le wakeboard"
+        },
+        {
+          "level": 6,
+          "q": "Quel sport consiste à glisser sur la glace avec des lames sous les chaussures ?",
+          "a": "Le patinage sur glace"
+        },
+        {
+          "level": 7,
+          "q": "Au ski, comment appelle-t-on le hors-piste pratiqué dans une neige vierge ?",
+          "a": "Le freeride"
+        },
+        {
+          "level": 8,
+          "q": "Quel sport de glisse se pratique avec un cerf-volant qui tracte le sportif ?",
+          "a": "Le kitesurf"
+        },
+        {
+          "level": 9,
+          "q": "Comment appelle-t-on la structure en forme de demi-tube utilisée en snowboard ou skateboard ?",
+          "a": "Le half-pipe"
+        },
+        {
+          "level": 10,
+          "q": "Quel surfeur américain détient le record du nombre de titres de champion du monde (11 titres) ?",
+          "a": "Kelly Slater"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Le corps humain",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel organe pompe le sang dans le corps ?",
+          "a": "Le cœur"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus grand organe du corps humain ?",
+          "a": "La peau"
+        },
+        {
+          "level": 3,
+          "q": "Combien y a-t-il de poumons dans le corps humain ?",
+          "a": "2"
+        },
+        {
+          "level": 4,
+          "q": "Quel os est situé dans la cuisse et est le plus long du corps ?",
+          "a": "Le fémur"
+        },
+        {
+          "level": 5,
+          "q": "Quel organe est responsable de la digestion des aliments ?",
+          "a": "L'estomac (et les intestins)"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom scientifique des globules rouges ?",
+          "a": "Les hématies (ou érythrocytes)"
+        },
+        {
+          "level": 7,
+          "q": "Combien d'os compose le squelette d'un adulte normal ?",
+          "a": "206 os"
+        },
+        {
+          "level": 8,
+          "q": "Quelle glande située à la base du cou régule le métabolisme ?",
+          "a": "La thyroïde"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom de la protéine qui donne sa couleur à la peau et aux cheveux ?",
+          "a": "La mélanine"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appellent les deux petites glandes situées au-dessus des reins ?",
+          "a": "Les glandes surrénales"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en astronomie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est l'étoile au centre de notre système solaire ?",
+          "a": "Le Soleil"
+        },
+        {
+          "level": 2,
+          "q": "Quelle planète est surnommée la planète rouge ?",
+          "a": "Mars"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le seul satellite naturel de la Terre ?",
+          "a": "La Lune"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la plus grande planète de notre système solaire ?",
+          "a": "Jupiter"
+        },
+        {
+          "level": 5,
+          "q": "Quelle planète est célèbre pour ses anneaux spectaculaires ?",
+          "a": "Saturne"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle notre galaxie ?",
+          "a": "La Voie lactée"
+        },
+        {
+          "level": 7,
+          "q": "Quelle planète de notre système solaire est la plus proche du Soleil ?",
+          "a": "Mercure"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le nom du premier homme à avoir marché sur la Lune ?",
+          "a": "Neil Armstrong"
+        },
+        {
+          "level": 9,
+          "q": "Qu'est-ce qu'une année-lumière ?",
+          "a": "Une unité de distance (la distance parcourue par la lumière en un an)"
+        },
+        {
+          "level": 10,
+          "q": "Quelle ex-planète du système solaire a été reclassée en 'planète naine' en 2006 ?",
+          "a": "Pluton"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des phobies",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La claustrophobie est la peur de quoi ?",
+          "a": "Des espaces clos (ou enfermés)"
+        },
+        {
+          "level": 2,
+          "q": "Qu'est-ce que l'arachnophobie ?",
+          "a": "La peur des araignées"
+        },
+        {
+          "level": 3,
+          "q": "L'agoraphobie est la peur de la foule et de quoi d'autre ?",
+          "a": "Des grands espaces (ou espaces publics)"
+        },
+        {
+          "level": 4,
+          "q": "De quoi a-t-on peur quand on est acrophobe ?",
+          "a": "Du vide (ou des hauteurs)"
+        },
+        {
+          "level": 5,
+          "q": "Qu'est-ce que l'hydrophobie ?",
+          "a": "La peur de l'eau"
+        },
+        {
+          "level": 6,
+          "q": "Si tu as peur du sang, tu es... ?",
+          "a": "Hématophobe"
+        },
+        {
+          "level": 7,
+          "q": "La coulrophobie est une phobie très répandue dans la pop culture. C'est la peur de quoi ?",
+          "a": "Des clowns"
+        },
+        {
+          "level": 8,
+          "q": "De quoi a-t-on peur si l'on souffre d'arachibutyrophobie ?",
+          "a": "D'avoir du beurre de cacahuète collé au palais"
+        },
+        {
+          "level": 9,
+          "q": "Qu'est-ce que la cynophobie ?",
+          "a": "La peur des chiens"
+        },
+        {
+          "level": 10,
+          "q": "Si tu es triskaïdékaphobe, de quel nombre as-tu peur ?",
+          "a": "Du nombre 13"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en jeux vidéo rétro ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel plombier moustachu est la mascotte de Nintendo ?",
+          "a": "Mario"
+        },
+        {
+          "level": 2,
+          "q": "Quel hérisson bleu est la mascotte de Sega ?",
+          "a": "Sonic"
+        },
+        {
+          "level": 3,
+          "q": "Quel jeu d'arcade met en scène une boule jaune qui mange des pac-gommes ?",
+          "a": "Pac-Man"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel jeu devez-vous empiler des formes géométriques tombant du ciel ?",
+          "a": "Tetris"
+        },
+        {
+          "level": 5,
+          "q": "Quel gorille jette des tonneaux sur Jumpman dans son premier jeu ?",
+          "a": "Donkey Kong"
+        },
+        {
+          "level": 6,
+          "q": "Quelle console portable de Nintendo a popularisé Tetris en 1989 ?",
+          "a": "La Game Boy"
+        },
+        {
+          "level": 7,
+          "q": "Quel jeu de tir à la première personne (FPS) sorti en 1993 sur PC est considéré comme un pionnier du genre avec le BFG 9000 ?",
+          "a": "Doom"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le vaisseau de Samus Aran dans la série Metroid ?",
+          "a": "Le vaisseau de combat (Gunship)"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom du célèbre code triche (Haut, Haut, Bas, Bas, Gauche, Droite, Gauche, Droite, B, A) popularisé par Konami ?",
+          "a": "Le Konami Code"
+        },
+        {
+          "level": 10,
+          "q": "Quelle console de Sega, sortie en 1998, a été la première à proposer un modem intégré pour le jeu en ligne ?",
+          "a": "La Dreamcast"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te mets combien en fromages italiens ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fromage râpé met-on souvent sur les pâtes ?",
+          "a": "Le Parmesan (Parmigiano Reggiano)"
+        },
+        {
+          "level": 2,
+          "q": "Quel fromage frais est la base du Tiramisu ?",
+          "a": "Le Mascarpone"
+        },
+        {
+          "level": 3,
+          "q": "Quelle boule de fromage à pâte filée est souvent servie avec des tomates et du basilic ?",
+          "a": "La Mozzarella"
+        },
+        {
+          "level": 4,
+          "q": "Quel fromage bleu italien est souvent utilisé dans les sauces pour pâtes ?",
+          "a": "Le Gorgonzola"
+        },
+        {
+          "level": 5,
+          "q": "Quel fromage italien au lait de brebis, souvent salé et piquant, est utilisé dans la recette originale des pâtes carbonara ?",
+          "a": "Le Pecorino (Pecorino Romano)"
+        },
+        {
+          "level": 6,
+          "q": "Quelle déclinaison de la mozzarella est particulièrement crémeuse à cœur ?",
+          "a": "La Burrata"
+        },
+        {
+          "level": 7,
+          "q": "Quel fromage en forme de poire est souvent fumé (affumicato) ?",
+          "a": "Le Provolone (ou Scamorza)"
+        },
+        {
+          "level": 8,
+          "q": "Quel fromage à pâte dure et granuleuse est souvent confondu avec le Parmesan, mais fabriqué dans une zone géographique différente ?",
+          "a": "Le Grana Padano"
+        },
+        {
+          "level": 9,
+          "q": "Quel fromage frais de lactosérum, dont le nom signifie 'cuite deux fois', est souvent utilisé dans les lasagnes ou les cannoli ?",
+          "a": "La Ricotta"
+        },
+        {
+          "level": 10,
+          "q": "Quel fromage du Val d'Aoste est indispensable pour préparer une fondue à la valdôtaine ?",
+          "a": "La Fontina"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les dinosaures",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dinosaure carnivore géant est célèbre pour ses tout petits bras ?",
+          "a": "Le Tyrannosaurus Rex (ou T-Rex)"
+        },
+        {
+          "level": 2,
+          "q": "Quel dinosaure herbivore possède trois cornes sur la tête et une grande collerette ?",
+          "a": "Le Tricératops"
+        },
+        {
+          "level": 3,
+          "q": "Quel dinosaure à long cou est l'un des plus grands animaux terrestres connus ?",
+          "a": "Le Diplodocus (ou Brachiosaure / Brontosaure)"
+        },
+        {
+          "level": 4,
+          "q": "De quoi se nourrissaient principalement les stégosaures ?",
+          "a": "De plantes (herbivores)"
+        },
+        {
+          "level": 5,
+          "q": "Quel petit dinosaure carnivore, popularisé par Jurassic Park, chassait prétendument en meute (bien que sa taille réelle était celle d'une dinde) ?",
+          "a": "Le Vélociraptor"
+        },
+        {
+          "level": 6,
+          "q": "À quelle époque géologique ont vécu les derniers dinosaures (avant leur extinction) ?",
+          "a": "Le Crétacé"
+        },
+        {
+          "level": 7,
+          "q": "Quel événement est considéré comme la cause principale de l'extinction des dinosaures non-aviens ?",
+          "a": "La chute d'une météorite (astéroïde)"
+        },
+        {
+          "level": 8,
+          "q": "Quel dinosaure cuirassé avait une queue en forme de massue ?",
+          "a": "L'Ankylosaure"
+        },
+        {
+          "level": 9,
+          "q": "Quel reptile marin, souvent confondu avec un dinosaure, était un prédateur redoutable des océans du Mésozoïque ?",
+          "a": "Le Mosasaure (ou Plésiosaure / Ichthyosaure)"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on les excréments fossilisés de dinosaures, utiles aux paléontologues pour comprendre leur régime alimentaire ?",
+          "a": "Des coprolithes"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des inventions",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui a inventé l'ampoule électrique incandescente (et l'a commercialisée) ?",
+          "a": "Thomas Edison"
+        },
+        {
+          "level": 2,
+          "q": "Quelle invention de Gutenberg a révolutionné la diffusion du savoir au 15e siècle ?",
+          "a": "L'imprimerie"
+        },
+        {
+          "level": 3,
+          "q": "Qui a inventé le téléphone en 1876 ?",
+          "a": "Alexander Graham Bell"
+        },
+        {
+          "level": 4,
+          "q": "Quel moyen de transport les frères Wright ont-ils fait voler pour la première fois en 1903 ?",
+          "a": "L'avion"
+        },
+        {
+          "level": 5,
+          "q": "Quelle boisson gazeuse a été inventée par le pharmacien John Pemberton en 1886 ?",
+          "a": "Le Coca-Cola"
+        },
+        {
+          "level": 6,
+          "q": "Quel chimiste suédois a inventé la dynamite et légué sa fortune pour créer des prix célèbres ?",
+          "a": "Alfred Nobel"
+        },
+        {
+          "level": 7,
+          "q": "Quelle invention, créée par l'ingénieur français Georges de Mestral, s'inspire des fruits de bardane qui s'accrochent aux vêtements ?",
+          "a": "Le Velcro (scratch)"
+        },
+        {
+          "level": 8,
+          "q": "Quel physicien britannique a inventé le World Wide Web en 1989 ?",
+          "a": "Tim Berners-Lee"
+        },
+        {
+          "level": 9,
+          "q": "Quelle invention de Laszlo Biro a remplacé la plume et l'encrier ?",
+          "a": "Le stylo à bille"
+        },
+        {
+          "level": 10,
+          "q": "Quel scientifique a découvert accidentellement la pénicilline en 1928 ?",
+          "a": "Alexander Fleming"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en héros de fiction ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel célèbre agent britannique, amateur de Vodka Martini, est le héros des romans de Ian Fleming ?",
+          "a": "James Bond"
+        },
+        {
+          "level": 2,
+          "q": "Qui est l'auteur des romans d'Hercule Poirot et Miss Marple ?",
+          "a": "Agatha Christie"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le célèbre détective créé par Arthur Conan Doyle ?",
+          "a": "Sherlock Holmes"
+        },
+        {
+          "level": 4,
+          "q": "Quel super-héros masqué, vêtu de noir, combat le crime à Gotham City ?",
+          "a": "Batman"
+        },
+        {
+          "level": 5,
+          "q": "Qui est le héros de la saga 'Le Seigneur des anneaux' ?",
+          "a": "Frodon Sacquet"
+        },
+        {
+          "level": 6,
+          "q": "Quel célèbre sorcier à lunettes est le héros des romans de J.K. Rowling ?",
+          "a": "Harry Potter"
+        },
+        {
+          "level": 7,
+          "q": "Qui est le héros des bandes dessinées d'Hergé, accompagné de son chien Milou ?",
+          "a": "Tintin"
+        },
+        {
+          "level": 8,
+          "q": "Quel héros de bande dessinée gaulois, créé par René Goscinny et Albert Uderzo, résiste à l'envahisseur romain ?",
+          "a": "Astérix"
+        },
+        {
+          "level": 9,
+          "q": "Quel célèbre romancier français a écrit 'Les Misérables' et 'Notre-Dame de Paris' ?",
+          "a": "Victor Hugo"
+        },
+        {
+          "level": 10,
+          "q": "Qui est le héros des romans de Jules Verne qui fait le tour du monde en 80 jours ?",
+          "a": "Phileas Fogg"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les régions viticoles",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Associe ce vin à sa région viticole d'origine : Le Champagne (facile)",
+          "a": "La Champagne"
+        },
+        {
+          "level": 2,
+          "q": "Associe ce vin à sa région : Le Chablis",
+          "a": "La Bourgogne"
+        },
+        {
+          "level": 3,
+          "q": "Associe ce vin à sa région : Le Saint-Émilion",
+          "a": "Le Bordelais"
+        },
+        {
+          "level": 4,
+          "q": "Associe ce vin à sa région : Le Brouilly",
+          "a": "Le Beaujolais"
+        },
+        {
+          "level": 5,
+          "q": "Associe ce vin à sa région : Le Châteauneuf-du-Pape",
+          "a": "La Vallée du Rhône"
+        },
+        {
+          "level": 6,
+          "q": "Associe ce vin à sa région : Le Gewurztraminer",
+          "a": "L'Alsace"
+        },
+        {
+          "level": 7,
+          "q": "Associe ce vin à sa région : Le Sancerre",
+          "a": "Le Val de Loire"
+        },
+        {
+          "level": 8,
+          "q": "Associe ce vin à sa région : Le Corbières",
+          "a": "Le Languedoc-Roussillon"
+        },
+        {
+          "level": 9,
+          "q": "Associe ce vin à sa région : Le Vin Jaune",
+          "a": "Le Jura"
+        },
+        {
+          "level": 10,
+          "q": "Associe ce vin à sa région : Le Bandol",
+          "a": "La Provence"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les planètes de notre système solaire",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la planète la plus proche du Soleil ?",
+          "a": "Mercure"
+        },
+        {
+          "level": 2,
+          "q": "Quelle planète est surnommée l'étoile du berger ?",
+          "a": "Vénus"
+        },
+        { "level": 3, "q": "Laquelle est la planète bleue ?", "a": "La Terre" },
+        { "level": 4, "q": "Quelle est la planète rouge ?", "a": "Mars" },
+        {
+          "level": 5,
+          "q": "Quelle est la plus grande planète du système solaire ?",
+          "a": "Jupiter"
+        },
+        {
+          "level": 6,
+          "q": "Quelle planète est entourée d'anneaux visibles avec un simple télescope ?",
+          "a": "Saturne"
+        },
+        {
+          "level": 7,
+          "q": "Quelle planète tourne sur elle-même avec un axe d'inclinaison très prononcé (elle 'roule' sur son orbite) ?",
+          "a": "Uranus"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la planète la plus éloignée du Soleil ?",
+          "a": "Neptune"
+        },
+        {
+          "level": 9,
+          "q": "Quelle ex-planète a été rétrogradée en planète naine en 2006 ?",
+          "a": "Pluton"
+        },
+        {
+          "level": 10,
+          "q": "Entre quelles planètes se trouve la ceinture d'astéroïdes principale ?",
+          "a": "Entre Mars et Jupiter"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les années 80",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel célèbre jeu vidéo, sorti en 1980, met en scène un camembert jaune engloutissant des pac-gommes ?",
+          "a": "Pac-Man"
+        },
+        {
+          "level": 2,
+          "q": "Quel groupe a chanté l'hymne des années 80 'Take On Me' ?",
+          "a": "A-ha"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle l'extraterrestre friand de Reese's Pieces dans le film de Steven Spielberg (1982) ?",
+          "a": "E.T."
+        },
+        {
+          "level": 4,
+          "q": "Quel objet coloré, inventé par un Hongrois, est devenu un casse-tête mondial dans les années 80 ?",
+          "a": "Le Rubik's Cube"
+        },
+        {
+          "level": 5,
+          "q": "Quel célèbre 'Roi de la Pop' a sorti l'album le plus vendu de tous les temps, 'Thriller', en 1982 ?",
+          "a": "Michael Jackson"
+        },
+        {
+          "level": 6,
+          "q": "Quelle console de jeu Nintendo 8-bits est sortie au Japon en 1983 sous le nom de Famicom ?",
+          "a": "La NES"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel film de 1985 Marty McFly voyage-t-il dans le temps à bord d'une DeLorean ?",
+          "a": "Retour vers le futur"
+        },
+        {
+          "level": 8,
+          "q": "Quelle catastrophe nucléaire majeure a eu lieu en Ukraine en 1986 ?",
+          "a": "Tchernobyl"
+        },
+        {
+          "level": 9,
+          "q": "Quel accessoire audio portable Sony a révolutionné la façon d'écouter de la musique au début de la décennie ?",
+          "a": "Le Walkman"
+        },
+        {
+          "level": 10,
+          "q": "Quel événement historique a marqué la fin des années 80 en Europe, le 9 novembre 1989 ?",
+          "a": "La chute du mur de Berlin"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la mythologie égyptienne",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal est associé au dieu Anubis ?",
+          "a": "Le chacal (ou chien sauvage)"
+        },
+        {
+          "level": 2,
+          "q": "Quel dieu à tête de faucon est l'une des principales divinités égyptiennes ?",
+          "a": "Horus"
+        },
+        {
+          "level": 3,
+          "q": "Quel fleuve sacré était au centre de la vie et des croyances égyptiennes ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 4,
+          "q": "Quel dieu est le maître du royaume des morts et de la résurrection ?",
+          "a": "Osiris"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle l'épouse et sœur d'Osiris, déesse de la magie ?",
+          "a": "Isis"
+        },
+        {
+          "level": 6,
+          "q": "Quel dieu solaire est souvent représenté avec un disque solaire sur la tête ?",
+          "a": "Rê (ou Râ)"
+        },
+        {
+          "level": 7,
+          "q": "Quel monstre dévoreur des morts est un mélange de lion, d'hippopotame et de crocodile ?",
+          "a": "Âmmit (la dévoreuse)"
+        },
+        {
+          "level": 8,
+          "q": "Quel rituel consistait à peser le cœur du défunt contre la plume de la vérité ?",
+          "a": "La pesée du cœur"
+        },
+        {
+          "level": 9,
+          "q": "Quel dieu scribe, représenté avec une tête d'ibis, est le dieu de la sagesse et de l'écriture ?",
+          "a": "Thot"
+        },
+        {
+          "level": 10,
+          "q": "Qui est le dieu maléfique du chaos et du désert, frère meurtrier d'Osiris ?",
+          "a": "Seth"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les dessins animés des années 90",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dessin animé met en scène des bébés parlants dont Tommy, la Binocle et les jumeaux Grumeaux ?",
+          "a": "Les Razmoket"
+        },
+        {
+          "level": 2,
+          "q": "Quel super-héros masqué, mi-homme mi-canard, est le justicier de Bourg-les-Canards ?",
+          "a": "Myster Mask"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel dessin animé trouve-t-on les sœurs Misa, Hiroko, Rui et leur café le Cat's Eye ?",
+          "a": "Signé Cat's Eyes"
+        },
+        {
+          "level": 4,
+          "q": "Quel trio d'héroïnes, créées par le Professeur Utonium, combat le crime à Townsville ?",
+          "a": "Les Super Nanas"
+        },
+        {
+          "level": 5,
+          "q": "Quel garçon génial possède un laboratoire secret caché derrière la bibliothèque de sa chambre ?",
+          "a": "Le Laboratoire de Dexter"
+        },
+        {
+          "level": 6,
+          "q": "Quel dessin animé français met en scène des cellules anthropomorphes naviguant dans le corps humain ?",
+          "a": "Il était une fois... la Vie"
+        },
+        {
+          "level": 7,
+          "q": "Quel joueur de basket célèbre est la star de l'équipe des Looney Tunes dans le film d'animation Space Jam (1996) ?",
+          "a": "Michael Jordan"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le chat de la famille Simpson ?",
+          "a": "Boule de Neige II"
+        },
+        {
+          "level": 9,
+          "q": "Quel dessin animé raconte l'histoire de créatures de pierre qui prennent vie la nuit ?",
+          "a": "Gargoyles"
+        },
+        {
+          "level": 10,
+          "q": "Quel groupe de cinq adolescents japonais combat les forces du mal avec des armures mystiques dans 'Les Chevaliers du Zodiaque' ?",
+          "a": "Les Chevaliers de Bronze"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en grammaire et conjugaison ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelle-t-on un mot qui décrit ou qualifie un nom ?",
+          "a": "L'adjectif"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le pluriel de 'cheval' ?",
+          "a": "Chevaux"
+        },
+        {
+          "level": 3,
+          "q": "Quel temps exprime une action passée, souvent utilisée pour décrire un décor ou une habitude (ex: je mangeais) ?",
+          "a": "L'imparfait"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on le mot invariable qui relie deux propositions (ex: mais, ou, et, donc, or, ni, car) ?",
+          "a": "Une conjonction de coordination"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le participe passé du verbe 'peindre' ?",
+          "a": "Peint"
+        },
+        {
+          "level": 6,
+          "q": "Quelle figure de style consiste à comparer deux éléments sans mot de comparaison (ex: cet homme est un roc) ?",
+          "a": "La métaphore"
+        },
+        {
+          "level": 7,
+          "q": "Quel mode verbal est utilisé pour donner un ordre ou un conseil (ex: Mange !) ?",
+          "a": "L'impératif"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le conditionnel présent, 1ère personne du singulier, du verbe 'courir' ?",
+          "a": "Je courrais"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle la fonction du groupe nominal 'le soleil' dans la phrase : 'Il regarde le soleil' ?",
+          "a": "Complément d'Objet Direct (COD)"
+        },
+        {
+          "level": 10,
+          "q": "Quel temps surcomposé exprime une action antérieure à une autre action au passé (ex: j'eus mangé) ?",
+          "a": "Le passé antérieur"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Le Code de la route",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quelle couleur est un panneau d'obligation ?",
+          "a": "Bleu (rond)"
+        },
+        {
+          "level": 2,
+          "q": "Quelle forme a un panneau de signalisation de danger ?",
+          "a": "Triangle"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la vitesse maximale autorisée sur autoroute par temps sec (pour un conducteur expérimenté) ?",
+          "a": "130 km/h"
+        },
+        {
+          "level": 4,
+          "q": "Quel panneau de forme octogonale rouge impose de marquer un arrêt absolu ?",
+          "a": "Le panneau STOP"
+        },
+        {
+          "level": 5,
+          "q": "Quel document, avec la carte grise et l'assurance, est obligatoire pour conduire une voiture ?",
+          "a": "Le permis de conduire"
+        },
+        {
+          "level": 6,
+          "q": "Que signifie un feu clignotant orange ou jaune ?",
+          "a": "Prudence (passage autorisé avec précaution)"
+        },
+        {
+          "level": 7,
+          "q": "À quelle distance minimale doit-on placer le triangle de présignalisation en cas de panne ?",
+          "a": "À 30 mètres"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le taux d'alcoolémie maximum autorisé en France pour un conducteur expérimenté (en g/l de sang) ?",
+          "a": "0,5 g/l de sang"
+        },
+        {
+          "level": 9,
+          "q": "Quelle règle de priorité s'applique en l'absence de signalisation à une intersection ?",
+          "a": "La priorité à droite"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on la voie réservée aux véhicules très lents ou en panne sur l'autoroute ?",
+          "a": "La bande d'arrêt d'urgence (BAU)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en mangas célèbres ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel manga met en scène le ninja blond Naruto Uzumaki ?",
+          "a": "Naruto"
+        },
+        {
+          "level": 2,
+          "q": "Quel personnage à queue de singe est le héros de Dragon Ball ?",
+          "a": "Son Goku"
+        },
+        {
+          "level": 3,
+          "q": "Quel manga suit les aventures de Monkey D. Luffy, le pirate au chapeau de paille ?",
+          "a": "One Piece"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel manga les humains se protègent-ils derrière des murs géants contre des titans mangeurs d'hommes ?",
+          "a": "L'Attaque des Titans"
+        },
+        {
+          "level": 5,
+          "q": "Quel lycéen trouve un carnet permettant de tuer n'importe qui en écrivant son nom dedans dans 'Death Note' ?",
+          "a": "Light Yagami"
+        },
+        {
+          "level": 6,
+          "q": "Quel manga met en scène les frères Edward et Alphonse Elric, à la recherche de la pierre philosophale ?",
+          "a": "Fullmetal Alchemist"
+        },
+        {
+          "level": 7,
+          "q": "Quel sport est au centre du manga 'Olive et Tom' (Captain Tsubasa) ?",
+          "a": "Le football"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le chat robot bleu venu du futur dans le manga éponyme ?",
+          "a": "Doraemon"
+        },
+        {
+          "level": 9,
+          "q": "Quel manga suit les aventures de Gon Freecss, cherchant à devenir un 'Hunter' pour retrouver son père ?",
+          "a": "Hunter x Hunter"
+        },
+        {
+          "level": 10,
+          "q": "Dans 'JoJo's Bizarre Adventure', comment appelle-t-on les manifestations spirituelles utilisées pour combattre à partir de la 3e partie ?",
+          "a": "Les Stands"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les présidents américains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui a été le premier président des États-Unis ?",
+          "a": "George Washington"
+        },
+        {
+          "level": 2,
+          "q": "Quel président a aboli l'esclavage pendant la guerre de Sécession ?",
+          "a": "Abraham Lincoln"
+        },
+        {
+          "level": 3,
+          "q": "Quel président a été assassiné à Dallas en 1963 ?",
+          "a": "John F. Kennedy (JFK)"
+        },
+        {
+          "level": 4,
+          "q": "Quel président a démissionné en 1974 suite au scandale du Watergate ?",
+          "a": "Richard Nixon"
+        },
+        {
+          "level": 5,
+          "q": "Qui a été le premier président afro-américain des États-Unis ?",
+          "a": "Barack Obama"
+        },
+        {
+          "level": 6,
+          "q": "Quel président a été acteur de cinéma avant d'entrer en politique ?",
+          "a": "Ronald Reagan"
+        },
+        {
+          "level": 7,
+          "q": "Quel président a ordonné le largage des bombes atomiques sur le Japon en 1945 ?",
+          "a": "Harry S. Truman"
+        },
+        {
+          "level": 8,
+          "q": "Quel président a lancé le programme Apollo pour envoyer un homme sur la lune ?",
+          "a": "John F. Kennedy"
+        },
+        {
+          "level": 9,
+          "q": "Qui est l'unique président à avoir exercé plus de deux mandats (quatre au total) ?",
+          "a": "Franklin D. Roosevelt"
+        },
+        {
+          "level": 10,
+          "q": "Quel président est le visage sur le billet de 100 dollars ?",
+          "a": "Aucun (C'est Benjamin Franklin, qui n'a jamais été président)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te mets combien en voitures mythiques ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle marque produit la célèbre voiture de sport rouge frappée d'un cheval cabré ?",
+          "a": "Ferrari"
+        },
+        {
+          "level": 2,
+          "q": "Quel modèle de voiture de Ford est souvent associé au mot 'Mustang' ?",
+          "a": "La Ford Mustang"
+        },
+        {
+          "level": 3,
+          "q": "Quelle voiture de cinéma, une DeLorean DMC-12, permet de voyager dans le temps ?",
+          "a": "Dans 'Retour vers le futur'"
+        },
+        {
+          "level": 4,
+          "q": "Quelle voiture allemande est surnommée la 'Coccinelle' en France ?",
+          "a": "La Volkswagen Coccinelle"
+        },
+        {
+          "level": 5,
+          "q": "Quel agent secret britannique conduit souvent une Aston Martin DB5 ?",
+          "a": "James Bond"
+        },
+        {
+          "level": 6,
+          "q": "Quelle voiture française de Citroën est célèbre pour sa suspension hydropneumatique et son rôle dans les films de Fantômas ?",
+          "a": "La Citroën DS"
+        },
+        {
+          "level": 7,
+          "q": "Quel modèle de Porsche, avec son moteur à l'arrière, est le modèle phare de la marque depuis 1963 ?",
+          "a": "La Porsche 911"
+        },
+        {
+          "level": 8,
+          "q": "Quelle petite voiture italienne classique, produite par Fiat, a motorisé l'Italie d'après-guerre ?",
+          "a": "La Fiat 500"
+        },
+        {
+          "level": 9,
+          "q": "Quelle voiture britannique emblématique est souvent associée à Mr. Bean ?",
+          "a": "La Mini"
+        },
+        {
+          "level": 10,
+          "q": "Quelle voiture de sport américaine est connue sous le nom de 'Viper' ?",
+          "a": "La Dodge Viper"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la musique des années 2000",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle chanteuse a sorti le tube 'Toxic' en 2003 ?",
+          "a": "Britney Spears"
+        },
+        {
+          "level": 2,
+          "q": "Quel groupe virtuel, créé par Damon Albarn, a sorti le hit 'Clint Eastwood' ?",
+          "a": "Gorillaz"
+        },
+        {
+          "level": 3,
+          "q": "Quel rappeur américain s'est fait connaître mondialement avec 'Lose Yourself' ?",
+          "a": "Eminem"
+        },
+        {
+          "level": 4,
+          "q": "Quelle chanson de Beyoncé (feat. Jay-Z) commence par 'Uh oh, uh oh, uh oh, oh no no' ?",
+          "a": "Crazy in Love"
+        },
+        {
+          "level": 5,
+          "q": "Quel groupe de rock a sorti l'album 'American Idiot' en 2004 ?",
+          "a": "Green Day"
+        },
+        {
+          "level": 6,
+          "q": "Quel chanteur a chanté 'Parce qu'on vient de loin' ?",
+          "a": "Corneille"
+        },
+        {
+          "level": 7,
+          "q": "Quel tube de Las Ketchup a fait danser le monde entier avec sa chorégraphie en 2002 ?",
+          "a": "The Ketchup Song (Aserejé)"
+        },
+        {
+          "level": 8,
+          "q": "Quelle artiste a sorti l'album 'Back to Black' en 2006 ?",
+          "a": "Amy Winehouse"
+        },
+        {
+          "level": 9,
+          "q": "Quel groupe a sorti la chanson 'I Gotta Feeling' produite par David Guetta en 2009 ?",
+          "a": "Les Black Eyed Peas"
+        },
+        {
+          "level": 10,
+          "q": "Quelle chanteuse française a remporté la Star Academy en 2001 avant de sortir 'Au Soleil' ?",
+          "a": "Jenifer"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en jeux vidéo contemporains ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel jeu de construction avec des blocs a été racheté par Microsoft ?",
+          "a": "Minecraft"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel jeu de Battle Royale plonge-t-on depuis un bus de combat ?",
+          "a": "Fortnite"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le nom du monde dans lequel se déroule la série The Legend of Zelda ?",
+          "a": "Hyrule"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le personnage principal de The Witcher ?",
+          "a": "Geralt de Riv"
+        },
+        {
+          "level": 5,
+          "q": "Quel jeu de Rockstar Games sorti en 2013 se déroule dans la ville fictive de Los Santos ?",
+          "a": "GTA V"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel jeu multijoueur êtes-vous un 'Crewmate' devant accomplir des tâches ou un 'Impostor' ?",
+          "a": "Among Us"
+        },
+        {
+          "level": 7,
+          "q": "Quel jeu vidéo de Nintendo met en scène des personnages qui se battent sur des plateformes ?",
+          "a": "Super Smash Bros."
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle la simulation de vie sur une île déserte avec des animaux anthropomorphes (Nintendo) ?",
+          "a": "Animal Crossing"
+        },
+        {
+          "level": 9,
+          "q": "Quel studio a développé les jeux The Last of Us et Uncharted ?",
+          "a": "Naughty Dog"
+        },
+        {
+          "level": 10,
+          "q": "Quel jeu d'action-RPG développé par FromSoftware et co-écrit par George R.R. Martin a gagné le prix du jeu de l'année en 2022 ?",
+          "a": "Elden Ring"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les spécialités culinaires françaises",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Associe cette spécialité à sa région d'origine : La bouillabaisse",
+          "a": "La Provence-Alpes-Côte d'Azur (ou Marseille)"
+        },
+        {
+          "level": 2,
+          "q": "Associe cette spécialité à sa région : La choucroute",
+          "a": "L'Alsace"
+        },
+        {
+          "level": 3,
+          "q": "Associe cette spécialité à sa région : Les crêpes et galettes",
+          "a": "La Bretagne"
+        },
+        {
+          "level": 4,
+          "q": "Associe cette spécialité à sa région : La quiche lorraine",
+          "a": "La Lorraine"
+        },
+        {
+          "level": 5,
+          "q": "Associe cette spécialité à sa région : Le cassoulet",
+          "a": "L'Occitanie (ou Toulouse/Carcassonne/Castelnaudary)"
+        },
+        {
+          "level": 6,
+          "q": "Associe cette spécialité à sa région : La tartiflette",
+          "a": "La Savoie (ou Auvergne-Rhône-Alpes)"
+        },
+        {
+          "level": 7,
+          "q": "Associe cette spécialité à sa région : Les cannelés",
+          "a": "Bordeaux (ou la Nouvelle-Aquitaine)"
+        },
+        {
+          "level": 8,
+          "q": "Associe cette spécialité à sa région : La ficelle picarde",
+          "a": "La Picardie (ou les Hauts-de-France)"
+        },
+        {
+          "level": 9,
+          "q": "Associe cette spécialité à sa région : La carbonade flamande",
+          "a": "Le Nord-Pas-de-Calais (ou les Hauts-de-France)"
+        },
+        {
+          "level": 10,
+          "q": "Associe cette spécialité à sa région : Le bœuf bourguignon",
+          "a": "La Bourgogne (ou Bourgogne-Franche-Comté)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie de la France",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de la France ?",
+          "a": "Paris"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus long fleuve de France ?",
+          "a": "La Loire"
+        },
+        {
+          "level": 3,
+          "q": "Dans quelle région se trouve le Mont-Saint-Michel ?",
+          "a": "La Normandie"
+        },
+        {
+          "level": 4,
+          "q": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+          "a": "Les Pyrénées"
+        },
+        {
+          "level": 5,
+          "q": "Quelle île française de la Méditerranée est surnommée l'Île de Beauté ?",
+          "a": "La Corse"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le plus haut sommet de France (et d'Europe occidentale) ?",
+          "a": "Le Mont Blanc"
+        },
+        {
+          "level": 7,
+          "q": "Quelle ville est la préfecture (ou le chef-lieu) de la région Nouvelle-Aquitaine ?",
+          "a": "Bordeaux"
+        },
+        {
+          "level": 8,
+          "q": "Quel fleuve traverse Lyon ?",
+          "a": "Le Rhône (ou la Saône)"
+        },
+        {
+          "level": 9,
+          "q": "Combien y a-t-il de départements d'outre-mer (DOM) ?",
+          "a": "5"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la plus grande forêt de France métropolitaine ?",
+          "a": "La forêt des Landes"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des records du monde",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal détient le record du monde de vitesse terrestre ?",
+          "a": "Le guépard"
+        },
+        {
+          "level": 2,
+          "q": "Qui est l'homme le plus grand de l'histoire, avec 2m72 ?",
+          "a": "Robert Wadlow"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays est le plus peuplé du monde ?",
+          "a": "L'Inde (depuis mi-2023)"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le plus haut sommet du monde ?",
+          "a": "Le Mont Everest"
+        },
+        {
+          "level": 5,
+          "q": "Qui détient le record du monde du 100m sprint homme ?",
+          "a": "Usain Bolt"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la plus longue rivière du monde ?",
+          "a": "L'Amazone (ou le Nil)"
+        },
+        {
+          "level": 7,
+          "q": "Quel film a fait le plus d'entrées au box-office mondial ?",
+          "a": "Avatar"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le plus grand animal ayant jamais vécu sur Terre ?",
+          "a": "La baleine bleue"
+        },
+        {
+          "level": 9,
+          "q": "Qui est l'homme le plus riche du monde ?",
+          "a": "Bernard Arnault (ou Elon Musk...)"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la vitesse maximale atteinte par une voiture de série ?",
+          "a": "Plus de 490 km/h (Bugatti Chiron)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les animaux de compagnie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal domestique est réputé pour ronronner quand il est heureux ?",
+          "a": "Le chat"
+        },
+        {
+          "level": 2,
+          "q": "Quelle espèce animale est considérée comme 'le meilleur ami de l'homme' ?",
+          "a": "Le chien"
+        },
+        {
+          "level": 3,
+          "q": "Quel petit rongeur est souvent associé à une roue pour faire de l'exercice ?",
+          "a": "Le hamster"
+        },
+        {
+          "level": 4,
+          "q": "Quel poisson rouge, rendu célèbre par Disney, a une mémoire souvent réputée (à tort) très courte ?",
+          "a": "Le poisson rouge"
+        },
+        {
+          "level": 5,
+          "q": "Quel oiseau de compagnie peut apprendre à imiter la voix humaine ?",
+          "a": "Le perroquet"
+        },
+        {
+          "level": 6,
+          "q": "Quel animal de compagnie à longues oreilles est célèbre pour aimer les carottes ?",
+          "a": "Le lapin"
+        },
+        {
+          "level": 7,
+          "q": "Quel reptile lent et doté d'une carapace est parfois gardé comme animal de compagnie ?",
+          "a": "La tortue"
+        },
+        {
+          "level": 8,
+          "q": "Quel rongeur originaire des Andes d'Amérique du Sud est souvent confondu avec un cochon d'Inde ?",
+          "a": "Le chinchilla"
+        },
+        {
+          "level": 9,
+          "q": "Quel petit carnivore domestique, cousin de la belette, est connu pour son odeur musquée et son caractère joueur ?",
+          "a": "Le furet"
+        },
+        {
+          "level": 10,
+          "q": "Quelle race de chien, originaire de Chine, a la langue bleue-noire ?",
+          "a": "Le Chow-Chow"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les capitales du monde",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de l'Italie ?",
+          "a": "Rome"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de l'Espagne ?",
+          "a": "Madrid"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale de l'Allemagne ?",
+          "a": "Berlin"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la capitale de la Russie ?",
+          "a": "Moscou"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la capitale du Canada (piège, ce n'est pas Montréal ni Toronto) ?",
+          "a": "Ottawa"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la capitale de l'Australie (piège, ce n'est pas Sydney) ?",
+          "a": "Canberra"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la capitale du Brésil (piège, ce n'est pas Rio) ?",
+          "a": "Brasilia"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la capitale de l'Inde (piège, ce n'est pas Bombay) ?",
+          "a": "New Delhi"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la capitale de la Turquie (piège, ce n'est pas Istanbul) ?",
+          "a": "Ankara"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la capitale de l'Afrique du Sud (elle en a trois, une seule suffit) ?",
+          "a": "Pretoria (ou Le Cap / Bloemfontein)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en rois de France ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel roi est surnommé le Roi-Soleil ?",
+          "a": "Louis XIV"
+        },
+        {
+          "level": 2,
+          "q": "Quel roi a été guillotiné pendant la Révolution française en 1793 ?",
+          "a": "Louis XVI"
+        },
+        {
+          "level": 3,
+          "q": "Qui fut le premier roi des Francs, baptisé vers 496 ?",
+          "a": "Clovis"
+        },
+        {
+          "level": 4,
+          "q": "Quel roi a fait construire le château de Versailles ?",
+          "a": "Louis XIV (à partir du pavillon de chasse de Louis XIII)"
+        },
+        {
+          "level": 5,
+          "q": "Quel roi, vainqueur à Marignan en 1515, est le symbole de la Renaissance française ?",
+          "a": "François Ier"
+        },
+        {
+          "level": 6,
+          "q": "Quel roi a promulgué l'édit de Nantes en 1598 (et fut assassiné par Ravaillac) ?",
+          "a": "Henri IV"
+        },
+        {
+          "level": 7,
+          "q": "Quel roi fut surnommé 'Saint Louis' et participa à deux croisades ?",
+          "a": "Louis IX"
+        },
+        {
+          "level": 8,
+          "q": "Qui était roi de France au début de la guerre de Cent Ans (1337) ?",
+          "a": "Philippe VI de Valois"
+        },
+        {
+          "level": 9,
+          "q": "Quel roi, surnommé 'le Bel', a détruit l'ordre des Templiers ?",
+          "a": "Philippe IV le Bel"
+        },
+        {
+          "level": 10,
+          "q": "Qui fut le dernier roi de France (roi des Français) après la Révolution de 1830 ?",
+          "a": "Louis-Philippe Ier"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la Rome antique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Selon la légende, par quel animal Romulus et Rémus ont-ils été allaités ?",
+          "a": "Une louve"
+        },
+        {
+          "level": 2,
+          "q": "Quel célèbre général romain a franchi le Rubicon et a été assassiné aux Ides de Mars ?",
+          "a": "Jules César"
+        },
+        {
+          "level": 3,
+          "q": "Quel empereur est accusé (souvent à tort) d'avoir incendié Rome en l'an 64 tout en jouant de la lyre ?",
+          "a": "Néron"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle l'amphithéâtre géant de Rome où se déroulaient les combats de gladiateurs ?",
+          "a": "Le Colisée"
+        },
+        {
+          "level": 5,
+          "q": "Quelle ville a été ensevelie par l'éruption du Vésuve en 79 apr. J.-C. ?",
+          "a": "Pompéi (ou Herculanum)"
+        },
+        {
+          "level": 6,
+          "q": "Quel dieu romain correspond au dieu grec Zeus ?",
+          "a": "Jupiter"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelait la longue paix romaine instaurée par le premier empereur Auguste (et qui a duré environ 200 ans) ?",
+          "a": "La Pax Romana"
+        },
+        {
+          "level": 8,
+          "q": "Quelle reine d'Égypte a eu des liaisons célèbres avec Jules César et Marc Antoine ?",
+          "a": "Cléopâtre"
+        },
+        {
+          "level": 9,
+          "q": "Quel gladiateur d'origine thrace a mené la plus grande révolte d'esclaves contre Rome (73-71 av. J.-C.) ?",
+          "a": "Spartacus"
+        },
+        {
+          "level": 10,
+          "q": "Qui fut le premier empereur romain ?",
+          "a": "Auguste (ou Octave)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les chansons Disney (complète les paroles)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "'Hakuna Matata, mais quelle phrase... ' (Le Roi Lion)",
+          "a": "Magnifique"
+        },
+        {
+          "level": 2,
+          "q": "'Il en faut peu pour... ' (Le Livre de la jungle)",
+          "a": "Être heureux"
+        },
+        {
+          "level": 3,
+          "q": "'Ce rêve bleu, c'est un... ' (Aladdin)",
+          "a": "Nouveau monde en couleurs"
+        },
+        {
+          "level": 4,
+          "q": "'Libérée, ... ' (La Reine des neiges)",
+          "a": "Délivrée"
+        },
+        {
+          "level": 5,
+          "q": "'Sous l'océan, sous l'océan, doudou c'est bien mieux... ' (La Petite Sirène)",
+          "a": "Tout le monde est heureux"
+        },
+        {
+          "level": 6,
+          "q": "'Tout le monde veut devenir... ' (Les Aristochats)",
+          "a": "Un cat (un chat)"
+        },
+        {
+          "level": 7,
+          "q": "'L'histoire de la vie, le cycle... ' (Le Roi Lion)",
+          "a": "Éternel"
+        },
+        {
+          "level": 8,
+          "q": "'Un jour mon prince... ' (Blanche-Neige)",
+          "a": "Viendra"
+        },
+        { "level": 9, "q": "'Tu seras dans mon... ' (Tarzan)", "a": "Cœur" },
+        {
+          "level": 10,
+          "q": "'Et tu découvriras que la... ' (Pocahontas)",
+          "a": "Terre est ronde"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Le corps humain (les os)",
+      "questions": [
+        { "level": 1, "q": "Quel os protège le cerveau ?", "a": "Le crâne" },
+        {
+          "level": 2,
+          "q": "Comment s'appelle l'os de la cuisse ?",
+          "a": "Le fémur"
+        },
+        {
+          "level": 3,
+          "q": "Quels os protègent le cœur et les poumons ?",
+          "a": "Les côtes (ou cage thoracique)"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle l'os principal du bras, entre l'épaule et le coude ?",
+          "a": "L'humérus"
+        },
+        {
+          "level": 5,
+          "q": "Quels sont les deux os de l'avant-bras ?",
+          "a": "Le radius et le cubitus (ou ulna)"
+        },
+        {
+          "level": 6,
+          "q": "Quel os plat se situe au centre de la cage thoracique ?",
+          "a": "Le sternum"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle l'os de la mâchoire inférieure ?",
+          "a": "La mandibule (ou maxillaire inférieur)"
+        },
+        {
+          "level": 8,
+          "q": "Quel os relie le sternum à l'omoplate ?",
+          "a": "La clavicule"
+        },
+        {
+          "level": 9,
+          "q": "Quels sont les deux os de la jambe, sous le genou ?",
+          "a": "Le tibia et le péroné (ou fibula)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le petit os de la rotule (au niveau du genou) ?",
+          "a": "La rotule (ou patella)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les éléments chimiques (symboles)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel élément est représenté par le symbole 'O' ?",
+          "a": "L'oxygène"
+        },
+        {
+          "level": 2,
+          "q": "Quel élément est représenté par le symbole 'H' ?",
+          "a": "L'hydrogène"
+        },
+        {
+          "level": 3,
+          "q": "Quel élément est représenté par le symbole 'C' ?",
+          "a": "Le carbone"
+        },
+        {
+          "level": 4,
+          "q": "Quel élément est représenté par le symbole 'N' ?",
+          "a": "L'azote"
+        },
+        {
+          "level": 5,
+          "q": "Quel élément est représenté par le symbole 'Fe' ?",
+          "a": "Le fer"
+        },
+        {
+          "level": 6,
+          "q": "Quel élément est représenté par le symbole 'Au' ?",
+          "a": "L'or"
+        },
+        {
+          "level": 7,
+          "q": "Quel élément est représenté par le symbole 'Ag' ?",
+          "a": "L'argent"
+        },
+        {
+          "level": 8,
+          "q": "Quel élément est représenté par le symbole 'Cu' ?",
+          "a": "Le cuivre"
+        },
+        {
+          "level": 9,
+          "q": "Quel élément est représenté par le symbole 'Na' ?",
+          "a": "Le sodium"
+        },
+        {
+          "level": 10,
+          "q": "Quel élément est représenté par le symbole 'K' ?",
+          "a": "Le potassium"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la saga Harry Potter",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle la chouette d'Harry Potter ?",
+          "a": "Hedwige"
+        },
+        {
+          "level": 2,
+          "q": "Sur quel quai de la gare de King's Cross prend-on le Poudlard Express ?",
+          "a": "Le quai 9 ¾"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la position d'Harry au Quidditch ?",
+          "a": "Attrapeur"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle l'elfe de maison qui aide Harry ?",
+          "a": "Dobby"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le nom du chien de Rubeus Hagrid ?",
+          "a": "Touffu (Fang en VO)"
+        },
+        {
+          "level": 6,
+          "q": "Quelle potion permet de prendre l'apparence de quelqu'un d'autre ?",
+          "a": "Le Polynectar"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le vrai nom de Voldemort ?",
+          "a": "Tom Elvis Jedusor (Tom Marvolo Riddle)"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le serpent de Voldemort ?",
+          "a": "Nagini"
+        },
+        {
+          "level": 9,
+          "q": "Qui est le Prince de Sang-Mêlé ?",
+          "a": "Severus Rogue (Snape)"
+        },
+        {
+          "level": 10,
+          "q": "Quels sont les trois Reliques de la Mort ?",
+          "a": "La baguette de Sureau, la pierre de résurrection et la cape d'invisibilité"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les marques de voitures (logos)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle marque a pour logo quatre anneaux entrecroisés ?",
+          "a": "Audi"
+        },
+        {
+          "level": 2,
+          "q": "Quelle marque a pour logo un losange ?",
+          "a": "Renault"
+        },
+        {
+          "level": 3,
+          "q": "Quelle marque a pour logo un cheval cabré ?",
+          "a": "Ferrari"
+        },
+        {
+          "level": 4,
+          "q": "Quelle marque a pour logo un taureau ?",
+          "a": "Lamborghini"
+        },
+        {
+          "level": 5,
+          "q": "Quelle marque a pour logo une étoile à trois branches ?",
+          "a": "Mercedes-Benz"
+        },
+        {
+          "level": 6,
+          "q": "Quelle marque a pour logo un lion ?",
+          "a": "Peugeot"
+        },
+        {
+          "level": 7,
+          "q": "Quelle marque a pour logo deux chevrons superposés ?",
+          "a": "Citroën"
+        },
+        {
+          "level": 8,
+          "q": "Quelle marque a pour logo une hélice d'avion bleue et blanche stylisée ?",
+          "a": "BMW"
+        },
+        {
+          "level": 9,
+          "q": "Quelle marque a pour logo un trident ?",
+          "a": "Maserati"
+        },
+        {
+          "level": 10,
+          "q": "Quelle marque de voitures électriques a pour logo un 'T' stylisé ?",
+          "a": "Tesla"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les grands réalisateurs de cinéma",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Associe ce film à son réalisateur : 'E.T., l'extra-terrestre', 'Jurassic Park'",
+          "a": "Steven Spielberg"
+        },
+        {
+          "level": 2,
+          "q": "Associe ce film à son réalisateur : 'Titanic', 'Avatar'",
+          "a": "James Cameron"
+        },
+        {
+          "level": 3,
+          "q": "Associe ce film à son réalisateur : 'Pulp Fiction', 'Kill Bill'",
+          "a": "Quentin Tarantino"
+        },
+        {
+          "level": 4,
+          "q": "Associe ce film à son réalisateur : 'Inception', 'The Dark Knight'",
+          "a": "Christopher Nolan"
+        },
+        {
+          "level": 5,
+          "q": "Associe ce film à son réalisateur : 'Les Affranchis', 'Le Loup de Wall Street'",
+          "a": "Martin Scorsese"
+        },
+        {
+          "level": 6,
+          "q": "Associe ce film à son réalisateur : 'Le Parrain', 'Apocalypse Now'",
+          "a": "Francis Ford Coppola"
+        },
+        {
+          "level": 7,
+          "q": "Associe ce film à son réalisateur : 'Shining', 'Orange Mécanique'",
+          "a": "Stanley Kubrick"
+        },
+        {
+          "level": 8,
+          "q": "Associe ce film à son réalisateur : 'Alien', 'Gladiator'",
+          "a": "Ridley Scott"
+        },
+        {
+          "level": 9,
+          "q": "Associe ce film à son réalisateur : 'Fight Club', 'Seven'",
+          "a": "David Fincher"
+        },
+        {
+          "level": 10,
+          "q": "Associe ce film à son réalisateur : 'Gran Torino', 'Million Dollar Baby'",
+          "a": "Clint Eastwood"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en capitales européennes ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de l'Italie ?",
+          "a": "Rome"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de l'Allemagne ?",
+          "a": "Berlin"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale de l'Espagne ?",
+          "a": "Madrid"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la capitale du Portugal ?",
+          "a": "Lisbonne"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la capitale du Royaume-Uni ?",
+          "a": "Londres"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la capitale de la Grèce ?",
+          "a": "Athènes"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la capitale de la Suisse ?",
+          "a": "Berne (ce n'est ni Genève ni Zurich)"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la capitale de la Pologne ?",
+          "a": "Varsovie"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la capitale de la Suède ?",
+          "a": "Stockholm"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la capitale de la Hongrie ?",
+          "a": "Budapest"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la culture web et des mèmes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel mème met en scène un chat volant dans l'espace en laissant un arc-en-ciel sur une musique entêtante ?",
+          "a": "Nyan Cat"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle le visage dessiné souriant avec plein de rides utilisé pour troller (problème ?) ?",
+          "a": "Trollface (ou Troll face)"
+        },
+        {
+          "level": 3,
+          "q": "Quel chien a fait le buzz à cause de son expression du visage qui semblait juger tout le monde ?",
+          "a": "Doge (un Shiba Inu)"
+        },
+        {
+          "level": 4,
+          "q": "Quelle vidéo musicale virale montre Rick Astley dansant et est utilisée pour piéger les gens ?",
+          "a": "Le Rickroll (sur la chanson Never Gonna Give You Up)"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle la grenouille (souvent verte et triste) très populaire sur 4chan et Twitch ?",
+          "a": "Pepe the Frog"
+        },
+        {
+          "level": 6,
+          "q": "Quel mème montre un homme en doudoune orange/rouge qui repousse quelque chose de la main et approuve une autre image en dessous ?",
+          "a": "Drake (issu du clip Hotline Bling)"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel mème voit-on une petite fille sourire de façon diabolique devant une maison en feu ?",
+          "a": "Disaster Girl"
+        },
+        {
+          "level": 8,
+          "q": "Quel mème met en scène un chat blanc très expressif assis à table, qui semble confus face à deux femmes qui lui crient dessus ?",
+          "a": "Woman Yelling at a Cat"
+        },
+        {
+          "level": 9,
+          "q": "Quel nom est donné au mème de l'homme âgé (András Arató) qui sourit mais dont les yeux semblent exprimer une profonde tristesse ?",
+          "a": "Hide the Pain Harold"
+        },
+        {
+          "level": 10,
+          "q": "Quelle chanson pour enfants avec une chorégraphie est devenue la vidéo la plus vue de l'histoire de YouTube ?",
+          "a": "Baby Shark"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "L'histoire de la Seconde Guerre mondiale",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En quelle année a commencé la Seconde Guerre mondiale ?",
+          "a": "1939 (le 1er septembre)"
+        },
+        {
+          "level": 2,
+          "q": "Quel pays a été envahi par l'Allemagne, déclenchant le conflit ?",
+          "a": "La Pologne"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelait le dirigeant de l'Allemagne nazie ?",
+          "a": "Adolf Hitler"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays a attaqué la base navale américaine de Pearl Harbor en 1941 ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelait le Premier ministre britannique pendant la majeure partie de la guerre ?",
+          "a": "Winston Churchill"
+        },
+        {
+          "level": 6,
+          "q": "Quel était le nom de code de l'invasion alliée de la Normandie en 1944 (le Débarquement) ?",
+          "a": "L'opération Overlord"
+        },
+        {
+          "level": 7,
+          "q": "Sur quelles deux villes japonaises les États-Unis ont-ils largué des bombes atomiques en 1945 ?",
+          "a": "Hiroshima et Nagasaki"
+        },
+        {
+          "level": 8,
+          "q": "Quel dirigeant soviétique a mené l'URSS pendant la Seconde Guerre mondiale ?",
+          "a": "Joseph Staline"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelait l'alliance formée par l'Allemagne, l'Italie et le Japon ?",
+          "a": "L'Axe (ou les forces de l'Axe)"
+        },
+        {
+          "level": 10,
+          "q": "À quelle date précise (jour, mois, année) l'armistice a-t-il été signé en Europe, marquant la capitulation de l'Allemagne ?",
+          "a": "Le 8 mai 1945"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en fromages d'Europe ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fromage italien râpé met-on souvent sur les pâtes ?",
+          "a": "Le Parmesan (Parmigiano Reggiano)"
+        },
+        {
+          "level": 2,
+          "q": "Quel fromage à trous originaire de Suisse est souvent utilisé dans la fondue ?",
+          "a": "L'Emmental"
+        },
+        {
+          "level": 3,
+          "q": "Quel fromage hollandais, souvent enrobé de cire rouge, porte le nom d'une ville ?",
+          "a": "L'Edam"
+        },
+        {
+          "level": 4,
+          "q": "Quel fromage frais italien est la base du Tiramisu ?",
+          "a": "Le Mascarpone"
+        },
+        {
+          "level": 5,
+          "q": "Quel fromage grec, traditionnellement à base de lait de brebis, est incontournable dans la salade grecque ?",
+          "a": "La Feta"
+        },
+        {
+          "level": 6,
+          "q": "Quel fromage anglais à pâte dure, souvent de couleur orange, est le plus consommé au Royaume-Uni ?",
+          "a": "Le Cheddar"
+        },
+        {
+          "level": 7,
+          "q": "Quel fromage bleu italien, doux ou piquant, est originaire de Lombardie ?",
+          "a": "Le Gorgonzola"
+        },
+        {
+          "level": 8,
+          "q": "Quel fromage chypriote, qui ne fond pas à la cuisson, est idéal pour être grillé ou poêlé ?",
+          "a": "L'Halloumi"
+        },
+        {
+          "level": 9,
+          "q": "Quel fromage italien au lait de bufflonne, à pâte filée, est particulièrement crémeux à cœur ?",
+          "a": "La Burrata"
+        },
+        {
+          "level": 10,
+          "q": "Quel fromage espagnol à base de lait de brebis, originaire de la région de Don Quichotte, a une croûte caractéristique en zigzag ?",
+          "a": "Le Manchego"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la mythologie grecque",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui est le roi des dieux de l'Olympe ?",
+          "a": "Zeus"
+        },
+        {
+          "level": 2,
+          "q": "Quel dieu de la mer est souvent représenté avec un trident ?",
+          "a": "Poséidon"
+        },
+        {
+          "level": 3,
+          "q": "Quelle déesse de la sagesse est née de la tête de Zeus ?",
+          "a": "Athéna"
+        },
+        {
+          "level": 4,
+          "q": "Quel héros a dû accomplir douze travaux en pénitence ?",
+          "a": "Héraclès (ou Hercule)"
+        },
+        {
+          "level": 5,
+          "q": "Quel dieu des enfers est le frère de Zeus et Poséidon ?",
+          "a": "Hadès"
+        },
+        {
+          "level": 6,
+          "q": "Qui a ouvert la boîte contenant tous les maux de l'humanité ?",
+          "a": "Pandore"
+        },
+        {
+          "level": 7,
+          "q": "Quelle créature à la tête couverte de serpents pétrifiait ceux qui la regardaient ?",
+          "a": "Méduse"
+        },
+        {
+          "level": 8,
+          "q": "Quel héros a tué le Minotaure dans le labyrinthe de Crète ?",
+          "a": "Thésée"
+        },
+        {
+          "level": 9,
+          "q": "Quel mortel a volé le feu aux dieux pour le donner aux hommes, et fut condamné à se faire dévorer le foie par un aigle ?",
+          "a": "Prométhée"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le chien à trois têtes qui garde l'entrée des Enfers ?",
+          "a": "Cerbère"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les capitales d'Asie",
+      "questions": [
+        { "level": 1, "q": "Quelle est la capitale du Japon ?", "a": "Tokyo" },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de la Chine ?",
+          "a": "Pékin (Beijing)"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale de l'Inde ?",
+          "a": "New Delhi"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la capitale de la Corée du Sud ?",
+          "a": "Séoul"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la capitale de la Thaïlande ?",
+          "a": "Bangkok"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la capitale du Vietnam ?",
+          "a": "Hanoï"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la capitale de l'Indonésie (dont la délocalisation est en cours) ?",
+          "a": "Jakarta"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la capitale des Philippines ?",
+          "a": "Manille"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la capitale de la Malaisie (célèbre pour les tours Petronas) ?",
+          "a": "Kuala Lumpur"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la capitale de la Mongolie ?",
+          "a": "Oulan-Bator"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les dieux romains (équivalents grecs)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dieu romain correspond à Zeus ?",
+          "a": "Jupiter"
+        },
+        {
+          "level": 2,
+          "q": "Quel dieu romain correspond à Poséidon ?",
+          "a": "Neptune"
+        },
+        {
+          "level": 3,
+          "q": "Quel dieu romain correspond à Hadès ?",
+          "a": "Pluton"
+        },
+        {
+          "level": 4,
+          "q": "Quelle déesse romaine correspond à Héra ?",
+          "a": "Junon"
+        },
+        {
+          "level": 5,
+          "q": "Quelle déesse romaine correspond à Aphrodite ?",
+          "a": "Vénus"
+        },
+        {
+          "level": 6,
+          "q": "Quel dieu romain correspond à Arès ?",
+          "a": "Mars"
+        },
+        {
+          "level": 7,
+          "q": "Quelle déesse romaine correspond à Déméter ?",
+          "a": "Cérès"
+        },
+        {
+          "level": 8,
+          "q": "Quelle déesse romaine correspond à Artémis ?",
+          "a": "Diane"
+        },
+        {
+          "level": 9,
+          "q": "Quel dieu romain correspond à Hermès ?",
+          "a": "Mercure"
+        },
+        {
+          "level": 10,
+          "q": "Quel dieu romain correspond à Dionysos ?",
+          "a": "Bacchus"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les acteurs français célèbres",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel acteur a joué dans 'Léon' et 'Le Grand Bleu' ?",
+          "a": "Jean Reno"
+        },
+        {
+          "level": 2,
+          "q": "Quel acteur incarne Jacquouille la Fripouille dans 'Les Visiteurs' ?",
+          "a": "Christian Clavier"
+        },
+        {
+          "level": 3,
+          "q": "Quel acteur prononce la réplique 'C'est à moi que tu parles ?' dans le film 'La Haine' ?",
+          "a": "Vincent Cassel"
+        },
+        {
+          "level": 4,
+          "q": "Quel acteur a vu sa carrière exploser grâce au film 'Intouchables' ?",
+          "a": "Omar Sy"
+        },
+        {
+          "level": 5,
+          "q": "Quel acteur français a remporté l'Oscar du meilleur acteur pour 'The Artist' ?",
+          "a": "Jean Dujardin"
+        },
+        {
+          "level": 6,
+          "q": "Quel acteur lance la célèbre réplique 'T'as d'beaux yeux, tu sais' dans 'Le Quai des brumes' ?",
+          "a": "Jean Gabin"
+        },
+        {
+          "level": 7,
+          "q": "Quel acteur joue le commissaire Bialès dans 'La Cité de la Peur' ?",
+          "a": "Gérard Darmon"
+        },
+        {
+          "level": 8,
+          "q": "Quel acteur s'est fait connaître en conduisant un taxi blanc à Marseille dans la saga 'Taxi' ?",
+          "a": "Samy Naceri"
+        },
+        {
+          "level": 9,
+          "q": "Quel acteur joue le rôle de Nino Quincampoix dans 'Le Fabuleux Destin d'Amélie Poulain' ?",
+          "a": "Mathieu Kassovitz"
+        },
+        {
+          "level": 10,
+          "q": "Quel acteur, véritable monstre sacré du cinéma français, a joué Cyrano de Bergerac (1990) ?",
+          "a": "Gérard Depardieu"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les dessins animés des années 2000",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dessin animé met en scène trois espionnes : Sam, Clover et Alex ?",
+          "a": "Totally Spies!"
+        },
+        {
+          "level": 2,
+          "q": "Quel garçon a des parrains magiques nommés Cosmo et Wanda ?",
+          "a": "Mes parrains sont magiques (ou Timmy Turner)"
+        },
+        {
+          "level": 3,
+          "q": "Quel jeune garçon a le pouvoir de se transformer en divers extraterrestres grâce à l'Omnitrix ?",
+          "a": "Ben 10"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel dessin animé un jeune inventeur surdoué possède-t-il un chien robot nommé Goddard ?",
+          "a": "Jimmy Neutron"
+        },
+        {
+          "level": 5,
+          "q": "Quel dessin animé français de football met en scène l'Institut Riffler et des matchs dans la ville ?",
+          "a": "Foot 2 rue"
+        },
+        {
+          "level": 6,
+          "q": "Quel dessin animé raconte les aventures d'un jeune avatar maître de l'air nommé Aang ?",
+          "a": "Avatar, le dernier maître de l'air"
+        },
+        {
+          "level": 7,
+          "q": "Quels demi-frères inventent des trucs dingues pendant leurs vacances d'été ?",
+          "a": "Phinéas et Ferb"
+        },
+        {
+          "level": 8,
+          "q": "Quelle justicière rousse est accompagnée de Robin Trépide et d'un rat-taupe nu ?",
+          "a": "Kim Possible"
+        },
+        {
+          "level": 9,
+          "q": "Quel garçon à la mèche blonde est le héros de la cour de récréation avec son copain Manu ?",
+          "a": "Titeuf"
+        },
+        {
+          "level": 10,
+          "q": "Quel dessin animé français mélange 2D et 3D où des collégiens combattent le virus X.A.N.A. ?",
+          "a": "Code Lyoko"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les océans et les continents",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus grand océan de la Terre ?",
+          "a": "L'océan Pacifique"
+        },
+        {
+          "level": 2,
+          "q": "Quel océan sépare l'Europe de l'Amérique du Nord ?",
+          "a": "L'océan Atlantique"
+        },
+        {
+          "level": 3,
+          "q": "Quel océan borde l'Inde, l'Australie et l'Afrique de l'Est ?",
+          "a": "L'océan Indien"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le plus petit des cinq océans (au pôle Nord) ?",
+          "a": "L'océan Arctique"
+        },
+        {
+          "level": 5,
+          "q": "Quel océan entoure l'Antarctique ?",
+          "a": "L'océan Austral (ou Antarctique)"
+        },
+        {
+          "level": 6,
+          "q": "Quel continent est le plus vaste et le plus peuplé ?",
+          "a": "L'Asie"
+        },
+        {
+          "level": 7,
+          "q": "Sur quel continent se trouvent les déserts du Sahara et du Kalahari ?",
+          "a": "L'Afrique"
+        },
+        {
+          "level": 8,
+          "q": "Quel continent est aussi un pays (et une grande île) ?",
+          "a": "L'Océanie (ou l'Australie)"
+        },
+        {
+          "level": 9,
+          "q": "Quel continent recouvert de glace se trouve au pôle Sud ?",
+          "a": "L'Antarctique"
+        },
+        {
+          "level": 10,
+          "q": "Quel continent (ou région du monde) regroupe des pays comme l'Argentine, le Brésil et le Pérou ?",
+          "a": "L'Amérique du Sud"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la géographie insolite",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays possède la forme d'une botte ?",
+          "a": "L'Italie"
+        },
+        {
+          "level": 2,
+          "q": "Quel micro-état est le plus petit pays du monde (enclavé dans Rome) ?",
+          "a": "Le Vatican"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays est constitué de plus de 17 000 îles (Jakarta en est la capitale) ?",
+          "a": "L'Indonésie"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays d'Amérique du Sud est si long et fin qu'on le surnomme 'le pays des poètes' ou 'la virgule' ?",
+          "a": "Le Chili"
+        },
+        {
+          "level": 5,
+          "q": "Quel lac extrêmement salé du Moyen-Orient permet de flotter sans effort ?",
+          "a": "La mer Morte"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays a la particularité de n'avoir aucun fleuve ni rivière sur son vaste territoire (parmi ses voisins se trouve le Yémen) ?",
+          "a": "L'Arabie saoudite"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays européen compte le plus grand nombre de lacs, surnommé 'le pays des mille lacs' ?",
+          "a": "La Finlande"
+        },
+        {
+          "level": 8,
+          "q": "Donne un exemple de pays totalement enclavé dans un seul autre pays (il y en a 3 dans le monde).",
+          "a": "Le Lesotho (ou Saint-Marin, ou le Vatican)"
+        },
+        {
+          "level": 9,
+          "q": "Quelle ville turque est la seule grande ville au monde à s'étendre sur deux continents (Europe et Asie) ?",
+          "a": "Istanbul"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le seul pays au monde dont le drapeau n'est ni carré ni rectangulaire, mais formé de deux triangles superposés ?",
+          "a": "Le Népal"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les spécialités culinaires du monde",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays est originaire la paëlla ?",
+          "a": "L'Espagne"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays est originaire la pizza ?",
+          "a": "L'Italie"
+        },
+        {
+          "level": 3,
+          "q": "De quel pays sont originaires les sushis et les ramen ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 4,
+          "q": "De quel pays sont originaires les tacos et le guacamole ?",
+          "a": "Le Mexique"
+        },
+        {
+          "level": 5,
+          "q": "De quel pays (ou province) est originaire la poutine (frites, fromage en grains, sauce brune) ?",
+          "a": "Le Canada (ou le Québec)"
+        },
+        {
+          "level": 6,
+          "q": "De quel pays est originaire le pad thaï ?",
+          "a": "La Thaïlande"
+        },
+        {
+          "level": 7,
+          "q": "De quel pays est originaire le goulash (une soupe à la viande et au paprika) ?",
+          "a": "La Hongrie"
+        },
+        {
+          "level": 8,
+          "q": "De quel pays est originaire le ceviche (poisson cru mariné au citron) ?",
+          "a": "Le Pérou"
+        },
+        {
+          "level": 9,
+          "q": "De quel pays est originaire la soupe Phở ou le Bo bun ?",
+          "a": "Le Vietnam"
+        },
+        {
+          "level": 10,
+          "q": "De quel pays est originaire le tajine (ou le couscous) ?",
+          "a": "Le Maroc"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les groupes de musique mythiques",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel groupe britannique a chanté 'Hey Jude' et 'Let It Be' ?",
+          "a": "The Beatles"
+        },
+        {
+          "level": 2,
+          "q": "Quel groupe mené par Freddie Mercury a chanté 'Bohemian Rhapsody' ?",
+          "a": "Queen"
+        },
+        {
+          "level": 3,
+          "q": "Quel groupe mené par Mick Jagger a chanté 'Paint It, Black' ?",
+          "a": "The Rolling Stones"
+        },
+        {
+          "level": 4,
+          "q": "Quel groupe de hard rock australien a chanté 'Highway to Hell' et 'Back in Black' ?",
+          "a": "AC/DC"
+        },
+        {
+          "level": 5,
+          "q": "Quel groupe mené par Kurt Cobain a marqué les années 90 avec 'Smells Like Teen Spirit' ?",
+          "a": "Nirvana"
+        },
+        {
+          "level": 6,
+          "q": "Quel groupe irlandais mené par Bono a chanté 'With or Without You' ?",
+          "a": "U2"
+        },
+        {
+          "level": 7,
+          "q": "Quel groupe britannique a sorti l'album concept 'The Dark Side of the Moon' et la chanson 'Another Brick in the Wall' ?",
+          "a": "Pink Floyd"
+        },
+        {
+          "level": 8,
+          "q": "Quel groupe de heavy metal américain a sorti l'album noir contenant 'Enter Sandman' et 'Nothing Else Matters' ?",
+          "a": "Metallica"
+        },
+        {
+          "level": 9,
+          "q": "Quel groupe de rock californien mélange funk et rock dans des tubes comme 'Californication' ou 'Under the Bridge' ?",
+          "a": "Red Hot Chili Peppers"
+        },
+        {
+          "level": 10,
+          "q": "Quel duo français de musique électronique, dissimulé sous des casques de robots, a chanté 'Get Lucky' et 'One More Time' ?",
+          "a": "Daft Punk"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en mathématiques de base ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelle-t-on le résultat d'une addition ?",
+          "a": "La somme"
+        },
+        {
+          "level": 2,
+          "q": "Comment appelle-t-on le résultat d'une soustraction ?",
+          "a": "La différence"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on le résultat d'une multiplication ?",
+          "a": "Le produit"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on le résultat d'une division ?",
+          "a": "Le quotient"
+        },
+        {
+          "level": 5,
+          "q": "Dans une fraction, comment s'appelle le nombre du haut ?",
+          "a": "Le numérateur"
+        },
+        {
+          "level": 6,
+          "q": "Dans une fraction, comment s'appelle le nombre du bas ?",
+          "a": "Le dénominateur"
+        },
+        { "level": 7, "q": "Combien font 7 multiplié par 8 ?", "a": "56" },
+        {
+          "level": 8,
+          "q": "Comment s'appelle un triangle qui a deux côtés de même longueur ?",
+          "a": "Un triangle isocèle"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle un triangle qui a trois côtés de même longueur ?",
+          "a": "Un triangle équilatéral"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle un triangle qui a un angle droit ?",
+          "a": "Un triangle rectangle"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en drapeaux du monde ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays a un drapeau avec une feuille d'érable rouge ?",
+          "a": "Le Canada"
+        },
+        {
+          "level": 2,
+          "q": "Quel pays a un drapeau avec un disque rouge au centre d'un fond blanc ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays a un drapeau avec 50 étoiles et 13 bandes rouges et blanches ?",
+          "a": "Les États-Unis"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays a un drapeau carré, rouge avec une croix blanche ?",
+          "a": "La Suisse"
+        },
+        {
+          "level": 5,
+          "q": "Quel pays a pour drapeau l'Union Jack ?",
+          "a": "Le Royaume-Uni"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays a un drapeau vert avec un losange jaune et un globe bleu étoilé ?",
+          "a": "Le Brésil"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays a un drapeau rouge avec une grande étoile jaune et 4 petites étoiles jaunes ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays a un drapeau avec des bandes bleu clair et blanche et un soleil avec un visage au centre ?",
+          "a": "L'Argentine"
+        },
+        {
+          "level": 9,
+          "q": "Quel pays africain a un drapeau en forme de Y horizontal avec 6 couleurs ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 10,
+          "q": "Quelle organisation internationale a un drapeau bleu avec 12 étoiles jaunes en cercle ?",
+          "a": "L'Union européenne"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la Pop Culture des années 2010",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle chanson de Psy a popularisé une danse de cheval invisible en 2012 ?",
+          "a": "Gangnam Style (de Psy)"
+        },
+        {
+          "level": 2,
+          "q": "Quel jeu sur smartphone consistait à lancer des oiseaux sur des cochons verts ?",
+          "a": "Angry Birds"
+        },
+        {
+          "level": 3,
+          "q": "Quelle série a fait connaître le 'Trône de Fer' ?",
+          "a": "Game of Thrones"
+        },
+        {
+          "level": 4,
+          "q": "Quel film Marvel sorti en 2012 réunit Iron Man, Captain America, Thor et Hulk ?",
+          "a": "Avengers"
+        },
+        {
+          "level": 5,
+          "q": "Quel défi viral de 2014 consistait à se jeter un seau d'eau glacée sur la tête ?",
+          "a": "L'Ice Bucket Challenge"
+        },
+        {
+          "level": 6,
+          "q": "Quel jeu mobile sorti en 2016 consistait à attraper des créatures virtuelles dans le monde réel ?",
+          "a": "Pokémon GO"
+        },
+        {
+          "level": 7,
+          "q": "Quel artiste canadien a sorti le hit 'Sorry' en 2015 ?",
+          "a": "Justin Bieber"
+        },
+        {
+          "level": 8,
+          "q": "Quelle danse très rapide des bras est popularisée par le joueur de foot Paul Pogba ou le rap américain ?",
+          "a": "Le Dab"
+        },
+        {
+          "level": 9,
+          "q": "Quel film Disney sorti en 2013 est devenu le film d'animation le plus rentable avec la chanson 'Libérée, délivrée' (Let It Go) ?",
+          "a": "La Reine des Neiges"
+        },
+        {
+          "level": 10,
+          "q": "Quelle console de Nintendo, hybride salon/portable, est sortie en mars 2017 ?",
+          "a": "La Nintendo Switch"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les répliques cultes de films",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Associe la réplique au film : 'Je suis ton père'",
+          "a": "Star Wars (L'Empire contre-attaque)"
+        },
+        {
+          "level": 2,
+          "q": "Associe la réplique au film : 'Vers l'infini et au-delà !'",
+          "a": "Toy Story"
+        },
+        {
+          "level": 3,
+          "q": "Associe la réplique au film : 'Un grand pouvoir implique de grandes responsabilités'",
+          "a": "Spider-Man"
+        },
+        {
+          "level": 4,
+          "q": "Associe la réplique au film : 'Hakuna Matata'",
+          "a": "Le Roi Lion"
+        },
+        {
+          "level": 5,
+          "q": "Associe la réplique au film : 'Je suis le roi du monde !'",
+          "a": "Titanic"
+        },
+        {
+          "level": 6,
+          "q": "Associe la réplique au film : 'Houston, nous avons un problème'",
+          "a": "Apollo 13"
+        },
+        {
+          "level": 7,
+          "q": "Associe la réplique au film : 'Mon précieux...'",
+          "a": "Le Seigneur des Anneaux"
+        },
+        {
+          "level": 8,
+          "q": "Associe la réplique au film : 'E.T. téléphone maison'",
+          "a": "E.T., l'extra-terrestre"
+        },
+        {
+          "level": 9,
+          "q": "Associe la réplique au film : 'Que la Force soit avec toi'",
+          "a": "Star Wars"
+        },
+        {
+          "level": 10,
+          "q": "Associe la réplique au film : 'Hasta la vista, baby'",
+          "a": "Terminator 2"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "L'anatomie de l'œil et de l'oreille",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle partie colorée de l'œil détermine la couleur de nos yeux ?",
+          "a": "L'iris"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle le petit trou noir au centre de l'iris ?",
+          "a": "La pupille"
+        },
+        {
+          "level": 3,
+          "q": "Quelle partie transparente recouvre l'avant de l'œil ?",
+          "a": "La cornée"
+        },
+        {
+          "level": 4,
+          "q": "Quelle membrane sensible à la lumière tapisse le fond de l'œil ?",
+          "a": "La rétine"
+        },
+        {
+          "level": 5,
+          "q": "Quel nerf transmet les informations visuelles au cerveau ?",
+          "a": "Le nerf optique"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle la partie visible de l'oreille externe ?",
+          "a": "Le pavillon"
+        },
+        {
+          "level": 7,
+          "q": "Quel petit os de l'oreille est le plus petit os du corps humain ?",
+          "a": "L'étrier"
+        },
+        {
+          "level": 8,
+          "q": "Quelle membrane vibre sous l'effet des ondes sonores dans l'oreille ?",
+          "a": "Le tympan"
+        },
+        {
+          "level": 9,
+          "q": "Quelle partie de l'oreille interne, en forme d'escargot, contient les récepteurs de l'audition ?",
+          "a": "La cochlée (ou le limaçon)"
+        },
+        {
+          "level": 10,
+          "q": "Quel organe de l'oreille interne est responsable de l'équilibre ?",
+          "a": "Le vestibule (ou l'oreille interne, canaux semi-circulaires)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les peintres célèbres et leurs œuvres",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui a peint 'La Joconde' ?",
+          "a": "Léonard de Vinci"
+        },
+        {
+          "level": 2,
+          "q": "Qui a peint 'Les Tournesols' (ainsi que 'La Nuit étoilée') ?",
+          "a": "Vincent van Gogh"
+        },
+        {
+          "level": 3,
+          "q": "Qui a peint 'Impression, soleil levant' (qui a donné son nom à l'Impressionnisme) ?",
+          "a": "Claude Monet"
+        },
+        {
+          "level": 4,
+          "q": "Quel peintre surréaliste espagnol a peint 'Les Montres molles' (La Persistance de la mémoire) ?",
+          "a": "Salvador Dalí"
+        },
+        {
+          "level": 5,
+          "q": "Quel peintre cubiste espagnol a peint 'Guernica' ?",
+          "a": "Pablo Picasso"
+        },
+        {
+          "level": 6,
+          "q": "Qui a peint le plafond de la chapelle Sixtine ('La Création d'Adam') ?",
+          "a": "Michel-Ange"
+        },
+        { "level": 7, "q": "Qui a peint 'Le Cri' ?", "a": "Edvard Munch" },
+        {
+          "level": 8,
+          "q": "Quelle peintre mexicaine est célèbre pour ses autoportraits (souvent avec un monosourcil) ?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 9,
+          "q": "Qui a peint 'La Naissance de Vénus' ?",
+          "a": "Sandro Botticelli"
+        },
+        {
+          "level": 10,
+          "q": "Quel peintre néerlandais a peint 'La Jeune Fille à la perle' ?",
+          "a": "Johannes Vermeer"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la culture populaire japonaise",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel type d'animation japonaise est caractérisé par un style graphique coloré (ex: Naruto) ?",
+          "a": "Les animes"
+        },
+        {
+          "level": 2,
+          "q": "Comment appelle-t-on les bandes dessinées japonaises qui se lisent de droite à gauche ?",
+          "a": "Les mangas"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la célèbre mascotte jaune de la franchise Pokémon ?",
+          "a": "Pikachu"
+        },
+        {
+          "level": 4,
+          "q": "Quel film d'animation du Studio Ghibli a remporté l'Oscar du meilleur film d'animation en 2003 (réalisé par Hayao Miyazaki) ?",
+          "a": "Le Voyage de Chihiro"
+        },
+        {
+          "level": 5,
+          "q": "Quel plat japonais est composé de riz vinaigré et de poisson cru ?",
+          "a": "Les sushis"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle la tenue traditionnelle japonaise portée lors des festivals ou cérémonies ?",
+          "a": "Le kimono (ou yukata)"
+        },
+        {
+          "level": 7,
+          "q": "Quel jeu vidéo de Nintendo met en scène le plombier Mario ?",
+          "a": "Super Mario (ou Mario)"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle l'art japonais du pliage du papier ?",
+          "a": "L'origami"
+        },
+        {
+          "level": 9,
+          "q": "Quels guerriers japonais historiques étaient connus pour leur code d'honneur (le bushido) et leurs katanas ?",
+          "a": "Les samouraïs"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le célèbre mont au sommet enneigé, point culminant du Japon ?",
+          "a": "Le mont Fuji"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les chanteurs francophones et leurs tubes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Associe ce chanteur à ses tubes : 'Allumer le feu', 'Que je t'aime'",
+          "a": "Johnny Hallyday"
+        },
+        {
+          "level": 2,
+          "q": "Associe ce chanteur à ses tubes : 'La Bohème', 'Emmenez-moi'",
+          "a": "Charles Aznavour"
+        },
+        {
+          "level": 3,
+          "q": "Associe ce chanteur à ses tubes : 'Ne me quitte pas', 'Amsterdam'",
+          "a": "Jacques Brel"
+        },
+        {
+          "level": 4,
+          "q": "Associe cette chanteuse à ses tubes : 'La Vie en rose', 'Non, je ne regrette rien'",
+          "a": "Édith Piaf"
+        },
+        {
+          "level": 5,
+          "q": "Associe ce chanteur à ses tubes : 'Mistral gagnant', 'Morgane de toi'",
+          "a": "Renaud"
+        },
+        {
+          "level": 6,
+          "q": "Associe ce chanteur à ses tubes : 'Les Lacs du Connemara', 'La Maladie d'amour'",
+          "a": "Michel Sardou"
+        },
+        {
+          "level": 7,
+          "q": "Associe ce chanteur à ses tubes : 'Comme d'habitude', 'Alexandrie Alexandra'",
+          "a": "Claude François"
+        },
+        {
+          "level": 8,
+          "q": "Associe cette chanteuse à ses tubes : 'L'Envie d'aimer', 'Pour que tu m'aimes encore'",
+          "a": "Céline Dion"
+        },
+        {
+          "level": 9,
+          "q": "Associe cette chanteuse à son tube : 'L'Aigle noir'",
+          "a": "Barbara"
+        },
+        {
+          "level": 10,
+          "q": "Associe ce chanteur à ses tubes : 'La Corrida', 'Je l'aime à mourir'",
+          "a": "Francis Cabrel"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "L'histoire de la Révolution française",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En quelle année a commencé la Révolution française avec la prise de la Bastille ?",
+          "a": "1789"
+        },
+        {
+          "level": 2,
+          "q": "Quel roi de France a été exécuté pendant la Révolution ?",
+          "a": "Louis XVI"
+        },
+        {
+          "level": 3,
+          "q": "Quelle prison parisienne a été prise d'assaut le 14 juillet 1789 ?",
+          "a": "La Bastille"
+        },
+        {
+          "level": 4,
+          "q": "Quelle reine de France, d'origine autrichienne, a été guillotinée en 1793 ?",
+          "a": "Marie-Antoinette"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le texte fondamental adopté en août 1789 qui proclame les droits naturels de l'homme ?",
+          "a": "La Déclaration des droits de l'homme et du citoyen (DDHC)"
+        },
+        {
+          "level": 6,
+          "q": "Quel dispositif d'exécution a été largement utilisé pendant la Terreur ?",
+          "a": "La guillotine"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelait la période de violente répression menée par Robespierre en 1793-1794 ?",
+          "a": "La Terreur"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelaient-on les révolutionnaires issus du petit peuple urbain, reconnaissables à leur tenue ?",
+          "a": "Les sans-culottes"
+        },
+        {
+          "level": 9,
+          "q": "Quel chant révolutionnaire est devenu l'hymne national français ?",
+          "a": "La Marseillaise"
+        },
+        {
+          "level": 10,
+          "q": "Quel général a mis fin à la Révolution en prenant le pouvoir lors du coup d'État du 18 Brumaire (1799) ?",
+          "a": "Napoléon Bonaparte"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les présidents de la Ve République (Vème)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui fut le premier président de la Ve République en 1958 ?",
+          "a": "Charles de Gaulle"
+        },
+        {
+          "level": 2,
+          "q": "Quel président a fait abolir la peine de mort en 1981 ?",
+          "a": "François Mitterrand"
+        },
+        {
+          "level": 3,
+          "q": "Quel président, élu en 1995, a dissous l'Assemblée nationale en 1997 ?",
+          "a": "Jacques Chirac"
+        },
+        {
+          "level": 4,
+          "q": "Qui était président lors de la victoire de la France à la Coupe du Monde 1998 ?",
+          "a": "Jacques Chirac"
+        },
+        {
+          "level": 5,
+          "q": "Quel président, surnommé 'l'hyperprésident', a été élu en 2007 ?",
+          "a": "Nicolas Sarkozy"
+        },
+        {
+          "level": 6,
+          "q": "Quel président a fait voter la loi sur le mariage pour tous (mariage homosexuel) en 2013 ?",
+          "a": "François Hollande"
+        },
+        {
+          "level": 7,
+          "q": "Qui a été le plus jeune président de la Ve République lors de son élection en 2017 ?",
+          "a": "Emmanuel Macron"
+        },
+        {
+          "level": 8,
+          "q": "Quel président a démissionné en 1969 après l'échec d'un référendum ?",
+          "a": "Charles de Gaulle"
+        },
+        {
+          "level": 9,
+          "q": "Quel président a succédé à de Gaulle et a lancé des grands projets industriels (comme Concorde ou TGV) ?",
+          "a": "Georges Pompidou"
+        },
+        {
+          "level": 10,
+          "q": "Quel président a abaissé la majorité à 18 ans et dépénalisé l'IVG sous son mandat (loi Veil) ?",
+          "a": "Valéry Giscard d'Estaing"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la Coupe du Monde de football",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays a gagné la première Coupe du Monde en 1930 ?",
+          "a": "L'Uruguay"
+        },
+        {
+          "level": 2,
+          "q": "Quel joueur a marqué un but de la main surnommé 'La main de Dieu' en 1986 ?",
+          "a": "Diego Maradona"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays a remporté le plus de Coupes du Monde (5 victoires) ?",
+          "a": "Le Brésil"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays hôte a subi une défaite historique de 7-1 en demi-finale face à l'Allemagne en 2014 ?",
+          "a": "Le Brésil"
+        },
+        {
+          "level": 5,
+          "q": "Quel joueur français a donné un coup de boule à Marco Materazzi en finale de la Coupe du Monde 2006 ?",
+          "a": "Zinédine Zidane"
+        },
+        {
+          "level": 6,
+          "q": "Quel joueur a remporté la Coupe du Monde à 17 ans en 1958, devenant une légende ?",
+          "a": "Pelé"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays africain a organisé la Coupe du Monde en 2010 (une première pour le continent) ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 8,
+          "q": "Quel joueur a inscrit un triplé en finale de la Coupe du Monde 2022 sans pour autant gagner le trophée ?",
+          "a": "Kylian Mbappé"
+        },
+        {
+          "level": 9,
+          "q": "Quel pays européen a remporté sa 4ème Coupe du Monde en 2006 ?",
+          "a": "L'Italie"
+        },
+        {
+          "level": 10,
+          "q": "Quel trophée originel, remis au vainqueur, a été volé définitivement en 1983 au Brésil ?",
+          "a": "Le trophée Jules-Rimet"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les marques et leurs slogans",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Associe la marque à ce slogan : 'Just Do It'",
+          "a": "Nike"
+        },
+        {
+          "level": 2,
+          "q": "Associe la marque à ce slogan : 'Venez comme vous êtes' (ou 'I'm lovin' it')",
+          "a": "McDonald's"
+        },
+        {
+          "level": 3,
+          "q": "Associe la marque à ce slogan : 'Parce que je le vaux bien'",
+          "a": "L'Oréal"
+        },
+        {
+          "level": 4,
+          "q": "Associe la marque à ce slogan : 'Ouvre du bonheur' (Open happiness)",
+          "a": "Coca-Cola"
+        },
+        {
+          "level": 5,
+          "q": "Associe la marque à ce slogan : 'Think Different'",
+          "a": "Apple"
+        },
+        {
+          "level": 6,
+          "q": "Associe la marque à ce slogan : 'C'est beau la vie, pour les grands et les petits'",
+          "a": "Haribo"
+        },
+        {
+          "level": 7,
+          "q": "Associe la marque à ce slogan : 'Il a la couleur de l'alcool, le goût de l'alcool... mais ce n'est pas de l'alcool'",
+          "a": "Canada Dry"
+        },
+        {
+          "level": 8,
+          "q": "Associe la marque à ce slogan : 'Le contrat de confiance'",
+          "a": "Darty"
+        },
+        {
+          "level": 9,
+          "q": "Associe la marque à ce slogan : 'Secouez, secouez-moi !'",
+          "a": "Orangina"
+        },
+        {
+          "level": 10,
+          "q": "Associe la marque à ce slogan : 'À fond la forme'",
+          "a": "Decathlon"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La mythologie nordique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le dieu principal, père de tous les dieux, borgne et accompagné de deux corbeaux ?",
+          "a": "Odin"
+        },
+        {
+          "level": 2,
+          "q": "Quel dieu du tonnerre utilise un marteau appelé Mjöllnir ?",
+          "a": "Thor"
+        },
+        {
+          "level": 3,
+          "q": "Quel dieu de la malice et de la tromperie est capable de changer de forme ?",
+          "a": "Loki"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le royaume des dieux Ases, relié au monde des hommes par un pont arc-en-ciel ?",
+          "a": "Asgard"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle l'immense salle où les guerriers morts au combat festoient avec Odin ?",
+          "a": "Le Valhalla"
+        },
+        {
+          "level": 6,
+          "q": "Comment appelle-t-on les guerrières divines qui choisissent les héros sur le champ de bataille pour les mener à Odin ?",
+          "a": "Les Valkyries"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle l'arbre monde géant qui relie les neuf royaumes ?",
+          "a": "Yggdrasil"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le nom de la fin du monde prophétique, où les dieux affronteront les géants ?",
+          "a": "Le Ragnarök"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le loup géant, fils de Loki, qui doit dévorer Odin lors de la fin du monde ?",
+          "a": "Fenrir"
+        },
+        {
+          "level": 10,
+          "q": "Quel monstre marin gigantesque, aussi fils de Loki, encercle le monde des hommes de son corps ?",
+          "a": "Jörmungand (le serpent de Midgard)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les monuments du monde",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel monument emblématique de Paris a été construit pour l'Exposition universelle de 1889 ?",
+          "a": "La tour Eiffel"
+        },
+        {
+          "level": 2,
+          "q": "Quel immense mur a été construit pour protéger le nord de la Chine ?",
+          "a": "La Grande Muraille de Chine"
+        },
+        {
+          "level": 3,
+          "q": "Quel amphithéâtre romain gigantesque se trouve au centre de Rome ?",
+          "a": "Le Colisée"
+        },
+        {
+          "level": 4,
+          "q": "Quel mausolée de marbre blanc a été construit par un empereur moghol en Inde par amour pour sa femme ?",
+          "a": "Le Taj Mahal"
+        },
+        {
+          "level": 5,
+          "q": "Quelle grande statue verte se trouve sur une île de la baie de New York ?",
+          "a": "La statue de la Liberté"
+        },
+        {
+          "level": 6,
+          "q": "Quel site archéologique inca se trouve en hauteur dans les montagnes du Pérou ?",
+          "a": "Le Machu Picchu"
+        },
+        {
+          "level": 7,
+          "q": "Quelle immense statue de Jésus-Christ domine Rio de Janeiro depuis le mont Corcovado ?",
+          "a": "Le Christ Rédempteur"
+        },
+        {
+          "level": 8,
+          "q": "Quel monument préhistorique circulaire en pierres dressées se trouve en Angleterre ?",
+          "a": "Stonehenge"
+        },
+        {
+          "level": 9,
+          "q": "Quelle ancienne cité nabatéenne se trouve taillée dans la roche rouge en Jordanie ?",
+          "a": "Pétra"
+        },
+        {
+          "level": 10,
+          "q": "Quel palais/forteresse surplombe Grenade en Espagne, chef-d'œuvre de l'architecture mauresque ?",
+          "a": "L'Alhambra"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la saga Star Wars",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le méchant emblématique de la première trilogie, tout de noir vêtu, avec une respiration bruyante ?",
+          "a": "Dark Vador"
+        },
+        {
+          "level": 2,
+          "q": "Quel jeune fermier de Tatooine devient un héros Jedi après avoir rencontré Obi-Wan Kenobi ?",
+          "a": "Luke Skywalker"
+        },
+        {
+          "level": 3,
+          "q": "Quelle arme, qui produit un son distinctif, est utilisée par les Jedi et les Sith ?",
+          "a": "Le sabre laser"
+        },
+        {
+          "level": 4,
+          "q": "Quel contrebandier pilote le Faucon Millénium avec son copilote Wookiee ?",
+          "a": "Han Solo"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le copilote Wookiee très poilu mentionné à la question précédente ?",
+          "a": "Chewbacca"
+        },
+        {
+          "level": 6,
+          "q": "Quelle station spatiale de l'Empire a le pouvoir de détruire des planètes entières ?",
+          "a": "L'Étoile de la Mort (ou l'Étoile Noire)"
+        },
+        {
+          "level": 7,
+          "q": "Quel petit maître Jedi vert, s'exprimant avec une syntaxe inversée, vit sur Dagobah ?",
+          "a": "Yoda"
+        },
+        {
+          "level": 8,
+          "q": "Quel droïde de protocole doré est souvent accompagné du petit droïde astromécano R2-D2 ?",
+          "a": "C-3PO (ou Z-6PO)"
+        },
+        {
+          "level": 9,
+          "q": "Quel chasseur de primes en armure mandalorienne capture Han Solo dans 'L'Empire contre-attaque' ?",
+          "a": "Boba Fett"
+        },
+        {
+          "level": 10,
+          "q": "Quelle force d'énergie mystique donne leurs pouvoirs aux Jedi et aux Sith ?",
+          "a": "La Force"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en jeux de société classiques ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel jeu devez-vous acheter des propriétés comme la Rue de la Paix et ruiner vos adversaires ?",
+          "a": "Le Monopoly"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel jeu de déduction devez-vous trouver le meurtrier (ex: le Colonel Moutarde) et l'arme du crime ?",
+          "a": "Le Cluedo"
+        },
+        {
+          "level": 3,
+          "q": "Quel jeu de lettres demande de former des mots sur une grille avec des jetons qui rapportent des points ?",
+          "a": "Le Scrabble"
+        },
+        {
+          "level": 4,
+          "q": "Quel jeu de cartes très populaire a pour but de se débarrasser de ses cartes, avec des cartes '+2' et 'Changement de sens' ?",
+          "a": "Le Uno"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel jeu stratégique les joueurs placent-ils leurs armées pour conquérir des territoires sur une carte du monde (ex: le Kamtchatka) ?",
+          "a": "Le Risk"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel jeu de stratégie abstrait les pièces sont-elles un roi, une dame, des fous, des cavaliers, des tours et des pions ?",
+          "a": "Les échecs"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel jeu devez-vous poser une question à partir d'un visage pour trouver le personnage mystère de l'adversaire ?",
+          "a": "Qui est-ce ?"
+        },
+        {
+          "level": 8,
+          "q": "Quel jeu de réflexion et d'adresse demande de retirer les blocs d'une tour sans la faire tomber ?",
+          "a": "Le Jenga"
+        },
+        {
+          "level": 9,
+          "q": "Quel jeu demande aux joueurs de placer leurs pieds et leurs mains sur des cercles de couleur sans tomber ?",
+          "a": "Le Twister"
+        },
+        {
+          "level": 10,
+          "q": "Quel jeu de stratégie oppose deux joueurs sur un damier de 10x10 cases, où les pions se mangent en sautant ?",
+          "a": "Les dames"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La littérature française classique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel auteur a écrit 'Les Misérables' et 'Notre-Dame de Paris' ?",
+          "a": "Victor Hugo"
+        },
+        {
+          "level": 2,
+          "q": "Qui a écrit 'Le Malade imaginaire' et 'L'Avare' ?",
+          "a": "Molière"
+        },
+        {
+          "level": 3,
+          "q": "Quel philosophe et écrivain des Lumières a écrit 'Candide' et 'Zadig' ?",
+          "a": "Voltaire"
+        },
+        {
+          "level": 4,
+          "q": "Qui est l'auteur du poème 'Le Dormeur du val' et du recueil 'Une saison en enfer' ?",
+          "a": "Arthur Rimbaud"
+        },
+        {
+          "level": 5,
+          "q": "Quel romancier du 19ème siècle a écrit la vaste fresque de 'La Comédie humaine' (dont 'Le Père Goriot') ?",
+          "a": "Honoré de Balzac"
+        },
+        {
+          "level": 6,
+          "q": "Quelle femme de lettres a écrit 'Les Malheurs de Sophie' sous la forme de récits pour enfants ?",
+          "a": "La comtesse de Ségur"
+        },
+        {
+          "level": 7,
+          "q": "Quel auteur du 19e siècle a écrit 'Madame Bovary' ?",
+          "a": "Gustave Flaubert"
+        },
+        {
+          "level": 8,
+          "q": "Quel poète a écrit le célèbre recueil 'Les Fleurs du mal' (et le poème 'L'Albatros') ?",
+          "a": "Charles Baudelaire"
+        },
+        {
+          "level": 9,
+          "q": "Quel écrivain et pionnier de l'aviation a écrit 'Le Petit Prince' ?",
+          "a": "Antoine de Saint-Exupéry"
+        },
+        {
+          "level": 10,
+          "q": "Quel auteur de la saga des 'Rougon-Macquart' a écrit 'Germinal' ?",
+          "a": "Émile Zola"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "les vers de terre",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Est-ce qu'on peut dire \"lombric\" ?",
+          "a": "Oui."
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la particularité physique la plus troublante de ces bestioles par rapport aux hommes, en dehors du fait de ramper et de manger de la terre ?",
+          "a": "Ils sont hermaphrodites (mâle et femelle à la fois)."
+        },
+        {
+          "level": 3,
+          "q": "Quel pays est habité par le Megascolides australis, ou \"ver de terre géant\" (et qui peut atteindre parfois les 3 mètres de long) ?",
+          "a": "L'Australie."
+        },
+        {
+          "level": 4,
+          "q": "Si un ver de terre est coupé en deux, les deux parties repoussent-elles ?",
+          "a": "Non, seule la partie contenant la tête et les organes vitaux repousse, l'autre bout meurt."
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? On dénombre aujourd'hui 3 000 espèces de vers de terre dans le monde, mais les scientifiques estiment qu'il y en a au moins le double.",
+          "a": "Vrai. Sur les quelque 6 000 espèces, on estime que 100 à 150 vivent en France."
+        },
+        {
+          "level": 6,
+          "q": "Combien de segments en forme d'anneau environ un lombric commun possède-t-il : 15, 150 ou 1 500 ?",
+          "a": "150 (il n'a d'ailleurs ni yeux, ni dents, ni pattes)."
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle le biologiste qui a rédigé le traité \"La formation de la terre végétale par l'action des vers de terre, avec des observations sur leurs habitudes\" ?",
+          "a": "Charles Darwin (en 1881)."
+        },
+        {
+          "level": 8,
+          "q": "Les vers de terre digèrent la terre à travers un de leurs organes qui sert notamment à broyer. Comment s'appelle-t-il ?",
+          "a": "Le gésier (oui oui, comme les volailles)."
+        },
+        {
+          "level": 9,
+          "q": "Quel nom donne-t-on à un spécialiste qui étudie la terre pour s'informer sur les vers (et autres bactéries) qu'elle contient ?",
+          "a": "Un géobiologue."
+        },
+        {
+          "level": 10,
+          "q": "Épelez \"lombricomposteur\".",
+          "a": "L-O-M-B-R-I-C-O-M-P-O-S-T-E-U-R."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "la biologie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel instrument a-t-on besoin si on veut étudier les bactéries ?",
+          "a": "D'un microscope."
+        },
+        {
+          "level": 2,
+          "q": "Quelle fameuse brebis détient le titre de premier mammifère cloné de l'Histoire à partir d'une cellule adulte ?",
+          "a": "Dolly."
+        },
+        {
+          "level": 3,
+          "q": "De quoi la géologie est-elle la science ?",
+          "a": "De la Terre (de ses différentes couches, ses fossiles, etc.)."
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on une maladie ou une infection qui se transmet de l'animal à l'être humain ?",
+          "a": "Une zoonose."
+        },
+        {
+          "level": 5,
+          "q": "Dans \"A.D.N.\", \"A\" veut dire \"Acide\". Que veulent dire \"D\" et \"N\" ?",
+          "a": "Désoxyribonucléique."
+        },
+        {
+          "level": 6,
+          "q": "Les protéines sont constituées d'un enchaînement d'acides... ?",
+          "a": "D'acides aminés."
+        },
+        {
+          "level": 7,
+          "q": "Au moment du choc thermique, que subit une protéine pour passer de son état naturel à un état dénaturé (comme le blanc d'œuf qui durcit à la cuisson) ?",
+          "a": "La coagulation."
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on un gène capable d'inhiber un de ses allèles ?",
+          "a": "Un gène dominant (le gène qui se tait est un gène récessif)."
+        },
+        {
+          "level": 9,
+          "q": "Quel nom, donné par le chercheur Kary Mullis à sa technique d'amplification d'A.D.N., est aussi le nom de la chanson de Calogero : \"Pomme C\", \"En Apesanteur\" ou \"P.C.R.\" ?",
+          "a": "P.C.R. (en 1983)."
+        },
+        {
+          "level": 10,
+          "q": "Quelle famille de virus compte l'agent responsable du Sras ?",
+          "a": "Les coronavirus."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "les rumeurs sur les stars",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Sur qui courait la rumeur selon laquelle il serait toujours vivant avec Elvis sur une île : Michael Jackson ou Claude François ?",
+          "a": "Michael Jackson."
+        },
+        {
+          "level": 2,
+          "q": "Quelle comédienne des années 90, à qui l'on prêtait une relation avec le chien de l'animateur, a fait l'objet d'une rumeur pendant l'émission \"Jacques Martin\" ?",
+          "a": "Aucune, la fameuse rumeur concernait une candidate anonyme à l'émission \"L'École des fans\"."
+        },
+        {
+          "level": 3,
+          "q": "Quel président français a longtemps fait l'objet de rumeurs concernant une deuxième famille cachée (qui se sont avérées vraies) ?",
+          "a": "François Mitterrand."
+        },
+        {
+          "level": 4,
+          "q": "Est-il vrai que les créateurs de \"South Park\" ont été tués lors du 11 Septembre 2001 ?",
+          "a": "Non."
+        },
+        {
+          "level": 5,
+          "q": "Quelle chanteuse serait, selon la rumeur, la réincarnation de son amie décédée, une autre chanteuse, avec qui elle a d'ailleurs sorti un titre posthume ?",
+          "a": "Aucune. La rumeur concernait Avril Lavigne, qui aurait été remplacée par un sosie après sa mort supposée."
+        },
+        {
+          "level": 6,
+          "q": "De quel chanteur disait-on qu'il s'était fait enlever une côte pour pouvoir s'auto-fellationner ?",
+          "a": "Marilyn Manson."
+        },
+        {
+          "level": 7,
+          "q": "De quelle animatrice disait-on qu'elle était en réalité un homme né sous le prénom d'Alain ?",
+          "a": "Amanda Lear."
+        },
+        {
+          "level": 8,
+          "q": "À la fin des années 60, une rumeur laissait entendre qu'un des Beatles était mort et avait été remplacé par un sosie. Lequel ?",
+          "a": "Paul McCartney."
+        },
+        {
+          "level": 9,
+          "q": "Quel joueur de l'équipe de France 98 serait en réalité atteint d'une maladie rare du sang, raison pour laquelle il s'est auto-exclu du groupe selon la rumeur ?",
+          "a": "Aucun. La rumeur parlait d'Emmanuel Petit et de Lizarazu qui auraient entretenu une liaison, démentie depuis. Mais rien sur le sang."
+        },
+        {
+          "level": 10,
+          "q": "Quelle rock star américaine a fait courir le bruit qu'il avait fumé les cendres de son père mort avec de la cocaïne ?",
+          "a": "Keith Richards, guitariste des Rolling Stones. (C'est en partie vrai, mais sans la cocaïne)."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "le vélo",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle ce qui se trouve entre les deux roues, la chaîne, la selle et le guidon, et qui relie le tout ?",
+          "a": "Le cadre."
+        },
+        {
+          "level": 2,
+          "q": "Si vous faites du vélo sans tenir le guidon, a-t-on le droit de dire de vous que vous êtes un danger public ?",
+          "a": "Oui. Et surtout, que vous roulez \"sans les mains\"."
+        },
+        {
+          "level": 3,
+          "q": "En cyclisme sur route, le maillot jaune est le maillot du leader du classement général du Tour de France. De quoi est-il le maillot sur le Tour d'Italie et le Tour d'Espagne ?",
+          "a": "Rien. En Italie il est rose, et en Espagne rouge."
+        },
+        {
+          "level": 4,
+          "q": "Est-il obligatoire de porter un casque pour faire du vélo sur la route (pour les adultes) ?",
+          "a": "Non, il n'est obligatoire que pour les enfants de moins de 12 ans."
+        },
+        {
+          "level": 5,
+          "q": "Combien de cyclistes ont franchi la barre des 5 victoires sur le Tour de France ?",
+          "a": "4 (Jacques Anquetil, Eddy Merckx, Bernard Hinault et Miguel Indurain)."
+        },
+        {
+          "level": 6,
+          "q": "Depuis quelle année le cyclisme est-il un sport olympique pour les hommes ? 1896, 1936 ou 1976 ?",
+          "a": "1896 (lors des premiers JO de l'ère moderne à Athènes)."
+        },
+        {
+          "level": 7,
+          "q": "Qui a chanté \"La Bicyclette\" en 1968 (\"Quand on partait de bon matin, quand on partait sur les chemins...\") ?",
+          "a": "Yves Montand."
+        },
+        {
+          "level": 8,
+          "q": "De quand date l'invention du vélocipède, l'ancêtre du vélo ? a) 1780 b) 1817 c) 1850.",
+          "a": "b) 1817 (par le baron allemand Karl Drais von Sauerbronn)."
+        },
+        {
+          "level": 9,
+          "q": "Combien de \"Vélos d'or\", récompensant le meilleur cycliste de la saison, a remporté Lance Armstrong avant de les perdre pour cause de dopage ?",
+          "a": "5 (entre 1999 et 2004)."
+        },
+        {
+          "level": 10,
+          "q": "Lors de quelle décennie la Française Jeannie Longo a-t-elle remporté son dernier titre de championne de France du contre-la-montre ?",
+          "a": "Les années 2010 (elle a remporté le titre en 2011, à 52 ans)."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Cyrano de Bergerac",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui est l'auteur de la pièce \"Cyrano de Bergerac\" ?",
+          "a": "Edmond Rostand"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le prénom de la femme que Cyrano aime en secret ?",
+          "a": "Roxane"
+        },
+        {
+          "level": 3,
+          "q": "Cyrano est complexé par une partie de son visage. Laquelle ?",
+          "a": "Son nez"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le beau mais peu éloquent jeune homme dont Roxane est éprise ?",
+          "a": "Christian de Neuvillette"
+        },
+        {
+          "level": 5,
+          "q": "Quelle célèbre tirade de Cyrano énumère les différentes façons de décrire son nez (le roc, le pic, le cap...) ?",
+          "a": "La tirade du nez"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le métier de Ragueneau, l'ami de Cyrano, qui est aussi poète à ses heures ?",
+          "a": "Pâtissier"
+        },
+        {
+          "level": 7,
+          "q": "Comment Cyrano meurt-il à la fin de la pièce ?",
+          "a": "Assommé par une bûche tombée d'une fenêtre (un attentat)"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le nom complet de Cyrano dans la pièce ?",
+          "a": "Hercule Savinien Cyrano de Bergerac"
+        },
+        {
+          "level": 9,
+          "q": "Quel acteur français a magistralement incarné Cyrano au cinéma dans le film de Jean-Paul Rappeneau en 1990 ?",
+          "a": "Gérard Depardieu"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la dernière réplique de Cyrano avant de mourir, mot qui clôt la pièce ?",
+          "a": "Mon panache"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'anatomie dans la pop culture",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel organe est censé battre pour l'amour ?",
+          "a": "Le cœur"
+        },
+        {
+          "level": 2,
+          "q": "Quelle partie du corps de Pinocchio s'allonge quand il ment ?",
+          "a": "Son nez"
+        },
+        {
+          "level": 3,
+          "q": "Dans \"Grey's Anatomy\", le titre est une référence à un livre d'anatomie célèbre. Vrai ou faux ?",
+          "a": "Vrai (Henry Gray's Anatomy of the Human Body)"
+        },
+        {
+          "level": 4,
+          "q": "Quel héros de Marvel a un squelette recouvert d'adamantium ?",
+          "a": "Wolverine"
+        },
+        {
+          "level": 5,
+          "q": "Quel personnage de Star Wars perd sa main droite lors d'un combat au sabre laser dans l'Épisode V ?",
+          "a": "Luke Skywalker"
+        },
+        {
+          "level": 6,
+          "q": "De quelle couleur est le sang de Spock dans Star Trek ?",
+          "a": "Vert"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel film d'animation Pixar les émotions (Joie, Tristesse, etc.) contrôlent-elles le cerveau de Riley ?",
+          "a": "Vice-versa (Inside Out)"
+        },
+        {
+          "level": 8,
+          "q": "Quel organe le crocodile de Peter Pan a-t-il avalé en même temps que la main du Capitaine Crochet (qui fait \"tic-tac\") ?",
+          "a": "Un réveil (et non un organe, mais bon !)"
+        },
+        {
+          "level": 9,
+          "q": "Dans la mythologie grecque, quelle est la seule partie vulnérable du corps d'Achille ?",
+          "a": "Son talon"
+        },
+        {
+          "level": 10,
+          "q": "Quelle série télévisée a pour personnage principal un médecin misanthrope, génie du diagnostic médical, qui boîte ?",
+          "a": "Dr House"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "La comédie musicale",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle comédie musicale française raconte l'histoire de Quasimodo et Esmeralda ?",
+          "a": "Notre-Dame de Paris"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le nom de la nounou magique qui chante \"Supercalifragilisticexpialidocious\" ?",
+          "a": "Mary Poppins"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel film avec John Travolta et Olivia Newton-John entend-on \"You're the One That I Want\" ?",
+          "a": "Grease"
+        },
+        {
+          "level": 4,
+          "q": "Quelle comédie musicale de Damien Chazelle met en scène Ryan Gosling et Emma Stone à Los Angeles ?",
+          "a": "La La Land"
+        },
+        {
+          "level": 5,
+          "q": "Quelle comédie musicale d'Andrew Lloyd Webber raconte l'histoire d'une tribu de félins chantants ?",
+          "a": "Cats"
+        },
+        {
+          "level": 6,
+          "q": "Quelle comédie musicale française, créée par Gérard Presgurvic, adapte l'histoire des amants de Vérone ?",
+          "a": "Roméo et Juliette, de la haine à l'amour"
+        },
+        {
+          "level": 7,
+          "q": "Quel film de 1952 avec Gene Kelly est célèbre pour sa scène de danse sous la pluie ?",
+          "a": "Chantons sous la pluie (Singin' in the Rain)"
+        },
+        {
+          "level": 8,
+          "q": "Dans quelle comédie musicale hollywoodienne de 2001 Nicole Kidman joue-t-elle la courtisane Satine ?",
+          "a": "Moulin Rouge !"
+        },
+        {
+          "level": 9,
+          "q": "Quelle comédie musicale a été adaptée du roman de Victor Hugo sur la révolution française et comprend la chanson \"I Dreamed a Dream\" ?",
+          "a": "Les Misérables"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom de la comédie musicale qui retrace l'histoire du père fondateur américain Alexander Hamilton sur fond de rap ?",
+          "a": "Hamilton"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie de la France",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de la France ?",
+          "a": "Paris"
+        },
+        { "level": 2, "q": "Quel fleuve traverse Paris ?", "a": "La Seine" },
+        {
+          "level": 3,
+          "q": "Quelle est la plus haute montagne de France (et d'Europe occidentale) ?",
+          "a": "Le Mont Blanc"
+        },
+        {
+          "level": 4,
+          "q": "Dans quelle mer se jette le Rhône ?",
+          "a": "La mer Méditerranée"
+        },
+        {
+          "level": 5,
+          "q": "Quelle ville est surnommée la \"Capitale des Gaules\" ?",
+          "a": "Lyon"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le plus grand lac naturel de France ?",
+          "a": "Le lac du Bourget"
+        },
+        {
+          "level": 7,
+          "q": "Quelle île française est surnommée l'Île de Beauté ?",
+          "a": "La Corse"
+        },
+        {
+          "level": 8,
+          "q": "Quel département français porte le numéro 974 ?",
+          "a": "La Réunion"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la région la plus vaste de France métropolitaine depuis le redécoupage de 2016 ?",
+          "a": "La Nouvelle-Aquitaine"
+        },
+        {
+          "level": 10,
+          "q": "Quel détroit sépare la Corse de la Sardaigne ?",
+          "a": "Les bouches de Bonifacio"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Le cinéma policier et de gangsters",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui réalise la trilogie \"Le Parrain\" ?",
+          "a": "Francis Ford Coppola"
+        },
+        {
+          "level": 2,
+          "q": "Quel acteur incarne Tony Montana dans \"Scarface\" (1983) ?",
+          "a": "Al Pacino"
+        },
+        {
+          "level": 3,
+          "q": "Quel film de Quentin Tarantino commence par un braquage raté et met en scène des personnages portant des noms de couleurs ?",
+          "a": "Reservoir Dogs"
+        },
+        {
+          "level": 4,
+          "q": "Qui réalise \"Les Affranchis\" et \"Casino\" ?",
+          "a": "Martin Scorsese"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel film de Brian De Palma retrouve-t-on le mafieux Al Capone face à Eliot Ness ?",
+          "a": "Les Incorruptibles"
+        },
+        {
+          "level": 6,
+          "q": "Quel acteur joue l'inspecteur Harry Callahan (qui demande \"Do you feel lucky, punk?\") ?",
+          "a": "Clint Eastwood"
+        },
+        {
+          "level": 7,
+          "q": "Dans \"Pulp Fiction\", que cherchent à récupérer Jules et Vincent pour leur patron Marsellus Wallace ?",
+          "a": "Une mystérieuse mallette"
+        },
+        {
+          "level": 8,
+          "q": "Qui réalise \"Heat\", célèbre pour la confrontation entre Al Pacino et Robert De Niro ?",
+          "a": "Michael Mann"
+        },
+        {
+          "level": 9,
+          "q": "Quel film français de Jacques Audiard raconte l'ascension d'un jeune détenu (joué par Tahar Rahim) dans le milieu carcéral corse ?",
+          "a": "Un prophète"
+        },
+        {
+          "level": 10,
+          "q": "Dans le film \"Les Tontons flingueurs\", comment s'appelle le personnage joué par Lino Ventura ?",
+          "a": "Fernand Naudin"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "La saga Harry Potter",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle l'école de sorcellerie fréquentée par Harry Potter ?",
+          "a": "Poudlard"
+        },
+        {
+          "level": 2,
+          "q": "Qui est le directeur de cette école pendant la majeure partie de la saga ?",
+          "a": "Albus Dumbledore"
+        },
+        {
+          "level": 3,
+          "q": "Quels sont les prénoms des deux meilleurs amis de Harry ?",
+          "a": "Ron et Hermione"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le mage noir responsable de la mort des parents de Harry ?",
+          "a": "Lord Voldemort"
+        },
+        {
+          "level": 5,
+          "q": "Quel est l'animal de compagnie de Harry ?",
+          "a": "Une chouette (Hedwige)"
+        },
+        {
+          "level": 6,
+          "q": "Dans quelle maison de Poudlard le Choixpeau magique a-t-il failli envoyer Harry avant de choisir Gryffondor ?",
+          "a": "Serpentard"
+        },
+        {
+          "level": 7,
+          "q": "Quel sport magique se joue sur des balais volants ?",
+          "a": "Le Quidditch"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le sortilège de mort, l'un des trois sortilèges impardonnables ?",
+          "a": "Avada Kedavra"
+        },
+        {
+          "level": 9,
+          "q": "Que sont les Horcruxes ?",
+          "a": "Des objets contenant des fragments de l'âme de Voldemort"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom complet du demi-géant qui introduit Harry dans le monde magique ?",
+          "a": "Rubeus Hagrid"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Le tennis",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel tournoi du Grand Chelem se joue sur terre battue ?",
+          "a": "Roland-Garros"
+        },
+        {
+          "level": 2,
+          "q": "Combien y a-t-il de tournois du Grand Chelem dans l'année ?",
+          "a": "4"
+        },
+        {
+          "level": 3,
+          "q": "Quel joueur suisse détient 20 titres du Grand Chelem ?",
+          "a": "Roger Federer"
+        },
+        {
+          "level": 4,
+          "q": "Quel joueur espagnol est surnommé \"le roi de la terre battue\" ?",
+          "a": "Rafael Nadal"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le tournoi du Grand Chelem qui se joue sur gazon ?",
+          "a": "Wimbledon"
+        },
+        {
+          "level": 6,
+          "q": "Quel joueur détient le record absolu du nombre de semaines passées à la place de numéro 1 mondial (chez les hommes) ?",
+          "a": "Novak Djokovic"
+        },
+        {
+          "level": 7,
+          "q": "Combien de points marque-t-on après avoir gagné les deux premiers échanges d'un jeu ?",
+          "a": "30 points"
+        },
+        {
+          "level": 8,
+          "q": "Qui est le dernier Français à avoir remporté Roland-Garros en simple (en 1983) ?",
+          "a": "Yannick Noah"
+        },
+        {
+          "level": 9,
+          "q": "Comment appelle-t-on un service gagnant que l'adversaire ne parvient même pas à toucher ?",
+          "a": "Un ace"
+        },
+        {
+          "level": 10,
+          "q": "Quel joueur américain, célèbre pour ses colères sur le court, a popularisé la phrase \"You cannot be serious!\" ?",
+          "a": "John McEnroe"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Le corps humain",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel organe pompe le sang dans le corps ?",
+          "a": "Le cœur"
+        },
+        {
+          "level": 2,
+          "q": "Combien d'os possède un adulte humain (environ) ?",
+          "a": "206"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le plus grand organe du corps humain ?",
+          "a": "La peau"
+        },
+        { "level": 4, "q": "Où se trouve le fémur ?", "a": "Dans la cuisse" },
+        {
+          "level": 5,
+          "q": "Quel liquide transporte l'oxygène des poumons vers le reste du corps ?",
+          "a": "Le sang"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le tube qui relie la bouche à l'estomac ?",
+          "a": "L'œsophage"
+        },
+        {
+          "level": 7,
+          "q": "Quel muscle sépare la cavité thoracique de la cavité abdominale et joue un rôle essentiel dans la respiration ?",
+          "a": "Le diaphragme"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appellent les cellules nerveuses du cerveau ?",
+          "a": "Les neurones"
+        },
+        {
+          "level": 9,
+          "q": "Quelle glande située à la base du cou sécrète des hormones qui régulent le métabolisme ?",
+          "a": "La thyroïde"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le plus petit os du corps humain, situé dans l'oreille moyenne ?",
+          "a": "L'étrier"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie de l'Europe",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de l'Espagne ?",
+          "a": "Madrid"
+        },
+        {
+          "level": 2,
+          "q": "Quel pays a la forme d'une botte ?",
+          "a": "L'Italie"
+        },
+        {
+          "level": 3,
+          "q": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+          "a": "Les Pyrénées"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le plus long fleuve d'Europe ?",
+          "a": "La Volga"
+        },
+        {
+          "level": 5,
+          "q": "Quels sont les trois pays baltes ?",
+          "a": "L'Estonie, la Lettonie et la Lituanie"
+        },
+        {
+          "level": 6,
+          "q": "Quelle mer borde le sud de l'Europe ?",
+          "a": "La mer Méditerranée"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays européen est composé de plus de 1000 îles et a pour capitale Athènes ?",
+          "a": "La Grèce"
+        },
+        {
+          "level": 8,
+          "q": "Quel petit État enclavé dans Rome est le siège de la papauté ?",
+          "a": "Le Vatican"
+        },
+        {
+          "level": 9,
+          "q": "Quel pays scandinave est célèbre pour ses fjords ?",
+          "a": "La Norvège"
+        },
+        {
+          "level": 10,
+          "q": "Quelle chaîne de montagnes marque traditionnellement la frontière entre l'Europe et l'Asie ?",
+          "a": "L'Oural"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les tueurs en série au cinéma",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel tueur porte un masque de hockey dans la saga \"Vendredi 13\" ?",
+          "a": "Jason Voorhees"
+        },
+        {
+          "level": 2,
+          "q": "Quel tueur attaque ses victimes dans leurs rêves dans \"Les Griffes de la nuit\" ?",
+          "a": "Freddy Krueger"
+        },
+        {
+          "level": 3,
+          "q": "Quel tueur en série cannibale est incarné par Anthony Hopkins dans \"Le Silence des agneaux\" ?",
+          "a": "Hannibal Lecter"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel film de David Fincher un tueur s'inspire-t-il des sept péchés capitaux ?",
+          "a": "Seven"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le nom du tueur au masque blanc dans la saga \"Halloween\" ?",
+          "a": "Michael Myers"
+        },
+        {
+          "level": 6,
+          "q": "Quel tueur au masque inspiré du tableau \"Le Cri\" sévit dans la saga \"Scream\" ?",
+          "a": "Ghostface"
+        },
+        {
+          "level": 7,
+          "q": "Dans \"Psychose\" d'Alfred Hitchcock, comment s'appelle le gérant du motel ?",
+          "a": "Norman Bates"
+        },
+        {
+          "level": 8,
+          "q": "Quel tueur au puzzle met ses victimes à l'épreuve dans la saga \"Saw\" ?",
+          "a": "Jigsaw (John Kramer)"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel film de 2000 Christian Bale incarne-t-il Patrick Bateman, un riche banquier d'affaires meurtrier ?",
+          "a": "American Psycho"
+        },
+        {
+          "level": 10,
+          "q": "Quel film de 2007 de David Fincher retrace l'enquête sur un mystérieux tueur en série ayant sévi en Californie dans les années 60 et 70 ?",
+          "a": "Zodiac"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les dessins animés des années 80-90",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dessin animé met en scène des petits êtres bleus vivant dans des champignons ?",
+          "a": "Les Schtroumpfs"
+        },
+        {
+          "level": 2,
+          "q": "Quel jeune garçon part à la recherche des sept boules de cristal avec Bulma ?",
+          "a": "Son Goku (Dragon Ball)"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le chien peureux qui résout des mystères avec Fred, Daphné, Véra et Sammy ?",
+          "a": "Scooby-Doo"
+        },
+        {
+          "level": 4,
+          "q": "Quel dessin animé éducatif français explique le fonctionnement du corps humain ?",
+          "a": "Il était une fois... la Vie"
+        },
+        {
+          "level": 5,
+          "q": "Quelles tortues mutantes expertes en arts martiaux adorent la pizza ?",
+          "a": "Les Tortues Ninja"
+        },
+        {
+          "level": 6,
+          "q": "Quel inspecteur cyborg est toujours aidé par sa nièce Sophie et son chien Finot ?",
+          "a": "Inspecteur Gadget"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel dessin animé suit-on les aventures d'Esteban, Zia et Tao à bord du Grand Condor ?",
+          "a": "Les Mystérieuses Cités d'or"
+        },
+        {
+          "level": 8,
+          "q": "Quel héros de l'espace, capitaine du Cyberlab, a pour compagnons Mala et le professeur Simon ?",
+          "a": "Capitaine Flam"
+        },
+        {
+          "level": 9,
+          "q": "Quel dessin animé met en scène des félins humanoïdes luttant contre le maléfique Mumm-Ra ?",
+          "a": "Cosmocats (ThunderCats)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le prince d'Euphor qui pilote un robot géant pour défendre la Terre contre les forces de Véga ?",
+          "a": "Actarus (Goldorak)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les records du monde insolites",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel livre recense chaque année les records du monde ?",
+          "a": "Le Guinness des records"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le record du monde du 100m masculin en athlétisme (à 0,1s près) ?",
+          "a": "9,58 secondes (Usain Bolt)"
+        },
+        {
+          "level": 3,
+          "q": "Quel est l'animal terrestre le plus rapide du monde ?",
+          "a": "Le guépard"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le plus grand animal vivant sur Terre ?",
+          "a": "La baleine bleue"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le plus haut sommet du monde ?",
+          "a": "L'Everest"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le fleuve le plus long du monde (selon la plupart des géographes) ?",
+          "a": "L'Amazone (ou le Nil, les deux sont acceptés)"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le pays le plus peuplé du monde (en 2023) ?",
+          "a": "L'Inde (qui a dépassé la Chine)"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le plus grand océan du monde ?",
+          "a": "L'océan Pacifique"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le plus grand désert chaud du monde ?",
+          "a": "Le Sahara"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le plus petit pays du monde en superficie ?",
+          "a": "Le Vatican"
+        }
+      ]
     }
   ]
 }
