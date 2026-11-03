@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="start.css" />
     <link rel="stylesheet" href="stage.css" />
+    <link rel="stylesheet" href="tiles.css" />
     <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
@@ -267,8 +269,13 @@
         </div>
       </div>
 
-      <div class="t2-overlay" data-id="2048-end" data-tv-overlay hidden>
-        <div class="t2-card t2-end-card" role="dialog" aria-modal="true">
+      <div
+        class="t2-overlay t2-overlay-late"
+        data-id="2048-end"
+        data-tv-overlay
+        hidden
+      >
+        <div class="t2-card" role="dialog" aria-modal="true">
           <h2 class="t2-overlay-title" data-id="2048-end-title"></h2>
           <p class="t2-score-line" data-id="2048-end-score"></p>
           <p data-id="2048-end-top"></p>

@@ -2,18 +2,19 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: New game Fusion de fruits (`fruitmerge`, Suika-style merge puzzle) in the catalog, first game built to the TV rule (decision 0059) with the new shared `public/shared/js/tv-remote.js`. Hub reorganised earlier today (decision 0058).
-Focus: Owner play-test of Fusion de fruits (phone, desktop, TV); owner phone check of the new hub and of the estimated `players` / `duration`; then play-tests of Trivial Quizz, Scrabble, card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
-Level: L1 (one new game + one shared module used only by it)
+Status: New game 2048 (`2048`, calm sliding-tile puzzle) in the catalog, second game built to the TV rule (decision 0059) on the shared `tv-remote.js`. Fusion de fruits added yesterday.
+Focus: Owner play-test of 2048 and Fusion de fruits (phone, desktop, TV); owner phone check of the new hub and of the estimated `players` / `duration`; then play-tests of Trivial Quizz, Scrabble, card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
+Level: L1 (one new game)
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/fruitmerge/` (see its `NOTES.md`), `public/shared/js/tv-remote.js`, `public/hub-config.json`
+- Relevant_Files: `public/games/2048/` (see its `NOTES.md`), `public/hub-config.json`, `.prettierignore` (2048 opted in)
 - Do_Not_Touch: Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
 - Relevant_Decisions: 0059, 0058, 0054, 0053
 
 Next:
-- Owner: play Fusion de fruits on a phone (portrait + landscape), desktop and the TV (`/games/fruitmerge/index.html?tv=1` once): drop feel, broom/undo counts, loss rule, how-to pages, "Reprendre".
+- Owner: play 2048 on a phone (portrait + landscape), desktop and the TV (`/games/2048/index.html?tv=1` once): swipe and tap-near-an-edge, animation speed, palette and sounds, undo, 2048 win card, "Reprendre".
+- Owner: play Fusion de fruits on a phone, desktop and the TV (`/games/fruitmerge/index.html?tv=1` once).
 - Owner: on a phone, try the hub: rows, "Tout voir", pills, search, ★, Back, a shared `?view=all&type=cartes&players=duo` link. Fix my estimates in `public/hub-config.json` (every `duration`, party-game `players`) and judge each thumbnail's square crop.
 - Owner: play Trivial Quizz and Scrabble on a phone and desktop (see `docs/BACKLOG.md` Now).
 - Owner: on the TV browser open `https://www.muchogames.win/games/millionaire/index.html?tv=1` once; whole screen, remote keys, fullscreen, no screen saver.
@@ -32,8 +33,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-11-02 Fusion de fruits (`public/games/fruitmerge/`): drop and merge 11 fruits up to the watermelon (two watermelons vanish, +100), next-3 preview, fruit-order bar, broom (2/match) and undo (3/match), loss after 3 s above the red line, 8-page how-to, record, full resume. Own circle physics, procedural kawaii fruits, no asset. Browser-checked at 320×568, 390×800, 740×360, 960×540, 1920×1080, 3840×2160: merges, pair, broom, undo, loss + end card, resume, keyboard aim, TV focus / Back.
-- 2026-11-02 Shared `public/shared/js/tv-remote.js` (`window.MuchogamesTv`, `data-tv-*` markup), generic version of Millionaire's `tv-nav.js` (decision 0059: second TV game moves it to shared); Millionaire not switched yet.
+- 2026-11-03 2048 (`public/games/2048/`): 4×4 slide-and-merge, win at 2048 with "Continuer" / "Terminer la partie", end when no move is left, undo (3/match), record, full resume. Calm misty-sage skin, pastel tiles, soft pentatonic sounds, no timer. Swipe, tap near an edge, arrows / WASD / ZQSD, TV remote (board owns the arrows, Back = menu). Browser-checked at 320×568, 390×800, 740×360, 960×540, 1920×1080 (`?tv=1`), 3840×2160: moves, merges, win, end, undo, menu, quit + resume, language.
+- 2026-11-02 Fusion de fruits (`public/games/fruitmerge/`): Suika-style merge puzzle, own circle physics, procedural fruits, first game on the shared `tv-remote.js`.
 - 2026-11-02 Platform rule (decision 0059): new games also adapt to a TV browser — fill the screen at 960×540 to 3840×2160 CSS px, couch-readable, 3% overscan margin, remote only, fullscreen + wake lock; `?tv=1` or TV user agent.
 - 2026-11-02 Trivial Quizz: × cancels the question; third mode "Roue de la fortune"; FR/EN/ES pots; EN and ES banks; quick mode.
-- 2026-11-02 Hub Home rows + library (decision 0058); hub coin pie in the banner.

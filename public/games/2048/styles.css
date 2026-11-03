@@ -1,7 +1,7 @@
 /* 2048: calm misty-sage skin over the shared header. Mobile first; sizes
    grow with the screen (vmin) up to a 4K TV. Page frame, chips, cards,
-   buttons, overlays and the start screen here; play stage and tiles in
-   stage.css. */
+   buttons and overlays here; start screen in start.css, play stage in
+   stage.css, board tiles and palette in tiles.css. */
 html {
   font-size: clamp(16px, 2.4vmin, 64px);
 }
@@ -161,60 +161,6 @@ body {
   color: #7a8790;
 }
 
-/* Start screen. */
-.t2-start {
-  flex: 1 1 auto;
-  display: grid;
-  place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
-  overflow-y: auto;
-}
-
-.t2-logo {
-  display: flex;
-  justify-content: center;
-  gap: 0.35em;
-  margin: 0.2em 0 1em !important;
-}
-
-.t2-logo span {
-  display: grid;
-  place-items: center;
-  width: 2.8em;
-  height: 2.8em;
-  border-radius: 0.5em;
-  background: var(--tile-bg);
-  color: var(--tile-ink);
-  font-size: 1.3em;
-  font-weight: 700;
-  box-shadow: 0 0.08em 0 rgba(74, 85, 96, 0.1);
-}
-
-.t2-pitch {
-  color: #66737c;
-}
-
-.t2-resume {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.1em;
-  background: #8aa6c4;
-  box-shadow: 0 0.2em 0 #6b88a6;
-}
-
-.t2-resume:active {
-  box-shadow: 0 0.08em 0 #6b88a6;
-}
-
-.t2-resume-info {
-  font-size: 0.75em;
-  font-weight: 600;
-  opacity: 0.9;
-}
-
 /* Overlays: the board stays softly visible behind. */
 .t2-overlay {
   position: absolute;
@@ -245,8 +191,9 @@ body {
   color: #5f8279;
 }
 
-/* The end card waits a moment so the final board can be seen. */
-.t2-end-card {
+/* The end screen waits a moment so the final board can be seen. */
+.t2-overlay-late,
+.t2-overlay-late .t2-card {
   animation-delay: 0.6s;
 }
 
@@ -295,10 +242,6 @@ body {
     width: 50%;
     height: 50%;
   }
-
-  .t2-start {
-    padding: 2dvh 3vw 3dvh;
-  }
 }
 
 /* TV remote: a thick, high-contrast ring on the focused control. */
@@ -323,15 +266,6 @@ html.tv :focus {
   .t2-button {
     min-height: 2.6em;
     margin-top: 0.4em;
-  }
-
-  .t2-logo {
-    margin-bottom: 0.5em !important;
-  }
-
-  .t2-logo span {
-    width: 2.2em;
-    height: 2.2em;
   }
 
   .t2-win-tile {

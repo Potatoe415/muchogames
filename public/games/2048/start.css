@@ -1,0 +1,71 @@
+/* Start screen: tile logo, pitch, resume / new game buttons, best score. */
+.t2-start {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.t2-logo {
+  display: flex;
+  justify-content: center;
+  gap: 0.35em;
+  margin: 0.2em 0 1em !important;
+}
+
+.t2-logo span {
+  display: grid;
+  place-items: center;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 0.5em;
+  background: var(--tile-bg);
+  color: var(--tile-ink);
+  font-size: 1.3em;
+  font-weight: 700;
+  box-shadow: 0 0.08em 0 rgba(74, 85, 96, 0.1);
+}
+
+.t2-pitch {
+  color: #66737c;
+}
+
+.t2-resume {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  background: #8aa6c4;
+  box-shadow: 0 0.2em 0 #6b88a6;
+}
+
+.t2-resume:active {
+  box-shadow: 0 0.08em 0 #6b88a6;
+}
+
+.t2-resume-info {
+  font-size: 0.75em;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Big screens: 3% overscan margin. */
+@media (min-width: 900px) and (min-height: 500px) {
+  .t2-start {
+    padding: 2dvh 3vw 3dvh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .t2-logo {
+    margin-bottom: 0.5em !important;
+  }
+
+  .t2-logo span {
+    width: 2.2em;
+    height: 2.2em;
+  }
+}

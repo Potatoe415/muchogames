@@ -1,6 +1,5 @@
-/* Play stage. Portrait: score row on top, board below. Landscape: score
-   column left, board right. Tiles are sized by view.js (--cell, --pad on
-   the board) and positioned with --r / --c. */
+/* Play stage. Portrait: score row on top, board anchored under it.
+   Landscape: score column left, board centred. Tiles in tiles.css. */
 .t2-stage {
   flex: 1 1 auto;
   min-height: 0;
@@ -119,145 +118,20 @@
   --pad: 10px;
   --cell: 60px;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   border-radius: calc(var(--pad) * 2);
   background: #cdd8d1;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   touch-action: none;
   overscroll-behavior: none;
   cursor: pointer;
 }
 
-.t2-tiles {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.t2-cell,
-.t2-tile {
-  position: absolute;
-  top: var(--pad);
-  left: var(--pad);
-  width: var(--cell);
-  height: var(--cell);
-  border-radius: calc(var(--cell) * 0.14);
-  transform: translate(
-    calc(var(--c) * (var(--cell) + var(--pad))),
-    calc(var(--r) * (var(--cell) + var(--pad)))
-  );
-}
-
-.t2-cell {
-  background: rgba(255, 255, 255, 0.38);
-}
-
-/* Keep the duration in step with SLIDE_MS in view.js. */
-.t2-tile {
-  z-index: 1;
-  transition: transform 130ms cubic-bezier(0.25, 0.8, 0.35, 1);
-}
-
-.t2-tile.is-absorbed {
-  z-index: 0;
-}
-
-.t2-tile-face {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--tile-bg);
-  color: var(--tile-ink);
-  font-size: calc(var(--cell) * 0.42);
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  box-shadow: 0 calc(var(--cell) * 0.03) 0 rgba(74, 85, 96, 0.1);
-}
-
-[data-digits="3"] .t2-tile-face {
-  font-size: calc(var(--cell) * 0.36);
-}
-
-[data-digits="4"] .t2-tile-face {
-  font-size: calc(var(--cell) * 0.29);
-}
-
-[data-digits="5"] .t2-tile-face,
-[data-digits="6"] .t2-tile-face {
-  font-size: calc(var(--cell) * 0.23);
-}
-
-.is-spawned .t2-tile-face {
-  animation: t2-appear 220ms ease-out 110ms both;
-}
-
-.is-merged .t2-tile-face {
-  animation: t2-pop 260ms ease-out;
-}
-
-@keyframes t2-appear {
-  from {
-    opacity: 0;
-    transform: scale(0.4);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes t2-pop {
-  45% {
-    transform: scale(1.1);
-  }
-}
-
-/* Calm palette: sand, peach, rose, lavender, sky, sea, sage, then gold. */
-[data-value] {
-  --tile-bg: #fbf8f1;
-  --tile-ink: #5b6770;
-}
-[data-value="4"] {
-  --tile-bg: #f4ecda;
-}
-[data-value="8"] {
-  --tile-bg: #f3dac6;
-}
-[data-value="16"] {
-  --tile-bg: #efc8bc;
-}
-[data-value="32"] {
-  --tile-bg: #e5bccd;
-}
-[data-value="64"] {
-  --tile-bg: #d0c1e3;
-}
-[data-value="128"] {
-  --tile-bg: #bac9e7;
-}
-[data-value="256"] {
-  --tile-bg: #a9d2dd;
-}
-[data-value="512"] {
-  --tile-bg: #a8d8c5;
-}
-[data-value="1024"] {
-  --tile-bg: #bad7a7;
-}
-[data-value="2048"] {
-  --tile-bg: #ecd28e;
-  --tile-ink: #5b4a22;
-}
-[data-value="big"] {
-  --tile-bg: #7f97aa;
-  --tile-ink: #ffffff;
-}
-
-[data-value="2048"] > .t2-tile-face {
-  box-shadow: 0 0 calc(var(--cell) * 0.3) rgba(236, 210, 142, 0.9);
+/* The board fills its area, so its focus ring goes inside. */
+.t2-board:focus-visible,
+html.tv .t2-board:focus {
+  outline-offset: -0.3rem;
 }
 
 @media (orientation: landscape) {
@@ -275,6 +149,11 @@
     width: 100%;
   }
 
+  .t2-board {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .t2-tools {
     margin-left: 0;
     margin-top: 0.4em;
@@ -289,14 +168,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .t2-tile {
-    transition: none;
-  }
-
-  .t2-tile-face {
-    animation: none !important;
-  }
-
   /* Still ends, so hud.js removes the chip. */
   .t2-gain {
     animation-duration: 1ms;
