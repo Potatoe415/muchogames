@@ -1,0 +1,350 @@
+/* 2048: calm misty-sage skin over the shared header. Mobile first; sizes
+   grow with the screen (vmin) up to a 4K TV. Page frame, chips, cards,
+   buttons, overlays and the start screen here; play stage and tiles in
+   stage.css. */
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: linear-gradient(160deg, #eef3ee 0%, #e3e9ef 100%);
+  color: #4a5560;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(74, 85, 96, 0.08);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #4a5560;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.back-button,
+.options-button {
+  background: #8fb0a7;
+  color: #ffffff;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.t2-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.t2-chip {
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
+  border: 2px solid #d5ddd8;
+  border-radius: 0.75em;
+  background: #ffffff;
+  color: #1f2937;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.t2-chip.active,
+.t2-chip[aria-pressed="true"] {
+  border-color: #7fa39a;
+  background: #e7f0ec;
+}
+
+.t2-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.t2-app [hidden] {
+  display: none !important;
+}
+
+.t2-app button:focus-visible,
+.t2-board:focus-visible,
+.t2-chip:focus-visible {
+  outline: 3px solid #8aa6c4;
+  outline-offset: 3px;
+}
+
+.t2-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.t2-card {
+  width: min(100%, 24em);
+  padding: 1.4em 1.2em 1.5em;
+  border-radius: 1.6em;
+  background: rgba(251, 252, 250, 0.92);
+  text-align: center;
+  box-shadow: 0 0.8em 2.4em rgba(74, 85, 96, 0.12);
+  animation: t2-fade 0.35s ease-out both;
+}
+
+.t2-card p {
+  margin: 0 0 0.6em;
+  line-height: 1.5;
+}
+
+.t2-button {
+  display: block;
+  width: min(100%, 14em);
+  min-height: 3em;
+  margin: 0.7em auto 0;
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 1em;
+  background: #7fa39a;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0.2em 0 #648a80;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.t2-button:active {
+  transform: translateY(0.12em);
+  box-shadow: 0 0.08em 0 #648a80;
+}
+
+.t2-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.t2-button-soft {
+  background: #ffffff;
+  color: #4f6f68;
+  box-shadow: 0 0.2em 0 #d5ded9;
+}
+
+.t2-best {
+  margin-top: 0.9em !important;
+  font-weight: 600;
+  color: #7a8790;
+}
+
+/* Start screen. */
+.t2-start {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.t2-logo {
+  display: flex;
+  justify-content: center;
+  gap: 0.35em;
+  margin: 0.2em 0 1em !important;
+}
+
+.t2-logo span {
+  display: grid;
+  place-items: center;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 0.5em;
+  background: var(--tile-bg);
+  color: var(--tile-ink);
+  font-size: 1.3em;
+  font-weight: 700;
+  box-shadow: 0 0.08em 0 rgba(74, 85, 96, 0.1);
+}
+
+.t2-pitch {
+  color: #66737c;
+}
+
+.t2-resume {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  background: #8aa6c4;
+  box-shadow: 0 0.2em 0 #6b88a6;
+}
+
+.t2-resume:active {
+  box-shadow: 0 0.08em 0 #6b88a6;
+}
+
+.t2-resume-info {
+  font-size: 0.75em;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Overlays: the board stays softly visible behind. */
+.t2-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+  background: rgba(232, 238, 232, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: t2-fade 0.3s ease-out both;
+}
+
+.t2-overlay-title {
+  margin: 0 0 0.5em;
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #4a5560;
+}
+
+.t2-score-line {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #5f8279;
+}
+
+/* The end card waits a moment so the final board can be seen. */
+.t2-end-card {
+  animation-delay: 0.6s;
+}
+
+.t2-win-tile {
+  display: grid;
+  place-items: center;
+  width: 4.2em;
+  height: 4.2em;
+  margin: 0 auto 0.6em !important;
+  border-radius: 0.8em;
+  background: #ecd28e;
+  color: #5b4a22;
+  font-size: 1.3em;
+  font-weight: 700;
+  box-shadow: 0 0 1.6em rgba(236, 210, 142, 0.9);
+}
+
+@keyframes t2-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Big screens (desktop, TV): the shared header grows with the screen and
+   everything keeps 3% away from the edges (TV overscan). */
+@media (min-width: 900px) and (min-height: 500px) {
+  .game-nav {
+    height: clamp(60px, 8vh, 220px);
+    height: clamp(60px, 8dvh, 220px);
+    padding-inline: 3vw;
+  }
+
+  .back-button,
+  .options-button {
+    width: clamp(36px, 6vh, 160px);
+    height: clamp(36px, 6vh, 160px);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .t2-start {
+    padding: 2dvh 3vw 3dvh;
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: 0.25rem solid #4f7fb0 !important;
+  outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.5rem rgba(255, 255, 255, 0.85);
+}
+
+/* Short landscape screens: the overlays must fit in ~300px. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .t2-card {
+    width: min(100%, 30em);
+    padding: 0.7em 1em 0.9em;
+  }
+
+  .t2-overlay-title {
+    margin-bottom: 0.2em;
+    font-size: 1.3em;
+  }
+
+  .t2-button {
+    min-height: 2.6em;
+    margin-top: 0.4em;
+  }
+
+  .t2-logo {
+    margin-bottom: 0.5em !important;
+  }
+
+  .t2-logo span {
+    width: 2.2em;
+    height: 2.2em;
+  }
+
+  .t2-win-tile {
+    width: 3em;
+    height: 3em;
+    margin-bottom: 0.3em !important;
+    font-size: 1em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t2-card,
+  .t2-overlay {
+    animation: none;
+  }
+}

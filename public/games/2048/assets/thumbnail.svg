@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3ee" />
+      <stop offset="1" stop-color="#dfe7ee" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#sky)" />
+  <rect x="60" y="60" width="280" height="280" rx="22" fill="#cdd8d1" />
+  <g fill="#ffffff" fill-opacity="0.38">
+    <rect x="70" y="70" width="60" height="60" rx="9" />
+    <rect x="140" y="70" width="60" height="60" rx="9" />
+    <rect x="210" y="70" width="60" height="60" rx="9" />
+    <rect x="280" y="70" width="60" height="60" rx="9" />
+    <rect x="70" y="140" width="60" height="60" rx="9" />
+    <rect x="140" y="140" width="60" height="60" rx="9" />
+    <rect x="210" y="140" width="60" height="60" rx="9" />
+    <rect x="280" y="140" width="60" height="60" rx="9" />
+    <rect x="70" y="210" width="60" height="60" rx="9" />
+    <rect x="140" y="210" width="60" height="60" rx="9" />
+    <rect x="210" y="210" width="60" height="60" rx="9" />
+    <rect x="280" y="210" width="60" height="60" rx="9" />
+    <rect x="70" y="280" width="60" height="60" rx="9" />
+    <rect x="140" y="280" width="60" height="60" rx="9" />
+    <rect x="210" y="280" width="60" height="60" rx="9" />
+    <rect x="280" y="280" width="60" height="60" rx="9" />
+  </g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" fill="#5b6770">
+    <rect x="70" y="70" width="60" height="60" rx="9" fill="#fbf8f1" />
+    <text x="100" y="112" font-size="30">2</text>
+    <rect x="210" y="70" width="60" height="60" rx="9" fill="#f3dac6" />
+    <text x="240" y="112" font-size="30">8</text>
+    <rect x="280" y="140" width="60" height="60" rx="9" fill="#e5bccd" />
+    <text x="310" y="181" font-size="26">32</text>
+    <rect x="70" y="210" width="60" height="60" rx="9" fill="#d0c1e3" />
+    <text x="100" y="251" font-size="26">64</text>
+    <rect x="70" y="280" width="60" height="60" rx="9" fill="#bac9e7" />
+    <text x="100" y="319" font-size="22">128</text>
+    <rect x="210" y="280" width="60" height="60" rx="9" fill="#a8d8c5" />
+    <text x="240" y="319" font-size="22">512</text>
+    <rect x="280" y="280" width="60" height="60" rx="9" fill="#f4ecda" />
+    <text x="310" y="322" font-size="30">4</text>
+    <rect x="143" y="143" width="114" height="114" rx="18" fill="#ecd28e" filter="url(#glow)" />
+    <rect x="135" y="135" width="130" height="130" rx="18" fill="#ecd28e" />
+    <text x="200" y="216" font-size="44" fill="#5b4a22">2048</text>
+  </g>
+</svg>

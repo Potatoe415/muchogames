@@ -73,3 +73,6 @@ public/games/trivialpursuit/**/*.md
 !public/games/fruitmerge/
 !public/games/fruitmerge/**
 public/games/fruitmerge/**/*.md
+!public/games/2048/
+!public/games/2048/**
+public/games/2048/**/*.md

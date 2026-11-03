@@ -412,5 +412,16 @@
     "thumbnail": "/games/fruitmerge/assets/thumbnail.svg",
     "players": [1, 1],
     "duration": 10
+  },
+  {
+    "id": "2048",
+    "title": "2048",
+    "kind": "custom",
+    "tags": ["reflexion"],
+    "added": "2026-11-03",
+    "launch": "/games/2048/index.html",
+    "thumbnail": "/games/2048/assets/thumbnail.svg",
+    "players": [1, 1],
+    "duration": 10
   }
 ]
