@@ -1267,6 +1267,226 @@
           "a": "Charles de Gaulle"
         }
       ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Tu te mets combien en océans et mers ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus grand océan de la Terre ?",
+          "a": "L'Océan Pacifique"
+        },
+        {
+          "level": 2,
+          "q": "Quelle mer borde le sud de la France ?",
+          "a": "La Mer Méditerranée"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la mer très salée où l'on flotte sans effort (au Proche-Orient) ?",
+          "a": "La Mer Morte"
+        },
+        {
+          "level": 4,
+          "q": "Quel océan sépare l'Europe de l'Amérique ?",
+          "a": "L'Océan Atlantique"
+        },
+        {
+          "level": 5,
+          "q": "Quel détroit sépare la France de l'Angleterre ?",
+          "a": "Le Pas de Calais (ou le détroit du Pas de Calais)"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel océan se trouve l'île de La Réunion ?",
+          "a": "L'Océan Indien"
+        },
+        {
+          "level": 7,
+          "q": "Quelle mer est fermée par le Bosphore et les Dardanelles ?",
+          "a": "La Mer Noire"
+        },
+        {
+          "level": 8,
+          "q": "Quel cap marque la pointe sud de l'Afrique ?",
+          "a": "Le Cap de Bonne-Espérance (ou le Cap des Aiguilles)"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel océan se trouve la fosse des Mariannes, l'endroit le plus profond du monde ?",
+          "a": "L'Océan Pacifique"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle la mer qui borde la côte est de l'Italie ?",
+          "a": "La Mer Adriatique"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la pâtisserie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fruit trouve-t-on dans une tarte Tatin ?",
+          "a": "La pomme"
+        },
+        {
+          "level": 2,
+          "q": "De quelle couleur est traditionnellement la crème d'une religieuse au chocolat ?",
+          "a": "Marron (c'est au chocolat !)"
+        },
+        {
+          "level": 3,
+          "q": "Quel ingrédient principal compose la meringue ?",
+          "a": "Le blanc d'œuf (et du sucre)"
+        },
+        {
+          "level": 4,
+          "q": "Quel gâteau est souvent surmonté d'une cerise confite, composé de couches de pâte génoise, de crème et de kirsch ?",
+          "a": "La Forêt-Noire"
+        },
+        {
+          "level": 5,
+          "q": "Quelle pâtisserie française est en forme de roue de vélo ?",
+          "a": "Le Paris-Brest"
+        },
+        {
+          "level": 6,
+          "q": "Quel gâteau italien signifie 'tire-moi vers le haut' ?",
+          "a": "Le Tiramisu"
+        },
+        {
+          "level": 7,
+          "q": "Quel est l'ingrédient principal d'un financier ?",
+          "a": "La poudre d'amande"
+        },
+        {
+          "level": 8,
+          "q": "Quelle pâtisserie bordelaise est parfumée au rhum et à la vanille ?",
+          "a": "Le Cannelé"
+        },
+        {
+          "level": 9,
+          "q": "Quel dessert est composé d'une base de pâte sablée, de confiture et de croisillons de pâte sur le dessus (spécialité autrichienne) ?",
+          "a": "La Linzertorte (ou Tarte de Linz)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le chef pâtissier français élu meilleur pâtissier du monde, célèbre pour ses trompe-l'œil ?",
+          "a": "Cédric Grolet"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en Walt Disney ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la souris mascotte de Disney ?",
+          "a": "Mickey Mouse"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle l'ours dans le Livre de la Jungle ?",
+          "a": "Baloo"
+        },
+        { "level": 3, "q": "Quel animal est Simba ?", "a": "Un lion" },
+        {
+          "level": 4,
+          "q": "Dans quel film trouve-t-on le personnage d'Olaf, le bonhomme de neige ?",
+          "a": "La Reine des Neiges"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le génie dans Aladdin ?",
+          "a": "Le Génie"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom de la petite fée qui accompagne Peter Pan ?",
+          "a": "Fée Clochette"
+        },
+        {
+          "level": 7,
+          "q": "Quel était le tout premier long-métrage d'animation de Disney (1937) ?",
+          "a": "Blanche-Neige et les Sept Nains"
+        },
+        {
+          "level": 8,
+          "q": "Dans Mulan, quel est le nom du petit dragon protecteur ?",
+          "a": "Mushu"
+        },
+        {
+          "level": 9,
+          "q": "Qui est l'ennemi juré de Peter Pan ?",
+          "a": "Le Capitaine Crochet"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom de la ville imaginaire où vivent les monstres dans Monstres et Cie ?",
+          "a": "Monstropolis"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La littérature française",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui a écrit 'Les Misérables' ?",
+          "a": "Victor Hugo"
+        },
+        {
+          "level": 2,
+          "q": "Dans quelle ville se déroule 'Notre-Dame de Paris' ?",
+          "a": "Paris"
+        },
+        {
+          "level": 3,
+          "q": "Qui a écrit 'Le Petit Prince' ?",
+          "a": "Antoine de Saint-Exupéry"
+        },
+        {
+          "level": 4,
+          "q": "Quel écrivain français a dit : 'Je pense, donc je suis' ?",
+          "a": "René Descartes"
+        },
+        {
+          "level": 5,
+          "q": "Qui est l'auteur de la célèbre série de romans 'À la recherche du temps perdu' ?",
+          "a": "Marcel Proust"
+        },
+        {
+          "level": 6,
+          "q": "Dans 'L'Étranger' d'Albert Camus, comment s'appelle le personnage principal ?",
+          "a": "Meursault"
+        },
+        {
+          "level": 7,
+          "q": "Qui a écrit 'Madame Bovary' ?",
+          "a": "Gustave Flaubert"
+        },
+        {
+          "level": 8,
+          "q": "Quel roman d'Émile Zola se déroule dans le monde des mineurs du Nord de la France ?",
+          "a": "Germinal"
+        },
+        {
+          "level": 9,
+          "q": "Qui a écrit les pièces 'Le Tartuffe' et 'Le Malade imaginaire' ?",
+          "a": "Molière"
+        },
+        {
+          "level": 10,
+          "q": "Quel poète français a écrit le recueil 'Les Fleurs du mal' ?",
+          "a": "Charles Baudelaire"
+        }
+      ]
     }
   ]
 }
