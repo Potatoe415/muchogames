@@ -1,110 +1,506 @@
 {
   "cards": [
     {
-      "theme": "Improbable",
-      "subject": "Les cartes mères",
+      "theme": "Scolaire",
+      "subject": "L'invention de l'écriture",
       "questions": [
         {
           "level": 1,
-          "q": "Où se trouve la carte mère dans un ordinateur ?",
-          "a": "À l'intérieur de l'unité centrale."
+          "q": "Quelle civilisation de l'Antiquité inventa les hiéroglyphes ?",
+          "a": "Les Égyptiens"
         },
         {
           "level": 2,
-          "q": "Quel composant principal se branche sur le socket ?",
-          "a": "Le processeur (CPU)."
+          "q": "Sur quel support poussant au bord du Nil écrivait-on en Égypte ?",
+          "a": "Le papyrus"
         },
-        { "level": 3, "q": "Que signifie RAM ?", "a": "Random Access Memory." },
+        {
+          "level": 3,
+          "q": "Le système d'écriture cunéiforme tire son nom de sa forme en : cube, clou ou cercle ?",
+          "a": "Clou"
+        },
         {
           "level": 4,
-          "q": "Quel est le rôle du BIOS ?",
-          "a": "Initialiser le matériel au démarrage."
+          "q": "Découverte en 1799, elle a permis le déchiffrement des hiéroglyphes. Je suis la pierre de... ?",
+          "a": "La pierre de Rosette"
         },
         {
           "level": 5,
-          "q": "Citez un format de carte mère courant.",
-          "a": "ATX, Micro-ATX, Mini-ITX."
+          "q": "L'invention de l'écriture s'est faite un mardi, un vendredi ou un dimanche ?",
+          "a": "Personne ne le sait vraiment"
         },
         {
           "level": 6,
-          "q": "Quel bus remplace l'AGP pour les cartes graphiques ?",
-          "a": "PCI Express (PCIe)."
+          "q": "Les plus anciennes traces d'écriture ont été retrouvées en Mésopotamie. Quel pays actuel cela représente-t-il majoritairement ?",
+          "a": "L'Irak (et une partie de la Syrie)"
         },
         {
           "level": 7,
-          "q": "À quoi sert la pile bouton sur la carte mère ?",
-          "a": "Conserver l'heure et les paramètres du BIOS/UEFI."
+          "q": "De quelle région du monde vient l'alphabet dont dérive le nôtre : Phénicie, Océanie ou Mésopotamie ?",
+          "a": "Phénicie"
         },
         {
           "level": 8,
-          "q": "Que relie le 'Northbridge' historiquement ?",
-          "a": "Le CPU, la RAM et la carte graphique."
+          "q": "De quelle langue vient le mot 'hiéroglyphe' ?",
+          "a": "Du grec (hieros 'sacré' et gluphein 'graver')"
         },
         {
           "level": 9,
-          "q": "Qu'est-ce que le VRM ?",
-          "a": "Voltage Regulator Module (régulateur de tension)."
+          "q": "Quel érudit français a percé le mystère des hiéroglyphes ?",
+          "a": "Jean-François Champollion"
         },
         {
           "level": 10,
-          "q": "Combien de broches possède un connecteur d'alimentation EPS 12V standard pour CPU ?",
-          "a": "8 broches (ou 4+4)."
+          "q": "Quelle était l'utilisation première de l'écriture : la poésie, la comptabilité ou la correspondance amoureuse ?",
+          "a": "La comptabilité"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te mets combien en vins étrangers ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Complète le proverbe : In vino...",
+          "a": "Veritas"
+        },
+        {
+          "level": 2,
+          "q": "La Rioja est un vin de quel pays ?",
+          "a": "D'Espagne"
+        },
+        {
+          "level": 3,
+          "q": "Le Chianti est un vin : italien, espagnol ou portugais ?",
+          "a": "Italien"
+        },
+        {
+          "level": 4,
+          "q": "Lequel de ces cépages est rouge : le Chardonnay, le Merlot ou le Sauvignon ?",
+          "a": "Le Merlot"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel pays produit-on le vin de Porto ?",
+          "a": "Au Portugal"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays est le premier producteur de vin en Amérique du Sud ?",
+          "a": "L'Argentine"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux ? La Chine produit du vin.",
+          "a": "Vrai (elle est même dans le top 10 mondial)"
+        },
+        {
+          "level": 8,
+          "q": "La vallée de Napa est réputée pour ses vins. Dans quel État américain se trouve-t-elle ?",
+          "a": "En Californie"
+        },
+        {
+          "level": 9,
+          "q": "Quel vin mousseux italien est souvent utilisé pour faire un Spritz ?",
+          "a": "Le Prosecco"
+        },
+        {
+          "level": 10,
+          "q": "Quel cépage blanc est le cépage roi de Nouvelle-Zélande ?",
+          "a": "Le Sauvignon Blanc"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en jeux de cartes ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelle-t-on le valet, la dame et le roi ?",
+          "a": "Les figures"
+        },
+        {
+          "level": 2,
+          "q": "Quelle couleur est la plus forte au poker : le carreau ou le trèfle ?",
+          "a": "Aucune, elles ont la même valeur"
+        },
+        {
+          "level": 3,
+          "q": "Au tarot, combien y a-t-il d'atouts (sans compter l'excuse) ?",
+          "a": "21"
+        },
+        {
+          "level": 4,
+          "q": "Dans un jeu classique, quel roi se suicide en se plantant une épée dans le crâne ?",
+          "a": "Le roi de cœur"
+        },
+        {
+          "level": 5,
+          "q": "Quel jeu de cartes se joue avec des annonces comme 'tierce', 'carré', 'cent' ?",
+          "a": "La belote (ou coinche)"
+        },
+        {
+          "level": 6,
+          "q": "Au blackjack, combien vaut une figure ?",
+          "a": "10"
+        },
+        {
+          "level": 7,
+          "q": "À la belote, combien de points vaut le valet d'atout ?",
+          "a": "20"
+        },
+        {
+          "level": 8,
+          "q": "Le rami se joue avec combien de jeux de 54 cartes ?",
+          "a": "2 jeux"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel jeu de cartes trouve-t-on la 'Dame de Pique' comme carte à éviter ?",
+          "a": "La Dame de Pique"
+        },
+        {
+          "level": 10,
+          "q": "Au poker Texas Hold'em, combien de cartes communes sont retournées au total sur le tapis ?",
+          "a": "5 cartes"
         }
       ]
     },
     {
       "theme": "Scolaire",
-      "subject": "La géographie de l'Europe",
+      "subject": "La Révolution française de 1789",
       "questions": [
         {
           "level": 1,
-          "q": "Quelle est la capitale de la France ?",
-          "a": "Paris."
+          "q": "En quelle année a eu lieu la Révolution française ?",
+          "a": "En 1789"
         },
         {
           "level": 2,
-          "q": "Dans quel pays se trouve Rome ?",
-          "a": "L'Italie."
+          "q": "Quel roi a été décapité pendant la Révolution ?",
+          "a": "Louis XVI"
         },
         {
           "level": 3,
-          "q": "Quel fleuve traverse Londres ?",
-          "a": "La Tamise."
+          "q": "Quelle prison parisienne a été prise d'assaut le 14 juillet 1789 ?",
+          "a": "La Bastille"
         },
         {
           "level": 4,
-          "q": "Quelle mer borde le sud de l'Europe ?",
-          "a": "La mer Méditerranée."
+          "q": "Quel objet tranchant a été massivement utilisé pour les exécutions ?",
+          "a": "La guillotine"
         },
         {
           "level": 5,
-          "q": "Quel est le plus grand pays d'Europe par superficie (hors Russie) ?",
-          "a": "L'Ukraine (ou la France pour l'UE)."
+          "q": "Vrai ou faux ? Marie-Antoinette a dit : 'S'ils n'ont pas de pain, qu'ils mangent de la brioche !'",
+          "a": "Faux (c'est une rumeur)"
         },
         {
           "level": 6,
-          "q": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
-          "a": "Les Pyrénées."
+          "q": "Qui a écrit les paroles de la Marseillaise ?",
+          "a": "Rouget de Lisle"
         },
         {
           "level": 7,
-          "q": "Combien de pays composent les pays baltes et quels sont-ils ?",
-          "a": "3 (Estonie, Lettonie, Lituanie)."
+          "q": "Quel texte fondamental a été adopté en août 1789 ?",
+          "a": "La Déclaration des droits de l'homme et du citoyen"
         },
         {
           "level": 8,
-          "q": "Quel détroit sépare l'Europe de l'Afrique ?",
-          "a": "Le détroit de Gibraltar."
+          "q": "Comment s'appelait le bonnet rouge porté par les révolutionnaires ?",
+          "a": "Le bonnet phrygien"
         },
         {
           "level": 9,
-          "q": "Quelle est la capitale du Kosovo ?",
-          "a": "Tallinn, non c'est Pristina ! (Attention piège : Estonie = Tallinn)."
+          "q": "Quel révolutionnaire a été assassiné dans sa baignoire ?",
+          "a": "Jean-Paul Marat"
         },
         {
           "level": 10,
-          "q": "Citez le plus long fleuve d'Europe.",
-          "a": "La Volga."
+          "q": "Quelle était la devise de nombreux révolutionnaires (avant 'Liberté, Égalité, Fraternité') ?",
+          "a": "La Liberté ou la Mort"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Marseille",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le cAclA\"bre savon de Marseille ?",
+          "a": "Le savon de Marseille"
+        },
+        {
+          "level": 2,
+          "q": "Quel est l'emblA\"me de la ville ?",
+          "a": "La Bonne MA\"re (Notre-Dame de la Garde)"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est l'abrAcviation du club de foot de Marseille ?",
+          "a": "OM"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom de la fameuse avenue marseillaise ?",
+          "a": "La CanebiA\"re"
+        },
+        {
+          "level": 5,
+          "q": "Quel saint est cAclAcbrAc le 24 juin, avec des feux de joie ?",
+          "a": "Saint Jean"
+        },
+        {
+          "level": 6,
+          "q": "Qui a ActAc maire de Marseille pendant 25 ans ?",
+          "a": "Jean-Claude Gaudin"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le plat traditionnel marseillais A base de poisson ?",
+          "a": "La Bouillabaisse"
+        },
+        {
+          "level": 8,
+          "q": "Lequel de ces quartiers n'existe pas : Le Panier, La Belle de Mai ou La RouguiA\"re ?",
+          "a": "La RouguiA\"re"
+        },
+        {
+          "level": 9,
+          "q": "Quel groupe de rap est originaire de Marseille ?",
+          "a": "IAM"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le code postal du vieux port ?",
+          "a": "13001"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Le billard",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Avec quoi frappe-t-on les boules de billard ?",
+          "a": "Une queue"
+        },
+        {
+          "level": 2,
+          "q": "De quelle couleur est la boule numAcro 8 au billard amAcricain ?",
+          "a": "Noire"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la boule blanche avec laquelle on vise ?",
+          "a": "La bille de choc (ou blanche)"
+        },
+        {
+          "level": 4,
+          "q": "Sur quoi est posAc le tapis de billard traditionnel ?",
+          "a": "De l'ardoise"
+        },
+        {
+          "level": 5,
+          "q": "Au billard franAais, combien y a-t-il de billes sur la table ?",
+          "a": "3"
+        },
+        {
+          "level": 6,
+          "q": "Quelle poudre met-on sur le bout de la queue pour Acviter de glisser ?",
+          "a": "De la craie (ou du bleu)"
+        },
+        {
+          "level": 7,
+          "q": "Au snooker, combien de billes rouges y a-t-il au dAcbut de la partie ?",
+          "a": "15"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le nom de la discipline oA1 il faut rentrer les billes de 1 A 9 dans l'ordre ?",
+          "a": "Le jeu de la 9"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le trou dans lequel on fait tomber les billes ?",
+          "a": "Une poche"
+        },
+        {
+          "level": 10,
+          "q": "Quel joueur de snooker est surnommAc \"The Rocket\" ?",
+          "a": "Ronnie O'Sullivan"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'Antiquité grecque",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui est le dieu suprême de la mythologie grecque ?",
+          "a": "Zeus"
+        },
+        {
+          "level": 2,
+          "q": "Quelle cité grecque était célèbre pour sa rigueur militaire ?",
+          "a": "Sparte"
+        },
+        {
+          "level": 3,
+          "q": "Où résidaient les principaux dieux grecs ?",
+          "a": "Sur le Mont Olympe"
+        },
+        {
+          "level": 4,
+          "q": "Quelle cité est considérée comme le berceau de la démocratie ?",
+          "a": "Athènes"
+        },
+        {
+          "level": 5,
+          "q": "Qui est l'auteur supposé de l'Iliade et de l'Odyssée ?",
+          "a": "Homère"
+        },
+        {
+          "level": 6,
+          "q": "Quel philosophe grec a été condamné à boire la ciguë ?",
+          "a": "Socrate"
+        },
+        {
+          "level": 7,
+          "q": "En quelle année ont eu lieu les premiers Jeux olympiques de l'Antiquité (à peu près) ?",
+          "a": "En 776 av. J.-C."
+        },
+        {
+          "level": 8,
+          "q": "Quel roi de Macédoine a conquis un immense empire jusqu'à l'Indus ?",
+          "a": "Alexandre le Grand"
+        },
+        {
+          "level": 9,
+          "q": "Lors de quelle bataille navale les Grecs ont-ils vaincu les Perses en 480 av. J.-C. ?",
+          "a": "La bataille de Salamine"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelait la formation militaire serrée des fantassins grecs lourdement armés ?",
+          "a": "La phalange"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te mets combien en fromages qui puent ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Lequel de ces fromages est réputé pour son odeur forte : le Maroilles ou la Vache qui rit ?",
+          "a": "Le Maroilles"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel film culte français entend-on 'tremper son Maroilles dans son café' ?",
+          "a": "Bienvenue chez les Ch'tis"
+        },
+        {
+          "level": 3,
+          "q": "Le Camembert est originaire de quelle région française ?",
+          "a": "La Normandie"
+        },
+        {
+          "level": 4,
+          "q": "Quel fromage au lait cru est surnommé 'le roi des fromages' par Brillat-Savarin ?",
+          "a": "L'Époisses"
+        },
+        {
+          "level": 5,
+          "q": "De quelle région vient le Munster ?",
+          "a": "L'Alsace"
+        },
+        {
+          "level": 6,
+          "q": "Quel fromage corse est célèbre (parfois à tort) pour avoir des asticots à l'intérieur ?",
+          "a": "Le Casu Marzu (fromage sarde, le corse est le Casgiu merzu)"
+        },
+        {
+          "level": 7,
+          "q": "Avec quel alcool frotte-t-on la croûte de l'Époisses lors de son affinage ?",
+          "a": "Au Marc de Bourgogne"
+        },
+        {
+          "level": 8,
+          "q": "Le Vieux Boulogne a été désigné 'fromage le plus odorant du monde' par des scientifiques britanniques. De quelle région vient-il ?",
+          "a": "Le Nord-Pas-de-Calais"
+        },
+        {
+          "level": 9,
+          "q": "De quel animal provient le lait utilisé pour faire du Roquefort ?",
+          "a": "La brebis"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le champignon responsable de la moisissure bleue du Roquefort ?",
+          "a": "Le Penicillium roqueforti"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les parcs d'attractions",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays se trouve Disneyland Paris ?",
+          "a": "En France"
+        },
+        {
+          "level": 2,
+          "q": "Quel parc d'attractions français a pour thème les Gaulois ?",
+          "a": "Le Parc Astérix"
+        },
+        {
+          "level": 3,
+          "q": "Quel parc vendéen propose des spectacles historiques grandioses ?",
+          "a": "Le Puy du Fou"
+        },
+        {
+          "level": 4,
+          "q": "Où a ouvert le tout premier parc Disneyland en 1955 ?",
+          "a": "En Californie (à Anaheim)"
+        },
+        {
+          "level": 5,
+          "q": "Quel parc d'attractions situé près de Poitiers est dédié à la technologie et à l'image ?",
+          "a": "Le Futuroscope"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel pays européen se situe Europa-Park ?",
+          "a": "En Allemagne"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle l'attraction d'Universal Studios où l'on survole l'école de magie de Poudlard ?",
+          "a": "Harry Potter and the Forbidden Journey"
+        },
+        {
+          "level": 8,
+          "q": "Quel parc d'attractions espagnol est célèbre pour ses montagnes russes Dragon Khan et Shambhala ?",
+          "a": "PortAventura"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le parc à thème le plus visité au monde (hors de France) ?",
+          "a": "Le Magic Kingdom (Walt Disney World en Floride)"
+        },
+        {
+          "level": 10,
+          "q": "Au Puy du Fou, comment s'appelle le grand spectacle nocturne ?",
+          "a": "La Cinéscénie"
         }
       ]
     }
