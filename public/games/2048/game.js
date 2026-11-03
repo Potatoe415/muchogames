@@ -14,20 +14,24 @@ import {
 import { createInput } from "./input.js";
 import { createView } from "./view.js";
 
-export const UNDOS = 3;
+// Undos per match for each level chosen on the start screen.
+export const LEVELS = { easy: { undos: 3 }, normal: { undos: 0 } };
 const START_TILES = 2;
 
-function freshState() {
+function freshState(level) {
   const cells = emptyCells();
   for (let i = 0; i < START_TILES; i++) spawn(cells);
-  return { cells, score: 0, undos: UNDOS, won: false, undo: null };
+  const undos = LEVELS[level].undos;
+  return { level, cells, score: 0, undos, won: false, undo: null };
 }
 
 const restoreState = (saved) => ({ ...saved, cells: fromValues(saved.cells) });
 
 export function createGame(options) {
-  const { board, host, saved, muted, canPlay, onHud, onWin, onEnd } = options;
-  const state = saved ? restoreState(saved) : freshState();
+  const { board, host, saved, level, muted, canPlay } = options;
+  const { onHud, onWin, onEnd } = options;
+  const state = saved ? restoreState(saved) : freshState(level);
+  const undoAllowed = LEVELS[state.level].undos > 0;
   let over = false;
   const audio = createAudio();
   audio.setMuted(muted);
@@ -39,6 +43,7 @@ export function createGame(options) {
   });
 
   const summary = () => ({
+    level: state.level,
     score: state.score,
     top: maxValue(state.cells),
     won: state.won
@@ -46,7 +51,9 @@ export function createGame(options) {
 
   function hud(gained) {
     onHud({
+      level: state.level,
       score: state.score,
+      undoAllowed,
       undos: state.undos,
       canUndo: !over && state.undos > 0 && state.undo !== null,
       gained
@@ -77,7 +84,9 @@ export function createGame(options) {
     audio.unlock();
     const result = move(state.cells, dir);
     if (!result.moved) return;
-    state.undo = { cells: toValues(state.cells), score: state.score };
+    if (state.undos > 0) {
+      state.undo = { cells: toValues(state.cells), score: state.score };
+    }
     state.cells = result.cells;
     state.score += result.gained;
     const spawned = spawn(state.cells);
@@ -111,6 +120,7 @@ export function createGame(options) {
       over
         ? null
         : {
+            level: state.level,
             cells: toValues(state.cells),
             score: state.score,
             undos: state.undos,

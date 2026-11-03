@@ -166,15 +166,28 @@
             <span data-i18n="resume">Reprendre</span>
             <span class="t2-resume-info" data-resume-info></span>
           </button>
-          <button
-            type="button"
-            class="t2-button"
-            data-id="2048-play-button"
-            data-tv-focus
-            data-i18n="play"
-          >
-            Nouvelle partie
-          </button>
+          <p class="t2-levels-title" data-i18n="play">Nouvelle partie</p>
+          <div class="t2-levels" data-id="2048-levels">
+            <button
+              type="button"
+              class="t2-button t2-level"
+              data-id="2048-easy-button"
+              data-level="easy"
+              data-tv-focus
+            >
+              <span data-i18n="easy">Facile</span>
+              <span class="t2-level-info" data-i18n="easyInfo"></span>
+            </button>
+            <button
+              type="button"
+              class="t2-button t2-level"
+              data-id="2048-normal-button"
+              data-level="normal"
+            >
+              <span data-i18n="normal">Normal</span>
+              <span class="t2-level-info" data-i18n="normalInfo"></span>
+            </button>
+          </div>
           <p class="t2-best" data-id="2048-start-best"></p>
         </div>
       </section>

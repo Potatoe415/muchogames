@@ -2,7 +2,7 @@
 // back resumes it exactly (undo step included). Everything read back is
 // validated before use.
 import { MAX_VALUE, SIZE } from "./board.js";
-import { UNDOS } from "./game.js";
+import { LEVELS } from "./game.js";
 
 const SAVE_KEY = "2048-current";
 const VERSION = 1;
@@ -21,12 +21,17 @@ function validCells(cells) {
   );
 }
 
+// Saves from before the levels existed were played with 3 undos: easy.
+const levelOf = (data) => data?.level ?? "easy";
+
 function validMatch(data) {
+  const level = LEVELS[levelOf(data)];
   return (
     data?.v === VERSION &&
+    Object.hasOwn(LEVELS, levelOf(data)) &&
     validCells(data.cells) &&
     isInt(data.score, 0, MAX_SCORE) &&
-    isInt(data.undos, 0, UNDOS) &&
+    isInt(data.undos, 0, level.undos) &&
     typeof data.won === "boolean" &&
     (data.undo === null ||
       (validCells(data.undo?.cells) && isInt(data.undo.score, 0, MAX_SCORE)))
@@ -49,6 +54,7 @@ export function decodeMatch(text) {
   if (!validMatch(data)) return null;
   const { cells, score, undos, won, undo } = data;
   return {
+    level: levelOf(data),
     cells,
     score,
     undos,

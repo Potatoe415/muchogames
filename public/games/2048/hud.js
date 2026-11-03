@@ -17,10 +17,13 @@ export function createHud({ t, $ }) {
     $("2048-score-value").textContent = String(state.score);
     $("2048-best-value").textContent = String(Math.max(best, state.score));
     const undo = $("2048-undo-button");
+    const pausedUndo = $("2048-paused-undo-button");
+    undo.hidden = !state.undoAllowed;
+    pausedUndo.hidden = !state.undoAllowed;
     undo.disabled = !state.canUndo;
     undo.querySelector("[data-count]").textContent = String(state.undos);
     undo.setAttribute("aria-label", t("undoLabel", { n: state.undos }));
-    $("2048-paused-undo-button").disabled = !state.canUndo;
+    pausedUndo.disabled = !state.canUndo;
   }
 
   return {

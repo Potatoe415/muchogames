@@ -14,11 +14,16 @@ const STRINGS = {
     off: "Désactivé",
     rules: "Règles",
     play: "Nouvelle partie",
+    easy: "Facile",
+    normal: "Normal",
+    easyInfo: "3 retours en arrière",
+    normalInfo: "Sans retour en arrière",
     resume: "Reprendre",
-    resumeInfo: "{score} points",
+    resumeInfo: "{level} · {score} points",
     score: "Score",
     best: "Record",
     bestLine: "Record : {best}",
+    startBest: "Records : Facile {easy} · Normal {normal}",
     undo: "Annuler le coup",
     undoLabel: "Annuler le dernier coup (restants : {n})",
     menuButton: "Menu",
@@ -50,11 +55,16 @@ const STRINGS = {
     off: "Off",
     rules: "Rules",
     play: "New game",
+    easy: "Easy",
+    normal: "Normal",
+    easyInfo: "3 undos",
+    normalInfo: "No undo",
     resume: "Resume",
-    resumeInfo: "{score} points",
+    resumeInfo: "{level} · {score} points",
     score: "Score",
     best: "Best",
     bestLine: "Best: {best}",
+    startBest: "Best: Easy {easy} · Normal {normal}",
     undo: "Undo move",
     undoLabel: "Undo the last move ({n} left)",
     menuButton: "Menu",
@@ -85,11 +95,16 @@ const STRINGS = {
     off: "Desactivado",
     rules: "Reglas",
     play: "Nueva partida",
+    easy: "Fácil",
+    normal: "Normal",
+    easyInfo: "3 vueltas atrás",
+    normalInfo: "Sin vuelta atrás",
     resume: "Reanudar",
-    resumeInfo: "{score} puntos",
+    resumeInfo: "{level} · {score} puntos",
     score: "Puntos",
     best: "Récord",
     bestLine: "Récord: {best}",
+    startBest: "Récords: Fácil {easy} · Normal {normal}",
     undo: "Deshacer jugada",
     undoLabel: "Deshacer la última jugada (restantes: {n})",
     menuButton: "Menú",
@@ -115,21 +130,21 @@ const RULES = {
 <p>Deux tuiles de même valeur qui se touchent fusionnent : 2 + 2 = 4, 4 + 4 = 8… Chaque fusion ajoute sa valeur au score.</p>
 <p>Après chaque coup, une nouvelle tuile (un 2, parfois un 4) apparaît.</p>
 <p>Atteins la tuile 2048 pour gagner, puis continue si tu veux. La partie s'arrête quand plus aucun coup n'est possible.</p>
-<p>↶ annule le dernier coup, 3 fois par partie.</p>
+<p>Deux niveaux : en Facile, ↶ annule le dernier coup, 3 fois par partie ; en Normal, pas de retour en arrière.</p>
 <p>Commandes : glisse le doigt sur le plateau ou touche près d'un bord ; au clavier, les flèches, ZQSD ou WASD ; sur la télé, les flèches de la télécommande, Retour pour le menu.</p>
 <p>Pas de chrono : prends ton temps.</p>`,
   en: `<p>Slide every tile at once up, down, left or right.</p>
 <p>Two tiles with the same value that touch merge: 2 + 2 = 4, 4 + 4 = 8… Each merge adds its value to the score.</p>
 <p>After each move a new tile (a 2, sometimes a 4) appears.</p>
 <p>Reach the 2048 tile to win, then keep going if you like. The game ends when no move is left.</p>
-<p>↶ undoes the last move, 3 times per game.</p>
+<p>Two levels: in Easy, ↶ undoes the last move, 3 times per game; in Normal, there is no undo.</p>
 <p>Controls: swipe on the board or tap near an edge; on a keyboard, the arrows, WASD or ZQSD; on a TV, the remote's arrows, Back for the menu.</p>
 <p>No timer: take your time.</p>`,
   es: `<p>Desliza todas las fichas a la vez hacia arriba, abajo, izquierda o derecha.</p>
 <p>Dos fichas del mismo valor que se tocan se combinan: 2 + 2 = 4, 4 + 4 = 8… Cada combinación suma su valor a los puntos.</p>
 <p>Tras cada jugada aparece una ficha nueva (un 2, a veces un 4).</p>
 <p>Llega a la ficha 2048 para ganar y sigue si quieres. La partida termina cuando no queda ninguna jugada.</p>
-<p>↶ deshace la última jugada, 3 veces por partida.</p>
+<p>Dos niveles: en Fácil, ↶ deshace la última jugada, 3 veces por partida; en Normal, no hay vuelta atrás.</p>
 <p>Controles: desliza sobre el tablero o toca cerca de un borde; con teclado, las flechas, WASD o ZQSD; en la tele, las flechas del mando y Atrás para el menú.</p>
 <p>Sin reloj: tómate tu tiempo.</p>`
 };

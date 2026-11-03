@@ -32,11 +32,12 @@ const t = (key, vars) => translate(page.lang, key, vars);
 const hud = createHud({ t, $ });
 
 function renderStart() {
-  $("2048-start-best").textContent = t("bestLine", { best: page.best });
+  $("2048-start-best").textContent = t("startBest", page.best);
   const resume = $("2048-resume-button");
   resume.hidden = !page.saved;
   if (page.saved) {
     resume.querySelector("[data-resume-info]").textContent = t("resumeInfo", {
+      level: t(page.saved.level),
       score: page.saved.score
     });
   }
@@ -50,7 +51,7 @@ function renderEnd() {
   $("2048-end-top").textContent = t("endTop", s);
   $("2048-end-best").textContent = page.newBest
     ? t("newBest")
-    : t("bestLine", { best: page.best });
+    : t("bestLine", { best: page.best[s.level] });
 }
 
 function applyLanguage() {
@@ -98,11 +99,12 @@ function saveMatch() {
 }
 
 function onEnd(summary) {
+  const { level, score } = summary;
   page.summary = summary;
-  page.newBest = summary.score > page.best;
+  page.newBest = score > page.best[level];
   if (page.newBest) {
-    page.best = summary.score;
-    prefs.saveBest(summary.score);
+    page.best[level] = score;
+    prefs.saveBest(level, score);
   }
   clearMatch();
   page.saved = null;
@@ -111,11 +113,11 @@ function onEnd(summary) {
 }
 
 function onHud(state) {
-  hud.render(state, page.best);
+  hud.render(state, page.best[state.level]);
   saveMatch();
 }
 
-function mountGame(saved) {
+function mountGame(saved, level) {
   unmountGame();
   page.summary = null;
   page.newBest = false;
@@ -124,6 +126,7 @@ function mountGame(saved) {
     board: $("2048-board"),
     host: $("2048-board-area"),
     saved,
+    level,
     muted: page.muted,
     canPlay,
     onHud,
@@ -134,13 +137,13 @@ function mountGame(saved) {
   saveMatch();
 }
 
-async function startMatch() {
+async function startMatch(level) {
   if (page.starting) return;
   window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
-  if (allowed) mountGame(null);
+  if (allowed) mountGame(null, level);
 }
 
 function resumeMatch() {
@@ -193,7 +196,9 @@ function bindStart() {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   $("2048-sound-toggle").addEventListener("click", toggleSound);
-  $("2048-play-button").addEventListener("click", startMatch);
+  document.querySelectorAll("[data-level]").forEach((button) => {
+    button.addEventListener("click", () => startMatch(button.dataset.level));
+  });
   $("2048-resume-button").addEventListener("click", resumeMatch);
 }
 
@@ -209,7 +214,9 @@ function bindStage() {
     showOverlay(null)
   );
   $("2048-stop-button").addEventListener("click", () => page.game?.finish());
-  $("2048-replay-button").addEventListener("click", startMatch);
+  $("2048-replay-button").addEventListener("click", () =>
+    startMatch(page.summary?.level ?? "easy")
+  );
   $("2048-end-menu-button").addEventListener("click", returnToStart);
 }
 

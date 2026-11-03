@@ -3,7 +3,8 @@
 const KEYS = {
   lang: "bergamots-lang",
   sound: "2048-sound",
-  best: "2048-best"
+  // The easy record keeps the key from before the levels existed.
+  best: { easy: "2048-best", normal: "2048-best-normal" }
 };
 
 function read(key, fallback) {
@@ -22,12 +23,15 @@ function write(key, value) {
   }
 }
 
+const readBest = (key) => Math.max(0, Number.parseInt(read(key, "0"), 10) || 0);
+
 export const loadPrefs = () => ({
   lang: read(KEYS.lang, "fr"),
   muted: read(KEYS.sound, "on") === "off",
-  best: Math.max(0, Number.parseInt(read(KEYS.best, "0"), 10) || 0)
+  best: { easy: readBest(KEYS.best.easy), normal: readBest(KEYS.best.normal) }
 });
 
 export const saveLang = (lang) => write(KEYS.lang, lang);
 export const saveMuted = (muted) => write(KEYS.sound, muted ? "off" : "on");
-export const saveBest = (score) => write(KEYS.best, String(score));
+export const saveBest = (level, score) =>
+  write(KEYS.best[level], String(score));
