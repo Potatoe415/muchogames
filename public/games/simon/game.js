@@ -2,14 +2,14 @@
 // mistake ends it. The page shell (main.js) owns screens, saving and the
 // match lifecycle.
 import { createBoard } from "./board.js";
-import { check, extend, timing } from "./rules.js";
+import { check, extend, slowed, timing } from "./rules.js";
 
 const LEAD_MS = 800;
 const PRESS_MS = 260;
 const END_MS = 1300;
 
 export function createGame(options) {
-  const { board, audio, saved, canPlay, onHud, onEnd } = options;
+  const { board, audio, saved, difficulty, canPlay, onHud, onEnd } = options;
   // A saved match restarts its current round: the sequence plays again.
   const state = {
     sequence: saved ? [...saved.sequence] : extend([]),
@@ -36,11 +36,12 @@ export function createGame(options) {
     state.step = 0;
     pads.setWaiting(false);
     hud();
-    const { on, gap } = timing(state.sequence.length);
+    const { on, gap } = timing(state.sequence.length, difficulty);
+    const lead = slowed(LEAD_MS, difficulty);
     state.sequence.forEach((pad, i) => {
-      later(LEAD_MS + i * (on + gap), () => flash(pad, on));
+      later(lead + i * (on + gap), () => flash(pad, on));
     });
-    later(LEAD_MS + state.sequence.length * (on + gap) - gap, listen);
+    later(lead + state.sequence.length * (on + gap) - gap, listen);
   }
 
   function listen() {
@@ -77,9 +78,12 @@ export function createGame(options) {
   show();
 
   return {
+    difficulty,
     // Plain values for save.js; null once the match is over.
     snapshot: () =>
-      state.phase === "over" ? null : { sequence: [...state.sequence] },
+      state.phase === "over"
+        ? null
+        : { sequence: [...state.sequence], difficulty },
     destroy() {
       timers.forEach(clearTimeout);
       timers = [];

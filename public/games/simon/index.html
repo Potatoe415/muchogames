@@ -156,6 +156,27 @@
           </p>
           <h2 class="si-start-title" data-i18n="title">Simon</h2>
           <p class="si-pitch" data-i18n="pitch"></p>
+          <div
+            class="si-levels"
+            data-id="simon-difficulty"
+            role="group"
+            data-i18n-aria="difficulty"
+          >
+            <button
+              type="button"
+              class="si-level"
+              data-difficulty="easy"
+              data-id="simon-difficulty-easy"
+              data-i18n="easy"
+            ></button>
+            <button
+              type="button"
+              class="si-level"
+              data-difficulty="normal"
+              data-id="simon-difficulty-normal"
+              data-i18n="normal"
+            ></button>
+          </div>
           <button
             type="button"
             class="si-button si-resume"
@@ -186,6 +207,7 @@
           <div class="si-stat" data-id="simon-best">
             <span class="si-stat-label" data-i18n="best">Record</span>
             <span class="si-stat-value" data-id="simon-best-value">0</span>
+            <span class="si-stat-tag" data-id="simon-level-value"></span>
           </div>
           <p
             class="si-status"
@@ -277,6 +299,7 @@
       <div class="si-overlay" data-id="simon-end" data-tv-overlay hidden>
         <div class="si-card" role="dialog" aria-modal="true">
           <h2 class="si-overlay-title" data-i18n="endTitle"></h2>
+          <p class="si-end-level" data-id="simon-end-level"></p>
           <p class="si-score-line" data-id="simon-end-score"></p>
           <p class="si-best" data-id="simon-end-best"></p>
           <button

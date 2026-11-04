@@ -70,6 +70,33 @@
   opacity: 0.9;
 }
 
+/* Easy / Normal toggle above the play button. */
+.si-levels {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 0.4em 0 0.2em;
+}
+
+.si-level {
+  min-width: 6em;
+  min-height: 2.75em;
+  padding: 0.45em 1em;
+  border: 2px solid rgba(232, 236, 244, 0.25);
+  border-radius: 0.9em;
+  background: transparent;
+  color: #e8ecf4;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.si-level.active {
+  border-color: #2fa36b;
+  background: rgba(47, 163, 107, 0.25);
+}
+
 /* Big screens: 3% overscan margin. */
 @media (min-width: 900px) and (min-height: 500px) {
   .si-start {
