@@ -44,12 +44,13 @@ export function createInput({ canPlay, actions }) {
   let down = false;
 
   const api = {
+    // Returns the one-shot action's result (rotate: whether it turned).
     press(name) {
       if (name === "pause") return actions.pause();
-      if (!canPlay()) return;
+      if (!canPlay()) return false;
       if (isHorizontal(name)) repeater.press(name);
       else if (name === "down") down = true;
-      else actions[name]?.();
+      else return actions[name]?.();
     },
     release(name) {
       if (isHorizontal(name)) repeater.release(name);

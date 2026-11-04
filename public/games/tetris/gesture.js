@@ -1,20 +1,25 @@
-// Touch (and mouse) on the play stage. Around the well: anywhere left of it
-// moves left, right of it moves right (held = auto-repeat), below it soft
-// drops. On the well: tap to rotate, drag sideways to move, drag down to soft
-// drop, flick down to hard drop. Buttons (hold, pause) handle themselves.
+// Touch (and mouse) on the play stage. Left of the well and its first 2
+// columns move left, its last 2 columns and right of it move right (held =
+// auto-repeat), below it soft drops. On the rest of the well: tap to rotate,
+// double tap to hard drop, swipe up to rotate, drag sideways to move, drag
+// down to soft drop, flick down to hard drop. Buttons handle themselves.
 const TAP_MAX_MS = 280;
 const TAP_MAX_CELLS = 0.6;
+const DOUBLE_TAP_MS = 300;
+const DOUBLE_TAP_CELLS = 1.5;
 const SOFT_CELLS = 1.5;
 const FLICK_CELLS = 2;
 const FLICK_SPEED = 0.7;
 const FLICK_STALE_MS = 80;
+const SWIPE_UP_CELLS = 1.5;
+const EDGE_COLS = 2;
 
 // Above the well (the portrait HUD row) does nothing.
-function zoneAt(rect, x, y) {
+function zoneAt(rect, edge, x, y) {
   if (y < rect.top) return null;
   if (y > rect.bottom) return "down";
-  if (x < rect.left) return "left";
-  if (x > rect.right) return "right";
+  if (x < rect.left + edge) return "left";
+  if (x > rect.right - edge) return "right";
   return "well";
 }
 
@@ -23,12 +28,14 @@ class Surface {
     Object.assign(this, { well, cellSize, press, release });
     this.zones = new Map();
     this.g = null;
+    this.lastTap = null;
   }
 
   down = (event) => {
     if (event.button !== 0 || event.target.closest("button")) return;
     const rect = this.well.getBoundingClientRect();
-    const zone = zoneAt(rect, event.clientX, event.clientY);
+    const edge = this.cellSize() * EDGE_COLS;
+    const zone = zoneAt(rect, edge, event.clientX, event.clientY);
     if (!zone || (zone === "well" && this.g)) return;
     event.currentTarget.setPointerCapture?.(event.pointerId);
     if (zone === "well") return this.startDrag(event);
@@ -49,9 +56,11 @@ class Surface {
     };
   }
 
+  // Returns whether the action worked (true) when the input can tell.
   tap(name) {
-    this.press(name);
+    const worked = this.press(name);
     this.release(name);
+    return worked;
   }
 
   move = (event) => {
@@ -87,6 +96,32 @@ class Surface {
     return !g.moved && quick && dy < size * TAP_MAX_CELLS;
   }
 
+  isSwipeUp(event, size) {
+    const { g } = this;
+    return !g.soft && g.y0 - event.clientY > size * SWIPE_UP_CELLS;
+  }
+
+  // A second tap soon after and near the first undoes its turn, then drops.
+  onTap(event, size) {
+    const last = this.lastTap;
+    const gap = last && event.timeStamp - last.t;
+    const dist =
+      last && Math.hypot(event.clientX - last.x, event.clientY - last.y);
+    if (last && gap < DOUBLE_TAP_MS && dist < size * DOUBLE_TAP_CELLS) {
+      if (last.turned) this.tap("ccw");
+      this.tap("drop");
+      this.lastTap = null;
+      return;
+    }
+    const turned = this.tap("cw") === true;
+    this.lastTap = {
+      x: event.clientX,
+      y: event.clientY,
+      t: event.timeStamp,
+      turned
+    };
+  }
+
   // Ends a pointer; `done` = lifted (not cancelled), so it may act.
   end(event, done) {
     const zone = this.zones.get(event.pointerId);
@@ -99,7 +134,8 @@ class Surface {
     const size = this.cellSize();
     if (g.soft) this.release("down");
     if (done && this.isFlick(event, size)) this.tap("drop");
-    else if (done && this.isTap(event, size)) this.tap("cw");
+    else if (done && this.isSwipeUp(event, size)) this.tap("cw");
+    else if (done && this.isTap(event, size)) this.onTap(event, size);
     this.g = null;
   }
 

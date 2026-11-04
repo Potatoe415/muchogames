@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Tetris: touch pads under the well (◀, bar = drop, ▶, ↻) and a Facile / Moyen / Difficile slider on the start screen (levels 1 / 4 / 7, ghost only in Facile); browser-checked at 390×844 and 844×390. 2048 and Fusion de fruits before it.
+Status: Tetris: touch pads under the well, Facile / Moyen / Difficile slider, edge-column zones, swipe up = rotate, double tap = drop; browser-checked (synthetic touch) at 390×844. 2048 and Fusion de fruits before it.
 Focus: Owner play-test of Tetris (phone, desktop, TV), then 2048 and Fusion de fruits; owner phone check of the hub and the estimated `players` / `duration`.
 Level: L1 (new game Tetris)
 
@@ -33,8 +33,8 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-04 Tetris gestures: left / right zones reach 2 columns into the well; on the middle of the well, swipe up = rotate, double tap = hard drop (undoes the first tap's turn).
 - 2026-11-04 Tetris: pads under the well replace the ▼ hint (◀, bar = hard drop, ▶, ↻; touch screens only); start-screen difficulty slider Facile / Moyen / Difficile = start level 1 / 4 / 7, ghost only in Facile; the options' start level 1-10 chips are gone; difficulty saved with the match (older saves = Facile).
 - 2026-11-04 Tetris touch rework: on-screen pads removed; whole stage is the touch surface (left / right of the well move, below soft drops, well = rotate / drag / flick, hold box = hold); HUD row on top in portrait, columns in landscape, well up to 280×560 on a 390×844 phone; pieces spawn whole on the top visible row; one next piece; pastel piece colours.
 - 2026-11-04 Tetris (`public/games/tetris/`): 10×20 + 2 hidden rows, 7-bag, SRS + I kicks, hold, ghost, next 5, lock delay 0.5 s / 15 resets, DAS/ARR, T-spin (3-corner), B2B, combo, levels (start 1-10), 40 lines = won, best score, full resume (paused). Keyboard, touch pads + gestures, TV remote. Engine checked in Node; `npm run check` passes; no browser check.
 - 2026-11-03 2048: two levels on the start screen, "Facile" (3 undos) and "Normal" (no undo, ↶ hidden); level saved with the match (old saves = Facile), one record per level, "Rejouer" keeps the level. Browser-checked at 320×568, 390×800, 740×360.
-- 2026-11-03 2048 (`public/games/2048/`): 4×4 slide-and-merge, win at 2048 with "Continuer" / "Terminer la partie", end when no move is left, undo (3/match), record, full resume. Calm misty-sage skin, pastel tiles, soft pentatonic sounds, no timer. Swipe, tap near an edge, arrows / WASD / ZQSD, TV remote (board owns the arrows, Back = menu). Browser-checked at 320×568, 390×800, 740×360, 960×540, 1920×1080 (`?tv=1`), 3840×2160: moves, merges, win, end, undo, menu, quit + resume, language.
