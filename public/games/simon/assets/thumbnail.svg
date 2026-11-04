@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#2b3247" />
+      <stop offset="1" stop-color="#161a26" />
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" />
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#sky)" />
+  <circle cx="200" cy="200" r="160" fill="#0d1018" />
+  <path d="M190 52 A148 148 0 0 0 52 190 L178 190 Q190 190 190 178 Z" fill="#12603a" />
+  <path d="M348 190 A148 148 0 0 0 210 52 L210 178 Q210 190 222 190 Z" fill="#ff5a5f" filter="url(#glow)" />
+  <path d="M348 190 A148 148 0 0 0 210 52 L210 178 Q210 190 222 190 Z" fill="#ff5a5f" />
+  <path d="M52 210 A148 148 0 0 0 190 348 L190 222 Q190 210 178 210 Z" fill="#7d6512" />
+  <path d="M210 348 A148 148 0 0 0 348 210 L222 210 Q210 210 210 222 Z" fill="#173f7c" />
+  <circle cx="200" cy="200" r="52" fill="#1f2433" stroke="#0d1018" stroke-width="8" />
+  <text x="200" y="216" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" text-anchor="middle" fill="#e8ecf4">7</text>
+</svg>
