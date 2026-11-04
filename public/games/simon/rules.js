@@ -2,6 +2,9 @@
 // of each press. No DOM, so it runs in Node too.
 export const PADS = ["green", "red", "yellow", "blue"];
 export const MAX_LENGTH = 999;
+// Easy plays everything 1.5x slower; Normal is the classic speed.
+export const DIFFICULTIES = ["normal", "easy"];
+const SLOWDOWN = { normal: 1, easy: 1.5 };
 
 // Classic Simon speeds up after the 5th, 9th and 13th colour.
 const SPEEDS = [
@@ -18,11 +21,18 @@ export function extend(sequence, rand) {
   return [...sequence, randomPad(rand)];
 }
 
+export const isDifficulty = (value) => DIFFICULTIES.includes(value);
+
+// Stretches a delay for the difficulty (unchanged on Normal).
+export const slowed = (ms, difficulty) =>
+  Math.round(ms * (SLOWDOWN[difficulty] ?? 1));
+
 // Milliseconds each colour stays lit, and the dark gap after it.
-export function timing(length) {
-  return SPEEDS.reduce((found, speed) =>
+export function timing(length, difficulty = "normal") {
+  const { on, gap } = SPEEDS.reduce((found, speed) =>
     length >= speed.from ? speed : found
   );
+  return { on: slowed(on, difficulty), gap: slowed(gap, difficulty) };
 }
 
 // "wrong" ends the match, "done" completes the round, "next" waits for the

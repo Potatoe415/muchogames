@@ -31,34 +31,50 @@ page.audio.setMuted(page.muted);
 const t = (key, vars) => translate(page.lang, key, vars);
 const tn = (key, n, vars) => translateCount(page.lang, key, n, vars);
 const roundsOf = (match) => match.sequence.length - 1;
+// The level being played: the match's own, else the start-screen choice.
+const level = () =>
+  page.game?.difficulty ?? page.summary?.difficulty ?? page.difficulty;
+const bestOf = (difficulty) => page.best[difficulty];
 
 function renderStart() {
-  $("simon-start-best").textContent = tn("startBest", page.best, page);
+  document.querySelectorAll("[data-difficulty]").forEach((button) => {
+    const chosen = button.dataset.difficulty === page.difficulty;
+    button.classList.toggle("active", chosen);
+    button.setAttribute("aria-pressed", String(chosen));
+  });
+  const best = bestOf(page.difficulty);
+  $("simon-start-best").textContent = tn("startBest", best, { best });
   const resume = $("simon-resume-button");
   resume.hidden = !page.saved;
   if (!page.saved) return;
   const score = roundsOf(page.saved);
+  const levelName = t(page.saved.difficulty);
   resume.querySelector("[data-resume-info]").textContent = tn(
     "resumeInfo",
     score,
-    { score }
+    { score, level: levelName }
   );
 }
 
 function renderEnd() {
   const s = page.summary;
   if (!s) return;
+  const best = bestOf(s.difficulty);
+  $("simon-end-level").textContent = t(s.difficulty);
   $("simon-end-score").textContent = tn("endScore", s.score, s);
   $("simon-end-best").textContent = page.newBest
     ? t("newBest")
-    : tn("bestLine", page.best, page);
+    : tn("bestLine", best, { best });
 }
 
 function renderHud() {
   if (!page.hud) return;
   const { score, phase } = page.hud;
   $("simon-score-value").textContent = String(score);
-  $("simon-best-value").textContent = String(Math.max(page.best, score));
+  $("simon-best-value").textContent = String(
+    Math.max(bestOf(level()), score)
+  );
+  $("simon-level-value").textContent = t(level());
   $("simon-hub-count").textContent = String(score);
   $("simon-status").textContent = t(STATUS[phase]);
 }
@@ -107,11 +123,12 @@ function saveMatch() {
 }
 
 function onEnd({ score }) {
-  page.summary = { score };
-  page.newBest = score > page.best;
+  const difficulty = page.game.difficulty;
+  page.summary = { score, difficulty };
+  page.newBest = score > bestOf(difficulty);
   if (page.newBest) {
-    page.best = score;
-    prefs.saveBest(score);
+    page.best[difficulty] = score;
+    prefs.saveBest(difficulty, score);
   }
   clearMatch();
   page.saved = null;
@@ -137,6 +154,7 @@ function mountGame(saved) {
     board: $("simon-board"),
     audio: page.audio,
     saved,
+    difficulty: saved ? saved.difficulty : page.difficulty,
     canPlay,
     onHud,
     onEnd
@@ -204,6 +222,12 @@ function toggleSound() {
   applyLanguage();
 }
 
+function setDifficulty(difficulty) {
+  page.difficulty = difficulty;
+  prefs.saveDifficulty(difficulty);
+  renderStart();
+}
+
 function setLanguage(lang) {
   page.lang = lang;
   prefs.saveLang(lang);
@@ -213,6 +237,11 @@ function setLanguage(lang) {
 function bindControls() {
   document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
+  });
+  document.querySelectorAll("[data-difficulty]").forEach((button) => {
+    button.addEventListener("click", () =>
+      setDifficulty(button.dataset.difficulty)
+    );
   });
   $("simon-sound-toggle").addEventListener("click", toggleSound);
   $("simon-play-button").addEventListener("click", startMatch);

@@ -45,6 +45,13 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* The level being played, under the best it belongs to. */
+.si-stat-tag {
+  font-size: 0.65em;
+  font-weight: 700;
+  color: #f2c94c;
+}
+
 .si-status {
   flex: 1 1 auto;
   min-width: 0;
