@@ -1,9 +1,12 @@
 :root {
-  --theme-improbable: #8e44ad;
-  --theme-mature: #c0392b;
-  --theme-plaisir: #27ae60;
-  --theme-scolaire: #f39c12;
-  --theme-special: #2980b9;
+  --theme-improbable: #8e44ad; /* Purple */
+  --theme-mature: #3498db; /* Blue */
+  --theme-plaisir: #e67e22; /* Orange */
+  --theme-scolaire: #27ae60; /* Green */
+  --theme-challenge: #e74c3c; /* Red */
+  --theme-superbe: #e84393; /* Pink */
+  --theme-debuter: #f1c40f; /* Yellow */
+  --theme-gagner: #f1c40f; /* Yellow */
 }
 
 body {
@@ -70,7 +73,10 @@ body {
 .board-space.mature { background: var(--theme-mature); }
 .board-space.plaisir { background: var(--theme-plaisir); }
 .board-space.scolaire { background: var(--theme-scolaire); }
-.board-space.special { background: var(--theme-special); }
+.board-space.challenge { background: var(--theme-challenge); }
+.board-space.superbe { background: var(--theme-superbe); }
+.board-space.debuter { background: var(--theme-debuter); color: #000; }
+.board-space.gagner { background: var(--theme-gagner); color: #000; }
 
 .team-token {
   position: absolute;
@@ -124,6 +130,10 @@ body {
 .card-theme.mature { color: var(--theme-mature); }
 .card-theme.plaisir { color: var(--theme-plaisir); }
 .card-theme.scolaire { color: var(--theme-scolaire); }
+.card-theme.challenge { color: var(--theme-challenge); }
+.card-theme.superbe { color: var(--theme-superbe); }
+.card-theme.debuter { color: var(--theme-debuter); }
+.card-theme.gagner { color: var(--theme-gagner); }
 
 .card-body {
   padding: 1.5rem;
@@ -168,6 +178,7 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.4;
+  white-space: pre-wrap;
 }
 
 .answer-label {
@@ -185,6 +196,31 @@ body {
 
 .validation-buttons button {
   flex: 1;
+}
+
+.manual-move-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stepper-val {
+  font-size: 2rem;
+  font-weight: bold;
+  min-width: 3rem;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .timer-bar {

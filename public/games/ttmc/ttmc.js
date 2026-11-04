@@ -2,6 +2,18 @@
 const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
 const SPECIAL_THEMES = ['Challenge', 'Débuter', 'Gagner', 'Superbe'];
 
+const BOARD_TRACK = ['Débuter'];
+let themeIdx = 0;
+for (let i = 1; i <= 41; i++) {
+  if (i % 10 === 5) BOARD_TRACK.push('Challenge');
+  else if (i % 10 === 0) BOARD_TRACK.push('Superbe');
+  else {
+    BOARD_TRACK.push(THEMES[themeIdx % THEMES.length]);
+    themeIdx++;
+  }
+}
+BOARD_TRACK.push('Gagner'); // 42
+
 let gameState = {
   teams: [],
   currentTeamIdx: 0,
@@ -36,8 +48,17 @@ const els = {
   showAnswerBtn: document.getElementById('showAnswerBtn'),
   answerStep: document.getElementById('answerStep'),
   cardAnswer: document.getElementById('cardAnswer'),
+  
+  validationButtons: document.getElementById('validationButtons'),
   failBtn: document.getElementById('failBtn'),
   successBtn: document.getElementById('successBtn'),
+  
+  manualMoveUi: document.getElementById('manualMoveUi'),
+  manualMoveValue: document.getElementById('manualMoveValue'),
+  manualMoveDec: document.getElementById('manualMoveDec'),
+  manualMoveInc: document.getElementById('manualMoveInc'),
+  manualMoveConfirm: document.getElementById('manualMoveConfirm'),
+  
   timerFill: document.getElementById('timerFill'),
   
   winnerName: document.getElementById('winnerName'),
@@ -108,8 +129,22 @@ function bindSetup() {
   }
   
   els.showAnswerBtn.addEventListener('click', showAnswer);
-  els.failBtn.addEventListener('click', () => endTurn(false));
-  els.successBtn.addEventListener('click', () => endTurn(true));
+  els.failBtn.addEventListener('click', () => endTurn(0));
+  els.successBtn.addEventListener('click', () => endTurn(gameState.currentNote));
+  
+  els.manualMoveDec.addEventListener('click', () => {
+    let val = parseInt(els.manualMoveValue.textContent, 10);
+    els.manualMoveValue.textContent = val - 1;
+  });
+  els.manualMoveInc.addEventListener('click', () => {
+    let val = parseInt(els.manualMoveValue.textContent, 10);
+    els.manualMoveValue.textContent = val + 1;
+  });
+  els.manualMoveConfirm.addEventListener('click', () => {
+    let val = parseInt(els.manualMoveValue.textContent, 10);
+    endTurn(val);
+  });
+  
   els.restartBtn.addEventListener('click', () => location.reload());
 }
 
@@ -132,7 +167,7 @@ async function startGame() {
   gameState.teams = Array.from(inputs).map((inp, idx) => ({
     id: idx,
     name: inp.value.trim() || `Équipe ${idx+1}`,
-    pos: 0
+    pos: 1 // Start at case 1 after the Débuter draw
   }));
   
   els.setupScreen.classList.add('hidden');
@@ -140,21 +175,27 @@ async function startGame() {
   
   renderBoard();
   updateTurn();
+
+  // Show a Débuter card before the actual turn starts
+  // We temporarly set the team pos to 0 so getSpaceTheme reads Débuter
+  const firstTeam = gameState.teams[0];
+  const originalPos = firstTeam.pos;
+  firstTeam.pos = 0;
+  drawCard();
+  firstTeam.pos = originalPos; // restore immediately
 }
 
 function renderBoard() {
   els.boardTrack.innerHTML = '';
-  for (let i = 0; i <= gameState.boardSize; i++) {
+  BOARD_TRACK.forEach((theme, i) => {
     const space = document.createElement('div');
-    space.className = 'board-space';
-    const theme = getSpaceTheme(i);
+    space.className = `board-space ${theme.toLowerCase().replace(/é/g, 'e')}`;
     
     if (i === 0) space.textContent = 'D';
-    else if (i === gameState.boardSize) space.textContent = 'F';
-    else {
-      space.classList.add(theme.toLowerCase());
-      if (theme === 'Challenge') space.textContent = 'C';
-    }
+    else if (i === BOARD_TRACK.length - 1) space.textContent = 'F';
+    else if (theme === 'Challenge') space.textContent = 'C';
+    else if (theme === 'Superbe') space.textContent = 'S';
+    else space.textContent = i;
     
     // Add tokens
     gameState.teams.forEach(t => {
@@ -166,7 +207,7 @@ function renderBoard() {
     });
     
     els.boardTrack.appendChild(space);
-  }
+  });
 }
 
 function updateTurn() {
@@ -175,13 +216,8 @@ function updateTurn() {
 }
 
 function getSpaceTheme(pos) {
-  if (pos === 0) return 'Débuter';
-  if (pos >= gameState.boardSize) return 'Gagner';
-  
-  // Every 5th space is a challenge, for example
-  if (pos % 5 === 0) return 'Challenge';
-  
-  return THEMES[(pos-1) % THEMES.length];
+  if (pos >= BOARD_TRACK.length - 1) return 'Gagner';
+  return BOARD_TRACK[pos] || 'Improbable';
 }
 
 function drawCard() {
@@ -201,7 +237,22 @@ function drawCard() {
   
   els.cardModal.classList.remove('hidden');
 
-  if (SPECIAL_THEMES.includes(targetTheme) || !gameState.currentCard.questions[0].level) {
+  if (targetTheme === 'Débuter') {
+    gameState.currentNote = 1; // So success advances us, wait, we intercept it in endTurn
+    const qData = gameState.currentCard.questions[0];
+    
+    els.selectedNote.textContent = targetTheme;
+    els.cardQuestion.textContent = qData ? qData.q : "Question introuvable";
+    els.cardAnswer.textContent = qData ? qData.a : "Réponse introuvable";
+    
+    els.evalStep.classList.add('hidden');
+    els.questionStep.classList.remove('hidden');
+    els.answerStep.classList.add('hidden');
+    
+    // For Débuter, don't start the 30s timer, just show the button
+    els.timerFill.style.width = '100%';
+    
+  } else if (SPECIAL_THEMES.includes(targetTheme) || !gameState.currentCard.questions[0].level) {
     // Direct to question
     gameState.currentNote = 1; // Default advance
     const qData = gameState.currentCard.questions[0];
@@ -253,21 +304,65 @@ function showAnswer() {
   clearInterval(gameState.timer);
   els.questionStep.classList.add('hidden');
   els.answerStep.classList.remove('hidden');
+  
+  const targetTheme = getSpaceTheme(gameState.teams[gameState.currentTeamIdx].pos);
+  
+  if (targetTheme === 'Débuter') {
+    els.validationButtons.classList.remove('hidden');
+    els.manualMoveUi.classList.add('hidden');
+    els.failBtn.classList.add('hidden');
+    els.successBtn.textContent = 'Aller au plateau !';
+  } else if (SPECIAL_THEMES.includes(targetTheme) && targetTheme !== 'Gagner') {
+    // For Challenge, Superbe => show manual move UI
+    els.validationButtons.classList.add('hidden');
+    els.manualMoveUi.classList.remove('hidden');
+    els.manualMoveValue.textContent = '0';
+    els.failBtn.classList.remove('hidden');
+  } else if (targetTheme === 'Gagner') {
+    // For Gagner => custom buttons
+    els.validationButtons.classList.remove('hidden');
+    els.manualMoveUi.classList.add('hidden');
+    els.failBtn.textContent = 'Raté (Reste ici)';
+    els.successBtn.textContent = 'Trouvé ! (GAGNÉ !)';
+    els.failBtn.classList.remove('hidden');
+  } else {
+    // Normal card
+    els.validationButtons.classList.remove('hidden');
+    els.manualMoveUi.classList.add('hidden');
+    els.failBtn.textContent = 'Raté (0 case)';
+    els.successBtn.textContent = `Trouvé ! (+${gameState.currentNote})`;
+    els.failBtn.classList.remove('hidden');
+  }
 }
 
-function endTurn(success) {
+function endTurn(moveBy) {
   els.cardModal.classList.add('hidden');
   
-  if (success) {
-    const team = gameState.teams[gameState.currentTeamIdx];
-    team.pos += gameState.currentNote;
-    if (team.pos >= gameState.boardSize) {
-      team.pos = gameState.boardSize;
+  const team = gameState.teams[gameState.currentTeamIdx];
+  const isOnWinSpace = team.pos >= BOARD_TRACK.length - 1;
+  const wasDebuter = els.selectedNote.textContent === 'Débuter';
+  
+  if (wasDebuter) {
+    // Just dismissed the "Débuter" card. Normal game starts.
+    return;
+  }
+  
+  if (isOnWinSpace) {
+    // Logic for Gagner space
+    if (moveBy > 0) {
       window.MuchogamesMatch.finish({ won: true });
       els.boardScreen.classList.add('hidden');
       els.winScreen.classList.remove('hidden');
       els.winnerName.textContent = team.name;
       return;
+    }
+    // else fail => stays on win space
+  } else {
+    // Normal move
+    team.pos += moveBy;
+    if (team.pos < 1) team.pos = 1; // Can't go below 1
+    if (team.pos >= BOARD_TRACK.length - 1) {
+      team.pos = BOARD_TRACK.length - 1;
     }
   }
   

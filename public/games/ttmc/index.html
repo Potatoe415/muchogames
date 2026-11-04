@@ -103,9 +103,20 @@
           <div id="answerStep" class="hidden" data-id="ttmc-answer-step">
             <p class="answer-label">Réponse :</p>
             <p id="cardAnswer" class="card-text" data-id="ttmc-card-answer"></p>
-            <div class="validation-buttons">
-              <button id="failBtn" class="btn danger" data-id="ttmc-fail-btn">Raté (Reste sur place)</button>
-              <button id="successBtn" class="btn success" data-id="ttmc-success-btn">Trouvé ! (Avance)</button>
+            
+            <div id="validationButtons" class="validation-buttons">
+              <button id="failBtn" class="btn danger" data-id="ttmc-fail-btn">Raté (0 case)</button>
+              <button id="successBtn" class="btn success" data-id="ttmc-success-btn">Trouvé !</button>
+            </div>
+            
+            <div id="manualMoveUi" class="manual-move-ui hidden" data-id="ttmc-manual-move">
+              <p>Avancer de :</p>
+              <div class="stepper">
+                <button id="manualMoveDec" class="btn secondary">-</button>
+                <span id="manualMoveValue" class="stepper-val">0</span>
+                <button id="manualMoveInc" class="btn secondary">+</button>
+              </div>
+              <button id="manualMoveConfirm" class="btn primary full-width">Valider le déplacement</button>
             </div>
           </div>
         </div>
