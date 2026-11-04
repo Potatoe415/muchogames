@@ -1,8 +1,9 @@
 // Touch (and mouse) on the play stage. Left of the well and its first 2
 // columns move left, its last 2 columns and right of it move right (held =
-// auto-repeat), below it soft drops. On the rest of the well: tap to rotate,
-// double tap to hard drop, swipe up to rotate, drag sideways to move, drag
-// down to soft drop, flick down to hard drop. Buttons handle themselves.
+// auto-repeat), below it soft drops. On the rest of the well: double tap to
+// hard drop (a single tap does nothing), swipe up to rotate, drag sideways to
+// move, drag down to soft drop, flick down to hard drop. Buttons handle
+// themselves.
 const TAP_MAX_MS = 280;
 const TAP_MAX_CELLS = 0.6;
 const DOUBLE_TAP_MS = 300;
@@ -56,11 +57,9 @@ class Surface {
     };
   }
 
-  // Returns whether the action worked (true) when the input can tell.
   tap(name) {
-    const worked = this.press(name);
+    this.press(name);
     this.release(name);
-    return worked;
   }
 
   move = (event) => {
@@ -101,25 +100,18 @@ class Surface {
     return !g.soft && g.y0 - event.clientY > size * SWIPE_UP_CELLS;
   }
 
-  // A second tap soon after and near the first undoes its turn, then drops.
+  // Only a second tap, soon after and near the first, acts: it hard drops.
   onTap(event, size) {
     const last = this.lastTap;
     const gap = last && event.timeStamp - last.t;
     const dist =
       last && Math.hypot(event.clientX - last.x, event.clientY - last.y);
     if (last && gap < DOUBLE_TAP_MS && dist < size * DOUBLE_TAP_CELLS) {
-      if (last.turned) this.tap("ccw");
       this.tap("drop");
       this.lastTap = null;
       return;
     }
-    const turned = this.tap("cw") === true;
-    this.lastTap = {
-      x: event.clientX,
-      y: event.clientY,
-      t: event.timeStamp,
-      turned
-    };
+    this.lastTap = { x: event.clientX, y: event.clientY, t: event.timeStamp };
   }
 
   // Ends a pointer; `done` = lifted (not cancelled), so it may act.

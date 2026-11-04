@@ -57,8 +57,6 @@ function validMatch(d) {
     validPiece(d.grid, d.piece) &&
     isTypes(d.bag, TYPES.length) &&
     isTypes(d.queue, QUEUE_SIZE + 1) &&
-    (d.hold === null || isType(d.hold)) &&
-    typeof d.holdUsed === "boolean" &&
     isInt(d.score, 0, MAX_SCORE) &&
     isInt(d.lines, 0, MAX_LINES) &&
     d.over === null &&

@@ -1,5 +1,5 @@
-// Canvas drawing: the well (locked blocks, ghost, falling piece), the hold
-// box and the next piece. Pure drawing, no game logic.
+// Canvas drawing: the well (locked blocks, ghost, falling piece) and the
+// next piece. Pure drawing, no game logic.
 import { COLS, HIDDEN, VISIBLE_ROWS, collides } from "./grid.js";
 import { CELLS, COLORS, TYPES } from "./pieces.js";
 
@@ -98,29 +98,25 @@ function fitBox(canvas, c) {
   return box;
 }
 
-export function createView({ board, hold, next, ghost }) {
+export function createView({ board, next, ghost }) {
   const ctx = {
     board: board.getContext("2d"),
-    hold: hold.getContext("2d"),
     next: next.getContext("2d")
   };
-  const boxes = { hold: { w: 0, h: 0 }, next: { w: 0, h: 0 } };
+  let nextBox = { w: 0, h: 0 };
   let cell = 0;
 
   return {
     resize(size) {
       cell = size;
       fitBoard(board, ctx.board, size * COLS, size * VISIBLE_ROWS);
-      boxes.hold = fitBox(hold, ctx.hold);
-      boxes.next = fitBox(next, ctx.next);
+      nextBox = fitBox(next, ctx.next);
     },
     render(state) {
       if (!cell) return;
       drawWell(ctx.board, state, cell);
       drawPiece(ctx.board, state, cell, ghost);
-      const holdAlpha = state.holdUsed ? 0.35 : 1;
-      drawPreview(ctx.hold, state.hold, boxes.hold, holdAlpha);
-      drawPreview(ctx.next, state.queue[0], boxes.next, 1);
+      drawPreview(ctx.next, state.queue[0], nextBox, 1);
     }
   };
 }

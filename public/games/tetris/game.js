@@ -49,7 +49,6 @@ const makeActions = (engine, pause) => ({
   move: (dx) => engine.move(dx),
   cw: () => engine.rotate(1),
   ccw: () => engine.rotate(-1),
-  hold: () => engine.hold(),
   drop: () => engine.hardDrop(),
   pause
 });
@@ -105,7 +104,7 @@ export function createGame(opts) {
   audio.setMuted(opts.muted);
   const actions = makeActions(engine, opts.onPause);
   const input = createInput({ canPlay, actions });
-  const size = watchSize(host, view, [canvases.hold, canvases.next]);
+  const size = watchSize(host, view, [canvases.next]);
   const loop = buildLoop(opts, engine, { audio, input, view });
   const stage = host.closest("[data-id='tetris-stage']") ?? host;
   input.bind(stage);

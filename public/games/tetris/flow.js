@@ -46,7 +46,6 @@ export function lock(ctx) {
   s.lines += lines;
   events.push({ type: "lock", lines, points });
   if (levelFor(s.startLevel, s.lines) > level) events.push({ type: "level" });
-  s.holdUsed = false;
   if (hidden && lines === 0) topOut(ctx, "lockout");
   else spawn(ctx, nextType(ctx));
 }
