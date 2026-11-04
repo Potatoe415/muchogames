@@ -1,5 +1,6 @@
 // Game logic for TTMC
 const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
+const SPECIAL_THEMES = ['Challenge', 'Débuter', 'Gagner', 'Superbe'];
 
 let gameState = {
   teams: [],
@@ -146,11 +147,13 @@ function renderBoard() {
   for (let i = 0; i <= gameState.boardSize; i++) {
     const space = document.createElement('div');
     space.className = 'board-space';
+    const theme = getSpaceTheme(i);
+    
     if (i === 0) space.textContent = 'D';
     else if (i === gameState.boardSize) space.textContent = 'F';
     else {
-      const theme = THEMES[(i-1) % THEMES.length];
       space.classList.add(theme.toLowerCase());
+      if (theme === 'Challenge') space.textContent = 'C';
     }
     
     // Add tokens
@@ -172,14 +175,18 @@ function updateTurn() {
 }
 
 function getSpaceTheme(pos) {
-  if (pos === 0) return 'Improbable';
-  if (pos >= gameState.boardSize) return 'Win';
+  if (pos === 0) return 'Débuter';
+  if (pos >= gameState.boardSize) return 'Gagner';
+  
+  // Every 5th space is a challenge, for example
+  if (pos % 5 === 0) return 'Challenge';
+  
   return THEMES[(pos-1) % THEMES.length];
 }
 
 function drawCard() {
   const pos = gameState.teams[gameState.currentTeamIdx].pos;
-  const targetTheme = getSpaceTheme(pos) === 'Win' ? THEMES[Math.floor(Math.random()*THEMES.length)] : getSpaceTheme(pos);
+  const targetTheme = getSpaceTheme(pos);
   
   const pool = gameState.cards.filter(c => c.theme.toLowerCase() === targetTheme.toLowerCase());
   if (pool.length === 0) {
@@ -189,14 +196,31 @@ function drawCard() {
   }
   
   els.cardTheme.textContent = gameState.currentCard.theme;
-  els.cardTheme.className = `card-theme ${gameState.currentCard.theme.toLowerCase()}`;
-  els.cardSubject.textContent = gameState.currentCard.subject;
-  
-  els.evalStep.classList.remove('hidden');
-  els.questionStep.classList.add('hidden');
-  els.answerStep.classList.add('hidden');
+  els.cardTheme.className = `card-theme ${gameState.currentCard.theme.toLowerCase().replace(/é/g, 'e').replace(/ /g, '-')}`;
+  els.cardSubject.textContent = gameState.currentCard.subject || '';
   
   els.cardModal.classList.remove('hidden');
+
+  if (SPECIAL_THEMES.includes(targetTheme) || !gameState.currentCard.questions[0].level) {
+    // Direct to question
+    gameState.currentNote = 1; // Default advance
+    const qData = gameState.currentCard.questions[0];
+    
+    els.selectedNote.textContent = targetTheme;
+    els.cardQuestion.textContent = qData ? qData.q : "Question introuvable";
+    els.cardAnswer.textContent = qData ? qData.a : "Réponse introuvable";
+    
+    els.evalStep.classList.add('hidden');
+    els.questionStep.classList.remove('hidden');
+    els.answerStep.classList.add('hidden');
+    
+    startTimer();
+  } else {
+    // Normal 1-10 choice
+    els.evalStep.classList.remove('hidden');
+    els.questionStep.classList.add('hidden');
+    els.answerStep.classList.add('hidden');
+  }
 }
 
 function selectNote(note) {

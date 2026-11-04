@@ -24,7 +24,6 @@ function makeSounds(tone) {
   return {
     move: () => tone(300, 0.04, 0.05),
     rotate: () => tone(440, 0.05, 0.06, 0, "triangle"),
-    hold: () => notes([392, 523], 0.05, 0.08),
     hard: () => tone(110, 0.12, 0.14, 0, "triangle"),
     lock: () => tone(220, 0.07, 0.07),
     clear: (n = 1) => notes([523, 659, 784, 1047].slice(0, n + 1), 0.07, 0.1),

@@ -18,8 +18,6 @@ function freshState(startLevel, ghost) {
     bag: [],
     queue: [],
     piece: null,
-    hold: null,
-    holdUsed: false,
     score: 0,
     lines: 0,
     fallTimer: 0,
@@ -61,17 +59,6 @@ function hardDrop(ctx) {
   lock(ctx);
 }
 
-function hold(ctx) {
-  const { s } = ctx;
-  if (s.over || s.holdUsed) return false;
-  const held = s.hold;
-  s.hold = s.piece.type;
-  spawn(ctx, held ?? nextType(ctx));
-  s.holdUsed = true;
-  ctx.events.push({ type: "hold" });
-  return true;
-}
-
 // An action that can fail; emits `type` when it worked.
 function act(ctx, type, run) {
   const ok = !ctx.s.over && run();
@@ -94,7 +81,6 @@ export function createEngine({
     move: (dx) => act(ctx, "move", () => shift(ctx, dx, 0)),
     rotate: (dir) => act(ctx, "rotate", () => rotate(ctx, dir)),
     hardDrop: () => hardDrop(ctx),
-    hold: () => hold(ctx),
     tick: (dt, soft) => tick(ctx, dt, soft),
     drain: () => ctx.events.splice(0, ctx.events.length),
     snapshot: () => structuredClone(s)

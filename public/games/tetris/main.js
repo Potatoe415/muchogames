@@ -150,7 +150,6 @@ function mountGame(saved) {
     host: $("tetris-play-area"),
     canvases: {
       board: $("tetris-board"),
-      hold: $("tetris-hold-canvas"),
       next: $("tetris-next-canvas")
     },
     saved,
