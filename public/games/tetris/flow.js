@@ -21,15 +21,14 @@ function topOut(ctx, reason) {
 
 export function spawn(ctx, type) {
   const { s } = ctx;
-  const piece = { type, rot: 0, ...SPAWN[type] };
+  // Whole on the first visible row; the hidden rows only take rotation kicks.
+  const piece = { type, rot: 0, x: SPAWN[type].x, y: SPAWN[type].y + HIDDEN };
   s.lastAction = null;
   s.fallTimer = 0;
   s.lockTimer = null;
   s.lockResets = 0;
   s.piece = piece;
   if (collides(s.grid, type, 0, piece.x, piece.y)) return topOut(ctx, "blockout");
-  // Guideline: a new piece drops one row at once when it can.
-  if (!grounded(ctx)) piece.y += 1;
   s.lowest = piece.y;
   if (grounded(ctx)) s.lockTimer = 0;
 }

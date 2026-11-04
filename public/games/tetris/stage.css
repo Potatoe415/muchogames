@@ -1,31 +1,38 @@
-/* Play stage. Portrait: the play area (hold + well + next) on top, the
-   touch pads below. Short landscape: pads move to the left and right of it.
-   The page script measures .tr-play and sets --cell (px) on it. */
+/* Play stage. Portrait: the HUD (hold + stats | next + best + pause) in a
+   row on top, the well below. Landscape: the HUD in columns left and right.
+   The whole stage is the touch surface (gesture.js): left of the well moves
+   left, right of it moves right, below it soft drops, on it rotates. The
+   page script measures .tr-play and sets --cell (px) on it, keeping
+   --tr-zone-cells free on each side and --tr-down-cells below the well. */
 .tr-stage {
   flex: 1 1 auto;
   min-width: 0;
   min-height: 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-rows: auto minmax(0, 1fr);
   grid-template-areas:
-    "play play"
-    "move act";
-  gap: 0.4em;
+    "left right"
+    "play play";
+  gap: 0.5em 0.6em;
   padding: 0.4em max(0.5em, env(safe-area-inset-right))
     max(0.5em, env(safe-area-inset-bottom)) max(0.5em, env(safe-area-inset-left));
+  touch-action: none;
+  overscroll-behavior: none;
 }
 
 .tr-play {
   --cell: 16px;
+  --tr-zone-cells: 0;
+  --tr-down-cells: 0;
+  position: relative;
   grid-area: play;
   min-width: 0;
   min-height: 0;
   overflow: hidden;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  gap: calc(var(--cell) * 0.4);
   font-size: calc(var(--cell) * 0.5);
 }
 
@@ -33,29 +40,63 @@
   position: relative;
   flex: 0 0 auto;
   border-radius: 0.3em;
-  box-shadow: 0 0 0 0.2em rgba(122, 162, 255, 0.35);
+  box-shadow: 0 0 0 0.2em rgba(168, 186, 240, 0.3);
 }
 
 .tr-canvas {
   display: block;
 }
 
-.tr-board {
-  touch-action: none;
-  overscroll-behavior: none;
+/* HUD. Sized in rem, not cells, so it never feeds back into --cell. */
+.tr-side {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  font-size: 0.8rem;
 }
 
-.tr-side {
+.tr-side-left {
+  grid-area: left;
+}
+
+.tr-side-right {
+  grid-area: right;
+  justify-content: flex-end;
+}
+
+.tr-box {
   flex: 0 0 auto;
-  width: calc(var(--cell) * 3);
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  align-items: flex-start;
+  gap: 0.2em;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.tr-hold {
+  cursor: pointer;
+  touch-action: none;
+}
+
+.tr-preview {
+  width: 4.4em;
+  height: 2.6em;
+  border-radius: 0.4em;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tr-hold:active .tr-preview {
+  background: rgba(168, 186, 240, 0.18);
 }
 
 .tr-label {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -64,7 +105,7 @@
 
 .tr-value {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   color: #eef2fb;
@@ -77,8 +118,9 @@
 }
 
 .tr-pause {
-  width: 100%;
-  min-height: calc(var(--cell) * 1.6);
+  flex: 0 0 auto;
+  width: 2.8em;
+  height: 2.8em;
   border: none;
   border-radius: 0.6em;
   background: #2a3358;
@@ -87,6 +129,31 @@
   font-size: 1em;
   cursor: pointer;
   touch-action: manipulation;
+}
+
+/* Faint arrows on the touch zones (touch screens only). */
+.tr-hint {
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: calc(var(--cell) * 0.9);
+  color: rgba(200, 214, 240, 0.16);
+  pointer-events: none;
+}
+
+.tr-hint[data-zone="left"] {
+  left: calc(25% - var(--cell) * 2.5);
+  top: calc(var(--cell) * 10);
+}
+
+.tr-hint[data-zone="right"] {
+  left: calc(75% + var(--cell) * 2.5);
+  top: calc(var(--cell) * 10);
+}
+
+.tr-hint[data-zone="down"] {
+  left: 50%;
+  top: calc(50% + var(--cell) * 10);
 }
 
 /* "Tetris!" style toast over the well. */
@@ -126,83 +193,46 @@
   }
 }
 
-/* Touch pads. */
-.tr-pads {
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-}
+/* Touch screens: room for the zones beside and below; the well sits on top
+   so all the room left goes to the "down" zone. */
+@media (pointer: coarse) {
+  .tr-play {
+    --tr-zone-cells: 1.6;
+    --tr-down-cells: 1.6;
+    align-items: flex-start;
+  }
 
-.tr-pads-move {
-  grid-area: move;
-}
-
-.tr-pads-act {
-  grid-area: act;
-}
-
-.tr-pad {
-  width: 3.4rem;
-  height: 3.4rem;
-  border: none;
-  border-radius: 50%;
-  background: #2a3358;
-  color: #dbe4f0;
-  font: inherit;
-  font-size: 1.3rem;
-  font-weight: 700;
-  cursor: pointer;
-  touch-action: none;
-}
-
-.tr-pad:active {
-  background: #4a5fc4;
-}
-
-@media (max-width: 400px) {
-  .tr-pad {
-    width: 3rem;
-    height: 3rem;
+  .tr-hint {
+    display: block;
   }
 }
 
-/* Short landscape: pads beside the play area. */
-@media (orientation: landscape) and (max-height: 600px) {
+/* Landscape: HUD columns on both sides of the well. */
+@media (orientation: landscape) {
   .tr-stage {
     grid-template-columns: auto minmax(0, 1fr) auto;
     grid-template-rows: minmax(0, 1fr);
-    grid-template-areas: "move play act";
-    padding-inline: max(0.5em, env(safe-area-inset-left))
-      max(0.5em, env(safe-area-inset-right));
+    grid-template-areas: "left play right";
   }
 
-  .tr-pads {
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 7.6rem;
+  .tr-side {
+    width: 6.5em;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.6em;
+    font-size: 1rem;
   }
 
-  .tr-pad {
-    width: 3rem;
-    height: 3rem;
+  .tr-pause {
+    width: 100%;
   }
 }
 
-/* Desktop and TV: keyboard / remote, no touch pads; 3% from the edges. */
+/* Desktop and TV: 3% from the edges; the side padding brings the HUD
+   columns near the well (about 43dvh wide at this size). */
 @media (min-width: 900px) and (min-height: 500px) {
-  .tr-pads {
-    display: none;
-  }
-
   .tr-stage {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr);
-    grid-template-areas: "play";
-    padding: 3dvh 3vw;
-  }
-
-  .tr-play {
-    align-items: center;
+    padding: 3dvh max(3vw, calc((100vw - 48dvh) / 2 - 8rem));
   }
 }

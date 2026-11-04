@@ -1,24 +1,23 @@
 // Canvas drawing: the well (locked blocks, ghost, falling piece), the hold
-// box and the next queue. Pure drawing, no game logic.
+// box and the next piece. Pure drawing, no game logic.
 import { COLS, HIDDEN, VISIBLE_ROWS, collides } from "./grid.js";
 import { CELLS, COLORS, TYPES } from "./pieces.js";
 
-const WELL_BG = "#0f1620";
+const WELL_BG = "#121a26";
 const GRID_LINE = "rgba(255, 255, 255, 0.05)";
-const SIDE_SCALE = 0.75;
-const SIDE_COLS = 4;
-const SLOT_ROWS = 3;
-const NEXT_SHOWN = 5;
+// A preview box fits 4 columns x 2 rows of cells with a margin.
+const BOX_COLS = 4.4;
+const BOX_ROWS = 2.6;
 
 function drawCell(ctx, x, y, size, color, alpha = 1) {
   const edge = Math.max(1, size * 0.1);
   ctx.globalAlpha = alpha;
   ctx.fillStyle = color;
   ctx.fillRect(x, y, size, size);
-  ctx.fillStyle = "rgba(255, 255, 255, 0.35)";
+  ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
   ctx.fillRect(x, y, size, edge);
   ctx.fillRect(x, y, edge, size);
-  ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+  ctx.fillStyle = "rgba(0, 0, 0, 0.12)";
   ctx.fillRect(x, y + size - edge, size, edge);
   ctx.fillRect(x + size - edge, y, edge, size);
   ctx.globalAlpha = 1;
@@ -30,15 +29,18 @@ function ghostRow(grid, piece) {
   return y;
 }
 
-// Draws a piece centred in the box { x, y, w, h }, at rotation 0.
-function drawPreview(ctx, type, box, size, alpha) {
+// Draws a piece centred in its preview box, at rotation 0.
+function drawPreview(ctx, type, box, alpha) {
+  ctx.clearRect(0, 0, box.w, box.h);
+  if (!type) return;
+  const size = Math.min(box.w / BOX_COLS, box.h / BOX_ROWS);
   const cells = CELLS[type][0];
   const cols = cells.map(([c]) => c);
   const rows = cells.map(([, r]) => r);
   const w = Math.max(...cols) - Math.min(...cols) + 1;
   const h = Math.max(...rows) - Math.min(...rows) + 1;
-  const left = box.x + (box.w - w * size) / 2 - Math.min(...cols) * size;
-  const top = box.y + (box.h - h * size) / 2 - Math.min(...rows) * size;
+  const left = (box.w - w * size) / 2 - Math.min(...cols) * size;
+  const top = (box.h - h * size) / 2 - Math.min(...rows) * size;
   cells.forEach(([c, r]) =>
     drawCell(ctx, left + c * size, top + r * size, size, COLORS[type], alpha)
   );
@@ -76,28 +78,24 @@ function drawPiece(c, state, cell) {
   });
 }
 
-function drawSide(ctx, state, cell) {
-  const side = cell * SIDE_SCALE;
-  const slot = side * SLOT_ROWS;
-  const w = side * SIDE_COLS;
-  ctx.hold.clearRect(0, 0, w, slot);
-  ctx.next.clearRect(0, 0, w, slot * NEXT_SHOWN);
-  if (state.hold) {
-    const alpha = state.holdUsed ? 0.35 : 1;
-    drawPreview(ctx.hold, state.hold, { x: 0, y: 0, w, h: slot }, side, alpha);
-  }
-  state.queue.slice(0, NEXT_SHOWN).forEach((type, i) => {
-    drawPreview(ctx.next, type, { x: 0, y: i * slot, w, h: slot }, side, 1);
-  });
-}
-
-function fit(canvas, c, w, h) {
+function setScale(canvas, c, w, h) {
   const dpr = window.devicePixelRatio || 1;
   canvas.width = Math.round(w * dpr);
   canvas.height = Math.round(h * dpr);
+  c.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+// The board gets its size from the cell; a preview box from its CSS size.
+function fitBoard(canvas, c, w, h) {
+  setScale(canvas, c, w, h);
   canvas.style.width = `${w}px`;
   canvas.style.height = `${h}px`;
-  c.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function fitBox(canvas, c) {
+  const box = { w: canvas.clientWidth, h: canvas.clientHeight };
+  setScale(canvas, c, box.w, box.h);
+  return box;
 }
 
 export function createView({ board, hold, next }) {
@@ -106,21 +104,23 @@ export function createView({ board, hold, next }) {
     hold: hold.getContext("2d"),
     next: next.getContext("2d")
   };
+  const boxes = { hold: { w: 0, h: 0 }, next: { w: 0, h: 0 } };
   let cell = 0;
 
   return {
     resize(size) {
       cell = size;
-      const side = size * SIDE_SCALE;
-      fit(board, ctx.board, size * COLS, size * VISIBLE_ROWS);
-      fit(hold, ctx.hold, side * SIDE_COLS, side * SLOT_ROWS);
-      fit(next, ctx.next, side * SIDE_COLS, side * SLOT_ROWS * NEXT_SHOWN);
+      fitBoard(board, ctx.board, size * COLS, size * VISIBLE_ROWS);
+      boxes.hold = fitBox(hold, ctx.hold);
+      boxes.next = fitBox(next, ctx.next);
     },
     render(state) {
       if (!cell) return;
       drawWell(ctx.board, state, cell);
       drawPiece(ctx.board, state, cell);
-      drawSide(ctx, state, cell);
+      const holdAlpha = state.holdUsed ? 0.35 : 1;
+      drawPreview(ctx.hold, state.hold, boxes.hold, holdAlpha);
+      drawPreview(ctx.next, state.queue[0], boxes.next, 1);
     }
   };
 }

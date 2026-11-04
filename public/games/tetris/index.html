@@ -103,23 +103,25 @@
       </section>
 
       <section class="tr-stage" data-id="tetris-stage" data-tv-screen hidden>
-        <div class="tr-play" data-id="tetris-play-area">
-          <div class="tr-side tr-side-left">
-            <p class="tr-label" data-i18n="hold">Réserve</p>
-            <canvas class="tr-canvas" data-id="tetris-hold-canvas" aria-hidden="true"></canvas>
-            <div class="tr-stat" data-id="tetris-score">
-              <span class="tr-label" data-i18n="score">Score</span>
-              <span class="tr-value" data-id="tetris-score-value">0</span>
-            </div>
-            <div class="tr-stat" data-id="tetris-lines">
-              <span class="tr-label" data-i18n="lines">Lignes</span>
-              <span class="tr-value" data-id="tetris-lines-value">0</span>
-            </div>
-            <div class="tr-stat" data-id="tetris-level">
-              <span class="tr-label" data-i18n="level">Niveau</span>
-              <span class="tr-value" data-id="tetris-level-value">1</span>
-            </div>
+        <div class="tr-side tr-side-left" data-id="tetris-hud-left">
+          <button type="button" class="tr-box tr-hold" data-pad="hold" data-id="tetris-hold-button" aria-label="Mettre en réserve" data-i18n-aria="holdButton">
+            <span class="tr-label" data-i18n="hold">Réserve</span>
+            <canvas class="tr-canvas tr-preview" data-id="tetris-hold-canvas" aria-hidden="true"></canvas>
+          </button>
+          <div class="tr-stat" data-id="tetris-score">
+            <span class="tr-label" data-i18n="score">Score</span>
+            <span class="tr-value" data-id="tetris-score-value">0</span>
           </div>
+          <div class="tr-stat" data-id="tetris-lines">
+            <span class="tr-label" data-i18n="lines">Lignes</span>
+            <span class="tr-value" data-id="tetris-lines-value">0</span>
+          </div>
+          <div class="tr-stat" data-id="tetris-level">
+            <span class="tr-label" data-i18n="level">Niveau</span>
+            <span class="tr-value" data-id="tetris-level-value">1</span>
+          </div>
+        </div>
+        <div class="tr-play" data-id="tetris-play-area">
           <div class="tr-well">
             <canvas
               class="tr-canvas tr-board"
@@ -132,26 +134,20 @@
             ></canvas>
             <p class="tr-toast" data-id="tetris-toast" aria-live="polite"></p>
           </div>
-          <div class="tr-side tr-side-right">
-            <p class="tr-label" data-i18n="next">Suivantes</p>
-            <canvas class="tr-canvas" data-id="tetris-next-canvas" aria-hidden="true"></canvas>
-            <div class="tr-stat" data-id="tetris-best">
-              <span class="tr-label" data-i18n="best">Record</span>
-              <span class="tr-value" data-id="tetris-best-value">0</span>
-            </div>
-            <button type="button" class="tr-pause" data-id="tetris-pause-button" data-tv-back aria-label="Pause" data-i18n-aria="menuButton">❚❚</button>
+          <span class="tr-hint" data-zone="left" aria-hidden="true">◀</span>
+          <span class="tr-hint" data-zone="right" aria-hidden="true">▶</span>
+          <span class="tr-hint" data-zone="down" aria-hidden="true">▼</span>
+        </div>
+        <div class="tr-side tr-side-right" data-id="tetris-hud-right">
+          <div class="tr-box" data-id="tetris-next">
+            <span class="tr-label" data-i18n="next">Suivante</span>
+            <canvas class="tr-canvas tr-preview" data-id="tetris-next-canvas" aria-hidden="true"></canvas>
           </div>
-        </div>
-        <div class="tr-pads tr-pads-move" data-id="tetris-pads-move">
-          <button type="button" class="tr-pad" data-pad="left" data-id="tetris-pad-left" aria-label="Gauche" data-i18n-aria="left">◀</button>
-          <button type="button" class="tr-pad" data-pad="down" data-id="tetris-pad-down" aria-label="Descendre" data-i18n-aria="down">▼</button>
-          <button type="button" class="tr-pad" data-pad="right" data-id="tetris-pad-right" aria-label="Droite" data-i18n-aria="right">▶</button>
-        </div>
-        <div class="tr-pads tr-pads-act" data-id="tetris-pads-act">
-          <button type="button" class="tr-pad" data-pad="hold" data-id="tetris-pad-hold" aria-label="Réserve" data-i18n-aria="holdButton">H</button>
-          <button type="button" class="tr-pad" data-pad="ccw" data-id="tetris-pad-ccw" aria-label="Tourner à gauche" data-i18n-aria="rotateCcw">↺</button>
-          <button type="button" class="tr-pad" data-pad="cw" data-id="tetris-pad-cw" aria-label="Tourner à droite" data-i18n-aria="rotateCw">↻</button>
-          <button type="button" class="tr-pad" data-pad="drop" data-id="tetris-pad-drop" aria-label="Lâcher" data-i18n-aria="dropButton">⤓</button>
+          <div class="tr-stat" data-id="tetris-best">
+            <span class="tr-label" data-i18n="best">Record</span>
+            <span class="tr-value" data-id="tetris-best-value">0</span>
+          </div>
+          <button type="button" class="tr-pause" data-id="tetris-pause-button" data-tv-back aria-label="Pause" data-i18n-aria="menuButton">❚❚</button>
         </div>
       </section>
 

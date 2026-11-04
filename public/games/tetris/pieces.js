@@ -3,14 +3,15 @@
 // on the grid, rot 0 = spawn, 1 = right (clockwise), 2 = flipped, 3 = left.
 export const TYPES = ["I", "O", "T", "S", "Z", "J", "L"];
 
+// Soft pastels that keep the usual hue of each piece.
 export const COLORS = {
-  I: "#00d8e8",
-  O: "#f0d000",
-  T: "#a040e0",
-  S: "#30d050",
-  Z: "#e83838",
-  J: "#3860f0",
-  L: "#f09018"
+  I: "#9ddbe3",
+  O: "#f3e09a",
+  T: "#c9b0ec",
+  S: "#acdcb4",
+  Z: "#f1aaaa",
+  J: "#a8baf0",
+  L: "#f5c79a"
 };
 
 const SHAPES = {
@@ -22,11 +23,6 @@ const SHAPES = {
   J: ["X..", "XXX", "..."],
   L: ["..X", "XXX", "..."]
 };
-
-// Guideline spawn: columns 4-6 (I: 3-6, O: 4-5), in the two hidden rows.
-export const SPAWN = Object.fromEntries(
-  TYPES.map((type) => [type, { x: 3, y: type === "O" ? -1 : 0 }])
-);
 
 const rotateCw = (m) =>
   m.map((_, r) => [...m[r]].map((__, c) => m[m.length - 1 - c][r]).join(""));
@@ -49,6 +45,14 @@ function allRotations(shape) {
 // CELLS[type][rot] = [[col, row], ...] inside the bounding box.
 export const CELLS = Object.fromEntries(
   TYPES.map((type) => [type, allRotations(SHAPES[type])])
+);
+
+// Spawn columns 4-6 (I: 3-6, O: 4-5); y puts the top filled row on y = 0.
+export const SPAWN = Object.fromEntries(
+  TYPES.map((type) => [
+    type,
+    { x: 3, y: -Math.min(...CELLS[type][0].map(([, r]) => r)) }
+  ])
 );
 
 // SRS kick tests, keyed "<from><to>", as [dx, dy] with y pointing UP (the

@@ -4,14 +4,12 @@
 import { createAudio } from "./audio.js";
 import { createEngine } from "./engine.js";
 import { bindGestures } from "./gesture.js";
+import { COLS, VISIBLE_ROWS } from "./grid.js";
 import { createInput } from "./input.js";
 import { createLoop } from "./loop.js";
 import { GOAL_LINES, levelFor } from "./scoring.js";
 import { createView } from "./view.js";
 
-// The play row is 10 well columns + two 3-cell side columns + gaps.
-const ROW_CELLS = 16.8;
-const ROW_ROWS = 20;
 const MIN_CELL = 8;
 
 function summaryOf(state) {
@@ -23,17 +21,23 @@ function summaryOf(state) {
   };
 }
 
-// Sizes the canvases to the room the play area has.
-function watchSize(host, view) {
+const cssCells = (el, name) =>
+  parseFloat(getComputedStyle(el).getPropertyValue(name)) || 0;
+
+// Sizes the canvases to the room the play area has, minus the touch zones
+// stage.css asks for beside (--tr-zone-cells) and below (--tr-down-cells).
+function watchSize(host, view, previews) {
   let cell = MIN_CELL;
   const observer = new ResizeObserver(() => {
     const { width, height } = host.getBoundingClientRect();
-    const fit = Math.min(width / ROW_CELLS, height / ROW_ROWS);
+    const across = COLS + 2 * cssCells(host, "--tr-zone-cells");
+    const tall = VISIBLE_ROWS + cssCells(host, "--tr-down-cells");
+    const fit = Math.min(width / across, height / tall);
     cell = Math.max(MIN_CELL, Math.floor(fit));
     view.resize(cell);
     host.style.setProperty("--cell", `${cell}px`);
   });
-  observer.observe(host);
+  [host, ...previews].forEach((el) => observer.observe(el));
   return { cell: () => cell, stop: () => observer.disconnect() };
 }
 
@@ -91,10 +95,16 @@ export function createGame(opts) {
   audio.setMuted(opts.muted);
   const actions = makeActions(engine, opts.onPause);
   const input = createInput({ canPlay, actions });
-  const size = watchSize(host, view);
+  const size = watchSize(host, view, [canvases.hold, canvases.next]);
   const loop = buildLoop(opts, engine, { audio, input, view });
-  input.bind(host.closest("[data-id='tetris-stage']") ?? host);
-  const gestures = { el: canvases.board, cellSize: size.cell, ...input };
+  const stage = host.closest("[data-id='tetris-stage']") ?? host;
+  input.bind(stage);
+  const gestures = {
+    el: stage,
+    well: canvases.board,
+    cellSize: size.cell,
+    ...input
+  };
   const cleanups = [
     loop.stop,
     size.stop,
