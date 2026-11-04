@@ -57,6 +57,45 @@
   color: #b4bfdc;
 }
 
+/* Difficulty slider: three stops, labels under them. */
+.tr-difficulty {
+  width: min(100%, 15em);
+  margin: 0.8em auto 0.2em;
+}
+
+.tr-difficulty-title {
+  margin: 0 0 0.2em !important;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8f9cc4;
+}
+
+.tr-range {
+  display: block;
+  width: 100%;
+  margin: 0;
+  accent-color: #a8baf0;
+  cursor: pointer;
+}
+
+.tr-difficulty-marks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  color: #93a0c4;
+}
+
+.tr-difficulty-marks span {
+  cursor: pointer;
+}
+
+.tr-difficulty-marks .active {
+  font-weight: 700;
+  color: #eef2fb;
+}
+
 @media (orientation: landscape) and (max-height: 500px) {
   .tr-logo span {
     font-size: 1em;

@@ -1,12 +1,14 @@
 // localStorage: the match in progress, so leaving it by any route and coming
 // back resumes it exactly. Everything read back is validated before use.
+import { isDifficulty } from "./difficulty.js";
 import { QUEUE_SIZE } from "./flow.js";
 import { COLS, ROWS, collides } from "./grid.js";
 import { CELLS, TYPES } from "./pieces.js";
-import { MAX_START_LEVEL } from "./prefs.js";
 
 const SAVE_KEY = "tetris-current";
 const VERSION = 1;
+// Older matches could start at any level from 1 to 10.
+const MAX_START_LEVEL = 10;
 const MAX_SCORE = 1e9;
 const MAX_LINES = 1e5;
 
@@ -54,6 +56,7 @@ function validMatch(d) {
   return (
     d?.v === VERSION &&
     isInt(d.startLevel, 1, MAX_START_LEVEL) &&
+    (d.difficulty === undefined || isDifficulty(d.difficulty)) &&
     validGrid(d.grid) &&
     validPiece(d.grid, d.piece) &&
     isTypes(d.bag, TYPES.length) &&

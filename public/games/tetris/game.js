@@ -2,6 +2,7 @@
 // starts or resumes, destroyed when the page is left or a new match starts.
 // The page shell (main.js) owns coins, saving and overlays.
 import { createAudio } from "./audio.js";
+import { settingsOf } from "./difficulty.js";
 import { createEngine } from "./engine.js";
 import { bindGestures } from "./gesture.js";
 import { COLS, VISIBLE_ROWS } from "./grid.js";
@@ -11,6 +12,8 @@ import { GOAL_LINES, levelFor } from "./scoring.js";
 import { createView } from "./view.js";
 
 const MIN_CELL = 8;
+// The touch pad row under the well gets its height plus a margin.
+const PAD_ROOM = 1.3;
 
 function summaryOf(state) {
   return {
@@ -25,14 +28,16 @@ const cssCells = (el, name) =>
   parseFloat(getComputedStyle(el).getPropertyValue(name)) || 0;
 
 // Sizes the canvases to the room the play area has, minus the touch zones
-// stage.css asks for beside (--tr-zone-cells) and below (--tr-down-cells).
+// stage.css asks for beside the well (--tr-zone-cells) and the pad row under
+// it (hidden, so 0 px, without a touch screen).
 function watchSize(host, view, previews) {
   let cell = MIN_CELL;
+  const pads = host.querySelector("[data-id='tetris-pads']");
   const observer = new ResizeObserver(() => {
     const { width, height } = host.getBoundingClientRect();
     const across = COLS + 2 * cssCells(host, "--tr-zone-cells");
-    const tall = VISIBLE_ROWS + cssCells(host, "--tr-down-cells");
-    const fit = Math.min(width / across, height / tall);
+    const room = (pads?.offsetHeight ?? 0) * PAD_ROOM;
+    const fit = Math.min(width / across, (height - room) / VISIBLE_ROWS);
     cell = Math.max(MIN_CELL, Math.floor(fit));
     view.resize(cell);
     host.style.setProperty("--cell", `${cell}px`);
@@ -87,10 +92,17 @@ function buildLoop(opts, engine, parts) {
   });
 }
 
+// A resumed match keeps its own difficulty (and so its ghost setting).
+function createBoard({ difficulty, saved, canvases }) {
+  const { startLevel } = settingsOf(difficulty);
+  const engine = createEngine({ startLevel, difficulty, saved });
+  const { ghost } = settingsOf(engine.state.difficulty);
+  return { engine, view: createView({ ...canvases, ghost }) };
+}
+
 export function createGame(opts) {
   const { host, canvases, canPlay } = opts;
-  const engine = createEngine({ startLevel: opts.startLevel, saved: opts.saved });
-  const view = createView(canvases);
+  const { engine, view } = createBoard(opts);
   const audio = createAudio();
   audio.setMuted(opts.muted);
   const actions = makeActions(engine, opts.onPause);
@@ -99,16 +111,11 @@ export function createGame(opts) {
   const loop = buildLoop(opts, engine, { audio, input, view });
   const stage = host.closest("[data-id='tetris-stage']") ?? host;
   input.bind(stage);
-  const gestures = {
-    el: stage,
-    well: canvases.board,
-    cellSize: size.cell,
-    ...input
-  };
+  const gestures = { el: stage, well: canvases.board, cellSize: size.cell };
   const cleanups = [
     loop.stop,
     size.stop,
-    bindGestures(gestures),
+    bindGestures({ ...gestures, ...input }),
     input.destroy,
     bindUnlock(audio),
     audio.close

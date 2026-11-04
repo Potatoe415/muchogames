@@ -3,7 +3,7 @@
    The whole stage is the touch surface (gesture.js): left of the well moves
    left, right of it moves right, below it soft drops, on it rotates. The
    page script measures .tr-play and sets --cell (px) on it, keeping
-   --tr-zone-cells free on each side and --tr-down-cells below the well. */
+   --tr-zone-cells free on each side and room for the pads below the well. */
 .tr-stage {
   flex: 1 1 auto;
   min-width: 0;
@@ -24,7 +24,6 @@
 .tr-play {
   --cell: 16px;
   --tr-zone-cells: 0;
-  --tr-down-cells: 0;
   position: relative;
   grid-area: play;
   min-width: 0;
@@ -151,9 +150,48 @@
   top: calc(var(--cell) * 10);
 }
 
-.tr-hint[data-zone="down"] {
+/* Touch pads, centred in the room under the well (touch screens only). */
+.tr-pads {
+  display: none;
+  position: absolute;
   left: 50%;
   top: calc(50% + var(--cell) * 10);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.tr-pad {
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(168, 186, 240, 0.16);
+  color: #dbe4f0;
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.tr-pad:active {
+  background: rgba(168, 186, 240, 0.4);
+}
+
+.tr-pad-drop {
+  width: 4.8rem;
+  border-radius: 1.6rem;
+}
+
+.tr-bar {
+  width: 2.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background: currentColor;
 }
 
 /* "Tetris!" style toast over the well. */
@@ -193,17 +231,20 @@
   }
 }
 
-/* Touch screens: room for the zones beside and below; the well sits on top
-   so all the room left goes to the "down" zone. */
+/* Touch screens: room for the zones beside and the pads below; the well sits
+   on top so all the room left goes to the "down" zone around the pads. */
 @media (pointer: coarse) {
   .tr-play {
     --tr-zone-cells: 1.6;
-    --tr-down-cells: 1.6;
     align-items: flex-start;
   }
 
   .tr-hint {
     display: block;
+  }
+
+  .tr-pads {
+    display: flex;
   }
 }
 

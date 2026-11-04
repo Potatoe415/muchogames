@@ -70,10 +70,6 @@
             <p class="options-panel-section-title" data-i18n="sound">Son</p>
             <button type="button" class="tr-chip" data-id="tetris-sound-toggle" aria-pressed="true"></button>
           </div>
-          <div class="options-panel-section" data-id="tetris-options-level">
-            <p class="options-panel-section-title" data-i18n="startLevel">Niveau de départ</p>
-            <div class="tr-chips" data-id="tetris-level-chips"></div>
-          </div>
           <details class="options-panel-section" data-id="game-options-rules">
             <summary class="options-panel-section-title" data-i18n="rules">Règles</summary>
             <div class="rules-modal-content" data-id="tetris-rules-content"></div>
@@ -90,6 +86,26 @@
           </p>
           <h2 class="tr-visually-hidden" data-i18n="title">Tetris</h2>
           <p class="tr-pitch" data-i18n="pitch"></p>
+          <div class="tr-difficulty" data-id="tetris-difficulty">
+            <p class="tr-difficulty-title" data-i18n="difficulty">Difficulté</p>
+            <input
+              type="range"
+              class="tr-range"
+              min="0"
+              max="2"
+              step="1"
+              value="0"
+              data-id="tetris-difficulty-slider"
+              data-tv-keys="left right"
+              aria-label="Difficulté"
+              data-i18n-aria="difficulty"
+            />
+            <div class="tr-difficulty-marks">
+              <span data-difficulty="easy" data-id="tetris-difficulty-easy" data-i18n="easy">Facile</span>
+              <span data-difficulty="medium" data-id="tetris-difficulty-medium" data-i18n="medium">Moyen</span>
+              <span data-difficulty="hard" data-id="tetris-difficulty-hard" data-i18n="hard">Difficile</span>
+            </div>
+          </div>
           <button type="button" class="tr-button tr-resume" data-id="tetris-resume-button" data-tv-focus hidden>
             <span data-i18n="resume">Reprendre</span>
             <span class="tr-info" data-resume-info></span>
@@ -136,7 +152,12 @@
           </div>
           <span class="tr-hint" data-zone="left" aria-hidden="true">◀</span>
           <span class="tr-hint" data-zone="right" aria-hidden="true">▶</span>
-          <span class="tr-hint" data-zone="down" aria-hidden="true">▼</span>
+          <div class="tr-pads" data-id="tetris-pads">
+            <button type="button" class="tr-pad" data-pad="left" data-id="tetris-pad-left" aria-label="Gauche" data-i18n-aria="left">◀</button>
+            <button type="button" class="tr-pad tr-pad-drop" data-pad="drop" data-id="tetris-pad-drop" aria-label="Lâcher" data-i18n-aria="dropButton"><span class="tr-bar" aria-hidden="true"></span></button>
+            <button type="button" class="tr-pad" data-pad="right" data-id="tetris-pad-right" aria-label="Droite" data-i18n-aria="right">▶</button>
+            <button type="button" class="tr-pad" data-pad="cw" data-id="tetris-pad-rotate" aria-label="Tourner" data-i18n-aria="rotate">↻</button>
+          </div>
         </div>
         <div class="tr-side tr-side-right" data-id="tetris-hud-right">
           <div class="tr-box" data-id="tetris-next">

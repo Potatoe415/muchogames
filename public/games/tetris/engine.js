@@ -10,9 +10,10 @@ export const LOCK_DELAY = 0.5;
 const SOFT_POINTS = 1;
 const HARD_POINTS = 2;
 
-function freshState(startLevel) {
+function freshState(startLevel, difficulty) {
   return {
     startLevel,
+    difficulty,
     grid: emptyGrid(),
     bag: [],
     queue: [],
@@ -82,8 +83,14 @@ function act(ctx, type, run) {
   return ok;
 }
 
-export function createEngine({ startLevel = 1, rng = Math.random, saved } = {}) {
-  const s = saved ? structuredClone(saved) : freshState(startLevel);
+// `difficulty` is only carried along so a saved match keeps it.
+export function createEngine({
+  startLevel = 1,
+  difficulty = "easy",
+  rng = Math.random,
+  saved
+} = {}) {
+  const s = saved ? structuredClone(saved) : freshState(startLevel, difficulty);
   const ctx = { s, events: [], rng };
   if (!saved) spawn(ctx, nextType(ctx));
   return {

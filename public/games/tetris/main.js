@@ -1,6 +1,7 @@
 // Page shell: language, options panel, start screen, overlays and the match
 // lifecycle (docs/PLATFORM_RULES.md). The match itself lives in game.js and
 // is destroyed whenever the page is left or a new match starts.
+import { DIFFICULTIES, settingsOf } from "./difficulty.js";
 import { createGame } from "./game.js";
 import { createHud } from "./hud.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
@@ -28,12 +29,25 @@ const page = {
 const t = (key, vars) => translate(page.lang, key, vars);
 const hud = createHud({ $ });
 
+function renderDifficulty() {
+  const slider = $("tetris-difficulty-slider");
+  slider.value = String(DIFFICULTIES.indexOf(page.difficulty));
+  slider.setAttribute("aria-valuetext", t(page.difficulty));
+  document.querySelectorAll("[data-difficulty]").forEach((mark) => {
+    mark.classList.toggle("active", mark.dataset.difficulty === page.difficulty);
+  });
+}
+
 function renderStart() {
   $("tetris-start-best").textContent = t("startBest", { best: page.best });
   $("tetris-play-button").querySelector("[data-play-info]").textContent = t(
     "playInfo",
-    { level: page.startLevel }
+    {
+      difficulty: t(page.difficulty),
+      level: settingsOf(page.difficulty).startLevel
+    }
   );
+  renderDifficulty();
   const resume = $("tetris-resume-button");
   resume.hidden = !page.saved;
   if (page.saved) {
@@ -55,21 +69,6 @@ function renderEnd() {
     : t("bestLine", { best: page.best });
 }
 
-function renderLevelChips() {
-  const box = $("tetris-level-chips");
-  box.replaceChildren();
-  for (let level = 1; level <= prefs.MAX_START_LEVEL; level += 1) {
-    const chip = document.createElement("button");
-    chip.type = "button";
-    chip.className = "tr-chip";
-    chip.dataset.id = `tetris-level-${level}`;
-    chip.textContent = String(level);
-    chip.setAttribute("aria-pressed", String(level === page.startLevel));
-    chip.addEventListener("click", () => setStartLevel(level));
-    box.append(chip);
-  }
-}
-
 function applyLanguage() {
   document.documentElement.lang = page.lang;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
@@ -87,7 +86,6 @@ function applyLanguage() {
   const sound = $("tetris-sound-toggle");
   sound.textContent = t(page.muted ? "off" : "on");
   sound.setAttribute("aria-pressed", String(!page.muted));
-  renderLevelChips();
   renderStart();
   renderEnd();
   hud.repaint();
@@ -160,7 +158,7 @@ function mountGame(saved) {
       next: $("tetris-next-canvas")
     },
     saved,
-    startLevel: page.startLevel,
+    difficulty: page.difficulty,
     muted: page.muted,
     canPlay,
     onHud,
@@ -221,10 +219,10 @@ function setLanguage(lang) {
   applyLanguage();
 }
 
-function setStartLevel(level) {
-  page.startLevel = level;
-  prefs.saveStartLevel(level);
-  applyLanguage();
+function setDifficulty(difficulty) {
+  page.difficulty = difficulty;
+  prefs.saveDifficulty(difficulty);
+  renderStart();
 }
 
 function bindStart() {
@@ -232,6 +230,12 @@ function bindStart() {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   $("tetris-sound-toggle").addEventListener("click", toggleSound);
+  $("tetris-difficulty-slider").addEventListener("input", (event) => {
+    setDifficulty(DIFFICULTIES[Number(event.target.value)] ?? "easy");
+  });
+  document.querySelectorAll("[data-difficulty]").forEach((mark) => {
+    mark.addEventListener("click", () => setDifficulty(mark.dataset.difficulty));
+  });
   $("tetris-play-button").addEventListener("click", startMatch);
   $("tetris-resume-button").addEventListener("click", resumeMatch);
 }

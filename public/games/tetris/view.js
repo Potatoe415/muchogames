@@ -62,14 +62,14 @@ function drawWell(c, state, cell) {
   );
 }
 
-function drawPiece(c, state, cell) {
+function drawPiece(c, state, cell, showGhost) {
   const { piece, grid, over } = state;
   if (!piece || over === "blockout") return;
   const ghost = ghostRow(grid, piece);
   const color = COLORS[piece.type];
   CELLS[piece.type][piece.rot].forEach(([col, r]) => {
     const x = (piece.x + col) * cell;
-    if (ghost + r >= HIDDEN) {
+    if (showGhost && ghost + r >= HIDDEN) {
       drawCell(c, x, (ghost + r - HIDDEN) * cell, cell, color, 0.22);
     }
     if (piece.y + r >= HIDDEN) {
@@ -98,7 +98,7 @@ function fitBox(canvas, c) {
   return box;
 }
 
-export function createView({ board, hold, next }) {
+export function createView({ board, hold, next, ghost }) {
   const ctx = {
     board: board.getContext("2d"),
     hold: hold.getContext("2d"),
@@ -117,7 +117,7 @@ export function createView({ board, hold, next }) {
     render(state) {
       if (!cell) return;
       drawWell(ctx.board, state, cell);
-      drawPiece(ctx.board, state, cell);
+      drawPiece(ctx.board, state, cell, ghost);
       const holdAlpha = state.holdUsed ? 0.35 : 1;
       drawPreview(ctx.hold, state.hold, boxes.hold, holdAlpha);
       drawPreview(ctx.next, state.queue[0], boxes.next, 1);

@@ -1,12 +1,13 @@
-// localStorage preferences: language, sound, start level, best score. Every
+// localStorage preferences: language, sound, difficulty, best score. Every
 // access tolerates unavailable storage.
+import { isDifficulty } from "./difficulty.js";
+
 const KEYS = {
   lang: "bergamots-lang",
   sound: "tetris-sound",
-  level: "tetris-start-level",
+  difficulty: "tetris-difficulty",
   best: "tetris-best"
 };
-export const MAX_START_LEVEL = 10;
 
 function read(key, fallback) {
   try {
@@ -29,14 +30,19 @@ const readInt = (key, min, max, fallback) => {
   return Number.isInteger(n) && n >= min && n <= max ? n : fallback;
 };
 
+const readDifficulty = () => {
+  const value = read(KEYS.difficulty, "easy");
+  return isDifficulty(value) ? value : "easy";
+};
+
 export const loadPrefs = () => ({
   lang: read(KEYS.lang, "fr"),
   muted: read(KEYS.sound, "on") === "off",
-  startLevel: readInt(KEYS.level, 1, MAX_START_LEVEL, 1),
+  difficulty: readDifficulty(),
   best: readInt(KEYS.best, 0, 1e9, 0)
 });
 
 export const saveLang = (lang) => write(KEYS.lang, lang);
 export const saveMuted = (muted) => write(KEYS.sound, muted ? "off" : "on");
-export const saveStartLevel = (level) => write(KEYS.level, String(level));
+export const saveDifficulty = (difficulty) => write(KEYS.difficulty, difficulty);
 export const saveBest = (score) => write(KEYS.best, String(score));
