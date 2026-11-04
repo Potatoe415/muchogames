@@ -1,0 +1,101 @@
+/* Start screen: four-colour logo, pitch, resume / play buttons, best. */
+.si-start {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.si-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 2.4em);
+  justify-content: center;
+  gap: 0.3em;
+  margin: 0.2em 0 0.8em !important;
+}
+
+.si-logo span {
+  height: 2.4em;
+  background: var(--pad-lit);
+  box-shadow: 0 0 0.9em var(--pad-glow);
+}
+
+.si-logo span:nth-child(1) {
+  border-radius: 100% 0.3em 0.3em 0.3em;
+}
+
+.si-logo span:nth-child(2) {
+  border-radius: 0.3em 100% 0.3em 0.3em;
+}
+
+.si-logo span:nth-child(3) {
+  border-radius: 0.3em 0.3em 0.3em 100%;
+}
+
+.si-logo span:nth-child(4) {
+  border-radius: 0.3em 0.3em 100% 0.3em;
+}
+
+.si-start-title {
+  margin: 0 0 0.3em;
+  font-size: 1.8em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.si-pitch {
+  color: #a3abbd;
+}
+
+.si-resume {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  background: #3f7fd9;
+  box-shadow: 0 0.2em 0 #2a5ea8;
+}
+
+.si-resume:active {
+  box-shadow: 0 0.08em 0 #2a5ea8;
+}
+
+.si-resume-info {
+  font-size: 0.75em;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Big screens: 3% overscan margin. */
+@media (min-width: 900px) and (min-height: 500px) {
+  .si-start {
+    padding: 2dvh 3vw 3dvh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .si-start {
+    padding-block: 0.5em max(0.5em, env(safe-area-inset-bottom));
+  }
+
+  .si-logo {
+    grid-template-columns: repeat(4, 1.6em);
+    margin-bottom: 0.4em !important;
+  }
+
+  .si-logo span {
+    height: 1.6em;
+  }
+
+  .si-pitch {
+    display: none;
+  }
+
+  .si-best {
+    margin-top: 0.5em !important;
+  }
+}

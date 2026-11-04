@@ -434,5 +434,16 @@
     "thumbnail": "/games/tetris/assets/thumbnail.svg",
     "players": [1, 1],
     "duration": 10
+  },
+  {
+    "id": "simon",
+    "title": "Simon",
+    "kind": "custom",
+    "tags": ["reflexion"],
+    "added": "2026-11-04",
+    "launch": "/games/simon/index.html",
+    "thumbnail": "/games/simon/assets/thumbnail.svg",
+    "players": [1, 1],
+    "duration": 3
   }
 ]

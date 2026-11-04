@@ -1,0 +1,248 @@
+/* Simon: night-arcade skin over the shared header. Mobile first; sizes
+   grow with the screen (vmin) up to a 4K TV. Page frame, chips, cards,
+   buttons and overlays here; start screen in start.css, play stage in
+   stage.css, board tiles and palette in tiles.css. */
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 35%, #2b3247 0%, #161a26 70%);
+  color: #e8ecf4;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(232, 236, 244, 0.08);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #e8ecf4;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.back-button,
+.options-button {
+  background: #3a4462;
+  color: #ffffff;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.si-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.si-chip {
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
+  border: 2px solid #d5ddd8;
+  border-radius: 0.75em;
+  background: #ffffff;
+  color: #1f2937;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.si-chip.active,
+.si-chip[aria-pressed="true"] {
+  border-color: #7fa39a;
+  background: #e7f0ec;
+}
+
+.si-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.si-app [hidden] {
+  display: none !important;
+}
+
+.si-app button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.si-chip:focus-visible {
+  outline: 3px solid #3a4462;
+  outline-offset: 3px;
+}
+
+.si-card {
+  width: min(100%, 24em);
+  padding: 1.4em 1.2em 1.5em;
+  border-radius: 1.6em;
+  background: rgba(34, 40, 58, 0.94);
+  text-align: center;
+  box-shadow: 0 0.8em 2.4em rgba(0, 0, 0, 0.35);
+  animation: si-fade 0.35s ease-out both;
+}
+
+.si-card p {
+  margin: 0 0 0.6em;
+  line-height: 1.5;
+}
+
+.si-button {
+  display: block;
+  width: min(100%, 14em);
+  min-height: 3em;
+  margin: 0.7em auto 0;
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 1em;
+  background: #2fa36b;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0.2em 0 #1e7a4e;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.si-button:active {
+  transform: translateY(0.12em);
+  box-shadow: 0 0.08em 0 #1e7a4e;
+}
+
+.si-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.si-button-soft {
+  background: #3a4462;
+  color: #e8ecf4;
+  box-shadow: 0 0.2em 0 #262d42;
+}
+
+.si-best {
+  margin-top: 0.9em !important;
+  font-weight: 600;
+  color: #a3abbd;
+}
+
+/* Overlays: the board stays softly visible behind. */
+.si-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+  background: rgba(22, 26, 38, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: si-fade 0.3s ease-out both;
+}
+
+.si-overlay-title {
+  margin: 0 0 0.5em;
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #e8ecf4;
+}
+
+.si-score-line {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #f2c94c;
+}
+
+@keyframes si-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Big screens (desktop, TV): the shared header grows with the screen and
+   everything keeps 3% away from the edges (TV overscan). */
+@media (min-width: 900px) and (min-height: 500px) {
+  .game-nav {
+    height: clamp(60px, 8dvh, 220px);
+    padding-inline: 3vw;
+  }
+
+  .back-button,
+  .options-button {
+    width: clamp(36px, 6dvh, 160px);
+    height: clamp(36px, 6dvh, 160px);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: 0.3rem solid #ffffff !important;
+  outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.6rem rgba(79, 127, 176, 0.9);
+}
+
+/* Short landscape screens: the overlays must fit in ~300px. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .si-card {
+    width: min(100%, 30em);
+    padding: 0.7em 1em 0.9em;
+  }
+
+  .si-overlay-title {
+    margin-bottom: 0.2em;
+    font-size: 1.3em;
+  }
+
+  .si-button {
+    min-height: 2.6em;
+    margin-top: 0.4em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+  .si-card,
+  .si-overlay {
+    animation: none;
+  }
+}

@@ -1,0 +1,120 @@
+/* Play stage. Portrait: score row on top, board under it. Landscape: score
+   column left, board centred. The board is the largest square that fits.
+   Pads in pads.css. */
+.si-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 0.8em;
+  padding: 0.8em max(0.8em, env(safe-area-inset-right))
+    max(1.5em, env(safe-area-inset-bottom))
+    max(0.8em, env(safe-area-inset-left));
+}
+
+.si-hud {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  min-width: 0;
+}
+
+.si-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 4.4em;
+  padding: 0.35em 0.8em;
+  border-radius: 0.9em;
+  background: rgba(255, 255, 255, 0.08);
+  line-height: 1.15;
+}
+
+.si-stat-label {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a3abbd;
+}
+
+.si-stat-value {
+  font-size: 1.3em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.si-status {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.si-tool {
+  flex: 0 0 auto;
+  width: clamp(44px, 7vmin, 180px);
+  height: clamp(44px, 7vmin, 180px);
+  border: none;
+  border-radius: 50%;
+  background: #3a4462;
+  color: #e8ecf4;
+  font: inherit;
+  font-size: clamp(20px, 3.2vmin, 86px);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.si-board-area {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  container-type: size;
+}
+
+.si-board {
+  width: min(92vw, 62dvh);
+  width: min(100cqw, 100cqh);
+  aspect-ratio: 1;
+}
+
+@media (orientation: landscape) {
+  .si-stage {
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(6em, auto) minmax(0, 1fr);
+  }
+
+  .si-hud {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .si-stat {
+    width: 100%;
+  }
+
+  .si-status {
+    flex: 0 0 auto;
+    min-height: 2.6em;
+    display: grid;
+    place-items: center;
+  }
+
+  .si-board {
+    width: min(70vw, 80dvh);
+    width: min(100cqw, 100cqh);
+  }
+}
+
+/* Big screens: 3% overscan margin. */
+@media (min-width: 900px) and (min-height: 500px) {
+  .si-stage {
+    padding: 2dvh 3vw 3dvh;
+  }
+}
