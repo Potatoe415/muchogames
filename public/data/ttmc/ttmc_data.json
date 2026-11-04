@@ -579,7 +579,11 @@
           "q": "Quelle est l'île située au large de la côte sud-est de l'Afrique ?",
           "a": "Madagascar"
         },
-        { "level": 4, "q": "Quel fleuve traverse l'Égypte ?", "a": "Le Nil" },
+        {
+          "level": 4,
+          "q": "Quel fleuve traverse l'Égypte ?",
+          "a": "Le Nil"
+        },
         {
           "level": 5,
           "q": "Le mont Kilimandjaro se trouve dans quel pays ?",
@@ -697,7 +701,11 @@
           "q": "Quelle est la céréale la plus couramment utilisée pour faire de la bière ?",
           "a": "L'orge"
         },
-        { "level": 6, "q": "Que signifie IPA ?", "a": "India Pale Ale" },
+        {
+          "level": 6,
+          "q": "Que signifie IPA ?",
+          "a": "India Pale Ale"
+        },
         {
           "level": 7,
           "q": "Dans quel pays trouve-t-on les bières trappistes ?",
@@ -734,7 +742,11 @@
           "q": "Dans quel pays se trouve la ville de Berlin ?",
           "a": "En Allemagne"
         },
-        { "level": 3, "q": "Quelle est la capitale du Japon ?", "a": "Tokyo" },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale du Japon ?",
+          "a": "Tokyo"
+        },
         {
           "level": 4,
           "q": "De quel pays européen Stockholm est-elle la capitale ?",
@@ -842,7 +854,11 @@
           "q": "Qui est le gérant décoloré de ce café, secrètement amoureux de Rachel ?",
           "a": "Gunther"
         },
-        { "level": 3, "q": "Combien de sœurs a Joey Tribbiani ?", "a": "Sept" },
+        {
+          "level": 3,
+          "q": "Combien de sœurs a Joey Tribbiani ?",
+          "a": "Sept"
+        },
         {
           "level": 4,
           "q": "Quel instrument de musique joue Phoebe Buffay ?",
@@ -1082,7 +1098,11 @@
           "q": "Quel artiste espagnol est célèbre pour ses horloges molles ?",
           "a": "Salvador Dalí"
         },
-        { "level": 7, "q": "Qui a peint 'Le Cri' ?", "a": "Edvard Munch" },
+        {
+          "level": 7,
+          "q": "Qui a peint 'Le Cri' ?",
+          "a": "Edvard Munch"
+        },
         {
           "level": 8,
           "q": "Lequel de ces tableaux est de Botticelli : La Naissance de Vénus ou La Jeune Fille à la perle ?",
@@ -1394,7 +1414,11 @@
           "q": "Comment s'appelle l'ours dans le Livre de la Jungle ?",
           "a": "Baloo"
         },
-        { "level": 3, "q": "Quel animal est Simba ?", "a": "Un lion" },
+        {
+          "level": 3,
+          "q": "Quel animal est Simba ?",
+          "a": "Un lion"
+        },
         {
           "level": 4,
           "q": "Dans quel film trouve-t-on le personnage d'Olaf, le bonhomme de neige ?",
@@ -2062,8 +2086,16 @@
           "q": "Quelle planète est surnommée l'étoile du berger ?",
           "a": "Vénus"
         },
-        { "level": 3, "q": "Laquelle est la planète bleue ?", "a": "La Terre" },
-        { "level": 4, "q": "Quelle est la planète rouge ?", "a": "Mars" },
+        {
+          "level": 3,
+          "q": "Laquelle est la planète bleue ?",
+          "a": "La Terre"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la planète rouge ?",
+          "a": "Mars"
+        },
         {
           "level": 5,
           "q": "Quelle est la plus grande planète du système solaire ?",
@@ -3092,7 +3124,11 @@
           "q": "'Un jour mon prince... ' (Blanche-Neige)",
           "a": "Viendra"
         },
-        { "level": 9, "q": "'Tu seras dans mon... ' (Tarzan)", "a": "Cœur" },
+        {
+          "level": 9,
+          "q": "'Tu seras dans mon... ' (Tarzan)",
+          "a": "Cœur"
+        },
         {
           "level": 10,
           "q": "'Et tu découvriras que la... ' (Pocahontas)",
@@ -3104,7 +3140,11 @@
       "theme": "Mature",
       "subject": "Le corps humain (les os)",
       "questions": [
-        { "level": 1, "q": "Quel os protège le cerveau ?", "a": "Le crâne" },
+        {
+          "level": 1,
+          "q": "Quel os protège le cerveau ?",
+          "a": "Le crâne"
+        },
         {
           "level": 2,
           "q": "Comment s'appelle l'os de la cuisse ?",
@@ -3660,7 +3700,11 @@
       "theme": "Scolaire",
       "subject": "Les capitales d'Asie",
       "questions": [
-        { "level": 1, "q": "Quelle est la capitale du Japon ?", "a": "Tokyo" },
+        {
+          "level": 1,
+          "q": "Quelle est la capitale du Japon ?",
+          "a": "Tokyo"
+        },
         {
           "level": 2,
           "q": "Quelle est la capitale de la Chine ?",
@@ -4134,7 +4178,11 @@
           "q": "Dans une fraction, comment s'appelle le nombre du bas ?",
           "a": "Le dénominateur"
         },
-        { "level": 7, "q": "Combien font 7 multiplié par 8 ?", "a": "56" },
+        {
+          "level": 7,
+          "q": "Combien font 7 multiplié par 8 ?",
+          "a": "56"
+        },
         {
           "level": 8,
           "q": "Comment s'appelle un triangle qui a deux côtés de même longueur ?",
@@ -4410,7 +4458,11 @@
           "q": "Qui a peint le plafond de la chapelle Sixtine ('La Création d'Adam') ?",
           "a": "Michel-Ange"
         },
-        { "level": 7, "q": "Qui a peint 'Le Cri' ?", "a": "Edvard Munch" },
+        {
+          "level": 7,
+          "q": "Qui a peint 'Le Cri' ?",
+          "a": "Edvard Munch"
+        },
         {
           "level": 8,
           "q": "Quelle peintre mexicaine est célèbre pour ses autoportraits (souvent avec un monosourcil) ?",
@@ -5445,7 +5497,11 @@
           "q": "Quelle est la capitale de la France ?",
           "a": "Paris"
         },
-        { "level": 2, "q": "Quel fleuve traverse Paris ?", "a": "La Seine" },
+        {
+          "level": 2,
+          "q": "Quel fleuve traverse Paris ?",
+          "a": "La Seine"
+        },
         {
           "level": 3,
           "q": "Quelle est la plus haute montagne de France (et d'Europe occidentale) ?",
@@ -5675,7 +5731,11 @@
           "q": "Quel est le plus grand organe du corps humain ?",
           "a": "La peau"
         },
-        { "level": 4, "q": "Où se trouve le fémur ?", "a": "Dans la cuisse" },
+        {
+          "level": 4,
+          "q": "Où se trouve le fémur ?",
+          "a": "Dans la cuisse"
+        },
         {
           "level": 5,
           "q": "Quel liquide transporte l'oxygène des poumons vers le reste du corps ?",
@@ -5929,6 +5989,5550 @@
           "level": 10,
           "q": "Quel est le plus petit pays du monde en superficie ?",
           "a": "Le Vatican"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'espace",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? La Terre est la troisième planète du système solaire.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le nom de la galaxie dans laquelle nous nous trouvons ?",
+          "a": "La Voie lactée"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le nom du premier homme à avoir marché sur la Lune ?",
+          "a": "Neil Armstrong"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la planète la plus proche du Soleil ?",
+          "a": "Mercure"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le nom du premier satellite artificiel envoyé dans l'espace ?",
+          "a": "Spoutnik 1"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la plus grande planète du système solaire ?",
+          "a": "Jupiter"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le nom de la première femme à être allée dans l'espace ?",
+          "a": "Valentina Terechkova"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la planète la plus chaude du système solaire ?",
+          "a": "Vénus"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom du télescope spatial lancé en 1990 ?",
+          "a": "Hubble"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom de la sonde spatiale qui a survolé Pluton en 2015 ?",
+          "a": "New Horizons"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "L'IVG (Interruption Volontaire de Grossesse)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En France, l'IVG est légale depuis les années 1970. Vrai ou faux ?",
+          "a": "Vrai (loi Veil de 1975)"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le nom de la ministre qui a porté la loi de légalisation de l'IVG en France ?",
+          "a": "Simone Veil"
+        },
+        {
+          "level": 3,
+          "q": "En quelle année la loi légalisant l'IVG a-t-elle été promulguée en France ?",
+          "a": "1975"
+        },
+        {
+          "level": 4,
+          "q": "Jusqu'à combien de semaines de grossesse l'IVG est-elle légale en France (depuis 2022) ?",
+          "a": "14 semaines"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le nom de la militante féministe et femme politique qui a rédigé le Manifeste des 343 ?",
+          "a": "Simone de Beauvoir"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays européen a été le premier à légaliser l'IVG (en 1920) ?",
+          "a": "L'Union Soviétique (Russie)"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel pays d'Amérique du Sud l'IVG a-t-elle été dépénalisée en 2020 après une longue lutte féministe ?",
+          "a": "L'Argentine"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le nom de l'association française historique de défense du droit à l'avortement ?",
+          "a": "Le Planning Familial"
+        },
+        {
+          "level": 9,
+          "q": "Quel État américain a été le premier à interdire l'IVG après la révocation de l'arrêt Roe v. Wade en 2022 ?",
+          "a": "Le Texas"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom du médicament le plus couramment utilisé pour l'IVG médicamenteuse ?",
+          "a": "La mifépristone (ou RU-486)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les anniversaires de mariage",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Les noces d'argent célèbrent 25 ans de mariage. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quelle matière symbolise 1 an de mariage ?",
+          "a": "Le coton"
+        },
+        {
+          "level": 3,
+          "q": "Quel arbre majestueux symbolise 100 ans de mariage ?",
+          "a": "L'eau (noces d'eau)"
+        },
+        {
+          "level": 4,
+          "q": "Que célèbrent les noces d'or ?",
+          "a": "50 ans de mariage"
+        },
+        {
+          "level": 5,
+          "q": "Quel pierre précieuse célèbre 60 ans de mariage ?",
+          "a": "Le diamant"
+        },
+        {
+          "level": 6,
+          "q": "Les noces de cristal célèbrent combien d'années de mariage ?",
+          "a": "15 ans"
+        },
+        {
+          "level": 7,
+          "q": "Quelle matière célèbre 30 ans de mariage ?",
+          "a": "La perle"
+        },
+        {
+          "level": 8,
+          "q": "Les noces d'émeraude célèbrent combien d'années de mariage ?",
+          "a": "40 ans"
+        },
+        {
+          "level": 9,
+          "q": "Quel arbre fruitier célèbre 47 ans de mariage ?",
+          "a": "Le cachemire"
+        },
+        {
+          "level": 10,
+          "q": "Quelle fleur célèbre 17 ans de mariage ?",
+          "a": "La rose"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Le pain",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est l'ingrédient principal du pain, en plus de l'eau, du sel et de la levure ?",
+          "a": "La farine"
+        },
+        {
+          "level": 2,
+          "q": "Quelle baguette française est traditionnellement la plus consommée et la plus célèbre ?",
+          "a": "La baguette"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la partie croustillante à l'extérieur du pain ?",
+          "a": "La croûte"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on la partie molle à l'intérieur du pain ?",
+          "a": "La mie"
+        },
+        {
+          "level": 5,
+          "q": "Quel pain plat et rond est traditionnellement consommé au Moyen-Orient et en Afrique du Nord ?",
+          "a": "Le pain pita"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la traduction littérale du mot italien focaccia ?",
+          "a": "Pain cuit sous les cendres (ou au foyer)"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays est le premier consommateur de pain au monde (en kg par habitant) ?",
+          "a": "La Turquie"
+        },
+        {
+          "level": 8,
+          "q": "De quelle couleur est le pain pumpernickel d'origine allemande ?",
+          "a": "Noir (ou brun très foncé)"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom du saint patron des boulangers en France ?",
+          "a": "Saint Honoré"
+        },
+        {
+          "level": 10,
+          "q": "Quel gaz, produit par la levure, fait gonfler la pâte à pain ?",
+          "a": "Le dioxyde de carbone (CO2)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'Égypte antique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Les pharaons étaient considérés comme des dieux vivants.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel fleuve traverse l'Égypte et était vital pour l'agriculture antique ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on l'écriture figurative utilisée par les anciens Égyptiens ?",
+          "a": "Les hiéroglyphes"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la forme des tombeaux monumentaux construits pour les pharaons ?",
+          "a": "Les pyramides"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le nom de la pierre qui a permis à Jean-François Champollion de déchiffrer les hiéroglyphes ?",
+          "a": "La pierre de Rosette"
+        },
+        {
+          "level": 6,
+          "q": "Quel dieu égyptien, souvent représenté avec une tête de chacal, est associé à l'embaumement et aux morts ?",
+          "a": "Anubis"
+        },
+        {
+          "level": 7,
+          "q": "Quelle reine d'Égypte est célèbre pour ses relations avec Jules César et Marc Antoine ?",
+          "a": "Cléopâtre (VII)"
+        },
+        {
+          "level": 8,
+          "q": "Quel pharaon, dont le tombeau a été découvert intact en 1922, est devenu mondialement célèbre ?",
+          "a": "Toutânkhamon"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le processus de préservation des corps pratiqué par les anciens Égyptiens ?",
+          "a": "La momification"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom du dieu du soleil, l'une des divinités les plus importantes du panthéon égyptien ?",
+          "a": "Rê (ou Râ)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les tueurs en série célèbres",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Jack l'Éventreur a sévi à Londres à la fin du 19ème siècle. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel tueur en série américain, surnommé le clown tueur, a inspiré le personnage de Ça de Stephen King ?",
+          "a": "John Wayne Gacy"
+        },
+        {
+          "level": 3,
+          "q": "Quel tueur en série français, surnommé l'Ogre des Ardennes, a été condamné à la perpétuité en 2008 ?",
+          "a": "Michel Fourniret"
+        },
+        {
+          "level": 4,
+          "q": "Quel tueur en série américain, exécuté en 1989, était connu pour son charme et son intelligence ?",
+          "a": "Ted Bundy"
+        },
+        {
+          "level": 5,
+          "q": "Quel tueur en série américain, surnommé le cannibale de Milwaukee, a assassiné 17 jeunes hommes ?",
+          "a": "Jeffrey Dahmer"
+        },
+        {
+          "level": 6,
+          "q": "Quel tueur en série britannique, médecin de profession, est soupçonné d'avoir tué plus de 200 de ses patients ?",
+          "a": "Harold Shipman"
+        },
+        {
+          "level": 7,
+          "q": "Quel tueur en série français, surnommé le tueur de l'Est parisien, a sévi dans les années 1990 ?",
+          "a": "Guy Georges"
+        },
+        {
+          "level": 8,
+          "q": "Quel tueur en série américain, qui envoyait des lettres cryptées à la presse, n'a jamais été identifié ?",
+          "a": "Le Tueur du Zodiaque"
+        },
+        {
+          "level": 9,
+          "q": "Quel tueur en série russe, surnommé le boucher de Rostov, a été condamné pour 52 meurtres en 1992 ?",
+          "a": "Andreï Tchikatilo"
+        },
+        {
+          "level": 10,
+          "q": "Quel tueur en série américain, surnommé le Fils de Sam, a terrorisé New York en 1976 et 1977 ?",
+          "a": "David Berkowitz"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les jeux de société modernes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans le jeu Les Aventuriers du Rail, le but est de construire des lignes de train. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel jeu de société coopératif les joueurs doivent-ils sauver le monde de quatre maladies mortelles ?",
+          "a": "Pandemic"
+        },
+        {
+          "level": 3,
+          "q": "Quel jeu de société, créé par Klaus Teuber, consiste à coloniser une île en récoltant des ressources ?",
+          "a": "Catan (ou Les Colons de Catane)"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel jeu de société les joueurs doivent-ils faire deviner des mots à l'aide d'images oniriques ?",
+          "a": "Dixit"
+        },
+        {
+          "level": 5,
+          "q": "Quel jeu de société, dont le nom signifie 7 merveilles, se joue en draftant des cartes sur trois âges ?",
+          "a": "7 Wonders"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel jeu de société asymétrique un joueur incarne-t-il un fantôme qui doit faire deviner ses assassins aux autres joueurs (les médiums) ?",
+          "a": "Mysterium"
+        },
+        {
+          "level": 7,
+          "q": "Quel jeu de société de pose d'ouvriers a pour thème le développement agricole au 17ème siècle ?",
+          "a": "Agricola"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel jeu de société les joueurs incarnent-ils des oiseaux qui doivent attirer d'autres oiseaux dans leur réserve naturelle ?",
+          "a": "Wingspan"
+        },
+        {
+          "level": 9,
+          "q": "Quel jeu de société coopératif, très difficile, a pour thème la survie sur une île déserte après un naufrage ?",
+          "a": "Robinson Crusoé : Aventures sur l'Île Maudite"
+        },
+        {
+          "level": 10,
+          "q": "Quel jeu de société, récompensé par l'As d'Or en 2017, consiste à débloquer des cadenas dans un temps imparti (escape game de salon) ?",
+          "a": "Unlock!"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les ustensiles de cuisine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Un fouet sert à mélanger ou battre des ingrédients. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Comment appelle-t-on l'ustensile troué qui sert à égoutter les pâtes ?",
+          "a": "Une passoire"
+        },
+        {
+          "level": 3,
+          "q": "Quel ustensile, souvent en bois ou en plastique, utilise-t-on pour racler le fond des récipients ?",
+          "a": "Une maryse"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on la cuillère à long manche qui sert à servir la soupe ?",
+          "a": "Une louche"
+        },
+        {
+          "level": 5,
+          "q": "Quel ustensile, composé d'un récipient et d'un pilon, sert à broyer des épices ou des herbes ?",
+          "a": "Un mortier"
+        },
+        {
+          "level": 6,
+          "q": "Comment appelle-t-on le couteau de cuisine à lame large et rectangulaire, souvent utilisé en cuisine asiatique ?",
+          "a": "Un couperet (ou hachoir, ou couteau de chef chinois)"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le nom de la petite cuillère spéciale, souvent dentelée, utilisée pour manger des pamplemousses ?",
+          "a": "Une cuillère à pamplemousse"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on la pince qui sert à retirer les arêtes des poissons ?",
+          "a": "Une pince à désarêter"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom de l'ustensile en forme de demi-sphère trouée, utilisé pour passer les sauces ou les bouillons ?",
+          "a": "Un chinois"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on la petite roulette dentelée utilisée pour découper la pâte à ravioli ou à beignets ?",
+          "a": "Une roulette à pâte (ou coupe-pâte, ou roulette à raviolis)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La musique classique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Wolfgang Amadeus Mozart était un compositeur de musique classique.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel compositeur allemand a écrit la célèbre Symphonie n°5 (Pom pom pom pom) ?",
+          "a": "Ludwig van Beethoven"
+        },
+        {
+          "level": 3,
+          "q": "Quel instrument à cordes frottées est le plus petit et le plus aigu de l'orchestre symphonique ?",
+          "a": "Le violon"
+        },
+        {
+          "level": 4,
+          "q": "Quel compositeur italien a composé Les Quatre Saisons ?",
+          "a": "Antonio Vivaldi"
+        },
+        {
+          "level": 5,
+          "q": "Quel compositeur et pianiste polonais est célèbre pour ses Nocturnes et ses Valses ?",
+          "a": "Frédéric Chopin"
+        },
+        {
+          "level": 6,
+          "q": "Quelle oeuvre de Maurice Ravel est célèbre pour son crescendo ininterrompu et sa mélodie répétitive ?",
+          "a": "Le Boléro"
+        },
+        {
+          "level": 7,
+          "q": "Quel compositeur russe a composé le ballet Le Lac des cygnes ?",
+          "a": "Piotr Ilitch Tchaïkovski"
+        },
+        {
+          "level": 8,
+          "q": "Quel compositeur allemand, connu pour ses cantates et ses fugues, a eu 20 enfants ?",
+          "a": "Jean-Sébastien Bach"
+        },
+        {
+          "level": 9,
+          "q": "Quel instrument à vent en bois, au son grave et mélancolique, est souvent associé à Pierre et le Loup pour représenter le grand-père ?",
+          "a": "Le basson"
+        },
+        {
+          "level": 10,
+          "q": "Dans quelle ville autrichienne se déroule chaque année le célèbre Concert du Nouvel An, diffusé dans le monde entier ?",
+          "a": "Vienne"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les grands dictateurs du 20ème siècle",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Adolf Hitler était le dictateur de l'Allemagne nazie. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel dictateur a dirigé l'Union Soviétique de la fin des années 1920 jusqu'à sa mort en 1953 ?",
+          "a": "Joseph Staline"
+        },
+        {
+          "level": 3,
+          "q": "Quel dictateur fasciste a dirigé l'Italie de 1922 à 1943 ?",
+          "a": "Benito Mussolini"
+        },
+        {
+          "level": 4,
+          "q": "Quel général a instauré une dictature en Espagne après la guerre civile (de 1939 à 1975) ?",
+          "a": "Francisco Franco"
+        },
+        {
+          "level": 5,
+          "q": "Quel dirigeant communiste a fondé la République populaire de Chine en 1949 ?",
+          "a": "Mao Zedong"
+        },
+        {
+          "level": 6,
+          "q": "Quel dictateur communiste a dirigé la Roumanie de 1965 jusqu'à son exécution en 1989 ?",
+          "a": "Nicolae Ceaușescu"
+        },
+        {
+          "level": 7,
+          "q": "Quel dictateur a dirigé le Chili de 1973 à 1990 suite à un coup d'État ?",
+          "a": "Augusto Pinochet"
+        },
+        {
+          "level": 8,
+          "q": "Quel dirigeant des Khmers rouges est responsable du génocide cambodgien dans les années 1970 ?",
+          "a": "Pol Pot"
+        },
+        {
+          "level": 9,
+          "q": "Quel dictateur ougandais, au pouvoir dans les années 1970, était tristement célèbre pour sa brutalité et son excentricité ?",
+          "a": "Idi Amin Dada"
+        },
+        {
+          "level": 10,
+          "q": "Quel dictateur a dirigé le Zaïre (actuelle RDC) de 1965 à 1997 ?",
+          "a": "Mobutu Sese Seko"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en fromages italiens ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La mozzarella est souvent utilisée sur les pizzas. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel fromage italien râpé est traditionnellement saupoudré sur les plats de pâtes ?",
+          "a": "Le Parmesan (Parmigiano Reggiano)"
+        },
+        {
+          "level": 3,
+          "q": "Quel fromage frais, très crémeux, est l'ingrédient principal du tiramisu ?",
+          "a": "Le Mascarpone"
+        },
+        {
+          "level": 4,
+          "q": "Quel fromage bleu, souvent crémeux ou piquant, est originaire de la région de Milan ?",
+          "a": "Le Gorgonzola"
+        },
+        {
+          "level": 5,
+          "q": "Quel fromage à pâte filée, souvent en forme de poire ou de goutte d'eau, est parfois fumé ?",
+          "a": "Le Provolone"
+        },
+        {
+          "level": 6,
+          "q": "Quel fromage au lait de brebis, souvent salé et piquant, est un ingrédient clé des pâtes à la carbonara ?",
+          "a": "Le Pecorino (Romano)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle boule de mozzarella, avec un cœur fondant de crème, est originaire des Pouilles ?",
+          "a": "La Burrata"
+        },
+        {
+          "level": 8,
+          "q": "Quel fromage à pâte fraîche, fait à partir du petit-lait récupéré lors de la fabrication d'autres fromages, signifie recuit en italien ?",
+          "a": "La Ricotta"
+        },
+        {
+          "level": 9,
+          "q": "Quel fromage à pâte mi-dure, originaire du Piémont, possède une croûte souvent lavée et une odeur assez forte ?",
+          "a": "Le Taleggio"
+        },
+        {
+          "level": 10,
+          "q": "Quel fromage sarde, souvent appelé fromage qui pourrit, est célèbre pour contenir des larves de mouches vivantes ?",
+          "a": "Le Casu Marzu"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les superstitions",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Passer sous une échelle porterait malheur. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel nombre, associé au vendredi, est réputé porter malheur dans les cultures occidentales ?",
+          "a": "Le 13"
+        },
+        {
+          "level": 3,
+          "q": "Quel objet, s'il est brisé, apporterait 7 ans de malheur ?",
+          "a": "Un miroir"
+        },
+        {
+          "level": 4,
+          "q": "Quel animal noir croisant votre chemin est considéré comme un mauvais présage ?",
+          "a": "Le chat noir"
+        },
+        {
+          "level": 5,
+          "q": "Quel objet à quatre feuilles cherche-t-on dans l'herbe pour avoir de la chance ?",
+          "a": "Le trèfle à quatre feuilles"
+        },
+        {
+          "level": 6,
+          "q": "Toucher quelle matière est censé conjurer le mauvais sort ?",
+          "a": "Le bois"
+        },
+        {
+          "level": 7,
+          "q": "Quel objet en fer, souvent accroché au-dessus des portes, est censé porter bonheur s'il est orienté vers le haut ?",
+          "a": "Le fer à cheval"
+        },
+        {
+          "level": 8,
+          "q": "Ouvrir quel objet à l'intérieur d'une maison est censé attirer la malchance ?",
+          "a": "Un parapluie"
+        },
+        {
+          "level": 9,
+          "q": "En France, marcher dans quoi avec le pied gauche porterait bonheur ?",
+          "a": "Une crotte de chien"
+        },
+        {
+          "level": 10,
+          "q": "Quel chiffre est considéré comme portant malheur en Asie de l'Est (Chine, Japon, Corée) car sa prononciation est proche de celle du mot mort ?",
+          "a": "Le chiffre 4"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie de l'Afrique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "L'Afrique est le deuxième plus grand continent du monde. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus long fleuve d'Afrique (et souvent considéré comme le plus long du monde) ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 3,
+          "q": "Quel grand désert couvre une grande partie de l'Afrique du Nord ?",
+          "a": "Le Sahara"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le point culminant de l'Afrique, situé en Tanzanie ?",
+          "a": "Le Kilimandjaro"
+        },
+        {
+          "level": 5,
+          "q": "Quel océan borde la côte est de l'Afrique ?",
+          "a": "L'océan Indien"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la plus grande île d'Afrique, située au large de sa côte sud-est ?",
+          "a": "Madagascar"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le lac le plus grand d'Afrique et le deuxième plus grand lac d'eau douce du monde ?",
+          "a": "Le lac Victoria"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays d'Afrique est le plus peuplé du continent ?",
+          "a": "Le Nigeria"
+        },
+        {
+          "level": 9,
+          "q": "Quel fleuve d'Afrique centrale possède le deuxième plus grand bassin versant du monde après l'Amazone ?",
+          "a": "Le Congo (ou fleuve Congo)"
+        },
+        {
+          "level": 10,
+          "q": "Quel pays africain est situé à la pointe sud du continent et possède trois capitales (Pretoria, Le Cap, Bloemfontein) ?",
+          "a": "L'Afrique du Sud"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La prohibition aux États-Unis",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La prohibition interdisait la vente et la consommation d'alcool aux États-Unis. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Dans quelle décennie du 20ème siècle la prohibition a-t-elle commencé ?",
+          "a": "Les années 1920 (1920 exactement)"
+        },
+        {
+          "level": 3,
+          "q": "Quel célèbre gangster de Chicago a bâti son empire sur le trafic d'alcool pendant la prohibition ?",
+          "a": "Al Capone"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelait-on les bars clandestins où l'on servait de l'alcool pendant la prohibition ?",
+          "a": "Les speakeasies"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelait-on les contrebandiers qui transportaient illégalement de l'alcool, souvent dissimulé dans leurs bottes ?",
+          "a": "Les bootleggers"
+        },
+        {
+          "level": 6,
+          "q": "Quel amendement de la Constitution américaine a instauré la prohibition en 1920 ?",
+          "a": "Le 18ème amendement"
+        },
+        {
+          "level": 7,
+          "q": "Quel amendement de la Constitution américaine a abrogé (annulé) la prohibition en 1933 ?",
+          "a": "Le 21ème amendement"
+        },
+        {
+          "level": 8,
+          "q": "Quel agent incorruptible du Trésor américain, avec son équipe Les Incorruptibles, a lutté contre Al Capone ?",
+          "a": "Eliot Ness"
+        },
+        {
+          "level": 9,
+          "q": "Quel président américain a signé le Volstead Act, qui définissait les modalités d'application de la prohibition ?",
+          "a": "Woodrow Wilson (qui y avait mis son veto, mais le Congrès est passé outre)"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelait-on l'alcool frelaté et très fort, souvent fabriqué clandestinement dans des baignoires ?",
+          "a": "Le bathtub gin (ou moonshine)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les films d'animation Pixar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans Toy Story, le shérif s'appelle Woody. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel poisson-clown, père de Nemo, part à sa recherche à travers l'océan ?",
+          "a": "Marin"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le robot compacteur de déchets qui tombe amoureux d'EVE ?",
+          "a": "WALL-E"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom de la petite fille monstrueusement mignonne dans Monstres et Cie ?",
+          "a": "Bou"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel film Pixar suit-on les aventures de Joie, Tristesse, Colère, Peur et Dégoût ?",
+          "a": "Vice-Versa"
+        },
+        {
+          "level": 6,
+          "q": "Quel rat parisien rêve de devenir un grand chef cuisinier ?",
+          "a": "Rémy (dans Ratatouille)"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle le vieux monsieur qui attache des milliers de ballons à sa maison pour s'envoler ?",
+          "a": "Carl Fredricksen (dans Là-haut)"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel film Pixar un jeune musicien nommé Miguel voyage-t-il au Pays des Morts ?",
+          "a": "Coco"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom du super-vilain, ancien fan de M. Indestructible, dans le premier film Les Indestructibles ?",
+          "a": "Syndrome (ou Buddy Pine)"
+        },
+        {
+          "level": 10,
+          "q": "Dans le film Soul, quel est le numéro de l'âme cynique et rebelle que Joe Gardner doit aider ?",
+          "a": "22"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses pointues",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Une punaise de bureau a un côté pointu et un côté plat. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel objet pointu, souvent associé au fil, est utilisé pour coudre ?",
+          "a": "Une aiguille"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la partie pointue et piquante d'une rose ou d'un cactus ?",
+          "a": "Une épine"
+        },
+        {
+          "level": 4,
+          "q": "Quel outil pointu est utilisé en géométrie pour tracer des cercles ?",
+          "a": "Un compas"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on le petit objet pointu, souvent en métal ou en plastique, utilisé pour faire tenir les cheveux ?",
+          "a": "Une épingle (à cheveux)"
+        },
+        {
+          "level": 6,
+          "q": "Quel objet médical, composé d'un cylindre et d'une aiguille creuse, sert à faire des injections ?",
+          "a": "Une seringue"
+        },
+        {
+          "level": 7,
+          "q": "Quel outil pointu, souvent utilisé avec un marteau, sert à percer des trous ou à tailler la pierre ?",
+          "a": "Un burin"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on la partie pointue à l'extrémité de la lame d'un couteau ou d'une épée ?",
+          "a": "La pointe"
+        },
+        {
+          "level": 9,
+          "q": "Quel outil de menuiserie, avec une pointe en métal, sert à marquer le bois avant de percer ?",
+          "a": "Une pointeau (ou une vrille)"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on la pièce pointue en métal fixée sous les chaussures d'athlétisme pour améliorer l'adhérence ?",
+          "a": "Une pointe (ou un crampon)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Le football (règles et histoire)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Au football, une équipe est composée de 11 joueurs sur le terrain. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "De quelle couleur est le carton que l'arbitre sort pour expulser un joueur ?",
+          "a": "Rouge"
+        },
+        {
+          "level": 3,
+          "q": "Combien de temps dure un match de football standard (sans prolongations) ?",
+          "a": "90 minutes (2 mi-temps de 45 minutes)"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel pays le football moderne, avec ses règles codifiées, a-t-il été inventé au 19ème siècle ?",
+          "a": "L'Angleterre (Royaume-Uni)"
+        },
+        {
+          "level": 5,
+          "q": "Que signifie l'acronyme FIFA ?",
+          "a": "Fédération Internationale de Football Association"
+        },
+        {
+          "level": 6,
+          "q": "Combien de Coupes du Monde l'équipe de France masculine a-t-elle remportées (jusqu'en 2023) ?",
+          "a": "2 (en 1998 et 2018)"
+        },
+        {
+          "level": 7,
+          "q": "Quel joueur brésilien, surnommé le Roi, a remporté trois Coupes du Monde ?",
+          "a": "Pelé"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la distance exacte entre le point de penalty et la ligne de but ?",
+          "a": "11 mètres"
+        },
+        {
+          "level": 9,
+          "q": "Quel pays a remporté la toute première Coupe du Monde de football en 1930 ?",
+          "a": "L'Uruguay"
+        },
+        {
+          "level": 10,
+          "q": "En quelle année a été introduite la règle du hors-jeu dans les lois du jeu ?",
+          "a": "1863 (dès les premières règles officielles)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La guerre du Viêt Nam",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La guerre du Viêt Nam s'est terminée par une victoire des États-Unis. Vrai ou faux ?",
+          "a": "Faux (victoire du Nord-Viêt Nam / Viet Cong)"
+        },
+        {
+          "level": 2,
+          "q": "Quelle superpuissance mondiale a soutenu militairement et financièrement le Sud-Viêt Nam ?",
+          "a": "Les États-Unis"
+        },
+        {
+          "level": 3,
+          "q": "Quel dirigeant communiste a fondé le parti communiste vietnamien et a dirigé le Nord-Viêt Nam ?",
+          "a": "Hô Chi Minh"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelait la guérilla communiste du Sud-Viêt Nam, soutenue par le Nord ?",
+          "a": "Le Viet Cong (ou Front national de libération du Sud Viêt Nam)"
+        },
+        {
+          "level": 5,
+          "q": "Quel produit chimique défoliant, tristement célèbre, a été massivement utilisé par l'armée américaine ?",
+          "a": "L'agent orange"
+        },
+        {
+          "level": 6,
+          "q": "Sous la présidence de quel président américain le désengagement et le retrait des troupes américaines ont-ils été initiés (la vietnamisation) ?",
+          "a": "Richard Nixon"
+        },
+        {
+          "level": 7,
+          "q": "En quelle année la ville de Saïgon est-elle tombée aux mains des communistes, marquant la fin de la guerre ?",
+          "a": "1975"
+        },
+        {
+          "level": 8,
+          "q": "Quelle offensive militaire surprise, lancée par le Viet Cong en 1968, a marqué un tournant décisif dans l'opinion publique américaine ?",
+          "a": "L'offensive du Tết"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom du réseau de pistes clandestines utilisé par le Nord-Viêt Nam pour ravitailler le Viet Cong au Sud ?",
+          "a": "La piste Hô Chi Minh"
+        },
+        {
+          "level": 10,
+          "q": "Quel incident, survenu en 1964 dans le golfe du Tonkin, a servi de prétexte à l'engagement militaire massif des États-Unis ?",
+          "a": "L'incident du golfe du Tonkin (ou les incidents)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Le cinéma français",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Le Festival de Cannes a lieu en France.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel acteur français incarne Obélix dans plusieurs films, notamment Mission Cléopâtre ?",
+          "a": "Gérard Depardieu"
+        },
+        {
+          "level": 3,
+          "q": "Quel film français avec Omar Sy et François Cluzet a connu un immense succès en 2011 ?",
+          "a": "Intouchables"
+        },
+        {
+          "level": 4,
+          "q": "Quelle récompense est l'équivalent français des Oscars ?",
+          "a": "Les César"
+        },
+        {
+          "level": 5,
+          "q": "Quel réalisateur français a dirigé Le Fabuleux Destin d'Amélie Poulain ?",
+          "a": "Jean-Pierre Jeunet"
+        },
+        {
+          "level": 6,
+          "q": "Quelle actrice française a remporté un Oscar pour son rôle d'Édith Piaf dans La Môme ?",
+          "a": "Marion Cotillard"
+        },
+        {
+          "level": 7,
+          "q": "Quel acteur comique français était la star des films Le Gendarme de Saint-Tropez et La Grande Vadrouille ?",
+          "a": "Louis de Funès"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le mouvement cinématographique français des années 1950 et 1960 avec des réalisateurs comme François Truffaut et Jean-Luc Godard ?",
+          "a": "La Nouvelle Vague"
+        },
+        {
+          "level": 9,
+          "q": "Quel film de Luc Besson, sorti en 1988, raconte l'histoire de plongeurs en apnée ?",
+          "a": "Le Grand Bleu"
+        },
+        {
+          "level": 10,
+          "q": "Quelle réalisatrice française a remporté la Palme d'or en 2021 pour son film Titane ?",
+          "a": "Julia Ducournau"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La mafia italienne et italo-américaine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La mafia sicilienne est aussi connue sous le nom de Cosa Nostra. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel réalisateur a mis en scène la célèbre trilogie Le Parrain ?",
+          "a": "Francis Ford Coppola"
+        },
+        {
+          "level": 3,
+          "q": "Quel célèbre gangster italo-américain, surnommé Scarface, a dominé la mafia de Chicago dans les années 1920 ?",
+          "a": "Al Capone"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on la loi du silence imposée par la mafia ?",
+          "a": "L'omerta"
+        },
+        {
+          "level": 5,
+          "q": "Quel nom porte la puissante mafia originaire de la région de la Campanie (autour de Naples) ?",
+          "a": "La Camorra"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom de la mafia originaire de la région de la Calabre, considérée aujourd'hui comme l'une des plus puissantes au monde ?",
+          "a": "La Ndrangheta"
+        },
+        {
+          "level": 7,
+          "q": "Quel juge italien antimafia a été assassiné dans un attentat à la bombe en 1992 ?",
+          "a": "Giovanni Falcone (ou Paolo Borsellino)"
+        },
+        {
+          "level": 8,
+          "q": "Dans le film Les Affranchis de Martin Scorsese, quel acteur joue le rôle de Jimmy Conway ?",
+          "a": "Robert De Niro"
+        },
+        {
+          "level": 9,
+          "q": "Quel était le surnom de John Gotti, le célèbre parrain de la famille Gambino à New York ?",
+          "a": "Teflon Don (ou Dapper Don)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le grand procès antimafia qui s'est tenu à Palerme de 1986 à 1987 ?",
+          "a": "Le Maxi-Procès (Maxiprocesso)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Le tennis de table",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le tennis de table est aussi couramment appelé ping-pong. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Combien de points faut-il marquer pour remporter un set (ou une manche) en compétition officielle ?",
+          "a": "11 points"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on l'objet utilisé par les joueurs pour frapper la balle ?",
+          "a": "Une raquette"
+        },
+        {
+          "level": 4,
+          "q": "De quelle couleur sont traditionnellement les deux faces du revêtement de la raquette ?",
+          "a": "Rouge et noire"
+        },
+        {
+          "level": 5,
+          "q": "Quel pays domine très largement le tennis de table mondial depuis plusieurs décennies ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 6,
+          "q": "Lors du service, la balle doit-elle d'abord rebondir dans le camp du serveur ou dans celui du receveur ?",
+          "a": "Dans le camp du serveur"
+        },
+        {
+          "level": 7,
+          "q": "Quel joueur suédois est considéré comme l'un des plus grands joueurs de l'histoire et a tenu tête aux Chinois dans les années 1990 ?",
+          "a": "Jan-Ove Waldner"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année le tennis de table est-il devenu un sport olympique ?",
+          "a": "1988 (à Séoul)"
+        },
+        {
+          "level": 9,
+          "q": "Quel joueur français a remporté la médaille de bronze en simple aux Jeux Olympiques de Paris en 2024 ?",
+          "a": "Félix Lebrun"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le diamètre réglementaire officiel de la balle de tennis de table (en millimètres) depuis 2000 ?",
+          "a": "40 mm"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les ustensiles de cuisine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Un fouet sert à mélanger ou battre des ingrédients. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Comment appelle-t-on l'ustensile troué qui sert à égoutter les pâtes ?",
+          "a": "Une passoire"
+        },
+        {
+          "level": 3,
+          "q": "Quel ustensile, souvent en bois ou en plastique, utilise-t-on pour racler le fond des récipients ?",
+          "a": "Une maryse"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on la cuillère à long manche qui sert à servir la soupe ?",
+          "a": "Une louche"
+        },
+        {
+          "level": 5,
+          "q": "Quel ustensile, composé d'un récipient et d'un pilon, sert à broyer des épices ou des herbes ?",
+          "a": "Un mortier"
+        },
+        {
+          "level": 6,
+          "q": "Comment appelle-t-on le couteau de cuisine à lame large et rectangulaire, souvent utilisé en cuisine asiatique ?",
+          "a": "Un couperet (ou hachoir, ou couteau de chef chinois)"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le nom de la petite cuillère spéciale, souvent dentelée, utilisée pour manger des pamplemousses ?",
+          "a": "Une cuillère à pamplemousse"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on la pince qui sert à retirer les arêtes des poissons ?",
+          "a": "Une pince à désarêter"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom de l'ustensile en forme de demi-sphère trouée, utilisé pour passer les sauces ou les bouillons ?",
+          "a": "Un chinois"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on la petite roulette dentelée utilisée pour découper la pâte à ravioli ou à beignets ?",
+          "a": "Une roulette à pâte (ou coupe-pâte, ou roulette à raviolis)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses rondes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Une roue de vélo est ronde. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel objet rond, souvent en cuir ou en plastique, utilise-t-on pour jouer au football ?",
+          "a": "Un ballon"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la petite galette de viande hachée ronde, généralement placée dans un hamburger ?",
+          "a": "Un steak haché (ou patty)"
+        },
+        {
+          "level": 4,
+          "q": "Quel corps céleste rond, satellite naturel de la Terre, brille la nuit ?",
+          "a": "La Lune"
+        },
+        {
+          "level": 5,
+          "q": "Quel instrument de musique rond, souvent muni de cymbalettes, est frappé avec la main ?",
+          "a": "Un tambourin"
+        },
+        {
+          "level": 6,
+          "q": "Comment appelle-t-on la pièce ronde en bois ou en plastique, utilisée dans les jeux de dames ou de backgammon ?",
+          "a": "Un pion"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le nom de la bouée ronde et rouge, souvent utilisée par les sauveteurs en mer (rendue célèbre par Alerte à Malibu) ?",
+          "a": "Une bouée tube (ou bouée de sauvetage)"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel sport utilise-t-on un palet rond et lourd, appelé pierre, que l'on fait glisser sur la glace ?",
+          "a": "Le curling"
+        },
+        {
+          "level": 9,
+          "q": "Comment appelle-t-on le petit objet rond et plat, souvent en nacre ou en plastique, utilisé pour fermer un vêtement ?",
+          "a": "Un bouton"
+        },
+        {
+          "level": 10,
+          "q": "Quel objet rond, percé d'un trou au milieu, est utilisé en musculation pour ajouter du poids sur une barre ?",
+          "a": "Un disque (ou poids)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les grandes batailles historiques",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La bataille de Waterloo a marqué la défaite définitive de Napoléon. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quelle bataille décisive de 1515 a été remportée par le roi de France François Ier ?",
+          "a": "La bataille de Marignan"
+        },
+        {
+          "level": 3,
+          "q": "Dans quelle ville russe a eu lieu la plus grande et la plus sanglante bataille de la Seconde Guerre mondiale (1942-1943) ?",
+          "a": "Stalingrad"
+        },
+        {
+          "level": 4,
+          "q": "Quel célèbre chef gaulois a été vaincu par Jules César lors du siège d'Alésia en 52 av. J.-C. ?",
+          "a": "Vercingétorix"
+        },
+        {
+          "level": 5,
+          "q": "Quelle bataille navale de 1805 a vu la victoire de la flotte britannique (amiral Nelson) sur la flotte franco-espagnole ?",
+          "a": "La bataille de Trafalgar"
+        },
+        {
+          "level": 6,
+          "q": "Quelle bataille de 1066 a permis à Guillaume le Conquérant, duc de Normandie, de devenir roi d'Angleterre ?",
+          "a": "La bataille d'Hastings"
+        },
+        {
+          "level": 7,
+          "q": "Quelle longue et meurtrière bataille de la Première Guerre mondiale, symbole de la guerre de tranchées, s'est déroulée en 1916 ?",
+          "a": "La bataille de Verdun"
+        },
+        {
+          "level": 8,
+          "q": "Quelle bataille de 732 a vu l'armée des Francs (dirigée par Charles Martel) arrêter la progression des troupes omeyyades ?",
+          "a": "La bataille de Poitiers"
+        },
+        {
+          "level": 9,
+          "q": "Quelle bataille de 1815 a marqué la défaite finale de l'empereur français Napoléon Ier ?",
+          "a": "La bataille de Waterloo"
+        },
+        {
+          "level": 10,
+          "q": "Quelle bataille décisive de la guerre de Sécession (1863) a marqué un tournant en faveur de l'Union (Nord) ?",
+          "a": "La bataille de Gettysburg"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les grands scandales politiques français",
+      "questions": [
+        {
+          "level": 1,
+          "q": "L'affaire Cahuzac concerne un ancien ministre du Budget ayant caché un compte bancaire en Suisse. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel scandale de corruption massif a éclaboussé la construction du canal de Panama à la fin du 19ème siècle ?",
+          "a": "Le scandale de Panama"
+        },
+        {
+          "level": 3,
+          "q": "Quelle célèbre affaire d'espionnage et d'antisémitisme a profondément divisé la France de 1894 à 1906 ?",
+          "a": "L'affaire Dreyfus"
+        },
+        {
+          "level": 4,
+          "q": "Quel président français a dû démissionner en 1924 suite à une campagne menée par le Cartel des gauches (Affaire Millerand) ?",
+          "a": "Alexandre Millerand"
+        },
+        {
+          "level": 5,
+          "q": "Quel scandale politico-financier des années 1930 a impliqué un escroc du nom d'Alexandre Stavisky et a conduit aux émeutes de 1934 ?",
+          "a": "L'affaire Stavisky"
+        },
+        {
+          "level": 6,
+          "q": "Quelle affaire d'écoutes téléphoniques illégales, commanditées par l'Élysée sous François Mitterrand, a été révélée en 1993 ?",
+          "a": "L'affaire des écoutes de l'Élysée"
+        },
+        {
+          "level": 7,
+          "q": "Quel ancien Premier ministre a été condamné dans l'affaire des emplois fictifs de la mairie de Paris (Affaire Juppé) ?",
+          "a": "Alain Juppé"
+        },
+        {
+          "level": 8,
+          "q": "Quelle affaire de financement occulte de parti politique a impliqué l'entreprise pétrolière nationale dans les années 1990 ?",
+          "a": "L'affaire Elf"
+        },
+        {
+          "level": 9,
+          "q": "Quel scandale sanitaire des années 1980 et 1990 concerne la contamination de patients par le virus du SIDA via des transfusions ?",
+          "a": "L'affaire du sang contaminé"
+        },
+        {
+          "level": 10,
+          "q": "Quelle affaire, impliquant de fausses listes de comptes bancaires (Clearstream), a opposé Nicolas Sarkozy et Dominique de Villepin ?",
+          "a": "L'affaire Clearstream (2)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en jeux de hasard ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Au Loto, il faut choisir des numéros pour tenter de gagner. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel jeu de casino, symbolisé par un cylindre tournant, permet de parier sur le rouge ou le noir ?",
+          "a": "La roulette"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel jeu de cartes, populaire dans les casinos, le but est de s'approcher de 21 sans le dépasser ?",
+          "a": "Le Blackjack"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on les machines de casino avec des rouleaux qui tournent (souvent avec des symboles de fruits) ?",
+          "a": "Les machines à sous (ou bandits manchots)"
+        },
+        {
+          "level": 5,
+          "q": "Au craps, combien de dés sont utilisés par le joueur qui lance (le shooter) ?",
+          "a": "2 dés"
+        },
+        {
+          "level": 6,
+          "q": "Quel jeu de loterie européen réunit plusieurs pays et propose des cagnottes astronomiques ?",
+          "a": "L'EuroMillions"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel jeu de casino distribue-t-on les cartes à partir d'un sabot, et les joueurs parient-ils sur le Ponte ou la Banque ?",
+          "a": "Le Baccara (ou Punto Banco)"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le jeu d'origine asiatique, joué avec trois dés secoués dans un bol couvert ?",
+          "a": "Le Sic Bo"
+        },
+        {
+          "level": 9,
+          "q": "Au Keno, combien de numéros un joueur peut-il cocher au maximum sur une grille standard (en France) ?",
+          "a": "10 numéros"
+        },
+        {
+          "level": 10,
+          "q": "Dans le jeu de la roulette française, combien y a-t-il de numéros au total (en incluant le zéro) ?",
+          "a": "37 (de 0 à 36)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la forêt",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans la forêt, on trouve généralement des arbres. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel petit animal roux, doté d'une grande queue touffue, vit souvent dans les arbres ?",
+          "a": "L'écureuil"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on le fruit du chêne, dont raffolent les écureuils et les sangliers ?",
+          "a": "Le gland"
+        },
+        {
+          "level": 4,
+          "q": "Quel oiseau nocturne, souvent associé à la sagesse, peuple les forêts ?",
+          "a": "La chouette (ou le hibou)"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle la couche de feuilles mortes en décomposition qui recouvre le sol de la forêt ?",
+          "a": "La litière"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom de l'arbre majestueux, souvent appelé le roi de la forêt en Europe ?",
+          "a": "Le chêne"
+        },
+        {
+          "level": 7,
+          "q": "Quel petit mammifère piquant, qui se met en boule pour se protéger, vit souvent à la lisière des bois ?",
+          "a": "Le hérisson"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on la science qui étudie les forêts et leur gestion ?",
+          "a": "La sylviculture"
+        },
+        {
+          "level": 9,
+          "q": "Quel champignon rouge à pois blancs, très toxique, est célèbre dans les contes de fées et pousse souvent dans les sous-bois ?",
+          "a": "L'amanite tue-mouches"
+        },
+        {
+          "level": 10,
+          "q": "Quel oiseau, au bec puissant, tape contre les troncs d'arbres pour trouver des insectes ?",
+          "a": "Le pic vert (ou pic épeiche)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Rome antique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Jules César était un célèbre dirigeant de la Rome antique. Vrai ou faux ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Selon la légende, quels frères jumeaux, nourris par une louve, ont fondé Rome ?",
+          "a": "Romulus et Rémus"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelait l'amphithéâtre de Rome où se déroulaient les combats de gladiateurs ?",
+          "a": "Le Colisée"
+        },
+        {
+          "level": 4,
+          "q": "Quelle était la langue officielle parlée dans l'Empire romain ?",
+          "a": "Le latin"
+        },
+        {
+          "level": 5,
+          "q": "Qui a été le premier empereur de Rome (après la période de la République) ?",
+          "a": "Auguste (Octave)"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelait la tenue vestimentaire masculine typique, portée pardessus la tunique, par les citoyens romains ?",
+          "a": "La toge"
+        },
+        {
+          "level": 7,
+          "q": "Quel dieu romain, roi des dieux, est l'équivalent du dieu grec Zeus ?",
+          "a": "Jupiter"
+        },
+        {
+          "level": 8,
+          "q": "Quel général carthaginois a traversé les Alpes avec des éléphants pour attaquer Rome ?",
+          "a": "Hannibal (Barca)"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelait le système de chauffage par le sol utilisé dans les thermes romains ?",
+          "a": "L'hypocauste"
+        },
+        {
+          "level": 10,
+          "q": "Quel empereur romain aurait, selon la légende, incendié Rome en 64 apr. J.-C. pour la reconstruire à son goût ?",
+          "a": "Néron"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'impressionnisme",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel peintre est considéré comme le père de l'impressionnisme ?",
+          "a": "Claude Monet."
+        },
+        {
+          "level": 2,
+          "q": "Quel est le nom du célèbre musée parisien qui abrite la plus grande collection d'œuvres impressionnistes ?",
+          "a": "Le musée d'Orsay."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : L'impressionnisme est né en Italie.",
+          "a": "Faux (en France)."
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le tableau de Claude Monet qui a donné son nom au mouvement ?",
+          "a": "Impression, soleil levant."
+        },
+        {
+          "level": 5,
+          "q": "Quel peintre impressionniste est célèbre pour ses tableaux de danseuses de ballet ?",
+          "a": "Edgar Degas."
+        },
+        {
+          "level": 6,
+          "q": "Quel artiste est connu pour ses peintures de la montagne Sainte-Victoire ?",
+          "a": "Paul Cézanne (bien qu'il soit souvent classé comme post-impressionniste)."
+        },
+        {
+          "level": 7,
+          "q": "Quel peintre a réalisé « Le Déjeuner des canotiers » ?",
+          "a": "Auguste Renoir."
+        },
+        {
+          "level": 8,
+          "q": "Quel est le prénom de la femme peintre impressionniste Morisot ?",
+          "a": "Berthe."
+        },
+        {
+          "level": 9,
+          "q": "Quel peintre impressionniste a passé les dernières années de sa vie à Tahiti ?",
+          "a": "Paul Gauguin (bien qu'il soit aussi considéré comme post-impressionniste)."
+        },
+        {
+          "level": 10,
+          "q": "Quel peintre, proche des impressionnistes, est célèbre pour ses affiches du Moulin Rouge ?",
+          "a": "Henri de Toulouse-Lautrec."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les armes à feu",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Que signifie l'acronyme « AK » dans AK-47 ?",
+          "a": "Avtomat Kalashnikova."
+        },
+        {
+          "level": 2,
+          "q": "Quel pays est le plus grand fabricant et exportateur d'armes à feu au monde ?",
+          "a": "Les États-Unis."
+        },
+        {
+          "level": 3,
+          "q": "Quel est le nom du fusil d'assaut standard de l'armée américaine depuis les années 1960 ?",
+          "a": "Le M16 (ou ses variantes comme le M4)."
+        },
+        {
+          "level": 4,
+          "q": "Quelle célèbre marque d'armes à feu a créé le modèle 1911 ?",
+          "a": "Colt."
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on la partie de l'arme qui contient les munitions avant qu'elles ne soient chargées dans la chambre ?",
+          "a": "Le chargeur."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom du pistolet semi-automatique autrichien largement utilisé par les forces de l'ordre ?",
+          "a": "Le Glock."
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la différence principale entre un fusil d'assaut et un fusil de précision ?",
+          "a": "Le fusil d'assaut est conçu pour le tir automatique ou en rafale à courte et moyenne portée, tandis que le fusil de précision est conçu pour le tir au coup par coup à longue portée."
+        },
+        {
+          "level": 8,
+          "q": "Quel pays est connu pour avoir inventé la poudre à canon ?",
+          "a": "La Chine."
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom de la première mitrailleuse véritablement automatique, inventée en 1884 ?",
+          "a": "La mitrailleuse Maxim."
+        },
+        {
+          "level": 10,
+          "q": "Quel est le calibre standard de l'OTAN pour les fusils d'assaut ?",
+          "a": "Le 5,56x45 mm OTAN."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en fromages français ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fromage est célèbre pour ses trous ?",
+          "a": "L'Emmental (ou le Gruyère français)."
+        },
+        {
+          "level": 2,
+          "q": "Quelle région est le berceau du Camembert ?",
+          "a": "La Normandie."
+        },
+        {
+          "level": 3,
+          "q": "Quel fromage bleu, souvent appelé le roi des fromages, est originaire de l'Aveyron ?",
+          "a": "Le Roquefort."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Le Brie est un fromage à pâte dure.",
+          "a": "Faux (c'est un fromage à pâte molle)."
+        },
+        {
+          "level": 5,
+          "q": "Quel fromage est traditionnellement utilisé dans la tartiflette ?",
+          "a": "Le Reblochon."
+        },
+        {
+          "level": 6,
+          "q": "Lequel de ces fromages est à croûte lavée : le Munster ou le Beaufort ?",
+          "a": "Le Munster."
+        },
+        {
+          "level": 7,
+          "q": "Quel fromage de chèvre en forme de petit palet est originaire de la région de la Loire ?",
+          "a": "Le Crottin de Chavignol."
+        },
+        {
+          "level": 8,
+          "q": "Quel fromage à pâte pressée non cuite est originaire du Cantal et porte le même nom que le département ?",
+          "a": "Le Cantal."
+        },
+        {
+          "level": 9,
+          "q": "Quel fromage, souvent associé à la fondue savoyarde, est produit en Savoie et en Haute-Savoie ?",
+          "a": "Le Beaufort."
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom du fromage corse au lait de brebis ou de chèvre, réputé pour son odeur forte ?",
+          "a": "Le Brocciu (ou le Casu Marzu, bien que ce dernier soit originaire de Sardaigne, il est souvent associé à la Corse)."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la maison",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle pièce de la maison est généralement dédiée à la préparation des repas ?",
+          "a": "La cuisine."
+        },
+        {
+          "level": 2,
+          "q": "Quel appareil électroménager est utilisé pour laver la vaisselle de manière automatique ?",
+          "a": "Le lave-vaisselle."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Les oreillers sont principalement utilisés dans la salle de bain.",
+          "a": "Faux (dans la chambre)."
+        },
+        {
+          "level": 4,
+          "q": "Quel objet, souvent situé dans l'entrée, sert à suspendre les manteaux ?",
+          "a": "Le porte-manteau."
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la fonction principale d'un paillasson ?",
+          "a": "S'essuyer les pieds avant d'entrer."
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle la pièce où l'on trouve généralement un canapé et une télévision ?",
+          "a": "Le salon (ou la salle de séjour)."
+        },
+        {
+          "level": 7,
+          "q": "Quel objet, souvent situé dans le salon, sert à poser des tasses et des magazines ?",
+          "a": "La table basse."
+        },
+        {
+          "level": 8,
+          "q": "Quel appareil électroménager est utilisé pour aspirer la poussière sur les sols ?",
+          "a": "L'aspirateur."
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la fonction principale d'une table de nuit ?",
+          "a": "Poser des objets à côté du lit (lampe, livre, réveil)."
+        },
+        {
+          "level": 10,
+          "q": "Quel objet, souvent situé dans la salle de bain, sert à se regarder ?",
+          "a": "Le miroir."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de la médecine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel médecin grec de l'Antiquité est considéré comme le « père de la médecine » ?",
+          "a": "Hippocrate."
+        },
+        {
+          "level": 2,
+          "q": "Quel scientifique français a développé le premier vaccin contre la rage en 1885 ?",
+          "a": "Louis Pasteur."
+        },
+        {
+          "level": 3,
+          "q": "Quelle maladie infectieuse, autrefois mortelle, a été éradiquée dans le monde en 1980 grâce à la vaccination ?",
+          "a": "La variole."
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom du médecin écossais qui a inventé le stéthoscope au XIXe siècle ?",
+          "a": "René Laennec (il était français, l'énoncé contient une erreur, René Laennec est breton)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle avancée médicale majeure, découverte par Alexander Fleming en 1928, a révolutionné le traitement des infections bactériennes ?",
+          "a": "La pénicilline."
+        },
+        {
+          "level": 6,
+          "q": "Quel médecin britannique a été un pionnier de la vaccination en utilisant le virus de la variole de la vache (vaccine) ?",
+          "a": "Edward Jenner."
+        },
+        {
+          "level": 7,
+          "q": "Quelle femme scientifique a remporté deux prix Nobel pour ses travaux sur la radioactivité, ayant des applications médicales importantes ?",
+          "a": "Marie Curie."
+        },
+        {
+          "level": 8,
+          "q": "Quel chirurgien sud-africain a réalisé la première transplantation cardiaque humaine réussie en 1967 ?",
+          "a": "Christiaan Barnard."
+        },
+        {
+          "level": 9,
+          "q": "Quel terme désigne la pratique ancienne consistant à percer un trou dans le crâne pour traiter diverses affections ?",
+          "a": "La trépanation."
+        },
+        {
+          "level": 10,
+          "q": "Quelle organisation internationale, fondée en 1948, a pour objectif d'amener tous les peuples au niveau de santé le plus élevé possible ?",
+          "a": "L'Organisation mondiale de la santé (OMS)."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les poisons et venins",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le nom du serpent le plus venimeux du monde, que l'on trouve en Australie ?",
+          "a": "Le Taïpan du désert."
+        },
+        {
+          "level": 2,
+          "q": "Quelle plante, célèbre pour avoir tué Socrate, produit un poison appelé coniine ?",
+          "a": "La ciguë."
+        },
+        {
+          "level": 3,
+          "q": "Quel élément chimique, de symbole As, a été historiquement utilisé comme poison dans l'Empire romain ?",
+          "a": "L'arsenic."
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom du poison célèbre extrait du ricin ?",
+          "a": "La ricine."
+        },
+        {
+          "level": 5,
+          "q": "Quel poisson, considéré comme un mets de luxe au Japon, peut être mortel s'il n'est pas préparé correctement en raison de sa tétrodotoxine ?",
+          "a": "Le fugu."
+        },
+        {
+          "level": 6,
+          "q": "Quelle araignée, reconnaissable à son sablier rouge sur l'abdomen, possède un venin très puissant ?",
+          "a": "La veuve noire."
+        },
+        {
+          "level": 7,
+          "q": "Quel gaz inodore et incolore est appelé le « tueur silencieux » ?",
+          "a": "Le monoxyde de carbone."
+        },
+        {
+          "level": 8,
+          "q": "Quel animal marin, souvent trouvé en Australie, possède un venin capable de tuer un être humain en quelques minutes ?",
+          "a": "La cuboméduse (ou guêpe de mer)."
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom de la toxine produite par la grenouille à flèches empoisonnées d'Amérique du Sud ?",
+          "a": "La batrachotoxine."
+        },
+        {
+          "level": 10,
+          "q": "Quel est l'antidote spécifique administré en cas d'empoisonnement au cyanure ?",
+          "a": "L'hydroxocobalamine (ou vitamine B12a) et le nitrite d'amyle/thiosulfate de sodium."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les cocktails classiques",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel cocktail est fait à base de rhum, menthe, citron vert et eau gazeuse ?",
+          "a": "Le Mojito."
+        },
+        {
+          "level": 2,
+          "q": "Quel ingrédient principal compose une Margarita, avec du Cointreau et du jus de citron vert ?",
+          "a": "La tequila."
+        },
+        {
+          "level": 3,
+          "q": "Quel cocktail italien est composé de Prosecco, d'Aperol et d'eau gazeuse ?",
+          "a": "Le Spritz (ou Aperol Spritz)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : Le Cosmopolitan contient de la vodka.",
+          "a": "Vrai."
+        },
+        {
+          "level": 5,
+          "q": "Quel cocktail cubain est fait avec du rhum, du cola et du jus de citron vert ?",
+          "a": "Le Cuba Libre."
+        },
+        {
+          "level": 6,
+          "q": "Quel cocktail classique est composé de gin, de vermouth sec et est souvent garni d'une olive ?",
+          "a": "Le Martini (ou Dry Martini)."
+        },
+        {
+          "level": 7,
+          "q": "Quel ingrédient donne sa couleur rouge au cocktail Negroni ?",
+          "a": "Le Campari."
+        },
+        {
+          "level": 8,
+          "q": "Quel cocktail brésilien est composé de rhum, de crème de coco et de jus d'ananas ?",
+          "a": "La Piña Colada (originaire de Porto Rico, mais populaire au Brésil, l'énoncé contient une petite erreur)."
+        },
+        {
+          "level": 9,
+          "q": "Quel cocktail à base de bourbon, de jus de citron et de sirop de sucre est souvent garni d'une cerise au marasquin et d'une tranche d'orange ?",
+          "a": "Le Whiskey Sour."
+        },
+        {
+          "level": 10,
+          "q": "Quel cocktail est composé de gin, de jus de citron, de sirop de sucre et de mûre (liqueur de mûre) ?",
+          "a": "Le Bramble."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses qui puent",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal noir et blanc, souvent trouvé en Amérique du Nord, est célèbre pour son odeur nauséabonde ?",
+          "a": "La mouffette (ou sconse)."
+        },
+        {
+          "level": 2,
+          "q": "Quel légume, souvent utilisé en cuisine pour repousser les vampires, peut donner une mauvaise haleine ?",
+          "a": "L'ail."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Le durian est un fruit connu pour son odeur agréable.",
+          "a": "Faux (il est connu pour son odeur très forte et souvent jugée désagréable)."
+        },
+        {
+          "level": 4,
+          "q": "Quel fromage français, souvent associé au Nord, est célèbre pour son odeur forte ?",
+          "a": "Le Maroilles."
+        },
+        {
+          "level": 5,
+          "q": "Quelle fleur, souvent appelée « fleur cadavre », émet une odeur de chair en décomposition pour attirer les insectes pollinisateurs ?",
+          "a": "L'Arum titan (ou Amorphophallus titanum)."
+        },
+        {
+          "level": 6,
+          "q": "Quel produit chimique, souvent ajouté au gaz naturel pour détecter les fuites, a une odeur d'œuf pourri ?",
+          "a": "Le mercaptan (ou méthanethiol)."
+        },
+        {
+          "level": 7,
+          "q": "Quel oiseau, ressemblant à un vautour, a un mécanisme de défense consistant à vomir une substance nauséabonde sur ses prédateurs ?",
+          "a": "Le vautour aura."
+        },
+        {
+          "level": 8,
+          "q": "Quelle plante d'appartement, souvent appelée « plante à monnaie », peut dégager une odeur de poisson pourri si elle manque d'eau ?",
+          "a": "L'arbre de jade (ou Crassula ovata)."
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom de la substance malodorante produite par les glandes anales de certains mammifères, comme les castors, pour marquer leur territoire ?",
+          "a": "Le castoréum."
+        },
+        {
+          "level": 10,
+          "q": "Quel minéral, souvent trouvé dans les sources chaudes volcaniques, dégage une odeur de soufre ou d'œuf pourri ?",
+          "a": "Le soufre."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les capitales européennes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de l'Espagne ?",
+          "a": "Madrid."
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de la Suède ?",
+          "a": "Stockholm."
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale de la Grèce ?",
+          "a": "Athènes."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : Genève est la capitale de la Suisse.",
+          "a": "Faux (c'est Berne)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la capitale de la Hongrie ?",
+          "a": "Budapest."
+        },
+        {
+          "level": 6,
+          "q": "De quel pays européen Helsinki est-elle la capitale ?",
+          "a": "La Finlande."
+        },
+        {
+          "level": 7,
+          "q": "Quelle ville est la capitale de la Pologne ?",
+          "a": "Varsovie."
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la capitale de la Slovaquie ?",
+          "a": "Bratislava."
+        },
+        {
+          "level": 9,
+          "q": "De quel pays européen Ljubljana est-elle la capitale ?",
+          "a": "La Slovénie."
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la capitale de l'Estonie ?",
+          "a": "Tallinn."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les maladies mentales",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel trouble mental se caractérise par des épisodes alternant entre dépression et manie ?",
+          "a": "Le trouble bipolaire."
+        },
+        {
+          "level": 2,
+          "q": "Quelle maladie mentale, souvent associée à des hallucinations et des idées délirantes, affecte la perception de la réalité ?",
+          "a": "La schizophrénie."
+        },
+        {
+          "level": 3,
+          "q": "Quel trouble anxieux se caractérise par des attaques de panique soudaines et intenses ?",
+          "a": "Le trouble panique."
+        },
+        {
+          "level": 4,
+          "q": "Quel est l'acronyme anglais pour le trouble de stress post-traumatique ?",
+          "a": "PTSD (Post-Traumatic Stress Disorder)."
+        },
+        {
+          "level": 5,
+          "q": "Quel trouble de l'alimentation se caractérise par des épisodes de frénésie alimentaire suivis de comportements compensatoires (vomissements, exercice excessif) ?",
+          "a": "La boulimie."
+        },
+        {
+          "level": 6,
+          "q": "Quel trouble de la personnalité se caractérise par un modèle persistant d'instabilité dans les relations interpersonnelles, l'image de soi et les émotions ?",
+          "a": "Le trouble de la personnalité borderline (ou état limite)."
+        },
+        {
+          "level": 7,
+          "q": "Quel trouble du développement neurologique, souvent diagnostiqué pendant l'enfance, se caractérise par des difficultés de communication et d'interaction sociale ?",
+          "a": "Le trouble du spectre de l'autisme (TSA)."
+        },
+        {
+          "level": 8,
+          "q": "Quel trouble anxieux se caractérise par des pensées intrusives (obsessions) et des comportements répétitifs (compulsions) ?",
+          "a": "Le trouble obsessionnel-compulsif (TOC)."
+        },
+        {
+          "level": 9,
+          "q": "Quel terme désigne un trouble de l'humeur caractérisé par une tristesse persistante, une perte d'intérêt et un manque d'énergie ?",
+          "a": "La dépression majeure (ou trouble dépressif caractérisé)."
+        },
+        {
+          "level": 10,
+          "q": "Quel trouble de la personnalité se caractérise par un manque d'empathie, un comportement manipulateur et un mépris des droits d'autrui ?",
+          "a": "Le trouble de la personnalité antisociale (ou psychopathie/sociopathie)."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les desserts italiens",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dessert italien à base de café, de mascarpone et de biscuits à la cuillère est célèbre dans le monde entier ?",
+          "a": "Le Tiramisu."
+        },
+        {
+          "level": 2,
+          "q": "Quelle pâtisserie sicilienne en forme de tube est remplie de ricotta sucrée ?",
+          "a": "Le Cannolo (ou Cannoli au pluriel)."
+        },
+        {
+          "level": 3,
+          "q": "Quel dessert piémontais est une crème cuite, souvent servie avec un coulis de fruits rouges ?",
+          "a": "La Panna Cotta."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Le Panettone est un dessert originaire de Rome.",
+          "a": "Faux (il est originaire de Milan)."
+        },
+        {
+          "level": 5,
+          "q": "Quel biscuit aux amandes, sec et croquant, est originaire de la ville de Prato en Toscane ?",
+          "a": "Le Cantuccio (ou Cantucci au pluriel, ou biscotti)."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom de la glace italienne traditionnelle, souvent plus dense et moins grasse que la glace classique ?",
+          "a": "Le Gelato."
+        },
+        {
+          "level": 7,
+          "q": "Quel gâteau spongieux napolitain est souvent imbibé de rhum ou de limoncello ?",
+          "a": "Le Baba au rhum."
+        },
+        {
+          "level": 8,
+          "q": "Quel dessert vénitien est composé de fruits confits, de noix et de miel, souvent consommé à Noël ?",
+          "a": "Le Panforte (ou le Nougat de Sienne)."
+        },
+        {
+          "level": 9,
+          "q": "Quel gâteau au chocolat et aux amandes, originaire de l'île de Capri, ne contient pas de farine ?",
+          "a": "La Torta Caprese."
+        },
+        {
+          "level": 10,
+          "q": "Quelle pâtisserie napolitaine, en forme de coquillage, est farcie de ricotta, de semoule et de fruits confits ?",
+          "a": "La Sfogliatella."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses qui coupent",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel outil de bureau est utilisé pour couper du papier et possède deux lames croisées ?",
+          "a": "Les ciseaux."
+        },
+        {
+          "level": 2,
+          "q": "Quel instrument de cuisine est utilisé pour découper une pizza en parts égales ?",
+          "a": "Une roulette à pizza (ou coupe-pizza)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Un scalpel est un outil utilisé par les chirurgiens pour faire des incisions.",
+          "a": "Vrai."
+        },
+        {
+          "level": 4,
+          "q": "Quel objet tranchant est utilisé pour se raser la barbe de près ?",
+          "a": "Un rasoir (ou rasoir de sûreté/coupe-choux)."
+        },
+        {
+          "level": 5,
+          "q": "Quel outil, souvent utilisé par les bûcherons, sert à couper du bois ?",
+          "a": "Une hache."
+        },
+        {
+          "level": 6,
+          "q": "Quel instrument est utilisé pour couper les ongles de manière précise ?",
+          "a": "Un coupe-ongles."
+        },
+        {
+          "level": 7,
+          "q": "Quel outil, composé d'une lame dentelée, est utilisé pour couper du métal ou du bois ?",
+          "a": "Une scie."
+        },
+        {
+          "level": 8,
+          "q": "Quel outil tranchant est utilisé par les jardiniers pour tailler les haies et les arbustes ?",
+          "a": "Un sécateur."
+        },
+        {
+          "level": 9,
+          "q": "Quel petit outil de coupe, doté d'une lame rétractable, est souvent utilisé pour ouvrir des cartons ?",
+          "a": "Un cutter."
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom de l'épée courbe à un seul tranchant, traditionnellement utilisée par les samouraïs japonais ?",
+          "a": "Le katana."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de l'aviation",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui sont les deux frères américains crédités du premier vol motorisé et contrôlé d'un avion en 1903 ?",
+          "a": "Les frères Wright (Orville et Wilbur)."
+        },
+        {
+          "level": 2,
+          "q": "Quel océan Charles Lindbergh a-t-il traversé en solitaire et sans escale en 1927 ?",
+          "a": "L'océan Atlantique."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Le Concorde a été le premier avion de ligne supersonique à entrer en service commercial.",
+          "a": "Faux (c'était le Tupolev Tu-144 soviétique)."
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom de l'avion de ligne quadriréacteur à double pont fabriqué par Airbus, qui est le plus grand avion de passagers au monde ?",
+          "a": "L'Airbus A380."
+        },
+        {
+          "level": 5,
+          "q": "Quelle aviatrice américaine a été la première femme à traverser l'océan Atlantique en solitaire ?",
+          "a": "Amelia Earhart."
+        },
+        {
+          "level": 6,
+          "q": "Quel conflit mondial a vu la première utilisation massive d'avions de chasse et de bombardiers ?",
+          "a": "La Première Guerre mondiale."
+        },
+        {
+          "level": 7,
+          "q": "Quel ingénieur allemand a conçu le premier avion à réaction opérationnel, le Messerschmitt Me 262 ?",
+          "a": "Willy Messerschmitt (ou l'équipe de Messerschmitt)."
+        },
+        {
+          "level": 8,
+          "q": "Quel avion de transport supersonique soviétique, surnommé « Concordski », a volé avant le Concorde mais a connu un destin tragique ?",
+          "a": "Le Tupolev Tu-144."
+        },
+        {
+          "level": 9,
+          "q": "Quel pilote français, as de la Première Guerre mondiale, a donné son nom à un célèbre tournoi de tennis ?",
+          "a": "Roland Garros."
+        },
+        {
+          "level": 10,
+          "q": "Quelle entreprise aérospatiale américaine a produit le célèbre avion de ligne 747, surnommé « Jumbo Jet » ?",
+          "a": "Boeing."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les armes blanches historiques",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle longue épée droite était l'arme principale des chevaliers européens au Moyen Âge ?",
+          "a": "L'épée longue (ou épée bâtarde/épée à deux mains)."
+        },
+        {
+          "level": 2,
+          "q": "Quel est le nom du poignard traditionnel écossais, souvent porté dans la chaussette ?",
+          "a": "Le sgian-dubh (ou dirk)."
+        },
+        {
+          "level": 3,
+          "q": "Quelle arme blanche courbe, originaire du Moyen-Orient et d'Afrique du Nord, est caractérisée par sa lame en forme de croissant ?",
+          "a": "Le cimeterre."
+        },
+        {
+          "level": 4,
+          "q": "Quel type de hache de guerre, souvent à deux têtes, était utilisé par les Francs et les Vikings ?",
+          "a": "La francisque (ou hache d'armes)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle arme japonaise, plus courte que le katana, était souvent portée en paire avec celui-ci par les samouraïs ?",
+          "a": "Le wakizashi."
+        },
+        {
+          "level": 6,
+          "q": "Quel poignard à lame triangulaire ou cruciforme, conçu pour percer les armures ou les cottes de mailles, était populaire à la Renaissance ?",
+          "a": "La miséricorde (ou dague à rouelles/stylet)."
+        },
+        {
+          "level": 7,
+          "q": "Quelle longue lance, surmontée d'une lame de hache et d'une pointe, était l'arme de prédilection des fantassins suisses et allemands à la Renaissance ?",
+          "a": "La hallebarde."
+        },
+        {
+          "level": 8,
+          "q": "Quel est le nom de l'épée courte et large utilisée par les légionnaires romains ?",
+          "a": "Le glaive (gladius)."
+        },
+        {
+          "level": 9,
+          "q": "Quelle arme blanche, originaire d'Inde, est caractérisée par une poignée en forme de H et une lame souvent courbée ou ondulée ?",
+          "a": "Le katar."
+        },
+        {
+          "level": 10,
+          "q": "Quel type d'épée à lame longue, étroite et flexible était principalement utilisé pour l'estoc (les coups de pointe) lors des duels à la Renaissance ?",
+          "a": "La rapière."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les épices",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle épice jaune, issue du rhizome d'une plante, est l'ingrédient principal du curry ?",
+          "a": "Le curcuma."
+        },
+        {
+          "level": 2,
+          "q": "Quelle épice rouge, souvent vendue en poudre, est fabriquée à partir de poivrons ou de piments doux séchés ?",
+          "a": "Le paprika."
+        },
+        {
+          "level": 3,
+          "q": "Quelle épice, provenant de l'écorce intérieure d'un arbre, est souvent utilisée dans les desserts comme le pain d'épices ou les roulés à la cannelle ?",
+          "a": "La cannelle."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : Le poivre noir, le poivre blanc et le poivre vert proviennent de la même plante.",
+          "a": "Vrai (seul le stade de maturité et le traitement diffèrent)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle épice coûteuse, de couleur rouge-orange, est extraite des stigmates d'une fleur de crocus ?",
+          "a": "Le safran."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom de la petite graine noire, souvent utilisée dans la cuisine indienne et du Moyen-Orient, qui a un goût légèrement amer et terreux ?",
+          "a": "Le cumin noir (ou nigelle)."
+        },
+        {
+          "level": 7,
+          "q": "Quelle épice en forme d'étoile a un goût anisé prononcé et est souvent utilisée dans la cuisine asiatique ?",
+          "a": "La badiane (ou anis étoilé)."
+        },
+        {
+          "level": 8,
+          "q": "Quelle épice piquante est extraite de la racine d'une plante de la famille de la moutarde, souvent servie avec les sushis ?",
+          "a": "Le wasabi."
+        },
+        {
+          "level": 9,
+          "q": "Quel clou, très aromatique et originaire d'Indonésie, est souvent piqué dans un oignon pour parfumer les bouillons ?",
+          "a": "Le clou de girofle."
+        },
+        {
+          "level": 10,
+          "q": "Quelle épice, issue de l'enveloppe rouge de la noix de muscade, est souvent utilisée dans les mélanges d'épices comme le garam masala ?",
+          "a": "Le macis."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la salle de bain",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel objet en tissu est utilisé pour s'essuyer le corps après une douche ou un bain ?",
+          "a": "Une serviette de bain."
+        },
+        {
+          "level": 2,
+          "q": "Quel produit est généralement utilisé avec une brosse pour nettoyer les dents ?",
+          "a": "Le dentifrice."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Le shampoing est conçu pour nettoyer la peau du corps.",
+          "a": "Faux (il est conçu pour les cheveux)."
+        },
+        {
+          "level": 4,
+          "q": "Quel appareil est souvent utilisé pour sécher les cheveux mouillés ?",
+          "a": "Un sèche-cheveux."
+        },
+        {
+          "level": 5,
+          "q": "Quel petit objet sur un bâtonnet est utilisé pour nettoyer les oreilles (bien que ce soit déconseillé par les médecins) ?",
+          "a": "Le coton-tige."
+        },
+        {
+          "level": 6,
+          "q": "Quel récipient, généralement fixé au mur, sert à recueillir l'eau pour se laver les mains ou le visage ?",
+          "a": "Le lavabo."
+        },
+        {
+          "level": 7,
+          "q": "Quel produit est souvent utilisé pour éviter les mauvaises odeurs corporelles, particulièrement sous les aisselles ?",
+          "a": "Le déodorant (ou anti-transpirant)."
+        },
+        {
+          "level": 8,
+          "q": "Quel accessoire est utilisé pour démêler et coiffer les cheveux ?",
+          "a": "Un peigne (ou une brosse à cheveux)."
+        },
+        {
+          "level": 9,
+          "q": "Quel appareil de plomberie permet de projeter de l'eau sur le corps pour se laver en position debout ?",
+          "a": "La douche (ou le pommeau de douche)."
+        },
+        {
+          "level": 10,
+          "q": "Quel objet rugueux ou spongieux est utilisé pour frotter la peau et enlever les cellules mortes ?",
+          "a": "Un gant de crin (ou une fleur de douche/éponge exfoliante/loofah)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de la Révolution française",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En quelle année a eu lieu la prise de la Bastille, événement marquant le début de la Révolution française ?",
+          "a": "1789."
+        },
+        {
+          "level": 2,
+          "q": "Quel roi de France a été guillotiné en 1793 ?",
+          "a": "Louis XVI."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Marie-Antoinette était d'origine espagnole.",
+          "a": "Faux (elle était autrichienne)."
+        },
+        {
+          "level": 4,
+          "q": "Quel document fondamental, adopté en 1789, proclame que « les hommes naissent et demeurent libres et égaux en droits » ?",
+          "a": "La Déclaration des droits de l'homme et du citoyen."
+        },
+        {
+          "level": 5,
+          "q": "Quel personnage clé de la Révolution, surnommé « l'Incorruptible », a dirigé le Comité de salut public pendant la Terreur ?",
+          "a": "Maximilien de Robespierre."
+        },
+        {
+          "level": 6,
+          "q": "Comment appelait-on les révolutionnaires issus du petit peuple, caractérisés par le port du pantalon à rayures au lieu de la culotte aristocratique ?",
+          "a": "Les Sans-culottes."
+        },
+        {
+          "level": 7,
+          "q": "Quel événement de 1789 a vu les femmes de Paris marcher sur Versailles pour réclamer du pain au roi ?",
+          "a": "Les journées d'octobre (ou la marche sur Versailles)."
+        },
+        {
+          "level": 8,
+          "q": "Quel nom a été donné à la période de répression politique violente de 1793 à 1794, marquée par des milliers d'exécutions ?",
+          "a": "La Terreur."
+        },
+        {
+          "level": 9,
+          "q": "Quel général français s'est emparé du pouvoir lors du coup d'État du 18 Brumaire en 1799, mettant fin au Directoire ?",
+          "a": "Napoléon Bonaparte."
+        },
+        {
+          "level": 10,
+          "q": "Quelle bataille de 1792 a permis de repousser les armées prussiennes et autrichiennes, sauvant ainsi la jeune République ?",
+          "a": "La bataille de Valmy."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les guerres civiles",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays a été déchiré par une guerre civile entre 1936 et 1939, opposant les républicains aux nationalistes dirigés par Franco ?",
+          "a": "L'Espagne."
+        },
+        {
+          "level": 2,
+          "q": "Quelle guerre civile africaine, qui a débuté en 1994, a conduit à un génocide ayant fait environ 800 000 morts en 100 jours ?",
+          "a": "Le Rwanda."
+        },
+        {
+          "level": 3,
+          "q": "Quel pays a connu une guerre civile entre 1861 et 1865, opposant l'Union au Nord et les États confédérés au Sud ?",
+          "a": "Les États-Unis (Guerre de Sécession)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : La guerre civile anglaise (1642-1651) a abouti à l'exécution du roi Charles Ier et à la proclamation d'une république.",
+          "a": "Vrai."
+        },
+        {
+          "level": 5,
+          "q": "Quelle guerre civile s'est déroulée en Russie de 1917 à 1922, opposant principalement les « Rouges » (bolcheviks) aux « Blancs » (antibolcheviks) ?",
+          "a": "La guerre civile russe."
+        },
+        {
+          "level": 6,
+          "q": "Quel conflit a ravagé le Liban de 1975 à 1990, impliquant de multiples factions religieuses et politiques, ainsi que des interventions étrangères ?",
+          "a": "La guerre du Liban."
+        },
+        {
+          "level": 7,
+          "q": "Dans quel pays asiatique une longue guerre civile a-t-elle opposé les forces communistes de Mao Zedong aux nationalistes de Tchang Kaï-chek ?",
+          "a": "La Chine."
+        },
+        {
+          "level": 8,
+          "q": "Quelle guerre civile, déclenchée en 1991, a entraîné l'éclatement de la Yougoslavie en plusieurs États indépendants ?",
+          "a": "Les guerres de Yougoslavie (ou guerre de Bosnie/Croatie, etc.)."
+        },
+        {
+          "level": 9,
+          "q": "Dans quel pays d'Amérique centrale une guerre civile a-t-elle opposé le gouvernement à la guérilla du FMLN de 1979 à 1992 ?",
+          "a": "Le Salvador."
+        },
+        {
+          "level": 10,
+          "q": "Quelle guerre civile, débutée en 2011 dans le sillage du Printemps arabe, implique le régime de Bachar el-Assad et de multiples groupes rebelles ?",
+          "a": "La guerre civile syrienne."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de bières",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle bière, généralement de couleur claire et légère en goût, est la plus consommée au monde ?",
+          "a": "La Lager (ou Pilsner)."
+        },
+        {
+          "level": 2,
+          "q": "Quelle bière brune irlandaise est célèbre pour sa mousse crémeuse et son goût torréfié ?",
+          "a": "La Guinness (ou le Stout)."
+        },
+        {
+          "level": 3,
+          "q": "Quelle bière, souvent associée à l'Allemagne, est brassée avec une forte proportion de malt de blé ?",
+          "a": "La Weissbier (ou Weizenbier/bière blanche)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : L'IPA (India Pale Ale) est un type de bière très houblonnée.",
+          "a": "Vrai."
+        },
+        {
+          "level": 5,
+          "q": "Quelle bière belge, souvent aromatisée à la cerise, est appelée Kriek ?",
+          "a": "Une bière lambic (ou bière aux fruits)."
+        },
+        {
+          "level": 6,
+          "q": "Quel type de bière, souvent fort en alcool, est traditionnellement brassé par des moines trappistes ?",
+          "a": "La bière trappiste."
+        },
+        {
+          "level": 7,
+          "q": "Quelle bière brune, originaire de Londres, est souvent considérée comme l'ancêtre du Stout ?",
+          "a": "Le Porter."
+        },
+        {
+          "level": 8,
+          "q": "Quelle bière à fermentation spontanée, originaire de la vallée de la Senne en Belgique, est souvent acide et non gazeuse ?",
+          "a": "Le Lambic."
+        },
+        {
+          "level": 9,
+          "q": "Quel terme désigne une bière blonde ou ambrée à fermentation haute, originaire de la région de Cologne en Allemagne ?",
+          "a": "La Kölsch."
+        },
+        {
+          "level": 10,
+          "q": "Quelle bière, originaire de la ville de Pilsen en République tchèque (Bohême), a donné son nom à un style de bière blonde très populaire ?",
+          "a": "La Pils (ou Pilsener)."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses qui glissent",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel objet d'hiver est utilisé pour glisser sur la neige avec les deux pieds fixés sur une seule planche ?",
+          "a": "Le snowboard (ou surf des neiges)."
+        },
+        {
+          "level": 2,
+          "q": "Quel fruit jaune, souvent mangé par les singes, est célèbre pour sa peau sur laquelle on peut glisser (dans les dessins animés) ?",
+          "a": "La banane."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Le savon est un produit qui a tendance à glisser lorsqu'il est mouillé.",
+          "a": "Vrai."
+        },
+        {
+          "level": 4,
+          "q": "Quel animal marin, souvent trouvé en Antarctique, glisse sur son ventre sur la glace pour se déplacer plus vite ?",
+          "a": "Le pingouin (ou manchot)."
+        },
+        {
+          "level": 5,
+          "q": "Quel liquide transparent et visqueux est souvent utilisé pour réduire la friction entre les pièces mécaniques ?",
+          "a": "L'huile (ou lubrifiant)."
+        },
+        {
+          "level": 6,
+          "q": "Quel petit objet rectangulaire est utilisé pour glisser sur l'eau et attraper des vagues (pratiqué debout) ?",
+          "a": "La planche de surf."
+        },
+        {
+          "level": 7,
+          "q": "Quel phénomène naturel, souvent invisible, rend les routes extrêmement glissantes en hiver ?",
+          "a": "Le verglas (ou la glace noire)."
+        },
+        {
+          "level": 8,
+          "q": "Quel reptile, sans pattes, se déplace en glissant (ou rampant) sur le sol ?",
+          "a": "Le serpent."
+        },
+        {
+          "level": 9,
+          "q": "Quel objet est utilisé pour glisser sur une fermeture éclair afin de l'ouvrir ou de la fermer ?",
+          "a": "Le curseur."
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom de la petite plaque de plastique ou de bois utilisée pour glisser sur la neige, souvent appelée « pelle à neige » ?",
+          "a": "La luge luge-pelle (ou « cul de luge »)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de la photographie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel Français est crédité de l'invention de la photographie en 1826 avec son « Point de vue du Gras » ?",
+          "a": "Nicéphore Niépce."
+        },
+        {
+          "level": 2,
+          "q": "Quel procédé photographique, produisant une image unique sur une plaque d'argent, a été présenté par Louis Daguerre en 1839 ?",
+          "a": "Le daguerréotype."
+        },
+        {
+          "level": 3,
+          "q": "Quelle entreprise américaine a démocratisé la photographie avec son appareil « Brownie » et son slogan « Appuyez sur le bouton, nous faisons le reste » ?",
+          "a": "Kodak (Eastman Kodak Company)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : La première photographie couleur permanente a été réalisée au XIXe siècle.",
+          "a": "Vrai (en 1861 par James Clerk Maxwell)."
+        },
+        {
+          "level": 5,
+          "q": "Quel physicien britannique a inventé le premier procédé négatif-positif, le calotype, permettant de reproduire les images ?",
+          "a": "William Henry Fox Talbot."
+        },
+        {
+          "level": 6,
+          "q": "Quel type de photographie, utilisant la lumière pour créer des images sans appareil, a été popularisé par Man Ray (les « rayographes ») ?",
+          "a": "Le photogramme."
+        },
+        {
+          "level": 7,
+          "q": "Quel photographe américain est célèbre pour ses paysages en noir et blanc de l'Ouest américain, notamment du parc national de Yosemite ?",
+          "a": "Ansel Adams."
+        },
+        {
+          "level": 8,
+          "q": "Quelle entreprise japonaise a été la première à commercialiser un appareil photo numérique à l'usage du grand public en 1989 ?",
+          "a": "Fujifilm (avec le Fujix DS-X, bien que Kodak ait inventé le premier prototype)."
+        },
+        {
+          "level": 9,
+          "q": "Quel terme désigne la première photographie d'une personne, souvent réalisée par elle-même, en tenant l'appareil à bout de bras ?",
+          "a": "Le selfie (ou autoportrait)."
+        },
+        {
+          "level": 10,
+          "q": "Quel chimiste britannique a réalisé la première photographie couleur permanente en 1861 en utilisant trois filtres de couleur ?",
+          "a": "James Clerk Maxwell."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les drogues synthétiques",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle drogue de synthèse, souvent appelée « ecstasy » ou « MDMA », est populaire dans le milieu de la musique électronique ?",
+          "a": "L'ecstasy (MDMA)."
+        },
+        {
+          "level": 2,
+          "q": "Quel stimulant puissant et hautement addictif est souvent appelé « crystal meth » ou « ice » ?",
+          "a": "La méthamphétamine."
+        },
+        {
+          "level": 3,
+          "q": "Quelle substance, développée à l'origine comme anesthésique, est souvent utilisée comme drogue dissociative et appelée « Special K » ?",
+          "a": "La kétamine."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : Le LSD est un opiacé synthétique.",
+          "a": "Faux (c'est un hallucinogène/psychédélique)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle drogue hallucinogène puissante, synthétisée par Albert Hofmann, est souvent consommée sous forme de petits buvards ?",
+          "a": "Le LSD (acide lysergique diéthylamide)."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom de la drogue de synthèse de la famille des cathinones, souvent appelée « sels de bain » ou « flakka » ?",
+          "a": "Les cathinones de synthèse (souvent MDPV ou méphédrone)."
+        },
+        {
+          "level": 7,
+          "q": "Quelle drogue synthétique, souvent appelée « GHB » ou « G », est parfois utilisée comme « drogue du violeur » ?",
+          "a": "Le GHB (acide gamma-hydroxybutyrique)."
+        },
+        {
+          "level": 8,
+          "q": "Quel analgésique opioïde de synthèse, extrêmement puissant, est souvent impliqué dans les crises de surdoses en Amérique du Nord ?",
+          "a": "Le fentanyl."
+        },
+        {
+          "level": 9,
+          "q": "Quel est l'acronyme de la phéncyclidine, une drogue dissociative souvent appelée « poussière d'ange » ou « angel dust » ?",
+          "a": "PCP."
+        },
+        {
+          "level": 10,
+          "q": "Quelle drogue de synthèse, dérivée des amphétamines, a été largement utilisée comme coupe-faim dans les années 1960 avant d'être interdite ?",
+          "a": "La fenfluramine (ou les amphétamines en général)."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de pâtes italiennes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle pâte longue et fine, souvent servie avec de la sauce bolognaise, est la plus connue au monde ?",
+          "a": "Les spaghettis."
+        },
+        {
+          "level": 2,
+          "q": "Quelle pâte en forme de tube biseauté, souvent servie avec une sauce arrabbiata, porte un nom signifiant « plumes » ?",
+          "a": "Les penne (ou penne rigate)."
+        },
+        {
+          "level": 3,
+          "q": "Quelle pâte, dont le nom signifie « petits rubans », ressemble à des spaghettis plats ?",
+          "a": "Les tagliatelles (ou fettuccine)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : Les gnocchis sont traditionnellement faits avec de la pomme de terre.",
+          "a": "Vrai."
+        },
+        {
+          "level": 5,
+          "q": "Quelle pâte en forme de papillon ou de nœud papillon est souvent utilisée dans les salades froides ?",
+          "a": "Les farfalle."
+        },
+        {
+          "level": 6,
+          "q": "Quel type de pâte farcie, souvent en forme de carré ou de demi-lune, porte un nom signifiant « petits navets » ?",
+          "a": "Les raviolis."
+        },
+        {
+          "level": 7,
+          "q": "Quelle pâte longue et plate, plus large que les tagliatelles, est souvent servie avec des sauces riches et crémeuses ?",
+          "a": "Les pappardelle."
+        },
+        {
+          "level": 8,
+          "q": "Quelle pâte courte et torsadée, souvent utilisée dans les gratins, porte un nom signifiant « petits ressorts » ?",
+          "a": "Les fusilli."
+        },
+        {
+          "level": 9,
+          "q": "Quelle pâte farcie en forme de petit anneau ou de nombril est originaire de la région d'Émilie-Romagne ?",
+          "a": "Les tortellini."
+        },
+        {
+          "level": 10,
+          "q": "Quelle petite pâte en forme de grain de riz ou de melon est souvent utilisée dans les soupes ?",
+          "a": "Les orzo (ou risoni)."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ferme",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal de la ferme, connu pour son groin, aime se rouler dans la boue pour se rafraîchir ?",
+          "a": "Le cochon (ou le porc)."
+        },
+        {
+          "level": 2,
+          "q": "Quel oiseau de la ferme, élevé pour sa chair et ses œufs, est célèbre pour son chant matinal ?",
+          "a": "La poule (et le coq)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Les moutons sont élevés principalement pour leur lait.",
+          "a": "Faux (pour leur laine ou leur viande, bien que certaines races soient laitières)."
+        },
+        {
+          "level": 4,
+          "q": "Quel animal de la ferme, souvent utilisé pour tirer des charrues, est le résultat du croisement entre un âne et une jument ?",
+          "a": "Le mulet (ou la mule)."
+        },
+        {
+          "level": 5,
+          "q": "Quel grand oiseau coureur, parfois élevé dans les fermes, pond les plus gros œufs du monde ?",
+          "a": "L'autruche."
+        },
+        {
+          "level": 6,
+          "q": "Quel petit animal à fourrure, connu pour ses longues oreilles, est parfois élevé pour sa viande (la cuniculture) ?",
+          "a": "Le lapin."
+        },
+        {
+          "level": 7,
+          "q": "Quel animal ruminant, souvent avec des cornes et une barbichette, est réputé pour pouvoir grimper aux arbres et manger presque n'importe quoi ?",
+          "a": "La chèvre."
+        },
+        {
+          "level": 8,
+          "q": "Quel animal aquatique, élevé pour son foie gras ou sa viande, a un cri appelé nasillement ?",
+          "a": "Le canard (ou l'oie)."
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la femelle du dindon, élevée pour sa chair ?",
+          "a": "La dinde."
+        },
+        {
+          "level": 10,
+          "q": "Quel animal, ressemblant au lama mais originaire des Andes, est parfois élevé dans les fermes pour sa laine très douce ?",
+          "a": "L'alpaga."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de l'exploration spatiale",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel cosmonaute soviétique a été le premier homme à voyager dans l'espace en 1961 ?",
+          "a": "Youri Gagarine."
+        },
+        {
+          "level": 2,
+          "q": "Quel programme spatial de la NASA a permis d'envoyer les premiers hommes sur la Lune en 1969 ?",
+          "a": "Le programme Apollo (Apollo 11)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Laika, la première chienne dans l'espace, a survécu à son voyage.",
+          "a": "Faux (elle est morte quelques heures après le lancement)."
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom du premier satellite artificiel lancé en orbite terrestre par l'URSS en 1957 ?",
+          "a": "Spoutnik 1."
+        },
+        {
+          "level": 5,
+          "q": "Quelle astronaute soviétique a été la première femme à voler dans l'espace en 1963 ?",
+          "a": "Valentina Terechkova."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom du télescope spatial lancé en 1990 qui a révolutionné notre compréhension de l'univers ?",
+          "a": "Le télescope spatial Hubble."
+        },
+        {
+          "level": 7,
+          "q": "Quelle station spatiale internationale, lancée en 1998, est occupée en permanence depuis 2000 ?",
+          "a": "L'ISS (International Space Station)."
+        },
+        {
+          "level": 8,
+          "q": "Quel rover de la NASA, de la taille d'une voiture, a atterri sur Mars en 2012 pour explorer le cratère Gale ?",
+          "a": "Curiosity."
+        },
+        {
+          "level": 9,
+          "q": "Quel astronaute américain a effectué le premier vol suborbital des États-Unis en 1961 ?",
+          "a": "Alan Shepard."
+        },
+        {
+          "level": 10,
+          "q": "Quelle sonde spatiale, lancée en 1977, est devenue le premier objet fabriqué par l'homme à entrer dans l'espace interstellaire ?",
+          "a": "Voyager 1."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les maladies infectieuses",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle maladie virale a été responsable d'une pandémie mondiale de 1918 à 1920, souvent appelée « grippe espagnole » ?",
+          "a": "La grippe A (H1N1) ou grippe espagnole."
+        },
+        {
+          "level": 2,
+          "q": "Quel virus, transmissible par le sang et les fluides corporels, détruit le système immunitaire et cause le SIDA ?",
+          "a": "Le VIH (Virus de l'Immunodéficience Humaine)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : La peste bubonique, responsable de la mort noire au XIVe siècle, est causée par un virus.",
+          "a": "Faux (c'est une bactérie, Yersinia pestis)."
+        },
+        {
+          "level": 4,
+          "q": "Quelle maladie infectieuse, touchant principalement les poumons, est causée par le bacille de Koch ?",
+          "a": "La tuberculose."
+        },
+        {
+          "level": 5,
+          "q": "Quel virus, provoquant des fièvres hémorragiques sévères, a connu plusieurs épidémies mortelles en Afrique de l'Ouest et centrale ?",
+          "a": "Le virus Ebola."
+        },
+        {
+          "level": 6,
+          "q": "Quelle maladie parasitaire, transmise par les moustiques anophèles, est l'une des principales causes de mortalité en Afrique subsaharienne ?",
+          "a": "Le paludisme (ou malaria)."
+        },
+        {
+          "level": 7,
+          "q": "Quel virus, de la famille des coronavirus, a émergé fin 2019 et provoqué une pandémie mondiale ?",
+          "a": "Le SARS-CoV-2 (responsable de la COVID-19)."
+        },
+        {
+          "level": 8,
+          "q": "Quelle maladie, autrefois courante chez les enfants et causant des éruptions cutanées, a été presque éradiquée grâce à la vaccination (RRO) ?",
+          "a": "La rougeole."
+        },
+        {
+          "level": 9,
+          "q": "Quel terme désigne une infection grave causée par une bactérie en forme de spirale (spirochète), souvent transmise sexuellement et pouvant atteindre le cerveau à un stade avancé ?",
+          "a": "La syphilis."
+        },
+        {
+          "level": 10,
+          "q": "Quelle maladie virale, touchant le système nerveux central et souvent mortelle une fois les symptômes apparus, est transmise par la morsure d'un animal infecté ?",
+          "a": "La rage."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de chaussures",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle chaussure légère, souvent en toile ou en cuir, possède une semelle en corde tressée ?",
+          "a": "L'espadrille."
+        },
+        {
+          "level": 2,
+          "q": "Quelle chaussure de sport de la marque Converse est célèbre pour son étoile sur la cheville et sa semelle en caoutchouc ?",
+          "a": "La Chuck Taylor All Star (ou Converse All Star)."
+        },
+        {
+          "level": 3,
+          "q": "Quelle chaussure, souvent en caoutchouc, est conçue pour aller dans l'eau et porte le nom d'un reptile ?",
+          "a": "Les Crocs."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Les escarpins sont des chaussures plates.",
+          "a": "Faux (ce sont des chaussures à talons)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle chaussure sans lacets, souvent en cuir, a été popularisée par les étudiants américains et comporte parfois un gland sur le dessus ?",
+          "a": "Le mocassin (ou loafer)."
+        },
+        {
+          "level": 6,
+          "q": "Quel type de chaussure, montant au-dessus de la cheville, est souvent porté pour la randonnée ou le travail ?",
+          "a": "La botte (ou bottine)."
+        },
+        {
+          "level": 7,
+          "q": "Quelle chaussure, composée d'une simple semelle retenue par une lanière en Y, est très populaire l'été ?",
+          "a": "La tong (ou gougoune/slap)."
+        },
+        {
+          "level": 8,
+          "q": "Quel nom donne-t-on aux chaussures de ville élégantes pour hommes, caractérisées par un laçage fermé ?",
+          "a": "Le Richelieu (ou Oxford)."
+        },
+        {
+          "level": 9,
+          "q": "Quelle chaussure de danse classique, renforcée à la pointe, permet aux danseuses de se tenir sur la pointe des pieds ?",
+          "a": "Les pointes."
+        },
+        {
+          "level": 10,
+          "q": "Quelle chaussure à semelle de bois, d'origine paysanne, est traditionnellement associée aux Pays-Bas et à certaines régions de France ?",
+          "a": "Le sabot."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses qu'on perd souvent",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel petit objet métallique, souvent attaché à un trousseau, permet d'ouvrir une porte ?",
+          "a": "La clé."
+        },
+        {
+          "level": 2,
+          "q": "Quel accessoire de protection visuelle, souvent posé sur la tête ou le nez, est fréquemment égaré ?",
+          "a": "Les lunettes (de vue ou de soleil)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Les chaussettes sont souvent perdues, particulièrement après être passées à la machine à laver.",
+          "a": "Vrai."
+        },
+        {
+          "level": 4,
+          "q": "Quel appareil de communication portable est souvent cherché frénétiquement dans les poches ou les sacs ?",
+          "a": "Le téléphone portable (ou smartphone)."
+        },
+        {
+          "level": 5,
+          "q": "Quel petit objet permet d'allumer une cigarette ou une bougie ?",
+          "a": "Le briquet."
+        },
+        {
+          "level": 6,
+          "q": "Quel objet, contenant souvent de l'argent et des cartes de crédit, est une perte particulièrement stressante ?",
+          "a": "Le portefeuille (ou porte-monnaie)."
+        },
+        {
+          "level": 7,
+          "q": "Quel petit appareil permet de changer de chaîne de télévision sans se lever ?",
+          "a": "La télécommande."
+        },
+        {
+          "level": 8,
+          "q": "Quel accessoire capillaire, souvent en tissu ou en élastique, semble disparaître mystérieusement ?",
+          "a": "L'élastique à cheveux (ou chouchou)."
+        },
+        {
+          "level": 9,
+          "q": "Quel accessoire utilisé en hiver pour protéger les mains est souvent perdu, laissant son propriétaire avec un exemplaire dépareillé ?",
+          "a": "Le gant."
+        },
+        {
+          "level": 10,
+          "q": "Quel objet, utilisé pour protéger de la pluie, est fréquemment oublié dans les transports en commun ou les restaurants ?",
+          "a": "Le parapluie."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La grammaire française",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel signe de ponctuation termine une phrase déclarative ?",
+          "a": "Le point."
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la nature du mot « pomme » dans la phrase « Je mange une pomme » ?",
+          "a": "Un nom (ou nom commun/substantif)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Dans la phrase « Il chante bien », « bien » est un adjectif.",
+          "a": "Faux (c'est un adverbe)."
+        },
+        {
+          "level": 4,
+          "q": "Quel mode verbal est utilisé pour exprimer un ordre, un conseil ou une interdiction (ex: « Viens ici ! ») ?",
+          "a": "L'impératif."
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la fonction du groupe de mots « à Paris » dans la phrase « Il habite à Paris » ?",
+          "a": "Complément circonstanciel de lieu."
+        },
+        {
+          "level": 6,
+          "q": "Quelle conjonction de coordination relie des éléments de même nature ou de même fonction et exprime l'addition ?",
+          "a": "Et."
+        },
+        {
+          "level": 7,
+          "q": "Quel est le participe passé du verbe « peindre » ?",
+          "a": "Peint."
+        },
+        {
+          "level": 8,
+          "q": "Quel type de proposition subordonnée est introduite par un pronom relatif (qui, que, quoi, dont, où) ?",
+          "a": "La proposition subordonnée relative."
+        },
+        {
+          "level": 9,
+          "q": "Dans la phrase « Le chat que je vois est noir », quelle est la fonction du pronom « que » ?",
+          "a": "Complément d'objet direct (COD) du verbe « vois »."
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle la figure de style qui consiste à attribuer des caractéristiques humaines à un animal ou une chose ?",
+          "a": "La personnification."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Le cannibalisme",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le fait de manger de la chair humaine (lorsqu'il s'agit d'humains) ?",
+          "a": "L'anthropophagie."
+        },
+        {
+          "level": 2,
+          "q": "Quel célèbre tueur en série américain, surnommé le « Cannibale de Milwaukee », a assassiné et démembré 17 jeunes hommes ?",
+          "a": "Jeffrey Dahmer."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Le cannibalisme n'a jamais été pratiqué pour des raisons de survie dans l'histoire moderne.",
+          "a": "Faux (ex: le crash du vol 571 dans les Andes)."
+        },
+        {
+          "level": 4,
+          "q": "Quel personnage de fiction, psychiatre et cannibale, est le protagoniste du film « Le Silence des agneaux » ?",
+          "a": "Le Dr Hannibal Lecter."
+        },
+        {
+          "level": 5,
+          "q": "Quel explorateur britannique a été tué et mangé par des autochtones à Hawaï en 1779 ?",
+          "a": "James Cook (la légende dit qu'il a été mangé, mais les historiens pensent que son corps a été préparé selon des rites funéraires locaux)."
+        },
+        {
+          "level": 6,
+          "q": "Quelle tribu amazonienne isolée était réputée pour ses pratiques d'endocannibalisme rituel lors des funérailles ?",
+          "a": "Les Yanomami (ou les Wari')."
+        },
+        {
+          "level": 7,
+          "q": "Quelle maladie neurologique mortelle, semblable à la vache folle, a été transmise au sein du peuple Fore en Papouasie-Nouvelle-Guinée en raison de rituels cannibales ?",
+          "a": "Le kuru."
+        },
+        {
+          "level": 8,
+          "q": "Quel célèbre criminel japonais a tué, démembré et mangé une étudiante néerlandaise à Paris en 1981, avant d'être déclaré irresponsable ?",
+          "a": "Issei Sagawa."
+        },
+        {
+          "level": 9,
+          "q": "Quel peuple autochtone de Nouvelle-Zélande a été accusé, parfois à tort, de cannibalisme par les premiers explorateurs européens ?",
+          "a": "Les Maoris."
+        },
+        {
+          "level": 10,
+          "q": "Quel terme désigne le cannibalisme pratiqué au sein de son propre groupe ou de sa propre tribu, souvent pour des raisons rituelles ?",
+          "a": "L'endocannibalisme."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en fromages d'Europe ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fromage rond, souvent vendu dans une coque de cire rouge, est originaire des Pays-Bas ?",
+          "a": "L'Edam."
+        },
+        {
+          "level": 2,
+          "q": "Quel fromage italien, souvent râpé sur les pâtes, est fabriqué à partir de lait de vache et vieilli longuement ?",
+          "a": "Le Parmesan (Parmigiano Reggiano)."
+        },
+        {
+          "level": 3,
+          "q": "Quel fromage suisse, souvent utilisé dans la raclette, se présente sous forme de meule fondue et raclée ?",
+          "a": "Le fromage à raclette (ou Raclette du Valais)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : La Feta est un fromage originaire d'Italie.",
+          "a": "Faux (c'est un fromage grec)."
+        },
+        {
+          "level": 5,
+          "q": "Quel fromage espagnol, traditionnellement au lait de brebis, est originaire de la région de La Mancha ?",
+          "a": "Le Manchego."
+        },
+        {
+          "level": 6,
+          "q": "Quel fromage anglais friable et piquant, à pâte persillée (bleu), est souvent consommé avec du porto ?",
+          "a": "Le Stilton (ou Blue Stilton)."
+        },
+        {
+          "level": 7,
+          "q": "Quel fromage chypriote, fait d'un mélange de lait de chèvre et de brebis, a la particularité de ne pas fondre à la cuisson, le rendant idéal pour le grill ?",
+          "a": "L'Halloumi."
+        },
+        {
+          "level": 8,
+          "q": "Quel fromage néerlandais, souvent percé de trous, porte le nom de la ville où il était traditionnellement commercialisé ?",
+          "a": "Le Gouda (ou le Maasdam/Leerdammer)."
+        },
+        {
+          "level": 9,
+          "q": "Quel fromage italien crémeux, au lait de vache, possède un centre filant et une fine croûte, souvent originaire des Pouilles ?",
+          "a": "La Burrata."
+        },
+        {
+          "level": 10,
+          "q": "Quel fromage suisse à pâte mi-dure, au lait de vache cru, est célèbre pour être fabriqué en forme de tête de moine et utilisé fondu en « rosettes » avec une girolle ?",
+          "a": "La Tête de Moine."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses qui collent",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle substance pâteuse, souvent vendue en tube ou en pot, est utilisée pour assembler deux morceaux de papier ?",
+          "a": "La colle."
+        },
+        {
+          "level": 2,
+          "q": "Quel ruban transparent adhésif sur une face est souvent utilisé pour emballer des cadeaux ?",
+          "a": "Le ruban adhésif (ou scotch)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Le miel est une substance qui peut être très collante.",
+          "a": "Vrai."
+        },
+        {
+          "level": 4,
+          "q": "Quel petit carré de papier pré-encollé, inventé par 3M, sert à laisser des notes repositionnables ?",
+          "a": "Le Post-it."
+        },
+        {
+          "level": 5,
+          "q": "Quel aliment sucré, souvent rose ou bleu, fabriqué en filant du sucre fondu, est célèbre pour être très collant ?",
+          "a": "La barbe à papa."
+        },
+        {
+          "level": 6,
+          "q": "Quelle substance résineuse, souvent exsudée par les pins et les sapins, est très collante ?",
+          "a": "La sève (ou la résine)."
+        },
+        {
+          "level": 7,
+          "q": "Quel type de pansement adhésif, souvent de couleur chair, est utilisé pour protéger de petites blessures ?",
+          "a": "Un pansement (ou sparadrap)."
+        },
+        {
+          "level": 8,
+          "q": "Quelle pâte malléable, souvent utilisée par les plombiers pour faire des joints étanches, a des propriétés adhésives ?",
+          "a": "Le mastic."
+        },
+        {
+          "level": 9,
+          "q": "Quel ruban adhésif très résistant, souvent gris argenté ou noir, est renforcé de toile ?",
+          "a": "Le ruban adhésif toilé (ou duct tape)."
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom du système de fermeture auto-agrippant, composé de deux bandes (l'une avec de minuscules crochets, l'autre avec des boucles douces) ?",
+          "a": "Le Velcro (ou scratch)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La grammaire anglaise",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est l'équivalent anglais de « je suis » ?",
+          "a": "I am."
+        },
+        {
+          "level": 2,
+          "q": "Quel temps verbal est utilisé pour exprimer une action en cours de déroulement (ex: I am eating) ?",
+          "a": "Le présent continu (ou présent progressif)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Les adjectifs s'accordent en genre et en nombre en anglais.",
+          "a": "Faux (ils sont invariables)."
+        },
+        {
+          "level": 4,
+          "q": "Quel auxiliaire est utilisé pour former des questions au présent simple (ex: Do you like apples?) ?",
+          "a": "Do (ou Does pour la 3ème personne du singulier)."
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la marque du pluriel la plus courante pour les noms en anglais ?",
+          "a": "L'ajout d'un « s » à la fin du mot."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le participe passé du verbe irrégulier « to go » (aller) ?",
+          "a": "Gone."
+        },
+        {
+          "level": 7,
+          "q": "Quel pronom relatif est utilisé pour faire référence à une personne (ex: The man ___ is standing there) ?",
+          "a": "Who (ou whom/whose dans certains cas)."
+        },
+        {
+          "level": 8,
+          "q": "Comment exprime-t-on la possession en utilisant un nom propre (ex: le livre de Paul) ?",
+          "a": "En utilisant le génitif saxon ('s) : Paul's book."
+        },
+        {
+          "level": 9,
+          "q": "Quel verbe modal est utilisé pour exprimer la capacité ou la possibilité (ex: je peux nager) ?",
+          "a": "Can."
+        },
+        {
+          "level": 10,
+          "q": "Dans la phrase « If I had money, I would buy a car », quel type de conditionnel est utilisé ?",
+          "a": "Le conditionnel de type 2 (hypothèse irréelle dans le présent)."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La peine de mort",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle machine, inventée pendant la Révolution française, était utilisée pour décapiter les condamnés ?",
+          "a": "La guillotine."
+        },
+        {
+          "level": 2,
+          "q": "Dans quel pays d'Amérique du Nord la peine de mort est-elle encore pratiquée dans plusieurs États ?",
+          "a": "Les États-Unis."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : L'Union européenne exige l'abolition de la peine de mort pour tous ses États membres.",
+          "a": "Vrai."
+        },
+        {
+          "level": 4,
+          "q": "En quelle année la peine de mort a-t-elle été abolie en France (sous la présidence de François Mitterrand) ?",
+          "a": "En 1981."
+        },
+        {
+          "level": 5,
+          "q": "Quelle méthode d'exécution, consistant à administrer un cocktail de drogues, est la plus couramment utilisée aux États-Unis aujourd'hui ?",
+          "a": "L'injection létale."
+        },
+        {
+          "level": 6,
+          "q": "Quel dispositif, utilisant le courant électrique pour exécuter un condamné, a été inventé à la fin du XIXe siècle ?",
+          "a": "La chaise électrique."
+        },
+        {
+          "level": 7,
+          "q": "Quel philosophe italien des Lumières a écrit le célèbre traité « Des délits et des peines », plaidant pour l'abolition de la peine de mort et de la torture ?",
+          "a": "Cesare Beccaria."
+        },
+        {
+          "level": 8,
+          "q": "Quelle organisation internationale non gouvernementale, lauréate du prix Nobel de la paix, milite activement contre la peine de mort dans le monde entier ?",
+          "a": "Amnesty International."
+        },
+        {
+          "level": 9,
+          "q": "Dans quel pays asiatique les exécutions par pendaison, souvent tenues secrètes jusqu'au dernier moment, suscitent-elles des critiques internationales ?",
+          "a": "Le Japon (l'énoncé indique Japon, bien que d'autres pays d'Asie pratiquent aussi des exécutions secrètes ou par pendaison)."
+        },
+        {
+          "level": 10,
+          "q": "Quelle ancienne méthode d'exécution, consistant à attacher le condamné à une roue pour lui briser les os, était courante en Europe de l'époque moderne ?",
+          "a": "Le supplice de la roue."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les coupes de viande (bœuf)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle coupe de viande est hachée pour faire un steak haché ?",
+          "a": "Diverses coupes (souvent l'épaule, le collier ou le paleron)."
+        },
+        {
+          "level": 2,
+          "q": "Quelle pièce de bœuf tendre et allongée est souvent considérée comme la plus noble et la plus chère ?",
+          "a": "Le filet."
+        },
+        {
+          "level": 3,
+          "q": "Quelle coupe épaisse et persillée est idéale pour les grillades et provient de la partie supérieure de l'animal ?",
+          "a": "L'entrecôte (ou côte de bœuf)."
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou Faux : Le paleron est un morceau idéal pour les grillades rapides.",
+          "a": "Faux (c'est un morceau à mijoter ou braiser)."
+        },
+        {
+          "level": 5,
+          "q": "Quel grand morceau de bœuf, comprenant l'os de la côte, est souvent partagé à plusieurs lors d'un barbecue ?",
+          "a": "La côte de bœuf."
+        },
+        {
+          "level": 6,
+          "q": "Quelle coupe de bœuf, issue de l'abdomen, est très plate, filandreuse et nécessite une cuisson courte et vive ?",
+          "a": "La bavette (ou hampe/onglet)."
+        },
+        {
+          "level": 7,
+          "q": "Quel morceau de bœuf gélatineux, issu de la cuisse ou de l'épaule, est indispensable pour réussir un bon pot-au-feu ou bourguignon ?",
+          "a": "Le gîte ou la macreuse (le jumeau ou paleron sont aussi acceptés)."
+        },
+        {
+          "level": 8,
+          "q": "Quelle coupe de bœuf, appelée « T-bone » en anglais, combine une partie du filet et du faux-filet séparés par un os en forme de T ?",
+          "a": "Le T-bone (ou aloyau avec os)."
+        },
+        {
+          "level": 9,
+          "q": "Quelle pièce de bœuf, située près du filet, est tendre mais moins chère, et souvent utilisée pour faire des rôtis ?",
+          "a": "Le faux-filet (ou rumsteck)."
+        },
+        {
+          "level": 10,
+          "q": "Quel nom donne-t-on à la viande située dans la mâchoire du bœuf, réputée pour sa tendreté après une longue cuisson confite ?",
+          "a": "La joue de bœuf."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Les choses molles",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel objet rempli de plumes ou de mousse place-t-on sous sa tête pour dormir ?",
+          "a": "L'oreiller."
+        },
+        {
+          "level": 2,
+          "q": "Quel dessert fondant et tremblotant, souvent aux fruits, est très populaire dans les hôpitaux américains ?",
+          "a": "La gelée (ou Jell-O)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Un matelas est généralement conçu pour être dur comme de la pierre.",
+          "a": "Faux."
+        },
+        {
+          "level": 4,
+          "q": "Quelle friandise spongieuse, souvent blanche ou rose, est traditionnellement grillée au-dessus d'un feu de camp ?",
+          "a": "La guimauve (ou marshmallow)."
+        },
+        {
+          "level": 5,
+          "q": "Quel produit laitier fermenté, vendu en petits pots, est connu pour sa texture onctueuse et molle ?",
+          "a": "Le yaourt."
+        },
+        {
+          "level": 6,
+          "q": "Quel jouet en mousse, souvent en forme d'animaux, est conçu pour être pressé afin de soulager le stress ?",
+          "a": "Une balle anti-stress (ou squishy)."
+        },
+        {
+          "level": 7,
+          "q": "Quelle pâte à modeler colorée est populaire chez les enfants depuis des décennies (marque célèbre) ?",
+          "a": "La Play-Doh (ou pâte à modeler)."
+        },
+        {
+          "level": 8,
+          "q": "Quel aliment asiatique blanc et sans goût prononcé, fabriqué à partir de lait de soja caillé, existe en version « soyeuse » très molle ?",
+          "a": "Le tofu."
+        },
+        {
+          "level": 9,
+          "q": "Quel fruit, lorsqu'il est très mûr (voire trop mûr), devient extrêmement mou et sucré, idéal pour faire du pain ou des cakes ?",
+          "a": "La banane (ou le kaki/kaki blet, l'avocat, la poire)."
+        },
+        {
+          "level": 10,
+          "q": "Quelle substance spongieuse et poreuse, souvent artificielle, est utilisée pour fabriquer des éponges de nettoyage ou des coussins ?",
+          "a": "Le polyuréthane (ou mousse synthétique)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La classification des animaux",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est l'animal terrestre le plus rapide du monde ?",
+          "a": "Le guépard."
+        },
+        {
+          "level": 2,
+          "q": "Dans quelle classe d'animaux classe-t-on les grenouilles et les crapauds ?",
+          "a": "Les amphibiens (ou batraciens)."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Les araignées sont des insectes.",
+          "a": "Faux (ce sont des arachnides, elles ont 8 pattes, pas 6)."
+        },
+        {
+          "level": 4,
+          "q": "Quelle caractéristique principale distingue les mammifères des autres animaux ?",
+          "a": "Ils allaitent leurs petits (ou ils ont des poils/le sang chaud)."
+        },
+        {
+          "level": 5,
+          "q": "Quel est le plus grand animal vivant actuellement sur Terre ?",
+          "a": "La baleine bleue."
+        },
+        {
+          "level": 6,
+          "q": "Dans quel groupe classe-t-on les requins et les dauphins ?",
+          "a": "Les mammifères marins (pour les dauphins) et les poissons cartilagineux (pour les requins). (L'énoncé est un piège, ils ne sont pas dans le même groupe !)"
+        },
+        {
+          "level": 7,
+          "q": "Quel mammifère a la particularité de pondre des œufs ?",
+          "a": "L'ornithorynque (ou l'échidné)."
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on les animaux dont la température corporelle s'adapte à celle de leur environnement (animaux à « sang froid ») ?",
+          "a": "Les animaux poïkilothermes (ou ectothermes)."
+        },
+        {
+          "level": 9,
+          "q": "Quel ordre d'insectes comprend les papillons et les phalènes ?",
+          "a": "Les lépidoptères."
+        },
+        {
+          "level": 10,
+          "q": "Quel embranchement d'animaux invertébrés comprend les escargots, les pieuvres et les huîtres ?",
+          "a": "Les mollusques."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "La mafia japonaise (Yakuza)",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel nom générique donne-t-on aux membres de la mafia japonaise ?",
+          "a": "Les Yakuza."
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la signification littérale du mot « Yakuza » ?",
+          "a": "C'est une main perdante à un jeu de cartes traditionnel japonais (Oicho-Kabu) : 8 (Ya), 9 (Ku), 3 (Za) qui fait 20, soit 0 point."
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou Faux : Les yakuzas n'ont pas le droit de se marier.",
+          "a": "Faux."
+        },
+        {
+          "level": 4,
+          "q": "Quelle pratique rituelle consistant à s'amputer une phalange (souvent le petit doigt) est utilisée pour s'excuser ou réparer une faute grave ?",
+          "a": "Le Yubitsume."
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on les tatouages traditionnels japonais très étendus, souvent arborés par les yakuzas ?",
+          "a": "Irezumi."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom du plus grand et du plus puissant syndicat (famille) yakuza au Japon ?",
+          "a": "Le Yamaguchi-gumi."
+        },
+        {
+          "level": 7,
+          "q": "Quel nom donne-t-on au chef suprême ou au parrain d'un clan yakuza ?",
+          "a": "Le Kumicho (ou l'Oyabun)."
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle la cérémonie rituelle de partage du saké qui scelle l'allégeance d'un nouveau membre à son parrain ?",
+          "a": "Le Sakazuki (ou Sakazukigoto)."
+        },
+        {
+          "level": 9,
+          "q": "Quel était l'ancêtre historique des yakuzas, souvent des marchands ambulants ou des joueurs professionnels à l'époque d'Edo ?",
+          "a": "Les Tekiya (marchands) ou les Bakuto (joueurs)."
+        },
+        {
+          "level": 10,
+          "q": "Quelle loi japonaise, introduite en 1992 (et durcie ensuite), a considérablement affaibli le pouvoir des yakuzas en ciblant leurs activités commerciales ?",
+          "a": "La loi antigang (Bōtaihō)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de la musique classique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Période associée à Mozart ?",
+          "a": "Classique"
+        },
+        {
+          "level": 2,
+          "q": "Instrument principal de Chopin ?",
+          "a": "Le piano"
+        },
+        {
+          "level": 3,
+          "q": "Compositeur des \"Quatre Saisons\" ?",
+          "a": "Vivaldi"
+        },
+        {
+          "level": 4,
+          "q": "Œuvre inachevée de Mozart ?",
+          "a": "Le Requiem"
+        },
+        {
+          "level": 5,
+          "q": "Nombre de symphonies de Beethoven ?",
+          "a": "9"
+        },
+        {
+          "level": 6,
+          "q": "Qu'est-ce qu'une fugue ?",
+          "a": "Une forme musicale polyphonique"
+        },
+        {
+          "level": 7,
+          "q": "Compositeur de \"La Flûte Enchantée\" ?",
+          "a": "Mozart"
+        },
+        {
+          "level": 8,
+          "q": "Nationalité de Tchaïkovski ?",
+          "a": "Russe"
+        },
+        {
+          "level": 9,
+          "q": "Époque de Bach ?",
+          "a": "Baroque"
+        },
+        {
+          "level": 10,
+          "q": "Qu'est-ce qu'un concerto ?",
+          "a": "Une composition pour instrument soliste et orchestre"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les superstitions macabres",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Animal associé à la malchance ?",
+          "a": "Le chat noir"
+        },
+        {
+          "level": 2,
+          "q": "Nombre considéré comme maudit en Asie ?",
+          "a": "4"
+        },
+        {
+          "level": 3,
+          "q": "Que faire si l'on renverse du sel ?",
+          "a": "En jeter par-dessus l'épaule gauche"
+        },
+        {
+          "level": 4,
+          "q": "Objet à ne pas ouvrir à l'intérieur ?",
+          "a": "Un parapluie"
+        },
+        {
+          "level": 5,
+          "q": "Signification d'un miroir brisé ?",
+          "a": "7 ans de malheur"
+        },
+        {
+          "level": 6,
+          "q": "Pourquoi éviter de passer sous une échelle ?",
+          "a": "C'est lié au triangle de la Sainte Trinité"
+        },
+        {
+          "level": 7,
+          "q": "Oiseau associé à la mort ?",
+          "a": "Le corbeau ou la chouette"
+        },
+        {
+          "level": 8,
+          "q": "Jour de la semaine considéré comme malchanceux ?",
+          "a": "Le vendredi"
+        },
+        {
+          "level": 9,
+          "q": "Que signifie un chat noir croisant votre chemin ?",
+          "a": "Un mauvais présage"
+        },
+        {
+          "level": 10,
+          "q": "Plante associée à la protection contre le mal ?",
+          "a": "L'ail ou le romarin"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de fromages britanniques",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Fromage bleu célèbre ?",
+          "a": "Le Stilton"
+        },
+        {
+          "level": 2,
+          "q": "Fromage à pâte dure le plus consommé ?",
+          "a": "Le Cheddar"
+        },
+        {
+          "level": 3,
+          "q": "Fromage du Pays de Galles ?",
+          "a": "Le Caerphilly"
+        },
+        {
+          "level": 4,
+          "q": "Fromage avec de la ciboulette et des oignons ?",
+          "a": "Le Double Gloucester"
+        },
+        {
+          "level": 5,
+          "q": "Fromage à croûte lavée ?",
+          "a": "Le Stinking Bishop"
+        },
+        {
+          "level": 6,
+          "q": "Fromage similaire au Camembert ?",
+          "a": "Le Somerset Brie"
+        },
+        {
+          "level": 7,
+          "q": "Fromage utilisé dans le \"ploughman's lunch\" ?",
+          "a": "Le Cheddar (souvent)"
+        },
+        {
+          "level": 8,
+          "q": "Fromage écossais ?",
+          "a": "Le Caboc ou le Dunlop"
+        },
+        {
+          "level": 9,
+          "q": "Fromage roulé dans de la cendre ?",
+          "a": "Le Cerney Ash"
+        },
+        {
+          "level": 10,
+          "q": "Fromage à base de lait de brebis ?",
+          "a": "Le Lanark Blue"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la forêt",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal construit des barrages ?",
+          "a": "Le castor"
+        },
+        {
+          "level": 2,
+          "q": "Fruit du chêne ?",
+          "a": "Le gland"
+        },
+        {
+          "level": 3,
+          "q": "Champignon rouge à pois blancs ?",
+          "a": "L'amanite tue-mouches"
+        },
+        {
+          "level": 4,
+          "q": "Arbre qui perd ses épines en hiver ?",
+          "a": "Le mélèze"
+        },
+        {
+          "level": 5,
+          "q": "Quel oiseau picore l'écorce des arbres ?",
+          "a": "Le pivert (ou pic vert)"
+        },
+        {
+          "level": 6,
+          "q": "Plante grimpante qui étouffe les arbres ?",
+          "a": "Le lierre"
+        },
+        {
+          "level": 7,
+          "q": "Plus grand cervidé d'Europe ?",
+          "a": "L'élan"
+        },
+        {
+          "level": 8,
+          "q": "Mammifère volant nocturne ?",
+          "a": "La chauve-souris"
+        },
+        {
+          "level": 9,
+          "q": "Quel insecte produit du miel ?",
+          "a": "L'abeille sauvage"
+        },
+        {
+          "level": 10,
+          "q": "Arbre dont la sève donne un sirop sucré ?",
+          "a": "L'érable"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de la danse",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Danse classique sur pointes ?",
+          "a": "Le ballet"
+        },
+        {
+          "level": 2,
+          "q": "Danse d'origine argentine ?",
+          "a": "Le tango"
+        },
+        {
+          "level": 3,
+          "q": "Danse urbaine née dans le Bronx ?",
+          "a": "Le hip-hop (breakdance)"
+        },
+        {
+          "level": 4,
+          "q": "Danse espagnole avec castagnettes ?",
+          "a": "Le flamenco"
+        },
+        {
+          "level": 5,
+          "q": "Danse traditionnelle brésilienne ?",
+          "a": "La samba"
+        },
+        {
+          "level": 6,
+          "q": "Pionnière de la danse moderne ?",
+          "a": "Isadora Duncan ou Martha Graham"
+        },
+        {
+          "level": 7,
+          "q": "Danse de salon viennoise ?",
+          "a": "La valse"
+        },
+        {
+          "level": 8,
+          "q": "Danse théâtrale japonaise ?",
+          "a": "Le kabuki ou le butō"
+        },
+        {
+          "level": 9,
+          "q": "Danse traditionnelle hawaïenne ?",
+          "a": "Le hula"
+        },
+        {
+          "level": 10,
+          "q": "Chorégraphe du \"Sacre du printemps\" ?",
+          "a": "Vaslav Nijinski"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les phobies étranges",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Peur des araignées ?",
+          "a": "Arachnophobie"
+        },
+        {
+          "level": 2,
+          "q": "Peur des espaces clos ?",
+          "a": "Claustrophobie"
+        },
+        {
+          "level": 3,
+          "q": "Peur des hauteurs ?",
+          "a": "Acrophobie"
+        },
+        {
+          "level": 4,
+          "q": "Peur du sang ?",
+          "a": "Hématophobie"
+        },
+        {
+          "level": 5,
+          "q": "Peur des clowns ?",
+          "a": "Coulrophobie"
+        },
+        {
+          "level": 6,
+          "q": "Peur du chiffre 13 ?",
+          "a": "Triskaïdékaphobie"
+        },
+        {
+          "level": 7,
+          "q": "Peur des trous rapprochés ?",
+          "a": "Trypophobie"
+        },
+        {
+          "level": 8,
+          "q": "Peur des mots longs ?",
+          "a": "Hippopotomonstrosesquippedaliophobie"
+        },
+        {
+          "level": 9,
+          "q": "Peur d'être sans son téléphone portable ?",
+          "a": "Nomophobie"
+        },
+        {
+          "level": 10,
+          "q": "Peur du beurre de cacahuète collé au palais ?",
+          "a": "Arachibutyrophobie"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de vins français",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Couleur du vin de Bordeaux le plus célèbre ?",
+          "a": "Rouge"
+        },
+        {
+          "level": 2,
+          "q": "Vin effervescent de la région de Champagne ?",
+          "a": "Le Champagne"
+        },
+        {
+          "level": 3,
+          "q": "Vin jaune de quelle région ?",
+          "a": "Le Jura"
+        },
+        {
+          "level": 4,
+          "q": "Cépage principal du Bourgogne rouge ?",
+          "a": "Le Pinot Noir"
+        },
+        {
+          "level": 5,
+          "q": "Vin rosé célèbre de la vallée du Rhône ?",
+          "a": "Tavel"
+        },
+        {
+          "level": 6,
+          "q": "Vin blanc liquoreux de Bordeaux ?",
+          "a": "Sauternes"
+        },
+        {
+          "level": 7,
+          "q": "Cépage principal du Sancerre blanc ?",
+          "a": "Sauvignon Blanc"
+        },
+        {
+          "level": 8,
+          "q": "Région du Châteauneuf-du-Pape ?",
+          "a": "Vallée du Rhône"
+        },
+        {
+          "level": 9,
+          "q": "Vin blanc de la Loire (Muscadet) ?",
+          "a": "Sauvignon Blanc"
+        },
+        {
+          "level": 10,
+          "q": "Vin muté du Languedoc-Roussillon ?",
+          "a": "Muscat de Rivesaltes ou Banyuls"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Où jette-t-on ses déchets ?",
+          "a": "Une poubelle"
+        },
+        {
+          "level": 2,
+          "q": "Lumière qui règle la circulation ?",
+          "a": "Le feu tricolore"
+        },
+        {
+          "level": 3,
+          "q": "Passage pour les piétons ?",
+          "a": "Le passage clouté (ou zébré)"
+        },
+        {
+          "level": 4,
+          "q": "Véhicule de transport en commun souterrain ?",
+          "a": "Le métro"
+        },
+        {
+          "level": 5,
+          "q": "Bâtiment où l'on emprunte des livres ?",
+          "a": "La bibliothèque"
+        },
+        {
+          "level": 6,
+          "q": "Lieu où l'on peut voir des œuvres d'art ?",
+          "a": "Le musée"
+        },
+        {
+          "level": 7,
+          "q": "Endroit pour se promener avec de la verdure ?",
+          "a": "Le parc"
+        },
+        {
+          "level": 8,
+          "q": "Grand magasin avec de nombreuses boutiques ?",
+          "a": "Le centre commercial"
+        },
+        {
+          "level": 9,
+          "q": "Bâtiment très haut ?",
+          "a": "Le gratte-ciel"
+        },
+        {
+          "level": 10,
+          "q": "Monument commémoratif souvent au centre d'une place ?",
+          "a": "La statue ou l'obélisque"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de l'architecture",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Bâtiments pointus d'Égypte antique ?",
+          "a": "Les pyramides"
+        },
+        {
+          "level": 2,
+          "q": "Arènes romaines célèbres ?",
+          "a": "Le Colisée"
+        },
+        {
+          "level": 3,
+          "q": "Style architectural de Notre-Dame de Paris ?",
+          "a": "Gothique"
+        },
+        {
+          "level": 4,
+          "q": "Palais des rois de France à Versailles ?",
+          "a": "Le Château de Versailles"
+        },
+        {
+          "level": 5,
+          "q": "Mausolée de marbre blanc en Inde ?",
+          "a": "Le Taj Mahal"
+        },
+        {
+          "level": 6,
+          "q": "Architecte de la Sagrada Família ?",
+          "a": "Antoni Gaudí"
+        },
+        {
+          "level": 7,
+          "q": "Style caractérisé par des voûtes en berceau ?",
+          "a": "Roman"
+        },
+        {
+          "level": 8,
+          "q": "Mouvement de l'entre-deux-guerres (Bauhaus) ?",
+          "a": "Le Modernisme"
+        },
+        {
+          "level": 9,
+          "q": "Architecte du Musée Guggenheim de Bilbao ?",
+          "a": "Frank Gehry"
+        },
+        {
+          "level": 10,
+          "q": "Style architectural des gratte-ciel des années 1920 ?",
+          "a": "Art Déco"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les tueurs en série français",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Surnom de Guy Georges ?",
+          "a": "Le tueur de l'Est parisien"
+        },
+        {
+          "level": 2,
+          "q": "Ogre des Ardennes ?",
+          "a": "Michel Fourniret"
+        },
+        {
+          "level": 3,
+          "q": "Tueur de vieilles dames dans les années 80 ?",
+          "a": "Thierry Paulin"
+        },
+        {
+          "level": 4,
+          "q": "L'étrangleur des parkings ?",
+          "a": "Patrice Alègre (avec Thierry Paulin)"
+        },
+        {
+          "level": 5,
+          "q": "Tueur au visage d'ange ?",
+          "a": "Jacques Mesrine"
+        },
+        {
+          "level": 6,
+          "q": "Le routard du crime ?",
+          "a": "Francis Heaulme"
+        },
+        {
+          "level": 7,
+          "q": "Surnom de Marcel Barbeault ?",
+          "a": "Le tueur de l'ombre"
+        },
+        {
+          "level": 8,
+          "q": "Tueur en série de la gare de Perpignan ?",
+          "a": "Jacques Rançon"
+        },
+        {
+          "level": 9,
+          "q": "Le dépeceur de Montmartre ?",
+          "a": "Guy Treins"
+        },
+        {
+          "level": 10,
+          "q": "Surnom d'Émile Louis ?",
+          "a": "Le boucher de l'Yonne"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de sushis",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Tranche de poisson cru sur du riz ?",
+          "a": "Le nigiri"
+        },
+        {
+          "level": 2,
+          "q": "Rouleau de riz entouré d'algue ?",
+          "a": "Le maki"
+        },
+        {
+          "level": 3,
+          "q": "Gros rouleau avec plusieurs ingrédients ?",
+          "a": "Le futomaki"
+        },
+        {
+          "level": 4,
+          "q": "Rouleau inversé (riz à l'extérieur) ?",
+          "a": "L'uramaki"
+        },
+        {
+          "level": 5,
+          "q": "Cornet d'algue rempli de riz et d'ingrédients ?",
+          "a": "Le temaki"
+        },
+        {
+          "level": 6,
+          "q": "Sushi en forme de bateau ?",
+          "a": "Le gunkanmaki"
+        },
+        {
+          "level": 7,
+          "q": "Tranches de poisson cru servies seules ?",
+          "a": "Le sashimi"
+        },
+        {
+          "level": 8,
+          "q": "Sushi avec de l'omelette sucrée ?",
+          "a": "Le tamagoyaki (ou tamago nigiri)"
+        },
+        {
+          "level": 9,
+          "q": "Bol de riz recouvert de garnitures ?",
+          "a": "Le chirashi"
+        },
+        {
+          "level": 10,
+          "q": "Sushi pressé dans un moule en bois ?",
+          "a": "L'oshizushi"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la plage",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Grains qui composent la plage ?",
+          "a": "Le sable"
+        },
+        {
+          "level": 2,
+          "q": "Mouvement de l'eau sur le rivage ?",
+          "a": "Les vagues"
+        },
+        {
+          "level": 3,
+          "q": "Abri pour se protéger du soleil ?",
+          "a": "Le parasol"
+        },
+        {
+          "level": 4,
+          "q": "Tissu pour s'essuyer ?",
+          "a": "La serviette"
+        },
+        {
+          "level": 5,
+          "q": "Vêtement pour se baigner ?",
+          "a": "Le maillot de bain"
+        },
+        {
+          "level": 6,
+          "q": "Produit pour protéger la peau ?",
+          "a": "La crème solaire"
+        },
+        {
+          "level": 7,
+          "q": "Coquille vide d'un animal marin ?",
+          "a": "Le coquillage"
+        },
+        {
+          "level": 8,
+          "q": "Château fait en sable ?",
+          "a": "Le château de sable"
+        },
+        {
+          "level": 9,
+          "q": "Oiseau marin commun ?",
+          "a": "La mouette ou le goéland"
+        },
+        {
+          "level": 10,
+          "q": "Planche pour glisser sur les vagues ?",
+          "a": "La planche de surf"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de l'imprimerie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Inventeur de l'imprimerie à caractères mobiles ?",
+          "a": "Johannes Gutenberg"
+        },
+        {
+          "level": 2,
+          "q": "Premier livre imprimé ?",
+          "a": "La Bible"
+        },
+        {
+          "level": 3,
+          "q": "Siècle de l'invention de l'imprimerie ?",
+          "a": "XVe siècle"
+        },
+        {
+          "level": 4,
+          "q": "Où Gutenberg a-t-il inventé l'imprimerie ?",
+          "a": "À Mayence"
+        },
+        {
+          "level": 5,
+          "q": "Pays où a été inventée l'imprimerie xylographique ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 6,
+          "q": "Matériau utilisé pour les premiers caractères mobiles ?",
+          "a": "Le plomb"
+        },
+        {
+          "level": 7,
+          "q": "Machine qui a révolutionné l'imprimerie au XIXe siècle ?",
+          "a": "La linotype"
+        },
+        {
+          "level": 8,
+          "q": "Inventeur de la presse rotative ?",
+          "a": "Friedrich Koenig"
+        },
+        {
+          "level": 9,
+          "q": "Procédé d'impression basé sur la répulsion de l'eau et de l'encre ?",
+          "a": "L'offset"
+        },
+        {
+          "level": 10,
+          "q": "Créateur des premiers caractères romains ?",
+          "a": "Nicolas Jenson"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les catastrophes industrielles",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Catastrophe nucléaire en Ukraine en 1986 ?",
+          "a": "Tchernobyl"
+        },
+        {
+          "level": 2,
+          "q": "Fuite de gaz toxique en Inde en 1984 ?",
+          "a": "Bhopal"
+        },
+        {
+          "level": 3,
+          "q": "Catastrophe nucléaire au Japon en 2011 ?",
+          "a": "Fukushima"
+        },
+        {
+          "level": 4,
+          "q": "Explosion d'une usine chimique à Toulouse en 2001 ?",
+          "a": "AZF"
+        },
+        {
+          "level": 5,
+          "q": "Marée noire causée par un pétrolier en 1999 au large de la Bretagne ?",
+          "a": "L'Erika"
+        },
+        {
+          "level": 6,
+          "q": "Incendie d'une plateforme pétrolière dans le golfe du Mexique en 2010 ?",
+          "a": "Deepwater Horizon"
+        },
+        {
+          "level": 7,
+          "q": "Catastrophe minière au Chili en 2010 ?",
+          "a": "L'accident de Copiapó"
+        },
+        {
+          "level": 8,
+          "q": "Nuage toxique en Italie en 1976 ?",
+          "a": "Seveso"
+        },
+        {
+          "level": 9,
+          "q": "Explosion dans le port de Beyrouth en 2020 ?",
+          "a": "L'explosion du nitrate d'ammonium"
+        },
+        {
+          "level": 10,
+          "q": "Catastrophe minière en France en 1906 ?",
+          "a": "La catastrophe de Courrières"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les types de pains français",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Pain long et fin, symbole de la France ?",
+          "a": "La baguette"
+        },
+        {
+          "level": 2,
+          "q": "Pain en forme de croissant ?",
+          "a": "Le croissant"
+        },
+        {
+          "level": 3,
+          "q": "Pain au chocolat ou... ?",
+          "a": "Chocolatine"
+        },
+        {
+          "level": 4,
+          "q": "Pain rond avec une mie dense ?",
+          "a": "La boule de campagne"
+        },
+        {
+          "level": 5,
+          "q": "Pain à la mie aérée et alvéolée ?",
+          "a": "Le pain au levain"
+        },
+        {
+          "level": 6,
+          "q": "Pain en forme de couronne ?",
+          "a": "La couronne bordelaise"
+        },
+        {
+          "level": 7,
+          "q": "Pain avec des céréales ou des graines ?",
+          "a": "Le pain aux céréales"
+        },
+        {
+          "level": 8,
+          "q": "Pain plat du sud de la France ?",
+          "a": "La fougasse"
+        },
+        {
+          "level": 9,
+          "q": "Pain brioché alsacien ?",
+          "a": "La brioche"
+        },
+        {
+          "level": 10,
+          "q": "Pain traditionnel corse ?",
+          "a": "Le bretzel"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la montagne",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Où glisse-t-on sur la neige ?",
+          "a": "Une piste de ski"
+        },
+        {
+          "level": 2,
+          "q": "Animal qui siffle dans la montagne ?",
+          "a": "La marmotte"
+        },
+        {
+          "level": 3,
+          "q": "Véhicule suspendu à un câble ?",
+          "a": "Le téléphérique (ou télésiège)"
+        },
+        {
+          "level": 4,
+          "q": "Fleur blanche des Alpes ?",
+          "a": "L'edelweiss"
+        },
+        {
+          "level": 5,
+          "q": "Amas de neige qui dévale une pente ?",
+          "a": "L'avalanche"
+        },
+        {
+          "level": 6,
+          "q": "Animal aux cornes recourbées ?",
+          "a": "Le chamois (ou bouquetin)"
+        },
+        {
+          "level": 7,
+          "q": "Cabane en bois dans la montagne ?",
+          "a": "Le chalet"
+        },
+        {
+          "level": 8,
+          "q": "Chaussures à raquettes pour marcher sur la neige ?",
+          "a": "Les raquettes"
+        },
+        {
+          "level": 9,
+          "q": "Oiseau de proie qui plane au-dessus des sommets ?",
+          "a": "L'aigle (ou le vautour)"
+        },
+        {
+          "level": 10,
+          "q": "Plus haut sommet d'Europe occidentale ?",
+          "a": "Le Mont Blanc"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La mythologie égyptienne",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dieu du soleil à tête de faucon ?",
+          "a": "Rê (ou Râ)"
+        },
+        {
+          "level": 2,
+          "q": "Dieu des morts, momifié ?",
+          "a": "Osiris"
+        },
+        {
+          "level": 3,
+          "q": "Déesse de la magie et épouse d'Osiris ?",
+          "a": "Isis"
+        },
+        {
+          "level": 4,
+          "q": "Dieu à tête de chacal, fils d'Osiris ?",
+          "a": "Horus"
+        },
+        {
+          "level": 5,
+          "q": "Dieu de la momification à tête de chacal ?",
+          "a": "Anubis"
+        },
+        {
+          "level": 6,
+          "q": "Dieu du chaos, frère d'Osiris ?",
+          "a": "Seth"
+        },
+        {
+          "level": 7,
+          "q": "Déesse de l'amour à tête de vache ?",
+          "a": "Hathor"
+        },
+        {
+          "level": 8,
+          "q": "Dieu de la sagesse à tête d'ibis ?",
+          "a": "Thot"
+        },
+        {
+          "level": 9,
+          "q": "Déesse chatte ou lionne ?",
+          "a": "Bastet"
+        },
+        {
+          "level": 10,
+          "q": "Monstre qui dévore le cœur des morts indignes ?",
+          "a": "Âmmout"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les poisons célèbres de l'Histoire",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Poison utilisé par Socrate pour se suicider ?",
+          "a": "La ciguë"
+        },
+        {
+          "level": 2,
+          "q": "Poison à base d'arsenic très prisé au Moyen Âge ?",
+          "a": "La poudre de succession"
+        },
+        {
+          "level": 3,
+          "q": "Métal lourd souvent utilisé comme poison ?",
+          "a": "L'arsenic"
+        },
+        {
+          "level": 4,
+          "q": "Poison contenu dans les pépins de pomme ?",
+          "a": "Le cyanure"
+        },
+        {
+          "level": 5,
+          "q": "Poison mortel dérivé du ricin ?",
+          "a": "La ricine"
+        },
+        {
+          "level": 6,
+          "q": "Alcaloïde toxique de la belladone ?",
+          "a": "L'atropine"
+        },
+        {
+          "level": 7,
+          "q": "Poison qui a tué Raspoutine ?",
+          "a": "Le cyanure"
+        },
+        {
+          "level": 8,
+          "q": "Gaz mortel utilisé dans les chambres à gaz ?",
+          "a": "Le Zyklon B"
+        },
+        {
+          "level": 9,
+          "q": "Poison radioactif utilisé pour assassiner Alexandre Litvinenko ?",
+          "a": "Le polonium 210"
+        },
+        {
+          "level": 10,
+          "q": "Toxine mortelle du poisson fugu ?",
+          "a": "La tétrodotoxine"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les instruments de musique à vent",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Instrument à vent avec des touches noires et blanches ?",
+          "a": "Le piano (à vent)"
+        },
+        {
+          "level": 2,
+          "q": "Instrument en bois ou métal percé de trous ?",
+          "a": "La flûte"
+        },
+        {
+          "level": 3,
+          "q": "Instrument à anche simple de la famille des bois ?",
+          "a": "La clarinette"
+        },
+        {
+          "level": 4,
+          "q": "Instrument en cuivre avec une coulisse ?",
+          "a": "Le trombone"
+        },
+        {
+          "level": 5,
+          "q": "Instrument en cuivre avec des pistons ou des palettes ?",
+          "a": "La trompette"
+        },
+        {
+          "level": 6,
+          "q": "Plus grand instrument de la famille des cuivres ?",
+          "a": "Le tuba"
+        },
+        {
+          "level": 7,
+          "q": "Instrument à vent traditionnel écossais ?",
+          "a": "La cornemuse"
+        },
+        {
+          "level": 8,
+          "q": "Instrument à anche double de la famille des bois ?",
+          "a": "Le hautbois"
+        },
+        {
+          "level": 9,
+          "q": "Plus grand et plus grave instrument de la famille des bois ?",
+          "a": "Le contrebasson"
+        },
+        {
+          "level": 10,
+          "q": "Instrument à vent en terre cuite en forme d'œuf ?",
+          "a": "L'ocarina"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable du corps humain",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qu'est-ce qui pousse sur la tête ?",
+          "a": "Les cheveux"
+        },
+        {
+          "level": 2,
+          "q": "Organe qui bat dans la poitrine ?",
+          "a": "Le cœur"
+        },
+        {
+          "level": 3,
+          "q": "Liquide rouge qui circule dans les veines ?",
+          "a": "Le sang"
+        },
+        {
+          "level": 4,
+          "q": "Organes de la respiration ?",
+          "a": "Les poumons"
+        },
+        {
+          "level": 5,
+          "q": "Os qui protège le cerveau ?",
+          "a": "Le crâne"
+        },
+        {
+          "level": 6,
+          "q": "Muscle qui aide à la digestion et sépare le thorax de l'abdomen ?",
+          "a": "Le diaphragme"
+        },
+        {
+          "level": 7,
+          "q": "Plus grand organe du corps humain ?",
+          "a": "La peau"
+        },
+        {
+          "level": 8,
+          "q": "Combien d'os a un adulte (environ) ?",
+          "a": "206"
+        },
+        {
+          "level": 9,
+          "q": "Glande qui produit l'insuline ?",
+          "a": "Le pancréas"
+        },
+        {
+          "level": 10,
+          "q": "Partie de l'œil qui donne sa couleur ?",
+          "a": "L'iris"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La mythologie nordique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dieu suprême, père de tous ?",
+          "a": "Odin"
+        },
+        {
+          "level": 2,
+          "q": "Dieu du tonnerre avec un marteau ?",
+          "a": "Thor"
+        },
+        {
+          "level": 3,
+          "q": "Dieu de la malice et des illusions ?",
+          "a": "Loki"
+        },
+        {
+          "level": 4,
+          "q": "Marteau de Thor ?",
+          "a": "Mjöllnir"
+        },
+        {
+          "level": 5,
+          "q": "Arbre monde qui relie les neuf mondes ?",
+          "a": "Yggdrasil"
+        },
+        {
+          "level": 6,
+          "q": "Déesse de l'amour et de la beauté ?",
+          "a": "Freyja"
+        },
+        {
+          "level": 7,
+          "q": "Royaume des dieux Ases ?",
+          "a": "Asgard"
+        },
+        {
+          "level": 8,
+          "q": "Loup géant, fils de Loki ?",
+          "a": "Fenrir"
+        },
+        {
+          "level": 9,
+          "q": "Fin du monde prophétique ?",
+          "a": "Ragnarök"
+        },
+        {
+          "level": 10,
+          "q": "Guerrières qui choisissent les morts au combat ?",
+          "a": "Les Valkyries"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les instruments de torture au Moyen Âge",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Instrument où la victime est écartelée en tirant sur ses membres ?",
+          "a": "Le chevalet (ou l'estrapade)"
+        },
+        {
+          "level": 2,
+          "q": "Outil pour écraser les pouces ?",
+          "a": "Les poucettes"
+        },
+        {
+          "level": 3,
+          "q": "Sarcophage hérissé de pointes à l'intérieur ?",
+          "a": "La Vierge de fer"
+        },
+        {
+          "level": 4,
+          "q": "Supplice de l'eau (faire avaler des litres d'eau) ?",
+          "a": "La question de l'eau"
+        },
+        {
+          "level": 5,
+          "q": "Instrument en forme de poire inséré dans les orifices ?",
+          "a": "La poire d'angoisse"
+        },
+        {
+          "level": 6,
+          "q": "Supplice d'enfermement dans une cage étroite suspendue ?",
+          "a": "La cage de fer (ou gibet)"
+        },
+        {
+          "level": 7,
+          "q": "Roue sur laquelle la victime est attachée et ses os brisés ?",
+          "a": "La roue"
+        },
+        {
+          "level": 8,
+          "q": "Chaise garnie de clous ?",
+          "a": "La chaise de Judas"
+        },
+        {
+          "level": 9,
+          "q": "Outil pour arracher les seins ?",
+          "a": "Les griffes de chat (ou araignée)"
+        },
+        {
+          "level": 10,
+          "q": "Scie utilisée pour couper la victime en deux ?",
+          "a": "La scie (supplice de la scie)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les instruments de musique à cordes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Instrument à 6 cordes très utilisé dans le rock ?",
+          "a": "La guitare"
+        },
+        {
+          "level": 2,
+          "q": "Petit instrument à 4 cordes originaire d'Hawaï ?",
+          "a": "Le ukulélé"
+        },
+        {
+          "level": 3,
+          "q": "Instrument à cordes frottées, le plus aigu de sa famille ?",
+          "a": "Le violon"
+        },
+        {
+          "level": 4,
+          "q": "Instrument souvent associé à un ange ?",
+          "a": "La harpe"
+        },
+        {
+          "level": 5,
+          "q": "Plus grand instrument de la famille des cordes frottées ?",
+          "a": "La contrebasse"
+        },
+        {
+          "level": 6,
+          "q": "Instrument à cordes frappées avec un clavier ?",
+          "a": "Le piano"
+        },
+        {
+          "level": 7,
+          "q": "Instrument traditionnel russe de forme triangulaire ?",
+          "a": "La balalaïka"
+        },
+        {
+          "level": 8,
+          "q": "Instrument indien, sorte de luth ?",
+          "a": "Le sitar"
+        },
+        {
+          "level": 9,
+          "q": "Ancêtre du piano à cordes pincées ?",
+          "a": "Le clavecin"
+        },
+        {
+          "level": 10,
+          "q": "Instrument du Moyen Âge, joué avec une manivelle ?",
+          "a": "La vielle à roue"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la maison hantée",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Bruit de pas ou voix sans origine apparente ?",
+          "a": "Les bruits fantomatiques (ou poltergeist)"
+        },
+        {
+          "level": 2,
+          "q": "Porte qui s'ouvre ou se ferme toute seule ?",
+          "a": "La porte grinçante"
+        },
+        {
+          "level": 3,
+          "q": "Objet qui se déplace tout seul ?",
+          "a": "La télékinésie (ou poltergeist)"
+        },
+        {
+          "level": 4,
+          "q": "Chute soudaine de la température dans une pièce ?",
+          "a": "Le courant d'air glacial"
+        },
+        {
+          "level": 5,
+          "q": "Apparition translucide ou floue ?",
+          "a": "Le fantôme (ou spectre)"
+        },
+        {
+          "level": 6,
+          "q": "Liquide rouge coulant des murs ?",
+          "a": "Le sang"
+        },
+        {
+          "level": 7,
+          "q": "Animal de compagnie refusant d'entrer dans une pièce ?",
+          "a": "Le chien ou le chat (comportement étrange)"
+        },
+        {
+          "level": 8,
+          "q": "Appareil électrique s'allumant seul ?",
+          "a": "Le dysfonctionnement électrique"
+        },
+        {
+          "level": 9,
+          "q": "Sentiment d'être observé ?",
+          "a": "La paranoïa (ou présence invisible)"
+        },
+        {
+          "level": 10,
+          "q": "Horloge s'arrêtant toujours à la même heure ?",
+          "a": "L'heure de la mort"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La mythologie grecque",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dieu du ciel et souverain des dieux ?",
+          "a": "Zeus"
+        },
+        {
+          "level": 2,
+          "q": "Déesse de la sagesse et de la guerre ?",
+          "a": "Athéna"
+        },
+        {
+          "level": 3,
+          "q": "Dieu de la mer avec un trident ?",
+          "a": "Poséidon"
+        },
+        {
+          "level": 4,
+          "q": "Déesse de l'amour et de la beauté ?",
+          "a": "Aphrodite"
+        },
+        {
+          "level": 5,
+          "q": "Dieu des enfers ?",
+          "a": "Hadès"
+        },
+        {
+          "level": 6,
+          "q": "Dieu de la guerre, fils de Zeus et Héra ?",
+          "a": "Arès"
+        },
+        {
+          "level": 7,
+          "q": "Messager des dieux avec des sandales ailées ?",
+          "a": "Hermès"
+        },
+        {
+          "level": 8,
+          "q": "Dieu du soleil, de la musique et de la poésie ?",
+          "a": "Apollon"
+        },
+        {
+          "level": 9,
+          "q": "Déesse de la chasse et de la lune ?",
+          "a": "Artémis"
+        },
+        {
+          "level": 10,
+          "q": "Dieu du feu et des forges ?",
+          "a": "Héphaïstos"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les tueurs en série américains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Tueur en série habillé en clown (Pogo) ?",
+          "a": "John Wayne Gacy"
+        },
+        {
+          "level": 2,
+          "q": "Cannibale de Milwaukee ?",
+          "a": "Jeffrey Dahmer"
+        },
+        {
+          "level": 3,
+          "q": "Tueur charismatique exécuté en 1989 ?",
+          "a": "Ted Bundy"
+        },
+        {
+          "level": 4,
+          "q": "Tueur du Zodiaque (vrai nom) ?",
+          "a": "Identité toujours inconnue"
+        },
+        {
+          "level": 5,
+          "q": "Le \"Fils de Sam\" ?",
+          "a": "David Berkowitz"
+        },
+        {
+          "level": 6,
+          "q": "Tueur de la Green River ?",
+          "a": "Gary Ridgway"
+        },
+        {
+          "level": 7,
+          "q": "BTK (Bind, Torture, Kill) ?",
+          "a": "Dennis Rader"
+        },
+        {
+          "level": 8,
+          "q": "Le Traqueur de la nuit ?",
+          "a": "Richard Ramirez"
+        },
+        {
+          "level": 9,
+          "q": "Tueur en série de l'hôtel de l'Exposition universelle (1893) ?",
+          "a": "H.H. Holmes"
+        },
+        {
+          "level": 10,
+          "q": "L'étrangleur de Boston ?",
+          "a": "Albert DeSalvo"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les instruments de musique du monde",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Instrument à vent en bois australien (souvent aborigène) ?",
+          "a": "Le didgeridoo"
+        },
+        {
+          "level": 2,
+          "q": "Tambour africain joué avec les mains ?",
+          "a": "Le djembé"
+        },
+        {
+          "level": 3,
+          "q": "Guitare japonaise triangulaire à trois cordes ?",
+          "a": "La balalaïka (russe, piège !) / Le shamisen (japonais)"
+        },
+        {
+          "level": 4,
+          "q": "Instrument à cordes pincées de la musique classique indienne ?",
+          "a": "Le sitar"
+        },
+        {
+          "level": 5,
+          "q": "Flûte de Pan originaire des Andes ?",
+          "a": "La flûte de Pan (ou siku, zampoña)"
+        },
+        {
+          "level": 6,
+          "q": "Petit tambourin sur cadre avec des cymbalettes (moyen-orient) ?",
+          "a": "Le riq (ou daf)"
+        },
+        {
+          "level": 7,
+          "q": "Instrument à cordes frottées chinois ?",
+          "a": "L'erhu"
+        },
+        {
+          "level": 8,
+          "q": "Harpe traditionnelle d'Afrique de l'Ouest ?",
+          "a": "La kora"
+        },
+        {
+          "level": 9,
+          "q": "Instrument de percussion en acier originaire de Trinité-et-Tobago ?",
+          "a": "Le steel drum (ou steeldrum)"
+        },
+        {
+          "level": 10,
+          "q": "Instrument à cordes sud-américain, traditionnellement fait avec une carapace de tatou ?",
+          "a": "Le charango"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de l'espace",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La Terre est la seule planète du système solaire à ne pas porter le nom d'un dieu ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 2,
+          "q": "Le Soleil est vert ?",
+          "a": "Faux (il est blanc/jaune)."
+        },
+        {
+          "level": 3,
+          "q": "Il pleut des diamants sur Neptune ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 4,
+          "q": "Les astronautes grandissent dans l'espace ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 5,
+          "q": "Un jour sur Vénus est plus long qu'une année sur Vénus ?",
+          "a": "Vrai (Vénus tourne très lentement sur elle-même)."
+        },
+        {
+          "level": 6,
+          "q": "Si vous pleurez dans l'espace, les larmes tombent ?",
+          "a": "Faux (elles forment une bulle autour de l'œil)."
+        },
+        {
+          "level": 7,
+          "q": "L'espace a une odeur ?",
+          "a": "Vrai (les astronautes décrivent une odeur de métal brûlé ou de viande grillée)."
+        },
+        {
+          "level": 8,
+          "q": "On peut entendre les explosions d'étoiles dans l'espace ?",
+          "a": "Faux (le son ne se propage pas dans le vide)."
+        },
+        {
+          "level": 9,
+          "q": "Il y a plus d'arbres sur Terre que d'étoiles dans la Voie lactée ?",
+          "a": "Vrai (environ 3 000 milliards d'arbres contre 100 à 400 milliards d'étoiles)."
+        },
+        {
+          "level": 10,
+          "q": "La lumière met 1 an à voyager du Soleil à la Terre ?",
+          "a": "Faux (elle met environ 8 minutes)."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire du cinéma",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le premier film de l'histoire a été réalisé par les frères... ?",
+          "a": "Lumière."
+        },
+        {
+          "level": 2,
+          "q": "Quel film de 1927 est considéré comme le premier film parlant ?",
+          "a": "Le Chanteur de jazz."
+        },
+        {
+          "level": 3,
+          "q": "Quel film de 1939 a popularisé l'utilisation du Technicolor ?",
+          "a": "Le Magicien d'Oz (ou Autant en emporte le vent)."
+        },
+        {
+          "level": 4,
+          "q": "Quel réalisateur est connu comme le \"Maître du suspense\" ?",
+          "a": "Alfred Hitchcock."
+        },
+        {
+          "level": 5,
+          "q": "Quel film a remporté le tout premier Oscar du meilleur film en 1929 ?",
+          "a": "Les Ailes (Wings)."
+        },
+        {
+          "level": 6,
+          "q": "Quel est le film le plus rentable de l'histoire du cinéma (sans inflation) ?",
+          "a": "Avatar."
+        },
+        {
+          "level": 7,
+          "q": "Quel festival de cinéma a été créé en 1946 en France ?",
+          "a": "Le Festival de Cannes."
+        },
+        {
+          "level": 8,
+          "q": "Quel acteur américain détient le record du nombre d'Oscars du meilleur acteur ?",
+          "a": "Daniel Day-Lewis (3)."
+        },
+        {
+          "level": 9,
+          "q": "Quel film français de 1902 est l'un des premiers films de science-fiction ?",
+          "a": "Le Voyage dans la Lune (de Georges Méliès)."
+        },
+        {
+          "level": 10,
+          "q": "Quel pays possède la plus grande industrie cinématographique en nombre de films produits par an ?",
+          "a": "L'Inde (Bollywood et autres)."
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Les mystères non résolus",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Célèbre tueur en série londonien non identifié en 1888 ?",
+          "a": "Jack l'Éventreur."
+        },
+        {
+          "level": 2,
+          "q": "Zone de l'océan Atlantique où de nombreux navires et avions auraient disparu ?",
+          "a": "Le Triangle des Bermudes."
+        },
+        {
+          "level": 3,
+          "q": "Manuscrit indéchiffrable datant du XVe siècle ?",
+          "a": "Le manuscrit de Voynich."
+        },
+        {
+          "level": 4,
+          "q": "Civilisation d'Amérique du Sud connue pour ses lignes géantes dans le désert ?",
+          "a": "Les Nazcas."
+        },
+        {
+          "level": 5,
+          "q": "Nom du monstre supposé vivre dans un loch écossais ?",
+          "a": "Le monstre du loch Ness (Nessie)."
+        },
+        {
+          "level": 6,
+          "q": "Incident de 1947 impliquant un supposé crash de soucoupe volante aux USA ?",
+          "a": "L'incident de Roswell."
+        },
+        {
+          "level": 7,
+          "q": "Colonie anglaise en Amérique dont les habitants ont mystérieusement disparu en 1590 ?",
+          "a": "La colonie de Roanoke."
+        },
+        {
+          "level": 8,
+          "q": "Tueur en série américain non identifié actif à la fin des années 1960 ?",
+          "a": "Le tueur du Zodiaque."
+        },
+        {
+          "level": 9,
+          "q": "Femme américaine disparue mystérieusement en 1937 lors d'un vol autour du monde ?",
+          "a": "Amelia Earhart."
+        },
+        {
+          "level": 10,
+          "q": "Nom donné à l'événement mystérieux survenu en Sibérie en 1908 (une explosion inexpliquée) ?",
+          "a": "L'événement de la Toungouska."
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Les vins du monde",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Célèbre vin pétillant d'Italie ?",
+          "a": "Le Prosecco."
+        },
+        {
+          "level": 2,
+          "q": "Vin fortifié originaire du Portugal ?",
+          "a": "Le Porto."
+        },
+        {
+          "level": 3,
+          "q": "Vin blanc sec célèbre de Nouvelle-Zélande (cépage) ?",
+          "a": "Le Sauvignon blanc."
+        },
+        {
+          "level": 4,
+          "q": "Vin rouge emblématique d'Argentine (cépage) ?",
+          "a": "Le Malbec."
+        },
+        {
+          "level": 5,
+          "q": "Vin d'Afrique du Sud issu du cépage Pinotage (croisement de deux cépages) ?",
+          "a": "Pinot noir et Cinsault."
+        },
+        {
+          "level": 6,
+          "q": "Région viticole la plus célèbre de Californie (USA) ?",
+          "a": "La Napa Valley."
+        },
+        {
+          "level": 7,
+          "q": "Vin doux hongrois réputé ?",
+          "a": "Le Tokaji (ou Tokay)."
+        },
+        {
+          "level": 8,
+          "q": "Vin fortifié espagnol de la région d'Andalousie ?",
+          "a": "Le Xérès (ou Sherry)."
+        },
+        {
+          "level": 9,
+          "q": "Célèbre région viticole du Chili ?",
+          "a": "La Vallée de Maipo (ou Colchagua)."
+        },
+        {
+          "level": 10,
+          "q": "Vin de glace (Eiswein) originaire de quel pays ?",
+          "a": "L'Allemagne."
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de l'informatique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le premier ordinateur pesait plus de 27 tonnes ?",
+          "a": "Vrai (l'ENIAC)."
+        },
+        {
+          "level": 2,
+          "q": "Le mot \"bug\" (insecte) vient d'un vrai papillon de nuit coincé dans un ordinateur ?",
+          "a": "Vrai (en 1947)."
+        },
+        {
+          "level": 3,
+          "q": "La première souris d'ordinateur était en bois ?",
+          "a": "Vrai (inventée par Douglas Engelbart en 1964)."
+        },
+        {
+          "level": 4,
+          "q": "Le mot de passe des missiles nucléaires américains a été \"00000000\" pendant 8 ans ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 5,
+          "q": "Le premier nom de domaine enregistré était \"google.com\" ?",
+          "a": "Faux (c'était symbolics.com en 1985)."
+        },
+        {
+          "level": 6,
+          "q": "90% de la monnaie mondiale n'existe que sous forme numérique ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 7,
+          "q": "Le code de \"Matrix\" est fait de recettes de sushis en japonais ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 8,
+          "q": "La première webcam a été inventée pour surveiller un distributeur de bonbons ?",
+          "a": "Faux (une cafetière à l'Université de Cambridge)."
+        },
+        {
+          "level": 9,
+          "q": "Il y a plus de téléphones portables que d'habitants sur Terre ?",
+          "a": "Vrai."
+        },
+        {
+          "level": 10,
+          "q": "Le bouton \"J'aime\" de Facebook devait s'appeler \"Génial\" (\"Awesome\") à l'origine ?",
+          "a": "Vrai."
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'histoire de l'aviation",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Frères américains crédités du premier vol motorisé en 1903 ?",
+          "a": "Les frères Wright (Orville et Wilbur)."
+        },
+        {
+          "level": 2,
+          "q": "Premier aviateur à traverser la Manche en 1909 ?",
+          "a": "Louis Blériot."
+        },
+        {
+          "level": 3,
+          "q": "Célèbre pilote allemand de la Première Guerre mondiale surnommé le \"Baron Rouge\" ?",
+          "a": "Manfred von Richthofen."
+        },
+        {
+          "level": 4,
+          "q": "Premier aviateur à traverser l'Atlantique en solitaire et sans escale (1927) ?",
+          "a": "Charles Lindbergh."
+        },
+        {
+          "level": 5,
+          "q": "Nom de l'avion de Charles Lindbergh ?",
+          "a": "Le Spirit of St. Louis."
+        },
+        {
+          "level": 6,
+          "q": "Première femme à traverser l'Atlantique en solitaire (1932) ?",
+          "a": "Amelia Earhart."
+        },
+        {
+          "level": 7,
+          "q": "Avion de ligne supersonique franco-britannique (1969) ?",
+          "a": "Le Concorde."
+        },
+        {
+          "level": 8,
+          "q": "Premier homme à franchir le mur du son (1947) ?",
+          "a": "Chuck Yeager."
+        },
+        {
+          "level": 9,
+          "q": "Célèbre hydravion américain des années 1930 surnommé le \"Clipper\" ?",
+          "a": "Le Boeing 314."
+        },
+        {
+          "level": 10,
+          "q": "Avion furtif américain mis en service en 1983 (le premier du genre) ?",
+          "a": "Le F-117 Nighthawk."
         }
       ]
     }
