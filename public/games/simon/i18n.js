@@ -43,7 +43,12 @@ const STRINGS = {
     bestLine: "Record : {best} tours",
     bestLineOne: "Record : 1 tour",
     newBest: "Nouveau record !",
-    replay: "Rejouer"
+    replay: "Rejouer",
+    share: "Partager",
+    shareCopied: "Copié !",
+    shareError: "Partage impossible",
+    shareText: "J'ai réussi {score} tours au Simon ({level}) sur Muchogames ! Tu fais mieux ?",
+    shareTextOne: "J'ai réussi 1 tour au Simon ({level}) sur Muchogames ! Tu fais mieux ?"
   },
   en: {
     title: "Simon",
@@ -86,7 +91,12 @@ const STRINGS = {
     bestLine: "Best: {best} rounds",
     bestLineOne: "Best: 1 round",
     newBest: "New best!",
-    replay: "Play again"
+    replay: "Play again",
+    share: "Share",
+    shareCopied: "Copied!",
+    shareError: "Could not share",
+    shareText: "I completed {score} rounds of Simon ({level}) on Muchogames! Can you beat it?",
+    shareTextOne: "I completed 1 round of Simon ({level}) on Muchogames! Can you beat it?"
   },
   es: {
     title: "Simon",
@@ -129,7 +139,12 @@ const STRINGS = {
     bestLine: "Récord: {best} rondas",
     bestLineOne: "Récord: 1 ronda",
     newBest: "¡Nuevo récord!",
-    replay: "Jugar otra vez"
+    replay: "Jugar otra vez",
+    share: "Compartir",
+    shareCopied: "¡Copiado!",
+    shareError: "No se pudo compartir",
+    shareText: "¡He superado {score} rondas de Simon ({level}) en Muchogames! ¿Puedes mejorarlo?",
+    shareTextOne: "¡He superado 1 ronda de Simon ({level}) en Muchogames! ¿Puedes mejorarlo?"
   }
 };
 

@@ -11,6 +11,7 @@ Solo memory game: the game lights and sounds a growing sequence of four colours,
 | `rules.js` | Pure: `PADS`, `DIFFICULTIES`, `extend(sequence)`, `timing(length, difficulty)` → `{ on, gap }` ms, `slowed(ms, difficulty)`, `check(sequence, step, pad)` → `wrong` / `next` / `done`, `isValidSequence`. Runs in Node. |
 | `board.js` | Pad buttons: `light(pad, ms)`, `darken`, `setWaiting`. Presses: `pointerdown` (touch / mouse, no click delay), keyboard / remote click (`detail === 0`), digits 1-4; arrows move the focus between pads. |
 | `audio.js` | Tones of the original Simon (green 415 Hz, red 310, yellow 252, blue 209), triangle + octave; low buzz on a mistake. |
+| `share.js` | End-card Share button: `canShare()` (button hidden when false), `shareMessage(t, tn, summary)` → `{ text, url }`, `shareScore`. Native sheet (`navigator.share`) only with a coarse pointer (phones, tablets); otherwise the text + link are copied and the label flashes "Copié !" for 2 s. The link is the game page without its query (no `?tv=1`). |
 | `i18n.js`, `prefs.js`, `save.js` | FR/EN/ES copy + rules (`translateCount` picks the singular `…One` key); language, sound (`simon-sound`), last level (`simon-difficulty`), best per level (`simon-best` = Normal, `simon-best-easy`); match save. |
 | `styles.css`, `start.css`, `stage.css`, `pads.css` | Frame, cards, buttons, overlays, TV ring; start screen; HUD + board layout (largest square in the area, container units); pad colours (`[data-color]` → `--pad-dim` / `--pad-lit` / `--pad-glow`, also used by the start logo). |
 
@@ -21,7 +22,7 @@ Solo memory game: the game lights and sounds a growing sequence of four colours,
 - Presses only count in phase `input`, with no overlay and the options panel closed. A wrong pad: buzz, the wrong and the expected pads light for 1.3 s, then the end card; `finish({ score })` without `won` (no win in Simon).
 - Pause: ☰, opening the options, or the page going hidden. It stops playback; Continue replays the current round from its first colour. Not allowed during the 1.3 s mistake animation.
 - Layout: portrait = HUD row on top, board below; landscape = HUD column left. Root font 2.4vmin (16 px min).
-- TV (`?tv=1` or TV user agent): focus lands on Reprendre / Jouer, then the green pad; arrows move between pads (spatial focus), OK presses. Back = pause on the stage, Continue in the pause, Quit on the end card.
+- TV (`?tv=1` or TV user agent): focus lands on Reprendre / Jouer, then the green pad; arrows move between pads (spatial focus), OK presses. Back = pause on the stage, Continue in the pause, Quit on the end card. End-card order: Rejouer, Partager, Quitter (arrows reach all three).
 
 ## Saved match (decision 0054)
 
