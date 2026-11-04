@@ -6,6 +6,7 @@ import { createGame } from "./game.js";
 import { LANGS, rulesHtml, translate, translateCount } from "./i18n.js";
 import * as prefs from "./prefs.js";
 import { clearMatch, loadMatch, storeMatch } from "./save.js";
+import { canShare, shareMessage, shareScore } from "./share.js";
 
 const GAME_ID = "simon";
 const OVERLAYS = { paused: "simon-paused", end: "simon-end" };
@@ -251,6 +252,13 @@ function bindControls() {
   $("simon-paused-menu-button").addEventListener("click", returnToStart);
   $("simon-replay-button").addEventListener("click", startMatch);
   $("simon-end-menu-button").addEventListener("click", returnToStart);
+  const share = $("simon-share-button");
+  share.hidden = !canShare();
+  share.addEventListener("click", () => {
+    if (!page.summary) return;
+    const message = shareMessage(t, tn, page.summary);
+    shareScore({ button: share, message, t });
+  });
 }
 
 function bindPage() {
