@@ -23799,6 +23799,566 @@
           "a": "Don't Look Now... We're Being Shot At !"
         }
       ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en PlayStation ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Est-ce une station de la ligne Picadilly dans le métro londonien ?",
+          "a": "Eh non !"
+        },
+        {
+          "level": 2,
+          "q": "Peut-on l'utiliser pour préparer un clafoutis ?",
+          "a": "Non (mais éventuellement pour des petites gaufrettes)"
+        },
+        {
+          "level": 3,
+          "q": "Cette marque est-elle originaire du Botswana, des États-Unis, de France ou du Japon ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 4,
+          "q": "En 2019, a-t-on fêté son quinzième, vingtième ou vingt-cinquième anniversaire ?",
+          "a": "Son vingtième-cinquième anniversaire"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le marsupial orange qui est un peu l'équivalent de Mario sur Playstation ?",
+          "a": "Crash Bandicoot"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est la différence principale entre une manette de PS4 et de PS3 ?",
+          "a": "Le pavé tactile au centre de la manette"
+        },
+        {
+          "level": 7,
+          "q": "Cite le jeu de PlayStation dont le plus de suites ont été développées.",
+          "a": "Final Fantasy"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le jeu vidéo le plus vendu sur PlayStation ?",
+          "a": "Gran Turismo (11 millions d'exemplaires vendus)"
+        },
+        {
+          "level": 9,
+          "q": "Combien de PlayStation 4 avaient été vendues dans le monde au 31 décembre 2019, à 2 millions près ?",
+          "a": "108,9 millions (propositions entre 106,9 millions et 110,9 millions acceptées)"
+        },
+        {
+          "level": 10,
+          "q": "Qui est considéré comme le père de la PlayStation ?",
+          "a": "Ken Kutaragi"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en vrais noms de célébrités étrangères ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Donne le nom d'artiste de Madonna Louise Ciccone.",
+          "a": "Madonna"
+        },
+        {
+          "level": 2,
+          "q": "Chan Kong-Sang est-il mondialement connu sous le nom de Jackie Chan ou de Psy ?",
+          "a": "Jackie Chan"
+        },
+        {
+          "level": 3,
+          "q": "Célèbre Irlandais, Paul Hewson est-il en fait Bono, Oscar Wilde ou George Best ?",
+          "a": "Bono"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom de scène de Jennifer Anastassakis ?",
+          "a": "Jennifer Aniston"
+        },
+        {
+          "level": 5,
+          "q": "Eric Marlon Bishop est un des acteurs principaux du film Django Unchained. Quel est son nom d'artiste ?",
+          "a": "Jamie Foxx"
+        },
+        {
+          "level": 6,
+          "q": "Neta-Lee Hershlag a utilisé le nom de jeune fille de sa grand-mère, quel est-il ?",
+          "a": "Portman"
+        },
+        {
+          "level": 7,
+          "q": "Le vrai prénom de Bruce Willis, l'acteur qui sauve très souvent le monde, commence par un W. Quel est-il ?",
+          "a": "Walter"
+        },
+        {
+          "level": 8,
+          "q": "Si Elton John était abonné à Picsou magazine, quel nom donnerait-il lors de son inscription ?",
+          "a": "Reginald Kenneth Dwight"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle l'acteur Charlie Sheen dans la vraie vie ?",
+          "a": "Carlos Estevez"
+        },
+        {
+          "level": 10,
+          "q": "Donne le vrai nom de l'acteur Ben Kingsley.",
+          "a": "Krishna Pandit Bhanji"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en couples célèbres ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Combien de personnes forment un couple non-échangiste ?",
+          "a": "2"
+        },
+        {
+          "level": 2,
+          "q": "Quel journaliste sportif a commenté avec Jean-Michel Larqué des matches de football : Thierry Roland ou Thierry Hazard ?",
+          "a": "Thierry Roland"
+        },
+        {
+          "level": 3,
+          "q": "Avec quelle reine Jules César a-t-il fricoté en Égypte ?",
+          "a": "Cléopâtre"
+        },
+        {
+          "level": 4,
+          "q": "De 1968 à 1980, qui Serge Gainsbourg avait-il l'habitude d'embrasser entre 7 cigarettes et 3 whiskys ?",
+          "a": "Jane Birkin"
+        },
+        {
+          "level": 5,
+          "q": "De quel roi Marie-Antoinette d'Autriche fut-elle l'épouse ?",
+          "a": "Louis XVI"
+        },
+        {
+          "level": 6,
+          "q": "Qui sont les parents de Knox Leon et Vivienne Marcheline ?",
+          "a": "Brad Pitt et Angelina Jolie"
+        },
+        {
+          "level": 7,
+          "q": "Quel était le nom de famille de René, le mari de Céline Dion ?",
+          "a": "Angélil"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le vrai prénom et nom du mari de Beyoncé ?",
+          "a": "Shawn Carter"
+        },
+        {
+          "level": 9,
+          "q": "Avec qui Humphrey Bogart a-t-il eu 2 enfants ?",
+          "a": "Lauren Bacall"
+        },
+        {
+          "level": 10,
+          "q": "Donne la date de naissance de Léon Ali Debouzze. Tu sais, le fils de Jamel et Mélissa.",
+          "a": "Le 3 décembre 2008"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en Michael Jordan ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel sport excellait-il : l'accrobranche, le basket-ball ou le twirling bâton ?",
+          "a": "Le basket-ball"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la couleur de son nez ?",
+          "a": "Noire (ou marron)"
+        },
+        {
+          "level": 3,
+          "q": "Quelle était la nationalité de Michael Jordan à sa naissance ?",
+          "a": "Américaine"
+        },
+        {
+          "level": 4,
+          "q": "Dans quelle équipe a-t-il joué dans les années 80 et 90 ?",
+          "a": "Chicago Bulls"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel film dantesque a-t-il joué en 1996 ?",
+          "a": "Space Jam"
+        },
+        {
+          "level": 6,
+          "q": "Avec quelle équipe a-t-il joué son dernier match en NBA le mercredi 16 avril 2003 et mérité une ovation de 3 minutes ?",
+          "a": "Washington Wizards"
+        },
+        {
+          "level": 7,
+          "q": "De quelle équipe de basket américaine est-il propriétaire ?",
+          "a": "Charlotte Hornets"
+        },
+        {
+          "level": 8,
+          "q": "Suite à quel évènement arrêta-t-il sa carrière en 1993 ?",
+          "a": "L'assassinat de son père"
+        },
+        {
+          "level": 9,
+          "q": "Quel est son record de points en carrière sur un match ?",
+          "a": "69 points"
+        },
+        {
+          "level": 10,
+          "q": "Dans quelle ville des États-Unis a-t-il joué son dernier match ?",
+          "a": "Philadelphie"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en Totally Spies ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Totally Spies est-il un dessin animé, une épice ou un virus ?",
+          "a": "Un dessin animé"
+        },
+        {
+          "level": 2,
+          "q": "Les protagonistes sont-ils des végétaux, des filles ou des garçons ?",
+          "a": "Des filles"
+        },
+        {
+          "level": 3,
+          "q": "À part étudier, que font-elles dans la vie ?",
+          "a": "Agents secrets (ou détectives)"
+        },
+        {
+          "level": 4,
+          "q": "Quels sont les prénoms des 3 protagonistes ?",
+          "a": "Clover, Sam et Alex"
+        },
+        {
+          "level": 5,
+          "q": "Qui tombe toujours amoureuse ?",
+          "a": "Clover"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le lien de parenté des filles ?",
+          "a": "Aucun, elles sont amies"
+        },
+        {
+          "level": 7,
+          "q": "Quelles sont les couleurs de leurs combinaisons ?",
+          "a": "Vert, rouge et jaune"
+        },
+        {
+          "level": 8,
+          "q": "Comment se nomme leur patron ?",
+          "a": "Jerry"
+        },
+        {
+          "level": 9,
+          "q": "Que signifie \"WOOHP\", organisation employant les 3 filles ?",
+          "a": "World Office Of Human Protection"
+        },
+        {
+          "level": 10,
+          "q": "Quelle société produit le dessin animé ?",
+          "a": "Marathon Media"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en chanson \"Place des grands hommes\" ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Les paroles de la chanson sont-elles en créole, en français ou en tchèque ?",
+          "a": "En français"
+        },
+        {
+          "level": 2,
+          "q": "L'interprète et le compositeur de la chanson est-il Patrick Balkany, Patrick Bruel ou Patrick Fiori ?",
+          "a": "Patrick Bruel"
+        },
+        {
+          "level": 3,
+          "q": "L'instrument utilisé lors de l'intro est-il un piano, une guitare ou une batterie ?",
+          "a": "Un piano"
+        },
+        {
+          "level": 4,
+          "q": "Complète ces paroles \"même jour, même heure, même ...\".",
+          "a": "Pomme"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la première phrase de la chanson, chantée par Patriiick avec ses cordes vocales ?",
+          "a": "\"On s'était dit rendez-vous dans 10 ans\""
+        },
+        {
+          "level": 6,
+          "q": "Quel monument parisien situé place des Grands Hommes apparaît dans le clip ?",
+          "a": "Le Panthéon"
+        },
+        {
+          "level": 7,
+          "q": "Qu'est-ce qui est considéré comme \"formidable\" dans les paroles ?",
+          "a": "Les copains"
+        },
+        {
+          "level": 8,
+          "q": "Quel prénom n'est pas cité dans la chanson : Pascale, Marion, Evelyne, Laurent ou Éric ?",
+          "a": "Laurent"
+        },
+        {
+          "level": 9,
+          "q": "Quel jeu de société est mentionné dans les paroles ?",
+          "a": "Le Scrabble (\"On peut pas mettre 10 ans sur table comme on étale ses lettres au Scrabble\")"
+        },
+        {
+          "level": 10,
+          "q": "Quel champion olympique de judo lors des Jeux de Moscou en 1980 a participé au clip ?",
+          "a": "Thierry Rey"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en surf ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Est-ce un sport d'eau ou un personnage bleu vêtu d'un bonnet blanc ?",
+          "a": "Un sport d'eau"
+        },
+        {
+          "level": 2,
+          "q": "Si tu mets le pied droit à l'avant de ton surf, es-tu considéré comme goofy ou regular ?",
+          "a": "Goofy"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel film ne voit-on pas de planche de surf : Point Break, Dodgeball ou Brice de Nice ?",
+          "a": "Dodgeball"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel pays se trouve Surfers Paradise : Hawaï, Afrique du Sud, Brésil ou Australie ?",
+          "a": "Australie"
+        },
+        {
+          "level": 5,
+          "q": "Quel type de planches n'existe pas : le funboard, le shortboard, le midboard, le longboard ou le gun ?",
+          "a": "Le midboard"
+        },
+        {
+          "level": 6,
+          "q": "En 2020, combien de licenciés à cotisation annuelle comptait la Fédération Française de Surf : 13.040, 80.117, 122.117 ou 214.117 ou 361.117 ?",
+          "a": "13.040 licenciés (les 63.300 participations ponctuelles ne sont pas comptabilisées dans les licences)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle figure consiste à prendre un virage en S pour revenir dans le curl de la vague ?",
+          "a": "Un cut-back"
+        },
+        {
+          "level": 8,
+          "q": "Quelle hauteur de vague record a surfé Benjamin Sanchis en 2014 au Portugal, à 1 mètre près ?",
+          "a": "33 mètres (propositions entre 32 m et 34 m acceptées)"
+        },
+        {
+          "level": 9,
+          "q": "Kelly Slater a joué dans les saisons 3 et 4 d'Alerte à Malibu. Quel personnage interprétait-il ?",
+          "a": "Jimmy Slade"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le rocher de 5 mètres de haut situé à Tamraght, à 15 km d'Agadir ?",
+          "a": "Le Rocher du diable (ou Devil's Rock)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en Olympique lyonnais ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Est-ce un club de football ou une crèche de Noël ?",
+          "a": "Un club de football"
+        },
+        {
+          "level": 2,
+          "q": "Lequel de ces noms a été porté par un attaquant de l'Olympique lyonnais : Sonny Anderson, Sonny Vaio ou Sonny Delight ?",
+          "a": "Sonny Anderson"
+        },
+        {
+          "level": 3,
+          "q": "Quel club du championnat affronte l'Olympique lyonnais lors de \"l'Olympico\" ?",
+          "a": "L'Olympique de Marseille"
+        },
+        {
+          "level": 4,
+          "q": "Pour quelle raison Yoann Gourcuff a-t-il été particulièrement raillé lors de son passage à l'O.L. ?",
+          "a": "Ses blessures à répétition"
+        },
+        {
+          "level": 5,
+          "q": "Combien de fois l'Olympique lyonnais a-t-il gagné de championnats de France, avant 2022 ?",
+          "a": "7 fois"
+        },
+        {
+          "level": 6,
+          "q": "En quelle année a été fondé l'Olympique lyonnais ?",
+          "a": "En 1950"
+        },
+        {
+          "level": 7,
+          "q": "Quel était le surnom de Fleury Di Nallo, buteur à 222 reprises en 489 apparitions pour le club ?",
+          "a": "\"Le petit prince de Gerland\" (belle référence au Lyonnais Antoine de Saint-Exupéry au passage)"
+        },
+        {
+          "level": 8,
+          "q": "Quand le stade de Gerland a-t-il été inauguré, à 4 ans près ?",
+          "a": "En 1926 (propositions entre 1922 et 1930 acceptées)"
+        },
+        {
+          "level": 9,
+          "q": "Comment se nommait le premier entraîneur de l'histoire de l'Olympique lyonnais ?",
+          "a": "Oscar Heisserer"
+        },
+        {
+          "level": 10,
+          "q": "Dans quelle ville est né Anatole Vologe, ancien résistant dont le centre d'entraînement historique du club porte le nom ?",
+          "a": "Vilnius (en Lituanie, mais si tu as tenté la question 10, tu dois le savoir)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en patinage artistique ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Lequel de ces objets est utilisé en compétition : une luge, des moufles, des patins ou un tire-fesse ?",
+          "a": "Des patins"
+        },
+        {
+          "level": 2,
+          "q": "Les compétitions de Jeux Olympiques en patinage sont-elles réservées aux amateurs ou aux professionnels ?",
+          "a": "Aux amateurs (les professionnels ont un circuit fermé)"
+        },
+        {
+          "level": 3,
+          "q": "Une des égéries françaises de ce sport est-elle Christine Aaron, Surya Bonaly, Émilie Le Pennec ou Amandine Henry ?",
+          "a": "Surya Bonaly"
+        },
+        {
+          "level": 4,
+          "q": "Avant 2003, quelle était la note maximale attribuée par les juges pour le mérite technique : 6, 10, 20 ou 100 ?",
+          "a": "6 (dit également 6.0)"
+        },
+        {
+          "level": 5,
+          "q": "Donne un des personnages interprétés par Philippe Candeloro lors de sa carrière amateur.",
+          "a": "Lucky Luke, Zorro, D'Artagnan, Conan le Barbare, Vito Corleone (Le Parrain) et Napoléon Ier"
+        },
+        {
+          "level": 6,
+          "q": "Nomme 4 des 5 épreuves de patinage artistique s'étant déroulées lors des JO 2018.",
+          "a": "Simple messieurs (ou Hommes), simple dames (ou Femmes), couples, danse sur glace et Épreuve par équipes"
+        },
+        {
+          "level": 7,
+          "q": "Quel couple français a été champion du monde en 2000 et champion olympique en danse sur glace en 2002 ?",
+          "a": "Gwendal Peizerat et Marina Anissina"
+        },
+        {
+          "level": 8,
+          "q": "Cite le nom de la première patineuse américaine à avoir réussi un triple axel en compétition officielle.",
+          "a": "Tonya Harding"
+        },
+        {
+          "level": 9,
+          "q": "Quel titre a accompagné le programme court de Brian Joubert lors des saisons 2002-2003 et 2003-2004 ?",
+          "a": "Time (des Pink Floyd)"
+        },
+        {
+          "level": 10,
+          "q": "Quelle athlète a fini 5e de l'édition 2016 des championnats de Finlande, dans le concours féminin ?",
+          "a": "Rosaliina Kuparinen"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te mets combien en série TV Plus belle la vie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La vie paraît-elle effectivement plus belle quand on regarde l'intégrale de la saison 2 ?",
+          "a": "Non"
+        },
+        {
+          "level": 2,
+          "q": "Sur quelle chaîne française est diffusée la série ?",
+          "a": "France 3"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le bar de la série qui est aussi le nom du quartier où vivent les acteurs ?",
+          "a": "Le mistral"
+        },
+        {
+          "level": 4,
+          "q": "Le surnom de Coralie Blin est-il Chewbacca, Terminator ou Voldemort ?",
+          "a": "Terminator"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le prénom et nom du père d'Abdel, le jeune étudiant en droit ?",
+          "a": "Karim Fedala"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appellent les 2 enfants adoptés par Thomas et Gabriel ?",
+          "a": "Thérèse et Baptiste"
+        },
+        {
+          "level": 7,
+          "q": "Qui a tué Élise Carmin ?",
+          "a": "Son amie Margaux Lieber"
+        },
+        {
+          "level": 8,
+          "q": "Quel est le prénom du premier enfant de Blanche Marcy ?",
+          "a": "Lucas"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le frère de Samia ?",
+          "a": "Malik Nassri"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom du lycée reconstitué dans les studios du Pôle Média ?",
+          "a": "Lycée Vincent Scotto"
+        }
+      ]
     }
   ]
 }
