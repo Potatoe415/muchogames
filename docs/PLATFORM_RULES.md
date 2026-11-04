@@ -134,10 +134,9 @@ On phones and tablets the browser toolbar, the Android navigation bar
 page. In landscape, the Android 3-button bar and the iPhone notch sit on the
 **side**.
 
-- Full-height layouts use `100dvh` (a `100vh` line before it as fallback),
-  never `vh` alone: `100vh` is the height with the toolbar hidden, so the
-  bottom of the game ends up under it. A game stylesheet that uses `vh`
-  must also use `dvh`/`svh` **[checked]**.
+- Full-height layouts use `100dvh`, never `vh`: `100vh` is the height with
+  the toolbar hidden, so the bottom of the game ends up under it.
+  **[checked]**.
 - Anything pinned to an edge (control bar, keypad, action buttons, toasts)
   pads with the safe area:
   `padding-bottom: max(12px, env(safe-area-inset-bottom))`, and

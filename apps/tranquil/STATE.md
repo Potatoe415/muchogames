@@ -3,12 +3,12 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: A finished match increments the hub profile (when this session resolved a hub `?profileCode=`) and, once the hub's `0005_game_stats.sql` runs, also its `tranquil` per-game row. Falls back to the totals-only RPC until then.
-Focus: Live-check one win and one loss on the hub `/profile` (totals and the "Tranquil" row) after a signed-in hub launch.
-Level: L2
+Focus: Live-check one win and one loss on the hub `/profile` (totals and the "Tranquil" row) after a signed-in hub launch. On a phone, lobby and connecting screens should track the toolbar (`min-h-dvh`); the version chip stays above the home indicator.
+Level: L1 (viewport units)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `api/_lib/profileLink.ts`, `api/profile-link.ts`, `client/src/lib/profileSync.ts`
+- Relevant_Files: `client/src/index.css`, `client/src/components/Lobby.tsx`, `client/src/components/ConnectingScreen.tsx`
 - Do_Not_Touch: `shared/src` rules engine
 - Relevant_Decisions: local win/loss counter (2026-09-17); root `docs/decisions/0042` (per-game hub stats)
 
@@ -26,6 +26,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-11-03 Lobby, connecting screen, and `body` use `min-h-dvh`. The fixed version chip uses `bottom-[max(1rem,env(safe-area-inset-bottom))]`. `--app-height` stays `100svh`.
 - 2026-10-02 `SettingsPanel`: "Report a problem" link (`settings-feedback-link`) to the hub's `?feedback=tranquil`. Tests, `tsc`, client build clean.
 - 2026-10-02 `profileLink.ts` records results under hub game id `tranquil` (`record_muchogames_game_result`), with a fallback to `increment_muchogames_profile_stats`. `npm test` 51/51, `tsc` clean, client build clean.
 - 2026-09-24 Finished matches also increment `muchogames_profiles` after a hub launch code. Local `tranquil-match-results` is unchanged.

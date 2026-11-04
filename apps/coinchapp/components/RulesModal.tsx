@@ -284,7 +284,7 @@ export function RulesModal({ onClose, game = "coinche" }: Props) {
             ✕
           </button>
         </div>
-        <div className="max-h-[60vh] space-y-3 overflow-y-auto">
+        <div className="max-h-[60dvh] space-y-3 overflow-y-auto">
           {rules.sections.map((section) => (
             <div key={section.heading}>
               <h3 className="text-sm font-bold text-[var(--accent-cyan)]">

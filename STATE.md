@@ -3,14 +3,14 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: New game 2048 (`2048`, calm sliding-tile puzzle) in the catalog, second game built to the TV rule (decision 0059) on the shared `tv-remote.js`. Fusion de fruits added yesterday.
-Focus: Owner play-test of 2048 and Fusion de fruits (phone, desktop, TV); owner phone check of the new hub and of the estimated `players` / `duration`; then play-tests of Trivial Quizz, Scrabble, card backs, SkiFree, Millionaire, Fruit Slash, Échecs.
-Level: L1 (one new game)
+Focus: Owner play-test of 2048 and Fusion de fruits (phone, desktop, TV); owner phone check of the hub (toolbar show/hide, `dvh`) and of the estimated `players` / `duration`.
+Level: L2 (dvh across hub and games)
 
 Context:
 - Working_On: none
-- Relevant_Files: `public/games/2048/` (see its `NOTES.md`), `public/hub-config.json`, `.prettierignore` (2048 opted in)
+- Relevant_Files: `hub.css`, `public/shared/css/base.css`, game stylesheets, `docs/PLATFORM_RULES.md`, `scripts/check-games.mjs`
 - Do_Not_Touch: Easy Frog, GameBoy Web; Space Cadet engine (`"resumable": false`).
-- Relevant_Decisions: 0059, 0058, 0054, 0053
+- Relevant_Decisions: 0060, 0059, 0053
 
 Next:
 - Owner: play 2048 on a phone (portrait + landscape), desktop and the TV (`/games/2048/index.html?tv=1` once): swipe and tap-near-an-edge, animation speed, palette and sounds, Facile (3 undos) vs Normal (no undo), 2048 win card, "Reprendre".
@@ -36,4 +36,4 @@ Recent_Changes:
 - 2026-11-03 2048: two levels on the start screen, "Facile" (3 undos) and "Normal" (no undo, ↶ hidden); level saved with the match (old saves = Facile), one record per level, "Rejouer" keeps the level. Browser-checked at 320×568, 390×800, 740×360.
 - 2026-11-03 2048 (`public/games/2048/`): 4×4 slide-and-merge, win at 2048 with "Continuer" / "Terminer la partie", end when no move is left, undo (3/match), record, full resume. Calm misty-sage skin, pastel tiles, soft pentatonic sounds, no timer. Swipe, tap near an edge, arrows / WASD / ZQSD, TV remote (board owns the arrows, Back = menu). Browser-checked at 320×568, 390×800, 740×360, 960×540, 1920×1080 (`?tv=1`), 3840×2160: moves, merges, win, end, undo, menu, quit + resume, language.
 - 2026-11-02 Fusion de fruits (`public/games/fruitmerge/`): Suika-style merge puzzle, own circle physics, procedural fruits, first game on the shared `tv-remote.js`.
-- 2026-11-02 Platform rule (decision 0059): new games also adapt to a TV browser — fill the screen at 960×540 to 3840×2160 CSS px, couch-readable, 3% overscan margin, remote only, fullscreen + wake lock; `?tv=1` or TV user agent.
+- 2026-11-03 Full-height units are `dvh` (decision 0060). Hub, shared CSS, and game stylesheets no longer use `vh`. `npm run check` rejects a bare `vh`.

@@ -30,7 +30,7 @@ export default function ConnectingScreen({ kind, step, roomCode, onCancel }: Pro
   const activeIndex = step ? steps.indexOf(step) : -1;
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-dvh flex items-center justify-center">
       <div className="text-center px-4">
         <div className="text-4xl mb-4 animate-spin">🌊</div>
         {steps.length > 0 ? (

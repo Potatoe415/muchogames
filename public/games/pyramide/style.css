@@ -60,7 +60,6 @@ button:focus-visible {
 
 .app-shell {
   position: relative;
-  min-height: 100vh;
   min-height: 100dvh;
   padding: 12px;
   display: flex;
@@ -200,12 +199,10 @@ button:focus-visible {
 }
 
 .public-stage.is-splash {
-  min-height: calc(100vh - 110px);
   min-height: calc(100dvh - 110px);
 }
 
 .public-stage.is-splash .public-content {
-  min-height: calc(100vh - 150px);
   min-height: calc(100dvh - 150px);
   justify-content: center;
   align-items: center;
@@ -237,7 +234,6 @@ button:focus-visible {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 62vh;
   max-height: 62dvh;
   object-fit: contain;
   border: none;
@@ -707,18 +703,15 @@ button:focus-visible {
   }
 
   .public-stage.is-splash {
-    min-height: calc(100vh - 84px);
     min-height: calc(100dvh - 84px);
   }
 
   .public-stage.is-splash .public-content {
-    min-height: calc(100vh - 130px);
     min-height: calc(100dvh - 130px);
     padding: 12px;
   }
 
   .splash-image {
-    max-height: 52vh;
     max-height: 52dvh;
   }
 

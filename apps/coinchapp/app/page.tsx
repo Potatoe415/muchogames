@@ -91,7 +91,7 @@ export default function Home() {
     >
       <HomeTopBar />
 
-      <div className="relative z-10 flex w-full flex-1 flex-col items-center gap-3 px-6 pt-[18vh]" data-id="game-tiles">
+      <div className="relative z-10 flex w-full flex-1 flex-col items-center gap-3 px-6 pt-[18dvh]" data-id="game-tiles">
         <header className="mb-2 text-center">
           <h1 className="text-2xl font-black tracking-tight text-white" data-id="home-title">
             {t("chooseGameTitle")}

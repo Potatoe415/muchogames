@@ -31,7 +31,7 @@ export default function PresidentPage() {
     >
       <HomeTopBar game="president" />
 
-      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25vh]" data-id="president-splash-actions">
+      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25dvh]" data-id="president-splash-actions">
         <button
           data-id="president-play-local-button"
           onClick={() => router.push("/local?game=president")}

@@ -65,6 +65,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0057 | 2026-11-01 | Scrabble French definitions ship with the game (Wiktionary extract, CC BY-SA), live lookup only for missing words | Accepted |
 | 0058 | 2026-11-02 | Hub: Home rows + filtered library with URL state; flat tags (type / time / players) replace categories | Accepted |
 | 0059 | 2026-11-02 | New games adapt to TV browsers (1080p/4K, remote only); existing games done one by one by the owner | Accepted |
+| 0060 | 2026-11-03 | Full-height layouts use dvh, not vh (tightens the system-bar rule in 0053) | Accepted |
 
 ## When to log a decision
 Any of:

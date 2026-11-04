@@ -25,7 +25,7 @@ export default function CoinchePage() {
     >
       <HomeTopBar game="coinche" />
 
-      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25vh]" data-id="coinche-splash-actions">
+      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25dvh]" data-id="coinche-splash-actions">
         <button
           data-id="coinche-play-local-button"
           onClick={() => router.push("/local")}

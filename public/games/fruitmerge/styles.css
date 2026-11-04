@@ -15,7 +15,6 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   height: 100dvh;
   min-height: 0;
   overflow: hidden;
@@ -201,14 +200,14 @@ body {
    everything keeps 3% away from the edges (TV overscan). */
 @media (min-width: 900px) and (min-height: 500px) {
   .game-nav {
-    height: clamp(60px, 8vh, 220px);
+    height: clamp(60px, 8dvh, 220px);
     padding-inline: 3vw;
   }
 
   .back-button,
   .options-button {
-    width: clamp(36px, 6vh, 160px);
-    height: clamp(36px, 6vh, 160px);
+    width: clamp(36px, 6dvh, 160px);
+    height: clamp(36px, 6dvh, 160px);
   }
 
   .back-button svg,

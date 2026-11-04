@@ -25,7 +25,7 @@ export default function SolitairePage() {
     >
       <HomeTopBar game="solitaire" />
 
-      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[32vh]" data-id="solitaire-splash-actions">
+      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[32dvh]" data-id="solitaire-splash-actions">
         <button
           data-id="solitaire-play-draw1-button"
           onClick={() => router.push("/local/play?game=solitaire&draw=1")}

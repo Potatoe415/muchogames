@@ -70,7 +70,7 @@ export function BotDebugOverlay({ log }: { log: BotTimingEntry[] }) {
       {open && (
         <div
           data-id="bot-debug-panel"
-          className="fixed right-3 top-12 z-50 max-h-[70vh] w-[min(94vw,400px)] overflow-y-auto rounded-xl bg-black/75 p-3 text-[11px] font-mono text-white shadow-2xl ring-1 ring-white/20 backdrop-blur"
+          className="fixed right-3 top-12 z-50 max-h-[70dvh] w-[min(94vw,400px)] overflow-y-auto rounded-xl bg-black/75 p-3 text-[11px] font-mono text-white shadow-2xl ring-1 ring-white/20 backdrop-blur"
         >
           <div className="mb-2 flex items-center justify-between gap-2">
             <p className="text-xs font-bold uppercase tracking-wide text-white/70">{t("botDebugTitle")}</p>

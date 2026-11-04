@@ -31,7 +31,7 @@ export default function BataillecorsePage() {
     >
       <HomeTopBar game="bataillecorse" />
 
-      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25vh]" data-id="bataillecorse-splash-actions">
+      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25dvh]" data-id="bataillecorse-splash-actions">
         <button
           data-id="bataillecorse-play-face-to-face-button"
           onClick={() => router.push("/local?game=bataillecorse&mode=duel")}

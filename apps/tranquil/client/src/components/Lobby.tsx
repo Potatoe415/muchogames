@@ -64,7 +64,7 @@ export default function Lobby({ onStartLocal, onStartBot, onCreateOnline, onJoin
   }, [initialRoomCode]);
 
   return (
-    <div className="lobby-bg min-h-screen flex items-center justify-center">
+    <div className="lobby-bg min-h-dvh flex items-center justify-center">
       {/* Back to hub (top-left) / options (top-right) — same layout convention
           as the sibling Bergamots-hub games and coinchapp's home screen. */}
       <a
@@ -224,7 +224,7 @@ export default function Lobby({ onStartLocal, onStartBot, onCreateOnline, onJoin
 
       </div>
 
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+      <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2 flex items-center gap-2">
         <span className="px-3 py-1.5 rounded-full bg-black/30 text-white/30 text-xs font-mono select-none">
           v0.8.1
         </span>

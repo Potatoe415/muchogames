@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: var(--font-sans);
   background: radial-gradient(circle at top left, #fff2e2 0, #f3d2a6 80%);
   -webkit-font-smoothing: antialiased;

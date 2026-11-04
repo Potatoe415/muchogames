@@ -62,8 +62,7 @@ const URL_SCAN_ROOTS = [
 ];
 const VERCEL_HOST = /[a-z0-9-]+\.vercel\.app/gi;
 const VIEWPORT_META = /<meta\s[^>]*name=["']viewport["'][^>]*>/i;
-const STATIC_VH = /\d(?:\.\d+)?vh\b/;
-const DYNAMIC_VH = /\d(?:\.\d+)?[dsl]vh\b/;
+const STATIC_VH = /(?<![a-zA-Z])\d(?:\.\d+)?vh\b/;
 const STYLE_EXTENSIONS = new Set([".css", ".html"]);
 
 function walk(dir) {
@@ -123,13 +122,10 @@ function hasCollapsedRules(text) {
   );
 }
 
-// A bare `vh` height hides the bottom of the game under the phone's browser
-// toolbar or navigation bar; each stylesheet using one must also use dvh/svh.
+// `vh` is the height with the mobile toolbar hidden, so the bottom of the
+// page sits under it. Full-height units are `dvh` (decision 0060).
 function usesDynamicViewport(styles) {
-  return styles.every((file) => {
-    const text = readFileSync(file, "utf8");
-    return !STATIC_VH.test(text) || DYNAMIC_VH.test(text);
-  });
+  return styles.every((file) => !STATIC_VH.test(readFileSync(file, "utf8")));
 }
 
 function checkLayout(page, all, styles) {

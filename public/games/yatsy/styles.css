@@ -185,7 +185,6 @@ select {
   right: 1rem;
   z-index: 25;
   width: min(20rem, calc(100vw - 2rem));
-  max-height: min(70vh, 28rem);
   max-height: min(70dvh, 28rem);
   overflow: auto;
   border-radius: 1rem;

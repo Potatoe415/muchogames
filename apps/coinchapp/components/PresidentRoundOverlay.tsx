@@ -39,7 +39,7 @@ export function PresidentRoundOverlay({
 
   return (
     <div className="absolute inset-0 z-20 flex items-center justify-center bg-[var(--surface-overlay)] px-4" data-id="president-round-overlay">
-      <div className="relative z-10 w-full max-w-md max-h-[90vh] overflow-y-auto rounded-2xl bg-[var(--surface)] p-6 text-center text-[var(--card-face)] ring-1 ring-[var(--accent-cyan)]/30">
+      <div className="relative z-10 w-full max-w-md max-h-[90dvh] overflow-y-auto rounded-2xl bg-[var(--surface)] p-6 text-center text-[var(--card-face)] ring-1 ring-[var(--accent-cyan)]/30">
         {finished ? (
           <>
             <h2 className="text-2xl font-black text-[var(--accent-yellow)]" data-id="president-winner">

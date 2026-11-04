@@ -125,7 +125,6 @@
   position: relative;
   width: 100%;
   max-width: 420px;
-  max-height: 80vh;
   max-height: 80dvh;
   overflow-y: auto;
   background: #ffffff;

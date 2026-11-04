@@ -24,7 +24,7 @@ export default function BelotePage() {
     >
       <HomeTopBar game="belote" />
 
-      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25vh]" data-id="belote-splash-actions">
+      <div className="relative z-10 flex w-full flex-col items-center gap-3 px-6 pt-[25dvh]" data-id="belote-splash-actions">
         <button
           data-id="belote-play-local-button"
           onClick={() => router.push("/local?game=belote")}

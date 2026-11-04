@@ -68,7 +68,6 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height: calc(100vh - 90px);
   min-height: calc(100dvh - 90px);
   padding: 20px 16px 40px;
 }
