@@ -423,5 +423,16 @@
     "thumbnail": "/games/2048/assets/thumbnail.svg",
     "players": [1, 1],
     "duration": 10
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "kind": "custom",
+    "tags": ["arcade"],
+    "added": "2026-11-04",
+    "launch": "/games/tetris/index.html",
+    "thumbnail": "/games/tetris/assets/thumbnail.svg",
+    "players": [1, 1],
+    "duration": 10
   }
 ]

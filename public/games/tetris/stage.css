@@ -1,0 +1,208 @@
+/* Play stage. Portrait: the play area (hold + well + next) on top, the
+   touch pads below. Short landscape: pads move to the left and right of it.
+   The page script measures .tr-play and sets --cell (px) on it. */
+.tr-stage {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "play play"
+    "move act";
+  gap: 0.4em;
+  padding: 0.4em max(0.5em, env(safe-area-inset-right))
+    max(0.5em, env(safe-area-inset-bottom)) max(0.5em, env(safe-area-inset-left));
+}
+
+.tr-play {
+  --cell: 16px;
+  grid-area: play;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: calc(var(--cell) * 0.4);
+  font-size: calc(var(--cell) * 0.5);
+}
+
+.tr-well {
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 0.3em;
+  box-shadow: 0 0 0 0.2em rgba(122, 162, 255, 0.35);
+}
+
+.tr-canvas {
+  display: block;
+}
+
+.tr-board {
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+.tr-side {
+  flex: 0 0 auto;
+  width: calc(var(--cell) * 3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.tr-label {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8f9cc4;
+}
+
+.tr-value {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: #eef2fb;
+}
+
+.tr-stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tr-pause {
+  width: 100%;
+  min-height: calc(var(--cell) * 1.6);
+  border: none;
+  border-radius: 0.6em;
+  background: #2a3358;
+  color: #c7d2f0;
+  font: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+/* "Tetris!" style toast over the well. */
+.tr-toast {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: 0;
+  padding: 0 0.3em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0.1em 0.4em rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tr-toast.show {
+  animation: tr-toast 1.2s ease-out both;
+}
+
+@keyframes tr-toast {
+  0% {
+    opacity: 0;
+    transform: translateY(0.6em);
+  }
+  15%,
+  70% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-0.6em);
+  }
+}
+
+/* Touch pads. */
+.tr-pads {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.tr-pads-move {
+  grid-area: move;
+}
+
+.tr-pads-act {
+  grid-area: act;
+}
+
+.tr-pad {
+  width: 3.4rem;
+  height: 3.4rem;
+  border: none;
+  border-radius: 50%;
+  background: #2a3358;
+  color: #dbe4f0;
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.tr-pad:active {
+  background: #4a5fc4;
+}
+
+@media (max-width: 400px) {
+  .tr-pad {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Short landscape: pads beside the play area. */
+@media (orientation: landscape) and (max-height: 600px) {
+  .tr-stage {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: "move play act";
+    padding-inline: max(0.5em, env(safe-area-inset-left))
+      max(0.5em, env(safe-area-inset-right));
+  }
+
+  .tr-pads {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 7.6rem;
+  }
+
+  .tr-pad {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Desktop and TV: keyboard / remote, no touch pads; 3% from the edges. */
+@media (min-width: 900px) and (min-height: 500px) {
+  .tr-pads {
+    display: none;
+  }
+
+  .tr-stage {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-areas: "play";
+    padding: 3dvh 3vw;
+  }
+
+  .tr-play {
+    align-items: center;
+  }
+}
