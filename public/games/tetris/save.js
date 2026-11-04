@@ -1,14 +1,12 @@
 // localStorage: the match in progress, so leaving it by any route and coming
 // back resumes it exactly. Everything read back is validated before use.
-import { isDifficulty } from "./difficulty.js";
 import { QUEUE_SIZE } from "./flow.js";
 import { COLS, ROWS, collides } from "./grid.js";
 import { CELLS, TYPES } from "./pieces.js";
+import { MAX_START_LEVEL } from "./scoring.js";
 
 const SAVE_KEY = "tetris-current";
 const VERSION = 1;
-// Older matches could start at any level from 1 to 10.
-const MAX_START_LEVEL = 10;
 const MAX_SCORE = 1e9;
 const MAX_LINES = 1e5;
 
@@ -46,17 +44,15 @@ function validTimers(d) {
     isNum(d.fallTimer, 100) &&
     (d.lockTimer === null || isNum(d.lockTimer, 100)) &&
     isInt(d.lockResets, 0, 100) &&
-    isInt(d.lowest, -4, ROWS) &&
-    isInt(d.kick, 0, 4) &&
-    (d.lastAction === null || ["move", "rotate"].includes(d.lastAction))
+    isInt(d.lowest, -4, ROWS)
   );
 }
 
 function validMatch(d) {
   return (
     d?.v === VERSION &&
-    isInt(d.startLevel, 1, MAX_START_LEVEL) &&
-    (d.difficulty === undefined || isDifficulty(d.difficulty)) &&
+    isInt(d.startLevel, 0, MAX_START_LEVEL) &&
+    (d.ghost === undefined || typeof d.ghost === "boolean") &&
     validGrid(d.grid) &&
     validPiece(d.grid, d.piece) &&
     isTypes(d.bag, TYPES.length) &&
@@ -65,8 +61,6 @@ function validMatch(d) {
     typeof d.holdUsed === "boolean" &&
     isInt(d.score, 0, MAX_SCORE) &&
     isInt(d.lines, 0, MAX_LINES) &&
-    isInt(d.combo, -1, MAX_LINES) &&
-    typeof d.b2b === "boolean" &&
     d.over === null &&
     validTimers(d)
   );

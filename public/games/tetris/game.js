@@ -2,7 +2,6 @@
 // starts or resumes, destroyed when the page is left or a new match starts.
 // The page shell (main.js) owns coins, saving and overlays.
 import { createAudio } from "./audio.js";
-import { settingsOf } from "./difficulty.js";
 import { createEngine } from "./engine.js";
 import { bindGestures } from "./gesture.js";
 import { COLS, VISIBLE_ROWS } from "./grid.js";
@@ -92,12 +91,11 @@ function buildLoop(opts, engine, parts) {
   });
 }
 
-// A resumed match keeps its own difficulty (and so its ghost setting).
-function createBoard({ difficulty, saved, canvases }) {
-  const { startLevel } = settingsOf(difficulty);
-  const engine = createEngine({ startLevel, difficulty, saved });
-  const { ghost } = settingsOf(engine.state.difficulty);
-  return { engine, view: createView({ ...canvases, ghost }) };
+// A resumed match keeps its own ghost setting.
+function createBoard({ startLevel, ghost, saved, canvases }) {
+  const engine = createEngine({ startLevel, ghost, saved });
+  const view = createView({ ...canvases, ghost: engine.state.ghost === true });
+  return { engine, view };
 }
 
 export function createGame(opts) {

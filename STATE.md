@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Tetris: touch pads under the well, Facile / Moyen / Difficile slider, edge-column zones, swipe up = rotate, double tap = drop; browser-checked (synthetic touch) at 390×844. 2048 and Fusion de fruits before it.
+Status: Tetris on Game Boy rules: scoring, speeds, start level 0-9 slider, ghost checkbox (off by default), rocket at 100k+; browser-checked at 390×844. 2048 and Fusion de fruits before it.
 Focus: Owner play-test of Tetris (phone, desktop, TV), then 2048 and Fusion de fruits; owner phone check of the hub and the estimated `players` / `duration`.
 Level: L1 (new game Tetris)
 
@@ -13,7 +13,7 @@ Context:
 - Relevant_Decisions: 0060, 0059, 0053
 
 Next:
-- Owner: play Tetris on a real phone (portrait + landscape: tap left / right / below the well, tap the well to rotate, flick down to drop, tap the hold box), desktop (keyboard) and the TV (`/games/tetris/index.html?tv=1` once); judge zone sizes, soft-drop speed, pastel palette, "Reprendre" (comes back paused).
+- Owner: play Tetris on a real phone (portrait + landscape: tap left / right / below the well, tap the well to rotate, flick down to drop, tap the hold box), desktop (keyboard) and the TV (`/games/tetris/index.html?tv=1` once); judge zone sizes, soft-drop speed, pastel palette, Game Boy speeds per start level, the rocket (needs a 100 000+ match), "Reprendre" (comes back paused).
 - Owner: play 2048 on a phone (portrait + landscape), desktop and the TV (`/games/2048/index.html?tv=1` once): swipe and tap-near-an-edge, animation speed, palette and sounds, Facile (3 undos) vs Normal (no undo), 2048 win card, "Reprendre".
 - Owner: play Fusion de fruits on a phone, desktop and the TV (`/games/fruitmerge/index.html?tv=1` once).
 - Owner: on a phone, try the hub: rows, "Tout voir", pills, search, ★, Back, a shared `?view=all&type=cartes&players=duo` link. Fix my estimates in `public/hub-config.json` (every `duration`, party-game `players`) and judge each thumbnail's square crop.
@@ -33,8 +33,8 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
-- 2026-11-04 Tetris gestures: left / right zones reach 2 columns into the well; on the middle of the well, swipe up = rotate, double tap = hard drop (undoes the first tap's turn).
-- 2026-11-04 Tetris: pads under the well replace the ▼ hint (◀, bar = hard drop, ▶, ↻; touch screens only); start-screen difficulty slider Facile / Moyen / Difficile = start level 1 / 4 / 7, ghost only in Facile; the options' start level 1-10 chips are gone; difficulty saved with the match (older saves = Facile).
+- 2026-11-04 Tetris Game Boy rules: levels 0-9 (slider on the start screen), Game Boy speeds (frames per row) and scoring 40/100/300/1200 × (level + 1), 1 point per dropped cell; T-spin / B2B / combo removed (`tspin.js` deleted); ghost checkbox, off by default, saved with the match; rocket layer before the end card at 100k / 150k / 200k / 250k (4 sizes). Difficulty slider removed.
+- 2026-11-04 Tetris gestures: left / right zones reach 2 columns into the well; on the middle of the well, swipe up = rotate, double tap = hard drop (undoes the first tap's turn). Pads under the well (◀, bar = hard drop, ▶, ↻; touch screens only).
 - 2026-11-04 Tetris touch rework: on-screen pads removed; whole stage is the touch surface (left / right of the well move, below soft drops, well = rotate / drag / flick, hold box = hold); HUD row on top in portrait, columns in landscape, well up to 280×560 on a 390×844 phone; pieces spawn whole on the top visible row; one next piece; pastel piece colours.
 - 2026-11-04 Tetris (`public/games/tetris/`): 10×20 + 2 hidden rows, 7-bag, SRS + I kicks, hold, ghost, next 5, lock delay 0.5 s / 15 resets, DAS/ARR, T-spin (3-corner), B2B, combo, levels (start 1-10), 40 lines = won, best score, full resume (paused). Keyboard, touch pads + gestures, TV remote. Engine checked in Node; `npm run check` passes; no browser check.
 - 2026-11-03 2048: two levels on the start screen, "Facile" (3 undos) and "Normal" (no undo, ↶ hidden); level saved with the match (old saves = Facile), one record per level, "Rejouer" keeps the level. Browser-checked at 320×568, 390×800, 740×360.

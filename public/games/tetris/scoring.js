@@ -1,11 +1,12 @@
-// Guideline scoring and speed curve.
+// Original Game Boy (1989) scoring, speeds and levels 0-9 to start from.
 export const GOAL_LINES = 40;
 export const LINES_PER_LEVEL = 10;
+export const MAX_START_LEVEL = 9;
 
-const LINE_POINTS = [0, 100, 300, 500, 800];
-const SPIN_POINTS = { full: [400, 800, 1200, 1600], mini: [100, 200, 400, 0] };
-const CURVE_MAX_LEVEL = 20;
-const MIN_INTERVAL = 0.001;
+const LINE_POINTS = [0, 40, 100, 300, 1200];
+// Frames per row on the Game Boy (59.73 fps), levels 0-20; 3 after that.
+const GB_FRAMES = [53, 49, 45, 41, 37, 33, 28, 22, 17, 11, 10, 9, 8, 7, 6, 6, 5, 5, 4, 4, 3];
+const GB_FPS = 59.73;
 const SOFT_FACTOR = 20;
 const MIN_SOFT_INTERVAL = 0.02;
 
@@ -14,25 +15,11 @@ export const levelFor = (startLevel, lines) =>
 
 // Seconds per row of gravity; soft drop is 20x faster.
 export function fallInterval(startLevel, lines, soft = false) {
-  const level = Math.min(levelFor(startLevel, lines), CURVE_MAX_LEVEL);
-  const base = Math.max(MIN_INTERVAL, (0.8 - (level - 1) * 0.007) ** (level - 1));
+  const level = Math.min(levelFor(startLevel, lines), GB_FRAMES.length - 1);
+  const base = GB_FRAMES[level] / GB_FPS;
   if (!soft) return base;
   return Math.min(base, Math.max(base / SOFT_FACTOR, MIN_SOFT_INTERVAL));
 }
 
-// Points for one lock. `combo` is -1 when the last lock cleared nothing and
-// `b2b` whether the last clear was "difficult" (Tetris or line-clearing
-// T-spin). Returns the new combo / b2b states too.
-export function scoreLock({ lines, spin, level, combo, b2b }) {
-  const base = spin === "none" ? LINE_POINTS[lines] : SPIN_POINTS[spin][lines];
-  const difficult = lines > 0 && (lines === 4 || spin !== "none");
-  const b2bApplied = difficult && b2b;
-  const nextCombo = lines > 0 ? combo + 1 : -1;
-  const comboPoints = nextCombo > 0 ? 50 * nextCombo * level : 0;
-  return {
-    points: Math.floor(base * (b2bApplied ? 1.5 : 1)) * level + comboPoints,
-    combo: nextCombo,
-    b2b: lines > 0 ? difficult : b2b,
-    b2bApplied
-  };
-}
+// Points for clearing `lines` rows at `level`, as on the Game Boy.
+export const linePoints = (lines, level) => LINE_POINTS[lines] * (level + 1);

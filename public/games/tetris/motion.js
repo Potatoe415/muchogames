@@ -31,7 +31,6 @@ export function shift(ctx, dx, dy) {
   if (collides(s.grid, type, rot, x + dx, y + dy)) return false;
   s.piece.x += dx;
   s.piece.y += dy;
-  s.lastAction = "move";
   settle(ctx, true);
   return true;
 }
@@ -40,14 +39,11 @@ export function rotate(ctx, dir) {
   const { s } = ctx;
   const { type, rot, x, y } = s.piece;
   const to = (rot + dir + 4) % 4;
-  const kicks = kicksFor(type, rot, to);
-  const index = kicks.findIndex(
+  const kick = kicksFor(type, rot, to).find(
     ([dx, dy]) => !collides(s.grid, type, to, x + dx, y + dy)
   );
-  if (index < 0) return false;
-  s.piece = { type, rot: to, x: x + kicks[index][0], y: y + kicks[index][1] };
-  s.lastAction = "rotate";
-  s.kick = index;
+  if (!kick) return false;
+  s.piece = { type, rot: to, x: x + kick[0], y: y + kick[1] };
   settle(ctx, true);
   return true;
 }

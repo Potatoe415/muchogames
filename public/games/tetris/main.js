@@ -1,11 +1,11 @@
 // Page shell: language, options panel, start screen, overlays and the match
 // lifecycle (docs/PLATFORM_RULES.md). The match itself lives in game.js and
 // is destroyed whenever the page is left or a new match starts.
-import { DIFFICULTIES, settingsOf } from "./difficulty.js";
 import { createGame } from "./game.js";
 import { createHud } from "./hud.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
 import * as prefs from "./prefs.js";
+import { launchRocket, rocketTier } from "./rocket.js";
 import { clearMatch, loadMatch, storeMatch } from "./save.js";
 import { levelFor } from "./scoring.js";
 
@@ -29,25 +29,20 @@ const page = {
 const t = (key, vars) => translate(page.lang, key, vars);
 const hud = createHud({ $ });
 
-function renderDifficulty() {
-  const slider = $("tetris-difficulty-slider");
-  slider.value = String(DIFFICULTIES.indexOf(page.difficulty));
-  slider.setAttribute("aria-valuetext", t(page.difficulty));
-  document.querySelectorAll("[data-difficulty]").forEach((mark) => {
-    mark.classList.toggle("active", mark.dataset.difficulty === page.difficulty);
-  });
+function renderSetup() {
+  const level = page.startLevel;
+  $("tetris-start-level-label").textContent = t("startLevelValue", { level });
+  $("tetris-start-level-slider").value = String(level);
+  $("tetris-ghost-checkbox").checked = page.ghost;
 }
 
 function renderStart() {
   $("tetris-start-best").textContent = t("startBest", { best: page.best });
   $("tetris-play-button").querySelector("[data-play-info]").textContent = t(
-    "playInfo",
-    {
-      difficulty: t(page.difficulty),
-      level: settingsOf(page.difficulty).startLevel
-    }
+    page.ghost ? "playInfoGhost" : "playInfo",
+    { level: page.startLevel }
   );
-  renderDifficulty();
+  renderSetup();
   const resume = $("tetris-resume-button");
   resume.hidden = !page.saved;
   if (page.saved) {
@@ -124,7 +119,13 @@ function onEnd(summary) {
   clearMatch();
   page.saved = null;
   window.MuchogamesMatch.finish({ won: summary.won, score: summary.score });
-  showOverlay("end");
+  const tier = rocketTier(summary.score);
+  if (!tier) return showOverlay("end");
+  page.overlay = "rocket";
+  page.game?.releaseKeys();
+  return launchRocket($("tetris-rocket"), tier).then(() => {
+    if (page.overlay === "rocket") showOverlay("end");
+  });
 }
 
 function onHud(state) {
@@ -132,13 +133,8 @@ function onHud(state) {
   saveMatch();
 }
 
-function onLock({ lines, spin, combo, b2b }) {
-  const parts = [];
-  if (spin !== "none") parts.push(t(spin === "mini" ? "spinMini" : "spin"));
-  if (lines > 0) parts.push(t(`clear${lines}`));
-  if (parts.length && b2b) parts.push(t("b2b"));
-  if (combo > 0) parts.push(t("combo", { n: combo }));
-  if (parts.length) hud.toast(parts.join(" · "));
+function onLock({ lines }) {
+  if (lines > 0) hud.toast(t(`clear${lines}`));
 }
 
 function pauseGame() {
@@ -158,7 +154,8 @@ function mountGame(saved) {
       next: $("tetris-next-canvas")
     },
     saved,
-    difficulty: page.difficulty,
+    startLevel: page.startLevel,
+    ghost: page.ghost,
     muted: page.muted,
     canPlay,
     onHud,
@@ -219,9 +216,15 @@ function setLanguage(lang) {
   applyLanguage();
 }
 
-function setDifficulty(difficulty) {
-  page.difficulty = difficulty;
-  prefs.saveDifficulty(difficulty);
+function setStartLevel(level) {
+  page.startLevel = level;
+  prefs.saveStartLevel(level);
+  renderStart();
+}
+
+function setGhost(ghost) {
+  page.ghost = ghost;
+  prefs.saveGhost(ghost);
   renderStart();
 }
 
@@ -230,11 +233,11 @@ function bindStart() {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   $("tetris-sound-toggle").addEventListener("click", toggleSound);
-  $("tetris-difficulty-slider").addEventListener("input", (event) => {
-    setDifficulty(DIFFICULTIES[Number(event.target.value)] ?? "easy");
+  $("tetris-start-level-slider").addEventListener("input", (event) => {
+    setStartLevel(Number(event.target.value));
   });
-  document.querySelectorAll("[data-difficulty]").forEach((mark) => {
-    mark.addEventListener("click", () => setDifficulty(mark.dataset.difficulty));
+  $("tetris-ghost-checkbox").addEventListener("change", (event) => {
+    setGhost(event.target.checked);
   });
   $("tetris-play-button").addEventListener("click", startMatch);
   $("tetris-resume-button").addEventListener("click", resumeMatch);

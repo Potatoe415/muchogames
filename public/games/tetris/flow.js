@@ -4,8 +4,7 @@ import { HIDDEN, clearFull, collides } from "./grid.js";
 import { place } from "./grid.js";
 import { grounded } from "./motion.js";
 import { CELLS, SPAWN } from "./pieces.js";
-import { levelFor, scoreLock } from "./scoring.js";
-import { detectSpin } from "./tspin.js";
+import { levelFor, linePoints } from "./scoring.js";
 
 export const QUEUE_SIZE = 5;
 
@@ -23,7 +22,6 @@ export function spawn(ctx, type) {
   const { s } = ctx;
   // Whole on the first visible row; the hidden rows only take rotation kicks.
   const piece = { type, rot: 0, x: SPAWN[type].x, y: SPAWN[type].y + HIDDEN };
-  s.lastAction = null;
   s.fallTimer = 0;
   s.lockTimer = null;
   s.lockResets = 0;
@@ -39,17 +37,14 @@ const isHidden = (piece) =>
 export function lock(ctx) {
   const { s, events } = ctx;
   const { piece } = s;
-  const spin = detectSpin(s.grid, piece, s.lastAction, s.kick);
   const hidden = isHidden(piece);
   place(s.grid, piece);
   const lines = clearFull(s.grid);
   const level = levelFor(s.startLevel, s.lines);
-  const res = scoreLock({ lines, spin, level, combo: s.combo, b2b: s.b2b });
-  s.score += res.points;
-  s.combo = res.combo;
-  s.b2b = res.b2b;
+  const points = linePoints(lines, level);
+  s.score += points;
   s.lines += lines;
-  events.push({ type: "lock", lines, spin, combo: res.combo, points: res.points, b2b: res.b2bApplied });
+  events.push({ type: "lock", lines, points });
   if (levelFor(s.startLevel, s.lines) > level) events.push({ type: "level" });
   s.holdUsed = false;
   if (hidden && lines === 0) topOut(ctx, "lockout");

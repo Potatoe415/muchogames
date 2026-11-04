@@ -86,25 +86,25 @@
           </p>
           <h2 class="tr-visually-hidden" data-i18n="title">Tetris</h2>
           <p class="tr-pitch" data-i18n="pitch"></p>
-          <div class="tr-difficulty" data-id="tetris-difficulty">
-            <p class="tr-difficulty-title" data-i18n="difficulty">Difficulté</p>
+          <div class="tr-setup" data-id="tetris-setup">
+            <p class="tr-setup-title" data-id="tetris-start-level-label"></p>
             <input
               type="range"
               class="tr-range"
               min="0"
-              max="2"
+              max="9"
               step="1"
               value="0"
-              data-id="tetris-difficulty-slider"
+              data-id="tetris-start-level-slider"
               data-tv-keys="left right"
-              aria-label="Difficulté"
-              data-i18n-aria="difficulty"
+              aria-label="Niveau de départ"
+              data-i18n-aria="startLevel"
             />
-            <div class="tr-difficulty-marks">
-              <span data-difficulty="easy" data-id="tetris-difficulty-easy" data-i18n="easy">Facile</span>
-              <span data-difficulty="medium" data-id="tetris-difficulty-medium" data-i18n="medium">Moyen</span>
-              <span data-difficulty="hard" data-id="tetris-difficulty-hard" data-i18n="hard">Difficile</span>
-            </div>
+            <div class="tr-range-ends" aria-hidden="true"><span>0</span><span>9</span></div>
+            <label class="tr-check" data-id="tetris-ghost-option">
+              <input type="checkbox" data-id="tetris-ghost-checkbox" />
+              <span data-i18n="ghostOption">Afficher la pièce fantôme</span>
+            </label>
           </div>
           <button type="button" class="tr-button tr-resume" data-id="tetris-resume-button" data-tv-focus hidden>
             <span data-i18n="resume">Reprendre</span>
@@ -178,6 +178,21 @@
           <button type="button" class="tr-button" data-id="tetris-continue-button" data-tv-focus data-tv-back data-i18n="continue"></button>
           <button type="button" class="tr-button tr-button-soft" data-id="tetris-paused-menu-button" data-match-quit data-i18n="menu"></button>
         </div>
+      </div>
+
+      <div class="tr-rocket" data-id="tetris-rocket" hidden>
+        <p class="tr-rocket-text" data-i18n="rocket">Décollage !</p>
+        <div class="tr-rocket-smoke" aria-hidden="true"></div>
+        <svg class="tr-rocket-ship" viewBox="0 0 60 124" aria-hidden="true">
+          <path class="tr-flame" d="M21 92 Q30 124 39 92 Z" fill="#f5c79a" />
+          <path class="tr-flame" d="M25 92 Q30 110 35 92 Z" fill="#f3e09a" />
+          <path d="M18 66 L5 92 L18 88 Z" fill="#f1aaaa" />
+          <path d="M42 66 L55 92 L42 88 Z" fill="#f1aaaa" />
+          <path d="M30 4 C45 20 45 60 42 92 L18 92 C15 60 15 20 30 4 Z" fill="#eef2fb" />
+          <path d="M30 4 C36 11 39 17 40.5 24 L19.5 24 C21 17 24 11 30 4 Z" fill="#f1aaaa" />
+          <circle cx="30" cy="44" r="7" fill="#9ddbe3" stroke="#a8baf0" stroke-width="3" />
+          <rect x="28" y="74" width="4" height="18" fill="#f1aaaa" />
+        </svg>
       </div>
 
       <div class="tr-overlay tr-overlay-late" data-id="tetris-end" data-tv-overlay hidden>

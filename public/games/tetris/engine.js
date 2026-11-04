@@ -7,13 +7,13 @@ import { fallInterval } from "./scoring.js";
 
 export { MAX_RESETS, QUEUE_SIZE };
 export const LOCK_DELAY = 0.5;
-const SOFT_POINTS = 1;
-const HARD_POINTS = 2;
+// Game Boy: 1 point per row pushed down (it had no hard drop; same here).
+const DROP_POINTS = 1;
 
-function freshState(startLevel, difficulty) {
+function freshState(startLevel, ghost) {
   return {
     startLevel,
-    difficulty,
+    ghost,
     grid: emptyGrid(),
     bag: [],
     queue: [],
@@ -22,10 +22,6 @@ function freshState(startLevel, difficulty) {
     holdUsed: false,
     score: 0,
     lines: 0,
-    combo: -1,
-    b2b: false,
-    lastAction: null,
-    kick: 0,
     fallTimer: 0,
     lockTimer: null,
     lockResets: 0,
@@ -45,7 +41,7 @@ function fall(ctx, dt, soft) {
       s.fallTimer = 0;
       return;
     }
-    if (soft) s.score += SOFT_POINTS;
+    if (soft) s.score += DROP_POINTS;
   }
 }
 
@@ -60,7 +56,7 @@ function tick(ctx, dt, soft) {
 
 function hardDrop(ctx) {
   if (ctx.s.over) return;
-  while (shift(ctx, 0, 1)) ctx.s.score += HARD_POINTS;
+  while (shift(ctx, 0, 1)) ctx.s.score += DROP_POINTS;
   ctx.events.push({ type: "hard" });
   lock(ctx);
 }
@@ -83,14 +79,14 @@ function act(ctx, type, run) {
   return ok;
 }
 
-// `difficulty` is only carried along so a saved match keeps it.
+// `ghost` is only carried along so a saved match keeps its setting.
 export function createEngine({
-  startLevel = 1,
-  difficulty = "easy",
+  startLevel = 0,
+  ghost = false,
   rng = Math.random,
   saved
 } = {}) {
-  const s = saved ? structuredClone(saved) : freshState(startLevel, difficulty);
+  const s = saved ? structuredClone(saved) : freshState(startLevel, ghost);
   const ctx = { s, events: [], rng };
   if (!saved) spawn(ctx, nextType(ctx));
   return {
