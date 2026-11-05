@@ -1,0 +1,209 @@
+/* Play screen. Portrait: status (and the end buttons) on top, grid below.
+   Landscape: status column left, grid right. The grid is the largest 7:6
+   rectangle that fits its area (container units). */
+.c4-play {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 0.8em;
+  width: 100%;
+}
+
+.c4-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-width: 0;
+}
+
+.c4-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 2.4em;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.c4-status {
+  overflow-wrap: anywhere;
+}
+
+.c4-turn-disc {
+  flex: 0 0 auto;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+}
+
+.c4-turn-disc:not([data-disc="red"], [data-disc="yellow"]) {
+  display: none;
+}
+
+.c4-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.c4-end .game-button {
+  width: auto;
+  min-width: 8em;
+}
+
+.c4-board-area {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  container-type: size;
+}
+
+.c4-board {
+  --gap: 2.2%;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0 var(--gap);
+  width: min(100cqw, 100cqh * 7 / 6);
+  aspect-ratio: 7 / 6;
+  padding: 2.2%;
+  box-sizing: border-box;
+  border-radius: 4%;
+  background: #2456c4;
+  box-shadow:
+    inset 0 -0.35em 0 rgba(0, 0, 0, 0.25),
+    0 0.6em 1.6em rgba(0, 0, 0, 0.4);
+  touch-action: manipulation;
+}
+
+.c4-column {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+.c4-column:focus-visible,
+html.tv .c4-column:focus {
+  outline-offset: 0;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+@media (hover: hover) {
+  .c4-board:not(.c4-over) .c4-column:not(.c4-full):hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+.c4-full,
+.c4-over .c4-column {
+  cursor: default;
+}
+
+.c4-cell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #0f1d3a;
+  box-shadow: inset 0 0.18em 0.3em rgba(0, 0, 0, 0.55);
+}
+
+.c4-cell[data-disc]::after {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: 50%;
+  background: var(--disc);
+  box-shadow:
+    inset 0 -0.2em 0 var(--disc-edge),
+    inset 0 0.15em 0.2em rgba(255, 255, 255, 0.35);
+}
+
+[data-disc="red"] {
+  --disc: #e8414a;
+  --disc-edge: #a8242c;
+}
+
+[data-disc="yellow"] {
+  --disc: #f5c542;
+  --disc-edge: #c2921b;
+}
+
+.c4-logo span,
+.c4-turn-disc[data-disc] {
+  background: var(--disc);
+  box-shadow: inset 0 -0.2em 0 var(--disc-edge);
+}
+
+/* The disc just played falls from the top of its column. */
+.c4-new::after {
+  animation: c4-fall calc(0.12s + var(--fall) * 0.05s) ease-in both;
+}
+
+@keyframes c4-fall {
+  from {
+    transform: translateY(calc(var(--fall) * -120%));
+  }
+}
+
+/* The winning line pulses; the other discs dim. */
+.c4-over .c4-cell[data-disc]:not(.c4-win)::after {
+  opacity: 0.45;
+}
+
+.c4-win::after {
+  animation: c4-pulse 0.9s ease-in-out 0.4s infinite alternate;
+}
+
+.c4-win.c4-new::after {
+  animation:
+    c4-fall calc(0.12s + var(--fall) * 0.05s) ease-in both,
+    c4-pulse 0.9s ease-in-out 0.4s infinite alternate;
+}
+
+@keyframes c4-pulse {
+  to {
+    box-shadow:
+      inset 0 -0.2em 0 var(--disc-edge),
+      0 0 0 0.25em #ffffff;
+  }
+}
+
+@media (orientation: landscape) {
+  .c4-play {
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(8em, 14em) minmax(0, 1fr);
+  }
+
+  .c4-status-row {
+    flex-direction: column;
+  }
+
+  .c4-end {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c4-new::after,
+  .c4-win::after,
+  .c4-win.c4-new::after {
+    animation: none;
+  }
+}

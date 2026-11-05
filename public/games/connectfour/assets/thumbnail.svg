@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#23365f" />
+      <stop offset="1" stop-color="#101a30" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#sky)" />
+  <rect x="26" y="62" width="348" height="300" rx="18" fill="#2456c4" />
+  <circle cx="56" cy="332" r="19" fill="#e8414a" />
+  <circle cx="56" cy="284" r="19" fill="#0f1d3a" />
+  <circle cx="56" cy="236" r="19" fill="#0f1d3a" />
+  <circle cx="56" cy="188" r="19" fill="#0f1d3a" />
+  <circle cx="56" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="56" cy="92" r="19" fill="#0f1d3a" />
+  <circle cx="104" cy="332" r="19" fill="#f5c542" />
+  <circle cx="104" cy="284" r="19" fill="#e8414a" />
+  <circle cx="104" cy="236" r="19" fill="#0f1d3a" />
+  <circle cx="104" cy="188" r="19" fill="#0f1d3a" />
+  <circle cx="104" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="104" cy="92" r="19" fill="#0f1d3a" />
+  <circle cx="152" cy="332" r="19" fill="#f5c542" />
+  <circle cx="152" cy="284" r="19" fill="#e8414a" />
+  <circle cx="152" cy="236" r="19" fill="#e8414a" />
+  <circle cx="152" cy="188" r="19" fill="#0f1d3a" />
+  <circle cx="152" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="152" cy="92" r="19" fill="#0f1d3a" />
+  <circle cx="200" cy="332" r="19" fill="#e8414a" />
+  <circle cx="200" cy="284" r="19" fill="#f5c542" />
+  <circle cx="200" cy="236" r="19" fill="#f5c542" />
+  <circle cx="200" cy="188" r="19" fill="#e8414a" />
+  <circle cx="200" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="200" cy="92" r="19" fill="#0f1d3a" />
+  <circle cx="248" cy="332" r="19" fill="#f5c542" />
+  <circle cx="248" cy="284" r="19" fill="#f5c542" />
+  <circle cx="248" cy="236" r="19" fill="#e8414a" />
+  <circle cx="248" cy="188" r="19" fill="#0f1d3a" />
+  <circle cx="248" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="248" cy="92" r="19" fill="#0f1d3a" />
+  <circle cx="296" cy="332" r="19" fill="#0f1d3a" />
+  <circle cx="296" cy="284" r="19" fill="#0f1d3a" />
+  <circle cx="296" cy="236" r="19" fill="#0f1d3a" />
+  <circle cx="296" cy="188" r="19" fill="#0f1d3a" />
+  <circle cx="296" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="296" cy="92" r="19" fill="#0f1d3a" />
+  <circle cx="344" cy="332" r="19" fill="#0f1d3a" />
+  <circle cx="344" cy="284" r="19" fill="#0f1d3a" />
+  <circle cx="344" cy="236" r="19" fill="#0f1d3a" />
+  <circle cx="344" cy="188" r="19" fill="#0f1d3a" />
+  <circle cx="344" cy="140" r="19" fill="#0f1d3a" />
+  <circle cx="344" cy="92" r="19" fill="#0f1d3a" />
+  <line x1="56" y1="332" x2="200" y2="188" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.85" />
+  <text x="200" y="44" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle" fill="#eef2fa">4</text>
+</svg>

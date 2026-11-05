@@ -1,0 +1,237 @@
+/* 4 en ligne: page frame, header colours, cards, buttons, TV ring. Mobile
+   first (a 360px-wide phone); sizes grow with the screen (vmin) up to a 4K
+   TV. Grid, discs and the play layout live in board.css. */
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  margin: 0;
+  overscroll-behavior: none;
+  background: radial-gradient(circle at 50% 30%, #23365f 0%, #101a30 75%);
+  color: #eef2fa;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(238, 242, 250, 0.08);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #eef2fa;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.back-button,
+.options-button {
+  background: #2f4a80;
+  color: #ffffff;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.rules-modal-content p {
+  margin: 0 0 0.6em;
+  line-height: 1.5;
+}
+
+/* Android bars can cover the bottom even when the safe-area inset is 0. */
+.game-shell {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.game-screen {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+  width: min(100%, 24em);
+  padding: 1.4em 1.2em 1.5em;
+  box-sizing: border-box;
+  border-radius: 1.6em;
+  background: rgba(28, 44, 78, 0.94);
+  text-align: center;
+  box-shadow: 0 0.8em 2.4em rgba(0, 0, 0, 0.35);
+}
+
+.game-card p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.game-title {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.c4-pitch {
+  color: #c4cee4;
+}
+
+.c4-players {
+  color: #f5c542;
+  font-weight: 700;
+}
+
+.c4-logo {
+  display: flex;
+  gap: 0.35em;
+}
+
+.c4-logo span {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.game-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 14em);
+  min-height: max(44px, 3em);
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 1em;
+  background: #2fa36b;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.1em;
+  font-weight: 700;
+  box-shadow: 0 0.2em 0 #1e7a4e;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.game-button:active {
+  transform: translateY(0.12em);
+  box-shadow: 0 0.08em 0 #1e7a4e;
+}
+
+.c4-resume {
+  background: #3f7fd9;
+  box-shadow: 0 0.2em 0 #2c5ea6;
+}
+
+.c4-resume-info {
+  font-size: 0.75em;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.c4-button-soft {
+  background: #2f4a80;
+  box-shadow: 0 0.2em 0 #1f3359;
+}
+
+:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.lang-btn:focus-visible {
+  outline-color: #2f4a80;
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: 0.3rem solid #ffffff !important;
+  outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.6rem rgba(245, 197, 66, 0.9);
+}
+
+/* Landscape phones are ~360px tall: the dashboard card goes in two columns
+   (text left, buttons right). */
+@media (orientation: landscape) and (max-height: 500px) {
+  .game-shell {
+    padding-top: 4px;
+  }
+
+  .game-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-auto-flow: dense;
+    align-items: center;
+    gap: 0.4em 1em;
+    width: min(100%, 32em);
+    padding: 0.8em 1em;
+  }
+
+  .game-card > * {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .game-card > .game-button {
+    grid-column: 2;
+    grid-row: span 2;
+  }
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: the header grows with the
+   screen and everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .game-shell {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .game-card {
+    width: min(100%, 30em);
+  }
+}
