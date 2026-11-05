@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="cards.css" />
     <link rel="stylesheet" href="bidding.css" />
     <link rel="stylesheet" href="panels.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -24,6 +26,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -148,7 +151,7 @@
       data-deck="two"
       data-back="classic"
     >
-      <section class="br-start" data-id="bridge-start-screen">
+      <section class="br-start" data-id="bridge-start-screen" data-tv-screen>
         <div class="br-card">
           <div class="br-logo" aria-hidden="true">
             <span class="suit-3">♠</span><span class="suit-2">♥</span
@@ -160,6 +163,7 @@
             type="button"
             class="br-button br-button-resume"
             data-id="bridge-resume-button"
+            data-tv-focus
             data-i18n="resume"
             hidden
           ></button>
@@ -267,12 +271,13 @@
             type="button"
             class="br-button"
             data-id="bridge-play-button"
+            data-tv-focus
             data-i18n="play"
           ></button>
         </div>
       </section>
 
-      <section class="br-stage" data-id="bridge-stage" hidden>
+      <section class="br-stage" data-id="bridge-stage" data-tv-screen hidden>
         <div class="br-status" data-id="bridge-status">
           <span class="br-status-deal" data-id="bridge-status-deal"></span>
           <button
@@ -356,6 +361,7 @@
               class="br-call br-call-pass"
               data-call="P"
               data-id="bridge-bid-pass"
+              data-tv-focus
               data-i18n="pass"
             ></button>
             <button
@@ -406,7 +412,12 @@
             </svg>
             <span data-i18n="lastTrick"></span>
           </button>
-          <button type="button" class="br-action" data-id="bridge-score-button">
+          <button
+            type="button"
+            class="br-action"
+            data-id="bridge-score-button"
+            data-tv-focus
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 3h14v18H5z" />
               <path d="M9 8h6M9 12h6M9 16h4" />
@@ -428,6 +439,7 @@
             type="button"
             class="br-action"
             data-id="bridge-quit-button"
+            data-tv-back
             data-match-quit
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -437,7 +449,12 @@
           </button>
         </div>
 
-        <div class="br-overlay" data-id="bridge-deal-result" hidden>
+        <div
+          class="br-overlay"
+          data-id="bridge-deal-result"
+          data-tv-overlay
+          hidden
+        >
           <div class="br-card br-panel">
             <h2 class="br-panel-title" data-id="bridge-result-title"></h2>
             <p class="br-panel-line" data-id="bridge-result-line"></p>
@@ -447,6 +464,7 @@
                 type="button"
                 class="br-button"
                 data-id="bridge-next-deal-button"
+                data-tv-focus
                 data-i18n="nextDeal"
               ></button>
               <button
@@ -465,7 +483,12 @@
           </div>
         </div>
 
-        <div class="br-overlay" data-id="bridge-hands-panel" hidden>
+        <div
+          class="br-overlay"
+          data-id="bridge-hands-panel"
+          data-tv-overlay
+          hidden
+        >
           <div class="br-card br-panel br-panel-wide">
             <h2 class="br-panel-title" data-i18n="allHands"></h2>
             <p class="br-panel-line" data-id="bridge-hands-contract"></p>
@@ -474,12 +497,19 @@
               type="button"
               class="br-button br-button-ghost"
               data-id="bridge-hands-close"
+              data-tv-focus
+              data-tv-back
               data-i18n="close"
             ></button>
           </div>
         </div>
 
-        <div class="br-overlay" data-id="bridge-score-panel" hidden>
+        <div
+          class="br-overlay"
+          data-id="bridge-score-panel"
+          data-tv-overlay
+          hidden
+        >
           <div class="br-card br-panel br-panel-wide">
             <h2 class="br-panel-title" data-i18n="scoreTitle"></h2>
             <div class="br-score" data-id="bridge-score-table"></div>
@@ -487,12 +517,19 @@
               type="button"
               class="br-button br-button-ghost"
               data-id="bridge-score-close"
+              data-tv-focus
+              data-tv-back
               data-i18n="close"
             ></button>
           </div>
         </div>
 
-        <div class="br-overlay" data-id="bridge-match-end" hidden>
+        <div
+          class="br-overlay"
+          data-id="bridge-match-end"
+          data-tv-overlay
+          hidden
+        >
           <div class="br-card br-panel br-panel-wide">
             <h2 class="br-panel-title" data-id="bridge-match-title"></h2>
             <p class="br-panel-line" data-id="bridge-match-line"></p>
@@ -502,12 +539,14 @@
                 type="button"
                 class="br-button"
                 data-id="bridge-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               ></button>
               <button
                 type="button"
                 class="br-button br-button-ghost"
                 data-id="bridge-change-settings-button"
+                data-tv-back
                 data-i18n="changeSettings"
               ></button>
               <button

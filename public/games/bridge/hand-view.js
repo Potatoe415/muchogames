@@ -62,6 +62,8 @@ export function renderFan(
     el.classList.toggle("is-playable", can);
     el.classList.toggle("is-dim", Boolean(playable) && !can);
     el.classList.toggle("is-hint", hint === card);
+    // TV remote: the focus lands on the hand when it is the human's turn.
+    if (can) el.dataset.tvFocus = "";
     if (can) el.addEventListener("click", () => onPlay(card));
     host.append(el);
   });

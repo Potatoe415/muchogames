@@ -166,6 +166,7 @@ export function createFlow(ctx) {
   }
 
   function call(value) {
+    if (!fs.match) return;
     const state = dealState(deal());
     if (state.phase !== "auction" || state.toAct !== SOUTH) return;
     fs.epoch += 1;

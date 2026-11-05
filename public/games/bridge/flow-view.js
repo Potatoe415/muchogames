@@ -63,6 +63,29 @@ function renderActions(fs, deal, state, settings) {
   $("bridge-claim-button").hidden = !canClaim(state) || fs.pause;
 }
 
+// Every render rebuilds the hands, so the focused card disappears. On a TV
+// the focus goes to the hand (or the bidding box) when it is lost, outside
+// the table, or parked on the score button (the fallback while robots play)
+// once it is the human's turn. tv-remote.js handles the dialogs.
+function keepTvFocus() {
+  if (!window.MuchogamesTv?.isOn()) return;
+  if (document.querySelector(".br-overlay:not([hidden])")) return;
+  const stage = $("bridge-stage");
+  const target = [...stage.querySelectorAll("[data-tv-focus]")].find(
+    (el) => !el.disabled && !el.closest("[hidden]")
+  );
+  const current = document.activeElement;
+  const parked =
+    !current ||
+    !current.isConnected ||
+    current.disabled ||
+    !stage.contains(current) ||
+    current === $("bridge-score-button");
+  if (target && parked && target !== current) {
+    target.focus({ preventScroll: true });
+  }
+}
+
 export function renderDeal(fs, deal, state, ctx) {
   const { t, lang, settings, bidBox } = ctx;
   const metas = analyzeAuction(deal.dealer, deal.vul, deal.calls).metas;
@@ -105,4 +128,5 @@ export function renderDeal(fs, deal, state, ctx) {
       ? "north"
       : "other"
     : "";
+  keepTvFocus();
 }

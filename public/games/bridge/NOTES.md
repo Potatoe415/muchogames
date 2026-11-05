@@ -27,7 +27,8 @@ modules, no dependency. Read this before opening the sources.
 | `setup.js`, `store.js` | Options panel sections (built in JS between Language and Rules), level slider, localStorage: `bridge-settings`, `bridge-saved-match`, `bridge-stats` (`{ <level>: { won, played } }`). The card back (`back` in `bridge-settings`, start screen only) sets `data-back` on `bridge-app`; `cards.css` maps it to `--br-back`, pictures in `public/shared/card-backs/` (decision 0056). |
 | `saving.js` | Writes the match in progress with its view (`saveProgress`, skipped once the match is over) and on `pagehide` / `visibilitychange` hidden. |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings, bid-explanation tags, rules HTML. |
-| `styles.css`, `slider.css`, `table.css`, `cards.css`, `bidding.css`, `panels.css` | Page/start screen; level slider; table layout (card size from viewport); card faces; auction + bidding box; overlays. |
+| `styles.css`, `slider.css`, `table.css`, `cards.css`, `bidding.css`, `panels.css`, `layout.css` | Page/start screen (6.2 margins on `bridge-app`); level slider; table layout (card size from viewport); card faces; auction + bidding box; overlays; `layout.css` (loaded last): short phones, landscape phones (two-column start card, prompt + bidding box + actions beside the table), desktop/TV sizes and header. |
+| TV (`tv-remote.js`) | Screens `bridge-start-screen` / `bridge-stage`, overlays `data-tv-overlay`. Focus: playable cards and Pass carry `data-tv-focus`, the score button is the fallback while robots play; `flow-view.js` `keepTvFocus()` puts the focus back after each render. Back presses `bridge-quit-button` (✖ with `data-match-quit`). `MuchogamesTv.play()` in start and resume. |
 
 ## Bidding engine
 

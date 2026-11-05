@@ -216,6 +216,7 @@ function returnToStart() {
 
 async function startMatch() {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
@@ -231,6 +232,7 @@ function resumeMatch() {
   const saved = loadSaved();
   renderResume(saved);
   if (!saved) return;
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   mount(saved.match, saved.view.auction);
   if (saved.view.panels.includes("hands") && page.result) showHands();

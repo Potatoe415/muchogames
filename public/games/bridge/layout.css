@@ -1,0 +1,293 @@
+/* Screen-size adjustments, loaded last: overlay margins, landscape phones
+   (bidding box and actions beside the table), desktop and TV (header
+   scaled, 3% overscan, sizes that follow the screen up to 3840x2160). */
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
+/* The shared .back-button display rule must not show a hidden control. */
+.game-nav [hidden] {
+  display: none !important;
+}
+
+:focus-visible,
+html.tv :focus {
+  outline: max(3px, 0.4dvh) solid var(--accent, #f6c445);
+  outline-offset: max(2px, 0.3dvh);
+}
+
+/* Overlays cover the whole app (its padding included): their content keeps
+   the bottom 40px and the 24px side strips free. */
+.br-overlay {
+  padding: 8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  place-items: safe center;
+}
+
+.br-panel,
+.br-panel-wide {
+  width: min(100%, 520px);
+}
+
+.br-panel {
+  max-width: 380px;
+}
+
+.br-panel-wide {
+  max-width: 520px;
+}
+
+/* Phones: the facts list gives way so the start button stays on screen. */
+@media (max-height: 720px) {
+  .br-facts,
+  .br-pitch {
+    display: none;
+  }
+
+  .br-logo {
+    font-size: 1.5rem;
+  }
+
+  .br-title {
+    margin: 4px 0;
+    font-size: 1.6rem;
+  }
+}
+
+/* Landscape phones are ~360px tall. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .game-nav {
+    height: 52px;
+  }
+
+  /* Start card in two columns: title, resume and play left, settings right. */
+  .br-start {
+    padding-top: 0;
+  }
+
+  /* Left column: logo, title, resume, play (rows 1-4); right: the two
+     settings fields, each spanning two rows. */
+  .br-card:not(.br-panel) {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-rows: repeat(4, auto);
+    align-content: center;
+    align-items: center;
+    column-gap: 16px;
+    width: 100%;
+    max-width: 680px;
+    padding: 10px 14px;
+  }
+
+  .br-card:not(.br-panel) > * {
+    grid-column: 1;
+  }
+
+  .br-card:not(.br-panel) > .br-field {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-bottom: 6px;
+  }
+
+  .br-card:not(.br-panel) > .br-field + .br-field {
+    grid-row: 3 / span 2;
+  }
+
+  .br-logo {
+    font-size: 1.2rem;
+  }
+
+  .br-title {
+    font-size: 1.4rem;
+  }
+
+  .br-button {
+    min-height: 44px;
+    padding: 8px 14px;
+  }
+
+  .br-button-resume {
+    margin-bottom: 8px;
+  }
+
+  .br-back-pick {
+    width: 34px;
+    height: 48px;
+  }
+
+  /* Table left; prompt, bidding box and actions in a column on the right. */
+  .br-stage {
+    --side: clamp(220px, 40vw, 300px);
+    --card-w: min(
+      calc((100vw - 64px - var(--side)) / 7.6),
+      calc((100dvh - 52px) / 9.6)
+    );
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--side);
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "status status"
+      "table message"
+      "table bidbox"
+      "table actions";
+    column-gap: 12px;
+    row-gap: 4px;
+    padding-top: 2px;
+  }
+
+  .br-status {
+    grid-area: status;
+  }
+
+  .br-table {
+    grid-area: table;
+    gap: 2px;
+  }
+
+  .br-message {
+    grid-area: message;
+    align-self: end;
+  }
+
+  .br-bidbox {
+    grid-area: bidbox;
+    align-self: center;
+  }
+
+  .br-actions {
+    grid-area: actions;
+    flex-wrap: wrap;
+  }
+
+  .br-fan {
+    padding-top: 6px;
+  }
+
+  .br-tag {
+    padding: 1px 7px;
+    font-size: 0.7rem;
+  }
+
+  .br-level,
+  .br-strain,
+  .br-call {
+    min-height: 36px;
+  }
+
+  .br-action {
+    min-height: 40px;
+    max-width: none;
+  }
+
+  .br-action svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .br-auction {
+    padding: 4px;
+  }
+
+  .br-explain {
+    min-height: 0;
+    margin-top: 2px;
+  }
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160. */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .nav-title {
+    font-size: 1.2rem;
+  }
+
+  .br-app {
+    padding: 1dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .br-overlay {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .br-card {
+    width: min(100%, 30rem);
+  }
+
+  .br-panel {
+    max-width: 30rem;
+  }
+
+  .br-panel-wide {
+    max-width: 40rem;
+  }
+
+  .br-stage {
+    --card-w: min(calc((100vw - 6vw) / 7.6), calc(100dvh / 11));
+  }
+
+  .br-chip,
+  .br-tick {
+    min-height: 2.5em;
+  }
+
+  .br-back-pick {
+    width: 2.75em;
+    height: 3.9em;
+  }
+
+  .br-range,
+  .br-slider {
+    --thumb: 1.9rem;
+    --track: 0.6rem;
+  }
+
+  .br-bidbox {
+    max-width: 36rem;
+  }
+
+  .br-level,
+  .br-strain,
+  .br-call {
+    min-height: max(40px, 5.5dvh);
+  }
+
+  .br-action {
+    max-width: 6rem;
+    min-height: max(46px, 6dvh);
+  }
+
+  .br-action svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .br-auction {
+    max-width: 24rem;
+  }
+
+  .br-auction-call,
+  .br-auction-next {
+    min-height: 1.9em;
+  }
+}
