@@ -25,7 +25,8 @@ Solo merge puzzle in the spirit of Suika / Watermelon Game: drop fruits into a c
 - Loss: any fruit at least 1 s old (merged fruits count at once) above the line for 3 s in a row. No `won` sent to `finish()` (score attack); record in `fruitmerge-best`.
 - 🧹 Broom: 2 per match, removes every blueberry and strawberry (levels 0–1); it also drops the undo step. ↶ Undo: 3 per match, restores the state just before the last drop (one step).
 - How-to opens before the very first match (`fruitmerge-howto-seen`), and from the start screen / pause.
-- Layout: portrait = tools / board / fruit bar; landscape = tools left, board centre, fruit bar right (2 columns). Root font 2.4vmin (16px min); ≥ 900×500 the header grows and the stage keeps 3% from the edges.
+- Layout: portrait = tools / board / fruit bar; landscape = tools left, board centre, fruit bar right (2 columns). Root font 2.4vmin (16px min). Start screen, stage and overlays pad with rule 6.2 (`--fm-pad-*` on `.fm-app`: bottom ≥ 40px, sides ≥ 24px, safe areas included); ≥ 960×500 the header grows (boilerplate block) and the sides go to 3vw, bottom max(40px, 4dvh).
+- Dashboard ids predate the spec names and are kept: `fruitmerge-play-button` (new game), `fruitmerge-start-best` (best), `fruitmerge-score-value` (live score), `fruitmerge-end-best` (end-screen best).
 - TV (`?tv=1` or TV user agent, `tv-remote.js`): focus lands on Reprendre/Jouer, the board, or the overlay's main button. On the board ←/→ aim, OK or ↓ drops, ↑ leaves the board. Back = pause on the stage, continue on pause, menu on the end card, OK on the how-to.
 
 ## Saved match (decision 0054)

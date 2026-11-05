@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   height: 100dvh;
   min-height: 0;
-  overflow: hidden;
   background: #cfe7c8;
   color: #3d3a4b;
 }
@@ -70,7 +69,13 @@ body {
   background: #f3e6f5;
 }
 
+/* Rule 6.2: Android bars can cover the bottom even when the safe-area
+   inset is 0, and the sides carry the system back gestures. The start
+   screen, the stage and the overlays all pad with these. */
 .fm-app {
+  --fm-pad-l: max(24px, env(safe-area-inset-left, 0px));
+  --fm-pad-r: max(24px, env(safe-area-inset-right, 0px));
+  --fm-pad-b: max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px));
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
@@ -154,8 +159,7 @@ body {
   z-index: 5;
   display: grid;
   place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  padding: 1em var(--fm-pad-r) var(--fm-pad-b) var(--fm-pad-l);
   overflow-y: auto;
   background: rgba(43, 20, 20, 0.55);
 }
@@ -196,24 +200,36 @@ body {
   }
 }
 
-/* Big screens (desktop, TV): the shared header grows with the screen and
-   everything keeps 3% away from the edges (TV overscan). */
-@media (min-width: 900px) and (min-height: 500px) {
+/* Desktop and TV, 960x540 up to 3840x2160: the shared header grows with
+   the screen and everything keeps 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
   .game-nav {
-    height: clamp(60px, 8dvh, 220px);
-    padding-inline: 3vw;
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
   }
 
   .back-button,
   .options-button {
-    width: clamp(36px, 6dvh, 160px);
-    height: clamp(36px, 6dvh, 160px);
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
   }
 
   .back-button svg,
   .options-button svg {
     width: 50%;
     height: 50%;
+  }
+
+  .fm-app {
+    --fm-pad-l: max(3vw, env(safe-area-inset-left, 0px));
+    --fm-pad-r: max(3vw, env(safe-area-inset-right, 0px));
+    --fm-pad-b: max(40px, 4dvh);
+  }
+
+  .fm-overlay {
+    padding-top: 2dvh;
   }
 }
 

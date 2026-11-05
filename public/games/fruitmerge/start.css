@@ -4,8 +4,7 @@
   flex: 1 1 auto;
   display: grid;
   place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  padding: 1em var(--fm-pad-r) var(--fm-pad-b) var(--fm-pad-l);
   overflow-y: auto;
 }
 
