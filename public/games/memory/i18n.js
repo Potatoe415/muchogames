@@ -46,6 +46,7 @@ const STRINGS = {
     left: "{n} restantes",
     points: "{n} pts",
     endPoints: "{n} points",
+    bestLabel: "Record {grid} :",
     soloDetail:
       "{pairs} paires · {misses} ratés dont {forgotten} oublis · {time}",
     shareScore: "Partager",
@@ -127,6 +128,7 @@ const STRINGS = {
     left: "{n} left",
     points: "{n} pts",
     endPoints: "{n} points",
+    bestLabel: "Best {grid}:",
     soloDetail:
       "{pairs} pairs · {misses} misses, {forgotten} forgotten · {time}",
     shareScore: "Share",
@@ -208,6 +210,7 @@ const STRINGS = {
     left: "{n} restantes",
     points: "{n} pts",
     endPoints: "{n} puntos",
+    bestLabel: "Récord {grid}:",
     soloDetail:
       "{pairs} parejas · {misses} fallos, {forgotten} olvidos · {time}",
     shareScore: "Compartir",

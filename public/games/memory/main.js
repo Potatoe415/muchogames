@@ -134,6 +134,7 @@ const online = createOnline({
 
 async function startFresh() {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   dropMatch();
   if (page.setup.mode === "online") {
     await online.leave();
@@ -206,6 +207,7 @@ function bindOnline() {
   $("memory-cancel-button").addEventListener("click", toSetup);
   $("memory-resume-online-button").addEventListener("click", () => {
     unlock();
+    window.MuchogamesTv?.play();
     online.resume();
   });
 }
@@ -260,6 +262,7 @@ function resumeLocal() {
   const saved = page.starting ? null : loadSave();
   if (!saved) return show("setup");
   unlock();
+  window.MuchogamesTv?.play();
   const { mode, difficulty, grid, theme, back } = saved.config;
   page.setup = { mode, difficulty, grid, theme, back };
   void preload(deckUrls(saved.config, saved.cards));

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="play.css" />
     <link rel="stylesheet" href="online.css" />
     <link rel="stylesheet" href="debug.css" />
+    <link rel="stylesheet" href="tv.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -22,6 +24,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -43,6 +46,7 @@
           class="back-button"
           data-id="memory-quit-button"
           data-match-quit
+          data-tv-back
           hidden
           aria-label="Retour"
           data-i18n-aria="back"
@@ -174,12 +178,6 @@
               </button>
             </div>
           </div>
-          <details class="options-panel-section" data-id="game-options-rules">
-            <summary class="options-panel-section-title" data-i18n="rules">
-              Règles
-            </summary>
-            <div class="rules-modal-content" data-id="memory-rules"></div>
-          </details>
           <div class="options-panel-section" data-id="game-options-debug">
             <p class="options-panel-section-title" data-i18n="debug">Debug</p>
             <button
@@ -192,17 +190,24 @@
               Afficher les infos d'affichage
             </button>
           </div>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
+            <div class="rules-modal-content" data-id="memory-rules"></div>
+          </details>
         </div>
       </div>
     </div>
 
     <main class="memory-app" data-id="memory-app">
-      <section class="memory-setup" data-id="memory-setup">
+      <section class="memory-setup" data-id="memory-setup" data-tv-screen>
         <div class="memory-resume" data-id="memory-resume" hidden>
           <button
             type="button"
             class="memory-start"
             data-id="memory-resume-button"
+            data-tv-focus
             data-i18n="resume"
             hidden
           >
@@ -212,6 +217,7 @@
             type="button"
             class="memory-start"
             data-id="memory-resume-online-button"
+            data-tv-focus
             hidden
           ></button>
         </div>
@@ -242,10 +248,20 @@
               <p class="memory-label" data-i18n="size"></p>
               <div class="memory-chips" data-id="memory-grid-list"></div>
             </div>
+            <p
+              class="memory-best"
+              data-id="memory-best-score-row"
+              aria-live="polite"
+              hidden
+            >
+              <span data-id="memory-best-label"></span>
+              <strong data-id="memory-best-score"></strong>
+            </p>
             <button
               type="button"
               class="memory-start"
               data-id="memory-start-button"
+              data-tv-focus
               data-i18n="start"
             >
               Jouer
@@ -285,7 +301,7 @@
         </div>
       </section>
 
-      <section class="memory-wait" data-id="memory-wait" hidden>
+      <section class="memory-wait" data-id="memory-wait" data-tv-screen hidden>
         <div class="memory-panel memory-wait-card">
           <p class="memory-label" data-i18n="roomCode"></p>
           <p class="memory-code" data-id="memory-wait-code"></p>
@@ -294,6 +310,7 @@
             type="button"
             class="memory-start"
             data-id="memory-share-button"
+            data-tv-focus
             data-i18n="share"
             hidden
           >
@@ -304,6 +321,7 @@
             type="button"
             class="memory-text memory-text-ghost"
             data-id="memory-cancel-button"
+            data-tv-back
             data-i18n="cancel"
           >
             Annuler
@@ -311,7 +329,13 @@
         </div>
       </section>
 
-      <section class="memory-play" data-id="memory-play" data-active="0" hidden>
+      <section
+        class="memory-play"
+        data-id="memory-play"
+        data-active="0"
+        data-tv-screen
+        hidden
+      >
         <div
           class="memory-bar memory-bar-top"
           data-id="memory-player-two"
@@ -390,16 +414,25 @@
             </svg>
           </button>
         </div>
-        <div class="memory-end" data-id="memory-end" hidden>
-          <div class="memory-end-card">
+        <div class="memory-end" data-id="memory-end" data-tv-overlay hidden>
+          <div class="memory-end-card" data-id="memory-end-card">
             <h2 data-id="memory-end-title"></h2>
             <p data-id="memory-end-line"></p>
             <p class="memory-end-detail" data-id="memory-end-detail" hidden></p>
+            <p
+              class="memory-end-detail"
+              data-id="memory-final-best-score-row"
+              hidden
+            >
+              <span data-id="memory-final-best-label"></span>
+              <strong data-id="memory-final-best-score"></strong>
+            </p>
             <div class="memory-actions">
               <button
                 type="button"
                 class="memory-text"
                 data-id="memory-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               >
                 Rejouer
@@ -408,6 +441,7 @@
                 type="button"
                 class="memory-text memory-text-ghost"
                 data-id="memory-setup-button"
+                data-tv-back
                 data-i18n="changeSetup"
               >
                 Changer

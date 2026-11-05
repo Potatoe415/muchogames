@@ -225,7 +225,8 @@ export function createMatch({ config, cards, saved, onUpdate, online }) {
     onUpdate,
     online: online ?? null,
     timed: !online && state.config.mode === "solo",
-    clock: { started: base > 0, base, since: null }
+    // A resumed match comes back paused: its clock waits for the next flip.
+    clock: { started: false, base, since: null }
   };
   runClock(box);
   checkpoint(box);

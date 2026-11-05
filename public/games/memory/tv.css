@@ -1,0 +1,76 @@
+/* Memory on desktop and TV (docs/PLATFORM_RULES.md 7), the solo record line
+   and the TV focus ring. Sizes elsewhere are in rem, so the root font size
+   below scales the whole page with the screen height. */
+.memory-best {
+  margin: 0;
+  color: #475569;
+  font-weight: 700;
+  text-align: center;
+}
+
+.memory-best[hidden],
+.memory-end-detail[hidden] {
+  display: none;
+}
+
+.memory-card:disabled {
+  cursor: default;
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: everything grows with the
+   screen height and stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  html {
+    font-size: max(16px, 2.2dvh);
+  }
+
+  .game-nav {
+    min-height: 0;
+    padding: max(3dvh, env(safe-area-inset-top, 0px))
+      max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .options-panel-sheet {
+    max-width: min(92vw, 30rem);
+  }
+
+  .memory-app {
+    padding: 0 max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .memory-setup-panel,
+  .memory-resume {
+    width: min(100%, 60rem);
+  }
+
+  .memory-icon {
+    width: max(2.25rem, 6dvh);
+    height: max(2.25rem, 6dvh);
+  }
+
+  .memory-icon svg {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: max(3px, 0.4dvh) solid #ffcc00 !important;
+  outline-offset: max(2px, 0.3dvh);
+}

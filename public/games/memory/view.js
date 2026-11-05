@@ -20,6 +20,8 @@ function cardElement(card) {
   button.className = "memory-card";
   button.dataset.id = `memory-card-${card.instanceId}`;
   button.dataset.instanceId = card.instanceId;
+  // TV remote: a new play screen focuses the first card still on the board.
+  button.dataset.tvFocus = "";
   const inner = document.createElement("span");
   inner.className = "memory-card-inner";
   inner.append(
@@ -42,6 +44,8 @@ function sync(host, card, config, labels) {
   const front = button.querySelector(".memory-card-front");
   button.classList.toggle("is-up", up);
   button.dataset.status = card.status.toLowerCase();
+  // A found pair leaves the board: the TV remote and Tab skip it.
+  button.disabled = card.status === "MATCHED";
   button.setAttribute("aria-pressed", up ? "true" : "false");
   paintBack(button.querySelector(".memory-card-back"), labels.backUrl);
   if (!up) {

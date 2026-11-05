@@ -1,3 +1,4 @@
+import { loadBest, storeBest } from "./best.js";
 import { GRID_IDS, LEVELS, MODES } from "./config.js";
 import { BACKS, THEME_IDS } from "./faces.js";
 import { rulesHtml, translate } from "./i18n.js";
@@ -35,8 +36,28 @@ function paintResume(page) {
   online.textContent = text(page, "resumeOnline", { code });
 }
 
+// The solo record of a grid; the row stays hidden when there is none.
+function paintBestRow(page, ids, grid, show) {
+  const best = show ? loadBest(grid) : null;
+  const label = grid.replace("x", "×");
+  $(ids.row).hidden = best === null;
+  $(ids.label).textContent = text(page, "bestLabel", { grid: label });
+  $(ids.score).textContent =
+    best === null ? "" : text(page, "endPoints", { n: best });
+}
+
 export function paintSetup(page) {
   paintResume(page);
+  paintBestRow(
+    page,
+    {
+      row: "memory-best-score-row",
+      label: "memory-best-label",
+      score: "memory-best-score"
+    },
+    page.setup.grid,
+    page.setup.mode === "solo"
+  );
   paintPickers(page);
   MODES.forEach((mode) =>
     mark(`memory-mode-${mode}`, page.setup.mode === mode)
@@ -51,7 +72,9 @@ export function paintSetup(page) {
   $("memory-difficulty").hidden = page.setup.mode !== "bot";
   $("memory-online").hidden = !online;
   const start = $("memory-start-button");
-  start.disabled = page.starting;
+  // aria-disabled, not disabled: the button keeps the TV focus while the
+  // deck loads (startFresh ignores clicks meanwhile).
+  start.setAttribute("aria-disabled", String(page.starting));
   start.textContent = text(
     page,
     page.starting ? "loading" : online ? "create" : "start"
@@ -178,6 +201,16 @@ function paintEnd(page) {
   detail.hidden = !solo;
   detail.textContent = solo ? soloDetail(page, state) : "";
   $("memory-share-score-button").hidden = !solo;
+  paintBestRow(
+    page,
+    {
+      row: "memory-final-best-score-row",
+      label: "memory-final-best-label",
+      score: "memory-final-best-score"
+    },
+    state.config.grid,
+    solo
+  );
   $("memory-end").hidden = false;
 }
 
@@ -234,7 +267,14 @@ export function reportEnd(page) {
     window.MuchogamesMatch.finish();
     return;
   }
-  if (state.config.mode === "solo" || state.winner === me) {
+  // Solo: the target (every pair) is always reached; the local best keeps
+  // the real points, the profile gets an integer >= 0 (PLATFORM_RULES 4.3).
+  if (state.config.mode === "solo") {
+    storeBest(state.config.grid, score);
+    window.MuchogamesMatch.finish({ won: true, score: Math.max(0, score) });
+    return;
+  }
+  if (state.winner === me) {
     window.MuchogamesMatch.finish({ won: true, score });
     return;
   }
