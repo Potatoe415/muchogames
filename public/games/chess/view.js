@@ -63,6 +63,8 @@ export function createView({ host, flipped, t }) {
     button.className = `ch-sq ${isDarkSquare(sq) ? "is-dark" : "is-light"}`;
     button.dataset.sq = sq;
     button.dataset.id = `chess-square-${squareName(sq)}`;
+    // TV remote: the focus lands on a pawn in front of the bottom player.
+    if (i === 52) button.dataset.tvFocus = "";
     coordinates(button, sq, flipped);
     squares.set(sq, button);
     grid.append(button);

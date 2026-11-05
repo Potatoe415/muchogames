@@ -10,9 +10,10 @@
   grid-template-areas: "top" "board" "bottom" "actions";
   grid-template-rows: auto minmax(0, 1fr) auto auto;
   grid-template-columns: minmax(0, 1fr);
-  gap: 8px;
-  padding: 8px max(8px, env(safe-area-inset-right))
-    calc(8px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+  gap: 0.5rem;
+  padding: 8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
 }
 
 .ch-bar-top {
@@ -37,18 +38,18 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 /* --- Player bars --- */
 .ch-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
-  min-height: 52px;
-  padding: 6px 12px;
+  gap: 0.625rem;
+  min-height: 3.25rem;
+  padding: 0.375rem 0.75rem;
   border: 2px solid transparent;
-  border-radius: 14px;
+  border-radius: 0.875rem;
   background: rgba(240, 248, 242, 0.08);
   transition:
     background 0.2s,
@@ -122,8 +123,8 @@
 .ch-clock {
   flex: 0 0 auto;
   min-width: 4.4em;
-  padding: 4px 8px;
-  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.35);
   font-size: 1.05rem;
   font-weight: 800;
@@ -153,11 +154,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  min-height: 52px;
-  padding: 6px 4px;
+  gap: 0.125rem;
+  min-height: 3.25rem;
+  padding: 0.375rem 0.25rem;
   border: none;
-  border-radius: 14px;
+  border-radius: 0.875rem;
   background: rgba(240, 248, 242, 0.1);
   color: inherit;
   font: inherit;
@@ -177,8 +178,8 @@
 }
 
 .ch-action svg {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -190,7 +191,7 @@
   .ch-stage {
     grid-template-areas: "board top" "board actions" "board bottom";
     grid-template-rows: auto minmax(0, 1fr) auto;
-    grid-template-columns: minmax(0, 1fr) minmax(230px, 300px);
+    grid-template-columns: minmax(0, 1fr) minmax(14.375rem, 18.75rem);
   }
 
   .ch-bar {
@@ -219,7 +220,7 @@
 
   .ch-action {
     flex-direction: row;
-    gap: 8px;
+    gap: 0.5rem;
     font-size: 0.95rem;
   }
 }
@@ -232,7 +233,7 @@
 
   .ch-action {
     flex-direction: column;
-    gap: 2px;
+    gap: 0.125rem;
     font-size: 0.75rem;
   }
 }

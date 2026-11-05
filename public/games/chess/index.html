@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="stage.css" />
     <link rel="stylesheet" href="board.css" />
     <link rel="stylesheet" href="pieces.css" />
+    <link rel="stylesheet" href="screens.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -23,6 +25,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -233,175 +236,182 @@
     </div>
 
     <main class="ch-app" data-id="chess-app" data-theme="wood">
-      <section class="ch-start" data-id="chess-start-screen">
-        <div class="ch-card">
-          <div class="ch-logo" aria-hidden="true">
-            <span class="ch-icon" data-piece="white-king"></span
-            ><span class="ch-icon" data-piece="black-queen"></span>
-          </div>
-          <h2 class="ch-title" data-i18n="title">Échecs</h2>
-          <p class="ch-pitch" data-i18n="pitch"></p>
-          <button
-            type="button"
-            class="ch-button ch-button-resume"
-            data-id="chess-resume-button"
-            data-i18n="resume"
-            hidden
-          ></button>
-
-          <div class="ch-field" data-id="chess-mode-field">
-            <p class="ch-label" data-i18n="mode"></p>
-            <div class="ch-seg">
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="mode"
-                data-value="solo"
-                data-id="chess-mode-solo"
-                data-i18n="modeSolo"
-              ></button>
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="mode"
-                data-value="duo"
-                data-id="chess-mode-duo"
-                data-i18n="modeDuo"
-              ></button>
+      <section class="ch-start" data-id="chess-start-screen" data-tv-screen>
+        <div class="ch-card ch-start-card" data-id="chess-start-card">
+          <div class="ch-start-head" data-id="chess-start-head">
+            <div class="ch-logo" aria-hidden="true">
+              <span class="ch-icon" data-piece="white-king"></span
+              ><span class="ch-icon" data-piece="black-queen"></span>
             </div>
+            <h2 class="ch-title" data-id="chess-title" data-i18n="title">
+              Échecs
+            </h2>
+            <p class="ch-pitch" data-id="chess-pitch" data-i18n="pitch"></p>
+            <button
+              type="button"
+              class="ch-button ch-button-resume"
+              data-id="chess-resume-button"
+              data-tv-focus
+              data-i18n="resume"
+              hidden
+            ></button>
           </div>
-
-          <div class="ch-field" data-id="chess-level-field" data-solo-only>
-            <p class="ch-label" data-i18n="level"></p>
-            <div class="ch-slider" data-level="medium">
-              <input
-                type="range"
-                class="ch-range"
-                min="0"
-                max="3"
-                step="1"
-                data-id="chess-level-slider"
-                aria-label="Niveau"
-                data-i18n-aria="level"
-              />
-              <div class="ch-ticks">
+          <div class="ch-start-fields" data-id="chess-start-fields">
+            <div class="ch-field" data-id="chess-mode-field">
+              <p class="ch-label" data-i18n="mode"></p>
+              <div class="ch-seg">
                 <button
                   type="button"
-                  class="ch-tick"
-                  data-setting="level"
-                  data-value="easy"
-                  data-id="chess-level-easy"
-                  data-i18n="easy"
+                  class="ch-option"
+                  data-setting="mode"
+                  data-value="solo"
+                  data-id="chess-mode-solo"
+                  data-i18n="modeSolo"
                 ></button>
                 <button
                   type="button"
-                  class="ch-tick"
-                  data-setting="level"
-                  data-value="medium"
-                  data-id="chess-level-medium"
-                  data-i18n="medium"
-                ></button>
-                <button
-                  type="button"
-                  class="ch-tick"
-                  data-setting="level"
-                  data-value="hard"
-                  data-id="chess-level-hard"
-                  data-i18n="hard"
-                ></button>
-                <button
-                  type="button"
-                  class="ch-tick"
-                  data-setting="level"
-                  data-value="expert"
-                  data-id="chess-level-expert"
-                  data-i18n="expert"
+                  class="ch-option"
+                  data-setting="mode"
+                  data-value="duo"
+                  data-id="chess-mode-duo"
+                  data-i18n="modeDuo"
                 ></button>
               </div>
             </div>
-            <p class="ch-level-record" data-id="chess-level-record"></p>
-          </div>
 
-          <div class="ch-field" data-id="chess-color-field" data-solo-only>
-            <p class="ch-label" data-i18n="color"></p>
-            <div class="ch-seg">
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="color"
-                data-value="white"
-                data-id="chess-color-white"
-              >
-                <span
-                  class="ch-icon"
-                  data-piece="white-king"
-                  aria-hidden="true"
-                ></span
-                ><span data-i18n="white"></span>
-              </button>
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="color"
-                data-value="black"
-                data-id="chess-color-black"
-              >
-                <span
-                  class="ch-icon"
-                  data-piece="black-king"
-                  aria-hidden="true"
-                ></span
-                ><span data-i18n="black"></span>
-              </button>
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="color"
-                data-value="random"
-                data-id="chess-color-random"
-                data-i18n="random"
-              ></button>
+            <div class="ch-field" data-id="chess-level-field" data-solo-only>
+              <p class="ch-label" data-i18n="level"></p>
+              <div class="ch-slider" data-level="medium">
+                <input
+                  type="range"
+                  class="ch-range"
+                  min="0"
+                  max="3"
+                  step="1"
+                  data-id="chess-level-slider"
+                  data-tv-keys="left right"
+                  aria-label="Niveau"
+                  data-i18n-aria="level"
+                />
+                <div class="ch-ticks">
+                  <button
+                    type="button"
+                    class="ch-tick"
+                    data-setting="level"
+                    data-value="easy"
+                    data-id="chess-level-easy"
+                    data-i18n="easy"
+                  ></button>
+                  <button
+                    type="button"
+                    class="ch-tick"
+                    data-setting="level"
+                    data-value="medium"
+                    data-id="chess-level-medium"
+                    data-i18n="medium"
+                  ></button>
+                  <button
+                    type="button"
+                    class="ch-tick"
+                    data-setting="level"
+                    data-value="hard"
+                    data-id="chess-level-hard"
+                    data-i18n="hard"
+                  ></button>
+                  <button
+                    type="button"
+                    class="ch-tick"
+                    data-setting="level"
+                    data-value="expert"
+                    data-id="chess-level-expert"
+                    data-i18n="expert"
+                  ></button>
+                </div>
+              </div>
+              <p class="ch-level-record" data-id="chess-level-record"></p>
             </div>
-          </div>
 
-          <div class="ch-field" data-id="chess-clock-field">
-            <p class="ch-label" data-i18n="clock"></p>
-            <div class="ch-seg">
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="clock"
-                data-value="none"
-                data-id="chess-clock-none"
-                data-i18n="clockNone"
-              ></button>
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="clock"
-                data-value="5"
-                data-id="chess-clock-5"
-              >
-                5 min
-              </button>
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="clock"
-                data-value="10"
-                data-id="chess-clock-10"
-              >
-                10 min
-              </button>
-              <button
-                type="button"
-                class="ch-option"
-                data-setting="clock"
-                data-value="30"
-                data-id="chess-clock-30"
-              >
-                30 min
-              </button>
+            <div class="ch-field" data-id="chess-color-field" data-solo-only>
+              <p class="ch-label" data-i18n="color"></p>
+              <div class="ch-seg">
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="color"
+                  data-value="white"
+                  data-id="chess-color-white"
+                >
+                  <span
+                    class="ch-icon"
+                    data-piece="white-king"
+                    aria-hidden="true"
+                  ></span
+                  ><span data-i18n="white"></span>
+                </button>
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="color"
+                  data-value="black"
+                  data-id="chess-color-black"
+                >
+                  <span
+                    class="ch-icon"
+                    data-piece="black-king"
+                    aria-hidden="true"
+                  ></span
+                  ><span data-i18n="black"></span>
+                </button>
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="color"
+                  data-value="random"
+                  data-id="chess-color-random"
+                  data-i18n="random"
+                ></button>
+              </div>
+            </div>
+
+            <div class="ch-field" data-id="chess-clock-field">
+              <p class="ch-label" data-i18n="clock"></p>
+              <div class="ch-seg">
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="clock"
+                  data-value="none"
+                  data-id="chess-clock-none"
+                  data-i18n="clockNone"
+                ></button>
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="clock"
+                  data-value="5"
+                  data-id="chess-clock-5"
+                >
+                  5 min
+                </button>
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="clock"
+                  data-value="10"
+                  data-id="chess-clock-10"
+                >
+                  10 min
+                </button>
+                <button
+                  type="button"
+                  class="ch-option"
+                  data-setting="clock"
+                  data-value="30"
+                  data-id="chess-clock-30"
+                >
+                  30 min
+                </button>
+              </div>
             </div>
           </div>
 
@@ -409,12 +419,13 @@
             type="button"
             class="ch-button"
             data-id="chess-play-button"
+            data-tv-focus
             data-i18n="play"
           ></button>
         </div>
       </section>
 
-      <section class="ch-stage" data-id="chess-stage" hidden>
+      <section class="ch-stage" data-id="chess-stage" data-tv-screen hidden>
         <div class="ch-bar ch-bar-top" data-id="chess-player-top">
           <span class="ch-icon" data-bar-icon aria-hidden="true"></span>
           <span class="ch-bar-text"
@@ -480,6 +491,7 @@
             class="ch-action"
             data-id="chess-quit-button"
             data-match-quit
+            data-tv-back
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
@@ -488,7 +500,12 @@
           </button>
         </div>
 
-        <div class="ch-overlay" data-id="chess-promotion" hidden>
+        <div
+          class="ch-overlay"
+          data-id="chess-promotion"
+          data-tv-overlay
+          hidden
+        >
           <div
             class="ch-card ch-promo-card"
             role="dialog"
@@ -506,6 +523,7 @@
                 class="ch-promo-choice"
                 data-promo="5"
                 data-id="chess-promote-queen"
+                data-tv-focus
               >
                 <span class="ch-icon" data-promo-icon aria-hidden="true"></span
                 ><span data-i18n="queen"></span>
@@ -543,12 +561,13 @@
               class="ch-link"
               data-promo-cancel
               data-id="chess-promotion-cancel"
+              data-tv-back
               data-i18n="cancel"
             ></button>
           </div>
         </div>
 
-        <div class="ch-overlay" data-id="chess-pause" hidden>
+        <div class="ch-overlay" data-id="chess-pause" data-tv-overlay hidden>
           <div
             class="ch-card ch-end-card"
             role="dialog"
@@ -566,14 +585,16 @@
                 type="button"
                 class="ch-button"
                 data-id="chess-continue-button"
+                data-tv-focus
+                data-tv-back
                 data-i18n="continue"
               ></button>
             </div>
           </div>
         </div>
 
-        <div class="ch-overlay" data-id="chess-end" hidden>
-          <div class="ch-card ch-end-card">
+        <div class="ch-overlay" data-id="chess-end" data-tv-overlay hidden>
+          <div class="ch-card ch-end-card" data-id="chess-end-card">
             <h2 class="ch-end-title" data-id="chess-end-title"></h2>
             <p data-id="chess-end-line"></p>
             <div class="ch-end-actions">
@@ -581,12 +602,14 @@
                 type="button"
                 class="ch-button"
                 data-id="chess-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               ></button>
               <button
                 type="button"
                 class="ch-button ch-button-ghost"
                 data-id="chess-change-settings-button"
+                data-tv-back
                 data-i18n="changeSettings"
               ></button>
               <button
