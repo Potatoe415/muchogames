@@ -1,0 +1,164 @@
+/* Match screen (HUD, word card, Passer / Trouvé), pause overlay and end
+   screen. Portrait: HUD, card, then the two buttons side by side.
+   Landscape (phones, desktop, TV): card on the left, HUD and buttons on
+   the right. */
+.om-play {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 0.8em;
+  align-items: stretch;
+  width: 100%;
+  max-width: 40em;
+  margin-inline: auto;
+}
+
+.om-hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.om-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 5em;
+  padding: 0.3em 0.8em;
+  border-radius: 0.8em;
+  background: #fff;
+  box-shadow: 0 0.2em 0.6em rgba(0, 0, 0, 0.08);
+}
+
+.om-stat-label {
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.om-stat-value {
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.om-card {
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 1.2em;
+  background: #6c757d;
+  box-shadow: 0 0.4em 1.2em rgba(0, 0, 0, 0.12);
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.om-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.8em;
+}
+
+.om-controls .om-button {
+  min-height: max(56px, 9dvh);
+  font-size: 1.3em;
+}
+
+.om-fail {
+  background: #dc3545;
+}
+
+.om-success {
+  background: #28a745;
+}
+
+.om-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  border-radius: 1.2em;
+  background: rgba(243, 210, 166, 0.88);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.om-overlay-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+  width: min(100%, 16em);
+  padding: 1.2em;
+  border-radius: 1.2em;
+  background: #fff;
+  box-shadow: 0 0.6em 1.6em rgba(0, 0, 0, 0.18);
+}
+
+.om-overlay-title {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.om-end {
+  align-items: center;
+  text-align: center;
+}
+
+.om-final-score {
+  margin: 0;
+  color: #28a745;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+/* Landscape (phones on their side, desktop, TV): card on the left, HUD and
+   buttons on the right, across the whole width. */
+@media (orientation: landscape) {
+  .om-play {
+    max-width: none;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas:
+      "card hud"
+      "card controls";
+    gap: 0.5em 1em;
+    width: 100%;
+  }
+
+  .om-card {
+    grid-area: card;
+  }
+
+  .om-hud {
+    grid-area: hud;
+  }
+
+  .om-controls {
+    grid-area: controls;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: end;
+    gap: 0.5em;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .om-card {
+    font-size: 1.6em;
+  }
+
+  .om-controls .om-button {
+    min-height: 48px;
+  }
+}

@@ -1,122 +1,129 @@
 /**
- * Main game controller for Olemains
- * Coordinates game state, UI, and timer
+ * Main game controller for Olemains: Game Dashboard (resume, timer, deck,
+ * new game), match (timer, turns, pause), end screen, save and resume.
  */
+
+import { loadRulesIfExists } from '../../shared/js/engine.js';
 
 import { DOM } from './dom.js';
 import { GameState } from './gameState.js';
+import { applyCopy, readLanguage, storeLanguage } from './i18n.js';
 import { clearMatch, loadMatch, storeMatch } from './save.js';
 import { GameTimer } from './timer.js';
-import { buildDeckMenu, mapColor, readTimerInput, renderResume, updateHUD, showGameOver, showWord, showSetupView, showGameView, showError } from './ui.js';
+import {
+  buildDeckMenu,
+  mapColor,
+  markDeck,
+  readTimerInput,
+  renderGameOver,
+  renderResume,
+  setCardColor,
+  showError,
+  showPause,
+  showScreen,
+  showWord,
+  stepTimerInput,
+  updateHUD
+} from './ui.js';
 import { isValidGameData } from './validation.js';
-import { loadRulesIfExists } from '../../shared/js/engine.js';
 
-function readHubLanguage() {
-  try {
-    const stored = localStorage.getItem('bergamots-lang');
-    return ['fr', 'en', 'es'].includes(stored) ? stored : 'fr';
-  } catch {
-    return 'fr';
-  }
-}
+const GAME_ID = 'olemains';
 
 class OlemainsGame {
   constructor() {
     this.gameState = new GameState();
     this.timer = new GameTimer();
     this.isGameActive = false;
-    this.rulesHtml = null;
+    this.isStarting = false;
+    this.isPaused = false;
     this.saved = null;
-    this.endTimer = null;
+    this.selectedDeck = 0;
+    this.endReason = null;
   }
 
-  /**
-   * Initialize the game
-   */
   async init() {
-    document.documentElement.lang = readHubLanguage();
-    this.gameState.language = document.documentElement.lang;
-
-    this.setupEventListeners();
-    await this.initRulesSupport();
-    
+    this.gameState.language = readLanguage();
+    applyCopy(this.gameState.language);
+    this.bindControls();
+    this.bindPage();
+    showScreen('dashboard');
+    await this.refreshRules();
     try {
       await this.gameState.loadGameData();
-      
       if (!isValidGameData(this.gameState.gameData)) {
         throw new Error('Invalid game data structure');
       }
-      
-      this.showDeckSelection();
+      this.showDashboard();
+      // Resume only shows once words.json is in: the remote lands on it.
+      window.MuchogamesTv?.focusScreen();
     } catch (error) {
       console.error('Game initialization failed:', error);
-      showError(error.message);
+      DOM.startButton.disabled = true;
+      showError(error.message, this.gameState.language);
     }
   }
 
-  /**
-   * Set up event listeners
-   */
-  setupEventListeners() {
+  bindControls() {
     DOM.btnValid.addEventListener('click', () => this.processTurn(1));
     DOM.btnPass.addEventListener('click', () => this.processTurn(0));
     DOM.btnQuit.addEventListener('click', () => this.quitGame());
     DOM.resumeButton.addEventListener('click', () => this.resumeGame());
+    DOM.startButton.addEventListener('click', () => this.startGame());
+    DOM.replayButton.addEventListener('click', () => this.startGame());
+    DOM.menuButton.addEventListener('click', () => this.showDashboard());
+    DOM.continueButton.addEventListener('click', () => this.continueGame());
+    DOM.timerSteps.forEach((btn) => {
+      btn.addEventListener('click', () => stepTimerInput(Number(btn.dataset.step)));
+    });
+    DOM.langButtons.forEach((btn) => {
+      btn.addEventListener('click', () => this.changeLanguage(btn.dataset.lang));
+    });
+  }
+
+  bindPage() {
+    window.GameHeader?.initOptionsPanel(DOM.optionsButton, DOM.optionsPanel);
+    // Window capture runs before game-session.js's "Leave match?" dialog:
+    // the clock stops while the players decide. Opening the options too.
+    window.addEventListener('click', (event) => {
+      if (event.target.closest?.('#btn-quit, #olemains-options-button')) this.pause();
+    }, true);
     document.addEventListener('visibilitychange', () => {
-      if (document.hidden) this.saveMatch();
+      if (document.hidden) this.pause();
     });
     window.addEventListener('pagehide', () => this.saveMatch());
   }
 
-  async initRulesSupport() {
-    const button = document.getElementById('olemains-options-button');
-    const panel = document.getElementById('olemains-options-panel');
-    if (window.GameHeader) {
-      window.GameHeader.initOptionsPanel(button, panel);
-    }
-    document.querySelectorAll('.lang-btn').forEach((btn) => {
-      btn.addEventListener('click', () => this.changeLanguage(btn.dataset.lang));
-    });
-    this.markActiveLanguage();
-    await this.refreshRules();
-  }
-
   async refreshRules() {
-    const section = document.getElementById('olemains-rules-section');
-    const content = document.getElementById('olemains-rules-content');
-    this.rulesHtml = await loadRulesIfExists('olemains', this.gameState.language);
-    section.style.display = this.rulesHtml ? '' : 'none';
-    content.innerHTML = this.rulesHtml || '';
+    const rulesHtml = await loadRulesIfExists(GAME_ID, this.gameState.language);
+    DOM.rulesContent.innerHTML = rulesHtml || '';
   }
 
-  // Words already carry fr/en/es; the next word drawn uses the new language.
+  // Words carry fr/en/es: the word on screen switches at once.
   changeLanguage(language) {
     this.gameState.language = language;
-    document.documentElement.lang = language;
-    this.markActiveLanguage();
+    storeLanguage(language);
+    applyCopy(language);
     renderResume(this.saved, language);
+    if (this.isGameActive) showWord(this.gameState.currentWordText());
+    if (this.endReason) {
+      renderGameOver(this.endReason, this.gameState.score, language);
+    }
     void this.refreshRules();
-  }
-
-  markActiveLanguage() {
-    document.querySelectorAll('.lang-btn').forEach((btn) => {
-      btn.classList.toggle('active', btn.dataset.lang === this.gameState.language);
-    });
-  }
-
-  /**
-   * Show deck selection menu
-   */
-  showDeckSelection() {
-    buildDeckMenu(this.decks(), (deck, bgColor) => {
-      this.startGame(deck, bgColor);
-    });
-    this.saved = loadMatch(this.decks());
-    renderResume(this.saved, this.gameState.language);
   }
 
   decks() {
     return this.gameState.gameData?.decks || [];
+  }
+
+  showDashboard() {
+    this.endReason = null;
+    buildDeckMenu(this.decks(), this.selectedDeck, (index) => {
+      this.selectedDeck = index;
+      markDeck(index);
+    });
+    this.saved = loadMatch(this.decks());
+    renderResume(this.saved, this.gameState.language);
+    showScreen('dashboard');
   }
 
   // Only a match in play is stored; endGame has already cleared it.
@@ -126,88 +133,77 @@ class OlemainsGame {
     }
   }
 
-  /**
-   * Resume the saved match: no coin, timer restarts from the saved time left
-   */
+  enterMatch(bgColor) {
+    this.isGameActive = true;
+    this.endReason = null;
+    setCardColor(bgColor);
+    this.updateDisplay();
+    showScreen('play');
+  }
+
+  // A resumed match comes back paused: Continue restarts the clock.
   resumeGame() {
     if (this.isStarting || this.isGameActive) return;
     const saved = loadMatch(this.decks());
-    if (!saved) {
-      this.showDeckSelection();
-      return;
-    }
-    window.MuchogamesMatch.resume('olemains');
+    if (!saved) return this.showDashboard();
+    window.MuchogamesTv?.play();
+    window.MuchogamesMatch.resume(GAME_ID);
     const bgColor = mapColor(saved.deck.color);
     this.gameState.restore(saved, bgColor);
-    showGameView(bgColor);
-    this.updateDisplay();
+    this.enterMatch(bgColor);
     showWord(this.gameState.currentWordText());
+    this.saveMatch();
+    this.isPaused = true;
+    showPause(true);
+  }
+
+  async startGame() {
+    const deck = this.decks()[this.selectedDeck];
+    if (this.isStarting || this.isGameActive || !deck) return;
+    window.MuchogamesTv?.play();
+    this.isStarting = true;
+    const allowed = await window.MuchogamesMatch.start(GAME_ID);
+    this.isStarting = false;
+    if (!allowed) return;
+    const bgColor = mapColor(deck.color);
+    this.gameState.startGame(deck, bgColor, readTimerInput());
+    this.enterMatch(bgColor);
+    this.pullNextWord();
+    this.isPaused = false;
+    showPause(false);
     this.startTimer();
-    this.isGameActive = true;
     this.saveMatch();
   }
 
-  /**
-   * Start a new game with selected deck
-   * @param {Object} deck - The deck to use
-   * @param {string} bgColor - Background color for the deck
-   */
-  async startGame(deck, bgColor) {
-    if (this.isStarting || this.isGameActive) return;
-    this.isStarting = true;
-    const allowed = await window.MuchogamesMatch.start('olemains');
-    this.isStarting = false;
-    if (!allowed) return;
-    try {
-      const timerDuration = readTimerInput();
-      this.gameState.startGame(deck, bgColor, timerDuration);
-      
-      showGameView(bgColor);
-      this.updateDisplay();
-      this.pullNextWord();
-      this.startTimer();
-      
-      this.isGameActive = true;
-      this.saveMatch();
-    } catch (error) {
-      console.error('Failed to start game:', error);
-      showError(error.message);
-    }
+  pause() {
+    if (!this.isGameActive || this.isPaused) return;
+    this.timer.stop();
+    this.isPaused = true;
+    this.saveMatch();
+    showPause(true);
   }
 
-  /**
-   * Process a game turn
-   * @param {number} points - Points to award (1 for valid, 0 for pass)
-   */
-  processTurn(points) {
-    if (!this.isGameActive || this.gameState.isGameOver()) {
-      return;
-    }
+  continueGame() {
+    if (!this.isGameActive || !this.isPaused) return;
+    this.isPaused = false;
+    showPause(false);
+    this.startTimer();
+  }
 
+  processTurn(points) {
+    if (!this.isGameActive || this.isPaused) return;
     this.gameState.updateScore(points);
     this.updateDisplay();
     this.pullNextWord();
     this.saveMatch();
   }
 
-  /**
-   * Get and display the next word
-   */
   pullNextWord() {
-    if (this.gameState.isGameOver()) {
-      this.endGame("Fin du paquet !");
-      return;
-    }
-
+    if (this.gameState.isGameOver()) return this.endGame('deckEmpty');
     const nextWord = this.gameState.getNextWord();
-    if (nextWord) {
-      showWord(nextWord);
-    }
+    if (nextWord) showWord(nextWord);
   }
 
-  /**
-   * Start the game timer
-   */
   startTimer() {
     this.timer.start(
       this.gameState.timeLeft,
@@ -216,56 +212,43 @@ class OlemainsGame {
         this.updateDisplay();
         this.saveMatch();
       },
-      () => {
-        this.endGame("Temps écoulé !");
-      }
+      () => this.endGame('timeUp')
     );
   }
 
-  /**
-   * Update game display
-   */
   updateDisplay() {
     updateHUD(this.gameState.score, this.gameState.timeLeft);
   }
 
-  /**
-   * End the current game
-   * @param {string} reason - Reason for game end
-   */
-  endGame(reason) {
+  // Real end (deck or clock ran out): the save goes, finish() once.
+  endGame(reasonKey) {
+    if (!this.isGameActive) return;
     clearMatch();
     this.saved = null;
-    window.MuchogamesMatch.finish();
     this.isGameActive = false;
     this.timer.stop();
-    
-    showGameOver(reason, this.gameState.deckColor);
-    
-    this.endTimer = setTimeout(() => {
-      this.quitGame();
-    }, 3000);
+    window.MuchogamesMatch.finish();
+    this.endReason = reasonKey;
+    renderGameOver(reasonKey, this.gameState.score, this.gameState.language);
+    showPause(false);
+    showScreen('gameover');
   }
 
   /**
-   * Quit current game and return to setup.
-   * Quitting is not an end: no finish(), the save stays and the setup
-   * screen offers it again through the resume button.
+   * ✖ confirmed (game-session.js asked first): quitting is not an end, no
+   * finish(), the save stays and the dashboard offers Resume.
    */
   quitGame() {
-    clearTimeout(this.endTimer);
     this.saveMatch();
     this.isGameActive = false;
+    this.isPaused = false;
     this.timer.stop();
+    showPause(false);
     this.gameState.reset();
-    
-    showSetupView();
-    this.showDeckSelection();
+    this.showDashboard();
   }
 }
 
-// Initialize game when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  const game = new OlemainsGame();
-  game.init();
+  void new OlemainsGame().init();
 });

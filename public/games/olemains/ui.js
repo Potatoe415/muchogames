@@ -1,8 +1,14 @@
 /**
- * UI management for Olemains game
+ * UI rendering for the Olemains game: deck choice, resume button, HUD,
+ * screens, pause overlay, end screen.
  */
 
-import { DOM, showElement, hideElement, setElementText, setElementStyle } from './dom.js';
+import { DOM } from './dom.js';
+import { translate } from './i18n.js';
+
+const TIMER_MIN = 10;
+const TIMER_MAX = 300;
+const TIMER_DEFAULT = 60;
 
 /**
  * Color mapping utility
@@ -12,39 +18,42 @@ import { DOM, showElement, hideElement, setElementText, setElementStyle } from '
 export function mapColor(colorString) {
   const colors = {
     green: '#28a745',
-    orange: '#fd7e14', 
+    orange: '#fd7e14',
     pink: '#e83e8c',
     blue: '#007bff'
   };
   return colors[colorString] || '#6c757d';
 }
 
+const deckDataId = (deck, index) =>
+  `olemains-deck-${/^[a-z0-9-]+$/.test(deck.id || '') ? deck.id : index}`;
+
 /**
- * Build deck selection menu
+ * Deck choice (one pressed at a time); the New game button starts it.
  * @param {Array} decks - Array of deck objects
- * @param {Function} onDeckSelect - Callback when deck is selected
+ * @param {number} selected - Index of the chosen deck
+ * @param {Function} onSelect - Called with the index of the deck tapped
  */
-export function buildDeckMenu(decks, onDeckSelect) {
+export function buildDeckMenu(decks, selected, onSelect) {
   DOM.deckGrid.innerHTML = '';
-  
-  decks.forEach(deck => {
+  decks.forEach((deck, index) => {
     const btn = document.createElement('button');
-    btn.className = 'deck-btn';
+    btn.type = 'button';
+    btn.className = 'om-deck';
+    btn.dataset.id = deckDataId(deck, index);
     btn.textContent = deck.title;
-
-    const bgColor = mapColor(deck.color);
-    btn.style.backgroundColor = bgColor;
-
-    btn.addEventListener('click', () => onDeckSelect(deck, bgColor));
+    btn.style.backgroundColor = mapColor(deck.color);
+    btn.addEventListener('click', () => onSelect(index));
     DOM.deckGrid.appendChild(btn);
   });
+  markDeck(selected);
 }
 
-const RESUME_COPY = {
-  fr: { title: 'Reprendre', info: '{deck} · {seconds} s · {score} pts' },
-  en: { title: 'Resume', info: '{deck} · {seconds}s left · {score} pts' },
-  es: { title: 'Reanudar', info: '{deck} · {seconds} s · {score} pts' }
-};
+export function markDeck(selected) {
+  [...DOM.deckGrid.children].forEach((btn, index) => {
+    btn.setAttribute('aria-pressed', String(index === selected));
+  });
+}
 
 /**
  * Show the resume button for a saved match, or hide it
@@ -54,13 +63,18 @@ const RESUME_COPY = {
 export function renderResume(match, language) {
   DOM.resumeButton.hidden = !match;
   if (!match) return;
-  const copy = RESUME_COPY[language] || RESUME_COPY.fr;
-  DOM.resumeButton.querySelector('[data-resume-title]').textContent = copy.title;
-  DOM.resumeButton.querySelector('[data-resume-info]').textContent = copy.info
-    .replace('{deck}', match.deck.title)
-    .replace('{seconds}', match.timeLeft)
-    .replace('{score}', match.score);
+  DOM.resumeButton.querySelector('[data-resume-title]').textContent =
+    translate(language, 'resume');
+  DOM.resumeButton.querySelector('[data-resume-info]').textContent =
+    translate(language, 'resumeInfo', {
+      deck: match.deck.title,
+      seconds: match.timeLeft,
+      score: match.score
+    });
 }
+
+const clampTimer = (value) =>
+  Math.min(TIMER_MAX, Math.max(TIMER_MIN, Math.round(value)));
 
 /**
  * Read timer input value with validation
@@ -68,67 +82,54 @@ export function renderResume(match, language) {
  */
 export function readTimerInput() {
   const raw = DOM.timerInput.valueAsNumber;
-  const isValid = !isNaN(raw) && raw >= 10 && raw <= 300;
-  return isValid ? Math.round(raw) : 60;
+  return Number.isFinite(raw) ? clampTimer(raw) : TIMER_DEFAULT;
 }
 
-/**
- * Update game HUD (Heads Up Display)
- * @param {number} score - Current score
- * @param {number} timeLeft - Time remaining
- */
+// − / + buttons: the remote and touch never need to type a number.
+export function stepTimerInput(delta) {
+  DOM.timerInput.value = String(clampTimer(readTimerInput() + delta));
+}
+
 export function updateHUD(score, timeLeft) {
-  setElementText(DOM.scoreDisplay, score);
-  setElementText(DOM.timerDisplay, timeLeft);
+  DOM.scoreDisplay.textContent = String(score);
+  DOM.timerDisplay.textContent = String(timeLeft);
 }
 
-/**
- * Show game over message
- * @param {string} message - Game over message
- * @param {string} bgColor - Background color
- */
-export function showGameOver(message, bgColor = '#333') {
-  setElementText(DOM.wordDisplay, message);
-  setElementStyle(DOM.cardBackground, {
-    backgroundColor: bgColor,
-    color: '#ffffff'
-  });
-}
-
-/**
- * Show current word
- * @param {string} word - Word to display
- */
 export function showWord(word) {
-  setElementText(DOM.wordDisplay, word);
+  DOM.wordDisplay.textContent = word;
+}
+
+export function setCardColor(bgColor) {
+  DOM.cardBackground.style.backgroundColor = bgColor;
 }
 
 /**
- * Show setup view (deck selection)
+ * One screen at a time: dashboard, play or gameover. The header's back
+ * button (to the hub) becomes the ✖ (to the dashboard) during a match.
  */
-export function showSetupView() {
-  hideElement(DOM.gameView);
-  showElement(DOM.setupView);
+export function showScreen(name) {
+  const inMatch = name === 'play';
+  DOM.setupView.hidden = name !== 'dashboard';
+  DOM.gameView.hidden = !inMatch;
+  DOM.gameOverView.hidden = name !== 'gameover';
+  DOM.backButton.hidden = inMatch;
+  DOM.btnQuit.hidden = !inMatch;
+}
+
+export function showPause(paused) {
+  DOM.pauseOverlay.hidden = !paused;
 }
 
 /**
- * Show game view
- * @param {string} bgColor - Background color for the deck
+ * End screen copy
+ * @param {string} reasonKey - deckEmpty or timeUp
  */
-export function showGameView(bgColor) {
-  setElementStyle(DOM.cardBackground, {
-    backgroundColor: bgColor,
-    color: '#ffffff'
-  });
-  
-  hideElement(DOM.setupView);
-  showElement(DOM.gameView);
+export function renderGameOver(reasonKey, score, language) {
+  DOM.finalReason.textContent = translate(language, reasonKey);
+  DOM.finalScore.textContent = translate(language, 'finalScore', { score });
 }
 
-/**
- * Display error message
- * @param {string} message - Error message
- */
-export function showError(message) {
-  DOM.deckGrid.innerHTML = `<p style="color:red; font-weight:bold; text-align:center;">Erreur : ${message}</p>`;
+export function showError(message, language) {
+  DOM.errorText.textContent = translate(language, 'error', { message });
+  DOM.errorText.hidden = false;
 }
