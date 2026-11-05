@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="stage.css" />
     <link rel="stylesheet" href="board.css" />
+    <link rel="stylesheet" href="screens.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -22,6 +24,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -235,148 +238,155 @@
     </div>
 
     <main class="ck-app" data-id="checkers-app" data-theme="wood">
-      <section class="ck-start" data-id="checkers-start-screen">
-        <div class="ck-card">
-          <div class="ck-logo" aria-hidden="true">
-            <span class="ck-disc is-dark is-king"></span
-            ><span class="ck-disc is-light"></span>
-          </div>
-          <h2 class="ck-title" data-i18n="title">Jeu de dames</h2>
-          <p class="ck-pitch" data-i18n="pitch"></p>
-          <button
-            type="button"
-            class="ck-button ck-button-resume"
-            data-id="checkers-resume-button"
-            data-i18n="resume"
-            hidden
-          ></button>
-
-          <div class="ck-field" data-id="checkers-mode-field">
-            <p class="ck-label" data-i18n="mode"></p>
-            <div class="ck-seg">
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="mode"
-                data-value="solo"
-                data-id="checkers-mode-solo"
-                data-i18n="modeSolo"
-              ></button>
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="mode"
-                data-value="duo"
-                data-id="checkers-mode-duo"
-                data-i18n="modeDuo"
-              ></button>
+      <section class="ck-start" data-id="checkers-start-screen" data-tv-screen>
+        <div class="ck-card ck-start-card" data-id="checkers-start-card">
+          <div class="ck-start-head" data-id="checkers-start-head">
+            <div class="ck-logo" aria-hidden="true">
+              <span class="ck-disc is-dark is-king"></span
+              ><span class="ck-disc is-light"></span>
             </div>
+            <h2 class="ck-title" data-id="checkers-title" data-i18n="title">
+              Jeu de dames
+            </h2>
+            <p class="ck-pitch" data-id="checkers-pitch" data-i18n="pitch"></p>
+            <button
+              type="button"
+              class="ck-button ck-button-resume"
+              data-id="checkers-resume-button"
+              data-tv-focus
+              data-i18n="resume"
+              hidden
+            ></button>
           </div>
-
-          <div class="ck-field" data-id="checkers-level-field" data-solo-only>
-            <p class="ck-label" data-i18n="level"></p>
-            <div class="ck-slider" data-level="medium">
-              <input
-                type="range"
-                class="ck-range"
-                min="0"
-                max="3"
-                step="1"
-                data-id="checkers-level-slider"
-                aria-label="Niveau"
-                data-i18n-aria="level"
-              />
-              <div class="ck-ticks">
+          <div class="ck-start-fields" data-id="checkers-start-fields">
+            <div class="ck-field" data-id="checkers-mode-field">
+              <p class="ck-label" data-i18n="mode"></p>
+              <div class="ck-seg">
                 <button
                   type="button"
-                  class="ck-tick"
-                  data-setting="level"
-                  data-value="easy"
-                  data-id="checkers-level-easy"
-                  data-i18n="easy"
+                  class="ck-option"
+                  data-setting="mode"
+                  data-value="solo"
+                  data-id="checkers-mode-solo"
+                  data-i18n="modeSolo"
                 ></button>
                 <button
                   type="button"
-                  class="ck-tick"
-                  data-setting="level"
-                  data-value="medium"
-                  data-id="checkers-level-medium"
-                  data-i18n="medium"
-                ></button>
-                <button
-                  type="button"
-                  class="ck-tick"
-                  data-setting="level"
-                  data-value="hard"
-                  data-id="checkers-level-hard"
-                  data-i18n="hard"
-                ></button>
-                <button
-                  type="button"
-                  class="ck-tick"
-                  data-setting="level"
-                  data-value="expert"
-                  data-id="checkers-level-expert"
-                  data-i18n="expert"
+                  class="ck-option"
+                  data-setting="mode"
+                  data-value="duo"
+                  data-id="checkers-mode-duo"
+                  data-i18n="modeDuo"
                 ></button>
               </div>
             </div>
-            <p class="ck-level-record" data-id="checkers-level-record"></p>
-          </div>
 
-          <div class="ck-field" data-id="checkers-color-field" data-solo-only>
-            <p class="ck-label" data-i18n="color"></p>
-            <div class="ck-seg">
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="color"
-                data-value="light"
-                data-id="checkers-color-light"
-              >
-                <span class="ck-disc is-light" aria-hidden="true"></span
-                ><span data-i18n="light"></span>
-              </button>
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="color"
-                data-value="dark"
-                data-id="checkers-color-dark"
-              >
-                <span class="ck-disc is-dark" aria-hidden="true"></span
-                ><span data-i18n="dark"></span>
-              </button>
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="color"
-                data-value="random"
-                data-id="checkers-color-random"
-                data-i18n="random"
-              ></button>
+            <div class="ck-field" data-id="checkers-level-field" data-solo-only>
+              <p class="ck-label" data-i18n="level"></p>
+              <div class="ck-slider" data-level="medium">
+                <input
+                  type="range"
+                  class="ck-range"
+                  min="0"
+                  max="3"
+                  step="1"
+                  data-id="checkers-level-slider"
+                  data-tv-keys="left right"
+                  aria-label="Niveau"
+                  data-i18n-aria="level"
+                />
+                <div class="ck-ticks">
+                  <button
+                    type="button"
+                    class="ck-tick"
+                    data-setting="level"
+                    data-value="easy"
+                    data-id="checkers-level-easy"
+                    data-i18n="easy"
+                  ></button>
+                  <button
+                    type="button"
+                    class="ck-tick"
+                    data-setting="level"
+                    data-value="medium"
+                    data-id="checkers-level-medium"
+                    data-i18n="medium"
+                  ></button>
+                  <button
+                    type="button"
+                    class="ck-tick"
+                    data-setting="level"
+                    data-value="hard"
+                    data-id="checkers-level-hard"
+                    data-i18n="hard"
+                  ></button>
+                  <button
+                    type="button"
+                    class="ck-tick"
+                    data-setting="level"
+                    data-value="expert"
+                    data-id="checkers-level-expert"
+                    data-i18n="expert"
+                  ></button>
+                </div>
+              </div>
+              <p class="ck-level-record" data-id="checkers-level-record"></p>
             </div>
-          </div>
 
-          <div class="ck-field" data-id="checkers-variant-field">
-            <p class="ck-label" data-i18n="variant"></p>
-            <div class="ck-seg">
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="variant"
-                data-value="international"
-                data-id="checkers-variant-international"
-                data-i18n="international"
-              ></button>
-              <button
-                type="button"
-                class="ck-option"
-                data-setting="variant"
-                data-value="english"
-                data-id="checkers-variant-english"
-                data-i18n="english"
-              ></button>
+            <div class="ck-field" data-id="checkers-color-field" data-solo-only>
+              <p class="ck-label" data-i18n="color"></p>
+              <div class="ck-seg">
+                <button
+                  type="button"
+                  class="ck-option"
+                  data-setting="color"
+                  data-value="light"
+                  data-id="checkers-color-light"
+                >
+                  <span class="ck-disc is-light" aria-hidden="true"></span
+                  ><span data-i18n="light"></span>
+                </button>
+                <button
+                  type="button"
+                  class="ck-option"
+                  data-setting="color"
+                  data-value="dark"
+                  data-id="checkers-color-dark"
+                >
+                  <span class="ck-disc is-dark" aria-hidden="true"></span
+                  ><span data-i18n="dark"></span>
+                </button>
+                <button
+                  type="button"
+                  class="ck-option"
+                  data-setting="color"
+                  data-value="random"
+                  data-id="checkers-color-random"
+                  data-i18n="random"
+                ></button>
+              </div>
+            </div>
+
+            <div class="ck-field" data-id="checkers-variant-field">
+              <p class="ck-label" data-i18n="variant"></p>
+              <div class="ck-seg">
+                <button
+                  type="button"
+                  class="ck-option"
+                  data-setting="variant"
+                  data-value="international"
+                  data-id="checkers-variant-international"
+                  data-i18n="international"
+                ></button>
+                <button
+                  type="button"
+                  class="ck-option"
+                  data-setting="variant"
+                  data-value="english"
+                  data-id="checkers-variant-english"
+                  data-i18n="english"
+                ></button>
+              </div>
             </div>
           </div>
 
@@ -384,12 +394,13 @@
             type="button"
             class="ck-button"
             data-id="checkers-play-button"
+            data-tv-focus
             data-i18n="play"
           ></button>
         </div>
       </section>
 
-      <section class="ck-stage" data-id="checkers-stage" hidden>
+      <section class="ck-stage" data-id="checkers-stage" data-tv-screen hidden>
         <div class="ck-bar ck-bar-top" data-id="checkers-player-top">
           <span data-bar-disc></span>
           <span class="ck-bar-text"
@@ -446,6 +457,7 @@
             class="ck-action"
             data-id="checkers-quit-button"
             data-match-quit
+            data-tv-back
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
@@ -454,8 +466,8 @@
           </button>
         </div>
 
-        <div class="ck-overlay" data-id="checkers-end" hidden>
-          <div class="ck-card ck-end-card">
+        <div class="ck-overlay" data-id="checkers-end" data-tv-overlay hidden>
+          <div class="ck-card ck-end-card" data-id="checkers-end-card">
             <h2 class="ck-end-title" data-id="checkers-end-title"></h2>
             <p data-id="checkers-end-line"></p>
             <div class="ck-end-actions">
@@ -463,12 +475,14 @@
                 type="button"
                 class="ck-button"
                 data-id="checkers-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               ></button>
               <button
                 type="button"
                 class="ck-button ck-button-ghost"
                 data-id="checkers-change-settings-button"
+                data-tv-back
                 data-i18n="changeSettings"
               ></button>
               <button

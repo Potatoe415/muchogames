@@ -11,7 +11,6 @@ body {
   flex-direction: column;
   height: 100dvh;
   min-height: 0;
-  overflow: hidden;
   background:
     radial-gradient(120% 80% at 50% 0%, #4a3020 0%, #24170f 70%) fixed,
     #24170f;
@@ -37,15 +36,15 @@ body {
 .ck-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .ck-chip {
-  min-width: 56px;
-  min-height: 40px;
-  padding: 8px 14px;
+  min-width: 3.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.875rem;
   border: 2px solid #e0d3c2;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background: #ffffff;
   color: #2a1d14;
   font: inherit;
@@ -105,16 +104,18 @@ body {
   flex: 1;
   display: grid;
   place-items: center;
-  padding: 16px max(14px, env(safe-area-inset-right))
-    calc(16px + env(safe-area-inset-bottom))
-    max(14px, env(safe-area-inset-left));
+  min-width: 0;
+  min-height: 0;
+  padding: 12px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   overflow-y: auto;
 }
 
 .ck-card {
-  width: min(94vw, 440px);
-  padding: 22px 18px;
-  border-radius: 20px;
+  width: min(100%, 27.5rem);
+  padding: 1.375rem 1.125rem;
+  border-radius: 1.25rem;
   background: #fff8ec;
   color: #2a1d14;
   text-align: center;
@@ -124,27 +125,27 @@ body {
 .ck-logo {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 0.375rem;
   font-size: 2rem;
 }
 
 .ck-title {
-  margin: 8px 0 4px;
+  margin: 0.5rem 0 0.25rem;
   font-size: clamp(1.7rem, 7vw, 2.2rem);
   font-weight: 900;
 }
 
 .ck-pitch {
-  margin: 0 0 14px;
+  margin: 0 0 0.875rem;
   color: #6b5444;
 }
 
 .ck-field {
-  margin: 0 0 14px;
+  margin: 0 0 0.875rem;
 }
 
 .ck-label {
-  margin: 0 0 6px;
+  margin: 0 0 0.375rem;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -156,18 +157,18 @@ body {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  gap: 6px;
+  gap: 0.375rem;
 }
 
 .ck-option {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  min-height: 46px;
-  padding: 8px 6px;
+  gap: 0.375rem;
+  min-height: 2.875rem;
+  padding: 0.5rem 0.375rem;
   border: 2px solid #e6d8c6;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   background: #ffffff;
   color: inherit;
   font: inherit;
@@ -184,10 +185,10 @@ body {
 
 .ck-button {
   width: 100%;
-  min-height: 52px;
-  padding: 12px 20px;
+  min-height: 3.25rem;
+  padding: 0.75rem 1.25rem;
   border: none;
-  border-radius: 14px;
+  border-radius: 0.875rem;
   background: linear-gradient(180deg, #d9822b, #b5651d);
   color: #ffffff;
   font: inherit;
@@ -204,7 +205,7 @@ body {
 }
 
 .ck-button-resume {
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
   background: linear-gradient(180deg, #4f8f4a, #3b7336);
   box-shadow: 0 4px 0 #24501f;
 }
@@ -231,17 +232,19 @@ body {
   z-index: 20;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 12px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   background: rgba(20, 12, 6, 0.5);
   animation: ck-fade 0.25s ease;
 }
 
 .ck-end-card {
-  width: min(90vw, 360px);
+  width: min(100%, 22.5rem);
 }
 
 .ck-end-title {
-  margin: 0 0 6px;
+  margin: 0 0 0.375rem;
   font-size: 1.9rem;
   font-weight: 900;
 }
@@ -257,8 +260,8 @@ body {
 .ck-end-actions {
   display: grid;
   justify-items: center;
-  gap: 10px;
-  margin-top: 14px;
+  gap: 0.625rem;
+  margin-top: 0.875rem;
 }
 
 @keyframes ck-fade {

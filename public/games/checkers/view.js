@@ -40,6 +40,11 @@ export function createView({ host, variant, flipped, t }) {
     button.className = "ck-sq is-dark";
     button.dataset.sq = sq;
     button.dataset.id = `checkers-square-${sq}`;
+    // TV remote: the focus lands on a square of the player's front row.
+    const front = i >= (n - variant.rows) * n;
+    if (front && !grid.querySelector("[data-tv-focus]")) {
+      button.dataset.tvFocus = "";
+    }
     squares.set(sq, button);
     grid.append(button);
   }

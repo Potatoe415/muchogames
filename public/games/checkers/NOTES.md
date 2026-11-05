@@ -22,9 +22,9 @@ Read this before opening the sources.
 | `store.js` | localStorage: `checkers-settings`, `checkers-saved-game` (`{ config, moves }`), `checkers-stats` (`{ <level>: { won, played } }`). All validated on read. |
 | `sound.js` | Web Audio blips (move, capture, crown, win, lose, invalid). |
 | `i18n.js`, `copy-*.js` | FR/EN/ES strings + rules HTML, one file per language. |
-| `styles.css`, `slider.css`, `stage.css`, `board.css` | Page + start screen + end card; level slider; stage layout (portrait: bars above/below; aspect ≥ 6/5: side column); board, pieces, themes (`wood`, `classic`, `ocean`). |
+| `styles.css`, `slider.css`, `stage.css`, `board.css`, `screens.css` | Page + start screen + end card; level slider; stage layout (portrait: bars above/below; aspect ≥ 6/5: side column); board, pieces, themes (`wood`, `classic`, `ocean`). `screens.css`: short phones (no logo/pitch), landscape phones and desktop/TV (two-column start card, root font size from `dvh`, 3% overscan, scaled header buttons, `html.tv` focus ring). |
 
-`index.html` is ~460 lines: shared header/options boilerplate plus the static
+`index.html` is ~500 lines: shared header/options boilerplate plus the static
 start screen, stage and end card markup.
 
 ## Rules in code
@@ -43,3 +43,9 @@ start screen, stage and end card markup.
 - Restoring replays `moves` through `restoreMatch`: board, side to move, quiet-move counter, repetition keys and the full undo history come back. Not saved (transient): the current selection, a shown hint, a computer search in progress (it restarts on resume).
 - A save that fails validation or replay is deleted on load. The start screen shows `checkers-resume-button` only when the save replays; it never resumes by itself. Resuming calls `MuchogamesMatch.resume` (no coin).
 - The ✖ (`checkers-quit-button`, `data-match-quit`) and the hub back button keep the save and never call `finish()`. The save is deleted only in `onEnd` (with `finish()`), or overwritten when a new match starts.
+
+## Platform rules (2026-11-05 pass)
+
+- Layout sizes are in `rem`; `screens.css` scales the root font size with `dvh` from 960×500 up, so the whole page fills a TV. Start, stage and overlays keep the 6.2 margins (40px bottom, 24px sides).
+- TV remote (`/shared/js/tv-remote.js`): start screen, stage = `data-tv-screen`; end card = `data-tv-overlay`; Back = hub link on the start screen, ✖ during a match, "change settings" on the end card. The level slider keeps ←/→ (`data-tv-keys`). Board squares are buttons: arrows move between them, OK presses. `MuchogamesTv.play()` runs on start and resume.
+- No score or best: board duel (rule 4.3). `finish({ won })` only in solo with a winner.

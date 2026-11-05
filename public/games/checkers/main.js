@@ -203,6 +203,7 @@ function returnToStart() {
 
 async function startMatch() {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   const config = matchConfig(page.settings);
@@ -218,6 +219,7 @@ function resumeMatch() {
   const resumable = loadResumable();
   renderResume(resumable);
   if (!resumable) return;
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   mount(resumable.match, resumable.config);
 }

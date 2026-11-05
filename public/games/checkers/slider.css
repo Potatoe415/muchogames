@@ -2,8 +2,8 @@
    up with the 4 tappable labels below it (one grid column each). The fill
    and thumb take the colour of the selected level. */
 .ck-slider {
-  --thumb: 30px;
-  --track: 10px;
+  --thumb: 1.875rem;
+  --track: 0.625rem;
   --level-color: #d9a12b;
 }
 
@@ -84,12 +84,12 @@
 .ck-ticks {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 .ck-tick {
-  min-height: 36px;
-  padding: 4px 2px;
+  min-height: 2.25rem;
+  padding: 0.25rem 0.125rem;
   border: none;
   background: none;
   color: #8a6a52;
@@ -106,7 +106,7 @@
 }
 
 .ck-level-record {
-  margin: 2px 0 0;
+  margin: 0.125rem 0 0;
   font-size: 0.78rem;
   font-weight: 600;
   color: #8a6a52;
