@@ -158,7 +158,13 @@ function mountGame(difficulty, saved) {
     onSave: saveMatch,
     onEnd
   });
-  page.unbindInput = bindInput({
+  page.unbindInput = bindMatchInput();
+  saveMatch();
+  focusBoard();
+}
+
+function bindMatchInput() {
+  return bindInput({
     board: $("easyfrog-board"),
     dpad: $("easyfrog-dpad"),
     handlers: {
@@ -168,8 +174,6 @@ function mountGame(difficulty, saved) {
       cheat: (action) => page.game?.cheat(action)
     }
   });
-  saveMatch();
-  focusBoard();
 }
 
 async function startMatch(difficulty) {

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stage.css" />
+    <link rel="stylesheet" href="overlays.css" />
     <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
@@ -244,7 +245,11 @@
             alt=""
             aria-hidden="true"
           />
-          <h1 class="ef-title" data-i18n="title">Easy Frog</h1>
+          <!-- Beside the picture on short landscape screens (style.css). -->
+          <div class="ef-card-main">
+          <h1 class="ef-title" data-id="easyfrog-title" data-i18n="title">
+            Easy Frog
+          </h1>
           <p class="ef-pitch" data-i18n="pitch"></p>
           <p class="ef-best" data-id="easyfrog-best-score-row">
             <span data-i18n="best">Record</span> ·
@@ -263,7 +268,7 @@
             <span data-i18n="resume">Reprendre</span>
             <span class="ef-resume-info" data-resume-info></span>
           </button>
-          <div class="ef-modes">
+          <div class="ef-modes" data-id="easyfrog-modes">
             <button
               type="button"
               class="ef-button ef-easy"
@@ -281,6 +286,7 @@
             >
               Normal
             </button>
+          </div>
           </div>
         </div>
       </section>
@@ -382,7 +388,13 @@
         hidden
       >
         <div class="ef-card" role="dialog" aria-modal="true">
-          <h2 class="ef-overlay-title" data-i18n="paused">Pause</h2>
+          <h2
+            class="ef-overlay-title"
+            data-id="easyfrog-paused-title"
+            data-i18n="paused"
+          >
+            Pause
+          </h2>
           <button
             type="button"
             class="ef-button"

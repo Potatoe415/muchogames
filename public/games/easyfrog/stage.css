@@ -132,8 +132,9 @@ html.tv .ef-board:focus .ef-canvas {
 /* Portrait phones and tablets: the board leaves the side margins and runs
    edge to edge (2px from each side), so the canvas fills the width when
    the height allows it (it keeps its 720×880 shape). The HUD shrinks to
-   one line and the D-pad buttons shrink to leave it the height. */
-@media (orientation: portrait) and (max-width: 959px) {
+   one line and the D-pad buttons shrink to leave it the height (they grow
+   back with the screen on tablets). Wide portrait screens: see below. */
+@media (orientation: portrait) {
   .ef-shell:has(.ef-play:not([hidden])) {
     padding-top: 4px;
   }
@@ -155,9 +156,16 @@ html.tv .ef-board:focus .ef-canvas {
 
   /* Same two rows as elsewhere, slightly smaller buttons. */
   .ef-dpad {
-    grid-template-columns: repeat(3, 48px);
-    grid-auto-rows: 48px;
+    grid-template-columns: repeat(3, max(48px, 6dvh));
+    grid-auto-rows: max(48px, 6dvh);
     gap: 4px;
+  }
+}
+
+/* Portrait screens from 960px wide keep the board inside the margins. */
+@media (orientation: portrait) and (min-width: 960px) {
+  .ef-board {
+    margin-inline: 0;
   }
 }
 

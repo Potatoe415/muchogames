@@ -110,6 +110,15 @@ body {
   line-height: 1.4;
 }
 
+/* Title, best, Resume and modes: one column under the picture. */
+.ef-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: inherit;
+  width: 100%;
+}
+
 /* The start picture without its "press Enter" line at the bottom. */
 .ef-cover {
   width: auto;
@@ -191,53 +200,6 @@ body {
   background: #3a4a3d;
 }
 
-/* Overlays cover the play screen; the board stays dimly visible. */
-.ef-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  display: grid;
-  place-items: center;
-  padding: 1em max(24px, env(safe-area-inset-right, 0px))
-    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
-    max(24px, env(safe-area-inset-left, 0px));
-  overflow-y: auto;
-  background: rgba(0, 0, 0, 0.72);
-}
-
-.ef-overlay .ef-card {
-  padding: 1em;
-  border: 2px solid #2f4a35;
-  border-radius: 1em;
-  background: #141c16;
-}
-
-.ef-overlay .ef-button {
-  width: min(100%, 14em);
-}
-
-.ef-overlay-title {
-  margin: 0;
-  font-size: 1.6em;
-}
-
-.ef-end-image {
-  width: 100%;
-  max-height: 26dvh;
-  object-fit: contain;
-  border-radius: 0.6em;
-  background: #ffffff;
-}
-
-.ef-final {
-  font-size: 1.3em;
-}
-
-.ef-new-best {
-  display: block;
-  color: #8ce390;
-}
-
 :focus-visible,
 html.tv :focus {
   outline: max(3px, 0.4dvh) solid #ffd400;
@@ -250,16 +212,22 @@ html.tv :focus {
     padding-top: 4px;
   }
 
+  /* The picture goes beside the title and buttons, so Resume and the two
+     modes stay clear of the bottom 40px. */
   .ef-card {
     gap: 0.35em;
   }
 
-  .ef-cover {
-    height: 22dvh;
+  .ef-dashboard .ef-card {
+    flex-direction: row;
+    column-gap: 1em;
+    width: min(100%, 36em);
   }
 
-  .ef-end-image {
-    max-height: 22dvh;
+  .ef-cover {
+    flex: 0 1 auto;
+    height: auto;
+    width: 38%;
   }
 
   .ef-pitch {
