@@ -1,4 +1,4 @@
-/* Remote control for TV browsers (docs/PLATFORM_RULES.md section 6 "TV").
+/* Remote control for TV browsers (docs/PLATFORM_RULES.md section 7 "TV").
    Classic script -> window.MuchogamesTv. Adapted from Millionaire's
    tv-nav.js / tv.js, without its zoomed layout.
    On from ?tv=1 (remembered per game, ?tv=0 turns it off) or a TV user

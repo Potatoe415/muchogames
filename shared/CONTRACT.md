@@ -147,7 +147,7 @@ A new game also needs its id in `ROOM_GAMES` (`api/_lib/rooms.js`).
 
 ## `public/shared/js/tv-remote.js` (global script → `window.MuchogamesTv`)
 
-TV remote for `docs/PLATFORM_RULES.md` section 6 "TV". Include in `<head>`
+TV remote for `docs/PLATFORM_RULES.md` section 7 "TV". Include in `<head>`
 via `<script src="/shared/js/tv-remote.js">` so `html.tv` is set before the
 first paint. On from `?tv=1` (remembered as `<gameId>-tv`, `?tv=0` turns
 it off) or a TV user agent. While on, arrows move the focus to the nearest

@@ -1,4 +1,4 @@
-// Yatzy save/resume (docs/PLATFORM_RULES.md section 8): the local match save,
+// Yatzy save/resume (docs/PLATFORM_RULES.md section 5): the local match save,
 // the splash "Reprendre" buttons and the online away/back presence notices.
 // The online seat itself stays owned by session.js (yatzy-online-session).
 window.YATZY_RESUME = {

@@ -30,7 +30,7 @@ recompile. Read this before opening the sources.
 
 ## No resume (`"resumable": false`)
 
-Exempt from `docs/PLATFORM_RULES.md` section 8 (decision 0054). The prebuilt
+Exempt from `docs/PLATFORM_RULES.md` section 5 (decision 0054). The prebuilt
 binaries export no table state, cannot be seeded with a score or ball count,
 and a WASM memory dump would hold dead WebGL/SDL handles after a reload. A
 "Reprendre" dealing a fresh table would hand out free matches, so there is

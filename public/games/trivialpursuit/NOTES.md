@@ -24,7 +24,7 @@ Wedge-collecting trivia board game for 1 to 6 players on one device (pass and pl
 - Answers are self-judged: the player answers out loud, reveals, then taps right or wrong. Right = play again; wrong = next player.
 - Classic: right answer on the HQ of that category = wedge. Quick: any right answer (not the final one) = wedge of the question's category. `q.hq` means "wedge at stake" in both modes (it drives the "Question camembert" tag). Hub without 6 wedges = player picks the category; with 6 wedges (exact count) = final question, category picked by the opponents (solo: by the player). Right final answer = win.
 - Wheel ("Roue de la fortune"): no board, pawns stay on the hub node (saves keep the same shape, `die` stays 0). The wheel's colour = the question's category (spun, or tapped to pick it, the final question included); wedges as in quick. With 6 wedges the next spin is the final question (the wheel picks the category, not the opponents). A spin is not saved until it lands: a reload mid-spin spins again.
-- `finish({ won: true })` only in solo; with 2+ players on one device `finish({})` (no individual result, `docs/PLATFORM_RULES.md` section 4).
+- `finish({ won: true })` only in solo; with 2+ players on one device `finish({})` (no individual result, `docs/PLATFORM_RULES.md` section 4.4).
 - Saved at match start, after every step (roll, landing, reveal, answer, category pick), on `visibilitychange` and `pagehide`. The landing is saved before the pawn animation, so a reload mid-move lands on the target. Cleared only on win.
 
 ## Question bank

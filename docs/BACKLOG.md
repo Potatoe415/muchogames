@@ -10,7 +10,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Millionaire `style.css`: the `.start-card, .result-card` rule has a literal `` `n `` in its selector, so the browser drops it (pre-existing; TV mode sets its own sizes).
 - [ ] **User**: phone check of decision 0054 in every game: start a match, leave by back / ✖ / closing the tab, reopen, "Reprendre" = same state, no coin. Online (Memory, Yatzy, two phones): leaving shows the "away" banner to the other player, "Reprendre en ligne" brings both back.
 - [ ] Online "away" is a one-shot notice (`sendNotice`): a player who reloads while the other is away loses the banner. Optional: a lasting away flag on the room (`api/rooms/*`, L2).
-- [ ] Back button mid-match returns to the game's own start screen in Millionaire and Pyramide, not the hub (`docs/PLATFORM_RULES.md` section 1). Owner call.
+- [ ] Back button mid-match returns to the game's own start screen in Millionaire and Pyramide, not the hub (`docs/PLATFORM_RULES.md` section 3). Owner call.
 - [ ] Olé Mains and the word games restart their timer on "Reprendre" instead of coming back paused (no pause UI); the quit dialog does not pause Sudoku's or Chip's timer.
 - [ ] Memory setup scrolls 38–48 px at 360×560 when "Reprendre" shows with Robot or En ligne selected.
 - [ ] SkiFree: right-hand controls cut off at 1024 px landscape (pre-existing).
@@ -60,7 +60,10 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
 ## Next
-- [ ] **User**: bring the existing games to the TV rule one by one (`docs/PLATFORM_RULES.md` section 6 "TV", decision 0059). Millionaire already has it; use `public/shared/js/tv-remote.js`.
+- [ ] **User**: bring the existing games to the TV rule one by one (`docs/PLATFORM_RULES.md` section 7, decision 0059). Millionaire already has it; use `public/shared/js/tv-remote.js`.
+- [ ] Bring the existing games to the *(new games)* rules one by one (`docs/PLATFORM_RULES.md` sections 3.2, 4.3, 6.2; decision 0061): Game Dashboard with Resume above New game, live score + best for solo score games, 40px bottom / 24px side margin. Keep each game's current `localStorage` keys.
+- [ ] `MuchogamesMatch.finish({ score })` without `won` forwards nothing to the shared profile (`game-session.js` returns early): decide whether high-score games should report their score (L2: profile data).
+- [ ] Shared header buttons are a fixed 36px (`game-header.css`): under the TV 5% control size at 1080p and 4K unless a game scales them (the boilerplate in `docs/NEW_GAME.md` and Simon do).
 - [ ] Millionaire: replace `tv-nav.js` and the detection / wake-lock half of `tv.js` with the shared `tv-remote.js` (keep its zoomed layout), then re-check on the Bravia.
 - [ ] Pyramide: 55 broken accent characters (U+FFFD) already committed in `i18n.js` and 9 in `app.js` (rules show "R�gles"); retype the FR/ES copy. Pre-existing, found 2026-10-29.
 - [ ] Split `blackstories.js` (414 lines since the save was added).

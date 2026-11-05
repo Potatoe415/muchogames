@@ -38,7 +38,7 @@ Start with `STATE.md`. Load only what the task needs. Never scan the whole repos
 | Setup, deploy, migrate, rollback, run/test/lint/build/check | `docs/RUNBOOK.md` |
 | Planning | `docs/BACKLOG.md` |
 | Creating a new game | `docs/NEW_GAME.md` (full checklist — read it in full) |
-| Anything a player sees in every game: back/options buttons, coins, matches started/won/lost, URLs | `docs/PLATFORM_RULES.md` (enforced by `npm run check`) |
+| Anything a player sees in every game: back/options buttons, coins, matches started/won/lost, scores, URLs, mobile/TV layout | `docs/PLATFORM_RULES.md` (enforced by `npm run check`) |
 | Anything under `public/games/` or `public/data/` | `docs/GAMES_MAP.md` first, to locate the target game before browsing |
 | A past decision | `docs/decisions/INDEX.md`, then only the relevant decision |
 | Creating a doc, module, task, or decision | its template in `docs/_templates/` |
@@ -54,8 +54,8 @@ Muchogames hosts many independent games. Treat each one as its own context bound
 - Scope reads and edits to that one game's own folder (`public/games/<id>/` and/or `public/data/<id>/`) plus its single entry in `public/hub-config.json`. Do not open other games' folders. If a task genuinely spans multiple games, name every game in scope up front instead of silently drifting into extra folders.
 - For shared behavior, read `shared/CONTRACT.md` first; only open the actual shared source file if the contract doc doesn't answer the question.
 - If the game's folder has a `NOTES.md`, read that before its main source file(s) for a small/targeted change.
-- Adding a new game: follow `docs/GAMES_MAP.md`'s "Adding a new game" steps (new folder, one row in the map, a `NOTES.md` once the main file passes ~150–200 lines).
-- `apps/<name>/` (`coinchapp`, `tranquil`) are **self-governing colocated sub-apps** — separate stacks (Next.js/React/TypeScript), separate `package.json`/lint/build tooling, each with its own `AGENTS.md`/`STATE.md`/`docs/`. Colocated in this Git repo for history + LLM context only, per `docs/GAMES_MAP.md`. A task inside `apps/<name>/` follows *that app's own* `AGENTS.md`, not this repo's vanilla-JS/size-limit/`data-id` rules below. Never run this repo's root `npm run lint`/`format`/`build` expecting it to cover `apps/**` — it deliberately ignores that tree (see `eslint.config.mjs`, `.prettierignore`); build/lint each app from inside its own folder instead.
+- Adding a new game: follow `docs/NEW_GAME.md` and `docs/PLATFORM_RULES.md` in full, and update `docs/GAMES_MAP.md` (new folder, one row in the map, a `NOTES.md` once the main file passes ~150–200 lines).
+- `apps/<name>/` (`coinchapp`, `tranquil`) are **self-governing colocated sub-apps** — separate stacks (Next.js/React/TypeScript), separate `package.json`/lint/build tooling, each with its own `AGENTS.md`/`STATE.md`/`docs/`. Colocated in this Git repo for history + LLM context, per `docs/GAMES_MAP.md`. A task inside `apps/<name>/` follows *that app's own* `AGENTS.md`, not this repo's vanilla-JS/size-limit/`data-id` rules below. They still **obey `docs/PLATFORM_RULES.md`** for every player-facing platform rule: back/options placement and `data-id`s, server-side `start_muchogames_match` coin spend, the mobile bottom margin, no `*.vercel.app` URLs. Never run this repo's root `npm run lint`/`format`/`build` expecting it to cover `apps/**` — it deliberately ignores that tree (see `eslint.config.mjs`, `.prettierignore`); build/lint each app from inside its own folder instead.
 
 ## Task levels
 
@@ -76,13 +76,13 @@ Checkpoint: the working tree is committed before you start. If it is not, ask.
 - Split by responsibility. A file over ~300 lines or a function over ~30 lines needs a reason or a split.
 - No placeholder logic in production paths unless marked `# TEMP` with a reason.
 - Several valid interpretations: ask. Never silently choose a stack, framework, database, hosting, auth, or payment provider.
-- Use relative paths. Adding a wordpack game must require zero changes to `hub.js` or `vite.config.js`.
+- Use relative paths. Adding a wordpack or custom game must require zero changes to `hub.js` or `vite.config.js`.
 - No assets at repo root. Game assets/data live under `public/games/<id>/` and `public/data/<id>/`; the hub reads `public/hub-config.json`.
 - No duplicated shared code: use `shared/`/`public/shared/` for logic/styles used by 2+ games.
 - Everything must keep working with `npm run dev` and `npm run build`.
 
 ### Frontend — LLM-addressable UI
-- Every meaningful UI element must have a stable `data-id` attribute (buttons, forms, inputs, modals, sections, cards, navigation items, error states).
+- Every meaningful UI element must have a stable `data-id` attribute (buttons, forms, inputs, modals, sections, cards, navigation items, scores, error states).
 - Use `data-id`, not `id`. Values must be kebab-case, descriptive, unique within the page.
 - Do not use positional or generic names (`data-id="button-1"`, `data-id="div-main"`).
 - `data-id` values must not change unless the element's purpose changes.
@@ -122,6 +122,8 @@ See `docs/DEBUGGING.md` for the current (as-is) error/logging conventions and th
 | `docs/PRODUCT.md` | Living document. Never edit autonomously — confirm with user first. |
 | `docs/ARCHITECTURE.md` | Living document. Never edit autonomously — confirm with user first. |
 | `docs/SECURITY.md` | Living document. Never edit autonomously — confirm with user first. |
+| `docs/PLATFORM_RULES.md` | Platform-wide invariants for all games. Confirm with user before changing rules. |
+| `docs/NEW_GAME.md` | Update whenever a platform-wide technical or visual convention for games changes. |
 | `docs/DEBUGGING.md` | Living document. Update when error/logging conventions change. |
 | `docs/DATA_MODEL.md` | Living document. Update whenever persisted data structure changes. |
 | `docs/BACKLOG.md` | Living document. Always current. |
@@ -129,7 +131,6 @@ See `docs/DEBUGGING.md` for the current (as-is) error/logging conventions and th
 | `docs/decisions/INDEX.md` | One line added per new decision. |
 | `docs/RUNBOOK.md` | Update when commands or steps change. |
 | `docs/GAMES_MAP.md` | Update whenever a game is added, removed, or its shared deps / `NOTES.md` status changes. |
-| `docs/NEW_GAME.md` | Update whenever a platform-wide technical or visual convention for games changes. |
 
 ## Retired files (kept on disk, pending user confirmation to delete)
 
