@@ -1,0 +1,197 @@
+/* Start screen and play stage. The canvas fills the whole stage in both
+   orientations; the world keeps its height and shows more width on wide
+   screens (view.js). */
+.pi-start {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+}
+
+.pi-logo {
+  display: block;
+  width: 6em;
+  height: 6em;
+  margin: 0 auto 0.6em;
+  border-radius: 1.4em;
+}
+
+.pi-start-title {
+  margin: 0 0 0.3em;
+  font-size: 1.8em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pi-pitch {
+  color: #4a5a70;
+}
+
+.pi-resume {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  background: #2f86c8;
+  box-shadow: 0 0.2em 0 #1e5f93;
+}
+
+.pi-resume:active {
+  box-shadow: 0 0.08em 0 #1e5f93;
+}
+
+.pi-resume-info {
+  font-size: 0.75em;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.pi-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+}
+
+/* The whole stage is the flap button: no scroll, zoom or long-press menu. */
+.pi-play-area {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+  cursor: pointer;
+}
+
+/* It takes the focus at match start so Enter / OK flap; the ring would
+   frame the whole screen, so only the TV (html.tv) draws it. */
+.pi-play-area:focus {
+  outline: none;
+}
+
+.pi-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pi-score {
+  position: absolute;
+  top: max(0.4em, env(safe-area-inset-top));
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  text-shadow:
+    0 0.06em 0 #1b2433,
+    0 0 0.3em rgba(27, 36, 51, 0.45);
+  pointer-events: none;
+}
+
+.pi-hint {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translateX(-50%);
+  width: min(90%, 22em);
+  padding: 0.6em 1em;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  pointer-events: none;
+  animation: pi-pulse 1.4s ease-in-out infinite;
+}
+
+.pi-hint p {
+  margin: 0;
+}
+
+.pi-hint-title {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.pi-hint-keys {
+  font-size: 0.8em;
+  color: #4a5a70;
+}
+
+.pi-tool {
+  position: absolute;
+  top: max(0.6em, env(safe-area-inset-top));
+  right: max(0.8em, env(safe-area-inset-right));
+  z-index: 2;
+  width: clamp(44px, 7vmin, 180px);
+  height: clamp(44px, 7vmin, 180px);
+  border: none;
+  border-radius: 50%;
+  background: rgba(47, 134, 200, 0.9);
+  color: #ffffff;
+  font: inherit;
+  font-size: clamp(14px, 2.4vmin, 64px);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+@keyframes pi-pulse {
+  50% {
+    transform: translateX(-50%) scale(1.04);
+  }
+}
+
+/* Big screens: the pause button keeps 3% away from the edges (overscan). */
+@media (min-width: 900px) and (min-height: 500px) {
+  .pi-start {
+    padding: 2dvh 3vw 3dvh;
+  }
+
+  .pi-tool {
+    top: 3dvh;
+    right: 3vw;
+  }
+
+  .pi-score {
+    top: 3dvh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .pi-start {
+    padding-block: 0.5em max(0.5em, env(safe-area-inset-bottom));
+  }
+
+  .pi-logo {
+    width: 3.6em;
+    height: 3.6em;
+    margin-bottom: 0.3em;
+  }
+
+  .pi-pitch {
+    display: none;
+  }
+
+  .pi-score {
+    font-size: 2.2em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pi-hint {
+    animation: none;
+  }
+}

@@ -1,0 +1,248 @@
+/* Piou: daytime-sky skin over the shared header. Mobile first; sizes
+   grow with the screen (vmin) up to a 4K TV. Page frame, chips, cards,
+   buttons, overlays and the start screen here; play stage in stage.css. */
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #8fd3ff 0%, #e3f6ff 100%);
+  color: #1b2433;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: transparent;
+  border-bottom: 1px solid rgba(27, 36, 51, 0.08);
+  box-shadow: none;
+}
+
+.nav-title {
+  color: #1b2433;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.back-button,
+.options-button {
+  background: #2f86c8;
+  color: #ffffff;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.pi-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pi-chip {
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
+  border: 2px solid #d5ddd8;
+  border-radius: 0.75em;
+  background: #ffffff;
+  color: #1f2937;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pi-chip.active,
+.pi-chip[aria-pressed="true"] {
+  border-color: #7fa39a;
+  background: #e7f0ec;
+}
+
+.pi-app {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pi-app [hidden] {
+  display: none !important;
+}
+
+.pi-app button:focus-visible {
+  outline: 3px solid #1b2433;
+  outline-offset: 3px;
+}
+
+.pi-chip:focus-visible {
+  outline: 3px solid #2f86c8;
+  outline-offset: 3px;
+}
+
+.pi-card {
+  width: min(100%, 24em);
+  padding: 1.4em 1.2em 1.5em;
+  border-radius: 1.6em;
+  background: rgba(255, 255, 255, 0.94);
+  text-align: center;
+  box-shadow: 0 0.8em 2.4em rgba(27, 60, 100, 0.25);
+  animation: pi-fade 0.35s ease-out both;
+}
+
+.pi-card p {
+  margin: 0 0 0.6em;
+  line-height: 1.5;
+}
+
+.pi-button {
+  display: block;
+  width: min(100%, 14em);
+  min-height: 3em;
+  margin: 0.7em auto 0;
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 1em;
+  background: #ff9f1c;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0.2em 0 #c97300;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.pi-button:active {
+  transform: translateY(0.12em);
+  box-shadow: 0 0.08em 0 #c97300;
+}
+
+.pi-button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.pi-button-soft {
+  background: #2f86c8;
+  color: #ffffff;
+  box-shadow: 0 0.2em 0 #1e5f93;
+}
+
+.pi-best {
+  margin-top: 0.9em !important;
+  font-weight: 600;
+  color: #4a5a70;
+}
+
+/* Overlays: the board stays softly visible behind. */
+.pi-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 1em max(1em, env(safe-area-inset-right))
+    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  overflow-y: auto;
+  background: rgba(27, 36, 51, 0.35);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: pi-fade 0.3s ease-out both;
+}
+
+.pi-overlay-title {
+  margin: 0 0 0.5em;
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #1b2433;
+}
+
+.pi-score-line {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #e0705a;
+}
+
+@keyframes pi-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Big screens (desktop, TV): the shared header grows with the screen and
+   everything keeps 3% away from the edges (TV overscan). */
+@media (min-width: 900px) and (min-height: 500px) {
+  .game-nav {
+    height: clamp(60px, 8dvh, 220px);
+    padding-inline: 3vw;
+  }
+
+  .back-button,
+  .options-button {
+    width: clamp(36px, 6dvh, 160px);
+    height: clamp(36px, 6dvh, 160px);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: 0.3rem solid #1b2433 !important;
+  outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.6rem rgba(255, 159, 28, 0.9);
+}
+
+/* Short landscape screens: the overlays must fit in ~300px. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .pi-card {
+    width: min(100%, 30em);
+    padding: 0.7em 1em 0.9em;
+  }
+
+  .pi-overlay-title {
+    margin-bottom: 0.2em;
+    font-size: 1.3em;
+  }
+
+  .pi-button {
+    min-height: 2.6em;
+    margin-top: 0.4em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pi-card,
+  .pi-overlay {
+    animation: none;
+  }
+}
