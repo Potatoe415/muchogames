@@ -64,6 +64,7 @@ function createActions(game, options) {
   };
   return {
     unlock: game.audio.unlock,
+    toggleTurbo: () => setTurbo(!game.turbo),
     command,
     steer: (dir) => playable() && steer(game, dir),
     airSpin: (sign) => playable() && airSpin(game, sign)
@@ -112,12 +113,13 @@ export function createGame(options) {
   const game = createState(options, audio);
   const surface = watchSurface(game, options);
   const { loop, sheet } = createFrames(game, surface, options);
+  const actions = createActions(game, options);
   const unbind = bindInput({
     canvas: options.canvas,
     root: options.stage,
     buttons: options.buttons,
     skierAt: skierLocator(game, surface),
-    actions: createActions(game, options)
+    actions
   });
   options.buttons.turbo.setAttribute("aria-pressed", String(game.turbo));
   audio.setMuted(options.muted);
@@ -129,7 +131,12 @@ export function createGame(options) {
       if (value) audio.setGlide(0);
     },
     setMuted: (value) => audio.setMuted(value),
-    summary: () => ({ skier: game.skier, time: game.time }),
+    summary: () => ({ skier: game.skier, time: game.time, turbo: game.turbo }),
+    // From the pause dialog (TV remote): works while paused.
+    toggleTurbo() {
+      actions.toggleTurbo();
+      return game.turbo;
+    },
     snapshot: () => encodeRun(game),
     destroy() {
       loop.stop();

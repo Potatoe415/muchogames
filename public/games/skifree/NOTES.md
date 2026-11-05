@@ -48,3 +48,8 @@ verbatim copy of JezzBall's. Read this before opening the sources.
 - Written at run start (after `MuchogamesMatch.start` resolves true), every 1 s while mounted, on pause, on `visibilitychange` hidden and `pagehide`. `decodeRun` drops the save unless every field, sprite id, gate string, mover and burnt tree checks out.
 - Start screen: `skifree-continue-button` (shown only with a valid save, above "Jouer") restores the run paused and calls `MuchogamesMatch.resume()`. `skifree-resume-button` is the pause overlay's.
 - Deleted when the yeti finishes eating the skier (before `finish()`) and on restart (button or R: `finish()` then a new match); overwritten by a new match. Leaving (back button, reload, bfcache `pageshow`) keeps it and calls no `finish()`.
+
+## Platform pass (2026-11-05)
+
+- Dashboard: records list items carry `skifree-best-score` (distance; key `skifree-best-distance` unchanged), `skifree-best-slalom`, `skifree-best-tree`, `skifree-best-freestyle`. In play the back arrow is replaced by `skifree-quit-button` (✖, `data-match-quit`), which pauses first. End screen: `skifree-final-best-score` (+ `skifree-new-best`) and "Menu du jeu". Live score: `skifree-score` (Dist. in the status box).
+- TV remote: the canvas is focused (`data-tv-focus`, `data-tv-keys="left right up down"`): ← → ↓ steer, ↑ / OK jump. Back (Escape) presses Pause (`data-tv-back`); the pause dialog offers Reprendre, Turbo (`skifree-paused-turbo-button`), Recommencer and "Menu du jeu" (`data-match-quit`), so the whole game works with arrows + OK + Back.

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="win31.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -21,6 +22,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -37,6 +39,18 @@
           >
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
         ></a>
+        <!-- In a match: back to the Game Dashboard, after game-session.js asks. -->
+        <button
+          type="button"
+          class="back-button"
+          data-id="skifree-quit-button"
+          data-match-quit
+          aria-label="Quitter la partie"
+          data-i18n-aria="quit"
+          hidden
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">SkiFree</h1>
@@ -148,7 +162,7 @@
     </div>
 
     <main class="sf-app" data-id="skifree-app">
-      <section class="sf-start" data-id="skifree-start-screen">
+      <section class="sf-start" data-id="skifree-start-screen" data-tv-screen>
         <div class="sf-window" data-id="skifree-start-window">
           <div class="sf-titlebar" data-i18n="title">SkiFree</div>
           <div class="sf-window-body">
@@ -165,6 +179,7 @@
               type="button"
               class="sf-btn sf-continue"
               data-id="skifree-continue-button"
+              data-tv-focus
               hidden
             >
               <span data-i18n="resume">Reprendre</span>
@@ -174,6 +189,7 @@
               type="button"
               class="sf-btn sf-btn-default"
               data-id="skifree-start-button"
+              data-tv-focus
               data-i18n="play"
             >
               Jouer
@@ -182,12 +198,15 @@
         </div>
       </section>
 
-      <section class="sf-stage" data-id="skifree-stage" hidden>
+      <section class="sf-stage" data-id="skifree-stage" data-tv-screen hidden>
         <div class="sf-board" data-id="skifree-board">
           <canvas
             class="sf-canvas"
             data-id="skifree-canvas"
-            role="img"
+            role="application"
+            tabindex="0"
+            data-tv-focus
+            data-tv-keys="left right up down"
             data-i18n-aria="canvas"
           ></canvas>
           <div class="sf-status" data-id="skifree-status-box">
@@ -197,7 +216,7 @@
             </div>
             <div class="sf-status-row" data-id="skifree-status-dist">
               <span data-i18n="distLabel">Dist. :</span>
-              <span data-hud="dist">0m</span>
+              <span data-hud="dist" data-id="skifree-score">0m</span>
             </div>
             <div class="sf-status-row" data-id="skifree-status-speed">
               <span data-i18n="speedLabel">Vitesse :</span>
@@ -258,6 +277,7 @@
             type="button"
             class="sf-btn"
             data-id="skifree-pause-button"
+            data-tv-back
             data-i18n="pause"
           >
             Pause (P)
@@ -272,7 +292,7 @@
           </button>
         </div>
 
-        <div class="sf-overlay" data-id="skifree-paused" hidden>
+        <div class="sf-overlay" data-id="skifree-paused" data-tv-overlay hidden>
           <div class="sf-window sf-dialog">
             <div class="sf-titlebar" data-i18n="title">SkiFree</div>
             <div class="sf-window-body">
@@ -281,29 +301,83 @@
                 type="button"
                 class="sf-btn sf-btn-default"
                 data-id="skifree-resume-button"
+                data-tv-focus
+                data-tv-back
                 data-i18n="resume"
               >
                 Reprendre
+              </button>
+              <div class="sf-dialog-actions">
+                <button
+                  type="button"
+                  class="sf-btn sf-btn-turbo"
+                  data-id="skifree-paused-turbo-button"
+                  data-i18n="turbo"
+                  aria-pressed="false"
+                >
+                  Turbo (F)
+                </button>
+                <button
+                  type="button"
+                  class="sf-btn"
+                  data-id="skifree-paused-restart-button"
+                  data-i18n="restart"
+                >
+                  Recommencer (R)
+                </button>
+              </div>
+              <button
+                type="button"
+                class="sf-btn"
+                data-id="skifree-paused-menu-button"
+                data-match-quit
+                data-i18n="menu"
+              >
+                Menu du jeu
               </button>
             </div>
           </div>
         </div>
 
-        <div class="sf-overlay" data-id="skifree-game-over" hidden>
+        <div
+          class="sf-overlay"
+          data-id="skifree-game-over"
+          data-tv-overlay
+          hidden
+        >
           <div class="sf-window sf-dialog">
             <div class="sf-titlebar" data-i18n="title">SkiFree</div>
             <div class="sf-window-body">
               <p class="sf-dialog-title" data-i18n="eatenTitle">Miam !</p>
               <p data-i18n="eatenText"></p>
               <p data-id="skifree-over-stats"></p>
-              <p class="sf-best" data-id="skifree-over-best"></p>
+              <p class="sf-best" data-id="skifree-over-best">
+                <span data-i18n="bestLabel">Record de distance :</span>
+                <strong data-id="skifree-final-best-score">0 m</strong>
+                <span
+                  class="sf-new-best"
+                  data-id="skifree-new-best"
+                  data-i18n="newBest"
+                  hidden
+                ></span>
+              </p>
               <button
                 type="button"
                 class="sf-btn sf-btn-default"
                 data-id="skifree-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               >
                 Rejouer
+              </button>
+              <button
+                type="button"
+                class="sf-btn"
+                data-id="skifree-over-menu-button"
+                data-tv-back
+                data-i18n="menu"
+              >
+                Menu du jeu
               </button>
             </div>
           </div>

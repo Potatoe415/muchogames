@@ -52,7 +52,10 @@ const STRINGS = {
     resultBest: "Nouveau record !",
     resultRecord: "Record : {best}",
     points: "{value} pts",
-    loadError: "Impossible de charger les graphismes. Rechargez la page."
+    loadError: "Impossible de charger les graphismes. Rechargez la page.",
+    bestLabel: "Record de distance :",
+    quit: "Quitter la partie",
+    menu: "Menu du jeu"
   },
   en: {
     title: "SkiFree",
@@ -101,7 +104,10 @@ const STRINGS = {
     resultBest: "New record!",
     resultRecord: "Record: {best}",
     points: "{value} pts",
-    loadError: "The graphics failed to load. Please reload the page."
+    loadError: "The graphics failed to load. Please reload the page.",
+    bestLabel: "Distance record:",
+    quit: "Leave match",
+    menu: "Game menu"
   },
   es: {
     title: "SkiFree",
@@ -150,7 +156,10 @@ const STRINGS = {
     resultBest: "¡Nuevo récord!",
     resultRecord: "Récord: {best}",
     points: "{value} pts",
-    loadError: "No se pudieron cargar los gráficos. Recarga la página."
+    loadError: "No se pudieron cargar los gráficos. Recarga la página.",
+    bestLabel: "Récord de distancia:",
+    quit: "Salir de la partida",
+    menu: "Menú del juego"
   }
 };
 

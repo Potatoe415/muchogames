@@ -50,9 +50,9 @@
 }
 
 .sf-btn {
-  min-height: 44px;
-  padding: 6px 12px;
-  font: 700 0.95rem/1.15 var(--sf-font);
+  min-height: max(44px, 2.75em);
+  padding: 0.4em 0.75em;
+  font: 700 0.95em/1.15 var(--sf-font);
   touch-action: manipulation;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .sf-btn-default {
-  min-width: 160px;
+  min-width: 10em;
   border-width: 2px;
 }
 
@@ -91,9 +91,10 @@
 }
 
 .sf-chip {
-  min-width: 56px;
-  padding: 8px 14px;
-  font: 700 0.95rem var(--sf-font);
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
+  font: 700 0.95em var(--sf-font);
 }
 
 .sf-chip.active,

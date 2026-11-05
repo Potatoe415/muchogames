@@ -22,6 +22,12 @@ const SOUND_KEY = "skifree-sound";
 const TOAST_MS = 5000;
 const SAVE_EVERY_MS = 1000;
 const OVERLAYS = { paused: "skifree-paused", over: "skifree-game-over" };
+const RECORD_IDS = [
+  "skifree-best-score",
+  "skifree-best-slalom",
+  "skifree-best-tree",
+  "skifree-best-freestyle"
+];
 
 /** @returns {HTMLElement} */
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -44,11 +50,13 @@ const page = {
 const t = (key, vars) => translate(page.lang, key, vars);
 const metres = (y) => Math.max(0, Math.round(y / PX_PER_M));
 
-function fillList(list, lines) {
+// `ids`: optional data-id per line (the records list).
+function fillList(list, lines, ids = []) {
   list.replaceChildren(
-    ...lines.map((line) => {
+    ...lines.map((line, index) => {
       const item = document.createElement("li");
       item.textContent = line;
+      if (ids[index]) item.dataset.id = ids[index];
       return item;
     })
   );
@@ -58,9 +66,8 @@ function renderOverText() {
   const s = page.summary;
   if (!s) return;
   $("skifree-over-stats").textContent = t("overStats", s);
-  $("skifree-over-best").textContent = s.newBest
-    ? t("newBest")
-    : t("recordDist", { value: `${page.records.dist ?? 0} m` });
+  $("skifree-final-best-score").textContent = `${page.records.dist ?? 0} m`;
+  $("skifree-new-best").hidden = !s.newBest;
 }
 
 function renderContinue() {
@@ -89,7 +96,11 @@ function applyLanguage() {
   const sound = $("skifree-sound-toggle");
   sound.textContent = t(page.muted ? "soundOff" : "soundOn");
   sound.setAttribute("aria-pressed", String(!page.muted));
-  fillList($("skifree-start-records"), recordLines(page.records, t));
+  fillList(
+    $("skifree-start-records"),
+    recordLines(page.records, t),
+    RECORD_IDS
+  );
   renderContinue();
   renderOverText();
 }
@@ -101,6 +112,8 @@ function syncPause() {
 
 function showOverlay(name) {
   page.overlay = name;
+  const turbo = Boolean(page.game?.summary().turbo);
+  $("skifree-paused-turbo-button").setAttribute("aria-pressed", String(turbo));
   Object.entries(OVERLAYS).forEach(([key, id]) => {
     $(id).hidden = key !== name;
   });
@@ -161,6 +174,8 @@ function unmountGame() {
 function showScreen(playing) {
   $("skifree-start-screen").hidden = playing;
   $("skifree-stage").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("skifree-quit-button").hidden = !playing;
 }
 
 // Quitting is not an end: no finish(), the save stays for the continue
@@ -202,6 +217,7 @@ function mountGame(saved) {
 
 async function startMatch() {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
@@ -214,6 +230,7 @@ function resumeMatch() {
   const saved = loadRun();
   page.saved = saved;
   if (!saved) return renderContinue();
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   mountGame(saved);
   showOverlay("paused");
@@ -233,6 +250,17 @@ function togglePause() {
   if (!page.game || page.overlay === "over") return;
   showOverlay(page.overlay === "paused" ? null : "paused");
   saveRun();
+}
+
+// The ✖ asks "Leave match?" first (game-session.js): the run waits.
+function pauseBeforeQuit(event) {
+  const quit = event.target.closest?.('[data-id="skifree-quit-button"]');
+  if (quit && page.game && page.overlay === null) showOverlay("paused");
+}
+
+function toggleTurbo() {
+  const on = page.game?.toggleTurbo();
+  $("skifree-paused-turbo-button").setAttribute("aria-pressed", String(on));
 }
 
 function toggleSound() {
@@ -279,6 +307,12 @@ function bindPage() {
   onButton("skifree-resume-button", () => showOverlay(null));
   onButton("skifree-pause-button", togglePause);
   onButton("skifree-restart-button", restartMatch);
+  onButton("skifree-paused-turbo-button", toggleTurbo);
+  onButton("skifree-paused-restart-button", restartMatch);
+  onButton("skifree-quit-button", returnToStart);
+  onButton("skifree-paused-menu-button", returnToStart);
+  onButton("skifree-over-menu-button", returnToStart);
+  window.addEventListener("click", pauseBeforeQuit, true);
   document.addEventListener("visibilitychange", onVisibility);
   window.addEventListener("pagehide", unmountGame);
   window.addEventListener("pageshow", (event) => {

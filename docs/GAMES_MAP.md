@@ -38,9 +38,9 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `cafards` | `public/games/cafards/` | `game.js` (300), `save.js`, `i18n.js`, `board.js`, `setup.js`, `deck.js`, `board.css` (none >300) | header, profile | yes |
 | `millionaire` | `public/games/millionaire/` | `app.js` (**over 300-line limit**), `save.js`; TV mode in `tv.js`, `tv-nav.js`, `tv.css`, `tv-game.css` | engine, header, profile | yes |
 | `pyramide` | `public/games/pyramide/` | `app.js` (1077), `i18n.js` (324) — **both over limit**, `save.js` | header, profile | yes |
-| `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,780 total (none >300); `main.js` entry | header, session | yes |
-| `jezzball` | `public/games/jezzball/` | 17 ES modules, ~1,760 total (none >300); `main.js` entry | header, session | yes |
-| `skifree` | `public/games/skifree/` | 25 ES modules + 2 CSS, ~3,050 total (none >300 except `index.html` header boilerplate, 307); `main.js` entry; original bitmaps in `assets/sprites.png` | header, session | yes |
+| `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,810 total (none >300; `styles.css` 430, `index.html` 339 over); `main.js` entry | header, session | yes |
+| `jezzball` | `public/games/jezzball/` | 17 ES modules, ~1,860 total (none >300; `styles.css` 583, `index.html` 499 over); `main.js` entry | header, session | yes |
+| `skifree` | `public/games/skifree/` | 25 ES modules + 2 CSS, ~3,300 total (over 300: `main.js` 325, `styles.css` 394, `index.html` 392); `main.js` entry; original bitmaps in `assets/sprites.png` | header, session | yes |
 | `chipschallenge` | `public/games/chipschallenge/` | 17 ES modules + 3 CSS, ~1,800 JS lines (none >300 except `index.html`, ~400: header boilerplate + static dialogs/D-pad, and `panel.css`, ~315); `main.js` entry; rules engine vendored in `vendor/lexy/` (Lexy's Labyrinth, MIT, decision 0048); original CHIPS.EXE tiles in `assets/tiles.png`, original 149 levels in `assets/CHIPS.DAT` | header, session | yes |
 | `minesweeper` | `public/games/minesweeper/` | 7 ES modules + 2 CSS, ~1,550 total (none >300); `main.js` entry | header, session | yes |
 | `spacecadet` | `public/games/spacecadet/` | 7 JS + 1 CSS, ~750 total (none >300); `main.js` + classic `boot.js`; prebuilt Emscripten WASM vendored in `vendor/` (alula, decision 0049) | header, session | yes |
