@@ -18,6 +18,7 @@
 
 import { loadRulesIfExists } from "../../shared/js/engine.js";
 
+import { COPY } from "./blackstories-i18n.js";
 import {
   clearSave,
   idsToIndexes,
@@ -48,7 +49,32 @@ const els = {
   gameContainer: document.getElementById("gameContainer"),
   startButton: document.getElementById("startButton"),
   resumeButton: document.getElementById("resumeButton"),
+  quitButton: document.getElementById("quitButton"),
+  backLink: document.querySelector('[data-id="game-back-button"]'),
 };
+
+function t(key) {
+  return (COPY[currentLang] || COPY.fr)[key];
+}
+
+function applyCopy() {
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    node.textContent = t(node.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    node.setAttribute("aria-label", t(node.dataset.i18nAria));
+  });
+}
+
+function storeLang(lang) {
+  try {
+    localStorage.setItem("blackstories_lang", lang);
+    localStorage.setItem("bergamots-lang", lang);
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
+  }
+}
 
 const FILES = {
   fr: "./black_stories_fr.json",
@@ -125,7 +151,8 @@ function normalizeLang(lang) {
 
 function setLangUI(lang) {
   currentLang = normalizeLang(lang);
-  localStorage.setItem("blackstories_lang", currentLang);
+  storeLang(currentLang);
+  applyCopy();
   if (els.resumeButton) els.resumeButton.textContent = resumeLabel(currentLang);
 
   els.langBtns.forEach(btn => {
@@ -149,9 +176,7 @@ async function refreshRules() {
 function setReveal(state) {
   revealed = !!state;
   els.fullStory.classList.toggle("hidden", !revealed);
-  els.revealHint.textContent = revealed
-    ? "Touchez pour cacher l’histoire complète"
-    : "Touchez pour révéler l’histoire complète";
+  els.revealHint.textContent = revealed ? t("hideHint") : t("revealHint");
 }
 
 function safeText(x) {
@@ -179,10 +204,10 @@ function renderByIndex(idx) {
   const story = stories[idx];
 
   if (!story) {
-    els.title.textContent = "Aucune histoire";
-    els.shortStory.textContent = "Tes fichiers JSON sont vides ou introuvables.";
+    els.title.textContent = t("noStory");
+    els.shortStory.textContent = t("noStoryBody");
     els.fullStory.textContent = "";
-    els.storyCounter.textContent = `0 stories (${currentLang.toUpperCase()})`;
+    els.storyCounter.textContent = `0 ${t("stories")} (${currentLang.toUpperCase()})`;
     els.storyId.textContent = "ID: —";
     els.prevBtn.disabled = true;
     els.nextBtn.disabled = true;
@@ -190,12 +215,12 @@ function renderByIndex(idx) {
     return;
   }
 
-  els.title.textContent = story.title || "Sans titre";
+  els.title.textContent = story.title || t("untitled");
   els.shortStory.textContent = story.short_story || "—";
   els.fullStory.textContent = story.full_story || "—";
 
   const total = stories.length;
-  els.storyCounter.textContent = `${total} stories (${currentLang.toUpperCase()})`;
+  els.storyCounter.textContent = `${total} ${t("stories")} (${currentLang.toUpperCase()})`;
   els.storyId.textContent = `ID: ${story.id ?? "—"}`;
 
   els.prevBtn.disabled = historyPos <= 0;
@@ -245,6 +270,10 @@ function goPrev() {
   if (historyPos <= 0) return;
   historyPos -= 1;
   renderByIndex(history[historyPos]);
+  // Back at the first story: the disabled button cannot keep the focus.
+  if (els.prevBtn.disabled && document.activeElement === els.prevBtn) {
+    els.nextBtn.focus({ preventScroll: true });
+  }
   saveSession();
 }
 
@@ -321,23 +350,45 @@ function resetHistoryAndStart() {
   renderByIndex(first);
 }
 
+// Screens use `hidden` (watched by tv-remote.js) on top of the .hidden class.
+function showScreen(playing) {
+  els.splashScreen.classList.toggle("hidden", playing);
+  els.splashScreen.hidden = playing;
+  els.gameContainer.classList.toggle("hidden", !playing);
+  els.gameContainer.hidden = !playing;
+  els.backLink.hidden = playing;
+  els.quitButton.hidden = !playing;
+}
+
 function enterSession() {
   inSession = true;
   pendingSave = null;
   els.resumeButton.classList.add("hidden");
   saveSession();
-  els.splashScreen.classList.add("hidden");
-  els.gameContainer.classList.remove("hidden");
+  showScreen(true);
 }
 
 async function startGame() {
+  window.MuchogamesTv?.play();
   if (!(await window.MuchogamesMatch.start("blackstories"))) return;
+  resetHistoryAndStart();
   enterSession();
+}
+
+// Runs once game-session.js's "Leave match?" dialog is confirmed: the save
+// stays and the dashboard offers Resume (leaving is not an end).
+function quitSession() {
+  saveSession();
+  inSession = false;
+  showScreen(false);
+  showResumeIfSaved();
+  window.MuchogamesTv?.focusScreen();
 }
 
 function resumeGame() {
   const save = pendingSave;
   if (!save) return;
+  window.MuchogamesTv?.play();
   setLangUI(save.lang);
   if (!restoreHistory(save.history, save.pos)) return;
   const sameStory = getStories()[history[historyPos]].id === save.history[save.pos];
@@ -377,6 +428,7 @@ function bindEvents() {
   }
   els.startButton.addEventListener("click", startGame);
   els.resumeButton.addEventListener("click", resumeGame);
+  els.quitButton.addEventListener("click", quitSession);
 
   els.revealBox.addEventListener("click", () => {
     setReveal(!revealed);
@@ -392,22 +444,38 @@ function bindEvents() {
   els.nextBtn.addEventListener("click", goNext);
   els.prevBtn.addEventListener("click", goPrev);
 
-  // Optional: keyboard navigation
+  // Keyboard shortcut during a session. On a TV the arrows belong to the
+  // remote's focus navigation (tv-remote.js): Next / Previous are buttons.
   window.addEventListener("keydown", (e) => {
+    if (!inSession || window.MuchogamesTv?.isOn()) return;
+    if (e.target.closest?.(".options-panel, input, textarea")) return;
     if (e.key === "ArrowRight") goNext();
     if (e.key === "ArrowLeft") goPrev();
   });
 }
 
+function readStoredLang() {
+  try {
+    return (
+      localStorage.getItem("bergamots-lang") ||
+      localStorage.getItem("blackstories_lang") ||
+      "fr"
+    );
+  } catch {
+    return "fr";
+  }
+}
+
 async function init() {
-  const hubLang = localStorage.getItem("bergamots-lang");
-  const savedLang = localStorage.getItem("blackstories_lang");
-  setLangUI(hubLang || savedLang || "fr");
+  setLangUI(readStoredLang());
 
   bindEvents();
+  showScreen(false);
   await loadAll();
   resetHistoryAndStart();
   showResumeIfSaved();
+  // The resume button appears after the stories load: land the remote on it.
+  window.MuchogamesTv?.focusScreen();
   await refreshRules();
 }
 

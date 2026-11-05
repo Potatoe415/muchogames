@@ -1,0 +1,40 @@
+// Black Stories player-facing copy (FR / EN / ES). The stories themselves
+// live in black_stories_<lang>.json.
+export const COPY = {
+  fr: {
+    back: "Retour", quit: "Quitter la partie", options: "Options", close: "Fermer",
+    language: "Langue", rules: "Règles", dashboard: "Écran d’accueil",
+    subtitle: "Lis l’énigme, réfléchis à l’histoire qui se cache derrière, puis touche la carte pour révéler la solution complète.",
+    start: "Commencer", resume: "Reprendre", loading: "Chargement…",
+    shortLabel: "Histoire courte", revealAria: "Révéler l’histoire complète",
+    revealHint: "Touchez pour révéler l’histoire complète",
+    hideHint: "Touchez pour cacher l’histoire complète",
+    prev: "Précédent", next: "Suivant", stories: "histoires",
+    noStory: "Aucune histoire", noStoryBody: "Les histoires n’ont pas pu être chargées.",
+    untitled: "Sans titre",
+  },
+  en: {
+    back: "Back", quit: "Quit match", options: "Options", close: "Close",
+    language: "Language", rules: "Rules", dashboard: "Home screen",
+    subtitle: "Read the riddle, think about the story hiding behind it, then tap the card to reveal the full solution.",
+    start: "Start", resume: "Resume", loading: "Loading…",
+    shortLabel: "Short story", revealAria: "Reveal the full story",
+    revealHint: "Tap to reveal the full story",
+    hideHint: "Tap to hide the full story",
+    prev: "Previous", next: "Next", stories: "stories",
+    noStory: "No story", noStoryBody: "The stories could not be loaded.",
+    untitled: "Untitled",
+  },
+  es: {
+    back: "Volver", quit: "Salir de la partida", options: "Opciones", close: "Cerrar",
+    language: "Idioma", rules: "Reglas", dashboard: "Pantalla de inicio",
+    subtitle: "Lee el enigma, piensa en la historia que se esconde detrás y toca la carta para revelar la solución completa.",
+    start: "Empezar", resume: "Reanudar", loading: "Cargando…",
+    shortLabel: "Historia corta", revealAria: "Revelar la historia completa",
+    revealHint: "Toca para revelar la historia completa",
+    hideHint: "Toca para ocultar la historia completa",
+    prev: "Anterior", next: "Siguiente", stories: "historias",
+    noStory: "Ninguna historia", noStoryBody: "No se pudieron cargar las historias.",
+    untitled: "Sin título",
+  },
+};

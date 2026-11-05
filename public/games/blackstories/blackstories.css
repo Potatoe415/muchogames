@@ -68,7 +68,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height: calc(100dvh - 90px);
+  min-height: 0;
   padding: 20px 16px 40px;
 }
 
@@ -337,4 +337,127 @@ body{
   width:28px;
   height:28px;
   pointer-events:none;
+}
+
+/* --- Platform layout (docs/PLATFORM_RULES.md sections 6 and 7) ---
+   Mobile first, no page scroll: the page is one 100dvh column, the story
+   card scrolls inside itself, Previous / Next stay on screen. */
+[hidden]{display:none !important}
+
+body{
+  display:flex;
+  flex-direction:column;
+  height:100dvh;
+  overflow:hidden;
+  overscroll-behavior:none;
+  font-size:max(16px, 2.4dvh);
+}
+.game-nav{flex:0 0 auto}
+
+/* Android bars can cover the bottom even when the safe-area inset is 0. */
+.splash-screen,
+.container{
+  flex:1 1 auto;
+  min-height:0;
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+}
+.splash-screen{overflow:auto}
+.splash-screen.hidden,
+.container.hidden{display:none}
+.splashCard{margin:auto}
+.splashStart{min-height:48px; font-size:1em}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.card{
+  flex:1 1 auto;
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+}
+.navRow{
+  flex:0 0 auto;
+  margin-top:0;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.03);
+}
+.navBtn{height:max(52px, 7dvh)}
+.navBtn:disabled{opacity:.35; cursor:default}
+
+/* Keyboard and TV focus: visible ring (no hover-only feedback). */
+:focus-visible,
+html.tv :focus{
+  outline:max(3px, .4dvh) solid #52ffb8;
+  outline-offset:max(2px, .3dvh);
+}
+
+@media (max-width: 520px){
+  .illusWrap{height:120px}
+}
+
+/* Landscape phones (~360px tall): illustration beside the title, smaller. */
+@media (orientation: landscape) and (max-height: 500px){
+  .splashCard{padding:14px 18px}
+  .splashTitle{font-size:24px; margin-bottom:6px}
+  .splashSubtitle{margin-bottom:10px}
+  .splashActions{flex-direction:row; justify-content:center}
+  .card{padding:12px}
+  .titleRow{flex-direction:row}
+  .title{font-size:22px; margin:4px 0 6px}
+  .label{display:none}
+  .short{margin-bottom:8px; font-size:15px}
+  .revealBox{padding:6px 12px}
+  .revealHint{padding:4px 0; margin-bottom:0}
+  .full{margin-top:6px}
+  .metaRow{margin-bottom:4px}
+  .illusWrap{width:80px; height:80px}
+  /* Previous / Next move beside the card. */
+  .container{flex-direction:row; padding-top:4px}
+  .navRow{flex-direction:column; width:72px}
+  .navBtn{height:auto}
+  .navPrev{border-right:0; border-bottom:1px solid rgba(255,255,255,0.15)}
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: sizes follow the screen height
+   and everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px){
+  .game-nav{
+    height:auto;
+    padding:3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+  .back-button,
+  .options-button{
+    width:max(36px, 6dvh);
+    height:max(36px, 6dvh);
+    font-size:max(1rem, 3dvh);
+  }
+  .back-button svg,
+  .options-button svg{width:50%; height:50%}
+  .splash-screen,
+  .container{
+    padding:2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 5dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+  .splashCard{max-width:min(90vw, 34em); padding:1.6em 1.4em}
+  .splashTitle{font-size:2.2em}
+  .card{padding:1.2em 1.4em}
+  .title{font-size:1.9em}
+  .label,
+  .pill,
+  .revealHint{font-size:.8em}
+  .short,
+  .full{font-size:1.1em}
+  .illusWrap{width:22dvh; height:22dvh}
+  .navIcon{width:5dvh; height:5dvh}
+  .chip{font-size:1em}
 }
