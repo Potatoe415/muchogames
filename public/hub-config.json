@@ -397,8 +397,8 @@
     "added": "2026-11-02",
     "launch": "/games/ttmc/index.html",
     "thumbnail": "/games/ttmc/assets/thumbnail.jpg",
-    "resumable": false,
-    "players": [2, 10],
+    "resumable": true,
+    "players": [2, 4],
     "duration": 45
   },
   {
