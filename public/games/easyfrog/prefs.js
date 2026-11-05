@@ -10,8 +10,7 @@ const BEST_KEYS = {
 export const DEFAULT_SETTINGS = {
   soundEnabled: true,
   animationEnabled: true,
-  objectsMovementEnabled: true,
-  modernLook: false
+  objectsMovementEnabled: true
 };
 
 function read(key) {

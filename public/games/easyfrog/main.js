@@ -33,15 +33,14 @@ const page = {
   starting: false
 };
 page.audio.setMuted(!page.settings.soundEnabled);
-page.ready = Promise.all([reloadImages(), page.audio.loadAll()]);
+page.ready = Promise.all([loadBoardImages(), page.audio.loadAll()]);
 
 const t = (key, vars) => translate(page.lang, key, vars);
 const formatNumber = (n) => n.toLocaleString(page.lang);
 const hud = createHud(formatNumber);
 
-async function reloadImages() {
-  page.images = await loadImages(page.settings.modernLook);
-  if (page.game) page.game.images = page.images;
+async function loadBoardImages() {
+  page.images = await loadImages();
 }
 
 function renderDashboard() {
@@ -221,12 +220,11 @@ function returnToDashboard() {
   window.MuchogamesTv?.focusScreen();
 }
 
-async function toggleSetting(key) {
+function toggleSetting(key) {
   page.settings[key] = !page.settings[key];
   prefs.saveSettings(page.settings);
   page.audio.setMuted(!page.settings.soundEnabled);
   renderSettings();
-  if (key === "modernLook") await reloadImages();
 }
 
 function setLanguage(lang) {

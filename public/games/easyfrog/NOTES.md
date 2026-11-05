@@ -6,15 +6,15 @@ The owner's road-and-pond crossing game ("EasyFrog by Falcon"), ported on 2026-1
 
 | File | Role |
 |---|---|
-| `main.js` | Page shell: i18n, options (language, 4 toggles, collapsed rules), dashboard (best per difficulty, Resume, Facile / Normal), pause / end overlays, `MuchogamesMatch.start/resume/finish`, save, best. |
+| `main.js` | Page shell: i18n, options (language, 3 toggles, collapsed rules), dashboard (best per difficulty, Resume, Facile / Normal), pause / end overlays, `MuchogamesMatch.start/resume/finish`, save, best. |
 | `game.js` | `createGame({ canvas, board, images, audio, settings, difficulty, saved, onHud, onSave, onEnd })` → `{ move, pause, resume, cheat, snapshot, destroy }`. Level setup, per-frame update, rAF loop (dt capped at 0.1 s), zone sounds, timer. |
 | `rules.js` | Collisions: flies, home slots / level up / victory, cars + train, riding the river, death (`die`), car-gap keeping. |
 | `entities.js`, `flies.js`, `player.js` | Cars, train, logs / lily pads / turtles / crocodile, diving turtle; fly + chaos fly; the frog (crouch → jump → squash, buffered input). |
 | `levels.js`, `lanes.js`, `balance.js`, `balance-easy.js`, `difficulty.js` | Road lanes per level; every tunable value (Normal 7 levels with timer, Easy 5 slower levels without). |
-| `renderer.js`, `view.js`, `assets.js`, `audio.js` | Board drawing; canvas fit + backing store at screen pixels (auto-lowered under ~45 fps); images (`_mod1` = "Look moderne"); sounds. |
+| `renderer.js`, `view.js`, `assets.js`, `audio.js` | Board drawing; canvas fit + backing store at screen pixels (auto-lowered under ~45 fps); images; sounds. |
 | `input.js`, `hud.js` | Keys (arrows / WASD, Escape or P pause, F8 god mode, F9 skip level), swipes on the board, D-pad; HUD. |
 | `snapshot.js`, `save.js`, `prefs.js`, `i18n.js` | Match JSON + validation; save key; settings / language / best; copy + rules. |
-| `style.css`, `stage.css` | Frame, dashboard, cards, overlays; play screen: pause ❚❚ centred in the shared header, HUD, fitted board, D-pad (hidden with a fine pointer or on TV). Portrait phones: the board breaks out of the 24px side margins to run 2px from each edge (canvas full width when the height allows, checked 360×640 → 412×780), D-pad on one row under it. Landscape: D-pad beside the board. |
+| `style.css`, `stage.css` | Frame, dashboard, cards, overlays; play screen: pause ❚❚ centred in the shared header, HUD, fitted board, D-pad (hidden with a fine pointer or on TV). Portrait phones: the board breaks out of the 24px side margins to run 2px from each edge (canvas full width when the height allows), D-pad on two rows under it (owner choice, 2026-11-05: costs ~50px of board height on short phones). Landscape: D-pad beside the board. |
 
 ## Rules in code
 
@@ -31,4 +31,4 @@ The owner's road-and-pond crossing game ("EasyFrog by Falcon"), ported on 2026-1
 
 ## Settings
 
-`muchogames_easyfrog_settings`: `soundEnabled`, `animationEnabled`, `objectsMovementEnabled`, `modernLook`. The original's "Plein écran" toggle was dropped: on a TV, `MuchogamesTv.play()` goes fullscreen.
+`muchogames_easyfrog_settings`: `soundEnabled`, `animationEnabled`, `objectsMovementEnabled`. Dropped from the original: "Plein écran" (on a TV, `MuchogamesTv.play()` goes fullscreen) and "Look moderne" (removed with its `_mod1` images on the owner’s request, 2026-11-05).

@@ -1,6 +1,5 @@
 // Moving things on the road and the river. Positions are in the 720×880
-// logical board; each entity draws game.images[imgKey], so a "Modern look"
-// switch shows on the next frame.
+// logical board; each entity draws game.images[imgKey].
 const shakeOn = (game) => game.settings.objectsMovementEnabled;
 
 function drawSprite(ctx, img, box, flip) {

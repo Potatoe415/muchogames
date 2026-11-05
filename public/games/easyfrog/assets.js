@@ -1,5 +1,4 @@
-// Board images. "Modern look" swaps each one for its `_mod1` version when
-// it exists, and falls back to the classic one otherwise.
+// Board images (images/<name>.png), loaded once per page.
 const IMAGES = {
   frog: "frog",
   frogWin: "frog_win",
@@ -25,9 +24,6 @@ const IMAGES = {
   fly: "fly"
 };
 
-// Classic images with no `_mod1` version: don't request what can't exist.
-const CLASSIC_ONLY = new Set(["fly", "frog_win", "car_f1", "car_green"]);
-
 function loadImage(src) {
   return new Promise((resolve) => {
     const img = new Image();
@@ -37,19 +33,12 @@ function loadImage(src) {
   });
 }
 
-async function loadOne(name, modern) {
-  if (modern && !CLASSIC_ONLY.has(name)) {
-    const img = await loadImage(`images/${name}_mod1.png`);
-    if (img) return img;
-  }
-  return loadImage(`images/${name}.png`);
-}
-
-export async function loadImages(modern) {
+// A missing image is left out: that sprite is simply not drawn.
+export async function loadImages() {
   const entries = await Promise.all(
     Object.entries(IMAGES).map(async ([key, name]) => [
       key,
-      await loadOne(name, modern)
+      await loadImage(`images/${name}.png`)
     ])
   );
   return Object.fromEntries(entries.filter(([, img]) => img));
