@@ -45,3 +45,9 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 - `decodeMatch` drops the save unless sizes, border ring, ball count/speed/position, walls and growing cells all agree.
 - Start screen: `jezzball-continue-button` (shown only with a valid save, above "Jouer") restores it paused (or on the level-cleared card) and calls `MuchogamesMatch.resume()`. `jezzball-resume-button` is the pause overlay's.
 - Deleted only on game over (before `finish()`); overwritten by a new match. Leaving (back button, reload, bfcache `pageshow`) keeps it and calls no `finish()`.
+
+## Platform pass (2026-11-05)
+
+- Dashboard: `jezzball-best-score` wraps both bests (`jezzball-best-score-easy`, `jezzball-best-score-normal`; storage keys unchanged), Resume above the two mode buttons. In play the back arrow is replaced by `jezzball-quit-button` (✖, `data-match-quit`): it pauses first. Pause / level-cleared / game-over cards have a "Menu du jeu" button. End screen: `jezzball-final-best-score` (+ `jezzball-new-best`). Live score: `jezzball-score`.
+- Keyboard / TV: the focused canvas keeps a cursor (starts at the centre): arrows move it with the wall preview, Enter builds along the active axis; Space or the axis button flips it. At a grid edge `data-tv-keys` drops that direction so the remote reaches the axis button and the header. Escape = ✖.
+- Landscape phones: the pitch is hidden and the easy intro lays its 3 steps side by side so the card fits in 360px.

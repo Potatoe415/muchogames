@@ -6,7 +6,6 @@ const STRINGS = {
     title: "JezzBall",
     pitch:
       "Coupez le terrain avec vos murs et enfermez les atomes : conquérez 75 % de la surface (66 % en Facile) !",
-    best: "Record : {best}",
     back: "Retour",
     options: "Options",
     close: "Fermer",
@@ -46,20 +45,23 @@ const STRINGS = {
     continueInfo: "Niveau {level} · {mode} · Score {score}",
     easy: "Facile",
     normal: "Normal",
-    bestBoth: "Record Facile : {easy} · Normal : {normal}",
     introTitle: "Comment jouer",
     introWall:
       "Glisse ou tape sur une case : un mur pousse dans les deux sens.",
     introTrap:
       "Si un atome touche le mur pendant qu'il pousse, il casse. Les zones sans atome deviennent noires.",
     introGoal: "Noircis {target} % du terrain pour gagner le niveau !",
-    introGo: "C'est parti !"
+    introGo: "C'est parti !",
+    bestLabel: "Record :",
+    bestEasy: "Record Facile :",
+    bestNormal: "Normal :",
+    quit: "Quitter la partie",
+    menu: "Menu du jeu"
   },
   en: {
     title: "JezzBall",
     pitch:
       "Split the field with your walls and trap the atoms: claim 75% of the area (66% in Easy)!",
-    best: "Best: {best}",
     back: "Back",
     options: "Options",
     close: "Close",
@@ -98,19 +100,22 @@ const STRINGS = {
     continueInfo: "Level {level} · {mode} · Score {score}",
     easy: "Easy",
     normal: "Normal",
-    bestBoth: "Best Easy: {easy} · Normal: {normal}",
     introTitle: "How to play",
     introWall: "Swipe or tap a cell: a wall grows both ways.",
     introTrap:
       "If an atom touches the wall while it grows, it breaks. Areas with no atom turn black.",
     introGoal: "Turn {target}% of the field black to win the level!",
-    introGo: "Let's go!"
+    introGo: "Let's go!",
+    bestLabel: "Best:",
+    bestEasy: "Best Easy:",
+    bestNormal: "Normal:",
+    quit: "Leave match",
+    menu: "Game menu"
   },
   es: {
     title: "JezzBall",
     pitch:
       "Divide el terreno con tus muros y encierra los átomos: ¡conquista el 75 % de la superficie (66 % en Fácil)!",
-    best: "Récord: {best}",
     back: "Volver",
     options: "Opciones",
     close: "Cerrar",
@@ -150,13 +155,17 @@ const STRINGS = {
     continueInfo: "Nivel {level} · {mode} · Puntos {score}",
     easy: "Fácil",
     normal: "Normal",
-    bestBoth: "Récord Fácil: {easy} · Normal: {normal}",
     introTitle: "Cómo jugar",
     introWall: "Desliza o toca una casilla: un muro crece en ambos sentidos.",
     introTrap:
       "Si un átomo toca el muro mientras crece, se rompe. Las zonas sin átomos se vuelven negras.",
     introGoal: "¡Pinta de negro el {target} % del terreno para ganar el nivel!",
-    introGo: "¡Vamos!"
+    introGo: "¡Vamos!",
+    bestLabel: "Récord:",
+    bestEasy: "Récord Fácil:",
+    bestNormal: "Normal:",
+    quit: "Salir de la partida",
+    menu: "Menú del juego"
   }
 };
 

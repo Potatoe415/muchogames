@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -19,6 +20,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -35,6 +37,19 @@
           >
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
         ></a>
+        <!-- In a match: back to the Game Dashboard, after game-session.js asks. -->
+        <button
+          type="button"
+          class="back-button"
+          data-id="jezzball-quit-button"
+          data-match-quit
+          data-tv-back
+          aria-label="Quitter la partie"
+          data-i18n-aria="quit"
+          hidden
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">JezzBall</h1>
@@ -156,15 +171,24 @@
     </div>
 
     <main class="jb-app" data-id="jezzball-app">
-      <section class="jb-start" data-id="jezzball-start-screen">
+      <section class="jb-start" data-id="jezzball-start-screen" data-tv-screen>
         <div class="jb-card">
           <h2 class="jb-logo" data-i18n="title">JezzBall</h2>
           <p class="jb-pitch" data-i18n="pitch"></p>
-          <p class="jb-best" data-id="jezzball-start-best"></p>
+          <p class="jb-best" data-id="jezzball-start-best">
+            <span data-id="jezzball-best-score">
+              <span data-i18n="bestEasy">Record Facile :</span>
+              <strong data-id="jezzball-best-score-easy">0</strong>
+              ·
+              <span data-i18n="bestNormal">Normal :</span>
+              <strong data-id="jezzball-best-score-normal">0</strong>
+            </span>
+          </p>
           <button
             type="button"
             class="jb-button jb-continue"
             data-id="jezzball-continue-button"
+            data-tv-focus
             hidden
           >
             <span data-i18n="resume">Reprendre</span>
@@ -176,6 +200,7 @@
               class="jb-button jb-mode jb-mode-easy"
               data-id="jezzball-start-easy"
               data-difficulty="easy"
+              data-tv-focus
             >
               <span class="jb-mode-icon" aria-hidden="true">🐢</span>
               <span data-i18n="easy">Facile</span>
@@ -193,13 +218,16 @@
         </div>
       </section>
 
-      <section class="jb-stage" data-id="jezzball-stage" hidden>
+      <section class="jb-stage" data-id="jezzball-stage" data-tv-screen hidden>
         <div class="jb-board" data-id="jezzball-board">
           <canvas
             class="jb-canvas"
             data-id="jezzball-canvas"
             data-axis="h"
-            role="img"
+            role="application"
+            tabindex="0"
+            data-tv-focus
+            data-tv-keys="left right up down"
             data-i18n-aria="canvas"
           ></canvas>
         </div>
@@ -222,7 +250,12 @@
           </div>
           <div class="jb-stat" data-id="jezzball-hud-score">
             <span class="jb-stat-label" data-i18n="score">Score</span>
-            <span class="jb-stat-value" data-hud="score">0</span>
+            <span
+              class="jb-stat-value"
+              data-hud="score"
+              data-id="jezzball-score"
+              >0</span
+            >
           </div>
           <div class="jb-stat jb-stat-wide" data-id="jezzball-hud-best">
             <span class="jb-stat-label" data-i18n="bestShort">Record</span>
@@ -248,7 +281,7 @@
           </button>
         </div>
 
-        <div class="jb-overlay" data-id="jezzball-intro" hidden>
+        <div class="jb-overlay" data-id="jezzball-intro" data-tv-overlay hidden>
           <div class="jb-card jb-intro">
             <h2 class="jb-overlay-title" data-i18n="introTitle">
               Comment jouer
@@ -356,12 +389,19 @@
               type="button"
               class="jb-button"
               data-id="jezzball-intro-button"
+              data-tv-focus
+              data-tv-back
               data-i18n="introGo"
             ></button>
           </div>
         </div>
 
-        <div class="jb-overlay" data-id="jezzball-level-cleared" hidden>
+        <div
+          class="jb-overlay"
+          data-id="jezzball-level-cleared"
+          data-tv-overlay
+          hidden
+        >
           <div class="jb-card">
             <h2 class="jb-overlay-title" data-id="jezzball-cleared-title"></h2>
             <p data-id="jezzball-cleared-area"></p>
@@ -372,35 +412,80 @@
               type="button"
               class="jb-button"
               data-id="jezzball-next-level-button"
+              data-tv-focus
               data-i18n="next"
+            ></button>
+            <button
+              type="button"
+              class="jb-button jb-button-soft"
+              data-id="jezzball-cleared-menu-button"
+              data-match-quit
+              data-tv-back
+              data-i18n="menu"
             ></button>
           </div>
         </div>
 
-        <div class="jb-overlay" data-id="jezzball-game-over" hidden>
+        <div
+          class="jb-overlay"
+          data-id="jezzball-game-over"
+          data-tv-overlay
+          hidden
+        >
           <div class="jb-card">
             <h2 class="jb-overlay-title" data-i18n="gameOver"></h2>
             <p data-id="jezzball-over-reason"></p>
             <p data-id="jezzball-over-stats"></p>
             <p class="jb-score-line" data-id="jezzball-over-score"></p>
-            <p class="jb-best" data-id="jezzball-over-best"></p>
+            <p class="jb-best" data-id="jezzball-over-best">
+              <span data-i18n="bestLabel">Record :</span>
+              <strong data-id="jezzball-final-best-score">0</strong>
+              <span
+                class="jb-new-best"
+                data-id="jezzball-new-best"
+                data-i18n="newBest"
+                hidden
+              ></span>
+            </p>
             <button
               type="button"
               class="jb-button"
               data-id="jezzball-replay-button"
+              data-tv-focus
               data-i18n="replay"
+            ></button>
+            <button
+              type="button"
+              class="jb-button jb-button-soft"
+              data-id="jezzball-over-menu-button"
+              data-tv-back
+              data-i18n="menu"
             ></button>
           </div>
         </div>
 
-        <div class="jb-overlay" data-id="jezzball-paused" hidden>
+        <div
+          class="jb-overlay"
+          data-id="jezzball-paused"
+          data-tv-overlay
+          hidden
+        >
           <div class="jb-card">
             <h2 class="jb-overlay-title" data-i18n="paused"></h2>
             <button
               type="button"
               class="jb-button"
               data-id="jezzball-resume-button"
+              data-tv-focus
+              data-tv-back
               data-i18n="resume"
+            ></button>
+            <button
+              type="button"
+              class="jb-button jb-button-soft"
+              data-id="jezzball-paused-menu-button"
+              data-match-quit
+              data-i18n="menu"
             ></button>
           </div>
         </div>

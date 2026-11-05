@@ -50,9 +50,8 @@ function renderOverlayText() {
   $("jezzball-over-stats").textContent = t("overStats", s);
   $("jezzball-over-score").textContent = t("scoreLine", s);
   $("jezzball-cleared-time").hidden = !s.timed;
-  $("jezzball-over-best").textContent = page.newBest
-    ? t("newBest")
-    : t("best", { best: page.best[s.difficulty] });
+  $("jezzball-final-best-score").textContent = String(page.best[s.difficulty]);
+  $("jezzball-new-best").hidden = !page.newBest;
 }
 
 function renderContinue() {
@@ -68,7 +67,8 @@ function renderContinue() {
 }
 
 function renderStart() {
-  $("jezzball-start-best").textContent = t("bestBoth", page.best);
+  $("jezzball-best-score-easy").textContent = String(page.best.easy);
+  $("jezzball-best-score-normal").textContent = String(page.best.normal);
   const { target } = levelConfig(1, "easy");
   $("jezzball-intro-step-goal").textContent = t("introGoal", { target });
 }
@@ -113,6 +113,8 @@ function showOverlay(name) {
 function showScreen(playing) {
   $("jezzball-start-screen").hidden = playing;
   $("jezzball-stage").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("jezzball-quit-button").hidden = !playing;
 }
 
 function onLevelCleared(summary) {
@@ -168,6 +170,7 @@ async function startMatch(difficulty) {
   if (page.starting) return;
   page.difficulty = difficulty;
   prefs.saveDifficulty(difficulty);
+  window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
@@ -187,6 +190,7 @@ function resumeMatch() {
   const saved = loadMatch();
   page.saved = saved;
   if (!saved) return renderContinue();
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   page.difficulty = saved.config.difficulty;
   mountGame(saved, page.difficulty);
@@ -236,6 +240,12 @@ function setLanguage(lang) {
   applyLanguage();
 }
 
+// The ✖ asks "Leave match?" first (game-session.js): the atoms wait.
+function pauseBeforeQuit(event) {
+  const quit = event.target.closest?.('[data-id="jezzball-quit-button"]');
+  if (quit && page.game && page.overlay === null) showOverlay("paused");
+}
+
 function onVisibility() {
   if (!document.hidden) return;
   saveMatch();
@@ -264,6 +274,13 @@ function bindPage() {
     startMatch(page.difficulty)
   );
   $("jezzball-intro-button").addEventListener("click", closeIntro);
+  [
+    "jezzball-quit-button",
+    "jezzball-paused-menu-button",
+    "jezzball-cleared-menu-button",
+    "jezzball-over-menu-button"
+  ].forEach((id) => $(id).addEventListener("click", returnToStart));
+  window.addEventListener("click", pauseBeforeQuit, true);
   $("jezzball-resume-button").addEventListener("click", () =>
     showOverlay(null)
   );

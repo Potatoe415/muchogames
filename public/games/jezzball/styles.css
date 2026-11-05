@@ -1,5 +1,14 @@
 /* JezzBall: dark retro skin over the shared header. The play area locks
-   touch gestures (no scroll, pull-to-refresh, zoom or text selection). */
+   touch gestures (no scroll, pull-to-refresh, zoom or text selection).
+   Mobile first; sizes grow with the screen (vmin) up to a 4K TV. */
+[hidden] {
+  display: none !important;
+}
+
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
 html,
 body {
   height: 100%;
@@ -38,12 +47,14 @@ body {
 }
 
 .jb-chip {
-  min-width: 56px;
-  padding: 8px 14px;
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
   border: 2px solid #d1d5db;
-  border-radius: 10px;
+  border-radius: 0.65em;
   background: #ffffff;
   color: #1f2937;
+  font: inherit;
   font-weight: 700;
   cursor: pointer;
 }
@@ -54,11 +65,18 @@ body {
   background: #dbe8ff;
 }
 
+/* Android bars can cover the bottom even when the safe-area inset is 0:
+   nothing essential in the bottom 40px nor in the 24px side strips. */
 .jb-app {
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
+  box-sizing: border-box;
+  padding: 8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  background: #0d1320;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
@@ -73,9 +91,10 @@ body {
 /* --- Start screen and overlay cards --- */
 .jb-start {
   flex: 1;
+  min-width: 0;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: 0;
   background:
     repeating-linear-gradient(
       0deg,
@@ -91,34 +110,35 @@ body {
 }
 
 .jb-card {
-  width: min(92vw, 380px);
-  padding: 24px 20px;
+  box-sizing: border-box;
+  width: min(100%, 24em);
+  padding: 1.4em 1.2em;
   border: 2px solid #34415c;
-  border-radius: 16px;
+  border-radius: 1em;
   background: #0a0f19;
   text-align: center;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 
 .jb-card p {
-  margin: 0 0 10px;
+  margin: 0 0 0.6em;
   line-height: 1.4;
   color: #c4cddb;
 }
 
 .jb-logo {
-  margin: 0 0 12px;
-  font-size: clamp(2rem, 9vw, 2.8rem);
+  margin: 0 0 0.4em;
+  font-size: 2.6em;
   font-weight: 900;
   color: #ffffff;
   text-shadow:
-    3px 3px 0 #e8413c,
-    6px 6px 0 #2f6fe0;
+    0.07em 0.07em 0 #e8413c,
+    0.14em 0.14em 0 #2f6fe0;
 }
 
 .jb-overlay-title {
-  margin: 0 0 12px;
-  font-size: 1.5rem;
+  margin: 0 0 0.5em;
+  font-size: 1.5em;
   color: #ffffff;
 }
 
@@ -127,49 +147,66 @@ body {
   color: #ffd23f !important;
 }
 
+.jb-new-best {
+  display: block;
+}
+
 .jb-score-line {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 800;
   color: #ffffff !important;
 }
 
 .jb-button {
-  margin-top: 8px;
-  min-width: 180px;
-  min-height: 52px;
-  padding: 12px 24px;
+  margin: 0.5em 0.2em 0;
+  min-width: 10em;
+  min-height: 2.9em;
+  padding: 0.6em 1.3em;
   border: none;
-  border-radius: 14px;
+  border-radius: 0.8em;
   background: #e8413c;
   color: #ffffff;
-  font-size: 1.15rem;
+  font: inherit;
+  font-size: 1.1em;
   font-weight: 800;
-  box-shadow: 0 4px 0 #8f1d19;
+  box-shadow: 0 0.2em 0 #8f1d19;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .jb-button:active {
-  transform: translateY(3px);
-  box-shadow: 0 1px 0 #8f1d19;
+  transform: translateY(0.15em);
+  box-shadow: 0 0.05em 0 #8f1d19;
+}
+
+.jb-button-soft {
+  background: #34415c;
+  box-shadow: 0 0.2em 0 #1b2335;
+}
+
+.jb-app button:focus-visible,
+.jb-canvas:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
 }
 
 .jb-start .jb-button {
   display: block;
-  margin: 10px auto 0;
+  margin: 0.6em auto 0;
 }
 
 .jb-continue {
   background: #2f6fe0;
-  box-shadow: 0 4px 0 #173d85;
+  box-shadow: 0 0.2em 0 #173d85;
 }
 
 .jb-continue:active {
-  box-shadow: 0 1px 0 #173d85;
+  box-shadow: 0 0.05em 0 #173d85;
 }
 
 .jb-continue-info {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.75em;
   font-weight: 600;
   opacity: 0.85;
 }
@@ -178,30 +215,30 @@ body {
 .jb-modes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 0.6em;
+  margin-top: 0.7em;
 }
 
 .jb-start .jb-mode {
   min-width: 0;
-  min-height: 84px;
+  min-height: 4.6em;
   margin: 0;
-  padding: 10px 8px;
+  padding: 0.5em;
 }
 
 .jb-mode-icon {
   display: block;
-  font-size: 1.9rem;
+  font-size: 1.7em;
   line-height: 1.1;
 }
 
 .jb-mode-easy {
   background: #3fae4a;
-  box-shadow: 0 4px 0 #1f6a27;
+  box-shadow: 0 0.2em 0 #1f6a27;
 }
 
 .jb-mode-easy:active {
-  box-shadow: 0 1px 0 #1f6a27;
+  box-shadow: 0 0.05em 0 #1f6a27;
 }
 
 /* --- Easy-mode help: three illustrated steps --- */
@@ -214,20 +251,20 @@ body {
 
 .jb-intro-steps li {
   display: grid;
-  grid-template-columns: 84px 1fr;
-  gap: 12px;
+  grid-template-columns: 5.25em 1fr;
+  gap: 0.75em;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
 }
 
 .jb-intro-steps p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.95em;
 }
 
 .jb-intro-art {
-  width: 84px;
-  height: 56px;
+  width: 5.25em;
+  height: 3.5em;
 }
 
 /* --- Play stage: board + HUD (below in portrait, right side in landscape) --- */
@@ -268,18 +305,18 @@ body {
 .jb-hud {
   flex: 0 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(96px, 30%);
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(6em, 30%);
   grid-template-rows: auto auto;
-  gap: 6px;
-  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
-  background: #0a0f19;
+  gap: 0.4em;
+  padding: 0.5em 0 0;
+  background: #0d1320;
   border-top: 1px solid #222c40;
 }
 
 .jb-stat {
   min-width: 0;
-  padding: 4px 6px;
-  border-radius: 8px;
+  padding: 0.25em 0.4em;
+  border-radius: 0.5em;
   background: #151d2d;
   text-align: center;
 }
@@ -299,7 +336,7 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   font:
-    800 clamp(0.85rem, 3.6vw, 1.2rem) / 1.2 ui-monospace,
+    800 1.1em / 1.2 ui-monospace,
     "SFMono-Regular",
     Consolas,
     monospace;
@@ -307,7 +344,7 @@ body {
 }
 
 .jb-stat-value[data-hud="area"] {
-  font-size: clamp(0.72rem, 3.1vw, 1.2rem);
+  font-size: 0.95em;
 }
 
 .jb-stat.is-urgent .jb-stat-value {
@@ -325,12 +362,13 @@ body {
 .jb-axis {
   grid-column: 4;
   grid-row: 1 / span 2;
-  min-height: 84px;
-  padding: 6px 8px;
+  min-height: 4.6em;
+  padding: 0.3em 0.5em;
   border: 3px solid #e8413c;
-  border-radius: 16px;
+  border-radius: 1em;
   background: #2a1414;
   color: #ffffff;
+  font: inherit;
   font-weight: 800;
   cursor: pointer;
   touch-action: manipulation;
@@ -350,14 +388,14 @@ body {
 
 .jb-axis-icon {
   display: block;
-  font-size: 2.6rem;
+  font-size: 2.2em;
   line-height: 1;
 }
 
 .jb-axis-label {
   display: block;
-  margin-top: 2px;
-  font-size: 0.7rem;
+  margin-top: 0.1em;
+  font-size: 0.65em;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -379,7 +417,8 @@ body {
   z-index: 5;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 0.5em;
+  overflow-y: auto;
   background: rgba(6, 9, 16, 0.72);
 }
 
@@ -389,17 +428,17 @@ body {
   }
 
   .jb-hud {
-    width: clamp(150px, 20vw, 210px);
+    width: max(9.5em, 18vw);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
     align-content: center;
-    padding: 10px calc(10px + env(safe-area-inset-right)) 10px 10px;
+    padding: 0 0 0 0.6em;
     border-top: 0;
     border-left: 1px solid #222c40;
   }
 
   .jb-stat {
-    padding: 6px 4px;
+    padding: 0.35em 0.25em;
   }
 
   .jb-stat-wide {
@@ -409,7 +448,136 @@ body {
   .jb-axis {
     grid-column: 1 / -1;
     grid-row: auto;
-    min-height: 92px;
-    margin-top: 4px;
+    min-height: 5em;
+    margin-top: 0.25em;
   }
+}
+
+/* Landscape phones are ~360px tall: compact HUD and cards. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .jb-card {
+    width: min(100%, 30em);
+    padding: 0.6em 1em 0.8em;
+  }
+
+  .jb-card p {
+    margin-bottom: 0.25em;
+  }
+
+  .jb-logo {
+    font-size: 1.8em;
+    margin-bottom: 0.1em;
+  }
+
+  /* The pitch is repeated in the rules; the buttons need the room. */
+  .jb-pitch {
+    display: none;
+  }
+
+  .jb-intro {
+    width: min(100%, 38em);
+  }
+
+  .jb-intro-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.6em;
+  }
+
+  .jb-intro-steps li {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.3em;
+    margin: 0;
+    text-align: center;
+  }
+
+  .jb-intro-steps p {
+    font-size: 0.8em;
+  }
+
+  .jb-overlay-title {
+    margin-bottom: 0.2em;
+    font-size: 1.25em;
+  }
+
+  .jb-button {
+    min-height: 2.5em;
+    margin-top: 0.3em;
+  }
+
+  .jb-start .jb-mode {
+    min-height: 3.4em;
+  }
+
+  .jb-mode-icon {
+    font-size: 1.3em;
+  }
+
+  .jb-intro-steps li {
+    margin-bottom: 0.3em;
+  }
+
+  .jb-hud {
+    gap: 0.25em;
+  }
+
+  .jb-stat {
+    padding: 0.1em 0.25em;
+  }
+
+  .jb-stat-label {
+    font-size: 0.55rem;
+  }
+
+  .jb-axis {
+    min-height: 3.6em;
+  }
+
+  .jb-axis-icon {
+    font-size: 1.6em;
+  }
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: the header grows with the
+   screen and everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .nav-title {
+    font-size: max(1.1rem, 3.4dvh);
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .jb-app {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .jb-card {
+    width: min(100%, 30em);
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: 0.3rem solid #ffffff !important;
+  outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.6rem rgba(47, 111, 224, 0.9);
 }

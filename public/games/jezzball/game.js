@@ -135,7 +135,8 @@ export function createGame(options) {
       swipe: () => state.swipe,
       toggle: () => toggleAxis(game),
       twoFinger: () => twoFingerToggle(game),
-      hover: (cell) => (hover = cell)
+      hover: (cell) => (hover = cell),
+      gridSize: () => state.grid
     }
   });
 

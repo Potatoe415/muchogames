@@ -1,9 +1,67 @@
 // Pointer, wheel and keyboard controls. Left click / one-finger tap on the
 // grid builds a wall; right click, wheel, Space, the axis button or a
 // second finger flip the axis. Swipe mode (touch only): a swipe picks the
-// axis, a plain tap builds on release along the active axis. Returns a
-// function removing every listener.
+// axis, a plain tap builds on release along the active axis. Keyboard / TV
+// remote: the focused canvas moves a cursor with the arrows and builds with
+// Enter; at a grid edge the arrow is left to tv-remote.js so the focus can
+// reach the axis button and the header. Returns a function removing every
+// listener.
 const INTERACTIVE = "button, a, input, select, textarea, [contenteditable]";
+const ARROWS = {
+  ArrowLeft: [-1, 0],
+  ArrowRight: [1, 0],
+  ArrowUp: [0, -1],
+  ArrowDown: [0, 1]
+};
+
+// Directions the canvas still handles from this cell (data-tv-keys).
+function openKeys(cursor, size) {
+  const keys = [];
+  if (cursor.x > 0) keys.push("left");
+  if (cursor.x < size.cols - 1) keys.push("right");
+  if (cursor.y > 0) keys.push("up");
+  if (cursor.y < size.rows - 1) keys.push("down");
+  return keys.join(" ");
+}
+
+function bindCursor(canvas, actions) {
+  const cursor = { x: -1, y: -1 };
+  const clamp = (size) => {
+    if (cursor.x < 0) {
+      cursor.x = Math.floor(size.cols / 2);
+      cursor.y = Math.floor(size.rows / 2);
+    }
+    cursor.x = Math.min(Math.max(cursor.x, 0), size.cols - 1);
+    cursor.y = Math.min(Math.max(cursor.y, 0), size.rows - 1);
+    canvas.dataset.tvKeys = openKeys(cursor, size);
+  };
+  const onFocus = () => {
+    clamp(actions.gridSize());
+    actions.hover({ ...cursor });
+  };
+  const onKey = (event) => {
+    const size = actions.gridSize();
+    if (event.key === "Enter") {
+      event.preventDefault();
+      actions.unlock();
+      clamp(size);
+      actions.build(cursor.x, cursor.y);
+      return;
+    }
+    const arrow = ARROWS[event.key];
+    if (!arrow || event.defaultPrevented) return;
+    event.preventDefault();
+    cursor.x += arrow[0];
+    cursor.y += arrow[1];
+    clamp(size);
+    actions.hover({ ...cursor });
+  };
+  return [
+    [canvas, "focus", onFocus],
+    [canvas, "blur", () => actions.hover(null)],
+    [canvas, "keydown", onKey]
+  ];
+}
 const WHEEL_GAP_MS = 220;
 const SWIPE_PX = 14;
 const PREVIEW_PX = 5;
@@ -141,7 +199,8 @@ export function bindInput({ canvas, root, axisButton, toCell, actions }) {
     [root, "dblclick", block],
     [root, "touchmove", block],
     [axisButton, "click", onAxis],
-    [window, "keydown", onKey]
+    [window, "keydown", onKey],
+    ...bindCursor(canvas, actions)
   ];
   listeners.forEach(([target, type, fn]) =>
     target.addEventListener(type, fn, { passive: false })
