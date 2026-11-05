@@ -2,6 +2,10 @@
    pixel-perfect window. Portrait: board, compact status bar, D-pad. Landscape
    / desktop: board on the left, status panel on the right. The play area
    locks touch gestures (no scroll, pull-to-refresh, zoom or selection). */
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   height: 100%;
@@ -39,11 +43,18 @@ body {
   gap: 8px;
 }
 
+/* Android bars can cover the bottom even when the safe-area inset is 0.
+   Sizes follow the screen height (TV). */
 .cc-app {
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
+  box-sizing: border-box;
+  padding: 0 max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  font-size: max(16px, 2.4dvh);
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
@@ -60,17 +71,30 @@ body {
 }
 
 /* --- Start screen --- */
+/* The start window fits the screen; only the level list scrolls. */
 .cc-start {
   flex: 1;
-  display: grid;
-  place-items: center;
-  padding: 16px;
-  overflow: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0 0;
   touch-action: pan-y;
 }
 
 .cc-start .cc-window {
-  width: min(94vw, 420px);
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 26em);
+  max-height: 100%;
+  min-height: 0;
+}
+
+.cc-start .cc-window-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .cc-logo {
@@ -83,6 +107,7 @@ body {
 .cc-logo-tile {
   width: 64px;
   height: 64px;
+  flex: none;
   background: url("assets/tiles.png") 0 0 / 832px 1024px no-repeat;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
@@ -110,7 +135,8 @@ body {
 }
 
 .cc-levels {
-  max-height: min(40dvh, 320px);
+  flex: 1 1 auto;
+  min-height: 3em;
   overflow-y: auto;
   overscroll-behavior: contain;
   touch-action: pan-y;
@@ -126,17 +152,18 @@ body {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  min-height: 40px;
-  padding: 6px 8px;
+  min-height: max(40px, 2.5em);
+  padding: 0.4em 0.5em;
   border: 0;
   background: transparent;
-  font: 700 0.85rem var(--cc-font);
+  font: 700 0.85em var(--cc-font);
   text-align: left;
   cursor: pointer;
 }
 
 .cc-level:hover:not(:disabled),
-.cc-level:focus-visible {
+.cc-level:focus-visible,
+html.tv .cc-level:focus {
   background: var(--cc-navy);
   color: #ffffff;
   outline: none;
@@ -218,7 +245,7 @@ body {
   border: 1px solid #ffffff;
   background: #000000;
   color: #ffff00;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: 700;
   line-height: 1.3;
   text-align: center;
@@ -232,15 +259,17 @@ body {
   z-index: 5;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 8px;
 }
 
 .cc-dialog {
-  width: min(92vw, 360px);
+  width: min(100%, 22em);
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .cc-dialog-title {
-  font-size: 1.15rem;
+  font-size: 1.15em;
   font-weight: 700;
 }
 
@@ -250,7 +279,7 @@ body {
   list-style: none;
   background: #ffffff;
   box-shadow: var(--cc-sunken);
-  font-size: 0.85rem;
+  font-size: 0.85em;
   line-height: 1.5;
   text-align: left;
 }
@@ -262,6 +291,21 @@ body {
   gap: 8px;
 }
 
+.cc-win-best {
+  font-weight: 700;
+}
+
+/* Pause menu: one column, so the remote's Up / Down walk it in order. */
+.cc-dialog-stack {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.cc-dialog-stack .cc-btn {
+  min-width: min(100%, 10em);
+}
+
 .cc-load-error {
   position: absolute;
   left: 50%;
@@ -270,4 +314,90 @@ body {
   margin: 0;
   padding: 12px;
   transform: translateX(-50%);
+}
+
+/* Short landscape phones (~360px tall): level list on the right. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .cc-start {
+    padding-top: 4px;
+  }
+
+  .cc-start .cc-window {
+    width: min(100%, 40em);
+    height: 100%;
+  }
+
+  .cc-start .cc-window-body {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto auto minmax(0, 1fr);
+    grid-auto-flow: column;
+    column-gap: 12px;
+    padding: 8px 10px;
+  }
+
+  .cc-logo,
+  .cc-pitch {
+    display: none;
+  }
+
+  .cc-start .cc-window-body > :not(.cc-section-title, .cc-levels) {
+    grid-column: 1;
+  }
+
+  .cc-section-title {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .cc-levels {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    margin: 0;
+  }
+
+  .cc-start .cc-window-body p {
+    margin-bottom: 6px;
+  }
+}
+
+/* Desktop and TV: header buttons follow the screen, 3% overscan. */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(16px, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .nav-title {
+    font-size: max(1.25rem, 3.6dvh);
+  }
+
+  .cc-app {
+    padding: 0 max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .cc-start .cc-window {
+    width: min(100%, 32em);
+  }
+}
+
+html.tv :focus {
+  outline: max(4px, 0.5dvh) solid #ffcc00 !important;
+  outline-offset: max(2px, 0.3dvh);
 }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="win31.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="panel.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -22,6 +23,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -149,7 +151,7 @@
     </div>
 
     <main class="cc-app" data-id="chips-app">
-      <section class="cc-start" data-id="chips-start-screen">
+      <section class="cc-start" data-id="chips-start-screen" data-tv-screen>
         <div class="cc-window" data-id="chips-start-window">
           <div class="cc-titlebar" data-i18n="title">Chip's Challenge</div>
           <div class="cc-window-body">
@@ -163,6 +165,7 @@
               type="button"
               class="cc-btn cc-btn-default cc-continue"
               data-id="chips-continue-button"
+              data-tv-focus
               hidden
             ></button>
             <p class="cc-section-title" data-i18n="levelsTitle">
@@ -217,7 +220,7 @@
         </div>
       </section>
 
-      <section class="cc-stage" data-id="chips-stage" hidden>
+      <section class="cc-stage" data-id="chips-stage" data-tv-screen hidden>
         <div class="cc-board-host" data-id="chips-board-host">
           <div class="cc-board-frame" data-id="chips-board-frame">
             <canvas
@@ -225,6 +228,9 @@
               data-id="chips-board"
               role="img"
               data-i18n-aria="board"
+              tabindex="0"
+              data-tv-focus
+              data-tv-keys="up down left right"
             ></canvas>
             <div class="cc-title-card" data-id="chips-title-card">
               <span data-id="chips-title-level"></span>
@@ -330,6 +336,7 @@
                 type="button"
                 class="cc-btn"
                 data-id="chips-pause-button"
+                data-tv-back
                 data-i18n="pause"
               >
                 Pause (P)
@@ -338,7 +345,7 @@
           </div>
         </aside>
 
-        <div class="cc-overlay" data-id="chips-paused" hidden>
+        <div class="cc-overlay" data-id="chips-paused" data-tv-overlay hidden>
           <div class="cc-window cc-dialog">
             <div class="cc-titlebar" data-i18n="title">Chip's Challenge</div>
             <div class="cc-window-body">
@@ -347,15 +354,36 @@
                 type="button"
                 class="cc-btn cc-btn-default"
                 data-id="chips-resume-button"
+                data-tv-focus
+                data-tv-back
                 data-i18n="resume"
               >
                 Reprendre
               </button>
+              <div class="cc-dialog-buttons cc-dialog-stack">
+                <button
+                  type="button"
+                  class="cc-btn"
+                  data-id="chips-paused-restart-button"
+                  data-i18n="restart"
+                >
+                  Recommencer (R)
+                </button>
+                <button
+                  type="button"
+                  class="cc-btn"
+                  data-id="chips-paused-levels-button"
+                  data-match-quit
+                  data-i18n="levels"
+                >
+                  Niveaux
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="cc-overlay" data-id="chips-death" hidden>
+        <div class="cc-overlay" data-id="chips-death" data-tv-overlay hidden>
           <div class="cc-window cc-dialog" role="alertdialog">
             <div class="cc-titlebar" data-i18n="title">Chip's Challenge</div>
             <div class="cc-window-body">
@@ -365,25 +393,38 @@
                 type="button"
                 class="cc-btn cc-btn-default"
                 data-id="chips-retry-button"
+                data-tv-focus
                 data-i18n="retry"
               >
                 Réessayer
+              </button>
+              <button
+                type="button"
+                class="cc-btn"
+                data-id="chips-death-levels-button"
+                data-match-quit
+                data-tv-back
+                data-i18n="levels"
+              >
+                Niveaux
               </button>
             </div>
           </div>
         </div>
 
-        <div class="cc-overlay" data-id="chips-win" hidden>
+        <div class="cc-overlay" data-id="chips-win" data-tv-overlay hidden>
           <div class="cc-window cc-dialog" role="alertdialog">
             <div class="cc-titlebar" data-i18n="title">Chip's Challenge</div>
             <div class="cc-window-body">
               <p class="cc-dialog-title" data-i18n="winTitle"></p>
               <ul class="cc-win-lines" data-id="chips-win-lines"></ul>
+              <p class="cc-win-best" data-id="chips-final-best-score"></p>
               <div class="cc-dialog-buttons">
                 <button
                   type="button"
                   class="cc-btn cc-btn-default"
                   data-id="chips-next-button"
+                  data-tv-focus
                   data-i18n="next"
                 >
                   Niveau suivant
@@ -392,6 +433,8 @@
                   type="button"
                   class="cc-btn"
                   data-id="chips-win-levels-button"
+                  data-tv-focus
+                  data-tv-back
                   data-i18n="levels"
                 >
                   Niveaux

@@ -197,6 +197,7 @@ function mountGame(level, saved = null) {
 
 async function startLevel(level) {
   if (page.starting || !page.progress.unlocked.has(level)) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   endMatch();
   const allowed = await shell.MuchogamesMatch.start(GAME_ID);
@@ -213,6 +214,7 @@ function continueGame() {
     const next = nextLevel(page.progress);
     return next ? startLevel(next) : applyLanguage();
   }
+  window.MuchogamesTv?.play();
   shell.MuchogamesMatch.resume(GAME_ID);
   mountGame(saved.level, saved);
 }
@@ -241,6 +243,17 @@ function submitPassword(event) {
   unlock(page.progress, level);
   applyLanguage();
   startLevel(level);
+}
+
+// The TV remote leaves text fields alone: up goes back to the level list,
+// down / right to OK.
+function leavePassword(event) {
+  if (!window.MuchogamesTv?.isOn()) return;
+  const up = event.key === "ArrowUp";
+  if (!up && event.key !== "ArrowDown" && event.key !== "ArrowRight") return;
+  event.preventDefault();
+  const level = $("chips-level-list").querySelector("button:not(:disabled)");
+  (up ? level : $("chips-password-submit"))?.focus();
 }
 
 function onButton(id, run) {
@@ -273,6 +286,7 @@ function bindPage() {
     if (button && !button.disabled) startLevel(Number(button.dataset.level));
   });
   $("chips-password-form").addEventListener("submit", submitPassword);
+  $("chips-password-input").addEventListener("keydown", leavePassword);
   bindButtons();
   bindLifecycle();
 }
@@ -289,6 +303,12 @@ function bindButtons() {
   onButton("chips-pause-button", togglePause);
   onButton("chips-levels-button", returnToSelect);
   onButton("chips-resume-button", () => showOverlay(null));
+  onButton("chips-paused-restart-button", () => {
+    restartKey();
+    if (page.overlay === "paused") showOverlay(null);
+  });
+  onButton("chips-paused-levels-button", returnToSelect);
+  onButton("chips-death-levels-button", returnToSelect);
   onButton("chips-retry-button", retry);
   onButton("chips-next-button", () => startLevel(page.level + 1));
   onButton("chips-win-levels-button", returnToSelect);
@@ -313,5 +333,7 @@ loadLevels()
   .then(() => {
     page.progress = loadProgress();
     applyLanguage();
+    // The level list arrives after the TV remote's first focus.
+    window.MuchogamesTv?.focusScreen();
   })
   .catch(() => ($("chips-levels-error").hidden = false));

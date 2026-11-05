@@ -64,6 +64,8 @@ function keyName(event) {
 
 function bindKeys(state, actions, on) {
   on(window, "keydown", (event) => {
+    // Already used, e.g. by the TV remote to move the focus between buttons.
+    if (event.defaultPrevented) return;
     if (event.target instanceof HTMLInputElement) return;
     if (event.ctrlKey || event.metaKey || event.altKey) return;
     const name = keyName(event);

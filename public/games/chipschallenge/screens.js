@@ -21,6 +21,8 @@ function levelButton(level, number, progress, t) {
   button.dataset.id = `chips-level-${number}`;
   button.dataset.level = String(number);
   button.disabled = !open;
+  // TV remote: lands on level 1 when there is no "Continue" button.
+  if (number === 1) button.dataset.tvFocus = "";
   const name = document.createElement("span");
   name.className = "cc-level-name";
   name.textContent = `${number}. ${level.title}`;

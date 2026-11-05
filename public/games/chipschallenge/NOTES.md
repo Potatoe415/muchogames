@@ -78,6 +78,15 @@ D-pad as static markup (`data-id` on each), kept out of JS on purpose.
   `chipschallenge-sound`, `chipschallenge-current` (below).
 - Start screen button: "Reprendre · niveau N" if a match is saved, else
   "Continuer · niveau last+1"; the level list scrolls to that level.
+- Pause dialog: Reprendre, Recommencer, Niveaux (`chips-paused-levels-button`,
+  `data-match-quit`). The death dialog also has Niveaux. Short landscape
+  phones hide the side panel's Recommencer / Niveaux (they are in Pause).
+- Win dialog: `chips-final-best-score` = the level's best score.
+- TV (`?tv=1`): the board canvas takes the focus with
+  `data-tv-keys="up down left right"` (arrows walk Chip); Back = Pause
+  (`data-tv-back`), then Back again resumes. In the password field the
+  arrows leave it (`leavePassword`). `input.js` ignores keydowns already
+  handled (`defaultPrevented`) so the remote never moves Chip by mistake.
 
 ## Match in progress (exact resume, decision 0054)
 

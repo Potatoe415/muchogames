@@ -32,6 +32,9 @@ export function renderDialogs(page, t) {
   if (page.death) $("chips-death-text").textContent = t(`death_${page.death}`);
   if (page.result) {
     fillList($("chips-win-lines"), winLines(page.result, page.progress, t));
+    $("chips-final-best-score").textContent = t("levelBest", {
+      value: page.progress.best[page.level]?.score ?? 0
+    });
     $("chips-next-button").hidden = page.result.last;
   }
 }

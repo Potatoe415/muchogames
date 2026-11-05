@@ -52,9 +52,9 @@
 }
 
 .cc-btn {
-  min-height: 44px;
-  padding: 6px 12px;
-  font: 700 0.9rem/1.15 var(--cc-font);
+  min-height: max(44px, 2.6em);
+  padding: 0.35em 0.75em;
+  font: 700 0.9em/1.15 var(--cc-font);
   touch-action: manipulation;
 }
 
@@ -71,14 +71,14 @@
 }
 
 .cc-btn-default {
-  min-width: 160px;
+  min-width: min(100%, 10em);
   border-width: 2px;
 }
 
 .cc-chip {
   min-width: 56px;
   padding: 8px 14px;
-  font: 700 0.95rem var(--cc-font);
+  font: 700 0.95em var(--cc-font);
 }
 
 .cc-chip.active,
@@ -95,7 +95,7 @@
   border-radius: 0;
   background: #ffffff;
   box-shadow: var(--cc-sunken);
-  font: 700 1rem var(--cc-font);
+  font: 700 1em var(--cc-font);
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }

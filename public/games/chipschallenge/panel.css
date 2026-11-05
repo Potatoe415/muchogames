@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+  padding: 6px 8px 0;
   border-top: 2px solid var(--cc-dark);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .cc-counter-label {
-  font-size: 0.6rem;
+  font-size: 0.6em;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -67,7 +67,7 @@
   background: #000000;
   color: #00ffff;
   box-shadow: var(--cc-sunken);
-  font-size: 0.68rem;
+  font-size: 0.68em;
   line-height: 1.3;
   text-align: left;
   touch-action: pan-y;
@@ -158,7 +158,7 @@
 }
 
 .cc-actions .cc-btn {
-  min-width: 140px;
+  min-width: 8.75em;
 }
 
 /* Portrait tablets: room for full-size counters. */
@@ -169,7 +169,7 @@
   }
 
   .cc-counter-label {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .cc-inventory {
@@ -180,7 +180,7 @@
   .cc-hint {
     width: 330px;
     max-height: 100px;
-    font-size: 0.85rem;
+    font-size: 0.85em;
   }
 }
 
@@ -194,7 +194,7 @@
     width: clamp(230px, 30vw, 300px);
     justify-content: center;
     gap: 12px;
-    padding: 8px calc(8px + env(safe-area-inset-right)) 8px 8px;
+    padding: 8px 0 0 8px;
     border-top: 0;
     border-left: 2px solid var(--cc-dark);
     overflow-y: auto;
@@ -219,7 +219,7 @@
   }
 
   .cc-counter-label {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .cc-led {
@@ -231,7 +231,7 @@
     width: 200px;
     height: 198px;
     max-height: none;
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .cc-inventory {
@@ -271,7 +271,7 @@
   }
 
   .cc-counter-label {
-    font-size: 0.6rem;
+    font-size: 0.6em;
   }
 
   .cc-led {
@@ -286,7 +286,7 @@
   .cc-hint {
     width: 128px;
     height: 112px;
-    font-size: 0.65rem;
+    font-size: 0.65em;
   }
 
   .cc-inventory {
@@ -305,7 +305,44 @@
   .cc-actions .cc-btn {
     min-height: 36px;
     padding: 4px 8px;
-    font-size: 0.75rem;
+    font-size: 0.75em;
+  }
+
+  /* Restart and Levels are in the pause menu: room for the D-pad. */
+  [data-id="chips-restart-button"],
+  [data-id="chips-levels-button"] {
+    display: none;
+  }
+}
+
+/* Desktop and TV: the panel grows with the screen height. */
+@media (min-width: 960px) and (min-height: 500px) {
+  .cc-side {
+    width: max(300px, 30dvh);
+    gap: 2dvh;
+  }
+
+  .cc-counter {
+    min-width: max(190px, 19dvh);
+  }
+
+  .cc-led {
+    width: max(102px, 9.6dvh);
+    height: max(56px, 5.3dvh);
+  }
+
+  .cc-inventory {
+    width: max(192px, 18dvh);
+    height: max(96px, 9dvh);
+  }
+
+  .cc-hint {
+    width: max(200px, 19dvh);
+    height: max(198px, 18dvh);
+  }
+
+  .cc-pad {
+    --pad: max(54px, 6dvh);
   }
 }
 
