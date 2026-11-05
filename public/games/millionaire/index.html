@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./tv.css" />
     <link rel="stylesheet" href="./tv-game.css" />
+    <script src="/shared/js/tv-remote.js"></script>
     <script src="./tv.js"></script>
-    <script src="./tv-nav.js" defer></script>
   </head>
   <body data-match-saved>
     <div class="app-shell">
@@ -18,9 +18,14 @@
       <div class="scanlines" aria-hidden="true"></div>
 
       <header class="topbar">
-        <button class="icon-button" id="homeShortcut" type="button" data-id="game-back-button" aria-label="Return to home screen">
-          <span class="icon">⌂</span>
-        </button>
+        <div class="topbar-start">
+          <button class="icon-button" id="homeShortcut" type="button" data-id="game-back-button" data-tv-back aria-label="Return to home screen">
+            <span class="icon">⌂</span>
+          </button>
+          <button class="icon-button ladder-toggle-button" id="ladderToggleButton" type="button" data-id="millionaire-ladder-button" aria-label="Afficher les paliers">
+            <span class="icon">i</span>
+          </button>
+        </div>
         <div class="brand-lockup">
           <img
             src="./assets/thumbnail.jpg"
@@ -31,7 +36,7 @@
           <h1 class="visually-hidden" id="brandTitle">Qui veut gagner des millions</h1>
         </div>
         <div class="topbar-actions">
-          <button class="icon-button is-hidden" id="restartShortcut" type="button" data-id="millionaire-restart-button" data-match-quit aria-label="Restart game">
+          <button class="icon-button is-hidden" id="restartShortcut" type="button" data-id="millionaire-restart-button" data-match-quit data-tv-back aria-label="Restart game">
             <span class="icon">↻</span>
           </button>
           <button
@@ -53,19 +58,24 @@
         <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options">
           <div class="options-panel-header">
             <span class="options-panel-title">Options</span>
-            <button type="button" class="options-panel-close" data-options-close aria-label="Fermer">×</button>
+            <button type="button" class="options-panel-close" data-options-close data-id="millionaire-options-close" aria-label="Fermer">×</button>
           </div>
           <div class="options-panel-body">
             <div class="options-panel-section" data-id="game-options-language">
               <label class="language-picker" for="languageSelect">
                 <span id="languageLabel">Language</span>
-                <select id="languageSelect">
+                <select id="languageSelect" data-id="millionaire-language-select">
                   <option value="fr">Francais</option>
                   <option value="en">English</option>
                   <option value="es">Espanol</option>
                   <option value="es-419">Espanol (Latam)</option>
                 </select>
               </label>
+            </div>
+            <div class="options-panel-section" data-id="millionaire-options-sound">
+              <button class="secondary-cta" id="musicToggleButton" type="button" data-id="millionaire-music-button" aria-pressed="true">
+                Musique : activée
+              </button>
             </div>
             <div class="options-panel-section" data-id="millionaire-options-tv">
               <button class="secondary-cta" id="tvModeButton" type="button" data-id="millionaire-tv-mode-button" aria-pressed="false">
@@ -81,7 +91,7 @@
       </div>
 
       <main class="layout">
-        <aside class="ladder-panel glass-panel" aria-label="Prize ladder">
+        <aside class="ladder-panel glass-panel" data-id="millionaire-ladder" aria-label="Prize ladder">
           <div class="ladder-header">
             <p class="eyebrow" id="ladderEyebrow">Progress</p>
             <h2 id="ladderTitle">15-Step Ladder</h2>
@@ -90,75 +100,75 @@
         </aside>
 
         <section class="stage">
-          <section class="screen active" id="startScreen">
+          <section class="screen active" id="startScreen" data-id="millionaire-dashboard-screen" data-tv-screen>
             <div class="hero-score glass-panel">
               <p class="hero-label" id="heroLabel">Top prize</p>
-              <div class="hero-prize">1 000 000 €</div>
-              <button class="primary-cta resume-cta" id="resumeGameButton" type="button" data-id="millionaire-resume-button" hidden>Resume</button>
-              <button class="primary-cta" id="startGameButton" type="button">Start Game</button>
+              <div class="hero-prize" data-id="millionaire-top-prize">1 000 000 €</div>
               <p class="hero-copy" id="heroCopy">15 questions. 4 lifelines. 2 guaranteed milestones.</p>
             </div>
 
             <div class="start-card glass-panel">
-            <div class="start-meta-row">
-              <p class="mode-tag" id="modeTag">Classic Mode</p>
-            </div>
+              <button class="primary-cta resume-cta" id="resumeGameButton" type="button" data-id="millionaire-resume-button" data-tv-focus hidden>Resume</button>
+              <div class="start-meta-row">
+                <p class="mode-tag" id="modeTag">Classic Mode</p>
+              </div>
 
               <div class="start-actions">
-                <button class="secondary-cta" id="toggleTimerButton" type="button" aria-pressed="false">
+                <button class="secondary-cta" id="toggleTimerButton" type="button" data-id="millionaire-timer-toggle" aria-pressed="false">
                   Timer: Off
                 </button>
+                <button class="primary-cta" id="startGameButton" type="button" data-id="millionaire-start-button" data-tv-focus>Start Game</button>
               </div>
             </div>
           </section>
 
-          <section class="screen" id="gameScreen" aria-labelledby="questionText">
+          <section class="screen" id="gameScreen" data-id="millionaire-play-screen" data-tv-screen aria-labelledby="questionText" hidden>
             <div class="game-header">
               <div class="headline-block">
                 <div class="eyebrow">
                   <span id="questionLabel">Question</span>
-                  <span id="questionCounter">1/15</span>
+                  <span id="questionCounter" data-id="millionaire-question-counter">1/15</span>
                   <span id="guaranteedLabel">Guaranteed</span>
                   <span id="guaranteedPrize">0 €</span>
                   <span id="nextLabel">Next</span>
                   <span id="nextPrize">200 €</span>
                 </div>
-                <div class="current-prize" id="currentPrize">100 €</div>
+                <div class="current-prize" id="currentPrize" data-id="millionaire-current-prize">100 €</div>
               </div>
 
-              <div class="timer-chip" id="timerChip" hidden>
+              <div class="timer-chip" id="timerChip" data-id="millionaire-timer" hidden>
                 <span class="chip-label" id="timerChipLabel">Timer</span>
                 <strong id="timerValue">30</strong>
               </div>
             </div>
 
-            <article class="question-card glass-panel" id="questionCard" data-id="millionaire-question-card" tabindex="-1">
+            <article class="question-card glass-panel" id="questionCard" data-id="millionaire-question-card" data-tv-focus tabindex="-1">
               <div class="question-accent"></div>
-              <h2 class="question-text" id="questionText">Question text</h2>
+              <h2 class="question-text" id="questionText" data-id="millionaire-question-text">Question text</h2>
             </article>
 
             <section class="lifeline-row lifeline-row-four" aria-label="Lifelines">
-              <button class="lifeline-button" id="lifeline5050" type="button">
+              <button class="lifeline-button" id="lifeline5050" type="button" data-id="millionaire-lifeline-5050">
                 <img src="./assets/images/5050.png" alt="" class="lifeline-icon-image" />
               </button>
-              <button class="lifeline-button" id="lifelineAudience" type="button">
+              <button class="lifeline-button" id="lifelineAudience" type="button" data-id="millionaire-lifeline-audience">
                 <img src="./assets/images/public.png" alt="" class="lifeline-icon-image" />
               </button>
-              <button class="lifeline-button" id="lifelinePhone" type="button">
+              <button class="lifeline-button" id="lifelinePhone" type="button" data-id="millionaire-lifeline-phone">
                 <img src="./assets/images/call.png" alt="" class="lifeline-icon-image" />
               </button>
-              <button class="lifeline-button" id="lifelineSwap" type="button">
+              <button class="lifeline-button" id="lifelineSwap" type="button" data-id="millionaire-lifeline-swap">
                 <img src="./assets/images/swap.png" alt="" class="lifeline-icon-image" />
               </button>
             </section>
 
-            <section class="answers-grid" id="answersGrid" aria-label="Answer choices"></section>
+            <section class="answers-grid" id="answersGrid" data-id="millionaire-answers" aria-label="Answer choices"></section>
           </section>
 
-          <section class="screen" id="resultScreen" aria-labelledby="resultTitle">
+          <section class="screen" id="resultScreen" data-id="millionaire-result-screen" data-tv-screen aria-labelledby="resultTitle" hidden>
             <div class="result-card glass-panel">
               <p class="mode-tag" id="resultModeTag">Game Over</p>
-              <h2 id="resultTitle">You leave with 0 €</h2>
+              <h2 id="resultTitle" data-id="millionaire-result-title">You leave with 0 €</h2>
               <p class="result-copy" id="resultCopy">
                 A tough break. Reset the lights, reload the questions, and take another run.
               </p>
@@ -174,13 +184,13 @@
                 </article>
                 <article class="result-stat">
                   <span id="resultWonLabel">Won</span>
-                  <strong id="resultPrize">0 €</strong>
+                  <strong id="resultPrize" data-id="millionaire-result-prize">0 €</strong>
                 </article>
               </div>
 
               <div class="result-actions">
-                <button class="primary-cta" id="playAgainButton" type="button">Play Again</button>
-                <button class="secondary-cta" id="backHomeButton" type="button">Home Screen</button>
+                <button class="primary-cta" id="playAgainButton" type="button" data-id="millionaire-replay-button" data-tv-focus>Play Again</button>
+                <button class="secondary-cta" id="backHomeButton" type="button" data-id="millionaire-menu-button" data-tv-back>Home Screen</button>
               </div>
             </div>
           </section>
@@ -188,33 +198,14 @@
       </main>
     </div>
 
-    <button
-      class="floating-info-button"
-      id="ladderToggleButton"
-      type="button"
-      aria-label="Afficher les paliers"
-    >
-      i
-    </button>
-
-    <button
-      class="floating-music-button"
-      id="musicToggleButton"
-      type="button"
-      aria-pressed="true"
-      aria-label="Music: On"
-    >
-      🔊
-    </button>
-
-    <div class="overlay-backdrop hidden" id="modalBackdrop" aria-hidden="true">
-      <section class="modal glass-panel hidden" id="audienceModal" role="dialog" aria-modal="true" aria-labelledby="audienceTitle">
+    <div class="overlay-backdrop hidden" id="modalBackdrop" data-id="millionaire-dialog-backdrop" data-tv-overlay aria-hidden="true" hidden>
+      <section class="modal glass-panel hidden" id="audienceModal" data-id="millionaire-audience-dialog" role="dialog" aria-modal="true" aria-labelledby="audienceTitle">
         <div class="modal-header">
           <div>
             <p class="eyebrow" id="audienceEyebrow">Lifeline</p>
             <h2 id="audienceTitle">Ask the Audience</h2>
           </div>
-          <button class="icon-button modal-close" type="button" data-close-modal aria-label="Close audience vote">
+          <button class="icon-button modal-close" type="button" data-close-modal data-id="millionaire-audience-close" data-tv-focus data-tv-back aria-label="Close audience vote">
             <span class="icon">×</span>
           </button>
         </div>
@@ -222,20 +213,20 @@
         <div class="audience-chart" id="audienceChart"></div>
       </section>
 
-      <section class="modal glass-panel hidden" id="phoneModal" role="dialog" aria-modal="true" aria-labelledby="phoneTitle">
+      <section class="modal glass-panel hidden" id="phoneModal" data-id="millionaire-phone-dialog" role="dialog" aria-modal="true" aria-labelledby="phoneTitle">
         <div class="modal-header">
           <div>
             <p class="eyebrow" id="phoneEyebrow">Lifeline</p>
             <h2 id="phoneTitle">Phone a Friend</h2>
           </div>
-          <button class="icon-button modal-close" type="button" data-close-modal aria-label="Close phone a friend">
+          <button class="icon-button modal-close" type="button" data-close-modal data-id="millionaire-phone-close" data-tv-focus data-tv-back aria-label="Close phone a friend">
             <span class="icon">×</span>
           </button>
         </div>
         <p class="modal-copy" id="phoneFriendCopy"></p>
       </section>
 
-      <section class="modal glass-panel hidden" id="errorModal" role="dialog" aria-modal="true" aria-labelledby="errorTitle">
+      <section class="modal glass-panel hidden" id="errorModal" data-id="millionaire-error-dialog" role="dialog" aria-modal="true" aria-labelledby="errorTitle">
         <div class="modal-header">
           <div>
             <p class="eyebrow" id="errorEyebrow">Data</p>
@@ -243,12 +234,12 @@
           </div>
         </div>
         <p class="modal-copy" id="errorCopy"></p>
-        <button class="primary-cta" id="retryLoadButton" type="button">Retry Loading</button>
+        <button class="primary-cta" id="retryLoadButton" type="button" data-id="millionaire-retry-button" data-tv-focus data-tv-back>Retry Loading</button>
       </section>
     </div>
 
     <template id="answerButtonTemplate">
-      <button class="answer-button" type="button">
+      <button class="answer-button" type="button" data-id="millionaire-answer">
         <span class="answer-prefix"></span>
         <span class="answer-text"></span>
       </button>
@@ -259,6 +250,3 @@
     <script type="module" src="./app.js"></script>
   </body>
 </html>
-
-
-

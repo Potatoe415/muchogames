@@ -51,15 +51,15 @@ html.tv .app-shell:has(#gameScreen.active) .brand-logo {
   visibility: hidden;
 }
 
-html.tv .icon-button,
-html.tv .floating-music-button {
+html.tv .icon-button {
   position: static;
   width: 76px;
   height: 76px;
   font-size: 32px;
 }
 
-html.tv .floating-info-button {
+/* The ladder is always shown on TV: no toggle. */
+html.tv .ladder-toggle-button {
   display: none;
 }
 

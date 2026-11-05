@@ -124,7 +124,7 @@ const I18N = {
     heroLabel: "Gain maximal", heroCopy: "15 questions. 4 jokers. 2 paliers garantis.", modeTag: "Mode classique", languageLabel: "Langue", rulesLabel: "Regles",
     questionsStatLabel: "Questions", safeStatLabel: "Paliers surs", timerStatLabel: "Minuteur", timerOptional: "Optionnel", startGameButton: "Commencer",
     timerOn: "Minuteur : active", timerOff: "Minuteur : coupe", dataChip: "Donnees",
-    musicOn: "Music: On", musicOff: "Music: Off",
+    musicOn: "Musique : activée", musicOff: "Musique : coupée",
     datasetNote: "Charge depuis <code>assets/data/fr_millionaire.json</code>, <code>assets/data/usa_millionaire.json</code>, <code>assets/data/es_millionaire.json</code> ou <code>assets/data/es_latino_millionaire.json</code> selon la langue choisie.",
     questionLabel: "Question", guaranteedLabel: "Garanti", nextLabel: "Suivant", timerChipLabel: "Temps", lifeline5050Label: "50:50",
     lifelineAudienceLabel: "Avis du public", lifelinePhoneLabel: "Appel a un ami", lifelineSwapLabel: "Changer la question",
@@ -186,7 +186,7 @@ const I18N = {
     heroLabel: "Premio maximo", heroCopy: "15 preguntas. 4 comodines. 2 niveles asegurados.", modeTag: "Modo clasico", languageLabel: "Idioma", rulesLabel: "Reglas",
     questionsStatLabel: "Preguntas", safeStatLabel: "Niveles seguros", timerStatLabel: "Temporizador", timerOptional: "Opcional", startGameButton: "Empezar",
     timerOn: "Temporizador: activado", timerOff: "Temporizador: desactivado", dataChip: "Datos",
-    musicOn: "Music: On", musicOff: "Music: Off",
+    musicOn: "Música: activada", musicOff: "Música: desactivada",
     datasetNote: "Se carga desde <code>assets/data/fr_millionaire.json</code>, <code>assets/data/usa_millionaire.json</code>, <code>assets/data/es_millionaire.json</code> o <code>assets/data/es_latino_millionaire.json</code> segun el idioma seleccionado.",
     questionLabel: "Pregunta", guaranteedLabel: "Seguro", nextLabel: "Siguiente", timerChipLabel: "Tiempo", lifeline5050Label: "50:50",
     lifelineAudienceLabel: "Publico", lifelinePhoneLabel: "Llamar a un amigo", lifelineSwapLabel: "Cambiar pregunta",
@@ -231,8 +231,8 @@ const I18N = {
     timerOn: "Temporizador: activado",
     timerOff: "Temporizador: desactivado",
     dataChip: "Datos",
-    musicOn: "Music: On",
-    musicOff: "Music: Off",
+    musicOn: "Música: activada",
+    musicOff: "Música: desactivada",
     datasetNote: "Se carga desde <code>public/data/fr_millionaire.json</code>, <code>public/data/usa_millionaire.json</code>, <code>public/data/es_millionaire.json</code> o <code>public/data/es_latino_millionaire.json</code> segun el idioma seleccionado.",
     questionLabel: "Pregunta",
     guaranteedLabel: "Seguro",
@@ -584,6 +584,7 @@ function validateQuestionSupply() {
 }
 
 async function startGame() {
+  window.MuchogamesTv?.play();
   unlockAudio();
   const copy = getCopy();
   if (!state.dataset) {
@@ -619,6 +620,7 @@ async function resumeMatch() {
     syncResumeButton();
     return;
   }
+  window.MuchogamesTv?.play();
   unlockAudio();
   state.isStarting = true;
   const ready = await prepareLanguage(saved.language);
@@ -803,6 +805,7 @@ function renderAnswerButtons() {
     prefix.textContent = `${ANSWER_LABELS[index]}:`;
     fragment.querySelector(".answer-text").textContent = answer.text;
     button.dataset.index = String(index);
+    button.dataset.id = `millionaire-answer-${ANSWER_LABELS[index].toLowerCase()}`;
     button.disabled = answer.hidden;
     button.classList.toggle("removed", answer.hidden);
     button.setAttribute("aria-label", `${ANSWER_LABELS[index]}: ${answer.text}`);
@@ -963,6 +966,7 @@ function returnHome() {
 function switchScreen(screenName) {
   Object.entries(elements.screens).forEach(([name, screen]) => {
     screen.classList.toggle("active", name === screenName);
+    screen.hidden = name !== screenName;
   });
   elements.restartShortcut.classList.toggle("is-hidden", screenName === "start");
   syncRestartShortcut();
@@ -982,8 +986,8 @@ function syncTimerToggle() {
 function syncMusicToggleUI() {
   const copy = getCopy();
   const label = state.audio.enabled ? copy.musicOn : copy.musicOff;
+  elements.musicToggleButton.textContent = label;
   elements.musicToggleButton.setAttribute("aria-pressed", String(state.audio.enabled));
-  elements.musicToggleButton.setAttribute("aria-label", label);
   elements.musicToggleButton.dataset.muted = String(!state.audio.enabled);
 }
 
@@ -999,6 +1003,7 @@ function syncLadderVisibility() {
   const copy = getCopy();
   const isVisible = state.ladderVisible;
   elements.ladderPanel.classList.toggle("is-collapsed", !isVisible);
+  elements.ladderToggleButton.setAttribute("aria-pressed", String(isVisible));
   elements.ladderToggleButton.setAttribute(
     "aria-label",
     isVisible ? copy.hideLadderLabel : copy.showLadderLabel
@@ -1182,6 +1187,7 @@ function buildPhoneSuggestion() {
 
 function openModal(modal) {
   elements.modalBackdrop.classList.remove("hidden");
+  elements.modalBackdrop.hidden = false;
   [elements.audienceModal, elements.phoneModal, elements.errorModal].forEach((entry) => {
     entry.classList.toggle("hidden", entry !== modal);
   });
@@ -1190,6 +1196,7 @@ function openModal(modal) {
 
 function closeModals() {
   elements.modalBackdrop.classList.add("hidden");
+  elements.modalBackdrop.hidden = true;
   [elements.audienceModal, elements.phoneModal, elements.errorModal].forEach((entry) => entry.classList.add("hidden"));
   elements.modalBackdrop.setAttribute("aria-hidden", "true");
 }
@@ -1407,23 +1414,3 @@ function playSound(name) {
   audio.currentTime = 0;
   safePlay(audio);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -44,22 +44,26 @@ Validated on load (`decodeMatch`); an invalid save is deleted.
   dialog, and replays the reveal of a locked answer.
 - `state.matchId` stops the pending reveal waits of a match that was left.
 
+## Layout (phone, desktop)
+
+- `.app-shell` is a 100dvh flex column with the platform margins (40px bottom, 24px sides); the
+  `html:not(.tv)` block at the end of `style.css` fits each screen without page scroll (portrait,
+  landscape two-column answers, landscape-phone compact result). Screens and dialogs only fade.
+- Header: home + "i" (prize ladder toggle) left, ↻ + options right. Music and TV toggles live in
+  the options panel. The dashboard card holds Resume, the timer choice, then Start.
+
 ## TV mode (`html.tv`)
 
-Couch layout for a TV browser (Sony Bravia / Google TV, Android TV, Fire TV,
-Tizen, webOS), played with the remote. `app.js` is untouched: same questions,
-same flow, same save.
+Couch layout for a TV browser, played with the remote. Same questions, flow and save.
 
-- `tv.js` (classic script in `<head>`): turns the mode on from `?tv=1` / `?tv=0`
-  (remembered in `localStorage` `millionaire-tv`), else the stored choice, else
-  a TV user agent. Options panel button `millionaire-tv-mode-button` toggles it.
-  Lays the page on a 1920x1080 canvas zoomed to the viewport (`--tv-zoom`,
-  `--tv-w`, `--tv-h`), moves the music button into the top bar, places the
-  focus (start/resume button, the question card on each new question, a
-  dialog's close button), asks for fullscreen and a screen wake lock on start.
-- `tv-nav.js`: arrows move the focus to the nearest control (spatial
-  navigation), OK is the native Enter click, Back/Escape closes the open
-  dialog or panel, else leaves the screen (in-match ✖, result → home, start → hub).
-- `tv.css` (canvas, top bar, ladder always shown on the right, start/result,
-  dialogs) and `tv-game.css` (game grid, lifelines, lozenge question/answers
-  coloured through `--tv-edge` / `--tv-fill`). Only px, no viewport units.
+- `/shared/js/tv-remote.js` (in `<head>`): turns the mode on from `?tv=1` / `?tv=0` (remembered in
+  `millionaire-tv`, same key as before) or a TV user agent; arrows, OK, Back, focus, fullscreen and wake
+  lock (`MuchogamesTv.play()` in `startGame` / `resumeMatch`). Driven by `data-tv-screen` on the three
+  screens (kept in sync with `.active` through `hidden`), `data-tv-overlay` on `#modalBackdrop`,
+  `data-tv-focus` (start/resume, the question card, replay, a dialog close button) and `data-tv-back`
+  (home, in-match ↻, result "Home", dialog close).
+- `tv.js`: only the 1920x1080 canvas zoomed to the viewport (`--tv-zoom`, `--tv-w`, `--tv-h`), the
+  options toggle `millionaire-tv-mode-button`, and the question card refocus on each new question.
+  `tv-nav.js` is gone (replaced by the shared script).
+- `tv.css` (canvas, top bar, ladder always shown on the right, start/result, dialogs) and `tv-game.css`
+  (game grid, lifelines, lozenge question/answers). Only px, no viewport units.
