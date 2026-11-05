@@ -88,7 +88,7 @@ html.tv .ef-board:focus .ef-canvas {
   flex: 0 0 auto;
   display: grid;
   grid-template-areas:
-    ". up ."
+    "up up up"
     "left down right";
   grid-template-columns: repeat(3, max(52px, 8dvh));
   grid-auto-rows: max(52px, 8dvh);
@@ -111,8 +111,10 @@ html.tv .ef-board:focus .ef-canvas {
   background: rgba(255, 255, 255, 0.5);
 }
 
+/* Jump forward, the most used move: as wide as the three arrows below. */
 .ef-pad-up {
   grid-area: up;
+  border-radius: 999px;
 }
 
 .ef-pad-left {
