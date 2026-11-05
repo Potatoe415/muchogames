@@ -2,6 +2,9 @@
 dist/
 .vercel/
 node_modules/
+
+# Agent worktrees (temporary full copies of the repo)
+.claude/
 package-lock.json
 
 # Colocated sub-apps (coinchapp, tranquil): each is a self-governing project
