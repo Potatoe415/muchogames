@@ -32,6 +32,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-05 Hub Home (0062): first row "Les plus joués" (site-wide counts, else local, else "Nouveautés"); "Cartes & dés" → "Jeux de cartes", Yams moved to Réflexion. Checked in the browser (both modes). `npm run check` OK except `.claude/settings.local.json` formatting (local file, not tracked).
 - 2026-11-05 Easy Frog in-repo: 21 modules (game.js / rules.js / snapshot.js…, none >300 lines), original balance, sprites, sounds; checked in the browser at 360×640, 640×360 and 1920×1080 `?tv=1`: start, move, death, pause / Escape / TV Back, reload → Reprendre (paused, same lives / timer), game over (save cleared), victory (record per difficulty). `npm run check` OK.
 - 2026-11-05 Game rules rewrite (0061): PLATFORM_RULES, NEW_GAME boilerplate, AGENTS.md replaced from the owner's drafts.
 - 2026-11-05 Piou (`public/games/piou/`): one-button flap-between-pipes arcade, save `piou-current`.

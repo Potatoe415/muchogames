@@ -18,7 +18,7 @@ const MEDIUM_MAX_MINUTES = 20;
 
 const LABELS = {
   fr: {
-    cartes: "Cartes & dés",
+    cartes: "Jeux de cartes",
     soiree: "Soirée",
     mots: "Mots",
     reflexion: "Réflexion",
@@ -32,7 +32,7 @@ const LABELS = {
     groupe: "Groupe (3+)"
   },
   en: {
-    cartes: "Cards & dice",
+    cartes: "Card games",
     soiree: "Party",
     mots: "Words",
     reflexion: "Brain",
@@ -46,7 +46,7 @@ const LABELS = {
     groupe: "Group (3+)"
   },
   es: {
-    cartes: "Cartas y dados",
+    cartes: "Juegos de cartas",
     soiree: "Fiesta",
     mots: "Palabras",
     reflexion: "Ingenio",
