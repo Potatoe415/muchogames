@@ -52,7 +52,15 @@ const LANG_LABELS = {
     statsSuccessRate: "Taux de réussite :",
     statsAvgTime: "Temps moyen par carte :",
     restartKeep: "Relancer",
-    restartAll: "Tout re-mélanger"
+    restartAll: "Tout re-mélanger",
+    hideWord: "Cacher le mot",
+    showWord: "Montrer le mot",
+    continue: "Continuer",
+    back: "Retour",
+    options: "Options",
+    close: "Fermer",
+    language: "Langue",
+    rules: "Règles"
   },
   en: {
     ready: "Ready?",
@@ -72,7 +80,15 @@ const LANG_LABELS = {
     statsSuccessRate: "Success rate:",
     statsAvgTime: "Avg time per card:",
     restartKeep: "Restart",
-    restartAll: "Reshuffle all cards"
+    restartAll: "Reshuffle all cards",
+    hideWord: "Hide the word",
+    showWord: "Show the word",
+    continue: "Continue",
+    back: "Back",
+    options: "Options",
+    close: "Close",
+    language: "Language",
+    rules: "Rules"
   },
   es: {
     ready: "¿Listo?",
@@ -92,15 +108,46 @@ const LANG_LABELS = {
     statsSuccessRate: "Tasa de acierto:",
     statsAvgTime: "Tiempo medio por carta:",
     restartKeep: "Reiniciar",
-    restartAll: "Barajar todas las cartas"
+    restartAll: "Barajar todas las cartas",
+    hideWord: "Ocultar la palabra",
+    showWord: "Mostrar la palabra",
+    continue: "Continuar",
+    back: "Volver",
+    options: "Opciones",
+    close: "Cerrar",
+    language: "Idioma",
+    rules: "Reglas"
   }
 };
 
 const LANGUAGE_FLAGS = [
-  { code: "fr", flag: "🇫🇷" },
-  { code: "en", flag: "🇬🇧" },
-  { code: "es", flag: "🇪🇸" }
+  { code: "fr", flag: "🇫🇷", name: "Français" },
+  { code: "en", flag: "🇬🇧", name: "English" },
+  { code: "es", flag: "🇪🇸", name: "Español" }
 ];
+
+// Stable data-ids for the buttons built by createActionButton().
+const BUTTON_DATA_IDS = {
+  "btn-next": "wordplayer-next-button",
+  "btn-pass": "wordplayer-pass-button",
+  "btn-failed": "wordplayer-failed-button",
+  "btn-success": "wordplayer-validate-button",
+  "btn-start": "wordplayer-start-button",
+  "btn-resume": "wordplayer-resume-button",
+  "btn-continue": "wordplayer-continue-button",
+  "btn-hide": "wordplayer-hide-button",
+  "btn-restart-keep": "wordplayer-restart-keep-button",
+  "btn-restart-all": "wordplayer-restart-all-button"
+};
+// Where the TV remote's focus lands when the controls are rebuilt.
+const TV_FOCUS_BUTTONS = new Set([
+  "btn-next",
+  "btn-success",
+  "btn-start",
+  "btn-resume",
+  "btn-continue",
+  "btn-restart-keep"
+]);
 
 function readHubLanguage() {
   try {
@@ -132,6 +179,8 @@ const gameState = {
   percentChanceDefi: 0,
   currentCardIsDefi: false,
   isCurrentWordHidden: false,
+  // A resumed timed match waits for "Continue" (real-time comes back paused).
+  pausedElapsedMs: null,
   currentGameId: null,
   rulesByLanguage: {}
 };
@@ -271,13 +320,34 @@ function onWordCardDoubleActivate() {
   saveMatch();
 }
 
+function toggleWordHidden() {
+  onWordCardDoubleActivate();
+  const button = document.getElementById("btn-hide");
+  if (button) button.textContent = hideButtonLabel();
+}
+
+function hideButtonLabel() {
+  const labels = getCurrentLabels();
+  return gameState.isCurrentWordHidden ? labels.showWord : labels.hideWord;
+}
+
+// The hide button is the single-tap way (docs/PLATFORM_RULES.md section 8);
+// double-click on the card stays as a shortcut.
 function attachWordCardHideHandlers() {
   const cardElement = document.getElementById(DOM.wordDisplay);
   if (!cardElement) {
     return;
   }
 
-  cardElement.addEventListener("dblclick", onWordCardDoubleActivate);
+  cardElement.addEventListener("dblclick", toggleWordHidden);
+}
+
+// Rebuilt controls drop the focused button: put the TV focus back.
+function refocusControls() {
+  const current = document.activeElement;
+  if (!current || current === document.body || !current.isConnected) {
+    window.MuchogamesTv?.focusScreen();
+  }
 }
 
 function renderEndScreen() {
@@ -289,10 +359,10 @@ function renderEndScreen() {
   const avgTimeText = stats.avgSeconds.toFixed(1);
 
   container.innerHTML = `
-    <div class="end-screen">
+    <div class="end-screen" data-id="wordplayer-end-screen">
       <div class="end-title">${labels.finished}</div>
-      <ul class="end-stats">
-        <li>${labels.statsPoints} ${stats.points}</li>
+      <ul class="end-stats" data-id="wordplayer-end-stats">
+        <li data-id="wordplayer-final-score">${labels.statsPoints} ${stats.points}</li>
         <li>${labels.statsSkipped} ${stats.skipped}</li>
         <li>${labels.statsSuccessRate} ${stats.successRate}%</li>
         <li>${labels.statsAvgTime} ${avgTimeText}s</li>
@@ -321,6 +391,7 @@ function renderEndControls() {
 
   container.appendChild(restartKeepBtn);
   container.appendChild(restartAllBtn);
+  refocusControls();
 }
 
 document.addEventListener("DOMContentLoaded", initializeWordPlayer);
@@ -381,10 +452,13 @@ async function initializeWordPlayer() {
     await ensureRulesForCurrentLanguage();
 
     hydrateUserInterface(gameEntry);
+    applyChromeLanguage();
     initLanguageSelector();
     initOptionsPanel();
     bindMatchSaving();
     renderSetupScreen();
+    // The controls appear after the data loads: land the remote on them.
+    window.MuchogamesTv?.focusScreen();
   } catch (error) {
     console.error(error);
     const message = labels.errorLoadFailed.replace("{GAME_ID}", gameId);
@@ -454,9 +528,12 @@ function initLanguageSelector() {
   const selectorElement = document.getElementById(DOM.langSelector);
   if (!selectorElement) return;
 
-  LANGUAGE_FLAGS.forEach(({ code, flag }) => {
+  LANGUAGE_FLAGS.forEach(({ code, flag, name }) => {
     const button = document.createElement("button");
+    button.type = "button";
     button.textContent = flag;
+    button.setAttribute("aria-label", name);
+    button.dataset.id = `wordplayer-lang-${code}`;
     button.className = `lang-btn${code === gameState.currentLanguage ? " active" : ""}`;
     button.dataset.lang = code;
     button.addEventListener("click", () => handleLanguageChange(code));
@@ -464,10 +541,31 @@ function initLanguageSelector() {
   });
 }
 
+// Header and options panel copy (data-i18n / data-i18n-aria).
+function applyChromeLanguage() {
+  const labels = getCurrentLabels();
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    node.textContent = labels[node.dataset.i18n];
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    node.setAttribute("aria-label", labels[node.dataset.i18nAria]);
+  });
+}
+
+function storeHubLanguage(language) {
+  try {
+    localStorage.setItem("bergamots-lang", language);
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
+  }
+}
+
 function handleLanguageChange(language) {
   gameState.currentLanguage = language;
+  storeHubLanguage(language);
 
   document.documentElement.lang = language;
+  applyChromeLanguage();
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === language);
@@ -490,6 +588,10 @@ function renderCurrentPhase() {
   }
 
   renderCurrentCard();
+  if (gameState.pausedElapsedMs !== null) {
+    renderPausedControls();
+    return;
+  }
   renderControls(gameState.controls);
   saveMatch();
 }
@@ -561,7 +663,9 @@ function renderSetupScreen() {
       const isActive =
         seconds === gameState.timerDuration &&
         !isCustomValue(gameState.timerDuration);
+      btn.type = "button";
       btn.className = `timer-option${isActive ? " active" : ""}`;
+      btn.dataset.id = `wordplayer-timer-${seconds}`;
       btn.dataset.seconds = String(seconds);
       btn.textContent = seconds === 0 ? labels.noTimer : `${seconds}s`;
       btn.addEventListener("click", () => selectTimerPreset(seconds));
@@ -574,6 +678,8 @@ function renderSetupScreen() {
     const customInput = document.createElement("input");
     customInput.type = "number";
     customInput.id = DOM.customTimerInput;
+    customInput.dataset.id = "wordplayer-timer-custom-input";
+    customInput.setAttribute("aria-label", "s");
     customInput.min = CUSTOM_TIMER_MIN;
     customInput.max = CUSTOM_TIMER_MAX;
     customInput.value = customInputValue();
@@ -592,6 +698,7 @@ function renderSetupScreen() {
   container.appendChild(
     createActionButton(labels.start, "btn-start", startGame)
   );
+  refocusControls();
 }
 
 function loadCurrentMatch() {
@@ -604,9 +711,9 @@ function loadCurrentMatch() {
 
 function appendResumeButton(container, labels) {
   if (!loadCurrentMatch()) return;
-  const button = createActionButton(labels.resume, "btn-resume", resumeMatch);
-  button.dataset.id = "wordplayer-resume-button";
-  container.appendChild(button);
+  container.appendChild(
+    createActionButton(labels.resume, "btn-resume", resumeMatch)
+  );
 }
 
 function resumeMatch() {
@@ -615,17 +722,51 @@ function resumeMatch() {
     renderSetupScreen();
     return;
   }
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(gameState.currentGameId);
   applyMatch(gameState, saved);
   gameState.phase = "playing";
+  if (hasRunningTimer()) {
+    gameState.pausedElapsedMs = saved.cardElapsedMs;
+    showTimerDisplay();
+    updateTimerDisplay();
+  }
   handleLanguageChange(gameState.currentLanguage);
   updateDefiClass(gameState.currentCardIsDefi);
   updateScoreDisplay();
+  if (gameState.pausedElapsedMs === null) {
+    runTimer();
+    beginAutosave();
+  }
+}
+
+function hasRunningTimer() {
+  return gameState.timerEnabled && gameState.timerDuration > 0;
+}
+
+function renderPausedControls() {
+  const container = document.getElementById(DOM.controlsContainer);
+  if (!container) return;
+  container.innerHTML = "";
+  container.appendChild(
+    createActionButton(getCurrentLabels().continue, "btn-continue", () =>
+      continueMatch()
+    )
+  );
+  refocusControls();
+}
+
+// The clock restarts from where the saved match stopped.
+function continueMatch() {
+  gameState.currentCardStartedAtMs = Date.now() - gameState.pausedElapsedMs;
+  gameState.pausedElapsedMs = null;
+  renderControls(gameState.controls);
   runTimer();
   beginAutosave();
 }
 
 function saveMatch() {
+  if (gameState.pausedElapsedMs !== null) return;
   if (gameState.phase === "playing" && gameState.currentWord) {
     storeMatch(gameState);
   }
@@ -697,8 +838,10 @@ function startGame() {
 }
 
 async function startNewSessionWithCurrentWords() {
+  window.MuchogamesTv?.play();
   if (!(await window.MuchogamesMatch.start())) return;
   gameState.phase = "playing";
+  gameState.pausedElapsedMs = null;
   gameState.score = 0;
   resetStats();
   updateScoreDisplay();
@@ -751,12 +894,24 @@ function renderControls(controlsArray) {
       createActionButton(labels.validate, "btn-success", handleSuccessCard)
     );
   }
+
+  const hideButton = createActionButton(
+    hideButtonLabel(),
+    "btn-hide",
+    toggleWordHidden
+  );
+  hideButton.classList.add("action-button-soft");
+  containerElement.appendChild(hideButton);
+  refocusControls();
 }
 
 function createActionButton(buttonText, buttonId, clickHandler) {
   const button = document.createElement("button");
+  button.type = "button";
   button.textContent = buttonText;
   button.id = buttonId;
+  if (BUTTON_DATA_IDS[buttonId]) button.dataset.id = BUTTON_DATA_IDS[buttonId];
+  if (TV_FOCUS_BUTTONS.has(buttonId)) button.dataset.tvFocus = "";
   button.className = "action-button";
   button.addEventListener("click", clickHandler);
   return button;

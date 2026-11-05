@@ -10,15 +10,18 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="/shared/css/wordplayer.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
-  <body class="game-body" data-match-saved>
+  <body class="game-body wp-page" data-match-saved>
     <header class="game-nav">
       <div class="nav-side nav-left">
         <a
           href="./index.html"
           class="back-button"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
+          data-i18n-aria="back"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -35,11 +38,22 @@
         ></a>
       </div>
       <div class="nav-center">
-        <img id="game-banner" src="" alt="Logo" class="nav-banner" />
+        <img
+          id="game-banner"
+          src=""
+          alt="Logo"
+          class="nav-banner"
+          data-id="wordplayer-banner"
+        />
         <h1 id="nav-title" class="nav-title"></h1>
       </div>
       <div class="nav-side nav-right">
-        <div id="score-display" class="score-display" style="display: none">
+        <div
+          id="score-display"
+          class="score-display"
+          data-id="wordplayer-score"
+          style="display: none"
+        >
           0
         </div>
         <button
@@ -48,6 +62,7 @@
           type="button"
           data-id="game-options-button"
           aria-label="Options"
+          data-i18n-aria="options"
           aria-expanded="false"
           aria-controls="options-panel"
         >
@@ -84,21 +99,26 @@
         role="dialog"
         aria-modal="true"
         aria-label="Options"
+        data-i18n-aria="options"
       >
         <div class="options-panel-header">
-          <span class="options-panel-title">Options</span>
+          <span class="options-panel-title" data-i18n="options">Options</span>
           <button
             type="button"
             class="options-panel-close"
             data-options-close
+            data-id="wordplayer-options-close"
             aria-label="Fermer"
+            data-i18n-aria="close"
           >
             ×
           </button>
         </div>
         <div class="options-panel-body">
           <div class="options-panel-section" data-id="game-options-language">
-            <p class="options-panel-section-title">Langue</p>
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
             <div id="lang-selector" class="lang-selector"></div>
           </div>
           <details
@@ -107,18 +127,40 @@
             data-id="game-options-rules"
             style="display: none"
           >
-            <summary class="options-panel-section-title">Règles</summary>
-            <div id="rules-content" class="rules-modal-content"></div>
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
+            <div
+              id="rules-content"
+              class="rules-modal-content"
+              data-id="wordplayer-rules-content"
+            ></div>
           </details>
         </div>
       </div>
     </div>
 
-    <main class="game-container">
-      <section class="game-interface">
-        <div id="timer-display" class="timer-display"></div>
-        <div id="word-display" class="word-card"></div>
-        <div id="controls-container" class="controls"></div>
+    <main class="game-container" data-id="wordplayer-shell">
+      <section
+        class="game-interface"
+        data-id="wordplayer-screen"
+        data-tv-screen
+      >
+        <div
+          id="timer-display"
+          class="timer-display"
+          data-id="wordplayer-timer"
+        ></div>
+        <div
+          id="word-display"
+          class="word-card"
+          data-id="wordplayer-word-card"
+        ></div>
+        <div
+          id="controls-container"
+          class="controls"
+          data-id="wordplayer-controls"
+        ></div>
       </section>
     </main>
 

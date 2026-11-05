@@ -307,3 +307,204 @@ body {
 
 /* .floating-info-button and .rules-modal* used to live here; every game
    now uses the shared .options-panel from game-header.css instead. */
+
+/* --- Wordpack page layout (docs/PLATFORM_RULES.md sections 6 and 7) ---
+   Scoped to body.wp-page (wordplayer.html only): Pyramide also loads this
+   file and must not change. Mobile first; landscape puts the controls
+   beside the card; desktop and TV sizes follow the screen height. */
+body.wp-page {
+  height: 100dvh;
+  min-height: 0;
+  overscroll-behavior: none;
+  font-size: max(16px, 2.4dvh);
+}
+
+.wp-page .game-nav {
+  flex: 0 0 auto;
+}
+
+/* Android bars can cover the bottom even when the safe-area inset is 0. */
+.wp-page .game-container {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-width: none;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 12px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+}
+
+.wp-page .game-interface {
+  min-height: 0;
+  gap: 12px;
+  padding: 0;
+}
+
+.wp-page .word-card {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 0.6em;
+  font-size: 2.2em;
+}
+
+.wp-page .word-main-term {
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+.wp-page .word-taboo-list,
+.wp-page .end-stats {
+  font-size: 0.45em;
+}
+
+.wp-page .end-screen {
+  gap: 0.3em;
+}
+
+.wp-page .end-title {
+  font-size: 0.8em;
+}
+
+.wp-page .controls {
+  flex: 0 0 auto;
+  gap: 10px;
+}
+
+.wp-page .action-button {
+  min-height: max(48px, 6.5dvh);
+  padding: 0.4em 1em;
+  font-size: 1.1em;
+  touch-action: manipulation;
+}
+
+.wp-page .action-button-soft {
+  background-color: #6c757d;
+}
+
+.wp-page #btn-continue {
+  background-color: #28a745;
+}
+
+.wp-page .timer-option,
+.wp-page .custom-timer-wrap input,
+.wp-page .custom-timer-suffix,
+.wp-page .timer-count {
+  font-size: 1em;
+}
+
+.wp-page .timer-option,
+.wp-page .custom-timer-wrap input {
+  min-height: max(44px, 5.5dvh);
+  padding: 0.3em 0.8em;
+}
+
+.wp-page .custom-timer-wrap input {
+  width: 4em;
+}
+
+/* No hover-only feedback: the active state is what matters. */
+.wp-page .timer-option:hover {
+  border-color: #dee2e6;
+}
+
+.wp-page .timer-option.active {
+  border-color: #007bff;
+}
+
+.wp-page :focus-visible,
+html.tv body.wp-page :focus {
+  outline: max(3px, 0.4dvh) solid #ffbf00;
+  outline-offset: max(2px, 0.3dvh);
+}
+
+/* Landscape (phones ~360px tall up to a TV): card left, controls right. */
+@media (orientation: landscape) {
+  .wp-page .game-interface {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    column-gap: 3vw;
+    row-gap: 8px;
+  }
+
+  .wp-page .timer-display {
+    grid-column: 1 / -1;
+  }
+
+  .wp-page .word-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .wp-page .controls {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .wp-page .game-container {
+    padding-top: 6px;
+  }
+
+  .wp-page .timer-count {
+    display: inline;
+    margin: 0;
+  }
+
+  .wp-page .word-card {
+    font-size: 1.6em;
+  }
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: the header grows with the
+   screen and everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .wp-page .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .wp-page .back-button,
+  .wp-page .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .wp-page .back-button svg,
+  .wp-page .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .wp-page .nav-banner {
+    max-height: max(45px, 7dvh);
+  }
+
+  .wp-page .score-display {
+    font-size: 1.2em;
+    padding: 0.2em 0.7em;
+    border-radius: 0.6em;
+  }
+
+  .wp-page .game-container {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 5dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .wp-page .word-card {
+    border-radius: 1em;
+    font-size: 3em;
+  }
+
+  .wp-page .timer-track {
+    height: max(10px, 1.2dvh);
+  }
+}
