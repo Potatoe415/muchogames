@@ -14,7 +14,6 @@ Context:
 
 Next:
 - Owner: play Easy Frog on a phone (portrait + landscape), desktop and the TV (`/games/easyfrog/index.html?tv=1` once) — see `docs/BACKLOG.md` Now.
-- Owner: confirm the `docs/PRODUCT.md` edit: its coin exception still names Easy Frog (now only GameBoy Web pays at launch).
 - Bring existing games to the *(new games)* rules one by one (`docs/BACKLOG.md` Next): dashboard, score + best, 40px bottom margin.
 - Owner: play Piou, Simon, Tetris, 2048, Fusion de fruits on phone / desktop / TV (`?tv=1` once); skim TTMC cards; 7 TTMC cards await a photo.
 - Owner: on a phone, try the hub (rows, "Tout voir", pills, search, ★, Back, shared links); fix `duration` / `players` estimates; judge thumbnail crops.
