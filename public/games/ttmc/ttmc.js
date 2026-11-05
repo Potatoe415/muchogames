@@ -1,4 +1,13 @@
-// Game logic for TTMC
+// Game logic for TTMC: Game Dashboard (teams, resume), board, card dialog,
+// win screen. The whole match lives in page.match and is saved after every
+// step (store.js), so leaving by any route brings it back from the dashboard.
+import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
+import { clearMatch, loadMatch, storeMatch } from './store.js';
+
+const GAME_ID = 'ttmc';
+const LANG_KEY = 'bergamots-lang';
+const MAX_TEAMS = 4;
+const TIMER_SECONDS = 30;
 const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
 const SPECIAL_THEMES = ['Challenge', 'Débuter', 'Gagner', 'Superbe'];
 
@@ -13,362 +22,391 @@ for (let i = 1; i <= 41; i++) {
   }
 }
 BOARD_TRACK.push('Gagner'); // 42
+const LAST = BOARD_TRACK.length - 1;
 
-let gameState = {
-  teams: [],
-  currentTeamIdx: 0,
-  boardSize: 42,
+const $ = (id) => document.querySelector(`[data-id="${id}"]`);
+
+const page = {
+  lang: readLang(),
   cards: [],
-  currentCard: null,
-  currentNote: null,
+  names: [],
+  count: 2,
+  match: null,
   timer: null,
-  timeLeft: 30
+  starting: false
 };
 
-// UI Elements
-const els = {
-  setupScreen: document.getElementById('setupScreen'),
-  boardScreen: document.getElementById('boardScreen'),
-  winScreen: document.getElementById('winScreen'),
-  teamsList: document.getElementById('teamsList'),
-  addTeamBtn: document.getElementById('addTeamBtn'),
-  startBtn: document.getElementById('startBtn'),
-  turnIndicator: document.getElementById('turnIndicator'),
-  boardTrack: document.getElementById('boardTrack'),
-  drawCardBtn: document.getElementById('drawCardBtn'),
-  
-  cardModal: document.getElementById('cardModal'),
-  cardTheme: document.getElementById('cardTheme'),
-  cardSubject: document.getElementById('cardSubject'),
-  evalStep: document.getElementById('evaluationStep'),
-  evalGrid: document.getElementById('evalGrid'),
-  questionStep: document.getElementById('questionStep'),
-  selectedNote: document.getElementById('selectedNote'),
-  cardQuestion: document.getElementById('cardQuestion'),
-  showAnswerBtn: document.getElementById('showAnswerBtn'),
-  answerStep: document.getElementById('answerStep'),
-  cardAnswer: document.getElementById('cardAnswer'),
-  
-  validationButtons: document.getElementById('validationButtons'),
-  failBtn: document.getElementById('failBtn'),
-  successBtn: document.getElementById('successBtn'),
-  
-  manualMoveUi: document.getElementById('manualMoveUi'),
-  manualMoveValue: document.getElementById('manualMoveValue'),
-  manualMoveDec: document.getElementById('manualMoveDec'),
-  manualMoveInc: document.getElementById('manualMoveInc'),
-  manualMoveConfirm: document.getElementById('manualMoveConfirm'),
-  
-  timerFill: document.getElementById('timerFill'),
-  
-  winnerName: document.getElementById('winnerName'),
-  restartBtn: document.getElementById('restartBtn'),
-};
+const t = (key, vars) => translate(page.lang, key, vars);
+const themeClass = (theme) => theme.toLowerCase().replace(/é/g, 'e').replace(/ /g, '-');
 
-async function init() {
-  if (window.GameHeader) {
-    window.GameHeader.initOptionsPanel(
-      document.getElementById('settingsButton'),
-      document.getElementById('settingsPanel')
-    );
-  }
-
-  // Load data
+function readLang() {
   try {
-    const res = await fetch('/data/ttmc/ttmc_data.json');
-    if (res.ok) {
-      const data = await res.json();
-      gameState.cards = data.cards || [];
-    }
+    const saved = localStorage.getItem(LANG_KEY);
+    return LANGS.includes(saved) ? saved : 'fr';
   } catch {
-    console.error("No data found, will use fallback.");
+    return 'fr';
   }
-  
-  if (gameState.cards.length === 0) {
-    gameState.cards = generateMockCards();
+}
+
+function setLanguage(lang) {
+  page.lang = lang;
+  try {
+    localStorage.setItem(LANG_KEY, lang);
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
   }
-
-  bindSetup();
-  addTeamInput();
-  addTeamInput();
+  applyLanguage();
 }
 
-function generateMockCards() {
-  const cards = [];
-  THEMES.forEach(theme => {
-    for(let i=0; i<5; i++) {
-      const questions = [];
-      for(let j=1; j<=10; j++) {
-        questions.push({
-          level: j,
-          q: `Question niveau ${j} sur le thème ${theme} (sujet ${i}) ?`,
-          a: `Réponse niveau ${j}`
-        });
-      }
-      cards.push({ theme, subject: `Sujet ${theme} ${i+1}`, questions });
-    }
+function applyLanguage() {
+  const copy = COPY[page.lang];
+  document.documentElement.lang = page.lang;
+  document.querySelectorAll('[data-i18n]').forEach((node) => {
+    node.textContent = copy[node.dataset.i18n];
   });
-  return cards;
+  document.querySelectorAll('[data-i18n-aria]').forEach((node) => {
+    node.setAttribute('aria-label', copy[node.dataset.i18nAria]);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach((node) => {
+    node.innerHTML = copy[node.dataset.i18nHtml];
+  });
+  document.querySelectorAll('[data-lang]').forEach((button) => {
+    button.classList.toggle('active', button.dataset.lang === page.lang);
+  });
+  renderTeamInputs();
+  if (page.match) renderMatch();
 }
 
-function bindSetup() {
-  els.addTeamBtn.addEventListener('click', () => {
-    if (els.teamsList.children.length < 4) addTeamInput();
-  });
-  
-  els.startBtn.addEventListener('click', startGame);
-  els.drawCardBtn.addEventListener('click', drawCard);
-  
-  // Build Eval Grid
-  for (let i = 1; i <= 10; i++) {
-    const btn = document.createElement('button');
-    btn.className = 'eval-btn';
-    btn.textContent = i;
-    btn.addEventListener('click', () => selectNote(i));
-    els.evalGrid.appendChild(btn);
-  }
-  
-  els.showAnswerBtn.addEventListener('click', showAnswer);
-  els.failBtn.addEventListener('click', () => endTurn(0));
-  els.successBtn.addEventListener('click', () => endTurn(gameState.currentNote));
-  
-  els.manualMoveDec.addEventListener('click', () => {
-    let val = parseInt(els.manualMoveValue.textContent, 10);
-    els.manualMoveValue.textContent = val - 1;
-  });
-  els.manualMoveInc.addEventListener('click', () => {
-    let val = parseInt(els.manualMoveValue.textContent, 10);
-    els.manualMoveValue.textContent = val + 1;
-  });
-  els.manualMoveConfirm.addEventListener('click', () => {
-    let val = parseInt(els.manualMoveValue.textContent, 10);
-    endTurn(val);
-  });
-  
-  els.restartBtn.addEventListener('click', () => location.reload());
+// --- Game Dashboard -------------------------------------------------------
+
+function renderTeamInputs() {
+  const list = $('ttmc-teams-list');
+  list.replaceChildren(
+    ...Array.from({ length: page.count }, (_, i) => {
+      const row = document.createElement('div');
+      row.className = 'team-input-row';
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.maxLength = 40;
+      input.dataset.id = `ttmc-team-name-${i + 1}`;
+      input.placeholder = t('teamN', { n: i + 1 });
+      input.setAttribute('aria-label', t('teamName', { n: i + 1 }));
+      input.value = page.names[i] ?? '';
+      input.addEventListener('input', () => (page.names[i] = input.value));
+      input.addEventListener('keydown', leaveInputWithArrows);
+      row.append(input);
+      return row;
+    })
+  );
+  $('ttmc-add-team-btn').hidden = page.count >= MAX_TEAMS;
 }
 
-function addTeamInput() {
-  const div = document.createElement('div');
-  div.className = 'team-input-row';
-  const num = els.teamsList.children.length + 1;
-  div.innerHTML = `<input type="text" placeholder="Équipe ${num}" value="Équipe ${num}">`;
-  els.teamsList.appendChild(div);
-  
-  if (els.teamsList.children.length >= 2) els.startBtn.classList.remove('hidden');
-  if (els.teamsList.children.length >= 4) els.addTeamBtn.classList.add('hidden');
+// A text field keeps the arrows for itself (tv-remote.js too): Up / Down
+// still move to the previous / next control of the dashboard.
+function leaveInputWithArrows(event) {
+  const step = { ArrowUp: -1, ArrowDown: 1 }[event.key];
+  if (!step) return;
+  const controls = [...$('ttmc-setup-screen').querySelectorAll('button, input')].filter(
+    (el) => !el.disabled && !el.closest('[hidden]')
+  );
+  const next = controls[controls.indexOf(event.target) + step];
+  if (!next) return;
+  event.preventDefault();
+  next.focus();
 }
 
-async function startGame() {
-  const started = await window.MuchogamesMatch.start('ttmc');
+function renderDashboard() {
+  const ready = page.cards.length > 0;
+  $('ttmc-start-btn').disabled = !ready;
+  $('ttmc-load-status').hidden = ready;
+  $('ttmc-resume-button').hidden = !ready || !loadMatch(page.cards, LAST);
+}
+
+function showScreen(name) {
+  stopTimer();
+  $('ttmc-setup-screen').hidden = name !== 'dashboard';
+  $('ttmc-board-screen').hidden = name !== 'board';
+  $('ttmc-win-screen').hidden = name !== 'win';
+  $('game-back-button').hidden = name === 'board';
+  $('ttmc-quit-button').hidden = name !== 'board';
+  if (name !== 'board') $('ttmc-card-modal').hidden = true;
+  if (name === 'dashboard') renderDashboard();
+}
+
+// --- Match ----------------------------------------------------------------
+
+function teamNames() {
+  return Array.from({ length: page.count }, (_, i) =>
+    (page.names[i] ?? '').trim().slice(0, 40) || t('teamN', { n: i + 1 })
+  );
+}
+
+async function startMatch(names) {
+  if (page.starting || !page.cards.length) return;
+  window.MuchogamesTv?.play();
+  page.starting = true;
+  const started = await window.MuchogamesMatch.start(GAME_ID);
+  page.starting = false;
   if (!started) return;
+  // Every team starts on case 1, after the Débuter card.
+  page.match = { teams: names.map((name, id) => ({ id, name, pos: 1 })), cur: 0, card: null };
+  showScreen('board');
+  drawCard('Débuter', true);
+}
 
-  const inputs = els.teamsList.querySelectorAll('input');
-  gameState.teams = Array.from(inputs).map((inp, idx) => ({
-    id: idx,
-    name: inp.value.trim() || `Équipe ${idx+1}`,
-    pos: 1 // Start at case 1 after the Débuter draw
-  }));
-  
-  els.setupScreen.classList.add('hidden');
-  els.boardScreen.classList.remove('hidden');
-  
+function resumeMatch() {
+  const saved = loadMatch(page.cards, LAST);
+  if (!saved) return renderDashboard();
+  window.MuchogamesTv?.play();
+  window.MuchogamesMatch.resume(GAME_ID);
+  page.match = saved;
+  showScreen('board');
+  renderMatch();
+  if (saved.card?.step === 'question' && !saved.card.opening) startTimer();
+}
+
+function save() {
+  if (page.match) storeMatch(page.match);
+}
+
+// Runs once game-session.js's "Leave match?" dialog is confirmed.
+function quitMatch() {
+  save();
+  page.match = null;
+  showScreen('dashboard');
+}
+
+function renderMatch() {
+  const { teams, cur } = page.match;
+  $('ttmc-turn-indicator').textContent = t('turnOf', { name: teams[cur].name });
   renderBoard();
-  updateTurn();
-
-  // Show a Débuter card before the actual turn starts
-  // We temporarly set the team pos to 0 so getSpaceTheme reads Débuter
-  const firstTeam = gameState.teams[0];
-  const originalPos = firstTeam.pos;
-  firstTeam.pos = 0;
-  drawCard();
-  firstTeam.pos = originalPos; // restore immediately
+  renderCard();
 }
 
 function renderBoard() {
-  els.boardTrack.innerHTML = '';
+  const track = $('ttmc-board-track');
+  track.replaceChildren();
   BOARD_TRACK.forEach((theme, i) => {
     const space = document.createElement('div');
-    space.className = `board-space ${theme.toLowerCase().replace(/é/g, 'e')}`;
-    
-    if (i === 0) space.textContent = 'D';
-    else if (i === BOARD_TRACK.length - 1) space.textContent = 'F';
-    else if (theme === 'Challenge') space.textContent = 'C';
-    else if (theme === 'Superbe') space.textContent = 'S';
+    space.className = `board-space ${themeClass(theme)}`;
+    space.dataset.id = `ttmc-space-${i}`;
+    if (i === 0) space.textContent = t('markStart');
+    else if (i === LAST) space.textContent = t('markEnd');
+    else if (theme === 'Challenge') space.textContent = t('markChallenge');
+    else if (theme === 'Superbe') space.textContent = t('markSuperbe');
     else space.textContent = i;
-    
-    // Add tokens
-    gameState.teams.forEach(t => {
-      if (t.pos === i) {
-        const token = document.createElement('div');
-        token.className = `team-token t${t.id}`;
-        space.appendChild(token);
-      }
+    page.match.teams.forEach((team) => {
+      if (team.pos !== i) return;
+      const token = document.createElement('div');
+      token.className = `team-token t${team.id}`;
+      token.dataset.id = `ttmc-team-token-${team.id + 1}`;
+      space.appendChild(token);
     });
-    
-    els.boardTrack.appendChild(space);
+    track.appendChild(space);
   });
 }
 
-function updateTurn() {
-  const team = gameState.teams[gameState.currentTeamIdx];
-  els.turnIndicator.textContent = `Tour de : ${team.name}`;
-}
-
 function getSpaceTheme(pos) {
-  if (pos >= BOARD_TRACK.length - 1) return 'Gagner';
+  if (pos >= LAST) return 'Gagner';
   return BOARD_TRACK[pos] || 'Improbable';
 }
 
-function drawCard() {
-  const pos = gameState.teams[gameState.currentTeamIdx].pos;
-  const targetTheme = getSpaceTheme(pos);
-  
-  const pool = gameState.cards.filter(c => c.theme.toLowerCase() === targetTheme.toLowerCase());
-  if (pool.length === 0) {
-    gameState.currentCard = gameState.cards[Math.floor(Math.random()*gameState.cards.length)];
-  } else {
-    gameState.currentCard = pool[Math.floor(Math.random()*pool.length)];
-  }
-  
-  els.cardTheme.textContent = gameState.currentCard.theme;
-  els.cardTheme.className = `card-theme ${gameState.currentCard.theme.toLowerCase().replace(/é/g, 'e').replace(/ /g, '-')}`;
-  els.cardSubject.textContent = gameState.currentCard.subject || '';
-  
-  els.cardModal.classList.remove('hidden');
+function drawCard(theme = getSpaceTheme(page.match.teams[page.match.cur].pos), opening = false) {
+  const pool = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
+  const index = pool.length
+    ? pool[Math.floor(Math.random() * pool.length)].index
+    : Math.floor(Math.random() * page.cards.length);
+  const direct = opening || SPECIAL_THEMES.includes(theme) || !page.cards[index].questions[0].level;
+  page.match.card = { index, theme, step: direct ? 'question' : 'eval', note: null, opening, timeLeft: TIMER_SECONDS, move: 0 };
+  save();
+  renderCard();
+  // The Débuter card has no 30 s timer.
+  if (direct && !opening) startTimer();
+}
 
-  if (targetTheme === 'Débuter') {
-    gameState.currentNote = 1; // So success advances us, wait, we intercept it in endTurn
-    const qData = gameState.currentCard.questions[0];
-    
-    els.selectedNote.textContent = targetTheme;
-    els.cardQuestion.textContent = qData ? qData.q : "Question introuvable";
-    els.cardAnswer.textContent = qData ? qData.a : "Réponse introuvable";
-    
-    els.evalStep.classList.add('hidden');
-    els.questionStep.classList.remove('hidden');
-    els.answerStep.classList.add('hidden');
-    
-    // For Débuter, don't start the 30s timer, just show the button
-    els.timerFill.style.width = '100%';
-    
-  } else if (SPECIAL_THEMES.includes(targetTheme) || !gameState.currentCard.questions[0].level) {
-    // Direct to question
-    gameState.currentNote = 1; // Default advance
-    const qData = gameState.currentCard.questions[0];
-    
-    els.selectedNote.textContent = targetTheme;
-    els.cardQuestion.textContent = qData ? qData.q : "Question introuvable";
-    els.cardAnswer.textContent = qData ? qData.a : "Réponse introuvable";
-    
-    els.evalStep.classList.add('hidden');
-    els.questionStep.classList.remove('hidden');
-    els.answerStep.classList.add('hidden');
-    
-    startTimer();
+function cardQuestion(card) {
+  const { questions } = page.cards[card.index];
+  return card.note === null ? questions[0] : questions.find((q) => parseInt(q.level, 10) === card.note);
+}
+
+function renderCard() {
+  const card = page.match.card;
+  $('ttmc-card-modal').hidden = !card;
+  $('ttmc-draw-card-btn').hidden = Boolean(card);
+  if (!card) return;
+  const data = page.cards[card.index];
+  const theme = $('ttmc-card-theme');
+  theme.textContent = THEME_LABELS[page.lang][data.theme] || data.theme;
+  theme.className = `card-theme ${themeClass(data.theme)}`;
+  $('ttmc-card-subject').textContent = data.subject || '';
+  const q = cardQuestion(card);
+  $('ttmc-selected-note').textContent = card.note ? t('level', { n: card.note }) : THEME_LABELS[page.lang][card.theme] || card.theme;
+  $('ttmc-card-question').textContent = q ? q.q : t('noQuestion');
+  $('ttmc-card-answer').textContent = q ? q.a : t('noAnswer');
+  $('ttmc-eval-step').hidden = card.step !== 'eval';
+  $('ttmc-question-step').hidden = card.step !== 'question';
+  $('ttmc-answer-step').hidden = card.step !== 'answer';
+  paintTimer(card);
+  if (card.step === 'answer') renderAnswerButtons(card);
+  // A new step: the focus moves to its main button (TV remote).
+  setTimeout(() => window.MuchogamesTv?.focusScreen(), 0);
+}
+
+function renderAnswerButtons(card) {
+  const manual = SPECIAL_THEMES.includes(card.theme) && card.theme !== 'Gagner' && !card.opening;
+  $('ttmc-manual-move').hidden = !manual;
+  document.getElementById('validationButtons').hidden = manual;
+  $('ttmc-move-value').textContent = String(card.move);
+  const fail = $('ttmc-fail-btn');
+  const success = $('ttmc-success-btn');
+  fail.hidden = card.opening;
+  if (card.opening) success.textContent = t('toBoard');
+  else if (card.theme === 'Gagner') {
+    fail.textContent = t('failStay');
+    success.textContent = t('successWin');
   } else {
-    // Normal 1-10 choice
-    els.evalStep.classList.remove('hidden');
-    els.questionStep.classList.add('hidden');
-    els.answerStep.classList.add('hidden');
+    fail.textContent = t('fail');
+    success.textContent = t('success', { n: card.note ?? 1 });
   }
 }
 
 function selectNote(note) {
-  gameState.currentNote = note;
-  const qData = gameState.currentCard.questions.find(q => parseInt(q.level) === note);
-  
-  els.selectedNote.textContent = `Niveau ${note}`;
-  els.cardQuestion.textContent = qData ? qData.q : "Question introuvable";
-  els.cardAnswer.textContent = qData ? qData.a : "Réponse introuvable";
-  
-  els.evalStep.classList.add('hidden');
-  els.questionStep.classList.remove('hidden');
-  
+  const card = page.match?.card;
+  if (!card || card.step !== 'eval') return;
+  Object.assign(card, { note, step: 'question', timeLeft: TIMER_SECONDS });
+  save();
+  renderCard();
   startTimer();
 }
 
+function paintTimer(card) {
+  document.getElementById('timerFill').style.width = card.opening ? '100%' : `${(card.timeLeft / TIMER_SECONDS) * 100}%`;
+}
+
 function startTimer() {
-  gameState.timeLeft = 30;
-  els.timerFill.style.width = '100%';
-  
-  clearInterval(gameState.timer);
-  gameState.timer = setInterval(() => {
-    gameState.timeLeft--;
-    els.timerFill.style.width = `${(gameState.timeLeft / 30) * 100}%`;
-    if (gameState.timeLeft <= 0) clearInterval(gameState.timer);
+  stopTimer();
+  page.timer = setInterval(() => {
+    const card = page.match?.card;
+    if (!card || card.step !== 'question' || card.timeLeft <= 0) return stopTimer();
+    card.timeLeft--;
+    paintTimer(card);
+    save();
   }, 1000);
 }
 
+function stopTimer() {
+  clearInterval(page.timer);
+  page.timer = null;
+}
+
 function showAnswer() {
-  clearInterval(gameState.timer);
-  els.questionStep.classList.add('hidden');
-  els.answerStep.classList.remove('hidden');
-  
-  const targetTheme = getSpaceTheme(gameState.teams[gameState.currentTeamIdx].pos);
-  
-  if (targetTheme === 'Débuter') {
-    els.validationButtons.classList.remove('hidden');
-    els.manualMoveUi.classList.add('hidden');
-    els.failBtn.classList.add('hidden');
-    els.successBtn.textContent = 'Aller au plateau !';
-  } else if (SPECIAL_THEMES.includes(targetTheme) && targetTheme !== 'Gagner') {
-    // For Challenge, Superbe => show manual move UI
-    els.validationButtons.classList.add('hidden');
-    els.manualMoveUi.classList.remove('hidden');
-    els.manualMoveValue.textContent = '0';
-    els.failBtn.classList.remove('hidden');
-  } else if (targetTheme === 'Gagner') {
-    // For Gagner => custom buttons
-    els.validationButtons.classList.remove('hidden');
-    els.manualMoveUi.classList.add('hidden');
-    els.failBtn.textContent = 'Raté (Reste ici)';
-    els.successBtn.textContent = 'Trouvé ! (GAGNÉ !)';
-    els.failBtn.classList.remove('hidden');
-  } else {
-    // Normal card
-    els.validationButtons.classList.remove('hidden');
-    els.manualMoveUi.classList.add('hidden');
-    els.failBtn.textContent = 'Raté (0 case)';
-    els.successBtn.textContent = `Trouvé ! (+${gameState.currentNote})`;
-    els.failBtn.classList.remove('hidden');
-  }
+  const card = page.match?.card;
+  if (!card || card.step !== 'question') return;
+  stopTimer();
+  card.step = 'answer';
+  save();
+  renderCard();
+}
+
+function changeMove(step) {
+  const card = page.match?.card;
+  if (!card) return;
+  card.move = Math.max(-LAST, Math.min(LAST, card.move + step));
+  $('ttmc-move-value').textContent = String(card.move);
+  save();
 }
 
 function endTurn(moveBy) {
-  els.cardModal.classList.add('hidden');
-  
-  const team = gameState.teams[gameState.currentTeamIdx];
-  const isOnWinSpace = team.pos >= BOARD_TRACK.length - 1;
-  const wasDebuter = els.selectedNote.textContent === 'Débuter';
-  
-  if (wasDebuter) {
-    // Just dismissed the "Débuter" card. Normal game starts.
-    return;
+  const match = page.match;
+  if (!match?.card) return;
+  const { opening } = match.card;
+  match.card = null;
+  const team = match.teams[match.cur];
+  // Just dismissed the Débuter card: the first team now plays.
+  if (!opening && team.pos >= LAST && moveBy > 0) return winMatch(team);
+  if (!opening && team.pos < LAST) team.pos = Math.min(LAST, Math.max(1, team.pos + moveBy));
+  if (!opening) match.cur = (match.cur + 1) % match.teams.length;
+  save();
+  renderMatch();
+}
+
+// A party game with several teams on one device: "started" only, no won
+// or lost (docs/PLATFORM_RULES.md section 4.4).
+function winMatch(team) {
+  const names = page.match.teams.map((t) => t.name);
+  page.match = null;
+  clearMatch();
+  window.MuchogamesMatch.finish();
+  page.names = names;
+  page.count = names.length;
+  $('ttmc-winner-name').textContent = team.name;
+  showScreen('win');
+}
+
+// --- Wiring ---------------------------------------------------------------
+
+function bindControls() {
+  document.querySelectorAll('[data-lang]').forEach((button) => {
+    button.addEventListener('click', () => setLanguage(button.dataset.lang));
+  });
+  const evalGrid = $('ttmc-eval-grid');
+  for (let i = 1; i <= 10; i++) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'eval-btn';
+    btn.dataset.id = `ttmc-eval-${i}`;
+    if (i === 1) btn.dataset.tvFocus = '';
+    btn.textContent = i;
+    btn.addEventListener('click', () => selectNote(i));
+    evalGrid.appendChild(btn);
   }
-  
-  if (isOnWinSpace) {
-    // Logic for Gagner space
-    if (moveBy > 0) {
-      window.MuchogamesMatch.finish({ won: true });
-      els.boardScreen.classList.add('hidden');
-      els.winScreen.classList.remove('hidden');
-      els.winnerName.textContent = team.name;
-      return;
-    }
-    // else fail => stays on win space
-  } else {
-    // Normal move
-    team.pos += moveBy;
-    if (team.pos < 1) team.pos = 1; // Can't go below 1
-    if (team.pos >= BOARD_TRACK.length - 1) {
-      team.pos = BOARD_TRACK.length - 1;
-    }
+  const actions = {
+    'ttmc-add-team-btn': () => {
+      page.count = Math.min(MAX_TEAMS, page.count + 1);
+      renderTeamInputs();
+      $(`ttmc-team-name-${page.count}`)?.focus();
+    },
+    'ttmc-start-btn': () => startMatch(teamNames()),
+    'ttmc-resume-button': resumeMatch,
+    'ttmc-quit-button': quitMatch,
+    'ttmc-draw-card-btn': () => page.match && !page.match.card && drawCard(),
+    'ttmc-show-answer-btn': showAnswer,
+    'ttmc-fail-btn': () => endTurn(0),
+    'ttmc-success-btn': () => endTurn(page.match?.card?.note ?? 1),
+    'ttmc-move-less': () => changeMove(-1),
+    'ttmc-move-more': () => changeMove(1),
+    'ttmc-move-confirm': () => endTurn(page.match?.card?.move ?? 0),
+    'ttmc-restart-btn': () => startMatch(teamNames()),
+    'ttmc-menu-button': () => showScreen('dashboard')
+  };
+  Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
+}
+
+async function loadCards() {
+  try {
+    const res = await fetch('/data/ttmc/ttmc_data.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    page.cards = (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
+  } catch (error) {
+    console.warn('[ttmc] cards not loaded', error);
   }
-  
-  gameState.currentTeamIdx = (gameState.currentTeamIdx + 1) % gameState.teams.length;
-  renderBoard();
-  updateTurn();
+}
+
+async function init() {
+  window.GameHeader?.initOptionsPanel(document.getElementById('settingsButton'), document.getElementById('settingsPanel'));
+  bindControls();
+  window.addEventListener('pagehide', save);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') save();
+  });
+  applyLanguage();
+  showScreen('dashboard');
+  await loadCards();
+  renderDashboard();
+  // The start button was disabled while loading: the remote focus moves to
+  // it (or to Resume) now, instead of staying on the back button.
+  if (!$('ttmc-setup-screen').hidden) window.MuchogamesTv?.focusScreen();
 }
 
 init();
