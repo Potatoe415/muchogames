@@ -171,13 +171,32 @@ html.tv .ef-board:focus .ef-canvas {
   }
 }
 
-/* Mouse, keyboard and TV remote: no on-screen arrows. */
+/* Arrow position chosen in the options, for one-thumb play: under the
+   board, against the left or right margin in portrait; before or after
+   the board in landscape ("center" keeps them after it). */
+.ef-dpad[data-position="left"] {
+  justify-content: start;
+}
+
+.ef-dpad[data-position="right"] {
+  justify-content: end;
+}
+
+@media (orientation: landscape) {
+  .ef-dpad[data-position="left"] {
+    order: -1;
+  }
+}
+
+/* Mouse, keyboard and TV remote: no on-screen arrows (nor their option). */
 @media (hover: hover) and (pointer: fine) {
-  .ef-dpad {
+  .ef-dpad,
+  .ef-touch-only {
     display: none;
   }
 }
 
-html.tv .ef-dpad {
+html.tv .ef-dpad,
+html.tv .ef-touch-only {
   display: none;
 }

@@ -3,6 +3,7 @@
 // The match itself lives in game.js and is destroyed whenever it is left.
 import { loadImages } from "./assets.js";
 import { createAudio } from "./audio.js";
+import { initDpadPosition } from "./dpad-position.js";
 import { createGame } from "./game.js";
 import { createHud } from "./hud.js";
 import { LANGS, rulesHtml, translate } from "./i18n.js";
@@ -283,4 +284,5 @@ function bindPage() {
 
 bindControls();
 bindPage();
+initDpadPosition(page.settings, prefs.saveSettings);
 applyLanguage();

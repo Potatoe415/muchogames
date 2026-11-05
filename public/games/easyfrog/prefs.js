@@ -7,11 +7,21 @@ const BEST_KEYS = {
   easy: "muchogames_easyfrog_best_easy"
 };
 
+export const DPAD_POSITIONS = ["left", "center", "right"];
+
 export const DEFAULT_SETTINGS = {
   soundEnabled: true,
   animationEnabled: true,
-  objectsMovementEnabled: true
+  objectsMovementEnabled: true,
+  dpadPosition: "center"
 };
+
+// A saved value is kept only if it has the default's type (and, for the
+// arrow position, is one of the known places).
+function validSetting(key, value) {
+  if (key === "dpadPosition") return DPAD_POSITIONS.includes(value);
+  return typeof value === typeof DEFAULT_SETTINGS[key];
+}
 
 function read(key) {
   try {
@@ -32,7 +42,7 @@ function write(key, value) {
 export const loadLang = () => read(LANG_KEY);
 export const saveLang = (lang) => write(LANG_KEY, lang);
 
-// Unknown or non-boolean fields fall back to the defaults.
+// Unknown or invalid fields fall back to the defaults.
 export function loadSettings() {
   let saved = null;
   try {
@@ -42,7 +52,7 @@ export function loadSettings() {
   }
   const settings = { ...DEFAULT_SETTINGS };
   Object.keys(settings).forEach((key) => {
-    if (typeof saved?.[key] === "boolean") settings[key] = saved[key];
+    if (validSetting(key, saved?.[key])) settings[key] = saved[key];
   });
   return settings;
 }
