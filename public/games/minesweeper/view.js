@@ -4,6 +4,8 @@ import { FLAGGED, OPEN } from "./board.js";
 
 const MIN_CELL = 14;
 const MAX_CELL = 44;
+// Big screens (TV): cells grow with the viewport height.
+const MAX_CELL_VH = 0.09;
 
 function cellLabel(board, index, t) {
   const state = board.state[index];
@@ -40,6 +42,9 @@ function buildGrid(board) {
     cell.dataset.id = `minesweeper-cell-${Math.floor(i / board.cols)}-${i % board.cols}`;
     cells.push(cell);
   }
+  // Where the TV remote's focus lands when the board appears.
+  const middle = Math.floor(board.rows / 2) * board.cols;
+  cells[middle + Math.floor(board.cols / 2)].dataset.tvFocus = "";
   grid.append(...cells);
   return { grid, cells };
 }
@@ -54,7 +59,8 @@ export function createView({ host, board, t }) {
     const padY = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
     const fitW = (host.clientWidth - padX - 8) / board.cols;
     const fitH = (host.clientHeight - padY - 8) / board.rows;
-    const size = Math.floor(Math.min(fitW, fitH, MAX_CELL));
+    const max = Math.max(MAX_CELL, window.innerHeight * MAX_CELL_VH);
+    const size = Math.floor(Math.min(fitW, fitH, max));
     grid.style.setProperty("--cell", `${Math.max(MIN_CELL, size)}px`);
   }
 

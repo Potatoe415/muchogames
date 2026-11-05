@@ -22,7 +22,10 @@ cells (no canvas), no dependency. Read this before opening the sources.
 - First reveal is always safe: the clicked cell and its 8 neighbours are excluded when the field allows it, so the first click opens an area.
 - Primary action on an open number = chord (opens the other neighbours when the flag count matches, wrong flags can lose).
 - Flag mode (HUD toggle) turns the primary tap into a flag toggle; long press still flags in both modes.
-- Timer starts on the first reveal, caps at 999, pauses while the options panel is open or the tab is hidden.
+- Timer starts on the first reveal, caps at 999, pauses while the options panel is open or the tab is hidden. A resumed match comes back paused: the clock waits for the next reveal/flag/chord (`game.js` `tick`).
+- Header: back to the hub on the start screen; ✖ `minesweeper-quit-button` (`data-match-quit`, shared confirm) back to the start screen during play.
+- Arrows move the focus between cells (`input.js`), Enter/Space = primary, F = flag. TV (`?tv=1`): focus lands on the middle cell; the cells grow with the screen (`view.js`, up to 9 % of the viewport height).
+- The best time is per level and lower-is-better, so there is no `<id>-best-score` / `finish({ score })` (rule 4.3 does not fit a time).
 - Face button, "Rejouer" and the level buttons start a new match (1 coin) and overwrite the save. Restarting mid-match calls `finish()` without `won` first (records nothing).
 - Save `minesweeper-current` (JSON `{ v, level, flagMode, elapsed (ms), rows, cols, mines, placed, mine: "0/1" per cell, state: "0/1/2" per cell }`): written at match start, after every reveal/flag/chord, on flag-mode toggle, every 1 s, on tab hidden and on `pagehide`. The board keeps its saved size/orientation (portrait swaps rows/cols); before the first reveal `placed` is false and no mine is stored.
 - "Reprendre" (`minesweeper-resume-button`) shows only when a valid save exists and calls `resume()` (no coin); the timer goes on from `elapsed` when mines are placed. Quitting (back button, reload, closed tab) keeps the save and records nothing; the save is deleted only on win/loss, with `finish({ won })`.

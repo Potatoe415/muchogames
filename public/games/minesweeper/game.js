@@ -64,6 +64,14 @@ export function createGame(options) {
   const timer = createTimer(() => hud(), saved?.elapsed);
   let flagMode = false;
   let over = false;
+  let ticking = false;
+
+  // A resumed match comes back paused: its clock waits for the next move.
+  function tick() {
+    if (ticking || !board.placed) return;
+    ticking = true;
+    timer.start();
+  }
 
   function hud(face = "playing") {
     onHud({ minesLeft: minesLeft(board), seconds: timer.seconds(), face });
@@ -86,24 +94,26 @@ export function createGame(options) {
   function onPrimary(index) {
     if (over) return;
     const state = board.state[index];
-    if (state === OPEN) return settle(chord(board, index));
+    if (state === OPEN) {
+      tick();
+      return settle(chord(board, index));
+    }
     if (flagMode) return onFlag(index);
     if (state !== HIDDEN) return;
-    const firstReveal = !board.placed;
     const changed = reveal(board, index);
-    if (firstReveal) timer.start();
+    tick();
     settle(changed);
   }
 
   function onFlag(index) {
     if (over || !toggleFlag(board, index)) return;
+    tick();
     view.update([index]);
     hud();
     onMove();
   }
 
-  const unbind = bindInput(host, { onPrimary, onFlag });
-  if (board.placed) timer.start();
+  const unbind = bindInput(host, { cols: board.cols, onPrimary, onFlag });
   hud();
 
   return {

@@ -146,6 +146,8 @@ function onEnd({ won, seconds }) {
 function showScreen(playing) {
   $("minesweeper-start-screen").hidden = playing;
   $("minesweeper-stage").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("minesweeper-quit-button").hidden = !playing;
 }
 
 // A finished match has no snapshot, so this only ever stores one in play.
@@ -197,6 +199,7 @@ function returnToStart() {
 
 async function startMatch(level) {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
@@ -210,6 +213,7 @@ function resumeMatch() {
   const saved = loadMatch();
   page.saved = saved;
   if (!saved) return renderLevels();
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   page.flagMode = saved.flagMode;
   renderMode();
@@ -267,6 +271,7 @@ function bindMatch() {
     startMatch(page.level)
   );
   $("minesweeper-change-level-button").addEventListener("click", returnToStart);
+  $("minesweeper-quit-button").addEventListener("click", returnToStart);
   $("minesweeper-see-board-button").addEventListener("click", () => {
     $("minesweeper-end").hidden = true;
   });

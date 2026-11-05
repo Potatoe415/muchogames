@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="play.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -20,6 +21,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -36,6 +38,18 @@
           >
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
         ></a>
+        <button
+          type="button"
+          class="back-button"
+          data-id="minesweeper-quit-button"
+          data-match-quit
+          data-tv-back
+          aria-label="Quitter la partie"
+          data-i18n-aria="quit"
+          hidden
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">Démineur</h1>
@@ -138,7 +152,11 @@
     </div>
 
     <main class="ms-app" data-id="minesweeper-app">
-      <section class="ms-start" data-id="minesweeper-start-screen">
+      <section
+        class="ms-start"
+        data-id="minesweeper-start-screen"
+        data-tv-screen
+      >
         <div class="ms-card">
           <h2 class="ms-logo" data-i18n="title">Démineur</h2>
           <p class="ms-pitch" data-i18n="pitch"></p>
@@ -146,10 +164,15 @@
             type="button"
             class="ms-level ms-resume"
             data-id="minesweeper-resume-button"
+            data-tv-focus
             hidden
           >
             <span class="ms-level-name" data-i18n="resume"></span>
-            <span class="ms-level-info" data-resume-info></span>
+            <span
+              class="ms-level-info"
+              data-id="minesweeper-resume-info"
+              data-resume-info
+            ></span>
           </button>
           <p class="ms-choose" data-i18n="chooseLevel"></p>
           <div class="ms-levels" data-id="minesweeper-level-list">
@@ -158,10 +181,15 @@
               class="ms-level"
               data-level="beginner"
               data-id="minesweeper-level-beginner"
+              data-tv-focus
             >
               <span class="ms-level-name" data-i18n="beginner"></span>
               <span class="ms-level-info" data-level-info></span>
-              <span class="ms-level-best" data-level-best></span>
+              <span
+                class="ms-level-best"
+                data-id="minesweeper-best-beginner"
+                data-level-best
+              ></span>
             </button>
             <button
               type="button"
@@ -171,7 +199,11 @@
             >
               <span class="ms-level-name" data-i18n="intermediate"></span>
               <span class="ms-level-info" data-level-info></span>
-              <span class="ms-level-best" data-level-best></span>
+              <span
+                class="ms-level-best"
+                data-id="minesweeper-best-intermediate"
+                data-level-best
+              ></span>
             </button>
             <button
               type="button"
@@ -181,17 +213,31 @@
             >
               <span class="ms-level-name" data-i18n="expert"></span>
               <span class="ms-level-info" data-level-info></span>
-              <span class="ms-level-best" data-level-best></span>
+              <span
+                class="ms-level-best"
+                data-id="minesweeper-best-expert"
+                data-level-best
+              ></span>
             </button>
           </div>
         </div>
       </section>
 
-      <section class="ms-stage" data-id="minesweeper-stage" hidden>
+      <section
+        class="ms-stage"
+        data-id="minesweeper-stage"
+        data-tv-screen
+        hidden
+      >
         <div class="ms-hud" data-id="minesweeper-hud">
           <div class="ms-counter" data-id="minesweeper-hud-mines">
             <span class="ms-counter-label" data-i18n="mines">Mines</span>
-            <span class="ms-counter-value" data-hud="mines">000</span>
+            <span
+              class="ms-counter-value"
+              data-id="minesweeper-mines-left"
+              data-hud="mines"
+              >000</span
+            >
           </div>
           <button
             type="button"
@@ -203,7 +249,12 @@
           ></button>
           <div class="ms-counter" data-id="minesweeper-hud-time">
             <span class="ms-counter-label" data-i18n="time">Temps</span>
-            <span class="ms-counter-value" data-hud="time">000</span>
+            <span
+              class="ms-counter-value"
+              data-id="minesweeper-time"
+              data-hud="time"
+              >000</span
+            >
           </div>
           <button
             type="button"
@@ -225,7 +276,12 @@
         </div>
         <div class="ms-board" data-id="minesweeper-board"></div>
 
-        <div class="ms-overlay" data-id="minesweeper-end" hidden>
+        <div
+          class="ms-overlay"
+          data-id="minesweeper-end"
+          data-tv-overlay
+          hidden
+        >
           <div class="ms-card">
             <h2 class="ms-overlay-title" data-id="minesweeper-end-title"></h2>
             <p data-id="minesweeper-end-line"></p>
@@ -235,12 +291,14 @@
                 type="button"
                 class="ms-button"
                 data-id="minesweeper-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               ></button>
               <button
                 type="button"
                 class="ms-button ms-button-ghost"
                 data-id="minesweeper-change-level-button"
+                data-tv-back
                 data-i18n="changeLevel"
               ></button>
               <button

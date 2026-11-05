@@ -1,5 +1,9 @@
 /* Minesweeper: classic grey bevelled skin over the shared header. The play
    area locks touch gestures (no scroll, zoom, callout or text selection). */
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   height: 100%;
@@ -53,11 +57,18 @@ body {
   background: #dbe8ff;
 }
 
+/* Android bars can cover the bottom even when the safe-area inset is 0.
+   Sizes follow the screen height (TV). */
 .ms-app {
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
+  box-sizing: border-box;
+  padding: 0 max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  font-size: max(16px, 2.4dvh);
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -86,13 +97,13 @@ body {
   flex: 1;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: 12px 0 0;
   overflow-y: auto;
 }
 
 .ms-card {
-  width: min(92vw, 380px);
-  padding: 22px 18px;
+  width: min(100%, 24em);
+  padding: 1.4em 1.1em;
   border: 1px solid #000000;
   text-align: center;
 }
@@ -104,7 +115,7 @@ body {
 
 .ms-logo {
   margin: 0 0 10px;
-  font-size: clamp(1.9rem, 8vw, 2.5rem);
+  font-size: clamp(1.9em, 8vw, 2.5em);
   font-weight: 900;
   color: #0000c8;
   text-shadow: 2px 2px 0 #ffffff;
@@ -116,7 +127,12 @@ body {
 
 .ms-levels {
   display: grid;
-  gap: 10px;
+  gap: 8px;
+}
+
+/* A saved match adds the resume button: the pitch makes room for it. */
+.ms-start:has(.ms-resume:not([hidden])) .ms-pitch {
+  display: none;
 }
 
 .ms-level {
@@ -142,25 +158,25 @@ body {
 }
 
 .ms-level-name {
-  font-size: 1.15rem;
+  font-size: 1.15em;
   font-weight: 900;
 }
 
 .ms-level-info {
-  font-size: 0.85rem;
+  font-size: 0.85em;
   color: #3a3a3a;
 }
 
 .ms-level-best,
 .ms-best {
-  font-size: 0.85rem;
+  font-size: 0.85em;
   font-weight: 800;
   color: #8a0000;
 }
 
 .ms-overlay-title {
   margin: 0 0 10px;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-weight: 900;
 }
 
@@ -172,14 +188,14 @@ body {
 }
 
 .ms-button {
-  min-width: 200px;
-  min-height: 48px;
-  padding: 10px 20px;
+  min-width: min(100%, 12em);
+  min-height: max(48px, 5.5dvh);
+  padding: 0.6em 1.2em;
   border: 2px solid #000000;
   border-radius: 6px;
   background: #0000c8;
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 1.05em;
   font-weight: 800;
   cursor: pointer;
 }
@@ -204,6 +220,89 @@ body {
   z-index: 5;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 8px;
   background: rgba(20, 26, 34, 0.45);
+}
+
+/* Short landscape phones (~360px tall): the three levels side by side. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .ms-start {
+    padding-top: 4px;
+  }
+
+  .ms-card {
+    width: min(100%, 36em);
+    padding: 0.6em 0.9em;
+  }
+
+  .ms-logo {
+    margin-bottom: 0.2em;
+    font-size: 1.6em;
+  }
+
+  .ms-pitch {
+    display: none;
+  }
+
+  .ms-resume {
+    margin-bottom: 0.5em;
+  }
+
+  .ms-card p {
+    margin-bottom: 0.4em;
+  }
+
+  .ms-levels {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .ms-level {
+    padding: 8px 6px;
+  }
+
+  .ms-actions {
+    grid-auto-flow: column;
+    margin-top: 0;
+  }
+}
+
+/* Desktop and TV: header buttons follow the screen, 3% overscan. */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(16px, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .nav-title {
+    font-size: max(1.25rem, 3.6dvh);
+  }
+
+  .ms-app {
+    padding: 0 max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .ms-card {
+    width: min(100%, 30em);
+  }
+}
+
+html.tv :focus {
+  outline: max(4px, 0.5dvh) solid #ffcc00 !important;
+  outline-offset: max(2px, 0.3dvh);
 }

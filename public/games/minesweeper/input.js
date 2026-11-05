@@ -1,14 +1,29 @@
 // Pointer, touch and keyboard input on the grid. Tap/left click = primary
-// action, long press/right click/F key = flag.
+// action, long press/right click/F key = flag, arrows move between cells.
 const LONG_PRESS_MS = 380;
 const MOVE_TOLERANCE = 10;
+const ARROWS = {
+  ArrowUp: [-1, 0],
+  ArrowDown: [1, 0],
+  ArrowLeft: [0, -1],
+  ArrowRight: [0, 1]
+};
 
 const cellIndex = (target) => {
   const cell = target instanceof Element ? target.closest(".ms-cell") : null;
   return cell ? Number(cell.dataset.index) : -1;
 };
 
-export function bindInput(host, { onPrimary, onFlag }) {
+// The TV remote script moves the focus itself (and prevents the event).
+function moveFocus(host, cols, index, [dRow, dCol]) {
+  const cells = host.querySelectorAll(".ms-cell");
+  const row = Math.floor(index / cols) + dRow;
+  const col = (index % cols) + dCol;
+  if (col < 0 || col >= cols || row < 0) return;
+  cells[row * cols + col]?.focus();
+}
+
+export function bindInput(host, { cols, onPrimary, onFlag }) {
   let press = null;
 
   function cancelPress() {
@@ -70,9 +85,13 @@ export function bindInput(host, { onPrimary, onFlag }) {
   }
 
   function onKeyDown(event) {
-    if (event.key !== "f" && event.key !== "F") return;
     const index = cellIndex(event.target);
-    if (index >= 0) onFlag(index);
+    if (index < 0) return;
+    if (ARROWS[event.key] && !event.defaultPrevented) {
+      event.preventDefault();
+      moveFocus(host, cols, index, ARROWS[event.key]);
+    }
+    if (event.key === "f" || event.key === "F") onFlag(index);
   }
 
   const preventMenu = (event) => event.preventDefault();
