@@ -3,8 +3,9 @@
   flex: 1 1 auto;
   display: grid;
   place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  padding: 1em max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   overflow-y: auto;
 }
 
@@ -98,15 +99,16 @@
 }
 
 /* Big screens: 3% overscan margin. */
-@media (min-width: 900px) and (min-height: 500px) {
+@media (min-width: 960px) and (min-height: 500px) {
   .si-start {
-    padding: 2dvh 3vw 3dvh;
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
   }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
   .si-start {
-    padding-block: 0.5em max(0.5em, env(safe-area-inset-bottom));
+    padding-top: 0.5em;
   }
 
   .si-logo {
@@ -124,5 +126,39 @@
 
   .si-best {
     margin-top: 0.5em !important;
+  }
+
+  /* Title and best left, Resume / levels / Play right: fits ~250px. */
+  .si-start .si-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    column-gap: 1.2em;
+    width: min(100%, 36em);
+  }
+
+  .si-start .si-card > * {
+    grid-column: 1;
+  }
+
+  .si-start .si-resume,
+  .si-start .si-levels,
+  .si-start [data-id="simon-play-button"] {
+    grid-column: 2;
+  }
+
+  .si-start .si-logo,
+  .si-start .si-resume {
+    grid-row: 1;
+  }
+
+  .si-start .si-start-title,
+  .si-start .si-levels {
+    grid-row: 2;
+  }
+
+  .si-start .si-start-best,
+  .si-start [data-id="simon-play-button"] {
+    grid-row: 3;
   }
 }

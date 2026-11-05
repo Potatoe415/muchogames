@@ -21,6 +21,7 @@ Solo memory game: the game lights and sounds a growing sequence of four colours,
 - Presses only count in phase `input`, with no overlay and the options panel closed. A wrong pad: buzz, the wrong and the expected pads light for 1.3 s, then the end card; `finish({ score })` without `won` (no win in Simon).
 - Pause: ☰ (Easy only: `simon-menu-button` is hidden in a Normal match, set in `mountGame`), opening the options, or the page going hidden. It stops playback; Continue replays the current round from its first colour. Not allowed during the 1.3 s mistake animation.
 - Layout: portrait = HUD row on top, board below; landscape = HUD column left. Root font 2.4vmin (16 px min).
+- Margins (PLATFORM_RULES 6.2): start screen, stage and overlays pad 40 px at the bottom and 24 px at the sides (or the safe areas, if larger). Desktop / TV (`min-width: 960px` and `min-height: 500px`): header buttons `max(36px, 6dvh)`, everything 3vw / 2dvh / `max(40px, 4dvh)` from the edges. Short landscape (`max-height: 500px`): start card and overlay cards in two columns (text left, buttons right) so they fit 640×360. Start screen order: best, Resume, levels, Play. Overlays only fade (a slide would scroll the page).
 - TV (`?tv=1` or TV user agent): focus lands on Reprendre / Jouer, then the green pad; arrows move between pads (spatial focus), OK presses. Back = pause on the Easy stage (the ☰), leave to the hub on the Normal stage (header Back, with the match-leave confirmation; the save stays), Continue in the pause, Quit on the end card.
 
 ## Saved match (decision 0054)
