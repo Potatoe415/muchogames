@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Simon's Normal level no longer shows the ☰ pause button (Easy keeps it; options / hidden page still pause both). Before: Easy Frog as an in-repo `custom` game (`public/games/easyfrog/`), game rules rewrite (decision 0061), Piou, Simon Easy level, Tetris, TTMC.
+Status: Simon's Normal level no longer shows the ☰ pause button (Easy keeps it; options / hidden page still pause both). Before: Hub Home "Les plus joués" row (decision 0062), Easy Frog as an in-repo `custom` game (`public/games/easyfrog/`), game rules rewrite (decision 0061), Piou, Simon Easy level, Tetris, TTMC.
 Focus: Owner play-tests of Easy Frog, Piou, Simon, Tetris, then 2048 and Fusion de fruits; owner phone check of the hub.
 Level: L1 (one game)
 
@@ -10,7 +10,7 @@ Context:
 - Working_On: none
 - Relevant_Files: `public/games/simon/NOTES.md`, `public/games/easyfrog/NOTES.md`, `public/hub-config.json`, `docs/PLATFORM_RULES.md`, `docs/NEW_GAME.md`
 - Do_Not_Touch: GameBoy Web; Space Cadet engine (`"resumable": false`); existing games' `localStorage` keys; the old `easyfrog` repo and its Firebase deploy (left as they were).
-- Relevant_Decisions: 0061, 0060, 0059, 0054, 0053
+- Relevant_Decisions: 0062, 0061, 0060, 0059, 0054, 0053
 
 Next:
 - Owner: play Easy Frog on a phone (portrait + landscape), desktop and the TV (`/games/easyfrog/index.html?tv=1` once) — see `docs/BACKLOG.md` Now.
@@ -33,6 +33,7 @@ Blockers:
 
 Recent_Changes:
 - 2026-11-05 Simon: ☰ hidden in a Normal match (`mountGame`), TV Back there falls to the header Back; rules TV line updated FR/EN/ES. Headless Chromium at 360×640 and 640×360: Normal start / play / lose / replay / resume with no ☰ and the status filling the row, options still pause; Easy ☰ pause / Continue unchanged. `npm run check` OK.
+- 2026-11-05 Hub Home (0062): first row "Les plus joués" (site-wide counts, else local, else "Nouveautés"); "Cartes & dés" → "Jeux de cartes", Yams moved to Réflexion. Checked in the browser (both modes). `npm run check` OK except `.claude/settings.local.json` formatting (local file, not tracked).
 - 2026-11-05 Easy Frog in-repo: 21 modules (game.js / rules.js / snapshot.js…, none >300 lines), original balance, sprites, sounds; checked in the browser at 360×640, 640×360 and 1920×1080 `?tv=1`: start, move, death, pause / Escape / TV Back, reload → Reprendre (paused, same lives / timer), game over (save cleared), victory (record per difficulty). `npm run check` OK.
 - 2026-11-05 Game rules rewrite (0061): PLATFORM_RULES, NEW_GAME boilerplate, AGENTS.md replaced from the owner's drafts.
 - 2026-11-05 Piou (`public/games/piou/`): one-button flap-between-pipes arcade, save `piou-current`.

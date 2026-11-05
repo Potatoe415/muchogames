@@ -51,6 +51,7 @@ const HOME_ID = "hub-home";
 const LIBRARY_ID = "hub-library";
 const PILLS_ID = "hub-pills";
 const SORT_ID = "hub-sort";
+const TOP_ROW_SIZE = 12;
 const LANG_SWITCHER_ID = "lang-switcher";
 const LANG_STORAGE_KEY = "bergamots-lang";
 
@@ -352,6 +353,7 @@ function renderHomeView() {
   renderHome(document.getElementById(HOME_ID), {
     sorted: sortedGames(games),
     rows: {
+      top: topGames(games),
       recent: recentGames(games),
       favorites: favoriteGames(games),
       featured: featuredGames(games)
@@ -440,8 +442,21 @@ function loadPopularRanking() {
     const map = popularMap(rows);
     if (map.size === 0) return;
     state.popular = map;
-    if (state.sort === "popular") render();
+    render();
   });
+}
+
+// First Home row: most launched games (site-wide counts, else this
+// browser's), or the newest ones when no launch has been counted yet.
+function topGames(games) {
+  const popular = state.popular.size > 0 ? state.popular : localPopularMap();
+  const mode = [...popular.values()].some((count) => count > 0)
+    ? "popular"
+    : "recent";
+  return {
+    mode,
+    games: sortGames(games, mode, popular).slice(0, TOP_ROW_SIZE)
+  };
 }
 
 function sortedGames(games) {

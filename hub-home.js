@@ -1,5 +1,5 @@
-// Home view: horizontal rows of small square tiles. Recent, Favorites and
-// Featured first (each only when it has games), then Quick games and one row
+// Home view: horizontal rows of small square tiles. Most played (or newest
+// when no launch is counted yet), then Recent, Favorites and Featured (each only when it has games), then Quick games and one row
 // per type. "See all" opens the library with that row's filter.
 import {
   EMPTY_FILTERS,
@@ -11,6 +11,8 @@ import {
 
 const COPY = {
   fr: {
+    top_popular: "Les plus joués",
+    top_recent: "Nouveautés",
     recent: "Récents",
     favorites: "Favoris",
     featured: "À la une",
@@ -18,6 +20,8 @@ const COPY = {
     more: "Tout voir"
   },
   en: {
+    top_popular: "Most played",
+    top_recent: "New games",
     recent: "Recently played",
     favorites: "Favorites",
     featured: "Featured",
@@ -25,6 +29,8 @@ const COPY = {
     more: "See all"
   },
   es: {
+    top_popular: "Los más jugados",
+    top_recent: "Novedades",
     recent: "Recientes",
     favorites: "Favoritos",
     featured: "Destacados",
@@ -39,6 +45,7 @@ const COPY = {
  */
 function homeRows(sorted, rows, copy, lang) {
   return [
+    { key: "top", title: copy[`top_${rows.top.mode}`], games: rows.top.games },
     { key: "recent", title: copy.recent, games: rows.recent },
     {
       key: "favorites",
