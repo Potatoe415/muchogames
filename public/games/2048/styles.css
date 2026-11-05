@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   height: 100dvh;
   min-height: 0;
-  overflow: hidden;
   background: linear-gradient(160deg, #eef3ee 0%, #e3e9ef 100%);
   color: #4a5560;
 }
@@ -70,7 +69,13 @@ body {
   background: #e7f0ec;
 }
 
+/* Rule 6.2: Android bars can cover the bottom even when the safe-area
+   inset is 0, and the sides carry the system back gestures. The start
+   screen, the stage and the overlays all pad with these. */
 .t2-app {
+  --t2-pad-l: max(24px, env(safe-area-inset-left, 0px));
+  --t2-pad-r: max(24px, env(safe-area-inset-right, 0px));
+  --t2-pad-b: max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px));
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
@@ -160,56 +165,6 @@ body {
   color: #7a8790;
 }
 
-/* Overlays: the board stays softly visible behind. */
-.t2-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  display: grid;
-  place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
-  overflow-y: auto;
-  background: rgba(232, 238, 232, 0.6);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  animation: t2-fade 0.3s ease-out both;
-}
-
-.t2-overlay-title {
-  margin: 0 0 0.5em;
-  font-size: 1.6em;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: #4a5560;
-}
-
-.t2-score-line {
-  font-size: 1.6em;
-  font-weight: 700;
-  color: #5f8279;
-}
-
-/* The end screen waits a moment so the final board can be seen. */
-.t2-overlay-late,
-.t2-overlay-late .t2-card {
-  animation-delay: 0.6s;
-}
-
-.t2-win-tile {
-  display: grid;
-  place-items: center;
-  width: 4.2em;
-  height: 4.2em;
-  margin: 0 auto 0.6em !important;
-  border-radius: 0.8em;
-  background: #ecd28e;
-  color: #5b4a22;
-  font-size: 1.3em;
-  font-weight: 700;
-  box-shadow: 0 0 1.6em rgba(236, 210, 142, 0.9);
-}
-
 @keyframes t2-fade {
   from {
     opacity: 0;
@@ -221,24 +176,32 @@ body {
   }
 }
 
-/* Big screens (desktop, TV): the shared header grows with the screen and
-   everything keeps 3% away from the edges (TV overscan). */
-@media (min-width: 900px) and (min-height: 500px) {
+/* Desktop and TV, 960x540 up to 3840x2160: the shared header grows with
+   the screen and everything keeps 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
   .game-nav {
-    height: clamp(60px, 8dvh, 220px);
-    padding-inline: 3vw;
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
   }
 
   .back-button,
   .options-button {
-    width: clamp(36px, 6dvh, 160px);
-    height: clamp(36px, 6dvh, 160px);
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
   }
 
   .back-button svg,
   .options-button svg {
     width: 50%;
     height: 50%;
+  }
+
+  .t2-app {
+    --t2-pad-l: max(3vw, env(safe-area-inset-left, 0px));
+    --t2-pad-r: max(3vw, env(safe-area-inset-right, 0px));
+    --t2-pad-b: max(40px, 4dvh);
   }
 }
 
@@ -256,27 +219,14 @@ html.tv :focus {
     padding: 0.7em 1em 0.9em;
   }
 
-  .t2-overlay-title {
-    margin-bottom: 0.2em;
-    font-size: 1.3em;
-  }
-
   .t2-button {
     min-height: 2.6em;
     margin-top: 0.4em;
   }
-
-  .t2-win-tile {
-    width: 3em;
-    height: 3em;
-    margin-bottom: 0.3em !important;
-    font-size: 1em;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .t2-card,
-  .t2-overlay {
+  .t2-card {
     animation: none;
   }
 }

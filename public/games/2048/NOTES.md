@@ -13,7 +13,7 @@ Solo sliding-tile puzzle: slide the 4×4 board, equal tiles merge, reach 2048, k
 | `input.js` | Arrows / WASD / ZQSD on the document (skipped when `defaultPrevented`, so the TV remote's focus moves win), swipe on the board (≥ 24 px), tap near an edge (outside the central 12 %) as the tap alternative. |
 | `hud.js` | Score, best (live max), undo count / disabled state (stage + menu button), floating "+N". |
 | `i18n.js`, `prefs.js`, `save.js`, `audio.js` | FR/EN/ES copy + rules; language, sound, best per level (`2048-best` = easy, `2048-best-normal`); match save; sounds. |
-| `styles.css`, `start.css`, `stage.css`, `tiles.css` | Frame, cards, buttons, overlays, TV ring; start screen; HUD + board layout; cells, tiles, animations, palette (`[data-value]` → `--tile-bg` / `--tile-ink`, also used by the start logo). |
+| `styles.css`, `start.css`, `stage.css`, `overlays.css`, `tiles.css` | Frame, cards, buttons, rule 6.2 pads (`--t2-pad-*` on `.t2-app`), big-screen header, TV ring; start screen; HUD + board layout; pause / win / end overlays; cells, tiles, animations, palette (`[data-value]` → `--tile-bg` / `--tile-ink`, also used by the start logo). |
 
 ## Rules in code
 
@@ -21,7 +21,8 @@ Solo sliding-tile puzzle: slide the 4×4 board, equal tiles merge, reach 2048, k
 - End: no empty cell and no equal neighbours → end overlay (fades in after 0.6 s so the final board shows). `finish({ won, score })`, `won` = 2048 reached. "Terminer la partie" ends the same way.
 - Levels, picked on the start screen ("Facile" / "Normal" buttons, `data-level`): Easy = ↶ undo one step back (the state before the last move), 3 per match; Normal = no undo, the ↶ buttons are hidden and no undo step is kept. "Rejouer" keeps the level.
 - Turn-based, so a resumed match comes back straight to the board; the ☰ menu is the pause (Continue, Undo, Quit with `data-match-quit`).
-- Layout: portrait = HUD row on top, board anchored under it; landscape = HUD column left, board centred. Root font 2.4vmin (16 px min); ≥ 900×500 the header grows and the stage keeps 3 % from the edges.
+- Layout: portrait = HUD row on top, board anchored under it; landscape = HUD column left, board centred. Root font 2.4vmin (16 px min). Start screen, stage and overlays pad with rule 6.2 (bottom ≥ 40px, sides ≥ 24px, safe areas included); ≥ 960×500 the header grows (boilerplate block) and the sides go to 3vw, bottom max(40px, 4dvh).
+- Dashboard ids predate the spec names and are kept: `2048-easy-button` / `2048-normal-button` (new game), `2048-start-best` (best), `2048-score-value` (live score), `2048-end-best` (end-screen best).
 - TV (`?tv=1` or TV user agent): focus lands on Reprendre / Nouvelle partie, then the board, which owns all four arrows (`data-tv-keys`). Back = menu on the stage, Continue in the menu / win overlay, Quit on the end card.
 
 ## Saved match (decision 0054)

@@ -3,8 +3,7 @@
   flex: 1 1 auto;
   display: grid;
   place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  padding: 1em var(--t2-pad-r) var(--t2-pad-b) var(--t2-pad-l);
   overflow-y: auto;
 }
 
@@ -93,16 +92,16 @@
   opacity: 0.9;
 }
 
-/* Big screens: 3% overscan margin. */
-@media (min-width: 900px) and (min-height: 500px) {
+/* Big screens: 3% overscan margin (side and bottom pads in styles.css). */
+@media (min-width: 960px) and (min-height: 500px) {
   .t2-start {
-    padding: 2dvh 3vw 3dvh;
+    padding-top: 2dvh;
   }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
   .t2-start {
-    padding-block: 0.5em max(0.5em, env(safe-area-inset-bottom));
+    padding-top: 0.5em;
   }
 
   .t2-logo {

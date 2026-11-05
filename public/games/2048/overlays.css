@@ -1,0 +1,84 @@
+/* Pause, win and end overlays: the board stays softly visible behind.
+   Cards and buttons in styles.css. */
+.t2-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 1em var(--t2-pad-r) var(--t2-pad-b) var(--t2-pad-l);
+  overflow-y: auto;
+  background: rgba(232, 238, 232, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: t2-fade-in 0.3s ease-out both;
+}
+
+/* The full-screen overlay only fades: sliding it would push the page. */
+@keyframes t2-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.t2-overlay-title {
+  margin: 0 0 0.5em;
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #4a5560;
+}
+
+.t2-score-line {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #5f8279;
+}
+
+/* The end screen waits a moment so the final board can be seen. */
+.t2-overlay-late,
+.t2-overlay-late .t2-card {
+  animation-delay: 0.6s;
+}
+
+.t2-win-tile {
+  display: grid;
+  place-items: center;
+  width: 4.2em;
+  height: 4.2em;
+  margin: 0 auto 0.6em !important;
+  border-radius: 0.8em;
+  background: #ecd28e;
+  color: #5b4a22;
+  font-size: 1.3em;
+  font-weight: 700;
+  box-shadow: 0 0 1.6em rgba(236, 210, 142, 0.9);
+}
+
+/* Big screens: 3% overscan margin (side and bottom pads in styles.css). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .t2-overlay {
+    padding-top: 2dvh;
+  }
+}
+
+/* Short landscape screens: the overlays must fit in ~300px. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .t2-overlay-title {
+    margin-bottom: 0.2em;
+    font-size: 1.3em;
+  }
+
+  .t2-win-tile {
+    width: 3em;
+    height: 3em;
+    margin-bottom: 0.3em !important;
+    font-size: 1em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t2-overlay {
+    animation: none;
+  }
+}
