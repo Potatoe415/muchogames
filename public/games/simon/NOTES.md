@@ -19,9 +19,9 @@ Solo memory game: the game lights and sounds a growing sequence of four colours,
 - Round = the sequence plus one random colour (the first round has one). Playback starts 0.8 s after the round begins; speeds (lit / gap ms): 600/220 for 1-5 colours, 500/180 for 6-9, 410/150 for 10-13, 330/120 from 14.
 - Levels (picked on the start screen, Normal by default, last choice remembered): Normal = the speeds above, untouched. Easy = lead-in and every lit / gap time × 1.5 (`slowed`). Same rules, one mistake still ends. No answer time limit exists on either level. The HUD shows the level under the Record it belongs to; the end card names it.
 - Presses only count in phase `input`, with no overlay and the options panel closed. A wrong pad: buzz, the wrong and the expected pads light for 1.3 s, then the end card; `finish({ score })` without `won` (no win in Simon).
-- Pause: ☰, opening the options, or the page going hidden. It stops playback; Continue replays the current round from its first colour. Not allowed during the 1.3 s mistake animation.
+- Pause: ☰ (Easy only: `simon-menu-button` is hidden in a Normal match, set in `mountGame`), opening the options, or the page going hidden. It stops playback; Continue replays the current round from its first colour. Not allowed during the 1.3 s mistake animation.
 - Layout: portrait = HUD row on top, board below; landscape = HUD column left. Root font 2.4vmin (16 px min).
-- TV (`?tv=1` or TV user agent): focus lands on Reprendre / Jouer, then the green pad; arrows move between pads (spatial focus), OK presses. Back = pause on the stage, Continue in the pause, Quit on the end card.
+- TV (`?tv=1` or TV user agent): focus lands on Reprendre / Jouer, then the green pad; arrows move between pads (spatial focus), OK presses. Back = pause on the Easy stage (the ☰), leave to the hub on the Normal stage (header Back, with the match-leave confirmation; the save stays), Continue in the pause, Quit on the end card.
 
 ## Saved match (decision 0054)
 

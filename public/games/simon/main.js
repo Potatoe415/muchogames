@@ -148,13 +148,16 @@ function mountGame(saved) {
   unmountGame();
   page.summary = null;
   page.newBest = false;
+  const difficulty = saved ? saved.difficulty : page.difficulty;
+  // Normal has no pause button: TV Back falls to the header's Back.
+  $("simon-menu-button").hidden = difficulty === "normal";
   showScreen(true);
   showOverlay(null);
   page.game = createGame({
     board: $("simon-board"),
     audio: page.audio,
     saved,
-    difficulty: saved ? saved.difficulty : page.difficulty,
+    difficulty,
     canPlay,
     onHud,
     onEnd

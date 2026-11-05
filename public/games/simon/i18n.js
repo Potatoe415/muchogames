@@ -139,19 +139,19 @@ const RULES = {
 <p>Une seule erreur termine la partie. Ton score est le nombre de tours réussis ; le meilleur est gardé sur cet appareil.</p>
 <p>Plus la séquence est longue, plus elle est jouée vite.</p>
 <p>Niveau, à choisir avant de jouer : en Facile, la séquence est jouée 1,5 fois plus lentement ; Normal garde la vitesse classique. Une erreur fait perdre dans les deux. Chaque niveau a son propre record.</p>
-<p>Commandes : touche ou clique les couleurs ; au clavier, 1 vert, 2 rouge, 3 jaune, 4 bleu, ou les flèches puis Entrée ; sur la télé, les flèches de la télécommande puis OK, Retour pour le menu.</p>`,
+<p>Commandes : touche ou clique les couleurs ; au clavier, 1 vert, 2 rouge, 3 jaune, 4 bleu, ou les flèches puis Entrée ; sur la télé, les flèches de la télécommande puis OK, Retour pour la pause en Facile, pour quitter en Normal.</p>`,
   en: `<p>The game lights a colour and plays its sound. Repeat it by pressing the same colour.</p>
 <p>Every round the sequence starts again from the beginning with one more colour. Repeat all of it, in order.</p>
 <p>A single mistake ends the game. Your score is the number of rounds completed; the best one is kept on this device.</p>
 <p>The longer the sequence, the faster it plays.</p>
 <p>Level, chosen before playing: on Easy the sequence plays 1.5 times slower; Normal keeps the classic speed. A mistake loses on both. Each level has its own best.</p>
-<p>Controls: tap or click the colours; on a keyboard, 1 green, 2 red, 3 yellow, 4 blue, or the arrows then Enter; on a TV, the remote's arrows then OK, Back for the menu.</p>`,
+<p>Controls: tap or click the colours; on a keyboard, 1 green, 2 red, 3 yellow, 4 blue, or the arrows then Enter; on a TV, the remote's arrows then OK, Back to pause on Easy, to leave on Normal.</p>`,
   es: `<p>El juego enciende un color y toca su sonido. Repítelo pulsando el mismo color.</p>
 <p>En cada ronda la secuencia vuelve a empezar con un color más. Repítela entera, en orden.</p>
 <p>Un solo error termina la partida. Tus puntos son las rondas superadas; el récord se guarda en este dispositivo.</p>
 <p>Cuanto más larga es la secuencia, más rápido suena.</p>
 <p>Nivel, a elegir antes de jugar: en Fácil la secuencia suena 1,5 veces más despacio; Normal mantiene la velocidad clásica. Un error hace perder en los dos. Cada nivel tiene su propio récord.</p>
-<p>Controles: toca o haz clic en los colores; con teclado, 1 verde, 2 rojo, 3 amarillo, 4 azul, o las flechas y Enter; en la tele, las flechas del mando y OK, Atrás para el menú.</p>`
+<p>Controles: toca o haz clic en los colores; con teclado, 1 verde, 2 rojo, 3 amarillo, 4 azul, o las flechas y Enter; en la tele, las flechas del mando y OK, Atrás para la pausa en Fácil, para salir en Normal.</p>`
 };
 
 const fill = (text, vars = {}) =>
