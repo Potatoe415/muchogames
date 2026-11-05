@@ -165,8 +165,8 @@ dialog (shared match dialog, feedback, options panel, then the last shown
   `[data-tv-focus]`.
 - `play()` — call from the click that starts or resumes a match:
   fullscreen + screen wake lock when TV is on (refusals ignored).
-- Used by Fusion de fruits, 2048, Simon, Piou and Easy Frog. Millionaire still runs its own `tv.js` /
-  `tv-nav.js`.
+- Used by every in-repo game since the 2026-11-05 platform pass. Millionaire keeps only
+  its zoomed 1920x1080 layout in `tv.js`.
 
 ## `public/shared/js/feedback.js` (global script → `window.MuchogamesFeedback`)
 

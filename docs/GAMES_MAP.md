@@ -36,8 +36,8 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 | `blackstories` | `public/games/blackstories/` | `blackstories.js` (482), `blackstories.css` (463) — **over limit**, `blackstories-i18n.js` (40), `blackstories-save.js` | engine, header, profile | yes |
 | `olemains` | `public/games/olemains/` | 9 files incl. `save.js`, `i18n.js`, `play.css` (none >300) | engine, header, profile | yes |
 | `cafards` | `public/games/cafards/` | `game.js` (300), `save.js`, `i18n.js`, `board.js`, `setup.js`, `deck.js`, `board.css` (none >300) | header, profile | yes |
-| `millionaire` | `public/games/millionaire/` | `app.js` (**over 300-line limit**), `save.js`; TV mode in `tv.js`, `tv-nav.js`, `tv.css`, `tv-game.css` | engine, header, profile | yes |
-| `pyramide` | `public/games/pyramide/` | `app.js` (1077), `i18n.js` (324) — **both over limit**, `save.js` | header, profile | yes |
+| `millionaire` | `public/games/millionaire/` | `app.js` (1416), `style.css` (1429) — **over limit**, `save.js`; shared `tv-remote.js` + zoomed TV layout in `tv.js`, `tv.css`, `tv-game.css` | engine, header, profile | yes |
+| `pyramide` | `public/games/pyramide/` | `app.js` (1209), `style.css` (996), `i18n.js` (336) — **over limit**, `save.js`; shared `tv-remote.js` | header, profile | yes |
 | `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,810 total (none >300; `styles.css` 430, `index.html` 339 over); `main.js` entry | header, session | yes |
 | `jezzball` | `public/games/jezzball/` | 17 ES modules, ~1,860 total (none >300; `styles.css` 583, `index.html` 499 over); `main.js` entry | header, session | yes |
 | `skifree` | `public/games/skifree/` | 25 ES modules + 2 CSS, ~3,300 total (over 300: `main.js` 325, `styles.css` 394, `index.html` 392); `main.js` entry; original bitmaps in `assets/sprites.png` | header, session | yes |

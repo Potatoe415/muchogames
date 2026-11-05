@@ -327,8 +327,8 @@ from 2026-11-02; existing games are brought to it one by one by the owner.
   `data-tv-focus`, `data-tv-back` and `data-tv-keys` (`shared/CONTRACT.md`).
   Call `MuchogamesTv.play()` in the click that starts or resumes a match,
   before any `await`: it asks for fullscreen and a screen wake lock
-  (refusals ignored). Millionaire (`tv.js`, `tv-nav.js`) still runs its own
-  older copy.
+  (refusals ignored). Millionaire uses it too and keeps only its zoomed
+  layout in its own `tv.js`.
 - TV behaviour turns on from `?tv=1` (`?tv=0` off, remembered per game) or
   a TV user agent. The layout never depends on it: it follows the screen
   size.

@@ -65,7 +65,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Bring the existing games to the *(new games)* rules one by one (`docs/PLATFORM_RULES.md` sections 3.2, 4.3, 6.2; decision 0061): Game Dashboard with Resume above New game, live score + best for solo score games, 40px bottom / 24px side margin. Keep each game's current `localStorage` keys.
 - [ ] `MuchogamesMatch.finish({ score })` without `won` forwards nothing to the shared profile (`game-session.js` returns early): decide whether high-score games should report their score (L2: profile data).
 - [ ] Shared header buttons are a fixed 36px (`game-header.css`): under the TV 5% control size at 1080p and 4K unless a game scales them (the boilerplate in `docs/NEW_GAME.md` and Simon do).
-- [ ] Millionaire: replace `tv-nav.js` and the detection / wake-lock half of `tv.js` with the shared `tv-remote.js` (keep its zoomed layout), then re-check on the Bravia.
+- [x] Millionaire: replace `tv-nav.js` and the detection / wake-lock half of `tv.js` with the shared `tv-remote.js` (keep its zoomed layout), then re-check on the Bravia.
 - [ ] Pyramide: 55 broken accent characters (U+FFFD) already committed in `i18n.js` and 9 in `app.js` (rules show "R�gles"); retype the FR/ES copy. Pre-existing, found 2026-10-29.
 - [ ] Split `blackstories.js` (414 lines since the save was added).
 - [ ] Jeu de dames online mode on `online-room.js` (needs `checkers` in `ROOM_GAMES`, `api/_lib/rooms.js` — L2).
