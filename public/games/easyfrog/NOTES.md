@@ -14,7 +14,7 @@ The owner's road-and-pond crossing game ("EasyFrog by Falcon"), ported on 2026-1
 | `renderer.js`, `view.js`, `assets.js`, `audio.js` | Board drawing; canvas fit + backing store at screen pixels (auto-lowered under ~45 fps); images (`_mod1` = "Look moderne"); sounds. |
 | `input.js`, `hud.js` | Keys (arrows / WASD, Escape or P pause, F8 god mode, F9 skip level), swipes on the board, D-pad; HUD. |
 | `snapshot.js`, `save.js`, `prefs.js`, `i18n.js` | Match JSON + validation; save key; settings / language / best; copy + rules. |
-| `style.css`, `stage.css` | Frame, dashboard, cards, overlays; play screen (HUD, fitted board, D-pad under it in portrait, beside it in landscape, hidden with a fine pointer or on TV). |
+| `style.css`, `stage.css` | Frame, dashboard, cards, overlays; play screen: pause ❚❚ centred in the shared header, HUD, fitted board, D-pad (hidden with a fine pointer or on TV). Portrait phones: the board breaks out of the 24px side margins to run 2px from each edge (canvas full width when the height allows, checked 360×640 → 412×780), D-pad on one row under it. Landscape: D-pad beside the board. |
 
 ## Rules in code
 

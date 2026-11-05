@@ -277,7 +277,8 @@ html.tv :focus {
   }
 
   .back-button,
-  .options-button {
+  .options-button,
+  .ef-tool {
     width: max(36px, 6dvh);
     height: max(36px, 6dvh);
     font-size: max(1rem, 3dvh);

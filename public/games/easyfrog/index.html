@@ -52,7 +52,20 @@
           <span aria-hidden="true">✕</span>
         </button>
       </div>
-      <div class="nav-center"></div>
+      <div class="nav-center">
+        <!-- In a match only: pause (also what the TV remote Back presses). -->
+        <button
+          type="button"
+          class="ef-tool"
+          data-id="easyfrog-pause-button"
+          data-tv-back
+          aria-label="Pause"
+          data-i18n-aria="pause"
+          hidden
+        >
+          <span aria-hidden="true">❚❚</span>
+        </button>
+      </div>
       <div class="nav-side nav-right">
         <button
           type="button"
@@ -274,16 +287,6 @@
             data-i18n="godMode"
             hidden
           ></span>
-          <button
-            type="button"
-            class="ef-tool"
-            data-id="easyfrog-pause-button"
-            data-tv-back
-            aria-label="Pause"
-            data-i18n-aria="pause"
-          >
-            <span aria-hidden="true">❚❚</span>
-          </button>
         </div>
         <div class="ef-stage">
           <div

@@ -103,6 +103,7 @@ function showScreen(playing) {
   $("easyfrog-play-screen").hidden = !playing;
   $("game-back-button").hidden = playing;
   $("easyfrog-quit-button").hidden = !playing;
+  $("easyfrog-pause-button").hidden = !playing;
 }
 
 function showOverlay(name) {

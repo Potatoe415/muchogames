@@ -33,12 +33,12 @@
   color: #ff4444;
 }
 
+/* Pause, centred in the shared header, sized like its round buttons. */
 .ef-tool {
-  width: max(40px, 6dvh);
-  height: max(40px, 6dvh);
-  margin-left: auto;
+  width: 40px;
+  height: 40px;
   border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0.5em;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   font: inherit;
@@ -125,6 +125,43 @@ html.tv .ef-board:focus .ef-canvas {
 
 .ef-pad-right {
   grid-area: right;
+}
+
+/* Portrait phones and tablets: the board leaves the side margins and runs
+   edge to edge (2px from each side), so the canvas fills the width when
+   the height allows it (it keeps its 720×880 shape). The HUD shrinks to
+   one line and the D-pad to one row to leave it the height. */
+@media (orientation: portrait) and (max-width: 959px) {
+  .ef-shell:has(.ef-play:not([hidden])) {
+    padding-top: 4px;
+  }
+
+  .ef-play,
+  .ef-stage {
+    gap: 6px;
+  }
+
+  .ef-hud {
+    gap: 0.2em 0.7em;
+    font-size: 0.85em;
+  }
+
+  .ef-board {
+    margin-right: calc(2px - max(24px, env(safe-area-inset-right, 0px)));
+    margin-left: calc(2px - max(24px, env(safe-area-inset-left, 0px)));
+  }
+
+  /* One row, the most used arrow (up) twice as wide. */
+  .ef-dpad {
+    grid-template-areas: "left up down right";
+    grid-template-columns: 48px 96px 48px 48px;
+    grid-auto-rows: 48px;
+    gap: 6px;
+  }
+
+  .ef-pad-up {
+    border-radius: 24px;
+  }
 }
 
 /* Landscape: the D-pad moves beside the board. */
