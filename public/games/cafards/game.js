@@ -1,260 +1,300 @@
-const VEG=[{key:"tomate",short:"TM"},{key:"salade",short:"SL"},{key:"poivron",short:"PV"},{key:"chou-fleur",short:"CF"}];
-const ASSETS={tomate:{legume:"tomate.png",tabou:"tomate_x.png"},salade:{legume:"salade.png",tabou:"salad_x.png"},poivron:{legume:"poivron.png",tabou:"poivron_x.png"},"chou-fleur":{legume:"choux.png",tabou:"choux_x.png"}};
-const RULES={fr:"rules-fr.html",en:"rules-en.html",es:"rules-es.html"};
-const I18N={fr:{htmlLang:"fr",eyebrow:"Jeu oral tactile",title:"Salade de Cafards",intro:"Configure la partie, puis touchez la pile active pour reveler chaque nouvelle carte.",players:"Nombre de joueurs",deck:"Cartes totales",winners:"Nombre de gagnants",timer:"Minuteur",timerToggle:"Activer la lumiere rouge",timerSeconds:"Secondes avant alerte",note:"Jeu officiel : 112 cartes legumes (28 de chaque type) et 16 cartes taboues (4 par legume).",start:"Lancer la partie",resume:"Reprendre",activePile:"Pile active",restart:"Reconfigurer",pile:"Pile",waitingTimer:"Minuteur en attente",timerOff:"Minuteur desactive",alertIn:"Alerte dans {value} s",timeUp:"Temps depasse",gameOver:"Partie terminee",touchActive:"Touchez uniquement la pile active.",noCards:"n'a plus de cartes. Victoire immediate.",wins:"a vide sa main et gagne la partie.",starts:"commence. Touchez la pile active pour reveler une carte.",revealed:"revele",tabooReveal:"revele un CAFARD {veg}. Le legume devient tabou, on bascule de pile.",onPile:"sur la pile {pile}.",nothingToCollect:"Aucune carte a ramasser pour l'instant.",collects:"ramasse {count} cartes et la table repart sur la pile A.",hand:"Main",taken:"Cartes ramassees",collectBtn:"Faire ramasser {player}",setupReady:"Pret a lancer la partie.",setupError:"Demarrage impossible : {message}",rulesTitle:"Regles"},en:{htmlLang:"en",eyebrow:"Touch-first spoken play",title:"Cockroach Salad",intro:"Set up the match, then tap the active pile to reveal each new card.",players:"Players",deck:"Total cards",winners:"Number of winners",timer:"Timer",timerToggle:"Enable red warning light",timerSeconds:"Seconds before alert",note:"Official deck: 112 vegetable cards (28 of each type) and 16 taboo cards (4 per vegetable).",start:"Start game",resume:"Resume",activePile:"Active pile",restart:"Back to setup",pile:"Pile",waitingTimer:"Timer waiting",timerOff:"Timer disabled",alertIn:"Alert in {value} s",timeUp:"Time is up",gameOver:"Game over",touchActive:"Tap only the active pile.",noCards:"has no cards left. Instant win.",wins:"emptied their hand and wins the game.",starts:"starts. Tap the active pile to reveal a card.",revealed:"reveals",tabooReveal:"reveals a COCKROACH {veg}. That vegetable is now taboo, switch piles.",onPile:"on pile {pile}.",nothingToCollect:"There are no cards to collect right now.",collects:"collects {count} cards and play restarts on pile A.",hand:"Hand",taken:"Collected cards",collectBtn:"Give cards to {player}",setupReady:"Ready to start the game.",setupError:"Unable to start: {message}",rulesTitle:"Rules"},es:{htmlLang:"es",eyebrow:"Juego oral tactil",title:"Ensalada de Cucarachas",intro:"Configura la partida y luego toca la pila activa para revelar cada carta nueva.",players:"Jugadores",deck:"Cartas totales",winners:"Número de ganadores",timer:"Temporizador",timerToggle:"Activar luz roja",timerSeconds:"Segundos antes de la alerta",note:"Mazo oficial: 112 cartas de verduras (28 de cada tipo) y 16 cartas prohibidas (4 por verdura).",start:"Empezar partida",resume:"Reanudar",activePile:"Pila activa",restart:"Volver a configurar",pile:"Pila",waitingTimer:"Temporizador en espera",timerOff:"Temporizador desactivado",alertIn:"Alerta en {value} s",timeUp:"Tiempo agotado",gameOver:"Partida terminada",touchActive:"Toca solo la pila activa.",noCards:"ya no tiene cartas. Victoria inmediata.",wins:"vacio su mano y gana la partida.",starts:"empieza. Toca la pila activa para revelar una carta.",revealed:"revela",tabooReveal:"revela una CUCARACHA {veg}. Esa verdura queda prohibida y se cambia de pila.",onPile:"en la pila {pile}.",nothingToCollect:"No hay cartas para recoger ahora mismo.",collects:"recoge {count} cartas y la mesa vuelve a la pila A.",hand:"Mano",taken:"Cartas recogidas",collectBtn:"Hacer que recoja {player}",setupReady:"Listo para empezar la partida.",setupError:"No se puede iniciar: {message}",rulesTitle:"Reglas"}};
-function readHubLang(){try{const stored=localStorage.getItem("bergamots-lang");return ["fr","en","es"].includes(stored)?stored:"fr";}catch{return "fr";}}
-const state={lang:readHubLang(),players:[],piles:[[],[]],activePile:0,current:0,timerId:null,timerTickId:null,started:false,phase:"setup",config:{count:4,deckSize:128,winners:1,timerOn:true,timerMs:1500}}; let el={};
-const q=(s)=>document.querySelector(s), qa=(s)=>[...document.querySelectorAll(s)];
-function t(k,v={}){let s=(I18N[state.lang]&&I18N[state.lang][k])||I18N.fr[k]||k; Object.entries(v).forEach(([n,x])=>s=s.replace(`{${n}}`,x)); return s;}
-function vegLabel(key){const labels={fr:{tomate:"tomate",salade:"salade",poivron:"poivron","chou-fleur":"chou-fleur"},en:{tomate:"tomato",salade:"lettuce",poivron:"pepper","chou-fleur":"cauliflower"},es:{tomate:"tomate",salade:"lechuga",poivron:"pimiento","chou-fleur":"coliflor"}}; return labels[state.lang][key];}
-const shuffle = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
+// Salade de Cafards page shell: Game Dashboard (resume, setup, new game),
+// the match (piles, turns, red-light timer, collect), the end card, save and
+// resume. Copy in i18n.js, deck rules in deck.js, settings and the red
+// light in setup.js, rendering in board.js, save in save.js.
+const GAME_ID = "cafards";
+const RULES = { fr: "rules-fr.html", en: "rules-en.html", es: "rules-es.html" };
+const { translate, applyCopy, readLanguage, storeLanguage } = window.CafardsI18n;
+const state = {
+  lang: readLanguage(),
+  players: [],
+  piles: [[], []],
+  activePile: 0,
+  current: 0,
+  started: false,
+  phase: "setup",
+  config: { count: 4, deckSize: 128, winners: 1, timerOn: true, timerMs: 1500 }
 };
-function cacheDom(){el={setup:q("#setup"),game:q("#game"),playerCount:q("#playerCount"),deckSize:q("#deckSize"),winnersCount:q("#winnersCount"),timerEnabled:q("#timerEnabled"),timerSeconds:q("#timerSeconds"),startBtn:q("#startBtn"),resumeBtn:q('[data-id="cafards-resume-button"]'),backBtn:q("#backBtn"),timerLight:q("#timerLight"),timerText:q("#timerText"),pileA:q("#pileA"),pileB:q("#pileB"),pileAHit:q("#pileAHit"),pileBHit:q("#pileBHit"),pileACta:q("#pileACta"),pileBCta:q("#pileBCta"),pileShells:qa(".pile-shell"),players:q("#players"),cardTpl:q("#cardTpl"),langButtons:qa(".lang-btn"),i18nNodes:qa("[data-i18n]"),optionsBtn:q("#optionsBtn"),optionsPanel:q("#optionsPanel"),rulesSection:q('[data-id="game-options-rules"]'),rulesFrame:q("#rulesFrame"),winnerOverlay:q("#winnerOverlay"),winnerText:q("#winnerText")};}
-function setSetupStatus(){/* no-op: status removed from splash UI */}
-function renderPileLabels(){}
-function applyI18n(){document.documentElement.lang=t("htmlLang"); el.i18nNodes.forEach((n)=>n.textContent=t(n.dataset.i18n)); renderPileLabels(); el.pileACta.textContent="Tap here!"; el.pileBCta.textContent="Tap here!"; el.timerText.textContent=state.started?el.timerText.textContent:t("waitingTimer"); el.langButtons.forEach((b)=>b.classList.toggle("active",b.dataset.lang===state.lang)); setSetupStatus(t("setupReady")); renderPlayers(); if(el.rulesSection.open) el.rulesFrame.src=RULES[state.lang];}
-function readConfig(){
-  const playersRaw=Number(el.playerCount.value)||4;
-  state.config.count=Math.min(8,Math.max(2,Math.round(playersRaw)));
-  const deckRaw=Number(el.deckSize.value)||128;
-  state.config.deckSize=Math.min(256,Math.max(32,deckRaw));
-  const winnersRaw=Number(el.winnersCount.value)||1;
-  state.config.winners=Math.min(state.config.count,Math.max(1,winnersRaw));
-  const baseMs=(Number(el.timerSeconds.value)||1.5)*1000;
-  state.config.timerOn=el.timerEnabled.checked;
-  state.config.timerMs=Math.max(500,baseMs);
-}
-function createExactDeck(){const cards=[]; VEG.forEach((veg)=>{for(let i=0;i<28;i++)cards.push({type:"legume",veg:veg.key}); for(let i=0;i<4;i++)cards.push({type:"tabou",veg:veg.key});}); return shuffle(cards);}
-function createBalancedDeck(total){
-  const cards=[];
-  const targetTabooTotal=Math.max(VEG.length,Math.round(total/8));
-  const basePerVeg=Math.floor(targetTabooTotal/VEG.length);
-  let remainder=targetTabooTotal-basePerVeg*VEG.length;
-  VEG.forEach((veg)=>{
-    const count=basePerVeg+(remainder>0?1:0);
-    if(remainder>0)remainder-=1;
-    for(let i=0;i<count;i++)cards.push({type:"tabou",veg:veg.key});
-  });
-  const remaining=Math.max(0,total-cards.length);
-  const perVeg=Math.floor(remaining/VEG.length);
-  VEG.forEach((veg)=>{
-    for(let i=0;i<perVeg;i++)cards.push({type:"legume",veg:veg.key});
-  });
-  while(cards.length<total){
-    const veg=VEG[cards.length%VEG.length];
-    cards.push({type:"legume",veg:veg.key});
-  }
-  return shuffle(cards);
-}
-const createDeck=(total)=>total===128?createExactDeck():createBalancedDeck(total);
-function deal(){
-  const playersCount=state.config.count;
-  const targetTotal=state.config.deckSize-(state.config.deckSize%playersCount);
-  const total=Math.max(playersCount,targetTotal);
-  const deck=createDeck(total);
-  state.players=Array.from({length:playersCount},()=>({hand:[],losses:0}));
-  deck.forEach((card,i)=>state.players[i%playersCount].hand.push(card));
-}
-const currentPlayer=()=>state.players[state.current%state.players.length];
-function makePose(index,pileIndex){
-  const spread=Math.min(index,12);
-  const direction=index%2===0?1:-1;
-  const baseAngle=7+Math.random()*7;
-  const isMobile=typeof window!=="undefined"&&window.matchMedia&&window.matchMedia("(max-width: 900px)").matches;
-  const verticalShift=isMobile&&pileIndex===0?-52:0;
-  return {
-    left:24+spread*2+Math.random()*7,
-    top:24+spread*3+Math.random()*8+verticalShift,
-    angle:direction*baseAngle+(pileIndex?1.5:-1.5)
+let el = {};
+let optionsPanelApi = null;
+let starting = false;
+const q = (selector) => document.querySelector(selector);
+const byId = (dataId) => q(`[data-id="${dataId}"]`);
+const t = (key, values) => translate(state.lang, key, values);
+
+function cacheDom() {
+  el = {
+    setup: q("#setup"),
+    game: q("#game"),
+    playerCount: q("#playerCount"),
+    deckSize: q("#deckSize"),
+    winnersCount: q("#winnersCount"),
+    timerEnabled: q("#timerEnabled"),
+    timerSeconds: q("#timerSeconds"),
+    steps: [...document.querySelectorAll(".step")],
+    startBtn: q("#startBtn"),
+    resumeBtn: byId("cafards-resume-button"),
+    backLink: byId("game-back-button"),
+    quitBtn: byId("cafards-quit-button"),
+    setupError: byId("cafards-setup-error"),
+    timerLight: q("#timerLight"),
+    timerText: q("#timerText"),
+    pileA: q("#pileA"),
+    pileB: q("#pileB"),
+    pileHits: [q("#pileAHit"), q("#pileBHit")],
+    pileShells: [...document.querySelectorAll(".pile-shell")],
+    players: q("#players"),
+    cardTpl: q("#cardTpl"),
+    langButtons: [...document.querySelectorAll(".lang-btn")],
+    optionsBtn: q("#optionsBtn"),
+    optionsPanel: q("#optionsPanel"),
+    rulesSection: byId("game-options-rules"),
+    rulesFrame: q("#rulesFrame"),
+    winnerOverlay: q("#winnerOverlay"),
+    winnerText: q("#winnerText"),
+    endOverlay: byId("cafards-gameover-overlay"),
+    finalWinners: byId("cafards-final-winners"),
+    replayBtn: byId("cafards-replay-button"),
+    menuBtn: byId("cafards-menu-button")
   };
 }
-const cardAsset=(card)=>`assets/cards/${card.type==="tabou"?ASSETS[card.veg].tabou:ASSETS[card.veg].legume}`;
-function setActivePile(index){state.activePile=index; if(el.turnLabel){el.turnLabel.textContent=`${t("pile")} ${index?"B":"A"}`;} el.pileShells.forEach((shell,i)=>shell.classList.toggle("active",i===index));}
-function clearTimer(){clearTimeout(state.timerId); clearInterval(state.timerTickId); state.timerId=null; state.timerTickId=null;}
-function resetTimer(){clearTimer(); el.timerLight.classList.remove("on"); if(!state.started)return; if(!state.config.timerOn)return void(el.timerText.textContent=t("timerOff")); const deadline=Date.now()+state.config.timerMs; const update=()=>{const remaining=Math.max(0,deadline-Date.now()); el.timerText.textContent=t("alertIn",{value:(remaining/1000).toFixed(1)});}; update(); state.timerTickId=setInterval(update,100); state.timerId=setTimeout(()=>{clearInterval(state.timerTickId); state.timerTickId=null; el.timerLight.classList.add("on"); el.timerText.textContent=t("timeUp");},state.config.timerMs);}
-function nextTurn(){state.current=(state.current+1)%state.players.length; renderPlayers(); resetTimer(); saveMatch();}
-let optionsPanelApi=null;
-function closeOptionsPanel(){ if(optionsPanelApi) optionsPanelApi.close(); el.rulesSection.open=false; el.rulesFrame.src="about:blank"; }
-const saveMatch=()=>{if(state.phase==="playing")window.CafardsSave.storeMatch(state);};
-const renderResume=()=>{el.resumeBtn.hidden=!window.CafardsSave.loadMatch();};
-function enterGame(){state.started=true; state.phase="playing"; setActivePile(state.activePile); document.body.className="mode-game"; render(); resetTimer(); saveMatch();}
-function endMatch(){state.phase="ended"; state.started=false; clearTimer(); el.timerText.textContent=t("gameOver"); window.CafardsSave.clearMatch(); window.MuchogamesMatch.finish();}
-let starting=false;
-async function startGame(){if(starting||state.phase==="playing")return; starting=true; const allowed=await window.MuchogamesMatch.start("cafards"); starting=false; if(!allowed)return; try{ closeOptionsPanel(); readConfig(); deal(); state.current=0; state.piles=[[],[]]; state.activePile=0; enterGame();}catch(error){setSetupStatus(t("setupError",{message:error.message||String(error)}),true);}}
-function writeConfigInputs(){const c=state.config; el.playerCount.value=c.count; el.deckSize.value=c.deckSize; el.winnersCount.value=c.winners; el.timerEnabled.checked=c.timerOn; el.timerSeconds.value=c.timerMs/1000; el.timerSeconds.disabled=!c.timerOn;}
-function resumeMatch(){
-  if(starting||state.phase==="playing")return;
-  const saved=window.CafardsSave.loadMatch();
-  if(!saved)return renderResume();
-  window.MuchogamesMatch.resume("cafards");
-  Object.assign(state,saved);
-  writeConfigInputs();
+
+function applyI18n() {
+  applyCopy(state.lang);
+  window.CafardsSetup.renderTimerToggle(el, t);
+  if (!state.started) el.timerText.textContent = t("waitingTimer");
+  if (el.rulesSection.open) el.rulesFrame.src = RULES[state.lang];
+  if (state.players.length) render();
+  if (!el.endOverlay.hidden) renderWinners();
+}
+
+const currentPlayer = () => state.players[state.current % state.players.length];
+const { clearTimer } = window.CafardsSetup;
+
+function resetTimer() {
+  if (state.started) window.CafardsSetup.startTimer(el, state.config, t);
+  else clearTimer();
+}
+
+// A remote user pressing a pile follows the play to the new active pile.
+function setActivePile(index) {
+  const followFocus = el.pileHits.includes(document.activeElement);
+  state.activePile = index;
+  window.CafardsBoard.markActivePile(state, el);
+  if (followFocus) el.pileHits[index].focus({ preventScroll: true });
+}
+
+function render() {
+  window.CafardsBoard.renderPiles(state, el, t);
+  window.CafardsBoard.renderPlayers(state, el, t, collectCards);
+}
+
+function saveMatch() {
+  if (state.phase === "playing") window.CafardsSave.storeMatch(state);
+}
+
+function renderResume() {
+  el.resumeBtn.hidden = !window.CafardsSave.loadMatch();
+}
+
+function closeOptionsPanel() {
+  optionsPanelApi?.close();
+  el.rulesSection.open = false;
+  el.rulesFrame.src = "about:blank";
+}
+
+// One screen at a time; the header's back link becomes the ✖ in a match.
+function showScreen(name) {
+  const playing = name === "game";
+  document.body.className = playing ? "mode-game" : "mode-setup";
+  el.setup.hidden = playing;
+  el.game.hidden = !playing;
+  el.backLink.hidden = playing;
+  el.quitBtn.hidden = !playing;
+  if (!playing) el.endOverlay.hidden = true;
+}
+
+function enterGame() {
+  state.started = true;
+  state.phase = "playing";
+  el.endOverlay.hidden = true;
+  showScreen("game");
+  setActivePile(state.activePile);
+  render();
+  resetTimer();
+  saveMatch();
+}
+
+async function startGame() {
+  if (starting || state.phase === "playing") return;
+  window.MuchogamesTv?.play();
+  starting = true;
+  const allowed = await window.MuchogamesMatch.start(GAME_ID);
+  starting = false;
+  if (!allowed) return;
+  try {
+    closeOptionsPanel();
+    window.CafardsSetup.readConfig(el, state.config);
+    state.players = window.CafardsDeck.deal(state.config);
+    state.current = 0;
+    state.piles = [[], []];
+    state.activePile = 0;
+    enterGame();
+  } catch (error) {
+    el.setupError.textContent = t("setupError", { message: error.message || String(error) });
+    el.setupError.hidden = false;
+  }
+}
+
+function resumeMatch() {
+  if (starting || state.phase === "playing") return;
+  const saved = window.CafardsSave.loadMatch();
+  if (!saved) return renderResume();
+  window.MuchogamesTv?.play();
+  window.MuchogamesMatch.resume(GAME_ID);
+  // The shared language (bergamots-lang) wins over the one saved with it.
+  delete saved.lang;
+  Object.assign(state, saved);
+  window.CafardsSetup.writeConfig(el, state.config, t);
   closeOptionsPanel();
   applyI18n();
   enterGame();
 }
-// Quitting is not an end: the save stays and no finish(); the back button's
-// confirm dialog has already cleared the match's in-progress flag.
-function restartToSetup(){
+
+// ✖ confirmed (game-session.js asked first) or the end card's Menu.
+// Quitting is not an end: the save stays and no finish().
+function showDashboard() {
   saveMatch();
   clearTimer();
   closeOptionsPanel();
-  state.started=false;
-  state.phase="setup";
-  state.current=0;
-  state.piles=[[],[]];
-  state.players=[];
-  document.body.className="mode-setup";
-  if(el.timerText){el.timerText.textContent=t("waitingTimer");}
-  if(el.winnerOverlay){el.winnerOverlay.hidden=true;}
-  renderPiles();
-  renderPlayers();
+  state.started = false;
+  state.phase = "setup";
+  state.players = [];
+  state.piles = [[], []];
+  el.timerText.textContent = t("waitingTimer");
+  el.winnerOverlay.hidden = true;
+  showScreen("setup");
   renderResume();
-  setSetupStatus(t("setupReady"));
 }
-function showWinnerBanner(index){
-  if(!el.winnerOverlay||!el.winnerText)return;
-  el.winnerText.textContent=`Player ${index+1} win!`;
-  el.winnerOverlay.hidden=false;
-  window.setTimeout(()=>{if(el.winnerOverlay)el.winnerOverlay.hidden=true;},1400);
+
+function renderWinners() {
+  const names = state.players
+    .map((player, index) => (player.hand.length === 0 ? t("playerName", { n: index + 1 }) : null))
+    .filter(Boolean);
+  el.finalWinners.textContent = names.length ? t("playerWins", { player: names.join(", ") }) : "";
 }
-function checkWinCondition(){
-  let newlyWinningIndex=-1;
-  state.players.forEach((p,idx)=>{
-    if(p.hand.length===0&&!p.alreadyWon){
-      p.alreadyWon=true;
-      newlyWinningIndex=idx;
+
+// Real end: the save goes, finish() once (no `won`: one shared device).
+function endMatch() {
+  if (state.phase !== "playing") return;
+  state.phase = "ended";
+  state.started = false;
+  clearTimer();
+  el.timerText.textContent = t("gameOver");
+  window.CafardsSave.clearMatch();
+  window.MuchogamesMatch.finish();
+  el.winnerOverlay.hidden = true;
+  renderWinners();
+  el.endOverlay.hidden = false;
+}
+
+function showWinnerBanner(index) {
+  el.winnerText.textContent = t("playerWins", { player: t("playerName", { n: index + 1 }) });
+  el.winnerOverlay.hidden = false;
+  window.setTimeout(() => (el.winnerOverlay.hidden = true), 1400);
+}
+
+function checkWinCondition() {
+  let newWinner = -1;
+  state.players.forEach((player, index) => {
+    if (player.hand.length === 0 && !player.alreadyWon) {
+      player.alreadyWon = true;
+      newWinner = index;
     }
   });
-  const zeroCount=state.players.filter((p)=>p.hand.length===0).length;
-  if(zeroCount>=state.config.winners){
+  const empty = state.players.filter((player) => player.hand.length === 0).length;
+  if (empty >= state.config.winners) {
     endMatch();
-    if(newlyWinningIndex>=0)showWinnerBanner(newlyWinningIndex);
     return true;
   }
-  if(newlyWinningIndex>=0)showWinnerBanner(newlyWinningIndex);
+  if (newWinner >= 0) showWinnerBanner(newWinner);
   return false;
 }
-function handleBackClick(){
-  const body=document.body;
-  if(body.classList.contains("mode-game")){
-    restartToSetup();
-    return;
-  }
-  window.location.href="../../index.html";
-}
-function revealFromPile(index){
-  if(!state.started)return;
-  if(index!==state.activePile)return;
-  const player=currentPlayer();
-  if(!player.hand.length)return endMatch();
-  const card=player.hand.pop();
-  card.pose=makePose(state.piles[index].length,index);
-  card.justRevealed=true;
-  state.piles[index].push(card);
-  if(card.type==="tabou")setActivePile(index?0:1);
+
+function nextTurn() {
+  state.current = (state.current + 1) % state.players.length;
   render();
-  if(checkWinCondition())return;
-  nextTurn();
-}
-function collectCards(playerIndex){
-  if(!state.started)return;
-  const collected=[...state.piles[0],...state.piles[1]];
-  if(!collected.length)return;
-  const player=state.players[playerIndex];
-  const previousCount=player.hand.length;
-  player.hand.unshift(...shuffle(collected));
-  player.losses+=collected.length;
-  state.piles=[[],[]];
-  setActivePile(0);
-  player.animateFrom=previousCount;
-  player.animateTo=player.hand.length;
-  render();
-  if(checkWinCondition())return;
   resetTimer();
   saveMatch();
 }
-function cardNode(card,index,isTop){
-  const node=el.cardTpl.content.firstElementChild.cloneNode(true);
-  node.classList.add(card.veg);
-  if(card.type==="tabou")node.classList.add("tabou");
-  if(isTop)node.classList.add("card-new");
-  node.style.left=`${card.pose.left}px`;
-  node.style.top=`${card.pose.top}px`;
-  node.style.transform=`rotate(${card.pose.angle}deg)`;
-  node.style.zIndex=index+1;
-  node.style.backgroundImage=`linear-gradient(155deg, transparent, transparent), url("${cardAsset(card)}")`;
-  return node;
-}
-function renderPiles(){
-  [el.pileA,el.pileB].forEach((container,pileIndex)=>{
-    const pile=state.piles[pileIndex];
-    const showMessage=state.started&&pileIndex===state.activePile&&pile.length===0;
-    container.innerHTML=showMessage?`<span class="pile-message">Tap here!</span>`:"";
-    const start=Math.max(0,pile.length-3);
-    pile.slice(start).forEach((card,offset)=>{
-      const index=start+offset;
-      const isTop=index===pile.length-1&&card.justRevealed;
-      container.appendChild(cardNode(card,index,isTop));
-      if(card.justRevealed)card.justRevealed=false;
-    });
-  });
-  renderPileLabels();
-}
-function renderPlayers(){
-  if(!el.players)return;
-  el.players.innerHTML="";
-  state.players.forEach((player,index)=>{
-    const chip=document.createElement("button");
-    const isActive=index===state.current&&state.started;
-    chip.type="button";
-    chip.className=`player-chip player-${index}${isActive?" active":""}`;
-    const targetCount=player.hand.length;
-    const from=typeof player.animateFrom==="number"?player.animateFrom:targetCount;
-    chip.textContent=String(from);
-    chip.addEventListener("click",()=>collectCards(index));
-    el.players.appendChild(chip);
-    if(typeof player.animateFrom==="number"&&typeof player.animateTo==="number"&&player.animateTo>player.animateFrom){
-      animateChipCount(chip,player.animateFrom,player.animateTo);
-      delete player.animateFrom;
-      delete player.animateTo;
-    }
-  });
-}
-function animateChipCount(chip,from,to){
-  let current=from;
-  const step=()=>{
-    if(!chip||current>=to)return;
-    current+=1;
-    chip.textContent=String(current);
-    if(current<to)window.setTimeout(step,35);
-  };
-  step();
-}
-const render=()=>{renderPiles(); renderPlayers();};
-function bindEvents(){
-  [el.pileAHit,el.pileBHit].forEach((button,index)=>{button.addEventListener("click",()=>revealFromPile(index)); button.addEventListener("dblclick",()=>revealFromPile(index));});
-  el.startBtn.addEventListener("click",startGame);
-  el.resumeBtn.addEventListener("click",resumeMatch);
-  if(el.backBtn){el.backBtn.addEventListener("click",handleBackClick);}
-  el.timerEnabled.addEventListener("change",()=>{el.timerSeconds.disabled=!el.timerEnabled.checked;});
-  el.langButtons.forEach((btn)=>btn.addEventListener("click",()=>{state.lang=btn.dataset.lang; applyI18n(); saveMatch();}));
-  if(window.GameHeader){
-    optionsPanelApi=window.GameHeader.initOptionsPanel(el.optionsBtn,el.optionsPanel);
-  }
-  el.rulesSection.addEventListener("toggle",()=>{
-    if(el.rulesSection.open) el.rulesFrame.src=RULES[state.lang];
-  });
-  document.addEventListener("visibilitychange",()=>{if(document.hidden)saveMatch();});
-  window.addEventListener("pagehide",saveMatch);
-}
-function init(){cacheDom(); bindEvents(); el.timerSeconds.disabled=!el.timerEnabled.checked; el.timerText.textContent=t("waitingTimer"); renderPileLabels(); applyI18n(); renderResume();}
-window.addEventListener("error",(event)=>{if(el.setupStatus&&!state.started)setSetupStatus(t("setupError",{message:event.message||"unknown error"}),true);});
-document.addEventListener("DOMContentLoaded",init);
 
+function revealFromPile(index) {
+  if (!state.started || index !== state.activePile) return;
+  const player = currentPlayer();
+  if (!player.hand.length) return endMatch();
+  const card = player.hand.pop();
+  card.pose = window.CafardsDeck.makePose(state.piles[index].length, index);
+  card.justRevealed = true;
+  state.piles[index].push(card);
+  if (card.type === "tabou") setActivePile(index ? 0 : 1);
+  render();
+  if (checkWinCondition()) return;
+  nextTurn();
+}
 
+function collectCards(playerIndex) {
+  if (!state.started) return;
+  const collected = [...state.piles[0], ...state.piles[1]];
+  if (!collected.length) return;
+  const player = state.players[playerIndex];
+  player.animateFrom = player.hand.length;
+  player.hand.unshift(...window.CafardsDeck.shuffle(collected));
+  player.animateTo = player.hand.length;
+  player.losses += collected.length;
+  state.piles = [[], []];
+  setActivePile(0);
+  render();
+  if (checkWinCondition()) return;
+  resetTimer();
+  saveMatch();
+}
+
+function bindSetup() {
+  el.startBtn.addEventListener("click", startGame);
+  el.replayBtn.addEventListener("click", startGame);
+  el.resumeBtn.addEventListener("click", resumeMatch);
+  el.quitBtn.addEventListener("click", showDashboard);
+  el.menuBtn.addEventListener("click", showDashboard);
+  window.CafardsSetup.bind(el, t);
+}
+
+function bindPage() {
+  el.pileHits.forEach((button, index) => button.addEventListener("click", () => revealFromPile(index)));
+  el.langButtons.forEach((button) =>
+    button.addEventListener("click", () => {
+      state.lang = button.dataset.lang;
+      storeLanguage(state.lang);
+      applyI18n();
+      saveMatch();
+    })
+  );
+  optionsPanelApi = window.GameHeader?.initOptionsPanel(el.optionsBtn, el.optionsPanel) || null;
+  el.rulesSection.addEventListener("toggle", () => {
+    if (el.rulesSection.open) el.rulesFrame.src = RULES[state.lang];
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) saveMatch();
+  });
+  window.addEventListener("pagehide", saveMatch);
+}
+
+function init() {
+  cacheDom();
+  bindSetup();
+  bindPage();
+  showScreen("setup");
+  applyI18n();
+  renderResume();
+}
+
+document.addEventListener("DOMContentLoaded", init);

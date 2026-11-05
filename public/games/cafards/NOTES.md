@@ -1,26 +1,47 @@
 # Salade de Cafards — notes
 
-Local multiplayer (one shared device). Classic scripts, no modules:
-`save.js` (exposes `window.CafardsSave`) then `game.js`.
+Local multiplayer (one shared device). Classic scripts, no modules, loaded
+in this order: `i18n.js` (`window.CafardsI18n`), `deck.js`
+(`window.CafardsDeck`), `setup.js` (`window.CafardsSetup`), `save.js`
+(`window.CafardsSave`), `board.js` (`window.CafardsBoard`), then `game.js`.
+Skins everything itself (no `base.css`).
 
 ## Files
 
-- `game.js` — i18n, deck/deal, piles, turn/timer, setup ↔ game screens.
+- `game.js` — page shell: screens, start / resume / quit, turns, reveal,
+  collect, win check, end card, save triggers, options panel.
+- `i18n.js` — FR/EN/ES copy (`data-i18n`, `data-i18n-aria`), shared
+  `bergamots-lang` read/write.
+- `deck.js` — pure: official 128-card deck, balanced deck for other sizes,
+  deal, card pose.
+- `setup.js` — dashboard number inputs with − / + steppers, red-light
+  toggle (`aria-pressed`), the per-turn red-light countdown.
+- `board.js` — renders the two piles (last three cards) and the player
+  chips.
 - `save.js` — encode/validate/load/store/clear the match in progress.
+- `styles.css` (frame, header skin, dashboard, dialogs, TV sizes),
+  `board.css` (match table).
 - `rules-{fr,en,es}.html` — loaded in the options panel iframe when the
   collapsed "Règles" `<details>` is opened.
 
 ## Match lifecycle
 
-- `state.phase`: `"setup"` → `"playing"` → `"ended"` (no end screen: the
-  board stays in `mode-game` after the end).
-- Start button: `MuchogamesMatch.start()` (1 coin) then deal. Guarded by
-  `starting`/`phase` before calling `start()`.
-- End (enough empty hands for `config.winners`, or revealing with an
-  empty hand): `endMatch()` clears the save, then `finish()` (no `won`:
-  several players share the device).
-- In-match back button → `restartToSetup()`: quitting is not an end, the
-  save stays and no `finish()`; the setup screen then offers "Reprendre".
+- `state.phase`: `"setup"` → `"playing"` → `"ended"`.
+- Game Dashboard (`cafards-dashboard-screen`): Reprendre (when a save
+  exists), four steppers (players 2-8, cards 32-256 step 8, winners
+  1-players, seconds 0.5-5), red-light toggle, Nouvelle partie
+  (`cafards-start-button`): `MuchogamesMatch.start()` (1 coin) then deal.
+- Match (`cafards-play-screen`): header ✖ (`cafards-quit-button`,
+  `data-match-quit`) replaces the back arrow. Tap the active pile
+  (`cafards-pile-a` / `-b`) to reveal; tap a player chip
+  (`cafards-player-<n>`) to make that player collect the piles. Portrait:
+  piles stacked; landscape: side by side.
+- End (enough empty hands for `config.winners`, or revealing with an empty
+  hand): `endMatch()` clears the save, `finish()` (no `won`: several
+  players share the device), then the end card
+  (`cafards-gameover-overlay`: winners, Rejouer, Menu du jeu).
+- ✖ (after the shared "leave match?" dialog) → `showDashboard()`: quitting
+  is not an end, the save stays and no `finish()`.
 
 ## Save (`localStorage["cafards-current"]`, decision 0054)
 
@@ -36,7 +57,14 @@ angle}}`), `activePile`, `current`.
 Validation drops the save if any field is off, if the total card count
 differs from the deal, or if the match is already over.
 
-Resume (`data-id="cafards-resume-button"`, shown above start only when a
-valid save exists): restores the state, writes the config back into the
-setup inputs, calls `MuchogamesMatch.resume()` (no coin). The red-light
+Resume (`cafards-resume-button`, above the settings): restores the state
+(the shared language wins over the saved `lang`), writes the config back
+into the inputs, calls `MuchogamesMatch.resume()` (no coin). The red-light
 timer just restarts.
+
+## TV
+
+`/shared/js/tv-remote.js`: focus lands on Reprendre / Nouvelle partie, then
+the active pile (`data-tv-focus` follows the active pile; a remote press on
+a pile follows the switch). Arrow down reaches the player chips. Back = ✖ in
+a match, Menu du jeu on the end card, the hub on the dashboard.

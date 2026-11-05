@@ -6,32 +6,28 @@
   <title>Salade de Cafards</title>
   <link rel="stylesheet" href="/shared/css/game-header.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="board.css" />
+  <script src="/shared/js/tv-remote.js"></script>
 </head>
 <body class="mode-setup" data-match-saved>
   <header class="game-nav">
     <div class="nav-side nav-left">
-      <button id="backBtn" type="button" class="back-button" data-id="game-back-button" aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></button>
+      <!-- Game Dashboard: back to the hub. Hidden during a match. -->
+      <a href="../../index.html" class="back-button" data-id="game-back-button" data-tv-back aria-label="Retour" data-i18n-aria="back"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
+      <!-- In a match: back to the Game Dashboard, after game-session.js asks. -->
+      <button type="button" class="back-button" data-id="cafards-quit-button" data-match-quit data-tv-back aria-label="Quitter la partie" data-i18n-aria="quit" hidden><span aria-hidden="true">✖</span></button>
     </div>
     <div class="nav-center">
-      <img
-        src="./assets/thumbnail.jpg"
-        alt="Salade de Cafards"
-        class="nav-banner"
-        onerror="this.style.display='none'"
-      />
-      <h1 id="nav-title" class="nav-title"></h1>
+      <img src="./assets/thumbnail.jpg" alt="Salade de Cafards" class="nav-banner" data-id="cafards-banner" onerror="this.style.display='none'" />
     </div>
     <div class="nav-side nav-right">
-      <div class="timer-bar">
-        <div id="timerLight" class="timer-light"></div>
-        <p id="timerText"></p>
-      </div>
       <button
         id="optionsBtn"
         class="options-button"
         type="button"
         data-id="game-options-button"
         aria-label="Options"
+        data-i18n-aria="options"
         aria-expanded="false"
         aria-controls="optionsPanel"
       >
@@ -45,90 +41,121 @@
 
   <div id="optionsPanel" class="options-panel" data-id="game-options-panel" hidden>
     <div class="options-panel-backdrop" data-options-close></div>
-    <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options">
+    <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options" data-i18n-aria="options">
       <div class="options-panel-header">
-        <span class="options-panel-title">Options</span>
-        <button type="button" class="options-panel-close" data-options-close aria-label="Fermer">×</button>
+        <span class="options-panel-title" data-i18n="options">Options</span>
+        <button type="button" class="options-panel-close" data-options-close data-id="cafards-options-close" aria-label="Fermer" data-i18n-aria="close">×</button>
       </div>
       <div class="options-panel-body">
         <div class="options-panel-section" data-id="game-options-language">
-          <p class="options-panel-section-title">Langue</p>
+          <p class="options-panel-section-title" data-i18n="language">Langue</p>
           <div class="lang-switch">
-            <button type="button" class="lang-btn active" data-lang="fr">FR</button>
-            <button type="button" class="lang-btn" data-lang="en">EN</button>
-            <button type="button" class="lang-btn" data-lang="es">ES</button>
+            <button type="button" class="lang-btn active" data-lang="fr" data-id="cafards-lang-fr">FR</button>
+            <button type="button" class="lang-btn" data-lang="en" data-id="cafards-lang-en">EN</button>
+            <button type="button" class="lang-btn" data-lang="es" data-id="cafards-lang-es">ES</button>
           </div>
         </div>
         <details class="options-panel-section" data-id="game-options-rules">
-          <summary class="options-panel-section-title" data-i18n="rulesTitle">Regles</summary>
-          <iframe id="rulesFrame" class="rules-frame" title="Rules"></iframe>
+          <summary class="options-panel-section-title" data-i18n="rulesTitle">Règles</summary>
+          <iframe id="rulesFrame" class="rules-frame" data-id="cafards-rules-frame" title="Règles" data-i18n-aria="rulesTitle"></iframe>
         </details>
       </div>
     </div>
   </div>
 
-  <section id="setup" class="setup-screen">
-    <div class="setup-card">
-      <p class="intro" data-i18n="intro">Configure la partie, puis touchez la pile active pour reveler chaque nouvelle carte.</p>
-      <div class="setup-grid">
-        <label><span data-i18n="players">Nombre de joueurs</span>
-          <input id="playerCount" type="number" min="2" max="8" value="4" />
-        </label>
-        <label><span data-i18n="deck">Cartes totales</span>
-          <input id="deckSize" type="number" min="32" max="256" step="8" value="128" />
-        </label>
-        <label><span data-i18n="winners">Nombre de gagnants</span>
-          <input id="winnersCount" type="number" min="1" max="8" value="1" />
-        </label>
-        <label class="toggle"><span data-i18n="timer">Minuteur</span>
-          <input id="timerEnabled" type="checkbox" checked />
-          <span data-i18n="timerToggle">Activer la lumiere rouge</span>
-        </label>
-        <label><span data-i18n="timerSeconds">Secondes avant alerte</span>
-          <input id="timerSeconds" type="number" min="0.5" max="5" step="0.5" value="1.5" />
-        </label>
+  <main class="caf-shell" data-id="cafards-shell">
+    <section id="setup" class="setup-screen" data-id="cafards-dashboard-screen" data-tv-screen>
+      <div class="setup-card">
+        <h1 class="setup-title" data-id="cafards-title" data-i18n="title">Salade de Cafards</h1>
+        <button type="button" class="start-btn resume-btn" data-id="cafards-resume-button" data-tv-focus data-i18n="resume" hidden>Reprendre</button>
+        <p class="intro" data-i18n="intro">Réglez la partie, puis touchez la pile active pour révéler chaque carte.</p>
+        <div class="setup-grid">
+          <div class="field" data-id="cafards-players-field">
+            <label for="playerCount" data-i18n="players">Joueurs</label>
+            <div class="stepper">
+              <button type="button" class="step" data-target="playerCount" data-dir="-1" data-id="cafards-players-less" aria-label="Moins" data-i18n-aria="less">−</button>
+              <input id="playerCount" data-id="cafards-players-input" type="number" min="2" max="8" step="1" value="4" inputmode="numeric" />
+              <button type="button" class="step" data-target="playerCount" data-dir="1" data-id="cafards-players-more" aria-label="Plus" data-i18n-aria="more">+</button>
+            </div>
+          </div>
+          <div class="field" data-id="cafards-deck-field">
+            <label for="deckSize" data-i18n="deck">Cartes totales</label>
+            <div class="stepper">
+              <button type="button" class="step" data-target="deckSize" data-dir="-1" data-id="cafards-deck-less" aria-label="Moins" data-i18n-aria="less">−</button>
+              <input id="deckSize" data-id="cafards-deck-input" type="number" min="32" max="256" step="8" value="128" inputmode="numeric" />
+              <button type="button" class="step" data-target="deckSize" data-dir="1" data-id="cafards-deck-more" aria-label="Plus" data-i18n-aria="more">+</button>
+            </div>
+          </div>
+          <div class="field" data-id="cafards-winners-field">
+            <label for="winnersCount" data-i18n="winners">Gagnants</label>
+            <div class="stepper">
+              <button type="button" class="step" data-target="winnersCount" data-dir="-1" data-id="cafards-winners-less" aria-label="Moins" data-i18n-aria="less">−</button>
+              <input id="winnersCount" data-id="cafards-winners-input" type="number" min="1" max="8" step="1" value="1" inputmode="numeric" />
+              <button type="button" class="step" data-target="winnersCount" data-dir="1" data-id="cafards-winners-more" aria-label="Plus" data-i18n-aria="more">+</button>
+            </div>
+          </div>
+          <div class="field" data-id="cafards-timer-field">
+            <label for="timerSeconds" data-i18n="timerSeconds">Secondes avant alerte</label>
+            <div class="stepper">
+              <button type="button" class="step" data-target="timerSeconds" data-dir="-1" data-id="cafards-timer-less" aria-label="Moins" data-i18n-aria="less">−</button>
+              <input id="timerSeconds" data-id="cafards-timer-input" type="number" min="0.5" max="5" step="0.5" value="1.5" inputmode="decimal" />
+              <button type="button" class="step" data-target="timerSeconds" data-dir="1" data-id="cafards-timer-more" aria-label="Plus" data-i18n-aria="more">+</button>
+            </div>
+          </div>
+        </div>
+        <button id="timerEnabled" type="button" class="toggle-btn" data-id="cafards-timer-toggle" aria-pressed="true">Lumière rouge : oui</button>
+        <button id="startBtn" type="button" class="start-btn" data-id="cafards-start-button" data-tv-focus data-i18n="start">Nouvelle partie</button>
+        <p class="setup-error" data-id="cafards-setup-error" role="alert" hidden></p>
       </div>
-      <button type="button" class="start-btn resume-btn" data-id="cafards-resume-button" data-i18n="resume" hidden>Reprendre</button>
-      <button id="startBtn" type="button" class="start-btn" data-id="cafards-start-button" data-i18n="start">Lancer la partie</button>
-    </div>
-  </section>
-
-  <main id="game" class="game">
-
-    <section class="board" aria-label="Table de jeu">
-      <article class="pile-shell active" data-pile="0">
-        <button id="pileAHit" type="button" class="pile-hit" aria-label="Reveler une carte sur la pile A">
-          <div id="pileA" class="pile"><span id="pileACta" class="pile-message"></span></div>
-        </button>
-      </article>
-      <article class="pile-shell" data-pile="1">
-        <button id="pileBHit" type="button" class="pile-hit" aria-label="Reveler une carte sur la pile B">
-          <div id="pileB" class="pile"><span id="pileBCta" class="pile-message"></span></div>
-        </button>
-      </article>
     </section>
 
-    <section id="players" class="players"></section>
+    <section id="game" class="game" data-id="cafards-play-screen" data-tv-screen hidden>
+      <div class="timer-bar" data-id="cafards-timer-status">
+        <div id="timerLight" class="timer-light" data-id="cafards-timer-light"></div>
+        <p id="timerText"></p>
+      </div>
+      <section class="board" data-id="cafards-board" aria-label="Table de jeu" data-i18n-aria="board">
+        <article class="pile-shell active" data-pile="0">
+          <button id="pileAHit" type="button" class="pile-hit" data-id="cafards-pile-a" data-tv-focus aria-label="Révéler une carte sur la pile A" data-i18n-aria="pileA">
+            <span id="pileA" class="pile"></span>
+          </button>
+        </article>
+        <article class="pile-shell" data-pile="1">
+          <button id="pileBHit" type="button" class="pile-hit" data-id="cafards-pile-b" aria-label="Révéler une carte sur la pile B" data-i18n-aria="pileB">
+            <span id="pileB" class="pile"></span>
+          </button>
+        </article>
+      </section>
+      <section id="players" class="players" data-id="cafards-players"></section>
+    </section>
   </main>
 
-  <div id="winnerOverlay" class="winner-overlay" hidden>
+  <div id="winnerOverlay" class="winner-overlay" data-id="cafards-winner-banner" hidden>
     <div class="winner-panel">
-      <div id="winnerText" class="winner-text">Player 1 win!</div>
-      <div id="confettiLayer" class="confetti-layer"></div>
+      <div id="winnerText" class="winner-text" data-id="cafards-winner-text"></div>
+    </div>
+  </div>
+
+  <div class="winner-overlay end-overlay" data-id="cafards-gameover-overlay" data-tv-overlay hidden>
+    <div class="winner-panel end-panel" role="dialog" aria-modal="true" aria-labelledby="cafardsEndTitle">
+      <h2 id="cafardsEndTitle" class="end-title" data-i18n="gameOver">Partie terminée</h2>
+      <p class="winner-text" data-id="cafards-final-winners"></p>
+      <button type="button" class="start-btn" data-id="cafards-replay-button" data-tv-focus data-i18n="replay">Rejouer</button>
+      <button type="button" class="start-btn resume-btn" data-id="cafards-menu-button" data-tv-back data-i18n="menu">Menu du jeu</button>
     </div>
   </div>
 
   <template id="cardTpl">
-    <article class="card">
-      <div class="card-top"></div>
-      <div class="card-face"></div>
-      <div class="card-tag"></div>
-    </article>
+    <span class="card"></span>
   </template>
 
   <script src="/shared/js/game-header.js"></script>
   <script src="/shared/js/game-session.js"></script>
+  <script defer src="i18n.js"></script>
+  <script defer src="deck.js"></script>
+  <script defer src="setup.js"></script>
   <script defer src="save.js"></script>
+  <script defer src="board.js"></script>
   <script defer src="game.js"></script>
 </body>
 </html>
