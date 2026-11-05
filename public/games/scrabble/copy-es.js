@@ -39,6 +39,7 @@ export const STRINGS = {
   shuffle: "Mezclar",
   recall: "Recoger",
   hintLeft: "Pista ({n})",
+  hintZero: "pista usada",
   pass: "Pasar",
   define: "Definir",
   lookupHint: "Toca una palabra del tablero para ver su definición.",
@@ -110,6 +111,7 @@ export const RULES = `
   <li><strong>Puntos:</strong> cada letra tiene su valor. LD y LT doblan o triplican la letra, PD y PT la palabra entera (la estrella cuenta como PD). Una casilla solo cuenta cuando se cubre por primera vez.</li>
   <li>El <strong>comodín</strong> sustituye cualquier letra y vale 0.</li>
   <li><strong>Scrabble:</strong> colocar las 7 letras de una vez da 50 puntos extra.</li>
+  <li><strong>Pista</strong> (si está activada en las opciones): hasta 5 por turno, cada una propone una palabra. Un turno en el que usaste una pista vale 0 puntos; el turno siguiente cuenta con normalidad.</li>
   <li>En lugar de jugar puedes <strong>cambiar</strong> letras (si quedan al menos 7 en la bolsa) o <strong>pasar</strong>.</li>
   <li><strong>Fin:</strong> cuando la bolsa está vacía y un jugador ha colocado todas sus letras, o cuando cada jugador ha pasado o cambiado dos veces seguidas. Las letras restantes se restan; quien terminó gana las de los demás.</li>
 </ul>
