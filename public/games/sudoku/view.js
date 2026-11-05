@@ -4,6 +4,7 @@ import { PEERS, SIZE, boxOf, colOf, rowOf } from "./grid.js";
 
 const FLASH_MS = 700;
 const DIGITS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const CENTER = 40;
 
 function el(tag, className, attrs = {}) {
   const node = document.createElement(tag);
@@ -18,6 +19,8 @@ function buildCell(i) {
     "data-index": i,
     "data-id": `sudoku-cell-${rowOf(i) + 1}-${colOf(i) + 1}`
   });
+  // TV remote: the focus lands on the centre cell when the grid appears.
+  if (i === CENTER) cell.dataset.tvFocus = "";
   const notes = el("span", "sd-notes", { "aria-hidden": "true" });
   DIGITS.forEach(() => notes.append(el("span", "sd-note")));
   cell.append(el("span", "sd-value", { "aria-hidden": "true" }), notes);

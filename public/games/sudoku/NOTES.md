@@ -29,3 +29,10 @@ single solution. Read this before opening the sources.
 - Mistakes are counted against the solution whether or not they are shown in red.
 - The Hint button (and the H key) only exists while the `showHint` option is on.
 - Timer pauses with the pause button (grid hidden), while the options panel is open and while the tab is hidden.
+
+## Platform pass (2026-11-05)
+
+- In match the header back button is replaced by `sudoku-quit-button` (✕, `data-match-quit`): `game-session.js` asks, then the click returns to the dashboard (no `finish()`, save kept). The pause overlay also has `sudoku-paused-menu-button`.
+- Best time per level: `sudoku-best-time-<level>` inside each level button (time-based, so no `finish({ score })`; `won: true` stays).
+- TV (`tv-remote.js`): `data-tv-screen` on start/stage, `data-tv-overlay` on the pause and end overlays; the centre cell carries `data-tv-focus`. The cells are buttons, so tv-remote's arrows move between cells and the pad and OK clicks them; `input.js` skips arrows already handled (`defaultPrevented`), so the keyboard cursor still works off-TV. Back presses ⏸, then Continue. `MuchogamesTv.play()` on start and resume.
+- Layout: `.sd-app` carries the 40px / 24px margins; root font `clamp(16px, 2.4vmin, 64px)`, sizes in rem; 960px+ TV block in `styles.css` and `board.css` (pad digits grow with dvh). Short landscape: two-column level card and end card. No `overflow: hidden` on body.

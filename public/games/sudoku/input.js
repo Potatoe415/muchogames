@@ -29,7 +29,9 @@ function keyAction(event, actions) {
   return letters[key] || null;
 }
 
+// An arrow tv-remote.js already used to move the focus is not a move here.
 function onKey(event, actions) {
+  if (event.defaultPrevented) return;
   const ctrlUndo = event.ctrlKey && event.key.toLowerCase() === "z";
   if (event.altKey || event.metaKey || (event.ctrlKey && !ctrlUndo)) return;
   if (actions.ignoreKeys()) return;

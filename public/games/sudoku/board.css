@@ -7,23 +7,23 @@
   min-height: 0;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
-  gap: 10px;
+  gap: 0.6rem;
   width: 100%;
-  max-width: 640px;
+  min-width: 0;
+  max-width: 40rem;
   margin: 0 auto;
-  padding: 4px 10px max(12px, env(safe-area-inset-bottom));
 }
 
 .sd-hud {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-height: 36px;
+  gap: 0.75rem;
+  min-height: 2.75rem;
   font-size: 0.9rem;
 }
 
 .sd-hud-level {
-  padding: 4px 10px;
+  padding: 0.25rem 0.6rem;
   border-radius: 999px;
   background: var(--sd-accent-soft);
   color: var(--sd-accent);
@@ -47,8 +47,8 @@
 .sd-pause {
   display: grid;
   place-items: center;
-  width: 36px;
-  height: 36px;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -59,8 +59,8 @@
 }
 
 .sd-pause svg {
-  width: 16px;
-  height: 16px;
+  width: 1.1rem;
+  height: 1.1rem;
   fill: currentColor;
 }
 
@@ -81,7 +81,7 @@
   grid-template: repeat(3, minmax(0, 1fr)) / repeat(3, minmax(0, 1fr));
   gap: 2px;
   padding: 2px;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   background: var(--sd-line-strong);
   box-shadow: var(--sd-shadow);
   overflow: hidden;
@@ -223,13 +223,13 @@
 /* --- Tools and pad --- */
 .sd-controls {
   display: grid;
-  gap: 10px;
+  gap: 0.6rem;
   min-height: 0;
 }
 
 .sd-tools {
   display: flex;
-  gap: 6px;
+  gap: 0.4rem;
 }
 
 .sd-tool {
@@ -237,10 +237,10 @@
   min-width: 0;
   display: grid;
   justify-items: center;
-  gap: 3px;
-  padding: 6px 4px;
+  gap: 0.2rem;
+  padding: 0.35rem 0.25rem;
   border: none;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   background: transparent;
   color: var(--sd-ink);
   font-size: 0.78rem;
@@ -249,8 +249,8 @@
 }
 
 .sd-tool svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -281,7 +281,7 @@
   height: clamp(50px, 13vw, 66px);
   padding: 0;
   border: none;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   background: var(--sd-surface);
   color: var(--sd-accent);
   box-shadow: var(--sd-shadow);
@@ -322,10 +322,10 @@
 
 @media (min-aspect-ratio: 6/5) {
   .sd-stage {
-    max-width: 1100px;
-    grid-template-columns: minmax(0, 1fr) clamp(210px, 32vw, 360px);
+    max-width: none;
+    grid-template-columns: minmax(0, 1fr) clamp(190px, 32vw, 60dvh);
     grid-template-rows: auto minmax(0, 1fr);
-    column-gap: 22px;
+    column-gap: 1.4rem;
   }
 
   .sd-hud {
@@ -339,11 +339,11 @@
   }
 
   .sd-pad {
-    flex: 0 1 340px;
+    flex: 0 1 21rem;
     min-height: 0;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   .sd-key {
@@ -353,5 +353,55 @@
 
   .sd-key-digit {
     font-size: clamp(1.4rem, 3.4vw, 2.3rem);
+  }
+}
+
+/* Short landscape phones: grid on the left, a tighter pad on the right. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .sd-stage {
+    gap: 0.3rem;
+  }
+
+  .sd-hud {
+    min-height: 2.5rem;
+  }
+
+  .sd-pause {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .sd-tool {
+    padding: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .sd-tool svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .sd-pad {
+    gap: 0.3rem;
+  }
+}
+
+/* TV: the pad and its digits grow with the screen. */
+@media (min-width: 960px) and (min-height: 500px) {
+  .sd-key-digit {
+    font-size: max(2rem, 4.5dvh);
+  }
+
+  .sd-key-left {
+    font-size: max(0.68rem, 1.8dvh);
+  }
+
+  .sd-tool {
+    font-size: max(0.78rem, 2.2dvh);
+  }
+
+  .sd-tool svg {
+    width: max(24px, 3.5dvh);
+    height: max(24px, 3.5dvh);
   }
 }

@@ -81,6 +81,8 @@ function showScreen(playing) {
   $("sudoku-start-screen").hidden = playing;
   $("sudoku-stage").hidden = !playing;
   $("sudoku-options-play").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("sudoku-quit-button").hidden = !playing;
 }
 
 // 0 means "no record" in storage, so a record is at least one second.
@@ -150,6 +152,7 @@ function returnToStart() {
 
 async function startMatch(level) {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
@@ -161,6 +164,7 @@ async function startMatch(level) {
 
 function resumeMatch() {
   if (!page.saved || page.starting) return;
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   mount(page.saved);
 }
@@ -221,7 +225,11 @@ function bindPage() {
   $("sudoku-replay-button").addEventListener("click", () =>
     startMatch(page.level)
   );
-  $("sudoku-change-level-button").addEventListener("click", returnToStart);
+  [
+    "sudoku-change-level-button",
+    "sudoku-quit-button",
+    "sudoku-paused-menu-button"
+  ].forEach((id) => $(id).addEventListener("click", returnToStart));
   document.addEventListener("visibilitychange", syncHold);
   window.addEventListener("pagehide", () => page.play?.save());
   // Back/forward cache: the page comes back with its grid still on screen.
