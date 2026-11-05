@@ -13,10 +13,20 @@
   --tp-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
 }
 
+/* rem sizes grow with the screen, up to a 4K TV. */
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
 html,
 body {
   height: 100%;
   overscroll-behavior: none;
+}
+
+/* The shared .back-button display rule would show the hidden ✖. */
+.game-nav [hidden] {
+  display: none !important;
 }
 
 body {
@@ -24,7 +34,6 @@ body {
   flex-direction: column;
   height: 100dvh;
   min-height: 0;
-  overflow: hidden;
   background: radial-gradient(circle at 50% 30%, #22325a, var(--tp-bg) 70%);
   color: var(--tp-ink);
 }
@@ -63,9 +72,9 @@ body {
 }
 
 .tp-chip {
-  min-width: 48px;
+  min-width: 40px;
   min-height: 44px;
-  padding: 8px 14px;
+  padding: 8px 12px;
   border: 2px solid var(--tp-line);
   border-radius: 10px;
   background: #ffffff;
@@ -130,11 +139,17 @@ body {
   outline-offset: 2px;
 }
 
+/* Android bars can cover the bottom even when the safe-area inset is 0:
+   no control in the bottom 40px nor in the 24px side strips. */
 .tp-app {
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
+  box-sizing: border-box;
+  padding: 0 max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -150,15 +165,17 @@ body {
 /* --- Start screen and end card --- */
 .tp-start {
   flex: 1;
+  min-width: 0;
   display: grid;
   place-items: center;
-  padding: 12px 12px max(16px, env(safe-area-inset-bottom));
+  padding: 8px 0 0;
   overflow-y: auto;
 }
 
 .tp-card {
-  width: min(100%, 480px);
-  padding: 22px 18px;
+  box-sizing: border-box;
+  width: min(100%, 30rem);
+  padding: 16px 14px;
   border-radius: 20px;
   background: var(--tp-surface);
   box-shadow: var(--tp-shadow);
@@ -243,8 +260,8 @@ body {
 }
 
 .tp-button {
-  min-width: 180px;
-  min-height: 48px;
+  min-width: min(180px, 100%);
+  min-height: max(48px, 5.5dvh);
   padding: 10px 20px;
   border: none;
   border-radius: 14px;

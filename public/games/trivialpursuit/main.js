@@ -50,6 +50,7 @@ function renderSetup() {
       input.placeholder = t("playerName", { n: i + 1 });
       input.value = page.names[i] ?? defaultName(i);
       input.addEventListener("input", () => (page.names[i] = input.value));
+      input.addEventListener("keydown", leaveInputWithArrows);
       return input;
     })
   );
@@ -122,6 +123,22 @@ function showScreen(playing) {
   $("trivialpursuit-start-screen").hidden = playing;
   $("trivialpursuit-stage").hidden = !playing;
   $("trivialpursuit-options-play").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("trivialpursuit-quit-button").hidden = !playing;
+}
+
+// A text field keeps the arrows for itself (tv-remote.js too): Up / Down
+// still move to the previous / next control of the start screen.
+function leaveInputWithArrows(event) {
+  const step = { ArrowUp: -1, ArrowDown: 1 }[event.key];
+  if (!step) return;
+  const controls = [
+    ...$("trivialpursuit-start-screen").querySelectorAll("button, input")
+  ].filter((el) => !el.disabled && !el.closest("[hidden]"));
+  const next = controls[controls.indexOf(event.target) + step];
+  if (!next) return;
+  event.preventDefault();
+  next.focus();
 }
 
 function playElements() {
@@ -205,6 +222,7 @@ function playerNames() {
 
 async function startMatch(names, mode) {
   if (page.starting || !page.deck) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
@@ -218,6 +236,7 @@ async function startMatch(names, mode) {
 
 function resumeMatch() {
   if (!page.saved || !page.deck || page.starting) return;
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   mount(page.saved);
 }
@@ -239,6 +258,7 @@ function bindOptions() {
     page.panel?.close();
     returnToStart();
   });
+  $("trivialpursuit-quit-button").addEventListener("click", returnToStart);
 }
 
 function bindStart() {
@@ -300,6 +320,9 @@ async function boot() {
     page.deckError = true;
   }
   renderStart();
+  // The start button was disabled while loading: the remote focus moves to
+  // it (or to Resume) now.
+  if (!page.play) window.MuchogamesTv?.focusScreen();
   // The language may have changed while the deck was loading.
   useDeckLanguage();
 }

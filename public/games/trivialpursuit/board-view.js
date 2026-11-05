@@ -168,6 +168,8 @@ function renderTargets(view, map, onPick) {
     button.type = "button";
     button.className = "tp-target";
     button.dataset.id = `trivialpursuit-target-${id}`;
+    // Arrows cycle through the targets (moveFocus), on a TV too.
+    button.dataset.tvKeys = "left right up down";
     button.setAttribute("aria-label", cellLabel(id, view.t));
     place(button, cellPos(id));
     button.addEventListener("click", () => onPick(id));

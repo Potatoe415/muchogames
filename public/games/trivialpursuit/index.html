@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="stage.css" />
     <link rel="stylesheet" href="overlay.css" />
     <link rel="stylesheet" href="wheel.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -22,6 +24,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -38,6 +41,18 @@
           >
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
         ></a>
+        <button
+          type="button"
+          class="back-button"
+          data-id="trivialpursuit-quit-button"
+          data-match-quit
+          data-tv-back
+          aria-label="Quitter la partie"
+          data-i18n-aria="quit"
+          hidden
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">Trivial Quizz</h1>
@@ -153,7 +168,11 @@
     </div>
 
     <main class="tp-app" data-id="trivialpursuit-app">
-      <section class="tp-start" data-id="trivialpursuit-start-screen">
+      <section
+        class="tp-start"
+        data-id="trivialpursuit-start-screen"
+        data-tv-screen
+      >
         <div class="tp-card">
           <h2 class="tp-logo" data-i18n="title">Trivial Quizz</h2>
           <p class="tp-pitch" data-i18n="pitch"></p>
@@ -161,6 +180,7 @@
             type="button"
             class="tp-resume"
             data-id="trivialpursuit-resume-button"
+            data-tv-focus
             hidden
           >
             <span class="tp-resume-name" data-i18n="resume"></span>
@@ -257,13 +277,19 @@
             type="button"
             class="tp-button"
             data-id="trivialpursuit-start-button"
+            data-tv-focus
             data-i18n="start"
             disabled
           ></button>
         </div>
       </section>
 
-      <section class="tp-stage" data-id="trivialpursuit-stage" hidden>
+      <section
+        class="tp-stage"
+        data-id="trivialpursuit-stage"
+        data-tv-screen
+        hidden
+      >
         <div class="tp-board-area" data-id="trivialpursuit-board-area">
           <div class="tp-board" data-id="trivialpursuit-board"></div>
         </div>
@@ -284,11 +310,17 @@
             type="button"
             class="tp-button tp-roll"
             data-id="trivialpursuit-roll-button"
+            data-tv-focus
             data-i18n="rollDie"
           ></button>
         </aside>
 
-        <div class="tp-overlay" data-id="trivialpursuit-question" hidden>
+        <div
+          class="tp-overlay"
+          data-id="trivialpursuit-question"
+          data-tv-overlay
+          hidden
+        >
           <div
             class="tp-qcard"
             data-id="trivialpursuit-question-card"
@@ -299,6 +331,7 @@
               type="button"
               class="tp-qclose"
               data-id="trivialpursuit-question-close"
+              data-tv-back
               aria-label="Fermer"
               data-i18n-aria="close"
             >
@@ -320,12 +353,14 @@
                 type="button"
                 class="tp-button"
                 data-id="trivialpursuit-show-answer-button"
+                data-tv-focus
                 data-i18n="showAnswer"
               ></button>
               <button
                 type="button"
                 class="tp-button tp-right"
                 data-id="trivialpursuit-right-button"
+                data-tv-focus
                 data-i18n="correct"
               ></button>
               <button
@@ -373,7 +408,12 @@
           </div>
         </div>
 
-        <div class="tp-overlay" data-id="trivialpursuit-choose" hidden>
+        <div
+          class="tp-overlay"
+          data-id="trivialpursuit-choose"
+          data-tv-overlay
+          hidden
+        >
           <div class="tp-qcard" role="dialog" aria-modal="true">
             <p class="tp-qtext" data-id="trivialpursuit-choose-title"></p>
             <div
@@ -383,7 +423,12 @@
           </div>
         </div>
 
-        <div class="tp-overlay" data-id="trivialpursuit-end" hidden>
+        <div
+          class="tp-overlay"
+          data-id="trivialpursuit-end"
+          data-tv-overlay
+          hidden
+        >
           <div class="tp-card">
             <h2 class="tp-end-title" data-id="trivialpursuit-end-title"></h2>
             <p data-id="trivialpursuit-end-line"></p>
@@ -393,12 +438,14 @@
                 type="button"
                 class="tp-button"
                 data-id="trivialpursuit-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               ></button>
               <button
                 type="button"
                 class="tp-button tp-button-ghost"
                 data-id="trivialpursuit-new-game-button"
+                data-tv-back
                 data-i18n="newGame"
               ></button>
             </div>
