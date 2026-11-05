@@ -186,7 +186,7 @@ In-repo games load `/shared/js/game-session.js`
 
 - A solo game whose performance can be measured — arcade, survival,
   high-score, point-based puzzle or dice games (Tetris, Simon, 2048, Fusion
-  de fruits, Space Cadet, SkiFree, Fruit Slash, Pipe Dream, JezzBall, solo
+  de fruits, SkiFree, Fruit Slash, Pipe Dream, JezzBall, solo
   Yatzy) — must:
   1. show the current score during play, `data-id="<id>-score"`;
   2. keep the all-time best in `localStorage` under its own key,
@@ -203,6 +203,14 @@ In-repo games load `/shared/js/game-session.js`
   Millionaire, trick-taking and shedding card games (Belote, Coinche,
   Bridge, Président, Bataille corse), board duels (Échecs, Jeu de dames),
   party games.
+- Exceptions (owner, 2026-11-05):
+  - Timed games where lower is better (Démineur, Sudoku) keep a best
+    *time* per level, shown on the Game Dashboard, and pass no `score`.
+  - Level-based games scored per level (Chip's Challenge) keep their
+    per-level scores; the dashboard shows the total, the end card the
+    level's best.
+  - Space Cadet shows no best and passes no `score`: its engine draws the
+    score as pixels only (`vendor/` is not modified).
 
 ### 4.4 Won / lost statistics
 
