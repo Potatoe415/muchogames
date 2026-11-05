@@ -30,8 +30,32 @@ function trackPointer(e) {
   else live.delete(e.pointerId);
 }
 
-export function bindControls({ onPress }) {
+// TV remote on the focused table: left / right = flippers, down or OK =
+// plunger. Keyboard players keep the original keys (z, /, Space).
+const REMOTE = {
+  ArrowLeft: "left",
+  ArrowRight: "right",
+  ArrowDown: "plunge",
+  Enter: "plunge"
+};
+
+function bindRemote(onPress, isPlaying) {
+  const frame = document.querySelector("[data-id='spacecadet-frame']");
+  const handle = (event) => {
+    const action = REMOTE[event.key];
+    if (!action || !window.MuchogamesTv?.isOn() || !isPlaying()) return;
+    if (!frame.contains(event.target) || event.repeat) return;
+    event.preventDefault();
+    if (event.type === "keyup") return up(KEYS[action]);
+    onPress(action).then((allowed) => allowed && down(KEYS[action]));
+  };
+  frame.addEventListener("keydown", handle);
+  frame.addEventListener("keyup", handle);
+}
+
+export function bindControls({ onPress, isPlaying }) {
   document.querySelectorAll("[data-key]").forEach((el) => bindPad(el, onPress));
+  bindRemote(onPress, isPlaying);
   document
     .querySelector("[data-id='spacecadet-frame']")
     .addEventListener("contextmenu", (event) => event.preventDefault());

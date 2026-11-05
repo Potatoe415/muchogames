@@ -1,8 +1,9 @@
 // Page shell: i18n, options panel, touch overlay and match coins.
 import { LANGS, rulesHtml, translate } from "./i18n.js";
+import { emitKey, KEYS } from "./keys.js";
 import { bindControls } from "./overlay.js";
 import { bindScoreLine } from "./score.js";
-import { isMuted, setMuted } from "./sound.js";
+import { isMuted, setMuted, setSilenced } from "./sound.js";
 
 const GAME_ID = "spacecadet";
 const LANG_KEY = "bergamots-lang";
@@ -74,6 +75,34 @@ async function startPlaying(restart) {
   return allowed;
 }
 
+// Game Dashboard <-> table. The table stays laid out under the dashboard
+// (SDL keeps its canvas size); it is only made invisible and inert.
+function showScreen(playing) {
+  document.body.classList.toggle("sc-dash", !playing);
+  $("spacecadet-dashboard-screen").hidden = playing;
+  $("spacecadet-play-screen").inert = !playing;
+  $("game-back-button").hidden = playing;
+  $("spacecadet-quit-button").hidden = !playing;
+  setSilenced(!playing);
+  if (playing) $("spacecadet-frame").focus({ preventScroll: true });
+}
+
+// A new table every time: F2 resets the one left behind by a quit.
+async function playFromDashboard() {
+  window.MuchogamesTv?.play();
+  if (!(await startPlaying(true))) return;
+  showScreen(true);
+  emitKey("keydown", KEYS.newgame);
+  emitKey("keyup", KEYS.newgame);
+}
+
+// Runs once game-session.js's "Leave match?" dialog is confirmed. No
+// resume (NOTES.md): the next Play deals a new table.
+function quitMatch() {
+  if (window.MuchogamesMatch?.isInProgress()) window.MuchogamesMatch.finish();
+  showScreen(false);
+}
+
 function onPress(action) {
   if (action === "newgame") return startPlaying(true);
   if (action === "plunge") return startPlaying(false);
@@ -94,9 +123,15 @@ function bindPage() {
     setMuted(!isMuted());
     paintMute();
   });
-  bindControls({ onPress });
+  $("spacecadet-start-button").addEventListener("click", playFromDashboard);
+  $("spacecadet-quit-button").addEventListener("click", quitMatch);
+  bindControls({
+    onPress,
+    isPlaying: () => !document.body.classList.contains("sc-dash")
+  });
   bindScoreLine();
 }
 
 bindPage();
 applyLanguage();
+showScreen(false);

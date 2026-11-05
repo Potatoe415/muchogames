@@ -4,6 +4,9 @@ export const LANGS = ["fr", "en", "es"];
 const STRINGS = {
   fr: {
     title: "Space Cadet",
+    pitch: "Lancez la bille et gardez-la en jeu le plus longtemps possible.",
+    play: "Jouer",
+    quit: "Quitter la partie",
     back: "Retour",
     options: "Options",
     close: "Fermer",
@@ -23,6 +26,9 @@ const STRINGS = {
   },
   en: {
     title: "Space Cadet",
+    pitch: "Launch the ball and keep it in play as long as you can.",
+    play: "Play",
+    quit: "Leave the match",
     back: "Back",
     options: "Options",
     close: "Close",
@@ -42,6 +48,9 @@ const STRINGS = {
   },
   es: {
     title: "Space Cadet",
+    pitch: "Lanza la bola y mantenla en juego el mayor tiempo posible.",
+    play: "Jugar",
+    quit: "Salir de la partida",
     back: "Volver",
     options: "Opciones",
     close: "Cerrar",

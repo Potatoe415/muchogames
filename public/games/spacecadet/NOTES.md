@@ -27,6 +27,9 @@ recompile. Read this before opening the sources.
 - Plunger: hold Space, the Launch button, or the bottom-right of the table on a phone.
 - F2 new game (1 coin), F3 pause, `x` tilt.
 - WASM does not report game over: F2 while a match is running `finish()` then `start()`; leaving via back confirms.
+- Game Dashboard (`spacecadet-dashboard-screen`, fixed over the table): title, pitch, "Jouer" (`spacecadet-start-button`: `MuchogamesTv.play()`, `start()`, then F2 for a fresh table). No best score and no Resume: the engine exposes neither (below).
+- In play, ✖ `spacecadet-quit-button` (`data-match-quit`) → shared confirm → `finish()` without result, back to the dashboard. The table under the dashboard stays laid out (`body.sc-dash` = `visibility: hidden` + `inert`) so SDL keeps its canvas size, and its audio is suspended (`sound.setSilenced`).
+- TV (`?tv=1`): the focused `spacecadet-frame` (`data-tv-keys="left right down"`) maps ←/→ to the flippers and ↓ / OK to the plunger (`overlay.js` `bindRemote`); Back = ✖.
 
 ## No resume (`"resumable": false`)
 

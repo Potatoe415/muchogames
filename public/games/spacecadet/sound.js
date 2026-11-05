@@ -10,8 +10,15 @@ function readMuted() {
 }
 
 let muted = readMuted();
+// Silent while the Game Dashboard covers the table (not remembered).
+let silenced = false;
 
 export const isMuted = () => muted;
+
+export function setSilenced(value) {
+  silenced = value;
+  syncAudio();
+}
 
 export function setMuted(value) {
   muted = value;
@@ -26,10 +33,11 @@ export function setMuted(value) {
 export function syncAudio() {
   const sdl = window.Module?.SDL2;
   if (!sdl) return;
+  const quiet = muted || silenced;
   [sdl.audioContext, sdl.audio?.context, sdl.capture?.audioContext].forEach(
     (ctx) => {
-      if (muted && ctx?.state === "running") ctx.suspend();
-      if (!muted && ctx?.state === "suspended") ctx.resume();
+      if (quiet && ctx?.state === "running") ctx.suspend();
+      if (!quiet && ctx?.state === "suspended") ctx.resume();
     }
   );
 }
