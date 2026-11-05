@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Easy Frog</title>
+    <link rel="stylesheet" href="/shared/css/base.css" />
+    <link rel="stylesheet" href="/shared/css/game-header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stage.css" />
+    <script src="/shared/js/tv-remote.js"></script>
+  </head>
+  <body data-match-saved>
+    <header class="game-nav">
+      <div class="nav-side nav-left">
+        <!-- Game Dashboard: back to the hub. Hidden during a match. -->
+        <a
+          class="back-button"
+          href="/"
+          data-id="game-back-button"
+          data-tv-back
+          aria-label="Retour"
+          data-i18n-aria="back"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" /></svg
+        ></a>
+        <!-- In a match: back to the Game Dashboard, after game-session.js asks. -->
+        <button
+          type="button"
+          class="back-button"
+          data-id="easyfrog-quit-button"
+          data-match-quit
+          aria-label="Quitter la partie"
+          data-i18n-aria="quit"
+          hidden
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
+      </div>
+      <div class="nav-center"></div>
+      <div class="nav-side nav-right">
+        <button
+          type="button"
+          class="options-button"
+          data-id="game-options-button"
+          aria-label="Options"
+          data-i18n-aria="options"
+          aria-expanded="false"
+          aria-controls="optionsPanel"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="optionsPanel"
+      class="options-panel"
+      data-id="game-options-panel"
+      hidden
+    >
+      <div class="options-panel-backdrop" data-options-close></div>
+      <div class="options-panel-sheet" role="dialog" aria-modal="true">
+        <div class="options-panel-header">
+          <span class="options-panel-title" data-i18n="options">Options</span>
+          <button
+            type="button"
+            class="options-panel-close"
+            data-options-close
+            data-id="easyfrog-options-close"
+            aria-label="Fermer"
+            data-i18n-aria="close"
+          >
+            ×
+          </button>
+        </div>
+        <div class="options-panel-body">
+          <div class="options-panel-section" data-id="game-options-language">
+            <p class="options-panel-section-title" data-i18n="language">
+              Langue
+            </p>
+            <div class="ef-chips">
+              <button
+                type="button"
+                class="ef-chip"
+                data-lang="fr"
+                data-id="easyfrog-lang-fr"
+              >
+                FR
+              </button>
+              <button
+                type="button"
+                class="ef-chip"
+                data-lang="en"
+                data-id="easyfrog-lang-en"
+              >
+                EN
+              </button>
+              <button
+                type="button"
+                class="ef-chip"
+                data-lang="es"
+                data-id="easyfrog-lang-es"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+          <div class="options-panel-section" data-id="easyfrog-options-display">
+            <p class="ef-setting">
+              <span data-i18n="sound">Son</span>
+              <button
+                type="button"
+                class="ef-chip"
+                data-setting="soundEnabled"
+                data-id="easyfrog-sound-toggle"
+              ></button>
+            </p>
+            <p class="ef-setting">
+              <span data-i18n="frogAnimation">Animation de la grenouille</span>
+              <button
+                type="button"
+                class="ef-chip"
+                data-setting="animationEnabled"
+                data-id="easyfrog-animation-toggle"
+              ></button>
+            </p>
+            <p class="ef-setting">
+              <span data-i18n="objectsMovement">Mouvement des objets</span>
+              <button
+                type="button"
+                class="ef-chip"
+                data-setting="objectsMovementEnabled"
+                data-id="easyfrog-movement-toggle"
+              ></button>
+            </p>
+            <p class="ef-setting">
+              <span data-i18n="modernLook">Look moderne</span>
+              <button
+                type="button"
+                class="ef-chip"
+                data-setting="modernLook"
+                data-id="easyfrog-modern-toggle"
+              ></button>
+            </p>
+          </div>
+          <details class="options-panel-section" data-id="game-options-rules">
+            <summary class="options-panel-section-title" data-i18n="rules">
+              Règles
+            </summary>
+            <div
+              class="rules-modal-content"
+              data-id="easyfrog-rules-content"
+            ></div>
+          </details>
+          <!-- "Report a problem" is appended here by initOptionsPanel. -->
+        </div>
+      </div>
+    </div>
+
+    <main class="ef-shell" data-id="easyfrog-shell">
+      <section
+        class="ef-screen ef-dashboard"
+        data-id="easyfrog-dashboard-screen"
+        data-tv-screen
+      >
+        <div class="ef-card">
+          <img
+            class="ef-cover"
+            src="images/screen_start.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h1 class="ef-title" data-i18n="title">Easy Frog</h1>
+          <p class="ef-pitch" data-i18n="pitch"></p>
+          <p class="ef-best" data-id="easyfrog-best-score-row">
+            <span data-i18n="best">Record</span> ·
+            <span data-i18n="normal">Normal</span>
+            <strong data-id="easyfrog-best-score">0</strong> ·
+            <span data-i18n="easy">Facile</span>
+            <strong data-id="easyfrog-best-score-easy">0</strong>
+          </p>
+          <button
+            type="button"
+            class="ef-button ef-resume"
+            data-id="easyfrog-resume-button"
+            data-tv-focus
+            hidden
+          >
+            <span data-i18n="resume">Reprendre</span>
+            <span class="ef-resume-info" data-resume-info></span>
+          </button>
+          <div class="ef-modes">
+            <button
+              type="button"
+              class="ef-button ef-easy"
+              data-id="easyfrog-start-easy-button"
+              data-i18n="easy"
+            >
+              Facile
+            </button>
+            <button
+              type="button"
+              class="ef-button ef-normal"
+              data-id="easyfrog-start-button"
+              data-tv-focus
+              data-i18n="normal"
+            >
+              Normal
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="ef-screen ef-play"
+        data-id="easyfrog-play-screen"
+        data-tv-screen
+        hidden
+      >
+        <div class="ef-hud" data-id="easyfrog-hud">
+          <span
+            ><span data-i18n="score">Score</span>
+            <strong data-id="easyfrog-score">0</strong></span
+          >
+          <span
+            ><span data-i18n="level">Niveau</span>
+            <strong data-id="easyfrog-level">1</strong></span
+          >
+          <span class="ef-timer" data-id="easyfrog-timer-row"
+            ><span data-i18n="time">Temps</span>
+            <strong data-id="easyfrog-timer">0</strong></span
+          >
+          <span
+            class="ef-lives"
+            data-id="easyfrog-lives"
+            aria-label="Vies"
+            data-i18n-aria="lives"
+          ></span>
+          <span
+            class="ef-god"
+            data-id="easyfrog-godmode"
+            data-i18n="godMode"
+            hidden
+          ></span>
+          <button
+            type="button"
+            class="ef-tool"
+            data-id="easyfrog-pause-button"
+            data-tv-back
+            aria-label="Pause"
+            data-i18n-aria="pause"
+          >
+            <span aria-hidden="true">❚❚</span>
+          </button>
+        </div>
+        <div class="ef-stage">
+          <div
+            class="ef-board"
+            data-id="easyfrog-board"
+            tabindex="0"
+            role="group"
+            aria-label="Plateau de jeu"
+            data-i18n-aria="board"
+            data-tv-focus
+            data-tv-keys="left right up down"
+          >
+            <canvas class="ef-canvas" data-id="easyfrog-canvas"></canvas>
+          </div>
+          <div class="ef-dpad" data-id="easyfrog-dpad">
+            <button
+              type="button"
+              class="ef-pad ef-pad-up"
+              data-dir="UP"
+              data-id="easyfrog-dpad-up"
+              aria-label="Haut"
+              data-i18n-aria="up"
+            >
+              ▲
+            </button>
+            <button
+              type="button"
+              class="ef-pad ef-pad-left"
+              data-dir="LEFT"
+              data-id="easyfrog-dpad-left"
+              aria-label="Gauche"
+              data-i18n-aria="left"
+            >
+              ◀
+            </button>
+            <button
+              type="button"
+              class="ef-pad ef-pad-down"
+              data-dir="DOWN"
+              data-id="easyfrog-dpad-down"
+              aria-label="Bas"
+              data-i18n-aria="down"
+            >
+              ▼
+            </button>
+            <button
+              type="button"
+              class="ef-pad ef-pad-right"
+              data-dir="RIGHT"
+              data-id="easyfrog-dpad-right"
+              aria-label="Droite"
+              data-i18n-aria="right"
+            >
+              ▶
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="ef-overlay"
+        data-id="easyfrog-paused"
+        data-tv-overlay
+        hidden
+      >
+        <div class="ef-card" role="dialog" aria-modal="true">
+          <h2 class="ef-overlay-title" data-i18n="paused">Pause</h2>
+          <button
+            type="button"
+            class="ef-button"
+            data-id="easyfrog-continue-button"
+            data-tv-focus
+            data-tv-back
+            data-i18n="continue"
+          >
+            Continuer
+          </button>
+          <button
+            type="button"
+            class="ef-button ef-button-soft"
+            data-id="easyfrog-restart-button"
+            data-i18n="restart"
+          >
+            Nouvelle partie
+          </button>
+          <button
+            type="button"
+            class="ef-button ef-button-soft"
+            data-id="easyfrog-paused-menu-button"
+            data-match-quit
+            data-i18n="menu"
+          >
+            Menu du jeu
+          </button>
+        </div>
+      </div>
+
+      <div class="ef-overlay" data-id="easyfrog-end" data-tv-overlay hidden>
+        <div class="ef-card" role="dialog" aria-modal="true">
+          <img
+            class="ef-end-image"
+            data-id="easyfrog-end-image"
+            src="images/screen_gameover.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h2 class="ef-overlay-title" data-id="easyfrog-end-title"></h2>
+          <p class="ef-final">
+            <span data-i18n="score">Score</span> :
+            <strong data-id="easyfrog-final-score">0</strong>
+          </p>
+          <p class="ef-best">
+            <span data-i18n="best">Record</span> :
+            <strong data-id="easyfrog-final-best-score">0</strong>
+            <span
+              class="ef-new-best"
+              data-id="easyfrog-new-best"
+              data-i18n="newBest"
+              hidden
+            ></span>
+          </p>
+          <button
+            type="button"
+            class="ef-button"
+            data-id="easyfrog-replay-button"
+            data-tv-focus
+            data-i18n="replay"
+          >
+            Rejouer
+          </button>
+          <button
+            type="button"
+            class="ef-button ef-button-soft"
+            data-id="easyfrog-menu-button"
+            data-tv-back
+            data-i18n="menu"
+          >
+            Menu du jeu
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="/shared/js/game-header.js"></script>
+    <script src="/shared/js/game-session.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

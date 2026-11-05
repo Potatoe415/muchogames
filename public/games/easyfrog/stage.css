@@ -1,0 +1,151 @@
+/* Play screen: HUD on top, then the board (canvas fitted by view.js) with
+   the on-screen D-pad under it in portrait, beside it in landscape. The
+   D-pad only shows on touch screens. */
+.ef-play {
+  gap: 0.5em;
+}
+
+.ef-hud {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em 1em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ef-hud strong {
+  color: #ffd76a;
+}
+
+.ef-timer.ef-urgent strong {
+  color: #ff4040;
+}
+
+.ef-lives {
+  color: #ff3b4f;
+  letter-spacing: 0.1em;
+}
+
+.ef-god {
+  color: #ff4444;
+}
+
+.ef-tool {
+  width: max(40px, 6dvh);
+  height: max(40px, 6dvh);
+  margin-left: auto;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ef-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.6em;
+}
+
+.ef-board {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+.ef-board:focus,
+html.tv .ef-board:focus {
+  outline: none;
+}
+
+.ef-canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid #2f4a35;
+  background: #000000;
+  transform: translate(-50%, -50%);
+}
+
+html.tv .ef-board:focus .ef-canvas {
+  border-color: #ffd400;
+}
+
+.ef-dpad {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-areas:
+    ". up ."
+    "left down right";
+  grid-template-columns: repeat(3, max(52px, 8dvh));
+  grid-auto-rows: max(52px, 8dvh);
+  justify-content: center;
+  gap: 6px;
+  touch-action: none;
+}
+
+.ef-pad {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ef-pad:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.ef-pad-up {
+  grid-area: up;
+}
+
+.ef-pad-left {
+  grid-area: left;
+}
+
+.ef-pad-down {
+  grid-area: down;
+}
+
+.ef-pad-right {
+  grid-area: right;
+}
+
+/* Landscape: the D-pad moves beside the board. */
+@media (orientation: landscape) {
+  .ef-stage {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ef-board {
+    align-self: stretch;
+  }
+}
+
+/* Mouse, keyboard and TV remote: no on-screen arrows. */
+@media (hover: hover) and (pointer: fine) {
+  .ef-dpad {
+    display: none;
+  }
+}
+
+html.tv .ef-dpad {
+  display: none;
+}

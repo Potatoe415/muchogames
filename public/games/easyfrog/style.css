@@ -1,0 +1,300 @@
+/* Easy Frog: night-pond skin over the shared header. Mobile first (base =
+   360px-wide phone); sizes follow the screen up to a 4K TV. Page frame,
+   chips, cards, buttons, Game Dashboard and overlays here; play screen in
+   stage.css. */
+[hidden] {
+  display: none !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  margin: 0;
+  overscroll-behavior: none;
+  background: radial-gradient(circle at 50% 0%, #17351f 0%, #0a0a0a 70%);
+  color: #f2f5ef;
+}
+
+.game-nav {
+  flex: 0 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #2f4a35;
+  box-shadow: none;
+}
+
+.back-button,
+.options-button {
+  background: #4caf50;
+  color: #ffffff;
+}
+
+.options-panel-sheet {
+  color: #1f2937;
+}
+
+.ef-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ef-chip {
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
+  border: 2px solid #d5ddd8;
+  border-radius: 0.75em;
+  background: #ffffff;
+  color: #1f2937;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ef-chip.active,
+.ef-chip[aria-pressed="true"] {
+  border-color: #4caf50;
+  background: #e5f4e6;
+}
+
+.ef-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin: 0 0 0.6em;
+}
+
+/* Android bars can cover the bottom even when the safe-area inset is 0. */
+.ef-shell {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  font-size: max(1rem, 2.4dvh);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ef-screen {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ef-dashboard {
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.ef-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  width: min(100%, 26em);
+  text-align: center;
+}
+
+.ef-card p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* The start picture without its "press Enter" line at the bottom. */
+.ef-cover {
+  width: auto;
+  max-width: 100%;
+  height: 30dvh;
+  aspect-ratio: 1024 / 800;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #2f4a35;
+  border-radius: 0.8em;
+}
+
+.ef-title {
+  margin: 0;
+  font-size: 1.8em;
+  color: #8ce390;
+  letter-spacing: 0.04em;
+}
+
+.ef-pitch {
+  color: #c9d6c6;
+}
+
+.ef-best {
+  color: #ffd76a;
+  font-weight: 600;
+}
+
+.ef-modes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8em;
+  width: 100%;
+}
+
+.ef-button {
+  min-width: 8em;
+  min-height: max(44px, 6dvh);
+  padding: 0.4em 1.2em;
+  border: 3px solid #ffffff;
+  border-radius: 0.6em;
+  background: #4caf50;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: 0 0.25em 0.8em rgba(0, 0, 0, 0.5);
+}
+
+.ef-button:active {
+  transform: scale(0.96);
+}
+
+.ef-easy {
+  background: #5fb865;
+}
+
+.ef-normal {
+  background: #577ae1;
+}
+
+.ef-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 17em);
+  background: #e0a526;
+}
+
+.ef-resume-info {
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.ef-button-soft {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: #3a4a3d;
+}
+
+/* Overlays cover the play screen; the board stays dimly visible. */
+.ef-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 1em max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.ef-overlay .ef-card {
+  padding: 1em;
+  border: 2px solid #2f4a35;
+  border-radius: 1em;
+  background: #141c16;
+}
+
+.ef-overlay .ef-button {
+  width: min(100%, 14em);
+}
+
+.ef-overlay-title {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.ef-end-image {
+  width: 100%;
+  max-height: 26dvh;
+  object-fit: contain;
+  border-radius: 0.6em;
+  background: #ffffff;
+}
+
+.ef-final {
+  font-size: 1.3em;
+}
+
+.ef-new-best {
+  display: block;
+  color: #8ce390;
+}
+
+:focus-visible,
+html.tv :focus {
+  outline: max(3px, 0.4dvh) solid #ffd400;
+  outline-offset: max(2px, 0.3dvh);
+}
+
+/* Landscape phones are ~360px tall. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .ef-shell {
+    padding-top: 4px;
+  }
+
+  .ef-card {
+    gap: 0.35em;
+  }
+
+  .ef-cover {
+    height: 22dvh;
+  }
+
+  .ef-end-image {
+    max-height: 22dvh;
+  }
+
+  .ef-pitch {
+    display: none;
+  }
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: sizes follow the screen and
+   everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .ef-shell {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .ef-card {
+    width: min(100%, 30em);
+  }
+}

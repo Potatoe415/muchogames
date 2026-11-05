@@ -180,7 +180,7 @@ In-repo games load `/shared/js/game-session.js`
 - A server or network failure lets the match start.
 - Exception: games whose code is not in this repo cannot report a match
   start. They declare `"coinPolicy": "launch"` and the hub charges the coin
-  when the tile is opened. Today: `easyfrog`, `gameboy-web`.
+  when the tile is opened. Today: `gameboy-web`.
 
 ### 4.3 Solo score and personal best *(new games)*
 

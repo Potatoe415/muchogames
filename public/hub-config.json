@@ -66,12 +66,11 @@
   {
     "id": "easyfrog",
     "title": "Easy Frog",
-    "kind": "external",
+    "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-03-10",
-    "launch": "https://easyfrog.web.app/",
+    "launch": "/games/easyfrog/index.html",
     "thumbnail": "/games/easyfrog/assets/thumbnail.jpg",
-    "coinPolicy": "launch",
     "players": [1, 1],
     "duration": 5
   },
