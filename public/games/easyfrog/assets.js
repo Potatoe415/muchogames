@@ -1,4 +1,10 @@
 // Board images (images/<name>.png), loaded once per page.
+import { solidStrip } from "./strips.js";
+
+// Opaque background strips with ragged edges (see strips.js). The water is
+// see-through on purpose and stays as it is.
+const STRIPS = new Set(["roadBg", "border_middle", "border_top"]);
+
 const IMAGES = {
   frog: "frog",
   frogWin: "frog_win",
@@ -36,10 +42,10 @@ function loadImage(src) {
 // A missing image is left out: that sprite is simply not drawn.
 export async function loadImages() {
   const entries = await Promise.all(
-    Object.entries(IMAGES).map(async ([key, name]) => [
-      key,
-      await loadImage(`images/${name}.png`)
-    ])
+    Object.entries(IMAGES).map(async ([key, name]) => {
+      const img = await loadImage(`images/${name}.png`);
+      return [key, img && STRIPS.has(key) ? solidStrip(img) : img];
+    })
   );
   return Object.fromEntries(entries.filter(([, img]) => img));
 }

@@ -126,7 +126,12 @@ export function die(game, type) {
   game.respawnTimer = balance.respawnCooldownMs / 1000;
   game.player.resetPosition();
   if (type === "time") {
+    // Out of time: the level timer starts again from its full value.
     game.timeLeft = game.levelConfig().timeLimit;
+  } else if (game.timeLeft !== null && balance.deathTimeBonus) {
+    game.timeLeft += balance.deathTimeBonus;
+  }
+  if (game.timeLeft !== null && game.timeLeft > 5) {
     game.audio.stopLoop("heartbeat");
     game.heartbeatActive = false;
   }

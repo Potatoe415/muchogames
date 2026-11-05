@@ -11,14 +11,14 @@ The owner's road-and-pond crossing game ("EasyFrog by Falcon"), ported on 2026-1
 | `rules.js` | Collisions: flies, home slots / level up / victory, cars + train, riding the river, death (`die`), car-gap keeping. |
 | `entities.js`, `flies.js`, `player.js` | Cars, train, logs / lily pads / turtles / crocodile, diving turtle; fly + chaos fly; the frog (crouch → jump → squash, buffered input). |
 | `levels.js`, `lanes.js`, `balance.js`, `balance-easy.js`, `difficulty.js` | Road lanes per level; every tunable value (Normal 7 levels with timer, Easy 5 slower levels without). |
-| `renderer.js`, `view.js`, `assets.js`, `audio.js` | Board drawing; canvas fit + backing store at screen pixels (auto-lowered under ~45 fps); images; sounds. |
+| `renderer.js`, `view.js`, `assets.js`, `strips.js`, `audio.js` | Board drawing; canvas fit + backing store at screen pixels (auto-lowered under ~45 fps); images, with the ragged transparent edges of the road / verge / hedge strips trimmed and filled at load (`strips.js`, ~35 ms) so no canvas colour shows between bands; sounds. |
 | `input.js`, `hud.js` | Keys (arrows / WASD, Escape or P pause, F8 god mode, F9 skip level), swipes on the board, D-pad; HUD. |
 | `snapshot.js`, `save.js`, `prefs.js`, `i18n.js` | Match JSON + validation; save key; settings / language / best; copy + rules. |
 | `style.css`, `stage.css` | Frame, dashboard, cards, overlays; play screen: pause ❚❚ centred in the shared header, HUD, fitted board, D-pad (hidden with a fine pointer or on TV). Portrait phones: the board breaks out of the 24px side margins to run 2px from each edge (canvas full width when the height allows), D-pad on two rows under it (owner choice, 2026-11-05: costs ~50px of board height on short phones). Landscape: D-pad beside the board. |
 
 ## Rules in code
 
-- Win: fill enough of the 4 top slots (`requiredWins` per level) to reach the next level; clearing the last level is a victory. Slot +200, fly +500 and +1 life (max 5, once per level), death −10,000 Normal / −5,000 Easy (floored at 0). Normal levels have a time limit; each slot adds 5 s.
+- Win: fill enough of the 4 top slots (`requiredWins` per level) to reach the next level; clearing the last level is a victory. Slot +200, fly +500 and +1 life (max 5, once per level), death −10,000 Normal / −5,000 Easy (floored at 0). Normal levels have a time limit; each slot adds 5 s, each car / train / water death adds 10 s (`deathTimeBonus`, owner request 2026-11-05), running out of time restarts the level timer at full.
 - Chaos fly (inverted-colour fly) from level 4 Normal / 5 Easy: touching it flips the screen for 4 s. Train on the middle verge from level 5.
 - `finish({ won, score })`: `won: true` on victory, `false` on game over. Best per difficulty: `muchogames_easyfrog_best` (Normal), `muchogames_easyfrog_best_easy`.
 - F8 / F9 are the original owner test cheats, kept as-is.

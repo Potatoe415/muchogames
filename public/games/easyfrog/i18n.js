@@ -134,7 +134,7 @@ const RULES = {
 <li>Étang : saute sur les rondins, nénuphars, tortues et crocodiles, jamais dans l'eau ni sur la tête du crocodile. Certaines tortues plongent : elles clignotent juste avant.</li>
 <li>Chaque case d'arrivée rapporte 200 points ; le niveau est gagné quand assez de cases sont remplies. Termine le dernier niveau pour gagner la partie.</li>
 <li>La mouche rapporte 500 points et une vie (5 vies au plus). La mouche aux couleurs inversées retourne l'écran pendant 4 secondes.</li>
-<li>Une vie perdue coûte des points : 10 000 en Normal, 5 000 en Facile. En Normal, chaque niveau a un temps limite et chaque case atteinte ajoute 5 secondes.</li>
+<li>Une vie perdue coûte des points : 10 000 en Normal, 5 000 en Facile. En Normal, chaque niveau a un temps limite ; chaque case atteinte ajoute 5 secondes et chaque vie perdue (voiture, train ou eau) en ajoute 10.</li>
 <li>Facile : 5 niveaux plus lents, sans chrono. Normal : 7 niveaux.</li>
 </ul>
 <p>Commandes : flèches ou ZQSD/WASD, balayage sur le plateau, ou les flèches à l'écran. Échap ou P : pause.</p>`,
@@ -144,7 +144,7 @@ const RULES = {
 <li>Pond: hop on logs, lily pads, turtles and crocodiles, never into the water nor onto the crocodile's head. Some turtles dive: they blink just before.</li>
 <li>Each home slot is worth 200 points; a level is won once enough slots are filled. Clear the last level to win the match.</li>
 <li>The fly is worth 500 points and one life (5 lives at most). The fly with inverted colours turns the screen upside down for 4 seconds.</li>
-<li>Losing a life costs points: 10,000 in Normal, 5,000 in Easy. In Normal each level has a time limit, and each slot reached adds 5 seconds.</li>
+<li>Losing a life costs points: 10,000 in Normal, 5,000 in Easy. In Normal each level has a time limit; each slot reached adds 5 seconds and each life lost (car, train or water) adds 10.</li>
 <li>Easy: 5 slower levels, no timer. Normal: 7 levels.</li>
 </ul>
 <p>Controls: arrow keys or WASD, swipe on the board, or the on-screen arrows. Escape or P: pause.</p>`,
@@ -154,7 +154,7 @@ const RULES = {
 <li>Estanque: salta sobre troncos, nenúfares, tortugas y cocodrilos, nunca al agua ni sobre la cabeza del cocodrilo. Algunas tortugas se sumergen: parpadean justo antes.</li>
 <li>Cada casilla de llegada vale 200 puntos; el nivel se gana cuando hay suficientes casillas llenas. Supera el último nivel para ganar la partida.</li>
 <li>La mosca vale 500 puntos y una vida (5 vidas como máximo). La mosca de colores invertidos da la vuelta a la pantalla durante 4 segundos.</li>
-<li>Perder una vida cuesta puntos: 10 000 en Normal, 5 000 en Fácil. En Normal cada nivel tiene un tiempo límite y cada casilla alcanzada añade 5 segundos.</li>
+<li>Perder una vida cuesta puntos: 10 000 en Normal, 5 000 en Fácil. En Normal cada nivel tiene un tiempo límite; cada casilla alcanzada añade 5 segundos y cada vida perdida (coche, tren o agua) añade 10.</li>
 <li>Fácil: 5 niveles más lentos, sin cronómetro. Normal: 7 niveles.</li>
 </ul>
 <p>Controles: flechas o WASD, deslizar sobre el tablero, o las flechas en pantalla. Escape o P: pausa.</p>`

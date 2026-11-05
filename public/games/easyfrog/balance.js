@@ -32,6 +32,7 @@ export const BALANCE = {
   flyScore: 500, // points for catching the fly
   deathPenalty: 10000, // points deducted on death (never below 0)
   timeBonus: 5, // seconds added when reaching a slot
+  deathTimeBonus: 10, // seconds added when a car or the water takes a life
 
   anticipateDuration: 0.02, // crouch before the jump, seconds
   jumpDuration: 0.12, // jump arc, seconds

@@ -32,6 +32,7 @@ export const EASY_BALANCE = {
   flyScore: 500,
   deathPenalty: 5000,
   timeBonus: null, // no timer in Easy
+  deathTimeBonus: null,
 
   anticipateDuration: 0.02,
   jumpDuration: 0.12,
