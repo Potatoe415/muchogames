@@ -4,8 +4,9 @@
   min-height: 0;
   display: grid;
   place-items: center;
-  padding: 1em max(1em, env(safe-area-inset-right))
-    max(1em, env(safe-area-inset-bottom)) max(1em, env(safe-area-inset-left));
+  padding: 1em max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   overflow-y: auto;
 }
 
@@ -229,7 +230,44 @@
   }
 }
 
+/* Desktop and TV: 3% from the edges (overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .tr-start {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+}
+
 @media (orientation: landscape) and (max-height: 500px) {
+  .tr-start {
+    padding-top: 0.5em;
+  }
+
+  /* Logo, best and Resume left; level, ghost and Play right: fits ~250px. */
+  .tr-start .tr-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-auto-flow: dense;
+    align-content: center;
+    align-items: center;
+    column-gap: 1.2em;
+    width: min(100%, 36em);
+  }
+
+  .tr-start .tr-card > * {
+    grid-column: 1;
+  }
+
+  .tr-start .tr-setup,
+  .tr-start [data-id="tetris-play-button"] {
+    grid-column: 2;
+  }
+
+  .tr-start .tr-setup {
+    grid-row: 1 / span 2;
+    margin: 0 auto;
+  }
+
   .tr-logo span {
     font-size: 1em;
   }
