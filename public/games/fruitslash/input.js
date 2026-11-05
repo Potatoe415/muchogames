@@ -48,9 +48,11 @@ export function createInput(canvas, blade) {
 
   function onKey(event) {
     if (!KEY_DIRS[event.key]) return;
+    if (event.type === "keyup") return held.delete(event.key);
+    // Already used by tv-remote.js to move the focus between buttons.
+    if (event.defaultPrevented) return;
     event.preventDefault();
-    if (event.type === "keydown") held.add(event.key);
-    else held.delete(event.key);
+    held.add(event.key);
   }
 
   const onBlur = () => held.clear();

@@ -53,7 +53,8 @@ function renderResume() {
 }
 
 function renderStart() {
-  $("fruitslash-start-best").textContent = t("bestLine", page.best);
+  $("fruitslash-best-score-kids").textContent = String(page.best.kids);
+  $("fruitslash-best-score-ninja").textContent = String(page.best.ninja);
   document.querySelectorAll("[data-theme]").forEach((button) => {
     const chosen = button.dataset.theme === page.theme;
     button.classList.toggle("active", chosen);
@@ -72,9 +73,8 @@ function renderEnd() {
   $("fruitslash-end-sliced").textContent = t("endSliced", s);
   $("fruitslash-end-combo").hidden = s.bestCombo < 3;
   $("fruitslash-end-combo").textContent = t("endCombo", { combo: s.bestCombo });
-  $("fruitslash-end-best").textContent = page.newBest
-    ? t("newBest")
-    : t("best", { best: page.best[s.mode] });
+  $("fruitslash-final-best-score").textContent = String(page.best[s.mode]);
+  $("fruitslash-new-best").hidden = !page.newBest;
 }
 
 function applyLanguage() {
@@ -114,6 +114,8 @@ function showOverlay(name) {
 function showScreen(playing) {
   $("fruitslash-start-screen").hidden = playing;
   $("fruitslash-stage").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("fruitslash-quit-button").hidden = !playing;
 }
 
 function onEnd(summary) {
@@ -161,6 +163,7 @@ async function startMatch(mode) {
   if (page.starting) return;
   page.mode = mode;
   prefs.saveMode(mode);
+  window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
@@ -173,6 +176,7 @@ function resumeMatch() {
   const saved = loadMatch();
   page.saved = saved;
   if (!saved) return renderResume();
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   page.mode = saved.mode;
   page.theme = saved.theme;
@@ -223,9 +227,16 @@ function onVisibility() {
   if (page.game && page.overlay === null) showOverlay("paused");
 }
 
+// P pauses (on a TV, Back presses the ⏸ through data-tv-back).
 function onKey(event) {
   if (event.key !== "p" && event.key !== "P") return;
   if (page.game && page.overlay === null) showOverlay("paused");
+}
+
+// The ✖ asks "Leave match?" first (game-session.js): the fruits wait.
+function pauseBeforeQuit(event) {
+  const quit = event.target.closest?.('[data-id="fruitslash-quit-button"]');
+  if (quit && page.game && page.overlay === null) showOverlay("paused");
 }
 
 function bindStart() {
@@ -258,7 +269,12 @@ function bindStage() {
   $("fruitslash-replay-button").addEventListener("click", () =>
     startMatch(page.mode)
   );
-  $("fruitslash-menu-button").addEventListener("click", returnToStart);
+  [
+    "fruitslash-menu-button",
+    "fruitslash-quit-button",
+    "fruitslash-paused-menu-button"
+  ].forEach((id) => $(id).addEventListener("click", returnToStart));
+  window.addEventListener("click", pauseBeforeQuit, true);
   document.addEventListener("visibilitychange", onVisibility);
   document.addEventListener("keydown", onKey);
   window.addEventListener("pagehide", unmountGame);

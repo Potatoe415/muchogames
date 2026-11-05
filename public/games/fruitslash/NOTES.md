@@ -33,3 +33,10 @@ Solo arcade for kids, in the spirit of Fruit Ninja: swipe to slice what flies. V
 - Written at match start, every 1 s, on `visibilitychange` hidden and `pagehide`. `snapshot()` returns `null` once the clock hits 0.
 - `decodeMatch` drops the save unless mode/theme are known, every emoji belongs to the theme (bombs only in `ninja`), and numbers are finite and in range.
 - Start screen `fruitslash-resume-button` restores it paused (`fruitslash-continue-button` is the pause overlay's) and calls `MuchogamesMatch.resume()`. Deleted only at the end, before `finish()`.
+
+## Platform pass (2026-11-05)
+
+- In match the header back button is replaced by `fruitslash-quit-button` (✕, `data-match-quit`): `game-session.js` asks, then the click returns to the dashboard (no `finish()`, save kept). The pause overlay has the same quit (`fruitslash-paused-menu-button`). Clicking ✕ pauses first.
+- Best per mode: `fruitslash-best-score` (`-kids` / `-ninja`) on the dashboard, `fruitslash-final-best-score` + `fruitslash-new-best` on the end card. Live score `fruitslash-score`. Keys unchanged.
+- TV (`tv-remote.js`): `data-tv-screen` on start/stage, `data-tv-overlay` on pause/end; the canvas is focusable (`data-tv-keys="left right up down"`) so the arrows drive the blade; Back presses ⏸ (then Continue). `MuchogamesTv.play()` on start and resume. `input.js` ignores arrows tv-remote already used (`defaultPrevented`).
+- Layout: `.fs-app` carries the 40px / 24px margins and the background; root font `clamp(16px, 2.4vmin, 64px)`, sizes in rem; 960px+ TV block in `styles.css`. Short landscape: two-column start card and end card. No `overflow: hidden` on body.

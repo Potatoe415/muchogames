@@ -27,7 +27,8 @@ const STRINGS = {
     ninjaHint: "Plus vite, gare aux bombes !",
     resume: "Reprendre",
     resumeInfo: "{theme} · {mode} · {score} pts · {time} s",
-    bestLine: "Records : 🐣 {kids} · 🥷 {ninja}",
+    bestKids: "Records : 🐣",
+    bestNinja: "🥷",
     score: "Points",
     time: "Temps",
     pause: "Pause",
@@ -44,10 +45,12 @@ const STRINGS = {
     endSliced: "{sliced} objets tranchés",
     endCombo: "Meilleur combo : x{combo}",
     newBest: "Nouveau record ! 🎉",
-    best: "Record : {best}",
+    bestLabel: "Record :",
     stars: "{n} étoiles sur 3",
     replay: "Rejouer",
-    menu: "Changer de thème"
+    menu: "Changer de thème",
+    leave: "Quitter la partie",
+    quit: "Quitter la partie"
   },
   en: {
     title: "Fruit Slash",
@@ -74,7 +77,8 @@ const STRINGS = {
     ninjaHint: "Faster, watch out for bombs!",
     resume: "Resume",
     resumeInfo: "{theme} · {mode} · {score} pts · {time} s",
-    bestLine: "Records: 🐣 {kids} · 🥷 {ninja}",
+    bestKids: "Records: 🐣",
+    bestNinja: "🥷",
     score: "Points",
     time: "Time",
     pause: "Pause",
@@ -91,10 +95,12 @@ const STRINGS = {
     endSliced: "{sliced} items sliced",
     endCombo: "Best combo: x{combo}",
     newBest: "New record! 🎉",
-    best: "Record: {best}",
+    bestLabel: "Record:",
     stars: "{n} stars out of 3",
     replay: "Play again",
-    menu: "Change theme"
+    menu: "Change theme",
+    leave: "Leave match",
+    quit: "Leave match"
   },
   es: {
     title: "Fruit Slash",
@@ -121,7 +127,8 @@ const STRINGS = {
     ninjaHint: "Más rápido, ¡cuidado con las bombas!",
     resume: "Reanudar",
     resumeInfo: "{theme} · {mode} · {score} pts · {time} s",
-    bestLine: "Récords: 🐣 {kids} · 🥷 {ninja}",
+    bestKids: "Récords: 🐣",
+    bestNinja: "🥷",
     score: "Puntos",
     time: "Tiempo",
     pause: "Pausa",
@@ -138,10 +145,12 @@ const STRINGS = {
     endSliced: "{sliced} objetos cortados",
     endCombo: "Mejor combo: x{combo}",
     newBest: "¡Nuevo récord! 🎉",
-    best: "Récord: {best}",
+    bestLabel: "Récord:",
     stars: "{n} estrellas de 3",
     replay: "Jugar otra vez",
-    menu: "Cambiar de tema"
+    menu: "Cambiar de tema",
+    leave: "Salir de la partida",
+    quit: "Salir de la partida"
   }
 };
 
@@ -156,7 +165,7 @@ const RULES = {
 <li>Petit ninja : objets plus gros et plus lents, sans bombes.</li>
 <li>Grand ninja : plus d'objets, plus rapides, et des bombes 💣 : en couper une enlève 5 secondes.</li>
 <li>Thèmes : fruits, légumes, bonbons, jouets, espace ou mélange. Un record par niveau.</li>
-<li>⏸ met en pause. La partie est sauvegardée : si tu quittes, « Reprendre » la relance là où tu en étais.</li>
+<li>⏸ met en pause, ✕ ramène au menu. La partie est sauvegardée : si tu quittes, « Reprendre » la relance là où tu en étais.</li>
 </ul>`,
   en: `<p>Fruits, sweets, toys… fly across the sky. Slice them before the clock runs out!</p>
 <ul>
@@ -168,7 +177,7 @@ const RULES = {
 <li>Little ninja: bigger, slower items, no bombs.</li>
 <li>Big ninja: more items, faster, and 💣 bombs: slicing one takes 5 seconds off.</li>
 <li>Themes: fruits, veggies, sweets, toys, space or mix. One record per level.</li>
-<li>⏸ pauses. The game is saved: if you leave, "Resume" brings it back where you were.</li>
+<li>⏸ pauses, ✕ goes back to the menu. The game is saved: if you leave, "Resume" brings it back where you were.</li>
 </ul>`,
   es: `<p>Frutas, dulces, juguetes… vuelan por el cielo. ¡Córtalos antes de que se acabe el tiempo!</p>
 <ul>
@@ -180,7 +189,7 @@ const RULES = {
 <li>Pequeño ninja: objetos más grandes y lentos, sin bombas.</li>
 <li>Gran ninja: más objetos, más rápidos, y bombas 💣: cortar una quita 5 segundos.</li>
 <li>Temas: frutas, verduras, dulces, juguetes, espacio o mezcla. Un récord por nivel.</li>
-<li>⏸ pone en pausa. La partida se guarda: si sales, «Reanudar» la retoma donde estabas.</li>
+<li>⏸ pone en pausa, ✕ vuelve al menú. La partida se guarda: si sales, «Reanudar» la retoma donde estabas.</li>
 </ul>`
 };
 
