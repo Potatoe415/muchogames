@@ -1,5 +1,14 @@
 /* Pipe Dream: dark retro skin over the shared header. The play area locks
-   touch gestures (no scroll, pull-to-refresh, zoom or text selection). */
+   touch gestures (no scroll, pull-to-refresh, zoom or text selection).
+   Mobile first; sizes grow with the screen (vmin) up to a 4K TV. */
+[hidden] {
+  display: none !important;
+}
+
+html {
+  font-size: clamp(16px, 2.4vmin, 64px);
+}
+
 html,
 body {
   height: 100%;
@@ -38,12 +47,14 @@ body {
 }
 
 .pd-chip {
-  min-width: 56px;
-  padding: 8px 14px;
+  min-width: 3.5em;
+  min-height: 2.75em;
+  padding: 0.5em 0.9em;
   border: 2px solid #d1d5db;
-  border-radius: 10px;
+  border-radius: 0.65em;
   background: #ffffff;
   color: #1f2937;
+  font: inherit;
   font-weight: 700;
   cursor: pointer;
 }
@@ -54,11 +65,18 @@ body {
   background: #dcfce7;
 }
 
+/* Android bars can cover the bottom even when the safe-area inset is 0:
+   nothing essential in the bottom 40px nor in the 24px side strips. */
 .pd-app {
   position: relative;
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
+  box-sizing: border-box;
+  padding: 8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
+  background: #141a26;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
@@ -73,9 +91,10 @@ body {
 /* --- Start screen and overlay cards --- */
 .pd-start {
   flex: 1;
+  min-width: 0;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: 0;
   background:
     repeating-linear-gradient(
       0deg,
@@ -91,34 +110,35 @@ body {
 }
 
 .pd-card {
-  width: min(92vw, 380px);
-  padding: 24px 20px;
+  box-sizing: border-box;
+  width: min(100%, 24em);
+  padding: 1.4em 1.2em;
   border: 2px solid #39445a;
-  border-radius: 16px;
+  border-radius: 1em;
   background: #0b0f17;
   text-align: center;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 
 .pd-card p {
-  margin: 0 0 10px;
+  margin: 0 0 0.6em;
   line-height: 1.4;
   color: #c4cddb;
 }
 
 .pd-logo {
-  margin: 0 0 12px;
-  font-size: clamp(2rem, 9vw, 2.8rem);
+  margin: 0 0 0.4em;
+  font-size: 2.6em;
   font-weight: 900;
   color: #ffd23f;
   text-shadow:
-    3px 3px 0 #3fd94a,
-    6px 6px 0 #0e3d14;
+    0.07em 0.07em 0 #3fd94a,
+    0.14em 0.14em 0 #0e3d14;
 }
 
 .pd-overlay-title {
-  margin: 0 0 12px;
-  font-size: 1.5rem;
+  margin: 0 0 0.5em;
+  font-size: 1.5em;
   color: #ffd23f;
 }
 
@@ -127,37 +147,55 @@ body {
   color: #ffd23f !important;
 }
 
+.pd-new-best {
+  display: block;
+}
+
 .pd-score-line {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 800;
   color: #ffffff !important;
 }
 
 .pd-button {
-  margin-top: 8px;
-  min-width: 180px;
-  min-height: 52px;
-  padding: 12px 24px;
+  margin: 0.5em 0.2em 0;
+  min-width: 10em;
+  min-height: 2.9em;
+  padding: 0.6em 1.3em;
   border: none;
-  border-radius: 14px;
+  border-radius: 0.8em;
   background: #3fd94a;
   color: #08210b;
-  font-size: 1.15rem;
+  font: inherit;
+  font-size: 1.1em;
   font-weight: 800;
-  box-shadow: 0 4px 0 #1f7a27;
+  box-shadow: 0 0.2em 0 #1f7a27;
   cursor: pointer;
+  touch-action: manipulation;
+}
+
+.pd-button-soft {
+  background: #39445a;
+  color: #e8edf5;
+  box-shadow: 0 0.2em 0 #232c3d;
 }
 
 .pd-start-actions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 0.4em;
 }
 
 .pd-button:active {
-  transform: translateY(3px);
-  box-shadow: 0 1px 0 #1f7a27;
+  transform: translateY(0.15em);
+  box-shadow: 0 0.05em 0 #1f7a27;
+}
+
+.pd-app button:focus-visible,
+.pd-canvas:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
 }
 
 /* --- Play stage: board + HUD (below in portrait, right side in landscape) --- */
@@ -189,16 +227,16 @@ body {
   flex: 0 0 auto;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
-  gap: 6px;
-  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
-  background: #0b0f17;
+  gap: 0.4em;
+  padding: 0.5em 0 0;
+  background: #141a26;
   border-top: 1px solid #232c3d;
 }
 
 .pd-stat {
   min-width: 0;
-  padding: 4px 6px;
-  border-radius: 8px;
+  padding: 0.25em 0.4em;
+  border-radius: 0.5em;
   background: #161d2b;
   text-align: center;
 }
@@ -216,7 +254,7 @@ body {
   display: block;
   overflow: hidden;
   font:
-    800 clamp(0.9rem, 4vw, 1.25rem) / 1.2 ui-monospace,
+    800 1.15em / 1.2 ui-monospace,
     "SFMono-Regular",
     Consolas,
     monospace;
@@ -235,13 +273,14 @@ body {
 }
 
 .pd-fast {
-  min-width: 76px;
-  min-height: 52px;
-  padding: 4px 10px;
+  min-width: 4.75em;
+  min-height: 3.25em;
+  padding: 0.25em 0.6em;
   border: 2px solid #ffd23f;
-  border-radius: 12px;
+  border-radius: 0.75em;
   background: #262b1a;
   color: #ffd23f;
+  font: inherit;
   font-weight: 800;
   cursor: pointer;
   touch-action: manipulation;
@@ -275,7 +314,8 @@ body {
   z-index: 5;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 0.5em;
+  overflow-y: auto;
   background: rgba(8, 11, 18, 0.72);
 }
 
@@ -285,19 +325,106 @@ body {
   }
 
   .pd-hud {
-    width: clamp(120px, 16vw, 170px);
+    width: max(7.5em, 14vw);
     grid-template-columns: 1fr;
     align-content: center;
-    padding: 12px calc(12px + env(safe-area-inset-right)) 12px 12px;
+    padding: 0 0 0 0.6em;
     border-top: 0;
     border-left: 1px solid #232c3d;
   }
 
   .pd-stat {
-    padding: 8px;
+    padding: 0.4em;
   }
 
   .pd-fast {
-    min-height: 64px;
+    min-height: 3.5em;
   }
+}
+
+/* Landscape phones are ~360px tall: compact HUD and cards. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .pd-card {
+    width: min(100%, 30em);
+    padding: 0.6em 1em 0.8em;
+  }
+
+  .pd-card p {
+    margin-bottom: 0.25em;
+  }
+
+  .pd-logo {
+    font-size: 2em;
+    margin-bottom: 0.15em;
+  }
+
+  .pd-overlay-title {
+    margin-bottom: 0.2em;
+    font-size: 1.25em;
+  }
+
+  .pd-button {
+    min-height: 2.6em;
+    margin-top: 0.35em;
+  }
+
+  .pd-start-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pd-hud {
+    gap: 0.25em;
+  }
+
+  .pd-stat {
+    padding: 0.15em 0.3em;
+  }
+
+  .pd-fast {
+    min-height: 2.75em;
+  }
+}
+
+/* Desktop and TV, 960x540 up to 3840x2160: the header grows with the
+   screen and everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .game-nav {
+    height: auto;
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) 1dvh
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .nav-title {
+    font-size: max(1.1rem, 3.4dvh);
+  }
+
+  .back-button,
+  .options-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .pd-app {
+    padding: 2dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .pd-card {
+    width: min(100%, 30em);
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: 0.3rem solid #ffffff !important;
+  outline-offset: 0.2rem;
+  box-shadow: 0 0 0 0.6rem rgba(255, 210, 63, 0.85);
 }

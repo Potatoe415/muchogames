@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -19,6 +20,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -35,6 +37,19 @@
           >
             <path d="M19 12H5M12 5l-7 7 7 7" /></svg
         ></a>
+        <!-- In a match: back to the Game Dashboard, after game-session.js asks. -->
+        <button
+          type="button"
+          class="back-button"
+          data-id="pipedream-quit-button"
+          data-match-quit
+          data-tv-back
+          aria-label="Quitter la partie"
+          data-i18n-aria="quit"
+          hidden
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
       </div>
       <div class="nav-center">
         <h1 class="nav-title" data-i18n="title">Pipe Dream</h1>
@@ -146,16 +161,20 @@
     </div>
 
     <main class="pd-app" data-id="pipedream-app">
-      <section class="pd-start" data-id="pipedream-start-screen">
+      <section class="pd-start" data-id="pipedream-start-screen" data-tv-screen>
         <div class="pd-card">
           <h2 class="pd-logo" data-i18n="title">Pipe Dream</h2>
           <p class="pd-pitch" data-i18n="pitch"></p>
-          <p class="pd-best" data-id="pipedream-start-best"></p>
+          <p class="pd-best" data-id="pipedream-start-best">
+            <span data-i18n="bestLabel">Record :</span>
+            <strong data-id="pipedream-best-score">0</strong>
+          </p>
           <div class="pd-start-actions">
             <button
               type="button"
               class="pd-button"
               data-id="pipedream-continue-button"
+              data-tv-focus
               data-i18n="resume"
               hidden
             >
@@ -165,6 +184,7 @@
               type="button"
               class="pd-button"
               data-id="pipedream-start-button"
+              data-tv-focus
               data-i18n="play"
             >
               Jouer
@@ -173,19 +193,27 @@
         </div>
       </section>
 
-      <section class="pd-stage" data-id="pipedream-stage" hidden>
+      <section class="pd-stage" data-id="pipedream-stage" data-tv-screen hidden>
         <div class="pd-board" data-id="pipedream-board">
           <canvas
             class="pd-canvas"
             data-id="pipedream-canvas"
-            role="img"
+            role="application"
+            tabindex="0"
+            data-tv-focus
+            data-tv-keys="left right up down"
             data-i18n-aria="canvas"
           ></canvas>
         </div>
         <div class="pd-hud" data-id="pipedream-hud">
           <div class="pd-stat" data-id="pipedream-hud-score">
             <span class="pd-stat-label" data-i18n="score">Score</span>
-            <span class="pd-stat-value" data-hud="score">0</span>
+            <span
+              class="pd-stat-value"
+              data-hud="score"
+              data-id="pipedream-score"
+              >0</span
+            >
           </div>
           <div class="pd-stat" data-id="pipedream-hud-level">
             <span class="pd-stat-label" data-i18n="level">Niveau</span>
@@ -210,7 +238,12 @@
           </button>
         </div>
 
-        <div class="pd-overlay" data-id="pipedream-level-cleared" hidden>
+        <div
+          class="pd-overlay"
+          data-id="pipedream-level-cleared"
+          data-tv-overlay
+          hidden
+        >
           <div class="pd-card">
             <h2 class="pd-overlay-title" data-id="pipedream-cleared-title"></h2>
             <p data-id="pipedream-cleared-stats"></p>
@@ -220,34 +253,79 @@
               type="button"
               class="pd-button"
               data-id="pipedream-next-level-button"
+              data-tv-focus
               data-i18n="next"
+            ></button>
+            <button
+              type="button"
+              class="pd-button pd-button-soft"
+              data-id="pipedream-cleared-menu-button"
+              data-match-quit
+              data-tv-back
+              data-i18n="menu"
             ></button>
           </div>
         </div>
 
-        <div class="pd-overlay" data-id="pipedream-game-over" hidden>
+        <div
+          class="pd-overlay"
+          data-id="pipedream-game-over"
+          data-tv-overlay
+          hidden
+        >
           <div class="pd-card">
             <h2 class="pd-overlay-title" data-i18n="gameOver"></h2>
             <p data-id="pipedream-over-stats"></p>
             <p class="pd-score-line" data-id="pipedream-over-score"></p>
-            <p class="pd-best" data-id="pipedream-over-best"></p>
+            <p class="pd-best" data-id="pipedream-over-best">
+              <span data-i18n="bestLabel">Record :</span>
+              <strong data-id="pipedream-final-best-score">0</strong>
+              <span
+                class="pd-new-best"
+                data-id="pipedream-new-best"
+                data-i18n="newBest"
+                hidden
+              ></span>
+            </p>
             <button
               type="button"
               class="pd-button"
               data-id="pipedream-replay-button"
+              data-tv-focus
               data-i18n="replay"
+            ></button>
+            <button
+              type="button"
+              class="pd-button pd-button-soft"
+              data-id="pipedream-over-menu-button"
+              data-tv-back
+              data-i18n="menu"
             ></button>
           </div>
         </div>
 
-        <div class="pd-overlay" data-id="pipedream-paused" hidden>
+        <div
+          class="pd-overlay"
+          data-id="pipedream-paused"
+          data-tv-overlay
+          hidden
+        >
           <div class="pd-card">
             <h2 class="pd-overlay-title" data-i18n="paused"></h2>
             <button
               type="button"
               class="pd-button"
               data-id="pipedream-resume-button"
+              data-tv-focus
+              data-tv-back
               data-i18n="resume"
+            ></button>
+            <button
+              type="button"
+              class="pd-button pd-button-soft"
+              data-id="pipedream-paused-menu-button"
+              data-match-quit
+              data-i18n="menu"
             ></button>
           </div>
         </div>

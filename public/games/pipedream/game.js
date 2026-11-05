@@ -130,6 +130,7 @@ export function createGame({
       unlock: audio.unlock,
       place: (x, y) => moved(!state.paused && tryPlace(game, x, y)),
       hover: (cell) => (hover = cell),
+      gridSize: () => state.board,
       fast: () => moved(!state.paused && toggleFast(state))
     }
   });

@@ -33,3 +33,9 @@ Web Audio, no dependency. Read this before opening the sources.
 - Saved at match start (after `MuchogamesMatch.start` resolves true), after every placement/replacement and fast toggle (`onMove`), after "Niveau suivant", every 1 s while mounted, and on `pagehide` / tab hidden. A corrupt save is removed on load.
 - "Reprendre" (`pipedream-continue-button`; `pipedream-resume-button` is the pause overlay's) shows only when a valid save exists. It calls `MuchogamesMatch.resume()` (no coin) and the match comes back paused, or on the level-cleared card if saved in `cleared`.
 - Leaving (back button, reload, closed tab, bfcache `pageshow`) never calls `finish()` and keeps the save. The save is deleted at game over (where `finish()` runs) and overwritten by a new match.
+
+## Platform pass (2026-11-05)
+
+- Dashboard: `pipedream-best-score` (key `pipedream-best-score` unchanged), Resume (`pipedream-continue-button`) above "Jouer". In play the back arrow is replaced by `pipedream-quit-button` (✖, `data-match-quit`): it pauses, game-session.js asks, then the dashboard shows Resume. The pause, level-cleared and game-over cards also have a "Menu du jeu" button. End screen: `pipedream-final-best-score` (+ `pipedream-new-best`). Live score: `pipedream-score`.
+- Keyboard / TV: the canvas is focusable (`data-tv-focus`) and keeps a cursor: arrows move it, Enter lays the pipe. At a grid edge `data-tv-keys` drops that direction so the remote reaches the HUD (Fast button) and the header. Escape = ✖ (pause + leave dialog). `MuchogamesTv.play()` on start / resume.
+- Layout: `.pd-app` carries the 40px bottom / 24px side margins; sizes in `em` over `html { font-size: clamp(16px, 2.4vmin, 64px) }`; big-screen header query at `min-width: 960px`.

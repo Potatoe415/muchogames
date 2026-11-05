@@ -59,9 +59,8 @@ function renderOverlayText() {
   $("pipedream-cleared-score").textContent = t("scoreLine", s);
   $("pipedream-over-stats").textContent = t("overStats", s);
   $("pipedream-over-score").textContent = t("scoreLine", s);
-  $("pipedream-over-best").textContent = page.newBest
-    ? t("newBest")
-    : t("best", { best: page.best });
+  $("pipedream-final-best-score").textContent = String(page.best);
+  $("pipedream-new-best").hidden = !page.newBest;
 }
 
 function applyLanguage() {
@@ -79,7 +78,7 @@ function applyLanguage() {
   const sound = $("pipedream-sound-toggle");
   sound.textContent = t(page.muted ? "soundOff" : "soundOn");
   sound.setAttribute("aria-pressed", String(!page.muted));
-  $("pipedream-start-best").textContent = t("best", { best: page.best });
+  $("pipedream-best-score").textContent = String(page.best);
   $("pipedream-continue-button").hidden = !page.saved;
   renderOverlayText();
 }
@@ -101,6 +100,8 @@ function showOverlay(name) {
 function showScreen(playing) {
   $("pipedream-start-screen").hidden = playing;
   $("pipedream-stage").hidden = !playing;
+  $("game-back-button").hidden = playing;
+  $("pipedream-quit-button").hidden = !playing;
 }
 
 function onLevelCleared(summary) {
@@ -159,6 +160,7 @@ function mountGame(saved) {
 
 async function startMatch() {
   if (page.starting) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
@@ -169,6 +171,7 @@ function resumeMatch() {
   if (page.starting) return;
   page.saved = loadMatch();
   if (!page.saved) return applyLanguage();
+  window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   mountGame(page.saved);
 }
@@ -203,6 +206,12 @@ function setLanguage(lang) {
   applyLanguage();
 }
 
+// The ✖ asks "Leave match?" first (game-session.js): the Flooz waits.
+function pauseBeforeQuit(event) {
+  const quit = event.target.closest?.('[data-id="pipedream-quit-button"]');
+  if (quit && page.game && page.overlay === null) showOverlay("paused");
+}
+
 function pauseWhenHidden() {
   if (!document.hidden) return;
   if (page.game && page.overlay === null) showOverlay("paused");
@@ -226,6 +235,13 @@ function bindPage() {
   $("pipedream-resume-button").addEventListener("click", () =>
     showOverlay(null)
   );
+  [
+    "pipedream-quit-button",
+    "pipedream-paused-menu-button",
+    "pipedream-cleared-menu-button",
+    "pipedream-over-menu-button"
+  ].forEach((id) => $(id).addEventListener("click", returnToStart));
+  window.addEventListener("click", pauseBeforeQuit, true);
   $("pipedream-next-level-button").addEventListener("click", () => {
     page.game?.nextLevel();
     saveMatch();

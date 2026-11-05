@@ -6,7 +6,6 @@ const STRINGS = {
     title: "Pipe Dream",
     pitch:
       "Posez les tuyaux et guidez le Flooz le plus loin possible avant qu'il ne déborde !",
-    best: "Record : {best}",
     play: "Jouer",
     back: "Retour",
     options: "Options",
@@ -21,7 +20,8 @@ const STRINGS = {
     quota: "Quota",
     countdown: "Flooz",
     fast: "Accélérer",
-    canvas: "Grille de tuyaux : touchez une case pour poser le tuyau actif",
+    canvas:
+      "Grille de tuyaux : touchez une case (ou flèches puis OK) pour poser le tuyau actif",
     levelCleared: "Niveau {level} réussi !",
     levelStats:
       "{filled} tuyaux remplis (quota {quota}) · {removed} inutilisés (−{penalty})",
@@ -33,12 +33,14 @@ const STRINGS = {
     newBest: "Nouveau record !",
     replay: "Rejouer",
     paused: "Pause",
-    resume: "Reprendre"
+    resume: "Reprendre",
+    bestLabel: "Record :",
+    quit: "Quitter la partie",
+    menu: "Menu du jeu"
   },
   en: {
     title: "Pipe Dream",
     pitch: "Lay pipes and lead the Flooz as far as you can before it spills!",
-    best: "Best: {best}",
     play: "Play",
     back: "Back",
     options: "Options",
@@ -53,7 +55,7 @@ const STRINGS = {
     quota: "Quota",
     countdown: "Flooz",
     fast: "Fast",
-    canvas: "Pipe grid: tap a cell to lay the active pipe",
+    canvas: "Pipe grid: tap a cell (or arrows then OK) to lay the active pipe",
     levelCleared: "Level {level} cleared!",
     levelStats:
       "{filled} pipes filled (quota {quota}) · {removed} unused (−{penalty})",
@@ -65,13 +67,15 @@ const STRINGS = {
     newBest: "New record!",
     replay: "Play again",
     paused: "Paused",
-    resume: "Resume"
+    resume: "Resume",
+    bestLabel: "Best:",
+    quit: "Leave match",
+    menu: "Game menu"
   },
   es: {
     title: "Pipe Dream",
     pitch:
       "¡Coloca tuberías y lleva el Flooz lo más lejos posible antes de que se derrame!",
-    best: "Récord: {best}",
     play: "Jugar",
     back: "Volver",
     options: "Opciones",
@@ -87,7 +91,7 @@ const STRINGS = {
     countdown: "Flooz",
     fast: "Acelerar",
     canvas:
-      "Cuadrícula de tuberías: toca una casilla para colocar la tubería activa",
+      "Cuadrícula de tuberías: toca una casilla (o flechas y OK) para colocar la tubería activa",
     levelCleared: "¡Nivel {level} superado!",
     levelStats:
       "{filled} tuberías llenas (cuota {quota}) · {removed} sin usar (−{penalty})",
@@ -99,7 +103,10 @@ const STRINGS = {
     newBest: "¡Nuevo récord!",
     replay: "Jugar de nuevo",
     paused: "Pausa",
-    resume: "Continuar"
+    resume: "Continuar",
+    bestLabel: "Récord:",
+    quit: "Salir de la partida",
+    menu: "Menú del juego"
   }
 };
 
