@@ -26,15 +26,15 @@ import { JUNIOR } from "./tiles.js";
 const BOT_DELAY_MS = 750;
 const HINTS_PER_TURN = 5;
 
-// hinted: a hint was used this turn, so the move scores 0.
+// hinted: a hint was used this turn. `score` is what the word is worth
+// (shown on the board and the guide). Playing still awards 0.
 function computePreview(game, draft, dict, hinted) {
   if (!draft.length) return { tone: "idle" };
   const analysis = analyzeMove(game.board, draftTiles(draft));
   if (analysis.error) return { tone: "error", error: analysis.error };
   const bad = invalidWords(analysis, dict);
   const tone = bad.length ? "bad" : "ok";
-  const score = hinted ? 0 : analysis.score;
-  return { tone, bad, analysis, score, hinted };
+  return { tone, bad, analysis, score: analysis.score, hinted };
 }
 
 function lastCells(game) {

@@ -86,9 +86,11 @@ export function renderHud(s, ctx) {
   });
   const play = $("scrabble-play-button");
   play.disabled = !canAct || s.preview.tone !== "ok";
-  play.querySelector("[data-play-score]").textContent =
-    s.preview.tone === "ok" || s.preview.tone === "bad"
-      ? `+${s.preview.score}`
-      : "";
+  const showScore = s.preview.tone === "ok" || s.preview.tone === "bad";
+  // Hinted: the word shows its real value; Jouer still pays 0.
+  const awarded = s.preview.hinted ? 0 : s.preview.score;
+  play.querySelector("[data-play-score]").textContent = showScore
+    ? `+${awarded}`
+    : "";
   play.querySelector("[data-play-label]").textContent = t("playWord");
 }
