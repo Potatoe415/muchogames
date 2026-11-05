@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   height: 100dvh;
   min-height: 0;
-  overflow: hidden;
   background:
     radial-gradient(120% 70% at 50% 0%, #f6f9f6 0%, #e4ece6 60%, #d8e3dc 100%)
       fixed,
@@ -87,14 +86,18 @@ body {
 .sc-start {
   flex: 1;
   display: grid;
-  place-items: center;
-  padding: 16px max(14px, env(safe-area-inset-right))
-    calc(16px + env(safe-area-inset-bottom))
-    max(14px, env(safe-area-inset-left));
+  min-width: 0;
+  place-items: safe center;
+  /* Android bars can cover the bottom even when the safe-area inset is 0:
+     no control in the bottom 40px nor in the 24px side strips. */
+  padding: 12px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   overflow-y: auto;
 }
 
 .sc-card {
+  box-sizing: border-box;
   width: min(100%, 420px);
   padding: 24px 20px;
   border-radius: 24px;

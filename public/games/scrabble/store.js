@@ -121,6 +121,17 @@ export function loadStats() {
 
 export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 
+// Solo personal best, one key per level (docs/PLATFORM_RULES.md 4.3).
+const bestKey = (level) => `muchogames_scrabble_best_${level}`;
+
+export function loadBest(level) {
+  const n = Math.floor(Number(readText(bestKey(level), "0")));
+  return Number.isFinite(n) && n > 0 ? n : 0;
+}
+
+export const saveBest = (level, score) =>
+  writeText(bestKey(level), String(score));
+
 // { config: { players, level, words, names }, game, draft, hintsUsed } — game
 // and draft are checked by game.js restoreGame and draft.js draftFits;
 // hintsUsed = hints taken this turn (any = the move scores 0). Saves from

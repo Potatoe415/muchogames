@@ -10,6 +10,27 @@ import { BLANK, CENTER, LETTERS, SIZE, shuffle } from "./tiles.js";
 export function createEditor(ctx) {
   const { s, game, dialogs, sound } = ctx;
   const taken = (i) => game.board[i] || D.draftAt(s.draft, i);
+  const tv = () => window.MuchogamesTv?.isOn();
+  // TV: after a tile goes down the focus returns to the rack, and the next
+  // tile picked jumps to the cursor, else the square after the last tile
+  // put down (along its word), else the centre.
+  const focusRack = () =>
+    document
+      .querySelector('[data-id="scrabble-rack"] button:not(:disabled)')
+      ?.focus({ preventScroll: true });
+  function boardTarget() {
+    const { cursor } = s;
+    if (cursor && !taken(cursor.i)) return cursor.i;
+    if (cursor) {
+      const next = D.nextFree(game.board, s.draft, cursor.i, cursor.dir);
+      if (next >= 0) return next;
+    }
+    const [a, b] = s.draft.slice(-2);
+    if (!a) return CENTER;
+    const dir = b && Math.abs(b.i - a.i) >= SIZE ? 1 : 0;
+    const next = D.nextFree(game.board, s.draft, (b || a).i, dir);
+    return next < 0 ? (b || a).i : next;
+  }
 
   function putDown(k, i, l) {
     s.draft = D.place(s.draft, k, i, l);
@@ -48,6 +69,9 @@ export function createEditor(ctx) {
     s.selected = s.selected === k ? -1 : k;
     sound.tap();
     ctx.refresh();
+    // On a TV the remote goes straight to the board: OK on a square puts
+    // the tile there.
+    if (s.selected >= 0 && tv()) ctx.focusCell(boardTarget());
   }
 
   function onCellTap(i) {
@@ -58,7 +82,8 @@ export function createEditor(ctx) {
       sound.tap();
       return ctx.changed();
     }
-    if (s.selected >= 0) return placeSlot(s.selected, i);
+    if (s.selected >= 0)
+      return placeSlot(s.selected, i, tv() ? focusRack : null);
     s.cursor = s.cursor?.i === i ? { i, dir: 1 - s.cursor.dir } : { i, dir: 0 };
     ctx.refresh();
   }
@@ -92,8 +117,8 @@ export function createEditor(ctx) {
     ctx.changed();
   }
 
-  function moveCursor(dr, dc) {
-    const from = s.cursor?.i ?? CENTER;
+  // from: the focused board cell, if any (a TV remote lands on any cell).
+  function moveCursor(dr, dc, from = s.cursor?.i ?? CENTER) {
     const r = Math.min(SIZE - 1, Math.max(0, Math.floor(from / SIZE) + dr));
     const c = Math.min(SIZE - 1, Math.max(0, (from % SIZE) + dc));
     s.cursor = { i: r * SIZE + c, dir: dr ? 1 : 0 };

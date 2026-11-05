@@ -24,10 +24,12 @@ import { setSoundEnabled, sound } from "./sound.js";
 import {
   clearGame,
   hintsUsedOf,
+  loadBest,
   loadSaved,
   loadSettings,
   loadStats,
   readText,
+  saveBest,
   saveGame,
   saveSettings,
   saveStats,
@@ -53,6 +55,7 @@ const page = {
   game: null,
   config: null,
   endTimer: 0,
+  endBest: null,
   starting: false
 };
 
@@ -65,8 +68,15 @@ function names() {
     .map((name, p) => name || t(`player${p + 1}`));
 }
 
-const renderEnd = () =>
-  page.game && paintEnd(page.game, { solo: isSolo(), names: names(), t });
+// The end card; in solo, the level's best score under it (page.endBest).
+function renderEnd() {
+  if (!page.game) return;
+  paintEnd(page.game, { solo: isSolo(), names: names(), t });
+  const line = $("scrabble-final-best-score");
+  const best = isSolo() ? page.endBest : null;
+  line.hidden = !best;
+  if (best) line.textContent = t(best.isNew ? "newBest" : "bestScore", best);
+}
 
 function renderOver() {
   const over = Boolean(page.game?.over);
@@ -131,8 +141,18 @@ function saveNow() {
   if (game && play && !game.over) saveGame(config, game, play.snapshot());
 }
 
+// Solo: the level's best score (your final score, end adjustment included).
+function recordBest(score) {
+  const { level } = page.config;
+  const old = loadBest(level);
+  const isNew = score > old;
+  if (isNew) saveBest(level, score);
+  page.endBest = { score: Math.max(old, score), isNew };
+}
+
 function recordResult(winner) {
   if (!isSolo()) return void sound.win();
+  recordBest(Math.max(0, Math.round(page.game.scores[0])));
   const stats = page.stats[page.config.level];
   stats.played += 1;
   if (winner === 0) stats.won += 1;
@@ -145,10 +165,10 @@ function onEnd(game) {
   clearGame();
   const { winner } = game.over;
   recordResult(winner);
-  const decided = isSolo() && winner >= 0;
-  window.MuchogamesMatch.finish(
-    decided ? { won: winner === 0, score: game.scores[0] } : undefined
-  );
+  // Solo: the score always; won only when there is a winner (not a draw).
+  const score = Math.max(0, Math.round(game.scores[0]));
+  const result = winner >= 0 ? { won: winner === 0, score } : { score };
+  window.MuchogamesMatch.finish(isSolo() ? result : undefined);
   renderOver();
   page.endTimer = setTimeout(() => {
     renderEnd();
@@ -223,6 +243,7 @@ function returnToStart() {
 async function startMatch() {
   const config = matchConfig(page.settings);
   if (page.starting || !dictsReady(config.words)) return;
+  window.MuchogamesTv?.play();
   page.starting = true;
   if (window.MuchogamesMatch.isInProgress()) window.MuchogamesMatch.finish();
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
@@ -242,6 +263,7 @@ async function startMatch() {
 async function resumeMatch() {
   const resumable = loadResumable();
   renderResume(resumable);
+  if (resumable) window.MuchogamesTv?.play();
   if (!resumable || !(await loadDict(resumable.config.words))) return;
   window.MuchogamesMatch.resume(GAME_ID);
   const { game, config, draft, hintsUsed } = resumable;
@@ -260,6 +282,9 @@ async function loadDict(words = page.settings.words) {
   try {
     for (const lang of words) page.dicts[lang] = await loadDictionary(lang);
     if (selected()) $("scrabble-start-button").disabled = false;
+    // The start button was disabled while loading: the remote focus moves
+    // to it (or to Resume) now.
+    if (!page.play) window.MuchogamesTv?.focusScreen();
     return true;
   } catch {
     $("scrabble-dict-error").hidden = false;
@@ -267,6 +292,20 @@ async function loadDict(words = page.settings.words) {
   } finally {
     $("scrabble-dict-status").hidden = true;
   }
+}
+
+// A text field keeps the arrows for itself (tv-remote.js too): Up / Down
+// still move to the previous / next control of the start screen.
+function leaveInput(event) {
+  const step = { ArrowUp: -1, ArrowDown: 1 }[event.key];
+  if (!step) return;
+  const controls = [
+    ...$("scrabble-start-screen").querySelectorAll("button, input")
+  ].filter((el) => !el.disabled && !el.closest("[hidden]"));
+  const next = controls[controls.indexOf(event.target) + step];
+  if (!next) return;
+  event.preventDefault();
+  next.focus();
 }
 
 function bindPage() {
@@ -282,6 +321,9 @@ function bindPage() {
     });
   });
   bindChoices(choose, setNames);
+  document
+    .querySelectorAll(".sc-input")
+    .forEach((input) => input.addEventListener("keydown", leaveInput));
   const play = (name) => () => page.play?.actions[name]();
   const actions = {
     "scrabble-start-button": startMatch,

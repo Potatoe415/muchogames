@@ -77,7 +77,19 @@ export function createPlay(opts) {
     humanTurn() && !s.thinking && !s.hidden && !dialogs.isOpen();
   const myRack = () => game.racks[game.turn];
 
+  // Every paint rebuilds the rack, so a focused tile disappears: the focus
+  // goes back to that slot (or the next tile), else to the screen's main
+  // control on a TV (tv-remote.js).
+  function keepFocus(slot) {
+    const el = document.activeElement;
+    const lost = !el || el === document.body || !el.isConnected;
+    if (!lost && !el.disabled) return;
+    if (slot !== undefined && rack.focusSlot(slot)) return;
+    if (!dialogs.isOpen()) window.MuchogamesTv?.focusScreen();
+  }
+
   function refresh() {
+    const slot = document.activeElement?.closest?.("[data-slot]")?.dataset.slot;
     s.preview = computePreview(game, s.draft, dict, s.hints.used > 0);
     board.paint({
       board: game.board,
@@ -96,6 +108,7 @@ export function createPlay(opts) {
     const hints = opts.hints() || junior;
     const ctx = { game, names, t, solo, junior, hints };
     renderHud(s, { ...ctx, canAct: canAct(), hintsLeft: hintsLeft() });
+    keepFocus(slot);
   }
 
   function changed() {

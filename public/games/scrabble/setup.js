@@ -2,7 +2,13 @@
 // options panel, the players and level sliders, the level's record, the
 // player names, the resume button.
 import { LEVEL_IDS } from "./ai.js";
-import { CHOICES, cleanName, NAME_SLOTS, PLAYER_COUNTS } from "./store.js";
+import {
+  CHOICES,
+  cleanName,
+  loadBest,
+  NAME_SLOTS,
+  PLAYER_COUNTS
+} from "./store.js";
 import { tileSetFor, useJunior, useTileSet } from "./tiles.js";
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
@@ -89,6 +95,10 @@ export function renderLevel(level, stats, t) {
   $("scrabble-level-record").textContent = played
     ? t("levelRecord", { won, played })
     : t("noRecord");
+  const best = loadBest(level);
+  const bestLine = $("scrabble-best-score");
+  bestLine.hidden = !best;
+  bestLine.textContent = best ? t("bestScore", { score: best }) : "";
 }
 
 export const renderResume = (saved) => {

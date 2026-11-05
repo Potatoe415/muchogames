@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="stage.css" />
     <link rel="stylesheet" href="board.css" />
     <link rel="stylesheet" href="sheets.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="/shared/js/tv-remote.js"></script>
   </head>
   <body data-match-saved>
     <header class="game-nav">
@@ -24,6 +26,7 @@
           class="back-button"
           href="/"
           data-id="game-back-button"
+          data-tv-back
           aria-label="Retour"
           data-i18n-aria="back"
           ><svg
@@ -45,6 +48,7 @@
           class="back-button"
           data-id="scrabble-quit-button"
           data-match-quit
+          data-tv-back
           hidden
           aria-label="Retour"
           data-i18n-aria="back"
@@ -208,9 +212,9 @@
     </div>
 
     <main class="sc-app" data-id="scrabble-app">
-      <section class="sc-start" data-id="scrabble-start-screen">
-        <div class="sc-card">
-          <div class="sc-logo" aria-hidden="true">
+      <section class="sc-start" data-id="scrabble-start-screen" data-tv-screen>
+        <div class="sc-card" data-id="scrabble-start-card">
+          <div class="sc-logo" data-id="scrabble-logo" aria-hidden="true">
             <span class="sc-tile"><b>S</b><small>1</small></span
             ><span class="sc-tile"><b>C</b><small>3</small></span
             ><span class="sc-tile"><b>R</b><small>1</small></span
@@ -232,6 +236,15 @@
               data-i18n="retry"
             ></button>
           </div>
+
+          <button
+            type="button"
+            class="sc-button sc-button-resume"
+            data-id="scrabble-resume-button"
+            data-tv-focus
+            data-i18n="resume"
+            hidden
+          ></button>
 
           <div class="sc-field" data-id="scrabble-players-field">
             <p class="sc-label" data-i18n="players"></p>
@@ -390,6 +403,7 @@
               </div>
             </div>
             <p class="sc-record" data-id="scrabble-level-record"></p>
+            <p class="sc-record" data-id="scrabble-best-score" hidden></p>
           </div>
 
           <div class="sc-field" data-id="scrabble-names-field" data-group-only>
@@ -440,32 +454,43 @@
 
           <button
             type="button"
-            class="sc-button sc-button-resume"
-            data-id="scrabble-resume-button"
-            data-i18n="resume"
-            hidden
-          ></button>
-
-          <button
-            type="button"
             class="sc-button"
             data-id="scrabble-start-button"
+            data-tv-focus
             data-i18n="start"
             disabled
           ></button>
         </div>
       </section>
 
-      <section class="sc-stage" data-id="scrabble-stage" hidden>
+      <section class="sc-stage" data-id="scrabble-stage" data-tv-screen hidden>
         <div class="sc-top" data-id="scrabble-scores">
           <div class="sc-player" data-id="scrabble-player-1" data-player-card>
-            <span class="sc-player-name" data-name></span>
-            <strong class="sc-player-score" data-score>0</strong>
+            <span
+              class="sc-player-name"
+              data-id="scrabble-player-1-name"
+              data-name
+            ></span>
+            <strong
+              class="sc-player-score"
+              data-id="scrabble-player-1-score"
+              data-score
+              >0</strong
+            >
             <span class="sc-peek" data-rack-peek></span>
           </div>
           <div class="sc-player" data-id="scrabble-player-2" data-player-card>
-            <span class="sc-player-name" data-name></span>
-            <strong class="sc-player-score" data-score>0</strong>
+            <span
+              class="sc-player-name"
+              data-id="scrabble-player-2-name"
+              data-name
+            ></span>
+            <strong
+              class="sc-player-score"
+              data-id="scrabble-player-2-score"
+              data-score
+              >0</strong
+            >
             <span class="sc-peek" data-rack-peek></span>
           </div>
           <div
@@ -474,8 +499,17 @@
             data-player-card
             hidden
           >
-            <span class="sc-player-name" data-name></span>
-            <strong class="sc-player-score" data-score>0</strong>
+            <span
+              class="sc-player-name"
+              data-id="scrabble-player-3-name"
+              data-name
+            ></span>
+            <strong
+              class="sc-player-score"
+              data-id="scrabble-player-3-score"
+              data-score
+              >0</strong
+            >
             <span class="sc-peek" data-rack-peek></span>
           </div>
           <div
@@ -484,8 +518,17 @@
             data-player-card
             hidden
           >
-            <span class="sc-player-name" data-name></span>
-            <strong class="sc-player-score" data-score>0</strong>
+            <span
+              class="sc-player-name"
+              data-id="scrabble-player-4-name"
+              data-name
+            ></span>
+            <strong
+              class="sc-player-score"
+              data-id="scrabble-player-4-score"
+              data-score
+              >0</strong
+            >
             <span class="sc-peek" data-rack-peek></span>
           </div>
           <button type="button" class="sc-bag" data-id="scrabble-bag-button">
@@ -567,6 +610,7 @@
             type="button"
             class="sc-play"
             data-id="scrabble-play-button"
+            data-tv-focus
             disabled
           >
             <span data-play-label></span><small data-play-score></small>
@@ -575,12 +619,18 @@
             type="button"
             class="sc-play sc-play-again"
             data-id="scrabble-again-button"
+            data-tv-focus
             data-i18n="replay"
             hidden
           ></button>
         </div>
 
-        <div class="sc-sheet" data-id="scrabble-blank-dialog" hidden>
+        <div
+          class="sc-sheet"
+          data-id="scrabble-blank-dialog"
+          data-tv-overlay
+          hidden
+        >
           <div class="sc-sheet-backdrop" data-sheet-close></div>
           <div class="sc-sheet-card" role="dialog" aria-modal="true">
             <h2 class="sc-sheet-title" data-i18n="blankTitle"></h2>
@@ -590,12 +640,18 @@
               class="sc-link"
               data-sheet-close
               data-id="scrabble-blank-cancel"
+              data-tv-back
               data-i18n="cancel"
             ></button>
           </div>
         </div>
 
-        <div class="sc-sheet" data-id="scrabble-swap-dialog" hidden>
+        <div
+          class="sc-sheet"
+          data-id="scrabble-swap-dialog"
+          data-tv-overlay
+          hidden
+        >
           <div class="sc-sheet-backdrop" data-sheet-close></div>
           <div class="sc-sheet-card" role="dialog" aria-modal="true">
             <h2 class="sc-sheet-title" data-i18n="swapTitle"></h2>
@@ -618,13 +674,19 @@
                 class="sc-link"
                 data-sheet-close
                 data-id="scrabble-swap-cancel"
+                data-tv-back
                 data-i18n="cancel"
               ></button>
             </div>
           </div>
         </div>
 
-        <div class="sc-sheet" data-id="scrabble-define-dialog" hidden>
+        <div
+          class="sc-sheet"
+          data-id="scrabble-define-dialog"
+          data-tv-overlay
+          hidden
+        >
           <div class="sc-sheet-backdrop" data-sheet-close></div>
           <div class="sc-sheet-card" role="dialog" aria-modal="true">
             <div
@@ -637,12 +699,19 @@
               class="sc-button sc-button-ghost"
               data-sheet-close
               data-id="scrabble-define-close"
+              data-tv-focus
+              data-tv-back
               data-i18n="close"
             ></button>
           </div>
         </div>
 
-        <div class="sc-sheet" data-id="scrabble-bag-dialog" hidden>
+        <div
+          class="sc-sheet"
+          data-id="scrabble-bag-dialog"
+          data-tv-overlay
+          hidden
+        >
           <div class="sc-sheet-backdrop" data-sheet-close></div>
           <div class="sc-sheet-card" role="dialog" aria-modal="true">
             <h2 class="sc-sheet-title" data-i18n="bagTitle"></h2>
@@ -653,12 +722,19 @@
               class="sc-button sc-button-ghost"
               data-sheet-close
               data-id="scrabble-bag-close"
+              data-tv-focus
+              data-tv-back
               data-i18n="close"
             ></button>
           </div>
         </div>
 
-        <div class="sc-sheet sc-handoff" data-id="scrabble-handoff" hidden>
+        <div
+          class="sc-sheet sc-handoff"
+          data-id="scrabble-handoff"
+          data-tv-overlay
+          hidden
+        >
           <div class="sc-sheet-backdrop"></div>
           <div class="sc-sheet-card" role="dialog" aria-modal="true">
             <h2 class="sc-sheet-title" data-id="scrabble-handoff-title"></h2>
@@ -668,12 +744,13 @@
               type="button"
               class="sc-button"
               data-id="scrabble-handoff-button"
+              data-tv-focus
               data-i18n="handoffButton"
             ></button>
           </div>
         </div>
 
-        <div class="sc-sheet" data-id="scrabble-end" hidden>
+        <div class="sc-sheet" data-id="scrabble-end" data-tv-overlay hidden>
           <div class="sc-sheet-backdrop"></div>
           <div
             class="sc-sheet-card sc-end-card"
@@ -683,11 +760,17 @@
             <h2 class="sc-end-title" data-id="scrabble-end-title"></h2>
             <p class="sc-sheet-note" data-id="scrabble-end-reason"></p>
             <div class="sc-end-lines" data-id="scrabble-end-lines"></div>
+            <p
+              class="sc-sheet-note"
+              data-id="scrabble-final-best-score"
+              hidden
+            ></p>
             <div class="sc-sheet-actions">
               <button
                 type="button"
                 class="sc-button"
                 data-id="scrabble-replay-button"
+                data-tv-focus
                 data-i18n="replay"
               ></button>
               <button
@@ -700,6 +783,7 @@
                 type="button"
                 class="sc-link"
                 data-id="scrabble-see-board-button"
+                data-tv-back
                 data-i18n="seeBoard"
               ></button>
             </div>

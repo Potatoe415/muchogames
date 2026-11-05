@@ -26,6 +26,8 @@ export const STRINGS = {
   expert: "Expert",
   levelRecord: "Wins at this level: {won} of {played}",
   noRecord: "No game at this level yet",
+  bestScore: "Best score at this level: {score} pts",
+  newBest: "New best score at this level: {score} pts!",
   players: "Players",
   names: "Names",
   player1: "Player 1",

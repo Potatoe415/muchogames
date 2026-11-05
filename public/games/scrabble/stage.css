@@ -11,8 +11,9 @@
   grid-template-rows: auto auto minmax(0, 1fr) auto auto;
   grid-template-columns: minmax(0, 1fr);
   gap: 8px;
-  padding: 8px max(8px, env(safe-area-inset-right))
-    max(10px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+  padding: 8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
 }
 
 .sc-top {

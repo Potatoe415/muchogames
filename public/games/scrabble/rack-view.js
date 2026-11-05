@@ -16,6 +16,7 @@ function slotButton(letter, k, { selected, hidden }) {
     : tileHtml(letter);
   button.setAttribute("aria-pressed", String(selected === k));
   button.disabled = hidden;
+  button.dataset.tvFocus = "";
   return button;
 }
 
@@ -48,8 +49,14 @@ export function createRackView(host) {
     );
   }
 
-  const focusSlot = (k) =>
-    host.querySelector(`[data-slot="${k}"]`)?.focus?.({ preventScroll: true });
+  // The tile in slot k, or the first one left: true when one took the focus.
+  function focusSlot(k) {
+    const button =
+      host.querySelector(`button[data-slot="${k}"]:not(:disabled)`) ||
+      host.querySelector("button:not(:disabled)");
+    button?.focus({ preventScroll: true });
+    return Boolean(button);
+  }
 
   return { paint, focusSlot };
 }

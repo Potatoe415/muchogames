@@ -30,6 +30,22 @@ export function tileHtml(letter) {
   return `<span class="sc-tile${blank ? " is-blank" : ""}"><b>${face}</b><small>${value}</small></span>`;
 }
 
+// Arrows the board keeps for its cursor (keys.js); at an edge the outward
+// one goes back to tv-remote.js, which moves to the nearest control.
+function tvKeys(i) {
+  const r = Math.floor(i / SIZE);
+  const c = i % SIZE;
+  const keys = [
+    [c > 0, "left"],
+    [c < SIZE - 1, "right"]
+  ];
+  keys.push([r > 0, "up"], [r < SIZE - 1, "down"]);
+  return keys
+    .filter(([inside]) => inside)
+    .map(([, dir]) => dir)
+    .join(" ");
+}
+
 function makeCell(i) {
   const cell = document.createElement("button");
   cell.type = "button";
@@ -38,6 +54,7 @@ function makeCell(i) {
   cell.dataset.cell = String(i);
   cell.dataset.id = `scrabble-cell-${cellName(i)}`;
   if (PREMIUM[i] !== ".") cell.dataset.premium = PREMIUM[i];
+  cell.dataset.tvKeys = tvKeys(i);
   return cell;
 }
 
