@@ -1,0 +1,88 @@
+/* Yatzy on desktop and TV (docs/PLATFORM_RULES.md 7): sizes follow the
+   screen height, 3% overscan, header buttons scaled, focus ring. The
+   side-by-side board layout itself is in screens.css. */
+
+/* Desktop and TV, 960x540 up to 3840x2160: the root size follows the
+   screen height, so every rem below grows with it, and everything stays
+   3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  html {
+    font-size: max(16px, 2.1dvh);
+  }
+
+  .page {
+    padding:
+      3dvh
+      max(3vw, env(safe-area-inset-right, 0px))
+      max(40px, 4dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+  }
+
+  .app-shell {
+    width: min(100%, 34rem);
+  }
+
+  .game-card {
+    --board-reserve: calc(7dvh + 5.4rem);
+    --board-width: min(56vw, calc((100dvh - var(--board-reserve)) * 0.95));
+    --side-max: 70dvh;
+  }
+
+  .splash-screen {
+    padding: 3dvh 3vw max(40px, 4dvh);
+  }
+
+  .splash-nav-btn {
+    top: max(3dvh, env(safe-area-inset-top));
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .splash-nav-btn svg,
+  .home-button svg,
+  .restart-button svg,
+  .game-settings-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .splash-back-button {
+    left: 3vw;
+  }
+
+  #settings-button {
+    right: 3vw;
+  }
+
+  .options-panel-sheet {
+    max-width: min(92vw, 30rem);
+    font-size: 1rem;
+  }
+
+  .options-panel-title,
+  .options-panel-close,
+  .options-feedback-button,
+  .rules-modal-content {
+    font-size: 1rem;
+  }
+
+  .options-panel-section-title {
+    font-size: 0.8rem;
+  }
+
+  .lang-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 500px) and (min-aspect-ratio: 4/3) {
+  .app-shell {
+    width: 100%;
+  }
+}
+
+/* TV remote: a thick, high-contrast ring on the focused control. */
+html.tv :focus {
+  outline: max(3px, 0.4dvh) solid #ffcc00 !important;
+  outline-offset: max(2px, 0.3dvh);
+}

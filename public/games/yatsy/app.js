@@ -43,6 +43,7 @@ const RULE_SETTINGS_STORAGE_KEY = "yatzy-rule-settings";
 const REVERSE_SELECTION_STORAGE_KEY = "yatzy-reverse-selection";
 const EXTRA_ROLL_EASTER_EGG_STORAGE_KEY = "yatzy-extra-roll-easter-egg";
 const DEFEAT_MODE_ENABLED_STORAGE_KEY = "yatzy-defeat-mode-enabled";
+const BEST_SCORE_STORAGE_KEY = "muchogames_yatsy_best";
 const LOWER_RULE_OPTIONS = [
   { key: "fullHouse", scoreRule: "fullHouse", defaultEnabled: true, defaultPoints: 30, iconText: "FULL" },
   { key: "fourKind", scoreRule: "fourKind", defaultEnabled: true, defaultPoints: 40, iconText: "FOUR" },
@@ -99,14 +100,16 @@ const elements = {
   settingsButton: document.getElementById("settings-button"),
   settingsPanel: document.getElementById("settings-panel"),
   settingsList: document.getElementById("settings-list"),
-  settingsRulesSection: document.getElementById("settings-rules-section"),
+  settingsListSection: document.getElementById("settings-list-section"),
+  settingsTitle: document.getElementById("settings-title"),
+  settingsClose: document.getElementById("settings-close"),
   settingsRulesTitle: document.getElementById("settings-rules-title"),
   settingsRulesContent: document.getElementById("settings-rules-content"),
   splashLanguageTitle: document.getElementById("splash-language-title"),
   splashLangSelector: document.getElementById("splash-lang-selector"),
-  gameRulesSection: document.getElementById("game-rules-section"),
-  gameRulesTitle: document.getElementById("game-rules-title"),
-  gameRulesContent: document.getElementById("game-rules-content"),
+  bestScoreRow: document.querySelector('[data-id="yatsy-best-score-row"]'),
+  bestScoreLabel: document.getElementById("best-score-label"),
+  bestScoreValue: document.getElementById("best-score-value"),
   scoreSummary: document.getElementById("score-summary"),
   scoreboard: document.getElementById("scoreboard"),
   diceRow: document.getElementById("dice-row"),
@@ -122,11 +125,7 @@ const elements = {
   gameTitle: document.getElementById("game-title"),
   restartButton: document.getElementById("restart-button"),
   gameSettingsButton: document.getElementById("game-settings-button"),
-  gameSettingsPanel: document.getElementById("game-settings-panel"),
-  gameSettingsTitle: document.getElementById("game-settings-title"),
-  gameSettingsClose: document.getElementById("game-settings-close"),
-  gameSettingsLanguageTitle: document.getElementById("game-settings-language-title"),
-  gameLangSelector: document.getElementById("game-lang-selector"),
+  reverseSelectionSection: document.getElementById("game-reverse-selection-section"),
   reverseSelectionToggle: document.getElementById("game-reverse-selection-toggle"),
   reverseSelectionLabel: document.getElementById("game-reverse-selection-label"),
   reverseSelectionPill: document.getElementById("game-reverse-selection-pill")
@@ -181,18 +180,25 @@ elements.joinCodeInput.addEventListener("keydown", (event) => {
 if (elements.splashBackButton) {
   elements.splashBackButton.addEventListener("click", (event) => handleSplashBack(event));
 }
-if (elements.settingsButton && elements.settingsPanel && window.GameHeader) {
-  window.GameHeader.initOptionsPanel(elements.settingsButton, elements.settingsPanel);
+// One options sheet (docs/PLATFORM_RULES.md 3.4): the splash gear owns it,
+// the in-game gear opens the same sheet.
+const optionsPanel = window.GameHeader?.initOptionsPanel(elements.settingsButton, elements.settingsPanel);
+if (optionsPanel && elements.gameSettingsButton) {
+  elements.gameSettingsButton.addEventListener("click", () => optionsPanel.toggle());
+  new MutationObserver(() => {
+    elements.gameSettingsButton.setAttribute("aria-expanded", String(!elements.settingsPanel.hidden));
+  }).observe(elements.settingsPanel, { attributes: true, attributeFilter: ["hidden"] });
 }
 if (elements.settingsList) {
   elements.settingsList.addEventListener("change", handleSettingsInputChange);
 }
-if (elements.gameSettingsButton && elements.gameSettingsPanel && window.GameHeader) {
-  window.GameHeader.initOptionsPanel(elements.gameSettingsButton, elements.gameSettingsPanel);
-}
-if (elements.gameLangSelector) {
-  elements.gameLangSelector.addEventListener("click", handleGameLangSelectorClick);
-}
+// Enter (the TV remote's OK) does not toggle a native checkbox: click it.
+elements.settingsPanel?.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && event.target.matches?.('input[type="checkbox"]')) {
+    event.preventDefault();
+    event.target.click();
+  }
+});
 if (elements.splashLangSelector) {
   elements.splashLangSelector.addEventListener("click", handleGameLangSelectorClick);
 }
@@ -254,17 +260,43 @@ const renderer = window.YATZY_RENDER.createRenderer({
   handleScoreSelection,
   handleDieToggle,
   scheduleRobotTurnIfNeeded,
-  scheduleDefeatModeTurnIfNeeded
+  scheduleDefeatModeTurnIfNeeded,
+  readBestScore,
+  onWinnerReplay: () => handleRestart(),
+  // Online, leaving the finished room is the existing restart ("Leave") path.
+  onWinnerMenu: () => (isOnlineGame() ? handleRestart() : handleHomeNavigation())
 });
 // Wrapped (not just renderer.render) so every state mutation that leads to a
 // render also keeps the local match save in sync (resume.js), the same way
 // session.js keeps yatzy-online-session in sync on every state change it
 // causes.
 const render = () => {
+  const focusedId = document.activeElement?.dataset?.id;
   renderer.render();
   resumeController.persistLocal();
   resumeController.renderResumeUi();
+  restoreFocus(focusedId);
 };
+
+// render() rebuilds the dice, the scorecard and the option rows, which drops
+// the keyboard / TV remote focus: put it back on the same control, else on
+// the screen's main button (TV only). The end-of-match card is rebuilt with
+// the scoreboard, so tv-remote.js does not see it appear: move the focus in.
+function restoreFocus(focusedId) {
+  const current = document.activeElement;
+  const overlay = document.querySelector('[data-id="yatsy-gameover-overlay"]');
+  if (overlay && !overlay.contains(current)) {
+    window.MuchogamesTv?.focusScreen();
+    return;
+  }
+  if (current && current !== document.body && current.isConnected) return;
+  const same = focusedId && document.querySelector(`[data-id="${focusedId}"]`);
+  if (same && !same.disabled && same.getClientRects().length) {
+    same.focus({ preventScroll: true });
+    return;
+  }
+  window.MuchogamesTv?.focusScreen();
+}
 
 // session.js owns matchmaking wiring, remote-state sync and session
 // persistence. It shares mutable game state through `state` directly and
@@ -346,22 +378,26 @@ void refreshSettingsRules();
 // Dynamic import (not a static one): every other file here is a classic
 // script sharing one global scope (see eslint.config.mjs) - a static import
 // would force this file alone into module scope. Re-run by
-// handleLanguageSelection() whenever the splash or in-game language switcher
-// changes state.setup.language, so the splash rules panel stays in sync.
-// Both the splash and the in-game options panels carry the rules
-// (docs/PLATFORM_RULES.md).
+// handleLanguageSelection() whenever the language switcher changes
+// state.setup.language, so the options sheet's rules stay in sync.
 async function refreshSettingsRules() {
   const { loadRulesIfExists } = await import("/shared/js/engine.js");
   const html = await loadRulesIfExists("yatsy", state.setup.language);
-  fillRulesSection(elements.settingsRulesSection, elements.settingsRulesTitle, elements.settingsRulesContent, html);
-  fillRulesSection(elements.gameRulesSection, elements.gameRulesTitle, elements.gameRulesContent, html);
+  if (elements.settingsRulesTitle) elements.settingsRulesTitle.textContent = t("splash.rules");
+  if (elements.settingsRulesContent) elements.settingsRulesContent.innerHTML = html || "";
 }
 
-function fillRulesSection(section, title, content, html) {
-  if (!section || !content) return;
-  section.style.display = html ? "" : "none";
-  if (title) title.textContent = t("splash.rules");
-  content.innerHTML = html || "";
+// Solo (vs robot) personal best, docs/PLATFORM_RULES.md 4.3. Never inside the
+// match save.
+function readBestScore() {
+  const stored = STORAGE.readJSON(BEST_SCORE_STORAGE_KEY);
+  return Number.isInteger(stored) && stored > 0 ? stored : 0;
+}
+
+function storeBestScore(score) {
+  if (Number.isInteger(score) && score > readBestScore()) {
+    STORAGE.writeJSON(BEST_SCORE_STORAGE_KEY, score);
+  }
 }
 
 function getRobotDelayMs(delayMs, enforceMinimum = true) {
@@ -751,6 +787,7 @@ function readPersistedDefeatModeEnabled() {
 
 async function handleRestart() {
   if (!isOnlineGame()) {
+    window.MuchogamesTv?.play();
     if (!(await window.MuchogamesMatch.start("yatsy"))) return;
     resetGame({
       screen: "game",
@@ -795,6 +832,7 @@ function navigateToHub() {
 
 
 async function handleLocalStart(mode, diceTheme = "default") {
+  window.MuchogamesTv?.play();
   if (!(await window.MuchogamesMatch.start("yatsy"))) return;
   syncRuntimeRulesFromSetup();
   resetGame({
@@ -1535,14 +1573,23 @@ function recordGameResultIfNeeded(targetState) {
   if (isOnlineGame()) clearPersistedOnlineSession();
 
   const localIndex = resolveLocalResultPlayerIndex(targetState);
-  const totals = [calculateGrandTotal(targetState.scores[0]), calculateGrandTotal(targetState.scores[1])];
-  if (localIndex === null || totals[0] === totals[1]) {
+  if (localIndex === null) {
     window.MuchogamesMatch.finish();
+    return;
+  }
+  const totals = [calculateGrandTotal(targetState.scores[0]), calculateGrandTotal(targetState.scores[1])];
+  const score = Math.max(0, Math.floor(totals[localIndex]));
+  if ((targetState.setup?.mode ?? state.setup.mode) === "robot") {
+    storeBestScore(score);
+  }
+  // A tie is neither won nor lost: the score alone stays local.
+  if (totals[0] === totals[1]) {
+    window.MuchogamesMatch.finish({ score });
     return;
   }
   window.MuchogamesMatch.finish({
     won: totals[localIndex] > totals[localIndex === 0 ? 1 : 0],
-    score: totals[localIndex]
+    score
   });
 }
 

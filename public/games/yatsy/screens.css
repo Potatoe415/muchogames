@@ -1,0 +1,271 @@
+/* Yatzy screen layouts beyond the portrait phone base of styles.css
+   (docs/PLATFORM_RULES.md 6 and 7): end-of-match buttons, landscape phones
+   (~360px tall: board left, dice and roll button right), the same side by
+   side on wide desktop/TV screens; their sizing and focus ring: tv.css. */
+
+.winner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.winner-button {
+  flex: 1 1 8rem;
+  min-height: 2.9rem;
+  padding: 0.4rem 0.9rem;
+  border: 0.22rem solid rgba(87, 99, 110, 0.45);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--slate);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.winner-button[data-id="yatsy-replay-button"] {
+  background: var(--roll-red);
+  border-color: rgba(87, 99, 110, 0.42);
+  color: var(--white);
+}
+
+body.player-two-turn .winner-button[data-id="yatsy-replay-button"] {
+  background: var(--roll-blue);
+}
+
+:focus-visible {
+  outline: 0.22rem solid #ffcc00;
+  outline-offset: 0.15rem;
+}
+
+/* Side by side: the board takes the height, the dice and the roll button
+   sit to its right. --board-reserve is the height kept for the header, the
+   board's frame and the page paddings; the 7 rows share what is left, so
+   the cells become rectangles instead of squares. */
+@media (orientation: landscape) and (max-height: 500px), (min-width: 960px) and (min-height: 500px) and (min-aspect-ratio: 4/3) {
+  .page {
+    height: 100dvh;
+    min-height: 0;
+  }
+
+  .app-shell {
+    width: 100%;
+  }
+
+  .game-card:not([hidden]) {
+    --row-height: calc((100dvh - var(--board-reserve)) / 7);
+    height: 100%;
+    display: grid;
+    grid-template-columns: var(--board-width) minmax(0, var(--side-max));
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    justify-content: center;
+    column-gap: 1.2rem;
+  }
+
+  .game-header,
+  .opponent-away-banner {
+    grid-column: 1 / -1;
+  }
+
+  .scoreboard-panel {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+    align-self: start;
+  }
+
+  .score-group {
+    grid-auto-rows: var(--row-height);
+  }
+
+  .score-cell {
+    min-height: 0;
+  }
+
+  .player-cell {
+    aspect-ratio: auto;
+    align-self: stretch;
+  }
+
+  .category-cell .icon-tile,
+  .category-cell .face-die {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .dice-section {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: end;
+    padding: 0 0 0.6rem;
+  }
+
+  .controls-panel {
+    grid-column: 2;
+    grid-row: 4;
+    padding-top: 0;
+  }
+
+  .roll-label {
+    white-space: nowrap;
+  }
+}
+
+/* Landscape phones. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .page,
+  .splash-screen {
+    padding-top: max(8px, env(safe-area-inset-top));
+  }
+
+  .game-card {
+    --board-reserve: 112px;
+    --board-width: min(56vw, 30rem);
+    --side-max: 22rem;
+  }
+
+  .game-header {
+    margin-bottom: 6px;
+  }
+
+  .score-card {
+    padding: 0.2rem 0.55rem;
+    border-width: 0.2rem;
+  }
+
+  .scoreboard-panel {
+    border-width: 0.4rem;
+    border-radius: 1.2rem;
+  }
+
+  .score-cell {
+    padding: 0.15rem;
+  }
+
+  .player-cell {
+    margin: 0.12rem;
+    border-radius: 0.6rem;
+    border-width: 0.16rem;
+    font-size: 0.85rem;
+  }
+
+  .player-cell.valid.preview-positive {
+    font-size: 1.2rem;
+  }
+
+  .icon-tile,
+  .face-die {
+    border-radius: 0.55rem;
+    border-width: 0.16rem;
+    padding: 0.15rem;
+  }
+
+  .icon-tile.word-icon {
+    font-size: 0.55rem;
+  }
+
+  .yatzy-word {
+    font-size: 0.6rem;
+  }
+
+  .pip {
+    width: 0.36rem;
+    height: 0.36rem;
+  }
+
+  .bonus-label {
+    padding-left: 0.3rem;
+  }
+
+  .bonus-stack .bonus-title {
+    font-size: 0.55rem;
+  }
+
+  .bonus-stack .bonus-value {
+    font-size: 1.1rem;
+  }
+
+  .bonus-progress {
+    border-width: 0.14rem;
+    font-size: 0.55rem;
+  }
+
+  .dice-row {
+    gap: 0.4rem;
+  }
+
+  .roll-button {
+    min-height: 3.6rem;
+    gap: 0.5rem;
+    padding: 0.5rem calc(0.9rem + 2.3rem + 0.3rem) 0.5rem 0.9rem;
+  }
+
+  .roll-label {
+    font-size: 1.05rem;
+    white-space: normal;
+  }
+
+  .roll-indicators {
+    gap: 0.3rem;
+  }
+
+  .roll-chip {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-width: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .go-back-button {
+    min-height: 2.3rem;
+  }
+
+  .emoji-trigger {
+    bottom: 0.65rem;
+  }
+
+  .emoji-trigger-button {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1.05rem;
+  }
+
+  .winner-banner {
+    padding: 0.4rem;
+  }
+
+  .winner-card {
+    padding: 0.6rem;
+    border-width: 0.25rem;
+    font-size: 0.8rem;
+  }
+
+  .winner-card h2 {
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .winner-card p {
+    margin: 0.1rem 0;
+  }
+
+  .winner-actions {
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+  }
+
+  .winner-button {
+    min-height: 2.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .splash-actions {
+    gap: 0.45rem;
+  }
+
+  .splash-play,
+  .splash-choice {
+    min-height: 2.6rem;
+    padding: 0.4rem 1rem;
+  }
+}

@@ -9,7 +9,10 @@ Excluded from Prettier on purpose: do not reformat files wholesale.
 | File | Role |
 |---|---|
 | `app.js` | `state` (single source of truth), local/robot/defeat-mode gameplay, scoring flow, wiring |
-| `render.js` | DOM projection of `state` (`createRenderer`) |
+| `render.js` | DOM projection of `state` (`createRenderer`), the options sheet, the end-of-match card |
+| `styles.css` | Portrait phone base skin |
+| `screens.css` | Landscape phones + wide screens: board left, dice/roll right; end-of-match buttons |
+| `tv.css` | Desktop/TV sizing (dvh-based root size, 3% overscan), `html.tv :focus` ring |
 | `session.js` | Online: create/join/resume a room, remote state sync, seat storage |
 | `resume.js` | Local match save, splash "Reprendre" buttons, online away/back notices |
 | `robot.js`, `scoring.js`, `random.js` | Robot decisions, category scores, dice RNG |
@@ -21,6 +24,7 @@ Excluded from Prettier on purpose: do not reformat files wholesale.
 ## Storage keys
 
 - `yatzy-local-game-session` — local match save (below).
+- `muchogames_yatsy_best` — solo (vs robot) best total, integer. Written at game over in robot mode only; never in the save.
 - `yatzy-online-session` — online seat `{ gameCode, role, resumeToken, localPlayerIndex }`.
 - `yatzy-charged-match` — room code already paid (`MuchogamesRoom.chargeOnce`).
 - `yatzy-rule-settings`, `yatzy-reverse-selection`, `yatzy-extra-roll-easter-egg`,
@@ -40,6 +44,20 @@ Not saved: animations, toasts, robot queued move (recomputed from the board).
   Click → restore + `MuchogamesMatch.resume()`.
 - Deleted at game over (render with `gameOver`). Replaced by a new match
   (mode buttons, restart button).
+
+## Options, end screen, TV
+
+- One options sheet (`#settings-panel`, `game-options-panel`): the splash gear owns it
+  (`initOptionsPanel`), the in-game gear (`yatsy-game-settings-button`) toggles the same sheet.
+  Splash shows the rule settings; in a match only the current player's reverse-dice toggle
+  (rules reset the scorecard). Rules `<details>` is always present and closed.
+- Mode names are swapped in code: mode `solo` = local 2-player (`yatsy-solo-game-button`),
+  mode `robot` = real solo vs bot (`yatsy-robot-game-button`). finish(): robot `{ won, score }`
+  (tie: `{ score }`), online `{ won, score }` for the local seat, local 2-player `finish()`.
+- End card (`yatsy-gameover-overlay`, `data-tv-overlay`): `yatsy-replay-button` (local only, new coin)
+  and `yatsy-menu-button` (local: splash; online: leaves the room).
+- TV: `tv-remote.js`; screens toggle `hidden` (`yatsy-splash-screen`, `yatsy-game-card`).
+  `render()` rebuilds dice/cells, so app.js `restoreFocus()` puts the focus back on the same data-id.
 
 ## Online
 

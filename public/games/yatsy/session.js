@@ -100,6 +100,7 @@ window.YATZY_SESSION = {
   }
 
   async function handleCreateGame() {
+    window.MuchogamesTv?.play();
     if (!MATCHMAKING) {
       setSplashError("missing-config");
       return;
@@ -139,6 +140,7 @@ window.YATZY_SESSION = {
   }
 
   async function handleJoinGame() {
+    window.MuchogamesTv?.play();
     if (!MATCHMAKING) {
       setSplashError("missing-config");
       return;

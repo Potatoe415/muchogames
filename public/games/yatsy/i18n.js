@@ -25,7 +25,7 @@
         joinGame: "Join Game",
         joinBusy: "Joining...",
         codePlaceholder: "ABC",
-        settings: "Game settings",
+        settings: "Options",
         backToHub: "Back to game hub",
         reverseSelection: "Reverse dice selection",
         extraRollEasterEgg: "Secret fourth roll",
@@ -74,7 +74,9 @@
       winner: {
         tie: "It's a tie!",
         win: "{name} wins!",
-        useRestart: "Use Leave to return to the splash screen."
+        useRestart: "Use Leave to return to the splash screen.",
+        replay: "Play again",
+        menu: "Game menu"
       },
       celebration: {
         rolledFiveKind: "{playerName} rolled five {faceLabel}s"
@@ -132,6 +134,9 @@
       game: {
         close: "Close"
       },
+      best: {
+        label: "Solo best:"
+      },
       resume: {
         local: "Resume",
         online: "Resume online game ({code})",
@@ -163,7 +168,7 @@
         joinGame: "Unirse",
         joinBusy: "Conectando...",
         codePlaceholder: "ABC",
-        settings: "Configuracion",
+        settings: "Opciones",
         backToHub: "Volver al hub",
         reverseSelection: "Seleccion inversa de dados",
         extraRollEasterEgg: "4o lanzamiento secreto",
@@ -212,7 +217,9 @@
       winner: {
         tie: "Empate!",
         win: "{name} gana!",
-        useRestart: "Usa Salir para volver al inicio."
+        useRestart: "Usa Salir para volver al inicio.",
+        replay: "Jugar otra vez",
+        menu: "Menú del juego"
       },
       celebration: {
         rolledFiveKind: "{playerName} ha sacado cinco {faceLabel}"
@@ -270,6 +277,9 @@
       game: {
         close: "Cerrar"
       },
+      best: {
+        label: "Récord solo:"
+      },
       resume: {
         local: "Reanudar",
         online: "Reanudar partida en línea ({code})",
@@ -301,7 +311,7 @@
         joinGame: "Rejoindre",
         joinBusy: "Connexion...",
         codePlaceholder: "ABC",
-        settings: "Parametres",
+        settings: "Options",
         backToHub: "Retour au hub",
         reverseSelection: "Selection inverse des des",
         extraRollEasterEgg: "4e lancer secret",
@@ -310,7 +320,7 @@
         english: "Anglais",
         french: "Francais",
         spanish: "Espagnol",
-        rules: "Regles",
+        rules: "Règles",
         waitingStatus: "Code {code}. En attente du Joueur 2...",
         joiningStatus: "Connexion a {code}...",
         restoringStatus: "Reconnexion a {code}...",
@@ -350,7 +360,9 @@
       winner: {
         tie: "Egalite !",
         win: "{name} gagne !",
-        useRestart: "Utilisez Quitter pour revenir a l'accueil."
+        useRestart: "Utilisez Quitter pour revenir a l'accueil.",
+        replay: "Rejouer",
+        menu: "Menu du jeu"
       },
       celebration: {
         rolledFiveKind: "{playerName} a fait cinq {faceLabel}"
@@ -407,6 +419,9 @@
       },
       game: {
         close: "Fermer"
+      },
+      best: {
+        label: "Record solo :"
       },
       resume: {
         local: "Reprendre",

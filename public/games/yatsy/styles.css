@@ -65,11 +65,17 @@ select {
   font: inherit;
 }
 
+/* Android bars can cover the bottom even when the safe-area inset is 0
+   (docs/PLATFORM_RULES.md 6.2). */
 .page {
   min-height: 100dvh;
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem 3rem;
+  padding:
+    2rem
+    max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
 }
 
 .app-shell {
@@ -124,8 +130,9 @@ select {
   overflow: auto;
   padding:
     max(1.2rem, env(safe-area-inset-top))
-    1.25rem
-    max(1.2rem, env(safe-area-inset-bottom));
+    max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
 }
 
 .splash-screen::before {
@@ -141,8 +148,22 @@ select {
 }
 
 .splash-screen.is-hidden,
-.game-card.is-hidden {
+.game-card.is-hidden,
+.splash-screen[hidden],
+.game-card[hidden],
+.splash-best.is-hidden {
   display: none;
+}
+
+.splash-best {
+  margin: 0;
+  align-self: center;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fffaf1;
+  font-size: 0.95rem;
+  font-weight: 800;
 }
 
 .splash-nav-btn {
@@ -179,34 +200,6 @@ select {
   right: 1rem;
 }
 
-.settings-panel {
-  position: absolute;
-  top: calc(max(1rem, env(safe-area-inset-top)) + 2.85rem);
-  right: 1rem;
-  z-index: 25;
-  width: min(20rem, calc(100vw - 2rem));
-  max-height: min(70dvh, 28rem);
-  overflow: auto;
-  border-radius: 1rem;
-  background: rgba(42, 32, 28, 0.88);
-  color: #fffaf1;
-  padding: 0.7rem;
-  box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.settings-panel[hidden] {
-  display: none;
-}
-
-/* The shared .lang-btn assumes a light panel; this one is dark. */
-.settings-panel .lang-btn {
-  color: #fffaf1;
-  font-size: 0.95rem;
-  font-weight: 800;
-}
-
 .settings-list {
   display: flex;
   flex-direction: column;
@@ -221,18 +214,18 @@ select {
 }
 
 .settings-name {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 800;
-  color: #fffaf1;
+  color: #1f2933;
 }
 
 .settings-points {
   min-width: 0;
   height: 2rem;
   border-radius: 0.55rem;
-  border: 0.14rem solid rgba(255, 250, 241, 0.28);
-  background: rgba(255, 255, 255, 0.12);
-  color: #fffaf1;
+  border: 0.14rem solid rgba(15, 23, 42, 0.18);
+  background: rgba(15, 23, 42, 0.04);
+  color: #1f2933;
   text-align: center;
   font-weight: 800;
 }
@@ -241,14 +234,12 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.16);
-  color: #fffaf1;
+  background: rgba(15, 23, 42, 0.08);
+  color: #1f2933;
 }
 
-/* In-game settings panel toggle (reverse dice selection) - lives inside the
-   shared white .options-panel-sheet (game-header.css), so unlike
-   .settings-row above (built for the splash panel's dark background) this
-   needs its own dark-on-white colors. */
+/* Rows of the shared white .options-panel-sheet (game-header.css): rule
+   settings on the splash, reverse dice selection in a match. */
 .game-toggle-row {
   display: flex;
   align-items: center;
@@ -282,41 +273,6 @@ select {
   color: #1f2933;
   font-size: 0.72rem;
   font-weight: 800;
-}
-
-.settings-rules-section {
-  margin-top: 0.7rem;
-  padding-top: 0.7rem;
-  border-top: 0.06rem solid rgba(255, 250, 241, 0.18);
-}
-
-.settings-rules-title {
-  margin: 0 0 0.35rem;
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: rgba(255, 250, 241, 0.6);
-}
-
-.settings-rules-content {
-  font-size: 0.82rem;
-  line-height: 1.45;
-  color: #fffaf1;
-}
-
-.settings-rules-content h2 {
-  margin: 0.6rem 0 0.3rem;
-  font-size: 0.85rem;
-}
-
-.settings-rules-content h2:first-child {
-  margin-top: 0;
-}
-
-.settings-rules-content ul {
-  margin: 0 0 0.4rem;
-  padding-left: 1.1rem;
 }
 
 .splash-actions {
@@ -2322,10 +2278,7 @@ body.player-two-turn .player-cell.valid {
   }
 
   .page {
-    padding:
-      max(0.6rem, env(safe-area-inset-top))
-      0.45rem
-      max(0.8rem, env(safe-area-inset-bottom));
+    padding-top: max(0.6rem, env(safe-area-inset-top));
   }
 
   .app-shell {
@@ -2333,10 +2286,7 @@ body.player-two-turn .player-cell.valid {
   }
 
   .splash-screen {
-    padding:
-      max(0.7rem, env(safe-area-inset-top))
-      0.85rem
-      max(0.9rem, env(safe-area-inset-bottom));
+    padding-top: max(0.7rem, env(safe-area-inset-top));
   }
 
   .splash-nav-btn {
@@ -2349,10 +2299,6 @@ body.player-two-turn .player-cell.valid {
   }
 
   #settings-button {
-    right: 0.7rem;
-  }
-
-  .settings-panel {
     right: 0.7rem;
   }
 

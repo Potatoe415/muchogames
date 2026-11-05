@@ -105,6 +105,7 @@ window.YATZY_RESUME = {
   // Rules come from the save, not the splash settings: the scorecard keys
   // depend on which categories were enabled when the match started.
   function resumeLocalMatch() {
+    window.MuchogamesTv?.play();
     const saved = readLocalSave();
     if (!saved) {
       render();
@@ -142,6 +143,7 @@ window.YATZY_RESUME = {
   }
 
   async function resumeOnlineMatch() {
+    window.MuchogamesTv?.play();
     await resumeOnlineSession();
     sendPresence(false);
   }

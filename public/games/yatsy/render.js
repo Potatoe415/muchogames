@@ -34,22 +34,25 @@ window.YATZY_RENDER = {
       handleScoreSelection,
       handleDieToggle,
       scheduleRobotTurnIfNeeded,
-      scheduleDefeatModeTurnIfNeeded
+      scheduleDefeatModeTurnIfNeeded,
+      readBestScore,
+      onWinnerReplay,
+      onWinnerMenu
     } = deps;
   function render() {
     // Centralized rendering makes the UI a pure projection of current state.
     // Any state mutation is followed by a render so visuals always stay in sync.
     renderTheme();
     renderSplash();
+    renderOptionsPanel();
     elements.homeButton.classList.toggle("is-hidden", state.screen !== "game");
 
-    elements.gameCard.classList.toggle("is-hidden", state.screen !== "game");
+    elements.gameCard.hidden = state.screen !== "game";
     if (state.screen !== "game") {
       return;
     }
 
     renderHeader();
-    renderGameSettingsPanel();
     renderScoreSummary();
     renderScoreboard();
     renderDice();
@@ -83,7 +86,7 @@ window.YATZY_RENDER = {
 
   function renderSplash() {
     const inGame = state.screen === "game";
-    elements.splashScreen.classList.toggle("is-hidden", inGame);
+    elements.splashScreen.hidden = inGame;
     document.body.classList.toggle("is-splash", !inGame);
     elements.splashTitle.textContent = t("splash.title");
     if (elements.playerNameLabel) {
@@ -119,8 +122,7 @@ window.YATZY_RENDER = {
     const isWaiting = state.session.connectionState === "waiting";
     const isBusy = isCreating || isJoining || isRestoring || isWaiting;
     const showOnline = state.splashView === "online" || isBusy;
-    renderSettingsRows();
-    renderGameLangSelector();
+    renderBestScore(showOnline);
 
     elements.soloGameButton.classList.toggle("is-hidden", showOnline);
     elements.robotGameButton.classList.toggle("is-hidden", showOnline);
@@ -162,6 +164,32 @@ window.YATZY_RENDER = {
     }
   }
 
+  // Solo (vs robot) record, shown on the splash modes view only.
+  function renderBestScore(showOnline) {
+    if (!elements.bestScoreRow) {
+      return;
+    }
+    elements.bestScoreRow.classList.toggle("is-hidden", showOnline);
+    elements.bestScoreLabel.textContent = t("best.label");
+    elements.bestScoreValue.textContent = String(readBestScore());
+  }
+
+  // The one options sheet: language, then the splash's rule settings or the
+  // in-match per-player dice option, then the rules (docs/PLATFORM_RULES.md 3.4).
+  function renderOptionsPanel() {
+    const inGame = state.screen === "game";
+    elements.settingsTitle.textContent = t("splash.settings");
+    elements.settingsClose.setAttribute("aria-label", t("game.close"));
+    elements.settingsRulesTitle.textContent = t("splash.rules");
+    elements.settingsListSection.hidden = inGame;
+    elements.reverseSelectionSection.hidden = !inGame;
+    renderGameLangSelector();
+    renderSettingsRows();
+    if (inGame) {
+      renderGameSettingsPanel();
+    }
+  }
+
   function renderSettingsRows() {
     if (!elements.settingsList) {
       return;
@@ -173,12 +201,13 @@ window.YATZY_RENDER = {
       const setting = state.setup.rules[option.key];
       const row = document.createElement("label");
       row.className = "settings-row";
+      row.dataset.id = `yatsy-rule-row-${option.key}`;
       row.innerHTML = `
         <span class="settings-check">
-          <input type="checkbox" data-rule-key="${option.key}" data-rule-field="enabled" ${setting.enabled ? "checked" : ""}>
+          <input type="checkbox" data-id="yatsy-rule-${option.key}-enabled" data-rule-key="${option.key}" data-rule-field="enabled" ${setting.enabled ? "checked" : ""}>
         </span>
         <span class="settings-name">${getRuleDisplayName(option.key)}</span>
-        <input class="settings-points" type="number" min="0" step="1" data-rule-key="${option.key}" data-rule-field="points" value="${setting.points}">
+        <input class="settings-points" type="number" min="0" step="1" data-id="yatsy-rule-${option.key}-points" data-rule-key="${option.key}" data-rule-field="points" value="${setting.points}">
       `;
       elements.settingsList.appendChild(row);
     });
@@ -186,7 +215,8 @@ window.YATZY_RENDER = {
     appendSettingsToggleRow(
       "reverseDiceSelection",
       t("splash.reverseSelection"),
-      state.setup.reverseDiceSelectionByPlayer[0]
+      state.setup.reverseDiceSelectionByPlayer[0],
+      "settings-reverse-dice-selection"
     );
     appendSettingsToggleRow(
       "extraRollEasterEgg",
@@ -230,29 +260,15 @@ window.YATZY_RENDER = {
     emojiController?.syncLabels();
   }
 
-  // The in-game settings panel (gear button on the header's top row): lets
-  // whichever player is currently taking their turn change the language, or
-  // flip their own dice-selection convention (select dice to reroll instead
-  // of dice to keep) without touching the other player's preference - see
-  // reverseDiceSelectionByPlayer on state.setup.
+  // In a match, the options sheet lets whichever player is currently taking
+  // their turn flip their own dice-selection convention (select dice to
+  // reroll instead of dice to keep) without touching the other player's
+  // preference - see reverseDiceSelectionByPlayer on state.setup.
   function renderGameSettingsPanel() {
-    if (!elements.gameSettingsButton) {
-      return;
+    if (elements.gameSettingsButton) {
+      elements.gameSettingsButton.setAttribute("aria-label", t("splash.settings"));
+      elements.gameSettingsButton.setAttribute("title", t("splash.settings"));
     }
-
-    elements.gameSettingsButton.setAttribute("aria-label", t("splash.settings"));
-    elements.gameSettingsButton.setAttribute("title", t("splash.settings"));
-    if (elements.gameSettingsTitle) {
-      elements.gameSettingsTitle.textContent = t("splash.settings");
-    }
-    if (elements.gameSettingsClose) {
-      elements.gameSettingsClose.setAttribute("aria-label", t("game.close"));
-    }
-    if (elements.gameSettingsLanguageTitle) {
-      elements.gameSettingsLanguageTitle.textContent = t("splash.language");
-    }
-
-    renderGameLangSelector();
 
     const currentPlayerName = state.players[state.currentPlayerIndex]?.name || "";
     const enabled = Boolean(state.setup.reverseDiceSelectionByPlayer[state.currentPlayerIndex]);
@@ -269,14 +285,11 @@ window.YATZY_RENDER = {
     }
   }
 
-  // Same switcher in the splash and the in-game options panels.
   function renderGameLangSelector() {
     if (elements.splashLanguageTitle) {
       elements.splashLanguageTitle.textContent = t("splash.language");
     }
-    [elements.gameLangSelector, elements.splashLangSelector]
-      .filter(Boolean)
-      .forEach((selector) => selector.replaceChildren(...createLanguageButtons()));
+    elements.splashLangSelector?.replaceChildren(...createLanguageButtons());
   }
 
   function createLanguageButtons() {
@@ -291,6 +304,7 @@ window.YATZY_RENDER = {
       button.type = "button";
       button.className = `lang-btn${state.setup.language === language.code ? " active" : ""}`;
       button.dataset.lang = language.code;
+      button.dataset.id = `yatsy-lang-${language.code}`;
       button.textContent = language.code.toUpperCase();
       button.title = language.title;
       button.setAttribute("aria-label", language.title);
@@ -326,10 +340,11 @@ window.YATZY_RENDER = {
     }
     const scoreline = document.createElement("span");
     scoreline.className = "score-card-scoreline";
+    // yatsy-score is player 1, the human seat in a solo game vs the robot.
     scoreline.innerHTML = `
-        <span class="score-card-value player-one-score">${playerOneTotal}</span>
+        <span class="score-card-value player-one-score" data-id="yatsy-score">${playerOneTotal}</span>
         <span class="score-card-divider">/</span>
-        <span class="score-card-value player-two-score">${playerTwoTotal}</span>
+        <span class="score-card-value player-two-score" data-id="yatsy-player-two-score">${playerTwoTotal}</span>
     `;
     header.appendChild(scoreline);
     return header;
@@ -410,6 +425,7 @@ window.YATZY_RENDER = {
   function buildCategoryCell(category) {
     const cell = document.createElement("div");
     cell.className = "score-cell category-cell";
+    cell.dataset.id = `yatsy-category-${category.key}`;
     cell.setAttribute("title", categoryLabel(category.key));
 
     if (isCategoryScoreable(state.currentPlayerIndex, category.key) && !isRobotTurn()) {
@@ -438,6 +454,7 @@ window.YATZY_RENDER = {
     const cell = document.createElement("button");
     cell.type = "button";
     cell.className = `score-cell player-cell ${className}`;
+    cell.dataset.id = `yatsy-score-cell-p${playerIndex + 1}-${category.key}`;
     cell.dataset.categoryKey = category.key;
     cell.dataset.playerIndex = String(playerIndex);
 
@@ -500,6 +517,7 @@ window.YATZY_RENDER = {
 
     const bubble = document.createElement("div");
     bubble.className = "bonus-progress";
+    bubble.dataset.id = `yatsy-bonus-progress-p${playerIndex + 1}`;
     bubble.textContent = `${progress}/${bonusConfig.threshold}`;
 
     cell.appendChild(bubble);
@@ -516,6 +534,8 @@ window.YATZY_RENDER = {
   function buildWinnerBanner() {
     const overlay = document.createElement("div");
     overlay.className = "winner-banner";
+    overlay.dataset.id = "yatsy-gameover-overlay";
+    overlay.setAttribute("data-tv-overlay", "");
 
     const card = document.createElement("div");
     card.className = "winner-card";
@@ -531,16 +551,43 @@ window.YATZY_RENDER = {
 
     playerMetaList.forEach((_, playerIndex) => {
       const scoreLine = document.createElement("p");
+      scoreLine.dataset.id = playerIndex === 0 ? "yatsy-final-score" : "yatsy-final-score-p2";
       scoreLine.textContent = `${state.players[playerIndex].name}: ${totals[playerIndex]}`;
       card.appendChild(scoreLine);
     });
 
-    const hint = document.createElement("p");
-    hint.textContent = t("winner.useRestart");
-    card.appendChild(hint);
+    if (state.setup.mode === "robot") {
+      const bestLine = document.createElement("p");
+      bestLine.dataset.id = "yatsy-final-best-score";
+      bestLine.textContent = `${t("best.label")} ${readBestScore()}`;
+      card.appendChild(bestLine);
+    }
 
+    card.appendChild(buildWinnerActions());
     overlay.appendChild(card);
     return overlay;
+  }
+
+  // Online there is no local replay: the single button leaves the room.
+  function buildWinnerActions() {
+    const actions = document.createElement("div");
+    actions.className = "winner-actions";
+    if (!isOnlineGame()) {
+      actions.appendChild(buildWinnerButton("yatsy-replay-button", t("winner.replay"), onWinnerReplay, "data-tv-focus"));
+    }
+    actions.appendChild(buildWinnerButton("yatsy-menu-button", t("winner.menu"), onWinnerMenu, "data-tv-back"));
+    return actions;
+  }
+
+  function buildWinnerButton(dataId, label, onClick, tvAttribute) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "winner-button";
+    button.dataset.id = dataId;
+    button.setAttribute(tvAttribute, "");
+    button.textContent = label;
+    button.addEventListener("click", onClick);
+    return button;
   }
 
   function createCategoryIcon(category) {
@@ -622,6 +669,7 @@ window.YATZY_RENDER = {
       const dieTile = document.createElement("button");
       dieTile.type = "button";
       dieTile.className = "game-die";
+      dieTile.dataset.id = `yatsy-die-${index + 1}`;
 
       const turnStarted = state.rollsRemaining < 3 || state.dice.some((item) => item.value !== null);
       const freshTurn = !turnStarted;
