@@ -24,15 +24,17 @@ import { analyzeMove, invalidWords, wordsAt } from "./rules.js";
 import { JUNIOR } from "./tiles.js";
 
 const BOT_DELAY_MS = 750;
-const HINTS_PER_TURN = 3;
+const HINTS_PER_TURN = 5;
 
-function computePreview(game, draft, dict) {
+// hinted: a hint was used this turn, so the move scores 0.
+function computePreview(game, draft, dict, hinted) {
   if (!draft.length) return { tone: "idle" };
   const analysis = analyzeMove(game.board, draftTiles(draft));
   if (analysis.error) return { tone: "error", error: analysis.error };
   const bad = invalidWords(analysis, dict);
   const tone = bad.length ? "bad" : "ok";
-  return { tone, bad, analysis, score: analysis.score };
+  const score = hinted ? 0 : analysis.score;
+  return { tone, bad, analysis, score, hinted };
 }
 
 function lastCells(game) {
@@ -41,8 +43,8 @@ function lastCells(game) {
 }
 
 // opts: { els, game, draft, config, names(), langs (word languages), dicts
-//         (one per word language), t, hints(), keysActive(), dialogs, sound,
-//         onSave(), onEnd(game) }
+//         (one per word language), t, hints(), hintsUsed (this turn's, from
+//         the save), keysActive(), dialogs, sound, onSave(), onEnd(game) }
 export function createPlay(opts) {
   const { els, game, config, t, dialogs, sound } = opts;
   const dict = combineDictionaries(opts.dicts);
@@ -60,8 +62,9 @@ export function createPlay(opts) {
     lookup: false,
     freeSwapUsed: false,
     // This turn's hints: the list (computed on the first tap, again after
-    // the rack changes), the next one to show, how many were shown.
-    hints: { list: null, next: 0, used: 0 },
+    // the rack changes), the next one to show, how many were shown. Any
+    // hint used makes this turn's move score 0.
+    hints: { list: null, next: 0, used: opts.hintsUsed || 0 },
     notice: "",
     preview: { tone: "idle" },
     timer: 0
@@ -75,7 +78,7 @@ export function createPlay(opts) {
   const myRack = () => game.racks[game.turn];
 
   function refresh() {
-    s.preview = computePreview(game, s.draft, dict);
+    s.preview = computePreview(game, s.draft, dict, s.hints.used > 0);
     board.paint({
       board: game.board,
       draft: s.draft,
@@ -128,9 +131,10 @@ export function createPlay(opts) {
 
   function play() {
     if (!canAct() || s.preview.tone !== "ok") return false;
-    const { analysis } = s.preview;
-    playTiles(game, draftTiles(s.draft), analysis, juniorDraw);
-    (analysis.bingo ? sound.bingo : sound.play)();
+    const { analysis, hinted } = s.preview;
+    const scored = hinted ? { ...analysis, score: 0 } : analysis;
+    playTiles(game, draftTiles(s.draft), scored, juniorDraw);
+    (analysis.bingo && !hinted ? sound.bingo : sound.play)();
     afterMove();
     return true;
   }
@@ -300,6 +304,6 @@ export function createPlay(opts) {
     relabel: () => (board.relabel(t), refresh()),
     refresh,
     destroy,
-    snapshot: () => ({ draft: s.draft })
+    snapshot: () => ({ draft: s.draft, hintsUsed: s.hints.used })
   };
 }

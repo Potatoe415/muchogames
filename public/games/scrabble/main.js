@@ -23,6 +23,7 @@ import {
 import { setSoundEnabled, sound } from "./sound.js";
 import {
   clearGame,
+  hintsUsedOf,
   loadSaved,
   loadSettings,
   loadStats,
@@ -127,7 +128,7 @@ function showScreen(playing) {
 
 function saveNow() {
   const { game, play, config } = page;
-  if (game && play && !game.over) saveGame(config, game, play.snapshot().draft);
+  if (game && play && !game.over) saveGame(config, game, play.snapshot());
 }
 
 function recordResult(winner) {
@@ -162,7 +163,7 @@ function unmount() {
   $("scrabble-end").hidden = true;
 }
 
-function mount(game, config, draft) {
+function mount(game, config, draft, hintsUsed = 0) {
   unmount();
   useRules(config);
   Object.assign(page, { game, config });
@@ -176,6 +177,7 @@ function mount(game, config, draft) {
     },
     game,
     draft,
+    hintsUsed,
     config,
     langs: config.words,
     dicts: config.words.map((l) => page.dicts[l]),
@@ -201,7 +203,12 @@ function loadResumable() {
     return null;
   }
   const fits = draftFits(saved.draft, game.racks[game.turn], game.board);
-  return { config: saved.config, game, draft: fits ? saved.draft : [] };
+  return {
+    config: saved.config,
+    game,
+    draft: fits ? saved.draft : [],
+    hintsUsed: hintsUsedOf(saved.hintsUsed)
+  };
 }
 
 // Quitting mid-match keeps the save (no finish); an ended match already
@@ -227,7 +234,7 @@ async function startMatch() {
     seatsOf(config),
     isJunior(config) ? makeJuniorDraw(dict) : undefined
   );
-  saveGame(config, game, []);
+  saveGame(config, game, { draft: [], hintsUsed: 0 });
   renderResume(null);
   mount(game, config, []);
 }
@@ -237,7 +244,8 @@ async function resumeMatch() {
   renderResume(resumable);
   if (!resumable || !(await loadDict(resumable.config.words))) return;
   window.MuchogamesMatch.resume(GAME_ID);
-  mount(resumable.game, resumable.config, resumable.draft);
+  const { game, config, draft, hintsUsed } = resumable;
+  mount(game, config, draft, hintsUsed);
 }
 
 const dictsReady = (words) => words.every((l) => page.dicts[l]);

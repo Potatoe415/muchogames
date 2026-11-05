@@ -121,8 +121,9 @@ export function loadStats() {
 
 export const saveStats = (stats) => writeJson(STATS_KEY, stats);
 
-// { config: { players, level, words, names }, game, draft } — game and draft
-// are checked by game.js restoreGame and draft.js draftFits. Saves from
+// { config: { players, level, words, names }, game, draft, hintsUsed } — game
+// and draft are checked by game.js restoreGame and draft.js draftFits;
+// hintsUsed = hints taken this turn (any = the move scores 0). Saves from
 // before the word-language choice are French.
 export function loadSaved() {
   const saved = readJson(SAVED_KEY);
@@ -141,7 +142,11 @@ export function loadSaved() {
   return valid ? { ...saved, config } : null;
 }
 
-export const saveGame = (config, game, draft) =>
-  writeJson(SAVED_KEY, { config, game, draft });
+// turn: { draft, hintsUsed } from play.js snapshot().
+export const saveGame = (config, game, turn) =>
+  writeJson(SAVED_KEY, { config, game, ...turn });
+
+// A missing or damaged count (older saves) = no hint used.
+export const hintsUsedOf = (n) => (Number.isInteger(n) && n > 0 ? n : 0);
 
 export const clearGame = () => writeJson(SAVED_KEY, null);

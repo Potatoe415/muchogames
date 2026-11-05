@@ -20,6 +20,7 @@ function previewLine({ preview }, t) {
     return t("badWord", { word: preview.bad.join(", ") });
   const words = preview.analysis.words.map((w) => w.text).join(", ");
   const line = t("okWord", { words, score: preview.score });
+  if (preview.hinted) return `${line} · ${t("hintZero")}`;
   return preview.analysis.bingo ? `${line} · ${t("bingo")}` : line;
 }
 

@@ -38,6 +38,7 @@ export const STRINGS = {
   shuffle: "Mélanger",
   recall: "Rappeler",
   hintLeft: "Indice ({n})",
+  hintZero: "indice utilisé",
   pass: "Passer",
   define: "Définir",
   lookupHint: "Touchez un mot du plateau pour voir sa définition.",
@@ -109,6 +110,7 @@ export const RULES = `
   <li><strong>Points :</strong> chaque lettre a sa valeur. LD et LT doublent ou triplent la lettre, MD et MT le mot entier (l'étoile compte MD). Une case ne compte qu'au moment où on la couvre.</li>
   <li>Le <strong>joker</strong> remplace n'importe quelle lettre et vaut 0 point.</li>
   <li><strong>Scrabble :</strong> poser ses 7 lettres d'un coup rapporte 50 points de bonus.</li>
+  <li><strong>Indice</strong> (si activé dans les options) : jusqu'à 5 par tour, chacun propose un mot. Un tour où l'on a pris un indice rapporte 0 point ; le tour suivant compte normalement.</li>
   <li>Au lieu de jouer, vous pouvez <strong>échanger</strong> des lettres (s'il en reste au moins 7 dans le sac) ou <strong>passer</strong>.</li>
   <li><strong>Fin :</strong> quand le sac est vide et qu'un joueur a posé toutes ses lettres, ou quand chaque joueur a passé ou échangé deux fois de suite. Les lettres restantes sont retirées du score ; celui qui a fini gagne celles des autres.</li>
 </ul>

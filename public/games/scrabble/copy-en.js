@@ -39,6 +39,7 @@ export const STRINGS = {
   shuffle: "Shuffle",
   recall: "Recall",
   hintLeft: "Hint ({n})",
+  hintZero: "hint used",
   pass: "Pass",
   define: "Define",
   lookupHint: "Tap a word on the board to see its definition.",
@@ -110,6 +111,7 @@ export const RULES = `
   <li><strong>Points:</strong> each letter has a value. DL and TL double or triple the letter, DW and TW the whole word (the star counts as DW). A square counts only when it is first covered.</li>
   <li>The <strong>blank</strong> stands for any letter and is worth 0.</li>
   <li><strong>Scrabble:</strong> playing all 7 letters at once earns a 50-point bonus.</li>
+  <li><strong>Hint</strong> (if switched on in the options): up to 5 per turn, each one suggests a word. A turn where you took a hint scores 0 points; the next turn scores normally.</li>
   <li>Instead of playing you can <strong>swap</strong> letters (if at least 7 are left in the bag) or <strong>pass</strong>.</li>
   <li><strong>End:</strong> when the bag is empty and a player has used all their letters, or once every player has passed or swapped twice in a row. Letters left are taken off the score; the player who went out gains everyone else's.</li>
 </ul>
