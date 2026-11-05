@@ -21,6 +21,7 @@ Solo one-button arcade game (original take on the "flap between pipes" genre —
 - `finish({ score })` without `won` (no win in an endless runner). Best saved the moment the end card shows.
 - Input: `pointerdown` on the play area (touch / mouse; `touch-action: none`, no click delay, no scroll / zoom), Space / ↑ / W anywhere except on another focused control, Enter / OK on the focused play area. TV: the play area takes the focus at match start and declares `data-tv-keys="up"` so ↑ flaps instead of moving the focus; Back = pause.
 - Pause: ❚❚, opening the options, or the page going hidden. The bird freezes ("Tape pour repartir"); after Continue the next tap resumes.
+- Margins (PLATFORM_RULES 6.2): start screen and overlays pad 40 px at the bottom and 24 px at the sides (or the safe areas); the ❚❚ sits 24 px from the right edge. The play area deliberately stays full-bleed: it is scenery plus a whole-screen tap surface (any point flaps), so a tap near an edge still works and no control or score sits in the bottom 40 px or side strips. Desktop / TV (`min-width: 960px` and `min-height: 500px`): header buttons `max(36px, 6dvh)`, edges 3vw / `max(40px, 4dvh)`. Start screen order: best, Resume, Play; short landscape puts it in two columns. Overlays only fade (a slide would scroll the page).
 
 ## Saved match (decision 0054)
 
