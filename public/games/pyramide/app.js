@@ -56,6 +56,7 @@ const state = {
 
 const transientCleanups = [];
 let betSound = null;
+let lastView = "";
 
 const matchSave = window.PYRAMIDE_SAVE.create({
   startingBricks: STARTING_BRICKS,
@@ -124,10 +125,14 @@ function setupInfoButton() {
 
 function setupNavButtons() {
   const resetButton = document.getElementById("pyramide-reset-button");
-  const backLink = document.querySelector(".back-button");
+  const quitButton = document.getElementById("pyramide-quit-button");
+  const backLink = document.querySelector('[data-id="game-back-button"]');
 
   if (resetButton) {
     resetButton.addEventListener("click", handleResetClick);
+  }
+  if (quitButton) {
+    quitButton.addEventListener("click", quitToSplash);
   }
 
   if (backLink) {
@@ -174,6 +179,7 @@ function persistMatch() {
 }
 
 function resumeMatch() {
+  window.MuchogamesTv?.play();
   const saved = matchSave.load();
   const normalized = saved && normalizeDeck(state.rawData, saved.locale);
   const restored = normalized && matchSave.restore(saved, normalized.validDeck);
@@ -205,6 +211,7 @@ function datasetMetaFor(normalized) {
 // Every new match (splash start, ↻ reset) spends a coin first.
 async function startMatch(locale) {
   if (state.isStarting) return;
+  window.MuchogamesTv?.play();
   state.isStarting = true;
   const allowed = await window.MuchogamesMatch.start("pyramide");
   state.isStarting = false;
@@ -396,12 +403,36 @@ function shuffle(items) {
 }
 
 function render() {
+  const focusedId = document.activeElement?.dataset?.id;
   cleanupTransientEffects();
   document.documentElement.lang = getLocale();
   updateLayoutMode();
   renderStatus();
+  renderLangSelector();
   persistMatch();
+  renderScreen();
+  restoreFocus(focusedId);
+}
 
+// A new screen or phase: the TV remote focuses its main button. A re-render
+// of the same one replaces the controls: keep the focus on the same control
+// (a brick, a button).
+function restoreFocus(focusedId) {
+  const view = `${state.screen}:${state.round?.phase ?? ""}`;
+  const viewChanged = view !== lastView;
+  lastView = view;
+  if (viewChanged) {
+    window.MuchogamesTv?.focusScreen();
+    return;
+  }
+  const current = document.activeElement;
+  if (current && current !== document.body && current.isConnected) return;
+  const same = focusedId && document.querySelector(`[data-id="${focusedId}"]`);
+  if (same && !same.disabled) same.focus({ preventScroll: true });
+  else window.MuchogamesTv?.focusScreen();
+}
+
+function renderScreen() {
   if (state.loading || state.screen === SCREENS.LOADING) {
     renderLoadingScreen();
     return;
@@ -453,12 +484,21 @@ function updateLayoutMode() {
   els.statusStrip.classList.add("is-hidden");
 
   const resetButton = document.getElementById("pyramide-reset-button");
+  const quitButton = document.getElementById("pyramide-quit-button");
+  const backLink = document.querySelector('[data-id="game-back-button"]');
   const scoreDisplay = document.getElementById("score-display");
   const rulesSection = document.getElementById("rules-section");
 
+  // In a match the ✖ (data-match-quit) returns to the dashboard; the ↻ only
+  // shows on the game-over screen, where it starts a new match.
   if (resetButton) {
-    resetButton.style.display = isSplash ? "none" : "";
+    resetButton.hidden = isSplash || state.round?.phase !== PHASES.GAME_OVER;
   }
+  if (quitButton) {
+    quitButton.hidden = isSplash;
+    quitButton.setAttribute("aria-label", t("quitMatch"));
+  }
+  if (backLink) backLink.hidden = !isSplash;
   if (scoreDisplay) {
     scoreDisplay.style.display = isSplash ? "none" : scoreDisplay.style.display;
   }
@@ -496,46 +536,65 @@ function renderErrorScreen() {
 function renderSplashScreen() {
   setStageTitles(t("splashTitle"), "");
 
-  const shell = createElement("section", { className: "splash-shell" });
+  const shell = screenSection("splash-shell", "pyramide-dashboard-screen");
   const splashImage = createElement("img", {
     className: "splash-image",
     src: "./data/images/splashscreen.jpg",
     alt: t("splashAlt"),
   });
+  const actions = createElement("div", { className: "splash-actions" });
 
-  shell.append(splashImage);
+  splashImage.dataset.id = "pyramide-splash-image";
   if (matchSave.load()) {
-    const resumeButton = button(t("resumeMatch"), "primary-button", resumeMatch);
-    resumeButton.dataset.id = "pyramide-resume-button";
-    shell.append(resumeButton);
+    actions.append(button(t("resumeMatch"), "primary-button", resumeMatch, false, "pyramide-resume-button", true));
   }
-  shell.append(button(t("splashStart"), "primary-button", () => startMatch(getLocale())));
-
-  if (els.langSelector) {
-    const makeLangButton = (locale, label) => {
-      const element = document.createElement("button");
-      element.type = "button";
-      element.className = `lang-btn${getLocale() === locale ? " active" : ""}`;
-      element.textContent = label;
-      element.addEventListener("click", () => {
-        state.uiLocale = locale;
-        if (state.session) {
-          applyLocaleToSession(locale);
-        }
-        render();
-      });
-      return element;
-    };
-
-    els.langSelector.replaceChildren(
-      makeLangButton("fr", "FR"),
-      makeLangButton("en", "EN"),
-      makeLangButton("es", "ES"),
-    );
-  }
+  actions.append(
+    button(t("splashStart"), "primary-button", () => startMatch(getLocale()), false, "pyramide-start-button", true),
+  );
+  shell.append(splashImage, actions);
 
   renderPublic(shell);
   renderSecret();
+}
+
+function renderLangSelector() {
+  if (!els.langSelector) return;
+  const makeLangButton = (locale, label) => {
+    const element = document.createElement("button");
+    element.type = "button";
+    element.className = `lang-btn${getLocale() === locale ? " active" : ""}`;
+    element.dataset.id = `pyramide-lang-${locale}`;
+    element.textContent = label;
+    element.addEventListener("click", () => {
+      state.uiLocale = locale;
+      if (state.session) {
+        applyLocaleToSession(locale);
+      }
+      render();
+    });
+    return element;
+  };
+
+  els.langSelector.replaceChildren(makeLangButton("fr", "FR"), makeLangButton("en", "EN"), makeLangButton("es", "ES"));
+}
+
+// One in-match screen: a grid whose areas (teams, clue, main, side, cta)
+// move to two columns in landscape (style.css, .phase-*).
+function playScreen(phase, dataId, parts) {
+  const screen = screenSection(`play-screen phase-${phase}`, dataId);
+  Object.entries(parts).forEach(([areaName, node]) => {
+    if (!node) return;
+    node.classList.add(`area-${areaName}`);
+    screen.append(node);
+  });
+  return screen;
+}
+
+function screenSection(className, dataId) {
+  const section = createElement("section", { className });
+  section.dataset.id = dataId;
+  section.dataset.tvScreen = "";
+  return section;
 }
 
 function renderSetupScreen() {
@@ -543,9 +602,11 @@ function renderSetupScreen() {
 
   setStageTitles(t("teamEntering", { team: activeTeam.name }), t("roundStart"));
   renderPublic(
-    teamStrip(),
-    clueCard(state.round.enigma.clue),
-    button(t("startEnigma"), "primary-button", startRound),
+    playScreen("setup", "pyramide-play-screen", {
+      teams: teamStrip(),
+      clue: clueCard(state.round.enigma.clue),
+      cta: button(t("startEnigma"), "primary-button", startRound, false, "pyramide-start-round-button", true),
+    }),
   );
   renderSecret();
 }
@@ -557,8 +618,8 @@ function renderWordLoopScreen() {
   const actions = createElement("div", { className: "action-row" });
 
   actions.append(
-    button(t("found"), "success-button", () => resolveCurrentWord(true), Boolean(betError)),
-    button(t("missed"), "danger-button", () => resolveCurrentWord(false), Boolean(betError)),
+    button(t("found"), "success-button", () => resolveCurrentWord(true), Boolean(betError), "pyramide-found-button", !betError),
+    button(t("missed"), "danger-button", () => resolveCurrentWord(false), Boolean(betError), "pyramide-missed-button"),
   );
 
   setStageTitles(
@@ -566,10 +627,13 @@ function renderWordLoopScreen() {
     t("roundInProgress"),
   );
   renderPublic(
-    teamStrip(),
-    clueCard(state.round.enigma.clue),
-    wordTurnLayout(keyword, betError),
-    actions,
+    playScreen("word", "pyramide-play-screen", {
+      teams: teamStrip(),
+      clue: clueCard(state.round.enigma.clue),
+      main: wordCard(keyword, betError),
+      side: obeliskCard(getObeliskState(), true, Boolean(betError)),
+      cta: actions,
+    }),
   );
   renderSecret();
 }
@@ -581,6 +645,7 @@ function renderFinalRiddleScreen() {
     className: "final-text",
     html: censorFinalText(state.round.enigma.text, failedKeywords, state.session.locale),
   });
+  finalText.dataset.id = "pyramide-final-text";
   const actions = createElement("div", { className: "final-actions" });
 
   finalPanel.append(finalText);
@@ -589,12 +654,19 @@ function renderFinalRiddleScreen() {
       label: t("holdToRevealAnswer"),
       value: state.round.enigma.answer,
     }),
-    button(t("solvedEnigma"), "success-button", () => resolveFinal(true)),
-    button(t("failure"), "danger-button", () => resolveFinal(false)),
+    button(t("solvedEnigma"), "success-button", () => resolveFinal(true), false, "pyramide-solved-button"),
+    button(t("failure"), "danger-button", () => resolveFinal(false), false, "pyramide-failed-button"),
   );
 
   setStageTitles(t("finalRiddleTitle"), t("dicoArbitration"));
-  renderPublic(teamStrip(), clueCard(state.round.enigma.clue), finalPanel, actions);
+  renderPublic(
+    playScreen("final", "pyramide-play-screen", {
+      teams: teamStrip(),
+      clue: clueCard(state.round.enigma.clue),
+      main: finalPanel,
+      cta: actions,
+    }),
+  );
   renderSecret();
 }
 
@@ -608,13 +680,17 @@ function renderRoundSummaryScreen() {
     summaryCard(t("bonusBricks"), String(state.round.bonusApplied)),
   );
 
+  const nextLabel = hasMoreRounds() ? t("passToOtherTeam") : t("showFinalResult");
+  summaryGrid.dataset.id = "pyramide-round-summary";
   setStageTitles(t("roundSummary"), t("physicalRotation"));
   renderPublic(
-    teamStrip(),
-    clueCard(state.round.enigma.clue),
-    summaryGrid,
-    recapPanel(),
-    button(hasMoreRounds() ? t("passToOtherTeam") : t("showFinalResult"), "primary-button", nextRound),
+    playScreen("summary", "pyramide-play-screen", {
+      teams: teamStrip(),
+      clue: clueCard(state.round.enigma.clue),
+      main: summaryGrid,
+      side: recapPanel(),
+      cta: button(nextLabel, "primary-button", nextRound, false, "pyramide-next-round-button", true),
+    }),
   );
   renderSecret();
 }
@@ -627,8 +703,21 @@ function renderGameOverScreen() {
     ? t("drawMessage", { points: winner?.points ?? 0 })
     : t("winnerMessage", { team: winner?.name ?? t("winningTeamFallback") });
 
+  const actions = createElement("div", { className: "action-row" });
+  actions.append(
+    button(t("replay"), "primary-button", () => startMatch(getLocale()), false, "pyramide-replay-button", true),
+    button(t("backToMenu"), "secondary-button", quitToSplash, false, "pyramide-menu-button"),
+  );
+  actions.lastChild.dataset.tvBack = "";
+
   setStageTitles(t("gameOverTitle"), t("sessionEnded"));
-  renderPublic(teamStrip(), clueCard(message));
+  renderPublic(
+    playScreen("over", "pyramide-gameover-screen", {
+      teams: teamStrip(),
+      clue: clueCard(message, "pyramide-winner-message"),
+      cta: actions,
+    }),
+  );
   renderSecret();
 }
 
@@ -810,6 +899,7 @@ function teamStrip() {
     const item = createElement("article", {
       className: `team-chip ${index === state.session.activeTeamIndex ? "active" : "inactive"}`,
     });
+    item.dataset.id = `pyramide-team-${team.id.toLowerCase()}`;
 
     item.append(
       createElement("strong", { className: "team-name", text: team.name }),
@@ -821,16 +911,17 @@ function teamStrip() {
   return strip;
 }
 
-function clueCard(clue) {
-  return createCard("section", "clue-card", [
+function clueCard(clue, dataId = "pyramide-clue") {
+  const card = createCard("section", "clue-card", [
     createElement("span", { className: "info-label", text: t("clue") }),
     createElement("p", { className: "clue-text", text: clue }),
   ]);
+  card.dataset.id = dataId;
+  return card;
 }
 
-function wordTurnLayout(keyword, betError) {
-  const layout = createElement("section", { className: "play-grid" });
-  const wordCard = createCard("article", "word-card", [
+function wordCard(keyword, betError) {
+  const card = createCard("article", "word-card", [
     createElement("span", { className: "info-label", text: t("wordToGuess") }),
     createElement("p", { className: "word-display", text: keyword }),
     createElement("p", {
@@ -838,13 +929,14 @@ function wordTurnLayout(keyword, betError) {
       text: betError ?? t("tapBrickToChoose", { max: Math.min(MAX_BET, state.round.bricksRemaining) }),
     }),
   ]);
-
-  layout.append(wordCard, obeliskCard(getObeliskState(), true));
-  return layout;
+  card.dataset.id = "pyramide-word-card";
+  return card;
 }
 
-function obeliskCard(obeliskState, interactive = false) {
+// focusFirstBet: with no bet yet, the TV remote lands on the 1-brick bet.
+function obeliskCard(obeliskState, interactive = false, focusFirstBet = false) {
   const card = createCard("article", "obelisk-card");
+  card.dataset.id = "pyramide-obelisk";
   const meter = createElement("div", {
     className: `obelisk-counter${interactive ? " is-interactive" : ""}`,
     id: "obelisk",
@@ -853,6 +945,7 @@ function obeliskCard(obeliskState, interactive = false) {
   const allowedMax = Math.min(MAX_BET, availableTotal);
 
   appendSelectableObeliskBricks(meter, obeliskState, allowedMax, interactive);
+  if (focusFirstBet) meter.querySelector('[data-id="pyramide-bet-1"]')?.setAttribute("data-tv-focus", "");
   appendObeliskBricks(meter, obeliskState.spent, "spent");
   card.append(meter);
 
@@ -873,10 +966,16 @@ function appendSelectableObeliskBricks(container, obeliskState, allowedMax, inte
     });
 
     if (isPickable) {
+      brick.dataset.id = `pyramide-bet-${targetBet}`;
+      brick.setAttribute("aria-label", t("chooseBricksAria", { count: targetBet }));
       brick.addEventListener("click", () => {
         playBetSound();
         state.round.currentBet = String(targetBet);
         render();
+        // On TV the remote goes on to Found; Left returns to the obelisk.
+        if (window.MuchogamesTv?.isOn()) {
+          document.querySelector('[data-id="pyramide-found-button"]')?.focus({ preventScroll: true });
+        }
       });
     }
 
@@ -899,6 +998,7 @@ function summaryCard(label, value) {
 
 function recapPanel() {
   const panel = createCard("section", "recap-panel");
+  panel.dataset.id = "pyramide-round-recap";
   const logList = createElement("div", { className: "log-list" });
 
   state.round.wordResults.forEach((entry, index) => {
@@ -937,44 +1037,50 @@ function nextRoundMessage() {
   return hasMoreRounds() ? t("nextRoundMessage") : t("deckFinished");
 }
 
+// The answer shows while the button is held, stays shown after a quick tap
+// (tap again to hide) and toggles with Enter / OK: never a long press only.
 function createHoldReveal({ label, value }) {
   const fragment = els.holdRevealTemplate.content.cloneNode(true);
   const container = fragment.querySelector(".hold-reveal");
   const buttonEl = fragment.querySelector(".hold-button");
   const valueEl = fragment.querySelector(".hold-value");
-  let pointerId = null;
-  let isPressed = false;
+  const hold = { pointerId: null, pressedAt: 0, latched: false, shown: false };
 
   const show = () => {
-    isPressed = true;
+    hold.shown = true;
     buttonEl.classList.add("is-active");
     buttonEl.textContent = t("releaseToHide");
     valueEl.textContent = value;
   };
 
   const hide = () => {
-    isPressed = false;
-    pointerId = null;
+    hold.shown = false;
+    hold.latched = false;
+    hold.pointerId = null;
     buttonEl.classList.remove("is-active");
     buttonEl.textContent = label;
-    valueEl.textContent = "������";
+    valueEl.textContent = "??????";
   };
 
   buttonEl.textContent = label;
+  buttonEl.dataset.id = "pyramide-reveal-button";
+  buttonEl.dataset.tvFocus = "";
+  valueEl.dataset.id = "pyramide-answer";
   buttonEl.addEventListener("contextmenu", (event) => event.preventDefault());
-  buttonEl.addEventListener("pointerdown", (event) => {
-    if (pointerId !== null) return;
-    pointerId = event.pointerId;
-    buttonEl.setPointerCapture(event.pointerId);
+  bindHoldPointer(buttonEl, hold, show, hide);
+  // Keyboard / remote click (no pointer): toggle.
+  buttonEl.addEventListener("click", (event) => {
+    if (event.detail !== 0) return;
+    if (hold.shown) {
+      hide();
+      return;
+    }
     show();
-  });
-
-  ["pointerup", "pointercancel", "pointerleave", "lostpointercapture"].forEach((eventName) => {
-    buttonEl.addEventListener(eventName, hide);
+    hold.latched = true;
   });
 
   const handleVisibilityChange = () => {
-    if (document.hidden && isPressed) hide();
+    if (document.hidden && hold.shown) hide();
   };
 
   window.addEventListener("blur", hide);
@@ -986,6 +1092,33 @@ function createHoldReveal({ label, value }) {
 
   container.dataset.holdReveal = "true";
   return container;
+}
+
+// Press shows the answer; a long press hides it on release, a quick tap keeps
+// it shown until the next press.
+function bindHoldPointer(buttonEl, hold, show, hide) {
+  buttonEl.addEventListener("pointerdown", (event) => {
+    if (hold.pointerId !== null) return;
+    if (hold.latched) {
+      hide();
+      return;
+    }
+    hold.pointerId = event.pointerId;
+    hold.pressedAt = Date.now();
+    buttonEl.setPointerCapture(event.pointerId);
+    show();
+  });
+  buttonEl.addEventListener("pointerup", () => {
+    if (hold.pointerId === null) return;
+    hold.pointerId = null;
+    if (Date.now() - hold.pressedAt < 350) hold.latched = true;
+    else hide();
+  });
+  ["pointercancel", "pointerleave", "lostpointercapture"].forEach((eventName) => {
+    buttonEl.addEventListener(eventName, () => {
+      if (hold.pointerId !== null && !hold.latched) hide();
+    });
+  });
 }
 
 function resolveTokenMatch(value, locale) {
@@ -1034,7 +1167,8 @@ function emptyState(text) {
   return createElement("div", { className: "empty-state", text });
 }
 
-function button(label, className, onClick, disabled = false) {
+// tvFocus marks the screen's main button for the TV remote.
+function button(label, className, onClick, disabled = false, dataId = "", tvFocus = false) {
   const element = createElement("button", {
     type: "button",
     className,
@@ -1042,10 +1176,8 @@ function button(label, className, onClick, disabled = false) {
   });
 
   element.disabled = disabled;
-  if (disabled) {
-    element.style.opacity = "0.45";
-    element.style.cursor = "not-allowed";
-  }
+  if (dataId) element.dataset.id = dataId;
+  if (tvFocus) element.dataset.tvFocus = "";
 
   element.addEventListener("click", onClick);
   return element;

@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="../../shared/css/game-header.css" />
     <link rel="stylesheet" href="../../shared/css/wordplayer.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="../../shared/js/tv-remote.js"></script>
   </head>
   <body class="game-body pyramide-body" data-match-saved>
     <div class="app-shell">
       <header class="game-nav">
         <div class="nav-side nav-left">
-          <a href="../../index.html" class="back-button" data-id="game-back-button" aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
+          <a href="../../index.html" class="back-button" data-id="game-back-button" data-tv-back aria-label="Retour"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a>
+          <button id="pyramide-quit-button" type="button" class="back-button" data-id="pyramide-quit-button" data-match-quit data-tv-back aria-label="Quitter la partie" hidden><span aria-hidden="true">✕</span></button>
         </div>
         <div class="nav-center">
           <img
             id="game-banner"
+            data-id="pyramide-banner"
             class="nav-banner"
             src="./data/images/banner.jpg"
             alt="Logo Pyramide"
@@ -31,8 +34,8 @@
             class="icon-button nav-reset"
             type="button"
             data-id="pyramide-restart-button"
-            data-match-quit
             aria-label="Nouvelle partie de Pyramide"
+            hidden
           >
             ↻
           </button>
@@ -58,7 +61,7 @@
         <div class="options-panel-sheet" role="dialog" aria-modal="true" aria-label="Options">
           <div class="options-panel-header">
             <span class="options-panel-title">Options</span>
-            <button type="button" class="options-panel-close" data-options-close aria-label="Fermer">×</button>
+            <button type="button" class="options-panel-close" data-options-close data-id="pyramide-options-close" aria-label="Fermer">×</button>
           </div>
           <div class="options-panel-body">
             <div class="options-panel-section" data-id="game-options-language">
@@ -75,7 +78,7 @@
 
       <div class="status-strip" id="statusStrip" aria-live="polite"></div>
 
-      <main class="game-layout" id="gameLayout">
+      <main class="game-layout" id="gameLayout" data-id="pyramide-shell">
         <section class="public-stage card" id="publicStage" aria-labelledby="publicTitle">
           <h2 id="publicTitle" class="sr-only">Chargement...</h2>
           <div id="publicContent" class="public-content"></div>

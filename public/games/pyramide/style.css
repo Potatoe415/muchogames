@@ -58,12 +58,29 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+/* Shared .back-button / .icon-button display rules must not beat [hidden]. */
+[hidden] {
+  display: none !important;
+}
+
+/* Mobile first (360px phone). The page never scrolls: the shell fills the
+   dynamic viewport and keeps the Android bars / edge gestures clear. */
+.pyramide-body {
+  height: 100dvh;
+  min-height: 0;
+  overscroll-behavior: none;
+}
+
 .app-shell {
   position: relative;
-  min-height: 100dvh;
-  padding: 12px;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 8px max(24px, env(safe-area-inset-right, 0px))
+    max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
+    max(24px, env(safe-area-inset-left, 0px));
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .app-shell::before {
@@ -84,7 +101,9 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 8px 12px;
+  flex: 0 0 auto;
+  height: auto;
+  padding: 6px 10px;
 }
 
 .nav-side {
@@ -124,7 +143,9 @@ button:focus-visible {
 }
 
 .nav-banner {
-  max-height: 52px;
+  display: block;
+  max-width: 100%;
+  max-height: 44px;
   border-radius: 8px;
   border: var(--border-mid);
   background: var(--card-bg);
@@ -160,11 +181,11 @@ button:focus-visible {
 
 .game-layout {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   gap: 12px;
-  padding: 10px;
-  border: 8px solid var(--border-hieroglyph);
+  padding: 6px;
+  border: 6px solid var(--border-hieroglyph);
   background: rgba(245, 245, 220, 0.35);
   box-shadow: var(--shadow-hard-lg);
   flex: 1;
@@ -182,8 +203,8 @@ button:focus-visible {
 .secret-content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 14px;
+  gap: 8px;
+  padding: 8px;
 }
 
 .public-stage {
@@ -195,31 +216,83 @@ button:focus-visible {
 .public-stage .public-content {
   flex: 1;
   min-height: 0;
+}
+
+/* Dashboard: splash image shrinks to the room left by the buttons. */
+.splash-shell {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.splash-shell .splash-image {
+  flex: 0 1 auto;
+  min-height: 0;
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+}
+
+.splash-actions {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* In a match: one grid of areas. Portrait stacks them; the text areas
+   scroll inside themselves if a long clue/recap needs it, never the page. */
+.play-screen {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  grid-template-areas: "teams" "clue" "main" "cta";
+  gap: 8px;
+}
+
+.play-screen.phase-word {
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  grid-template-areas: "teams teams" "clue clue" "main side" "cta cta";
+}
+
+.play-screen.phase-summary {
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+  grid-template-areas: "teams" "clue" "main" "side" "cta";
+}
+
+.play-screen.phase-setup,
+.play-screen.phase-over {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas: "teams" "clue" "cta";
+}
+
+.area-teams { grid-area: teams; }
+.area-clue { grid-area: clue; }
+.area-main { grid-area: main; }
+.area-side { grid-area: side; }
+.area-cta { grid-area: cta; }
+
+.area-main,
+.area-side,
+.phase-setup .area-clue,
+.phase-over .area-clue {
+  min-height: 0;
   overflow-y: auto;
 }
 
-.public-stage.is-splash {
-  min-height: calc(100dvh - 110px);
-}
-
-.public-stage.is-splash .public-content {
-  min-height: calc(100dvh - 150px);
-  justify-content: center;
-  align-items: center;
-}
-
-/* Splash screen: let content fill viewport without scrolling */
-.public-stage.is-splash .public-content {
-  flex: 1;
-  max-height: none;
-  overflow: hidden;
-}
-
-.splash-shell {
-  width: min(100%, 960px);
-  display: grid;
-  gap: 14px;
-  justify-items: center;
+.phase-setup .area-clue,
+.phase-over .area-clue {
+  align-self: center;
+  max-height: 100%;
 }
 
 .splash-logo {
@@ -234,7 +307,6 @@ button:focus-visible {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 62dvh;
   object-fit: contain;
   border: none;
   box-shadow: var(--shadow-hard);
@@ -249,8 +321,8 @@ button:focus-visible {
 
 .team-strip {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .team-chip,
@@ -265,10 +337,6 @@ button:focus-visible {
   border: var(--border-mid);
   background: var(--card-bg);
   box-shadow: var(--shadow-hard);
-}
-
-.clue-card {
-  min-width: 400px;
 }
 
 .word-card {
@@ -290,21 +358,21 @@ button:focus-visible {
 .recap-panel,
 .warning-box,
 .empty-state {
-  padding: 14px;
+  padding: 8px 10px;
 }
 
 .team-chip {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
-  padding: 14px 16px;
-  min-width: 150px;
+  gap: 2px;
+  padding: 6px 10px;
+  min-width: 0;
 }
 
 .team-chip.active {
   background: var(--logo-yellow);
-  padding: 8px 12px;
+  padding: 6px 10px;
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
@@ -404,18 +472,11 @@ button:focus-visible {
   line-height: 1.15;
 }
 
-.play-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: stretch;
-  gap: 12px;
-  border: none;
-}
-
+/* wordplayer.css gives .word-card a 250px min-height: not here. */
 .word-card {
-  min-width: 200px;
+  min-height: 0;
+  min-width: 0;
   max-width: 100%;
-  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -469,17 +530,17 @@ button:focus-visible {
 
 .obelisk-card {
   justify-self: end;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 8px 14px;
-  padding: 12px;
+  display: flex;
+  min-height: 0;
+  padding: 0 4px 4px 0;
   border: none;
 }
 
+/* The obelisk fills its area's height: 13 bricks share it. */
 .obelisk-counter {
-  width: 50px;
-  height: 360px;
+  width: 48px;
+  height: 100%;
+  min-height: 180px;
   display: flex;
   flex-direction: column-reverse;
   border: 4px solid var(--obelisk-frame);
@@ -563,17 +624,38 @@ button:focus-visible {
   gap: 12px;
 }
 
-.action-row {
+.action-row,
+.final-actions {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.final-actions .hold-reveal {
+  grid-column: 1 / -1;
+}
+
+.final-actions {
+  gap: 8px;
 }
 
 .summary-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.summary-card {
+  padding: 6px 8px;
+}
+
+.summary-card .summary-label {
+  margin-bottom: 4px;
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
 }
 
 .summary-score {
   display: block;
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(1rem, 4vw, 2rem);
+  overflow-wrap: anywhere;
 }
 
 .primary-button,
@@ -581,8 +663,8 @@ button:focus-visible {
 .success-button,
 .danger-button,
 .hold-button {
-  min-height: 56px;
-  padding: 12px 16px;
+  min-height: 48px;
+  padding: 8px 14px;
   border: var(--border-mid);
   color: var(--ink-black);
   box-shadow: var(--shadow-hard);
@@ -617,7 +699,8 @@ button:focus-visible {
 
 .hold-reveal {
   display: grid;
-  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
 }
 
 .hold-button.is-active {
@@ -625,10 +708,10 @@ button:focus-visible {
 }
 
 .hold-value {
-  min-height: 82px;
+  min-height: 48px;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 6px;
   text-align: center;
   border: var(--border-mid);
   background: var(--ink-black);
@@ -637,7 +720,7 @@ button:focus-visible {
 }
 
 .final-text {
-  font-size: clamp(1.4rem, 5vw, 2.5rem);
+  font-size: clamp(1.1rem, 4.6vw, 2.5rem);
   line-height: 1.2;
 }
 
@@ -692,56 +775,222 @@ button:focus-visible {
   border: 0;
 }
 
-@media (max-width: 720px) {
+.lang-btn {
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+.log-item {
+  padding: 6px 10px;
+}
+
+.recap-panel .log-list {
+  gap: 6px;
+}
+
+/* Landscape (phones ~360px tall up to a TV): text left, controls right. */
+@media (orientation: landscape) {
+  .play-screen.phase-word {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 0.55fr);
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas: "teams side cta" "clue side cta" "main side cta";
+  }
+
+  .play-screen.phase-final {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas: "teams cta" "clue cta" "main cta";
+  }
+
+  .play-screen.phase-summary {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    grid-template-areas: "teams side" "clue side" "main side" "main cta";
+  }
+
+  .phase-word .action-row,
+  .phase-final .final-actions,
+  .phase-final .hold-reveal {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+  }
+
+  .phase-final .area-cta {
+    align-self: center;
+  }
+}
+
+/* Landscape phones (~360px tall): a slimmer frame and header. */
+@media (orientation: landscape) and (max-height: 500px) {
   .app-shell {
-    padding: 10px;
+    padding-top: 4px;
+    gap: 4px;
   }
 
-  .app-shell::before {
-    inset: 4px;
-    border-width: 4px;
+  .app-shell::before,
+  .game-layout {
+    border-width: 3px;
   }
 
-  .public-stage.is-splash {
-    min-height: calc(100dvh - 84px);
+  .game-nav {
+    padding: 2px 10px;
   }
 
-  .public-stage.is-splash .public-content {
-    min-height: calc(100dvh - 130px);
-    padding: 12px;
+  .icon-button,
+  .back-button,
+  .options-button {
+    width: 36px;
+    height: 36px;
   }
 
-  .splash-image {
-    max-height: 52dvh;
+  .nav-banner {
+    max-height: 32px;
   }
 
-  .language-grid,
-  .action-row,
-  .summary-grid {
-    grid-template-columns: 1fr;
+  .game-layout {
+    padding: 4px;
   }
 
-  .obelisk-card {
-    justify-self: start;
+  .public-content {
+    padding: 6px;
+  }
+
+  .clue-text {
+    font-size: 1.15rem;
+  }
+
+  .word-display {
+    font-size: 1.6rem;
+  }
+
+  .final-text {
+    font-size: 1.1rem;
+  }
+
+  .summary-score,
+  .hold-value {
+    font-size: 1.1rem;
+  }
+
+  .team-name {
+    font-size: 0.95rem;
+  }
+
+  .team-points {
+    font-size: 0.85rem;
   }
 
   .obelisk-counter {
-    width: 50px;
-    height: 280px;
+    min-height: 0;
+  }
+
+  .obelisk-counter .brick.remaining,
+  .obelisk-counter .brick.reserved,
+  .obelisk-counter .brick.spent {
+    border-width: 2px;
   }
 }
 
-.lang-btn {
-  font-size: 0.7rem;
-  padding: 1px 2px;
+/* Desktop and TV, 960x540 up to 3840x2160: sizes follow the screen and
+   everything stays 3% away from the edges (TV overscan). */
+@media (min-width: 960px) and (min-height: 500px) {
+  .app-shell {
+    padding: 3dvh max(3vw, env(safe-area-inset-right, 0px)) max(40px, 5dvh)
+      max(3vw, env(safe-area-inset-left, 0px));
+    gap: 1.5dvh;
+    font-size: max(1rem, 2.4dvh);
+  }
+
+  .game-nav {
+    padding: 1dvh 1.5vw;
+  }
+
+  .back-button,
+  .options-button,
+  .icon-button {
+    width: max(36px, 6dvh);
+    height: max(36px, 6dvh);
+    font-size: max(1rem, 3dvh);
+  }
+
+  .back-button svg,
+  .options-button svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .nav-banner {
+    max-height: max(45px, 7dvh);
+  }
+
+  .public-content {
+    padding: 1.5dvh;
+  }
+
+  .play-screen,
+  .team-strip,
+  .summary-grid,
+  .action-row,
+  .final-actions,
+  .hold-reveal {
+    gap: 1.5dvh;
+  }
+
+  .team-name {
+    font-size: 3dvh;
+  }
+
+  .team-points,
+  .info-label,
+  .helper-text,
+  .text-block,
+  .log-item,
+  .summary-card .summary-label {
+    font-size: 2.4dvh;
+  }
+
+  .clue-text {
+    font-size: 4.4dvh;
+  }
+
+  .word-display {
+    font-size: 8dvh;
+  }
+
+  .final-text {
+    font-size: 4.4dvh;
+  }
+
+  .summary-score,
+  .hold-value {
+    font-size: 4dvh;
+  }
+
+  .primary-button,
+  .secondary-button,
+  .success-button,
+  .danger-button,
+  .hold-button {
+    min-height: 7dvh;
+    padding: 1dvh 2vw;
+    font-size: 2.8dvh;
+  }
+
+  .hold-value {
+    min-height: 7dvh;
+  }
+
+  .obelisk-counter {
+    width: 7dvh;
+  }
+
+  .lang-btn {
+    font-size: max(1rem, 2.4dvh);
+  }
 }
 
-@media (max-width: 400px) {
-  .play-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .obelisk-card {
-    justify-self: start;
-  }
+/* TV remote focus ring, all sizes. */
+html.tv :focus {
+  outline: max(4px, 0.5dvh) solid var(--logo-blue);
+  outline-offset: max(3px, 0.4dvh);
 }
