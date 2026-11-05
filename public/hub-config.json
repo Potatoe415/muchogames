@@ -455,5 +455,16 @@
     "thumbnail": "/games/piou/assets/thumbnail.svg",
     "players": [1, 1],
     "duration": 3
+  },
+  {
+    "id": "connectfour",
+    "title": "4 en ligne",
+    "kind": "custom",
+    "tags": ["reflexion"],
+    "added": "2026-11-05",
+    "launch": "/games/connectfour/index.html",
+    "thumbnail": "/games/connectfour/assets/thumbnail.svg",
+    "players": [2, 2],
+    "duration": 5
   }
 ]
