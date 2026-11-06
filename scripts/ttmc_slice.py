@@ -3,8 +3,8 @@
 Usage (from the repo root, needs Pillow, numpy, scipy):
     python scripts/ttmc_slice.py [--src tmp-resources/ttmc] [--out public/games/ttmc/assets]
 
-Source: one sheet of assets on white (meadow scene, theme medallions, acorn
-characters). The board tiles are hand-made SVGs (assets/icons/): the mockup tiles are
+Sources, on white: the asset sheet (meadow scene, theme medallions, the
+first 4 acorn characters) and the sheet of 4 extra acorns (teams 5-8). The board tiles are hand-made SVGs (assets/icons/): the mockup tiles are
 too small to stay sharp on a 4K TV.
 """
 
@@ -17,11 +17,13 @@ from scipy import ndimage
 
 ROOT = Path(__file__).resolve().parent.parent
 SHEET = "Gemini_Generated_Image_wsqj7hwsqj7hwsqj.jpg"
+EXTRA_SHEET = "Gemini_Generated_Image_8ofjy28ofjy28ofj.jpg"
 QUALITY = 88
 
 # Sprites on the white sheet: name -> a point inside the sprite.
 MEDALLIONS = ["improbable", "mature", "plaisir", "scolaire", "challenge", "superbe", "debuter", "gagner"]
 TOKENS = {"token-red": (420, 1450), "token-blue": (810, 1450), "token-yellow": (1250, 1450), "token-purple": (1670, 1450)}
+EXTRA_TOKENS = {"token-orange": (500, 760), "token-green": (1390, 830), "token-pink": (2240, 830), "token-brown": (3120, 830)}
 
 
 
@@ -94,6 +96,11 @@ def main():
         save(cut_sprite(sheet, labels, point, 240), out / "medallions" / f"{name}.webp")
     for name, point in TOKENS.items():
         save(cut_sprite(sheet, labels, point, 400), out / f"{name}.webp")
+
+    extra = Image.open(src / EXTRA_SHEET).convert("RGB")
+    extra_labels = sprite_masks(extra)
+    for name, point in EXTRA_TOKENS.items():
+        save(cut_sprite(extra, extra_labels, point, 400), out / f"{name}.webp")
 
 
 

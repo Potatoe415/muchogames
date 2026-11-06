@@ -4,7 +4,7 @@
 const SAVE_KEY = 'muchogames_ttmc_save';
 const VERSION = 1;
 const STEPS = ['eval', 'question', 'answer'];
-const MAX_TEAMS = 4;
+const MAX_TEAMS = 8;
 
 const isInt = (value, min, max) => Number.isInteger(value) && value >= min && value <= max;
 

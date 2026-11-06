@@ -398,7 +398,7 @@
     "launch": "/games/ttmc/index.html",
     "thumbnail": "/games/ttmc/assets/thumbnail.jpg",
     "resumable": true,
-    "players": [2, 4],
+    "players": [2, 8],
     "duration": 45
   },
   {

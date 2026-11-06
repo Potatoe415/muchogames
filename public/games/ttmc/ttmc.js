@@ -6,7 +6,7 @@ import { clearMatch, loadMatch, storeMatch } from './store.js';
 
 const GAME_ID = 'ttmc';
 const LANG_KEY = 'bergamots-lang';
-const MAX_TEAMS = 4;
+const MAX_TEAMS = 8;
 const TIMER_SECONDS = 30;
 // Token walk after a move: one space per step, the whole walk in about
 // WALK_MS, each step between STEP_MIN_MS and STEP_MAX_MS.
@@ -31,7 +31,9 @@ const LAST = BOARD_TRACK.length - 1;
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 // Art in ./assets (cut by scripts/ttmc_slice.py; icons/ drawn by hand).
-const TOKEN_ART = ['red', 'blue', 'yellow', 'purple'].map((c) => `./assets/token-${c}.webp`);
+const TOKEN_ART = ['red', 'blue', 'yellow', 'purple', 'orange', 'green', 'pink', 'brown'].map(
+  (c) => `./assets/token-${c}.webp`
+);
 const ICON_THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire', 'Challenge', 'Superbe'];
 
 const page = {
@@ -119,6 +121,8 @@ function renderTeamInputs() {
       return row;
     })
   );
+  // Past 4 teams the list goes to two columns (1-4, then 5-8).
+  list.classList.toggle('is-two-columns', page.count > 4);
   $('ttmc-add-team-btn').hidden = page.count >= MAX_TEAMS;
 }
 
@@ -236,9 +240,17 @@ function renderBoard() {
       token.alt = team.name;
       tokens.appendChild(token);
     });
+    fitTokens(tokens);
     space.append(art, badge, tokens);
     track.appendChild(space);
   });
+}
+
+// Up to 4 tokens on a space share one overlapping row; more take two rows.
+function fitTokens(tokens) {
+  const count = tokens.children.length;
+  tokens.style.setProperty('--n', String(Math.max(1, count)));
+  tokens.classList.toggle('is-crowded', count > 4);
 }
 
 function tokenPos(team) {
@@ -404,7 +416,10 @@ function stepToken(walk, stepMs) {
   const target = $(`ttmc-space-${walk.pos}`)?.querySelector('.space-tokens');
   if (!token || !target) return;
   const before = token.getBoundingClientRect();
+  const source = token.parentElement;
   target.append(token);
+  fitTokens(source);
+  fitTokens(target);
   const after = token.getBoundingClientRect();
   const dx = before.left - after.left;
   const dy = before.top - after.top;

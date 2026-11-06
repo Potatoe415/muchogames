@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: TTMC: tokens now walk space by space after a move; before that, the meadow art reskin (acorn tokens, theme medallions, parchment cards). Before: 4 en ligne (`connectfour`), Scrabble hint scoring, Simon Normal without ☰ pause, Hub Home "Les plus joués" (decision 0062), Easy Frog, game rules rewrite (decision 0061), Piou, Simon Easy, Tetris, TTMC.
+Status: TTMC: up to 8 teams with 4 more acorns; before that, tokens walking space by space and the meadow art reskin (acorn tokens, theme medallions, parchment cards). Before: 4 en ligne (`connectfour`), Scrabble hint scoring, Simon Normal without ☰ pause, Hub Home "Les plus joués" (decision 0062), Easy Frog, game rules rewrite (decision 0061), Piou, Simon Easy, Tetris, TTMC.
 Focus: Owner play-tests of TTMC's new look, 4 en ligne, Easy Frog, Piou, Simon, Tetris, then 2048 and Fusion de fruits; owner phone check of the hub.
 Level: L1 (one game)
 
@@ -34,7 +34,7 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-06 TTMC up to 8 teams (hub `players` [2, 8]): 4 extra acorns (orange, green, pink, brown) cut from `tmp-resources/ttmc/`, dashboard in two columns past 4 teams, 5-8 tokens on one space in two rows. Headless Edge at 320×568, 360×740, 740×360, 960×540, 1920×1080: 8-team dashboard fits (no scroll, no clipped panel), 8 tokens on one space, walk of team 5, team 8 wins with its acorn, remote Down through the 8 names to Start. `npm run check` OK.
 - 2026-11-06 TTMC token walk: after a right answer or a Challenge / Superbe move, the team's acorn hops space by space to its new space (about 1.8 s, backwards too), banner on the moving team, draw button hidden until it lands; arrival saved first. Headless Edge: 1 -> 8 step by step, draw ignored mid-walk, reload mid-walk resumes on the arrival space, reduced motion jumps at once. `npm run check` OK.
 - 2026-11-06 TTMC look from `tmp-resources/ttmc/`: meadow background, parchment dashboard / card / win panels, acorn characters as team tokens (current team hops), theme medallion in the card band and on start / end spaces, pastel tiles with SVG line icons, wooden rating discs, orange timer gauge. Game logic and save unchanged. Headless Edge (CDP; Chrome debugging is blocked by policy) at 360×740, 740×360, 960×540, 1920×1080, 3840×2160: dashboard (4 teams), Débuter, board, rating, question, answer, win; no page scroll, no clipped panel. `npm run check` OK.
 - 2026-11-05 4 en ligne (`connectfour`, Connect Four): hot-seat Red vs Yellow, 7×6, full columns refused, win (4+ in any direction, line highlighted) / draw, Rejouer / Menu, save = move list, `finish({})`; hub entry (Réflexion, 2 players, 5 min). Node rule checks + headless Chromium (CDP) from 320×568 to 3840×2160 and `?tv=1`: hub tile, play, reject, resume, quit, all wins, draw, keyboard, FR/EN/ES, no scroll, margins. `npm run check` OK.
-- 2026-11-05 Scrabble hint display: the laid-out word shows its real score (board bubble + guide, e.g. "GRENU · 16 pts · indice utilisé"); Jouer stays +0 and the played score stays 0. Browser: hint 16 on the word, +0 on Jouer, player score 0 after play, computer then scored 10. `npm run check` OK.

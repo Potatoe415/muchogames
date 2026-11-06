@@ -125,8 +125,12 @@ body {
 }
 
 .setup-hero img {
-  height: 3.6rem;
-  width: auto;
+  flex: 0 1 auto;
+  min-width: 0;
+  height: 3rem;
+  max-width: 12.5%;
+  object-fit: contain;
+  margin: 0 -0.15rem;
 }
 
 .setup-hero img:nth-child(odd) {
@@ -154,6 +158,84 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+/* 5 to 8 teams: 1-4 in the left column, 5-8 in the right one, so Up /
+   Down still follow the page order. */
+.setup-card:has(.is-two-columns) {
+  width: min(100%, 34em);
+}
+
+/* On a narrow phone, 5-8 teams stay in one column of shorter rows when
+   the screen is tall enough; a short one (320x568) keeps two compact
+   columns, below. */
+@media (max-width: 480px) and (orientation: portrait) and (min-height: 700px) {
+  .setup-card .teams-list.is-two-columns {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .is-two-columns .team-input-row input {
+    min-height: 2.4rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .setup-card:has(.is-two-columns) .setup-hero {
+    display: none;
+  }
+
+  .setup-card:has(.is-two-columns) .setup-title {
+    font-size: 1.3rem;
+  }
+}
+
+.teams-list.is-two-columns {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 0.4rem 0.6rem;
+}
+
+.is-two-columns .team-avatar {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.is-two-columns .team-input-row {
+  gap: 0.3rem;
+}
+
+.is-two-columns .team-input-row input {
+  padding: 0.5rem 0.6rem;
+}
+
+@media (max-width: 480px) {
+  .teams-list.is-two-columns {
+    gap: 0.3rem 0.4rem;
+  }
+
+  .is-two-columns .team-avatar {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .is-two-columns .team-input-row {
+    gap: 0.15rem;
+  }
+
+  .is-two-columns .team-input-row input {
+    padding: 0.4rem 0.45rem;
+    font-size: 0.9rem;
+  }
+
+  .setup-card:has(.is-two-columns) {
+    padding: 0.75rem 0.9rem 1rem;
+  }
+
+  .setup-card:has(.is-two-columns) .setup-hero {
+    display: none;
+  }
 }
 
 .team-input-row {
@@ -306,8 +388,27 @@ body {
   filter: drop-shadow(0 calc(var(--cell) * 0.03) 0 rgba(59, 42, 26, 0.5));
 }
 
+/* Overlap so n tokens of 60% fill at most the tile's width. */
 .team-token + .team-token {
-  margin-left: -40%;
+  margin-left: calc(min(20%, 40% / max(1, var(--n) - 1)) - 60%);
+}
+
+/* 5 to 8 tokens: two rows of four, each token overlapping its neighbours. */
+.space-tokens.is-crowded {
+  inset: 4%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  place-items: center;
+}
+
+.is-crowded .team-token {
+  width: 180%;
+  max-width: none;
+}
+
+.is-crowded .team-token + .team-token {
+  margin-left: 0;
 }
 
 /* The walking token passes over the next tiles, backwards too. */
@@ -656,6 +757,19 @@ html.tv :focus {
     grid-column: 2;
     grid-row: 2 / span 4;
     gap: 0.35rem;
+  }
+
+  .teams-list.is-two-columns {
+    gap: 0.25rem 0.5rem;
+  }
+
+  .is-two-columns .team-input-row input {
+    min-height: 2.4rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .setup-card:has(.is-two-columns) {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   }
 
   /* Win: the medallion left, the name and buttons right. */
