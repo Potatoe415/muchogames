@@ -52,33 +52,102 @@ function drawSegments(svg, themeClass) {
   svg.append(svgNode('circle', { r: 16, class: 'wheel-hub' }));
 }
 
-// el: the rotating element. spin() resolves with the theme under the
-// pointer once the wheel stops.
-export function createWheel(el, themeClass) {
+// A swipe faster than MIN_FLING (degrees per ms) spins the wheel; its
+// speed (capped at MAX_FLING) sets how long and how far it turns.
+const MIN_FLING = 0.25;
+const MAX_FLING = 3;
+const DRAG_START_PX = 8;
+
+const norm = (deg) => ((deg % 360) + 360) % 360;
+const themeAt = (angle) => WHEEL_THEMES[Math.round(norm(-angle) / SEGMENT) % WHEEL_THEMES.length];
+
+// el: the rotating element. spin() turns it from the button; a swipe on it
+// calls onFling(promise) with the same result. Both resolve with the theme
+// under the pointer once the wheel stops.
+export function createWheel(el, themeClass, { canSpin = () => true, onFling = () => {} } = {}) {
   const svg = svgNode('svg', { viewBox: '-100 -100 200 200', 'aria-hidden': 'true' });
   drawSegments(svg, themeClass);
   el.replaceChildren(svg);
   let angle = 0;
+  let busy = false;
 
-  function spin(reducedMotion) {
-    const index = Math.floor(Math.random() * WHEEL_THEMES.length);
-    // Land inside the segment, never on a border.
+  const show = (deg) => (el.style.transform = `rotate(${deg}deg)`);
+
+  // Turns by about `distance` degrees in `duration` ms, slowing down to a
+  // stop in the middle of a segment (never on a border).
+  function turn(distance, duration, easing = 'cubic-bezier(0.12, 0.8, 0.22, 1)') {
+    const raw = angle + distance;
+    const centre = Math.round(raw / SEGMENT) * SEGMENT;
     const jitter = (Math.random() - 0.5) * SEGMENT * 0.7;
-    const wanted = (((-index * SEGMENT + jitter) % 360) + 360) % 360;
-    const delta = (((wanted - angle) % 360) + 360) % 360;
-    const target = angle + delta + (reducedMotion ? 0 : TURNS * 360);
+    const target = centre + jitter;
     const animation = el.animate([{ transform: `rotate(${angle}deg)` }, { transform: `rotate(${target}deg)` }], {
-      duration: reducedMotion ? 250 : SPIN_MS,
-      easing: 'cubic-bezier(0.12, 0.8, 0.22, 1)',
+      duration,
+      easing,
       fill: 'forwards'
     });
-    angle = target % 360;
+    busy = true;
     return animation.finished.then(() => {
-      el.style.transform = `rotate(${angle}deg)`;
+      angle = norm(target);
+      show(angle);
       animation.cancel();
-      return WHEEL_THEMES[index];
+      busy = false;
+      return themeAt(angle);
     });
   }
 
-  return { spin };
+  function spin(reducedMotion) {
+    if (reducedMotion) return turn(Math.random() * 360, 250);
+    return turn(TURNS * 360 + Math.random() * 360, SPIN_MS);
+  }
+
+  // Drag: the wheel follows the finger around its centre; the speed of the
+  // last ~100 ms decides the fling on release.
+  let drag = null;
+  const pointerAngle = (event) => {
+    const box = el.getBoundingClientRect();
+    const x = event.clientX - (box.left + box.width / 2);
+    const y = event.clientY - (box.top + box.height / 2);
+    return (Math.atan2(x, -y) * 180) / Math.PI;
+  };
+
+  el.addEventListener('pointerdown', (event) => {
+    if (busy || !canSpin()) return;
+    el.setPointerCapture(event.pointerId);
+    const a = pointerAngle(event);
+    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, moved: false, last: a, start: angle, turned: 0, samples: [{ t: event.timeStamp, turned: 0 }] };
+  });
+
+  el.addEventListener('pointermove', (event) => {
+    if (!drag || event.pointerId !== drag.id) return;
+    if (!drag.moved && Math.hypot(event.clientX - drag.x, event.clientY - drag.y) < DRAG_START_PX) return;
+    drag.moved = true;
+    const a = pointerAngle(event);
+    drag.turned += ((a - drag.last + 540) % 360) - 180;
+    drag.last = a;
+    drag.samples.push({ t: event.timeStamp, turned: drag.turned });
+    while (drag.samples.length > 2 && event.timeStamp - drag.samples[0].t > 100) drag.samples.shift();
+    show(drag.start + drag.turned);
+  });
+
+  const release = (event) => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const { samples, start, turned, moved } = drag;
+    drag = null;
+    if (!moved) return;
+    angle = norm(start + turned);
+    const first = samples[0];
+    const last = samples[samples.length - 1];
+    const speed = last.t > first.t ? (last.turned - first.turned) / (last.t - first.t) : 0;
+    if (Math.abs(speed) < MIN_FLING) return show(angle);
+    const v = Math.sign(speed) * Math.min(MAX_FLING, Math.abs(speed));
+    // Constant slowdown from the finger's speed: a slow swipe turns about
+    // 2 s and two thirds of a turn, the fastest about 6 s and 25 turns. The
+    // ease-out curve starts at that speed, so the wheel does not jump.
+    const duration = 1500 + 1500 * Math.abs(v);
+    onFling(turn((v * duration) / 2, duration, 'cubic-bezier(0.33, 0.67, 0.67, 1)'));
+  };
+  el.addEventListener('pointerup', release);
+  el.addEventListener('pointercancel', release);
+
+  return { spin, isBusy: () => busy };
 }

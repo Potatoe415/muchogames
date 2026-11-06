@@ -11,7 +11,7 @@ move forward by the rating on a right answer. First team to answer the
 |---|---|
 | `ttcf.js` | Page shell and game: language, Game Dashboard (mode, teams, Resume, start), card dialog (eval / question / answer steps), wheel turn, win screen, `MuchogamesMatch.start/resume/finish`, TV focus. |
 | `board.js` | Board track (43 spaces), space and token drawing, token art, `walkToken` (space-by-space walk). |
-| `wheel.js` | Wheel mode: SVG wheel of 10 segments (the 4 themes twice, Challenge and Superbe once, the board's proportions), `spin()` resolves with the theme under the pointer. |
+| `wheel.js` | Wheel mode: SVG wheel of 10 segments (the 4 themes twice, Challenge and Superbe once, the board's proportions), `spin()` (button) and a swipe on the wheel (pointer events, `touch-action: none`: the wheel follows the finger; let go faster than 0.25 °/ms and it spins for `1.5 + 1.5 × speed` s, speed capped at 3 °/ms; slower, it just stays there) both resolve with the theme under the pointer. No swipe while it turns. |
 | `i18n.js` | FR/EN/ES interface copy and theme labels. The cards themselves are French only. |
 | `store.js` | `muchogames_ttcf_save`: `{ v: 1, match: { mode, teams: [{ id, name, pos }], cur, card } }` (`mode` `board` / `wheel`; a save without it loads as `board`), `card` = `{ index, theme, step, note, opening, timeLeft, move }` or `null`. Validated against the loaded cards on read; a bad save is dropped. `muchogames_ttcf_mode`: the last mode chosen on the dashboard. |
 | `ttcf.css` | Watercolour meadow skin (parchment panels, wooden and leaf buttons, pastel tiles) and layout: board 7x7 (portrait) or 11x4 (landscape), card dialog under the header, short-landscape two-column dashboard and win screen, TV sizes. |
@@ -21,6 +21,7 @@ move forward by the rating on a right answer. First team to answer the
 
 - Saved at match start, after every step (card drawn, rating, answer shown, stepper, turn end), every second of the 30 s timer, on `pagehide` and `visibilitychange`. Cleared only on the win screen.
 - Resume comes back on the same card and step; the timer goes on from its saved value.
+- Board tiles with a token lighten and fade their icon; each acorn has a white outline and a shadow; the playing team's tile has a gold ring and its acorn a gold glow.
 - Up to 8 teams. Dashboard: past 4 teams the list goes to two columns (1-4, 5-8, so Up / Down follow the team order); a tall narrow phone keeps one column instead. Board: up to 4 tokens on a space share one overlapping row, 5-8 take two rows (`fitTokens`).
 - A move walks the token space by space (`walkToken`, about 1.8 s in all, 70-200 ms a space, a small hop per space; backwards too). The arrival is saved before the walk starts, so `page.walk` is display only: leaving mid-walk resumes with the token on its arrival space. During the walk the banner keeps the moving team and the draw button is hidden. No walk with `prefers-reduced-motion`.
 - Débuter card (match start): an instruction, not a question, so it shows at once with its answer (italics) and only "Aller au plateau" / "À la roue" (no timer, no "Voir la réponse").

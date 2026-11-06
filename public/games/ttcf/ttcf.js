@@ -201,7 +201,10 @@ function renderMatch() {
   $('ttcf-board-area').hidden = wheel;
   $('ttcf-wheel-area').hidden = !wheel;
   if (wheel) {
-    page.wheel ??= createWheel($('ttcf-wheel'), themeClass);
+    page.wheel ??= createWheel($('ttcf-wheel'), themeClass, {
+      canSpin: () => Boolean(page.match && !page.match.card && !page.walk && !page.spinning),
+      onFling: (landing) => playSpin(landing)
+    });
     renderScores();
   } else renderBoard({ match: page.match, walk: page.walk, t, labels: THEME_LABELS[page.lang] });
   renderCard();
@@ -233,12 +236,17 @@ function renderScores() {
 // Spins, then draws a card of the theme it lands on (the Gagner card once
 // the team reached the end). Not saved until it lands: a reload mid-spin
 // just shows the wheel again.
-async function spinWheel() {
+function spinWheel() {
+  if (!page.match || page.match.card || page.walk || page.spinning || page.wheel.isBusy()) return;
+  playSpin(page.wheel.spin(reducedMotion()));
+}
+
+// landing: the wheel's promise (button or swipe), resolving with a theme.
+async function playSpin(landing) {
   const match = page.match;
-  if (!match || match.card || page.walk || page.spinning) return;
   page.spinning = true;
   $('ttcf-spin-btn').disabled = true;
-  const theme = await page.wheel.spin(reducedMotion());
+  const theme = await landing;
   page.spinning = false;
   $('ttcf-spin-btn').disabled = false;
   if (page.match !== match || match.card) return;

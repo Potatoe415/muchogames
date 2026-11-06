@@ -385,12 +385,35 @@ body {
   pointer-events: none;
 }
 
+/* An occupied tile lightens and its icon fades, so the acorn stands out. */
+.board-space:has(.team-token) {
+  background:
+    radial-gradient(ellipse at 50% 72%, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.45) 75%),
+    var(--tile);
+}
+
+.board-space:has(.team-token) .space-icon,
+.board-space:has(.team-token) .space-medallion {
+  opacity: 0.3;
+}
+
+/* The playing team's tile glows gold. */
+.board-space:has(.is-current) {
+  box-shadow:
+    0 0 0 max(2px, calc(var(--cell) * 0.04)) #ffd75e,
+    0 0 calc(var(--cell) * 0.3) rgba(255, 200, 60, 0.9);
+}
+
+/* White sticker outline and a shadow at the acorn's feet. */
 .team-token {
+  --line: max(1px, calc(var(--cell) * 0.018));
   width: 60%;
   height: auto;
   aspect-ratio: 1;
   object-fit: contain;
-  filter: drop-shadow(0 calc(var(--cell) * 0.03) 0 rgba(59, 42, 26, 0.5));
+  filter: drop-shadow(var(--line) 0 0 #fff) drop-shadow(calc(var(--line) * -1) 0 0 #fff)
+    drop-shadow(0 var(--line) 0 #fff) drop-shadow(0 calc(var(--line) * -1) 0 #fff)
+    drop-shadow(0 calc(var(--cell) * 0.04) calc(var(--cell) * 0.03) rgba(40, 25, 10, 0.6));
 }
 
 /* Overlap so n tokens of 60% fill at most the tile's width. */
@@ -428,6 +451,10 @@ body {
 .team-token.is-current {
   z-index: 1;
   animation: ttcf-hop 1.2s ease-in-out infinite;
+  filter: drop-shadow(var(--line) 0 0 #fff) drop-shadow(calc(var(--line) * -1) 0 0 #fff)
+    drop-shadow(0 var(--line) 0 #fff) drop-shadow(0 calc(var(--line) * -1) 0 #fff)
+    drop-shadow(0 0 calc(var(--cell) * 0.06) #ffd75e)
+    drop-shadow(0 calc(var(--cell) * 0.04) calc(var(--cell) * 0.03) rgba(40, 25, 10, 0.6));
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1226,4 +1253,14 @@ html.tv :focus {
   .wheel-score.is-current .wheel-score-token {
     animation: none;
   }
+}
+
+/* The wheel turns with a swipe: no page scroll or zoom on it. */
+.wheel {
+  touch-action: none;
+  cursor: grab;
+}
+
+.wheel:active {
+  cursor: grabbing;
 }
