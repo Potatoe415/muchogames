@@ -1,6 +1,6 @@
 # TTCF
 
-"Tu te crois fort ?": a party quiz for 2 to 8 teams on one device. Teams rate
+"Tu te crois fort ?": a party quiz for 2 to 8 teams (2 to 16 players) on one device. Teams rate
 themselves 1-10 on a card's subject, answer the question of that level, and
 move forward by the rating on a right answer. First team to answer the
 "Gagner" card on the last space wins.
@@ -24,6 +24,7 @@ move forward by the rating on a right answer. First team to answer the
 - Board tiles with a token lighten and fade their icon; each acorn has a white outline and a shadow; the playing team's tile has a gold ring and its acorn a gold glow.
 - Up to 8 teams. Dashboard: past 4 teams the list goes to two columns (1-4, 5-8, so Up / Down follow the team order); a tall narrow phone keeps one column instead. Board: up to 4 tokens on a space share one overlapping row, 5-8 take two rows (`fitTokens`).
 - A move walks the token space by space (`walkToken`, about 1.8 s in all, 70-200 ms a space, a small hop per space; backwards too). The arrival is saved before the walk starts, so `page.walk` is display only: leaving mid-walk resumes with the token on its arrival space. During the walk the banner keeps the moving team and the draw button is hidden. No walk with `prefers-reduced-motion`.
+- Every team starts on D (space 0); a move back stops on D. A team still on D draws one of the 4 categories at random (D has no theme). Rules checked against the publisher's video rules (owner, 2026-11-06).
 - Débuter card (match start): an instruction, not a question, so it shows at once with its answer (italics) and only "Aller au plateau" / "À la roue" (no timer, no "Voir la réponse").
 - Wheel mode ("Roue de la fortune", like Trivial Quizz): no board drawn; "Lancer la roue" spins (about 3.6 s), then a card of the landed theme is drawn and played as on the board. Teams still move 1 to 42 (progress bars); a team on 42 gets the Gagner card whatever the wheel shows. A spin is not saved until it lands. No token walk in this mode.
 - Card dialog, until the answer shows (not on Débuter): ✕ top right (`ttcf-card-close`, also TV Back) cancels the card, the same team draws or spins again; "Passer la question" (`ttcf-skip-btn`) draws another card of the same theme (never the same one twice in a row), same team, no move.

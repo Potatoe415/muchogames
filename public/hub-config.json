@@ -398,7 +398,7 @@
     "launch": "/games/ttcf/index.html",
     "thumbnail": "/games/ttcf/assets/thumbnail.jpg",
     "resumable": true,
-    "players": [2, 8],
+    "players": [2, 16],
     "duration": 45
   },
   {

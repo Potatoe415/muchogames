@@ -11,7 +11,7 @@ const MAX_TEAMS = 8;
 const isInt = (value, min, max) => Number.isInteger(value) && value >= min && value <= max;
 
 function validTeam(team, i, last) {
-  return team?.id === i && typeof team.name === 'string' && team.name.length <= 40 && isInt(team.pos, 1, last);
+  return team?.id === i && typeof team.name === 'string' && team.name.length <= 40 && isInt(team.pos, 0, last);
 }
 
 function validCard(card, cards, last) {

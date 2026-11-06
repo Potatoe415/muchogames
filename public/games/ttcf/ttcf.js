@@ -160,8 +160,8 @@ async function startMatch(names) {
   const started = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
   if (!started) return;
-  // Every team starts on case 1, after the Débuter card.
-  page.match = { mode: page.mode, teams: names.map((name, id) => ({ id, name, pos: 1 })), cur: 0, card: null };
+  // Every team starts on D; the Débuter card says which team plays first.
+  page.match = { mode: page.mode, teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
   showScreen('board');
   drawCard('Débuter', true);
 }
@@ -401,7 +401,7 @@ function endTurn(moveBy) {
   const from = team.pos;
   // Just dismissed the Débuter card: the first team now plays.
   if (!opening && team.pos >= LAST && moveBy > 0) return winMatch(team);
-  if (!opening && team.pos < LAST) team.pos = Math.min(LAST, Math.max(1, team.pos + moveBy));
+  if (!opening && team.pos < LAST) team.pos = Math.min(LAST, Math.max(0, team.pos + moveBy));
   if (!opening) match.cur = (match.cur + 1) % match.teams.length;
   save();
   if (team.pos !== from && !reducedMotion() && match.mode !== 'wheel') {

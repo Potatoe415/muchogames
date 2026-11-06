@@ -38,8 +38,11 @@ export function picture(src, className) {
   return img;
 }
 
+// The card a team draws on its space. D has no theme of its own: a team
+// still on it draws one of the 4 categories at random.
 export function spaceTheme(pos) {
   if (pos >= LAST) return 'Gagner';
+  if (pos <= 0) return THEMES[Math.floor(Math.random() * THEMES.length)];
   return BOARD_TRACK[pos] || 'Improbable';
 }
 
