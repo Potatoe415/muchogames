@@ -3,7 +3,7 @@
 // step (store.js), so leaving by any route brings it back from the dashboard.
 import { LAST, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
-import { clearMatch, loadMatch, readMode, storeMatch, storeMode } from './store.js';
+import { clearMatch, hasMatch, loadMatch, readMode, storeMatch, storeMode } from './store.js';
 import { createWheel } from './wheel.js';
 
 const GAME_ID = 'ttcf';
@@ -130,7 +130,12 @@ function renderDashboard() {
   const ready = page.cards.length > 0;
   $('ttcf-start-btn').disabled = !ready;
   $('ttcf-load-status').hidden = ready;
-  $('ttcf-resume-button').hidden = !ready || !loadMatch(page.cards, LAST);
+  // Resume shows (disabled) while the deck loads, so the acorn row, which
+  // makes room for it, never flashes in and out (see index.html).
+  const resume = $('ttcf-resume-button');
+  resume.hidden = !(ready ? loadMatch(page.cards, LAST) : hasMatch(LAST));
+  resume.disabled = !ready;
+  $('ttcf-setup-hero').hidden = false;
 }
 
 function showScreen(name) {
@@ -163,6 +168,8 @@ async function startMatch(names) {
   // Every team starts on D; the Débuter card says which team plays first.
   page.match = { mode: page.mode, teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
   showScreen('board');
+  // The new match's board, not the last one's tokens, under the Débuter card.
+  renderMatch();
   drawCard('Débuter', true);
 }
 
