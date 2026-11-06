@@ -35,7 +35,7 @@ not this folder. Pre-existing dead code, left untouched per `AGENTS.md`.
 |---|---|---|---|---|
 | `blackstories` | `public/games/blackstories/` | `blackstories.js` (482), `blackstories.css` (463) — **over limit**, `blackstories-i18n.js` (40), `blackstories-save.js` | engine, header, profile | yes |
 | `olemains` | `public/games/olemains/` | 9 files incl. `save.js`, `i18n.js`, `play.css` (none >300) | engine, header, profile | yes |
-| `cafards` | `public/games/cafards/` | `game.js` (300), `save.js`, `i18n.js`, `board.js`, `setup.js`, `deck.js`, `board.css` (none >300) | header, profile | yes |
+| `cafards` | `public/games/cafards/` | `game.js` (302), `save.js`, `i18n.js`, `board.js`, `setup.js`, `deck.js`, `preload.js`, `board.css` | header, profile | yes |
 | `millionaire` | `public/games/millionaire/` | `app.js` (1416), `style.css` (1429) — **over limit**, `save.js`; shared `tv-remote.js` + zoomed TV layout in `tv.js`, `tv.css`, `tv-game.css` | engine, header, profile | yes |
 | `pyramide` | `public/games/pyramide/` | `app.js` (1209), `style.css` (996), `i18n.js` (336) — **over limit**, `save.js`; shared `tv-remote.js` | header, profile | yes |
 | `pipedream` | `public/games/pipedream/` | 16 ES modules, ~1,810 total (none >300; `styles.css` 430, `index.html` 339 over); `main.js` entry | header, session | yes |

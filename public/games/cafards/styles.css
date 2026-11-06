@@ -21,7 +21,7 @@ body {
   background: radial-gradient(circle at top, #fff8d7, transparent 30%), radial-gradient(circle at bottom right, #c9e7a6, transparent 25%), linear-gradient(180deg, var(--bg1), var(--bg2));
 }
 body.mode-setup {
-  background: linear-gradient(#fff8d799, #d5ebb5aa), url("assets/background.jpg") center/cover no-repeat;
+  background: linear-gradient(#fff8d799, #d5ebb5aa), url("assets/background.webp") center/cover no-repeat;
 }
 body.mode-game {
   background: radial-gradient(circle at center, #ffffff12, transparent 35%), linear-gradient(180deg, #7ca14b, #527331 55%, #476428);
@@ -140,6 +140,8 @@ button, input { font: inherit; }
 }
 .resume-btn { background: linear-gradient(180deg, #fffdf4, #efe2c2); border-color: #9daa7f; box-shadow: 0 0.4rem 0.8rem #00000024; }
 .start-btn:active, .step:active, .toggle-btn:active { transform: scale(0.97); }
+.start-btn:disabled { opacity: 0.6; cursor: progress; }
+.setup-loading { margin: 0; font-weight: 700; text-align: center; }
 .setup-error { margin: 0; color: var(--error); font-weight: 700; text-align: center; }
 
 .winner-overlay {

@@ -81,7 +81,7 @@
     "tags": ["cartes", "soiree"],
     "added": "2026-03-10",
     "launch": "/games/cafards/index.html",
-    "thumbnail": "/games/cafards/assets/background.jpg",
+    "thumbnail": "/games/cafards/assets/thumbnail.webp",
     "players": [2, 6],
     "duration": 15
   },
