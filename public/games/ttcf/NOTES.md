@@ -21,6 +21,7 @@ move forward by the rating on a right answer. First team to answer the
 
 - Saved at match start, after every step (card drawn, rating, answer shown, stepper, turn end), every second of the 30 s timer, on `pagehide` and `visibilitychange`. Cleared only on the win screen.
 - Resume comes back on the same card and step; the timer goes on from its saved value.
+- First open of the page: Resume is decided from the save before the 1.3 MB deck loads (`hasMatch`, the card index unchecked), shown disabled until the deck is in; the acorn row on the dashboard is `hidden` in the HTML until then, so the 8 acorns never flash before Resume pushes them out. A new match draws its board (all teams on D) before the Débuter card shows, never the last match's tokens.
 - Board tiles with a token lighten and fade their icon; each acorn has a white outline and a shadow; the playing team's tile has a gold ring and its acorn a gold glow.
 - Up to 8 teams. Dashboard: past 4 teams the list goes to two columns (1-4, 5-8, so Up / Down follow the team order); a tall narrow phone keeps one column instead. Board: up to 4 tokens on a space share one overlapping row, 5-8 take two rows (`fitTokens`).
 - A move walks the token space by space (`walkToken`, about 1.8 s in all, 70-200 ms a space, a small hop per space; backwards too). The arrival is saved before the walk starts, so `page.walk` is display only: leaving mid-walk resumes with the token on its arrival space. During the walk the banner keeps the moving team and the draw button is hidden. No walk with `prefers-reduced-motion`.
