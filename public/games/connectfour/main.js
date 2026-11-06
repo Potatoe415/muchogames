@@ -1,25 +1,37 @@
-// Page shell: language, options panel, Game Dashboard / match screens, save
-// and resume, match lifecycle (docs/PLATFORM_RULES.md). Two players share
-// the device, so finish() gets no `won` and no score. Rules in rules.js,
-// the grid in board.js.
+// Page shell: language, options panel, Game Dashboard (mode selector) /
+// match screens, save and resume, match lifecycle (docs/PLATFORM_RULES.md).
+// Player vs player shares the device, so finish() gets no `won`; against
+// the bot the player is Red and finish() gets `won` (no score). Rules in
+// rules.js, the bot in bot.js, the grid in board.js.
 import { createBoard } from "./board.js";
+import { chooseColumn } from "./bot.js";
 import { LANGS, translate } from "./i18n.js";
 import { ROWS, canDrop, drop, isOver, newMatch } from "./rules.js";
-import { clearMatch, loadMatch, storeMatch } from "./save.js";
+import { MODES, clearMatch, loadMatch, storeMatch } from "./save.js";
 
 const GAME_ID = "connectfour";
 const LANG_KEY = "bergamots-lang";
+const MODE_KEY = "muchogames_connectfour_mode";
 const COLORS = { 1: "red", 2: "yellow" };
+const HUMAN = 1;
+const BOT = 2;
+const BOT_DELAY_MS = 650;
+const MODE_LABELS = { pvp: "modePvp", easy: "modeEasy", normal: "modeNormal" };
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const page = {
   lang: readLang(),
+  mode: readMode(),
   match: null,
   saved: loadMatch(),
   notice: "",
-  starting: false
+  starting: false,
+  botTimer: 0
 };
 const t = (key, vars) => translate(page.lang, key, vars);
+const vsBot = (match) => match.mode !== "pvp";
+const botToPlay = (match) =>
+  vsBot(match) && !isOver(match) && match.turn === BOT;
 
 function readLang() {
   try {
@@ -28,6 +40,27 @@ function readLang() {
   } catch {
     return "fr";
   }
+}
+
+function readMode() {
+  try {
+    const saved = localStorage.getItem(MODE_KEY);
+    return MODES.includes(saved) ? saved : "pvp";
+  } catch {
+    return "pvp";
+  }
+}
+
+// Only on the Game Dashboard: a match keeps the mode it started with.
+function setMode(mode) {
+  if (page.match || !MODES.includes(mode)) return;
+  page.mode = mode;
+  try {
+    localStorage.setItem(MODE_KEY, mode);
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
+  }
+  renderDashboard();
 }
 
 function setLanguage(lang) {
@@ -70,15 +103,32 @@ function applyLanguage() {
 }
 
 function renderDashboard() {
+  document.querySelectorAll("[data-mode]").forEach((button) => {
+    const chosen = button.dataset.mode === page.mode;
+    button.classList.toggle("active", chosen);
+    button.setAttribute("aria-pressed", String(chosen));
+  });
+  $("connectfour-players").textContent = t(
+    page.mode === "pvp" ? "twoPlayers" : "youAreRed"
+  );
   const resume = $("connectfour-resume-button");
   resume.hidden = !page.saved;
   if (!page.saved) return;
   resume.querySelector("[data-resume-info]").textContent = t("resumeInfo", {
+    mode: t(MODE_LABELS[page.saved.mode]),
     count: page.saved.moves.length
   });
 }
 
+function botStatus(match) {
+  if (match.winner) return t(match.winner === HUMAN ? "youWin" : "botWins");
+  if (match.draw) return t("draw");
+  if (match.turn === BOT) return t("botTurn");
+  return page.notice || t("yourTurn", { player: t(COLORS[HUMAN]) });
+}
+
 function statusText(match) {
+  if (vsBot(match)) return botStatus(match);
   if (match.winner) return t("win", { player: t(COLORS[match.winner]) });
   if (match.draw) return t("draw");
   return page.notice || t("turn", { player: t(COLORS[match.turn]) });
@@ -96,8 +146,10 @@ function render(animate = false) {
   const shown = match.winner || match.turn;
   $("connectfour-turn-disc").dataset.disc = match.draw ? "" : COLORS[shown];
   $("connectfour-status").textContent = statusText(match);
+  $("connectfour-mode-label").textContent = t(MODE_LABELS[match.mode]);
   $("connectfour-end-panel").hidden = !isOver(match);
   board.render(match, { animate, label: columnLabel });
+  $("connectfour-board").classList.toggle("c4-wait", botToPlay(match));
 }
 
 function showScreen(playing) {
@@ -109,20 +161,25 @@ function showScreen(playing) {
 }
 
 function mountMatch(match) {
+  clearTimeout(page.botTimer);
   page.match = match;
   page.notice = "";
   storeMatch(match);
   render();
   showScreen(true);
+  scheduleBot();
 }
 
-async function startMatch() {
+// Every match, whatever the mode, starts with a colour drawn at random.
+// Play again keeps the match's mode; the dashboard's choice is for New game.
+async function startMatch(mode) {
   if (page.starting) return;
   window.MuchogamesTv?.play();
   page.starting = true;
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   page.starting = false;
-  if (allowed) mountMatch(newMatch());
+  const first = Math.random() < 0.5 ? 1 : 2;
+  if (allowed) mountMatch({ ...newMatch(first), mode });
 }
 
 function resumeMatch() {
@@ -133,25 +190,44 @@ function resumeMatch() {
   mountMatch(page.saved);
 }
 
-// The match reached its end: the save goes, finish() runs once.
-function endMatch() {
+// The match reached its end: the save goes, finish() runs once. Against
+// the bot a win or a loss counts for the player; a draw has no `won`.
+function endMatch(match) {
   clearMatch();
   page.saved = null;
-  window.MuchogamesMatch.finish({});
+  const decided = vsBot(match) && match.winner !== 0;
+  window.MuchogamesMatch.finish(decided ? { won: match.winner === HUMAN } : {});
 }
 
+function dropDisc(col) {
+  page.match = drop(page.match, col);
+  page.notice = "";
+  if (isOver(page.match)) endMatch(page.match);
+  else storeMatch(page.match);
+  render(true);
+  scheduleBot();
+}
+
+// The bot answers after a short pause, so its disc is seen falling.
+function scheduleBot() {
+  clearTimeout(page.botTimer);
+  if (!page.match || !botToPlay(page.match)) return;
+  page.botTimer = setTimeout(() => {
+    if (page.match && botToPlay(page.match)) {
+      dropDisc(chooseColumn(page.match, page.match.mode));
+    }
+  }, BOT_DELAY_MS);
+}
+
+// A tap, click or key on a column: ignored while the bot is to play.
 function playColumn(col) {
   const match = page.match;
-  if (!match || isOver(match)) return;
+  if (!match || isOver(match) || botToPlay(match)) return;
   if (!canDrop(match, col)) {
     page.notice = t("full");
     return render();
   }
-  page.match = drop(match, col);
-  page.notice = "";
-  if (isOver(page.match)) endMatch();
-  else storeMatch(page.match);
-  render(true);
+  dropDisc(col);
 }
 
 function saveOnLeave() {
@@ -160,6 +236,7 @@ function saveOnLeave() {
 
 // Quitting is not an end: no finish(), the save stays for Resume.
 function returnToDashboard() {
+  clearTimeout(page.botTimer);
   saveOnLeave();
   page.match = null;
   page.saved = loadMatch();
@@ -170,9 +247,16 @@ function bindControls() {
   document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
-  $("connectfour-start-button").addEventListener("click", startMatch);
+  document.querySelectorAll("[data-mode]").forEach((button) => {
+    button.addEventListener("click", () => setMode(button.dataset.mode));
+  });
+  $("connectfour-start-button").addEventListener("click", () =>
+    startMatch(page.mode)
+  );
   $("connectfour-resume-button").addEventListener("click", resumeMatch);
-  $("connectfour-replay-button").addEventListener("click", startMatch);
+  $("connectfour-replay-button").addEventListener("click", () =>
+    startMatch(page.match?.mode ?? page.mode)
+  );
   $("connectfour-menu-button").addEventListener("click", returnToDashboard);
   $("connectfour-quit-button").addEventListener("click", returnToDashboard);
 }

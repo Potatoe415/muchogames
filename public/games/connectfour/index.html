@@ -164,7 +164,42 @@
           </p>
           <h2 class="game-title" data-i18n="title">4 en ligne</h2>
           <p class="c4-pitch" data-i18n="pitch"></p>
-          <p class="c4-players" data-i18n="twoPlayers"></p>
+          <div
+            class="c4-modes"
+            role="group"
+            data-id="connectfour-mode-selector"
+            aria-label="Mode de jeu"
+            data-i18n-aria="mode"
+          >
+            <button
+              type="button"
+              class="c4-mode"
+              data-mode="pvp"
+              data-id="connectfour-mode-pvp"
+              data-i18n="modePvp"
+            >
+              Joueur contre joueur
+            </button>
+            <button
+              type="button"
+              class="c4-mode"
+              data-mode="easy"
+              data-id="connectfour-mode-bot-easy"
+              data-i18n="modeEasy"
+            >
+              Bot facile
+            </button>
+            <button
+              type="button"
+              class="c4-mode"
+              data-mode="normal"
+              data-id="connectfour-mode-bot-normal"
+              data-i18n="modeNormal"
+            >
+              Bot normal
+            </button>
+          </div>
+          <p class="c4-players" data-id="connectfour-players"></p>
           <button
             type="button"
             class="game-button c4-resume"
@@ -194,6 +229,7 @@
         hidden
       >
         <div class="c4-side" data-id="connectfour-hud">
+          <p class="c4-mode-label" data-id="connectfour-mode-label"></p>
           <p class="c4-status-row">
             <span
               class="c4-turn-disc"

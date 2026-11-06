@@ -464,7 +464,7 @@
     "added": "2026-11-05",
     "launch": "/games/connectfour/index.html",
     "thumbnail": "/games/connectfour/assets/thumbnail.svg",
-    "players": [2, 2],
+    "players": [1, 2],
     "duration": 5
   }
 ]
