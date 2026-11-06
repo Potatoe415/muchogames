@@ -14,10 +14,11 @@ function validTeam(team, i, last) {
   return team?.id === i && typeof team.name === 'string' && team.name.length <= 40 && isInt(team.pos, 0, last);
 }
 
+// cards null: the deck is not loaded yet, the card index is not checked.
 function validCard(card, cards, last) {
   if (card === null) return true;
   return (
-    isInt(card?.index, 0, cards.length - 1) &&
+    isInt(card?.index, 0, cards ? cards.length - 1 : Infinity) &&
     typeof card.theme === 'string' &&
     STEPS.includes(card.step) &&
     (card.note === null || isInt(card.note, 1, 10)) &&
@@ -52,6 +53,17 @@ export function loadMatch(cards, last) {
     // Unreadable save or storage unavailable: no match to resume.
   }
   return null;
+}
+
+// Before the deck is loaded: whether a save is there to resume, so the
+// dashboard shows its final layout at once (loadMatch checks it in full).
+export function hasMatch(last) {
+  try {
+    const data = JSON.parse(localStorage.getItem(SAVE_KEY));
+    return data?.v === VERSION && isValidMatch({ mode: 'board', ...data.match }, null, last);
+  } catch {
+    return false;
+  }
 }
 
 export function storeMatch(match) {
