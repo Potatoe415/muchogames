@@ -1,8 +1,10 @@
 // The match in progress under one key, so leaving by any route and coming
 // back resumes it (docs/PLATFORM_RULES.md section 5). Everything read back is
 // validated against the loaded cards and the board: a bad save is dropped.
-const SAVE_KEY = 'muchogames_ttmc_save';
+const SAVE_KEY = 'muchogames_ttcf_save';
+const MODE_KEY = 'muchogames_ttcf_mode';
 const VERSION = 1;
+const MODES = ['board', 'wheel'];
 const STEPS = ['eval', 'question', 'answer'];
 const MAX_TEAMS = 8;
 
@@ -31,6 +33,7 @@ function isValidMatch(match, cards, last) {
     Array.isArray(teams) &&
     teams.length >= 2 &&
     teams.length <= MAX_TEAMS &&
+    MODES.includes(match.mode) &&
     teams.every((team, i) => validTeam(team, i, last)) &&
     isInt(match.cur, 0, teams.length - 1) &&
     validCard(match.card, cards, last)
@@ -41,7 +44,9 @@ export function loadMatch(cards, last) {
   try {
     const data = JSON.parse(localStorage.getItem(SAVE_KEY));
     if (!data) return null;
-    if (data.v === VERSION && isValidMatch(data.match, cards, last)) return data.match;
+    // A save from before the wheel mode is a board match.
+    const match = data.match && { mode: 'board', ...data.match };
+    if (data.v === VERSION && isValidMatch(match, cards, last)) return match;
     localStorage.removeItem(SAVE_KEY);
   } catch {
     // Unreadable save or storage unavailable: no match to resume.
@@ -54,6 +59,23 @@ export function storeMatch(match) {
     localStorage.setItem(SAVE_KEY, JSON.stringify({ v: VERSION, match }));
   } catch {
     // Storage full or unavailable: the match only lasts for this visit.
+  }
+}
+
+export function readMode() {
+  try {
+    const mode = localStorage.getItem(MODE_KEY);
+    return MODES.includes(mode) ? mode : 'board';
+  } catch {
+    return 'board';
+  }
+}
+
+export function storeMode(mode) {
+  try {
+    localStorage.setItem(MODE_KEY, mode);
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
   }
 }
 

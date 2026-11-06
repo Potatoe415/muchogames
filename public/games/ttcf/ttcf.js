@@ -1,40 +1,18 @@
-// Game logic for TTMC: Game Dashboard (teams, resume), board, card dialog,
+// Game logic for TTCF: Game Dashboard (teams, resume), board, card dialog,
 // win screen. The whole match lives in page.match and is saved after every
 // step (store.js), so leaving by any route brings it back from the dashboard.
+import { LAST, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
-import { clearMatch, loadMatch, storeMatch } from './store.js';
+import { clearMatch, loadMatch, readMode, storeMatch, storeMode } from './store.js';
+import { createWheel } from './wheel.js';
 
-const GAME_ID = 'ttmc';
+const GAME_ID = 'ttcf';
 const LANG_KEY = 'bergamots-lang';
 const MAX_TEAMS = 8;
 const TIMER_SECONDS = 30;
-// Token walk after a move: one space per step, the whole walk in about
-// WALK_MS, each step between STEP_MIN_MS and STEP_MAX_MS.
-const WALK_MS = 1800;
-const STEP_MIN_MS = 70;
-const STEP_MAX_MS = 200;
-const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
 const SPECIAL_THEMES = ['Challenge', 'Débuter', 'Gagner', 'Superbe'];
 
-const BOARD_TRACK = ['Débuter'];
-let themeIdx = 0;
-for (let i = 1; i <= 41; i++) {
-  if (i % 10 === 5) BOARD_TRACK.push('Challenge');
-  else if (i % 10 === 0) BOARD_TRACK.push('Superbe');
-  else {
-    BOARD_TRACK.push(THEMES[themeIdx % THEMES.length]);
-    themeIdx++;
-  }
-}
-BOARD_TRACK.push('Gagner'); // 42
-const LAST = BOARD_TRACK.length - 1;
-
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
-// Art in ./assets (cut by scripts/ttmc_slice.py; icons/ drawn by hand).
-const TOKEN_ART = ['red', 'blue', 'yellow', 'purple', 'orange', 'green', 'pink', 'brown'].map(
-  (c) => `./assets/token-${c}.webp`
-);
-const ICON_THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire', 'Challenge', 'Superbe'];
 
 const page = {
   lang: readLang(),
@@ -43,24 +21,17 @@ const page = {
   count: 2,
   match: null,
   timer: null,
-  // { id, pos, to, timer }: the token on its way; page.match already holds
+  // { id, pos, to, stop() }: the token on its way; page.match already holds
   // the arrival (saved), this is display only.
   walk: null,
-  starting: false
+  starting: false,
+  // 'board' or 'wheel', chosen on the dashboard; a match keeps its own.
+  mode: readMode(),
+  wheel: null,
+  spinning: false
 };
 
 const t = (key, vars) => translate(page.lang, key, vars);
-const themeClass = (theme) => theme.toLowerCase().replace(/é/g, 'e').replace(/ /g, '-');
-const medallionArt = (theme) => `./assets/medallions/${themeClass(theme)}.webp`;
-
-function picture(src, className) {
-  const img = document.createElement('img');
-  img.src = src;
-  img.alt = '';
-  img.className = className;
-  img.draggable = false;
-  return img;
-}
 
 function readLang() {
   try {
@@ -103,7 +74,7 @@ function applyLanguage() {
 // --- Game Dashboard -------------------------------------------------------
 
 function renderTeamInputs() {
-  const list = $('ttmc-teams-list');
+  const list = $('ttcf-teams-list');
   list.replaceChildren(
     ...Array.from({ length: page.count }, (_, i) => {
       const row = document.createElement('div');
@@ -111,7 +82,7 @@ function renderTeamInputs() {
       const input = document.createElement('input');
       input.type = 'text';
       input.maxLength = 40;
-      input.dataset.id = `ttmc-team-name-${i + 1}`;
+      input.dataset.id = `ttcf-team-name-${i + 1}`;
       input.placeholder = t('teamN', { n: i + 1 });
       input.setAttribute('aria-label', t('teamName', { n: i + 1 }));
       input.value = page.names[i] ?? '';
@@ -123,7 +94,7 @@ function renderTeamInputs() {
   );
   // Past 4 teams the list goes to two columns (1-4, then 5-8).
   list.classList.toggle('is-two-columns', page.count > 4);
-  $('ttmc-add-team-btn').hidden = page.count >= MAX_TEAMS;
+  $('ttcf-add-team-btn').hidden = page.count >= MAX_TEAMS;
 }
 
 // A text field keeps the arrows for itself (tv-remote.js too): Up / Down
@@ -131,7 +102,7 @@ function renderTeamInputs() {
 function leaveInputWithArrows(event) {
   const step = { ArrowUp: -1, ArrowDown: 1 }[event.key];
   if (!step) return;
-  const controls = [...$('ttmc-setup-screen').querySelectorAll('button, input')].filter(
+  const controls = [...$('ttcf-setup-screen').querySelectorAll('button, input')].filter(
     (el) => !el.disabled && !el.closest('[hidden]')
   );
   const next = controls[controls.indexOf(event.target) + step];
@@ -140,22 +111,37 @@ function leaveInputWithArrows(event) {
   next.focus();
 }
 
+function renderModes() {
+  document.querySelectorAll('[data-mode]').forEach((chip) => {
+    const on = chip.dataset.mode === page.mode;
+    chip.classList.toggle('active', on);
+    chip.setAttribute('aria-pressed', String(on));
+  });
+}
+
+function setMode(mode) {
+  page.mode = mode;
+  storeMode(mode);
+  renderModes();
+}
+
 function renderDashboard() {
+  renderModes();
   const ready = page.cards.length > 0;
-  $('ttmc-start-btn').disabled = !ready;
-  $('ttmc-load-status').hidden = ready;
-  $('ttmc-resume-button').hidden = !ready || !loadMatch(page.cards, LAST);
+  $('ttcf-start-btn').disabled = !ready;
+  $('ttcf-load-status').hidden = ready;
+  $('ttcf-resume-button').hidden = !ready || !loadMatch(page.cards, LAST);
 }
 
 function showScreen(name) {
   stopTimer();
   stopWalk(false);
-  $('ttmc-setup-screen').hidden = name !== 'dashboard';
-  $('ttmc-board-screen').hidden = name !== 'board';
-  $('ttmc-win-screen').hidden = name !== 'win';
+  $('ttcf-setup-screen').hidden = name !== 'dashboard';
+  $('ttcf-board-screen').hidden = name !== 'board';
+  $('ttcf-win-screen').hidden = name !== 'win';
   $('game-back-button').hidden = name === 'board';
-  $('ttmc-quit-button').hidden = name !== 'board';
-  if (name !== 'board') $('ttmc-card-modal').hidden = true;
+  $('ttcf-quit-button').hidden = name !== 'board';
+  if (name !== 'board') $('ttcf-card-modal').hidden = true;
   if (name === 'dashboard') renderDashboard();
 }
 
@@ -175,7 +161,7 @@ async function startMatch(names) {
   page.starting = false;
   if (!started) return;
   // Every team starts on case 1, after the Débuter card.
-  page.match = { teams: names.map((name, id) => ({ id, name, pos: 1 })), cur: 0, card: null };
+  page.match = { mode: page.mode, teams: names.map((name, id) => ({ id, name, pos: 1 })), cur: 0, card: null };
   showScreen('board');
   drawCard('Débuter', true);
 }
@@ -186,6 +172,7 @@ function resumeMatch() {
   window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   page.match = saved;
+  page.mode = saved.mode;
   showScreen('board');
   renderMatch();
   if (saved.card?.step === 'question' && !saved.card.opening) startTimer();
@@ -208,66 +195,58 @@ function renderMatch() {
   const turn = page.walk?.id ?? cur;
   const label = document.createElement('span');
   label.textContent = t('turnOf', { name: teams[turn].name });
-  $('ttmc-turn-indicator').replaceChildren(picture(TOKEN_ART[turn], 'turn-avatar'), label);
-  renderBoard();
+  $('ttcf-turn-indicator').replaceChildren(picture(TOKEN_ART[turn], 'turn-avatar'), label);
+  const wheel = page.match.mode === 'wheel';
+  $('ttcf-board-screen').classList.toggle('is-wheel', wheel);
+  $('ttcf-board-area').hidden = wheel;
+  $('ttcf-wheel-area').hidden = !wheel;
+  if (wheel) {
+    page.wheel ??= createWheel($('ttcf-wheel'), themeClass);
+    renderScores();
+  } else renderBoard({ match: page.match, walk: page.walk, t, labels: THEME_LABELS[page.lang] });
   renderCard();
 }
 
-function renderBoard() {
-  const track = $('ttmc-board-track');
-  track.replaceChildren();
-  BOARD_TRACK.forEach((theme, i) => {
-    const space = document.createElement('div');
-    space.className = `board-space ${themeClass(theme)}`;
-    space.dataset.id = `ttmc-space-${i}`;
-    space.title = THEME_LABELS[page.lang][theme] || theme;
-    const badge = document.createElement('span');
-    badge.className = 'space-badge';
-    if (i === 0) badge.textContent = t('markStart');
-    else if (i === LAST) badge.textContent = t('markEnd');
-    else if (theme === 'Challenge') badge.textContent = t('markChallenge');
-    else if (theme === 'Superbe') badge.textContent = t('markSuperbe');
-    else badge.textContent = i;
-    const art = ICON_THEMES.includes(theme)
-      ? picture(`./assets/icons/${themeClass(theme)}.svg`, 'space-icon')
-      : picture(medallionArt(theme), 'space-medallion');
-    const tokens = document.createElement('div');
-    tokens.className = 'space-tokens';
-    page.match.teams.forEach((team) => {
-      if (tokenPos(team) !== i) return;
-      const token = picture(TOKEN_ART[team.id], tokenClass(team));
-      token.dataset.id = `ttmc-team-token-${team.id + 1}`;
-      token.alt = team.name;
-      tokens.appendChild(token);
-    });
-    fitTokens(tokens);
-    space.append(art, badge, tokens);
-    track.appendChild(space);
-  });
+// Wheel mode: each team's acorn and how far it got (the same 42 steps).
+function renderScores() {
+  const { teams, cur } = page.match;
+  $('ttcf-wheel-scores').replaceChildren(
+    ...teams.map((team) => {
+      const row = document.createElement('li');
+      row.className = team.id === cur ? 'wheel-score is-current' : 'wheel-score';
+      row.dataset.id = `ttcf-wheel-score-${team.id + 1}`;
+      const name = document.createElement('span');
+      name.className = 'wheel-score-name';
+      name.textContent = team.name;
+      const bar = document.createElement('span');
+      bar.className = 'wheel-score-bar';
+      bar.style.setProperty('--progress', String(team.pos / LAST));
+      const pos = document.createElement('span');
+      pos.className = 'wheel-score-pos';
+      pos.textContent = `${team.pos}/${LAST}`;
+      row.append(picture(TOKEN_ART[team.id], 'wheel-score-token'), name, bar, pos);
+      return row;
+    })
+  );
 }
 
-// Up to 4 tokens on a space share one overlapping row; more take two rows.
-function fitTokens(tokens) {
-  const count = tokens.children.length;
-  tokens.style.setProperty('--n', String(Math.max(1, count)));
-  tokens.classList.toggle('is-crowded', count > 4);
+// Spins, then draws a card of the theme it lands on (the Gagner card once
+// the team reached the end). Not saved until it lands: a reload mid-spin
+// just shows the wheel again.
+async function spinWheel() {
+  const match = page.match;
+  if (!match || match.card || page.walk || page.spinning) return;
+  page.spinning = true;
+  $('ttcf-spin-btn').disabled = true;
+  const theme = await page.wheel.spin(reducedMotion());
+  page.spinning = false;
+  $('ttcf-spin-btn').disabled = false;
+  if (page.match !== match || match.card) return;
+  const team = match.teams[match.cur];
+  drawCard(team.pos >= LAST ? 'Gagner' : theme);
 }
 
-function tokenPos(team) {
-  return page.walk?.id === team.id ? page.walk.pos : team.pos;
-}
-
-function tokenClass(team) {
-  if (page.walk) return page.walk.id === team.id ? 'team-token is-walking' : 'team-token';
-  return team.id === page.match.cur ? 'team-token is-current' : 'team-token';
-}
-
-function getSpaceTheme(pos) {
-  if (pos >= LAST) return 'Gagner';
-  return BOARD_TRACK[pos] || 'Improbable';
-}
-
-function drawCard(theme = getSpaceTheme(page.match.teams[page.match.cur].pos), opening = false) {
+function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), opening = false) {
   const pool = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
   const index = pool.length
     ? pool[Math.floor(Math.random() * pool.length)].index
@@ -287,38 +266,44 @@ function cardQuestion(card) {
 
 function renderCard() {
   const card = page.match.card;
-  $('ttmc-card-modal').hidden = !card;
-  $('ttmc-draw-card-btn').hidden = Boolean(card || page.walk);
+  $('ttcf-card-modal').hidden = !card;
+  const wheel = page.match.mode === 'wheel';
+  $('ttcf-draw-card-btn').hidden = Boolean(card || page.walk || wheel);
+  $('ttcf-spin-btn').hidden = Boolean(card || !wheel);
   if (!card) return;
   const data = page.cards[card.index];
-  const theme = $('ttmc-card-theme');
+  const theme = $('ttcf-card-theme');
   theme.textContent = THEME_LABELS[page.lang][data.theme] || data.theme;
   theme.className = `card-theme ${themeClass(data.theme)}`;
-  $('ttmc-card-medallion').src = medallionArt(data.theme);
-  $('ttmc-card-modal').dataset.theme = themeClass(data.theme);
-  $('ttmc-card-subject').textContent = data.subject || '';
+  $('ttcf-card-medallion').src = medallionArt(data.theme);
+  $('ttcf-card-modal').dataset.theme = themeClass(data.theme);
+  $('ttcf-card-subject').textContent = data.subject || '';
   const q = cardQuestion(card);
-  $('ttmc-selected-note').textContent = card.note ? t('level', { n: card.note }) : THEME_LABELS[page.lang][card.theme] || card.theme;
-  $('ttmc-card-question').textContent = q ? q.q : t('noQuestion');
-  $('ttmc-card-answer').textContent = q ? q.a : t('noAnswer');
-  $('ttmc-eval-step').hidden = card.step !== 'eval';
-  $('ttmc-question-step').hidden = card.step !== 'question';
-  $('ttmc-answer-step').hidden = card.step !== 'answer';
+  $('ttcf-selected-note').textContent = card.note ? t('level', { n: card.note }) : THEME_LABELS[page.lang][card.theme] || card.theme;
+  $('ttcf-card-question').textContent = q ? q.q : t('noQuestion');
+  $('ttcf-card-answer').textContent = q ? q.a : t('noAnswer');
+  // The Débuter card is an instruction, not a question: it shows with its
+  // answer at once, and only the button to the board.
+  const step = card.opening ? 'answer' : card.step;
+  $('ttcf-card-modal').classList.toggle('is-opening', card.opening);
+  $('ttcf-eval-step').hidden = step !== 'eval';
+  $('ttcf-question-step').hidden = step !== 'question' && !card.opening;
+  $('ttcf-answer-step').hidden = step !== 'answer';
   paintTimer(card);
-  if (card.step === 'answer') renderAnswerButtons(card);
+  if (step === 'answer') renderAnswerButtons(card);
   // A new step: the focus moves to its main button (TV remote).
   setTimeout(() => window.MuchogamesTv?.focusScreen(), 0);
 }
 
 function renderAnswerButtons(card) {
   const manual = SPECIAL_THEMES.includes(card.theme) && card.theme !== 'Gagner' && !card.opening;
-  $('ttmc-manual-move').hidden = !manual;
+  $('ttcf-manual-move').hidden = !manual;
   document.getElementById('validationButtons').hidden = manual;
-  $('ttmc-move-value').textContent = String(card.move);
-  const fail = $('ttmc-fail-btn');
-  const success = $('ttmc-success-btn');
+  $('ttcf-move-value').textContent = String(card.move);
+  const fail = $('ttcf-fail-btn');
+  const success = $('ttcf-success-btn');
   fail.hidden = card.opening;
-  if (card.opening) success.textContent = t('toBoard');
+  if (card.opening) success.textContent = t(page.match.mode === 'wheel' ? 'toWheel' : 'toBoard');
   else if (card.theme === 'Gagner') {
     fail.textContent = t('failStay');
     success.textContent = t('successWin');
@@ -370,7 +355,7 @@ function changeMove(step) {
   const card = page.match?.card;
   if (!card) return;
   card.move = Math.max(-LAST, Math.min(LAST, card.move + step));
-  $('ttmc-move-value').textContent = String(card.move);
+  $('ttcf-move-value').textContent = String(card.move);
   save();
 }
 
@@ -386,57 +371,25 @@ function endTurn(moveBy) {
   if (!opening && team.pos < LAST) team.pos = Math.min(LAST, Math.max(1, team.pos + moveBy));
   if (!opening) match.cur = (match.cur + 1) % match.teams.length;
   save();
-  if (team.pos !== from && !reducedMotion()) return walkToken(team, from);
+  if (team.pos !== from && !reducedMotion() && match.mode !== 'wheel') {
+    // The arrival is saved; the walk is display only, then the next team's turn shows.
+    walkToken(team.id, from, team.pos, {
+      onStart: (walk) => {
+        page.walk = walk;
+        renderMatch();
+      },
+      onEnd: () => stopWalk(true)
+    });
+    return;
+  }
   renderMatch();
 }
 
 const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// The token goes space by space to team.pos (already saved), then the next
-// team's turn shows.
-function walkToken(team, from) {
-  const steps = Math.abs(team.pos - from);
-  const stepMs = Math.max(STEP_MIN_MS, Math.min(STEP_MAX_MS, WALK_MS / steps));
-  page.walk = { id: team.id, pos: from, to: team.pos, timer: null };
-  renderMatch();
-  page.walk.timer = setInterval(() => {
-    const walk = page.walk;
-    walk.pos += Math.sign(walk.to - walk.pos);
-    stepToken(walk, stepMs);
-    if (walk.pos !== walk.to) return;
-    clearInterval(walk.timer);
-    setTimeout(() => page.walk === walk && stopWalk(true), stepMs);
-  }, stepMs);
-}
-
-// Moves the token element into the next space and slides it there with a
-// small hop (FLIP: measured before and after the move).
-function stepToken(walk, stepMs) {
-  const token = $(`ttmc-team-token-${walk.id + 1}`);
-  const target = $(`ttmc-space-${walk.pos}`)?.querySelector('.space-tokens');
-  if (!token || !target) return;
-  const before = token.getBoundingClientRect();
-  const source = token.parentElement;
-  target.append(token);
-  fitTokens(source);
-  fitTokens(target);
-  const after = token.getBoundingClientRect();
-  const dx = before.left - after.left;
-  const dy = before.top - after.top;
-  const lift = after.height * 0.45;
-  token.animate(
-    [
-      { transform: `translate(${dx}px, ${dy}px)` },
-      { transform: `translate(${dx / 2}px, ${dy / 2 - lift}px)` },
-      { transform: 'none' }
-    ],
-    { duration: stepMs * 0.9, easing: 'ease-out' }
-  );
-}
-
 function stopWalk(render) {
   if (!page.walk) return;
-  clearInterval(page.walk.timer);
+  page.walk.stop();
   page.walk = null;
   if (render && page.match) renderMatch();
 }
@@ -450,8 +403,8 @@ function winMatch(team) {
   window.MuchogamesMatch.finish();
   page.names = names;
   page.count = names.length;
-  $('ttmc-winner-name').textContent = team.name;
-  $('ttmc-winner-token').src = TOKEN_ART[team.id];
+  $('ttcf-winner-name').textContent = team.name;
+  $('ttcf-winner-token').src = TOKEN_ART[team.id];
   showScreen('win');
 }
 
@@ -461,47 +414,50 @@ function bindControls() {
   document.querySelectorAll('[data-lang]').forEach((button) => {
     button.addEventListener('click', () => setLanguage(button.dataset.lang));
   });
-  const evalGrid = $('ttmc-eval-grid');
+  const evalGrid = $('ttcf-eval-grid');
   for (let i = 1; i <= 10; i++) {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'eval-btn';
-    btn.dataset.id = `ttmc-eval-${i}`;
+    btn.dataset.id = `ttcf-eval-${i}`;
     if (i === 1) btn.dataset.tvFocus = '';
     btn.textContent = i;
     btn.addEventListener('click', () => selectNote(i));
     evalGrid.appendChild(btn);
   }
   const actions = {
-    'ttmc-add-team-btn': () => {
+    'ttcf-add-team-btn': () => {
       page.count = Math.min(MAX_TEAMS, page.count + 1);
       renderTeamInputs();
-      $(`ttmc-team-name-${page.count}`)?.focus();
+      $(`ttcf-team-name-${page.count}`)?.focus();
     },
-    'ttmc-start-btn': () => startMatch(teamNames()),
-    'ttmc-resume-button': resumeMatch,
-    'ttmc-quit-button': quitMatch,
-    'ttmc-draw-card-btn': () => page.match && !page.match.card && !page.walk && drawCard(),
-    'ttmc-show-answer-btn': showAnswer,
-    'ttmc-fail-btn': () => endTurn(0),
-    'ttmc-success-btn': () => endTurn(page.match?.card?.note ?? 1),
-    'ttmc-move-less': () => changeMove(-1),
-    'ttmc-move-more': () => changeMove(1),
-    'ttmc-move-confirm': () => endTurn(page.match?.card?.move ?? 0),
-    'ttmc-restart-btn': () => startMatch(teamNames()),
-    'ttmc-menu-button': () => showScreen('dashboard')
+    'ttcf-start-btn': () => startMatch(teamNames()),
+    'ttcf-resume-button': resumeMatch,
+    'ttcf-quit-button': quitMatch,
+    'ttcf-draw-card-btn': () => page.match && !page.match.card && !page.walk && drawCard(),
+    'ttcf-spin-btn': spinWheel,
+    'ttcf-mode-board': () => setMode('board'),
+    'ttcf-mode-wheel': () => setMode('wheel'),
+    'ttcf-show-answer-btn': showAnswer,
+    'ttcf-fail-btn': () => endTurn(0),
+    'ttcf-success-btn': () => endTurn(page.match?.card?.note ?? 1),
+    'ttcf-move-less': () => changeMove(-1),
+    'ttcf-move-more': () => changeMove(1),
+    'ttcf-move-confirm': () => endTurn(page.match?.card?.move ?? 0),
+    'ttcf-restart-btn': () => startMatch(teamNames()),
+    'ttcf-menu-button': () => showScreen('dashboard')
   };
   Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
 }
 
 async function loadCards() {
   try {
-    const res = await fetch('/data/ttmc/ttmc_data.json');
+    const res = await fetch('/data/ttcf/ttcf_data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     page.cards = (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
   } catch (error) {
-    console.warn('[ttmc] cards not loaded', error);
+    console.warn('[ttcf] cards not loaded', error);
   }
 }
 
@@ -518,7 +474,7 @@ async function init() {
   renderDashboard();
   // The start button was disabled while loading: the remote focus moves to
   // it (or to Resume) now, instead of staying on the back button.
-  if (!$('ttmc-setup-screen').hidden) window.MuchogamesTv?.focusScreen();
+  if (!$('ttcf-setup-screen').hidden) window.MuchogamesTv?.focusScreen();
 }
 
 init();

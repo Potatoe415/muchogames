@@ -36,8 +36,8 @@ async function run() {
     process.cwd(),
     "public",
     "data",
-    "ttmc",
-    "ttmc_data.json"
+    "ttcf",
+    "ttcf_data.json"
   );
 
   let existingData = { cards: [] };
@@ -59,7 +59,7 @@ async function run() {
 
     const prompt = `
 Tu es un extracteur de données JSON. 
-Je te fournis 2 images d'une planche de cartes du jeu TTMC. 
+Je te fournis 2 images d'une planche de cartes du jeu TTCF. 
 L'image 1 contient les questions. L'image 2 contient les réponses exactes correspondantes.
 Extrais TOUTES les cartes présentes sur ces planches.
 Pour chaque carte, identifie:

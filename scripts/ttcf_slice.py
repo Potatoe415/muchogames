@@ -1,7 +1,7 @@
-"""Cut the AI-generated TTMC art into WebP sprites for public/games/ttmc/assets.
+"""Cut the AI-generated TTCF art into WebP sprites for public/games/ttcf/assets.
 
 Usage (from the repo root, needs Pillow, numpy, scipy):
-    python scripts/ttmc_slice.py [--src tmp-resources/ttmc] [--out public/games/ttmc/assets]
+    python scripts/ttcf_slice.py [--src tmp-resources/ttcf] [--out public/games/ttcf/assets]
 
 Sources, on white: the asset sheet (meadow scene, theme medallions, the
 first 4 acorn characters) and the sheet of 4 extra acorns (teams 5-8). The board tiles are hand-made SVGs (assets/icons/): the mockup tiles are
@@ -84,8 +84,8 @@ def save(img, path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--src", default=str(ROOT / "tmp-resources" / "ttmc"))
-    parser.add_argument("--out", default=str(ROOT / "public" / "games" / "ttmc" / "assets"))
+    parser.add_argument("--src", default=str(ROOT / "tmp-resources" / "ttcf"))
+    parser.add_argument("--out", default=str(ROOT / "public" / "games" / "ttcf" / "assets"))
     args = parser.parse_args()
     src, out = Path(args.src), Path(args.out)
 

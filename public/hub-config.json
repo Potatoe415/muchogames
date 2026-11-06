@@ -390,13 +390,13 @@
     "duration": 15
   },
   {
-    "id": "ttmc",
-    "title": "Tu Te Mets Combien ?",
+    "id": "ttcf",
+    "title": "Tu Te Crois Fort ?",
     "kind": "custom",
     "tags": ["quiz", "soiree"],
     "added": "2026-11-02",
-    "launch": "/games/ttmc/index.html",
-    "thumbnail": "/games/ttmc/assets/thumbnail.jpg",
+    "launch": "/games/ttcf/index.html",
+    "thumbnail": "/games/ttcf/assets/thumbnail.jpg",
     "resumable": true,
     "players": [2, 8],
     "duration": 45

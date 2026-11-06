@@ -68,6 +68,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0060 | 2026-11-03 | Full-height layouts use dvh, not vh (tightens the system-bar rule in 0053) | Accepted |
 | 0061 | 2026-11-05 | Game rules rewrite: Game Dashboard, solo best, 40px bottom margin, tested boilerplate; old games one by one | Accepted |
 | 0062 | 2026-11-05 | Hub Home opens on "Most played" (newest as fallback); `cartes` is card games only, Yams moves to `reflexion` | Accepted |
+| 0063 | 2026-11-06 | Party quiz renamed "Tu te crois fort ?", game id `ttcf` (old saves and stats not carried over) | Accepted |
 
 ## When to log a decision
 Any of:

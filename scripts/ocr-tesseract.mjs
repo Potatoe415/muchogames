@@ -19,7 +19,7 @@ async function run() {
     )
     .sort();
 
-  const outFile = path.join(process.cwd(), "ttmc_ocr_raw.txt");
+  const outFile = path.join(process.cwd(), "ttcf_ocr_raw.txt");
 
   // Initialize worker once for performance
   const worker = await Tesseract.createWorker("fra");
