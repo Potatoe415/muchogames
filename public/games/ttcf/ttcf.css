@@ -1271,7 +1271,8 @@ html.tv :focus {
   position: relative;
 }
 
-.card-close {
+.card-close,
+.card-flip {
   position: absolute;
   top: 0.35rem;
   right: 0.45rem;
@@ -1290,6 +1291,17 @@ html.tv :focus {
   font-size: 1.3rem;
   line-height: 1;
   cursor: pointer;
+}
+
+/* Answer side: ↺ top left turns the card back to its question (and again). */
+.card-flip {
+  right: auto;
+  left: 0.45rem;
+}
+
+.card-close[hidden],
+.card-flip[hidden] {
+  display: none;
 }
 
 .btn.card-skip {

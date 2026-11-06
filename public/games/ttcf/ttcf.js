@@ -28,7 +28,11 @@ const page = {
   // 'board' or 'wheel', chosen on the dashboard; a match keeps its own.
   mode: readMode(),
   wheel: null,
-  spinning: false
+  spinning: false,
+  turning: false,
+  // Answer shown, card turned back to its question side (display only: not
+  // saved, the timer stays stopped).
+  peek: false
 };
 
 const t = (key, vars) => translate(page.lang, key, vars);
@@ -180,6 +184,7 @@ function resumeMatch() {
   window.MuchogamesMatch.resume(GAME_ID);
   page.match = saved;
   page.mode = saved.mode;
+  page.peek = false;
   showScreen('board');
   renderMatch();
   if (saved.card?.step === 'question' && !saved.card.opening) startTimer();
@@ -271,6 +276,7 @@ function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), open
     : Math.floor(Math.random() * page.cards.length);
   const direct = opening || SPECIAL_THEMES.includes(theme) || !page.cards[index].questions[0].level;
   page.match.card = { index, theme, step: direct ? 'question' : 'eval', note: null, opening, timeLeft: TIMER_SECONDS, move: 0 };
+  page.peek = false;
   save();
   renderCard();
   // The Débuter card has no 30 s timer.
@@ -288,7 +294,10 @@ function renderCard() {
   const wheel = page.match.mode === 'wheel';
   $('ttcf-draw-card-btn').hidden = Boolean(card || page.walk || wheel);
   $('ttcf-spin-btn').hidden = Boolean(card || !wheel);
-  if (!card) return;
+  if (!card) {
+    page.peek = false;
+    return;
+  }
   const data = page.cards[card.index];
   const theme = $('ttcf-card-theme');
   theme.textContent = THEME_LABELS[page.lang][data.theme] || data.theme;
@@ -303,12 +312,16 @@ function renderCard() {
   // The Débuter card is an instruction, not a question: it shows with its
   // answer at once, and only the button to the board.
   const step = card.opening ? 'answer' : card.step;
+  const flippable = step === 'answer' && !card.opening;
+  // The side on show: the question again while the answer card is turned back.
+  const face = flippable && page.peek ? 'question' : step;
   $('ttcf-card-modal').classList.toggle('is-opening', card.opening);
-  $('ttcf-eval-step').hidden = step !== 'eval';
-  $('ttcf-question-step').hidden = step !== 'question' && !card.opening;
-  $('ttcf-answer-step').hidden = step !== 'answer';
+  $('ttcf-eval-step').hidden = face !== 'eval';
+  $('ttcf-question-step').hidden = face !== 'question' && !card.opening;
+  $('ttcf-answer-step').hidden = face !== 'answer';
+  $('ttcf-card-flip').hidden = !flippable;
   paintTimer(card);
-  if (step === 'answer') renderAnswerButtons(card);
+  if (face === 'answer') renderAnswerButtons(card);
   // Until the answer shows, the question can be skipped or cancelled.
   const open = !card.opening && step !== 'answer';
   $('ttcf-card-close').hidden = !open;
@@ -384,11 +397,40 @@ function skipCard() {
 
 function showAnswer() {
   const card = page.match?.card;
+  if (page.peek) return flipBack();
   if (!card || card.step !== 'question') return;
   stopTimer();
   card.step = 'answer';
   save();
-  renderCard();
+  turnCard(renderCard);
+}
+
+// The ↺ button on the answer side: the card turns back to its question, and
+// again to its answer. The timer was stopped by the answer and stays so.
+function flipBack() {
+  const card = page.match?.card;
+  if (!card || card.opening || card.step !== 'answer' || page.turning) return;
+  page.peek = !page.peek;
+  turnCard(renderCard);
+}
+
+// The card turns over (a quarter turn, the new side drawn edge-on, then the
+// last quarter); with reduced motion it just changes side.
+function turnCard(paint) {
+  const el = $('ttcf-card-modal').querySelector('.modal-content');
+  if (reducedMotion() || !el.animate) return paint();
+  page.turning = true;
+  const half = (from, to, easing) =>
+    el.animate([{ transform: `perspective(1200px) rotateY(${from}deg)` }, { transform: `perspective(1200px) rotateY(${to}deg)` }], { duration: 200, easing }).finished;
+  half(0, 90, 'ease-in')
+    .then(() => {
+      paint();
+      return half(-90, 0, 'ease-out');
+    })
+    .catch(paint)
+    .finally(() => {
+      page.turning = false;
+    });
 }
 
 function changeMove(step) {
@@ -480,6 +522,7 @@ function bindControls() {
     'ttcf-mode-wheel': () => setMode('wheel'),
     'ttcf-show-answer-btn': showAnswer,
     'ttcf-card-close': cancelCard,
+    'ttcf-card-flip': flipBack,
     'ttcf-skip-btn': skipCard,
     'ttcf-fail-btn': () => endTurn(0),
     'ttcf-success-btn': () => endTurn(page.match?.card?.note ?? 1),
