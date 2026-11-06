@@ -19,5 +19,6 @@ move forward by the rating on a right answer. First team to answer the
 
 - Saved at match start, after every step (card drawn, rating, answer shown, stepper, turn end), every second of the 30 s timer, on `pagehide` and `visibilitychange`. Cleared only on the win screen.
 - Resume comes back on the same card and step; the timer goes on from its saved value.
+- A move walks the token space by space (`walkToken`, about 1.8 s in all, 70-200 ms a space, a small hop per space; backwards too). The arrival is saved before the walk starts, so `page.walk` is display only: leaving mid-walk resumes with the token on its arrival space. During the walk the banner keeps the moving team and the draw button is hidden. No walk with `prefers-reduced-motion`.
 - A party game on one device: `finish()` without `won` (`docs/PLATFORM_RULES.md` section 4.4).
 - Cards: `public/data/ttmc/ttmc_data.json` (`{ cards: [{ theme, subject, questions: [{ level, q, a }] }] }`). Not all card photos were OCR'd; some text still has OCR artefacts.

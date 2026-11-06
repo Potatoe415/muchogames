@@ -310,6 +310,15 @@ body {
   margin-left: -40%;
 }
 
+/* The walking token passes over the next tiles, backwards too. */
+.board-space:has(.is-walking) {
+  z-index: 2;
+}
+
+.team-token.is-walking {
+  z-index: 1;
+}
+
 .team-token.is-current {
   z-index: 1;
   animation: ttmc-hop 1.2s ease-in-out infinite;

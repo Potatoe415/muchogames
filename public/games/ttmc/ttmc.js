@@ -8,6 +8,11 @@ const GAME_ID = 'ttmc';
 const LANG_KEY = 'bergamots-lang';
 const MAX_TEAMS = 4;
 const TIMER_SECONDS = 30;
+// Token walk after a move: one space per step, the whole walk in about
+// WALK_MS, each step between STEP_MIN_MS and STEP_MAX_MS.
+const WALK_MS = 1800;
+const STEP_MIN_MS = 70;
+const STEP_MAX_MS = 200;
 const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
 const SPECIAL_THEMES = ['Challenge', 'Débuter', 'Gagner', 'Superbe'];
 
@@ -36,6 +41,9 @@ const page = {
   count: 2,
   match: null,
   timer: null,
+  // { id, pos, to, timer }: the token on its way; page.match already holds
+  // the arrival (saved), this is display only.
+  walk: null,
   starting: false
 };
 
@@ -137,6 +145,7 @@ function renderDashboard() {
 
 function showScreen(name) {
   stopTimer();
+  stopWalk(false);
   $('ttmc-setup-screen').hidden = name !== 'dashboard';
   $('ttmc-board-screen').hidden = name !== 'board';
   $('ttmc-win-screen').hidden = name !== 'win';
@@ -191,9 +200,11 @@ function quitMatch() {
 
 function renderMatch() {
   const { teams, cur } = page.match;
+  // While a token walks, the banner still shows the team that moves.
+  const turn = page.walk?.id ?? cur;
   const label = document.createElement('span');
-  label.textContent = t('turnOf', { name: teams[cur].name });
-  $('ttmc-turn-indicator').replaceChildren(picture(TOKEN_ART[cur], 'turn-avatar'), label);
+  label.textContent = t('turnOf', { name: teams[turn].name });
+  $('ttmc-turn-indicator').replaceChildren(picture(TOKEN_ART[turn], 'turn-avatar'), label);
   renderBoard();
   renderCard();
 }
@@ -219,8 +230,8 @@ function renderBoard() {
     const tokens = document.createElement('div');
     tokens.className = 'space-tokens';
     page.match.teams.forEach((team) => {
-      if (team.pos !== i) return;
-      const token = picture(TOKEN_ART[team.id], team.id === page.match.cur ? 'team-token is-current' : 'team-token');
+      if (tokenPos(team) !== i) return;
+      const token = picture(TOKEN_ART[team.id], tokenClass(team));
       token.dataset.id = `ttmc-team-token-${team.id + 1}`;
       token.alt = team.name;
       tokens.appendChild(token);
@@ -228,6 +239,15 @@ function renderBoard() {
     space.append(art, badge, tokens);
     track.appendChild(space);
   });
+}
+
+function tokenPos(team) {
+  return page.walk?.id === team.id ? page.walk.pos : team.pos;
+}
+
+function tokenClass(team) {
+  if (page.walk) return page.walk.id === team.id ? 'team-token is-walking' : 'team-token';
+  return team.id === page.match.cur ? 'team-token is-current' : 'team-token';
 }
 
 function getSpaceTheme(pos) {
@@ -256,7 +276,7 @@ function cardQuestion(card) {
 function renderCard() {
   const card = page.match.card;
   $('ttmc-card-modal').hidden = !card;
-  $('ttmc-draw-card-btn').hidden = Boolean(card);
+  $('ttmc-draw-card-btn').hidden = Boolean(card || page.walk);
   if (!card) return;
   const data = page.cards[card.index];
   const theme = $('ttmc-card-theme');
@@ -348,12 +368,62 @@ function endTurn(moveBy) {
   const { opening } = match.card;
   match.card = null;
   const team = match.teams[match.cur];
+  const from = team.pos;
   // Just dismissed the Débuter card: the first team now plays.
   if (!opening && team.pos >= LAST && moveBy > 0) return winMatch(team);
   if (!opening && team.pos < LAST) team.pos = Math.min(LAST, Math.max(1, team.pos + moveBy));
   if (!opening) match.cur = (match.cur + 1) % match.teams.length;
   save();
+  if (team.pos !== from && !reducedMotion()) return walkToken(team, from);
   renderMatch();
+}
+
+const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// The token goes space by space to team.pos (already saved), then the next
+// team's turn shows.
+function walkToken(team, from) {
+  const steps = Math.abs(team.pos - from);
+  const stepMs = Math.max(STEP_MIN_MS, Math.min(STEP_MAX_MS, WALK_MS / steps));
+  page.walk = { id: team.id, pos: from, to: team.pos, timer: null };
+  renderMatch();
+  page.walk.timer = setInterval(() => {
+    const walk = page.walk;
+    walk.pos += Math.sign(walk.to - walk.pos);
+    stepToken(walk, stepMs);
+    if (walk.pos !== walk.to) return;
+    clearInterval(walk.timer);
+    setTimeout(() => page.walk === walk && stopWalk(true), stepMs);
+  }, stepMs);
+}
+
+// Moves the token element into the next space and slides it there with a
+// small hop (FLIP: measured before and after the move).
+function stepToken(walk, stepMs) {
+  const token = $(`ttmc-team-token-${walk.id + 1}`);
+  const target = $(`ttmc-space-${walk.pos}`)?.querySelector('.space-tokens');
+  if (!token || !target) return;
+  const before = token.getBoundingClientRect();
+  target.append(token);
+  const after = token.getBoundingClientRect();
+  const dx = before.left - after.left;
+  const dy = before.top - after.top;
+  const lift = after.height * 0.45;
+  token.animate(
+    [
+      { transform: `translate(${dx}px, ${dy}px)` },
+      { transform: `translate(${dx / 2}px, ${dy / 2 - lift}px)` },
+      { transform: 'none' }
+    ],
+    { duration: stepMs * 0.9, easing: 'ease-out' }
+  );
+}
+
+function stopWalk(render) {
+  if (!page.walk) return;
+  clearInterval(page.walk.timer);
+  page.walk = null;
+  if (render && page.match) renderMatch();
 }
 
 // A party game with several teams on one device: "started" only, no won
@@ -396,7 +466,7 @@ function bindControls() {
     'ttmc-start-btn': () => startMatch(teamNames()),
     'ttmc-resume-button': resumeMatch,
     'ttmc-quit-button': quitMatch,
-    'ttmc-draw-card-btn': () => page.match && !page.match.card && drawCard(),
+    'ttmc-draw-card-btn': () => page.match && !page.match.card && !page.walk && drawCard(),
     'ttmc-show-answer-btn': showAnswer,
     'ttmc-fail-btn': () => endTurn(0),
     'ttmc-success-btn': () => endTurn(page.match?.card?.note ?? 1),
