@@ -113,6 +113,7 @@
     <div id="cardModal" class="modal" data-id="ttcf-card-modal" data-tv-screen hidden>
       <div class="modal-content card-bg" id="cardModalContent" role="dialog" aria-modal="true">
         <div class="card-header">
+          <button type="button" class="card-close" data-id="ttcf-card-close" data-tv-back aria-label="Annuler la question" data-i18n-aria="cancelQuestion" hidden>×</button>
           <img class="card-medallion" data-id="ttcf-card-medallion" src="./assets/medallions/debuter.webp" alt="" draggable="false" />
           <span id="cardTheme" class="card-theme" data-id="ttcf-card-theme"></span>
         </div>
@@ -154,6 +155,8 @@
               <button type="button" id="manualMoveConfirm" class="btn primary full-width" data-id="ttcf-move-confirm" data-tv-focus data-i18n="confirmMove">Valider le déplacement</button>
             </div>
           </div>
+
+          <button type="button" class="btn card-skip" data-id="ttcf-skip-btn" data-i18n="skip" hidden>Passer la question</button>
         </div>
       </div>
     </div>

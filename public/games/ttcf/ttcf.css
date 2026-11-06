@@ -1264,3 +1264,92 @@ html.tv :focus {
 .wheel:active {
   cursor: grabbing;
 }
+
+/* Card dialog: ✕ top right cancels the question, "Passer la question"
+   at the bottom draws another one. */
+.modal-content {
+  position: relative;
+}
+
+.card-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.45rem;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: max(2.2rem, 5dvh);
+  height: max(2.2rem, 5dvh);
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid var(--wood-dark);
+  background: var(--wood);
+  color: var(--paper);
+  box-shadow: 0 2px 0 var(--wood-dark);
+  font: inherit;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.btn.card-skip {
+  align-self: center;
+  margin-top: 0.75rem;
+  background: transparent;
+  border: 2px dashed var(--wood);
+  box-shadow: none;
+  color: var(--wood);
+  text-shadow: none;
+}
+
+/* Landscape phones: "Passer la question" beside the step's own button, so
+   the card needs no scroll. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .card-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    column-gap: 0.75rem;
+  }
+
+  .card-body > * {
+    grid-column: 1 / -1;
+  }
+
+  .card-body > .btn.card-skip {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    min-height: 2.4rem;
+    padding: 0.25rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .card-body:has(> .card-skip:not([hidden])) > #questionStep,
+  .card-body:has(> .card-skip:not([hidden])) > #evaluationStep {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  /* Question: timer and "Voir la réponse" on one row. */
+  #questionStep:not([hidden]) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+
+  #questionStep > :not(.timer-bar, #showAnswerBtn) {
+    grid-column: 1 / -1;
+  }
+
+  #questionStep > .timer-bar {
+    margin: 0;
+  }
+
+  #questionStep > #showAnswerBtn {
+    min-height: 2.4rem;
+    padding: 0.25rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}

@@ -255,7 +255,10 @@ async function playSpin(landing) {
 }
 
 function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), opening = false) {
-  const pool = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
+  // A skipped card is not drawn again straight away.
+  const previous = page.match.card?.index;
+  const same = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
+  const pool = same.length > 1 ? same.filter(({ index }) => index !== previous) : same;
   const index = pool.length
     ? pool[Math.floor(Math.random() * pool.length)].index
     : Math.floor(Math.random() * page.cards.length);
@@ -299,6 +302,10 @@ function renderCard() {
   $('ttcf-answer-step').hidden = step !== 'answer';
   paintTimer(card);
   if (step === 'answer') renderAnswerButtons(card);
+  // Until the answer shows, the question can be skipped or cancelled.
+  const open = !card.opening && step !== 'answer';
+  $('ttcf-card-close').hidden = !open;
+  $('ttcf-skip-btn').hidden = !open;
   // A new step: the focus moves to its main button (TV remote).
   setTimeout(() => window.MuchogamesTv?.focusScreen(), 0);
 }
@@ -348,6 +355,24 @@ function startTimer() {
 function stopTimer() {
   clearInterval(page.timer);
   page.timer = null;
+}
+
+// ✕: no card any more, the same team draws (or spins) again.
+function cancelCard() {
+  const card = page.match?.card;
+  if (!card || card.opening || card.step === 'answer') return;
+  stopTimer();
+  page.match.card = null;
+  save();
+  renderMatch();
+}
+
+// "Passer la question": another card of the same theme, same team.
+function skipCard() {
+  const card = page.match?.card;
+  if (!card || card.opening || card.step === 'answer') return;
+  stopTimer();
+  drawCard(card.theme);
 }
 
 function showAnswer() {
@@ -447,6 +472,8 @@ function bindControls() {
     'ttcf-mode-board': () => setMode('board'),
     'ttcf-mode-wheel': () => setMode('wheel'),
     'ttcf-show-answer-btn': showAnswer,
+    'ttcf-card-close': cancelCard,
+    'ttcf-skip-btn': skipCard,
     'ttcf-fail-btn': () => endTurn(0),
     'ttcf-success-btn': () => endTurn(page.match?.card?.note ?? 1),
     'ttcf-move-less': () => changeMove(-1),
