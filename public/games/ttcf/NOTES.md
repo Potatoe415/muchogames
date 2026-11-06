@@ -30,4 +30,4 @@ move forward by the rating on a right answer. First team to answer the
 - Card dialog, until the answer shows (not on Débuter): ✕ top right (`ttcf-card-close`, also TV Back) cancels the card, the same team draws or spins again; "Passer la question" (`ttcf-skip-btn`) draws another card of the same theme (never the same one twice in a row), same team, no move.
 - Options panel: "Catégories" explains the 8 card types (FR/EN/ES, `categoriesBody`), above "Règles".
 - A party game on one device: `finish()` without `won` (`docs/PLATFORM_RULES.md` section 4.4).
-- Cards: `public/data/ttcf/ttcf_data.json` (`{ cards: [{ theme, subject, questions: [{ level, q, a }] }] }`). Not all card photos were OCR'd; some text still has OCR artefacts.
+- Cards: `public/data/ttcf/ttcf_data.json` (`{ cards: [{ theme, subject, questions: [{ level, q, a }] }] }`). Not all card photos were OCR'd; some text still has OCR artefacts. 28 cards (2026-11-06) came from an older hand-made batch (git stash `aside-ttmc`, 3 Nov) that never reached the deck; 3 of its cards were only rewordings of deck cards and stay in that stash.
