@@ -38,7 +38,7 @@ follows the platform rules; a new game never goes in the check's baseline.
    validated save, pause overlay and TV wiring (it predates the key names
    below).
 5. **Verify** (`docs/PLATFORM_RULES.md` section 10): `npm run check`, then
-   the browser at 360×640, 640×360, desktop, and `?tv=1` at 960×540,
+   the browser at 360×640 (board 99% wide, section 6.3), 640×360, desktop, and `?tv=1` at 960×540,
    1920×1080 and 3840×2160 with arrows, Enter and Escape only; then a real
    phone.
 
@@ -366,10 +366,13 @@ body {
   cursor: pointer;
 }
 
+/* Portrait: the board is 99% of the screen wide, past the 24px side
+   strips (PLATFORM_RULES 6.3). Draw it to the board's full width. */
 .game-board {
   flex: 1 1 auto;
-  width: 100%;
+  align-self: stretch;
   min-height: 0;
+  margin-inline: calc(50% - 49.5vw);
   touch-action: none;
 }
 
@@ -377,6 +380,13 @@ body {
 html.tv :focus {
   outline: max(3px, 0.4dvh) solid #ffcc00;
   outline-offset: max(2px, 0.3dvh);
+}
+
+/* Landscape: the board stays inside the margins. */
+@media (orientation: landscape) {
+  .game-board {
+    margin-inline: 0;
+  }
 }
 
 /* Landscape phones are ~360px tall. */

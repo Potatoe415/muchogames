@@ -2,6 +2,7 @@
 // finger preview of the next wall, atoms, effects and the hit flash.
 import { drawBall } from "./draw-ball.js";
 import { SOLID, cellAt } from "./grid.js";
+import { snap } from "./layout.js";
 import { BALL_RADIUS } from "./levels.js";
 import { isLive, rayRect } from "./walls.js";
 
@@ -11,19 +12,18 @@ const RAY_COLORS = [
   { body: "#2f6fe0", light: "#a9c8ff" }
 ];
 
+// Cell edges snapped to device pixels, like the field cache (no seams).
 function drawGlow(ctx, grid, layout) {
   const { cell: c, grid: origin } = layout;
+  const at = (start, i) => snap(layout, start + i * c);
   ctx.fillStyle = "#7fd3ff";
   for (let i = 0; i < grid.glow.length; i++) {
     const g = grid.glow[i];
     if (g <= 0) continue;
+    const [cx, cy] = [i % grid.cols, Math.floor(i / grid.cols)];
+    const [x, y] = [at(origin.x, cx), at(origin.y, cy)];
     ctx.globalAlpha = g * 0.55;
-    ctx.fillRect(
-      origin.x + (i % grid.cols) * c,
-      origin.y + Math.floor(i / grid.cols) * c,
-      c,
-      c
-    );
+    ctx.fillRect(x, y, at(origin.x, cx + 1) - x, at(origin.y, cy + 1) - y);
   }
   ctx.globalAlpha = 1;
 }

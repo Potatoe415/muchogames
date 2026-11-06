@@ -7,23 +7,25 @@ const TILE = { face: "#b9c1cd", light: "#e4e8ee", dark: "#8892a1" };
 const CONQUERED = { face: "#0c111b", line: "#151c2a" };
 const EDGE = { face: "#05070c", line: "#2a3550" };
 
-function paintTile(ctx, x, y, c) {
-  const b = Math.max(1, Math.round(c * 0.1));
+// Cells are painted in device pixels; box = { x, y, w, h, bevel, line }.
+function paintTile(ctx, box) {
+  const { x, y, w, h, bevel: b } = box;
   ctx.fillStyle = TILE.dark;
-  ctx.fillRect(x, y, c, c);
+  ctx.fillRect(x, y, w, h);
   ctx.fillStyle = TILE.light;
-  ctx.fillRect(x, y, c - b, c - b);
+  ctx.fillRect(x, y, w - b, h - b);
   ctx.fillStyle = TILE.face;
-  ctx.fillRect(x + b, y + b, c - 2 * b, c - 2 * b);
+  ctx.fillRect(x + b, y + b, w - 2 * b, h - 2 * b);
 }
 
-function paintSolid(ctx, x, y, c, edge) {
+function paintSolid(ctx, box, edge) {
+  const { x, y, w, h, line } = box;
   const skin = edge ? EDGE : CONQUERED;
   ctx.fillStyle = skin.face;
-  ctx.fillRect(x, y, c, c);
+  ctx.fillRect(x, y, w, h);
   ctx.fillStyle = skin.line;
-  ctx.fillRect(x, y, c, 1);
-  ctx.fillRect(x, y, 1, c);
+  ctx.fillRect(x, y, w, line);
+  ctx.fillRect(x, y, line, h);
 }
 
 const isEdge = (grid, x, y) =>
@@ -32,17 +34,24 @@ const isEdge = (grid, x, y) =>
   x >= grid.cols - BORDER ||
   y >= grid.rows - BORDER;
 
+// The cell size is fractional: each cell edge is rounded to a device pixel,
+// so neighbouring cells never leave a seam.
 function paint(cache, grid, layout) {
-  const { cell: c, dpr } = layout;
-  cache.width = Math.round(grid.cols * c * dpr);
-  cache.height = Math.round(grid.rows * c * dpr);
+  const { cell, dpr } = layout;
+  const edge = (i) => Math.round(i * cell * dpr);
+  cache.width = edge(grid.cols);
+  cache.height = edge(grid.rows);
   const ctx = cache.getContext("2d");
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const bevel = Math.max(1, Math.round(cell * dpr * 0.1));
+  const line = Math.max(1, Math.round(dpr));
   for (let y = 0; y < grid.rows; y++) {
     for (let x = 0; x < grid.cols; x++) {
+      const [x0, y0] = [edge(x), edge(y)];
+      const box = { x: x0, y: y0, w: edge(x + 1) - x0, h: edge(y + 1) - y0 };
+      Object.assign(box, { bevel, line });
       const kind = grid.cells[y * grid.cols + x];
-      if (kind === SOLID) paintSolid(ctx, x * c, y * c, c, isEdge(grid, x, y));
-      else paintTile(ctx, x * c, y * c, c);
+      if (kind === SOLID) paintSolid(ctx, box, isEdge(grid, x, y));
+      else paintTile(ctx, box);
     }
   }
 }
@@ -61,8 +70,8 @@ export function createFieldCache() {
         paint(cache, grid, layout);
       }
       const { x, y } = layout.grid;
-      const c = layout.cell;
-      ctx.drawImage(cache, x, y, grid.cols * c, grid.rows * c);
+      const { dpr } = layout;
+      ctx.drawImage(cache, x, y, cache.width / dpr, cache.height / dpr);
     },
     release() {
       painted = null;

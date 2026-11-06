@@ -45,7 +45,9 @@ this before opening the sources.
   creatures into a transparent canvas at load. `tiles.js` maps the engine's
   tile names to these codes (inverse of Lexy's DAT table).
 - 9x9 window (288x288 logical px), camera clamped to the board, drawn square
-  by square like the original. Integer zoom in device px (`surface.js`),
+  by square like the original. Free zoom in device px (`surface.js`: the
+  window fills its host, 99% of a portrait phone's width past the side
+  strips, decision 0064; an original pixel spans 3 or 4 device px),
   smoothing off, `pixelated`. LED counters drawn by `led.js`.
 - `assets/thumbnail.png`: 4:5 hub cover composed from the same tiles.
 

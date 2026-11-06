@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: The party quiz is now "Tu te crois fort ?" (`ttcf`, decision 0063) with a wheel mode, a one-step Débuter card and a category guide in Options; before that, 8 teams, token walk and the meadow art.
+Status: New platform rule 6.3 (decision 0064): in portrait the board is 99% of the phone's width; JezzBall and Chip's Challenge done. Before that, the party quiz became "Tu te crois fort ?" (`ttcf`, decision 0063) with a wheel mode, a one-step Débuter card and a category guide in Options; before that, 8 teams, token walk and the meadow art.
 Focus: Owner play-tests of TTCF (board and wheel), 4 en ligne, Easy Frog, Piou, Simon, Tetris, then 2048 and Fusion de fruits; owner phone check of the hub.
 Level: L1 (one game)
 
@@ -10,9 +10,10 @@ Context:
 - Working_On: none
 - Relevant_Files: `public/games/ttcf/NOTES.md`, `public/games/connectfour/NOTES.md`, `public/games/scrabble/NOTES.md`, `public/games/simon/NOTES.md`, `public/hub-config.json`, `docs/PLATFORM_RULES.md`, `docs/NEW_GAME.md`
 - Do_Not_Touch: GameBoy Web; Space Cadet engine (`"resumable": false`); existing games' `localStorage` keys; the old `easyfrog` repo and its Firebase deploy (left as they were).
-- Relevant_Decisions: 0063, 0062, 0061, 0060, 0059, 0054, 0053
+- Relevant_Decisions: 0064, 0063, 0062, 0061, 0060, 0059, 0054, 0053
 
 Next:
+- Owner: JezzBall and Chip's Challenge on a phone in portrait: board 99% wide; say if a swipe from the board's edge triggers the system back too often, and if Chip's tiles look uneven at the free zoom.
 - Owner: look at TTCF's new look on a phone (portrait + landscape) and the TV; say if the hub thumbnail should use the new art too (still the old 3.6 MB `thumbnail.jpg`).
 - Owner: play 4 en ligne (`/games/connectfour/`) on a phone (portrait + landscape), desktop and the TV (`?tv=1` once); say if a solo mode vs a bot is wanted — see `docs/BACKLOG.md` Now.
 - Owner: play Easy Frog on a phone (portrait + landscape), desktop and the TV (`/games/easyfrog/index.html?tv=1` once) — see `docs/BACKLOG.md` Now.
@@ -34,7 +35,6 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-06 Rule 6.3 (0064): portrait board 99% of the phone's width, past the 24px side strips (HUD, buttons, cards keep them); `NEW_GAME.md` template + checklist. JezzBall: fractional cell size, cell edges snapped to device px (field cache, glow), dimming as wide as the board. Chip's Challenge: free zoom (owner). Headless Edge: JezzBall 98.8-99% at 320×568 / 360×740 / 412×915 / 600×960 (was 87-88%), Chip's 98% at 360×740 / 412×915 (was 70-80%), 69% at 320×568 (height-bound); landscape / 1920×1080 unchanged; walls and capture draw without seams; no scroll. `npm run check` OK.
 - 2026-11-06 TTCF: teams start on D (owner confirmed, matches the video rules the owner sent); a team on D draws a random category, moves back stop on D; rules text says so (FR/EN/ES); hub `players` [2, 16] (teams of several players). Headless Edge: start on D, walk D -> 3, move back to D, saves with pos 0 resume. `npm run check` OK.
 - 2026-11-06 TTCF card: ✕ cancels the question (same team plays again), "Passer la question" draws another of the same theme; both hidden once the answer shows and on Débuter. Headless Edge at 360×740, 740×360, 1920×1080 (`?tv=1`): skip from rating and question, cancel on board and wheel, TV Back closes the card (no quit dialog), resume keeps them; no clipped card. `npm run check` OK.
-- 2026-11-06 Party quiz renamed TTCF "Tu te crois fort ?" (0063, old id not carried over): id, folders, files, storage, hub entry, card text. Wheel mode "Roue de la fortune" (dashboard choice, 10-segment wheel, progress bars, Gagner card at 42). Débuter card shows instruction + italic answer + "Aller au plateau". Options: "Catégories" guide (FR/EN/ES). `ttcf.js` split (`board.js`, `wheel.js`). Headless Edge at 320×568 up to 3840×2160: Débuter card, board turn and walk, wheel spin / card / move / resume / win, 8 teams, categories FR/EN, old save without mode resumes on the board; no page scroll. `npm run check` OK.
-- 2026-11-05 4 en ligne (`connectfour`, Connect Four): hot-seat Red vs Yellow, 7×6, full columns refused, win (4+ in any direction, line highlighted) / draw, Rejouer / Menu, save = move list, `finish({})`; hub entry (Réflexion, 2 players, 5 min). Node rule checks + headless Chromium (CDP) from 320×568 to 3840×2160 and `?tv=1`: hub tile, play, reject, resume, quit, all wins, draw, keyboard, FR/EN/ES, no scroll, margins. `npm run check` OK.

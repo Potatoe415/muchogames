@@ -208,11 +208,14 @@ html.tv .cc-level:focus {
   background: var(--cc-grey);
 }
 
+/* Portrait: the board is 99% of the screen wide, past the 24px side
+   strips (platform rule 6.3); the panel and controls keep them. */
 .cc-board-host {
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
   min-height: 0;
+  margin-inline: calc(50% - 49.5vw);
   display: grid;
   place-items: center;
   overflow: hidden;

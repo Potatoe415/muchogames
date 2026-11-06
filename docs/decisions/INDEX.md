@@ -69,6 +69,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0061 | 2026-11-05 | Game rules rewrite: Game Dashboard, solo best, 40px bottom margin, tested boilerplate; old games one by one | Accepted |
 | 0062 | 2026-11-05 | Hub Home opens on "Most played" (newest as fallback); `cartes` is card games only, Yams moves to `reflexion` | Accepted |
 | 0063 | 2026-11-06 | Party quiz renamed "Tu te crois fort ?", game id `ttcf` (old saves and stats not carried over) | Accepted |
+| 0064 | 2026-11-06 | Play area 99% of the phone's width in portrait (leaves the 24px side strips; JezzBall, Chip's Challenge free zoom) | Accepted |
 
 ## When to log a decision
 Any of:

@@ -1,7 +1,8 @@
 // Square DPR-aware canvas for the 288x288 window, sized by a ResizeObserver
-// on its host. The zoom (device pixels per original pixel) is an integer
-// whenever the host can fit at least one full-size window, so every tile
-// stays pixel-perfect.
+// on its host. The zoom (device pixels per original pixel) is free, so the
+// window fills its host (99% of a portrait phone, platform rule 6.3, owner
+// 2026-11-06); smoothing stays off, so an original pixel spans 3 or 4
+// device pixels at a non-integer zoom.
 import { VIEW_PX } from "./render.js";
 
 const MAX_DPR = 3;
@@ -22,10 +23,8 @@ export function createSurface(canvas, host) {
     const rect = host.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, MAX_DPR);
     const fit = Math.min(rect.width, rect.height) - FRAME_CSS;
-    const avail = Math.max(1, Math.floor(fit * dpr));
-    const zoom =
-      avail >= VIEW_PX ? Math.floor(avail / VIEW_PX) : avail / VIEW_PX;
-    const px = Math.max(1, Math.round(VIEW_PX * zoom));
+    const px = Math.max(1, Math.floor(fit * dpr));
+    const zoom = px / VIEW_PX;
     canvas.width = px;
     canvas.height = px;
     canvas.style.width = `${px / dpr}px`;

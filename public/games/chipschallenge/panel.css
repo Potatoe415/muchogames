@@ -190,6 +190,10 @@
     flex-direction: row;
   }
 
+  .cc-board-host {
+    margin-inline: 0;
+  }
+
   .cc-side {
     width: clamp(230px, 30vw, 300px);
     justify-content: center;

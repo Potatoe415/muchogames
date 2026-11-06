@@ -297,6 +297,40 @@ padding-right: max(24px, env(safe-area-inset-right, 0px));
 - The shared header and options panel already respect the safe areas.
 - Verify on a real phone in both orientations: DevTools device mode does
   not show the system bars.
+- The play area (section 6.3) is the only exception to the side strips.
+
+### 6.3 Play area 99% of the phone's width *(new games)*
+
+In portrait, the play area (the canvas, or the board for a DOM game) is
+99% of the screen's width (decision 0064). It leaves the container's 24px
+side padding; everything else (HUD, buttons, cards, text) keeps it.
+
+```css
+/* Portrait: the board is 99% of the screen wide, past the side strips. */
+.game-board {
+  margin-inline: calc(50% - 49.5vw);
+}
+
+@media (orientation: landscape) {
+  .game-board {
+    margin-inline: 0;
+  }
+}
+```
+
+- The board's parent stretches it (column flex or block, no
+  `align-items: center` on that parent), and the drawing fills the
+  board's width: fractional cell / tile size, cell edges rounded to device
+  pixels so cells show no seam. No integer-zoom rounding that leaves a
+  margin (Chip's Challenge pixel art scales freely, owner 2026-11-06).
+- Only the height can make it narrower: a square or tall board whose
+  controls do not fit below it (very small phone, portrait tablet).
+- Landscape, desktop and TV: the board stays as large as it fits next to
+  its controls, inside the margins (sections 6.2 and 7).
+- A dimming layer over the board (pause, end card) is as wide as the
+  board; the card on it keeps the side strips.
+- Not statically checkable: measure the board in the browser at 360×740
+  and 412×915 (≥ 98.5% of `innerWidth`).
 
 ## 7. TV (1080p, 4K)
 
@@ -380,7 +414,7 @@ Every action works with all three.
    build).
 2. In the browser (`npm run dev`):
    - phone portrait (360×640) and landscape (640×360): nothing in the
-     bottom 40px, no scroll;
+     bottom 40px, no scroll, board 99% wide in portrait (section 6.3);
    - desktop: mouse, then keyboard only (Tab, Enter, Space, Escape,
      arrows);
    - TV (`?tv=1`): arrows, Enter and Escape only, at 960×540, 1920×1080

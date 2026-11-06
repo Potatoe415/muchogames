@@ -1,19 +1,24 @@
-// Responsive geometry: the grid centered in the canvas with integer cell
-// sizes, plus a DPR-aware canvas surface driven by a ResizeObserver.
-const PAD = 8;
+// Responsive geometry: the grid centered in the canvas and as large as it
+// fits (fractional cell size, so a portrait phone gets a grid 99% of the
+// screen wide; the field cache rounds cell edges to device pixels), plus a
+// DPR-aware canvas surface driven by a ResizeObserver.
 const MAX_DPR = 3;
 
 export const isPortrait = (width, height) => height > width;
 
+// CSS px rounded to the nearest device pixel.
+export const snap = (layout, value) =>
+  Math.round(value * layout.dpr) / layout.dpr;
+
 export function computeLayout(size, cols, rows) {
   const { width, height, dpr } = size;
-  const fit = Math.min((width - 2 * PAD) / cols, (height - 2 * PAD) / rows);
-  const cell = Math.max(4, Math.floor(fit));
-  const grid = {
-    x: Math.round((width - cols * cell) / 2),
-    y: Math.round((height - rows * cell) / 2)
+  const cell = Math.max(4, Math.min(width / cols, height / rows));
+  const layout = { width, height, dpr, cell, cols, rows };
+  layout.grid = {
+    x: snap(layout, (width - cols * cell) / 2),
+    y: snap(layout, (height - rows * cell) / 2)
   };
-  return { width, height, dpr, cell, cols, rows, grid };
+  return layout;
 }
 
 export function cellFromPoint(layout, px, py) {

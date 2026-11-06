@@ -17,7 +17,7 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 | `balls.js` | Spawn, sub-stepped motion (≤ 0.2 cell), per-axis square-box collision against `SOLID`, ball/ball swap, `touchesRect`. |
 | `levels.js` | Difficulty modes (grid, speeds, target, lives, timer, points, head grace), `levelConfig(level, difficulty)`. |
 | `prefs.js` | localStorage settings: language, sound, swipe, last difficulty, best score per difficulty, easy help seen. |
-| `layout.js` | Integer cell size, centered grid, DPR-aware canvas surface. |
+| `layout.js` | Fractional cell size (grid as large as it fits), centered grid snapped to device px, `snap()`, DPR-aware canvas surface. The field cache and the glow round each cell edge to a device pixel (no seams). |
 | `render.js`, `draw-field.js`, `draw-ball.js` | Frame drawing; static field cached off-screen (repainted on `grid.version` / size change); red/white atoms. |
 | `hud.js`, `input.js`, `audio.js`, `loop.js`, `effects.js`, `i18n.js` | DOM HUD + axis button, pointer/wheel/keyboard, synthesized sounds, fixed 60 Hz loop, particles, FR/EN/ES copy + rules. |
 
@@ -51,3 +51,4 @@ are verbatim copies of Pipe Dream's. Read this before opening the sources.
 - Dashboard: `jezzball-best-score` wraps both bests (`jezzball-best-score-easy`, `jezzball-best-score-normal`; storage keys unchanged), Resume above the two mode buttons. In play the back arrow is replaced by `jezzball-quit-button` (✖, `data-match-quit`): it pauses first. Pause / level-cleared / game-over cards have a "Menu du jeu" button. End screen: `jezzball-final-best-score` (+ `jezzball-new-best`). Live score: `jezzball-score`.
 - Keyboard / TV: the focused canvas keeps a cursor (starts at the centre): arrows move it with the wall preview, Enter builds along the active axis; Space or the axis button flips it. At a grid edge `data-tv-keys` drops that direction so the remote reaches the axis button and the header. Escape = ✖.
 - Landscape phones: the pitch is hidden and the easy intro lays its 3 steps side by side so the card fits in 360px.
+- Portrait: `.jb-board` (and the overlays' dimming) is 99% of the screen wide, past the 24px side strips (decision 0064); the HUD and the cards keep them. Landscape unchanged.
