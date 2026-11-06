@@ -1,7 +1,7 @@
 // Game logic for TTCF: Game Dashboard (teams, resume), board, card dialog,
 // win screen. The whole match lives in page.match and is saved after every
 // step (store.js), so leaving by any route brings it back from the dashboard.
-import { LAST, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
+import { LAST, THEMES, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
 import { clearMatch, hasMatch, loadMatch, readMode, storeMatch, storeMode } from './store.js';
 import { createWheel } from './wheel.js';
@@ -266,7 +266,8 @@ async function playSpin(landing) {
   drawCard(team.pos >= LAST ? 'Gagner' : theme);
 }
 
-function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), opening = false) {
+// bonus: the Superbe card whose rule this card is played under.
+function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), opening = false, bonus = null) {
   // A skipped card is not drawn again straight away.
   const previous = page.match.card?.index;
   const same = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
@@ -274,13 +275,60 @@ function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), open
   const index = pool.length
     ? pool[Math.floor(Math.random() * pool.length)].index
     : Math.floor(Math.random() * page.cards.length);
-  const direct = opening || SPECIAL_THEMES.includes(theme) || !page.cards[index].questions[0].level;
-  page.match.card = { index, theme, step: direct ? 'question' : 'eval', note: null, opening, timeLeft: TIMER_SECONDS, move: 0 };
+  const superbe = page.cards[index].theme === 'Superbe';
+  const direct = opening || (SPECIAL_THEMES.includes(theme) && !superbe) || !page.cards[index].questions[0].level;
+  const step = superbe ? 'bonus' : direct ? 'question' : 'eval';
+  page.match.card = { index, theme, step, note: null, opening, timeLeft: TIMER_SECONDS, move: 0, bonus };
   page.peek = false;
   save();
   renderCard();
   // The Débuter card has no 30 s timer.
-  if (direct && !opening) startTimer();
+  if (step === 'question' && !opening) startTimer();
+}
+
+// A Superbe card names its theme ("Thème Scolaire imposé") or leaves it
+// free ("Choix du Thème libre"): the themes the team may play.
+function bonusThemes(index) {
+  const text = page.cards[index].questions[0].q || '';
+  const imposed = THEMES.find((theme) => new RegExp(`Thème ${theme} imposé`, 'i').test(text));
+  return imposed ? [imposed] : THEMES;
+}
+
+// The Superbe card's rule, then a card of the chosen theme under it.
+function renderBonus(card) {
+  const themes = bonusThemes(card.index);
+  const labels = THEME_LABELS[page.lang];
+  $('ttcf-bonus-theme').textContent = themes.length === 1 ? t('bonusImposed', { theme: labels[themes[0]] }) : t('bonusFree');
+  $('ttcf-bonus-text').textContent = page.cards[card.index].questions[0].a || '';
+  $('ttcf-bonus-choices').replaceChildren(
+    ...themes.map((theme, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = `btn bonus-choice ${themeClass(theme)}`;
+      btn.dataset.id = `ttcf-bonus-play-${themeClass(theme)}`;
+      if (i === 0) btn.dataset.tvFocus = '';
+      btn.textContent = themes.length === 1 ? t('bonusPlay', { theme: labels[theme] }) : labels[theme];
+      btn.addEventListener('click', () => playBonus(theme));
+      return btn;
+    })
+  );
+}
+
+function playBonus(theme) {
+  const card = page.match?.card;
+  if (!card || card.step !== 'bonus' || !bonusThemes(card.index).includes(theme)) return;
+  drawCard(theme, false, card.index);
+}
+
+// On the card played under a Superbe rule: the rule stays in sight.
+function renderBonusRule(card) {
+  const rule = $('ttcf-bonus-rule');
+  rule.hidden = card.bonus == null;
+  if (card.bonus == null) return;
+  const bonus = page.cards[card.bonus];
+  const title = document.createElement('strong');
+  title.textContent = t('bonusRule', { subject: bonus.subject });
+  rule.replaceChildren(title, document.createTextNode(` ${bonus.questions[0].a || ''}`));
 }
 
 function cardQuestion(card) {
@@ -316,10 +364,14 @@ function renderCard() {
   // The side on show: the question again while the answer card is turned back.
   const face = flippable && page.peek ? 'question' : step;
   $('ttcf-card-modal').classList.toggle('is-opening', card.opening);
+  $('ttcf-bonus-step').hidden = face !== 'bonus';
+  if (face === 'bonus') renderBonus(card);
+  renderBonusRule(card);
   $('ttcf-eval-step').hidden = face !== 'eval';
   $('ttcf-question-step').hidden = face !== 'question' && !card.opening;
   $('ttcf-answer-step').hidden = face !== 'answer';
   $('ttcf-card-flip').hidden = !flippable;
+  $('ttcf-timer').hidden = face !== 'question' || card.opening;
   paintTimer(card);
   if (face === 'answer') renderAnswerButtons(card);
   // Until the answer shows, the question can be skipped or cancelled.
@@ -331,7 +383,8 @@ function renderCard() {
 }
 
 function renderAnswerButtons(card) {
-  const manual = SPECIAL_THEMES.includes(card.theme) && card.theme !== 'Gagner' && !card.opening;
+  // Challenge and Superbe rules move by their own count: set with + and −.
+  const manual = (card.bonus != null || SPECIAL_THEMES.includes(card.theme)) && card.theme !== 'Gagner' && !card.opening;
   $('ttcf-manual-move').hidden = !manual;
   document.getElementById('validationButtons').hidden = manual;
   $('ttcf-move-value').textContent = String(card.move);
@@ -351,7 +404,8 @@ function renderAnswerButtons(card) {
 function selectNote(note) {
   const card = page.match?.card;
   if (!card || card.step !== 'eval') return;
-  Object.assign(card, { note, step: 'question', timeLeft: TIMER_SECONDS });
+  // Under a Superbe rule the move starts at the rating, then + and −.
+  Object.assign(card, { note, step: 'question', timeLeft: TIMER_SECONDS, move: card.bonus != null ? note : card.move });
   save();
   renderCard();
   startTimer();
@@ -392,7 +446,7 @@ function skipCard() {
   const card = page.match?.card;
   if (!card || card.opening || card.step === 'answer') return;
   stopTimer();
-  drawCard(card.theme);
+  drawCard(card.theme, false, card.bonus ?? null);
 }
 
 function showAnswer() {

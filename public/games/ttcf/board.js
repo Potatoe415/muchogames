@@ -1,6 +1,6 @@
 // The board: 43 spaces (Débuter, 41 theme spaces, Gagner), the team
 // tokens on them, and the token walk after a move.
-const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
+export const THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire'];
 // Spaces drawn with a line icon (assets/icons/); the others show their medallion.
 const ICON_THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire', 'Challenge', 'Superbe'];
 // Token walk: one space per step, the whole walk in about WALK_MS, each

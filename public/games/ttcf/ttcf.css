@@ -487,6 +487,9 @@ body {
     max(40px, calc(env(safe-area-inset-bottom, 0px) + 24px))
     max(24px, env(safe-area-inset-left, 0px));
   animation: ttcf-fade 0.2s ease;
+  /* The card, and the timer bar under it. */
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .modal-content {
@@ -495,6 +498,8 @@ body {
   width: 100%;
   max-width: 34em;
   max-height: 100%;
+  min-height: 0;
+  flex: 0 1 auto;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -646,13 +651,15 @@ body {
 
 /* Timer: the orange gauge in a wooden frame. */
 .timer-bar {
+  flex: 0 0 auto;
   width: 100%;
+  max-width: 34em;
   height: 0.9rem;
   background: #fffaf0;
   border: 2px solid var(--wood-dark);
   border-radius: 999px;
   box-sizing: border-box;
-  margin-bottom: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
@@ -850,7 +857,6 @@ html.tv :focus {
 
   .timer-bar {
     height: 0.7rem;
-    margin-bottom: 0.5rem;
   }
 
   .win-hero {
@@ -979,7 +985,6 @@ html.tv :focus {
   color: var(--wood);
 }
 
-.is-opening .timer-bar,
 .is-opening #showAnswerBtn,
 .is-opening .selected-note {
   display: none;
@@ -1293,6 +1298,52 @@ html.tv :focus {
   cursor: pointer;
 }
 
+/* Superbe card: its theme (set or free) and rule, then a button per theme
+   it allows; the card played under it keeps the rule in a pink box. */
+.bonus-theme {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--theme-ink);
+}
+
+.bonus-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn.bonus-choice {
+  --btn: var(--theme-improbable);
+  --btn-edge: var(--ink-improbable);
+  flex: 1 1 8rem;
+  color: var(--btn-edge);
+  text-shadow: none;
+}
+
+.btn.bonus-choice.mature { --btn: var(--theme-mature); --btn-edge: var(--ink-mature); }
+.btn.bonus-choice.plaisir { --btn: var(--theme-plaisir); --btn-edge: var(--ink-plaisir); }
+.btn.bonus-choice.scolaire { --btn: var(--theme-scolaire); --btn-edge: var(--ink-scolaire); }
+
+.bonus-rule {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border: 2px dashed var(--ink-superbe);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--theme-superbe) 35%, transparent);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.bonus-rule strong {
+  color: var(--ink-superbe);
+}
+
 /* Answer side: ↺ top left turns the card back to its question (and again). */
 .card-flip {
   right: auto;
@@ -1338,25 +1389,10 @@ html.tv :focus {
   }
 
   .card-body:has(> .card-skip:not([hidden])) > #questionStep,
-  .card-body:has(> .card-skip:not([hidden])) > #evaluationStep {
+  .card-body:has(> .card-skip:not([hidden])) > #evaluationStep,
+  .card-body:has(> .card-skip:not([hidden])) > #bonusStep {
     grid-column: 1;
     grid-row: 3;
-  }
-
-  /* Question: timer and "Voir la réponse" on one row. */
-  #questionStep:not([hidden]) {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-    column-gap: 0.75rem;
-  }
-
-  #questionStep > :not(.timer-bar, #showAnswerBtn) {
-    grid-column: 1 / -1;
-  }
-
-  #questionStep > .timer-bar {
-    margin: 0;
   }
 
   #questionStep > #showAnswerBtn {

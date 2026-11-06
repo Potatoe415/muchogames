@@ -5,7 +5,7 @@ const SAVE_KEY = 'muchogames_ttcf_save';
 const MODE_KEY = 'muchogames_ttcf_mode';
 const VERSION = 1;
 const MODES = ['board', 'wheel'];
-const STEPS = ['eval', 'question', 'answer'];
+const STEPS = ['bonus', 'eval', 'question', 'answer'];
 const MAX_TEAMS = 8;
 
 const isInt = (value, min, max) => Number.isInteger(value) && value >= min && value <= max;
@@ -24,7 +24,9 @@ function validCard(card, cards, last) {
     (card.note === null || isInt(card.note, 1, 10)) &&
     typeof card.opening === 'boolean' &&
     isInt(card.timeLeft, 0, 30) &&
-    isInt(card.move, -last, last)
+    isInt(card.move, -last, last) &&
+    // A card played under a Superbe card's rule: that card's index.
+    (card.bonus == null || (isInt(card.bonus, 0, cards ? cards.length - 1 : Infinity) && (!cards || cards[card.bonus].theme === 'Superbe')))
   );
 }
 

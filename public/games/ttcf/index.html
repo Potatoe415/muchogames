@@ -123,6 +123,14 @@
         </div>
         <div class="card-body">
           <h3 id="cardSubject" class="card-subject" data-id="ttcf-card-subject"></h3>
+          <p class="bonus-rule" data-id="ttcf-bonus-rule" hidden></p>
+
+          <!-- Superbe card: its rule and its theme, then a card of that theme is played. -->
+          <div id="bonusStep" hidden data-id="ttcf-bonus-step">
+            <p class="bonus-theme" data-id="ttcf-bonus-theme"></p>
+            <p class="card-text" data-id="ttcf-bonus-text"></p>
+            <div class="bonus-choices" data-id="ttcf-bonus-choices"></div>
+          </div>
 
           <div id="evaluationStep" data-id="ttcf-eval-step">
             <p data-i18n="howMuch">Tu te crois fort ?</p>
@@ -134,8 +142,6 @@
           <div id="questionStep" hidden data-id="ttcf-question-step">
             <div class="selected-note" id="selectedNote" data-id="ttcf-selected-note"></div>
             <p id="cardQuestion" class="card-text" data-id="ttcf-card-question"></p>
-
-            <div class="timer-bar" data-id="ttcf-timer"><div id="timerFill" class="timer-fill"></div></div>
 
             <button type="button" id="showAnswerBtn" class="btn secondary" data-id="ttcf-show-answer-btn" data-tv-focus data-i18n="showAnswer">Voir la réponse</button>
           </div>
@@ -163,6 +169,8 @@
           <button type="button" class="btn card-skip" data-id="ttcf-skip-btn" data-i18n="skip" hidden>Passer la question</button>
         </div>
       </div>
+      <!-- Under the card, so it does not turn with it. -->
+      <div class="timer-bar" data-id="ttcf-timer" hidden><div id="timerFill" class="timer-fill"></div></div>
     </div>
 
     <!-- Win Screen -->

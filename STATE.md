@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: TTCF's card turns over on Voir la réponse, and a ↺ button top left on the answer side turns it back to the question (timer stays stopped). Before that, 4 en ligne gets a bot (ticket #11): dashboard mode selector Joueur contre joueur / Bot facile / Bot normal, random first colour in every mode, mode locked during a match. TTCF no longer flashes its 8 acorns on the dashboard at first open with a saved match, and a new match shows its own board under the Débuter card. Before that, Salade de Cafards preloads its images (new `preload.js`), all WebP now (2.5 MB -> 258 KB); platform rule 6.3 (decision 0064, portrait board 99% wide); the party quiz "Tu te crois fort ?" (`ttcf`, decision 0063).
+Status: TTCF Superbe cards now explain themselves: the rule and its theme (set or free), then a real card of that theme is played under the rule; the 30 s timer bar sits under the card. Before that, the card turns over on Voir la réponse (↺ turns it back). Before that, 4 en ligne gets a bot (ticket #11): dashboard mode selector Joueur contre joueur / Bot facile / Bot normal, random first colour in every mode, mode locked during a match. TTCF no longer flashes its 8 acorns on the dashboard at first open with a saved match, and a new match shows its own board under the Débuter card. Before that, Salade de Cafards preloads its images (new `preload.js`), all WebP now (2.5 MB -> 258 KB); platform rule 6.3 (decision 0064, portrait board 99% wide); the party quiz "Tu te crois fort ?" (`ttcf`, decision 0063).
 Focus: Owner phone check of TTCF's first open (no acorn flash) and of Salade de Cafards' images; play-tests of 4 en ligne (bots), TTCF (board and wheel), Easy Frog, Piou, Simon, Tetris, then 2048 and Fusion de fruits; owner phone check of the hub.
 Level: L1 (one game)
 
@@ -13,7 +13,7 @@ Context:
 - Relevant_Decisions: 0064, 0063, 0062, 0061, 0060, 0059, 0054, 0053
 
 Next:
-- Owner: TTCF on a phone: Voir la réponse turns the card, ↺ top left of the answer turns it back and forth; untested in a browser (owner asked for no test), only `npm run check`.
+- Owner: TTCF on a phone: a Superbe space (or wheel slice) shows the rule + theme buttons, then a card of that theme with the rule above it; timer bar under the card; Voir la réponse turns the card, ↺ turns it back. Not run in a browser, only `npm run check`.
 - Owner: TTCF on a phone, first open with a match saved: no acorn row flash, Resume greyed for a moment then usable; start a match: all acorns on D under the Débuter card.
 - Owner: Salade de Cafards on a phone: cards, background and banner sharp enough after the WebP shrink; "Chargement des cartes…" only flashes on a slow first load.
 - Owner: JezzBall and Chip's Challenge on a phone in portrait: board 99% wide; say if a swipe from the board's edge triggers the system back too often, and if Chip's tiles look uneven at the free zoom.
@@ -36,5 +36,5 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-06 TTCF Superbe: was played as a question (its theme line as the question, its rule as the answer, then + / −), so nobody knew what to do. Now step `bonus` shows rule + theme, then plays a card of that theme under the rule (`card.bonus`, save still v1). Timer bar moved under the card. `npm run check` OK, no browser run.
 - 2026-11-06 TTCF card flip: Voir la réponse turns the card over (rotateY, 400 ms, none with reduced motion); ↺ `ttcf-card-flip` top left of the answer side shows the question again (display only, timer stays stopped). Not run in a browser at the owner's request. `npm run check` OK.
-- 2026-11-06 TTCF first-open flash: the dashboard's acorn row (all 8 team pieces) showed until the deck loaded, then vanished when Resume appeared; now Resume is decided from the save at once (`store.js` `hasMatch`, disabled until the deck is in) and the row is hidden in the HTML until that. A new match renders its board before the Débuter card (it showed an empty board, or the last match's tokens). Headless Chromium (CDP, 390x844, throttled, per-frame sampling): fresh, saved and quit-then-restart launches show no stray pieces. `npm run check` OK.
