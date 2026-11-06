@@ -31,7 +31,7 @@ const page = {
   spinning: false,
   turning: false,
   // Answer shown, card turned back to its question side (display only: not
-  // saved, the timer stays stopped).
+  // saved, the timer goes on).
   peek: false
 };
 
@@ -187,7 +187,7 @@ function resumeMatch() {
   page.peek = false;
   showScreen('board');
   renderMatch();
-  if (saved.card?.step === 'question' && !saved.card.opening) startTimer();
+  if (timed(saved.card)) startTimer();
 }
 
 function save() {
@@ -371,7 +371,7 @@ function renderCard() {
   $('ttcf-question-step').hidden = face !== 'question' && !card.opening;
   $('ttcf-answer-step').hidden = face !== 'answer';
   $('ttcf-card-flip').hidden = !flippable;
-  $('ttcf-timer').hidden = face !== 'question' || card.opening;
+  $('ttcf-timer').hidden = !timed(card);
   paintTimer(card);
   if (face === 'answer') renderAnswerButtons(card);
   // Until the answer shows, the question can be skipped or cancelled.
@@ -415,11 +415,15 @@ function paintTimer(card) {
   document.getElementById('timerFill').style.width = card.opening ? '100%' : `${(card.timeLeft / TIMER_SECONDS) * 100}%`;
 }
 
+// The 30 s run from the question on, through the answer and any turn of the
+// card, until the turn ends (not on Débuter, nor on a Superbe rule or a rating).
+const timed = (card) => Boolean(card && !card.opening && (card.step === 'question' || card.step === 'answer'));
+
 function startTimer() {
   stopTimer();
   page.timer = setInterval(() => {
     const card = page.match?.card;
-    if (!card || card.step !== 'question' || card.timeLeft <= 0) return stopTimer();
+    if (!timed(card) || card.timeLeft <= 0) return stopTimer();
     card.timeLeft--;
     paintTimer(card);
     save();
@@ -453,14 +457,13 @@ function showAnswer() {
   const card = page.match?.card;
   if (page.peek) return flipBack();
   if (!card || card.step !== 'question') return;
-  stopTimer();
   card.step = 'answer';
   save();
   turnCard(renderCard);
 }
 
 // The ↺ button on the answer side: the card turns back to its question, and
-// again to its answer. The timer was stopped by the answer and stays so.
+// again to its answer. The timer goes on.
 function flipBack() {
   const card = page.match?.card;
   if (!card || card.opening || card.step !== 'answer' || page.turning) return;
@@ -499,6 +502,7 @@ function endTurn(moveBy) {
   const match = page.match;
   if (!match?.card) return;
   const { opening } = match.card;
+  stopTimer();
   match.card = null;
   const team = match.teams[match.cur];
   const from = team.pos;
