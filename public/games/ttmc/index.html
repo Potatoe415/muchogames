@@ -55,6 +55,12 @@
     <!-- Game Dashboard: title, resume, teams, start -->
     <section id="setupScreen" class="screen" data-id="ttmc-setup-screen" data-tv-screen>
       <div class="setup-card">
+        <div class="setup-hero" data-id="ttmc-setup-hero" aria-hidden="true">
+          <img src="./assets/token-red.webp" alt="" draggable="false" />
+          <img src="./assets/token-blue.webp" alt="" draggable="false" />
+          <img src="./assets/token-yellow.webp" alt="" draggable="false" />
+          <img src="./assets/token-purple.webp" alt="" draggable="false" />
+        </div>
         <h2 class="setup-title" data-i18n="title">Tu te mets combien ?</h2>
         <button type="button" id="resumeBtn" class="btn primary" data-id="ttmc-resume-button" data-tv-focus data-i18n="resume" hidden>Reprendre la partie</button>
         <p class="setup-label" data-i18n="teams">Équipes</p>
@@ -86,6 +92,7 @@
     <div id="cardModal" class="modal" data-id="ttmc-card-modal" data-tv-screen hidden>
       <div class="modal-content card-bg" id="cardModalContent" role="dialog" aria-modal="true">
         <div class="card-header">
+          <img class="card-medallion" data-id="ttmc-card-medallion" src="./assets/medallions/debuter.webp" alt="" draggable="false" />
           <span id="cardTheme" class="card-theme" data-id="ttmc-card-theme"></span>
         </div>
         <div class="card-body">
@@ -132,7 +139,11 @@
 
     <!-- Win Screen -->
     <section id="winScreen" class="screen" data-id="ttmc-win-screen" data-tv-screen hidden>
-      <div class="setup-card">
+      <div class="setup-card win-card">
+        <div class="win-hero" aria-hidden="true">
+          <img class="win-medallion" src="./assets/medallions/gagner.webp" alt="" draggable="false" />
+          <img class="win-token" data-id="ttmc-winner-token" src="./assets/token-red.webp" alt="" draggable="false" />
+        </div>
         <h2 id="winnerName" data-id="ttmc-winner-name"></h2>
         <p data-i18n="won">A remporté la partie !</p>
         <button type="button" id="restartBtn" class="btn primary" data-id="ttmc-restart-btn" data-tv-focus data-i18n="newGame">Nouvelle partie</button>

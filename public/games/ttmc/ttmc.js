@@ -25,6 +25,9 @@ BOARD_TRACK.push('Gagner'); // 42
 const LAST = BOARD_TRACK.length - 1;
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
+// Art in ./assets (cut by scripts/ttmc_slice.py; icons/ drawn by hand).
+const TOKEN_ART = ['red', 'blue', 'yellow', 'purple'].map((c) => `./assets/token-${c}.webp`);
+const ICON_THEMES = ['Improbable', 'Mature', 'Plaisir', 'Scolaire', 'Challenge', 'Superbe'];
 
 const page = {
   lang: readLang(),
@@ -38,6 +41,16 @@ const page = {
 
 const t = (key, vars) => translate(page.lang, key, vars);
 const themeClass = (theme) => theme.toLowerCase().replace(/é/g, 'e').replace(/ /g, '-');
+const medallionArt = (theme) => `./assets/medallions/${themeClass(theme)}.webp`;
+
+function picture(src, className) {
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = '';
+  img.className = className;
+  img.draggable = false;
+  return img;
+}
 
 function readLang() {
   try {
@@ -94,7 +107,7 @@ function renderTeamInputs() {
       input.value = page.names[i] ?? '';
       input.addEventListener('input', () => (page.names[i] = input.value));
       input.addEventListener('keydown', leaveInputWithArrows);
-      row.append(input);
+      row.append(picture(TOKEN_ART[i], 'team-avatar'), input);
       return row;
     })
   );
@@ -178,7 +191,9 @@ function quitMatch() {
 
 function renderMatch() {
   const { teams, cur } = page.match;
-  $('ttmc-turn-indicator').textContent = t('turnOf', { name: teams[cur].name });
+  const label = document.createElement('span');
+  label.textContent = t('turnOf', { name: teams[cur].name });
+  $('ttmc-turn-indicator').replaceChildren(picture(TOKEN_ART[cur], 'turn-avatar'), label);
   renderBoard();
   renderCard();
 }
@@ -190,18 +205,27 @@ function renderBoard() {
     const space = document.createElement('div');
     space.className = `board-space ${themeClass(theme)}`;
     space.dataset.id = `ttmc-space-${i}`;
-    if (i === 0) space.textContent = t('markStart');
-    else if (i === LAST) space.textContent = t('markEnd');
-    else if (theme === 'Challenge') space.textContent = t('markChallenge');
-    else if (theme === 'Superbe') space.textContent = t('markSuperbe');
-    else space.textContent = i;
+    space.title = THEME_LABELS[page.lang][theme] || theme;
+    const badge = document.createElement('span');
+    badge.className = 'space-badge';
+    if (i === 0) badge.textContent = t('markStart');
+    else if (i === LAST) badge.textContent = t('markEnd');
+    else if (theme === 'Challenge') badge.textContent = t('markChallenge');
+    else if (theme === 'Superbe') badge.textContent = t('markSuperbe');
+    else badge.textContent = i;
+    const art = ICON_THEMES.includes(theme)
+      ? picture(`./assets/icons/${themeClass(theme)}.svg`, 'space-icon')
+      : picture(medallionArt(theme), 'space-medallion');
+    const tokens = document.createElement('div');
+    tokens.className = 'space-tokens';
     page.match.teams.forEach((team) => {
       if (team.pos !== i) return;
-      const token = document.createElement('div');
-      token.className = `team-token t${team.id}`;
+      const token = picture(TOKEN_ART[team.id], team.id === page.match.cur ? 'team-token is-current' : 'team-token');
       token.dataset.id = `ttmc-team-token-${team.id + 1}`;
-      space.appendChild(token);
+      token.alt = team.name;
+      tokens.appendChild(token);
     });
+    space.append(art, badge, tokens);
     track.appendChild(space);
   });
 }
@@ -238,6 +262,8 @@ function renderCard() {
   const theme = $('ttmc-card-theme');
   theme.textContent = THEME_LABELS[page.lang][data.theme] || data.theme;
   theme.className = `card-theme ${themeClass(data.theme)}`;
+  $('ttmc-card-medallion').src = medallionArt(data.theme);
+  $('ttmc-card-modal').dataset.theme = themeClass(data.theme);
   $('ttmc-card-subject').textContent = data.subject || '';
   const q = cardQuestion(card);
   $('ttmc-selected-note').textContent = card.note ? t('level', { n: card.note }) : THEME_LABELS[page.lang][card.theme] || card.theme;
@@ -340,6 +366,7 @@ function winMatch(team) {
   page.names = names;
   page.count = names.length;
   $('ttmc-winner-name').textContent = team.name;
+  $('ttmc-winner-token').src = TOKEN_ART[team.id];
   showScreen('win');
 }
 

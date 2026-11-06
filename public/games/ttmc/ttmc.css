@@ -2,14 +2,31 @@
    phones get a max-height query, desktop and TV a min-width one. Sizes
    follow the screen (vmin / dvh) up to a 4K TV. */
 :root {
-  --theme-improbable: #8e44ad; /* Purple */
-  --theme-mature: #3498db; /* Blue */
-  --theme-plaisir: #e67e22; /* Orange */
-  --theme-scolaire: #27ae60; /* Green */
-  --theme-challenge: #e74c3c; /* Red */
-  --theme-superbe: #e84393; /* Pink */
-  --theme-debuter: #f1c40f; /* Yellow */
-  --theme-gagner: #f1c40f; /* Yellow */
+  /* Watercolour meadow (assets/): tile colours sampled from the mockups,
+     ink colours dark enough for text on them. */
+  --theme-improbable: #b38cc7;
+  --theme-mature: #87c2dc;
+  --theme-plaisir: #fea969;
+  --theme-scolaire: #aac7ad;
+  --theme-challenge: #e55954;
+  --theme-superbe: #ffacc8;
+  --theme-debuter: #feda66;
+  --theme-gagner: #d8b264;
+  --ink-improbable: #5b2d82;
+  --ink-mature: #1f5f86;
+  --ink-plaisir: #a24a0c;
+  --ink-scolaire: #2f6b36;
+  --ink-challenge: #a3221d;
+  --ink-superbe: #b03468;
+  --ink-debuter: #8a6200;
+  --ink-gagner: #7a5600;
+  --ink: #3b2a1a;
+  --paper: #fbf3df;
+  --paper-edge: #d9c49a;
+  --wood: #8a5a35;
+  --wood-dark: #5e3b20;
+  --leaf: #5f9a46;
+  --leaf-dark: #3f6f2e;
   --nav-h: 60px;
 }
 
@@ -28,13 +45,28 @@ body {
   height: 100dvh;
   margin: 0;
   overscroll-behavior: none;
-  background: var(--bg-color, #1a1a1a);
-  color: #fff;
-  font-family: var(--font-sans);
+  background: #6fa24f url("./assets/meadow.webp") center / cover no-repeat;
+  color: var(--ink);
+  font-family: "Segoe Print", "Comic Sans MS", "Chalkboard SE", var(--font-sans);
 }
 
 .game-nav {
   flex: 0 0 auto;
+  background: transparent;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.back-button,
+.options-button {
+  background: var(--wood);
+  border: 2px solid var(--wood-dark);
+  box-shadow: 0 2px 0 var(--wood-dark);
+}
+
+.nav-title {
+  color: var(--paper);
+  text-shadow: 0 1px 0 var(--wood-dark), 0 0 6px rgba(0, 0, 0, 0.45);
 }
 
 /* Android bars can cover the bottom even when the safe-area inset is 0. */
@@ -59,24 +91,63 @@ body {
   gap: 0.75rem;
 }
 
+/* Parchment panels with a dashed vine border. */
+.setup-card,
+.modal-content {
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(255, 255, 255, 0.55), transparent 70%),
+    var(--paper);
+  border: 3px solid var(--paper-edge);
+  outline: 2px dashed rgba(95, 154, 70, 0.55);
+  outline-offset: -9px;
+  border-radius: 14px;
+  box-shadow: 0 6px 0 rgba(94, 59, 32, 0.35), 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 .setup-card {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 0.6rem;
   width: min(100%, 26em);
+  max-height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 1rem 1.25rem 1.25rem;
   text-align: center;
+}
+
+.setup-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.setup-hero img {
+  height: 3.6rem;
+  width: auto;
+}
+
+.setup-hero img:nth-child(odd) {
+  transform: translateY(-0.2rem) rotate(-4deg);
+}
+
+.setup-hero img:nth-child(even) {
+  transform: rotate(4deg);
 }
 
 .setup-title {
   margin: 0;
   font-size: 1.6rem;
+  color: var(--leaf-dark);
 }
 
 .setup-label,
 .setup-status {
   margin: 0;
-  color: #bbb;
+  color: var(--wood);
+  font-weight: bold;
 }
 
 .teams-list {
@@ -87,7 +158,15 @@ body {
 
 .team-input-row {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
+}
+
+.team-avatar {
+  flex: 0 0 auto;
+  height: 2.75rem;
+  width: 2.75rem;
+  object-fit: contain;
 }
 
 .team-input-row input {
@@ -95,12 +174,16 @@ body {
   min-width: 0;
   min-height: 2.75rem;
   box-sizing: border-box;
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #444;
-  background: #333;
-  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 2px solid var(--paper-edge);
+  background: #fffaf0;
+  color: var(--ink);
   font: inherit;
+}
+
+.team-input-row input::placeholder {
+  color: #a08a6a;
 }
 
 /* --- Board --- */
@@ -109,9 +192,25 @@ body {
   text-align: center;
 }
 
+/* Wooden sign: the playing team's acorn and name. */
 .board-header h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   margin: 0;
+  padding: 0.15rem 1rem 0.15rem 0.3rem;
   font-size: 1.2rem;
+  color: var(--paper);
+  background: var(--wood);
+  border: 2px solid var(--wood-dark);
+  border-radius: 999px;
+  box-shadow: 0 3px 0 var(--wood-dark);
+}
+
+.turn-avatar {
+  height: 2.2rem;
+  width: 2.2rem;
+  object-fit: contain;
 }
 
 /* 43 spaces: 7 x 7 in portrait, 11 x 4 in landscape. The space size is the
@@ -138,38 +237,90 @@ body {
   --cell: min(calc((100cqw - (var(--cols) - 1) * var(--gap)) / var(--cols)), calc((100cqh - (var(--rows) - 1) * var(--gap)) / var(--rows)));
 }
 
+/* Pastel tiles with a white line icon (assets/icons/); the start and end
+   spaces show their medallion. */
 .board-space {
-  border-radius: 8px;
+  --tile: var(--theme-improbable);
+  border-radius: 22%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: calc(var(--cell) * 0.36);
   position: relative;
-  background: #333;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.35), transparent 60%),
+    var(--tile);
+  border: max(1.5px, calc(var(--cell) * 0.035)) solid rgba(59, 42, 26, 0.75);
+  box-shadow: 0 calc(var(--cell) * 0.05) 0 rgba(59, 42, 26, 0.45);
+  box-sizing: border-box;
 }
 
-.board-space.improbable { background: var(--theme-improbable); }
-.board-space.mature { background: var(--theme-mature); }
-.board-space.plaisir { background: var(--theme-plaisir); }
-.board-space.scolaire { background: var(--theme-scolaire); }
-.board-space.challenge { background: var(--theme-challenge); }
-.board-space.superbe { background: var(--theme-superbe); }
-.board-space.debuter { background: var(--theme-debuter); color: #000; }
-.board-space.gagner { background: var(--theme-gagner); color: #000; }
+.board-space.improbable { --tile: var(--theme-improbable); }
+.board-space.mature { --tile: var(--theme-mature); }
+.board-space.plaisir { --tile: var(--theme-plaisir); }
+.board-space.scolaire { --tile: var(--theme-scolaire); }
+.board-space.challenge { --tile: var(--theme-challenge); }
+.board-space.superbe { --tile: var(--theme-superbe); }
+.board-space.debuter { --tile: var(--theme-debuter); }
+.board-space.gagner {
+  --tile: var(--theme-gagner);
+  box-shadow: 0 0 calc(var(--cell) * 0.35) rgba(255, 220, 110, 0.9);
+}
+
+.space-icon {
+  width: 68%;
+  height: 68%;
+}
+
+.space-medallion {
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
+}
+
+.space-badge {
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  font-family: var(--font-sans);
+  font-weight: bold;
+  font-size: calc(var(--cell) * 0.22);
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(59, 42, 26, 0.9), 0 1px 1px rgba(59, 42, 26, 0.9);
+}
+
+/* Acorn tokens stand on the tile, overlapping when several share it. */
+.space-tokens {
+  position: absolute;
+  inset: auto 0 4% 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
 
 .team-token {
-  position: absolute;
-  width: 28%;
-  height: 28%;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  bottom: 6%;
+  width: 60%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 calc(var(--cell) * 0.03) 0 rgba(59, 42, 26, 0.5));
 }
-.team-token.t0 { left: 6%; background: #e74c3c; }
-.team-token.t1 { right: 6%; background: #3498db; }
-.team-token.t2 { left: 6%; top: 6%; background: #f1c40f; }
-.team-token.t3 { right: 6%; top: 6%; background: #9b59b6; }
+
+.team-token + .team-token {
+  margin-left: -40%;
+}
+
+.team-token.is-current {
+  z-index: 1;
+  animation: ttmc-hop 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-token.is-current,
+  .win-token {
+    animation: none;
+  }
+}
 
 .board-actions {
   flex: 0 0 auto;
@@ -184,7 +335,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(40, 60, 25, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,8 +348,8 @@ body {
 }
 
 .modal-content {
-  background: #222;
-  border-radius: 12px;
+  --tile: var(--theme-improbable);
+  --theme-ink: var(--ink-improbable);
   width: 100%;
   max-width: 34em;
   max-height: 100%;
@@ -208,22 +359,43 @@ body {
   overscroll-behavior: contain;
 }
 
+[data-theme="mature"] .modal-content { --tile: var(--theme-mature); --theme-ink: var(--ink-mature); }
+[data-theme="plaisir"] .modal-content { --tile: var(--theme-plaisir); --theme-ink: var(--ink-plaisir); }
+[data-theme="scolaire"] .modal-content { --tile: var(--theme-scolaire); --theme-ink: var(--ink-scolaire); }
+[data-theme="challenge"] .modal-content { --tile: var(--theme-challenge); --theme-ink: var(--ink-challenge); }
+[data-theme="superbe"] .modal-content { --tile: var(--theme-superbe); --theme-ink: var(--ink-superbe); }
+[data-theme="debuter"] .modal-content { --tile: var(--theme-debuter); --theme-ink: var(--ink-debuter); }
+[data-theme="gagner"] .modal-content { --tile: var(--theme-gagner); --theme-ink: var(--ink-gagner); }
+
+/* The card's theme band: medallion and theme name. */
 .card-header {
-  padding: 0.75rem 1rem 0;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1rem;
+  border-radius: 11px 11px 0 0;
+  background: var(--tile);
+  border-bottom: 3px solid var(--paper-edge);
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.card-theme.improbable { color: var(--theme-improbable); }
-.card-theme.mature { color: var(--theme-mature); }
-.card-theme.plaisir { color: var(--theme-plaisir); }
-.card-theme.scolaire { color: var(--theme-scolaire); }
-.card-theme.challenge { color: var(--theme-challenge); }
-.card-theme.superbe { color: var(--theme-superbe); }
-.card-theme.debuter { color: var(--theme-debuter); }
-.card-theme.gagner { color: var(--theme-gagner); }
+.card-medallion {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  filter: drop-shadow(0 2px 0 rgba(59, 42, 26, 0.4));
+}
+
+.card-theme {
+  color: #fff;
+  text-shadow: 0 1px 0 var(--theme-ink), 0 0 4px var(--theme-ink);
+}
 
 .card-body {
   padding: 0.75rem 1rem 1rem;
@@ -241,6 +413,7 @@ body {
 .card-subject {
   margin: 0 0 0.75rem 0;
   font-size: 1.4rem;
+  color: var(--theme-ink);
 }
 
 .eval-grid {
@@ -250,24 +423,28 @@ body {
   margin-top: 0.75rem;
 }
 
+/* Rating 1-10: wooden discs. */
 .eval-btn {
-  background: #444;
-  border: none;
-  color: white;
+  background: radial-gradient(circle at 35% 30%, #b98252, var(--wood));
+  border: 2px solid var(--wood-dark);
+  box-shadow: 0 3px 0 var(--wood-dark);
+  color: var(--paper);
   min-height: 2.75rem;
   padding: 0.5rem 0;
-  border-radius: 8px;
+  border-radius: 999px;
   font: inherit;
+  font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
 }
-.eval-btn:hover { background: #555; }
+.eval-btn:hover { filter: brightness(1.1); }
+.eval-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--wood-dark); }
 
 .selected-note {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #f1c40f;
+  color: var(--theme-ink);
 }
 
 .card-text {
@@ -279,7 +456,7 @@ body {
 
 .answer-label {
   margin: 0;
-  color: #aaa;
+  color: var(--wood);
   font-size: 0.9rem;
   text-transform: uppercase;
 }
@@ -315,6 +492,7 @@ body {
 }
 
 .stepper-val {
+  color: var(--ink);
   font-size: 2rem;
   font-weight: bold;
   min-width: 3rem;
@@ -324,36 +502,80 @@ body {
   width: 100%;
 }
 
+/* Timer: the orange gauge in a wooden frame. */
 .timer-bar {
   width: 100%;
-  height: 6px;
-  background: #444;
-  border-radius: 3px;
+  height: 0.9rem;
+  background: #fffaf0;
+  border: 2px solid var(--wood-dark);
+  border-radius: 999px;
+  box-sizing: border-box;
   margin-bottom: 1rem;
   overflow: hidden;
 }
 
 .timer-fill {
   height: 100%;
-  background: #e74c3c;
+  border-radius: 999px;
+  background: linear-gradient(#ffb44a, #e9861d);
   width: 100%;
   transition: width 1s linear;
 }
 
+/* Buttons: leaf green (main), wood (secondary), berry red (missed). */
 .btn {
+  --btn: var(--leaf);
+  --btn-edge: var(--leaf-dark);
   min-height: 2.75rem;
   padding: 0.6rem 1.5rem;
-  border-radius: 8px;
-  border: none;
+  border-radius: 999px;
+  border: 2px solid var(--btn-edge);
+  box-shadow: 0 4px 0 var(--btn-edge);
+  background: linear-gradient(rgba(255, 255, 255, 0.22), transparent 60%), var(--btn);
+  color: #fff;
+  text-shadow: 0 1px 0 var(--btn-edge);
   font: inherit;
   font-weight: bold;
   cursor: pointer;
 }
+.btn:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 var(--btn-edge); }
 .btn:disabled { opacity: 0.5; cursor: default; }
-.btn.primary { background: #3498db; color: white; }
-.btn.secondary { background: #555; color: white; }
-.btn.danger { background: #e74c3c; color: white; }
-.btn.success { background: #2ecc71; color: white; }
+.btn.secondary { --btn: var(--wood); --btn-edge: var(--wood-dark); }
+.btn.danger { --btn: #d9534f; --btn-edge: #8e2b27; }
+
+/* Win screen: the winner's acorn in front of the Gagner medallion. */
+.win-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 9rem;
+}
+
+.win-medallion {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 2.5rem rgba(255, 220, 110, 0.9);
+}
+
+.win-token {
+  position: absolute;
+  bottom: -0.5rem;
+  left: calc(50% + 1rem);
+  height: 6rem;
+  width: auto;
+  animation: ttmc-hop 1.2s ease-in-out infinite;
+}
+
+#winnerName {
+  margin: 0.5rem 0 0;
+  font-size: 1.8rem;
+  color: var(--leaf-dark);
+}
+
+.win-card p {
+  margin: 0 0 0.5rem;
+}
 
 .langWrap {
   display: flex;
@@ -362,12 +584,16 @@ body {
 
 :focus-visible,
 html.tv :focus {
-  outline: max(3px, 0.4dvh) solid #ffcc00;
+  outline: max(3px, 0.4dvh) solid #ff7a00;
   outline-offset: max(2px, 0.3dvh);
 }
 
 @keyframes ttmc-fade {
   from { opacity: 0; }
+}
+
+@keyframes ttmc-hop {
+  50% { transform: translateY(-12%); }
 }
 
 /* Wider than tall: the 43 spaces in 11 columns, the draw button beside. */
@@ -406,14 +632,88 @@ html.tv :focus {
     grid-column: 1;
   }
 
-  .setup-card > .setup-label,
-  .setup-card > .teams-list,
-  .setup-card > #addTeamBtn {
+  /* Teams alone on the right, spanning the left column's rows, so 4 of
+     them still fit 360px. */
+  .setup-card {
+    align-content: center;
+  }
+
+  .setup-card > .setup-label {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .setup-card > .teams-list {
+    grid-column: 2;
+    grid-row: 2 / span 4;
+    gap: 0.35rem;
+  }
+
+  /* Win: the medallion left, the name and buttons right. */
+  .win-card > .win-hero {
+    grid-row: 1 / span 4;
+  }
+
+  .win-card > :not(.win-hero) {
     grid-column: 2;
   }
 
   .setup-title {
     font-size: 1.3rem;
+  }
+
+  .setup-card {
+    padding: 0.5rem 1rem;
+    outline-offset: -6px;
+  }
+
+  .setup-hero img {
+    height: 2rem;
+  }
+
+  .card-header {
+    padding: 0.15rem 1rem;
+    font-size: 1rem;
+  }
+
+  .card-medallion {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+
+  .card-body {
+    padding: 0.4rem 1rem 0.6rem;
+  }
+
+  .card-subject {
+    margin-bottom: 0.3rem;
+  }
+
+  .selected-note {
+    margin-bottom: 0.2rem;
+  }
+
+  .timer-bar {
+    height: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .win-hero {
+    height: 6rem;
+  }
+
+  .win-medallion {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
+  .win-token {
+    height: 4rem;
+  }
+
+  .turn-avatar {
+    height: 1.6rem;
+    width: 1.6rem;
   }
 
   #boardScreen {
@@ -443,6 +743,13 @@ html.tv :focus {
   .card-text {
     font-size: 1rem;
     margin-bottom: 0.5rem;
+  }
+}
+
+/* A 960x540 TV: four teams need the acorn row's height. */
+@media (orientation: landscape) and (min-height: 501px) and (max-height: 600px) {
+  .setup-hero {
+    display: none;
   }
 }
 
