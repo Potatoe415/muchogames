@@ -3,16 +3,18 @@
 // tapping a chip makes that player collect the piles).
 (function () {
   const ASSETS = {
-    tomate: { legume: "tomate.png", tabou: "tomate_x.png" },
-    salade: { legume: "salade.png", tabou: "salad_x.png" },
-    poivron: { legume: "poivron.png", tabou: "poivron_x.png" },
-    "chou-fleur": { legume: "choux.png", tabou: "choux_x.png" }
+    tomate: { legume: "tomate.webp", tabou: "tomate_x.webp" },
+    salade: { legume: "salade.webp", tabou: "salad_x.webp" },
+    poivron: { legume: "poivron.webp", tabou: "poivron_x.webp" },
+    "chou-fleur": { legume: "choux.webp", tabou: "choux_x.webp" }
   };
   const VISIBLE_CARDS = 3;
   // Saved poses are offsets of about 24-70 around 40; clamp old ones.
   const clampOffset = (value) => Math.max(-30, Math.min(30, value - 40));
 
   const cardAsset = (card) => `assets/cards/${ASSETS[card.veg][card.type === "tabou" ? "tabou" : "legume"]}`;
+  // Every card face, for preload.js.
+  const cardUrls = Object.values(ASSETS).flatMap((files) => [files.legume, files.tabou].map((file) => `assets/cards/${file}`));
 
   function cardNode(template, card, index, isNew) {
     const node = template.content.firstElementChild.cloneNode(true);
@@ -97,5 +99,5 @@
     });
   }
 
-  window.CafardsBoard = { renderPiles, markActivePile, renderPlayers };
+  window.CafardsBoard = { renderPiles, markActivePile, renderPlayers, cardUrls };
 })();

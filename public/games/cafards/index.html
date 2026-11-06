@@ -18,7 +18,7 @@
       <button type="button" class="back-button" data-id="cafards-quit-button" data-match-quit data-tv-back aria-label="Quitter la partie" data-i18n-aria="quit" hidden><span aria-hidden="true">✖</span></button>
     </div>
     <div class="nav-center">
-      <img src="./assets/thumbnail.jpg" alt="Salade de Cafards" class="nav-banner" data-id="cafards-banner" onerror="this.style.display='none'" />
+      <img src="./assets/thumbnail.webp" alt="Salade de Cafards" class="nav-banner" data-id="cafards-banner" onerror="this.style.display='none'" />
     </div>
     <div class="nav-side nav-right">
       <button
@@ -105,6 +105,7 @@
         </div>
         <button id="timerEnabled" type="button" class="toggle-btn" data-id="cafards-timer-toggle" aria-pressed="true">Lumière rouge : oui</button>
         <button id="startBtn" type="button" class="start-btn" data-id="cafards-start-button" data-tv-focus data-i18n="start">Nouvelle partie</button>
+        <p class="setup-loading" data-id="cafards-loading" role="status" data-i18n="loading" hidden>Chargement des cartes…</p>
         <p class="setup-error" data-id="cafards-setup-error" role="alert" hidden></p>
       </div>
     </section>
@@ -156,6 +157,7 @@
   <script defer src="setup.js"></script>
   <script defer src="save.js"></script>
   <script defer src="board.js"></script>
+  <script defer src="preload.js"></script>
   <script defer src="game.js"></script>
 </body>
 </html>

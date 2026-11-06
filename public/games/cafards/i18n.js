@@ -39,6 +39,7 @@
       collectBtn: "Faire ramasser {player} ({count} cartes en main)",
       replay: "Rejouer",
       menu: "Menu du jeu",
+      loading: "Chargement des cartes…",
       setupError: "Démarrage impossible : {message}"
     },
     en: {
@@ -75,6 +76,7 @@
       collectBtn: "Give the cards to {player} ({count} cards in hand)",
       replay: "Play again",
       menu: "Game menu",
+      loading: "Loading the cards…",
       setupError: "Unable to start: {message}"
     },
     es: {
@@ -111,6 +113,7 @@
       collectBtn: "Hacer que recoja {player} ({count} cartas en mano)",
       replay: "Jugar otra vez",
       menu: "Menú del juego",
+      loading: "Cargando las cartas…",
       setupError: "No se puede iniciar: {message}"
     }
   };

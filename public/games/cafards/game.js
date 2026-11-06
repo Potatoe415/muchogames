@@ -129,6 +129,7 @@ async function startGame() {
   if (starting || state.phase === "playing") return;
   window.MuchogamesTv?.play();
   starting = true;
+  await window.CafardsPreload.ready();
   const allowed = await window.MuchogamesMatch.start(GAME_ID);
   starting = false;
   if (!allowed) return;
@@ -146,11 +147,12 @@ async function startGame() {
   }
 }
 
-function resumeMatch() {
+async function resumeMatch() {
   if (starting || state.phase === "playing") return;
   const saved = window.CafardsSave.loadMatch();
   if (!saved) return renderResume();
   window.MuchogamesTv?.play();
+  await window.CafardsPreload.ready();
   window.MuchogamesMatch.resume(GAME_ID);
   // The shared language (bergamots-lang) wins over the one saved with it.
   delete saved.lang;

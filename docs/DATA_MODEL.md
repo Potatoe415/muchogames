@@ -40,7 +40,7 @@ Fields:
 | engine | string | wordpack only | e.g. `wordplayer` |
 | launch | string | Yes | Relative path or external URL to open |
 | data | string | wordpack only | Path to the game's word JSON |
-| thumbnail | string | Yes | Path to `assets/thumbnail.jpg` for the tile |
+| thumbnail | string | Yes | Path to the tile image, usually `assets/thumbnail.jpg` (any web format, e.g. `.webp`) |
 | players | [int, int] | Yes | `[min, max]` humans needed (bots don't count), `1 <= min <= max`. Library list text and the Solo / 2 players / Group (3+) pills |
 | duration | int | Yes | Typical minutes. ≤ 5 = Quick (⚡ badge, Home row), ≤ 20 = medium, else long |
 | resumable | boolean | No | `false` only for a game that cannot save a match in progress (`docs/PLATFORM_RULES.md` section 5); `scripts/check-games.mjs` then skips the resume checks. Missing = resumable |

@@ -4,6 +4,7 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 `Done` section dropped and `Later` merged into `Next` on 2026-09-22 (bootstrap v10.1 upgrade — see `docs/decisions/INDEX.md`).
 
 ## Now
+- [ ] **User**: Salade de Cafards on a phone (slow 4G if possible): "Chargement des cartes…" shows briefly after Nouvelle partie on a cold load, then the cards, background and banner look sharp enough (WebP, cards at 298-325 px wide, background 960 px, banner and hub tile 320 px).
 - [ ] **User**: on a phone, try the new hub (decision 0058): Home rows scroll sideways, "Tout voir", Tous les jeux pills combined, search, ★ in the list, Back button, a shared `?view=all&type=…` link. Check my estimates in `public/hub-config.json`: every `duration` (only Fruit Slash had one) and `players` of Pictionary, Taboo, Téléphone bizarre, Dictionnaire, Jeu de mains, Pyramide, Black Stories, Salade de Cafards, Millionaire, Easy Frog, Tranquil, GameBoy Web; and the square crop of each thumbnail.
 - [ ] **User**: play Millionaire on the Sony Bravia 8 II browser (`/games/millionaire/index.html?tv=1` once, then remembered): whole screen filled, remote arrows/OK/Back, fullscreen on "Commencer", screen stays awake. If the TV's Back key leaves the page instead of closing dialogs, report it (Android TV browsers may not send it to the page).
 - [ ] Millionaire "Avis du public" can total over 100 % and drop an answer (`buildAudienceDistribution`, pre-existing): seen A 45 % / B 8 % / C 48 %, D missing.
