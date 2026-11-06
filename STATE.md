@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: New platform rule 6.3 (decision 0064): in portrait the board is 99% of the phone's width; JezzBall and Chip's Challenge done. Before that, the party quiz became "Tu te crois fort ?" (`ttcf`, decision 0063) with a wheel mode, a one-step Débuter card and a category guide in Options; before that, 8 teams, token walk and the meadow art.
+Status: 4 en ligne gets a bot (ticket #11): dashboard mode selector Joueur contre joueur / Bot facile / Bot normal, random first colour in every mode, mode locked during a match. Before that, platform rule 6.3 (decision 0064, portrait board 99% wide) and the party quiz "Tu te crois fort ?" (`ttcf`, decision 0063).# STATE
 Focus: Owner play-tests of TTCF (board and wheel), 4 en ligne, Easy Frog, Piou, Simon, Tetris, then 2048 and Fusion de fruits; owner phone check of the hub.
 Level: L1 (one game)
 
@@ -15,7 +15,7 @@ Context:
 Next:
 - Owner: JezzBall and Chip's Challenge on a phone in portrait: board 99% wide; say if a swipe from the board's edge triggers the system back too often, and if Chip's tiles look uneven at the free zoom.
 - Owner: look at TTCF's new look on a phone (portrait + landscape) and the TV; say if the hub thumbnail should use the new art too (still the old 3.6 MB `thumbnail.jpg`).
-- Owner: play 4 en ligne (`/games/connectfour/`) on a phone (portrait + landscape), desktop and the TV (`?tv=1` once); say if a solo mode vs a bot is wanted — see `docs/BACKLOG.md` Now.
+- Owner: play 4 en ligne (`/games/connectfour/`) vs Bot facile and Bot normal, and player vs player, on a phone (portrait + landscape), desktop and the TV (`?tv=1` once): bot pause, Normal's strength, mode buttons — see `docs/BACKLOG.md` Now.
 - Owner: play Easy Frog on a phone (portrait + landscape), desktop and the TV (`/games/easyfrog/index.html?tv=1` once) — see `docs/BACKLOG.md` Now.
 - Bring existing games to the *(new games)* rules one by one (`docs/BACKLOG.md` Next): dashboard, score + best, 40px bottom margin.
 - Owner: play Piou, Simon, Tetris, 2048, Fusion de fruits on phone / desktop / TV (`?tv=1` once); skim TTCF cards; 7 TTCF cards await a photo.
@@ -35,6 +35,6 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-06 4 en ligne bot: `bot.js` (easy = win else random; normal = win, block, avoid giving a win on top, centre), mode selector on the dashboard (remembered), random first colour, save v2 `{ mode, first, moves }` (v1 read as pvp), vs bot `finish({ won })`, hub `players` [1, 2]. Node: 1 000 bot games legal, normal beat random 493/500 and easy 485/500. Headless Chromium 360×740: 4 full games per bot level, pvp, input locked on the bot's turn, resume, v1 save. `npm run check` OK.
 - 2026-11-06 TTCF deck +28 cards (830) from the old `aside-ttmc` stash batch, found as a merge conflict on `public/data/ttmc/` (old name); conflict cleared, no `ttmc` folder left. `npm run check` OK.
 - 2026-11-06 Rule 6.3 (0064): portrait board 99% of the phone's width, past the 24px side strips (HUD, buttons, cards keep them); `NEW_GAME.md` template + checklist. JezzBall: fractional cell size, cell edges snapped to device px (field cache, glow), dimming as wide as the board. Chip's Challenge: free zoom (owner). Headless Edge: JezzBall 98.8-99% at 320×568 / 360×740 / 412×915 / 600×960 (was 87-88%), Chip's 98% at 360×740 / 412×915 (was 70-80%), 69% at 320×568 (height-bound); landscape / 1920×1080 unchanged; walls and capture draw without seams; no scroll. `npm run check` OK.
-- 2026-11-06 TTCF: teams start on D (owner confirmed, matches the video rules the owner sent); a team on D draws a random category, moves back stop on D; rules text says so (FR/EN/ES); hub `players` [2, 16] (teams of several players). Headless Edge: start on D, walk D -> 3, move back to D, saves with pos 0 resume. `npm run check` OK.

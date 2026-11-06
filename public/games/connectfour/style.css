@@ -108,6 +108,36 @@ body {
   font-weight: 700;
 }
 
+/* Mode selector: three toggles, the chosen one filled. */
+.c4-modes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em;
+  width: 100%;
+}
+
+.c4-mode {
+  flex: 1 1 6em;
+  min-height: max(44px, 2.6em);
+  padding: 0.3em 0.6em;
+  border: 2px solid #3f5b94;
+  border-radius: 0.8em;
+  background: transparent;
+  color: #eef2fa;
+  font: inherit;
+  font-size: 0.9em;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.c4-mode.active {
+  border-color: #f5c542;
+  background: #f5c542;
+  color: #14213d;
+}
+
 .c4-logo {
   display: flex;
   gap: 0.35em;

@@ -12,10 +12,12 @@ const DIRECTIONS = [
   [1, -1]
 ];
 
-export function newMatch() {
+// `first`: the colour that drops the first disc.
+export function newMatch(first = 1) {
   return {
     board: Array.from({ length: COLUMNS }, () => []),
-    turn: 1,
+    first,
+    turn: first,
     moves: [],
     winner: 0,
     line: [],
@@ -64,8 +66,9 @@ export function winningLine(board, col, row) {
 
 const isFull = (board) => board.every((column) => column.length === ROWS);
 
-// A new match after `match.turn` drops a disc in `col`; the same match when
-// the drop is not allowed (column full, match over, bad column).
+// A new match after `match.turn` drops a disc in `col` (other fields, such
+// as `first`, are kept); the same match when the drop is not allowed
+// (column full, match over, bad column).
 export function drop(match, col) {
   if (!canDrop(match, col)) return match;
   const board = match.board.map((column) => [...column]);
@@ -73,6 +76,7 @@ export function drop(match, col) {
   board[col].push(match.turn);
   const line = winningLine(board, col, row);
   return {
+    ...match,
     board,
     turn: line.length ? match.turn : 3 - match.turn,
     moves: [...match.moves, col],
@@ -82,9 +86,10 @@ export function drop(match, col) {
   };
 }
 
-// Replays a list of columns; null when one of them is not a legal drop.
-export function replay(moves) {
-  let match = newMatch();
+// Replays a list of columns from `first`; null when one of them is not a
+// legal drop.
+export function replay(moves, first = 1) {
+  let match = newMatch(first);
   for (const col of moves) {
     if (!canDrop(match, col)) return null;
     match = drop(match, col);
