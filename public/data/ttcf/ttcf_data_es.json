@@ -159,7 +159,7 @@
         {
           "level": 9,
           "q": "¿En qué juego de cartas hay que evitar la 'Dama de Picas'?",
-          "a": "Corazones (Hearts) (la Dama de Picas)"
+          "a": "Corazones (Hearts), también llamado «Dama de Picas»"
         },
         {
           "level": 10,
@@ -2337,8 +2337,8 @@
         },
         {
           "level": 8,
-          "q": "¿Cuál es el condicional simple, primera persona del singular, del verbo 'poder'?",
-          "a": "Yo podría"
+          "q": "¿Cuál es el condicional simple, primera persona del singular, del verbo 'caber'?",
+          "a": "Yo cabría"
         },
         {
           "level": 9,
@@ -2607,8 +2607,8 @@
         },
         {
           "level": 6,
-          "q": "¿Qué cantante colombiana lanzó 'Hips Don't Lie' en 2006?",
-          "a": "Shakira"
+          "q": "¿Qué cantante interpretó 'Parce qu'on vient de loin' (un éxito en francés)?",
+          "a": "Corneille"
         },
         {
           "level": 7,
@@ -2627,8 +2627,8 @@
         },
         {
           "level": 10,
-          "q": "¿Qué cantante ganó la primera temporada de American Idol en 2002 antes de lanzar 'A Moment Like This'?",
-          "a": "Kelly Clarkson"
+          "q": "¿Qué cantante francesa ganó Star Academy (concurso de talentos de la TV francesa) en 2001 antes de lanzar 'Au Soleil'?",
+          "a": "Jenifer"
         }
       ]
     },
@@ -3086,22 +3086,22 @@
       "questions": [
         {
           "level": 1,
-          "q": "'Hakuna Matata, ¡qué frase tan...!' (El Rey León)",
-          "a": "Maravillosa"
+          "q": "'Hakuna Matata, una forma de...' (El Rey León)",
+          "a": "Ser"
         },
         {
           "level": 2,
-          "q": "'Lo más vital, lo más...' (El libro de la selva)",
-          "a": "Necesario"
+          "q": "'Busca lo más...' (El libro de la selva)",
+          "a": "Vital"
         },
         {
           "level": 3,
-          "q": "'Este sueño azul es un nuevo mundo de...' (Aladdín)",
-          "a": "Colores"
+          "q": "'Un mundo...' (Aladdín)",
+          "a": "Ideal"
         },
         {
           "level": 4,
-          "q": "'Libre soy, libre soy, no puedo más, libre...' (Frozen)",
+          "q": "'Libre soy, libre...' (Frozen)",
           "a": "Soy"
         },
         {
@@ -3116,8 +3116,8 @@
         },
         {
           "level": 7,
-          "q": "'La historia de la vida, el ciclo...' (El Rey León)",
-          "a": "Eterno"
+          "q": "'Es el ciclo sin...' (El Rey León)",
+          "a": "Fin"
         },
         {
           "level": 8,
@@ -3126,13 +3126,13 @@
         },
         {
           "level": 9,
-          "q": "'Tú estarás en mi...' (Tarzán)",
-          "a": "Corazón"
+          "q": "'En mi corazón...' (Tarzán)",
+          "a": "Vivirás"
         },
         {
           "level": 10,
-          "q": "'Y descubrirás que la...' (Pocahontas)",
-          "a": "Tierra es redonda"
+          "q": "'¿Puedes pintar con todos los...?' (Pocahontas)",
+          "a": "Colores del viento"
         }
       ]
     },
@@ -3275,7 +3275,7 @@
         {
           "level": 5,
           "q": "¿Cómo se llama el perro de Rubeus Hagrid?",
-          "a": "Fang"
+          "a": "Fang (también vale Fluffy, su perro de tres cabezas)"
         },
         {
           "level": 6,
@@ -3285,7 +3285,7 @@
         {
           "level": 7,
           "q": "¿Cuál es el verdadero nombre de Voldemort?",
-          "a": "Tom Marvolo Riddle"
+          "a": "Tom Sorvolo Ryddle (Tom Marvolo Riddle en inglés)"
         },
         {
           "level": 8,
@@ -4771,7 +4771,7 @@
         },
         {
           "level": 2,
-          "q": "Asocia la marca con este eslogan: 'I'm lovin' it'",
+          "q": "Asocia la marca con este eslogan: 'Ven como eres' (o 'I'm lovin' it')",
           "a": "McDonald's"
         },
         {
@@ -4791,28 +4791,28 @@
         },
         {
           "level": 6,
-          "q": "Asocia la marca con este eslogan: 'Haribo es la vida, para grandes y pequeños'",
+          "q": "Asocia la marca con este eslogan: 'Qué bonita es la vida, para grandes y pequeños'",
           "a": "Haribo"
         },
         {
           "level": 7,
-          "q": "Asocia la marca con este eslogan: 'The champagne of ginger ales'",
+          "q": "Asocia la marca con este eslogan: 'Tiene el color del alcohol, el sabor del alcohol... pero no es alcohol'",
           "a": "Canada Dry"
         },
         {
           "level": 8,
-          "q": "Asocia la marca con este eslogan: 'Placer de conducir' (The Ultimate Driving Machine)",
-          "a": "BMW"
+          "q": "Asocia la marca con este eslogan: 'El contrato de confianza' (tienda francesa de electrodomésticos)",
+          "a": "Darty"
         },
         {
           "level": 9,
-          "q": "Asocia la marca con este eslogan: '¡Agítame!'",
+          "q": "Asocia la marca con este eslogan: '¡Agítame, agítame!'",
           "a": "Orangina"
         },
         {
           "level": 10,
-          "q": "Asocia la marca con este eslogan: 'Te da alas'",
-          "a": "Red Bull"
+          "q": "Asocia la marca con este eslogan: 'À fond la forme' ('En plena forma', tienda francesa de deportes)",
+          "a": "Decathlon"
         }
       ]
     },
@@ -5102,7 +5102,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Se puede decir \"lombriz\"?",
+          "q": "¿También se le puede llamar \"gusano de tierra\"?",
           "a": "Sí."
         },
         {
@@ -5142,7 +5142,7 @@
         },
         {
           "level": 9,
-          "q": "¿Qué nombre recibe un especialista que estudia la tierra para informarse sobre las lombrices (y otras bacterias) que contiene?",
+          "q": "¿Qué nombre recibe un especialista que estudia la tierra para informarse sobre las lombrices (y las bacterias) que contiene?",
           "a": "Un geobiólogo."
         },
         {
@@ -6003,7 +6003,7 @@
         },
         {
           "level": 2,
-          "q": "¿Qué material simboliza 1 año de matrimonio?",
+          "q": "¿Qué material simboliza 1 año de matrimonio (en la tradición francesa)?",
           "a": "El algodón"
         },
         {
@@ -6028,12 +6028,12 @@
         },
         {
           "level": 7,
-          "q": "¿Qué material celebra 30 años de matrimonio?",
+          "q": "¿Qué material celebra 30 años de matrimonio (en la tradición francesa)?",
           "a": "La perla"
         },
         {
           "level": 8,
-          "q": "¿Cuántos años de matrimonio celebran las bodas de esmeralda?",
+          "q": "¿Cuántos años de matrimonio celebran las bodas de esmeralda (en la tradición francesa)?",
           "a": "40 años"
         },
         {
@@ -6043,7 +6043,7 @@
         },
         {
           "level": 10,
-          "q": "¿Qué flor celebra 17 años de matrimonio?",
+          "q": "¿Qué flor celebra 17 años de matrimonio (en la tradición francesa)?",
           "a": "La rosa"
         }
       ]
@@ -6451,7 +6451,7 @@
         },
         {
           "level": 2,
-          "q": "¿Qué número, asociado al viernes, se considera que trae mala suerte en las culturas occidentales (en España, el martes y 13)?",
+          "q": "¿Qué número, asociado al viernes, se considera que trae mala suerte en las culturas occidentales?",
           "a": "El 13"
         },
         {
@@ -7693,7 +7693,7 @@
         },
         {
           "level": 4,
-          "q": "¿Qué queso español de Asturias es famoso por su olor fuerte?",
+          "q": "¿Qué queso francés, a menudo asociado al norte de Francia, es famoso por su olor fuerte?",
           "a": "El Maroilles."
         },
         {
@@ -8818,7 +8818,7 @@
         },
         {
           "level": 5,
-          "q": "¿Cuál es la función del grupo de palabras «en Madrid» en la oración «Vive en Madrid»?",
+          "q": "¿Cuál es la función del grupo de palabras «en París» en la oración «Vive en París»?",
           "a": "Complemento circunstancial de lugar."
         },
         {
@@ -10987,8 +10987,8 @@
         },
         {
           "level": 2,
-          "q": "¿La abreviatura de energía renovable es RPR, ER o ZZ TOP?",
-          "a": "ER"
+          "q": "¿La abreviatura francesa de energía renovable (énergie renouvelable) es RPR, EnR o ZZ TOP?",
+          "a": "EnR"
         },
         {
           "level": 3,
@@ -11206,8 +11206,8 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿El Dalái Lama es un animal de los Andes, un líder espiritual tibetano o un cantante de reguetón?",
-          "a": "Un líder espiritual tibetano"
+          "q": "¿El Dalái Lama es más bien el hermano, la madre o un posible admirador de Serge Lama?",
+          "a": "Un admirador de Serge Lama. Probablemente"
         },
         {
           "level": 2,
@@ -11394,7 +11394,7 @@
         },
         {
           "level": 5,
-          "q": "Adoptado en 1980, ¿cómo se llama el himno canadiense: Ô Canada, May Canada Prosper, Land of Great Lakes o Canción de arce?",
+          "q": "Adoptado en 1980, ¿cómo se llama el himno canadiense: Ô Canada, May Canada Prosper, Land of Great Lakes u Ostie de chanson (jerga quebequense, algo así como «maldita canción»)?",
           "a": "Ô Canada"
         },
         {
@@ -11995,8 +11995,8 @@
         },
         {
           "level": 2,
-          "q": "Completa este eslogan «Los antibióticos, no son…»: automáticos, súper prácticos o para los mosquitos.",
-          "a": "Automáticos"
+          "q": "Completa este eslogan francés de salud pública «Les antibiotiques, c'est pas…» («Los antibióticos no son…»): automatique (automáticos), super pratique (súper prácticos) o pour les moustiques (para los mosquitos).",
+          "a": "Automatique (automáticos)"
         },
         {
           "level": 3,
@@ -12882,17 +12882,17 @@
     },
     {
       "theme": "Mature",
-      "subject": "¿Te crees listo en IVE (interrupción voluntaria del embarazo)?",
+      "subject": "¿Te crees listo en IVE (aborto)?",
       "questions": [
         {
           "level": 1,
-          "q": "¿La IVE es un régimen alimentario en el que está prohibido ingerir jengibre?",
+          "q": "¿La IVE es un régimen alimentario en el que está prohibido ingerir espinacas?",
           "a": "No, en absoluto"
         },
         {
           "level": 2,
-          "q": "Da el significado de la letra V en IVE.",
-          "a": "Voluntaria"
+          "q": "Da el significado de la letra E en IVE.",
+          "a": "Embarazo (interrupción voluntaria del embarazo)"
         },
         {
           "level": 3,
@@ -12911,7 +12911,7 @@
         },
         {
           "level": 6,
-          "q": "¿Qué es una IMG?",
+          "q": "¿Qué es una IMG (sigla francesa)?",
           "a": "Interrupción médica del embarazo (interruption médicale de grossesse), que se practica si el niño tiene mala salud"
         },
         {
@@ -13008,7 +13008,7 @@
         },
         {
           "level": 3,
-          "q": "Se han encontrado rastros de pan sin levadura de hace 31.960 años antes de Jesucristo. ¿Verdadero o falso?",
+          "q": "Se han encontrado rastros de pan sin levadura de hace 31.960 años antes de J.C. Van Damme. ¿Verdadero o falso?",
           "a": "Verdadero"
         },
         {
@@ -13043,7 +13043,7 @@
         },
         {
           "level": 10,
-          "q": "Expresado en gramos, ¿cuántos hidratos de carbono hay en una baguette básica francesa?",
+          "q": "Expresado en gramos, ¿cuántos hidratos de carbono hay en 100 g de baguette básica francesa?",
           "a": "57,4 gramos (se aceptan respuestas entre 57 g y 58 g)"
         }
       ]
@@ -13054,7 +13054,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿El judaísmo es una fruta exótica con la que se hace zumo de judaísmo?",
+          "q": "¿El judaísmo es el arte de practicar judo?",
           "a": "No"
         },
         {
@@ -14184,8 +14184,8 @@
         },
         {
           "level": 3,
-          "q": "¿Cuál de estas palabras no está en el diccionario: procrastinador, hashtag o veganismo?",
-          "a": "Procrastinador"
+          "q": "¿Cuál de estas palabras no está en el diccionario francés: procrastinateur, hashtag o véganisme?",
+          "a": "Procrastinateur"
         },
         {
           "level": 4,
@@ -14194,17 +14194,17 @@
         },
         {
           "level": 5,
-          "q": "¿Cuál de estas 5 palabras está en el diccionario: neologizar, inalcanzable, espantoso, candidatear o abracadabrante?",
-          "a": "Inalcanzable"
+          "q": "¿Cuál de estas 5 palabras está en el diccionario francés: néologiser, inatteignable, épeurant, candidater o abracadabrantesque?",
+          "a": "Épeurant"
         },
         {
           "level": 6,
-          "q": "Incorporado oficialmente al diccionario en 2015, ¿qué es un stiletto?",
+          "q": "Incorporado oficialmente al diccionario francés en 2015, ¿qué es un stiletto?",
           "a": "Es un tipo de zapato de mujer con tacón de aguja (de al menos 10 cm). ¡Pero si eres hombre, también tienes derecho a llevarlos!"
         },
         {
           "level": 7,
-          "q": "¿Cuál es la primera palabra de 5 letras que aparece en el diccionario y empieza por la letra N?",
+          "q": "En el diccionario francés, ¿cuál es la primera palabra de 5 letras que empieza por la letra N?",
           "a": "Nabab"
         },
         {
@@ -14296,7 +14296,7 @@
         },
         {
           "level": 3,
-          "q": "¿Qué objeto de madera permite tocar a la perfección Wonderwall de Oasis?",
+          "q": "¿Qué objeto de madera permite tocar a la perfección Je l'aime à mourir de Francis Cabrel?",
           "a": "Una guitarra"
         },
         {
@@ -15070,7 +15070,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Cuántas Z hay en esta palabra?",
+          "q": "¿Cuántas S hay en esta palabra (gas)?",
           "a": "1"
         },
         {
@@ -15116,7 +15116,7 @@
         {
           "level": 10,
           "q": "¿Qué prevé la ley Jacob de 2011?",
-          "a": "La prohibición en Francia de explotar gas de esquisto sin recurrir a la fracturación hidráulica"
+          "a": "La prohibición en Francia de explorar y explotar gas de esquisto mediante fracturación hidráulica"
         }
       ]
     },
@@ -15921,37 +15921,37 @@
         {
           "level": 3,
           "q": "¿Qué conjunción coordinante se usa para unir 2 grupos de palabras expresando una relación de consecuencia?",
-          "a": "Conque (o así que)"
+          "a": "Conque (también luego o así que)"
         },
         {
           "level": 4,
-          "q": "\"Y, e, ni, o, u, pero, sino\" ¿es una lista de conjunciones coordinantes, de preposiciones o de verbos?",
-          "a": "Una lista de conjunciones coordinantes"
+          "q": "\"Mais où est donc Ornicar\", la frase que usan los franceses para recordar sus conjunciones coordinantes, ¿es una frase mnemotécnica, neumotécnica o memotécnica?",
+          "a": "Mnemotécnica (la RAE también acepta \"nemotécnica\")"
         },
         {
           "level": 5,
-          "q": "¿Cuántas conjunciones coordinantes tiene la frase \"Quería ir al cine, pero llovía y me quedé en casa\"?",
-          "a": "Dos (pero, y)"
+          "q": "¿Cuántas conjunciones coordinantes tiene la frase \"¡Oh, destino! He aquí más oro del que el niño esperaba, pero él lo niega todo\"?",
+          "a": "Una (pero). \"Oh\" es una interjección, \"he\" es del verbo haber y \"más\" es un adverbio; \"o\" y \"ni\" solo se esconden dentro de oro, niño y niega"
         },
         {
           "level": 6,
-          "q": "Cita las conjunciones coordinantes copulativas, disyuntivas y adversativas más habituales: y, ni, o, pero, sino. Pon las 5 por orden alfabético. No se permite ni un error.",
-          "a": "Ni, o, pero, sino, y"
+          "q": "Cita por orden alfabético las 7 conjunciones coordinantes de una sola palabra más habituales (3 copulativas, 2 disyuntivas y 2 adversativas). No se permite ni un error.",
+          "a": "E, ni, o, pero, sino, u, y"
         },
         {
           "level": 7,
-          "q": "¿A qué familia gramatical pertenecen las palabras \"sin embargo\", \"además\", \"no obstante\" y \"por último\"?",
-          "a": "A los conectores (locuciones conjuntivas y adverbiales) (aunque estas palabras tienen propiedades similares a las conjunciones coordinantes)"
+          "q": "¿A qué familia gramatical pertenecen las palabras \"sin embargo\", \"además\", \"no obstante\" y \"finalmente\"?",
+          "a": "A los adverbios (\"sin embargo\" y \"no obstante\" son locuciones adverbiales), aunque tienen propiedades similares a las conjunciones coordinantes"
         },
         {
           "level": 8,
-          "q": "Las conjunciones coordinantes sirven para unir 2 unidades sintácticas. ¿Cuáles son los 5 tipos de relación que pueden expresar?",
-          "a": "Suma (y, ni), alternativa (o), oposición (pero, sino), explicación (esto es) y consecuencia (conque)"
+          "q": "Las conjunciones coordinantes sirven para unir 2 unidades sintácticas. ¿Cuáles son los 6 tipos de relación que pueden expresar?",
+          "a": "La oposición (pero, sino), la suma (y, e), la alternativa (o, u), la causa (pues), la consecuencia (conque, luego) y la negación (ni)"
         },
         {
           "level": 9,
-          "q": "¿Qué excepción justifica poner una coma delante de la conjunción coordinante \"pero\"?",
-          "a": "Siempre se pone coma delante de \"pero\" (ejemplo: \"Quería salir, pero estaba cansado.\")"
+          "q": "¿Qué excepción justifica poner una coma delante de la conjunción coordinante \"y\"?",
+          "a": "Cuando no cierra la enumeración anterior sino que enlaza con todo lo dicho antes (ejemplo: \"Pagó el traje, el bolso y los zapatos, y salió de la tienda.\")"
         },
         {
           "level": 10,
@@ -16246,8 +16246,8 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Un \"sacacorchos\" es un utensilio de cocina o un corcho que se saca de paseo?",
-          "a": "Un utensilio para abrir botellas"
+          "q": "¿Un bernard-l'hermite (cangrejo ermitaño en francés) es un crustáceo con nombre de actor o un actor con nombre de crustáceo?",
+          "a": "Un crustáceo con nombre de actor (como el actor francés Thierry Lhermitte)"
         },
         {
           "level": 2,
@@ -16256,8 +16256,8 @@
         },
         {
           "level": 3,
-          "q": "¿Un sargento del Ejército de Tierra tiende a ponerse en el cortapisa, en el quitamiedos, en el firmes o en el cuentagotas?",
-          "a": "En el firmes"
+          "q": "¿Un sargento del Ejército de Tierra tiende a comportarse como un correveidile, un trotamundos, un mandamás o un pelagatos?",
+          "a": "Como un mandamás"
         },
         {
           "level": 4,
@@ -16272,12 +16272,12 @@
         {
           "level": 6,
           "q": "¿Qué tipo de conexión evacúa las aguas sucias industriales y domésticas en las ciudades?",
-          "a": "El alcantarillado"
+          "a": "El alcantarillado (en francés \"tout-à-l'égout\", literalmente \"todo a la alcantarilla\")"
         },
         {
           "level": 7,
-          "q": "Cuando se califica un alimento de \"mataburros\" o \"llenador\", ¿qué significa?",
-          "a": "Que es muy nutritivo, incluso difícil de tragar"
+          "q": "Cuando en francés se dice que un alimento es un \"étouffe-chrétien\" (literalmente \"ahogacristianos\"), ¿qué significa?",
+          "a": "Que es muy pesado y llenador, incluso difícil de tragar"
         },
         {
           "level": 8,
@@ -16414,7 +16414,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Se les llama hombres de Cromañón porque tenían una fuerte tendencia a empaparse de cerveza?",
+          "q": "¿Se les llama hombres de Cromañón porque tenían una fuerte tendencia a empaparse de Kronenbourg (una cerveza)?",
           "a": "No"
         },
         {
@@ -16531,7 +16531,7 @@
         },
         {
           "level": 2,
-          "q": "¿Qué palabra puede ser la entrada de un metro y un orificio humano por el que pueden entrar galletas?",
+          "q": "¿Qué palabra puede ser la entrada de un metro y un orificio humano por el que pueden entrar galletas Prince de LU?",
           "a": "Una boca"
         },
         {
@@ -16542,7 +16542,7 @@
         {
           "level": 4,
           "q": "Da los 2 sentidos más habituales de la palabra \"tirante\".",
-          "a": "Una tensión en las relaciones y una tira de ropa que sujeta una prenda"
+          "a": "Una tira que sujeta una prenda (los tirantes del pantalón) y, como adjetivo, tenso (una relación tirante)"
         },
         {
           "level": 5,
@@ -16551,8 +16551,8 @@
         },
         {
           "level": 6,
-          "q": "¿Qué palabra puede ser de carácter o de lápiz?",
-          "a": "Un trazo"
+          "q": "Esta palabra puede ser de carácter o de la cara, ¿cuál es?",
+          "a": "Un rasgo"
         },
         {
           "level": 7,
@@ -16561,18 +16561,18 @@
         },
         {
           "level": 8,
-          "q": "Trabajo en una empresa y delimito la superficie de juego de un billar. ¿Cuál es mi nombre?",
-          "a": "El cuadro"
+          "q": "Trabajo como directivo en una empresa y también soy la estructura de una bicicleta. ¿Cuál es mi nombre?",
+          "a": "El cuadro (los cuadros de una empresa y el cuadro de la bicicleta)"
         },
         {
           "level": 9,
-          "q": "¿Qué palabra designa a la vez un ave grande y un aparato de elevación?",
-          "a": "Una grúa"
+          "q": "¿Qué palabra designa a la vez lo que cubre el cuerpo de un ave y el brazo de una grúa?",
+          "a": "Una pluma"
         },
         {
           "level": 10,
-          "q": "Esta palabra puede ser un árbol y una expresión periodística, ¿cuál es?",
-          "a": "Un castaño"
+          "q": "Esta palabra puede ser un árbol y una forma del verbo haber, ¿cuál es?",
+          "a": "Haya (el árbol y el subjuntivo de haber: que yo haya)"
         }
       ]
     },
@@ -16587,13 +16587,13 @@
         },
         {
           "level": 2,
-          "q": "En España, ¿el responsable de la Defensa nacional es Martin Solveig, el ministro de Defensa o François Cluzet?",
-          "a": "El ministro de Defensa"
+          "q": "En Francia, ¿el responsable de la Defensa nacional es Martin Solveig, el primer ministro o François Cluzet?",
+          "a": "El primer ministro"
         },
         {
           "level": 3,
           "q": "Canturrea la última frase del estribillo de La Marsellesa, con la mano en el corazón.",
-          "a": "\"¡Que una sangre impura riegue nuestros surcos!\""
+          "a": "\"Qu'un sang impur abreuve nos sillons\" (\"Que una sangre impura riegue nuestros surcos\")"
         },
         {
           "level": 4,
@@ -16622,8 +16622,8 @@
         },
         {
           "level": 9,
-          "q": "Nombra las 5 naciones marco del Eurocuerpo.",
-          "a": "Francia, Alemania, Bélgica, España y Luxemburgo"
+          "q": "Nombra 5 de las 6 naciones marco del Eurocuerpo.",
+          "a": "Francia, Alemania, Bélgica, España, Luxemburgo y Polonia (desde 2022)"
         },
         {
           "level": 10,
@@ -17452,8 +17452,8 @@
         },
         {
           "level": 7,
-          "q": "Conjuga el verbo comer en la segunda persona del plural del pretérito perfecto simple.",
-          "a": "Comisteis"
+          "q": "Conjuga y deletrea el verbo cazar en la primera persona del singular del pretérito perfecto simple.",
+          "a": "Cacé (la Z pasa a C y la E lleva tilde)"
         },
         {
           "level": 8,
@@ -17467,8 +17467,8 @@
         },
         {
           "level": 10,
-          "q": "Deletrea el verbo acceder en la segunda persona del plural del pretérito imperfecto de subjuntivo.",
-          "a": "Accedierais (o accedieseis) (respuesta aceptada solo si has indicado las dos c)"
+          "q": "Deletrea el verbo averiguar en la segunda persona del plural del presente de subjuntivo.",
+          "a": "Que averigüéis (respuesta aceptada solo si has indicado la diéresis en la U y la tilde en la E)"
         }
       ]
     },
@@ -17722,8 +17722,8 @@
         },
         {
           "level": 5,
-          "q": "¿Puedes deletrearme la palabra \"REHIBITORIO\"?",
-          "a": "REHIBITORIO"
+          "q": "¿Puedes deletrearme la palabra \"REDHIBITORIO\"?",
+          "a": "REDHIBITORIO"
         },
         {
           "level": 6,
@@ -17732,13 +17732,13 @@
         },
         {
           "level": 7,
-          "q": "En plural y precisando las tildes, ¿cómo se deletrea la palabra \"ÁRBOL\"?",
-          "a": "ÁRBOLES (con tilde en la primera A)"
+          "q": "En plural y precisando los signos ortográficos, ¿cómo se deletrea la palabra \"CIGÜEÑA\"?",
+          "a": "CIGÜEÑAS (con diéresis en la U)"
         },
         {
           "level": 8,
-          "q": "Fenómeno natural poco común, ¿cuál es la ortografía de \"ORNITORRINCO PRESBICIA\"?",
-          "a": "ORNITORRINCO PRESBICIA"
+          "q": "Fenómeno natural poco común, ¿cuál es la ortografía de \"ORNITORRINCO PRÉSBITA\"?",
+          "a": "ORNITORRINCO PRÉSBITA (con doble R y tilde en la primera E; también se acepta PRÉSBITE)"
         },
         {
           "level": 9,
@@ -17747,8 +17747,8 @@
         },
         {
           "level": 10,
-          "q": "Deletrea muy rápido, para ver, la palabra \"ELECTROENCEFALOGRAFISTA\".",
-          "a": "ELECTROENCEFALOGRAFISTA (profesional que realiza electroencefalogramas)"
+          "q": "Deletrea muy rápido, para ver, la palabra \"APOPATODIAFULATOFOBIA\".",
+          "a": "APOPATODIAFULATOFOBIA (que es el miedo a estar estreñido)"
         }
       ]
     },
@@ -17931,8 +17931,8 @@
         },
         {
           "level": 2,
-          "q": "¿Cuántas eñes tiene la palabra \"eñe\"?",
-          "a": "Una"
+          "q": "¿Cuántas eñes tiene la palabra \"virgulilla\", el nombre de la rayita que lleva la Ñ?",
+          "a": "Ninguna"
         },
         {
           "level": 3,
@@ -17961,8 +17961,8 @@
         },
         {
           "level": 8,
-          "q": "¿Qué significa \"cédille\" en francés?",
-          "a": "La virgulilla pequeña que se pone bajo la C (ç)"
+          "q": "En su origen, la rayita de la Ñ era una letra pequeña escrita encima de la N. ¿Cuál?",
+          "a": "Otra N (la Ñ abrevia la doble N latina, como en \"annus\", que dio \"año\")"
         },
         {
           "level": 9,
@@ -17971,8 +17971,8 @@
         },
         {
           "level": 10,
-          "q": "Da los 6 alfabetos en los que la Ç se considera una letra por derecho propio y no una variante de la C.",
-          "a": "Los alfabetos albanés, azerí, kurdo, tártaro, turco y turcomano"
+          "q": "Además del español, cita 4 lenguas cuyo alfabeto incluye la Ñ como letra.",
+          "a": "Gallego, asturiano, euskera, guaraní, filipino, quechua, aimara, wolof, tetún, bretón..."
         }
       ]
     },
@@ -18038,7 +18038,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Fue Estopa quien demostró por primera vez este caso matemático?",
+          "q": "¿Fue Keen'V quien demostró por primera vez este caso matemático?",
           "a": "No, ni de lejos"
         },
         {
@@ -18358,13 +18358,13 @@
         },
         {
           "level": 9,
-          "q": "Cita las 3 obras literarias de Paulo Coelho publicadas en español antes de 1995.",
-          "a": "El peregrino de Compostela (1987), El alquimista (1988) y A orillas del río Piedra me senté y lloré (1994)"
+          "q": "Cita las 3 obras literarias de Paulo Coelho publicadas en francés antes de 1995.",
+          "a": "El peregrino de Compostela (1987), El alquimista (1994) y A orillas del río Piedra me senté y lloré (1994)"
         },
         {
           "level": 10,
           "q": "El personaje Jack McEvoy aparece en 4 novelas de Michael Connelly. ¿Cuáles?",
-          "a": "El poeta, El reino de los muertos (The Narrows), El espantapájaros y Luna vacía (Void Moon)"
+          "a": "El poeta (The Poet), Cauces de maldad (The Narrows), El veredicto (The Brass Verdict) y El observatorio (The Scarecrow)"
         }
       ]
     },
@@ -18399,8 +18399,8 @@
         },
         {
           "level": 6,
-          "q": "¿Qué ciudad cuyo nombre tiene 6 consonantes se considera con razón la capital de Eslovenia?",
-          "a": "Liubliana"
+          "q": "¿Qué ciudad, cuyo nombre en esloveno tiene 6 consonantes, se considera con razón la capital de Eslovenia?",
+          "a": "Ljubljana (Liubliana en español)"
         },
         {
           "level": 7,
@@ -18435,8 +18435,8 @@
         },
         {
           "level": 2,
-          "q": "¿Qué término es un diminutivo de la palabra \"moto\": mocho, motocicleta, motilón o motín?",
-          "a": "Motocicleta"
+          "q": "¿Qué término es la forma abreviada de la palabra \"motocicleta\": mocho, moto, motín o motel?",
+          "a": "Moto"
         },
         {
           "level": 3,
@@ -18450,13 +18450,13 @@
         },
         {
           "level": 5,
-          "q": "¿Qué palabra es la raíz del diminutivo \"taxi\": taxímetro, taxibús, taxicab o taxidermista?",
+          "q": "¿Qué palabra es la raíz del diminutivo \"taxi\": taximóvil, taxímetro, taxibús, taxicab o taxidermista?",
           "a": "Taxímetro"
         },
         {
           "level": 6,
-          "q": "Repite esta frase sin acortar ninguna palabra: \"Se le pinchó la bici, así que decidió coger el metro\".",
-          "a": "\"Se le pinchó la bicicleta, así que decidió coger el metropolitano\""
+          "q": "Repite esta frase sin acortar ninguna palabra: \"Se le pinchó la bici, así que decidió tomar el metro\".",
+          "a": "\"Se le pinchó la bicicleta, así que decidió tomar el metropolitano\""
         },
         {
           "level": 7,
@@ -18475,8 +18475,8 @@
         },
         {
           "level": 10,
-          "q": "¿De qué palabra procede la expresión \"boli\"?",
-          "a": "De \"bolígrafo\""
+          "q": "¿De dónde viene la expresión francesa \"la fête à Neuneu\"?",
+          "a": "De la fiesta de Neuilly (feria popular cerca de París), que dio \"la fête à Neuneuille\""
         }
       ]
     },
@@ -18594,16 +18594,16 @@
     },
     {
       "theme": "Scolaire",
-      "subject": "¿Te crees fuerte en autores españoles?",
+      "subject": "¿Te crees fuerte en autores franceses?",
       "questions": [
         {
           "level": 1,
-          "q": "¿Quién ha publicado más libros: Manolo Escobar, Bernard Diomède o Miguel de Cervantes?",
-          "a": "Miguel de Cervantes"
+          "q": "¿Quién ha publicado más libros: François Feldman, Bernard Diomède o Jean-Paul Sartre?",
+          "a": "Jean-Paul Sartre"
         },
         {
           "level": 2,
-          "q": "¿Prefería Lope de Vega el pressing catch, la hemoglobina o el teatro?",
+          "q": "¿Prefería Molière el pressing catch, la hemoglobina o el teatro?",
           "a": "El teatro"
         },
         {
@@ -18771,7 +18771,7 @@
         },
         {
           "level": 2,
-          "q": "En química, ¿la H es el símbolo de Harry Styles, del hidrógeno o del erizo?",
+          "q": "En química, ¿la H es el símbolo del cantante Plastic Bertrand, del hidrógeno o del hipopótamo?",
           "a": "Hidrógeno"
         },
         {
@@ -18781,8 +18781,8 @@
         },
         {
           "level": 4,
-          "q": "¿Lleva alguna hache la palabra \"ornitorrinco\"?",
-          "a": "No, ninguna (¡trampa!)"
+          "q": "Coloca la o las haches en la palabra \"almohada\".",
+          "a": "Después de la O"
         },
         {
           "level": 5,
@@ -18792,7 +18792,7 @@
         {
           "level": 6,
           "q": "¿Cuántas haches tiene la siguiente frase: \"El hechicero hallaba humo hostil en la hamaca\"?",
-          "a": "5"
+          "a": "6"
         },
         {
           "level": 7,
@@ -18811,8 +18811,8 @@
         },
         {
           "level": 10,
-          "q": "¿Qué letra del alfabeto español es muda en casi todas las palabras donde aparece?",
-          "a": "La H"
+          "q": "Según el diccionario de 2020 de la Academia Francesa, ¿cuál es la última palabra que empieza por H?",
+          "a": "Hystérotomotocie (una simple cuestión de cesárea)"
         }
       ]
     },
@@ -19107,13 +19107,13 @@
         },
         {
           "level": 2,
-          "q": "Da el nombre que los japoneses dan a su país: ¿Nihon, Nihil o Ninon?",
-          "a": "Nihon (o Nippon)"
+          "q": "¿Cómo se llama también a los japoneses: los nipones, los pezones o los ninones?",
+          "a": "Los nipones"
         },
         {
           "level": 3,
-          "q": "Describe la bandera japonesa, pero con acento mexicano.",
-          "a": "Un círculo rojo sobre fondo blanco, güey"
+          "q": "Describe la bandera japonesa, pero con acento quebequense.",
+          "a": "Un círculo rojo sobre fondo blanco, ¡caribou!"
         },
         {
           "level": 4,
@@ -19128,7 +19128,7 @@
         {
           "level": 6,
           "q": "¿Cuál es el deporte nacional?",
-          "a": "El béisbol (cuyo campeonato se creó en 1937)"
+          "a": "El sumo (se acepta también el béisbol, el deporte más popular, cuya liga profesional data de 1936)"
         },
         {
           "level": 7,
@@ -19142,8 +19142,8 @@
         },
         {
           "level": 9,
-          "q": "¿Cuántas islas de más de 100 m² tiene el archipiélago, con 48 de margen?",
-          "a": "6.852 (se aceptan respuestas entre 6.804 y 6.900)"
+          "q": "¿Cuántas islas con más de 100 m de costa tiene el archipiélago, con 48 de margen?",
+          "a": "6.852 (se aceptan respuestas entre 6.804 y 6.900; un recuento de 2023 elevó la cifra a 14.125)"
         },
         {
           "level": 10,
@@ -19602,27 +19602,27 @@
     },
     {
       "theme": "Scolaire",
-      "subject": "¿Te crees fuerte en literatura española del siglo XIX?",
+      "subject": "¿Te crees fuerte en literatura francesa del siglo XIX?",
       "questions": [
         {
           "level": 1,
-          "q": "Gustavo Adolfo Bécquer fue un poeta nacido el 17 de febrero de 1836 y muerto el 22 de diciembre de 1870. ¿Se le considera un artista del siglo XIX?",
+          "q": "Paul Verlaine fue un poeta nacido el 30 de marzo de 1844 y muerto el 8 de enero de 1896. ¿Se le considera un artista del siglo XIX?",
           "a": "Sí"
         },
         {
           "level": 2,
-          "q": "¿Qué género nunca cultivó José Zorrilla: la poesía, el teatro, la novela o el monólogo cómico?",
+          "q": "¿Qué género nunca cultivó Alphonse de Lamartine: la poesía, el teatro, la novela o el monólogo cómico?",
           "a": "El monólogo cómico"
         },
         {
           "level": 3,
-          "q": "Fernán Caballero era el seudónimo que utilizaba Gustavo Adolfo Bécquer para publicar obras comprometidas. ¿Verdadero o falso?",
-          "a": "Falso (el seudónimo lo usaba Cecilia Böhl de Faber, que era mujer)"
+          "q": "George Sand era el seudónimo que utilizaba Alfred de Musset para publicar obras comprometidas. ¿Verdadero o falso?",
+          "a": "Falso (el seudónimo lo usaba Amantine Dupin, baronesa Dudevant. Alfred de Musset era su amante)"
         },
         {
           "level": 4,
-          "q": "¿Qué artista no conoció el siglo XIX: Benito Pérez Galdós, Gustavo Adolfo Bécquer o Federico García Lorca?",
-          "a": "Federico García Lorca"
+          "q": "¿Qué artista no conoció el siglo XIX: Guy de Maupassant, Paul Verlaine o Marcel Aymé?",
+          "a": "Marcel Aymé"
         },
         {
           "level": 5,
@@ -19631,7 +19631,7 @@
         },
         {
           "level": 6,
-          "q": "¿En qué libro menciona el bueno de Julio Verne la existencia de un submarino incluso antes de que se hubiera inventado?",
+          "q": "¿En qué libro describe el bueno de Julio Verne un submarino mucho más avanzado que cualquiera de los que existían en su época?",
           "a": "Veinte mil leguas de viaje submarino"
         },
         {
@@ -19646,7 +19646,7 @@
         },
         {
           "level": 9,
-          "q": "¿Quién es el autor de la novela corta titulada Colomba, cuyo tema es la vendetta entre las familias Colomba y Barricini?",
+          "q": "¿Quién es el autor de la novela corta titulada Colomba, cuyo tema es la vendetta entre las familias della Rebbia y Barricini?",
           "a": "Prosper Mérimée"
         },
         {
@@ -19938,22 +19938,22 @@
     },
     {
       "theme": "Scolaire",
-      "subject": "¿Te crees fuerte en fechas y leyes en España?",
+      "subject": "¿Te crees fuerte en fechas y leyes en Francia?",
       "questions": [
         {
           "level": 1,
-          "q": "En 2021, ¿declaró el presidente del Gobierno \"La ley soy yo\"?",
+          "q": "En 2021, ¿declaró el presidente Macron \"La ley soy yo\"?",
           "a": "No"
         },
         {
           "level": 2,
-          "q": "En España, ¿la poligamia se autorizó en 1789, en 2002 o sigue sin estar autorizada?",
+          "q": "En Francia, ¿la poligamia se autorizó en 1789, en 2002 o sigue sin estar autorizada?",
           "a": "Sigue sin estar autorizada"
         },
         {
           "level": 3,
-          "q": "En 1869, ¿qué derecho importante obtienen los trabajadores: la pausa del almuerzo, el derecho de huelga o las 39 horas de trabajo semanales?",
-          "a": "El derecho de huelga (en Francia en 1864)"
+          "q": "En 1864, ¿qué derecho importante obtienen los asalariados de Francia: la pausa del almuerzo, el derecho de huelga o las 39 horas de trabajo semanales?",
+          "a": "El derecho de huelga"
         },
         {
           "level": 4,
@@ -20054,52 +20054,52 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Se puede usar en serio la expresión \"hoy en día de hoy\" en una comida elegante?",
+          "q": "¿Se puede usar en serio la expresión \"subir para arriba\" en una comida elegante?",
           "a": "No"
         },
         {
           "level": 2,
-          "q": "¿Es más correcto decir \"Estoy irritado a veces\" o \"Estoy irritado de las veces\"?",
-          "a": "\"Estoy irritado a veces\""
+          "q": "¿Es más correcto decir \"Pienso que vendrá\" o \"Pienso de que vendrá\"?",
+          "a": "\"Pienso que vendrá\""
         },
         {
           "level": 3,
-          "q": "¿Cómo se llama a Tex: humourista, humorista o humoriste?",
+          "q": "¿Cómo se llama a Tex (presentador de televisión francés): humourista, humorista o humoriste?",
           "a": "Humorista"
         },
         {
           "level": 4,
-          "q": "¿Cómo se debería renombrar la Segunda Guerra Mundial si estallara una nueva guerra mundial?",
-          "a": "La Segunda seguiría siendo la Segunda (la Tercera sería la nueva); no hay que renombrarla"
+          "q": "¿Es más correcto decir \"Hubieron problemas\" o \"Hubo problemas\"?",
+          "a": "\"Hubo problemas\" (el verbo haber impersonal no tiene plural)"
         },
         {
           "level": 5,
-          "q": "Del champiñón, el escorpión o el Teletón, ¿cuál es venenoso y cuál es ponzoñoso?",
-          "a": "Hay que distinguir: los hongos pueden ser venenosos y el escorpión es ponzoñoso (venenoso al inyectar su toxina)"
+          "q": "Del hongo, el escorpión o el Teletón, ¿cuál es venenoso y cuál es ponzoñoso?",
+          "a": "El hongo es venenoso y el escorpión es ponzoñoso (inyecta su veneno)"
         },
         {
           "level": 6,
-          "q": "El verbo \"omnibular\" no existe en español. ¿Qué verbo sustituye a menudo erróneamente?",
-          "a": "Obnubilar (que significa ofuscar o cegar la razón)"
+          "q": "La palabra \"dentrífico\" no existe en español. ¿Qué palabra sustituye a menudo erróneamente?",
+          "a": "Dentífrico (la pasta de dientes)"
         },
         {
           "level": 7,
-          "q": "Dinos por qué la palabra \"posible\" no varía en la frase siguiente: \"Escala las cumbres más altas posible\".",
-          "a": "Porque en esa construcción se usa de forma invariable (se trata de un uso adverbial, aunque la norma admite \"posibles\")"
+          "q": "Dinos por qué la palabra \"medio\" no concuerda en la frase siguiente: \"Ella está medio dormida\".",
+          "a": "Porque es un adverbio (modifica al adjetivo \"dormida\"), así que es invariable"
         },
         {
           "level": 8,
-          "q": "Deletrea la frase citando los acentos y los espacios: \"A nivel de la tercera planta\".",
-          "a": "A NIVEL DE LA TERCERA PLANTA"
+          "q": "Deletrea la frase citando los acentos y los espacios: \"Grosso modo, a ver qué se hace\".",
+          "a": "GROSSO MODO, A VER QUÉ SE HACE (con tilde en la E de QUÉ)"
         },
         {
           "level": 9,
-          "q": "¿En qué único caso el número 20 (veinte) cambia de forma al multiplicarse?",
-          "a": "Cuando se combina con otro número (veinte → veintiuno, veintidós...; se escribe en una sola palabra)"
+          "q": "¿En qué caso el número 100 se escribe \"ciento\" y no \"cien\"?",
+          "a": "Cuando va seguido de otra cifra menor (ciento uno, ciento veinte); si no, es \"cien\" (cien euros, cien mil)"
         },
         {
           "level": 10,
-          "q": "¿Qué expresión de 5 palabras en español antiguo significa manifestar públicamente la indignación hacia alguien o algo?",
+          "q": "¿Qué expresión de 6 palabras significa manifestar en voz alta y con vehemencia la indignación por algo?",
           "a": "Poner el grito en el cielo"
         }
       ]
@@ -20130,13 +20130,13 @@
         },
         {
           "level": 5,
-          "q": "¿Qué expresión con la palabra \"pato\" define algo que se hace pasar por lo que no es o que se paga sin deber?",
-          "a": "\"Pagar el pato\" (cargar con las culpas de otro)"
+          "q": "¿Qué expresión con la palabra \"pato\" significa cargar con la culpa de algo que no has hecho?",
+          "a": "\"Pagar el pato\""
         },
         {
           "level": 6,
-          "q": "¿Cómo se llama a una cría de pato?",
-          "a": "Un patito (o anadino)"
+          "q": "¿Cómo se llama a una cría hembra de pato?",
+          "a": "Una patita"
         },
         {
           "level": 7,
@@ -20145,8 +20145,8 @@
         },
         {
           "level": 8,
-          "q": "¿Qué eslogan utilizaba Pato WC en su anuncio de TV de los años 90?",
-          "a": "\"Encore une victoire de canard\" (Pato WC: otra victoria del pato)"
+          "q": "¿Qué eslogan utilizaba Canard WC (Pato WC) en su anuncio de la tele francesa de los años 90?",
+          "a": "\"Encore une victoire de canard\" (otra victoria del pato)"
         },
         {
           "level": 9,
@@ -22767,7 +22767,7 @@
         },
         {
           "level": 6,
-          "q": "Nombra las 9 palabras en francés de la canción Lady Marmalade, interpretada en 2004.",
+          "q": "Nombra las 9 palabras en francés de la canción Lady Marmalade, interpretada en 2001.",
           "a": "Voulez, vous, coucher, avec, moi, ce, soir, moulin, rouge"
         },
         {
@@ -23851,7 +23851,7 @@
         },
         {
           "level": 10,
-          "q": "Termina esta famosa cita de la película Barrio chino... perdón, El espantapájaros: \"No me fío de nadie, ...\"",
+          "q": "Termina esta famosa cita de la película El espantapájaros: \"No me fío de nadie, ...\"",
           "a": "\"... no quiero a nadie, y soy lo bastante fuerte como para tumbar a un elefante\""
         }
       ]
@@ -24779,7 +24779,7 @@
         {
           "level": 5,
           "q": "Si un sapo intenta reproducirse con una rana, ¿qué pasa?",
-          "a": "Nada (pero se concede la respuesta \"Sapoña\" en nombre del Santo Humor)"
+          "a": "Nada (pero se acepta una mezcla de sapo y rana, como el francés \"Crapouille\", en nombre del Santo Humor de Didier Gustin, humorista francés)"
         },
         {
           "level": 6,
@@ -24936,13 +24936,13 @@
         },
         {
           "level": 3,
-          "q": "¿OLP significa: Obélix Ata a Panorámix, Oficina de Lazos Palestinos u Organización para la Liberación de Palestina?",
+          "q": "¿OLP significa: Obélix Liga a Panorámix, Oficina de Lazos Palestinos u Organización para la Liberación de Palestina?",
           "a": "Organización para la Liberación de Palestina"
         },
         {
           "level": 4,
           "q": "¿De qué nacionalidad era?",
-          "a": "Egipcia"
+          "a": "Egipcia (nació en El Cairo; también se acepta palestina)"
         },
         {
           "level": 5,
@@ -27064,8 +27064,8 @@
         },
         {
           "level": 3,
-          "q": "Es famoso por escupir, y también es el emblema de Bolivia y de Perú. ¿Quién es?",
-          "a": "La llama"
+          "q": "Es un Serge o un Bernard (un cantante y un portero franceses), pero también el emblema de Bolivia y de Perú. ¿Quién es?",
+          "a": "La llama (Serge Lama y Bernard Lama)"
         },
         {
           "level": 4,
@@ -27115,7 +27115,7 @@
         },
         {
           "level": 2,
-          "q": "¿En qué fiesta celebrada el 31 de octubre es costumbre decorar las cucurbitáceas: San Juan, Halloween o Nochevieja?",
+          "q": "¿En qué fiesta celebrada el 31 de octubre es costumbre decorar las cucurbitáceas: el día de San Nunca, Halloween o el Quinto Pino?",
           "a": "Halloween"
         },
         {
@@ -27166,7 +27166,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "En los dibujos animados, ¿Hipo (el hipopótamo de Hanna-Barbera) es un hipopótamo o un forajido que persigue forajidos?",
+          "q": "En los dibujos animados, ¿Petit Potam (serie animada francesa) es un hipopótamo o un forajido que persigue forajidos?",
           "a": "Un hipopótamo"
         },
         {
@@ -27176,7 +27176,7 @@
         },
         {
           "level": 3,
-          "q": "Su peso puede ser hasta 2 veces el de un Seat Panda. ¿Verdadero o falso?",
+          "q": "Su peso puede ser hasta 2 veces el de un Renault Twingo. ¿Verdadero o falso?",
           "a": "Verdadero (pesa unos 2.000 kg y puede llegar a los 3.200 kg)"
         },
         {
@@ -27192,7 +27192,7 @@
         {
           "level": 6,
           "q": "¿De qué color es la leche que producen los hipopótamos?",
-          "a": "¡Rosa!"
+          "a": "¡Blanca! (la famosa \"leche rosa\" es un mito)"
         },
         {
           "level": 7,
@@ -27843,8 +27843,8 @@
         },
         {
           "level": 2,
-          "q": "¿Qué letra hay que añadir a Nigeria para obtener el nombre de uno de sus habitantes: la Z, la N o la I?",
-          "a": "La N"
+          "q": "¿Qué letras hay que añadir a Nigeria para obtener el nombre de uno de sus habitantes (en masculino): ZO, NO o IO?",
+          "a": "NO (nigeriano)"
         },
         {
           "level": 3,
@@ -27873,13 +27873,13 @@
         },
         {
           "level": 8,
-          "q": "¿Cómo se llama un tío nacido en Yemen?",
+          "q": "¿Cómo se llama un tipo nacido en Yemen?",
           "a": "Un yemení"
         },
         {
           "level": 9,
-          "q": "Deletrea el nombre que designa a varios habitantes de Tayikistán (en plural).",
-          "a": "TAYIKOS"
+          "q": "Deletrea el nombre que designa a varias habitantes de Tayikistán (mujeres, en plural).",
+          "a": "TAYIKAS"
         },
         {
           "level": 10,
@@ -27950,7 +27950,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Ha demostrado algún divulgador científico la eficacia de usar una jabalina como palillo de dientes después de una buena pierna de cordero?",
+          "q": "¿Ha demostrado Mac Lesggy (divulgador científico de la tele francesa) la eficacia de usar una jabalina como palillo de dientes después de una buena pierna de cordero?",
           "a": "Espero de verdad que no"
         },
         {
@@ -27975,7 +27975,7 @@
         },
         {
           "level": 6,
-          "q": "Nombra al antiguo atleta francés al que una jabalina le atravesó el muslo mientras calentaba.",
+          "q": "Nombra al antiguo atleta francés al que una jabalina le atravesó el costado mientras calentaba.",
           "a": "Salim Sdiri"
         },
         {
@@ -28124,7 +28124,7 @@
         {
           "level": 2,
           "q": "¿Cómo se llama la marioneta de la película Saw 6: Estrasburgo, Merguez o Jigsaw?",
-          "a": "Jigsaw"
+          "a": "Jigsaw (a la marioneta también se la apoda Billy)"
         },
         {
           "level": 3,
@@ -28474,7 +28474,7 @@
         },
         {
           "level": 5,
-          "q": "¿Qué se llama \"falsos gemelos\" o gemelos dicigóticos?",
+          "q": "¿Qué son los \"falsos gemelos\" o gemelos dicigóticos?",
           "a": "Son gemelos desarrollados a partir de 2 óvulos distintos, fecundados por 2 espermatozoides"
         },
         {
@@ -29775,8 +29775,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Di si las siguientes palabras proceden o no de la lengua árabe.\nAvanzarás una casilla por cada respuesta correcta, pero retrocederás una casilla por cada error.\nA. Tití\nB. Medina\nC. Limonada\nD. Azúcar\nE. Jaque mate\nF. Almacén\nG. Barullo\nH. Elixir",
-          "a": "A. No procede del árabe\nB. Procede del árabe\nC. No procede del árabe (aunque \"limón\" sí tiene origen árabe)\nD. Procede del árabe\nE. Procede del árabe (significa \"el rey ha muerto\")\nF. Procede del árabe (de \"makhzan\", que significa \"depósito\")\nG. No procede del árabe\nH. Procede del árabe (significa \"piedra filosofal\")"
+          "q": "Di si las siguientes palabras proceden o no de la lengua árabe.\nAvanzarás una casilla por cada respuesta correcta, pero retrocederás una casilla por cada error.\nA. Tití\nB. Medina\nC. Alpaca\nD. Bujía\nE. Jaque mate\nF. Almacén\nG. Barullo\nH. Elixir",
+          "a": "A. No procede del árabe\nB. Procede del árabe\nC. No procede del árabe (viene del aimara)\nD. Procede del árabe (del nombre de la ciudad argelina de Bugía, hoy Béjaïa)\nE. Procede del árabe (significa \"el rey ha muerto\")\nF. Procede del árabe (de \"makhzan\", que significa \"depósito\")\nG. No procede del árabe\nH. Procede del árabe (significa \"piedra filosofal\")"
         }
       ]
     },
@@ -30061,8 +30061,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Dime si las siguientes afirmaciones son INFORMACIONES O BULOS.\nResponde a todas las preguntas, avanzarás una casilla por cada respuesta correcta\nA. Brad Pitt fue vetado en China durante 20 años por su papel en la película Siete años en el Tíbet.\nB. Sahara significa \"gran desierto\" en bereber.\nC. Los Kinder Sorpresa son ilegales en Estados Unidos.\nD. La marca Babyliss está prohibida en la ciudad de Angers.\nE. Las tres estatuas más grandes del mundo son representaciones de Buda.\nF. Comerse a un hombre te aportará 125.000 calorías.\nG. Sean Connery llevaba peluca en todas sus apariciones como James Bond.\nH. Hay unos 87 billones de árboles en la Tierra.",
-          "a": "A. Información\nB. Información\nC. Información\nD. Bulo\nE. Bulo (era así antes de noviembre de 2018)\nF. Información\nG. Información\nH. Bulo (más bien 35.000 veces más, es decir, 3,04 trillones)"
+          "q": "Dime si las siguientes afirmaciones son INFORMACIONES O BULOS.\nResponde a todas las preguntas, avanzarás una casilla por cada respuesta correcta\nA. Brad Pitt fue vetado en China durante 20 años por su papel en la película Siete años en el Tíbet.\nB. Sahara significa \"desierto\" en árabe.\nC. Los Kinder Sorpresa son ilegales en Estados Unidos.\nD. La marca Babyliss está prohibida en la ciudad de Angers.\nE. Las tres estatuas más grandes del mundo son representaciones de Buda.\nF. Comerse a un hombre te aportará 125.000 calorías.\nG. Sean Connery llevaba peluca en todas sus apariciones como James Bond.\nH. Hay unos 87.000 millones de árboles en la Tierra.",
+          "a": "A. Información\nB. Información\nC. Información\nD. Bulo\nE. Bulo (era así antes de noviembre de 2018)\nF. Información\nG. Información\nH. Bulo (más bien 35 veces más, es decir, unos 3,04 billones)"
         }
       ]
     },
@@ -30101,12 +30101,12 @@
     },
     {
       "theme": "Challenge",
-      "subject": "Los gritos",
+      "subject": "Los sonidos de los animales",
       "questions": [
         {
           "level": null,
-          "q": "Dinos a qué animales corresponden los siguientes sonidos.\nResponde a todas las preguntas. Tienes 8 segundos como máximo por pregunta y avanzarás 2 casillas por cada respuesta correcta.\nA. El barrito\nB. La berrea\nC. El relincho\nD. El zumbido\nE. El balido (del carnero o del camello)\nF. El cacareo\nG. El gluglú (del pavo o el pingüino)\nH. El parloteo",
-          "a": "A. El elefante o el rinoceronte\nB. El ciervo, el corzo o el gamo\nC. El caballo, la llama o la cebra\nD. La abeja, la mosca, la avispa o... el avión\nE. El carnero o el camello\nF. La gallina\nG. El pingüino o el periquito\nH. La urraca o el periquito"
+          "q": "Dinos a qué animales corresponden los siguientes sonidos.\nResponde a todas las preguntas. Tienes 8 segundos como máximo por pregunta y avanzarás 2 casillas por cada respuesta correcta.\nA. El barrito\nB. La berrea\nC. El relincho\nD. El zumbido\nE. El balido\nF. El cacareo\nG. El gluglú\nH. El parloteo",
+          "a": "A. El elefante o el rinoceronte\nB. El ciervo, el corzo o el gamo\nC. El caballo, la llama o la cebra\nD. La abeja, la mosca, la avispa o... el avión\nE. El carnero o la oveja (también la cabra)\nF. La gallina\nG. El pavo\nH. La urraca o el periquito"
         }
       ]
     },
@@ -30530,7 +30530,7 @@
     },
     {
       "theme": "Challenge",
-      "subject": "Ríman conmigo",
+      "subject": "Rima conmigo",
       "questions": [
         {
           "level": null,
@@ -30853,8 +30853,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Nombra el mayor número posible de nombres femeninos que sean nombres de flores o plantas en español.\nEn cambio, no se aceptarán el nombre Flor ni las frutas.\nAvanzarás una casilla por cada acierto.\nNo dudes en hacer muchas propuestas. Tienes 52 segundos para darlo todo.",
-          "a": "Azucena, Amapola, Margarita, Rosa, Violeta, Jazmín, Dalia, Camelia, Azalea, Magnolia, Lila, Iris, Hortensia, Begonia, Gardenia, Narcisa, Jacinta, Pensamiento, Anémona, Orquídea, Clavel, Petunia, Lirio, Yedra\nOtras propuestas sujetas a la aprobación de más de la mitad de los jugadores"
+          "q": "Nombra el mayor número posible de nombres femeninos que sean también el nombre de una flor o una planta en español.\nEn cambio, no se aceptarán el nombre Flor ni las frutas.\nAvanzarás una casilla por cada acierto.\nNo dudes en hacer muchas propuestas. Tienes 52 segundos para darlo todo.",
+          "a": "Amapola, Azahar, Azalea, Azucena, Begonia, Camelia, Dalia, Gardenia, Hortensia, Iris, Jazmín, Lila, Magnolia, Margarita, Melisa, Orquídea, Petunia, Rosa, Verbena, Violeta\nOtras propuestas sujetas a la aprobación de más de la mitad de los jugadores"
         }
       ]
     },
@@ -30920,7 +30920,7 @@
         {
           "level": null,
           "q": "Nombra mamíferos actuales con cuernos o astas cuyo nombre empiece por la letra B.\nTienes 36 segundos\nAvanzarás una casilla por cada acierto.\nPista: En realidad, ¡los unicornios no existen!",
-          "a": "Bisonte\nBúfalo\nBuey almizclero\nBongo\nBorrego cimarrón\nBlesbok\nBuey\nBecerro"
+          "a": "Banteng\nBarasinga\nBerrendo\nBisonte\nBlesbok\nBongo\nBontebok\nBorrego cimarrón\nBúfalo\nBuey\nBuey almizclero"
         }
       ]
     },
@@ -30964,7 +30964,7 @@
         {
           "level": null,
           "q": "Nombra el mayor número posible de películas en las que la mafia tenga un papel preponderante.\nAvanzarás una casilla por cada acierto.\nMáximo 10 propuestas y 45 segundos",
-          "a": "El padrino (un solo punto por las 3 películas), Donnie Brasco, Uno de los nuestros, Lucky Luciano, Los intocables, Scarface, La siciliana, Érase una vez en América, Atrapado por su pasado, Mafia Blues, Una historia del Bronx, Infiltrados, Gomorra, Los cien pasos, Malavita, Malas calles, El rey de Nueva York, Casino, El jefe de la Camorra, Strictly Criminal, Romanzo Criminale, 100 días en Palermo, Vivir de noche, American Gangster, León, Cosa Nostra, El clan de los sicilianos, El traidor, Malas calles, Pirañas, Les Baronnes, Gangs of New York, Snatch, La French, Drive, Gotti, La noche es nuestra, Taken, El irlandés\n...\nOtras propuestas sujetas a la aprobación de más de la mitad de los jugadores"
+          "a": "El padrino (un solo punto por las 3 películas), Donnie Brasco, Uno de los nuestros, Lucky Luciano, Los intocables, Scarface, La siciliana rebelde, Érase una vez en América, Atrapado por su pasado, Analízame (Una terapia peligrosa), Una historia del Bronx, Infiltrados, Gomorra, Los cien pasos, Malavita, Malas calles, El rey de Nueva York, Casino, El jefe de la Camorra, Black Mass, Romanzo Criminale, 100 días en Palermo, Vivir de noche, American Gangster, El profesional (León), Cosa Nostra, El clan de los sicilianos, El traidor, Malas calles, Pirañas, Les Baronnes, Gangs of New York, Snatch, La French, Drive, Gotti, La noche es nuestra, Taken, El irlandés\n...\nOtras propuestas sujetas a la aprobación de más de la mitad de los jugadores"
         }
       ]
     },
@@ -31414,8 +31414,8 @@
       "questions": [
         {
           "level": null,
-          "q": "¿Qué palabra de 9 letras puedes formar con las siguientes letras?\nE, L, O, R, G, U, S, O y U\nTienes 1 minuto para pensar.",
-          "a": "UROLOGUES (en francés; vale cualquier palabra francesa válida de 9 letras que use exactamente estas letras)"
+          "q": "¿Qué palabra de 9 letras puedes formar con las siguientes letras? (sin contar las tildes)\nO, L, E, U, O, R, O, G y N\nTienes 1 minuto para pensar.",
+          "a": "NEURÓLOGO"
         }
       ]
     },
@@ -32041,8 +32041,8 @@
       "questions": [
         {
           "level": null,
-          "q": "¿Cuál es el anagrama más común de la palabra francesa \"parisien\"?",
-          "a": "Aspirine (aspirina)"
+          "q": "¿Cuál es el anagrama más común de la palabra \"París\"? (sin contar la tilde)",
+          "a": "Prisa (también vale pisar)"
         }
       ]
     },
@@ -32085,8 +32085,8 @@
       "questions": [
         {
           "level": null,
-          "q": "2 de las 5 películas siguientes no son X, ¿cuáles?\nA. Cariño, he agrandado los consoladores 2\nB. El planeta de las tetas\nC. El mosquetero estrecho\nD. El enhebrador de anillos\nE. Jaleo en Caracas",
-          "a": "Respuestas C y E"
+          "q": "2 de las 5 películas siguientes no son X, ¿cuáles?\nA. Cariño, he agrandado los consoladores 2\nB. El planeta de los senos\nC. Jamón, jamón\nD. El señor de los tangas\nE. Huevos de oro",
+          "a": "Respuestas C y E (Jamón, jamón y Huevos de oro son películas de Bigas Luna de 1992 y 1993)"
         }
       ]
     },
@@ -32327,8 +32327,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Vivimos en una isla, pero también se nos puede encontrar alrededor de un árbol.\n¿Quiénes somos?",
-          "a": "Los corsos (la corteza)"
+          "q": "Soy una isla, pero también un árbol.\n¿Quién soy?",
+          "a": "La Palma (la palma, la palmera)"
         }
       ]
     },
@@ -33629,17 +33629,17 @@
         },
         {
           "level": 2,
-          "q": "En Le plus beau métier du monde, ¿de quién es hija Laura Smet: de Gérard Depardieu o de Guy Marchand?",
-          "a": "De Gérard Depardieu"
+          "q": "¿De quién es hija la actriz Laura Smet: de Johnny Hallyday o de Gérard Depardieu?",
+          "a": "De Johnny Hallyday (y de Nathalie Baye)"
         },
         {
           "level": 3,
-          "q": "¿Quién es la hija única de Jacques Higelin, que tuvo con Kên Higelin?",
+          "q": "¿Quién es la única hija del cantante Jacques Higelin, media hermana de Arthur H y de Kên Higelin?",
           "a": "Izia (Izia Higelin)"
         },
         {
           "level": 4,
-          "q": "¿Cómo se llama la hija de la actriz Josiane Balasko y de Richard Berry, también actriz?",
+          "q": "¿Cómo se llama la hija de la actriz Josiane Balasko y del escultor Philippe Berry (hermano de Richard Berry), también actriz?",
           "a": "Marilou Berry"
         },
         {
@@ -33649,8 +33649,8 @@
         },
         {
           "level": 6,
-          "q": "¿Qué directora, Sofia Coppola, es hija de Francis Ford Coppola?",
-          "a": "Sofia Coppola (o Roman, pero es Sofia Coppola)"
+          "q": "¿Qué directora de Lost in Translation y María Antonieta es hija de Francis Ford Coppola?",
+          "a": "Sofia Coppola"
         },
         {
           "level": 7,
@@ -33659,18 +33659,18 @@
         },
         {
           "level": 8,
-          "q": "¿De qué cantante francés es hija Lou Doillon?",
+          "q": "¿De qué director de cine francés es hija Lou Doillon?",
           "a": "Jacques Doillon (y Jane Birkin)"
         },
         {
           "level": 9,
-          "q": "¿Cómo se llama la hija de Alain Delon y Elisabeth Depardieu?",
-          "a": "Julie Depardieu (no, es Anouchka Delon con Rosalie van Breemen)"
+          "q": "¿Cómo se llama la hija de Alain Delon y Rosalie van Breemen, también actriz?",
+          "a": "Anouchka Delon"
         },
         {
           "level": 10,
-          "q": "¿En qué película con Tom Cruise interpreta Lily-Rose Depp un pequeño papel?",
-          "a": "Misión Imposible (Protocolo Fantasma, no, es La Danseuse, la pregunta es confusa, sigamos)"
+          "q": "¿En qué película francesa de 2016 interpreta Lily-Rose Depp a la bailarina Isadora Duncan?",
+          "a": "La bailarina (La Danseuse)"
         }
       ]
     },
@@ -33792,7 +33792,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "¿Está el budismo inspirado en la religión de la Morcilla Blanca o en la película Buda?",
+          "q": "¿Está el budismo inspirado en el culto al Budín o en la película Pequeño Buda?",
           "a": "No (es una broma)"
         },
         {
@@ -33966,12 +33966,12 @@
         {
           "level": 2,
           "q": "¿Qué se celebra al cumplir 1 año de matrimonio: bodas de algodón, de papel o de madera?",
-          "a": "Bodas de algodón"
+          "a": "Bodas de papel (en Francia, de algodón)"
         },
         {
           "level": 3,
           "q": "¿Cómo se llama el 10.º aniversario de boda?",
-          "a": "Bodas de estaño"
+          "a": "Bodas de estaño (o de aluminio)"
         },
         {
           "level": 4,

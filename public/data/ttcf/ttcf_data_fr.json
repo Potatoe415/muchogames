@@ -3275,7 +3275,7 @@
         {
           "level": 5,
           "q": "Quel est le nom du chien de Rubeus Hagrid ?",
-          "a": "Touffu (Fang en VO)"
+          "a": "Crockdur (Fang en VO ; Touffu est son chien à trois têtes, aussi accepté)"
         },
         {
           "level": 6,
@@ -13043,7 +13043,7 @@
         },
         {
           "level": 10,
-          "q": "Exprimé en grammes, combien y a-t-il de glucides dans une baguette de pain de base française ?",
+          "q": "Exprimé en grammes, combien y a-t-il de glucides dans 100 g de baguette de pain de base française ?",
           "a": "57,4 grammes (propositions entre 57 g et 58 g acceptées)"
         }
       ]
@@ -19128,7 +19128,7 @@
         {
           "level": 6,
           "q": "Quel est le sport national ?",
-          "a": "Le baseball (dont le championnat a été créé en 1937)"
+          "a": "Le sumo (le baseball, sport le plus populaire, dont le championnat a été créé en 1936, est aussi accepté)"
         },
         {
           "level": 7,
@@ -19142,7 +19142,7 @@
         },
         {
           "level": 9,
-          "q": "Combien d'îles de plus de 100 m² compte l'archipel, à 48 près ?",
+          "q": "Combien d'îles de plus de 100 m de côte compte l'archipel, à 48 près ?",
           "a": "6.852 (propositions entre 6.804 et 6.900 acceptées)"
         },
         {
@@ -27192,7 +27192,7 @@
         {
           "level": 6,
           "q": "De quelle couleur est le lait produit par les hippopotames ?",
-          "a": "Rose !"
+          "a": "Blanc ! (le fameux « lait rose » est une légende)"
         },
         {
           "level": 7,
@@ -30061,8 +30061,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Dis-moi si les propositions suivantes sont DES INFOS OU DES INTOX.\nRéponds à toutes les questions, tu avanceras d'une case par bonne réponse\nA. Brad Pitt a été banni 20 ans de Chine depuis son rôle dans le film Sept ans au Tibet.\nB. Sahara signifie \"grand désert\" en berbère.\nC. Les Kinder Surprise sont illégaux aux États-Unis.\nD. La marque Babyliss est interdite dans la ville d'Angers.\nE. Les trois plus grandes statues du monde sont des représentations de Bouddha.\nF. Manger un homme t'apportera 125.000 calories.\nG. Sean Connery portait une perruque dans chacune de ses apparitions en tant que James Bond.\nH. On dénombre environ 87 billions d'arbres sur Terre.",
-          "a": "A. Info\nB. Info\nC. Info\nD. Intox\nE. Intox (c'était le cas avant novembre 2018)\nF. Info\nG. Info\nH. Intox (plutôt 35.000 fois plus, soit 3,04 trillions)"
+          "q": "Dis-moi si les propositions suivantes sont DES INFOS OU DES INTOX.\nRéponds à toutes les questions, tu avanceras d'une case par bonne réponse\nA. Brad Pitt a été banni 20 ans de Chine depuis son rôle dans le film Sept ans au Tibet.\nB. Sahara signifie \"désert\" en arabe.\nC. Les Kinder Surprise sont illégaux aux États-Unis.\nD. La marque Babyliss est interdite dans la ville d'Angers.\nE. Les trois plus grandes statues du monde sont des représentations de Bouddha.\nF. Manger un homme t'apportera 125.000 calories.\nG. Sean Connery portait une perruque dans chacune de ses apparitions en tant que James Bond.\nH. On dénombre environ 87 milliards d'arbres sur Terre.",
+          "a": "A. Info\nB. Info\nC. Info\nD. Intox\nE. Intox (c'était le cas avant novembre 2018)\nF. Info\nG. Info\nH. Intox (plutôt 35 fois plus, soit environ 3 040 milliards)"
         }
       ]
     },
@@ -33629,17 +33629,17 @@
         },
         {
           "level": 2,
-          "q": "Dans Le plus beau métier du monde, de qui Laura Smet est-elle la fille : de Gérard Depardieu ou de Guy Marchand ?",
-          "a": "De Gérard Depardieu"
+          "q": "De qui l'actrice Laura Smet est-elle la fille : de Johnny Hallyday ou de Gérard Depardieu ?",
+          "a": "De Johnny Hallyday (et de Nathalie Baye)"
         },
         {
           "level": 3,
-          "q": "Qui est la fille unique de Jacques Higelin, qu'il a eue avec Kên Higelin ?",
+          "q": "Qui est la fille unique du chanteur Jacques Higelin, demi-sœur d'Arthur H et de Kên Higelin ?",
           "a": "Izia (Izia Higelin)"
         },
         {
           "level": 4,
-          "q": "Comment s'appelle la fille de l'actrice Josiane Balasko et de Richard Berry, actrice elle aussi ?",
+          "q": "Comment s'appelle la fille de l'actrice Josiane Balasko et du sculpteur Philippe Berry (frère de Richard Berry), actrice elle aussi ?",
           "a": "Marilou Berry"
         },
         {
@@ -33649,8 +33649,8 @@
         },
         {
           "level": 6,
-          "q": "Quelle réalisatrice de Sofia Coppola est la fille de Francis Ford Coppola ?",
-          "a": "Sofia Coppola (ou Roman, mais c'est bien Sofia Coppola)"
+          "q": "Quelle réalisatrice de Lost in Translation et de Marie-Antoinette est la fille de Francis Ford Coppola ?",
+          "a": "Sofia Coppola"
         },
         {
           "level": 7,
@@ -33659,18 +33659,18 @@
         },
         {
           "level": 8,
-          "q": "De quel chanteur français Lou Doillon est-elle la fille ?",
+          "q": "De quel réalisateur français Lou Doillon est-elle la fille ?",
           "a": "Jacques Doillon (et Jane Birkin)"
         },
         {
           "level": 9,
-          "q": "Comment s'appelle la fille d'Alain Delon et d'Elisabeth Depardieu ?",
-          "a": "Julie Depardieu (non, c'est Anouchka Delon avec Rosalie van Breemen)"
+          "q": "Comment s'appelle la fille d'Alain Delon et de Rosalie van Breemen, actrice elle aussi ?",
+          "a": "Anouchka Delon"
         },
         {
           "level": 10,
-          "q": "Dans quel film avec Tom Cruise, Lily-Rose Depp joue-t-elle un petit rôle ?",
-          "a": "Mission Impossible (Ghost Protocol, non c'est La Danseuse, la question est floue, passons)"
+          "q": "Dans quel film français de 2016 Lily-Rose Depp joue-t-elle la danseuse Isadora Duncan ?",
+          "a": "La Danseuse"
         }
       ]
     },

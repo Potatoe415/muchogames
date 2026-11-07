@@ -1528,7 +1528,7 @@
         },
         {
           "level": 3,
-          "q": "What is a skateboard called in English?",
+          "q": "What do you call the board on four wheels that you ride standing up in the street or at a skatepark?",
           "a": "A skateboard"
         },
         {
@@ -2337,8 +2337,8 @@
         },
         {
           "level": 8,
-          "q": "What is the first person singular of the past perfect of the verb 'go'?",
-          "a": "I had gone"
+          "q": "What is the simple past of the verb 'lie' (to recline), 1st person singular?",
+          "a": "I lay (not 'I laid')"
         },
         {
           "level": 9,
@@ -2347,8 +2347,8 @@
         },
         {
           "level": 10,
-          "q": "Which tense expresses an action completed before another past action (e.g. I had eaten)?",
-          "a": "The past perfect"
+          "q": "Which tense describes an action that had been going on before another past action (e.g. I had been eating)?",
+          "a": "The past perfect continuous (past perfect progressive)"
         }
       ]
     },
@@ -2607,8 +2607,8 @@
         },
         {
           "level": 6,
-          "q": "Which Colombian singer released 'Hips Don't Lie' in 2006?",
-          "a": "Shakira"
+          "q": "Which singer sang 'Parce qu'on vient de loin' (a French-language hit)?",
+          "a": "Corneille"
         },
         {
           "level": 7,
@@ -2627,8 +2627,8 @@
         },
         {
           "level": 10,
-          "q": "Which singer won the first season of American Idol in 2002 before releasing 'A Moment Like This'?",
-          "a": "Kelly Clarkson"
+          "q": "Which French singer won Star Academy (a French TV talent show) in 2001 before releasing 'Au Soleil'?",
+          "a": "Jenifer"
         }
       ]
     },
@@ -3091,7 +3091,7 @@
         },
         {
           "level": 2,
-          "q": "'Look for the simple bare... ' (The Jungle Book)",
+          "q": "'Look for the bare... ' (The Jungle Book)",
           "a": "Necessities"
         },
         {
@@ -3101,8 +3101,8 @@
         },
         {
           "level": 4,
-          "q": "'Let it go, let it go, can't hold it back any... ' (Frozen)",
-          "a": "More"
+          "q": "'Let it go, let it go, can't hold it back... ' (Frozen)",
+          "a": "Anymore"
         },
         {
           "level": 5,
@@ -3275,7 +3275,7 @@
         {
           "level": 5,
           "q": "What is the name of Rubeus Hagrid's dog?",
-          "a": "Fang"
+          "a": "Fang (Fluffy, his three-headed dog, also accepted)"
         },
         {
           "level": 6,
@@ -4771,7 +4771,7 @@
         },
         {
           "level": 2,
-          "q": "Match the brand to this slogan: 'I'm lovin' it'",
+          "q": "Match the brand to this slogan: 'Come as you are' (or 'I'm lovin' it')",
           "a": "McDonald's"
         },
         {
@@ -4791,28 +4791,28 @@
         },
         {
           "level": 6,
-          "q": "Match the brand to this slogan: 'Kids and grown-ups love it so, the happy world of Haribo'",
+          "q": "Match the brand to this slogan: 'Life is beautiful, for grown-ups and little ones'",
           "a": "Haribo"
         },
         {
           "level": 7,
-          "q": "Match the brand to this slogan: 'The champagne of ginger ales'",
+          "q": "Match the brand to this slogan: 'It has the color of alcohol, the taste of alcohol... but it's not alcohol'",
           "a": "Canada Dry"
         },
         {
           "level": 8,
-          "q": "Match the brand to this slogan: 'The Ultimate Driving Machine'",
-          "a": "BMW"
+          "q": "Match the brand to this slogan: 'The contract of trust' (French electronics retailer)",
+          "a": "Darty"
         },
         {
           "level": 9,
-          "q": "Match the brand to this slogan: 'Shake it!'",
+          "q": "Match the brand to this slogan: 'Shake me, shake me!'",
           "a": "Orangina"
         },
         {
           "level": 10,
-          "q": "Match the brand to this slogan: 'It gives you wings'",
-          "a": "Red Bull"
+          "q": "Match the brand to this slogan: 'À fond la forme' ('Fit to the max', French sports retailer)",
+          "a": "Decathlon"
         }
       ]
     },
@@ -5102,7 +5102,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "Can you say \"lumbricid\"?",
+          "q": "Can you also call an earthworm a \"nightcrawler\"?",
           "a": "Yes."
         },
         {
@@ -5142,7 +5142,7 @@
         },
         {
           "level": 9,
-          "q": "What do you call a specialist who studies soil to learn about the worms (and other bacteria) it contains?",
+          "q": "What do you call a specialist who studies soil to learn about the worms (and bacteria) it contains?",
           "a": "A geobiologist."
         },
         {
@@ -6033,7 +6033,7 @@
         },
         {
           "level": 8,
-          "q": "How many years of marriage does the emerald wedding anniversary celebrate?",
+          "q": "How many years of marriage does the emerald wedding anniversary celebrate (in the French tradition)?",
           "a": "40 years"
         },
         {
@@ -6043,7 +6043,7 @@
         },
         {
           "level": 10,
-          "q": "Which flower celebrates 17 years of marriage?",
+          "q": "Which flower celebrates 17 years of marriage (in the French tradition)?",
           "a": "The rose"
         }
       ]
@@ -8966,8 +8966,8 @@
       "questions": [
         {
           "level": 1,
-          "q": "What is the French equivalent of “I am”?",
-          "a": "Je suis."
+          "q": "What is the English equivalent of the French “je suis”?",
+          "a": "I am."
         },
         {
           "level": 2,
@@ -9001,12 +9001,12 @@
         },
         {
           "level": 8,
-          "q": "How do you express possession with a proper name (e.g. Paul's book)?",
+          "q": "How do you express possession with a proper name (e.g. “the book of Paul”)?",
           "a": "By using the Saxon genitive ('s): Paul's book."
         },
         {
           "level": 9,
-          "q": "Which modal verb is used to express ability or possibility (e.g. I can swim)?",
+          "q": "Which modal verb is used to express ability or possibility (e.g. I ___ swim)?",
           "a": "Can."
         },
         {
@@ -10987,8 +10987,8 @@
         },
         {
           "level": 2,
-          "q": "Is the abbreviation for renewable energy RPR, RE or ZZ TOP?",
-          "a": "RE"
+          "q": "Is the French abbreviation for renewable energy (énergie renouvelable) RPR, EnR or ZZ TOP?",
+          "a": "EnR"
         },
         {
           "level": 3,
@@ -11394,7 +11394,7 @@
         },
         {
           "level": 5,
-          "q": "Adopted in 1980, what is the Canadian anthem called: O Canada, May Canada Prosper, Land of Great Lakes or Holy Moly Song?",
+          "q": "Adopted in 1980, what is the Canadian anthem called: O Canada, May Canada Prosper, Land of Great Lakes or Ostie de chanson (Quebec slang, roughly \"damn song\")?",
           "a": "O Canada"
         },
         {
@@ -11995,8 +11995,8 @@
         },
         {
           "level": 2,
-          "q": "Complete this slogan \"Antibiotics, they're not...\": automatic, super handy or for mosquitoes?",
-          "a": "Automatic"
+          "q": "Complete this French public-health slogan \"Les antibiotiques, c'est pas…\" (\"Antibiotics aren't…\"): automatique (automatic), super pratique (super handy) or pour les moustiques (for mosquitoes)?",
+          "a": "Automatique (automatic)"
         },
         {
           "level": 3,
@@ -12891,8 +12891,8 @@
         },
         {
           "level": 2,
-          "q": "Give the meaning of the letter G in IVG.",
-          "a": "Grossesse (pregnancy)"
+          "q": "Give the meaning of the letter G in IVG (the French acronym for abortion).",
+          "a": "Grossesse, i.e. pregnancy (interruption volontaire de grossesse)"
         },
         {
           "level": 3,
@@ -12911,7 +12911,7 @@
         },
         {
           "level": 6,
-          "q": "What is an IMG?",
+          "q": "What is an IMG (French acronym)?",
           "a": "Medical termination of pregnancy (interruption médicale de grossesse), performed if the child is in poor health"
         },
         {
@@ -13008,7 +13008,7 @@
         },
         {
           "level": 3,
-          "q": "Traces of unleavened bread were found 31,960 years before Jesus Christ. True or false?",
+          "q": "Traces of unleavened bread have been found dating back 31,960 years before JC Van Damme. True or false?",
           "a": "True"
         },
         {
@@ -13043,7 +13043,7 @@
         },
         {
           "level": 10,
-          "q": "Expressed in grams, how many carbohydrates are there in a basic French baguette?",
+          "q": "Expressed in grams, how many carbohydrates are there in 100 g of basic French baguette?",
           "a": "57.4 grams (answers between 57 g and 58 g accepted)"
         }
       ]
@@ -13054,7 +13054,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "Is Judaism an exotic fruit used to make Judaism juice?",
+          "q": "Is Judaism the art of practicing judo?",
           "a": "No"
         },
         {
@@ -14194,17 +14194,17 @@
         },
         {
           "level": 5,
-          "q": "Which of these 5 words is in the dictionary: néologiser, inatteignable, épeurant, candidater or abracadabrantesque?",
+          "q": "Which of these 5 words is in the French dictionary: néologiser, inatteignable, épeurant, candidater or abracadabrantesque?",
           "a": "Épeurant"
         },
         {
           "level": 6,
-          "q": "Officially added to the dictionary in 2015, what is a stiletto?",
+          "q": "Officially added to the French dictionary in 2015, what is a stiletto?",
           "a": "It's a type of woman's shoe with a stiletto heel (at least 10 cm). But if you're a man, you're allowed to wear them too!"
         },
         {
           "level": 7,
-          "q": "What is the first 5-letter word appearing in the dictionary and starting with the letter N?",
+          "q": "In the French dictionary, what is the first 5-letter word starting with the letter N?",
           "a": "Nabab"
         },
         {
@@ -14296,7 +14296,7 @@
         },
         {
           "level": 3,
-          "q": "Which wooden object lets you play Wonderwall by Oasis to perfection?",
+          "q": "Which wooden object lets you play Je l'aime à mourir by Francis Cabrel to perfection?",
           "a": "A guitar"
         },
         {
@@ -15070,7 +15070,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "How many Z's are there in this word?",
+          "q": "How many S's are there in this word (gas)?",
           "a": "1"
         },
         {
@@ -15116,7 +15116,7 @@
         {
           "level": 10,
           "q": "What does the Jacob law of 2011 provide for?",
-          "a": "The ban in France on exploiting shale gas without using hydraulic fracturing"
+          "a": "The ban in France on exploring for and exploiting shale gas by hydraulic fracturing"
         }
       ]
     },
@@ -15930,8 +15930,8 @@
         },
         {
           "level": 5,
-          "q": "How many coordinating conjunctions are in the sentence \"I know where the gold is hidden in the bus, but he denies it all\"?",
-          "a": "One (but)"
+          "q": "How many coordinating conjunctions are in the sentence \"The four sailors sew oars for the ore barge, but it isn't finished yet\"?",
+          "a": "One (but). Here \"for\" is a preposition and \"yet\" an adverb; four, sew, oars and ore are only sound-alikes"
         },
         {
           "level": 6,
@@ -16246,8 +16246,8 @@
       "questions": [
         {
           "level": 1,
-          "q": "Is a \"hermit crab\" a crustacean or a monk who loves seafood?",
-          "a": "A crustacean"
+          "q": "Is a bernard-l'hermite (French for hermit crab) a crustacean with an actor's name or an actor with a crustacean's name?",
+          "a": "A crustacean with an actor's name (like the French actor Thierry Lhermitte)"
         },
         {
           "level": 2,
@@ -16256,8 +16256,8 @@
         },
         {
           "level": 3,
-          "q": "Does an army sergeant major tend to order a free-for-all, a stand-to-attention, a hand-me-down or a lie-in?",
-          "a": "A stand-to-attention"
+          "q": "Does an army sergeant major tend to order a free-for-all, a hand-me-down, an about-turn or a lie-in?",
+          "a": "An about-turn"
         },
         {
           "level": 4,
@@ -16531,7 +16531,7 @@
         },
         {
           "level": 2,
-          "q": "Which word can describe both the end of a river and the opening you eat with?",
+          "q": "Which word can mean both the place where a river meets the sea and the human opening you can stuff Prince de LU biscuits into?",
           "a": "A mouth"
         },
         {
@@ -16572,7 +16572,7 @@
         {
           "level": 10,
           "q": "This word can be a type of tree and a journalistic term. What is it?",
-          "a": "Evergreen"
+          "a": "Evergreen (an evergreen tree, and in journalism a timeless story that can be run at any time)"
         }
       ]
     },
@@ -16593,7 +16593,7 @@
         {
           "level": 3,
           "q": "Sing the last line of the chorus of La Marseillaise, hand on heart.",
-          "a": "\"Let an impure blood water our furrows\""
+          "a": "\"Qu'un sang impur abreuve nos sillons\" (\"Let an impure blood water our furrows\")"
         },
         {
           "level": 4,
@@ -16622,8 +16622,8 @@
         },
         {
           "level": 9,
-          "q": "Name the 5 framework nations of Eurocorps.",
-          "a": "France, Germany, Belgium, Spain and Luxembourg"
+          "q": "Name 5 of the 6 framework nations of Eurocorps.",
+          "a": "France, Germany, Belgium, Spain, Luxembourg and Poland (since 2022)"
         },
         {
           "level": 10,
@@ -17306,7 +17306,7 @@
     },
     {
       "theme": "Scolaire",
-      "subject": "Do you think you're good at big cats?",
+      "subject": "Do you think you're good at felines?",
       "questions": [
         {
           "level": 1,
@@ -17442,8 +17442,8 @@
         },
         {
           "level": 5,
-          "q": "Conjugate the verb \"to whirl\" in the first person plural of the past continuous.",
-          "a": "We were whirling"
+          "q": "Conjugate and spell the verb \"to panic\" in the first person plural of the past continuous.",
+          "a": "We were panicking (with a K)"
         },
         {
           "level": 6,
@@ -17457,8 +17457,8 @@
         },
         {
           "level": 8,
-          "q": "Conjugate the verb \"to call\" in the second person singular of the past perfect.",
-          "a": "You had called"
+          "q": "Conjugate the verb \"to call\" in the second person singular of the past perfect subjunctive (as in \"If only...\").",
+          "a": "(If only) you had called"
         },
         {
           "level": 9,
@@ -17727,7 +17727,7 @@
         },
         {
           "level": 6,
-          "q": "Azaleas belong to a genus of flowering shrubs; how do you spell the word \"RHODODENDRON\"?",
+          "q": "A genus of flowering shrubs that includes azaleas: how do you spell the word \"RHODODENDRON\"?",
           "a": "RHODODENDRON"
         },
         {
@@ -17737,8 +17737,8 @@
         },
         {
           "level": 8,
-          "q": "A figure of speech that imitates a sound: how is \"ONOMATOPOEIA\" spelled?",
-          "a": "ONOMATOPOEIA"
+          "q": "A rare natural phenomenon: how do you spell \"PRESBYOPIC PLATYPUS\"?",
+          "a": "PRESBYOPIC PLATYPUS (a long-sighted platypus)"
         },
         {
           "level": 9,
@@ -17941,8 +17941,8 @@
         },
         {
           "level": 4,
-          "q": "How many cedillas are in the following French sentence: \"Un glaçon sur un hameçon, c'est sûr, cela est décevant\"?",
-          "a": "2 (on the words glaçon and hameçon)"
+          "q": "How many cedillas are in the following sentence: \"The garçon at the café added a soupçon of cinnamon, then admired the façade of the cathedral\"?",
+          "a": "3 (on garçon, soupçon and façade)"
         },
         {
           "level": 5,
@@ -17951,13 +17951,13 @@
         },
         {
           "level": 6,
-          "q": "Which of these French words use a C cedilla: cachaça, cerceau, descente, perceuse, menaçant and poinçonner?",
-          "a": "Cachaça, menaçant and poinçonner"
+          "q": "Which of these words borrowed from French are spelled with a C cedilla: facade, concierge, soupcon, decor, garcon and cinema?",
+          "a": "Façade, soupçon and garçon"
         },
         {
           "level": 7,
-          "q": "Give 3 feminine French nouns starting with F that contain a C cedilla.",
-          "a": "Façon, fiançailles, française, façade, façure, fonçaille, façonnière, franc-maçonnerie"
+          "q": "Give 3 words or names used in English that contain a C cedilla.",
+          "a": "Façade, garçon, soupçon, aperçu, François, Provençal, Curaçao, ça va..."
         },
         {
           "level": 8,
@@ -17966,8 +17966,8 @@
         },
         {
           "level": 9,
-          "q": "What is the last word in the French alphabetical order that can contain a cedilla?",
-          "a": "Violaçais (first person singular of the imperfect indicative of the verb violacer)"
+          "q": "Which Caribbean island, part of the Kingdom of the Netherlands, has a C cedilla in its name?",
+          "a": "Curaçao (which also gave its name to a liqueur)"
         },
         {
           "level": 10,
@@ -18364,7 +18364,7 @@
         {
           "level": 10,
           "q": "The character Jack McEvoy appears in 4 Michael Connelly novels. Which ones?",
-          "a": "The Poet, The Narrows, The Scarecrow and Void Moon (in French: Le Poète, L'Oiseau des ténèbres, Le Verdict de plomb and L'Épouvantail)"
+          "a": "The Poet, The Narrows, The Brass Verdict and The Scarecrow (in French: Le Poète, L'Oiseau des ténèbres, Le Verdict de plomb and L'Épouvantail)"
         }
       ]
     },
@@ -18430,8 +18430,8 @@
       "questions": [
         {
           "level": 1,
-          "q": "If you're not a fibber and you say you're going to the \"gym\", where are you going: the restaurant, the gymnasium or the physiotherapist?",
-          "a": "The gymnasium"
+          "q": "If you're not a fibber and you say you're off to the \"physio\", are you going to the restaurant, the physiotherapist or the physics lab?",
+          "a": "The physiotherapist"
         },
         {
           "level": 2,
@@ -18450,8 +18450,8 @@
         },
         {
           "level": 5,
-          "q": "Which word is the root of the short form \"cab\": cabriolet, taximeter, taxibus, taxicab or taxidermist?",
-          "a": "Cabriolet"
+          "q": "Which word is the root of the short form \"taxi\": taximobile, taximeter, taxibus or taxidermist?",
+          "a": "Taximeter (\"taxi\" is short for \"taximeter cab\")"
         },
         {
           "level": 6,
@@ -18475,8 +18475,8 @@
         },
         {
           "level": 10,
-          "q": "Which misspelling is the abbreviation \"OK\" supposed to come from?",
-          "a": "\"Oll korrect\" (all correct)"
+          "q": "Where does the French expression \"la fête à Neuneu\" come from?",
+          "a": "From the Neuilly fair (fête de Neuilly, near Paris), which gave \"la fête à Neuneuille\""
         }
       ]
     },
@@ -18771,7 +18771,7 @@
         },
         {
           "level": 2,
-          "q": "In chemistry, is H the symbol of Harry Styles, of hydrogen or of the hedgehog?",
+          "q": "In chemistry, is H the symbol of the singer Plastic Bertrand, of hydrogen or of the hedgehog?",
           "a": "Hydrogen"
         },
         {
@@ -19107,13 +19107,13 @@
         },
         {
           "level": 2,
-          "q": "What do the Japanese call their country: Nihon, Nihil or Ninon?",
-          "a": "Nihon (or Nippon)"
+          "q": "What do the Japanese call their country: Nippon, Nipple or Ninon?",
+          "a": "Nippon (or Nihon)"
         },
         {
           "level": 3,
-          "q": "Describe the Japanese flag, but with a Canadian accent.",
-          "a": "A red circle on a white background, eh"
+          "q": "Describe the Japanese flag, but with a Quebec (French-Canadian) accent.",
+          "a": "A red circle on a white background, caribou!"
         },
         {
           "level": 4,
@@ -19128,7 +19128,7 @@
         {
           "level": 6,
           "q": "What is the national sport?",
-          "a": "Baseball (whose championship was created in 1937)"
+          "a": "Sumo (baseball, the most popular sport, whose professional league dates from 1936, is also accepted)"
         },
         {
           "level": 7,
@@ -19142,8 +19142,8 @@
         },
         {
           "level": 9,
-          "q": "How many islands of more than 100 m² does the archipelago have, to within 48?",
-          "a": "6,852 (answers between 6,804 and 6,900 accepted)"
+          "q": "How many islands with more than 100 m of coastline does the archipelago have, to within 48?",
+          "a": "6,852 (answers between 6,804 and 6,900 accepted; a 2023 survey raised the count to 14,125)"
         },
         {
           "level": 10,
@@ -19631,7 +19631,7 @@
         },
         {
           "level": 6,
-          "q": "In which book does good old Jules Verne mention the existence of a submarine before it had even been invented?",
+          "q": "In which book does good old Jules Verne describe a submarine far more advanced than any that existed at the time?",
           "a": "Twenty Thousand Leagues Under the Sea"
         },
         {
@@ -19646,7 +19646,7 @@
         },
         {
           "level": 9,
-          "q": "Who is the author of the novella Colomba, themed around the vendetta between the Colomba and Barricini families?",
+          "q": "Who is the author of the novella Colomba, themed around the vendetta between the della Rebbia and Barricini families?",
           "a": "Prosper Mérimée"
         },
         {
@@ -20085,22 +20085,22 @@
         {
           "level": 7,
           "q": "Explain why there is no apostrophe in \"its\" in the sentence \"The dog wagged its tail\".",
-          "a": "Because it is a possessive pronoun (it's means \"it is\")"
+          "a": "Because \"its\" is a possessive (like \"his\"); \"it's\" means \"it is\" or \"it has\""
         },
         {
           "level": 8,
-          "q": "Spell the phrase, giving the spaces and apostrophes: \"It's a case of mind over matter\".",
-          "a": "IT'S A CASE OF MIND OVER MATTER"
+          "q": "Spell the phrase, giving the spaces and punctuation: \"For all intents and purposes, it's unnecessary\".",
+          "a": "FOR ALL INTENTS AND PURPOSES, IT'S UNNECESSARY"
         },
         {
           "level": 9,
-          "q": "What is the plural of \"phenomenon\"?",
-          "a": "Phenomena"
+          "q": "In which single case does the number four lose its \"u\" when written out?",
+          "a": "In \"forty\" (yet \"fourteen\", \"twenty-four\" and \"four hundred\" keep it)"
         },
         {
           "level": 10,
-          "q": "Which 5-word phrase, with a donkey in it, means to publicly show indignation at someone or something? (\"Haro\" is an Old French cry of alarm.)",
-          "a": "\"Crier haro sur le baudet\" (raise the hue and cry against the donkey, i.e. blame a scapegoat; made famous by good old Jean de La Fontaine)"
+          "q": "Which old 5-word expression means to publicly show your indignation against someone or something?",
+          "a": "Raise a hue and cry (from the Anglo-Norman legal outcry raised to pursue a criminal)"
         }
       ]
     },
@@ -20130,13 +20130,13 @@
         },
         {
           "level": 5,
-          "q": "Which French expression containing the word \"canard\" (duck) defines something average or passable?",
-          "a": "\"Ne pas casser trois pattes à un canard\" (literally \"not to break three legs of a duck\", i.e. nothing special)"
+          "q": "Which expression containing the word \"duck\" describes an official still in office but powerless because a successor has already been chosen?",
+          "a": "A lame duck"
         },
         {
           "level": 6,
-          "q": "What is a young female duck called?",
-          "a": "A duckling (une canette in French)"
+          "q": "What is a male duck called?",
+          "a": "A drake (the female is simply called a duck)"
         },
         {
           "level": 7,
@@ -21291,8 +21291,8 @@
         },
         {
           "level": 2,
-          "q": "According to UEFA, was the best goal of the tournament scored by Shakira, Kirikou or Shakiri?",
-          "a": "Shakiri"
+          "q": "According to UEFA, was the best goal of the tournament scored by Shakira, Kirikou or Shaqiri?",
+          "a": "Shaqiri"
         },
         {
           "level": 3,
@@ -22767,7 +22767,7 @@
         },
         {
           "level": 6,
-          "q": "Name the 9 French words of the song Lady Marmalade, performed in 2004.",
+          "q": "Name the 9 French words of the song Lady Marmalade, performed in 2001.",
           "a": "Voulez, vous, coucher, avec, moi, ce, soir, moulin, rouge"
         },
         {
@@ -24779,7 +24779,7 @@
         {
           "level": 5,
           "q": "If a toad tries to mate with a frog, what happens?",
-          "a": "Nothing (but the answer \"Frogtoad\" is granted in the name of Holy Humor)"
+          "a": "Nothing (but a toad + frog blend, like the French \"Crapouille\", is accepted in the name of the Holy Humor of Didier Gustin, French comedian)"
         },
         {
           "level": 6,
@@ -24936,13 +24936,13 @@
         },
         {
           "level": 3,
-          "q": "Does PLO stand for: Obelix Ties Panoramix, Palestinian Links Office or Palestine Liberation Organization?",
+          "q": "Does PLO stand for: Panoramix Lassoes Obelix, Palestinian Links Office or Palestine Liberation Organization?",
           "a": "Palestine Liberation Organization"
         },
         {
           "level": 4,
           "q": "What nationality was he?",
-          "a": "Egyptian"
+          "a": "Egyptian (born in Cairo; Palestinian also accepted)"
         },
         {
           "level": 5,
@@ -27064,8 +27064,8 @@
         },
         {
           "level": 3,
-          "q": "It can be a Dalai, and it is also the emblem of Bolivia and Peru. What is it?",
-          "a": "The llama"
+          "q": "It's a Serge or a Bernard (a French singer and a French goalkeeper), but also the emblem of Bolivia and Peru. What is it?",
+          "a": "The llama (Serge Lama and Bernard Lama)"
         },
         {
           "level": 4,
@@ -27115,7 +27115,7 @@
         },
         {
           "level": 2,
-          "q": "During which festival held on October 31 is it customary to decorate cucurbits: Groundhog Day, Halloween or Never-Never Day?",
+          "q": "During which festival held on October 31 is it customary to decorate cucurbits: Never-Never Day, Halloween or Back of Beyond?",
           "a": "Halloween"
         },
         {
@@ -27166,7 +27166,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "In the cartoon, is Peter Potamus a hippopotamus or an outlaw chasing outlaws?",
+          "q": "In the cartoon, is Petit Potam (a French animated series) a hippopotamus or an outlaw chasing outlaws?",
           "a": "A hippopotamus"
         },
         {
@@ -27176,7 +27176,7 @@
         },
         {
           "level": 3,
-          "q": "Its weight can be up to 2 times that of a Fiat 500. True or false?",
+          "q": "Its weight can be up to 2 times that of a Renault Twingo. True or false?",
           "a": "True (it weighs around 2,000 kg and can reach 3,200 kg!)"
         },
         {
@@ -27192,7 +27192,7 @@
         {
           "level": 6,
           "q": "What color is the milk produced by hippos?",
-          "a": "Pink!"
+          "a": "White! (the famous \"pink milk\" is a myth)"
         },
         {
           "level": 7,
@@ -27950,7 +27950,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "Has MythBusters demonstrated the effectiveness of using a javelin as a toothpick after a good leg of lamb?",
+          "q": "Has Mac Lesggy (French TV science presenter) demonstrated the effectiveness of using a javelin as a toothpick after a good leg of lamb?",
           "a": "I really hope not"
         },
         {
@@ -27971,11 +27971,11 @@
         {
           "level": 5,
           "q": "What do you call a professional javelin thrower?",
-          "a": "A javelin thrower"
+          "a": "A javelinist"
         },
         {
           "level": 6,
-          "q": "Name the former French athlete who had his thigh pierced by a javelin while warming up.",
+          "q": "Name the former French athlete whose side was pierced by a javelin while he was warming up.",
           "a": "Salim Sdiri"
         },
         {
@@ -28118,17 +28118,17 @@
       "questions": [
         {
           "level": 1,
-          "q": "Was the satirical TV show Spitting Image populated by Mohicans or by puppets?",
+          "q": "Was the French satirical TV show Les Guignols de l'info hosted by Mohicans or by puppets?",
           "a": "Puppets"
         },
         {
           "level": 2,
           "q": "What is the name of the puppet in the film Saw 6: Strasbourg, Merguez or Jigsaw?",
-          "a": "Jigsaw"
+          "a": "Jigsaw (the puppet itself is also nicknamed Billy)"
         },
         {
           "level": 3,
-          "q": "Are the artists who make puppets talk called puppeteers, ventriloquists or mimics?",
+          "q": "Are the artists who make puppets talk called marionauts, ventriloquists or mimeticists?",
           "a": "Ventriloquists"
         },
         {
@@ -29775,8 +29775,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Tell us whether or not the following words come from the Arabic language.\nYou move forward one square per correct answer but go back one square for each mistake.\nA. Marmoset\nB. Medina\nC. Lemonade\nD. Candle\nE. Checkmate\nF. Magazine\nG. Hodgepodge\nH. Elixir",
-          "a": "A. Not from Arabic\nB. From Arabic\nC. Not from Arabic\nD. From Arabic (the French word “bougie” comes from the former name of the city of Béjaïa, in Algeria)\nE. From Arabic (meaning “the king is dead”)\nF. From Arabic (from the medieval word “makhzen”, meaning “warehouse”)\nG. Not from Arabic\nH. From Arabic (meaning “philosopher's stone”)"
+          "q": "Tell us whether or not the following words come from the Arabic language.\nYou move forward one square per correct answer but go back one square for each mistake.\nA. Marmoset\nB. Medina\nC. Bazaar\nD. Mattress\nE. Checkmate\nF. Magazine\nG. Hodgepodge\nH. Elixir",
+          "a": "A. Not from Arabic\nB. From Arabic\nC. Not from Arabic (from Persian)\nD. From Arabic (from “matrah”, a cushion laid on the floor)\nE. From Arabic (meaning “the king is dead”)\nF. From Arabic (from the medieval word “makhzen”, meaning “warehouse”)\nG. Not from Arabic\nH. From Arabic (meaning “philosopher's stone”)"
         }
       ]
     },
@@ -30061,8 +30061,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Tell me whether the following statements are FACTS OR FAKES.\nAnswer all the questions, you move forward one square per correct answer\nA. Brad Pitt was banned from China for 20 years because of his role in the film Seven Years in Tibet.\nB. Sahara means “great desert” in Berber.\nC. Kinder Surprise eggs are illegal in the United States.\nD. The Babyliss brand is banned in the city of Angers.\nE. The three biggest statues in the world are depictions of Buddha.\nF. Eating a man will give you 125,000 calories.\nG. Sean Connery wore a wig in every one of his appearances as James Bond.\nH. There are about 87 billion trees on Earth.",
-          "a": "A. Fact\nB. Fact\nC. Fact\nD. Fake\nE. Fake (it was true before November 2018)\nF. Fact\nG. Fact\nH. Fake (rather 35,000 times more, i.e. 3.04 trillion)"
+          "q": "Tell me whether the following statements are FACTS OR FAKES.\nAnswer all the questions, you move forward one square per correct answer\nA. Brad Pitt was banned from China for 20 years because of his role in the film Seven Years in Tibet.\nB. Sahara means “desert” in Arabic.\nC. Kinder Surprise eggs are illegal in the United States.\nD. The Babyliss brand is banned in the city of Angers.\nE. The three biggest statues in the world are depictions of Buddha.\nF. Eating a man will give you 125,000 calories.\nG. Sean Connery wore a wig in every one of his appearances as James Bond.\nH. There are about 87 billion trees on Earth.",
+          "a": "A. Fact\nB. Fact\nC. Fact\nD. Fake\nE. Fake (it was true before November 2018)\nF. Fact\nG. Fact\nH. Fake (rather 35 times more, i.e. about 3.04 trillion)"
         }
       ]
     },
@@ -30105,8 +30105,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Tell us which animals the following sounds belong to.\nAnswer all the questions. You have 8 seconds maximum per question and move forward 2 squares per correct answer.\nA. Trumpeting\nB. Bellowing (the rutting call of deer)\nC. Neighing\nD. Buzzing\nE. Bleating (of a ram or camel)\nF. Clucking\nG. Gobbling\nH. Chattering",
-          "a": "A. The elephant or the rhinoceros\nB. The stag, the roe deer or the fallow deer\nC. The horse, the llama or the zebra\nD. The bee, the fly, the wasp or... the plane\nE. The ram or the camel\nF. The hen\nG. The penguin or the parakeet\nH. The magpie or the parakeet"
+          "q": "Tell us which animals the following sounds belong to.\nAnswer all the questions. You have 8 seconds maximum per question and move forward 2 squares per correct answer.\nA. Trumpeting\nB. Belling\nC. Neighing\nD. Buzzing\nE. Bleating\nF. Clucking\nG. Gobbling\nH. Chattering",
+          "a": "A. The elephant or the rhinoceros\nB. The stag, the roe deer or the fallow deer\nC. The horse, the llama or the zebra\nD. The bee, the fly, the wasp or... the plane\nE. The ram or the sheep (the goat also works)\nF. The hen\nG. The turkey\nH. The magpie or the parakeet"
         }
       ]
     },
@@ -30853,8 +30853,8 @@
       "questions": [
         {
           "level": null,
-          "q": "Name as many girls' names that are also names of flowers or plants in English as possible.\nThe name Flower and fruits will not be accepted, however.\nYou move forward 1 space per correct answer.\nFeel free to make lots of guesses. You have 52 seconds to give it all you've got.",
-          "a": "Amaryllis, Anemone, Angelica, Azalea, Camellia, Daisy, Dahlia, Fern, Heather, Hyacinth, Iris, Ivy, Jasmine, Lily, Lilac, Magnolia, Marguerite, Marjoram, Poppy, Rose, Violet, Willow, Hazel, Holly\nOther answers subject to approval by more than half of the players"
+          "q": "Name as many girls' first names as you can that are also the English name of a flower or plant.\nThe name Flower and fruits will not be accepted, however.\nYou move forward 1 space per correct answer.\nFeel free to make lots of guesses. You have 52 seconds to give it all you've got.",
+          "a": "Amaryllis, Angelica, Azalea, Camellia, Daisy, Dahlia, Fern, Hazel, Heather, Holly, Hyacinth, Iris, Ivy, Jasmine, Laurel, Lavender, Lilac, Lily, Magnolia, Marguerite, Myrtle, Poppy, Primrose, Rose, Rosemary, Violet, Willow\nOther answers subject to approval by more than half of the players"
         }
       ]
     },
@@ -30920,7 +30920,7 @@
         {
           "level": null,
           "q": "Name contemporary mammals with horns or antlers whose names start with the letter B.\nYou have 36 seconds\nYou move forward 1 space per correct answer.\nHint: Actually, unicorns don't exist!",
-          "a": "Bighorn sheep\nBison\nBongo\nBuffalo\nBlackbuck\nBlue wildebeest (or Bushbuck)\nBarasingha\nBlesbok"
+          "a": "Banteng\nBarasingha\nBighorn sheep\nBilly goat\nBison\nBlackbuck\nBlesbok\nBlue wildebeest\nBongo\nBontebok\nBuffalo\nBushbuck"
         }
       ]
     },
@@ -30964,7 +30964,7 @@
         {
           "level": null,
           "q": "Name as many films as possible in which the mafia plays a major role.\nYou move forward 1 space per correct answer.\n10 answers and 45 seconds maximum",
-          "a": "The Godfather (only one point for the 3 films), Donnie Brasco, Goodfellas, Lucky Luciano, The Untouchables, Scarface, The Sicilian Girl, Once Upon a Time in America, Carlito's Way, Mafia Blues, A Bronx Tale, The Departed, Gomorrah, One Hundred Steps, The Family (Malavita), Mean Streets, King of New York, Casino, The Camorra Boss, Strictly Criminal, Romanzo Criminale, 100 Days in Palermo, Live by Night, American Gangster, Léon, Cosa Nostra, The Sicilian Clan, The Traitor, Mean Streets, Piranhas, Les Baronnes, Gangs of New York, Snatch, The French Connection, Drive, Gotti, We Own the Night, Taken, The Irishman\n...\nOther answers subject to approval by more than half of the players"
+          "a": "The Godfather (only one point for the 3 films), Donnie Brasco, Goodfellas, Lucky Luciano, The Untouchables, Scarface, The Sicilian Girl, Once Upon a Time in America, Carlito's Way, Analyze This, A Bronx Tale, The Departed, Gomorrah, One Hundred Steps, The Family (Malavita), Mean Streets, King of New York, Casino, The Camorra Boss, Black Mass, Romanzo Criminale, 100 Days in Palermo, Live by Night, American Gangster, Léon, The Valachi Papers, The Sicilian Clan, The Traitor, Mean Streets, Piranhas, Les Baronnes, Gangs of New York, Snatch, The Connection (La French), Drive, Gotti, We Own the Night, Taken, The Irishman\n...\nOther answers subject to approval by more than half of the players"
         }
       ]
     },
@@ -31414,8 +31414,8 @@
       "questions": [
         {
           "level": null,
-          "q": "What 9-letter word can you make with the following letters?\nE, L, O, R, G, U, S, O and U\nYou have 1 minute to think.",
-          "a": "UROLOGUES (in French; any valid 9-letter French word using exactly these letters)"
+          "q": "What 9-letter word can you make with the following letters?\nS, L, I, U, O, R, O, T and G\nYou have 1 minute to think.",
+          "a": "UROLOGIST"
         }
       ]
     },
@@ -32041,8 +32041,8 @@
       "questions": [
         {
           "level": null,
-          "q": "What is the most common anagram of the French word \"parisien\"?",
-          "a": "Aspirine (aspirin)"
+          "q": "What is the most common anagram of the word \"Paris\"?",
+          "a": "Pairs"
         }
       ]
     },
@@ -32085,8 +32085,8 @@
       "questions": [
         {
           "level": null,
-          "q": "2 of the 5 films below are not X-rated, which ones?\nA. Honey, I Enlarged the Dildos 2\nB. Planet of the Breasts\nC. The Tight Musketeer\nD. The Ring Slipper\nE. Trouble in Caracas",
-          "a": "Answers C and E"
+          "q": "2 of the 5 films below are not X-rated, which ones?\nA. Honey, I Blew Up the Dildos 2\nB. Planet of the Babes\nC. The Three Must-Get-Theres\nD. The Lord of the G-Strings\nE. Mr. Woodcock",
+          "a": "Answers C and E (The Three Must-Get-Theres is a 1922 Max Linder comedy, Mr. Woodcock a 2007 comedy)"
         }
       ]
     },
@@ -32327,8 +32327,8 @@
       "questions": [
         {
           "level": null,
-          "q": "We live on an island but can also be found all around a tree.\nWho are we?",
-          "a": "The Corsicans (the bark, \"écorce\" in French)"
+          "q": "I am an island, but I am also a tree.\nWho am I?",
+          "a": "Cyprus (the cypress)"
         }
       ]
     },
@@ -33629,17 +33629,17 @@
         },
         {
           "level": 2,
-          "q": "In Le plus beau métier du monde, whose daughter is Laura Smet: Gérard Depardieu's or Guy Marchand's?",
-          "a": "Gérard Depardieu's"
+          "q": "Whose daughter is actress Laura Smet: Johnny Hallyday's or Gérard Depardieu's?",
+          "a": "Johnny Hallyday's (and Nathalie Baye's)"
         },
         {
           "level": 3,
-          "q": "Who is the only daughter of Jacques Higelin, whom he had with Kên Higelin?",
+          "q": "Who is the only daughter of singer Jacques Higelin, half-sister of Arthur H and Kên Higelin?",
           "a": "Izia (Izia Higelin)"
         },
         {
           "level": 4,
-          "q": "What is the name of the daughter of actress Josiane Balasko and Richard Berry, also an actress?",
+          "q": "What is the name of the daughter of actress Josiane Balasko and sculptor Philippe Berry (Richard Berry's brother), also an actress?",
           "a": "Marilou Berry"
         },
         {
@@ -33649,8 +33649,8 @@
         },
         {
           "level": 6,
-          "q": "Which director, Sofia Coppola, is the daughter of Francis Ford Coppola?",
-          "a": "Sofia Coppola (or Roman, but it is indeed Sofia Coppola)"
+          "q": "Which director of Lost in Translation and Marie Antoinette is the daughter of Francis Ford Coppola?",
+          "a": "Sofia Coppola"
         },
         {
           "level": 7,
@@ -33659,18 +33659,18 @@
         },
         {
           "level": 8,
-          "q": "Of which French singer is Lou Doillon the daughter?",
+          "q": "Of which French film director is Lou Doillon the daughter?",
           "a": "Jacques Doillon (and Jane Birkin)"
         },
         {
           "level": 9,
-          "q": "What is the name of the daughter of Alain Delon and Elisabeth Depardieu?",
-          "a": "Julie Depardieu (no, it's Anouchka Delon with Rosalie van Breemen)"
+          "q": "What is the name of the daughter of Alain Delon and Rosalie van Breemen, also an actress?",
+          "a": "Anouchka Delon"
         },
         {
           "level": 10,
-          "q": "In which film with Tom Cruise does Lily-Rose Depp play a small role?",
-          "a": "Mission Impossible (Ghost Protocol, no it's La Danseuse, the question is unclear, let's move on)"
+          "q": "In which 2016 French film does Lily-Rose Depp play the dancer Isadora Duncan?",
+          "a": "The Dancer (La Danseuse)"
         }
       ]
     },
@@ -33792,7 +33792,7 @@
       "questions": [
         {
           "level": 1,
-          "q": "Is Buddhism inspired by the religion of the White Pudding or by the film Buddha?",
+          "q": "Is Buddhism inspired by the cult of Peanut Butter or by the film Little Buddha?",
           "a": "No (it's a joke)"
         },
         {
@@ -33966,12 +33966,12 @@
         {
           "level": 2,
           "q": "What do you celebrate at 1 year of marriage: cotton, paper or wood anniversary?",
-          "a": "Cotton anniversary"
+          "a": "Paper anniversary (in France: cotton)"
         },
         {
           "level": 3,
           "q": "What is the 10th wedding anniversary called?",
-          "a": "Tin anniversary"
+          "a": "Tin anniversary (or aluminium)"
         },
         {
           "level": 4,
