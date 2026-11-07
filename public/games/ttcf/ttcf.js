@@ -32,7 +32,9 @@ const page = {
   turning: false,
   // Answer shown, card turned back to its question side (display only: not
   // saved, the timer goes on).
-  peek: false
+  peek: false,
+  // The card side last drawn: a new side starts scrolled to its top.
+  face: null
 };
 
 const t = (key, vars) => translate(page.lang, key, vars);
@@ -347,6 +349,7 @@ function renderCard() {
   $('ttcf-spin-btn').hidden = Boolean(card || !wheel);
   if (!card) {
     page.peek = false;
+    page.face = null;
     return;
   }
   const data = page.cards[card.index];
@@ -366,6 +369,10 @@ function renderCard() {
   const flippable = step === 'answer' && !card.opening;
   // The side on show: the question again while the answer card is turned back.
   const face = flippable && page.peek ? 'question' : step;
+  // A long question is scrolled down to reach its button: the other side
+  // (the answer) must start at its top, or its first lines stay out of sight.
+  if (face !== page.face) $('ttcf-card-modal').querySelector('.modal-content').scrollTop = 0;
+  page.face = face;
   $('ttcf-card-modal').classList.toggle('is-opening', card.opening);
   $('ttcf-bonus-step').hidden = face !== 'bonus';
   if (face === 'bonus') renderBonus(card);
