@@ -46,7 +46,7 @@ function readLang() {
   }
 }
 
-function setLanguage(lang) {
+async function setLanguage(lang) {
   page.lang = lang;
   try {
     localStorage.setItem(LANG_KEY, lang);
@@ -54,6 +54,10 @@ function setLanguage(lang) {
     // Storage unavailable: the choice lasts for this visit.
   }
   applyLanguage();
+  await loadCards(lang);
+  if (page.lang !== lang) return;
+  if (!$('ttcf-board-screen').hidden && page.match) renderMatch();
+  else if (!$('ttcf-setup-screen').hidden) renderDashboard();
 }
 
 function applyLanguage() {
@@ -286,11 +290,10 @@ function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), open
   if (step === 'question' && !opening) startTimer();
 }
 
-// A Superbe card names its theme ("Thème Scolaire imposé") or leaves it
-// free ("Choix du Thème libre"): the themes the team may play.
+// A Superbe card names its theme (`imposed`, set in every language's deck) or
+// leaves it free: the themes the team may play.
 function bonusThemes(index) {
-  const text = page.cards[index].questions[0].q || '';
-  const imposed = THEMES.find((theme) => new RegExp(`Thème ${theme} imposé`, 'i').test(text));
+  const imposed = page.cards[index].questions[0].imposed;
   return imposed ? [imposed] : THEMES;
 }
 
@@ -593,12 +596,14 @@ function bindControls() {
   Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
 }
 
-async function loadCards() {
+// One deck per language, same card order in each (a save's card index works in all).
+async function loadCards(lang) {
   try {
-    const res = await fetch('/data/ttcf/ttcf_data.json');
+    const res = await fetch(`/data/ttcf/ttcf_data_${lang}.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    page.cards = (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
+    const cards = (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
+    if (page.lang === lang) page.cards = cards;
   } catch (error) {
     console.warn('[ttcf] cards not loaded', error);
   }
@@ -613,7 +618,7 @@ async function init() {
   });
   applyLanguage();
   showScreen('dashboard');
-  await loadCards();
+  await loadCards(page.lang);
   renderDashboard();
   // The start button was disabled while loading: the remote focus moves to
   // it (or to Resume) now, instead of staying on the back button.

@@ -1,5 +1,5 @@
 // Player-facing copy (FR / EN / ES). Keys match data-i18n / data-i18n-aria.
-// The cards themselves (public/data/ttcf/ttcf_data.json) exist in French only.
+// The cards are in public/data/ttcf/ttcf_data_<lang>.json (fr, en, es).
 export const LANGS = ['fr', 'en', 'es'];
 
 export const THEME_LABELS = {

@@ -37,7 +37,7 @@ async function run() {
     "public",
     "data",
     "ttcf",
-    "ttcf_data.json"
+    "ttcf_data_fr.json"
   );
 
   let existingData = { cards: [] };

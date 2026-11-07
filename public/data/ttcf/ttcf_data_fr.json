@@ -32614,7 +32614,8 @@
         {
           "level": null,
           "q": "Thème Scolaire imposé",
-          "a": "L'équipe s'auto-évalue sur 10 sur le sujet. Si la question proposée ne plaît pas à l'équipe, elle pourra changer de question sur le même sujet une fois.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour."
+          "a": "L'équipe s'auto-évalue sur 10 sur le sujet. Si la question proposée ne plaît pas à l'équipe, elle pourra changer de question sur le même sujet une fois.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour.",
+          "imposed": "Scolaire"
         }
       ]
     },
@@ -32636,7 +32637,8 @@
         {
           "level": null,
           "q": "Thème Mature imposé",
-          "a": "Si l'équipe répond correctement en moins de 10 secondes, les points seront alors doublés.\nEn cas de dépassement des 10 secondes, schéma classique du jeu.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour."
+          "a": "Si l'équipe répond correctement en moins de 10 secondes, les points seront alors doublés.\nEn cas de dépassement des 10 secondes, schéma classique du jeu.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour.",
+          "imposed": "Mature"
         }
       ]
     },
@@ -32669,7 +32671,8 @@
         {
           "level": null,
           "q": "Thème Mature imposé",
-          "a": "Réponds aux 10 questions du sujet tiré.\nTu avanceras d'une case par bonne réponse."
+          "a": "Réponds aux 10 questions du sujet tiré.\nTu avanceras d'une case par bonne réponse.",
+          "imposed": "Mature"
         }
       ]
     },
@@ -32680,7 +32683,8 @@
         {
           "level": null,
           "q": "Thème Mature imposé",
-          "a": "Points doublés si réponse correcte à une question supérieure ou égale à 6/10.\nEn cas de choix d'une question inférieure à 6/10, schéma classique du jeu.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour."
+          "a": "Points doublés si réponse correcte à une question supérieure ou égale à 6/10.\nEn cas de choix d'une question inférieure à 6/10, schéma classique du jeu.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour.",
+          "imposed": "Mature"
         }
       ]
     },
@@ -32702,7 +32706,8 @@
         {
           "level": null,
           "q": "Thème Scolaire imposé",
-          "a": "En cas de réponse correcte à une question supérieure à 5/10, l'équipe avance d'autant de cases, comme d'habitude. Les autres équipes reculeront alors jusqu'à la case \"Ça va pas du tout\" la plus proche.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour.\nEn cas de choix d'une question inférieure ou égale à 5/10, schéma classique du jeu."
+          "a": "En cas de réponse correcte à une question supérieure à 5/10, l'équipe avance d'autant de cases, comme d'habitude. Les autres équipes reculeront alors jusqu'à la case \"Ça va pas du tout\" la plus proche.\nEn cas de mauvaise réponse, l'équipe tirera une nouvelle carte \"C'est superbe\" au prochain tour.\nEn cas de choix d'une question inférieure ou égale à 5/10, schéma classique du jeu.",
+          "imposed": "Scolaire"
         }
       ]
     },
