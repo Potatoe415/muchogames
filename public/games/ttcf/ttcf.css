@@ -1433,3 +1433,24 @@ html.tv :focus {
     font-size: 0.85rem;
   }
 }
+
+.latino-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--wood);
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.latino-row input {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--wood);
+  flex: none;
+}
+
+.latino-row[hidden] {
+  display: none;
+}

@@ -147,10 +147,8 @@ function buildDeck() {
 }
 
 function renderLatino() {
-  const chip = $('ttcf-latino-chip');
-  chip.hidden = !page.extra.length;
-  chip.classList.toggle('active', page.latino);
-  chip.setAttribute('aria-pressed', String(page.latino));
+  $('ttcf-latino-row').hidden = !page.extra.length;
+  $('ttcf-latino-check').checked = page.latino;
 }
 
 function setLatino(on) {
@@ -389,7 +387,9 @@ function renderCard() {
   }
   const data = page.cards[card.index];
   const theme = $('ttcf-card-theme');
-  theme.textContent = THEME_LABELS[page.lang][data.theme] || data.theme;
+  // A Latino extension card is marked with a discreet globe.
+  const latino = card.index >= page.base.length;
+  theme.textContent = (THEME_LABELS[page.lang][data.theme] || data.theme) + (latino ? ' 🌎' : '');
   theme.className = `card-theme ${themeClass(data.theme)}`;
   $('ttcf-card-medallion').src = medallionArt(data.theme);
   $('ttcf-card-modal').dataset.theme = themeClass(data.theme);
@@ -632,10 +632,10 @@ function bindControls() {
     'ttcf-move-less': () => changeMove(-1),
     'ttcf-move-more': () => changeMove(1),
     'ttcf-move-confirm': () => endTurn(page.match?.card?.move ?? 0),
-    'ttcf-latino-chip': () => setLatino(!page.latino),
     'ttcf-restart-btn': () => startMatch(teamNames()),
     'ttcf-menu-button': () => showScreen('dashboard')
   };
+  $('ttcf-latino-check').addEventListener('change', (event) => setLatino(event.target.checked));
   Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
 }
 
