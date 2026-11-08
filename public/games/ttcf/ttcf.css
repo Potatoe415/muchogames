@@ -1447,7 +1447,6 @@ html.tv :focus {
   gap: 0.5rem;
   color: var(--wood);
   font-weight: bold;
-  white-space: nowrap;
   cursor: pointer;
 }
 

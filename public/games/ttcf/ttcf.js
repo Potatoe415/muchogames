@@ -262,13 +262,17 @@ function quitMatch() {
   showScreen('dashboard');
 }
 
-function renderMatch() {
+function renderTurnBanner() {
   const { teams, cur } = page.match;
   // While a token walks, the banner still shows the team that moves.
   const turn = page.walk?.id ?? cur;
   const label = document.createElement('span');
   label.textContent = t('turnOf', { name: teams[turn].name });
   $('ttcf-turn-indicator').replaceChildren(picture(TOKEN_ART[turn], 'turn-avatar'), label);
+}
+
+function renderMatch() {
+  renderTurnBanner();
   const wheel = page.match.mode === 'wheel';
   $('ttcf-board-screen').classList.toggle('is-wheel', wheel);
   $('ttcf-board-area').hidden = wheel;
@@ -474,6 +478,7 @@ function renderStarterPicker(card) {
       button.addEventListener('click', () => {
         page.match.cur = team.id;
         save();
+        renderTurnBanner();
         renderStarterPicker(card);
       });
       return button;
