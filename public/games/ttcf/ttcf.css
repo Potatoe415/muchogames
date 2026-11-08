@@ -317,11 +317,13 @@ body {
   display: grid;
   grid-template-columns: repeat(var(--cols), var(--cell));
   grid-auto-rows: var(--cell);
-  gap: var(--gap);
+  gap: var(--row-gap) var(--gap);
   justify-content: center;
   align-content: center;
   --gap: 6px;
-  --cell: min(calc((100cqw - (var(--cols) - 1) * var(--gap)) / var(--cols)), calc((100cqh - (var(--rows) - 1) * var(--gap)) / var(--rows)));
+  /* Rows sit a little further apart than columns. */
+  --row-gap: calc(var(--gap) * 2.5);
+  --cell: min(calc((100cqw - (var(--cols) - 1) * var(--gap)) / var(--cols)), calc((100cqh - (var(--rows) - 1) * var(--row-gap)) / var(--rows)));
 }
 
 /* Pastel tiles with a white line icon (assets/icons/); the start and end
