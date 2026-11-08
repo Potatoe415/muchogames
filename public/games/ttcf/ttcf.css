@@ -731,6 +731,38 @@ body {
   gap: 8px;
 }
 
+/* Bottom of the screen, under the card: the flags of the other two
+   languages. The auto margins keep the card near the middle. */
+.card-lang {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.modal-content {
+  margin-top: auto;
+}
+
+.card-lang-btn {
+  padding: 0;
+  border: 2px solid var(--paper);
+  border-radius: 6px;
+  background: none;
+  line-height: 0;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.card-lang-btn img {
+  display: block;
+  width: 2.6rem;
+  height: 1.75rem;
+  object-fit: cover;
+}
+
 :focus-visible,
 html.tv :focus {
   outline: max(3px, 0.4dvh) solid #ff7a00;

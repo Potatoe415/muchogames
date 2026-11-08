@@ -77,6 +77,10 @@ function applyLanguage() {
   document.querySelectorAll('[data-lang]').forEach((button) => {
     button.classList.toggle('active', button.dataset.lang === page.lang);
   });
+  // Under the card: only the flags of the other languages.
+  document.querySelectorAll('.card-lang-btn').forEach((button) => {
+    button.hidden = button.dataset.lang === page.lang;
+  });
   renderTeamInputs();
   if (page.match) renderMatch();
 }
