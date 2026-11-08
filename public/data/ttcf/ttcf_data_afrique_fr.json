@@ -1,0 +1,4924 @@
+{
+  "cards": [
+    {
+      "theme": "Scolaire",
+      "subject": "L'Égypte antique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fleuve traverse l'Égypte ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 2,
+          "q": "Comment appelle-t-on les rois de l'Égypte antique ?",
+          "a": "Les pharaons"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la plus grande pyramide de Gizeh : celle de Khéops, de Khéphren ou de Mykérinos ?",
+          "a": "Celle de Khéops"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Les anciens Égyptiens écrivaient avec des hiéroglyphes.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel pharaon, dont la tombe a été découverte presque intacte en 1922, est célèbre pour son masque d'or ?",
+          "a": "Toutânkhamon"
+        },
+        {
+          "level": 6,
+          "q": "Quelle dernière reine de l'Égypte ptolémaïque s'est alliée à Marc Antoine ?",
+          "a": "Cléopâtre (Cléopâtre VII)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle pierre a permis à Champollion de déchiffrer les hiéroglyphes ?",
+          "a": "La pierre de Rosette"
+        },
+        {
+          "level": 8,
+          "q": "Quel dieu à tête de chacal était associé à l'embaumement des morts ?",
+          "a": "Anubis"
+        },
+        {
+          "level": 9,
+          "q": "En quelle année Champollion a-t-il annoncé le déchiffrement des hiéroglyphes : 1799, 1822 ou 1869 ?",
+          "a": "En 1822"
+        },
+        {
+          "level": 10,
+          "q": "Quel pharaon a imposé le culte du dieu unique Aton ?",
+          "a": "Akhenaton (Amenhotep IV)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'Empire du Mali",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel empereur du Mali est souvent présenté comme l'homme le plus riche de l'histoire ?",
+          "a": "Mansa Moussa"
+        },
+        {
+          "level": 2,
+          "q": "Quel fondateur de l'Empire du Mali est le héros d'une célèbre épopée ?",
+          "a": "Soundiata Keïta"
+        },
+        {
+          "level": 3,
+          "q": "Quel titre portaient les empereurs du Mali : mansa, négus ou pharaon ?",
+          "a": "Mansa"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Mansa Moussa a effectué un pèlerinage à La Mecque au XIVe siècle.",
+          "a": "Vrai (en 1324)"
+        },
+        {
+          "level": 5,
+          "q": "Quelle ville, célèbre pour ses manuscrits et sa mosquée Djingareyber, faisait partie de l'Empire du Mali ?",
+          "a": "Tombouctou"
+        },
+        {
+          "level": 6,
+          "q": "Quel grand fleuve traversait le cœur de l'Empire du Mali ?",
+          "a": "Le Niger"
+        },
+        {
+          "level": 7,
+          "q": "Comment appelle-t-on les conteurs-musiciens qui transmettent l'épopée de Soundiata ?",
+          "a": "Les griots"
+        },
+        {
+          "level": 8,
+          "q": "Quel voyageur marocain a visité l'Empire du Mali vers 1352 ?",
+          "a": "Ibn Battuta"
+        },
+        {
+          "level": 9,
+          "q": "Lors de quelle bataille, vers 1235, Soundiata a-t-il vaincu Soumaoro Kanté ?",
+          "a": "La bataille de Kirina"
+        },
+        {
+          "level": 10,
+          "q": "Quelle charte, proclamée à Kouroukan Fouga, est inscrite au patrimoine immatériel de l'UNESCO ?",
+          "a": "La Charte du Manden"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'Empire songhaï",
+      "questions": [
+        {
+          "level": 1,
+          "q": "L'Empire songhaï se trouvait-il en Afrique de l'Ouest, en Afrique du Nord ou en Afrique australe ?",
+          "a": "En Afrique de l'Ouest"
+        },
+        {
+          "level": 2,
+          "q": "Quelle était la capitale de l'Empire songhaï : Gao, Dakar ou Kano ?",
+          "a": "Gao"
+        },
+        {
+          "level": 3,
+          "q": "Quel fleuve était l'axe central de l'Empire songhaï ?",
+          "a": "Le Niger"
+        },
+        {
+          "level": 4,
+          "q": "Quel souverain songhaï, surnommé « le Grand », a conquis de vastes territoires au XVe siècle ?",
+          "a": "Sonni Ali Ber"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? L'Empire songhaï a succédé à l'Empire du Mali comme grande puissance de la région.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quelle dynastie a été fondée par Askia Mohammed en 1493 ?",
+          "a": "La dynastie des Askia"
+        },
+        {
+          "level": 7,
+          "q": "Quel monument en forme de pyramide, à Gao, est classé au patrimoine mondial de l'UNESCO ?",
+          "a": "Le tombeau des Askia"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays a envahi l'Empire songhaï en 1591 ?",
+          "a": "Le Maroc (dynastie saadienne)"
+        },
+        {
+          "level": 9,
+          "q": "Quelle bataille de 1591 a marqué la chute de l'Empire songhaï ?",
+          "a": "La bataille de Tondibi"
+        },
+        {
+          "level": 10,
+          "q": "Quel sultan marocain a ordonné l'expédition contre l'Empire songhaï ?",
+          "a": "Ahmed al-Mansour"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Carthage",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays actuel se trouvent les ruines de Carthage ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 2,
+          "q": "Quel général carthaginois a traversé les Alpes avec des éléphants ?",
+          "a": "Hannibal"
+        },
+        {
+          "level": 3,
+          "q": "Contre quelle puissance Carthage a-t-elle mené les guerres puniques ?",
+          "a": "Rome"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Carthage a été fondée par des Phéniciens.",
+          "a": "Vrai (venus de Tyr)"
+        },
+        {
+          "level": 5,
+          "q": "Combien y a-t-il eu de guerres puniques : 2, 3 ou 5 ?",
+          "a": "3"
+        },
+        {
+          "level": 6,
+          "q": "Selon la légende, quelle reine a fondé Carthage ?",
+          "a": "Didon (Élissa)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle bataille de 216 av. J.-C. est la plus célèbre victoire d'Hannibal ?",
+          "a": "La bataille de Cannes"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année Carthage a-t-elle été détruite par Rome : 146 av. J.-C., 44 av. J.-C. ou 476 apr. J.-C. ?",
+          "a": "En 146 av. J.-C."
+        },
+        {
+          "level": 9,
+          "q": "Lors de quelle bataille de 202 av. J.-C. Hannibal a-t-il été vaincu par Scipion ?",
+          "a": "La bataille de Zama"
+        },
+        {
+          "level": 10,
+          "q": "Quel homme politique romain terminait ses discours par « Carthago delenda est » ?",
+          "a": "Caton l'Ancien"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Aksoum et l'Éthiopie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? L'Éthiopie se trouve dans la Corne de l'Afrique.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de l'Éthiopie ?",
+          "a": "Addis-Abeba"
+        },
+        {
+          "level": 3,
+          "q": "Quelle reine biblique la tradition éthiopienne relie-t-elle à la dynastie salomonide ?",
+          "a": "La reine de Saba"
+        },
+        {
+          "level": 4,
+          "q": "Quel titre portaient les souverains d'Éthiopie : négus, sultan ou mansa ?",
+          "a": "Négus"
+        },
+        {
+          "level": 5,
+          "q": "Quel dernier empereur d'Éthiopie, renversé en 1974, est vénéré par les rastafaris ?",
+          "a": "Hailé Sélassié Ier"
+        },
+        {
+          "level": 6,
+          "q": "Lors de quelle bataille de 1896 l'Éthiopie a-t-elle battu l'Italie ?",
+          "a": "La bataille d'Adoua"
+        },
+        {
+          "level": 7,
+          "q": "Quel empereur a remporté la bataille d'Adoua ?",
+          "a": "Ménélik II"
+        },
+        {
+          "level": 8,
+          "q": "Quels monuments géants en pierre sont emblématiques du site d'Aksoum ?",
+          "a": "Les stèles (obélisques)"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle ville éthiopienne trouve-t-on des églises monolithes taillées dans le roc ?",
+          "a": "Lalibela"
+        },
+        {
+          "level": 10,
+          "q": "Quel roi d'Aksoum s'est converti au christianisme au IVe siècle ?",
+          "a": "Ezana"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Le Grand Zimbabwe",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays porte le nom du site du Grand Zimbabwe ?",
+          "a": "Le Zimbabwe"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le Grand Zimbabwe est une cité bâtie en pierre.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale du Zimbabwe ?",
+          "a": "Harare"
+        },
+        {
+          "level": 4,
+          "q": "Quel nom portait le Zimbabwe avant son indépendance : Rhodésie, Nyassaland ou Bechuanaland ?",
+          "a": "Rhodésie (du Sud)"
+        },
+        {
+          "level": 5,
+          "q": "En quelle année le Zimbabwe est-il devenu indépendant : 1960, 1980 ou 1994 ?",
+          "a": "En 1980"
+        },
+        {
+          "level": 6,
+          "q": "Quel animal sculpté, retrouvé au Grand Zimbabwe, figure sur le drapeau du pays ?",
+          "a": "Un oiseau (l'oiseau du Zimbabwe)"
+        },
+        {
+          "level": 7,
+          "q": "Quel peuple a bâti le Grand Zimbabwe : les Shona, les Zoulous ou les Massaïs ?",
+          "a": "Les Shona"
+        },
+        {
+          "level": 8,
+          "q": "Que signifie le mot « zimbabwe » en shona : maisons de pierre, grand fleuve ou terre rouge ?",
+          "a": "Maisons de pierre"
+        },
+        {
+          "level": 9,
+          "q": "Vers quel siècle le Grand Zimbabwe a-t-il connu son apogée : IVe, XIVe ou XVIIIe ?",
+          "a": "Au XIVe siècle"
+        },
+        {
+          "level": 10,
+          "q": "Quel royaume, qui a précédé le Grand Zimbabwe, est célèbre pour son petit rhinocéros en or ?",
+          "a": "Mapungubwe"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Mandela et la fin de l'apartheid",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel président sud-africain a passé 27 ans en prison ?",
+          "a": "Nelson Mandela"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelait le régime de ségrégation raciale en Afrique du Sud ?",
+          "a": "L'apartheid"
+        },
+        {
+          "level": 3,
+          "q": "Sur quelle île Mandela a-t-il passé la plus grande partie de sa détention ?",
+          "a": "Robben Island"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Mandela a reçu le prix Nobel de la paix.",
+          "a": "Vrai (en 1993, avec Frederik de Klerk)"
+        },
+        {
+          "level": 5,
+          "q": "En quelle année Mandela est-il devenu président : 1990, 1994 ou 1999 ?",
+          "a": "En 1994"
+        },
+        {
+          "level": 6,
+          "q": "Quel parti politique Mandela a-t-il dirigé ?",
+          "a": "L'ANC (Congrès national africain)"
+        },
+        {
+          "level": 7,
+          "q": "Quel président sud-africain a fait libérer Mandela en 1990 ?",
+          "a": "Frederik de Klerk"
+        },
+        {
+          "level": 8,
+          "q": "Quel archevêque, prix Nobel de la paix 1984, a présidé la Commission vérité et réconciliation ?",
+          "a": "Desmond Tutu"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel township a eu lieu en 1976 le soulèvement d'écoliers contre l'enseignement imposé en afrikaans ?",
+          "a": "Soweto"
+        },
+        {
+          "level": 10,
+          "q": "Quel massacre de 1960 a fait 69 morts lors d'une manifestation contre les laissez-passer ?",
+          "a": "Le massacre de Sharpeville"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les indépendances africaines",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? De nombreux pays africains sont devenus indépendants en 1960.",
+          "a": "Vrai (17 pays)"
+        },
+        {
+          "level": 2,
+          "q": "Quelle puissance coloniale a dominé l'Algérie : la France, le Royaume-Uni ou le Portugal ?",
+          "a": "La France"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays, l'ancienne Gold Coast, est devenu indépendant en 1957 sous Kwame Nkrumah ?",
+          "a": "Le Ghana"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année l'Algérie est-elle devenue indépendante : 1954, 1962 ou 1975 ?",
+          "a": "En 1962"
+        },
+        {
+          "level": 5,
+          "q": "Quel pays européen colonisait le Congo (actuelle RDC) jusqu'en 1960 ?",
+          "a": "La Belgique"
+        },
+        {
+          "level": 6,
+          "q": "Quelle puissance coloniale a quitté l'Angola et le Mozambique en 1975 ?",
+          "a": "Le Portugal"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le plus jeune État d'Afrique, indépendant depuis 2011 ?",
+          "a": "Le Soudan du Sud"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays africain n'a jamais été colonisé, malgré une occupation italienne de 1936 à 1941 ?",
+          "a": "L'Éthiopie"
+        },
+        {
+          "level": 9,
+          "q": "Quelle organisation panafricaine a été fondée en 1963 à Addis-Abeba ?",
+          "a": "L'OUA (Organisation de l'unité africaine)"
+        },
+        {
+          "level": 10,
+          "q": "Quel pays, mené par Sékou Touré, a voté « non » à la Communauté française au référendum de 1958 ?",
+          "a": "La Guinée"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Le Nil",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus long fleuve d'Afrique ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 2,
+          "q": "Dans quelle mer se jette le Nil : la Méditerranée, la mer Rouge ou l'océan Indien ?",
+          "a": "La Méditerranée"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Le Nil coule du sud vers le nord.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quelles sont les deux grandes branches qui se rejoignent pour former le Nil ?",
+          "a": "Le Nil Blanc et le Nil Bleu"
+        },
+        {
+          "level": 5,
+          "q": "Dans quelle capitale le Nil Blanc et le Nil Bleu se rejoignent-ils ?",
+          "a": "Khartoum (Soudan)"
+        },
+        {
+          "level": 6,
+          "q": "De quel grand lac sort le Nil Blanc ?",
+          "a": "Le lac Victoria"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel pays le Nil Bleu prend-il sa source ?",
+          "a": "L'Éthiopie (lac Tana)"
+        },
+        {
+          "level": 8,
+          "q": "Quel grand barrage égyptien, achevé en 1970, a créé le lac Nasser ?",
+          "a": "Le haut barrage d'Assouan"
+        },
+        {
+          "level": 9,
+          "q": "Quel complexe de temples a été démonté et déplacé pour échapper aux eaux du lac Nasser ?",
+          "a": "Abou Simbel"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le gigantesque barrage construit par l'Éthiopie sur le Nil Bleu ?",
+          "a": "Le Grand barrage de la Renaissance éthiopienne"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les capitales africaines",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de l'Égypte ?",
+          "a": "Le Caire"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale du Kenya ?",
+          "a": "Nairobi"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale du Sénégal : Dakar, Bamako ou Conakry ?",
+          "a": "Dakar"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Lagos est la capitale du Nigeria.",
+          "a": "Faux (c'est Abuja)"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la capitale du Maroc ?",
+          "a": "Rabat"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays a trois capitales : Pretoria, Le Cap et Bloemfontein ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la capitale du Cameroun ?",
+          "a": "Yaoundé"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est la capitale politique officielle de la Côte d'Ivoire ?",
+          "a": "Yamoussoukro"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la capitale officielle de la Tanzanie ?",
+          "a": "Dodoma"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la capitale du Malawi ?",
+          "a": "Lilongwe"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Déserts et montagnes d'Afrique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus grand désert d'Afrique ?",
+          "a": "Le Sahara"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus haut sommet d'Afrique ?",
+          "a": "Le Kilimandjaro"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel pays se trouve le Kilimandjaro : le Kenya, la Tanzanie ou l'Ouganda ?",
+          "a": "La Tanzanie"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Le Sahara est le plus grand désert chaud du monde.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quelle chaîne de montagnes traverse le Maroc, l'Algérie et la Tunisie ?",
+          "a": "L'Atlas"
+        },
+        {
+          "level": 6,
+          "q": "Quel désert couvre une grande partie du Botswana ?",
+          "a": "Le Kalahari"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle la gigantesque fracture géologique qui traverse l'Afrique de l'Est ?",
+          "a": "Le Grand Rift"
+        },
+        {
+          "level": 8,
+          "q": "Quel désert côtier, l'un des plus anciens du monde, a donné son nom à un pays ?",
+          "a": "Le Namib (Namibie)"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le plus haut sommet d'Afrique du Nord, situé au Maroc ?",
+          "a": "Le Toubkal (4 167 m)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le point culminant du Kilimandjaro ?",
+          "a": "Le pic Uhuru"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Lacs, fleuves et chutes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus grand lac d'Afrique ?",
+          "a": "Le lac Victoria"
+        },
+        {
+          "level": 2,
+          "q": "En l'honneur de quelle reine le lac Victoria a-t-il été nommé ?",
+          "a": "La reine Victoria du Royaume-Uni"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Le lac Victoria est partagé entre trois pays.",
+          "a": "Vrai (Ouganda, Kenya, Tanzanie)"
+        },
+        {
+          "level": 4,
+          "q": "Quelles célèbres chutes du Zambèze sont appelées localement « Mosi-oa-Tunya » ?",
+          "a": "Les chutes Victoria"
+        },
+        {
+          "level": 5,
+          "q": "Quel lac du Sahel, partagé par quatre pays, a perdu l'essentiel de sa surface depuis les années 1960 ?",
+          "a": "Le lac Tchad"
+        },
+        {
+          "level": 6,
+          "q": "Quel fleuve, le deuxième plus long d'Afrique, traverse deux fois l'équateur ?",
+          "a": "Le Congo"
+        },
+        {
+          "level": 7,
+          "q": "Quel lac d'Afrique de l'Est est le deuxième plus profond du monde ?",
+          "a": "Le lac Tanganyika"
+        },
+        {
+          "level": 8,
+          "q": "Quel lac est appelé lac Nyassa en Tanzanie ?",
+          "a": "Le lac Malawi"
+        },
+        {
+          "level": 9,
+          "q": "Quel lac artificiel du Ghana est l'un des plus grands du monde par sa superficie ?",
+          "a": "Le lac Volta"
+        },
+        {
+          "level": 10,
+          "q": "Quel lac du Cameroun a libéré en 1986 un nuage de gaz carbonique mortel ?",
+          "a": "Le lac Nyos"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les prix Nobel de littérature africains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Des écrivains africains ont déjà reçu le prix Nobel de littérature.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel écrivain nigérian est devenu en 1986 le premier auteur d'Afrique noire lauréat du Nobel de littérature ?",
+          "a": "Wole Soyinka"
+        },
+        {
+          "level": 3,
+          "q": "Quel écrivain égyptien, auteur de la « Trilogie du Caire », a reçu le Nobel en 1988 ?",
+          "a": "Naguib Mahfouz"
+        },
+        {
+          "level": 4,
+          "q": "Dans quelle langue écrivait Naguib Mahfouz : l'arabe, l'anglais ou le français ?",
+          "a": "L'arabe"
+        },
+        {
+          "level": 5,
+          "q": "Quelle romancière sud-africaine, engagée contre l'apartheid, a reçu le Nobel en 1991 ?",
+          "a": "Nadine Gordimer"
+        },
+        {
+          "level": 6,
+          "q": "Quel écrivain né en Algérie, auteur de « L'Étranger », a reçu le Nobel en 1957 ?",
+          "a": "Albert Camus"
+        },
+        {
+          "level": 7,
+          "q": "Quel écrivain sud-africain, auteur de « Disgrâce », a reçu le Nobel en 2003 ?",
+          "a": "J. M. Coetzee"
+        },
+        {
+          "level": 8,
+          "q": "Quel romancier né à Zanzibar (Tanzanie) a reçu le Nobel de littérature en 2021 ?",
+          "a": "Abdulrazak Gurnah"
+        },
+        {
+          "level": 9,
+          "q": "Quel pays africain compte deux lauréats du Nobel de littérature, Gordimer et Coetzee ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 10,
+          "q": "Quelle lauréate du Nobel de littérature 2007 a grandi en Rhodésie du Sud (actuel Zimbabwe) ?",
+          "a": "Doris Lessing"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Senghor et la négritude",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Léopold Sédar Senghor a été le premier président du Sénégal.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel mouvement littéraire Senghor a-t-il cofondé ?",
+          "a": "La négritude"
+        },
+        {
+          "level": 3,
+          "q": "Avec quel poète martiniquais Senghor a-t-il fondé la négritude ?",
+          "a": "Aimé Césaire"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Senghor a été le premier Africain élu à l'Académie française.",
+          "a": "Vrai (en 1983)"
+        },
+        {
+          "level": 5,
+          "q": "Qui a succédé à Senghor à la présidence du Sénégal ?",
+          "a": "Abdou Diouf"
+        },
+        {
+          "level": 6,
+          "q": "En quelle année Senghor a-t-il quitté le pouvoir : 1970, 1980 ou 1990 ?",
+          "a": "En 1980"
+        },
+        {
+          "level": 7,
+          "q": "Quel poète guyanais est le troisième fondateur de la négritude ?",
+          "a": "Léon-Gontran Damas"
+        },
+        {
+          "level": 8,
+          "q": "Quelle revue étudiante, lancée à Paris en 1935, est associée à la naissance de la négritude ?",
+          "a": "L'Étudiant noir"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le premier recueil de poèmes de Senghor, publié en 1945 ?",
+          "a": "Chants d'ombre"
+        },
+        {
+          "level": 10,
+          "q": "Dans quelle ville côtière du Sénégal Senghor est-il né ?",
+          "a": "Joal"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les langues d'Afrique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle langue est la plus parlée en Afrique du Nord ?",
+          "a": "L'arabe"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le swahili est très parlé en Afrique de l'Est.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quelle langue officielle le Sénégal, le Mali et la Côte d'Ivoire ont-ils en commun : le français, l'anglais ou le portugais ?",
+          "a": "Le français"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la langue officielle de l'Angola et du Mozambique ?",
+          "a": "Le portugais"
+        },
+        {
+          "level": 5,
+          "q": "Quelle langue, issue du néerlandais, est parlée en Afrique du Sud ?",
+          "a": "L'afrikaans"
+        },
+        {
+          "level": 6,
+          "q": "Quelle langue africaine est la plus parlée au Sénégal ?",
+          "a": "Le wolof"
+        },
+        {
+          "level": 7,
+          "q": "Quelle langue, très présente dans la musique congolaise, est parlée à Kinshasa et à Brazzaville ?",
+          "a": "Le lingala"
+        },
+        {
+          "level": 8,
+          "q": "Quel type de son caractérise les langues khoïsan et le xhosa ?",
+          "a": "Les clics"
+        },
+        {
+          "level": 9,
+          "q": "Quelle langue officielle de l'Éthiopie s'écrit avec l'alphasyllabaire guèze ?",
+          "a": "L'amharique"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle l'alphabet traditionnel des langues berbères ?",
+          "a": "Le tifinagh"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Madagascar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Madagascar est une île.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de Madagascar ?",
+          "a": "Antananarivo"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel océan se trouve Madagascar ?",
+          "a": "L'océan Indien"
+        },
+        {
+          "level": 4,
+          "q": "Quels primates emblématiques ne vivent à l'état sauvage qu'à Madagascar ?",
+          "a": "Les lémuriens"
+        },
+        {
+          "level": 5,
+          "q": "Quelle puissance européenne a colonisé Madagascar ?",
+          "a": "La France"
+        },
+        {
+          "level": 6,
+          "q": "En quelle année Madagascar est-il devenu indépendant : 1947, 1960 ou 1975 ?",
+          "a": "En 1960"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la langue nationale de Madagascar ?",
+          "a": "Le malgache"
+        },
+        {
+          "level": 8,
+          "q": "Quels arbres forment une célèbre allée près de Morondava ?",
+          "a": "Des baobabs"
+        },
+        {
+          "level": 9,
+          "q": "Le malgache est apparenté aux langues de quelle région : l'Asie du Sud-Est, l'Afrique de l'Ouest ou l'Arabie ?",
+          "a": "L'Asie du Sud-Est (langues austronésiennes de Bornéo)"
+        },
+        {
+          "level": 10,
+          "q": "Quelle dernière reine de Madagascar a été exilée par les Français en 1897 ?",
+          "a": "Ranavalona III"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Le Maghreb",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays a pour capitale Alger ?",
+          "a": "L'Algérie"
+        },
+        {
+          "level": 2,
+          "q": "Quel détroit sépare le Maroc de l'Espagne ?",
+          "a": "Le détroit de Gibraltar"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la capitale de la Tunisie ?",
+          "a": "Tunis"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? L'Algérie est le plus grand pays d'Afrique par sa superficie.",
+          "a": "Vrai (depuis la partition du Soudan en 2011)"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel pays le Printemps arabe a-t-il commencé, fin 2010 ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 6,
+          "q": "Quel dirigeant a gouverné la Libye de 1969 à 2011 ?",
+          "a": "Mouammar Kadhafi"
+        },
+        {
+          "level": 7,
+          "q": "En quelle année a commencé la guerre d'Algérie : 1945, 1954 ou 1962 ?",
+          "a": "En 1954"
+        },
+        {
+          "level": 8,
+          "q": "Que signifie « Maghreb » en arabe : le couchant, le sable ou la montagne ?",
+          "a": "Le couchant (l'Occident)"
+        },
+        {
+          "level": 9,
+          "q": "Qui a été le premier président de la Tunisie indépendante ?",
+          "a": "Habib Bourguiba"
+        },
+        {
+          "level": 10,
+          "q": "Quelle université de Fès, fondée en 859, est considérée comme la plus ancienne du monde encore en activité ?",
+          "a": "Al Quaraouiyine"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les grands dirigeants africains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Kwame Nkrumah a été le premier dirigeant du Ghana indépendant.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Patrice Lumumba a été Premier ministre de quel pays : le Congo, le Ghana ou le Kenya ?",
+          "a": "Le Congo (actuelle RDC)"
+        },
+        {
+          "level": 3,
+          "q": "Qui a été le premier président de la Côte d'Ivoire ?",
+          "a": "Félix Houphouët-Boigny"
+        },
+        {
+          "level": 4,
+          "q": "Qui a été le premier président du Kenya ?",
+          "a": "Jomo Kenyatta"
+        },
+        {
+          "level": 5,
+          "q": "Quel président égyptien a nationalisé le canal de Suez en 1956 ?",
+          "a": "Gamal Abdel Nasser"
+        },
+        {
+          "level": 6,
+          "q": "Quel président, assassiné en 1987, a rebaptisé la Haute-Volta « Burkina Faso » ?",
+          "a": "Thomas Sankara"
+        },
+        {
+          "level": 7,
+          "q": "Quelle militante kényane est devenue en 2004 la première Africaine prix Nobel de la paix ?",
+          "a": "Wangari Maathai"
+        },
+        {
+          "level": 8,
+          "q": "Quel premier président de la Tanzanie était surnommé « Mwalimu » (l'instituteur) ?",
+          "a": "Julius Nyerere"
+        },
+        {
+          "level": 9,
+          "q": "Qui est devenue en 2005, au Liberia, la première femme élue cheffe d'État en Afrique ?",
+          "a": "Ellen Johnson Sirleaf"
+        },
+        {
+          "level": 10,
+          "q": "Qui a été le premier président du Cameroun ?",
+          "a": "Ahmadou Ahidjo"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Sciences et origines de l'humanité",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? L'Afrique est considérée comme le berceau de l'humanité.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le surnom du célèbre squelette d'australopithèque découvert en Éthiopie en 1974 ?",
+          "a": "Lucy"
+        },
+        {
+          "level": 3,
+          "q": "Quelle chanson des Beatles a donné son nom à Lucy ?",
+          "a": "Lucy in the Sky with Diamonds"
+        },
+        {
+          "level": 4,
+          "q": "Quel chirurgien sud-africain a réalisé la première greffe de cœur humain en 1967 ?",
+          "a": "Christiaan Barnard"
+        },
+        {
+          "level": 5,
+          "q": "Dans quelle ville a eu lieu cette première greffe : Le Cap, Johannesburg ou Durban ?",
+          "a": "Le Cap (hôpital Groote Schuur)"
+        },
+        {
+          "level": 6,
+          "q": "Quel mathématicien grec d'Alexandrie a écrit les « Éléments » ?",
+          "a": "Euclide"
+        },
+        {
+          "level": 7,
+          "q": "Quel savant d'Alexandrie a calculé la circonférence de la Terre au IIIe siècle av. J.-C. ?",
+          "a": "Ératosthène"
+        },
+        {
+          "level": 8,
+          "q": "Quel os gravé, découvert en RDC, est considéré comme l'un des plus anciens objets mathématiques ?",
+          "a": "L'os d'Ishango"
+        },
+        {
+          "level": 9,
+          "q": "Quelle mathématicienne et philosophe d'Alexandrie a été tuée en 415 ?",
+          "a": "Hypatie"
+        },
+        {
+          "level": 10,
+          "q": "À quelle espèce appartient Lucy ?",
+          "a": "Australopithecus afarensis"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les grands romans africains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Chinua Achebe était un écrivain nigérian.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le roman le plus célèbre de Chinua Achebe, publié en 1958 ?",
+          "a": "Le monde s'effondre (Things Fall Apart)"
+        },
+        {
+          "level": 3,
+          "q": "Quelle autrice nigériane a écrit « Americanah » ?",
+          "a": "Chimamanda Ngozi Adichie"
+        },
+        {
+          "level": 4,
+          "q": "Quel écrivain guinéen a écrit « L'Enfant noir » ?",
+          "a": "Camara Laye"
+        },
+        {
+          "level": 5,
+          "q": "Quel écrivain malien a dit : « En Afrique, quand un vieillard meurt, c'est une bibliothèque qui brûle » ?",
+          "a": "Amadou Hampâté Bâ"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le héros de « Le monde s'effondre » ?",
+          "a": "Okonkwo"
+        },
+        {
+          "level": 7,
+          "q": "Quel écrivain kényan a renoncé à l'anglais pour écrire en kikuyu ?",
+          "a": "Ngũgĩ wa Thiong'o"
+        },
+        {
+          "level": 8,
+          "q": "Quelle romancière sénégalaise a écrit « Une si longue lettre » (1979) ?",
+          "a": "Mariama Bâ"
+        },
+        {
+          "level": 9,
+          "q": "Quel écrivain sénégalais a écrit « L'Aventure ambiguë » ?",
+          "a": "Cheikh Hamidou Kane"
+        },
+        {
+          "level": 10,
+          "q": "Quel écrivain ivoirien a remporté le prix Renaudot 2000 avec « Allah n'est pas obligé » ?",
+          "a": "Ahmadou Kourouma"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en vins d'Afrique ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays est le plus grand producteur de vin d'Afrique : l'Afrique du Sud, le Nigeria ou le Kenya ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Près de quelle grande ville sud-africaine, au pied de la montagne de la Table, se trouvent les principaux vignobles du pays ?",
+          "a": "Le Cap"
+        },
+        {
+          "level": 3,
+          "q": "Quel cépage rouge, créé en Afrique du Sud, est l'emblème du pays : le pinotage, le malbec ou le carménère ?",
+          "a": "Le pinotage"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Le chenin blanc est le cépage le plus planté d'Afrique du Sud.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quelle ville viticole sud-africaine, connue pour son université, est la capitale de la « route des vins » ?",
+          "a": "Stellenbosch"
+        },
+        {
+          "level": 6,
+          "q": "Quels réfugiés protestants français, arrivés à la fin du XVIIe siècle, ont développé la vigne à Franschhoek ?",
+          "a": "Les huguenots"
+        },
+        {
+          "level": 7,
+          "q": "Quel domaine près du Cap produisait un vin doux célèbre, apprécié de Napoléon en exil à Sainte-Hélène ?",
+          "a": "Constantia"
+        },
+        {
+          "level": 8,
+          "q": "Quel commandant néerlandais, fondateur de la colonie du Cap, a noté en 1659 que le premier vin du pays venait d'être pressé ?",
+          "a": "Jan van Riebeeck"
+        },
+        {
+          "level": 9,
+          "q": "Quel pays d'Afrique du Nord était, dans les années 1950, le premier exportateur de vin au monde ?",
+          "a": "L'Algérie"
+        },
+        {
+          "level": 10,
+          "q": "Le pinotage est un croisement entre le pinot noir et quel cépage, appelé localement « Hermitage » ?",
+          "a": "Le cinsault"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en café africain ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Selon la tradition, quel pays africain est le berceau du café : l'Éthiopie, le Maroc ou l'Afrique du Sud ?",
+          "a": "L'Éthiopie"
+        },
+        {
+          "level": 2,
+          "q": "Entre l'arabica et le robusta, lequel est le plus amer et le plus riche en caféine ?",
+          "a": "Le robusta"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays d'Afrique de l'Est, dont la capitale est Nairobi, est réputé pour ses arabicas vifs et fruités ?",
+          "a": "Le Kenya"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? En Éthiopie, la cérémonie du café se déroule traditionnellement en trois tournées.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le berger qui, selon la légende éthiopienne, découvrit le café en voyant ses chèvres surexcitées ?",
+          "a": "Kaldi"
+        },
+        {
+          "level": 6,
+          "q": "Au Kenya, quelle mention désigne les plus gros grains de café : AA, XL ou Grade 1 ?",
+          "a": "AA"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays d'Afrique de l'Est, bordé par le lac Victoria, est le premier producteur africain de robusta ?",
+          "a": "L'Ouganda"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle la cafetière éthiopienne en terre cuite, à long col ?",
+          "a": "La jebena"
+        },
+        {
+          "level": 9,
+          "q": "Quel poète français, devenu négociant, a vécu à Harar en Éthiopie où il commerçait notamment le café ?",
+          "a": "Arthur Rimbaud"
+        },
+        {
+          "level": 10,
+          "q": "Le café Touba, aromatisé au poivre de Sélim, porte le nom de la ville sainte de quelle confrérie soufie sénégalaise ?",
+          "a": "Les mourides"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cacao et chocolat africains ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays est le premier producteur mondial de cacao : la Côte d'Ivoire, le Brésil ou la Suisse ?",
+          "a": "La Côte d'Ivoire"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le cacaoyer est originaire d'Afrique.",
+          "a": "Faux (il vient d'Amérique du Sud)"
+        },
+        {
+          "level": 3,
+          "q": "Quel voisin de la Côte d'Ivoire, dont la capitale est Accra, est le 2e producteur mondial de cacao ?",
+          "a": "Le Ghana"
+        },
+        {
+          "level": 4,
+          "q": "Quelle matière grasse extraite de la fève de cacao est la base du chocolat blanc ?",
+          "a": "Le beurre de cacao"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? La Côte d'Ivoire et le Ghana produisent ensemble plus de la moitié du cacao mondial.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le fruit du cacaoyer, qui pousse directement sur le tronc ?",
+          "a": "La cabosse"
+        },
+        {
+          "level": 7,
+          "q": "Quelle étape, menée quelques jours sous des feuilles de bananier après la récolte, développe les arômes des fèves ?",
+          "a": "La fermentation"
+        },
+        {
+          "level": 8,
+          "q": "Quel archipel du golfe de Guinée, alors colonie portugaise, fut au début du XXe siècle le premier producteur mondial de cacao ?",
+          "a": "São Tomé-et-Principe"
+        },
+        {
+          "level": 9,
+          "q": "Vers 1879, Tetteh Quarshie aurait introduit le cacao en Gold Coast (Ghana) en rapportant des fèves de quelle île ?",
+          "a": "Fernando Po (Bioko, Guinée équatoriale)"
+        },
+        {
+          "level": 10,
+          "q": "Quel organisme public ivoirien fixe le prix du cacao payé aux planteurs ?",
+          "a": "Le Conseil du café-cacao"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en thé et infusions d'Afrique ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le thé à la menthe est la boisson emblématique de quel pays : le Maroc, le Kenya ou l'Afrique du Sud ?",
+          "a": "Le Maroc"
+        },
+        {
+          "level": 2,
+          "q": "Le rooibos, infusion rouge sans théine, vient de quel pays : l'Afrique du Sud, le Maroc ou le Mali ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Au Maghreb, on verse le thé à la menthe de haut pour former de la mousse.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays est le premier exportateur mondial de thé noir : le Kenya, le Maroc ou l'Égypte ?",
+          "a": "Le Kenya"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le thé vert chinois roulé en petites billes, utilisé pour le thé à la menthe ?",
+          "a": "Le gunpowder (« poudre à canon »)"
+        },
+        {
+          "level": 6,
+          "q": "Le bissap, boisson rouge d'Afrique de l'Ouest, est fait avec quelle fleur : l'hibiscus, le jasmin ou la rose ?",
+          "a": "L'hibiscus"
+        },
+        {
+          "level": 7,
+          "q": "Au Sahel (Sénégal, Mali, Mauritanie), en combien de verres successifs sert-on traditionnellement le thé ?",
+          "a": "Trois"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on au Sénégal ce thé vert très sucré servi en trois tournées ?",
+          "a": "L'ataya (attaya)"
+        },
+        {
+          "level": 9,
+          "q": "Comment appelle-t-on en Égypte et au Soudan l'infusion d'hibiscus, nommée bissap en Afrique de l'Ouest ?",
+          "a": "Le karkadé"
+        },
+        {
+          "level": 10,
+          "q": "Le rooibos ne pousse naturellement que dans quelle région montagneuse d'Afrique du Sud : le Cederberg, le Drakensberg ou le Karoo ?",
+          "a": "Le Cederberg"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en bières et vin de palme ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le vin de palme est obtenu à partir de quoi : la sève du palmier, le raisin ou la noix de coco ?",
+          "a": "La sève du palmier"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le vin de palme commence à fermenter naturellement dès les premières heures après la récolte.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quelle bière kényane a un éléphant sur son étiquette : Tusker, Castle ou Star ?",
+          "a": "Tusker"
+        },
+        {
+          "level": 4,
+          "q": "La bière Castle Lager vient de quel pays ?",
+          "a": "D'Afrique du Sud"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? Le Nigeria est l'un des plus grands marchés au monde pour la Guinness.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quelle liqueur crémeuse sud-africaine est faite avec le fruit du marula, adoré des éléphants ?",
+          "a": "L'Amarula"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle la bière traditionnelle de sorgho, brassée par les femmes au Burkina Faso ?",
+          "a": "Le dolo"
+        },
+        {
+          "level": 8,
+          "q": "Quelle eau-de-vie tunisienne est distillée à partir de figues ?",
+          "a": "La boukha"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle au Ghana l'eau-de-vie artisanale distillée à partir du vin de palme ou de la canne ?",
+          "a": "L'akpeteshie"
+        },
+        {
+          "level": 10,
+          "q": "Quel écrivain nigérian a publié en 1952 « L'Ivrogne dans la brousse », dont le héros est un buveur de vin de palme ?",
+          "a": "Amos Tutuola"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cuisine africaine ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le couscous est un plat emblématique de quelle région : le Maghreb, l'Afrique australe ou Madagascar ?",
+          "a": "Le Maghreb"
+        },
+        {
+          "level": 2,
+          "q": "Le mot « tajine » désigne à la fois le plat et quoi ?",
+          "a": "Le récipient en terre cuite à couvercle conique"
+        },
+        {
+          "level": 3,
+          "q": "Quel plat de riz à la tomate fait l'objet d'une rivalité célèbre entre le Nigeria et le Ghana ?",
+          "a": "Le riz jollof"
+        },
+        {
+          "level": 4,
+          "q": "Le mafé est un ragoût à base de quelle sauce : arachide, coco ou yaourt ?",
+          "a": "L'arachide (pâte d'arachide)"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? L'injera éthiopienne est fabriquée avec de la farine de teff.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quel plat sénégalais de riz au poisson, inscrit à l'UNESCO en 2021, est le plat national ?",
+          "a": "Le thiéboudiène (ceebu jën)"
+        },
+        {
+          "level": 7,
+          "q": "Quel plat populaire égyptien mélange riz, lentilles, pâtes, sauce tomate et oignons frits ?",
+          "a": "Le koshari"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on au Kenya et en Tanzanie la pâte épaisse de farine de maïs qui accompagne les plats ?",
+          "a": "L'ugali"
+        },
+        {
+          "level": 9,
+          "q": "Quel plat sud-africain d'origine malaise du Cap est un hachis épicé gratiné d'une crème aux œufs ?",
+          "a": "Le bobotie"
+        },
+        {
+          "level": 10,
+          "q": "Quel bouillon de viande et de brèdes est considéré comme le plat national de Madagascar ?",
+          "a": "Le romazava"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en épices africaines ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La harissa est une pâte à base de quoi : de piments, d'olives ou de dattes ?",
+          "a": "De piments"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays la harissa, inscrite à l'UNESCO en 2022, est-elle originaire : la Tunisie, le Kenya ou le Nigeria ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 3,
+          "q": "Quelle île de Tanzanie est surnommée « l'île aux épices » pour ses clous de girofle ?",
+          "a": "Zanzibar"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Madagascar est le premier producteur mondial de vanille.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le mélange d'épices marocain dont le nom signifie « tête de la boutique » ?",
+          "a": "Le ras el-hanout"
+        },
+        {
+          "level": 6,
+          "q": "Le piri-piri, petit piment très fort, est associé à la cuisine de quel pays lusophone d'Afrique australe ?",
+          "a": "Le Mozambique"
+        },
+        {
+          "level": 7,
+          "q": "Quel mélange d'épices éthiopien à base de piment rouge parfume le doro wat ?",
+          "a": "Le berbéré"
+        },
+        {
+          "level": 8,
+          "q": "Le poivre de Penja, très prisé des chefs, vient de quel pays : le Cameroun, le Maroc ou l'Égypte ?",
+          "a": "Le Cameroun"
+        },
+        {
+          "level": 9,
+          "q": "Le soumbala, condiment fermenté d'Afrique de l'Ouest, est fait avec les graines de quel arbre ?",
+          "a": "Le néré"
+        },
+        {
+          "level": 10,
+          "q": "Sous quel autre nom connaît-on les « graines de paradis », épice poivrée d'Afrique de l'Ouest (Aframomum melegueta) ?",
+          "a": "La maniguette"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en pères des indépendances ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? La plupart des pays d'Afrique sont devenus indépendants dans les années 1960.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel président égyptien a nationalisé le canal de Suez en 1956 : Nasser, Sadate ou Moubarak ?",
+          "a": "Gamal Abdel Nasser"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays fut en 1957 le premier d'Afrique subsaharienne à obtenir son indépendance, sous Kwame Nkrumah ?",
+          "a": "Le Ghana"
+        },
+        {
+          "level": 4,
+          "q": "Quel Premier ministre du Congo, héros de l'indépendance de 1960, fut assassiné en 1961 ?",
+          "a": "Patrice Lumumba"
+        },
+        {
+          "level": 5,
+          "q": "Quel poète fut le premier président du Sénégal ?",
+          "a": "Léopold Sédar Senghor"
+        },
+        {
+          "level": 6,
+          "q": "Quel père de la nation tanzanienne, surnommé « Mwalimu » (l'instituteur), prônait le socialisme ujamaa ?",
+          "a": "Julius Nyerere"
+        },
+        {
+          "level": 7,
+          "q": "Quel leader guinéen a lancé en 1958 : « Nous préférons la pauvreté dans la liberté à la richesse dans l'esclavage » ?",
+          "a": "Ahmed Sékou Touré"
+        },
+        {
+          "level": 8,
+          "q": "Quel premier président du Kenya avait été emprisonné par les Britanniques pendant la révolte des Mau Mau ?",
+          "a": "Jomo Kenyatta"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle ville, sa ville natale devenue capitale, Félix Houphouët-Boigny a-t-il fait bâtir une basilique géante ?",
+          "a": "Yamoussoukro"
+        },
+        {
+          "level": 10,
+          "q": "Quel fondateur du PAIGC, leader de l'indépendance de la Guinée-Bissau et du Cap-Vert, fut assassiné en 1973 ?",
+          "a": "Amílcar Cabral"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en coups d'État et dictatures africaines ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel dirigeant a gouverné la Libye de 1969 à 2011 ?",
+          "a": "Mouammar Kadhafi"
+        },
+        {
+          "level": 2,
+          "q": "Quel dictateur ougandais a expulsé les Asiatiques du pays en 1972 : Idi Amin Dada, Mobutu ou Bokassa ?",
+          "a": "Idi Amin Dada"
+        },
+        {
+          "level": 3,
+          "q": "Quel président du Zaïre était célèbre pour sa toque en peau de léopard ?",
+          "a": "Mobutu Sese Seko"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Jean-Bedel Bokassa s'est fait couronner empereur de Centrafrique en 1977.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel capitaine révolutionnaire a rebaptisé la Haute-Volta « Burkina Faso » en 1984 ?",
+          "a": "Thomas Sankara"
+        },
+        {
+          "level": 6,
+          "q": "Que signifie « Burkina Faso » : « pays des hommes intègres », « terre des ancêtres » ou « pays du soleil » ?",
+          "a": "Pays des hommes intègres"
+        },
+        {
+          "level": 7,
+          "q": "Quel président du Zimbabwe, au pouvoir de 1980 à 2017, a été écarté par l'armée ?",
+          "a": "Robert Mugabe"
+        },
+        {
+          "level": 8,
+          "q": "Qui a pris le pouvoir après l'assassinat de Sankara en 1987, et l'a gardé jusqu'en 2014 ?",
+          "a": "Blaise Compaoré"
+        },
+        {
+          "level": 9,
+          "q": "Quel dirigeant de Guinée équatoriale a pris le pouvoir en 1979 en renversant son propre oncle ?",
+          "a": "Teodoro Obiang Nguema"
+        },
+        {
+          "level": 10,
+          "q": "Quel président a dirigé le Togo de 1967 à sa mort en 2005, avant que son fils lui succède ?",
+          "a": "Gnassingbé Eyadéma"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en apartheid ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Que signifie « apartheid » en afrikaans : séparation, liberté ou union ?",
+          "a": "Séparation"
+        },
+        {
+          "level": 2,
+          "q": "Sur quelle île au large du Cap Nelson Mandela a-t-il passé 18 ans en prison ?",
+          "a": "Robben Island"
+        },
+        {
+          "level": 3,
+          "q": "Quel parti politique Nelson Mandela a-t-il dirigé ?",
+          "a": "L'ANC (Congrès national africain)"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Mandela a reçu le prix Nobel de la paix en 1993 avec Frederik de Klerk.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel surnom, tiré du nom de son clan, les Sud-Africains donnent-ils affectueusement à Mandela ?",
+          "a": "Madiba"
+        },
+        {
+          "level": 6,
+          "q": "Quel archevêque anglican, prix Nobel de la paix 1984, a popularisé l'expression « nation arc-en-ciel » ?",
+          "a": "Desmond Tutu"
+        },
+        {
+          "level": 7,
+          "q": "Quel township s'est soulevé en 1976 contre l'imposition de l'afrikaans à l'école ?",
+          "a": "Soweto"
+        },
+        {
+          "level": 8,
+          "q": "Dans quelle ville la police a-t-elle tué 69 manifestants contre les laissez-passer, le 21 mars 1960 ?",
+          "a": "Sharpeville"
+        },
+        {
+          "level": 9,
+          "q": "Quel leader du mouvement de la Conscience noire est mort en détention en 1977 ?",
+          "a": "Steve Biko"
+        },
+        {
+          "level": 10,
+          "q": "Lors de quel procès (1963-1964) Mandela a-t-il déclaré être « prêt à mourir » pour son idéal ?",
+          "a": "Le procès de Rivonia"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en économie et ressources africaines ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle pierre précieuse a fait la fortune de l'entreprise De Beers : le diamant, le rubis ou l'émeraude ?",
+          "a": "Le diamant"
+        },
+        {
+          "level": 2,
+          "q": "Quelle monnaie est partagée par plusieurs pays d'Afrique de l'Ouest et centrale : le franc CFA, l'euro ou le rand ?",
+          "a": "Le franc CFA"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la monnaie de l'Afrique du Sud ?",
+          "a": "Le rand"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? La république démocratique du Congo est le premier producteur mondial de cobalt.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Dans quelle ville se trouve le siège de l'Union africaine ?",
+          "a": "Addis-Abeba"
+        },
+        {
+          "level": 6,
+          "q": "Le Botswana tire l'essentiel de ses exportations de quelle ressource ?",
+          "a": "Les diamants"
+        },
+        {
+          "level": 7,
+          "q": "Quel empereur du Mali fit en 1324 un pèlerinage à La Mecque en distribuant tant d'or que son cours chuta au Caire ?",
+          "a": "Mansa Moussa"
+        },
+        {
+          "level": 8,
+          "q": "Quel diamant, le plus gros jamais trouvé (environ 3 106 carats), a été découvert en Afrique du Sud en 1905 ?",
+          "a": "Le Cullinan"
+        },
+        {
+          "level": 9,
+          "q": "Quelle région du sud de la RDC, riche en cuivre et cobalt, a fait sécession en 1960 sous Moïse Tshombé ?",
+          "a": "Le Katanga"
+        },
+        {
+          "level": 10,
+          "q": "Quel nom a été annoncé en 2019 pour la monnaie devant remplacer le franc CFA en Afrique de l'Ouest ?",
+          "a": "L'eco"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en littérature africaine ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel mouvement littéraire, porté par Senghor et Césaire, revendique la fierté d'être noir : la négritude, le surréalisme ou le romantisme ?",
+          "a": "La négritude"
+        },
+        {
+          "level": 2,
+          "q": "Quel auteur nigérian a écrit « Le monde s'effondre » (1958) ?",
+          "a": "Chinua Achebe"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Wole Soyinka a été en 1986 le premier Africain noir à recevoir le prix Nobel de littérature.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel écrivain guinéen a raconté son enfance dans « L'Enfant noir » (1953) ?",
+          "a": "Camara Laye"
+        },
+        {
+          "level": 5,
+          "q": "Quelle romancière nigériane a écrit « Americanah » et « L'Autre Moitié du soleil » ?",
+          "a": "Chimamanda Ngozi Adichie"
+        },
+        {
+          "level": 6,
+          "q": "Quel écrivain égyptien, auteur de la « Trilogie du Caire », a reçu le prix Nobel de littérature en 1988 ?",
+          "a": "Naguib Mahfouz"
+        },
+        {
+          "level": 7,
+          "q": "Quel écrivain kényan a renoncé à l'anglais pour écrire en kikuyu ?",
+          "a": "Ngũgĩ wa Thiong'o"
+        },
+        {
+          "level": 8,
+          "q": "Quel écrivain malien a dit : « En Afrique, quand un vieillard meurt, c'est une bibliothèque qui brûle » ?",
+          "a": "Amadou Hampâté Bâ"
+        },
+        {
+          "level": 9,
+          "q": "Quelle romancière sénégalaise a écrit « Une si longue lettre » (1979) ?",
+          "a": "Mariama Bâ"
+        },
+        {
+          "level": 10,
+          "q": "Quel écrivain né à Zanzibar a reçu le prix Nobel de littérature en 2021 ?",
+          "a": "Abdulrazak Gurnah"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cinéma africain ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel film d'animation Disney, avec Simba, se déroule dans la savane africaine ?",
+          "a": "Le Roi lion"
+        },
+        {
+          "level": 2,
+          "q": "Comment surnomme-t-on l'industrie du cinéma nigériane ?",
+          "a": "Nollywood"
+        },
+        {
+          "level": 3,
+          "q": "Dans quelle ville se tient le FESPACO : Ouagadougou, Dakar ou Le Caire ?",
+          "a": "Ouagadougou"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Le FESPACO a lieu tous les deux ans.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel cinéaste et écrivain sénégalais est considéré comme le « père du cinéma africain » ?",
+          "a": "Ousmane Sembène"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le grand prix du FESPACO ?",
+          "a": "L'Étalon d'or de Yennenga"
+        },
+        {
+          "level": 7,
+          "q": "Quel film sud-africain de Gavin Hood a remporté en 2006 l'Oscar du meilleur film en langue étrangère ?",
+          "a": "Tsotsi"
+        },
+        {
+          "level": 8,
+          "q": "Quel film de Sembène (1966) est souvent considéré comme le premier long métrage d'Afrique subsaharienne ?",
+          "a": "La Noire de…"
+        },
+        {
+          "level": 9,
+          "q": "Quel cinéaste mauritanien a réalisé « Timbuktu » (2014), césar du meilleur film ?",
+          "a": "Abderrahmane Sissako"
+        },
+        {
+          "level": 10,
+          "q": "Quel réalisateur malien a remporté le prix du jury à Cannes en 1987 avec « Yeelen » ?",
+          "a": "Souleymane Cissé"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en légendes de la musique africaine ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel chanteur sénégalais a chanté « 7 Seconds » avec Neneh Cherry ?",
+          "a": "Youssou N'Dour"
+        },
+        {
+          "level": 2,
+          "q": "Quelle chanteuse sud-africaine, surnommée « Mama Africa », a chanté « Pata Pata » ?",
+          "a": "Miriam Makeba"
+        },
+        {
+          "level": 3,
+          "q": "Quel style musical a été créé par le Nigérian Fela Kuti : l'afrobeat, le reggae ou le zouk ?",
+          "a": "L'afrobeat"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Le Malien Salif Keita, « la voix d'or de l'Afrique », est albinos.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel genre musical algérien, né à Oran, a pour « roi » Cheb Khaled ?",
+          "a": "Le raï"
+        },
+        {
+          "level": 6,
+          "q": "Quelle chanteuse cap-verdienne, la « diva aux pieds nus », a fait connaître la morna au monde ?",
+          "a": "Cesária Évora"
+        },
+        {
+          "level": 7,
+          "q": "Quel saxophoniste camerounais a eu un tube mondial avec « Soul Makossa » (1972) ?",
+          "a": "Manu Dibango"
+        },
+        {
+          "level": 8,
+          "q": "Quel instrument à 21 cordes, joué par Toumani Diabaté, est typique des griots mandingues ?",
+          "a": "La kora"
+        },
+        {
+          "level": 9,
+          "q": "Quel guitariste congolais, surnommé « le Grand Maître », dirigeait l'orchestre OK Jazz ?",
+          "a": "Franco (Luambo Makiadi)"
+        },
+        {
+          "level": 10,
+          "q": "Comment Fela Kuti avait-il baptisé sa commune autoproclamée indépendante à Lagos ?",
+          "a": "La Kalakuta Republic"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en corps humain et santé en Afrique ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle maladie est transmise par la piqûre du moustique anophèle ?",
+          "a": "Le paludisme (malaria)"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Seules les femelles moustiques piquent.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quelle mouche transmet la maladie du sommeil ?",
+          "a": "La mouche tsé-tsé"
+        },
+        {
+          "level": 4,
+          "q": "Quel virus, qui porte le nom d'une rivière de RDC, provoque une fièvre hémorragique ?",
+          "a": "Ebola"
+        },
+        {
+          "level": 5,
+          "q": "Après la piqûre, quel organe le parasite du paludisme envahit-il en premier : le foie, les poumons ou le cœur ?",
+          "a": "Le foie (puis les globules rouges)"
+        },
+        {
+          "level": 6,
+          "q": "Quel médicament, tiré de l'écorce du quinquina, a longtemps été le remède contre le paludisme ?",
+          "a": "La quinine"
+        },
+        {
+          "level": 7,
+          "q": "Quelle maladie génétique des globules rouges, fréquente en Afrique, protège en partie ses porteurs sains du paludisme ?",
+          "a": "La drépanocytose"
+        },
+        {
+          "level": 8,
+          "q": "Quel chirurgien sud-africain a réalisé au Cap, en 1967, la première greffe de cœur humain ?",
+          "a": "Christiaan Barnard"
+        },
+        {
+          "level": 9,
+          "q": "Quelle espèce de parasite cause les formes les plus graves de paludisme ?",
+          "a": "Plasmodium falciparum"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le nom de code du premier vaccin antipaludique recommandé par l'OMS, en 2021 ?",
+          "a": "RTS,S (Mosquirix)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en Égypte ancienne ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel fleuve traverse l'Égypte ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 2,
+          "q": "Quel jeune pharaon a vu son tombeau presque intact découvert en 1922 ?",
+          "a": "Toutânkhamon"
+        },
+        {
+          "level": 3,
+          "q": "Quel pharaon a fait construire la Grande Pyramide de Gizeh : Khéops, Ramsès II ou Akhenaton ?",
+          "a": "Khéops"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Lors de la momification, les Égyptiens retiraient le cerveau par le nez.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quelle reine fut la dernière souveraine de l'Égypte ptolémaïque ?",
+          "a": "Cléopâtre (VII)"
+        },
+        {
+          "level": 6,
+          "q": "Quelle pierre a permis à Champollion de déchiffrer les hiéroglyphes ?",
+          "a": "La pierre de Rosette"
+        },
+        {
+          "level": 7,
+          "q": "Quel archéologue britannique a découvert le tombeau de Toutânkhamon ?",
+          "a": "Howard Carter"
+        },
+        {
+          "level": 8,
+          "q": "Que conservait-on dans les vases canopes ?",
+          "a": "Les viscères du défunt (foie, poumons, estomac, intestins)"
+        },
+        {
+          "level": 9,
+          "q": "Quel pharaon a imposé le culte d'un dieu unique, Aton ?",
+          "a": "Akhenaton"
+        },
+        {
+          "level": 10,
+          "q": "De quel royaume de Nubie venaient les « pharaons noirs » de la XXVe dynastie ?",
+          "a": "Le royaume de Koush"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en Carthage et Afrique antique ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays actuel se trouvent les ruines de Carthage ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 2,
+          "q": "Quel général carthaginois a traversé les Alpes avec des éléphants ?",
+          "a": "Hannibal"
+        },
+        {
+          "level": 3,
+          "q": "Contre quelle puissance Carthage a-t-elle mené les guerres puniques ?",
+          "a": "Rome"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Carthage a été fondée par des Phéniciens venus de Tyr.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quelle reine légendaire aurait fondé Carthage ?",
+          "a": "Didon (Élissa)"
+        },
+        {
+          "level": 6,
+          "q": "Quel Père de l'Église, auteur des « Confessions », était évêque d'Hippone (Algérie actuelle) ?",
+          "a": "Saint Augustin"
+        },
+        {
+          "level": 7,
+          "q": "Quelle phrase Caton l'Ancien répétait-il à la fin de ses discours au Sénat ?",
+          "a": "« Carthago delenda est » (Il faut détruire Carthage)"
+        },
+        {
+          "level": 8,
+          "q": "Lors de quelle bataille, en 202 av. J.-C., Scipion a-t-il vaincu Hannibal ?",
+          "a": "Zama"
+        },
+        {
+          "level": 9,
+          "q": "Quel royaume d'Éthiopie, célèbre pour ses grandes stèles, s'est converti au christianisme au IVe siècle ?",
+          "a": "Le royaume d'Aksoum"
+        },
+        {
+          "level": 10,
+          "q": "Quel roi numide a donné son nom à une guerre contre Rome racontée par l'historien Salluste ?",
+          "a": "Jugurtha"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en histoire coloniale africaine ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays a colonisé l'Algérie de 1830 à 1962 ?",
+          "a": "La France"
+        },
+        {
+          "level": 2,
+          "q": "Quel pays européen a colonisé l'Angola et le Mozambique jusqu'en 1975 ?",
+          "a": "Le Portugal"
+        },
+        {
+          "level": 3,
+          "q": "Quel roi des Belges a possédé le Congo comme propriété personnelle ?",
+          "a": "Léopold II"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? L'Éthiopie a battu l'armée italienne à la bataille d'Adoua en 1896.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quelle conférence de 1884-1885 a fixé les règles du partage de l'Afrique entre Européens ?",
+          "a": "La conférence de Berlin"
+        },
+        {
+          "level": 6,
+          "q": "Quelle île au large de Dakar est un symbole mondial de la mémoire de la traite négrière ?",
+          "a": "L'île de Gorée"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays d'Afrique de l'Ouest a été fondé au XIXe siècle par d'anciens esclaves venus des États-Unis ?",
+          "a": "Le Liberia"
+        },
+        {
+          "level": 8,
+          "q": "Quelle guerre a opposé de 1899 à 1902 les Britanniques aux Afrikaners ?",
+          "a": "La seconde guerre des Boers"
+        },
+        {
+          "level": 9,
+          "q": "Quel peuple de Namibie a subi, avec les Nama, un génocide des troupes allemandes en 1904-1908 ?",
+          "a": "Les Herero"
+        },
+        {
+          "level": 10,
+          "q": "Lors de quelle bataille de 1879 l'armée zouloue du roi Cetshwayo a-t-elle écrasé les Britanniques ?",
+          "a": "Isandlwana"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en religions et traditions africaines ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le mois de jeûne des musulmans ?",
+          "a": "Le ramadan"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? L'Église orthodoxe éthiopienne est l'une des plus anciennes Églises chrétiennes du monde.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Le vaudou est une religion originaire de quel pays d'Afrique de l'Ouest : le Bénin, le Kenya ou l'Égypte ?",
+          "a": "Le Bénin"
+        },
+        {
+          "level": 4,
+          "q": "Quelle grande mosquée du Mali est le plus grand édifice en terre crue du monde ?",
+          "a": "La Grande Mosquée de Djenné"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on en Afrique de l'Ouest les conteurs-musiciens gardiens de la mémoire des familles ?",
+          "a": "Les griots"
+        },
+        {
+          "level": 6,
+          "q": "Quelle mosquée de Casablanca possède l'un des plus hauts minarets du monde ?",
+          "a": "La mosquée Hassan II"
+        },
+        {
+          "level": 7,
+          "q": "Quelle ville d'Éthiopie est célèbre pour ses églises monolithes taillées dans la roche ?",
+          "a": "Lalibela"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle la cérémonie malgache du « retournement des morts » ?",
+          "a": "Le famadihana"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le célèbre concours de beauté masculine des Peuls Wodaabe du Niger ?",
+          "a": "Le Gerewol"
+        },
+        {
+          "level": 10,
+          "q": "Selon la tradition éthiopienne, quelle relique biblique serait conservée dans une chapelle d'Aksoum ?",
+          "a": "L'Arche d'alliance"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en art africain et masques ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel tissu aux couleurs vives et motifs géométriques est tissé par les Ashanti du Ghana : le kente, le tweed ou le jean ?",
+          "a": "Le kente"
+        },
+        {
+          "level": 2,
+          "q": "Quel peintre espagnol s'est inspiré des masques africains pour « Les Demoiselles d'Avignon » ?",
+          "a": "Pablo Picasso"
+        },
+        {
+          "level": 3,
+          "q": "Le bogolan, tissu teint à la boue, est une tradition de quel pays : le Mali, le Maroc ou l'Afrique du Sud ?",
+          "a": "Le Mali"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Les célèbres « bronzes du Bénin » proviennent de l'actuel Nigeria.",
+          "a": "Vrai (royaume du Bénin, Benin City)"
+        },
+        {
+          "level": 5,
+          "q": "Quel peuple du Mali est célèbre pour ses masques kanaga et ses villages des falaises de Bandiagara ?",
+          "a": "Les Dogon"
+        },
+        {
+          "level": 6,
+          "q": "Quel musée parisien, ouvert en 2006, abrite d'immenses collections d'art africain ?",
+          "a": "Le musée du quai Branly"
+        },
+        {
+          "level": 7,
+          "q": "En 2021, la France a restitué 26 trésors royaux d'Abomey, pillés en 1892, à quel pays ?",
+          "a": "Le Bénin"
+        },
+        {
+          "level": 8,
+          "q": "Quelle armée a pillé les bronzes de Benin City lors d'une expédition punitive en 1897 ?",
+          "a": "L'armée britannique"
+        },
+        {
+          "level": 9,
+          "q": "Quel artiste ghanéen est connu pour ses immenses tentures faites de capsules de bouteilles ?",
+          "a": "El Anatsui"
+        },
+        {
+          "level": 10,
+          "q": "Quelle culture du Nigeria, vieille de plus de 2 000 ans, a laissé de célèbres têtes en terre cuite ?",
+          "a": "La culture Nok"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Didier Drogba ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Pour quel pays Didier Drogba jouait-il ?",
+          "a": "La Côte d'Ivoire"
+        },
+        {
+          "level": 2,
+          "q": "À quel poste jouait Drogba : gardien, défenseur ou attaquant ?",
+          "a": "Attaquant"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel club anglais Drogba est-il devenu une légende ?",
+          "a": "Chelsea"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Drogba a marqué le tir au but décisif de la finale de Ligue des champions 2012.",
+          "a": "Vrai (contre le Bayern Munich)"
+        },
+        {
+          "level": 5,
+          "q": "Avec quel club français Drogba a-t-il atteint la finale de la Coupe UEFA en 2004 ?",
+          "a": "L'Olympique de Marseille"
+        },
+        {
+          "level": 6,
+          "q": "Dans quelle ville Drogba est-il né : Abidjan, Bouaké ou Yamoussoukro ?",
+          "a": "Abidjan"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : en 2005, après la qualification pour le Mondial 2006, Drogba a lancé à la télévision un appel à la paix dans son pays en guerre.",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel club chinois Drogba a-t-il joué en 2012 ?",
+          "a": "Le Shanghai Shenhua"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel club turc Drogba a-t-il joué en 2013-2014 : Fenerbahçe, Galatasaray ou Beşiktaş ?",
+          "a": "Galatasaray"
+        },
+        {
+          "level": 10,
+          "q": "Combien de fois Drogba a-t-il été élu Joueur africain de l'année par la CAF : 1, 2 ou 4 ?",
+          "a": "2 (2006 et 2009)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Mohamed Salah ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Pour quel pays Mohamed Salah joue-t-il ?",
+          "a": "L'Égypte"
+        },
+        {
+          "level": 2,
+          "q": "Avec quel club anglais Salah est-il devenu une star mondiale ?",
+          "a": "Liverpool"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le pied fort de Salah : le droit ou le gauche ?",
+          "a": "Le gauche"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année Salah a-t-il gagné la Ligue des champions avec Liverpool : 2017, 2019 ou 2021 ?",
+          "a": "2019 (contre Tottenham)"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : avant Liverpool, Salah avait déjà joué à Chelsea.",
+          "a": "Vrai (2014-2016)"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel club italien Salah jouait-il juste avant de signer à Liverpool ?",
+          "a": "L'AS Rome"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel club suisse Salah a-t-il fait ses débuts en Europe ?",
+          "a": "Le FC Bâle"
+        },
+        {
+          "level": 8,
+          "q": "Combien de buts Salah a-t-il marqués en Premier League lors de sa première saison à Liverpool (2017-2018) : 22, 32 ou 42 ?",
+          "a": "32"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel club égyptien Salah a-t-il commencé sa carrière : Al Ahly, Zamalek ou El Mokawloon ?",
+          "a": "El Mokawloon (Arab Contractors)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le village natal de Salah, dans le delta du Nil ?",
+          "a": "Nagrig"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Coupe d'Afrique des nations ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La CAN est une compétition de quel sport ?",
+          "a": "Le football"
+        },
+        {
+          "level": 2,
+          "q": "Quelle confédération organise la CAN : la CAF, l'UEFA ou la CONMEBOL ?",
+          "a": "La CAF"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays a remporté trois CAN de suite en 2006, 2008 et 2010 ?",
+          "a": "L'Égypte"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays a remporté à domicile la CAN 2023 (jouée début 2024) ?",
+          "a": "La Côte d'Ivoire"
+        },
+        {
+          "level": 5,
+          "q": "En quelle année le Sénégal a-t-il gagné sa première CAN : 2002, 2019 ou 2022 ?",
+          "a": "2022 (édition 2021)"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : la Zambie a remporté la CAN 2012.",
+          "a": "Vrai (aux tirs au but contre la Côte d'Ivoire)"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays a remporté la CAN 1996, qu'il organisait juste après la fin de l'apartheid ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays a remporté à domicile la CAN 2004 : le Maroc, la Tunisie ou l'Algérie ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 9,
+          "q": "Quel Camerounais est le meilleur buteur de l'histoire de la CAN (18 buts) ?",
+          "a": "Samuel Eto'o"
+        },
+        {
+          "level": 10,
+          "q": "Combien d'équipes ont disputé la toute première CAN, au Soudan en 1957 : 3, 8 ou 16 ?",
+          "a": "3 (Égypte, Soudan, Éthiopie)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Afrique à la Coupe du monde ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel pays a organisé la première Coupe du monde de football en Afrique, en 2010 ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Quelle équipe est devenue en 2022 la première sélection africaine demi-finaliste d'une Coupe du monde ?",
+          "a": "Le Maroc"
+        },
+        {
+          "level": 3,
+          "q": "Quelle trompette en plastique très bruyante a marqué le Mondial 2010 ?",
+          "a": "La vuvuzela"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : le Cameroun a battu l'Argentine de Maradona en match d'ouverture du Mondial 1990.",
+          "a": "Vrai (1-0)"
+        },
+        {
+          "level": 5,
+          "q": "Quel champion du monde en titre le Sénégal a-t-il battu 1-0 en ouverture du Mondial 2002 ?",
+          "a": "La France"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays a éliminé le Ghana en quart de finale 2010, après une main de Luis Suárez sur la ligne ?",
+          "a": "L'Uruguay"
+        },
+        {
+          "level": 7,
+          "q": "Quelle équipe le Maroc a-t-il battue en quart de finale du Mondial 2022 : l'Espagne, le Portugal ou la Belgique ?",
+          "a": "Le Portugal (1-0)"
+        },
+        {
+          "level": 8,
+          "q": "Qui était le sélectionneur du Maroc lors du Mondial 2022 ?",
+          "a": "Walid Regragui"
+        },
+        {
+          "level": 9,
+          "q": "Quel âge avait le Camerounais Roger Milla quand il est devenu le plus vieux buteur de l'histoire du Mondial, en 1994 : 38, 42 ou 46 ans ?",
+          "a": "42 ans"
+        },
+        {
+          "level": 10,
+          "q": "Quel pays a été la première équipe africaine à disputer une Coupe du monde, en 1934 ?",
+          "a": "L'Égypte"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en George Weah ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays George Weah est-il originaire ?",
+          "a": "Le Liberia"
+        },
+        {
+          "level": 2,
+          "q": "Quelle fonction Weah a-t-il occupée de 2018 à 2024 ?",
+          "a": "Président du Liberia"
+        },
+        {
+          "level": 3,
+          "q": "Avec quel club parisien Weah a-t-il joué de 1992 à 1995 ?",
+          "a": "Le Paris Saint-Germain"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année Weah a-t-il remporté le Ballon d'or : 1991, 1995 ou 1999 ?",
+          "a": "1995"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel grand club italien Weah a-t-il joué après le PSG ?",
+          "a": "L'AC Milan"
+        },
+        {
+          "level": 6,
+          "q": "Quel entraîneur français a fait venir Weah à Monaco en 1988 ?",
+          "a": "Arsène Wenger"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : Weah a disputé une Coupe du monde avec le Liberia.",
+          "a": "Faux (le Liberia ne s'est jamais qualifié)"
+        },
+        {
+          "level": 8,
+          "q": "Pour quelle sélection joue son fils, Timothy Weah ?",
+          "a": "Les États-Unis"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel club camerounais Weah jouait-il juste avant de rejoindre Monaco ?",
+          "a": "Le Tonnerre Yaoundé"
+        },
+        {
+          "level": 10,
+          "q": "Vrai ou faux : Weah a gagné la FA Cup 2000 avec Chelsea, où il était prêté.",
+          "a": "Vrai"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Samuel Eto'o ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Pour quel pays Samuel Eto'o jouait-il ?",
+          "a": "Le Cameroun"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel club catalan Eto'o a-t-il joué de 2004 à 2009 ?",
+          "a": "Le FC Barcelone"
+        },
+        {
+          "level": 3,
+          "q": "Avec quel club italien Eto'o a-t-il réalisé le triplé en 2010 : la Juventus, l'Inter ou l'AC Milan ?",
+          "a": "L'Inter Milan"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Eto'o a réussi le triplé (championnat, coupe, Ligue des champions) deux saisons de suite avec deux clubs différents.",
+          "a": "Vrai (Barcelone 2009, Inter 2010)"
+        },
+        {
+          "level": 5,
+          "q": "Quel grand club espagnol a formé Eto'o avant de le laisser partir ?",
+          "a": "Le Real Madrid"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel club des Baléares Eto'o a-t-il explosé avant le Barça ?",
+          "a": "Majorque (RCD Mallorca)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle médaille Eto'o a-t-il remportée avec le Cameroun aux JO de Sydney 2000 ?",
+          "a": "L'or"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel club russe Eto'o a-t-il signé en 2011 ?",
+          "a": "L'Anji Makhatchkala"
+        },
+        {
+          "level": 9,
+          "q": "Combien de fois Eto'o a-t-il été élu Joueur africain de l'année par la CAF : 2, 3 ou 4 ?",
+          "a": "4 (2003, 2004, 2005, 2010)"
+        },
+        {
+          "level": 10,
+          "q": "De quelle fédération Eto'o a-t-il été élu président en décembre 2021 ?",
+          "a": "La Fécafoot (Fédération camerounaise de football)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Lions de la Teranga ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le surnom de l'équipe de football du Sénégal ?",
+          "a": "Les Lions de la Teranga"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel club anglais Sadio Mané a-t-il gagné la Ligue des champions ?",
+          "a": "Liverpool"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : c'est Sadio Mané qui a marqué le tir au but de la victoire en finale de la CAN 2021 contre l'Égypte.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Jusqu'à quel tour le Sénégal est-il allé au Mondial 2002 : huitièmes, quarts ou demi-finales ?",
+          "a": "Les quarts de finale"
+        },
+        {
+          "level": 5,
+          "q": "Avec quel club le gardien sénégalais Édouard Mendy a-t-il remporté la Ligue des champions 2021 ?",
+          "a": "Chelsea"
+        },
+        {
+          "level": 6,
+          "q": "Quel ancien capitaine de 2002 était le sélectionneur du Sénégal lors du titre à la CAN 2021 ?",
+          "a": "Aliou Cissé"
+        },
+        {
+          "level": 7,
+          "q": "Quel club allemand Sadio Mané a-t-il rejoint en 2022 ?",
+          "a": "Le Bayern Munich"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel club français Sadio Mané a-t-il débuté en Europe : Metz, Lille ou Rennes ?",
+          "a": "Le FC Metz"
+        },
+        {
+          "level": 9,
+          "q": "Avec quel club Mané a-t-il signé en 2015 le triplé le plus rapide de l'histoire de la Premier League (en moins de 3 minutes) ?",
+          "a": "Southampton"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le village natal de Sadio Mané, en Casamance ?",
+          "a": "Bambali"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en clubs africains ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quelle ville joue le club égyptien Al Ahly ?",
+          "a": "Le Caire"
+        },
+        {
+          "level": 2,
+          "q": "Quel club est le grand rival cairote d'Al Ahly ?",
+          "a": "Le Zamalek"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel pays jouent les Kaizer Chiefs et les Orlando Pirates ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 4,
+          "q": "Dans quelle ville marocaine s'affrontent le Wydad et le Raja ?",
+          "a": "Casablanca"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel pays joue le TP Mazembe : la RDC, le Congo ou le Gabon ?",
+          "a": "La RDC (à Lubumbashi)"
+        },
+        {
+          "level": 6,
+          "q": "De quel pays est l'Espérance sportive de Tunis ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : en 2010, le TP Mazembe a été le premier club africain à atteindre la finale de la Coupe du monde des clubs.",
+          "a": "Vrai (battu par l'Inter Milan)"
+        },
+        {
+          "level": 8,
+          "q": "Quel club détient le record de victoires en Ligue des champions de la CAF : Al Ahly, le Zamalek ou le TP Mazembe ?",
+          "a": "Al Ahly"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle ville ghanéenne joue l'Asante Kotoko : Accra, Kumasi ou Tamale ?",
+          "a": "Kumasi"
+        },
+        {
+          "level": 10,
+          "q": "Quel club nigérian a remporté la Ligue des champions de la CAF en 2003 et 2004 ?",
+          "a": "Enyimba"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en coureurs africains ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays est le marathonien Eliud Kipchoge ?",
+          "a": "Le Kenya"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays est la légende du fond Haile Gebreselassie : le Kenya, l'Éthiopie ou l'Ouganda ?",
+          "a": "L'Éthiopie"
+        },
+        {
+          "level": 3,
+          "q": "Dans quelle ville Kipchoge a-t-il couru un marathon en moins de 2 heures en 2019 (record non homologué) ?",
+          "a": "Vienne (Autriche)"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : l'Éthiopien Abebe Bikila a gagné le marathon olympique de Rome 1960 pieds nus.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Combien de titres olympiques du marathon Kipchoge a-t-il gagnés : 1, 2 ou 3 ?",
+          "a": "2 (2016 et 2021)"
+        },
+        {
+          "level": 6,
+          "q": "Sur quelle distance le Kényan David Rudisha a-t-il été champion olympique en 2012 avec un record du monde ?",
+          "a": "Le 800 m"
+        },
+        {
+          "level": 7,
+          "q": "De quel pays est Hicham El Guerrouj, recordman du monde du 1 500 m depuis 1998 ?",
+          "a": "Le Maroc"
+        },
+        {
+          "level": 8,
+          "q": "Combien de titres olympiques consécutifs sur 1 500 m la Kényane Faith Kipyegon a-t-elle gagnés (2016, 2021, 2024) ?",
+          "a": "3"
+        },
+        {
+          "level": 9,
+          "q": "Lors de quels Jeux Abebe Bikila a-t-il remporté son second marathon olympique ?",
+          "a": "Tokyo 1964"
+        },
+        {
+          "level": 10,
+          "q": "Quel Kényan a battu le record du monde du marathon de Kipchoge, à Chicago en 2023 ?",
+          "a": "Kelvin Kiptum (2 h 00 min 35 s)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en afrobeat et afrobeats ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays est le chanteur Burna Boy ?",
+          "a": "Le Nigeria"
+        },
+        {
+          "level": 2,
+          "q": "Quel genre musical Fela Kuti a-t-il inventé : l'afrobeat, le reggae ou le zouk ?",
+          "a": "L'afrobeat"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : le Nigérian Wizkid chante sur le tube « One Dance » de Drake.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Burna Boy a remporté un Grammy Award.",
+          "a": "Vrai (meilleur album de musique du monde en 2021)"
+        },
+        {
+          "level": 5,
+          "q": "De quel instrument jouait principalement Fela Kuti : le saxophone, le violon ou la harpe ?",
+          "a": "Le saxophone"
+        },
+        {
+          "level": 6,
+          "q": "Avec quelle star américaine Rema a-t-il enregistré le remix de « Calm Down » ?",
+          "a": "Selena Gomez"
+        },
+        {
+          "level": 7,
+          "q": "Dans quelle ville se trouvait le Shrine, le club mythique de Fela ?",
+          "a": "Lagos"
+        },
+        {
+          "level": 8,
+          "q": "Quelle chanteuse nigériane partage le tube « Essence » avec Wizkid ?",
+          "a": "Tems"
+        },
+        {
+          "level": 9,
+          "q": "Comment Fela avait-il baptisé sa propriété, qu'il avait déclarée indépendante du Nigeria ?",
+          "a": "La Kalakuta Republic"
+        },
+        {
+          "level": 10,
+          "q": "Quel batteur, co-créateur de l'afrobeat, a longtemps joué avec Fela ?",
+          "a": "Tony Allen"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en musiques d'Afrique de l'Ouest ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays est le chanteur Youssou N'Dour ?",
+          "a": "Le Sénégal"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays est la chanteuse Angélique Kidjo : le Bénin, le Togo ou le Ghana ?",
+          "a": "Le Bénin"
+        },
+        {
+          "level": 3,
+          "q": "Quel groupe ivoirien a chanté le tube « Premier Gaou » ?",
+          "a": "Magic System"
+        },
+        {
+          "level": 4,
+          "q": "Avec quelle chanteuse Youssou N'Dour a-t-il chanté « 7 Seconds » en 1994 ?",
+          "a": "Neneh Cherry"
+        },
+        {
+          "level": 5,
+          "q": "De quel pays vient le coupé-décalé : la Côte d'Ivoire, le Mali ou le Cameroun ?",
+          "a": "La Côte d'Ivoire"
+        },
+        {
+          "level": 6,
+          "q": "De quel pays est Salif Keita, « la voix d'or de l'Afrique » : le Mali, la Guinée ou le Niger ?",
+          "a": "Le Mali"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : le duo malien Amadou et Mariam est formé de deux musiciens aveugles.",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Quel style sénégalais aux percussions sabar Youssou N'Dour a-t-il popularisé ?",
+          "a": "Le mbalax"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : Salif Keita est atteint d'albinisme.",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "De quel pays était Mory Kanté, auteur du tube « Yé ké yé ké » ?",
+          "a": "La Guinée"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en rumba congolaise ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "D'où vient la rumba congolaise : des deux Congo, du Maroc ou du Kenya ?",
+          "a": "Des deux Congo (Kinshasa et Brazzaville)"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux : la rumba congolaise est inscrite au patrimoine culturel immatériel de l'UNESCO.",
+          "a": "Vrai (depuis 2021)"
+        },
+        {
+          "level": 3,
+          "q": "Quelle danse très populaire vient de RDC : le ndombolo, la salsa ou le tango ?",
+          "a": "Le ndombolo"
+        },
+        {
+          "level": 4,
+          "q": "Quel mouvement de dandys très élégants est associé à Papa Wemba ?",
+          "a": "La Sape"
+        },
+        {
+          "level": 5,
+          "q": "Quel chanteur congolais a sorti l'album « Tokooos » en 2017 ?",
+          "a": "Fally Ipupa"
+        },
+        {
+          "level": 6,
+          "q": "De quel groupe mythique sont issus Werrason et JB Mpiana ?",
+          "a": "Wenge Musica"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelait l'orchestre de Franco Luambo : l'OK Jazz, l'Afrisa ou Zaïko Langa Langa ?",
+          "a": "L'OK Jazz (TPOK Jazz)"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on la partie instrumentale endiablée d'une rumba, où la guitare solo s'emballe ?",
+          "a": "Le sebene"
+        },
+        {
+          "level": 9,
+          "q": "Quel chanteur dirigeait l'orchestre Afrisa International ?",
+          "a": "Tabu Ley Rochereau"
+        },
+        {
+          "level": 10,
+          "q": "Quelle chanson de Grand Kallé est devenue en 1960 l'hymne des indépendances africaines ?",
+          "a": "« Indépendance Cha Cha »"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en musique sud-africaine ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays vient l'amapiano ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Quel était le surnom de la chanteuse Miriam Makeba ?",
+          "a": "« Mama Africa »"
+        },
+        {
+          "level": 3,
+          "q": "Quel DJ sud-africain a fait danser le monde entier avec « Jerusalema » en 2020 ?",
+          "a": "Master KG"
+        },
+        {
+          "level": 4,
+          "q": "Quel tube de Miriam Makeba porte le nom d'une danse : « Pata Pata », « Macarena » ou « Lambada » ?",
+          "a": "« Pata Pata »"
+        },
+        {
+          "level": 5,
+          "q": "De quel instrument jouait Hugh Masekela : la trompette, le piano ou la batterie ?",
+          "a": "La trompette (et le bugle)"
+        },
+        {
+          "level": 6,
+          "q": "Quel chanteur était surnommé « le Zoulou blanc » ?",
+          "a": "Johnny Clegg"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : le chœur Ladysmith Black Mambazo chante sur l'album « Graceland » de Paul Simon.",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Quel son de percussion grave et profond est la signature de l'amapiano ?",
+          "a": "Le « log drum »"
+        },
+        {
+          "level": 9,
+          "q": "Quel instrumental de Hugh Masekela a été numéro 1 aux États-Unis en 1968 ?",
+          "a": "« Grazing in the Grass »"
+        },
+        {
+          "level": 10,
+          "q": "Avec quelle chanson Tyla a-t-elle remporté en 2024 le premier Grammy de la meilleure performance de musique africaine ?",
+          "a": "« Water »"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en raï et musiques du Maghreb ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays est le chanteur Khaled ?",
+          "a": "L'Algérie"
+        },
+        {
+          "level": 2,
+          "q": "Quel tube de Khaled, sorti en 1996, a été écrit par Jean-Jacques Goldman ?",
+          "a": "« Aïcha »"
+        },
+        {
+          "level": 3,
+          "q": "De quel pays était la diva Oum Kalthoum : l'Égypte, le Maroc ou la Tunisie ?",
+          "a": "L'Égypte"
+        },
+        {
+          "level": 4,
+          "q": "Dans quelle ville algérienne est né le raï : Alger, Oran ou Constantine ?",
+          "a": "Oran"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : « Cheb », dans le nom des chanteurs de raï, signifie « jeune » en arabe.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Dans quelle ville marocaine a lieu le célèbre Festival Gnaoua et musiques du monde ?",
+          "a": "Essaouira"
+        },
+        {
+          "level": 7,
+          "q": "Quel chanteur de raï sentimental a été assassiné à Oran en 1994 ?",
+          "a": "Cheb Hasni"
+        },
+        {
+          "level": 8,
+          "q": "Avec Khaled et Rachid Taha, quel chanteur partageait la scène du concert « 1, 2, 3 Soleils » en 1998 ?",
+          "a": "Faudel"
+        },
+        {
+          "level": 9,
+          "q": "Quelle chanson de Dahmane El Harrachi Rachid Taha a-t-il rendue célèbre dans le monde entier ?",
+          "a": "« Ya Rayah »"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le luth-basse à trois cordes de la musique gnaoua ?",
+          "a": "Le guembri"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en cinéma africain ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays vient l'industrie du cinéma surnommée Nollywood ?",
+          "a": "Le Nigeria"
+        },
+        {
+          "level": 2,
+          "q": "Dans quelle ville se tient le FESPACO, grand festival du cinéma africain ?",
+          "a": "Ouagadougou (Burkina Faso)"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : l'actrice Charlize Theron est née en Afrique du Sud.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le grand prix du FESPACO : l'Étalon de Yennenga, la Palme d'or ou l'Ours d'or ?",
+          "a": "L'Étalon de Yennenga"
+        },
+        {
+          "level": 5,
+          "q": "Quelle actrice kényane a remporté l'Oscar du second rôle pour « 12 Years a Slave » ?",
+          "a": "Lupita Nyong'o"
+        },
+        {
+          "level": 6,
+          "q": "Quel réalisateur sénégalais est surnommé « le père du cinéma africain » ?",
+          "a": "Ousmane Sembène"
+        },
+        {
+          "level": 7,
+          "q": "Quel film sud-africain a remporté l'Oscar du meilleur film étranger en 2006 : « Tsotsi », « District 9 » ou « Sarafina! » ?",
+          "a": "« Tsotsi »"
+        },
+        {
+          "level": 8,
+          "q": "Quel film nigérian de 1992, tourné en vidéo, est considéré comme le premier grand succès de Nollywood ?",
+          "a": "« Living in Bondage »"
+        },
+        {
+          "level": 9,
+          "q": "Quel film de Mati Diop, tourné à Dakar, a reçu le Grand Prix du Festival de Cannes 2019 ?",
+          "a": "« Atlantique »"
+        },
+        {
+          "level": 10,
+          "q": "Quel film du Malien Souleymane Cissé a reçu le Prix du jury à Cannes en 1987 ?",
+          "a": "« Yeelen » (« La Lumière »)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Roi Lion et Black Panther ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Que signifie « Hakuna Matata » dans Le Roi Lion ?",
+          "a": "« Pas de soucis »"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle le pays africain imaginaire de Black Panther ?",
+          "a": "Le Wakanda"
+        },
+        {
+          "level": 3,
+          "q": "Que signifie le prénom « Simba » en swahili ?",
+          "a": "« Lion »"
+        },
+        {
+          "level": 4,
+          "q": "Quel acteur jouait T'Challa dans le premier Black Panther (2018) ?",
+          "a": "Chadwick Boseman"
+        },
+        {
+          "level": 5,
+          "q": "Quel métal imaginaire fait la richesse du Wakanda : l'adamantium, le vibranium ou la kryptonite ?",
+          "a": "Le vibranium"
+        },
+        {
+          "level": 6,
+          "q": "Que signifie « Rafiki », le nom du mandrill, en swahili ?",
+          "a": "« Ami »"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : la langue parlée au Wakanda dans Black Panther est le xhosa, une langue d'Afrique du Sud.",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Dans quelle langue est chantée l'introduction de « L'Histoire de la vie » (« Nants ingonyama… ») ?",
+          "a": "Le zoulou"
+        },
+        {
+          "level": 9,
+          "q": "Quel personnage joue Lupita Nyong'o dans Black Panther ?",
+          "a": "Nakia"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle la mère de Simba dans Le Roi Lion ?",
+          "a": "Sarabi"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en awalé et jeux africains ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Avec quoi joue-t-on à l'awalé : des graines, des cartes ou des dés ?",
+          "a": "Des graines"
+        },
+        {
+          "level": 2,
+          "q": "Combien de rangées de trous compte un plateau d'awalé classique : 2, 3 ou 4 ?",
+          "a": "2"
+        },
+        {
+          "level": 3,
+          "q": "À quelle grande famille de jeux de « semailles » appartient l'awalé ?",
+          "a": "Le mancala"
+        },
+        {
+          "level": 4,
+          "q": "Combien de graines y a-t-il dans chaque trou au début d'une partie d'awalé : 2, 4 ou 6 ?",
+          "a": "4 (48 graines en tout)"
+        },
+        {
+          "level": 5,
+          "q": "Combien de trous compte chaque rangée d'un plateau d'awalé : 4, 6 ou 8 ?",
+          "a": "6 (12 trous en tout)"
+        },
+        {
+          "level": 6,
+          "q": "Quel jeu de plateau de l'Égypte ancienne a été retrouvé dans la tombe de Toutânkhamon ?",
+          "a": "Le senet"
+        },
+        {
+          "level": 7,
+          "q": "Combien de graines faut-il capturer pour être sûr de gagner une partie d'awalé : 20, 25 ou 30 ?",
+          "a": "25 (plus de la moitié des 48)"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : à l'awalé, on sème les graines dans le sens inverse des aiguilles d'une montre.",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "À l'awalé, on capture un trou adverse si, après sa semaille, il contient : 1 ou 2, 2 ou 3, ou 4 ou 5 graines ?",
+          "a": "2 ou 3 graines"
+        },
+        {
+          "level": 10,
+          "q": "Combien de rangées compte le plateau du bao, le mancala d'Afrique de l'Est : 2, 4 ou 6 ?",
+          "a": "4"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en cuisines africaines ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le jollof est-il un plat à base de riz, de manioc ou de mil ?",
+          "a": "De riz"
+        },
+        {
+          "level": 2,
+          "q": "De quelle région d'Afrique le couscous est-il originaire ?",
+          "a": "Le Maghreb (Afrique du Nord)"
+        },
+        {
+          "level": 3,
+          "q": "Le mafé est un ragoût à la sauce de quel ingrédient : arachide, coco ou tomate ?",
+          "a": "L'arachide (cacahuète)"
+        },
+        {
+          "level": 4,
+          "q": "De quel pays le thiéboudienne (riz au poisson) est-il le plat national ?",
+          "a": "Le Sénégal"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel pays mange-t-on l'injera, grande galette spongieuse : l'Éthiopie, le Maroc ou l'Angola ?",
+          "a": "L'Éthiopie (et l'Érythrée)"
+        },
+        {
+          "level": 6,
+          "q": "Avec quel tubercule prépare-t-on l'attiéké ivoirien ?",
+          "a": "Le manioc"
+        },
+        {
+          "level": 7,
+          "q": "Que sont les allocos vendus dans les rues d'Abidjan ?",
+          "a": "De la banane plantain frite"
+        },
+        {
+          "level": 8,
+          "q": "Avec quelle céréale minuscule fait-on la pâte de l'injera ?",
+          "a": "Le teff"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle ville sud-africaine est né le bunny chow, un pain évidé rempli de curry ?",
+          "a": "Durban"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le mélange d'épices pimenté emblématique de la cuisine éthiopienne ?",
+          "a": "Le berbéré"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en safaris et animaux d'Afrique ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus grand animal terrestre d'Afrique ?",
+          "a": "L'éléphant (d'Afrique)"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux : la girafe fait partie des « Big Five » des safaris.",
+          "a": "Faux (lion, léopard, éléphant, rhinocéros, buffle)"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel pays se trouve le parc du Serengeti : la Tanzanie, le Maroc ou le Ghana ?",
+          "a": "La Tanzanie"
+        },
+        {
+          "level": 4,
+          "q": "Quel animal est la grande star de la « Grande Migration » entre Serengeti et Masai Mara ?",
+          "a": "Le gnou"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel pays se trouve le parc national Kruger ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 6,
+          "q": "Sur quelle île vivent les lémuriens à l'état sauvage ?",
+          "a": "Madagascar"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays, surnommé « le pays des mille collines », est célèbre pour ses gorilles des montagnes ?",
+          "a": "Le Rwanda"
+        },
+        {
+          "level": 8,
+          "q": "L'okapi, qui vit en RDC, est-il un proche parent du zèbre, de la girafe ou de l'antilope ?",
+          "a": "De la girafe"
+        },
+        {
+          "level": 9,
+          "q": "Dans quel pays se trouve le delta de l'Okavango : le Botswana, le Mali ou l'Égypte ?",
+          "a": "Le Botswana"
+        },
+        {
+          "level": 10,
+          "q": "Dans quel pays se trouve le parc d'Etosha, célèbre pour son immense désert de sel ?",
+          "a": "La Namibie"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en mode et tissus africains ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays vient le kente, tissu tissé aux couleurs vives ?",
+          "a": "Le Ghana"
+        },
+        {
+          "level": 2,
+          "q": "Le boubou est-il un chapeau, un vêtement long et ample ou une chaussure ?",
+          "a": "Un vêtement long et ample"
+        },
+        {
+          "level": 3,
+          "q": "Quel peuple d'Afrique de l'Est est connu pour ses tenues rouges et ses parures de perles ?",
+          "a": "Les Maasaï"
+        },
+        {
+          "level": 4,
+          "q": "Le wax est-il un tissu, une danse ou un plat ?",
+          "a": "Un tissu (imprimé coloré)"
+        },
+        {
+          "level": 5,
+          "q": "De quel pays vient le bogolan, tissu teint à la boue ?",
+          "a": "Le Mali"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : Vlisco, le plus célèbre fabricant de wax, est une entreprise néerlandaise.",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Que signifie « SAPE », le mouvement des élégants congolais ?",
+          "a": "Société des ambianceurs et des personnes élégantes"
+        },
+        {
+          "level": 8,
+          "q": "De quel pays venait Zozibini Tunzi, élue Miss Univers 2019 ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 9,
+          "q": "Quel peuple ghanéen est historiquement associé au tissage du kente : les Ashantis, les Zoulous ou les Touaregs ?",
+          "a": "Les Ashantis (et les Ewe)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le foulard de tête noué en volume porté par les femmes yorubas du Nigeria ?",
+          "a": "Le gele"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Marrakech",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Marrakech est une ville de quel pays ?",
+          "a": "Le Maroc"
+        },
+        {
+          "level": 2,
+          "q": "Quel plat mijoté porte le nom du récipient en terre conique dans lequel il cuit ?",
+          "a": "Le tajine"
+        },
+        {
+          "level": 3,
+          "q": "Quel surnom donne-t-on à Marrakech : la ville rouge, la ville bleue ou la ville blanche ?",
+          "a": "La ville rouge"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle la grande place animée de Marrakech, célèbre pour ses charmeurs de serpents ?",
+          "a": "Jemaa el-Fna"
+        },
+        {
+          "level": 5,
+          "q": "Quel grand couturier français a sauvé le jardin Majorelle avec Pierre Bergé ?",
+          "a": "Yves Saint Laurent"
+        },
+        {
+          "level": 6,
+          "q": "Quelle chaîne de montagnes souvent enneigée aperçoit-on depuis Marrakech ?",
+          "a": "L'Atlas (le Haut Atlas)"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle la grande mosquée dont le minaret est l'emblème de Marrakech ?",
+          "a": "La Koutoubia"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : le jardin Majorelle a donné son nom à une couleur, le « bleu Majorelle » ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quelle conférence de l'ONU sur le climat Marrakech a-t-elle accueillie en 2016 : la COP21, la COP22 ou la COP24 ?",
+          "a": "La COP22"
+        },
+        {
+          "level": 10,
+          "q": "Quelle dynastie a fondé Marrakech vers 1070 : les Almoravides, les Almohades ou les Mérinides ?",
+          "a": "Les Almoravides"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville du Caire",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le Caire est la capitale de quel pays ?",
+          "a": "L'Égypte"
+        },
+        {
+          "level": 2,
+          "q": "Quel grand fleuve traverse Le Caire ?",
+          "a": "Le Nil"
+        },
+        {
+          "level": 3,
+          "q": "Sur quel plateau, aux portes du Caire, se dressent les trois grandes pyramides ?",
+          "a": "Gizeh"
+        },
+        {
+          "level": 4,
+          "q": "Quelle créature au corps de lion et à tête humaine garde les pyramides ?",
+          "a": "Le Sphinx"
+        },
+        {
+          "level": 5,
+          "q": "Le masque funéraire en or de quel jeune pharaon est la star des musées du Caire ?",
+          "a": "Toutânkhamon"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le grand souk historique du Caire ?",
+          "a": "Khan el-Khalili"
+        },
+        {
+          "level": 7,
+          "q": "Quel plat populaire égyptien mélange riz, lentilles, pâtes et sauce tomate ?",
+          "a": "Le koshari"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : l'université Al-Azhar du Caire, fondée au Xe siècle, est l'une des plus anciennes universités encore en activité ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel club cairote est le plus titré de l'histoire de la Ligue des champions de la CAF : Al Ahly, Zamalek ou Ismaily ?",
+          "a": "Al Ahly"
+        },
+        {
+          "level": 10,
+          "q": "Que signifie le nom arabe du Caire, « Al-Qahira » : la Victorieuse, la Lumineuse ou la Sainte ?",
+          "a": "La Victorieuse"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Lagos",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Lagos est la plus grande ville de quel pays ?",
+          "a": "Le Nigeria"
+        },
+        {
+          "level": 2,
+          "q": "Comment surnomme-t-on l'industrie du cinéma nigérian ?",
+          "a": "Nollywood"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : Lagos est la capitale actuelle du Nigeria ?",
+          "a": "Faux (c'est Abuja depuis 1991)"
+        },
+        {
+          "level": 4,
+          "q": "Quel genre musical, porté par Burna Boy et Wizkid, a explosé depuis Lagos ?",
+          "a": "L'afrobeats"
+        },
+        {
+          "level": 5,
+          "q": "Quel musicien légendaire, inventeur de l'afrobeat, jouait dans son club du Shrine à Lagos ?",
+          "a": "Fela Kuti"
+        },
+        {
+          "level": 6,
+          "q": "Quel plat de riz épicé à la tomate provoque une « guerre » amicale entre le Nigeria et le Ghana ?",
+          "a": "Le riz jollof"
+        },
+        {
+          "level": 7,
+          "q": "Comment appelle-t-on les minibus jaunes de Lagos : danfo, matatu ou tro-tro ?",
+          "a": "Danfo"
+        },
+        {
+          "level": 8,
+          "q": "Quelle ethnie est majoritaire à Lagos : les Yoruba, les Igbo ou les Haoussa ?",
+          "a": "Les Yoruba"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle l'immense quartier sur pilotis de Lagos, surnommé la « Venise de l'Afrique » ?",
+          "a": "Makoko"
+        },
+        {
+          "level": 10,
+          "q": "De quelle langue vient le nom « Lagos », qui signifie « lacs » : le portugais, l'espagnol ou l'italien ?",
+          "a": "Le portugais"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Dakar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dakar est la capitale de quel pays ?",
+          "a": "Le Sénégal"
+        },
+        {
+          "level": 2,
+          "q": "Quel célèbre rallye-raid a longtemps eu Dakar comme ville d'arrivée ?",
+          "a": "Le Paris-Dakar"
+        },
+        {
+          "level": 3,
+          "q": "Quel lac proche de Dakar est célèbre pour son eau de couleur rose ?",
+          "a": "Le lac Retba (lac Rose)"
+        },
+        {
+          "level": 4,
+          "q": "Quelle petite île face à Dakar est un lieu de mémoire de la traite négrière ?",
+          "a": "L'île de Gorée"
+        },
+        {
+          "level": 5,
+          "q": "Quel plat national sénégalais associe riz, poisson et légumes ?",
+          "a": "Le thiéboudienne"
+        },
+        {
+          "level": 6,
+          "q": "Quel énorme monument en bronze, plus haut que la statue de la Liberté, domine Dakar ?",
+          "a": "Le monument de la Renaissance africaine"
+        },
+        {
+          "level": 7,
+          "q": "Quelle langue nationale est la plus parlée à Dakar : le wolof, le peul ou le sérère ?",
+          "a": "Le wolof"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : la pointe des Almadies, à Dakar, est le point le plus à l'ouest de l'Afrique continentale ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel premier président du Sénégal était aussi un grand poète, élu à l'Académie française ?",
+          "a": "Léopold Sédar Senghor"
+        },
+        {
+          "level": 10,
+          "q": "En quelle année le rallye Dakar a-t-il quitté l'Afrique pour l'Amérique du Sud : 2005, 2009 ou 2013 ?",
+          "a": "2009"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Nairobi",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Nairobi est la capitale de quel pays ?",
+          "a": "Le Kenya"
+        },
+        {
+          "level": 2,
+          "q": "Quel mot swahili signifiant « voyage » désigne les expéditions pour observer les animaux ?",
+          "a": "Safari"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : Nairobi possède un parc national avec des lions et des girafes à l'intérieur même de la ville ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel service kényan de paiement par téléphone mobile, lancé en 2007, est devenu un modèle mondial ?",
+          "a": "M-Pesa"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on les minibus bariolés de Nairobi : matatu, danfo ou tuk-tuk ?",
+          "a": "Matatu"
+        },
+        {
+          "level": 6,
+          "q": "Quel coureur kényan a été le premier à courir un marathon en moins de 2 heures, lors d'un défi non homologué en 2019 ?",
+          "a": "Eliud Kipchoge"
+        },
+        {
+          "level": 7,
+          "q": "Quelle écrivaine danoise, autrice de « La Ferme africaine » (Out of Africa), a vécu près de Nairobi ?",
+          "a": "Karen Blixen"
+        },
+        {
+          "level": 8,
+          "q": "Quels orphelins sont recueillis par le célèbre orphelinat Sheldrick de Nairobi : des éléphanteaux, des bébés gorilles ou des lionceaux ?",
+          "a": "Des éléphanteaux"
+        },
+        {
+          "level": 9,
+          "q": "Le nom « Nairobi » vient d'une expression massaï qui signifie : « eau fraîche », « terre rouge » ou « grand arbre » ?",
+          "a": "Eau fraîche"
+        },
+        {
+          "level": 10,
+          "q": "Quelle espèce de girafe peut-on nourrir à la main au Giraffe Centre de Nairobi : Rothschild, réticulée ou masaï ?",
+          "a": "La girafe de Rothschild"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville du Cap",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le Cap se trouve dans quel pays ?",
+          "a": "L'Afrique du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Quelle montagne au sommet tout plat domine Le Cap ?",
+          "a": "La montagne de la Table"
+        },
+        {
+          "level": 3,
+          "q": "Quels oiseaux marins, qu'on n'imagine pas en Afrique, vivent sur la plage de Boulders près du Cap ?",
+          "a": "Des manchots (du Cap)"
+        },
+        {
+          "level": 4,
+          "q": "Sur quelle île au large du Cap Nelson Mandela a-t-il été emprisonné ?",
+          "a": "Robben Island"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : le cap de Bonne-Espérance est le point le plus au sud de l'Afrique ?",
+          "a": "Faux (c'est le cap des Aiguilles)"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le quartier du Cap aux maisons peintes de couleurs vives ?",
+          "a": "Bo-Kaap"
+        },
+        {
+          "level": 7,
+          "q": "Comment appelle-t-on le nuage qui recouvre souvent le sommet de la montagne de la Table : la nappe, le chapeau ou le voile ?",
+          "a": "La nappe"
+        },
+        {
+          "level": 8,
+          "q": "Quel navigateur portugais a franchi le cap de Bonne-Espérance en 1488 ?",
+          "a": "Bartolomeu Dias"
+        },
+        {
+          "level": 9,
+          "q": "Quelle première médicale mondiale a été réalisée au Cap en 1967 ?",
+          "a": "La première greffe de cœur humain (par Christiaan Barnard)"
+        },
+        {
+          "level": 10,
+          "q": "Le Cap est l'une des trois capitales de l'Afrique du Sud : quel pouvoir y siège, le législatif, l'exécutif ou le judiciaire ?",
+          "a": "Le législatif (le Parlement)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville d'Addis-Abeba",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Addis-Abeba est la capitale de quel pays ?",
+          "a": "L'Éthiopie"
+        },
+        {
+          "level": 2,
+          "q": "Quelle boisson aurait été découverte en Éthiopie, selon la légende, grâce à des chèvres surexcitées ?",
+          "a": "Le café"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : le calendrier éthiopien compte 13 mois ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Que signifie « Addis-Abeba » en amharique : nouvelle fleur, ville blanche ou haute montagne ?",
+          "a": "Nouvelle fleur"
+        },
+        {
+          "level": 5,
+          "q": "Quelle grande galette aigre et spongieuse, faite de teff, accompagne presque tous les plats éthiopiens ?",
+          "a": "L'injera"
+        },
+        {
+          "level": 6,
+          "q": "Quel célèbre squelette fossile, vieux d'environ 3,2 millions d'années, est conservé au Musée national d'Addis-Abeba ?",
+          "a": "Lucy"
+        },
+        {
+          "level": 7,
+          "q": "Quelle organisation continentale a son siège à Addis-Abeba ?",
+          "a": "L'Union africaine"
+        },
+        {
+          "level": 8,
+          "q": "Quel athlète éthiopien a gagné le marathon olympique de Rome en 1960… pieds nus ?",
+          "a": "Abebe Bikila"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : le Nouvel An éthiopien (Enkutatash) se fête en septembre ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "De combien d'années environ le calendrier éthiopien est-il « en retard » sur le calendrier grégorien : 3, 7 ou 15 ans ?",
+          "a": "Environ 7 ans (7 à 8 selon la période de l'année)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Kinshasa",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Kinshasa est la capitale de quel pays ?",
+          "a": "La République démocratique du Congo"
+        },
+        {
+          "level": 2,
+          "q": "Quel fleuve sépare Kinshasa de Brazzaville ?",
+          "a": "Le fleuve Congo"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : Kinshasa et Brazzaville sont les deux capitales les plus proches du monde, si l'on excepte Rome et le Vatican ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Comment a-t-on surnommé le combat de boxe Mohamed Ali contre George Foreman, à Kinshasa en 1974 ?",
+          "a": "« Rumble in the Jungle » (la bagarre dans la jungle)"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on les dandys congolais célèbres pour leurs tenues de luxe extravagantes ?",
+          "a": "Les sapeurs (la Sape)"
+        },
+        {
+          "level": 6,
+          "q": "Sous quel nom la RDC était-elle connue de 1971 à 1997 ?",
+          "a": "Le Zaïre"
+        },
+        {
+          "level": 7,
+          "q": "Quelle langue est la plus parlée dans les rues de Kinshasa : le lingala, le swahili ou le kikongo ?",
+          "a": "Le lingala"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : Kinshasa est souvent citée comme la plus grande ville francophone du monde, devant Paris ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quelle musique de Kinshasa et Brazzaville a été inscrite au patrimoine immatériel de l'UNESCO en 2021 ?",
+          "a": "La rumba congolaise"
+        },
+        {
+          "level": 10,
+          "q": "Quel nom portait Kinshasa à l'époque coloniale belge ?",
+          "a": "Léopoldville"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de l'île de Zanzibar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Zanzibar fait partie de quel pays ?",
+          "a": "La Tanzanie"
+        },
+        {
+          "level": 2,
+          "q": "Dans quel océan se trouve Zanzibar ?",
+          "a": "L'océan Indien"
+        },
+        {
+          "level": 3,
+          "q": "Quel chanteur légendaire du groupe Queen est né à Zanzibar ?",
+          "a": "Freddie Mercury"
+        },
+        {
+          "level": 4,
+          "q": "Zanzibar est surnommée « l'île aux… » quoi : épices, perles ou tortues ?",
+          "a": "Aux épices"
+        },
+        {
+          "level": 5,
+          "q": "Quelle épice en forme de petit clou a fait la fortune de Zanzibar ?",
+          "a": "Le clou de girofle"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle la vieille ville historique de Zanzibar, classée à l'UNESCO ?",
+          "a": "Stone Town"
+        },
+        {
+          "level": 7,
+          "q": "Quelle langue, aujourd'hui parlée par des dizaines de millions d'Africains de l'Est, est née sur la côte dont fait partie Zanzibar ?",
+          "a": "Le swahili"
+        },
+        {
+          "level": 8,
+          "q": "Quel singe rare ne vit qu'à Zanzibar : le colobe roux, le gorille ou le babouin ?",
+          "a": "Le colobe roux (de Zanzibar)"
+        },
+        {
+          "level": 9,
+          "q": "Avec quel territoire du continent Zanzibar s'est-il uni en 1964 pour former la Tanzanie ?",
+          "a": "Le Tanganyika"
+        },
+        {
+          "level": 10,
+          "q": "Combien de temps a duré la guerre anglo-zanzibarite de 1896, considérée comme la plus courte de l'histoire : moins d'une heure, un jour ou une semaine ?",
+          "a": "Moins d'une heure (environ 40 minutes)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Tunis",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Tunis est la capitale de quel pays ?",
+          "a": "La Tunisie"
+        },
+        {
+          "level": 2,
+          "q": "Quelle cité antique, grande rivale de Rome, se trouve dans la banlieue de Tunis ?",
+          "a": "Carthage"
+        },
+        {
+          "level": 3,
+          "q": "Quelle pâte de piment rouge est la star de la cuisine tunisienne ?",
+          "a": "L'harissa"
+        },
+        {
+          "level": 4,
+          "q": "Quel général carthaginois a traversé les Alpes avec des éléphants ?",
+          "a": "Hannibal"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on la vieille ville arabe de Tunis, classée à l'UNESCO ?",
+          "a": "La médina"
+        },
+        {
+          "level": 6,
+          "q": "Quel village blanc et bleu près de Tunis est célèbre pour ses portes bleues ?",
+          "a": "Sidi Bou Saïd"
+        },
+        {
+          "level": 7,
+          "q": "Quelle ville du sud tunisien a donné son nom à la planète Tatooine de Star Wars ?",
+          "a": "Tataouine"
+        },
+        {
+          "level": 8,
+          "q": "Quel musée de Tunis abrite l'une des plus grandes collections de mosaïques romaines au monde ?",
+          "a": "Le musée du Bardo"
+        },
+        {
+          "level": 9,
+          "q": "Quel prix le Quartet du dialogue national tunisien a-t-il reçu en 2015 ?",
+          "a": "Le prix Nobel de la paix"
+        },
+        {
+          "level": 10,
+          "q": "Quelle grande mosquée se trouve au cœur de la médina de Tunis : la Zitouna, la Koutoubia ou Al-Azhar ?",
+          "a": "La Zitouna"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable du Sahara",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux : le Sahara est le plus grand désert chaud du monde ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quel animal à une bosse est surnommé le « vaisseau du désert » ?",
+          "a": "Le dromadaire"
+        },
+        {
+          "level": 3,
+          "q": "Quel petit renard du Sahara est reconnaissable à ses oreilles immenses ?",
+          "a": "Le fennec"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on un point d'eau entouré de verdure au milieu du désert ?",
+          "a": "Une oasis"
+        },
+        {
+          "level": 5,
+          "q": "Quel peuple nomade du Sahara est surnommé les « hommes bleus » ?",
+          "a": "Les Touaregs"
+        },
+        {
+          "level": 6,
+          "q": "Comment appelle-t-on les grandes mers de dunes du Sahara : les ergs, les regs ou les oueds ?",
+          "a": "Les ergs"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : il a déjà neigé dans le Sahara ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : il y a quelques milliers d'années, le Sahara était vert, avec des lacs et des hippopotames ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel vent sec et poussiéreux souffle du Sahara vers l'Afrique de l'Ouest en saison sèche : l'harmattan, le mistral ou le foehn ?",
+          "a": "L'harmattan"
+        },
+        {
+          "level": 10,
+          "q": "Quelle grande forêt d'un autre continent est fertilisée par la poussière du Sahara portée par le vent ?",
+          "a": "L'Amazonie"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable du Nil",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quelle mer se jette le Nil ?",
+          "a": "La Méditerranée"
+        },
+        {
+          "level": 2,
+          "q": "Quel grand reptile du Nil était vénéré par les anciens Égyptiens ?",
+          "a": "Le crocodile"
+        },
+        {
+          "level": 3,
+          "q": "Quelle plante des bords du Nil servait aux Égyptiens à fabriquer leur « papier » ?",
+          "a": "Le papyrus"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : le Nil coule du sud vers le nord ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on le bateau à voile traditionnel du Nil : la felouque, la jonque ou la pirogue ?",
+          "a": "La felouque"
+        },
+        {
+          "level": 6,
+          "q": "Quel immense lac est la principale source du Nil Blanc ?",
+          "a": "Le lac Victoria"
+        },
+        {
+          "level": 7,
+          "q": "Dans quelle capitale le Nil Blanc et le Nil Bleu se rejoignent-ils ?",
+          "a": "Khartoum"
+        },
+        {
+          "level": 8,
+          "q": "Quel grand barrage égyptien, achevé en 1970, a créé le lac Nasser ?",
+          "a": "Le haut barrage d'Assouan"
+        },
+        {
+          "level": 9,
+          "q": "Quels temples de Ramsès II ont été découpés en blocs et déplacés dans les années 1960 pour échapper à la montée du lac Nasser ?",
+          "a": "Les temples d'Abou Simbel"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle l'immense barrage construit par l'Éthiopie sur le Nil Bleu ?",
+          "a": "Le Grand barrage de la Renaissance éthiopienne (GERD)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de Madagascar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans le film d'animation « Madagascar », quel animal est Alex ?",
+          "a": "Un lion"
+        },
+        {
+          "level": 2,
+          "q": "Quels primates, comme le roi Julian, ne vivent à l'état sauvage qu'à Madagascar ?",
+          "a": "Les lémuriens"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel océan se trouve Madagascar ?",
+          "a": "L'océan Indien"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Madagascar est la plus grande île d'Afrique ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel arbre géant au tronc énorme forme une célèbre « allée » à Madagascar ?",
+          "a": "Le baobab"
+        },
+        {
+          "level": 6,
+          "q": "Quelle épice parfumée des desserts Madagascar produit-elle en majorité pour le monde entier ?",
+          "a": "La vanille"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est la capitale de Madagascar ?",
+          "a": "Antananarivo"
+        },
+        {
+          "level": 8,
+          "q": "Quel lémurien nocturne aux longs doigts fins est considéré comme un porte-malheur par certains Malgaches ?",
+          "a": "L'aye-aye"
+        },
+        {
+          "level": 9,
+          "q": "Quel prédateur ressemblant à un petit puma est le plus grand carnivore de Madagascar ?",
+          "a": "Le fossa"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la monnaie de Madagascar : l'ariary, le shilling ou le kwacha ?",
+          "a": "L'ariary"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des animaux d'Afrique",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal africain est le plus grand (en hauteur) du monde ?",
+          "a": "La girafe"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus grand oiseau du monde, incapable de voler ?",
+          "a": "L'autruche"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : les rayures de chaque zèbre sont uniques, comme une empreinte digitale ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel animal de la forêt congolaise, cousin de la girafe, a des pattes rayées comme un zèbre ?",
+          "a": "L'okapi"
+        },
+        {
+          "level": 5,
+          "q": "Quel mammifère couvert d'écailles est considéré comme le plus braconné au monde ?",
+          "a": "Le pangolin"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : l'hippopotame sécrète un liquide rougeâtre qui lui sert de crème solaire ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Quel mangeur de termites a un nom anglais (aardvark) qui signifie « cochon de terre » en afrikaans ?",
+          "a": "L'oryctérope"
+        },
+        {
+          "level": 8,
+          "q": "Quel rongeur africain presque sans poils vit en colonies avec une reine, comme les fourmis ?",
+          "a": "Le rat-taupe nu"
+        },
+        {
+          "level": 9,
+          "q": "Quel grand oiseau gris des marais d'Afrique de l'Est, au bec énorme et au regard figé, chasse les poissons-poumons ?",
+          "a": "Le bec-en-sabot"
+        },
+        {
+          "level": 10,
+          "q": "Combien de temps dure environ la gestation d'une éléphante d'Afrique : 9 mois, 15 mois ou 22 mois ?",
+          "a": "22 mois"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de l'Égypte ancienne",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelait-on les rois de l'Égypte antique ?",
+          "a": "Les pharaons"
+        },
+        {
+          "level": 2,
+          "q": "Quel animal domestique était sacré et associé à la déesse Bastet ?",
+          "a": "Le chat"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on les corps embaumés et enveloppés de bandelettes ?",
+          "a": "Les momies"
+        },
+        {
+          "level": 4,
+          "q": "Quel pharaon a fait construire la plus grande pyramide de Gizeh ?",
+          "a": "Khéops"
+        },
+        {
+          "level": 5,
+          "q": "Quelle pierre gravée, découverte en 1799, a permis de déchiffrer les hiéroglyphes ?",
+          "a": "La pierre de Rosette"
+        },
+        {
+          "level": 6,
+          "q": "Quel Français a déchiffré les hiéroglyphes en 1822 ?",
+          "a": "Jean-François Champollion"
+        },
+        {
+          "level": 7,
+          "q": "Quel archéologue britannique a découvert la tombe de Toutânkhamon en 1922 ?",
+          "a": "Howard Carter"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : on a retrouvé en Égypte des cimetières contenant des milliers de chats momifiés ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : Cléopâtre a vécu plus près de notre époque que de la construction de la grande pyramide ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "Quelle reine a régné comme pharaon en se faisant représenter avec une fausse barbe : Hatchepsout, Néfertiti ou Cléopâtre ?",
+          "a": "Hatchepsout"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la géographie africaine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus haut sommet d'Afrique ?",
+          "a": "Le Kilimandjaro"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus grand lac d'Afrique ?",
+          "a": "Le lac Victoria"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le pays le plus peuplé d'Afrique ?",
+          "a": "Le Nigeria"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le plus grand pays d'Afrique par sa superficie ?",
+          "a": "L'Algérie"
+        },
+        {
+          "level": 5,
+          "q": "Combien de pays membres de l'ONU compte l'Afrique : 34, 54 ou 74 ?",
+          "a": "54"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : le Lesotho est un pays entièrement entouré par un seul autre pays, l'Afrique du Sud ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le plus petit pays d'Afrique continentale : la Gambie, le Rwanda ou le Lesotho ?",
+          "a": "La Gambie"
+        },
+        {
+          "level": 8,
+          "q": "Quel archipel est le plus petit pays d'Afrique en superficie ?",
+          "a": "Les Seychelles"
+        },
+        {
+          "level": 9,
+          "q": "Quel lac africain est le deuxième plus profond du monde, après le lac Baïkal ?",
+          "a": "Le lac Tanganyika"
+        },
+        {
+          "level": 10,
+          "q": "Quelle dépression d'Éthiopie, aux sources acides jaunes et vertes, compte parmi les lieux habités les plus chauds de la planète ?",
+          "a": "La dépression du Danakil"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des drapeaux et hymnes africains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelles sont les trois couleurs panafricaines présentes sur de nombreux drapeaux : vert, jaune, rouge ou bleu, blanc, rouge ?",
+          "a": "Vert, jaune et rouge"
+        },
+        {
+          "level": 2,
+          "q": "Quel pays a un drapeau rouge avec une étoile verte à cinq branches au centre ?",
+          "a": "Le Maroc"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays a sur son drapeau un bouclier massaï et deux lances ?",
+          "a": "Le Kenya"
+        },
+        {
+          "level": 4,
+          "q": "Quelle arme figure sur le drapeau du Mozambique : une kalachnikov, un arc ou un sabre ?",
+          "a": "Une kalachnikov (AK-47)"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : de 1977 à 2011, le drapeau de la Libye était entièrement vert, sans aucun motif ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays a un drapeau avec une étoile noire au centre, symbole de la liberté africaine ?",
+          "a": "Le Ghana"
+        },
+        {
+          "level": 7,
+          "q": "Quel oiseau figure sur le drapeau de l'Ouganda ?",
+          "a": "La grue royale (grue couronnée)"
+        },
+        {
+          "level": 8,
+          "q": "L'hymne national sud-africain mélange combien de langues : 2, 5 ou 11 ?",
+          "a": "5"
+        },
+        {
+          "level": 9,
+          "q": "Le drapeau de quel pays reprend les couleurs de celui de l'Irlande, mais dans l'ordre inverse : la Côte d'Ivoire, le Niger ou le Mali ?",
+          "a": "La Côte d'Ivoire"
+        },
+        {
+          "level": 10,
+          "q": "Quel pays a sur son drapeau une demi-roue dentée et une machette : l'Angola, la Zambie ou le Mozambique ?",
+          "a": "L'Angola"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la culture africaine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel tube de Shakira était l'hymne de la Coupe du monde 2010 en Afrique du Sud ?",
+          "a": "Waka Waka"
+        },
+        {
+          "level": 2,
+          "q": "Quelle longue trompette en plastique a fait bourdonner les stades de cette Coupe du monde 2010 ?",
+          "a": "La vuvuzela"
+        },
+        {
+          "level": 3,
+          "q": "Dans « Black Panther », comment s'appelle le pays africain imaginaire ?",
+          "a": "Le Wakanda"
+        },
+        {
+          "level": 4,
+          "q": "Que signifie l'expression swahilie « Hakuna matata », popularisée par Le Roi lion ?",
+          "a": "Pas de soucis (il n'y a pas de problème)"
+        },
+        {
+          "level": 5,
+          "q": "Dans quelle ville d'Afrique du Sud est né Elon Musk ?",
+          "a": "Pretoria"
+        },
+        {
+          "level": 6,
+          "q": "Quelle infusion rouge et sans théine vient d'Afrique du Sud ?",
+          "a": "Le rooibos"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : certaines langues d'Afrique australe, comme le xhosa, utilisent des « clics » de la langue comme consonnes ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays est devenu en 2022 le premier pays africain demi-finaliste d'une Coupe du monde de football ?",
+          "a": "Le Maroc"
+        },
+        {
+          "level": 9,
+          "q": "Quelle chanteuse sud-africaine surnommée « Mama Africa » a chanté le tube « Pata Pata » ?",
+          "a": "Miriam Makeba"
+        },
+        {
+          "level": 10,
+          "q": "Quel écrivain nigérian est devenu en 1986 le premier Africain prix Nobel de littérature ?",
+          "a": "Wole Soyinka"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des safaris et de la savane",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel animal est surnommé le « roi des animaux » ?",
+          "a": "Le lion"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus gros animal terrestre du monde ?",
+          "a": "L'éléphant d'Afrique"
+        },
+        {
+          "level": 3,
+          "q": "Quel est l'animal terrestre le plus rapide du monde ?",
+          "a": "Le guépard"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel célèbre parc de Tanzanie a lieu la grande migration des gnous ?",
+          "a": "Le Serengeti"
+        },
+        {
+          "level": 5,
+          "q": "Quels sont les cinq animaux du « Big Five » ?",
+          "a": "Lion, léopard, éléphant, rhinocéros et buffle"
+        },
+        {
+          "level": 6,
+          "q": "Quelle réserve du Kenya, voisine du Serengeti, accueille aussi la grande migration ?",
+          "a": "Le Masai Mara"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : l'expression « Big Five » vient des chasseurs, qui les jugeaient les plus dangereux à chasser à pied ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Combien de gnous participent environ à la grande migration : 15 000, 150 000 ou 1,5 million ?",
+          "a": "Environ 1,5 million"
+        },
+        {
+          "level": 9,
+          "q": "Quel delta du Botswana a la particularité de ne jamais atteindre la mer, se perdant dans le Kalahari ?",
+          "a": "Le delta de l'Okavango"
+        },
+        {
+          "level": 10,
+          "q": "Quel grand parc sud-africain porte le nom d'un ancien président boer ?",
+          "a": "Le parc national Kruger (Paul Kruger)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de l'histoire africaine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel premier président noir d'Afrique du Sud avait passé 27 ans en prison ?",
+          "a": "Nelson Mandela"
+        },
+        {
+          "level": 2,
+          "q": "Quelle ville du Mali, ancien grand centre du savoir, est devenue synonyme de « bout du monde » ?",
+          "a": "Tombouctou"
+        },
+        {
+          "level": 3,
+          "q": "Quel empereur du Mali du XIVe siècle est souvent présenté comme l'homme le plus riche de l'histoire ?",
+          "a": "Mansa Moussa"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : lors de son pèlerinage à La Mecque en 1324, Mansa Moussa distribua tant d'or au Caire qu'il en fit chuter la valeur ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quelle grande mosquée du Mali est le plus grand édifice en terre crue du monde ?",
+          "a": "La grande mosquée de Djenné"
+        },
+        {
+          "level": 6,
+          "q": "Quelle reine légendaire, revendiquée par l'Éthiopie, aurait rendu visite au roi Salomon ?",
+          "a": "La reine de Saba"
+        },
+        {
+          "level": 7,
+          "q": "Quelles ruines de pierre médiévales ont donné leur nom à un pays d'Afrique australe ?",
+          "a": "Le Grand Zimbabwe (le Zimbabwe)"
+        },
+        {
+          "level": 8,
+          "q": "Quel pays africain a été fondé au XIXe siècle par d'anciens esclaves affranchis venus des États-Unis ?",
+          "a": "Le Liberia"
+        },
+        {
+          "level": 9,
+          "q": "Quelle bataille de 1896 a vu l'Éthiopie de Ménélik II battre l'armée italienne ?",
+          "a": "La bataille d'Adoua"
+        },
+        {
+          "level": 10,
+          "q": "Quelle reine du Ndongo (dans l'Angola actuel) a résisté aux Portugais au XVIIe siècle ?",
+          "a": "La reine Nzinga"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Capitale importance",
+      "questions": [
+        {
+          "level": null,
+          "q": "Donne la capitale des pays suivants.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Nigeria\nB. Maroc\nC. Cameroun\nD. Éthiopie\nE. Côte d'Ivoire\nF. Burkina Faso\nG. Tanzanie\nH. Madagascar\nI. République démocratique du Congo\nJ. Afrique du Sud",
+          "a": "A. Abuja (et non Lagos !)\nB. Rabat (et non Casablanca !)\nC. Yaoundé (et non Douala)\nD. Addis-Abeba\nE. Yamoussoukro (capitale officielle ; Abidjan est la capitale économique)\nF. Ouagadougou\nG. Dodoma (capitale officielle ; Dar es Salaam est la plus grande ville)\nH. Antananarivo\nI. Kinshasa\nJ. Pretoria (exécutif), Le Cap (législatif) ou Bloemfontein (judiciaire), les trois sont acceptées"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Bon appétit !",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous de quel pays ces plats sont la spécialité.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Le thiéboudiène (riz au poisson)\nB. Le ndolé\nC. L'attiéké\nD. Le koshari\nE. Le bobotie\nF. Le romazava\nG. La pastilla\nH. Le kitfo\nI. Le poulet à la moambé\nJ. La brick (brik) à l'œuf",
+          "a": "A. Sénégal\nB. Cameroun\nC. Côte d'Ivoire\nD. Égypte\nE. Afrique du Sud\nF. Madagascar\nG. Maroc\nH. Éthiopie\nI. RDC (on accepte aussi le Congo-Brazzaville)\nJ. Tunisie"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "La loi de la jungle",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous quelle sélection nationale de football porte ces surnoms.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Les Pharaons\nB. Super Eagles\nC. Les Lions Indomptables\nD. Les Éléphants\nE. Black Stars\nF. Bafana Bafana\nG. Les Lions de l'Atlas\nH. Les Fennecs\nI. Les Aigles de Carthage\nJ. Les Lions de la Teranga",
+          "a": "A. Égypte\nB. Nigeria\nC. Cameroun\nD. Côte d'Ivoire\nE. Ghana\nF. Afrique du Sud\nG. Maroc\nH. Algérie\nI. Tunisie\nJ. Sénégal"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Ils ont du pied",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous pour quelle sélection nationale ont joué ces footballeurs.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Mohamed Salah\nB. Didier Drogba\nC. Samuel Eto'o\nD. George Weah\nE. Sadio Mané\nF. Riyad Mahrez\nG. Jay-Jay Okocha\nH. Achraf Hakimi\nI. Abedi Pelé\nJ. Emmanuel Adebayor",
+          "a": "A. Égypte\nB. Côte d'Ivoire\nC. Cameroun\nD. Liberia (dont il est ensuite devenu président)\nE. Sénégal\nF. Algérie\nG. Nigeria\nH. Maroc\nI. Ghana\nJ. Togo"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Mama Africa",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous de quel pays sont originaires ces artistes.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Youssou N'Dour\nB. Fela Kuti\nC. Miriam Makeba\nD. Salif Keita\nE. Angélique Kidjo\nF. Cesária Évora\nG. Manu Dibango\nH. Oum Kalthoum\nI. Khaled\nJ. Papa Wemba",
+          "a": "A. Sénégal\nB. Nigeria\nC. Afrique du Sud (surnommée \"Mama Africa\")\nD. Mali\nE. Bénin\nF. Cap-Vert (la \"diva aux pieds nus\")\nG. Cameroun\nH. Égypte\nI. Algérie\nJ. RDC (ex-Zaïre)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Libres !",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces pays selon la date de leur indépendance, du plus ancien au plus récent.\nTu avanceras de 6 cases si tu réponds juste.\nA. Angola\nB. Soudan du Sud\nC. Ghana\nD. Namibie\nE. Libye\nF. Algérie",
+          "a": "Réponse E, C, F, A, D puis B\nE. Libye, en 1951\nC. Ghana, en 1957 (du Royaume-Uni)\nF. Algérie, en 1962 (de la France)\nA. Angola, en 1975 (du Portugal)\nD. Namibie, en 1990 (de l'Afrique du Sud)\nB. Soudan du Sud, en 2011 (du Soudan)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Il était une fois l'Afrique",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces événements de façon chronologique.\nTu avanceras de 6 cases si tu réponds juste.\nA. L'inauguration du canal de Suez\nB. La construction de la grande pyramide de Khéops\nC. La première Coupe du monde de football organisée en Afrique\nD. Le pèlerinage de Mansa Moussa, roi du Mali, à La Mecque\nE. La fondation de Carthage\nF. La victoire de l'Éthiopie sur l'Italie à la bataille d'Adoua",
+          "a": "Réponse B, E, D, A, F puis C\nB. La pyramide de Khéops vers 2560 av. J.-C.\nE. La fondation de Carthage, traditionnellement en 814 av. J.-C.\nD. Le pèlerinage de Mansa Moussa en 1324\nA. Le canal de Suez en 1869\nF. La bataille d'Adoua en 1896\nC. La Coupe du monde en Afrique du Sud en 2010"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Il y a foule",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces pays du plus peuplé au moins peuplé.\nTu avanceras de 6 cases si tu réponds juste.\nA. Maroc\nB. Cap-Vert\nC. Nigeria\nD. Sénégal\nE. Afrique du Sud\nF. Éthiopie",
+          "a": "Réponse C, F, E, A, D puis B\nC. Nigeria, environ 230 millions d'habitants\nF. Éthiopie, environ 130 millions\nE. Afrique du Sud, environ 63 millions\nA. Maroc, environ 37 millions\nD. Sénégal, environ 18 millions\nB. Cap-Vert, environ 500 000"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Perdu dans le désert",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le Nil se jette dans la mer Rouge\nB. Le Kilimandjaro se trouve au Kenya\nC. Le lac Victoria est partagé entre l'Ouganda, le Kenya et la Tanzanie\nD. Le Sahara est le plus grand désert chaud du monde\nE. Madagascar est la plus grande île d'Afrique\nF. L'Algérie est le plus grand pays d'Afrique par sa superficie\nG. Les chutes Victoria se trouvent à la frontière entre la Zambie et le Zimbabwe\nH. Le lac Tanganyika est le lac le plus profond du monde\nI. Le Lesotho est entièrement entouré par l'Afrique du Sud\nJ. L'Éthiopie a un accès à la mer",
+          "a": "A. Faux (il se jette dans la Méditerranée)\nB. Faux (il se trouve en Tanzanie)\nC. Vrai\nD. Vrai\nE. Vrai\nF. Vrai (depuis la partition du Soudan en 2011)\nG. Vrai\nH. Faux (c'est le 2e, derrière le lac Baïkal)\nI. Vrai\nJ. Faux (elle l'a perdu avec l'indépendance de l'Érythrée en 1993)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Leçon d'histoire",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le Liberia a été fondé pour accueillir d'anciens esclaves affranchis venus des États-Unis\nB. Nelson Mandela a passé 27 ans en prison\nC. Tombouctou se trouve au Niger\nD. Le canal de Suez relie la mer Méditerranée à la mer Rouge\nE. Le Zimbabwe s'appelait autrefois la Rhodésie\nF. La République démocratique du Congo s'est appelée le Zaïre\nG. Le Burkina Faso s'appelait autrefois le Dahomey\nH. Thomas Sankara a été président du Ghana\nI. Kofi Annan, ancien secrétaire général de l'ONU, était ghanéen\nJ. L'Égypte a été le premier pays africain à organiser une Coupe du monde de football",
+          "a": "A. Vrai\nB. Vrai\nC. Faux (elle se trouve au Mali)\nD. Vrai\nE. Vrai\nF. Vrai (de 1971 à 1997)\nG. Faux (c'était la Haute-Volta ; le Dahomey est l'actuel Bénin)\nH. Faux (il a dirigé le Burkina Faso)\nI. Vrai\nJ. Faux (c'est l'Afrique du Sud, en 2010)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Cash, cash",
+      "questions": [
+        {
+          "level": null,
+          "q": "Donne la monnaie officielle de ces pays.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Nigeria\nB. Afrique du Sud\nC. Kenya\nD. Maroc\nE. Ghana\nF. Cameroun\nG. Égypte\nH. Éthiopie\nI. Botswana\nJ. Angola",
+          "a": "A. Le naira\nB. Le rand\nC. Le shilling kényan\nD. Le dirham\nE. Le cedi\nF. Le franc CFA (d'Afrique centrale)\nG. La livre égyptienne\nH. Le birr\nI. Le pula (qui veut dire \"pluie\" en setswana)\nJ. Le kwanza"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Tu parles !",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous dans quel pays ces langues sont principalement parlées.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Le wolof\nB. L'amharique\nC. Le zoulou\nD. Le yoruba\nE. Le malgache\nF. Le kinyarwanda\nG. Le twi\nH. Le lingala\nI. Le sango\nJ. Le bambara",
+          "a": "A. Sénégal (on accepte aussi la Gambie)\nB. Éthiopie\nC. Afrique du Sud\nD. Nigeria (on accepte aussi le Bénin)\nE. Madagascar\nF. Rwanda\nG. Ghana\nH. RDC (on accepte aussi le Congo-Brazzaville)\nI. Centrafrique\nJ. Mali"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Héritage colonial",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si la langue officielle héritée de la colonisation dans ces pays est le FRANÇAIS, l'ANGLAIS, le PORTUGAIS ou l'ESPAGNOL.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Mozambique\nB. Ghana\nC. Gabon\nD. Angola\nE. Zambie\nF. Guinée équatoriale\nG. Côte d'Ivoire\nH. Cap-Vert\nI. Nigeria\nJ. République démocratique du Congo",
+          "a": "A. Portugais\nB. Anglais\nC. Français\nD. Portugais\nE. Anglais\nF. Espagnol (seul pays hispanophone d'Afrique ; le français et le portugais y sont aussi officiels)\nG. Français\nH. Portugais\nI. Anglais\nJ. Français (premier pays francophone au monde par la population)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Au fil de l'eau",
+      "questions": [
+        {
+          "level": null,
+          "q": "Cite des fleuves, rivières ou lacs d'Afrique.\nTu avanceras d'une case par bonne réponse.\nTu n'as que 45 secondes",
+          "a": "Fleuves et rivières : Nil (Blanc et Bleu), Congo, Niger, Zambèze, Orange, Limpopo,\nSénégal, Gambie, Volta, Okavango, Oubangui, Kasaï, Bénoué, Chari,\nAtbara, Juba, Shebelle, Rufiji, Cuanza, Vaal, Ogooué, Sanaga, Kagera,\nMedjerda, Moulouya, Drâa, Chélif...\nLacs : Victoria, Tanganyika, Malawi (Nyassa), Tchad, Turkana, Kivu, Albert,\nÉdouard, Kariba, Nasser, Volta, Tana, Assal...\nAutres propositions soumises à l'approbation de plus de la moitié des joueurs"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Pas de plage",
+      "questions": [
+        {
+          "level": null,
+          "q": "Cite des pays d'Afrique qui n'ont aucun accès à la mer.\nTu avanceras d'une case par bonne réponse.\nTu n'as que 45 secondes",
+          "a": "Il y en a 16 : Mali, Niger, Tchad, Burkina Faso, Centrafrique, Soudan du Sud,\nÉthiopie, Ouganda, Rwanda, Burundi, Zambie, Zimbabwe,\nMalawi, Botswana, Lesotho, Eswatini (ex-Swaziland)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Merveilles du monde",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous dans quel pays se trouvent ces sites du patrimoine mondial de l'UNESCO.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Les pyramides de Gizeh\nB. Les églises creusées dans la roche de Lalibela\nC. La Grande Mosquée de Djenné\nD. Le Grand Zimbabwe\nE. L'île de Gorée\nF. Les ruines de Carthage\nG. Robben Island (où Mandela fut emprisonné)\nH. La médina de Fès\nI. Les ruines romaines de Leptis Magna\nJ. Le parc national du Serengeti",
+          "a": "A. Égypte\nB. Éthiopie\nC. Mali\nD. Zimbabwe\nE. Sénégal\nF. Tunisie\nG. Afrique du Sud\nH. Maroc\nI. Libye\nJ. Tanzanie"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Le Roi lion",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. À l'état sauvage, les lémuriens ne vivent qu'à Madagascar\nB. Il y a des tigres à l'état sauvage en Afrique\nC. L'okapi est un proche parent de la girafe\nD. L'hippopotame fait partie des \"Big Five\"\nE. Le guépard est l'animal terrestre le plus rapide\nF. On trouve des gorilles des montagnes au Rwanda\nG. L'éléphant d'Afrique a de plus petites oreilles que l'éléphant d'Asie\nH. Des manchots vivent à l'état sauvage en Afrique du Sud\nI. Le dromadaire a deux bosses\nJ. L'autruche est le plus grand oiseau du monde",
+          "a": "A. Vrai\nB. Faux (les tigres vivent uniquement en Asie)\nC. Vrai\nD. Faux (ce sont le lion, le léopard, l'éléphant, le rhinocéros et le buffle)\nE. Vrai\nF. Vrai (ainsi qu'en Ouganda et en RDC)\nG. Faux (elles sont bien plus grandes)\nH. Vrai (le manchot du Cap)\nI. Faux (une seule ; c'est le chameau de Bactriane qui en a deux)\nJ. Vrai"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Nobel cause",
+      "questions": [
+        {
+          "level": null,
+          "q": "Ces personnalités ont reçu un prix Nobel. Dis-nous de quel pays africain elles sont originaires.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Wangari Maathai\nB. Wole Soyinka\nC. Naguib Mahfouz\nD. Desmond Tutu\nE. Ellen Johnson Sirleaf\nF. Abiy Ahmed\nG. Denis Mukwege\nH. Kofi Annan\nI. Abdulrazak Gurnah\nJ. Le Quartet du dialogue national",
+          "a": "A. Kenya (paix, 2004)\nB. Nigeria (littérature, 1986)\nC. Égypte (littérature, 1988)\nD. Afrique du Sud (paix, 1984)\nE. Liberia (paix, 2011)\nF. Éthiopie (paix, 2019)\nG. RDC (paix, 2018)\nH. Ghana (paix, 2001)\nI. Tanzanie, né à Zanzibar (littérature, 2021)\nJ. Tunisie (paix, 2015)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Qui c'était ?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Retrouve cette personne en utilisant le moins d'indices possible.\nUne seule proposition faite après chaque indice.\nPour 10 cases : C'était un homme politique africain.\nPour 9 cases : Il est né en 1918 dans le village de Mvezo.\nPour 8 cases : Son nom de clan, Madiba, est devenu son surnom.\nPour 7 cases : Avocat, il a cofondé la branche armée de son parti.\nPour 6 cases : En 1964, il a été condamné à la prison à vie lors du procès de Rivonia.\nPour 5 cases : Il a passé 18 ans de détention sur l'île de Robben Island.\nPour 4 cases : Il a été libéré en 1990 après 27 ans de prison.\nPour 3 cases : Il a reçu le prix Nobel de la paix en 1993.\nPour 2 cases : En 1994, il est devenu le premier président noir d'Afrique du Sud.\nPour 1 case : Son prénom est Nelson.",
+          "a": "Nelson Mandela"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Sous la bannière",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le drapeau du Mozambique comporte une kalachnikov\nB. Le drapeau de la Libye est entièrement vert\nC. Le drapeau du Kenya comporte un bouclier masaï et deux lances\nD. Le drapeau du Maroc porte une étoile jaune\nE. Le drapeau de l'Afrique du Sud compte six couleurs\nF. Le drapeau du Cameroun comporte trois étoiles\nG. Le drapeau de l'Ouganda représente un oiseau, la grue royale\nH. Le drapeau de la Côte d'Ivoire est identique à celui de l'Irlande\nI. Le drapeau de l'Algérie est vert et blanc avec un croissant et une étoile rouges\nJ. Le drapeau de l'Éthiopie est vert, jaune et rouge",
+          "a": "A. Vrai (croisée avec une houe, sur un livre)\nB. Faux (c'était celui de Kadhafi ; depuis 2011 il est rouge, noir et vert avec un croissant et une étoile)\nC. Vrai\nD. Faux (l'étoile à cinq branches est verte, sur fond rouge)\nE. Vrai (rouge, blanc, vert, noir, jaune et bleu)\nF. Faux (une seule étoile jaune)\nG. Vrai\nH. Faux (les couleurs sont inversées : orange côté mât pour la Côte d'Ivoire, vert pour l'Irlande)\nI. Vrai\nJ. Vrai (avec un emblème bleu au centre)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Dima Maghrib jusqu'au dernier carré",
+      "questions": [
+        {
+          "level": null,
+          "q": "En 2022, quel pays est devenu la première nation africaine à atteindre les demi-finales d'une Coupe du monde de football ?\nA. Cameroun\nB. Sénégal\nC. Ghana\nD. Maroc",
+          "a": "Réponse D\n(Éliminé par la France 2-0)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Adwa, ou l'art de dire non",
+      "questions": [
+        {
+          "level": null,
+          "q": "Lors de la bataille d'Adwa en 1896, l'Éthiopie de Ménélik II a infligé une défaite historique à quelle puissance coloniale ?\nA. L'Italie\nB. Le Royaume-Uni\nC. La France\nD. L'Allemagne",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "La taille, ça compte",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel est le plus grand pays d'Afrique par la superficie ?\nA. Le Soudan\nB. La République démocratique du Congo\nC. L'Algérie\nD. La Libye",
+          "a": "Réponse C\n(Depuis la partition du Soudan en 2011)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le tigre ne proclame pas sa tigritude",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel écrivain nigérian est devenu en 1986 le premier lauréat d'Afrique subsaharienne du prix Nobel de littérature ?\nA. Chinua Achebe\nB. Wole Soyinka\nC. Ben Okri\nD. Ngũgĩ wa Thiong'o",
+          "a": "Réponse B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Pata Pata, c'est le nom de la danse",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quelle chanteuse sud-africaine, surnommée « Mama Africa », a rendu célèbre la chanson « Pata Pata » ?\nA. Angélique Kidjo\nB. Brenda Fassie\nC. Oumou Sangaré\nD. Miriam Makeba",
+          "a": "Réponse D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Avoir du cœur… celui des autres",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans quelle ville le Dr Christiaan Barnard a-t-il réalisé la première greffe de cœur humain au monde, en 1967 ?\nA. Johannesburg\nB. Le Caire\nC. Le Cap\nD. Nairobi",
+          "a": "Réponse C\n(À l'hôpital Groote Schuur)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Plus riche que Picsou",
+      "questions": [
+        {
+          "level": null,
+          "q": "Mansa Moussa, souvent présenté comme l'homme le plus riche de l'histoire, régnait sur quel empire ?\nA. L'empire du Mali\nB. L'empire du Ghana\nC. L'empire songhaï\nD. L'empire du Kanem",
+          "a": "Réponse A\n(Célèbre pour son pèlerinage à La Mecque en 1324)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Pas de plage pour tout le monde",
+      "questions": [
+        {
+          "level": null,
+          "q": "Lequel de ces pays ne borde PAS le lac Victoria ?\nA. Le Kenya\nB. Le Rwanda\nC. L'Ouganda\nD. La Tanzanie",
+          "a": "Réponse B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Wakanda forever (en VO)",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans le film « Black Panther » (2018), quelle langue africaine réelle parlent les Wakandais ?\nA. Le zoulou\nB. Le swahili\nC. Le xhosa\nD. Le yoruba",
+          "a": "Réponse C"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "La crêpe qui sert d'assiette",
+      "questions": [
+        {
+          "level": null,
+          "q": "L'injera, la grande galette éthiopienne et érythréenne, est traditionnellement préparée à partir de quelle céréale ?\nA. Le teff\nB. Le mil\nC. Le sorgho\nD. Le fonio",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Du Ballon d'Or au palais présidentiel",
+      "questions": [
+        {
+          "level": null,
+          "q": "Qui fut, en 1995, le premier joueur d'une sélection africaine à remporter le Ballon d'Or ?\nA. Roger Milla\nB. George Weah\nC. Abedi Pelé\nD. Samuel Eto'o",
+          "a": "Réponse B\n(Il est ensuite devenu président du Liberia)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le pays des hommes intègres a changé de nom",
+      "questions": [
+        {
+          "level": null,
+          "q": "Avant 1984, comment s'appelait le Burkina Faso ?\nA. Le Dahomey\nB. La Haute-Volta\nC. La Côte-de-l'Or\nD. L'Oubangui-Chari",
+          "a": "Réponse B\n(Renommé sous Thomas Sankara)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Un long chemin vers la liberté",
+      "questions": [
+        {
+          "level": null,
+          "q": "En quelle année Nelson Mandela a-t-il été libéré de prison ?\nA. 1986\nB. 1990\nC. 1992\nD. 1994",
+          "a": "Réponse B\n(Le 11 février 1990, après 27 ans de détention)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Music is the weapon",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel genre musical le Nigérian Fela Kuti a-t-il créé et popularisé ?\nA. Le highlife\nB. La jùjú\nC. Le makossa\nD. L'afrobeat",
+          "a": "Réponse D\n(À ne pas confondre avec les afrobeats actuels)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le monde s'effondre, et lui avec",
+      "questions": [
+        {
+          "level": null,
+          "q": "Comment s'appelle le héros du roman « Le monde s'effondre » (Things Fall Apart) de Chinua Achebe ?\nA. Okonkwo\nB. Ezeulu\nC. Ikemefuna\nD. Unoka",
+          "a": "Réponse A\n(Unoka est son père)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le toit de l'Afrique a un prénom",
+      "questions": [
+        {
+          "level": null,
+          "q": "Comment s'appelle le sommet du Kilimandjaro, point culminant de l'Afrique ?\nA. Batian\nB. Margherita\nC. Uhuru\nD. Nelion",
+          "a": "Réponse C\n(« Uhuru » signifie « liberté » en swahili)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Les pharaons noirs avaient aussi leurs pyramides",
+      "questions": [
+        {
+          "level": null,
+          "q": "Les pyramides de Méroé, héritage du royaume de Koush, se trouvent dans quel pays actuel ?\nA. L'Égypte\nB. L'Éthiopie\nC. Le Soudan\nD. La Libye",
+          "a": "Réponse C"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le déhanché n'a pas d'âge",
+      "questions": [
+        {
+          "level": null,
+          "q": "Lors de la Coupe du monde 1994, le Camerounais Roger Milla est devenu le plus vieux buteur de l'histoire du tournoi. Quel âge avait-il ?\nA. 38 ans\nB. 40 ans\nC. 41 ans\nD. 42 ans",
+          "a": "Réponse D\n(Face à la Russie)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Riz, poisson et teranga",
+      "questions": [
+        {
+          "level": null,
+          "q": "Le thiéboudienne (ceebu jën), plat à base de riz et de poisson, est le plat national de quel pays ?\nA. Le Sénégal\nB. Le Mali\nC. La Côte d'Ivoire\nD. Le Ghana",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Un fleuve qui ne sait pas sur quel pied danser",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel grand fleuve africain traverse l'équateur à deux reprises ?\nA. Le Nil\nB. Le Niger\nC. Le Zambèze\nD. Le Congo",
+          "a": "Réponse D"
+        }
+      ]
+    }
+  ]
+}
