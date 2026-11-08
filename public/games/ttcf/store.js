@@ -4,6 +4,7 @@
 const SAVE_KEY = 'muchogames_ttcf_save';
 const MODE_KEY = 'muchogames_ttcf_mode';
 const PACKS_KEY = 'muchogames_ttcf_packs';
+const HIDE_FR_KEY = 'muchogames_ttcf_hide_fr';
 const LATINO_KEY = 'muchogames_ttcf_latino';
 const VERSION = 1;
 const MODES = ['board', 'wheel'];
@@ -39,6 +40,7 @@ function isValidMatch(match, cards, last) {
     teams.length >= 2 &&
     teams.length <= MAX_TEAMS &&
     MODES.includes(match.mode) &&
+    (match.hideFr == null || typeof match.hideFr === 'boolean') &&
     (match.packs == null || (Array.isArray(match.packs) && match.packs.every((id) => typeof id === 'string'))) &&
     teams.every((team, i) => validTeam(team, i, last)) &&
     isInt(match.cur, 0, teams.length - 1) &&
@@ -107,6 +109,23 @@ export function readPacks() {
     return localStorage.getItem(LATINO_KEY) === '1' ? ['latino'] : [];
   } catch {
     return [];
+  }
+}
+
+// Hide the cards that only a French player can answer: the last choice on the dashboard.
+export function readHideFr() {
+  try {
+    return localStorage.getItem(HIDE_FR_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+export function storeHideFr(on) {
+  try {
+    localStorage.setItem(HIDE_FR_KEY, on ? '1' : '0');
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
   }
 }
 

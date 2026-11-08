@@ -3,7 +3,7 @@
 // step (store.js), so leaving by any route brings it back from the dashboard.
 import { LAST, THEMES, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
-import { clearMatch, hasMatch, loadMatch, readMode, readPacks, storeMatch, storeMode, storePacks } from './store.js';
+import { clearMatch, hasMatch, loadMatch, readHideFr, readMode, readPacks, storeHideFr, storeMatch, storeMode, storePacks } from './store.js';
 import { createWheel } from './wheel.js';
 
 const GAME_ID = 'ttcf';
@@ -27,6 +27,8 @@ const page = {
   // move; `packs` = the ids ticked on the dashboard (a match keeps its own).
   cards: [],
   packs: readPacks(),
+  // Hide the base cards flagged `frOnly` (very French-specific), for this dashboard choice.
+  hideFr: readHideFr(),
   names: [],
   count: 2,
   match: null,
@@ -147,7 +149,14 @@ function packsOn() {
   return page.packs.filter((id) => page.cards.some((card) => card.pack === id));
 }
 
+function renderHideFr() {
+  const row = $('ttcf-hide-fr-row');
+  row.hidden = !page.cards.some((card) => card.frOnly);
+  $('ttcf-hide-fr-check').checked = page.hideFr;
+}
+
 function renderPacks() {
+  renderHideFr();
   const list = $('ttcf-pack-list');
   const present = PACKS.filter((pack) => page.cards.some((card) => card.pack === pack.id));
   list.hidden = !present.length;
@@ -221,7 +230,7 @@ async function startMatch(names) {
   page.starting = false;
   if (!started) return;
   // Every team starts on D; the Débuter card says which team plays first.
-  page.match = { mode: page.mode, packs: packsOn(), teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
+  page.match = { mode: page.mode, packs: packsOn(), hideFr: page.hideFr, teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
   showScreen('board');
   // The new match's board, not the last one's tokens, under the Débuter card.
   renderMatch();
@@ -323,7 +332,7 @@ function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), open
   const previous = page.match.card?.index;
   // Base cards, plus the packs of this match (a match keeps the packs it started with).
   const packs = page.match.packs || [];
-  const active = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.pack === 'base' || packs.includes(card.pack));
+  const active = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => (card.pack === 'base' || packs.includes(card.pack)) && !(page.match.hideFr && card.frOnly));
   const same = active.filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
   const pool = same.length > 1 ? same.filter(({ index }) => index !== previous) : same;
   const index = pool.length
@@ -680,6 +689,10 @@ function bindControls() {
     'ttcf-restart-btn': () => startMatch(teamNames()),
     'ttcf-menu-button': () => showScreen('dashboard')
   };
+  $('ttcf-hide-fr-check').addEventListener('change', (event) => {
+    page.hideFr = event.target.checked;
+    storeHideFr(page.hideFr);
+  });
   Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
 }
 
@@ -700,6 +713,11 @@ async function loadCards(lang) {
       // Packs are optional: a missing file just hides its box.
       ...PACKS.map((pack) => fetchDeck(`/data/ttcf/ttcf_data_${pack.id}_${lang}.json`, pack.id).catch(() => []))
     ]);
+    // Base cards that only a French player can answer (same card order in every language).
+    const frOnly = await fetch('/data/ttcf/ttcf_french_only.json')
+      .then((res) => (res.ok ? res.json() : []))
+      .catch(() => []);
+    if (Array.isArray(frOnly)) frOnly.forEach((i) => base[i] && (base[i].frOnly = true));
     if (page.lang === lang) page.cards = [base, ...extras].flat();
   } catch (error) {
     console.warn('[ttcf] cards not loaded', error);
