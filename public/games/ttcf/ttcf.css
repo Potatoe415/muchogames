@@ -326,6 +326,11 @@ body {
   --cell: min(calc((100cqw - (var(--cols) - 1) * var(--gap)) / var(--cols)), calc((100cqh - (var(--rows) - 1) * var(--row-gap)) / var(--rows)));
 }
 
+/* The bend of the snake: the last space of a row drops half a row. */
+.board-space.is-turn {
+  transform: translateY(calc((var(--cell) + var(--row-gap)) / 2));
+}
+
 /* Pastel tiles with a white line icon (assets/icons/); the start and end
    spaces show their medallion. */
 .board-space {
@@ -782,7 +787,7 @@ html.tv :focus {
 /* Wider than tall: the 43 spaces in 11 columns, the draw button beside. */
 @media (orientation: landscape) {
   .board-track {
-    --cols: 11;
+    --cols: 12;
     --rows: 4;
   }
 

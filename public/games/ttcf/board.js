@@ -53,6 +53,31 @@ function fitTokens(tokens) {
   tokens.classList.toggle('is-crowded', count > 4);
 }
 
+// The track winds like a snake: each row is aligned, its last space drops half
+// a row (the bend, class is-turn), and the next row goes back the other way
+// from the column beside it. Row 0 runs over all `cols` columns; the later
+// rows leave out the column of the bend above them. Returns { col, row, turn }
+// (1-based grid cells) for every space.
+function snakeLayout(count, cols) {
+  const cells = [];
+  let row = 0;
+  while (cells.length < count) {
+    const rightward = row % 2 === 0;
+    const lane = [];
+    if (rightward) for (let c = row === 0 ? 0 : 1; c < cols; c++) lane.push(c);
+    else for (let c = cols - 2; c >= 0; c--) lane.push(c);
+    for (let k = 0; k < lane.length && cells.length < count; k++) {
+      const last = k === lane.length - 1;
+      cells.push({ col: lane[k] + 1, row: row + 1, turn: last && cells.length < count - 1 });
+    }
+    row++;
+  }
+  return cells;
+}
+
+// The last render, redrawn when the screen turns (the columns change).
+let lastRender = null;
+
 // walk: the token on its way ({ id, pos }) or null.
 function tokenPos(team, walk) {
   return walk?.id === team.id ? walk.pos : team.pos;
@@ -72,13 +97,20 @@ function spaceBadge(theme, i, t) {
 }
 
 // { match, walk, t, labels }: labels = theme names in the page language.
-export function renderBoard({ match, walk, t, labels }) {
+export function renderBoard(args) {
+  const { match, walk, t, labels } = args;
+  lastRender = args;
   const track = $('ttcf-board-track');
+  const cols = Number.parseInt(getComputedStyle(track).getPropertyValue('--cols'), 10) || 7;
+  const cells = snakeLayout(BOARD_TRACK.length, cols);
   track.replaceChildren(
     ...BOARD_TRACK.map((theme, i) => {
       const space = document.createElement('div');
       space.className = `board-space ${themeClass(theme)}`;
       space.dataset.id = `ttcf-space-${i}`;
+      space.style.gridColumn = String(cells[i].col);
+      space.style.gridRow = String(cells[i].row);
+      if (cells[i].turn) space.classList.add('is-turn');
       space.title = labels[theme] || theme;
       const badge = document.createElement('span');
       badge.className = 'space-badge';
@@ -153,3 +185,7 @@ export function walkToken(id, from, to, { onStart, onEnd }) {
   }, stepMs);
   return walk;
 }
+
+window.matchMedia('(orientation: landscape)').addEventListener('change', () => {
+  if (lastRender) renderBoard(lastRender);
+});
