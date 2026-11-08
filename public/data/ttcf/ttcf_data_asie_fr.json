@@ -1,0 +1,4924 @@
+{
+  "cards": [
+    {
+      "theme": "Scolaire",
+      "subject": "La Grande Muraille de Chine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays se trouve la Grande Muraille ?",
+          "a": "En Chine"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? La Grande Muraille servait à se protéger des invasions venues du nord.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quel empereur a relié les premiers tronçons de murailles au IIIe siècle av. J.-C. ?",
+          "a": "Qin Shi Huang"
+        },
+        {
+          "level": 4,
+          "q": "Sous quelle dynastie a été bâtie la majeure partie de la muraille visible aujourd'hui : Han, Tang ou Ming ?",
+          "a": "Ming"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? La Grande Muraille est visible à l'œil nu depuis la Lune.",
+          "a": "Faux"
+        },
+        {
+          "level": 6,
+          "q": "Près de quelle capitale se trouvent les célèbres tronçons de Badaling et Mutianyu ?",
+          "a": "Pékin"
+        },
+        {
+          "level": 7,
+          "q": "En quelle année la Grande Muraille a-t-elle été inscrite au patrimoine mondial de l'UNESCO : 1987, 1997 ou 2007 ?",
+          "a": "En 1987"
+        },
+        {
+          "level": 8,
+          "q": "Quel col fortifié du Gansu marque l'extrémité ouest de la muraille des Ming ?",
+          "a": "Jiayuguan"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle l'endroit près de Shanhaiguan où la muraille plonge dans la mer ?",
+          "a": "La Tête du Vieux Dragon (Laolongtou)"
+        },
+        {
+          "level": 10,
+          "q": "Selon la mesure officielle chinoise de 2012, quelle est la longueur totale des murailles : environ 8 850 km, 21 196 km ou 50 000 km ?",
+          "a": "Environ 21 196 km"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Qin Shi Huang et l'armée de terre cuite",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelle-t-on les milliers de statues de soldats enterrées près de la tombe du premier empereur de Chine ?",
+          "a": "L'armée de terre cuite"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle le premier empereur de Chine ?",
+          "a": "Qin Shi Huang"
+        },
+        {
+          "level": 3,
+          "q": "Près de quelle ville se trouve l'armée de terre cuite : Xi'an, Shanghai ou Canton ?",
+          "a": "Xi'an"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année Qin Shi Huang a-t-il unifié la Chine : 221 av. J.-C., 1 apr. J.-C. ou 618 ?",
+          "a": "En 221 av. J.-C."
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? L'armée de terre cuite a été découverte par des paysans qui creusaient un puits.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "En quelle année a-t-elle été découverte : 1924, 1974 ou 1999 ?",
+          "a": "En 1974"
+        },
+        {
+          "level": 7,
+          "q": "Quelle dynastie a succédé à celle des Qin ?",
+          "a": "Les Han"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux ? Qin Shi Huang a unifié l'écriture, la monnaie et les poids et mesures.",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quelle école de pensée, prônant des lois strictes et des châtiments sévères, guidait l'État de Qin ?",
+          "a": "Le légisme"
+        },
+        {
+          "level": 10,
+          "q": "Quel chancelier a aidé Qin Shi Huang à unifier l'écriture de l'empire ?",
+          "a": "Li Si"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Route de la soie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle précieuse étoffe a donné son nom à cette route commerciale ?",
+          "a": "La soie"
+        },
+        {
+          "level": 2,
+          "q": "La Route de la soie reliait la Chine : à l'Amérique, à la Méditerranée ou à l'Australie ?",
+          "a": "À la Méditerranée"
+        },
+        {
+          "level": 3,
+          "q": "Quel marchand vénitien a raconté son voyage en Chine au XIIIe siècle ?",
+          "a": "Marco Polo"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? La soie est produite par la chenille d'un papillon, le bombyx du mûrier.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel grand désert du bassin du Tarim les caravanes contournaient-elles : le Taklamakan, le Sahara ou l'Atacama ?",
+          "a": "Le Taklamakan"
+        },
+        {
+          "level": 6,
+          "q": "Quel géographe allemand a popularisé l'expression « Route de la soie » au XIXe siècle ?",
+          "a": "Ferdinand von Richthofen"
+        },
+        {
+          "level": 7,
+          "q": "Sous quelle dynastie l'émissaire Zhang Qian a-t-il ouvert la voie vers l'Asie centrale : Han, Song ou Qing ?",
+          "a": "Han"
+        },
+        {
+          "level": 8,
+          "q": "Quelle capitale des Han et des Tang était le point de départ oriental de la route ?",
+          "a": "Chang'an (l'actuelle Xi'an)"
+        },
+        {
+          "level": 9,
+          "q": "Quelle oasis du Gansu est célèbre pour les grottes bouddhiques de Mogao ?",
+          "a": "Dunhuang"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le plus ancien livre imprimé daté connu, de 868, retrouvé à Dunhuang ?",
+          "a": "Le Sûtra du Diamant"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les quatre grandes inventions chinoises",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Le papier a été inventé en Chine.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Quelle invention chinoise sert à fabriquer les feux d'artifice ?",
+          "a": "La poudre (à canon)"
+        },
+        {
+          "level": 3,
+          "q": "Quel instrument indique le nord grâce à une aiguille aimantée ?",
+          "a": "La boussole"
+        },
+        {
+          "level": 4,
+          "q": "Avec le papier, la poudre et la boussole, quelle est la quatrième grande invention chinoise ?",
+          "a": "L'imprimerie"
+        },
+        {
+          "level": 5,
+          "q": "Quel fonctionnaire de la cour des Han est traditionnellement crédité de l'invention du papier vers 105 ?",
+          "a": "Cai Lun"
+        },
+        {
+          "level": 6,
+          "q": "Quel artisan chinois a inventé l'imprimerie à caractères mobiles au XIe siècle ?",
+          "a": "Bi Sheng"
+        },
+        {
+          "level": 7,
+          "q": "Sous quelle dynastie vivait Bi Sheng : Han, Song ou Ming ?",
+          "a": "Song"
+        },
+        {
+          "level": 8,
+          "q": "En quelle matière étaient faits les caractères mobiles de Bi Sheng : bois, argile ou métal ?",
+          "a": "En argile (cuite)"
+        },
+        {
+          "level": 9,
+          "q": "Quel savant des Song a, le premier, décrit la boussole à aiguille aimantée dans ses « Propos sur le lac des rêves » (Mengxi bitan) ?",
+          "a": "Shen Kuo"
+        },
+        {
+          "level": 10,
+          "q": "Quel savant britannique a écrit la monumentale série « Science and Civilisation in China » ?",
+          "a": "Joseph Needham"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Confucius et les philosophes chinois",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel célèbre philosophe chinois s'appelle Kongzi en chinois ?",
+          "a": "Confucius"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Confucius a vécu il y a environ 2 500 ans.",
+          "a": "Vrai (551-479 av. J.-C.)"
+        },
+        {
+          "level": 3,
+          "q": "Qui est le fondateur légendaire du taoïsme ?",
+          "a": "Laozi (Lao-tseu)"
+        },
+        {
+          "level": 4,
+          "q": "Quel stratège chinois a écrit « L'Art de la guerre » ?",
+          "a": "Sun Tzu (Sunzi)"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le recueil des paroles de Confucius ?",
+          "a": "Les Entretiens (Analectes)"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel État Confucius est-il né : Lu, Qin ou Chu ?",
+          "a": "Lu"
+        },
+        {
+          "level": 7,
+          "q": "Quel livre attribué à Laozi est le texte fondateur du taoïsme ?",
+          "a": "Le Tao-tö-king (Daodejing)"
+        },
+        {
+          "level": 8,
+          "q": "Quel penseur confucéen du IVe siècle av. J.-C. affirmait que la nature humaine est bonne ?",
+          "a": "Mencius (Mengzi)"
+        },
+        {
+          "level": 9,
+          "q": "Quel philosophe taoïste a rêvé qu'il était un papillon, puis s'est demandé s'il n'était pas un papillon rêvant d'être un homme ?",
+          "a": "Zhuangzi (Tchouang-tseu)"
+        },
+        {
+          "level": 10,
+          "q": "Quel penseur confucéen affirmait au contraire que la nature humaine est mauvaise ?",
+          "a": "Xunzi"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les dynasties chinoises",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? La Chine a été gouvernée par des empereurs pendant plus de 2 000 ans.",
+          "a": "Vrai (de 221 av. J.-C. à 1912)"
+        },
+        {
+          "level": 2,
+          "q": "Quelle dynastie a fait construire la Cité interdite à Pékin : Ming, Han ou Tang ?",
+          "a": "Ming"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est la dernière dynastie impériale chinoise ?",
+          "a": "Les Qing"
+        },
+        {
+          "level": 4,
+          "q": "Qui fut le dernier empereur de Chine ?",
+          "a": "Puyi"
+        },
+        {
+          "level": 5,
+          "q": "En quelle année l'empire chinois a-t-il pris fin : 1840, 1912 ou 1949 ?",
+          "a": "En 1912"
+        },
+        {
+          "level": 6,
+          "q": "Quelle dynastie d'origine mongole a régné sur la Chine aux XIIIe et XIVe siècles ?",
+          "a": "Les Yuan"
+        },
+        {
+          "level": 7,
+          "q": "Quel peuple a fondé la dynastie Qing : les Mongols, les Mandchous ou les Tibétains ?",
+          "a": "Les Mandchous"
+        },
+        {
+          "level": 8,
+          "q": "Quelle dynastie, dont la capitale était Chang'an, est considérée comme l'âge d'or de la poésie chinoise ?",
+          "a": "Les Tang"
+        },
+        {
+          "level": 9,
+          "q": "Qui fut la seule femme de l'histoire chinoise à régner comme impératrice en titre ?",
+          "a": "Wu Zetian"
+        },
+        {
+          "level": 10,
+          "q": "Quelle est la plus ancienne dynastie attestée par l'archéologie, connue pour ses inscriptions sur os oraculaires ?",
+          "a": "Les Shang"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les guerres de l'opium et la fin de l'empire",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle drogue a donné son nom aux guerres menées contre la Chine au XIXe siècle ?",
+          "a": "L'opium"
+        },
+        {
+          "level": 2,
+          "q": "Quel pays a affronté la Chine lors de la première guerre de l'opium : le Royaume-Uni, l'Espagne ou l'Allemagne ?",
+          "a": "Le Royaume-Uni"
+        },
+        {
+          "level": 3,
+          "q": "Quelle île la Chine a-t-elle cédée au Royaume-Uni en 1842 ?",
+          "a": "Hong Kong"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année Hong Kong a-t-il été rétrocédé à la Chine : 1984, 1997 ou 2007 ?",
+          "a": "En 1997"
+        },
+        {
+          "level": 5,
+          "q": "Avant les guerres de l'opium, quel port était le seul ouvert au commerce avec les Occidentaux ?",
+          "a": "Canton (Guangzhou)"
+        },
+        {
+          "level": 6,
+          "q": "Quel traité de 1842 a mis fin à la première guerre de l'opium ?",
+          "a": "Le traité de Nankin"
+        },
+        {
+          "level": 7,
+          "q": "Quel commissaire impérial a fait détruire l'opium britannique à Canton en 1839 ?",
+          "a": "Lin Zexu"
+        },
+        {
+          "level": 8,
+          "q": "Quel palais de Pékin a été pillé et incendié par les troupes franco-britanniques en 1860 ?",
+          "a": "L'ancien palais d'Été (Yuanmingyuan)"
+        },
+        {
+          "level": 9,
+          "q": "Quelle immense révolte, menée par Hong Xiuquan, a ravagé la Chine de 1850 à 1864 ?",
+          "a": "La révolte des Taiping"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle la révolution de 1911 qui a renversé la dynastie Qing ?",
+          "a": "La révolution Xinhai"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Chine de Mao",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui a proclamé la République populaire de Chine en 1949 ?",
+          "a": "Mao Zedong"
+        },
+        {
+          "level": 2,
+          "q": "Sur quelle grande place de Pékin a-t-il fait cette proclamation ?",
+          "a": "La place Tian'anmen"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Le « Petit Livre rouge » est un recueil de citations de Mao.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on la longue retraite des communistes chinois en 1934-1935 ?",
+          "a": "La Longue Marche"
+        },
+        {
+          "level": 5,
+          "q": "Quel parti, dirigé par Tchang Kaï-chek, s'est replié à Taïwan en 1949 ?",
+          "a": "Le Kuomintang (Parti nationaliste)"
+        },
+        {
+          "level": 6,
+          "q": "Comment appelle-t-on le mouvement politique lancé par Mao en 1966 ?",
+          "a": "La Révolution culturelle"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelaient les jeunes militants qui en étaient le fer de lance ?",
+          "a": "Les gardes rouges"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelait la campagne économique de 1958 qui a provoqué une terrible famine ?",
+          "a": "Le Grand Bond en avant"
+        },
+        {
+          "level": 9,
+          "q": "Quel dirigeant a lancé la politique de « réforme et d'ouverture » à partir de 1978 ?",
+          "a": "Deng Xiaoping"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelait le groupe dirigé par Jiang Qing, la veuve de Mao, arrêté en 1976 ?",
+          "a": "La Bande des Quatre"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Shoguns et samouraïs",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelle-t-on les guerriers du Japon féodal ?",
+          "a": "Les samouraïs"
+        },
+        {
+          "level": 2,
+          "q": "Quel titre portait le chef militaire qui gouvernait réellement le Japon à la place de l'empereur ?",
+          "a": "Shogun"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le code d'honneur des samouraïs ?",
+          "a": "Le bushido"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le nom du célèbre sabre courbe des samouraïs ?",
+          "a": "Le katana"
+        },
+        {
+          "level": 5,
+          "q": "Quelle famille a dirigé le shogunat de 1603 à 1867 ?",
+          "a": "Les Tokugawa"
+        },
+        {
+          "level": 6,
+          "q": "Quelle bataille de 1600 a permis à Tokugawa Ieyasu de s'imposer ?",
+          "a": "La bataille de Sekigahara"
+        },
+        {
+          "level": 7,
+          "q": "Quel était le nom de la ville devenue Tokyo ?",
+          "a": "Edo"
+        },
+        {
+          "level": 8,
+          "q": "Quel premier shogunat a été fondé par Minamoto no Yoritomo à la fin du XIIe siècle ?",
+          "a": "Le shogunat de Kamakura"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle la politique de fermeture du Japon aux étrangers sous les Tokugawa ?",
+          "a": "Le sakoku"
+        },
+        {
+          "level": 10,
+          "q": "Quel unificateur du Japon, mort en 1598, a lancé deux invasions de la Corée ?",
+          "a": "Toyotomi Hideyoshi"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "L'ère Meiji",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Le Japon a encore un empereur aujourd'hui.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle l'époque de modernisation du Japon ouverte en 1868 : ère Meiji, Edo ou Heian ?",
+          "a": "L'ère Meiji"
+        },
+        {
+          "level": 3,
+          "q": "Quel pays a envoyé les « navires noirs » du commodore Perry en 1853 : les États-Unis, le Royaume-Uni ou la Russie ?",
+          "a": "Les États-Unis"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Au début de l'ère Meiji, l'empereur s'est installé de Kyoto à Tokyo.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel pays le Japon a-t-il vaincu lors de la guerre de 1904-1905 ?",
+          "a": "La Russie"
+        },
+        {
+          "level": 6,
+          "q": "Contre quel pays le Japon a-t-il gagné la guerre de 1894-1895 ?",
+          "a": "La Chine (des Qing)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle île le Japon a-t-il obtenue à l'issue de cette guerre de 1894-1895 ?",
+          "a": "Taïwan (Formose)"
+        },
+        {
+          "level": 8,
+          "q": "Quelle bataille navale de 1905 a vu la victoire de l'amiral Tōgō sur la flotte russe ?",
+          "a": "La bataille de Tsushima"
+        },
+        {
+          "level": 9,
+          "q": "Quel penseur de l'ère Meiji a fondé l'université Keiō ?",
+          "a": "Fukuzawa Yukichi"
+        },
+        {
+          "level": 10,
+          "q": "Quel était le nom personnel de l'empereur Meiji ?",
+          "a": "Mutsuhito"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Seconde Guerre mondiale en Asie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle base américaine le Japon a-t-il attaquée le 7 décembre 1941 ?",
+          "a": "Pearl Harbor"
+        },
+        {
+          "level": 2,
+          "q": "Sur quelle ville a été larguée la première bombe atomique, le 6 août 1945 ?",
+          "a": "Hiroshima"
+        },
+        {
+          "level": 3,
+          "q": "Quelle ville a été frappée par la deuxième bombe atomique, le 9 août 1945 ?",
+          "a": "Nagasaki"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Le Japon a signé sa capitulation à bord d'un cuirassé américain.",
+          "a": "Vrai (l'USS Missouri)"
+        },
+        {
+          "level": 5,
+          "q": "Quel empereur a annoncé la capitulation du Japon à la radio ?",
+          "a": "Hirohito (empereur Shōwa)"
+        },
+        {
+          "level": 6,
+          "q": "Quelle région du nord-est de la Chine le Japon a-t-il envahie en 1931 ?",
+          "a": "La Mandchourie"
+        },
+        {
+          "level": 7,
+          "q": "Quel massacre de 1937 a eu lieu dans la capitale chinoise de l'époque ?",
+          "a": "Le massacre de Nankin"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelait le bombardier américain qui a largué la bombe sur Hiroshima ?",
+          "a": "Enola Gay"
+        },
+        {
+          "level": 9,
+          "q": "Quelle bataille aéronavale de juin 1942 a marqué un tournant dans la guerre du Pacifique ?",
+          "a": "La bataille de Midway"
+        },
+        {
+          "level": 10,
+          "q": "Quel incident de juillet 1937, près de Pékin, a déclenché la guerre sino-japonaise ?",
+          "a": "L'incident du pont Marco-Polo"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Corée de Joseon et le hangeul",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle l'alphabet coréen ?",
+          "a": "Le hangeul"
+        },
+        {
+          "level": 2,
+          "q": "Quel roi a créé l'alphabet coréen ?",
+          "a": "Sejong le Grand"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Le roi Sejong figure sur le billet sud-coréen de 10 000 wons.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel pays a annexé la Corée en 1910 ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 5,
+          "q": "Quelle dynastie a régné sur la Corée de 1392 jusqu'à la fin du XIXe siècle ?",
+          "a": "Joseon"
+        },
+        {
+          "level": 6,
+          "q": "En quel siècle le hangeul a-t-il été promulgué : XVe, XVIIe ou XIXe ?",
+          "a": "Au XVe siècle (1446)"
+        },
+        {
+          "level": 7,
+          "q": "Combien de lettres compte l'alphabet coréen moderne : 14, 24 ou 34 ?",
+          "a": "24"
+        },
+        {
+          "level": 8,
+          "q": "Quel amiral coréen a vaincu la flotte japonaise grâce aux « bateaux-tortues » ?",
+          "a": "Yi Sun-sin"
+        },
+        {
+          "level": 9,
+          "q": "Quel royaume a unifié la majeure partie de la péninsule coréenne au VIIe siècle ?",
+          "a": "Silla"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le texte de 1446 qui a promulgué l'alphabet coréen ?",
+          "a": "Le Hunminjeongeum (« les sons corrects pour instruire le peuple »)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les deux Corées",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de la Corée du Sud ?",
+          "a": "Séoul"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de la Corée du Nord ?",
+          "a": "Pyongyang"
+        },
+        {
+          "level": 3,
+          "q": "Quel parallèle sépare approximativement les deux Corées : le 17e, le 38e ou le 49e ?",
+          "a": "Le 38e parallèle"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année a commencé la guerre de Corée : 1945, 1950 ou 1960 ?",
+          "a": "En 1950"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le sigle de la zone démilitarisée qui sépare les deux Corées ?",
+          "a": "La DMZ"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux ? La guerre de Corée s'est terminée par un traité de paix.",
+          "a": "Faux (par un armistice en 1953)"
+        },
+        {
+          "level": 7,
+          "q": "Qui fut le premier dirigeant de la Corée du Nord ?",
+          "a": "Kim Il-sung"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel village de la frontière l'armistice de 1953 a-t-il été signé ?",
+          "a": "Panmunjom"
+        },
+        {
+          "level": 9,
+          "q": "Qui fut le premier président de la Corée du Sud ?",
+          "a": "Syngman Rhee"
+        },
+        {
+          "level": 10,
+          "q": "Quel général américain a mené le débarquement d'Incheon en 1950 ?",
+          "a": "Douglas MacArthur"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Gengis Khan et la Mongolie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel conquérant mongol a fondé le plus grand empire d'un seul tenant de l'histoire ?",
+          "a": "Gengis Khan"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de la Mongolie ?",
+          "a": "Oulan-Bator"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la tente ronde traditionnelle des nomades mongols ?",
+          "a": "La yourte (ger)"
+        },
+        {
+          "level": 4,
+          "q": "Quel grand désert s'étend au sud de la Mongolie ?",
+          "a": "Le désert de Gobi"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? Le vrai nom de Gengis Khan était Temüjin.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "En quelle année Temüjin a-t-il été proclamé Gengis Khan : 1066, 1206 ou 1453 ?",
+          "a": "En 1206"
+        },
+        {
+          "level": 7,
+          "q": "Quel petit-fils de Gengis Khan a fondé la dynastie Yuan en Chine ?",
+          "a": "Kubilai Khan"
+        },
+        {
+          "level": 8,
+          "q": "Quelle ville était la capitale de l'Empire mongol au XIIIe siècle ?",
+          "a": "Karakorum"
+        },
+        {
+          "level": 9,
+          "q": "Quelle bataille de 1260, en Palestine, a vu les Mamelouks stopper l'avancée mongole ?",
+          "a": "La bataille d'Aïn Djalout"
+        },
+        {
+          "level": 10,
+          "q": "Quel nom les Japonais ont-ils donné aux typhons qui ont détruit les flottes d'invasion mongoles en 1274 et 1281 ?",
+          "a": "Kamikaze (« vent divin »)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les écritures d'Asie de l'Est",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Le chinois s'écrit avec un alphabet de 26 lettres.",
+          "a": "Faux (avec des caractères)"
+        },
+        {
+          "level": 2,
+          "q": "Comment appelle-t-on les caractères chinois utilisés en japonais ?",
+          "a": "Les kanji"
+        },
+        {
+          "level": 3,
+          "q": "Combien de systèmes d'écriture principaux le japonais utilise-t-il : 1, 2 ou 3 ?",
+          "a": "3 (kanji, hiragana, katakana)"
+        },
+        {
+          "level": 4,
+          "q": "Quel syllabaire japonais sert surtout à écrire les mots d'origine étrangère ?",
+          "a": "Les katakana"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le système officiel de transcription du chinois en alphabet latin ?",
+          "a": "Le pinyin"
+        },
+        {
+          "level": 6,
+          "q": "Quels caractères la Chine populaire a-t-elle introduits dans les années 1950, alors que Taïwan et Hong Kong ont gardé les traditionnels ?",
+          "a": "Les caractères simplifiés"
+        },
+        {
+          "level": 7,
+          "q": "Combien de tons compte le mandarin standard, sans compter le ton neutre : 2, 4 ou 9 ?",
+          "a": "4"
+        },
+        {
+          "level": 8,
+          "q": "Que signifie le caractère chinois 山 ?",
+          "a": "Montagne"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle l'écriture du vietnamien en alphabet latin ?",
+          "a": "Le quốc ngữ"
+        },
+        {
+          "level": 10,
+          "q": "Comment les Coréens appellent-ils les caractères chinois ?",
+          "a": "Les hanja"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie de la Chine",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de la Chine ?",
+          "a": "Pékin (Beijing)"
+        },
+        {
+          "level": 2,
+          "q": "Quel est le plus long fleuve de Chine : le Yangtsé, le Mékong ou le Gange ?",
+          "a": "Le Yangtsé (Chang Jiang)"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux ? Le fleuve Jaune doit sa couleur aux limons de lœss qu'il transporte.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel est le plus haut sommet du monde, à la frontière entre la Chine et le Népal ?",
+          "a": "L'Everest"
+        },
+        {
+          "level": 5,
+          "q": "Quelle grande ville portuaire se trouve à l'embouchure du Yangtsé ?",
+          "a": "Shanghai"
+        },
+        {
+          "level": 6,
+          "q": "Quel haut plateau chinois est surnommé « le toit du monde » ?",
+          "a": "Le plateau du Tibet"
+        },
+        {
+          "level": 7,
+          "q": "Quel barrage sur le Yangtsé abrite la plus puissante centrale hydroélectrique du monde ?",
+          "a": "Le barrage des Trois-Gorges"
+        },
+        {
+          "level": 8,
+          "q": "Quelle est l'altitude officielle de l'Everest depuis 2020 : 6 962 m, 8 849 m ou 9 210 m ?",
+          "a": "8 849 m"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la plus vaste région administrative de Chine ?",
+          "a": "Le Xinjiang"
+        },
+        {
+          "level": 10,
+          "q": "Avec combien de pays la Chine partage-t-elle une frontière terrestre : 10, 14 ou 20 ?",
+          "a": "14"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La géographie du Japon",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la plus haute montagne du Japon ?",
+          "a": "Le mont Fuji"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le Japon est un archipel.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quel océan borde la côte est du Japon ?",
+          "a": "L'océan Pacifique"
+        },
+        {
+          "level": 4,
+          "q": "Quelle est la plus grande île du Japon, où se trouve Tokyo ?",
+          "a": "Honshū"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la plus septentrionale des quatre grandes îles du Japon ?",
+          "a": "Hokkaidō"
+        },
+        {
+          "level": 6,
+          "q": "Quelle est l'altitude du mont Fuji : 2 776 m, 3 776 m ou 4 776 m ?",
+          "a": "3 776 m"
+        },
+        {
+          "level": 7,
+          "q": "Quelle ville fut la capitale impériale du Japon de 794 à 1868 ?",
+          "a": "Kyoto"
+        },
+        {
+          "level": 8,
+          "q": "Quelle ville fut la capitale du Japon de 710 à 784 ?",
+          "a": "Nara"
+        },
+        {
+          "level": 9,
+          "q": "À quel archipel du sud du Japon appartient l'île d'Okinawa ?",
+          "a": "Les îles Ryūkyū"
+        },
+        {
+          "level": 10,
+          "q": "Quel détroit sépare le Japon de la Corée du Sud ?",
+          "a": "Le détroit de Corée (ou de Tsushima)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Taïwan, Hong Kong et Macao",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de Taïwan ?",
+          "a": "Taipei"
+        },
+        {
+          "level": 2,
+          "q": "Quel ancien nom, d'origine portugaise et signifiant « la belle », désignait Taïwan ?",
+          "a": "Formose"
+        },
+        {
+          "level": 3,
+          "q": "Quelle langue chinoise est majoritaire à Hong Kong : le mandarin, le cantonais ou le hakka ?",
+          "a": "Le cantonais"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? Macao a été administrée par le Portugal.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel principe résume le statut de Hong Kong et de Macao au sein de la Chine ?",
+          "a": "« Un pays, deux systèmes »"
+        },
+        {
+          "level": 6,
+          "q": "Quel gratte-ciel de Taipei a été le plus haut du monde de 2004 à 2010 ?",
+          "a": "La tour Taipei 101"
+        },
+        {
+          "level": 7,
+          "q": "Quel bras de mer sépare Taïwan de la Chine continentale ?",
+          "a": "Le détroit de Taïwan"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année Macao a-t-elle été rétrocédée à la Chine : 1997, 1999 ou 2001 ?",
+          "a": "En 1999"
+        },
+        {
+          "level": 9,
+          "q": "Quelle est la plus haute montagne de Taïwan ?",
+          "a": "Le Yushan (mont de Jade)"
+        },
+        {
+          "level": 10,
+          "q": "Quel loyaliste Ming a chassé les Hollandais de Taïwan en 1662 ?",
+          "a": "Koxinga (Zheng Chenggong)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Les prix Nobel d'Asie de l'Est",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux ? Un écrivain japonais a déjà reçu le prix Nobel de littérature.",
+          "a": "Vrai (Kawabata en 1968, Ōe en 1994)"
+        },
+        {
+          "level": 2,
+          "q": "Quelle romancière sud-coréenne a reçu le prix Nobel de littérature en 2024 ?",
+          "a": "Han Kang"
+        },
+        {
+          "level": 3,
+          "q": "Quel écrivain chinois a reçu le prix Nobel de littérature en 2012 ?",
+          "a": "Mo Yan"
+        },
+        {
+          "level": 4,
+          "q": "Quel président sud-coréen a reçu le prix Nobel de la paix en 2000 ?",
+          "a": "Kim Dae-jung"
+        },
+        {
+          "level": 5,
+          "q": "Quel auteur de « Pays de neige » a été le premier Japonais Nobel de littérature, en 1968 ?",
+          "a": "Yasunari Kawabata"
+        },
+        {
+          "level": 6,
+          "q": "Quel dissident chinois emprisonné a reçu le prix Nobel de la paix en 2010 ?",
+          "a": "Liu Xiaobo"
+        },
+        {
+          "level": 7,
+          "q": "Quel écrivain britannique né à Nagasaki a reçu le prix Nobel de littérature en 2017 ?",
+          "a": "Kazuo Ishiguro"
+        },
+        {
+          "level": 8,
+          "q": "Quel écrivain japonais a reçu le prix Nobel de littérature en 1994 ?",
+          "a": "Kenzaburō Ōe"
+        },
+        {
+          "level": 9,
+          "q": "Quelle scientifique chinoise a reçu le prix Nobel de médecine en 2015 pour la découverte de l'artémisinine contre le paludisme ?",
+          "a": "Tu Youyou"
+        },
+        {
+          "level": 10,
+          "q": "Quel physicien fut le premier Japonais à recevoir un prix Nobel, en 1949 ?",
+          "a": "Hideki Yukawa"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La littérature classique d'Asie de l'Est",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le Roi des singes, célèbre personnage du « Voyage vers l'Ouest » ?",
+          "a": "Sun Wukong"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le haïku est un poème court d'origine japonaise.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Combien de syllabes compte un haïku traditionnel : 12, 17 ou 31 ?",
+          "a": "17 (5-7-5)"
+        },
+        {
+          "level": 4,
+          "q": "Quel maître du haïku du XVIIe siècle a écrit le célèbre poème de la grenouille et du vieil étang ?",
+          "a": "Matsuo Bashō"
+        },
+        {
+          "level": 5,
+          "q": "Quel roman japonais du XIe siècle, écrit par Murasaki Shikibu, est souvent présenté comme l'un des premiers romans au monde ?",
+          "a": "Le Dit du Genji"
+        },
+        {
+          "level": 6,
+          "q": "Quel roman classique chinois raconte les aventures de 108 hors-la-loi ?",
+          "a": "Au bord de l'eau"
+        },
+        {
+          "level": 7,
+          "q": "Quel roman classique chinois met en scène Liu Bei, Cao Cao et Zhuge Liang ?",
+          "a": "Les Trois Royaumes"
+        },
+        {
+          "level": 8,
+          "q": "Quel poète de la dynastie Tang est surnommé « l'Immortel de la poésie » ?",
+          "a": "Li Bai (Li Po)"
+        },
+        {
+          "level": 9,
+          "q": "Quelle dame de la cour de Heian a écrit les « Notes de chevet » ?",
+          "a": "Sei Shōnagon"
+        },
+        {
+          "level": 10,
+          "q": "Quel roman du XVIIIe siècle de Cao Xueqin est considéré comme le chef-d'œuvre du roman chinois ?",
+          "a": "Le Rêve dans le pavillon rouge"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en thé ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le matcha est un thé vert en poudre originaire de quel pays : le Japon, l'Inde ou le Kenya ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le thé vert et le thé noir proviennent de la même plante.",
+          "a": "Vrai (Camellia sinensis)"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la cérémonie du thé japonaise en japonais ?",
+          "a": "Le chanoyu (ou sadō / chadō)"
+        },
+        {
+          "level": 4,
+          "q": "Le thé Pu-erh vient de quelle province chinoise : le Yunnan, le Fujian ou le Guangdong ?",
+          "a": "Du Yunnan"
+        },
+        {
+          "level": 5,
+          "q": "Ce que les Occidentaux appellent « thé noir », les Chinois l'appellent thé de quelle couleur ?",
+          "a": "Thé rouge (hong cha)"
+        },
+        {
+          "level": 6,
+          "q": "Le thé oolong est : non oxydé, semi-oxydé ou totalement oxydé ?",
+          "a": "Semi-oxydé"
+        },
+        {
+          "level": 7,
+          "q": "Quel célèbre thé vert chinois, dont le nom signifie « Puits du dragon », est cultivé près de Hangzhou ?",
+          "a": "Le Longjing"
+        },
+        {
+          "level": 8,
+          "q": "Quel maître de thé japonais du XVIe siècle a codifié la cérémonie du thé dans l'esprit wabi ?",
+          "a": "Sen no Rikyū"
+        },
+        {
+          "level": 9,
+          "q": "Qu'a de particulier la culture du thé vert japonais gyokuro ?",
+          "a": "Les théiers sont mis à l'ombre plusieurs semaines avant la récolte"
+        },
+        {
+          "level": 10,
+          "q": "Le lapsang souchong, thé fumé, vient de quels monts chinois ?",
+          "a": "Des monts Wuyi (Fujian)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en saké et whisky japonais ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le saké est fabriqué à partir : de riz, d'orge ou de pomme de terre ?",
+          "a": "De riz"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le saké peut se boire chaud.",
+          "a": "Vrai (on parle d'atsukan)"
+        },
+        {
+          "level": 3,
+          "q": "Quel groupe japonais produit les whiskies Yamazaki et Hibiki ?",
+          "a": "Suntory"
+        },
+        {
+          "level": 4,
+          "q": "La distillerie Yamazaki, première distillerie de whisky du Japon, a ouvert dans quelle décennie : les années 1920, 1950 ou 1970 ?",
+          "a": "Les années 1920 (1923)"
+        },
+        {
+          "level": 5,
+          "q": "Quelle moisissure sert à transformer l'amidon du riz en sucre pour faire le saké ?",
+          "a": "Le kōji (Aspergillus oryzae)"
+        },
+        {
+          "level": 6,
+          "q": "Quel Japonais, fondateur de Nikka, est allé apprendre la fabrication du whisky en Écosse ?",
+          "a": "Masataka Taketsuru"
+        },
+        {
+          "level": 7,
+          "q": "Comment appelle-t-on le maître brasseur d'une brasserie de saké ?",
+          "a": "Le tōji"
+        },
+        {
+          "level": 8,
+          "q": "La distillerie Yoichi de Nikka se trouve sur quelle île japonaise ?",
+          "a": "Hokkaidō"
+        },
+        {
+          "level": 9,
+          "q": "Pour un saké daiginjō, le grain de riz doit être poli jusqu'à n'en garder au maximum que : 50 %, 70 % ou 90 % ?",
+          "a": "50 %"
+        },
+        {
+          "level": 10,
+          "q": "Quel chêne japonais, très prisé pour les fûts de whisky, donne des notes d'encens et de santal ?",
+          "a": "Le mizunara"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en soju, makgeolli et baijiu ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le soju est l'alcool national de quel pays : la Corée du Sud, la Thaïlande ou le Vietnam ?",
+          "a": "De la Corée du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? Le makgeolli est un alcool de riz coréen laiteux et légèrement pétillant.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Le baijiu est l'eau-de-vie traditionnelle de quel pays ?",
+          "a": "De la Chine"
+        },
+        {
+          "level": 4,
+          "q": "Avec quoi mélange-t-on le soju dans le « somaek » ?",
+          "a": "De la bière"
+        },
+        {
+          "level": 5,
+          "q": "Le Moutai (Maotai) vient de quelle province chinoise : le Guizhou, le Sichuan ou le Shandong ?",
+          "a": "Du Guizhou"
+        },
+        {
+          "level": 6,
+          "q": "Quelle céréale est la plus utilisée pour fabriquer le baijiu ?",
+          "a": "Le sorgho"
+        },
+        {
+          "level": 7,
+          "q": "Quelle marque de soju, de HiteJinro, est souvent citée comme la marque d'alcool fort la plus vendue au monde ?",
+          "a": "Jinro (Chamisul)"
+        },
+        {
+          "level": 8,
+          "q": "Quel alcool distillé japonais, souvent à base de patate douce ou d'orge, est le cousin du soju ?",
+          "a": "Le shōchū"
+        },
+        {
+          "level": 9,
+          "q": "Le huangjiu de Shaoxing est : un vin de riz, une bière de sorgho ou une liqueur de prune ?",
+          "a": "Un vin de riz (« vin jaune »)"
+        },
+        {
+          "level": 10,
+          "q": "À quel président américain Zhou Enlai a-t-il servi du Moutai lors d'un banquet à Pékin en 1972 ?",
+          "a": "Richard Nixon"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cuisine japonaise ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Les sushis viennent de quel pays ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 2,
+          "q": "Quelle pâte verte et piquante sert-on avec les sushis ?",
+          "a": "Le wasabi"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on les tranches de poisson cru servies sans riz ?",
+          "a": "Le sashimi"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? La plupart du « wasabi » servi hors du Japon est en réalité du raifort coloré.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel poisson-globe, potentiellement mortel, exige une licence spéciale pour être préparé au Japon ?",
+          "a": "Le fugu"
+        },
+        {
+          "level": 6,
+          "q": "Le bouillon de ramen à base d'os de porc, spécialité de Fukuoka, s'appelle comment ?",
+          "a": "Le tonkotsu (style Hakata)"
+        },
+        {
+          "level": 7,
+          "q": "Le bœuf de Kobe vient de quelle préfecture : Hyōgo, Hokkaidō ou Okinawa ?",
+          "a": "Hyōgo"
+        },
+        {
+          "level": 8,
+          "q": "Quelle cinquième saveur a été identifiée par le chimiste japonais Kikunae Ikeda en 1908 ?",
+          "a": "L'umami"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le repas gastronomique traditionnel japonais servi en nombreux petits plats ?",
+          "a": "Le kaiseki"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on la partie la plus grasse et la plus chère du ventre de thon ?",
+          "a": "L'ōtoro"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cuisine chinoise ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le canard laqué est une spécialité de quelle ville ?",
+          "a": "Pékin"
+        },
+        {
+          "level": 2,
+          "q": "Les dim sum sont associés à quelle cuisine : cantonaise, sichuanaise ou hunanaise ?",
+          "a": "Cantonaise"
+        },
+        {
+          "level": 3,
+          "q": "Quelle épice provoque une sensation d'engourdissement dans la cuisine du Sichuan ?",
+          "a": "Le poivre du Sichuan"
+        },
+        {
+          "level": 4,
+          "q": "La fondue chinoise épicée (huoguo) la plus célèbre vient de quelle ville : Chongqing, Shanghai ou Harbin ?",
+          "a": "Chongqing"
+        },
+        {
+          "level": 5,
+          "q": "Les xiaolongbao, raviolis remplis de bouillon, sont associés à quelle ville ?",
+          "a": "Shanghai"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle la tradition cantonaise de prendre le thé en mangeant des dim sum ?",
+          "a": "Le yum cha"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux ? Les fortune cookies sont une invention traditionnelle chinoise.",
+          "a": "Faux (popularisés aux États-Unis)"
+        },
+        {
+          "level": 8,
+          "q": "Quel plat de tofu épicé à la viande hachée doit son nom à une vieille femme au visage grêlé ?",
+          "a": "Le mapo tofu"
+        },
+        {
+          "level": 9,
+          "q": "Comment appelle-t-on en chinois la saveur « piquante et engourdissante » typique du Sichuan ?",
+          "a": "Le mala"
+        },
+        {
+          "level": 10,
+          "q": "La cuisine Lu, l'une des huit grandes cuisines chinoises, est celle de quelle province ?",
+          "a": "Le Shandong"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cuisine coréenne ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le kimchi est surtout fait de : chou fermenté, pommes ou riz ?",
+          "a": "De chou fermenté (chou chinois)"
+        },
+        {
+          "level": 2,
+          "q": "Quel plat coréen a un nom qui signifie « riz mélangé » ?",
+          "a": "Le bibimbap"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le bœuf mariné en fines tranches grillé du barbecue coréen ?",
+          "a": "Le bulgogi"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle la pâte de piment rouge fermentée coréenne ?",
+          "a": "Le gochujang"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on les petits plats d'accompagnement servis avec un repas coréen ?",
+          "a": "Les banchan"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux ? En Corée, la politesse veut qu'on se serve soi-même à boire.",
+          "a": "Faux (on sert les autres)"
+        },
+        {
+          "level": 7,
+          "q": "Le kimjang, préparation collective du kimchi inscrite à l'UNESCO, a lieu à quelle saison ?",
+          "a": "À la fin de l'automne (avant l'hiver)"
+        },
+        {
+          "level": 8,
+          "q": "Le budae-jjigae, « ragoût de l'armée » au Spam et aux saucisses, est né après quelle guerre ?",
+          "a": "La guerre de Corée"
+        },
+        {
+          "level": 9,
+          "q": "Le samgyetang est un poulet entier en soupe farci de riz et de quelle racine ?",
+          "a": "Le ginseng"
+        },
+        {
+          "level": 10,
+          "q": "Les nouilles froides naengmyeon, emblèmes de Pyongyang, sont surtout faites de quelle farine ?",
+          "a": "De sarrasin"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en médecine traditionnelle chinoise ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "L'acupuncture utilise : des aiguilles, des aimants ou des pierres ?",
+          "a": "Des aiguilles"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? L'acupuncture est née en Chine.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle l'énergie vitale en médecine chinoise ?",
+          "a": "Le qi (chi)"
+        },
+        {
+          "level": 4,
+          "q": "Quelles sont les deux forces opposées et complémentaires de la pensée chinoise ?",
+          "a": "Le yin et le yang"
+        },
+        {
+          "level": 5,
+          "q": "Quelle racine, surnommée « racine-homme », est particulièrement réputée en Corée ?",
+          "a": "Le ginseng"
+        },
+        {
+          "level": 6,
+          "q": "Quelle technique utilise des ventouses pour créer une aspiration sur la peau ?",
+          "a": "Les ventouses (ba guan)"
+        },
+        {
+          "level": 7,
+          "q": "Comment appelle-t-on les canaux dans lesquels circule le qi ?",
+          "a": "Les méridiens"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle la technique qui consiste à faire brûler de l'armoise près de la peau ?",
+          "a": "La moxibustion"
+        },
+        {
+          "level": 9,
+          "q": "La Chinoise Tu Youyou a reçu le Nobel de médecine 2015 pour un traitement contre quelle maladie ?",
+          "a": "Le paludisme (l'artémisinine)"
+        },
+        {
+          "level": 10,
+          "q": "Les cinq éléments de la pensée chinoise sont le bois, le feu, la terre, le métal et… ?",
+          "a": "L'eau"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en arts martiaux ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le judo vient de quel pays ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 2,
+          "q": "Le taekwondo vient de quel pays : la Corée, la Chine ou le Japon ?",
+          "a": "De la Corée"
+        },
+        {
+          "level": 3,
+          "q": "Quel art martial chinois lent est pratiqué le matin dans les parcs ?",
+          "a": "Le tai-chi (taiji quan)"
+        },
+        {
+          "level": 4,
+          "q": "Quel art martial japonais se pratique avec des sabres en bambou ?",
+          "a": "Le kendo"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux ? Bruce Lee est né à Hong Kong.",
+          "a": "Faux (à San Francisco)"
+        },
+        {
+          "level": 6,
+          "q": "Le temple Shaolin se trouve dans quelle province chinoise : le Henan, le Yunnan ou le Guangdong ?",
+          "a": "Le Henan"
+        },
+        {
+          "level": 7,
+          "q": "Le karaté est né dans quelle région du Japon ?",
+          "a": "Okinawa"
+        },
+        {
+          "level": 8,
+          "q": "Quel style de kung-fu enseignait Ip Man, le maître de Bruce Lee ?",
+          "a": "Le wing chun"
+        },
+        {
+          "level": 9,
+          "q": "Qui a fondé le judo en 1882 ?",
+          "a": "Jigorō Kanō"
+        },
+        {
+          "level": 10,
+          "q": "Qui a fondé l'aïkido ?",
+          "a": "Morihei Ueshiba"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en philosophies et religions d'Asie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui est le fondateur du bouddhisme ?",
+          "a": "Bouddha (Siddhartha Gautama)"
+        },
+        {
+          "level": 2,
+          "q": "Le shintoïsme est la religion originelle de quel pays ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 3,
+          "q": "Confucius était : chinois, japonais ou coréen ?",
+          "a": "Chinois"
+        },
+        {
+          "level": 4,
+          "q": "Quel livre attribué à Laozi est le texte fondateur du taoïsme ?",
+          "a": "Le Tao-tö-king (Daodejing)"
+        },
+        {
+          "level": 5,
+          "q": "Le zen est une école de quelle religion ?",
+          "a": "Du bouddhisme"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux ? Les portiques torii marquent l'entrée des sanctuaires shinto.",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle le recueil des paroles de Confucius ?",
+          "a": "Les Entretiens (Analectes)"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on le zen en Chine ?",
+          "a": "Le chan"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle province chinoise actuelle Confucius est-il né ?",
+          "a": "Le Shandong (Qufu)"
+        },
+        {
+          "level": 10,
+          "q": "À quelle déesse du soleil est dédié le grand sanctuaire d'Ise ?",
+          "a": "Amaterasu"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en histoire de la Chine moderne ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Qui a proclamé la République populaire de Chine ?",
+          "a": "Mao Zedong"
+        },
+        {
+          "level": 2,
+          "q": "En quelle année la République populaire de Chine a-t-elle été proclamée : 1919, 1949 ou 1979 ?",
+          "a": "1949"
+        },
+        {
+          "level": 3,
+          "q": "Le « Petit Livre rouge » rassemble les citations de qui ?",
+          "a": "De Mao Zedong"
+        },
+        {
+          "level": 4,
+          "q": "La Longue Marche a eu lieu dans quelle décennie : les années 1930, 1950 ou 1960 ?",
+          "a": "Les années 1930 (1934-1935)"
+        },
+        {
+          "level": 5,
+          "q": "Quel mouvement lancé par Mao en 1966 a vu les Gardes rouges s'en prendre aux « quatre vieilleries » ?",
+          "a": "La Révolution culturelle"
+        },
+        {
+          "level": 6,
+          "q": "Quel dirigeant a lancé la politique de « réforme et d'ouverture » à partir de 1978 ?",
+          "a": "Deng Xiaoping"
+        },
+        {
+          "level": 7,
+          "q": "Quel chef nationaliste s'est replié à Taïwan en 1949 ?",
+          "a": "Tchang Kaï-chek"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année Mao a-t-il lancé le Grand Bond en avant ?",
+          "a": "1958"
+        },
+        {
+          "level": 9,
+          "q": "En quelle année la Chine a-t-elle annoncé la fin de la politique de l'enfant unique : 2005, 2015 ou 2020 ?",
+          "a": "2015 (effective en 2016)"
+        },
+        {
+          "level": 10,
+          "q": "Quelle ville voisine de Hong Kong, simple bourg devenu mégapole, fut l'une des premières zones économiques spéciales en 1980 ?",
+          "a": "Shenzhen"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort sur les deux Corées ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En combien d'États la péninsule coréenne est-elle divisée ?",
+          "a": "Deux"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de la Corée du Nord ?",
+          "a": "Pyongyang"
+        },
+        {
+          "level": 3,
+          "q": "La guerre de Corée a commencé en : 1940, 1950 ou 1960 ?",
+          "a": "1950"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? La guerre de Corée s'est officiellement terminée par un traité de paix.",
+          "a": "Faux (par un armistice en 1953)"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on la bande de terre qui sépare les deux Corées ?",
+          "a": "La DMZ (zone démilitarisée)"
+        },
+        {
+          "level": 6,
+          "q": "Le long de quel parallèle la Corée a-t-elle été divisée en 1945 ?",
+          "a": "Le 38e parallèle"
+        },
+        {
+          "level": 7,
+          "q": "Qui a fondé la Corée du Nord ?",
+          "a": "Kim Il-sung"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel village l'armistice de 1953 a-t-il été signé ?",
+          "a": "Panmunjom"
+        },
+        {
+          "level": 9,
+          "q": "En quelle année le Japon a-t-il annexé la Corée ?",
+          "a": "1910"
+        },
+        {
+          "level": 10,
+          "q": "Quel roi a créé l'alphabet coréen hangeul au XVe siècle ?",
+          "a": "Le roi Sejong le Grand"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en histoire du Japon moderne ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la monnaie du Japon : le yen, le won ou le yuan ?",
+          "a": "Le yen"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle le train à grande vitesse japonais ?",
+          "a": "Le Shinkansen"
+        },
+        {
+          "level": 3,
+          "q": "En quelle année la bombe atomique a-t-elle frappé Hiroshima ?",
+          "a": "1945"
+        },
+        {
+          "level": 4,
+          "q": "Quelle autre ville japonaise a été frappée par une bombe atomique ?",
+          "a": "Nagasaki"
+        },
+        {
+          "level": 5,
+          "q": "Tokyo a accueilli ses premiers Jeux olympiques d'été en : 1964, 1972 ou 1988 ?",
+          "a": "1964"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle l'ère, commencée en 1868, de la modernisation du Japon ?",
+          "a": "L'ère Meiji"
+        },
+        {
+          "level": 7,
+          "q": "Quel général américain a dirigé l'occupation du Japon après 1945 ?",
+          "a": "Douglas MacArthur"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le principal indice boursier de Tokyo ?",
+          "a": "Le Nikkei (225)"
+        },
+        {
+          "level": 9,
+          "q": "Quel commodore américain a forcé l'ouverture du Japon en 1853 avec ses « navires noirs » ?",
+          "a": "Matthew Perry"
+        },
+        {
+          "level": 10,
+          "q": "Quel ministère japonais, connu sous le sigle MITI, a piloté la politique industrielle du miracle d'après-guerre ?",
+          "a": "Le ministère du Commerce international et de l'Industrie"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort sur Hong Kong, Macao et Taïwan ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Hong Kong a été rétrocédé à la Chine en : 1987, 1997 ou 2007 ?",
+          "a": "1997"
+        },
+        {
+          "level": 2,
+          "q": "Avant 1997, Hong Kong était une colonie de quel pays ?",
+          "a": "Du Royaume-Uni"
+        },
+        {
+          "level": 3,
+          "q": "Macao était une colonie de quel pays ?",
+          "a": "Du Portugal"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année Macao a-t-il été rétrocédé à la Chine ?",
+          "a": "1999"
+        },
+        {
+          "level": 5,
+          "q": "Quelle est la capitale de Taïwan ?",
+          "a": "Taipei"
+        },
+        {
+          "level": 6,
+          "q": "Quel gratte-ciel de Taipei a été le plus haut du monde de 2004 à 2010 ?",
+          "a": "Le Taipei 101"
+        },
+        {
+          "level": 7,
+          "q": "Complète le principe : « Un pays, deux… » ?",
+          "a": "Systèmes"
+        },
+        {
+          "level": 8,
+          "q": "Quel nom, signifiant « belle », les navigateurs portugais ont-ils donné à Taïwan ?",
+          "a": "Formose (Formosa)"
+        },
+        {
+          "level": 9,
+          "q": "Qui fut le dernier gouverneur britannique de Hong Kong ?",
+          "a": "Chris Patten"
+        },
+        {
+          "level": 10,
+          "q": "Quel traité de 1842, après la première guerre de l'opium, a cédé l'île de Hong Kong aux Britanniques ?",
+          "a": "Le traité de Nankin"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort sur les géants économiques d'Asie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Toyota est une marque de quel pays : le Japon, la Corée ou la Chine ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 2,
+          "q": "Samsung est une entreprise de quel pays ?",
+          "a": "De la Corée du Sud"
+        },
+        {
+          "level": 3,
+          "q": "Quelle entreprise japonaise fabrique la PlayStation ?",
+          "a": "Sony"
+        },
+        {
+          "level": 4,
+          "q": "Le siège de Huawei se trouve dans quelle ville : Shenzhen, Pékin ou Shanghai ?",
+          "a": "Shenzhen"
+        },
+        {
+          "level": 5,
+          "q": "Le « juste-à-temps » et le kaizen sont associés au système de production de quel constructeur ?",
+          "a": "Toyota"
+        },
+        {
+          "level": 6,
+          "q": "Avant les jeux vidéo, que fabriquait Nintendo à ses débuts ?",
+          "a": "Des cartes à jouer (hanafuda)"
+        },
+        {
+          "level": 7,
+          "q": "Qui a fondé Alibaba ?",
+          "a": "Jack Ma"
+        },
+        {
+          "level": 8,
+          "q": "Quel baladeur Sony a révolutionné l'écoute de musique en 1979 ?",
+          "a": "Le Walkman"
+        },
+        {
+          "level": 9,
+          "q": "Quelle entreprise chinoise a créé TikTok ?",
+          "a": "ByteDance"
+        },
+        {
+          "level": 10,
+          "q": "Que signifie « Samsung » en coréen ?",
+          "a": "Trois étoiles"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cinéma japonais ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Godzilla est un monstre né dans le cinéma de quel pays ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 2,
+          "q": "Quel studio d'animation a créé « Mon voisin Totoro » ?",
+          "a": "Le studio Ghibli"
+        },
+        {
+          "level": 3,
+          "q": "Qui a réalisé « Le Voyage de Chihiro » ?",
+          "a": "Hayao Miyazaki"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux ? « Le Voyage de Chihiro » a remporté l'Oscar du meilleur film d'animation.",
+          "a": "Vrai (en 2003)"
+        },
+        {
+          "level": 5,
+          "q": "Qui a réalisé « Les Sept Samouraïs » ?",
+          "a": "Akira Kurosawa"
+        },
+        {
+          "level": 6,
+          "q": "Quel acteur fut le comédien fétiche de Kurosawa ?",
+          "a": "Toshirō Mifune"
+        },
+        {
+          "level": 7,
+          "q": "« Ran » de Kurosawa est une adaptation de quelle pièce de Shakespeare ?",
+          "a": "Le Roi Lear"
+        },
+        {
+          "level": 8,
+          "q": "Quel film de Kurosawa, racontant un crime selon plusieurs points de vue, a remporté le Lion d'or en 1951 ?",
+          "a": "Rashōmon"
+        },
+        {
+          "level": 9,
+          "q": "Qui a réalisé « Une affaire de famille », Palme d'or 2018 ?",
+          "a": "Hirokazu Kore-eda"
+        },
+        {
+          "level": 10,
+          "q": "Quel réalisateur a signé « Voyage à Tokyo » (1953) ?",
+          "a": "Yasujirō Ozu"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en cinéma chinois et coréen ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le film « Parasite » vient de quel pays ?",
+          "a": "De la Corée du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux ? « Parasite » a remporté l'Oscar du meilleur film.",
+          "a": "Vrai (premier film non anglophone à le gagner)"
+        },
+        {
+          "level": 3,
+          "q": "Qui a réalisé « Parasite » ?",
+          "a": "Bong Joon-ho"
+        },
+        {
+          "level": 4,
+          "q": "Le réalisateur Ang Lee est originaire de : Taïwan, Hong Kong ou Singapour ?",
+          "a": "De Taïwan"
+        },
+        {
+          "level": 5,
+          "q": "Quel film de sabre d'Ang Lee (2000) a remporté l'Oscar du meilleur film étranger ?",
+          "a": "Tigre et Dragon"
+        },
+        {
+          "level": 6,
+          "q": "Quel film de Wong Kar-wai (2000) réunit Tony Leung et Maggie Cheung ?",
+          "a": "In the Mood for Love"
+        },
+        {
+          "level": 7,
+          "q": "Qui a réalisé « Old Boy » (2003) ?",
+          "a": "Park Chan-wook"
+        },
+        {
+          "level": 8,
+          "q": "Quel réalisateur du « Sorgho rouge » a mis en scène la cérémonie d'ouverture des JO de Pékin 2008 ?",
+          "a": "Zhang Yimou"
+        },
+        {
+          "level": 9,
+          "q": "Quel film chinois a remporté la Palme d'or 1993, ex aequo avec « La Leçon de piano » ?",
+          "a": "Adieu ma concubine"
+        },
+        {
+          "level": 10,
+          "q": "Pour quels deux films Ang Lee a-t-il remporté l'Oscar du meilleur réalisateur ?",
+          "a": "Le Secret de Brokeback Mountain et L'Odyssée de Pi"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en arts d'Asie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Complète le titre de l'estampe d'Hokusai : « La Grande Vague de… » ?",
+          "a": "Kanagawa"
+        },
+        {
+          "level": 2,
+          "q": "L'origami est l'art de plier quoi ?",
+          "a": "Du papier"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle l'art japonais de l'arrangement floral ?",
+          "a": "L'ikebana"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on les estampes japonaises, dont le nom signifie « images du monde flottant » ?",
+          "a": "L'ukiyo-e"
+        },
+        {
+          "level": 5,
+          "q": "Quel art japonais répare la céramique cassée avec de la laque saupoudrée d'or ?",
+          "a": "Le kintsugi"
+        },
+        {
+          "level": 6,
+          "q": "Pour quel empereur l'armée de terre cuite de Xi'an a-t-elle été créée ?",
+          "a": "Qin Shi Huang"
+        },
+        {
+          "level": 7,
+          "q": "Quelle ville chinoise est surnommée la « capitale de la porcelaine » ?",
+          "a": "Jingdezhen"
+        },
+        {
+          "level": 8,
+          "q": "Les « quatre trésors du lettré » sont le pinceau, l'encre, le papier et… ?",
+          "a": "La pierre à encre"
+        },
+        {
+          "level": 9,
+          "q": "Les céladons coréens de la dynastie Goryeo sont célèbres pour leur couleur : vert jade, rouge ou noire ?",
+          "a": "Vert jade"
+        },
+        {
+          "level": 10,
+          "q": "Quel maître de l'ukiyo-e a réalisé « Les Cinquante-trois Relais du Tōkaidō » ?",
+          "a": "Hiroshige"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en architecture d'Asie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "La Grande Muraille se trouve dans quel pays ?",
+          "a": "En Chine"
+        },
+        {
+          "level": 2,
+          "q": "La Cité interdite se trouve dans quelle ville ?",
+          "a": "Pékin"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la tour à plusieurs toits superposés des temples bouddhiques ?",
+          "a": "La pagode"
+        },
+        {
+          "level": 4,
+          "q": "Quel temple de Kyoto est recouvert de feuilles d'or ?",
+          "a": "Le Kinkaku-ji (Pavillon d'or)"
+        },
+        {
+          "level": 5,
+          "q": "Quel est le plus haut gratte-ciel de Chine ?",
+          "a": "La Shanghai Tower"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux ? Le château de Himeji est surnommé le « château du Héron blanc ».",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le principal palais royal de la dynastie Joseon à Séoul ?",
+          "a": "Le Gyeongbokgung"
+        },
+        {
+          "level": 8,
+          "q": "Quel architecte né en Chine a conçu la pyramide du Louvre ?",
+          "a": "Ieoh Ming Pei"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle ville se dresse le Ryugyong, gigantesque hôtel pyramidal resté inachevé ?",
+          "a": "Pyongyang"
+        },
+        {
+          "level": 10,
+          "q": "Tous les combien d'années le grand sanctuaire d'Ise est-il entièrement reconstruit ?",
+          "a": "Tous les 20 ans"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort en littérature d'Asie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le haïku est un poème court de quel pays ?",
+          "a": "Du Japon"
+        },
+        {
+          "level": 2,
+          "q": "Combien de syllabes compte un haïku classique : 17, 21 ou 31 ?",
+          "a": "17 (5-7-5)"
+        },
+        {
+          "level": 3,
+          "q": "Qui a écrit « La Ballade de l'impossible » (Norwegian Wood) ?",
+          "a": "Haruki Murakami"
+        },
+        {
+          "level": 4,
+          "q": "Han Kang, prix Nobel de littérature 2024 et autrice de « La Végétarienne », est de quelle nationalité ?",
+          "a": "Sud-coréenne"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle le Roi des singes du roman « La Pérégrination vers l'Ouest » ?",
+          "a": "Sun Wukong"
+        },
+        {
+          "level": 6,
+          "q": "Quel poète japonais a écrit le célèbre haïku de la grenouille qui saute dans le vieil étang ?",
+          "a": "Matsuo Bashō"
+        },
+        {
+          "level": 7,
+          "q": "Qui fut le premier écrivain japonais à recevoir le prix Nobel de littérature, en 1968 ?",
+          "a": "Yasunari Kawabata"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année le Chinois Mo Yan a-t-il reçu le prix Nobel de littérature ?",
+          "a": "2012"
+        },
+        {
+          "level": 9,
+          "q": "Qui a écrit « Le Dit du Genji », souvent considéré comme le premier roman de l'histoire ?",
+          "a": "Murasaki Shikibu"
+        },
+        {
+          "level": 10,
+          "q": "Quel écrivain chinois est l'auteur de « La Véritable Histoire d'Ah Q » ?",
+          "a": "Lu Xun"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Tu te crois fort sur la Mongolie ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel conquérant a fondé l'Empire mongol ?",
+          "a": "Gengis Khan"
+        },
+        {
+          "level": 2,
+          "q": "Quelle est la capitale de la Mongolie ?",
+          "a": "Oulan-Bator"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on la tente ronde traditionnelle des nomades mongols ?",
+          "a": "La yourte (ger)"
+        },
+        {
+          "level": 4,
+          "q": "Les trois sports du festival du Naadam sont la lutte, le tir à l'arc et… ?",
+          "a": "La course de chevaux"
+        },
+        {
+          "level": 5,
+          "q": "Quel désert s'étend dans le sud de la Mongolie ?",
+          "a": "Le désert de Gobi"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle la boisson mongole de lait de jument fermenté ?",
+          "a": "L'airag (koumis)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle dynastie chinoise Kubilai Khan a-t-il fondée ?",
+          "a": "La dynastie Yuan"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le chant diphonique mongol ?",
+          "a": "Le khöömei"
+        },
+        {
+          "level": 9,
+          "q": "Depuis les années 1940, le mongol s'écrit principalement avec quel alphabet ?",
+          "a": "L'alphabet cyrillique"
+        },
+        {
+          "level": 10,
+          "q": "Quel était le nom de naissance de Gengis Khan ?",
+          "a": "Temüjin"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Dragon Ball ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le héros de Dragon Ball ?",
+          "a": "Son Goku"
+        },
+        {
+          "level": 2,
+          "q": "Combien de boules de cristal faut-il réunir pour invoquer le dragon : 5, 7 ou 9 ?",
+          "a": "7"
+        },
+        {
+          "level": 3,
+          "q": "Quel mangaka a créé Dragon Ball ?",
+          "a": "Akira Toriyama"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le dragon qui exauce les vœux ?",
+          "a": "Shenron"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : Vegeta est le prince des Saiyans.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "De quelle couleur deviennent les cheveux de Goku en Super Saiyan : blonds, rouges ou verts ?",
+          "a": "Blonds (dorés)"
+        },
+        {
+          "level": 7,
+          "q": "Quelle est l'attaque d'énergie emblématique de Goku ?",
+          "a": "Le Kamehameha"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel magazine japonais le manga Dragon Ball était-il publié ?",
+          "a": "Weekly Shōnen Jump"
+        },
+        {
+          "level": 9,
+          "q": "En quelle année le manga Dragon Ball a-t-il débuté : 1984, 1988 ou 1992 ?",
+          "a": "1984"
+        },
+        {
+          "level": 10,
+          "q": "Quel grand roman classique chinois a inspiré le début de Dragon Ball ?",
+          "a": "La Pérégrination vers l'Ouest (Le Voyage en Occident)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en One Piece ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le héros de One Piece ?",
+          "a": "Monkey D. Luffy"
+        },
+        {
+          "level": 2,
+          "q": "Que rêve de devenir Luffy ?",
+          "a": "Le roi des pirates"
+        },
+        {
+          "level": 3,
+          "q": "Quel couvre-chef Luffy porte-t-il toujours ?",
+          "a": "Un chapeau de paille"
+        },
+        {
+          "level": 4,
+          "q": "Quel mangaka a créé One Piece ?",
+          "a": "Eiichirō Oda"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : Luffy ne sait pas nager.",
+          "a": "Vrai (à cause de son fruit du démon)"
+        },
+        {
+          "level": 6,
+          "q": "Quel pouvoir son fruit du démon donne-t-il à Luffy ?",
+          "a": "Un corps élastique (en caoutchouc)"
+        },
+        {
+          "level": 7,
+          "q": "Quel membre de l'équipage combat avec trois sabres ?",
+          "a": "Roronoa Zoro"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année le manga One Piece a-t-il commencé : 1997, 2001 ou 2005 ?",
+          "a": "1997"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le premier navire de l'équipage de Luffy ?",
+          "a": "Le Vogue Merry (Going Merry)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le deuxième navire de l'équipage, construit par Franky ?",
+          "a": "Le Thousand Sunny"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Naruto ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le nom de famille de Naruto ?",
+          "a": "Uzumaki"
+        },
+        {
+          "level": 2,
+          "q": "Quel titre Naruto rêve-t-il d'obtenir pour devenir le chef de son village ?",
+          "a": "Hokage"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le village de Naruto ?",
+          "a": "Konoha (le village caché de la Feuille)"
+        },
+        {
+          "level": 4,
+          "q": "Quelle créature est scellée dans le corps de Naruto : un renard, un dragon ou un tigre ?",
+          "a": "Un renard (le démon renard à neuf queues)"
+        },
+        {
+          "level": 5,
+          "q": "Qui est le grand rival et ami de Naruto ?",
+          "a": "Sasuke Uchiha"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : Kakashi est le professeur de l'équipe 7.",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle la technique en forme de sphère d'énergie de Naruto ?",
+          "a": "Le Rasengan"
+        },
+        {
+          "level": 8,
+          "q": "Quel mangaka a créé Naruto ?",
+          "a": "Masashi Kishimoto"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelle le fils de Naruto, héros de la suite ?",
+          "a": "Boruto"
+        },
+        {
+          "level": 10,
+          "q": "Qui est le père de Naruto ?",
+          "a": "Minato Namikaze (le 4e Hokage)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en studio Ghibli ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle grosse créature poilue de la forêt est la mascotte du studio Ghibli ?",
+          "a": "Totoro"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays vient le studio Ghibli ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 3,
+          "q": "Quel réalisateur a signé Le Voyage de Chihiro ?",
+          "a": "Hayao Miyazaki"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel film une jeune sorcière livre-t-elle des colis sur son balai ?",
+          "a": "Kiki la petite sorcière"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : Le Voyage de Chihiro a remporté l'Oscar du meilleur film d'animation.",
+          "a": "Vrai (en 2003)"
+        },
+        {
+          "level": 6,
+          "q": "Quel cofondateur de Ghibli a réalisé Le Tombeau des lucioles ?",
+          "a": "Isao Takahata"
+        },
+        {
+          "level": 7,
+          "q": "Quel compositeur signe la musique de la plupart des films de Miyazaki ?",
+          "a": "Joe Hisaishi"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année le studio Ghibli a-t-il été fondé : 1979, 1985 ou 1993 ?",
+          "a": "1985"
+        },
+        {
+          "level": 9,
+          "q": "Quel film de Miyazaki a remporté l'Oscar du meilleur film d'animation en 2024 ?",
+          "a": "Le Garçon et le Héron"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le jeune prince héros de Princesse Mononoké ?",
+          "a": "Ashitaka"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Pokémon ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel Pokémon jaune électrique est la mascotte de la série ?",
+          "a": "Pikachu"
+        },
+        {
+          "level": 2,
+          "q": "Quel objet sert à capturer un Pokémon ?",
+          "a": "Une Poké Ball"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle le jeune dresseur héros du dessin animé ?",
+          "a": "Sacha"
+        },
+        {
+          "level": 4,
+          "q": "Sur quelle console sont sortis les premiers jeux Pokémon : Game Boy, NES ou Mega Drive ?",
+          "a": "La Game Boy"
+        },
+        {
+          "level": 5,
+          "q": "Quel Pokémon de départ est de type Feu : Bulbizarre, Salamèche ou Carapuce ?",
+          "a": "Salamèche"
+        },
+        {
+          "level": 6,
+          "q": "Combien de Pokémon comptait la première génération : 101, 151 ou 251 ?",
+          "a": "151"
+        },
+        {
+          "level": 7,
+          "q": "En quelle année les premiers jeux Pokémon sont-ils sortis au Japon ?",
+          "a": "1996"
+        },
+        {
+          "level": 8,
+          "q": "Quel Pokémon porte le numéro 1 du Pokédex ?",
+          "a": "Bulbizarre"
+        },
+        {
+          "level": 9,
+          "q": "Quel Pokémon n°150, créé par manipulation génétique, est au cœur du premier film ?",
+          "a": "Mewtwo"
+        },
+        {
+          "level": 10,
+          "q": "Qui a créé Pokémon, inspiré par sa passion d'enfance pour la chasse aux insectes ?",
+          "a": "Satoshi Tajiri"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Super Mario ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le métier de Mario ?",
+          "a": "Plombier"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle le frère de Mario, habillé en vert ?",
+          "a": "Luigi"
+        },
+        {
+          "level": 3,
+          "q": "Quelle princesse Mario doit-il souvent sauver ?",
+          "a": "Peach"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle le grand méchant, roi des Koopa ?",
+          "a": "Bowser"
+        },
+        {
+          "level": 5,
+          "q": "Quel petit dinosaure vert Mario chevauche-t-il ?",
+          "a": "Yoshi"
+        },
+        {
+          "level": 6,
+          "q": "Quel game designer japonais a créé Mario ?",
+          "a": "Shigeru Miyamoto"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel jeu d'arcade de 1981 Mario est-il apparu pour la première fois ?",
+          "a": "Donkey Kong"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année Super Mario Bros. est-il sorti au Japon : 1983, 1985 ou 1988 ?",
+          "a": "1985"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appelait Mario dans sa toute première apparition ?",
+          "a": "Jumpman"
+        },
+        {
+          "level": 10,
+          "q": "Que fabriquait Nintendo lors de sa création en 1889 ?",
+          "a": "Des cartes à jouer (hanafuda)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en jeux d'arcade japonais ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel personnage jaune et rond mange des pac-gommes en fuyant des fantômes ?",
+          "a": "Pac-Man"
+        },
+        {
+          "level": 2,
+          "q": "Quel hérisson bleu est la mascotte de Sega ?",
+          "a": "Sonic"
+        },
+        {
+          "level": 3,
+          "q": "Combien de fantômes poursuivent Pac-Man : 3, 4 ou 5 ?",
+          "a": "4"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Street Fighter a été créé par l'éditeur japonais Capcom.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel jeu de 1978 doit-on abattre des rangées d'extraterrestres qui descendent ?",
+          "a": "Space Invaders"
+        },
+        {
+          "level": 6,
+          "q": "Quelle entreprise a créé Pac-Man : Namco, Sega ou Konami ?",
+          "a": "Namco"
+        },
+        {
+          "level": 7,
+          "q": "Quel combattant au kimono blanc et au bandeau rouge est le héros de Street Fighter ?",
+          "a": "Ryu"
+        },
+        {
+          "level": 8,
+          "q": "Quelle combattante chinoise de Street Fighter est célèbre pour ses coups de pied ?",
+          "a": "Chun-Li"
+        },
+        {
+          "level": 9,
+          "q": "Quelle entreprise japonaise a créé les séries Metal Gear et Castlevania ?",
+          "a": "Konami"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le fantôme rouge de Pac-Man ?",
+          "a": "Blinky"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en pop asiatique (K-pop, J-pop, C-pop) ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays vient la K-pop ?",
+          "a": "La Corée du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Combien de membres compte le groupe BTS : 5, 7 ou 9 ?",
+          "a": "7"
+        },
+        {
+          "level": 3,
+          "q": "Dans quel pays le karaoké a-t-il été inventé ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 4,
+          "q": "Quel tube de PSY a été en 2012 la première vidéo à dépasser le milliard de vues sur YouTube ?",
+          "a": "Gangnam Style"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : Blackpink est un groupe de quatre chanteuses.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Que signifie le mot japonais « karaoké » : orchestre vide, chant joyeux ou micro magique ?",
+          "a": "Orchestre vide"
+        },
+        {
+          "level": 7,
+          "q": "Quel titre de BTS a été leur premier n°1 au Billboard Hot 100, en 2020 ?",
+          "a": "Dynamite"
+        },
+        {
+          "level": 8,
+          "q": "Quelle star taïwanaise de la C-pop a réalisé et joué dans le film Secret (2007) ?",
+          "a": "Jay Chou"
+        },
+        {
+          "level": 9,
+          "q": "Quelle chanson japonaise de Kyu Sakamoto a été n°1 aux États-Unis en 1963 ?",
+          "a": "Sukiyaki (Ue o muite arukō)"
+        },
+        {
+          "level": 10,
+          "q": "Quelle chanson de city pop de Mariya Takeuchi (1984) est devenue un phénomène viral sur Internet ?",
+          "a": "Plastic Love"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Squid Game et cinéma coréen ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quelle série coréenne des joueurs endettés s'affrontent-ils dans des jeux d'enfants mortels ?",
+          "a": "Squid Game"
+        },
+        {
+          "level": 2,
+          "q": "Sur quelle plateforme Squid Game est-elle diffusée ?",
+          "a": "Netflix"
+        },
+        {
+          "level": 3,
+          "q": "Quel jeu ouvre la première saison de Squid Game ?",
+          "a": "1, 2, 3, soleil"
+        },
+        {
+          "level": 4,
+          "q": "Quel film coréen a remporté l'Oscar du meilleur film en 2020 ?",
+          "a": "Parasite"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : Parasite a aussi remporté la Palme d'or à Cannes.",
+          "a": "Vrai (en 2019)"
+        },
+        {
+          "level": 6,
+          "q": "Quel numéro porte le héros Seong Gi-hun dans Squid Game : 001, 218 ou 456 ?",
+          "a": "456"
+        },
+        {
+          "level": 7,
+          "q": "Quel réalisateur a signé Parasite ?",
+          "a": "Bong Joon-ho"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel film de zombies coréen de 2016 l'action se déroule-t-elle dans un train ?",
+          "a": "Dernier train pour Busan"
+        },
+        {
+          "level": 9,
+          "q": "Quel réalisateur coréen a signé Old Boy (2003) ?",
+          "a": "Park Chan-wook"
+        },
+        {
+          "level": 10,
+          "q": "Quel acteur a remporté en 2022 l'Emmy du meilleur acteur pour le rôle de Gi-hun ?",
+          "a": "Lee Jung-jae"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Bruce Lee ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Bruce Lee était une star des films de kung-fu, de science-fiction ou des comédies musicales ?",
+          "a": "De kung-fu (arts martiaux)"
+        },
+        {
+          "level": 2,
+          "q": "De quelle couleur est la célèbre combinaison de Bruce Lee dans Le Jeu de la mort ?",
+          "a": "Jaune (à bandes noires)"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : Bruce Lee a grandi à Hong Kong.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quel est son film le plus célèbre, sorti en 1973 juste après sa mort ?",
+          "a": "Opération Dragon"
+        },
+        {
+          "level": 5,
+          "q": "À quel âge Bruce Lee est-il mort : 32, 42 ou 52 ans ?",
+          "a": "32 ans (en 1973)"
+        },
+        {
+          "level": 6,
+          "q": "Dans quelle ville américaine Bruce Lee est-il né ?",
+          "a": "San Francisco (en 1940)"
+        },
+        {
+          "level": 7,
+          "q": "Quel art martial Bruce Lee a-t-il lui-même créé ?",
+          "a": "Le jeet kune do"
+        },
+        {
+          "level": 8,
+          "q": "Quel style de kung-fu Bruce Lee a-t-il appris auprès du maître Ip Man : le wing chun, le tai-chi ou le shaolin ?",
+          "a": "Le wing chun"
+        },
+        {
+          "level": 9,
+          "q": "Dans quelle série américaine des années 1960 Bruce Lee jouait-il Kato ?",
+          "a": "Le Frelon vert"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelait le fils de Bruce Lee, mort sur le tournage de The Crow ?",
+          "a": "Brandon Lee"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Jackie Chan ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux : Jackie Chan est célèbre pour réaliser lui-même ses cascades.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Dans quelle ville Jackie Chan est-il né ?",
+          "a": "Hong Kong (en 1954)"
+        },
+        {
+          "level": 3,
+          "q": "Avec quel acteur américain forme-t-il un duo dans Rush Hour ?",
+          "a": "Chris Tucker"
+        },
+        {
+          "level": 4,
+          "q": "Dans quel film d'animation DreamWorks double-t-il Maître Singe ?",
+          "a": "Kung Fu Panda"
+        },
+        {
+          "level": 5,
+          "q": "Dans quel remake de 2010 enseigne-t-il le kung-fu à Jaden Smith ?",
+          "a": "Karaté Kid"
+        },
+        {
+          "level": 6,
+          "q": "Avec quel acteur américain joue-t-il dans Shanghai Kid (2000) ?",
+          "a": "Owen Wilson"
+        },
+        {
+          "level": 7,
+          "q": "Dans quelle saga de films joue-t-il le policier hongkongais Chan Ka-kui ?",
+          "a": "Police Story"
+        },
+        {
+          "level": 8,
+          "q": "Quel rôle joue-t-il dans Le Tour du monde en 80 jours (2004) ?",
+          "a": "Passepartout"
+        },
+        {
+          "level": 9,
+          "q": "Quelle récompense Jackie Chan a-t-il reçue à Hollywood en 2016 ?",
+          "a": "Un Oscar d'honneur"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelait la troupe d'enfants de l'opéra de Pékin où il s'est formé avec Sammo Hung ?",
+          "a": "Les Seven Little Fortunes"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Godzilla ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Vrai ou faux : Godzilla est un monstre géant né au cinéma japonais.",
+          "a": "Vrai"
+        },
+        {
+          "level": 2,
+          "q": "Que crache Godzilla quand il attaque ?",
+          "a": "Un souffle atomique (rayon)"
+        },
+        {
+          "level": 3,
+          "q": "Quel singe géant affronte Godzilla au cinéma ?",
+          "a": "King Kong"
+        },
+        {
+          "level": 4,
+          "q": "En quelle année est sorti le premier film Godzilla : 1954, 1964 ou 1974 ?",
+          "a": "1954"
+        },
+        {
+          "level": 5,
+          "q": "Quel studio japonais a créé Godzilla : Toho, Sony ou Nintendo ?",
+          "a": "Toho"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le nom original japonais de Godzilla ?",
+          "a": "Gojira"
+        },
+        {
+          "level": 7,
+          "q": "Quel papillon géant est l'un des monstres les plus célèbres de l'univers Godzilla ?",
+          "a": "Mothra"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le dragon doré à trois têtes, ennemi juré de Godzilla ?",
+          "a": "King Ghidorah"
+        },
+        {
+          "level": 9,
+          "q": "Quel film Godzilla a remporté l'Oscar des meilleurs effets visuels en 2024 ?",
+          "a": "Godzilla Minus One"
+        },
+        {
+          "level": 10,
+          "q": "Le nom « Gojira » combine les mots japonais pour gorille et pour quel animal ?",
+          "a": "La baleine (kujira)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en sumo ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays le sumo est-il le sport traditionnel ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux : un lutteur perd s'il sort du cercle.",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on le plus haut grade du sumo ?",
+          "a": "Yokozuna"
+        },
+        {
+          "level": 4,
+          "q": "Que lancent les lutteurs sur le ring avant le combat pour le purifier : du riz, du sel ou des fleurs ?",
+          "a": "Du sel"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle la ceinture-pagne portée par les lutteurs ?",
+          "a": "Le mawashi"
+        },
+        {
+          "level": 6,
+          "q": "Combien de tournois officiels de sumo ont lieu chaque année : 4, 6 ou 8 ?",
+          "a": "6"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle le ring en terre battue du sumo ?",
+          "a": "Le dohyō"
+        },
+        {
+          "level": 8,
+          "q": "Combien de jours dure un tournoi officiel de sumo ?",
+          "a": "15 jours"
+        },
+        {
+          "level": 9,
+          "q": "De quel pays viennent les yokozuna Asashōryū et Hakuhō ?",
+          "a": "La Mongolie"
+        },
+        {
+          "level": 10,
+          "q": "Quel lutteur détient le record de tournois remportés en première division ?",
+          "a": "Hakuhō (45 titres)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en judo, karaté et taekwondo ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays vient le judo ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays vient le taekwondo ?",
+          "a": "La Corée"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la salle où l'on pratique les arts martiaux japonais ?",
+          "a": "Le dojo"
+        },
+        {
+          "level": 4,
+          "q": "Quel score donne la victoire immédiate en judo ?",
+          "a": "Ippon"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : le karaté est né sur l'île d'Okinawa.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Qui a fondé le judo en 1882 ?",
+          "a": "Jigorō Kanō"
+        },
+        {
+          "level": 7,
+          "q": "Lors de quels JO le judo est-il entré au programme olympique ?",
+          "a": "Tokyo 1964"
+        },
+        {
+          "level": 8,
+          "q": "Lors de quels JO le taekwondo est-il devenu sport olympique officiel : Séoul 1988, Sydney 2000 ou Pékin 2008 ?",
+          "a": "Sydney 2000"
+        },
+        {
+          "level": 9,
+          "q": "Lors de quels JO le karaté a-t-il fait ses débuts olympiques ?",
+          "a": "Tokyo 2020 (disputés en 2021)"
+        },
+        {
+          "level": 10,
+          "q": "Quel judoka néerlandais a battu les Japonais en toutes catégories aux JO de Tokyo 1964 ?",
+          "a": "Anton Geesink"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en baseball japonais (Ohtani, Ichiro) ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel sport pratique Shohei Ohtani ?",
+          "a": "Le baseball"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays vient Shohei Ohtani ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : Ohtani est à la fois lanceur et frappeur.",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Pour quelle équipe de MLB Ohtani a-t-il joué de 2018 à 2023 ?",
+          "a": "Les Los Angeles Angels"
+        },
+        {
+          "level": 5,
+          "q": "Avec quelle équipe Ohtani a-t-il signé fin 2023 un contrat record de 700 millions de dollars ?",
+          "a": "Les Los Angeles Dodgers"
+        },
+        {
+          "level": 6,
+          "q": "Quel légendaire frappeur japonais a brillé chez les Seattle Mariners ?",
+          "a": "Ichiro Suzuki"
+        },
+        {
+          "level": 7,
+          "q": "Quel pays a remporté la Classique mondiale de baseball 2023 ?",
+          "a": "Le Japon (contre les États-Unis)"
+        },
+        {
+          "level": 8,
+          "q": "Comment s'appelle le célèbre tournoi national de baseball lycéen au Japon, du nom de son stade ?",
+          "a": "Kōshien"
+        },
+        {
+          "level": 9,
+          "q": "Quel sport collectif possède des ligues professionnelles très populaires à Taïwan et en Corée du Sud : le baseball, le rugby ou le cricket ?",
+          "a": "Le baseball"
+        },
+        {
+          "level": 10,
+          "q": "Combien de coups sûrs Ichiro a-t-il frappés en 2004, record de MLB sur une saison : 222, 242 ou 262 ?",
+          "a": "262"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en Jeux olympiques en Asie de l'Est ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle ville a accueilli les JO d'été de 2008 ?",
+          "a": "Pékin"
+        },
+        {
+          "level": 2,
+          "q": "Quels JO ont été reportés d'un an à cause du Covid-19 ?",
+          "a": "Tokyo 2020"
+        },
+        {
+          "level": 3,
+          "q": "Quelle ville a accueilli les JO d'été de 1988 ?",
+          "a": "Séoul"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : Pékin est la première ville à avoir accueilli les JO d'été et d'hiver.",
+          "a": "Vrai (2008 et 2022)"
+        },
+        {
+          "level": 5,
+          "q": "En quelle année Tokyo a-t-elle accueilli ses premiers JO : 1940, 1964 ou 1972 ?",
+          "a": "1964"
+        },
+        {
+          "level": 6,
+          "q": "Quelle station sud-coréenne a accueilli les JO d'hiver de 2018 ?",
+          "a": "Pyeongchang"
+        },
+        {
+          "level": 7,
+          "q": "Quel nageur américain a remporté 8 médailles d'or aux JO de Pékin 2008 ?",
+          "a": "Michael Phelps"
+        },
+        {
+          "level": 8,
+          "q": "Quelle ville japonaise a accueilli les JO d'hiver de 1998 ?",
+          "a": "Nagano"
+        },
+        {
+          "level": 9,
+          "q": "Quelle ville japonaise a accueilli les JO d'hiver de 1972 ?",
+          "a": "Sapporo"
+        },
+        {
+          "level": 10,
+          "q": "Quel artiste chinois a participé à la conception du stade « Nid d'oiseau » de Pékin ?",
+          "a": "Ai Weiwei"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en football en Asie de l'Est ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quels deux pays ont co-organisé la Coupe du monde 2002 ?",
+          "a": "La Corée du Sud et le Japon"
+        },
+        {
+          "level": 2,
+          "q": "Quel attaquant sud-coréen a été capitaine de Tottenham ?",
+          "a": "Son Heung-min"
+        },
+        {
+          "level": 3,
+          "q": "Quel manga de football japonais est connu en France sous le nom d'Olive et Tom ?",
+          "a": "Captain Tsubasa"
+        },
+        {
+          "level": 4,
+          "q": "Jusqu'où la Corée du Sud est-elle allée lors de sa Coupe du monde 2002 : quarts, demi-finales ou finale ?",
+          "a": "Les demi-finales"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : le Japonais Shinji Kagawa a joué à Manchester United.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quel pays a remporté la Coupe du monde 2002 en Asie ?",
+          "a": "Le Brésil"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel club italien le Japonais Keisuke Honda a-t-il porté le numéro 10 ?",
+          "a": "L'AC Milan"
+        },
+        {
+          "level": 8,
+          "q": "Quelles deux anciennes championnes du monde le Japon a-t-il battues en phase de groupes en 2022 ?",
+          "a": "L'Allemagne et l'Espagne"
+        },
+        {
+          "level": 9,
+          "q": "Quel grand pays la Corée du Nord a-t-elle éliminé à la Coupe du monde 1966 ?",
+          "a": "L'Italie (1-0)"
+        },
+        {
+          "level": 10,
+          "q": "Quel entraîneur néerlandais a mené la Corée du Sud en demi-finale en 2002 ?",
+          "a": "Guus Hiddink"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en mahjong, go et shogi ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Le mahjong se joue-t-il avec des tuiles, des cartes ou des billes ?",
+          "a": "Des tuiles"
+        },
+        {
+          "level": 2,
+          "q": "De quelles couleurs sont les pierres du jeu de go ?",
+          "a": "Noires et blanches"
+        },
+        {
+          "level": 3,
+          "q": "De quel pays vient le mahjong ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 4,
+          "q": "À combien de joueurs se joue une partie classique de mahjong : 2, 4 ou 6 ?",
+          "a": "4"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : le shogi est une forme d'échecs japonais.",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quel programme de DeepMind a battu le champion coréen Lee Sedol au go en 2016 ?",
+          "a": "AlphaGo"
+        },
+        {
+          "level": 7,
+          "q": "Combien de lignes compte un goban standard : 13 x 13, 17 x 17 ou 19 x 19 ?",
+          "a": "19 x 19"
+        },
+        {
+          "level": 8,
+          "q": "Au shogi, que peut-on faire avec les pièces capturées à l'adversaire ?",
+          "a": "Les remettre en jeu dans son propre camp (parachutage)"
+        },
+        {
+          "level": 9,
+          "q": "Comment appelle-t-on le jeu de go en Corée ?",
+          "a": "Le baduk"
+        },
+        {
+          "level": 10,
+          "q": "Quel joueur de shogi a été le premier à détenir simultanément les sept grands titres, en 1996 ?",
+          "a": "Yoshiharu Habu"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en fêtes d'Asie de l'Est ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Combien d'animaux compte le zodiaque chinois : 10, 12 ou 14 ?",
+          "a": "12"
+        },
+        {
+          "level": 2,
+          "q": "Quelle couleur porte bonheur au Nouvel An chinois ?",
+          "a": "Le rouge"
+        },
+        {
+          "level": 3,
+          "q": "Que glisse-t-on dans les enveloppes rouges offertes au Nouvel An chinois ?",
+          "a": "De l'argent"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : le Nouvel An lunaire tombe chaque année à une date différente de notre calendrier.",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelle la tradition japonaise d'admirer les cerisiers en fleurs ?",
+          "a": "Le hanami"
+        },
+        {
+          "level": 6,
+          "q": "Quels gâteaux ronds mange-t-on à la fête chinoise de la mi-automne ?",
+          "a": "Les gâteaux de lune"
+        },
+        {
+          "level": 7,
+          "q": "Comment s'appelle la grande fête coréenne des récoltes, à l'automne ?",
+          "a": "Chuseok"
+        },
+        {
+          "level": 8,
+          "q": "Quelle fête japonaise d'été honore les esprits des ancêtres ?",
+          "a": "Obon"
+        },
+        {
+          "level": 9,
+          "q": "Quel festival mongol réunit lutte, tir à l'arc et courses de chevaux ?",
+          "a": "Le Naadam"
+        },
+        {
+          "level": 10,
+          "q": "Quel animal clôt le cycle des douze signes du zodiaque chinois ?",
+          "a": "Le cochon"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Tu te crois fort en street food d'Asie de l'Est ?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appellent les nouilles en bouillon très populaires au Japon ?",
+          "a": "Les ramen"
+        },
+        {
+          "level": 2,
+          "q": "De quel pays vient le kimchi ?",
+          "a": "La Corée"
+        },
+        {
+          "level": 3,
+          "q": "Quelle boisson taïwanaise contient des perles de tapioca ?",
+          "a": "Le bubble tea"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : les nouilles instantanées ont été inventées au Japon.",
+          "a": "Vrai (en 1958)"
+        },
+        {
+          "level": 5,
+          "q": "Quel ingrédient trouve-t-on dans les takoyaki : du poulpe, du poulet ou du tofu ?",
+          "a": "Du poulpe"
+        },
+        {
+          "level": 6,
+          "q": "Comment s'appelle le repas cantonais de petites bouchées servies dans des paniers vapeur ?",
+          "a": "Le dim sum"
+        },
+        {
+          "level": 7,
+          "q": "Quel plat coréen consiste en un bol de riz garni de légumes, de viande et d'un œuf, à mélanger ?",
+          "a": "Le bibimbap"
+        },
+        {
+          "level": 8,
+          "q": "Qui a inventé les nouilles instantanées et fondé Nissin ?",
+          "a": "Momofuku Andō"
+        },
+        {
+          "level": 9,
+          "q": "Quelle spécialité fermentée des marchés de nuit taïwanais est célèbre pour son odeur très forte ?",
+          "a": "Le tofu puant"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appellent les raviolis mongols à la viande cuits à la vapeur ?",
+          "a": "Les buuz"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Tokyo",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Tokyo est la capitale de quel pays ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 2,
+          "q": "Quel carrefour géant de Tokyo est célèbre pour ses milliers de piétons qui traversent en même temps ?",
+          "a": "Le carrefour de Shibuya"
+        },
+        {
+          "level": 3,
+          "q": "Quelle statue de chien fidèle attend devant la gare de Shibuya ?",
+          "a": "Hachikō"
+        },
+        {
+          "level": 4,
+          "q": "Quel quartier de Tokyo est le paradis des mangas, de l'électronique et des maid cafés ?",
+          "a": "Akihabara"
+        },
+        {
+          "level": 5,
+          "q": "Comment s'appelait Tokyo avant 1868 ?",
+          "a": "Edo"
+        },
+        {
+          "level": 6,
+          "q": "Quelle tour de 634 m est la plus haute tour du monde ?",
+          "a": "La Tokyo Skytree"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : la Tokyo Tower, rouge et blanche, s'inspire de la tour Eiffel ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "En quelle année Tokyo a-t-elle accueilli ses premiers Jeux olympiques : 1964, 1972 ou 1988 ?",
+          "a": "1964"
+        },
+        {
+          "level": 9,
+          "q": "Quel marché a remplacé en 2018 le célèbre marché aux poissons de Tsukiji ?",
+          "a": "Le marché de Toyosu"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on les employés chargés de pousser les passagers dans les trains bondés ?",
+          "a": "Les oshiya (« pousseurs »)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Pékin",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Pékin est la capitale de quel pays ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 2,
+          "q": "Quelle spécialité de canard à la peau croustillante porte le nom de la ville ?",
+          "a": "Le canard laqué de Pékin"
+        },
+        {
+          "level": 3,
+          "q": "Quelle immense place de Pékin est l'une des plus grandes du monde ?",
+          "a": "La place Tian'anmen"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle l'ancien palais impérial de Pékin, longtemps fermé au peuple ?",
+          "a": "La Cité interdite"
+        },
+        {
+          "level": 5,
+          "q": "Quel surnom donne-t-on au stade olympique de 2008, à cause de sa forme ?",
+          "a": "Le Nid d'oiseau"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : Pékin est la première ville à avoir accueilli les JO d'été et les JO d'hiver ?",
+          "a": "Vrai (2008 et 2022)"
+        },
+        {
+          "level": 7,
+          "q": "Que signifie le nom « Beijing » : capitale du Nord, capitale du Sud ou capitale de l'Est ?",
+          "a": "Capitale du Nord"
+        },
+        {
+          "level": 8,
+          "q": "Dans quel temple de Pékin les empereurs priaient-ils pour de bonnes récoltes ?",
+          "a": "Le temple du Ciel"
+        },
+        {
+          "level": 9,
+          "q": "Comment s'appellent les ruelles traditionnelles de Pékin, bordées de maisons à cour ?",
+          "a": "Les hutong"
+        },
+        {
+          "level": 10,
+          "q": "Selon la légende, combien de pièces compte la Cité interdite : 999, 9 999 ou 99 999 ?",
+          "a": "9 999 (et demie)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Séoul",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Séoul est la capitale de quel pays ?",
+          "a": "La Corée du Sud"
+        },
+        {
+          "level": 2,
+          "q": "Quel tube de Psy sorti en 2012 porte le nom d'un quartier chic de Séoul ?",
+          "a": "Gangnam Style"
+        },
+        {
+          "level": 3,
+          "q": "Quel plat de chou fermenté et pimenté est présent sur toutes les tables coréennes ?",
+          "a": "Le kimchi"
+        },
+        {
+          "level": 4,
+          "q": "Comment appelle-t-on les salles de jeux vidéo en réseau, très populaires en Corée ?",
+          "a": "Les PC bangs"
+        },
+        {
+          "level": 5,
+          "q": "Quel appareil électroménager spécial trouve-t-on dans de nombreux foyers coréens ?",
+          "a": "Un réfrigérateur à kimchi"
+        },
+        {
+          "level": 6,
+          "q": "Quel est le plus grand palais royal de la dynastie Joseon à Séoul ?",
+          "a": "Le Gyeongbokgung"
+        },
+        {
+          "level": 7,
+          "q": "Quelle tour de télécommunication se dresse sur le mont Namsan ?",
+          "a": "La N Seoul Tower"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : Séoul a accueilli les Jeux olympiques d'été en 1988 ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel ruisseau, recouvert par une autoroute surélevée, a été rouvert en plein centre de Séoul en 2005 ?",
+          "a": "Le Cheonggyecheon"
+        },
+        {
+          "level": 10,
+          "q": "Quel gratte-ciel de 555 m est le plus haut de Corée du Sud ?",
+          "a": "La Lotte World Tower"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Shanghai",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays se trouve Shanghai ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 2,
+          "q": "Comment s'appelle la célèbre promenade de Shanghai bordée de bâtiments coloniaux ?",
+          "a": "Le Bund"
+        },
+        {
+          "level": 3,
+          "q": "Quel fleuve traverse Shanghai : le Huangpu, le Mékong ou le Gange ?",
+          "a": "Le Huangpu"
+        },
+        {
+          "level": 4,
+          "q": "Quel quartier de gratte-ciel fait face au Bund ?",
+          "a": "Pudong"
+        },
+        {
+          "level": 5,
+          "q": "Quelle tour de télévision à grosses boules roses est un symbole de Shanghai ?",
+          "a": "La Perle de l'Orient"
+        },
+        {
+          "level": 6,
+          "q": "Quelle tour en spirale de 632 m est la plus haute de Chine ?",
+          "a": "La Shanghai Tower"
+        },
+        {
+          "level": 7,
+          "q": "Quel surnom donnait-on à Shanghai dans les années 1930 : le Paris, la Venise ou le Londres de l'Orient ?",
+          "a": "Le Paris de l'Orient"
+        },
+        {
+          "level": 8,
+          "q": "Quels petits raviolis vapeur remplis de bouillon sont une spécialité de Shanghai ?",
+          "a": "Les xiaolongbao"
+        },
+        {
+          "level": 9,
+          "q": "Quel grand parc d'attractions américain a ouvert à Shanghai en 2016 ?",
+          "a": "Shanghai Disneyland"
+        },
+        {
+          "level": 10,
+          "q": "Quelle vitesse de pointe le train Maglev de l'aéroport atteignait-il en service commercial : 231, 431 ou 631 km/h ?",
+          "a": "431 km/h"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de Hong Kong",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Jusqu'en 1997, Hong Kong était une colonie de quel pays ?",
+          "a": "Le Royaume-Uni"
+        },
+        {
+          "level": 2,
+          "q": "Quelle légende des films de kung-fu, morte en 1973, a grandi à Hong Kong ?",
+          "a": "Bruce Lee"
+        },
+        {
+          "level": 3,
+          "q": "Comment appelle-t-on les petites bouchées cantonaises servies dans des paniers vapeur ?",
+          "a": "Les dim sum"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : à Hong Kong, on roule à gauche ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel ferry vert et blanc traverse le port Victoria depuis plus d'un siècle ?",
+          "a": "Le Star Ferry"
+        },
+        {
+          "level": 6,
+          "q": "Que signifie le nom « Hong Kong » : port parfumé, port des dragons ou port blanc ?",
+          "a": "Port parfumé"
+        },
+        {
+          "level": 7,
+          "q": "Quel funiculaire historique grimpe jusqu'au Victoria Peak ?",
+          "a": "Le Peak Tram"
+        },
+        {
+          "level": 8,
+          "q": "Quelle installation de Hong Kong est le plus long système d'escalators extérieurs couverts du monde ?",
+          "a": "L'escalator Central–Mid-Levels"
+        },
+        {
+          "level": 9,
+          "q": "Pendant combien d'années le principe « un pays, deux systèmes » était-il garanti après 1997 : 25, 50 ou 100 ?",
+          "a": "50 ans"
+        },
+        {
+          "level": 10,
+          "q": "En 1898, pour combien d'années les Nouveaux Territoires ont-ils été loués au Royaume-Uni ?",
+          "a": "99 ans"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Kyoto",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays se trouve Kyoto ?",
+          "a": "Le Japon"
+        },
+        {
+          "level": 2,
+          "q": "Quel temple de Kyoto est recouvert de feuilles d'or ?",
+          "a": "Le Kinkaku-ji (Pavillon d'or)"
+        },
+        {
+          "level": 3,
+          "q": "Quel traité sur le climat a été adopté dans cette ville en 1997 ?",
+          "a": "Le protocole de Kyoto"
+        },
+        {
+          "level": 4,
+          "q": "Quel sanctuaire est célèbre pour ses milliers de portiques torii orange ?",
+          "a": "Le Fushimi Inari"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on les apprenties geishas de Kyoto ?",
+          "a": "Les maiko"
+        },
+        {
+          "level": 6,
+          "q": "Dans quel secteur de Kyoto se trouve la célèbre forêt de bambous ?",
+          "a": "Arashiyama"
+        },
+        {
+          "level": 7,
+          "q": "Quel est le plus célèbre quartier de geishas de Kyoto ?",
+          "a": "Gion"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : Kyoto a été la capitale impériale du Japon pendant plus de 1 000 ans ?",
+          "a": "Vrai (de 794 à 1868)"
+        },
+        {
+          "level": 9,
+          "q": "Quel temple est célèbre pour sa grande terrasse en bois sur pilotis, construite sans clous ?",
+          "a": "Le Kiyomizu-dera"
+        },
+        {
+          "level": 10,
+          "q": "Dans quel temple se trouve le jardin zen de 15 pierres qu'on ne peut jamais voir toutes en même temps ?",
+          "a": "Le Ryōan-ji"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la ville de Taipei",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Taipei est la principale ville de quelle île ?",
+          "a": "Taïwan"
+        },
+        {
+          "level": 2,
+          "q": "Quelle boisson au thé avec des perles de tapioca est née à Taïwan ?",
+          "a": "Le bubble tea"
+        },
+        {
+          "level": 3,
+          "q": "Quel gratte-ciel de Taipei a été le plus haut du monde de 2004 à 2010 ?",
+          "a": "Taipei 101"
+        },
+        {
+          "level": 4,
+          "q": "Combien d'étages au-dessus du sol compte cette tour ?",
+          "a": "101"
+        },
+        {
+          "level": 5,
+          "q": "Qu'est-ce qui est suspendu en haut de Taipei 101 pour contrer vents et séismes : une boule d'acier géante, une piscine ou une cloche ?",
+          "a": "Une boule d'acier géante"
+        },
+        {
+          "level": 6,
+          "q": "Quel plat fermenté à l'odeur très forte est une star des marchés de nuit de Taipei ?",
+          "a": "Le tofu puant"
+        },
+        {
+          "level": 7,
+          "q": "Quel musée de Taipei abrite une célèbre sculpture de jade en forme de chou ?",
+          "a": "Le musée national du Palais"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : en 2019, Taïwan est devenu le premier territoire d'Asie à légaliser le mariage homosexuel ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel est le nom officiel de l'État basé à Taipei ?",
+          "a": "La République de Chine"
+        },
+        {
+          "level": 10,
+          "q": "Quelle chaîne de restaurants de raviolis née à Taipei a décroché une étoile Michelin à Hong Kong ?",
+          "a": "Din Tai Fung"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable d'Oulan-Bator et de la Mongolie",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Oulan-Bator est la capitale de quel pays ?",
+          "a": "La Mongolie"
+        },
+        {
+          "level": 2,
+          "q": "Quel conquérant a fondé l'Empire mongol au XIIIe siècle ?",
+          "a": "Gengis Khan"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la tente ronde traditionnelle des nomades mongols ?",
+          "a": "La yourte (ger)"
+        },
+        {
+          "level": 4,
+          "q": "Quel grand désert s'étend au sud de la Mongolie ?",
+          "a": "Le désert de Gobi"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : Oulan-Bator est la capitale nationale la plus froide du monde ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Que signifie « Oulan-Bator » : héros rouge, ciel bleu ou cheval blanc ?",
+          "a": "Héros rouge"
+        },
+        {
+          "level": 7,
+          "q": "Au festival du Naadam, quelle épreuve complète la lutte et le tir à l'arc ?",
+          "a": "La course de chevaux"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : la plus grande statue équestre du monde, près d'Oulan-Bator, représente Gengis Khan ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel cheval sauvage réintroduit en Mongolie porte le nom d'un explorateur russe ?",
+          "a": "Le cheval de Przewalski"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle la boisson traditionnelle mongole à base de lait de jument fermenté ?",
+          "a": "L'airag"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des pandas géants",
+      "questions": [
+        {
+          "level": 1,
+          "q": "De quel pays le panda géant est-il originaire ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 2,
+          "q": "Quelle plante constitue l'essentiel de l'alimentation du panda ?",
+          "a": "Le bambou"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : le panda géant est un ours ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Quelle organisation de protection de la nature a un panda pour logo ?",
+          "a": "Le WWF"
+        },
+        {
+          "level": 5,
+          "q": "Comment appelle-t-on le fait pour la Chine de prêter des pandas à d'autres pays ?",
+          "a": "La diplomatie du panda"
+        },
+        {
+          "level": 6,
+          "q": "Combien de temps par jour un panda passe-t-il à manger : 2 h, 5 h ou plus de 10 h ?",
+          "a": "Plus de 10 h"
+        },
+        {
+          "level": 7,
+          "q": "Dans quelle province chinoise vivent la plupart des pandas sauvages ?",
+          "a": "Le Sichuan"
+        },
+        {
+          "level": 8,
+          "q": "Combien pèse un bébé panda à la naissance : environ 100 g, 1 kg ou 5 kg ?",
+          "a": "Environ 100 g"
+        },
+        {
+          "level": 9,
+          "q": "Avec quoi le panda tient-il ses tiges de bambou, faute de vrai pouce opposable ?",
+          "a": "Un os du poignet allongé (un « faux pouce »)"
+        },
+        {
+          "level": 10,
+          "q": "Comment s'appelle le premier panda né en France, au ZooParc de Beauval en 2017 ?",
+          "a": "Yuan Meng"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable du mont Fuji",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel est le plus haut sommet du Japon ?",
+          "a": "Le mont Fuji"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux : le mont Fuji est un volcan ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Quelle est l'altitude du mont Fuji : 2 776 m, 3 776 m ou 4 776 m ?",
+          "a": "3 776 m"
+        },
+        {
+          "level": 4,
+          "q": "Quel artiste a peint les « Trente-six vues du mont Fuji », dont la célèbre Grande Vague ?",
+          "a": "Hokusai"
+        },
+        {
+          "level": 5,
+          "q": "En quelle année a eu lieu sa dernière éruption : 1707, 1854 ou 1923 ?",
+          "a": "1707"
+        },
+        {
+          "level": 6,
+          "q": "Quand a lieu la saison officielle d'ascension : de juillet à septembre, de décembre à février ou d'avril à mai ?",
+          "a": "De juillet à septembre"
+        },
+        {
+          "level": 7,
+          "q": "Combien de grands lacs entourent le pied du mont Fuji ?",
+          "a": "5 (les Cinq lacs du Fuji)"
+        },
+        {
+          "level": 8,
+          "q": "Quelle forêt dense au pied du Fuji est surnommée la « mer d'arbres » ?",
+          "a": "Aokigahara"
+        },
+        {
+          "level": 9,
+          "q": "En quelle année le mont Fuji a-t-il été inscrit au patrimoine mondial de l'UNESCO : 2003, 2013 ou 2023 ?",
+          "a": "2013"
+        },
+        {
+          "level": 10,
+          "q": "Comment appelle-t-on en japonais le lever de soleil admiré depuis le sommet du Fuji ?",
+          "a": "Le goraikō"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la Grande Muraille",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Dans quel pays se trouve la Grande Muraille ?",
+          "a": "La Chine"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux : on peut voir la Grande Muraille à l'œil nu depuis la Lune ?",
+          "a": "Faux"
+        },
+        {
+          "level": 3,
+          "q": "Contre qui la muraille devait-elle surtout protéger : les nomades du Nord, les Japonais ou les Indiens ?",
+          "a": "Les nomades du Nord"
+        },
+        {
+          "level": 4,
+          "q": "Sous quelle dynastie a été bâtie la plupart de la muraille visible aujourd'hui : Ming, Tang ou Qing ?",
+          "a": "Les Ming"
+        },
+        {
+          "level": 5,
+          "q": "Quel premier empereur de Chine a relié les premières murailles entre elles ?",
+          "a": "Qin Shi Huang"
+        },
+        {
+          "level": 6,
+          "q": "Quelle section de la muraille près de Pékin est la plus visitée ?",
+          "a": "Badaling"
+        },
+        {
+          "level": 7,
+          "q": "Quelle longueur totale, toutes branches comprises, lui attribue une mesure officielle de 2012 : 2 000, 21 000 ou 210 000 km ?",
+          "a": "Environ 21 000 km"
+        },
+        {
+          "level": 8,
+          "q": "Quel ingrédient alimentaire était mélangé au mortier de certaines sections : du riz gluant, du sucre ou du lait ?",
+          "a": "Du riz gluant"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : la Grande Muraille est inscrite au patrimoine mondial de l'UNESCO depuis 1987 ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "Quel surnom porte l'endroit où la muraille plonge dans la mer, près de Shanhaiguan ?",
+          "a": "La Tête du Vieux Dragon (Laolongtou)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des trains japonais",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment s'appelle le train à grande vitesse japonais ?",
+          "a": "Le Shinkansen"
+        },
+        {
+          "level": 2,
+          "q": "Quel surnom en anglais lui donne-t-on à cause de sa forme et de sa vitesse ?",
+          "a": "Bullet train (train-balle)"
+        },
+        {
+          "level": 3,
+          "q": "En quelle année le premier Shinkansen a-t-il été mis en service, juste avant les JO de Tokyo : 1964, 1974 ou 1984 ?",
+          "a": "1964"
+        },
+        {
+          "level": 4,
+          "q": "Quelles grandes villes reliait la toute première ligne, le Tōkaidō Shinkansen ?",
+          "a": "Tokyo et Osaka"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : le retard moyen sur le Tōkaidō Shinkansen est inférieur à une minute ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quel oiseau a inspiré le long nez du Shinkansen série 500 pour réduire le bruit dans les tunnels ?",
+          "a": "Le martin-pêcheur"
+        },
+        {
+          "level": 7,
+          "q": "En combien de minutes les équipes de nettoyage remettent-elles un Shinkansen à neuf en gare de Tokyo ?",
+          "a": "7 minutes"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : une compagnie ferroviaire japonaise s'est déjà excusée publiquement pour un train parti 20 secondes en avance ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quelle future ligne à lévitation magnétique doit relier Tokyo à Nagoya ?",
+          "a": "Le Chūō Shinkansen"
+        },
+        {
+          "level": 10,
+          "q": "Quel record de vitesse un train maglev japonais a-t-il atteint en 2015 : 503, 603 ou 703 km/h ?",
+          "a": "603 km/h"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des bizarreries japonaises",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle machine trouve-t-on à presque tous les coins de rue au Japon pour acheter une boisson ?",
+          "a": "Un distributeur automatique"
+        },
+        {
+          "level": 2,
+          "q": "Vrai ou faux : au Japon, laisser un pourboire n'est pas d'usage ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appellent les hôtels où l'on dort dans de minuscules alvéoles empilées ?",
+          "a": "Les hôtels capsules"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : les distributeurs japonais peuvent servir des boissons chaudes en canette ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 5,
+          "q": "Quel mot japonais signifiant « orchestre vide » désigne le chant sur fond musical ?",
+          "a": "Karaoké"
+        },
+        {
+          "level": 6,
+          "q": "Quelle entreprise japonaise fabrique les célèbres toilettes lavantes Washlet ?",
+          "a": "Toto"
+        },
+        {
+          "level": 7,
+          "q": "Vrai ou faux : le mot « emoji » vient du japonais et non de l'anglais « emotion » ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 8,
+          "q": "Comment appelle-t-on au Japon les supérettes ouvertes 24 h/24 ?",
+          "a": "Les konbini"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : le tout premier bar à chats a ouvert au Japon ?",
+          "a": "Faux (à Taipei, en 1998)"
+        },
+        {
+          "level": 10,
+          "q": "Quel art japonais consiste à réparer les céramiques cassées avec de l'or ?",
+          "a": "Le kintsugi"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la Corée du Sud",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel groupe de K-pop à sept membres a conquis le monde avec « Dynamite » ?",
+          "a": "BTS"
+        },
+        {
+          "level": 2,
+          "q": "Quelle série coréenne de Netflix sortie en 2021 met en scène des jeux d'enfants mortels ?",
+          "a": "Squid Game"
+        },
+        {
+          "level": 3,
+          "q": "Vrai ou faux : en Corée, les baguettes sont souvent en métal ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle l'alphabet coréen ?",
+          "a": "Le hangeul"
+        },
+        {
+          "level": 5,
+          "q": "Quel film coréen a remporté la Palme d'or 2019 puis l'Oscar du meilleur film ?",
+          "a": "Parasite"
+        },
+        {
+          "level": 6,
+          "q": "Quel roi a fait créer cet alphabet au XVe siècle ?",
+          "a": "Le roi Sejong le Grand"
+        },
+        {
+          "level": 7,
+          "q": "Quelle grande entreprise coréenne porte un nom qui signifie « trois étoiles » ?",
+          "a": "Samsung"
+        },
+        {
+          "level": 8,
+          "q": "Selon une célèbre superstition coréenne, quel appareil allumé dans une chambre fermée pourrait tuer pendant le sommeil ?",
+          "a": "Un ventilateur"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : en 2023, la Corée du Sud a officiellement adopté l'âge international, abandonnant le système où l'on a 1 an à la naissance ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "Quel jour les célibataires coréens se consolent-ils en mangeant des nouilles à la sauce noire (jajangmyeon) ?",
+          "a": "Le 14 avril (Black Day)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de la Corée du Nord",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle est la capitale de la Corée du Nord ?",
+          "a": "Pyongyang"
+        },
+        {
+          "level": 2,
+          "q": "Près de quel parallèle passe la frontière entre les deux Corées ?",
+          "a": "Le 38e parallèle"
+        },
+        {
+          "level": 3,
+          "q": "Quel est le nom de famille de la dynastie au pouvoir en Corée du Nord ?",
+          "a": "Kim"
+        },
+        {
+          "level": 4,
+          "q": "Comment s'appelle la bande de terre qui sépare les deux Corées ?",
+          "a": "La zone démilitarisée (DMZ)"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : la guerre de Corée ne s'est jamais terminée par un traité de paix ?",
+          "a": "Vrai (seulement un armistice en 1953)"
+        },
+        {
+          "level": 6,
+          "q": "Quel immense hôtel en forme de pyramide de Pyongyang est resté inachevé pendant des décennies ?",
+          "a": "L'hôtel Ryugyong"
+        },
+        {
+          "level": 7,
+          "q": "Dans quel village de la DMZ les deux Corées se rencontrent-elles dans des baraquements bleus ?",
+          "a": "Panmunjom"
+        },
+        {
+          "level": 8,
+          "q": "Quelle année correspondait à l'an 1 du calendrier Juche nord-coréen : 1912, 1945 ou 1948 ?",
+          "a": "1912 (naissance de Kim Il-sung)"
+        },
+        {
+          "level": 9,
+          "q": "Quel ancien basketteur star de la NBA s'est rendu plusieurs fois en Corée du Nord pour voir Kim Jong-un ?",
+          "a": "Dennis Rodman"
+        },
+        {
+          "level": 10,
+          "q": "Quel village nord-coréen visible depuis la DMZ est surnommé le « village de la propagande » ?",
+          "a": "Kijong-dong"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable du zodiaque chinois et des chiffres",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Combien d'animaux compte le zodiaque chinois ?",
+          "a": "12"
+        },
+        {
+          "level": 2,
+          "q": "Quel animal ouvre le cycle du zodiaque chinois ?",
+          "a": "Le Rat"
+        },
+        {
+          "level": 3,
+          "q": "Quel chiffre porte bonheur en Chine car il sonne comme « prospérité » ?",
+          "a": "Le 8"
+        },
+        {
+          "level": 4,
+          "q": "Quel chiffre est évité en Chine et au Japon car il sonne comme « mort » ?",
+          "a": "Le 4"
+        },
+        {
+          "level": 5,
+          "q": "Quel animal ferme le cycle du zodiaque chinois ?",
+          "a": "Le Cochon"
+        },
+        {
+          "level": 6,
+          "q": "Quel animal du zodiaque correspondait à l'année 2024 ?",
+          "a": "Le Dragon"
+        },
+        {
+          "level": 7,
+          "q": "À quelle date précise ont commencé les JO de Pékin, pour porter chance ?",
+          "a": "Le 8 août 2008 (à 20 h 08)"
+        },
+        {
+          "level": 8,
+          "q": "Combien d'éléments (bois, feu…) se combinent aux 12 animaux pour former un cycle de 60 ans ?",
+          "a": "5"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : dans de nombreux immeubles d'Asie de l'Est, le 4e étage n'existe pas dans l'ascenseur ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "Selon la légende, quel animal, piégé par le rat, a raté la course et ne fait pas partie du zodiaque ?",
+          "a": "Le chat"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable de l'armée de terre cuite",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quelle armée de statues grandeur nature a été découverte près de Xi'an ?",
+          "a": "L'armée de terre cuite"
+        },
+        {
+          "level": 2,
+          "q": "Qui l'a découverte en 1974 : des paysans creusant un puits, des archéologues ou des soldats ?",
+          "a": "Des paysans creusant un puits"
+        },
+        {
+          "level": 3,
+          "q": "Quel premier empereur de Chine cette armée devait-elle protéger dans l'au-delà ?",
+          "a": "Qin Shi Huang"
+        },
+        {
+          "level": 4,
+          "q": "Vrai ou faux : les soldats ont tous été moulés avec le même visage ?",
+          "a": "Faux"
+        },
+        {
+          "level": 5,
+          "q": "Combien de soldats environ compte cette armée : 800, 8 000 ou 80 000 ?",
+          "a": "Environ 8 000"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : à l'origine, les statues étaient peintes de couleurs vives ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Quel métal liquide, selon les textes anciens, coulait en rivières dans le tombeau de l'empereur ?",
+          "a": "Le mercure"
+        },
+        {
+          "level": 8,
+          "q": "Vrai ou faux : la chambre funéraire de l'empereur n'a encore jamais été ouverte ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 9,
+          "q": "Quel historien de la dynastie Han a décrit ce tombeau environ un siècle après sa construction ?",
+          "a": "Sima Qian"
+        },
+        {
+          "level": 10,
+          "q": "Quel dernier empereur de Chine, qui abdiqua en 1912, a inspiré un film oscarisé de Bertolucci ?",
+          "a": "Puyi"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des inventions chinoises",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quel support pour écrire, inventé en Chine, a remplacé le bambou et la soie ?",
+          "a": "Le papier"
+        },
+        {
+          "level": 2,
+          "q": "Quelle poudre explosive, inventée en Chine, a servi aux feux d'artifice avant les armes ?",
+          "a": "La poudre à canon"
+        },
+        {
+          "level": 3,
+          "q": "Quel instrument d'orientation avec une aiguille aimantée vient de Chine ?",
+          "a": "La boussole"
+        },
+        {
+          "level": 4,
+          "q": "Quel tissu précieux, longtemps gardé secret, a donné son nom à une célèbre route commerciale ?",
+          "a": "La soie"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : l'imprimerie à caractères mobiles a été inventée en Chine avant Gutenberg ?",
+          "a": "Vrai (par Bi Sheng, au XIe siècle)"
+        },
+        {
+          "level": 6,
+          "q": "Vrai ou faux : les Chinois ont été les premiers à utiliser des billets de banque en papier ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 7,
+          "q": "Selon la légende, quel empereur aurait découvert le thé quand une feuille tomba dans son eau chaude ?",
+          "a": "Shennong"
+        },
+        {
+          "level": 8,
+          "q": "Quel fonctionnaire de la dynastie Han est crédité de l'invention du papier vers l'an 105 ?",
+          "a": "Cai Lun"
+        },
+        {
+          "level": 9,
+          "q": "Qu'a inventé Zhang Heng en 132, avec des dragons et des crapauds en bronze ?",
+          "a": "Un sismoscope (détecteur de séismes)"
+        },
+        {
+          "level": 10,
+          "q": "Quel est le plus ancien livre imprimé daté connu, trouvé à Dunhuang et daté de 868 ?",
+          "a": "Le Sûtra du Diamant"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des animaux d'Asie de l'Est",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Quels singes japonais sont célèbres pour se baigner dans les sources chaudes en hiver ?",
+          "a": "Les macaques japonais"
+        },
+        {
+          "level": 2,
+          "q": "Quel petit mammifère roux à longue queue rayée porte aussi le nom de panda ?",
+          "a": "Le panda roux"
+        },
+        {
+          "level": 3,
+          "q": "Quels animaux se promènent en liberté dans les rues et parcs de la ville de Nara ?",
+          "a": "Des cerfs (sika)"
+        },
+        {
+          "level": 4,
+          "q": "Quel grand oiseau blanc à calotte rouge est un symbole de longévité au Japon et en Chine ?",
+          "a": "La grue du Japon"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : la salamandre géante de Chine est le plus grand amphibien du monde ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quel poisson toxique, préparé par des chefs certifiés, est un mets de luxe au Japon ?",
+          "a": "Le fugu (poisson-globe)"
+        },
+        {
+          "level": 7,
+          "q": "Quel chameau à deux bosses vit dans le désert de Gobi ?",
+          "a": "Le chameau de Bactriane"
+        },
+        {
+          "level": 8,
+          "q": "Sur quelle petite île japonaise vivent des centaines de lapins en liberté ?",
+          "a": "Ōkunoshima"
+        },
+        {
+          "level": 9,
+          "q": "Vrai ou faux : certains cerfs de Nara s'inclinent pour réclamer des biscuits ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 10,
+          "q": "Quelle longueur record peut atteindre la salamandre géante de Chine : 50 cm, 1,8 m ou 4 m ?",
+          "a": "1,8 m"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "L'improbable des cerisiers en fleurs",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Comment appelle-t-on les fleurs de cerisier en japonais ?",
+          "a": "Sakura"
+        },
+        {
+          "level": 2,
+          "q": "En quelle saison les cerisiers fleurissent-ils au Japon ?",
+          "a": "Au printemps"
+        },
+        {
+          "level": 3,
+          "q": "Comment s'appelle la tradition de pique-niquer sous les cerisiers en fleurs ?",
+          "a": "Le hanami"
+        },
+        {
+          "level": 4,
+          "q": "Quelle capitale reçut du Japon environ 3 000 cerisiers en cadeau en 1912 ?",
+          "a": "Washington"
+        },
+        {
+          "level": 5,
+          "q": "Vrai ou faux : la météo japonaise publie des prévisions de floraison des cerisiers ?",
+          "a": "Vrai"
+        },
+        {
+          "level": 6,
+          "q": "Quelle idée la fleur de cerisier symbolise-t-elle au Japon : la richesse, le caractère éphémère de la vie ou la guerre ?",
+          "a": "Le caractère éphémère de la vie"
+        },
+        {
+          "level": 7,
+          "q": "Comment appelle-t-on la ligne de floraison qui remonte le Japon du sud vers le nord ?",
+          "a": "Le front des cerisiers (sakura zensen)"
+        },
+        {
+          "level": 8,
+          "q": "Quelle variété de cerisier, aux fleurs presque blanches, est la plus répandue au Japon ?",
+          "a": "La Somei-yoshino"
+        },
+        {
+          "level": 9,
+          "q": "Depuis quel siècle environ note-t-on les dates de floraison des cerisiers à Kyoto : IXe, XVe ou XIXe ?",
+          "a": "Le IXe siècle"
+        },
+        {
+          "level": 10,
+          "q": "Quelle montagne de la préfecture de Nara est célèbre pour ses quelque 30 000 cerisiers ?",
+          "a": "Le mont Yoshino"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Métro, boulot, dodo",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous dans quel pays se trouvent ces grandes villes : CHINE, JAPON, CORÉE DU SUD, CORÉE DU NORD, TAÏWAN ou MONGOLIE.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Busan\nB. Osaka\nC. Kaohsiung\nD. Chongqing\nE. Darkhan\nF. Kaesong\nG. Incheon\nH. Sapporo\nI. Taichung\nJ. Wuhan",
+          "a": "A. Corée du Sud\nB. Japon\nC. Taïwan\nD. Chine\nE. Mongolie\nF. Corée du Nord\nG. Corée du Sud\nH. Japon\nI. Taïwan\nJ. Chine"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Le fleuve tranquille",
+      "questions": [
+        {
+          "level": null,
+          "q": "Cite des fleuves et rivières d'Asie de l'Est (Chine, Japon, Corées, Taïwan, Mongolie).\nTu avanceras d'une case par bonne réponse.\nTu n'as que 45 secondes",
+          "a": "Yangzi Jiang (fleuve Bleu), fleuve Jaune (Huang He), rivière des Perles, Mékong (Lancang), Amour (Heilong Jiang),\nSalouen (Nu Jiang), Brahmapoutre (Yarlung Tsangpo), Songhua, Liao, Huai, Xi Jiang, Tarim, Ili,\nYalou, Tumen, Taedong, Han (Séoul), Nakdong, Geum,\nShinano, Tone, Kiso, Ishikari, Kitakami,\nSelenga, Orkhon, Kherlen, Tuul, Zhuoshui (Taïwan)...\nAutres propositions soumises à l'approbation de plus de la moitié des joueurs"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Le mont Fuji-tif",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le mont Fuji est le point culminant du Japon\nB. La Mongolie possède une façade maritime\nC. Le Yangzi Jiang est le plus long fleuve d'Asie\nD. L'île d'Okinawa se trouve tout au nord du Japon\nE. L'Everest se trouve sur la frontière entre la Chine et le Népal\nF. Pékin est une ville côtière\nG. Le tropique du Cancer traverse Taïwan\nH. Jeju est la plus grande île de Corée du Sud",
+          "a": "A. Vrai (3 776 m)\nB. Faux (elle est enclavée entre la Russie et la Chine)\nC. Vrai (environ 6 300 km)\nD. Faux (elle est tout au sud, dans l'archipel des Ryūkyū)\nE. Vrai\nF. Faux (elle est à plus de 100 km de la mer)\nG. Vrai\nH. Vrai"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Bon appétit, itadakimasu !",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si ces plats viennent de CHINE, du JAPON, de CORÉE, de TAÏWAN ou de MONGOLIE.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Le bibimbap\nB. L'okonomiyaki\nC. Le canard laqué\nD. Le bubble tea\nE. Les buuz\nF. Les tteokbokki\nG. Les takoyaki\nH. Le mapo tofu\nI. Le khorkhog\nJ. Le bulgogi",
+          "a": "A. Corée\nB. Japon\nC. Chine (Pékin)\nD. Taïwan\nE. Mongolie (raviolis à la vapeur)\nF. Corée (gâteaux de riz sauce pimentée)\nG. Japon (boulettes au poulpe, spécialité d'Osaka)\nH. Chine (Sichuan)\nI. Mongolie (viande cuite avec des pierres brûlantes)\nJ. Corée"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Mon voisin Ghibli",
+      "questions": [
+        {
+          "level": null,
+          "q": "Cite des longs métrages du studio Ghibli.\nTu avanceras d'une case par bonne réponse.\nTu n'as que 45 secondes",
+          "a": "Le Château dans le ciel, Mon voisin Totoro, Le Tombeau des lucioles, Kiki la petite sorcière,\nSouvenirs goutte à goutte, Porco Rosso, Je peux entendre l'océan, Pompoko, Si tu tends l'oreille,\nPrincesse Mononoké, Mes voisins les Yamada, Le Voyage de Chihiro, Le Royaume des chats,\nLe Château ambulant, Les Contes de Terremer, Ponyo sur la falaise, Arrietty, La Colline aux coquelicots,\nLe vent se lève, Le Conte de la princesse Kaguya, Souvenirs de Marnie, Aya et la sorcière, Le Garçon et le Héron...\nNausicaä de la vallée du vent (sorti avant la création officielle du studio) peut être accepté"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Le héros, c'est qui ?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Donne le nom du personnage principal de ces mangas / animes.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. One Piece\nB. Dragon Ball\nC. Naruto\nD. Death Note\nE. L'Attaque des Titans\nF. Fullmetal Alchemist\nG. Demon Slayer\nH. Bleach\nI. Neon Genesis Evangelion\nJ. Hunter × Hunter",
+          "a": "A. Monkey D. Luffy\nB. Son Goku (Sangoku)\nC. Naruto Uzumaki\nD. Light Yagami\nE. Eren Jäger\nF. Edward Elric (avec son frère Alphonse)\nG. Tanjirō Kamado\nH. Ichigo Kurosaki\nI. Shinji Ikari\nJ. Gon Freecss"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "La guerre des consoles",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si ces consoles ont été fabriquées par NINTENDO, SONY ou SEGA.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Game Boy\nB. Dreamcast\nC. PSP\nD. Mega Drive\nE. GameCube\nF. Saturn\nG. PS Vita\nH. Virtual Boy\nI. Game Gear\nJ. Wii",
+          "a": "A. Nintendo\nB. Sega\nC. Sony\nD. Sega\nE. Nintendo\nF. Sega\nG. Sony\nH. Nintendo\nI. Sega\nJ. Nintendo"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Insert coin",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous de quelle série de jeux vidéo viennent ces personnages.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Link\nB. Samus Aran\nC. Solid Snake\nD. Cloud Strife\nE. Chun-Li\nF. Pikachu\nG. Tails\nH. Leon S. Kennedy\nI. Kazuya Mishima\nJ. Yoshi",
+          "a": "A. The Legend of Zelda\nB. Metroid\nC. Metal Gear\nD. Final Fantasy (VII)\nE. Street Fighter\nF. Pokémon\nG. Sonic the Hedgehog\nH. Resident Evil\nI. Tekken\nJ. Super Mario (la série Yoshi est aussi acceptée)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Oppa Gangnam Style",
+      "questions": [
+        {
+          "level": null,
+          "q": "Cite des groupes ou artistes de K-pop.\nTu avanceras d'une case par bonne réponse.\nTu n'as que 45 secondes",
+          "a": "BTS, BLACKPINK, EXO, TWICE, BIGBANG, Girls' Generation, Super Junior, SHINee, TVXQ,\nStray Kids, SEVENTEEN, NCT, TXT, ENHYPEN, ATEEZ, GOT7, MONSTA X,\nRed Velvet, aespa, NewJeans, ITZY, IVE, LE SSERAFIM, (G)I-DLE, MAMAMOO, 2NE1, Wonder Girls, KARA,\nPSY, BoA, IU, Rain...\nAutres propositions soumises à l'approbation de plus de la moitié des joueurs"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Silence, ça tourne !",
+      "questions": [
+        {
+          "level": null,
+          "q": "Donne le réalisateur de ces films.\nRéponds à toutes les questions, tu as 8 secondes maximum par question et avanceras d'une case par bonne réponse.\nA. Parasite\nB. Les Sept Samouraïs\nC. In the Mood for Love\nD. Tigre et Dragon\nE. Old Boy\nF. Épouses et Concubines\nG. Une affaire de famille\nH. Adieu ma concubine\nI. Godzilla (1954)\nJ. Your Name",
+          "a": "A. Bong Joon-ho (Corée du Sud)\nB. Akira Kurosawa (Japon)\nC. Wong Kar-wai (Hong Kong)\nD. Ang Lee (Taïwan)\nE. Park Chan-wook (Corée du Sud)\nF. Zhang Yimou (Chine)\nG. Hirokazu Kore-eda (Japon)\nH. Chen Kaige (Chine)\nI. Ishirō Honda (Japon)\nJ. Makoto Shinkai (Japon)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Quel animal es-tu ?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Cite les 12 animaux du zodiaque chinois.\nTu avanceras d'une case par bonne réponse, et de 2 cases de plus si tu les donnes tous dans l'ordre.\nTu n'as que 45 secondes",
+          "a": "Dans l'ordre :\n1. Rat\n2. Buffle (bœuf)\n3. Tigre\n4. Lapin (lièvre)\n5. Dragon\n6. Serpent\n7. Cheval\n8. Chèvre (mouton, bélier)\n9. Singe\n10. Coq\n11. Chien\n12. Cochon (sanglier)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Fils du Ciel",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces dynasties chinoises de façon chronologique.\nTu avanceras de 6 cases si tu réponds juste.\nA. Ming\nB. Han\nC. Qing\nD. Tang\nE. Qin\nF. Yuan",
+          "a": "Réponse E, B, D, F, A puis C\nE. Qin (221 à 206 av. J.-C.), celle du premier empereur\nB. Han (206 av. J.-C. à 220)\nD. Tang (618 à 907)\nF. Yuan (1271 à 1368), la dynastie mongole\nA. Ming (1368 à 1644)\nC. Qing (1644 à 1912), la dernière dynastie"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Il était une fois au Japon",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces périodes de l'histoire du Japon de façon chronologique.\nTu avanceras de 6 cases si tu réponds juste.\nA. L'époque d'Edo\nB. L'époque de Heian\nC. L'ère Shōwa\nD. L'époque de Nara\nE. L'ère Meiji\nF. L'époque de Kamakura",
+          "a": "Réponse D, B, F, A, E puis C\nD. Nara (710 à 794)\nB. Heian (794 à 1185)\nF. Kamakura (1185 à 1333), le premier shogunat\nA. Edo (1603 à 1868), le shogunat Tokugawa\nE. Meiji (1868 à 1912)\nC. Shōwa (1926 à 1989)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Ne pas confondre",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si ces éléments viennent de CHINE, du JAPON ou de CORÉE.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le hangeul (alphabet)\nB. Le taekwondo\nC. Le kendo\nD. Les katakana\nE. Le pinyin\nF. Le tai-chi-chuan\nG. Chuseok (fête des récoltes)\nH. Le hanami\nI. Le wing chun\nJ. Le ssireum (lutte)",
+          "a": "A. Corée\nB. Corée\nC. Japon\nD. Japon (un des deux syllabaires japonais)\nE. Chine (transcription du mandarin en alphabet latin)\nF. Chine\nG. Corée\nH. Japon (la contemplation des cerisiers en fleurs)\nI. Chine (l'art martial de Bruce Lee et d'Ip Man)\nJ. Corée"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Le dernier empereur",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Gengis Khan a fondé l'Empire mongol\nB. La guerre de Corée s'est terminée par un traité de paix en 1953\nC. Macao était une colonie britannique\nD. Hong Kong a été rétrocédé à la Chine en 1997\nE. La Cité interdite se trouve à Shanghai\nF. Puyi fut le dernier empereur de Chine\nG. La première bombe atomique a été larguée sur Nagasaki\nH. Les JO de Tokyo 1964 furent les premiers organisés en Asie",
+          "a": "A. Vrai\nB. Faux (seulement par un armistice : les deux Corées sont toujours techniquement en guerre)\nC. Faux (colonie portugaise, rétrocédée à la Chine en 1999)\nD. Vrai\nE. Faux (elle est à Pékin)\nF. Vrai (il a abdiqué en 1912)\nG. Faux (sur Hiroshima le 6 août 1945, puis Nagasaki le 9 août)\nH. Vrai"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Et le Nobel est attribué à...",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si les affirmations suivantes sur les prix Nobel sont vraies ou fausses.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le président sud-coréen Kim Dae-jung a reçu le prix Nobel de la paix\nB. L'écrivain chinois Mo Yan a reçu le prix Nobel de physique\nC. Le dalaï-lama n'a jamais reçu le prix Nobel de la paix\nD. La Chinoise Tu Youyou a reçu le prix Nobel de médecine\nE. Yasunari Kawabata fut le premier Japonais prix Nobel de littérature\nF. Han Kang est la première personne sud-coréenne prix Nobel de littérature\nG. Le Japonais Shinya Yamanaka a reçu le prix Nobel de chimie\nH. Liu Xiaobo a reçu le prix Nobel de la paix alors qu'il était en prison",
+          "a": "A. Vrai (en 2000)\nB. Faux (c'est le prix Nobel de littérature, en 2012)\nC. Faux (il l'a reçu en 1989)\nD. Vrai (en 2015, pour la découverte de l'artémisinine contre le paludisme)\nE. Vrai (en 1968)\nF. Vrai (en 2024)\nG. Faux (prix Nobel de médecine en 2012, pour les cellules souches iPS)\nH. Vrai (en 2010)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Eurêka (ou presque)",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dis-nous si ces inventions viennent de CHINE ou du JAPON.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Le papier\nB. Les nouilles instantanées\nC. La boussole\nD. Le Walkman\nE. La poudre à canon\nF. Le QR code\nG. La porcelaine\nH. Les émojis\nI. Le papier-monnaie (billets de banque)\nJ. Le train à grande vitesse Shinkansen",
+          "a": "A. Chine\nB. Japon (Momofuku Andō, 1958)\nC. Chine\nD. Japon (Sony, 1979)\nE. Chine\nF. Japon (Denso Wave, 1994)\nG. Chine\nH. Japon (apparus sur les téléphones japonais à la fin des années 1990)\nI. Chine\nJ. Japon (1964)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Plus vite, plus haut, plus à l'est",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces Jeux olympiques de façon chronologique.\nTu avanceras de 6 cases si tu réponds juste.\nA. Les JO d'été de Séoul\nB. Les JO d'hiver de Nagano\nC. Les premiers JO d'été de Tokyo\nD. Les JO d'hiver de Pyeongchang\nE. Les JO d'hiver de Sapporo\nF. Les JO d'été de Pékin",
+          "a": "Réponse C, E, A, B, F puis D\nC. Tokyo en 1964\nE. Sapporo en 1972\nA. Séoul en 1988\nB. Nagano en 1998\nF. Pékin en 2008\nD. Pyeongchang en 2018"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Ça veut dire quoi, déjà ?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Ces mots sont passés en français. Dis-nous s'ils viennent du JAPONAIS, du CHINOIS ou du CORÉEN.\nTu avanceras d'une case par bonne réponse mais reculeras d'une case à chaque erreur.\nA. Karaoké\nB. Tsunami\nC. Émoji\nD. Kimono\nE. Wok\nF. Kumquat\nG. Ginseng\nH. Kimchi\nI. Manga\nJ. Taekwondo",
+          "a": "A. Japonais (\"orchestre vide\")\nB. Japonais (\"vague du port\")\nC. Japonais (\"image\" + \"caractère\", rien à voir avec \"émotion\" !)\nD. Japonais (\"chose que l'on porte\")\nE. Chinois (cantonais)\nF. Chinois (cantonais, \"orange dorée\")\nG. Chinois (\"racine-homme\")\nH. Coréen\nI. Japonais\nJ. Coréen (\"la voie du pied et du poing\")"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Ça se bouscule",
+      "questions": [
+        {
+          "level": null,
+          "q": "Classe ces pays du plus peuplé au moins peuplé.\nTu avanceras de 6 cases si tu réponds juste.\nA. Mongolie\nB. Japon\nC. Taïwan\nD. Chine\nE. Corée du Nord\nF. Corée du Sud",
+          "a": "Réponse D, B, F, E, C puis A\nD. Chine, environ 1,4 milliard d'habitants\nB. Japon, environ 124 millions\nF. Corée du Sud, environ 51 millions\nE. Corée du Nord, environ 26 millions\nC. Taïwan, environ 23 millions\nA. Mongolie, environ 3,5 millions"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le dernier samouraï debout",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel seigneur de guerre a remporté la bataille de Sekigahara en 1600, ouvrant la voie à son propre shogunat ?\nA. Oda Nobunaga\nB. Toyotomi Hideyoshi\nC. Tokugawa Ieyasu\nD. Ishida Mitsunari",
+          "a": "Réponse C\n(Il devient shogun en 1603)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Taïwan voit les choses de haut",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel est le plus haut sommet de Taïwan ?\nA. Yushan\nB. Alishan\nC. Xueshan\nD. Hehuanshan",
+          "a": "Réponse A\n(Le « mont de Jade », près de 3 950 m)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "C'est plus de 8 000 !",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans « Dragon Ball », quel est le nom saiyan de naissance de Son Goku ?\nA. Vegeta\nB. Raditz\nC. Bardock\nD. Kakarot",
+          "a": "Réponse D\n(Bardock est son père, Raditz son frère)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Avant Mario, il y avait des cartes",
+      "questions": [
+        {
+          "level": null,
+          "q": "En quelle année Nintendo a-t-il été fondé à Kyoto, à l'origine pour fabriquer des cartes à jouer hanafuda ?\nA. 1872\nB. 1889\nC. 1933\nD. 1949",
+          "a": "Réponse B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "ARMY de réserve",
+      "questions": [
+        {
+          "level": null,
+          "q": "Que signifie littéralement « Bangtan Sonyeondan », le nom coréen de BTS ?\nA. Les Garçons du futur\nB. Les Scouts pare-balles\nC. Les Frères de la scène\nD. Les Enfants de l'aube",
+          "a": "Réponse B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "1, 2, 3, soleil… éliminé",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans « Squid Game », quelle est la toute première épreuve que doivent affronter les joueurs ?\nA. 1, 2, 3, soleil\nB. Le tir à la corde\nC. Le dalgona (biscuit au sucre)\nD. Les billes",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Il y a toujours quelqu'un au sous-sol",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans « Parasite » de Bong Joon-ho, quel est le nom de famille de la famille pauvre ?\nA. Park\nB. Lee\nC. Kim\nD. Choi",
+          "a": "Réponse C\n(La famille riche s'appelle Park)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Be water, be jaune",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans quel film Bruce Lee porte-t-il sa célèbre combinaison jaune à bandes noires ?\nA. La Fureur de vaincre\nB. La Fureur du dragon\nC. Opération Dragon\nD. Le Jeu de la mort",
+          "a": "Réponse D\n(Reprise par Uma Thurman dans « Kill Bill »)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le cinquième élément… du goût",
+      "questions": [
+        {
+          "level": null,
+          "q": "En 1908, Kikunae Ikeda a identifié le goût umami en étudiant un bouillon à base de quel ingrédient ?\nA. Algue kombu\nB. Champignon shiitake\nC. Bonite séchée\nD. Sauce soja",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Le pionnier de Stockholm",
+      "questions": [
+        {
+          "level": null,
+          "q": "Qui fut le premier Japonais à recevoir un prix Nobel, celui de physique en 1949 ?\nA. Shin'ichirō Tomonaga\nB. Hideki Yukawa\nC. Yasunari Kawabata\nD. Leo Esaki",
+          "a": "Réponse B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "La voie de la souplesse",
+      "questions": [
+        {
+          "level": null,
+          "q": "Qui a fondé le judo en 1882 ?\nA. Morihei Ueshiba\nB. Gichin Funakoshi\nC. Jigorō Kanō\nD. Masutatsu Ōyama",
+          "a": "Réponse C\n(Ueshiba a fondé l'aïkido, Funakoshi le karaté Shotokan)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Orange mécanique à Séoul",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel entraîneur néerlandais a mené la Corée du Sud en demi-finale de la Coupe du monde 2002 ?\nA. Dick Advocaat\nB. Guus Hiddink\nC. Louis van Gaal\nD. Pim Verbeek",
+          "a": "Réponse B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Simple comme ㄱㄴㄷ",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel roi de Joseon a créé l'alphabet coréen hangeul, promulgué en 1446 ?\nA. Sejong le Grand\nB. Taejo\nC. Gwanggaeto le Grand\nD. Jeongjo",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Une herbe qui vaut un Nobel",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tu Youyou, prix Nobel de médecine 2015, a découvert l'artémisinine. Contre quelle maladie est-elle utilisée ?\nA. La tuberculose\nB. Le choléra\nC. La variole\nD. Le paludisme",
+          "a": "Réponse D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Avant d'être Khan, il était…",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel était le nom de naissance de Gengis Khan ?\nA. Ögedei\nB. Jochi\nC. Temüjin\nD. Tolui",
+          "a": "Réponse C\n(Ögedei, Jochi et Tolui sont ses fils)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Né sous une bonne étoile (officiellement)",
+      "questions": [
+        {
+          "level": null,
+          "q": "Selon la biographie officielle nord-coréenne, sur quelle montagne sacrée Kim Jong-il est-il né ?\nA. Kumgang\nB. Myohyang\nC. Halla\nD. Paektu",
+          "a": "Réponse D\n(Volcan à la frontière sino-coréenne)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "God Save the… Harbour",
+      "questions": [
+        {
+          "level": null,
+          "q": "Qui fut le dernier gouverneur britannique de Hong Kong avant la rétrocession de 1997 ?\nA. Chris Patten\nB. David Wilson\nC. Murray MacLehose\nD. Edward Youde",
+          "a": "Réponse A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Creuser un puits, trouver une armée",
+      "questions": [
+        {
+          "level": null,
+          "q": "En quelle année des paysans creusant un puits près de Xi'an ont-ils découvert l'armée de terre cuite ?\nA. 1949\nB. 1966\nC. 1974\nD. 1987",
+          "a": "Réponse C"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "101 étages de fierté",
+      "questions": [
+        {
+          "level": null,
+          "q": "Quel gratte-ciel a ravi à Taipei 101 le titre de plus haut bâtiment du monde ?\nA. Petronas Towers\nB. Shanghai Tower\nC. Abraj Al-Bait\nD. Burj Khalifa",
+          "a": "Réponse D\n(En 2010)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "On m'a volé mon prénom",
+      "questions": [
+        {
+          "level": null,
+          "q": "Dans « Le Voyage de Chihiro », quel nouveau nom Yubaba donne-t-elle à Chihiro ?\nA. Lin\nB. Sen\nC. Haku\nD. Chi",
+          "a": "Réponse B"
+        }
+      ]
+    }
+  ]
+}
