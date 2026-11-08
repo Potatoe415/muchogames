@@ -1,18 +1,24 @@
 // Pure rules (no DOM): the bird, the pipes, collisions and the score, in
 // world units. The world is HEIGHT units tall; its width follows the
 // screen's aspect ratio, so a wide screen just shows more pipes ahead.
+// Difficulty = the original Flappy Bird's (288x512 px, ground at 79%),
+// converted at 1 px = 88 / 404.5 units: 100 px gap, 52 px pipes, 128 px/s
+// scroll, ~147 px apart, flap rises 45 px in 0.3 s, gap within 20-80 % of
+// the playfield. As there, the sky is no wall: the bird may rise a little
+// above the screen (flaps stop working there) and only the ground kills.
 export const HEIGHT = 100;
 export const GROUND = 88; // top of the ground strip
-export const BIRD_X = 22; // the bird never moves sideways
-export const BIRD_R = 3.6;
-export const PIPE_W = 14;
-export const GAP = 27;
-const GRAVITY = 260; // units / s²
-const FLAP = -72; // vertical speed right after a flap
-const MAX_FALL = 110;
-const SPEED = 34; // pipes scroll, units / s
-const SPACING = 54; // distance between two pipes
-const MARGIN = 9; // a gap never comes closer than this to sky or ground
+export const BIRD_X = 16; // the bird never moves sideways (its centre)
+export const BIRD_R = 2.6;
+export const PIPE_W = 11.3;
+export const GAP = 21.8;
+const GRAVITY = 218; // units / s²
+const FLAP = -65; // vertical speed right after a flap
+const MAX_FALL = 65;
+const SPEED = 28; // pipes scroll, units / s
+const SPACING = 32; // distance between two pipes
+const MARGIN = 17.5; // a gap never comes closer than this to sky or ground
+export const CEILING = -10.4; // highest the top of the bird may be to flap
 const DYING = 0.9; // seconds of fall after a hit, before the end card
 
 
@@ -29,7 +35,7 @@ export function newState(width) {
     y: HEIGHT * 0.42,
     vy: 0,
     pipes: [], // { x, gap (centre y), scored }
-    nextIn: 24, // distance to scroll before the next pipe appears
+    nextIn: 41, // distance to scroll before the next pipe appears
     score: 0,
     dist: 0, // total scrolled, drives the ground and clouds
     dying: 0
@@ -56,7 +62,7 @@ export function hitsPipe(x, y, pipe) {
 }
 
 export function collides(state) {
-  if (state.y - BIRD_R <= 0 || state.y + BIRD_R >= GROUND) return true;
+  if (state.y + BIRD_R >= GROUND) return true;
   return state.pipes.some((pipe) => hitsPipe(BIRD_X, state.y, pipe));
 }
 
@@ -71,6 +77,7 @@ class Engine {
     const s = this.state;
     if (s.phase === "over") return;
     s.phase = "play";
+    if (s.y - BIRD_R <= CEILING) return;
     s.vy = FLAP;
     this.events.push("flap");
   }

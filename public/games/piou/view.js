@@ -72,7 +72,7 @@ class View {
     this.clouds(state.dist);
     state.pipes.forEach((pipe) => drawPipe(ctx, pipe));
     this.ground(state.dist);
-    const tilt = Math.max(-0.45, Math.min(1.3, state.vy / 90));
+    const tilt = Math.max(-0.45, Math.min(1.3, state.vy / 50));
     const bob = state.phase === "ready" ? Math.sin(performance.now() / 220) : 0;
     drawBird(ctx, BIRD_X, state.y + bob, tilt, state.vy < 0);
   }

@@ -32,7 +32,7 @@ export function decodeMatch(text) {
   }
   const valid =
     d?.v === VERSION &&
-    isNum(d.y, 0, HEIGHT) &&
+    isNum(d.y, -HEIGHT, HEIGHT) &&
     isNum(d.vy, -500, 500) &&
     Array.isArray(d.pipes) &&
     d.pipes.length <= MAX_PIPES &&

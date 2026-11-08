@@ -16,8 +16,8 @@ Solo one-button arcade game (original take on the "flap between pipes" genre —
 
 ## Rules in code
 
-- Gravity 260 u/s², flap sets vy to −72 u/s, max fall 110 u/s. Pipes 14 u wide scroll at 34 u/s, one every 54 u, first one 24 u after the first flap; gap 27 u, centre random but ≥ 9 u from the sky and the ground. Bird: circle r 3.6 at x 22. A wide screen shows more pipes ahead; the bird's x and the difficulty do not change with the screen.
-- Collision = circle vs. the two rectangles of each pipe, plus y − r ≤ 0 (ceiling) or y + r ≥ 88 (ground).
+- Difficulty copied from the original Flappy Bird (values of the FlapPyBird clone, 288×512 px, ground at 79 %), converted at 1 px = 88 / 404.5 u. Gravity 218 u/s², flap sets vy to −65 u/s, max fall 65 u/s (a flap rises 45 px in 0.3 s, as there). Pipes 11.3 u wide (52 px) scroll at 28 u/s (128 px/s), one every 32 u (~147 px), first one 41 u after the first flap (~3.4 s to reach the bird on a 288×512 screen); gap 21.8 u (100 px), centre random but ≥ 17.5 u from the sky and the ground (gap within 20–80 % of the playfield). Bird: circle r 2.6 (24 px tall) centred at x 16. No deadly ceiling, as in the original: the bird may rise above the screen, a flap does nothing once its top is above −10.4 u (−2 bird heights), the pipes still reach up there. Tilt = vy / 50. A wide screen shows more pipes ahead; the bird's x and the difficulty do not change with the screen.
+- Collision = circle vs. the two rectangles of each pipe, plus y + r ≥ 88 (ground).
 - `finish({ score })` without `won` (no win in an endless runner). Best saved the moment the end card shows.
 - Input: `pointerdown` on the play area (touch / mouse; `touch-action: none`, no click delay, no scroll / zoom), Space / ↑ / W anywhere except on another focused control, Enter / OK on the focused play area. TV: the play area takes the focus at match start and declares `data-tv-keys="up"` so ↑ flaps instead of moving the focus; Back = pause.
 - Pause: ❚❚, opening the options, or the page going hidden. The bird freezes ("Tape pour repartir"); after Continue the next tap resumes.
