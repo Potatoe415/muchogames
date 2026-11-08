@@ -322,7 +322,7 @@ body {
   align-content: center;
   --gap: 6px;
   /* Rows sit a little further apart than columns. */
-  --row-gap: calc(var(--gap) * 2.5);
+  --row-gap: calc(var(--gap) * 4);
   --cell: min(calc((100cqw - (var(--cols) - 1) * var(--gap)) / var(--cols)), calc((100cqh - (var(--rows) - 1) * var(--row-gap)) / var(--rows)));
 }
 
