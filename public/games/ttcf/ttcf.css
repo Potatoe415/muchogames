@@ -1503,3 +1503,30 @@ html.tv :focus {
   height: 1.9rem;
   object-fit: contain;
 }
+
+/* --- Extensions block on the dashboard: collapsed until opened. --- */
+.ext-box {
+  border: 2px solid var(--paper-edge);
+  border-radius: 0.8rem;
+  background: #fffaf0;
+  color: var(--wood);
+}
+
+.ext-box[hidden] {
+  display: none;
+}
+
+.ext-box summary {
+  padding: 0.55rem 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ext-box[open] summary {
+  border-bottom: 1px solid var(--paper-edge);
+}
+
+.ext-box > .pack-row,
+.ext-box > .pack-list {
+  padding: 0.45rem 0.8rem;
+}

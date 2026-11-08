@@ -3,7 +3,7 @@
 // step (store.js), so leaving by any route brings it back from the dashboard.
 import { LAST, THEMES, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
-import { clearMatch, hasMatch, loadMatch, readHideFr, readMode, readPacks, storeHideFr, storeMatch, storeMode, storePacks } from './store.js';
+import { clearMatch, hasMatch, loadMatch, readMode, storeMatch, storeMode } from './store.js';
 import { createWheel } from './wheel.js';
 
 const GAME_ID = 'ttcf';
@@ -26,9 +26,9 @@ const page = {
   // cards = the whole deck (base, then each pack that loaded), so indexes never
   // move; `packs` = the ids ticked on the dashboard (a match keeps its own).
   cards: [],
-  packs: readPacks(),
-  // Hide the base cards flagged `frOnly` (very French-specific), for this dashboard choice.
-  hideFr: readHideFr(),
+  packs: [],
+  // Hide the base cards flagged `frOnly` (very French-specific). Like the packs, unticked at every visit.
+  hideFr: false,
   names: [],
   count: 2,
   match: null,
@@ -153,13 +153,15 @@ function renderHideFr() {
   const row = $('ttcf-hide-fr-row');
   row.hidden = !page.cards.some((card) => card.frOnly);
   $('ttcf-hide-fr-check').checked = page.hideFr;
+  return !row.hidden;
 }
 
 function renderPacks() {
-  renderHideFr();
+  const hasHideFr = renderHideFr();
   const list = $('ttcf-pack-list');
   const present = PACKS.filter((pack) => page.cards.some((card) => card.pack === pack.id));
   list.hidden = !present.length;
+  $('ttcf-extensions').hidden = !present.length && !hasHideFr;
   list.replaceChildren(
     ...present.map((pack) => {
       const row = document.createElement('label');
@@ -179,7 +181,6 @@ function renderPacks() {
 
 function setPack(id, on) {
   page.packs = on ? [...new Set([...page.packs, id])] : page.packs.filter((p) => p !== id);
-  storePacks(page.packs);
 }
 
 function setMode(mode) {
@@ -691,7 +692,6 @@ function bindControls() {
   };
   $('ttcf-hide-fr-check').addEventListener('change', (event) => {
     page.hideFr = event.target.checked;
-    storeHideFr(page.hideFr);
   });
   Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
 }

@@ -3,9 +3,6 @@
 // validated against the loaded cards and the board: a bad save is dropped.
 const SAVE_KEY = 'muchogames_ttcf_save';
 const MODE_KEY = 'muchogames_ttcf_mode';
-const PACKS_KEY = 'muchogames_ttcf_packs';
-const HIDE_FR_KEY = 'muchogames_ttcf_hide_fr';
-const LATINO_KEY = 'muchogames_ttcf_latino';
 const VERSION = 1;
 const MODES = ['board', 'wheel'];
 const STEPS = ['bonus', 'eval', 'question', 'answer'];
@@ -54,8 +51,6 @@ export function loadMatch(cards, last) {
     if (!data) return null;
     // A save from before the wheel mode is a board match.
     const match = data.match && { mode: 'board', ...data.match };
-    // A save from the single Latino box.
-    if (match && match.packs == null && match.latino === true) match.packs = ['latino'];
     if (data.v === VERSION && isValidMatch(match, cards, last)) return match;
     localStorage.removeItem(SAVE_KEY);
   } catch {
@@ -95,43 +90,6 @@ export function readMode() {
 export function storeMode(mode) {
   try {
     localStorage.setItem(MODE_KEY, mode);
-  } catch {
-    // Storage unavailable: the choice lasts for this visit.
-  }
-}
-
-// The extension packs (extra cards mixed into the deck): the ids last ticked on the dashboard.
-export function readPacks() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(PACKS_KEY));
-    if (Array.isArray(saved)) return saved.filter((id) => typeof id === 'string');
-    // Before the packs: a single Latino box.
-    return localStorage.getItem(LATINO_KEY) === '1' ? ['latino'] : [];
-  } catch {
-    return [];
-  }
-}
-
-// Hide the cards that only a French player can answer: the last choice on the dashboard.
-export function readHideFr() {
-  try {
-    return localStorage.getItem(HIDE_FR_KEY) === '1';
-  } catch {
-    return false;
-  }
-}
-
-export function storeHideFr(on) {
-  try {
-    localStorage.setItem(HIDE_FR_KEY, on ? '1' : '0');
-  } catch {
-    // Storage unavailable: the choice lasts for this visit.
-  }
-}
-
-export function storePacks(ids) {
-  try {
-    localStorage.setItem(PACKS_KEY, JSON.stringify(ids));
   } catch {
     // Storage unavailable: the choice lasts for this visit.
   }
