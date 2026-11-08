@@ -3,6 +3,7 @@
 // validated against the loaded cards and the board: a bad save is dropped.
 const SAVE_KEY = 'muchogames_ttcf_save';
 const MODE_KEY = 'muchogames_ttcf_mode';
+const PACKS_KEY = 'muchogames_ttcf_packs';
 const LATINO_KEY = 'muchogames_ttcf_latino';
 const VERSION = 1;
 const MODES = ['board', 'wheel'];
@@ -38,7 +39,7 @@ function isValidMatch(match, cards, last) {
     teams.length >= 2 &&
     teams.length <= MAX_TEAMS &&
     MODES.includes(match.mode) &&
-    (match.latino == null || typeof match.latino === 'boolean') &&
+    (match.packs == null || (Array.isArray(match.packs) && match.packs.every((id) => typeof id === 'string'))) &&
     teams.every((team, i) => validTeam(team, i, last)) &&
     isInt(match.cur, 0, teams.length - 1) &&
     validCard(match.card, cards, last)
@@ -51,6 +52,8 @@ export function loadMatch(cards, last) {
     if (!data) return null;
     // A save from before the wheel mode is a board match.
     const match = data.match && { mode: 'board', ...data.match };
+    // A save from the single Latino box.
+    if (match && match.packs == null && match.latino === true) match.packs = ['latino'];
     if (data.v === VERSION && isValidMatch(match, cards, last)) return match;
     localStorage.removeItem(SAVE_KEY);
   } catch {
@@ -95,18 +98,21 @@ export function storeMode(mode) {
   }
 }
 
-// The Latino extension (extra cards mixed into the deck): the last choice on the dashboard.
-export function readLatino() {
+// The extension packs (extra cards mixed into the deck): the ids last ticked on the dashboard.
+export function readPacks() {
   try {
-    return localStorage.getItem(LATINO_KEY) === '1';
+    const saved = JSON.parse(localStorage.getItem(PACKS_KEY));
+    if (Array.isArray(saved)) return saved.filter((id) => typeof id === 'string');
+    // Before the packs: a single Latino box.
+    return localStorage.getItem(LATINO_KEY) === '1' ? ['latino'] : [];
   } catch {
-    return false;
+    return [];
   }
 }
 
-export function storeLatino(on) {
+export function storePacks(ids) {
   try {
-    localStorage.setItem(LATINO_KEY, on ? '1' : '0');
+    localStorage.setItem(PACKS_KEY, JSON.stringify(ids));
   } catch {
     // Storage unavailable: the choice lasts for this visit.
   }

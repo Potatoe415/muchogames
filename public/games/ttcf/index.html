@@ -76,7 +76,7 @@
           <button type="button" class="chip mode-chip" data-mode="board" data-id="ttcf-mode-board" data-i18n="modeBoard">Plateau</button>
           <button type="button" class="chip mode-chip" data-mode="wheel" data-id="ttcf-mode-wheel" data-i18n="modeWheel">Roue de la fortune</button>
         </div>
-        <label class="latino-row" data-id="ttcf-latino-row" hidden><input type="checkbox" data-id="ttcf-latino-check" /><span data-i18n="latino">Extension Latino</span></label>
+        <div class="pack-list" data-id="ttcf-pack-list" hidden></div>
         <p class="setup-label" data-i18n="teams">Équipes</p>
         <div id="teamsList" class="teams-list" data-id="ttcf-teams-list"></div>
         <button type="button" id="addTeamBtn" class="btn secondary" data-id="ttcf-add-team-btn" data-i18n="addTeam">+ Ajouter équipe</button>
@@ -150,6 +150,8 @@
           <div id="answerStep" hidden data-id="ttcf-answer-step">
             <p class="answer-label" data-i18n="answer">Réponse :</p>
             <p id="cardAnswer" class="card-text" data-id="ttcf-card-answer"></p>
+            <!-- Débuter card only: pick the team that starts. -->
+            <div class="starter-picker" data-id="ttcf-starter-picker" role="group" hidden></div>
 
             <div id="validationButtons" class="validation-buttons">
               <button type="button" id="failBtn" class="btn danger" data-id="ttcf-fail-btn"></button>

@@ -1434,7 +1434,7 @@ html.tv :focus {
   }
 }
 
-.latino-row {
+.pack-row {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1444,13 +1444,60 @@ html.tv :focus {
   cursor: pointer;
 }
 
-.latino-row input {
+.pack-row input {
   width: 1.2rem;
   height: 1.2rem;
   accent-color: var(--wood);
   flex: none;
 }
 
-.latino-row[hidden] {
+.pack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.pack-list[hidden],
+.pack-row[hidden] {
   display: none;
+}
+
+/* --- Débuter card: pick the team that starts. --- */
+.starter-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0.6rem 0;
+}
+
+.starter-picker[hidden] {
+  display: none;
+}
+
+.starter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.5rem;
+  padding: 0.2rem 0.7rem 0.2rem 0.35rem;
+  border: 2px solid var(--paper-edge);
+  border-radius: 999px;
+  background: #fffaf0;
+  color: var(--wood);
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.starter-btn.active {
+  background: var(--wood);
+  border-color: var(--wood-dark);
+  color: var(--paper);
+}
+
+.starter-token {
+  width: 1.9rem;
+  height: 1.9rem;
+  object-fit: contain;
 }

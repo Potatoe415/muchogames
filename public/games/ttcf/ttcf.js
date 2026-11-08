@@ -3,25 +3,30 @@
 // step (store.js), so leaving by any route brings it back from the dashboard.
 import { LAST, THEMES, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
-import { clearMatch, hasMatch, loadMatch, readLatino, readMode, storeLatino, storeMatch, storeMode } from './store.js';
+import { clearMatch, hasMatch, loadMatch, readMode, readPacks, storeMatch, storeMode, storePacks } from './store.js';
 import { createWheel } from './wheel.js';
 
 const GAME_ID = 'ttcf';
 const LANG_KEY = 'bergamots-lang';
 const MAX_TEAMS = 8;
 const TIMER_SECONDS = 30;
+// Extension packs: deck file ids, the globe on the card header, the label key.
+const PACKS = [
+  { id: 'latino', icon: '🌎', label: 'packLatino' },
+  { id: 'afrique', icon: '🌍', label: 'packAfrique' },
+  { id: 'asie', icon: '🌏', label: 'packAsie' }
+];
+
 const SPECIAL_THEMES = ['Challenge', 'Débuter', 'Gagner', 'Superbe'];
 
 const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const page = {
   lang: readLang(),
-  // cards = what is drawn from: the base deck, plus the extension when `latino`.
-  // The extension is appended, so the base cards keep their indexes.
+  // cards = the whole deck (base, then each pack that loaded), so indexes never
+  // move; `packs` = the ids ticked on the dashboard (a match keeps its own).
   cards: [],
-  base: [],
-  extra: [],
-  latino: readLatino(),
+  packs: readPacks(),
   names: [],
   count: 2,
   match: null,
@@ -138,24 +143,34 @@ function renderModes() {
   });
 }
 
-function fullDeck() {
-  return [...page.base, ...page.extra];
+function packsOn() {
+  return page.packs.filter((id) => page.cards.some((card) => card.pack === id));
 }
 
-function buildDeck() {
-  page.cards = page.latino ? fullDeck() : page.base;
+function renderPacks() {
+  const list = $('ttcf-pack-list');
+  const present = PACKS.filter((pack) => page.cards.some((card) => card.pack === pack.id));
+  list.hidden = !present.length;
+  list.replaceChildren(
+    ...present.map((pack) => {
+      const row = document.createElement('label');
+      row.className = 'pack-row';
+      const box = document.createElement('input');
+      box.type = 'checkbox';
+      box.dataset.id = `ttcf-pack-${pack.id}`;
+      box.checked = page.packs.includes(pack.id);
+      box.addEventListener('change', () => setPack(pack.id, box.checked));
+      const text = document.createElement('span');
+      text.textContent = t(pack.label);
+      row.append(box, text);
+      return row;
+    })
+  );
 }
 
-function renderLatino() {
-  $('ttcf-latino-row').hidden = !page.extra.length;
-  $('ttcf-latino-check').checked = page.latino;
-}
-
-function setLatino(on) {
-  page.latino = on;
-  storeLatino(on);
-  buildDeck();
-  renderLatino();
+function setPack(id, on) {
+  page.packs = on ? [...new Set([...page.packs, id])] : page.packs.filter((p) => p !== id);
+  storePacks(page.packs);
 }
 
 function setMode(mode) {
@@ -166,14 +181,14 @@ function setMode(mode) {
 
 function renderDashboard() {
   renderModes();
-  renderLatino();
+  renderPacks();
   const ready = page.cards.length > 0;
   $('ttcf-start-btn').disabled = !ready;
   $('ttcf-load-status').hidden = ready;
   // Resume shows (disabled) while the deck loads, so the acorn row, which
   // makes room for it, never flashes in and out (see index.html).
   const resume = $('ttcf-resume-button');
-  resume.hidden = !(ready ? loadMatch(fullDeck(), LAST) : hasMatch(LAST));
+  resume.hidden = !(ready ? loadMatch(page.cards, LAST) : hasMatch(LAST));
   resume.disabled = !ready;
   $('ttcf-setup-hero').hidden = false;
 }
@@ -206,7 +221,7 @@ async function startMatch(names) {
   page.starting = false;
   if (!started) return;
   // Every team starts on D; the Débuter card says which team plays first.
-  page.match = { mode: page.mode, latino: page.latino, teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
+  page.match = { mode: page.mode, packs: packsOn(), teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
   showScreen('board');
   // The new match's board, not the last one's tokens, under the Débuter card.
   renderMatch();
@@ -214,11 +229,8 @@ async function startMatch(names) {
 }
 
 function resumeMatch() {
-  const saved = loadMatch(fullDeck(), LAST);
+  const saved = loadMatch(page.cards, LAST);
   if (!saved) return renderDashboard();
-  // The match keeps the deck it started with.
-  page.latino = !!saved.latino;
-  buildDeck();
   window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   page.match = saved;
@@ -309,11 +321,14 @@ async function playSpin(landing) {
 function drawCard(theme = spaceTheme(page.match.teams[page.match.cur].pos), opening = false, bonus = null) {
   // A skipped card is not drawn again straight away.
   const previous = page.match.card?.index;
-  const same = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
+  // Base cards, plus the packs of this match (a match keeps the packs it started with).
+  const packs = page.match.packs || [];
+  const active = page.cards.map((card, index) => ({ card, index })).filter(({ card }) => card.pack === 'base' || packs.includes(card.pack));
+  const same = active.filter(({ card }) => card.theme.toLowerCase() === theme.toLowerCase());
   const pool = same.length > 1 ? same.filter(({ index }) => index !== previous) : same;
   const index = pool.length
     ? pool[Math.floor(Math.random() * pool.length)].index
-    : Math.floor(Math.random() * page.cards.length);
+    : active[Math.floor(Math.random() * active.length)].index;
   const superbe = page.cards[index].theme === 'Superbe';
   const direct = opening || (SPECIAL_THEMES.includes(theme) && !superbe) || !page.cards[index].questions[0].level;
   const step = superbe ? 'bonus' : direct ? 'question' : 'eval';
@@ -387,9 +402,9 @@ function renderCard() {
   }
   const data = page.cards[card.index];
   const theme = $('ttcf-card-theme');
-  // A Latino extension card is marked with a discreet globe.
-  const latino = card.index >= page.base.length;
-  theme.textContent = (THEME_LABELS[page.lang][data.theme] || data.theme) + (latino ? ' 🌎' : '');
+  // An extension card is marked with a discreet globe.
+  const icon = PACKS.find((pack) => pack.id === data.pack)?.icon;
+  theme.textContent = (THEME_LABELS[page.lang][data.theme] || data.theme) + (icon ? ` ${icon}` : '');
   theme.className = `card-theme ${themeClass(data.theme)}`;
   $('ttcf-card-medallion').src = medallionArt(data.theme);
   $('ttcf-card-modal').dataset.theme = themeClass(data.theme);
@@ -427,7 +442,37 @@ function renderCard() {
   setTimeout(() => window.MuchogamesTv?.focusScreen(), 0);
 }
 
+// Débuter card: the team that starts is picked under the instruction (the
+// first team by default); it is saved, so Resume keeps the choice.
+function renderStarterPicker(card) {
+  const picker = $('ttcf-starter-picker');
+  picker.hidden = !card.opening;
+  if (!card.opening) return;
+  picker.setAttribute('aria-label', t('starterPick'));
+  picker.replaceChildren(
+    ...page.match.teams.map((team) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'starter-btn';
+      button.dataset.id = `ttcf-starter-${team.id}`;
+      button.setAttribute('aria-pressed', String(team.id === page.match.cur));
+      button.classList.toggle('active', team.id === page.match.cur);
+      button.append(picture(TOKEN_ART[team.id], 'starter-token'));
+      const name = document.createElement('span');
+      name.textContent = team.name;
+      button.append(name);
+      button.addEventListener('click', () => {
+        page.match.cur = team.id;
+        save();
+        renderStarterPicker(card);
+      });
+      return button;
+    })
+  );
+}
+
 function renderAnswerButtons(card) {
+  renderStarterPicker(card);
   // Challenge and Superbe rules move by their own count: set with + and −.
   const manual = (card.bonus != null || SPECIAL_THEMES.includes(card.theme)) && card.theme !== 'Gagner' && !card.opening;
   $('ttcf-manual-move').hidden = !manual;
@@ -635,28 +680,27 @@ function bindControls() {
     'ttcf-restart-btn': () => startMatch(teamNames()),
     'ttcf-menu-button': () => showScreen('dashboard')
   };
-  $('ttcf-latino-check').addEventListener('change', (event) => setLatino(event.target.checked));
   Object.entries(actions).forEach(([id, fn]) => $(id).addEventListener('click', fn));
 }
 
 // One deck per language, same card order in each (a save's card index works in all).
-async function fetchDeck(file) {
+async function fetchDeck(file, pack) {
   const res = await fetch(file);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = await res.json();
-  return (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
+  return (data.cards || [])
+    .filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length)
+    .map((card) => ({ ...card, pack }));
 }
 
 async function loadCards(lang) {
   try {
-    const base = await fetchDeck(`/data/ttcf/ttcf_data_${lang}.json`);
-    // The extension is optional: without it the toggle stays hidden.
-    const extra = await fetchDeck(`/data/ttcf/ttcf_data_latino_${lang}.json`).catch(() => []);
-    if (page.lang === lang) {
-      page.base = base;
-      page.extra = extra;
-      buildDeck();
-    }
+    const [base, ...extras] = await Promise.all([
+      fetchDeck(`/data/ttcf/ttcf_data_${lang}.json`, 'base'),
+      // Packs are optional: a missing file just hides its box.
+      ...PACKS.map((pack) => fetchDeck(`/data/ttcf/ttcf_data_${pack.id}_${lang}.json`, pack.id).catch(() => []))
+    ]);
+    if (page.lang === lang) page.cards = [base, ...extras].flat();
   } catch (error) {
     console.warn('[ttcf] cards not loaded', error);
   }
