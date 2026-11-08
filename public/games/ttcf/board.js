@@ -85,7 +85,7 @@ export function renderBoard({ match, walk, t, labels }) {
       badge.textContent = spaceBadge(theme, i, t);
       const art = ICON_THEMES.includes(theme)
         ? picture(`./assets/icons/${themeClass(theme)}.svg`, 'space-icon')
-        : picture(medallionArt(theme), 'space-medallion');
+        : picture(i === LAST ? './assets/medallions/chene.webp' : medallionArt(theme), 'space-medallion');
       const tokens = document.createElement('div');
       tokens.className = 'space-tokens';
       match.teams.forEach((team) => {
