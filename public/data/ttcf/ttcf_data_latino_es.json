@@ -1,0 +1,4924 @@
+{
+  "cards": [
+    {
+      "theme": "Scolaire",
+      "subject": "Simón Bolívar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Con qué apodo se conoce a Simón Bolívar?",
+          "a": "El Libertador"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué ciudad nació Simón Bolívar: Caracas, Bogotá o Lima?",
+          "a": "Caracas"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué país de Sudamérica lleva su nombre?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso? La moneda de Venezuela se llama bolívar.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué república, creada en 1819, unía a varios países actuales, entre ellos Venezuela y Colombia?",
+          "a": "La Gran Colombia"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué batalla de 1819 abrió el camino a la independencia de Colombia?",
+          "a": "La batalla de Boyacá"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué batalla de 1821 selló la independencia de Venezuela?",
+          "a": "La batalla de Carabobo"
+        },
+        {
+          "level": 8,
+          "q": "¿En qué año murió Bolívar: 1810, 1830 o 1850?",
+          "a": "En 1830"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué ciudad colombiana murió Bolívar?",
+          "a": "Santa Marta"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué famoso texto escribió Bolívar en el exilio en 1815?",
+          "a": "La Carta de Jamaica"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Los aztecas y la conquista de México",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué conquistador español conquistó el Imperio azteca?",
+          "a": "Hernán Cortés"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál era la capital azteca, sobre la que se construyó la Ciudad de México?",
+          "a": "Tenochtitlan"
+        },
+        {
+          "level": 3,
+          "q": "¿Los aztecas se llamaban a sí mismos: mexicas, olmecas o toltecas?",
+          "a": "Mexicas"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué emperador azteca recibió a Cortés en 1519?",
+          "a": "Moctezuma II"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Tenochtitlan estaba construida sobre una isla en medio de un lago.",
+          "a": "Verdadero (el lago de Texcoco)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué lengua hablaban los aztecas?",
+          "a": "El náhuatl"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué año cayó Tenochtitlan: 1492, 1521 o 1588?",
+          "a": "En 1521"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llamaba la intérprete indígena de Cortés?",
+          "a": "La Malinche (Malintzin o doña Marina)"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se conoce la noche de 1520 en que los españoles tuvieron que huir de Tenochtitlan?",
+          "a": "La Noche Triste"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué pueblo, enemigo de los aztecas, se alió con Cortés?",
+          "a": "Los tlaxcaltecas"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "El Imperio inca",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué ciudadela inca en lo alto de los Andes es una de las siete nuevas maravillas del mundo?",
+          "a": "Machu Picchu"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál era la capital del Imperio inca?",
+          "a": "El Cusco"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué país actual se encuentra Machu Picchu?",
+          "a": "Perú"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué conquistador español conquistó el Imperio inca?",
+          "a": "Francisco Pizarro"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Los incas usaban carretas con ruedas para transportar sus mercancías.",
+          "a": "Falso (usaban llamas y cargadores)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué lengua hablaban los incas, que todavía hablan millones de personas?",
+          "a": "El quechua"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué emperador inca fue capturado por Pizarro en Cajamarca en 1532?",
+          "a": "Atahualpa"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llamaban los cordones con nudos que usaban los incas para contar?",
+          "a": "Los quipus"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llamaba el dios del Sol que veneraban los incas?",
+          "a": "Inti"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo llamaban los incas a su imperio?",
+          "a": "El Tahuantinsuyo"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La civilización maya",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué península mexicana está la ciudad maya de Chichén Itzá?",
+          "a": "Yucatán"
+        },
+        {
+          "level": 2,
+          "q": "¿Verdadero o falso? Los mayas desaparecieron por completo y no tienen descendientes.",
+          "a": "Falso (millones de mayas viven todavía en México, Guatemala...)"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué base contaban los mayas: 10, 20 o 60?",
+          "a": "20 (sistema vigesimal)"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué concepto matemático usaban los mayas y que los romanos no conocían?",
+          "a": "El cero"
+        },
+        {
+          "level": 5,
+          "q": "¿El cero maya se representaba con: un caracol, un sol o una serpiente?",
+          "a": "Un caracol (concha)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué libro sagrado de los mayas k'iche' narra la creación del mundo?",
+          "a": "El Popol Vuh"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué país se encuentra la gran ciudad maya de Tikal?",
+          "a": "Guatemala"
+        },
+        {
+          "level": 8,
+          "q": "¿En qué país está el sitio maya de Copán?",
+          "a": "Honduras"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué fraile español mandó quemar códices mayas en Maní en 1562?",
+          "a": "Diego de Landa"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuántos códices mayas prehispánicos han llegado hasta nuestros días: 4, 40 o 400?",
+          "a": "4"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Independencia de México",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué cura inició el levantamiento por la independencia de México en 1810?",
+          "a": "Miguel Hidalgo"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama ese llamado a la insurrección de Hidalgo?",
+          "a": "El Grito de Dolores"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué día celebra México su independencia: el 16 de septiembre, el 5 de mayo o el 20 de noviembre?",
+          "a": "El 16 de septiembre"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso? El Cinco de Mayo celebra la independencia de México.",
+          "a": "Falso (celebra la batalla de Puebla de 1862 contra Francia)"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué imagen religiosa usó Hidalgo como estandarte?",
+          "a": "La Virgen de Guadalupe"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué otro cura insurgente encabezó el movimiento tras la muerte de Hidalgo?",
+          "a": "José María Morelos"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué año se consumó la independencia de México: 1810, 1821 o 1836?",
+          "a": "En 1821"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué heroína, apodada 'la Corregidora', avisó a los insurgentes que la conspiración había sido descubierta?",
+          "a": "Josefa Ortiz de Domínguez"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué militar, antes realista, se hizo proclamar emperador de México en 1822?",
+          "a": "Agustín de Iturbide"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué plan de 1821 proponía las 'Tres Garantías'?",
+          "a": "El Plan de Iguala"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "José Martí y la independencia de Cuba",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuál es la capital de Cuba?",
+          "a": "La Habana"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué poeta y héroe nacional es conocido como 'el Apóstol' de la independencia cubana?",
+          "a": "José Martí"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué famosa canción usa versos de Martí: Guantanamera, La Bamba o Bésame mucho?",
+          "a": "Guantanamera"
+        },
+        {
+          "level": 4,
+          "q": "¿Contra qué país europeo luchó Cuba por su independencia?",
+          "a": "España"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Cuba fue una de las últimas colonias españolas de América en liberarse.",
+          "a": "Verdadero (junto con Puerto Rico, en 1898)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué guerra de 1898 puso fin al dominio español en Cuba?",
+          "a": "La guerra hispano-estadounidense"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué año murió José Martí en combate: 1868, 1895 o 1898?",
+          "a": "En 1895 (en Dos Ríos)"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué hacendado inició la Guerra de los Diez Años en 1868 liberando a sus esclavos?",
+          "a": "Carlos Manuel de Céspedes"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué general de la independencia cubana era apodado 'el Titán de Bronce'?",
+          "a": "Antonio Maceo"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué periódico fundó José Martí en Nueva York en 1892?",
+          "a": "Patria"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "San Martín y la independencia del Cono Sur",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué general argentino libertó a Argentina, Chile y Perú?",
+          "a": "José de San Martín"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué cordillera cruzó San Martín con su ejército en 1817?",
+          "a": "La cordillera de los Andes"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué día celebra Argentina su independencia: el 9 de julio, el 25 de mayo o el 18 de septiembre?",
+          "a": "El 9 de julio (1816)"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué prócer chileno, hijo de un virrey de origen irlandés, luchó junto a San Martín?",
+          "a": "Bernardo O'Higgins"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? San Martín murió en Francia.",
+          "a": "Verdadero (en Boulogne-sur-Mer, en 1850)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué prócer argentino creó la bandera de su país?",
+          "a": "Manuel Belgrano"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué ciudad argentina se declaró la independencia en 1816?",
+          "a": "San Miguel de Tucumán"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué prócer es considerado el padre de la nación uruguaya?",
+          "a": "José Gervasio Artigas"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué ciudad se reunieron San Martín y Bolívar en 1822?",
+          "a": "Guayaquil (Ecuador)"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué batalla de 1817 ganó San Martín en Chile justo después de cruzar los Andes?",
+          "a": "La batalla de Chacabuco"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Brasil, de la colonia a la república",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué idioma oficial se habla en Brasil?",
+          "a": "El portugués"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es la capital de Brasil?",
+          "a": "Brasilia"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué navegante portugués llegó a las costas de Brasil en 1500?",
+          "a": "Pedro Álvares Cabral"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso? Río de Janeiro fue la capital de Brasil.",
+          "a": "Verdadero (hasta 1960)"
+        },
+        {
+          "level": 5,
+          "q": "¿De dónde viene el nombre 'Brasil': de un árbol, de un río o de un rey?",
+          "a": "De un árbol (el palo brasil)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué príncipe proclamó la independencia de Brasil en 1822?",
+          "a": "Pedro I"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué tratado de 1494 repartía el Nuevo Mundo entre España y Portugal?",
+          "a": "El Tratado de Tordesillas"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué ley de 1888 abolió la esclavitud en Brasil?",
+          "a": "La Ley Áurea"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué año Brasil se convirtió en república: 1822, 1889 o 1930?",
+          "a": "En 1889"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué líder del quilombo de Palmares es símbolo de la resistencia de los esclavos en Brasil?",
+          "a": "Zumbi dos Palmares"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Centroamérica",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué mar baña la costa este de Centroamérica?",
+          "a": "El mar Caribe"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es la capital de Guatemala?",
+          "a": "Ciudad de Guatemala"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuántos países tiene Centroamérica continental: 5, 7 o 9?",
+          "a": "7"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuál es el único país centroamericano sin costa en el mar Caribe?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Costa Rica abolió su ejército en el siglo XX.",
+          "a": "Verdadero (en 1948)"
+        },
+        {
+          "level": 6,
+          "q": "¿Cuál es el lago más grande de Centroamérica?",
+          "a": "El lago de Nicaragua (Cocibolca)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué día celebran su independencia la mayoría de los países centroamericanos?",
+          "a": "El 15 de septiembre (1821)"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llamaba el Estado que unió a varios países de la región desde 1823 hasta finales de la década de 1830?",
+          "a": "La República Federal de Centroamérica"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué general hondureño, presidente de esa federación, es el héroe de la unión centroamericana?",
+          "a": "Francisco Morazán"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué filibustero estadounidense se proclamó presidente de Nicaragua en 1856?",
+          "a": "William Walker"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La cordillera de los Andes",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué animal andino, pariente del camello, se cría por su lana y para cargar?",
+          "a": "La llama (o la alpaca)"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué gran ave carroñera es el símbolo de los Andes?",
+          "a": "El cóndor"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál es la montaña más alta de América: el Aconcagua, el Chimborazo o el Huascarán?",
+          "a": "El Aconcagua (unos 6960 m)"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué país está el Aconcagua?",
+          "a": "Argentina"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Los Andes son la cordillera continental más larga del mundo.",
+          "a": "Verdadero (unos 7000 km)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué lago, compartido por Perú y Bolivia, es el lago navegable más alto del mundo?",
+          "a": "El lago Titicaca"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué volcán de Ecuador tiene la cumbre más alejada del centro de la Tierra?",
+          "a": "El Chimborazo"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué ciudad, sede del gobierno boliviano, es la sede de gobierno más alta del mundo?",
+          "a": "La Paz"
+        },
+        {
+          "level": 9,
+          "q": "¿Por cuántos países pasa la cordillera de los Andes: 5, 7 o 9?",
+          "a": "7 (Venezuela, Colombia, Ecuador, Perú, Bolivia, Chile, Argentina)"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama la meseta andina compartida por Perú, Bolivia, Chile y Argentina?",
+          "a": "El Altiplano"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La Amazonía",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuál es el río más grande de Sudamérica?",
+          "a": "El Amazonas"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué océano desemboca el Amazonas?",
+          "a": "El océano Atlántico"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué país tiene la mayor parte de la selva amazónica?",
+          "a": "Brasil (cerca del 60 %)"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué pez de dientes afilados vive en el Amazonas: la piraña, el tiburón martillo o la barracuda?",
+          "a": "La piraña"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Ningún puente cruza el río Amazonas.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿Cuál es la serpiente más pesada de la Amazonía?",
+          "a": "La anaconda (verde)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué gran ciudad brasileña en plena Amazonía es famosa por su teatro de ópera?",
+          "a": "Manaos (Teatro Amazonas)"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué afluente de aguas negras se une al Amazonas cerca de Manaos sin mezclarse de inmediato?",
+          "a": "El río Negro"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué explorador español fue el primer europeo en recorrer el Amazonas, en 1541-1542?",
+          "a": "Francisco de Orellana"
+        },
+        {
+          "level": 10,
+          "q": "¿De dónde viene el nombre 'Amazonas'?",
+          "a": "De las amazonas, guerreras de la mitología griega (Orellana dijo haber combatido contra mujeres guerreras)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "El canal de Panamá",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué dos océanos une el canal de Panamá?",
+          "a": "El Atlántico (mar Caribe) y el Pacífico"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es la capital de Panamá?",
+          "a": "Ciudad de Panamá"
+        },
+        {
+          "level": 3,
+          "q": "¿Verdadero o falso? Panamá formó parte de Colombia.",
+          "a": "Verdadero (hasta 1903)"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué año se inauguró el canal: 1869, 1914 o 1950?",
+          "a": "En 1914"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué país terminó el canal y lo controló durante la mayor parte del siglo XX?",
+          "a": "Estados Unidos"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué francés, constructor del canal de Suez, fue el primero en intentar construirlo?",
+          "a": "Ferdinand de Lesseps"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué sistema permite a los barcos superar el desnivel del canal?",
+          "a": "Las esclusas"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué líder panameño firmó en 1977 los tratados del canal con Jimmy Carter?",
+          "a": "Omar Torrijos"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué año Panamá asumió el control total del canal: 1977, 1989 o 1999?",
+          "a": "En 1999 (el 31 de diciembre)"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué gran lago artificial, creado con una represa en el río Chagres, forma parte del canal?",
+          "a": "El lago Gatún"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Las capitales de América Latina",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuál es la capital de Argentina?",
+          "a": "Buenos Aires"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es la capital de Perú?",
+          "a": "Lima"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál es la capital de Colombia?",
+          "a": "Bogotá"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuál es la capital de Chile?",
+          "a": "Santiago"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? La capital de Ecuador es Guayaquil.",
+          "a": "Falso (es Quito)"
+        },
+        {
+          "level": 6,
+          "q": "¿Cuál es la capital de Uruguay?",
+          "a": "Montevideo"
+        },
+        {
+          "level": 7,
+          "q": "¿Cuál es la capital de Paraguay?",
+          "a": "Asunción"
+        },
+        {
+          "level": 8,
+          "q": "¿Cuál es la capital de Honduras?",
+          "a": "Tegucigalpa"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué ciudad es la capital constitucional de Bolivia?",
+          "a": "Sucre"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué capital fue fundada dos veces, en 1536 y en 1580?",
+          "a": "Buenos Aires"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Banderas y símbolos patrios",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Junto con el blanco, ¿qué color tiene la bandera argentina?",
+          "a": "El celeste"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué animal aparece en el centro de la bandera de México?",
+          "a": "Un águila (devorando una serpiente sobre un nopal)"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué astro aparece en las banderas de Argentina y Uruguay?",
+          "a": "El sol (el Sol de Mayo)"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué lema está escrito en la bandera de Brasil?",
+          "a": "'Ordem e Progresso' (Orden y Progreso)"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? La bandera de Cuba tiene una sola estrella.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué tres colores comparten las banderas de Colombia, Venezuela y Ecuador?",
+          "a": "Amarillo, azul y rojo"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué ave nacional de Guatemala le dio también nombre a la moneda del país?",
+          "a": "El quetzal"
+        },
+        {
+          "level": 8,
+          "q": "¿Cuántas estrellas tiene la bandera de Honduras?",
+          "a": "5 (por los países de la antigua federación centroamericana)"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué país sudamericano tiene una bandera con dos caras distintas?",
+          "a": "Paraguay"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuántas estrellas tiene la bandera de Brasil: 9, 27 o 50?",
+          "a": "27 (una por cada estado y una por el Distrito Federal)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La lengua española",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué letra es propia del alfabeto español: ñ, ç o ß?",
+          "a": "La ñ"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué signos se colocan en español al principio de las preguntas y exclamaciones?",
+          "a": "Los signos de apertura ¿ y ¡"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuántas letras tiene el abecedario español actual: 26, 27 o 29?",
+          "a": "27"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué país tiene más hablantes nativos de español?",
+          "a": "México"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? En español, las palabras esdrújulas siempre llevan tilde.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué institución, fundada en 1713, establece las normas de la lengua española?",
+          "a": "La Real Academia Española (RAE)"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama el uso de 'vos' en lugar de 'tú', típico de Argentina y Uruguay?",
+          "a": "El voseo"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué palabra del español viene del náhuatl: tomate, almohada o guitarra?",
+          "a": "Tomate (de tomatl)"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llaman las palabras que llevan el acento en la penúltima sílaba?",
+          "a": "Graves (o llanas)"
+        },
+        {
+          "level": 10,
+          "q": "¿Quién publicó en 1492 la primera gramática de la lengua castellana?",
+          "a": "Antonio de Nebrija"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Los premios Nobel de Literatura latinoamericanos",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué escritor colombiano escribió 'Cien años de soledad'?",
+          "a": "Gabriel García Márquez"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué poeta chilena fue, en 1945, la primera persona latinoamericana en recibir el Nobel de Literatura?",
+          "a": "Gabriela Mistral"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué poeta chileno escribió 'Veinte poemas de amor y una canción desesperada'?",
+          "a": "Pablo Neruda"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué escritor peruano recibió el Nobel de Literatura en 2010?",
+          "a": "Mario Vargas Llosa"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Jorge Luis Borges recibió el Nobel de Literatura.",
+          "a": "Falso (nunca lo recibió)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué poeta mexicano recibió el Nobel de Literatura en 1990?",
+          "a": "Octavio Paz"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué escritor guatemalteco, autor de 'El Señor Presidente', recibió el Nobel en 1967?",
+          "a": "Miguel Ángel Asturias"
+        },
+        {
+          "level": 8,
+          "q": "¿En qué año recibió García Márquez el Nobel: 1967, 1982 o 1999?",
+          "a": "En 1982"
+        },
+        {
+          "level": 9,
+          "q": "¿Cuál es el verdadero nombre de Pablo Neruda?",
+          "a": "Ricardo Eliécer Neftalí Reyes Basoalto"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuál es el verdadero nombre de Gabriela Mistral?",
+          "a": "Lucila Godoy Alcayaga"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La literatura latinoamericana",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué niña de historieta argentina, creada por Quino, odia la sopa?",
+          "a": "Mafalda"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué pueblo imaginario transcurre 'Cien años de soledad'?",
+          "a": "Macondo"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué corriente literaria mezcla lo maravilloso con lo cotidiano: el realismo mágico, el romanticismo o el naturalismo?",
+          "a": "El realismo mágico"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué poeta nicaragüense es considerado el padre del modernismo literario?",
+          "a": "Rubén Darío"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? 'Don Quijote' fue escrito por un autor latinoamericano.",
+          "a": "Falso (lo escribió el español Miguel de Cervantes)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué escritor argentino escribió 'Rayuela'?",
+          "a": "Julio Cortázar"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué escritor mexicano escribió 'Pedro Páramo'?",
+          "a": "Juan Rulfo"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué monja y poeta mexicana del siglo XVII es conocida como 'la Décima Musa'?",
+          "a": "Sor Juana Inés de la Cruz"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué poema épico argentino de José Hernández narra la vida de un gaucho?",
+          "a": "Martín Fierro"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué escritor uruguayo escribió 'Las venas abiertas de América Latina'?",
+          "a": "Eduardo Galeano"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Científicos latinoamericanos",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué insecto transmite el dengue y la fiebre amarilla?",
+          "a": "El mosquito (Aedes aegypti)"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué naturalista desarrolló su teoría de la evolución tras visitar las islas Galápagos (Ecuador)?",
+          "a": "Charles Darwin"
+        },
+        {
+          "level": 3,
+          "q": "¿Verdadero o falso? Argentina tiene varios premios Nobel en ciencias.",
+          "a": "Verdadero (Houssay, Leloir, Milstein)"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué pionero brasileño de la aviación hizo volar el 14-bis en París en 1906?",
+          "a": "Alberto Santos-Dumont"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué objeto cotidiano se llama 'birome' en Argentina, por su inventor László Bíró?",
+          "a": "El bolígrafo (la pluma o lapicera)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué médico cubano descubrió que el mosquito transmite la fiebre amarilla?",
+          "a": "Carlos J. Finlay"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué químico mexicano recibió el Nobel de Química de 1995 por sus estudios sobre la capa de ozono?",
+          "a": "Mario Molina"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué fisiólogo argentino fue, en 1947, el primer latinoamericano en recibir el Nobel de Medicina?",
+          "a": "Bernardo Houssay"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué naturalista alemán exploró Sudamérica hacia 1800 y dio nombre a una corriente marina del Pacífico?",
+          "a": "Alexander von Humboldt"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué científico argentino recibió el Nobel de Química en 1970?",
+          "a": "Luis Federico Leloir"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Las matemáticas en la escuela",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuánto es 7 × 8?",
+          "a": "56"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuántos lados tiene un hexágono?",
+          "a": "6"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál es el valor aproximado de pi: 3,14; 2,71 o 1,61?",
+          "a": "3,14"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuántos grados suman los ángulos de un triángulo?",
+          "a": "180°"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? El 1 es un número primo.",
+          "a": "Falso"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué teorema dice que, en un triángulo rectángulo, a² + b² = c²?",
+          "a": "El teorema de Pitágoras"
+        },
+        {
+          "level": 7,
+          "q": "¿Cuál es la raíz cuadrada de 144?",
+          "a": "12"
+        },
+        {
+          "level": 8,
+          "q": "¿Cuánto es 2 elevado a la 10?",
+          "a": "1024"
+        },
+        {
+          "level": 9,
+          "q": "¿Cuántas diagonales tiene un hexágono?",
+          "a": "9"
+        },
+        {
+          "level": 10,
+          "q": "¿En cuántos ceros termina 10! (factorial de 10)?",
+          "a": "2 (10! = 3 628 800)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "La geografía de Sudamérica",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuál es el país más grande de Sudamérica?",
+          "a": "Brasil"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué país de Sudamérica tiene forma de franja larga y angosta?",
+          "a": "Chile"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué desierto del norte de Chile es el desierto no polar más árido del mundo?",
+          "a": "El desierto de Atacama"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuál es la cascada más alta del mundo, ubicada en Venezuela?",
+          "a": "El Salto Ángel (Kerepakupai Merú)"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? Bolivia y Paraguay no tienen salida al mar.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué isla chilena del Pacífico es famosa por sus estatuas gigantes, los moáis?",
+          "a": "La isla de Pascua (Rapa Nui)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué cataratas están en la frontera entre Argentina y Brasil?",
+          "a": "Las cataratas del Iguazú"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué estuario separa Argentina de Uruguay, entre Buenos Aires y Montevideo?",
+          "a": "El Río de la Plata"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué estrecho separa el continente sudamericano de Tierra del Fuego?",
+          "a": "El estrecho de Magallanes"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué río, el segundo más largo de Sudamérica, atraviesa Brasil, Paraguay y Argentina?",
+          "a": "El Paraná"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en ron?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "El ron se hace a partir de: ¿caña de azúcar, papa o uva?",
+          "a": "De la caña de azúcar"
+        },
+        {
+          "level": 2,
+          "q": "Un Cuba Libre es ron mezclado con ¿qué?",
+          "a": "Con refresco de cola (y limón)"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué marca de ron, fundada en Santiago de Cuba en 1862, tiene un murciélago como logo?",
+          "a": "Bacardí"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso? La marca Havana Club nació en Cuba.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 5,
+          "q": "¿De qué país es el ron Brugal?",
+          "a": "De República Dominicana"
+        },
+        {
+          "level": 6,
+          "q": "¿De qué país es el ron Flor de Caña: Nicaragua, Perú o Chile?",
+          "a": "De Nicaragua"
+        },
+        {
+          "level": 7,
+          "q": "¿De qué país centroamericano es el ron Zacapa?",
+          "a": "De Guatemala"
+        },
+        {
+          "level": 8,
+          "q": "¿De qué país es el ron Diplomático?",
+          "a": "De Venezuela"
+        },
+        {
+          "level": 9,
+          "q": "¿De qué subproducto de la fabricación del azúcar se destila la mayoría de los rones?",
+          "a": "De la melaza"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama el método de añejamiento en barricas escalonadas, tomado del jerez, que usan muchos rones latinos?",
+          "a": "La solera"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en tequila y mezcal?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es el tequila?",
+          "a": "De México"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué cóctel combina tequila, triple sec, limón y escarcha de sal?",
+          "a": "La margarita"
+        },
+        {
+          "level": 3,
+          "q": "El tequila se hace a partir de: ¿agave, maíz o nopal?",
+          "a": "Del agave"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué estado mexicano está el pueblo de Tequila: Jalisco, Oaxaca o Sonora?",
+          "a": "Jalisco"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? El tequila debe hacerse obligatoriamente con agave azul.",
+          "a": "Verdadero (Agave tequilana Weber variedad azul)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué estado mexicano es el principal productor de mezcal?",
+          "a": "Oaxaca"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama el corazón del agave que se cuece para hacer tequila?",
+          "a": "La piña"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué tequila se añeja al menos un año en barrica de roble: blanco, reposado o añejo?",
+          "a": "El añejo"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué bebida mexicana blanquecina, de savia de agave fermentada, es mucho más antigua que el tequila?",
+          "a": "El pulque"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama en México la larva que a veces se pone en las botellas de mezcal?",
+          "a": "El gusano (de maguey)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en pisco y cachaça?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es el cóctel caipiriña?",
+          "a": "De Brasil"
+        },
+        {
+          "level": 2,
+          "q": "¿Con qué licor se prepara una caipiriña?",
+          "a": "Con cachaça"
+        },
+        {
+          "level": 3,
+          "q": "El pisco se destila a partir de: ¿uva, caña de azúcar o papa?",
+          "a": "De uva"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué dos países se disputan el origen del pisco?",
+          "a": "Perú y Chile"
+        },
+        {
+          "level": 5,
+          "q": "En un pisco sour, ¿qué ingrediente forma la espuma?",
+          "a": "La clara de huevo"
+        },
+        {
+          "level": 6,
+          "q": "La cachaça se destila a partir de: ¿melaza o jugo de caña fresco?",
+          "a": "De jugo de caña fresco"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama la popularísima mezcla chilena de pisco con Coca-Cola?",
+          "a": "La piscola"
+        },
+        {
+          "level": 8,
+          "q": "¿El fernet con coca es la bebida de culto de qué país?",
+          "a": "Argentina (sobre todo Córdoba)"
+        },
+        {
+          "level": 9,
+          "q": "¿El aguardiente anisado (como el Antioqueño) es el licor emblemático de qué país?",
+          "a": "Colombia"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué región del Perú está el puerto de Pisco, que dio nombre al aguardiente?",
+          "a": "Ica"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en vinos latinoamericanos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿La Malbec es la uva emblemática de qué país?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es la gran provincia vitivinícola argentina: Mendoza, Salta o la Patagonia?",
+          "a": "Mendoza"
+        },
+        {
+          "level": 3,
+          "q": "¿La Carménère es la uva emblemática de qué país?",
+          "a": "Chile"
+        },
+        {
+          "level": 4,
+          "q": "¿Cerca de qué ciudad está el valle del Maipo, famoso por sus vinos: Santiago, Valparaíso o Concepción?",
+          "a": "Santiago"
+        },
+        {
+          "level": 5,
+          "q": "¿La Tannat es la uva emblemática de qué país?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 6,
+          "q": "¿Verdadero o falso? En Chile, la Carménère se confundió durante mucho tiempo con la Merlot.",
+          "a": "Verdadero (identificada en 1994)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué uva blanca aromática es emblema de Argentina, sobre todo en Cafayate?",
+          "a": "La Torrontés"
+        },
+        {
+          "level": 8,
+          "q": "¿De qué región francesa es originaria la Malbec?",
+          "a": "Cahors (suroeste de Francia)"
+        },
+        {
+          "level": 9,
+          "q": "¿Verdadero o falso? Los viñedos chilenos se salvaron de la filoxera.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué región vitivinícola de Rio Grande do Sul es la más famosa de Brasil, sobre todo por sus espumosos?",
+          "a": "La Serra Gaúcha (Vale dos Vinhedos)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en café?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué país es el mayor productor de café del mundo?",
+          "a": "Brasil"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama el caficultor bigotón, símbolo del café de Colombia?",
+          "a": "Juan Valdez"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué especie de café es la más cultivada: arábica, robusta o libérica?",
+          "a": "La arábica"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se llama el fruto rojo del cafeto?",
+          "a": "La cereza (de café)"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso? El cafeto es originario de América Latina.",
+          "a": "Falso (viene de Etiopía)"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llama la mula de Juan Valdez?",
+          "a": "Conchita"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama la zona cafetera de Colombia declarada Patrimonio de la Humanidad por la UNESCO en 2011?",
+          "a": "El Eje Cafetero (Paisaje Cultural Cafetero)"
+        },
+        {
+          "level": 8,
+          "q": "¿En qué país está la región de Antigua, famosa por su café?",
+          "a": "En Guatemala"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué variedad de café, estrella de Panamá, bate récords de precio en subastas?",
+          "a": "La Geisha (Gesha)"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué estado brasileño es el mayor productor de café del país?",
+          "a": "Minas Gerais"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en cacao y chocolate?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De las semillas de qué planta se hace el chocolate?",
+          "a": "Del cacao"
+        },
+        {
+          "level": 2,
+          "q": "El cacao crece: ¿en un árbol, en un arbusto o bajo tierra?",
+          "a": "En un árbol"
+        },
+        {
+          "level": 3,
+          "q": "¿Verdadero o falso? Los aztecas usaban las semillas de cacao como moneda.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué salsa mexicana combina chiles y chocolate, sobre todo en Puebla?",
+          "a": "El mole (poblano)"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llama el fruto del cacao, que contiene las semillas?",
+          "a": "La mazorca"
+        },
+        {
+          "level": 6,
+          "q": "Según los cronistas españoles, ¿qué emperador azteca bebía chocolate en grandes cantidades?",
+          "a": "Moctezuma"
+        },
+        {
+          "level": 7,
+          "q": "El nombre científico del cacao, Theobroma, significa: ¿alimento de los dioses, oro negro o árbol sagrado?",
+          "a": "Alimento de los dioses"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llama la variedad de cacao fino de aroma emblemática del Ecuador?",
+          "a": "El cacao Nacional (Arriba)"
+        },
+        {
+          "level": 9,
+          "q": "Las tres grandes familias de cacao son el criollo, el forastero y… ¿cuál?",
+          "a": "El trinitario"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué país está Chuao, pueblo costero famoso por su cacao excepcional?",
+          "a": "En Venezuela"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en puros?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué país es el más famoso por sus puros, los habanos?",
+          "a": "Cuba"
+        },
+        {
+          "level": 2,
+          "q": "¿Con las hojas de qué planta se hacen los puros?",
+          "a": "El tabaco"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué líder cubano, en el poder desde 1959, era famoso por sus puros antes de dejar de fumar en los años 80?",
+          "a": "Fidel Castro"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso? República Dominicana es un gran productor de puros.",
+          "a": "Verdadero (primer exportador mundial de puros premium)"
+        },
+        {
+          "level": 5,
+          "q": "¿En qué provincia cubana está Vuelta Abajo, tierra del mejor tabaco?",
+          "a": "Pinar del Río"
+        },
+        {
+          "level": 6,
+          "q": "¿Para el uso personal de quién se creó originalmente la marca Cohiba?",
+          "a": "Fidel Castro"
+        },
+        {
+          "level": 7,
+          "q": "En Cuba, ¿cómo se llama al artesano que tuerce los puros a mano?",
+          "a": "El torcedor"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llama a la persona que lee en voz alta a los torcedores en las fábricas de tabaco?",
+          "a": "El lector de tabaquería"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué presidente de EE. UU. se habría hecho traer más de 1.000 puros cubanos justo antes de firmar el embargo?",
+          "a": "John F. Kennedy"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué marca de habanos toma su nombre de una novela de Alexandre Dumas?",
+          "a": "Montecristo"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en revoluciones y dictaduras latinoamericanas?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué líder de la Revolución cubana tomó el poder en 1959?",
+          "a": "Fidel Castro"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué país nació el Che Guevara: Argentina, Cuba o Bolivia?",
+          "a": "Argentina"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué general gobernó Chile de 1973 a 1990?",
+          "a": "Augusto Pinochet"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué presidente chileno fue derrocado el 11 de septiembre de 1973?",
+          "a": "Salvador Allende"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué dictador dominicano fue asesinado en 1961?",
+          "a": "Rafael Leónidas Trujillo"
+        },
+        {
+          "level": 6,
+          "q": "¿En qué país fue ejecutado el Che Guevara en 1967?",
+          "a": "En Bolivia"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama a las madres de desaparecidos que marchan en Buenos Aires desde 1977?",
+          "a": "Las Madres de Plaza de Mayo"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué movimiento revolucionario, llamado así por un guerrillero de los años 30, tomó el poder en Nicaragua en 1979?",
+          "a": "Los sandinistas (FSLN, por Augusto César Sandino)"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llamó la coordinación represiva entre las dictaduras sudamericanas en los años 70?",
+          "a": "El Plan (u Operación) Cóndor"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué dictador gobernó Paraguay de 1954 a 1989?",
+          "a": "Alfredo Stroessner"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en literatura latinoamericana?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Quién escribió «Cien años de soledad»?",
+          "a": "Gabriel García Márquez"
+        },
+        {
+          "level": 2,
+          "q": "¿De qué país era Gabriel García Márquez?",
+          "a": "De Colombia"
+        },
+        {
+          "level": 3,
+          "q": "¿Cómo se llama el pueblo imaginario de «Cien años de soledad»?",
+          "a": "Macondo"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué poeta chileno, Nobel 1971, escribió «Veinte poemas de amor y una canción desesperada»?",
+          "a": "Pablo Neruda"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué escritor argentino escribió «Ficciones» y «El Aleph»?",
+          "a": "Jorge Luis Borges"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué escritor peruano recibió el Premio Nobel de Literatura en 2010?",
+          "a": "Mario Vargas Llosa"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué escritor argentino escribió «Rayuela»?",
+          "a": "Julio Cortázar"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué escritor mexicano escribió «Pedro Páramo»?",
+          "a": "Juan Rulfo"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué poeta chilena fue, en 1945, el primer Nobel de Literatura latinoamericano?",
+          "a": "Gabriela Mistral"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué escritor mexicano, Nobel 1990, escribió el ensayo «El laberinto de la soledad»?",
+          "a": "Octavio Paz"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en pintores latinoamericanos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué pintora mexicana es famosa por sus autorretratos y su uniceja?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué muralista mexicano fue el esposo de Frida Kahlo?",
+          "a": "Diego Rivera"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué artista colombiano es famoso por sus figuras voluminosas?",
+          "a": "Fernando Botero"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se conoce la casa de Frida Kahlo en Coyoacán?",
+          "a": "La Casa Azul"
+        },
+        {
+          "level": 5,
+          "q": "Los tres grandes del muralismo mexicano son Rivera, Orozco y… ¿quién?",
+          "a": "David Alfaro Siqueiros"
+        },
+        {
+          "level": 6,
+          "q": "¿Verdadero o falso? Frida Kahlo resultó gravemente herida en un accidente de autobús en su juventud.",
+          "a": "Verdadero (en 1925)"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué ciudad nació Fernando Botero?",
+          "a": "En Medellín"
+        },
+        {
+          "level": 8,
+          "q": "El mural de Diego Rivera en el Rockefeller Center fue destruido porque representaba a ¿qué personaje?",
+          "a": "A Lenin"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué pintor cubano realizó el cuadro «La jungla» (1943)?",
+          "a": "Wifredo Lam"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué artista uruguayo dibujó «América invertida», el mapa de Sudamérica al revés?",
+          "a": "Joaquín Torres García"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en cine de autor latinoamericano?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué director mexicano dirigió «Roma» (2018)?",
+          "a": "Alfonso Cuarón"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué director mexicano dirigió «El laberinto del fauno»?",
+          "a": "Guillermo del Toro"
+        },
+        {
+          "level": 3,
+          "q": "¿Quién dirigió «Amores perros» (2000)?",
+          "a": "Alejandro González Iñárritu"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué ciudad transcurre la película brasileña «Ciudad de Dios» (2002)?",
+          "a": "En Río de Janeiro"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué actor mexicano interpreta al joven Che Guevara en «Diarios de motocicleta» (2004)?",
+          "a": "Gael García Bernal"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué película argentina ganó el Óscar a la mejor película extranjera en 2010?",
+          "a": "El secreto de sus ojos"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué país rodó el cineasta español Luis Buñuel «Los olvidados» (1950)?",
+          "a": "En México"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué película argentina fue la primera latinoamericana en ganar el Óscar a la mejor película extranjera, en 1986?",
+          "a": "La historia oficial"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué director brasileño dirigió «Estación central de Brasil» (1998)?",
+          "a": "Walter Salles"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué cineasta cubano dirigió «Fresa y chocolate» (1993)?",
+          "a": "Tomás Gutiérrez Alea (con Juan Carlos Tabío)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en cocina latinoamericana?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿El ceviche, pescado crudo marinado en limón, es el plato emblemático de qué país?",
+          "a": "Perú"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es el ingrediente principal del guacamole?",
+          "a": "El aguacate"
+        },
+        {
+          "level": 3,
+          "q": "¿La feijoada es el plato nacional de qué país?",
+          "a": "Brasil"
+        },
+        {
+          "level": 4,
+          "q": "Las arepas son típicas de Venezuela y ¿de qué otro país?",
+          "a": "Colombia"
+        },
+        {
+          "level": 5,
+          "q": "¿Las pupusas son el plato nacional de qué país?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 6,
+          "q": "El gallo pinto es típico de Costa Rica y ¿de qué país vecino?",
+          "a": "Nicaragua"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama el jugo de la marinada del ceviche, famoso por revitalizante?",
+          "a": "La leche de tigre"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué plato cubano de carne deshebrada lleva el nombre de una prenda usada?",
+          "a": "La ropa vieja"
+        },
+        {
+          "level": 9,
+          "q": "¿De qué ciudad son originarios los chiles en nogada, con los colores de la bandera mexicana?",
+          "a": "De Puebla"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué sopa de gallina con ñame y culantro es el plato nacional de Panamá?",
+          "a": "El sancocho"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en el cuerpo humano?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuántos pulmones tiene un ser humano?",
+          "a": "Dos"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es el órgano más grande del cuerpo humano?",
+          "a": "La piel"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál es el hueso más largo del cuerpo: el fémur, el húmero o la tibia?",
+          "a": "El fémur"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuántas cavidades tiene el corazón humano?",
+          "a": "Cuatro (2 aurículas, 2 ventrículos)"
+        },
+        {
+          "level": 5,
+          "q": "¿Cuántos huesos tiene el esqueleto de un adulto: 106, 206 o 306?",
+          "a": "206"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué órgano produce la insulina?",
+          "a": "El páncreas"
+        },
+        {
+          "level": 7,
+          "q": "¿Verdadero o falso? El hígado es capaz de regenerarse.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 8,
+          "q": "¿Cuál es el hueso más pequeño del cuerpo humano?",
+          "a": "El estribo (en el oído)"
+        },
+        {
+          "level": 9,
+          "q": "¿Cuántos pares de cromosomas tiene una célula humana?",
+          "a": "23"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuánto vive en promedio un glóbulo rojo: 12 días, 120 días o 12 meses?",
+          "a": "Unos 120 días"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en historia latinoamericana del siglo XX?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué canal interoceánico se inauguró en 1914?",
+          "a": "El canal de Panamá"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué ciudad es la capital de Brasil desde 1960?",
+          "a": "Brasilia"
+        },
+        {
+          "level": 3,
+          "q": "¿Con qué apodo se conoce a Eva Perón?",
+          "a": "Evita"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué año ocurrió la crisis de los misiles en Cuba: 1956, 1962 o 1968?",
+          "a": "1962"
+        },
+        {
+          "level": 5,
+          "q": "En 1982, ¿contra qué país combatió Argentina en la guerra de las Malvinas?",
+          "a": "El Reino Unido"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llama la fallida invasión de Cuba por exiliados apoyados por EE. UU. en 1961?",
+          "a": "La invasión de Bahía de Cochinos (Playa Girón)"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué año devolvió Estados Unidos el canal a Panamá?",
+          "a": "En 1999"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué presidente mexicano nacionalizó el petróleo en 1938?",
+          "a": "Lázaro Cárdenas"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué presidente de Guatemala fue derrocado en 1954 por un golpe apoyado por la CIA?",
+          "a": "Jacobo Árbenz"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué año abolió Costa Rica su ejército?",
+          "a": "En 1948"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en economía latinoamericana?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cuál es la moneda de México?",
+          "a": "El peso"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es la moneda de Brasil?",
+          "a": "El real"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué moneda usa oficialmente Ecuador desde el año 2000?",
+          "a": "El dólar estadounidense"
+        },
+        {
+          "level": 4,
+          "q": "Chile es el mayor productor mundial de ¿qué metal: cobre, oro o hierro?",
+          "a": "El cobre"
+        },
+        {
+          "level": 5,
+          "q": "¿De qué recurso depende principalmente la economía de Venezuela?",
+          "a": "Del petróleo"
+        },
+        {
+          "level": 6,
+          "q": "¿Cuál es la moneda del Perú?",
+          "a": "El sol"
+        },
+        {
+          "level": 7,
+          "q": "¿Por qué metal usado en baterías es codiciado el salar de Uyuni, en Bolivia?",
+          "a": "El litio"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué país fue el primero del mundo en adoptar el bitcóin como moneda de curso legal, en 2021?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué moneda circuló en Argentina entre 1985 y 1991, antes del regreso del peso?",
+          "a": "El austral"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuál es la moneda oficial de Panamá, a la par del dólar estadounidense?",
+          "a": "El balboa"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en narcotráfico?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué capo colombiano fue abatido en Medellín en 1993?",
+          "a": "Pablo Escobar"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué serie de Netflix cuenta la cacería de Pablo Escobar?",
+          "a": "Narcos"
+        },
+        {
+          "level": 3,
+          "q": "¿El cartel de Pablo Escobar llevaba el nombre de qué ciudad?",
+          "a": "Medellín"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuál es el nombre real del narcotraficante mexicano apodado «El Chapo»?",
+          "a": "Joaquín Guzmán"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué animales del antiguo zoológico de Pablo Escobar proliferan hoy en Colombia?",
+          "a": "Los hipopótamos"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué cartel dirigía El Chapo?",
+          "a": "El cartel de Sinaloa"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se fugó El Chapo del penal del Altiplano en 2015?",
+          "a": "Por un túnel"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué gobernante panameño fue capturado por EE. UU. en 1990 y condenado por narcotráfico?",
+          "a": "Manuel Noriega"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué cartel colombiano era el gran rival del de Medellín?",
+          "a": "El cartel de Cali"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llamaba la cárcel de lujo que se hizo construir Pablo Escobar?",
+          "a": "La Catedral"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en civilizaciones precolombinas?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué pueblo construyó Machu Picchu: los incas, los aztecas o los mayas?",
+          "a": "Los incas"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál era la capital del Imperio inca?",
+          "a": "Cuzco"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué conquistador español conquistó el Imperio azteca?",
+          "a": "Hernán Cortés"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se llamaba la capital azteca, construida sobre un lago donde hoy está la Ciudad de México?",
+          "a": "Tenochtitlan"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué conquistador español conquistó el Imperio inca?",
+          "a": "Francisco Pizarro"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué dios mesoamericano es llamado la «serpiente emplumada»?",
+          "a": "Quetzalcóatl"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué ciudad maya de Yucatán alberga la pirámide de El Castillo (templo de Kukulcán)?",
+          "a": "Chichén Itzá"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué emperador inca fue ejecutado por Pizarro en 1533?",
+          "a": "Atahualpa"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llamaba la intérprete y compañera indígena de Hernán Cortés?",
+          "a": "La Malinche (Malintzin)"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama el sistema de cuerdas con nudos que usaban los incas para contar y registrar?",
+          "a": "El quipu"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en música y bailes latinos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "El tango nació en: ¿Argentina, México o Cuba?",
+          "a": "En Argentina (Río de la Plata)"
+        },
+        {
+          "level": 2,
+          "q": "¿La samba es el alma del carnaval de qué ciudad brasileña?",
+          "a": "Río de Janeiro"
+        },
+        {
+          "level": 3,
+          "q": "¿El Buena Vista Social Club hizo redescubrir a los músicos de qué país?",
+          "a": "Cuba"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué cantante puertorriqueño tuvo un éxito mundial con «Gasolina» en 2004?",
+          "a": "Daddy Yankee"
+        },
+        {
+          "level": 5,
+          "q": "¿De qué país es originaria la bachata?",
+          "a": "De República Dominicana"
+        },
+        {
+          "level": 6,
+          "q": "¿En qué país nació la cumbia?",
+          "a": "En Colombia"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué instrumento de fuelle es emblemático de la orquesta de tango?",
+          "a": "El bandoneón"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué compositor argentino del nuevo tango compuso «Libertango»?",
+          "a": "Astor Piazzolla"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué legendario cantante de tango murió en un accidente aéreo en Medellín en 1935?",
+          "a": "Carlos Gardel"
+        },
+        {
+          "level": 10,
+          "q": "¿El éxito «Lambada» de Kaoma (1989) retoma una canción de qué grupo boliviano?",
+          "a": "Los Kjarkas («Llorando se fue»)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en el Día de Muertos y leyendas macabras?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿El Día de Muertos es una gran fiesta de qué país?",
+          "a": "México"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué fechas se celebra el Día de Muertos?",
+          "a": "El 1 y 2 de noviembre"
+        },
+        {
+          "level": 3,
+          "q": "¿Cómo se llama la elegante dama esqueleto, ícono del Día de Muertos?",
+          "a": "La Catrina"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué pan dulce se prepara especialmente para el Día de Muertos?",
+          "a": "El pan de muerto"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué mujer fantasma llora a sus hijos ahogados en la leyenda latinoamericana?",
+          "a": "La Llorona"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llama el altar que se monta para recibir a los difuntos en el Día de Muertos?",
+          "a": "La ofrenda"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué flor naranja decora los altares y guía a las almas de los muertos?",
+          "a": "El cempasúchil"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué figura esquelética se venera como santa popular en México, sin reconocimiento de la Iglesia?",
+          "a": "La Santa Muerte"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué grabador mexicano creó la imagen original de la Catrina?",
+          "a": "José Guadalupe Posada"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué país se elevan barriletes gigantes en los cementerios el 1 de noviembre?",
+          "a": "En Guatemala"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "¿Te crees experto en cócteles latinos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es originario el mojito?",
+          "a": "De Cuba"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué hierba fresca lleva el mojito?",
+          "a": "La hierbabuena (menta)"
+        },
+        {
+          "level": 3,
+          "q": "¿La piña colada es la bebida nacional de qué isla?",
+          "a": "Puerto Rico"
+        },
+        {
+          "level": 4,
+          "q": "Una piña colada mezcla ron, jugo de piña y… ¿qué?",
+          "a": "Crema de coco"
+        },
+        {
+          "level": 5,
+          "q": "¿De qué país es la michelada, cerveza con limón, sal y salsas?",
+          "a": "De México"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué cóctel mexicano combina tequila y refresco de toronja?",
+          "a": "La paloma"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué cóctel peruano mezcla pisco, ginger ale y limón?",
+          "a": "El chilcano"
+        },
+        {
+          "level": 8,
+          "q": "¿El terremoto, vino pipeño con helado de piña, es una bebida de qué país?",
+          "a": "Chile"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué bar de La Habana se proclama «la cuna del daiquirí» y era frecuentado por Hemingway?",
+          "a": "El Floridita"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué bebida navideña venezolana, una especie de rompope con ron, lleva «crema» en su nombre?",
+          "a": "El ponche crema"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en Diego Maradona?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Para qué selección jugaba Maradona?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se apodó su gol con la mano contra Inglaterra en 1986?",
+          "a": "La «mano de Dios»"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué número de camiseta usaba Maradona en la selección?",
+          "a": "El 10"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué año ganó el Mundial la Argentina de Maradona: 1978, 1986 o 1990?",
+          "a": "1986"
+        },
+        {
+          "level": 5,
+          "q": "¿Con qué club italiano ganó Maradona dos scudettos?",
+          "a": "El Napoli"
+        },
+        {
+          "level": 6,
+          "q": "Verdadero o falso: Maradona jugó en el FC Barcelona.",
+          "a": "Verdadero (1982-1984)"
+        },
+        {
+          "level": 7,
+          "q": "¿Contra qué selección marcó el «gol del siglo» en 1986?",
+          "a": "Inglaterra"
+        },
+        {
+          "level": 8,
+          "q": "¿A qué selección le ganó Argentina la final del Mundial 1986?",
+          "a": "A Alemania Federal (3-2)"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué club argentino debutó Maradona como profesional: Boca Juniors, River Plate o Argentinos Juniors?",
+          "a": "Argentinos Juniors"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué estadio mexicano marcó Maradona la «mano de Dios»?",
+          "a": "El Estadio Azteca (Ciudad de México)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en Pelé?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Para qué selección jugaba Pelé?",
+          "a": "Brasil"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuántos Mundiales ganó Pelé: 1, 2 o 3?",
+          "a": "3 (1958, 1962, 1970)"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué número de camiseta hizo legendario Pelé?",
+          "a": "El 10"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué club brasileño jugó Pelé casi toda su carrera?",
+          "a": "El Santos"
+        },
+        {
+          "level": 5,
+          "q": "Verdadero o falso: Pelé terminó su carrera en Estados Unidos.",
+          "a": "Verdadero (en el New York Cosmos)"
+        },
+        {
+          "level": 6,
+          "q": "¿En qué año ganó Pelé su primer Mundial?",
+          "a": "1958 (en Suecia)"
+        },
+        {
+          "level": 7,
+          "q": "¿Cuál es el verdadero nombre de Pelé: Edson, Ronaldo o Joaquim?",
+          "a": "Edson (Edson Arantes do Nascimento)"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué edad tenía Pelé cuando ganó su primer Mundial?",
+          "a": "17 años"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué año murió Pelé?",
+          "a": "En 2022"
+        },
+        {
+          "level": 10,
+          "q": "¿A qué selección le ganó Brasil 4-1 en la final del Mundial 1970?",
+          "a": "A Italia"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en Lionel Messi?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es Lionel Messi?",
+          "a": "De Argentina"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué club español jugó Messi la mayor parte de su carrera?",
+          "a": "En el FC Barcelona"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué año ganó Messi el Mundial?",
+          "a": "En 2022 (en Catar)"
+        },
+        {
+          "level": 4,
+          "q": "¿Contra qué país ganó Argentina la final del Mundial 2022?",
+          "a": "Contra Francia (por penales)"
+        },
+        {
+          "level": 5,
+          "q": "¿A qué club francés llegó Messi en 2021?",
+          "a": "Al Paris Saint-Germain (PSG)"
+        },
+        {
+          "level": 6,
+          "q": "¿En qué ciudad argentina nació Messi: Rosario, Córdoba o Buenos Aires?",
+          "a": "Rosario"
+        },
+        {
+          "level": 7,
+          "q": "¿A qué club estadounidense llegó Messi en 2023?",
+          "a": "Al Inter Miami"
+        },
+        {
+          "level": 8,
+          "q": "Verdadero o falso: la Argentina de Messi ganó la Copa América 2021 en el Maracaná, contra Brasil.",
+          "a": "Verdadero (1-0)"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué club de Rosario jugó Messi de niño: Newell's Old Boys o Rosario Central?",
+          "a": "Newell's Old Boys"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué año ganó Messi su primer Balón de Oro: 2007, 2009 o 2011?",
+          "a": "En 2009"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en la Copa América?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué deporte se juega en la Copa América?",
+          "a": "El fútbol"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué país ganó la Copa América 2024?",
+          "a": "Argentina"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué país se jugó la Copa América 2024?",
+          "a": "En Estados Unidos"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué país ganó más Copas América: Argentina, Brasil o Uruguay?",
+          "a": "Argentina (16 títulos)"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué país ganó la Copa América 2019 como local?",
+          "a": "Brasil"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué país ganó la Copa América en 2015 y otra vez en 2016?",
+          "a": "Chile"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué confederación organiza la Copa América?",
+          "a": "La CONMEBOL"
+        },
+        {
+          "level": 8,
+          "q": "Verdadero o falso: la Copa América es el torneo continental de selecciones más antiguo.",
+          "a": "Verdadero (desde 1916)"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué país ganó su única Copa América en 2001, como local?",
+          "a": "Colombia"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué país ganó la primera Copa América, en 1916?",
+          "a": "Uruguay"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en El Chavo del 8?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué objeto le gusta esconderse al Chavo?",
+          "a": "En el barril"
+        },
+        {
+          "level": 2,
+          "q": "¿De qué país es la serie El Chavo del 8?",
+          "a": "De México"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál es la comida favorita del Chavo?",
+          "a": "La torta de jamón"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se llama la hija de Don Ramón?",
+          "a": "La Chilindrina"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llama el dueño de la vecindad que viene a cobrar la renta?",
+          "a": "El Señor Barriga"
+        },
+        {
+          "level": 6,
+          "q": "Verdadero o falso: Quico es hijo de Doña Florinda.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama el maestro enamorado de Doña Florinda?",
+          "a": "El Profesor Jirafales"
+        },
+        {
+          "level": 8,
+          "q": "¿Quién creó la serie e interpretó al Chavo?",
+          "a": "Roberto Gómez Bolaños («Chespirito»)"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué le ofrece siempre Doña Florinda al Profesor Jirafales?",
+          "a": "Una tacita de café"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama en realidad «la Bruja del 71»?",
+          "a": "Doña Clotilde"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en la película Coco de Pixar?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué fiesta mexicana es el centro de la película Coco?",
+          "a": "El Día de Muertos"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué instrumento sueña con tocar Miguel?",
+          "a": "La guitarra"
+        },
+        {
+          "level": 3,
+          "q": "¿A qué cantante famoso idolatra Miguel?",
+          "a": "A Ernesto de la Cruz"
+        },
+        {
+          "level": 4,
+          "q": "¿Quién es Coco para Miguel?",
+          "a": "Su bisabuela (Mamá Coco)"
+        },
+        {
+          "level": 5,
+          "q": "Verdadero o falso: Coco ganó el Óscar a mejor película animada.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿A qué se dedica la familia de Miguel?",
+          "a": "A hacer zapatos (zapateros)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué famosa pintora mexicana aparece en la Tierra de los Muertos?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 8,
+          "q": "¿De qué flor naranja son los pétalos del puente a la Tierra de los Muertos?",
+          "a": "El cempasúchil"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llama la canción que Héctor escribió para su hija?",
+          "a": "«Recuérdame»"
+        },
+        {
+          "level": 10,
+          "q": "¿De qué raza mexicana es Dante, el perro de Miguel?",
+          "a": "Un xoloitzcuintle"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en Shakira?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es Shakira?",
+          "a": "De Colombia"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué canción de Shakira fue el himno del Mundial 2010?",
+          "a": "«Waka Waka»"
+        },
+        {
+          "level": 3,
+          "q": "Completa el título de este éxito de 2006: «Hips Don't...»",
+          "a": "«Lie»"
+        },
+        {
+          "level": 4,
+          "q": "¿Con qué futbolista español estuvo Shakira en pareja más de diez años?",
+          "a": "Con Gerard Piqué"
+        },
+        {
+          "level": 5,
+          "q": "¿En qué ciudad colombiana nació Shakira: Barranquilla, Bogotá o Medellín?",
+          "a": "Barranquilla"
+        },
+        {
+          "level": 6,
+          "q": "¿Con qué cantante hizo Shakira el show de medio tiempo del Super Bowl 2020?",
+          "a": "Con Jennifer Lopez"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué película animada de Disney canta Shakira «Try Everything»?",
+          "a": "Zootopia"
+        },
+        {
+          "level": 8,
+          "q": "Verdadero o falso: Shakira tiene raíces libanesas por parte de su padre.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 9,
+          "q": "¿Con qué productor argentino lanzó Shakira su «session» récord de 2023?",
+          "a": "Con Bizarrap"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué álbum de 1995 consagró a Shakira en Latinoamérica?",
+          "a": "«Pies Descalzos»"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en Celia Cruz?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué palabra gritaba Celia Cruz en el escenario?",
+          "a": "«¡Azúcar!»"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué país nació Celia Cruz?",
+          "a": "En Cuba"
+        },
+        {
+          "level": 3,
+          "q": "¿De qué género musical es conocida como la reina Celia Cruz?",
+          "a": "De la salsa"
+        },
+        {
+          "level": 4,
+          "q": "Completa el título de su éxito: «La vida es un...»",
+          "a": "«...carnaval»"
+        },
+        {
+          "level": 5,
+          "q": "Completa el título de su éxito de 2001: «La negra tiene...»",
+          "a": "«...tumbao»"
+        },
+        {
+          "level": 6,
+          "q": "¿En qué año murió Celia Cruz: 1993, 2003 o 2013?",
+          "a": "En 2003"
+        },
+        {
+          "level": 7,
+          "q": "¿Con qué orquesta cubana se hizo famosa Celia Cruz en los años 50?",
+          "a": "Con la Sonora Matancera"
+        },
+        {
+          "level": 8,
+          "q": "¿A qué sello neoyorquino, emblema de la salsa, está asociada Celia Cruz?",
+          "a": "Fania (la Fania All-Stars)"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llamaba su esposo, que también era su director musical?",
+          "a": "Pedro Knight"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué barrio de La Habana nació Celia Cruz?",
+          "a": "En Santos Suárez"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en bailes latinos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué baile argentino se baila abrazado, al son del bandoneón?",
+          "a": "El tango"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué baile es el símbolo del carnaval de Río?",
+          "a": "La samba"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué baile nació en República Dominicana: la bachata, la cumbia o el tango?",
+          "a": "La bachata"
+        },
+        {
+          "level": 4,
+          "q": "¿El merengue es el baile nacional de qué país?",
+          "a": "De República Dominicana"
+        },
+        {
+          "level": 5,
+          "q": "¿De qué país es originaria la cumbia?",
+          "a": "De Colombia"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué arte brasileño mezcla lucha, música y acrobacias?",
+          "a": "La capoeira"
+        },
+        {
+          "level": 7,
+          "q": "¿De qué país es originario el chachachá?",
+          "a": "De Cuba"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué ciudad colombiana es conocida como la «capital mundial de la salsa»?",
+          "a": "Cali"
+        },
+        {
+          "level": 9,
+          "q": "¿De qué país es originario el bandoneón, el instrumento rey del tango?",
+          "a": "De Alemania"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué director de orquesta cubano era conocido como el «Rey del Mambo»?",
+          "a": "Dámaso Pérez Prado"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en reggaetón?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Con qué cantante canta Daddy Yankee «Despacito»?",
+          "a": "Con Luis Fonsi"
+        },
+        {
+          "level": 2,
+          "q": "¿De qué isla es Bad Bunny?",
+          "a": "De Puerto Rico"
+        },
+        {
+          "level": 3,
+          "q": "¿Quién canta el éxito «Gasolina» (2004)?",
+          "a": "Daddy Yankee"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué cantante colombiano de Medellín canta «Mi Gente»?",
+          "a": "J Balvin"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué cantante colombiana canta «Tusa» con Nicki Minaj?",
+          "a": "Karol G"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué álbum récord de Bad Bunny salió en 2022: «Un Verano Sin Ti» o «Vida Loca»?",
+          "a": "«Un Verano Sin Ti»"
+        },
+        {
+          "level": 7,
+          "q": "¿Cuál es el nombre real de Bad Bunny?",
+          "a": "Benito (Benito Antonio Martínez Ocasio)"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llama el ritmo base del reggaetón?",
+          "a": "El dembow"
+        },
+        {
+          "level": 9,
+          "q": "¿El dembow toma su nombre de una canción de un artista de qué país?",
+          "a": "De Jamaica («Dem Bow» de Shabba Ranks)"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué cantante panameño es considerado uno de los pioneros del reggaetón?",
+          "a": "El General"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en béisbol del Caribe?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En el béisbol, ¿cuántos strikes se necesitan para ponchar a un bateador?",
+          "a": "3"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuántas entradas (innings) tiene un juego normal de béisbol?",
+          "a": "9"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué país el béisbol es el deporte nacional: Cuba, Argentina o Chile?",
+          "a": "Cuba"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se llama el batazo que saca la pelota del parque?",
+          "a": "Un jonrón (home run)"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llama el torneo que reúne a los campeones de las ligas caribeñas?",
+          "a": "La Serie del Caribe"
+        },
+        {
+          "level": 6,
+          "q": "¿De qué país es David «Big Papi» Ortiz?",
+          "a": "De República Dominicana"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué pelotero venezolano de los Tigres de Detroit ganó la Triple Corona de bateo en 2012?",
+          "a": "Miguel Cabrera"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué leyenda puertorriqueña murió en 1972 en un accidente de avión llevando ayuda a Nicaragua?",
+          "a": "Roberto Clemente"
+        },
+        {
+          "level": 9,
+          "q": "Verdadero o falso: Cuba ganó el oro en béisbol en los Juegos Olímpicos de Barcelona 1992.",
+          "a": "Verdadero"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué país ganó el Clásico Mundial de Béisbol 2013 sin perder un juego?",
+          "a": "República Dominicana"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en telenovelas?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es la telenovela «Yo soy Betty, la fea»?",
+          "a": "De Colombia"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama la adaptación estadounidense de Betty la fea?",
+          "a": "«Ugly Betty»"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué cantante mexicana protagonizó Marimar y María la del Barrio?",
+          "a": "Thalía"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué grupo musical nació de la telenovela Rebelde?",
+          "a": "RBD"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué cadena mexicana es la gran productora de telenovelas: Televisa o Globo?",
+          "a": "Televisa"
+        },
+        {
+          "level": 6,
+          "q": "¿De qué país es TV Globo, gigante de las telenovelas?",
+          "a": "De Brasil"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué empresa de moda trabaja Betty?",
+          "a": "En Ecomoda"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llama el jefe del que se enamora Betty?",
+          "a": "Armando Mendoza"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué actriz mexicana protagonizó «Los ricos también lloran» (1979)?",
+          "a": "Verónica Castro"
+        },
+        {
+          "level": 10,
+          "q": "¿Quién creó y escribió «Yo soy Betty, la fea»?",
+          "a": "Fernando Gaitán"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en lucha libre?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué llevan los luchadores en la cara?",
+          "a": "Una máscara"
+        },
+        {
+          "level": 2,
+          "q": "¿De qué país es emblema la lucha libre?",
+          "a": "De México"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué luchador de máscara plateada también fue estrella de cine?",
+          "a": "El Santo"
+        },
+        {
+          "level": 4,
+          "q": "Los buenos son los «técnicos»; ¿cómo se llaman los malos?",
+          "a": "Los «rudos»"
+        },
+        {
+          "level": 5,
+          "q": "¿En qué película Jack Black interpreta a un cocinero que se vuelve luchador?",
+          "a": "Nacho Libre"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué luchador enmascarado de origen mexicano es famoso en la WWE por su «619»?",
+          "a": "Rey Mysterio"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué luchador de máscara azul fue el gran rival y compañero de El Santo?",
+          "a": "Blue Demon"
+        },
+        {
+          "level": 8,
+          "q": "En una «lucha de apuestas», ¿qué arriesga el perdedor?",
+          "a": "Su máscara o su cabellera"
+        },
+        {
+          "level": 9,
+          "q": "Verdadero o falso: el CMLL de México es considerado la empresa de lucha libre más antigua aún activa.",
+          "a": "Verdadero (fundada en 1933)"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuál era el nombre real de El Santo?",
+          "a": "Rodolfo Guzmán Huerta"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en carnavales latinos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué ciudad brasileña tiene el carnaval más famoso del mundo?",
+          "a": "Río de Janeiro"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama la avenida-estadio donde desfilan las escuelas de samba en Río?",
+          "a": "El Sambódromo"
+        },
+        {
+          "level": 3,
+          "q": "¿El carnaval termina la víspera de qué día que marca el inicio de la Cuaresma?",
+          "a": "El Miércoles de Ceniza"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué ciudad colombiana tiene un carnaval declarado patrimonio por la UNESCO?",
+          "a": "Barranquilla"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué ciudad boliviana es famosa por su carnaval declarado patrimonio por la UNESCO?",
+          "a": "Oruro"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué danza de diablos enmascarados es emblema del carnaval de Oruro?",
+          "a": "La Diablada"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué ciudad cubana se celebra el famoso carnaval de julio?",
+          "a": "Santiago de Cuba"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué ritmo afrouruguayo de tambores recorre Montevideo en las «Llamadas»?",
+          "a": "El candombe"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué arquitecto brasileño diseñó el Sambódromo de Río?",
+          "a": "Oscar Niemeyer"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué calle está el Sambódromo de Río?",
+          "a": "La Marquês de Sapucaí"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en cine latinoamericano?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué cómico mexicano de bigotito decía «Ahí está el detalle»?",
+          "a": "Cantinflas"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué director mexicano ganó el Óscar a mejor película con «La forma del agua»?",
+          "a": "Guillermo del Toro"
+        },
+        {
+          "level": 3,
+          "q": "¿La película «Roma» de Alfonso Cuarón es a color o en blanco y negro?",
+          "a": "En blanco y negro"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué película de Guillermo del Toro de 2006 transcurre en la España franquista, con un fauno?",
+          "a": "El laberinto del fauno"
+        },
+        {
+          "level": 5,
+          "q": "Verdadero o falso: Alfonso Cuarón dirigió una película de Harry Potter.",
+          "a": "Verdadero (El prisionero de Azkaban)"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué película brasileña de 2002 cuenta la vida en una favela de Río?",
+          "a": "Ciudad de Dios (Cidade de Deus)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué película de Alejandro González Iñárritu ganó el Óscar a mejor película en 2015?",
+          "a": "Birdman"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué película argentina con Ricardo Darín ganó el Óscar a mejor película extranjera en 2010?",
+          "a": "El secreto de sus ojos"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué película de Hollywood interpretó Cantinflas a Passepartout?",
+          "a": "La vuelta al mundo en 80 días (1956)"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué película argentina de 1985 fue la primera latinoamericana en ganar el Óscar a mejor película extranjera?",
+          "a": "La historia oficial"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en comida callejera latina?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Cómo se llama la tortilla mexicana doblada y rellena que se come con la mano?",
+          "a": "Un taco"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama la torta de maíz típica de Venezuela y Colombia?",
+          "a": "La arepa"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué carne llevan los tacos al pastor: cerdo, res o pollo?",
+          "a": "Cerdo"
+        },
+        {
+          "level": 4,
+          "q": "En el choripán, ¿qué significa «chori»?",
+          "a": "Chorizo"
+        },
+        {
+          "level": 5,
+          "q": "¿De qué país es plato emblemático el ceviche?",
+          "a": "De Perú"
+        },
+        {
+          "level": 6,
+          "q": "¿Las pupusas son el plato nacional de qué país?",
+          "a": "De El Salvador"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama en México la mazorca con mayonesa, queso y chile?",
+          "a": "Un elote"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llaman los panecitos de queso brasileños?",
+          "a": "Pão de queijo"
+        },
+        {
+          "level": 9,
+          "q": "En Perú, ¿con qué víscera de res se hacen los anticuchos?",
+          "a": "Con corazón"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama en Perú el jugo de la marinada del ceviche?",
+          "a": "La leche de tigre"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en juegos de mesa latinos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "En la lotería mexicana, ¿qué se grita al llenar la tabla?",
+          "a": "«¡Lotería!»"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuántos puntos tiene en total la mula de seis (el doble seis) del dominó?",
+          "a": "12"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál NO es un palo de la baraja española: oros, copas o corazones?",
+          "a": "Corazones"
+        },
+        {
+          "level": 4,
+          "q": "¿Cuántas imágenes tiene una tabla clásica de lotería?",
+          "a": "16 (4 x 4)"
+        },
+        {
+          "level": 5,
+          "q": "¿Cuántas fichas tiene un dominó clásico de doble seis?",
+          "a": "28"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llama el juguete mexicano de madera con una bola que se ensarta en un palito?",
+          "a": "El balero"
+        },
+        {
+          "level": 7,
+          "q": "En la escoba, ¿qué suma hay que hacer para levantar cartas?",
+          "a": "15"
+        },
+        {
+          "level": 8,
+          "q": "¿Con cuántas cartas de la baraja española se juega al truco?",
+          "a": "40"
+        },
+        {
+          "level": 9,
+          "q": "¿El dominó cubano se juega normalmente con fichas hasta el doble qué?",
+          "a": "Hasta el doble nueve (55 fichas)"
+        },
+        {
+          "level": 10,
+          "q": "En el truco, ¿cuál es la carta más alta?",
+          "a": "El ancho de espadas (as de espadas)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en Mundiales en Latinoamérica?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué país ganó más Mundiales de fútbol?",
+          "a": "Brasil (5)"
+        },
+        {
+          "level": 2,
+          "q": "¿Por cuánto le ganó Alemania a Brasil en la semifinal de 2014?",
+          "a": "7-1"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué país organizó y ganó el primer Mundial, en 1930?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué selección le ganó a Argentina la final del Mundial 2014?",
+          "a": "Alemania"
+        },
+        {
+          "level": 5,
+          "q": "¿En qué año ganó Argentina el Mundial como local?",
+          "a": "En 1978"
+        },
+        {
+          "level": 6,
+          "q": "Verdadero o falso: México es el primer país en albergar tres Mundiales masculinos.",
+          "a": "Verdadero (1970, 1986, 2026)"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué selección le ganó a Brasil en el Maracaná en 1950, en el famoso «Maracanazo»?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué país sudamericano organizó el Mundial de 1962?",
+          "a": "Chile"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué colombiano fue el goleador del Mundial 2014?",
+          "a": "James Rodríguez (6 goles)"
+        },
+        {
+          "level": 10,
+          "q": "¿A qué selección le ganó Uruguay la final del Mundial 1930?",
+          "a": "A Argentina (4-2)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en ídolos de la música latina?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué cantante puertorriqueño canta «Livin' la Vida Loca»?",
+          "a": "Ricky Martin"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué cantante colombiano canta «La camisa negra»?",
+          "a": "Juanes"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué grupo juvenil puertorriqueño empezó Ricky Martin?",
+          "a": "En Menudo"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué cantante conocida como la «Reina del Tex-Mex» fue asesinada en 1995?",
+          "a": "Selena (Quintanilla)"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué cantante es conocido como «El Sol de México»?",
+          "a": "Luis Miguel"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué cantante dominicano canta «Ojalá que llueva café»?",
+          "a": "Juan Luis Guerra"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué grupo de veteranos músicos cubanos se hizo famoso con un disco y un documental en 1997-1999?",
+          "a": "El Buena Vista Social Club"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué salsero panameño canta «Pedro Navaja»?",
+          "a": "Rubén Blades"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué cantautora chilena escribió «Gracias a la vida»?",
+          "a": "Violeta Parra"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué compositor brasileño escribió la música de «Garota de Ipanema»?",
+          "a": "Antônio Carlos «Tom» Jobim"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "¿Te crees experto en clubes de fútbol sudamericanos?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué dos clubes juegan el Superclásico argentino?",
+          "a": "Boca Juniors y River Plate"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo le dicen al estadio de Boca Juniors?",
+          "a": "La Bombonera"
+        },
+        {
+          "level": 3,
+          "q": "¿Cómo se llama la gran copa continental de clubes sudamericanos?",
+          "a": "La Copa Libertadores"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué club mexicano, gran rival del América, solo juega con mexicanos?",
+          "a": "Las Chivas del Guadalajara"
+        },
+        {
+          "level": 5,
+          "q": "¿Peñarol contra Nacional es el gran clásico de qué país?",
+          "a": "De Uruguay"
+        },
+        {
+          "level": 6,
+          "q": "¿De qué ciudad colombiana es Atlético Nacional?",
+          "a": "De Medellín"
+        },
+        {
+          "level": 7,
+          "q": "¿En qué ciudad europea se jugó la final de vuelta de la Libertadores 2018 entre Boca y River?",
+          "a": "En Madrid (estadio Santiago Bernabéu)"
+        },
+        {
+          "level": 8,
+          "q": "¿De qué club brasileño es leyenda Zico?",
+          "a": "Del Flamengo"
+        },
+        {
+          "level": 9,
+          "q": "Verdadero o falso: Colo-Colo es el único club chileno que ganó la Copa Libertadores.",
+          "a": "Verdadero (en 1991)"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué club argentino tiene el récord de Copas Libertadores?",
+          "a": "Independiente (7 títulos)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la ciudad de Buenos Aires",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es capital Buenos Aires?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué baile sensual nació en los arrabales de Buenos Aires y Montevideo?",
+          "a": "El tango"
+        },
+        {
+          "level": 3,
+          "q": "¿Cómo se les dice a los habitantes de Buenos Aires?",
+          "a": "Porteños"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué monumento blanco y puntiagudo se alza en medio de la avenida 9 de Julio?",
+          "a": "El Obelisco"
+        },
+        {
+          "level": 5,
+          "q": "¿En qué barrio colorido está la callecita Caminito?",
+          "a": "La Boca"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué club de fútbol juega en La Bombonera?",
+          "a": "Boca Juniors"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama la sede del gobierno, famosa por su color rosado?",
+          "a": "La Casa Rosada"
+        },
+        {
+          "level": 8,
+          "q": "¿Verdadero o falso: la avenida 9 de Julio es considerada una de las más anchas del mundo?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué elegante cementerio descansa Eva Perón?",
+          "a": "El Cementerio de la Recoleta"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué año se inauguró el Subte, el primer metro de América Latina: 1913, 1938 o 1962?",
+          "a": "1913"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la ciudad de La Habana",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es capital La Habana?",
+          "a": "Cuba"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama el famoso paseo frente al mar de La Habana?",
+          "a": "El Malecón"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué coctel de ron, hierbabuena, limón y soda es un símbolo de La Habana?",
+          "a": "El mojito"
+        },
+        {
+          "level": 4,
+          "q": "¿De qué década son muchos de los carros americanos viejos que todavía andan por las calles?",
+          "a": "Los años 50"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué escritor estadounidense se tomaba sus daiquiris en el bar El Floridita?",
+          "a": "Ernest Hemingway"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llama el taxi amarillo en forma de coco?",
+          "a": "El cocotaxi"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué edificio habanero se parece mucho al Capitolio de Washington?",
+          "a": "El Capitolio"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué club habanero le dio nombre a un disco de culto de músicos cubanos lanzado en 1997?",
+          "a": "El Buena Vista Social Club"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué fortaleza con faro custodia la entrada de la bahía?",
+          "a": "El Castillo del Morro"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué ceremonia se realiza todas las noches a las 9 en la fortaleza de La Cabaña?",
+          "a": "El cañonazo de las nueve"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la Ciudad de México",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país está la Ciudad de México?",
+          "a": "México"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llaman los músicos vestidos de charro que tocan en la Plaza Garibaldi?",
+          "a": "Los mariachis"
+        },
+        {
+          "level": 3,
+          "q": "¿Cómo se le dice a la gran plaza central de la ciudad?",
+          "a": "El Zócalo"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué capital azteca estaba donde hoy está la Ciudad de México?",
+          "a": "Tenochtitlan"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué pintora de la famosa uniceja vivió en la Casa Azul de Coyoacán?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 6,
+          "q": "¿Dónde se pasea uno en trajineras por los canales?",
+          "a": "En Xochimilco"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué monumento dorado coronado por una Victoria alada domina el Paseo de la Reforma?",
+          "a": "El Ángel de la Independencia"
+        },
+        {
+          "level": 8,
+          "q": "¿Verdadero o falso: la Ciudad de México se hunde varios centímetros cada año?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué estadio fue sede de las finales de los Mundiales de 1970 y 1986?",
+          "a": "El Estadio Azteca"
+        },
+        {
+          "level": 10,
+          "q": "¿A qué altitud aproximada está la Ciudad de México: 1 200 m, 2 240 m o 3 600 m?",
+          "a": "2 240 m"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la ciudad de Medellín",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país queda Medellín?",
+          "a": "Colombia"
+        },
+        {
+          "level": 2,
+          "q": "¿Cuál es el apodo de Medellín: ciudad de la eterna primavera, ciudad de los vientos o ciudad luz?",
+          "a": "Ciudad de la eterna primavera"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué artista nacido en Medellín es famoso por sus figuras voluminosas?",
+          "a": "Fernando Botero"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué narcotraficante dirigía el cartel de Medellín?",
+          "a": "Pablo Escobar"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se les dice a la gente de Medellín y de Antioquia?",
+          "a": "Paisas"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué cantante de reguetón nacido en Medellín cantó 'Mi Gente'?",
+          "a": "J Balvin"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué gran fiesta de agosto es famosa por su desfile de silleteros?",
+          "a": "La Feria de las Flores"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llaman los cables que conectan el metro con los barrios de las laderas?",
+          "a": "El Metrocable"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué plato contundente lleva fríjoles, arroz, huevo, chicharrón, maduro y aguacate?",
+          "a": "La bandeja paisa"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué club de Medellín fue el primer equipo colombiano en ganar la Copa Libertadores, en 1989?",
+          "a": "Atlético Nacional"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la ciudad de Lima",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es capital Lima?",
+          "a": "Perú"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué plato de pescado crudo marinado en limón es la estrella de Lima?",
+          "a": "El cebiche"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué océano baña Lima?",
+          "a": "El océano Pacífico"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué conquistador español fundó Lima en 1535?",
+          "a": "Francisco Pizarro"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué gaseosa amarilla con sabor a chicle es la bebida emblemática del Perú?",
+          "a": "La Inca Kola"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué coctel se prepara con pisco, limón, jarabe y clara de huevo?",
+          "a": "El pisco sour"
+        },
+        {
+          "level": 7,
+          "q": "¿Verdadero o falso: en Lima casi nunca llueve?",
+          "a": "Verdadero (unos pocos milímetros al año)"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué distrito bohemio tiene el Puente de los Suspiros?",
+          "a": "Barranco"
+        },
+        {
+          "level": 9,
+          "q": "¿Cuál es el apodo histórico de Lima: Ciudad de los Reyes, Ciudad Blanca o Ciudad Imperial?",
+          "a": "Ciudad de los Reyes"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama la gran pirámide de adobe prehispánica en pleno Miraflores?",
+          "a": "La Huaca Pucllana"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la ciudad de Cartagena",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país está Cartagena de Indias?",
+          "a": "Colombia"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué rodea el centro histórico de Cartagena?",
+          "a": "La muralla"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué mar baña Cartagena?",
+          "a": "El mar Caribe"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué premio Nobel, autor de 'Cien años de soledad', tenía casa en Cartagena?",
+          "a": "Gabriel García Márquez"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llaman las vendedoras de frutas con vestidos de colores que posan para los turistas?",
+          "a": "Las palenqueras"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué gran fortaleza española domina la ciudad desde su cerro?",
+          "a": "El Castillo de San Felipe de Barajas"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué barrio popular y bohemio, vecino del centro histórico, está lleno de arte urbano?",
+          "a": "Getsemaní"
+        },
+        {
+          "level": 8,
+          "q": "¿Verdadero o falso: cerca de Cartagena uno se puede bañar en el cráter de un volcán de lodo?",
+          "a": "Verdadero (el volcán del Totumo)"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué almirante español tuerto, manco y cojo defendió la ciudad de los ingleses en 1741?",
+          "a": "Blas de Lezo"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuál es el apodo de Cartagena: la Ciudad Heroica, la Ciudad Blanca o la Ciudad Bonita?",
+          "a": "La Ciudad Heroica"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de las islas Galápagos",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿A qué país pertenecen las islas Galápagos?",
+          "a": "Ecuador"
+        },
+        {
+          "level": 2,
+          "q": "¿En qué océano están las Galápagos?",
+          "a": "El océano Pacífico"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué naturalista inglés observó allí animales que lo ayudaron a formular su teoría de la evolución?",
+          "a": "Charles Darwin"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué animal gigante le dio nombre a las islas?",
+          "a": "La tortuga (galápago)"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué ave marina de Galápagos es famosa por sus patas azul brillante?",
+          "a": "El piquero de patas azules"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llamaba el barco de Darwin?",
+          "a": "El Beagle"
+        },
+        {
+          "level": 7,
+          "q": "¿Verdadero o falso: en Galápagos vive una iguana que se sumerge en el mar para comer algas?",
+          "a": "Verdadero (la iguana marina)"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo le decían a la última tortuga gigante de la isla Pinta, que murió en 2012?",
+          "a": "El Solitario George"
+        },
+        {
+          "level": 9,
+          "q": "¿Cuál es la isla más grande del archipiélago?",
+          "a": "Isabela"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué año visitó Darwin las Galápagos: 1805, 1835 o 1859?",
+          "a": "1835"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de Machu Picchu",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país está Machu Picchu?",
+          "a": "Perú"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué civilización construyó Machu Picchu?",
+          "a": "Los incas"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué antigua capital inca es la ciudad grande más cercana?",
+          "a": "Cusco"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se llama la famosa caminata de varios días que llega hasta allí?",
+          "a": "El Camino Inca"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llama el pueblo al pie del sitio, de donde salen los buses?",
+          "a": "Aguas Calientes"
+        },
+        {
+          "level": 6,
+          "q": "¿Verdadero o falso: Machu Picchu fue elegido una de las siete nuevas maravillas del mundo en 2007?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué explorador estadounidense dio a conocer el sitio al mundo en 1911?",
+          "a": "Hiram Bingham"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llama el pico puntiagudo que se ve detrás de las ruinas en las postales?",
+          "a": "El Huayna Picchu"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué significa 'Machu Picchu' en quechua: montaña vieja, ciudad perdida o templo del sol?",
+          "a": "Montaña vieja"
+        },
+        {
+          "level": 10,
+          "q": "¿A qué emperador inca se le atribuye la construcción de Machu Picchu?",
+          "a": "Pachacútec"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito del Día de Muertos",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país es más famoso el Día de Muertos?",
+          "a": "México"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué días se celebra principalmente el Día de Muertos?",
+          "a": "El 1 y 2 de noviembre"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué película de Pixar de 2017 transcurre durante el Día de Muertos?",
+          "a": "Coco"
+        },
+        {
+          "level": 4,
+          "q": "¿Cómo se llama la elegante dama esqueleto de sombrero grande?",
+          "a": "La Catrina"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué pan dulce decorado con 'huesitos' se come en esas fechas?",
+          "a": "El pan de muerto"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué flor naranja guía a las almas hasta los altares?",
+          "a": "El cempasúchil"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llama el altar con fotos, comida y veladoras para los difuntos?",
+          "a": "La ofrenda"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llaman las tiras de papel de colores recortado que adornan las calles?",
+          "a": "El papel picado"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué grabador mexicano creó el personaje de la Catrina?",
+          "a": "José Guadalupe Posada"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué película de James Bond inspiró el gran desfile de Día de Muertos en la Ciudad de México, que se hace desde 2016?",
+          "a": "Spectre"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito del mate",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿El mate es un café, una infusión de hojas o una gaseosa?",
+          "a": "Una infusión de hojas"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llama el sorbete de metal con filtro con el que se toma el mate?",
+          "a": "La bombilla"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué recipiente tradicional se toma el mate?",
+          "a": "Una calabaza (el mate)"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso: al mate hay que echarle agua hirviendo?",
+          "a": "Falso (caliente pero sin hervir)"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llama el mate frío, muy popular en Paraguay?",
+          "a": "El tereré"
+        },
+        {
+          "level": 6,
+          "q": "En una ronda de mate, ¿qué significa decir 'gracias' al que ceba?",
+          "a": "Que ya no quieres más"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué país tiene el mayor consumo de mate por habitante: Argentina, Uruguay o Chile?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se le dice al mate en el sur de Brasil?",
+          "a": "Chimarrão"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué orden religiosa desarrolló las primeras plantaciones de yerba mate en el siglo XVII?",
+          "a": "Los jesuitas"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuál es el nombre científico de la yerba mate?",
+          "a": "Ilex paraguariensis"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de las llamas y las alpacas",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué cordillera viven las llamas y las alpacas?",
+          "a": "Los Andes"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué hace una llama cuando está molesta?",
+          "a": "Escupe"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál es más grande: la llama o la alpaca?",
+          "a": "La llama"
+        },
+        {
+          "level": 4,
+          "q": "¿Las llamas y las alpacas son primas de qué animal del desierto?",
+          "a": "El camello (son camélidos)"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso: las llamas se usan desde hace siglos como animales de carga?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿Cuál tiene las orejas en forma de plátano: la llama o la alpaca?",
+          "a": "La llama"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué país tiene la gran mayoría de las alpacas del mundo?",
+          "a": "Perú"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué camélido silvestre es el ancestro de la llama?",
+          "a": "El guanaco"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué camélido silvestre, de lana muy valiosa, aparece en el escudo del Perú?",
+          "a": "La vicuña"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama la raza de alpaca de mechones largos y colgantes, la otra siendo la Huacaya?",
+          "a": "La Suri"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito del Salar de Uyuni",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país está el Salar de Uyuni?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 2,
+          "q": "¿De qué está cubierto el Salar de Uyuni?",
+          "a": "De sal"
+        },
+        {
+          "level": 3,
+          "q": "¿Verdadero o falso: es el salar más grande del mundo?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué se convierte el salar en época de lluvias?",
+          "a": "En un espejo gigante"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué aves rosadas anidan en las lagunas de la región?",
+          "a": "Los flamencos"
+        },
+        {
+          "level": 6,
+          "q": "¿Con qué están construidos algunos hoteles a orillas del salar?",
+          "a": "Con bloques de sal"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué metal, usado en baterías, se esconde en enormes cantidades bajo el salar?",
+          "a": "El litio"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué atracción oxidada hay a la salida del pueblo de Uyuni?",
+          "a": "El cementerio de trenes"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llama la isla cubierta de cactus gigantes en medio del salar?",
+          "a": "La Isla Incahuasi"
+        },
+        {
+          "level": 10,
+          "q": "¿A qué altitud aproximada está el salar: 1 600 m, 3 650 m o 5 200 m?",
+          "a": "3 650 m"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la lucha libre",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿De qué país es emblema la lucha libre?",
+          "a": "México"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué llevan los luchadores en la cara?",
+          "a": "Una máscara"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué película Jack Black interpreta a un cocinero de convento que se vuelve luchador?",
+          "a": "Nacho Libre"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué luchador de máscara plateada se volvió leyenda y héroe de cine?",
+          "a": "El Santo"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se les dice a los luchadores 'malos', opuestos a los técnicos?",
+          "a": "Los rudos"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llama la lucha donde cada luchador se juega su máscara?",
+          "a": "Máscara contra máscara"
+        },
+        {
+          "level": 7,
+          "q": "¿Verdadero o falso: El Santo fue enterrado con su máscara?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué luchador enmascarado se volvió superestrella de la WWE con su famoso '619'?",
+          "a": "Rey Mysterio"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué empresa mexicana, fundada en 1933, es la empresa de lucha libre más antigua aún activa?",
+          "a": "El CMLL"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuál era el nombre real de El Santo?",
+          "a": "Rodolfo Guzmán Huerta"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito del Che Guevara",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país nació el Che Guevara?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "¿Con Fidel Castro, en qué país hizo la revolución?",
+          "a": "Cuba"
+        },
+        {
+          "level": 3,
+          "q": "¿Cuál era el nombre de pila del Che?",
+          "a": "Ernesto"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué carrera terminó: medicina, derecho o arquitectura?",
+          "a": "Medicina"
+        },
+        {
+          "level": 5,
+          "q": "¿En qué país lo mataron en 1967?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 6,
+          "q": "¿Cómo se llamaba la vieja moto de su gran viaje por Sudamérica?",
+          "a": "La Poderosa"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué fotógrafo cubano le tomó el famoso retrato con la boina de la estrella?",
+          "a": "Alberto Korda"
+        },
+        {
+          "level": 8,
+          "q": "¿En qué ciudad argentina nació?",
+          "a": "Rosario"
+        },
+        {
+          "level": 9,
+          "q": "¿Verdadero o falso: como presidente del Banco Nacional de Cuba, firmaba los billetes solo con 'Che'?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 10,
+          "q": "¿En qué ciudad cubana está su mausoleo?",
+          "a": "Santa Clara"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la Isla de Pascua",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿A qué país pertenece la Isla de Pascua?",
+          "a": "Chile"
+        },
+        {
+          "level": 2,
+          "q": "¿Cómo se llaman las estatuas gigantes de piedra de la isla?",
+          "a": "Los moáis"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué océano está la Isla de Pascua?",
+          "a": "El océano Pacífico"
+        },
+        {
+          "level": 4,
+          "q": "¿Por qué se llama 'de Pascua'?",
+          "a": "Los europeos la descubrieron un domingo de Pascua"
+        },
+        {
+          "level": 5,
+          "q": "¿Cuál es el nombre polinesio de la isla?",
+          "a": "Rapa Nui"
+        },
+        {
+          "level": 6,
+          "q": "¿Verdadero o falso: la mayoría de los moáis mira hacia el mar?",
+          "a": "Falso (la mayoría mira hacia el interior)"
+        },
+        {
+          "level": 7,
+          "q": "¿Cómo se llaman los 'sombreros' de piedra roja sobre algunos moáis?",
+          "a": "Los pukao"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se llamaba el antiguo culto del hombre pájaro de la isla?",
+          "a": "El Tangata manu"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué navegante neerlandés fue el primer europeo en llegar, en 1722?",
+          "a": "Jacob Roggeveen"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama la antigua escritura de la isla, nunca descifrada?",
+          "a": "El rongorongo"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito del Canal de Panamá",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país está el Canal de Panamá?",
+          "a": "Panamá"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué océanos une el canal?",
+          "a": "El Atlántico y el Pacífico"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué año se inauguró el canal: 1869, 1914 o 1950?",
+          "a": "1914"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué francés, ya constructor del Canal de Suez, inició las primeras obras?",
+          "a": "Ferdinand de Lesseps"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué país terminó finalmente la construcción del canal?",
+          "a": "Estados Unidos"
+        },
+        {
+          "level": 6,
+          "q": "¿En qué año se le entregó el canal a Panamá: 1977, 1989 o 1999?",
+          "a": "1999"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué gran lago artificial cruzan los barcos en medio del canal?",
+          "a": "El lago Gatún"
+        },
+        {
+          "level": 8,
+          "q": "¿Cómo se les dice a los barcos con el tamaño máximo para las esclusas antiguas?",
+          "a": "Panamax"
+        },
+        {
+          "level": 9,
+          "q": "¿Verdadero o falso: la entrada del canal por el Pacífico está más al este que la del Atlántico?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 10,
+          "q": "¿Cuánto pagó Richard Halliburton por cruzar el canal a nado en 1928: 36 centavos, 36 dólares o 360 dólares?",
+          "a": "36 centavos"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de la Amazonía",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué gran río atraviesa la selva amazónica?",
+          "a": "El Amazonas"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué país tiene la mayor parte de la selva amazónica?",
+          "a": "Brasil"
+        },
+        {
+          "level": 3,
+          "q": "¿Qué pez pequeño de dientes muy filosos tiene fama de comer gente?",
+          "a": "La piraña"
+        },
+        {
+          "level": 4,
+          "q": "¿De qué color es el famoso delfín de río del Amazonas?",
+          "a": "Rosado"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué serpiente gigante, la más pesada del mundo, vive en los pantanos amazónicos?",
+          "a": "La anaconda verde"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué gran ciudad en plena selva tiene una ópera del siglo XIX, el Teatro Amazonas?",
+          "a": "Manaos"
+        },
+        {
+          "level": 7,
+          "q": "¿El nombre 'Amazonas' viene de las guerreras de qué mitología?",
+          "a": "La mitología griega"
+        },
+        {
+          "level": 8,
+          "q": "¿Verdadero o falso: ningún puente cruza el río Amazonas?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué conquistador español fue el primer europeo en recorrer todo el río, en 1542?",
+          "a": "Francisco de Orellana"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama la ola gigante que sube por el Amazonas desde el océano en ciertas mareas?",
+          "a": "La pororoca"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de los animales de América Latina",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿Qué animal sudamericano es el roedor más grande del mundo?",
+          "a": "El capibara (chigüiro)"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué ave tropical es famosa por su enorme pico de colores?",
+          "a": "El tucán"
+        },
+        {
+          "level": 3,
+          "q": "¿En qué país vive el ajolote en estado silvestre?",
+          "a": "México"
+        },
+        {
+          "level": 4,
+          "q": "¿Verdadero o falso: el ajolote puede regenerar sus patas perdidas?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 5,
+          "q": "¿Verdadero o falso: el perezoso solo baja de su árbol más o menos una vez por semana para hacer sus necesidades?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 6,
+          "q": "¿La moneda de Guatemala lleva el nombre de qué ave?",
+          "a": "El quetzal"
+        },
+        {
+          "level": 7,
+          "q": "Perezoso de dos dedos o de tres dedos: ¿cuál existe?",
+          "a": "Los dos"
+        },
+        {
+          "level": 8,
+          "q": "¿Verdadero o falso: un ajolote aparece en un billete mexicano?",
+          "a": "Verdadero (el billete de 50 pesos)"
+        },
+        {
+          "level": 9,
+          "q": "¿En qué país vive el ave más pequeña del mundo, el zunzuncito?",
+          "a": "Cuba"
+        },
+        {
+          "level": 10,
+          "q": "¿Cómo se llama conservar los rasgos de larva en la adultez, como el ajolote?",
+          "a": "La neotenia"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito del chocolate",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿El chocolate se hace con las semillas de qué árbol?",
+          "a": "El cacao"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué salsa mexicana mezcla chocolate y chiles?",
+          "a": "El mole"
+        },
+        {
+          "level": 3,
+          "q": "¿Verdadero o falso: los aztecas usaban las semillas de cacao como moneda?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 4,
+          "q": "¿Qué emperador azteca tomaba chocolate en copas de oro?",
+          "a": "Moctezuma"
+        },
+        {
+          "level": 5,
+          "q": "¿Cómo se llama el fruto del cacao que contiene las semillas?",
+          "a": "La mazorca"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué país es hoy el mayor productor de cacao del mundo: Brasil, Costa de Marfil o México?",
+          "a": "Costa de Marfil"
+        },
+        {
+          "level": 7,
+          "q": "¿De qué lengua indígena viene la palabra 'chocolate'?",
+          "a": "Del náhuatl"
+        },
+        {
+          "level": 8,
+          "q": "¿Qué variedad de cacao, rara y fina, se llama igual que los descendientes de españoles nacidos en América?",
+          "a": "El criollo"
+        },
+        {
+          "level": 9,
+          "q": "¿Qué estado mexicano, que le dio nombre a una salsa picante, es el mayor productor de cacao del país?",
+          "a": "Tabasco"
+        },
+        {
+          "level": 10,
+          "q": "¿Qué significa 'Theobroma', el nombre científico del cacao?",
+          "a": "Alimento de los dioses"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "Lo insólito de los carnavales de América Latina",
+      "questions": [
+        {
+          "level": 1,
+          "q": "¿En qué país se celebra el famoso carnaval de Río?",
+          "a": "Brasil"
+        },
+        {
+          "level": 2,
+          "q": "¿Qué baile hacen desfilar las grandes escuelas del carnaval de Río?",
+          "a": "La samba"
+        },
+        {
+          "level": 3,
+          "q": "¿Cómo se llama la avenida-estadio construida en Río para los desfiles?",
+          "a": "El Sambódromo"
+        },
+        {
+          "level": 4,
+          "q": "¿En qué país es el carnaval de Barranquilla?",
+          "a": "Colombia"
+        },
+        {
+          "level": 5,
+          "q": "¿Qué ciudad boliviana tiene un carnaval declarado patrimonio por la UNESCO?",
+          "a": "Oruro"
+        },
+        {
+          "level": 6,
+          "q": "¿Qué danza de diablos enmascarados es la estrella del carnaval de Oruro?",
+          "a": "La Diablada"
+        },
+        {
+          "level": 7,
+          "q": "¿Qué ritmo de tambores de origen africano suena en el carnaval de Montevideo?",
+          "a": "El candombe"
+        },
+        {
+          "level": 8,
+          "q": "¿Verdadero o falso: el carnaval uruguayo dura unos 40 días, lo que lo hace uno de los más largos del mundo?",
+          "a": "Verdadero"
+        },
+        {
+          "level": 9,
+          "q": "¿Cómo se llaman las agrupaciones que cantan y satirizan en el carnaval uruguayo?",
+          "a": "Las murgas"
+        },
+        {
+          "level": 10,
+          "q": "En Salvador de Bahía, ¿cómo se llaman los camiones de sonido donde tocan las bandas?",
+          "a": "Los tríos eléctricos"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Capitales con mayúscula",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di la capital de los siguientes países.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. Honduras\nB. Nicaragua\nC. Paraguay\nD. Ecuador\nE. Uruguay\nF. Brasil\nG. Costa Rica\nH. El Salvador\nI. Venezuela\nJ. Bolivia",
+          "a": "A. Tegucigalpa\nB. Managua\nC. Asunción\nD. Quito\nE. Montevideo\nF. Brasilia (¡no Río de Janeiro!)\nG. San José\nH. San Salvador\nI. Caracas\nJ. Sucre (capital constitucional) o La Paz (sede del gobierno), se aceptan las dos"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Como agua para chocolate",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di si las siguientes palabras del español vienen del NÁHUATL (aztecas), del QUECHUA (incas) o del TAÍNO (Caribe).\nAvanzarás una casilla por cada respuesta correcta, pero retrocederás una casilla por cada error.\nA. Chocolate\nB. Huracán\nC. Cóndor\nD. Coyote\nE. Canoa\nF. Papa (el tubérculo)\nG. Chicle\nH. Hamaca\nI. Puma\nJ. Tomate",
+          "a": "A. Náhuatl (de \"xocolatl\")\nB. Taíno (de \"hurakán\")\nC. Quechua (de \"kuntur\")\nD. Náhuatl (de \"coyotl\")\nE. Taíno (una de las primeras palabras anotadas por Cristóbal Colón)\nF. Quechua\nG. Náhuatl (de \"tzictli\")\nH. Taíno\nI. Quechua\nJ. Náhuatl (de \"tomatl\")"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Barriga llena, corazón contento",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di de qué país es típico cada uno de estos platos.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. La pupusa\nB. La feijoada\nC. El chivito\nD. El mole poblano\nE. El lomo saltado\nF. La bandeja paisa\nG. La baleada\nH. La salteña\nI. La ropa vieja\nJ. El pabellón criollo",
+          "a": "A. El Salvador\nB. Brasil\nC. Uruguay (un sándwich de carne bien cargado)\nD. México\nE. Perú\nF. Colombia\nG. Honduras\nH. Bolivia\nI. Cuba\nJ. Venezuela"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Hasta la muerte",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di en qué país juegan estos clubes de fútbol.\nResponde a todas las preguntas, avanzarás una casilla por cada respuesta correcta.\nA. Peñarol\nB. Colo-Colo\nC. Saprissa\nD. Alianza Lima\nE. Barcelona Sporting Club (¡no el de España!)\nF. Bolívar\nG. Atlético Nacional\nH. Cerro Porteño\nI. Chivas\nJ. Corinthians",
+          "a": "A. Uruguay (Montevideo)\nB. Chile (Santiago)\nC. Costa Rica\nD. Perú\nE. Ecuador (Guayaquil)\nF. Bolivia (La Paz)\nG. Colombia (Medellín)\nH. Paraguay (Asunción)\nI. México (Guadalajara)\nJ. Brasil (São Paulo)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "La mano de Dios",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di si las siguientes afirmaciones son verdaderas o falsas.\nAvanzarás una casilla por cada respuesta correcta, pero retrocederás una casilla por cada error.\nA. Uruguay ganó el primer Mundial de la historia, en 1930\nB. Colombia ya ganó un Mundial\nC. Pelé ganó 3 Mundiales\nD. Venezuela ya jugó la fase final de un Mundial\nE. Chile organizó el Mundial de 1962\nF. En el \"Maracanazo\" de 1950, Brasil le ganó a Uruguay\nG. Costa Rica llegó a cuartos de final en el Mundial 2014\nH. La \"mano de Dios\" de Maradona fue contra Alemania",
+          "a": "A. Verdadero (4-2 a Argentina)\nB. Falso\nC. Verdadero (1958, 1962 y 1970)\nD. Falso (es el único país sudamericano que nunca se ha clasificado)\nE. Verdadero\nF. Falso (Uruguay le ganó 2-1 a Brasil en el Maracaná)\nG. Verdadero (eliminado en penales por Países Bajos)\nH. Falso (fue contra Inglaterra, en 1986)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Agua que no has de beber",
+      "questions": [
+        {
+          "level": null,
+          "q": "Nombra ríos de Sudamérica.\nAvanzarás una casilla por cada respuesta correcta.\nSolo tienes 45 segundos",
+          "a": "Amazonas, Orinoco, Paraná, Paraguay, Uruguay,\nMagdalena, Cauca, São Francisco, Madeira, Río Negro,\nTocantins, Araguaia, Xingú, Tapajós, Purús, Yuruá,\nMarañón, Ucayali, Napo, Putumayo, Caquetá,\nPilcomayo, Bermejo, Salado, Biobío, Apurímac, Mamoré, Beni...\nOtras propuestas sujetas a la aprobación de más de la mitad de los jugadores"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Pa' la gente bonita",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di de qué país vienen estos rones.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. Havana Club\nB. Zacapa\nC. Flor de Caña\nD. Diplomático\nE. Brugal\nF. Ron Abuelo\nG. Don Q\nH. Ron Medellín",
+          "a": "A. Cuba\nB. Guatemala\nC. Nicaragua\nD. Venezuela\nE. República Dominicana\nF. Panamá\nG. Puerto Rico\nH. Colombia"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "¡Salud!",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di el ingrediente principal de estas bebidas.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. El tequila\nB. El pisco\nC. La cachaça\nD. La chicha de jora\nE. El pulque\nF. El tepache\nG. La horchata mexicana\nH. La chicha morada",
+          "a": "A. El agave azul\nB. La uva\nC. El jugo fresco de caña de azúcar\nD. El maíz germinado\nE. El aguamiel fermentado del maguey\nF. La cáscara de piña\nG. El arroz\nH. El maíz morado"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "¡Azúcar!",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di de qué país son estos artistas.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. Shakira\nB. Bad Bunny\nC. Celia Cruz\nD. Juan Luis Guerra\nE. Rubén Blades\nF. Mercedes Sosa\nG. Ricardo Arjona\nH. Violeta Parra\nI. Caetano Veloso\nJ. Jorge Drexler",
+          "a": "A. Colombia\nB. Puerto Rico\nC. Cuba\nD. República Dominicana\nE. Panamá\nF. Argentina\nG. Guatemala\nH. Chile\nI. Brasil\nJ. Uruguay"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Yo soy tu padre (y tu tío)",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di si estas telenovelas son MEXICANAS, VENEZOLANAS, COLOMBIANAS, BRASILEÑAS o ARGENTINAS.\nResponde a todas las preguntas, avanzarás una casilla por cada respuesta correcta.\nA. Yo soy Betty, la fea\nB. Los ricos también lloran\nC. Cristal\nD. Café con aroma de mujer\nE. Kassandra\nF. María la del Barrio\nG. Escrava Isaura (La esclava Isaura)\nH. Muñeca brava\nI. O Clone (El clon)\nJ. Rubí",
+          "a": "A. Colombiana (1999)\nB. Mexicana (1979)\nC. Venezolana (1985)\nD. Colombiana (1994)\nE. Venezolana (1992)\nF. Mexicana (1995)\nG. Brasileña (1976)\nH. Argentina (1998, con Natalia Oreiro)\nI. Brasileña (2001)\nJ. Mexicana (2004)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Somos un montón",
+      "questions": [
+        {
+          "level": null,
+          "q": "Ordena estos países del más poblado al menos poblado.\nAvanzarás 6 casillas si aciertas.\nA. Argentina\nB. México\nC. Uruguay\nD. Brasil\nE. Perú\nF. Colombia",
+          "a": "Respuesta D, B, F, A, E y luego C\nD. Brasil, unos 210 millones de habitantes\nB. México, unos 130 millones\nF. Colombia, unos 53 millones\nA. Argentina, unos 46 millones\nE. Perú, unos 34 millones\nC. Uruguay, unos 3,4 millones"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Érase una vez",
+      "questions": [
+        {
+          "level": null,
+          "q": "Ordena cronológicamente estos acontecimientos.\nAvanzarás 6 casillas si aciertas.\nA. El triunfo de la Revolución cubana\nB. La caída de Tenochtitlan, capital azteca\nC. La inauguración del Canal de Panamá\nD. El \"Grito de Dolores\", inicio de la guerra de independencia de México\nE. La independencia de Brasil\nF. La primera llegada de Cristóbal Colón a América",
+          "a": "Respuesta F, B, D, E, C y luego A\nF. Cristóbal Colón en 1492\nB. La caída de Tenochtitlan en 1521\nD. El Grito de Dolores en 1810\nE. La independencia de Brasil en 1822\nC. El Canal de Panamá en 1914\nA. La Revolución cubana en 1959"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Perdidos en los Andes",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di si las siguientes afirmaciones son verdaderas o falsas.\nAvanzarás una casilla por cada respuesta correcta, pero retrocederás una casilla por cada error.\nA. El Amazonas desemboca en el océano Atlántico\nB. El lago Titicaca lo comparten Perú y Bolivia\nC. El Aconcagua, la cumbre más alta de América, está en Chile\nD. El Salto Ángel, la cascada más alta del mundo, está en Venezuela\nE. Las cataratas del Iguazú están en la frontera entre Argentina y Brasil\nF. Las islas Galápagos pertenecen a Colombia\nG. Uruguay tiene frontera con Chile\nH. Bolivia no tiene salida al mar",
+          "a": "A. Verdadero\nB. Verdadero\nC. Falso (está en Argentina, en la provincia de Mendoza)\nD. Verdadero\nE. Verdadero\nF. Falso (pertenecen a Ecuador)\nG. Falso (solo con Argentina y Brasil)\nH. Verdadero (la perdió ante Chile en la guerra del Pacífico)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Billete mata galán",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di la moneda oficial de estos países.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. Guatemala\nB. Honduras\nC. Nicaragua\nD. Costa Rica\nE. Panamá\nF. Venezuela\nG. Perú\nH. Paraguay\nI. Brasil\nJ. Ecuador",
+          "a": "A. El quetzal\nB. El lempira\nC. El córdoba\nD. El colón\nE. El balboa (se usa junto con el dólar estadounidense)\nF. El bolívar\nG. El sol\nH. El guaraní\nI. El real\nJ. El dólar estadounidense (desde 2000)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Bandera en alto",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di si las siguientes afirmaciones sobre banderas son verdaderas o falsas.\nAvanzarás una casilla por cada respuesta correcta, pero retrocederás una casilla por cada error.\nA. La bandera de Brasil lleva el lema \"Ordem e Progresso\"\nB. La bandera de México muestra un águila devorando una serpiente sobre un nopal\nC. La bandera de Cuba tiene una sola estrella\nD. En la bandera de Colombia, la franja amarilla ocupa la mitad de la bandera\nE. La bandera de Chile tiene dos estrellas\nF. La bandera de Paraguay no tiene el mismo escudo en el anverso y en el reverso\nG. La bandera de Venezuela tiene 8 estrellas\nH. La bandera de Perú tiene franjas horizontales",
+          "a": "A. Verdadero\nB. Verdadero\nC. Verdadero\nD. Verdadero\nE. Falso (una sola estrella blanca)\nF. Verdadero (escudo nacional por un lado, sello de Hacienda por el otro)\nG. Verdadero (desde 2006)\nH. Falso (franjas verticales roja, blanca y roja)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Indiana Jones",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di en qué país están estos sitios arqueológicos.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. Machu Picchu\nB. Chichén Itzá\nC. Tikal\nD. Copán\nE. Tiwanaku\nF. Ciudad Perdida (Teyuna)\nG. Ingapirca\nH. Joya de Cerén\nI. Los moáis de Rapa Nui\nJ. Chan Chan",
+          "a": "A. Perú\nB. México\nC. Guatemala\nD. Honduras\nE. Bolivia\nF. Colombia\nG. Ecuador\nH. El Salvador (apodada \"la Pompeya de América\")\nI. Chile (Isla de Pascua)\nJ. Perú"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Sin pena",
+      "questions": [
+        {
+          "level": null,
+          "q": "Nombra bailes o géneros musicales nacidos en América Latina o el Caribe hispano.\nAvanzarás una casilla por cada respuesta correcta.\nSolo tienes 45 segundos",
+          "a": "Salsa, tango, cumbia, merengue, bachata, son cubano,\nmambo, chachachá, rumba, bolero, danzón, samba,\nbossa nova, forró, lambada, reguetón, vallenato,\njoropo, cueca, milonga, candombe, huayno, marinera,\npunta, plena, bomba, ranchera, champeta...\nOtras propuestas sujetas a la aprobación de más de la mitad de los jugadores"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "¿Quién era?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Encuentra a esta persona usando el menor número de pistas posible.\nSolo una propuesta después de cada pista.\nPor 10 casillas: Era una artista mexicana.\nPor 9 casillas: Nació en 1907 en Coyoacán.\nPor 8 casillas: A los 18 años quedó gravemente herida en un accidente de autobús.\nPor 7 casillas: Se casó dos veces con el mismo hombre.\nPor 6 casillas: Su casa, la \"Casa Azul\", se convirtió en museo.\nPor 5 casillas: Pintó muchísimos autorretratos.\nPor 4 casillas: Era famosa por su uniceja.\nPor 3 casillas: Salma Hayek la interpretó en el cine en 2002.\nPor 2 casillas: Su esposo era el muralista Diego Rivera.\nPor 1 casilla: Se llamaba Frida.",
+          "a": "Frida Kahlo"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "¡Vamos, vamos!",
+      "questions": [
+        {
+          "level": null,
+          "q": "Di a qué selección nacional de fútbol corresponden estos apodos.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. La Albiceleste\nB. La Celeste\nC. La Canarinha\nD. El Tri\nE. La Vinotinto\nF. La Albirroja\nG. Los Cafeteros\nH. La Selecta\nI. La Verde\nJ. La Blanquirroja",
+          "a": "A. Argentina\nB. Uruguay\nC. Brasil\nD. México\nE. Venezuela\nF. Paraguay\nG. Colombia\nH. El Salvador\nI. Bolivia\nJ. Perú"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "¿Y tú de dónde eres?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Estos apodos designan a la gente de un país o de una ciudad. Di de dónde.\nResponde a todas las preguntas, tienes 8 segundos como máximo por pregunta y avanzarás una casilla por cada respuesta correcta.\nA. Un tico\nB. Un nica\nC. Un catracho\nD. Un guanaco\nE. Un chapín\nF. Un boricua\nG. Un charrúa\nH. Un carioca\nI. Un chilango\nJ. Un quisqueyano",
+          "a": "A. Costa Rica\nB. Nicaragua\nC. Honduras\nD. El Salvador\nE. Guatemala\nF. Puerto Rico\nG. Uruguay\nH. Río de Janeiro (Brasil)\nI. Ciudad de México (México)\nJ. República Dominicana"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Solo tres personas callaron el Maracaná",
+      "questions": [
+        {
+          "level": null,
+          "q": "En el \"Maracanazo\" de 1950, ¿quién anotó el gol decisivo de Uruguay contra Brasil (2-1)?\nA. Obdulio Varela\nB. Juan Alberto Schiaffino\nC. Alcides Ghiggia\nD. Óscar Míguez",
+          "a": "Respuesta C\n(Schiaffino había marcado el empate)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Dos capitales son mejor que una",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Cuál es la capital constitucional de Bolivia?\nA. La Paz\nB. Sucre\nC. Cochabamba\nD. Santa Cruz de la Sierra",
+          "a": "Respuesta B\n(La Paz es la sede del gobierno)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Cien años de árbol genealógico",
+      "questions": [
+        {
+          "level": null,
+          "q": "En \"Cien años de soledad\" de Gabriel García Márquez, ¿qué familia funda el pueblo de Macondo?\nA. Los Buendía\nB. Los Trueba\nC. Los Ariza\nD. Los Del Valle",
+          "a": "Respuesta A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Para bailar La Bamba",
+      "questions": [
+        {
+          "level": null,
+          "q": "\"La Bamba\", que popularizó Ritchie Valens, es un son jarocho tradicional. ¿De qué estado mexicano es originaria?\nA. Jalisco\nB. Oaxaca\nC. Yucatán\nD. Veracruz",
+          "a": "Respuesta D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Devuélvannos el canal",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿En qué año Estados Unidos le entregó el Canal de Panamá a Panamá?\nA. 1977\nB. 1989\nC. 1999\nD. 2004",
+          "a": "Respuesta C\n(El 31 de diciembre de 1999; los Tratados Torrijos-Carter son de 1977)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Forever alone",
+      "questions": [
+        {
+          "level": null,
+          "q": "El Solitario George, la tortuga gigante de Galápagos que murió en 2012, era el último de la especie de ¿qué isla?\nA. Pinta\nB. Isabela\nC. Santa Cruz\nD. San Cristóbal",
+          "a": "Respuesta A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Leche de tigre sin tigre",
+      "questions": [
+        {
+          "level": null,
+          "q": "En Perú, ¿qué es la \"leche de tigre\"?\nA. Un cóctel cubano de ron con leche\nB. Un postre colombiano de leche condensada\nC. Un café venezolano bien cargado\nD. El jugo de la marinada del ceviche",
+          "a": "Respuesta D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Fue sin querer queriendo",
+      "questions": [
+        {
+          "level": null,
+          "q": "En \"El Chavo del Ocho\", ¿dónde le gusta esconderse al Chavo en la vecindad?\nA. En una caja de cartón\nB. En un barril\nC. Debajo de la escalera\nD. En una bañera",
+          "a": "Respuesta B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "El rey del continente",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Qué país tiene el récord de títulos de la Copa América?\nA. Uruguay\nB. Brasil\nC. Argentina\nD. Chile",
+          "a": "Respuesta C\n(16 títulos, contra 15 de Uruguay)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "La abuelita hizo la revolución",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Cómo se llamaba el yate que llevó a Fidel Castro y sus guerrilleros de México a Cuba en 1956?\nA. Sierra Maestra\nB. Granma\nC. Moncada\nD. Libertad",
+          "a": "Respuesta B\n(Luego le dio su nombre al periódico oficial cubano)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Ningún ángel",
+      "questions": [
+        {
+          "level": null,
+          "q": "El Salto Ángel, en Venezuela, la cascada más alta del mundo, debe su nombre a...\nA. La aparición de un ángel contada por un misionero\nB. Su forma, que parece un par de alas\nC. Una leyenda pemón sobre un ángel caído\nD. Jimmie Angel, un aviador estadounidense",
+          "a": "Respuesta D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Gracias a la vida (¿y gracias a quién?)",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Quién escribió y compuso la canción \"Gracias a la vida\"?\nA. Violeta Parra\nB. Mercedes Sosa\nC. Chabuca Granda\nD. Víctor Jara",
+          "a": "Respuesta A\n(Mercedes Sosa la hizo famosa en todo el mundo)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "El primero de la clase",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Quién fue el primer escritor latinoamericano en ganar el Premio Nobel de Literatura?\nA. Pablo Neruda\nB. Gabriela Mistral\nC. Miguel Ángel Asturias\nD. Gabriel García Márquez",
+          "a": "Respuesta B\n(En 1945)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Bzzzz",
+      "questions": [
+        {
+          "level": null,
+          "q": "En 1881, el médico cubano Carlos Finlay fue el primero en plantear que un mosquito transmitía una enfermedad. ¿Cuál?\nA. El paludismo\nB. El dengue\nC. La fiebre amarilla\nD. El cólera",
+          "a": "Respuesta C"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Fea, pero con maestría",
+      "questions": [
+        {
+          "level": null,
+          "q": "En \"Yo soy Betty, la fea\", ¿cuál es el nombre completo de Betty?\nA. Beatriz Mendoza Valencia\nB. Beatriz Valencia Pinzón\nC. Beatriz Solano Mendoza\nD. Beatriz Aurora Pinzón Solano",
+          "a": "Respuesta D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Muéstrame la plata",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿De qué país es moneda el lempira?\nA. Honduras\nB. Guatemala\nC. Nicaragua\nD. El Salvador",
+          "a": "Respuesta A\n(Guatemala tiene el quetzal y Nicaragua el córdoba)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "El sueño de Bolívar",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Cuál de estos países actuales NO formó parte de la Gran Colombia de Simón Bolívar?\nA. Venezuela\nB. Ecuador\nC. Panamá\nD. Bolivia",
+          "a": "Respuesta D\n(¡Aunque lleve su nombre!)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "¿Guaca-qué?",
+      "questions": [
+        {
+          "level": null,
+          "q": "En náhuatl, la palabra \"āhuacatl\", de donde viene \"aguacate\", designaba la fruta pero también...\nA. Una piedra verde\nB. Un testículo\nC. La mantequilla del bosque\nD. El corazón de los dioses",
+          "a": "Respuesta B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "El Rey tiene nombre",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Cuál es el nombre real de Pelé?\nA. Edson Arantes do Nascimento\nB. Ronaldo Luís Nazário de Lima\nC. Manoel Francisco dos Santos\nD. Artur Antunes Coimbra",
+          "a": "Respuesta A\n(Los otros son Ronaldo, Garrincha y Zico)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Orden, progreso y mudanza",
+      "questions": [
+        {
+          "level": null,
+          "q": "¿Cuál fue la primerísima capital de Brasil?\nA. Río de Janeiro\nB. São Paulo\nC. Salvador de Bahía\nD. Recife",
+          "a": "Respuesta C\n(De 1549 a 1763, antes de Río y luego Brasilia)"
+        }
+      ]
+    }
+  ]
+}

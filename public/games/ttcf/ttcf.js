@@ -3,7 +3,7 @@
 // step (store.js), so leaving by any route brings it back from the dashboard.
 import { LAST, THEMES, TOKEN_ART, medallionArt, picture, renderBoard, spaceTheme, themeClass, walkToken } from './board.js';
 import { COPY, LANGS, THEME_LABELS, translate } from './i18n.js';
-import { clearMatch, hasMatch, loadMatch, readMode, storeMatch, storeMode } from './store.js';
+import { clearMatch, hasMatch, loadMatch, readLatino, readMode, storeLatino, storeMatch, storeMode } from './store.js';
 import { createWheel } from './wheel.js';
 
 const GAME_ID = 'ttcf';
@@ -16,7 +16,12 @@ const $ = (id) => document.querySelector(`[data-id="${id}"]`);
 
 const page = {
   lang: readLang(),
+  // cards = what is drawn from: the base deck, plus the extension when `latino`.
+  // The extension is appended, so the base cards keep their indexes.
   cards: [],
+  base: [],
+  extra: [],
+  latino: readLatino(),
   names: [],
   count: 2,
   match: null,
@@ -133,6 +138,28 @@ function renderModes() {
   });
 }
 
+function fullDeck() {
+  return [...page.base, ...page.extra];
+}
+
+function buildDeck() {
+  page.cards = page.latino ? fullDeck() : page.base;
+}
+
+function renderLatino() {
+  const chip = $('ttcf-latino-chip');
+  chip.hidden = !page.extra.length;
+  chip.classList.toggle('active', page.latino);
+  chip.setAttribute('aria-pressed', String(page.latino));
+}
+
+function setLatino(on) {
+  page.latino = on;
+  storeLatino(on);
+  buildDeck();
+  renderLatino();
+}
+
 function setMode(mode) {
   page.mode = mode;
   storeMode(mode);
@@ -141,13 +168,14 @@ function setMode(mode) {
 
 function renderDashboard() {
   renderModes();
+  renderLatino();
   const ready = page.cards.length > 0;
   $('ttcf-start-btn').disabled = !ready;
   $('ttcf-load-status').hidden = ready;
   // Resume shows (disabled) while the deck loads, so the acorn row, which
   // makes room for it, never flashes in and out (see index.html).
   const resume = $('ttcf-resume-button');
-  resume.hidden = !(ready ? loadMatch(page.cards, LAST) : hasMatch(LAST));
+  resume.hidden = !(ready ? loadMatch(fullDeck(), LAST) : hasMatch(LAST));
   resume.disabled = !ready;
   $('ttcf-setup-hero').hidden = false;
 }
@@ -180,7 +208,7 @@ async function startMatch(names) {
   page.starting = false;
   if (!started) return;
   // Every team starts on D; the Débuter card says which team plays first.
-  page.match = { mode: page.mode, teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
+  page.match = { mode: page.mode, latino: page.latino, teams: names.map((name, id) => ({ id, name, pos: 0 })), cur: 0, card: null };
   showScreen('board');
   // The new match's board, not the last one's tokens, under the Débuter card.
   renderMatch();
@@ -188,8 +216,11 @@ async function startMatch(names) {
 }
 
 function resumeMatch() {
-  const saved = loadMatch(page.cards, LAST);
+  const saved = loadMatch(fullDeck(), LAST);
   if (!saved) return renderDashboard();
+  // The match keeps the deck it started with.
+  page.latino = !!saved.latino;
+  buildDeck();
   window.MuchogamesTv?.play();
   window.MuchogamesMatch.resume(GAME_ID);
   page.match = saved;
@@ -601,6 +632,7 @@ function bindControls() {
     'ttcf-move-less': () => changeMove(-1),
     'ttcf-move-more': () => changeMove(1),
     'ttcf-move-confirm': () => endTurn(page.match?.card?.move ?? 0),
+    'ttcf-latino-chip': () => setLatino(!page.latino),
     'ttcf-restart-btn': () => startMatch(teamNames()),
     'ttcf-menu-button': () => showScreen('dashboard')
   };
@@ -608,13 +640,23 @@ function bindControls() {
 }
 
 // One deck per language, same card order in each (a save's card index works in all).
+async function fetchDeck(file) {
+  const res = await fetch(file);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  return (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
+}
+
 async function loadCards(lang) {
   try {
-    const res = await fetch(`/data/ttcf/ttcf_data_${lang}.json`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    const cards = (data.cards || []).filter((card) => typeof card?.theme === 'string' && Array.isArray(card.questions) && card.questions.length);
-    if (page.lang === lang) page.cards = cards;
+    const base = await fetchDeck(`/data/ttcf/ttcf_data_${lang}.json`);
+    // The extension is optional: without it the toggle stays hidden.
+    const extra = await fetchDeck(`/data/ttcf/ttcf_data_latino_${lang}.json`).catch(() => []);
+    if (page.lang === lang) {
+      page.base = base;
+      page.extra = extra;
+      buildDeck();
+    }
   } catch (error) {
     console.warn('[ttcf] cards not loaded', error);
   }

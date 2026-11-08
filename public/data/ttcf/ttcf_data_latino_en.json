@@ -1,0 +1,4924 @@
+{
+  "cards": [
+    {
+      "theme": "Scolaire",
+      "subject": "Simón Bolívar",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What nickname is Simón Bolívar known by?",
+          "a": "El Libertador (the Liberator)"
+        },
+        {
+          "level": 2,
+          "q": "In which city was Simón Bolívar born: Caracas, Bogotá or Lima?",
+          "a": "Caracas"
+        },
+        {
+          "level": 3,
+          "q": "Which South American country is named after him?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 4,
+          "q": "True or false? Venezuela's currency is called the bolívar.",
+          "a": "True"
+        },
+        {
+          "level": 5,
+          "q": "Which republic, created in 1819, united several present-day countries including Venezuela and Colombia?",
+          "a": "Gran Colombia"
+        },
+        {
+          "level": 6,
+          "q": "Which 1819 battle paved the way for Colombia's independence?",
+          "a": "The Battle of Boyacá"
+        },
+        {
+          "level": 7,
+          "q": "Which 1821 battle sealed Venezuela's independence?",
+          "a": "The Battle of Carabobo"
+        },
+        {
+          "level": 8,
+          "q": "In what year did Bolívar die: 1810, 1830 or 1850?",
+          "a": "In 1830"
+        },
+        {
+          "level": 9,
+          "q": "In which Colombian city did Bolívar die?",
+          "a": "Santa Marta"
+        },
+        {
+          "level": 10,
+          "q": "Which famous text did Bolívar write in exile in 1815?",
+          "a": "The Jamaica Letter"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Aztecs and the conquest of Mexico",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Spanish conquistador conquered the Aztec Empire?",
+          "a": "Hernán Cortés"
+        },
+        {
+          "level": 2,
+          "q": "What was the Aztec capital, on top of which Mexico City was built?",
+          "a": "Tenochtitlan"
+        },
+        {
+          "level": 3,
+          "q": "The Aztecs called themselves: the Mexica, the Olmecs or the Toltecs?",
+          "a": "The Mexica"
+        },
+        {
+          "level": 4,
+          "q": "Which Aztec emperor received Cortés in 1519?",
+          "a": "Moctezuma II"
+        },
+        {
+          "level": 5,
+          "q": "True or false? Tenochtitlan was built on an island in the middle of a lake.",
+          "a": "True (Lake Texcoco)"
+        },
+        {
+          "level": 6,
+          "q": "What language did the Aztecs speak?",
+          "a": "Nahuatl"
+        },
+        {
+          "level": 7,
+          "q": "In what year did Tenochtitlan fall: 1492, 1521 or 1588?",
+          "a": "In 1521"
+        },
+        {
+          "level": 8,
+          "q": "What was the name of Cortés's indigenous interpreter?",
+          "a": "La Malinche (Malintzin or Doña Marina)"
+        },
+        {
+          "level": 9,
+          "q": "What is the name given to the night in 1520 when the Spaniards had to flee Tenochtitlan?",
+          "a": "La Noche Triste (the Sad Night)"
+        },
+        {
+          "level": 10,
+          "q": "Which people, enemies of the Aztecs, allied with Cortés?",
+          "a": "The Tlaxcaltecs (of Tlaxcala)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Inca Empire",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Inca citadel perched in the Andes is one of the New Seven Wonders of the World?",
+          "a": "Machu Picchu"
+        },
+        {
+          "level": 2,
+          "q": "What was the capital of the Inca Empire?",
+          "a": "Cusco"
+        },
+        {
+          "level": 3,
+          "q": "In which present-day country is Machu Picchu?",
+          "a": "Peru"
+        },
+        {
+          "level": 4,
+          "q": "Which Spanish conquistador conquered the Inca Empire?",
+          "a": "Francisco Pizarro"
+        },
+        {
+          "level": 5,
+          "q": "True or false? The Incas used wheeled carts to carry their goods.",
+          "a": "False (they used llamas and porters)"
+        },
+        {
+          "level": 6,
+          "q": "What language did the Incas speak, still spoken today by millions of people?",
+          "a": "Quechua"
+        },
+        {
+          "level": 7,
+          "q": "Which Inca emperor was captured by Pizarro at Cajamarca in 1532?",
+          "a": "Atahualpa"
+        },
+        {
+          "level": 8,
+          "q": "What were the knotted cords used by the Incas for counting called?",
+          "a": "Quipus"
+        },
+        {
+          "level": 9,
+          "q": "What was the name of the sun god worshipped by the Incas?",
+          "a": "Inti"
+        },
+        {
+          "level": 10,
+          "q": "What did the Incas call their empire?",
+          "a": "Tawantinsuyu"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Maya civilization",
+      "questions": [
+        {
+          "level": 1,
+          "q": "On which Mexican peninsula is the Maya city of Chichén Itzá?",
+          "a": "The Yucatán"
+        },
+        {
+          "level": 2,
+          "q": "True or false? The Maya disappeared completely and have no descendants left.",
+          "a": "False (millions of Maya still live in Mexico, Guatemala...)"
+        },
+        {
+          "level": 3,
+          "q": "What base did the Maya count in: 10, 20 or 60?",
+          "a": "20 (vigesimal system)"
+        },
+        {
+          "level": 4,
+          "q": "Which mathematical concept did the Maya use that the Romans did not have?",
+          "a": "Zero"
+        },
+        {
+          "level": 5,
+          "q": "The Maya zero was represented by: a shell, a sun or a snake?",
+          "a": "A shell"
+        },
+        {
+          "level": 6,
+          "q": "Which sacred book of the K'iche' Maya tells the story of the creation of the world?",
+          "a": "The Popol Vuh"
+        },
+        {
+          "level": 7,
+          "q": "In which country is the great Maya city of Tikal?",
+          "a": "Guatemala"
+        },
+        {
+          "level": 8,
+          "q": "In which country is the Maya site of Copán?",
+          "a": "Honduras"
+        },
+        {
+          "level": 9,
+          "q": "Which Spanish friar had Maya codices burned at Maní in 1562?",
+          "a": "Diego de Landa"
+        },
+        {
+          "level": 10,
+          "q": "How many pre-Columbian Maya codices have survived to this day: 4, 40 or 400?",
+          "a": "4"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Mexican independence",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which priest launched the uprising for Mexican independence in 1810?",
+          "a": "Miguel Hidalgo"
+        },
+        {
+          "level": 2,
+          "q": "What is Hidalgo's call to insurrection known as?",
+          "a": "The Grito de Dolores (Cry of Dolores)"
+        },
+        {
+          "level": 3,
+          "q": "On what day does Mexico celebrate its independence: September 16, May 5 or November 20?",
+          "a": "September 16"
+        },
+        {
+          "level": 4,
+          "q": "True or false? Cinco de Mayo celebrates Mexico's independence.",
+          "a": "False (it celebrates the 1862 Battle of Puebla against France)"
+        },
+        {
+          "level": 5,
+          "q": "Which religious image did Hidalgo carry as a banner?",
+          "a": "The Virgin of Guadalupe"
+        },
+        {
+          "level": 6,
+          "q": "Which other insurgent priest led the movement after Hidalgo's death?",
+          "a": "José María Morelos"
+        },
+        {
+          "level": 7,
+          "q": "In what year was Mexico's independence achieved: 1810, 1821 or 1836?",
+          "a": "In 1821"
+        },
+        {
+          "level": 8,
+          "q": "Which heroine, nicknamed 'La Corregidora', warned the insurgents that their plot had been discovered?",
+          "a": "Josefa Ortiz de Domínguez"
+        },
+        {
+          "level": 9,
+          "q": "Which military officer, a former royalist, had himself proclaimed emperor of Mexico in 1822?",
+          "a": "Agustín de Iturbide"
+        },
+        {
+          "level": 10,
+          "q": "Which 1821 plan proposed the 'Three Guarantees'?",
+          "a": "The Plan of Iguala"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "José Martí and Cuban independence",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is the capital of Cuba?",
+          "a": "Havana"
+        },
+        {
+          "level": 2,
+          "q": "Which poet and national hero is nicknamed 'the Apostle' of Cuban independence?",
+          "a": "José Martí"
+        },
+        {
+          "level": 3,
+          "q": "Which famous song uses verses by Martí: Guantanamera, La Bamba or Bésame mucho?",
+          "a": "Guantanamera"
+        },
+        {
+          "level": 4,
+          "q": "Against which European country did Cuba fight for its independence?",
+          "a": "Spain"
+        },
+        {
+          "level": 5,
+          "q": "True or false? Cuba was one of the last Spanish colonies in the Americas to break free.",
+          "a": "True (along with Puerto Rico, in 1898)"
+        },
+        {
+          "level": 6,
+          "q": "Which 1898 war ended Spanish rule in Cuba?",
+          "a": "The Spanish-American War"
+        },
+        {
+          "level": 7,
+          "q": "In what year was José Martí killed in battle: 1868, 1895 or 1898?",
+          "a": "In 1895 (at Dos Ríos)"
+        },
+        {
+          "level": 8,
+          "q": "Which landowner launched the Ten Years' War in 1868 by freeing his slaves?",
+          "a": "Carlos Manuel de Céspedes"
+        },
+        {
+          "level": 9,
+          "q": "Which general of Cuban independence was nicknamed 'the Bronze Titan'?",
+          "a": "Antonio Maceo"
+        },
+        {
+          "level": 10,
+          "q": "Which newspaper did José Martí found in New York in 1892?",
+          "a": "Patria"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "San Martín and the independence of the Southern Cone",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Argentine general liberated Argentina, Chile and Peru?",
+          "a": "José de San Martín"
+        },
+        {
+          "level": 2,
+          "q": "Which mountain range did San Martín cross with his army in 1817?",
+          "a": "The Andes"
+        },
+        {
+          "level": 3,
+          "q": "On what day does Argentina celebrate its independence: July 9, May 25 or September 18?",
+          "a": "July 9 (1816)"
+        },
+        {
+          "level": 4,
+          "q": "Which Chilean hero, son of a viceroy of Irish origin, fought alongside San Martín?",
+          "a": "Bernardo O'Higgins"
+        },
+        {
+          "level": 5,
+          "q": "True or false? San Martín died in France.",
+          "a": "True (in Boulogne-sur-Mer, in 1850)"
+        },
+        {
+          "level": 6,
+          "q": "Which Argentine hero created his country's flag?",
+          "a": "Manuel Belgrano"
+        },
+        {
+          "level": 7,
+          "q": "In which Argentine city was independence declared in 1816?",
+          "a": "San Miguel de Tucumán"
+        },
+        {
+          "level": 8,
+          "q": "Which hero is considered the father of the Uruguayan nation?",
+          "a": "José Gervasio Artigas"
+        },
+        {
+          "level": 9,
+          "q": "In which city did San Martín and Bolívar meet in 1822?",
+          "a": "Guayaquil (Ecuador)"
+        },
+        {
+          "level": 10,
+          "q": "Which 1817 battle did San Martín win in Chile right after crossing the Andes?",
+          "a": "The Battle of Chacabuco"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Brazil, from colony to republic",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is the official language of Brazil?",
+          "a": "Portuguese"
+        },
+        {
+          "level": 2,
+          "q": "What is the capital of Brazil?",
+          "a": "Brasília"
+        },
+        {
+          "level": 3,
+          "q": "Which Portuguese navigator reached the coast of Brazil in 1500?",
+          "a": "Pedro Álvares Cabral"
+        },
+        {
+          "level": 4,
+          "q": "True or false? Rio de Janeiro used to be the capital of Brazil.",
+          "a": "True (until 1960)"
+        },
+        {
+          "level": 5,
+          "q": "Where does the name 'Brazil' come from: a tree, a river or a king?",
+          "a": "A tree (the brazilwood, pau-brasil)"
+        },
+        {
+          "level": 6,
+          "q": "Which prince proclaimed Brazil's independence in 1822?",
+          "a": "Dom Pedro I"
+        },
+        {
+          "level": 7,
+          "q": "Which 1494 treaty divided the New World between Spain and Portugal?",
+          "a": "The Treaty of Tordesillas"
+        },
+        {
+          "level": 8,
+          "q": "Which 1888 law abolished slavery in Brazil?",
+          "a": "The Lei Áurea (Golden Law)"
+        },
+        {
+          "level": 9,
+          "q": "In what year did Brazil become a republic: 1822, 1889 or 1930?",
+          "a": "In 1889"
+        },
+        {
+          "level": 10,
+          "q": "Which leader of the Palmares quilombo is a symbol of slave resistance in Brazil?",
+          "a": "Zumbi dos Palmares"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Central America",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which sea borders the east coast of Central America?",
+          "a": "The Caribbean Sea"
+        },
+        {
+          "level": 2,
+          "q": "What is the capital of Guatemala?",
+          "a": "Guatemala City"
+        },
+        {
+          "level": 3,
+          "q": "How many countries are there in mainland Central America: 5, 7 or 9?",
+          "a": "7"
+        },
+        {
+          "level": 4,
+          "q": "Which is the only Central American country with no Caribbean coastline?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 5,
+          "q": "True or false? Costa Rica abolished its army in the 20th century.",
+          "a": "True (in 1948)"
+        },
+        {
+          "level": 6,
+          "q": "What is the largest lake in Central America?",
+          "a": "Lake Nicaragua (Cocibolca)"
+        },
+        {
+          "level": 7,
+          "q": "On what day do most Central American countries celebrate their independence?",
+          "a": "September 15 (1821)"
+        },
+        {
+          "level": 8,
+          "q": "What was the state that united several countries of the region from 1823 to the late 1830s?",
+          "a": "The Federal Republic of Central America"
+        },
+        {
+          "level": 9,
+          "q": "Which Honduran general, president of that federation, is the hero of Central American union?",
+          "a": "Francisco Morazán"
+        },
+        {
+          "level": 10,
+          "q": "Which American adventurer proclaimed himself president of Nicaragua in 1856?",
+          "a": "William Walker"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Andes mountains",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Andean animal, a cousin of the camel, is raised for its wool and to carry loads?",
+          "a": "The llama (or the alpaca)"
+        },
+        {
+          "level": 2,
+          "q": "Which large scavenging bird is the symbol of the Andes?",
+          "a": "The condor"
+        },
+        {
+          "level": 3,
+          "q": "What is the highest peak in the Americas: Aconcagua, Chimborazo or Huascarán?",
+          "a": "Aconcagua (about 6,960 m)"
+        },
+        {
+          "level": 4,
+          "q": "In which country is Aconcagua?",
+          "a": "Argentina"
+        },
+        {
+          "level": 5,
+          "q": "True or false? The Andes are the longest continental mountain range in the world.",
+          "a": "True (about 7,000 km)"
+        },
+        {
+          "level": 6,
+          "q": "Which lake, shared by Peru and Bolivia, is the highest navigable lake in the world?",
+          "a": "Lake Titicaca"
+        },
+        {
+          "level": 7,
+          "q": "Which Ecuadorian volcano has the summit farthest from the center of the Earth?",
+          "a": "Chimborazo"
+        },
+        {
+          "level": 8,
+          "q": "Which city, seat of the Bolivian government, is the highest seat of government in the world?",
+          "a": "La Paz"
+        },
+        {
+          "level": 9,
+          "q": "How many countries do the Andes run through: 5, 7 or 9?",
+          "a": "7 (Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, Argentina)"
+        },
+        {
+          "level": 10,
+          "q": "What is the name of the high Andean plateau shared by Peru, Bolivia, Chile and Argentina?",
+          "a": "The Altiplano"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Amazon",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is the largest river in South America?",
+          "a": "The Amazon"
+        },
+        {
+          "level": 2,
+          "q": "Into which ocean does the Amazon flow?",
+          "a": "The Atlantic Ocean"
+        },
+        {
+          "level": 3,
+          "q": "Which country has the largest share of the Amazon rainforest?",
+          "a": "Brazil (about 60%)"
+        },
+        {
+          "level": 4,
+          "q": "Which sharp-toothed fish lives in the Amazon: the piranha, the hammerhead shark or the barracuda?",
+          "a": "The piranha"
+        },
+        {
+          "level": 5,
+          "q": "True or false? No bridge crosses the Amazon.",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "What is the heaviest snake in the Amazon?",
+          "a": "The (green) anaconda"
+        },
+        {
+          "level": 7,
+          "q": "Which large Brazilian city in the heart of the Amazon is famous for its opera house?",
+          "a": "Manaus (Teatro Amazonas)"
+        },
+        {
+          "level": 8,
+          "q": "Which black-water tributary meets the Amazon near Manaus without mixing right away?",
+          "a": "The Rio Negro"
+        },
+        {
+          "level": 9,
+          "q": "Which Spanish explorer was the first European to travel down the Amazon, in 1541-1542?",
+          "a": "Francisco de Orellana"
+        },
+        {
+          "level": 10,
+          "q": "Where does the name 'Amazon' come from?",
+          "a": "From the Amazons, warrior women of Greek mythology (Orellana claimed to have fought women warriors)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Panama Canal",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which two oceans does the Panama Canal connect?",
+          "a": "The Atlantic (Caribbean Sea) and the Pacific"
+        },
+        {
+          "level": 2,
+          "q": "What is the capital of Panama?",
+          "a": "Panama City"
+        },
+        {
+          "level": 3,
+          "q": "True or false? Panama used to be part of Colombia.",
+          "a": "True (until 1903)"
+        },
+        {
+          "level": 4,
+          "q": "In what year was the canal opened: 1869, 1914 or 1950?",
+          "a": "In 1914"
+        },
+        {
+          "level": 5,
+          "q": "Which country completed the canal and controlled it for most of the 20th century?",
+          "a": "The United States"
+        },
+        {
+          "level": 6,
+          "q": "Which Frenchman, already the builder of the Suez Canal, first tried to build it?",
+          "a": "Ferdinand de Lesseps"
+        },
+        {
+          "level": 7,
+          "q": "What system allows ships to overcome the canal's changes in elevation?",
+          "a": "Locks"
+        },
+        {
+          "level": 8,
+          "q": "Which Panamanian leader signed the 1977 canal treaties with Jimmy Carter?",
+          "a": "Omar Torrijos"
+        },
+        {
+          "level": 9,
+          "q": "In what year did Panama take full control of the canal: 1977, 1989 or 1999?",
+          "a": "In 1999 (December 31)"
+        },
+        {
+          "level": 10,
+          "q": "Which large artificial lake, created by damming the Chagres River, forms part of the canal?",
+          "a": "Gatún Lake"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Latin American capitals",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is the capital of Argentina?",
+          "a": "Buenos Aires"
+        },
+        {
+          "level": 2,
+          "q": "What is the capital of Peru?",
+          "a": "Lima"
+        },
+        {
+          "level": 3,
+          "q": "What is the capital of Colombia?",
+          "a": "Bogotá"
+        },
+        {
+          "level": 4,
+          "q": "What is the capital of Chile?",
+          "a": "Santiago"
+        },
+        {
+          "level": 5,
+          "q": "True or false? The capital of Ecuador is Guayaquil.",
+          "a": "False (it is Quito)"
+        },
+        {
+          "level": 6,
+          "q": "What is the capital of Uruguay?",
+          "a": "Montevideo"
+        },
+        {
+          "level": 7,
+          "q": "What is the capital of Paraguay?",
+          "a": "Asunción"
+        },
+        {
+          "level": 8,
+          "q": "What is the capital of Honduras?",
+          "a": "Tegucigalpa"
+        },
+        {
+          "level": 9,
+          "q": "Which city is the constitutional capital of Bolivia?",
+          "a": "Sucre"
+        },
+        {
+          "level": 10,
+          "q": "Which capital was founded twice, in 1536 and again in 1580?",
+          "a": "Buenos Aires"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Flags and national symbols",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Along with white, which color makes up the Argentine flag?",
+          "a": "Sky blue (celeste)"
+        },
+        {
+          "level": 2,
+          "q": "Which animal appears in the center of the Mexican flag?",
+          "a": "An eagle (devouring a snake on a cactus)"
+        },
+        {
+          "level": 3,
+          "q": "Which celestial body appears on the flags of Argentina and Uruguay?",
+          "a": "The sun (the Sun of May)"
+        },
+        {
+          "level": 4,
+          "q": "Which motto is written on the flag of Brazil?",
+          "a": "'Ordem e Progresso' (Order and Progress)"
+        },
+        {
+          "level": 5,
+          "q": "True or false? The flag of Cuba has a single star.",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "Which three colors do the flags of Colombia, Venezuela and Ecuador share?",
+          "a": "Yellow, blue and red"
+        },
+        {
+          "level": 7,
+          "q": "Which national bird of Guatemala also gave its name to the country's currency?",
+          "a": "The quetzal"
+        },
+        {
+          "level": 8,
+          "q": "How many stars are there on the flag of Honduras?",
+          "a": "5 (for the countries of the former Central American federation)"
+        },
+        {
+          "level": 9,
+          "q": "Which South American country has a flag whose two sides are different?",
+          "a": "Paraguay"
+        },
+        {
+          "level": 10,
+          "q": "How many stars are on the flag of Brazil: 9, 27 or 50?",
+          "a": "27 (one per state plus one for the Federal District)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The Spanish language",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which letter is specific to the Spanish alphabet: ñ, ç or ß?",
+          "a": "Ñ"
+        },
+        {
+          "level": 2,
+          "q": "Which marks does Spanish place at the start of questions and exclamations?",
+          "a": "Inverted marks ¿ and ¡"
+        },
+        {
+          "level": 3,
+          "q": "How many letters are in today's Spanish alphabet: 26, 27 or 29?",
+          "a": "27"
+        },
+        {
+          "level": 4,
+          "q": "Which country has the most native Spanish speakers?",
+          "a": "Mexico"
+        },
+        {
+          "level": 5,
+          "q": "True or false? In Spanish, esdrújula words (stressed on the third-to-last syllable) always carry a written accent.",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "Which institution, founded in 1713, sets the standards of the Spanish language?",
+          "a": "The Real Academia Española (RAE)"
+        },
+        {
+          "level": 7,
+          "q": "What is the use of 'vos' instead of 'tú', typical of Argentina and Uruguay, called?",
+          "a": "Voseo"
+        },
+        {
+          "level": 8,
+          "q": "Which Spanish word comes from Nahuatl: tomate, almohada or guitarra?",
+          "a": "Tomate (from tomatl)"
+        },
+        {
+          "level": 9,
+          "q": "In Spanish, what are words stressed on the second-to-last syllable called?",
+          "a": "Graves (or llanas)"
+        },
+        {
+          "level": 10,
+          "q": "Who published the first grammar of the Castilian language in 1492?",
+          "a": "Antonio de Nebrija"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Latin American Nobel Prize winners in literature",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Colombian writer wrote 'One Hundred Years of Solitude'?",
+          "a": "Gabriel García Márquez"
+        },
+        {
+          "level": 2,
+          "q": "Which Chilean poet became, in 1945, the first Latin American to win the Nobel Prize in Literature?",
+          "a": "Gabriela Mistral"
+        },
+        {
+          "level": 3,
+          "q": "Which Chilean poet wrote 'Twenty Love Poems and a Song of Despair'?",
+          "a": "Pablo Neruda"
+        },
+        {
+          "level": 4,
+          "q": "Which Peruvian writer won the Nobel Prize in Literature in 2010?",
+          "a": "Mario Vargas Llosa"
+        },
+        {
+          "level": 5,
+          "q": "True or false? Jorge Luis Borges won the Nobel Prize in Literature.",
+          "a": "False (he never won it)"
+        },
+        {
+          "level": 6,
+          "q": "Which Mexican poet won the Nobel Prize in Literature in 1990?",
+          "a": "Octavio Paz"
+        },
+        {
+          "level": 7,
+          "q": "Which Guatemalan writer, author of 'The President', won the Nobel in 1967?",
+          "a": "Miguel Ángel Asturias"
+        },
+        {
+          "level": 8,
+          "q": "In what year did García Márquez win the Nobel Prize: 1967, 1982 or 1999?",
+          "a": "In 1982"
+        },
+        {
+          "level": 9,
+          "q": "What is Pablo Neruda's real name?",
+          "a": "Ricardo Eliécer Neftalí Reyes Basoalto"
+        },
+        {
+          "level": 10,
+          "q": "What is Gabriela Mistral's real name?",
+          "a": "Lucila Godoy Alcayaga"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Latin American literature",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which little girl from an Argentine comic strip, created by Quino, hates soup?",
+          "a": "Mafalda"
+        },
+        {
+          "level": 2,
+          "q": "In which fictional village is 'One Hundred Years of Solitude' set?",
+          "a": "Macondo"
+        },
+        {
+          "level": 3,
+          "q": "Which literary movement blends the marvelous with everyday life: magical realism, romanticism or naturalism?",
+          "a": "Magical realism"
+        },
+        {
+          "level": 4,
+          "q": "Which Nicaraguan poet is considered the father of literary modernismo?",
+          "a": "Rubén Darío"
+        },
+        {
+          "level": 5,
+          "q": "True or false? 'Don Quixote' was written by a Latin American author.",
+          "a": "False (by the Spaniard Miguel de Cervantes)"
+        },
+        {
+          "level": 6,
+          "q": "Which Argentine writer wrote 'Hopscotch' (Rayuela)?",
+          "a": "Julio Cortázar"
+        },
+        {
+          "level": 7,
+          "q": "Which Mexican writer wrote 'Pedro Páramo'?",
+          "a": "Juan Rulfo"
+        },
+        {
+          "level": 8,
+          "q": "Which 17th-century Mexican nun and poet is nicknamed 'the Tenth Muse'?",
+          "a": "Sor Juana Inés de la Cruz"
+        },
+        {
+          "level": 9,
+          "q": "Which Argentine epic poem by José Hernández tells the life of a gaucho?",
+          "a": "Martín Fierro"
+        },
+        {
+          "level": 10,
+          "q": "Which Uruguayan writer wrote 'Open Veins of Latin America'?",
+          "a": "Eduardo Galeano"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "Latin American scientists",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which insect transmits dengue and yellow fever?",
+          "a": "The mosquito (Aedes aegypti)"
+        },
+        {
+          "level": 2,
+          "q": "Which naturalist developed his theory of evolution after visiting the Galápagos Islands (Ecuador)?",
+          "a": "Charles Darwin"
+        },
+        {
+          "level": 3,
+          "q": "True or false? Argentina has several Nobel Prize winners in science.",
+          "a": "True (Houssay, Leloir, Milstein)"
+        },
+        {
+          "level": 4,
+          "q": "Which Brazilian aviation pioneer flew the 14-bis in Paris in 1906?",
+          "a": "Alberto Santos-Dumont"
+        },
+        {
+          "level": 5,
+          "q": "Which everyday object is called 'birome' in Argentina, after its inventor László Bíró?",
+          "a": "The ballpoint pen"
+        },
+        {
+          "level": 6,
+          "q": "Which Cuban doctor discovered that mosquitoes transmit yellow fever?",
+          "a": "Carlos J. Finlay"
+        },
+        {
+          "level": 7,
+          "q": "Which Mexican chemist won the 1995 Nobel Prize in Chemistry for his work on the ozone layer?",
+          "a": "Mario Molina"
+        },
+        {
+          "level": 8,
+          "q": "Which Argentine physiologist became, in 1947, the first Latin American Nobel laureate in medicine?",
+          "a": "Bernardo Houssay"
+        },
+        {
+          "level": 9,
+          "q": "Which German naturalist explored South America around 1800 and gave his name to a Pacific ocean current?",
+          "a": "Alexander von Humboldt"
+        },
+        {
+          "level": 10,
+          "q": "Which Argentine scientist won the Nobel Prize in Chemistry in 1970?",
+          "a": "Luis Federico Leloir"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "School mathematics",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is 7 × 8?",
+          "a": "56"
+        },
+        {
+          "level": 2,
+          "q": "How many sides does a hexagon have?",
+          "a": "6"
+        },
+        {
+          "level": 3,
+          "q": "What is the approximate value of pi: 3.14, 2.71 or 1.61?",
+          "a": "3.14"
+        },
+        {
+          "level": 4,
+          "q": "How many degrees do the angles of a triangle add up to?",
+          "a": "180°"
+        },
+        {
+          "level": 5,
+          "q": "True or false? 1 is a prime number.",
+          "a": "False"
+        },
+        {
+          "level": 6,
+          "q": "Which theorem states that, in a right triangle, a² + b² = c²?",
+          "a": "The Pythagorean theorem"
+        },
+        {
+          "level": 7,
+          "q": "What is the square root of 144?",
+          "a": "12"
+        },
+        {
+          "level": 8,
+          "q": "What is 2 to the power of 10?",
+          "a": "1,024"
+        },
+        {
+          "level": 9,
+          "q": "How many diagonals does a hexagon have?",
+          "a": "9"
+        },
+        {
+          "level": 10,
+          "q": "How many zeros does 10! (10 factorial) end with?",
+          "a": "2 (10! = 3,628,800)"
+        }
+      ]
+    },
+    {
+      "theme": "Scolaire",
+      "subject": "The geography of South America",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is the largest country in South America?",
+          "a": "Brazil"
+        },
+        {
+          "level": 2,
+          "q": "Which South American country is shaped like a very long, narrow strip?",
+          "a": "Chile"
+        },
+        {
+          "level": 3,
+          "q": "Which desert in northern Chile is the driest non-polar desert in the world?",
+          "a": "The Atacama Desert"
+        },
+        {
+          "level": 4,
+          "q": "What is the highest waterfall in the world, located in Venezuela?",
+          "a": "Angel Falls (Kerepakupai Merú)"
+        },
+        {
+          "level": 5,
+          "q": "True or false? Bolivia and Paraguay are landlocked.",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "Which Chilean island in the Pacific is famous for its giant moai statues?",
+          "a": "Easter Island (Rapa Nui)"
+        },
+        {
+          "level": 7,
+          "q": "Which waterfalls are on the border between Argentina and Brazil?",
+          "a": "Iguazú Falls"
+        },
+        {
+          "level": 8,
+          "q": "Which estuary separates Argentina from Uruguay, between Buenos Aires and Montevideo?",
+          "a": "The Río de la Plata"
+        },
+        {
+          "level": 9,
+          "q": "Which strait separates mainland South America from Tierra del Fuego?",
+          "a": "The Strait of Magellan"
+        },
+        {
+          "level": 10,
+          "q": "Which river, the second longest in South America, flows through Brazil, Paraguay and Argentina?",
+          "a": "The Paraná"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know rum?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Rum is made from: sugar cane, potatoes or grapes?",
+          "a": "Sugar cane"
+        },
+        {
+          "level": 2,
+          "q": "A Cuba Libre is rum mixed with what?",
+          "a": "Cola (and lime)"
+        },
+        {
+          "level": 3,
+          "q": "Which rum brand, founded in Santiago de Cuba in 1862, has a bat as its logo?",
+          "a": "Bacardí"
+        },
+        {
+          "level": 4,
+          "q": "True or false? The Havana Club brand was born in Cuba.",
+          "a": "True"
+        },
+        {
+          "level": 5,
+          "q": "Brugal rum comes from which country?",
+          "a": "The Dominican Republic"
+        },
+        {
+          "level": 6,
+          "q": "Flor de Caña rum comes from which country: Nicaragua, Peru or Chile?",
+          "a": "Nicaragua"
+        },
+        {
+          "level": 7,
+          "q": "Zacapa rum comes from which Central American country?",
+          "a": "Guatemala"
+        },
+        {
+          "level": 8,
+          "q": "Diplomático rum comes from which country?",
+          "a": "Venezuela"
+        },
+        {
+          "level": 9,
+          "q": "From which by-product of sugar making are most rums distilled?",
+          "a": "Molasses"
+        },
+        {
+          "level": 10,
+          "q": "What is the name of the tiered-barrel ageing method, borrowed from sherry, used by many Latin rums?",
+          "a": "Solera"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know tequila and mezcal?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Tequila comes from which country?",
+          "a": "Mexico"
+        },
+        {
+          "level": 2,
+          "q": "Which cocktail combines tequila, triple sec, lime and a salted rim?",
+          "a": "The Margarita"
+        },
+        {
+          "level": 3,
+          "q": "Tequila is made from: agave, corn or cactus?",
+          "a": "Agave"
+        },
+        {
+          "level": 4,
+          "q": "The town of Tequila is in which Mexican state: Jalisco, Oaxaca or Sonora?",
+          "a": "Jalisco"
+        },
+        {
+          "level": 5,
+          "q": "True or false? Tequila must be made from blue agave.",
+          "a": "True (Agave tequilana Weber, blue variety)"
+        },
+        {
+          "level": 6,
+          "q": "Which Mexican state is the main producer of mezcal?",
+          "a": "Oaxaca"
+        },
+        {
+          "level": 7,
+          "q": "What is the heart of the agave, which is cooked to make tequila, called?",
+          "a": "The piña"
+        },
+        {
+          "level": 8,
+          "q": "Which tequila is aged at least one year in oak: blanco, reposado or añejo?",
+          "a": "Añejo"
+        },
+        {
+          "level": 9,
+          "q": "Which whitish Mexican drink, made from fermented agave sap, is far older than tequila?",
+          "a": "Pulque"
+        },
+        {
+          "level": 10,
+          "q": "In Mexico, what is the larva sometimes put in mezcal bottles called?",
+          "a": "The gusano (de maguey)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know pisco and cachaça?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "The caipirinha is a cocktail from which country?",
+          "a": "Brazil"
+        },
+        {
+          "level": 2,
+          "q": "Which spirit is used to make a caipirinha?",
+          "a": "Cachaça"
+        },
+        {
+          "level": 3,
+          "q": "Pisco is distilled from: grapes, sugar cane or potatoes?",
+          "a": "Grapes"
+        },
+        {
+          "level": 4,
+          "q": "Which two countries both claim pisco as their own?",
+          "a": "Peru and Chile"
+        },
+        {
+          "level": 5,
+          "q": "In a Pisco Sour, which ingredient creates the foam?",
+          "a": "Egg white"
+        },
+        {
+          "level": 6,
+          "q": "Cachaça is distilled from: molasses or fresh sugar cane juice?",
+          "a": "Fresh sugar cane juice"
+        },
+        {
+          "level": 7,
+          "q": "What is the name of the hugely popular Chilean mix of pisco and Coca-Cola?",
+          "a": "Piscola"
+        },
+        {
+          "level": 8,
+          "q": "'Fernet con coca' is the cult drink of which country?",
+          "a": "Argentina (especially Córdoba)"
+        },
+        {
+          "level": 9,
+          "q": "Anise-flavoured aguardiente (like Antioqueño) is the emblematic spirit of which country?",
+          "a": "Colombia"
+        },
+        {
+          "level": 10,
+          "q": "The port of Pisco, which gave the spirit its name, is in which region of Peru?",
+          "a": "Ica"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin American wines?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Malbec is the emblematic grape of which country?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "What is Argentina's great wine province: Mendoza, Salta or Patagonia?",
+          "a": "Mendoza"
+        },
+        {
+          "level": 3,
+          "q": "Carménère is the emblematic grape of which country?",
+          "a": "Chile"
+        },
+        {
+          "level": 4,
+          "q": "The Maipo Valley, famous for its wines, is near which city: Santiago, Valparaíso or Concepción?",
+          "a": "Santiago"
+        },
+        {
+          "level": 5,
+          "q": "Tannat is the emblematic grape of which country?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 6,
+          "q": "True or false? In Chile, Carménère was long mistaken for Merlot.",
+          "a": "True (identified in 1994)"
+        },
+        {
+          "level": 7,
+          "q": "Which aromatic white grape is Argentina's emblem, notably in Cafayate?",
+          "a": "Torrontés"
+        },
+        {
+          "level": 8,
+          "q": "Malbec originally comes from which French region?",
+          "a": "Cahors (South-West France)"
+        },
+        {
+          "level": 9,
+          "q": "True or false? Chile's vineyards were spared by phylloxera.",
+          "a": "True"
+        },
+        {
+          "level": 10,
+          "q": "Which wine region of Rio Grande do Sul is Brazil's most renowned, notably for sparkling wines?",
+          "a": "Serra Gaúcha (Vale dos Vinhedos)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know coffee?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country is the world's largest coffee producer?",
+          "a": "Brazil"
+        },
+        {
+          "level": 2,
+          "q": "What is the name of the moustached coffee grower who symbolises Colombian coffee?",
+          "a": "Juan Valdez"
+        },
+        {
+          "level": 3,
+          "q": "Which coffee species is the most widely grown: Arabica, Robusta or Liberica?",
+          "a": "Arabica"
+        },
+        {
+          "level": 4,
+          "q": "What is the red fruit of the coffee plant called?",
+          "a": "The (coffee) cherry"
+        },
+        {
+          "level": 5,
+          "q": "True or false? The coffee plant is native to Latin America.",
+          "a": "False (it comes from Ethiopia)"
+        },
+        {
+          "level": 6,
+          "q": "What is the name of Juan Valdez's mule?",
+          "a": "Conchita"
+        },
+        {
+          "level": 7,
+          "q": "What is the Colombian coffee region listed as a UNESCO World Heritage site in 2011 called?",
+          "a": "The Eje Cafetero (Coffee Cultural Landscape)"
+        },
+        {
+          "level": 8,
+          "q": "The Antigua region, renowned for its coffee, is in which country?",
+          "a": "Guatemala"
+        },
+        {
+          "level": 9,
+          "q": "Which coffee variety, Panama's star, breaks price records at auctions?",
+          "a": "Geisha (Gesha)"
+        },
+        {
+          "level": 10,
+          "q": "Which Brazilian state is the country's largest coffee producer?",
+          "a": "Minas Gerais"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know cacao and chocolate?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Chocolate is made from the beans of which plant?",
+          "a": "The cacao tree"
+        },
+        {
+          "level": 2,
+          "q": "Cacao grows: on a tree, on a bush or underground?",
+          "a": "On a tree"
+        },
+        {
+          "level": 3,
+          "q": "True or false? The Aztecs used cacao beans as currency.",
+          "a": "True"
+        },
+        {
+          "level": 4,
+          "q": "Which Mexican sauce combines chillies and chocolate, notably in Puebla?",
+          "a": "Mole (poblano)"
+        },
+        {
+          "level": 5,
+          "q": "What is the fruit of the cacao tree, which holds the beans, called?",
+          "a": "The pod"
+        },
+        {
+          "level": 6,
+          "q": "According to Spanish chroniclers, which Aztec emperor drank chocolate in large quantities?",
+          "a": "Moctezuma"
+        },
+        {
+          "level": 7,
+          "q": "The cacao tree's scientific name, Theobroma, means: food of the gods, black gold or sacred tree?",
+          "a": "Food of the gods"
+        },
+        {
+          "level": 8,
+          "q": "What is the fine, aromatic cacao variety emblematic of Ecuador called?",
+          "a": "Nacional (Arriba) cacao"
+        },
+        {
+          "level": 9,
+          "q": "The three main cacao families are Criollo, Forastero and...?",
+          "a": "Trinitario"
+        },
+        {
+          "level": 10,
+          "q": "Chuao, a coastal village famous for its exceptional cacao, is in which country?",
+          "a": "Venezuela"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know cigars?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country is the most famous for its cigars, the Habanos?",
+          "a": "Cuba"
+        },
+        {
+          "level": 2,
+          "q": "Cigars are made with the leaves of which plant?",
+          "a": "Tobacco"
+        },
+        {
+          "level": 3,
+          "q": "Which Cuban leader, in power from 1959, was famous for his cigars before quitting smoking in the 1980s?",
+          "a": "Fidel Castro"
+        },
+        {
+          "level": 4,
+          "q": "True or false? The Dominican Republic is a major cigar producer.",
+          "a": "True (the world's top exporter of premium cigars)"
+        },
+        {
+          "level": 5,
+          "q": "In which Cuban province is Vuelta Abajo, land of the finest tobacco?",
+          "a": "Pinar del Río"
+        },
+        {
+          "level": 6,
+          "q": "The Cohiba brand was originally created for whose personal use?",
+          "a": "Fidel Castro"
+        },
+        {
+          "level": 7,
+          "q": "In Cuba, what is the craftsman who hand-rolls cigars called?",
+          "a": "The torcedor"
+        },
+        {
+          "level": 8,
+          "q": "What is the person who reads aloud to the rollers in cigar factories called?",
+          "a": "The lector (reader)"
+        },
+        {
+          "level": 9,
+          "q": "Which US president reportedly had over 1,000 Cuban cigars delivered just before signing the embargo?",
+          "a": "John F. Kennedy"
+        },
+        {
+          "level": 10,
+          "q": "Which Habanos brand takes its name from a novel by Alexandre Dumas?",
+          "a": "Montecristo"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin American revolutions and dictatorships?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which leader of the Cuban Revolution took power in 1959?",
+          "a": "Fidel Castro"
+        },
+        {
+          "level": 2,
+          "q": "Che Guevara was born in which country: Argentina, Cuba or Bolivia?",
+          "a": "Argentina"
+        },
+        {
+          "level": 3,
+          "q": "Which general ruled Chile from 1973 to 1990?",
+          "a": "Augusto Pinochet"
+        },
+        {
+          "level": 4,
+          "q": "Which Chilean president was overthrown on 11 September 1973?",
+          "a": "Salvador Allende"
+        },
+        {
+          "level": 5,
+          "q": "Which Dominican dictator was assassinated in 1961?",
+          "a": "Rafael Leónidas Trujillo"
+        },
+        {
+          "level": 6,
+          "q": "In which country was Che Guevara executed in 1967?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 7,
+          "q": "What are the mothers of the disappeared who have marched in Buenos Aires since 1977 called?",
+          "a": "The Mothers of the Plaza de Mayo"
+        },
+        {
+          "level": 8,
+          "q": "Which revolutionary movement, named after a 1930s guerrilla leader, took power in Nicaragua in 1979?",
+          "a": "The Sandinistas (FSLN, after Augusto César Sandino)"
+        },
+        {
+          "level": 9,
+          "q": "What was the name of the coordinated repression campaign between South American dictatorships in the 1970s?",
+          "a": "Operation Condor"
+        },
+        {
+          "level": 10,
+          "q": "Which dictator ruled Paraguay from 1954 to 1989?",
+          "a": "Alfredo Stroessner"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin American literature?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Who wrote 'One Hundred Years of Solitude'?",
+          "a": "Gabriel García Márquez"
+        },
+        {
+          "level": 2,
+          "q": "Which country was Gabriel García Márquez from?",
+          "a": "Colombia"
+        },
+        {
+          "level": 3,
+          "q": "What is the fictional village in 'One Hundred Years of Solitude' called?",
+          "a": "Macondo"
+        },
+        {
+          "level": 4,
+          "q": "Which Chilean poet, 1971 Nobel laureate, wrote 'Twenty Love Poems and a Song of Despair'?",
+          "a": "Pablo Neruda"
+        },
+        {
+          "level": 5,
+          "q": "Which Argentine writer wrote 'Ficciones' and 'The Aleph'?",
+          "a": "Jorge Luis Borges"
+        },
+        {
+          "level": 6,
+          "q": "Which Peruvian writer won the Nobel Prize in Literature in 2010?",
+          "a": "Mario Vargas Llosa"
+        },
+        {
+          "level": 7,
+          "q": "Which Argentine writer wrote 'Hopscotch' (Rayuela)?",
+          "a": "Julio Cortázar"
+        },
+        {
+          "level": 8,
+          "q": "Which Mexican writer wrote 'Pedro Páramo'?",
+          "a": "Juan Rulfo"
+        },
+        {
+          "level": 9,
+          "q": "Which Chilean poet became, in 1945, Latin America's first Nobel laureate in literature?",
+          "a": "Gabriela Mistral"
+        },
+        {
+          "level": 10,
+          "q": "Which Mexican writer, 1990 Nobel laureate, wrote the essay 'The Labyrinth of Solitude'?",
+          "a": "Octavio Paz"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin American painters?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Mexican painter is famous for her self-portraits and her unibrow?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 2,
+          "q": "Which Mexican muralist was Frida Kahlo's husband?",
+          "a": "Diego Rivera"
+        },
+        {
+          "level": 3,
+          "q": "Which Colombian artist is famous for his very rounded figures?",
+          "a": "Fernando Botero"
+        },
+        {
+          "level": 4,
+          "q": "What is Frida Kahlo's house in Coyoacán nicknamed?",
+          "a": "The Blue House (Casa Azul)"
+        },
+        {
+          "level": 5,
+          "q": "The three greats of Mexican muralism are Rivera, Orozco and...?",
+          "a": "David Alfaro Siqueiros"
+        },
+        {
+          "level": 6,
+          "q": "True or false? Frida Kahlo was seriously injured in a bus accident in her youth.",
+          "a": "True (in 1925)"
+        },
+        {
+          "level": 7,
+          "q": "In which city was Fernando Botero born?",
+          "a": "Medellín"
+        },
+        {
+          "level": 8,
+          "q": "Diego Rivera's mural at Rockefeller Center was destroyed because it depicted which figure?",
+          "a": "Lenin"
+        },
+        {
+          "level": 9,
+          "q": "Which Cuban painter created the painting 'The Jungle' (1943)?",
+          "a": "Wifredo Lam"
+        },
+        {
+          "level": 10,
+          "q": "Which Uruguayan artist drew 'América invertida', the upside-down map of South America?",
+          "a": "Joaquín Torres García"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin American art-house cinema?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Mexican director made 'Roma' (2018)?",
+          "a": "Alfonso Cuarón"
+        },
+        {
+          "level": 2,
+          "q": "Which Mexican director made 'Pan's Labyrinth'?",
+          "a": "Guillermo del Toro"
+        },
+        {
+          "level": 3,
+          "q": "Who directed 'Amores perros' (2000)?",
+          "a": "Alejandro González Iñárritu"
+        },
+        {
+          "level": 4,
+          "q": "In which city is the Brazilian film 'City of God' (2002) set?",
+          "a": "Rio de Janeiro"
+        },
+        {
+          "level": 5,
+          "q": "Which Mexican actor plays the young Che Guevara in 'The Motorcycle Diaries' (2004)?",
+          "a": "Gael García Bernal"
+        },
+        {
+          "level": 6,
+          "q": "Which Argentine film won the Oscar for Best Foreign Language Film in 2010?",
+          "a": "The Secret in Their Eyes (El secreto de sus ojos)"
+        },
+        {
+          "level": 7,
+          "q": "In which country did Spanish filmmaker Luis Buñuel shoot 'Los olvidados' (1950)?",
+          "a": "Mexico"
+        },
+        {
+          "level": 8,
+          "q": "Which Argentine film was the first Latin American film to win the Best Foreign Language Film Oscar, in 1986?",
+          "a": "The Official Story (La historia oficial)"
+        },
+        {
+          "level": 9,
+          "q": "Which Brazilian director made 'Central Station' (Central do Brasil, 1998)?",
+          "a": "Walter Salles"
+        },
+        {
+          "level": 10,
+          "q": "Which Cuban filmmaker directed 'Strawberry and Chocolate' (1993)?",
+          "a": "Tomás Gutiérrez Alea (with Juan Carlos Tabío)"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin American cuisine?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Ceviche, raw fish marinated in lime, is the emblematic dish of which country?",
+          "a": "Peru"
+        },
+        {
+          "level": 2,
+          "q": "What is the main ingredient of guacamole?",
+          "a": "Avocado"
+        },
+        {
+          "level": 3,
+          "q": "Feijoada is the national dish of which country?",
+          "a": "Brazil"
+        },
+        {
+          "level": 4,
+          "q": "Arepas are typical of Venezuela and which other country?",
+          "a": "Colombia"
+        },
+        {
+          "level": 5,
+          "q": "Pupusas are the national dish of which country?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 6,
+          "q": "Gallo pinto (rice and beans) is typical of Costa Rica and which neighbouring country?",
+          "a": "Nicaragua"
+        },
+        {
+          "level": 7,
+          "q": "What is the ceviche marinade juice, said to be invigorating, called?",
+          "a": "Leche de tigre"
+        },
+        {
+          "level": 8,
+          "q": "Which Cuban shredded beef dish has a name meaning 'old clothes'?",
+          "a": "Ropa vieja"
+        },
+        {
+          "level": 9,
+          "q": "Chiles en nogada, in the colours of the Mexican flag, come from which city?",
+          "a": "Puebla"
+        },
+        {
+          "level": 10,
+          "q": "Which chicken soup with yam and coriander is Panama's national dish?",
+          "a": "Sancocho"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know the human body?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "How many lungs does a human have?",
+          "a": "Two"
+        },
+        {
+          "level": 2,
+          "q": "What is the largest organ of the human body?",
+          "a": "The skin"
+        },
+        {
+          "level": 3,
+          "q": "What is the longest bone in the body: femur, humerus or tibia?",
+          "a": "The femur"
+        },
+        {
+          "level": 4,
+          "q": "How many chambers does the human heart have?",
+          "a": "Four (2 atria, 2 ventricles)"
+        },
+        {
+          "level": 5,
+          "q": "How many bones are in an adult skeleton: 106, 206 or 306?",
+          "a": "206"
+        },
+        {
+          "level": 6,
+          "q": "Which organ produces insulin?",
+          "a": "The pancreas"
+        },
+        {
+          "level": 7,
+          "q": "True or false? The liver can regenerate itself.",
+          "a": "True"
+        },
+        {
+          "level": 8,
+          "q": "What is the smallest bone in the human body?",
+          "a": "The stapes (in the ear)"
+        },
+        {
+          "level": 9,
+          "q": "How many pairs of chromosomes does a human cell have?",
+          "a": "23"
+        },
+        {
+          "level": 10,
+          "q": "What is the average lifespan of a red blood cell: 12 days, 120 days or 12 months?",
+          "a": "About 120 days"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know 20th-century Latin American history?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which interoceanic canal opened in 1914?",
+          "a": "The Panama Canal"
+        },
+        {
+          "level": 2,
+          "q": "Which city has been Brazil's capital since 1960?",
+          "a": "Brasília"
+        },
+        {
+          "level": 3,
+          "q": "By what nickname is Eva Perón known?",
+          "a": "Evita"
+        },
+        {
+          "level": 4,
+          "q": "In which year did the Cuban Missile Crisis take place: 1956, 1962 or 1968?",
+          "a": "1962"
+        },
+        {
+          "level": 5,
+          "q": "In 1982, Argentina fought which country in the Falklands War?",
+          "a": "The United Kingdom"
+        },
+        {
+          "level": 6,
+          "q": "What was the failed 1961 invasion of Cuba by US-backed exiles called?",
+          "a": "The Bay of Pigs invasion"
+        },
+        {
+          "level": 7,
+          "q": "In which year did the United States hand the Panama Canal over to Panama?",
+          "a": "1999"
+        },
+        {
+          "level": 8,
+          "q": "Which Mexican president nationalised oil in 1938?",
+          "a": "Lázaro Cárdenas"
+        },
+        {
+          "level": 9,
+          "q": "Which Guatemalan president was overthrown in 1954 by a CIA-backed coup?",
+          "a": "Jacobo Árbenz"
+        },
+        {
+          "level": 10,
+          "q": "In which year did Costa Rica abolish its army?",
+          "a": "1948"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know the Latin American economy?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is Mexico's currency?",
+          "a": "The peso"
+        },
+        {
+          "level": 2,
+          "q": "What is Brazil's currency?",
+          "a": "The real"
+        },
+        {
+          "level": 3,
+          "q": "Which currency has Ecuador officially used since 2000?",
+          "a": "The US dollar"
+        },
+        {
+          "level": 4,
+          "q": "Chile is the world's largest producer of which metal: copper, gold or iron?",
+          "a": "Copper"
+        },
+        {
+          "level": 5,
+          "q": "Which resource does Venezuela's economy mainly depend on?",
+          "a": "Oil"
+        },
+        {
+          "level": 6,
+          "q": "What is Peru's currency?",
+          "a": "The sol"
+        },
+        {
+          "level": 7,
+          "q": "Bolivia's Salar de Uyuni is coveted for which metal used in batteries?",
+          "a": "Lithium"
+        },
+        {
+          "level": 8,
+          "q": "Which country was the first in the world to adopt bitcoin as legal tender, in 2021?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 9,
+          "q": "Which currency circulated in Argentina between 1985 and 1991, before the peso returned?",
+          "a": "The austral"
+        },
+        {
+          "level": 10,
+          "q": "What is Panama's official currency, pegged at par with the US dollar?",
+          "a": "The balboa"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know drug trafficking history?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Colombian drug lord was shot dead in Medellín in 1993?",
+          "a": "Pablo Escobar"
+        },
+        {
+          "level": 2,
+          "q": "Which Netflix series tells the hunt for Pablo Escobar?",
+          "a": "Narcos"
+        },
+        {
+          "level": 3,
+          "q": "Pablo Escobar's cartel was named after which city?",
+          "a": "Medellín"
+        },
+        {
+          "level": 4,
+          "q": "What is the real name of the Mexican drug lord nicknamed 'El Chapo'?",
+          "a": "Joaquín Guzmán"
+        },
+        {
+          "level": 5,
+          "q": "Which animals from Pablo Escobar's former zoo now proliferate in Colombia?",
+          "a": "Hippos"
+        },
+        {
+          "level": 6,
+          "q": "El Chapo led which cartel?",
+          "a": "The Sinaloa Cartel"
+        },
+        {
+          "level": 7,
+          "q": "How did El Chapo escape from the Altiplano prison in 2015?",
+          "a": "Through a tunnel"
+        },
+        {
+          "level": 8,
+          "q": "Which Panamanian leader was captured by the United States in 1990 and convicted of drug trafficking?",
+          "a": "Manuel Noriega"
+        },
+        {
+          "level": 9,
+          "q": "Which Colombian cartel was the great rival of the Medellín cartel?",
+          "a": "The Cali Cartel"
+        },
+        {
+          "level": 10,
+          "q": "What was the luxury prison Pablo Escobar had built for himself called?",
+          "a": "La Catedral"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know pre-Columbian civilizations?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which people built Machu Picchu: the Incas, the Aztecs or the Mayas?",
+          "a": "The Incas"
+        },
+        {
+          "level": 2,
+          "q": "What was the capital of the Inca Empire?",
+          "a": "Cusco"
+        },
+        {
+          "level": 3,
+          "q": "Which Spanish conquistador conquered the Aztec Empire?",
+          "a": "Hernán Cortés"
+        },
+        {
+          "level": 4,
+          "q": "What was the Aztec capital, built on a lake where Mexico City now stands, called?",
+          "a": "Tenochtitlan"
+        },
+        {
+          "level": 5,
+          "q": "Which Spanish conquistador conquered the Inca Empire?",
+          "a": "Francisco Pizarro"
+        },
+        {
+          "level": 6,
+          "q": "Which Mesoamerican god is called the 'feathered serpent'?",
+          "a": "Quetzalcoatl"
+        },
+        {
+          "level": 7,
+          "q": "Which Mayan city in the Yucatán is home to the El Castillo pyramid (Temple of Kukulcán)?",
+          "a": "Chichén Itzá"
+        },
+        {
+          "level": 8,
+          "q": "Which Inca emperor was executed by Pizarro in 1533?",
+          "a": "Atahualpa"
+        },
+        {
+          "level": 9,
+          "q": "What was the name of Hernán Cortés's indigenous interpreter and companion?",
+          "a": "La Malinche (Malintzin)"
+        },
+        {
+          "level": 10,
+          "q": "What is the knotted-cord system used by the Incas for counting and record-keeping called?",
+          "a": "The quipu"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin music and dances?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "The tango was born in: Argentina, Mexico or Cuba?",
+          "a": "Argentina (Río de la Plata)"
+        },
+        {
+          "level": 2,
+          "q": "Samba is the soul of which Brazilian city's carnival?",
+          "a": "Rio de Janeiro"
+        },
+        {
+          "level": 3,
+          "q": "The Buena Vista Social Club brought renewed fame to musicians from which country?",
+          "a": "Cuba"
+        },
+        {
+          "level": 4,
+          "q": "Which Puerto Rican singer had a worldwide hit with 'Gasolina' in 2004?",
+          "a": "Daddy Yankee"
+        },
+        {
+          "level": 5,
+          "q": "Bachata originates from which country?",
+          "a": "The Dominican Republic"
+        },
+        {
+          "level": 6,
+          "q": "Cumbia was born in which country?",
+          "a": "Colombia"
+        },
+        {
+          "level": 7,
+          "q": "Which bellows instrument is emblematic of the tango orchestra?",
+          "a": "The bandoneon"
+        },
+        {
+          "level": 8,
+          "q": "Which Argentine 'nuevo tango' composer wrote 'Libertango'?",
+          "a": "Astor Piazzolla"
+        },
+        {
+          "level": 9,
+          "q": "Which legendary tango singer died in a plane crash in Medellín in 1935?",
+          "a": "Carlos Gardel"
+        },
+        {
+          "level": 10,
+          "q": "The hit 'Lambada' by Kaoma (1989) copies a song by which Bolivian group?",
+          "a": "Los Kjarkas ('Llorando se fue')"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know the Day of the Dead and macabre legends?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "The Day of the Dead (Día de Muertos) is a major celebration in which country?",
+          "a": "Mexico"
+        },
+        {
+          "level": 2,
+          "q": "On which dates is Día de Muertos celebrated?",
+          "a": "November 1 and 2"
+        },
+        {
+          "level": 3,
+          "q": "What is the elegant skeleton lady, icon of Día de Muertos, called?",
+          "a": "La Catrina"
+        },
+        {
+          "level": 4,
+          "q": "Which sweet bread is made especially for the Day of the Dead?",
+          "a": "Pan de muerto"
+        },
+        {
+          "level": 5,
+          "q": "Which ghostly woman weeps for her drowned children in Latin American legend?",
+          "a": "La Llorona"
+        },
+        {
+          "level": 6,
+          "q": "What is the altar set up to welcome the dead during Día de Muertos called?",
+          "a": "The ofrenda"
+        },
+        {
+          "level": 7,
+          "q": "Which orange flower decorates the altars and guides the souls of the dead?",
+          "a": "Cempasúchil (Mexican marigold)"
+        },
+        {
+          "level": 8,
+          "q": "Which skeletal figure is venerated as a folk saint in Mexico, without being recognised by the Church?",
+          "a": "La Santa Muerte"
+        },
+        {
+          "level": 9,
+          "q": "Which Mexican engraver created the original image of La Catrina?",
+          "a": "José Guadalupe Posada"
+        },
+        {
+          "level": 10,
+          "q": "In which country are giant kites (barriletes) flown in cemeteries on November 1?",
+          "a": "Guatemala"
+        }
+      ]
+    },
+    {
+      "theme": "Mature",
+      "subject": "Do you think you know Latin cocktails?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "The mojito originates from which country?",
+          "a": "Cuba"
+        },
+        {
+          "level": 2,
+          "q": "Which fresh herb goes into a mojito?",
+          "a": "Mint (hierbabuena)"
+        },
+        {
+          "level": 3,
+          "q": "The piña colada is the national drink of which island?",
+          "a": "Puerto Rico"
+        },
+        {
+          "level": 4,
+          "q": "A piña colada mixes rum, pineapple juice and...?",
+          "a": "Cream of coconut"
+        },
+        {
+          "level": 5,
+          "q": "The michelada, beer with lime, salt and sauces, comes from which country?",
+          "a": "Mexico"
+        },
+        {
+          "level": 6,
+          "q": "Which Mexican cocktail combines tequila and grapefruit soda?",
+          "a": "The Paloma"
+        },
+        {
+          "level": 7,
+          "q": "Which Peruvian cocktail mixes pisco, ginger ale and lime?",
+          "a": "The chilcano"
+        },
+        {
+          "level": 8,
+          "q": "The 'terremoto', pipeño wine with pineapple ice cream, is a drink from which country?",
+          "a": "Chile"
+        },
+        {
+          "level": 9,
+          "q": "Which Havana bar calls itself 'the cradle of the daiquiri' and was frequented by Hemingway?",
+          "a": "El Floridita"
+        },
+        {
+          "level": 10,
+          "q": "Which Venezuelan Christmas drink, a kind of rum eggnog, has 'cream' in its name?",
+          "a": "Ponche crema"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Diego Maradona?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country did Maradona play for?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "What was his 1986 handball goal against England nicknamed?",
+          "a": "The 'Hand of God'"
+        },
+        {
+          "level": 3,
+          "q": "What shirt number did Maradona wear for his national team?",
+          "a": "Number 10"
+        },
+        {
+          "level": 4,
+          "q": "In which year did Maradona's Argentina win the World Cup: 1978, 1986 or 1990?",
+          "a": "1986"
+        },
+        {
+          "level": 5,
+          "q": "With which Italian club did Maradona win two Serie A titles?",
+          "a": "Napoli"
+        },
+        {
+          "level": 6,
+          "q": "True or false: Maradona played for FC Barcelona.",
+          "a": "True (1982-1984)"
+        },
+        {
+          "level": 7,
+          "q": "Against which team did he score the 'Goal of the Century' in 1986?",
+          "a": "England"
+        },
+        {
+          "level": 8,
+          "q": "Which team did Argentina beat in the 1986 World Cup final?",
+          "a": "West Germany (3-2)"
+        },
+        {
+          "level": 9,
+          "q": "At which Argentine club did Maradona make his professional debut: Boca Juniors, River Plate or Argentinos Juniors?",
+          "a": "Argentinos Juniors"
+        },
+        {
+          "level": 10,
+          "q": "In which Mexican stadium did Maradona score the 'Hand of God' goal?",
+          "a": "Estadio Azteca (Mexico City)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Pelé?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country did Pelé play for?",
+          "a": "Brazil"
+        },
+        {
+          "level": 2,
+          "q": "How many World Cups did Pelé win: 1, 2 or 3?",
+          "a": "3 (1958, 1962, 1970)"
+        },
+        {
+          "level": 3,
+          "q": "Which shirt number did Pelé make legendary?",
+          "a": "Number 10"
+        },
+        {
+          "level": 4,
+          "q": "Which Brazilian club did Pelé play for during most of his career?",
+          "a": "Santos"
+        },
+        {
+          "level": 5,
+          "q": "True or false: Pelé ended his career in the United States.",
+          "a": "True (New York Cosmos)"
+        },
+        {
+          "level": 6,
+          "q": "In which year did Pelé win his first World Cup?",
+          "a": "1958 (in Sweden)"
+        },
+        {
+          "level": 7,
+          "q": "What is Pelé's real first name: Edson, Ronaldo or Joaquim?",
+          "a": "Edson (Edson Arantes do Nascimento)"
+        },
+        {
+          "level": 8,
+          "q": "How old was Pelé when he won his first World Cup?",
+          "a": "17"
+        },
+        {
+          "level": 9,
+          "q": "In which year did Pelé die?",
+          "a": "2022"
+        },
+        {
+          "level": 10,
+          "q": "Which team did Brazil beat 4-1 in the 1970 World Cup final?",
+          "a": "Italy"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Lionel Messi?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country is Lionel Messi from?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "Which Spanish club did Messi play for during most of his career?",
+          "a": "FC Barcelona"
+        },
+        {
+          "level": 3,
+          "q": "In which year did Messi win the World Cup?",
+          "a": "2022 (in Qatar)"
+        },
+        {
+          "level": 4,
+          "q": "Against which country did Argentina win the 2022 World Cup final?",
+          "a": "France (on penalties)"
+        },
+        {
+          "level": 5,
+          "q": "Which French club did Messi join in 2021?",
+          "a": "Paris Saint-Germain (PSG)"
+        },
+        {
+          "level": 6,
+          "q": "In which Argentine city was Messi born: Rosario, Córdoba or Buenos Aires?",
+          "a": "Rosario"
+        },
+        {
+          "level": 7,
+          "q": "Which American club did Messi join in 2023?",
+          "a": "Inter Miami"
+        },
+        {
+          "level": 8,
+          "q": "True or false: Messi's Argentina won the 2021 Copa América at the Maracanã, against Brazil.",
+          "a": "True (1-0)"
+        },
+        {
+          "level": 9,
+          "q": "Which Rosario club did Messi play for as a child: Newell's Old Boys or Rosario Central?",
+          "a": "Newell's Old Boys"
+        },
+        {
+          "level": 10,
+          "q": "In which year did Messi win his first Ballon d'Or: 2007, 2009 or 2011?",
+          "a": "2009"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know the Copa América?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which sport is played at the Copa América?",
+          "a": "Football (soccer)"
+        },
+        {
+          "level": 2,
+          "q": "Which country won the 2024 Copa América?",
+          "a": "Argentina"
+        },
+        {
+          "level": 3,
+          "q": "In which country was the 2024 Copa América played?",
+          "a": "The United States"
+        },
+        {
+          "level": 4,
+          "q": "Which country has won the most Copa América titles: Argentina, Brazil or Uruguay?",
+          "a": "Argentina (16 titles)"
+        },
+        {
+          "level": 5,
+          "q": "Which country won the 2019 Copa América on home soil?",
+          "a": "Brazil"
+        },
+        {
+          "level": 6,
+          "q": "Which country won the Copa América in 2015 and again in 2016?",
+          "a": "Chile"
+        },
+        {
+          "level": 7,
+          "q": "Which confederation organizes the Copa América?",
+          "a": "CONMEBOL"
+        },
+        {
+          "level": 8,
+          "q": "True or false: the Copa América is the oldest continental tournament for national teams.",
+          "a": "True (since 1916)"
+        },
+        {
+          "level": 9,
+          "q": "Which country won its only Copa América in 2001, at home?",
+          "a": "Colombia"
+        },
+        {
+          "level": 10,
+          "q": "Which country won the very first Copa América, in 1916?",
+          "a": "Uruguay"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know El Chavo del 8?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What object does El Chavo like to hide in?",
+          "a": "A barrel"
+        },
+        {
+          "level": 2,
+          "q": "Which country is El Chavo del 8 from?",
+          "a": "Mexico"
+        },
+        {
+          "level": 3,
+          "q": "What is El Chavo's favorite food?",
+          "a": "A ham sandwich (torta de jamón)"
+        },
+        {
+          "level": 4,
+          "q": "What is the name of Don Ramón's daughter?",
+          "a": "La Chilindrina"
+        },
+        {
+          "level": 5,
+          "q": "What is the name of the landlord who comes to collect the rent?",
+          "a": "Señor Barriga"
+        },
+        {
+          "level": 6,
+          "q": "True or false: Quico is Doña Florinda's son.",
+          "a": "True"
+        },
+        {
+          "level": 7,
+          "q": "What is the name of the schoolteacher in love with Doña Florinda?",
+          "a": "Profesor Jirafales"
+        },
+        {
+          "level": 8,
+          "q": "Who created the show and played El Chavo?",
+          "a": "Roberto Gómez Bolaños ('Chespirito')"
+        },
+        {
+          "level": 9,
+          "q": "What does Doña Florinda always offer Profesor Jirafales?",
+          "a": "A little cup of coffee ('una tacita de café')"
+        },
+        {
+          "level": 10,
+          "q": "What is the real name of the 'Witch of 71'?",
+          "a": "Doña Clotilde"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Pixar's Coco?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Mexican holiday is at the heart of Coco?",
+          "a": "The Day of the Dead (Día de Muertos)"
+        },
+        {
+          "level": 2,
+          "q": "Which instrument does Miguel dream of playing?",
+          "a": "The guitar"
+        },
+        {
+          "level": 3,
+          "q": "Which famous singer does Miguel idolize?",
+          "a": "Ernesto de la Cruz"
+        },
+        {
+          "level": 4,
+          "q": "Who is Coco to Miguel?",
+          "a": "His great-grandmother (Mamá Coco)"
+        },
+        {
+          "level": 5,
+          "q": "True or false: Coco won the Oscar for Best Animated Feature.",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "What is the trade of Miguel's family?",
+          "a": "Shoemakers"
+        },
+        {
+          "level": 7,
+          "q": "Which famous Mexican painter appears in the Land of the Dead?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 8,
+          "q": "Which orange flower's petals form the bridge to the Land of the Dead?",
+          "a": "Cempasúchil (Mexican marigold)"
+        },
+        {
+          "level": 9,
+          "q": "What is the title of the song Héctor wrote for his daughter?",
+          "a": "'Remember Me' (Recuérdame)"
+        },
+        {
+          "level": 10,
+          "q": "What Mexican breed is Dante, Miguel's dog?",
+          "a": "A xoloitzcuintle (Mexican hairless dog)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Shakira?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country is Shakira from?",
+          "a": "Colombia"
+        },
+        {
+          "level": 2,
+          "q": "Which Shakira song was the anthem of the 2010 World Cup?",
+          "a": "'Waka Waka'"
+        },
+        {
+          "level": 3,
+          "q": "Complete the title of this 2006 hit: 'Hips Don't...'",
+          "a": "'Lie'"
+        },
+        {
+          "level": 4,
+          "q": "Which Spanish footballer was Shakira in a relationship with for over ten years?",
+          "a": "Gerard Piqué"
+        },
+        {
+          "level": 5,
+          "q": "In which Colombian city was Shakira born: Barranquilla, Bogotá or Medellín?",
+          "a": "Barranquilla"
+        },
+        {
+          "level": 6,
+          "q": "With which singer did Shakira perform the 2020 Super Bowl halftime show?",
+          "a": "Jennifer Lopez"
+        },
+        {
+          "level": 7,
+          "q": "In which Disney animated film does Shakira sing 'Try Everything'?",
+          "a": "Zootopia"
+        },
+        {
+          "level": 8,
+          "q": "True or false: Shakira has Lebanese roots on her father's side.",
+          "a": "True"
+        },
+        {
+          "level": 9,
+          "q": "With which Argentine producer did Shakira release her record-breaking 2023 'session'?",
+          "a": "Bizarrap"
+        },
+        {
+          "level": 10,
+          "q": "Which 1995 album made Shakira a star in Latin America?",
+          "a": "'Pies Descalzos'"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Celia Cruz?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What word did Celia Cruz famously shout on stage?",
+          "a": "'¡Azúcar!' (Sugar!)"
+        },
+        {
+          "level": 2,
+          "q": "In which country was Celia Cruz born?",
+          "a": "Cuba"
+        },
+        {
+          "level": 3,
+          "q": "Celia Cruz is nicknamed the queen of which musical genre?",
+          "a": "Salsa"
+        },
+        {
+          "level": 4,
+          "q": "Complete the title of her hit: 'La vida es un...'",
+          "a": "'...carnaval'"
+        },
+        {
+          "level": 5,
+          "q": "Complete the title of her 2001 hit: 'La negra tiene...'",
+          "a": "'...tumbao'"
+        },
+        {
+          "level": 6,
+          "q": "In which year did Celia Cruz die: 1993, 2003 or 2013?",
+          "a": "2003"
+        },
+        {
+          "level": 7,
+          "q": "With which Cuban orchestra did Celia Cruz rise to fame in the 1950s?",
+          "a": "La Sonora Matancera"
+        },
+        {
+          "level": 8,
+          "q": "Which New York label, the emblem of salsa, is Celia Cruz associated with?",
+          "a": "Fania (Fania All-Stars)"
+        },
+        {
+          "level": 9,
+          "q": "What was the name of her husband, who was also her musical director?",
+          "a": "Pedro Knight"
+        },
+        {
+          "level": 10,
+          "q": "In which Havana neighborhood was Celia Cruz born?",
+          "a": "Santos Suárez"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Latin dances?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Argentine dance is danced in a close embrace to the sound of the bandoneon?",
+          "a": "Tango"
+        },
+        {
+          "level": 2,
+          "q": "Which dance is the symbol of the Rio carnival?",
+          "a": "Samba"
+        },
+        {
+          "level": 3,
+          "q": "Which dance was born in the Dominican Republic: bachata, cumbia or tango?",
+          "a": "Bachata"
+        },
+        {
+          "level": 4,
+          "q": "Merengue is the national dance of which country?",
+          "a": "The Dominican Republic"
+        },
+        {
+          "level": 5,
+          "q": "Which country does cumbia come from?",
+          "a": "Colombia"
+        },
+        {
+          "level": 6,
+          "q": "Which Brazilian art mixes fighting, music and acrobatics?",
+          "a": "Capoeira"
+        },
+        {
+          "level": 7,
+          "q": "Which country does the cha-cha-cha come from?",
+          "a": "Cuba"
+        },
+        {
+          "level": 8,
+          "q": "Which Colombian city is nicknamed the 'world capital of salsa'?",
+          "a": "Cali"
+        },
+        {
+          "level": 9,
+          "q": "Which country does the bandoneon, the king instrument of tango, originally come from?",
+          "a": "Germany"
+        },
+        {
+          "level": 10,
+          "q": "Which Cuban bandleader was nicknamed the 'King of Mambo'?",
+          "a": "Dámaso Pérez Prado"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know reggaeton?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "With which singer does Daddy Yankee sing 'Despacito'?",
+          "a": "Luis Fonsi"
+        },
+        {
+          "level": 2,
+          "q": "Which island is Bad Bunny from?",
+          "a": "Puerto Rico"
+        },
+        {
+          "level": 3,
+          "q": "Who sings the 2004 hit 'Gasolina'?",
+          "a": "Daddy Yankee"
+        },
+        {
+          "level": 4,
+          "q": "Which Colombian singer from Medellín sings 'Mi Gente'?",
+          "a": "J Balvin"
+        },
+        {
+          "level": 5,
+          "q": "Which Colombian singer sings 'Tusa' with Nicki Minaj?",
+          "a": "Karol G"
+        },
+        {
+          "level": 6,
+          "q": "Which record-breaking Bad Bunny album came out in 2022: 'Un Verano Sin Ti' or 'Vida Loca'?",
+          "a": "'Un Verano Sin Ti'"
+        },
+        {
+          "level": 7,
+          "q": "What is Bad Bunny's real first name?",
+          "a": "Benito (Benito Antonio Martínez Ocasio)"
+        },
+        {
+          "level": 8,
+          "q": "What is the basic rhythm of reggaeton called?",
+          "a": "Dembow"
+        },
+        {
+          "level": 9,
+          "q": "The dembow is named after a song by an artist from which country?",
+          "a": "Jamaica ('Dem Bow' by Shabba Ranks)"
+        },
+        {
+          "level": 10,
+          "q": "Which Panamanian singer is considered one of the pioneers of reggaeton?",
+          "a": "El General"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Caribbean baseball?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In baseball, how many strikes does it take to strike a batter out?",
+          "a": "3"
+        },
+        {
+          "level": 2,
+          "q": "How many innings are there in a regulation baseball game?",
+          "a": "9"
+        },
+        {
+          "level": 3,
+          "q": "In which country is baseball the national sport: Cuba, Argentina or Chile?",
+          "a": "Cuba"
+        },
+        {
+          "level": 4,
+          "q": "What do you call a hit that sends the ball out of the park?",
+          "a": "A home run ('jonrón')"
+        },
+        {
+          "level": 5,
+          "q": "What is the tournament that brings together the champions of the Caribbean leagues called?",
+          "a": "The Caribbean Series (Serie del Caribe)"
+        },
+        {
+          "level": 6,
+          "q": "Which country is David 'Big Papi' Ortiz from?",
+          "a": "The Dominican Republic"
+        },
+        {
+          "level": 7,
+          "q": "Which Venezuelan Detroit Tigers player won the batting Triple Crown in 2012?",
+          "a": "Miguel Cabrera"
+        },
+        {
+          "level": 8,
+          "q": "Which Puerto Rican legend died in a 1972 plane crash while bringing aid to Nicaragua?",
+          "a": "Roberto Clemente"
+        },
+        {
+          "level": 9,
+          "q": "True or false: Cuba won the baseball gold medal at the 1992 Barcelona Olympics.",
+          "a": "True"
+        },
+        {
+          "level": 10,
+          "q": "Which country won the 2013 World Baseball Classic without losing a game?",
+          "a": "The Dominican Republic"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know telenovelas?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country is the telenovela 'Yo soy Betty, la fea' from?",
+          "a": "Colombia"
+        },
+        {
+          "level": 2,
+          "q": "What is the American adaptation of Betty la fea called?",
+          "a": "'Ugly Betty'"
+        },
+        {
+          "level": 3,
+          "q": "Which Mexican singer starred in Marimar and María la del Barrio?",
+          "a": "Thalía"
+        },
+        {
+          "level": 4,
+          "q": "Which music band was born from the telenovela Rebelde?",
+          "a": "RBD"
+        },
+        {
+          "level": 5,
+          "q": "Which Mexican network is the big telenovela producer: Televisa or Globo?",
+          "a": "Televisa"
+        },
+        {
+          "level": 6,
+          "q": "Which country is TV Globo, the telenovela giant, from?",
+          "a": "Brazil"
+        },
+        {
+          "level": 7,
+          "q": "Which fashion company does Betty work for?",
+          "a": "Ecomoda"
+        },
+        {
+          "level": 8,
+          "q": "What is the name of the boss Betty falls in love with?",
+          "a": "Armando Mendoza"
+        },
+        {
+          "level": 9,
+          "q": "Which Mexican actress starred in 'Los ricos también lloran' (1979)?",
+          "a": "Verónica Castro"
+        },
+        {
+          "level": 10,
+          "q": "Who created and wrote 'Yo soy Betty, la fea'?",
+          "a": "Fernando Gaitán"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know lucha libre?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What do luchadores wear on their faces?",
+          "a": "A mask"
+        },
+        {
+          "level": 2,
+          "q": "Lucha libre is the emblem of which country?",
+          "a": "Mexico"
+        },
+        {
+          "level": 3,
+          "q": "Which silver-masked luchador also became a movie star?",
+          "a": "El Santo"
+        },
+        {
+          "level": 4,
+          "q": "The good guys are the 'técnicos'; what are the bad guys called?",
+          "a": "The 'rudos'"
+        },
+        {
+          "level": 5,
+          "q": "In which film does Jack Black play a cook who becomes a luchador?",
+          "a": "Nacho Libre"
+        },
+        {
+          "level": 6,
+          "q": "Which masked wrestler of Mexican origin is famous in WWE for his '619'?",
+          "a": "Rey Mysterio"
+        },
+        {
+          "level": 7,
+          "q": "Which blue-masked luchador was El Santo's great rival and partner?",
+          "a": "Blue Demon"
+        },
+        {
+          "level": 8,
+          "q": "In a 'lucha de apuestas', what does the loser risk?",
+          "a": "His mask or his hair"
+        },
+        {
+          "level": 9,
+          "q": "True or false: Mexico's CMLL is considered the oldest professional wrestling promotion still active.",
+          "a": "True (founded in 1933)"
+        },
+        {
+          "level": 10,
+          "q": "What was El Santo's real name?",
+          "a": "Rodolfo Guzmán Huerta"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Latin carnivals?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Brazilian city hosts the most famous carnival in the world?",
+          "a": "Rio de Janeiro"
+        },
+        {
+          "level": 2,
+          "q": "What is the stadium-avenue where Rio's samba schools parade called?",
+          "a": "The Sambadrome"
+        },
+        {
+          "level": 3,
+          "q": "Carnival ends the day before which day that marks the start of Lent?",
+          "a": "Ash Wednesday"
+        },
+        {
+          "level": 4,
+          "q": "Which Colombian city has a carnival listed as UNESCO heritage?",
+          "a": "Barranquilla"
+        },
+        {
+          "level": 5,
+          "q": "Which Bolivian city is famous for its UNESCO-listed carnival?",
+          "a": "Oruro"
+        },
+        {
+          "level": 6,
+          "q": "Which dance of masked devils is the emblem of the Oruro carnival?",
+          "a": "La Diablada"
+        },
+        {
+          "level": 7,
+          "q": "In which Cuban city is the famous July carnival held?",
+          "a": "Santiago de Cuba"
+        },
+        {
+          "level": 8,
+          "q": "Which Afro-Uruguayan drum rhythm fills Montevideo's 'Llamadas' parade?",
+          "a": "Candombe"
+        },
+        {
+          "level": 9,
+          "q": "Which Brazilian architect designed Rio's Sambadrome?",
+          "a": "Oscar Niemeyer"
+        },
+        {
+          "level": 10,
+          "q": "On which street is Rio's Sambadrome located?",
+          "a": "Marquês de Sapucaí"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Latin American cinema?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Mexican comedian with a thin mustache used to say 'Ahí está el detalle'?",
+          "a": "Cantinflas"
+        },
+        {
+          "level": 2,
+          "q": "Which Mexican director won Best Picture with 'The Shape of Water'?",
+          "a": "Guillermo del Toro"
+        },
+        {
+          "level": 3,
+          "q": "Is Alfonso Cuarón's film 'Roma' in color or in black and white?",
+          "a": "Black and white"
+        },
+        {
+          "level": 4,
+          "q": "Which 2006 Guillermo del Toro film is set in Franco's Spain and features a faun?",
+          "a": "Pan's Labyrinth"
+        },
+        {
+          "level": 5,
+          "q": "True or false: Alfonso Cuarón directed a Harry Potter film.",
+          "a": "True (Prisoner of Azkaban)"
+        },
+        {
+          "level": 6,
+          "q": "Which 2002 Brazilian film tells of life in a Rio favela?",
+          "a": "City of God (Cidade de Deus)"
+        },
+        {
+          "level": 7,
+          "q": "Which Alejandro González Iñárritu film won Best Picture in 2015?",
+          "a": "Birdman"
+        },
+        {
+          "level": 8,
+          "q": "Which Argentine film starring Ricardo Darín won the Oscar for Best Foreign Language Film in 2010?",
+          "a": "The Secret in Their Eyes (El secreto de sus ojos)"
+        },
+        {
+          "level": 9,
+          "q": "In which Hollywood film did Cantinflas play Passepartout?",
+          "a": "Around the World in 80 Days (1956)"
+        },
+        {
+          "level": 10,
+          "q": "Which 1985 Argentine film was the first Latin American film to win the Oscar for Best Foreign Language Film?",
+          "a": "The Official Story (La historia oficial)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Latin street food?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "What is the folded, filled Mexican tortilla eaten by hand called?",
+          "a": "A taco"
+        },
+        {
+          "level": 2,
+          "q": "What is the typical corn cake of Venezuela and Colombia called?",
+          "a": "Arepa"
+        },
+        {
+          "level": 3,
+          "q": "What meat is used for tacos al pastor: pork, beef or chicken?",
+          "a": "Pork"
+        },
+        {
+          "level": 4,
+          "q": "In an Argentine choripán, what does 'chori' stand for?",
+          "a": "Chorizo"
+        },
+        {
+          "level": 5,
+          "q": "Ceviche is the signature dish of which country?",
+          "a": "Peru"
+        },
+        {
+          "level": 6,
+          "q": "Pupusas, stuffed corn cakes, are the national dish of which country?",
+          "a": "El Salvador"
+        },
+        {
+          "level": 7,
+          "q": "In Mexico, what is corn on the cob topped with mayo, cheese and chili called?",
+          "a": "Elote"
+        },
+        {
+          "level": 8,
+          "q": "What are the small Brazilian cheese bread balls called?",
+          "a": "Pão de queijo"
+        },
+        {
+          "level": 9,
+          "q": "In Peru, which beef organ are anticuchos made from?",
+          "a": "The heart"
+        },
+        {
+          "level": 10,
+          "q": "In Peru, what is the tangy marinade juice of ceviche called?",
+          "a": "Leche de tigre ('tiger's milk')"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Latin parlor games?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In Mexican Lotería, what do you shout when you complete your board?",
+          "a": "'¡Lotería!'"
+        },
+        {
+          "level": 2,
+          "q": "How many dots in total are on the double-six domino?",
+          "a": "12"
+        },
+        {
+          "level": 3,
+          "q": "Which is NOT a suit of the Spanish deck: oros, copas or corazones?",
+          "a": "Corazones (hearts)"
+        },
+        {
+          "level": 4,
+          "q": "How many pictures are on a standard Lotería board (tabla)?",
+          "a": "16 (4 x 4)"
+        },
+        {
+          "level": 5,
+          "q": "How many tiles are in a standard double-six domino set?",
+          "a": "28"
+        },
+        {
+          "level": 6,
+          "q": "What is the Mexican wooden toy where you catch a ball on a stick called?",
+          "a": "Balero (cup-and-ball)"
+        },
+        {
+          "level": 7,
+          "q": "In escoba, a very popular card game, what total do you need to make a capture?",
+          "a": "15"
+        },
+        {
+          "level": 8,
+          "q": "Argentine truco is played with a Spanish deck of how many cards?",
+          "a": "40"
+        },
+        {
+          "level": 9,
+          "q": "Cuban dominoes are usually played with a set going up to double what?",
+          "a": "Double nine (55 tiles)"
+        },
+        {
+          "level": 10,
+          "q": "In truco, which is the strongest card?",
+          "a": "The ace of swords ('el ancho de espadas')"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know World Cups in Latin America?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country has won the most football World Cups?",
+          "a": "Brazil (5)"
+        },
+        {
+          "level": 2,
+          "q": "By what score did Germany beat Brazil in the 2014 semi-final?",
+          "a": "7-1"
+        },
+        {
+          "level": 3,
+          "q": "Which country hosted and won the very first World Cup, in 1930?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 4,
+          "q": "Which team beat Argentina in the 2014 World Cup final?",
+          "a": "Germany"
+        },
+        {
+          "level": 5,
+          "q": "In which year did Argentina win the World Cup on home soil?",
+          "a": "1978"
+        },
+        {
+          "level": 6,
+          "q": "True or false: Mexico is the first country to host three men's World Cups.",
+          "a": "True (1970, 1986, 2026)"
+        },
+        {
+          "level": 7,
+          "q": "Which team beat Brazil at the Maracanã in 1950, in the famous 'Maracanazo'?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 8,
+          "q": "Which South American country hosted the 1962 World Cup?",
+          "a": "Chile"
+        },
+        {
+          "level": 9,
+          "q": "Which Colombian was the top scorer of the 2014 World Cup?",
+          "a": "James Rodríguez (6 goals)"
+        },
+        {
+          "level": 10,
+          "q": "Which team did Uruguay beat in the 1930 World Cup final?",
+          "a": "Argentina (4-2)"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know Latin music icons?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which Puerto Rican singer sings 'Livin' la Vida Loca'?",
+          "a": "Ricky Martin"
+        },
+        {
+          "level": 2,
+          "q": "Which Colombian singer sings 'La camisa negra'?",
+          "a": "Juanes"
+        },
+        {
+          "level": 3,
+          "q": "In which Puerto Rican boy band did Ricky Martin start out?",
+          "a": "Menudo"
+        },
+        {
+          "level": 4,
+          "q": "Which singer nicknamed the 'Queen of Tejano music' was murdered in 1995?",
+          "a": "Selena (Quintanilla)"
+        },
+        {
+          "level": 5,
+          "q": "Which singer is nicknamed 'El Sol de México'?",
+          "a": "Luis Miguel"
+        },
+        {
+          "level": 6,
+          "q": "Which Dominican singer sings 'Ojalá que llueva café'?",
+          "a": "Juan Luis Guerra"
+        },
+        {
+          "level": 7,
+          "q": "Which group of veteran Cuban musicians became famous through an album and a film in 1997-1999?",
+          "a": "Buena Vista Social Club"
+        },
+        {
+          "level": 8,
+          "q": "Which Panamanian salsa singer sings 'Pedro Navaja'?",
+          "a": "Rubén Blades"
+        },
+        {
+          "level": 9,
+          "q": "Which Chilean singer wrote 'Gracias a la vida'?",
+          "a": "Violeta Parra"
+        },
+        {
+          "level": 10,
+          "q": "Which Brazilian composer wrote the music for 'The Girl from Ipanema'?",
+          "a": "Antônio Carlos 'Tom' Jobim"
+        }
+      ]
+    },
+    {
+      "theme": "Plaisir",
+      "subject": "Do you think you know South American football clubs?",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which two clubs face off in Argentina's 'Superclásico'?",
+          "a": "Boca Juniors and River Plate"
+        },
+        {
+          "level": 2,
+          "q": "What is the nickname of Boca Juniors' stadium?",
+          "a": "La Bombonera"
+        },
+        {
+          "level": 3,
+          "q": "What is the main continental cup for South American clubs called?",
+          "a": "The Copa Libertadores"
+        },
+        {
+          "level": 4,
+          "q": "Which Mexican club, Club América's great rival, only fields Mexican players?",
+          "a": "Chivas (Guadalajara)"
+        },
+        {
+          "level": 5,
+          "q": "Peñarol vs Nacional is the big derby of which country?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 6,
+          "q": "Which Colombian city is the club Atlético Nacional from?",
+          "a": "Medellín"
+        },
+        {
+          "level": 7,
+          "q": "In which European city was the 2018 Libertadores final second leg between Boca and River played?",
+          "a": "Madrid (Santiago Bernabéu)"
+        },
+        {
+          "level": 8,
+          "q": "At which Brazilian club is Zico a legend?",
+          "a": "Flamengo"
+        },
+        {
+          "level": 9,
+          "q": "True or false: Colo-Colo is the only Chilean club to have won the Copa Libertadores.",
+          "a": "True (in 1991)"
+        },
+        {
+          "level": 10,
+          "q": "Which Argentine club holds the record for Copa Libertadores wins?",
+          "a": "Independiente (7 titles)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the city of Buenos Aires",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Buenos Aires is the capital of which country?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "Which sensual dance was born in the outskirts of Buenos Aires and Montevideo?",
+          "a": "Tango"
+        },
+        {
+          "level": 3,
+          "q": "What are the inhabitants of Buenos Aires called?",
+          "a": "Porteños"
+        },
+        {
+          "level": 4,
+          "q": "Which pointed white monument stands in the middle of 9 de Julio Avenue?",
+          "a": "The Obelisk"
+        },
+        {
+          "level": 5,
+          "q": "In which colorful neighborhood is the little Caminito street?",
+          "a": "La Boca"
+        },
+        {
+          "level": 6,
+          "q": "Which football club plays at La Bombonera?",
+          "a": "Boca Juniors"
+        },
+        {
+          "level": 7,
+          "q": "What is the presidential palace, famous for its pink color, called?",
+          "a": "La Casa Rosada"
+        },
+        {
+          "level": 8,
+          "q": "True or false: 9 de Julio Avenue is considered one of the widest avenues in the world?",
+          "a": "True"
+        },
+        {
+          "level": 9,
+          "q": "In which upscale cemetery does Eva Perón rest?",
+          "a": "Recoleta Cemetery"
+        },
+        {
+          "level": 10,
+          "q": "In which year did the Subte, Latin America's first subway, open: 1913, 1938 or 1962?",
+          "a": "1913"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the city of Havana",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Havana is the capital of which country?",
+          "a": "Cuba"
+        },
+        {
+          "level": 2,
+          "q": "What is Havana's famous seafront promenade called?",
+          "a": "The Malecón"
+        },
+        {
+          "level": 3,
+          "q": "Which cocktail made with rum, mint, lime and soda water is a symbol of Havana?",
+          "a": "The mojito"
+        },
+        {
+          "level": 4,
+          "q": "From which decade do many of the old American cars still driving in the streets date?",
+          "a": "The 1950s"
+        },
+        {
+          "level": 5,
+          "q": "Which American writer drank his daiquiris at El Floridita bar?",
+          "a": "Ernest Hemingway"
+        },
+        {
+          "level": 6,
+          "q": "What is the little yellow coconut-shaped taxi called?",
+          "a": "The Coco-taxi"
+        },
+        {
+          "level": 7,
+          "q": "Which Havana building looks a lot like the Capitol in Washington?",
+          "a": "El Capitolio"
+        },
+        {
+          "level": 8,
+          "q": "Which Havana club gave its name to a cult album by Cuban musicians released in 1997?",
+          "a": "Buena Vista Social Club"
+        },
+        {
+          "level": 9,
+          "q": "Which fortress topped by a lighthouse guards the entrance to the bay?",
+          "a": "El Morro Castle"
+        },
+        {
+          "level": 10,
+          "q": "Which ceremony takes place every evening at 9 p.m. at La Cabaña fortress?",
+          "a": "The cañonazo (a cannon shot)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of Mexico City",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is Mexico City?",
+          "a": "Mexico"
+        },
+        {
+          "level": 2,
+          "q": "What are the musicians in charro outfits who play in Plaza Garibaldi called?",
+          "a": "Mariachis"
+        },
+        {
+          "level": 3,
+          "q": "What is the big central square of Mexico City called?",
+          "a": "The Zócalo"
+        },
+        {
+          "level": 4,
+          "q": "Which Aztec capital stood where Mexico City is today?",
+          "a": "Tenochtitlan"
+        },
+        {
+          "level": 5,
+          "q": "Which painter with a famous unibrow lived in the Blue House in Coyoacán?",
+          "a": "Frida Kahlo"
+        },
+        {
+          "level": 6,
+          "q": "Where do people ride colorful boats (trajineras) along canals?",
+          "a": "Xochimilco"
+        },
+        {
+          "level": 7,
+          "q": "Which golden monument topped by a winged Victory towers over Paseo de la Reforma?",
+          "a": "The Angel of Independence"
+        },
+        {
+          "level": 8,
+          "q": "True or false: Mexico City sinks into the ground by several centimeters every year?",
+          "a": "True"
+        },
+        {
+          "level": 9,
+          "q": "Which stadium hosted the 1970 and 1986 World Cup finals?",
+          "a": "The Estadio Azteca"
+        },
+        {
+          "level": 10,
+          "q": "At roughly what altitude is Mexico City: 1,200 m, 2,240 m or 3,600 m?",
+          "a": "2,240 m"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the city of Medellín",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is Medellín?",
+          "a": "Colombia"
+        },
+        {
+          "level": 2,
+          "q": "What is Medellín's nickname: city of eternal spring, windy city or city of light?",
+          "a": "City of eternal spring"
+        },
+        {
+          "level": 3,
+          "q": "Which Medellín-born artist is famous for his very round figures?",
+          "a": "Fernando Botero"
+        },
+        {
+          "level": 4,
+          "q": "Which drug lord ran the Medellín cartel?",
+          "a": "Pablo Escobar"
+        },
+        {
+          "level": 5,
+          "q": "What are the people of Medellín and the Antioquia region called?",
+          "a": "Paisas"
+        },
+        {
+          "level": 6,
+          "q": "Which Medellín-born reggaeton singer sang 'Mi Gente'?",
+          "a": "J Balvin"
+        },
+        {
+          "level": 7,
+          "q": "Which big August festival is famous for its silleteros parade?",
+          "a": "The Feria de las Flores (Flower Festival)"
+        },
+        {
+          "level": 8,
+          "q": "What are the cable cars linking the metro to the hillside neighborhoods called?",
+          "a": "The Metrocable"
+        },
+        {
+          "level": 9,
+          "q": "Which hearty dish combines red beans, rice, egg, chicharrón, plantain and avocado?",
+          "a": "Bandeja paisa"
+        },
+        {
+          "level": 10,
+          "q": "Which Medellín club became the first Colombian club to win the Copa Libertadores, in 1989?",
+          "a": "Atlético Nacional"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the city of Lima",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Lima is the capital of which country?",
+          "a": "Peru"
+        },
+        {
+          "level": 2,
+          "q": "Which dish of raw fish marinated in lime juice is Lima's star?",
+          "a": "Ceviche"
+        },
+        {
+          "level": 3,
+          "q": "Which ocean borders Lima?",
+          "a": "The Pacific Ocean"
+        },
+        {
+          "level": 4,
+          "q": "Which Spanish conquistador founded Lima in 1535?",
+          "a": "Francisco Pizarro"
+        },
+        {
+          "level": 5,
+          "q": "Which yellow bubblegum-flavored soda is Peru's iconic drink?",
+          "a": "Inca Kola"
+        },
+        {
+          "level": 6,
+          "q": "Which cocktail is made with pisco, lime, sugar and egg white?",
+          "a": "Pisco sour"
+        },
+        {
+          "level": 7,
+          "q": "True or false: it almost never rains in Lima?",
+          "a": "True (a few millimeters a year)"
+        },
+        {
+          "level": 8,
+          "q": "Which bohemian district is home to the Puente de los Suspiros (Bridge of Sighs)?",
+          "a": "Barranco"
+        },
+        {
+          "level": 9,
+          "q": "What is Lima's historical nickname: Ciudad de los Reyes, Ciudad Blanca or Ciudad Imperial?",
+          "a": "Ciudad de los Reyes (City of Kings)"
+        },
+        {
+          "level": 10,
+          "q": "What is the big pre-Columbian adobe pyramid in the middle of the Miraflores district called?",
+          "a": "Huaca Pucllana"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the city of Cartagena",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is Cartagena de Indias?",
+          "a": "Colombia"
+        },
+        {
+          "level": 2,
+          "q": "What surrounds Cartagena's old town?",
+          "a": "Walls (ramparts)"
+        },
+        {
+          "level": 3,
+          "q": "Which sea borders Cartagena?",
+          "a": "The Caribbean Sea"
+        },
+        {
+          "level": 4,
+          "q": "Which Nobel laureate, author of 'One Hundred Years of Solitude', had a house in Cartagena?",
+          "a": "Gabriel García Márquez"
+        },
+        {
+          "level": 5,
+          "q": "What are the fruit sellers in colorful dresses who pose for tourists called?",
+          "a": "Palenqueras"
+        },
+        {
+          "level": 6,
+          "q": "Which big Spanish fortress overlooks the city from its hill?",
+          "a": "Castillo San Felipe de Barajas"
+        },
+        {
+          "level": 7,
+          "q": "Which bohemian working-class district next to the old town is covered in street art?",
+          "a": "Getsemaní"
+        },
+        {
+          "level": 8,
+          "q": "True or false: near Cartagena, you can bathe in the crater of a mud volcano?",
+          "a": "True (El Totumo volcano)"
+        },
+        {
+          "level": 9,
+          "q": "Which one-eyed, one-armed, lame Spanish admiral defended the city against the English in 1741?",
+          "a": "Blas de Lezo"
+        },
+        {
+          "level": 10,
+          "q": "What is Cartagena's nickname: La Ciudad Heroica, La Ciudad Blanca or La Ciudad Bonita?",
+          "a": "La Ciudad Heroica (the Heroic City)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the Galápagos Islands",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country do the Galápagos Islands belong to?",
+          "a": "Ecuador"
+        },
+        {
+          "level": 2,
+          "q": "In which ocean are the Galápagos?",
+          "a": "The Pacific Ocean"
+        },
+        {
+          "level": 3,
+          "q": "Which English naturalist observed animals there that helped him build his theory of evolution?",
+          "a": "Charles Darwin"
+        },
+        {
+          "level": 4,
+          "q": "Which giant animal gave the islands their name?",
+          "a": "The tortoise (galápago = tortoise)"
+        },
+        {
+          "level": 5,
+          "q": "Which Galápagos seabird is famous for its bright blue feet?",
+          "a": "The blue-footed booby"
+        },
+        {
+          "level": 6,
+          "q": "What was the name of Darwin's ship?",
+          "a": "The Beagle"
+        },
+        {
+          "level": 7,
+          "q": "True or false: the Galápagos are home to an iguana that dives into the sea to eat algae?",
+          "a": "True (the marine iguana)"
+        },
+        {
+          "level": 8,
+          "q": "What was the nickname of the last giant tortoise from Pinta Island, who died in 2012?",
+          "a": "Lonesome George"
+        },
+        {
+          "level": 9,
+          "q": "What is the largest island in the archipelago?",
+          "a": "Isabela"
+        },
+        {
+          "level": 10,
+          "q": "In which year did Darwin visit the Galápagos: 1805, 1835 or 1859?",
+          "a": "1835"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of Machu Picchu",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is Machu Picchu?",
+          "a": "Peru"
+        },
+        {
+          "level": 2,
+          "q": "Which civilization built Machu Picchu?",
+          "a": "The Incas"
+        },
+        {
+          "level": 3,
+          "q": "Which former Inca capital is the nearest big city?",
+          "a": "Cusco"
+        },
+        {
+          "level": 4,
+          "q": "What is the famous multi-day hiking trail leading there called?",
+          "a": "The Inca Trail"
+        },
+        {
+          "level": 5,
+          "q": "What is the village at the foot of the site, where the buses leave from, called?",
+          "a": "Aguas Calientes"
+        },
+        {
+          "level": 6,
+          "q": "True or false: Machu Picchu was voted one of the New Seven Wonders of the World in 2007?",
+          "a": "True"
+        },
+        {
+          "level": 7,
+          "q": "Which American explorer made the site known to the world in 1911?",
+          "a": "Hiram Bingham"
+        },
+        {
+          "level": 8,
+          "q": "What is the pointed peak seen behind the ruins on postcards called?",
+          "a": "Huayna Picchu"
+        },
+        {
+          "level": 9,
+          "q": "What does 'Machu Picchu' mean in Quechua: old mountain, lost city or temple of the sun?",
+          "a": "Old mountain"
+        },
+        {
+          "level": 10,
+          "q": "Which Inca emperor is credited with building Machu Picchu?",
+          "a": "Pachacuti (Pachacútec)"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the Día de Muertos",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is the Día de Muertos the most famous celebration?",
+          "a": "Mexico"
+        },
+        {
+          "level": 2,
+          "q": "On which days is the Día de Muertos mainly celebrated?",
+          "a": "November 1 and 2"
+        },
+        {
+          "level": 3,
+          "q": "Which 2017 Pixar film takes place during the Día de Muertos?",
+          "a": "Coco"
+        },
+        {
+          "level": 4,
+          "q": "What is the elegant skeleton lady with the big hat called?",
+          "a": "La Catrina"
+        },
+        {
+          "level": 5,
+          "q": "Which sweet bread decorated with little 'bones' is eaten for the occasion?",
+          "a": "Pan de muerto"
+        },
+        {
+          "level": 6,
+          "q": "Which orange flower guides souls to the altars?",
+          "a": "Cempasúchil (Mexican marigold)"
+        },
+        {
+          "level": 7,
+          "q": "What is the altar with photos, food and candles for the departed called?",
+          "a": "The ofrenda"
+        },
+        {
+          "level": 8,
+          "q": "What are the colorful cut-paper banners decorating the streets called?",
+          "a": "Papel picado"
+        },
+        {
+          "level": 9,
+          "q": "Which Mexican engraver created the Catrina character?",
+          "a": "José Guadalupe Posada"
+        },
+        {
+          "level": 10,
+          "q": "Which James Bond film inspired the big Día de Muertos parade in Mexico City, held since 2016?",
+          "a": "Spectre"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of mate",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Is mate a coffee, an infusion of leaves or a soda?",
+          "a": "An infusion of leaves"
+        },
+        {
+          "level": 2,
+          "q": "What is the metal straw with a filter used to drink mate called?",
+          "a": "The bombilla"
+        },
+        {
+          "level": 3,
+          "q": "What traditional container is mate drunk from?",
+          "a": "A gourd (dried calabash)"
+        },
+        {
+          "level": 4,
+          "q": "True or false: you should pour boiling water on mate?",
+          "a": "False (hot, but not boiling)"
+        },
+        {
+          "level": 5,
+          "q": "What is cold mate, very popular in Paraguay, called?",
+          "a": "Tereré"
+        },
+        {
+          "level": 6,
+          "q": "In a mate circle, what does saying 'thank you' to the server mean?",
+          "a": "That you don't want any more"
+        },
+        {
+          "level": 7,
+          "q": "Which country has the highest mate consumption per person: Argentina, Uruguay or Chile?",
+          "a": "Uruguay"
+        },
+        {
+          "level": 8,
+          "q": "What is mate called in southern Brazil?",
+          "a": "Chimarrão"
+        },
+        {
+          "level": 9,
+          "q": "Which religious order developed the first yerba mate plantations in the 17th century?",
+          "a": "The Jesuits"
+        },
+        {
+          "level": 10,
+          "q": "What is the scientific name of the yerba mate plant?",
+          "a": "Ilex paraguariensis"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of llamas and alpacas",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which mountain range do llamas and alpacas live?",
+          "a": "The Andes"
+        },
+        {
+          "level": 2,
+          "q": "What does a llama do when it's annoyed?",
+          "a": "It spits"
+        },
+        {
+          "level": 3,
+          "q": "Which is bigger: the llama or the alpaca?",
+          "a": "The llama"
+        },
+        {
+          "level": 4,
+          "q": "Llamas and alpacas are cousins of which desert animal?",
+          "a": "The camel (they are camelids)"
+        },
+        {
+          "level": 5,
+          "q": "True or false: llamas have been used for centuries as pack animals to carry loads?",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "Which one has banana-shaped ears: the llama or the alpaca?",
+          "a": "The llama"
+        },
+        {
+          "level": 7,
+          "q": "Which country has the vast majority of the world's alpacas?",
+          "a": "Peru"
+        },
+        {
+          "level": 8,
+          "q": "Which wild camelid is the ancestor of the llama?",
+          "a": "The guanaco"
+        },
+        {
+          "level": 9,
+          "q": "Which wild camelid, with very precious wool, appears on Peru's coat of arms?",
+          "a": "The vicuña"
+        },
+        {
+          "level": 10,
+          "q": "What is the alpaca breed with long hanging locks called, the other being the Huacaya?",
+          "a": "Suri"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the Salar de Uyuni",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is the Salar de Uyuni?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 2,
+          "q": "What is the Salar de Uyuni covered with?",
+          "a": "Salt"
+        },
+        {
+          "level": 3,
+          "q": "True or false: it is the largest salt flat in the world?",
+          "a": "True"
+        },
+        {
+          "level": 4,
+          "q": "What does the salt flat turn into during the rainy season?",
+          "a": "A giant mirror"
+        },
+        {
+          "level": 5,
+          "q": "Which pink birds come to nest in the region's lagoons?",
+          "a": "Flamingos"
+        },
+        {
+          "level": 6,
+          "q": "What are some hotels on the edge of the salt flat built with?",
+          "a": "Salt blocks"
+        },
+        {
+          "level": 7,
+          "q": "Which metal, used in batteries, is hidden in huge quantities under the salt flat?",
+          "a": "Lithium"
+        },
+        {
+          "level": 8,
+          "q": "Which rusty attraction is found on the edge of the town of Uyuni?",
+          "a": "A train cemetery"
+        },
+        {
+          "level": 9,
+          "q": "What is the island covered with giant cacti in the middle of the salt flat called?",
+          "a": "Incahuasi Island"
+        },
+        {
+          "level": 10,
+          "q": "At roughly what altitude is the salt flat: 1,600 m, 3,650 m or 5,200 m?",
+          "a": "3,650 m"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of lucha libre",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country is lucha libre the emblem of?",
+          "a": "Mexico"
+        },
+        {
+          "level": 2,
+          "q": "What do luchadores wear on their faces?",
+          "a": "A mask"
+        },
+        {
+          "level": 3,
+          "q": "In which film does Jack Black play a monastery cook turned luchador?",
+          "a": "Nacho Libre"
+        },
+        {
+          "level": 4,
+          "q": "Which silver-masked luchador became a legend and a movie hero?",
+          "a": "El Santo"
+        },
+        {
+          "level": 5,
+          "q": "What are the 'bad guy' wrestlers, opposed to the técnicos, called?",
+          "a": "Rudos"
+        },
+        {
+          "level": 6,
+          "q": "What is the match where each wrestler bets his mask called?",
+          "a": "Máscara contra máscara (mask vs mask)"
+        },
+        {
+          "level": 7,
+          "q": "True or false: El Santo was buried wearing his mask?",
+          "a": "True"
+        },
+        {
+          "level": 8,
+          "q": "Which masked luchador became a WWE superstar with his famous '619'?",
+          "a": "Rey Mysterio"
+        },
+        {
+          "level": 9,
+          "q": "Which Mexican promotion, founded in 1933, is the oldest wrestling promotion still active?",
+          "a": "CMLL"
+        },
+        {
+          "level": 10,
+          "q": "What was El Santo's real name?",
+          "a": "Rodolfo Guzmán Huerta"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of Che Guevara",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country was Che Guevara born?",
+          "a": "Argentina"
+        },
+        {
+          "level": 2,
+          "q": "With Fidel Castro, he led the revolution in which country?",
+          "a": "Cuba"
+        },
+        {
+          "level": 3,
+          "q": "What was Che's real first name?",
+          "a": "Ernesto"
+        },
+        {
+          "level": 4,
+          "q": "Which studies did he complete: medicine, law or architecture?",
+          "a": "Medicine"
+        },
+        {
+          "level": 5,
+          "q": "In which country was he killed in 1967?",
+          "a": "Bolivia"
+        },
+        {
+          "level": 6,
+          "q": "What was the nickname of the old motorbike from his big trip across South America?",
+          "a": "La Poderosa"
+        },
+        {
+          "level": 7,
+          "q": "Which Cuban photographer took his famous portrait in the starred beret?",
+          "a": "Alberto Korda"
+        },
+        {
+          "level": 8,
+          "q": "In which Argentine city was he born?",
+          "a": "Rosario"
+        },
+        {
+          "level": 9,
+          "q": "True or false: as president of Cuba's National Bank, he signed banknotes simply 'Che'?",
+          "a": "True"
+        },
+        {
+          "level": 10,
+          "q": "In which Cuban city is his mausoleum?",
+          "a": "Santa Clara"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of Easter Island",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which country does Easter Island belong to?",
+          "a": "Chile"
+        },
+        {
+          "level": 2,
+          "q": "What are the island's giant stone statues called?",
+          "a": "Moai"
+        },
+        {
+          "level": 3,
+          "q": "In which ocean is Easter Island?",
+          "a": "The Pacific Ocean"
+        },
+        {
+          "level": 4,
+          "q": "Why is it called 'Easter' Island?",
+          "a": "Europeans discovered it on Easter Sunday"
+        },
+        {
+          "level": 5,
+          "q": "What is the island's Polynesian name?",
+          "a": "Rapa Nui"
+        },
+        {
+          "level": 6,
+          "q": "True or false: most moai face the sea?",
+          "a": "False (most face inland)"
+        },
+        {
+          "level": 7,
+          "q": "What are the red stone 'hats' placed on some moai called?",
+          "a": "Pukao"
+        },
+        {
+          "level": 8,
+          "q": "What was the island's ancient bird-man cult called?",
+          "a": "Tangata manu"
+        },
+        {
+          "level": 9,
+          "q": "Which Dutch navigator was the first European to land there, in 1722?",
+          "a": "Jacob Roggeveen"
+        },
+        {
+          "level": 10,
+          "q": "What is the island's ancient script, never deciphered, called?",
+          "a": "Rongorongo"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the Panama Canal",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is the Panama Canal?",
+          "a": "Panama"
+        },
+        {
+          "level": 2,
+          "q": "Which oceans does the canal connect?",
+          "a": "The Atlantic and the Pacific"
+        },
+        {
+          "level": 3,
+          "q": "In which year was the canal opened: 1869, 1914 or 1950?",
+          "a": "1914"
+        },
+        {
+          "level": 4,
+          "q": "Which Frenchman, already the builder of the Suez Canal, started the first works?",
+          "a": "Ferdinand de Lesseps"
+        },
+        {
+          "level": 5,
+          "q": "Which country finally completed the construction of the canal?",
+          "a": "The United States"
+        },
+        {
+          "level": 6,
+          "q": "In which year was the canal handed over to Panama: 1977, 1989 or 1999?",
+          "a": "1999"
+        },
+        {
+          "level": 7,
+          "q": "Which large artificial lake do ships cross in the middle of the canal?",
+          "a": "Gatún Lake"
+        },
+        {
+          "level": 8,
+          "q": "What are ships of the maximum size for the old locks called?",
+          "a": "Panamax"
+        },
+        {
+          "level": 9,
+          "q": "True or false: the canal's Pacific entrance is further east than its Atlantic entrance?",
+          "a": "True"
+        },
+        {
+          "level": 10,
+          "q": "How much did Richard Halliburton pay to swim through the canal in 1928: 36 cents, 36 dollars or 360 dollars?",
+          "a": "36 cents"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of the Amazon",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which great river flows through the Amazon rainforest?",
+          "a": "The Amazon"
+        },
+        {
+          "level": 2,
+          "q": "Which country has the largest part of the Amazon rainforest?",
+          "a": "Brazil"
+        },
+        {
+          "level": 3,
+          "q": "Which small fish with razor-sharp teeth has a man-eating reputation?",
+          "a": "The piranha"
+        },
+        {
+          "level": 4,
+          "q": "What color is the famous freshwater dolphin of the Amazon?",
+          "a": "Pink"
+        },
+        {
+          "level": 5,
+          "q": "Which giant snake, the heaviest in the world, lives in Amazonian swamps?",
+          "a": "The green anaconda"
+        },
+        {
+          "level": 6,
+          "q": "Which big city in the middle of the jungle has a 19th-century opera house, the Teatro Amazonas?",
+          "a": "Manaus"
+        },
+        {
+          "level": 7,
+          "q": "The name 'Amazon' comes from the warrior women of which mythology?",
+          "a": "Greek mythology"
+        },
+        {
+          "level": 8,
+          "q": "True or false: no bridge crosses the Amazon River?",
+          "a": "True"
+        },
+        {
+          "level": 9,
+          "q": "Which Spanish conquistador was the first European to travel down the whole river, in 1542?",
+          "a": "Francisco de Orellana"
+        },
+        {
+          "level": 10,
+          "q": "What is the giant wave that travels up the Amazon from the ocean at certain tides called?",
+          "a": "The pororoca"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of Latin American animals",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Which South American animal is the largest rodent in the world?",
+          "a": "The capybara"
+        },
+        {
+          "level": 2,
+          "q": "Which tropical bird is famous for its huge colorful beak?",
+          "a": "The toucan"
+        },
+        {
+          "level": 3,
+          "q": "In which country does the axolotl live in the wild?",
+          "a": "Mexico"
+        },
+        {
+          "level": 4,
+          "q": "True or false: the axolotl can regrow its lost legs?",
+          "a": "True"
+        },
+        {
+          "level": 5,
+          "q": "True or false: the sloth only comes down from its tree about once a week to go to the toilet?",
+          "a": "True"
+        },
+        {
+          "level": 6,
+          "q": "Guatemala's currency is named after which bird?",
+          "a": "The quetzal"
+        },
+        {
+          "level": 7,
+          "q": "Two-toed or three-toed sloth: which one exists?",
+          "a": "Both"
+        },
+        {
+          "level": 8,
+          "q": "True or false: an axolotl appears on a Mexican banknote?",
+          "a": "True (the 50-peso note)"
+        },
+        {
+          "level": 9,
+          "q": "In which country does the world's smallest bird, the bee hummingbird, live?",
+          "a": "Cuba"
+        },
+        {
+          "level": 10,
+          "q": "What is it called when an animal keeps its larval traits as an adult, like the axolotl?",
+          "a": "Neoteny"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of chocolate",
+      "questions": [
+        {
+          "level": 1,
+          "q": "Chocolate is made from the beans of which tree?",
+          "a": "The cacao tree"
+        },
+        {
+          "level": 2,
+          "q": "Which Mexican sauce mixes chocolate and chilies?",
+          "a": "Mole"
+        },
+        {
+          "level": 3,
+          "q": "True or false: the Aztecs used cacao beans as money?",
+          "a": "True"
+        },
+        {
+          "level": 4,
+          "q": "Which Aztec emperor drank chocolate from golden cups?",
+          "a": "Moctezuma"
+        },
+        {
+          "level": 5,
+          "q": "What is the cacao fruit containing the beans called?",
+          "a": "The pod"
+        },
+        {
+          "level": 6,
+          "q": "Which country is the world's top cacao producer today: Brazil, Ivory Coast or Mexico?",
+          "a": "Ivory Coast"
+        },
+        {
+          "level": 7,
+          "q": "From which Indigenous language does the word 'chocolate' come?",
+          "a": "Nahuatl (the Aztec language)"
+        },
+        {
+          "level": 8,
+          "q": "Which rare, fine cacao variety has a name meaning 'creole'?",
+          "a": "Criollo"
+        },
+        {
+          "level": 9,
+          "q": "Which Mexican state, which gave its name to a hot sauce, is the country's top cacao producer?",
+          "a": "Tabasco"
+        },
+        {
+          "level": 10,
+          "q": "What does 'Theobroma', the cacao tree's scientific name, mean?",
+          "a": "Food of the gods"
+        }
+      ]
+    },
+    {
+      "theme": "Improbable",
+      "subject": "The oddities of Latin American carnivals",
+      "questions": [
+        {
+          "level": 1,
+          "q": "In which country is the famous Rio carnival held?",
+          "a": "Brazil"
+        },
+        {
+          "level": 2,
+          "q": "Which dance do the big schools of the Rio carnival parade with?",
+          "a": "Samba"
+        },
+        {
+          "level": 3,
+          "q": "What is the stadium-avenue built in Rio for the parades called?",
+          "a": "The Sambadrome"
+        },
+        {
+          "level": 4,
+          "q": "In which country is the Barranquilla carnival?",
+          "a": "Colombia"
+        },
+        {
+          "level": 5,
+          "q": "Which Bolivian city holds a carnival listed as UNESCO heritage?",
+          "a": "Oruro"
+        },
+        {
+          "level": 6,
+          "q": "Which masked devil dance is the star of the Oruro carnival?",
+          "a": "The Diablada"
+        },
+        {
+          "level": 7,
+          "q": "Which drum rhythm of African origin resounds at the Montevideo carnival?",
+          "a": "Candombe"
+        },
+        {
+          "level": 8,
+          "q": "True or false: Uruguay's carnival lasts about 40 days, making it one of the longest in the world?",
+          "a": "True"
+        },
+        {
+          "level": 9,
+          "q": "What are the singing, satirical troupes of the Uruguayan carnival called?",
+          "a": "Murgas"
+        },
+        {
+          "level": 10,
+          "q": "In Salvador de Bahia, what are the sound-system trucks bands play on called?",
+          "a": "Trios elétricos"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Capital punishment",
+      "questions": [
+        {
+          "level": null,
+          "q": "Give the capital of the following countries.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Honduras\nB. Nicaragua\nC. Paraguay\nD. Ecuador\nE. Uruguay\nF. Brazil\nG. Costa Rica\nH. El Salvador\nI. Venezuela\nJ. Bolivia",
+          "a": "A. Tegucigalpa\nB. Managua\nC. Asunción\nD. Quito\nE. Montevideo\nF. Brasília (not Rio de Janeiro!)\nG. San José\nH. San Salvador\nI. Caracas\nJ. Sucre (constitutional capital) or La Paz (seat of government), both are accepted"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Hot chocolate",
+      "questions": [
+        {
+          "level": null,
+          "q": "Here are some Spanish words (many of which made it into English). Tell us whether they come from NAHUATL (Aztecs), QUECHUA (Incas) or TAÍNO (Caribbean).\nYou move forward one square per correct answer but go back one square for each mistake.\nA. Chocolate (chocolate)\nB. Huracán (hurricane)\nC. Cóndor (condor)\nD. Coyote (coyote)\nE. Canoa (canoe)\nF. Papa (potato)\nG. Chicle (chewing gum)\nH. Hamaca (hammock)\nI. Puma (puma)\nJ. Tomate (tomato)",
+          "a": "A. Nahuatl (from \"xocolatl\")\nB. Taíno (from \"hurakán\")\nC. Quechua (from \"kuntur\")\nD. Nahuatl (from \"coyotl\")\nE. Taíno (one of the first words recorded by Christopher Columbus)\nF. Quechua\nG. Nahuatl (from \"tzictli\")\nH. Taíno\nI. Quechua\nJ. Nahuatl (from \"tomatl\")"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Feeling peckish",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us which country these dishes are the specialty of.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Pupusa\nB. Feijoada\nC. Chivito\nD. Mole poblano\nE. Lomo saltado\nF. Bandeja paisa\nG. Baleada\nH. Salteña\nI. Ropa vieja\nJ. Pabellón criollo",
+          "a": "A. El Salvador\nB. Brazil\nC. Uruguay (a fully loaded beef sandwich)\nD. Mexico\nE. Peru\nF. Colombia\nG. Honduras\nH. Bolivia\nI. Cuba\nJ. Venezuela"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Club Tropicana",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us which country these football clubs play in.\nAnswer all the questions, you move forward one square per correct answer.\nA. Peñarol\nB. Colo-Colo\nC. Saprissa\nD. Alianza Lima\nE. Barcelona Sporting Club (not the one from Spain!)\nF. Bolívar\nG. Atlético Nacional\nH. Cerro Porteño\nI. Chivas\nJ. Corinthians",
+          "a": "A. Uruguay (Montevideo)\nB. Chile (Santiago)\nC. Costa Rica\nD. Peru\nE. Ecuador (Guayaquil)\nF. Bolivia (La Paz)\nG. Colombia (Medellín)\nH. Paraguay (Asunción)\nI. Mexico (Guadalajara)\nJ. Brazil (São Paulo)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "The Hand of God",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us whether the following statements are true or false.\nYou move forward one square per correct answer but go back one square for each mistake.\nA. Uruguay won the very first World Cup, in 1930\nB. Colombia has already won a World Cup\nC. Pelé won 3 World Cups\nD. Venezuela has already played in a World Cup finals tournament\nE. Chile hosted the 1962 World Cup\nF. In the 1950 \"Maracanazo\", Brazil beat Uruguay\nG. Costa Rica reached the quarter-finals of the 2014 World Cup\nH. Maradona's \"Hand of God\" goal was scored against Germany",
+          "a": "A. True (4-2 against Argentina)\nB. False\nC. True (1958, 1962 and 1970)\nD. False (it is the only South American country never to have qualified)\nE. True\nF. False (Uruguay beat Brazil 2-1 at the Maracanã)\nG. True (knocked out on penalties by the Netherlands)\nH. False (against England, in 1986)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Cry me a river",
+      "questions": [
+        {
+          "level": null,
+          "q": "Name rivers of South America.\nYou move forward one square per correct answer.\nYou only have 45 seconds",
+          "a": "Amazon, Orinoco, Paraná, Paraguay, Uruguay,\nMagdalena, Cauca, São Francisco, Madeira, Rio Negro,\nTocantins, Araguaia, Xingu, Tapajós, Purus, Juruá,\nMarañón, Ucayali, Napo, Putumayo, Caquetá,\nPilcomayo, Bermejo, Salado, Biobío, Apurímac, Mamoré, Beni...\nOther answers are subject to the approval of more than half of the players"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Yo ho ho and a bottle of rum",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us which country these rums come from.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Havana Club\nB. Zacapa\nC. Flor de Caña\nD. Diplomático\nE. Brugal\nF. Ron Abuelo\nG. Don Q\nH. Ron Medellín",
+          "a": "A. Cuba\nB. Guatemala\nC. Nicaragua\nD. Venezuela\nE. Dominican Republic\nF. Panama\nG. Puerto Rico\nH. Colombia"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Cheers!",
+      "questions": [
+        {
+          "level": null,
+          "q": "Give the main ingredient of these drinks.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Tequila\nB. Pisco\nC. Cachaça\nD. Chicha de jora\nE. Pulque\nF. Tepache\nG. Mexican horchata\nH. Chicha morada",
+          "a": "A. Blue agave\nB. Grapes\nC. Fresh sugarcane juice\nD. Sprouted (malted) corn\nE. Fermented agave (maguey) sap\nF. Pineapple peel\nG. Rice\nH. Purple corn"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Hips don't lie",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us which country these artists come from.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Shakira\nB. Bad Bunny\nC. Celia Cruz\nD. Juan Luis Guerra\nE. Rubén Blades\nF. Mercedes Sosa\nG. Ricardo Arjona\nH. Violeta Parra\nI. Caetano Veloso\nJ. Jorge Drexler",
+          "a": "A. Colombia\nB. Puerto Rico\nC. Cuba\nD. Dominican Republic\nE. Panama\nF. Argentina\nG. Guatemala\nH. Chile\nI. Brazil\nJ. Uruguay"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "I am your (secret) father",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us whether these telenovelas are MEXICAN, VENEZUELAN, COLOMBIAN, BRAZILIAN or ARGENTINE.\nAnswer all the questions, you move forward one square per correct answer.\nA. Yo soy Betty, la fea (the original Ugly Betty)\nB. Los ricos también lloran\nC. Cristal\nD. Café con aroma de mujer\nE. Kassandra\nF. María la del Barrio\nG. Escrava Isaura\nH. Muñeca brava\nI. O Clone\nJ. Rubí",
+          "a": "A. Colombian (1999)\nB. Mexican (1979)\nC. Venezuelan (1985)\nD. Colombian (1994)\nE. Venezuelan (1992)\nF. Mexican (1995)\nG. Brazilian (1976)\nH. Argentine (1998, starring Natalia Oreiro)\nI. Brazilian (2001)\nJ. Mexican (2004)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Crowd pleaser",
+      "questions": [
+        {
+          "level": null,
+          "q": "Rank these countries from most to least populated.\nYou move forward 6 squares if you answer correctly.\nA. Argentina\nB. Mexico\nC. Uruguay\nD. Brazil\nE. Peru\nF. Colombia",
+          "a": "Answer D, B, F, A, E then C\nD. Brazil, about 210 million inhabitants\nB. Mexico, about 130 million\nF. Colombia, about 53 million\nA. Argentina, about 46 million\nE. Peru, about 34 million\nC. Uruguay, about 3.4 million"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Once upon a time",
+      "questions": [
+        {
+          "level": null,
+          "q": "Put these events in chronological order.\nYou move forward 6 squares if you answer correctly.\nA. The triumph of the Cuban Revolution\nB. The fall of Tenochtitlan, the Aztec capital\nC. The opening of the Panama Canal\nD. The \"Grito de Dolores\", start of Mexico's War of Independence\nE. The independence of Brazil\nF. Christopher Columbus's first arrival in the Americas",
+          "a": "Answer F, B, D, E, C then A\nF. Christopher Columbus in 1492\nB. The fall of Tenochtitlan in 1521\nD. The Grito de Dolores in 1810\nE. Brazil's independence in 1822\nC. The Panama Canal in 1914\nA. The Cuban Revolution in 1959"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Lost in the Andes",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us whether the following statements are true or false.\nYou move forward one square per correct answer but go back one square for each mistake.\nA. The Amazon flows into the Atlantic Ocean\nB. Lake Titicaca is shared between Peru and Bolivia\nC. Aconcagua, the highest peak in the Americas, is in Chile\nD. Angel Falls, the highest waterfall in the world, is in Venezuela\nE. The Iguazu Falls lie on the border between Argentina and Brazil\nF. The Galápagos Islands belong to Colombia\nG. Uruguay shares a border with Chile\nH. Bolivia has no access to the sea",
+          "a": "A. True\nB. True\nC. False (it is in Argentina, in Mendoza province)\nD. True\nE. True\nF. False (they belong to Ecuador)\nG. False (only with Argentina and Brazil)\nH. True (it lost it to Chile in the War of the Pacific)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Money, money, money",
+      "questions": [
+        {
+          "level": null,
+          "q": "Give the official currency of these countries.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Guatemala\nB. Honduras\nC. Nicaragua\nD. Costa Rica\nE. Panama\nF. Venezuela\nG. Peru\nH. Paraguay\nI. Brazil\nJ. Ecuador",
+          "a": "A. The quetzal\nB. The lempira\nC. The córdoba\nD. The colón\nE. The balboa (used alongside the US dollar)\nF. The bolívar\nG. The sol\nH. The guaraní\nI. The real\nJ. The US dollar (since 2000)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Flying colors",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us whether the following statements about flags are true or false.\nYou move forward one square per correct answer but go back one square for each mistake.\nA. The flag of Brazil bears the motto \"Ordem e Progresso\"\nB. The flag of Mexico shows an eagle devouring a snake on a cactus\nC. The flag of Cuba has only one star\nD. On the Colombian flag, the yellow stripe takes up half of the flag\nE. The flag of Chile has two stars\nF. The flag of Paraguay has a different emblem on the front and the back\nG. The flag of Venezuela has 8 stars\nH. The flag of Peru is made of horizontal stripes",
+          "a": "A. True\nB. True\nC. True\nD. True\nE. False (a single white star)\nF. True (coat of arms on one side, Treasury seal on the other)\nG. True (since 2006)\nH. False (vertical red, white, red stripes)"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Indiana Jones",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us which country these archaeological sites are in.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. Machu Picchu\nB. Chichén Itzá\nC. Tikal\nD. Copán\nE. Tiwanaku\nF. Ciudad Perdida (Teyuna)\nG. Ingapirca\nH. Joya de Cerén\nI. The moai of Rapa Nui\nJ. Chan Chan",
+          "a": "A. Peru\nB. Mexico\nC. Guatemala\nD. Honduras\nE. Bolivia\nF. Colombia\nG. Ecuador\nH. El Salvador (nicknamed \"the Pompeii of the Americas\")\nI. Chile (Easter Island)\nJ. Peru"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Shake it",
+      "questions": [
+        {
+          "level": null,
+          "q": "Name dances or music genres born in Latin America or the Spanish-speaking Caribbean.\nYou move forward one square per correct answer.\nYou only have 45 seconds",
+          "a": "Salsa, tango, cumbia, merengue, bachata, Cuban son,\nmambo, cha-cha-cha, rumba, bolero, danzón, samba,\nbossa nova, forró, lambada, reggaeton, vallenato,\njoropo, cueca, milonga, candombe, huayno, marinera,\npunta, plena, bomba, ranchera, champeta...\nOther answers are subject to the approval of more than half of the players"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Who was it?",
+      "questions": [
+        {
+          "level": null,
+          "q": "Find this person using as few clues as possible.\nOnly one guess after each clue.\nFor 10 squares: She was a Mexican artist.\nFor 9 squares: She was born in 1907 in Coyoacán.\nFor 8 squares: At 18, she was badly injured in a bus accident.\nFor 7 squares: She married the same man twice.\nFor 6 squares: Her home, the \"Casa Azul\" (Blue House), became a museum.\nFor 5 squares: She painted a great many self-portraits.\nFor 4 squares: She was famous for her unibrow.\nFor 3 squares: Salma Hayek played her on screen in 2002.\nFor 2 squares: Her husband was the muralist Diego Rivera.\nFor 1 square: Her first name is Frida.",
+          "a": "Frida Kahlo"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Sky blue army",
+      "questions": [
+        {
+          "level": null,
+          "q": "Tell us which national football team goes by these nicknames.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. La Albiceleste\nB. La Celeste\nC. La Canarinha\nD. El Tri\nE. La Vinotinto\nF. La Albirroja\nG. Los Cafeteros\nH. La Selecta\nI. La Verde\nJ. La Blanquirroja",
+          "a": "A. Argentina\nB. Uruguay\nC. Brazil\nD. Mexico\nE. Venezuela\nF. Paraguay\nG. Colombia\nH. El Salvador\nI. Bolivia\nJ. Peru"
+        }
+      ]
+    },
+    {
+      "theme": "Challenge",
+      "subject": "Where you from?",
+      "questions": [
+        {
+          "level": null,
+          "q": "These nicknames refer to the people of a country or a city. Tell us which.\nAnswer all the questions, you have 8 seconds maximum per question and move forward one square per correct answer.\nA. A Tico\nB. A Nica\nC. A Catracho\nD. A Guanaco\nE. A Chapín\nF. A Boricua\nG. A Charrúa\nH. A Carioca\nI. A Chilango\nJ. A Quisqueyano",
+          "a": "A. Costa Rica\nB. Nicaragua\nC. Honduras\nD. El Salvador\nE. Guatemala\nF. Puerto Rico\nG. Uruguay\nH. Rio de Janeiro (Brazil)\nI. Mexico City (Mexico)\nJ. Dominican Republic"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Only three men ever silenced the Maracanã",
+      "questions": [
+        {
+          "level": null,
+          "q": "During the 1950 \"Maracanazo\", who scored Uruguay's winning goal against Brazil (2-1)?\nA. Obdulio Varela\nB. Juan Alberto Schiaffino\nC. Alcides Ghiggia\nD. Óscar Míguez",
+          "a": "Answer C\n(Schiaffino had scored the equalizer)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Two capitals are better than one",
+      "questions": [
+        {
+          "level": null,
+          "q": "What is the constitutional capital of Bolivia?\nA. La Paz\nB. Sucre\nC. Cochabamba\nD. Santa Cruz de la Sierra",
+          "a": "Answer B\n(La Paz is the seat of government)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "One hundred years of family trees",
+      "questions": [
+        {
+          "level": null,
+          "q": "In Gabriel García Márquez's \"One Hundred Years of Solitude\", which family founds the village of Macondo?\nA. The Buendías\nB. The Truebas\nC. The Arizas\nD. The Del Valles",
+          "a": "Answer A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Para bailar La Bamba",
+      "questions": [
+        {
+          "level": null,
+          "q": "\"La Bamba\", made famous by Ritchie Valens, is a traditional son jarocho from which Mexican state?\nA. Jalisco\nB. Oaxaca\nC. Yucatán\nD. Veracruz",
+          "a": "Answer D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Give us back the canal",
+      "questions": [
+        {
+          "level": null,
+          "q": "In which year did the United States hand the Panama Canal over to Panama?\nA. 1977\nB. 1989\nC. 1999\nD. 2004",
+          "a": "Answer C\n(On December 31, 1999; the Torrijos-Carter Treaties date from 1977)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Forever alone",
+      "questions": [
+        {
+          "level": null,
+          "q": "Lonesome George, the Galápagos giant tortoise who died in 2012, was the last of the species from which island?\nA. Pinta\nB. Isabela\nC. Santa Cruz\nD. San Cristóbal",
+          "a": "Answer A"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Tiger's milk, no tiger required",
+      "questions": [
+        {
+          "level": null,
+          "q": "In Peru, what is \"leche de tigre\"?\nA. A Cuban cocktail made with rum and milk\nB. A Colombian dessert made with condensed milk\nC. A very strong Venezuelan coffee\nD. The marinade juice of ceviche",
+          "a": "Answer D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Fue sin querer queriendo",
+      "questions": [
+        {
+          "level": null,
+          "q": "In the show \"El Chavo del Ocho\", where does El Chavo like to hide in the vecindad?\nA. In a cardboard box\nB. In a barrel\nC. Under the stairs\nD. In a bathtub",
+          "a": "Answer B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "King of the continent",
+      "questions": [
+        {
+          "level": null,
+          "q": "Which country holds the record for most Copa América titles?\nA. Uruguay\nB. Brazil\nC. Argentina\nD. Chile",
+          "a": "Answer C\n(16 titles, against 15 for Uruguay)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Granny started a revolution",
+      "questions": [
+        {
+          "level": null,
+          "q": "What was the name of the yacht that carried Fidel Castro and his guerrillas from Mexico to Cuba in 1956?\nA. Sierra Maestra\nB. Granma\nC. Moncada\nD. Libertad",
+          "a": "Answer B\n(It later gave its name to Cuba's official newspaper)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "No angel",
+      "questions": [
+        {
+          "level": null,
+          "q": "Angel Falls in Venezuela, the tallest waterfall in the world, is named after...\nA. An angel sighting reported by a missionary\nB. Its shape, which looks like wings\nC. A Pemón legend about a fallen angel\nD. Jimmie Angel, an American aviator",
+          "a": "Answer D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Thanks to life (and thanks to whom?)",
+      "questions": [
+        {
+          "level": null,
+          "q": "Who wrote and composed the song \"Gracias a la vida\"?\nA. Violeta Parra\nB. Mercedes Sosa\nC. Chabuca Granda\nD. Víctor Jara",
+          "a": "Answer A\n(Mercedes Sosa made it famous worldwide)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Top of the class",
+      "questions": [
+        {
+          "level": null,
+          "q": "Who was the first Latin American writer to win the Nobel Prize in Literature?\nA. Pablo Neruda\nB. Gabriela Mistral\nC. Miguel Ángel Asturias\nD. Gabriel García Márquez",
+          "a": "Answer B\n(In 1945)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Bzzzz",
+      "questions": [
+        {
+          "level": null,
+          "q": "In 1881, Cuban doctor Carlos Finlay was the first to claim that a mosquito transmitted which disease?\nA. Malaria\nB. Dengue\nC. Yellow fever\nD. Cholera",
+          "a": "Answer C"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Ugly, but overqualified",
+      "questions": [
+        {
+          "level": null,
+          "q": "In \"Yo soy Betty, la fea\", what is Betty's full name?\nA. Beatriz Mendoza Valencia\nB. Beatriz Valencia Pinzón\nC. Beatriz Solano Mendoza\nD. Beatriz Aurora Pinzón Solano",
+          "a": "Answer D"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Show me the money",
+      "questions": [
+        {
+          "level": null,
+          "q": "The lempira is the currency of which country?\nA. Honduras\nB. Guatemala\nC. Nicaragua\nD. El Salvador",
+          "a": "Answer A\n(Guatemala uses the quetzal, Nicaragua the córdoba)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Bolívar's dream",
+      "questions": [
+        {
+          "level": null,
+          "q": "Which of these present-day countries was NOT part of Simón Bolívar's Gran Colombia?\nA. Venezuela\nB. Ecuador\nC. Panama\nD. Bolivia",
+          "a": "Answer D\n(Even though it is named after him!)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Guaca-what?",
+      "questions": [
+        {
+          "level": null,
+          "q": "In Nahuatl, the word \"āhuacatl\", which gave us \"avocado\", meant the fruit but also...\nA. A green stone\nB. A testicle\nC. Forest butter\nD. The heart of the gods",
+          "a": "Answer B"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "The King has a real name",
+      "questions": [
+        {
+          "level": null,
+          "q": "What is Pelé's real name?\nA. Edson Arantes do Nascimento\nB. Ronaldo Luís Nazário de Lima\nC. Manoel Francisco dos Santos\nD. Artur Antunes Coimbra",
+          "a": "Answer A\n(The others are Ronaldo, Garrincha and Zico)"
+        }
+      ]
+    },
+    {
+      "theme": "Gagner",
+      "subject": "Order, progress and moving house",
+      "questions": [
+        {
+          "level": null,
+          "q": "What was the very first capital of Brazil?\nA. Rio de Janeiro\nB. São Paulo\nC. Salvador da Bahia\nD. Recife",
+          "a": "Answer C\n(From 1549 to 1763, before Rio and then Brasília)"
+        }
+      ]
+    }
+  ]
+}

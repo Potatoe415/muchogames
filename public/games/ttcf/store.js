@@ -3,6 +3,7 @@
 // validated against the loaded cards and the board: a bad save is dropped.
 const SAVE_KEY = 'muchogames_ttcf_save';
 const MODE_KEY = 'muchogames_ttcf_mode';
+const LATINO_KEY = 'muchogames_ttcf_latino';
 const VERSION = 1;
 const MODES = ['board', 'wheel'];
 const STEPS = ['bonus', 'eval', 'question', 'answer'];
@@ -37,6 +38,7 @@ function isValidMatch(match, cards, last) {
     teams.length >= 2 &&
     teams.length <= MAX_TEAMS &&
     MODES.includes(match.mode) &&
+    (match.latino == null || typeof match.latino === 'boolean') &&
     teams.every((team, i) => validTeam(team, i, last)) &&
     isInt(match.cur, 0, teams.length - 1) &&
     validCard(match.card, cards, last)
@@ -88,6 +90,23 @@ export function readMode() {
 export function storeMode(mode) {
   try {
     localStorage.setItem(MODE_KEY, mode);
+  } catch {
+    // Storage unavailable: the choice lasts for this visit.
+  }
+}
+
+// The Latino extension (extra cards mixed into the deck): the last choice on the dashboard.
+export function readLatino() {
+  try {
+    return localStorage.getItem(LATINO_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+export function storeLatino(on) {
+  try {
+    localStorage.setItem(LATINO_KEY, on ? '1' : '0');
   } catch {
     // Storage unavailable: the choice lasts for this visit.
   }
