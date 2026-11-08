@@ -54,10 +54,13 @@ function fitTokens(tokens) {
 }
 
 // The track winds like a snake: each row is aligned, its last space drops half
-// a row (the bend, class is-turn), and the next row goes back the other way
-// from the column beside it. Row 0 runs over all `cols` columns; the later
-// rows leave out the column of the bend above them. Returns { col, row, turn }
-// (1-based grid cells) for every space.
+// a row (the bend), and the next row goes back the other way from the column
+// beside it. Row 0 runs over all `cols` columns; the later rows leave out the
+// column of the bend above them. Returns { col, row, dy } for every space: the
+// 1-based grid cell and a vertical offset in rows (the bend is eased over the
+// spaces around it, and the whole track ripples gently with the column; the
+// ripple depends on the column only, so two spaces one above the other move
+// together and never touch).
 function snakeLayout(count, cols) {
   const cells = [];
   let row = 0;
@@ -68,10 +71,23 @@ function snakeLayout(count, cols) {
     else for (let c = cols - 2; c >= 0; c--) lane.push(c);
     for (let k = 0; k < lane.length && cells.length < count; k++) {
       const last = k === lane.length - 1;
-      cells.push({ col: lane[k] + 1, row: row + 1, turn: last && cells.length < count - 1 });
+      cells.push({ col: lane[k] + 1, row: row + 1, dy: 0, turn: last && cells.length < count - 1 });
     }
     row++;
   }
+  // The bend: the corner space drops half a row; the spaces on either side ease
+  // into it (the row above leans down, the row below leans up).
+  cells.forEach((cell, i) => {
+    if (!cell.turn) return;
+    cell.dy += 0.5;
+    [[1, 0.09], [2, 0.035]].forEach(([d, amount]) => {
+      if (cells[i - d]?.row === cell.row) cells[i - d].dy += amount;
+      if (cells[i + d]?.row === cell.row + 1) cells[i + d].dy -= amount;
+    });
+  });
+  cells.forEach((cell) => {
+    cell.dy += 0.05 * Math.sin(cell.col * 0.9);
+  });
   return cells;
 }
 
@@ -110,7 +126,7 @@ export function renderBoard(args) {
       space.dataset.id = `ttcf-space-${i}`;
       space.style.gridColumn = String(cells[i].col);
       space.style.gridRow = String(cells[i].row);
-      if (cells[i].turn) space.classList.add('is-turn');
+      space.style.setProperty('--dy', cells[i].dy.toFixed(3));
       space.title = labels[theme] || theme;
       const badge = document.createElement('span');
       badge.className = 'space-badge';

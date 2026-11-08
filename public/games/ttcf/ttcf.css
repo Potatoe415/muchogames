@@ -326,9 +326,10 @@ body {
   --cell: min(calc((100cqw - (var(--cols) - 1) * var(--gap)) / var(--cols)), calc((100cqh - (var(--rows) - 1) * var(--row-gap)) / var(--rows)));
 }
 
-/* The bend of the snake: the last space of a row drops half a row. */
-.board-space.is-turn {
-  transform: translateY(calc((var(--cell) + var(--row-gap)) / 2));
+/* The snake: each space is shifted by --dy rows (set in board.js) so the bends
+   are arcs and the rows ripple a little. */
+.board-space {
+  transform: translateY(calc(var(--dy, 0) * (var(--cell) + var(--row-gap))));
 }
 
 /* Pastel tiles with a white line icon (assets/icons/); the start and end
