@@ -2,7 +2,7 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Piou now plays at the original Flappy Bird's difficulty (FlapPyBird values: 100 px gap, 52 px pipes, 128 px/s, ~147 px apart, no deadly ceiling). Before that, TTCF card dialog shows the flags of the other two languages at the bottom of the screen (switch the card language mid-card). Before that, TTCF Superbe cards now explain themselves: the rule and its theme (set or free), then a real card of that theme is played under the rule; the 30 s timer bar sits under the card and keeps running through the answer. Before that, the card turns over on Voir la réponse (↺ turns it back). Before that, 4 en ligne gets a bot (ticket #11): dashboard mode selector Joueur contre joueur / Bot facile / Bot normal, random first colour in every mode, mode locked during a match. TTCF no longer flashes its 8 acorns on the dashboard at first open with a saved match, and a new match shows its own board under the Débuter card. Before that, Salade de Cafards preloads its images (new `preload.js`), all WebP now (2.5 MB -> 258 KB); platform rule 6.3 (decision 0064, portrait board 99% wide); the party quiz "Tu te crois fort ?" (`ttcf`, decision 0063).
+Status: TTCF board: the draw / spin button keeps its space while off (card open, token walking), so the tiles no longer resize. Before that, Piou now plays at the original Flappy Bird's difficulty (FlapPyBird values: 100 px gap, 52 px pipes, 128 px/s, ~147 px apart, no deadly ceiling). Before that, TTCF card dialog shows the flags of the other two languages at the bottom of the screen (switch the card language mid-card). Before that, TTCF Superbe cards now explain themselves: the rule and its theme (set or free), then a real card of that theme is played under the rule; the 30 s timer bar sits under the card and keeps running through the answer. Before that, the card turns over on Voir la réponse (↺ turns it back). Before that, 4 en ligne gets a bot (ticket #11): dashboard mode selector Joueur contre joueur / Bot facile / Bot normal, random first colour in every mode, mode locked during a match. TTCF no longer flashes its 8 acorns on the dashboard at first open with a saved match, and a new match shows its own board under the Débuter card. Before that, Salade de Cafards preloads its images (new `preload.js`), all WebP now (2.5 MB -> 258 KB); platform rule 6.3 (decision 0064, portrait board 99% wide); the party quiz "Tu te crois fort ?" (`ttcf`, decision 0063).
 Focus: Owner phone check of TTCF's first open (no acorn flash) and of Salade de Cafards' images; play-tests of 4 en ligne (bots), TTCF (board and wheel), Easy Frog, Piou, Simon, Tetris, then 2048 and Fusion de fruits; owner phone check of the hub.
 Level: L1 (one game)
 
@@ -13,6 +13,7 @@ Context:
 - Relevant_Decisions: 0064, 0063, 0062, 0061, 0060, 0059, 0054, 0053
 
 Next:
+- Owner: TTCF board on a phone: open and close a card, watch a token walk: the tiles keep their size, the button just vanishes and comes back. Not run in a browser, only the checks.
 - Owner: play Piou on a phone and desktop: tighter, faster, closer pipes than before (original difficulty); say if it feels right.
 - Owner: TTCF on a phone: with FR on, the EN and ES flags at the bottom of the screen switch the card text at once (question, answer, Superbe rule), timer keeps running. Not run in a browser, only `npm run check`.
 - Owner: TTCF on a phone: a Superbe space (or wheel slice) shows the rule + theme buttons, then a card of that theme with the rule above it; timer bar under the card, still running on the answer side; Voir la réponse turns the card, ↺ turns it back. Not run in a browser, only `npm run check`.
@@ -37,5 +38,6 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-11 TTCF: draw / spin button turned off with `.is-off` (`visibility: hidden` + disabled) instead of `hidden`, so the row keeps its height; `hidden` only picks draw or spin by mode. lint + `check:games` + build OK, Prettier fails only on the unrelated `ttcf_french_only.json`.
 - 2026-11-08 Piou: original Flappy Bird difficulty in `engine.js` (FlapPyBird 288x512 px values, 1 px = 88/404.5 u); bird smaller and further left; ceiling no longer deadly (flap ignored 2 bird heights above the screen, as there). `check:games` + build OK, Prettier fails only on the unrelated `ttcf_french_only.json`; Node sim OK, no browser run.
 - 2026-11-08 TTCF: flags of the other two languages at the bottom of the screen under the card (`ttcf-card-lang`), reuse `setLanguage`. `npm run check` OK, no browser run.

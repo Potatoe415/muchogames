@@ -407,8 +407,17 @@ function renderCard() {
   const card = page.match.card;
   $('ttcf-card-modal').hidden = !card;
   const wheel = page.match.mode === 'wheel';
-  $('ttcf-draw-card-btn').hidden = Boolean(card || page.walk || wheel);
-  $('ttcf-spin-btn').hidden = Boolean(card || !wheel);
+  // The mode picks the button; a card or a walk only turns it off, so the
+  // row keeps its height and the tiles never resize.
+  const off = Boolean(card || page.walk);
+  const draw = $('ttcf-draw-card-btn');
+  const spin = $('ttcf-spin-btn');
+  draw.hidden = wheel;
+  spin.hidden = !wheel;
+  draw.classList.toggle('is-off', off);
+  spin.classList.toggle('is-off', off);
+  draw.disabled = off;
+  spin.disabled = off || Boolean(page.spinning);
   if (!card) {
     page.peek = false;
     page.face = null;

@@ -477,6 +477,11 @@ body {
   text-align: center;
 }
 
+/* Off (card open, token walking): invisible but still sized. */
+.board-actions .btn.is-off {
+  visibility: hidden;
+}
+
 /* --- Card dialog: below the header, so the quit button stays reachable;
    it only fades in (no slide that could scroll the page). --- */
 .modal {
