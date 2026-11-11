@@ -18,8 +18,6 @@ Next:
 - Owner: TTCF on a phone: with FR on, the EN and ES flags at the bottom of the screen switch the card text at once (question, answer, Superbe rule), timer keeps running. Not run in a browser, only `npm run check`.
 - Owner: TTCF on a phone: a Superbe space (or wheel slice) shows the rule + theme buttons, then a card of that theme with the rule above it; timer bar under the card, still running on the answer side; Voir la réponse turns the card, ↺ turns it back. Not run in a browser, only `npm run check`.
 - Owner: TTCF on a phone, first open with a match saved: no acorn row flash, Resume greyed for a moment then usable; start a match: all acorns on D under the Débuter card.
-- Owner: Salade de Cafards on a phone: cards, background and banner sharp enough after the WebP shrink; "Chargement des cartes…" only flashes on a slow first load.
-- Owner: JezzBall and Chip's Challenge on a phone in portrait: board 99% wide; say if a swipe from the board's edge triggers the system back too often, and if Chip's tiles look uneven at the free zoom.
 - Owner: play 4 en ligne (`/games/connectfour/`) vs Bot facile and Bot normal, and player vs player, on a phone (portrait + landscape), desktop and the TV (`?tv=1` once): bot pause, Normal's strength, mode buttons; Easy Frog the same (`/games/easyfrog/index.html?tv=1` once) — see `docs/BACKLOG.md` Now.
 - Bring existing games to the *(new games)* rules one by one (`docs/BACKLOG.md` Next): dashboard, score + best, 40px bottom margin.
 - Owner: play Simon, Tetris, 2048, Fusion de fruits on phone / desktop / TV (`?tv=1` once); skim TTCF cards; 7 TTCF cards await a photo.
@@ -40,4 +38,3 @@ Blockers:
 Recent_Changes:
 - 2026-11-11 TTCF: draw / spin button turned off with `.is-off` (`visibility: hidden` + disabled) instead of `hidden`, so the row keeps its height; `hidden` only picks draw or spin by mode. lint + `check:games` + build OK, Prettier fails only on the unrelated `ttcf_french_only.json`.
 - 2026-11-08 Piou: original Flappy Bird difficulty in `engine.js` (FlapPyBird 288x512 px values, 1 px = 88/404.5 u); bird smaller and further left; ceiling no longer deadly (flap ignored 2 bird heights above the screen, as there). `check:games` + build OK, Prettier fails only on the unrelated `ttcf_french_only.json`; Node sim OK, no browser run.
-- 2026-11-08 TTCF: flags of the other two languages at the bottom of the screen under the card (`ttcf-card-lang`), reuse `setLanguage`. `npm run check` OK, no browser run.
