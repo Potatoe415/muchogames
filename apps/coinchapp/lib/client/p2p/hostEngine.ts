@@ -19,6 +19,8 @@ export function applyBotAction(state: GameState, seat: Seat, action: BotAction):
   if (action.action === "BID") {
     return submitBid(state, { seat, type: "bid", value: action.value, suit: action.suit });
   }
+  if (action.action === "COINCHE") return submitBid(state, { seat, type: "coinche" });
+  if (action.action === "SURCOINCHE") return submitBid(state, { seat, type: "surcoinche" });
   return submitBid(state, { seat, type: "pass" });
 }
 

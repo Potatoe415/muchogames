@@ -160,7 +160,6 @@ function OnlinePageInner() {
                 settings: isBelote
                   ? {
                       targetPoints: setup.target,
-                      botPunch: setup.botPunch,
                       stillThereTimeoutSec: setup.stillThereTimeoutSec,
                       botThinkMs: setup.botThinkMs,
                     }
@@ -187,7 +186,6 @@ function OnlinePageInner() {
                       capotFailedDefensePoints: Number(setup.capotFailedDefensePoints) || 250,
                       allowToutAtoutSansAtout: setup.allowToutAtoutSansAtout,
                       requireMorePointsToWin: setup.requireMorePointsToWin,
-                      botPunch: setup.botPunch,
                       stillThereTimeoutSec: setup.stillThereTimeoutSec,
                       botThinkMs: setup.botThinkMs,
                     },

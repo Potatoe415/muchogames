@@ -1,4 +1,4 @@
-import type { BotPunch, GameState as CoincheGameState } from "@/lib/coinche";
+import type { BotProfiles, GameState as CoincheGameState } from "@/lib/coinche";
 import type { GameState as BouillaGameState } from "@/lib/bouilla";
 import type { GameState as PresidentGameState } from "@/lib/president";
 import type { GameState as BataillecorseGameState } from "@/lib/bataillecorse";
@@ -14,8 +14,10 @@ export interface GameSettings {
   capotFailedDefensePoints?: number;
   allowToutAtoutSansAtout?: boolean;
   requireMorePointsToWin?: boolean;
-  /** Bot bidding aggressiveness. Defaults to "med" when absent. */
-  botPunch?: BotPunch;
+  /** Coinche/Belote bot personality per seat (see lib/coinche/bot-profiles.ts).
+   *  A missing seat plays "normal". Replaces the old `botPunch` (rows that still
+   *  carry it are ignored). */
+  botProfiles?: BotProfiles;
   /** Seconds of silence on a human's turn before the "are you still there?" idle
    *  timer kicks in (see lib/server/idle-timer.ts). Defaults to 15 when absent.
    *  Applies to both games. */

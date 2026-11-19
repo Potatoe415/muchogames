@@ -5,7 +5,6 @@ import { getViewTimed, submitBotMove, submitBotMoveTimed } from "@/lib/server/ac
 import type { BotMove } from "@/lib/server/game-dispatch";
 import type { Seat } from "@/lib/coinche";
 import type { GameView } from "@/lib/server/view";
-import type { BotPunch } from "@/lib/coinche";
 import type { PlayerView as CoinchePlayerView } from "@/lib/coinche";
 import type { PlayerView as BouillaPlayerView } from "@/lib/bouilla";
 import type { PlayerView as PresidentPlayerView, PresidentBotAction } from "@/lib/president";
@@ -20,6 +19,8 @@ import { useBotWorker } from "./useBotWorker";
 export function toMove(action: BotAction | BouillaBotAction): BotMove {
   if (action.action === "PLAY") return { kind: "play", card: action.card };
   if (action.action === "BID") return { kind: "bid", type: "bid", value: action.value, suit: action.suit };
+  if (action.action === "COINCHE") return { kind: "bid", type: "coinche" };
+  if (action.action === "SURCOINCHE") return { kind: "bid", type: "surcoinche" };
   return { kind: "bid", type: "pass" };
 }
 
@@ -89,7 +90,7 @@ export function useBotRunner(
   const presidentSnapRef = useRef<ReturnType<typeof animSnap> | null>(null);
   const mountedRef = useRef(true);
   const thinkMs = (gv?.settings.botThinkMs as number | undefined) ?? DEFAULT_BOT_THINK_MS;
-  const decideCoinche = useBotWorker(gv?.settings.botPunch as BotPunch | undefined, thinkMs);
+  const decideCoinche = useBotWorker(gv?.settings.botProfiles, thinkMs);
   const lastFinishedAtRef = useRef<number | null>(null);
   const nextLogIdRef = useRef(0);
   const [log, setLog] = useState<BotTimingEntry[]>([]);

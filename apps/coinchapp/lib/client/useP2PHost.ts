@@ -7,7 +7,6 @@ import {
   startNextDeal,
   submitBid,
   submitPlay,
-  type BotPunch,
   type Card,
   type GameState,
   type Seat,
@@ -69,7 +68,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
   const [ready, setReady] = useState<Set<number>>(() => new Set());
   const readyRef = useRef(ready);
   const botThinkMs = settings.botThinkMs ?? DEFAULT_BOT_THINK_MS;
-  const decide = useBotWorker(settings.botPunch as BotPunch | undefined, botThinkMs);
+  const decide = useBotWorker(settings.botProfiles, botThinkMs);
 
   const isBotSeat = useCallback((seat: number) => rosterRef.current[seat]?.isBot ?? true, []);
 

@@ -1,12 +1,14 @@
 import {
   BELOTE_CONTRACT_VALUE,
+  BOT_PROFILE_CONFIG,
   decideBeloteTake,
-  decideBidWithSupport,
-  PUNCH_CONTRIBUTION,
+  decideBotBid,
+  DEFAULT_BOT_PROFILE,
+  profilePlayBonus,
   refinePlayCandidates,
   teamOf,
 } from "@/lib/coinche";
-import type { BotPunch, Card, PlayerView, Suit, TrumpMode } from "@/lib/coinche";
+import type { BotProfile, BotProfileConfig, Card, PlayerView, Suit, TrumpMode } from "@/lib/coinche";
 import { buildDeterminizer, simulateRootMove } from "./botSim";
 
 /**
@@ -17,6 +19,8 @@ import { buildDeterminizer, simulateRootMove } from "./botSim";
 export type BotAction =
   | { action: "BID"; value: number; suit: TrumpMode }
   | { action: "PASS" }
+  | { action: "COINCHE" }
+  | { action: "SURCOINCHE" }
   | { action: "PLAY"; card: Card };
 
 export interface BotOptions {
@@ -26,15 +30,18 @@ export interface BotOptions {
   maxIterations?: number;
   /** Injectable RNG for deterministic tests. */
   rng?: () => number;
-  /** Bidding aggressiveness; defaults to the heuristic's "med" level. */
-  punch?: BotPunch;
+  /** Personality of the seat being decided; defaults to "normal". */
+  profile?: BotProfile;
 }
 
 const DEFAULT_TIME_BUDGET_MS = 800;
 const DEFAULT_MAX_ITERATIONS = 2000;
 const UCB_C = Math.SQRT2;
+/** Scale of the profile bias against the 0..1 win rate: a full-weight term
+ *  (+-0.4 from normal) tips moves within ~0.06 of each other, never a blunder. */
+const PROFILE_BIAS_WEIGHT = 0.15;
 
-interface RootStat {
+export interface RootStat {
   wins: number;
   visits: number;
 }
@@ -46,25 +53,23 @@ export function chooseClientAction(view: PlayerView, options: BotOptions = {}): 
   throw new Error("no_action_available");
 }
 
+function configOf(options: BotOptions): BotProfileConfig {
+  return BOT_PROFILE_CONFIG[options.profile ?? DEFAULT_BOT_PROFILE] ?? BOT_PROFILE_CONFIG[DEFAULT_BOT_PROFILE];
+}
+
 function chooseBidAction(view: PlayerView, options: BotOptions): BotAction {
-  const bid = view.bidOptions;
+  const opts = view.bidOptions;
+  const cfg = configOf(options);
   if (view.variant === "belote") {
-    const suits = (bid?.suits ?? []) as Suit[];
-    const suit = view.turnedCard ? decideBeloteTake(view.myHand, view.turnedCard, suits, options.punch) : null;
+    const suits = (opts?.suits ?? []) as Suit[];
+    const suit = view.turnedCard ? decideBeloteTake(view.myHand, view.turnedCard, suits, cfg) : null;
     return suit ? { action: "BID", value: BELOTE_CONTRACT_VALUE, suit } : { action: "PASS" };
   }
-  const contribution = options.punch ? PUNCH_CONTRIBUTION[options.punch] : undefined;
-  const decision = decideBidWithSupport(
-    view.myHand,
-    view.bids,
-    view.mySeat,
-    bid?.suits ?? [],
-    bid?.minValue ?? null,
-    contribution,
-  );
-  if (decision.shouldBid) {
-    return { action: "BID", value: decision.value, suit: decision.mode };
-  }
+  if (!opts) return { action: "PASS" };
+  const bid = decideBotBid(view.myHand, view.bids, view.mySeat, opts, cfg);
+  if (bid.type === "coinche") return { action: "COINCHE" };
+  if (bid.type === "surcoinche") return { action: "SURCOINCHE" };
+  if (bid.type === "bid") return { action: "BID", value: bid.value!, suit: bid.suit! };
   return { action: "PASS" };
 }
 
@@ -92,7 +97,8 @@ function choosePlayAction(view: PlayerView, options: BotOptions): BotAction {
     if (made === attacking) stats[index].wins += 1;
     iterations += 1;
   }
-  return { action: "PLAY", card: legal[bestIndex(stats)] };
+  const bias = profilePlayBonus(view, legal, configOf(options)).map((b) => b * PROFILE_BIAS_WEIGHT);
+  return { action: "PLAY", card: legal[bestIndex(stats, bias)] };
 }
 
 /** UCB1 selection, trying each root move once before exploiting. */
@@ -114,12 +120,12 @@ function selectRootIndex(stats: RootStat[], totalIterations: number): number {
   return best;
 }
 
-/** Root move with the highest observed win rate across determinizations. */
-function bestIndex(stats: RootStat[]): number {
+/** Root move with the highest observed win rate (plus profile bias) across determinizations. */
+export function bestIndex(stats: RootStat[], bias: number[] = []): number {
   let best = 0;
   let bestRate = -Infinity;
   for (let i = 0; i < stats.length; i++) {
-    const rate = stats[i].visits === 0 ? -Infinity : stats[i].wins / stats[i].visits;
+    const rate = stats[i].visits === 0 ? -Infinity : stats[i].wins / stats[i].visits + (bias[i] ?? 0);
     if (rate > bestRate) {
       bestRate = rate;
       best = i;

@@ -19,6 +19,8 @@ export interface PlayerBadgeProps {
   /** Président only: this seat is the round's president (first to empty
    *  their hand) - shows a small crown before the name. */
   isPresident?: boolean;
+  /** Bot profile avatar (Coinche / Belote bot seats). */
+  avatarSrc?: string;
 }
 
 export function PlayerBadge({
@@ -32,6 +34,7 @@ export function PlayerBadge({
   dataId,
   orientation = "horizontal",
   isPresident = false,
+  avatarSrc,
 }: PlayerBadgeProps) {
   const { t } = useI18n();
   const teamClass = team === "A" ? "text-team-a" : "text-team-b";
@@ -42,6 +45,7 @@ export function PlayerBadge({
     return (
       <div data-id={dataId} className="flex items-center gap-1 drop-shadow-lg">
         {isThinking && <ThinkingIndicator />}
+        {avatarSrc && <BadgeAvatar src={avatarSrc} />}
         <div
           className={`px-1 py-2 text-lg font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass}`}
           style={{ writingMode: "vertical-rl" }}
@@ -69,6 +73,7 @@ export function PlayerBadge({
   return (
     <div data-id={dataId} className="flex items-center gap-1 drop-shadow-lg">
       {isThinking && <ThinkingIndicator />}
+      {avatarSrc && <BadgeAvatar src={avatarSrc} />}
       <div className={`px-1 py-0.5 text-xl font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass}`}>
         {isPresident && (
           <span className="mr-1 align-middle text-base" data-id="player-crown-icon" aria-hidden="true">
@@ -87,6 +92,13 @@ export function PlayerBadge({
         />
       )}
     </div>
+  );
+}
+
+function BadgeAvatar({ src }: { src: string }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- tiny static avatar
+    <img src={src} alt="" width={28} height={28} className="h-7 w-7 shrink-0 rounded-full" data-id="player-bot-avatar" />
   );
 }
 

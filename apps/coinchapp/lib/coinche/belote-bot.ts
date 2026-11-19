@@ -1,11 +1,10 @@
 import { BELOTE_CONTRACT_VALUE, beloteBidOptions } from "./belote";
-import type { BotPunch } from "./bot";
+import { NORMAL_CONFIG, type BotProfileConfig } from "./bot-profiles";
 import { cardPoints } from "./cards";
 import type { Bid, Card, GameState, Suit } from "./types";
 
-/** Minimum `takeScore` a bot takes on, per punch level. Calibrated over 3000 simulated
- *  deals (heuristic play): low takes 78% of deals / makes 90%, med 91% / 86%, high 97% / 83%. */
-export const BELOTE_TAKE_THRESHOLD: Record<BotPunch, number> = { low: 50, med: 45, high: 40 };
+/* Take threshold comes from `BotProfileConfig.beloteTakeThreshold`. Calibrated over 3000
+ * simulated deals (heuristic play): 50 takes 78% of deals / makes 90%, 45 91% / 86%, 40 97% / 83%. */
 const TRUMP_LENGTH_BONUS = 6;
 const OFF_SUIT_ACE_BONUS = 10;
 const BELOTE_BONUS = 20;
@@ -31,7 +30,7 @@ export function decideBeloteTake(
   hand: Card[],
   turnedCard: Card,
   suits: Suit[],
-  punch: BotPunch = "med",
+  cfg: BotProfileConfig = NORMAL_CONFIG,
 ): Suit | null {
   const cards = [...hand, turnedCard];
   let best: Suit | null = null;
@@ -44,12 +43,12 @@ export function decideBeloteTake(
       bestScore = score;
     }
   }
-  return bestScore >= BELOTE_TAKE_THRESHOLD[punch] ? best : null;
+  return bestScore >= cfg.beloteTakeThreshold ? best : null;
 }
 
-export function chooseBeloteBid(state: GameState, punch: BotPunch = "med"): Bid {
+export function chooseBeloteBid(state: GameState, cfg: BotProfileConfig = NORMAL_CONFIG): Bid {
   const seat = state.turn;
   const { suits } = beloteBidOptions(state);
-  const suit = state.turnedCard ? decideBeloteTake(state.hands[seat], state.turnedCard, suits as Suit[], punch) : null;
+  const suit = state.turnedCard ? decideBeloteTake(state.hands[seat], state.turnedCard, suits as Suit[], cfg) : null;
   return suit ? { seat, type: "bid", value: BELOTE_CONTRACT_VALUE, suit } : { seat, type: "pass" };
 }

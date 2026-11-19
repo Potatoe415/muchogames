@@ -1,4 +1,4 @@
-import type { Team } from "@/lib/coinche";
+import { DEFAULT_BOT_PROFILE, type BotProfile, type Seat, type Team } from "@/lib/coinche";
 import type { Locale } from "@/lib/client/i18n";
 import type { GameView } from "@/lib/server/view";
 
@@ -21,6 +21,17 @@ export function playerName(gv: GameView, seat: number, locale: Locale = "fr"): s
 
 /** Whether the seat's responsible party (the seat's own user, or the host
  * for a bot seat) has called `getView` recently - see `lib/server/repo.ts`. */
+/** Avatar art per bot profile (public/bots/*.webp). */
+export function botAvatarSrc(profile: BotProfile | undefined): string {
+  return `/bots/${profile ?? DEFAULT_BOT_PROFILE}.webp`;
+}
+
+/** Profile avatar for a bot seat, undefined for humans. */
+export function botAvatar(gv: GameView, seat: number): string | undefined {
+  if (!gv.players.find((p) => p.seat === seat)?.isBot) return undefined;
+  return botAvatarSrc(gv.settings.botProfiles?.[seat as Seat]);
+}
+
 export function isConnected(gv: GameView, seat: number): boolean {
   return gv.players.find((p) => p.seat === seat)?.connected ?? true;
 }

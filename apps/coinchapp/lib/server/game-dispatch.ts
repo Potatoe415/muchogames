@@ -5,6 +5,7 @@ import {
   submitBid,
   submitPlay as submitCoinchePlay,
   type Bid,
+  type BotProfiles,
   type BidType,
   type Card as CoincheCard,
   type GameState as CoincheGameState,
@@ -121,7 +122,12 @@ export function applyStartNext(gameType: GameType, state: AnyGameState): AnyGame
 }
 
 /** Heuristic bot move for the seat whose turn it is (server-side takeover / bot host). */
-export function chooseHeuristicMove(gameType: GameType, state: AnyGameState, seat: Seat): HeuristicMove {
+export function chooseHeuristicMove(
+  gameType: GameType,
+  state: AnyGameState,
+  seat: Seat,
+  botProfiles?: BotProfiles,
+): HeuristicMove {
   if (gameType === "bataillecorse") return { kind: "flip" };
   if (gameType === "bouilla") {
     return { kind: "play", card: chooseBouillaCard(redactBouilla(state as BouillaGameState, seat)) };
@@ -134,7 +140,7 @@ export function chooseHeuristicMove(gameType: GameType, state: AnyGameState, sea
   }
   const coincheState = state as CoincheGameState;
   return coincheState.phase === "bidding"
-    ? { kind: "bid", bid: chooseBid(coincheState) }
+    ? { kind: "bid", bid: chooseBid(coincheState, botProfiles) }
     : { kind: "play", card: chooseCoincheCard(coincheState) };
 }
 

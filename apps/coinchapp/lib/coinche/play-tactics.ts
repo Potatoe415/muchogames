@@ -11,15 +11,10 @@ import type { Card, Contract, PlayedCard, Seat, Suit, TrumpMode } from "./types"
  * starve the ISMCTS search. The search "brain" itself is untouched.
  */
 
-function countTrumps(cards: Card[], trump: TrumpMode | null): number {
-  let n = 0;
-  for (const card of cards) if (isTrump(card, trump)) n += 1;
-  return n;
-}
-
 /** Trumps not yet seen between this hand and public play (single-suit only). */
 function outstandingTrumps(hand: Card[], played: Card[], trump: TrumpMode | null): number {
-  return RANKS.length - countTrumps(hand, trump) - countTrumps(played, trump);
+  const count = (cards: Card[]) => cards.filter((c) => isTrump(c, trump)).length;
+  return RANKS.length - count(hand) - count(played);
 }
 
 /** Do I hold the strongest trump still unaccounted for? */

@@ -225,7 +225,7 @@ async function advanceStaleTurns(loaded: LoadedGame): Promise<void> {
   for (let steps = 0; steps < MAX_TAKEOVER_STEPS; steps++) {
     if (!isActivePhase(gameType, current) || isSeatLive(loaded, current.turn, now, TAKEOVER_STALE_MS)) break;
     const seat = current.turn as Seat;
-    current = applyMove(gameType, current, seat, chooseHeuristicMove(gameType, current, seat));
+    current = applyMove(gameType, current, seat, chooseHeuristicMove(gameType, current, seat, loaded.game.settings.botProfiles));
   }
   if (current === state) return;
   try {

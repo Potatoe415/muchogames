@@ -5,6 +5,9 @@ import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
 import { useHubPrefillName } from "@/lib/client/hubName";
 import { fillWithBots, joinGame, startGame, swapSeats } from "@/lib/server/actions-lobby";
+import { setBotProfile } from "@/lib/server/actions-bot-profile";
+import { BotProfilePicker } from "./BotProfilePicker";
+import type { Seat } from "@/lib/coinche";
 import type { GameView, LobbyPlayer } from "@/lib/server/view";
 import { seatCountFor, usesCoincheEngine } from "@/lib/supabase/types";
 
@@ -161,6 +164,16 @@ export function Lobby({ gv, onChange, debugMode, onDebugModeChange }: LobbyProps
                 {player?.isBot && <span className="ml-1 text-xs text-[var(--accent-yellow)]">{t("bot")}</span>}
                 {seat === gv.mySeat && <span className="ml-1 text-xs text-[var(--accent-cyan)]">({t("you")})</span>}
               </p>
+              {player?.isBot && usesCoincheEngine(gv.gameType) && (
+                <div className="mt-2">
+                  <BotProfilePicker
+                    value={gv.settings.botProfiles?.[seat as Seat]}
+                    onChange={gv.isHost ? (profile) => act(() => setBotProfile(gv.gameId, seat, profile)) : undefined}
+                    disabled={busy}
+                    dataId={`lobby-bot-profile-${seat}`}
+                  />
+                </div>
+              )}
             </li>
           );
         })}

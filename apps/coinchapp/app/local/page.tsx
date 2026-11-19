@@ -15,6 +15,10 @@ import {
   LOCAL_PRESIDENT_STORAGE_KEY,
   clearPersistedGame,
 } from "@/lib/client/localGamePersistence";
+import { LOCAL_SEAT_NAMES } from "@/lib/client/useLocalGame";
+import { encodeLocalBotProfiles, type Seat } from "@/lib/coinche";
+
+const LOCAL_BOT_SEATS: Seat[] = [1, 2, 3];
 
 export default function LocalSetupPage() {
   return (
@@ -55,7 +59,7 @@ function LocalSetupPageInner() {
     clearPersistedGame(LOCAL_BATAILLECORSE_STORAGE_KEY);
     clearPersistedGame(LOCAL_BATAILLECORSE_DUEL_STORAGE_KEY);
     if (isBelote) {
-      router.push(`/local/play?game=belote&target=${setup.target}&botPunch=${setup.botPunch}&botThinkMs=${setup.botThinkMs}`);
+      router.push(`/local/play?game=belote&target=${setup.target}&botProfiles=${encodeLocalBotProfiles(setup.botProfiles)}&botThinkMs=${setup.botThinkMs}`);
       return;
     }
     if (isBouilla) {
@@ -83,7 +87,7 @@ function LocalSetupPageInner() {
       capotFailedDefensePoints: setup.capotFailedDefensePoints,
       allowSpecialBids: String(setup.allowToutAtoutSansAtout),
       requireMorePointsToWin: String(setup.requireMorePointsToWin),
-      botPunch: setup.botPunch,
+      botProfiles: encodeLocalBotProfiles(setup.botProfiles),
       botThinkMs: String(setup.botThinkMs),
     });
     router.push(`/local/play?${params.toString()}`);
@@ -175,6 +179,8 @@ function LocalSetupPageInner() {
         presidentFields={isPresident}
         bataillecorseFields={isBataillecorse}
         hideBotFields={isDuel}
+        botSeats={isBelote || !(isBouilla || isPresident || isBataillecorse) ? LOCAL_BOT_SEATS : []}
+        botSeatLabel={(seat) => LOCAL_SEAT_NAMES[seat]}
       />
 
       {/* La Bataille Corse only (BAT-UI-01): the start CTA sits below the

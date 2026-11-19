@@ -41,7 +41,7 @@ function toSettings(v: GameSetupValues): GameSettings {
     capotFailedDefensePoints: Number(v.capotFailedDefensePoints) || 250,
     allowToutAtoutSansAtout: v.allowToutAtoutSansAtout,
     requireMorePointsToWin: v.requireMorePointsToWin,
-    botPunch: v.botPunch,
+    botProfiles: v.botProfiles,
     botThinkMs: v.botThinkMs,
   };
 }
@@ -119,7 +119,7 @@ export function AdHocLobby() {
           deckSize: setup.bataillecorseDeckSize,
         });
       } else if (isBelote) {
-        const settings = { targetPoints: setup.target, botPunch: setup.botPunch, botThinkMs: setup.botThinkMs };
+        const settings = { targetPoints: setup.target, botProfiles: setup.botProfiles, botThinkMs: setup.botThinkMs };
         setHostConfig({ mySeat: 0, roster, connections: conns, settings, seed, variant: "belote" });
       } else {
         setHostConfig({ mySeat: 0, roster, connections: conns, settings: toSettings(setup), seed });
@@ -164,6 +164,12 @@ export function AdHocLobby() {
             beloteFields={isBelote}
             presidentFields={isPresident}
             bataillecorseFields={isBataillecorse}
+            botSeats={
+              isBouilla || isPresident || isBataillecorse
+                ? []
+                : ([1, 2, 3] as Seat[]).filter((seat) => seat > effectiveHumanCount)
+            }
+            botSeatLabel={(seat) => BOT_NAMES[seat]}
           />
         </div>
       )}

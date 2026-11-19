@@ -1,6 +1,6 @@
 import { after } from "next/server";
 import { getServiceClient } from "@/lib/supabase/server";
-import type { AnyGameState, GameRow, GameStatus, PlayerRow } from "@/lib/supabase/types";
+import type { AnyGameState, GameRow, GameSettings, GameStatus, PlayerRow } from "@/lib/supabase/types";
 
 export interface LoadedGame {
   game: GameRow;
@@ -188,6 +188,11 @@ export async function touchGame(game: GameRow): Promise<number> {
  * "are you still there?" banner is showing) without actually playing yet. See
  * `lib/server/idle-timer.ts` `markSeatPresent`.
  */
+/** Replace the row's `settings` (already sanitized by the caller) and emit a tick. */
+export async function updateGameSettings(game: GameRow, settings: GameSettings): Promise<number> {
+  return updateVersioned(game, { settings });
+}
+
 export async function touchTurnStartedAt(game: GameRow): Promise<number> {
   const turnStartedAt = new Date().toISOString();
   const version = await updateVersioned(game, { turn_started_at: turnStartedAt });

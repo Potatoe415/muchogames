@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef } from "react";
-import type { BotPunch, PlayerView } from "@/lib/coinche";
+import type { BotProfiles, PlayerView } from "@/lib/coinche";
 import { DEFAULT_BOT_THINK_MS } from "@/lib/supabase/types";
 import { chooseClientAction, type BotAction, type BotOptions } from "./bot";
 import type { BotWorkerRequest, BotWorkerResponse } from "./botWorker";
@@ -32,6 +32,11 @@ interface Pending {
   resolve: (action: BotAction) => void;
 }
 
+/** Options for one decision: the shared budget plus that seat's own profile. */
+function optionsFor(base: BotOptions, profiles: BotProfiles | undefined, view: PlayerView): BotOptions {
+  return { ...base, profile: profiles?.[view.mySeat] };
+}
+
 /**
  * Drives the bot brain. Bidding is a cheap heuristic and always runs on the
  * main thread. The time-boxed ISMCTS play search runs in a Web Worker so it
@@ -39,17 +44,19 @@ interface Pending {
  * unresponsive worker can never freeze the game.
  */
 export function useBotWorker(
-  punch?: BotPunch,
+  profiles?: BotProfiles,
   timeBudgetMs: number = DEFAULT_BOT_THINK_MS,
 ): (view: PlayerView) => Promise<BotAction> {
   const workerRef = useRef<Worker | null>(null);
   const deadRef = useRef(false);
   const pendingRef = useRef(new Map<number, Pending>());
   const nextIdRef = useRef(0);
-  const optionsRef = useRef<BotOptions>({ punch, timeBudgetMs });
+  const optionsRef = useRef<BotOptions>({ timeBudgetMs });
+  const profilesRef = useRef(profiles);
   useEffect(() => {
-    optionsRef.current = { punch, timeBudgetMs };
-  }, [punch, timeBudgetMs]);
+    optionsRef.current = { timeBudgetMs };
+    profilesRef.current = profiles;
+  }, [profiles, timeBudgetMs]);
 
   useEffect(() => {
     if (typeof Worker === "undefined") return;
@@ -81,7 +88,7 @@ export function useBotWorker(
 
   return useCallback((view: PlayerView): Promise<BotAction> => {
     const worker = workerRef.current;
-    const options = optionsRef.current;
+    const options = optionsFor(optionsRef.current, profilesRef.current, view);
     if (view.phase !== "playing" || !worker || deadRef.current) {
       return Promise.resolve().then(() => chooseClientAction(view, options));
     }

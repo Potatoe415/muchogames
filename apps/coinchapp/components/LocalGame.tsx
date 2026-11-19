@@ -5,21 +5,21 @@ import { useLocalGame } from "@/lib/client/useLocalGame";
 import { clearPersistedGame, localCoincheStorageKey } from "@/lib/client/localGamePersistence";
 import type { ReactionPick } from "@/lib/client/reactions";
 import { useReactions } from "@/lib/client/useReactions";
-import type { BotPunch, ScoringRules, Variant } from "@/lib/coinche";
+import type { BotProfiles, ScoringRules, Variant } from "@/lib/coinche";
 import { GameTable, type CoincheGameView } from "./GameTable";
 
 export function LocalGame({
   targetPoints,
   seed,
   scoringRules,
-  botPunch,
+  botProfiles,
   botThinkMs,
   variant = "coinche",
 }: {
   targetPoints: number;
   seed: number;
   scoringRules: ScoringRules;
-  botPunch: BotPunch;
+  botProfiles: BotProfiles;
   botThinkMs: number;
   variant?: Variant;
 }) {
@@ -30,7 +30,7 @@ export function LocalGame({
       targetPoints={targetPoints}
       seed={seed + gameKey * 131071}
       scoringRules={scoringRules}
-      botPunch={botPunch}
+      botProfiles={botProfiles}
       botThinkMs={botThinkMs}
       variant={variant}
       onReset={() => {
@@ -45,7 +45,7 @@ function LocalGameInner({
   targetPoints,
   seed,
   scoringRules,
-  botPunch,
+  botProfiles,
   botThinkMs,
   variant,
   onReset,
@@ -53,12 +53,12 @@ function LocalGameInner({
   targetPoints: number;
   seed: number;
   scoringRules: ScoringRules;
-  botPunch: BotPunch;
+  botProfiles: BotProfiles;
   botThinkMs: number;
   variant: Variant;
   onReset: () => void;
 }) {
-  const { gv, actions } = useLocalGame(targetPoints, seed, scoringRules, botPunch, botThinkMs, variant);
+  const { gv, actions } = useLocalGame(targetPoints, seed, scoringRules, botProfiles, botThinkMs, variant);
   const { reactions, addReaction } = useReactions();
 
   function onSendReaction(pick: ReactionPick) {

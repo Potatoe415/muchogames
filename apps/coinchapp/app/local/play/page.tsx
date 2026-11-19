@@ -4,7 +4,7 @@ import { PresidentLocalGame } from "@/components/PresidentLocalGame";
 import { BataillecorseLocalGame } from "@/components/BataillecorseLocalGame";
 import { BataillecorseDuelGame } from "@/components/BataillecorseDuelGame";
 import { SolitaireLocalGame } from "@/components/SolitaireLocalGame";
-import { BOT_PUNCH_LEVELS, DEFAULT_SCORING_RULES, type BotPunch, type ScoringRules } from "@/lib/coinche";
+import { decodeLocalBotProfiles, DEFAULT_SCORING_RULES, type ScoringRules } from "@/lib/coinche";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
   DEFAULT_BATAILLECORSE_DECK_SIZE,
@@ -17,10 +17,6 @@ import {
 } from "@/lib/supabase/types";
 
 const TARGETS = [500, 1000, 1500, 2000];
-
-function parsePunch(raw: string | undefined): BotPunch {
-  return BOT_PUNCH_LEVELS.includes(raw as BotPunch) ? (raw as BotPunch) : "med";
-}
 
 /** `min` defaults to `MIN_BOT_THINK_MS`; callers for la Bataille Corse pass
  *  `MIN_BATAILLECORSE_BOT_THINK_MS` instead (see `sanitizeBotThinkMs` in
@@ -66,7 +62,7 @@ export default async function LocalPlayPage({
     capotFailedDefensePoints?: string;
     allowSpecialBids?: string;
     requireMorePointsToWin?: string;
-    botPunch?: string;
+    botProfiles?: string;
     botThinkMs?: string;
     roundsToPlay?: string;
     deckSize?: string;
@@ -95,14 +91,14 @@ export default async function LocalPlayPage({
   }
   const target = Number(sp.target);
   const targetPoints = TARGETS.includes(target) ? target : 1000;
-  const botPunch = parsePunch(sp.botPunch);
+  const botProfiles = decodeLocalBotProfiles(sp.botProfiles);
   if (sp.game === "belote") {
     return (
       <LocalGame
         targetPoints={targetPoints}
         seed={seed}
         scoringRules={DEFAULT_SCORING_RULES}
-        botPunch={botPunch}
+        botProfiles={botProfiles}
         botThinkMs={botThinkMs}
         variant="belote"
       />
@@ -122,7 +118,7 @@ export default async function LocalPlayPage({
       targetPoints={targetPoints}
       seed={seed}
       scoringRules={scoringRules}
-      botPunch={botPunch}
+      botProfiles={botProfiles}
       botThinkMs={botThinkMs}
     />
   );

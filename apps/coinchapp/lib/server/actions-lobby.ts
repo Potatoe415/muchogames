@@ -1,6 +1,6 @@
 "use server";
 
-import { beginNextDeal, BOT_PUNCH_LEVELS, createInitialState } from "@/lib/coinche";
+import { beginNextDeal, createInitialState, sanitizeBotProfiles } from "@/lib/coinche";
 import { beginNextRound, createInitialState as createInitialBouillaState } from "@/lib/bouilla";
 import { beginNextRound as beginNextPresidentRound, createInitialState as createInitialPresidentState } from "@/lib/president";
 import { createInitialState as createInitialBataillecorseState } from "@/lib/bataillecorse";
@@ -82,7 +82,7 @@ function sanitizeCoincheSettings(input: Partial<GameSettings>): GameSettings {
     capotFailedDefensePoints: sanitizePoints(input.capotFailedDefensePoints, 250),
     allowToutAtoutSansAtout: input.allowToutAtoutSansAtout === true,
     requireMorePointsToWin: input.requireMorePointsToWin !== false,
-    botPunch: BOT_PUNCH_LEVELS.includes(input.botPunch ?? "med") ? (input.botPunch ?? "med") : "med",
+    botProfiles: sanitizeBotProfiles(input.botProfiles),
     stillThereTimeoutSec: sanitizeStillThereTimeoutSec(input.stillThereTimeoutSec),
     botThinkMs: sanitizeBotThinkMs(input.botThinkMs),
   };
@@ -114,8 +114,8 @@ function sanitizeSettings(gameType: GameType, input: Partial<GameSettings>): Gam
   }
   if (gameType === "belote") {
     // Belote's scoring is fixed: none of Coinche's scoring-rule settings apply.
-    const { targetPoints, botPunch, stillThereTimeoutSec, botThinkMs } = sanitizeCoincheSettings(input);
-    return { targetPoints, botPunch, stillThereTimeoutSec, botThinkMs };
+    const { targetPoints, botProfiles, stillThereTimeoutSec, botThinkMs } = sanitizeCoincheSettings(input);
+    return { targetPoints, botProfiles, stillThereTimeoutSec, botThinkMs };
   }
   return sanitizeCoincheSettings(input);
 }

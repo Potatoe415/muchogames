@@ -7,7 +7,7 @@ import {
   startNextDeal,
   submitBid,
   submitPlay,
-  type BotPunch,
+  type BotProfiles,
   type Card,
   type GameState,
   type ScoringRules,
@@ -22,7 +22,7 @@ import { useBotWorker } from "./useBotWorker";
 import { useLocalCardGame } from "./useLocalCardGame";
 
 const BOTS = [false, true, true, true];
-const NAMES = ["Vous", "Adam", "Jane", "Lea"];
+export const LOCAL_SEAT_NAMES = ["Vous", "Adam", "Jane", "Lea"];
 /** Must match the CSS trick-collect animation duration. */
 const COLLECT_DELAY_MS = 1500;
 
@@ -36,11 +36,11 @@ export function useLocalGame(
   targetPoints: number,
   seed: number,
   scoringRules: ScoringRules,
-  botPunch: BotPunch,
+  botProfiles: BotProfiles,
   botThinkMs: number,
   variant: Variant = "coinche",
 ): { gv: GameView; actions: GameActions } {
-  const decide = useBotWorker(botPunch, botThinkMs);
+  const decide = useBotWorker(botProfiles, botThinkMs);
   // The ISMCTS search (via `decide`) runs in a Web Worker and overlaps the
   // minimum thinking delay, so the UI never blocks.
   const { state, stateRef, commit, runBots } = useLocalCardGame({
@@ -88,7 +88,7 @@ export function useLocalGame(
     status: state.phase === "finished" ? "finished" : "playing",
     settings: { targetPoints },
     version: 0,
-    players: NAMES.map((name, seat) => ({
+    players: LOCAL_SEAT_NAMES.map((name, seat) => ({
       seat,
       displayName: name,
       isBot: seat !== 0,

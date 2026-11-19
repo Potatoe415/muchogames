@@ -1,7 +1,8 @@
 "use client";
 
 import { useI18n } from "@/lib/client/i18n";
-import { BOT_PUNCH_LEVELS, type BotPunch } from "@/lib/coinche";
+import type { BotProfiles, Seat } from "@/lib/coinche";
+import { BotProfilePicker } from "./BotProfilePicker";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
   BOT_THINK_MS_STEP,
@@ -26,7 +27,8 @@ export interface GameSetupValues {
   capotFailedDefensePoints: string;
   allowToutAtoutSansAtout: boolean;
   requireMorePointsToWin: boolean;
-  botPunch: BotPunch;
+  /** Personality per bot seat (Coinche / Belote); missing seat = normal. */
+  botProfiles: BotProfiles;
   /** Seconds of silence on a human's turn before the "are you still there?"
    *  idle timer kicks in. Shared by both games (see docs/DATA_MODEL.md). One of
    *  `STILL_THERE_TIMEOUT_OPTIONS`, chosen via a discrete slider. */
@@ -49,7 +51,7 @@ export const DEFAULT_GAME_SETUP: GameSetupValues = {
   capotFailedDefensePoints: "250",
   allowToutAtoutSansAtout: false,
   requireMorePointsToWin: true,
-  botPunch: "med",
+  botProfiles: {},
   stillThereTimeoutSec: 15,
   botThinkMs: DEFAULT_BOT_THINK_MS,
   roundsToPlay: DEFAULT_PRESIDENT_ROUNDS_TO_PLAY,
@@ -68,7 +70,6 @@ export const DEFAULT_BATAILLECORSE_GAME_SETUP: GameSetupValues = {
 };
 
 const TARGETS = [500, 1000, 1500, 2000];
-const PUNCH_LABEL_KEY = { low: "punchLow", med: "punchMed", high: "punchHigh" } as const;
 
 /** La Bataille Corse only: `botThinkMs` reframed as 4 discrete "reflex
  *  quality" levels (slow..very fast) instead of the other games' continuous
@@ -126,7 +127,7 @@ interface Props {
   /** Whether to show the Coinche-only fields (points/capot/preset picker/etc.).
    *  Defaults to true. */
   coincheFields?: boolean;
-  /** Belote: only the target and bot level (its scoring is fixed). Defaults to false. */
+  /** Belote: only the target and bot profiles (its scoring is fixed). Defaults to false. */
   beloteFields?: boolean;
   /** Whether to show the Président-only field (rounds-to-play slider).
    *  Defaults to false. */
@@ -142,6 +143,10 @@ interface Props {
    *  no bot to tune in la Bataille Corse's face-to-face duel mode (see
    *  `LocalSetupPageInner`). Defaults to false. */
   hideBotFields?: boolean;
+  /** Bot seats that get a profile dropdown (Coinche / Belote). Online picks
+   *  profiles in the lobby once bots sit, so it passes none here. */
+  botSeats?: Seat[];
+  botSeatLabel?: (seat: Seat) => string;
 }
 
 export function GameSettingsPanel({
@@ -155,6 +160,8 @@ export function GameSettingsPanel({
   bataillecorseFields = false,
   showStillThereTimeout = false,
   hideBotFields = false,
+  botSeats = [],
+  botSeatLabel,
 }: Props) {
   const { t } = useI18n();
 
@@ -422,33 +429,24 @@ export function GameSettingsPanel({
             </label>
           </>
         )}
-        {(coincheFields || beloteFields) && (
-            <div className="flex flex-col gap-1.5 text-sm" data-id={`${idPrefix}-bot-punch-row`}>
-              <div className="flex items-center justify-between">
-                <span className="text-[var(--card-face)]/75">{t("botLevel")}</span>
-                <span
-                  className="font-bold text-[var(--accent-yellow)]"
-                  data-id={`${idPrefix}-bot-punch-value`}
-                >
-                  {t(PUNCH_LABEL_KEY[values.botPunch])}
+        {(coincheFields || beloteFields) && botSeats.length > 0 && (
+          <div className="flex flex-col gap-1.5 text-sm" data-id={`${idPrefix}-bot-profiles-row`}>
+            <span className="text-[var(--card-face)]/75">{t("botProfilesLabel")}</span>
+            {botSeats.map((seat) => (
+              <div key={seat} className="flex items-center gap-2">
+                <span className="w-16 shrink-0 text-xs text-[var(--card-face)]/60">
+                  {botSeatLabel ? botSeatLabel(seat) : `${t("seat")} ${seat + 1}`}
                 </span>
+                <div className="flex-1">
+                  <BotProfilePicker
+                    value={values.botProfiles[seat]}
+                    onChange={(profile) => set("botProfiles", { ...values.botProfiles, [seat]: profile })}
+                    dataId={`${idPrefix}-bot-profile-${seat}`}
+                  />
+                </div>
               </div>
-              <input
-                type="range"
-                min={0}
-                max={BOT_PUNCH_LEVELS.length - 1}
-                step={1}
-                value={BOT_PUNCH_LEVELS.indexOf(values.botPunch)}
-                onChange={(e) => set("botPunch", BOT_PUNCH_LEVELS[Number(e.target.value)])}
-                data-id={`${idPrefix}-bot-punch-slider`}
-                className="w-full accent-[var(--accent-yellow)]"
-              />
-              <div className="flex justify-between text-xs text-[var(--card-face)]/50">
-                <span>{t("punchLow")}</span>
-                <span>{t("punchMed")}</span>
-                <span>{t("punchHigh")}</span>
-              </div>
-            </div>
+            ))}
+          </div>
         )}
       </div>
     </section>

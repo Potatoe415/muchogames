@@ -1,8 +1,7 @@
-import { buildDeck, cardId, DEFAULT_SCORING_RULES, legalCards, submitPlay, teamOf } from "@/lib/coinche";
+import { analyzeTableState, buildDeck, cardId, DEFAULT_SCORING_RULES, legalCards, submitPlay, teamOf } from "@/lib/coinche";
 import type {
   Card,
   GameState,
-  PlayedCard,
   PlayerView,
   Seat,
   Suit,
@@ -44,26 +43,13 @@ function shuffleInPlace<T>(items: T[], rng: () => number): void {
   }
 }
 
-/** Seat failed to follow the led suit in this trick => it is void in that suit. */
-function scanVoids(cards: PlayedCard[], voids: Set<Suit>[]): void {
-  if (cards.length === 0) return;
-  const led = cards[0].card.suit;
-  for (const played of cards) {
-    if (played.card.suit !== led) voids[played.seat].add(led);
-  }
-}
-
 /**
- * Known suit voids ("chicanes") per seat, deduced from public play: any seat
- * that did not follow the led suit cannot hold that suit. Holds in every mode
- * (single trump, tout atout, sans atout), since following the led suit is
+ * Known suit voids ("chicanes") per seat, deduced from public play (see
+ * `analyzeTableState`). Holds in every mode, since following the led suit is
  * always mandatory when possible.
  */
 function inferVoids(view: PlayerView): Set<Suit>[] {
-  const voids: Set<Suit>[] = [new Set(), new Set(), new Set(), new Set()];
-  for (const trick of view.tricks) scanVoids(trick.cards, voids);
-  scanVoids(view.currentTrick.cards, voids);
-  return voids;
+  return analyzeTableState(view.tricks, view.currentTrick, view.trump).voids;
 }
 
 /** Pool ordered most-constrained first (fewest seats able to hold the card). */
