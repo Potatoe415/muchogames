@@ -16,9 +16,9 @@ Run `check` before declaring any task done. Never claim something was verified i
 | Test one module | No automated tests exist (see `docs/DEBUGGING.md`) |
 | Check (lint + format-check + platform rules + build) | `npm run check` |
 | Build/lint across root + `apps/coinchapp` (Turborepo) | `npm run build:all` / `npm run lint:all` |
-| Commit and push | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ship.ps1 -Message "<why>"` from the git root |
+| Commit and push | `powershell -NoProfile -ExecutionPolicy Bypass -File push-to-github.ps1 -Message "<why>" -NoPause` from the git root |
 
-After every completed change — anything you built or modified — commit and push before you finish. Do not wait for the user to ask. That script is the only step. Do not run `git add`, `git commit`, or `git push` yourself. Do not inspect status, diff, or log first. It stages the current changes, leaves `apps/coinchapp/run.bat` and `.env` files unstaged, commits, and pushes. One message, one command. Never force-push. Never add flags the script does not use.
+After every completed change — anything you built or modified — commit and push before you finish. Do not wait for the user to ask. That script is the only step and the only GitHub script in the repo (it also covers `apps/**`). Do not run `git add`, `git commit`, `git pull`, or `git push` yourself. Do not inspect status, diff, or log first. It stages the current changes, leaves `apps/coinchapp/run.bat` and secrets unstaged, commits, pulls with rebase, pushes, and checks that local and GitHub match. It works on `main` only. If it reports a conflict, stop and tell the user. One message, one command. Never force-push. Never add flags the script does not use.
 
 The script commits every other change currently in the working tree. Finish one task, then ship it. If the tree already holds edits you did not make for this task, set those aside, ship, then restore them, so this task is its own commit.
 
@@ -111,7 +111,7 @@ See `docs/DEBUGGING.md` for the current (as-is) error/logging conventions and th
 - `docs/DATA_MODEL.md`, `docs/GAMES_MAP.md`: update if data, dependencies, or the game catalog changed.
 - L2: add a decision file in `docs/decisions/` and one line in `docs/decisions/INDEX.md`; delete the task file.
 - `docs/PRODUCT.md`, `docs/ARCHITECTURE.md`, `docs/SECURITY.md`: propose changes; edit only after the user confirms.
-- Commit and push with `scripts/ship.ps1` and a conventional message. Do not wait for the user to ask.
+- Commit and push with `push-to-github.ps1` and a conventional message. Do not wait for the user to ask.
 
 ## File Ownership
 

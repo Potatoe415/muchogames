@@ -36,5 +36,5 @@ Blockers:
 - Tranquil step: production still runs the old Vercel project.
 
 Recent_Changes:
+- 2026-11-19 GitHub tooling (0065): `push-to-github.ps1` (root) is the only GitHub script — commit, pull --rebase, push `main`, verify; Sync-*, ship.*, GitHistory.txt, Cursor ship rule removed (root + apps).
 - 2026-11-11 TTCF: draw / spin button turned off with `.is-off` (`visibility: hidden` + disabled) instead of `hidden`, so the row keeps its height; `hidden` only picks draw or spin by mode. lint + `check:games` + build OK, Prettier fails only on the unrelated `ttcf_french_only.json`.
-- 2026-11-08 Piou: original Flappy Bird difficulty in `engine.js` (FlapPyBird 288x512 px values, 1 px = 88/404.5 u); bird smaller and further left; ceiling no longer deadly (flap ignored 2 bird heights above the screen, as there). `check:games` + build OK, Prettier fails only on the unrelated `ttcf_french_only.json`; Node sim OK, no browser run.
