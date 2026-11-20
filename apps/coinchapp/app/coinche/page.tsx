@@ -52,6 +52,15 @@ export default function CoinchePage() {
           <span className="mt-0.5 block text-xs font-medium text-[var(--surface)]/80">{t("adhocOfflineNote")}</span>
         </button>
 
+        <button
+          data-id="coinche-learn-button"
+          onClick={() => router.push("/coinche/learn")}
+          className="w-full rounded-2xl bg-[var(--surface)] px-4 py-4 text-lg font-black text-[var(--card-face)] shadow-lg"
+        >
+          🎓 {t("learnToPlay")}
+          <span className="mt-0.5 block text-xs font-medium text-[var(--card-face)]/80">{t("learnNote")}</span>
+        </button>
+
         <CardBackPicker game="coinche" />
       </div>
     </main>

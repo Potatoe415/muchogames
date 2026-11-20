@@ -3,16 +3,17 @@
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
 Status: Six card games. Each home screen has a card-back picker (Classique, Sorciers, Casino, Étoiles, Jardin), stored per game (0079). French faces print V, D, R. Big screens use the remote (0078).
-Focus: Bot profiles (0080): owner check of the dropdown, avatars and coinche in a real match.
-Level: L2 (settings shape, both bot paths)
+Focus: Coinche "Apprendre à jouer" tutorial (`/coinche/learn`): owner play-through on a phone.
+Level: L1 (one game, new route, no data change)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `lib/coinche/bot-profiles.ts` (config), `bot-bidding.ts`, `coinche-decision.ts`, `play-bias.ts`, `table-memory.ts`, `components/BotProfilePicker.tsx`, `public/bots/*.webp`
+- Relevant_Files: `lib/learn/` (lesson content `chapters-*.ts`, engine glue `engine.ts`, `chapters.test.ts` checks every lesson against `lib/coinche`), `components/learn/`, `app/coinche/learn/page.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked). Table action bars stay on `TableShell`'s safe-area spacer.
 - Relevant_Decisions: 0080, 0079, 0078, root 0060
 
 Next:
+- Owner: play the whole tutorial on a phone (6 parts, ~10 min). Is the length right, and is the copy clear for a beginner? The scoring chapter teaches the local defaults (contract value only, defense 0 when made).
 - Owner: local Coinche, pick a different profile per bot, check the dropdown, avatars on badges, and that bots coinche. Same in an online lobby (host picks after "fill with bots").
 - `npm run build` fails here before any change too ("couldn't find next/package.json", `next` only in root `node_modules`): fix the local install, then re-run the build.
 - Owner: on a phone, pick a back on each home screen, start a match, check the opponents' hands, Bataille corse piles and Solitaire stock.
@@ -33,8 +34,7 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-11-20 Coinche "Apprendre à jouer" button on the home screen: 6 chapters (bases, cartes, plis, annonces, points, 3 guided deals vs bots) with tooltips, quizzes and the real trick animations. `npm test` 398/398, `tsc` clean, lint clean on new files, `check:games` OK. Build still blocked by the local env error. The whole tour was clicked through in headless Edge (webpack dev): no console errors.
 - 2026-11-19 Bot profiles per seat + bot coinche/surcoinche (0080). `npm test` 391/391, `tsc` clean, lint: only pre-existing findings (`useMatchStats.ts:220`). Build not verified (local env error, also on the clean tree). Browser not checked.
 - 2026-11-03 Splash and overlay heights use `dvh` (`pt-[18dvh]`, `pt-[25dvh]`, `pt-[32dvh]`, `max-h-[60dvh]` / `70` / `85` / `90`). Action bars were not given a second safe-area pad.
 - 2026-11-01 Solitaire home: the floating language control sat on the paramètres button. It now stays hidden there, same as the other home screens. Language stays inside Paramètres. Phone and desktop home checked in the browser.
-- 2026-11-01 Card back per game (0079). Browser: Solitaire Sorciers on stock; Coinche Casino on the 24 opponent backs, Coinche kept its own choice. `npm test` 377/377, `tsc` clean, `npm run build` clean, lint: only the known `useMatchStats.ts:220` error.
-- 2026-11-01 French faces: valet V, dame D, roi R. English stays J, Q, K.
