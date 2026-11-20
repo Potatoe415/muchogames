@@ -86,7 +86,7 @@ export function useLocalGame(
     roomCode: "LOCAL",
     gameType: variant,
     status: state.phase === "finished" ? "finished" : "playing",
-    settings: { targetPoints },
+    settings: { targetPoints, botProfiles },
     version: 0,
     players: LOCAL_SEAT_NAMES.map((name, seat) => ({
       seat,
