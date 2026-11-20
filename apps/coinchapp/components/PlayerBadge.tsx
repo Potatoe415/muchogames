@@ -5,6 +5,9 @@ import type { Team } from "@/lib/coinche";
 import type { TableReaction } from "@/lib/client/reactions";
 import { ReactionBubble } from "./ReactionBubble";
 
+/** Side seats show the name horizontally under the avatar: cap it to fit. */
+const SIDE_NAME_MAX_CHARS = 10;
+
 export interface PlayerBadgeProps {
   name: string;
   team: Team;
@@ -21,7 +24,7 @@ export interface PlayerBadgeProps {
   isPresident?: boolean;
   /** Bot profile avatar (Coinche / Belote bot seats). */
   avatarSrc?: string;
-  /** Vertical right-side seat: name reads bottom-to-top and the row is mirrored; avatar and reaction stay upright. */
+  /** Vertical right-side seat: row mirrored so the reaction sits toward the table centre. */
   flipped?: boolean;
 }
 
@@ -48,18 +51,19 @@ export function PlayerBadge({
     return (
       <div data-id={dataId} className={`flex items-center gap-1 drop-shadow-lg ${flipped ? "flex-row-reverse" : ""}`}>
         {isThinking && <ThinkingIndicator />}
-        {avatarSrc && <BadgeAvatar src={avatarSrc} />}
-        <div
-          className={`px-1 py-2 text-lg font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass} ${flipped ? "rotate-180" : ""}`}
-          style={{ writingMode: "vertical-rl" }}
-        >
-          {isPresident && (
-            <span className="mb-1 block text-sm" data-id="player-crown-icon" aria-hidden="true">
-              👑
-            </span>
-          )}
-          {name}
-          {isDealer && <span className="mt-1 text-[10px]">D</span>}
+        <div className="flex flex-col items-center gap-0.5">
+          {avatarSrc && <BadgeAvatar src={avatarSrc} />}
+          <div
+            className={`whitespace-nowrap px-1 text-center text-sm font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass}`}
+          >
+            {isPresident && (
+              <span className="mr-0.5 align-middle text-xs" data-id="player-crown-icon" aria-hidden="true">
+                👑
+              </span>
+            )}
+            {Array.from(name).slice(0, SIDE_NAME_MAX_CHARS).join("")}
+            {isDealer && <span className="ml-0.5 align-middle text-[10px]">D</span>}
+          </div>
         </div>
         {!connected && <DisconnectedDot label={t("disconnected")} />}
         {reaction && (
