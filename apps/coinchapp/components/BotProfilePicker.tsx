@@ -28,6 +28,20 @@ const TRAITS: { key: TranslationKey; value: (p: BotProfile) => number }[] = [
   { key: "botTraitRisk", value: (p) => BOT_PROFILE_CONFIG[p].riskTolerance },
 ];
 
+/** Gap kept between the menu and the viewport edge; below this room the menu flips up. */
+const MENU_MARGIN_PX = 8;
+const MENU_MIN_DOWN_PX = 320;
+
+/** Open downward unless the space below is short and the space above is larger. */
+function menuPlacement(el: HTMLElement | null): { up: boolean; maxHeight: number } {
+  if (!el) return { up: false, maxHeight: 480 };
+  const rect = el.getBoundingClientRect();
+  const below = window.innerHeight - rect.bottom - MENU_MARGIN_PX;
+  const above = rect.top - MENU_MARGIN_PX;
+  const up = below < MENU_MIN_DOWN_PX && above > below;
+  return { up, maxHeight: Math.max(160, up ? above : below) };
+}
+
 function clamp01(x: number): number {
   return Math.max(0, Math.min(1, x));
 }
@@ -83,6 +97,7 @@ export function BotProfilePicker({
 }) {
   const { t } = useI18n();
   const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState({ up: false, maxHeight: 0 });
   const rootRef = useRef<HTMLDivElement>(null);
   const current = value ?? DEFAULT_BOT_PROFILE;
 
@@ -105,7 +120,10 @@ export function BotProfilePicker({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={t("botProfileLabel")}
-        onClick={() => setOpen((o) => !o)}
+        onClick={() => {
+          if (!open) setPlacement(menuPlacement(rootRef.current));
+          setOpen((o) => !o);
+        }}
         className="flex w-full items-center gap-2 rounded-lg bg-[var(--card-face)]/10 px-2 py-1 text-xs font-bold disabled:cursor-default"
       >
         {/* eslint-disable-next-line @next/next/no-img-element -- tiny static avatar */}
@@ -117,7 +135,8 @@ export function BotProfilePicker({
         <ul
           role="listbox"
           data-id={`${dataId}-menu`}
-          className="absolute left-0 z-30 mt-1 flex w-64 flex-col gap-1 rounded-xl bg-[var(--surface)] p-2 text-[var(--card-face)] shadow-xl ring-1 ring-[var(--accent-cyan)]/30"
+          style={{ maxHeight: placement.maxHeight }}
+          className={`absolute left-0 z-30 flex w-64 overflow-y-auto ${placement.up ? "bottom-full mb-1" : "top-full mt-1"} flex-col gap-1 rounded-xl bg-[var(--surface)] p-2 text-[var(--card-face)] shadow-xl ring-1 ring-[var(--accent-cyan)]/30`}
         >
           {BOT_PROFILES.map((profile) => (
             <li key={profile} role="option" aria-selected={profile === current}>
