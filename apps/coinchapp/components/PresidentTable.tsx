@@ -437,7 +437,7 @@ function OpponentBadge({
           <CardBackStackV count={view.handCounts[seat]} maxCount={MAX_HAND_COUNT} />
         </div>
       )}
-      <div className={position === "top" ? "mt-2" : position === "left" ? "-ml-[50px]" : "-mr-[50px] rotate-180"} data-id={`president-table-${position}-badge`}>
+      <div className={position === "top" ? "mt-2" : position === "left" ? "-ml-[50px]" : "-mr-[50px]"} data-id={`president-table-${position}-badge`}>
         <PlayerBadge
           name={playerName(gv, seat, locale)}
           team={seat % 2 === 0 ? "A" : "B"}
@@ -447,6 +447,7 @@ function OpponentBadge({
           connected={isConnected(gv, seat)}
           reaction={reaction}
           orientation={position === "top" ? "horizontal" : "vertical"}
+          flipped={position === "right"}
           dataId={`president-player-seat-${seat}`}
           isPresident={view.finishedOrder[0] === seat}
         />

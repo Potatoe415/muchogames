@@ -21,6 +21,8 @@ export interface PlayerBadgeProps {
   isPresident?: boolean;
   /** Bot profile avatar (Coinche / Belote bot seats). */
   avatarSrc?: string;
+  /** Vertical right-side seat: name reads bottom-to-top and the row is mirrored; avatar and reaction stay upright. */
+  flipped?: boolean;
 }
 
 export function PlayerBadge({
@@ -35,6 +37,7 @@ export function PlayerBadge({
   orientation = "horizontal",
   isPresident = false,
   avatarSrc,
+  flipped = false,
 }: PlayerBadgeProps) {
   const { t } = useI18n();
   const teamClass = team === "A" ? "text-team-a" : "text-team-b";
@@ -43,11 +46,11 @@ export function PlayerBadge({
 
   if (orientation === "vertical") {
     return (
-      <div data-id={dataId} className="flex items-center gap-1 drop-shadow-lg">
+      <div data-id={dataId} className={`flex items-center gap-1 drop-shadow-lg ${flipped ? "flex-row-reverse" : ""}`}>
         {isThinking && <ThinkingIndicator />}
         {avatarSrc && <BadgeAvatar src={avatarSrc} />}
         <div
-          className={`px-1 py-2 text-lg font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass}`}
+          className={`px-1 py-2 text-lg font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass} ${flipped ? "rotate-180" : ""}`}
           style={{ writingMode: "vertical-rl" }}
         >
           {isPresident && (

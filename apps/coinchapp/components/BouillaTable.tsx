@@ -389,13 +389,12 @@ function OpponentSide({
   const sideClass = side === "left" ? "left-0 flex-row" : "right-0 flex-row-reverse";
   const handShiftClass = side === "left" ? "-translate-x-3/4" : "translate-x-3/4";
   const badgeNudgeClass = side === "left" ? "-ml-[50px]" : "-mr-[50px]";
-  const badgeRotateClass = side === "right" ? "rotate-180" : "";
   return (
     <div className={`absolute top-[41%] flex items-center gap-0 ${sideClass}`} data-id={`bouilla-table-${side}`}>
       <div className={handShiftClass}>
         <CardBackStackV count={view.handCounts[seat]} maxCount={MAX_HAND_COUNT} />
       </div>
-      <div className={`${badgeNudgeClass} ${badgeRotateClass}`}>
+      <div className={`${badgeNudgeClass}`}>
         <PlayerBadge
           name={playerName(gv, seat, locale)}
           team={seat % 2 === 0 ? "A" : "B"}
@@ -405,6 +404,7 @@ function OpponentSide({
           connected={isConnected(gv, seat)}
           reaction={reaction}
           orientation="vertical"
+          flipped={side === "right"}
           dataId={`bouilla-player-seat-${seat}`}
         />
       </div>

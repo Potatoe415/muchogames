@@ -204,7 +204,6 @@ function SideOpponent({
   const sideClass = side === "left" ? "left-0 flex-row" : "right-0 flex-row-reverse";
   const handShiftClass = side === "left" ? "-translate-x-3/4" : "translate-x-3/4";
   const badgeNudgeClass = side === "left" ? "-ml-[50px]" : "-mr-[50px]";
-  const badgeRotateClass = side === "right" ? "rotate-180" : "";
   const bid = view.phase === "bidding" ? lastSeatBid(view.bids, seat) : null;
   // With flex-row-reverse (right side), the bubble added last renders leftmost (toward center).
   // With flex-row (left side), the bubble added last renders rightmost (toward center).
@@ -214,7 +213,7 @@ function SideOpponent({
       <div className={handShiftClass} data-id={`table-${side}-hand`}>
         <CardBackStackV count={view.handCounts[seat]} />
       </div>
-      <div className={`${badgeNudgeClass} ${badgeRotateClass}`} data-id={`table-${side}-badge-wrap`}>
+      <div className={`${badgeNudgeClass}`} data-id={`table-${side}-badge-wrap`}>
         <PlayerBadge
           name={playerName(gv, seat)}
           team={seatTeam(seat)}
@@ -225,6 +224,7 @@ function SideOpponent({
           avatarSrc={botAvatar(gv, seat)}
           reaction={reaction}
           orientation="vertical"
+          flipped={side === "right"}
           dataId={`player-seat-${seat}`}
         />
       </div>
