@@ -2,6 +2,7 @@
   {
     "id": "pictionary",
     "title": "Dessiner c'est gagné",
+    "description": "Jeu de dessin en équipe pour vos soirées : un joueur dessine, les autres devinent le mot avant la fin du sablier. Gratuit, sur un seul téléphone.",
     "kind": "wordpack",
     "tags": ["soiree", "mots"],
     "added": "2026-03-10",
@@ -15,6 +16,7 @@
   {
     "id": "taboo",
     "title": "Taboo",
+    "description": "Faites deviner un mot à votre équipe sans prononcer les mots interdits. Jeu d'ambiance gratuit pour 4 à 12 joueurs, sur un seul téléphone.",
     "kind": "wordpack",
     "tags": ["soiree", "mots"],
     "added": "2026-03-10",
@@ -29,6 +31,7 @@
   {
     "id": "esquisse",
     "title": "Téléphone bizarre",
+    "description": "Le téléphone arabe en dessins : on dessine une phrase, le suivant la devine, et le message dérape. Fous rires garantis en soirée, gratuit.",
     "kind": "wordpack",
     "tags": ["soiree"],
     "added": "2026-03-10",
@@ -42,6 +45,7 @@
   {
     "id": "blackstories",
     "title": "Black Stories",
+    "description": "Énigmes macabres à résoudre en groupe : posez des questions fermées pour reconstituer l'histoire. Jeu d'enquête et de déduction gratuit.",
     "kind": "custom",
     "tags": ["soiree"],
     "added": "2026-03-10",
@@ -54,6 +58,7 @@
   {
     "id": "olemains",
     "title": "Jeu de mains",
+    "description": "Jeu de mots chronométré en équipe : faites trouver un maximum de mots avant la fin du temps. Jeu de soirée gratuit sur un seul téléphone.",
     "kind": "custom",
     "tags": ["soiree", "mots"],
     "added": "2026-03-10",
@@ -66,6 +71,7 @@
   {
     "id": "easyfrog",
     "title": "Easy Frog",
+    "description": "Jeu d'arcade : aidez la grenouille à traverser la route et la rivière sans se faire écraser. Gratuit, sans inscription, sur mobile et PC.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-03-10",
@@ -77,6 +83,7 @@
   {
     "id": "cafards",
     "title": "Salade de Cafards",
+    "description": "Jeu de cartes d'ambiance : annoncez la bonne carte sans vous tromper ni hésiter. De 2 à 6 joueurs sur un seul appareil, gratuit.",
     "kind": "custom",
     "tags": ["cartes", "soiree"],
     "added": "2026-03-10",
@@ -88,6 +95,7 @@
   {
     "id": "millionaire",
     "title": "Qui veut gagner des millions ?",
+    "description": "Quiz de culture générale en 15 questions avec 4 jokers pour tenter de devenir millionnaire. Gratuit, en français, anglais et espagnol.",
     "kind": "custom",
     "tags": ["quiz"],
     "added": "2026-03-10",
@@ -99,6 +107,7 @@
   {
     "id": "pipedream",
     "title": "Pipe Dream",
+    "description": "Jeu de réflexion : posez les tuyaux à temps pour guider le liquide le plus loin possible. Casse-tête rétro gratuit, sur mobile et PC.",
     "kind": "custom",
     "tags": ["reflexion", "arcade"],
     "added": "2026-10-24",
@@ -110,6 +119,7 @@
   {
     "id": "jezzball",
     "title": "JezzBall",
+    "description": "Jeu d'arcade rétro : tracez des murs pour enfermer les balles et capturer 75 % de l'écran. Gratuit, sans inscription, sur mobile et PC.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-10-24",
@@ -121,6 +131,7 @@
   {
     "id": "skifree",
     "title": "SkiFree",
+    "description": "Le jeu de ski rétro culte : dévalez la pente, évitez les arbres et échappez au yéti. Gratuit, sans inscription, sur mobile et PC.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-10-24",
@@ -132,6 +143,7 @@
   {
     "id": "chipschallenge",
     "title": "Chip's Challenge",
+    "description": "Jeu de réflexion rétro aux 149 niveaux : ramassez les puces, évitez les pièges et trouvez la sortie. Gratuit, sur mobile et PC.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-10-24",
@@ -143,6 +155,7 @@
   {
     "id": "minesweeper",
     "title": "Démineur",
+    "description": "Le démineur classique en ligne : dévoilez la grille sans faire exploser de mine, sur plusieurs niveaux. Gratuit, sur mobile et PC.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-10-24",
@@ -154,6 +167,7 @@
   {
     "id": "spacecadet",
     "title": "Space Cadet",
+    "description": "Le flipper Space Cadet de Windows, jouable dans le navigateur : missions, rampes et bonus. Gratuit, sans installation, sur PC et mobile.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-10-25",
@@ -166,6 +180,7 @@
   {
     "id": "memory",
     "title": "Memory",
+    "description": "Jeu de mémoire : retournez les cartes et retrouvez les paires. Plusieurs thèmes, en solo ou à deux en ligne. Gratuit, pour petits et grands.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-10-25",
@@ -177,6 +192,7 @@
   {
     "id": "checkers",
     "title": "Jeu de dames",
+    "description": "Jeu de dames en ligne contre l'ordinateur (4 niveaux) ou à deux sur le même appareil. Règles internationales 10×10 ou 8×8. Gratuit.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-10-28",
@@ -188,6 +204,7 @@
   {
     "id": "chess",
     "title": "Échecs",
+    "description": "Jouez aux échecs en ligne contre l'ordinateur (4 niveaux) ou à deux sur le même appareil. Gratuit, sans inscription, sur mobile et PC.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-10-31",
@@ -199,6 +216,7 @@
   {
     "id": "fruitslash",
     "title": "Fruit Slash",
+    "description": "Tranchez les fruits d'un glissement de doigt et évitez les bombes. Jeu d'arcade gratuit et rapide, sur mobile et PC, sans inscription.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-10-31",
@@ -210,6 +228,7 @@
   {
     "id": "scrabble",
     "title": "Scrabble",
+    "description": "Jeu de lettres : formez des mots sur la grille et marquez un maximum de points contre l'ordinateur. Dictionnaire FR, EN et ES. Gratuit.",
     "kind": "custom",
     "tags": ["mots", "reflexion"],
     "added": "2026-11-01",
@@ -221,6 +240,7 @@
   {
     "id": "trivialpursuit",
     "title": "Trivial Quizz",
+    "description": "Quiz de culture générale en 6 catégories avec plus de 2 300 questions. Remportez les 6 camemberts, entre amis ou en famille. Gratuit.",
     "kind": "custom",
     "tags": ["quiz"],
     "added": "2026-11-02",
@@ -232,6 +252,7 @@
   {
     "id": "sudoku",
     "title": "Sudoku",
+    "description": "Sudoku gratuit en ligne : des grilles générées à l'infini, toujours à solution unique, sur plusieurs niveaux. Notes, indices et sauvegarde.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-10-28",
@@ -243,6 +264,7 @@
   {
     "id": "bridge",
     "title": "Bridge",
+    "description": "Jouez au bridge en ligne avec trois robots : enchères SEF, jeu de la carte et comptage des points. Gratuit, sans inscription.",
     "kind": "custom",
     "tags": ["cartes"],
     "added": "2026-10-28",
@@ -254,6 +276,7 @@
   {
     "id": "pigeonpigeon",
     "title": "Dictionnaire",
+    "description": "Jeu de vocabulaire en soirée : complétez les phrases avec le mot juste (cris d'animaux, mots rares). Gratuit, sur un seul téléphone.",
     "kind": "wordpack",
     "tags": ["soiree", "mots"],
     "added": "2026-03-11",
@@ -267,6 +290,7 @@
   {
     "id": "pyramide",
     "title": "Pyramide",
+    "description": "Jeu de mots en équipe : faites deviner les mots de la pyramide à votre équipe et marquez des points. Jeu de soirée gratuit sur un téléphone.",
     "kind": "custom",
     "tags": ["mots", "soiree"],
     "added": "2026-03-11",
@@ -278,6 +302,7 @@
   {
     "id": "yatsy",
     "title": "Yams",
+    "description": "Le Yams en ligne : lancez les 5 dés et remplissez votre grille, à deux sur un appareil, contre un robot ou en duel en ligne. Gratuit.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-05-23",
@@ -289,6 +314,7 @@
   {
     "id": "tranquil",
     "title": "Tranquil",
+    "description": "Jeu de cartes coopératif : ensemble et en silence, rangez les cartes dans l'ordre pour traverser l'océan. Gratuit, en ligne avec vos amis.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-06-05",
@@ -301,6 +327,7 @@
   {
     "id": "coinche",
     "title": "Coinche",
+    "description": "Jouez à la coinche en ligne avec vos amis ou contre des bots : enchères, coinche, surcoinche et belote-rebelote. Gratuit, sans inscription.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-08-17",
@@ -314,6 +341,7 @@
   {
     "id": "belote",
     "title": "Belote",
+    "description": "Jouez à la belote en ligne avec vos amis ou contre des bots, à 4 joueurs en deux équipes. Gratuit, sans inscription, sur mobile et PC.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-10-31",
@@ -327,6 +355,7 @@
   {
     "id": "bouilla",
     "title": "Bouilla",
+    "description": "La Bouilla, jeu de cartes de la famille du barbu : 6 manches, évitez les pénalités. En ligne avec vos amis ou contre des bots, gratuit.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-08-17",
@@ -340,6 +369,7 @@
   {
     "id": "president",
     "title": "Président",
+    "description": "Jouez au Président (trou du cul) en ligne : videz votre main le premier, révolutions et échanges de cartes. Gratuit, avec bots ou amis.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-09-10",
@@ -353,6 +383,7 @@
   {
     "id": "bataillecorse",
     "title": "La Bataille Corse",
+    "description": "La Bataille Corse en ligne à 2 joueurs : tapez sur le tas au bon moment pour gagner les cartes. Jeu de réflexes gratuit, sans inscription.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-09-16",
@@ -366,6 +397,7 @@
   {
     "id": "solitaire",
     "title": "Solitaire",
+    "description": "Le solitaire (Klondike) classique en ligne : rangez toutes les cartes par couleur de l'as au roi. Gratuit, sans inscription, mobile et PC.",
     "kind": "external",
     "tags": ["cartes"],
     "added": "2026-10-23",
@@ -379,6 +411,7 @@
   {
     "id": "gameboy-web",
     "title": "GameBoy Web",
+    "description": "Émulateur Game Boy dans le navigateur : chargez vos propres ROM et jouez sur mobile ou PC. Gratuit, sans installation.",
     "kind": "external",
     "tags": ["arcade"],
     "added": "2026-09-01",
@@ -392,6 +425,7 @@
   {
     "id": "ttcf",
     "title": "Tu Te Crois Fort ?",
+    "description": "Quiz de soirée par équipes : notez-vous de 1 à 10 sur un thème, répondez à la question du niveau choisi et avancez. Tu te crois fort ?",
     "kind": "custom",
     "tags": ["quiz", "soiree"],
     "added": "2026-11-02",
@@ -404,6 +438,7 @@
   {
     "id": "fruitmerge",
     "title": "Fusion de fruits",
+    "description": "Fusionnez les fruits identiques jusqu'à la pastèque, sans faire déborder la caisse. Jeu de réflexion gratuit, sur mobile, PC et TV.",
     "kind": "custom",
     "tags": ["arcade", "reflexion"],
     "added": "2026-11-02",
@@ -415,6 +450,7 @@
   {
     "id": "2048",
     "title": "2048",
+    "description": "Le jeu 2048 en ligne : faites glisser les tuiles et additionnez les nombres pour atteindre 2048. Gratuit, sans inscription, mobile et PC.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-11-03",
@@ -426,6 +462,7 @@
   {
     "id": "tetris",
     "title": "Tetris",
+    "description": "Jeu de blocs qui tombent : complétez des lignes pour les effacer et tenez le plus longtemps possible. Gratuit, sur mobile, PC et TV.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-11-04",
@@ -437,6 +474,7 @@
   {
     "id": "simon",
     "title": "Simon",
+    "description": "Jeu de mémoire : répétez la suite de couleurs et de sons qui s'allonge à chaque tour. Le Simon classique, gratuit, sur mobile et PC.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-11-04",
@@ -448,6 +486,7 @@
   {
     "id": "piou",
     "title": "Piou",
+    "description": "Faites voler l'oiseau entre les tuyaux d'une simple touche. Jeu d'arcade rétro gratuit et addictif, sur mobile et PC, sans inscription.",
     "kind": "custom",
     "tags": ["arcade"],
     "added": "2026-11-05",
@@ -459,6 +498,7 @@
   {
     "id": "connectfour",
     "title": "4 en ligne",
+    "description": "Puissance 4 en ligne : alignez 4 jetons avant votre adversaire. À deux sur le même appareil ou contre un bot. Gratuit, sans inscription.",
     "kind": "custom",
     "tags": ["reflexion"],
     "added": "2026-11-05",

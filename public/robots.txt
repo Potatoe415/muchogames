@@ -1,0 +1,9 @@
+# Muchogames — free online games. Every crawler is welcome, including AI and
+# LLM crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended...).
+# A summary for LLMs lives at /llms.txt.
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+
+Sitemap: https://www.muchogames.win/sitemap.xml

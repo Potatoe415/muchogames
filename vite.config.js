@@ -3,6 +3,7 @@ import { resolve } from "path";
 import { defineConfig, loadEnv } from "vite";
 
 import { runGifSearch } from "./api/_lib/giphy.js";
+import { seoPlugin } from "./scripts/seo.mjs";
 
 function staticPageDevPlugin() {
   return {
@@ -57,7 +58,11 @@ async function answerGifSearch(req, res, apiKey) {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return {
-    plugins: [yatzyGifsDevPlugin(env.GIPHY_API_KEY), staticPageDevPlugin()],
+    plugins: [
+      yatzyGifsDevPlugin(env.GIPHY_API_KEY),
+      staticPageDevPlugin(),
+      seoPlugin()
+    ],
     server: {
       host: true, // Autorise l'accès via l'IP locale (0.0.0.0)
       port: 5173 // Optionnel : fixe le port si tu veux être sûr

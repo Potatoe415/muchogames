@@ -4,8 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#fffaeb" />
-    <title>Muchogames</title>
+    <title>Muchogames — jeux de société et de soirée gratuits en ligne</title>
+    <meta
+      name="description"
+      content="Jeux de société, de cartes, de soirée et d'arcade gratuits en ligne, sans inscription : échecs, belote, coinche, sudoku, quiz, Yams et plus encore."
+    />
+    <meta
+      name="keywords"
+      content="jeux gratuits en ligne, jeux de soirée, jeux de société en ligne, jeux de cartes en ligne, belote en ligne, coinche en ligne, échecs en ligne, sudoku, démineur, jeu de dames, quiz, Yams, jeux sans inscription"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.muchogames.win/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Muchogames" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta
+      property="og:title"
+      content="Muchogames — jeux de société et de soirée gratuits en ligne"
+    />
+    <meta
+      property="og:description"
+      content="Plus de 40 jeux gratuits dans le navigateur, sans inscription : jeux de soirée, cartes, réflexion, arcade et quiz, sur téléphone, PC et TV."
+    />
+    <meta property="og:url" content="https://www.muchogames.win/" />
+    <meta
+      property="og:image"
+      content="https://www.muchogames.win/assets/banner-games-hub.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- seo:json-ld -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icon.svg" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +51,7 @@
     <link rel="stylesheet" href="./hub-library.css" />
     <link rel="stylesheet" href="./hub-catalog.css" />
     <link rel="stylesheet" href="./hub-coins.css" />
+    <link rel="stylesheet" href="./hub-seo.css" />
   </head>
   <body>
     <div class="hub-shell">
@@ -194,6 +226,12 @@
           hidden
         ></div>
       </main>
+
+      <!-- Crawlable catalog (no JavaScript needed), filled at build time from
+           public/hub-config.json by scripts/seo.mjs. -->
+      <footer class="hub-seo" data-id="hub-seo">
+        <!-- seo:game-list -->
+      </footer>
     </div>
 
     <script src="/shared/js/player-profile.js"></script>

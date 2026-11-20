@@ -27,7 +27,11 @@ follows the platform rules; a new game never goes in the check's baseline.
 3. **Register it**:
    - one entry in `public/hub-config.json` (fields:
      `docs/PLATFORM_RULES.md` section 2), thumbnail inside the game's
-     folder, subject centred (the hub crops it to a square);
+     folder, subject centred (the hub crops it to a square), and a French
+     `description` (~150 characters, what you do + "gratuit"): the build
+     turns it into the game page's title/description/Open Graph tags, the
+     sitemap and `llms.txt` (decision 0066). Keep the source `<title>`
+     tag in `index.html`: the build replaces it;
    - one row in `docs/GAMES_MAP.md`;
    - a `NOTES.md` in the game's folder once the main file passes
      ~150–200 lines.

@@ -20,6 +20,7 @@ import { renderHome } from "./hub-home.js";
 import { renderLibrary, renderPills } from "./hub-library.js";
 import { initNav, renderNav } from "./hub-nav.js";
 import { onRouteChange, readRoute, writeRoute } from "./hub-route.js";
+import { renderSeoFooter } from "./hub-seo.js";
 import {
   favoriteGames,
   isFavorite,
@@ -346,6 +347,7 @@ function render() {
   document.getElementById(SORT_ID).hidden = !library;
   if (library) renderLibraryView();
   else renderHomeView();
+  renderSeoFooter(state.lang);
 }
 
 function renderHomeView() {

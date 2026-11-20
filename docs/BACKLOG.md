@@ -63,6 +63,8 @@ Current work only. Completed work lives in git history and `docs/decisions/`.
 - [ ] Commit and push the GIF picker squash fix and the Président tile + coinche launch-URL fix, once both confirmed on real devices.
 
 ## Next
+- [ ] `scripts/check-games.mjs`: require a non-empty French `description` (≤ 160 chars) on every `hub-config.json` entry (decision 0066; platform rule change, owner to confirm).
+- [ ] SEO: wordpack games share `wordplayer.html`, so crawlers that do not run JS see one generic page for all four; a static page per pack would give each its own title/description.
 - [ ] **User**: bring the existing games to the TV rule one by one (`docs/PLATFORM_RULES.md` section 7, decision 0059). Millionaire already has it; use `public/shared/js/tv-remote.js`.
 - [ ] Bring the existing games to the *(new games)* rules one by one (`docs/PLATFORM_RULES.md` sections 3.2, 4.3, 6.2, 6.3; decisions 0061, 0064): Game Dashboard with Resume above New game, live score + best for solo score games, 40px bottom / 24px side margin, board 99% of the phone's width in portrait (done: JezzBall, Chip's Challenge). Keep each game's current `localStorage` keys.
 - [ ] `MuchogamesMatch.finish({ score })` without `won` forwards nothing to the shared profile (`game-session.js` returns early): decide whether high-score games should report their score (L2: profile data).

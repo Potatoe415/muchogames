@@ -1,0 +1,43 @@
+/* Hub footer: short "about" text and a plain link to every game, generated at
+   build time by scripts/seo.mjs so search engines and LLMs can read the
+   catalog without running JavaScript. Kept quiet: small, muted, at the end. */
+.hub-seo {
+  padding: 8px clamp(20px, 3vw, 32px) 40px;
+  font-family: "Quicksand", system-ui, sans-serif;
+  color: rgba(90, 58, 34, 0.7);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.hub-seo__title {
+  margin: 0 0 4px;
+  font-family: "Baloo 2", cursive;
+  font-size: 1rem;
+  color: #5a3a22;
+}
+
+.hub-seo__intro {
+  margin: 0 0 10px;
+  max-width: 70ch;
+}
+
+.hub-seo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.hub-seo__list a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(90, 58, 34, 0.25);
+  text-underline-offset: 2px;
+}
+
+.hub-seo__list a:hover,
+.hub-seo__list a:focus-visible {
+  color: #c8663f;
+}

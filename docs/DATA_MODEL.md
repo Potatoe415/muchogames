@@ -34,6 +34,7 @@ Fields:
 |---|---|---|---|
 | id | string | Yes | kebab-case, matches `public/games/<id>/` folder |
 | title | string | Yes | Display name on the hub tile |
+| description | string | Yes | French, ~150 characters. SEO only (not shown on tiles): meta description, Open Graph, JSON-LD, `sitemap.xml`, `llms.txt`, all built by `scripts/seo.mjs` (decision 0066) |
 | kind | string | Yes | `wordpack` \| `custom` \| `external` |
 | tags | string[] | Yes | One or more of `cartes` \| `soiree` \| `mots` \| `reflexion` \| `arcade` \| `quiz` (`hub-taxonomy.js`). Home row(s) and library "type" pill |
 | added | string | Yes | `YYYY-MM-DD`, the day the game joined the catalog. Hub sort "newest" (the default) uses it. Same day keeps catalog order. Missing sorts last |
