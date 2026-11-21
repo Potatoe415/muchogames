@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useI18n } from "@/lib/client/i18n";
 import { matchFromView } from "@/lib/client/matchCoin";
 import { useOptimisticPlay } from "@/lib/client/useOptimisticPlay";
@@ -13,9 +13,10 @@ import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import { EmojiButton } from "./EmojiButton";
 import { GameHud } from "./GameHud";
 import { GameTableScene } from "./GameTableScene";
-import { playerName, relativeSeat, seatMascot } from "./gameTableHelpers";
+import { playerName, relativeSeat, seatMascot, seatTeam } from "./gameTableHelpers";
 import { HandCardSlot } from "./HandCardSlot";
 import { formatBidLabel, isRedSuit, trumpModeLabel } from "./labels";
+import { PlayerBadge } from "./PlayerBadge";
 import { SelfNameChip } from "./SelfNameChip";
 import { TableShell } from "./TableShell";
 
@@ -230,6 +231,7 @@ function HandFan({
   myTurnToPlay,
   preSelectedId,
   onCardTap,
+  sideBadge,
 }: {
   hand: Card[];
   trump: TrumpMode | null;
@@ -237,6 +239,8 @@ function HandFan({
   myTurnToPlay: boolean;
   preSelectedId: string | null;
   onCardTap: (card: Card) => void;
+  /** Desktop only: my seat badge, shown just right of the fan. */
+  sideBadge?: ReactNode;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [maxFanWidth, setMaxFanWidth] = useState(DEFAULT_MAX_FAN_WIDTH);
@@ -266,6 +270,14 @@ function HandFan({
     >
       <CssVarProbe probeRef={probeRef} probeStyle={probeStyle} />
       <div className="relative h-full" style={{ width: fanW }}>
+        {sideBadge && (
+          <div
+            className="absolute left-full top-1/2 ml-8 hidden w-max -translate-y-1/2 lg:block"
+            data-id="self-seat-desktop"
+          >
+            {sideBadge}
+          </div>
+        )}
         {sorted.map((card, i) => {
           const id = cardId(card);
           const isPlayable = myTurnToPlay && legalSet.has(id);
@@ -320,8 +332,11 @@ function ActionDock({
   const [previewTrump, setPreviewTrump] = useState<TrumpMode | null>(null);
   return (
     <section className="absolute inset-x-0 bottom-0 z-20 px-0 pb-1" data-id="action-area">
+      {/* Phone: small chip above the hand. Desktop: full badge to the right of the hand. */}
       {selfName !== undefined && (
-        <SelfNameChip name={selfName} avatarSrc={selfAvatar} />
+        <div className="lg:hidden">
+          <SelfNameChip name={selfName} avatarSrc={selfAvatar} />
+        </div>
       )}
       <BiddingStatus view={view} players={players} mySeat={mySeat} onBid={onBid} onSuitChange={setPreviewTrump} />
       <HandFan
@@ -331,6 +346,19 @@ function ActionDock({
         myTurnToPlay={myTurnToPlay}
         preSelectedId={preSelectedId}
         onCardTap={onCardTap}
+        sideBadge={
+          selfName !== undefined && (
+            <PlayerBadge
+              name={selfName}
+              team={seatTeam(mySeat)}
+              isTurn={view.turn === mySeat}
+              isDealer={view.dealer === mySeat}
+              avatarSrc={selfAvatar}
+              dataId="self-seat-badge"
+              stackOnDesktop
+            />
+          )
+        }
       />
     </section>
   );

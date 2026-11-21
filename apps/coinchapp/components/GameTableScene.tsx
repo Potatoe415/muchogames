@@ -171,7 +171,7 @@ function TopOpponent({ gv, view, seat, reaction }: { gv: GameView; view: PlayerV
     <div className="absolute left-1/2 top-[13%] flex -translate-x-1/2 flex-col items-center" data-id="table-top">
       <CardBackFanH count={view.handCounts[seat]} />
       {/* Desktop: badge beside the fan, so the tripled avatar stays clear of the played card. */}
-      <div className="mt-2 flex flex-row items-center gap-1 lg:absolute lg:left-full lg:top-1/2 lg:mt-0 lg:ml-3 lg:-translate-y-1/2" data-id="table-top-badge-wrap">
+      <div className="mt-2 flex flex-row items-center gap-1 lg:absolute lg:left-full lg:top-1/2 lg:mt-0 lg:ml-3 lg:w-max lg:-translate-y-1/2" data-id="table-top-badge-wrap">
         <PlayerBadge
           name={playerName(gv, seat)}
           team={seatTeam(seat)}
@@ -182,6 +182,7 @@ function TopOpponent({ gv, view, seat, reaction }: { gv: GameView; view: PlayerV
           avatarSrc={seatAvatar(gv, seat)}
           reaction={reaction}
           dataId={`player-seat-${seat}`}
+          stackOnDesktop
         />
         {bid && <BidBubble bid={bid} tailDir="left" />}
       </div>

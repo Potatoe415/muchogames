@@ -26,6 +26,8 @@ export interface PlayerBadgeProps {
   avatarSrc?: string;
   /** Vertical right-side seat: row mirrored so the reaction sits toward the table centre. */
   flipped?: boolean;
+  /** Horizontal badge only: on desktop (lg+) stack the avatar above the name, centred. */
+  stackOnDesktop?: boolean;
 }
 
 export function PlayerBadge({
@@ -41,6 +43,7 @@ export function PlayerBadge({
   isPresident = false,
   avatarSrc,
   flipped = false,
+  stackOnDesktop = false,
 }: PlayerBadgeProps) {
   const { t } = useI18n();
   const teamClass = team === "A" ? "text-team-a" : "text-team-b";
@@ -80,15 +83,19 @@ export function PlayerBadge({
   return (
     <div data-id={dataId} className="flex items-center gap-1 drop-shadow-lg">
       {isThinking && <ThinkingIndicator />}
-      {avatarSrc && <BadgeAvatar src={avatarSrc} />}
-      <div className={`px-1 py-0.5 text-xl font-black uppercase leading-none ${teamClass} ${turnClass} ${dimClass}`}>
-        {isPresident && (
-          <span className="mr-1 align-middle text-base" data-id="player-crown-icon" aria-hidden="true">
-            👑
-          </span>
-        )}
-        {name}
-        {isDealer && <span className="ml-1 align-middle text-[10px]">D</span>}
+      <div className={stackOnDesktop ? "flex items-center gap-1 lg:flex-col lg:gap-0.5" : "contents"}>
+        {avatarSrc && <BadgeAvatar src={avatarSrc} />}
+        <div
+          className={`px-1 py-0.5 text-xl font-black uppercase leading-none ${stackOnDesktop ? "lg:text-center" : ""} ${teamClass} ${turnClass} ${dimClass}`}
+        >
+          {isPresident && (
+            <span className="mr-1 align-middle text-base" data-id="player-crown-icon" aria-hidden="true">
+              👑
+            </span>
+          )}
+          {name}
+          {isDealer && <span className="ml-1 align-middle text-[10px]">D</span>}
+        </div>
       </div>
       {!connected && <DisconnectedDot label={t("disconnected")} />}
       {reaction && (
@@ -111,7 +118,7 @@ function BadgeAvatar({ src }: { src: string }) {
       alt=""
       width={84}
       height={84}
-      className="h-7 w-7 shrink-0 rounded-full object-contain lg:h-21 lg:w-21"
+      className="h-7 w-7 max-w-none shrink-0 rounded-full object-contain lg:h-21 lg:w-21"
       data-id="player-avatar"
     />
   );
