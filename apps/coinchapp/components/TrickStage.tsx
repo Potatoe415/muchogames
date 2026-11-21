@@ -31,9 +31,9 @@ export function seatDirection(seats: TableSeats, seat: number | null): EnterDire
 }
 
 /** Left/right played-card slots: 27% from the edge on a phone, but never further than
- *  ~2.4 card widths from the centre, so a wide desktop keeps the trick grouped. */
-const SIDE_SLOT_LEFT = "left-[max(27%,calc(50%_-_var(--card-lg-w)*2.4))]";
-const SIDE_SLOT_RIGHT = "right-[max(27%,calc(50%_-_var(--card-lg-w)*2.4))]";
+ *  ~1.9 card widths from the centre, so a wide desktop keeps the trick grouped. */
+const SIDE_SLOT_LEFT = "left-[max(27%,calc(50%_-_var(--card-lg-w)*1.9))]";
+const SIDE_SLOT_RIGHT = "right-[max(27%,calc(50%_-_var(--card-lg-w)*1.9))]";
 
 function cardKey(card: CardOf<string>): string {
   return `${card.rank}${card.suit}`;
