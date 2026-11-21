@@ -389,8 +389,8 @@ Every action works with all three.
   shared by every game (`bergamots-lang`). Code, identifiers, comments and
   docs stay in English (`AGENTS.md`).
 - **Privacy**: no mandatory account, no identity beyond what
-  `player-profile.js` offers (optional name, prefilled from `?name=`; the
-  avatar stays inside Muchogames). Every game plays signed out. No global
+  `player-profile.js` offers (optional name, prefilled from `?name=`; a
+  mascot avatar, sent as `?mascot=`). Every game plays signed out. No global
   leaderboard, friend list or per-player match history.
 - **URLs**: no `*.vercel.app` URL in code **[verified: `url`]**. In-repo
   links are relative; the hub's absolute URL is

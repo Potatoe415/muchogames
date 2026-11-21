@@ -12,7 +12,7 @@ Context:
 - Relevant_Decisions: 0067, 0066, 0064, 0063, 0062, 0061, 0060
 
 Next:
-- Owner: confirm proposed doc edits for mascots: `docs/PRODUCT.md` (Avatar = mascot picker, travels to games), `docs/SECURITY.md` (avatar = mascot path, not a ~35 KB data URL), `docs/PLATFORM_RULES.md` l.393. Tranquil still expects `?avatar=` (shows no picture now): teach it `?mascot=`.
+- Tranquil still expects `?avatar=` (shows no picture now): teach it `?mascot=` (proposed as its own task). PRODUCT/SECURITY/PLATFORM_RULES/ARCHITECTURE now describe mascots (owner OK 2026-11-21).
 - Owner: share a game link (e.g. `/games/chess/`) in a chat app: the preview shows the game's title, description and thumbnail. Search Console: watch indexing over the coming weeks.
 - Owner: TTCF board on a phone: open and close a card, watch a token walk: the tiles keep their size, the button just vanishes and comes back. Not run in a browser, only the checks.
 - Owner: play Piou on a phone and desktop: tighter, faster, closer pipes than before (original difficulty); say if it feels right.

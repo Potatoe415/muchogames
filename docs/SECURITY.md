@@ -13,7 +13,7 @@ The baseline is stack-agnostic. Stack-specific rules are in the last section.
 - `api/_lib/http.js`'s `withErrorHandling` wraps every serverless handler; 4xx messages are shown to the user, 5xx detail is logged and replaced by one generic sentence.
 - `game_state` writes (Yatzy) are rejected unless the payload is a JSON object under 64 KB.
 - No formal schema-validation library is in use (inferred — confirm); validation is ad hoc per handler.
-- Free-form input is length-capped server-side: feedback messages ≤ 2000 chars, announcement texts ≤ 280, display names ≤ 40, avatar data URLs ≤ ~35 KB; game ids must match `^[a-z0-9-]{1,64}$`. `api/_lib/hubSettings.js` rebuilds the settings object from known keys only, so nothing unexpected reaches every hub visitor.
+- Free-form input is length-capped server-side: feedback messages ≤ 2000 chars, announcement texts ≤ 280, display names ≤ 40, avatars must be a mascot path (`/mascots/<id>.webp`); game ids must match `^[a-z0-9-]{1,64}$`. `api/_lib/hubSettings.js` rebuilds the settings object from known keys only, so nothing unexpected reaches every hub visitor.
 
 ## Authentication and authorization
 - Default deny via Supabase RLS: `yatzy_games`, `yatzy_game_events` writes, `muchogames_events`, `muchogames_coins` and `muchogames_device_coins` have RLS enabled with zero policies — only the service-role key (server-only, inside `api/`) can read/write.

@@ -60,7 +60,7 @@ Rules:
 
 ## Player identity contract
 
-`public/shared/js/player-profile.js` is the canonical reader/writer for the player's name (`bergamots-player-name`) and avatar (`bergamots-player-avatar`), exposed as `window.PlayerProfile`. In-repo same-origin games (Yatzy) read `localStorage` directly via that module. Cross-origin games (`coinche`, `bouilla`, `president`, `bataillecorse`, `tranquil`) receive the name/avatar as `?name=`/`?avatar=` launch URL params (`hub.js`'s `appendLaunchParams()`), pre-filling but never requiring or overwriting a value the player types. Colocated apps (entries with `source`) also receive `?mgDevice=`, the anonymous coin counter id, so one counter covers every game; it is never sent to games outside this repo. See `docs/decisions/INDEX.md` (2026-09-05/06 entries) and `docs/TECH.md` (retained, see note below) for the full mechanism.
+`public/shared/js/player-profile.js` is the canonical reader/writer for the player's name (`bergamots-player-name`) and mascot avatar (`muchogames-player-mascot`, decision 0067), exposed as `window.PlayerProfile`. In-repo same-origin games (Yatzy) read `localStorage` directly via that module. Cross-origin games (`coinche`, `bouilla`, `president`, `bataillecorse`, `tranquil`) receive the name/mascot as `?name=`/`?mascot=` launch URL params (`hub.js`'s `appendLaunchParams()`), pre-filling but never requiring or overwriting a value the player types. Colocated apps (entries with `source`) also receive `?mgDevice=`, the anonymous coin counter id, so one counter covers every game; it is never sent to games outside this repo. See `docs/decisions/INDEX.md` (2026-09-05/06 entries) and `docs/TECH.md` (retained, see note below) for the full mechanism.
 
 ## Retired doc
 
