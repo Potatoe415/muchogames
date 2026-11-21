@@ -445,6 +445,8 @@ function createPopoverNode() {
   if (authState.email) {
     popover.appendChild(createLoggedInContent());
   } else {
+    // Signed out players still have a local name and mascot to change.
+    popover.appendChild(createProfileLink(authCopy().profile));
     const googleButtonContainer = document.createElement("div");
     googleButtonContainer.id = GOOGLE_BUTTON_CONTAINER_ID;
     popover.appendChild(googleButtonContainer);
@@ -462,12 +464,7 @@ function createLoggedInContent() {
   fragment.appendChild(email);
 
   const strings = authCopy();
-  const profileLink = document.createElement("a");
-  profileLink.className = "auth-profile-link";
-  profileLink.href = PROFILE_URL;
-  profileLink.dataset.id = "auth-profile-link";
-  profileLink.textContent = strings.profile;
-  fragment.appendChild(profileLink);
+  fragment.appendChild(createProfileLink(strings.profile));
 
   if (!readUsableIdToken()) {
     const googleButtonContainer = document.createElement("div");
@@ -488,6 +485,15 @@ function createLoggedInContent() {
   fragment.appendChild(logoutButton);
 
   return fragment;
+}
+
+function createProfileLink(label) {
+  const profileLink = document.createElement("a");
+  profileLink.className = "auth-profile-link";
+  profileLink.href = PROFILE_URL;
+  profileLink.dataset.id = "auth-profile-link";
+  profileLink.textContent = label;
+  return profileLink;
 }
 
 function renderGoogleButton() {
