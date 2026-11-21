@@ -208,14 +208,30 @@ export function buildDeterminizer(view: PlayerView, rng: () => number): Determin
   };
 }
 
-/** Play the root card, then random legal moves to the deal end. Returns contractMade. */
-export function simulateRootMove(state: GameState, card: Card, rng: () => number): boolean {
+/** Card points in a whole deal, dix de der included (152 + 10). */
+const DEAL_CARD_POINTS = 162;
+/** Weight of the card-point share against the 0/1 contract outcome. Small enough that
+ *  a real change in the odds of making the contract always wins; large enough that,
+ *  once the contract is decided (every move makes it, or none does), the bot still
+ *  plays for points: it keeps its sure winner for the last trick (dix de der). */
+export const POINTS_TIEBREAK_WEIGHT = 0.15;
+
+/**
+ * Play the root card, then random legal moves to the deal end. Returns the root
+ * team's reward: 1 if its side of the contract succeeded (attack made / defence
+ * set), plus `POINTS_TIEBREAK_WEIGHT` x its share of the card points.
+ */
+export function simulateRootMove(state: GameState, card: Card, rng: () => number): number {
+  const myTeam = teamOf(state.turn);
+  const attacking = state.contract?.team === myTeam;
   let current = submitPlay(state, state.turn, card);
   let guard = 0;
   while (current.phase === "playing" && guard++ < MAX_PLAYS) {
     const legal = legalCards(current, current.turn);
     current = submitPlay(current, current.turn, legal[Math.floor(rng() * legal.length)]);
   }
-  if (!current.lastDeal) throw new Error("incomplete_simulation");
-  return current.lastDeal.contractMade;
+  const deal = current.lastDeal;
+  if (!deal) throw new Error("incomplete_simulation");
+  const won = deal.contractMade === attacking ? 1 : 0;
+  return won + (POINTS_TIEBREAK_WEIGHT * deal.cardPoints[myTeam]) / DEAL_CARD_POINTS;
 }

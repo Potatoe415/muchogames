@@ -6,7 +6,6 @@ import {
   DEFAULT_BOT_PROFILE,
   profilePlayBonus,
   refinePlayCandidates,
-  teamOf,
 } from "@/lib/coinche";
 import type { BotProfile, BotProfileConfig, Card, PlayerView, Suit, TrumpMode } from "@/lib/coinche";
 import { buildDeterminizer, simulateRootMove } from "./botSim";
@@ -41,6 +40,7 @@ const UCB_C = Math.SQRT2;
  *  (+-0.4 from normal) tips moves within ~0.06 of each other, never a blunder. */
 const PROFILE_BIAS_WEIGHT = 0.15;
 
+/** `wins` sums the simulation reward (see `simulateRootMove`), not a 0/1 count. */
 export interface RootStat {
   wins: number;
   visits: number;
@@ -86,15 +86,13 @@ function choosePlayAction(view: PlayerView, options: BotOptions): BotAction {
   const maxIterations = options.maxIterations ?? DEFAULT_MAX_ITERATIONS;
   const stats: RootStat[] = legal.map(() => ({ wins: 0, visits: 0 }));
   const determinizer = buildDeterminizer(view, rng);
-  const attacking = teamOf(view.mySeat) === view.contract.team;
 
   const start = performance.now();
   let iterations = 0;
   while (iterations < maxIterations && performance.now() - start < timeBudgetMs) {
     const index = selectRootIndex(stats, iterations);
-    const made = simulateRootMove(determinizer.next(), legal[index], rng);
     stats[index].visits += 1;
-    if (made === attacking) stats[index].wins += 1;
+    stats[index].wins += simulateRootMove(determinizer.next(), legal[index], rng);
     iterations += 1;
   }
   const bias = profilePlayBonus(view, legal, configOf(options)).map((b) => b * PROFILE_BIAS_WEIGHT);

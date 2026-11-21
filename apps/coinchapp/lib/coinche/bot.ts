@@ -60,8 +60,8 @@ function trumpCount(cards: Card[], trump: TrumpMode | null): number {
   return count;
 }
 
-/** A non-trump card no opponent can beat: every higher card of its suit is seen. */
-function isNonTrumpMaster(card: Card, seen: Set<string>, trump: TrumpMode | null): boolean {
+/** A card no one can beat in its own suit: every higher card of that suit is seen. */
+function isMasterCard(card: Card, seen: Set<string>, trump: TrumpMode | null): boolean {
   const own = cardStrength(card, card.suit, trump);
   for (const rank of RANKS) {
     const higher = { suit: card.suit, rank };
@@ -91,17 +91,37 @@ export function leadWinnersWhenTrumpsExhausted(
   const nonTrump = legal.filter((c) => !isTrump(c, trump));
   if (nonTrump.length === 0) return legal;
   const seen = new Set([...playedCards, ...hand].map(cardId));
-  const hasMaster = nonTrump.some((c) => isNonTrumpMaster(c, seen, trump));
+  const hasMaster = nonTrump.some((c) => isMasterCard(c, seen, trump));
   return hasMaster ? nonTrump : legal;
+}
+
+/**
+ * Two cards left, one of them the master trump (every higher trump is down or in
+ * hand): it wins the last trick whatever is led, so keep it for the dix de der and
+ * play the other card now when the rules allow. Single-suit trump only.
+ */
+export function keepMasterTrumpForLast(
+  legal: Card[],
+  hand: Card[],
+  playedCards: Card[],
+  trump: TrumpMode | null,
+): Card[] {
+  if (hand.length !== 2 || !trump || trump === "SA" || trump === "TA") return legal;
+  const seen = new Set([...playedCards, ...hand].map(cardId));
+  const masters = hand.filter((c) => isTrump(c, trump) && isMasterCard(c, seen, trump));
+  if (masters.length !== 1) return legal;
+  const others = legal.filter((c) => cardId(c) !== cardId(masters[0]));
+  return others.length > 0 ? others : legal;
 }
 
 /** Single bot strategy: play the cheapest card that wins, else discard the weakest. */
 export function chooseCard(state: GameState): Card {
-  const legal = avoidCuttingPartner(
-    legalCards(state, state.turn),
-    state.currentTrick.cards,
+  const played = [...state.tricks, state.currentTrick].flatMap((t) => t.cards.map((p) => p.card));
+  const legal = keepMasterTrumpForLast(
+    avoidCuttingPartner(legalCards(state, state.turn), state.currentTrick.cards, state.trump, state.turn),
+    state.hands[state.turn],
+    played,
     state.trump,
-    state.turn,
   );
   const winner = cheapestWinner(state, legal);
   return winner ?? weakest(legal, state.trump);

@@ -105,7 +105,7 @@ export function GameTableScene({
   return (
     <section className="absolute inset-0 z-10" data-id="table-scene">
       <div
-        className="absolute inset-x-[11%] bottom-[19%] top-[29%] rounded-[3rem] bg-[rgba(255,250,242,0.08)] shadow-[inset_0_0_55px_rgba(22,200,240,0.22)] ring-[10px] ring-[rgba(242,196,79,0.18)]"
+        className="absolute inset-x-[max(11%,calc(50%_-_var(--card-lg-w)*5))] bottom-[19%] top-[29%] rounded-[3rem] bg-[rgba(255,250,242,0.08)] shadow-[inset_0_0_55px_rgba(22,200,240,0.22)] ring-[10px] ring-[rgba(242,196,79,0.18)]"
         data-id="central-felt"
       />
       {/* Hidden once the deal overlay is up: their usual spots sit under its centered score
@@ -170,7 +170,8 @@ function TopOpponent({ gv, view, seat, reaction }: { gv: GameView; view: PlayerV
   return (
     <div className="absolute left-1/2 top-[13%] flex -translate-x-1/2 flex-col items-center" data-id="table-top">
       <CardBackFanH count={view.handCounts[seat]} />
-      <div className="mt-2 flex flex-row items-center gap-1" data-id="table-top-badge-wrap">
+      {/* Desktop: badge beside the fan, so the tripled avatar stays clear of the played card. */}
+      <div className="mt-2 flex flex-row items-center gap-1 lg:absolute lg:left-full lg:top-1/2 lg:mt-0 lg:ml-3 lg:-translate-y-1/2" data-id="table-top-badge-wrap">
         <PlayerBadge
           name={playerName(gv, seat)}
           team={seatTeam(seat)}
@@ -201,7 +202,11 @@ function SideOpponent({
   side: "left" | "right";
   reaction?: TableReaction;
 }) {
-  const sideClass = side === "left" ? "left-0 flex-row" : "right-0 flex-row-reverse";
+  // Phone: flush with the screen edge. Wide desktop: pulled in toward the felt, edges stay empty.
+  const sideClass =
+    side === "left"
+      ? "left-[max(0px,calc(50%_-_var(--card-lg-w)*6))] flex-row"
+      : "right-[max(0px,calc(50%_-_var(--card-lg-w)*6))] flex-row-reverse";
   const handShiftClass = side === "left" ? "-translate-x-3/4" : "translate-x-3/4";
   const badgeNudgeClass = side === "left" ? "-ml-[50px]" : "-mr-[50px]";
   const bid = view.phase === "bidding" ? lastSeatBid(view.bids, seat) : null;

@@ -102,10 +102,18 @@ export function PlayerBadge({
   );
 }
 
+/** 28 px on a phone, tripled on desktop (lg+) where the side seats have room. */
 function BadgeAvatar({ src }: { src: string }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element -- tiny static avatar
-    <img src={src} alt="" width={28} height={28} className="h-7 w-7 shrink-0 rounded-full" data-id="player-bot-avatar" />
+    <img
+      src={src}
+      alt=""
+      width={84}
+      height={84}
+      className="h-7 w-7 shrink-0 rounded-full lg:h-21 lg:w-21"
+      data-id="player-bot-avatar"
+    />
   );
 }
 

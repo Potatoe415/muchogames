@@ -30,6 +30,11 @@ export function seatDirection(seats: TableSeats, seat: number | null): EnterDire
   return "bottom";
 }
 
+/** Left/right played-card slots: 27% from the edge on a phone, but never further than
+ *  ~2.4 card widths from the centre, so a wide desktop keeps the trick grouped. */
+const SIDE_SLOT_LEFT = "left-[max(27%,calc(50%_-_var(--card-lg-w)*2.4))]";
+const SIDE_SLOT_RIGHT = "right-[max(27%,calc(50%_-_var(--card-lg-w)*2.4))]";
+
 function cardKey(card: CardOf<string>): string {
   return `${card.rank}${card.suit}`;
 }
@@ -51,14 +56,14 @@ export function PlayedCardStage({
         delay={0}
       />
       <SlotBox
-        className="top-[45%] left-[27%]"
+        className={`top-[45%] ${SIDE_SLOT_LEFT}`}
         card={trickBySeat.get(seats.left)}
         dataId="played-left"
         enterFrom="left"
         delay={90}
       />
       <SlotBox
-        className="top-[45%] right-[27%]"
+        className={`top-[45%] ${SIDE_SLOT_RIGHT}`}
         card={trickBySeat.get(seats.right)}
         dataId="played-right"
         enterFrom="right"
@@ -114,7 +119,7 @@ export function CompletedTrickHold({
         flyY={flyY}
       />
       <CollectSlot
-        className="left-[27%] top-[45%]"
+        className={`${SIDE_SLOT_LEFT} top-[45%]`}
         card={trickBySeat.get(seats.left)}
         dataId="held-left"
         gatherX="100px"
@@ -124,7 +129,7 @@ export function CompletedTrickHold({
         flyY={flyY}
       />
       <CollectSlot
-        className="right-[27%] top-[45%]"
+        className={`${SIDE_SLOT_RIGHT} top-[45%]`}
         card={trickBySeat.get(seats.right)}
         dataId="held-right"
         gatherX="-100px"

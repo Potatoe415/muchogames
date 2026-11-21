@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 5173
+    },
+    {
+      "name": "coinchapp",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "apps/coinchapp", "run", "dev", "--", "--webpack", "-p", "3100"],
+      "port": 3100
     }
   ]
 }
