@@ -26,6 +26,7 @@ import {
 import { attachGate, scoringFromSettings, seededRng, wait } from "./p2p/hostEngine";
 import { runBotLoop } from "./cardGameDriver";
 import { coincheEngine } from "./coincheEngineAdapter";
+import { isMascotId } from "@/lib/mascots";
 
 /** Must match the CSS trick-collect animation duration. */
 const COLLECT_DELAY_MS = 1500;
@@ -182,9 +183,9 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
 
   // A client announces its chosen display name once its channel opens.
   const applyHello = useCallback(
-    (seat: Seat, name: string) => {
+    (seat: Seat, name: string, mascot: unknown) => {
       commitRoster(
-        rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name } : e)),
+        rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name, mascot: isMascotId(mascot) ? mascot : null } : e)),
       );
       broadcast(stateRef.current);
     },
@@ -197,7 +198,7 @@ export function useP2PHost(config: P2PHostConfig): { gv: GameView; actions: Game
       conn.onMessage((raw) => {
         const msg = parseClientMessage(raw);
         if (!msg) return;
-        if (msg.t === "hello") applyHello(seat as Seat, msg.name);
+        if (msg.t === "hello") applyHello(seat as Seat, msg.name, msg.mascot);
         else if (msg.t === "nextDeal") markReady(seat as Seat);
         else void applyRemote(msg, seat as Seat);
       });

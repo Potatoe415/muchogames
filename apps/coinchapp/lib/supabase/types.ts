@@ -18,6 +18,9 @@ export interface GameSettings {
    *  A missing seat plays "normal". Replaces the old `botPunch` (rows that still
    *  carry it are ignored). */
   botProfiles?: BotProfiles;
+  /** Each human seat's mascot id (`lib/mascots.ts`), set on create/join. Kept in
+   *  settings (not a `game_players` column) so no schema change was needed. */
+  playerMascots?: Partial<Record<number, string>>;
   /** Seconds of silence on a human's turn before the "are you still there?" idle
    *  timer kicks in (see lib/server/idle-timer.ts). Defaults to 15 when absent.
    *  Applies to both games. */

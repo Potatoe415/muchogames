@@ -193,9 +193,11 @@ export async function updateGameSettings(game: GameRow, settings: GameSettings):
   return updateVersioned(game, { settings });
 }
 
-export async function touchTurnStartedAt(game: GameRow): Promise<number> {
+export async function touchTurnStartedAt(game: GameRow, settings?: GameSettings): Promise<number> {
   const turnStartedAt = new Date().toISOString();
-  const version = await updateVersioned(game, { turn_started_at: turnStartedAt });
+  const patch: Record<string, unknown> = { turn_started_at: turnStartedAt };
+  if (settings) patch.settings = settings;
+  const version = await updateVersioned(game, patch);
   game.turn_started_at = turnStartedAt;
   return version;
 }

@@ -1,25 +1,43 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { isMascotId, randomMascot, type MascotId } from "@/lib/mascots";
 
 const STORAGE_KEY = "coinchapp-hub-name";
-const AVATAR_STORAGE_KEY = "coinchapp-hub-avatar";
-const MAX_AVATAR_CHARS = 8000;
+/** localStorage (not session): the mascot is the player's lasting avatar. */
+const MASCOT_STORAGE_KEY = "coinchapp-mascot";
 
-/** Remember `?name=` / `?avatar=` from the Bergamots hub so later in-app
+/** Remember `?name=` / `?mascot=` from the Muchogames hub so later in-app
  *  routes can pre-fill identity after Play Online drops the original query. */
 export function captureHubName() {
   if (typeof window === "undefined") return;
   captureParam("name", STORAGE_KEY, Boolean);
-  captureParam("avatar", AVATAR_STORAGE_KEY, isHubAvatar);
+  readMyMascot();
 }
 
 export function readHubPrefillName() {
   return readParam("name", STORAGE_KEY, Boolean);
 }
 
-export function readHubPrefillAvatar() {
-  return readParam("avatar", AVATAR_STORAGE_KEY, isHubAvatar);
+/**
+ * The player's mascot: the hub's `?mascot=` (remembered), else the one this
+ * browser already has, else a random one kept from now on.
+ */
+export function readMyMascot(): MascotId {
+  try {
+    const fromUrl = new URLSearchParams(window.location.search).get("mascot");
+    if (isMascotId(fromUrl)) {
+      localStorage.setItem(MASCOT_STORAGE_KEY, fromUrl);
+      return fromUrl;
+    }
+    const stored = localStorage.getItem(MASCOT_STORAGE_KEY);
+    if (isMascotId(stored)) return stored;
+    const picked = randomMascot();
+    localStorage.setItem(MASCOT_STORAGE_KEY, picked);
+    return picked;
+  } catch {
+    return randomMascot();
+  }
 }
 
 export function withHubName(href: string) {
@@ -40,22 +58,6 @@ export function useHubPrefillName() {
     setName((current) => current || prefill);
   }, []);
   return [name, setName] as const;
-}
-
-export function useHubPrefillAvatar() {
-  const [avatar, setAvatar] = useState("");
-  useEffect(() => {
-    const prefill = readHubPrefillAvatar();
-    if (!prefill) return;
-    // Post-hydration browser read: deferred to after mount to avoid an SSR/client mismatch.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setAvatar(prefill);
-  }, []);
-  return avatar;
-}
-
-function isHubAvatar(value: string) {
-  return value.startsWith("data:image/") && value.length <= MAX_AVATAR_CHARS;
 }
 
 function captureParam(
@@ -91,4 +93,15 @@ function readParam(
   } catch {
     return "";
   }
+}
+
+/** `readMyMascot` after mount (null during SSR / first render). */
+export function useMyMascot(): MascotId | null {
+  const [mascot, setMascot] = useState<MascotId | null>(null);
+  useEffect(() => {
+    // Post-hydration browser read: deferred to after mount to avoid an SSR/client mismatch.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMascot(readMyMascot());
+  }, []);
+  return mascot;
 }

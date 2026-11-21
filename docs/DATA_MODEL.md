@@ -178,7 +178,7 @@ Rules: All static JSON is public and read-only. Online room reads/writes (Yatzy,
 
 Purpose: One name, avatar, and combined win/loss total for a Google-signed-in player, shared by the hub, Yatzy, coinchapp, and Tranquil.
 Storage: `public.muchogames_profiles` (`supabase/migrations/0003_profiles.sql`). `id` is the Supabase Auth user id from the Google sign-in. Wins and losses increment through `increment_muchogames_profile_stats` (service-role only).
-Sensitive_Data: The Google account is verified server-side. The row stores the chosen display name and avatar, not the email.
+Sensitive_Data: The Google account is verified server-side. The row stores the chosen display name and avatar, not the email. Since 2026-11-21 `avatar_url` holds a mascot path (`/mascots/<id>.webp`, decision 0067); older rows may still hold a photo data URL until the player opens `/profile`.
 
 ### Entity: GameStats
 

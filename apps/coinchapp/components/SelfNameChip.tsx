@@ -1,6 +1,6 @@
 "use client";
 
-/** Compact local-player name + optional avatar. Only mounted from online GameRoom. */
+/** Compact local-player name + mascot, above the hand. Shown when the player has a mascot. */
 export function SelfNameChip({
   name,
   avatarSrc,
@@ -22,7 +22,7 @@ export function SelfNameChip({
         <img
           src={avatarSrc}
           alt=""
-          className="h-6 w-6 shrink-0 rounded-full object-cover ring-1 ring-[var(--card-face)]/40"
+          className="h-7 w-7 shrink-0 object-contain"
           data-id="self-name-avatar"
         />
       ) : null}

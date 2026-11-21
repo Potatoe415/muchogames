@@ -20,6 +20,7 @@ import { presidentBotPaceMs } from "./presidentAnimationLock";
 import { decidePresidentAction, presidentEngine } from "./presidentEngineAdapter";
 import { LOCAL_PRESIDENT_STORAGE_KEY } from "./localGamePersistence";
 import { useLocalCardGame } from "./useLocalCardGame";
+import { useMyMascot } from "./hubName";
 
 const BOTS = [false, true, true, true];
 const BOT_NAMES = ["", "Adam", "Jane", "Lea"];
@@ -63,6 +64,7 @@ export function useLocalPresidentGame(
     onNextRound: () => commitAndPace(startNextRound(stateRef.current)),
   };
 
+  const myMascot = useMyMascot();
   const gv: GameView = {
     // Unique per match - see `useLocalGame.ts`'s `gameId` comment.
     gameId: `local-${seed}`,
@@ -74,6 +76,7 @@ export function useLocalPresidentGame(
     players: BOT_NAMES.map((name, seat) => ({
       seat,
       displayName: seat === 0 ? t("defaultYouName") : name,
+      mascot: seat === 0 ? myMascot : null,
       isBot: seat !== 0,
       team: seat % 2 === 0 ? "A" : "B",
       connected: true,

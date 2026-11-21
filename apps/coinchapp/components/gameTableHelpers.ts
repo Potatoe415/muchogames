@@ -1,6 +1,7 @@
 import { DEFAULT_BOT_PROFILE, type BotProfile, type Seat, type Team } from "@/lib/coinche";
 import type { Locale } from "@/lib/client/i18n";
 import type { GameView } from "@/lib/server/view";
+import { isMascotId, mascotSrc } from "@/lib/mascots";
 
 export function seatTeam(seat: number): Team {
   return seat % 2 === 0 ? "A" : "B";
@@ -30,6 +31,18 @@ export function botAvatarSrc(profile: BotProfile | undefined): string {
 export function botAvatar(gv: GameView, seat: number): string | undefined {
   if (!gv.players.find((p) => p.seat === seat)?.isBot) return undefined;
   return botAvatarSrc(gv.settings.botProfiles?.[seat as Seat]);
+}
+
+/** Mascot art of a human seat; undefined for bots and players without one. */
+export function seatMascot(gv: GameView, seat: number): string | undefined {
+  const player = gv.players.find((p) => p.seat === seat);
+  if (!player || player.isBot || !isMascotId(player.mascot)) return undefined;
+  return mascotSrc(player.mascot);
+}
+
+/** Badge art for any seat: bot profile art for bots, mascot for humans. */
+export function seatAvatar(gv: GameView, seat: number): string | undefined {
+  return botAvatar(gv, seat) ?? seatMascot(gv, seat);
 }
 
 export function isConnected(gv: GameView, seat: number): boolean {

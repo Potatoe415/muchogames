@@ -4,7 +4,7 @@ import { useCallback, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { formatText, useI18n } from "@/lib/client/i18n";
-import { useHubPrefillName } from "@/lib/client/hubName";
+import { readMyMascot, useHubPrefillName } from "@/lib/client/hubName";
 import type { Seat } from "@/lib/coinche";
 import type { GameSettings } from "@/lib/supabase/types";
 import type { P2PConnection } from "@/lib/client/p2p/connection";
@@ -53,7 +53,7 @@ function buildRoster(
   playerNameTemplate: string,
   maxSeat: number = 3,
 ): RosterEntry[] {
-  const roster: RosterEntry[] = [{ seat: 0, displayName: hostName || youName, isBot: false }];
+  const roster: RosterEntry[] = [{ seat: 0, displayName: hostName || youName, mascot: readMyMascot(), isBot: false }];
   for (let seat = 1; seat <= maxSeat; seat++) {
     const human = seat <= humanCount;
     roster.push({

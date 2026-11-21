@@ -22,7 +22,7 @@ export interface PlayerBadgeProps {
   /** Président only: this seat is the round's president (first to empty
    *  their hand) - shows a small crown before the name. */
   isPresident?: boolean;
-  /** Bot profile avatar (Coinche / Belote bot seats). */
+  /** Seat art: bot profile avatar, or the human player's mascot. */
   avatarSrc?: string;
   /** Vertical right-side seat: row mirrored so the reaction sits toward the table centre. */
   flipped?: boolean;
@@ -111,8 +111,8 @@ function BadgeAvatar({ src }: { src: string }) {
       alt=""
       width={84}
       height={84}
-      className="h-7 w-7 shrink-0 rounded-full lg:h-21 lg:w-21"
-      data-id="player-bot-avatar"
+      className="h-7 w-7 shrink-0 rounded-full object-contain lg:h-21 lg:w-21"
+      data-id="player-avatar"
     />
   );
 }

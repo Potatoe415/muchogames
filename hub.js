@@ -1,5 +1,5 @@
 import {
-  getStoredPlayerAvatarThumb,
+  getStoredPlayerMascot,
   getStoredPlayerName,
   initAuthWidget,
   refreshAuthWidget
@@ -554,7 +554,7 @@ function determineTargetUrl(game) {
           game.launch,
           state.lang,
           getStoredPlayerName(),
-          getStoredPlayerAvatarThumb(),
+          getStoredPlayerMascot(),
           game.source ? window.MuchogamesMatch?.deviceId() : ""
         )
       : game.launch;
@@ -566,18 +566,18 @@ function determineTargetUrl(game) {
 }
 
 // External games run in a different origin, so `localStorage` cannot be
-// shared with them — the player's name, language, and a tiny JPEG avatar
-// thumb travel as URL params. Receiving games only use them to pre-fill
+// shared with them — the player's name, language, and mascot id (avatar)
+// travel as URL params. Receiving games only use them to pre-fill
 // their own identity UI; see docs/TECH.md "Player identity". `deviceId`
 // (colocated apps only) lets them spend from the same anonymous coin counter
 // (docs/PLATFORM_RULES.md).
-function appendLaunchParams(url, lang, name, avatarThumb, deviceId) {
+function appendLaunchParams(url, lang, name, mascot, deviceId) {
   const params = new URLSearchParams({ lang });
   if (name) {
     params.set("name", name);
   }
-  if (avatarThumb) {
-    params.set("avatar", avatarThumb);
+  if (mascot) {
+    params.set("mascot", mascot);
   }
   if (deviceId) {
     params.set("mgDevice", deviceId);

@@ -19,6 +19,7 @@ import { buildBouillaSeatView, parseClientMessage, type ClientMessage, type Rost
 import { runBotLoop } from "./cardGameDriver";
 import { bouillaEngine, decideBouillaAction } from "./bouillaEngineAdapter";
 import { DEFAULT_BOT_THINK_MS } from "@/lib/supabase/types";
+import { isMascotId } from "@/lib/mascots";
 
 /** Must match the CSS trick-collect animation duration. */
 const COLLECT_DELAY_MS = 1500;
@@ -179,8 +180,8 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
   );
 
   const applyHello = useCallback(
-    (seat: Seat, name: string) => {
-      commitRoster(rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name } : e)));
+    (seat: Seat, name: string, mascot: unknown) => {
+      commitRoster(rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name, mascot: isMascotId(mascot) ? mascot : null } : e)));
       broadcast(stateRef.current);
     },
     [commitRoster, broadcast],
@@ -191,7 +192,7 @@ export function useP2PBouillaHost(config: P2PBouillaHostConfig): { gv: GameView;
       conn.onMessage((raw) => {
         const msg = parseClientMessage(raw);
         if (!msg) return;
-        if (msg.t === "hello") applyHello(seat as Seat, msg.name);
+        if (msg.t === "hello") applyHello(seat as Seat, msg.name, msg.mascot);
         else if (msg.t === "nextDeal") markReady(seat as Seat);
         else void applyRemote(msg, seat as Seat);
       });

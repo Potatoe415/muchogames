@@ -7,7 +7,7 @@ import type { GameView, NextDealGate } from "@/lib/server/view";
 import type { TableReaction } from "@/lib/client/reactions";
 import { BeloteTurnedCard } from "./BeloteBiddingPanel";
 import { DealOverlay } from "./DealOverlay";
-import { botAvatar, isConnected, playerName, seatTeam } from "./gameTableHelpers";
+import { isConnected, playerName, seatAvatar, seatTeam } from "./gameTableHelpers";
 import { formatBidLabel } from "./labels";
 import { PlayerBadge } from "./PlayerBadge";
 import { ReactionBubble } from "./ReactionBubble";
@@ -179,7 +179,7 @@ function TopOpponent({ gv, view, seat, reaction }: { gv: GameView; view: PlayerV
           isDealer={view.dealer === seat}
           isThinking={isSeatThinking(view, seat)}
           connected={isConnected(gv, seat)}
-          avatarSrc={botAvatar(gv, seat)}
+          avatarSrc={seatAvatar(gv, seat)}
           reaction={reaction}
           dataId={`player-seat-${seat}`}
         />
@@ -226,7 +226,7 @@ function SideOpponent({
           isDealer={view.dealer === seat}
           isThinking={isSeatThinking(view, seat)}
           connected={isConnected(gv, seat)}
-          avatarSrc={botAvatar(gv, seat)}
+          avatarSrc={seatAvatar(gv, seat)}
           reaction={reaction}
           orientation="vertical"
           flipped={side === "right"}

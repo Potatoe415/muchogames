@@ -4,7 +4,7 @@ import { isAdminUserId } from "../_lib/adminAuth.js";
 import { sendError, sendJson } from "../_lib/http.js";
 import { getServiceClient } from "../_lib/supabase.js";
 
-// Avatars are data URLs of up to ~35 KB each, so pages stay small.
+// Avatars are mascot paths (legacy rows: data URLs up to ~35 KB), so pages stay small.
 const PAGE_SIZE = 30;
 const RESETTABLE = { name: "name", avatar: "avatar_url" };
 

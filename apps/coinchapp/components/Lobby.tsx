@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
-import { useHubPrefillName } from "@/lib/client/hubName";
+import { readMyMascot, useHubPrefillName } from "@/lib/client/hubName";
 import { fillWithBots, joinGame, startGame, swapSeats } from "@/lib/server/actions-lobby";
 import { setBotProfile } from "@/lib/server/actions-bot-profile";
 import { BotProfilePicker } from "./BotProfilePicker";
@@ -197,7 +197,7 @@ export function Lobby({ gv, onChange, debugMode, onDebugModeChange }: LobbyProps
           <button
             data-id="lobby-join-button"
             disabled={busy || !canJoin}
-            onClick={() => act(() => joinGame({ roomCode: gv.roomCode, displayName: name, locale }))}
+            onClick={() => act(() => joinGame({ roomCode: gv.roomCode, displayName: name, locale, mascot: readMyMascot() }))}
             className="rounded-lg bg-[var(--accent-cyan)] px-4 py-2 font-bold text-[var(--surface)] disabled:opacity-50"
           >
             {t("join")}

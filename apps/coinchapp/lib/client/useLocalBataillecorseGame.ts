@@ -18,6 +18,7 @@ import { DEFAULT_BATAILLECORSE_DECK_SIZE } from "@/lib/supabase/types";
 import { useI18n } from "./i18n";
 import { seededRng } from "./cardGameDriver";
 import { LOCAL_BATAILLECORSE_STORAGE_KEY, loadPersistedGame, savePersistedGame } from "./localGamePersistence";
+import { useMyMascot } from "./hubName";
 
 const BOT_SEAT = 1;
 const BOT_NAME = "Adam";
@@ -109,6 +110,7 @@ export function useLocalBataillecorseGame(
     },
   };
 
+  const myMascot = useMyMascot();
   const gv: BataillecorseGameView = {
     // Unique per match - see `useLocalGame.ts`'s `gameId` comment.
     gameId: `local-${seed}`,
@@ -118,8 +120,8 @@ export function useLocalBataillecorseGame(
     settings: { botThinkMs, bataillecorseDeckSize: deckSize },
     version: 0,
     players: [
-      { seat: 0, displayName: t("defaultYouName"), isBot: false, team: "A", connected: true },
-      { seat: 1, displayName: BOT_NAME, isBot: true, team: "B", connected: true },
+      { seat: 0, displayName: t("defaultYouName"), mascot: myMascot, isBot: false, team: "A", connected: true },
+      { seat: 1, displayName: BOT_NAME, mascot: null, isBot: true, team: "B", connected: true },
     ],
     mySeat: 0,
     view: redact(state, 0),

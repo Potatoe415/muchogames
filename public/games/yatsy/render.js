@@ -351,7 +351,7 @@ window.YATZY_RENDER = {
   }
 
   function localAvatarSrc() {
-    return window.PlayerProfile?.getAvatarThumb?.() || window.PlayerProfile?.getAvatar?.() || "";
+    return window.PlayerProfile?.getAvatar?.() || "";
   }
 
   function renderOnlineAvatar(img, visible) {

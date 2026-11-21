@@ -9,7 +9,6 @@ import { useBataillecorseBotRunner } from "@/lib/client/useBataillecorseBotRunne
 import { useGameView } from "@/lib/client/useGameView";
 import { useReactions } from "@/lib/client/useReactions";
 import { useStillThereTimer } from "@/lib/client/useStillThereTimer";
-import { useHubPrefillAvatar } from "@/lib/client/hubName";
 import { ensureAnonAuth } from "@/lib/client/auth";
 import {
   attemptSlap,
@@ -49,7 +48,6 @@ export function GameRoom({ gameId }: { gameId: string }) {
   useBataillecorseBotRunner(gameId, view, refetch, notify);
   const stillThere = useStillThereTimer(view, refetch);
   const { reactions, addReaction } = useReactions();
-  const selfAvatar = useHubPrefillAvatar();
 
   const [joiningBotSeat, setJoiningBotSeat] = useState(false);
   const channelRef = useRef<Channel | null>(null);
@@ -236,19 +234,19 @@ export function GameRoom({ gameId }: { gameId: string }) {
       {stillThere.show && <StillThereModal secondsLeft={stillThere.secondsLeft} />}
       {!usesCoincheEngine(view.gameType) && debugMode && <BotDebugOverlay log={botDebugLog} />}
       {view.gameType === "bouilla" ? (
-        <BouillaTable gv={view as BouillaGameView} actions={bouillaActions} reactions={reactions} selfAvatar={selfAvatar} />
+        <BouillaTable gv={view as BouillaGameView} actions={bouillaActions} reactions={reactions} />
       ) : view.gameType === "president" ? (
-        <PresidentTable gv={view as PresidentGameView} actions={presidentActions} reactions={reactions} selfAvatar={selfAvatar} />
+        <PresidentTable gv={view as PresidentGameView} actions={presidentActions} reactions={reactions} />
       ) : view.gameType === "bataillecorse" ? (
         <BataillecorseTable
           gv={view as BataillecorseGameView}
           actions={bataillecorseActions}
           reactions={reactions}
-          selfAvatar={selfAvatar}
+         
           debugMode="online"
         />
       ) : (
-        <GameTable gv={view as CoincheGameView} actions={coincheActions} reactions={reactions} selfAvatar={selfAvatar} />
+        <GameTable gv={view as CoincheGameView} actions={coincheActions} reactions={reactions} />
       )}
     </>
   );

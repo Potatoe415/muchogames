@@ -1,4 +1,4 @@
-/* Canonical reader/writer for the player's Bergamots profile (name + avatar),
+/* Canonical reader/writer for the player's Bergamots profile (name + mascot avatar),
    shared by every unbundled page under public/ (the profile page itself,
    and any custom game — Yatzy is the first). Plain global script (same
    pattern as game-header.js) so classic, non-module game scripts can use it
@@ -9,8 +9,145 @@
    2026-09-05 — since it cannot reach files under public/ at build time. */
 (function () {
   const NAME_KEY = "bergamots-player-name";
-  const AVATAR_KEY = "bergamots-player-avatar";
-  const AVATAR_THUMB_KEY = "bergamots-player-avatar-thumb";
+  // The avatar is always a mascot (public/mascots/<id>.webp). Stored as its id;
+  // the first read picks one at random, so even an anonymous player has one.
+  // Same id list as apps/coinchapp/lib/mascots.ts (separate app, duplicated).
+  const MASCOT_KEY = "muchogames-player-mascot";
+  const MASCOTS = [
+    "badger",
+    "baker",
+    "basil",
+    "bear",
+    "beaver",
+    "bike",
+    "bison",
+    "bitterbal",
+    "bocce",
+    "brie",
+    "bulldog",
+    "canal-house",
+    "cannolo",
+    "cat",
+    "centurion",
+    "cheese-carrier",
+    "cheese",
+    "clog",
+    "coffee",
+    "colosseum",
+    "cookie",
+    "cornicello",
+    "cow",
+    "cowboy-bear",
+    "crepe",
+    "croissant",
+    "crown",
+    "cypress",
+    "deer",
+    "delft-teapot",
+    "delft-tile",
+    "detective-badger",
+    "dolphin",
+    "duomo",
+    "dutch-girl",
+    "eagle",
+    "eiffel",
+    "fairy",
+    "falcon",
+    "fisherman",
+    "fox",
+    "fries",
+    "friesian",
+    "frog",
+    "gelato",
+    "ghost",
+    "goat",
+    "gondolier",
+    "graduate-owl",
+    "grapes",
+    "guard",
+    "hagelslag",
+    "hare",
+    "hedgehog",
+    "heron",
+    "herring",
+    "houseboat",
+    "kid",
+    "king-lion",
+    "ladybug",
+    "lemon",
+    "lighthouse",
+    "lion",
+    "liquorice",
+    "little-car",
+    "mandolin",
+    "maremma-dog",
+    "mime",
+    "moka",
+    "mole",
+    "moon",
+    "mouse",
+    "murano-vase",
+    "nonna",
+    "oliebol",
+    "olive-oil",
+    "otter",
+    "owl",
+    "pancakes",
+    "panettone",
+    "phone-box",
+    "pigeon",
+    "pisa-tower",
+    "pizza",
+    "poffertjes",
+    "pony",
+    "poodle",
+    "prairie-dog",
+    "pulcinella",
+    "punk-hedgehog",
+    "puppet",
+    "rabbit",
+    "raccoon",
+    "rat",
+    "raven",
+    "raviolo",
+    "retriever",
+    "robin",
+    "rooster",
+    "root-beer",
+    "seal",
+    "sheep",
+    "skater",
+    "snail",
+    "spaghetti",
+    "sparrow",
+    "speculaas",
+    "squirrel",
+    "stork",
+    "stroopwafel",
+    "taxi",
+    "tea-squirrel",
+    "teacup",
+    "tenor",
+    "tiramisu",
+    "tompouce",
+    "tortellino",
+    "tram",
+    "truffle",
+    "tulip",
+    "uk-bulldog",
+    "venice-mask",
+    "vespa",
+    "volcano",
+    "windmill",
+    "wolf"
+  ];
+  // Uploaded photos were replaced by mascots: drop the old (up to ~50 KB) keys.
+  try {
+    localStorage.removeItem("bergamots-player-avatar");
+    localStorage.removeItem("bergamots-player-avatar-thumb");
+  } catch {
+    // Storage unavailable — nothing to clean.
+  }
   // Written by game-session.js, one per match started.
   const MATCH_COUNTS_KEY = "muchogames-match-counts";
   const GAME_RESULTS_KEY = "bergamots-game-results";
@@ -35,37 +172,45 @@
     }
   }
 
+  function isMascot(id) {
+    return MASCOTS.indexOf(id) >= 0;
+  }
+
+  function mascotSrc(id) {
+    return "/mascots/" + id + ".webp";
+  }
+
+  /** Mascot id from a stored avatar path ("/mascots/fox.webp"), or "". */
+  function mascotFromAvatarUrl(url) {
+    const match = /^\/mascots\/([a-z-]+)\.webp$/.exec(url || "");
+    return match && isMascot(match[1]) ? match[1] : "";
+  }
+
+  function getMascot() {
+    let id = "";
+    try {
+      id = localStorage.getItem(MASCOT_KEY) || "";
+    } catch {
+      // Storage unavailable — a random mascot each page load.
+    }
+    if (isMascot(id)) return id;
+    id = MASCOTS[Math.floor(Math.random() * MASCOTS.length)];
+    setMascot(id);
+    return id;
+  }
+
+  function setMascot(id) {
+    if (!isMascot(id)) return;
+    try {
+      localStorage.setItem(MASCOT_KEY, id);
+    } catch {
+      // Storage unavailable — the mascot just won't persist.
+    }
+  }
+
+  /** Same-origin image path of the player's mascot (never empty). */
   function getAvatar() {
-    try {
-      return localStorage.getItem(AVATAR_KEY) || "";
-    } catch {
-      return "";
-    }
-  }
-
-  function setAvatar(dataUrl, thumbUrl) {
-    try {
-      if (dataUrl) {
-        localStorage.setItem(AVATAR_KEY, dataUrl);
-        if (thumbUrl) {
-          localStorage.setItem(AVATAR_THUMB_KEY, thumbUrl);
-        }
-      } else {
-        localStorage.removeItem(AVATAR_KEY);
-        localStorage.removeItem(AVATAR_THUMB_KEY);
-      }
-    } catch {
-      // Storage unavailable, or quota exceeded — avatar just won't persist.
-    }
-  }
-
-  function getAvatarThumb() {
-    try {
-      const stored = localStorage.getItem(AVATAR_THUMB_KEY) || "";
-      return stored.startsWith("data:image/") ? stored : "";
-    } catch {
-      return "";
-    }
+    return mascotSrc(getMascot());
   }
 
   function readMatchCounts() {
@@ -147,15 +292,17 @@
 
   window.PlayerProfile = {
     NAME_KEY: NAME_KEY,
-    AVATAR_KEY: AVATAR_KEY,
-    AVATAR_THUMB_KEY: AVATAR_THUMB_KEY,
+    MASCOT_KEY: MASCOT_KEY,
+    MASCOTS: MASCOTS,
     MATCH_COUNTS_KEY: MATCH_COUNTS_KEY,
     GAME_RESULTS_KEY: GAME_RESULTS_KEY,
     getName: getName,
     setName: setName,
     getAvatar: getAvatar,
-    getAvatarThumb: getAvatarThumb,
-    setAvatar: setAvatar,
+    getMascot: getMascot,
+    setMascot: setMascot,
+    mascotSrc: mascotSrc,
+    mascotFromAvatarUrl: mascotFromAvatarUrl,
     getMatchTotal: getMatchTotal,
     getMostPlayed: getMostPlayed,
     getWins: getWins,

@@ -11,6 +11,8 @@ import type { GameView } from "@/lib/server/view";
 export interface RosterEntry {
   seat: Seat;
   displayName: string;
+  /** Mascot id (`lib/mascots.ts`); validated by the host before it lands here. */
+  mascot?: string | null;
   isBot: boolean;
 }
 
@@ -26,7 +28,7 @@ export type WireCombo = { rank: string; cards: WireCard[] };
  *  to Bouilla/Président (no auction); the host simply never expects a "bid" message
  *  for them. Combo/pass/exchangeReturn only apply to Président. */
 export type ClientMessage =
-  | { t: "hello"; name: string }
+  | { t: "hello"; name: string; mascot?: string }
   | { t: "bid"; payload: { type: BidType; value?: number; suit?: TrumpMode } }
   | { t: "play"; card: WireCard }
   | { t: "combo"; combo: WireCombo }
@@ -59,6 +61,7 @@ function lobbyPlayers(roster: RosterEntry[]) {
   return roster.map((entry) => ({
     seat: entry.seat,
     displayName: entry.displayName,
+    mascot: entry.mascot ?? null,
     isBot: entry.isBot,
     team: (entry.seat % 2 === 0 ? "A" : "B") as "A" | "B",
     connected: true,

@@ -1,17 +1,14 @@
-// Player identity fields on the profile page: "Nom" and Avatar. Both are
-// client-only (localStorage, via /shared/js/player-profile.js). Language
+// Player identity fields on the profile page: "Nom" and the mascot avatar.
+// Both live in localStorage (via /shared/js/player-profile.js), and in the
+// shared profile when signed in. Language
 // follows `bergamots-lang` (same key as the hub); changing it here writes
 // that key so login and the hub keep the chosen language.
 
 import { initAccountSection, renderAccountSection } from "./profile-account.js";
 import { initGameBreakdown, renderGameBreakdown } from "./profile-games.js";
+import { initMascotPicker } from "./profile-mascot.js";
 import { initMatchStats } from "./profile-stats.js";
 import { initProfileTabs } from "./profile-tabs.js";
-import {
-  initAvatarCrop,
-  loadImageFromFile,
-  openAvatarCrop
-} from "./profile-crop.js";
 
 const NOTICE_TIMEOUT_MS = 1800;
 const LANG_STORAGE_KEY = "bergamots-lang";
@@ -35,9 +32,9 @@ const MESSAGES = {
     title: "Profil",
     tabInfo: "Infos",
     tabStats: "Statistiques",
-    avatarAlt: "Avatar du joueur",
-    changeAvatar: "Changer l'avatar",
-    removeAvatar: "Retirer",
+    avatarAlt: "Mascotte du joueur",
+    changeAvatar: "Changer de mascotte",
+    pickMascot: "Choisis ta mascotte",
     nameLabel: "Nom",
     namePlaceholder: "Ton nom",
     save: "Enregistrer",
@@ -47,12 +44,6 @@ const MESSAGES = {
     options: "Options",
     language: "Langue",
     close: "Fermer",
-    cropTitle: "Recadrer",
-    cropCancel: "Annuler",
-    cropApply: "Valider",
-    cropZoom: "Zoom",
-    imageOnly: "Choisis un fichier image.",
-    imageLoadError: "Impossible de charger cette image.",
     matchesZero: "Aucune partie lancée",
     matchesOne: "1 partie lancée",
     matchesMany: "{count} parties lancées",
@@ -66,9 +57,9 @@ const MESSAGES = {
     title: "Profile",
     tabInfo: "Info",
     tabStats: "Statistics",
-    avatarAlt: "Player avatar",
-    changeAvatar: "Change avatar",
-    removeAvatar: "Remove",
+    avatarAlt: "Player mascot",
+    changeAvatar: "Change mascot",
+    pickMascot: "Pick your mascot",
     nameLabel: "Name",
     namePlaceholder: "Your name",
     save: "Save",
@@ -78,12 +69,6 @@ const MESSAGES = {
     options: "Options",
     language: "Language",
     close: "Close",
-    cropTitle: "Crop",
-    cropCancel: "Cancel",
-    cropApply: "Apply",
-    cropZoom: "Zoom",
-    imageOnly: "Choose an image file.",
-    imageLoadError: "Could not load that image.",
     matchesZero: "No matches started",
     matchesOne: "1 match started",
     matchesMany: "{count} matches started",
@@ -97,9 +82,9 @@ const MESSAGES = {
     title: "Perfil",
     tabInfo: "Info",
     tabStats: "Estadísticas",
-    avatarAlt: "Avatar del jugador",
-    changeAvatar: "Cambiar avatar",
-    removeAvatar: "Quitar",
+    avatarAlt: "Mascota del jugador",
+    changeAvatar: "Cambiar de mascota",
+    pickMascot: "Elige tu mascota",
     nameLabel: "Nombre",
     namePlaceholder: "Tu nombre",
     save: "Guardar",
@@ -109,12 +94,6 @@ const MESSAGES = {
     options: "Opciones",
     language: "Idioma",
     close: "Cerrar",
-    cropTitle: "Recortar",
-    cropCancel: "Cancelar",
-    cropApply: "Validar",
-    cropZoom: "Zoom",
-    imageOnly: "Elige un archivo de imagen.",
-    imageLoadError: "No se pudo cargar esa imagen.",
     matchesZero: "Ninguna partida empezada",
     matchesOne: "1 partida empezada",
     matchesMany: "{count} partidas empezadas",
@@ -133,8 +112,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   await window.MuchogamesProfileResults?.migrateLocalResultsOnce?.();
   await loadSyncedProfile();
   initNameForm();
-  initAvatarUpload();
-  initAvatarCrop();
+  renderAvatarPreview();
+  initMascotPicker(onMascotPicked);
   initMatchStats(getCopy(), gameResultsOverride());
   initGameBreakdown(getStoredIdToken(), readStoredLang());
   initAccountSection(getStoredIdToken(), readStoredLang());
@@ -181,8 +160,23 @@ async function loadSyncedProfile() {
     if (!response.ok) return;
     const data = await response.json();
     syncedProfile = data?.profile || null;
+    adoptSyncedMascot();
   } catch {
     // Offline/blocked — not fatal.
+  }
+}
+
+// The shared profile's mascot wins; a profile without one (new, or a legacy
+// uploaded photo) receives this browser's mascot.
+function adoptSyncedMascot() {
+  if (!syncedProfile) return;
+  const mascot = window.PlayerProfile.mascotFromAvatarUrl(
+    syncedProfile.avatarUrl
+  );
+  if (mascot) {
+    window.PlayerProfile.setMascot(mascot);
+  } else {
+    onMascotPicked(window.PlayerProfile.getMascot());
   }
 }
 
@@ -269,7 +263,9 @@ function applyProfileCopy() {
   setText("profile-name-label", copy.nameLabel);
   setText("profile-name-save-button", copy.save);
   setText("profile-name-saved-notice", copy.saved);
-  setText("profile-avatar-remove-button", copy.removeAvatar);
+  setText("profile-mascot-change-button", copy.changeAvatar);
+  setText("profile-mascot-picker-title", copy.pickMascot);
+  setText("profile-mascot-picker-close", copy.close);
   setText("profile-favorites-title", copy.favoritesTitle);
   setText("profile-options-title", copy.options);
   setText("profile-lang-section-title", copy.language);
@@ -326,56 +322,17 @@ function initNameForm() {
   });
 }
 
-function initAvatarUpload() {
-  const fileInput = document.getElementById("profile-avatar-input");
-  const removeButton = document.getElementById("profile-avatar-remove-button");
-  const errorNotice = document.getElementById("profile-avatar-error");
-  if (!fileInput || !removeButton) return;
-
+function onMascotPicked(id) {
+  window.PlayerProfile.setMascot(id);
+  const avatarUrl = window.PlayerProfile.mascotSrc(id);
+  if (syncedProfile) syncedProfile.avatarUrl = avatarUrl;
+  syncProfileField({ avatarUrl });
   renderAvatarPreview();
-  fileInput.addEventListener("change", () =>
-    onAvatarFilePicked(fileInput, errorNotice)
-  );
-  removeButton.addEventListener("click", () => {
-    window.PlayerProfile.setAvatar("");
-    syncProfileField({ avatarDataUrl: "" });
-    renderAvatarPreview();
-  });
-}
-
-async function onAvatarFilePicked(fileInput, errorNotice) {
-  const file = fileInput.files && fileInput.files[0];
-  fileInput.value = "";
-  if (!file) return;
-  hideError(errorNotice);
-
-  if (!file.type.startsWith("image/")) {
-    showError(errorNotice, getCopy().imageOnly);
-    return;
-  }
-
-  try {
-    const image = await loadImageFromFile(file);
-    const cropped = await openAvatarCrop(image, getCopy());
-    if (!cropped) return;
-    window.PlayerProfile.setAvatar(cropped.avatar, cropped.thumb);
-    syncProfileField({ avatarDataUrl: cropped.avatar });
-    renderAvatarPreview();
-  } catch {
-    showError(errorNotice, getCopy().imageLoadError);
-  }
 }
 
 function renderAvatarPreview() {
   const preview = document.getElementById("profile-avatar-preview");
-  const placeholder = document.getElementById("profile-avatar-placeholder");
-  const removeButton = document.getElementById("profile-avatar-remove-button");
-  const avatar = syncedProfile?.avatarUrl || window.PlayerProfile.getAvatar();
-  const hasAvatar = Boolean(avatar);
-  preview.src = avatar;
-  preview.hidden = !hasAvatar;
-  placeholder.hidden = hasAvatar;
-  removeButton.hidden = !hasAvatar;
+  if (preview) preview.src = window.PlayerProfile.getAvatar();
 }
 
 let noticeTimeoutId;
@@ -387,15 +344,4 @@ function showNotice(notice) {
   noticeTimeoutId = setTimeout(() => {
     notice.hidden = true;
   }, NOTICE_TIMEOUT_MS);
-}
-
-function showError(notice, message) {
-  if (!notice) return;
-  notice.textContent = message;
-  notice.hidden = false;
-}
-
-function hideError(notice) {
-  if (!notice) return;
-  notice.hidden = true;
 }

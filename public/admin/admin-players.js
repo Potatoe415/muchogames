@@ -58,7 +58,10 @@ function createRow(player) {
   const avatar = document.createElement("img");
   avatar.className = "admin-player-avatar";
   avatar.alt = "";
-  if (player.avatarUrl.startsWith("data:image/")) avatar.src = player.avatarUrl;
+  // Mascot paths (current) and legacy uploaded photos (data URLs) both render.
+  if (/^(\/mascots\/[a-z-]+\.webp|data:image\/)/.test(player.avatarUrl)) {
+    avatar.src = player.avatarUrl;
+  }
 
   const details = document.createElement("div");
   details.className = "admin-player-details";

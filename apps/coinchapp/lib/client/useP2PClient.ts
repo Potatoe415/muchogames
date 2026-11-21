@@ -5,6 +5,7 @@ import type { BidPayload } from "@/components/BiddingPanel";
 import type { GameView } from "@/lib/server/view";
 import type { P2PConnection } from "./p2p/connection";
 import { parseHostMessage, type ClientMessage, type WireCard, type WireCombo } from "./p2p/protocol";
+import { readMyMascot } from "./hubName";
 
 /** Client-side move senders, loosely typed at the transport boundary (see `WireCard`).
  *  `GameTable` (Coinche) and `BouillaTable` build their own actions object from the first
@@ -43,7 +44,7 @@ export function useP2PClient(
       const msg = parseHostMessage(raw);
       if (msg?.t === "view") setGv(msg.view);
     });
-    send({ t: "hello", name });
+    send({ t: "hello", name, mascot: readMyMascot() });
   }, [name, send]);
 
   const actions: P2PClientActions = useMemo(

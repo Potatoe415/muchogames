@@ -14,7 +14,7 @@ import { formatText, useI18n } from "@/lib/client/i18n";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import type { GameView } from "@/lib/server/view";
 import { EmojiButton } from "./EmojiButton";
-import { isConnected, playerName, relativeSeat } from "./gameTableHelpers";
+import { isConnected, playerName, relativeSeat, seatMascot } from "./gameTableHelpers";
 import { GameInfoButton, HostRow, type EmojiControls, type HostControls } from "./GameHud";
 import { PlayerBadge } from "./PlayerBadge";
 import { PlayingCard } from "./PlayingCard";
@@ -63,17 +63,16 @@ export function PresidentTable({
   gv,
   actions,
   reactions,
-  selfAvatar,
 }: {
   gv: PresidentGameView;
   actions: PresidentActions;
   reactions?: Map<number, TableReaction>;
-  /** Set only from online GameRoom. Undefined hides the local-player chip. */
-  selfAvatar?: string;
 }) {
   const { locale } = useI18n();
   const view = gv.view!;
   const mySeat = gv.mySeat!;
+  // My mascot above the hand; no chip when I have none.
+  const selfAvatar = seatMascot(gv, mySeat);
   const [scoreboardOpen, setScoreboardOpen] = useState(false);
   const [emojiOn, setEmojiOn] = useState(true);
   const [autoPassOn, setAutoPassOn] = useState(true);
@@ -445,6 +444,7 @@ function OpponentBadge({
           isDealer={false}
           isThinking={view.phase === "playing" && view.turn === seat}
           connected={isConnected(gv, seat)}
+          avatarSrc={seatMascot(gv, seat)}
           reaction={reaction}
           orientation={position === "top" ? "horizontal" : "vertical"}
           flipped={position === "right"}

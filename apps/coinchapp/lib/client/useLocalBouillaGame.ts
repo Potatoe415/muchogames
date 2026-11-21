@@ -8,6 +8,7 @@ import { seededRng, wait } from "./cardGameDriver";
 import { bouillaEngine, decideBouillaAction } from "./bouillaEngineAdapter";
 import { LOCAL_BOUILLA_STORAGE_KEY } from "./localGamePersistence";
 import { useLocalCardGame } from "./useLocalCardGame";
+import { useMyMascot } from "./hubName";
 
 const BOTS = [false, true, true, true];
 const BOT_NAMES = ["", "Adam", "Jane", "Lea"];
@@ -50,6 +51,7 @@ export function useLocalBouillaGame(seed: number, botThinkMs: number): { gv: Gam
     },
   };
 
+  const myMascot = useMyMascot();
   const gv: GameView = {
     // Unique per match - see `useLocalGame.ts`'s `gameId` comment.
     gameId: `local-${seed}`,
@@ -61,6 +63,7 @@ export function useLocalBouillaGame(seed: number, botThinkMs: number): { gv: Gam
     players: BOT_NAMES.map((name, seat) => ({
       seat,
       displayName: seat === 0 ? t("defaultYouName") : name,
+      mascot: seat === 0 ? myMascot : null,
       isBot: seat !== 0,
       team: seat % 2 === 0 ? "A" : "B",
       connected: true,

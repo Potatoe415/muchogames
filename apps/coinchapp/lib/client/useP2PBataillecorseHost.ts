@@ -20,6 +20,7 @@ import { seededRng } from "./cardGameDriver";
 import type { P2PConnection } from "./p2p/connection";
 import { buildBataillecorseSeatView, parseClientMessage, type ClientMessage, type RosterEntry } from "./p2p/protocol";
 import { DEFAULT_BATAILLECORSE_DECK_SIZE, DEFAULT_BOT_THINK_MS, type GameSettings } from "@/lib/supabase/types";
+import { isMascotId } from "@/lib/mascots";
 
 /** Small buffer past `SLAP_GRACE_MS`, same reasoning as the local hook. */
 const GRACE_BUFFER_MS = 80;
@@ -143,8 +144,8 @@ export function useP2PBataillecorseHost(config: P2PBataillecorseHostConfig): { g
   );
 
   const applyHello = useCallback(
-    (seat: Seat, name: string) => {
-      commitRoster(rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name } : e)));
+    (seat: Seat, name: string, mascot: unknown) => {
+      commitRoster(rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name, mascot: isMascotId(mascot) ? mascot : null } : e)));
       broadcast(stateRef.current);
     },
     [commitRoster, broadcast],
@@ -155,7 +156,7 @@ export function useP2PBataillecorseHost(config: P2PBataillecorseHostConfig): { g
       conn.onMessage((raw) => {
         const msg = parseClientMessage(raw);
         if (!msg) return;
-        if (msg.t === "hello") applyHello(seat as Seat, msg.name);
+        if (msg.t === "hello") applyHello(seat as Seat, msg.name, msg.mascot);
         else applyRemote(msg, seat as Seat);
       });
       conn.onClose(() => demoteSeatToBot(seat as Seat));

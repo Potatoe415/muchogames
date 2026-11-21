@@ -49,9 +49,11 @@ Canonical reader/writer for the player's name/avatar/launch stats. Include
 via `<script src="/shared/js/player-profile.js">`.
 
 - `getName(fallback)` / `setName(name)` — `bergamots-player-name`.
-- `getAvatar()` / `setAvatar(dataUrl, thumbUrl)` / `getAvatarThumb()` —
-  `bergamots-player-avatar` (+ thumb). Avatar is Muchogames-only: never
-  propagated to other games (too large for a URL param).
+- `getMascot()` / `setMascot(id)` — `muchogames-player-mascot`. The avatar
+  is always a mascot from `MASCOTS` (126 ids, `public/mascots/<id>.webp`);
+  the first read picks one at random. `getAvatar()` returns its image path,
+  `mascotSrc(id)` / `mascotFromAvatarUrl(url)` convert. External games get
+  the id as `?mascot=` (decision 0067).
 - `getMatchTotal()` / `getMostPlayed(limit = 5)` — read-only aggregates
   over `muchogames-match-counts` (matches started in this browser, written
   by `game-session.js`'s `start()`).
@@ -64,7 +66,7 @@ via `<script src="/shared/js/player-profile.js">`.
 
 Cross-origin games (`kind: "external"`, e.g. Coinche/Bouilla/Tranquil)
 cannot reach this `localStorage` at all — the hub instead forwards the name
-as a `?name=` query param (see `hub.js` `appendLaunchParams()`). Only
+as a `?name=` query param (and the mascot as `?mascot=`) (see `hub.js` `appendLaunchParams()`). Only
 pre-fill an existing input from that param; never require it.
 
 ## `public/shared/js/game-header.js` (global script → `window.GameHeader`)

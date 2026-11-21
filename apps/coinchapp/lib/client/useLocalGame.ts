@@ -20,6 +20,7 @@ import { coincheEngine } from "./coincheEngineAdapter";
 import { localCoincheStorageKey } from "./localGamePersistence";
 import { useBotWorker } from "./useBotWorker";
 import { useLocalCardGame } from "./useLocalCardGame";
+import { useMyMascot } from "./hubName";
 
 const BOTS = [false, true, true, true];
 export const LOCAL_SEAT_NAMES = ["Vous", "Adam", "Jane", "Lea"];
@@ -77,6 +78,7 @@ export function useLocalGame(
     },
   };
 
+  const myMascot = useMyMascot();
   const gv: GameView = {
     // Unique per match (tied to `seed`, which changes on every fresh
     // `/local` load and every "play again") - `useRecordMatchResult`'s
@@ -91,6 +93,7 @@ export function useLocalGame(
     players: LOCAL_SEAT_NAMES.map((name, seat) => ({
       seat,
       displayName: name,
+      mascot: seat === 0 ? myMascot : null,
       isBot: seat !== 0,
       team: seat % 2 === 0 ? "A" : "B",
       connected: true,

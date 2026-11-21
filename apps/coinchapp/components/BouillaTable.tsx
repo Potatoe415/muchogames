@@ -14,7 +14,7 @@ import { ROUND_LABEL, ROUND_PENALTY_LABEL } from "./bouillaLabels";
 import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import { EmojiButton } from "./EmojiButton";
 import { ReactionBubble } from "./ReactionBubble";
-import { isConnected, playerName, relativeSeat } from "./gameTableHelpers";
+import { isConnected, playerName, relativeSeat, seatMascot } from "./gameTableHelpers";
 import { GameInfoButton, HostRow, type EmojiControls, type HostControls } from "./GameHud";
 import { HandCardSlot } from "./HandCardSlot";
 import { PlayerBadge } from "./PlayerBadge";
@@ -57,17 +57,16 @@ export function BouillaTable({
   gv,
   actions,
   reactions,
-  selfAvatar,
 }: {
   gv: BouillaGameView;
   actions: BouillaActions;
   reactions?: Map<number, TableReaction>;
-  /** Set only from online GameRoom. Undefined hides the local-player chip. */
-  selfAvatar?: string;
 }) {
   const { locale } = useI18n();
   const view = gv.view!;
   const mySeat = gv.mySeat!;
+  // My mascot above the hand; no chip when I have none.
+  const selfAvatar = seatMascot(gv, mySeat);
   const [scoreboardOpen, setScoreboardOpen] = useState(false);
   const [emojiOn, setEmojiOn] = useState(true);
   const { legalSet, myTurnToPlay, optimisticHand, trickCards, preSelectedId, tapCard } = useOptimisticPlay(
@@ -364,6 +363,7 @@ function OpponentTop({
           isDealer={view.dealer === seat}
           isThinking={view.phase === "playing" && view.turn === seat}
           connected={isConnected(gv, seat)}
+          avatarSrc={seatMascot(gv, seat)}
           reaction={reaction}
           dataId={`bouilla-player-seat-${seat}`}
         />
@@ -402,6 +402,7 @@ function OpponentSide({
           isDealer={view.dealer === seat}
           isThinking={view.phase === "playing" && view.turn === seat}
           connected={isConnected(gv, seat)}
+          avatarSrc={seatMascot(gv, seat)}
           reaction={reaction}
           orientation="vertical"
           flipped={side === "right"}

@@ -18,7 +18,8 @@ import { EmojiButton } from "./EmojiButton";
 import { ReactionBubble } from "./ReactionBubble";
 import { GameInfoButton, HostRow, type HostControls } from "./GameHud";
 import { playedCardEnterStyle, type EnterDirection } from "./TrickStage";
-import { playerName } from "./gameTableHelpers";
+import { playerName, seatMascot } from "./gameTableHelpers";
+import { SelfNameChip } from "./SelfNameChip";
 import { TableShell } from "./TableShell";
 
 /** This table only ever renders a la Bataille Corse game: narrow the shared,
@@ -309,13 +310,11 @@ export function BataillecorseTable({
   gv,
   actions,
   reactions,
-  selfAvatar,
   debugMode = "online",
 }: {
   gv: BataillecorseGameView;
   actions: BataillecorseActions;
   reactions?: Map<number, TableReaction>;
-  selfAvatar?: string;
   /** Which of this table's 3 possible callers rendered it (solo vs bot,
    *  online, or ad-hoc/P2P - never "duel", that's `BataillecorseDuelTable`'s
    *  own table) - shown in the debug overlay when debug mode is on (see
@@ -325,6 +324,8 @@ export function BataillecorseTable({
   const { locale, t } = useI18n();
   const view = gv.view!;
   const mySeat = gv.mySeat!;
+  // My mascot under my pile; no chip when I have none.
+  const selfAvatar = seatMascot(gv, mySeat);
   const debugOn = useBataillecorseDebugMode();
   const opponentSeat = mySeat === 0 ? 1 : 0;
   const [panelOpen, setPanelOpen] = useState(false);
@@ -492,11 +493,10 @@ export function BataillecorseTable({
         </div>
 
         <div className="absolute inset-x-0 bottom-10 flex flex-col items-center gap-3" data-id="bataillecorse-self-seat">
-          {/* `selfAvatar` is only passed by `GameRoom` (online). */}
           {selfAvatar !== undefined && (
-            <p className="text-xs font-bold uppercase text-[var(--card-face)]/80" data-id="bataillecorse-self-name">
-              {playerName(gv, mySeat, locale)}
-            </p>
+            <div data-id="bataillecorse-self-name">
+              <SelfNameChip name={playerName(gv, mySeat, locale)} avatarSrc={selfAvatar} />
+            </div>
           )}
           {/* Both seats' times, always above player 1's yellow turn-circle
               (`0.75s | 0.52s`, opponent on the right). Twice the previous

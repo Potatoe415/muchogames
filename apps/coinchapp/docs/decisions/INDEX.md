@@ -86,6 +86,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0078 | 2026-11-01 | Arrow keys and TV remote drive every screen through one global focus mover | Accepted |
 | 0079 | 2026-11-01 | Card back chosen on each game's home screen, stored per game | Accepted |
 | 0080 | 2026-11-19 | Bot profiles per seat (normal, aggressive, conservative, defensive); bots coinche | Accepted |
+| 0081 | 2026-11-21 | Player mascots on every seat (settings.playerMascots online); bots play for points and keep the last-trick winner | Accepted |
 
 ## When to log a decision
 Any of:

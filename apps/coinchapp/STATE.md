@@ -2,17 +2,18 @@
 
 Replace on every update. Max 40 lines. History lives in git and `docs/decisions/`.
 
-Status: Six card games. Each home screen has a card-back picker (Classique, Sorciers, Casino, Étoiles, Jardin), stored per game (0079). French faces print V, D, R. Big screens use the remote (0078).
-Focus: Coinche "Apprendre à jouer" tutorial (`/coinche/learn`): owner play-through on a phone.
-Level: L1 (one game, new route, no data change)
+Status: Six card games. Every human seat shows the player's mascot (hub `?mascot=`, else random; 0081). Desktop Coinche keeps the trick and seats near the centre, bot avatars x3 on desktop. Bots play for points (dix de der). Card-back picker per game (0079). Big screens use the remote (0078).
+Focus: Owner play-test: mascots on seats (local, online, ad-hoc), desktop Coinche layout, bots keeping their master trump for the last trick.
+Level: L2 (cross-app identity: hub mascot travels to every card game)
 
 Context:
 - Working_On: n/a
-- Relevant_Files: `lib/learn/` (lesson content `chapters-*.ts`, engine glue `engine.ts`, `chapters.test.ts` checks every lesson against `lib/coinche`), `components/learn/`, `app/coinche/learn/page.tsx`
+- Relevant_Files: `lib/mascots.ts`, `lib/client/hubName.ts` (`readMyMascot`), `components/gameTableHelpers.ts` (`seatAvatar`/`seatMascot`), `lib/client/botSim.ts` (`POINTS_TIEBREAK_WEIGHT`), `lib/coinche/bot.ts` (`keepMasterTrumpForLast`), `components/TrickStage.tsx`, `components/GameTableScene.tsx`
 - Do_Not_Touch: `run.bat` (local Windows launcher, left untracked). Table action bars stay on `TableShell`'s safe-area spacer.
-- Relevant_Decisions: 0080, 0079, 0078, root 0060
+- Relevant_Decisions: 0081, 0080, 0079, 0078, root 0067
 
 Next:
+- Owner: on desktop, a Coinche deal vs bots: trick grouped in the centre, big bot avatars, your mascot above your hand; late in a deal, bots keep a master trump for the last trick. Then an online and an ad-hoc game on two devices: each player sees the other's mascot. Mascots ride in `games.settings.playerMascots` because the coinchapp Supabase project was not reachable here; a `game_players.mascot` column is cleaner if wanted.
 - Owner: play the whole tutorial on a phone (6 parts, ~10 min). Is the length right, and is the copy clear for a beginner? The scoring chapter teaches the local defaults (contract value only, defense 0 when made).
 - Owner: local Coinche, pick a different profile per bot, check the dropdown, avatars on badges, and that bots coinche. Same in an online lobby (host picks after "fill with bots").
 - `npm run build` fails here before any change too ("couldn't find next/package.json", `next` only in root `node_modules`): fix the local install, then re-run the build.
@@ -34,7 +35,5 @@ Open_Questions:
 Blockers: none.
 
 Recent_Changes:
+- 2026-11-21 Desktop Coinche centred + bot avatars x3 (lg); bot search scores card points as a tiebreak, engine bot keeps the master trump (tests show the old search played it); mascots on every seat (0081). `npm test` 406/406, `tsc` clean, lint: only pre-existing findings, `next build --webpack` OK (turbopack build still hits the local env error). Local Coinche checked in the browser (desktop + phone).
 - 2026-11-20 Coinche "Apprendre à jouer" button on the home screen: 6 chapters (bases, cartes, plis, annonces, points, 3 guided deals vs bots) with tooltips, quizzes and the real trick animations. `npm test` 398/398, `tsc` clean, lint clean on new files, `check:games` OK. Build still blocked by the local env error. The whole tour was clicked through in headless Edge (webpack dev): no console errors.
-- 2026-11-19 Bot profiles per seat + bot coinche/surcoinche (0080). `npm test` 391/391, `tsc` clean, lint: only pre-existing findings (`useMatchStats.ts:220`). Build not verified (local env error, also on the clean tree). Browser not checked.
-- 2026-11-03 Splash and overlay heights use `dvh` (`pt-[18dvh]`, `pt-[25dvh]`, `pt-[32dvh]`, `max-h-[60dvh]` / `70` / `85` / `90`). Action bars were not given a second safe-area pad.
-- 2026-11-01 Solitaire home: the floating language control sat on the paramètres button. It now stays hidden there, same as the other home screens. Language stays inside Paramètres. Phone and desktop home checked in the browser.

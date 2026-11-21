@@ -5,6 +5,7 @@ import { beginNextRound, createInitialState as createInitialBouillaState } from 
 import { beginNextRound as beginNextPresidentRound, createInitialState as createInitialPresidentState } from "@/lib/president";
 import { createInitialState as createInitialBataillecorseState } from "@/lib/bataillecorse";
 import { getServiceClient, getUserId } from "@/lib/supabase/server";
+import { isMascotId } from "@/lib/mascots";
 import {
   BATAILLECORSE_DECK_SIZE_OPTIONS,
   BOT_THINK_MS_STEP,
@@ -31,6 +32,7 @@ import {
   teamForSeat,
   touchGame,
   touchTurnStartedAt,
+  updateGameSettings,
 } from "./repo";
 import type { LoadedGame } from "./repo";
 
@@ -152,8 +154,18 @@ async function requireUser(): Promise<string> {
   return uid;
 }
 
+/** Settings with `seat`'s mascot set (or cleared when `mascot` is not a known id). */
+function withSeatMascot(settings: GameSettings, seat: number, mascot: unknown): GameSettings {
+  const playerMascots = { ...settings.playerMascots };
+  if (isMascotId(mascot)) playerMascots[seat] = mascot;
+  else delete playerMascots[seat];
+  return { ...settings, playerMascots };
+}
+
 export async function createGame(input: {
   displayName: string;
+  /** Mascot id from `lib/mascots.ts`; anything else is stored as null. */
+  mascot?: string;
   locale?: "fr" | "en";
   gameType?: GameType;
   settings: Partial<GameSettings>;
@@ -161,7 +173,7 @@ export async function createGame(input: {
   const uid = await requireUser();
   const supabase = getServiceClient();
   const gameType = isGameType(input.gameType) ? input.gameType : "coinche";
-  const settings = sanitizeSettings(gameType, input.settings);
+  const settings = withSeatMascot(sanitizeSettings(gameType, input.settings), 0, input.mascot);
 
   let roomCode = randomRoomCode();
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -212,6 +224,8 @@ function pickJoinSeat(loaded: LoadedGame): { seat: number; mode: "insert" | "rep
 export async function joinGame(input: {
   roomCode: string;
   displayName: string;
+  /** Mascot id from `lib/mascots.ts`; anything else is stored as null. */
+  mascot?: string;
   locale?: "fr" | "en";
 }): Promise<{ gameId: string; seat: number }> {
   const uid = await requireUser();
@@ -244,7 +258,7 @@ export async function joinGame(input: {
       .eq("game_id", loaded.game.id)
       .eq("seat", target.seat);
   }
-  await touchGame(loaded.game);
+  await updateGameSettings(loaded.game, withSeatMascot(loaded.game.settings, target.seat, input.mascot));
   return { gameId: loaded.game.id, seat: target.seat };
 }
 
@@ -284,6 +298,8 @@ export async function joinBotSeat(input: {
   roomCode: string;
   seat: number;
   displayName: string;
+  /** Mascot id from `lib/mascots.ts`; anything else is stored as null. */
+  mascot?: string;
   locale?: "fr" | "en";
 }): Promise<{ gameId: string; seat: number }> {
   const uid = await requireUser();
@@ -311,10 +327,11 @@ export async function joinBotSeat(input: {
   // Either way the game row's version must bump so other clients' realtime
   // subscription (tied to `games` row changes, not `game_players`) picks up
   // the new occupant.
+  const settings = withSeatMascot(loaded.game.settings, target.seat, input.mascot);
   if (loaded.game.state && (loaded.game.state as { turn?: number }).turn === target.seat) {
-    await touchTurnStartedAt(loaded.game as GameRow);
+    await touchTurnStartedAt(loaded.game as GameRow, settings);
   } else {
-    await touchGame(loaded.game);
+    await updateGameSettings(loaded.game, settings);
   }
 
   return { gameId: loaded.game.id, seat: target.seat };

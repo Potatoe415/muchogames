@@ -23,6 +23,7 @@ import { runBotLoop, wait } from "./cardGameDriver";
 import { presidentBotPaceMs } from "./presidentAnimationLock";
 import { decidePresidentAction, presidentEngine } from "./presidentEngineAdapter";
 import { DEFAULT_BOT_THINK_MS, DEFAULT_PRESIDENT_ROUNDS_TO_PLAY } from "@/lib/supabase/types";
+import { isMascotId } from "@/lib/mascots";
 
 export interface P2PPresidentHostConfig {
   mySeat: Seat;
@@ -188,8 +189,8 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
   );
 
   const applyHello = useCallback(
-    (seat: Seat, name: string) => {
-      commitRoster(rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name } : e)));
+    (seat: Seat, name: string, mascot: unknown) => {
+      commitRoster(rosterRef.current.map((e) => (e.seat === seat ? { ...e, displayName: name, mascot: isMascotId(mascot) ? mascot : null } : e)));
       broadcast(stateRef.current);
     },
     [commitRoster, broadcast],
@@ -200,7 +201,7 @@ export function useP2PPresidentHost(config: P2PPresidentHostConfig): { gv: GameV
       conn.onMessage((raw) => {
         const msg = parseClientMessage(raw);
         if (!msg) return;
-        if (msg.t === "hello") applyHello(seat as Seat, msg.name);
+        if (msg.t === "hello") applyHello(seat as Seat, msg.name, msg.mascot);
         else if (msg.t === "nextDeal") markReady(seat as Seat);
         else void applyRemote(msg, seat as Seat);
       });

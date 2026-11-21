@@ -6,7 +6,7 @@ import { createGame, joinGame, joinBotSeat, previewRoomByCode, type RoomPreview 
 import { ensureAnonAuth } from "@/lib/client/auth";
 import { HUB_URL } from "@/lib/client/hubUrl";
 import { useI18n } from "@/lib/client/i18n";
-import { useHubPrefillName } from "@/lib/client/hubName";
+import { readMyMascot, useHubPrefillName } from "@/lib/client/hubName";
 import { GameSettingsPanel, DEFAULT_BATAILLECORSE_GAME_SETUP, DEFAULT_GAME_SETUP } from "@/components/GameSettingsPanel";
 import type { GameSetupValues } from "@/components/GameSettingsPanel";
 import { BotSeatPicker } from "@/components/BotSeatPicker";
@@ -155,6 +155,7 @@ function OnlinePageInner() {
             run(() =>
               createGame({
                 displayName: name,
+                mascot: readMyMascot(),
                 locale,
                 gameType,
                 settings: isBelote
@@ -213,7 +214,7 @@ function OnlinePageInner() {
               disabled={busy || code.length !== ROOM_CODE_LENGTH}
               onClick={() =>
                 run(async () => {
-                  const joined = await joinGame({ roomCode: code, displayName: name, locale });
+                  const joined = await joinGame({ roomCode: code, displayName: name, locale, mascot: readMyMascot() });
                   return { ...joined, roomCode: code };
                 })
               }
@@ -231,7 +232,7 @@ function OnlinePageInner() {
               busy={busy}
               onJoinSeat={(seat, displayName) =>
                 run(async () => {
-                  const joined = await joinBotSeat({ roomCode: code, seat, displayName, locale });
+                  const joined = await joinBotSeat({ roomCode: code, seat, displayName, locale, mascot: readMyMascot() });
                   return { ...joined, roomCode: code };
                 })
               }

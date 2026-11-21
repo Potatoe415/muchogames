@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/shared/css/base.css" />
     <link rel="stylesheet" href="/shared/css/game-header.css" />
     <link rel="stylesheet" href="/profile/profile.css" />
-    <link rel="stylesheet" href="/profile/profile-crop.css" />
+    <link rel="stylesheet" href="/profile/profile-mascot.css" />
     <link rel="stylesheet" href="/profile/profile-account.css" />
     <link rel="stylesheet" href="/profile/profile-tabs.css" />
   </head>
@@ -164,51 +164,29 @@
         aria-labelledby="profile-tab-info"
       >
         <div class="profile-avatar-block" data-id="profile-avatar-block">
-          <label
+          <button
             class="profile-avatar-button"
-            for="profile-avatar-input"
             id="profile-avatar-button"
             data-id="profile-avatar-button"
+            type="button"
+            aria-haspopup="dialog"
           >
             <img
               class="profile-avatar-preview"
               id="profile-avatar-preview"
               data-id="profile-avatar-preview"
               alt=""
-              hidden
             />
-            <span
-              class="profile-avatar-placeholder"
-              id="profile-avatar-placeholder"
-              data-id="profile-avatar-placeholder"
-              aria-hidden="true"
-            >
-              👤
-            </span>
-          </label>
-          <input
-            class="profile-avatar-input"
-            id="profile-avatar-input"
-            data-id="profile-avatar-input"
-            type="file"
-            accept="image/*"
-            hidden
-          />
-          <button
-            class="profile-avatar-remove-button"
-            id="profile-avatar-remove-button"
-            data-id="profile-avatar-remove-button"
-            type="button"
-            hidden
-          >
-            Retirer
           </button>
-          <p
-            class="profile-avatar-error"
-            id="profile-avatar-error"
-            data-id="profile-avatar-error"
-            hidden
-          ></p>
+          <button
+            class="profile-mascot-change-button"
+            id="profile-mascot-change-button"
+            data-id="profile-mascot-change-button"
+            type="button"
+            aria-haspopup="dialog"
+          >
+            Changer de mascotte
+          </button>
         </div>
 
         <form
@@ -343,72 +321,41 @@
     </main>
 
     <div
-      class="avatar-crop"
-      id="profile-avatar-crop"
-      data-id="profile-avatar-crop"
+      class="mascot-picker"
+      id="profile-mascot-picker"
+      data-id="profile-mascot-picker"
       hidden
     >
       <div
-        class="avatar-crop-backdrop"
-        data-id="profile-avatar-crop-backdrop"
+        class="mascot-picker-backdrop"
+        data-id="profile-mascot-picker-backdrop"
       ></div>
       <div
-        class="avatar-crop-sheet"
+        class="mascot-picker-sheet"
         role="dialog"
         aria-modal="true"
-        aria-labelledby="profile-avatar-crop-title"
+        aria-labelledby="profile-mascot-picker-title"
       >
         <h2
-          class="avatar-crop-title"
-          id="profile-avatar-crop-title"
-          data-id="profile-avatar-crop-title"
+          class="mascot-picker-title"
+          id="profile-mascot-picker-title"
+          data-id="profile-mascot-picker-title"
         >
-          Recadrer
+          Choisis ta mascotte
         </h2>
         <div
-          class="avatar-crop-stage"
-          id="profile-avatar-crop-stage"
-          data-id="profile-avatar-crop-stage"
+          class="mascot-picker-grid"
+          id="profile-mascot-picker-grid"
+          data-id="profile-mascot-picker-grid"
+        ></div>
+        <button
+          class="mascot-picker-close"
+          id="profile-mascot-picker-close"
+          data-id="profile-mascot-picker-close"
+          type="button"
         >
-          <img
-            class="avatar-crop-image"
-            id="profile-avatar-crop-image"
-            data-id="profile-avatar-crop-image"
-            alt=""
-            draggable="false"
-          />
-        </div>
-        <label class="avatar-crop-zoom-label" for="profile-avatar-crop-zoom">
-          <span data-id="profile-avatar-crop-zoom-label">Zoom</span>
-          <input
-            class="avatar-crop-zoom"
-            id="profile-avatar-crop-zoom"
-            data-id="profile-avatar-crop-zoom"
-            type="range"
-            min="1"
-            max="3"
-            step="0.01"
-            value="1"
-          />
-        </label>
-        <div class="avatar-crop-actions">
-          <button
-            class="avatar-crop-cancel"
-            id="profile-avatar-crop-cancel"
-            data-id="profile-avatar-crop-cancel"
-            type="button"
-          >
-            Annuler
-          </button>
-          <button
-            class="avatar-crop-apply"
-            id="profile-avatar-crop-apply"
-            data-id="profile-avatar-crop-apply"
-            type="button"
-          >
-            Valider
-          </button>
-        </div>
+          Fermer
+        </button>
       </div>
     </div>
 

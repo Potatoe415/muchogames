@@ -30,10 +30,7 @@ const ID_TOKEN_STORAGE_KEY = "bergamots-google-idtoken";
 // this root-level bundled file and that unbundled page, so the string is
 // duplicated on purpose (see docs/TECH.md).
 const NAME_STORAGE_KEY = "bergamots-player-name";
-const AVATAR_STORAGE_KEY = "bergamots-player-avatar";
-const AVATAR_THUMB_STORAGE_KEY = "bergamots-player-avatar-thumb";
 const LANG_STORAGE_KEY = "bergamots-lang";
-const MAX_AVATAR_THUMB_CHARS = 6000;
 const LANGS = ["fr", "en", "es"];
 const WIDGET_ID = "auth-widget";
 const GOOGLE_BUTTON_CONTAINER_ID = "auth-google-button";
@@ -75,7 +72,6 @@ let onRenewedCredential = null;
 
 export function initAuthWidget() {
   renderAuthWidget();
-  ensureAvatarThumb();
   resyncAvatarIfMissing();
   googleInstalled = installGoogle(false).then((gis) => {
     if (!gis) return null;
@@ -211,15 +207,12 @@ function applyProfileResponse(data) {
   restoreAvatarFromProfile(data.profile?.avatarUrl);
 }
 
-function restoreAvatarFromProfile(dataUrl) {
-  if (!authState.email || !dataUrl || !dataUrl.startsWith("data:image/"))
-    return;
-  try {
-    localStorage.setItem(AVATAR_STORAGE_KEY, dataUrl);
-  } catch {
-    return;
-  }
-  ensureAvatarThumb();
+// The shared profile stores the mascot as its path (see api/profile); a legacy
+// uploaded photo is ignored and the local mascot stays.
+function restoreAvatarFromProfile(avatarUrl) {
+  const mascot = window.PlayerProfile?.mascotFromAvatarUrl?.(avatarUrl);
+  if (!authState.email || !mascot) return;
+  window.PlayerProfile.setMascot(mascot);
   renderAuthWidget();
 }
 
@@ -245,63 +238,22 @@ export function getStoredPlayerName() {
   }
 }
 
-export function getStoredPlayerAvatarThumb() {
-  try {
-    const stored = localStorage.getItem(AVATAR_THUMB_STORAGE_KEY) || "";
-    if (
-      !stored.startsWith("data:image/jpeg") ||
-      stored.length > MAX_AVATAR_THUMB_CHARS
-    ) {
-      return "";
-    }
-    return stored;
-  } catch {
-    return "";
-  }
-}
-
-export function ensureAvatarThumb() {
-  if (getStoredPlayerAvatarThumb() || !readStoredAvatar()) return;
-  const image = new Image();
-  image.onload = () => persistThumb(drawAvatarThumb(image));
-  image.src = readStoredAvatar();
-}
-
-function drawAvatarThumb(image) {
-  const canvas = document.createElement("canvas");
-  canvas.width = 48;
-  canvas.height = 48;
-  const context = canvas.getContext("2d");
-  context.fillStyle = "#ffffff";
-  context.fillRect(0, 0, 48, 48);
-  context.drawImage(image, 0, 0, 48, 48);
-  return canvas.toDataURL("image/jpeg", 0.5);
-}
-
-function persistThumb(dataUrl) {
-  try {
-    if (dataUrl && dataUrl.length <= MAX_AVATAR_THUMB_CHARS) {
-      localStorage.setItem(AVATAR_THUMB_STORAGE_KEY, dataUrl);
-    }
-  } catch {
-    // Storage unavailable — launches just won't carry an avatar.
-  }
+// Read by hub.js to forward the player's mascot as `?mascot=` to external
+// games. `window.PlayerProfile` comes from /shared/js/player-profile.js,
+// loaded as a classic script before this bundle (index.html).
+export function getStoredPlayerMascot() {
+  return window.PlayerProfile?.getMascot?.() || "";
 }
 
 function readStoredAvatar() {
-  try {
-    const stored = localStorage.getItem(AVATAR_STORAGE_KEY) || "";
-    return stored.startsWith("data:image/") ? stored : "";
-  } catch {
-    return "";
-  }
+  return window.PlayerProfile?.getAvatar?.() || "";
 }
 
-function createTriggerAvatar(dataUrl) {
+function createTriggerAvatar(src) {
   const img = document.createElement("img");
   img.className = "auth-trigger-avatar";
   img.dataset.id = "auth-trigger-avatar";
-  img.src = dataUrl;
+  img.src = src;
   img.alt = "";
   img.addEventListener("error", () => {
     img.closest(".auth-widget")?.classList.remove("has-avatar");
@@ -448,7 +400,6 @@ function logout() {
   persistEmail("");
   persistIdToken("");
   clearAdminFlag();
-  clearStoredAvatar();
   if (window.google?.accounts?.id) {
     window.google.accounts.id.disableAutoSelect();
   }
@@ -456,16 +407,6 @@ function logout() {
   renderAuthWidget();
   renderGoogleButton();
   notifyAuthChanged();
-}
-
-function clearStoredAvatar() {
-  try {
-    localStorage.removeItem(AVATAR_STORAGE_KEY);
-    localStorage.removeItem(AVATAR_THUMB_STORAGE_KEY);
-  } catch {
-    // Storage unavailable — the picture just stays for this page load.
-  }
-  if (window.PlayerProfile) window.PlayerProfile.setAvatar("");
 }
 
 function closePopover() {

@@ -10,6 +10,8 @@ export type AnyPlayerView = CoinchePlayerView | BouillaPlayerView | PresidentPla
 export interface LobbyPlayer {
   seat: number;
   displayName: string;
+  /** Mascot id (`lib/mascots.ts`), null when unknown. Bots show their profile art instead. */
+  mascot: string | null;
   isBot: boolean;
   team: "A" | "B";
   connected: boolean;
@@ -100,6 +102,7 @@ function buildLobbyPlayers(loaded: LoadedGame): LobbyPlayer[] {
   return loaded.players.map((p) => ({
     seat: p.seat,
     displayName: p.display_name,
+    mascot: loaded.game.settings.playerMascots?.[p.seat] ?? null,
     isBot: p.is_bot,
     team: p.team,
     connected: isSeatLive(loaded, p.seat, now, PRESENCE_STALE_MS),

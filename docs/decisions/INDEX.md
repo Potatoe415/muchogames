@@ -72,6 +72,7 @@ Template: `docs/_templates/DECISION.md`.
 | 0064 | 2026-11-06 | Play area 99% of the phone's width in portrait (leaves the 24px side strips; JezzBall, Chip's Challenge free zoom) | Accepted |
 | 0065 | 2026-11-19 | One GitHub script `push-to-github.ps1` (commit, pull --rebase, push, verify) replaces Sync-*, ship.* (supersedes 0005) | Accepted |
 | 0066 | 2026-11-20 | SEO generated from `hub-config.json` at build (`scripts/seo.mjs`): per-game description, meta/OG/JSON-LD, sitemap, llms.txt, robots.txt, crawlable hub footer | Accepted |
+| 0067 | 2026-11-21 | Mascot avatars (126, random by default, picked on `/profile`) replace photo upload; sent to games as `?mascot=` | Accepted |
 
 ## When to log a decision
 Any of:

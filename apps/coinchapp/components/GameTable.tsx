@@ -13,7 +13,7 @@ import type { ReactionPick, TableReaction } from "@/lib/client/reactions";
 import { EmojiButton } from "./EmojiButton";
 import { GameHud } from "./GameHud";
 import { GameTableScene } from "./GameTableScene";
-import { playerName, relativeSeat } from "./gameTableHelpers";
+import { playerName, relativeSeat, seatMascot } from "./gameTableHelpers";
 import { HandCardSlot } from "./HandCardSlot";
 import { formatBidLabel, isRedSuit, trumpModeLabel } from "./labels";
 import { SelfNameChip } from "./SelfNameChip";
@@ -115,16 +115,15 @@ export function GameTable({
   gv,
   actions,
   reactions,
-  selfAvatar,
 }: {
   gv: CoincheGameView;
   actions: GameActions;
   reactions?: Map<number, TableReaction>;
-  /** Set only from online GameRoom. Undefined hides the local-player chip. */
-  selfAvatar?: string;
 }) {
   const view = gv.view!;
   const mySeat = gv.mySeat!;
+  // My mascot above the hand; no chip when I have none.
+  const selfAvatar = seatMascot(gv, mySeat);
   const [emojiOn, setEmojiOn] = useState(true);
   const { legalSet, myTurnToPlay, optimisticHand, trickCards, preSelectedId, tapCard } = useOptimisticPlay(
     view,

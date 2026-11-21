@@ -1,0 +1,9 @@
+# 0067 — Mascot avatars replace the uploaded profile photo
+
+Date: 2026-11-21
+Status: Accepted
+Decision: The player's avatar is always one of 126 mascots (`public/mascots/<id>.webp`, cut from the le-petit-french sheets, 160 px). Every player, signed out included, gets a random one on first visit (`muchogames-player-mascot` in localStorage) and changes it from `/profile`. Photo upload and cropping are gone. The shared profile stores the mascot as its path in `avatar_url`; external games receive `?mascot=<id>` instead of `?avatar=<jpeg thumb>`.
+Context: Owner asked that even anonymous players get a mascot as their profile icon, that it can be changed, and that it shows in the card games, picking from the pre-cut le-petit-french mascots only (no photos).
+Rationale: An id is tiny, safe in a URL and needs no image processing, so it can travel to every game and be shown to opponents, which a photo could not (decisions 0023/0025). `player-profile.js` stays the single hub source: `auth.js`/`hub.js` read it through `window.PlayerProfile` (loaded before the bundle). `api/profile` accepts only `^/mascots/[a-z-]+\.webp$`.
+Consequences: Supersedes the photo parts of 0023 and 0025. Legacy local photo keys are deleted on load; a legacy photo in a signed-in profile is replaced by the local mascot the next time `/profile` opens. Tranquil still reads `?avatar=` and shows no picture now (follow-up). The id list is duplicated in `apps/coinchapp/lib/mascots.ts`; its test fails if the lists drift. `docs/PRODUCT.md`, `docs/SECURITY.md`, `docs/PLATFORM_RULES.md` still describe the photo: edits proposed, not applied.
+Alternatives_Rejected: Keeping photo upload next to mascots (owner chose mascots only). Hot-linking the le-petit-french images (another project's deploy). Sending the image itself to games (too large).

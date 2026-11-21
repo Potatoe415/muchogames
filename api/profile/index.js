@@ -34,7 +34,8 @@ const THROTTLES = {
 
 const MAX_NAME_LENGTH = 40;
 // ~25 KB base64 data URL, same cap /profile already enforces client-side.
-const MAX_AVATAR_DATA_URL_LENGTH = 35000;
+// The avatar is a hub mascot (public/mascots/<id>.webp), stored as its path.
+const MASCOT_AVATAR_PATTERN = /^\/mascots\/[a-z][a-z-]{0,31}\.webp$/;
 const MAX_STAT_DELTA = 100000;
 const LAUNCH_CODE_TTL_MS = 60000; // 1 minute: only needs to survive one hub→game redirect.
 
@@ -146,13 +147,11 @@ function buildProfilePatch(userId, body) {
     patch.name = body.name.trim();
   }
 
-  if (body.avatarDataUrl !== undefined) {
-    const avatar = body.avatarDataUrl;
+  if (body.avatarUrl !== undefined) {
+    const avatar = body.avatarUrl;
     const isValid =
       avatar === "" ||
-      (typeof avatar === "string" &&
-        avatar.startsWith("data:image/") &&
-        avatar.length <= MAX_AVATAR_DATA_URL_LENGTH);
+      (typeof avatar === "string" && MASCOT_AVATAR_PATTERN.test(avatar));
     if (!isValid) return null;
     patch.avatar_url = avatar || null;
   }
